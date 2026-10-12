@@ -164,7 +164,7 @@ Line counts are text runs in scenario 1.
 |---|---|---|
 | サクセス | Success Mode | |
 | 甲子園 | Koshien | |
-| 親父 / せがれ | Dad, "old man" / son | father and son in the opening |
+| 親父 / 母さん / 父さん / せがれ | Papa / Mama / Papa / son | the player and his parents |
 | 社会人野球 | the industrial leagues; industrial-league (adjective) | |
 | 社会人 | working adult | |
 | 社長 / 部長 / 課長 / 係長 | Shacho / Bucho / Kacho / Kakaricho | also as forms of address |
@@ -222,7 +222,7 @@ Line counts are text runs in scenario 1.
   the honorific goes into the coloured name run ("Todoroki Daisuke-senpai!").
 - Menus are still Japanese on screen, so a line that tells the player where to go quotes the
   Japanese label as it is.
-- "Mum" and "Dad" for the player's parents. Team names in the standings stay as fans say them
+- "Mama" and "Papa" for the player's parents (Conrad, 2026-10-12). Team names in the standings stay as fans say them
   (Giants, Hanshin, Chunichi, SoftBank).
 - Lines from `scs_main.rel` (common events, sound effects, "you met Yabe" notices) appear inside
   scenario scenes and stay Japanese until that file is translated.
