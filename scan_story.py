@@ -102,10 +102,14 @@ class Rel:
 
 
 def load_all_rels():
+    # Offsets in this tool refer to the original files. Once rebuild_scripts.py has patched
+    # DATA/files, the originals are in _work/orig.
+    orig = os.path.join(WORK_DIR, "orig")
+    src = orig if os.path.isdir(orig) else DATA_FILES
     mods = {}
-    for fn in sorted(os.listdir(DATA_FILES)):
+    for fn in sorted(os.listdir(src)):
         if fn.endswith(".rel"):
-            r = Rel(os.path.join(DATA_FILES, fn))
+            r = Rel(os.path.join(src, fn))
             mods[r.mod_id] = r
     return mods
 
@@ -219,7 +223,7 @@ def instruction_length(hw, i):
 class Script:
     """One script module, parsed by following control flow from every label."""
 
-    def __init__(self, rel, all_mods):
+    def __init__(self, rel, all_mods, label_tables=LABEL_TABLES):
         self.rel = rel
         self.sec = rel.script_section()
         d = rel.sec_data(self.sec)
@@ -230,7 +234,7 @@ class Script:
         self.labels = collections.Counter()
         main = next(m for m in all_mods.values() if m.name == "scs_main.rel")
         for (s, pos, typ, tm, ts, addend) in main.relocs():
-            if (s == 5 and typ == 1 and LABEL_TABLES[0] <= pos < LABEL_TABLES[1]
+            if (s == 5 and typ == 1 and label_tables[0] <= pos < label_tables[1]
                     and tm == rel.mod_id and ts == self.sec and addend % 2 == 0):
                 self.labels[addend // 2] += 1
         self.kind = {}       # halfword index -> 'op' | 'arg' | 'text'

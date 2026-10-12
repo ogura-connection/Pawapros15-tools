@@ -176,9 +176,13 @@ def load_dir(*dirs):
     return mods
 
 
-def load_scripts(mods):
+def load_scripts(mods, remaps=None):
+    """Parse the four script modules. remaps: the label tables have moved (rebuilt files)."""
     by_name = {m.name: m for m in mods.values()}
-    return [S.Script(by_name[fn], mods) for fn in S.SCRIPT_FILES]
+    main = by_name["scs_main.rel"]
+    move = (remaps or {}).get((main.mod_id, main.script_section()), lambda off: off)
+    tables = tuple(move(off) for off in S.LABEL_TABLES)
+    return [S.Script(by_name[fn], mods, tables) for fn in S.SCRIPT_FILES]
 
 
 def rebuild_module(rel, sec, new_sec, remaps):
@@ -294,7 +298,7 @@ def build(repl, pad=None):
 def verify(orig, old_scripts, repl, remaps):
     """Re-read the built files and compare them with the originals, structure by structure."""
     new = load_dir(ORIG_DIR, BUILD_DIR)
-    new_scripts = load_scripts(new)
+    new_scripts = load_scripts(new, remaps)
     for old, sc in zip(old_scripts, new_scripts):
         name = old.rel.name
         remap = remaps.get((old.rel.mod_id, old.sec), lambda off: off)
