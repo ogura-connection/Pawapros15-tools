@@ -20,6 +20,8 @@ Stored as: u8 n, n bytes of flag bits, then the literal bytes.
 rebuild_scripts.py calls this module during a build; there is nothing else to run by hand.
 Needs Pillow and a monospaced TrueType font (FONT_FILE below, macOS Menlo by default).
 """
+import collections
+import json
 import os
 import struct
 import sys
@@ -35,25 +37,26 @@ SMALL = {"adv": 8, "base": 14, "cap": 11.5, "ink_w": 7.0}
 FONTS = (("small", 0x000000, SMALL), ("large", 0x05DF64, LARGE))
 FONT_END = {0x000000: 0x05DF64, 0x05DF64: 0x117400}             # each font's space ends at the next one
 KANJI_SLOTS = range(706, 3744)
-_cache = {}
+_cache, _faces = {}, {}
 
 
 def _coverage(pair, m):
     """Ink coverage of a letter pair at SS times the cell size, as an 'L' image."""
-    if "font" not in m:
+    if m["adv"] not in _faces:
         probe = ImageFont.truetype(FONT_FILE, 1000, index=FONT_INDEX)
         adv = probe.getlength("M") / 1000.0                          # advance in em
         cap = -probe.getbbox("H", anchor="ls")[1] / 1000.0           # cap height in em
-        m["em"] = m["ink_w"] * SS / adv
-        m["font"] = ImageFont.truetype(FONT_FILE, round(m["em"]), index=FONT_INDEX)
-        m["stretch"] = m["cap"] * SS / (cap * m["em"])               # vertical stretch
-    h = int(CELL_H * SS / m["stretch"]) + 1
+        em = m["ink_w"] * SS / adv
+        _faces[m["adv"]] = (ImageFont.truetype(FONT_FILE, round(em), index=FONT_INDEX),
+                            m["cap"] * SS / (cap * em))              # face, vertical stretch
+    face, stretch = _faces[m["adv"]]
+    h = int(CELL_H * SS / stretch) + 1
     img = Image.new("L", (CELL_W * SS, h), 0)
     draw = ImageDraw.Draw(img)
     for k, ch in enumerate(pair):
         if ch != " ":
-            x = k * m["adv"] * SS + (m["adv"] * SS - m["font"].getlength(ch)) / 2
-            draw.text((x, m["base"] * SS / m["stretch"]), ch, font=m["font"], fill=255, anchor="ls")
+            x = k * m["adv"] * SS + (m["adv"] * SS - face.getlength(ch)) / 2
+            draw.text((x, m["base"] * SS / stretch), ch, font=face, fill=255, anchor="ls")
     return img.resize((CELL_W * SS, CELL_H * SS), Image.LANCZOS)
 
 
@@ -83,6 +86,68 @@ def to_grid(rows):
 def split_pairs(text):
     """ASCII text -> letter pairs, the last one padded with a space."""
     return [(text[i:i + 2] + " ")[:2] for i in range(0, len(text), 2)]
+
+
+def segments(text):
+    """Text -> ('pair', 'ab') | ('char', c) | ('newline', None). Pairing restarts on every line and
+    after every non-ASCII character, so a pair never straddles them."""
+    buf = ""
+    for ch in text.replace("\\n", "\n") + "\n":
+        if 0x20 <= ord(ch) <= 0x7E:
+            buf += ch
+            continue
+        for pair in split_pairs(buf):
+            yield "pair", pair
+        buf = ""
+        yield ("newline", None) if ch == "\n" else ("char", ch)
+
+
+def text_segments(text):
+    return list(segments(text))[:-1]          # without the newline added at the end
+
+
+# ── Which glyph slots are free ────────────────────────────────────────────
+
+def other_text_usage(mods, skip):
+    """How often each glyph appears in text outside the Success scripts (heuristic scan of all
+    modules for 16-bit glyph strings and 12-bit packed text). Cached in _work/glyph_usage.json."""
+    import scan_story as S
+    path = os.path.join(S.WORK_DIR, "glyph_usage.json")
+    if os.path.exists(path):
+        with open(path) as f:
+            return collections.Counter({int(k): v for k, v in json.load(f).items()})
+    print("Scanning all modules for text outside the scripts (once, about a minute)...")
+    use = collections.Counter()
+    for m in mods.values():
+        if m.name in skip:
+            continue
+        for sec in m.sections:
+            d = m.sec_data(sec["index"])
+            if sec["exec"] or len(d) < 8:
+                continue
+            for _, units in S.find_packed_text(d):
+                use.update(u for u in units if u <= S.MAX_GLYPH)
+            run = []
+            for v in struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2]) + (0,):
+                if 0 < v <= S.MAX_GLYPH:
+                    run.append(v)
+                    continue
+                if len(run) >= 3 and sum(282 <= u <= 450 for u in run) >= 2:
+                    use.update(run)
+                run = []
+    with open(path, "w") as f:
+        json.dump(use, f)
+    return use
+
+
+def allocate(pairs, usage):
+    """Give every letter pair a kanji slot, least used kanji first. Returns ({pair: glyph}, number
+    of slots taken from kanji that remaining text still uses)."""
+    free = sorted(KANJI_SLOTS, key=lambda g: (usage.get(g, 0), -g))
+    if len(pairs) > len(free):
+        raise ValueError("%d different letter pairs, only %d glyph slots" % (len(pairs), len(free)))
+    slots = dict(zip(sorted(pairs), free))
+    return slots, sum(1 for g in slots.values() if usage.get(g, 0))
 
 
 # ── Glyph compression ─────────────────────────────────────────────────────
@@ -190,14 +255,22 @@ def pack_font(glyphs, size):
     return out + b"\xff" * (size - len(out))
 
 
-def build_font(rel_data, sec4_offset, slots):
+def pair_glyph(pair, large, cache):
+    """Compressed glyph of a letter pair. cache: dict kept in _work/pair_glyphs.json by the caller."""
+    key = "%s|%d|%s" % (FONT_FILE, FONT_INDEX, json.dumps([LARGE if large else SMALL, SS], sort_keys=True)) + "|" + pair
+    if key not in cache:
+        cache[key] = compress(to_grid(render_pair(pair, large))).hex()
+    return bytes.fromhex(cache[key])
+
+
+def build_font(rel_data, sec4_offset, slots, cache):
     """fonttex2.rel with letter pairs drawn into glyph slots. slots = {glyph index: pair}"""
     out = bytearray(rel_data)
     for name, pos, _ in FONTS:
         sec4 = rel_data[sec4_offset:]
         glyphs = font_glyphs(sec4, pos)
         for index, pair in slots.items():
-            glyphs[index] = compress(to_grid(render_pair(pair, name == "large")))
+            glyphs[index] = pair_glyph(pair, name == "large", cache)
         size = FONT_END[pos] - pos
         try:
             new = pack_font(glyphs, size)
@@ -225,8 +298,13 @@ def cmd_preview(text, out):
     for name, pos, m in FONTS:
         large = name == "large"
         lines.append([game_glyph(sec4, pos, char_to_glyph(c)) for c in sample])
-        for part in text.split("\n"):
-            lines.append([render_pair(p, large) for p in split_pairs(part)])
+        lines.append([])
+        for kind, value in text_segments(text):
+            if kind == "newline":
+                lines.append([])
+            else:
+                lines[-1].append(render_pair(value, large) if kind == "pair"
+                                 else game_glyph(sec4, pos, char_to_glyph(value)))
     w = max(len(l) for l in lines) * CELL_W
     img = Image.new("L", (w, len(lines) * CELL_H), 255)
     for r, line in enumerate(lines):

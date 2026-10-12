@@ -27,6 +27,11 @@ Translation file: a JSON list of entries in the format of _work/story_text.json
 "file" + "section_offset" identify the run, "text" (optional) is checked against the original,
 "en" is the replacement. Use \\n for a line break inside the run. Entries without "en" are ignored.
 
+English is stored two letters per glyph cell (see pair_font.py): every letter pair that occurs
+gets a glyph slot of a kanji the remaining Japanese text does not use, and the build draws the
+pairs into fonttex2.rel. A dialogue line is 18 cells, so 36 letters. Japanese characters in an
+"en" text keep their own cell.
+
 Original .rel files and moduleID2addr.o are kept in _work/orig/ (copied from DATA/files on first use, so the first
 run must be on unpatched files). Built files are checked in _work/build/ before they are
 installed to DATA/files. Both folders are game data: git-ignored, never commit them.
@@ -41,6 +46,7 @@ import shutil
 import struct
 import sys
 
+import pair_font
 import scan_story as S
 from pawapuro15_text_tools import char_to_glyph
 
@@ -58,25 +64,19 @@ FREE_AREA = (0x812CB800, 0x814E0000)
 
 # ── English -> glyph units ────────────────────────────────────────────────
 
-# The font has no half-width Latin: ASCII is written with the full-width forms of JIS rows 1 and 3.
-ASCII_FALLBACK = {" ": "　", "'": "’", '"': "”", "-": "−", "~": "〜",
-                  "\\": "＼", "`": "‘"}
-
-
-def encode_text(text):
-    """String -> list of 12-bit units. ASCII becomes full-width glyphs, \\n a line break."""
+def encode_text(text, slots):
+    """String -> list of 12-bit units. slots = {letter pair: glyph index}"""
     units = []
-    for ch in text.replace("\\n", "\n"):
-        if ch == "\n":
+    for kind, value in pair_font.text_segments(text):
+        if kind == "newline":
             units.append(S.TEXT_NEWLINE)
-            continue
-        cands = [ch]
-        if 0x20 <= ord(ch) <= 0x7E:
-            cands = [ASCII_FALLBACK.get(ch, ""), chr(ord(ch) - 0x20 + 0xFF00)]
-        g = next((g for g in (char_to_glyph(c) for c in cands if c) if g is not None), None)
-        if g is None:
-            raise ValueError("no glyph for %r in %r" % (ch, text))
-        units.append(g)
+        elif kind == "pair":
+            units.append(0 if value == "  " else slots[value])
+        else:
+            g = char_to_glyph(value)
+            if g is None:
+                raise ValueError("no glyph for %r in %r" % (value, text))
+            units.append(g)
     return units
 
 
@@ -307,9 +307,9 @@ def patch_addends(rel, remaps):
 
 
 def load_translation(path, scripts):
-    """{module name: {halfword index: units}}"""
+    """{module name: {halfword index: new text}}"""
     by_name = {sc.rel.name: sc for sc in scripts}
-    repl = collections.defaultdict(dict)
+    texts = collections.defaultdict(dict)
     with open(path, encoding="utf-8") as f:
         entries = json.load(f)
     for e in entries:
@@ -323,17 +323,66 @@ def load_translation(path, scripts):
         if "text" in e and e["text"] != old:
             sys.exit("%s +0x%X: original text is %r, the translation file says %r"
                      % (e["file"], e["section_offset"], old, e["text"]))
-        repl[e["file"]][i] = encode_text(e["en"])
-    return repl
+        texts[e["file"]][i] = e["en"]
+    return texts
 
 
-def build(repl, pad=None):
+def assign_pairs(scripts, texts, orig):
+    """Choose a glyph slot for every letter pair in the translation. Returns {pair: glyph index}."""
+    pairs, usage = set(), collections.Counter()
+    for sc in scripts:
+        new = texts.get(sc.rel.name, {})
+        for i, (_, units, _) in sc.texts.items():
+            if i not in new:
+                usage.update(units)
+                continue
+            for kind, value in pair_font.text_segments(new[i]):
+                if kind == "pair" and value != "  ":
+                    pairs.add(value)
+                elif kind == "char":
+                    usage[char_to_glyph(value)] += 1
+    if not pairs:
+        return {}
+    usage.update(pair_font.other_text_usage(orig, set(S.SCRIPT_FILES) | {"fonttex2.rel"}))
+    slots, taken = pair_font.allocate(pairs, usage)
+    print("Font: %d letter pairs in %d kanji slots (%d slots left)%s"
+          % (len(slots), len(slots), len(pair_font.KANJI_SLOTS) - len(slots),
+             "" if not taken else "; %d of them are kanji that untranslated text still uses" % taken))
+    return slots
+
+
+def build_font_file(orig, slots):
+    """fonttex2.rel with the pair glyphs. The file keeps its size."""
+    rel = next(m for m in orig.values() if m.name == "fonttex2.rel")
+    cache_path, cache = os.path.join(S.WORK_DIR, "pair_glyphs.json"), {}
+    if os.path.exists(cache_path):
+        with open(cache_path) as f:
+            cache = json.load(f)
+    known = len(cache)
+    image = pair_font.build_font(rel.data, rel.sections[4]["offset"], {g: p for p, g in slots.items()}, cache)
+    if len(cache) != known:
+        with open(cache_path, "w") as f:
+            json.dump(cache, f)
+    sec4 = image[rel.sections[4]["offset"]:]
+    for name, pos, _ in pair_font.FONTS:                       # read it back
+        old = pair_font.font_glyphs(rel.sec_data(4), pos)
+        new = pair_font.font_glyphs(sec4, pos)
+        for pair, g in slots.items():
+            assert new[g] == pair_font.pair_glyph(pair, name == "large", cache), pair
+        assert all(a == b for g, (a, b) in enumerate(zip(old, new)) if g not in set(slots.values())), name
+    assert len(image) == len(rel.data)
+    return image
+
+
+def build(texts, pad=None):
     """Build every changed module into _work/build/. Returns the list of file names."""
     orig = load_dir(ORIG_DIR)
     scripts = load_scripts(orig)
     for sc in scripts:
         if sc.errors or len(sc.hw) * 2 != sc.rel.sections[sc.sec]["size"]:
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
+    slots = assign_pairs(scripts, texts, orig)
+    repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
     remaps, new_secs = {}, {}
     for sc in scripts:
         r = repl.get(sc.rel.name, {})
@@ -349,7 +398,9 @@ def build(repl, pad=None):
     os.makedirs(BUILD_DIR)
     changed, images = [], {sc.rel.name: (sc.rel.data, sc.rel.data) for sc in scripts}
     for m in orig.values():
-        if m.mod_id in new_secs:
+        if m.name == "fonttex2.rel" and slots:
+            image, note = build_font_file(orig, slots), "%d glyphs replaced in both fonts" % len(slots)
+        elif m.mod_id in new_secs:
             sec, data = new_secs[m.mod_id]
             image, note = rebuild_module(m, sec, data, remaps), "rebuilt"
             images[m.name] = (m.data, image)
@@ -404,7 +455,7 @@ def verify(orig, old_scripts, repl, remaps):
                 r = remaps[(mid, t["index"])]
                 assert m.sec_data(t["index"])[r.hi:] == \
                     new[mid].sec_data(t["index"])[r.hi + r.growth:r.growth + t["size"]], m.name + ": tail"
-            else:
+            elif m.name != "fonttex2.rel":          # the font is checked in build_font_file()
                 assert m.sec_data(t["index"]) == new[mid].sec_data(t["index"]), m.name + ": section data"
     print("Verified: scripts re-parse, labels, text and all relocations match the originals.")
 
@@ -445,23 +496,27 @@ def cmd_check(args):
     same = update_plan(plan, {sc.rel.name: (sc.rel.data, sc.rel.data) for sc in scripts}) == plan
     bad += not same
     print("memory plan (%s): %s" % (PLAN_FILE, "entries found and unchanged" if same else "DIFFERENT"))
-    for ch in map(chr, range(0x20, 0x7F)):
-        try:
-            encode_text(ch)
-        except ValueError:
-            bad += 1
-            print("no glyph for ASCII %r" % ch)
+    font = next(m for m in orig.values() if m.name == "fonttex2.rel")
+    for name, pos, _ in pair_font.FONTS:
+        glyphs = pair_font.font_glyphs(font.sec_data(4), pos)
+        size = pair_font.FONT_END[pos] - pos
+        used = 4 + 4 * len(glyphs) + sum(map(len, glyphs))
+        ok = pair_font.pack_font(glyphs, size)[:used] == font.sec_data(4)[pos:pos + used] and all(
+            pair_font.decompress(pair_font.compress(pair_font.decompress(g)[0]))[0] == pair_font.decompress(g)[0]
+            for g in glyphs)
+        bad += not ok
+        print("%s font: %d glyphs repacked and recompressed: %s" % (name, len(glyphs), "identical" if ok else "DIFFERENT"))
     sys.exit("FAILED" if bad else None)
 
 
 def cmd_build(args):
     scripts = load_scripts(load_dir(ORIG_DIR))
-    repl = load_translation(args.json, scripts)
+    texts = load_translation(args.json, scripts)
     pad = {}
     for item in args.pad or []:
         name, size = item.split("=")
         pad[name] = int(size, 0)
-    install(build(repl, pad))
+    install(build(texts, pad))
 
 
 def cmd_restore(args):
