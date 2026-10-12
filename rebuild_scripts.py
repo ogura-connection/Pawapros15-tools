@@ -15,16 +15,11 @@ This tool re-emits each script region and then fixes every reference to the move
 
 Memory plan: the game loads every module at a fixed address. /moduleID2addr.o on the disc holds
 three tables (address, memory size, file size) and the game reads exactly "file size" bytes, so
-a grown module that is not entered there loads truncated. A module can only grow until it
-reaches the next module that is in memory at the same time:
-  scs_main.rel       ends 8 bytes before the scenario modules: it cannot grow at all
-  scs_sce1/2/3.rel   share one slot up to scs_load.rel/scs_face.rel (0x80BBD200)
-The build stops if a module no longer fits. Making room means changing the plan (--move, test only).
-
-Commands:
-  check                round trip: rebuild with no changes, every file must come out identical
-  build [json]         apply a translation file (default _work/translation.json)
-  restore              put the original files back
+a grown module that is not entered there loads truncated. In the original plan scs_main.rel ends
+8 bytes before the scenario modules (scs_sce1/2/3.rel, one slot of 0x5D980 bytes). When that is
+not enough the build moves the scenario slot to memory the plan leaves unused
+(0x812CB800..0x814E0000, 2.1 MB) and scs_main.rel grows into the old slot (up to +383 KB).
+The build stops if a module does not fit even then.
 
 Translation file: a JSON list of entries in the format of _work/story_text.json
 (scan_story.py extract --dump) with an added "en" field:
@@ -54,10 +49,12 @@ BUILD_DIR = os.path.join(S.WORK_DIR, "build")
 R_NOP, R_SECTION, R_END = S.R_NOP, S.R_SECTION, S.R_END
 SECTION_ALIGN = 8      # data behind a script keeps its alignment (REL header align = 8)
 PLAN_FILE = "moduleID2addr.o"
-# First address a module must not reach: the start of the next module loaded alongside it.
-SLOT_END = {"scs_main.rel": 0x80B5F880, "scs_sce1.rel": 0x80BBD200, "scs_sce2.rel": 0x80BBD200,
-            "scs_sce3.rel": 0x80BBD200}
-
+# Memory plan. scs_main.rel is followed by the scenario slot, then by scs_load.rel / scs_face.rel.
+# The game reserves everything below 0x814E0000 for modules (main.dol 0x8003A938 raises the OS
+# arena to it) and its plan ends at 0x812CB794: the area in between is free.
+MAIN, SCENARIOS = "scs_main.rel", ("scs_sce1.rel", "scs_sce2.rel", "scs_sce3.rel")
+SCENARIO_SLOT = (0x80B5F880, 0x80BBD200)
+FREE_AREA = (0x812CB800, 0x814E0000)
 
 # ── English -> glyph units ────────────────────────────────────────────────
 
@@ -188,29 +185,38 @@ def memory_size(image):
     return (fix_size + bss_align - 1) // bss_align * bss_align + bss_size
 
 
-def update_plan(plan, rebuilt, moves):
-    """rebuilt = [(name, original image, new image)]. Returns the new moduleID2addr.o."""
+def update_plan(plan, images):
+    """images = {name: (original image, new image)} for the four script modules.
+    Returns the new moduleID2addr.o."""
     d = bytearray(plan)
     t_addr, t_size, t_file, n = plan_tables(plan)
-    for name, old, new in rebuilt:
+    index = {}
+    for name, (old, _) in images.items():
         hits = [i for i in range(n) if struct.unpack_from(">I", plan, t_file + i * 4)[0] == len(old)
                 and struct.unpack_from(">I", plan, t_size + i * 4)[0] == memory_size(old)]
         if len(hits) != 1:
             raise ValueError("%s: not found in the memory plan" % name)
-        i = hits[0]
-        addr = moves.get(name, struct.unpack_from(">I", plan, t_addr + i * 4)[0])
-        end, limit = addr + memory_size(new), SLOT_END[name]
-        struct.pack_into(">I", d, t_addr + i * 4, addr)
-        struct.pack_into(">I", d, t_size + i * 4, memory_size(new))
+        index[name] = hits[0]
+    addr = {name: struct.unpack_from(">I", plan, t_addr + i * 4)[0] for name, i in index.items()}
+    need = {name: memory_size(new) for name, (_, new) in images.items()}
+    if addr[MAIN] + need[MAIN] > SCENARIO_SLOT[0] or \
+            max(need[fn] for fn in SCENARIOS) > SCENARIO_SLOT[1] - SCENARIO_SLOT[0]:
+        for fn in SCENARIOS:
+            addr[fn] = FREE_AREA[0]
+        print("  memory plan: scenario modules moved to 0x%08X, scs_main.rel may use their old slot" % FREE_AREA[0])
+        limit = {MAIN: SCENARIO_SLOT[1], **{fn: FREE_AREA[1] for fn in SCENARIOS}}
+    else:
+        limit = {MAIN: SCENARIO_SLOT[0], **{fn: SCENARIO_SLOT[1] for fn in SCENARIOS}}
+    for name, (old, new) in images.items():
+        i, end = index[name], addr[name] + need[name]
+        struct.pack_into(">I", d, t_addr + i * 4, addr[name])
+        struct.pack_into(">I", d, t_size + i * 4, need[name])
         struct.pack_into(">I", d, t_file + i * 4, len(new))
-        if name in moves:
-            print("  %-13s moved to 0x%08X..0x%08X (test only)" % (name, addr, end))
-        elif end > limit:
-            sys.exit("%s no longer fits in memory: it needs 0x%X bytes at 0x%08X and the next module "
-                     "starts at 0x%08X (%d bytes too many)." % (name, memory_size(new), addr, limit, end - limit))
-        else:
-            print("  %-13s memory 0x%X -> 0x%X bytes, %d bytes of its slot left"
-                  % (name, memory_size(old), memory_size(new), limit - end))
+        if end > limit[name]:
+            sys.exit("%s does not fit in memory: it needs 0x%X bytes at 0x%08X, the limit is 0x%08X "
+                     "(%d bytes too many)." % (name, need[name], addr[name], limit[name], end - limit[name]))
+        if old != new:
+            print("  %-13s 0x%08X..0x%08X, %d KB of room left" % (name, addr[name], end, (limit[name] - end) // 1024))
     return bytes(d)
 
 
@@ -321,7 +327,7 @@ def load_translation(path, scripts):
     return repl
 
 
-def build(repl, pad=None, moves=None):
+def build(repl, pad=None):
     """Build every changed module into _work/build/. Returns the list of file names."""
     orig = load_dir(ORIG_DIR)
     scripts = load_scripts(orig)
@@ -332,7 +338,7 @@ def build(repl, pad=None, moves=None):
     for sc in scripts:
         r = repl.get(sc.rel.name, {})
         p = (pad or {}).get(sc.rel.name, 0)
-        if not r and not p and sc.rel.name not in (pad or {}):
+        if not r and not p:
             continue
         data, remap = emit_script(sc, r, p)
         remaps[(sc.rel.mod_id, sc.sec)] = remap
@@ -341,12 +347,12 @@ def build(repl, pad=None, moves=None):
               % (sc.rel.name, len(r), sc.rel.sections[sc.sec]["size"], len(data), remap.growth))
     shutil.rmtree(BUILD_DIR, ignore_errors=True)
     os.makedirs(BUILD_DIR)
-    changed, rebuilt = [], []
+    changed, images = [], {sc.rel.name: (sc.rel.data, sc.rel.data) for sc in scripts}
     for m in orig.values():
         if m.mod_id in new_secs:
             sec, data = new_secs[m.mod_id]
             image, note = rebuild_module(m, sec, data, remaps), "rebuilt"
-            rebuilt.append((m.name, m.data, image))
+            images[m.name] = (m.data, image)
         else:
             image, n = patch_addends(m, remaps)
             note = "%d addends" % n
@@ -357,7 +363,7 @@ def build(repl, pad=None, moves=None):
             print("  %-13s %s, 0x%X -> 0x%X bytes" % (m.name, note, len(m.data), len(image)))
     with open(os.path.join(ORIG_DIR, PLAN_FILE), "rb") as f:
         plan = f.read()
-    new_plan = update_plan(plan, [r for r in rebuilt if r[1] != r[2] or r[0] in (moves or {})], moves or {})
+    new_plan = update_plan(plan, images)
     if new_plan != plan:
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
@@ -436,7 +442,7 @@ def cmd_check(args):
     print("%d relocation streams in %d modules re-encoded" % (n, len(orig)))
     with open(os.path.join(ORIG_DIR, PLAN_FILE), "rb") as f:
         plan = f.read()
-    same = update_plan(plan, [(sc.rel.name, sc.rel.data, sc.rel.data) for sc in scripts], {}) == plan
+    same = update_plan(plan, {sc.rel.name: (sc.rel.data, sc.rel.data) for sc in scripts}) == plan
     bad += not same
     print("memory plan (%s): %s" % (PLAN_FILE, "entries found and unchanged" if same else "DIFFERENT"))
     for ch in map(chr, range(0x20, 0x7F)):
@@ -455,12 +461,7 @@ def cmd_build(args):
     for item in args.pad or []:
         name, size = item.split("=")
         pad[name] = int(size, 0)
-    moves = {}
-    for item in args.move or []:
-        name, addr = item.split("=")
-        moves[name] = int(addr, 0)
-        pad.setdefault(name, 0)
-    install(build(repl, pad, moves))
+    install(build(repl, pad))
 
 
 def cmd_restore(args):
@@ -475,8 +476,6 @@ def main():
     p.add_argument("json", nargs="?", default=os.path.join(S.WORK_DIR, "translation.json"))
     p.add_argument("--pad", action="append", metavar="FILE=BYTES",
                    help="test only: add empty space to a script module, e.g. scs_main.rel=0x80000")
-    p.add_argument("--move", action="append", metavar="FILE=ADDRESS",
-                   help="test only: load a script module at another address, e.g. scs_main.rel=0x81300000")
     p.set_defaults(func=cmd_build)
     sub.add_parser("restore", help="put the original files back").set_defaults(func=cmd_restore)
     args = ap.parse_args()
