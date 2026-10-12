@@ -11,6 +11,15 @@ This tool re-emits each script region and then fixes every reference to the move
     in scs_main.rel, the ADDR16_HA/LO pairs in code, pointers to the tables behind the script)
   - the positions of relocations that are applied inside a rebuilt section
   - the section size, relocation/import table offsets and fixSize in the REL header
+  - the module's file size and memory size in moduleID2addr.o (see "Memory plan" below)
+
+Memory plan: the game loads every module at a fixed address. /moduleID2addr.o on the disc holds
+three tables (address, memory size, file size) and the game reads exactly "file size" bytes, so
+a grown module that is not entered there loads truncated. A module can only grow until it
+reaches the next module that is in memory at the same time:
+  scs_main.rel       ends 8 bytes before the scenario modules: it cannot grow at all
+  scs_sce1/2/3.rel   share one slot up to scs_load.rel/scs_face.rel (0x80BBD200)
+The build stops if a module no longer fits. Making room means changing the plan (--move, test only).
 
 Commands:
   check                round trip: rebuild with no changes, every file must come out identical
@@ -23,7 +32,7 @@ Translation file: a JSON list of entries in the format of _work/story_text.json
 "file" + "section_offset" identify the run, "text" (optional) is checked against the original,
 "en" is the replacement. Use \\n for a line break inside the run. Entries without "en" are ignored.
 
-Original .rel files are kept in _work/orig/ (copied from DATA/files on first use, so the first
+Original .rel files and moduleID2addr.o are kept in _work/orig/ (copied from DATA/files on first use, so the first
 run must be on unpatched files). Built files are checked in _work/build/ before they are
 installed to DATA/files. Both folders are game data: git-ignored, never commit them.
 """
@@ -44,6 +53,10 @@ ORIG_DIR = os.path.join(S.WORK_DIR, "orig")
 BUILD_DIR = os.path.join(S.WORK_DIR, "build")
 R_NOP, R_SECTION, R_END = S.R_NOP, S.R_SECTION, S.R_END
 SECTION_ALIGN = 8      # data behind a script keeps its alignment (REL header align = 8)
+PLAN_FILE = "moduleID2addr.o"
+# First address a module must not reach: the start of the next module loaded alongside it.
+SLOT_END = {"scs_main.rel": 0x80B5F880, "scs_sce1.rel": 0x80BBD200, "scs_sce2.rel": 0x80BBD200,
+            "scs_sce3.rel": 0x80BBD200}
 
 
 # ── English -> glyph units ────────────────────────────────────────────────
@@ -151,15 +164,65 @@ def emit_script(sc, repl, pad=0):
     return data, Remap(lo, hi, newidx, growth)
 
 
+# ── Memory plan (moduleID2addr.o) ─────────────────────────────────────────
+
+def plan_tables(d):
+    """File offsets of the three tables in the ELF object and their entry count."""
+    shoff = struct.unpack_from(">I", d, 0x20)[0]
+    shentsize, shnum = struct.unpack_from(">HH", d, 0x2E)
+    secs = [struct.unpack_from(">10I", d, shoff + i * shentsize) for i in range(shnum)]
+    symtab = next(s for s in secs if s[1] == 2)
+    strtab = secs[symtab[6]][4]
+    out = {}
+    for k in range(symtab[5] // 16):
+        name, value, size, _, _, shndx = struct.unpack_from(">IIIBBH", d, symtab[4] + k * 16)
+        name = d[strtab + name:d.index(b"\0", strtab + name)].decode()
+        if name.startswith("moduleID2") and shndx < shnum:
+            out[name] = (secs[shndx][4] + value, size // 4)
+    return out["moduleID2addr"][0], out["moduleID2size"][0], out["moduleID2relFileSize"][0], out["moduleID2addr"][1]
+
+
+def memory_size(image):
+    """Memory a module needs once linked: the part kept after linking, then its BSS."""
+    bss_size, bss_align, fix_size = (struct.unpack_from(">I", image, o)[0] for o in (0x20, 0x44, 0x48))
+    return (fix_size + bss_align - 1) // bss_align * bss_align + bss_size
+
+
+def update_plan(plan, rebuilt, moves):
+    """rebuilt = [(name, original image, new image)]. Returns the new moduleID2addr.o."""
+    d = bytearray(plan)
+    t_addr, t_size, t_file, n = plan_tables(plan)
+    for name, old, new in rebuilt:
+        hits = [i for i in range(n) if struct.unpack_from(">I", plan, t_file + i * 4)[0] == len(old)
+                and struct.unpack_from(">I", plan, t_size + i * 4)[0] == memory_size(old)]
+        if len(hits) != 1:
+            raise ValueError("%s: not found in the memory plan" % name)
+        i = hits[0]
+        addr = moves.get(name, struct.unpack_from(">I", plan, t_addr + i * 4)[0])
+        end, limit = addr + memory_size(new), SLOT_END[name]
+        struct.pack_into(">I", d, t_addr + i * 4, addr)
+        struct.pack_into(">I", d, t_size + i * 4, memory_size(new))
+        struct.pack_into(">I", d, t_file + i * 4, len(new))
+        if name in moves:
+            print("  %-13s moved to 0x%08X..0x%08X (test only)" % (name, addr, end))
+        elif end > limit:
+            sys.exit("%s no longer fits in memory: it needs 0x%X bytes at 0x%08X and the next module "
+                     "starts at 0x%08X (%d bytes too many)." % (name, memory_size(new), addr, limit, end - limit))
+        else:
+            print("  %-13s memory 0x%X -> 0x%X bytes, %d bytes of its slot left"
+                  % (name, memory_size(old), memory_size(new), limit - end))
+    return bytes(d)
+
+
 # ── Build ─────────────────────────────────────────────────────────────────
 
 def ensure_orig():
     if not os.path.isdir(ORIG_DIR):
         os.makedirs(ORIG_DIR)
-        for fn in sorted(os.listdir(S.DATA_FILES)):
-            if fn.endswith(".rel"):
-                shutil.copy2(os.path.join(S.DATA_FILES, fn), os.path.join(ORIG_DIR, fn))
-        print("Saved the original .rel files to %s" % ORIG_DIR)
+        print("Saving the original files to %s" % ORIG_DIR)
+    for fn in sorted(os.listdir(S.DATA_FILES)):
+        if (fn.endswith(".rel") or fn == PLAN_FILE) and not os.path.exists(os.path.join(ORIG_DIR, fn)):
+            shutil.copy2(os.path.join(S.DATA_FILES, fn), os.path.join(ORIG_DIR, fn))
 
 
 def load_dir(*dirs):
@@ -258,7 +321,7 @@ def load_translation(path, scripts):
     return repl
 
 
-def build(repl, pad=None):
+def build(repl, pad=None, moves=None):
     """Build every changed module into _work/build/. Returns the list of file names."""
     orig = load_dir(ORIG_DIR)
     scripts = load_scripts(orig)
@@ -269,7 +332,7 @@ def build(repl, pad=None):
     for sc in scripts:
         r = repl.get(sc.rel.name, {})
         p = (pad or {}).get(sc.rel.name, 0)
-        if not r and not p:
+        if not r and not p and sc.rel.name not in (pad or {}):
             continue
         data, remap = emit_script(sc, r, p)
         remaps[(sc.rel.mod_id, sc.sec)] = remap
@@ -278,11 +341,12 @@ def build(repl, pad=None):
               % (sc.rel.name, len(r), sc.rel.sections[sc.sec]["size"], len(data), remap.growth))
     shutil.rmtree(BUILD_DIR, ignore_errors=True)
     os.makedirs(BUILD_DIR)
-    changed = []
+    changed, rebuilt = [], []
     for m in orig.values():
         if m.mod_id in new_secs:
             sec, data = new_secs[m.mod_id]
             image, note = rebuild_module(m, sec, data, remaps), "rebuilt"
+            rebuilt.append((m.name, m.data, image))
         else:
             image, n = patch_addends(m, remaps)
             note = "%d addends" % n
@@ -291,6 +355,13 @@ def build(repl, pad=None):
                 f.write(image)
             changed.append(m.name)
             print("  %-13s %s, 0x%X -> 0x%X bytes" % (m.name, note, len(m.data), len(image)))
+    with open(os.path.join(ORIG_DIR, PLAN_FILE), "rb") as f:
+        plan = f.read()
+    new_plan = update_plan(plan, [r for r in rebuilt if r[1] != r[2] or r[0] in (moves or {})], moves or {})
+    if new_plan != plan:
+        with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
+            f.write(new_plan)
+        changed.append(PLAN_FILE)
     verify(orig, scripts, repl, remaps)
     return changed
 
@@ -363,6 +434,11 @@ def cmd_check(args):
                 bad += 1
                 print("%-13s relocation stream for module %d does not re-encode identically" % (m.name, mod))
     print("%d relocation streams in %d modules re-encoded" % (n, len(orig)))
+    with open(os.path.join(ORIG_DIR, PLAN_FILE), "rb") as f:
+        plan = f.read()
+    same = update_plan(plan, [(sc.rel.name, sc.rel.data, sc.rel.data) for sc in scripts], {}) == plan
+    bad += not same
+    print("memory plan (%s): %s" % (PLAN_FILE, "entries found and unchanged" if same else "DIFFERENT"))
     for ch in map(chr, range(0x20, 0x7F)):
         try:
             encode_text(ch)
@@ -379,7 +455,12 @@ def cmd_build(args):
     for item in args.pad or []:
         name, size = item.split("=")
         pad[name] = int(size, 0)
-    install(build(repl, pad))
+    moves = {}
+    for item in args.move or []:
+        name, addr = item.split("=")
+        moves[name] = int(addr, 0)
+        pad.setdefault(name, 0)
+    install(build(repl, pad, moves))
 
 
 def cmd_restore(args):
@@ -394,6 +475,8 @@ def main():
     p.add_argument("json", nargs="?", default=os.path.join(S.WORK_DIR, "translation.json"))
     p.add_argument("--pad", action="append", metavar="FILE=BYTES",
                    help="test only: add empty space to a script module, e.g. scs_main.rel=0x80000")
+    p.add_argument("--move", action="append", metavar="FILE=ADDRESS",
+                   help="test only: load a script module at another address, e.g. scs_main.rel=0x81300000")
     p.set_defaults(func=cmd_build)
     sub.add_parser("restore", help="put the original files back").set_defaults(func=cmd_restore)
     args = ap.parse_args()
