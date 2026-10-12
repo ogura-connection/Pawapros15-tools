@@ -195,7 +195,7 @@ def odd_tail(text):
 
 def check_scene(name, rows, done):
     """Warnings for one scene: long lines, too many lines, odd-length runs before a same-line run, gaps."""
-    warn, line, pending, box, box_orig = [], 0, None, 0, 0
+    warn, line, pending, box, box_orig, bubble = [], 0, None, 0, 0, None
     runs = [r for r in rows if "off" in r]
     some = sum(1 for r in runs if r["off"] in done)
     missing = [r["off"] for r in runs if r["text"] and r["off"] not in done]
@@ -206,8 +206,10 @@ def check_scene(name, rows, done):
             if r["note"] == "{name}":
                 line += 12                                  # an inserted name: up to 6 full cells
             continue
-        if r["mark"] == "B":
-            box = box_orig = 0
+        if r["mark"] == "B" or (r["window"] != 30 and r["window"] != bubble):
+            box = box_orig = 0                              # a new box, or another speaker's bubble
+        if r["window"] != 30:
+            bubble = r["window"]
         if r["mark"] != "+":
             line = 0
             box, box_orig = box + 1, box_orig + 1

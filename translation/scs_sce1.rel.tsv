@@ -642,39 +642,432 @@
 22252	8b92	Yes, sir.
 22262	ca36	I'm sorry...
 22704	0527	 kakaricho
-25148	7720	Today is my first day at work.
-25168	0eb6	A day I'll always remember!
-25198	503a	(Knock knock)
-25224	c67b	My paperwork is all filled in,
-25254	03fd	so I haven't forgotten a thing.
-25276	02da	The world of company baseball
-25304	edbb	I've longed for starts today.
-25324	7133	And with a little luck...
+22728	49ca	 kacho
+22740	f4c9	 rank and file
+22766	cb6e	...Easier said than done.
+22790	ce7b	That's a serious pile of work.
+22812	45fa	Right. At times like this,
+22832	4e5e	I delegate.
+22862	114f	So, without delay...
+22884	e23c	Give it to Yabe-kun
+22904	5914	Give it to Maruo
+22920	69a5	Give it to Todoroki-senpai
+22980	9900	Yabe-kun,
+22994	6d41	I need this done by tonight.
+23022	f7a4	Consider it done,
+23048	2403	-kacho!
+23076	e2b9	・
+23088	e2b9	・
+23100	e2b9	・
+23118	4b22	All done!
+23144	0538	Thanks, Yabe-kun!
+23166	ff41	Good work.
+23184	c4ad	Let's have a look...
+23228	75f9	Oh!\nIt's perfect.
+23250	4119	Not bad at all, Yabe-kun.
+23282	c1fa	But of course.
+23336	52ac	Ugh... There's a mistake.
+23362	bc4d	Oh, here too.
+23384	bab7	In the end,
+23394	bbd7	I had to redo the whole thing.
+23456	629f	Maruo,
+23466	6d41	I need this done by tonight.
+23498	dddd	Huh?!
+23508	5b5f	Me, senpai?
+23532	d357	Yep.
+23546	0f34	Got it,
+23568	39e1	-kacho.
+23596	e2b9	・
+23608	e2b9	・
+23620	e2b9	・
+23638	f204	Done!
+23658	21c7	Oh,\nthanks, Maruo!
+23682	ff41	Good work.
+23700	c4ad	Let's have a look...
+23762	032a	Th-this is...
+23792	ad16	!
+23812	675a	Put this, that and the other\ntogether just right, and
+23848	1ff1	invented it by accident!
+23874	2751	That's amazing, Maruo!
+23890	af5c	Nice going.
+23912	5ba2	Heh heh.
+23924	6022	I deliver when it counts!
+24096	52ac	Ugh... There's a mistake.
+24122	bc4d	Oh, here too.
+24144	bab7	In the end,
+24154	bbd7	I had to redo the whole thing.
+24216	db57	Todoroki-senpai!\nCould I ask you to finish
+24242	8831	this job by tonight?
+24270	9700	Hm...?
+24288	d222	Sure, got it.
+24306	521f	By tonight.
+24332	b269	 is starting to look
+24348	43df	the part as kacho.
+24372	7367	No, no,
+24386	b406	I've a long way to go.
+24422	e2b9	・
+24434	e2b9	・
+24446	e2b9	・
+24464	a7c4	All done,
+24484	39e1	-kacho.
+24498	fd68	Todoroki-senpai,
+24510	2916	thank you very much.
+24536	c4ad	Let's have a look...
+24580	3f4c	Yes,\nit's perfect.
+24602	8bba	I knew I could count on you.
+24634	6a58	Ha ha ha!
+24646	307d	I've been at this job a long time.
+24752	0b1a	Right.\nI'll work at it until I'm
+24786	3ac1	that reliable too!
+24848	b90e	(Whisper whisper)
+24870	84a6	Hey, did you see?
+24890	edb5	 was giving
+24900	6aa6	orders to Todoroki-senpai!
+24932	9aa3	So he made kacho. Isn't that
+24954	4562	taking it a bit far?
+24982	88b1	Hasn't he come up in the world.
+25034	52ac	Ugh... There's a mistake.
+25060	b847	That's not like senpai.
+25088	bab7	In the end,
+25098	bbd7	I had to redo the whole thing.
+25148	7720	Today is a day to remember:
+25168	0eb6	my very first day at work.
+25198	503a	(Tap tap)
+25224	c67b	My papers are all filled in.
+25254	03fd	I haven't forgotten anything.
+25276	02da	The industrial leagues I've
+25304	edbb	waited so long for start today.
+25324	7133	And with a little luck,
 25340	13d6	I might even make it to the pros!
 25374	8b5a	"Hey, son."
 25396	0be7	"Wh-what is it, Dad?!"
-25422	be5b	"Are you still going on about
-25450	e631	 that pipe dream of yours?"
-25474	c175	"You're a grown man. Hurry up
-25496	1e57	 and take over the family shop!"
-25534	4cd5	"Oh, dear. He finally got into
-25564	3799	 a place where he can play ball,
-25596	abaf	 so why not let him do what he
-25618	8e27	 loves for a little while?"
-25652	2318	"Hmmmmm...
+25422	be5b	"Still going on about that
+25450	e631	 pipe dream of yours?"
+25474	c175	"Act your age. Hurry up and
+25496	1e57	 take over the family business!"
+25534	4cd5	"Now, dear. He's finally got
+25564	3799	 into a place where he can play.
+25596	abaf	 Why not let him do as he
+25618	8e27	 likes for a little while?"
+25652	2318	"Hmmmm...
 25668	e802	 ...All right. Fine."
-25694	9930	"I'll give you a chance. Go play
-25718	5228	 all the baseball you want!"
-25748	c2d0	"But in return, if you have
-25766	4abb	 no results in 3 years
-25784	19e7	,
-25804	e319	 you give up at once
-25826	4ccd	 and come back home. Got it?"
+25694	9930	"I'll give you a chance. Go and
+25718	5228	 play all the damn ball you want!"
+25748	c2d0	"But in return,
+25766	4abb	 show results in 3 years
+25784	19e7	, or
+25804	e319	 you give it up and come
+25826	4ccd	 straight back home. Got it?"
 25852	854b	"Got it, Dad!"
-25880	9fa5	All right!
+25880	9fa5	Right!
 25892	aaea	I've been given three years.
 25920	6235	I'll get results in that time
 25942	828e	and go pro, no matter what!
-25974	0b78	First stop: where my company
-25990	d485	baseball career begins,
-26016	243a	"Pawafuru Corp.", here I come!
+25974	0b78	First stop: where my
+25990	d485	industrial-league days begin.
+26016	243a	Off I go to "Pawafuru Corp."!
+26066	2d12	Well, 
+26078	f926	.
+26086	1cf7	Is your work going well?
+26114	11e3	Yes, sir!
+26124	f358	Couldn't be better!
+26158	d411	 is\nworking well, it seems.
+26186	b9a5	I shall report it to the shacho.
+26250	4798	-kun,\nI have heard from the bucho.
+26280	0e79	You are doing very well, I hear.
+26312	7cf1	I hereby award you the
+26330	517c	Special Employee Award
+26346	fba9	.
+26362	80ef	【Special Employee Award】\nGiven to fine employees of Pawafuru Corp. who have\nworked steadily and hard. Comes with a gleaming gold\ntrophy and a certificate.
+26488	dddd	Huh?!
+26498	27f3	Me?
+26510	7147	Indeed.\nIt goes to you because you have
+26546	4e33	worked steadily, day after day.
+26578	7493	All 
+26590	4a8d	right!
+26606	70b2	For the Special Employee Award
+26624	ba7d	I got a trophy and a certificate.
+26654	97dc	Now, then.
+26670	33e4	Is there anything else you want?
+26702	1132	Anything I want?
+26722	7e83	Now that you mention it...
+26750	9f42	Money to play for life!\nA day off and some free time.\nNew training gear for the team.
+26824	d369	A girlfriend.
+26880	b02e	Hm, hm.\nEnough money to play for life.
+26914	61fe	I would like that myself.
+26938	587a	Very well.
+26952	6526	I shall think about it.
+26982	e838	A few days later, the shacho
+26994	c549	handed me a cash reward himself.
+27028	7493	All 
+27040	4a8d	right!
+27072	0897	Hm, hm. A day off.\nPerhaps one does need to forget
+27108	5758	it all and recharge now and then.
+27140	60ed	On the shacho's authority,
+27156	6345	I got a whole special day off.
+27216	2c01	Mmm!\nI woke up feeling fresher
+27240	a6e9	than usual today!
+27266	b2f3	No work, no baseball.
+27286	0809	Today I'm taking it easy!
+27360	f3d2	Hm, hm. A new girlfriend.\nThey do say wives and tatami
+27410	af6b	are best when new.
+27434	7a45	...but that is one thing even
+27456	4c50	I can do nothing about!
+27488	3187	Joking aside,
+27508	9c40	give me a proper answer.
+27536	bd2d	What is it you really want?
+27564	4056	Um...
+27592	395f	Hm, hm.
+27606	8dbe	New training gear.
+27630	f84d	True, it may be about time
+27654	dec6	we replaced some.
+27680	9a61	What kind of gear do you want?
+27712	4056	Um...
+27952	8ee2	Hm, hm. I see, I see.
+28046	127d	, then.
+28078	611e	,
+28086	7283	this is a gift from me.
+28114	d81d	Th-this is...!
+28154	7905	A new 
+28166	3c21	!
+28196	3c21	!
+28224	2cd2	It is nothing grand, but
+28246	a41c	put it to use in practice.
+28282	889f	Aim for the nationals
+28304	2f42	and give it your all.
+28340	4de3	Aim for the national title
+28358	2f42	and give it your all.
+28384	fc96	Aim to win the next one too,
+28406	2f42	and give it your all.
+28436	d0fd	Yes, sir!
+28474	bfd2	Gear level-up game event fired
+28522	ffae	A few days later...
+28586	0685	-kun.
+28600	98c9	Oh, Shacho!
+28616	9ca9	What is it, sir?
+28634	d93e	The other day\nyou said you wanted to buy
+28668	7cff	new training gear.
+28694	d8db	Come to think of it,
+28708	52dc	did I say that?
+28740	4927	Within our budget,\nthese are the things we
+28780	af56	might be able to buy...
+28808	46fd	Is there anything you need?
+28840	5640	Let me see, sir.
+28860	a82a	Um...
+28908	cb0a	Ｌｖ．
+28920	a8f4	　
+28958	cb0a	Ｌｖ．
+28970	a8f4	　
+29008	cb0a	Ｌｖ．
+29020	a8f4	　
+29116	8ee2	Hm, hm. I see, I see.
+29168	127d	, then.
+29182	587a	Very well.
+29196	6d9d	Let me think it over.
+29242	f6b3	That last win was splendid.
+29272	beb4	You all did very well.
+29304	7283	This is a gift from me.
+29350	d81d	Th-this is...!
+29396	ad16	!
+29418	2cd2	It is nothing grand, but
+29440	a41c	put it to use in practice.
+29472	889f	Aim for the nationals
+29494	2f42	and give it your all.
+29532	4de3	Aim for the national title
+29550	2f42	and give it your all.
+29588	fc96	Aim to win the next one too,
+29610	2f42	and give it your all.
+29652	1906	Yes, sir!!!
+29722	e27f	Phew...
+29734	b23e	I'm soaked through from the rain.
+29758	c037	When it comes down like this,
+29778	d14f	practice is less efficient
+29804	4c87	.
+29818	cb60	And compared with usual,
+29840	d85d	fewer people have come to train
+29868	c593	today, I do believe.
+29896	d00a	If only it cleared up,
+29910	78a5	we could really cut loose...
+29946	5d20	If this is how it is,\nI would have been better off
+29980	0d16	staying at work!
+30006	d199	Oh?\nYou should have said so. I've
+30040	1870	got plenty of work to hand you.
+30080	74e3	Momoko-chan!
+30100	44ac	I was nearby, so I came
+30118	7891	to have a look.
+30144	347c	It's really pouring, isn't it!
+30174	4102	I made a teru teru bozu.\nWould you like it?
+30210	b942	It's only a little charm, but...
+30256	d37b	Momoko gave me a teru teru bozu.
+30322	8c81	The rain made a mess of today.
+30356	9d4c	Good evening.
+30372	9da0	It's time for PawaSpo News.
+30400	b0c4	Stormy skies are covering\nthe whole of Japan.
+30440	1ebd	If you are heading out...
+30474	0acd	Whoa, it's bucketing down!
+30500	a917	The 
+30512	97d2	weather forecast
+30524	eba9	...
+30532	5378	I should have checked it.
+30576	6b51	On the main command screen,
+30616	639d	press SELECT
+30660	b975	press the - Button
+30704	639d	press SELECT
+30752	ec11	press the Y Button
+30776	eec0	to check the weather forecast.
+30838	8225	Brrr, freezing...
+30854	677c	Snow today, huh.
+30874	0929	When it's this cold,
+30890	2117	practice is bound to suffer.
+30916	e481	Just like on rainy days,\nfewer people have come to train
+30952	c593	today, I do believe.
+30980	d00a	If only it cleared up,
+30994	78a5	we could really cut loose...
+31072	27a5	Momoko-chan suggested having\nfun to raise my motivation.
+31126	1f04	Play to raise motivation
+31152	717e	, huh.
+31174	b35d	Senpai also taught me that\nmotivation drifts back to\nnormal as time goes by.
+31254	3499	(Scribble scribble
+31276	e2b9	..
+31290	e2b9	
+31304	8f75	.)
+31320	d874	Aaargh!
+31330	b05c	This work is never going to end!
+31362	5ddc	(Giggle)
+31378	1db8	You look busy.
+31394	0942	Baseball and work are fine, but
+31420	305d	you need a breather now and then.
+31450	74e3	Momoko-chan!
+31474	37d4	Why not go out somewhere\nonce in a while,
+31508	a613	for a change of scene?
+31534	f3d4	If you don't recharge and\ncome to work full of drive,
+31574	04f7	the bucho will tell you off.
+31600	e231	Come to think of it,\nlately it's been nothing but
+31636	3401	work and baseball practice...
+31658	3ad0	Work or baseball, whatever you do,
+31684	c3bc	it starts with drive and attitude!
+31714	cb5a	Exactly!
+31728	91b3	With drive, you can do anything.
+31764	a412	Senpai!
+31780	17e1	That said,
+31800	4555	motivation
+31810	75e5	 is hard to keep up.
+31840	849a	Good form or bad,
+31862	cf57	nothing stays the same for ever.
+31894	fb52	People have 
+31904	c7f0	biorhythms
+31920	5551	,
+31938	a27b	so left alone, you drift
+31966	fd76	back to normal.
+31982	0399	\n【Biorhythm】\nA change that comes over the human body and
+32026	9ef8	feelings in a regular cycle.
+32050	2eaa	Huh...
+32066	17f5	But as Hanai says,\na break now and then is the
+32112	3573	best way to lift motivation.
+32146	7d18	...Right!
+32162	53b9	Let's all go for a meal tonight.
+32198	f3b7	All right!
+32220	42a2	Naturally,
+32234	92ff	yours truly is coming too.
+32282	fa75	After that we all went to eat.
+32332	56e3	Kanpai!
+32346	a58c	\nThey are drinking tea, juice\nand other soft drinks!\n
+32408	9022	Each week, motivation has a set
+32438	2af7	chance of returning to normal.
+32568	4d70	With my promotion,
+32588	264a	I decided to move somewhere nicer.
+32624	58e7	The rent is high, so I'd
+32642	1e03	better cut down on waste...
+32728	b425	It seems everyone is here.
+32758	cc80	I shall now announce
+32772	b4a0	who has made the bench.
+32820	2e31	Here is the squad for tomorrow!
+32910	ea6b	Sadly, I did not
+32928	f39c	make the bench.
+32958	38f1	Yours truly did not make
+32978	7bdb	the bench either.
+33004	0d0c	And Maruo, who's our kohai,
+33030	a412	is a regular starter...
+33066	8f91	It can't be helped.\nHis feel for the game is on
+33100	a458	another level from ours!
+33130	7724	Oh well.
+33146	9e17	Let's cheer hard from the stands.
+33178	1ab3	Right you are!
+33200	dd8c	And then, game day...
+33234	2527	Go for it!
+33292	cc3d	・\n・
+33302	5d00	Game set!
+33320	b984	For all our cheering,
+33346	970e	we lost the game.
+33374	8a20	Oh dear, oh dear.
+33418	0faf	To think we'd lose\nto a team like that.
+33452	5bd7	Back to square one...
+33486	4e8f	What a thing to happen.\nAt this rate the nationals, and
+33526	6c5c	a title, are a dream of a dream.
+33620	c993	Right,
+33642	62d9	I'm batting 
+33654	46d8	.
+33672	5d74	I'm going to tear it up out there!
+33704	c932	I'm a reserve, huh.\nI'll stay ready to go in
+33742	6fd5	at any moment!
+33782	f3b7	All right!
+33796	3f63	I get to play!
+33826	8cd3	And so does yours truly!
+33850	c0d6	You two,
+33864	6a12	I'm expecting big things today!
+33896	11e3	Yes!
+33906	1ab3	Right you are!
+33948	611e	,
+33956	eb6c	I have a favour to ask you.
+33982	4640	Of me?
+33998	e99c	You've made your mark\non this team, and I think the
+34032	ab91	others have come to trust you.
+34068	4569	You think so?
+34084	5ba2	Ha ha.
+34100	d444	So here it is.
+34118	06c0	After this tournament,\nI want you to lead the team
+34152	d04f	as captain.
+34178	6178	Huh?
+34188	3559	Me, captain?!
+34214	1ead	That's right.
+34226	1d26	You'll do it, won't you?
+34250	da91	Yes, I'll do it!
+34268	c7ce	Captain's a bit much...
+34320	1570	Good!\nI was sure you'd
+34346	04a8	say yes.
+34386	bc25	, Captain!
+34402	52d9	We're counting on you!
+34426	02ff	Listen up, everyone!
+34446	67e8	As of this moment,
+34466	8504	 is our\n
+34482	4fb4	new captain.
+34496	ca6d	Everyone,
+34514	72cf	 is your captain.
+34530	4102	Get behind him!
+34570	b3ee	Yeeeaaah!!!
+34600	1c70	With everyone's backing,
+34634	9dcf	 is the new captain.
+34664	2091	As captain, you control every
+34696	875c	player from the 8th inning on.
+34760	82cd	I see. That's a shame.\nI really believed you
+34798	9325	would take it on...
+34820	f7f1	I'm sorry.
+34840	ba2b	Fair enough.\nThen I'll go on leading
+34872	41c4	the team myself.
+34910	c184	I turned down captain, so I'll\nmake up for it by owning what\nI do more than ever!
+34986	f72b	Special abilities are now\neasier to gain during games.
+35052	8054	-kun!
+35066	73f3	Oh, Momoko-chan!
+35088	996d	Your game's tomorrow, right?\nI made this for you.
+35128	bf5b	Here's hoping for sunshine!
+35154	8aa8	This is...
+35166	7482	a teru teru bozu!
+35186	42f1	Thank you!
+35236	dd8c	And then, game day...
+35272	6396	So this is the ground.
+35292	79df	Knowing the game is so close,
+35314	27e0	I'm all nerves, I must say!
+35356	c530	At last, it's here:
+35384	cba2	Intercity qualifiers, round 1.
+35424	b177	Intercity qualifiers, semifinal.
+35464	962c	Intercity qualifiers, the final.
