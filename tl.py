@@ -11,7 +11,8 @@ original run, the English. No Japanese text. The hash catches a run that moved o
 Scene files hold the Japanese and stay in _work/ (git-ignored).
 
 A scene is the text between two script entry points (a label after a return or jump). Scene file
-columns: section offset, window type, portrait id of the speaker's slot, layout mark, text.
+columns: section offset, window type, speaker (from the portrait in that window's slot, a hint
+only), layout mark, text.
 Layout marks:  B first run of a box   L new line   W new line after a button wait
                + same line as the run before (after a colour change or an inserted name)
 Lines starting with # are notes: {name} = inserted name, colour N = text colour from here on.
@@ -35,10 +36,18 @@ NAME_OPS = set(range(0x4B, 0x50)) | {0xA5, 0xA6, 0xA7, 0xDA}
 OP_COLOUR = 0x73
 PORTRAIT_SLOT = {0x7A: 2, 0x7B: 3, 0x7C: 4, 0x7D: 5}     # opcode -> window type it speaks in
 UNCHECKED_WINDOWS = {26, 31}                               # menus and glossary pop-ups: own layout
+# Portrait id ranges seen in scenario 1 (id // 16), for the speaker column of the scene files.
+SPEAKERS = [(0x00, 0x03, "player"), (0x04, 0x05, "Yabe"), (0x2B, 0x37, "extra"), (0x4D, 0x4E, "Momoko"),
+            (0x56, 0x56, "Kageyama"), (0x5E, 0x5F, "Tamano"), (0x60, 0x60, "Yajima"),
+            (0x61, 0x61, "Todoroki"), (0x62, 0x62, "Maruo"), (0x65, 0x66, "Kagurazaka")]
 
 
 def text_hash(text):
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:4]
+
+
+def speaker(face):
+    return next((name for lo, hi, name in SPEAKERS if lo <= face >> 4 <= hi), "%X" % face)
 
 
 def scenes(sc):
@@ -110,7 +119,7 @@ def cmd_export():
                     if "note" in r:
                         f.write("# %s\n" % r["note"])
                     else:
-                        f.write("%d\t%d\t%X\t%s\t%s\n" % (r["off"], r["window"], r["face"], r["mark"],
+                        f.write("%d\t%d\t%s\t%s\t%s\n" % (r["off"], r["window"], speaker(r["face"]), r["mark"],
                                                           r["text"].replace("\n", "\\n")))
             index.append("s%04d\t%d runs\t%d done\t0x%X" % (n, len(runs),
                                                            sum(1 for r in runs if r["off"] in done),
