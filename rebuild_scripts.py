@@ -351,11 +351,12 @@ def assign_pairs(scripts, texts, orig):
                     usage[char_to_glyph(value)] += 1
     if not pairs:
         return {}
-    usage.update(pair_font.other_text_usage(orig, set(S.SCRIPT_FILES) | {"fonttex2.rel"}))
+    # namein.rel is the name-entry kanji picker: it lists every kanji once and is not text
+    usage.update(pair_font.other_text_usage(orig, set(S.SCRIPT_FILES) | {"fonttex2.rel", "namein.rel"}))
     slots, taken = pair_font.allocate(pairs, usage)
     print("Font: %d letter pairs in %d kanji slots (%d slots left)%s"
           % (len(slots), len(slots), len(pair_font.KANJI_SLOTS) - len(slots),
-             "" if not taken else "; %d of them are kanji that untranslated text still uses" % taken))
+             "" if not taken else "; %d of them are kanji that Japanese text elsewhere still uses" % taken))
     return slots
 
 
