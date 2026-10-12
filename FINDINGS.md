@@ -122,7 +122,7 @@ A few `.arc` files and `fonttex2.rel` show 1–4 hits each, which are most likel
 
 Things learned on the way:
 
-- **The dialogue box is 18 glyphs wide and 2 lines high** (window type 29). A longer run wraps by itself; a third line scrolls the first one away. The font only has full-width Latin, so that is 36 English characters per box. A real translation needs a half-width font.
+- **The dialogue box is 17 glyphs wide and 2 lines high** (window type 29). A longer run wraps by itself; a third line scrolls the first one away. The font only has full-width Latin, so English needs the pair font described below.
 - **Success Mode needs a Nunchuk, Classic Controller or GameCube pad**, and its menus read the stick, not the D-pad.
 - The intro narration before name entry (「小さいときから野球が好きで…」) is not in the four script files and was not found as 12-bit, 16-bit or Shift-JIS text anywhere in `DATA`.
 
@@ -154,7 +154,21 @@ The game does not allocate memory for modules. `/moduleID2addr.o` (an ELF object
 
 Tested: `scs_main.rel` grown by 328 KB and `scs_sce1.rel` by 384 KB, loaded at the new address, no loader errors, 50 pages of story played. Not tested yet: scenarios 2 and 3, a match inside Success Mode, saving and loading a Success game, real hardware.
 
-**Is 383 KB enough for `scs_main.rel`?** Its text is 358 KB (238,578 glyphs at 12 bits). English at one letter per unit needs 2 to 2.5 times as many units, which is 358-537 KB more: too close. The fix is also the fix for the 18-glyph box: put **two letters in one glyph cell**. A cell is 22x28 pixels, the half-width font in `build_font.py` is 11x28, and the scripts use only 1,565 of the 3,038 kanji slots. With letter pairs in the kanji slots, English takes about as many units as the Japanese, a box holds 36 letters per line, and no game code has to change.
+**Is 383 KB enough for `scs_main.rel`?** Not at one letter per unit: its text is 358 KB (238,578 glyphs at 12 bits) and English needs 2 to 2.5 times as many letters. The pair font below removes the problem.
+
+## The pair font (tested in Dolphin)
+
+`pair_font.py` draws **two half-width letters into one glyph cell** and stores the pairs in kanji slots. English then takes one text unit per two letters: about the size of the Japanese, and no game code changes.
+
+- `fonttex2.rel` section 4 holds two complete fonts with the same 3,744 glyph numbers: a small one at +0 (16x17 pixels used, shades 8 = ink to 15 = background) and the large outlined one the dialogue uses at +0x05DF64 (22x28, shades 1 = ink, 9 = outline, 15 = background). A third set of 68 glyphs follows at +0x117400.
+- Format: `u16 0, u16 count, u32 offsets[count]` (little-endian), then the compressed glyphs. Repacking the originals is byte-identical and all 7,488 glyphs survive decompress/compress, so the format is fully understood (`rebuild_scripts.py check`).
+- A build collects the letter pairs the translation uses and gives each a kanji slot, least used kanji first (usage = untranslated script text plus a scan of all other modules; `namein.rel`, the name-entry kanji picker, is ignored). Both fonts get the pair, drawn from Menlo Bold, stretched to 11x28.
+- Pair glyphs compress smaller than kanji (about 164 against 219 bytes in the large font), so `fonttex2.rel` keeps its size even with every kanji slot replaced.
+- **A dialogue line is 17 cells: 34 letters, 2 lines per box.** Longer lines wrap, and a third line scrolls the first away. The build warns about them.
+- Pairs restart at every run, line break and Japanese character. When a sentence is split into several runs on one line (colour changes, inserted names), give the earlier run an even number of letters or a half-cell gap appears.
+- Tested: the opening scene of scenario 1 (36 lines, 20 boxes) in English, 210 letter pairs. Plain, outlined and coloured text all draw correctly; untouched Japanese text is unaffected. The 36 lines made the script 80 bytes longer.
+
+Still open: the player and team-mate names inserted into sentences are Japanese (name entry and the name tables are not translated), and window types other than 29 have not been measured.
 
 ## Testing notes
 
