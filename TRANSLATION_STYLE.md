@@ -2,7 +2,7 @@
 
 Method borrowed from the `srt-pipeline` repo (`docs/ja-to-en.md`): fix the voices and the recurring
 terms in a context file first, then translate scene by scene against it.
-Sections marked **(proposal)** are not agreed yet. Settle them before translating in bulk.
+Items marked (proposal) are not agreed yet.
 
 ## Principle
 
@@ -34,17 +34,18 @@ Priorities, highest first:
   translating their scenes.
 - **Recurring phrases are locked.** One English rendering each, listed under Running beats.
 
-## Dialect and speech quirks (proposal)
+## Dialect and speech quirks
 
-- **Kansai-ben:** do not map it to an English regional accent (no Southern, Cockney or Scots).
-  Carry it with rhythm and attitude: blunt, quick, warm, fond of a comeback. Keep a small set of
-  iconic words in romaji where the Japanese has them and the meaning is clear from the scene
-  (`Akan!`, `Nande ya nen!`, `Honma ni?`, `Maido!`, `-han`, `ookini`). A light touch: a marker every
-  few lines is enough to hear the voice. Never invented spellings ("Ah dunno").
-- **Verbal tics (語尾):** keep the tic, in a form that reads naturally at the end of an English
-  sentence, and use it as often as the Japanese does only where it does not grate.
-  Yabe's `でやんす`: keep it as `-yansu` (for example "That was expensive-yansu.").
-  Alternative: drop the suffix and give him a fixed underling voice ("this humble Yabe").
+Everything is rendered in English. No romaji dialect words, no Japanese sentence endings glued
+onto English, no invented spellings, and no English regional accent standing in for a Japanese one.
+
+- **Kansai-ben:** the voice comes through in how the character talks, in plain English: blunt,
+  quick, warm, teasing, fond of a comeback, more casual and direct than the people around them.
+  The reader should hear a different temperament from a Tokyo speaker without any marked words.
+- **Verbal tics (語尾):** give the character one consistent English speech habit that does the same
+  job (how they end a thought, a pet phrase, how they refer to themselves). Use it sparingly:
+  often enough to be recognisable, never on every line. Yabe's `でやんす` marks him as a humble,
+  eager sidekick, so his English habit should say that. Pick it from sample lines and lock it.
 - **First-person words:** オレ, ボク, オイラ, ワシ, 私 all say something. Show it through register
   (rough, boyish, folksy, old man, polite), not through odd pronouns.
 - **Old men's `じゃ` / `のう`:** plain, slightly old-fashioned English. No "ye olde".
@@ -58,8 +59,8 @@ Template (from srt-pipeline). Fill in from the script before translating a chara
 - Honorifics: calls the player `-kun`.
 - Contractions: YES
 - Register: cheerful sidekick, otaku, self-deprecating. Calls himself オイラ.
-- Verbal tics: ends sentences with でやんす (see proposal above).
-- Example: to be fixed once the tic is agreed.
+- Verbal tics: ends sentences with でやんす. English habit to be chosen from samples (see above).
+- Example: to be fixed once the habit is chosen.
 
 ### 主人公 / the player [MAIN]
 - Contractions: YES
