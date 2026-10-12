@@ -2,7 +2,6 @@
 
 Method borrowed from the `srt-pipeline` repo (`docs/ja-to-en.md`): fix the voices and the recurring
 terms in a context file first, then translate scene by scene against it.
-Items marked (proposal) are not agreed yet.
 
 ## Principle
 
@@ -55,7 +54,7 @@ onto English, no invented spellings, and no English regional accent standing in 
 
 ## Characters
 
-Scenario 1 (株式会社パワフル, `scs_sce1.rel`). Proposal, awaiting approval: voices are locked once agreed.
+Scenario 1 (株式会社パワフル, `scs_sce1.rel`). Agreed on 2026-10-12: these voices are locked.
 Line counts are text runs in scenario 1.
 
 ### 主人公 / the player [MAIN, about 800 lines]

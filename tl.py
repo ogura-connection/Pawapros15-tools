@@ -2,7 +2,9 @@
 """Translation workflow: scenes out, English in, translation.json for the build.
 
   tl.py export              write the scenes of every script file to _work/scenes/<file>/sNNN.txt
-  tl.py apply FILE SCENE    read English from stdin, one line per text run of that scene, in order
+  tl.py show FILE A [B]     print scenes A..B for translating (speaker, layout, Japanese)
+  tl.py apply FILE [SCENE]  read English from stdin, one line per text run of the scene, in order;
+                            without SCENE the input holds several scenes, each after a line @sNNNN
   tl.py merge               translation/*.tsv -> _work/translation.json, and check every line
   tl.py status              translated / total runs per file
 
@@ -35,7 +37,8 @@ LINE_LETTERS = 34
 NAME_OPS = set(range(0x4B, 0x50)) | {0xA5, 0xA6, 0xA7, 0xDA}
 OP_COLOUR = 0x73
 PORTRAIT_SLOT = {0x7A: 2, 0x7B: 3, 0x7C: 4, 0x7D: 5}     # opcode -> window type it speaks in
-UNCHECKED_WINDOWS = {26, 31}                               # menus and glossary pop-ups: own layout
+WIDE_WINDOWS = {31: 60}                                    # glossary pop-ups: a wider box
+BOX_LINES = 3
 # Portrait id ranges seen in scenario 1 (id // 16), for the speaker column of the scene files.
 SPEAKERS = [(0x00, 0x03, "player"), (0x04, 0x05, "Yabe"), (0x2B, 0x37, "extra"), (0x4D, 0x4E, "Momoko"),
             (0x56, 0x56, "Kageyama"), (0x5E, 0x5F, "Tamano"), (0x60, 0x60, "Yajima"),
@@ -130,26 +133,53 @@ def cmd_export():
         print("%s: %d scenes -> %s" % (sc.rel.name, len(index), folder))
 
 
-def cmd_apply(name, scene):
-    sc = next(s for s in S.load_scripts() if s.rel.name == name)
-    runs = [r for r in scenes(sc)[int(scene.lstrip("s"))] if "off" in r]
-    lines = [l.rstrip("\n") for l in sys.stdin if l.strip()]
-    if len(lines) != len(runs):
-        sys.exit("scene %s has %d runs, got %d lines" % (scene, len(runs), len(lines)))
+def cmd_show(name, first, last):
+    sc = next(x for x in S.load_scripts() if x.rel.name == name)
+    all_scenes = scenes(sc)
+    for n in range(int(first.lstrip("s")), int(last.lstrip("s")) + 1):
+        print("@s%04d" % n)
+        for r in all_scenes[n]:
+            if "note" in r:
+                print("# " + r["note"])
+            else:
+                print("%d %s %s | %s" % (r["window"], speaker(r["face"]), r["mark"],
+                                         r["text"].replace("\n", "\\n") or "(empty)"))
+
+
+def cmd_apply(name, scene=None):
+    sc = next(x for x in S.load_scripts() if x.rel.name == name)
+    all_scenes = scenes(sc)
+    batches, cur = [], None
+    for l in sys.stdin:
+        l = l.rstrip("\n")
+        if l.startswith("@s"):
+            cur = (int(l[2:]), [])
+            batches.append(cur)
+        elif l.strip():
+            if cur is None:
+                if scene is None:
+                    sys.exit("input must start with @sNNNN")
+                cur = (int(scene.lstrip("s")), [])
+                batches.append(cur)
+            cur[1].append(l)
     rows = load_tsv(name)
-    for r, en in zip(runs, lines):
-        if not r["text"]:
-            if en != "-":
-                sys.exit("+%d is an empty run, expected -" % r["off"])
-            continue
-        rows[r["off"]] = (text_hash(r["text"]), "" if en == "-" else en.replace("\\n", "\n"))
+    for n, lines in batches:
+        runs = [r for r in all_scenes[n] if "off" in r]
+        if len(lines) != len(runs):
+            sys.exit("scene s%04d has %d runs, got %d lines (nothing stored)" % (n, len(runs), len(lines)))
+        for r, en in zip(runs, lines):
+            if not r["text"]:
+                if en != "-":
+                    sys.exit("s%04d +%d is an empty run, expected -" % (n, r["off"]))
+                continue
+            rows[r["off"]] = (text_hash(r["text"]), "" if en == "-" else en.replace("\\n", "\n"))
     save_tsv(name, rows)
-    print("%s %s: %d runs stored" % (name, scene, len(runs)))
+    print("%s: %d scene(s), %d runs stored" % (name, len(batches), sum(len(l) for _, l in batches)))
 
 
 def check_scene(name, rows, done):
-    """Warnings for one scene: long lines, odd-length runs before a same-line run, gaps."""
-    warn, line, pending = [], 0, None
+    """Warnings for one scene: long lines, too many lines, odd-length runs before a same-line run, gaps."""
+    warn, line, pending, box, box_orig = [], 0, None, 0, 0
     runs = [r for r in rows if "off" in r]
     some = sum(1 for r in runs if r["off"] in done)
     missing = [r["off"] for r in runs if r["text"] and r["off"] not in done]
@@ -160,19 +190,25 @@ def check_scene(name, rows, done):
             if r["note"] == "{name}":
                 line += 12                                  # an inserted name: up to 6 full cells
             continue
-        if r["off"] not in done or r["window"] in UNCHECKED_WINDOWS:
+        if r["off"] not in done:
             line, pending = 0, None
             continue
         en = done[r["off"]][1]
+        limit = WIDE_WINDOWS.get(r["window"], LINE_LETTERS)
+        if r["mark"] == "B":
+            box = box_orig = 0
         if r["mark"] != "+":
             line = 0
-        elif pending is not None and len(pending[1]) % 2:
+            box, box_orig = box + 1, box_orig + 1
+        elif pending is not None and len(pending[1]) % 2 and en:
             warn.append("%s +%d: odd number of letters before a same-line run: %r" % (name, *pending))
+        box, box_orig = box + en.count("\n"), box_orig + r["text"].count("\n")
+        if box > max(BOX_LINES, box_orig) and r["window"] not in WIDE_WINDOWS and r["window"] != 26:
+            warn.append("%s +%d: box has %d lines (original %d)" % (name, r["off"], box, box_orig))
         for k, part in enumerate(en.split("\n")):
             line = len(part) + (line if k == 0 else 0)
-            if line > LINE_LETTERS:
-                warn.append("%s +%d: line is %d letters (max %d): %r" % (name, r["off"], line,
-                                                                         LINE_LETTERS, part))
+            if line > limit:
+                warn.append("%s +%d: line is %d letters (max %d): %r" % (name, r["off"], line, limit, part))
         pending = (r["off"], en.split("\n")[-1])
     return warn
 
@@ -214,8 +250,10 @@ def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""
     if cmd == "export":
         cmd_export()
-    elif cmd == "apply" and len(sys.argv) == 4:
-        cmd_apply(sys.argv[2], sys.argv[3])
+    elif cmd == "show" and len(sys.argv) in (4, 5):
+        cmd_show(sys.argv[2], sys.argv[3], sys.argv[-1])
+    elif cmd == "apply" and len(sys.argv) in (3, 4):
+        cmd_apply(*sys.argv[2:])
     elif cmd == "merge":
         cmd_merge()
     elif cmd == "status":
