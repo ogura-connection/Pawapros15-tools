@@ -45,7 +45,7 @@ Scripts are sequences of 16-bit big-endian instructions. The low byte is the opc
 
 - `0x46` line break, `0x49` line break and wait, `0x4A` wait for button (end of page).
 - `0x4B`–`0x4F`, `0xA5`–`0xA7`, `0xDA` insert a name (player, team mate, and so on) from a runtime buffer. A sentence containing a name is therefore split into several runs.
-- `0x7A`–`0x7D` usually precede a line and appear to select the speaker portrait.
+- `0x7A`–`0x7D` set the portrait of the speaker slot for window types 2–5; the argument identifies the character and expression (`tl.py` maps the ranges seen in scenario 1). `0x73` sets the text colour (high byte), and a run of window type 30 continues the line after a colour change or inserted name.
 
 **Control flow.** Jumps, calls and conditions (`0x9B`, `0x9C`, `0x9D`, `0x9E`, `0x02`, `0x16`–`0x25`) never hold an offset. They hold a **label index**, resolved through label tables in `scs_main.rel` sec5:
 
@@ -164,7 +164,7 @@ Tested: `scs_main.rel` grown by 328 KB and `scs_sce1.rel` by 384 KB, loaded at t
 - Format: `u16 0, u16 count, u32 offsets[count]` (little-endian), then the compressed glyphs. Repacking the originals is byte-identical and all 7,488 glyphs survive decompress/compress, so the format is fully understood (`rebuild_scripts.py check`).
 - A build collects the letter pairs the translation uses and gives each a kanji slot, least used kanji first (usage = untranslated script text plus a scan of all other modules; `namein.rel`, the name-entry kanji picker, is ignored). Both fonts get the pair, drawn from Menlo Bold, stretched to 11x28.
 - Pair glyphs compress smaller than kanji (about 164 against 219 bytes in the large font), so `fonttex2.rel` keeps its size even with every kanji slot replaced.
-- **A dialogue line is 17 cells: 34 letters, 2 lines per box.** Longer lines wrap, and a third line scrolls the first away. The build warns about them.
+- **A dialogue line is 17 cells: 34 letters.** Longer lines wrap. The letterbox narration of the opening shows 2 lines; speech bubbles (window types 2 and 4, measured) show 3, and one more line scrolls the first away. The build warns about long lines.
 - Pairs restart at every run, line break and Japanese character. When a sentence is split into several runs on one line (colour changes, inserted names), give the earlier run an even number of letters or a half-cell gap appears.
 - Tested: the opening scene of scenario 1 (36 lines, 20 boxes) in English, 210 letter pairs. Plain, outlined and coloured text all draw correctly; untouched Japanese text is unaffected. The 36 lines made the script 80 bytes longer.
 
@@ -186,4 +186,5 @@ python3 rebuild_scripts.py check   # round-trip test of the rebuilder
 python3 rebuild_scripts.py build   # apply _work/translation.json and install to DATA/files
 python3 rebuild_scripts.py restore # put the original files back
 python3 ram_scan.py STATE          # loaded modules and memory map from a Dolphin save state
+python3 tl.py export|apply|merge   # translation workflow: scenes out, English in translation/*.tsv
 ```
