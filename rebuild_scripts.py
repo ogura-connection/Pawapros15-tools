@@ -29,7 +29,7 @@ Translation file: a JSON list of entries in the format of _work/story_text.json
 
 English is stored two letters per glyph cell (see pair_font.py): every letter pair that occurs
 gets a glyph slot of a kanji the remaining Japanese text does not use, and the build draws the
-pairs into fonttex2.rel. A dialogue line is 18 cells, so 36 letters. Japanese characters in an
+pairs into fonttex2.rel. A dialogue line is 17 cells, so 34 letters. Japanese characters in an
 "en" text keep their own cell.
 
 Original .rel files and moduleID2addr.o are kept in _work/orig/ (copied from DATA/files on first use, so the first
@@ -54,7 +54,7 @@ ORIG_DIR = os.path.join(S.WORK_DIR, "orig")
 BUILD_DIR = os.path.join(S.WORK_DIR, "build")
 R_NOP, R_SECTION, R_END = S.R_NOP, S.R_SECTION, S.R_END
 SECTION_ALIGN = 8      # data behind a script keeps its alignment (REL header align = 8)
-LINE_CELLS = 18        # width of the dialogue box (window type 29) in glyph cells
+LINE_CELLS = 17        # width of the dialogue box (window type 29) in glyph cells
 PLAN_FILE = "moduleID2addr.o"
 # Memory plan. scs_main.rel is followed by the scenario slot, then by scs_load.rel / scs_face.rel.
 # The game reserves everything below 0x814E0000 for modules (main.dol 0x8003A938 raises the OS
@@ -330,7 +330,7 @@ def load_translation(path, scripts):
             line = 0 if kind == "newline" else line + 1
             cells = max(cells, line)
         if cells > LINE_CELLS:
-            print("warning: %s +0x%X is %d cells wide, a dialogue line holds %d (36 letters): %r"
+            print("warning: %s +0x%X is %d cells wide, a dialogue line holds %d (34 letters): %r"
                   % (e["file"], e["section_offset"], cells, LINE_CELLS, e["en"]))
     return texts
 

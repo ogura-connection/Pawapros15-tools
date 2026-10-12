@@ -3,7 +3,7 @@
 pair_font.py - two-letters-per-cell English font for Jikkyou Powerful Pro Yakyuu 15 (Wii)
 
 The game draws text in fixed cells and its font has only full-width Latin letters, so one
-letter per cell gives 18 letters per dialogue line and doubles the script size. This module
+letter per cell gives 17 letters per dialogue line and doubles the script size. This module
 draws PAIRS of half-width letters into single glyph cells and stores them in kanji slots the
 remaining Japanese text does not use. English then needs one text unit per two letters.
 
