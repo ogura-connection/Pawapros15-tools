@@ -206,17 +206,18 @@ def check_scene(name, rows, done):
             if r["note"] == "{name}":
                 line += 12                                  # an inserted name: up to 6 full cells
             continue
-        if r["off"] not in done:
-            line, pending = 0, None
-            continue
-        en = done[r["off"]][1]
-        limit = WIDE_WINDOWS.get(r["window"], LINE_LETTERS)
         if r["mark"] == "B":
             box = box_orig = 0
         if r["mark"] != "+":
             line = 0
             box, box_orig = box + 1, box_orig + 1
-        elif pending is not None and odd_tail(pending[1]) and en and r["window"] not in WIDE_WINDOWS:
+        if r["off"] not in done:
+            pending = None
+            continue
+        en = done[r["off"]][1]
+        limit = WIDE_WINDOWS.get(r["window"], LINE_LETTERS)
+        if (r["mark"] == "+" and pending is not None and odd_tail(pending[1]) and en
+                and r["window"] not in WIDE_WINDOWS):
             warn.append("%s +%d: odd number of letters before a same-line run: %r" % (name, *pending))
         box, box_orig = box + en.count("\n"), box_orig + r["text"].count("\n")
         if box > max(BOX_LINES, box_orig) and r["window"] not in WIDE_WINDOWS and r["window"] != 26:
