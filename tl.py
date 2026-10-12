@@ -5,6 +5,7 @@
   tl.py show FILE A [B]     print scenes A..B for translating (speaker, layout, Japanese)
   tl.py apply FILE [SCENE]  read English from stdin, one line per text run of the scene, in order;
                             without SCENE the input holds several scenes, each after a line @sNNNN
+  tl.py set FILE OFFSET TEXT  replace the English of one run
   tl.py merge               translation/*.tsv -> _work/translation.json, and check every line
   tl.py status              translated / total runs per file
 
@@ -155,7 +156,7 @@ def cmd_apply(name, scene=None):
         if l.startswith("@s"):
             cur = (int(l[2:]), [])
             batches.append(cur)
-        elif l.strip():
+        elif l.strip(" \t\r"):                       # a line of full-width spaces is text
             if cur is None:
                 if scene is None:
                     sys.exit("input must start with @sNNNN")
@@ -175,6 +176,21 @@ def cmd_apply(name, scene=None):
             rows[r["off"]] = (text_hash(r["text"]), "" if en == "-" else en.replace("\\n", "\n"))
     save_tsv(name, rows)
     print("%s: %d scene(s), %d runs stored" % (name, len(batches), sum(len(l) for _, l in batches)))
+
+
+def letters(text):
+    """Width in letters: a Japanese character fills a whole cell, two letters."""
+    return sum(1 if ord(c) < 128 else 2 for c in text)
+
+
+def odd_tail(text):
+    """True if the letters after the last Japanese character do not fill their last cell."""
+    n = 0
+    for c in reversed(text):
+        if ord(c) >= 128:
+            break
+        n += 1
+    return n % 2 == 1
 
 
 def check_scene(name, rows, done):
@@ -200,13 +216,13 @@ def check_scene(name, rows, done):
         if r["mark"] != "+":
             line = 0
             box, box_orig = box + 1, box_orig + 1
-        elif pending is not None and len(pending[1]) % 2 and en:
+        elif pending is not None and odd_tail(pending[1]) and en and r["window"] not in WIDE_WINDOWS:
             warn.append("%s +%d: odd number of letters before a same-line run: %r" % (name, *pending))
         box, box_orig = box + en.count("\n"), box_orig + r["text"].count("\n")
         if box > max(BOX_LINES, box_orig) and r["window"] not in WIDE_WINDOWS and r["window"] != 26:
             warn.append("%s +%d: box has %d lines (original %d)" % (name, r["off"], box, box_orig))
         for k, part in enumerate(en.split("\n")):
-            line = len(part) + (line if k == 0 else 0)
+            line = letters(part) + (line if k == 0 else 0)
             if line > limit:
                 warn.append("%s +%d: line is %d letters (max %d): %r" % (name, r["off"], line, limit, part))
         pending = (r["off"], en.split("\n")[-1])
@@ -254,6 +270,10 @@ def main():
         cmd_show(sys.argv[2], sys.argv[3], sys.argv[-1])
     elif cmd == "apply" and len(sys.argv) in (3, 4):
         cmd_apply(*sys.argv[2:])
+    elif cmd == "set" and len(sys.argv) == 5:
+        rows = load_tsv(sys.argv[2])
+        rows[int(sys.argv[3])] = (rows[int(sys.argv[3])][0], sys.argv[4].replace("\\n", "\n"))
+        save_tsv(sys.argv[2], rows)
     elif cmd == "merge":
         cmd_merge()
     elif cmd == "status":
