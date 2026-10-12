@@ -118,7 +118,7 @@ A few `.arc` files and `fonttex2.rel` show 1–4 hits each, which are most likel
 
 - `check`: rebuilding with no changes gives byte-identical files for all four script modules, and all 2,125 relocation streams in the 476 modules re-encode exactly.
 - `build`: re-emits the script, then moves every reference: relocation addends in all modules, relocation positions inside the rebuilt section, the REL header, and the module's entry in `moduleID2addr.o`. It re-reads its own output and compares scripts, labels, text and relocations with the originals before installing.
-- Tested: the first Success line (`scs_sce1.rel` +0x623C, 9 glyphs) and the line after it replaced with 17 and 15 glyphs. Both display, and the story continues normally. A second build that also moved all of `scs_main.rel` by 72 bytes ran 50 pages deep (scene changes, portraits, name insertion), but see the memory plan below: that build only worked by luck and is now refused.
+- Tested: the first Success line (`scs_sce1.rel` +0x623C, 9 glyphs) and the line after it replaced with 17 and 15 glyphs. Both display, and the story continues normally. A second build that also moved all of `scs_main.rel` by 72 bytes ran 50 pages deep (scene changes, portraits, name insertion). That run predates the memory-plan fix below and only worked by luck; the same change was re-tested properly afterwards.
 
 Things learned on the way:
 
@@ -132,7 +132,7 @@ The game does not allocate memory for modules. `/moduleID2addr.o` (an ELF object
 
 - `moduleID2size` = fixSize rounded up to bssAlign (0x80), plus bssSize.
 - A grown file that is not entered in the table is read short. The end of its relocation table is then garbage (`OSLink: unknown relocation type` in the log, then a null-pointer crash).
-- The plan covers 0x8030D5A0..0x812CB794, and modules that are never loaded together share addresses. MEM1 ends at 0x817F9580; what uses the 5.2 MB above the plan is not known.
+- The plan covers 0x8030D5A0..0x812CB794, and modules that are never loaded together share addresses. MEM1 ends at 0x817F9580.
 
 | Module | Address | Memory | Next module | Room to grow |
 |--------|---------|--------|-------------|--------------|
@@ -141,11 +141,20 @@ The game does not allocate memory for modules. `/moduleID2addr.o` (an ELF object
 | `scs_sce2.rel` | 0x80B5F880 | 0x4A280 | same | 79 KB |
 | `scs_sce3.rel` | 0x80B5F880 | 0x5D980 | same | 0 |
 
-English needs roughly 350-550 KB more in `scs_main.rel` and 75-210 KB more in each scenario module, so only scenario 1 fits as things are. Ways out, not yet tried:
+**Free memory.** `main.dol` (0x8003A938) raises the OS arena to 0x814E0000, so everything below that address is reserved for modules, and the plan stops at 0x812CB794. The 2.1 MB in between is unused: it is all zero in memory snapshots from the main menu, name entry and 50 pages into the story, and nothing in `main.dol` or any module addresses it during play (only the SDK reset/exec code uses 0x81280000..0x81330000, when the game is shutting down).
 
-1. Move `scs_main.rel` and the scenario modules to free memory by editing the plan (`build --move` does this for tests). It needs to be established which memory is free during Success Mode, starting with the area above 0x812CB794.
-2. Store English more compactly (a half-width font is needed anyway; pairs of letters per unit would halve the size).
-3. Shift the modules behind `scs_main.rel` upward, which means knowing every module that is loaded alongside them.
+`rebuild_scripts.py` uses this. When `scs_main.rel` needs room, it moves the scenario slot to 0x812CB800 in the plan and lets `scs_main.rel` grow into the old slot:
+
+| Module | Room to grow (original plan) | Room to grow (scenario slot moved) |
+|--------|------------------------------|------------------------------------|
+| `scs_main.rel` | 8 bytes | 383 KB |
+| `scs_sce1.rel` | 233 KB | 1.9 MB |
+| `scs_sce2.rel` | 79 KB | 1.8 MB |
+| `scs_sce3.rel` | 0 | 1.7 MB |
+
+Tested: `scs_main.rel` grown by 328 KB and `scs_sce1.rel` by 384 KB, loaded at the new address, no loader errors, 50 pages of story played. Not tested yet: scenarios 2 and 3, a match inside Success Mode, saving and loading a Success game, real hardware.
+
+**Is 383 KB enough for `scs_main.rel`?** Its text is 358 KB (238,578 glyphs at 12 bits). English at one letter per unit needs 2 to 2.5 times as many units, which is 358-537 KB more: too close. The fix is also the fix for the 18-glyph box: put **two letters in one glyph cell**. A cell is 22x28 pixels, the half-width font in `build_font.py` is 11x28, and the scripts use only 1,565 of the 3,038 kanji slots. With letter pairs in the kanji slots, English takes about as many units as the Japanese, a box holds 36 letters per line, and no game code has to change.
 
 ## Testing notes
 
@@ -162,4 +171,5 @@ python3 scan_story.py scan         # other packed text, compressed data (about 3
 python3 rebuild_scripts.py check   # round-trip test of the rebuilder
 python3 rebuild_scripts.py build   # apply _work/translation.json and install to DATA/files
 python3 rebuild_scripts.py restore # put the original files back
+python3 ram_scan.py STATE          # loaded modules and memory map from a Dolphin save state
 ```
