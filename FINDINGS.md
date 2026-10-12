@@ -99,6 +99,10 @@ A heuristic search of all files (it undercounts, by roughly 30% on the files abo
 
 A few `.arc` files and `fonttex2.rel` show 1–4 hits each, which are most likely chance matches.
 
+## UI graphics (first look, not yet patched)
+
+The `.arc` files are not archives. Except for `RFLRes01.arc` they are ELF objects with full symbol tables, and their `.data` holds sprite banks: `tex_*` (textures), `pal_*` (palettes), `opd_*` (20-byte sprite records, format not decoded yet) and `*_tbl` pointer lists. Most textures are 8,192 bytes: 128x128, 4 bits per pixel, GX 8x8 tiles, uncompressed, with RGB5A3 palettes. Decoding `main_prg.arc` this way gives readable sheets (digits, HUD labels, pitch names, team logos). Labels drawn as graphics can therefore be redrawn and written back in place without moving anything. Open: the `opd_` record layout (which palette and rectangle each sprite uses) and the textures of other sizes.
+
 ## Sample lines
 
 | File | File offset | Text |
