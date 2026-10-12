@@ -55,6 +55,7 @@ BUILD_DIR = os.path.join(S.WORK_DIR, "build")
 R_NOP, R_SECTION, R_END = S.R_NOP, S.R_SECTION, S.R_END
 SECTION_ALIGN = 8      # data behind a script keeps its alignment (REL header align = 8)
 LINE_CELLS = 17        # width of the dialogue box (window type 29) in glyph cells
+POPUP_WINDOW, POPUP_CELLS = 31, 30   # glossary pop-ups: the original lines run to about 31 cells
 PLAN_FILE = "moduleID2addr.o"
 # Memory plan. scs_main.rel is followed by the scenario slot, then by scs_load.rel / scs_face.rel.
 # The game reserves everything below 0x814E0000 for modules (main.dol 0x8003A938 raises the OS
@@ -329,9 +330,10 @@ def load_translation(path, scripts):
         for kind, _ in pair_font.text_segments(e["en"]):
             line = 0 if kind == "newline" else line + 1
             cells = max(cells, line)
-        if cells > LINE_CELLS:
-            print("warning: %s +0x%X is %d cells wide, a dialogue line holds %d (34 letters): %r"
-                  % (e["file"], e["section_offset"], cells, LINE_CELLS, e["en"]))
+        limit = POPUP_CELLS if sc.texts[i][0] == POPUP_WINDOW else LINE_CELLS
+        if cells > limit:
+            print("warning: %s +0x%X is %d cells wide, the line holds %d (%d letters): %r"
+                  % (e["file"], e["section_offset"], cells, limit, limit * 2, e["en"]))
     return texts
 
 
