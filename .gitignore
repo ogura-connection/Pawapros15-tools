@@ -2,3 +2,13 @@ DATA/
 *.iso
 *.rvz
 *.raw
+_work/
+dumps/
+*.dump
+*.dmp
+*.wbfs
+*.gcm
+*.dol
+*.rel
+*.arc
+*.elf
