@@ -168,7 +168,7 @@ Tested: `scs_main.rel` grown by 328 KB and `scs_sce1.rel` by 384 KB, loaded at t
 - Pairs restart at every run, line break and Japanese character. When a sentence is split into several runs on one line (colour changes, inserted names), give the earlier run an even number of letters or a half-cell gap appears.
 - Tested: the opening scene of scenario 1 (36 lines, 20 boxes) in English, 210 letter pairs. Plain, outlined and coloured text all draw correctly; untouched Japanese text is unaffected. The 36 lines made the script 80 bytes longer.
 
-Still open: the player and team-mate names inserted into sentences are Japanese (name entry and the name tables are not translated), and window types other than 29 have not been measured.
+Still open: the player and team-mate names inserted into sentences are Japanese (name entry and the name tables are not translated). Glossary pop-ups (window type 31) and choice menus (26) have not been measured in game. With all of scenario 1 in English (3,238 runs, 840 letter pairs) 208 of the pair slots are kanji that the remaining Japanese text still uses, so a few rare kanji in untranslated lines show as letter pairs until those lines are translated too.
 
 ## Testing notes
 

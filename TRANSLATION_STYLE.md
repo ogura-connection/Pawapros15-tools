@@ -209,3 +209,20 @@ Line counts are text runs in scenario 1.
 - Inserted player names are still Japanese and can be 6 cells (12 letters) wide: do not write
   sentences that depend on an English name, and leave room on that line.
 - The script marks the speaker (portrait), colour changes and line breaks; `tl.py export` shows them.
+
+## Working notes (from scenario 1)
+
+- Workflow: `tl.py show FILE A B` prints scenes, `tl.py apply FILE` stores English (one line per run,
+  `-` for an empty run), `tl.py merge` checks everything, then `rebuild_scripts.py build`.
+- Text the game inserts in mid-sentence (ranks, item names, team names) is itself a run somewhere
+  else in the file. Give it an even number of letters, with a leading space if needed (` kacho`),
+  and end the run before it without a space. Write the sentence so nothing depends on the insert's
+  grammar ("Promoted to" + rank + "!").
+- Where the Japanese puts a name and its reading on one line, the reading run becomes empty and
+  the honorific goes into the coloured name run ("Todoroki Daisuke-senpai!").
+- Menus are still Japanese on screen, so a line that tells the player where to go quotes the
+  Japanese label as it is.
+- "Mum" and "Dad" for the player's parents. Team names in the standings stay as fans say them
+  (Giants, Hanshin, Chunichi, SoftBank).
+- Lines from `scs_main.rel` (common events, sound effects, "you met Yabe" notices) appear inside
+  scenario scenes and stay Japanese until that file is translated.
