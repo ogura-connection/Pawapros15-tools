@@ -19,8 +19,10 @@ Priorities, highest first:
 ## Fixed rules
 
 - **Names:** family name first (Yabe Akio). Hepburn without macrons (Koshien, Tokyo, senpai).
-- **Spelling:** British (honour, colour, practise as a verb). Plain ASCII only: the pair font has
-  no accented letters.
+- **Spelling and idiom:** American spelling and neutral phrasing (honor, practice, the field,
+  the store). No regional slang, British or American. Old-fashioned or formal wording is fine
+  where it is a character's voice (Tamano, the bucho, Yabe). Plain ASCII only: the pair font
+  has no accented letters.
 - **Honorifics:** keep `-san`, `-kun`, `-chan`, `-senpai`, `-sensei`. They carry the relationships.
   A character who drops them is being rude or close, and that must stay visible.
 - **Japanese terms that stay as they are:** Koshien, senpai, kohai, bento, and other words an
@@ -73,7 +75,7 @@ Line counts are text runs in scenario 1.
   blunt truths said politely. A little prim: "kindly", "I must say", "I'm afraid", "who might you be".
 - Habit (carries でやんす / オイラ): now and then he calls himself "yours truly", most often when
   boasting or feeling sorry for himself. Not every time he says オイラ.
-- Locked: a stand-alone やんす！ is "Right you are!" (said alongside the others' "Yes, sir!").
+- Locked: a stand-alone やんす！ is "Yes indeed!" (said alongside the others' "Yes, sir!").
 - Example: "Yours truly, as of today, is the super rookie who will take this company by storm."
 
 ### 轟大助 / Todoroki Daisuke [MAIN, about 545 lines]
@@ -124,9 +126,9 @@ Line counts are text runs in scenario 1.
 - Contractions: YES
 - Register: ボク, with a pause before the last particle (だ、ね / だ、よ / 、さ) and a pink heart.
   Vain, amused, generous in defeat.
-- Habit: a comma, then one small closing word: ね "no?", よ "you know", さ "see", ぞ "mind". The
+- Habit: a comma, then one small closing word: ね "no?", よ "you know", さ "see", ぞ "got it". The
   heart glyph stays where the Japanese has it. His showy word games (ＭＩＤＯＲＩ, ＰＵＮ・ＳＵＫＡ)
-  become showy English in capitals ("PICK 'N' MIX", "HUFF-PUFF").
+  become showy English in capitals ("MIX & MATCH", "HUFF-PUFF").
 - Example: "Heh heh... Quite the celebration, no?"
 
 ### Minor voices
@@ -142,7 +144,8 @@ Line counts are text runs in scenario 1.
 | Japanese | English |
 |---|---|
 | 株式会社パワフル | Pawafuru Corp. (the game's own logo reads PAWAFURU CORPORATION) |
-| やんす！ (alone) | Right you are! |
+| やんす！ (alone) | Yes indeed! |
+| よし / よーし | Okay, / Okay! |
 | はい！ / はいっ！ to a superior | Yes, sir! |
 | やったー！ | All right! (good news) / We did it! (a win) |
 | ふぅ、疲れた。 | Phew, I'm worn out. |
@@ -164,7 +167,7 @@ Line counts are text runs in scenario 1.
 |---|---|---|
 | サクセス | Success Mode | |
 | 甲子園 | Koshien | |
-| 親父 / 母さん / 父さん / せがれ | Papa / Mama / Papa / son | the player and his parents |
+| 親父 / 母さん / 父さん / せがれ | old man / Mom / Dad / son | the player and his parents |
 | 社会人野球 | the industrial leagues; industrial-league (adjective) | |
 | 社会人 | working adult | |
 | 社長 / 部長 / 課長 / 係長 | Shacho / Bucho / Kacho / Kakaricho | also as forms of address |
@@ -222,7 +225,7 @@ Line counts are text runs in scenario 1.
   the honorific goes into the coloured name run ("Todoroki Daisuke-senpai!").
 - Menus are still Japanese on screen, so a line that tells the player where to go quotes the
   Japanese label as it is.
-- "Mama" and "Papa" for the player's parents (Conrad, 2026-10-12). Team names in the standings stay as fans say them
+- The son calls his father "old man" (親父) and his mother "Mom". Team names in the standings stay as fans say them
   (Giants, Hanshin, Chunichi, SoftBank).
 - Lines from `scs_main.rel` (common events, sound effects, "you met Yabe" notices) appear inside
   scenario scenes and stay Japanese until that file is translated.
