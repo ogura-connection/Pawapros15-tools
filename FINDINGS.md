@@ -1,6 +1,6 @@
 # Findings: where the Success Mode dialogue lives
 
-Jikkyou Powerful Pro Yakyuu 15 (Wii, RP5JA4, Rev 1). Static analysis only, no emulator.
+Jikkyou Powerful Pro Yakyuu 15 (Wii, RP5JA4, Rev 1). Sections up to "The same format elsewhere" are static analysis; the patching sections were tested in Dolphin.
 Everything here can be reproduced with `scan_story.py` (see the end).
 
 ## Answer
@@ -112,21 +112,45 @@ A few `.arc` files and `fonttex2.rel` show 1–4 hits each, which are most likel
 | `scs_sce3.rel` | 0x00CBB2 | え・・・っと、盛田さん？ |
 | `scs_sce3.rel` | 0x02358C | もう腕がパンパンだ。 |
 
-## Next step toward patching
+## Patching: what works (tested in Dolphin)
 
-Lines average 10 glyphs, and English needs two to three times as many characters, so replacing text in place is not enough for a real translation. The scripts have to be rebuilt.
+`rebuild_scripts.py` rebuilds the scripts with text of any length.
 
-1. **Proof of concept (about an hour).** Replace one line with ASCII glyphs (indices 187–281) using exactly the same number of units, padding with full-width spaces (glyph 0). Nothing moves, so no relocations change. Boot it in Dolphin to confirm the patched line displays. A shorter run cannot simply be cut off, because the leftover halfwords would be executed as instructions.
-2. **Script rebuilder (1–2 days including testing).** Re-emit each script region with new text, record old offset to new offset, then update:
-   - every relocation addend that points into the region: the label tables, plus about 45 `ADDR16_HA/LO` pairs from code in `scs_main.rel`, `scs_open.rel`, `scs_b_ed.rel`, `scs_item.rel` and `scs_rens.rel`;
-   - the section size, and the file offsets that follow it in the REL header (relocation and import tables, `fixSize`).
-   The 1–2% of each region the parser does not reach must be carried over unchanged and remapped the same way.
-3. **Open questions that need the emulator.**
-   - Whether the game's module memory has room for larger `scs_main.rel` / `scs_sce*.rel` files.
-   - Characters per line and lines per window (r15+0x1B8 and r15+0x1BA, set at sec1+0x032938). English text has to be wrapped to these.
-   - Whether full-width glyph cells make English readable, or a narrower font is needed.
+- `check`: rebuilding with no changes gives byte-identical files for all four script modules, and all 2,125 relocation streams in the 476 modules re-encode exactly.
+- `build`: re-emits the script, then moves every reference: relocation addends in all modules, relocation positions inside the rebuilt section, the REL header, and the module's entry in `moduleID2addr.o`. It re-reads its own output and compares scripts, labels, text and relocations with the originals before installing.
+- Tested: the first Success line (`scs_sce1.rel` +0x623C, 9 glyphs) and the line after it replaced with 17 and 15 glyphs. Both display, and the story continues normally. A second build that also moved all of `scs_main.rel` by 72 bytes ran 50 pages deep (scene changes, portraits, name insertion), but see the memory plan below: that build only worked by luck and is now refused.
 
-For translation work, `python3 scan_story.py extract --dump` writes every run with its file, offset, page number and window type to `_work/story_text.json`. That file is game text: it is git-ignored and must not be committed.
+Things learned on the way:
+
+- **The dialogue box is 18 glyphs wide and 2 lines high** (window type 29). A longer run wraps by itself; a third line scrolls the first one away. The font only has full-width Latin, so that is 36 English characters per box. A real translation needs a half-width font.
+- **Success Mode needs a Nunchuk, Classic Controller or GameCube pad**, and its menus read the stick, not the D-pad.
+- The intro narration before name entry (「小さいときから野球が好きで…」) is not in the four script files and was not found as 12-bit, 16-bit or Shift-JIS text anywhere in `DATA`.
+
+## The memory plan (the real limit)
+
+The game does not allocate memory for modules. `/moduleID2addr.o` (an ELF object on the disc, opened by `main.dol`) holds three tables of 477 entries: `moduleID2addr`, `moduleID2size` and `moduleID2relFileSize`. Every module is loaded at its fixed address, and the game reads exactly `moduleID2relFileSize` bytes of the file. The table index is the game's own module number, not the REL id.
+
+- `moduleID2size` = fixSize rounded up to bssAlign (0x80), plus bssSize.
+- A grown file that is not entered in the table is read short. The end of its relocation table is then garbage (`OSLink: unknown relocation type` in the log, then a null-pointer crash).
+- The plan covers 0x8030D5A0..0x812CB794, and modules that are never loaded together share addresses. MEM1 ends at 0x817F9580; what uses the 5.2 MB above the plan is not known.
+
+| Module | Address | Memory | Next module | Room to grow |
+|--------|---------|--------|-------------|--------------|
+| `scs_main.rel` | 0x807FC200 | 0x363678 | scenario modules at 0x80B5F880 | 8 bytes |
+| `scs_sce1.rel` | 0x80B5F880 | 0x24980 | `scs_load.rel` / `scs_face.rel` at 0x80BBD200 | 233 KB |
+| `scs_sce2.rel` | 0x80B5F880 | 0x4A280 | same | 79 KB |
+| `scs_sce3.rel` | 0x80B5F880 | 0x5D980 | same | 0 |
+
+English needs roughly 350-550 KB more in `scs_main.rel` and 75-210 KB more in each scenario module, so only scenario 1 fits as things are. Ways out, not yet tried:
+
+1. Move `scs_main.rel` and the scenario modules to free memory by editing the plan (`build --move` does this for tests). It needs to be established which memory is free during Success Mode, starting with the area above 0x812CB794.
+2. Store English more compactly (a half-width font is needed anyway; pairs of letters per unit would halve the size).
+3. Shift the modules behind `scs_main.rel` upward, which means knowing every module that is loaded alongside them.
+
+## Testing notes
+
+- A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
+- A state taken inside Success Mode keeps the old scripts in memory.
 
 ## Reproduce
 
@@ -135,4 +159,7 @@ python3 scan_story.py extract      # counts, round-trip check, sample lines
 python3 scan_story.py xref         # code evidence (needs capstone)
 python3 scan_story.py entropy      # entropy map
 python3 scan_story.py scan         # other packed text, compressed data (about 3 minutes)
+python3 rebuild_scripts.py check   # round-trip test of the rebuilder
+python3 rebuild_scripts.py build   # apply _work/translation.json and install to DATA/files
+python3 rebuild_scripts.py restore # put the original files back
 ```
