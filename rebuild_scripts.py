@@ -638,6 +638,39 @@ def encode_string(en, cells, slots):
     return struct.pack(">%dH" % cells, *(units + [0] * (cells - len(units))))
 
 
+def layout_block(m, blk, english, slots):
+    """A block of movable strings (ui_strings.BLOCKS) laid out again: (the bytes of the block,
+    {position of a pointer in its section: new addend}, {new addend: the units it must read}).
+    english = {(section, offset): (cells, text)}; a string without English keeps its Japanese."""
+    sec, start, end = blk["section"], blk["start"], blk["end"]
+    table = {pos: addend for s, pos, typ, mod, tsec, addend in m.relocs()
+             if s == sec and blk["table"] <= pos < blk["table"] + 4 * blk["count"]
+             and (typ, mod, tsec) == (1, m.mod_id, sec)}                      # R_PPC_ADDR32 into the block
+    if len(table) != blk["count"] or len(set(table.values())) != len(table) \
+            or not all(start <= a < end for a in table.values()):
+        sys.exit("%s: the pointer table at sec%d+%d is not as expected" % (m.name, sec, blk["table"]))
+    hw = struct.unpack(">%dH" % ((end - start) // 2), m.sec_data(sec)[start:end])
+    seqs = []
+    for pos in sorted(table):
+        old = table[pos]
+        if (sec, old) in english:
+            units = encode_text(english[(sec, old)][1], slots)
+            if S.TEXT_NEWLINE in units or len(units) > blk["max"]:
+                sys.exit("%s %d:%d: %r is not one line of %d cells" % (m.name, sec, old, english[(sec, old)][1], blk["max"]))
+        else:
+            i = (old - start) // 2
+            units = list(hw[i:hw.index(0xFFFF, i)])
+        seqs.append(tuple(units))
+    starts, used = ui_strings.block_layout(seqs)
+    if used > len(hw):
+        sys.exit("%s: the strings at sec%d+%d need %d cells, the block has %d" % (m.name, sec, start, used, len(hw)))
+    out = [0] * len(hw)
+    for a, units in zip(starts, seqs):
+        out[a:a + len(units) + 1] = list(units) + [0xFFFF]
+    addends = {pos: start + 2 * a for pos, a in zip(sorted(table), starts)}
+    return struct.pack(">%dH" % len(out), *out), addends, {start + 2 * a: u for a, u in zip(starts, seqs)}
+
+
 def build(texts, pad=None, strings=None, dol=None):
     """Build every changed module, and main.dol, into _work/build/. Returns the list of file names.
     dol = ui_strings.load_dol_for_build()."""
@@ -650,6 +683,7 @@ def build(texts, pad=None, strings=None, dol=None):
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
     slots = assign_pairs(scripts, texts, orig, strings, dol)
     patched = {}                    # module id -> {(section, old offset): new bytes}
+    moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
     remaps, new_secs = {}, {}
     for sc in scripts:
@@ -684,6 +718,8 @@ def build(texts, pad=None, strings=None, dol=None):
             image = bytearray(image)
             patched[m.mod_id] = {}
             for (sec, off), (cells, en) in strings[m.name].items():
+                if ui_strings.block_of(m.name, sec, off):
+                    continue                                     # laid out with its block, below
                 data = encode_string(en, cells, slots)
                 remap = remaps.get((m.mod_id, sec), lambda o: o)
                 pos = m.sections[sec]["offset"] + remap(off)     # sections in front of a rebuilt one stay
@@ -692,6 +728,28 @@ def build(texts, pad=None, strings=None, dol=None):
                 assert image[pos + len(data):pos + len(data) + 2] == b"\xff\xff", (m.name, sec, off)
                 image[pos:pos + len(data)] = data
                 patched[m.mod_id][(sec, off)] = data
+            for blk in ui_strings.BLOCKS.get(m.name, ()):        # strings that move: new layout, new pointers
+                if not any(ui_strings.block_of(m.name, sec, off) is blk for sec, off in strings[m.name]):
+                    continue
+                if m.mod_id in new_secs or any(mid == m.mod_id for mid, _ in remaps):
+                    sys.exit("%s: a block of movable strings in a rebuilt module is not supported" % m.name)
+                data, addends, reads = layout_block(m, blk, strings[m.name], slots)
+                pos = m.sections[blk["section"]]["offset"] + blk["start"]
+                image[pos:pos + len(data)] = data
+                patched[m.mod_id][(blk["section"], blk["start"])] = data
+                done = 0
+                for mod, _, entries, _ in parse_imports(bytes(image), m.imp_off, m.imp_size):
+                    for sec, rpos, typ, tsec, addend, off in entries:
+                        if mod == m.mod_id and sec == blk["section"] and rpos in addends:
+                            struct.pack_into(">I", image, off + 4, addends[rpos])
+                            moved[(m.mod_id, sec, rpos)] = addends[rpos]
+                            done += 1
+                assert done == blk["count"], (m.name, done)
+                for a, units in reads.items():                   # every pointer reads its string, closed by 0xFFFF
+                    at = m.sections[blk["section"]]["offset"] + a
+                    got = struct.unpack_from(">%dH" % (len(units) + 1), image, at)
+                    assert got == units + (0xFFFF,) and blk["start"] <= a < blk["end"], (m.name, a)
+                note += ", %d strings laid out again at sec%d+%d" % (blk["count"], blk["section"], blk["start"])
             image = bytes(image)
             note += ", %d UI strings" % len(strings[m.name])
         if image != m.data:
@@ -706,15 +764,16 @@ def build(texts, pad=None, strings=None, dol=None):
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    new = verify(orig, scripts, repl, remaps, patched)
+    new = verify(orig, scripts, repl, remaps, patched, moved)
     if dol:
         verify_dol(orig, new, dol, slots)
     return changed
 
 
-def verify(orig, old_scripts, repl, remaps, patched=None):
+def verify(orig, old_scripts, repl, remaps, patched=None, moved=None):
     """Re-read the built files and compare them with the originals, structure by structure.
-    Returns the modules as re-read (for verify_dol)."""
+    Returns the modules as re-read (for verify_dol). moved = the relocations whose addend the build
+    changed on purpose (pointers to strings that were laid out again): {(module, section, position): addend}."""
     new = load_dir(ORIG_DIR, BUILD_DIR)
 
     def expected(m, idx):           # the original section with the UI strings written in
@@ -744,6 +803,7 @@ def verify(orig, old_scripts, repl, remaps, patched=None):
         for (s, pos, typ, tm, ts, ad), (s2, pos2, typ2, tm2, ts2, ad2) in zip(a, b):
             pos = remaps[(mid, s)](pos) if (mid, s) in remaps else pos
             ad = remaps[(tm, ts)](ad) if (tm, ts) in remaps else ad
+            ad = (moved or {}).get((mid, s, pos), ad)
             assert (s, pos, typ, tm, ts, ad) == (s2, pos2, typ2, tm2, ts2, ad2), \
                 "%s: relocation sec%d+0x%X" % (m.name, s, pos)
         # everything in front of a rebuilt section, and the data behind the script, is untouched
