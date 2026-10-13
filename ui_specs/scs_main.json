@@ -203,7 +203,7 @@
       56,
       32
      ],
-     "text": "Find Work"
+     "text": "Get Work"
     },
     {
      "from": [
@@ -813,7 +813,7 @@
    "bank": "y5_ten_0",
    "palette": 22,
    "style": "calendar",
-   "font": "tagi",
+   "font": "ttf:serif-italic:11:0:1:0.35",
    "under": 2,
    "areas": [
     [
@@ -852,13 +852,36 @@
     },
     {
      "from": [
+      0,
+      40,
+      104,
+      64,
+      128
+     ],
+     "text": "Mo",
+     "align": "left"
+    },
+    {
+     "from": [
+      0,
+      64,
+      104,
+      88,
+      128
+     ],
+     "text": "Wk",
+     "align": "left"
+    },
+    {
+     "from": [
       2,
       48,
       48,
       72,
       64
      ],
-     "text": "Mo"
+     "text": "Mo",
+     "name": "Mo (medium)"
     },
     {
      "from": [
@@ -868,7 +891,8 @@
       96,
       64
      ],
-     "text": "Wk"
+     "text": "Wk",
+     "name": "Wk (medium)"
     },
     {
      "from": [
@@ -939,7 +963,7 @@
    "rect": [
     28,
     6,
-    104,
+    110,
     26
    ],
    "text": "Forecast",

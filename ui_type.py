@@ -296,7 +296,9 @@ def tag_font(project=None):
 
 TTF = {"rounded": ("/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf", 0),
        "narrow": ("/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf", 0),
-       "black": ("/System/Library/Fonts/Supplemental/Arial Black.ttf", 0)}
+       "black": ("/System/Library/Fonts/Supplemental/Arial Black.ttf", 0),
+       "serif-italic": ("/System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf", 0),
+       "sans-italic": ("/System/Library/Fonts/Supplemental/Arial Bold Italic.ttf", 0)}
 _faces = {}
 
 
