@@ -1,0 +1,242 @@
+# section	offset	hash of the original message	English (see ui_messages.py)
+5	110936	de84	{66} seems to be injured.
+5	110976	64e1	{66}'s injury:{n}{6d}{n}Out for {6c}.
+5	111040	3424	{66}'s{n}{6d} has healed.{n}Back from tomorrow.
+5	111104	e18e	{60} won the {6e}{n}Japan Series and are{n}Japan champions!
+5	111184	5ece	{60} won the {6e}{n}pennant race and are{n}league champions!
+5	111276	e23e	{75} Monthly MVP, Month {6f}{n}has been announced.{n}The winners are:{p}Pitcher{n}{60}'s {66}{n}{76} W, {77} SV, {78} ERA{p}Batter{n}{61}'s {67}{n}AVG {79}, HR {7a}, RBI {7b}{p}Let's look forward to{n}more from both players!
+5	111568	dc9e	This season's title winners are out.
+5	111612	e955	Today {60} sent{n}{66}{n}to us in a trade.
+5	111684	135c	Today {60} sent{n}{66} and {67}{n}to us in a trade.
+5	111764	515a	Today {60} sent {66},{n}{67} and {68},{n}three players, in a trade.
+5	111856	a1fa	Import candidate found:{n}{66}
+5	111916	2853	Today {66}{n}joined us as an import.
+5	111984	3c87	{66} is leaving for{n}personal reasons and will{n}return home.
+5	112064	5709	{66} shows{n}hidden power!!
+5	112108	e3f8	{66} could not adapt{n}and fell into{n}a slump.
+5	112184	b4d2	{66}'s true{n}ability is now known.
+5	112232	88e3	Scout report from the {82} region:{n}{66}{n}is said to be a good player.
+5	112328	9add	Today the draftees' signings{n}were announced.{n}Let's look forward to them!
+5	112428	ecf5	Today {60} clinched{n}a winning record this season.
+5	112496	3b5c	Today {60} is locked{n}into a losing record this season.
+5	112568	19ed	Behind first-place {60} by{n}{74}, so our title hopes{n}for this season are gone.
+5	112672	e5d9	Now {70} losses in a row...{n}Team morale looks low.
+5	112744	dbfc	Stuck at {70} straight losses...{n}Win for the fans!
+5	112816	2165	The long losing streak ends at {70}.{n}Now it begins!
+5	112884	6f75	Now on a roll: {70} straight wins!{n}A real charge!
+5	112952	3207	Unstoppable! {70} wins in a row!!{n}Where will it end?!
+5	113024	7e8a	Swept first-place {60}{n}in 3 games!{n}We have momentum!
+5	113108	0911	{60} fell in a 3-game sweep.{n}We might surge ahead!
+5	113176	3a77	{60} fell in a 3-game sweep.{n}We have momentum!
+5	113240	5d8e	Today magic number {70} is lit!
+5	113284	f8ac	Today magic number {70}{n}is lit again.
+5	113344	d7d2	Today the lit magic number{n}has gone out...
+5	113416	817b	The first half is over.{n}We are keeping first place!{n}Let's charge to the title!
+5	113524	ace5	The first half is over.{n}We are now No. {7c}.{n}Keep it up in the second half!
+5	113628	ed84	The first half is over.{n}We are No. {7c}.{n}Time to come back!
+5	113712	ffab	The first half is over.{n}We are last for now, but{n}the season is far from done!
+5	113832	1dc2	Today {67}'s{n}season {7f}{81}{n}{66} broke it,{p}new record: {80}!
+5	113936	d3c2	Today {66}'s season{n}{7f} record of {80} ranks{n}No. {7d} all-time.
+5	114032	ce30	Today {67}'s career mark,{n}{7f}{81},{n}{66} broke it,{p}setting a new record of {80}.{n}Let's see how far it goes!
+5	114176	2af5	Today {66}'s career{n}{7f} record of {80} ranks{n}No. {7d} all-time.
+5	114272	8aa6	Today {60} made{n}us a trade offer.
+5	114336	4c37	Sadly, {60} turned{n}down our trade request...
+5	114412	35f5	Regarding our pending trade,{n}sadly no club seems{n}interested...{p}Cancelling the pending trade for now.
+5	114552	ef1b	Sadly, {66} will{n}retire at the end of this season.
+5	114624	4256	{66} has been{n}released.
+5	114668	7e59	{66} retires at the end{n}of the season to be{n}the pitching coach.
+5	114752	c0a6	{66} retires at the end{n}of this season to become{n}the batting coach.
+5	114836	01a8	{66} retires at the end{n}of this season to become{n}fielding & running coach.
+5	114928	5f19	Today the released player{n}{66}{n}has been signed.
+5	115004	f68c	Today Month {6f}'s{n}Monthly MVPs were announced.
+5	115068	3082	{66}{n}AVG {79}, HR {7a}, RBI {7b}{n}made him Monthly MVP for Month {6f}.
+5	115176	34a8	{66}{n}{76} W, {77} SV, {78} ERA{n}made him Monthly MVP for Month {6f}.
+5	115272	7257	{66} has{n}signed.{p}{93}
+5	115320	9ca1	{66}{n}{67}{n}Both players have signed.{p}{93}
+5	115392	6cae	{66}{n}{67}{n}{68}{n}All three players have signed.{p}{93}
+5	115476	794d	{66}, {67}{n}{68}, {69}{n}All four players have signed.{p}{93}
+5	115572	64e4	{66}, {67}{n}{68}, {69}{n}{6a}{n}All five players have signed.{p}{93}
+5	115680	0d5a	{66}, {67}{n}{68}, {69}{n}{6a}, {6b}{n}All six players have signed.{p}{93}
+5	115800	6400	{66} is{n}a preferred-entry signing.
+5	115848	c4ee	Sadly,{n}{66}{n}refused to sign with us.
+5	115912	b287	{66} and{n}{67}{n}refused to sign with us.
+5	115972	2f95	{66}{n}{67}{n}{68}{n}These three refused to sign.
+5	116052	4258	{66}, {67}{n}{68}, {69}{n}These four refused to sign.
+5	116144	b916	{66}, {67}{n}{68}, {69}{n}{6a}{n}These five refused to sign.
+5	116248	3332	{66}, {67}{n}{68}, {69}{n}{6a}, {6b}{n}These six refused to sign.
+5	116364	722e	Scout report.{n}The scout has arrived in {82}{n}so he reports.
+5	116448	6ec5	Scout report.{n}{66}'s abilities are{n}now fully known.
+5	116536	f289	Scout report.{n}{66}'s abilities are{n}now partly known.
+5	116624	bd40	Scout report.{p}{82}: a player named {66}{n}is the talk of the area.
+5	116716	2853	Today {66}{n}joined us as an import.
+5	116780	61b3	Today {66} and{n}{67} joined us{n}as imports.
+5	116856	4671	Today {66},{n}{67},{n}{68}{p}These three joined us{n}as imports.
+5	116964	6ed6	Today, FA declarant{n}{66} has decided.{p}{84}.
+5	117032	b7ee	Today, FA declarant{n}{66}: {84}.{p}{66}'s salary for next season{n}was refunded to his old club.
+5	117152	0da3	Today, FA declarant{n}{66} signed with{n}an overseas club.{p}{66}'s pay for next year{n}went back to his old club.
+5	117288	32e6	Overseas player{n}{66} update:{p}{84}.
+5	117352	5b94	Overseas player{n}{66} update: {84}.
+5	117408	95e9	Tomorrow is the fan-vote{n}All-Star Game!!{n}Who will make it, I wonder...
+5	117520	2920	Today {66}{n}{7f}{n}achieved!
+5	117576	f40f	Today {66}{n}{7f}{n}was recorded!
+5	117632	952d	Today {67}'s{n}season {7f}{81}{n}{66} broke it,{p}new record: {80}...
+5	117740	5e3a	Today {66}'s season{n}{7f} record of {80} ranks{n}No. {7d} all-time...
+5	117836	af76	Today {67}'s{n}career {7f}{81}{n}{66} broke it,{p}new record: {80}...
+5	117944	3b1c	Today {66}'s career{n}{7f} record of {80} ranks{n}No. {7d} all-time...
+5	118040	307a	Today {66}{n}{7f}{n}achieved in fine style!
+5	118104	d2d3	Today, the player studying abroad{n}{66}{n}is back home.
+5	118176	d620	{60} won the {6e}{n}Playoffs First Stage and{n}advances to the Second Stage.
+5	118272	1b8c	{66} has grown!{n}{84}
+5	118312	5c03	{60}'s {66} may{n}exercise his FA rights.
+5	118384	24db	{66}: draft prospect event?
+5	118432	2cca	What's a draft event notice?
+5	118472	db82	The All-Star fan vote{n}started today.
+5	118536	080f	The interim results of the{n}All-Star fan vote are out.{p}CL fan vote leader:{n}{88} votes{n}{60}'s{n}{66}.{p}PL fan vote leader:{n}{89} votes{n}{61}'s{n}{67}.
+5	118768	7ca8	All-Star fan vote final{n}results were announced.{p}The dream game cast is set;{n}surely they'll show us super{n}plays again this year.
+5	118928	0b65	The new season is almost here.{n}Which team will be the Japan{n}champions this year?{n}Here are the pundits' predictions.{p}・{n}・{n}・{n}{60} is picked as Japan champions.{p}Ahead of the pro baseball season,{n}the fans' excitement is rising!{n}{*6}Each team gained more fans.
+5	119240	6012	{88} Central League{n}pennant race has begun.
+5	119304	3a5e	{88} Pacific League{n}pennant race has begun.
+5	119368	8f68	{88} pro baseball{n}pennant race has begun.
+5	119432	fd73	{88} games on today's card{n}were rained out.
+5	119504	59a1	All-Star Game {88} was held today.{n}{89}-{8a}, All-CL win.
+5	119584	0f31	All-Star Game {88} was held today.{n}{89}-{8a}, All-PL win.
+5	119664	bde9	All-Star Game {88} was held today.{n}{89}-{8a}, a draw.
+5	119744	7960	Also, the MVP is{n}{60}'s{n}{66}.
+5	119808	52ce	The second half starts tomorrow.{n}Lower teams are expected to rally.
+5	119888	a727	The Japan Series is almost here.{n}Which team will be the Japan{n}champions this year?{n}Here are the pundits' picks.{p}・{n}・{n}{60} is picked as champions{n}{88}-{89} in the series.
+5	120104	08d0	June's end, the deadline{n}for new imports, is near.{n}Clubs seem to be moving{n}for one last import.
+5	120228	f116	The end of June, the deadline{n}for trade acquisitions, is near.{n}Clubs seem to be moving{n}for one last trade.
+5	120360	0798	{94} League Climax Series{n}Stage 1 was played.{n}{89}-{8a}. {93}{p}Stage 1 winner {60}{n}advances to Stage 2.
+5	120528	2629	{94} League Climax Series{n}Stage 2 was played.{n}{89}-{8a}. {93}{p}Stage 2 winner {60}{n}advances to the Japan Series.
+5	120696	82b8	Japan Series Game {88}{n}{89}-{8a}. {93}{n}Series: {8b} W, {8c} L{n}{94}{95}
+5	120800	7769	{60} won.
+5	120820	a466	It was a draw.
+5	120840	c472	{61} has the edge.
+5	120872	63df	The two sides are even.
+5	120904	fc34	The day after tomorrow:{n}{91} hosts the games.
+5	120964	a348	{60}: one win to the title!{n}Victory toss ahead?!
+5	121024	e4ad	{60} strikes back, also{n}one win from the title!
+5	121088	56d8	In Japan Series Game {88},{n}{60} won it all,{n}{89}-time Japan champions.
+5	121176	a778	In Game {88} of the Japan Series,{n}{60}{n}won the club's first Japan title.
+5	121272	b50f	Also, the Japan Series MVP is{n}{66}.
+5	121336	afa8	Today a joint tryout of {88}{n}clubs was held. Front offices{n}seem to have gone to look{n}at released players.
+5	121480	4f0c	Interleague play{n}starts soon. Rare{n}matchups should excite{n}pro baseball.
+5	121592	4a71	Today, interleague{n}play began. Fierce games{n}were played everywhere.
+5	121688	7f52	Interleague heats up!{n}Huge crowds!!
+5	121744	87dd	Today,{n}all interleague games ended.{n}From tomorrow the pennant race{n}resumes in separate leagues.
+5	121872	65c8	Spring camp starts soon!{n}(In spring camp, practice is{n} more effective than usual and{n} camp-only practice is open.)
+5	122016	cbf4	Camp is over,{n}and preseason games are here.{n}Each club adds new members{n}and is working on a new lineup.{p}(Young players used in preseason{n} games gain experience, and a good{n} showing builds much confidence.)
+5	122264	de76	Preseason games were held.{n}Aiming for the Japan title,{n}each club's regulars{n}made final tune-ups.
+5	122416	38a3	Scout report.{n}A promising draft prospect{n}has been found.{p}{66} ({93}) is a{n}{94}{95} {96}.{n}{97}{98}{+}(Added to the prospect list.)
+5	122608	675c	HS
+5	122620	72df	Univ
+5	122632	579d	Corp
+5	122644	4c55	Throw R,
+5	122656	4210	Throw L,
+5	122668	b3ee	 Bat R,
+5	122680	313a	 Bat L,
+5	122692	ecbb	 Bat S,
+5	122704	7fc3	P
+5	122712	5145	C
+5	122720	a8c6	1B
+5	122732	60af	2B
+5	122744	4202	3B
+5	122756	18d4	SS
+5	122768	a75c	OF
+5	122780	8048	"Velocity is his forte."
+5	122816	a5bf	"Seems to have good velocity."
+5	122856	cf5e	"His velocity looks promising."
+5	122896	54a6	"Once-in-a-decade velocity."
+5	122936	0efc	"Control is his forte."
+5	122968	ca46	"Seems to have good control."
+5	123012	0b75	"His control looks promising."
+5	123056	2b28	"That control is once in a decade."
+5	123100	4d2c	"Stamina is his forte."
+5	123136	4612	"Seems to have good stamina."
+5	123180	ad36	"His stamina looks promising."
+5	123224	b76d	"That stamina is once in a decade."
+5	123268	34f1	"Contact is his forte."
+5	123304	c539	"Seems to have good contact."
+5	123344	8617	"His contact looks promising."
+5	123384	59e8	"Once-in-a-decade contact."
+5	123424	d7a7	"Power is his forte."
+5	123456	1a9e	"Seems to have good power."
+5	123496	bfe5	"His power looks promising."
+5	123536	6434	"Once-in-a-decade power."
+5	123576	6a40	"Speed is his forte."
+5	123616	c5aa	"Seems to have good speed."
+5	123656	227c	"His speed looks promising."
+5	123700	cd4a	"That speed is once in a decade."
+5	123744	ded4	"Arm strength is his forte."
+5	123780	eb7e	"Seems to have a strong arm."
+5	123824	5e65	"His arm looks promising."
+5	123868	f824	"That arm is once in a decade."
+5	123912	46c8	"Defense is his forte."
+5	123952	85c1	"Seems to have good defense."
+5	123996	56ad	"His defense looks promising."
+5	124040	ee85	"That defense is once in a decade."
+5	124084	c778	"A once-in-a-decade talent."
+5	124124	d060	"He has leadership qualities."
+5	124164	1eec	 So they say.
+5	124192	0581	Scout report.{n}{66}:{n}{93}{n}So they say.
+5	124272	2b47	"Top velocity is clear now."
+5	124304	5e14	"Can roughly gauge his control."
+5	124340	f3c7	"Can roughly gauge his stamina."
+5	124380	37a6	"Vague idea of his pitches now."
+5	124416	3694	"Know a few of his pitches."
+5	124448	b1a8	"Know many of his pitches."
+5	124480	3364	"Few pitches unknown."
+5	124508	eecf	"All his pitches known."
+5	124536	ca62	"Some idea of his batting."
+5	124568	44c5	"Know his batting fairly well."
+5	124604	7723	"His batting is clear now."
+5	124640	6ddd	"Know his speed fairly well."
+5	124676	4e0e	"Know his arm fairly well."
+5	124712	5f21	"Know his defense fairly well."
+5	124752	79a2	Scout report.{n}{66}:{n}"All his abilities are clear now."{n}So they say.{p}{93}
+5	124868	63cf	(Scout orders changed){n}("Research" -> "Auto Search/Research")
+5	124952	96de	Scout report.{p}{93}
+5	124992	b3e8	"Talks with {66} feel{n} quite positive.{n} Good news is likely."{n}So they say.
+5	125104	8efb	"Talks with {66} are{n} going decently.{n} We can be hopeful."{n}So they say.
+5	125208	2ef7	"Talks with {66} are{n} hard to read.{n} Could go either way."{n}So they say.
+5	125324	61b0	"Talks with {66} are{n} not going well.{n} Don't get your hopes up."{n}So they say.
+5	125440	82cc	"A deal with {66} looks{n} out of reach.{n} Sometimes giving up is wise."{n}So they say.
+5	125560	95e8	Scout report.{n}"Talks with {66} went well."{n}So they say.{p}{93}
+5	125660	ab9d	{66} will tell other clubs{n}"I'm going on to college"{n}for us.
+5	125744	945c	{66} will tell other clubs{n}"I'm taking a job"{n}for us.
+5	125824	e37d	{66} reportedly told other{n}clubs "I'll refuse every pick{n}by any team but ours,"{n}and gave his word.
+5	125944	cf9d	Scout report.{n}"Talks with {66} broke down.{n} Sadly, we've decided to pass."{n}So they say.
+5	126088	51c2	Preferred-entry talks{n}open tomorrow, Aug. 1!{n}Clubs' moves?!
+5	126168	37ef	Scout report.{n}"Time to pick your top target{n} and open talks, maybe?"{n}So they say.{p}(Use a preferred-entry slot{n}to take him in the 1st round.)
+5	126360	e5a3	Scout report.{n}"We've found many candidates.{n} Why not pick a target?"{n}So they say.{p}(Use "Research" to look{n}into a player's abilities.)
+5	126560	15d8	Scout report.{n}"There are a lot of candidates now.{n} Not sure this is fine as it is."{n}So they say.{p}(Use "Research" to look{n}into a player's abilities.)
+5	126756	39aa	Scout report.{n}"This year's candidates are all found.{n} Searching more is pointless."{n}So they say.{p}(We recommend "Research" to{n}look into players in detail.)
+5	126960	30cc	Scout report.{p}"This year, there will be{n}no more notable {94} players.{n} Better to do something else."{n}So they say.
+5	127120	e457	"No more notable players{n} will turn up this year.{n} Better to do something else."{n}So they say.
+5	127248	3005	Scout report.{n}"{66} seems to be{n} interested in our team."{n}So they say.
+5	127360	122f	Scout report.{n}"{66} seems more interested{n} in other clubs than in us..."{n}So they say.
+5	127488	0d6f	Scout report.{n}"We're researching {66},{n}{60} is also after him."{n}So they say.
+5	127612	4d2a	Scout report.{n}"We're after {66},{n}{60} seems to be, too."{n}So they say.
+5	127728	b45a	Scout report.{n}"{66} seems to want to{n} join our team."{n}So they say.
+5	127848	6921	Scout report.{n}"{66} doesn't seem keen on{n} joining any club but ours."{n}So they say.
+5	127984	d7a0	College spring games open!{n}Who stands out?!
+5	128040	3b42	At the college spring tourney,{n}{66} is a star!{n}National title plus many records.{n}A lock for 1st in the draft?!{p}({66} added to{n}the prospect list.)
+5	128224	7554	Industrial-league tournament{n}opens! Players to watch?!
+5	128292	9bba	At the industrial-league tourney,{n}the amateur game's best player,{n}{66}, was brilliant and{n}won the national title.{p}The press rushes in; he answers{n}with a fresh, adult smile,{n}already winning women's hearts.{p}({66} added to{n}the prospect list.)
+5	128592	d92c	Qualifiers for summer Koshien{n}have started around Japan.{n}Fierce games are being played.
+5	128704	82ea	All summer Koshien teams{n}are now decided.{n}(The public is buzzing about{n} the high school tournament.)
+5	128840	1086	Summer Koshien begins!{n}Fierce play in the heat.{n}Who will be the star?!
+5	128928	584f	At the summer Koshien tournament,{n}{66} is the star!{n}He won the national title.{p}He is now Koshien's idol and{n}the focus of public attention.{n}({66} added to{n}the prospect list.)
+5	129144	a137	Konami Cup Asia Series qualifier{n}{62} vs {63}:{n}{89}-{8a}.{n}{93}{p}Konami Cup Asia Series qualifier{n}{64} vs {65}:{n}{8b}-{8c}.{n}{94}
+5	129328	ca1a	Konami Cup Asia Series final:{n}{89}-{8a}.{n}{93}
+5	129408	5e2b	{60} won.
+5	129432	8b9e	{61} won.
+5	129456	3d94	{60} won the title.
+5	129480	a466	It was a draw.
+5	129500	825c	CL
+5	129508	d4c6	PL
+5	129520	4369	{66} and{n}{67} now have{n}deeper Chemistry.
+5	129576	1292	{66} is badly fatigued.{n}Please rest him for a game.
+5	129644	61de	Today {60} sent{n}{66} to us for {67} as{n}compensation.
+5	129728	bf57	The pro season is over, and fan{n}excitement is settling down.{n}{*2}Every team's fan count dropped.
+5	129848	9a44	Digit test{n}1: {88}{n}2: {89}{n}3: {8a}{p}4: {8b}{n}5: {8c}{n}6: {8d}{p}7: {8e}{n}8: {8f}{n}9: {90}

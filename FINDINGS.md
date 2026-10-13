@@ -419,6 +419,22 @@ table and everything behind it would move if the English is longer). `orepena.re
 in sec5+56522..803124 with 5,312 pointers from its own sec5 spread over the section and 1,844 from its code:
 closer to the Success scripts, the control flow is not known yet.
 
+## The videos (2026-10-13, looked at, nothing changed)
+
+26 `.thp` files in `DATA/files` (motion JPEG with ADPCM sound; `ffmpeg` reads them, nothing here writes them).
+Frames of every one were read as contact sheets:
+
+- `15_op_043` / `15_op_169` (80 s, the opening in 4:3 and 16:9): no sentences. The PAWAPURO sign, the game's logo
+  and katakana sound effects that are part of the drawing. Stays.
+- `15_ed_043` / `15_ed_169` (187 s, the staff credits): Japanese on about 30 pages, roles and names. Could stay.
+- `15_my` (9 s, My Life intro, 640x480): four captions in the picture: 何のために戦うのか？ (on plain dark blue),
+  then 記録のため？, 家族のため？, 誇りのため？ over a burning baseball. The only video text worth translating:
+  decode the frames, paint the English over a plate, write JPEG frames no larger than the old ones back into
+  the container (a writer is needed: header, frame sizes, picture, sound).
+- `15_pe` (8 s, Pennant intro): club logos and a NIPPON CHAMPIONS pennant, all Latin letters.
+- `15_scs` (6 s, Success intro): no text.
+- `yk15_00` .. `yk15_18` (320x224, 8 to 10 s each, the demo clips of the baseball school): no text.
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
