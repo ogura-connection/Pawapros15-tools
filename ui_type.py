@@ -299,9 +299,10 @@ TTF = {"rounded": ("/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf", 
 _faces = {}
 
 
-def ttf_ink(text, face="rounded", cap=14, slant=0.0, squeeze=1.0, over=4):
+def ttf_ink(text, face="rounded", cap=14, slant=0.0, squeeze=1.0, bold=0.0, over=4):
     """(ink, baseline row) of text drawn with a system font: capitals `cap` pixels high, sheared by
-    `slant` (0.2 = italic), widths scaled by `squeeze`. Drawn `over` times too large and averaged
+    `slant` (0.2 = italic), widths scaled by `squeeze`, strokes thickened by `bold` pixels a side.
+    Drawn `over` times too large and averaged
     down, which gives the 6 ink levels of a soft edge. For lettering larger than the tag font, where
     a drawn pixel font would look coarse next to the Japanese."""
     from PIL import Image, ImageDraw, ImageFont
@@ -314,9 +315,11 @@ def ttf_ink(text, face="rounded", cap=14, slant=0.0, squeeze=1.0, over=4):
     font = _faces[key]
     l, t, r, b = font.getbbox(text, anchor="ls")                 # relative to the baseline
     pad = 4 * over
+    stroke = round(bold * over)
     h_up, h_down = -t + pad, b + pad
     img = Image.new("L", (r - l + 2 * pad + int(slant * (h_up + h_down)) + 4 * over, h_up + h_down), 0)
-    ImageDraw.Draw(img).text((pad - l, h_up), text, fill=255, font=font, anchor="ls")
+    ImageDraw.Draw(img).text((pad - l, h_up), text, fill=255, font=font, anchor="ls",
+                             stroke_width=stroke, stroke_fill=255)
     if slant:
         img = img.transform(img.size, Image.AFFINE, (1, slant, -slant * h_up, 0, 1, 0), Image.BICUBIC)
     w = max(1, round(img.width * squeeze / over))
@@ -334,10 +337,10 @@ FONTS = {"command": command_font, "tag": tag_font}
 
 def typeset(text, font="command", project=None):
     """(ink, baseline row) of a word or phrase. A phrase that MLB drew is returned as drawn.
-    font = "command", "tag", or "ttf:<face>:<cap height>[:<slant>[:<squeeze>]]" for a system font."""
+    font = "command", "tag", or "ttf:<face>:<cap height>[:<slant>[:<squeeze>[:<bold>]]]" for a system font."""
     if font.startswith("ttf:"):
         a = font.split(":")
-        return ttf_ink(text, a[1], int(a[2]), float(a[3]) if len(a) > 3 else 0.0, float(a[4]) if len(a) > 4 else 1.0)
+        return ttf_ink(text, a[1], int(a[2]), *[float(x) for x in a[3:6]])
     f = FONTS[font](project)
     if text in f["words"]:
         return f["words"][text]
