@@ -30,7 +30,9 @@ sprite parts that showed the old rectangles are pointed at the new ones. A group
 "left" (keep the left edge, not the centre), "valign": "centre" (middle of the old art, not its baseline) or "centre_x"
 (where the middle of the new label goes, measured from the left of the old rectangle). "baseline" and
 "left" put the label on a fixed row and column of its sprite instead (a list of names that the game
-shows one at a time in the same place: the Japanese ones differ by a pixel or two). The parts are
+shows one at a time in the same place: the Japanese ones differ by a pixel or two). A sprite that also
+draws a plate or an icon names its lettering parts with "pages" and / or "palettes"; "layers": 2 is a
+sprite that draws the same lettering twice (a shadow under a coloured copy). The parts are
 pointed at the new ones (page, rectangle and offset
 are rewritten in place; nothing moves inside the file and no size changes). The new label keeps the
 old label's horizontal centre and sits on the old baseline.
@@ -492,8 +494,65 @@ def ringed(ramp, rings):
     return style
 
 
+def haloed(ramp, band, glow, width=2):
+    """A style: letters drawn with `ramp` in a solid band `width` pixels wide, inside a one-pixel glow whose
+    colour runs through `glow` from the top row to the bottom row; below and to the right the glow is
+    two pixels (a soft shadow). The tab and field labels of the Data screen."""
+    ramp, glow = np.array(ramp, np.uint8), np.array(glow, np.uint8)
+
+    def style(ink, base):
+        pad = width + 2
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        body = grow(grow(letters, width - 1), 1, diagonal=False) if width > 1 else grow(letters, 1)
+        near = grow(body, 1, diagonal=False)
+        far = near | shift(near, 1, 1)
+        rows = np.nonzero(far.any(1))[0]
+        frac = (np.arange(big.shape[0]) - rows.min()) / max(rows.max() - rows.min(), 1)
+        shade = glow[np.rint(frac * (len(glow) - 1)).astype(int).clip(0, len(glow) - 1)]
+        out = np.zeros(big.shape, np.uint8)
+        out[far] = np.broadcast_to(shade[:, None], big.shape)[far]
+        out[body] = band
+        out[letters] = ramp[big[letters]]
+        return out, base + pad
+    return style
+
+
+def banded(ramp, rings, shadow=0):
+    """A style: letters drawn with `ramp` inside solid one-pixel rings (first value innermost, corners
+    rounded from the second ring on), with a one-pixel `shadow` below and to the right of the last ring."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        pad = len(rings) + 1
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        masks = [grow(letters, 1)]
+        for _ in rings[1:]:
+            masks.append(grow(masks[-1], 1, diagonal=False))
+        out = np.zeros(big.shape, np.uint8)
+        if shadow:
+            out[shift(masks[-1], 1, 1)] = shadow
+        for m, value in zip(masks[::-1], rings[::-1]):
+            out[m] = value
+        out[letters] = ramp[big[letters]]
+        return out, base + pad
+    return style
+
+
 RENDER = {
     "command": style_command,
+    # Data screen (scs_data.arc, scs_sys.arc). White letters, dark outline, a shadow one step lighter: the
+    # ability tabs (palettes 56-59 of z3_dt), handedness and form names (72), trait plates (104, 105)
+    "data": banded([0, 6, 8, 10, 12, 14, 15], [4, 3], 2),
+    # dark letters in a white band with a pink glow: B/T, Form, Growth (palette 64 of z3_dt)
+    "datafield": haloed([0, 7, 6, 5, 3, 2, 1], 8, [9, 8, 8, 8, 10, 11, 12, 13, 14, 15]),
+    # dark letters in a white band with a blue glow: the screen buttons (palettes 32-36 of z3_dts)
+    "databutton": haloed([0, 7, 6, 5, 3, 2, 1], 8, [10, 10, 11, 11, 12, 12, 13, 14, 15]),
     # the rank plate of scenario 1 (y5_siba_1): 平社員 grey with a white outline (palette 19), 係長 dark with a white
     # outline (20), 課長 orange in white and blue (21); 役職 white with a dark outline (20)
     "rank0": ringed([0, 12, 11, 9, 7, 5, 4], [15, 15]),
@@ -595,8 +654,10 @@ def repack(group, d, bank, pages, patches, project=None):
     for lab in labels:
         if "sprite" in lab:
             mine = next(ps for name, ps in bank["sprites"].items() if name.endswith("_" + lab["sprite"]))
+            pgs, pls = opt(lab, "pages"), opt(lab, "palettes")   # the parts that are lettering, not plate or icon
+            mine = [p for p in mine if (pgs is None or p.page in pgs) and (pls is None or p.palette in pls)]
             box = None
-            for p in mine:                                       # the art as it stands on screen
+            for p in mine[:len(mine) // opt(lab, "layers", 1)]:  # the art as it stands on screen
                 ys, xs = np.nonzero(page(p.page)[p.y0:p.y1, p.x0:p.x1])
                 if len(xs):
                     b = (p.x + xs.min(), p.y + ys.min(), p.x + xs.max() + 1, p.y + ys.max() + 1)
@@ -629,7 +690,7 @@ def repack(group, d, bank, pages, patches, project=None):
             pg, x0, y0, x1, y1 = lab["from"]
             art.append((page(pg)[y0 + box[1]:y0 + box[3], x0 + box[0]:x0 + box[2]].copy(), None))
     sizes = [(a.shape[1], a.shape[0]) for a, _ in art]
-    spare = any("sprite" in lab and len(mine) > 1 for lab, (mine, _) in zip(labels, old))
+    spare = any("sprite" in lab and len(mine) > opt(lab, "layers", 1) for lab, (mine, _) in zip(labels, old))
     placed = shelf_pack(sizes + ([(4, 4)] if spare else []), areas, tuple(group.get("gap", (1, 1))))
     for pg, x0, y0, x1, y1 in clear:
         page(pg)[y0:y1, x0:x1] = 0
@@ -651,10 +712,13 @@ def repack(group, d, bank, pages, patches, project=None):
             top = opt(lab, "baseline") - base                        # for a list of names set in one line
         if opt(lab, "left") is not None:
             left = opt(lab, "left")
+        per = len(mine) // opt(lab, "layers", 1) if "sprite" in lab else 1
         for k, p in enumerate(mine):
             if "sprite" in lab:                                  # box is in screen coordinates
-                if k == 0:
-                    data = U.pack_part(pg, p.flags, p.palette, top, left, y, x, y + h, x + w)
+                if k % per == 0:                                 # the first piece of each layer shows the new art
+                    dx = min(q.x for q in mine[k:k + per]) - min(q.x for q in mine[:per])
+                    dy = min(q.y for q in mine[k:k + per]) - min(q.y for q in mine[:per])
+                    data = U.pack_part(pg, p.flags, p.palette, top + dy, left + dx, y, x, y + h, x + w)
                 else:
                     sp, sx, sy = placed[len(labels)]
                     data = U.pack_part(sp, 0, p.palette, p.y, p.x, sy, sx, sy + 4, sx + 4)
