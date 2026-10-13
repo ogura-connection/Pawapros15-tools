@@ -410,9 +410,10 @@ def verify_dol(orig, new, dol, slots):
             assert ad2 - ui_strings.DOL_ADDRESS == new_at[i] + dist, where + " does not point at dialog string %d" % i
             (inside if dist else at_start).add(i)
             count += 1
-        # outside its sections (header, relocation tables) a module of unchanged size differs
+        # outside its sections (header, relocation tables) a module that was not rebuilt differs
         # from the original in relocation addends only
-        if len(m.data) == len(new[mid].data) and m.data != new[mid].data:
+        if m.name not in S.SCRIPT_FILES and m.data != new[mid].data:
+            assert len(m.data) == len(new[mid].data), m.name + ": size changed"
             image = bytearray(m.data)
             for _, _, entries, _ in parse_imports(new[mid].data, m.imp_off, m.imp_size):
                 for e in entries:
