@@ -807,6 +807,7 @@ RENDER = {
     # team names of the standings (palette 87, black on the board): two grey levels only, as the Japanese has,
     # so that the compressed pages stay inside their slots
     "team": outlined([0, 0, 4, 7, 15, 15, 15], 0, 0),
+    "month": logo([15], [15], 15, 8, 7, [4, 1], 3),     # navy on a white band, blue cast: the month banner
     "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),
