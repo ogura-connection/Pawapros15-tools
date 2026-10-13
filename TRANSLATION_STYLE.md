@@ -415,6 +415,18 @@ Gear names on the item icons (not seen in game): the term sheet's names without 
 Catching, No-Miss, S No-Miss, Pro, Contact, Impact, Power, S Power, Mighty, Pro Power, Lock-On, Sweet, Running,
 Dig-In, Pitching, S Pitching, Heavy, S Heavy, Pro Pitch, Sniper, S Sniper, Pro Sniper.
 
+System settings list (scs_sys.arc), the wording of the screen's own help lines (rumble, catcher window, voice):
+
+| Japanese | English |
+|---|---|
+| 試合中のコントローラ設定 / 投球/打撃画面 / 音声設定 | In-Game Controls / Pitching / Batting / Voice |
+| イベントの振動 / メッセージのショートカット / サポートメッセージ | Event Rumble / Message Shortcut / Help Messages |
+| Aタイプ / Bタイプ / 振動あり / 振動なし | Type A / Type B / Rumble On / Rumble Off |
+| 設定中 / 設定していません / ON / OFF | Set / Not Set / ON / OFF (as drawn) |
+| ウインドウなし / ウインドウあり / 投手視点 | No Window / Window / Pitcher View |
+| 十字ボタン / コントロールスティック / Lスティック | +Control Pad / Control Stick / L Stick (Nintendo's names) |
+| 難度 / ノーマル / ルーキー | Difficulty / Normal / Rookie |
+
 Schedule (scs_data.rel, strings that the build lays out again; all 24 share 444 bytes, so the tournament rounds stay
 short): Practice Game; Intercity Qual R1 / SF / Final; Intercity Natl SF / Final; Japan Champ Qual R1 / Final;
 Japan Champ Natl SF / Final; Elite Squad Camp; Elite Squad Camp Game; Welcome Ceremony (入社式); CEO New Year Edict;
