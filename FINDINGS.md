@@ -373,6 +373,52 @@ strings in English, in 62 modules; built, verified and installed.
   (` breaks record!`, ` Talks`); long help texts of `sct_a_sc.rel` and `chrsong.rel` whose line width the tool
   did not find (written as one line, padded by hand to 32 letters a row).
 
+## Pennant and My Life strings, and the news messages (2026-10-13, sixth session)
+
+**What "a third start with a header" really is.** The strings of Pennant that begin with small numbers are not
+slots with a header: they are **message scripts**, the news and reports of Pennant (`pena_sub.rel`
+sec5+110936..130016, 241 messages; five more in `pn_fa.rel` sec5+6584..6976). A message is a run of pieces,
+each `codes, 0, text, 0xFFFF`:
+
+- `0001` new line, `0007` new page, `0060`..`009F` an inserted value (60-65 a club, 66-6B a player's name, the
+  rest numbers and words), then the unit `0000`, then the text. The first `0000` is a marker ("text follows"),
+  not a space: lines that are indented have a second `0000` behind it.
+- `000F` ends a message in `pena_sub.rel` (`0007 000F` after a full text, `0001 000F` or `000F` alone after the
+  short ones), `0008` in `pn_fa.rel`. Seventeen short texts have no `0xFFFF`: the stop code closes them
+  (`0 外野手 F`: the scout's 高校生 / 右投げ / 投手 ... labels, セ / パ).
+- A unit with its top four bits set is coloured text (`6xxx` and `2xxx`: the lines about the number of fans).
+- Only the start of a message has a pointer (two tables of `R_PPC_ADDR32` in sec5, at +108120 and +130016, and
+  a few from the code), and in front of it the data is padded with zeros, so the game reads a message piece
+  after piece. `pointer_check.py` reports these as `inside_only`: `ui_strings.find` glues the stop code of the
+  message before to the first piece.
+
+So the pieces of one message can have any length as long as the message ends before the next pointer target.
+`ui_messages.py` (export, check, apply, set, merge, status) writes a message as one line with tags
+(`本日、{60}から{n}{66}選手が{n}トレード入団いたしました。`); the English keeps the tags in their order and is free
+between them (`Today {60} sent{n}{66}{n}to us in a trade.`). Limits: the room of the span (6,793 cells for 6,590
+of Japanese) and 40 letters a line, an inserted name or club counted as 8 and a number as 4 (the longest Japanese
+lines; the real width of the box is **not measured**). English in `translation/messages/<file>.tsv`, merged to
+`_work/messages.json`; `rebuild_scripts.py build` lays each message out again in its span and `verify` compares
+the span. Batch tools in `_work/tl_bulk/`: `make_message_batches.py`, `brief_messages.md`, `check_messages.py`,
+`collect_messages.py`.
+
+**Not known:** whether the game puts any space after an inserted value (the English writes its own), and what
+each insert above 0x6B stands for beyond what the Japanese next to it shows.
+
+**The plain strings** of `pennant.rel`, `pena_sub.rel`, `pn_fa.rel` and `orepena.rel` went out as batches P01 to
+P10 (`make_string_batches2.py`: 3,461 unique strings; `strings/out/P00.txt` holds 174 whose Japanese and capacity
+already had English). Left out by the cut: name lists (`orepena.rel` sec5+40880..41290, +91500..92528,
++145256..158700: 1,426 names; `pennant.rel` sec5+40500..44000; all of `pn_ore_i.rel`, the record holders), noise
+(tables of numbers that read as glyphs: 834 rows), the message region. Outside the messages only one string
+had a pointer inside its slot (`pn_fa.rel` 5:106, now in `START_TRIM`).
+
+**The packed text of the other modes (looked at, not done).** `sct_main.rel` (Eikan Nine) keeps its packed
+text at sec5+14416..189372 and a table of 5,319 `R_PPC_ADDR32` pointers right behind it (sec5+189368..210640):
+every text seems to be reached through the table, so it could be laid out again like a block of strings (the
+table and everything behind it would move if the English is longer). `orepena.rel` (My Life) has 3,100 runs
+in sec5+56522..803124 with 5,312 pointers from its own sec5 spread over the section and 1,844 from its code:
+closer to the Success scripts, the control flow is not known yet.
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
