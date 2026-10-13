@@ -15,7 +15,8 @@ A spec is a JSON file:
                "roles": {...}, "max_stretch": 1.6, "halo": [4, 5], "lines": 2, "name": "Practice"}, ...]}
 "drop" lists roles that are left out of the label (the outer edge of a label already sits on a plate
 of that colour; leaving it out gives the letters the room), "halo" draws that colour back as a one-pixel
-edge afterwards, "full" = overrides for the unscaled art, used when the label fits as drawn in MLB, "lines": 2 stacks the two words of a label (cut at its widest gap) when it is too long
+edge afterwards, "full" = overrides for the unscaled art, used when the label fits as drawn in MLB, "band": ["letter", "plate"] turns letter pixels on the outer edge of the label into plate, giving a
+solid band round the letters, "lines": 2 stacks the two words of a label (cut at its widest gap) when it is too long
 for one line. `rect` is a sprite rectangle of the page (see ui_textures.py parts); it is cleared, and the label is
 centred in the part of it the Japanese label covered (its bounding box; "area": "rect" uses the whole
 rectangle), minus `margin` pixels. The source colours are sorted into roles (outer / ring / fill for the
@@ -217,7 +218,27 @@ def carve_axis(grid, target, axis):
     return g if axis == 1 else g.T
 
 
-def fit(mask, cls, roles, w, h, max_stretch=1.0, max_scale=1.0, method="carve"):
+def despeckle(grid, passes=2):
+    """Remove single-pixel noise from an integer label map: a pixel none of whose 4 neighbours share its
+    value, and of which at least 3 agree with each other, takes their value (dither dots, one-pixel
+    holes). Strokes of one pixel are not touched: they have neighbours of their own value."""
+    g = grid.copy()
+    for _ in range(passes):
+        p = np.pad(g, 1, mode="edge")
+        nb = np.stack([p[:-2, 1:-1], p[2:, 1:-1], p[1:-1, :-2], p[1:-1, 2:]])
+        same = (nb == g).sum(0)
+        out = g.copy()
+        for v in np.unique(nb):
+            votes = (nb == v).sum(0)
+            fix = (same == 0) & (votes >= 3)
+            out[fix] = v
+        if (out == g).all():
+            break
+        g = out
+    return g
+
+
+def fit(mask, cls, roles, w, h, max_stretch=1.0, max_scale=1.0, method="carve", band=None):
     """The label as an array of palette indices (0 = clear) that fits w x h. method "carve" (default)
     removes the least important columns and rows (see carve_axis); "area" resamples with an area filter
     (smoother, softer). Labels are never enlarged."""
@@ -227,10 +248,20 @@ def fit(mask, cls, roles, w, h, max_stretch=1.0, max_scale=1.0, method="carve"):
         grid = np.zeros(mask.shape, np.int32)
         for k, name in enumerate(names):
             grid[mask & (cls == name)] = k + 1
+        grid = despeckle(grid)
+        if band:                                    # letter pixels on the edge of the label become band
+            inner, outer = names.index(band[0]) + 1, names.index(band[1]) + 1
+            p = np.pad(grid, 1)
+            touches = np.zeros(grid.shape, bool)
+            for dy in (-1, 0, 1):
+                for dx in (-1, 0, 1):
+                    touches |= p[1 + dy:1 + dy + grid.shape[0], 1 + dx:1 + dx + grid.shape[1]] == 0
+            grid[(grid == inner) & touches] = outer
         if sw > w:
             grid = carve_axis(grid, max(w, 1), 1)
         if sh > h:
             grid = carve_axis(grid, max(h, 1), 0)
+        grid = despeckle(grid)
         table = np.array([0] + [roles[n] for n in names], np.uint8)
         return table[grid]
     sx = min(w / sw, max_scale)
@@ -262,16 +293,18 @@ def draw(page, rect, area, label, halo=()):
 
 
 def add_halo(page, rect, halo):
+    """Surround everything in the rectangle with solid one-pixel rings, first value innermost. The
+    rings grow in all 8 directions, so corners are filled and the band has no gaps."""
     x0, y0, x1, y1 = rect
     region = page[y0:y1, x0:x1]
     for value in halo:
-        g = region != 0
-        ring = g.copy()
-        ring[1:] |= g[:-1]
-        ring[:-1] |= g[1:]
-        ring[:, 1:] |= g[:, :-1]
-        ring[:, :-1] |= g[:, 1:]
-        region[ring & ~g] = value
+        g = np.pad(region != 0, 1)
+        ring = np.zeros_like(g)
+        for dy in (-1, 0, 1):
+            for dx in (-1, 0, 1):
+                ring |= np.roll(np.roll(g, dy, 0), dx, 1)
+        ring = ring[1:-1, 1:-1]
+        region[ring & (region == 0)] = value
 
 
 def split_words(mask, cls, parts=2, min_gap=2):
@@ -342,7 +375,7 @@ def render(spec, d, banks, project=None):
             box = (ax0, ay0 + k * band, ax1, ay0 + (k + 1) * band)
             label = fit(wm, wc, variant["roles"], box[2] - box[0] - 2 * pad, box[3] - box[1] - 2 * pad,
                         variant.get("max_stretch", 1.0), variant.get("max_scale", 1.0),
-                        variant.get("method", "carve"))
+                        variant.get("method", "carve"), variant.get("band"))
             scales.append((lab["name"], label.shape, wm.shape))
             draw(pages[key], lab["rect"], box, label)
         add_halo(pages[key], lab["rect"], halo)
