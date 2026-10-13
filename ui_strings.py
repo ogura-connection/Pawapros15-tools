@@ -51,6 +51,13 @@ is found like this:
 The same rule gives the widths in LINE_CELLS (checked for the 3 x 17 tips, 2 x 18 system help,
 2 x 16 title help, 2 x 14 rating comments); they stay listed because they were tested in the game.
 
+Strings that can move (BLOCKS). The 24 entries of the schedule (scs_data.rel sec5+22308..22752) stand back to
+back and each is reached through one R_PPC_ADDR32 of a pointer table right behind them. The build lays such a
+block out again and rewrites the addends of the table, so an entry may be longer or shorter than its
+Japanese: what counts is that all of them fit the block together, and that one entry is not wider than its
+column ("max" cells). An entry that is the end of another one shares its cells ("Japan Champ Qual Final"
+inside "Exam, Japan Champ Qual Final": start the shared part on an even letter).
+
 main.dol holds the blue system dialogs (save prompts, memory notices): 264 strings back to back at
 file offsets 0x143AA0..0x145ACE, each unit 0x1000 | glyph number, 0xFFFF ends a string, no slots and
 no padding. Each string is one line of a dialog. 0x1FFD, shown as {}, is the blank cell of these
@@ -99,6 +106,10 @@ START_TRIM = {("scs_data.rel", 5, 106): 3, ("scs_data.rel", 5, 2148): 38}
 # number tables that look like strings
 NOT_TEXT = {("scs_data.rel", 5, 1164), ("scs_data.rel", 5, 10002), ("scs_data.rel", 5, 17864),
             ("scs_data.rel", 5, 18946), ("scs_item.rel", 5, 1474), ("scs_item.rel", 5, 3822)}
+
+# blocks of strings that the build lays out again: "table" = section offset of the pointer table, "count" its
+# entries, "max" = cells one entry may take (the schedule column holds about 15 before the game icon)
+BLOCKS = {"scs_data.rel": [{"section": 5, "start": 22308, "end": 22752, "table": 22756, "count": 24, "max": 15}]}
 
 DOL = "main.dol"
 DOL_SHA1 = "cd096d3bbfb5418316dad6e3035cba34a028f718"
@@ -285,7 +296,12 @@ def strings_of(name, mods=None):
             s["offset"], s["cells"], s["units"] = s["offset"] + cut * 2, s["cells"] - cut, s["units"][cut:]
             s["text"] = "".join(glyph_to_char(u) or "?" for u in s["units"]).rstrip("　")
         found.append(s)
-    return line_widths(name, found)
+    found = line_widths(name, found)
+    for s in found:
+        b = block_of(name, s["section"], s["offset"])
+        if b:
+            s["block"] = b
+    return found
 
 
 def dol_data():
@@ -381,6 +397,53 @@ def dol_fit(strs, english):
 
 # ── The English ───────────────────────────────────────────────────────────
 
+def block_of(name, sec, off):
+    """The block a string belongs to, or None."""
+    for b in BLOCKS.get(name, ()):
+        if b["section"] == sec and b["start"] <= off < b["end"]:
+            return b
+    return None
+
+
+def block_layout(seqs):
+    """Where the strings of a block go: ([start of each, in cells from the start of the block], cells used).
+    seqs = the cells of every string (tuples, without the 0xFFFF), in the order of the pointer table. Strings
+    are laid back to back, each closed by one cell; a string that is the end of another shares its cells."""
+    host = {}
+    for i, a in enumerate(seqs):
+        for j, b in enumerate(seqs):
+            if i != j and (len(b) > len(a) or (len(b) == len(a) and j < i)) and b[len(b) - len(a):] == a:
+                host[i] = j
+                break
+    starts, pos = {}, 0
+    for i, a in enumerate(seqs):
+        if i not in host:
+            starts[i] = pos
+            pos += len(a) + 1
+
+    def start(i):
+        if i not in starts:
+            starts[i] = start(host[i]) + len(seqs[host[i]]) - len(seqs[i])
+        return starts[i]
+    return [start(i) for i in range(len(seqs))], pos
+
+
+def block_fit(name, strs, english):
+    """Problems (a list of text lines) if a block of `name` cannot hold its strings, English where there is
+    some. english = {(section, offset): text}."""
+    import pair_font
+    problems = []
+    for b in BLOCKS.get(name, ()):
+        mine = sorted((s for s in strs if s.get("block") is b), key=lambda s: s["offset"])
+        seqs = [tuple(pair_font.text_segments(english[(s["section"], s["offset"])]))
+                if english.get((s["section"], s["offset"])) else tuple(s["units"][:s["cells"]]) for s in mine]
+        used, room = block_layout(seqs)[1], (b["end"] - b["start"]) // 2
+        if used > room:
+            problems.append("%d:%d: the block is %d cells (%d letters) too full: %d of %d cells"
+                            % (b["section"], b["start"], used - room, (used - room) * 2, used, room))
+    return problems
+
+
 def load_tsv(name):
     """{(section, offset): (hash, english)}"""
     rows = {}
@@ -453,6 +516,13 @@ def judge(s, en, longest=0):
             warnings.append("%d cells, the Japanese has %d: the dialog box may be too narrow"
                             % (cells, s["cells"]))
         return errors, warnings, en
+    if s.get("block"):                                  # a string the build moves: one line, no slot
+        if len(lines) > 1:
+            errors.append("%d lines, an entry of this list is one line" % len(lines))
+        elif letters(en) > s["block"]["max"]:
+            errors.append("%d letters too long: an entry holds at most %d cells (%d letters)"
+                          % (too_long(en, s["block"]["max"]), s["block"]["max"], s["block"]["max"] * 2))
+        return errors, warnings, en
     caps = line_caps(s)
     if len(lines) > len(caps):
         errors.append("%d lines, the slot has %d (%s letters)"
@@ -496,6 +566,10 @@ def check_rows(name, pairs):
         english = {key: en for key, (_, en) in load_tsv(name).items()}
         english.update(good)
         problems += dol_fit(strs, english)
+    elif name in BLOCKS:
+        english = {key: en for key, (_, en) in load_tsv(name).items()}
+        english.update(good)
+        problems += block_fit(name, strs, english)
     return found, good, problems, warnings
 
 
@@ -567,6 +641,8 @@ HEADER_DOL = ("length of the Japanese, each {} included",
 
 
 def capacity(s, longest=0):
+    if s.get("block"):
+        return "%d movable" % (s["block"]["max"] * 2)
     if "fixed" not in s:
         return "|".join(str(c * 2) for c in line_caps(s)) + "?" * s["uncertain"]
     if s["fixed"]:
@@ -631,6 +707,9 @@ def cmd_merge():
             if errors:
                 sys.exit("%s %d:%d: %s" % (name, sec, off, "; ".join(errors)))
             entries.append({"file": name, "section": sec, "offset": off, "cells": s["cells"], "en": en})
+        problems = block_fit(name, found.values(), {key: en for key, (_, en) in load_tsv(name).items()})
+        if problems:
+            sys.exit("\n".join("%s %s" % (name, line) for line in problems))
     count = len(entries)
     if DOL in names or os.path.exists(DOL_ORIG) or os.path.exists(DOL_SOURCE):
         strs, rows = dol_strings(), load_tsv(DOL)
