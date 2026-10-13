@@ -21,7 +21,7 @@ A string is identified by file, section and section offset; translation/strings/
 holds section, offset, a hash of the original and the English, no Japanese. The Japanese lists stay
 in _work/ (git-ignored).
 
-What counts as a string: at least two kana or kanji, closed by 0xFFFF, outside the script region of
+What counts as a string: at least two kana or kanji (or listed in SHORT_TEXT), closed by 0xFFFF, outside the script region of
 the script modules. The search also finds tables of glyph numbers that are not text (the name-entry
 grids); those just stay untranslated (NOT_TEXT drops the ones of scs_data.rel and scs_item.rel, and
 START_TRIM cuts binary data off the front of two strings).
@@ -111,6 +111,9 @@ NOT_TEXT = {("scs_data.rel", 5, 1164), ("scs_data.rel", 5, 10002), ("scs_data.re
 # entries, "max" = cells one entry may take (the schedule column holds about 15 before the game icon)
 BLOCKS = {"scs_data.rel": [{"section": 5, "start": 22308, "end": 22752, "table": 22756, "count": 24, "max": 15}]}
 
+# strings of one character, which the search would not take for text: 月 and 週 of the schedule's date column
+SHORT_TEXT = {("scs_data.rel", 5, 13824), ("scs_data.rel", 5, 13828)}
+
 DOL = "main.dol"
 DOL_SHA1 = "cd096d3bbfb5418316dad6e3035cba34a028f718"
 DOL_SOURCE = os.path.join(HERE, "DATA", "sys", DOL)
@@ -158,7 +161,8 @@ def find(rel, region=None):
             if j < len(hw) and hw[j] == END:
                 units = hw[i:j]
                 text = "".join(glyph_to_char(u) or "?" for u in units).rstrip("　")
-                if sum(0x3040 <= ord(c) <= 0x30FF or 0x4E00 <= ord(c) <= 0x9FFF for c in text) >= 2:
+                if sum(0x3040 <= ord(c) <= 0x30FF or 0x4E00 <= ord(c) <= 0x9FFF for c in text) >= 2 \
+                        or (rel.name, sec["index"], i * 2) in SHORT_TEXT:
                     out.append({"section": sec["index"], "offset": i * 2, "cells": j - i,
                                 "units": list(units), "text": text})
             i = j + 1
