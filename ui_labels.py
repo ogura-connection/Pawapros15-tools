@@ -12,8 +12,11 @@ A spec is a JSON file:
    "project": "~/Projects/Pawapuro/MLB2008/DATA/files/project.bin",       (optional)
    "labels": [{"bank": "y5_smi_0", "page": 1, "palette": 28, "rect": [x0, y0, x1, y1],
                "pack": "ScsComMain", "tex": 0, "box": [l, t, r, b], "style": "comcmd",
-               "roles": {...}, "max_stretch": 1.6, "halo": [4, 5], "name": "Practice"}, ...]}
-`rect` is a sprite rectangle of the page (see ui_textures.py parts); it is cleared, and the label is
+               "roles": {...}, "max_stretch": 1.6, "halo": [4, 5], "lines": 2, "name": "Practice"}, ...]}
+"drop" lists roles that are left out of the label (the outer edge of a label already sits on a plate
+of that colour; leaving it out gives the letters the room), "halo" draws that colour back as a one-pixel
+edge afterwards, "lines": 2 stacks the two words of a label (cut at its widest gap) when it is too long
+for one line. `rect` is a sprite rectangle of the page (see ui_textures.py parts); it is cleared, and the label is
 centred in the part of it the Japanese label covered (its bounding box; "area": "rect" uses the whole
 rectangle), minus `margin` pixels. The source colours are sorted into roles (outer / ring / fill for the
 stat labels; edge_dark / edge_light / plate / letter for the command labels) and each role is given one
@@ -147,6 +150,8 @@ def source_classes(spec, project=None):
     idx = idx[t:b, l:r]
     cls = STYLES[spec["style"]](idx, pal)
     mask = drop_slivers(idx != 0)
+    for role in spec.get("drop", ()):           # roles the target draws with the plate colour anyway
+        mask &= cls != role
     ys, xs = np.nonzero(mask)
     sl = (slice(ys.min(), ys.max() + 1), slice(xs.min(), xs.max() + 1))
     return mask[sl], cls[sl]
@@ -177,17 +182,19 @@ def fit(mask, cls, roles, w, h, max_stretch=1.6, max_scale=1.0):
     return np.where(total >= 0.4, index, 0).astype(np.uint8)
 
 
-def place(page, rect, area, label, halo=()):
-    """Clear rect (x0, y0, x1, y1) of the index page and draw the label (an index array, 0 = clear)
-    centred in `area` (a box inside rect). `halo` = indices for successive one-pixel rings drawn
-    around the label (inside the rectangle)."""
+def draw(page, rect, area, label, halo=()):
+    """Draw the label (an index array, 0 = clear) centred in `area` (a box inside rect), then the `halo`
+    indices as successive one-pixel rings around everything in the rectangle."""
     x0, y0, x1, y1 = rect
-    page[y0:y1, x0:x1] = 0
     h, w = label.shape
     ax0, ay0, ax1, ay1 = area
     ox, oy = ax0 + (ax1 - ax0 - w) // 2, ay0 + (ay1 - ay0 - h) // 2
     ys, xs = np.nonzero(label)
     page[oy + ys, ox + xs] = label[ys, xs]
+
+
+def add_halo(page, rect, halo):
+    x0, y0, x1, y1 = rect
     region = page[y0:y1, x0:x1]
     for value in halo:
         g = region != 0
@@ -197,6 +204,33 @@ def place(page, rect, area, label, halo=()):
         ring[:, 1:] |= g[:, :-1]
         ring[:, :-1] |= g[:, 1:]
         region[ring & ~g] = value
+
+
+def split_words(mask, cls, parts=2, min_gap=2):
+    """Cut a label at its widest empty column gaps into `parts` words: [(mask, cls)] left to right,
+    each cropped to its pixels."""
+    cols = (mask & np.isin(cls, ("fill", "letter"))).any(0)      # gaps between the letters themselves
+    gaps = []
+    start = None
+    for x in range(1, len(cols) - 1):
+        if not cols[x]:
+            start = x if start is None else start
+        elif start is not None:
+            gaps.append((x - start, start, x))
+            start = None
+    gaps = sorted(sorted(gaps, reverse=True)[:parts - 1], key=lambda g: g[1])
+    cuts = [0] + [(g[1] + g[2]) // 2 for g in gaps] + [mask.shape[1]]
+    out = []
+    for l, r in zip(cuts, cuts[1:]):
+        m, c = mask[:, l:r].copy(), cls[:, l:r]
+        pad = np.pad(m, 1)
+        neighbours = sum(pad[1 + dy:1 + dy + m.shape[0], 1 + dx:1 + dx + m.shape[1]]
+                         for dy in (-1, 0, 1) for dx in (-1, 0, 1) if dy or dx)
+        m &= neighbours > 0                                   # isolated pixels are noise
+        ys, xs = np.nonzero(m)
+        sl = (slice(ys.min(), ys.max() + 1), slice(xs.min(), xs.max() + 1))
+        out.append((m[sl], c[sl]))
+    return out
 
 
 def render(spec, d, banks, project=None):
@@ -217,10 +251,20 @@ def render(spec, d, banks, project=None):
         ys, xs = np.nonzero(pages[key][y0:y1, x0:x1])
         area = (x0 + xs.min(), y0 + ys.min(), x0 + xs.max() + 1, y0 + ys.max() + 1) \
             if len(xs) and lab.get("area", "label") == "label" else lab["rect"]
+        pages[key][y0:y1, x0:x1] = 0
         m = lab.get("margin", 0)
-        label = fit(mask, cls, lab["roles"], area[2] - area[0] - 2 * m, area[3] - area[1] - 2 * m,
-                    lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))
-        place(pages[key], lab["rect"], area, label, halo=lab.get("halo", ()))
+        halo = lab.get("halo", ())
+        pad = len(halo)                              # room for the rings
+        ax0, ay0, ax1, ay1 = area[0] + m, area[1] + m, area[2] - m, area[3] - m
+        words = split_words(mask, cls, lab["lines"]) if lab.get("lines", 1) > 1 else [(mask, cls)]
+        rows = len(words)
+        band = (ay1 - ay0) // rows
+        for k, (wm, wc) in enumerate(words):
+            box = (ax0, ay0 + k * band, ax1, ay0 + (k + 1) * band)
+            label = fit(wm, wc, lab["roles"], box[2] - box[0] - 2 * pad, box[3] - box[1] - 2 * pad,
+                        lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))
+            draw(pages[key], lab["rect"], box, label)
+        add_halo(pages[key], lab["rect"], halo)
     return pages
 
 

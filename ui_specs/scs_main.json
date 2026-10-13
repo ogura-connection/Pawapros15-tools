@@ -23,11 +23,16 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 1,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ]
   },
   {
    "name": "CTRL",
@@ -51,11 +56,16 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 1,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ]
   },
   {
    "name": "(blank)",
@@ -91,11 +101,16 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 1,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ]
   },
   {
    "name": "E RES",
@@ -119,11 +134,16 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 1,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ]
   },
   {
    "name": "CON",
@@ -147,11 +167,16 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 1,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ]
   },
   {
    "name": "RUN SPD",
@@ -175,11 +200,18 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 0,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ],
+   "lines": 2,
+   "max_stretch": 1.0
   },
   {
    "name": "ARM STR",
@@ -203,11 +235,18 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 0,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ],
+   "lines": 2,
+   "max_stretch": 1.0
   },
   {
    "name": "PWR",
@@ -231,11 +270,16 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 1,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ]
   },
   {
    "name": "TOP SPD",
@@ -259,11 +303,18 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 0,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ],
+   "lines": 2,
+   "max_stretch": 1.0
   },
   {
    "name": "TRJ",
@@ -287,11 +338,16 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 1,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ]
   },
   {
    "name": "FLD",
@@ -315,11 +371,16 @@
    "style": "param",
    "roles": {
     "fill": 15,
-    "ring": 2,
-    "outer": 2
+    "ring": 2
    },
    "area": "rect",
-   "margin": 2
+   "margin": 1,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    3
+   ]
   },
   {
    "name": "Motivation",
@@ -343,10 +404,16 @@
    "style": "param",
    "roles": {
     "fill": 1,
-    "ring": 15,
-    "outer": 15
+    "ring": 15
    },
-   "max_stretch": 2.0
+   "max_stretch": 2.0,
+   "drop": [
+    "outer"
+   ],
+   "halo": [
+    15
+   ],
+   "margin": 1
   },
   {
    "name": "Practice",
