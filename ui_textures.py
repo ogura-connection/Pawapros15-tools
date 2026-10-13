@@ -27,6 +27,7 @@ The sheets are game data: they go to _work/ (git-ignored).
 """
 import collections
 import glob
+import heapq
 import os
 import re
 import shutil
@@ -169,54 +170,83 @@ def _varlen(bits, v):
     bits += [v >> 1, v & 1] if v <= 3 else [0, 0] + [(v - 4) >> k & 1 for k in (3, 2, 1, 0)]
 
 
-def compress_page(raw, width):
-    """Raw page bytes (128 rows of `width`) -> compressed page, not padded."""
-    assert len(raw) == width * PAGE and width in (64, 128)
-    g = np.frombuffer(raw, dtype=np.uint8).reshape(PAGE, width)
-    # run[y, x] = how many cells from (y, x) to the right hold the same value (capped at 19)
-    run = np.ones((PAGE, width), np.int32)
+def _rectangles(g, width, tall, by_column):
+    """Cover the page with one-colour rectangles of up to 19x19, largest area first (what the game's
+    own packer does, to judge by its output). Returns {(y, x): (w, rows)} for rectangles of 2+ cells."""
+    run = np.ones((PAGE, width), np.int32)                  # equal cells to the right, capped at 19
     for x in range(width - 2, -1, -1):
         run[:, x] = np.where(g[:, x] == g[:, x + 1], np.minimum(run[:, x + 1] + 1, 19), 1)
-    g, run = g.tolist(), run.tolist()
-    bits, lits, left = [], bytearray(), [0] * width
-    for y in range(PAGE):
-        row, x = g[y], 0
-        while x < width:
-            if left[x]:
-                left[x] -= 1
-                x += 1
-                continue
-            v = row[x]
-            width_here = 1
-            while width_here < run[y][x] and not left[x + width_here]:
-                width_here += 1
-            best_w, best_rows, w_ok = 1, 1, width_here
-            rows = 1
-            while w_ok and rows <= 19:              # widest rectangle for each height, largest area wins
-                if rows * w_ok > best_w * best_rows:
-                    best_w, best_rows = w_ok, rows
-                if y + rows >= PAGE or rows == 19:
-                    break
-                nxt = g[y + rows]
-                if nxt[x] != v:
-                    break
-                w_ok = min(w_ok, run[y + rows][x])
-                rows += 1
-            if best_w * best_rows >= 2:
-                bits.append(1)
-                _varlen(bits, best_w)
-                _varlen(bits, best_rows)
-                for k in range(x, x + best_w):
-                    left[k] = best_rows
-                left[x] -= 1
-            else:
-                bits.append(0)
-            lits.append(v)
-            x += 1
-    bits += [0] * (-len(bits) % 8)
-    flags = bytes(sum(b << (7 - k) for k, b in enumerate(bits[i:i + 8])) for i in range(0, len(bits), 8))
-    assert len(flags) < 0x2000
-    return bytes([len(flags) & 255, len(flags) >> 8 | (0x60 if width == 64 else 0x20)]) + flags + bytes(lits)
+    best, minrun, alive = run.copy(), run.copy(), np.ones((PAGE, width), bool)
+    for r in range(2, 20):                                  # best area anchored at every cell
+        below, same = np.zeros_like(run), np.zeros((PAGE, width), bool)
+        below[:PAGE - r + 1] = run[r - 1:]
+        same[:PAGE - r + 1] = g[r - 1:] == g[:PAGE - r + 1]
+        alive &= same
+        minrun = np.where(alive, np.minimum(minrun, below), 0)
+        best = np.maximum(best, minrun * r)
+    gl, runl = g.tolist(), run.tolist()
+    free = [[True] * width for _ in range(PAGE)]
+    key = (lambda y, x: (x, y)) if by_column else (lambda y, x: (y, x))
+    heap = [(-int(best[y, x]), key(y, x), y, x) for y in range(PAGE) for x in range(width) if best[y, x] >= 2]
+    heapq.heapify(heap)
+    rects = {}
+    while heap:
+        area, _, y, x = heapq.heappop(heap)
+        if not free[y][x]:
+            continue
+        v, w_ok, now = gl[y][x], 19, (1, 1, 1)              # the best rectangle still free at this cell
+        for r in range(1, 20):
+            yy = y + r - 1
+            if yy >= PAGE or gl[yy][x] != v or not free[yy][x]:
+                break
+            row, w, limit = free[yy], 1, min(w_ok, runl[yy][x])
+            while w < limit and row[x + w]:
+                w += 1
+            w_ok = w
+            if w * r > now[0] or (tall and w * r == now[0]):
+                now = (w * r, w, r)
+        if now[0] != -area:
+            if now[0] >= 2:
+                heapq.heappush(heap, (-now[0], key(y, x), y, x))
+            continue
+        rects[(y, x)] = now[1:]
+        for yy in range(y, y + now[2]):
+            free[yy][x:x + now[1]] = [False] * now[1]
+    return rects
+
+
+def compress_page(raw, width):
+    """Raw page bytes (128 rows of `width`) -> compressed page, not padded. Tries four tie-break
+    rules and returns the smallest result; that comes out within 0.1% of the original pages' size."""
+    assert len(raw) == width * PAGE and width in (64, 128)
+    g = np.frombuffer(raw, dtype=np.uint8).reshape(PAGE, width)
+    out = None
+    for tall in (True, False):
+        for by_column in (True, False):
+            rects = _rectangles(g, width, tall, by_column)
+            bits, lits, left = [], bytearray(), [0] * width
+            for y in range(PAGE):
+                for x in range(width):
+                    if left[x]:
+                        left[x] -= 1
+                        continue
+                    if (y, x) in rects:
+                        w, rows = rects[(y, x)]
+                        bits.append(1)
+                        _varlen(bits, w)
+                        _varlen(bits, rows)
+                        left[x:x + w] = [rows] * w
+                        left[x] -= 1
+                    else:
+                        bits.append(0)
+                    lits.append(raw[y * width + x])
+            bits += [0] * (-len(bits) % 8)
+            flags = bytes(sum(v << (7 - k) for k, v in enumerate(bits[i:i + 8])) for i in range(0, len(bits), 8))
+            assert len(flags) < 0x2000
+            packed = bytes([len(flags) & 255, len(flags) >> 8 | (0x60 if width == 64 else 0x20)]) + flags + bytes(lits)
+            if out is None or len(packed) < len(out):
+                out = packed
+    return out
 
 
 def page_bits(d, off, size):
@@ -224,6 +254,11 @@ def page_bits(d, off, size):
     if is_compressed(size):
         return 4 if d[off + 1] & 0x40 else 8
     return 4 if size == 8192 else 8
+
+
+def raw_size(d, off, size):
+    """Size of the page once unpacked: 8192 (4 bits per pixel) or 16384."""
+    return 8192 if page_bits(d, off, size) == 4 else 16384
 
 
 def decode_indices(d, off, size):
@@ -239,9 +274,17 @@ def decode_indices(d, off, size):
     return G._blocks(raw, PAGE, PAGE, 4, 8)
 
 
-def encode_indices(idx, size):
-    """Inverse of decode_indices: the page bytes for a 128x128 index array."""
+def encode_indices(idx, size, bits=None):
+    """Inverse of decode_indices: the page bytes for a 128x128 index array. A compressed page
+    (bits = 4 or 8) is packed again and padded to `size`; ValueError if it no longer fits."""
     idx = np.ascontiguousarray(idx, dtype=np.uint8)
+    if is_compressed(size):
+        flat = idx.reshape(-1)
+        raw = ((flat[0::2] << 4) | flat[1::2]).astype(np.uint8).tobytes() if bits == 4 else flat.tobytes()
+        packed = compress_page(raw, 64 if bits == 4 else 128)
+        if len(packed) > size:
+            raise ValueError("compressed page needs %d bytes, its slot has %d" % (len(packed), size))
+        return packed + bytes(size - len(packed))
     if size == 8192:
         t = idx.reshape(PAGE // 8, 8, PAGE // 8, 8).swapaxes(1, 2).reshape(-1)
         return ((t[0::2] << 4) | t[1::2]).astype(np.uint8).tobytes()
@@ -249,7 +292,8 @@ def encode_indices(idx, size):
 
 
 def page_colours(pal, index, size, n_used=0):
-    """The colours a page is drawn with: 16 entries of palette number `index` (C4) or all 256 (C8)."""
+    """The colours a page is drawn with: 16 entries of palette number `index` (4-bit pages) or all 256.
+    `size` is the unpacked size (raw_size): 8192 for any 4-bit page."""
     if size == 8192:
         colours = pal[index * 16:index * 16 + 16]
         return colours if len(colours) == 16 else pal[:16]
@@ -258,7 +302,7 @@ def page_colours(pal, index, size, n_used=0):
 
 def page_image(d, off, size, pal, index):
     idx = decode_indices(d, off, size)
-    colours = page_colours(pal, index, size)
+    colours = page_colours(pal, index, raw_size(d, off, size))
     if len(colours) <= int(idx.max()):
         grey = (np.arange(256) * (255 // max(1, int(idx.max())))).clip(0, 255).astype(np.uint8)
         colours = np.stack([grey, grey, grey, np.full(256, 255, np.uint8)], -1)
@@ -299,7 +343,7 @@ def import_page(d, off, size, image, colours):
         raise ValueError("page images are %dx%d, got %dx%d" % ((PAGE, PAGE) + image.size))
     old = decode_indices(d, off, size)
     new = quantise(image, colours, (colours[old.clip(max=len(colours) - 1)], old))
-    return d[:off] + encode_indices(new, size) + d[off + size:]
+    return d[:off] + encode_indices(new, size, page_bits(d, off, size)) + d[off + size:]
 
 
 def cmd_export(out_dir):
@@ -313,11 +357,13 @@ def cmd_export(out_dir):
             pal = palette_colours(d, b["pal"])
             use = page_palette_use(b)
             for n, (off, size) in enumerate(b["pages"]):
-                if size not in (8192, 16384):
-                    continue
                 index = use[n].most_common(1)[0][0] if use[n] else 0
-                images.append(page_image(d, off, size, pal, index))
-                rows.append((os.path.basename(path), b["name"], n, size, index, sum(use[n].values())))
+                try:
+                    images.append(page_image(d, off, size, pal, index))
+                except ValueError:                  # a few 16,400-byte pages are in another format
+                    continue
+                rows.append((os.path.basename(path), b["name"], n, size, index, sum(use[n].values()),
+                             len(images) - 1))
         if images:
             cols = 8
             sheet = Image.new("RGBA", (PAGE * cols, PAGE * ((len(images) + cols - 1) // cols)), (70, 70, 70, 255))
@@ -325,9 +371,9 @@ def cmd_export(out_dir):
                 sheet.alpha_composite(im, ((k % cols) * PAGE, (k // cols) * PAGE))
             sheet.convert("RGB").save(os.path.join(out_dir, os.path.basename(path)[:-4] + ".png"))
     with open(os.path.join(out_dir, "pages.tsv"), "w") as f:
-        f.write("arc\tbank\tpage\tbytes\tpalette\tsprite parts\n")
+        f.write("arc\tbank\tpage\tbytes\tpalette\tsprite parts\tposition on the sheet\n")
         for r in rows:
-            f.write("%s\t%s\t%d\t%d\t%d\t%d\n" % r)
+            f.write("%s\t%s\t%d\t%d\t%d\t%d\t%d\n" % r)
     print("%d pages from %d files -> %s" % (len(rows), len({r[0] for r in rows}), out_dir))
 
 
@@ -370,12 +416,15 @@ def cmd_page(args):
 
 def cmd_import(args):
     d, path, b, (off, size) = find_page(args[0], args[1], int(args[2]))
-    if size != 8192:
-        sys.exit("only 4-bit (8,192 byte) pages can be imported")
+    if page_bits(d, off, size) != 4:
+        sys.exit("only 4-bit pages can be imported")
     use = page_palette_use(b)[int(args[2])]
     index = int(args[4]) if len(args) > 4 else (use.most_common(1)[0][0] if use else 0)
-    colours = page_colours(palette_colours(d, b["pal"]), index, size)
-    new = import_page(d, off, size, Image.open(args[3]), colours)
+    colours = page_colours(palette_colours(d, b["pal"]), index, 8192)
+    try:
+        new = import_page(d, off, size, Image.open(args[3]), colours)
+    except ValueError as e:
+        sys.exit(str(e))
     backup_orig(path)
     with open(path, "wb") as f:
         f.write(new)

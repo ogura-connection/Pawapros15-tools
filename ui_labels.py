@@ -471,7 +471,7 @@ def cmd_apply(spec_path):
     for (bank, page), idx in pages.items():
         b = next(x for x in banks if x["name"] == bank)
         off, size = b["pages"][page]
-        out[off:off + size] = U.encode_indices(idx, size)
+        out[off:off + size] = U.encode_indices(idx, size, U.page_bits(d, off, size))
     for off, data in render.patches:
         out[off:off + len(data)] = data
     assert len(out) == len(d)
