@@ -709,7 +709,7 @@ def plated(ramp, shadow, size):
         h, w = ink.shape
         bw, bh = max(size[0], w + 2), max(size[1], h + 2)
         big = np.zeros((bh, bw), int)
-        x, y = (bw - w) // 2, (bh - h) // 2
+        x, y = (bw - w) // 2, max((bh - base) // 2, 0)           # capitals in the middle, whatever hangs below
         big[y:y + h, x:x + w] = ink
         out = np.full(big.shape, ramp[0], np.uint8)
         out[shift(big > 2, 1, 1)] = shadow
@@ -802,8 +802,8 @@ RENDER = {
     "equipstat": banded([4, 6, 8, 10, 12, 14, 15], [4, 3]),
     "equipbefore": logo([15, 15, 14, 14, 13, 13, 12, 12, 11], [9, 10], 8, 1, 2, [4, 5]),
     # league plates of the standings (scs_data.arc z4_dtj_0, palettes 90-92): white on the plate colour
-    "league44": plated([8, 9, 10, 11, 12, 13, 15], 6, (44, 20)),
-    "league36": plated([8, 9, 10, 11, 12, 13, 15], 6, (36, 20)),
+    "league44": plated([8, 8, 10, 10, 13, 15, 15], 6, (44, 20)),
+    "league36": plated([8, 8, 10, 10, 13, 15, 15], 6, (36, 20)),
     # team names of the standings (palette 87, black on the board): two grey levels only, as the Japanese has,
     # so that the compressed pages stay inside their slots
     "team": outlined([0, 0, 4, 7, 15, 15, 15], 0, 0),
