@@ -6,7 +6,10 @@
   ui_labels.py apply SPEC.json                    write the labels into DATA/files/<arc> (original kept first)
   ui_labels.py restore ARC                        put the saved original .arc back
 
-A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
+"repack" groups set whole words with ui_type.py and lay a page out again (see that file):
+  "repack": [{"bank": "y5_smi_0", "palette": 28, "style": "command", "areas": [[page, x0, y0, x1, y1], ...],
+              "labels": [{"from": [page, x0, y0, x1, y1], "text": "Practice"}, {"from": [...]}]}]
+A label of a group without "text" keeps its Japanese art. A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
 A spec is a JSON file:
   {"arc": "scs_main.arc",
    "project": "~/Projects/Pawapuro/MLB2008/DATA/files/project.bin",       (optional)
@@ -344,10 +347,20 @@ def split_words(mask, cls, parts=2, min_gap=2):
 
 
 def render(spec, d, banks, project=None):
-    """The index page with every label of the spec drawn, per (bank, page): {(bank, page): array}."""
+    """The index page with every label of the spec drawn, per (bank, page): {(bank, page): array}.
+    render.patches = [(file offset, bytes)] for the sprite parts moved by "repack" groups."""
     pages = {}
     lab_used, scales = [], []
-    for lab in spec["labels"]:
+    render.patches, render.repacked = [], []
+    for group in spec.get("repack", ()):
+        import ui_type
+        b = next(x for x in banks if x["name"] == group["bank"])
+        local = {p: a for (name, p), a in pages.items() if name == group["bank"]}
+        rows = ui_type.repack(group, d, b, local, render.patches, project)
+        for p, a in local.items():
+            pages[(group["bank"], p)] = a
+        render.repacked += [(group["bank"],) + r for r in rows]
+    for lab in spec.get("labels", ()):
         b = next(x for x in banks if x["name"] == lab["bank"])
         key = (lab["bank"], lab["page"])
         if key not in pages:
@@ -413,7 +426,8 @@ def cmd_preview(spec_path, out):
     for (bank, page), new in pages.items():
         b = next(x for x in banks if x["name"] == bank)
         pal = U.palette_colours(d, b["pal"])
-        lab = next(x for x in spec["labels"] if x["bank"] == bank and x["page"] == page)
+        lab = next((x for x in spec.get("labels", ()) if x["bank"] == bank and x["page"] == page), None) \
+            or next(x for x in spec["repack"] if x["bank"] == bank)
         col = U.page_colours(pal, lab["palette"], 8192)
         off, size = b["pages"][page]
         old = U.decode_indices(d, off, size)
@@ -425,7 +439,7 @@ def cmd_preview(spec_path, out):
     for k, im in enumerate(ims):
         sheet.paste(im.convert("RGB"), ((k % 2) * (U.PAGE * 3 + 8), (k // 2) * U.PAGE * 3))
     sheet.save(out)
-    print("%d labels on %d pages -> %s" % (len(spec["labels"]), len(pages), out))
+    print("%d labels on %d pages -> %s" % (len(spec.get("labels", ())) + len(render.repacked), len(pages), out))
 
 
 def cmd_apply(spec_path):
@@ -441,12 +455,17 @@ def cmd_apply(spec_path):
         b = next(x for x in banks if x["name"] == bank)
         off, size = b["pages"][page]
         out[off:off + size] = U.encode_indices(idx, size)
+    for off, data in render.patches:
+        out[off:off + len(data)] = data
     assert len(out) == len(d)
     with open(spec["arc"], "wb") as f:
         f.write(out)
-    print("%s: %d labels written to %d pages (%d bytes changed)" % (
-        os.path.basename(spec["arc"]), len(spec["labels"]), len(pages),
-        sum(a != b for a, b in zip(d, out))))
+    for row in render.repacked:
+        print("  %-12s %-10s was %-6s now %-6s %s, %d sprite part(s)" % row)
+    print("%s: %d labels and %d repacked labels written to %d pages, %d sprite parts moved "
+          "(%d bytes changed)" % (os.path.basename(spec["arc"]), len(spec.get("labels", ())),
+                                  len(render.repacked), len(pages), len(render.patches),
+                                  sum(a != b for a, b in zip(d, out))))
 
 
 def cmd_restore(arc):

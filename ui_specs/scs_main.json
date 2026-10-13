@@ -456,161 +456,195 @@
    "halo": [],
    "margin": 0,
    "area": "rect"
-  },
+  }
+ ],
+ "repack": [
   {
-   "name": "Shop",
    "bank": "y5_smi_0",
-   "page": 1,
    "palette": 28,
-   "rect": [
-    40,
-    64,
-    80,
-    96
+   "style": "command",
+   "font": "command",
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     1,
+     0,
+     96,
+     64,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     2,
+     0,
+     64,
+     64,
+     96
+    ]
    ],
-   "pack": "ScsComMain",
-   "tex": 0,
-   "box": [
-    457,
-    29,
-    507,
-    58
-   ],
-   "style": "comcmd",
-   "roles": {
-    "letter": 13,
-    "plate": 8
-   },
-   "halo": [
-    4,
-    5
-   ],
-   "max_stretch": 2.0,
-   "margin": 0,
-   "drop": [
-    "edge_dark",
-    "edge_light"
-   ],
-   "band": [
-    "letter",
-    "plate"
-   ]
-  },
-  {
-   "name": "Data",
-   "bank": "y5_smi_0",
-   "page": 1,
-   "palette": 28,
-   "rect": [
-    80,
-    64,
-    128,
-    96
-   ],
-   "pack": "ScsComMain",
-   "tex": 0,
-   "box": [
-    392,
-    0,
-    440,
-    29
-   ],
-   "style": "comcmd",
-   "roles": {
-    "letter": 13,
-    "plate": 8
-   },
-   "halo": [
-    4,
-    5
-   ],
-   "max_stretch": 2.0,
-   "margin": 0,
-   "drop": [
-    "edge_dark",
-    "edge_light"
-   ],
-   "band": [
-    "letter",
-    "plate"
-   ]
-  },
-  {
-   "name": "System",
-   "bank": "y5_smi_0",
-   "page": 2,
-   "palette": 28,
-   "rect": [
-    0,
-    0,
-    56,
-    32
-   ],
-   "pack": "ScsComMain",
-   "tex": 0,
-   "box": [
-    449,
-    0,
-    512,
-    29
-   ],
-   "style": "comcmd",
-   "roles": {
-    "letter": 13,
-    "plate": 8
-   },
-   "halo": [
-    4,
-    5
-   ],
-   "max_stretch": 2.0,
-   "margin": 0,
-   "drop": [
-    "edge_dark",
-    "edge_light"
-   ],
-   "band": [
-    "letter",
-    "plate"
-   ]
-  },
-  {
-   "name": "Boost",
-   "bank": "y5_smi_0",
-   "page": 2,
-   "palette": 28,
-   "rect": [
-    64,
-    0,
-    128,
-    32
-   ],
-   "pack": "ScsComMain",
-   "tex": 0,
-   "box": [
-    196,
-    0,
-    252,
-    29
-   ],
-   "style": "comcmd",
-   "roles": {
-    "letter": 13,
-    "plate": 8
-   },
-   "halo": [
-    4,
-    5
-   ],
-   "max_stretch": 2.0,
-   "margin": 0,
-   "drop": [
-    "edge_dark",
-    "edge_light"
-   ],
-   "band": [
-    "letter",
-    "plate"
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      40,
+      32
+     ],
+     "text": "Practice"
+    },
+    {
+     "from": [
+      1,
+      40,
+      0,
+      80,
+      32
+     ],
+     "text": "Hospital"
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      32
+     ],
+     "text": "Date"
+    },
+    {
+     "from": [
+      1,
+      0,
+      32,
+      40,
+      64
+     ],
+     "text": "Game"
+    },
+    {
+     "from": [
+      1,
+      40,
+      32,
+      80,
+      64
+     ],
+     "text": "Work"
+    },
+    {
+     "from": [
+      1,
+      80,
+      32,
+      128,
+      64
+     ],
+     "text": "List"
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      40,
+      96
+     ],
+     "text": "Rest"
+    },
+    {
+     "from": [
+      1,
+      40,
+      64,
+      80,
+      96
+     ],
+     "text": "Shop"
+    },
+    {
+     "from": [
+      1,
+      80,
+      64,
+      128,
+      96
+     ],
+     "text": "Data"
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      40,
+      128
+     ],
+     "text": "Treat"
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      32
+     ],
+     "text": "System"
+    },
+    {
+     "from": [
+      2,
+      64,
+      0,
+      128,
+      32
+     ],
+     "text": "Boost"
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      56,
+      64
+     ],
+     "text": "Free Time"
+    },
+    {
+     "from": [
+      2,
+      64,
+      32,
+      128,
+      64
+     ],
+     "text": "Play"
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      56,
+      96
+     ],
+     "text": "Items"
+    }
    ]
   }
  ]

@@ -126,7 +126,7 @@ def segment(ink, n, minw=2, maxw=12):
 
 
 def clean(ink):
-    """Drop stray pixels: pieces (8-way) of at most 3 pixels that never reach ink level 5."""
+    """Drop stray pixels: pieces (8-way) of 1 or 2 pixels, and of 3 that never reach ink level 5."""
     solid = ink > 0
     seen = np.zeros_like(solid)
     out = ink.copy()
@@ -144,7 +144,7 @@ def clean(ink):
                     if solid[yy, xx] and not seen[yy, xx]:
                         seen[yy, xx] = True
                         stack.append((yy, xx))
-        if len(pts) <= 3 and max(ink[p] for p in pts) < 5:
+        if len(pts) <= 2 or (len(pts) == 3 and max(ink[p] for p in pts) < 5):
             for p in pts:
                 out[p] = 0
     return out
