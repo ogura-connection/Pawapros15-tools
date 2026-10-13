@@ -110,9 +110,11 @@ def text_segments(text):
 
 def other_text_usage(mods, skip):
     """How often each glyph appears in text outside the Success scripts (heuristic scan of all
-    modules for 16-bit glyph strings and 12-bit packed text). Cached in _work/glyph_usage.json."""
+    modules for 16-bit glyph strings and 12-bit packed text). Cached in _work/glyph_usage2.json.
+    A 16-bit string counts when it has kana in it, or when it is kanji only and ends with 0xFFFF
+    (the short labels of the string tables: positions, school names, record titles)."""
     import scan_story as S
-    path = os.path.join(S.WORK_DIR, "glyph_usage.json")
+    path = os.path.join(S.WORK_DIR, "glyph_usage2.json")
     if os.path.exists(path):
         with open(path) as f:
             return collections.Counter({int(k): v for k, v in json.load(f).items()})
@@ -134,20 +136,84 @@ def other_text_usage(mods, skip):
                     continue
                 if len(run) >= 3 and sum(282 <= u <= 450 for u in run) >= 2:
                     use.update(run)
+                elif v == 0xFFFF and len(run) >= 2 and all(u >= 282 for u in run) and any(u >= 706 for u in run):
+                    use.update(run)
                 run = []
     with open(path, "w") as f:
         json.dump(use, f)
     return use
 
 
-def allocate(pairs, usage):
-    """Give every letter pair a kanji slot, least used kanji first. Returns ({pair: glyph}, number
-    of slots taken from kanji that remaining text still uses)."""
-    free = sorted(KANJI_SLOTS, key=lambda g: (usage.get(g, 0), -g))
+def _name_cells(rec):
+    """Six cells of a player name: 0 = no name, 1 = a name, 2 = a name with kanji. A name is text
+    glyphs with at most one blank cell inside (two kanji are spread out: 'te, blank, zuka') and
+    blank cells behind."""
+    n = len(rec)
+    while n and rec[n - 1] == 0:
+        n -= 1
+    body = rec[:n]
+    if not n or body.count(0) > 1 or any(v and v != 24 and not 282 <= v <= KANJI_SLOTS[-1] for v in body):
+        return 0
+    kanji = any(v >= KANJI_SLOTS[0] for v in body)
+    return 2 if kanji and n - body.count(0) >= 2 and len(rec) - n >= 2 else 1
+
+
+def name_usage(mods, skip):
+    """The kanji of the name tables, which other_text_usage cannot see (no kana, and a blank cell in
+    the middle of a two-kanji name). Cached in _work/name_kanji.json. Two layouts:
+      - the surname list of main_prg.rel and scc_main.rel (1,856 names: team-mates, name entry):
+        records of five 16-bit values, 0x1FFF, the announcer's call, three cells
+      - player names in six cells, back to back or behind three other values (real players)"""
+    import scan_story as S
+    path = os.path.join(S.WORK_DIR, "name_kanji.json")
+    if os.path.exists(path):
+        with open(path) as f:
+            return collections.Counter({int(k): v for k, v in json.load(f).items()})
+    use = collections.Counter()
+    for m in mods.values():
+        if m.name in skip:
+            continue
+        for sec in m.sections:
+            d = m.sec_data(sec["index"])
+            if sec["exec"] or len(d) < 64:
+                continue
+            u = struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2])
+            i = 0
+            while i + 5 <= len(u):
+                j = i
+                while j + 5 <= len(u) and u[j] == 0x1FFF and max(u[j + 2:j + 5]) <= KANJI_SLOTS[-1]:
+                    j += 5
+                if j - i >= 40:
+                    for k in range(i, j, 5):
+                        use.update(v for v in u[k + 2:k + 5] if v >= KANJI_SLOTS[0])
+                i = max(j, i + 1)
+            for stride, at in ((6, 0), (9, 3)):
+                for phase in range(stride):
+                    i = phase
+                    while i + stride <= len(u):
+                        j, good = i, 0
+                        while j + stride <= len(u) and _name_cells(u[j + at:j + at + 6]):
+                            good += _name_cells(u[j + at:j + at + 6]) == 2
+                            j += stride
+                        if j - i >= 6 * stride and good * 2 * stride >= j - i:
+                            for k in range(i, j, stride):
+                                use.update(v for v in u[k + at:k + at + 6] if v >= KANJI_SLOTS[0])
+                        i = max(j, i + stride)
+    with open(path, "w") as f:
+        json.dump(use, f)
+    return use
+
+
+def allocate(pairs, usage, keep=()):
+    """Give every letter pair a kanji slot: kanji no text uses first, then the least used, and the
+    kanji in `keep` (the name tables) only when nothing else is left. Returns ({pair: glyph},
+    number of slots taken from kanji that remaining text still uses, number taken from `keep`)."""
+    free = sorted(KANJI_SLOTS, key=lambda g: (g in keep, usage.get(g, 0), -g))
     if len(pairs) > len(free):
         raise ValueError("%d different letter pairs, only %d glyph slots" % (len(pairs), len(free)))
     slots = dict(zip(sorted(pairs), free))
-    return slots, sum(1 for g in slots.values() if usage.get(g, 0))
+    return (slots, sum(1 for g in slots.values() if usage.get(g, 0) or g in keep),
+            sum(1 for g in slots.values() if g in keep))
 
 
 # ── Glyph compression ─────────────────────────────────────────────────────
