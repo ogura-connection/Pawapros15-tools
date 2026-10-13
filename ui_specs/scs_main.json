@@ -1040,6 +1040,7 @@
    ]
   },
   {
+   "name": "captions",
    "bank": "r3_ai",
    "palette": 160,
    "style": "caption",
@@ -1089,7 +1090,7 @@
        "palette": 160
       }
      ],
-     "join": 2
+     "join": 4
     },
     {
      "sprite": "2a",
@@ -1103,7 +1104,7 @@
        "palette": 160
       }
      ],
-     "join": 2
+     "join": 4
     },
     {
      "sprite": "2b",
@@ -1117,7 +1118,124 @@
        "palette": 160
       }
      ],
-     "join": 2
+     "join": 4
+    }
+   ]
+  },
+  {
+   "name": "positions",
+   "bank": "y5_np_0",
+   "palette": 34,
+   "style": "position",
+   "font": "ttf:rounded:12:0:0.85:0.3",
+   "baseline": 7,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "1a",
+     "text": "Pitcher"
+    },
+    {
+     "sprite": "1b",
+     "text": "Catcher"
+    },
+    {
+     "sprite": "1c",
+     "text": "1st Base"
+    },
+    {
+     "sprite": "1d",
+     "text": "2nd Base"
+    },
+    {
+     "sprite": "1e",
+     "text": "3rd Base"
+    },
+    {
+     "sprite": "1f",
+     "text": "Shortstop"
+    },
+    {
+     "sprite": "20",
+     "text": "Outfield"
+    },
+    {
+     "sprite": "21",
+     "text": "P"
+    },
+    {
+     "sprite": "22",
+     "text": "C"
+    },
+    {
+     "sprite": "23",
+     "text": "1B"
+    },
+    {
+     "sprite": "24",
+     "text": "2B"
+    },
+    {
+     "sprite": "25",
+     "text": "3B"
+    },
+    {
+     "sprite": "26",
+     "text": "SS"
+    },
+    {
+     "sprite": "27",
+     "text": "OF"
+    },
+    {
+     "sprite": "28",
+     "text": "P",
+     "font": "ttf:rounded:10:0:0.85:0.3"
+    },
+    {
+     "sprite": "29",
+     "text": "C",
+     "font": "ttf:rounded:10:0:0.85:0.3"
+    },
+    {
+     "sprite": "2a",
+     "text": "1B",
+     "font": "ttf:rounded:10:0:0.85:0.3"
+    },
+    {
+     "sprite": "2b",
+     "text": "2B",
+     "font": "ttf:rounded:10:0:0.85:0.3"
+    },
+    {
+     "sprite": "2c",
+     "text": "3B",
+     "font": "ttf:rounded:10:0:0.85:0.3"
+    },
+    {
+     "sprite": "2d",
+     "text": "SS",
+     "font": "ttf:rounded:10:0:0.85:0.3"
+    },
+    {
+     "sprite": "2e",
+     "text": "OF",
+     "font": "ttf:rounded:10:0:0.85:0.3"
     }
    ]
   }

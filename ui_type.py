@@ -777,6 +777,8 @@ RENDER = {
                       fill=[1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6, 7, 8], light=15),
     # scene captions of scs_main.arc (r3_ai, palette 160): white letters, navy outline and cast shadow
     "caption": captioned([15, 15, 14, 12, 11, 10, 8], 15, 13),
+    # position words of the main screen (y5_np_0 pages 3 and 7, palettes 32-35): white in a double ring
+    "position": banded([3, 5, 7, 9, 11, 13, 15], [3, 3], 2),
     "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),
