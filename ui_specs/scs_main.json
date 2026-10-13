@@ -1093,7 +1093,17 @@
     },
     {
      "sprite": "2a",
-     "text": "Tournament Day"
+     "pieces": [
+      {
+       "text": "Tournament",
+       "palette": 160
+      },
+      {
+       "text": "Day",
+       "palette": 160
+      }
+     ],
+     "join": 2
     },
     {
      "sprite": "2b",
