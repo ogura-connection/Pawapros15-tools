@@ -622,6 +622,8 @@ def badged(fill, soft, outline, white, glow):
 
 RENDER = {
     "command": style_command,
+    # the ability plates (palette 8 of g3_tn00 in are_abi.arc): white letters, dark blue outline, a paler ring
+    "plate": banded([0, 9, 10, 11, 13, 14, 15], [7, 3]),
     # the names on the ratings page (palettes 147-150 of y5_mh): Kantoku, Scout, Teammates, Bucho
     "rater147": badged([8, 9, 10], [2, 3, 5, 6, 7], 1, 11, [12, 14, 13]),
     "rater148": badged([12, 13, 14, 15], [2, 3, 4, 5], 1, 11, [8, 7, 6]),
