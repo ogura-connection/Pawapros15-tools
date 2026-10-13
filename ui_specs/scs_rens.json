@@ -1,0 +1,103 @@
+{
+ "arc": "scs_rens.arc",
+ "repack": [
+  {
+   "bank": "z3_smr_0",
+   "palette": 32,
+   "style": "motivation",
+   "font": "tag",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "08",
+     "text": "Weights"
+    },
+    {
+     "sprite": "09",
+     "text": "Batting"
+    },
+    {
+     "sprite": "0a",
+     "text": "Running"
+    },
+    {
+     "sprite": "0b",
+     "text": "Fielding"
+    },
+    {
+     "sprite": "0c",
+     "text": "Mental"
+    },
+    {
+     "sprite": "0d",
+     "text": "Stamina"
+    },
+    {
+     "sprite": "0e",
+     "text": "Velocity"
+    },
+    {
+     "sprite": "0f",
+     "text": "Breaking"
+    },
+    {
+     "sprite": "10",
+     "text": "Roadwork"
+    },
+    {
+     "sprite": "11",
+     "text": "Control"
+    },
+    {
+     "sprite": "12",
+     "text": "Pitching"
+    },
+    {
+     "sprite": "13",
+     "text": "Catching"
+    },
+    {
+     "sprite": "14",
+     "text": "Pepper"
+    },
+    {
+     "sprite": "15",
+     "text": "Arm"
+    },
+    {
+     "sprite": "16",
+     "text": "Meeting"
+    },
+    {
+     "sprite": "62",
+     "text": "Sp. Break"
+    },
+    {
+     "sprite": "63",
+     "text": "Sp. Bat"
+    },
+    {
+     "sprite": "64",
+     "text": "Contact"
+    },
+    {
+     "sprite": "65",
+     "text": "Power"
+    }
+   ]
+  }
+ ]
+}
