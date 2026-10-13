@@ -1,0 +1,610 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	13048	8f6e	Go back.
+5	13064	8ee5	Temp.
+5	13080	d85a	Gnts
+5	13088	3df5	Chun
+5	13096	ebe6	Yoko
+5	13104	8a28	Yakult
+5	13116	6600	Hiro
+5	13124	eb3d	Hans
+5	13132	507a	SoftBank
+5	13148	f375	Sei
+5	13156	6ad5	Orix
+5	13168	bd70	N-Ham
+5	13184	8437	Lotte
+5	13192	d410	Rak
+5	13200	e624	Shon
+5	13208	9d2c	All-Cent.
+5	13220	e97a	All-Pac.
+5	13232	08ad	KOR
+5	13240	3e7c	Taipei
+5	13252	1018	CHN
+5	13260	49af	Giants
+5	13276	6f65	Dragons
+5	13288	1191	BayStars
+5	13304	3645	Swallows
+5	13320	8b86	Carp
+5	13328	4c46	Tigers
+5	13340	d9f2	Hawks
+5	13352	f379	Lions
+5	13364	dce2	Buffaloes
+5	13380	8e4c	Fighters
+5	13396	18ae	Marines
+5	13408	1abe	Eagles
+5	13420	c637	SeaRex
+5	13440	93cb	From
+5	13454	e71d	Quit Pennant.|Is this OK?
+5	13512	556b	Quit League Mode.|Is this OK?
+5	13574	2d8c	It's the All-Star Game.|Play it yourself?
+5	13636	af1c	It's a COM vs COM game.|Watch the game?
+5	13692	6041	Nothing is at stake. Play it?
+5	13732	2c60	 - a trade was agreed!
+5	13768	17b1	 was traded!
+5	13792	359d	 turned down the trade.
+5	13820	3617	A trade offer came in.
+5	13856	3617	A trade offer came in.
+5	13896	73e8	The trade went through.
+5	13932	db8f	The trade was turned down.
+5	14080	0f02	League title clinched today
+5	14230	a7b9	Japan title clinched today
+5	14264	5a92	Central League goes to Playoffs.|Fast-forward halted.
+5	14324	47e2	Playoffs begin. Fast-forward stops.
+5	14372	a733	Pacific League goes to Playoffs.|Fast-forward halted.
+5	14432	1b25	Can't advance the schedule until|the CL Playoffs are over.
+5	14500	ba70	Can't advance the schedule until|the PL Playoffs are over.
+5	14568	1440	Can't advance the schedule until|Playoffs end.
+5	14624	c371	It's the Playoffs now.|Fast-forward is unavailable.
+5	14692	70cb	A player seems to be injured.
+5	14732	eefd	A scout found a new import.
+5	14784	048b	A new import has joined.
+5	14820	bd8a	The new import went home.
+5	14860	bdb0	The trade period is over.
+5	14892	bcf5	Coach Navi has new info.
+5	14948	5ca5	In the offseason you can swap|coaches in the Coach List.
+5	15024	7753	Hokkai
+5	15032	c01d	Tohoku
+5	15044	9128	Kanto
+5	15056	358c	Chubu
+5	15068	e6e4	Kinki
+5	15080	004f	Chugoku
+5	15092	ff12	Shikoku
+5	15104	e703	Kyushu
+5	15116	ca76	Okin
+5	15124	4cf9	Set options for all teams.|Set who plays here too.
+5	15216	a796	Set options for all teams.
+5	15928	b59c	The computer plays.
+5	15956	f5c2	Skip watching games.
+5	15984	d81e	Fast mode: you only make manager calls.|Switch to normal play mid-game.
+5	16072	464d	You control everything.
+5	16104	5068	Fast game mode. You can only adjust speed.|No input/orders.
+5	16176	f184	No controller rumble.
+5	16208	517a	Rumbles on hits and more.
+5	16240	af96	Control everything.
+5	16272	d887	COM makes all lineup and sub calls.
+5	16312	d887	COM makes all lineup and sub calls.
+5	16352	8c3d	You decide the lineup, 1st/2nd Team moves,|subs and all other player usage.
+5	16440	6943	You make all player usage calls yourself, but|COM sets the lineup during fast-forward.
+5	16544	8b2e	You swing. Hit the sweet spot for strong hits.
+5	16600	23f8	Anywhere in the contact cursor gives a strong hit,|like a perfect hit.
+5	16672	e245	The contact cursor auto-moves toward the ball.
+5	16736	72a7	A mark shows where the ball lands,|for easier fielding.
+5	16816	bfe8	Nothing shows where the ball lands.
+5	16856	a59f	Shows the pitch cursor when pitching,|to ease pitching.
+5	16928	ff2e	No pitch cursor shown when pitching.
+5	16972	01aa	Show direction when pitching.
+5	17024	8a4c	Show direction and pitch type.
+5	17076	2e0f	Hide the pitch type you chose.
+5	17188	866f	Show the strike zone.
+5	17228	c3f3	Pitcher-view pitching.
+5	17260	f761	Pitch with the catcher window shown.
+5	17308	53f9	Pitch with no catcher window.
+5	17360	1242	You earn less money (CP) after the season.
+5	17412	ce74	You earn a normal amount of CP after the season.
+5	17464	b3df	You earn more money (CP) after the season.
+5	17512	45cf	Earn a ton of money (CP) after the season!
+5	17564	c979	Show landing spot as +.
+5	17592	f61b	Show landing spot as a ball.
+5	17624	2ebd	Choose whether post-game event reports are shown.
+5	17696	448d	No report when a player is injured.
+5	17736	e680	Report when a player is injured.
+5	17872	e9d1	No report on player joins or exits.
+5	17916	318a	Report when players join or leave.
+5	18056	9a3a	No trade news reports.
+5	18096	db87	Report trade news.
+5	18232	ebb4	No reports from scouts.
+5	18272	1ff7	Report info from scouts.
+5	18408	8c03	No report of milestone events.
+5	18640	6b8c	No report when players improve.
+5	18868	872f	No Coach Navi reports.
+5	18920	2a8c	Report Coach Navi info.
+5	19068	d7a0	No report on Chemistry changes.
+5	19300	db7d	No report on fan count changes.
+5	19540	705a	No report on season fatigue.
+5	19780	c870	No game details when fast-forwarding.
+5	20068	a3ea	Now
+5	20076	9604	Yr
+5	20086	5fd9	Max years left
+5	20460	2d28	Cut from 1st Team
+5	20508	619f	New Import
+5	20552	8bd4	Tryout
+5	20564	017e	Draft 1st Pick
+5	20584	1b98	Draft 2nd Pick
+5	20604	46c4	Draft 3rd Pick
+5	20624	4273	Draft 4th Pick
+5	20644	23d8	Draft 5th Pick
+5	20664	fbf1	Draft 6th Pick
+5	20688	81cd	HS Draft 1st Pick
+5	20712	3131	HS Draft 2nd Pick
+5	20736	83ea	HS Draft 3rd Pick
+5	20784	e001	 Pick
+5	20816	e001	 Pick
+5	20848	e001	 Pick
+5	20856	9fe2	Joined by trade
+5	20876	03de	Trade from Giants
+5	20900	22a7	Trade from Chunichi
+5	20924	bee7	Trade from Hiroshima
+5	20948	52cf	Trade from Yakult
+5	20976	3645	Trade from Yokohama
+5	21000	5c9b	Trade from Hanshin
+5	21046	f6e0	Join
+5	21052	c462	Trade from Nippon-Ham
+5	21080	9f06	Trade from Seibu
+5	21104	f7d1	Trade from Rakuten
+5	21128	8920	Trade from Lotte
+5	21176	f6e0	Join
+5	21184	0935	FA comp. signing
+5	21204	d9c6	Player comp: Giants
+5	21232	f48c	Player comp: Chunichi
+5	21260	c5a7	Player comp: Hiroshima
+5	21288	ff17	Player comp: Yakult
+5	21320	023d	Player comp: Yokohama
+5	21348	2980	Player comp: Hanshin
+5	21376	bf00	Player comp: Orix
+5	21408	e8fe	Player comp: Nippon-Ham
+5	21440	3d65	Player comp: Seibu
+5	21468	3d6a	Player comp: Rakuten
+5	21496	099e	Player comp: Lotte
+5	21524	1ddd	Player comp: SoftBank
+5	21560	5403	Signed as FA
+5	21576	b3fc	FA from Giants
+5	21596	1550	FA from Chunichi
+5	21616	fd5a	FA from Hiroshima
+5	21640	3a88	FA from Yakult
+5	21664	119b	FA from Yokohama
+5	21684	d21b	FA from Hanshin
+5	21704	0eda	FA from Orix
+5	21736	a020	FA from Nippon-Ham
+5	21760	cdae	FA from Seibu
+5	21780	fdfb	FA from Rakuten
+5	21800	ed37	FA from Lotte
+5	21824	5065	FA from SoftBank
+5	21852	0714	Re-signed as FA
+5	21872	73b7	FA to overseas
+5	21892	b062	Back from overseas
+5	21924	ac3b	 Games
+5	21948	ac3b	 Games
+5	21972	ac3b	 Games
+5	21996	1324	Hits
+5	22016	1324	Hits
+5	22036	1324	Hits
+5	22056	1324	Hits
+5	22076	1324	Hits
+5	22094	6ba5	 HR
+5	22114	6ba5	 HR
+5	22134	6ba5	 HR
+5	22154	6ba5	 HR
+5	22174	6ba5	 HR
+5	22194	6ba5	 HR
+5	22214	6ba5	 HR
+5	22234	6ba5	 HR
+5	22254	6ba5	 HR
+5	22276	6ba5	 HR
+5	22298	de06	 RBI
+5	22316	de06	 RBI
+5	22336	de06	 RBI
+5	22356	de06	 RBI
+5	22376	de06	 RBI
+5	22396	de06	 RBI
+5	22418	b3fd	 SB
+5	22434	b3fd	 SB
+5	22450	b3fd	 SB
+5	22466	b3fd	 SB
+5	22482	b3fd	 SB
+5	22498	b3fd	 SB
+5	22514	b3fd	 SB
+5	22532	b3fd	 SB
+5	22552	b3fd	 SB
+5	22570	664a	2B
+5	22590	664a	2B
+5	22610	664a	2B
+5	22630	664a	2B
+5	22650	8aec	3B
+5	22670	8aec	3B
+5	22690	8aec	3B
+5	22714	4a77	 Sac
+5	22730	4a77	 Sac
+5	22746	4a77	 Sac
+5	22762	4a77	 Sac
+5	22778	4a77	 Sac
+5	22794	4a77	 Sac
+5	22810	4a77	 Sac
+5	22826	4a77	 Sac
+5	22844	4a77	 Sac
+5	22866	2100	SF
+5	22882	2100	SF
+5	22898	b822	App
+5	22914	b822	App
+5	22930	b822	App
+5	22946	b822	App
+5	22962	b822	App
+5	22980	b822	App
+5	23000	8566	IP
+5	23020	8566	IP
+5	23040	8566	IP
+5	23060	8566	IP
+5	23082	0777	CG
+5	23098	0777	CG
+5	23114	0777	CG
+5	23130	0777	CG
+5	23228	5915	Ks
+5	23248	5915	Ks
+5	23268	5915	Ks
+5	23288	5915	Ks
+5	23308	5915	Ks
+5	23326	05c0	 Saves
+5	23346	05c0	 Saves
+5	23366	05c0	 Saves
+5	23386	05c0	 Saves
+5	23396	f068	Done
+5	23412	0d93	Need
+5	23420	9bb3	Currently on 1st Team
+5	23448	a0d5	Currently on 2nd Team
+5	23476	60d3	Injured player exception in use
+5	23516	0915	Healthy
+5	23536	1b3d	Shuuto
+5	23552	8105	Palm
+5	23560	1fb3	Curve
+5	23568	f034	Razor Shuuto
+5	23588	daf6	Yone Ball
+5	23600	dea6	Yoshi Ball
+5	23612	dbc6	Emo Ball
+5	23624	0257	Original Ball
+5	23644	aab9	H Shuuto
+5	23656	fee2	H Sinker
+5	23668	67f7	Circle Change
+5	23688	d96a	V-Slider
+5	23704	6643	Fork
+5	23716	f7e1	Drop
+5	23728	575a	Slow Curve
+5	23744	2cdb	Drop Curve
+5	23760	5553	Changeup
+5	23776	5f98	S Slider
+5	23792	729b	Slurve
+5	23804	5736	Cutter
+5	23820	1db6	Screwball
+5	23832	3929	Hard Slider
+5	23848	639e	Sinker
+5	23860	b07b	Slider
+5	23872	c248	Knuckle
+5	23888	3302	Knuckle Curve
+5	23904	1778	2-Seamer
+5	23916	e053	Moving Fastball
+5	23936	fd39	Clutch
+5	23948	1717	Vs LHP
+5	23960	0394	Gd Adv
+5	23968	398a	Push Htr
+5	23980	9a2a	Spray
+5	23992	df98	Gd IF Htr
+5	24004	3454	Walk-off
+5	24016	3454	Walk-off
+5	24028	90a6	Contact Hitter
+5	24048	dbfd	Power Hitter
+5	24064	ff3f	Gd Bunt
+5	24096	3649	Gd PH
+5	24104	af95	Gd 1st
+5	24112	9271	Hot Htr
+5	24128	d196	Gd B2B
+5	24136	6751	Tgh Out
+5	24148	c552	Gold Glv
+5	24160	b3fd	 SB
+5	24168	4097	Crash
+5	24176	82cd	Base
+5	24184	c3de	Headfirst Slide
+5	24208	c3de	Headfirst Slide
+5	24232	6576	Gd Catcher
+5	24248	a3a1	Thrw
+5	24256	e5e0	Gd Block
+5	24268	ef05	Fld Intim
+5	24280	f37c	Gd Mood
+5	24296	7c0e	Sparkplug
+5	24312	e7c4	Durability
+5	24328	bb01	Fld Const
+5	24344	8723	Gd Teamwork
+5	24360	be28	Traj
+5	24368	8fb1	Gd Pace
+5	24380	30d8	Poise
+5	24392	07e8	w/RISP
+5	24404	0bd0	Gd Release
+5	24416	d77d	Heavy
+5	24424	8cd6	Gyroball
+5	24440	b6c4	Recv
+5	24448	3261	Finisher
+5	24464	b7d1	Gd PO
+5	24472	dc95	Gd Reflex
+5	24484	6915	Pit Const
+5	24496	6a80	Vs LHB
+5	24508	c41f	Pit Intim
+5	24520	3e7a	Poker Face
+5	24540	aea3	Quick
+5	24552	2e9c	Spin
+5	24560	d6f6	Gd Low
+5	24568	98c0	Life
+5	24576	daf6	Yone Ball
+5	24588	a587	Razor
+5	24600	dbc6	Emo Ball
+5	24612	dea6	Yoshi Ball
+5	24624	9bd0	2nd Pos
+5	24636	01ff	Bunt Pro
+5	24648	f64f	Grt Catcher
+5	24664	c449	SO
+5	24672	ec63	Error
+5	24680	f760	Slow Starter
+5	24700	0be6	Walk
+5	24708	260f	Slug
+5	24716	0257	Original Ball
+5	24736	8070	Trash Talk
+5	24752	da4b	Table Setter
+5	24776	1c0e	Safe P
+5	24784	3fef	Vs Runner
+5	24796	9f35	Breakup DP
+5	24812	e5e9	Low Ball Hitter
+5	24832	9960	High Ball Hitter
+5	24856	5915	Ks
+5	24864	c730	Light
+5	24872	e053	Moving Fastball
+5	24896	b30c	Laser Beam
+5	24912	296f	Refined
+5	24924	9978	Aggr Fld
+5	24936	920c	Upset
+5	24944	1762	Gd Eye
+5	24952	1778	2-Seamer
+5	24968	5c28	Gd Ext
+5	24976	0134	Pr Cho
+5	24984	4fc3	Guts
+5	24992	edd4	Aggr Stl
+5	25004	0203	Caut Stl
+5	25016	c385	Pull Hitter
+5	25032	b061	Spec Brk
+5	25044	8c82	Fame
+5	25052	74f2	Pinch H
+5	25064	40c5	Def Sub
+5	25076	b798	Pinch R
+5	25088	f583	Power
+5	25100	8336	Contact
+5	25112	7787	Def Liab
+5	25124	f942	Attack
+5	25136	d14a	Patient
+5	25148	8f09	Pr Clutch
+5	25160	2420	Pr LHP
+5	25168	0453	Whiff-Prone
+5	25184	c3d3	Pr SB
+5	25192	6f61	Aggr Run
+5	25208	954e	Pr Run
+5	25216	b66c	Pr Thr
+5	25224	a982	Gd 4th
+5	25232	70ef	Pr 4th
+5	25240	7c0e	Sparkplug
+5	25256	b60e	Injury-prone
+5	25272	c485	Erratic
+5	25284	306a	Timely Error
+5	25304	de22	Pr Teamwork
+5	25320	6018	Mute
+5	25328	8c82	Fame
+5	25336	73c1	Fastball
+5	25348	f1c8	Breaking
+5	25360	899c	Pr Poise
+5	25376	a4c3	Pr RISP
+5	25388	61e7	Pr Runner
+5	25400	f760	Slow Starter
+5	25420	b867	Choke
+5	25432	cde3	Lucky
+5	25440	4d05	Unluck
+5	25448	e355	Pr Rec
+5	25456	724e	Hot
+5	25464	721c	Walk
+5	25476	db02	Streaky
+5	25488	3225	Pr Vs LHB
+5	25504	5615	Fat P
+5	25512	1c0e	Safe P
+5	25520	dd90	Slow Motion
+5	25544	f6a3	Pr Spn
+5	25552	d75c	Pr Lif
+5	25560	5239	Hot Head
+5	25572	da4b	Table Setter
+5	25592	c2f5	Grit
+5	25600	50f1	Stay
+5	25608	b603	Tiny Cursor
+5	25624	7814	Wild
+5	25632	0744	Grt SB
+5	25672	b222	 is hurt.
+5	25688	c3c5	Gnts Kllr
+5	25700	9066	Chun Kllr
+5	25712	36ac	Hiro Kllr
+5	25724	0678	Yakult Kllr
+5	25740	0325	Yoko Kllr
+5	25752	10be	Hans Kllr
+5	25764	8fb4	Rak Kllr
+5	25776	2df3	N-Ham Kllr
+5	25792	bad0	Lions Kllr
+5	25804	3af9	Orix Killer
+5	25824	0fd0	Lotte Killer
+5	25840	2585	SoftBank Killer
+5	25864	bcd2	Jingu Stadium
+5	25880	b80b	Hiro Stadium
+5	25896	8c8d	Tokyo Dome
+5	25912	7027	Yokohama Stad.
+5	25928	a59d	Nagoya Dome
+5	25944	0947	Koshien Stad.
+5	25960	a3e1	Skymark Stadium
+5	25984	7768	Chiba Marine Stadium
+5	26008	3b16	Seibu Dome
+5	26020	a0ed	Fukuoka Yahoo! JAPAN Dome
+5	26056	f20f	Kyocera Dome
+5	26076	55af	Sapp. Dome
+5	26088	331f	Kleenex Stadium Miyagi
+5	26116	1cfd	Regional
+5	26128	a30e	Yamanote
+5	26140	ac0e	Ikari Dome
+5	26152	22ef	Blue Stadium
+5	26176	0e72	School Ground
+5	26192	4dd0	Magma Dome
+5	26208	a4bf	Rinkai Pk
+5	26224	9c49	Return to last screen.
+5	26248	fd44	View milestone records and more.
+5	26288	0f8e	View injury info and more.
+5	26324	3777	May exercise FA rights
+5	26356	cf26	Give players practice orders.
+5	26396	674b	Check detailed player abilities.
+5	26432	d663	Check player ages and more.
+5	26464	6adf	See a list of pitcher abilities.
+5	26504	14b1	See a list of fielder abilities.
+5	26552	aed9	End Contract Renewal.
+5	26584	04e2	End spring camp orders.
+5	32576	b298	Draft results...
+5	32640	f8df	No team made a pick...
+5	32712	40d9	 after talks...
+5	32756	00d9	 signed.
+5	32776	c27a	 despite talks,
+5	32820	98ca	 was lost.
+5	32836	5b7d	Contract Renewal results...
+5	32904	b099	No team will let any player go next season.
+5	32980	559e	 was released.
+5	33048	9d30	 retired and became the batting coach.
+5	33116	a867	 retired and became the pitching coach.
+5	33184	4828	 retired and became the defense & baserunning coach.
+5	33244	499b	Of the released players...
+5	33320	9a3d	 is joining the team.
+5	33380	dde9	Some players seem to want to|continue as coaches.
+5	33448	8dcf	Spring camp is over. The season is about to start!
+5	33512	6b76	Players who improved most at camp
+5	33600	9b58	 has
+5	33608	30d3	 diagnosed.
+5	33832	4ae9	 out for
+5	33844	ae5d	 wks
+5	33852	b876	 mos
+5	33860	05f1	Coach's player condition report.
+5	33904	995b	A player hurt his shoulder.
+5	33948	d4c4	A player hurt his leg.
+5	33992	0507	A player hurt his back.
+5	34036	0bab	A player hurt his elbow.
+5	34072	4c32	Too bad!!
+5	34112	8857	 years without results. Resigned.
+5	34152	4bc5	But the team must be growing!!
+5	34192	491d	Save to an Arrange team and retry!
+5	34232	eecd	Congrats!!
+5	34252	892c	Good work!
+5	34272	a548	 yrs: won
+5	34296	3b25	Champs
+5	34304	72ba	What a great result!
+5	34328	47c1	 the result.
+5	34344	d250	He steps down, missed by the fans!
+5	34384	870a	There's surely more to come!
+5	34424	cdf3	Take on Pennant again!
+5	63230	d5cc	 differences,    some abilities grow easily and others grow slowly.
+5	63584	f08d	 only    can be used.
+5	63866	6680	 is easy to learn.
+5	64014	779a	 is recommended.
+5	64762	c1fc	 years of battles lie ahead.
+5	64846	abf7	The 2008 Pennant Race|has begun.|From here you'll be|fighting through it.
+5	65094	ba5c	 so you can check the team's   condition and get ready for the year's   battle.
+5	65316	3ddb	 to help players grow...   There is a lot you can do.
+5	65544	df2f	 is the registration limit.
+5	65746	1fe0	 - let's raise it|a lot.
+5	65854	fefb	 exists.   High Team Loyalty lets players perform at their best in games.   Low Team Loyalty can make players leave the team, e.g. by declaring FA, and cause more injuries.
+5	66076	b741	Playing players in games or raising|their salary will also|raise Team Loyalty.
+5	66588	d1ed	 takes priority.|In Stage 2, the 1st-place|team gets a 1-win|advantage.
+5	66830	8bbe	 feature lets you advance the schedule quickly.
+5	67070	6aea	 can be done here.|(You can also jump to the report|settings from the schedule.)
+5	67454	ebaa	 lets you arrange the team and|check team info.
+5	67552	3940	 lets you change player registered names,   uniform numbers, and equipment such as bats, gloves and   wristbands, and set cheer songs.
+5	68012	2fc7	 so let's get started|early.
+5	68294	90d5	 to acquire them   and strengthen the team.
+5	68444	08b0	 and so on|are possible.
+5	68634	c7b2	 can be made to join.
+5	68734	3f2e	Check advice and info from coaches on player usage, reinforcement, growth, injuries and more.
+5	69098	bd99	 as you progress.
+5	69220	587b	 and more can be done.
+5	69258	069a	 saves all Pennant data.
+5	69338	069a	 saves all Pennant data.
+5	69532	025e	 - don't forget it!
+5	69622	c53e	 can be checked|here.
+5	69756	5950	 can be changed.
+5	69876	166e	 can be set.|Some of these settings also|apply to Fast-Forward.
+5	70116	849c	 so that|it can be set up.
+5	70392	f116	 is set.
+5	70488	6bf5	 will happen,|so be careful.
+5	70598	3208	 later, you'll be told|if the trade went through|or was turned down.
+5	70804	70ca	 menu and tell the scout the type of|player you want.
+5	71034	8309	 needed.
+5	71184	058e	 at most are found.
+5	71264	18a9	 is all it takes|to sign them freely.
+5	71380	31cb	 exist. Sign them freely within the foreign player limit.
+5	71638	2aa4	 happens, so be careful.
+5	71758	a0de	 is revealed after joining,|but some abilities can't|be known until the player|plays in real games.
+5	71990	ff4d	 is also possible.
+5	72192	4f06	 can't be done.)
+5	72302	1d00	 can be ordered.|To sign a player, leave|room on your roster first.
+5	72782	60c4	 at most can be negotiated with.
+5	72960	08e2	 and more are available. Expect better results than in-season practice.
+5	73280	a61d	 Hone it in live play!
+5	73396	5b19	 redo. Sort out your roster for next year.
+5	73534	349c	 can be done. But a coach chosen at Contract Renewal as a player's next career can't be changed.
+5	73852	4fa5	 beforehand.
+5	74604	84b0	Cash comp. pays 1.2x|salary. Player comp.|pays 0.8x salary.
+5	74684	45c0	Start talks with players who declared FA.|Meeting their conditions makes signing easier,|but other clubs may offer more and win them.
+5	75202	af2f	 is.
+5	75418	f951	Can't be released or traded|during the contract term.
+5	75870	d1b5	 are listed in order.
+5	76112	c0a0	 appear.
+5	76324	0863	 Let's do it.
+5	76454	05aa	 will result, so be careful.
+5	76832	8d75	 is marked, and you can send scouts to chase.
+5	77062	24f9	 becomes key. Give your scouts good orders so other clubs don't take the players.
+5	77362	e8a8	 Choose from these.
+5	77438	3451	 abilities decide this.|Scouts with higher abilities|get higher points.
+5	77544	6827	Command to tell a scout|directly which position|you want to reinforce.
+5	77632	4347	First select the scout to send. Positions then appear beside him; pick the one you want to finish the order.
+5	77910	ee93	 will be.
+5	77984	6325	 - a command to research.
+5	78016	bab5	First select the scout to send. Next pick the player you want from the list. That completes the order.
+5	78204	5127	 depends on it.|Scouts with high|research skill check|abilities faster.
+5	78348	6d69	 becomes possible.
+5	78372	44e7	Negotiate with players|you scouted.|Usable from August on.
+5	78736	a855	 Talks begin with them.
+5	78928	606e	 depends on the Player Rep chosen, and so do the affected players.
+5	79218	1b5b	 also drops.
+5	79432	479e	 may be obtained.
+5	79456	4252	Athletes from other sports, besides other clubs' players, may also appear.
+5	79712	6b7c	 can be learned.
+5	79752	3fe7	Player Rep & Pitcher/Fielder Leaders can be changed just before opening day.|If none is set, you can choose one anytime.|Other players can be changed anytime.
+5	79982	c5cd	 is required. If a Chemistry partner drops below 70, the Chemistry effect stops working. At 70 or more it works again.
+5	80176	e00e	If the Player Rep or Leader lacks Team Love, or none is set, other players can't use Chemistry either.
+5	80508	6a9c	 is its evolution.
+5	80536	1a38	Both Chemistry partners must be on|the 1st Team to trigger a|Chemistry ability.
+5	80728	8dc7	Check before you leave the|Chemistry Map.
+5	81100	4fcc	Choose one of 2 compensation|methods.
+5	81218	18d1	Get 1.2x the salary of the player|who left via FA, in cash.
+5	81334	8e68	Get 1 player from his new club and|0.8x his salary in cash.
+5	81450	78d1	Pick the players you don't want|taken if Player Compensation is|chosen for FA compensation.
+5	81568	a5a3	Strong players are protected|automatically. If anyone you don't|want taken isn't, change it.
+5	81722	3de1	Renew player contracts.|Set salaries, coach career moves,|releases and more.
+5	81878	3e4c	Set next season's player salaries. A player's asking salary is a guide to the amount. Your funds are also needed for the draft and FA talks, so keep some in reserve.
+5	82146	181f	Raising salary raises a player's Team Love; lowering it lowers it. Some players ask for more than this season's results warrant. In that case, Team Love doesn't drop even if you lower it to a fair salary for this season.
+5	82548	e117	 Press to read about coaches.
+5	82770	f4da	 Press to|see an explanation|of coaches.
+5	83002	f4da	 Press to|see an explanation|of coaches.
+5	83234	f4da	 Press to|see an explanation|of coaches.
+5	83476	73ee	 Press to read about the Player Rep.
+5	83698	1f6c	 Press to|see an explanation|of the Player Rep.
+5	83930	1f6c	 Press to|see an explanation|of the Player Rep.
+5	84162	1f6c	 Press to|see an explanation|of the Player Rep.

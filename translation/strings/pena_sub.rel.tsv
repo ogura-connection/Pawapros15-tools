@@ -1,0 +1,757 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+4	3064	7555	trade completed
+5	0	7cda	Norm
+5	8	0d8e	Early+
+5	16	0609	Erly
+5	24	7b67	Late
+5	32	3c3c	Late+
+5	40	8d28	Xtrm
+5	48	50f1	Stay
+5	56	4ddb	Balanced
+5	68	6728	Slugger
+5	80	5281	Speedster
+5	96	ca42	Glove
+5	104	b82e	Fast
+5	112	2b7c	Soft
+5	120	f798	Crafty
+5	128	21b3	Power
+5	136	26f5	Starter
+5	148	2571	Closer
+5	160	d54a	Closer (1 inning)
+5	184	42f2	Starter role
+5	200	2a79	Cleanup
+5	212	d6d1	DH only
+5	224	8aab	Full Season 1st
+5	244	950e	Coaching
+5	256	d2f8	Has no FA conditions
+5	324	37a3	GameCube Check
+5	6152	8ee5	Temp.
+5	6204	4447	This player is on the trade list.|Can't be swapped.
+5	6316	c2bf	This player is studying abroad.|Can't be swapped.
+5	6394	0b3e	Retiring as batting coach is|already selected.
+5	6472	9f76	Retiring as pitching coach is|already selected.
+5	6546	abb5	Retiring as fielding/running coach|is already selected.
+5	6620	7544	You can't cut any more pitchers.
+5	6696	6ebd	You can't cut any more fielders.
+5	6772	3671	You can't add any more pitchers.
+5	6848	471c	You can't add any more fielders.
+5	6922	0f73	You can't cut any more 1st Team|pitchers.
+5	6998	67cb	You can't cut any more 1st Team|fielders.
+5	7074	0c34	You can't cut any more 2nd Team|pitchers.
+5	7150	cedf	You can't cut any more 2nd Team|fielders.
+5	7226	cccb	You can't add any more 1st Team|pitchers.
+5	7302	b7a9	You can't add any more 1st Team|fielders.
+5	7378	e148	You can't add any more 2nd Team|pitchers.
+5	7454	6693	You can't add any more 2nd Team|fielders.
+5	7528	d181	You already have this ability.
+5	7576	0b0f	This ability is already|at its max level.
+5	7646	8c58	This pitch drill is for righties.
+5	7684	fcc1	His FA contract is still in force.
+5	7724	f875	His FA contract is still in force.|You can't order a change of|defensive position.
+5	7842	781d	Years remain on his FA|contract.
+5	7912	90cc	Over the foreign pitcher limit.
+5	7952	b830	Over the foreign fielder limit.
+5	8000	7a49	Draft rookies can't be|released.
+5	8068	1720	Players signed from the released list|can't be released until next|year's Renewal.
+5	8184	06f5	He's in rehab.|No 1st Team until he heals.
+5	8256	b670	Trade-list players are locked.
+5	8288	b857	Over the foreign player limit.|Can't join 1st Team.
+5	8352	bf42	This breaks his FA conditions.|Can't leave the 1st Team.
+5	8416	ac2b	The 1st Team needs at least 1|starter. Can't take him off.
+5	8488	ee17	He's studying abroad.|Can't join 1st Team.
+5	8548	8e22	He has no matching ability.
+5	8584	b296	Already switch-hits.
+5	8612	13ff	A pitcher can't become|batting coach.
+5	8686	89a2	A pitcher can't become|fielding/running coach.
+5	8764	ff9e	A fielder can't become|pitching coach.
+5	8836	dbd9	Foreign player limit is on.|Only 2 foreign fielders can be in|the basic lineup.
+5	8940	6563	Players with a pending trade|can't leave the team.
+5	9000	53be	Players with FA conditions|can't leave the team.
+5	9064	edce	Players with FA usage terms|can't change usage.
+5	9128	035d	You can keep or erase the current|records. Keep the records?
+5	9200	01d9	This breaks his FA conditions.|Can't remove him as DH.
+5	9268	5df2	This breaks his FA conditions.|Can't remove him from cleanup.
+5	9336	1157	This breaks his FA conditions.|Can't change this.
+5	9400	54e5	Players studying abroad|can't leave the team.
+5	9628	f345	 is the max you can register.
+5	9816	5110	 is the most you can|put in.
+5	9856	5b8d	The team has duplicate numbers. Those players are auto-assigned different numbers.
+5	9968	c9d8	 can't play in|Pennant.
+5	10016	430a	Now
+5	10024	ce4a	 for
+5	10032	9614	 - must be able to play there.
+5	10072	8a1a	 position must be playable.
+5	10112	7e48	 can't be learned.
+5	10132	ec90	 can't be raised.
+5	10168	c278	 To learn it,
+5	10184	6564	 or
+5	10192	9d0f	It can't be learned until conditions are met. Order practice?
+5	10270	5bb3	Carry out the trade.|Is this OK?
+5	10328	a282	After the trade you'd have over 20 pitchers. The trade can't proceed.
+5	10400	1663	After the trade you'd have over 24|fielders. The trade can't proceed.
+5	10472	949f	Not enough 1st Team pitchers|after trade. Can't trade.
+5	10536	c2e4	Not enough 1st Team fielders|after trade. Can't trade.
+5	10600	dd67	After the trade you could have over|20 pitchers. The trade can't be|done.
+5	10684	bc9d	After the trade you could have over|24 fielders. The trade can't be|done.
+5	10768	1280	You may lack 1st Team pitchers|after the trade. Can't trade.
+5	10840	57d7	You may lack 1st Team fielders|after the trade. Can't trade.
+5	10912	d43a	A player in the trade is injured.|Can't trade.
+5	10972	d9b8	Other team would lack players.|Can't trade.
+5	11032	54aa	The pending trade will be scrapped.|Is this OK?
+5	11088	86fc	Players just drafted can't be|changed.
+5	11140	665b	Trades run from the season start|to June 30.
+5	11200	eefa	No trades once a game has been|played that day.
+5	11264	0271	Trades are set to None, so this|can't be chosen.
+5	11320	2cb8	A player already joined by trade|today. Can't trade.
+5	11384	1e1f	Off-season: can't select.
+5	11412	5f36	The draft is set to None, so this|can't be chosen.
+5	11468	df94	Not the period for signing|new imports.
+5	11520	9790	Not allowed after any game has|been played.
+5	11576	52fe	New imports are set to None, so|can't be chosen.
+5	11640	9460	Not available today.
+5	11664	1a55	Renew the contracts of players|to save to Arrange Team.
+5	11728	483d	The roster is over 18 players.|Release players to get under 18|before you can save.
+5	11820	8018	The roster is over 22 players.|Release players to get under 22|before you can save.
+5	11912	1224	Youth Focus
+5	11928	422c	Veteran Focus
+5	11952	38d1	1st Team Focus
+5	11968	b6ef	Balanced
+5	11984	d845	Fast: Youth Focus
+5	12008	1be1	Fast: Veteran Focus
+5	12040	7465	Fast: 1st Team Focus
+5	12064	9075	Fast: Balanced
+5	12088	dfe8	Crafty: Youth Focus
+5	12112	c72d	Crafty: Veteran Focus
+5	12144	337b	Crafty: 1st Team Focus
+5	12168	38c2	Crafty: Balanced
+5	12284	5fc3	Back to adding players.
+5	12312	e2b0	Go to next.
+5	12328	9bde	Set the kind of player|to find. Unavailable|during a search.
+5	12392	8185	Cancel search request.|Unavailable if there|is no request.
+5	12472	9293	View signable players.|Unavailable if there|are no candidates.
+5	12588	3e14	Cancel search request?
+5	12624	da37	You already made a search request. To make a new one, cancel the old request first.
+5	12736	44fd	No search request has|been made.
+5	12772	979f	No candidate players|found yet.
+5	12812	045e	Specify the player's|position.
+5	12856	43ee	Specify the player's|throwing arm.
+5	12900	7197	Specify the player|type.
+5	12944	3296	Specify the pitching|type.
+5	12988	7197	Specify the player|type.
+5	13032	83a0	Specify the player's|career.
+5	13076	6e31	Specify the|signing bonus.
+5	13168	461f	Submit it?
+5	13184	10e0	Imports found so far.
+5	13220	6b23	Sign a foreign player.
+5	13248	90f0	Remove foreign player|from list.
+5	13284	c55a	Select the player to|sign.
+5	13320	7b42	Select the player to|remove.
+5	13356	a692	No open roster spot, so|can't sign him.
+5	13412	aeba	Over the foreign player limit,|can't sign.
+5	13468	a8f7	Not enough funds, so|can't sign.
+5	13524	2412	With pending cash trades included,|you lack funds to sign him.
+5	13646	72b6	Sign him?
+5	13706	935b	Remove from the list?
+5	13732	db39	Nobody's here.
+5	13752	df31	A proven superstar.|He has won an MVP, you see.
+5	13820	0b1d	His pitches baffle batters.|The ball moves like it's alive.
+5	13888	f9e0	Wields a rainbow of curves.|A real breaking ball specialist.
+5	13956	52cb	Toys with batters via curves.|A model breaking ball pitcher.
+5	14024	63ea	Rough, but a fastball to love.|Hard to even make contact.
+5	14092	9e8f	A 160 km/h fireballer.|Making contact is very hard.
+5	14160	1a7d	His out pitch has superb Spin.|Hard to hit even if you know.
+5	14228	d209	Outthinks batters on the mound.|Needle-threading control too.
+5	14296	a672	Pitches nonstop, a workhorse.|A real iron man.
+5	14348	262c	His stamina never runs out.|Mr. Toughness himself.
+5	14416	cb4a	Has won a Saves Title.|A steady man for the back end.
+5	14484	8af3	Active as a top closer.|I'd love to see him in Japan.
+5	14552	bc24	A well-balanced fine pitcher.|No weak spots. Suits Japan.
+5	14620	0890	Wonderful at calling a game.|Quite rare for an import.
+5	14688	ac20	Rough, but hits like a hammer.|No complaints on distance.
+5	14756	aaa9	Superhuman career HR total.|He's sure to do well.
+5	14824	21ee	Has been an HR King.|Let's see his bombs in Japan.
+5	14892	5ca1	Devastating power at the plate.|Every inch an import.
+5	14960	5c01	A fast, skilled-hitting import.|Far beyond the usual import.
+5	15028	bd0f	Famed for bat control.|The craft of a seasoned man.
+5	15096	96d3	Famed for bat control.|No pitch he can't hit, it seems.
+5	15164	9cf7	Graceful, gifted fielding.|His technique is godlike.
+5	15232	3f0f	His legs are a bullet train.|A child of speed baseball.
+5	15300	8856	An import who plays many spots.|Lineup worries are fewer.
+5	15368	3106	Hits, runs, fields: all-around.|No weak spots. Suits Japan.
+5	15436	4f2a	A title-winner abroad.|His career gives us hope.
+5	15504	41ea	Potential is a mystery.|Still has a future ahead.
+5	15572	4d25	Plenty of talent for an import.
+5	15646	e3be	Finish the Arrange save?|Is this OK?
+5	15728	20d1	Order searches & research.
+5	15768	d339	Automatic growth.
+5	15792	a9bc	Mainly raise fielding & arm.
+5	15824	0c72	Mainly raise contact & power.
+5	15860	217a	Mainly raise power.
+5	15888	1aa5	Mainly raise contact.
+5	15920	7760	Mainly raise velocity.
+5	15944	9e06	Mainly raise control.
+5	15976	5baf	Mainly raise curves.
+5	16004	691f	Mainly raise stamina.
+5	16032	836e	Mainly raise speed.
+5	16056	029a	Convert to 1B.
+5	16076	f0fa	Convert to 2B.
+5	16096	3308	Convert to 3B.
+5	16116	a234	Convert to SS.
+5	16136	9efb	Convert to OF.
+5	16156	9161	Convert to P.
+5	16176	8917	Convert to C.
+5	16196	7cac	Batting form: Standard.
+5	16232	a1ff	Kannushi form.
+5	16252	bee4	Batting form: Crouching.
+5	16288	b876	Pendulum form.
+5	16308	b492	Batting stance: Open.
+5	16344	bf64	Fake Bunt form.
+5	16368	1e4f	Konnyaku form.
+5	16392	cb18	Tenbin form.
+5	16412	236d	1-Leg form.
+5	16432	e026	Pitching form: Overhand.
+5	16464	00c1	Pitching form: 3-Quarters.
+5	16500	a771	Pitching form: Sidearm.
+5	16536	bc4c	Pitching form: Submarine.
+5	16568	e026	Pitching form: Overhand.
+5	16600	702c	Masakari form.
+5	16624	7d91	Tornado form.
+5	16660	3823	 will heal.
+5	16680	3ea7	Retire as batting coach.
+5	16712	370b	Retire as pitching coach.
+5	16744	9b7e	Retire as fielding/running coach.
+5	16780	651a	Keep him on the team next year.
+5	16816	1394	Let him go.
+5	16840	b78e	He retires.
+5	16856	beeb	Studies abroad.
+5	16876	d105	Doesn't go abroad.
+5	16900	fe63	Add him to the team.
+5	16928	f736	Don't add him.
+5	16952	22d7	Better in the clutch
+5	16976	0a57	Better vs. LHP
+5	16996	bb1e	Better when down
+5	17016	f34c	Better at push hitting
+5	17040	1c1f	Hits hard to the opposite field
+5	17080	4fa7	Faster getting out of the box
+5	17116	8e4a	Better in walk-off spots
+5	17144	91ac	Hits come more easily
+5	17176	2c7f	Homers come more easily
+5	17212	a885	Better at bunting
+5	17240	478c	Better, bases loaded
+5	17264	cc89	Better as pinch hitter
+5	17288	2e63	Better 1st pitch
+5	17308	9b32	Stronger next AB after a hit
+5	17344	a735	Stronger if previous batter hit
+5	17384	af13	Better bat control
+5	17420	e52b	Veteran skill improves fielding
+5	17456	0342	Better at stealing
+5	17476	0744	Bowls over catcher at plate
+5	17512	2f06	Better at rounding bases
+5	17544	6a1f	Learns the head-first slide
+5	17584	a836	Boosts his pitchers
+5	17608	e072	Throws go wild less
+5	17632	43fa	Shrugs off collisions at home
+5	17672	5b9e	Plays 2nd position well
+5	17704	1026	Intimidates pitchers
+5	17732	bdc7	Less injury-prone
+5	17756	3b5f	Drives get more lift
+5	17784	3d18	Less shaken by hits
+5	17816	19cd	Better in a pinch
+5	17836	42ea	Same motion on all pitches
+5	17880	891b	Balls fly less when hit
+5	17912	d11a	Ball rises and has good life
+5	17952	8046	Shorter rest after starts
+5	17984	3216	Gets stronger each inning
+5	18012	3544	Better pickoffs
+5	18032	8585	Better ball reaction
+5	18056	1018	Better vs. LHB
+5	18076	fb24	Intimidates batters
+5	18104	6e22	Quicker delivery
+5	18132	f1a6	Spin gets better
+5	18160	9cd8	Better control on low pitches
+5	18192	5140	Fastball gets more life
+5	18220	c3af	Learns a unique pitch
+5	18248	83a7	Direct coaching in power hitting
+5	18288	61c9	Direct coaching in contact hitting
+5	18328	9daa	Direct coaching in fielding
+5	18364	2dd3	Direct coaching in baserunning
+5	18400	7da6	Direct coaching in velocity
+5	18440	1f79	Direct coaching in control
+5	18484	b02c	Direct coaching in breaking balls
+5	18520	d3f3	Direct coaching in stamina
+5	18568	ea5b	Goes for a new pitch
+5	18592	82a4	Strikes out less
+5	18612	50bd	No longer error-prone
+5	18640	4c36	No longer Slow Starter
+5	18672	c6ef	Walks fewer batters
+5	18696	36b4	Less homer-prone
+5	18720	99ca	Better pitching tempo
+5	18744	20d1	Fewer mistakes mid-zone
+5	18772	67a0	Better with runners
+5	18796	5d3a	Whispers to rattle batters
+5	18828	b806	Better at creating chances
+5	18864	79f0	Better on low pitch
+5	18888	5cbe	Better on high pitch
+5	18912	2ab1	Breaks up DPs better
+5	18940	2168	Gets better when ahead in count
+5	18976	1a4b	Harder to hit far
+5	19004	80ec	Sharper throws from OF
+5	19032	fa49	Shows veteran savvy
+5	19068	b26e	Goes after batted balls hard
+5	19108	437f	Better batting eye
+5	19128	d3d7	Learns to throw the 2-Seamer
+5	19164	01ae	Holds ball longer
+5	19184	7fde	Becomes unpredictable
+5	19212	1709	Tries switch hit
+5	19232	77d9	Pulled drives fly farther
+5	19272	e512	Change a player's salary offer
+5	19304	d35f	Enter the offer amount.
+5	19332	ee06	Studying abroad: can't order|practice.
+5	19384	34bf	He's studying abroad, so he|can't be released.
+5	19448	ce02	A player abroad has returned|and rejoined the team.
+5	19512	d9fd	Set 2nd-half training policy.
+5	19544	0aa7	The 2nd-half policy period|has ended.
+5	19596	0c5b	A scout found a new draft|prospect.
+5	19652	a3de	Scout research is|complete.
+5	19704	dece	Scout negotiation succeeded.
+5	19744	c33d	Scout negotiation failed.
+5	19792	5caf	Today's game is over.
+5	19832	5f32	Play ball!
+5	19872	24a6	Check the schedule or fast-forward.
+5	19912	e414	Change strategy settings.
+5	19952	3e89	Add new players to the team.
+5	19992	c6b2	View season & all-time records.
+5	20032	1e4c	View various season records.
+5	20072	baf2	Get advice from your coach.
+5	20120	dfe2	Change options or save.
+5	20160	516d	Save the game.
+5	20176	582a	This item can't be selected.
+5	20216	2cbc	Play the playoff games.
+5	20256	02e4	No game today.
+5	20296	dbc8	The dream All-Star Game.
+5	20336	1c95	Decide Asia's No. 1 team!
+5	20376	67af	Sort your roster in Contract Renewal.
+5	20416	1e44	Sign released players for depth.
+5	20456	fef5	Land top rookies in the draft!
+5	20496	9523	Sign players returning from abroad.
+5	20536	bf46	Sign FA players for a big boost!
+5	20576	0df9	Add players with FA compensation!
+5	20616	18bc	Toughen up the youngsters at camp.
+5	20656	4955	Test promising rookies in preseason.
+5	20696	6bac	Solo Trng!
+5	20708	29f9	Return to today's game.
+5	20748	b9ca	Advance to the chosen date.
+5	20788	46a9	Advance the schedule to here.
+5	20828	59bb	Check the schedule for the year.
+5	20868	63f5	Change game flow options.
+5	20908	7835	Pennant Race Open
+5	20928	4225	All-Star Open
+5	20948	3bf7	J. Series Open
+5	20968	9f65	Konami Cup Open
+5	20988	9a3d	Renewal
+5	21000	c0c9	Sign Released
+5	21020	0fb5	Draft
+5	21036	91bd	High School Draft
+5	21056	3fe3	College & Corporate Draft
+5	21084	ff57	Returnee Talks
+5	21104	0a53	Solo Training
+5	21124	aef5	FA Talks
+5	21136	a4fc	FA Comp.
+5	21148	47cc	Spring Camp
+5	21168	928d	Preseason Open
+5	21184	db50	This item can't be selected.
+5	21224	e2b0	Go to next.
+5	21264	8f6e	Go back.
+5	21304	517b	Renew player contracts or|release players.
+5	21380	f642	Change your coaches.|Pick coaches that suit the team!
+5	21456	c5f1	Choose players to study abroad.|Big hopes for promising youngsters!
+5	21532	6c42	Search for & sign new imports|and give the team a big boost!
+5	21608	5e65	Go to the Original Player screen.
+5	21720	7992	CON
+5	21728	4c0c	Power
+5	21736	794b	SPD
+5	21744	9a94	ARM
+5	21752	ee09	FLD
+5	21760	be28	Traj
+5	21768	f414	VELO
+5	21776	20dc	Control
+5	21792	fc40	Stamina
+5	21808	7244	BRK
+5	21816	96b2	 went up.
+5	21836	77ac	 is gone.
+5	21856	32c7	from
+5	21872	f5d5	 learned.
+5	21888	4f33	 became.
+5	21904	7dd4	 healed.
+5	21920	b202	 got mentally tougher.
+5	21948	4f9b	Select to see the effects.
+5	21992	c137	Bigger arrows mean bigger effects.
+5	22032	7e0a	Select the coach to change.
+5	22068	ff89	Select a new coach.
+5	22104	a769	Set the practice items.
+5	22312	9625	 will be set.
+5	22328	2af1	Select a player to set.
+5	22364	8f6e	Go back.
+5	22380	2192	View data in the list below.
+5	22412	87f7	Delete data from the list below.
+5	22448	2cf9	Put the cursor on a player to view.
+5	22488	08f6	Select a player to delete data.
+5	22532	582f	Cancel the pending trade.|Is this OK?
+5	22606	0694	Carrying out the trade now.
+5	22646	c0b7	Submit a trade request with these|terms. Is this OK?
+5	22722	d4f3	No players can be traded.
+5	22766	e5e4	After the trade you'd have|more than 20 pitchers.|The trade can't proceed.
+5	22878	dd47	After the trade you'd have|more than 24 fielders.|The trade can't proceed.
+5	22984	ec9b	Not enough 1st Team pitchers after|the trade. It can't proceed.
+5	23060	50a7	Not enough 1st Team fielders after|the trade. It can't proceed.
+5	23138	1c62	After the trade you could have|more than 20 pitchers.|The trade can't proceed.
+5	23250	51f1	After the trade you could have|more than 24 fielders.|The trade can't proceed.
+5	23368	9979	A player you're trading has|FA conditions.|Can't trade.
+5	23472	758a	A player in the trade is a|foreign player. Can't trade.
+5	23548	37ab	A player in the trade is injured.|Can't trade.
+5	23628	d1fb	After the trade the other team|would have over 20 pitchers.|The trade can't proceed.
+5	23740	b613	After the trade the other team|would have over 24 fielders.|The trade can't proceed.
+5	23854	a858	After the trade the other team|would be short of 1st Team|pitchers. Can't trade.
+5	23966	bee1	After the trade the other team|would be short of 1st Team|fielders. Can't trade.
+5	24076	9298	After the trade the other team|could have over 20 pitchers.|The trade can't proceed.
+5	24188	2ab4	After the trade the other team|could have over 24 fielders.|The trade can't proceed.
+5	24304	2be5	A player you're trading has|FA conditions.|Can't trade.
+5	24416	9567	A player you're trading is|a foreign player.|Can't trade.
+5	24528	f2f4	A player you're trading is|injured.|Can't trade.
+5	24640	98b8	Can't trade.
+5	24676	de60	Scrap this trade.|Is this OK?
+5	24750	b76d	Make the trade with this player.|Is this OK?
+5	24826	1f6e	Make the trade with this player.|Is this OK? (Your pending trade request|is canceled)
+5	24936	ab42	Talent sleeps in unexpected places.|Check out other teams' top prospects.
+5	25020	da5a	The draft matters for winning next year.|Rookies are valuable assets too.
+5	25100	ebed	Need help right away? Try looking at|imports. You may find a good player.
+5	25184	e3da	You can add original players.|Put any players you've made to use.
+5	25272	ef2f	Is this player OK?
+5	25312	8cb8	No player is set to study abroad.|Is this OK?
+5	25384	5dd9	Choose players to study abroad.
+5	25456	c76f	Set the players for Contract Renewal.
+5	25496	0c86	Save as an Arrange Team.
+5	25536	e7bc	End Pennant.
+5	25560	0a45	End the league.
+5	25584	c3cc	You can change the options.
+5	25624	00b7	You can change report settings.
+5	25664	b2d3	Set when a fast game pauses or|switches to a normal game.
+5	25740	cf26	Give players practice orders.
+5	25780	9cdd	View the list of player abilities.
+5	25820	c111	Check the Player Rep.
+5	25860	2fbe	View the list of coaches.
+5	25896	8886	Edit 1st & 2nd Team rosters.
+5	25932	c0a8	Change team policy, usage and more.
+5	25976	a034	Change numbers & reg. names.
+5	26008	153b	Check starting pitchers' schedule
+5	26044	d4d1	Go back to before the swap.
+5	26076	28a9	Change players' reg. names.
+5	26108	5d54	Change player name voices.
+5	26144	af9f	Change players' numbers.
+5	26176	bc27	Assign a premade cheer song|to a player.
+5	26236	84e4	Choose the player to change.
+5	26272	787a	Over 20 pitchers are registered, so|no more can be signed
+5	26344	3b90	Over 24 fielders are registered, so|no more can be signed
+5	26416	82ca	No players can be released
+5	26488	6df0	End without signing anyone?
+5	26566	eecd	Sign him?
+5	26586	73f3	Not enough money.|Change your signees to fit within|your funds.
+5	26704	c318	End Contract Renewal.|Is this OK?
+5	26774	c143	Not enough money.|Change the offers to fit within your|funds, or release the player.
+5	26886	27f7	Offering less to a multi-year player|will drop Team Love to 0.|Is this OK?
+5	26998	694b	End spring camp instructions.|Is this OK?
+5	27072	c736	Decide who to sign for next season.
+5	27120	1969	Sign released players.
+5	27160	de67	Set Bat, Pitch & Field coaches.
+5	27204	9c84	Reorganize the team.
+5	27232	687b	Choose the team leader, Player Rep.
+5	27280	ba53	Hold camp.
+5	27300	ce9f	Do solo training.
+5	27332	552c	Set the protected list.
+5	27360	cea7	Check results & standings.
+5	27392	ebcd	Player Rep can't be released or made coach.
+5	27440	5096	A player-manager can't be made a coach.
+5	27492	f34f	Some teams can't pay their salaries.|Change salaries or release players.
+5	27616	ecb9	Not enough funds.
+5	27640	b6c2	Set the Chemistry Map.
+5	27668	5a56	You can't offer a salary of 0 CP.
+5	57248	2330	Set Chemistry players.
+5	57276	5ae4	Reset the Chemistry data.
+5	57308	005f	View Chemistry ability info.
+5	57340	fae9	Player Rep rank up! Chemistry|map expanded.
+5	57392	0e6e	Some of Player Rep, Pitcher Leader,|Fielder Leader are not set.|Chemistry effects may be lost if|you leave it. Is this OK?
+5	57544	8f9d	Player Rep, Pitcher & Fielder Leader|can't change in-season.
+5	57608	9c19	No players to choose.
+5	57640	6fb1	Changing the Player Rep ends his|Boss power and shrinks Chemistry|map. Change?
+5	57728	6e13	Changing the Player Rep ends his|Big Brother power and shrinks the|Chemistry map. Change?
+5	57832	a110	Not enough Team Love.|You can't use Chemistry until Team|Love reaches 70. Is this OK?
+5	57940	b61e	Remove player from Chemistry Map.|Is this OK?
+5	57996	02f8	When your partner hits a home run,|you hit better in your at-bats.
+5	58072	b374	Fielding the 1B-2B gap with a partner|raises defense.
+5	58136	b5e4	Fielding the 2B-SS gap with a partner|raises defense.
+5	58200	d961	Fielding the 3B-SS gap with a partner|raises defense.
+5	58264	4ed4	Fielding the LF-CF gap with a partner|raises defense.
+5	58328	8aa0	Fielding the RF-CF gap with a partner|raises defense.
+5	58392	c0da	Being a battery with your partner|lowers your batting.
+5	58460	461a	Double steal success with a partner|rises.
+5	58520	e355	If your partner lost the last game,|your pitching rises.
+5	58584	9aaa	When you pitch after your partner,|your pitching rises.
+5	58648	8542	In games your partner pitches,|your batting rises.
+5	58712	4438	Whiffing on a partner's steal raises|the steal success rate.
+5	58784	92e1	Batting 3rd & 4th with your partner|raises your batting.
+5	58848	daeb	Batting 1st & 2nd with your partner|raises your batting.
+5	58912	f5b2	Batting 7(8) & 8(9) with your partner|raises your batting.
+5	58984	5730	Rivalry with your partner raises|your skills.
+5	59040	7e23	With your partner in scoring position,|your batting rises.
+5	59104	f264	When your partner fields, your pitching|and his defense improve.
+5	59172	f84d	If your partner got a save last game,|your pitching rises.
+5	59248	ef19	When your partner hits a home run,|you hit a lot better in your at-bats.
+5	59332	0308	Fielding the 1B-2B gap with a partner|raises defense a lot.
+5	59400	6599	Fielding the 2B-SS gap with a partner|raises defense a lot.
+5	59468	c917	Fielding the 3B-SS gap with a partner|raises defense a lot.
+5	59536	6b5a	Fielding the LF-CF gap with a partner|raises defense a lot.
+5	59604	17b8	Fielding the RF-CF gap with a partner|raises defense a lot.
+5	59672	c00d	Being a battery with your partner|lowers your batting a lot.
+5	59744	11c2	Double steal success with a partner|rises a lot.
+5	59804	9648	If your partner lost the last game,|your pitching rises a lot.
+5	59876	642b	When you pitch after your partner,|your pitching rises a lot.
+5	59948	2708	In games your partner pitches,|your batting rises a lot.
+5	60024	4f1a	Whiffing on a partner's steal raises|steal success more than usual.
+5	60104	612a	Batting 3rd & 4th with your partner|raises your batting a lot.
+5	60176	2f59	Batting 1st & 2nd with your partner|raises your batting a lot.
+5	60248	1e99	Batting 7(8) & 8(9) with your partner|raises your batting a lot.
+5	60324	9743	Rivalry with your partner raises|your skills a lot.
+5	60384	b991	With your partner in scoring position,|your batting rises a lot.
+5	60456	bc5c	When your partner fields, your pitching|and his defense improve a lot.
+5	60536	e947	If your partner got a save last game,|your pitching rises a lot.
+5	60616	5faa	Twin Homers
+5	60640	6d1f	Iron 1B-2B
+5	60656	ad89	Iron 2B-SS
+5	60672	4d10	Iron 3B-SS
+5	60688	791b	Iron LF-CF
+5	60704	2950	Iron RF-CF
+5	60720	61b9	Rumored Battery
+5	60744	4a15	Double Steal
+5	60760	db79	Double Aces
+5	60776	7029	P Relay
+5	60788	2d57	Support
+5	60800	34af	Decoy
+5	60816	002b	3-4 Combo
+5	60832	f8a8	1-2 Combo
+5	60848	d705	Bottom Combo
+5	60864	c907	Rivalry
+5	60876	bf1e	Run Combo
+5	60896	07fc	Secure
+5	60904	6220	Double Closers
+5	73908	0534	- Nothing to report.
+5	73940	6b22	Short of starters
+5	73968	f602	Short of relievers
+5	73996	554c	Short of closers
+5	74024	ea66	Short of lefty starters
+5	74052	1e2d	No lefty starters at all
+5	74080	785f	Short of lefty relievers
+5	74108	c867	Short of young pitchers
+5	74136	5859	Why not move one closer elsewhere?
+5	74192	0744	Why not move one closer elsewhere?
+5	74244	97ae	Starters are all veterans. Better to|grow young talent.
+5	74312	c950	Starters are all veterans. Better to|grow young talent.
+5	74376	9fe0	Your closer is a veteran. Better to find|a successor early.
+5	74452	519c	Your closer is a veteran. Better to find|a successor early.
+5	74532	b29b	A pitcher with many breaking balls would|deepen your staff.
+5	74600	181a	A pitcher with many breaking balls would|deepen your staff.
+5	74664	672a	Adding a fastballer deepens the staff.
+5	74724	4170	Adding a fastballer deepens the staff.
+5	74792	5c19	No catchers.
+5	74816	489b	No first basemen.
+5	74844	d527	No second basemen.
+5	74872	f3e5	No third basemen.
+5	74900	3774	No shortstops.
+5	74928	8409	No outfielders.
+5	74956	404c	Few catchers
+5	74976	e886	 and no more.
+5	74992	f0b6	Few first basemen
+5	75012	cb9d	Few second basemen
+5	75032	0f3b	Few third basemen
+5	75052	11d0	Few shortstops
+5	75072	17ed	Few outfielders
+5	75096	b78f	It might be time to develop a young|catcher.
+5	75160	99ec	It might be time to develop a young|catcher.
+5	75224	79f7	It might be time to develop a young|second baseman.
+5	75288	a9e4	It might be time to develop a young|second baseman.
+5	75352	8d51	It might be time to develop a young|third baseman.
+5	75416	f1b5	It might be time to develop a young|third baseman.
+5	75480	a859	It might be time to develop a young|shortstop.
+5	75544	1b16	It might be time to develop a young|shortstop.
+5	75608	08a1	Outfielders are all veterans. Better to|develop young OF.
+5	75672	60e0	Outfielders are all veterans. Better to|develop young OF.
+5	75736	4141	All 3 regular outfielders are veterans.|Better to develop young OF.
+5	75812	f452	All 3 regular outfielders are veterans.|Better to develop young OF.
+5	75892	e66e	Two regular outfielders are veterans.|Better to develop young OF.
+5	75968	1a87	Two regular outfielders are veterans.|Better to develop young OF.
+5	76040	a3ff	We need a power hitter for cleanup.
+5	76096	cbe2	We need a power hitter for cleanup.
+5	76152	73e1	Send the injured to 2nd Team to rehab.
+5	76196	213a	Send the injured to 2nd Team to rehab.
+5	76248	64b5	Injured players should rehab.
+5	76288	bc09	 returns from injury soon
+5	76320	d984	Rather than forcing injured players to|play, rehab on the 2nd Team is faster.|Marked × skills drop in games.
+5	76448	065b	Rather than forcing injured players to|play, rehab on the 2nd Team is faster.|Marked × skills drop in games.
+5	76560	a743	An injured player is in your lineup.|Please reset it.
+5	76624	9398	An injured player is in your lineup.|Please reset it.
+5	76688	347c	 is worth a try on the 1st Team
+5	76724	586c	A lefty slugger would add depth.
+5	76768	8988	A lefty slugger would add depth.
+5	76816	5c43	Sign a speedster to groom as leadoff.
+5	76860	c6ae	Sign a speedster to groom as leadoff.
+5	76912	f635	No lefty batters on the team.|Want to add one.
+5	76972	463f	No lefty batters on the team.|Want to add one.
+5	77032	7010	Few lefty batters. Want to add one.
+5	77084	36f0	Few lefty batters. Want to add one.
+5	77136	045c	Few starting pitchers.
+5	77160	d1b5	No closer has been set.
+5	77196	e1f8	Short of relievers. How about moving|a starter to the bullpen?
+5	77280	f2d8	Short of relievers. How about moving|a starter to the bullpen?
+5	77360	fa15	 would make a closer.
+5	77384	83a4	 would make a starter.
+5	77408	2a42	 could use one more pitch for variety.
+5	77472	fe28	 could use a breaking ball for variety.
+5	77536	c6d6	A lineup player can't play his position.|Please reset it.
+5	77616	0948	A lineup player can't play his position.|Please reset it.
+5	77688	c94b	No lefty batters in the lineup. Add one|for a balanced lineup.
+5	77776	6eb5	No lefty batters in the lineup. Add one|for a balanced lineup.
+5	77860	e332	 has earned FA rights. Please check.
+5	77912	d196	Consider adding another catcher.
+5	77956	1de8	 has earned FA rights.
+5	77984	e332	 has earned FA rights. Please check.
+5	78036	fa60	 trade offer favors us. Worth a look.
+5	78120	f1d0	Today
+5	78128	ad7c	Tmrw
+5	78140	907e	 y.o. birthday.
+5	78160	1f94	 + others' bdays
+5	78180	a3ea	Now
+5	78188	7fc3	P
+5	78196	4cc0	Fldr
+5	78208	fe69	 at most can be added. To add players in the draft, adjust in Contract Renewal first.
+5	78304	4c5c	To add players, free up roster spots in Contract Renewal.
+5	78368	d91f	 is 1 hit from 2,000 hits.
+5	78404	ff06	 is 1 win from 200 wins.
+5	78436	ae85	 is 1 save from 250 saves.
+5	78472	0ff2	No catcher on 1st Team. Call one up from 2nd Team.
+5	78528	f603	No first baseman on 1st Team. Call one up from 2nd Team.
+5	78588	4c54	No second baseman on 1st Team. Call one up from 2nd Team.
+5	78648	284f	No third baseman on 1st Team. Call one up from 2nd Team.
+5	78708	6049	No shortstop on 1st Team. Call one up from 2nd Team.
+5	78768	4edf	Fewer than 3 OF on 1st Team. Call some up from 2nd Team.
+5	78832	275e	Fewer than 3 outfielders on 1st Team.|Call some up from 2nd Team.
+5	78904	50ff	Only 1 catcher on 1st Team. Call up another from 2nd Team.
+5	78968	53ba	Only 1 catcher on 1st Team. Call up another from 2nd Team.
+5	79036	1aa7	 can't expect much from Contact practice.
+5	79088	de65	 can't expect much from Power practice.
+5	79144	91dd	 can't expect much from baserunning practice.
+5	79192	00f3	 can't expect much from Velocity Up practice.
+5	79248	4e31	 can't expect much from Control practice.
+5	79304	dd01	 can't expect much from Stamina practice.
+5	109084	0ba7	Pacific League
+5	109104	43ff	Central League
+5	109136	039d	Games
+5	109148	bf0f	HR
+5	109160	68c7	AVG
+5	109168	d0cf	RBI
+5	109176	2fb0	Runs
+5	109184	9cbf	Hits
+5	109192	4c43	Steals
+5	109200	7aa3	Doubles
+5	109212	e1f2	Triples
+5	109224	b560	TB
+5	109240	3a40	Sac
+5	109248	4e37	SF
+5	109256	a574	Walks
+5	109264	2509	HBP
+5	109272	8c8d	SO
+5	109280	2f03	GIDP
+5	109292	1cdf	TP
+5	109304	fcf3	Errors
+5	109312	53c4	Hit Streak
+5	109324	8e94	OB Streak
+5	109336	4c6e	Hitless Strk
+5	109352	22a5	3-Hit
+5	109360	b895	Inside-Park HR
+5	109384	082b	Walk-off Hits
+5	109400	53d8	Walk-off HR
+5	109420	e6ec	Grand Slams
+5	109436	b666	PH HR
+5	109456	e5e0	Leadoff HR
+5	109472	0039	Apps
+5	109480	8566	IP
+5	109488	cb3e	CG
+5	109496	77d1	SHO
+5	109504	6a3c	Wins
+5	109512	676f	Losses
+5	109520	bab1	Win%
+5	109528	01b7	ERA
+5	109536	ca6e	Ks
+5	109548	a100	Saves
+5	109560	842c	Save Points
+5	109576	d4e0	Holds
+5	109588	1266	Relief Points
+5	109608	b5c5	H Allow
+5	109620	e305	HR Allow
+5	109632	5c4a	BB Allow
+5	109644	513c	HB Allow
+5	109656	58eb	K/9
+5	109672	7d1c	WP
+5	109680	6f25	RA
+5	109880	d632	Both-Side HR
+5	109896	dbac	Hit for Cycle
+5	109912	8c06	.300/30 HR/30 SB
+5	109936	1e5c	PH Grand Slam
+5	109952	9fcf	Walk-off Slam
+5	109976	cccf	PH Walk-off Slam
+5	110000	446e	PH Comeback WO HR
+5	110024	5e0e	PH Comeback WO Slam
+5	110052	db2c	Opener Leadoff HR
+5	110076	3897	HR by Age
+5	110092	f901	TC
+5	110100	76e3	Perfect
+5	110112	f68c	No-Hitter
+5	110132	48ae	Scoreless
+5	110144	bdc5	4 Crowns
+5	110156	defe	K Each Inn
+5	149024	2b05	Back to New Talent.
+5	149052	66cf	Submit a trade request.
+5	149080	ff34	Cancel trade request.
+5	149112	fcca	View team offers.
+5	149144	5b0e	View candidate list.
+5	149168	d8c7	No candidates to view.
+5	149208	95c4	Choose a team to see|its offers.
+5	149248	e4c9	Choose a team to|trade with.
+5	149288	271b	Choose desired players|(up to 3)
+5	149332	54eb	Choose who to send out|(up to 3)
+5	149376	5579	Choose a position.
+5	149416	c64b	Choose pitching arm.
+5	149456	a790	Choose batting hand.
+5	149496	d8a7	Choose desired traits.
+5	149536	6f77	Choose desired career.
+5	149576	5cda	Pick from a list.
+5	149612	4a81	Trade request to all|teams, by terms only.
+5	149660	22e4	Pick players to add to|the candidate list.
+5	149708	27a1	Choose the player|you want.
+5	149756	ed70	Move the cursor to the|player to view.
+5	149804	3538	Choose a player to add|to the candidate list.
+5	149852	e833	Only up to 30 can be|registered.
+5	149900	df65	Already on the|candidate list.
+5	149948	5992	Change the conditions|and search again.
+5	149996	5992	Change the conditions|and search again.
+5	150044	cfc3	Foreign players can't|be traded.
+5	150092	727a	End the player search.
+5	150192	9c49	Return to last screen.
+5	150216	32d2	Accept the trade.
+5	150240	1ece	Pick players to accept|the trade.
+5	150276	275f	Decline the trade.
+5	150304	573f	Choose who to send out
+5	150336	2cf9	Move the cursor to the|player to view.
+5	150376	4f16	Trade with players.
+5	150400	583d	Trade with CP.
+5	150424	1dc9	Enter the amount you want.
+5	150456	2b84	You can't trade for 0 CP.
+5	150498	d05a	Remove this player from the|candidate list?

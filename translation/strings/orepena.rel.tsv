@@ -1,0 +1,2727 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	23312	e57b	Save the player's career as a|Directory entry.|Please pick a file.
+5	23412	14bd	Save as a new file.|Is this OK?
+5	23556	74b4	Is this OK?
+5	23578	79ce	Quit without saving the Directory.|Is this OK?
+5	23644	8f6e	Go back.
+5	23660	a439	You can view the profile.
+5	23696	713d	Trace the player's growth.
+5	23732	0281	Trace your pro baseball career.
+5	23776	dccb	View the player's skills.
+5	23808	4dd4	View your Rumor Memos.
+5	23844	dcbe	You can view your goals.
+5	23872	e655	View trophies from your playing days and more.
+5	23936	516d	Save the game.
+5	23952	8f6e	Go back.
+5	23968	a614	Quit My Life.
+5	23996	2288	Set My Life difficulty and control settings.
+5	24064	f583	Change the control settings.
+5	24600	217e	Pawapuro's recommended controls.
+5	24640	9b6e	Pick bases with the D-Pad.
+5	24680	217e	Pawapuro's recommended controls.
+5	24716	f2d6	Pick bases with the Control Stick.
+5	24784	8ad3	Pawapuro's recommended controls.|Uses the +Control Pad.
+5	24864	d3a9	Pawapuro's recommended controls.|Uses the Control Stick.
+5	24952	da47	Pick bases with the +Control Pad.
+5	24996	f2d6	Pick bases with the Control Stick.
+5	25064	8ad3	Pawapuro's recommended controls.|Uses the +Control Pad.
+5	25140	8eb7	Pawapuro's recommended controls.|Uses the L Stick.
+5	25220	da47	Pick bases with the +Control Pad.
+5	25264	98ed	Pick bases with the L Stick.
+5	25332	f184	No controller rumble.
+5	25364	517a	Rumbles on hits and more.
+5	25396	8b2e	You swing. Hit the sweet spot for strong hits.
+5	25448	23f8	Anywhere in the contact cursor gives a strong hit,|like a perfect hit.
+5	25520	41cd	The contact cursor homes in on the ball somewhat.|Higher levels make the center easier to aim at.
+5	25792	9624	Show the pitch cursor to make|pitching easier.
+5	25864	70d5	Hide the pitch cursor when pitching.
+5	25908	60b3	Show only the pitch direction.
+5	25944	4901	Hide pitch direction and name.
+5	25992	723f	Show pitch direction and name.
+5	26032	b7c8	For experts: hides the strike zone.
+5	26104	866f	Show the strike zone.
+5	26136	0352	Hide the catcher window when batting.
+5	26192	a39c	Show the catcher window when batting.
+5	26240	d980	Play from pitcher's view.
+5	26268	89ff	Hide the catcher window when pitching.
+5	26320	89ff	Hide the catcher window when pitching.
+5	26372	6f24	Show the catcher window when pitching.
+5	26424	6f24	Show the catcher window when pitching.
+5	26476	2736	Play from pitcher's view when pitching.
+5	26528	2736	Play from pitcher's view when pitching.
+5	26580	8abc	You control stealing.|You can't steal home.
+5	26664	b7d5	The CPU handles stealing.
+5	26744	979e	You bat yourself when you pitch.
+5	26784	dbc8	The CPU bats for you when you pitch.
+5	26836	63e5	Batting strength of CPU teams.
+5	26880	21cf	Baserunning skill of CPU teams.
+5	26924	420d	Pitching strength of CPU teams.
+5	26968	943c	Fielding skill of CPU teams.
+5	27012	259e	CPU teams' batting strength changes|with your own strength.
+5	27088	83b2	CPU teams' baserunning strength changes|with your own strength.
+5	27164	f75c	CPU teams' pitching strength changes|with your own strength.
+5	27240	eb54	CPU teams' fielding strength changes|with your own strength.
+5	27316	c931	Show the landing point as a +.|Easy to see the ball's center.
+5	27400	16ea	Show the landing point as a ball.|Easy to see the ball's spin.
+5	27488	787b	Player data stays on screen.
+5	27540	b7ea	Player data hides after a while.
+5	27592	25d6	Set Close-Up to Off.
+5	27644	96ee	Set Close-Up to On.
+5	27696	7e67	Set Scene Replay to Off.
+5	27748	85cd	Set Scene Replay to On.
+5	27800	8f6e	Go back.
+5	27816	f410	Check family, house & car.
+5	27848	87d2	Use or discard items.
+5	27888	26b6	Check your Rumor Memos.
+5	27916	55c7	Go to Friends list.
+5	27940	7bfb	Go to Trophy Room.
+5	27960	8375	Use an item.
+5	27984	8279	Equip gear or put it in the away bag.
+5	28032	23ef	Unequip and return it to home items.
+5	28076	c3fb	Discard an item.
+5	28100	03e7	Give an item to someone.
+5	28128	38af	 to sell.
+5	28144	2342	Buy
+5	28152	f064	Get
+5	28172	0d93	Need
+5	28184	8739	Loan
+5	28192	e783	Solo: Japan
+5	28208	5194	Solo: Abroad
+5	28224	7a78	TV Commercial
+5	28240	cd75	TV Guest
+5	28256	5a29	Variety Show
+5	28272	8df7	Domestic
+5	28284	6288	Overseas
+5	28296	6965	Golf Outing
+5	28312	b4d8	Fan Signing
+5	28328	92bc	Vows
+5	28336	516f	V Trip
+5	28344	a9f7	Joint Trng
+5	28360	48ff	Watch MMA
+5	28376	a6d7	Payday
+5	28384	1b4f	Payday & Loan Pmt
+5	28408	b981	Birth
+5	28496	c52a	No incentives
+5	28520	3b25	Champs
+5	28528	4100	Win
+5	28536	1ac7	Top 3
+5	28548	4b6b	Avoid Last
+5	28560	653a	Golden Glove
+5	28580	22c6	Win a Title
+5	28600	fc58	ROY
+5	28608	991a	Most Wins
+5	28624	c449	ERA Title
+5	28648	2d89	Saves Title
+5	28680	70e0	15+ Wins
+5	28692	8a5f	10+ Wins
+5	28704	d111	200 SO
+5	28720	2249	30 Saves
+5	28732	b823	40 Saves
+5	28744	3e3b	50 Saves
+5	28756	fb1b	Min. IP Met
+5	28776	e017	HR King
+5	28796	80b5	Batting Title
+5	28816	0a90	RBI King
+5	28832	f428	Steals King
+5	28848	5adb	HR Record
+5	28864	a32c	50+ HR
+5	28884	0833	40+ HR
+5	28904	be6d	30+ HR
+5	28928	47bd	30+ SB
+5	28944	ff6f	50+ SB
+5	28960	319a	RBI Record
+5	28976	c6a7	100+ RBI
+5	28992	dd00	AVG Record
+5	29004	8e97	.300 AVG
+5	29016	87e0	H Record
+5	29028	5f13	200 Hits
+5	29040	9395	.300/30 HR
+5	29052	8c06	.300/30 HR/30 SB
+5	29072	dd2e	30 HR 100 RBI
+5	29092	e742	All Games
+5	29104	089b	Min. PA Met
+5	29120	4802	1st Team All Year
+5	29140	8180	100+ Games 1st
+5	29160	a91e	To 1st
+5	29172	39bf	Regular Starter
+5	29192	3662	First Win
+5	29204	2f51	First HR
+5	29220	d828	First Hit
+5	29244	c248	You'd be a comfort to have.
+5	29276	3993	We're gunning for back-to-back titles!|Let's build a golden age together!
+5	29368	bc53	We're last season's champions! This year,|let's win the Japan title!
+5	29448	f355	We finished dead last last year...|That's why we need your strength!
+5	29536	2c5f	We're determined to win it this year!|A title means big rewards, too!
+5	29620	c429	We need a slugger like you|to bat cleanup!
+5	29688	b19c	We think very highly of your|batting sense!
+5	29760	f6c8	We value your charisma as a pro|very highly.
+5	29832	f654	A veteran like you would be a|great comfort!
+5	29904	4a2f	Come join us and be the heart of the team,|leading the players!
+5	29984	34e4	You'd anchor our rotation.
+5	30016	7d16	A treasure of the game gets a warm|welcome. Please join us!
+5	30092	d590	Return to your old club and make a fresh start?
+5	30144	aadf	No other team made you an offer,|so just come on back.
+5	30228	ae5d	 wks
+5	30236	b876	 mos
+5	30244	c654	Rock
+5	30256	33c4	Gas Tank
+5	30272	933b	Ogre
+5	30280	3f20	Ace
+5	30288	7528	Doctor K
+5	30300	fba0	Gold Lefty
+5	30312	910e	Submarine
+5	30328	dbdd	Streak Stopper
+5	30344	48c7	Skid Stopper
+5	30360	accd	Glass Ace
+5	30376	47a4	Fire
+5	30384	ef76	Closer
+5	30392	c13f	Mr. Perfect
+5	30416	8d71	Bat God
+5	30428	7fb0	Hit Maker
+5	30440	9d75	Artisan
+5	30452	c40e	Iron
+5	30460	55f6	Whiz
+5	30468	9d3b	Red Bat
+5	30480	01ff	Bunt Pro
+5	30492	cb73	Artist
+5	30504	9b61	Pinch God
+5	30516	296f	Refined
+5	30528	4df8	Fired Up
+5	30544	e849	Crown
+5	30552	b48c	Mr. Walk-Off
+5	30572	d5c1	Idaten
+5	30584	999e	Fox
+5	30592	8e70	Wall
+5	30600	54bd	Mr. Giants
+5	30624	12ca	Mr. Dragons
+5	30648	5358	Mr. Red Helmet
+5	30664	b27d	Mr. Swallows
+5	30684	6b93	Mr. BayStars
+5	30708	b043	Mr. Tigers
+5	30728	c71d	Mr. Eagles
+5	30748	cdc3	Mr. Fighters
+5	30772	f813	Mr. Lions
+5	30792	372a	Mr. Buffaloes
+5	30816	763c	Mr. Marines
+5	30836	bb70	Mr. Hawks
+5	30856	d5a7	Mr. Pro Baseball
+5	30876	c0bf	Title Man
+5	30888	0e43	Super Rookie
+5	30908	e2f3	Tigr
+5	30920	f7b6	Y.Lion
+5	30928	3398	Hawk
+5	30940	9441	Rental Apt
+5	30960	9fc1	Rental Condo
+5	30976	2168	Own Condo A
+5	30996	5f8a	Own Condo B
+5	31016	a511	House A
+5	31028	9291	House B
+5	31040	e242	House C
+5	31052	60d6	House D
+5	31064	a8b8	Mnsn A
+5	31072	ca36	Mnsn B
+5	31080	34d9	Open Sports
+5	31104	4f0f	Pure Sports
+5	31120	d0ff	Compact Sports
+5	31144	8c85	Real Sports
+5	31160	31d7	Station Wagon
+5	31180	4994	Family Sedan
+5	31200	daa3	Hybrid Sedan
+5	31220	6015	Sport Sedan
+5	31240	02f9	Luxury Sedan
+5	31264	7f6f	Premium Sedan
+5	31284	c81a	Minivan
+5	31304	5b1c	Pawarin
+5	31316	5f3b	Pawarin EX
+5	31332	2dc9	Pawarin Gold
+5	31352	4fda	Pawarin Gold EX
+5	31376	f60a	Pawarin SP Gold EX
+5	31408	168a	Pawarin MAX
+5	31424	0194	Viper Drink
+5	31440	5d4e	Protein
+5	31456	459e	Protein EX
+5	31472	31dd	Protein Gold
+5	31492	a126	Protein MAX
+5	31512	f472	Multivitamin
+5	31528	da65	Multivitamin EX
+5	31552	7465	Multivitamin Gold
+5	31576	40f2	Multivitamin MAX
+5	31600	c1e9	Kampo
+5	31608	72d8	Turtle Pwdr
+5	31632	92f5	Patch
+5	31640	c01a	Kimchi
+5	31652	306a	Batting 1
+5	31664	975d	Batting 2
+5	31676	f792	Batting 3
+5	31688	4dc9	Pitching 1
+5	31700	2d45	Pitching 2
+5	31712	dd50	Pitching 3
+5	31724	2e00	Running 1
+5	31736	8428	Running 2
+5	31748	db13	Running 3
+5	31760	f222	Fielding 1
+5	31772	a8f5	Fielding 2
+5	31784	b39d	Fielding 3
+5	31796	707e	Curve Book
+5	31808	f4bb	Clutch Hitting Book
+5	31832	58b0	 Batting Theory
+5	31852	817f	 Pitching Theory
+5	31872	fbc0	Adv Tale
+5	31884	ad09	Romance
+5	31896	80b6	Mystery Novel
+5	31912	c552	Fantasy Novel
+5	31932	30df	Erotica
+5	31944	5003	Greats Bio
+5	31956	4605	Ball Manga
+5	31968	02fd	Action Game
+5	31988	6d33	Adventure Game
+5	32016	7e79	Sports Game
+5	32032	20a8	Puzzle Game
+5	32048	e8ec	Role-Playing Game
+5	32072	c4c5	Std Bat
+5	32088	7aee	Std Glove
+5	32104	5a5d	Std Mitt
+5	32120	e81e	Std 1B Mitt
+5	32144	4ba6	Std Spikes
+5	32160	8702	Gift Bat
+5	32172	763e	Gift Glove
+5	32184	3dae	Gift Mitt
+5	32196	377e	Gift 1B Mitt
+5	32220	3745	Gift Spikes
+5	32236	60c7	Own Bat
+5	32248	23df	Own Glove
+5	32260	3d4b	Own Mitt
+5	32272	5cf2	Own 1B Mitt
+5	32296	9eef	Own Spikes
+5	32312	338a	Ult. Bat
+5	32324	2637	Ult. Glove
+5	32336	08c9	Ult. Mitt
+5	32348	37d4	Ult. 1B Mitt
+5	32372	1ab2	Ult. Spikes
+5	32388	f759	Wristband
+5	32404	6267	Dumbbell
+5	32416	875b	Slv Dumbbell
+5	32432	2df3	Gld Dumbbell
+5	32448	2aef	Barbell
+5	32460	123e	Slv Barbell
+5	32476	cbe9	Gold Barbell
+5	32492	2952	 Barbell
+5	32504	40ce	Aero Bike
+5	32520	adea	Tube
+5	32532	abb0	Rubr Ball
+5	32544	47ee	Random Bounce Ball
+5	32568	19ae	Balance Ball
+5	32584	0b32	Pointing Mat
+5	32608	e6cd	Tee Stand
+5	32624	a2da	Batting Cage
+5	32644	1a29	Pitching Net
+5	32664	2059	Batting Machine
+5	32688	b6db	Hi-Tech Batting Machine
+5	32720	83cd	Pitching Machine
+5	32740	6a3a	Hi-Tech Pitching Machine
+5	32768	da0a	Pitching Scope Cam
+5	32796	ce10	Bench Press
+5	32812	b983	Overhead Press
+5	32836	bf2e	Leg Press
+5	32856	404e	Mouth Plate
+5	32872	ff09	Relax Capsule
+5	32892	14d7	Relax Capsule 2
+5	32916	5db1	Relax Capsule 3
+5	32944	234e	Relax Capsule 10
+5	32968	fbfd	Relax Capsule 12
+5	32992	2894	Rest Capsule
+5	33008	2c5b	Deep Capsule
+5	33024	9078	Super Deep Capsule
+5	33048	4e59	Ultra Deep Capsule
+5	33072	8e70	Vision Training Software
+5	33100	021f	Vision Training Software 2
+5	33132	85b7	Vision Training Software 3
+5	33168	e282	Vision Training Software 10
+5	33200	bdf0	Vision Training Software 12
+5	33232	3578	Vision Training Software EX
+5	33264	dade	Vision Training Software R
+5	33296	8bc7	98 Yokohama Title Run DVD
+5	33324	85b4	Comedy Legends DVD
+5	33344	4698	Superstar Stories
+5	33364	a9a4	 Image Training Software
+5	33396	d05f	 Secret Memo
+5	33416	a746	Anti-Fatigue Innerwear
+5	33440	c7de	Sauna Suit
+5	33456	bcd0	LF Therapy
+5	33472	4e0b	IR Therapy
+5	33488	80de	Mobile IR Therapy
+5	33508	a474	Ultrasonic
+5	33524	10fd	Mobile Ultrasonic
+5	33544	e13c	Power Ankle
+5	33560	fcf2	Power Wrist
+5	33576	4bc0	Monster Cast
+5	33592	5a8e	Watch
+5	33600	0a28	Fine Watch
+5	33612	9708	Luxury Watch
+5	33628	0b44	Diver's Watch
+5	33648	cc2f	Gold Brand Watch
+5	33668	7f47	Silver Brand Watch
+5	33688	91f4	Antique Watch
+5	33708	0586	Celeb Lux Watch
+5	33728	e64f	Antique Pocket Watch
+5	33752	9c15	Celeb Pocket Watch
+5	33772	a6a9	Sunglasses
+5	33784	15a3	Brand Sunglasses
+5	33804	31c3	Custom Sunglasses
+5	33832	2484	Vintage Sunglasses
+5	33856	fb90	Necklace
+5	33872	d350	Gold Necklace
+5	33888	aad7	Slv Necklace
+5	33904	d36c	Suit
+5	33912	0a65	Pinstripe Suit
+5	33932	5bf2	Fine Suit
+5	33944	e073	Fine Pinstripe Suit
+5	33968	d051	Brand Suit
+5	33984	ee33	Brand Pinstripe Suit
+5	34016	30f6	Brand Bag
+5	34032	5d19	Stainless Golf Clubs
+5	34060	e8aa	Titanium Golf Clubs
+5	34084	9a52	Amorphous Golf Clubs
+5	34112	50e4	Pro-Model Golf Clubs
+5	34144	175d	Pro-Spec Golf Clubs
+5	34168	2052	Bamboo Rod
+5	34180	c03f	Fiberglass Rod
+5	34208	1214	Carbon Rod
+5	34228	36f5	Pro-Model Rod
+5	34248	b0a2	Electric RC
+5	34264	8ef7	Off-Road RC
+5	34284	0409	On-Road RC
+5	34304	15ba	RC Heli
+5	34320	056e	CD Player
+5	34336	3546	Stereo
+5	34344	4d08	Console
+5	34356	875e	Enka CD
+5	34368	71f4	J-Pop CD
+5	34388	4139	Rock CD
+5	34400	f317	Classical CD
+5	34416	fc66	Water CD
+5	34428	89e7	Woods CD
+5	34440	63b4	Sea CD
+5	34456	a1e4	Plasma TV
+5	34472	8082	PC
+5	34488	351c	Laptop
+5	34504	451a	New Plasma TV
+5	34524	b2be	New PC
+5	34540	e57f	New Laptop PC
+5	34560	2850	Eng Ring
+5	34572	2850	Eng Ring
+5	34584	2850	Eng Ring
+5	34596	0657	Xmas Limited Ring
+5	34616	5cf1	Gem
+5	34624	acde	Fake Gem
+5	34636	d7e4	My RC Car 1: Tires
+5	34664	c9d4	My RC Car 2: Chassis
+5	34696	c241	My RC Car 3: Motor
+5	34720	20b0	My RC Car 4: Body
+5	34748	068b	My RC Car 5: Decals
+5	34776	63b3	My RC Car 6: Remote
+5	34808	3645	Pet
+5	34816	c84c	Concert Ticket
+5	34836	7577	Wrestling Ticket
+5	34856	d3af	Fight Ticket
+5	34888	3573	 Gm
+5	34896	2357	Cost
+5	34904	9ad8	Rent
+5	34912	fb54	Dep.
+5	34920	e980	No Garage
+5	34936	1d5d	1-Car Garage
+5	34952	791a	2-Car Garage
+5	34968	ae35	3-Car Garage
+5	34984	a58f	Item Storage
+5	35004	9a7d	List Price
+5	35032	ac22	Show your season stats and more to|ask for a raise.
+5	35088	6047	Ask for a trade or a new uniform|number.
+5	35144	cbff	Check My Records.
+5	35168	76ad	Sign the contract to finish Contract|Renewal.
+5	35216	6ba5	 HR
+5	35224	de06	 RBI
+5	35232	b3fd	 SB
+5	35240	4a77	 Sac
+5	35248	2100	SF
+5	35256	664a	2B
+5	35264	8aec	3B
+5	35272	8832	GIDP
+5	35280	c449	SO
+5	35288	3a48	Err
+5	35296	9f8d	Games
+5	35308	68c7	AVG
+5	35316	569d	Walk-off H
+5	35336	97a3	PH
+5	35344	abfc	SB Rate
+5	35356	1a50	RISP AVG
+5	35368	1717	Vs LHP
+5	35380	b822	App
+5	35392	65ab	Wins
+5	35400	2024	Losses
+5	35408	01b7	ERA
+5	35416	bab1	Win%
+5	35424	0777	CG
+5	35432	1e8a	SHO
+5	35440	05c0	 Saves
+5	35448	1266	Relief Points
+5	35468	e490	Hold Points
+5	35488	2f13	Holds
+5	35504	5915	Ks
+5	35512	48ae	Scoreless
+5	35524	689e	Save Pt Streak
+5	35544	5284	SV Streak
+5	35556	6d8a	Hold Pt Streak
+5	35584	6830	H Alw
+5	35592	6f32	HR Alw
+5	35604	6a80	Vs LHB
+5	35616	8e41	HR King
+5	35632	b28d	RBI #1
+5	35640	a493	SB #1
+5	35648	8f56	AVG King
+5	35660	c07e	Hit King
+5	35672	27d5	OBP Title
+5	35684	4c65	Japan Series MVP
+5	35712	fc58	ROY
+5	35720	9138	Sawa.
+5	35728	b707	Win #1
+5	35736	6cef	ERA Title
+5	35752	0a0d	SO Title
+5	35764	0f5e	Win% Title
+5	35776	e886	Most Holds
+5	35792	2ccc	Top Setup
+5	35808	2383	Most Saves
+5	35820	47b4	Title
+5	35832	4d9f	Best Nine
+5	35856	3b25	Champs
+5	35864	4100	Win
+5	35872	a509	Inj.
+5	35880	bfa4	 as leverage
+5	35904	b253	 already used
+5	35920	4155	 is fair, I'd say
+5	35940	a107	 is a fair call
+5	35960	e756	 is hard to tell
+5	35984	1a40	 is a mystery
+5	36008	3f8b	 is a lost cause
+5	36032	751c	 might have room
+5	36056	5816	 is worth pushing
+5	36076	c20b	 is best avoided
+5	36096	c34e	 might help a bit
+5	36120	45cb	Trade Wish
+5	36136	6f33	New Number
+5	36152	a610	 - propose it.
+5	36168	4e6f	 - already made.
+5	36188	74b4	Is this OK?
+5	36208	942c	Grt Bunt
+5	36220	5bd1	Tall
+5	36228	4f3f	Low
+5	36236	c8d4	Prone to HRs
+5	36256	1e54	Hard to injure
+5	36272	ce2c	Injury-prone
+5	36288	8070	Trash Talk
+5	36304	9f2f	Shuuto Spin
+5	36320	920c	Upset
+5	36328	1762	Gd Eye
+5	36336	43c1	Bat Trust
+5	36348	0c07	Def Trust
+5	36360	92df	 acquired!
+5	36376	28f1	 now true.
+5	36392	29c5	 went up!
+5	36408	8b66	 sadly now true.
+5	36428	0c64	 now, sadly.
+5	36448	cdd5	 is more likely now.
+5	36480	5ef1	 got tougher!
+5	36496	5eae	 got weaker.
+5	36512	9c1a	 is gone.
+5	36528	7fa7	 no longer so.
+5	36544	f3bd	 went down.
+5	36560	54bc	 no more.
+5	36576	8432	 less likely now.
+5	36600	9c08	Start with these settings.
+5	36632	7fc3	P
+5	36640	5145	C
+5	36656	60af	2B
+5	36664	4202	3B
+5	36672	18d4	SS
+5	36680	a75c	OF
+5	36688	1fd5	Last
+5	36700	a3ea	Now
+5	36708	4fbd	Top
+5	36720	d2c5	Bottom
+5	36728	d5bd	Hurt, out ~
+5	36744	71d2	Declared FA
+5	36760	55ea	Retired
+5	36772	876e	Last Day of Ball
+5	36792	9a94	 engaged
+5	36812	c9fd	Son1
+5	36820	7a24	Son2
+5	36828	1aed	Son3
+5	36836	b449	Son4
+5	36844	fa93	Son5
+5	36852	af3d	Dau1
+5	36860	76c0	Dau2
+5	36868	9c9a	Dau3
+5	36876	f5ec	Dau4
+5	36884	c281	Dau5
+5	36896	8566	IP
+5	36904	2949	Win
+5	36912	b3a9	Loss
+5	36920	842c	Save Points
+5	36936	c89c	RA
+5	36944	6d32	Runs
+5	36952	1324	Hits
+5	36960	3846	Walk-off HR
+5	36988	84ed	PH HR
+5	37000	5699	1st-Inn Leadoff HR
+5	37024	d632	Both-Side HR
+5	37040	dbac	Hit for Cycle
+5	37056	8c06	.300/30 HR/30 SB
+5	37080	1e5c	PH Grand Slam
+5	37096	9fcf	Walk-off Slam
+5	37120	cccf	PH Walk-off Slam
+5	37144	446e	PH Comeback WO HR
+5	37168	5e0e	PH Comeback WO Slam
+5	37200	e849	Crown
+5	37208	76e3	Perfect
+5	37220	f68c	No-Hitter
+5	37240	c45f	P 4-Crown
+5	37260	256e	Games Behind 1st
+5	37280	2ead	Magic #
+5	37292	7518	No games played yet.
+5	37320	5725	 - Is this OK?
+5	37340	c92b	Yes
+5	37352	f901	No
+5	37360	839a	None
+5	37368	7fc3	P
+5	37376	5145	C
+5	37392	60af	2B
+5	37400	4202	3B
+5	37408	18d4	SS
+5	37416	a75c	OF
+5	37424	8ec5	1st Mgr
+5	37436	41fe	2nd Mgr
+5	37448	ba3a	1st P Coach
+5	37464	2034	2nd P Coach
+5	37480	bc16	1st Bat Coach
+5	37496	ca41	2nd Bat Coach
+5	37512	67eb	1st Def/Run Coach
+5	37532	84dd	2nd Def/Run Coach
+5	37556	c9fd	Son1
+5	37564	7a24	Son2
+5	37572	1aed	Son3
+5	37580	b449	Son4
+5	37588	fa93	Son5
+5	37596	af3d	Dau1
+5	37604	76c0	Dau2
+5	37612	9c9a	Dau3
+5	37620	f5ec	Dau4
+5	37628	c281	Dau5
+5	37636	3dbd	Bat Maker
+5	37648	4e5a	Dorm
+5	37656	9036	Bar Owner
+5	37668	d320	Club Mama
+5	37688	f2d0	Lawyer
+5	37696	59d1	Agent
+5	37704	99f0	Trainer
+5	37716	cfb2	Doc
+5	37724	57f9	Club Head
+5	37736	cacf	Cheer Head
+5	37748	5ffb	Cheer Crew
+5	37760	e859	Salesman
+5	37776	18cd	Rocker
+5	37788	6834	TV Producer
+5	37808	0fe7	Wrestler
+5	37824	f2a8	Boxer
+5	37840	3a70	MMA
+5	37848	adb9	News
+5	37856	cba5	Seer
+5	37864	6855	Exec
+5	37872	df90	HR Staff
+5	37888	d75c	Sensei
+5	37896	3c0a	Pop
+5	37904	1e10	Newscaster
+5	37920	72df	Univ.
+5	37928	6164	Flight Attendant
+5	37952	3304	Golfer
+5	37964	cf83	Dr.
+5	37972	efe3	Announcer
+5	37988	2b55	Mitt Maker
+5	38000	adb3	Spike Maker
+5	38016	c0d5	Sapp
+5	38024	681e	Toky
+5	38032	ebe6	Yoko
+5	38040	2627	Chib
+5	38048	36f2	Sait
+5	38056	fc49	Nagoya
+5	38064	385a	Osak
+5	38072	aac3	Nish
+5	38080	6221	Kobe
+5	38088	6600	Hiro
+5	38096	fd85	Fkok
+5	38104	7eaf	Toya
+5	38112	a568	Kana
+5	38120	6d7c	Nishik
+5	38128	39fe	Kura
+5	38136	527d	Iwaki
+5	38144	2968	Hitachi-N
+5	38156	1c8a	Ymgt
+5	38164	d326	Toyo
+5	38172	4bb3	Miyz
+5	38180	a744	Hama
+5	38188	55d9	Fuki
+5	38196	49da	Akit
+5	38204	9ebc	Mats
+5	38212	f71f	Gifu
+5	38220	d128	Fuku
+5	38228	a08e	Hako
+5	38236	7f89	Ngno
+5	38244	55dd	Asah
+5	38252	844b	Send
+5	38264	07e5	Kago
+5	38272	bc1b	Shi.
+5	38280	376b	Kyu.
+5	38288	ca76	Okin
+5	38296	128c	Ymgc
+5	38304	ea3a	Utsun
+5	38312	e254	Oita
+5	38320	b07c	Omiy
+5	38328	afb1	Prov
+5	38336	ad19	Mori
+5	38344	a607	Shim
+5	38352	c2fc	Kush
+5	38368	6bc4	Obih
+5	38376	aaa7	Hira
+5	38384	8e3f	Yona
+5	38392	0f75	Kitaky
+5	38404	9287	Kofu
+5	38416	7753	Hokkai
+5	38424	8cce	Aomo
+5	38432	0e02	Iwat
+5	38440	6333	Miyg
+5	38448	fe1e	Fksm
+5	38456	37ad	Ibar
+5	38464	3ffd	Toch
+5	38472	866d	Gunm
+5	38480	2f0e	Kana
+5	38488	7166	Niig
+5	38496	3c3f	Ishi
+5	38504	4ae9	Ymns
+5	38512	c5d3	Shiz
+5	38520	1714	Aich
+5	38528	fc8a	Mie
+5	38536	13e6	Shig
+5	38544	b853	Kyot
+5	38552	3470	Hyog
+5	38560	7887	Nara
+5	38568	3f44	Waka
+5	38576	379e	Tott
+5	38584	11f0	Shim
+5	38592	491f	Okay
+5	38600	c2c1	Toku
+5	38608	e0b3	Kaga
+5	38616	dba2	Ehim
+5	38624	1d20	Koch
+5	38632	649b	Saga
+5	38640	bf01	Ngsk
+5	38648	1637	Kuma
+5	38656	e254	Oita
+5	38664	a00b	Intl
+5	38672	2dcb	USA
+5	38688	7326	Canada
+5	38696	adb7	Cuba
+5	38708	7170	Dom. Rep
+5	38720	08ad	KOR
+5	38728	6194	TWN
+5	38736	13c5	Puerto Rico
+5	38752	9404	Australia
+5	38768	ff2b	Venezuela
+5	38780	363c	Brazil
+5	38792	1a2e	None
+5	38800	56fd	Golf
+5	38808	361a	Golf Range
+5	38824	d3a0	Fish
+5	38832	b9b1	Read
+5	38840	a4b2	Music
+5	38852	08df	Movies
+5	38864	d818	TV Games
+5	38876	3112	RC Cars
+5	38888	367c	Mahj
+5	38896	3aa6	Driving
+5	38908	02ce	Meal
+5	38920	86ae	Lunch
+5	38928	51bb	Auction
+5	38948	4bd3	You can equip a bat.
+5	38984	7c28	You can equip a glove (a catcher's mitt,|or first base mitt).
+5	39064	1f8b	You can equip spikes.
+5	39100	15cd	You can equip a wristband (left).
+5	39148	cfd1	You can equip a wristband (right).
+5	39196	3bca	Put items in a bag and carry them around.
+5	39248	4c31	Have a sidekick carry your items.
+5	39296	917e	Empty Garage
+5	39408	17f8	Home items can't be used away from home.
+5	39518	9f55	Discard this item.|Is this OK?
+5	40152	47e4	Buy houses, cars and items.
+5	40196	a2aa	Buy with a loan. Repay on the 25th each month.
+5	40252	e942	Pay in full for a property.
+5	40288	aae7	Rent a property. Rent is deducted on the 25th monthly.
+5	40344	28cc	Repay the whole current loan.
+5	40376	4a73	 - repay it.
+5	40392	74b4	Is this OK?
+5	40412	4a55	 - pay in full.
+5	40432	02b3	 - buy on a loan.
+5	40456	340d	 - rent it.
+5	40476	eebe	Buy it.
+5	40640	a36e	To Aodamo Club
+5	40656	9189	Donate it.
+5	40672	3270	500K yen
+5	40684	e941	Seat:
+5	40696	e5f1	Offer 1 seat.
+5	40720	ddb4	 - hire an agent.
+5	40744	c1e4	Donate to the Aodamo Club.
+5	40772	34df	Provide seats for the fans.
+5	40808	d2c3	Hire an agent for Contract Renewal.
+5	41320	7650	Left game: hit by own foul
+5	41352	6aa1	Left game with elbow pain
+5	41384	7f14	Left game hurt by a comebacker
+5	41420	ab2c	Left game hurt in a slide
+5	41456	44b8	Left game hurt in head-first slide
+5	41496	ce00	Left game hurt in a collision
+5	41528	8598	Left game: ran into the fence
+5	41560	172b	Left game hurt diving for a catch
+5	41608	e6cc	Hot bat, form is superb!
+5	41640	5f89	Hot bat, form is on the rise!
+5	41672	d7a8	Hot bat, out of the deep slump!
+5	41712	a496	Hot bat, form is coming back!
+5	41744	1a79	Getting results, but form has|passed its peak.
+5	41800	d6da	Getting results, but form is sliding.
+5	41840	d6da	Getting results, but form is sliding.
+5	41880	d6da	Getting results, but form is sliding.
+5	41920	5504	Pitching well, form is superb!
+5	41960	33f2	Pitching well, form is on the rise!
+5	42000	3c59	Pitching well, out of the deep slump!
+5	42048	67d0	Pitching well, form is coming back!
+5	42088	9053	No results yet, but form is slowly returning.
+5	42136	9053	No results yet, but form is slowly returning.
+5	42184	fee6	No results yet, but form is on the rise.
+5	42232	fee6	No results yet, but form is on the rise.
+5	42280	7b5d	Cold bat, form is sliding.
+5	42308	7b5d	Cold bat, form is sliding.
+5	42336	7d96	Cold bat, form is poor.
+5	42364	bca3	Cold bat, form is awful.
+5	42392	179f	Pitching badly, form is sliding.
+5	42428	179f	Pitching badly, form is sliding.
+5	42464	0265	Pitching badly, form is poor.
+5	42496	9de6	Pitching badly, form is awful.
+5	42528	e41c	Form has hit its peak!
+5	42552	8c89	Form is on the rise!
+5	42576	d263	Form is coming back!
+5	42600	d263	Form is coming back!
+5	42624	65fc	Form has passed its peak...
+5	42656	9df9	Form is sliding...
+5	42680	015d	Form is poor...
+5	42704	ecc2	Form is awful...
+5	42728	8b42	Contact
+5	42740	eebd	Power
+5	42752	f52a	Arm Work
+5	42764	1254	Running
+5	42776	51f4	Fielding
+5	42788	51f4	Fielding
+5	42800	9d77	Velocity
+5	42812	7c12	Control
+5	42832	62cb	Stamina
+5	42848	005b	Rehab
+5	42860	9179	Breaking
+5	42872	21ef	Special
+5	42884	0955	 hrs
+5	42896	c663	Exactly
+5	42908	c3c5	Gnts Kllr
+5	42920	9066	Chun Kllr
+5	42932	0325	Yoko Kllr
+5	42944	8060	Yakult Killer
+5	42960	0678	Yakult Kllr
+5	42976	36ac	Hiro Kllr
+5	42988	10be	Hans Kllr
+5	43000	1e50	Seibu Bane
+5	43012	bad0	Lions Kllr
+5	43024	a200	N-Ham Killer
+5	43040	0fd0	Lotte Killer
+5	43056	8fb4	Rak Kllr
+5	43068	3af9	Orix Killer
+5	43088	3e41	Hawks Killer
+5	43104	5d41	Choose a practice to do.
+5	43136	c02d	Restores vitality.
+5	43160	57d7	Relieves fatigue.
+5	43184	208a	Fires you up.
+5	43200	a732	Restores vitality & spirit.
+5	43232	208a	Fires you up.
+5	43248	7d6a	Eases pain, speeds recovery.
+5	43280	ff0c	Practice exp up for days
+5	43308	a2bb	Less injury for days
+5	43336	ae09	Read: Batting up
+5	43356	acb1	Read: Pitching up
+5	43376	46c3	Read: Baserunning up
+5	43400	0cf6	Read: Fielding up
+5	43424	3a31	Read: Breaking up
+5	43444	5a2b	Read: Stats up
+5	43464	ff6f	Learn to seize chances.
+5	43496	9309	Read to build your knowledge.
+5	43608	e045	Used in games
+5	43728	5bdd	Perfect for you
+5	43820	ab9c	Spot-on for you
+5	43908	7514	Solo Prac: Power up
+5	43936	5468	Solo Prac: Stamina up
+5	43968	6bf7	Solo Prac: Velocity up
+5	43992	9772	Solo Prac: Breaking up
+5	44020	ca8c	Solo Prac: Fielding up
+5	44048	ae60	Solo Prac: Contact up
+5	44076	ca32	Solo Prac: Contact & Power up
+5	44112	ef8c	Solo Prac: Control up
+5	44144	c1c6	Solo Prac: SPD & Power up
+5	44176	9191	Solo Prac: ARM & Fielding up
+5	44208	5468	Solo Prac: Stamina up
+5	44236	7514	Solo Prac: Power up
+5	44264	02e4	Solo Prac: ARM up
+5	44288	4e89	Solo Prac: Velocity & ARM up
+5	44320	c1c6	Solo Prac: SPD & Power up
+5	44352	2694	Solo Prac: Stamina & SPD up
+5	44388	ae60	Solo Prac: Contact up
+5	44416	828b	Solo Prac: SPD up
+5	44440	0bd4	Solo Prac: All stats up
+5	44472	340d	Faster rest, relieves fatigue
+5	44504	07ce	Needs a new PC to use
+5	44536	b8e9	Wear it for bonus practice exp
+5	44568	6890	Tidy up your look.
+5	44592	2d25	A must for any star
+5	44616	8fb8	Wild and rugged gold
+5	44640	58f9	Top-class status
+5	44664	8799	Lets you golf as a hobby
+5	44696	585a	Lets you fish as a hobby
+5	44728	56b0	Lets you do RC cars as a hobby
+5	44764	4a91	Needed for music
+5	44784	a371	Needed for TV games
+5	44808	8b4e	Listening to music has many effects.
+5	44848	dd32	1 per home
+5	44860	1269	Ring for the big moment
+5	44888	0345	Bring to games!
+5	44908	c961	Mystery Item
+5	44924	ee6f	Soothes everyone
+5	44948	6694	6 volumes. Get them all...
+5	44980	ec44	Heats up body and soul
+5	45016	b705	Great chemistry for top ability
+5	45056	924a	Full of wise advice
+5	45084	95fe	Watch many great plays
+5	45112	0613	Recalls the Machine Gun lineup
+5	45144	9e96	Comedy secrets to lift the mood
+5	45180	1828	Be Japan champs!
+5	45200	b793	Win the title!
+5	45216	7862	Finish in the top 3!
+5	45240	76b3	Get out of last!
+5	45260	6168	Win a Golden Glove!
+5	45288	6653	Become a title holder!
+5	45312	93d0	Win ROY!
+5	45328	6963	Go for Most Wins!
+5	45360	1ad3	Go for the ERA Title!
+5	45392	6797	Go for the Saves Title!
+5	45424	c39c	Win 20 games!
+5	45444	defa	Win 15 games!
+5	45464	0fa6	Win 10+ games!
+5	45488	b7b2	Clear 200 strikeouts!
+5	45516	f24a	Get 30 saves!
+5	45540	227c	Get 40 saves!
+5	45564	f84b	Get 50 saves!
+5	45588	45a2	Reach qualifying innings!
+5	45616	71e9	Go for the HR King!
+5	45644	881c	Go for the Batting Title!
+5	45672	48d3	Go for the RBI King!
+5	45700	1ce0	Go for the Steals King!
+5	45728	8e01	New HR record!
+5	45752	694f	Hit 50 or more HR!
+5	45780	34d7	Hit 40 or more HR!
+5	45808	565d	Hit 30 or more HR!
+5	45840	7fea	Steal 30+ bases!
+5	45864	4fba	Steal 50+ bases!
+5	45888	20ba	New RBI record!
+5	45912	26d1	Aim for 100+ RBI!
+5	45940	12fc	New AVG record!
+5	45968	f6d3	Clear a .300 AVG!
+5	45992	3723	New hit record!
+5	46016	d918	Clear 200 hits!
+5	46044	7c20	Clear .300 AVG & 30 HR!
+5	46072	f4c3	Clear .300 AVG, 30 HR, 30 SB!
+5	46112	ade9	Clear 30 HR & 100 RBI!
+5	46144	bd11	Play in every game!
+5	46168	940b	Get the PA minimum!
+5	46192	5143	Stay 1st Team all year!
+5	46224	c670	1st Team: play 100+ games!
+5	46256	42d3	Make the 1st Team!
+5	46276	91dc	Be a 1st Team starter!
+5	46304	4290	Get 1st pro win!
+5	46328	1b89	Hit 1st pro HR!
+5	46352	9bf1	Get 1st pro hit!
+5	46376	95a0	(Takes 2 turns)
+5	46396	befd	Night only
+5	46408	b758	Glove
+5	46416	73b8	Mitt
+5	46424	4ca9	1st Base Mitt
+5	46484	55e9	Self
+5	46496	ea23	Macaroni
+5	46508	e293	Duffer
+5	46520	a257	Stylish
+5	46532	c0f9	Funky
+5	46544	3f4a	Steak
+5	46556	3e21	ASAP
+5	46568	cae8	Soprano
+5	46580	ef2c	Toughie
+5	46592	8976	Paw Pads
+5	46604	d601	Gadget
+5	46616	6670	Lullaby
+5	46628	2abc	Intense
+5	46646	c471	Quit My Life.|Is this OK?
+5	46716	d1f5	Quit My Life without saving.|Is this OK?
+5	46792	44a4	Pay
+5	46800	9c03	Draw
+5	46812	4a2d	Dojo
+5	46820	6c12	Save Date
+5	46894	9185	Pawapuro 14 data found. Save it as|Pawapuro 14 Ketteiban data?
+5	47004	506d	Pawapuro Wii data found. Save it as|Pawapuro Wii Ketteiban data?
+5	47268	87c8	Change My Team Needs settings.
+5	47320	25e0	Change Trade Needs settings.
+5	47368	e92c	Change Import Needs settings.
+5	47416	7b4a	Change Draft Needs settings.
+5	47464	f58f	Change FA Needs settings.
+5	47512	b03a	Change 2nd Team Pitcher Needs settings.
+5	47564	7a7b	Change 2nd Team Fielder Needs settings.
+5	47616	3608	Bat
+5	47624	b758	Glove
+5	47632	73b8	Mitt
+5	47640	4ca9	1st Base Mitt
+5	47660	fa7d	Spikes
+5	47732	43ec	Glove artisan's ultimate
+5	47760	43ec	Glove artisan's ultimate
+5	47788	43ec	Glove artisan's ultimate
+5	47902	ba93	Can't fast-forward the offseason.
+5	47948	bc03	Can't fast-forward from|the Japan Series on.
+5	48024	fb9e	Can't fast-forward from the|day before retirement game.
+5	48132	2a90	Can't fast-forward night turns.
+5	48212	a9cd	Can't fast-forward.
+5	48244	429d	Return to the main screen.
+5	48288	7949	Confirm & return to main screen.
+5	48336	e9f0	Reset all vessels filled with|My Spirit.
+5	48384	7425	All vessels filled with My Spirit|will be canceled. Is this OK?
+5	48460	e9d1	Not enough My Spirit.
+5	48500	a359	No free slot on the Bond screen.
+5	48540	8ec5	1st Mgr
+5	48552	41fe	2nd Mgr
+5	48568	ba3a	1st P Coach
+5	48584	2034	2nd P Coach
+5	48600	bc16	1st Bat Coach
+5	48616	ca41	2nd Bat Coach
+5	48632	67eb	1st Def/Run Coach
+5	48652	84dd	2nd Def/Run Coach
+5	48672	93a9	 - get focused coaching.
+5	48700	4ecd	Appears on Bond screen.
+5	48728	4ecd	Appears on Bond screen.
+5	48760	20f7	Befriend your seniors.
+5	48784	1972	 - get along well.
+5	48804	a992	Appears in Bond senior slot.
+5	48840	f08d	Appears in Bond peer slot.
+5	48876	d732	Appears in Bond junior slot.
+5	48912	4e69	Remove this bond and return it to a vessel.|Is this OK?
+5	48988	9319	Your home was upgraded!
+5	49016	eef5	Your car was upgraded!
+5	49048	0a08	Bond went up!
+5	49076	06f1	Can't be upgraded any further.
+5	49128	d88e	Can't upgrade yet.
+5	49160	bb64	Bond can't go any higher.
+5	49212	0623	Can't upgrade any further for now.
+5	49272	7f7f	Bond Up
+5	49296	5992	Spirit
+5	49304	cce7	Upgrade
+5	54872	be28	Traj
+5	54880	7992	CON
+5	54888	4c0c	Power
+5	54896	0900	PWR +5
+5	54908	fcab	PWR +10
+5	54924	794b	SPD
+5	54932	9a94	ARM
+5	54944	ee09	FLD
+5	54952	aa61	E RES
+5	54964	f414	VELO
+5	54972	20dc	Control
+5	54988	c6e5	CTRL +5
+5	55008	9984	CTRL +10
+5	55028	fc40	Stamina
+5	55040	a181	STAM +5
+5	55056	f82b	STAM +10
+5	55072	be28	Traj
+5	55080	7992	CON
+5	55088	4c0c	Power
+5	55096	0900	PWR +5
+5	55108	fcab	PWR +10
+5	55124	794b	SPD
+5	55132	9a94	ARM
+5	55144	ee09	FLD
+5	55152	aa61	E RES
+5	55164	f414	VELO
+5	55172	20dc	Control
+5	55188	c6e5	CTRL +5
+5	55208	9984	CTRL +10
+5	55228	fc40	Stamina
+5	55240	a181	STAM +5
+5	55256	f82b	STAM +10
+5	55272	978a	Star
+5	55280	f583	Power
+5	55292	8336	Contact
+5	55304	f942	Attack
+5	55316	d14a	Patient
+5	55328	edd4	Aggr Stl
+5	55340	0203	Caut Stl
+5	55352	6f61	Aggr Run
+5	55364	9978	Aggr Fld
+5	55376	73c1	Fastball
+5	55388	f1c8	Breaking
+5	55400	8fb1	Gd Pace
+5	55412	f37c	Gd Mood
+5	55424	7c0e	Sparkplug
+5	55440	8723	Gd Teamwork
+5	55464	fd39	Clutch
+5	55476	1717	Vs LHP
+5	55488	9bd0	2nd Pos
+5	55500	e7c4	Durability
+5	55516	b3fd	 SB
+5	55524	82cd	Base
+5	55532	a3a1	Thrw
+5	55544	56e7	Stable
+5	55552	90a6	Contact Hitter
+5	55576	dbfd	Power Hitter
+5	55592	9a2a	Spray
+5	55604	398a	Push Htr
+5	55616	9271	Hot Htr
+5	55628	6751	Tgh Out
+5	55640	d196	Gd B2B
+5	55648	ff3f	Gd Bunt
+5	55660	01ff	Bunt Pro
+5	55672	df98	Gd IF Htr
+5	55688	af95	Gd 1st
+5	55696	da4b	Table Setter
+5	55728	3454	Walk-off
+5	55744	0394	Gd Adv
+5	55752	3649	Gd PH
+5	55760	4097	Crash
+5	55768	c3de	Headfirst Slide
+5	55792	a588	Hd Slide 2-3-4
+5	55820	c552	Gold Glv
+5	55832	6576	Gd Catcher
+5	55848	f64f	Grt Catcher
+5	55864	e5e0	Gd Block
+5	55876	296f	Refined
+5	55888	b30c	Laser Beam
+5	55904	8070	Trash Talk
+5	55920	9f35	Breakup DP
+5	55936	1762	Gd Eye
+5	55944	e5e9	Low Ball Hitter
+5	55964	9960	High Ball Hitter
+5	55984	920c	Upset
+5	55992	c385	Pull Hitter
+5	56008	07e8	w/RISP
+5	56020	6a80	Vs LHB
+5	56032	3fef	Vs Runner
+5	56044	30d8	Poise
+5	56056	98c0	Life
+5	56064	2e9c	Spin
+5	56072	aea3	Quick
+5	56084	b6c4	Recv
+5	56096	8cd6	Gyroball
+5	56112	d6f6	Gd Low
+5	56120	d77d	Heavy
+5	56128	1c0e	Safe P
+5	56136	3261	Finisher
+5	56152	b7d1	Gd PO
+5	56160	0bd0	Gd Release
+5	56172	dc95	Gd Reflex
+5	56184	f3b7	Luck Up
+5	56196	3e7a	Poker Face
+5	56216	4fc3	Guts
+5	56224	5915	Ks
+5	56232	88b3	Gd Hold
+5	56248	0e96	Menace
+5	56256	5cd3	Mr. Series
+5	56268	cdfa	Gd Home
+5	56280	4a31	Gd Road
+5	56292	4fd0	Gd Day Game
+5	56312	aa5c	Gd Night Game
+5	56328	43ad	All Star
+5	56340	7eb4	Slug Duo
+5	56352	ba5d	Gd Dome
+5	56364	29dd	Heat
+5	56376	5317	Mr. 2-Run
+5	56392	71ae	Mr. 3-Run
+5	56408	2d34	Gd Ex-Team
+5	56424	96ab	April
+5	56432	2c2d	May
+5	56440	06d5	June
+5	56448	7a28	July
+5	56456	1843	August
+5	56464	8b92	Sept.
+5	56472	c3c5	Gnts Kllr
+5	56484	9066	Chun Kllr
+5	56496	36ac	Hiro Kllr
+5	56508	0678	Yakult Kllr
+5	56524	0325	Yoko Kllr
+5	56536	10be	Hans Kllr
+5	56548	8fb4	Rak Kllr
+5	56560	a200	N-Ham Killer
+5	56576	bad0	Lions Kllr
+5	56588	3af9	Orix Killer
+5	56608	0fd0	Lotte Killer
+5	56624	3e41	Hawks Killer
+5	56640	6291	Gd Inter
+5	56652	9c41	Gd Sunday
+5	56664	8dfe	Gd Duel
+5	56676	da31	Gd Imp.
+5	56688	7eaf	Gd Leadoff
+5	56700	25ac	Fix SO
+5	56712	66de	Fix Errors
+5	56724	3bcd	Fix BB
+5	56736	77d4	Fix HR
+5	56748	16f4	Fix Cho
+5	56760	1c74	Quick Start
+5	56784	5247	Gusto
+5	56792	53d5	Fix Rage
+5	56804	391b	Spin Fix
+5	56816	9ad2	Fine
+5	56824	b07b	Slider
+5	56840	1fb3	Curve
+5	56848	6643	Fork
+5	56860	639e	Sinker
+5	56872	1b3d	Shuuto
+5	56888	8105	Palm
+5	56896	c248	Knuckle
+5	56908	d96a	V-Slider
+5	56936	1db6	Screwball
+5	56948	575a	Slow Curve
+5	56964	3929	Hard Slider
+5	56984	5553	Changeup
+5	57000	f7e1	Drop
+5	57012	fee2	H Sinker
+5	57024	729b	Slurve
+5	57036	5736	Cutter
+5	57052	67f7	Circle Change
+5	57072	aab9	H Shuuto
+5	57088	2cdb	Drop Curve
+5	57104	3302	Knuckle Curve
+5	57120	1778	2-Seamer
+5	57136	e053	Moving Fastball
+5	57160	1bf1	Original
+5	57176	4e5c	Player
+5	57184	7db6	Coach
+5	57196	a5ec	Media
+5	57208	7c15	Cheap Ticket
+5	57224	4576	Intro
+5	57232	a462	Golf Range
+5	57248	6dc0	Konbini
+5	57260	80d7	1-on-1
+5	57272	831f	Clinic
+5	57280	fae9	Date: Honoka
+5	57296	c48a	Date: Iori
+5	57312	0edd	Date: Miho
+5	57328	d478	Midori Dt.
+5	57340	87c8	Date: Luna
+5	57360	aebf	Honoka's Heart
+5	57376	c6ee	Iori's Heart
+5	57392	84fc	Luna's Heart
+5	57408	763a	Midori Hrt
+5	57420	9c37	Miho's Heart
+5	57436	0542	Engagement Ring
+5	57456	841a	Garage
+5	57468	4e83	Sponsor
+5	57480	4e5a	Dorm
+5	57488	59d1	Agent
+5	57496	fcac	Doctor
+5	57504	14f1	Mama
+5	57512	efab	Fans
+5	57520	5b1c	Pawarin
+5	57532	b62b	Massage
+5	57544	19ca	Therapy
+5	57560	7191	Date
+5	57568	7faf	Family Time
+5	57584	3aa6	Driving
+5	57596	9267	Swap Kit
+5	57608	d517	Care
+5	57616	6c3f	Talk
+5	57624	2129	Advice
+5	57636	cf2d	Hangout
+5	57648	49ca	Bash
+5	57656	5cf1	Gem
+5	57664	8b7c	Good Pupil
+5	57676	4f2f	Good Mixer
+5	57696	25f0	Bro
+5	57704	d317	Boss
+5	57712	57f7	Elite Mark
+5	57728	b975	Star Aura
+5	57744	d4d7	Mentor
+5	57756	df8f	FA Vow
+5	57768	c42a	Retire Vow
+5	57780	01d0	Convert
+5	57792	5f8e	Diet
+5	57804	e61e	Weights
+5	57816	0d06	Autograph
+5	100630	a929	 can be viewed. Family too once married.
+5	100850	146a	 is applied.
+5	101016	9fb6	 gets stocked.
+5	101350	b836	Also records team splits and strong and weak points.
+5	101470	bb53	View season and career records, titles, all-time records, and many other team and player records.
+5	101622	7c46	You can save your My Life data and adjust controller settings. Difficulty can't be changed, and some options are locked on certain difficulties.
+5	102014	84ff	 etc. can be viewed.
+5	102220	84ff	 etc. can be viewed.
+5	102370	301f	own data.
+5	102392	2ea8	View your items and heirloom items.|You can equip, use, or discard items.
+5	102802	af2f	.
+5	103112	71c8	 Do it.
+5	103162	fa71	View your base and special abilities.
+5	103292	6784	 location & training|menu details can be|viewed.
+5	103432	ba63	 can be issued.
+5	103514	2d65	 can be set.
+5	103648	2d65	 can be set.
+5	103748	f582	 has various effects.
+5	103826	749f	 restores vitality, and depending|on your items, may ease fatigue.
+5	103970	62b4	 lets you raise your abilities.
+5	104086	f51a	abilities.
+5	104146	3570	 Go there to meet all kinds of people and practice.
+5	104430	50d5	 can be expanded.
+5	104480	9ffb	Depending on the vessel type, there are various other effects.
+5	104690	a320	 raises your Bond.
+5	104752	c66b	You can also upgrade your living environment, such as your home and car. By widening and deepening your bonds, you can gain various support effects.
+5	105144	84ff	 etc. can be viewed.
+5	117016	6ba5	 HR
+5	117024	de06	 RBI
+5	117032	b3fd	 SB
+5	117040	518b	OBP
+5	117048	1324	Hits
+5	117064	05c0	 Saves
+5	117080	842c	Save Points
+5	117104	2f13	Holds
+5	117116	e490	Hold Points
+5	117140	1266	Relief Points
+5	117176	01b7	ERA
+5	117192	5915	Ks
+5	117200	bab1	Win%
+5	117276	74ba	Year
+5	117284	cedc	Central
+5	117296	a74e	Pacific
+5	117308	a075	Central Lg
+5	117320	d0cc	Pacific Lg
+5	117332	d85a	Gnts
+5	117340	3df5	Chun
+5	117348	6600	Hiro
+5	117356	8a28	Yakult
+5	117368	ebe6	Yoko
+5	117376	eb3d	Hans
+5	117384	6ad5	Orix
+5	117396	f375	Sei
+5	117404	bd70	N-Ham
+5	117416	66bf	Kint
+5	117424	bc67	Daiei
+5	117440	8437	Lotte
+5	117448	d410	Rak
+5	117456	507a	SoftBank
+5	117496	7861	Sold For
+5	117508	2c23	0K
+5	117524	56fc	No items listed
+5	117544	4c65	Japan Series MVP
+5	117564	5845	MVP
+5	117576	eec8	All-Star MVP
+5	117596	d1b1	Apr Monthly MVP Pitcher
+5	117624	2e0e	Apr Monthly MVP
+5	117644	fd23	May Monthly MVP Pitcher
+5	117672	f40d	May Monthly MVP
+5	117692	d5e1	Jun Monthly MVP Pitcher
+5	117720	ea5d	Jun Monthly MVP
+5	117740	ee17	Jul Monthly MVP Pitcher
+5	117768	3b40	Jul Monthly MVP
+5	117788	33d9	Aug Monthly MVP Pitcher
+5	117816	7fed	Aug Monthly MVP
+5	117836	d5c8	Sep Monthly MVP Pitcher
+5	117864	822b	Sep Monthly MVP
+5	117884	b044	Apr Monthly MVP Fielder
+5	117912	6dc0	May Monthly MVP Fielder
+5	117940	a11f	Jun Monthly MVP Fielder
+5	117968	2087	Jul Monthly MVP Fielder
+5	117996	1b25	Aug Monthly MVP Fielder
+5	118024	17a7	Sep Monthly MVP Fielder
+5	118052	0d6d	Best Nine P
+5	118072	1b2d	Best Nine C
+5	118092	73a5	Best Nine 1B
+5	118116	0886	Best Nine 2B
+5	118140	eb82	Best Nine 3B
+5	118164	d720	Best Nine SS
+5	118188	91ec	Best Nine OF
+5	118212	3f0d	Best Nine DH
+5	118232	636b	Golden Glove P
+5	118260	07a5	Golden Glove C
+5	118288	32c0	Golden Glove 1B
+5	118316	ce40	Golden Glove 2B
+5	118344	912e	Golden Glove 3B
+5	118372	9587	Golden Glove SS
+5	118400	ad50	Golden Glove OF
+5	118428	4c51	Top Rookie
+5	118440	15cb	Comeback
+5	118456	e849	Crown
+5	118464	8f56	AVG King
+5	118476	8e41	HR King
+5	118488	b28d	RBI #1
+5	118496	a493	SB #1
+5	118504	27d5	OBP Title
+5	118516	c07e	Hit King
+5	118528	c45f	P 4-Crown
+5	118544	b707	Win #1
+5	118552	6cef	ERA Title
+5	118568	0a0d	SO Title
+5	118580	9abf	Win% #1
+5	118592	2ccc	Top Setup
+5	118608	2383	Most Saves
+5	118620	b972	Top Closer
+5	118632	9138	Sawa.
+5	118640	5697	Yay! 2,000 Hits Plaque
+5	118672	685a	Yay! 200 Wins Plaque
+5	118696	ef41	Yay! 250 Saves Plaque
+5	118728	f911	Bat from 1st Pro Hit
+5	118760	9cae	Bat from 1st Pro RBI
+5	118792	262d	Bat from 1st Pro HR
+5	118832	d4df	Ball from 1st Pro Hit
+5	118864	b8ee	Ball from 1st Pro RBI
+5	118896	2302	Ball from 1st Pro HR
+5	118932	9a93	My 1st HR Ball
+5	118960	f432	's 1st HR Ball
+5	118984	e47d	Glove from 1st Pro Win
+5	119016	fa31	1st Pro Save Glove
+5	119048	4e20	Winning Ball of 1st Pro Win
+5	119088	ac7f	Ball from My 1st Win
+5	119120	40e3	's Ball from 1st Win
+5	119144	a852	Ball from 1st Pro Save
+5	119176	9e25	Ball from My 1st Save
+5	119208	7484	's Ball from 1st Save
+5	119236	ace8	100 Career HR Bat
+5	119264	ff58	150 Career HR Bat
+5	119292	fe55	200 Career HR Bat
+5	119320	81f3	250 Career HR Bat
+5	119348	d6c8	300 Career HR Bat
+5	119376	6a68	400 Career HR Bat
+5	119404	f65a	500 Career HR Bat
+5	119432	7a53	600 Career HR Bat
+5	119460	0264	700 Career HR Bat
+5	119488	fac1	800 Career HR Bat
+5	119516	74d7	900 Career HR Bat
+5	119544	6eb1	1,000 Career Hits Bat
+5	119568	4e5d	1,500 Career Hits Bat
+5	119592	9ced	2,000 Career Hits Bat
+5	119616	3ef2	3,000 Career Hits Bat
+5	119640	8444	4,000 Career Hits Bat
+5	119664	ac42	5,000 Career Hits Bat
+5	119688	7dc5	1,000 Career RBI Bat
+5	119712	b261	1,500 Career RBI Bat
+5	119736	2b91	2,000 Career RBI Bat
+5	119760	9b84	2,500 Career RBI Bat
+5	119784	cb1b	3,000 Career RBI Bat
+5	119808	8a70	4,000 Career RBI Bat
+5	119832	61cb	100 Career Sac Bunts Bat
+5	119860	0e56	200 Career Sac Bunts Bat
+5	119888	7cde	300 Career Sac Bunts Bat
+5	119916	a7ec	400 Career Sac Bunts Bat
+5	119944	c66c	500 Career Sac Bunts Bat
+5	119972	9d9c	100 Career HR Ball
+5	120004	a2b9	My 100th HR Ball
+5	120028	8240	's 100th HR Ball
+5	120056	92f6	150 Career HR Ball
+5	120088	d4a1	My 150th HR Ball
+5	120112	596a	's 150th HR Ball
+5	120140	10ba	200 Career HR Ball
+5	120172	3b15	My 200th HR Ball
+5	120196	3ab1	's 200th HR Ball
+5	120224	cbc0	250 Career HR Ball
+5	120256	b237	My 250th HR Ball
+5	120280	8a73	's 250th HR Ball
+5	120308	1e32	300 Career HR Ball
+5	120340	5fac	My 300th HR Ball
+5	120364	8e81	's 300th HR Ball
+5	120392	944d	400 Career HR Ball
+5	120424	1657	My 400th HR Ball
+5	120448	3382	's 400th HR Ball
+5	120476	0730	500 Career HR Ball
+5	120508	1b02	My 500th HR Ball
+5	120532	996e	's 500th HR Ball
+5	120560	9315	600 Career HR Ball
+5	120592	4029	My 600th HR Ball
+5	120616	7a9a	's 600th HR Ball
+5	120644	203d	700 Career HR Ball
+5	120676	cd2c	My 700th HR Ball
+5	120700	a324	's 700th HR Ball
+5	120728	fb81	800 Career HR Ball
+5	120760	ecc6	My 800th HR Ball
+5	120784	7356	's 800th HR Ball
+5	120812	1e01	900 Career HR Ball
+5	120844	330d	My 900th HR Ball
+5	120868	a66b	's 900th HR Ball
+5	120896	5d04	1,000 Career Hits Ball
+5	120924	37a2	1,500 Career Hits Ball
+5	120952	49f6	2,000 Career Hits Ball
+5	120980	2eb0	3,000 Career Hits Ball
+5	121008	3b5c	4,000 Career Hits Ball
+5	121036	ad51	5,000 Career Hits Ball
+5	121064	0949	1,000 Career RBI Ball
+5	121092	2506	1,500 Career RBI Ball
+5	121120	aadb	2,000 Career RBI Ball
+5	121148	c2f6	2,500 Career RBI Ball
+5	121176	282c	3,000 Career RBI Ball
+5	121204	c26a	4,000 Career RBI Ball
+5	121232	7c0f	100 Career Sac Bunts Ball
+5	121264	8528	200 Career Sac Bunts Ball
+5	121296	494b	300 Career Sac Bunts Ball
+5	121328	227b	400 Career Sac Bunts Ball
+5	121360	95f7	500 Career Sac Bunts Ball
+5	121392	f8c2	100 Career SB Spikes
+5	121416	b288	200 Career SB Spikes
+5	121440	5904	300 Career SB Spikes
+5	121464	af8c	400 Career SB Spikes
+5	121488	d8d9	500 Career SB Spikes
+5	121512	be57	600 Career SB Spikes
+5	121536	4780	700 Career SB Spikes
+5	121560	98f7	800 Career SB Spikes
+5	121584	dfdb	900 Career SB Spikes
+5	121608	14dc	1,000 Career SB Spikes
+5	121636	87c5	100 Wins Glove
+5	121656	9654	150 Wins Glove
+5	121676	6bee	200 Wins Glove
+5	121696	4b9b	250 Wins Glove
+5	121716	216d	300 Wins Glove
+5	121736	7823	400 Wins Glove
+5	121756	b44b	500 Wins Glove
+5	121776	93cd	100 Saves Glove
+5	121800	594d	150 Saves Glove
+5	121824	eee3	200 Saves Glove
+5	121848	a45e	250 Saves Glove
+5	121872	3186	300 Saves Glove
+5	121896	d089	400 Saves Glove
+5	121920	f7b3	500 Saves Glove
+5	121944	3583	1,000 SO Glove
+5	121972	b4cb	1,500 SO Glove
+5	122000	e8b2	2,000 SO Glove
+5	122028	0d7d	3,000 SO Glove
+5	122056	2587	100 Wins Ball
+5	122080	0ddc	My 100th Win Ball
+5	122104	eeae	's 100th Win Ball
+5	122136	c239	150 Wins Ball
+5	122160	4975	My 150th Win Ball
+5	122184	d48d	's 150th Win Ball
+5	122216	e635	200 Wins Ball
+5	122240	015e	My 200th Win Ball
+5	122264	4734	's 200th Win Ball
+5	122296	d7cb	250 Wins Ball
+5	122320	6453	My 250th Win Ball
+5	122344	ccbb	's 250th Win Ball
+5	122376	baf8	300 Wins Ball
+5	122400	1ce5	My 300th Win Ball
+5	122424	9e3b	's 300th Win Ball
+5	122456	3b63	400 Wins Ball
+5	122480	381e	My 400th Win Ball
+5	122504	9568	's 400th Win Ball
+5	122536	8d6a	500 Wins Ball
+5	122560	76b4	My 500th Win Ball
+5	122584	840a	's 500th Win Ball
+5	122616	7408	100 Saves Ball
+5	122644	86cf	My 100th Save Ball
+5	122672	7b6e	's 100th Save Ball
+5	122708	7d25	150 Saves Ball
+5	122736	60b9	My 150th Save Ball
+5	122764	83b1	's 150th Save Ball
+5	122800	7b76	200 Saves Ball
+5	122828	37e4	My 200th Save Ball
+5	122856	3d31	's ball from the 200th save
+5	122892	6404	250 Saves Ball
+5	122920	95e4	My 250th Save Ball
+5	122948	0620	's ball from the 250th save
+5	122984	c610	300 Saves Ball
+5	123012	1bbb	My 300th Save Ball
+5	123040	2d54	's ball from the 300th save
+5	123076	73a3	400 Saves Ball
+5	123104	95f5	My 400th Save Ball
+5	123132	6905	's ball from the 400th save
+5	123168	0c13	500 Saves Ball
+5	123196	8b3e	My 500th Save Ball
+5	123224	bb15	's ball from the 500th save
+5	123260	f02c	1,000 SO Ball
+5	123292	4ccf	1,500 SO Ball
+5	123324	7860	2,000 SO Ball
+5	123356	6028	3,000 SO Ball
+5	123388	6c8f	First Leadoff HR Bat
+5	123420	b105	First Both-Sides HR Bat
+5	123448	f29c	First Grand Slam Bat
+5	123480	79b4	First Pinch HR Bat
+5	123512	1153	First Walk-Off Hit Bat
+5	123540	db2e	First Walk-Off HR Bat
+5	123576	2518	Cycle Hit Bat
+5	123600	0542	Birthday HR Bat
+5	123628	48bf	First Leadoff HR Ball
+5	123664	75a9	First Both-Sides HR Ball
+5	123696	606e	First Grand Slam Ball
+5	123732	8db2	First Pinch HR Ball
+5	123768	2096	First Walk-Off Hit Ball
+5	123800	a3c3	First Walk-Off HR Ball
+5	123836	3c35	Cycle Hit Ball
+5	123864	e051	Birthday HR Ball
+5	123896	794c	2 Straight HR Ball
+5	123928	e25c	3 Straight HR Ball
+5	123960	39c9	4 Straight HR Ball
+5	123992	26c4	Perfect Game Glove
+5	124012	c091	No-Hitter Glove
+5	124044	be52	All-Inning SO Glove
+5	124068	7593	Birthday Win Glove
+5	124096	2de4	Birthday Save Glove
+5	124128	3693	Perfect Game Ball
+5	124152	3262	No-Hitter Ball
+5	124188	3200	All-Inning SO Ball
+5	124216	87e3	Birthday Win Ball
+5	124248	434f	Birthday Save Ball
+5	124280	29ab	Season HR Record Ball
+5	124312	7917	Season Hit Record Ball
+5	124340	2a83	Season RBI Record Ball
+5	124368	b88c	Career HR Record Ball
+5	124400	d14f	Career Hit Record Ball
+5	124424	042c	Career RBI Record Ball
+5	124448	d528	Season HR Record Bat
+5	124480	505a	Season Hit Record Bat
+5	124508	9159	Season RBI Record Bat
+5	124536	d3de	Career HR Record Bat
+5	124568	c71c	Career Hit Record Bat
+5	124592	294f	Career RBI Record Bat
+5	124616	d684	Season Win Record Ball
+5	124644	927b	Season Save Record Ball
+5	124676	3bf9	Season SO Record Ball
+5	124712	d277	Career Win Record Ball
+5	124736	dde8	Career Save Record Ball
+5	124764	0efa	Career SO Record Ball
+5	124792	413e	Season Win Rec. Glove
+5	124820	6fda	Season Save Rec. Glove
+5	124852	ea53	Season SO Rec. Glove
+5	124888	ed4d	Career Win Rec. Glove
+5	124912	0ff4	Career Save Rec. Glove
+5	124940	97ba	Career SO Rec. Glove
+5	124968	7f95	Win Trophy
+5	124992	ff46	Shutout Trophy
+5	125016	fd73	Complete Game Trophy
+5	125040	af53	Save Trophy
+5	125064	2c9b	Hold Trophy
+5	125088	5575	Strikeout Trophy
+5	125112	11f3	Single Trophy
+5	125144	f000	Double Trophy
+5	125176	423f	Triple Trophy
+5	125212	2fb4	3-Hit Game Trophy
+5	125236	99ca	Home Run Trophy
+5	125264	cc09	Grand Slam Trophy
+5	125296	e727	Pinch HR Trophy
+5	125328	f88b	Out-of-Park HR Trophy
+5	125360	cbfc	Signboard HR Trophy
+5	125396	aff2	150 m HR Trophy
+5	125432	c3e2	Walk-Off Hit Trophy
+5	125460	bcb0	Walk-Off HR Trophy
+5	125496	f75b	Steal Trophy
+5	125520	612f	Hero Trophy
+5	132240	dd49	1,500 Games Played!
+5	132264	5af6	2,000 Games Played!
+5	132288	a458	2,500 Games Played!
+5	132312	f86e	100 Home Runs!
+5	132332	7ff1	150 Home Runs!
+5	132352	826b	200 Home Runs!
+5	132372	3e6c	250 Home Runs!
+5	132392	26f8	300 Home Runs!
+5	132412	f8b2	350 Home Runs!
+5	132432	a2d6	400 Home Runs!
+5	132452	237d	450 Home Runs!
+5	132472	7905	500 Home Runs!
+5	132492	6160	600 Home Runs!
+5	132512	b9bb	700 Home Runs!
+5	132532	2d61	800 Home Runs!
+5	132552	ceeb	900 Home Runs!
+5	132572	5ca7	1,000 Hits!
+5	132592	5f35	1,500 Hits!
+5	132612	146a	2,000 Hits!
+5	132632	02e6	2,500 Hits!
+5	132652	5325	3,000 Hits!
+5	132672	a700	4,000 Hits!
+5	132692	0298	5,000 Hits!
+5	132712	26be	1,000 RBI!
+5	132732	849c	1,500 RBI!
+5	132752	84f2	2,000 RBI!
+5	132772	2d6b	2,500 RBI!
+5	132792	50d5	3,000 RBI!
+5	132812	7004	3,500 RBI!
+5	132832	88ad	4,000 RBI!
+5	132852	bf6e	100 Steals!
+5	132872	380a	200 Steals!
+5	132892	5a35	300 Steals!
+5	132912	c28c	400 Steals!
+5	132932	b86f	500 Steals!
+5	132952	08f0	600 Steals!
+5	132972	09a6	700 Steals!
+5	132992	854c	800 Steals!
+5	133012	1396	900 Steals!
+5	133032	0dc9	1,000 Steals!
+5	133056	4fa0	1,000 Runs Scored!
+5	133080	ad7d	2,000 Runs Scored!
+5	133104	58f8	3,000 Runs Scored!
+5	133128	fc71	100 Doubles!
+5	133152	ee87	200 Doubles!
+5	133176	7826	300 Doubles!
+5	133200	6092	400 Doubles!
+5	133224	f416	500 Doubles!
+5	133248	ec68	600 Doubles!
+5	133272	0b76	700 Doubles!
+5	133296	2474	100 Triples!
+5	133320	f14b	200 Triples!
+5	133344	f3ec	300 Triples!
+5	133368	b488	400 Triples!
+5	133392	1401	100 Sac Bunts!
+5	133416	023c	200 Sac Bunts!
+5	133440	0dcd	300 Sac Bunts!
+5	133464	19bf	400 Sac Bunts!
+5	133488	2016	500 Sac Bunts!
+5	133512	fbf2	1,000 Career SO
+5	133532	61e3	2,000 Career SO
+5	133552	1b06	3,000 Career SO
+5	133576	e7cf	100 Wins!
+5	133592	e06b	150 Wins!
+5	133608	4dcf	200 Wins!
+5	133624	7171	250 Wins!
+5	133640	ce1c	300 Wins!
+5	133656	9b47	350 Wins!
+5	133672	1747	400 Wins!
+5	133688	72f8	450 Wins!
+5	133704	76e7	500 Wins!
+5	133720	c114	550 Wins!
+5	133736	ef37	100 Saves!
+5	133756	e0e3	150 Saves!
+5	133776	af64	200 Saves!
+5	133796	c486	250 Saves!
+5	133816	54f0	300 Saves!
+5	133836	49ef	350 Saves!
+5	133856	909f	400 Saves!
+5	133876	7ae5	450 Saves!
+5	133896	0119	500 Saves!
+5	133916	d2ee	550 Saves!
+5	133936	bc0c	600 Saves!
+5	133956	961d	650 Saves!
+5	133976	7ffc	700 Saves!
+5	133996	d70e	300 Games Pitched!
+5	134020	c523	400 Games Pitched!
+5	134044	5508	500 Games Pitched!
+5	134068	6bb4	600 Games Pitched!
+5	134092	218f	700 Games Pitched!
+5	134116	682c	800 Games Pitched!
+5	134140	05f0	900 Games Pitched!
+5	134164	65fe	1,000 Innings!
+5	134192	2a23	2,000 Innings!
+5	134220	8feb	3,000 Innings!
+5	134248	b50e	4,000 Innings!
+5	134276	0021	5,000 Innings!
+5	134304	b66f	1,000 Strikeouts!
+5	134328	cfba	2,000 Strikeouts!
+5	134352	4bee	3,000 Strikeouts!
+5	134376	297a	1st Pro At-Bat
+5	134392	2940	 hits to center
+5	134416	ba56	 hits to right
+5	134436	1e95	 hits to left
+5	134456	c1a4	1st Hit
+5	134468	327e	 doubles
+5	134480	37f7	 triples
+5	134496	e93a	Dazzling debut: 1st HR
+5	134528	d72b	Inside-the-Park HR
+5	134552	75d2	 walks
+5	134560	238a	 HBP
+5	134568	5792	 dropped K
+5	134580	0b37	 IBB
+5	134592	87c2	 fielder's choice
+5	134616	98ae	 sac bunt
+5	134632	a613	 squeezes a run in
+5	134652	bfac	 P grounder
+5	134672	a1ea	 C grounder
+5	134692	780d	 1B grounder
+5	134712	9511	 2B grounder
+5	134728	f567	 3B grounder
+5	134744	2cd6	 SS grounder
+5	134760	69d3	 LF grounder
+5	134776	8082	 CF grounder
+5	134792	c9c8	 RF grounder
+5	134808	935f	 GDP
+5	134820	5e0d	 P fly
+5	134840	1c0b	 C fly
+5	134864	5542	 1B fly
+5	134884	eee4	 2B fly
+5	134904	feaf	 3B fly
+5	134920	2778	 SS fly
+5	134944	862a	 LF fly
+5	134960	61db	 CF fly
+5	134984	e936	 RF fly
+5	135000	1e35	 foul fly
+5	135020	f3f6	 P liner
+5	135048	5193	 C liner
+5	135072	7fa0	 1B liner
+5	135096	96a6	 2B liner
+5	135116	e465	 3B liner
+5	135136	57df	 SS liner
+5	135156	4db9	 LF liner
+5	135176	1163	 CF liner
+5	135196	c3d7	 RF liner
+5	135216	5435	 SO
+5	135224	4b36	 swinging SO
+5	135240	a739	 on error
+5	135256	9502	 SF
+5	135264	6598	Dazzling debut: grand slam
+5	135304	b920	Dazzling debut: walk-off hit
+5	135336	b7b9	Dazzling debut: walk-off HR
+5	135376	04da	1st Pro Hit
+5	135400	211d	1st Pro RBI
+5	135416	af04	1st Pro Home Run
+5	135440	d5fd	1st Pro 3 Hits
+5	135464	3485	Pro Debut
+5	135480	4b9f	Win in Pro Debut
+5	135504	d170	1st Pro Win
+5	135520	1921	Save in Pro Debut
+5	135544	7e61	1st Pro Save
+5	135564	38fa	1st Pro Shutout
+5	135584	7892	1st Pro CG Win
+5	135604	51f1	C
+5	135620	0232	1B
+5	135632	6fb6	2B
+5	135648	26c6	3B
+5	135656	58dd	SS
+5	135672	dd5a	LF
+5	135680	13b3	CF
+5	135696	c67f	RF
+5	135704	d027	DH
+5	135788	c0d6	 1st start
+5	135804	a3f3	1st 10 Wins
+5	135824	5d9d	1st 20 Wins
+5	135840	738b	1st 30 HR Season
+5	135860	2b62	1st 40 HR Season
+5	135880	90b2	1st 50 HR Season
+5	135900	99c9	1st 200 Hit Season
+5	135920	b859	1st 100 RBI Season
+5	135940	d240	1st 50 SB Season
+5	135960	674b	1st 100 SB Season
+5	135980	4d69	1st 50 Sac Bunts
+5	136000	68c7	AVG
+5	136016	6ba5	 HR
+5	136024	de06	 RBI
+5	136032	b3fd	 SB
+5	136040	a1bb	 AVG: 1st .300
+5	136108	fa39	 HR: new season record!
+5	136144	9064	 HR: ties season record.
+5	136184	76f9	 HR: new career record!
+5	136216	695e	 HR: ties career record.
+5	136252	9ad8	 hits: new season record!
+5	136288	d2af	 hits: ties season record.
+5	136328	cd06	 hits: new career record!
+5	136360	1d8d	 hits: ties career record.
+5	136396	5396	 RBI: new season record!
+5	136432	b8c2	 RBI: ties season record.
+5	136472	acb7	 RBI: new career record!
+5	136508	859a	 RBI: ties career record.
+5	136544	7d42	 runs: new season record!
+5	136584	ac17	 runs: ties season record.
+5	136624	2029	 runs: new career record!
+5	136660	5002	 runs: ties career record.
+5	136696	30d8	 steals: new season record!
+5	136736	deb6	 steals,
+5	136752	a51e	Ties season record.
+5	136780	834a	 steals: new career record!
+5	136816	7743	 steals: ties career record.
+5	136852	caea	 SO: ended up setting a new season record.
+5	136908	6ceb	 SO: ended up tying the season record.
+5	136960	11a6	 SO: ended up setting a new career record.
+5	137008	56dd	 SO: ended up tying the|career record.
+5	137056	e82f	New season walk-off HR mark!
+5	137092	d88a	Ties season walk-off HR mark.
+5	137128	075d	New career walk-off HR mark!
+5	137160	1773	Ties career walk-off HR mark.
+5	137192	db5e	New season slam mark!
+5	137224	950f	Ties season slam mark.
+5	137256	d187	New career slam mark!
+5	137284	ba5f	Ties career slam mark.
+5	137312	a57e	New season PH HR mark!
+5	137344	cbd6	Ties season PH HR mark.
+5	137376	9fc0	New career PH HR mark!
+5	137404	7162	Ties career PH HR mark.
+5	137432	c018	New season leadoff HR mark!
+5	137468	fe7e	Ties season leadoff HR mark.
+5	137504	4342	New career leadoff HR mark!
+5	137536	3623	Ties career leadoff HR mark.
+5	137568	5ab9	 wins: new season record!
+5	137604	13f1	 wins: ties season record.
+5	137648	4467	 wins: new career record!
+5	137680	3521	 wins: ties career record.
+5	137716	840c	 losses: ended up setting a new season record.
+5	137768	fe0d	 losses: ended up tying the season record.
+5	137816	d57f	 losses: ended up setting a career record.
+5	137864	2bb0	 losses: ended up tying the career record.
+5	137908	83a7	 saves: new season record!
+5	137952	e27b	 saves: ties season record.
+5	137996	4185	 saves: new career record!
+5	138040	301a	 saves: ties career record.
+5	138080	9ceb	 SO: new season record!
+5	138120	4511	 SO: ties season record.
+5	138164	17e1	 SO: new career record!
+5	138200	fab3	 SO: ties career record.
+5	138240	b856	 doubles,
+5	138264	0983	New season 2B mark!
+5	138292	b856	 doubles,
+5	138316	c75f	Ties season 2B mark.
+5	138344	b856	 doubles,
+5	138368	8953	New career 2B mark!
+5	138392	b856	 doubles,
+5	138416	324d	Ties career 2B mark.
+5	138440	08f1	 triples,
+5	138464	fe23	New season 3B mark!
+5	138492	08f1	 triples,
+5	138516	0504	Ties season 3B mark.
+5	138544	08f1	 triples,
+5	138568	cdf7	New career 3B mark!
+5	138592	08f1	 triples,
+5	138616	d4cc	Ties career 3B mark.
+5	138640	a525	 sac bunts,
+5	138664	14f1	New season SH mark!
+5	138688	a525	 sac bunts,
+5	138712	bd0d	Ties season SH mark.
+5	138736	a525	 sac bunts,
+5	138756	a795	Career SH record!
+5	138776	a525	 sac bunts,
+5	138796	011f	Ties career SH rec
+5	138816	bee7	 sac flies,
+5	138840	7b41	New season SF mark!
+5	138864	bee7	 sac flies,
+5	138888	bb8c	Ties season SF mark.
+5	138912	bee7	 sac flies,
+5	138932	5e1b	Career SF record!
+5	138952	bee7	 sac flies,
+5	138972	81d1	Ties career SF rec
+5	138992	1c92	Leadoff HR on opening day
+5	139024	8bdb	Leadoff Home Run
+5	139044	ec06	1st Pro Leadoff HR
+5	139084	d632	Both-Side HR
+5	139104	f1aa	1st Pro Both-Sides HR
+5	139136	2fca	1st Pro Grand Slam
+5	139164	012a	1st Pro Pinch HR
+5	139192	1ae6	1st Pro Walk-Off Hit
+5	139224	cf2a	1st Pro Walk-Off HR
+5	139256	595d	Hit for the Cycle!
+5	139276	44f9	 cycle hits!
+5	139304	1f67	Perfect Game!
+5	139320	4043	 perfect games!
+5	139344	3d7c	No-Hitter!
+5	139376	5e73	 no-hitters!
+5	139408	4d76	All-Inning SO!
+5	139432	5b19	 all-inning SO games!
+5	139456	cf98	One-Pitch Win
+5	139472	c0e0	One-Pitch Save
+5	139496	5727	.300, 30 HR, 30 SB
+5	139520	d766	Apr. Monthly MVP
+5	139544	7429	May Monthly MVP
+5	139568	0f5b	June Monthly MVP
+5	139592	28de	July Monthly MVP
+5	139616	b6ee	Aug. Monthly MVP
+5	139640	141c	Sep. Monthly MVP
+5	139664	d766	Apr. Monthly MVP
+5	139688	7429	May Monthly MVP
+5	139712	0f5b	June Monthly MVP
+5	139736	28de	July Monthly MVP
+5	139760	b6ee	Aug. Monthly MVP
+5	139784	141c	Sep. Monthly MVP
+5	139816	05c0	 Saves
+5	139824	01b7	ERA
+5	139832	b1ff	First to 10 HR in CL
+5	139860	5c7e	First to 10 HR in PL
+5	139888	7b3b	First to 10 HR in NPB
+5	139912	ccc9	First to 20 HR in CL
+5	139940	f11b	First to 20 HR in PL
+5	139968	078a	First to 20 HR in NPB
+5	139992	7d1c	First to 30 HR in CL
+5	140020	d080	First to 30 HR in PL
+5	140048	9ea5	First to 30 HR in NPB
+5	140072	1236	First to 10 W in CL
+5	140100	dec1	First to 10 W in PL
+5	140128	1b72	First to 10 W in NPB
+5	140152	6a02	 Batting Title
+5	140176	8b61	 HR: HR King
+5	140200	bf43	 RBI: RBI King
+5	140220	9215	 SB: Steals King
+5	140240	06c4	 HR: 2 Crowns, AVG/HR
+5	140268	e1da	 RBI: 2 Crowns, AVG/RBI
+5	140296	3c7f	 SB: Batting/Steals Titles
+5	140328	3c02	 RBI 3-Crown
+5	140344	471d	 RBI: 2 Crowns, HR/RBI
+5	140372	021b	Japan Series MVP, MVP & ROY
+5	140416	eba0	Japan Series MVP
+5	140444	dc27	Won Japan Series MVP & MVP
+5	140480	6744	Won Japan Series MVP & ROY
+5	140516	deef	Won MVP & ROY
+5	140540	ee0f	Won MVP
+5	140556	4a85	Won ROY
+5	140572	690d	Won Sawamura
+5	140588	c560	Won Best Nine
+5	140608	c756	Won Golden Glove
+5	140640	6041	Won Best Nine & Golden Glove
+5	140680	1958	 won
+5	140688	b707	Win #1
+5	140696	6cef	ERA Title
+5	140712	0a0d	SO Title
+5	140724	0f5e	Win% Title
+5	140736	2ccc	Top Setup
+5	140752	2383	Most Saves
+5	140768	d73c	Hit a birthday HR
+5	140792	7036	Won on birthday
+5	140816	6a30	Saved on birthday
+5	140840	701f	Lost on birthday
+5	140868	51a0	 yr streak: 10+ HR!
+5	140896	e1f2	 yr streak: 30 HR!
+5	140920	af66	 yr streak: 40 HR!
+5	140944	6245	 yr streak: 50 HR!
+5	140968	9c3a	 yr streak: 100 H!
+5	140992	d1d7	 yr streak: 200 H!
+5	141016	278d	 yr streak: 100 RBI!
+5	141040	9ef1	 yr streak: 50 SB!
+5	141064	e220	 yr streak: 50 Sac!
+5	141088	f6e0	Join
+5	141096	532b	Draft
+5	141108	b0f3	 pk,
+5	141120	7c31	 joins
+5	141128	5bf8	 joined.
+5	141140	3ff5	 No. is
+5	141152	d85a	Gnts
+5	141160	3df5	Chun
+5	141168	6600	Hiro
+5	141176	8a28	Yakult
+5	141188	ebe6	Yoko
+5	141196	eb3d	Hans
+5	141204	6ad5	Orix
+5	141216	f375	Sei
+5	141224	bd70	N-Ham
+5	141236	66bf	Kint
+5	141244	bc67	Daiei
+5	141256	8437	Lotte
+5	141264	d410	Rak
+5	141272	507a	SoftBank
+5	141288	aa1e	Trade
+5	141300	d986	 joined by trade. No. is
+5	141340	7b4c	 joined. No. is
+5	141360	d780	FA rights
+5	141372	af7c	FA join
+5	141392	7c31	 joins
+5	141400	55ea	Retired
+5	141412	dc6a	Retired
+5	141424	28d3	Released
+5	141436	de18	 member.
+5	141448	d785	 met
+5	141464	a6d7	 engd.
+5	141472	c56f	 wed
+5	141480	490c	 rewed
+5	141488	f13f	 split
+5	141496	8212	Child born
+5	141508	c9fd	Son1
+5	141516	7a24	Son2
+5	141524	1aed	Son3
+5	141532	b449	Son4
+5	141540	fa93	Son5
+5	141548	af3d	Dau1
+5	141556	76c0	Dau2
+5	141564	9c9a	Dau3
+5	141572	f5ec	Dau4
+5	141580	c281	Dau5
+5	141588	b473	Born
+5	141600	1958	 won
+5	141608	7f95	Win Trophy
+5	141632	ff46	Shutout Trophy
+5	141656	fd73	Complete Game Trophy
+5	141680	af53	Save Trophy
+5	141704	2c9b	Hold Trophy
+5	141728	5575	Strikeout Trophy
+5	141752	11f3	Single Trophy
+5	141784	f000	Double Trophy
+5	141816	423f	Triple Trophy
+5	141852	2fb4	3-Hit Game Trophy
+5	141876	99ca	Home Run Trophy
+5	141904	cc09	Grand Slam Trophy
+5	141936	e727	Pinch HR Trophy
+5	141968	c3e2	Walk-Off Hit Trophy
+5	141996	bcb0	Walk-Off HR Trophy
+5	142032	f88b	Out-of-Park HR Trophy
+5	142064	cbfc	Signboard HR Trophy
+5	142100	aff2	150 m HR Trophy
+5	142136	f75b	Steal Trophy
+5	142160	612f	Hero Trophy
+5	142184	dbe3	00M yen player
+5	142208	f5b1	Top P salary
+5	142224	f6b0	Top bat salary
+5	142240	a915	Top CL salary
+5	142264	50c1	Top PL salary
+5	142288	787b	Top NPB salary
+5	142304	7843	All-Star debut
+5	142324	506f	All-Star debut, mgr's pick
+5	142356	01bd	Club began
+5	142368	866f	Golf skill: A
+5	142388	01fd	Fishing skill: A
+5	142408	70b0	Culture skill: A
+5	142428	5941	R/C Car skill: A
+5	142452	dd1b	Mahjong skill: A
+5	142472	c51f	Fashion skill: A
+5	142496	c358	Video Game skill: A
+5	142520	1830	Drinking skill: A
+5	142544	3362	Top Elite
+5	142560	5189	Elite
+5	142572	516f	Mid-tier
+5	142584	6e3b	Fell to mid-tier
+5	142604	fb8b	Donations 50M+ yen
+5	142632	a015	Donations 100M+ yen
+5	142656	ff6d	Donations 300M+ yen
+5	142680	f6a8	Donations 500M+ yen
+5	142704	3708	Donations 1,000M+ yen
+5	142728	7a7d	Named to elite squad
+5	142756	ebbd	First auction
+5	142780	2326	First signing
+5	142800	aadd	Won vs all 12 teams
+5	142828	d22d	Saved vs all 12 teams
+5	142856	6591	HR vs all 12 teams
+5	142880	fe1e	All trophies collected
+5	142912	e6ae	All stadium trophies collected
+5	142952	70e7	1st start
+5	142964	2ce3	1st opener
+5	142980	74e0	1st hero interview
+5	143008	440b	Retd No.
+5	143024	354b	Number
+5	143036	8756	Accepted manager offer
+5	143064	62a1	Accepted coach offer
+5	143096	19b4	Declined manager offer
+5	143120	90b4	Declined coach offer
+5	143148	c589	Can now visit the dojo
+5	143176	aed5	Became player-manager
+5	143208	5bf8	 joined.
+5	343716	35e9	All
+5	539938	5083	 box
+5	540188	5083	 box
+5	541840	5083	 box
+5	814572	d85a	Gnts
+5	814580	3df5	Chun
+5	814588	6600	Hiro
+5	814596	8a28	Yakult
+5	814608	ebe6	Yoko
+5	814616	eb3d	Hans
+5	814624	d410	Rak
+5	814632	f375	Sei
+5	814640	bd70	N-Ham
+5	814652	6ad5	Orix
+5	814664	8437	Lotte
+5	814672	507a	SoftBank
+5	814688	fa9b	Be Japan champs!
+5	814708	fa9b	Be Japan champs!
+5	814728	d527	Win the title!
+5	814744	d527	Win the title!
+5	814760	7d0a	Finish in top 3!
+5	814780	7d0a	Finish in top 3!
+5	814800	760f	Escape last place!
+5	814820	760f	Escape last place!
+5	814840	9b94	Reach the Climax Series!
+5	814880	9b94	Reach the Climax Series!
+5	814920	e1b0	 yrs since title: win!
+5	814944	e1b0	 yrs since title: win!
+5	814968	7cc8	Repeat as CL champs!
+5	814996	7cc8	Repeat as CL champs!
+5	815024	f865	Repeat as PL champs!
+5	815052	f865	Repeat as PL champs!
+5	815080	6a08	CL V
+5	815096	82d2	: Go win!
+5	815108	6a08	CL V
+5	815124	3337	PL V
+5	815140	3337	PL V
+5	815156	f728	 games up
+5	815168	f728	 games up
+5	815180	f97b	Be .500+ at the break
+5	815208	f97b	Be .500+ at the break
+5	815240	3206	Win opener!
+5	815256	3206	Win opener!
+5	815272	0c64	Get a fast start!
+5	815296	0c64	Get a fast start!
+5	815320	c095	Stop them clinching!
+5	815348	c095	Stop them clinching!
+5	815376	489d	Win the Death Road
+5	815396	489d	Win the Death Road
+5	815416	84ba	Win top series
+5	815440	84ba	Win top series
+5	815464	417e	Sweep top series
+5	815488	417e	Sweep top series
+5	815512	53b6	Birthday win for coach!
+5	815540	53b6	Birthday win for coach!
+5	815568	9e6c	Hometown pride!
+5	815588	9e6c	Hometown pride!
+5	815608	af12	Birthday win for mgr!
+5	815636	af12	Birthday win for mgr!
+5	815664	9d7b	Birthday win for wife!
+5	815688	9d7b	Birthday win for wife!
+5	815712	16b2	Birthday win for child!
+5	815740	16b2	Birthday win for child!
+5	815768	9ab6	Anniversary win!
+5	815788	9ab6	Anniversary win!
+5	815808	4324	End the skid
+5	815824	4324	End the skid
+5	815840	5b31	Golden Glove
+5	815864	5b31	Golden Glove
+5	815888	3dd1	Best Nine
+5	815908	3dd1	Best Nine
+5	815928	fabb	Season MVP
+5	815948	fabb	Season MVP
+5	815968	3e4e	ROY
+5	815980	3e4e	ROY
+5	815992	269b	Title
+5	816008	269b	Title
+5	816024	6be5	Japan Series MVP
+5	816048	6be5	Japan Series MVP
+5	816072	5505	All-Star MVP
+5	816096	5505	All-Star MVP
+5	816120	11d3	Most Wins
+5	816132	11d3	Most Wins
+5	816144	06af	ERA Title
+5	816164	06af	ERA Title
+5	816184	cb31	Saves Title
+5	816200	cb31	Saves Title
+5	816216	cd30	SO Title
+5	816232	cd30	SO Title
+5	816248	726f	Top Setup Man
+5	816268	726f	Top Setup Man
+5	816288	521d	Win % Title
+5	816304	521d	Win % Title
+5	816320	bc22	AVG Title
+5	816336	bc22	AVG Title
+5	816352	0e57	HR King
+5	816368	0e57	HR King
+5	816384	9242	RBI King
+5	816396	9242	RBI King
+5	816408	232e	SB King
+5	816420	232e	SB King
+5	816440	89a9	Season: 20 wins
+5	816472	4e7e	Season: 15 wins
+5	816496	8a5f	10+ Wins
+5	816512	57a3	Season: 10 wins
+5	816536	3e3b	50 Saves
+5	816548	391a	Season: 50 saves
+5	816576	b823	40 Saves
+5	816588	df68	Season: 40 saves
+5	816616	2249	30 Saves
+5	816628	b53b	Season: 30 saves
+5	816656	d111	200 SO
+5	816672	2791	Season: 200 SO
+5	816696	cd94	Reach min. IP
+5	816716	cd94	Reach min. IP
+5	816736	5803	15 W run
+5	816748	5803	15 W run
+5	816760	131b	10 W run
+5	816772	131b	10 W run
+5	816784	5555	-G save run
+5	816800	5555	-G save run
+5	816816	c161	200 hits
+5	816832	2721	Season: 200 hits
+5	816856	394d	50 HR
+5	816868	22d7	Season: 50 HR
+5	816888	0388	40 HR
+5	816900	b6ba	Season: 40 HR
+5	816920	31b3	30 HR
+5	816932	abc7	Season: 30 HR
+5	816952	7439	100 RBI
+5	816964	e2ff	Season: 100 RBI
+5	816984	9697	50 SB
+5	816996	5a30	Season: 50 SB
+5	817016	4a1e	30 SB
+5	817028	19f1	Season: 30 SB
+5	817048	9cfa	.300 Hitter
+5	817064	862a	Qualify and hit over .300 at season end
+5	817116	76f3	.400 Hitter
+5	817132	47bc	Qualify and hit over .400 at season end
+5	817184	9395	.300/30 HR
+5	817196	9395	.300/30 HR
+5	817208	dd2e	30 HR 100 RBI
+5	817228	dd2e	30 HR 100 RBI
+5	817248	56f8	.300/30 HR/100 RBI
+5	817272	56f8	.300/30 HR/100 RBI
+5	817296	8c06	.300/30 HR/30 SB
+5	817316	8c06	.300/30 HR/30 SB
+5	817336	0696	.300/40 HR/40 SB
+5	817356	0696	.300/40 HR/40 SB
+5	817376	9917	Reach min. PA
+5	817392	9917	Reach min. PA
+5	817408	e742	All Games
+5	817420	e742	All Games
+5	817432	9fb1	Play 100 games
+5	817448	9fb1	Play 100 games
+5	817464	e849	Crown
+5	817472	06c7	Win AVG, HR & RBI titles
+5	817512	b587	-G hit run
+5	817528	b587	-G hit run
+5	817544	70cb	-G HR run
+5	817560	70cb	-G HR run
+5	817576	25bd	-G RBI run
+5	817592	25bd	-G RBI run
+5	817608	c526	-PA on base
+5	817624	c526	-PA on base
+5	817640	70df	-AB hit run
+5	817656	70df	-AB hit run
+5	817672	3435	-PA HR run
+5	817688	3435	-PA HR run
+5	817704	8d22	Monthly MVP
+5	817720	8d22	Monthly MVP
+5	817736	035d	New season W record
+5	817760	b54f	Set new season W record
+5	817788	84be	New season SV record
+5	817816	d19a	Set new season SV record
+5	817848	f534	New season SO record
+5	817876	c94a	Set new season SO record
+5	817912	bd27	New season AVG record
+5	817936	9b5c	Set new season AVG record
+5	817968	0ce8	New season H record
+5	817992	d67e	Set new season H record
+5	818020	6e37	New season HR record
+5	818048	400d	Set new season HR record
+5	818080	df1e	New season RBI record
+5	818104	987b	Set new season RBI record
+5	818132	3662	First Win
+5	818144	70be	1st win (1st Team)
+5	818168	a5b2	1st hit
+5	818184	725e	1st hit (1st Team)
+5	818208	2f51	First HR
+5	818224	dd62	1st HR (1st Team)
+5	818252	33c6	1st Team
+5	818264	8060	Start on 1st Team
+5	818288	7843	All-Star debut
+5	818308	7843	All-Star debut
+5	818328	a91e	To 1st
+5	818340	a91e	To 1st
+5	818352	4619	Start a game
+5	818368	4619	Start a game
+5	818384	04d1	Become regular
+5	818400	04d1	Become regular
+5	818416	4802	1st Team All Year
+5	818436	4802	1st Team All Year
+5	820256	49f8	Weight training
+5	820280	3099	Tube training
+5	820304	d16c	Throwing
+5	820316	7cce	Toss
+5	820324	526a	200 pitches
+5	820344	a8b6	Pitch form check
+5	820368	273b	Play catch
+5	820384	4f50	Shadow pitching
+5	820404	8acb	BP throw
+5	820416	6ff6	Location work
+5	820432	aa1c	Sprints
+5	820444	eb3a	Running
+5	820456	c120	Stair runs
+5	820472	6579	Long run
+5	820484	bc3c	Marathon
+5	820496	46d0	Swings
+5	820504	73c6	Swing form check
+5	820528	563b	Tee batting
+5	820548	fcc8	Toss batting
+5	820568	6ee3	Bats
+5	820576	a778	Pushup
+5	820584	6267	Dumbbell
+5	820596	434f	Long tee
+5	820612	ce10	Bench Press
+5	820628	cb91	Free bat
+5	820640	eb3a	Running
+5	820656	a15b	Short sprints
+5	820672	f64c	Hill sprints
+5	820688	c120	Stair runs
+5	820704	7ac8	Baserunning
+5	820728	273b	Play catch
+5	820744	81be	Fungo
+5	820752	111c	Close fungo
+5	820768	c68f	Def.
+5	820776	c8f8	100 fungo
+5	820792	3651	Throwing check
+5	820816	3099	Tube training
+5	820840	7cce	Toss
+5	820848	8acb	BP throw
+5	820860	b983	Overhead Press
+5	820884	a61b	Teamwork
+5	820896	a626	Rest
+5	820904	b962	Orig. Fork Tips
+5	820928	3e83	Precise Pitch
+5	820944	5442	Heater
+5	820956	328e	Iron Arm
+5	820968	7e37	Endless Gas Tips
+5	820988	ecc2	Razor Shoot Tips
+5	821012	b4c5	Speed Mix
+5	821024	9015	Emo Ball Tips
+5	821040	a25f	No-Hitter Tips
+5	821064	f3f6	Iron Mask
+5	821076	1756	Grit
+5	821088	a821	Monster
+5	821100	9cba	Ultra Slow
+5	821112	849f	Vs Lefties
+5	821128	2320	Fire Craft
+5	821140	ae4d	Needle Eye
+5	821156	1d6f	Weed Grit
+5	821168	4166	Toughness
+5	821184	cdb5	Bancho
+5	821196	4078	Hot Arm
+5	821208	89a1	Yone Ball
+5	821224	e6c6	Yoshi Ball
+5	821240	4e87	Ace Craft
+5	821256	84a7	Perfect Game
+5	821272	3b43	Ult. Slider
+5	821288	574b	Ult. Curve
+5	821300	98d1	Ult. Fork
+5	821320	70d3	Ult. Sinker
+5	821340	5728	Ult. Shoot
+5	821360	5aba	Trick Palm
+5	821376	d5ff	Submarine
+5	821392	d0b1	Closer Craft
+5	821408	4bba	Fine Craft
+5	821420	a6f9	SO Craft
+5	821436	4aa2	Legend Slider
+5	821456	39fb	Legend Curve
+5	821472	e603	Legend Fork
+5	821488	fbd0	Legend Sinker
+5	821508	26d2	Legend Shoot
+5	821528	856b	Legend Palm
+5	821544	6ab1	Sharp Edge
+5	821560	f7d4	Fiery Stopper
+5	821580	dfd9	Iron Will
+5	821596	12ed	Daimajin
+5	821608	8ea2	Zen Focus
+5	821624	44ba	SO Secret
+5	821636	6339	Sharpness
+5	821648	0169	Form Tips
+5	821664	ae0c	Legend Slurve
+5	821688	f95e	Nobushi Ball
+5	821704	b5d0	Soul Pitch
+5	821720	070e	Switch Hit
+5	821732	64cc	Iron Man
+5	821748	1ad4	Tri-Crown
+5	821760	e618	Master
+5	821776	f8d6	Hit Machine
+5	821792	6caa	Leadoff
+5	821808	5964	Steady Vet
+5	821824	4802	Bullet Liners
+5	821844	5e03	Clutch Bat
+5	821856	6786	Harudanji
+5	821872	d019	Artisan
+5	821884	24d9	Triple Three
+5	821904	9c35	Full Swing
+5	821924	0ce9	Iron Will
+5	821940	7f81	Artistry
+5	821952	8c17	Small Slugger
+5	821972	a328	Lefty Killer
+5	821992	fd8e	Slugger Tips
+5	822008	5e6a	Mr. Red Helmet
+5	822028	9902	Bancho
+5	822040	9483	Samurai
+5	822056	9411	Cleanup Bat
+5	822072	b29c	One-Leg
+5	822084	91bd	Naniwa Beast
+5	822104	fb45	Bunbunmaru
+5	822120	a674	Mr. Lotte
+5	822144	5e61	Machine Gun
+5	822160	68e5	Artist Tips
+5	822176	e8b0	Surprise
+5	822188	bee0	Bunt Tips
+5	822200	269c	Mister
+5	822216	867d	Spray Hit
+5	822232	c4e8	V9 Brain
+5	822248	8938	Ushiwaka
+5	822260	92b4	Plate Wall
+5	822276	6a56	Supercar Speed
+5	822296	5535	Hell Fungo
+5	822308	0052	Guts Tips
+5	822320	2ae8	Wall Wizard
+5	822340	7aaa	Blue Bolt
+5	822356	3345	Jump Catch Tips
+5	822384	606f	Cannon Arm
+5	822396	f45c	Fld Art
+5	822408	41db	ID Baseball
+5	822424	7f0b	Red Star Tips
+5	822444	844f	Chatter
+5	822456	8448	Golden Glove Catch
+5	822480	650b	Art Arm
+5	822492	3846	Throwing Tips
+5	822512	daec	Fld Pro
+5	822884	410c	Apt.
+5	822896	2353	Condo
+5	822908	785e	House
+5	822920	9228	Hall
+5	822928	4aec	Mini Car
+5	822944	1b4f	Compact Car
+5	822960	9b46	Sedan
+5	822968	c81a	Minivan
+5	822980	c7f8	Sports Car
+5	823000	e9f8	Luxury
+5	823084	4f0e	Mgr.
+5	823096	735d	Coach
+5	823104	7c6b	Vet
+5	823112	efac	Peer
+5	823120	9de5	Rook
+5	823176	d774	Year 1 in the dorm. Fine for one.
+5	823224	c89b	Has all the basics.|Too small for marriage.
+5	823288	ed6c	Comfy family living. A good home|is the key to a long pro career.
+5	823364	7f13	A happy family, a happy you.|Your castle.
+5	823416	c72c	A paradise for top stars only.|Refreshes body and mind.
+5	823488	a315	Fine for getting around.
+5	823528	76f2	Great value and easy to use.
+5	823576	618b	A roomy all-purpose car.
+5	823624	0e8f	Great for family, girlfriend, groups.
+5	823664	6848	A spartan car that sharpens|your senses.
+5	823720	59b4	Power and status. A top star's mark.
+5	823776	7ba8	Sportscaster who actually knows|baseball inside out.
+5	823836	74ad	Flight attendant.|A graceful, elegant grown woman.
+5	823912	8325	Pro golfer.|A bundle of energy. Hates to lose.
+5	824000	3fc1	Female doctor. Rough talk, top skill.|Too busy to care how she dresses.
+5	824080	3d8d	A student with a convenience store job.|Loves pro baseball and high school ball.
+5	824164	2d61	Her sportscasting has gained gravitas.
+5	824216	fa22	Handles both her flight attendant job|and the housework.
+5	824280	40c0	Still golfs. As a fellow athlete, she|gives good advice. Tough on winning.
+5	824368	1633	Still a busy doctor, but she also|looks after the home.
+5	824440	fc84	A good wife who keeps a solid home.|Gets what a player does.
+5	824512	b483	Lets you ask about registered name|changes etc.
+5	824568	a665	Practice becomes more effective.
+5	824616	c252	Good advice can sometimes earn you|a Vessel.
+5	824688	1ad4	Hang out after practice or take advice|and you may earn a Vessel.
+5	824772	ab9f	Coach the juniors to raise the whole|team's strength.
+5	824856	51ef	Only while stats are low, the ability|Vessel holds less.
+5	824928	f0fe	Raise Bond to unlock a Vessel at your|regular shop.
+5	825004	d2df	More My Soul at Contract Renewal.
+5	825048	1295	Lessens stat loss when injured.
+5	825092	55e3	Raise Bond to unlock a banquet|Vessel.
+5	825152	451d	Raise Bond to unlock the equipment|change Vessel.
+5	832032	ea1f	Hits fly higher.
+5	832064	bc09	Contact cursor gets bigger.
+5	832096	aad2	Slightly more carry on the ball.
+5	832136	caa8	More carry on the ball.
+5	832176	d343	Much more carry on the ball.
+5	832216	4d69	Run faster.
+5	832232	5fe2	Throw faster.
+5	832252	11bb	Better fielding.
+5	832272	a9a1	Makes fewer errors.
+5	832296	fef1	Top speed goes up.
+5	832316	099d	Accuracy up a little.
+5	832344	f6e6	Accuracy goes up.
+5	832368	51a1	Accuracy up a lot.
+5	832400	b0cf	Pitching stamina up a little.
+5	832440	9b4e	Pitching stamina goes up.
+5	832472	925c	Pitching stamina up a lot.
+5	832512	ea1f	Hits fly higher.
+5	832544	bc09	Contact cursor gets bigger.
+5	832576	aad2	Slightly more carry on the ball.
+5	832616	caa8	More carry on the ball.
+5	832656	d343	Much more carry on the ball.
+5	832696	4d69	Run faster.
+5	832712	5fe2	Throw faster.
+5	832732	11bb	Better fielding.
+5	832752	a9a1	Makes fewer errors.
+5	832776	fef1	Top speed goes up.
+5	832796	099d	Accuracy up a little.
+5	832824	f6e6	Accuracy goes up.
+5	832848	51a1	Accuracy up a lot.
+5	832880	b0cf	Pitching stamina up a little.
+5	832920	9b4e	Pitching stamina goes up.
+5	832952	925c	Pitching stamina up a lot.
+5	832992	0b85	Becomes a hit.
+5	833008	d9a0	Uses power swings often.
+5	833036	af94	Uses contact swings often.
+5	833072	561d	Swings more aggressively.
+5	833104	4ca9	Swings less often.
+5	833132	cb82	Steals bases aggressively.
+5	833168	c173	Rarely steals bases.
+5	833192	b6ad	Runs the bases aggressively.
+5	833224	bcb6	Plays a shallow defense.
+5	833256	81d6	Pitches mostly fastballs.
+5	833288	c965	Pitches mostly breaking balls.
+5	833320	1937	Pitches quicker.
+5	833344	f129	Raises teammates' stats when he plays.
+5	833392	316b	Becomes a mood maker.
+5	833416	c07a	Plays for the good of the team.
+5	833452	8d83	Hitting improves when batting 4th.
+5	833492	dd19	Stronger in the clutch.
+5	833520	0a57	Better vs. LHP
+5	833540	947e	Less fielding drop at sub-positions.
+5	833588	a3a6	Less injury-prone.
+5	833608	0342	Better at stealing
+5	833628	801f	Better running.
+5	833648	03d0	Better throwing.
+5	833668	cea4	Gets more stable.
+5	833696	91ac	Hits come more easily
+5	833728	2c7f	Homers come more easily
+5	833768	1c1f	Hits hard to the opposite field
+5	833808	831b	Wide contact keeps opposite-field|balls in play.
+5	833876	78a6	Gets hot more easily.
+5	833904	ffc8	Learns Tough Out.
+5	833928	0dd8	Hits better after a teammate's hit.
+5	833972	a885	Better at bunting
+5	833996	b4e7	Becomes a bunt master.
+5	834024	4f7b	More infield hits.
+5	834056	d5b4	Good at 1st pitches.
+5	834080	705f	Better at making chances.
+5	834112	98f8	Hits well with bases loaded.
+5	834148	8b52	Hits well in walk-off spots.
+5	834188	0033	Stats rise when behind in 7th+.
+5	834232	cc89	Better as pinch hitter
+5	834256	6684	Plows into the catcher at home.
+5	834292	d42a	Can slide into 1st on close plays.
+5	834336	2ab9	Can slide in on close plays.
+5	834376	e5f0	Shows veteran skill on defense.
+5	834416	d0e4	Draws out pitchers' skill.|(Catchers)
+5	834480	3ffe	Draws out pitchers' best.|(Catchers)
+5	834544	9218	Can bowl over sliding runners|(Catcher only).
+5	834624	fd59	Hits like a seasoned veteran.
+5	834664	6085	Can throw back like an arrow.
+5	834700	a08a	Lowers batter's stats.
+5	834728	fd21	Runs to avoid double plays.
+5	834776	deae	Better eye for balls.
+5	834800	b67a	Good at low pitches.
+5	834824	0aac	Good at high pitches.
+5	834848	9d72	Stats rise in certain situations.
+5	834888	9a9f	Pulled power swings carry farther.
+5	834928	803f	Stronger in a pinch.
+5	834956	352f	Stronger vs. lefty bats.
+5	834984	1782	Avoids a drop with runners on base.
+5	835028	cbe4	Tougher to hit.
+5	835048	661a	Fastball gains more life.
+5	835084	ae11	Sharper breaks.
+5	835108	71a0	Better quick delivery.
+5	835144	8a5d	Recovers faster.
+5	835172	bb17	Learns the Gyroball.
+5	835200	b1cd	Better control on low pitches.
+5	835240	f8ff	Balls fly less far.
+5	835264	0aeb	Learns Safe Pitch.
+5	835288	b5da	Stronger late on.
+5	835312	3544	Better pickoffs
+5	835332	866b	Breaking ball and fastball motions match.
+5	835380	fef7	Reacts faster to comebackers.
+5	835416	2ead	Fortune goes up.
+5	835436	2904	Hides fatigue and nerves.
+5	835464	76d7	Pitches with fighting spirit.
+5	835504	d1f1	Stats rise once at 2 strikes.
+5	835548	030f	Release point harder to read.
+5	835592	a1ba	Intimidates the opposition.
+5	835628	8b1d	Strong in Japan Series.
+5	835656	239c	Stronger at home.
+5	835684	d545	Stronger on the road.
+5	835712	5d32	Stronger in day games.
+5	835736	5122	Stronger in night games.
+5	835764	8cc1	Stronger in All-Star Game.
+5	835792	9ba3	Learns Couple Power.
+5	835816	3b97	Gets stronger in dome games.
+5	835848	be1e	Strong in summer
+5	835872	1d03	Stronger with 1 runner on.
+5	835904	8e89	Stronger with 2 runners on.
+5	835936	4aa9	Stronger vs. his old club.
+5	835964	68d1	Strong in April.
+5	835984	6834	Strong in May.
+5	836004	1099	Strong in June.
+5	836024	57f0	Strong in July.
+5	836044	3c14	Strong in Aug.
+5	836064	1842	Strong in Sept.
+5	836084	0f8a	Up vs. Giants.
+5	836104	0518	Up vs. Chunichi.
+5	836124	6080	Up vs. Hiroshima.
+5	836144	8e40	Up vs. Yakult.
+5	836168	5011	Up vs. Yokohama.
+5	836188	bc08	Up vs. Hanshin.
+5	836208	8981	Up vs. Rakuten.
+5	836232	1837	Up vs. Nippon-Ham.
+5	836256	28b7	Up vs. Seibu.
+5	836276	2364	Up vs. Orix.
+5	836304	1e7d	Up vs. Lotte.
+5	836328	cdab	Up vs. SoftBank.
+5	836360	e3b6	Better in Interleague
+5	836384	50eb	Stats rise in Sunday games.
+5	836416	c00d	Stats up vs. new foes.
+5	836440	e368	Stats rise vs. import players.
+5	836476	6289	Stats up as leadoff.
+5	836508	276a	Beats strikeout trouble.
+5	836536	baa0	Overcomes errors in key spots.
+5	836584	32d0	Overcomes walk trouble.
+5	836616	57bd	Beats giving up homers.
+5	836656	8740	Beats losing at the wire.
+5	836696	00d9	Beats slow starts.
+5	836728	9a18	Goes all out in any spot.
+5	836764	de0a	Calms a temper.
+5	836784	3070	Fixes Shuuto spin on fastballs.
+5	836824	ab7c	Beats wild streaks.
+5	836848	292c	Learn or improve the Slider.
+5	836888	aae6	Learn or improve the Curve.
+5	836924	fd71	Learn or improve the Fork.
+5	836964	9d7b	Learn or improve the Sinker.
+5	837004	b8a5	Learn or improve the Shuuto.
+5	837044	1bc6	Learn or improve the Palm.
+5	837080	e2e6	Learn or improve the Knuckle.
+5	837120	d309	Learn or improve the V-Slider.
+5	837164	4efb	Learn or improve the Splitter.
+5	837200	f50e	Learn or improve the Screwball.
+5	837240	1952	Learn or improve the Slow Curve.
+5	837284	eeb3	Learn or improve the Hard Slider.
+5	837328	deb3	Learn or improve the Changeup.
+5	837372	1156	Learn or improve the Drop.
+5	837416	c6ed	Learn or improve the Hard Sinker.
+5	837456	b389	Learn or improve the Slurve.
+5	837496	cc45	Learn or improve the Cutter.
+5	837540	9cab	Learn or improve the Circle Change.
+5	837592	089c	Learn or improve the Hard Shuuto.
+5	837632	e918	Learn or improve the Drop Curve.
+5	837676	8041	Learn or improve the Knuckle Curve.
+5	837720	774d	Learn or improve the 2-Seamer.
+5	837760	bc16	Learn or improve Moving Fastball.
+5	837808	241c	Learn or improve a custom pitch.
+5	837852	f0f3	Do interviews at her visit.
+5	837888	9e65	Take a cheap flight.
+5	837928	2a98	Go to the recommended clinic.
+5	837960	7809	Go to a driving range.
+5	837984	593d	Go to the store Miho works at.
+5	838016	6983	Give Honoka a one-on-one interview.
+5	838064	9854	Head to Luna's clinic.
+5	838088	c9b9	Ask Honoka on a date.
+5	838112	6274	Ask Iori on a date.
+5	838136	d48f	Ask Miho on a date.
+5	838160	34f0	Ask Midori out.
+5	838180	2c41	Ask Luna on a date.
+5	838204	17b2	Confess to Honoka, win her heart.
+5	838240	ff20	Confess to Iori, win her heart.
+5	838276	66f8	Confess to Luna, win her heart.
+5	838312	a85c	Confess to Midori, win her.
+5	838344	8c55	Confess to Miho, win her heart.
+5	838384	dbae	Propose to her.
+5	838408	21ef	You can own a car.|Start with something small...
+5	838488	371f	Befriend a sponsor.
+5	838516	4ff8	Befriend dorm head
+5	838536	524b	Hire an agent.
+5	838560	7324	Get a personal doctor.
+5	838584	97b1	Befriend Mama Akemi.
+5	838608	d335	Befriend club head.
+5	838636	7dac	Drink Pawarin and shake off fatigue.
+5	838680	d3ad	Get a massage, ease fatigue.
+5	838720	df61	Take therapy to turn your slumps around.
+5	838776	d17b	Show your girlfriend your best on the field.|Unusable late season and off-season.
+5	838864	8cb3	Chat and play with your wife and kids|as family time.
+5	838932	b667	Go for a drive to unwind.
+5	838968	d96c	Ask a sponsor for a bat or glove.
+5	839008	a06e	Heal injuries faster.
+5	839040	f0ad	Seek advice.
+5	839056	e51c	Advise your peers and juniors.|But Okui won't listen.
+5	839136	2c82	Unwind at Mama Akemi's place.
+5	839172	d248	Party with supporters' club.
+5	839204	728d	Show the player password.
+5	839232	7db6	Get taken under a senior's wing.|Bond screen: +1 senior slot.
+5	839312	c4d9	Get along well with your peers.|Bond screen: +1 peer slot.
+5	839392	8e40	Be looked up to by juniors.|Bond screen: +1 junior slot.
+5	839472	539d	Command your juniors.|Bond screen gets 2 junior slots.
+5	839556	f83b	Bond screen upgrades go as far as mansions and|fancy cars.
+5	839620	ff4e	Give off a star aura.|Earn more My Spirit at contract time.
+5	839712	39ad	Pass your know-how to peers and juniors.|Training commands open on the Bond screen.
+5	839812	f5c2	Decide to exercise FA rights.|Only from April to October.
+5	839896	26d2	Decide to retire.|Only from April to July.
+5	839980	d724	Ask to change positions.
+5	840008	a0ce	Go on a diet.
+5	840028	6c71	Do weight training.
+5	840056	973a	Sign loads of autographs.

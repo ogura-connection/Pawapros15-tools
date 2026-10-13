@@ -1,0 +1,73 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	112	31f7	CPU talks
+5	2680	1afb	Choose a player to sign.
+5	2800	1bee	Sign this player?
+5	2834	1e56	 has this number.|Is this OK?
+5	2912	8460	Select up to 2 players for talks.
+5	2952	dc55	Talk with chosen players.
+5	2980	6acd	Talk with no one.
+5	3008	55c5	View team players on the list.
+5	3048	6c03	No more talks possible.
+5	3080	26a6	No player chosen for talks.
+5	3112	3346	Choosing players to talk to.
+5	3144	a84b	Choose players to talk with.
+5	3180	2fec	Other clubs deciding. Please wait.
+5	3216	d7cc	Starting FA talks.
+5	3240	9c84	Starting returnee talks.
+5	3278	89c5	Your roster is full, so|you can't negotiate.
+5	3350	71eb	Your pitcher spots are full, so|you can't negotiate.
+5	3426	48e5	Your fielder spots are full, so|you can't negotiate.
+5	3502	a109	You haven't chosen a player to talk to.|Is this OK?
+5	3578	6622	Not enough players for FA|compensation.
+5	3654	3210	Not enough money for the asking|salary and FA compensation.
+5	3730	e6ea	Not enough money.
+5	3770	f08f	Max 3 players per team can be|1st Team for the full season.
+5	3848	9d76	Max 3 players per team can have|a starter role.
+5	3930	88d1	Only 1 player per team can|have the cleanup role.
+5	4006	54c1	Only 1 player per team can|have the DH role.
+5	4076	400f	No DH in the Central League,|so you can't choose this.
+5	4150	cb32	DH is set to Off, so you|can't choose this.
+5	4228	ce1e	Max 3 players per team can have|a starting pitcher role.
+5	4308	27ca	Only 1 player per team can|have the closer role.
+5	4386	5909	A pitcher can have only one|usage condition.
+5	4454	4fea	No open 1st Team slots.
+5	4494	3c01	Coach-career guarantees: max|3 pitchers & 5 fielders|per team.
+5	4572	a4d9	Growth is set to none, so you|can't choose this.
+5	4648	812d	This would exceed the foreign|player limit; can't pick.
+5	4722	94e9	Another starter-only player has the|same position, can't be chosen.
+5	4800	bd72	Choose the terms to offer.
+5	4880	6981	Offering the current terms.
+5	4920	a3ea	Now
+5	4928	2b4c	 terms chosen.
+5	4964	21a3	Cancel the terms now|selected.
+5	5044	fee1	Join a contender
+5	5076	0016	Test my own skills
+5	5096	a99a	Go where I can shine
+5	5124	0e38	Tokyo club
+5	5140	bc28	Osaka club
+5	5156	a026	Test myself abroad
+5	5176	53bf	Choose the players to protect.
+5	5224	437b	You can start negotiations.
+5	5272	4640	End FA compensation.
+5	5296	5e12	Change the players you protect.
+5	5336	0fdd	Choose a compensation method.
+5	5368	d553	Choose the player to acquire.
+5	5404	4ecf	No player can be acquired.
+5	5432	6075	Fielder spots are full.
+5	5464	63fe	Pitcher spots are full.
+5	5496	14d8	Can't acquire this player.
+5	5524	0c7b	You can't offer less than the player's ask.
+5	5572	0886	Protection can't be removed.
+5	5608	59d1	Agent
+5	10282	e6ea	Not enough money.
+5	10320	58a6	 CP or less, please.
+5	10348	ecb9	Not enough funds.
+5	10666	f439	Offer:
+5	10706	9420	Salary: paid
+5	10742	a72e	FA Comp:
+5	10774	aaea	FA Comp (Cash):
+5	10824	f442	Asking salary:
+5	10862	25b2	Total payment:
+5	10890	3959	Offer
+5	10912	a0e8	 max
+5	10922	42c2	, please.
