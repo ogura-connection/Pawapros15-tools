@@ -779,6 +779,10 @@ RENDER = {
     "caption": captioned([15, 15, 14, 12, 11, 10, 8], 15, 13),
     # position words of the main screen (y5_np_0 pages 3 and 7, palettes 32-35): white in a double ring
     "position": banded([3, 5, 7, 9, 11, 13, 15], [3, 3], 2),
+    # the before / after panel of the Equip page (scs_data.arc z3_ikp_0): stat names in palette 2,
+    # Before / After in palettes 14 and 15 (green and yellow letters on a white band)
+    "equipstat": banded([4, 6, 8, 10, 12, 14, 15], [4, 3]),
+    "equipbefore": logo([15, 15, 14, 14, 13, 13, 12, 12, 11], [9, 10], 8, 1, 2, [4, 5]),
     "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),

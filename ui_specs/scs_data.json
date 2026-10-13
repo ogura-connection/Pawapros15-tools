@@ -128,5 +128,26 @@
     {"sprite": "05", "text": "Teammates", "style": "rater149", "font": "ttf:rounded:13:0:0.9:0.6", "valign": "centre", "align": "left"},
     {"sprite": "06", "text": "Scout", "style": "rater148", "font": "ttf:rounded:15:0:0.9:0.6", "valign": "centre", "align": "left"},
     {"sprite": "09", "text": "Kantoku\n& Shacho", "style": "rater147", "font": "ttf:rounded:12:0:0.9:0.5", "valign": "centre", "align": "left"},
-    {"sprite": "0a", "text": "Bucho", "style": "rater150", "font": "ttf:rounded:15:0:0.9:0.6", "valign": "centre", "align": "left"}]}
+    {"sprite": "0a", "text": "Bucho", "style": "rater150", "font": "ttf:rounded:15:0:0.9:0.6", "valign": "centre", "align": "left"}]},
+  {"bank": "z3_ikp_0", "palette": 2, "areas": [[1, 0, 64, 128, 128], [1, 96, 32, 128, 64], [2, 0, 0, 128, 32], [2, 0, 32, 64, 64], [3, 0, 0, 128, 32], [3, 0, 32, 128, 64], [3, 0, 64, 24, 96], [3, 0, 96, 128, 128], [0, 0, 96, 128, 128]], "labels": [
+    {"from": [0, 0, 96, 64, 128], "text": "Before", "style": "equipbefore", "font": "ttf:rounded:12:0:0.9:0.3", "valign": "centre"},
+    {"from": [0, 64, 96, 128, 128], "text": "After", "style": "equipbefore", "font": "ttf:rounded:12:0:0.9:0.3", "valign": "centre"},
+    {"sprite": "0e", "text": "TRJ", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "0f", "text": "CON", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "10", "text": "PWR", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "11", "text": "RUN", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "12", "text": "ARM", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "13", "text": "FLD", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "14", "text": "E RES", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "15", "text": "VELO", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "16", "text": "CTRL", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"sprite": "17", "text": "STAM", "style": "equipstat", "font": "ttf:rounded:12:0:0.9:0.3", "align": "left", "valign": "centre"},
+    {"from": [3, 0, 0, 56, 32], "text": "Slider", "style": "equipstat", "font": "ttf:rounded:11:0:0.85:0.3", "align": "left", "valign": "centre"},
+    {"from": [3, 56, 0, 112, 32], "text": "Curve", "style": "equipstat", "font": "ttf:rounded:11:0:0.85:0.3", "align": "left", "valign": "centre"},
+    {"from": [3, 112, 0, 128, 32], "text": "Fork", "style": "equipstat", "font": "ttf:rounded:11:0:0.85:0.3", "align": "left", "valign": "centre"},
+    {"from": [3, 0, 32, 40, 64], "empty": true},
+    {"from": [3, 40, 32, 96, 64], "text": "Sinker", "style": "equipstat", "font": "ttf:rounded:11:0:0.85:0.3", "align": "left", "valign": "centre"},
+    {"from": [3, 96, 32, 128, 64], "text": "Shuuto", "style": "equipstat", "font": "ttf:rounded:11:0:0.85:0.3", "align": "left", "valign": "centre"},
+    {"from": [3, 0, 64, 24, 96], "empty": true},
+    {"from": [3, 0, 96, 56, 128], "text": "Fastball", "style": "equipstat", "font": "ttf:rounded:11:0:0.85:0.3", "align": "left", "valign": "centre"}]}
  ]}
