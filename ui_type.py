@@ -211,8 +211,8 @@ TAG_GLYPHS = {
           "..###..", "..+#+.."],
     "P": ["#####+", "######", "##..##", "##..##", "##..##", "######", "#####+", "##....", "##....", "##....",
           "##...."],
-    "M": ["##....##", "###..###", "###..###", "########", "########", "##+##+##", "##.##.##", "##....##",
-          "##....##", "##....##", "##....##"],
+    "M": ["##...##", "###.###", "#######", "#######", "##+#+##", "##.#.##", "##...##", "##...##", "##...##",
+          "##...##", "##...##"],
     "a": ["+###+", "##+##", "...##", "+####", "##+##", "##.##", "##+##", "+####"],
     "e": ["+###+", "##+##", "##.##", "#####", "##...", "##...", "##+##", "+###+"],
     "i": ["##", "##", "..", "##", "##", "##", "##", "##", "##", "##", "##"],
@@ -339,13 +339,14 @@ def art_box(page, rect):
     return x0 + xs.min(), y0 + ys.min(), x0 + xs.max() + 1, y0 + ys.max() + 1
 
 
-def shelf_pack(sizes, areas):
+def shelf_pack(sizes, areas, gap=1):
     """Place (w, h) boxes into areas [(page, x0, y0, x1, y1)]: {index: (page, x, y)}. Shelves are as
-    high as the tallest box; widest boxes first."""
+    high as the tallest box; widest boxes first. `gap` clear pixels are left between boxes, so a
+    neighbour never bleeds in when the game filters the texture."""
     height = max(h for _, h in sizes)
     shelves = []
     for page, x0, y0, x1, y1 in areas:
-        for y in range(y0, y1 - height + 1, height):
+        for y in range(y0, y1 - height + 1, height + gap):
             shelves.append([page, x0, y, x1])
     placed = {}
     for i in sorted(range(len(sizes)), key=lambda i: -sizes[i][0]):
@@ -355,7 +356,7 @@ def shelf_pack(sizes, areas):
             raise ValueError("no room for a label %d pixels wide" % w)
         s = min(fits, key=lambda s: s[3] - s[1])                # tightest shelf
         placed[i] = (s[0], s[1], s[2])
-        s[1] += w
+        s[1] += w + gap
     return placed
 
 
@@ -383,14 +384,12 @@ def repack(group, d, bank, pages, patches, project=None):
 
     froms = {(o[0],) + o[1] for o in old.values()}
     group_blanks = {tuple(r) for r in group.get("blank", ())}
-    for i, (page, rect, _) in old.items():
-        if not inside(page, *rect):
-            raise ValueError("label %r is not inside the repack areas" % labels[i].get("text"))
     for p in parts:                                              # nothing else may live in the areas
         key = (p.page, p.x0, p.y0, p.x1, p.y1)
         if key in group_blanks:
             continue
-        if touches(*key) and key not in froms:
+        if (touches(*key) or any(f[0] == key[0] and key[1] < f[3] and f[1] < key[3] and key[2] < f[4]
+                                 and f[2] < key[4] for f in froms)) and key not in froms:
             raise ValueError("sprite %s uses x %d-%d y %d-%d of page %d, inside a repack area"
                              % (p.sprite, p.x0, p.x1, p.y0, p.y1, p.page))
     blanks = {tuple(r) for r in group.get("blank", ())}
@@ -406,7 +405,7 @@ def repack(group, d, bank, pages, patches, project=None):
             art.append((pages[page][ay0:ay1, ax0:ax1].copy(), None))
     height = max(a.shape[0] for a, _ in art)
     placed = shelf_pack([(a.shape[1], height) for a, _ in art], areas)
-    for page, x0, y0, x1, y1 in areas + sorted(blanks):
+    for page, x0, y0, x1, y1 in areas + sorted(blanks) + sorted(froms):
         if page not in pages:
             pages[page] = U.decode_indices(d, *bank["pages"][page]).copy()
         pages[page][y0:y1, x0:x1] = 0

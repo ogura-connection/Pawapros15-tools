@@ -675,7 +675,7 @@
    "areas": [
     [
      7,
-     88,
+     90,
      72,
      128,
      88
@@ -717,20 +717,10 @@
       88,
       96
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       0,
-       66,
-       56,
-       82
-      ],
-      "style": "param",
-      "role": "fill"
-     }
+     "text": "Motivation"
     }
-   ]
+   ],
+   "font": "tag"
   }
  ]
 }
