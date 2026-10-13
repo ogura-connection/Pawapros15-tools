@@ -9,8 +9,9 @@
 
 The .arc files are ELF objects. Their .data holds sprite banks, named by symbol:
   tex_<bank>NN     texture page: 8,192 bytes = 128x128, 4 bits per pixel (GX C4, 8x8 tiles), or
-                   16,384 bytes = 128x128, 8 bits per pixel (GX C8, 8x4 tiles). Other sizes are
-                   not pages and are skipped here.
+                   16,384 bytes = 128x128, 8 bits per pixel (GX C8, 8x4 tiles). Any other size is a
+                   compressed page (see decompress_page): the same 128x128 picture, stored row by
+                   row and packed with the rectangle code the font glyphs use.
   pal_<bank>       RGB5A3 colours, 16 per palette for the 4-bit pages
   opd_<bank>_NN    one sprite: a 10-byte header (byte 0 = number of parts) followed by that many
                    10-byte parts: page (bit 7 = mirrored, bit 6 = another flag), palette,
@@ -113,8 +114,131 @@ def palette_colours(d, pal):
         else np.zeros((0, 4), np.uint8)
 
 
+# ── Compressed pages ──────────────────────────────────────────────────────
+# u16 little-endian header: low 13 bits = number of flag bytes, bit 14 = 4 bits per pixel (rows of
+# 64 bytes, two pixels each), clear = 8 bits per pixel (rows of 128 bytes). Flag bytes follow, then the
+# literal bytes; the symbol is padded to 16 bytes. Rows are plain raster rows, not GX tiles. Going
+# through the page left to right, top to bottom, every byte not already covered takes one flag bit:
+# 0 = one literal byte; 1 = a rectangle (width, height as 2 bits for 1..3, or 00 + 4 bits for 4..19)
+# filled with one literal byte. The font glyphs of fonttex2.rel use the same code (pair_font.py).
+
+def is_compressed(size):
+    return size not in (8192, 16384)
+
+
+def decompress_page(data):
+    """Compressed page -> (raw bytes, row width 64 or 128, bytes of `data` used)."""
+    hdr = data[0] | data[1] << 8
+    nflags, width = hdr & 0x1FFF, 64 if hdr & 0x4000 else 128
+    if hdr & 0x9FFF == hdr and 2 + nflags >= len(data):
+        raise ValueError("not a compressed page")
+    pos, lit, end = 0, 2 + nflags, nflags * 8
+    grid, left, value = bytearray(), [0] * width, [0] * width
+    for _ in range(PAGE):
+        for x in range(width):
+            if left[x]:
+                left[x] -= 1
+                grid.append(value[x])
+                continue
+            flag = data[2 + pos // 8] >> (7 - pos % 8) & 1 if pos < end else 0
+            pos += 1
+            if flag:
+                dims = []
+                for _ in (0, 1):
+                    v, n = 0, 2
+                    while n:
+                        v = v * 2 + (data[2 + pos // 8] >> (7 - pos % 8) & 1 if pos < end else 0)
+                        pos += 1
+                        n -= 1
+                        if n == 0 and v == 0 and len(dims) < 2 and not (dims and dims[-1] is None):
+                            dims.append(None)       # 00: four more bits follow
+                            n = 4
+                            v = 0
+                    if dims and dims[-1] is None:
+                        dims[-1] = v + 4
+                    else:
+                        dims.append(v)
+                w, rows = dims
+                for k in range(x, min(x + w, width)):
+                    left[k], value[k] = rows, data[lit]
+                left[x] -= 1
+            else:
+                value[x] = data[lit]
+            lit += 1
+            grid.append(value[x])
+    if (pos + 7) // 8 != nflags or lit > len(data):
+        raise ValueError("compressed page does not end where its header says")
+    return bytes(grid), width, lit
+
+
+def _varlen(bits, v):
+    bits += [v >> 1, v & 1] if v <= 3 else [0, 0] + [(v - 4) >> k & 1 for k in (3, 2, 1, 0)]
+
+
+def compress_page(raw, width):
+    """Raw page bytes (128 rows of `width`) -> compressed page, not padded."""
+    assert len(raw) == width * PAGE and width in (64, 128)
+    g = np.frombuffer(raw, dtype=np.uint8).reshape(PAGE, width)
+    # run[y, x] = how many cells from (y, x) to the right hold the same value (capped at 19)
+    run = np.ones((PAGE, width), np.int32)
+    for x in range(width - 2, -1, -1):
+        run[:, x] = np.where(g[:, x] == g[:, x + 1], np.minimum(run[:, x + 1] + 1, 19), 1)
+    g, run = g.tolist(), run.tolist()
+    bits, lits, left = [], bytearray(), [0] * width
+    for y in range(PAGE):
+        row, x = g[y], 0
+        while x < width:
+            if left[x]:
+                left[x] -= 1
+                x += 1
+                continue
+            v = row[x]
+            width_here = 1
+            while width_here < run[y][x] and not left[x + width_here]:
+                width_here += 1
+            best_w, best_rows, w_ok = 1, 1, width_here
+            rows = 1
+            while w_ok and rows <= 19:              # widest rectangle for each height, largest area wins
+                if rows * w_ok > best_w * best_rows:
+                    best_w, best_rows = w_ok, rows
+                if y + rows >= PAGE or rows == 19:
+                    break
+                nxt = g[y + rows]
+                if nxt[x] != v:
+                    break
+                w_ok = min(w_ok, run[y + rows][x])
+                rows += 1
+            if best_w * best_rows >= 2:
+                bits.append(1)
+                _varlen(bits, best_w)
+                _varlen(bits, best_rows)
+                for k in range(x, x + best_w):
+                    left[k] = best_rows
+                left[x] -= 1
+            else:
+                bits.append(0)
+            lits.append(v)
+            x += 1
+    bits += [0] * (-len(bits) % 8)
+    flags = bytes(sum(b << (7 - k) for k, b in enumerate(bits[i:i + 8])) for i in range(0, len(bits), 8))
+    assert len(flags) < 0x2000
+    return bytes([len(flags) & 255, len(flags) >> 8 | (0x60 if width == 64 else 0x20)]) + flags + bytes(lits)
+
+
+def page_bits(d, off, size):
+    """4 or 8 bits per pixel."""
+    if is_compressed(size):
+        return 4 if d[off + 1] & 0x40 else 8
+    return 4 if size == 8192 else 8
+
+
 def decode_indices(d, off, size):
-    """Palette indices of a page as a 128x128 uint8 array (C4 tiles of 8x8, or C8 tiles of 8x4)."""
+    """Palette indices of a page as a 128x128 uint8 array (C4 tiles of 8x8, C8 tiles of 8x4, or a
+    compressed page in raster order)."""
+    if is_compressed(size):
+        raw, width, _ = decompress_page(d[off:off + size])
+        raw = np.frombuffer(raw, dtype=np.uint8)
+        return (np.stack([raw >> 4, raw & 15], -1) if width == 64 else raw).reshape(PAGE, PAGE)
     raw = np.frombuffer(d, dtype=np.uint8, count=size, offset=off)
     if size == 8192:
         return G._blocks(np.stack([raw >> 4, raw & 15], -1).reshape(-1), PAGE, PAGE, 8, 8)
