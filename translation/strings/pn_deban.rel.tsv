@@ -1,0 +1,16 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	920	c1d1	Choose whether to focus on team|situation.
+5	972	274b	Choose whether to focus on your|pitchers.
+5	1024	b7cb	Choose whether to focus on your|batters.
+5	1076	5263	A focus pitcher is pitching.
+5	1108	9710	In a pinch, a focus pitcher is|pitching.
+5	1160	96b6	A focus batter is at the plate.
+5	1200	19a5	In a chance, a focus batter is|at the plate.
+5	1256	1cff	An enemy runner is in scoring|position.
+5	1304	d535	A runner of your team is in scoring|position.
+5	1352	baa2	Pause the fast game.
+5	1380	273e	Switch fast game to normal game.
+5	1416	71f9	Change the focus player.
+5	1448	1164	Press the Confirm Button to set|the focus player.
+5	1504	6bf4	Save appearance setup.
+5	1528	2eee	Reset appearance setup.

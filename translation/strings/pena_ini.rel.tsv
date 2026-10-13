@@ -1,0 +1,46 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	3048	c617	Adjust Pennant and game settings.
+5	3092	3516	Games in one season.|Can't change in Pennant.
+5	3160	fd42	Set the games per season.
+5	3364	0c1a	Choose the schedule type.
+5	3480	faae	Set whether wind affects play in non-dome|parks during games.
+5	3556	5b0e	Set whether weather changes during games.
+5	3608	7050	Set whether players can make errors.
+5	3664	a08c	Set whether players can get injured during or|after games.
+5	3744	778c	Set the computer's skill level.
+5	3792	cb33	Set the computer's baserunning level.
+5	3840	4de0	Set the computer's defense level.
+5	3888	4858	Set the computer's batting level.
+5	3936	013a	Set the computer's pitching level.
+5	3984	c540	Set whether the DH rule is used.
+5	4032	3013	Set whether to hide players' Cond. marks.
+5	4100	b05b	Set whether games can be rained out.
+5	4272	f598	Set whether trades happen.
+5	4404	31a8	Set whether interleague play is on.
+5	4444	b59b	Set whether the Climax Series is held.
+5	4720	3921	Set whether to hold the Climax Series.
+5	4776	5b0e	Set whether players can move teams via free|agency.
+5	4960	a6cb	Set whether you can sign imports by scouting|foreigners.
+5	5132	5169	Set whether to use foreign player slots (max 4 on 1st Team).
+5	5200	345a	Set whether you can scout draft prospects and sign them at the draft.
+5	5384	1713	Set whether player abilities grow.
+5	5444	e187	Start Pennant right away|with basic settings?
+5	5504	3ab0	Pick one team and play.|Can't change players midway.
+5	5572	91d7	Up to 12 can play at once. MAN and COM can't be changed midway.
+5	5648	1c7a	Start a new league.
+5	5680	988f	Continue the league.
+5	5716	1d3d	View your records so far.
+5	5768	29fb	Start Pennant.
+5	5796	30af	Start a new Pennant.
+5	5832	d3b4	Continue Pennant.
+5	5868	2344	View all kinds of records.
+5	5914	ecac	Pick one team and play.
+5	5948	1c58	Up to 16 people can play.
+5	5984	66f1	Start a Pennant race with this team.
+5	6036	41ec	Freely set the teams in the Pennant race.
+5	6104	5ced	Set the leagues and teams for the Pennant race.
+5	6172	b3c1	Start a Pennant race.|Set your team later.
+5	6260	e4b8	Set whether Chemistry is on.
+5	6296	bca5	Set whether to show player stats in games.
+5	6348	ca50	Set whether close-ups are used.
+5	6952	e187	Start Pennant right away|with basic settings?

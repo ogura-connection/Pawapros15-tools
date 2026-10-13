@@ -1,0 +1,122 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	3216	1ae1	Hold the A Button and press up or down on the Control Stick to change the pitch of the whole song.
+5	3348	b25c	Hold the ａ Button and press up or down on the +Control Pad (L Stick) to change the pitch of the whole song.
+5	3480	c87f	Hold the A Button and press up or down on the +Control Pad (Control Stick) to change the pitch of the whole song.
+5	8300	25fd	Delete this file?
+5	8398	9f76	Copy this file?
+5	8434	1073	Load the sample?|(Unsaved work is lost)
+5	8502	4565	Quit making the cheer song?|(Unsaved work is lost)
+5	8570	ad62	Start Auto Compose?|(Unsaved work is lost)
+5	8670	b0a1	Creating...
+5	8738	696a	Cheer song|created!
+5	8792	15ca	Change the mode?|(Unsaved work is lost)
+5	8862	c986	Return to how it was when|you entered this screen?|(Unsaved work is lost)
+5	8958	df5c	Return to the saved state?|(Unsaved work is lost)
+5	9056	e9d4	Pawapuro 9 Theme
+5	9076	4601	Pawapuro 10 Theme
+5	9100	350d	Pawapuro 11 Theme
+5	9124	fde2	Pawapuro 12 Theme
+5	9148	f9fe	Pawapuro 13 Theme
+5	9172	c6af	Pawapuro 14 Theme
+5	9196	88e9	Pawapuro 11 Ending
+5	9224	2151	Pawapuro 12 Ending
+5	9252	71c9	Pawapuro 13 Ending
+5	9280	b969	Pawapuro 14 Ending
+5	9308	4123	Pro Spi 2004 Theme
+5	9336	929b	Pro Spi 2 Theme
+5	9356	1cb2	Pro Spi 3 Theme
+5	9376	450a	Pro Spi 4 Theme
+5	9396	9619	Pawapuro 5 Success
+5	9424	7608	Pawapuro 6 Surume Univ
+5	9448	d0df	Pawapuro 7 Success
+5	9472	22af	Pawapuro 8 Success
+5	9496	72cb	Pawapuro 9 Home Run-kun
+5	9528	6609	Pawapuro 10 Success
+5	9552	bbfd	Pawapuro 10 Ultimate Success
+5	9584	e8c8	Pawapuro 11 Success
+5	9608	3096	Pawapuro 12 Success
+5	9632	9677	Pawapuro 12 My Life
+5	9660	c16f	Pawapoke 7 Hanamaru
+5	9684	e076	Pawapoke 7 Orient
+5	9712	6d4b	Pawapoke 7 Ryokuman
+5	9736	c374	Pawapoke 7 Nitro
+5	9760	689d	Gradius Stage 1
+5	9788	7db9	Gradius Boss
+5	9808	877e	Gradius 2
+5	9824	7e6a	Salamnd.
+5	9836	2331	TwinBee
+5	9848	3ef6	Yie Ar Kung-Fu
+5	9868	9cb3	Ganbare Goemon
+5	9888	135c	Akumajo Dracula
+5	9908	eefc	Ai-Sen Nicol
+5	9924	ea76	Bio Miracle Bokutte Upa
+5	9952	98f4	Kalinka
+5	9964	6ac8	Swan Lk.
+5	9976	acfe	Soranbushi
+5	9988	e81a	Amaryllis
+5	10000	5748	Twinkle
+5	10012	b045	If You're Happy
+5	10032	ee55	Tracks Go On
+5	10048	8f26	The Saints
+5	10060	116a	Oklahoma Mixer
+5	10080	9510	Masu
+5	10088	3279	Pawapuro 15 Theme
+5	10112	e225	Pawapuro 15 Ending
+5	10140	a264	Pro Spi 5 Theme
+5	10160	bd65	OnBase 1
+5	10172	5024	OnBase 2
+5	10184	a492	Template
+5	10200	a492	Template
+5	10216	358c	Pawa9 OP
+5	10228	81e1	Pawa10 OP
+5	10244	87ae	Pawa11 OP
+5	10260	f3e3	Pawa12 OP
+5	10276	9228	Pawa13 OP
+5	10292	5adc	Pawa14 OP
+5	10308	351b	Pawa11 ED
+5	10324	d53e	Pawa12 ED
+5	10340	d327	Pawa13 ED
+5	10356	8d48	Pawa14 ED
+5	10372	c2a5	Spi OP
+5	10384	07c9	Spi2 OP
+5	10396	a6de	Spi3 OP
+5	10408	3030	Spi4 OP
+5	10420	9f64	Pawa5 Suc.
+5	10432	00d1	Pawa6 Surume
+5	10448	d35a	Pawa7 Suc.
+5	10460	fe9c	Pawa8 Suc.
+5	10472	ff00	Pawa9 HR
+5	10484	35e3	Pawa10 Suc.
+5	10500	cd34	Pawa10 Ult
+5	10512	b1a5	Pawa11 Suc.
+5	10528	b5e1	Pawa12 Suc.
+5	10544	08f4	Pawa12 Life
+5	10560	1f57	Poke7 H
+5	10572	d24b	Poke7 O
+5	10584	888a	Poke7 R
+5	10596	c296	Poke7 N
+5	10608	3cd3	Gradius
+5	10624	a8f5	Gradius B
+5	10640	3545	Gradius 2
+5	10656	164b	Salamander
+5	10668	2331	TwinBee
+5	10680	8a7f	Yie Ar Kung
+5	10696	57a6	Goemon
+5	10708	fe7b	Dracula
+5	10720	cf51	Nicol
+5	10728	8bd8	Upa
+5	10736	98f4	Kalinka
+5	10748	4333	Swan
+5	10760	4400	Soran Bushi
+5	10776	e81a	Amaryllis
+5	10788	00af	Twinkle Star
+5	10804	38fe	If Happy
+5	10820	bbe7	Tracks
+5	10832	20a0	Saints
+5	10844	784f	Oklahoma
+5	10856	9510	Masu
+5	10864	c132	Pawa15 OP
+5	10880	667d	Pawa15 ED
+5	10896	abf5	Spi5 OP
+5	10908	9d1c	OnBase 1
+5	10924	95ac	OnBase 2

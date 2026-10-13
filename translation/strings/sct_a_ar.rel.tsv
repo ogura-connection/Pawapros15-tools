@@ -1,4 +1,100 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	9844	1223	Go back
+5	9856	a8cd	View player data
+5	9876	73f4	Check practice
+5	9896	a121	Set practice
+5	9916	cd3e	Show the item|list
+5	9952	5dbf	Set player usage
+5	9976	7097	Set uniforms
+5	10004	45a2	Set cheer/school song|& voices
+5	10044	cd6f	Check the schedule
+5	10072	a181	Train on auto
+5	10096	ef30	Raise TRJ
+5	10112	125a	Raise CON
+5	10132	4b45	Raise PWR
+5	10152	2c4b	Raise SPD
+5	10168	a10f	Raise ARM
+5	10184	45d1	Raise FLD
+5	10204	a173	Raise E RES
+5	10232	4eed	Raise Velocity
+5	10248	1416	Raise Stamina
+5	10272	6b41	Raise Control
+5	10296	77c1	Improve Slider-type break
+5	10328	71a4	Improve Curve-type break
+5	10356	4d53	Improve Fork-type break
+5	10388	2179	Improve Sinker-type break
+5	10424	3691	Improve Screwball-type break
+5	10456	e1e7	Improve Shuuto-type break
+5	10488	c499	Learn Slider-type break
+5	10520	4836	Learn Curve-type break
+5	10548	fd86	Learn Fork-type break
+5	10580	5081	Learn Sinker-type break
+5	10616	afe2	Learn Screwball-type break
+5	10648	a67c	Learn Shuuto-type break
+5	10680	862e	Improve Brk Ball
+5	10700	74be	Learn Brk Ball
+5	10720	88e2	Train all-round
+5	10740	9b37	Change position
+5	10760	5e5b	Add sub-position
+5	10780	87e1	Switch bat side
+5	10800	6d13	Change batting form
+5	10828	e86b	Change pitching form
+5	10856	1b3c	Improve 2nd Slider-type break
+5	10896	967b	Improve 2nd Curve-type break
+5	10928	befa	Improve 2nd Fork-type break
+5	10964	70ef	Improve 2nd Sinker-type break
+5	11000	8ba6	Improve 2nd Screwball-type break
+5	11036	b29a	Improve 2nd Shuuto-type break
+5	11072	7853	Learn 2nd Slider-type break
+5	11112	8e3c	Learn 2nd Curve-type break
+5	11144	b07f	Learn 2nd Fork-type break
+5	11180	b442	Learn 2nd Sinker-type break
+5	11216	daa0	Learn 2nd Screwball-type break
+5	11252	4a30	Learn 2nd Shuuto-type break
+5	11288	05a4	Learn special fastball
+5	11316	7abf	Batting Machine
+5	11336	e466	Tee
+5	11344	6267	Dumbbell
+5	11356	ce10	Bench Press
+5	11372	8f60	Stopwatch
+5	11392	4ac5	Mini Hurdle
+5	11408	adea	Tube
+5	11420	c68d	Lat Machine
+5	11436	7346	Fungo Bat
+5	11452	d2f2	Fungo Mach.
+5	11468	a652	Aroma Goods
+5	11484	d5dc	Calm CD
+5	11496	2c60	Speed Gun
+5	11512	935c	Muscler
+5	11528	dfce	Tire
+5	11536	bdd1	Roller
+5	11548	9b93	Target
+5	11560	8d9b	Target 3x3
+5	11576	c2c6	Squishy Ball
+5	11600	0ceb	Temp Shower
+5	11616	b890	Massage Chair
+5	11636	040c	Enables machine batting
+5	11664	94c1	Enables tee batting
+5	11700	a029	Enables dumbbell training
+5	11732	882b	Enables bench press
+5	11764	ca8b	Enables base running
+5	11800	e256	Enables hurdle drills
+5	11832	92e8	Enables tube training
+5	11872	4965	Enables lat machine
+5	11904	98b8	Enables fungo practice
+5	11928	622e	Enables machine-gun fungo
+5	11968	5491	Enables aromatherapy
+5	12000	8437	Enables a calm moment
+5	12036	0112	Enables velocity tests
+5	12064	007e	Enables Muscler
+5	12092	353b	Enables tire pulling
+5	12120	43d8	Enables roller pulling
+5	12152	270e	Enables target drills
+5	12176	64c3	Enables target-zone drills
+5	12208	4280	Enables grip training
+5	12236	3e0c	Enables Brk Ball study
+5	12264	a9d9	Enables temp shower
+5	12296	9fbf	Enables massage chair
 5	12332	d3d3	Hokk. N
 5	12344	6ec9	Hokk. S
 5	12356	8cce	Aomo
@@ -48,3 +144,597 @@
 5	12712	4bb3	Miyz
 5	12720	07e5	Kago
 5	12728	ca76	Okin
+5	12736	7753	Hokkai
+5	12744	681e	Toky
+5	12752	cc64	Shin
+5	12760	55c0	Lake
+5	12768	3333	Naniwa
+5	12776	ae56	Yama
+5	12784	33f2	Awa
+5	12792	4084	Udon
+5	12800	5bae	Iyo
+5	12808	f8af	Tosa
+5	12816	339a	Higo
+5	12824	c4ec	Bungo
+5	12832	c9d1	Sun
+5	12840	aca5	Isle
+5	12852	7483	Toh.
+5	12860	92ae	Kan.
+5	12868	3486	Hku.
+5	12876	0d6a	Tok.
+5	12884	d664	Kin.
+5	12892	f03a	San.
+5	12900	bc1b	Shi.
+5	12908	376b	Kyu.
+5	12924	cb73	Artist
+5	12936	8ea2	Precise
+5	12948	7fb0	Hit Maker
+5	12960	fb6f	Sniper
+5	12972	55f6	Whiz
+5	12980	472f	Gun
+5	12992	7c2d	Flash
+5	13000	945f	Bolt
+5	13008	5aa9	Speedster
+5	13024	46a1	Cannon
+5	13032	1b5b	Catapult
+5	13048	2ebd	Nimble
+5	13056	b76c	Octopus
+5	13072	97b3	Heater
+5	13080	5e21	Bull
+5	13088	8ea2	Precise
+5	13104	81a6	Master
+5	13112	a855	Endless
+5	13124	ef2c	Toughie
+5	13136	d955	Wizard
+5	13144	7b1e	Bender
+5	13160	0a86	Tricky
+5	13168	7528	Doctor K
+5	13184	b58c	Poker
+5	13192	c654	Rock
+5	13200	c40e	Iron
+5	13208	eff7	Free Swing
+5	13224	2f83	Breeze
+5	13232	755c	Hothead
+5	13248	ba16	Grit
+5	13256	644e	Knuckleballer
+5	13276	933b	Ogre
+5	13284	d317	Boss
+5	13292	5d80	Nice Guy
+5	13304	89df	Mr. Perfect
+5	13324	929c	Prince
+5	13336	bdff	Hero
+5	13344	f180	Savior
+5	13352	5bf7	Secret
+5	13368	0c87	Dandy
+5	13376	2545	Reborn
+5	13384	15b4	Tankie
+5	13396	3eca	Rowdy
+5	13408	db7a	Sleeper
+5	13420	78ab	Gem
+5	13432	f6ec	Abacus
+5	13440	cd62	Cool Guy
+5	13452	4df8	Fired Up
+5	13464	95ae	Groovy
+5	13476	1a2e	None
+5	13484	776e	Set the lineup
+5	13508	0bc5	Set fielder usage
+5	13536	d089	Set team policy
+5	13560	269c	Set school song
+5	13584	ab4a	Set a cheer song.|You must create the|song first
+5	13648	4d79	Set player voices
+5	13672	cd6f	Check the schedule
+5	13704	5708	Read the manager's|memo
+5	13736	ec75	Gained 10 Strength|Points
+5	13772	cf24	Gained 20 Strength|Points
+5	13808	a90b	Gained 30 Strength|Points
+5	13844	2801	Gained 10 Quickness|Points
+5	13880	86cf	Gained 20 Quickness|Points
+5	13916	22b5	Gained 30 Quickness|Points
+5	13952	87c0	Gained 10 Technique|Points
+5	13988	9a07	Gained 20 Technique|Points
+5	14024	8a62	Gained 30 Technique Points
+5	14060	6f53	Gained 10 Breaking Ball Points
+5	14096	1ebe	Gained 20 Breaking Ball Points
+5	14132	722c	Gained 30 Breaking Ball Points
+5	14168	1682	Gained 10 Mentality Points
+5	14204	0870	Gained 20 Mentality Points
+5	14240	fabb	Gained 30 Mentality Points
+5	17404	bdb9	Naughty
+5	17416	1f70	Fiery
+5	17428	58f6	Cool
+5	17440	8624	Shy
+5	17452	cc92	Genius
+5	17464	541f	Goofball
+5	17476	9408	Shrewd
+5	17576	d234	Schedule Planner
+5	17600	bd21	Schedule Boost Guide
+5	17624	6e09	Schedule Ease Guide
+5	17648	4d0b	Schedule Boost Secrets
+5	17672	4fda	Schedule Ease Secrets
+5	17696	c5d5	Flip Your Thinking
+5	17716	eff6	Positive Thinking
+5	17740	ee4d	Onigiri
+5	17752	f401	2 Onigiri
+5	17768	b0a2	Full Bento
+5	17784	65d1	Kind Words
+5	17800	fd15	Guide
+5	17808	d16e	Find Yourself
+5	17824	b3e1	Secret Letter
+5	17840	ddd3	Top Secret
+5	17856	e443	Sunscreen
+5	17872	50b5	Tanning Cream
+5	17888	9928	Tee Pass
+5	17904	f94a	Bat Machine Pass
+5	17928	e3b9	Dumbbell Pass
+5	17944	2595	Bench Press Pass
+5	17968	f504	Stopwatch Pass
+5	17992	6a29	Mini Hurdle Pass
+5	18016	12d0	Tube Pass
+5	18032	3bc5	Lat Machine Pass
+5	18052	10e0	Fungo Bat Pass
+5	18072	500e	Fungo Machine Pass
+5	18092	96bb	Aroma Goods Pass
+5	18112	bc26	Calm CD Pass
+5	18132	b90a	Speed Gun Pass
+5	18152	aea0	Muscler Pass
+5	18172	f78b	Tire Pass
+5	18192	3c5c	Roller Pass
+5	18208	a345	Target Pass
+5	18224	44fd	Target 3x3 Pass
+5	18244	a1fa	Squishy Ball Pass
+5	18268	886c	DVD Pass
+5	18284	2171	Temp Shower Pass
+5	18304	6ba5	Massage Chair Pass
+5	18328	74fd	Mystery Gear Pass
+5	18348	f1af	Fine White
+5	18360	e677	Great White Soil
+5	18380	d6c2	Dry White Soil
+5	18400	0ae5	Fine Black
+5	18412	6d3a	Great Black Soil
+5	18432	47f5	Koshien
+5	18444	1fa9	Dry Black Soil
+5	18464	19ca	Sponge & Bucket
+5	18488	828f	Shovel
+5	18496	775c	TRJ Bat
+5	18508	d6a2	Contact Bat
+5	18524	0b12	Power Bat
+5	18544	f584	S Power Bat
+5	18560	81a3	Speed Spikes
+5	18576	5c8b	Arm Glove
+5	18588	e63d	Field Glove
+5	18604	7e7c	E RES Glove
+5	18624	5af3	Speed Ball
+5	18636	d206	Sniper Ball
+5	18656	853e	S Sniper Ball
+5	18676	80a0	Stamina Drink
+5	18696	50cd	S Stamina Drink
+5	18720	f60d	Slider Drill Ball
+5	18744	a9e2	Curve Drill Ball
+5	18764	1db5	Fork Drill Ball
+5	18788	fb2b	Sinker Drill Ball
+5	18812	3e50	Shuuto Drill Ball
+5	18836	2c9f	Power Swing
+5	18856	48f3	Make Contact!
+5	18872	190b	Bold Batting
+5	18888	dcbc	Safe Batting
+5	18904	ca06	Bold Steals
+5	18920	aab2	Safe Steals
+5	18936	58a0	Bold Running
+5	18952	64d4	Bold Defense
+5	18968	da3e	Play as a Team
+5	18992	c3a9	Find Your Pitch!
+5	19016	c316	Blow Them Away
+5	19032	dce7	Break Them Down
+5	19056	7c49	Tempo Is Key
+5	19072	65c3	Take Left Plate!
+5	19092	3eaf	Take Right Plate!
+5	19112	9587	Mood Research
+5	19128	2d6e	Create a Mood
+5	19144	503b	No.4 Rules
+5	19156	20d4	Using Chances 2
+5	19180	ccb7	Using Chances 1
+5	19204	d921	Fool Lefty Arms
+5	19224	ae49	Don't Fear Lefty
+5	19244	9b43	Ultra-Tough Body!
+5	19264	5934	Build Tough Body
+5	19284	38cc	Thief Art 2
+5	19300	4651	Thief Art
+5	19312	3822	Running Diamond
+5	19336	8b7d	Better Throwing
+5	19356	fe20	Steadiness: Fldrs
+5	19384	d2e1	Average Legend
+5	19400	5eda	Power Hit Legend
+5	19424	b6f9	Pull Hitting
+5	19440	a733	Spray Hits
+5	19452	f4c0	Go with the Flow!
+5	19472	6acf	Hit Firm!
+5	19488	ce8c	Stay Alive
+5	19500	6195	Better Bunting
+5	19524	f66e	Bunt Pro
+5	19540	c574	Rattle Infield!
+5	19560	be0b	Hit First Pitch
+5	19580	9a87	Make a Chance!
+5	19600	c302	Bases Loaded 1
+5	19620	3d79	Bases Loaded 2
+5	19640	8a4f	Little Goodbye
+5	19656	9f71	Big Goodbye
+5	19672	d888	Adversity?!
+5	19688	c5b9	PH Life
+5	19704	e97b	Slam Legend
+5	19720	0fd9	Slide for Safe!
+5	19744	f3bd	Glove Pro
+5	19760	a91a	Catcher Tips 2
+5	19776	e4e8	Catcher Tips 1
+5	19792	a3af	Iron Curtain
+5	19808	dee6	Imposing: Fielders
+5	19832	0840	Streaks
+5	19844	aaaa	Attack Low!
+5	19864	c911	Attack High!
+5	19884	1f39	Avoid Double Plays
+5	19912	ff9c	Subtle Charm
+5	19928	e832	Laser Pitch
+5	19944	85e8	Dark Horses
+5	19960	db29	Whisper to Win
+5	19984	e7a4	Troops
+5	19992	0404	Be Strong at 3-2
+5	20016	61c9	Reliable Hitting
+5	20036	83f2	Reliable Fielding
+5	20056	cb27	Strong in a Jam
+5	20076	eaca	Fool Lefty Bats
+5	20096	123b	Unbeaten by Hits
+5	20116	83cf	Steadiness: Ptchrs
+5	20144	12b2	Fastball Life Up+
+5	20168	300e	Fastball Life Up
+5	20188	2aa9	Spin Up
+5	20208	6898	Quick Pitching
+5	20224	af47	Recovery
+5	20236	ed9b	Recovery+
+5	20252	4ee9	Air Drag Pitch
+5	20272	e8c7	Keep It Low
+5	20288	8092	Gravity
+5	20300	f8ae	Hard-to-Hit Ball
+5	20320	e74a	Ride the Momentum
+5	20344	4c9c	Skill Pickoff
+5	20360	2f66	Better Release
+5	20384	49ce	Quick Reflexes
+5	20400	1401	Win Rules
+5	20416	dff2	Imposing: Pitchers
+5	20440	9b77	Fighting Spirit
+5	20460	3b56	Strikeout Guide
+5	20480	bb3b	Life of Grit
+5	20496	eadf	I'm the Star
+5	20512	12bf	Cross Flame
+5	20528	e7eb	Ball Hold
+5	20544	7677	Poker Face Plan
+5	21208	b5ca	Reshuffle all the|progress icons
+5	21256	cc17	Raise all progress icon|numbers by 1
+5	21296	353d	Lower all progress icon|numbers by 1
+5	21336	4baa	Max all progress icon|numbers
+5	21380	25b2	Min all progress icon|numbers
+5	21424	502a	Blue and red panels|swap places
+5	21464	c6f7	Turn red panels into|blue
+5	21496	e86f	All Vitality +1
+5	21516	c731	All Vitality +2
+5	21536	eba2	All Vitality +3
+5	21560	f577	One player's Motivation|goes up
+5	21608	a727	One player's grades up
+5	21632	b299	One player changes type
+5	21660	3276	A player's scout rating|goes up
+5	21700	0e76	A player's scout rating|goes way up
+5	21744	9dcb	Skin gets a bit lighter
+5	21772	28be	Skin gets a bit darker
+5	21800	09b5	Add Tee|to training gear
+5	21860	2e3e	Add Batting Machine|to training gear
+5	21920	29e4	Add Dumbbell|to training gear
+5	21980	5178	Add Bench Press|to training gear
+5	22040	b04a	Add Stopwatch|to training gear
+5	22100	10e6	Add Mini Hurdle|to training gear
+5	22160	ef1d	Add Tube|to training gear
+5	22220	b389	Add Lat Machine|to training gear
+5	22280	c884	Add Fungo Bat|to training gear
+5	22340	7900	Add Fungo Machine|to training gear
+5	22400	97a6	Add Aroma Goods|to training gear
+5	22460	175e	Add Calm CD|to training gear
+5	22520	2d32	Add Speed Gun|to training gear
+5	22580	1223	Add Muscler|to training gear
+5	22640	003e	Add Tire|to training gear
+5	22700	14b5	Add Roller|to training gear
+5	22760	6c00	Add Target|to training gear
+5	22820	5ecd	Add Target 3x3|to training gear
+5	22880	25e1	Add Squishy Ball|to training gear
+5	22940	fec2	Add DVD|to training gear
+5	23000	6e2e	Add Temp Shower|to training gear
+5	23060	b543	Add Massage Chair|to training gear
+5	23120	f6af	Adds one piece of gear|chosen at random from|any type
+5	23180	c19c	Ground Lv. goes up by 1.|(White soil only)
+5	23228	b673	Ground Lv. goes up by 2.|(White soil only)
+5	23276	033c	Ground Lv. +1 & no rain|practice penalty (2 wks)|White soil only
+5	23352	c0b2	Ground Lv. goes up by 2.|(Black soil only)
+5	23400	bfb0	Ground Lv. goes up by 3.|(Black soil only)
+5	23448	b4c4	Ground Lv. goes up by 4.|(Black soil only)
+5	23496	f980	Ground Lv. +2 & no rain|practice penalty (2 wks)|Black soil only
+5	23576	249d	No practice penalty on|rainy days (2 weeks)
+5	23624	4ffc	No practice penalty on|snowy days (2 weeks)
+5	23672	aa06	One player's TRJ +1
+5	23700	60d9	One player's CON +1
+5	23736	2c2e	One player's PWR +5
+5	23772	153d	One player's PWR +10
+5	23812	1717	One player's SPD +1
+5	23840	be70	One player's ARM +1
+5	23868	0d29	One player's FLD +1
+5	23904	7c51	One player's E RES +1
+5	23940	7d08	One player's velocity +1
+5	23968	c6e9	One player's CTRL +5
+5	24004	805c	One player's CTRL +10
+5	24044	a1f1	One player's STAM +5
+5	24080	5b62	One player's STAM +10
+5	24120	2cc2	Raises one player's|Slider break level|by 1 level
+5	24188	ef4d	Raises one player's|Curve break level|by 1 level
+5	24256	1afc	Raises one player's|Fork break level|by 1 level
+5	24324	41ff	Raises one player's|Sinker break level|by 1 level
+5	24392	b74b	Raises one player's|Shuuto break level|by 1 level
+5	24460	59f4	Gets Slugger
+5	24480	f9c8	Gets Slap Hitter
+5	24504	8078	Gets Aggr. Htr
+5	24524	5822	Gets Patient Htr
+5	24544	e3db	Gets Aggr. Stl
+5	24564	e3d4	Gets Cautious Stl
+5	24584	c9e2	Gets Aggr. Run
+5	24604	186b	Gets Aggr. Fld
+5	24624	be01	Gets Gd Small Ball
+5	24652	8a5d	Gets Gd Eye
+5	24672	28c5	Gets Power P
+5	24692	4d7a	Gets Brk Ball P
+5	24716	6eff	Gets Gd Pace
+5	24736	c748	Rubber side: left
+5	24760	9e5d	Rubber side: right
+5	24784	dc90	Gets Gd Morale
+5	24804	e4b7	Gets Sparkplug
+5	24832	0cea	Gets Gd Cleanup
+5	24852	84f4	Gets Clutch Hit 5
+5	24876	3871	Gets Clutch Hit 4
+5	24900	bd3f	Gets Vs. Lefty 5
+5	24924	80ec	Gets Vs. Lefty 4
+5	24948	2060	Gets Durability 5
+5	24976	d177	Gets Durability 4
+5	25004	0d29	Gets Stealing 5
+5	25024	fe6d	Gets Stealing 4
+5	25044	07ad	Gets Base Run 4
+5	25064	97db	Gets Throwing 4
+5	25088	c09d	Gets Consistency 4
+5	25112	8a8f	Gets Contact Hitter
+5	25148	e497	Gets Power Hitter
+5	25176	c36d	Gets Pull Hitter
+5	25200	613f	Gets Spray Hitter
+5	25220	f715	Gets Push Hitter
+5	25240	b7fd	Gets Hot Hitter
+5	25260	43ee	Gets Tough Out
+5	25280	2cf7	Gets Gd Bunt
+5	25300	8cc5	Gets Bunt Master
+5	25324	b552	Gets Gd IF Htr
+5	25348	5fb4	Firstball Htr
+5	25368	d218	Gets Table Setter
+5	25404	28ae	Gets Bases Clearer
+5	25432	a492	Gets Grand Slammer
+5	25456	eb2b	Gets Walk-off Htr
+5	25484	bf5d	Gets Walk-off HR
+5	25520	c5a7	Gets Rally Htr
+5	25540	3df3	Gd Pinch Htr
+5	25560	525d	Tough Runner
+5	25580	7bcd	Gets Hd 1st Slide
+5	25616	183f	Gets Gold Glover
+5	25636	08f7	Gets Grt Catcher
+5	25664	ad35	Gets Gd Catcher
+5	25692	5767	Gets Gd Block
+5	25716	dabb	Gets Intimidator
+5	25740	1794	Gets Gd B2B Htr
+5	25760	9dfc	Gets Low Ball Htr
+5	25796	c1d9	Gets High Ball Htr
+5	25832	b0a3	Gets Breakup DP
+5	25856	aed7	Gets Refined
+5	25876	1b21	Gets Laser Beam
+5	25904	9e9f	Gets Dark Horse
+5	25928	a5a0	Gets Trash Talk
+5	25952	a9f9	Gets Gd vs. Ace
+5	25976	c981	Gets Gd Full Count
+5	26004	3470	Gets Trusted Bat
+5	26028	251c	Gets Trusted Glove
+5	26052	65cd	Gets w/RISP 4
+5	26076	1d85	Gets Vs. LH Batter 4
+5	26104	8d3f	Gets Poise 4
+5	26128	9caa	Gets Consistency 4
+5	26152	44cf	Gets FB Life 5
+5	26172	b01c	Gets FB Life 4
+5	26192	4933	Gets Spin 4
+5	26212	cc97	Gets Release 4
+5	26236	f419	Gets Recovery 4
+5	26256	f7a4	Gets Recovery 5
+5	26276	b682	Gets Gyroball
+5	26304	6de0	Gd Low Pitch
+5	26324	10be	Groundball P
+5	26344	6308	Gets Safe Pitch
+5	26364	efa7	Gets Str Finisher
+5	26384	1761	Gets Gd Pickoff
+5	26404	9640	Gets Gd Delivery
+5	26428	af22	Gets Gd Reflexes
+5	26452	275e	Gets Lucky
+5	26472	07de	Gets Intimidator
+5	26496	6a4a	Gets Battler
+5	26512	f5bf	Gets Dr. K
+5	26532	7da1	Gets Gd Guts
+5	26552	476d	Gets Gd vs. Big Bat
+5	26576	5678	Gets Crossfire
+5	26612	341f	Gets Extension
+5	26632	83f8	Gets Poker Face
+5	27312	6b66	Progress icons all swapped
+5	27344	6f69	All progress icon numbers +1
+5	27384	2eb5	All progress icon numbers -1
+5	27424	39bc	All progress icon numbers maxed out
+5	27468	8311	All progress icon numbers at minimum
+5	27512	eb45	Weekly plan changed
+5	27536	eb45	Weekly plan changed
+5	27560	4a7c	All: Vitality +1
+5	27584	3f6d	All: Vitality +2
+5	27608	fe51	All: Vitality +3
+5	27632	0713	○○'s spirits went up
+5	27660	e229	○○'s grades rose
+5	27684	dcbf	○○'s personality: △△
+5	27712	4e9c	○○ is closer to going pro
+5	27744	4e9c	○○ is closer to going pro
+5	27776	9e4c	○○'s tan faded
+5	27804	ae38	○○ got tanned
+5	27824	3126	Added Tee to training gear|Ground Lv. went up
+5	27896	446f	Added Batting Machine to training gear|Ground Lv. went up
+5	27968	6e95	Added Dumbbell to training gear|Ground Lv. went up
+5	28040	130b	Added Bench Press to training gear|Ground Lv. went up
+5	28112	a505	Added Stopwatch to training gear|Ground Lv. went up
+5	28184	1dc0	Added Mini Hurdle to training gear|Ground Lv. went up
+5	28256	35a3	Added Tube to training gear|Ground Lv. went up
+5	28328	9066	Added Lat Machine to training gear|Ground Lv. went up
+5	28400	159b	Added Fungo Bat to training gear|Ground Lv. went up
+5	28472	f2f4	Added Fungo Machine to training gear|Ground Lv. went up
+5	28544	ed2b	Added Aroma Kit to training gear|Ground Lv. went up
+5	28616	4cba	Added Calm CD to training gear|Ground Lv. went up
+5	28688	f85f	Added Speed Gun to training gear|Ground Lv. went up
+5	28760	3374	Added Muscler to training gear|Ground Lv. went up
+5	28832	ad80	Added Tire to training gear|Ground Lv. went up
+5	28904	d579	Added Roller to training gear|Ground Lv. went up
+5	28976	610b	Added Plain Target to training gear|Ground Lv. went up
+5	29048	f0b7	Added Target 3x3 to training gear|Ground Lv. went up
+5	29120	6132	Added Squishy Ball to training gear|Ground Lv. went up
+5	29192	ad49	Added DVD to training gear|Ground Lv. went up
+5	29264	717a	Added Temp Shower to training gear|Ground Lv. went up
+5	29336	58f2	Added Massage Chair to training gear|Ground Lv. went up
+5	29408	a7c1	Added ○○ (random) to training gear
+5	29448	46cc	Soil improved
+5	29472	5bc9	Soil improved a lot
+5	29504	454c	Soil drains better
+5	29528	5bc9	Soil improved a lot
+5	29556	a01f	Soil improved greatly
+5	29584	2b18	Soil improved tremendously
+5	29616	454c	Soil drains better
+5	29640	0070	Rain can't hurt practice for a while
+5	29680	5abd	Snow can't hurt practice for a while
+5	29720	9a2a	○○'s TRJ +1
+5	29744	c4a2	○○'s CON +1
+5	29772	68bd	○○'s PWR +5
+5	29800	5ecd	○○'s PWR +10
+5	29832	ae23	○○'s SPD +1
+5	29856	0d8f	○○'s ARM +1
+5	29880	bc81	○○'s FLD +1
+5	29908	843a	○○'s E RES +1
+5	29944	913a	○○'s velocity +1
+5	29968	da33	○○'s CTRL +5
+5	30000	97a8	○○'s CTRL +10
+5	30036	fe12	○○'s STAM +5
+5	30064	e50e	○○'s STAM +10
+5	30096	004f	○○'s Brk Balls improved
+5	30124	004f	○○'s Brk Balls improved
+5	30152	004f	○○'s Brk Balls improved
+5	30180	004f	○○'s Brk Balls improved
+5	30208	004f	○○'s Brk Balls improved
+5	30236	11a0	Got Slugger!
+5	30256	3a46	Got Slap Hitter!
+5	30276	246e	Aggressive Htr!
+5	30296	3f02	Got Patient Htr!
+5	30316	8d10	Aggressive Stl!
+5	30336	da0f	Cautious Stl!
+5	30356	24e1	Aggressive Run!
+5	30376	2e30	Aggressive Fld!
+5	30400	bdb3	Got Gd Small Ball!
+5	30424	5cc8	Got Gd Eye!
+5	30440	b565	Got Power P!
+5	30460	06f5	Got Brk Ball P!
+5	30480	979d	Got Gd Pace!
+5	30500	a2ee	Rubber side: left
+5	30524	75ef	Rubber side: right
+5	30548	cdce	Got Gd Morale!
+5	30568	a757	Got Sparkplug!
+5	30592	87ae	Gd Cleanup!
+5	30608	fddb	Got Clutch Hit 5!
+5	30628	8dd4	Got Clutch Hit 4!
+5	30648	f1b1	Got Vs. Lefty 5!
+5	30668	e97b	Got Vs. Lefty 4!
+5	30688	8f79	Got Durability 5!
+5	30712	4603	Got Durability 4!
+5	30736	1ec9	Stealing 5!
+5	30752	a560	Stealing 4!
+5	30768	3eb3	Base Running 4
+5	30784	e5f8	Throwing 4!
+5	30800	3c3d	Got Consistency 4!
+5	30824	c3eb	Got Contact Hitter!
+5	30856	b2f3	Got Power Hitter!
+5	30880	2765	Got Pull Hitter!
+5	30904	0d26	Spray Hitter!
+5	30924	20c8	Got Push Hitter!
+5	30944	6307	Got Hot Hitter!
+5	30964	057b	Got Tough Out!
+5	30984	b58a	Got Gd Bunt!
+5	31004	3558	Got Bunt Master!
+5	31024	d582	Got Gd IF Htr!
+5	31048	0e19	Firstball Htr!
+5	31064	aae5	Got Table Setter!
+5	31092	8184	Got Bases Clearer!
+5	31112	3b92	Got Grand Slammer!
+5	31136	be01	Got Walk-off Htr!
+5	31160	ca68	Got Walk-off HR!
+5	31192	40ad	Rally Hitter!
+5	31208	cd59	Gd Pinch Htr!
+5	31224	ee11	Tough Runner!
+5	31240	0db3	Got Hd 1st Slide!
+5	31272	a01e	Got Gold Glover!
+5	31296	1349	Got Grt Catcher!
+5	31320	038c	Got Gd Catcher!
+5	31344	6886	Got Gd Block!
+5	31364	84a5	Got Intimidator!
+5	31384	549f	Gd B2B Htr!
+5	31400	7c62	Got Low Ball Htr!
+5	31428	085b	Got High Ball Htr!
+5	31456	5f15	Got Breakup DP!
+5	31480	face	Got Refined!
+5	31504	17b1	Got Laser Beam!
+5	31528	524a	Dark Horse!
+5	31544	2df1	Got Trash Talk!
+5	31568	e744	Got Gd vs. Ace!
+5	31592	da6d	Got Gd Full Count!
+5	31616	c8d0	Got Trusted Bat!
+5	31636	c71e	Got Trusted Glove!
+5	31656	61c6	Got w/RISP 4!
+5	31676	411c	Vs. LH Batter 4!
+5	31696	a677	Got Poise 4!
+5	31720	7996	Got Consistency 4!
+5	31744	9c44	Got FB Life 5!
+5	31760	158d	Got FB Life 4!
+5	31776	5e7a	Got Spin 4!
+5	31792	1de4	Got Release 4!
+5	31816	ce37	Recovery 4!
+5	31832	0ee9	Recovery 5!
+5	31848	3fb0	Got Gyroball!
+5	31872	15ac	Gd Low Pitch!
+5	31888	d5f1	Groundball P!
+5	31904	aace	Safe Pitch!
+5	31920	0b1c	Str Finisher!
+5	31944	32c7	Gd Pickoff!
+5	31960	459c	Got Gd Delivery!
+5	31980	8bbc	Got Gd Reflexes!
+5	32000	f3b5	Got Lucky!
+5	32016	67c3	Got Intimidator!
+5	32036	7e9c	Got Battler!
+5	32056	5a71	Got Dr. K!
+5	32072	e632	Got Gd Guts!
+5	32088	9c5f	Gd vs. Big Bat!
+5	32108	c714	Got Crossfire!
+5	32136	ea17	Got Extension!
+5	32152	5d0d	Got Poker Face!
+5	34584	f4a8	Could not use the item
+5	34616	ec35	Choose who will use the item
+5	34652	045e	Is this OK?|Yes     No
+5	34692	1223	Go back
+5	34704	8338	Can't be used: ground is black soil
+5	34748	a790	Can't be used: ground is white soil
+5	34792	b14c	Soil is already top quality
+5	34824	6f66	Each person can use only one item
+5	34868	8658	Each person can use only one book
+5	34904	e8fb	Camp in progress; can't use this item
+5	34952	efd0	Can't use: no breaking ball learned
+5	34992	5d66	Can't use: all Vitality is full

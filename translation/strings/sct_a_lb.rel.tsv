@@ -1,4 +1,29 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	672	74ba	Year
+5	680	1a2e	None
+5	688	0410	Pro Player
+5	704	20a0	Scout
+5	716	b444	Tech
+5	724	1752	Shop Clerk
+5	740	76c1	Butcher
+5	752	ff52	Seafood
+5	764	b5b0	Grocer
+5	776	32e3	Baker
+5	788	9b35	Bookshop
+5	800	7de0	Salaryman
+5	816	1b05	Mizotto Emp.
+5	832	5c26	Delinquent
+5	848	cba5	Seer
+5	856	e675	Idol
+5	872	1d4e	Nurse
+5	880	9f35	Freeter
+5	892	31e7	Home Help
 5	904	72df	Univ.
+5	912	c6a2	Trade Sch.
+5	924	baa5	Cram
+5	936	5737	AVG.
 5	944	de06	 RBI
 5	956	b3fd	 SB
+5	968	8566	IP
+5	984	e658	ERA
+5	1000	c12b	Ex-Manager

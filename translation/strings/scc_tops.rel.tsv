@@ -1,8 +1,59 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	2480	b981	Birth
+5	2912	97df	None
+5	2920	0410	Pro Player
+5	2936	20a0	Scout
+5	2948	b444	Tech
+5	2956	1752	Shop Clerk
+5	2972	76c1	Butcher
+5	2984	ff52	Seafood
+5	2996	b5b0	Grocer
+5	3008	32e3	Baker
+5	3020	9b35	Bookshop
+5	3032	7de0	Salaryman
+5	3048	1b05	Mizotto Emp.
+5	3064	5c26	Delinquent
+5	3080	cba5	Seer
+5	3088	e675	Idol
+5	3104	1d4e	Nurse
+5	3112	9f35	Freeter
+5	3124	31e7	Home Help
+5	3136	858b	Univ
+5	3144	fb84	Tech Sch
+5	3156	baa5	Cram
+5	3164	9c67	No one here
+5	3180	d88a	Pro ball player
+5	3200	0efa	Busy scouting players
+5	3228	28c3	Apprentice equipment maker
+5	3264	aa4a	Works at a shop
+5	3288	4b9e	Sells delicious meat
+5	3320	5ece	Sells fresh fish
+5	3344	12da	Sells fruit & vegetables
+5	3372	7e67	Sells tasty bread
+5	3400	eba5	Ask me about books
+5	3424	c4b7	Works hard for the company
+5	3452	9c57	Makes training gear
+5	3480	1781	Plays the outlaw
+5	3504	2485	Fortune telling: hit or miss
+5	3536	5762	Up-and-coming idol
+5	3564	f05f	Busy at the hospital
+5	3592	85c7	Part-timer
+5	3608	9085	Helps at home
+5	3624	9631	Undergrad
+5	3640	b858	Tech student
+5	3656	22df	Ronin
+5	3672	0575	Pawafuru Inc.
 5	3688	fffe	Kagurazaka Grp
 5	3704	e71b	Otori Phoenix
+5	3728	5497	Giants
+5	3736	0d00	Dragon
+5	3744	3831	Carp
 5	3752	8a28	Yakult
+5	3768	0331	Stars
+5	3776	8e59	Tigers
+5	3784	1717	Eagles
 5	3792	bd70	N-Ham
+5	3808	a772	Lions
 5	3816	6ad5	Orix
 5	3832	8437	Lotte
 5	3840	507a	SoftBank
@@ -10,3 +61,20 @@
 5	3868	d89b	Kaisers
 5	3880	6a5c	Cathands
 5	3896	ffa8	Yankiis
+5	3908	97d5	Vulcans
+5	3920	3cec	Busters
+5	3932	f50f	Corporate player
+5	3976	74ba	Year
+5	3984	532b	Draft
+5	4000	c393	(Ex-club manager)
+5	4032	a2c4	(Ex-HS player)
+5	4048	775b	(Ex-corp. player)
+5	4072	0179	Players from Hakkyu Dream
+5	4100	5870	Players from Eikan Nine
+5	4128	03be	People working hard outside pro ball
+5	4272	2f51	Start Success Mode.
+5	4296	5aa3	View or delete players you made.
+5	4336	52d9	View inherited players, etc.
+5	4368	61db	Play as a single player.
+5	4400	4fd6	Play as a team manager.
+5	4432	afb4	Play as national team manager.

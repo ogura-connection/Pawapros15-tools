@@ -1,0 +1,63 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	2592	6683	Advance days
+5	2608	3aea	Check this week's plan
+5	2656	0c8a	Settings
+5	2696	119d	Adjust sound settings
+5	3288	f3c2	Looks discouraged
+5	4624	bd5b	Practice swings for|Contact
+5	4664	3880	Placement hitting for|Contact
+5	4716	2ed2	Tee batting for|Contact
+5	4768	2b88	Machine batting for|Contact
+5	4808	0d88	Push-ups & sit-ups for|Power
+5	4860	004e	Finger push-ups for|Power
+5	4912	83ef	Dumbbells for|Power
+5	4964	28dd	Bench presses for|Power
+5	5016	0ffa	Dashes for|Speed
+5	5064	ef9a	Interval runs for|Speed
+5	5112	bc92	Base running for|Speed
+5	5160	ced9	Hurdles for|Speed
+5	5200	6596	Throwing drills for|Arm
+5	5248	f40a	Long toss for|Arm
+5	5288	f2ad	Tube training for|Arm
+5	5336	89cc	Lat machine for|Arm
+5	5376	3db1	Pepper for|Fielding
+5	5416	79ac	Defensive plays for|Fielding
+5	5456	045b	Fungoes for|Fielding
+5	5496	da66	Rapid-fire fungoes for|Fielding
+5	5544	0a4b	Zen meditation for|Mental
+5	5584	3c78	Mental conditioning for|Mental
+5	5636	e683	Aromatherapy for|Mental
+5	5688	b0d5	A relaxing moment for|Mental
+5	5740	c925	Squats for|Stamina
+5	5780	aba1	Roadwork for|Stamina
+5	5820	cbe1	Tire dragging for|Stamina
+5	5860	64b7	Roller work for|Stamina
+5	5904	55c8	Form checks for|Velocity
+5	5952	d03d	Pitching practice for|Velocity
+5	5992	79fb	Radar gun work for|Velocity
+5	6032	a8f2	Muscler for|Velocity
+5	6072	3111	Form checks for|Control
+5	6120	bf45	Location pitching for|Control
+5	6168	b2d8	Target throwing for|Control
+5	6208	6217	Location targets for|Control
+5	6256	2bc4	Form checks for|Breakers
+5	6308	128e	Breaking ball pitching for|Breakers
+5	6360	fe23	Grip training for|Breakers
+5	6400	3a1d	Studying breakers for|Breakers
+5	6440	0ed9	All-around practice,|trained evenly
+5	6492	d8cb	Bunt practice for|Technique
+5	6532	a13d	Stretch out and|loosen up
+5	6576	947e	Let the players rest
+5	6600	7080	Temp shower rinses off|sweat and fatigue
+5	6648	9e11	A massage chair|eases fatigue
+5	6696	6f07	Book a practice game
+5	6720	fb0e	Hold scrimmage
+5	6736	cf5f	Cheer players on
+5	6756	4e14	Watch other teams' games
+5	6784	57b8	Study to raise grades
+5	6808	697b	Review the schedule
+5	6836	f4aa	Hold a team meal
+5	6856	b10c	Player career advice
+5	6888	02f8	Give practice orders
+5	6912	4a93	Official games are near,|can't choose
+5	6956	daa3	Not selectable: plans next Saturday

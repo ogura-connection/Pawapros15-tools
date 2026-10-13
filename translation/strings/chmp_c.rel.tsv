@@ -1,3 +1,120 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	6422	99a4	Ending the tournament.|Is this OK?
 5	6484	b811	Yes     No
+5	6506	b599	Back to tournament name entry.|Is this OK?
+5	6560	74b4	Is this OK?
 5	6588	eba8	Save your data?
+5	6616	5512	Ending the Champion Cup.
+5	6660	6e6a	Draw the match-ups?
+5	6692	7045	P1: Forfeit the game?
+5	6724	8871	P2: Forfeit the game?
+5	12204	3013	Pawapuro Cup
+5	12272	14e5	Main event settings.
+5	12296	bec7	Qualifier settings.
+5	12324	a6ff	Set it yourself.
+5	12344	68ca	Set the match time limit.
+5	12376	48d7	Set how many innings.
+5	12408	1087	Choose whether Arrange teams can be used.
+5	12464	de3b	Set the called-game rule.
+5	12496	58fd	Set the called-game rule. (See Special Rules)
+5	12548	834d	Pick the ballpark at random.
+5	12588	9685	Play at the home team's ballpark.
+5	12624	7508	Pick who bats first at random.
+5	12660	a2a2	P1 bats first.
+5	12688	2c5b	Set the wind during games.
+5	12720	553f	Set the Close-Up System.
+5	12764	a102	Set pitcher fatigue across games.
+5	12808	555a	Set injuries.
+5	12832	f401	Set extra innings.
+5	12864	1c02	Set extra innings. (See Special Rules)
+5	12912	82ac	Set the weather.
+5	12936	4988	Choose whether options can be changed mid-game.
+5	12992	84ac	Set errors.
+5	13048	2dd2	Set COM strength.
+5	13076	c410	Choose whether to show form marks.
+5	13120	99ee	Choose if settings can change mid-tournament.
+5	13176	a312	Set Scene Replay.
+5	13212	6601	Choose whether player data hides after a while.
+5	13272	7ef7	Next screen.
+5	13288	8f6e	Go back.
+5	13304	ff35	Save.
+5	13324	2e1a	Quit to Mode Select.
+5	13360	9fe1	Change the option settings.
+5	13392	109e	View the special rules.
+5	13420	af96	Control everything.
+5	13448	e30b	Control only the lead runner.
+5	13484	0146	COM controls everything.
+5	13520	fae2	COM controls up to the catch,|you make the throw.
+5	13600	06cd	COM handles player changes and lineup calls.
+5	13652	4b81	You make substitutions and lineup calls.
+5	13696	6a42	Normal. Sweet-spot hits fly hard.
+5	13748	90b1	Any contact flies like a sweet-spot hit.
+5	13792	6449	Contact cursor drifts toward the ball somewhat.
+5	13844	6449	Contact cursor drifts toward the ball somewhat.
+5	13896	6449	Contact cursor drifts toward the ball somewhat.
+5	13948	6449	Contact cursor drifts toward the ball somewhat.
+5	14000	6449	Contact cursor drifts toward the ball somewhat.
+5	14052	5baf	Show landing point as a ball to see spin better.
+5	14108	cff4	Show landing point as + to see the ball's center.
+5	14164	53f9	Pitch with no catcher window.
+5	14216	f761	Pitch with the catcher window shown.
+5	14264	b5b5	Pitch from pitcher's view. (vs COM only)
+5	14320	01aa	Show direction when pitching.
+5	14352	8a4c	Show direction and pitch type.
+5	14392	2e0f	Hide the pitch type you chose.
+5	14432	ceff	Show the pitch cursor to aim more easily.
+5	14484	7b22	No cursor when pitching.
+5	14520	330e	Show the strike zone.
+5	14556	ef44	Hide the strike zone.
+5	14592	ed35	Show where the ball lands to ease fielding.
+5	14648	bfe8	Nothing shows where the ball lands.
+5	14688	a937	[Basic Rules]
+5	14744	11ec	 suits quick games, and
+5	14790	ec6b	 suits mid-length games,
+5	14832	e1e0	you can change the settings.
+5	14880	99b9	[About the Time Limit]
+5	14996	ee93	 will apply.
+5	15024	7e42	Same if time runs out in the bottom half,
+5	15072	fd46	If the home team leads at time-up,
+5	15120	e7de	when the next batter steps into the box,
+5	15168	ddd5	the game ends.
+5	15276	4cf0	 is applied.
+5	15312	3579	Time does not run during timeouts.
+5	15360	6ed3	[About the Pitch Time Limit]
+5	15408	b659	Applies only when a time limit is set.
+5	15456	449a	When pitch time drops to 5 seconds,
+5	15504	d99a	a countdown appears on the screen,
+5	15576	a481	 is applied.
+5	15600	79e9	[About the Pickoff Limit]
+5	15648	b659	Applies only when a time limit is set.
+5	15714	1964	 is the most pickoffs
+5	15744	23da	you can throw.
+5	15792	1833	After a pitch, up to 2 pickoffs
+5	15840	b316	can be thrown again.
+5	15888	80ba	[About Inning Settings]
+5	15936	2bfd	Depending on the innings,
+5	16008	71c8	 will change.
+5	16032	dab7	With fewer than 9 innings set,
+5	16080	8e71	pitcher stamina is set lower.
+5	16128	4de1	[What is a Special Called Game?]
+5	16204	6af6	 is reached,
+5	16224	84d9	the inning ends regardless of outs.
+5	16306	1c1c	 then,
+5	16320	5a5c	it is a called game.
+5	16368	f4e9	[What is Special Extra Innings?]
+5	16416	3232	Once the set innings are passed,
+5	16490	32c7	 onward,
+5	16512	1d61	innings will start that way.
+5	16560	c9ee	If it is undecided after 15 innings, it
+5	16608	00ea	is a draw.
+5	16656	b8b5	[What is Mid-Game Option Change?]
+5	16712	dd43	 lets you freely
+5	16808	4ae9	 means, in tournament games,
+5	16896	acc1	[What is Mid-Tournament Change?]
+5	16952	dd43	 lets you freely
+5	17048	19d2	 set, during the tournament
+5	17136	6eb0	[About Draws]
+5	17184	a2a3	In a draw,
+5	17258	ee93	 applies.
+5	17280	de3d	If hits are tied too,
+5	17350	3cd4	 will decide.

@@ -1,4 +1,15 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	728	38ff	Win the ultimate cup!
+5	752	f9b2	Multiplayer knockout tournament!
+5	788	3bea	Fight out the league with friends!
+5	824	e872	Start the Champion Cup.
+5	860	889c	Continue the Champion Cup.
+5	900	9a8a	Aim for the title with your favorite pro team! (12 pro teams only.)
+5	1016	8007	Only original teams with changed team mark, logo or uniform can enter.
+5	1136	4d83	Beat the legendary strongest team and|become the best! (All teams OK.)
+5	1312	c275	Start the tournament.
+5	1344	0207	Continue the tournament.
+5	1376	19c4	View past tournament winners.
 5	1412	41cc	Yomiuri Giants
 5	1432	5df1	Chunichi
 5	1448	fcc4	Hiroshima Carp
@@ -13,3 +24,21 @@
 5	1660	ccc2	SoftBank Hawks
 5	1688	7676	Shonan SeaRex
 5	1708	1736	Surpass Kobe
+5	1724	9d06	Invoice
+5	1736	8f1b	All-Central
+5	1756	0627	All-Pacific
+5	1792	7ac1	Pawafuru HS
+5	1808	b373	Akatsuki Univ.
+5	1824	bad1	Renren
+5	1840	89e4	Soyokaze HS
+5	1856	4b82	Teio
+5	1872	f825	Sei Tachibana
+5	1888	a5b3	Ryusei
+5	1900	5543	Andromeda Acad.
+5	1920	4396	Daitoa
+5	1932	320b	Gokuaku
+5	1944	2008	Hinode HS
+5	1956	d587	Kyuhachi
+5	1968	684f	Naniwagawa HS
+5	1984	3ac2	Seiko
+5	1996	3765	Tairyo Fish

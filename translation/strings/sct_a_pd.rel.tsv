@@ -1,0 +1,73 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	120	8350	L Th
+5	136	4d03	R Bt
+5	144	4051	L Bt
+5	152	3ffa	Both
+5	176	3fa8	Bench
+5	2536	b981	Birth
+5	2544	e179	Acad
+5	2552	9804	T-Scr
+5	2560	cd41	From
+5	3196	8134	Finish giving practice orders?
+5	4704	1d38	Ordinary
+5	4716	bdb9	Naughty
+5	4728	1f70	Fiery
+5	4736	58f6	Cool
+5	4744	8624	Shy
+5	4752	cc92	Genius
+5	4760	541f	Goofball
+5	4772	9408	Shrewd
+5	4794	4f33	Experience by Ability
+5	4828	8d18	*Practicing: Auto
+5	4868	78b5	*Practicing: Trajectory Up
+5	4908	7b92	*Practicing: Contact Up
+5	4948	accc	*Practicing: Power Up
+5	4988	c17c	*Practicing: Speed Up
+5	5028	42d8	*Practicing: Arm Up
+5	5068	15c7	*Practicing: Fielding Up
+5	5108	a9c0	*Practicing: Error Resist
+5	5148	ecb3	*Practicing: Velocity Up
+5	5186	c8f4	*Practicing: Stamina Up
+5	5224	de3e	*Practicing: Control Up
+5	5268	8269	*Practicing: Breaking Ball Up
+5	5308	8269	*Practicing: Breaking Ball Up
+5	5348	8269	*Practicing: Breaking Ball Up
+5	5388	8269	*Practicing: Breaking Ball Up
+5	5428	8269	*Practicing: Breaking Ball Up
+5	5468	c522	*Practicing: Breaking Ball
+5	5508	c522	*Practicing: Breaking Ball
+5	5548	c522	*Practicing: Breaking Ball
+5	5588	c522	*Practicing: Breaking Ball
+5	5628	c522	*Practicing: Breaking Ball
+5	5668	c522	*Practicing: Breaking Ball
+5	5708	c522	*Practicing: Breaking Ball
+5	5750	12b9	*Practicing: All-Around
+5	5788	c308	*Practicing: Position Change
+5	5828	6ee6	*Practicing: Batting Side Chg
+5	5866	58b0	*Practicing: Batting Form Change
+5	5906	07f5	*Practicing: 2nd Breaking Ball Up
+5	5946	07f5	*Practicing: 2nd Breaking Ball Up
+5	5986	07f5	*Practicing: 2nd Breaking Ball Up
+5	6026	07f5	*Practicing: 2nd Breaking Ball Up
+5	6066	07f5	*Practicing: 2nd Breaking Ball Up
+5	6108	e782	*Practicing: 2nd Breaking Ball
+5	6148	e782	*Practicing: 2nd Breaking Ball
+5	6188	e782	*Practicing: 2nd Breaking Ball
+5	6228	e782	*Practicing: 2nd Breaking Ball
+5	6268	e782	*Practicing: 2nd Breaking Ball
+5	6306	6d8b	*Practicing: Special Fastball
+5	6346	029c	*Practicing: Pitch Form|Change
+5	6384	933b	Ogre
+5	6392	64b8	Super High
+5	6404	de57	High
+5	6416	3331	Normal
+5	6424	89c2	Awful
+5	6436	e8e7	None
+5	6448	3bba	Who is this player again?
+5	6476	94e9	Still raw. Has promise,|but...
+5	6532	5167	Not a bad player...|Worth keeping an eye on.
+5	6588	8063	He's quite a player.|Promising.
+5	6644	9c11	A wonderful talent!|I want him on our team...
+5	6708	4f33	Experience by Ability
+5	6752	68c5	★Captain★
+5	6768	16ed	Scrim

@@ -1,0 +1,49 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	7688	1a5f	Share of at-bats that are hits: H / AB
+5	7732	b2f8	Games played as batter, fielder or pinch runner.
+5	7792	d340	Times you got a result by hitting.|BB, HBP and bunts not counted.
+5	7876	f2f4	Total hits, home runs included.
+5	7920	a6e2	Hit that got to 2nd base.
+5	7952	7178	Hit that got to 3rd base.
+5	7984	89af	Hits over the fence in fair play, or runs|to home with no error.
+5	8072	d706	Runs driven in by own batting.
+5	8104	320a	Times you crossed home plate as a runner.
+5	8152	4375	Swings and misses with 2 strikes, or called third|strikes.
+5	8216	d093	Times walked or hit by a pitch.
+5	8252	9fe9	Times a bunt moved the runners up.
+5	8292	e4db	Runs batted in by tagging up on a fly ball.
+5	8344	d578	Times a hit put out 2+ runners forced to advance.
+5	8408	7067	Bases taken as a runner without a hit or|a misplay.
+5	8472	57cc	(Hits + BB/HBP) / (AB + BB/HBP + SF)
+5	8528	758e	Games with 3 or more hits.
+5	8560	d6a9	Errors, excluding WP and PB.
+5	8592	842c	Grand slams hit.
+5	8624	1879	Go-ahead HR in the bottom of the 9th or later.
+5	8680	13f0	Go-ahead hits in the bottom of 9th or later.
+5	8728	901b	Leadoff HR in the 1st inning.
+5	8768	9403	HR as a pinch hitter.
+5	8800	b09c	AVG with runners on 2nd or 3rd.
+5	8840	6573	(PO + A) / (PO + A + E)
+5	8880	a891	Caught-stealing rate. CS / (CS + SB allowed)
+5	8928	aaa8	AVG vs left-handed pitchers.
+5	8960	f844	AVG vs right-handed pitchers.
+5	8992	497f	Earned runs x 9 / innings pitched.|Runs allowed per 9 innings.
+5	9080	73d5	1 out is 1/3 inning, 1 inning is 1.
+5	9128	f73e	Wins / (Wins + Losses)
+5	9156	4231	Games you pitched with a lead that was never|lost before the game ended.
+5	9248	b225	Games you pitched when behind, and the team|never caught up by the end.
+5	9336	7941	Games where you came in late with a lead and|met the rules and finished the game.
+5	9428	6ff9	Credit for a reliever who entered with a lead or|tie and met the set conditions.
+5	9532	e7e5	Non-starter wins + holds
+5	9564	3ef6	Games pitched.
+5	9584	518e	Complete games allowing 0 runs.
+5	9656	2d90	Games started and finished.
+5	9688	b8f0	Batters you struck out. A dropped third strike|still counts.
+5	9760	e84a	Walks and hit batters allowed.
+5	9800	ad0e	Home runs allowed.
+5	9824	8870	Hits allowed.
+5	9844	70e7	Times a runner advanced because the catcher|missed a poor pitch.
+5	9924	8b5a	Runs allowed when a runner you put on scores.
+5	9992	4f9f	Runs scored by runners who got on by your walk,|HBP or hit.
+5	10060	2608	Scoreless innings in a row.
+5	10100	71e3	Saves in a row.

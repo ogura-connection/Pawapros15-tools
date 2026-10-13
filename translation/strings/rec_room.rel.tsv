@@ -1,4 +1,79 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	2944	51d9	Go back one screen.
+5	2968	05f5	Go to All-Time Records.
+5	2996	d8cf	Go to Pacific League Season|Records.
+5	3048	b3ea	Go to Central League Season|Records.
+5	3100	a204	See team rank, W-L, win pct and|games behind.
+5	3168	444d	See team rank, W-L and win pct,|plus win pct ranking.
+5	3236	c83c	See each opposing team's W-L-T|record.
+5	3296	84d5	See team AVG, runs, home runs,|and more.
+5	3352	0b37	See team ERA, runs allowed,|strikeouts and more.
+5	3416	6197	See league-wide hitter stats in|best/worst order.
+5	3488	89ce	See league-wide pitcher stats in|best/worst order.
+5	3560	4143	See hit streaks, grand slams|and other records.
+5	3620	3599	See scoreless streak, perfect game|and other records.
+5	3680	2d6b	See the current leader of each|title category.
+5	3748	46ff	See hitter and pitcher monthly|MVPs.
+5	3800	9103	See MVP, Rookie of the Year,|Best Nine, Golden Glove, etc.
+5	3876	d0c4	After the season, see MVP, Rookie|of the Year and other winners.
+5	3948	6978	See players selected by the|All-Star fan vote.
+5	4016	4b41	See team, hitter and pitcher|records in one list.
+5	4084	3aff	See team career records, title|holders and player career records.
+5	4160	dcf8	See all-time career records for|hitters.
+5	4212	8cfc	See all-time career records for|pitchers.
+5	4264	8a7e	See all-time season records for|hitters.
+5	4316	3fcd	See all-time season records for|pitchers.
+5	4368	02b1	See team standings by year.
+5	4420	9fd7	See hitter and pitcher stat|tables by year.
+5	4480	1cae	See Japan Series records.
+5	4532	09b5	This option can't be selected in|a 1-league setup.
+5	4600	8346	See the records after the|Japan Series ends.
+5	4660	3baf	See Pacific League playoff records.
+5	4712	7a96	Can't be selected when the Pacific|League has no playoffs.
+5	4788	740d	See the records after the Pacific|League playoffs end.
+5	4848	5d5f	Can't be selected in My Life.
+5	4900	6ddc	Rate of getting hits.|Hits / At-bats
+5	4956	4c98	Games played as a hitter, fielder|or pinch runner.
+5	5016	97c7	Number of official at-bats.|Excludes walks & sacrifices.
+5	5088	2e18	Total hits, including home runs|and everything else.
+5	5156	a6e2	Hit that got to 2nd base.
+5	5188	7178	Hit that got to 3rd base.
+5	5220	4ba8	Hits over the fence in fair territory,|or all the way home with no error.
+5	5296	d706	Runs driven in by own batting.
+5	5328	7b4c	AVG with runners on 2nd or 3rd.
+5	5368	8de9	Times you reached base and|touched home plate.
+5	5428	10f1	Strikeouts: swinging after 2 strikes|or looking at strike three.
+5	5496	d093	Times walked or hit by a pitch.
+5	5532	9fe9	Times a bunt moved the runners up.
+5	5572	591b	Times a fly ball with a tag-up|drove in a run.
+5	5632	d216	Times your batting got 2 or more|forced runners out.
+5	5704	8f04	Bases gained by a runner without|a hit or opposing error.
+5	5768	11c9	(Hits + BB + HBP)|  / (AB + BB + HBP + SF)
+5	5840	758e	Games with 3 or more hits.
+5	5872	37b6	Earned runs x 9 / innings pitched.|Runs allowed per 9 innings.
+5	5944	0c76	Innings counted with 1 out as 1/3|and 1 inning as 1.
+5	6012	f73e	Wins / (Wins + Losses)
+5	6040	7a6c	Wins / (Wins + Losses)|Requires 13 or more wins.
+5	6112	b037	Games where your team took the lead|while you pitched and held it.
+5	6192	1ca8	Games where you fell behind while|pitching and never caught up.
+5	6272	f62f	Times you relieved late with a lead,|met the conditions and finished.
+5	6352	52bf	Relief wins + saves
+5	6380	5b24	Holds: credited for entering in a|lead or tie and meeting conditions.
+5	6460	252a	Holds + relief wins.
+5	6488	b437	Middle reliever rating points.|Scored by entry and exit terms.
+5	6560	3ef6	Games pitched.
+5	6580	b6c4	Games pitched start to finish|allowing 0 runs.
+5	6640	2d90	Games started and finished.
+5	6672	ce33	Batters struck out.|Dropped 3rd strikes count too.
+5	6744	e84a	Walks and hit batters allowed.
+5	6784	8870	Hits allowed.
+5	6808	ad0e	Home runs allowed.
+5	6832	02a3	Times a runner advanced because a bad|pitch got past the catcher.
+5	6912	a8eb	Runs scored by runners who got|on while you pitched.
+5	6976	4064	Runs from runners who got on by|your walks, HBP or hits.
+5	7040	941d	Times your errors let a batter|or runner advance.
+5	7104	d20c	(Putouts + assists) / chances|Rate of no errors on chances.
+5	7176	84eb	Caught stealing / attempts against|Rate of failed steals vs. you.
 5	7248	d85a	Gnts
 5	7256	3df5	Chun
 5	7264	6600	Hiro
@@ -11,4 +86,344 @@
 5	7332	d410	Rak
 5	7344	8437	Lotte
 5	7352	507a	SoftBank
+5	7384	40ee	Taiy
+5	7392	d078	Shok
+5	7400	551f	JNR
+5	7408	7adb	Sank
+5	7416	0dbb	Atoms
+5	7428	63c3	Nish
+5	7440	21af	Pacif.
+5	7448	86ef	Crown
+5	7460	b724	Hnky
+5	7468	6f3b	Nank
+5	7476	c1ec	Tkyu
+5	7484	289f	Toei
+5	7492	ac23	Nitt
+5	7500	faaa	Daim
+5	7508	681e	Toky
+5	7516	ac9f	Daie
+5	7524	66bf	Kint
 5	7532	4c46	Tigers
+5	7544	fc49	Nagoya
+5	7552	8b64	Sang
+5	7560	e1a2	DTokyo
+5	7568	d848	Lion
+5	7580	5f42	Asah
+5	7588	b33b	Pacific
+5	7604	30ee	Sun
+5	7612	bea3	Senators
+5	7636	1abe	Eagles
+5	7648	4e56	Kuro
+5	7656	ae56	Yama
+5	7664	ea76	Kinki
+5	7680	a11b	Great Ring
+5	7696	9d06	Gold Star
+5	7712	4aa2	Kins
+5	7720	5b1f	WJapan
+5	7728	a47b	Taka
+5	7736	843d	Tonbo
+5	7744	d630	Main
+5	7752	477a	Yosh
+5	7760	72a5	Tokyo Senators
+5	7776	bc67	Daiei
+5	11608	c57a	Career appearances record.
+5	11640	ef16	Career home runs.
+5	11664	88a4	Career AVG, 4000+ at-bats.
+5	11704	1baf	Career RBI.
+5	11728	d99f	Career runs.
+5	11752	de7a	Career hits.
+5	11776	c727	Career steals.
+5	11800	d9d8	Career doubles.
+5	11824	3b1d	Career triples.
+5	11848	2238	Career total bases.
+5	11876	ac5a	Career sac bunts.
+5	11900	c2dc	Career sac flies.
+5	11924	654e	Career walks.
+5	11948	34fd	Career HBP.
+5	11972	fdd1	Career SO (batting).
+5	12000	8b5d	Career GIDP.
+5	12024	d8a1	Career triple plays.
+5	12048	7379	Career errors.
+5	12072	3cf6	Career 3-hit games.
+5	12096	7599	Career inside-park HR.
+5	12132	9e4a	Career walk-off hits.
+5	12168	c683	Career walk-off HR.
+5	12200	3ead	Career grand slams.
+5	12228	db77	Career pinch-hit HR.
+5	12256	7301	Career games pitched.
+5	12280	d1c1	Career innings.
+5	12304	d17a	Career comp. games.
+5	12328	25f7	Career shutouts.
+5	12352	6d0d	Career wins.
+5	12376	42f8	Career losses.
+5	12400	2c8d	Career win pct, 2000+ innings.
+5	12440	5040	Career ERA, 2000+ innings.
+5	12488	c148	Career strikeouts.
+5	12512	1e1e	Career saves.
+5	12536	3de4	Career hold points.
+5	12572	694a	Career holds.
+5	12600	3ad4	Career relief points.
+5	12640	4c2b	Career hits allowed.
+5	12664	4fed	Career HR allowed.
+5	12696	8597	Career walks allowed.
+5	12720	2fd4	Career HBP allowed.
+5	12744	58eb	K/9
+5	12756	a27a	Career wild pitches.
+5	12780	be0f	Career runs allowed.
+5	12808	ebd0	HR from each side in one game.
+5	12848	e9e8	Leadoff HR in the 1st inning.
+5	12880	51ed	Hitting for the cycle.
+5	12912	3b5a	Hit .300 with 30 HR and 30 SB.
+5	12952	695c	Pinch-hit grand slam.
+5	12984	6ccd	Walk-off grand slam.
+5	13016	a07a	Pinch-hit walk-off grand slam.
+5	13052	6796	Pinch-hit comeback walk-off HR.
+5	13088	6c6b	Pinch-hit comeback walk-off slam.
+5	13128	3150	Leadoff HR on Opening Day.
+5	13168	b7fd	HR records by age.
+5	13196	b3e8	Triple Crown: AVG, HR and RBI.
+5	13232	b453	Perfect games.
+5	13256	458c	No-hitters.
+5	13288	1e35	Scoreless streaks.
+5	13312	bcb3	Four Crowns: wins, ERA, win pct, SO.
+5	13360	807e	A strikeout every inning.
+5	13396	3964	Season hold points.
+5	13440	9004	Season home runs.
+5	13472	4d96	Season batting average.
+5	13504	4d78	Season RBI.
+5	13536	2583	Season runs.
+5	13568	e202	Season hits.
+5	13600	8f6e	Season steals.
+5	13632	5b96	Season doubles.
+5	13664	1732	Season triples.
+5	13696	67ca	Season sac bunts.
+5	13728	9ad5	Season sac flies.
+5	13760	aaf7	Season SO (batting).
+5	13792	b802	Season walk-off home runs.
+5	13832	e47b	Season grand slams.
+5	13868	e2df	Season pinch-hit HR.
+5	13904	7f7d	Season games pitched.
+5	13936	e81b	Season innings pitched.
+5	13968	837d	Season complete games.
+5	14000	104d	Season shutouts.
+5	14032	61a0	Season wins.
+5	14064	360b	Season losses.
+5	14096	8bb9	A record needs 13+ wins in a year.
+5	14136	38fd	Season ERA.
+5	14168	e921	Season strikeouts.
+5	14200	88ea	Season saves.
+5	14232	3964	Season hold points.
+5	14280	96e3	Season hits allowed.
+5	14312	794a	Season HR allowed.
+5	14352	9e5d	Season walks allowed.
+5	14384	c188	Season HBP allowed.
+5	14416	c78a	Season runs allowed.
+5	14448	57ab	Season wild pitches.
+5	26884	0050	Japan Series MVP: expect more!
+5	26920	131c	Brilliant MVP last season!
+5	26956	e746	Rookie of the Year should soar!
+5	26992	e4cd	Four Crown ace is in top form
+5	27028	c1e6	Four Crown ace is gunning again
+5	27064	f81e	Show Four Crown ace form again!
+5	27100	de17	Triple Crown pillar of the team
+5	27136	d3dd	Pitching's best honor: Sawamura!
+5	27172	bfec	Two crowns: best ERA, most wins
+5	27208	62e3	Two crowns: most wins, most SO
+5	27244	a3d6	Two crowns: best ERA, most SO
+5	27280	327b	Win leader is raring to go
+5	27316	241d	Best-ERA ace has what it takes
+5	27352	fa93	Top reliever won't let up
+5	27388	443f	Led in save points last year
+5	27424	b329	Strikeout leader to rack up more
+5	27460	8d9a	Top setup man is set again
+5	27496	c947	Hold leader is safe again!
+5	27532	1474	Rookie pitcher with real talent
+5	27568	bcf8	Looks promising this season
+5	27604	f937	Player to watch this year
+5	27640	4cdd	Promising new addition
+5	27676	8234	Triple Crown king is set again
+5	27712	1241	Amazing feat: .300, 50 HR, 50 SB
+5	27748	3e2d	Feat: .300, 50 HR, 50 SB!
+5	27784	17cc	Landmark: .300, 30 HR, 50 SB!
+5	27820	33ef	.300, 30 HR, 30 SB help the team
+5	27856	4b92	AVG & HR crowns: batting master
+5	27892	4838	Superb! AVG & RBI double crown
+5	27928	30dd	HR/RBI crowns, great again ◎!
+5	27964	2e71	.300, 50 HR, 100 RBI: huge year!
+5	28000	4b51	Batting champ! Going again!
+5	28036	f428	HR king aims even higher!
+5	28072	3199	RBI king, a big help to the team
+5	28108	c2af	SB king speedster runs again
+5	28144	7001	Last year: .300, 30 HR, 100 RBI
+5	28180	6a71	Hits leader: a hit machine
+5	28216	2f0b	OBP leader, a big help to team!
+5	28252	fed4	Clutch game-winning RBI leader
+5	28288	4e68	Rookie hitter with real talent
+5	28324	bcf8	Looks promising this season
+5	28360	f937	Player to watch this year
+5	28396	4cdd	Promising new addition
+5	28432	a03c	Pin down sluggers with pressure!
+5	28468	abd8	His presence overwhelms hitters!
+5	28504	59b2	Throws with heart in every pitch
+5	28540	ec1e	Fighting spirit retires hitters!
+5	28576	60eb	Lefty killer still going strong
+5	28612	7432	Sure of himself against lefties!
+5	28648	a900	Quick tempo baffles hitters
+5	28684	b064	Fine pitcher with a good tempo!
+5	28720	0207	Rock steady, trusted by the team
+5	28756	742f	Steady pitching leads to wins!
+5	28792	3e7e	Allow fewer HR for more success!
+5	28828	4939	Avoid careless homers, win more!
+5	28864	b45b	Do the best job closing games!
+5	28900	8e20	Safe hands to close it out!
+5	28936	113f	Stamina to pitch day after day!
+5	28972	0950	Bounces back for full-time duty
+5	29008	b449	Needs work with runners on base
+5	29044	0c6b	Be careful when runners get on
+5	29080	1173	Confident in his breaking balls!
+5	29116	f83c	Breaking balls baffle hitters!
+5	29152	470c	Overpowers with 160+ km/h heat
+5	29188	00f3	160 km/h fastball is still here
+5	29224	0a23	Low-160s km/h fastball weapon
+5	29260	94b2	MAX high-150s km/h fireballer
+5	29296	d2da	High-150s km/h fastball pitcher
+5	29332	08f8	Known for high-150s km/h heat
+5	29368	7183	MAX high-150s km/h lefty
+5	29404	d0bc	Righty to watch: high-150s km/h
+5	29440	cab8	Win games with heat for the team
+5	29476	2d58	Pitcher with low-150s km/h heat
+5	29512	409f	150 km/h fastball should shine
+5	29548	0167	Pitcher with 150s km/h fastball
+5	29584	893e	150 km/h fastball overpowers!
+5	29620	e1d4	Lefty with low-150s km/h heat
+5	29656	4461	Righty with low-150s km/h heat
+5	29692	ec68	Polished control is his weapon
+5	29728	d69f	Fine pitcher, superb control
+5	29764	54af	Precise control baffles hitters!
+5	29800	fa37	Skilled control tames sluggers
+5	29836	cc0f	Challenges hitters with control!
+5	29872	010c	Has stamina to last the pennant
+5	29908	e9a0	Tough pitcher with ample stamina
+5	29944	f59c	Toughness helps the team win
+5	29980	8be4	Iron stamina for team victory!
+5	30016	6f3c	Tough guy and team's rising star
+5	30052	84e5	Full power for lots of HR!
+5	30088	1f56	Fearsome power drives title run!
+5	30124	e481	Power that helps the team!
+5	30160	baaa	Slugging blast drives title run!
+5	30196	cfd4	Top bat control is still here
+5	30232	d66e	Hit machine, great offense!
+5	30268	878b	Bat control is still strong
+5	30304	ff27	Skilled hitting! Pile up hits!
+5	30340	e4b7	Superman: speed, glove and arm
+5	30376	b087	High base skills, a strong asset
+5	30412	88a9	Athleticism on full display!
+5	30448	132e	Legs fuel aggressive baseball
+5	30484	5396	Speed boosts the run output!
+5	30520	8efc	Slick fielding backs the pitcher
+5	30556	239d	Fielding strength helps team!
+5	30592	46ad	Strong arm pins runners down!
+5	30628	8772	Arm strength helps the team!
+5	30664	dd18	Pressure intimidates pitchers!
+5	30700	462c	Big presence pressures pitchers
+5	30736	0c7f	Fan favorite drawing attention!
+5	30772	c33e	Fan favorite wants to deliver!
+5	30808	3a3f	Great skill at judging pitches!
+5	30844	6806	Sharp eye beats the pitchers
+5	30880	b6d9	Create chances and score more!
+5	30916	b6d9	Create chances and score more!
+5	30952	2f11	One swing can flip the mood!
+5	30988	6432	Expect a game-changing hit!
+5	31024	0be1	A sturdy body is his top weapon
+5	31060	8619	Tough play on a tough body
+5	31096	5e53	Hit a dramatic walk-off homer!
+5	31132	a240	Walk-off HR for team momentum
+5	31168	db6a	Unmatched clutch, bases loaded!
+5	31204	ab73	Great guy with bases loaded!
+5	31240	4660	Spray hitting all over the park!
+5	31276	da7c	Best at spraying to all fields
+5	31312	d9bc	Bunting skill is master class
+5	31348	60fe	No one bunts better
+5	31384	03d6	Heart for each at-bat is strong!
+5	31420	5fd1	Gives his best as pinch hitter
+5	31456	e409	Superb calls aid the pitcher
+5	31492	b82c	Great catcher, superb call sense
+5	31528	a874	Catcher the pitchers trust
+5	31564	8554	Good calls bring team wins!
+5	31600	0894	Fix his calling for a big year
+5	31636	6de3	Polish calling for even more!
+5	31672	5d28	Nice blocks guard the plate
+5	31708	d704	Iron wall guards the plate
+5	31744	9a20	Reliable import with a big bat
+5	31780	a539	Import power helps the team!
+5	31816	b90c	Import power aims for the title!
+5	31852	797f	Hopes on a skilled-hitter import
+5	31888	3ad8	Import catcher bears heavy load
+5	31924	23db	Import with speed as his forte
+5	31960	cab8	Win games with heat for the team
+5	31996	613c	Pile up Ks with the fast ball!
+5	32032	0c5e	Rookie to watch with great speed
+5	32068	36ac	Ready-now rookie with speed
+5	32104	a313	Player with speed, arm and glove
+5	32140	e31f	Hitting-first rookie, ready now
+5	32176	7e5b	Future cleanup man! Big bat!
+5	32212	3ab3	Power-hitting rookie, ready now
+5	32248	23c1	Contact-hitter rookie, ready now
+5	32284	2632	Could chase Japan's top speed!
+5	32320	5a05	Ready-now pitcher, MAX 150s km/h
+5	32356	0e78	High-150s km/h fastball weapon
+5	32392	0dc4	Hangs tough with veteran craft
+5	32428	f564	Years of experience are his edge
+5	32464	a22d	Future star of the game
+5	32500	052c	Could hit Japan's fastest speed
+5	32536	be15	Pivot of the setup relay
+5	32572	03e2	Varied breaking balls are potent
+5	32608	c6b8	Gets whiffs and shuts games down
+5	32644	9dbf	Hold the 1st and 2nd for a win
+5	32680	ec5c	Be careful early in the game!
+5	32716	3c69	Late release is hard to time
+5	32752	1b31	Release that confuses hitters
+5	32788	2345	Carefully works the low zone
+5	32824	9cdd	Pitcher with great low control
+5	32860	e8d4	Attacks with heavy pitches
+5	32896	1722	Heavy ball sluggers can't lift
+5	32932	9b0c	Mental toughness would help
+5	32968	ba03	Train the mind and deliver
+5	33004	2548	Good fit with the team's lineup
+5	33040	6bc7	Favored by the victory goddess
+5	33076	bb2d	Fires up like no other vs power
+5	33112	85c6	Tougher foes, more fire!
+5	33148	5062	Expect even greater things
+5	33184	8174	Aims for strength on both sides
+5	33220	1a50	Aims one level higher this year
+5	33256	2ef3	Polish selling points to rise
+5	33292	a91f	Valuable all-around player
+5	33328	d741	Quiet bat, shines in the clutch
+5	33364	f4ba	With honed skills
+5	33384	137f	Strong arm, solid glove shine
+5	33420	4ebf	Strong arm; pillar of team D!
+5	33456	d09c	Wide range helps the pitcher
+5	33492	e420	Speed & skill key the defense
+5	33528	62f8	Big hopes as the lineup spark
+5	33564	1657	Speed and contact to score runs
+5	33600	1c46	Steady glove helps pitchers
+5	33632	7b5b	Solid fielding helps team
+5	33664	d1e0	Bold running fires up team
+5	33696	a16d	Eyes next base aggressively
+5	33728	90c6	Well-rounded player, hopes high
+5	33764	81ab	Triple threat: hit, run, field
+5	33800	1eff	Top level in hit, run & field
+5	33836	34ab	Takes on the top with his flair
+5	33872	2cc0	Most passionate in baseball
+5	33908	2109	40+ saves two years running!
+5	33944	c1f1	Best ERA two years in a row
+5	33980	be3a	Hit machine with flashy speed
+5	34016	805a	Yokohama's young big gun
+5	34052	52f3	Sub-1.00 ERA, deadly fastball
+5	34088	42ed	Full-inning games record holder
+5	34124	e64a	Northern ace who wowed Japan
+5	34160	f3b4	Rookie of the Year, hopes again
+5	34196	8d45	Seibu's new ace, rotation anchor
+5	34232	ad7f	Big rookie year, rising higher!
+5	34268	03e1	World's lowest release point
+5	34304	3c88	Four-crown ace of the game

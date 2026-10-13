@@ -1,0 +1,211 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	1320	2d10	Schedule Progress
+5	1348	debf	Text Fast-Forward
+5	1372	9fe3	Solo Training
+5	1392	a5e4	Practice Orders
+5	1416	46b7	Setting the Lineup
+5	1440	80b3	Baseball Tools
+5	1464	4d83	Special Abilities
+5	1488	e0f2	Training Gear
+5	1512	5ce4	Ground Lv.
+5	1536	3d74	Ground Soil
+5	1560	d78d	Weather
+5	1576	5efc	White Panels
+5	1596	b497	Blue Panels
+5	1616	bcaa	Red Panels
+5	1636	dd9e	Green Panels
+5	1656	1e2c	Schedule Panel
+5	1676	6d79	Yellow Panels
+5	1696	f5a2	Record Points
+5	1720	f34a	Camp
+5	1736	fd32	Post-Game Branching
+5	1760	35ea	Spotlight Player
+5	1780	1545	Public Reputation
+5	1800	6a84	Training Policy
+5	1820	fb8e	Growth Report
+5	1840	db90	Tactics
+5	1856	121c	Tactic Icon No.
+5	1876	49d4	Unique Tactics
+5	1896	e5b3	Messenger
+5	1912	9018	Don't Mind
+5	1936	d056	Big Cheer
+5	1952	bc39	Super Pumped
+5	1972	f0bf	Combined Progress Icons
+5	2396	a8d0	The icons along the bottom of   the screen are Progress Icons.  There are many kinds. Pick a    practice icon and the whole teamdoes that practice. Pitching    practice does little for        batters, and batting practice   little for pitchers. Some icons have special effects too, so usethem well!
+5	2752	386e	Text and the schedule can be    fast-forwarded. Recommended for anyone who wants to keep the    game moving briskly!
+5	2948	94d8	Players going pro train in secret until graduation day.|If it goes well, they may grow even more.|No more practice orders now, so look forward to graduation!
+5	3144	40cb	On the 1st of every month you   give practice orders on their   own screen. Once an order       reaches a set value, it switchesto Auto by itself. The value    differs by item; for example,   Trajectory switches at +1.
+5	3372	1b9f	In 'Lineup Setup' on the Data|screen you can set your lineup,|usage and team policy.
+5	3472	93ce	Baseball Tools, the items that  grow a player, can be used only once per player. Books, the     items that give a special       ability, can also be used only  once per player. Think hard     before you use these two!
+5	3732	c0bc	Some players already have a|special ability when they join.|Check the Data screen to see|who has one.
+5	3864	5665	Installing gear raises Ground   Lv. The higher the Ground Lv.,  the better the practice results.Each piece of gear also has a   practice of its own, so adding  gear may bring new practice     progress icons. Check your gear on the Data screen.
+5	4188	53fa	'Lv. from gear' and 'Lv. from soil' make up Ground Lv.|Maxing out just one of them will not|bring Ground Lv. to MAX.
+5	4416	7da8	The soil that forms the base of a school's ground comes in two  kinds: white soil and black     soil. As the school's reputationrises, the ground changes to    black soil. Once the base is    black soil, the base value of   Ground Lv. goes up a lot!
+5	4676	f737	The share of bad weather is the same all over Japan, but the    chance of snow differs by       region. Use your items wisely.
+5	4840	7a37	Stop on a white panel and you|may get a good event, or a|bad one.
+5	4972	f195	Stop on a blue panel and an|event that helps the team|happens. Aim for them!
+5	5104	97e4	Stop on a red panel and an eventthat hurts the team happens. Trynot to step on them.
+5	5248	1894	Stop on a green panel to let|your players rest. Manage their|condition well and train|efficiently.
+5	5380	2f88	Stop on a Schedule Panel and twonew branches appear, so you can pick a route from three. Aim forit when the schedule ahead looksweak.
+5	5544	d573	Stop on a yellow panel and the  progress icon you have selected gets bonus experience. Aim for  them! But if the selected icon  is not a practice, an event     happens instead.
+5	5772	377c	Record Points are earned from   match results. You can spend    them on Baseball Tools, items   and more. As you pile up wins, avendor who sells items visits   the team regularly, and that is when you can use them. Save up  lots and spend lots!
+5	6096	1c23	At camp, you can have the       players who are fired up that   day aim for a special ability.  When camp starts, the practice  icons switch to ones with       special abilities of their own. Some practices carry several of them. If there are several, one is picked at random. Which      progress icons you bring into   camp is very important.
+5	6516	291f	About branching after a match:  the upper route is for a win.   The lower route is for a draw ora loss. In practice games and inofficial games from July, the   branch after a match can change your public reputation.
+5	6808	d9bf	Players to watch are chosen from|the starters. A player chosen as|Spotlight Player gets more|playing time than usual.
+5	6940	c1c6	When public reputation rises,   you get more progress icons and a better schedule this week. Newrecruits are stronger, and goingpro gets easier. All good       things!
+5	7136	928c	Setting a training policy       changes which practice icons    tend to appear. Choose from fourtypes, keeping in mind the idealplayer you want to raise.
+5	7300	571d	A growth report after a practiceprogress icon combines two kindsof experience: what comes from  the practice items set for each player, and what the icon you   chose earned.
+5	7528	f12f	In a match you give players all kinds of orders, like pitching  inside or going for a hit and   run. What to pick in each       situation is up to the manager.
+5	7692	af50	The bigger the number on a      tactic icon, the stronger the   effect. The number depends on   how much each player trusts you,and it changes with every at-   bat, based on that trust.
+5	7888	d8c5	Every player has a Unique       Tactic. It is the differently   colored tactic at the far right of the tactic icons during a    match. Unique Tactics are based on personality, and some are    rare. Each player can use his   only once per match. When to useit is the manager's call. Note  that some have no effect,       depending on the player's       condition or the pitcher's      state.
+5	8308	9c49	A messenger can be used up to 3 times per game. In extra        innings, you can use one once   per inning. A messenger's effectdepends on the player's year andpersonality. Whom to send and   when is up to the manager. The  number is limited, so be        careful.
+5	8632	90cd	Don't Mind sends the catcher to the mound. It calms the         pitcher's nerves. It can be usedup to 2 times per game.
+5	8796	f63e	Big Cheer speeds up everyone's  baserunning on offense and      ball-chasing on defense. Cheer  on your hard-working players    with all your heart!
+5	8960	6278	Super Pumped makes Special|Training panels easier to clear!|Blue panel effects also get a|little stronger.
+5	9092	33ed	Practice with a combined        progress icon makes players     train harder than ever, so they earn lots of experience. The    more ★ stars, the greater the   effect. Also, a combined        progress icon always becomes a  1-day icon.
+5	10232	03fd	SuMoTuWeThFrSa
+5	10248	382d	Camp
+5	11184	1b4d	Enroll
+5	11192	282a	Grad.
+5	11200	532b	Draft
+5	11212	2421	Sum Pref R1
+5	11232	8194	Sum Pref R2
+5	11252	ae07	Sum Pref R3
+5	11272	21b0	Sum Pref QF
+5	11292	e7bd	Sum Pref SF
+5	11312	f7d2	Sum Pref Fin
+5	11328	e385	Sm Koshien R1
+5	11348	6949	Sm Koshien R2
+5	11368	387c	Sm Koshien R3
+5	11388	7897	Sm Koshien QF
+5	11408	cfe2	Sm Koshien SF
+5	11432	7c42	Sm Koshien Fin
+5	11448	f33a	Fall Pref R1
+5	11468	9232	Fall Pref R2
+5	11488	bc71	Fall Dist R1
+5	11508	7e4e	Fall Dist R2
+5	11528	3422	Sp Koshien R1
+5	11548	7a42	Sp Koshien R2
+5	11568	7d96	Sp Koshien QF
+5	11588	a2a0	Sp Koshien SF
+5	11608	d390	Sp Koshien Fin
+5	11624	382d	Camp
+5	11632	9ff5	Exams
+5	11644	9ff5	Exams
+5	11656	9ff5	Exams
+5	11668	dda0	Culture Festival
+5	11688	3dff	Sports Festival
+5	11708	16ed	Scrim
+5	11720	f249	Invites
+5	11736	8314	Bracket Draw
+5	11752	7d3e	Sum Pref R1
+5	11772	2938	Sum Pref R2
+5	11792	5d8e	Sum Pref R3
+5	11812	f023	Sum Pref QF
+5	11832	d776	Sum Pref SF
+5	11856	213f	Sum Pref Fin
+5	11872	c22b	Fall Pref R1
+5	11892	183b	Fall Pref R2
+5	11912	f954	Sum Tokyo R1
+5	11932	e074	Sum Tokyo R2
+5	11952	22e4	Sum Tokyo R3
+5	11972	4100	Sum Tokyo QF
+5	11992	e5c6	Sum Tokyo SF
+5	12016	7141	Sum Tokyo Fin
+5	12032	957f	Fall Tokyo R1
+5	12052	61ee	Fall Tokyo R2
+5	12072	39c2	Sum Hokk. R1
+5	12092	0cc4	Sum Hokk. R2
+5	12112	271a	Sum Hokk. R3
+5	12132	fc0c	Sum Hokk. QF
+5	12152	bcda	Sum Hokk. SF
+5	12176	d928	Sum Hokk. Fin
+5	12192	28ea	Fall Hokk. R1
+5	12212	25a0	Fall Hokk. R2
+5	13240	c7ab	Song
+5	13448	3169	Youth and high spirits
+5	13472	a826	Fair and strong
+5	13496	9dd8	Hale as a spring breeze
+5	13524	7080	Vivid as fresh green
+5	13552	2987	Hail our proud school
+5	13576	e98e	Stately we fight; light on us!
+5	13608	a9cd	Ah, so far
+5	13624	ca75	○○ HS
+5	13656	d7dd	Futures gleam in eyes
+5	13680	a771	Hope in heart, blue sky
+5	13712	ac67	Fly forth to the ocean
+5	13736	4a9c	Honored youth
+5	13756	43f0	Youth's journey: go!
+5	13784	c277	Ah, ○○ HS
+5	13832	c26f	Shining school
+5	13848	e745	Ocean heart
+5	13864	7b8b	Eternal fresh wind
+5	13884	f3c2	We'll blow
+5	13896	f4d9	Ours, ours!
+5	13912	ca75	○○ HS
+5	13952	b623	Echo our power
+5	13972	9b21	Win, win, total win
+5	14032	4ddc	Number One!
+5	14048	805b	Best in the world
+5	14072	ddfe	Number One beats Only One
+5	14104	d6cf	Fearless of gods
+5	14152	c277	Ah, ○○ HS
+5	14176	97a4	Home of rich hearts
+5	14200	ffc9	Love and dreams come true
+5	14232	fb6e	With magic paper,
+5	14256	1247	Hurdles ahead
+5	14276	cf90	gives us strength to win~
+5	14308	37d7	(Spoken)
+5	14320	641a	"But money can't buy lots
+5	14354	2ecd	of things in life, huh?"
+5	14384	9222	I said it straight, but
+5	14412	79be	that's key~
+5	14428	0614	○○~ HS
+5	14440	01e9	Gaze up and wonder
+5	14460	9c59	Live on heaven's bounty
+5	14488	efff	Sweat it
+5	14500	4dcb	Cold even in summer
+5	14524	2623	○○ water is here
+5	14544	0436	Drink to refresh
+5	14564	2833	Oh~ Ohhhh~
+5	14584	28b6	East-west aglow
+5	14604	ca75	○○ HS
+5	14632	2c1a	Glowing in dawn light
+5	14656	20c4	Feelings
+5	14672	0eed	Carve friendship in our hearts
+5	14704	31be	Hone heart, skill with you
+5	14736	37ad	Always lift each other up
+5	14764	3854	Unbeaten, all wins
+5	14784	548a	Never lose pride
+5	14804	bc9b	○○ HS~
+5	14840	f8aa	Your wind to the world
+5	14864	ff85	Let's blow
+5	14876	36ad	Breeze peep-poo, harmony
+5	14904	d1bd	Pure, scented breeze at school
+5	14936	160a	Wind of glory, blow!
+5	14960	46c0	Whoo~ Whoo~
+5	14976	eed8	○○ ○○ HS
+5	15016	196c	Lalala~ lala~ la~
+5	15036	e97f	La~ lala~ lala~
+5	15056	1737	Rest on Mother Earth
+5	15080	530c	Growing pure hearts
+5	15104	5b58	Green-lit school
+5	15128	4ac2	Sun lights the future
+5	15152	6b92	Echoes in the cherry garden
+5	15184	fddc	The tune, of loving care
+5	15212	88ba	Its source
+5	15224	07fc	Joy of youth
+5	15240	bfaa	Be beautiful forever
+5	15280	ca75	○○ HS
+5	15292	e964	This shining orb
+5	15312	9568	Eight orbs guide us
+5	15336	dbe7	High ideals within
+5	15356	c541	Keep orbs unclouded
+5	15380	2f54	Friends!
+5	15392	495e	Grip the orb hard!
+5	15416	3ef7	In a pinch, show orbs
+5	15440	cae5	Lift shining orb
+5	15460	c799	Ah~ ○○
+5	15476	ca75	○○ HS
+5	15488	b675	Take wing forever
+5	15512	84de	○○ Men

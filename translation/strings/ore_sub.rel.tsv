@@ -1,5 +1,21 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	11820	9a33	 done.
+5	11856	44af	ER
+5	11864	5915	Ks
+5	11872	b7c6	AB
 5	11880	1324	Hits
 5	11888	6ba5	 HR
 5	11896	de06	 RBI
+5	11904	d411	BB+HB
 5	11912	b3fd	 SB
+5	11920	c449	SO
+5	11928	939d	Did not play
+5	11944	68c7	AVG
+5	11952	01b7	ERA
+5	11960	a075	Central Lg
+5	11972	d0cc	Pacific Lg
+5	11984	4100	Win
+5	12076	2985	It's April 6!
+5	12096	50f2	It's April 7!
+5	12116	59bf	It's April 8!
+5	12136	c2f7	Shows every day!

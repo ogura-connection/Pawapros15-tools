@@ -1,0 +1,28 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	400	7218	School Team Data
+5	996	7259	Shows avg. Contact & Power
+5	1032	7529	Shows avg. SPD
+5	1064	27cd	Shows avg. Fielding & ARM
+5	1096	80d4	Shows avg. pitcher|Velocity, Stamina,|Ctrl, Brk Ball
+5	1160	c740	Avg. special abilities
+5	1196	1ac6	Games played so far
+5	1224	0c22	Overall team strength
+5	1256	ecd2	Results of past games
+5	1280	9857	Training gear available
+5	1312	c493	Total who turned pro
+5	1336	8530	Koshien total record
+5	1364	82bb	Fall District Tourney|Total record
+5	1404	86ef	Spring Koshien|Total record
+5	1444	783c	Summer Koshien|Total record
+5	1484	8e06	Weak
+5	1492	034c	Decent
+5	1504	c842	Mid
+5	1512	4165	Good
+5	1520	d31e	Top
+5	1538	14a9	Recent Results
+5	1556	5aef	Career
+5	1576	9c03	Draw
+5	1584	55a5	★Total Going Pro
+5	1644	627d	★Koshien Record
+5	1668	bab1	Win%
+5	2016	c1da	Reputation:
