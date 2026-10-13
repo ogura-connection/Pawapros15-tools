@@ -66,7 +66,9 @@ def parse(units):
         j = i
         while j < n and units[j] and is_code(units[j]):
             j += 1
-        if j == n or units[j] != 0:
+        if j == n:
+            break                           # codes and nothing behind them: the end of the message
+        if units[j] != 0:
             return None
         try:
             k = units.index(END, j + 1)
