@@ -290,6 +290,12 @@ session with one Sonnet agent per batch of about 430 runs, six at a time (95 bat
 - Sizes after the build: `scs_main.rel` script +18 KB (356 KB of room left with the scenario slot moved),
   `scs_sce2.rel` +3 KB, `scs_sce3.rel` +7 KB; 1,614 letter pairs, 1,424 kanji slots left.
 - 17 warnings remain in `tl.py merge`, all in debug menus and lookup lists that the checker reads as one line.
+- **Seen in play (2026-10-13, later).** Scenario 1 was played by itself from year 1 September to its ending (`dolphin-test/autoplay.py`, about 50 minutes at 4x) and the 3,900 frames were read as text (`dolphin-test/ocr/`, the Mac's Vision text recognition; 1,000 frames become about 700 lines). The dialogue reads well; what was wrong was always a sentence the game puts together from pieces of different scenes, which no check of a single scene can see:
+  - too long once assembled (`Breaking Ball Points` + ` went up a little.`, `After that, I` + an ending, a name + ` is someone you just met.`). A speech window wraps in the middle of the word; a window of type 29 or 30 also **drops the cell after the wrap** ("lit" / "e."). Cure: a shorter ending (` rose a bit.`), or `\n` at the start of the second piece.
+  - a subject and an ending that both carry the space or neither does (`I` + `, faced `, `rain` + `practicing away,`).
+  - a piece the translator could not know the context of ("I'm" + team name: "I'm Pawafuru Corp.").
+  About 45 lines were corrected with `tl.py set`. Left as it is: after an inserted name or term with an odd number of letters, a piece starting with `'s` or a comma shows half a cell of space ("Reito-san 's rating"), because a run is padded to whole cells.
+- A scenario counts as cleared only when the player is drafted. Played by A presses alone the run ends in the bad ending (not drafted; the run is erased), so scenarios 2 and 3 stay locked. When the player is the starting pitcher the whole game is played by hand: the control settings of the タイム menu (打撃 走塁 投球 守備 監督) are fixed to Manual in Success Mode, nobody fields, and one game took 25 minutes and 59 runs.
 - Item names in the glossary pop-ups of `scs_main.rel` were set to the wording of the shop strings (88 runs).
 - **Seen in game** (scenario 1, the resume save, 5 weeks of play, and a new game as an outfielder up to the
   command menu): the build boots and loads; English lines of the common events show (a shop-clerk event, a result
