@@ -1,0 +1,344 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+4	40222	1886	End this match?|Is this OK?
+4	40282	d38b	End practice?|Is this OK?
+4	40344	c30d	Start over from|the beginning?
+4	40400	341b	Player 1 will lose.|Is this OK?
+4	40460	2dce	Player 2 will lose.|Is this OK?
+5	219896	ef3b	Title Mgr Interview
+5	219920	71fe	Hit for the Cycle
+5	219940	49b1	Perfect Game
+5	219960	b78c	No-Hitter
+5	219984	1324	Hits
+5	219992	edc8	Shutout
+5	220004	714a	CG Win
+5	220016	68be	No BB
+5	220028	4cfc	 run gem
+5	220040	96e1	Relief held the lead
+5	220068	218c	Win P
+5	220080	9f8d	Lead
+5	220088	765a	Key
+5	220096	8ba1	Go-ahead
+5	220108	062d	Turn
+5	220116	7f05	Walk-off
+5	220136	574c	Now
+5	220144	4284	Big RBI day
+5	220160	0be6	Walk
+5	220168	8e9e	HBP
+5	220176	3138	K-WP
+5	220184	4c2c	IBB
+5	220192	2762	/3 inning
+5	220932	49af	Giants
+5	220948	6f65	Dragons
+5	220960	8b86	Carp
+5	220968	3645	Swallows
+5	220980	1191	BayStars
+5	220996	4c46	Tigers
+5	221008	8e4c	Fighters
+5	221024	f379	Lions
+5	221036	dce2	Buffaloes
+5	221052	18ae	Marines
+5	221064	d9f2	Hawks
+5	221076	9eac	All-Central
+5	221096	eacb	All-Pacific
+5	221116	c637	SeaRex
+5	221132	4cb1	Surpass
+5	221144	70b3	Golden Eagles
+5	221216	08ad	KOR
+5	221224	3e7c	Taipei
+5	221236	1018	CHN
+5	221244	6118	 Plr
+5	221256	6118	Player
+5	221264	0826	Continue
+5	221276	ed69	Sub
+5	221288	822e	Please wait
+5	221312	81a5	Rehab
+5	221340	67fa	Injury care
+5	221356	3a12	Foul ball injury care
+5	221384	6475	Elbow pain care
+5	221430	67fa	Injury care
+5	221466	67fa	Injury care
+5	221508	67fa	Injury care
+5	221528	2dda	Collision injury care
+5	221580	67fa	Injury care
+5	221626	67fa	Injury care
+5	222432	f254	 breaks record!
+5	222452	b83e	 ties record!
+5	222472	d630	Tot.
+5	222480	473d	Game HR
+5	222496	bd8b	Game TB
+5	222512	923a	Game RBI
+5	222528	08d1	Game SB
+5	222544	117d	Game K
+5	222560	9930	Season HR
+5	222576	8134	Season Slams
+5	222596	08cf	Season PH HR
+5	222616	a201	Season Hits
+5	222632	fc43	Season 2B
+5	222648	8a5a	Season 3B
+5	222664	080c	Season RBI
+5	222680	91ce	Season Runs
+5	222696	1b42	Season SB
+5	222712	e5b5	Season Sac
+5	222728	7a7e	Season K
+5	222744	222f	Season 3-Hit
+5	222760	69f4	Tot HR
+5	222776	8314	Tot Slams
+5	222792	1ae0	Tot PH HR
+5	222808	2486	Tot Hits
+5	222820	e601	Tot 2B
+5	222832	61ae	Tot 3B
+5	222844	097f	Tot RBI
+5	222856	879e	Tot Runs
+5	222868	8fa6	Tot SB
+5	222880	ec36	Tot Sac
+5	222892	c353	Tot K
+5	222904	41d0	 HR reached!
+5	222920	f9f2	 hits made!
+5	222936	523a	 TB made!
+5	222948	3bc9	 SB made!
+5	222960	67f6	 RBI made!
+5	222972	0a59	 K reached!
+5	222988	b194	30 HR, 30 SB achieved!
+5	223016	a29b	30 HR, 40 SB achieved!
+5	223044	4c7c	40 HR, 40 SB achieved!
+5	223072	ac53	40 HR, 50 SB achieved!
+5	223100	5c4d	50 HR, 50 SB achieved!
+5	223208	6118	 Plr
+5	228472	d3d3	Hokk. N
+5	228484	6ec9	Hokk. S
+5	228496	8cce	Aomo
+5	228504	0e02	Iwat
+5	228512	6333	Miyg
+5	228520	49da	Akit
+5	228528	1c8a	Ymgt
+5	228536	fe1e	Fksm
+5	228544	37ad	Ibar
+5	228552	3ffd	Toch
+5	228560	866d	Gunm
+5	228568	36f2	Sait
+5	228576	2627	Chib
+5	228584	d7b3	TKY E
+5	228592	5a5a	TKY W
+5	228600	2f0e	Kana
+5	228608	7166	Niig
+5	228616	7eaf	Toya
+5	228624	3c3f	Ishi
+5	228632	55d9	Fuki
+5	228640	4ae9	Ymns
+5	228648	7f89	Ngno
+5	228656	f71f	Gifu
+5	228664	c5d3	Shiz
+5	228672	1714	Aich
+5	228680	fc8a	Mie
+5	228688	13e6	Shig
+5	228696	b853	Kyot
+5	228704	385a	Osak
+5	228712	3470	Hyog
+5	228720	7887	Nara
+5	228728	3f44	Waka
+5	228736	379e	Tott
+5	228744	11f0	Shim
+5	228752	491f	Okay
+5	228760	6600	Hiro
+5	228768	128c	Ymgc
+5	228776	c2c1	Toku
+5	228784	e0b3	Kaga
+5	228792	dba2	Ehim
+5	228800	1d20	Koch
+5	228808	fd85	Fkok
+5	228816	649b	Saga
+5	228824	bf01	Ngsk
+5	228832	1637	Kuma
+5	228840	e254	Oita
+5	228848	4bb3	Miyz
+5	228856	07e5	Kago
+5	228864	ca76	Okin
+5	228876	ca76	Okin
+5	230148	ef27	HS
+5	230156	fbb9	Pawafuru Inc.
+5	230176	fffe	Kagurazaka Grp
+5	230192	e71b	Otori Phoenix
+5	259488	3de5	 to cancel
+5	259560	47e7	Pre-game demo
+5	259576	b8ed	Inning demo
+5	259600	6244	Pitcher demo
+5	259616	2e60	Defense demo
+5	259632	aced	Batter demo
+5	259648	a393	Runner demo
+5	259664	88d6	Game end demo
+5	259680	661b	Home run demo
+5	259700	046e	Hero interview demo
+5	259728	e98d	Hurt demo
+5	259740	b403	Rec. demo
+5	259752	5342	Title demo
+5	259768	8a85	Demo
+5	259776	8a85	Demo
+5	259784	8a85	Demo
+5	259792	8a85	Demo
+5	259800	8a85	Demo
+5	259808	8a85	Demo
+5	259816	8a85	Demo
+5	259824	8a85	Demo
+5	259832	8a85	Demo
+5	259840	2e89	Recovery demo
+5	274960	fbbe	Your timing is early!!
+5	274984	82e1	Your timing's early!
+5	275008	f99c	Your timing's late!
+5	275032	737d	Your timing is late!!
+5	275056	1c9b	Timing's early
+5	275076	dffb	Timing's late
+5	275096	299e	That was high!
+5	275120	9fc4	That was middle!
+5	275144	20ee	That was low!
+5	276216	5d5a	Timing's late
+5	276448	af58	Let's begin!
+5	478464	41cc	Yomiuri Giants
+5	478488	5df1	Chunichi
+5	478504	fcc4	Hiroshima Carp
+5	478520	d413	Tokyo Yakult Swallows
+5	478544	9bd4	Yokohama
+5	478568	bd83	Hanshin Tigers
+5	478584	144d	Nippon-Ham Fighters
+5	478612	6eea	Seibu Lions
+5	478632	79cf	Orix Buffaloes
+5	478660	005c	Lotte Marines
+5	478684	ccc2	SoftBank Hawks
+5	478712	7676	Shonan SeaRex
+5	478732	1736	Surpass Kobe
+5	478748	9eac	All-Central
+5	478768	83b6	Rakuten Golden Eagles
+5	478800	eacb	All-Pacific
+5	478832	08ad	KOR
+5	478840	3e7c	Taipei
+5	478852	1018	CHN
+5	493344	8eba	 Hits
+5	493364	6ba5	 HR
+5	493384	de06	 RBI
+5	493404	4a77	 Sac
+5	493424	b3fd	 SB
+5	493444	ac3b	 Games
+5	493464	3573	 Gm
+5	493504	05c0	 Saves
+5	493524	9170	Congrats!
+5	493544	8a82	Streak Set!
+5	493564	6267	Thank you!
+5	513448	04e5	Line up the meet cursor with
+5	513480	c5a8	the ball and press A Button
+5	513512	a7cb	the ball and press ｂ Button
+5	513544	212a	the ball; use A or Down Button
+5	513576	4b88	to swing.
+5	513588	b4d5	to swing the bat.
+5	513612	23e8	Meet cursor: R Button or
+5	513640	a1f3	Meet cursor: B Button to
+5	513672	1f0c	Z Button to use Power Swing
+5	513704	83c9	ZR Button to use Power Swing
+5	513740	b665	use Power Swing.
+5	513764	e95b	Hard to hit, but it flies far!
+5	513800	7181	Hold the X Button to bunt.
+5	513832	2cd6	Hold the ａ Button to bunt.
+5	513864	27b7	Up/Down on the D-Pad: height,
+5	513900	5692	Left/Right: roll direction.
+5	513932	0024	Press X Button to bunt.
+5	513968	c273	Control Stick up and down
+5	514000	68da	Set height and roll direction.
+5	514036	1d4d	Bunt with the ａ Button!
+5	514068	1721	L Stick up/down: height,
+5	514096	0ec5	Left/right: roll direction
+5	514124	18dc	Bunt with Right on the D-pad!
+5	514160	c273	Control Stick up and down
+5	514192	68da	Set height and roll direction.
+5	514228	0ad7	A fast batter can aim for
+5	514264	ef72	a bunt hit!
+5	514280	7c0b	Struggling to hit? Open the
+5	514312	17e5	Options, Pitch Guide: Dir & Type
+5	514348	326d	practice up!
+5	514368	3d58	Pick a pitch with +Control Pad
+5	514400	2756	then throw with A. Pressing
+5	514436	44be	then throw with ｂ. Pressing
+5	514472	fc90	nothing throws a Slow Ball.
+5	514504	dc57	Pick a pitch with the Control
+5	514536	3a3e	Stick, then throw with A.
+5	514572	9204	Pick, then throw with A or Down
+5	514608	7262	Input nothing for a Slow Ball.
+5	514644	1bbc	Pick a pitch with L Stick, then
+5	514680	45da	throw with ｂ.
+5	514704	2ef0	As he winds up, use +Control Pad
+5	514740	cdae	to choose where to throw.
+5	514772	55ee	As the pitch begins,
+5	514796	78f0	use the Control Stick
+5	514824	cdae	to choose where to throw.
+5	514852	55ee	As the pitch begins,
+5	514876	b4b0	Use L Stick to pick where
+5	514908	6598	to throw.
+5	514924	1369	In Options, you can also hide
+5	514960	ea3a	the strike zone & pitch cursor
+5	515000	3f8f	from your opponent.
+5	515024	af35	Move the yellow-cursor fielder
+5	515060	e5a8	and make a good catch.
+5	515096	1589	If it's just out of reach,
+5	515128	1816	press A to make a diving catch
+5	515160	34b4	press ａ for a diving catch
+5	515192	457c	Do it!
+5	515204	f275	If a ball is just out of reach,
+5	515240	68cb	press A or +Control Pad to make
+5	515276	5874	a diving catch!
+5	515296	52d8	If a ball may go overhead, skip
+5	515332	13f6	+Control Pad and press A
+5	515360	671a	to make a jumping catch.
+5	515396	65a8	Leave the Control Stick
+5	515424	7eca	centered and press A
+5	515452	3d48	centered and press B
+5	515480	671a	to make a jumping catch.
+5	515520	e78e	Keep L Stick centered
+5	515544	bc64	and press ａ
+5	515564	671a	to make a jumping catch.
+5	515600	0d6d	If your controller is "Type A",
+5	515636	f98f	press A, B, X or Y to
+5	515672	fb3c	press ａ, ｂ, ｘ or ｙ to
+5	515708	c4ba	press +Control Pad to
+5	515740	8c23	throw to each base.
+5	515772	5ced	If your controller is "Type B",
+5	515808	1db6	use +Control Pad and A together
+5	515844	389a	use +Control Pad & ｂ together
+5	515880	7ded	to throw to each base.
+5	515916	8a51	With "Type B", use the Control
+5	515952	ebbc	Stick and A together
+5	515980	2509	Stick and A or Down together
+5	516016	7a43	With "Type B",
+5	516036	08bb	use L Stick & ｂ together
+5	516064	ecf9	Master them and show off
+5	516096	9f95	your own super plays!
+5	516128	4e49	To steal, watch the opponent,
+5	516164	2d8c	then press Y.
+5	516188	2fbe	then press ｘ.
+5	516212	20bc	press Up on +Control Pad.
+5	516240	0f68	Your runner will take off!
+5	516268	0aa3	Master power swings, bunts and
+5	516304	3b02	steals to rack up runs!
+5	516336	2dd8	L Button + A/B: infield,
+5	516368	d204	X/Y: outfield positions.
+5	516400	6b25	L Button + ｂ/ｙ: infield,
+5	516432	2037	ａ/ｘ: outfield positions.
+5	516464	04d5	C Button + Left/Down: infield,
+5	516496	decc	Right/Up: outfield positions.
+5	516528	167f	+Control Pad Left/Down with C:
+5	516560	8bcb	infield; Right/Up: outfield
+5	516592	d59d	You can change them!
+5	516616	0d6d	If your controller is "Type A",
+5	516652	0d8c	press B, Y or X to
+5	516684	c9a5	press ｙ, ｘ or ａ to
+5	516716	0c4e	press Left, Up or Right to
+5	516748	5e47	pick off at each base.
+5	516780	f765	If your controller is "Type A",
+5	516816	824e	press +Control Pad Left/Up/Right
+5	516852	5ced	If your controller is "Type B",
+5	516888	6407	use +Control Pad and B together
+5	516924	306e	use +Control Pad & ｙ together
+5	516960	7d0c	to pick off at each base.
+5	516996	8a51	With "Type B", use the Control
+5	517032	9c10	Stick and B together
+5	517056	95b1	Stick and ｙ together
+5	517080	7a43	With "Type B",
+5	517100	b359	use L Stick & ｙ together
+5	517128	8a51	With "Type B", use the Control
+5	517168	0d27	Stick and +Control Pad Left

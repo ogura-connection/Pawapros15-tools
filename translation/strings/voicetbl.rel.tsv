@@ -1,0 +1,36 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	116	efa4	Strt
+5	124	364d	Swng
+5	132	b9ae	Rlvr
+5	140	9676	Clsr
+5	148	e8b8	Err.
+5	224	b82e	Fast
+5	232	2b7c	Soft
+5	240	f798	Crafty
+5	248	21b3	Power
+5	256	4ddb	Balanced
+5	268	6728	Slugger
+5	280	5281	Speedster
+5	296	ca42	Glove
+5	304	fe05	Pr CON
+5	316	3bc4	Pr PWR
+5	328	9da8	Pr SPD
+5	336	b85a	Pr ARM
+5	344	0995	Pr FLD
+5	368	7cda	Norm
+5	376	0d8e	Early+
+5	384	0609	Erly
+5	392	7b67	Late
+5	400	3c3c	Late+
+5	408	8d28	Xtrm
+5	416	50f1	Stay
+5	664	607d	Pr Mood
+5	680	de22	Pr Teamwork
+5	696	eb12	P Fame
+5	708	2d25	Pos Fame
+5	720	724e	Hot
+5	728	0134	Pr Cho
+5	736	2dc1	Pace
+5	744	6018	Mute
+5	752	f27a	Tall
+5	764	f74b	Short

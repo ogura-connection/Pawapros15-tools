@@ -1,0 +1,457 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+4	9064	672f	0000 Season
+4	9248	672f	0000 Season
+5	82640	fe0c	Learn Pawapro controls from scratch.|Train hard under your coach!!
+5	82714	ea9d	Solo drills like batting & pitching,|plus team drills too.
+5	84984	b811	Yes     No
+5	89348	f4ef	In this mode, use the Nunchuk|style, Classic Controller or|GameCube Controller.
+5	89496	f4ef	In this mode, use the Nunchuk|style, Classic Controller or|GameCube Controller.
+5	89654	1c62	Wii Remote|recognized
+5	89722	b5e9	Nunchuk style|recognized
+5	89790	cc97	Classic Controller|recognized
+5	89858	7de4	GameCube Controller|recognized
+5	90372	7014	To use a GameCube|Controller in the game,|plug it into the Wii|on this page.
+5	149416	48b0	R/R
+5	149428	2b84	L/R
+5	149440	edbc	S/R
+5	149452	dbaa	R/L
+5	149464	ec82	L/L
+5	149476	89e5	S/L
+5	149488	7fc3	P
+5	149496	5145	C
+5	149504	a8c6	1B
+5	149512	60af	2B
+5	149520	4202	3B
+5	149528	18d4	SS
+5	149536	a75c	OF
+5	149544	d94b	Overhand
+5	149560	c973	3-Quarters
+5	149580	4d0c	Sidearm
+5	149600	0e92	Submarine
+5	149616	9165	Standard
+5	149632	18cf	Open
+5	149652	ee2e	Knsh
+5	149660	7e84	Crouching
+5	149680	be74	Pndl
+5	149688	2190	Buster
+5	149704	a595	1-Leg
+5	149712	1bf1	Original
+5	149724	c21b	Manual
+5	149736	32b2	Starter
+5	149748	3991	Reliever
+5	149764	1cea	Closer
+5	149776	377f	Versatile
+5	149788	09e8	Speedster
+5	149800	a075	Contact
+5	149812	ccea	Slugger
+5	149824	a4e5	Defense
+5	149836	377f	Versatile
+5	149848	d85a	Gnts
+5	149856	3df5	Chun
+5	149864	6600	Hiro
+5	149872	8a28	Yakult
+5	149884	ebe6	Yoko
+5	149892	eb3d	Hans
+5	149900	d410	Rak
+5	149908	bd70	N-Ham
+5	149920	f375	Sei
+5	149928	6ad5	Orix
+5	149944	8437	Lotte
+5	149952	507a	SoftBank
+5	149968	6c88	Powerfuls
+5	149980	d89b	Kaisers
+5	149992	6a5c	Cathands
+5	150008	ffa8	Yankiis
+5	150020	b796	Train Yourself
+5	150040	5e97	Auto Ability Boost
+5	150064	4ada	Focus: OBP & Mobility
+5	150092	bf62	Focus: Contact
+5	150112	8b3a	Focus: Power
+5	150136	abd3	Focus: Fielding & Arm
+5	150160	6115	Balanced Growth
+5	150180	9107	Focus: Stamina
+5	150200	931b	Focus: Control
+5	150224	8bf2	Focus: Velo & Breaking
+5	150248	6248	Open 1
+5	150268	a33f	Open 2
+5	150288	e022	Open 3
+5	150308	75dc	Overhand 1
+5	150328	1ae0	Overhand 2
+5	150348	ce33	Overhand 3
+5	150368	4201	Overhand 4
+5	150388	0e73	Overhand 5
+5	150408	b9af	Overhand 6
+5	150428	81cd	Overhand 7
+5	150448	9957	Overhand 8
+5	150468	afa9	Overhand 9
+5	150488	74e6	Overhand 10
+5	150508	3487	Fujii
+5	150520	c67f	Shimizu N.
+5	150544	f452	Ogino
+5	150556	3996	Sikorski Form
+5	150576	3d60	Saito K.
+5	150588	1200	Wada
+5	150600	b165	Arakaki
+5	150612	f532	Mabara
+5	150624	ef96	Powell Form
+5	150640	15fa	Oba Form
+5	150652	c022	Tanaka
+5	150664	2104	Iwakuma
+5	150676	108b	Nagai
+5	150700	86a1	Wakui
+5	150712	8935	Ishii K.
+5	150724	5ea7	Okamoto S.
+5	150760	fe2b	Uehara
+5	150772	7a43	Utsumi
+5	150784	15a0	Toyoda
+5	150796	666f	Nakata
+5	150808	532c	Hisamoto
+5	150820	0984	Sugiyama
+5	150832	a2fd	Kubota
+5	150844	bb5e	Fujikawa
+5	150856	c12e	Miura
+5	150868	dfc9	Kudo
+5	150880	d2cb	Kawamura
+5	150892	2c43	Nasuno
+5	150904	d80d	Otake
+5	150916	72a4	Hasegawa
+5	150928	4f6f	Yokoyama
+5	150940	bcad	Aoki T.
+5	150952	76a9	Nagakawa
+5	150976	2bc1	Kato
+5	150988	7028	Igarashi
+5	151012	4d7c	Murata
+5	151036	801d	Hoshino
+5	151048	ecd1	Yamauchi
+5	151060	fd86	Kaku Genji
+5	151072	9eaa	Overhand 57
+5	151092	0491	Overhand 58
+5	151112	8ea3	Overhand 59
+5	151132	4352	Overhand 60
+5	151152	4f94	Overhand 61
+5	151172	f091	Overhand 62
+5	151192	8aba	Overhand 63
+5	151212	8029	Overhand 64
+5	151232	5168	Overhand 65
+5	151252	b3fa	Overhand 66
+5	151272	7bfb	Overhand 67
+5	151292	a930	Overhand 68
+5	151312	03e0	3-Quarters 1
+5	151332	e0c0	3-Quarters 2
+5	151352	ee98	3-Quarters 3
+5	151372	d4fe	3-Quarters 4
+5	151392	8024	3-Quarters 5
+5	151412	ce50	3-Quarters 6
+5	151432	67d7	3-Quarters 7
+5	151452	d0bb	3-Quarters 8
+5	151472	5e52	3-Quarters 9
+5	151492	ca42	3-Quarters 10
+5	151516	0ca2	3-Quarters 11
+5	151540	cb7a	3-Quarters 12
+5	151564	a229	3-Quarters 13
+5	151588	7c77	Darvish Form
+5	151608	65d3	Yagi
+5	151620	bf9f	Takeda M.
+5	151632	1420	Takeda H.
+5	151644	45db	Yamamoto
+5	151656	d366	Naruse
+5	151668	c269	Komiyama
+5	151680	eb31	Sugiuchi
+5	151692	dc01	Jinnai
+5	151704	0d49	Katto
+5	151716	71f6	Ariume
+5	151728	def5	Domingo Form
+5	151744	aef4	Hasebe
+5	151768	82d9	Hoashi
+5	151780	b766	Hirano Y.
+5	151792	bcf7	Davey Form
+5	151808	3f12	Fukuda
+5	151820	49c0	Kroon Form
+5	151836	db85	Yamamoto M
+5	151848	cd43	Iwase
+5	151872	fc45	Uezono
+5	151884	a7ec	Nomi
+5	151896	b013	Doi Form
+5	151908	339a	Yoshimi
+5	151932	0aa3	Ono Form
+5	151944	9c29	3-Quarters 42
+5	151968	9fc1	3-Quarters 43
+5	151992	2081	Sidearm 1
+5	152008	e0a3	Sidearm 2
+5	152024	5ed2	Sidearm 3
+5	152040	d7f9	Sidearm 4
+5	152056	0815	Sidearm 5
+5	152072	0be3	Sidearm 6
+5	152088	c88d	Sidearm 7
+5	152104	19d5	Sidearm 8
+5	152120	5c08	Micheal Form
+5	152140	7ec4	Shozu
+5	152164	da5e	Yoshino
+5	152176	37f6	Suzuki
+5	152188	b022	Williams Form
+5	152208	cf34	Kizuka
+5	152220	2bc1	Kato
+5	152232	2fc3	Umetsu
+5	152244	604b	Lim C.Y.
+5	152268	4736	Mizuki
+5	152280	5125	Submarine 1
+5	152300	4112	Submarine 2
+5	152320	30ed	Submarine 3
+5	152340	cb2c	Submarine 4
+5	152360	d3d9	Watanabe S
+5	152376	211f	Standard 1
+5	152392	36f1	Standard 2
+5	152408	aa89	Standard 3
+5	152424	6f4d	Standard 4
+5	152440	a1a8	Standard 5
+5	152456	3b74	Standard 6
+5	152472	f625	Standard 7
+5	152488	bbfa	Standard 8
+5	152504	a0f5	Standard 9
+5	152520	a189	Standard 10
+5	152540	6591	Standard 11
+5	152560	aca9	Standard 12
+5	152580	934e	Standard 13
+5	152600	7df6	Standard 14
+5	152620	6d61	Standard 15
+5	152640	bbaf	Standard 16
+5	152660	c3c2	Standard 17
+5	152680	69e8	Standard 18
+5	152700	a2eb	Standard 19
+5	152720	1b1a	Standard 20
+5	152740	d28f	Standard 21
+5	152760	9a43	Standard 22
+5	152780	4e50	Standard 23
+5	152800	d41c	Standard 24
+5	152820	c60d	Standard 25
+5	152840	3ea2	Morimoto
+5	152864	3629	Fukuura
+5	152876	b990	Otsuka
+5	152888	4778	Benny Form
+5	152912	27e6	Tamura
+5	152924	a174	Matsuda
+5	152960	a4e5	Rick Form
+5	152972	b46f	Nakajima
+5	152984	5aed	Kataoka
+5	152996	d56d	G.G. Sato Form
+5	153016	5e50	Hosokawa
+5	153028	804f	Eto Form
+5	153064	f106	Shiozaki
+5	153088	012a	Kiyohara
+5	153112	3b2b	Niooka
+5	153124	f11f	Yano
+5	153136	d786	Kimura T.
+5	153148	a8af	Ogasawara
+5	153160	2092	Tani
+5	153168	17c2	Abe Form
+5	153180	5dcf	Sakamoto
+5	153204	28af	Ibata
+5	153228	7203	Nakamura N
+5	153240	00b5	T. Woods Form
+5	153256	3147	Eichi
+5	153268	9cf7	Kanemoto
+5	153280	5b4b	Arai
+5	153292	3ce6	Fujimoto
+5	153304	0839	Hiyama
+5	153316	62fa	Kinjo
+5	153340	fd8b	Suzuki T.
+5	153352	19cb	Ishii T.
+5	153364	248d	Nishi
+5	153376	1d90	Onishi
+5	153388	63fd	Maeda
+5	153400	e1c0	Kurihara
+5	153424	6450	Ogata
+5	153436	5932	Amaya
+5	153448	66b8	Aoki
+5	153460	db0b	Guiel Form
+5	153476	a892	Yoneno
+5	153488	b7bb	Saito
+5	153500	85e2	Kakefu
+5	153524	2992	Haru
+5	153548	5c77	Home Run-kun Form
+5	153568	c435	Standard 85
+5	153588	f85f	Standard 86
+5	153608	4398	Standard 87
+5	153628	de3e	Standard 88
+5	153648	ba5f	Standard 89
+5	153668	2a94	Standard 90
+5	153688	6248	Open 1
+5	153708	a33f	Open 2
+5	153728	e022	Open 3
+5	153748	27fa	Open 4
+5	153768	a591	Open 5
+5	153788	d1e5	Open 6
+5	153808	960f	Open 7
+5	153828	6301	Open 8
+5	153848	7b93	Open 9
+5	153868	d693	Open 10
+5	153892	5cd4	Open 11
+5	153916	ab9a	Open 12
+5	153940	6efa	Open 13
+5	153964	c7f5	Open 14
+5	153988	5cba	Open 15
+5	154012	af21	Open 16
+5	154036	f0c5	Open 17
+5	154060	10d8	Open 18
+5	154084	e8db	Open 19
+5	154108	1124	Open 20
+5	154132	e21a	Open 21
+5	154156	2d95	Open 22
+5	154180	af34	Open 23
+5	154204	d901	Open 24
+5	154228	cdc0	Tsuboi
+5	154240	35d9	Kudo
+5	154252	5485	Nakata
+5	154264	d52e	Nishioka
+5	154276	4228	Satozaki
+5	154300	abd0	Honda
+5	154312	fdb0	Teppei
+5	154324	383c	Nakamura
+5	154336	5ec5	Kaizuka
+5	154348	2bf8	Kitagawa
+5	154360	0fec	Ramirez Form
+5	154376	a2d5	Lee S.Y.
+5	154388	b648	Wakiya
+5	154400	1f0d	Odo Form
+5	154412	000b	Wada
+5	154424	5eb4	Imaoka
+5	154436	3efb	Akahoshi
+5	154448	1496	Torii
+5	154460	6a7f	Hirano
+5	154472	7328	Asai
+5	154484	e60f	Koseki
+5	154496	6215	Shima
+5	154504	8b84	Akamatsu
+5	154516	71b5	Miyamoto
+5	154528	aa8c	Yaegashi
+5	154540	5aed	Kataoka
+5	154552	e1fd	Open 52
+5	154576	26cd	Open 53
+5	154600	f72a	Ochiai
+5	154616	c09b	Crouching 1
+5	154632	8ab3	Crouching 2
+5	154648	083f	Crouching 3
+5	154664	ca4b	Crouching 4
+5	154680	d0a5	Crouching 5
+5	154696	09d0	Crouching 6
+5	154712	2202	Crouching 7
+5	154728	0d86	Crouching 8
+5	154744	64ad	Bass Form
+5	154760	037c	Cromartie Form
+5	154776	f4da	Boomer Form
+5	154792	2541	Bryant Form
+5	154812	6670	Pendulum
+5	154824	a2dc	Fake Bunt
+5	154840	d50f	Oh
+5	154848	02bf	Zuleta Form
+5	154864	eeec	Taneda
+5	154876	09cd	Rhodes
+5	154888	98c1	Cabrera Form
+5	154904	d921	Nashida
+5	154916	8310	Original Form 6
+5	154936	6bb5	Original Form 7
+5	172928	1071	1Dan
+5	173000	d4f2	Pro
+5	173092	d012	Guest 1
+5	173104	230e	Guest 2
+5	173116	be49	Guest 3
+5	173128	531c	Guest 4
+5	173140	6db0	Guest 5
+5	173152	01c2	Guest 6
+5	173164	546c	Guest 7
+5	173176	c8f1	Guest 8
+5	173188	3c87	Guest 9
+5	173200	1a1f	Guest 10
+5	174996	74f8	Pennant Race is on! Win Japan's title yourself!
+5	175048	6f4e	Games, encounters, growth!|Pour your hot soul into baseball!
+5	175132	b0f2	Basics matter! Build skills in Baseball School!
+5	175184	d0db	Rise from the industrial leagues (Hakkyu Dream)|Lead your team to Koshien! (Eikan Nine)
+5	175284	14f8	Crack! Hit all the home runs you want!
+5	175336	a2b0	Enjoy baseball online to the fullest!
+5	175392	4588	Pitch, hit, run, field: Remo-Pawa!|Play ball with just the Wii Remote!
+5	175480	f20c	Arrange your very own original team!
+5	175532	9b9d	Check player abilities, passwords, sound,|record settings and more. Tweak your data!
+5	175632	9931	Make a cheer song for a favorite player!|Set your songs in Arrange and elsewhere!
+5	175728	5e44	Freely adjust volume of in-game BGM, sound|effects, commentary and more!
+5	175808	6c81	Let's all have a blast together!!
+5	175848	e3e8	See all kinds of records!!
+5	175888	3856	Save up Pawa Tickets for more fun!!
+5	175940	9689	How to play Remo-Pawa Mode
+5	175972	adff	Unable to play.
+5	176128	3498	 needed.
+5	350920	eba8	Save your data?
+5	350946	c358	Erase the data?
+5	484264	5df1	Chunichi
+5	484280	fcc4	Hiroshima Carp
+5	484296	d413	Tokyo Yakult Swallows
+5	484320	9bd4	Yokohama
+5	484344	bd83	Hanshin Tigers
+5	484360	83b6	Rakuten Golden Eagles
+5	484392	144d	Nippon-Ham Fighters
+5	484420	6eea	Seibu Lions
+5	484440	79cf	Orix Buffaloes
+5	484468	005c	Lotte Marines
+5	484492	ccc2	SoftBank Hawks
+5	484520	7676	Shonan SeaRex
+5	484540	1736	Surpass Kobe
+5	484556	9eac	All-Central
+5	484576	eacb	All-Pacific
+5	484608	08ad	KOR
+5	484616	3e7c	Taipei
+5	484628	1018	CHN
+5	484640	fb1a	All Revolution
+5	484664	36ee	Vulcans Red
+5	484684	417d	Vulcans White
+5	484704	d6a4	Gan Powerfuls
+5	484720	82b1	Ikari Kaisers
+5	484736	cab7	Cathands
+5	484752	4bb9	Gokuaku Yankiis
+5	484772	f397	Tsutsuke Vulcans
+5	484792	072e	Shining Busters
+5	484952	d85a	Gnts
+5	484960	3df5	Chun
+5	484968	6600	Hiro
+5	484976	8a28	Yakult
+5	484988	ebe6	Yoko
+5	484996	eb3d	Hans
+5	485004	d410	Rak
+5	485012	bd70	N-Ham
+5	485024	f375	Sei
+5	485032	6ad5	Orix
+5	485048	8437	Lotte
+5	485056	507a	SoftBank
+5	485072	e624	Shon
+5	485080	4cb1	Surpass
+5	485092	9d2c	All-Cent.
+5	485104	e97a	All-Pac.
+5	485128	08ad	KOR
+5	485136	3e7c	Taipei
+5	485148	1018	CHN
+5	485156	0f48	Revo
+5	485164	5936	Red
+5	485172	918e	Wht
+5	485180	99ad	Gan
+5	485188	4281	Ikar
+5	485196	2fe7	Cathands
+5	485208	bb9a	Goku
+5	485216	cd19	Vulcans
+5	485232	b31d	Bstrs
+5	502896	b077	Play with these settings (no changes).
+5	502944	623a	Play with these settings
+5	502972	ce97	Set the DH rule on or off.
+5	503008	c1cb	Set errors on or off.
+5	503044	f4eb	Set the computer's strength.
+5	503080	5c4c	Set wind on or off.
+5	503112	1633	Set the start time.
+5	503136	0543	Set the weather.
+5	503160	f896	Set the number of innings.
+5	503192	04fc	Set whether condition is hidden.
+5	503232	a3ac	Set extra innings.
+5	503256	81be	Set injuries in games on or off.
+5	503292	9eb2	Set the mercy rule.
+5	503320	2320	Set close-ups on or off.
+5	503364	f688	Extra innings start with 1 out, bases loaded.
+5	503416	2235	Inning ends at 10 runs; 10-run lead ends game.
+5	503472	1748	Weather varies from cloudy to rain.
+5	503512	cdec	Set scene replays on or off.
+5	503556	9637	Set whether to show the Wii Remote controls.

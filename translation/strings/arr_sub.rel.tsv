@@ -1,0 +1,65 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	13976	1660	Set the team policy for the CPU.
+5	14016	2196	Set pitcher & fielder usage.
+5	14052	f368	Set the basic lineup.
+5	14084	8f6e	Go back.
+5	14136	1836	Pitch Reliever, Reliever, then Closer.
+5	14188	1cd0	Reliever 1 or 2, then Closer.
+5	14240	0ba9	Reliever, then Closer.
+5	14292	4104	Reliever, then Closer 1 or Closer 2.
+5	14344	0c62	Remove the Winning Formula pattern.
+5	14396	5b42	Can't select this now.
+5	14448	d44a	Not enough Relievers to select this.
+5	14500	f886	Not enough Closers to select this.
+5	14552	e358	No message.
+5	14604	376d	Set the Relievers.
+5	14656	c1f8	Set the Closer.
+5	14708	bd56	Choose the Relievers to set.
+5	14760	ea19	Choose the Closer to set.
+5	14812	133d	Confirm.
+5	14864	8c81	Undo changes made on this screen.
+5	14920	3e8a	Set players' back names.
+5	14952	556c	Set players' numbers.
+5	14984	a1a3	Set players' voices.
+5	15016	5dfc	Set players' cheer themes.
+5	15048	0a09	Set players' equipment.
+5	15080	0c93	Set players' registered names.
+5	16096	55a9	Set the team policy for when the|CPU plays with this team.
+5	16172	3bb5	Restore the original settings.
+5	16248	c93e	Its trait is having no traits.|Balances offense and defense.
+5	16324	2b8a	Hit, hit, hit away!|Allows some runs.
+5	16400	7793	Trusts pitching and fielding to|guard the one precious run.
+5	16476	7731	Shuffles the lineup by player form.|Even bench players get a chance!
+5	16552	44a5	Pinch hits often at pitching changes|and late-game chances.
+5	16624	5ae7	Same as above, and may also pinch|hit on early-game chances.
+5	16696	ba57	Trusts the starters' offense.|Subs only when behind late.
+5	16772	1919	May use one late if fast players|remain on the bench.
+5	16848	1e16	Pinch runs boldly on chances.|For teams with many fast players.
+5	16924	e617	No use pinch running without speed.|Skip it if nobody is fast.
+5	17000	d232	Considers offense too, but may add|defensive subs when leading late.
+5	17076	fce7	Late on, top fielders form an iron|defense that allows no runs.
+5	17152	dcb6	Trusts the starters' defense. Won't|weaken offense to tighten defense.
+5	17228	04b7	No stealing if unsure of their legs.|May steal if confident.
+5	17304	effc	Aggressively goes for the next base.|Sometimes called reckless.
+5	17380	0968	Runners are driven in by hits!|No steals needed with that policy.
+5	17456	e386	Considers outs and batter ability.|May bunt depending on the situation.
+5	17532	c8a1	Use this to keep runners in scoring|position. Helps avoid double plays.
+5	17608	5394	Gives no outs away with bunts;|strings hits together to score.
+5	17684	37fb	Depends on the batter's matchup.|Tried when you really need a run.
+5	17760	2e94	Use if no hit is expected from the|batter. Goes for runs at any risk.
+5	17836	5200	Brings runners in with the bat, not|the squeeze, no trickery needed.
+5	17912	829f	Considers runner and batter ability.|May hit & run when it fits.
+5	17988	32b3	Aims to score using speed.|Can open up big chances.
+5	18064	a50f	Piles up runners to score big.|Counts on one big hit by the batter.
+5	18140	7972	Orders the lineup by the opposing|pitcher's throwing hand for an edge.
+5	18216	8b08	Run, run, run away!|Speed is the key to victory.
+5	18298	d1a3	Not enough Relievers, so the|Winning Formula will be cleared.|Is this OK?
+5	18430	c6ce	Not enough Closers, so the|Winning Formula will be cleared.|Is this OK?
+5	18562	feb2	A player in the Winning Formula|is being moved, so it will be|cleared. Is this OK?
+5	18694	9e26	A player in the Winning Formula|is being removed, so it will|be cleared. Is this OK?
+5	18826	2d41	All Starters are removed, so the|Winning Formula will be cleared.|Is this OK?
+5	18958	1ff2	If you remove 1st Team players,|the set Winning Formula will be|cleared. Is this OK?
+5	19090	be3b	If you swap 1st and 2nd Teams,|the set Winning Formula will be|cleared. Is this OK?
+5	19222	6bf7	If you swap players,|the set Winning Formula will be|cleared. Is this OK?
+5	19354	622f	If you move 1st Team players,|the set Winning Formula will be|cleared. Is this OK?
+5	19486	e8a8	Once you remove a pattern,|you can't restore it.|Is this OK?

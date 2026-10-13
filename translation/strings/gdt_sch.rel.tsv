@@ -1,0 +1,86 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	276	aa21	Well done!
+5	334	b312	Nice catch!
+5	392	5376	Excellent.
+5	450	e8ca	Go on!
+5	508	4b8a	Let's begin!
+5	566	6e88	Try a Contact swing
+5	624	41d7	Try a Power Swing
+5	682	902f	Nice batting!
+5	740	f8df	It's a Power Swing!
+5	798	2650	Not a Power Swing!
+5	856	9530	Wrong pitch!
+5	914	1069	No bunting!
+5	972	7d9f	Here we go!!|Catch, throw to 1st
+5	1030	fb55	Next one!!|Catch, throw to 2nd
+5	1088	f1bf	Next one!!|Catch, throw to 3rd
+5	1146	63ac	Next one!!|Catch, throw home
+5	1204	cdad	Next one!!|Catch, throw to cutoff
+5	1262	98a5	Next one!!|Catch, throw to 1st
+5	1320	ce1e	Throw a Fastball
+5	1378	9a60	Throw a Slider
+5	1436	5427	Throw a Curve
+5	1494	afb4	Throw a Forkball
+5	1552	dcc3	Throw a Sinker
+5	1610	9dea	Throw a Shuuto
+5	1668	cc48	Aim for the target
+5	1726	db80	Lay off balls
+5	1784	1f5c	Don't miss strikes
+5	1842	095d	Good, keep it up!
+5	1900	82e1	Your timing's early!
+5	1958	f99c	Your timing's late!
+5	2016	e78a	Nice bunt!
+5	2074	1eaf	The runner|hasn't started
+5	2132	407b	No foul balls!
+5	2190	f4d4	No fly balls!
+5	2248	379f	Bunt it!
+5	2306	ff0c	Bunt it softer!
+5	2364	0957	Nice control
+5	2422	aa26	Nice ball!
+5	2480	8aca	Nice throw
+5	2538	f262	Wrong base!
+5	2596	4c04	Advance!
+5	2654	8fe3	Go back!
+5	2712	866c	Stop!
+5	2770	1a1d	Back home!
+5	2828	d56a	Go!!
+5	2886	87d6	Throw a Fastball|to stop a steal
+5	2944	1ae3	Throw a Curve|to stop a steal
+5	3002	faae	Throw a pitchout|to stop a steal
+5	3060	eac0	Hit a breaking ball
+5	3118	a560	Nice steal!
+5	3176	08fc	Try a double|steal
+5	3234	a59a	Wrong!
+5	3292	9fec	Read the balls
+5	3350	5aa8	Lay down a bunt
+5	3408	500b	Try a squeeze
+5	3466	e069	Try a hit|and run
+5	3524	46aa	Try stealing
+5	3582	a0ba	Next base, go!
+5	3640	9e4f	Good, keep coming!
+5	3698	f5a7	Catch on the fly!
+5	3756	0762	Infield, quick!
+5	3814	acba	Roll it forward!
+5	3872	6969	Don't hit it!
+5	3930	8a06	Steal a base!
+5	3988	e5a2	Go for 2nd!
+5	4046	a635	A Fastball next!
+5	4104	a624	A slow ball next!
+5	4162	3ffb	Move the batter|to 2nd
+5	4220	ec0d	Move the runner|to 3rd
+5	4278	cd8c	Bring the runner|home
+5	4336	f8d6	Bring both runners|home
+5	4394	e59d	Send the runner|back to base
+5	4452	078f	Go for home
+5	4510	507b	Go for 3rd
+5	4568	3fab	Go for 2nd
+5	4626	a61d	Catch and throw|to 1st
+5	4684	9faf	Get the batter out
+5	4742	7162	Turn a double|play
+5	4800	45e8	Catch the fly ball
+5	4858	83e3	Make a|great play
+5	4916	ff56	Get the runner|out at 1st
+5	4974	5c32	Get the runner|out at 2nd
+5	5032	5c8d	Get the runner|out at 3rd
+5	5090	3374	Get the runner|out at home
+5	5148	7162	Turn a double|play

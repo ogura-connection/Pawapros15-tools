@@ -1,0 +1,31 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+4	412	0bb6	Change the color of the bat, glove
+4	450	6832	and wristband.
+4	488	b9ef	Confirm all and
+4	526	f05a	exit this screen.
+4	564	59e8	Change equipment or check your
+4	602	301f	own data.
+4	640	36e6	You can use consumable
+4	678	678e	items.
+4	716	aff9	Use experience points to raise
+4	754	f51a	abilities.
+4	792	3b28	Change registered name
+4	830	678e	items.
+4	868	57da	Change the form
+4	906	678e	items.
+4	944	c02c	Set the pitcher usage type
+4	982	678e	items.
+4	1024	79ae	Set hometown.
+4	1100	e47e	Set birthday.
+4	1176	fe4e	Set team history.
+4	1252	ce0b	Set your years as a pro.
+4	1328	9921	Set uniform number.
+4	1404	c02c	Set the pitcher usage type
+4	1442	678e	items.
+5	984	7672	Choose a player to register.
+5	1028	b324	Choose where to register.
+5	1076	a4c2	Some players aren't registered.|Finish anyway?
+5	1138	2e61	Finish registering players?
+5	1176	ab4f	Overwrite player data in this spot. Is this OK?
+5	1228	4d5f	Register the player data here?
+5	9186	94ad	Finish the settings. Is this OK?

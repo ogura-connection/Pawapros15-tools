@@ -1,0 +1,82 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	2088	33e7	Return to the Arrange menu.
+5	2124	2d88	Set the team name.
+5	2160	8858	Set the mark & logo.
+5	2196	e82e	Set the uniform.
+5	2232	9f7c	Set the home stadium.
+5	2268	883e	Revert to the base team.
+5	2304	318d	Return to the menu.
+5	2340	8c81	Undo changes made on this screen.
+5	2380	a96a	Can't select this now.
+5	2416	cee2	In Shinjuku, Tokyo.
+5	2452	65bd	In Hiroshima, Hiroshima.
+5	2488	eb83	In Bunkyo, Tokyo.
+5	2524	88f3	In Yokohama, Kanagawa.
+5	2560	3737	In Nagoya, Aichi.
+5	2596	2f1a	In Nishinomiya, Hyogo.
+5	2632	7d8c	In Kobe, Hyogo.
+5	2668	6fed	In Chiba, Chiba.
+5	2704	7bff	In Tokorozawa, Saitama.
+5	2740	b500	In Fukuoka, Fukuoka.
+5	2776	dac1	In Osaka, Osaka.
+5	2812	f63b	In Sapporo, Hokkaido.
+5	2848	3abc	In Sendai, Miyagi.
+5	2884	b173	A small regional ballpark.
+5	2920	ec45	A larger regional ballpark.
+5	2956	2a5c	A regional domed stadium.
+5	2992	b3dd	A tropical island ballpark abroad.
+5	3028	d9ed	A school baseball club's field.
+5	3068	09a0	An underground domed stadium.
+5	3104	713b	A sandlot field by the sea.
+5	3140	f99a	A ballpark.
+5	3176	318d	Return to the menu.
+5	3212	be2d	Set the mark.
+5	3248	38ad	Set the logo letters.
+5	3284	bc86	Set the logo color.
+5	3320	c052	Set after setting logo letters.
+5	3356	8c81	Undo changes made on this screen.
+5	3392	dbbe	Select a type and color.
+5	3428	b0b3	Enter letters.
+5	3464	b1ba	Move with L/R; erase letters.
+5	3500	c8d3	Confirm the letters and go back.
+5	3536	821d	Select a letter.
+5	3572	4435	Select the logo color.
+5	3608	318d	Return to the menu.
+5	3648	c378	Set the cap color.
+5	3672	7aa7	Set the cap brim color.
+5	3708	7867	Set the cap logo color.
+5	3744	f3b9	Set sleeve, belt & spike color.
+5	3788	47ab	Set the upper body color.
+5	3824	4c9d	Set the lower body color.
+5	3860	8554	Set the stripe color.
+5	3896	bac0	Set the stripe type.
+5	3932	8c81	Undo changes made on this screen.
+5	3968	9661	Set the clothes color.
+5	4004	a51d	Can't set with the current type.
+5	4040	e74e	Set the number & chest mark color.
+5	4080	9e48	Set the number outline color.
+5	4116	205e	Set the back name type.
+5	4152	cac2	Set the back name color.
+5	4188	2b07	Can't be set.
+5	4224	609e	Set the helmet color.
+5	4260	1420	Set the helmet brim color.
+5	4296	6ee0	Set the helmet mark color.
+5	4336	80f1	Please set a color.
+5	4372	a73c	Please set the stripe type.
+5	4408	9928	Please set the back name type.
+5	4448	318d	Return to the menu.
+5	4488	414b	Set the owner company name.
+5	4520	6999	Set the team name.
+5	4548	1d8c	Set the team initial.
+5	4584	58ce	Set the mark.
+5	4608	f88f	Set the logo letters.
+5	4636	339b	Set the logo color.
+5	4664	8c81	Undo changes made on this screen.
+5	4700	be2d	Set the mark.
+5	4728	bc86	Set the logo color.
+5	4752	3817	Set the fielding cap color.
+5	4784	4986	Set the fielding cap brim color.
+5	4828	e45c	Set the batting helmet color.
+5	4868	f5f1	Set the batting helmet brim color.
+5	4922	5353	Change the team name & logo to the preset ones. Change them?
+5	5010	4c4a	Players can't share a uniform|number in Pennant.

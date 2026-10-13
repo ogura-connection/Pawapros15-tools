@@ -1,0 +1,181 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	9120	3d85	Hits fly higher
+5	9168	bd67	Contact cursor gets bigger
+5	9216	1d8c	Hit the ball farther
+5	9264	6099	Runs faster
+5	9312	3cc7	Throws faster
+5	9360	7f29	Better fielding
+5	9408	54e9	Fewer errors
+5	9456	ce26	Stronger in the clutch
+5	9504	1419	Stronger vs. lefty pitchers
+5	9552	0072	Better at stealing bases
+5	9600	b013	Better baserunning
+5	9648	914d	Fewer wild throws
+5	9696	8c4f	Less affected by condition
+5	9744	2a48	Less injury-prone
+5	9792	85c4	Hits come more easily|☆Exp. needed varies by ability
+5	9872	be56	Homers come more easily|☆Exp. needed varies by ability
+5	9952	b6a2	Can hit hard to the opposite field|☆Exp. needed varies by ability
+5	10032	0f42	Can hit hard when pulling|☆Exp. needed varies by ability
+5	10112	fdc1	Faster getaway after hitting|☆Exp. needed varies by ability
+5	10192	9751	Better at opposite-field hitting
+5	10240	2dac	Becomes more tenacious
+5	10288	5bd4	Better at bunting
+5	10336	56ca	Bunts superbly
+5	10384	fa80	Stronger on the first pitch
+5	10432	8a57	Stronger as a pinch hitter
+5	10480	518d	Better at creating chances
+5	10528	9b78	Can slide into 1st on close plays
+5	10576	9136	Can bowl over the catcher on close plays
+5	10640	3fd4	No longer weakens with 2 strikes
+5	10688	008b	Can knock back sliding runners
+5	10752	7b3a	Can make arrow-like return throws
+5	10800	7581	Shows veteran skill in the field|☆Exp. needed varies by ability
+5	10880	1d19	Gets the most out of pitchers
+5	10928	658f	Gets the very best out of pitchers
+5	10976	4edf	Fewer untimely errors
+5	11024	e7ef	Can play catcher a little
+5	11072	3276	Can play 1st base a little
+5	11120	373b	Can play 2nd base a little
+5	11168	0b17	Can play 3rd base a little
+5	11216	1ddd	Can play shortstop a little
+5	11264	abdd	Can play outfield a little
+5	11312	5888	Top velocity goes up
+5	11360	aa5d	Pitching accuracy goes up
+5	11408	f1d2	Stamina for pitching goes up
+5	11456	7080	Slider breaks more
+5	11504	9f8f	Hard Slider breaks more
+5	11552	1617	Cutter breaks more
+5	11600	e5fc	2nd-pitch Slider breaks more
+5	11648	47a3	2nd-pitch Hard Slider breaks more
+5	11696	fe04	2nd-pitch Cutter breaks more
+5	11744	57bf	Curve breaks more
+5	11792	e3e1	Slow Curve breaks more
+5	11840	fb9b	Drop breaks more
+5	11888	365c	Drop Curve breaks more
+5	11936	3aad	Slurve breaks more
+5	11984	f3de	Knuckle Curve breaks more
+5	12032	24cf	2nd-pitch Curve breaks more
+5	12080	9760	2nd-pitch Slow Curve breaks more
+5	12128	1f6d	2nd-pitch Drop breaks more
+5	12176	89c7	2nd-pitch Drop Curve breaks more
+5	12224	a1f4	2nd-pitch Slurve breaks more
+5	12272	773b	2nd-pitch Knuckle Curve breaks more
+5	12320	63f6	Fork breaks more
+5	12368	4019	Palm breaks more
+5	12416	9c8e	Changeup breaks more
+5	12464	42bb	V-Slider breaks more
+5	12512	3f28	Knuckle breaks more
+5	12560	bf56	Splitter breaks more
+5	12608	0421	2nd-pitch Fork breaks more
+5	12656	5242	2nd-pitch Palm breaks more
+5	12704	c593	2nd-pitch Changeup breaks more
+5	12752	e0ba	2nd-pitch V-Slider breaks more
+5	12800	f249	2nd-pitch Knuckle breaks more
+5	12848	411c	2nd-pitch Splitter breaks more
+5	12896	3891	Sinker breaks more
+5	12944	6586	Hard Sinker breaks more
+5	12992	a156	Circle Change breaks more
+5	13040	ae41	2nd-pitch Sinker breaks more
+5	13088	955e	2nd-pitch Hard Sinker breaks more
+5	13136	735d	2nd-pitch Circle Change breaks more
+5	13184	b4c6	Shuuto breaks more
+5	13232	217a	Hard Shuuto breaks more
+5	13280	0096	2nd-pitch Shuuto breaks more
+5	13328	47b0	2nd-pitch Hard Shuuto breaks more
+5	13376	bafc	Getting hit won't affect his pitching
+5	13424	6fd4	Stronger in a pinch
+5	13472	bddd	Stronger vs. lefty batters
+5	13520	a1be	Fastball Life gets better
+5	13568	f1c7	Spin gets better
+5	13616	0984	Runners steal less easily
+5	13664	8c4f	Less affected by condition
+5	13712	e8f5	Recovers from fatigue faster
+5	13760	cef0	Better at handling hit balls
+5	13808	9575	Better pickoff moves
+5	13856	f0e5	Stronger late in the game
+5	13904	c03e	Hides fatigue and rattling
+5	13952	3c57	Pitches with fighting spirit
+5	14000	f924	Better control on low pitches|☆Exp. needed varies by ability
+5	14080	bd27	Hit balls carry less
+5	14128	57c9	No longer weakens on 3 balls
+5	14176	5556	No longer short-tempered
+5	14224	fb45	Fewer mistakes down the middle
+5	14272	0c25	No longer weakens near a win
+5	14320	df73	No longer weakens at the start
+5	14368	92ec	☆Poker Face goes away
+5	14416	898a	☆Fighting spirit goes away
+5	14464	f56c	Becomes a fan favorite
+5	14512	cb4a	Uses power swings often
+5	14560	53dd	Uses contact swings often
+5	14608	7d65	Swings more aggressively
+5	14656	c24e	Swings less often
+5	14704	6075	Steals bases aggressively
+5	14752	de50	Steals bases less often
+5	14800	d455	Runs the bases aggressively
+5	14848	8cd9	Pitches mostly fastballs
+5	14896	12bb	Pitches mostly breaking balls
+5	14944	fa78	Shorter time between pitches
+5	14992	377a	Plays with the team in mind
+5	15040	79ca	Plays aggressively in the field
+5	15088	024f	Better at judging pitches
+5	15136	736a	☆Slugger goes away
+5	15184	b9dd	☆Slap Hitter goes away
+5	15232	8623	☆Aggressive Hitter goes away
+5	15280	e159	☆Patient Hitter goes away
+5	15328	492d	☆Aggressive Stealing goes away
+5	15376	c319	☆Cautious Stealing goes away
+5	15424	d325	☆Fastball Focus goes away
+5	15472	5fa0	☆Breaking Focus goes away
+5	15520	52c0	☆2-Seamer goes away
+5	15568	c01f	☆Moving Fastball goes away
+5	15616	55f6	Learn Slider
+5	15652	79aa	Learn Hard Slider
+5	15688	23eb	Learn Cutter
+5	15728	84e7	Learn 2nd-pitch Slider|☆Only one 2nd pitch!
+5	15800	4b86	Learn 2nd-pitch Hard Slider|☆Only one 2nd pitch!
+5	15872	fb67	Learn 2nd-pitch Cutter|☆Only one 2nd pitch!
+5	15944	3012	Learn Curve
+5	15980	b418	Learn Slow Curve
+5	16016	a885	Learn Drop
+5	16052	95d3	Learn Drop Curve
+5	16096	50a8	Learn Slurve
+5	16128	52ac	Learn Knuckle Curve
+5	16168	8902	Learn 2nd-pitch Curve|☆Only one 2nd pitch!
+5	16240	1886	Learn 2nd-pitch Slow Curve|☆Only one 2nd pitch!
+5	16312	f571	Learn 2nd-pitch Drop|☆Only one 2nd pitch!
+5	16384	1427	Learn 2nd-pitch Drop Curve|☆Only one 2nd pitch!
+5	16456	d3c5	Learn 2nd-pitch Slurve|☆Only one 2nd pitch!
+5	16528	c207	Learn 2nd-pitch Knuckle Curve|☆Only one 2nd pitch!
+5	16600	26ff	Learn Fork
+5	16636	8376	Learn Palm
+5	16672	5b26	Learn Changeup
+5	16708	dac8	Learn V-Slider
+5	16744	9f24	Learn Knuckle
+5	16780	ba03	Learn Splitter
+5	16816	349b	Learn 2nd-pitch Fork|☆Only one 2nd pitch!
+5	16888	7c10	Learn 2nd-pitch Palm|☆Only one 2nd pitch!
+5	16960	7f4f	Learn 2nd-pitch Changeup|☆Only one 2nd pitch!
+5	17032	3611	Learn 2nd-pitch V-Slider|☆Only one 2nd pitch!
+5	17104	0079	Learn 2nd-pitch Knuckle|☆Only one 2nd pitch!
+5	17176	ee53	Learn 2nd-pitch Splitter|☆Only one 2nd pitch!
+5	17248	340f	Learn Sinker
+5	17284	d1cd	Learn Hard Sinker
+5	17320	7ab3	Learn Circle Change
+5	17360	ec1d	Learn 2nd-pitch Sinker|☆Only one 2nd pitch!
+5	17432	6883	Learn 2nd-pitch Hard Sinker|☆Only one 2nd pitch!
+5	17504	65e1	Learn 2nd-pitch Circle Change|☆Only one 2nd pitch!
+5	17576	6c65	Learn Shuuto
+5	17612	74f7	Learn Hard Shuuto
+5	17648	f47a	Learn 2nd-pitch Shuuto|☆Only one 2nd pitch!
+5	17720	4f30	Learn 2nd-pitch Hard Shuuto|☆Only one 2nd pitch!
+5	17792	8065	Learn 2-Seamer|☆Only one 2nd pitch!
+5	17864	f973	Learn Moving Fastball|☆Only one 2nd pitch!
+5	17936	3d0d	Screwball breaks more
+5	17976	038f	2nd-pitch Screwball breaks more
+5	18016	4756	Original breaks more
+5	18048	63f4	2nd-pitch Original breaks more
+5	18088	46bb	Learn Screwball
+5	18128	db40	Learn 2nd-pitch Screwball|☆Only one 2nd pitch!
+5	18200	7d16	Learn 2-Seamer
+5	18248	eeee	Learn Moving Fastball

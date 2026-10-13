@@ -1,0 +1,114 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	6280	5061	1st Pick
+5	6290	5d90	2nd Pick
+5	6300	c1ae	3rd Pick
+5	6310	249d	4th Pick
+5	6320	e2b7	5th Pick
+5	6330	5438	6th Pick
+5	6344	7fc3	P
+5	6352	5145	C
+5	6360	c6d3	Infldr
+5	6368	a75c	OF
+5	6376	675c	HS
+5	6384	72df	Univ.
+5	6392	579d	Indus.
+5	6400	b4eb	Lottery for negotiating rights.
+5	7056	1864	 Contact
+5	7068	1a68	 Talks
+5	7080	cc35	What will it be?
+5	7100	69ac	Leave it to me.
+5	7120	44f6	No one found yet, I'm afraid.
+5	7160	5936	I've found no pitchers yet.
+5	7192	0d22	I've found no fielders yet.
+5	7224	41f0	I've found no catchers yet.
+5	7256	cf37	I've found no infielders yet.
+5	7292	0533	I've found no outfielders yet.
+5	7328	41a1	Prized for velocity.
+5	7352	e05e	He has quite the velocity.
+5	7384	1db2	His velocity looks|very promising, I'd say.
+5	7444	b869	His velocity is truly amazing.|A once-a-decade talent!
+5	7504	2a98	Prized for control.
+5	7536	b531	He has quite good control.
+5	7584	5e7c	His control looks|very promising, I'd say.
+5	7644	44ae	His control is truly amazing.|A once-a-decade talent!
+5	7704	06d6	Prized for stamina.
+5	7736	c263	He has quite good stamina.
+5	7784	9137	His stamina looks|very promising, I'd say.
+5	7844	2b4a	His stamina is truly amazing.|A once-a-decade talent!
+5	7904	7f73	Prized for contact.
+5	7936	91ef	He has quite good contact.
+5	7984	6b79	His contact skill looks|very promising, I'd say.
+5	8044	57af	His contact is truly amazing.|A once-a-decade talent!
+5	8104	10da	Prized for hitting.
+5	8128	cf85	He has quite a good bat.
+5	8160	07a2	His hitting looks|very promising, I'd say.
+5	8220	24b6	His hitting is truly amazing.|A once-a-decade talent!
+5	8280	86a4	Prized for speed.
+5	8312	e994	He has quite good speed.
+5	8360	64df	His speed looks|very promising, I'd say.
+5	8420	f7a0	His speed is truly amazing.|A once-a-decade talent!
+5	8480	9747	Prized for arm strength.
+5	8512	ee18	He has quite a strong arm.
+5	8544	3c58	His arm looks|very promising, I'd say.
+5	8604	3b0b	His arm is truly amazing.|A once-a-decade talent!
+5	8664	cb50	Prized for fielding.
+5	8688	7478	He has quite good fielding.
+5	8724	d00a	His fielding looks|very promising, I'd say.
+5	8784	0c20	His fielding is truly amazing.|A once-a-decade talent!
+5	8844	d83f	A top high school rookie. He won|the Koshien title!
+5	8896	a44e	A ready-made rookie. He won the|college title!
+5	8952	f930	A ready-made rookie. He won the|industrial title!
+5	9004	f8fe	He is a big-brother type.|A talent who will lead someday!
+5	9072	e459	He is a tough-guy type.|A talent who will lead someday!
+5	9140	3939	Let the CPU scout & research.
+5	9180	021e	Order a search for prospects.
+5	9216	b101	Order research on prospects.
+5	9252	0441	Pick a Preferred Signee.
+5	9288	7b83	Draft prospects found so far.
+5	9328	8aa8	Select the player's position.
+5	9364	1f8e	Select the player to research.
+5	9400	6aad	Select a Preferred Signee.
+5	9478	b7c4	Leave everything to the CPU?
+5	9556	7059	Order a search?
+5	9624	a98b	Order research?
+5	9688	8ab7	Use Preferred Signee slot?
+5	9834	3876	Negotiate?
+5	9964	872b	Raise a player's favor.
+5	9992	e2ae	Select the player to raise.
+5	10070	ebd5	Order a Favor UP?
+5	10142	239e	Draft this player?
+5	10208	3fd9	End without drafting anyone?
+5	10240	a540	Select a player to draft.
+5	10268	a897	End with no picks.
+5	10296	b252	You can view the player list.
+5	10332	7f02	Please select a player to draft.
+5	10368	1f9f	This year's draft prospect list.
+5	10404	751c	He's already been picked, so you|can't pick him.
+5	10460	f030	Over the pitcher quota, so you|can't pick him.
+5	10516	6e6b	Over the fielder quota, so you|can't pick him.
+5	10572	5fd9	Both pitcher & fielder slots are|full. Can't pick him.
+5	10640	b876	Draftees from high school, college|and industrial add up to 3 total.
+5	10712	f10f	You can sign at most 6 draftees.
+5	10768	b0d4	The draft meeting will now begin
+5	10808	4a54	The draft meeting is closed.
+5	10840	7823	Drafting is complete
+5	10868	fe6a	Drafting is over
+5	10900	7b25	No 2nd Pick
+5	10924	1cf5	1st Picks overlapped. Moving on to|the lottery.
+5	10976	c3f9	 choosing...
+5	10992	ab25	Choose an envelope
+5	11016	19c4	Which team will draw the winning lot...?
+5	11096	6b58	Player rights:
+5	11112	d713	 won them.
+5	11132	3c9b	Yomi
+5	11140	3df5	Chun
+5	11148	d40c	H. Toyo
+5	11160	b1c0	Tokyo Yakult
+5	11176	ebe6	Yoko
+5	11184	eb3d	Hans
+5	11192	d410	Rak
+5	11200	5189	Hokkaido N-Ham
+5	11216	f375	Sei
+5	11224	6ad5	Orix
+5	11236	3f28	C. Lotte
+5	11248	f8e5	Fukuoka SoftBank
