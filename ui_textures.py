@@ -130,41 +130,35 @@ def decompress_page(data):
     """Compressed page -> (raw bytes, row width 64 or 128, bytes of `data` used)."""
     hdr = data[0] | data[1] << 8
     nflags, width = hdr & 0x1FFF, 64 if hdr & 0x4000 else 128
-    if hdr & 0x9FFF == hdr and 2 + nflags >= len(data):
-        raise ValueError("not a compressed page")
     pos, lit, end = 0, 2 + nflags, nflags * 8
+
+    def bits(n):
+        nonlocal pos
+        v = 0
+        for _ in range(n):
+            v = v * 2 + (data[2 + pos // 8] >> (7 - pos % 8) & 1 if pos < end else 0)
+            pos += 1
+        return v
+
+    def varlen():
+        return bits(2) or 4 + bits(4)
+
+    if not hdr & 0x2000 or lit >= len(data):
+        raise ValueError("not a compressed page")
     grid, left, value = bytearray(), [0] * width, [0] * width
     for _ in range(PAGE):
         for x in range(width):
             if left[x]:
                 left[x] -= 1
-                grid.append(value[x])
-                continue
-            flag = data[2 + pos // 8] >> (7 - pos % 8) & 1 if pos < end else 0
-            pos += 1
-            if flag:
-                dims = []
-                for _ in (0, 1):
-                    v, n = 0, 2
-                    while n:
-                        v = v * 2 + (data[2 + pos // 8] >> (7 - pos % 8) & 1 if pos < end else 0)
-                        pos += 1
-                        n -= 1
-                        if n == 0 and v == 0 and len(dims) < 2 and not (dims and dims[-1] is None):
-                            dims.append(None)       # 00: four more bits follow
-                            n = 4
-                            v = 0
-                    if dims and dims[-1] is None:
-                        dims[-1] = v + 4
-                    else:
-                        dims.append(v)
-                w, rows = dims
-                for k in range(x, min(x + w, width)):
-                    left[k], value[k] = rows, data[lit]
-                left[x] -= 1
             else:
-                value[x] = data[lit]
-            lit += 1
+                if bits(1):
+                    w, rows = varlen(), varlen()
+                    for k in range(x, min(x + w, width)):
+                        left[k], value[k] = rows, data[lit]
+                    left[x] -= 1
+                else:
+                    value[x] = data[lit]
+                lit += 1
             grid.append(value[x])
     if (pos + 7) // 8 != nflags or lit > len(data):
         raise ValueError("compressed page does not end where its header says")
