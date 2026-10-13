@@ -296,6 +296,13 @@ session with one Sonnet agent per batch of about 430 runs, six at a time (95 bat
   - a piece the translator could not know the context of ("I'm" + team name: "I'm Pawafuru Corp.").
   About 45 lines were corrected with `tl.py set`. Left as it is: after an inserted name or term with an odd number of letters, a piece starting with `'s` or a comma shows half a cell of space ("Reito-san 's rating"), because a run is padded to whole cells.
 - A scenario counts as cleared only when the player is drafted. Played by A presses alone the run ends in the bad ending (not drafted; the run is erased), so scenarios 2 and 3 stay locked. When the player is the starting pitcher the whole game is played by hand: the control settings of the タイム menu (打撃 走塁 投球 守備 監督) are fixed to Manual in Success Mode, nobody fields, and one game took 25 minutes and 59 runs.
+- **Opening scenarios 2 and 3 for testing (2026-10-13).** The scenario card that follows "Start from the beginning" is drawn by `scs_titl.rel`. Its routine at sec1+0x56BC sets the byte `work_scs.rel` sec6+0x60AA1 (memory 0x8065FA81, the number of scenarios the card offers): 1, plus 1 if byte 0x25 of a structure is set, plus 1 if byte 0x26 is set, and it leaves the byte alone when it is already 3. A memory code that keeps it at 3 makes the card show its left / right arrows and all three scenarios start. In `dolphin-test/GameSettings/RP5JA4.ini` (Gecko; the first line checks that `work_scs.rel` is loaded, so nothing is written in other modes):
+  ```
+  205DDB8C 9421FFF0
+  0065FA81 00000003
+  E0000000 80008000
+  ```
+  Dolphin needs cheats on: `HARNESS_CONFIG="Dolphin.Core.EnableCheats=True" python3 to_command_menu.py boot`, then `python3 new_scenario.py 2` (a new game in that scenario up to its first screens). It is a test setting of the emulator only: no game file is changed, and a save made this way keeps nothing unlocked. Not checked: the two flag bytes themselves. Bytes 0x24 to 0x26 of the Success save block (`pawa15.dat` +0x1A6F80, 0x58000 bytes, the image of `work_scs.rel` sec6+0x3A20) read 01 00 00 in every save here, which fits "scenario 1 open, 2 and 3 closed"; the last byte of the block changes with its contents and may be a checksum. No published codes exist for this game (searched).
 - Item names in the glossary pop-ups of `scs_main.rel` were set to the wording of the shop strings (88 runs).
 - **Seen in game** (scenario 1, the resume save, 5 weeks of play, and a new game as an outfielder up to the
   command menu): the build boots and loads; English lines of the common events show (a shop-clerk event, a result
