@@ -1,0 +1,64 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	1112	51d9	Return to the previous screen.
+5	1188	ed75	Save and quit. This overwrites|any data you saved earlier.
+5	1264	33c5	Give up on Success Mode and quit.|Your progress will be deleted.
+5	1340	6075	Change the controller settings.
+5	1416	986c	Set the pitching/batting view and|the catcher window on or off.
+5	1492	7c53	Assign a voice to your player.
+5	1568	5c07	Set rumble for events. This is|separate from the in-game setting.
+5	1644	089b	Shorten long events.
+5	1720	d685	Show messages that help you|as you play.
+5	1796	6ea3	Back to the previous screen we go.
+5	1872	b63a	Save and quit, is it? Any earlier|save will be overwritten.
+5	1948	857b	Giving up on Success Mode, is it?|Your progress will be deleted.
+5	2024	0f6a	We shall change the controller|settings.
+5	2100	3054	Set the pitching/batting view and|the catcher window, on or off.
+5	2176	d401	We shall give your player a voice.
+5	2252	869f	Rumble for events. Mind, it is|separate from the in-game setting.
+5	2328	0e9e	This shortens the long events.
+5	2404	94d5	This shows messages that will|help you along the way.
+5	2480	6ea3	Back to the previous screen.
+5	2556	2a2d	Save and quit. Any earlier save|gets overwritten.
+5	2632	e87f	Quit Success Mode for good. Careful:|your progress will be deleted.
+5	2708	d088	Change the controller settings.
+5	2784	3054	Set the pitching/batting view and|the catcher window on or off.
+5	2860	d401	Assign a voice to your player.
+5	2936	18f2	Set rumble for events. Careful: it|differs from the in-game setting.
+5	3012	df93	Cut the long events short.
+5	3088	94d5	Show messages that help you|as you play.
+5	3164	a16e	Back we go to the previous screen.
+5	3240	1765	Saving and quitting, eh? Mind, any|earlier save gets overwritten.
+5	3316	7a9c	Giving up on Success Mode, eh?|Your progress will be gone for good.
+5	3392	238d	Changing the controller settings.
+5	3468	297e	Sets the pitching/batting view and|the catcher window, on or off.
+5	3544	c2f2	Gives your player a voice, it does.
+5	3620	b14c	Rumble for events. Mind, it is not|the same as the in-game setting.
+5	3696	9f75	Makes the long events short.
+5	3772	9406	Shows messages that will help|you along the way.
+5	3848	6ea3	Back to the previous screen.
+5	3924	b50f	Save and quit. Any earlier save|will be overwritten.
+5	4000	5596	Give up on Success Mode and quit.|Your progress will be deleted.
+5	4076	0f6a	Change the controller settings.
+5	4152	3054	Set the pitching/batting view and|the catcher window on or off.
+5	4228	d401	Give your player a voice.
+5	4304	ff61	Rumble for events. It's separate|from the in-game setting.
+5	4380	0e9e	Shorten the long events.
+5	4456	94d5	Show messages that help you|as you play.
+5	4532	78f5	Let's go back to the last screen.
+5	4608	5978	Save and quit! If you saved before,|I'll write over it, okay?
+5	4684	f3c8	Give up on Success Mode and quit.|Your progress gets deleted, okay?!
+5	4760	1685	Let's change the controller setup.
+5	4836	e2e7	Set the pitching/batting view and|the catcher window on or off.
+5	4912	270c	Let's give your player a voice.
+5	4988	93c2	Set rumble for events. It's not|the same as the in-game one, okay?
+5	5064	eb10	This makes long events shorter.
+5	5140	c6f8	I'll show messages that help you|as you play.
+5	5216	4b7d	Woof! Back to the last screen.
+5	5292	0541	Woof! Save and quit. Any earlier|save gets overwritten.
+5	5368	89a8	Woof... Give up and quit. Your|progress will be deleted.
+5	5444	331f	Woof! Change the controller setup.
+5	5520	ce9a	Woof! Set the pitching/batting|view and the catcher window.
+5	5596	3296	Woof! Give your player a voice.
+5	5672	a126	Woof! Rumble for events. It's not|the in-game setting.
+5	5748	c1b5	Woof! Make long events shorter.
+5	5824	4fe7	Woof! Show messages that help|you as you play.

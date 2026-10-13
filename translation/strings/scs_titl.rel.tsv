@@ -1,0 +1,4 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	1656	1a8f	Start from the beginning|(the game in progress is erased)
+5	1724	f434	Continue your game
+5	1792	f63f	View the play history of|players you have completed

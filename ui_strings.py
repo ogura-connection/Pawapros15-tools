@@ -14,6 +14,10 @@ the same slot, two letters per cell with the pair font (see pair_font.py), so no
 file grows: a slot of 18 cells holds 36 letters. `rebuild_scripts.py build` reads _work/strings.json
 and writes the strings into the built modules.
 
+Slots that hold two or three lines have no line-break code: the game wraps at a fixed width and
+the Japanese pads each line with spaces. Write | for a new line in the English and the tool pads
+(LINE_CELLS lists the line width of each kind of slot).
+
 A string is identified by file, section and section offset; translation/strings/<file>.tsv (in git)
 holds section, offset, a hash of the original and the English, no Japanese. The Japanese lists stay
 in _work/ (git-ignored).
@@ -37,6 +41,10 @@ TSV_DIR = os.path.join(HERE, "translation", "strings")
 LIST_DIR = os.path.join(S.WORK_DIR, "strings")
 OUT_JSON = os.path.join(S.WORK_DIR, "strings.json")
 END = 0xFFFF
+# Slots that hold several lines: the game wraps at a fixed width and the Japanese pads each line with
+# spaces. (file, cells of the slot) -> cells per line. In the English, | starts a new line.
+LINE_CELLS = {("scs_sys.rel", 36): 18, ("scs_titl.rel", 32): 16, ("scs_rens.rel", 28): 14,
+              ("scs_main.rel", 51): 17, ("scs_main.rel", 33): 18, ("scs_main.rel", 44): 18}
 
 
 def text_hash(text):
@@ -125,6 +133,33 @@ def letters(text):
     return len(pair_font.text_segments(text))
 
 
+def layout(name, cells, en):
+    """The English as it goes into the slot: every line but the last padded with spaces to the line
+    width. Raises ValueError when a line is too long or the whole does not fit."""
+    lines = en.split("|")
+    width = LINE_CELLS.get((name, cells))
+    if width is None:
+        if len(lines) > 1:
+            raise ValueError("no line width known for a slot of %d cells in %s" % (cells, name))
+        out = en
+    else:
+        for line in lines:
+            if letters(line) > width:
+                raise ValueError("line %r is %d letters, a line holds %d"
+                                 % (line, len(line), width * 2))
+        out = ""
+        for k, line in enumerate(lines):
+            if k < len(lines) - 1:
+                if not line.isascii():
+                    raise ValueError("only the last line may hold Japanese characters: %r" % line)
+                line = line.ljust(width * 2)
+            out += line
+    if letters(out) > cells:
+        raise ValueError("%r takes %d cells, the slot holds %d (%d letters)"
+                         % (en, letters(out), cells, cells * 2))
+    return out
+
+
 def cmd_export(names):
     mods = load_mods()
     names = names or sorted(m.name for m in mods.values())
@@ -153,19 +188,25 @@ def set_rows(name, pairs):
     mods = load_mods()
     found = {(s["section"], s["offset"]): s for s in strings_of(name, mods)}
     rows = load_tsv(name)
+    bad = 0
     for where, en in pairs:
         sec, off = (int(x) for x in where.split(":"))
         s = found.get((sec, off))
         if s is None:
             sys.exit("%s %s: no string there" % (name, where))
-        if letters(en) > s["cells"]:
-            sys.exit("%s %s: %r takes %d cells, the slot holds %d (%d letters)"
-                     % (name, where, en, letters(en), s["cells"], s["cells"] * 2))
+        try:
+            layout(name, s["cells"], en)
+        except ValueError as e:
+            print("%s %s: %s" % (name, where, e))
+            bad += 1
+            continue
         if en == "":
             rows.pop((sec, off), None)
         else:
             rows[(sec, off)] = (text_hash(s["text"]), en)
     save_tsv(name, rows)
+    if bad:
+        print("%d strings NOT saved (see above)" % bad)
     print("%s: %d of %d strings translated" % (name, len(rows), len(found)))
 
 
@@ -182,8 +223,10 @@ def cmd_merge():
                 s = found.get((sec, off))
                 if s is None or text_hash(s["text"]) != h:
                     sys.exit("%s %d:%d: the original string changed or is gone" % (name, sec, off))
-                if letters(en) > s["cells"]:
-                    sys.exit("%s %d:%d: %r does not fit %d cells" % (name, sec, off, en, s["cells"]))
+                try:
+                    en = layout(name, s["cells"], en)
+                except ValueError as e:
+                    sys.exit("%s %d:%d: %s" % (name, sec, off, e))
                 entries.append({"file": name, "section": sec, "offset": off, "cells": s["cells"], "en": en})
     with open(OUT_JSON, "w", encoding="utf-8") as f:
         json.dump(entries, f, ensure_ascii=False, indent=1)
