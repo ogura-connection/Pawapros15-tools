@@ -330,33 +330,43 @@ def dol_strings():
     return _dol
 
 
-def dol_segments(strs):
-    """[(strings that can move, units of space for them)]: the runs between the fixed strings."""
+def dol_need(english):
+    """english = {(0, offset): English} -> function: units a string takes with its 0xFFFF."""
+    def need(s):
+        en = english.get((0, s["offset"]))
+        return (s["cells"] if en is None else dol_cells(en)) + 1
+    return need
+
+
+def dol_segments(strs, need=None):
+    """[(strings that can move, units of space for them)]: the runs between the fixed strings.
+    need = dol_need(English): a fixed string that is shorter in English leaves the rest of its
+    place to the strings behind it, as the build lays them out (default: the Japanese)."""
+    need = need or dol_need({})
     out, run, start = [], [], DOL_BLOCK[0]
-    for s in strs + [{"fixed": True, "offset": DOL_BLOCK[1], "cells": -1}]:
-        if not s["fixed"]:
+    for s in strs + [None]:
+        if s is not None and not s["fixed"]:
             run.append(s)
             continue
         if run:
-            out.append((run, (s["offset"] - start) // 2))
-        run, start = [], s["offset"] + s["cells"] * 2 + 2
+            out.append((run, ((s["offset"] if s else DOL_BLOCK[1]) - start) // 2))
+        if s:
+            run, start = [], s["offset"] + need(s) * 2
     return out
 
 
 def dol_fit(strs, english):
     """Problems of the block as a whole. english = {(0, offset): English}"""
-    def need(s):
-        en = english.get((0, s["offset"]))
-        return (s["cells"] if en is None else dol_cells(en)) + 1
+    need = dol_need(english)
     out = []
     total, space = sum(need(s) for s in strs), (DOL_BLOCK[1] - DOL_BLOCK[0]) // 2
     if total > space:
         out.append("%s: all strings together need %d units, the block has %d: shorten %d cells (%d letters)"
                    % (DOL, total, space, total - space, (total - space) * 2))
-    for run, room in dol_segments(strs):
+    for run, room in dol_segments(strs, need):
         n = sum(need(s) for s in run)
         if n > room:
-            done = [s for s in run if (0, s["offset"]) in english]
+            done = [s for s in run if (0, s["offset"]) in english] or run
             out.append("0:%d..0:%d: these %d strings need %d units, there are %d up to the next fixed string: "
                        "shorten %d cells (%d letters) among the %d translated ones (0:%d..0:%d)"
                        % (run[0]["offset"], run[-1]["offset"], len(run), n, room, n - room, (n - room) * 2,
@@ -519,6 +529,10 @@ def cmd_set(name, where, en):
     sec, off = (int(x) for x in where.split(":"))
     if rows.pop((sec, off), None) is None:
         sys.exit("%s %s: not translated" % (name, where))
+    if name == DOL:                         # the Japanese comes back: does the block still hold it?
+        problems = dol_fit(dol_strings(), {key: en for key, (_, en) in rows.items()})
+        if problems:
+            sys.exit("\n".join(problems + ["%s %s: not removed, the Japanese line needs that room" % (name, where)]))
     save_tsv(name, rows)
     print("%s %s removed" % (name, where))
 
@@ -573,10 +587,9 @@ def cmd_export(names):
             f.write(HEADER % ((name,) + (HEADER_DOL if name == DOL else HEADER_REL)))
             notes = {}
             if name == DOL:                 # the space each run of movable strings shares
-                english = {key: en for key, (_, en) in done.items()}
-                for run, room in dol_segments(found):
-                    used = sum((dol_cells(english[(0, s["offset"])]) if (0, s["offset"]) in english else s["cells"]) + 1
-                               for s in run)
+                need = dol_need({key: en for key, (_, en) in done.items()})
+                for run, room in dol_segments(found, need):
+                    used = sum(need(s) for s in run)
                     notes[run[0]["offset"]] = ("# the %d strings from here to the next fixed string share %d units "
                                                "(cells + 1 per string); in use now: %d\n" % (len(run), room, used))
             for s in found:

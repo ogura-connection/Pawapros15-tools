@@ -335,6 +335,13 @@ def load_dol(entries):
         return [(s, None) for s in strs]
     if [(e["offset"], e["cells"], e["fixed"]) for e in entries] != [(s["offset"], s["cells"], s["fixed"]) for s in strs]:
         sys.exit("%s does not match %s: run ui_strings.py merge" % (ui_strings.OUT_JSON, DOL))
+    # the same rules as ui_strings.py check, whatever wrote the entries: one line, drawable, the {}
+    # of the Japanese, a fixed string within its cells, no line over the longest Japanese one
+    longest = max(s["cells"] for s in strs)
+    bad = ["%s 0:%d: %s" % (DOL, s["offset"], "; ".join(ui_strings.judge(s, e["en"], longest)[0]))
+           for s, e in zip(strs, entries) if e["en"] is not None and ui_strings.judge(s, e["en"], longest)[0]]
+    if bad:
+        sys.exit("\n".join(bad))
     return [(s, e["en"]) for s, e in zip(strs, entries)]
 
 
@@ -344,9 +351,15 @@ def build_dol(dol, slots, orig, remaps):
     data, (a, b) = ui_strings.dol_data(), ui_strings.DOL_BLOCK
     strs, units = [s for s, _ in dol], []
     for s, en in dol:
-        u = s["units"] if en is None else encode_dol(en, slots)
+        try:
+            u = s["units"] if en is None else encode_dol(en, slots)
+        except ValueError as e:
+            sys.exit("%s 0:%d: %s" % (DOL, s["offset"], e))
         if not u or u.count(ui_strings.DOL_CTRL) != s["ctrl"]:
             sys.exit("%s 0:%d: %r must not be empty and needs %d {} like the Japanese" % (DOL, s["offset"], en, s["ctrl"]))
+        if en is not None and (len(u) != ui_strings.dol_cells(en) or (s["fixed"] and len(u) > s["cells"])):
+            sys.exit("%s 0:%d: %r takes %d units, ui_strings.py counts %d and the string holds %d%s"
+                     % (DOL, s["offset"], en, len(u), ui_strings.dol_cells(en), s["cells"], " (fixed)" * s["fixed"]))
         units.append(u)
     try:
         block, starts = layout_dol(strs, units)
