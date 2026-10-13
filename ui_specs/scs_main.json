@@ -653,7 +653,8 @@
      "text": "Weather",
      "font": "tag",
      "style": "weather",
-     "under": 2
+     "under": 2,
+     "centre_x": 15
     }
    ]
   },
@@ -848,7 +849,7 @@
       128
      ],
      "text": "Yr",
-     "align": "left"
+     "font": "ttf:serif-italic:10:0:0.85:0.35"
     },
     {
      "from": [
@@ -859,7 +860,7 @@
       128
      ],
      "text": "Mo",
-     "align": "left"
+     "font": "ttf:serif-italic:10:0:0.85:0.35"
     },
     {
      "from": [
@@ -870,7 +871,7 @@
       128
      ],
      "text": "Wk",
-     "align": "left"
+     "font": "ttf:serif-italic:10:0:0.85:0.35"
     },
     {
      "from": [

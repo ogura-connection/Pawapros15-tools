@@ -39,7 +39,8 @@
       40
      ],
      "text": "Rank & File",
-     "style": "rank0"
+     "style": "rank0",
+     "valign": "centre"
     },
     {
      "from": [
@@ -50,7 +51,8 @@
       80
      ],
      "text": "Kakaricho",
-     "style": "rank1"
+     "style": "rank1",
+     "valign": "centre"
     },
     {
      "from": [
@@ -61,7 +63,8 @@
       120
      ],
      "text": "Kacho",
-     "style": "rank2"
+     "style": "rank2",
+     "valign": "centre"
     },
     {
      "from": [

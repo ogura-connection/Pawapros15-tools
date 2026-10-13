@@ -27,7 +27,7 @@ sprite parts that showed the old rectangles are pointed at the new ones. A group
 "blank" rectangles (cleared, never drawn into: the second half of a label that came in two pieces),
 "gap" (clear pixels between labels, across and down, default [1, 1]),
 "under" (rows of the Japanese art below the foot of its letters, default 4) and, per label, "align":
-"left" (keep the left edge, not the centre) or "centre_x"
+"left" (keep the left edge, not the centre), "valign": "centre" (middle of the old art, not its baseline) or "centre_x"
 (where the middle of the new label goes, measured from the left of the old rectangle). The parts are
 pointed at the new ones (page, rectangle and offset
 are rewritten in place; nothing moves inside the file and no size changes). The new label keeps the
@@ -636,6 +636,8 @@ def repack(group, d, bank, pages, patches, project=None):
         if lab.get("align") == "left":                           # or the left edge
             centre = box[0] + w // 2
         top = (box[3] - under - base) if base is not None else box[1]   # sit on the old baseline
+        if opt(lab, "valign") == "centre" and base is not None:  # or in the middle of the old art
+            top = (box[1] + box[3]) // 2 - h // 2
         for k, p in enumerate(mine):
             if "sprite" in lab:                                  # box is in screen coordinates
                 if k == 0:
