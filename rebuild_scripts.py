@@ -289,7 +289,7 @@ def layout_dol(strs, units):
         over = (a + len(out) * 2 - limit) // 2
         if over > 0:
             new = ["0:%d" % s["offset"] for s, u in run if u != s["units"]]
-            raise ValueError("%s: the dialog strings 0:%d..0:%d (%d strings) do not fit in front of %s: %d units "
+            raise ValueError("%s: the dialog strings 0:%d..0:%d (%d in a row) do not fit in front of %s: %d units "
                              "too many. Shorten the translated ones among them by %d cells (%d letters) in all: %s"
                              % (DOL, run[0][0]["offset"], run[-1][0]["offset"], len(run), what, over, over,
                                 over * 2, " ".join(new) or "none is translated"))
