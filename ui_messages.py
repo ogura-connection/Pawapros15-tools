@@ -174,14 +174,17 @@ def judge(msg, en):
                 % (" ".join(want) or "none", " ".join(x for x in toks if x.startswith("{")) or "none")], []
     texts, i = [], 0
     for k, (codes, _, colour) in enumerate(msg["pieces"]):
-        i += len(tags(k, codes, colour))
+        mine = tags(k, codes, colour)
+        if toks[i:i + len(mine)] != mine:   # text where the tags of one piece must stand together
+            return ["no text may stand in front of %s here (%s)"
+                    % (mine[-1], "the message starts with it" if i == 0 and len(mine) == 1 else
+                       "%s belong together" % " ".join(mine))], []
+        i += len(mine)
         if i < len(toks) and not toks[i].startswith("{"):
             texts.append(toks[i])
             i += 1
         else:
             texts.append("")
-    if i != len(toks):
-        return ["text in front of the first tag: this message starts with %s" % want[0]], []
     errors = []
     need = sum(U.letters(x) for x in texts)
     if need > room(msg):

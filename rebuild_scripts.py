@@ -58,6 +58,7 @@ import sys
 
 import pair_font
 import scan_story as S
+import ui_messages
 import ui_strings
 from pawapuro15_text_tools import char_to_glyph, glyph_to_char
 
@@ -558,10 +559,18 @@ def load_translation(path, scripts):
     return texts
 
 
-def assign_pairs(scripts, texts, orig, strings=None, dol=None):
+def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None):
     """Choose a glyph slot for every letter pair in the translation. Returns {pair: glyph index}.
     dol = load_dol(): the dialog strings of main.dol with their English."""
     pairs, usage = set(), collections.Counter()
+    for msgs in (messages or {}).values():      # message scripts: the pairs start again in every piece
+        for _, pieces in msgs.values():
+            for en in pieces:
+                for kind, value in pair_font.text_segments(en):
+                    if kind == "pair" and value != "  ":
+                        pairs.add(value)
+                    elif kind == "char":
+                        usage[char_to_glyph(value)] += 1
     for s, en in dol or []:
         if en is None:              # stays Japanese: its glyphs are in use (units are 0x1000 | glyph)
             usage.update(u & 0xFFF for u in s["units"] if u != ui_strings.DOL_CTRL and u & 0xFFF)
@@ -674,17 +683,18 @@ def layout_block(m, blk, english, slots):
     return struct.pack(">%dH" % len(out), *out), addends, {start + 2 * a: u for a, u in zip(starts, seqs)}
 
 
-def build(texts, pad=None, strings=None, dol=None):
+def build(texts, pad=None, strings=None, dol=None, messages=None):
     """Build every changed module, and main.dol, into _work/build/. Returns the list of file names.
-    dol = ui_strings.load_dol_for_build()."""
+    dol = ui_strings.load_dol_for_build(), messages = ui_messages.load_for_build()."""
     orig = load_dir(ORIG_DIR)
     scripts = load_scripts(orig)
     strings = strings or {}
+    messages = messages or {}
     dol = load_dol(dol)
     for sc in scripts:
         if sc.errors or len(sc.hw) * 2 != sc.rel.sections[sc.sec]["size"]:
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
-    slots = assign_pairs(scripts, texts, orig, strings, dol)
+    slots = assign_pairs(scripts, texts, orig, strings, dol, messages)
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
@@ -755,6 +765,21 @@ def build(texts, pad=None, strings=None, dol=None):
                 note += ", %d strings laid out again at sec%d+%d" % (blk["count"], blk["section"], blk["start"])
             image = bytes(image)
             note += ", %d UI strings" % len(strings[m.name])
+        if m.name in messages:                                   # message scripts: each laid out again in its span
+            if m.mod_id in new_secs or any(mid == m.mod_id for mid, _ in remaps):
+                sys.exit("%s: message scripts in a rebuilt module are not supported" % m.name)
+            image = bytearray(image)
+            patched.setdefault(m.mod_id, {})
+            for (sec, off), (msg, pieces) in messages[m.name].items():
+                units = ui_messages.encode(msg, pieces, lambda text: encode_text(text, slots))
+                data = struct.pack(">%dH" % len(units), *units)
+                if any(s == sec and off <= o < off + len(data) for s, o in strings.get(m.name, ())):
+                    sys.exit("%s %d:%d: a UI string is translated inside this message" % (m.name, sec, off))
+                pos = m.sections[sec]["offset"] + off
+                image[pos:pos + len(data)] = data
+                patched[m.mod_id][(sec, off)] = data
+            image = bytes(image)
+            note += ", %d messages" % len(messages[m.name])
         if image != m.data:
             with open(os.path.join(BUILD_DIR, m.name), "wb") as f:
                 f.write(image)
@@ -895,7 +920,8 @@ def cmd_build(args):
     for item in args.pad or []:
         name, size = item.split("=")
         pad[name] = int(size, 0)
-    install(build(texts, pad, ui_strings.load_for_build(), ui_strings.load_dol_for_build()))
+    install(build(texts, pad, ui_strings.load_for_build(), ui_strings.load_dol_for_build(),
+                  ui_messages.load_for_build()))
 
 
 def cmd_restore(args):
