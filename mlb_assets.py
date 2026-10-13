@@ -3,6 +3,7 @@
 
   mlb_assets.py list PROJECT.BIN [text]          file names and sizes (filtered by text)
   mlb_assets.py sheet PROJECT.BIN NAME OUT.png   contact sheet of the textures in one .pack file
+  mlb_assets.py text DISC_FILES_DIR OUT_DIR      every English string of the disc to OUT_DIR/text.tsv
 
 project.bin: 16 big-endian words of header (word 3 = record count, 5 = record table, 10 = index
 table, 11 = name table, 13 = start of data, sector size 0x800). The index table holds
@@ -12,7 +13,9 @@ and a pointer (0x40000000 + file offset) to the pixels; a palette (RGB5A3) sits 
 pixels when the texture has its own. Formats seen in the UI: 8 (C4) and 9 (C8).
 The extracted discs are game data: keep them outside this repository.
 """
-import struct, os
+import struct, os, sys
+
+
 class Project:
     def __init__(self, path):
         self.f = open(path, 'rb'); d = self.f.read(0x100000)
@@ -73,6 +76,55 @@ def sheet(images, path, cols=4, bg=(60, 60, 60, 255)):
     s.convert('RGB').save(path)
 
 
+def glyph_strings(data, table, min_letters=2):
+    """[(offset, text)] for 0xFFFF-terminated runs of 16-bit glyphs that read as Latin text.
+    Glyph numbers are those of Pawapuro 15 (0 = space, 220 = A, 252 = a); values from 0xF000 are
+    control codes and are written as {XXXX}."""
+    import numpy as np, unicodedata
+    a = np.frombuffer(data[:len(data) // 2 * 2], dtype='>u2')
+    ok = (a <= 281) | ((a >= 0xF000) & (a != 0xFFFF))
+    edge = np.flatnonzero(np.diff(np.r_[False, ok, False].astype(np.int8)))
+    out = []
+    for s, e in zip(edge[::2], edge[1::2]):
+        if e >= len(a) or a[e] != 0xFFFF or e - s < 2:
+            continue
+        seg = a[s:e]
+        letters = int(((seg >= 220) & (seg <= 277)).sum())
+        glyphs = int((seg <= 281).sum())
+        if letters < min_letters or letters * 2 < glyphs - int((seg == 0).sum()):
+            continue
+        text = ''.join(table[x] if x <= 281 else '{%04X}' % x for x in seg)
+        out.append((int(s) * 2, unicodedata.normalize('NFKC', text).strip()))
+    return out
+
+
+def scan_text(disc, out_dir):
+    """Write every English string of a disc to out_dir/text.tsv: file, offset, text."""
+    import bisect
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import pawapuro15_text_tools as T
+    table = [T.glyph_to_char(i) for i in range(282)]
+    table[0] = ' '
+    os.makedirs(out_dir, exist_ok=True)
+    proj = Project(os.path.join(disc, 'project.bin'))
+    starts = sorted((off, name) for name, (off, size) in proj.files.items())
+    rows = []
+    for fn in ('ovl_main.rel', 'project.bin'):
+        with open(os.path.join(disc, fn), 'rb') as f:
+            data = f.read()
+        for off, text in glyph_strings(data, table):
+            name = fn
+            if fn == 'project.bin':
+                k = bisect.bisect_right(starts, (off, '~')) - 1
+                name = starts[k][1] if k >= 0 else fn
+                off -= starts[k][0] if k >= 0 else 0
+            rows.append((name, off, text))
+    with open(os.path.join(out_dir, 'text.tsv'), 'w', encoding='utf-8') as f:
+        for r in rows:
+            f.write('%s\t%d\t%s\n' % r)
+    return rows
+
+
 if __name__ == '__main__':
     import sys
     a = sys.argv[1:]
@@ -82,5 +134,7 @@ if __name__ == '__main__':
                 print('%9d  %s' % (size, name))
     elif len(a) == 4 and a[0] == 'sheet':
         sheet([im for _, im in textures(Project(a[1]).read(a[2]))], a[3])
+    elif len(a) == 3 and a[0] == 'text':
+        print(len(scan_text(a[1], a[2])), 'strings')
     else:
         print(__doc__)
