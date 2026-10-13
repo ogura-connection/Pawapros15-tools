@@ -615,6 +615,158 @@
      ]
     }
    ]
+  },
+  {
+   "bank": "z3_nph_scs_0_opd",
+   "palette": 32,
+   "style": "pitch",
+   "font": "tag",
+   "under": 4,
+   "gap": [
+    1,
+    0
+   ],
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     3,
+     16,
+     80,
+     80,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "76",
+     "text": "Slider"
+    },
+    {
+     "sprite": "77",
+     "text": "Curve"
+    },
+    {
+     "sprite": "78",
+     "text": "Fork"
+    },
+    {
+     "sprite": "79",
+     "text": "Sinker"
+    },
+    {
+     "sprite": "7a",
+     "text": "Shuuto"
+    },
+    {
+     "sprite": "7b",
+     "text": "Slow Ball"
+    },
+    {
+     "sprite": "7c",
+     "text": "Fastball"
+    },
+    {
+     "sprite": "7d",
+     "text": "Palm"
+    },
+    {
+     "sprite": "7e",
+     "text": "Knuckle"
+    },
+    {
+     "sprite": "7f",
+     "text": "V-Slider"
+    },
+    {
+     "sprite": "80",
+     "text": "Splitter"
+    },
+    {
+     "sprite": "81",
+     "text": "Screwball"
+    },
+    {
+     "sprite": "82",
+     "text": "Slow Curve"
+    },
+    {
+     "sprite": "83",
+     "text": "Hard Slider"
+    },
+    {
+     "sprite": "84",
+     "text": "Changeup"
+    },
+    {
+     "sprite": "85",
+     "text": "Drop"
+    },
+    {
+     "sprite": "86",
+     "text": "Hard Sinker"
+    },
+    {
+     "sprite": "87",
+     "text": "Slurve"
+    },
+    {
+     "sprite": "88",
+     "text": "Cutter"
+    },
+    {
+     "sprite": "89",
+     "text": "Circle Change"
+    },
+    {
+     "sprite": "8a",
+     "text": "Hard Shuuto"
+    },
+    {
+     "sprite": "8b",
+     "text": "Drop Curve"
+    },
+    {
+     "sprite": "8c",
+     "text": "Knuckle Curve"
+    },
+    {
+     "sprite": "8d",
+     "text": "Original"
+    },
+    {
+     "sprite": "8e",
+     "text": "Yone Ball"
+    },
+    {
+     "sprite": "8f",
+     "text": "Yoshi Ball"
+    },
+    {
+     "sprite": "90",
+     "text": "Emo Ball"
+    },
+    {
+     "sprite": "91",
+     "text": "Razor Shuuto"
+    },
+    {
+     "sprite": "92",
+     "text": "2-Seamer"
+    }
+   ]
   }
  ]
 }
