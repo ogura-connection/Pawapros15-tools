@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Put English lettering from the MLB Power Pros games into the Pawapuro 15 UI pages.
 
-  ui_labels.py boxes PACK TEX [MLB_PROJECT_BIN]   label boxes (left, top, right, bottom) of one MLB texture
+  ui_labels.py boxes PACK TEX [MIN_INDEX]   label boxes (left, top, right, bottom) of one MLB texture
   ui_labels.py preview SPEC.json OUT.png          before/after sheet of every label in a spec, nothing written
   ui_labels.py apply SPEC.json                    write the labels into DATA/files/<arc> (original kept first)
   ui_labels.py restore ARC                        put the saved original .arc back
@@ -53,37 +53,35 @@ def mlb_texture(pack, tex, project=None):
     return idx, pal, fmt
 
 
-def find_boxes(idx, gap=3):
-    """Boxes (l, t, r, b) of the non-background shapes of an index image, shapes closer than `gap` merged."""
-    mask = idx != 0
-    grown = mask.copy()
-    for _ in range(gap):
-        g = grown.copy()
-        g[1:] |= grown[:-1]
-        g[:-1] |= grown[1:]
-        g[:, 1:] |= grown[:, :-1]
-        g[:, :-1] |= grown[:, 1:]
-        grown = g
-    h, w = grown.shape
-    seen = np.zeros_like(grown)
+def runs(flags, gap):
+    """[(start, end)] of the True stretches of a 1-D array, stretches closer than `gap` joined."""
+    out, start, last = [], None, 0
+    for k, f in enumerate(flags):
+        if f:
+            if start is None:
+                start = k
+            last = k
+        elif start is not None and k - last > gap:
+            out.append((start, last + 1))
+            start = None
+    if start is not None:
+        out.append((start, last + 1))
+    return out
+
+
+def find_boxes(idx, min_index=1, gap=4, halo=3):
+    """Label boxes (l, t, r, b) of an MLB sheet, in reading order. Rows and columns are found from
+    the pixels with index >= min_index (the glow that joins neighbours has lower indices); each
+    box is then grown by `halo` pixels, never past the middle of the gap to its neighbour."""
+    core = idx >= min_index
     boxes = []
-    for y0 in range(h):
-        for x0 in range(w):
-            if not grown[y0, x0] or seen[y0, x0]:
-                continue
-            stack, pts = [(y0, x0)], []
-            seen[y0, x0] = True
-            while stack:
-                y, x = stack.pop()
-                pts.append((y, x))
-                for yy, xx in ((y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)):
-                    if 0 <= yy < h and 0 <= xx < w and grown[yy, xx] and not seen[yy, xx]:
-                        seen[yy, xx] = True
-                        stack.append((yy, xx))
-            ys, xs = zip(*[p for p in pts if mask[p]]) if any(mask[p] for p in pts) else (None, None)
-            if ys:
-                boxes.append((min(xs), min(ys), max(xs) + 1, max(ys) + 1))
-    return sorted(boxes, key=lambda b: (b[1] // 12, b[0]))
+    for t, b in runs(core.any(1), 2):
+        cols = runs(core[t:b].any(0), gap)
+        for k, (l, r) in enumerate(cols):
+            lo = l - halo if k == 0 else max(l - halo, (cols[k - 1][1] + l) // 2)
+            hi = r + halo if k == len(cols) - 1 else min(r + halo, (r + cols[k + 1][0]) // 2)
+            boxes.append((max(lo, 0), max(t - halo, 0), min(hi, idx.shape[1]), min(b + halo, idx.shape[0])))
+    return boxes
 
 
 # ── Source styles: (indices, palette) -> role class and 0..1 position inside the role ────────────
@@ -93,12 +91,12 @@ def luma(c):
 
 
 def style_param(idx, pal):
-    """Stat labels of ScsParamPlate: blue fill, white-to-light-blue ring, navy outer edge."""
+    """Stat labels of ScsParamPlate: white-to-light-blue letters, blue ring, navy outer edge."""
     c = pal[idx].astype(np.float32)
     navy = (c[..., 2] < 150) & (c[..., 1] < 20)
-    fill = (c[..., 0] < 20) & (c[..., 2] > 200) & ~navy
-    cls = np.where(navy, "outer", np.where(fill, "fill", "ring"))
-    pos = np.clip((luma(c) - 0.55) / 0.45, 0, 1)
+    ring = (c[..., 0] < 40) & (c[..., 2] > 200) & (c[..., 1] < 110) & ~navy
+    cls = np.where(navy, "outer", np.where(ring, "ring", "fill"))
+    pos = np.clip((luma(c) - 0.62) / 0.38, 0, 1)
     return cls, pos
 
 
@@ -237,8 +235,8 @@ def cmd_restore(arc):
 def main():
     a = sys.argv[1:]
     if a[:1] == ["boxes"] and len(a) >= 3:
-        idx, _, _ = mlb_texture(a[1], int(a[2]), a[3] if len(a) > 3 else None)
-        for k, b in enumerate(find_boxes(idx)):
+        idx, _, _ = mlb_texture(a[1], int(a[2]))
+        for k, b in enumerate(find_boxes(idx, int(a[3]) if len(a) > 3 else 1)):
             print(k, b, "%dx%d" % (b[2] - b[0], b[3] - b[1]))
     elif a[:1] == ["preview"] and len(a) == 3:
         cmd_preview(a[1], a[2])
