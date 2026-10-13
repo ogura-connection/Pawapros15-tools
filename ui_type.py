@@ -293,11 +293,51 @@ def tag_font(project=None):
     return _fonts["tag"]
 
 
+TTF = {"rounded": ("/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf", 0),
+       "narrow": ("/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf", 0),
+       "black": ("/System/Library/Fonts/Supplemental/Arial Black.ttf", 0)}
+_faces = {}
+
+
+def ttf_ink(text, face="rounded", cap=14, slant=0.0, squeeze=1.0, over=4):
+    """(ink, baseline row) of text drawn with a system font: capitals `cap` pixels high, sheared by
+    `slant` (0.2 = italic), widths scaled by `squeeze`. Drawn `over` times too large and averaged
+    down, which gives the 6 ink levels of a soft edge. For lettering larger than the tag font, where
+    a drawn pixel font would look coarse next to the Japanese."""
+    from PIL import Image, ImageDraw, ImageFont
+    path, index = TTF[face]
+    key = (face, cap, over)
+    if key not in _faces:
+        probe = ImageFont.truetype(path, 400, index=index)
+        top, bottom = probe.getbbox("H")[1], probe.getbbox("H")[3]
+        _faces[key] = ImageFont.truetype(path, round(400 * cap * over / (bottom - top)), index=index)
+    font = _faces[key]
+    l, t, r, b = font.getbbox(text, anchor="ls")                 # relative to the baseline
+    pad = 4 * over
+    h_up, h_down = -t + pad, b + pad
+    img = Image.new("L", (r - l + 2 * pad + int(slant * (h_up + h_down)) + 4 * over, h_up + h_down), 0)
+    ImageDraw.Draw(img).text((pad - l, h_up), text, fill=255, font=font, anchor="ls")
+    if slant:
+        img = img.transform(img.size, Image.AFFINE, (1, slant, -slant * h_up, 0, 1, 0), Image.BICUBIC)
+    w = max(1, round(img.width * squeeze / over))
+    h = (h_up + h_down) // over
+    img = img.resize((img.width, h * over)).resize((w * over, h * over), Image.BICUBIC) if squeeze != 1 else img
+    small = np.asarray(img.resize((max(1, img.width // over), h), Image.BOX), dtype=np.float32)
+    ink = np.rint(small * 6 / 255).astype(int)
+    ys, xs = np.nonzero(ink)
+    base = h_up // over
+    return ink[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base - ys.min()
+
+
 FONTS = {"command": command_font, "tag": tag_font}
 
 
 def typeset(text, font="command", project=None):
-    """(ink, baseline row) of a word or phrase. A phrase that MLB drew is returned as drawn."""
+    """(ink, baseline row) of a word or phrase. A phrase that MLB drew is returned as drawn.
+    font = "command", "tag", or "ttf:<face>:<cap height>[:<slant>[:<squeeze>]]" for a system font."""
+    if font.startswith("ttf:"):
+        a = font.split(":")
+        return ttf_ink(text, a[1], int(a[2]), float(a[3]) if len(a) > 3 else 0.0, float(a[4]) if len(a) > 4 else 1.0)
     f = FONTS[font](project)
     if text in f["words"]:
         return f["words"][text]
