@@ -34,7 +34,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "CTRL",
@@ -69,7 +71,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "(blank)",
@@ -116,7 +120,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "E RES",
@@ -151,7 +157,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "CON",
@@ -186,7 +194,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "RUN SPD",
@@ -221,7 +231,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "ARM STR",
@@ -256,7 +268,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "PWR",
@@ -291,7 +305,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "TOP SPD",
@@ -326,7 +342,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "TRJ",
@@ -361,7 +379,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "FLD",
@@ -396,7 +416,9 @@
      3,
      3
     ]
-   }
+   },
+   "area": "rect",
+   "margin": 2
   },
   {
    "name": "Motivation",

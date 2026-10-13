@@ -14,7 +14,8 @@ A spec is a JSON file:
                "pack": "ScsComMain", "tex": 0, "box": [l, t, r, b], "style": "comcmd",
                "roles": {...}, "max_stretch": 1.6, "halo": [4, 5], "name": "Practice"}, ...]}
 `rect` is a sprite rectangle of the page (see ui_textures.py parts); it is cleared, and the label is
-centred in the part of it the Japanese label covered (its bounding box), minus `margin` pixels. Source and target are both reduced to a "tone" per pixel: the source colours are sorted
+centred in the part of it the Japanese label covered (its bounding box; "area": "rect" uses the whole
+rectangle), minus `margin` pixels. Source and target are both reduced to a "tone" per pixel: the source colours are sorted
 into roles (fill, ring, outer edge for the stat labels; plate, letters, edge for the command
 labels) and each role is given a range of palette indices of the target page. The tone is resampled
 with an area filter, so strokes thin out instead of dropping pixels, and then rounded to a palette index.
@@ -211,7 +212,8 @@ def render(spec, d, banks, project=None):
         alpha, tone, _ = source_tone(lab, project)
         # the label may only use the area the Japanese one covered (its neighbours overlap the rest)
         ys, xs = np.nonzero(pages[key][y0:y1, x0:x1])
-        area = (x0 + xs.min(), y0 + ys.min(), x0 + xs.max() + 1, y0 + ys.max() + 1) if len(xs) else lab["rect"]
+        area = (x0 + xs.min(), y0 + ys.min(), x0 + xs.max() + 1, y0 + ys.max() + 1) \
+            if len(xs) and lab.get("area", "label") == "label" else lab["rect"]
         m = lab.get("margin", 0)
         a, t = fit(alpha, tone, area[2] - area[0] - 2 * m, area[3] - area[1] - 2 * m,
                    lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))
