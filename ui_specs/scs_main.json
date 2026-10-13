@@ -403,17 +403,17 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 1,
-    "ring": 15
+    "fill": 1
    },
    "max_stretch": 2.0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
     15
    ],
-   "margin": 1
+   "margin": 0
   },
   {
    "name": "Practice",
