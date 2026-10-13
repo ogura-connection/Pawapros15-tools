@@ -398,11 +398,11 @@ def dol_cells(en):
     return en.count("{}") + sum(letters(part) for part in en.split("{}"))
 
 
-def too_long(line, cap):
+def too_long(line, cap, count=letters):
     """How many letters a line is over its capacity of `cap` cells (0 = it fits)."""
     if line.isascii() and "{}" not in line:
         return max(0, len(line) - cap * 2)
-    return max(0, (dol_cells(line) - cap) * 2)
+    return max(0, (count(line) - cap) * 2)
 
 
 def pad_line(line, width):
@@ -430,10 +430,10 @@ def judge(s, en, longest=0):
         cells = dol_cells(en)
         if s["fixed"] and cells > s["cells"]:
             errors.append("%d letters too long: this string cannot move and holds %d cells (%d letters)"
-                          % (too_long(en, s["cells"]), s["cells"], (s["cells"] - s["ctrl"]) * 2))
+                          % (too_long(en, s["cells"], dol_cells), s["cells"], (s["cells"] - s["ctrl"]) * 2))
         elif cells > longest:
             errors.append("%d letters too long: a line holds at most %d cells (%d letters), the longest "
-                          "Japanese line" % (too_long(en, longest), longest, (longest - s["ctrl"]) * 2))
+                          "Japanese line" % (too_long(en, longest, dol_cells), longest, (longest - s["ctrl"]) * 2))
         elif cells > s["cells"] + DOL_OVER:
             warnings.append("%d cells, the Japanese has %d: the dialog box may be too narrow"
                             % (cells, s["cells"]))
@@ -477,7 +477,7 @@ def check_rows(name, pairs):
             warnings += ["%s: warning: %s" % (where, w) for w in warns]
             if not errors:
                 good[(sec, off)] = en
-    if name == DOL and not problems:        # does the block still hold everything?
+    if name == DOL:                         # does the block still hold everything?
         english = {key: en for key, (_, en) in load_tsv(name).items()}
         english.update(good)
         problems += dol_fit(strs, english)
