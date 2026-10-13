@@ -12,7 +12,7 @@ A spec is a JSON file:
    "project": "~/Projects/Pawapuro/MLB2008/DATA/files/project.bin",       (optional)
    "labels": [{"bank": "y5_smi_0", "page": 1, "palette": 28, "rect": [x0, y0, x1, y1],
                "pack": "ScsComMain", "tex": 0, "box": [l, t, r, b], "style": "comcmd",
-               "roles": {...}, "max_stretch": 1.6, "name": "Practice"}, ...]}
+               "roles": {...}, "max_stretch": 1.6, "halo": [4, 5], "name": "Practice"}, ...]}
 `rect` is a sprite rectangle of the page (see ui_textures.py parts); it is cleared and the label is
 centred in it. Source and target are both reduced to a "tone" per pixel: the source colours are sorted
 into roles (fill, ring, outer edge for the stat labels; plate, letters, edge for the command
@@ -173,14 +173,24 @@ def fit(alpha, tone, w, h, max_stretch=1.6, max_scale=1.0):
     return a2, np.where(a2 > 1e-4, t2 / np.maximum(a2, 1e-4), 0)
 
 
-def place(page, rect, alpha, tone, threshold=0.5):
-    """Clear rect (x0, y0, x1, y1) of the index page and draw the label centred in it."""
+def place(page, rect, alpha, tone, threshold=0.5, halo=()):
+    """Clear rect (x0, y0, x1, y1) of the index page and draw the label centred in it.
+    `halo` = indices for successive one-pixel rings drawn around the label (inside the rectangle)."""
     x0, y0, x1, y1 = rect
     page[y0:y1, x0:x1] = 0
     h, w = alpha.shape
     ox, oy = x0 + (x1 - x0 - w) // 2, y0 + (y1 - y0 - h) // 2
     ys, xs = np.nonzero(alpha >= threshold)
     page[oy + ys, ox + xs] = np.clip(np.rint(tone[ys, xs]), 1, 15).astype(np.uint8)
+    area = page[y0:y1, x0:x1]
+    for value in halo:
+        g = area != 0
+        ring = g.copy()
+        ring[1:] |= g[:-1]
+        ring[:-1] |= g[1:]
+        ring[:, 1:] |= g[:, :-1]
+        ring[:, :-1] |= g[:, 1:]
+        area[ring & ~g] = value
 
 
 def render(spec, d, banks, project=None):
@@ -199,7 +209,7 @@ def render(spec, d, banks, project=None):
         alpha, tone, _ = source_tone(lab, project)
         a, t = fit(alpha, tone, x1 - x0 - lab.get("margin", 2) * 2, y1 - y0 - lab.get("margin", 2) * 2,
                    lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))
-        place(pages[key], lab["rect"], a, t)
+        place(pages[key], lab["rect"], a, t, halo=lab.get("halo", ()))
     return pages
 
 
