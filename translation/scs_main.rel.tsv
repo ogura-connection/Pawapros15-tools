@@ -329,13 +329,13 @@
 29082	9363	.
 29118	345f	 learned.
 29146	a873	 improved.
-29186	2408	 is what they call you now.
+29186	2408	\nis what they call you now.
 29234	6f84	 got worse.
 29262	28f1	 now.
 29290	c776	 now.
 29318	7fa7	 no longer.
 29346	54bc	 is gone.
-29378	d78b	 is no longer what they call you.
+29378	d78b	\nis no longer what they call you.
 29410	721c	 acquired.
 29442	abb4	 forgotten.
 29466	0c64	 now, sadly.
@@ -3797,7 +3797,7 @@
 161228	cc4b	that's a new high score, so...
 161282	5b1c	Pawarin
 161296	e8ec	Pawarin Set
-161318	8666	 is our gift to you!
+161318	8666	\nis our gift to you!
 161344	dddd	Huh?!
 161354	ca76	For real?
 161374	b3f8	All right!!!
@@ -12617,8 +12617,8 @@
 454388	a01d	 has run out.
 476794	d848	Debug message
 476814	d446	Post-practice special timing msg
-477586	567d	 is someone you just met.
-477622	d2e2	 is now an acquaintance.
+477586	567d	\nis someone you just met.
+477622	d2e2	\nis now an acquaintance.
 477666	64b7	 made the first team.
 477690	43e4	Promotion to the first team raised\nyour base pay, so income went up.
 477776	e359	Weights Practice
@@ -12747,10 +12747,10 @@
 489760	21a9	Just make it break more
 489796	f01c	Just make it slower
 489832	be76	A pitch with a sharp brake
-489884	195b	's lateral break went up.
-489932	6d3e	's lateral break went down.
-489980	5bcf	's vertical break went up.
-490028	90cc	's vertical break went down.
+489884	195b	's\nlateral break went up.
+489932	6d3e	's\nlateral break went down.
+489980	5bcf	's\nvertical break went up.
+490028	90cc	's\nvertical break went down.
 490076	5612	's Fastball Life went up.
 490120	065b	's Fastball Life went down.
 490164	f77f	's Spin went up.
