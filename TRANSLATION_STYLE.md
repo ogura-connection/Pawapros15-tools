@@ -187,7 +187,7 @@ Line counts are text runs in scenario 1.
 | パワスポニュース / パワフルスポーツ | PawaSpo News / Pawafuru Sports | |
 | 決算 / 中間決算 | closing of the books / half-year results | |
 | 給料日 / 大入り袋 | payday / bonus envelope | |
-| 体力 / やる気 | stamina / motivation | status words |
+| 体力 / やる気 | vitality / motivation | the gauges; "Vitality" is the official English term and keeps 体力 apart from the pitcher stat スタミナ (Stamina) |
 | 熱血練習 | Hot-Blooded Practice | |
 | もう一丁練習 | One-More Practice | from もう一丁！ "One more!" |
 | 練習器材 | training gear | |
@@ -229,3 +229,9 @@ Line counts are text runs in scenario 1.
   (Giants, Hanshin, Chunichi, SoftBank).
 - Lines from `scs_main.rel` (common events, sound effects, "you met Yabe" notices) appear inside
   scenario scenes and stay Japanese until that file is translated.
+
+## UI graphics (rule for when they are translated)
+
+Only lettering is replaced. Icons, characters, logos and any picture without text stay exactly as
+Konami drew them, so the game keeps its own look. English labels are taken from the official
+English games where they exist in the same art style; nothing MLB- or 2K-branded is used.
