@@ -458,7 +458,7 @@
 5	26586	73f3	Not enough money.|Change your signees to fit within|your funds.
 5	26704	c318	End Contract Renewal.|Is this OK?
 5	26774	c143	Not enough money.|Change the offers to fit within your|funds, or release the player.
-5	26886	27f7	Offering less to a multi-year player|will drop Team Love to 0.|Is this OK?
+5	26886	27f7	Offering less to a multi-year player|will drop Loyalty to 0.|Is this OK?
 5	26998	694b	End spring camp instructions.|Is this OK?
 5	27072	c736	Decide who to sign for next season.
 5	27120	1969	Sign released players.
@@ -484,7 +484,7 @@
 5	57608	9c19	No players to choose.
 5	57640	6fb1	Changing the Player Rep ends his|Boss power and shrinks Chemistry|map. Change?
 5	57728	6e13	Changing the Player Rep ends his|Big Brother power and shrinks the|Chemistry map. Change?
-5	57832	a110	Not enough Team Love.|You can't use Chemistry until Team|Love reaches 70. Is this OK?
+5	57832	a110	Not enough Loyalty.|You can't use Chemistry until Team|Love reaches 70. Is this OK?
 5	57940	b61e	Remove player from Chemistry Map.|Is this OK?
 5	57996	02f8	When your partner hits a home run,|you hit better in your at-bats.
 5	58072	b374	Fielding the 1B-2B gap with a partner|raises defense.
