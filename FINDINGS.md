@@ -266,6 +266,46 @@ Tested on 2026-10-12 with a translated `scs_main.rel` (the 33 training-gear cons
 
 Still open: the player and team-mate names inserted into sentences are Japanese (name entry and the name tables are not translated). Glossary pop-ups (window type 31) and choice menus (26) have not been measured in game. With all of scenario 1 in English (3,238 runs, 840 letter pairs) 208 of the pair slots are kanji that the remaining Japanese text still uses, so a few rare kanji in untranslated lines show as letter pairs until those lines are translated too. With the UI strings of 2026-10-12 in (1,806 strings, 1,038 letter pairs) 406 pair slots are kanji that Japanese text still uses: more of the untranslated lines will show a letter pair in place of a rare kanji until they are translated.
 
+## Bulk dialogue translation (2026-10-13, third session)
+
+All four script files are in English: 45,661 runs (`tl.py status`), built, verified and installed. Done in one
+session with one Sonnet agent per batch of about 430 runs, six at a time (95 batches, about 12 million tokens,
+75 minutes of agent time), after a pilot of six batches read against the Japanese.
+
+- Tools in `_work/tl_bulk/` (not in git): `make_batches.py` (unique, untranslated scenes into batches;
+  `dups.json` maps the 1,048 exact duplicate scenes to their first copy), `brief.md` (what a translator reads:
+  formats, limits, names, the casts), `presets.json` (154 fixed renderings of lines that repeat, the most common
+  one 973 times), `collect.py` (checks and stores finished batches one after the other, then fills the duplicate
+  scenes), `reconcile.py`, `view.py` (Japanese and English side by side).
+- `tl.py check FILE` is a dry run of `apply`: line counts per scene, stray characters, the line breaks of menu
+  runs, and the warnings of `merge`. Translators run it; only `collect.py` runs `apply`, because `apply` rewrites
+  the whole TSV and parallel applies would lose rows.
+- A decoded run holds a line break as the two characters backslash + n, not as a newline (`check_scene` counted
+  the original's lines wrong until this was fixed). In apply input `\_` is a space: editors strip trailing ones.
+- A run-level memory of scenario 1's English is not safe to reuse: its translators moved words between the runs
+  of a sentence. Only whole-line repeats were fixed in advance.
+- The speaker column is right for scenario 1 only. In `scs_main.rel` most runs have no portrait set, and in
+  scenarios 2 and 3 the same portrait numbers are other people; their batches show a code per character instead.
+- Sizes after the build: `scs_main.rel` script +18 KB (356 KB of room left with the scenario slot moved),
+  `scs_sce2.rel` +3 KB, `scs_sce3.rel` +7 KB; 1,614 letter pairs, 1,424 kanji slots left.
+- 17 warnings remain in `tl.py merge`, all in debug menus and lookup lists that the checker reads as one line.
+- Item names in the glossary pop-ups of `scs_main.rel` were set to the wording of the shop strings (88 runs).
+- **Seen in game** (scenario 1, the resume save, 5 weeks of play, and a new game as an outfielder up to the
+  command menu): the build boots and loads; English lines of the common events show (a shop-clerk event, a result
+  message with an inserted amount, the opening). **Not seen:** almost all of it. Scenarios 2 and 3 cannot be
+  started at all yet: a new game goes straight into scenario 1 until a scenario has been cleared.
+- Known weak spot: sentences the game assembles from pieces (a name or term plus a fragment). The pieces were
+  written to follow a noun, but which pieces meet on screen was mostly not visible to the translators.
+- Still Japanese around the dialogue: the letterbox narration before name entry, the name entry and profile
+  screens (handedness, position, forms, face, difficulty), the overwrite warning of New Game, the mode-select
+  screens, and the names the player types.
+- A fielder save exists now: `dolphin-test/nand_backup_fielder` (outfielder, year 1 September week 1).
+  `to_command_menu.py resume fielder` continues from it. Seen with it: the plate `Position: Outfield` and the
+  seven fielder stat labels on the main screen.
+- New Game with a save present: at the Success title UP, A; at the overwrite warning UP, A (the default is
+  cancel). Name entry: LEFT, DOWN x6, A for OK. Voice: RIGHT x3, A. Then six profile screens (position is 02/06),
+  difficulty, the save prompt, the opening. `to_command_menu.py new` assumes there is no save and takes Continue.
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.

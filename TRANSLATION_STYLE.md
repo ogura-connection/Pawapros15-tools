@@ -131,7 +131,7 @@ Line counts are text runs in scenario 1.
   become showy English in capitals ("MIX & MATCH", "HUFF-PUFF").
 - Example: "Heh heh... Quite the celebration, no?"
 
-### Voices set while translating the Data screen (scenarios 2 and 3 are not translated yet)
+### Voices set while translating the Data screen
 
 Chosen on 2026-10-12 from each character's rating comments and their scenes; treat as locked unless the
 scenario translation shows a reason to change one. Names are romanised from the readings the scenes give;
@@ -154,6 +154,31 @@ which comment group belongs to which character was worked out from speech patter
 | Otori Nagamichi | lecherous old man | "Hyo hyo hyo" |
 | Otori Kanna | casual | contractions |
 | 根霧 蓮 / Negiri Ren (shop clerk) | わよ / からね, うふ | warm, confident older-sister tone; "Hee hee." only where the Japanese has うふ |
+
+### Names and voices set for the bulk translation (2026-10-13)
+
+Readings are the ones the scripts give. These went into the translators' brief and are used throughout
+`scs_main.rel`, `scs_sce2.rel` and `scs_sce3.rel`.
+
+| Character | English | Voice |
+|---|---|---|
+| 神楽坂光成 | Kagurazaka Mitsunari | CEO of the Kagurazaka Group, Mitsuhiko's doting father (ワシ + なのだ): grand, no contractions |
+| 男前田洋平 | Otokomaeda Yohei | Kantoku of the Kagurazaka Group team |
+| 六道聖 | Rokudo Hijiri | flat, composed, old-fashioned plain speech; Hijiri-chan |
+| 猪狩守 / 猪狩進 | Ikari Mamoru / Ikari Susumu | genius ace who looks down on everyone / his polite brother |
+| 友沢亮 | Tomozawa Ryo | cool, proud, few words |
+| 早川あおい / 橘みずき | Hayakawa Aoi / Tachibana Mizuki | earnest and fair / bossy and teasing |
+| 阿畑やすし | Abata Yasushi | Kansai rule |
+| ダイジョーブ博士 / ゲドー君 | Daijobu Hakase / Gedo-kun | grand, stilted, no contractions, "science" / only "Gyo." |
+| 加藤京子 | Kato Kyoko | hospital nurse; smooth, teasing |
+| 日和ミヨ | Hiyori Miyo | Miyo-san |
+| 鳳永路 | Otori Nagamichi | runs the club team Otori Phoenix (鳳フェニックス) |
+| 白健二 | Haku Kenji | |
+| 猛田慶次 | Takeda Keiji | タケさん is Take-san; Morita is アニキ, "Aniki" |
+| 店長 / 博士 | Tencho / Hakase | as forms of address, like Kantoku |
+
+Scenario 2 terms: 一級 / 二級 / 三級社員 are Grade 1 / 2 / 3 employees; 昇格 / 降格 promoted / demoted.
+Company and club teams: the name romanised, the business translated (ぴちぴち水産 Pichipichi Fisheries).
 
 ### Minor voices
 - **親父 (the player's father):** gruff shopkeeper, やがれ. Short and rough, soft underneath.
