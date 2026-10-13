@@ -14,10 +14,18 @@ Fonts
 Styles (how ink becomes palette indices of the Pawapuro 15 page)
   command    violet letters on a white plate with a green rim and a dark green shadow to the lower
              right, as on y5_smi pages 1 and 2 (palette 28).
+  tag, money, motivation   letters with a one-pixel outline, in the colours of the HUD tags.
+
+Font "tag" is the one exception to "nothing is drawn here": MLB has no small bold lettering, so the 13
+letters the HUD tags need are defined in TAG_GLYPHS.
 
 Repacking: an English word is wider than the Japanese label it replaces (練習 is two characters), so the
 labels of a page are laid out again at their natural width inside the areas named in the spec, and the
-sprite parts that showed the old rectangles are pointed at the new ones (page, rectangle and offset
+sprite parts that showed the old rectangles are pointed at the new ones. A group can also list
+"blank" rectangles (cleared, never drawn into: the second half of a label that came in two pieces),
+"under" (rows of the Japanese art below the foot of its letters, default 4) and, per label, "centre_x"
+(where the middle of the new label goes, measured from the left of the old rectangle). The parts are
+pointed at the new ones (page, rectangle and offset
 are rewritten in place; nothing moves inside the file and no size changes). The new label keeps the
 old label's horizontal centre and sits on the old baseline.
 """
@@ -195,7 +203,41 @@ def command_font(project=None):
     return _fonts["command"]
 
 
-FONTS = {"command": command_font}
+# The small bold letters of the HUD tags. MLB has no lettering in this style (its own Vitality,
+# Money and Motivation are thin letters baked into a textured plate), so these are drawn here:
+# 2-pixel stems, capitals 11 high, lower case 8, '+' = a half-tone corner pixel.
+TAG_GLYPHS = {
+    "V": ["##...##", "##...##", "##...##", "##...##", "+##.##+", ".##.##.", ".##.##.", ".+###+.", "..###..",
+          "..###..", "..+#+.."],
+    "P": ["#####+", "######", "##..##", "##..##", "##..##", "######", "#####+", "##....", "##....", "##....",
+          "##...."],
+    "M": ["##....##", "###..###", "###..###", "########", "########", "##+##+##", "##.##.##", "##....##",
+          "##....##", "##....##", "##....##"],
+    "a": ["+###+", "##+##", "...##", "+####", "##+##", "##.##", "##+##", "+####"],
+    "e": ["+###+", "##+##", "##.##", "#####", "##...", "##...", "##+##", "+###+"],
+    "i": ["##", "##", "..", "##", "##", "##", "##", "##", "##", "##", "##"],
+    "l": ["##", "##", "##", "##", "##", "##", "##", "##", "##", "##", "##"],
+    "n": ["####+", "#####", "##+##", "##.##", "##.##", "##.##", "##.##", "##.##"],
+    "o": ["+###+", "##+##", "##.##", "##.##", "##.##", "##.##", "##+##", "+###+"],
+    "s": ["+####", "##+..", "##...", "####+", "+####", "...##", "..+##", "####+"],
+    "t": [".##.", ".##.", "####", "####", ".##.", ".##.", ".##.", ".##.", ".##+", ".+##"],
+    "v": ["##..##", "##..##", "##..##", "##..##", "+####+", ".####.", ".+##+.", "..##.."],
+    "y": ["##..##", "##..##", "##..##", "##..##", "+####+", ".####.", ".+##+.", "..##..", ".+##..", "###+..",
+          "##+..."],
+}
+TAG_DROP = {"y": 3}
+
+
+def tag_font(project=None):
+    if "tag" not in _fonts:
+        level = {".": 0, "+": 3, "#": 6}
+        _fonts["tag"] = {"words": {}, "space": 3, "gap": 1, "glyphs": {
+            ch: (np.array([[level[c] for c in row] for row in rows]), TAG_DROP.get(ch, 0))
+            for ch, rows in TAG_GLYPHS.items()}}
+    return _fonts["tag"]
+
+
+FONTS = {"command": command_font, "tag": tag_font}
 
 
 def typeset(text, font="command", project=None):
@@ -246,7 +288,46 @@ def style_command(ink, base):
     return out, base + pad
 
 
-RENDER = {"command": style_command}
+def outlined(ramp, ring, corner):
+    """A style: letters drawn with `ramp` (palette index for ink 0..6), a one-pixel outline `ring`
+    on the four sides of every letter pixel and `corner` (0 = none) on the diagonals."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        pad = 1
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        side = grow(letters, 1, diagonal=False) & ~letters
+        diag = grow(letters, 1) & ~letters & ~side
+        out = np.zeros(big.shape, np.uint8)
+        out[diag] = corner
+        out[side] = ring
+        out[letters] = ramp[big[letters]]
+        return out, base + pad
+    return style
+
+
+RENDER = {
+    "command": style_command,
+    # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
+    "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),
+    # dark blue letters, white outline: 所持金 (palette 19, dark blue to white)
+    "money": outlined([0, 12, 10, 8, 5, 3, 2], 15, 15),
+    # blue letters, white outline: やる気 (palette 50; the game draws a shadow copy with palette 30)
+    "motivation": outlined([0, 12, 10, 8, 5, 2, 1], 15, 15),
+}
+
+
+def art_ink(art, project=None):
+    """(ink, baseline row) of lettering cut from an MLB sheet: {"pack", "tex", "box", "style", "role"}.
+    The pixels of one role (see ui_labels.STYLES) become full ink."""
+    mask, cls = L.source_classes(dict(art, drop=[r for r in ("fill", "ring", "outer", "letter", "plate",
+                                                         "edge_dark", "edge_light")
+                                               if r != art.get("role", "fill")]), project)
+    ink = np.where(mask, 6, 0)
+    return ink, ink.shape[0]
 
 
 # ── Repacking ────────────────────────────────────────────────────────────────────────────
@@ -301,25 +382,35 @@ def repack(group, d, bank, pages, patches, project=None):
         return any(a[0] == page and x0 < a[3] and a[1] < x1 and y0 < a[4] and a[2] < y1 for a in areas)
 
     froms = {(o[0],) + o[1] for o in old.values()}
+    group_blanks = {tuple(r) for r in group.get("blank", ())}
     for i, (page, rect, _) in old.items():
         if not inside(page, *rect):
             raise ValueError("label %r is not inside the repack areas" % labels[i].get("text"))
     for p in parts:                                              # nothing else may live in the areas
-        if touches(p.page, p.x0, p.y0, p.x1, p.y1) and (p.page, p.x0, p.y0, p.x1, p.y1) not in froms:
+        key = (p.page, p.x0, p.y0, p.x1, p.y1)
+        if key in group_blanks:
+            continue
+        if touches(*key) and key not in froms:
             raise ValueError("sprite %s uses x %d-%d y %d-%d of page %d, inside a repack area"
                              % (p.sprite, p.x0, p.x1, p.y0, p.y1, p.page))
+    blanks = {tuple(r) for r in group.get("blank", ())}
     art = []
     for i, lab in enumerate(labels):
         if "text" in lab:
             ink, base = typeset(lab["text"], font, project)
             art.append(style(ink, base))
+        elif "art" in lab:
+            art.append(style(*art_ink(lab["art"], project)))
         else:                                                    # keep the Japanese label as it is
             page, rect, (ax0, ay0, ax1, ay1) = old[i]
             art.append((pages[page][ay0:ay1, ax0:ax1].copy(), None))
     height = max(a.shape[0] for a, _ in art)
     placed = shelf_pack([(a.shape[1], height) for a, _ in art], areas)
-    for page, x0, y0, x1, y1 in areas:
+    for page, x0, y0, x1, y1 in areas + sorted(blanks):
+        if page not in pages:
+            pages[page] = U.decode_indices(d, *bank["pages"][page]).copy()
         pages[page][y0:y1, x0:x1] = 0
+    under = group.get("under", 4)          # rows of the Japanese art below the foot of its letters
     rows = []
     for i, lab in enumerate(labels):
         img, base = art[i]
@@ -327,8 +418,9 @@ def repack(group, d, bank, pages, patches, project=None):
         h, w = img.shape
         pages[page][y:y + h, x:x + w] = img
         opage, (ox0, oy0, ox1, oy1), (ax0, ay0, ax1, ay1) = old[i]
-        dx = (ax0 + ax1) // 2 - ox0 - w // 2                      # keep the horizontal centre
-        dy = (ay1 - 4 - oy0 - base) if base is not None else ay0 - oy0   # sit on the old baseline
+        centre = lab.get("centre_x", (ax0 + ax1) // 2 - ox0)      # keep the horizontal centre
+        dx = centre - w // 2
+        dy = (ay1 - under - oy0 - base) if base is not None else ay0 - oy0   # sit on the old baseline
         n = 0
         for p in parts:
             if (p.page, p.x0, p.y0, p.x1, p.y1) == (opage, ox0, oy0, ox1, oy1):

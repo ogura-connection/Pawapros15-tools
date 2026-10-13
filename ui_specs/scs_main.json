@@ -426,36 +426,6 @@
     2,
     5
    ]
-  },
-  {
-   "name": "Motivation",
-   "bank": "y5_np_0",
-   "page": 7,
-   "palette": 30,
-   "rect": [
-    40,
-    72,
-    88,
-    96
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    3,
-    71,
-    50,
-    83
-   ],
-   "style": "light",
-   "roles": {
-    "fill": 15,
-    "ring": 1
-   },
-   "max_stretch": 1.0,
-   "drop": [],
-   "halo": [],
-   "margin": 0,
-   "area": "rect"
   }
  ],
  "repack": [
@@ -644,6 +614,121 @@
       96
      ],
      "text": "Items"
+    }
+   ]
+  },
+  {
+   "bank": "y5_np_0",
+   "palette": 58,
+   "style": "tag",
+   "font": "tag",
+   "under": 2,
+   "areas": [
+    [
+     9,
+     0,
+     56,
+     128,
+     80
+    ]
+   ],
+   "blank": [
+    [
+     9,
+     112,
+     32,
+     128,
+     56
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      9,
+      48,
+      56,
+      96,
+      80
+     ],
+     "text": "Vitality",
+     "centre_x": 24
+    },
+    {
+     "from": [
+      9,
+      96,
+      56,
+      128,
+      80
+     ],
+     "text": "Passion",
+     "centre_x": 24
+    }
+   ]
+  },
+  {
+   "bank": "y5_np_0",
+   "palette": 19,
+   "style": "money",
+   "font": "tag",
+   "under": 1,
+   "areas": [
+    [
+     7,
+     88,
+     72,
+     128,
+     88
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      7,
+      88,
+      72,
+      128,
+      88
+     ],
+     "text": "Money"
+    }
+   ]
+  },
+  {
+   "bank": "y5_np_0",
+   "palette": 50,
+   "style": "motivation",
+   "under": 2,
+   "areas": [
+    [
+     7,
+     32,
+     72,
+     88,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      7,
+      40,
+      72,
+      88,
+      96
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       0,
+       66,
+       56,
+       82
+      ],
+      "style": "param",
+      "role": "fill"
+     }
     }
    ]
   }
