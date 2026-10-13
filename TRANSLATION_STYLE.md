@@ -337,5 +337,33 @@ Pitch names on the HUD use MLB Power Pros 2008's English names, shortened where 
 
 "Shuuto" is the spelling of the English games (not Hepburn "shuto"). H is 高速: "Hard", as in MLB.
 
+Data screen (scs_data.arc, scs_sys.arc), Arial Rounded Bold in the colours of the Japanese labels:
+
+| Japanese | English |
+|---|---|
+| 個人データ / 仲間データ / 周りの評価 / スケジュール | My Data / Teammates / Ratings / Schedule (titles and buttons) |
+| 装備変更 / アイテムリスト / システム / セーブしておわる / あきらめる | Equip / Item List / System / Save & Quit / Give Up |
+| 投手能力 / 野手能力 / その他能力 / 自分の状態 | Pitcher / Fielder / Other / Status |
+| 全て / 得意練習 / その他 (team-mate list) | All / Practice / Other |
+| 利き腕 / フォーム / 成長タイプ / 調子 | B/T / Form / Growth / Cond. |
+| 右投右打 ... 左投両打 | R/R, L/R, S/R, R/L, L/L, S/L: bats / throws, the English order (Japanese: throws, bats) |
+| 評価メッセージ | Comments |
+| 装備中アイテム / 練習道具 | Equipment / Accessories |
+| column headers | TOP SPD, CTRL, STAM; TRJ, CON, PWR, SPD, ARM, FLD, E RES; practices: WGT, BAT, RUN, ARM, FLD, MNTL, STAM, VELO, CTRL, BRK (32 pixels a column) |
+| 監督兼社長 / 監督 / 部長 / チームメイト / スカウト | Kantoku & Shacho / Kantoku / Bucho / Teammates / Scout |
+| オーバースロー / スリークォーター / サイドスロー / アンダースロー | Overhand / 3-Quarters / Sidearm / Submarine (MLB) |
+| トルネード / マサカリ / UFO | Tornado / Masakari / UFO |
+| スタンダード / オープン / バスター / クラウチング / 一本足 | Standard / Open / Fake Bunt / Crouching / Flamingo (MLB) |
+| 振り子 / 神主 / 天秤 / コンニャク / 個性的 / オリジナル / マニュアル | Pendulum / Kannushi / Tenbin / Konnyaku / Unique / Original / Manual |
+| 先発 / 中継 / 抑え / 万能 / 俊足 / 巧打 / 豪打 / 堅守 タイプ | Starter / Reliever / Closer / All-Rounder / Speedster / Contact / Slugger / Defense (MLB) |
+| 肩爆弾 / ひじ爆弾 / 足爆弾 | Shoulder / Elbow / Leg (the bomb is drawn next to the word) |
+| 不眠症 / サボりぐせ / モテモテ / 恋の病 / 虫歯 / 爪割れ / カゼ | Insomnia / Laziness / Heartthrob / Lovesick / Cavity / Cracked Nail / Cold |
+| センス○ / センス× / 買い物上手 / ボンボン / 野球バカ | Gd Sense / Pr Sense / Smart Shopper / Rich Kid / Baseball Nut |
+| 熱血漢 / ふぬけ / ラッキーボーイ / アピール上手 / いいやつ | Hot-Blooded / Listless / Lucky Boy / Showman / Good Guy |
+| 寝坊 / 出無精 / 弱気 / 仕事人間 / 世渡り上手 | Oversleeper / Homebody / Timidity / Workaholic / Smooth Talker |
+
+Signature forms keep their Japanese names (Masakari, Kannushi, Tenbin, Konnyaku), like Koshien and bento. MLB Power Pros
+called 神主 "Loose" and 振り子 "Bat Wavin"; neither says what the stance is.
+
 Still Japanese on these pages: プログラム, テキスト, 特別ルーム (not met in scenario 1; meaning to be
 confirmed in play before they are worded).
