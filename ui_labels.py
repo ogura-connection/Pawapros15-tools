@@ -111,7 +111,13 @@ def style_comcmd(idx, pal):
                     np.where(luma(c) < 0.55, "edge_dark", "edge_light"))
 
 
-STYLES = {"param": style_param, "comcmd": style_comcmd}
+def style_light(idx, pal):
+    """Small labels drawn as thin white letters on their own plate: letters = light pixels, plate = the rest."""
+    c = pal[idx].astype(np.float32)
+    return np.where(luma(c) > 0.75, "fill", "ring")
+
+
+STYLES = {"param": style_param, "comcmd": style_comcmd, "light": style_light}
 # letters count a little more than the rest when a stroke is cut down to a pixel or two
 WEIGHTS = {"fill": 4.0, "letter": 4.0, "outer": 0.6, "edge_dark": 0.6}
 

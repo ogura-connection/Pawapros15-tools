@@ -396,24 +396,21 @@
    "pack": "ScsParamPlate",
    "tex": 0,
    "box": [
-    0,
-    68,
-    53,
-    87
+    3,
+    71,
+    50,
+    83
    ],
-   "style": "param",
+   "style": "light",
    "roles": {
-    "fill": 1
+    "fill": 15,
+    "ring": 1
    },
-   "max_stretch": 2.0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    15
-   ],
-   "margin": 0
+   "max_stretch": 1.0,
+   "drop": [],
+   "halo": [],
+   "margin": 0,
+   "area": "rect"
   },
   {
    "name": "Practice",
