@@ -19,7 +19,7 @@ A message is written as one line: the text of its pieces with a tag for the code
 piece: {n} new line, {p} new page, {66} the insert 0x66, {+} a piece with no code. The English has
 the same tags in the same order; what stands between them is free. Two letters take one cell and
 the letter pairs start again in every piece, so a piece with an odd number of letters wastes half a
-cell. ID is section:offset of the pointer target. REGIONS lists where messages are; a span between
+cell. {*6} in front of a text is its colour and stays, like the other tags. ID is section:offset of the pointer target. REGIONS lists where messages are; a span between
 two pointer targets that does not parse as pieces is left alone.
 """
 import collections
@@ -42,7 +42,8 @@ END = 0xFFFF
 REGIONS = {"pena_sub.rel": [(5, 110900, 130016)], "pn_fa.rel": [(5, 6584, 6976)]}
 CODES = {1: "n", 7: "p"}
 STOP = (0xF, 8)             # ends a message; kept where it is, never written by a translator
-TAG = re.compile(r"\{([0-9a-f]{2}|[np+])\}")
+TAG = re.compile(r"\{([0-9a-f]{2}|[np+]|\*[0-9a-f])\}")
+LINE = 40                   # letters of a line of the news box (the longest Japanese lines), see width()
 
 
 def is_code(u):
@@ -59,8 +60,10 @@ def anchors(rel, mods, sec):
 
 
 def parse(units):
-    """[(codes, text units)] and the trailer (units after the last piece), or None when the span
-    is not a message. A span of one name closed by a stop code ("0 name F 0") is one piece."""
+    """([(codes, text units, colour)], trailer, kind) or None when the span is not a message.
+    kind "end": every piece is closed by 0xFFFF and the trailer holds the stop code. kind "stop":
+    one piece closed by the stop code itself ("0 name F"). colour = the top four bits of the units
+    of a piece (0x6000 and 0x2000 mark the lines about the number of fans)."""
     pieces, i, n = [], 0, len(units)
     while i < n:
         j = i
@@ -74,33 +77,36 @@ def parse(units):
             k = units.index(END, j + 1)
         except ValueError:
             break
-        if any(u > S.MAX_GLYPH for u in units[j + 1:k]):
+        text = units[j + 1:k]
+        colour = {u >> 12 for u in text}
+        if len(colour) > 1 or any(u & 0xFFF > S.MAX_GLYPH for u in text):
             return None
-        pieces.append((tuple(units[i:j]), tuple(units[j + 1:k])))
+        pieces.append((tuple(units[i:j]), tuple(u & 0xFFF for u in text), colour.pop() if text else 0))
         i = k + 1
-    trailer = tuple(units[i:])
-    if not pieces:                          # "0 name F 0 0": a name with the stop code behind it
-        body = list(trailer)
-        while body and body[-1] == 0:
-            body.pop()
-        if len(body) >= 3 and body[0] == 0 and body[-1] in STOP and all(0x100 <= u <= S.MAX_GLYPH for u in body[1:-1]):
-            return [((), tuple(body[1:-1]))], (body[-1],), "stop"
+    trailer = list(units[i:])
+    while trailer and trailer[-1] == 0:
+        trailer.pop()
+    if not pieces:                          # "0 name F": a short text with the stop code behind it
+        j = 0
+        while j < len(trailer) and trailer[j] and is_code(trailer[j]) and trailer[j] not in STOP:
+            j += 1
+        text = trailer[j + 1:-1]
+        if j + 2 < len(trailer) and trailer[j] == 0 and trailer[-1] in STOP and all(u <= S.MAX_GLYPH for u in text):
+            return [(tuple(trailer[:j]), tuple(text), 0)], (trailer[-1],), "stop"
         return None
-    rest = [u for u in trailer if u]
-    if any(not is_code(u) for u in rest):
+    if any(not is_code(u) for u in trailer):
         return None
-    return pieces, tuple(rest), "end"
+    return pieces, tuple(trailer), "end"
 
 
-def tag(codes):
-    return "".join("{%s}" % CODES.get(c, "%02x" % c) for c in codes)
+def tags(k, codes, colour):
+    """The tags in front of the text of piece k."""
+    out = ["{%s}" % CODES.get(c, "%02x" % c) for c in codes] + (["{*%x}" % colour] if colour else [])
+    return out or (["{+}"] if k else [])
 
 
 def form(pieces, text_of):
-    out = []
-    for k, (codes, units) in enumerate(pieces):
-        out.append((tag(codes) or ("{+}" if k else "")) + text_of(units))
-    return "".join(out)
+    return "".join("".join(tags(k, codes, colour)) + text_of(units) for k, (codes, units, colour) in enumerate(pieces))
 
 
 def japanese(units):
@@ -125,7 +131,7 @@ def messages_of(name, mods=None):
         for a, b in zip(marks, marks[1:]):
             units = list(struct.unpack(">%dH" % ((b - a) // 2), d[a:b]))
             got = parse(units)
-            if got is None or not any(t for _, t in got[0]):
+            if got is None or not any(t for _, t, _ in got[0]):
                 continue
             pieces, trailer, kind = got
             out.append({"section": sec, "offset": a, "cells": len(units), "pieces": pieces, "trailer": trailer,
@@ -134,62 +140,65 @@ def messages_of(name, mods=None):
     return out
 
 
-def split(en):
-    """The English of a message -> [(tag string, text)]; the first piece may have no tag."""
-    parts, pos, cur = [], 0, ""
-    text = ""
-    out = []
-    for m in TAG.finditer(en):
-        text = en[pos:m.start()]
-        if text or cur or not out and pos == 0 and m.start() > 0:
-            out.append((cur, text))
-            cur = ""
-        cur += m.group(0)
-        pos = m.end()
-    out.append((cur, en[pos:]))
-    return out
-
-
 def room(msg):
     """Cells the text of all pieces may take together."""
-    fixed = sum(len(c) + 2 for c, _ in msg["pieces"]) + len(msg["trailer"])
+    fixed = sum(len(c) + 2 for c, _, _ in msg["pieces"]) + len(msg["trailer"])
     if msg["kind"] == "stop":
-        fixed -= 1                          # no 0xFFFF: the stop code closes the name
+        fixed -= 1                          # no 0xFFFF: the stop code closes the text
     return msg["cells"] - fixed
+
+
+def width(line):
+    """Letters a line takes on screen: its text, 8 for an inserted name or club, 4 for a number."""
+    n = len(TAG.sub("", line))
+    for m in TAG.finditer(line):
+        if len(m.group(1)) == 2 and m.group(1)[0] != "*":
+            n += 8 if 0x60 <= int(m.group(1), 16) <= 0x6B else 4
+    return n
 
 
 def judge(msg, en):
     """(errors, [text of each piece])"""
     if not en.strip():
         return ["empty English"], []
-    bad = sorted({c for c in TAG.sub("", en) if not 0x20 <= ord(c) <= 0x7E and char_to_glyph(c) is None})
+    plain = TAG.sub("", en)
+    bad = sorted({c for c in plain if not 0x20 <= ord(c) <= 0x7E and char_to_glyph(c) is None})
     if bad or "\\n" in en or "|" in en:
         return ["cannot be drawn: %s" % " ".join(["%r" % c for c in bad] + ["\\n"] * ("\\n" in en) + ["|"] * ("|" in en))], []
-    if "{" in TAG.sub("", en) or "}" in TAG.sub("", en):
-        return ["a { or } that is not a tag of this message"], []
-    want = [tag(c) or ("{+}" if k else "") for k, (c, _) in enumerate(msg["pieces"])]
-    parts = split(en)
-    got = [t for t, _ in parts]
-    if got != want:
-        return ["tags differ: the Japanese has %s, the English %s" % (" ".join(want) or "none", " ".join(got) or "none")], []
-    texts = [t for _, t in parts]
-    need = sum(U.letters(t) for t in texts)
+    if "{" in plain or "}" in plain:
+        return ["a { or } that is not a tag"], []
+    toks = re.findall(r"\{[^{}]*\}|[^{}]+", en)
+    want = [x for k, (c, _, col) in enumerate(msg["pieces"]) for x in tags(k, c, col)]
+    if [x for x in toks if x.startswith("{")] != want:
+        return ["tags differ: the Japanese has %s, the English %s"
+                % (" ".join(want) or "none", " ".join(x for x in toks if x.startswith("{")) or "none")], []
+    texts, i = [], 0
+    for k, (codes, _, colour) in enumerate(msg["pieces"]):
+        i += len(tags(k, codes, colour))
+        if i < len(toks) and not toks[i].startswith("{"):
+            texts.append(toks[i])
+            i += 1
+        else:
+            texts.append("")
+    if i != len(toks):
+        return ["text in front of the first tag: this message starts with %s" % want[0]], []
+    errors = []
+    need = sum(U.letters(x) for x in texts)
     if need > room(msg):
-        return ["%d letters too long: the pieces take %d cells, the message holds %d"
-                % ((need - room(msg)) * 2, need, room(msg))], texts
-    return [], texts
-
-
-def lines_of(text):
-    """Letters of each line of a message form, an insert counted as 0."""
-    return [len(TAG.sub("", l)) for l in re.split(r"\{[np]\}", text)]
+        errors.append("%d letters too long: the pieces take %d cells, the message holds %d"
+                      % ((need - room(msg)) * 2, need, room(msg)))
+    for line in re.split(r"\{[np]\}", en):
+        if width(line) > LINE:
+            errors.append("a line is %d letters too wide (%d of %d, a name or club counts 8, a number 4): %r"
+                          % (width(line) - LINE, width(line), LINE, line))
+    return errors, texts
 
 
 def encode(msg, texts, encode_text):
     """The units of the whole span with English text. encode_text(text) -> glyph units."""
     out = []
-    for (codes, _), text in zip(msg["pieces"], texts):
-        units = encode_text(text) if text else []
+    for (codes, _, colour), text in zip(msg["pieces"], texts):
+        units = [u | colour << 12 for u in encode_text(text)] if text else []
         out += list(codes) + [0] + units + ([END] if msg["kind"] == "end" else [])
     out += list(msg["trailer"])
     if len(out) > msg["cells"]:
@@ -275,7 +284,7 @@ def cmd_export(names):
                 f.write("%d:%d\t%d\t%s\t%s\n" % (m["section"], m["offset"], room(m), m["ja"],
                                                  done.get((m["section"], m["offset"]), ("", ""))[1]))
         print("%-14s %4d messages, %d pieces, %d cells of text" % (name, len(found), sum(len(m["pieces"]) for m in found),
-                                                               sum(len(t) for m in found for _, t in m["pieces"])))
+                                                               sum(len(t) for m in found for _, t, _ in m["pieces"])))
 
 
 def cmd_merge():
