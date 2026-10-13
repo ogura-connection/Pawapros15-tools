@@ -273,6 +273,22 @@ Practice menu (scs_rens.arc), tag font: 筋力 Weights, 打撃 Batting, 走塁 R
 捕球 Catching, ペッパー Pepper, 肩力 Arm, ミーティング Meeting, 特別変化球 Sp. Break, 特別打撃 Sp. Bat,
 巧打力 Contact, 長打力 Power; 故障率 Injury, 評価 Rating.
 
+Training gear, the name shown next to "Lv." in the practice menu (scs_rens.arc, bank y5_rkz_0), set in
+Arial Narrow Bold on the page's own grey ramp. The same names go into the script constants of
+scs_main.rel and the level table of scs_rens.rel, so a sentence and the menu agree.
+
+| Japanese | English | | Japanese | English |
+|---|---|---|---|---|
+| ダンベル / バーベル / ベンチプレス | Dumbbell / Barbell / Bench Press | | 竹バット / おもりバット / バッティングマシン | Bamboo Bat / Weighted Bat / Batting Machine |
+| タイヤ / ３連タイヤ / パラシュート | Tire / Triple Tire / Parachute | | チューブ / 極太チューブ / ラットマシン | Tube / Thick Tube / Lat Machine |
+| 鉄ゲタ / ミニローラー / ローラー | Iron Geta / Mini Roller / Roller | | タオル / ギブス / マッスラー | Towel / Brace / Muscler |
+| 的当て・２×２ (３×３, ４×４) | Target 2x2 (3x3, 4x4) | | むにむにボール / 改 / 究極の変化球ボール | Squishy Ball / Squishy Ball+ / Ultimate Breaking Ball |
+| 守備用ネット / 豪華守備用ネット / ノックマシン | Fielding Net / Deluxe Fielding Net / Fungo Machine | | 癒し系音楽 / アロマテラピー / リラックスカプセル | Calm Music / Aromatherapy / Relax Capsule |
+
+A name has to fit the plate the game sizes from the Japanese name: about 12 pixels per Japanese
+character plus 19. That is why 癒し系音楽 is "Calm Music" and not "Soothing Music". ミゾット, the maker's
+name in front of the level 3 gear, stays "Mizotto".
+
 Pitch names on the HUD use MLB Power Pros 2008's English names, shortened where the Japanese is short:
 
 | Japanese | English | | Japanese | English |
