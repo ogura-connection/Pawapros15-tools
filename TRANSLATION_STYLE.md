@@ -131,6 +131,30 @@ Line counts are text runs in scenario 1.
   become showy English in capitals ("MIX & MATCH", "HUFF-PUFF").
 - Example: "Heh heh... Quite the celebration, no?"
 
+### Voices set while translating the Data screen (scenarios 2 and 3 are not translated yet)
+
+Chosen on 2026-10-12 from each character's rating comments and their scenes; treat as locked unless the
+scenario translation shows a reason to change one. Names are romanised from the readings the scenes give;
+which comment group belongs to which character was worked out from speech patterns, not confirmed in game.
+
+| Character | Japanese markers | English |
+|---|---|---|
+| Takeda Keiji | オレ + ねえ / ぜ | rough, loud, loyal jock; "pal", sparingly |
+| Tojo Kojiro | 俺, 以上だ | cold, grave, clipped, NO contractions; closes with a flat verdict: "That is all." |
+| Koshihaba Tsukuo | drawled endings, doubled words | sneering senpai; repeats the jeering word ("No good, no good!") |
+| Morita | オレ + だ / ぞ, flames | booming big brother; calls everyone "Brother", talks in fire |
+| Matsuo | dots and a glare | one or two words: "...Impressive." |
+| Zento Kaoru | オレ様 | swaggering tough guy who measures everyone against himself; no odd pronoun |
+| Tanakayama Taro | だぞ on every sentence | plain, earnest everyman; "for sure", sparingly |
+| Takumi Hayato | speed talk | cocky and competitive; speed and keeping up |
+| Mido Kintaro | Kansai-ben | by the Kansai rule: blunt, quick, warm, teasing, no marked words |
+| Namigashira Shibuki | barked っ, fish words | hearty man of the sea, short sentences; fish images |
+| Hamu Reito | ボク + ねえ / かな | silky charmer who judges by shine; trailing "I'd say" |
+| 男前田 / Otokomaeda Yohei | である | stiff, no contractions |
+| Otori Nagamichi | lecherous old man | "Hyo hyo hyo" |
+| Otori Kanna | casual | contractions |
+| 根霧 蓮 / Negiri Ren (shop clerk) | わよ / からね, うふ | warm, confident older-sister tone; "Hee hee." only where the Japanese has うふ |
+
 ### Minor voices
 - **親父 (the player's father):** gruff shopkeeper, やがれ. Short and rough, soft underneath.
 - **母さん (mother):** warm and plain. "Take care of yourself."
@@ -218,6 +242,16 @@ Line counts are text runs in scenario 1.
 | （ブルンッ！） / （ビュッ！） | (Whoosh!) / (Zip!) | swing / pitch |
 | （カリカリ） / （ヒソヒソ） | (Scribble scribble) / (Whisper whisper) | |
 | せっせ、せっせ | Busy, busy... | |
+| パワプロ１５ / 決定版 | Pawapuro 15 / Pawapuro 15 Ketteiban | in system dialogs |
+| 対戦 / ペナント / マイライフ / アレンジ / ホームラン競争 | Exhibition / Pennant / My Life / Arrange / Home Run Derby | game modes |
+| 応援曲 / ごほうび選手 / ＯＢ選手 | cheer song / bonus player / OB player | |
+| よろしいですか？ | Is this OK? | every system dialog |
+| Ｗｉｉ本体保存メモリ | Wii System Memory | Nintendo's terms for all system words (SD Card, Wii Operations Manual, Data Management screen, blocks) |
+| ○ / × / ◎ on an ability | Gd / Pr / Grt | MLB plate style: Gd Bunt, Pr Morale, Grt Catcher |
+| 筋力 / 敏捷 / 技術 / 変化球 / 精神 ポイント | Strength / Quickness / Technique / Breaking Ball / Mentality Points | MLB names |
+| 走力 / 肩力 in short slots | SPD / ARM | RUN SPD and ARM STR on the stat plates |
+| 装備 | equip, equipment | never "gear": that is the training gear |
+| 達人 (item names) | Pro | Pro Bat, Pro Glove |
 
 ## Limits set by the game
 
