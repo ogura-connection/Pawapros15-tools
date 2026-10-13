@@ -1,0 +1,19 @@
+{"arc": "scs_data.arc",
+ "repack": [
+  {"bank": "z3_dt_0", "palette": 72, "style": "data", "font": "ttf:rounded:10:0:1:0.3", "under": 3,
+   "pages": [2], "areas": [[2, 0, 0, 128, 128]],
+   "labels": [
+    {"sprite": "07", "text": "Pitcher", "font": "ttf:rounded:12:0:1:0.3"},
+    {"sprite": "08", "text": "Fielder", "font": "ttf:rounded:12:0:1:0.3"},
+    {"sprite": "09", "text": "Other", "font": "ttf:rounded:12:0:1:0.3"},
+    {"sprite": "0a", "text": "Status", "font": "ttf:rounded:12:0:1:0.3"},
+    {"sprite": "0d", "text": "B/T", "style": "datafield", "under": 4, "align": "left"},
+    {"sprite": "0e", "text": "Form", "style": "datafield", "under": 4, "align": "left"},
+    {"sprite": "0f", "text": "Growth", "style": "datafield", "under": 4, "align": "left"},
+    {"sprite": "16", "text": "R/R", "align": "left"},
+    {"sprite": "17", "text": "L/R", "align": "left"},
+    {"sprite": "18", "text": "S/R", "align": "left"},
+    {"sprite": "19", "text": "R/L", "align": "left"},
+    {"sprite": "1a", "text": "L/L", "align": "left"},
+    {"sprite": "1b", "text": "S/L", "align": "left"}]}
+ ]}
