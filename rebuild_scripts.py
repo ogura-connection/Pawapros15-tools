@@ -35,12 +35,19 @@ gets a glyph slot of a kanji the remaining Japanese text does not use, and the b
 pairs into fonttex2.rel. A dialogue line is 17 cells, so 34 letters. Japanese characters in an
 "en" text keep their own cell.
 
+System dialogs (the blue save and memory notices) are in main.dol: one block of strings back to
+back, pointed at by relocations of main_prg.rel. The build lays the block out again inside its
+original space (a string no relocation points at keeps its place), writes the new addresses into
+the relocations and re-reads both files to check them. The original main.dol is kept in
+_work/orig_sys/ and the built one is installed to DATA/sys.
+
 Original .rel files and moduleID2addr.o are kept in _work/orig/ (copied from DATA/files on first use, so the first
 run must be on unpatched files). Built files are checked in _work/build/ before they are
 installed to DATA/files. Both folders are game data: git-ignored, never commit them.
 """
 
 import argparse
+import bisect
 import collections
 import filecmp
 import json
@@ -52,7 +59,7 @@ import sys
 import pair_font
 import scan_story as S
 import ui_strings
-from pawapuro15_text_tools import char_to_glyph
+from pawapuro15_text_tools import char_to_glyph, glyph_to_char
 
 ORIG_DIR = os.path.join(S.WORK_DIR, "orig")
 BUILD_DIR = os.path.join(S.WORK_DIR, "build")
@@ -67,6 +74,9 @@ PLAN_FILE = "moduleID2addr.o"
 MAIN, SCENARIOS = "scs_main.rel", ("scs_sce1.rel", "scs_sce2.rel", "scs_sce3.rel")
 SCENARIO_SLOT = (0x80B5F880, 0x80BBD200)
 FREE_AREA = (0x812CB800, 0x814E0000)
+DOL = ui_strings.DOL
+DOL_BUILT = os.path.join(BUILD_DIR, DOL)
+DOL_END = 0xFFFF       # closes a dialog string of main.dol, and fills the space the block has left
 
 # ── English -> glyph units ────────────────────────────────────────────────
 
@@ -226,6 +236,199 @@ def update_plan(plan, images):
     return bytes(d)
 
 
+# ── System dialogs of main.dol ────────────────────────────────────────────
+
+def encode_dol(en, slots):
+    """English of one dialog line -> units: 0x1000 | glyph number, each {} is the control unit
+    0x1FFD. Letter pairs start again behind a {}."""
+    units = []
+    for k, part in enumerate(en.split("{}")):
+        if k:
+            units.append(ui_strings.DOL_CTRL)
+        cells = encode_text(part, slots)
+        if S.TEXT_NEWLINE in cells:
+            raise ValueError("a dialog string of %s is one line: %r" % (DOL, en))
+        units += [ui_strings.DOL_GLYPH | u for u in cells]
+    return units
+
+
+def decode_dol(units, slots):
+    """Units of a dialog string -> text, letter pairs spelled out (for checks and listings)."""
+    back = {g: pair for pair, g in slots.items()}
+    return "".join("{}" if u == ui_strings.DOL_CTRL else
+                   back.get(u & 0xFFF) or ("  " if u & 0xFFF == 0 else glyph_to_char(u & 0xFFF) or "?")
+                   for u in units)
+
+
+def parse_dol(data):
+    """[(file offset, units)] of the dialog strings in a main.dol image: every run of units that
+    0xFFFF closes. Reads nothing but the block, so it also serves to check a built file."""
+    a, b = ui_strings.DOL_BLOCK
+    hw = struct.unpack_from(">%dH" % ((b - a) // 2), data, a)
+    out, start = [], None
+    for i, u in enumerate(hw):
+        if u != DOL_END:
+            start = i if start is None else start
+        elif start is not None:
+            out.append((a + start * 2, list(hw[start:i])))
+            start = None
+    if start is not None:
+        raise ValueError("the dialog block of %s does not end with 0xFFFF" % DOL)
+    return out
+
+
+def layout_dol(strs, units):
+    """Re-emit the dialog block. strs = ui_strings.dol_strings(), units = the units of each string.
+    The strings follow each other in their original order. A fixed string keeps its file offset;
+    the space left in front of it, and at the end of the block, is filled with 0xFFFF.
+    Returns (block bytes, [file offset of each string])."""
+    a, b = ui_strings.DOL_BLOCK
+    out, starts, run = [], [], []
+
+    def fill(limit, what):          # the strings since the last fixed one must end at `limit`
+        over = (a + len(out) * 2 - limit) // 2
+        if over > 0:
+            new = ["0:%d" % s["offset"] for s, u in run if u != s["units"]]
+            raise ValueError("%s: the dialog strings 0:%d..0:%d (%d strings) do not fit in front of %s: %d units "
+                             "too many. Shorten the translated ones among them by %d cells (%d letters) in all: %s"
+                             % (DOL, run[0][0]["offset"], run[-1][0]["offset"], len(run), what, over, over,
+                                over * 2, " ".join(new) or "none is translated"))
+        out.extend([DOL_END] * -over)
+
+    for s, u in zip(strs, units):
+        if s["fixed"]:
+            fill(s["offset"], "the fixed string 0:%d" % s["offset"])
+            run = []
+        run.append((s, u))
+        starts.append(a + len(out) * 2)
+        out += list(u) + [DOL_END]
+    fill(b, "the end of the block")
+    return struct.pack(">%dH" % len(out), *out), starts
+
+
+class DolRemap:
+    """Old address -> new address for the dialog strings of main.dol (relocation addends)."""
+
+    def __init__(self, strs, starts):
+        self.old = [s["offset"] for s in strs]
+        self.new = dict(zip(self.old, starts))
+
+    def __call__(self, addr):
+        off = addr - ui_strings.DOL_ADDRESS
+        if not ui_strings.DOL_BLOCK[0] <= off < ui_strings.DOL_BLOCK[1]:
+            return addr
+        start = self.old[bisect.bisect_right(self.old, off) - 1]
+        if off != start and self.new[start] != start:
+            raise ValueError("reference into the middle of the dialog string 0:%d of %s, which moved" % (start, DOL))
+        return addr - start + self.new[start]
+
+
+def load_dol(entries):
+    """[(string of ui_strings.dol_strings(), English or None)] for all dialog strings of main.dol.
+    entries = ui_strings.load_dol_for_build(). Empty when there is no main.dol to work on."""
+    if not (os.path.exists(ui_strings.DOL_ORIG) or os.path.exists(ui_strings.DOL_SOURCE)):
+        if any(e["en"] is not None for e in entries or []):
+            sys.exit("%s has translations but %s is missing" % (DOL, ui_strings.DOL_SOURCE))
+        return []
+    strs = ui_strings.dol_strings()
+    if not entries:
+        return [(s, None) for s in strs]
+    if [(e["offset"], e["cells"], e["fixed"]) for e in entries] != [(s["offset"], s["cells"], s["fixed"]) for s in strs]:
+        sys.exit("%s does not match %s: run ui_strings.py merge" % (ui_strings.OUT_JSON, DOL))
+    return [(s, e["en"]) for s, e in zip(strs, entries)]
+
+
+def build_dol(dol, slots, orig, remaps):
+    """The main.dol image with the dialog block laid out again. dol = load_dol(). When strings
+    moved, their remap is added to `remaps` so that the relocations pointing at them follow."""
+    data, (a, b) = ui_strings.dol_data(), ui_strings.DOL_BLOCK
+    strs, units = [s for s, _ in dol], []
+    for s, en in dol:
+        u = s["units"] if en is None else encode_dol(en, slots)
+        if not u or u.count(ui_strings.DOL_CTRL) != s["ctrl"]:
+            sys.exit("%s 0:%d: %r must not be empty and needs %d {} like the Japanese" % (DOL, s["offset"], en, s["ctrl"]))
+        units.append(u)
+    try:
+        block, starts = layout_dol(strs, units)
+    except ValueError as e:
+        sys.exit(str(e))
+    assert len(block) == b - a
+    remap = DolRemap(strs, starts)
+    moved = sum(s["offset"] != n for s, n in zip(strs, starts))
+    targets = set()                 # target "sections" the relocations into the block are filed under
+    for m in orig.values():
+        for sec, pos, typ, tm, ts, addend in m.relocs():
+            if tm == 0 and a <= addend - ui_strings.DOL_ADDRESS < b:
+                targets.add(ts)
+                try:
+                    remap(addend)
+                except ValueError as e:
+                    sys.exit("%s sec%d+0x%X: %s" % (m.name, sec, pos, e))
+    if moved:
+        for ts in targets:
+            remaps[(0, ts)] = remap
+    print("%-13s %5d of %d dialog strings in English, %d moved, %d units of the block left"
+          % (DOL, sum(en is not None for _, en in dol), len(dol), moved,
+             (b - a) // 2 - sum(len(u) + 1 for u in units)))
+    return data[:a] + block + data[b:]
+
+
+def verify_dol(orig, new, dol, slots):
+    """Re-read main.dol as built (or the original when nothing was built) and check it against the
+    original file and the relocations of all modules, without the layout: orig, new = the modules
+    before and after, as verify() read them from disk."""
+    a, b = ui_strings.DOL_BLOCK
+    with open(ui_strings.DOL_ORIG, "rb") as f:
+        old_d = f.read()
+    with open(DOL_BUILT if os.path.exists(DOL_BUILT) else ui_strings.DOL_ORIG, "rb") as f:
+        new_d = f.read()
+    assert len(old_d) == len(new_d) and old_d[:a] == new_d[:a] and old_d[b:] == new_d[b:], \
+        DOL + ": bytes outside the dialog block changed"
+    olds, news = parse_dol(old_d), parse_dol(new_d)
+    assert len(olds) == len(news) == ui_strings.DOL_STRINGS == len(dol), \
+        "%s: the block holds %d strings, not %d" % (DOL, len(news), len(olds))
+    for (off, old_u), (pos, new_u), (s, en) in zip(olds, news, dol):
+        assert off == s["offset"], (off, s["offset"])
+        assert new_u == (old_u if en is None else encode_dol(en, slots)), "%s 0:%d: wrong units at 0x%X" % (DOL, off, pos)
+        if en is not None:          # and they read as the English when decoded through the font slots
+            assert decode_dol(new_u, slots).replace(" ", "") == en.replace(" ", ""), \
+                "%s 0:%d decodes to %r, not %r (a character of it lost its glyph to a letter pair?)" \
+                % (DOL, off, decode_dol(new_u, slots), en)
+    old_at, new_at = [off for off, _ in olds], [pos for pos, _ in news]
+    at_start, inside, count = set(), set(), 0
+    for mid, m in orig.items():
+        for (s, pos, typ, tm, ts, ad), (_, _, typ2, tm2, ts2, ad2) in zip(m.relocs(), new[mid].relocs()):
+            if tm != 0:
+                continue            # relocations against modules: verify()
+            where = "%s: relocation sec%d+0x%X" % (m.name, s, pos)
+            assert (typ, tm, ts) == (typ2, tm2, ts2), where
+            if not a <= ad - ui_strings.DOL_ADDRESS < b:
+                assert ad2 == ad, where + " changed, it does not point into the dialog block"
+                continue
+            i = bisect.bisect_right(old_at, ad - ui_strings.DOL_ADDRESS) - 1
+            dist = ad - ui_strings.DOL_ADDRESS - old_at[i]
+            assert ad2 - ui_strings.DOL_ADDRESS == new_at[i] + dist, where + " does not point at dialog string %d" % i
+            (inside if dist else at_start).add(i)
+            count += 1
+        # outside its sections (header, relocation tables) a module of unchanged size differs
+        # from the original in relocation addends only
+        if len(m.data) == len(new[mid].data) and m.data != new[mid].data:
+            image = bytearray(m.data)
+            for _, _, entries, _ in parse_imports(new[mid].data, m.imp_off, m.imp_size):
+                for e in entries:
+                    struct.pack_into(">I", image, e[5] + 4, e[4])
+            other = bytearray(new[mid].data)
+            for t in m.sections:
+                if t["offset"] and not t["bss"]:
+                    image[t["offset"]:t["offset"] + t["size"]] = other[t["offset"]:t["offset"] + t["size"]]
+            assert image == other, m.name + ": changes outside sections and relocation addends"
+    fixed = [i for i in range(len(olds)) if i not in at_start or i in inside]
+    assert all(new_at[i] == old_at[i] for i in fixed), DOL + ": a string without a relocation moved"
+    assert fixed == [i for i, (s, _) in enumerate(dol) if s["fixed"]], DOL + ": fixed strings differ from ui_strings"
+    print("Verified: %s is the original outside the dialog block, %d strings, %d relocations point at "
+          "their strings, %d fixed strings in place." % (DOL, len(news), count, len(fixed)))
+
+
 # ── Build ─────────────────────────────────────────────────────────────────
 
 def ensure_orig():
@@ -341,9 +544,20 @@ def load_translation(path, scripts):
     return texts
 
 
-def assign_pairs(scripts, texts, orig, strings=None):
-    """Choose a glyph slot for every letter pair in the translation. Returns {pair: glyph index}."""
+def assign_pairs(scripts, texts, orig, strings=None, dol=None):
+    """Choose a glyph slot for every letter pair in the translation. Returns {pair: glyph index}.
+    dol = load_dol(): the dialog strings of main.dol with their English."""
     pairs, usage = set(), collections.Counter()
+    for s, en in dol or []:
+        if en is None:              # stays Japanese: its glyphs are in use (units are 0x1000 | glyph)
+            usage.update(u & 0xFFF for u in s["units"] if u != ui_strings.DOL_CTRL and u & 0xFFF)
+            continue
+        for part in en.split("{}"):
+            for kind, value in pair_font.text_segments(part):
+                if kind == "pair" and value != "  ":
+                    pairs.add(value)
+                elif kind == "char":
+                    usage[char_to_glyph(value)] += 1
     for name, slots_ in (strings or {}).items():
         for _, en in slots_.values():
             for kind, value in pair_font.text_segments(en):
@@ -410,15 +624,17 @@ def encode_string(en, cells, slots):
     return struct.pack(">%dH" % cells, *(units + [0] * (cells - len(units))))
 
 
-def build(texts, pad=None, strings=None):
-    """Build every changed module into _work/build/. Returns the list of file names."""
+def build(texts, pad=None, strings=None, dol=None):
+    """Build every changed module, and main.dol, into _work/build/. Returns the list of file names.
+    dol = ui_strings.load_dol_for_build()."""
     orig = load_dir(ORIG_DIR)
     scripts = load_scripts(orig)
     strings = strings or {}
+    dol = load_dol(dol)
     for sc in scripts:
         if sc.errors or len(sc.hw) * 2 != sc.rel.sections[sc.sec]["size"]:
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
-    slots = assign_pairs(scripts, texts, orig, strings)
+    slots = assign_pairs(scripts, texts, orig, strings, dol)
     patched = {}                    # module id -> {(section, old offset): new bytes}
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
     remaps, new_secs = {}, {}
@@ -432,9 +648,14 @@ def build(texts, pad=None, strings=None):
         new_secs[sc.rel.mod_id] = (sc.sec, data)
         print("%-13s %5d runs replaced, script section 0x%X -> 0x%X bytes (data behind it moves %+d)"
               % (sc.rel.name, len(r), sc.rel.sections[sc.sec]["size"], len(data), remap.growth))
+    dol_image = build_dol(dol, slots, orig, remaps) if dol else None
     shutil.rmtree(BUILD_DIR, ignore_errors=True)
     os.makedirs(BUILD_DIR)
     changed, images = [], {sc.rel.name: (sc.rel.data, sc.rel.data) for sc in scripts}
+    if dol and dol_image != ui_strings.dol_data():
+        with open(DOL_BUILT, "wb") as f:
+            f.write(dol_image)
+        changed.append(DOL)
     for m in orig.values():
         if m.name == "fonttex2.rel" and slots:
             image, note = build_font_file(orig, slots), "%d glyphs replaced in both fonts" % len(slots)
@@ -471,12 +692,15 @@ def build(texts, pad=None, strings=None):
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    verify(orig, scripts, repl, remaps, patched)
+    new = verify(orig, scripts, repl, remaps, patched)
+    if dol:
+        verify_dol(orig, new, dol, slots)
     return changed
 
 
 def verify(orig, old_scripts, repl, remaps, patched=None):
-    """Re-read the built files and compare them with the originals, structure by structure."""
+    """Re-read the built files and compare them with the originals, structure by structure.
+    Returns the modules as re-read (for verify_dol)."""
     new = load_dir(ORIG_DIR, BUILD_DIR)
 
     def expected(m, idx):           # the original section with the UI strings written in
@@ -518,6 +742,7 @@ def verify(orig, old_scripts, repl, remaps, patched=None):
             elif m.name != "fonttex2.rel":          # the font is checked in build_font_file()
                 assert expected(m, t["index"]) == new[mid].sec_data(t["index"]), m.name + ": section data"
     print("Verified: scripts re-parse, labels, text and all relocations match the originals.")
+    return new
 
 
 def install(changed):
@@ -529,7 +754,13 @@ def install(changed):
         if not filecmp.cmp(src, dst, shallow=False):
             shutil.copy2(src, dst)
             n += 1
-    print("Installed: %d file(s) written to DATA/files (%d differ from the originals)." % (n, len(changed)))
+    print("Installed: %d file(s) written to DATA/files (%d differ from the originals)."
+          % (n, len([fn for fn in changed if fn != DOL])))
+    if os.path.exists(ui_strings.DOL_ORIG):         # main.dol: DATA/sys = the built one or the original
+        src = DOL_BUILT if DOL in changed else ui_strings.DOL_ORIG
+        if not os.path.exists(ui_strings.DOL_SOURCE) or not filecmp.cmp(src, ui_strings.DOL_SOURCE, shallow=False):
+            shutil.copy2(src, ui_strings.DOL_SOURCE)
+            print("Installed: %s written to DATA/sys (%s)." % (DOL, "translated dialogs" if DOL in changed else "the original"))
 
 
 def cmd_check(args):
@@ -566,6 +797,17 @@ def cmd_check(args):
             for g in glyphs)
         bad += not ok
         print("%s font: %d glyphs repacked and recompressed: %s" % (name, len(glyphs), "identical" if ok else "DIFFERENT"))
+    dol = load_dol(None)
+    if dol:
+        strs = [s for s, _ in dol]
+        block, starts = layout_dol(strs, [s["units"] for s in strs])
+        data, (a, b) = ui_strings.dol_data(), ui_strings.DOL_BLOCK
+        remaps = {}
+        ok = block == data[a:b] and starts == [s["offset"] for s in strs] and \
+            parse_dol(data) == [(s["offset"], s["units"]) for s in strs] and \
+            build_dol(dol, {}, orig, remaps) == data and not remaps
+        bad += not ok
+        print("%-13s dialog block re-emitted with no translations: %s" % (DOL, "identical" if ok else "DIFFERENT"))
     sys.exit("FAILED" if bad else None)
 
 
@@ -576,7 +818,7 @@ def cmd_build(args):
     for item in args.pad or []:
         name, size = item.split("=")
         pad[name] = int(size, 0)
-    install(build(texts, pad, ui_strings.load_for_build()))
+    install(build(texts, pad, ui_strings.load_for_build(), ui_strings.load_dol_for_build()))
 
 
 def cmd_restore(args):
