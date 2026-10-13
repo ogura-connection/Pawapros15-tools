@@ -15,10 +15,10 @@ A spec is a JSON file:
                "roles": {...}, "max_stretch": 1.6, "halo": [4, 5], "name": "Practice"}, ...]}
 `rect` is a sprite rectangle of the page (see ui_textures.py parts); it is cleared, and the label is
 centred in the part of it the Japanese label covered (its bounding box; "area": "rect" uses the whole
-rectangle), minus `margin` pixels. Source and target are both reduced to a "tone" per pixel: the source colours are sorted
-into roles (fill, ring, outer edge for the stat labels; plate, letters, edge for the command
-labels) and each role is given a range of palette indices of the target page. The tone is resampled
-with an area filter, so strokes thin out instead of dropping pixels, and then rounded to a palette index.
+rectangle), minus `margin` pixels. The source colours are sorted into roles (outer / ring / fill for the
+stat labels; edge_dark / edge_light / plate / letter for the command labels) and each role is given one
+palette index of the target page ("roles"). Roles are resampled with an area filter and every pixel
+takes the strongest role, so the result has hard edges and no in-between colours.
 Nothing is drawn that is not in the MLB sheets: a label with no MLB counterpart is not in a spec.
 """
 import json
@@ -86,7 +86,7 @@ def find_boxes(idx, min_index=1, gap=4, halo=3):
     return boxes
 
 
-# ── Source styles: (indices, palette) -> role class and 0..1 position inside the role ────────────
+# ── Source styles: (indices, palette) -> role class of every pixel ─────────────────────────────
 
 def luma(c):
     return (0.299 * c[..., 0] + 0.587 * c[..., 1] + 0.114 * c[..., 2]) / 255.0
@@ -97,21 +97,20 @@ def style_param(idx, pal):
     c = pal[idx].astype(np.float32)
     navy = (c[..., 2] < 150) & (c[..., 1] < 20)
     ring = (c[..., 0] < 40) & (c[..., 2] > 200) & (c[..., 1] < 110) & ~navy
-    cls = np.where(navy, "outer", np.where(ring, "ring", "fill"))
-    pos = np.clip((luma(c) - 0.62) / 0.38, 0, 1)
-    return cls, pos
+    return np.where(navy, "outer", np.where(ring, "ring", "fill"))
 
 
 def style_comcmd(idx, pal):
     """Command words of ScsComMain: grey rim and shadow (indices 1-8), teal plate with mint letters (9-15)."""
     c = pal[idx].astype(np.float32)
     teal = idx >= 9
-    cls = np.where(teal, "inner", "edge")
-    pos = np.where(teal, np.clip((idx - 9) / 6.0, 0, 1), luma(c))
-    return cls, pos
+    return np.where(teal, np.where(idx >= 12, "letter", "plate"),
+                    np.where(luma(c) < 0.55, "edge_dark", "edge_light"))
 
 
 STYLES = {"param": style_param, "comcmd": style_comcmd}
+# letters count a little more than the rest when a stroke is cut down to a pixel or two
+WEIGHTS = {"fill": 2.2, "letter": 2.2, "outer": 0.7, "edge_dark": 0.7}
 
 
 def drop_slivers(mask):
@@ -141,59 +140,63 @@ def drop_slivers(mask):
     return keep
 
 
-def source_tone(spec, project=None):
-    """(alpha 0/1, tone, cls) of the cropped source label; tone is in target palette index units."""
+def source_classes(spec, project=None):
+    """(mask, cls) of the cropped source label: mask = pixels of the label, cls = role of each."""
     idx, pal, _ = mlb_texture(spec["pack"], spec["tex"], project)
     l, t, r, b = spec["box"]
     idx = idx[t:b, l:r]
-    cls, pos = STYLES[spec["style"]](idx, pal)
-    tone = np.zeros(idx.shape, np.float32)
-    for role, (lo, hi) in spec["roles"].items():
-        m = cls == role
-        tone[m] = lo + (hi - lo) * pos[m]
-    alpha = drop_slivers(idx != 0).astype(np.float32)
-    ys, xs = np.nonzero(alpha)
+    cls = STYLES[spec["style"]](idx, pal)
+    mask = drop_slivers(idx != 0)
+    ys, xs = np.nonzero(mask)
     sl = (slice(ys.min(), ys.max() + 1), slice(xs.min(), xs.max() + 1))
-    return alpha[sl], tone[sl], cls[sl]
+    return mask[sl], cls[sl]
 
 
-def fit(alpha, tone, w, h, max_stretch=1.6, max_scale=1.0):
-    """Resample a label to fit w x h: uniform scale (never above max_scale), then stretched vertically
-    up to max_stretch to use the height of the rectangle. Returns (alpha, tone) of the new size."""
-    sh, sw = alpha.shape
+def fit(mask, cls, roles, w, h, max_stretch=1.6, max_scale=1.0):
+    """Resample a label to fit w x h and return its palette indices (0 = clear). Scaled uniformly (never
+    above max_scale), then stretched vertically up to max_stretch to use the height available. Each role
+    is resampled as a coverage map (area filter); a pixel is drawn when the label covers at least half
+    of it, in the role with the most (weighted) coverage, so the result has hard edges and only the
+    palette entries named in `roles`: no blur."""
+    sh, sw = mask.shape
     sx = min(w / sw, max_scale)
     sy = min(sx * max_stretch, h / sh, max_scale * max_stretch)
     sy = max(sy, min(sx, h / sh))
     nw, nh = max(1, round(sw * sx)), max(1, round(sh * sy))
-    if (nw, nh) == (sw, sh):
-        return alpha, tone
-    a = Image.fromarray(alpha, "F")
-    t = Image.fromarray(tone * alpha, "F")
-    a2 = np.asarray(a.resize((nw, nh), Image.BOX), dtype=np.float32)
-    t2 = np.asarray(t.resize((nw, nh), Image.BOX), dtype=np.float32)
-    return a2, np.where(a2 > 1e-4, t2 / np.maximum(a2, 1e-4), 0)
+    names = list(roles)
+    cover = []
+    for name in names:
+        m = ((cls == name) & mask).astype(np.float32)
+        cover.append(m if (nw, nh) == (sw, sh) else
+                     np.asarray(Image.fromarray(m, "F").resize((nw, nh), Image.BOX), dtype=np.float32))
+    cover = np.stack(cover)
+    total = cover.sum(0)
+    weights = np.array([WEIGHTS.get(n, 1.0) for n in names], np.float32)[:, None, None]
+    pick = (cover * weights).argmax(0)
+    index = np.array([roles[n] for n in names], np.uint8)[pick]
+    return np.where(total >= 0.5, index, 0).astype(np.uint8)
 
 
-def place(page, rect, area, alpha, tone, threshold=0.5, halo=()):
-    """Clear rect (x0, y0, x1, y1) of the index page and draw the label centred in `area` (the same
-    kind of box, inside rect). `halo` = indices for successive one-pixel rings drawn around the label
-    (inside the rectangle)."""
+def place(page, rect, area, label, halo=()):
+    """Clear rect (x0, y0, x1, y1) of the index page and draw the label (an index array, 0 = clear)
+    centred in `area` (a box inside rect). `halo` = indices for successive one-pixel rings drawn
+    around the label (inside the rectangle)."""
     x0, y0, x1, y1 = rect
     page[y0:y1, x0:x1] = 0
-    h, w = alpha.shape
+    h, w = label.shape
     ax0, ay0, ax1, ay1 = area
     ox, oy = ax0 + (ax1 - ax0 - w) // 2, ay0 + (ay1 - ay0 - h) // 2
-    ys, xs = np.nonzero(alpha >= threshold)
-    page[oy + ys, ox + xs] = np.clip(np.rint(tone[ys, xs]), 1, 15).astype(np.uint8)
-    area = page[y0:y1, x0:x1]
+    ys, xs = np.nonzero(label)
+    page[oy + ys, ox + xs] = label[ys, xs]
+    region = page[y0:y1, x0:x1]
     for value in halo:
-        g = area != 0
+        g = region != 0
         ring = g.copy()
         ring[1:] |= g[:-1]
         ring[:-1] |= g[1:]
         ring[:, 1:] |= g[:, :-1]
         ring[:, :-1] |= g[:, 1:]
-        area[ring & ~g] = value
+        region[ring & ~g] = value
 
 
 def render(spec, d, banks, project=None):
@@ -209,15 +212,15 @@ def render(spec, d, banks, project=None):
         if "pack" not in lab:                       # a rectangle that is only cleared
             pages[key][y0:y1, x0:x1] = 0
             continue
-        alpha, tone, _ = source_tone(lab, project)
+        mask, cls = source_classes(lab, project)
         # the label may only use the area the Japanese one covered (its neighbours overlap the rest)
         ys, xs = np.nonzero(pages[key][y0:y1, x0:x1])
         area = (x0 + xs.min(), y0 + ys.min(), x0 + xs.max() + 1, y0 + ys.max() + 1) \
             if len(xs) and lab.get("area", "label") == "label" else lab["rect"]
         m = lab.get("margin", 0)
-        a, t = fit(alpha, tone, area[2] - area[0] - 2 * m, area[3] - area[1] - 2 * m,
-                   lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))
-        place(pages[key], lab["rect"], area, a, t, halo=lab.get("halo", ()))
+        label = fit(mask, cls, lab["roles"], area[2] - area[0] - 2 * m, area[3] - area[1] - 2 * m,
+                    lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))
+        place(pages[key], lab["rect"], area, label, halo=lab.get("halo", ()))
     return pages
 
 
