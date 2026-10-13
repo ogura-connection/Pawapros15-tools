@@ -320,6 +320,59 @@ session with one Sonnet agent per batch of about 430 runs, six at a time (95 bat
   cancel). Name entry: LEFT, DOWN x6, A for OK. Voice: RIGHT x3, A. Then six profile screens (position is 02/06),
   difficulty, the save prompt, the opening. `to_command_menu.py new` assumes there is no save and takes Continue.
 
+## Menu strings of the other modes (2026-10-13, fifth session)
+
+The fixed-slot strings outside the Success scripts were translated in two runs of 8 Sonnet batches (16 batches,
+4,963 unique strings, about 1.8 million tokens, 20 minutes of agent time). `ui_strings.py status`: 9,171 of 9,947
+strings in English, in 62 modules; built, verified and installed.
+
+- `ui_strings.py export FILE` works on any module as it is. The rows it finds are text, name lists and noise
+  (glyph grids, tables of numbers); translators leave out what is not text.
+- Tools in `_work/tl_bulk/` (not in git): `make_string_batches.py` (unique strings of the listed modules into
+  `strings/in/Snn.txt`; a string that appears in many slots goes out once, `strings/dups.json` holds its copies;
+  do not rerun, it renumbers), `brief_strings.md`, `check_strings.py Snn` (what a translator runs),
+  `normalize_strings.py` (one wording for terms the batches rendered differently, kept only where it fits),
+  `view_strings.py` (Japanese and English side by side), `collect_strings.py` (stores batches and their copies;
+  only this runs `apply`), `pointer_check.py`.
+- **Covered:** the match (`gameplay.rel` 343 of 429), shared menus (`main_prg.rel` 457 of 720), baseball school
+  (`school_g.rel` 3,160 of 3,161: 489 lesson texts repeated per controller type), Boost and ability texts
+  (`sn_abiup.rel`, `are_abi.rel`), Success leftovers (`scs_end`, `scs_make`, `scs_grad`), records room, cheer
+  songs, Arrange, draft, the Eikan Nine screens (`sct_a_*`, `work_sct`, `sct_card`, `sct_rens`, `sct_sugo`),
+  championship, and the small Pennant and My Life setup modules.
+- **A pointer shows where a string really starts.** `ui_strings.find` starts a string at the first glyph number
+  it meets, and small numbers in front of a text (a header: `0007 0008`, `着着`) are valid glyph numbers. The
+  module's own relocations settle it: when a pointer lands inside a slot and none at its start, the text starts
+  at the pointer (`pointer_check.py`: `inside_only`); when there is one at the start and another inside, two
+  strings share the slot (`shared`). `collect_strings.py` holds both kinds back. Four were given a `START_TRIM`
+  entry and stored (main menu help of Exhibition, a school greeting, a prompt of `scs_end.rel`, an Arrange
+  notice). None of the 1,808 strings translated before is of either kind.
+- **Not done, and why:**
+  - `pena_sub.rel`, `pennant.rel`, `orepena.rel`, `pn_fa.rel`, `pn_ore_i.rel` (Pennant, My Life: about 7,700
+    strings): about a third start with such a header (in `pn_fa.rel` the pointer is at cell 2, behind
+    `0007 0008`). They need the start taken from the pointers for the whole file before batches are cut.
+  - Name lists: 12,260 school names in `sct_main.rel`, the kana readings of `are_main.rel` (6,950), given names
+    in `main_prg.rel` (about 200), foreign players in `scc_main.rel`, `namein.rel`. A job for a romaniser with a
+    reading table, not for translators.
+  - `main_prg.rel` 5:89202, 5:89900, 5:90076, 5:90224 (which controller to use): the Japanese has gaps, an icon
+    or fixed columns; in `strings/hold.txt` until seen in game. `are_sub.rel` 5:11824 (shared slot).
+  - 14 real players' forms whose surname does not fit 8 letters (松坂投法 ...), and a few rows with a kanji the
+    font table does not decode.
+- **Seen in game:** the build boots and continues the Success save; main menu help lines (Remo-Pawa, Success,
+  Baseball School); the Boost screen's description line (`Top velocity goes up`, `Learn Slider`); baseball
+  school: mode menu, lesson list help, the coach's first line in a lesson. Arrange opens.
+  **Not seen:** everything else, above all the match texts and every mode of the second run.
+- Still Japanese where looked: the Exhibition help line was Japanese in the look (stored after it); lesson
+  titles in the school list; the first prompts of Arrange (どのファイルで ...): another store, not found yet.
+- The harness matched the main menu cursor against a picture that included the help box; with English help the
+  cursor on Success was no longer recognised. `ref_cursor_mask.npy` now leaves out the bottom fifth of the
+  screen (the old mask is kept as `ref_cursor_mask.before_english_help.npy`).
+- Font after the build: 1,795 letter pairs (1,614 before), 1,243 kanji slots left; 1,169 pair slots are kanji
+  that Japanese text still uses (988 before). The abbreviations of short labels brought many new pairs.
+- Weak spots of this pass: labels in slots of 2 to 4 cells are abbreviations made up to fit (prefectures as
+  `Aomo`, `Ymgt`; teams as `Gnts`, `Chun`; old team names in the records room); pieces of assembled sentences
+  (` breaks record!`, ` Talks`); long help texts of `sct_a_sc.rel` and `chrsong.rel` whose line width the tool
+  did not find (written as one line, padded by hand to 32 letters a row).
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
