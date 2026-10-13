@@ -28,7 +28,9 @@ sprite parts that showed the old rectangles are pointed at the new ones. A group
 "gap" (clear pixels between labels, across and down, default [1, 1]),
 "under" (rows of the Japanese art below the foot of its letters, default 4) and, per label, "align":
 "left" (keep the left edge, not the centre), "valign": "centre" (middle of the old art, not its baseline) or "centre_x"
-(where the middle of the new label goes, measured from the left of the old rectangle). The parts are
+(where the middle of the new label goes, measured from the left of the old rectangle). "baseline" and
+"left" put the label on a fixed row and column of its sprite instead (a list of names that the game
+shows one at a time in the same place: the Japanese ones differ by a pixel or two). The parts are
 pointed at the new ones (page, rectangle and offset
 are rewritten in place; nothing moves inside the file and no size changes). The new label keeps the
 old label's horizontal centre and sits on the old baseline.
@@ -644,16 +646,20 @@ def repack(group, d, bank, pages, patches, project=None):
         top = (box[3] - under - base) if base is not None else box[1]   # sit on the old baseline
         if opt(lab, "valign") == "centre" and base is not None:  # or in the middle of the old art
             top = (box[1] + box[3]) // 2 - h // 2
+        left = centre - w // 2
+        if opt(lab, "baseline") is not None and base is not None:    # a fixed row and column of the sprite,
+            top = opt(lab, "baseline") - base                        # for a list of names set in one line
+        if opt(lab, "left") is not None:
+            left = opt(lab, "left")
         for k, p in enumerate(mine):
             if "sprite" in lab:                                  # box is in screen coordinates
                 if k == 0:
-                    data = U.pack_part(pg, p.flags, p.palette, top, centre - w // 2, y, x, y + h, x + w)
+                    data = U.pack_part(pg, p.flags, p.palette, top, left, y, x, y + h, x + w)
                 else:
                     sp, sx, sy = placed[len(labels)]
                     data = U.pack_part(sp, 0, p.palette, p.y, p.x, sy, sx, sy + 4, sx + 4)
             else:                                                # box is relative to the old rectangle
-                data = U.pack_part(pg, p.flags, p.palette, p.y + top, p.x + centre - w // 2,
-                                   y, x, y + h, x + w)
+                data = U.pack_part(pg, p.flags, p.palette, p.y + top, p.x + left, y, x, y + h, x + w)
             patches.append((p.offset, data))
         rows.append((lab.get("text") or lab.get("name") or "(kept)", "%dx%d" % (box[2] - box[0], box[3] - box[1]),
                      "%dx%d" % (w, h), "page %d x %d y %d" % (pg, x, y), len(mine)))

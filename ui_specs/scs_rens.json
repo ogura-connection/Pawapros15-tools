@@ -145,6 +145,218 @@
      "under": 3
     }
    ]
+  },
+  {
+   "bank": "y5_rkz_0",
+   "palette": 82,
+   "style": "plain",
+   "font": "ttf:narrow:10",
+   "baseline": 14,
+   "left": 1,
+   "gap": [
+    2,
+    1
+   ],
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Dumbbell"
+    },
+    {
+     "sprite": "01",
+     "text": "Barbell"
+    },
+    {
+     "sprite": "02",
+     "text": "Bench Press"
+    },
+    {
+     "sprite": "03",
+     "text": "Bamboo Bat"
+    },
+    {
+     "sprite": "04",
+     "text": "Weighted Bat"
+    },
+    {
+     "sprite": "05",
+     "text": "Batting Machine"
+    },
+    {
+     "sprite": "06",
+     "text": "Tire"
+    },
+    {
+     "sprite": "07",
+     "text": "Triple Tire"
+    },
+    {
+     "sprite": "08",
+     "text": "Parachute"
+    }
+   ]
+  },
+  {
+   "bank": "y5_rkz_0",
+   "palette": 82,
+   "style": "plain",
+   "font": "ttf:narrow:10",
+   "baseline": 14,
+   "left": 1,
+   "gap": [
+    2,
+    1
+   ],
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "09",
+     "text": "Tube"
+    },
+    {
+     "sprite": "0a",
+     "text": "Thick Tube"
+    },
+    {
+     "sprite": "0b",
+     "text": "Lat Machine"
+    },
+    {
+     "sprite": "0c",
+     "text": "Iron Geta"
+    },
+    {
+     "sprite": "0d",
+     "text": "Mini Roller"
+    },
+    {
+     "sprite": "0e",
+     "text": "Roller"
+    },
+    {
+     "sprite": "0f",
+     "text": "Towel"
+    },
+    {
+     "sprite": "10",
+     "text": "Brace"
+    }
+   ]
+  },
+  {
+   "bank": "y5_rkz_0",
+   "palette": 82,
+   "style": "plain",
+   "font": "ttf:narrow:10",
+   "baseline": 14,
+   "left": 1,
+   "gap": [
+    2,
+    1
+   ],
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "11",
+     "text": "Muscler"
+    },
+    {
+     "sprite": "12",
+     "text": "Target 2x2"
+    },
+    {
+     "sprite": "13",
+     "text": "Target 3x3"
+    },
+    {
+     "sprite": "14",
+     "text": "Target 4x4"
+    },
+    {
+     "sprite": "15",
+     "text": "Squishy Ball"
+    },
+    {
+     "sprite": "16",
+     "text": "Squishy Ball+"
+    },
+    {
+     "sprite": "17",
+     "text": "Ultimate Breaking Ball"
+    },
+    {
+     "sprite": "18",
+     "text": "Fielding Net"
+    }
+   ]
+  },
+  {
+   "bank": "y5_rkz_0",
+   "palette": 82,
+   "style": "plain",
+   "font": "ttf:narrow:10",
+   "baseline": 14,
+   "left": 1,
+   "gap": [
+    2,
+    1
+   ],
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "19",
+     "text": "Deluxe Fielding Net"
+    },
+    {
+     "sprite": "1a",
+     "text": "Fungo Machine"
+    },
+    {
+     "sprite": "1b",
+     "text": "Soothing Music"
+    },
+    {
+     "sprite": "1c",
+     "text": "Aromatherapy"
+    },
+    {
+     "sprite": "1d",
+     "text": "Relax Capsule"
+    }
+   ]
   }
  ]
 }
