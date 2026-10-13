@@ -700,6 +700,24 @@ def captioned(ramp, outline, soft, ring=2, depth=2):
     return style
 
 
+def plated(ramp, shadow, size):
+    """A style: letters drawn with `ramp` on a filled rectangle `size` (w, h) of colour `ramp`[0], with a
+    `shadow` one pixel down and to the right. Pieces of one plate that stand side by side."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        h, w = ink.shape
+        bw, bh = max(size[0], w + 2), max(size[1], h + 2)
+        big = np.zeros((bh, bw), int)
+        x, y = (bw - w) // 2, (bh - h) // 2
+        big[y:y + h, x:x + w] = ink
+        out = np.full(big.shape, ramp[0], np.uint8)
+        out[shift(big > 2, 1, 1)] = shadow
+        out[big > 0] = ramp[big[big > 0]]
+        return out, y + base
+    return style
+
+
 RENDER = {
     "command": style_command,
     # the ability plates (palette 8 of g3_tn00 in are_abi.arc): white letters, dark blue outline, a paler ring
@@ -783,6 +801,12 @@ RENDER = {
     # Before / After in palettes 14 and 15 (green and yellow letters on a white band)
     "equipstat": banded([4, 6, 8, 10, 12, 14, 15], [4, 3]),
     "equipbefore": logo([15, 15, 14, 14, 13, 13, 12, 12, 11], [9, 10], 8, 1, 2, [4, 5]),
+    # league plates of the standings (scs_data.arc z4_dtj_0, palettes 90-92): white on the plate colour
+    "league44": plated([8, 9, 10, 11, 12, 13, 15], 6, (44, 20)),
+    "league36": plated([8, 9, 10, 11, 12, 13, 15], 6, (36, 20)),
+    # team names of the standings (palette 87, black on the board): two grey levels only, as the Japanese has,
+    # so that the compressed pages stay inside their slots
+    "team": outlined([0, 0, 4, 7, 15, 15, 15], 0, 0),
     "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),
