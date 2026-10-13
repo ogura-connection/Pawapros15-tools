@@ -16,7 +16,7 @@ Styles (how ink becomes palette indices of the Pawapuro 15 page)
              right, as on y5_smi pages 1 and 2 (palette 28).
   stat       the stat labels: MLB's letters (cut whole from ScsParamPlate) in white with two rings.
   tag, money, motivation   letters with a one-pixel outline, in the colours of the HUD tags.
-  pitch      navy letters, white outline, light blue shadow: the pitch names of the HUD.
+  pitch, calendar, weather, glow, hint   the same letters in the colours of other labels (see RENDER).
 
 Font "tag" is the one exception to "nothing is drawn here": MLB has no small bold lettering, so the 13
 letters the HUD tags need are defined in TAG_GLYPHS.
@@ -26,7 +26,8 @@ labels of a page are laid out again at their natural width inside the areas name
 sprite parts that showed the old rectangles are pointed at the new ones. A group can also list
 "blank" rectangles (cleared, never drawn into: the second half of a label that came in two pieces),
 "gap" (clear pixels between labels, across and down, default [1, 1]),
-"under" (rows of the Japanese art below the foot of its letters, default 4) and, per label, "centre_x"
+"under" (rows of the Japanese art below the foot of its letters, default 4) and, per label, "align":
+"left" (keep the left edge, not the centre) or "centre_x"
 (where the middle of the new label goes, measured from the left of the old rectangle). The parts are
 pointed at the new ones (page, rectangle and offset
 are rewritten in place; nothing moves inside the file and no size changes). The new label keeps the
@@ -338,6 +339,15 @@ FONTS = {"command": command_font, "tag": tag_font}
 def typeset(text, font="command", project=None):
     """(ink, baseline row) of a word or phrase. A phrase that MLB drew is returned as drawn.
     font = "command", "tag", or "ttf:<face>:<cap height>[:<slant>[:<squeeze>[:<bold>]]]" for a system font."""
+    if font == "tagi":                               # the tag font, slanted one pixel every four rows
+        ink, base = typeset(text, "tag", project)
+        h, w = ink.shape
+        lean = [(base - 1 - y + 2) // 4 for y in range(h)]
+        low = min(lean)
+        out = np.zeros((h, w + max(lean) - low), int)
+        for y in range(h):
+            out[y, lean[y] - low:lean[y] - low + w] = ink[y]
+        return out, base
     if font.startswith("ttf:"):
         a = font.split(":")
         return ttf_ink(text, a[1], int(a[2]), *[float(x) for x in a[3:6]])
@@ -426,26 +436,58 @@ def style_stat(ink, base):
     return out, base + pad
 
 
-def style_pitch(ink, base):
-    """The pitch names (palette 32 of z3_nph_scs): navy letters, a white outline and a light blue
-    shadow two pixels down and to the right."""
-    h, w = ink.shape
-    big = np.zeros((h + 4, w + 4), int)
-    big[1:1 + h, 1:1 + w] = ink
-    letters = big > 0
-    body = grow(letters, 1)
-    shadow = (shift(body, 1, 1) | shift(body, 2, 2) | shift(body, 2, 1) | shift(body, 1, 2)) & ~body
-    out = np.zeros(big.shape, np.uint8)
-    out[shadow] = 14
-    out[body] = 8
-    ramp = np.array([0, 7, 6, 4, 3, 2, 1], np.uint8)
-    out[letters] = ramp[big[letters]]
-    return out, base + 1
+def shadowed(ramp, ring, shadow, depth):
+    """A style: letters drawn with `ramp`, a one-pixel outline `ring` all round, and a `shadow`
+    `depth` pixels down and to the right."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        h, w = ink.shape
+        big = np.zeros((h + 2 + depth, w + 2 + depth), int)
+        big[1:1 + h, 1:1 + w] = ink
+        letters = big > 0
+        body = grow(letters, 1)
+        cast = np.zeros_like(body)
+        for k in range(1, depth + 1):
+            cast |= shift(body, k, k) | shift(body, k, k - 1) | shift(body, k - 1, k)
+        out = np.zeros(big.shape, np.uint8)
+        out[cast & ~body] = shadow
+        out[body] = ring
+        out[letters] = ramp[big[letters]]
+        return out, base + 1
+    return style
+
+
+def ringed(ramp, rings):
+    """A style: letters drawn with `ramp` inside solid one-pixel rings (first value innermost)."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        pad = len(rings)
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        out = np.zeros(big.shape, np.uint8)
+        for k in range(pad, 0, -1):
+            out[grow(letters, k)] = rings[k - 1]
+        out[letters] = ramp[big[letters]]
+        return out, base + pad
+    return style
 
 
 RENDER = {
     "command": style_command,
-    "pitch": style_pitch,
+    # navy letters, white outline, light blue shadow: the pitch names (palette 32 of z3_nph_scs)
+    "pitch": shadowed([0, 7, 6, 4, 3, 2, 1], 8, 14, 2),
+    # white letters, navy outline and shadow: 年目 / 月 / 週 of the date (palette 22 of y5_ten)
+    "calendar": shadowed([0, 9, 11, 13, 14, 15, 15], 3, 4, 1),
+    # yellow letters, purple outline: the 天気 tag (palette 56 of y5_np)
+    "weather": outlined([0, 9, 10, 11, 12, 14, 15], 7, 5),
+    # white letters in a red glow: 熱血発動中 (palette 47 of y5_npm)
+    "glow": ringed([0, 9, 11, 12, 13, 14, 15], [4, 2]),
+    # white letters, black outline: the button hints (palette 60 of y5_npm, a grey ramp)
+    "hint": outlined([0, 8, 10, 12, 13, 14, 15], 1, 2),
     "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),
@@ -575,6 +617,8 @@ def repack(group, d, bank, pages, patches, project=None):
         page(pg)[y:y + h, x:x + w] = img
         under = opt(lab, "under", 4)       # rows of the Japanese art below the foot of its letters
         centre = lab.get("centre_x", (box[0] + box[2]) // 2)     # keep the horizontal centre
+        if lab.get("align") == "left":                           # or the left edge
+            centre = box[0] + w // 2
         top = (box[3] - under - base) if base is not None else box[1]   # sit on the old baseline
         for k, p in enumerate(mine):
             if "sprite" in lab:                                  # box is in screen coordinates

@@ -9,6 +9,8 @@
 "repack" groups set whole words with ui_type.py and lay a page out again (see that file):
   "repack": [{"bank": "y5_smi_0", "palette": 28, "style": "command", "areas": [[page, x0, y0, x1, y1], ...],
               "labels": [{"from": [page, x0, y0, x1, y1], "text": "Practice"}, {"from": [...]}]}]
+"paint" entries redraw lettering that is part of a plate, in place: {"bank", "page", "rect", "text",
+"font", "ramp": palette index for ink 0 (the plate) to 6}.
 A label of a group without "text" keeps its Japanese art. A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
 A spec is a JSON file:
   {"arc": "scs_main.arc",
@@ -360,6 +362,21 @@ def render(spec, d, banks, project=None):
         for p, a in local.items():
             pages[(group["bank"], p)] = a
         render.repacked += [(group["bank"],) + r for r in rows]
+    for lab in spec.get("paint", ()):               # lettering that is part of a plate: redrawn in place
+        import ui_type
+        b = next(x for x in banks if x["name"] == lab["bank"])
+        key = (lab["bank"], lab["page"])
+        if key not in pages:
+            pages[key] = U.decode_indices(d, *b["pages"][lab["page"]]).copy()
+        x0, y0, x1, y1 = lab["rect"]
+        ink, base = ui_type.typeset(lab["text"], lab["font"], project)
+        h, w = ink.shape
+        ox, oy = x0 + (x1 - x0 - w) // 2, y0 + (y1 - y0 - base) // 2
+        pages[key][y0:y1, x0:x1] = lab["ramp"][0]
+        area = pages[key][oy:oy + h, ox:ox + w]
+        area[ink > 0] = np.array(lab["ramp"], np.uint8)[ink[ink > 0]]
+        render.repacked.append((lab["bank"], lab["text"], "painted", "%dx%d" % (w, h),
+                                "page %d x %d y %d" % (lab["page"], ox, oy), 0))
     for lab in spec.get("labels", ()):
         b = next(x for x in banks if x["name"] == lab["bank"])
         key = (lab["bank"], lab["page"])
