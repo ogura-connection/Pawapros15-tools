@@ -23,6 +23,7 @@ Repacking: an English word is wider than the Japanese label it replaces (練習 
 labels of a page are laid out again at their natural width inside the areas named in the spec, and the
 sprite parts that showed the old rectangles are pointed at the new ones. A group can also list
 "blank" rectangles (cleared, never drawn into: the second half of a label that came in two pieces),
+"gap" (clear pixels between labels, across and down, default [1, 1]),
 "under" (rows of the Japanese art below the foot of its letters, default 4) and, per label, "centre_x"
 (where the middle of the new label goes, measured from the left of the old rectangle). The parts are
 pointed at the new ones (page, rectangle and offset
@@ -339,14 +340,14 @@ def art_box(page, rect):
     return x0 + xs.min(), y0 + ys.min(), x0 + xs.max() + 1, y0 + ys.max() + 1
 
 
-def shelf_pack(sizes, areas, gap=1):
+def shelf_pack(sizes, areas, gap=(1, 1)):
     """Place (w, h) boxes into areas [(page, x0, y0, x1, y1)]: {index: (page, x, y)}. Shelves are as
-    high as the tallest box; widest boxes first. `gap` clear pixels are left between boxes, so a
-    neighbour never bleeds in when the game filters the texture."""
+    high as the tallest box; widest boxes first. `gap` = clear pixels left between boxes (across,
+    down), so a neighbour never bleeds in when the game filters the texture."""
     height = max(h for _, h in sizes)
     shelves = []
     for page, x0, y0, x1, y1 in areas:
-        for y in range(y0, y1 - height + 1, height + gap):
+        for y in range(y0, y1 - height + 1, height + gap[1]):
             shelves.append([page, x0, y, x1])
     placed = {}
     for i in sorted(range(len(sizes)), key=lambda i: -sizes[i][0]):
@@ -356,7 +357,7 @@ def shelf_pack(sizes, areas, gap=1):
             raise ValueError("no room for a label %d pixels wide" % w)
         s = min(fits, key=lambda s: s[3] - s[1])                # tightest shelf
         placed[i] = (s[0], s[1], s[2])
-        s[1] += w + gap
+        s[1] += w + gap[0]
     return placed
 
 
@@ -404,7 +405,7 @@ def repack(group, d, bank, pages, patches, project=None):
             page, rect, (ax0, ay0, ax1, ay1) = old[i]
             art.append((pages[page][ay0:ay1, ax0:ax1].copy(), None))
     height = max(a.shape[0] for a, _ in art)
-    placed = shelf_pack([(a.shape[1], height) for a, _ in art], areas)
+    placed = shelf_pack([(a.shape[1], height) for a, _ in art], areas, tuple(group.get("gap", (1, 1))))
     for page, x0, y0, x1, y1 in areas + sorted(blanks) + sorted(froms):
         if page not in pages:
             pages[page] = U.decode_indices(d, *bank["pages"][page]).copy()

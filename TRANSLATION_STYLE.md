@@ -189,6 +189,7 @@ Line counts are text runs in scenario 1.
 | 給料日 / 大入り袋 | payday / bonus envelope | |
 | 体力 / やる気 | vitality / motivation | the gauges; "Vitality" is the official English term and keeps 体力 apart from the pitcher stat スタミナ (Stamina) |
 | 熱血練習 | Hot-Blooded Practice | |
+| 熱血 / 熱血度 (the gauge) | Passion | the HUD gauge that fills up and sets off Hot-Blooded Practice: "Your Passion is full." |
 | もう一丁練習 | One-More Practice | from もう一丁！ "One more!" |
 | 練習器材 | training gear | |
 | チーム方針 | team policy | |
@@ -230,8 +231,21 @@ Line counts are text runs in scenario 1.
 - Lines from `scs_main.rel` (common events, sound effects, "you met Yabe" notices) appear inside
   scenario scenes and stay Japanese until that file is translated.
 
-## UI graphics (rule for when they are translated)
+## UI graphics
 
 Only lettering is replaced. Icons, characters, logos and any picture without text stay exactly as
 Konami drew them, so the game keeps its own look. English labels are taken from the official
 English games where they exist in the same art style; nothing MLB- or 2K-branded is used.
+
+Words on screen (Success Mode), with where the lettering comes from:
+
+| Japanese | English | Lettering |
+|---|---|---|
+| 練習 / 通院 / お店 / データ / システム / 能力アップ | Practice / Hospital / Shop / Data / System / Boost | MLB 2008 art, as drawn |
+| お出かけ | Free Time | MLB 2008 art: the series' name for this slot of the command bar |
+| 休む / 仕事 / アイテム / 遊ぶ / デート / 試合 / リスト / 治療 | Rest / Work / Items / Play / Date / Game / List / Treat | set from MLB letters (G and I derived) |
+| 体力 / 熱血 / やる気 / 所持金 | Vitality / Passion / Motivation / Money | drawn for this patch (no MLB lettering in the tag style) |
+| stat labels | TRJ, CON, PWR, RUN SPD, ARM STR, FLD, E RES, TOP SPD, CTRL, STAM, Position | MLB 2008 art |
+
+Still Japanese on these pages: プログラム, テキスト, 特別ルーム (not met in scenario 1; meaning to be
+confirmed in play before they are worded).
