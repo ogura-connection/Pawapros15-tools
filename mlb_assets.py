@@ -3,6 +3,7 @@
 
   mlb_assets.py list PROJECT.BIN [text]          file names and sizes (filtered by text)
   mlb_assets.py sheet PROJECT.BIN NAME OUT.png   contact sheet of the textures in one .pack file
+  mlb_assets.py textures DISC_FILES_DIR OUT_DIR  one sheet per UI .pack in OUT_DIR/tex, and textures.tsv
   mlb_assets.py text DISC_FILES_DIR OUT_DIR      every English string of the disc to OUT_DIR/text.tsv
 
 project.bin: 16 big-endian words of header (word 3 = record count, 5 = record table, 10 = index
@@ -125,6 +126,120 @@ def scan_text(disc, out_dir):
     return rows
 
 
+def _blocks(a, h, w, bh, bw):
+    """Undo the GX block order: a holds h*w items in bh x bw blocks."""
+    return a.reshape(h // bh, w // bw, bh, bw, *a.shape[1:]).swapaxes(1, 2).reshape(h, w, *a.shape[1:])
+
+
+def _rgb5a3(v):
+    import numpy as np
+    v = v.astype(np.uint32)
+    opaque = (v & 0x8000) != 0
+    r = np.where(opaque, (v >> 10 & 31) * 255 // 31, (v >> 8 & 15) * 17)
+    g = np.where(opaque, (v >> 5 & 31) * 255 // 31, (v >> 4 & 15) * 17)
+    b = np.where(opaque, (v & 31) * 255 // 31, (v & 15) * 17)
+    al = np.where(opaque, 255, (v >> 12 & 7) * 255 // 7)
+    return np.stack([r, g, b, al], -1).astype(np.uint8)
+
+
+def decode_all(d):
+    """[(offset, format, Image)] for every texture header found in a .pack (CMPR is skipped)."""
+    import numpy as np
+    from PIL import Image
+    n32 = len(d) // 4
+    w32 = np.frombuffer(d[:n32 * 4], dtype='>u4')
+    hh, ww = (w32 >> 16).astype(np.int64), (w32 & 0xFFFF).astype(np.int64)
+    fmt, ptr = np.r_[w32[1:], 0], np.r_[w32[2:], 0, 0]
+    off = np.arange(n32, dtype=np.int64) * 4
+    p = (ptr & 0x0FFFFFFF).astype(np.int64)
+    cand = (np.isin(fmt, (0, 1, 2, 3, 4, 5, 6, 8, 9)) & (ptr >> 28 == 4) & (p > off) & (p - off <= 0x400)
+            & (hh >= 8) & (hh <= 1024) & (ww >= 8) & (ww <= 1024) & (hh % 4 == 0) & (ww % 8 == 0))
+    out, last = [], {}
+    for i in np.flatnonzero(cand):
+        h, w, f, q, o = int(hh[i]), int(ww[i]), int(fmt[i]), int(p[i]), int(off[i])
+        size = {0: w * h // 2, 8: w * h // 2, 1: w * h, 2: w * h, 9: w * h, 3: w * h * 2, 4: w * h * 2,
+                5: w * h * 2, 6: w * h * 4}[f]
+        if q + size > len(d) or (f in (0, 8) and h % 8):
+            continue
+        raw = np.frombuffer(d, dtype=np.uint8, count=size, offset=q)
+        if f in (8, 9):
+            n = 16 if f == 8 else 256
+            if q - o >= 64 + n * 2:
+                last[f] = _rgb5a3(np.frombuffer(d, dtype='>u2', count=n, offset=q - n * 2))
+            pal = last.get(f)
+            if pal is None:
+                g = (np.arange(n) * 255 // (n - 1)).astype(np.uint8)
+                pal = np.stack([g, g, g, np.full(n, 255, np.uint8)], -1)
+        if f in (0, 8):
+            nib = np.stack([raw >> 4, raw & 15], -1).reshape(-1)
+            idx = _blocks(nib, h, w, 8, 8)
+            img = pal[idx] if f == 8 else np.stack([idx * 17] * 3 + [np.full_like(idx, 255)], -1)
+        elif f in (1, 9):
+            idx = _blocks(raw, h, w, 4, 8)
+            img = pal[idx] if f == 9 else np.stack([idx] * 3 + [np.full_like(idx, 255)], -1)
+        elif f == 2:
+            v = _blocks(raw, h, w, 4, 8)
+            img = np.stack([(v & 15) * 17] * 3 + [(v >> 4) * 17], -1)
+        elif f == 3:
+            v = _blocks(raw.reshape(-1, 2), h, w, 4, 4)
+            img = np.stack([v[..., 1]] * 3 + [v[..., 0]], -1)
+        elif f in (4, 5):
+            v = _blocks(np.frombuffer(d, dtype='>u2', count=w * h, offset=q), h, w, 4, 4)
+            if f == 5:
+                img = _rgb5a3(v)
+            else:
+                v = v.astype(np.uint32)
+                img = np.stack([(v >> 11) * 255 // 31, (v >> 5 & 63) * 255 // 63, (v & 31) * 255 // 31,
+                                np.full_like(v, 255)], -1)
+        else:
+            ar = raw.reshape(h // 4, w // 4, 64)[:, :, :32].reshape(h // 4, w // 4, 4, 4, 2)
+            gb = raw.reshape(h // 4, w // 4, 64)[:, :, 32:].reshape(h // 4, w // 4, 4, 4, 2)
+            img = np.concatenate([ar[..., 1:2], gb, ar[..., 0:1]], -1).swapaxes(1, 2).reshape(h, w, 4)
+        out.append((o, f, Image.fromarray(np.ascontiguousarray(img).astype(np.uint8), 'RGBA')))
+    return out
+
+
+def pack_sheet(images, path, width=1024, bg=(70, 70, 70, 255)):
+    """Save images on one sheet, shelf by shelf."""
+    from PIL import Image
+    x = y = row = 0
+    pos = []
+    for im in images:
+        if x + im.width > width and x:
+            x, y, row = 0, y + row + 2, 0
+        pos.append((x, y)); x += im.width + 2; row = max(row, im.height)
+    s = Image.new('RGBA', (width, y + row), bg)
+    for im, xy in zip(images, pos):
+        s.alpha_composite(im, xy)
+    s.convert('RGB').save(path)
+
+
+def scan_textures(disc, out_dir, skip=('PWM_', 'stadium', 'model', 'debug', 'test', 'pw_mdl')):
+    """One sheet per .pack in out_dir/tex, and out_dir/textures.tsv: pack, textures, formats, pixels."""
+    import collections
+    proj = Project(os.path.join(disc, 'project.bin'))
+    os.makedirs(os.path.join(out_dir, 'tex'), exist_ok=True)
+    rows = []
+    for name in sorted(proj.files):
+        base = name.lstrip('/')
+        if not base.endswith('.pack') or base.startswith(skip):
+            continue
+        d = proj.read(name)
+        if d[:7] != b'PACKWII':
+            continue
+        tex = decode_all(d)
+        cmpr = d.count(b'\x00\x00\x00\x0e\x40')
+        if tex:
+            pack_sheet([im for _, _, im in tex], os.path.join(out_dir, 'tex', base[:-5] + '.png'))
+        fm = collections.Counter(f for _, f, _ in tex)
+        rows.append((base, len(tex), ' '.join('%d:%d' % kv for kv in sorted(fm.items())), cmpr,
+                     sum(im.width * im.height for _, _, im in tex)))
+    with open(os.path.join(out_dir, 'textures.tsv'), 'w') as f:
+        for r in rows:
+            f.write('%s\t%d\t%s\t%d\t%d\n' % r)
+    return rows
+
+
 if __name__ == '__main__':
     import sys
     a = sys.argv[1:]
@@ -136,5 +251,8 @@ if __name__ == '__main__':
         sheet([im for _, im in textures(Project(a[1]).read(a[2]))], a[3])
     elif len(a) == 3 and a[0] == 'text':
         print(len(scan_text(a[1], a[2])), 'strings')
+    elif len(a) == 3 and a[0] == 'textures':
+        rows = scan_textures(a[1], a[2])
+        print(len(rows), 'packs,', sum(r[1] for r in rows), 'textures')
     else:
         print(__doc__)
