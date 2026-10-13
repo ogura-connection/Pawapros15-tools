@@ -110,7 +110,7 @@ def style_comcmd(idx, pal):
 
 STYLES = {"param": style_param, "comcmd": style_comcmd}
 # letters count a little more than the rest when a stroke is cut down to a pixel or two
-WEIGHTS = {"fill": 2.2, "letter": 2.2, "outer": 0.7, "edge_dark": 0.7}
+WEIGHTS = {"fill": 4.0, "letter": 4.0, "outer": 0.6, "edge_dark": 0.6}
 
 
 def drop_slivers(mask):
@@ -155,8 +155,8 @@ def source_classes(spec, project=None):
 def fit(mask, cls, roles, w, h, max_stretch=1.6, max_scale=1.0):
     """Resample a label to fit w x h and return its palette indices (0 = clear). Scaled uniformly (never
     above max_scale), then stretched vertically up to max_stretch to use the height available. Each role
-    is resampled as a coverage map (area filter); a pixel is drawn when the label covers at least half
-    of it, in the role with the most (weighted) coverage, so the result has hard edges and only the
+    is resampled as a coverage map (area filter); a pixel is drawn when the label covers at least 0.4
+    of it (0.4), in the role with the most (weighted) coverage, so the result has hard edges and only the
     palette entries named in `roles`: no blur."""
     sh, sw = mask.shape
     sx = min(w / sw, max_scale)
@@ -174,7 +174,7 @@ def fit(mask, cls, roles, w, h, max_stretch=1.6, max_scale=1.0):
     weights = np.array([WEIGHTS.get(n, 1.0) for n in names], np.float32)[:, None, None]
     pick = (cover * weights).argmax(0)
     index = np.array([roles[n] for n in names], np.uint8)[pick]
-    return np.where(total >= 0.5, index, 0).astype(np.uint8)
+    return np.where(total >= 0.4, index, 0).astype(np.uint8)
 
 
 def place(page, rect, area, label, halo=()):
