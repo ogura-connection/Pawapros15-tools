@@ -22,27 +22,18 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
-   "margin": 1,
+   "margin": 0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
+    2,
     3
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "fill": 15,
-     "ring": 2,
-     "outer": 3
-    },
-    "halo": [],
-    "margin": 0
-   }
+   ]
   },
   {
    "name": "CTRL",
@@ -65,27 +56,18 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
-   "margin": 1,
+   "margin": 0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
+    2,
     3
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "fill": 15,
-     "ring": 2,
-     "outer": 3
-    },
-    "halo": [],
-    "margin": 0
-   }
+   ]
   },
   {
    "name": "(blank)",
@@ -120,27 +102,19 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
-   "margin": 1,
+   "margin": 0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
+    2,
     3
    ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "fill": 15,
-     "ring": 2,
-     "outer": 3
-    },
-    "halo": [],
-    "margin": 0
-   }
+   "speck": 5
   },
   {
    "name": "E RES",
@@ -163,27 +137,18 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
-   "margin": 1,
+   "margin": 0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
+    2,
     3
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "fill": 15,
-     "ring": 2,
-     "outer": 3
-    },
-    "halo": [],
-    "margin": 0
-   }
+   ]
   },
   {
    "name": "CON",
@@ -206,27 +171,18 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
-   "margin": 1,
+   "margin": 0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
+    2,
     3
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "fill": 15,
-     "ring": 2,
-     "outer": 3
-    },
-    "halo": [],
-    "margin": 0
-   }
+   ]
   },
   {
    "name": "RUN SPD",
@@ -261,7 +217,8 @@
     3
    ],
    "lines": 2,
-   "max_stretch": 1.0
+   "max_stretch": 1.0,
+   "speck": 7
   },
   {
    "name": "ARM STR",
@@ -296,7 +253,8 @@
     3
    ],
    "lines": 2,
-   "max_stretch": 1.0
+   "max_stretch": 1.0,
+   "speck": 7
   },
   {
    "name": "PWR",
@@ -319,27 +277,18 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
-   "margin": 1,
+   "margin": 0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
+    2,
     3
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "fill": 15,
-     "ring": 2,
-     "outer": 3
-    },
-    "halo": [],
-    "margin": 0
-   }
+   ]
   },
   {
    "name": "TOP SPD",
@@ -374,7 +323,8 @@
     3
    ],
    "lines": 2,
-   "max_stretch": 1.0
+   "max_stretch": 1.0,
+   "speck": 7
   },
   {
    "name": "TRJ",
@@ -397,27 +347,18 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
-   "margin": 1,
+   "margin": 0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
+    2,
     3
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "fill": 15,
-     "ring": 2,
-     "outer": 3
-    },
-    "halo": [],
-    "margin": 0
-   }
+   ]
   },
   {
    "name": "FLD",
@@ -440,27 +381,18 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
-   "margin": 1,
+   "margin": 0,
    "drop": [
+    "ring",
     "outer"
    ],
    "halo": [
+    2,
     3
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "fill": 15,
-     "ring": 2,
-     "outer": 3
-    },
-    "halo": [],
-    "margin": 0
-   }
+   ]
   },
   {
    "name": "Motivation",
@@ -491,98 +423,6 @@
    "halo": [],
    "margin": 0,
    "area": "rect"
-  },
-  {
-   "name": "Practice",
-   "bank": "y5_smi_0",
-   "page": 1,
-   "palette": 28,
-   "rect": [
-    0,
-    0,
-    40,
-    32
-   ],
-   "pack": "ScsComMain",
-   "tex": 0,
-   "box": [
-    64,
-    0,
-    129,
-    29
-   ],
-   "style": "comcmd",
-   "roles": {
-    "letter": 13,
-    "plate": 8
-   },
-   "halo": [
-    5,
-    4
-   ],
-   "max_stretch": 2.0,
-   "margin": 0,
-   "drop": [
-    "edge_dark",
-    "edge_light"
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "letter": 13,
-     "plate": 8,
-     "edge_dark": 3,
-     "edge_light": 6
-    },
-    "halo": [],
-    "margin": 0
-   }
-  },
-  {
-   "name": "Hospital",
-   "bank": "y5_smi_0",
-   "page": 1,
-   "palette": 28,
-   "rect": [
-    40,
-    0,
-    80,
-    32
-   ],
-   "pack": "ScsComMain",
-   "tex": 0,
-   "box": [
-    128,
-    85,
-    193,
-    113
-   ],
-   "style": "comcmd",
-   "roles": {
-    "letter": 13,
-    "plate": 8
-   },
-   "halo": [
-    5,
-    4
-   ],
-   "max_stretch": 2.0,
-   "margin": 0,
-   "drop": [
-    "edge_dark",
-    "edge_light"
-   ],
-   "full": {
-    "drop": [],
-    "roles": {
-     "letter": 13,
-     "plate": 8,
-     "edge_dark": 3,
-     "edge_light": 6
-    },
-    "halo": [],
-    "margin": 0
-   }
   },
   {
    "name": "Shop",
