@@ -14,7 +14,8 @@ The .arc files are ELF objects. Their .data holds sprite banks, named by symbol:
   pal_<bank>       RGB5A3 colours, 16 per palette for the 4-bit pages
   opd_<bank>_NN    one sprite: a 10-byte header (byte 0 = number of parts) followed by that many
                    10-byte parts: page (bit 7 = mirrored, bit 6 = another flag), palette,
-                   offset on screen (x, y as s16), u0, v0, u1, v1 = rectangle on the page.
+                   offset on screen (x, y as s16), then the rectangle on the page as
+                   rows y0 to y1 and columns x0 to x1 (in that byte order: y0, x0, y1, x1).
                    Page numbers count the tex_ symbols of the bank in file order (the numbers in
                    the symbol names can start at 1).
 Each page is drawn with the palette that most of its sprite parts use, so a page shared by
@@ -61,7 +62,7 @@ def elf_symbols(d):
     return syms
 
 
-Part = collections.namedtuple("Part", "sprite page flags palette x y u0 v0 u1 v1")
+Part = collections.namedtuple("Part", "sprite page flags palette x y y0 x0 y1 x1")
 
 
 def banks(d, syms):
@@ -231,9 +232,9 @@ def cmd_parts(args):
             for p in parts:
                 if len(args) > 2 and p.page != int(args[2]):
                     continue
-                print("%s page %d%s pal %d at (%d,%d) rect (%d,%d)-(%d,%d) %dx%d" % (
+                print("%s page %d%s pal %d at (%d,%d) rect x %d-%d y %d-%d (%dx%d)" % (
                     name[4:], p.page, " flags %02x" % p.flags if p.flags else "", p.palette, p.x, p.y,
-                    p.u0, p.v0, p.u1, p.v1, p.u1 - p.u0, p.v1 - p.v0))
+                    p.x0, p.x1, p.y0, p.y1, p.x1 - p.x0, p.y1 - p.y0))
 
 
 def cmd_page(args):
