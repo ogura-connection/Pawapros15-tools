@@ -1,0 +1,39 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	0	5cfd	View a player's stats, delete data, and|show the password.
+5	104	2f38	Move, copy, or delete saved players.
+5	208	7ffd	Copy or delete players saved in Wii|System Memory.
+5	312	58a3	Listen to, copy, or show the password of|cheer songs.
+5	416	921c	Copy cheer songs saved in Wii System Memory|or show their passwords.
+5	520	7afe	Set how players are called.|(Original players)
+5	596	9300	Set the name on the back of the uniform.|(Original players)
+5	672	a355	Swap data with Pawapuro Portable 3, a PSP|(PlayStation Portable) game.
+5	792	af65	Swap data with Pawapuro Portable 3 or 4, PSP|(PlayStation Portable) games.
+5	916	f6b7	Enter the password of a player you raised.
+5	968	a9a9	Move, copy, or delete saved Arrange Teams.
+5	1072	5e20	Copy or delete Arrange Teams saved in|Wii System Memory.
+5	1176	4eee	Enter a cheer song password.
+5	1228	069b	Set a player's stats.|(Original players)
+5	1304	f350	Load various data.
+5	1340	bd30	Install Pawapuro 15 data on a|"PlayStation BB Unit".
+5	1456	e4f4	You need a "PlayStation BB Unit" to install|Pawapuro 15 data.
+5	1572	20d1	No players can be set.
+5	1616	54f3	Send an original player to Pawapuro Portable 3,|a PSP (PlayStation Portable) game.
+5	1736	19d0	Receive cheer songs from Pawapuro Portable 3,|a PSP (PlayStation Portable) game.
+5	1856	cca8	Transfer players to Pawapuro Portable 3 or 4,|PSP (PlayStation Portable) games.
+5	1976	d9ae	Receive cheer songs from Pawapuro Portable 3|or 4, PSP (PlayStation Portable) games.
+5	2100	d88b	Transfer cheer songs to Pawapuro Portable 3,|a PSP (PlayStation Portable) game.
+5	2322	8211	 Button cancels the install.
+5	2620	2ee8	Connection provider setting:
+5	2656	3bfd	Please select.
+5	2692	abc1	Connection provider setting:
+5	2728	f1e7	Player to download:
+5	2764	3bfd	Please select.
+5	2800	7247	The player data currently loaded
+5	2836	0260	is being shown.
+5	9826	1849	Quit entering the password?
+5	9868	eba8	Save your data?
+5	11912	8f75	Set automatically.
+5	11932	9d33	Set each one yourself.
+5	11960	d542	Reset to defaults.
+5	11984	e2b7	Erase stats.
+5	12008	6156	Settings changed.|Save them?

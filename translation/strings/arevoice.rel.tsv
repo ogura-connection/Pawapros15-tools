@@ -1,0 +1,8 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	2252	6156	Settings changed.|Save them?
+5	2308	c59a	Choose a voice from players used in games.
+5	2360	d312	Enter the reading yourself (max 6 characters).
+5	2412	f109	Go back to how it was before voice settings.
+5	2464	899d	Confirm the voice settings and exit.
+5	2516	225b	Select the first letter of the player you want.
+5	2568	84ee	Players with a team mark get cheers in games.

@@ -1,0 +1,191 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	48	95c2	Good at bunting
+5	96	4f4c	Excellent at bunting
+5	144	8443	Not easily affected by condition
+5	192	8403	Big gap between good and bad times
+5	240	1400	Has an intimidating presence
+5	288	c526	Intimidates pitchers
+5	336	b60e	Injury-prone
+5	384	ce8f	Resistant to injury
+5	432	30c7	Very resistant to injury
+5	480	bae0	Even solid power swings don't get lift
+5	528	6f8e	Even solid power swings rarely get lift
+5	576	7add	Solid power swings tend to get lift
+5	624	eeec	Solid power swings get a lot of lift
+5	688	db35	Hits come easily
+5	736	6c3d	Homers come easily
+5	784	1ac0	Can hit hard to the opposite field
+5	832	4fcb	Can hit hard when pulling
+5	880	d6c7	Good at opposite-field hitting
+5	928	c421	Strong in the clutch
+5	976	4d62	Weak in the clutch
+5	1024	4e7f	Extremely strong in the clutch
+5	1072	ab7b	Extremely weak in the clutch
+5	1120	89d2	Strong vs. lefty pitchers
+5	1168	cd41	Weak vs. lefty pitchers
+5	1216	87ef	Extremely strong vs. lefty pitchers
+5	1264	f0f4	Extremely weak vs. lefty pitchers
+5	1312	fedd	Strong on the first pitch
+5	1360	8afb	Hitting improves after a hit
+5	1408	f3c2	Hitting improves after prior batter's hit
+5	1456	e308	Hitting improves when behind
+5	1504	69e4	Suited to batting 4th
+5	1552	ae23	Not suited to batting 4th
+5	1600	9382	Hitting drops when behind in the count
+5	1648	ed5b	Hitting improves as a pinch hitter
+5	1696	cb0e	Keeps bat control until the last moment
+5	1744	c121	Hitting improves with bases loaded
+5	1792	076e	Gets hits easily with bases loaded
+5	1840	c072	Hits homers easily with bases loaded
+5	1888	9086	Strong in walk-off situations
+5	1936	d2da	Gets hits easily in walk-off spots
+5	1984	b1ed	Hits homers easily in walk-off spots
+5	2032	3d16	Good at stealing bases
+5	2080	2109	Great at stealing, rattles the pitcher
+5	2128	f1f6	Not good at stealing bases
+5	2176	8bc5	Good baserunner
+5	2224	b8e8	Poor baserunner
+5	2272	dc12	Quick getaway after hitting
+5	2320	cc8b	Slides head-first on close plays
+5	2368	cadf	Slides head-first on close plays|(1B)
+5	2420	0c9a	Slides head-first on close plays|(2B 3B Home)
+5	2480	f415	Slides head-first on close plays|(1B 2B 3B Home)
+5	2544	e0f2	Bowls over the catcher on close plays
+5	2592	1fee	Throws rarely go wild
+5	2640	ab31	Throws often go wild
+5	2688	c6c5	Shows veteran skill in the field
+5	2736	d2be	Error-prone in a pinch
+5	2784	3da2	Gets the most out of pitchers
+5	2832	a1e2	Gets the very best out of pitchers
+5	2880	a933	Knocks back sliding runners
+5	2928	9793	Lifts team morale
+5	2976	28aa	Hurts team morale
+5	3024	dc37	Hitting results sway team morale
+5	3072	e6f3	Plays 2nd position as well as main
+5	3120	67d3	2nd position defense gets even worse
+5	3168	2312	Good at creating chances
+5	3216	931f	Bunts, hits to move runners over
+5	3264	7c17	Doesn't bunt or hit to move runners
+5	3312	1de1	Aggressively goes for the next base
+5	3360	fbef	Steals bases aggressively
+5	3408	cbe7	Rarely steals bases
+5	3456	fb2e	Long career (Pennant only)
+5	3504	4337	Whispers to rattle batters
+5	3552	1182	Gains momentum when whispered at
+5	3600	61c0	Hits low pitches well
+5	3648	83c9	Hits high pitches well
+5	3696	47f1	Tries to break up DPs from 1st
+5	3744	2b97	Good at judging strikes and balls
+5	3792	98d0	Plays bold defense
+5	3840	9b4f	Shows gritty, tough batting
+5	3888	93a3	Easily rattles pitchers
+5	3936	1e05	Drains pitchers' stamina faster
+5	3984	d23c	Running speed goes up
+5	4032	febe	Power goes up
+5	4080	5ec9	Lowers the pitcher's break level
+5	4128	0617	Ability rises on a full count
+5	4176	c447	Throws sharp as an arrow
+5	4224	2e6c	May surprise you in certain cases...
+5	4272	17b1	Ability rises vs. ace pitchers
+5	4320	fd0c	Gives the hitter before him confidence
+5	4368	d83e	At main position, inspires the pitcher if catcher, other fielders otherwise
+5	4456	78c0	Intimidates batters
+5	4500	de86	Fastball spin points toward batter|and the ball rises at the plate
+5	4580	8a41	Fastball Life is good
+5	4628	682b	Fastball Life is excellent
+5	4676	4c53	Fastball Life is poor
+5	4724	a797	Spin is good
+5	4772	d94f	Spin is poor
+5	4820	5d26	Good control on low pitches
+5	4868	674d	Hit balls don't carry far
+5	4916	ee1c	Mistakes tend to go down the middle
+5	4964	3add	Mistakes rarely go down the middle
+5	5012	807f	Better with runners in scoring position
+5	5060	55bb	Worse with runners in scoring position
+5	5108	73a8	Strong vs. lefty batters
+5	5156	f30f	Weak vs. lefty batters
+5	5204	8011	Weakens when close to a win
+5	5252	d5c3	Weakens once runners get on
+5	5300	1c74	Not easily rattled when hit hard
+5	5348	cfe8	Easily rattled when hit
+5	5396	0200	Same motion for fastball and breaking ball
+5	5444	2a70	Good quick delivery, hard to steal on
+5	5492	7b51	Poor quick delivery, easy to steal on
+5	5540	0edb	Prone to walking batters
+5	5588	f88d	Hides fatigue and rattling
+5	5636	8b58	Gets angry when hit hard
+5	5684	9c6f	Good pickoff move
+5	5732	5d8d	Good at handling comebackers
+5	5780	1ab5	Gets better late in the game
+5	5828	1142	Slow starter
+5	5876	fd41	Brings a win when he pitches
+5	5924	a23a	Wins elude him when he pitches
+5	5972	656e	Shorter rest between starts
+5	6020	cc50	Longer rest between starts
+5	6068	09a0	Pitches with fighting spirit
+5	6116	93de	Goes easy on weak opponents
+5	6164	5dfa	Fastball sometimes tails like a shuuto
+5	6224	890a	Ability rises when ahead in the count
+5	6272	2eb7	Hit balls tend to carry far
+5	6320	0887	Fastball moves slightly
+5	6368	4128	Control may suddenly worsen between innings
+5	6432	84a3	Shows no fatigue, pitches on guts
+5	6480	d5f5	Ability rises vs. power hitters
+5	6528	7466	Ability rises on diagonal pitches
+5	6576	0887	Fastball moves slightly
+5	6624	daba	Holds the ball long, hard to hit
+5	6672	151c	Pitches from left end of the rubber
+5	6720	27ec	Pitches from right end of the rubber
+5	6768	9ea3	Pitch velocity goes up
+5	6816	22e8	Lowers the batter's power
+5	6864	a3ba	Loses less stamina
+5	6912	3116	Lowers the runner's speed
+5	6960	09c9	Not rattled even when hit hard
+5	7008	3048	Extremely popular
+5	7056	3048	Extremely popular
+5	7104	8632	Pitches mostly fastballs
+5	7152	97b0	Pitches mostly breaking balls
+5	7200	cfe7	Pitches at a good tempo
+5	7248	572a	Uses power swings often
+5	7296	59c7	Uses contact swings often
+5	7344	24ad	Aggressive from the first pitch
+5	7392	61eb	Judges pitches and bats carefully
+5	7440	0e1c	Giants
+5	7452	9587	Chunichi
+5	7464	b9a6	Hiroshima
+5	7480	5be4	Yakult
+5	7496	c09d	Yokohama
+5	7508	88f0	Hanshin
+5	7520	6a73	Rakuten
+5	7536	6f48	Nippon-Ham
+5	7552	e1d4	Seibu
+5	7564	d593	Orix
+5	7584	4ac1	Lotte
+5	7600	812a	SoftBank
+5	7620	3e1a	Often used as a pinch hitter
+5	7668	9512	Often used as a pinch runner
+5	7716	5e4e	Often used as a defensive sub
+5	7764	07e7	Often replaced by a defensive sub
+5	7816	4f9b	Let the COM decide when|to replace this player
+5	7888	0653	Try to have this pitcher go the distance
+5	7936	c44a	Keep him in as long as his form holds
+5	7984	9877	Consider a change when stamina runs out
+5	8032	92ce	Replace him with energy left for next start
+5	8080	020e	Consider a change once he can get the win
+5	8144	7997	Pitches only in the final inning for a save
+5	8192	8e77	Likely to pitch in a save situation
+5	8252	d342	Likely to pitch when leading by any margin
+5	8312	701c	Likely to pitch to hold a narrow lead
+5	8372	f265	Often used in close games
+5	8400	a8a0	May pitch when tied or in close losses
+5	8464	0196	Eases the load on other pitchers|once the game is lost
+5	8536	81e5	Often used as a lefty specialist
+5	8584	4811	This year's data
+5	8648	4d3c	Put the cursor on the ability|you want explained
+5	8712	d22f	Return to the menu
+5	8778	be6e	Delete this player?
+5	8812	285e	You can view ability descriptions
+5	8852	5fff	Show this player as a password
+5	8892	effa	Delete this player
+5	8932	d261	Select a menu option
+5	8972	c1f4	Return to the player select screen
