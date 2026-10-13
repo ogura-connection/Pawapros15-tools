@@ -5,7 +5,8 @@
   ui_textures.py parts ARC [BANK [PAGE]]   sprite parts (screen offset and page rectangle) of a bank
   ui_textures.py page ARC BANK PAGE OUT.png [PALETTE]   one page as RGBA with its palette
   ui_textures.py import ARC BANK PAGE IMAGE.png [PALETTE]   write a 128x128 page back, same offset and size
-  ui_textures.py check                round trip: every page decoded, re-encoded and compared (no files written)
+  ui_textures.py check [ARC ...]      round trip: every page decoded, re-encoded and compared (no files written);
+                                      the compressed pages of the named files are also packed again (slow)
 
 The .arc files are ELF objects. Their .data holds sprite banks, named by symbol:
   tex_<bank>NN     texture page: 8,192 bytes = 128x128, 4 bits per pixel (GX C4, 8x8 tiles), or
@@ -444,9 +445,10 @@ def backup_orig(path):
         shutil.copy2(path, dst)
 
 
-def cmd_check():
-    """Decode and re-encode every 128x128 page of every .arc; also import each decoded image unchanged."""
-    pages = same = rgba_same = dup = 0
+def cmd_check(packed_arcs=()):
+    """Decode and re-encode every 128x128 page of every .arc; also import each decoded image unchanged.
+    Compressed pages are unpacked; those of the files named in `packed_arcs` are also packed again."""
+    pages = same = rgba_same = dup = packed = unpacked = odd = again = fits = 0
     for path in sorted(glob.glob(os.path.join(S.DATA_FILES, "*.arc"))):
         with open(path, "rb") as f:
             d = f.read()
@@ -455,7 +457,18 @@ def cmd_check():
             pal = palette_colours(d, b["pal"])
             use = page_palette_use(b)
             for n, (off, size) in enumerate(b["pages"]):
-                if size not in (8192, 16384):
+                if is_compressed(size):
+                    packed += 1
+                    try:
+                        raw, width, used = decompress_page(d[off:off + size])
+                    except ValueError:
+                        odd += 1
+                        continue
+                    unpacked += size - 16 < used <= size
+                    if os.path.basename(path) in packed_arcs:
+                        new = compress_page(raw, width)
+                        again += decompress_page(new + bytes(16))[0] == raw
+                        fits += len(new) <= size
                     continue
                 pages += 1
                 idx = decode_indices(d, off, size)
@@ -471,6 +484,9 @@ def cmd_check():
     print("%d pages: %d re-encode identical; %d of %d files identical after export -> import of the "
           "unchanged images (%d pages have repeated palette colours)"
           % (pages, same, rgba_same, len(glob.glob(os.path.join(S.DATA_FILES, "*.arc"))), dup))
+    print("%d compressed pages: %d unpack to exactly their size, %d are in another format" % (packed, unpacked, odd))
+    if packed_arcs:
+        print("packed again (%s): %d give the same picture, %d fit their slot" % (", ".join(packed_arcs), again, fits))
 
 
 def main():
@@ -484,7 +500,7 @@ def main():
     elif a[:1] == ["import"] and len(a) >= 5:
         cmd_import(a[1:])
     elif a[:1] == ["check"]:
-        cmd_check()
+        cmd_check(a[1:])
     else:
         print(__doc__)
 
