@@ -102,7 +102,10 @@ NEAR = 8            # how many strings away a neighbour may be
 MIN_WIDTH = 8       # padding that ends before this cell is not line padding
 MAX_LINES = 4
 # (file, section, offset as found) -> cells in front of the text that are other data
-START_TRIM = {("scs_data.rel", 5, 106): 3, ("scs_data.rel", 5, 2148): 38}
+START_TRIM = {("scs_data.rel", 5, 106): 3, ("scs_data.rel", 5, 2148): 38,
+              # a pointer of the module points at the cell where the text starts (_work/tl_bulk/pointer_check.py)
+              ("main_prg.rel", 5, 174930): 7, ("school_g.rel", 5, 162498): 3, ("scs_end.rel", 5, 918): 9,
+              ("arr_chg.rel", 5, 2972): 2}
 # number tables that look like strings
 NOT_TEXT = {("scs_data.rel", 5, 1164), ("scs_data.rel", 5, 10002), ("scs_data.rel", 5, 17864),
             ("scs_data.rel", 5, 18946), ("scs_item.rel", 5, 1474), ("scs_item.rel", 5, 3822)}
