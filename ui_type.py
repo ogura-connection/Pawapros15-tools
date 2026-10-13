@@ -585,13 +585,13 @@ def titled(ramp, white, shadow, rim, plate=3):
 RENDER = {
     "command": style_command,
     # the screen titles (palettes 22-28 of z3_dts; every palette has its own order of colours)
-    "title22": titled([1, 2, 3, 4, 5, 6, 7], 10, [8, 9], [13, 15]),
-    "title23": titled([1, 2, 3, 4, 5, 6, 7], 15, [8, 9], [12, 10]),
-    "title24": titled([1, 2, 3, 4, 5, 6, 8, 7], 13, [15, 14], [12, 10]),
-    "title25": titled([1, 2, 3, 4, 5, 6, 7, 8], 9, [12, 11], [13, 15]),
-    "title26": titled([1, 2, 3, 6, 4, 5], 12, [8, 15], [11, 9]),
-    "title27": titled([1, 2, 3, 4, 5, 6, 7], 15, [8, 11], [12, 9]),
-    "title28": titled([1, 2, 3, 4, 5, 6, 7, 8], 11, [13, 12], [14, 15]),
+    "title22": titled([1, 2, 3, 4, 5, 6, 7], 10, [8, 9], [13, 15], 2),
+    "title23": titled([1, 2, 3, 4, 5, 6, 7], 15, [8, 9], [12, 10], 2),
+    "title24": titled([1, 2, 3, 4, 5, 6, 8, 7], 13, [15, 14], [12, 10], 2),
+    "title25": titled([1, 2, 3, 4, 5, 6, 7, 8], 9, [12, 11], [13, 15], 2),
+    "title26": titled([1, 2, 3, 6, 4, 5], 12, [8, 15], [11, 9], 2),
+    "title27": titled([1, 2, 3, 4, 5, 6, 7], 15, [8, 11], [12, 9], 2),
+    "title28": titled([1, 2, 3, 4, 5, 6, 7, 8], 11, [13, 12], [14, 15], 2),
     # Data screen (scs_data.arc, scs_sys.arc). White letters, dark outline, a shadow one step lighter: the
     # ability tabs (palettes 56-59 of z3_dt), handedness and form names (72), trait plates (104, 105)
     "data": banded([0, 6, 8, 10, 12, 14, 15], [4, 3], 2),
