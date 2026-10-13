@@ -553,8 +553,45 @@ def banded(ramp, rings, shadow=0):
     return style
 
 
+def titled(ramp, white, shadow, rim, plate=3):
+    """A style: the screen titles of the Data screen. Letters with a dark outline (`ramp`[0]) and a fill
+    that goes from the brightest colour (`ramp`[-1]) at the top to the one before it at the foot, on a
+    white plate `plate` pixels wide; the letters cast a grey shadow (`shadow`: near, far) on the plate, and
+    the plate has a rim of two pixels (`rim`: inner, outer)."""
+    def style(ink, base):
+        pad = plate + 4
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        body = grow(letters, 1)                                  # letters and their outline
+        board = grow(grow(body, plate - 1), 1, diagonal=False)
+        out = np.zeros(big.shape, np.uint8)
+        out[grow(board, 2, diagonal=False)] = rim[1]
+        out[grow(board, 1, diagonal=False)] = rim[0]
+        out[board] = white
+        out[shift(body, 2, 2) & board] = shadow[1]
+        out[shift(body, 1, 1) & board] = shadow[0]
+        out[body] = ramp[0]
+        ys = np.nonzero(letters.any(1))[0]
+        f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+        top = np.where(f < 0.55, len(ramp) - 1, len(ramp) - 2)[:, None]        # position on the ramp per row
+        level = np.rint(top * big / 6.0).astype(int)
+        out[letters] = np.array(ramp, np.uint8)[level][letters]
+        return out, base + pad
+    return style
+
+
 RENDER = {
     "command": style_command,
+    # the screen titles (palettes 22-28 of z3_dts; every palette has its own order of colours)
+    "title22": titled([1, 2, 3, 4, 5, 6, 7], 10, [8, 9], [13, 15]),
+    "title23": titled([1, 2, 3, 4, 5, 6, 7], 15, [8, 9], [12, 10]),
+    "title24": titled([1, 2, 3, 4, 5, 6, 8, 7], 13, [15, 14], [12, 10]),
+    "title25": titled([1, 2, 3, 4, 5, 6, 7, 8], 9, [12, 11], [13, 15]),
+    "title26": titled([1, 2, 3, 6, 4, 5], 12, [8, 15], [11, 9]),
+    "title27": titled([1, 2, 3, 4, 5, 6, 7], 15, [8, 11], [12, 9]),
+    "title28": titled([1, 2, 3, 4, 5, 6, 7, 8], 11, [13, 12], [14, 15]),
     # Data screen (scs_data.arc, scs_sys.arc). White letters, dark outline, a shadow one step lighter: the
     # ability tabs (palettes 56-59 of z3_dt), handedness and form names (72), trait plates (104, 105)
     "data": banded([0, 6, 8, 10, 12, 14, 15], [4, 3], 2),
@@ -565,7 +602,7 @@ RENDER = {
     # letters shading from light at the top to dark at the foot, white band, pale blue glow: the stat names and
     # tags of the team-mate list (palettes 116-125 of z3_dtn), the equipment headers (82 of z3_dt)
     "datastat": haloed(None, 8, [8, 9, 10, 11, 12, 13, 14, 15], fill=[5, 4, 4, 3, 3, 2, 2, 1, 1], light=8),
-    "datastat1": haloed(None, 8, [8, 9, 10, 11, 12, 13, 14, 15], 1, fill=[5, 4, 4, 3, 3, 2, 2, 1, 1], light=8),
+    "datastat1": haloed(None, 8, [8, 9, 10, 11, 12, 13, 14, 15], 1, fill=[3, 3, 2, 2, 1, 1], light=8),
     # blue letters in a white band, pale blue glow: the lists of the equipment page (palette 82 of z3_dt)
     "datahead": haloed([0, 7, 6, 5, 4, 3, 2], 8, [8, 9, 10, 11, 12, 13, 14, 15]),
     # white letters in one dark ring: a trait name that lies across the two colours of its plate
@@ -729,6 +766,8 @@ def repack(group, d, bank, pages, patches, project=None):
         centre = lab.get("centre_x", (box[0] + box[2]) // 2)     # keep the horizontal centre
         if lab.get("align") == "left":                           # or the left edge
             centre = box[0] + w // 2
+        if lab.get("align") == "right":                          # or the right edge
+            centre = box[2] - w + w // 2
         top = (box[3] - under - base) if base is not None else box[1]   # sit on the old baseline
         if opt(lab, "valign") == "centre" and base is not None:  # or in the middle of the old art
             top = (box[1] + box[3]) // 2 - h // 2
