@@ -620,6 +620,51 @@ def badged(fill, soft, outline, white, glow):
     return style
 
 
+def boxed(ramp, pad=(3, 4), size=(0, 0)):
+    """A style: letters drawn with `ramp` on a filled box of colour `ramp`[0] with its four corner pixels
+    cut off, `pad` (across, down) pixels larger than the letters and at least `size`. The button hints."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        h, w = ink.shape
+        bw, bh = max(w + 2 * pad[0], size[0]), max(base + 2 * pad[1], h + 2, size[1])
+        x, y = (bw - w) // 2, (bh - base) // 2
+        out = np.full((bh, bw), ramp[0], np.uint8)
+        out[y:y + h, x:x + w] = ramp[ink]
+        for cy, cx in ((0, 0), (0, -1), (-1, 0), (-1, -1)):
+            out[cy, cx] = 0
+        return out, base + y
+    return style
+
+
+def logo(fill, soft, outline, white, rim, shadow, band=2):
+    """A style: the shop titles. Letters filled from `fill`[0] at the top to `fill`[-1] at the foot (`soft` =
+    the colours between outline and fill), a one-pixel `outline`, a white band `band` pixels wide with a
+    one-pixel `rim`, and a `shadow` (near to far) cast below and to the right of the whole."""
+    def style(ink, base):
+        pad = band + 2 + len(shadow)
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        dark = grow(letters, 1)
+        plate = grow(grow(dark, band - 1), 1, diagonal=False) if band > 1 else grow(dark, 1, diagonal=False)
+        edge = grow(plate, 1, diagonal=False)
+        out = np.zeros(big.shape, np.uint8)
+        for k in range(len(shadow), 0, -1):
+            out[shift(edge, k, k) | shift(edge, k, k - 1) | shift(edge, k - 1, k)] = shadow[k - 1]
+        out[edge] = rim
+        out[plate] = white
+        out[dark] = outline
+        ys = np.nonzero(letters.any(1))[0]
+        f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+        row = np.array(fill)[np.rint(f.clip(0, 1) * (len(fill) - 1)).astype(int)][:, None]
+        low = np.array([outline] + list(soft) + [0], np.uint8)[np.rint(big * (len(soft) + 1) / 6.0).astype(int)]
+        out[letters] = np.where(big >= 6, np.broadcast_to(row, big.shape), low)[letters]
+        return out, base + pad
+    return style
+
+
 RENDER = {
     "command": style_command,
     # the ability plates (palette 8 of g3_tn00 in are_abi.arc): white letters, dark blue outline, a paler ring
@@ -672,6 +717,19 @@ RENDER = {
     "hint": outlined([0, 8, 10, 12, 13, 14, 15], 1, 2),
     # plain black letters, no outline (palette 82 of z3_smr, light grey to black)
     "plain": outlined([0, 3, 6, 9, 11, 13, 15], 0, 0),
+    # the shop (scs_item.arc, z3_shp): tab names, dark blue shading to light at the foot, in a white band with a
+    # lilac glow (palette 24); 所持金 (72); the Cancel button (53, drawn again as a shadow with 50 / 51);
+    # the 購入 / 所持 tags, white with a dark outline (60, 61); the − hint, white on a black box (44);
+    # the screen title, pink in a blue outline on a white band with a dark shadow (54, 55)
+    "shoptab": haloed(None, 8, [9, 10, 11, 12, 13, 14, 15], fill=[1, 1, 2, 3, 3, 4, 4, 5, 5], light=8),
+    "shopmoney": haloed([0, 7, 6, 4, 3, 2, 1], 8, [13, 12, 12, 11, 11, 10, 12, 14]),
+    "shopcancel": haloed([0, 12, 11, 7, 5, 3, 1], 14, [8, 10, 9, 9, 9, 9, 8]),
+    "shoptag": outlined([0, 9, 10, 12, 13, 14, 15], 8, 8),
+    "shophint": boxed([1, 4, 7, 9, 11, 13, 15], (3, 4), (31, 21)),
+    "shoptitle": logo([12, 12, 13, 13, 15, 15, 14], [14], 2, 10, 8, [1, 1]),
+    # the item list (scs_main.arc, z3_itw): tab names, blue shading to pale at the foot, white band (palettes 50, 51)
+    "itemtab": haloed(None, 15, [14, 14, 14, 14, 13, 12, 10, 9, 8, 7, 7, 7],
+                      fill=[1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6, 7, 8], light=15),
     "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),

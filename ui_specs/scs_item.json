@@ -1,0 +1,15 @@
+{"arc": "scs_item.arc",
+ "repack": [
+  {"bank": "z3_shp_0", "palette": 24, "style": "shoptab", "font": "ttf:rounded:12:0:1:0.3", "under": 4, "areas": [[2, 0, 0, 128, 72], [3, 80, 32, 120, 72], [3, 40, 72, 128, 104], [4, 24, 32, 48, 56], [6, 96, 32, 128, 56], [8, 0, 0, 56, 24]], "labels": [
+    {"sprite": "1a", "text": "All\nItems", "valign": "centre"},
+    {"sprite": "1b", "text": "Bats"},
+    {"sprite": "1c", "text": "Spikes"},
+    {"sprite": "1d", "text": "Gloves"},
+    {"sprite": "1e", "text": "Balls"},
+    {"sprite": "1f", "text": "Other"},
+    {"from": [3, 80, 32, 120, 72], "text": "Cancel", "style": "shopcancel", "font": "ttf:rounded:10:0:0.8:0.2", "valign": "centre"},
+    {"sprite": "41", "text": "Shop", "style": "shoptitle", "font": "ttf:black:17:0.25:0.9", "under": 5, "align": "left"},
+    {"sprite": "55", "text": "Money", "style": "shopmoney", "under": 3},
+    {"sprite": "44", "text": "Info", "style": "shophint", "font": "ttf:rounded:10:0:1:0.2", "valign": "centre"},
+    {"from": [4, 24, 32, 48, 56], "text": "Own", "style": "shoptag", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre"}]}
+ ]}
