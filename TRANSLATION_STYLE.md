@@ -253,6 +253,11 @@ Words on screen (Success Mode), with where the lettering comes from:
 | 年目 / 月 / 週 | Yr / Mo / Wk | Times New Roman Bold Italic, to go with the game's italic numerals. The game draws the number first, so the unit follows it: 1Yr 9Mo 1Wk |
 | 役職 / 平社員 / 係長 / 課長 | Post / Rank & File / Kakaricho / Kacho | Arial Rounded Bold, in the three colourings of the Japanese plates |
 
+Practice menu (scs_rens.arc), tag font: 筋力 Weights, 打撃 Batting, 走塁 Running, 守備 Fielding, 精神 Mental,
+スタミナ Stamina, 球速 Velocity, 変化球 Breaking, 走り込み Roadwork, コントロール Control, 投球 Pitching,
+捕球 Catching, ペッパー Pepper, 肩力 Arm, ミーティング Meeting, 特別変化球 Sp. Break, 特別打撃 Sp. Bat,
+巧打力 Contact, 長打力 Power; 故障率 Injury, 評価 Rating.
+
 Pitch names on the HUD use MLB Power Pros 2008's English names, shortened where the Japanese is short:
 
 | Japanese | English | | Japanese | English |
