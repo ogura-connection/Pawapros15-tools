@@ -52,7 +52,8 @@ COMMAND_GLYPHS = {
     "n": ("Run", 0), "o": ("Boost", 0), "p": ("Shop", 0), "q": ("Equip", 0), "r": ("Practice", 0),
     "s": ("Use", 0), "t": ("Boost", 0), "u": ("Run", 0), "y": ("System", 0),
 }
-DERIVED = {"G": "C of 'SC' with a crossbar", "I": "the l of 'Fielding'"}
+DERIVED = {"G": "C of 'SC' with a crossbar", "I": "the l of 'Fielding'",
+           "J": "U of 'Use' without the top of its left stem", "b": "d of 'Food' mirrored"}
 G_ROWS = {7: "5561.35553", 8: "5561.35565", 9: "5661...265", 10: "4662..1565", 11: "266522565.",
           12: ".5666664.."}
 
@@ -203,6 +204,13 @@ def command_font(project=None):
     glyphs["G"] = (g, drop)
     stem, drop = glyphs["l"]
     glyphs["I"] = (stem, drop)
+    u, drop = glyphs["U"]
+    j = u.copy()
+    j[:8, :5] = 0
+    j[8, :5] = [1, 4, 4, 1, 0]
+    glyphs["J"] = (j, drop)
+    dd, drop = glyphs["d"]
+    glyphs["b"] = (dd[:, ::-1].copy(), drop)
     _fonts["command"] = {"words": words, "glyphs": glyphs, "space": 4, "gap": 1}
     return _fonts["command"]
 
