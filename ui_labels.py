@@ -1,0 +1,254 @@
+#!/usr/bin/env python3
+"""Put English lettering from the MLB Power Pros games into the Pawapuro 15 UI pages.
+
+  ui_labels.py boxes PACK TEX [MLB_PROJECT_BIN]   label boxes (left, top, right, bottom) of one MLB texture
+  ui_labels.py preview SPEC.json OUT.png          before/after sheet of every label in a spec, nothing written
+  ui_labels.py apply SPEC.json                    write the labels into DATA/files/<arc> (original kept first)
+  ui_labels.py restore ARC                        put the saved original .arc back
+
+A spec is a JSON file:
+  {"arc": "scs_main.arc",
+   "project": "~/Projects/Pawapuro/MLB2008/DATA/files/project.bin",       (optional)
+   "labels": [{"bank": "y5_smi_0", "page": 1, "palette": 28, "rect": [x0, y0, x1, y1],
+               "pack": "ScsComMain", "tex": 0, "box": [l, t, r, b], "style": "comcmd",
+               "roles": {...}, "max_stretch": 1.6, "name": "Practice"}, ...]}
+`rect` is a sprite rectangle of the page (see ui_textures.py parts); it is cleared and the label is
+centred in it. Source and target are both reduced to a "tone" per pixel: the source colours are sorted
+into roles (fill, ring, outer edge for the stat labels; plate, letters, edge for the command
+labels) and each role is given a range of palette indices of the target page. The tone is resampled
+with an area filter, so strokes thin out instead of dropping pixels, and then rounded to a palette index.
+Nothing is drawn that is not in the MLB sheets: a label with no MLB counterpart is not in a spec.
+"""
+import json
+import os
+import struct
+import sys
+
+import numpy as np
+from PIL import Image
+
+import mlb_assets as G
+import ui_textures as U
+
+PROJECT = os.path.expanduser("~/Projects/Pawapuro/MLB2008/DATA/files/project.bin")
+_projects = {}
+
+
+def mlb_texture(pack, tex, project=None):
+    """(indices (h, w), palette (n, 4), format) of the tex-th C4/C8 texture of an MLB .pack."""
+    path = os.path.expanduser(project or PROJECT)
+    if path not in _projects:
+        _projects[path] = G.Project(path)
+    d = _projects[path].read("/%s.pack" % pack)
+    o = G.decode_all(d)[tex][0]
+    h, w, fmt, ptr = struct.unpack_from(">HHII", d, o)
+    q = ptr & 0xFFFFFFF
+    n = 16 if fmt == 8 else 256
+    pal = G._rgb5a3(np.frombuffer(d, dtype=">u2", count=n, offset=q - n * 2))
+    if fmt == 8:
+        raw = np.frombuffer(d, dtype=np.uint8, count=w * h // 2, offset=q)
+        idx = G._blocks(np.stack([raw >> 4, raw & 15], -1).reshape(-1), h, w, 8, 8)
+    else:
+        idx = G._blocks(np.frombuffer(d, dtype=np.uint8, count=w * h, offset=q), h, w, 4, 8)
+    return idx, pal, fmt
+
+
+def find_boxes(idx, gap=3):
+    """Boxes (l, t, r, b) of the non-background shapes of an index image, shapes closer than `gap` merged."""
+    mask = idx != 0
+    grown = mask.copy()
+    for _ in range(gap):
+        g = grown.copy()
+        g[1:] |= grown[:-1]
+        g[:-1] |= grown[1:]
+        g[:, 1:] |= grown[:, :-1]
+        g[:, :-1] |= grown[:, 1:]
+        grown = g
+    h, w = grown.shape
+    seen = np.zeros_like(grown)
+    boxes = []
+    for y0 in range(h):
+        for x0 in range(w):
+            if not grown[y0, x0] or seen[y0, x0]:
+                continue
+            stack, pts = [(y0, x0)], []
+            seen[y0, x0] = True
+            while stack:
+                y, x = stack.pop()
+                pts.append((y, x))
+                for yy, xx in ((y + 1, x), (y - 1, x), (y, x + 1), (y, x - 1)):
+                    if 0 <= yy < h and 0 <= xx < w and grown[yy, xx] and not seen[yy, xx]:
+                        seen[yy, xx] = True
+                        stack.append((yy, xx))
+            ys, xs = zip(*[p for p in pts if mask[p]]) if any(mask[p] for p in pts) else (None, None)
+            if ys:
+                boxes.append((min(xs), min(ys), max(xs) + 1, max(ys) + 1))
+    return sorted(boxes, key=lambda b: (b[1] // 12, b[0]))
+
+
+# ── Source styles: (indices, palette) -> role class and 0..1 position inside the role ────────────
+
+def luma(c):
+    return (0.299 * c[..., 0] + 0.587 * c[..., 1] + 0.114 * c[..., 2]) / 255.0
+
+
+def style_param(idx, pal):
+    """Stat labels of ScsParamPlate: blue fill, white-to-light-blue ring, navy outer edge."""
+    c = pal[idx].astype(np.float32)
+    navy = (c[..., 2] < 150) & (c[..., 1] < 20)
+    fill = (c[..., 0] < 20) & (c[..., 2] > 200) & ~navy
+    cls = np.where(navy, "outer", np.where(fill, "fill", "ring"))
+    pos = np.clip((luma(c) - 0.55) / 0.45, 0, 1)
+    return cls, pos
+
+
+def style_comcmd(idx, pal):
+    """Command words of ScsComMain: grey rim and shadow (indices 1-8), teal plate with mint letters (9-15)."""
+    c = pal[idx].astype(np.float32)
+    teal = idx >= 9
+    cls = np.where(teal, "inner", "edge")
+    pos = np.where(teal, np.clip((idx - 9) / 6.0, 0, 1), luma(c))
+    return cls, pos
+
+
+STYLES = {"param": style_param, "comcmd": style_comcmd}
+
+
+def source_tone(spec, project=None):
+    """(alpha 0/1, tone, cls) of the cropped source label; tone is in target palette index units."""
+    idx, pal, _ = mlb_texture(spec["pack"], spec["tex"], project)
+    l, t, r, b = spec["box"]
+    idx = idx[t:b, l:r]
+    cls, pos = STYLES[spec["style"]](idx, pal)
+    tone = np.zeros(idx.shape, np.float32)
+    for role, (lo, hi) in spec["roles"].items():
+        m = cls == role
+        tone[m] = lo + (hi - lo) * pos[m]
+    alpha = (idx != 0).astype(np.float32)
+    ys, xs = np.nonzero(alpha)
+    sl = (slice(ys.min(), ys.max() + 1), slice(xs.min(), xs.max() + 1))
+    return alpha[sl], tone[sl], cls[sl]
+
+
+def fit(alpha, tone, w, h, max_stretch=1.6, max_scale=1.0):
+    """Resample a label to fit w x h: uniform scale (never above max_scale), then stretched vertically
+    up to max_stretch to use the height of the rectangle. Returns (alpha, tone) of the new size."""
+    sh, sw = alpha.shape
+    sx = min(w / sw, max_scale)
+    sy = min(sx * max_stretch, h / sh, max_scale * max_stretch)
+    sy = max(sy, min(sx, h / sh))
+    nw, nh = max(1, round(sw * sx)), max(1, round(sh * sy))
+    if (nw, nh) == (sw, sh):
+        return alpha, tone
+    a = Image.fromarray(alpha, "F")
+    t = Image.fromarray(tone * alpha, "F")
+    a2 = np.asarray(a.resize((nw, nh), Image.BOX), dtype=np.float32)
+    t2 = np.asarray(t.resize((nw, nh), Image.BOX), dtype=np.float32)
+    return a2, np.where(a2 > 1e-4, t2 / np.maximum(a2, 1e-4), 0)
+
+
+def place(page, rect, alpha, tone, threshold=0.5):
+    """Clear rect (x0, y0, x1, y1) of the index page and draw the label centred in it."""
+    x0, y0, x1, y1 = rect
+    page[y0:y1, x0:x1] = 0
+    h, w = alpha.shape
+    ox, oy = x0 + (x1 - x0 - w) // 2, y0 + (y1 - y0 - h) // 2
+    ys, xs = np.nonzero(alpha >= threshold)
+    page[oy + ys, ox + xs] = np.clip(np.rint(tone[ys, xs]), 1, 15).astype(np.uint8)
+
+
+def render(spec, d, banks, project=None):
+    """The index page with every label of the spec drawn, per (bank, page): {(bank, page): array}."""
+    pages = {}
+    for lab in spec["labels"]:
+        b = next(x for x in banks if x["name"] == lab["bank"])
+        key = (lab["bank"], lab["page"])
+        if key not in pages:
+            off, size = b["pages"][lab["page"]]
+            pages[key] = U.decode_indices(d, off, size).copy()
+        x0, y0, x1, y1 = lab["rect"]
+        alpha, tone, _ = source_tone(lab, project)
+        a, t = fit(alpha, tone, x1 - x0 - lab.get("margin", 2) * 2, y1 - y0 - lab.get("margin", 2) * 2,
+                   lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))
+        place(pages[key], lab["rect"], a, t)
+    return pages
+
+
+def load_spec(path):
+    with open(path) as f:
+        spec = json.load(f)
+    spec["arc"] = spec["arc"] if os.path.exists(spec["arc"]) else os.path.join(U.S.DATA_FILES, spec["arc"])
+    return spec
+
+
+def cmd_preview(spec_path, out):
+    spec = load_spec(spec_path)
+    with open(spec["arc"], "rb") as f:
+        d = f.read()
+    banks = U.banks(d, U.elf_symbols(d))
+    pages = render(spec, d, banks, spec.get("project"))
+    ims = []
+    for (bank, page), new in pages.items():
+        b = next(x for x in banks if x["name"] == bank)
+        pal = U.palette_colours(d, b["pal"])
+        lab = next(x for x in spec["labels"] if x["bank"] == bank and x["page"] == page)
+        col = U.page_colours(pal, lab["palette"], 8192)
+        off, size = b["pages"][page]
+        old = U.decode_indices(d, off, size)
+        for arr in (old, new):
+            im = Image.new("RGBA", (U.PAGE, U.PAGE), (96, 96, 96, 255))
+            im.alpha_composite(Image.fromarray(np.ascontiguousarray(col[arr]), "RGBA"))
+            ims.append(im.resize((U.PAGE * 3, U.PAGE * 3), Image.NEAREST))
+    sheet = Image.new("RGB", (U.PAGE * 6 + 8, U.PAGE * 3 * (len(ims) // 2)), (30, 30, 30))
+    for k, im in enumerate(ims):
+        sheet.paste(im.convert("RGB"), ((k % 2) * (U.PAGE * 3 + 8), (k // 2) * U.PAGE * 3))
+    sheet.save(out)
+    print("%d labels on %d pages -> %s" % (len(spec["labels"]), len(pages), out))
+
+
+def cmd_apply(spec_path):
+    spec = load_spec(spec_path)
+    with open(spec["arc"], "rb") as f:
+        d = f.read()
+    banks = U.banks(d, U.elf_symbols(d))
+    pages = render(spec, d, banks, spec.get("project"))
+    out = bytearray(d)
+    for (bank, page), idx in pages.items():
+        b = next(x for x in banks if x["name"] == bank)
+        off, size = b["pages"][page]
+        out[off:off + size] = U.encode_indices(idx, size)
+    assert len(out) == len(d)
+    U.backup_orig(spec["arc"])
+    with open(spec["arc"], "wb") as f:
+        f.write(out)
+    print("%s: %d labels written to %d pages (%d bytes changed)" % (
+        os.path.basename(spec["arc"]), len(spec["labels"]), len(pages),
+        sum(a != b for a, b in zip(d, out))))
+
+
+def cmd_restore(arc):
+    src = os.path.join(U.ORIG_ARC_DIR, os.path.basename(arc))
+    if not os.path.exists(src):
+        sys.exit("no saved original for %s" % arc)
+    U.shutil.copy2(src, os.path.join(U.S.DATA_FILES, os.path.basename(arc)))
+    print("restored", arc)
+
+
+def main():
+    a = sys.argv[1:]
+    if a[:1] == ["boxes"] and len(a) >= 3:
+        idx, _, _ = mlb_texture(a[1], int(a[2]), a[3] if len(a) > 3 else None)
+        for k, b in enumerate(find_boxes(idx)):
+            print(k, b, "%dx%d" % (b[2] - b[0], b[3] - b[1]))
+    elif a[:1] == ["preview"] and len(a) == 3:
+        cmd_preview(a[1], a[2])
+    elif a[:1] == ["apply"] and len(a) == 2:
+        cmd_apply(a[1])
+    elif a[:1] == ["restore"] and len(a) == 2:
+        cmd_restore(a[1])
+    else:
+        print(__doc__)
+
+
+if __name__ == "__main__":
+    main()
