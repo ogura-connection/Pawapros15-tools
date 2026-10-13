@@ -6,6 +6,7 @@
   ui_labels.py apply SPEC.json                    write the labels into DATA/files/<arc> (original kept first)
   ui_labels.py restore ARC                        put the saved original .arc back
 
+A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
 A spec is a JSON file:
   {"arc": "scs_main.arc",
    "project": "~/Projects/Pawapuro/MLB2008/DATA/files/project.bin",       (optional)
@@ -112,6 +113,33 @@ def style_comcmd(idx, pal):
 STYLES = {"param": style_param, "comcmd": style_comcmd}
 
 
+def drop_slivers(mask):
+    """Remove pieces of neighbouring labels that reach into a crop: connected pieces (8-way) that touch
+    the border and are at most 2 pixels wide or tall."""
+    h, w = mask.shape
+    seen = np.zeros_like(mask)
+    keep = mask.copy()
+    for y0, x0 in zip(*np.nonzero(mask)):
+        if seen[y0, x0]:
+            continue
+        stack, pts = [(y0, x0)], []
+        seen[y0, x0] = True
+        while stack:
+            y, x = stack.pop()
+            pts.append((y, x))
+            for yy in range(max(y - 1, 0), min(y + 2, h)):
+                for xx in range(max(x - 1, 0), min(x + 2, w)):
+                    if mask[yy, xx] and not seen[yy, xx]:
+                        seen[yy, xx] = True
+                        stack.append((yy, xx))
+        ys, xs = zip(*pts)
+        touches = min(ys) == 0 or min(xs) == 0 or max(ys) == h - 1 or max(xs) == w - 1
+        if touches and (max(xs) - min(xs) < 2 or max(ys) - min(ys) < 2):
+            for y, x in pts:
+                keep[y, x] = False
+    return keep
+
+
 def source_tone(spec, project=None):
     """(alpha 0/1, tone, cls) of the cropped source label; tone is in target palette index units."""
     idx, pal, _ = mlb_texture(spec["pack"], spec["tex"], project)
@@ -122,7 +150,7 @@ def source_tone(spec, project=None):
     for role, (lo, hi) in spec["roles"].items():
         m = cls == role
         tone[m] = lo + (hi - lo) * pos[m]
-    alpha = (idx != 0).astype(np.float32)
+    alpha = drop_slivers(idx != 0).astype(np.float32)
     ys, xs = np.nonzero(alpha)
     sl = (slice(ys.min(), ys.max() + 1), slice(xs.min(), xs.max() + 1))
     return alpha[sl], tone[sl], cls[sl]
@@ -165,6 +193,9 @@ def render(spec, d, banks, project=None):
             off, size = b["pages"][lab["page"]]
             pages[key] = U.decode_indices(d, off, size).copy()
         x0, y0, x1, y1 = lab["rect"]
+        if "pack" not in lab:                       # a rectangle that is only cleared
+            pages[key][y0:y1, x0:x1] = 0
+            continue
         alpha, tone, _ = source_tone(lab, project)
         a, t = fit(alpha, tone, x1 - x0 - lab.get("margin", 2) * 2, y1 - y0 - lab.get("margin", 2) * 2,
                    lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))

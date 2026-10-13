@@ -72,6 +72,18 @@
    }
   },
   {
+   "name": "(blank)",
+   "bank": "y5_np_0",
+   "page": 6,
+   "palette": 58,
+   "rect": [
+    56,
+    24,
+    72,
+    48
+   ]
+  },
+  {
    "name": "Position",
    "bank": "y5_np_0",
    "page": 6,
@@ -348,6 +360,262 @@
     "outer": [
      3,
      3
+    ]
+   }
+  },
+  {
+   "name": "FLD",
+   "bank": "y5_np_0",
+   "page": 7,
+   "palette": 58,
+   "rect": [
+    0,
+    72,
+    32,
+    96
+   ],
+   "pack": "ScsParamPlate",
+   "tex": 0,
+   "box": [
+    207,
+    70,
+    254,
+    94
+   ],
+   "style": "param",
+   "roles": {
+    "fill": [
+     11,
+     15
+    ],
+    "ring": [
+     2,
+     2
+    ],
+    "outer": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "name": "Motivation",
+   "bank": "y5_np_0",
+   "page": 7,
+   "palette": 30,
+   "rect": [
+    40,
+    72,
+    88,
+    96
+   ],
+   "pack": "ScsParamPlate",
+   "tex": 0,
+   "box": [
+    0,
+    68,
+    53,
+    87
+   ],
+   "style": "param",
+   "roles": {
+    "fill": [
+     1,
+     3
+    ],
+    "ring": [
+     15,
+     15
+    ],
+    "outer": [
+     15,
+     15
+    ]
+   }
+  },
+  {
+   "name": "Practice",
+   "bank": "y5_smi_0",
+   "page": 1,
+   "palette": 28,
+   "rect": [
+    0,
+    0,
+    40,
+    32
+   ],
+   "pack": "ScsComMain",
+   "tex": 0,
+   "box": [
+    64,
+    0,
+    129,
+    29
+   ],
+   "style": "comcmd",
+   "roles": {
+    "inner": [
+     8,
+     14
+    ],
+    "edge": [
+     3,
+     7
+    ]
+   }
+  },
+  {
+   "name": "Hospital",
+   "bank": "y5_smi_0",
+   "page": 1,
+   "palette": 28,
+   "rect": [
+    40,
+    0,
+    80,
+    32
+   ],
+   "pack": "ScsComMain",
+   "tex": 0,
+   "box": [
+    128,
+    85,
+    193,
+    113
+   ],
+   "style": "comcmd",
+   "roles": {
+    "inner": [
+     8,
+     14
+    ],
+    "edge": [
+     3,
+     7
+    ]
+   }
+  },
+  {
+   "name": "Shop",
+   "bank": "y5_smi_0",
+   "page": 1,
+   "palette": 28,
+   "rect": [
+    40,
+    64,
+    80,
+    96
+   ],
+   "pack": "ScsComMain",
+   "tex": 0,
+   "box": [
+    457,
+    29,
+    507,
+    58
+   ],
+   "style": "comcmd",
+   "roles": {
+    "inner": [
+     8,
+     14
+    ],
+    "edge": [
+     3,
+     7
+    ]
+   }
+  },
+  {
+   "name": "Data",
+   "bank": "y5_smi_0",
+   "page": 1,
+   "palette": 28,
+   "rect": [
+    80,
+    64,
+    128,
+    96
+   ],
+   "pack": "ScsComMain",
+   "tex": 0,
+   "box": [
+    392,
+    0,
+    440,
+    29
+   ],
+   "style": "comcmd",
+   "roles": {
+    "inner": [
+     8,
+     14
+    ],
+    "edge": [
+     3,
+     7
+    ]
+   }
+  },
+  {
+   "name": "System",
+   "bank": "y5_smi_0",
+   "page": 2,
+   "palette": 28,
+   "rect": [
+    0,
+    0,
+    56,
+    32
+   ],
+   "pack": "ScsComMain",
+   "tex": 0,
+   "box": [
+    449,
+    0,
+    512,
+    29
+   ],
+   "style": "comcmd",
+   "roles": {
+    "inner": [
+     8,
+     14
+    ],
+    "edge": [
+     3,
+     7
+    ]
+   }
+  },
+  {
+   "name": "Boost",
+   "bank": "y5_smi_0",
+   "page": 2,
+   "palette": 28,
+   "rect": [
+    64,
+    0,
+    128,
+    32
+   ],
+   "pack": "ScsComMain",
+   "tex": 0,
+   "box": [
+    196,
+    0,
+    252,
+    29
+   ],
+   "style": "comcmd",
+   "roles": {
+    "inner": [
+     8,
+     14
+    ],
+    "edge": [
+     3,
+     7
     ]
    }
   }
