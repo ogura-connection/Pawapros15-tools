@@ -723,7 +723,7 @@ RENDER = {
     # the screen title, pink in a blue outline on a white band with a dark shadow (54, 55)
     "shoptab": haloed(None, 8, [9, 10, 11, 12, 13, 14, 15], fill=[1, 1, 2, 3, 3, 4, 4, 5, 5], light=8),
     "shopmoney": haloed([0, 7, 6, 4, 3, 2, 1], 8, [13, 12, 12, 11, 11, 10, 12, 14]),
-    "shopcancel": haloed([0, 12, 11, 7, 5, 3, 1], 14, [8, 10, 9, 9, 9, 9, 8]),
+    "shopcancel": haloed([0, 12, 11, 7, 5, 3, 1], 14, [8, 10, 9, 9, 9, 9, 8], 1),
     "shoptag": outlined([0, 9, 10, 12, 13, 14, 15], 8, 8),
     "shophint": boxed([1, 4, 7, 9, 11, 13, 15], (3, 4), (31, 21)),
     "shoptitle": logo([12, 12, 13, 13, 15, 15, 14], [14], 2, 10, 8, [1, 1]),
