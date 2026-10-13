@@ -1,0 +1,82 @@
+{
+ "arc": "scs_sce1.arc",
+ "repack": [
+  {
+   "bank": "y5_siba_1",
+   "palette": 19,
+   "font": "ttf:rounded:13:0:0.9:0.6",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     88,
+     120
+    ],
+    [
+     0,
+     88,
+     56,
+     128,
+     80
+    ],
+    [
+     1,
+     0,
+     56,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      88,
+      40
+     ],
+     "text": "Rank & File",
+     "style": "rank0"
+    },
+    {
+     "from": [
+      0,
+      0,
+      40,
+      80,
+      80
+     ],
+     "text": "Kakaricho",
+     "style": "rank1"
+    },
+    {
+     "from": [
+      0,
+      0,
+      80,
+      80,
+      120
+     ],
+     "text": "Kacho",
+     "style": "rank2"
+    },
+    {
+     "from": [
+      0,
+      88,
+      56,
+      128,
+      80
+     ],
+     "text": "Post",
+     "font": "tag",
+     "style": "ranktag",
+     "under": 2
+    }
+   ]
+  }
+ ]
+}

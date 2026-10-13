@@ -488,6 +488,12 @@ def ringed(ramp, rings):
 
 RENDER = {
     "command": style_command,
+    # the rank plate of scenario 1 (y5_siba_1): 平社員 grey with a white outline (palette 19), 係長 dark with a white
+    # outline (20), 課長 orange in white and blue (21); 役職 white with a dark outline (20)
+    "rank0": ringed([0, 12, 11, 9, 7, 5, 4], [15, 15]),
+    "rank1": ringed([0, 12, 10, 8, 5, 3, 1], [15, 15]),
+    "rank2": ringed([0, 13, 15, 6, 5, 4, 3], [11, 2, 1]),
+    "ranktag": outlined([0, 8, 10, 12, 13, 14, 15], 2, 3),
     # navy letters, white outline, light blue shadow: the pitch names (palette 32 of z3_nph_scs)
     "pitch": shadowed([0, 7, 6, 4, 3, 2, 1], 8, 14, 2),
     # white letters, navy outline and shadow: 年目 / 月 / 週 of the date (palette 22 of y5_ten)
