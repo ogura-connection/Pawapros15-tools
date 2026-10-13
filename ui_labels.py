@@ -11,6 +11,9 @@
               "labels": [{"from": [page, x0, y0, x1, y1], "text": "Practice"}, {"from": [...]}]}]
 "paint" entries redraw lettering that is part of a plate, in place: {"bank", "page", "rect", "text",
 "font", "ramp": palette index for ink 0 (the plate) to 6}.
+With "copy": [page, x0, y0, x1, y1] (the same plate with nothing on it, taken from the original file) and
+"style" (a ui_type style) the plate is copied into the rectangle and the styled word is centred on it
+("dx", "dy" move it).
 A label of a group without "text" keeps its Japanese art. A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
 A spec is a JSON file:
   {"arc": "scs_main.arc",
@@ -379,6 +382,17 @@ def render(spec, d, banks, project=None):
             pages[key] = U.decode_indices(d, *b["pages"][lab["page"]]).copy()
         x0, y0, x1, y1 = lab["rect"]
         ink, base = ui_type.typeset(lab["text"], lab["font"], project)
+        if "copy" in lab:                           # a plate with nothing on it, from the original file
+            cp, cx0, cy0, cx1, cy1 = lab["copy"]
+            pages[key][y0:y1, x0:x1] = U.decode_indices(d, *b["pages"][cp])[cy0:cy1, cx0:cx1]
+            art, _ = ui_type.RENDER[lab["style"]](ink, base)
+            h, w = art.shape
+            ox, oy = x0 + (x1 - x0 - w) // 2 + lab.get("dx", 0), y0 + (y1 - y0 - h) // 2 + lab.get("dy", 0)
+            area = pages[key][oy:oy + h, ox:ox + w]
+            area[art > 0] = art[art > 0]
+            render.repacked.append((lab["bank"], lab["text"], "painted", "%dx%d" % (w, h),
+                                    "page %d x %d y %d" % (lab["page"], ox, oy), 0))
+            continue
         h, w = ink.shape
         ox, oy = x0 + (x1 - x0 - w) // 2, y0 + (y1 - y0 - base) // 2
         pages[key][y0:y1, x0:x1] = lab["ramp"][0]

@@ -727,6 +727,10 @@ RENDER = {
     "shoptag": outlined([0, 9, 10, 12, 13, 14, 15], 8, 8),
     "shophint": boxed([1, 4, 7, 9, 11, 13, 15], (3, 4), (31, 21)),
     "shoptitle": logo([12, 12, 13, 13, 15, 15, 14], [14], 2, 10, 8, [1, 1]),
+    # 売り切れ！: green letters, lighter at the top, in a dark outline on a white band, lilac shadow (palette 63)
+    "shopsold": logo([7, 7, 7, 6, 6, 6, 5, 5, 4, 3], [2, 3], 1, 15, 13, [8, 9]),
+    # the gear names on the item icons (m4_item1, palette 13, a grey ramp): white, black outline, grey shadow
+    "gear": shadowed([0, 4, 7, 10, 12, 14, 15], 1, 9, 1),
     # the item list (scs_main.arc, z3_itw): tab names, blue shading to pale at the foot, white band (palettes 50, 51)
     "itemtab": haloed(None, 15, [14, 14, 14, 14, 13, 12, 10, 9, 8, 7, 7, 7],
                       fill=[1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6, 7, 8], light=15),
