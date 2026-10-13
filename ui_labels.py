@@ -348,6 +348,15 @@ def split_words(mask, cls, parts=2, min_gap=2):
     return out
 
 
+def bank_of(banks, group):
+    """The bank a repack group works on. A few files (scs_sys.arc) store the sprites of a bank behind its
+    palette, so ui_textures.banks files them under the next bank: "sprites" names where they ended up."""
+    b = next(x for x in banks if x["name"] == group["bank"])
+    if "sprites" in group:
+        b = dict(b, sprites=next(x for x in banks if x["name"] == group["sprites"])["sprites"])
+    return b
+
+
 def render(spec, d, banks, project=None):
     """The index page with every label of the spec drawn, per (bank, page): {(bank, page): array}.
     render.patches = [(file offset, bytes)] for the sprite parts moved by "repack" groups."""
@@ -356,7 +365,7 @@ def render(spec, d, banks, project=None):
     render.patches, render.repacked = [], []
     for group in spec.get("repack", ()):
         import ui_type
-        b = next(x for x in banks if x["name"] == group["bank"])
+        b = bank_of(banks, group)
         local = {p: a for (name, p), a in pages.items() if name == group["bank"]}
         rows = ui_type.repack(group, d, b, local, render.patches, project)
         for p, a in local.items():
