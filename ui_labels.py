@@ -214,15 +214,19 @@ def render(spec, d, banks, project=None):
 
 
 def load_spec(path):
+    """The spec, with "arc" as a path, and "source" = the untouched original if one was saved: labels
+    are always drawn onto the original pages, so applying a spec twice gives the same file."""
     with open(path) as f:
         spec = json.load(f)
     spec["arc"] = spec["arc"] if os.path.exists(spec["arc"]) else os.path.join(U.S.DATA_FILES, spec["arc"])
+    saved = os.path.join(U.ORIG_ARC_DIR, os.path.basename(spec["arc"]))
+    spec["source"] = saved if os.path.exists(saved) else spec["arc"]
     return spec
 
 
 def cmd_preview(spec_path, out):
     spec = load_spec(spec_path)
-    with open(spec["arc"], "rb") as f:
+    with open(spec["source"], "rb") as f:
         d = f.read()
     banks = U.banks(d, U.elf_symbols(d))
     pages = render(spec, d, banks, spec.get("project"))
@@ -247,7 +251,9 @@ def cmd_preview(spec_path, out):
 
 def cmd_apply(spec_path):
     spec = load_spec(spec_path)
-    with open(spec["arc"], "rb") as f:
+    U.backup_orig(spec["arc"])
+    spec = load_spec(spec_path)
+    with open(spec["source"], "rb") as f:
         d = f.read()
     banks = U.banks(d, U.elf_symbols(d))
     pages = render(spec, d, banks, spec.get("project"))
@@ -257,7 +263,6 @@ def cmd_apply(spec_path):
         off, size = b["pages"][page]
         out[off:off + size] = U.encode_indices(idx, size)
     assert len(out) == len(d)
-    U.backup_orig(spec["arc"])
     with open(spec["arc"], "wb") as f:
         f.write(out)
     print("%s: %d labels written to %d pages (%d bytes changed)" % (
