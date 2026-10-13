@@ -1038,6 +1038,78 @@
      "centre_x": 56
     }
    ]
+  },
+  {
+   "bank": "r3_ai",
+   "palette": 160,
+   "style": "caption",
+   "font": "ttf:rounded:17:0:0.77:0.4",
+   "valign": "centre",
+   "areas": [
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "29",
+     "text": "After Practice"
+    },
+    {
+     "sprite": "27",
+     "text": "Next Day"
+    },
+    {
+     "sprite": "28",
+     "pieces": [
+      {
+       "text": "A Few Days",
+       "palette": 160
+      },
+      {
+       "text": "Later...",
+       "palette": 160
+      }
+     ],
+     "join": 2
+    },
+    {
+     "sprite": "2a",
+     "text": "Tournament Day"
+    },
+    {
+     "sprite": "2b",
+     "pieces": [
+      {
+       "text": "Fateful Draft",
+       "palette": 160
+      },
+      {
+       "text": "Day...",
+       "palette": 160
+      }
+     ],
+     "join": 2
+    }
+   ]
   }
  ],
  "paint": [

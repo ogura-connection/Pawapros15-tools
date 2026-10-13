@@ -673,6 +673,33 @@ def logo(fill, soft, outline, white, rim, shadow, band=2):
     return style
 
 
+def captioned(ramp, outline, soft, ring=2, depth=2):
+    """A style: the scene captions. Letters drawn with `ramp` in a solid `outline` `ring` pixels wide that is
+    also cast `depth` pixels down and to the right; `soft` colours the inner corners of the outer edge."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        pad = ring + 1
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad + depth, w + 2 * pad + depth), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        body = grow(letters, 1)
+        for _ in range(ring - 1):
+            body = grow(body, 1, diagonal=False)
+        dark = body.copy()
+        for k in range(1, depth + 1):
+            dark |= shift(body, k, k)
+        dark |= shift(dark, -1, 0) & shift(dark, 0, -1)          # close the steps the cast leaves
+        near = sum(shift(dark, dy, dx).astype(int) for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)))
+        out = np.zeros(big.shape, np.uint8)
+        out[~dark & (near >= 2)] = soft
+        out[dark] = outline
+        out[letters] = ramp[big[letters]]
+        return out, base + pad
+    return style
+
+
 RENDER = {
     "command": style_command,
     # the ability plates (palette 8 of g3_tn00 in are_abi.arc): white letters, dark blue outline, a paler ring
@@ -748,6 +775,8 @@ RENDER = {
     # the item list (scs_main.arc, z3_itw): tab names, blue shading to pale at the foot, white band (palettes 50, 51)
     "itemtab": haloed(None, 15, [14, 14, 14, 14, 13, 12, 10, 9, 8, 7, 7, 7],
                       fill=[1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6, 7, 8], light=15),
+    # scene captions of scs_main.arc (r3_ai, palette 160): white letters, navy outline and cast shadow
+    "caption": captioned([15, 15, 14, 12, 11, 10, 8], 15, 13),
     "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),
