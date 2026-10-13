@@ -5,6 +5,8 @@
   tl.py show FILE A [B]     print scenes A..B for translating (speaker, layout, Japanese)
   tl.py apply FILE [SCENE]  read English from stdin, one line per text run of the scene, in order;
                             without SCENE the input holds several scenes, each after a line @sNNNN
+  tl.py check FILE          the same input as apply: report wrong line counts and the warnings of merge
+                            for these scenes, store nothing (exit 1 on an error)
   tl.py set FILE OFFSET TEXT  replace the English of one run
   tl.py merge               translation/*.tsv -> _work/translation.json, and check every line
   tl.py status              translated / total runs per file
@@ -147,9 +149,8 @@ def cmd_show(name, first, last):
                                          r["text"].replace("\n", "\\n") or "(empty)"))
 
 
-def cmd_apply(name, scene=None):
-    sc = next(x for x in S.load_scripts() if x.rel.name == name)
-    all_scenes = scenes(sc)
+def read_input(scene=None):
+    """[(scene number, [line, ...]), ...] from stdin."""
     batches, cur = [], None
     for l in sys.stdin:
         l = l.rstrip("\n")
@@ -163,6 +164,13 @@ def cmd_apply(name, scene=None):
                 cur = (int(scene.lstrip("s")), [])
                 batches.append(cur)
             cur[1].append(l)
+    return batches
+
+
+def cmd_apply(name, scene=None):
+    sc = next(x for x in S.load_scripts() if x.rel.name == name)
+    all_scenes = scenes(sc)
+    batches = read_input(scene)
     rows = load_tsv(name)
     for n, lines in batches:
         runs = [r for r in all_scenes[n] if "off" in r]
@@ -176,6 +184,46 @@ def cmd_apply(name, scene=None):
             rows[r["off"]] = (text_hash(r["text"]), "" if en == "-" else en.replace("\\n", "\n"))
     save_tsv(name, rows)
     print("%s: %d scene(s), %d runs stored" % (name, len(batches), sum(len(l) for _, l in batches)))
+
+
+def cmd_check(name):
+    """Dry run of apply: errors (line counts, empty runs, stray characters) and the merge warnings."""
+    sc = next(x for x in S.load_scripts() if x.rel.name == name)
+    all_scenes = scenes(sc)
+    rows, errors, warnings, stored = load_tsv(name), [], [], 0
+    for n, lines in read_input():
+        if not 0 <= n < len(all_scenes):
+            errors.append("s%04d: no such scene" % n)
+            continue
+        runs = [r for r in all_scenes[n] if "off" in r]
+        if len(lines) != len(runs):
+            errors.append("s%04d has %d runs, got %d lines" % (n, len(runs), len(lines)))
+            continue
+        for k, (r, en) in enumerate(zip(runs, lines), 1):
+            if not r["text"]:
+                if en != "-":
+                    errors.append("s%04d line %d is an empty run, expected -" % (n, k))
+                continue
+            en = "" if en == "-" else en.replace("\\n", "\n")
+            stray = sorted(set(c for c in en if ord(c) >= 128 and c not in r["text"]))
+            if stray:
+                errors.append("s%04d line %d: not ASCII and not in the original: %s" % (n, k, " ".join(stray)))
+            if en.count("\n") != r["text"].count("\n") and r["window"] == 26:
+                errors.append("s%04d line %d: a menu run must keep its %d line breaks"
+                              % (n, k, r["text"].count("\n")))
+            rows[r["off"]] = (text_hash(r["text"]), en)
+            stored += 1
+        offs = {r["off"]: k for k, r in enumerate(runs, 1)}
+        for w in check_scene("s%04d" % n, all_scenes[n], rows):
+            head, _, rest = w.partition(":")
+            off = head.split("+")[-1] if "+" in head else ""
+            warnings.append("s%04d line %s:%s" % (n, offs.get(int(off), "?"), rest) if off.isdigit() else w)
+    for w in warnings:
+        print("warning:", w)
+    for e in errors:
+        print("ERROR:", e)
+    print("%d runs checked, %d errors, %d warnings" % (stored, len(errors), len(warnings)))
+    sys.exit(1 if errors else 0)
 
 
 def letters(text):
@@ -273,6 +321,8 @@ def main():
         cmd_show(sys.argv[2], sys.argv[3], sys.argv[-1])
     elif cmd == "apply" and len(sys.argv) in (3, 4):
         cmd_apply(*sys.argv[2:])
+    elif cmd == "check" and len(sys.argv) == 3:
+        cmd_check(sys.argv[2])
     elif cmd == "set" and len(sys.argv) == 5:
         rows = load_tsv(sys.argv[2])
         rows[int(sys.argv[3])] = (rows[int(sys.argv[3])][0], sys.argv[4].replace("\\n", "\n"))
