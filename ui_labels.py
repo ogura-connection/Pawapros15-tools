@@ -262,8 +262,17 @@ def fit(mask, cls, roles, w, h, max_stretch=1.0, max_scale=1.0, method="carve", 
         if sh > h:
             grid = carve_axis(grid, max(h, 1), 0)
         grid = despeckle(grid)
-        table = np.array([0] + [roles[n] for n in names], np.uint8)
-        return table[grid]
+        first = np.array([0] + [np.atleast_1d(roles[n])[0] for n in names], np.uint8)
+        out = first[grid]
+        for k, n in enumerate(names):               # a role given as [top, bottom] is a vertical gradient
+            r = np.atleast_1d(roles[n])
+            if len(r) == 2:
+                rows = np.nonzero((grid == k + 1).any(1))[0]
+                if len(rows):
+                    frac = (np.arange(grid.shape[0]) - rows.min()) / max(rows.max() - rows.min(), 1)
+                    shade = np.rint(r[0] + (r[1] - r[0]) * frac).astype(np.uint8)
+                    out = np.where(grid == k + 1, shade[:, None], out)
+        return out
     sx = min(w / sw, max_scale)
     sy = min(sx * max_stretch, h / sh, max_scale * max_stretch)
     sy = max(sy, min(sx, h / sh))
