@@ -15,7 +15,7 @@ A spec is a JSON file:
                "roles": {...}, "max_stretch": 1.6, "halo": [4, 5], "lines": 2, "name": "Practice"}, ...]}
 "drop" lists roles that are left out of the label (the outer edge of a label already sits on a plate
 of that colour; leaving it out gives the letters the room), "halo" draws that colour back as a one-pixel
-edge afterwards, "lines": 2 stacks the two words of a label (cut at its widest gap) when it is too long
+edge afterwards, "full" = overrides for the unscaled art, used when the label fits as drawn in MLB, "lines": 2 stacks the two words of a label (cut at its widest gap) when it is too long
 for one line. `rect` is a sprite rectangle of the page (see ui_textures.py parts); it is cleared, and the label is
 centred in the part of it the Japanese label covered (its bounding box; "area": "rect" uses the whole
 rectangle), minus `margin` pixels. The source colours are sorted into roles (outer / ring / fill for the
@@ -242,6 +242,7 @@ def split_words(mask, cls, parts=2, min_gap=2):
 def render(spec, d, banks, project=None):
     """The index page with every label of the spec drawn, per (bank, page): {(bank, page): array}."""
     pages = {}
+    lab_used, scales = [], []
     for lab in spec["labels"]:
         b = next(x for x in banks if x["name"] == lab["bank"])
         key = (lab["bank"], lab["page"])
@@ -252,25 +253,37 @@ def render(spec, d, banks, project=None):
         if "pack" not in lab:                       # a rectangle that is only cleared
             pages[key][y0:y1, x0:x1] = 0
             continue
-        mask, cls = source_classes(lab, project)
         # the label may only use the area the Japanese one covered (its neighbours overlap the rest)
         ys, xs = np.nonzero(pages[key][y0:y1, x0:x1])
         area = (x0 + xs.min(), y0 + ys.min(), x0 + xs.max() + 1, y0 + ys.max() + 1) \
             if len(xs) and lab.get("area", "label") == "label" else lab["rect"]
         pages[key][y0:y1, x0:x1] = 0
-        m = lab.get("margin", 0)
-        halo = lab.get("halo", ())
-        pad = len(halo)                              # room for the rings
+        # "full" = the art as drawn in MLB, tried first: used only if it fits without any scaling
+        variant = dict(lab)
+        if "full" in lab:
+            full = dict(lab, **lab["full"])
+            fm, _ = source_classes(full, project)
+            m = full.get("margin", 0)
+            if fm.shape[1] <= area[2] - area[0] - 2 * m and fm.shape[0] <= area[3] - area[1] - 2 * m \
+                    and full.get("lines", 1) == 1:
+                variant = full
+        m = variant.get("margin", 0)
         ax0, ay0, ax1, ay1 = area[0] + m, area[1] + m, area[2] - m, area[3] - m
-        words = split_words(mask, cls, lab["lines"]) if lab.get("lines", 1) > 1 else [(mask, cls)]
+        mask, cls = source_classes(variant, project)
+        halo = variant.get("halo", ())
+        pad = len(halo)                              # room for the rings
+        lab_used.append((lab["name"], variant is not lab))
+        words = split_words(mask, cls, variant["lines"]) if variant.get("lines", 1) > 1 else [(mask, cls)]
         rows = len(words)
         band = (ay1 - ay0) // rows
         for k, (wm, wc) in enumerate(words):
             box = (ax0, ay0 + k * band, ax1, ay0 + (k + 1) * band)
-            label = fit(wm, wc, lab["roles"], box[2] - box[0] - 2 * pad, box[3] - box[1] - 2 * pad,
-                        lab.get("max_stretch", 1.6), lab.get("max_scale", 1.0))
+            label = fit(wm, wc, variant["roles"], box[2] - box[0] - 2 * pad, box[3] - box[1] - 2 * pad,
+                        variant.get("max_stretch", 1.6), variant.get("max_scale", 1.0))
+            scales.append((lab["name"], label.shape, wm.shape))
             draw(pages[key], lab["rect"], box, label)
         add_halo(pages[key], lab["rect"], halo)
+    render.report = {"scales": scales, "full": lab_used}
     return pages
 
 

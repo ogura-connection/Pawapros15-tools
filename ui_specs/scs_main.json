@@ -32,7 +32,17 @@
    ],
    "halo": [
     3
-   ]
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "fill": 15,
+     "ring": 2,
+     "outer": 3
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "CTRL",
@@ -65,7 +75,17 @@
    ],
    "halo": [
     3
-   ]
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "fill": 15,
+     "ring": 2,
+     "outer": 3
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "(blank)",
@@ -110,7 +130,17 @@
    ],
    "halo": [
     3
-   ]
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "fill": 15,
+     "ring": 2,
+     "outer": 3
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "E RES",
@@ -143,7 +173,17 @@
    ],
    "halo": [
     3
-   ]
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "fill": 15,
+     "ring": 2,
+     "outer": 3
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "CON",
@@ -176,7 +216,17 @@
    ],
    "halo": [
     3
-   ]
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "fill": 15,
+     "ring": 2,
+     "outer": 3
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "RUN SPD",
@@ -199,13 +249,13 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
    "margin": 0,
    "drop": [
-    "outer"
+    "outer",
+    "ring"
    ],
    "halo": [
     3
@@ -234,13 +284,13 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
    "margin": 0,
    "drop": [
-    "outer"
+    "outer",
+    "ring"
    ],
    "halo": [
     3
@@ -279,7 +329,17 @@
    ],
    "halo": [
     3
-   ]
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "fill": 15,
+     "ring": 2,
+     "outer": 3
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "TOP SPD",
@@ -302,13 +362,13 @@
    ],
    "style": "param",
    "roles": {
-    "fill": 15,
-    "ring": 2
+    "fill": 15
    },
    "area": "rect",
    "margin": 0,
    "drop": [
-    "outer"
+    "outer",
+    "ring"
    ],
    "halo": [
     3
@@ -347,7 +407,17 @@
    ],
    "halo": [
     3
-   ]
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "fill": 15,
+     "ring": 2,
+     "outer": 3
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "FLD",
@@ -380,7 +450,17 @@
    ],
    "halo": [
     3
-   ]
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "fill": 15,
+     "ring": 2,
+     "outer": 3
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "Motivation",
@@ -434,16 +514,29 @@
    "style": "comcmd",
    "roles": {
     "letter": 13,
-    "plate": 8,
-    "edge_dark": 3,
-    "edge_light": 6
+    "plate": 8
    },
    "halo": [
-    4,
-    5
+    5,
+    4
    ],
    "max_stretch": 2.0,
-   "margin": 0
+   "margin": 0,
+   "drop": [
+    "edge_dark",
+    "edge_light"
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "letter": 13,
+     "plate": 8,
+     "edge_dark": 3,
+     "edge_light": 6
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "Hospital",
@@ -467,16 +560,29 @@
    "style": "comcmd",
    "roles": {
     "letter": 13,
-    "plate": 8,
-    "edge_dark": 3,
-    "edge_light": 6
+    "plate": 8
    },
    "halo": [
-    4,
-    5
+    5,
+    4
    ],
    "max_stretch": 2.0,
-   "margin": 0
+   "margin": 0,
+   "drop": [
+    "edge_dark",
+    "edge_light"
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "letter": 13,
+     "plate": 8,
+     "edge_dark": 3,
+     "edge_light": 6
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "Shop",
@@ -500,16 +606,29 @@
    "style": "comcmd",
    "roles": {
     "letter": 13,
-    "plate": 8,
-    "edge_dark": 3,
-    "edge_light": 6
+    "plate": 8
    },
    "halo": [
-    4,
-    5
+    5,
+    4
    ],
    "max_stretch": 2.0,
-   "margin": 0
+   "margin": 0,
+   "drop": [
+    "edge_dark",
+    "edge_light"
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "letter": 13,
+     "plate": 8,
+     "edge_dark": 3,
+     "edge_light": 6
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "Data",
@@ -533,16 +652,29 @@
    "style": "comcmd",
    "roles": {
     "letter": 13,
-    "plate": 8,
-    "edge_dark": 3,
-    "edge_light": 6
+    "plate": 8
    },
    "halo": [
-    4,
-    5
+    5,
+    4
    ],
    "max_stretch": 2.0,
-   "margin": 0
+   "margin": 0,
+   "drop": [
+    "edge_dark",
+    "edge_light"
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "letter": 13,
+     "plate": 8,
+     "edge_dark": 3,
+     "edge_light": 6
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "System",
@@ -566,16 +698,29 @@
    "style": "comcmd",
    "roles": {
     "letter": 13,
-    "plate": 8,
-    "edge_dark": 3,
-    "edge_light": 6
+    "plate": 8
    },
    "halo": [
-    4,
-    5
+    5,
+    4
    ],
    "max_stretch": 2.0,
-   "margin": 0
+   "margin": 0,
+   "drop": [
+    "edge_dark",
+    "edge_light"
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "letter": 13,
+     "plate": 8,
+     "edge_dark": 3,
+     "edge_light": 6
+    },
+    "halo": [],
+    "margin": 0
+   }
   },
   {
    "name": "Boost",
@@ -599,16 +744,29 @@
    "style": "comcmd",
    "roles": {
     "letter": 13,
-    "plate": 8,
-    "edge_dark": 3,
-    "edge_light": 6
+    "plate": 8
    },
    "halo": [
-    4,
-    5
+    5,
+    4
    ],
    "max_stretch": 2.0,
-   "margin": 0
+   "margin": 0,
+   "drop": [
+    "edge_dark",
+    "edge_light"
+   ],
+   "full": {
+    "drop": [],
+    "roles": {
+     "letter": 13,
+     "plate": 8,
+     "edge_dark": 3,
+     "edge_light": 6
+    },
+    "halo": [],
+    "margin": 0
+   }
   }
  ]
 }
