@@ -137,6 +137,11 @@ Line counts are text runs in scenario 1.
 - **影山 (Kageyama, the scout):** calm professional talking to himself. Todoroki is "Todoroki-kun".
 - **Team mates and fans:** one-liners. Team mates casual and rough, fans squeal.
 - **Narration:** the player, first person, past tense. **System messages:** neutral, "you".
+- **System-screen helpers** (one set of 9 help lines per helper): neutral; Tamano (locked voice);
+  a stern manager (short orders, "Careful:"); an old codger (ぞい: "eh?", "it does", "Mind,");
+  a gruff manager (plain, one contraction); a girl (わよ / からね: "Let's", "okay?"); the dog
+  (ワン: one "Woof!" at the start of the line, never more).
+- **Tips (サクちょこ = "Success Tips"):** friendly and plain, "you", no contractions needed.
 - **Glossary pop-ups (【 】):** one or two dictionary-style sentences.
 
 ## Running beats (locked renderings)
@@ -196,6 +201,16 @@ Line counts are text runs in scenario 1.
 | チーム方針 | team policy | |
 | ベンチ入り / スタメン | make the bench / starter | |
 | 特殊能力 | special ability | |
+| 広角打法 / プルヒッター | Spray Hitter / Pull Hitter | MLB Power Pros names |
+| ノビ / ジャイロボール | Fastball Life / Spin | MLB Power Pros names |
+| ムービングファスト / ツーシーム | Moving Fastball / 2-Seamer | |
+| サボりぐせ / 弱気 | Laziness / Timidity | MLB Power Pros names |
+| 世渡り上手 / いいやつ / 寝坊 | Smooth Talker / Good Guy / Oversleeper | |
+| 爆弾 | time bomb | the hidden injury risk |
+| ラブパワー / 街の人々 | Love Power / the Townsfolk | |
+| 経験点 / 故障率 | experience points / Injury rate | |
+| 白球ドリーム / 栄冠ナイン | Hakkyu Dream / Eikan Nine | the two Success games |
+| リンクする世界 / 選手名鑑 | Linked World / Player Directory | |
 | スカウト評価 / 監督の評価 | scout rating / Kantoku's rating | |
 | 野球偉人伝 | Lives of the Baseball Greats | |
 | てるてる坊主 | teru teru bozu | |

@@ -116,6 +116,23 @@ Testing: a save state keeps the textures it had loaded, so a state taken inside 
 
 Tested in Dolphin this way: HUD, command bar, Free Time and Items submenus, forecast pop-up, rank plate, practice menu, one work turn. Not tested: the fielder stat labels (the test player is a pitcher), pitch names other than Fastball, Kakaricho/Kacho plates, Fired Up!, Hospital / Date / Game / Treat / Shop / Jobs (not reachable in week 1).
 
+## UI strings: menu and system text outside the scripts (tested in Dolphin)
+
+Tooltips, system-screen help, title-screen help, rating comments and tips are not script text. They are plain tables of big-endian 16-bit glyph numbers in the data sections of the modules: each string sits in a slot of fixed size, padded with glyph 0 (a full-width space) and closed by 0xFFFF. The command tooltips of `scs_main.rel` (sec5+0x3328, before the script) are 18 cells + 0xFFFF + 0 = 40 bytes each. Multi-line strings have no line-break code: the box wraps at a fixed width and the Japanese pads every line with spaces (system help 2 x 18 cells, title help 2 x 16, rating comments 2 x 14, tips 3 x 17).
+
+`ui_strings.py` lists them (`export`, Japanese to `_work/strings/`), keeps the English in `translation/strings/<file>.tsv` (section, offset, hash, English; `|` = new line, padded by the tool) and `merge` writes `_work/strings.json`. `rebuild_scripts.py build` writes each string into its slot with the pair font: two letters per cell, so a slot of 18 cells holds 36 letters. Nothing moves and no file grows. The pairs share the kanji slots with the dialogue, and the kanji of string tables that stay Japanese are counted as in use.
+
+Counts (strings found; some are glyph grids, not text): `scs_main.rel` 117, `scs_sys.rel` 63, `scs_rens.rel` 71, `scs_titl.rel` 4, `scs_end.rel` 35, `scs_data.rel` 185 (condition descriptions and team-mate comments), `scs_item.rel` 1,165. Translated: 204 (command tooltips, system help in its 7 voices, title help, 51 tips, 5 confirmations, rating comments, equipment list of `scs_rens.rel`).
+
+Seen in game: command tooltips, title help, system help (Tamano and dog variants). Not seen yet: tips, rating comments, the other helper voices, the confirmations.
+
+Found on the way:
+- The equipment names shown in the practice menu (タオル ...) do not come from the `scs_rens.rel` table. They are script text of `scs_main.rel` (window type 30: 1,750 short name constants: equipment, tournaments, items). Translating them means rebuilding `scs_main.rel`, which the build supports (scenario slot moved) but which has only been tested once, for 50 pages.
+- プログラム and テキスト on the command sheet are debug commands (tooltips シナリオのデバッグ / プログラムノデバッグ); they need no translation. 特別ルーム is the training room.
+- The blue system dialogs (save prompts, the give-up warning) are in neither format; not located yet.
+- After a text build the pair slots of the whole font change, and the font is loaded at boot: boot from scratch and retake the main-menu state (`to_command_menu.py boot`).
+- Continuing a Success save and then resetting without saving triggers the game's reset penalty event on the next continue. `to_command_menu.py resume` restores the clean save first, so it never shows.
+
 ## MLB Power Pros (2007) and MLB Power Pros 2008 as a reference
 
 Both Wii discs hold one `project.bin` (about 2,100 and 2,300 files, mostly `.pack`) and one `ovl_main.rel`. `mlb_assets.py` reads the file table and decodes the UI textures (standard GX C4/C8 with RGB5A3 palettes, uncompressed). The Success Mode packs (`ScsParamPlate`, `ScsComMain`, `ScsButton`, `env_ability_plate` and others) contain the English HUD lettering in the series' own style: stat labels (TRJ, CON, PWR, RUN SPD, ARM STR, FLD, E RES, TOP SPD, CTRL, STAM), Motivation, Vitality, positions, pitch-type abbreviations next to the Japanese sheet they replaced, months and weeks, and command buttons. English text is stored as 16-bit glyph strings with the same glyph numbers as Pawapuro 15. The container and sprite layout differ from Pawapuro 15, so nothing drops in as a file: labels have to be cut out and placed into Pawapuro 15's sheets. The first import (scs_main.arc) is described under UI graphics.
@@ -210,4 +227,6 @@ python3 rebuild_scripts.py build   # apply _work/translation.json and install to
 python3 rebuild_scripts.py restore # put the original files back
 python3 ram_scan.py STATE          # loaded modules and memory map from a Dolphin save state
 python3 tl.py export|apply|merge   # translation workflow: scenes out, English in translation/*.tsv
+python3 ui_strings.py export|apply|merge   # menu and system strings, English in translation/strings/*.tsv
+python3 ui_labels.py apply ui_specs/scs_main.json   # English lettering into a sprite sheet (.arc)
 ```
