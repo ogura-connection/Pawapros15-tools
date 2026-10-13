@@ -123,10 +123,10 @@
     {"sprite": "52", "text": "Workaholic", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
     {"sprite": "53", "text": "Smooth Talker", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
     {"sprite": "54", "text": "Cold", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]}]},
-  {"bank": "y5_mh_0", "palette": 147, "font": "ttf:rounded:15:0:0.9:0.5", "valign": "centre", "align": "left", "areas": [[1, 0, 72, 112, 128], [2, 0, 32, 80, 128], [3, 0, 72, 112, 128]], "labels": [
+  {"bank": "y5_mh_0", "palette": 147, "font": "ttf:rounded:19:0:0.9:0.6", "valign": "centre", "align": "left", "areas": [[1, 0, 72, 112, 128], [2, 0, 32, 80, 128], [3, 0, 72, 112, 128]], "labels": [
     {"sprite": "04", "text": "Kantoku", "style": "rater147"},
-    {"sprite": "05", "text": "Teammates", "style": "rater149", "font": "ttf:rounded:13:0:0.85:0.5"},
+    {"sprite": "05", "text": "Teammates", "style": "rater149", "font": "ttf:rounded:15:0:0.85:0.6"},
     {"sprite": "06", "text": "Scout", "style": "rater148"},
-    {"sprite": "09", "text": "Kantoku\n& Shacho", "style": "rater147", "font": "ttf:rounded:11:0:0.9:0.4"},
+    {"sprite": "09", "text": "Kantoku\n& Shacho", "style": "rater147", "font": "ttf:rounded:13:0:0.9:0.5"},
     {"sprite": "0a", "text": "Bucho", "style": "rater150"}]}
  ]}
