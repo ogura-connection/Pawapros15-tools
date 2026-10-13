@@ -27,6 +27,9 @@ Translation file: a JSON list of entries in the format of _work/story_text.json
 "file" + "section_offset" identify the run, "text" (optional) is checked against the original,
 "en" is the replacement. Use \\n for a line break inside the run. Entries without "en" are ignored.
 
+UI strings (menu and system text in fixed 16-bit slots, see ui_strings.py) come from
+_work/strings.json and are written into their slots in place: no size changes, nothing moves.
+
 English is stored two letters per glyph cell (see pair_font.py): every letter pair that occurs
 gets a glyph slot of a kanji the remaining Japanese text does not use, and the build draws the
 pairs into fonttex2.rel. A dialogue line is 17 cells, so 34 letters. Japanese characters in an
@@ -48,6 +51,7 @@ import sys
 
 import pair_font
 import scan_story as S
+import ui_strings
 from pawapuro15_text_tools import char_to_glyph
 
 ORIG_DIR = os.path.join(S.WORK_DIR, "orig")
@@ -337,9 +341,22 @@ def load_translation(path, scripts):
     return texts
 
 
-def assign_pairs(scripts, texts, orig):
+def assign_pairs(scripts, texts, orig, strings=None):
     """Choose a glyph slot for every letter pair in the translation. Returns {pair: glyph index}."""
     pairs, usage = set(), collections.Counter()
+    for name, slots_ in (strings or {}).items():
+        for _, en in slots_.values():
+            for kind, value in pair_font.text_segments(en):
+                if kind == "pair" and value != "  ":
+                    pairs.add(value)
+                elif kind == "char":
+                    usage[char_to_glyph(value)] += 1
+    for sc in scripts:              # the string tables of the script modules that stay Japanese
+        idx = sorted(sc.kind)
+        done = (strings or {}).get(sc.rel.name, {})
+        for st in ui_strings.find(sc.rel, (sc.sec, idx[0] * 2, (idx[-1] + 1) * 2)):
+            if (st["section"], st["offset"]) not in done:
+                usage.update(u for u in st["units"] if u)
     for sc in scripts:
         new = texts.get(sc.rel.name, {})
         for i, (_, units, _) in sc.texts.items():
@@ -385,14 +402,24 @@ def build_font_file(orig, slots):
     return image
 
 
-def build(texts, pad=None):
+def encode_string(en, cells, slots):
+    """An English UI string as the bytes of its slot: glyph numbers, padded with glyph 0."""
+    units = encode_text(en, slots)
+    if S.TEXT_NEWLINE in units or len(units) > cells:
+        raise ValueError("%r does not fit a slot of %d cells (no line breaks)" % (en, cells))
+    return struct.pack(">%dH" % cells, *(units + [0] * (cells - len(units))))
+
+
+def build(texts, pad=None, strings=None):
     """Build every changed module into _work/build/. Returns the list of file names."""
     orig = load_dir(ORIG_DIR)
     scripts = load_scripts(orig)
+    strings = strings or {}
     for sc in scripts:
         if sc.errors or len(sc.hw) * 2 != sc.rel.sections[sc.sec]["size"]:
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
-    slots = assign_pairs(scripts, texts, orig)
+    slots = assign_pairs(scripts, texts, orig, strings)
+    patched = {}                    # module id -> {(section, old offset): new bytes}
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
     remaps, new_secs = {}, {}
     for sc in scripts:
@@ -418,6 +445,20 @@ def build(texts, pad=None):
         else:
             image, n = patch_addends(m, remaps)
             note = "%d addends" % n
+        if m.name in strings:                                    # UI strings, in place
+            image = bytearray(image)
+            patched[m.mod_id] = {}
+            for (sec, off), (cells, en) in strings[m.name].items():
+                data = encode_string(en, cells, slots)
+                remap = remaps.get((m.mod_id, sec), lambda o: o)
+                pos = m.sections[sec]["offset"] + remap(off)     # sections in front of a rebuilt one stay
+                if any(mid == m.mod_id and s < sec for mid, s in remaps):
+                    sys.exit("%s: a string table behind the rebuilt section is not supported" % m.name)
+                assert image[pos + len(data):pos + len(data) + 2] == b"\xff\xff", (m.name, sec, off)
+                image[pos:pos + len(data)] = data
+                patched[m.mod_id][(sec, off)] = data
+            image = bytes(image)
+            note += ", %d UI strings" % len(strings[m.name])
         if image != m.data:
             with open(os.path.join(BUILD_DIR, m.name), "wb") as f:
                 f.write(image)
@@ -430,13 +471,20 @@ def build(texts, pad=None):
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    verify(orig, scripts, repl, remaps)
+    verify(orig, scripts, repl, remaps, patched)
     return changed
 
 
-def verify(orig, old_scripts, repl, remaps):
+def verify(orig, old_scripts, repl, remaps, patched=None):
     """Re-read the built files and compare them with the originals, structure by structure."""
     new = load_dir(ORIG_DIR, BUILD_DIR)
+
+    def expected(m, idx):           # the original section with the UI strings written in
+        d = bytearray(m.sec_data(idx))
+        for (sec, off), data in (patched or {}).get(m.mod_id, {}).items():
+            if sec == idx:
+                d[off:off + len(data)] = data
+        return bytes(d)
     new_scripts = load_scripts(new, remaps)
     for old, sc in zip(old_scripts, new_scripts):
         name = old.rel.name
@@ -464,10 +512,11 @@ def verify(orig, old_scripts, repl, remaps):
         for t, t2 in zip(m.sections, new[mid].sections):
             if (mid, t["index"]) in remaps:
                 r = remaps[(mid, t["index"])]
-                assert m.sec_data(t["index"])[r.hi:] == \
+                assert expected(m, t["index"])[r.hi:] == \
                     new[mid].sec_data(t["index"])[r.hi + r.growth:r.growth + t["size"]], m.name + ": tail"
+                assert expected(m, t["index"])[:r.lo] == new[mid].sec_data(t["index"])[:r.lo], m.name + ": head"
             elif m.name != "fonttex2.rel":          # the font is checked in build_font_file()
-                assert m.sec_data(t["index"]) == new[mid].sec_data(t["index"]), m.name + ": section data"
+                assert expected(m, t["index"]) == new[mid].sec_data(t["index"]), m.name + ": section data"
     print("Verified: scripts re-parse, labels, text and all relocations match the originals.")
 
 
@@ -527,7 +576,7 @@ def cmd_build(args):
     for item in args.pad or []:
         name, size = item.split("=")
         pad[name] = int(size, 0)
-    install(build(texts, pad))
+    install(build(texts, pad, ui_strings.load_for_build()))
 
 
 def cmd_restore(args):
