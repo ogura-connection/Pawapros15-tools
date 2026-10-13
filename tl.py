@@ -21,7 +21,8 @@ only), layout mark, text.
 Layout marks:  B first run of a box   L new line   W new line after a button wait
                + same line as the run before (after a colour change or an inserted name)
 Lines starting with # are notes: {name} = inserted name, colour N = text colour from here on.
-In "apply" input, write \\n for a line break inside a run and a single - for an empty run.
+In "apply" input, write \\n for a line break inside a run, a single - for an empty run, and \\_ for
+a space where an editor would strip it (the end of a line, a run that is only a space).
 """
 import collections
 import glob
@@ -154,10 +155,12 @@ def read_input(scene=None):
     batches, cur = [], None
     for l in sys.stdin:
         l = l.rstrip("\n")
+        blank = not l.strip(" \t\r")
+        l = l.replace("\\_", " ")                    # \_ is a space (safe at the end of a line)
         if l.startswith("@s"):
             cur = (int(l[2:]), [])
             batches.append(cur)
-        elif l.strip(" \t\r"):                       # a line of full-width spaces is text
+        elif not blank:                              # a line of full-width spaces is text
             if cur is None:
                 if scene is None:
                     sys.exit("input must start with @sNNNN")
@@ -208,9 +211,9 @@ def cmd_check(name):
             stray = sorted(set(c for c in en if ord(c) >= 128 and c not in r["text"]))
             if stray:
                 errors.append("s%04d line %d: not ASCII and not in the original: %s" % (n, k, " ".join(stray)))
-            if en.count("\n") != r["text"].count("\n") and r["window"] == 26:
-                errors.append("s%04d line %d: a menu run must keep its %d line breaks"
-                              % (n, k, r["text"].count("\n")))
+            if en.count("\n") != r["text"].count("\\n") and r["window"] == 26:
+                errors.append("s%04d line %d: a menu run must keep its %d line breaks (\\n)"
+                              % (n, k, r["text"].count("\\n")))
             rows[r["off"]] = (text_hash(r["text"]), en)
             stored += 1
         offs = {r["off"]: k for k, r in enumerate(runs, 1)}
@@ -269,7 +272,7 @@ def check_scene(name, rows, done):
         if (r["mark"] == "+" and pending is not None and odd_tail(pending[1]) and en
                 and r["window"] not in WIDE_WINDOWS):
             warn.append("%s +%d: odd number of letters before a same-line run: %r" % (name, *pending))
-        box, box_orig = box + en.count("\n"), box_orig + r["text"].count("\n")
+        box, box_orig = box + en.count("\n"), box_orig + r["text"].count("\\n")
         if box > max(BOX_LINES, box_orig) and r["window"] not in WIDE_WINDOWS and r["window"] != 26:
             warn.append("%s +%d: box has %d lines (original %d)" % (name, r["off"], box, box_orig))
         for k, part in enumerate(en.split("\n")):
