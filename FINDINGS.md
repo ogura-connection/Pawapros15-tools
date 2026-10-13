@@ -103,6 +103,10 @@ A few `.arc` files and `fonttex2.rel` show 1–4 hits each, which are most likel
 
 The `.arc` files are not archives. Except for `RFLRes01.arc` they are ELF objects with full symbol tables, and their `.data` holds sprite banks: `tex_*` (textures), `pal_*` (palettes), `opd_*` (20-byte sprite records, format not decoded yet) and `*_tbl` pointer lists. Most textures are 8,192 bytes: 128x128, 4 bits per pixel, GX 8x8 tiles, uncompressed, with RGB5A3 palettes. Decoding `main_prg.arc` this way gives readable sheets (digits, HUD labels, pitch names, team logos). Labels drawn as graphics can therefore be redrawn and written back in place without moving anything. Open: the `opd_` record layout (which palette and rectangle each sprite uses) and the textures of other sizes.
 
+## MLB Power Pros (2007) and MLB Power Pros 2008 as a reference
+
+Both Wii discs hold one `project.bin` (about 2,100 and 2,300 files, mostly `.pack`) and one `ovl_main.rel`. `mlb_assets.py` reads the file table and decodes the UI textures (standard GX C4/C8 with RGB5A3 palettes, uncompressed). The Success Mode packs (`ScsParamPlate`, `ScsComMain`, `ScsButton`, `env_ability_plate` and others) contain the English HUD lettering in the series' own style: stat labels (TRJ, CON, PWR, RUN SPD, ARM STR, FLD, E RES, TOP SPD, CTRL, STAM), Motivation, Vitality, positions, pitch-type abbreviations next to the Japanese sheet they replaced, months and weeks, and command buttons. English text is stored as 16-bit glyph strings with the same glyph numbers as Pawapuro 15. The container and sprite layout differ from Pawapuro 15, so nothing drops in as a file: labels have to be cut out and placed into Pawapuro 15's sheets. Nothing has been imported yet.
+
 ## Sample lines
 
 | File | File offset | Text |
