@@ -494,11 +494,14 @@ def ringed(ramp, rings):
     return style
 
 
-def haloed(ramp, band, glow, width=2):
+def haloed(ramp, band, glow, width=2, fill=None, light=None):
     """A style: letters drawn with `ramp` in a solid band `width` pixels wide, inside a one-pixel glow whose
     colour runs through `glow` from the top row to the bottom row; below and to the right the glow is
-    two pixels (a soft shadow). The tab and field labels of the Data screen."""
-    ramp, glow = np.array(ramp, np.uint8), np.array(glow, np.uint8)
+    two pixels (a soft shadow). The tab and field labels of the Data screen.
+    With `fill` (palette indices from the top row of the letters to the bottom row) the letters are a
+    vertical gradient instead, and their soft edge runs from the fill towards index `light` (the
+    palette must be a ramp between the two)."""
+    ramp, glow = np.array(ramp if ramp else [0], np.uint8), np.array(glow, np.uint8)
 
     def style(ink, base):
         pad = width + 2
@@ -515,7 +518,13 @@ def haloed(ramp, band, glow, width=2):
         out = np.zeros(big.shape, np.uint8)
         out[far] = np.broadcast_to(shade[:, None], big.shape)[far]
         out[body] = band
-        out[letters] = ramp[big[letters]]
+        if fill:
+            ys = np.nonzero(letters.any(1))[0]
+            f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+            row = np.array(fill)[np.rint(f.clip(0, 1) * (len(fill) - 1)).astype(int)][:, None]
+            out[letters] = np.rint(row + (light - row) * (1 - big / 6.0))[letters].astype(np.uint8)
+        else:
+            out[letters] = ramp[big[letters]]
         return out, base + pad
     return style
 
@@ -553,6 +562,12 @@ RENDER = {
     "datafield": haloed([0, 7, 6, 5, 3, 2, 1], 8, [9, 8, 8, 8, 10, 11, 12, 13, 14, 15]),
     # dark letters in a white band with a blue glow: the screen buttons (palettes 32-36 of z3_dts)
     "databutton": haloed([0, 7, 6, 5, 3, 2, 1], 8, [10, 10, 11, 11, 12, 12, 13, 14, 15]),
+    # letters shading from light at the top to dark at the foot, white band, pale blue glow: the stat names and
+    # tags of the team-mate list (palettes 116-125 of z3_dtn), the equipment headers (82 of z3_dt)
+    "datastat": haloed(None, 8, [8, 9, 10, 11, 12, 13, 14, 15], fill=[5, 4, 4, 3, 3, 2, 2, 1, 1], light=8),
+    "datastat1": haloed(None, 8, [8, 9, 10, 11, 12, 13, 14, 15], 1, fill=[5, 4, 4, 3, 3, 2, 2, 1, 1], light=8),
+    # dark blue at the top to light blue at the foot, white band: 装備中アイテム (palette 80 of z3_dt)
+    "dataequip": haloed(None, 15, [15, 15, 15, 14, 13, 12, 11, 10], fill=[1, 2, 3, 4, 5, 6, 7], light=15),
     # the rank plate of scenario 1 (y5_siba_1): 平社員 grey with a white outline (palette 19), 係長 dark with a white
     # outline (20), 課長 orange in white and blue (21); 役職 white with a dark outline (20)
     "rank0": ringed([0, 12, 11, 9, 7, 5, 4], [15, 15]),
@@ -680,9 +695,14 @@ def repack(group, d, bank, pages, patches, project=None):
             raise ValueError("sprite %s uses x %d-%d y %d-%d of page %d, which this group clears"
                              % (p.sprite, p.x0, p.x1, p.y0, p.y1, p.page))
     art = []
-    for lab, (mine, box) in zip(labels, old):
+    extra = []                                 # (label index, art) of the second and later pieces of a label
+    for k, (lab, (mine, box)) in enumerate(zip(labels, old)):
         style = RENDER[opt(lab, "style", "command")]
-        if "text" in lab:
+        if "pieces" in lab:                    # coloured pieces side by side: one part and one palette each
+            arts = [style(*typeset(pc["text"], opt(lab, "font", "command"), project)) for pc in lab["pieces"]]
+            art.append(arts[0])
+            extra += [(k, a) for a in arts[1:]]
+        elif "text" in lab:
             art.append(style(*typeset(lab["text"], opt(lab, "font", "command"), project)))
         elif "art" in lab:
             art.append(style(*art_ink(lab["art"], project)))
@@ -691,7 +711,8 @@ def repack(group, d, bank, pages, patches, project=None):
             art.append((page(pg)[y0 + box[1]:y0 + box[3], x0 + box[0]:x0 + box[2]].copy(), None))
     sizes = [(a.shape[1], a.shape[0]) for a, _ in art]
     spare = any("sprite" in lab and len(mine) > opt(lab, "layers", 1) for lab, (mine, _) in zip(labels, old))
-    placed = shelf_pack(sizes + ([(4, 4)] if spare else []), areas, tuple(group.get("gap", (1, 1))))
+    placed = shelf_pack(sizes + [(4, 4)] + [(a.shape[1], a.shape[0]) for _, (a, _) in extra], areas,
+                        tuple(group.get("gap", (1, 1))))
     for pg, x0, y0, x1, y1 in clear:
         page(pg)[y0:y1, x0:x1] = 0
     rows = []
@@ -713,6 +734,29 @@ def repack(group, d, bank, pages, patches, project=None):
         if opt(lab, "left") is not None:
             left = opt(lab, "left")
         per = len(mine) // opt(lab, "layers", 1) if "sprite" in lab else 1
+        if "pieces" in lab:                                      # piece n is drawn by part n, left to right
+            more = [(placed[len(labels) + 1 + j], a) for j, (li, a) in enumerate(extra) if li == i]
+            join = opt(lab, "join", 0)                           # pixels a piece overlaps the one before
+            total = w + sum(a[0].shape[1] - join for _, a in more)
+            x_on = (box[0] + box[2]) // 2 - total // 2
+            for n, p in enumerate(mine):
+                pal = lab["pieces"][n]["palette"] if n < len(lab["pieces"]) else p.palette
+                if n == 0:
+                    data = U.pack_part(pg, p.flags, pal, top, x_on, y, x, y + h, x + w)
+                    x_on += w - join
+                elif n <= len(more):
+                    (mp, mx, my), (mimg, mbase) = more[n - 1]
+                    page(mp)[my:my + mimg.shape[0], mx:mx + mimg.shape[1]] = mimg
+                    data = U.pack_part(mp, p.flags, pal, top + base - mbase, x_on, my, mx,
+                                       my + mimg.shape[0], mx + mimg.shape[1])
+                    x_on += mimg.shape[1] - join
+                else:
+                    sp, sx, sy = placed[len(labels)]
+                    data = U.pack_part(sp, 0, p.palette, p.y, p.x, sy, sx, sy + 4, sx + 4)
+                patches.append((p.offset, data))
+            rows.append(("".join(pc["text"] for pc in lab["pieces"]), "%dx%d" % (box[2] - box[0], box[3] - box[1]),
+                         "%dx%d" % (total, h), "page %d x %d y %d" % (pg, x, y), len(mine)))
+            continue
         for k, p in enumerate(mine):
             if "sprite" in lab:                                  # box is in screen coordinates
                 if k % per == 0:                                 # the first piece of each layer shows the new art
