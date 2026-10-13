@@ -149,6 +149,31 @@ def drop_slivers(mask):
     return keep
 
 
+def drop_specks(mask, max_size=3):
+    """Remove connected pieces (8-way) of at most `max_size` pixels: bits of neighbouring labels and
+    shadow dots that the crop box catches."""
+    h, w = mask.shape
+    seen = np.zeros_like(mask)
+    keep = mask.copy()
+    for y0, x0 in zip(*np.nonzero(mask)):
+        if seen[y0, x0]:
+            continue
+        stack, pts = [(y0, x0)], []
+        seen[y0, x0] = True
+        while stack:
+            y, x = stack.pop()
+            pts.append((y, x))
+            for yy in range(max(y - 1, 0), min(y + 2, h)):
+                for xx in range(max(x - 1, 0), min(x + 2, w)):
+                    if mask[yy, xx] and not seen[yy, xx]:
+                        seen[yy, xx] = True
+                        stack.append((yy, xx))
+        if len(pts) <= max_size:
+            for y, x in pts:
+                keep[y, x] = False
+    return keep
+
+
 def source_classes(spec, project=None):
     """(mask, cls) of the cropped source label: mask = pixels of the label, cls = role of each."""
     idx, pal, _ = mlb_texture(spec["pack"], spec["tex"], project)
@@ -158,23 +183,60 @@ def source_classes(spec, project=None):
     mask = drop_slivers(idx != 0)
     for role in spec.get("drop", ()):           # roles the target draws with the plate colour anyway
         mask &= cls != role
+    mask = drop_specks(mask, spec.get("speck", 3))
     ys, xs = np.nonzero(mask)
     sl = (slice(ys.min(), ys.max() + 1), slice(xs.min(), xs.max() + 1))
     return mask[sl], cls[sl]
 
 
-def fit(mask, cls, roles, w, h, max_stretch=1.6, max_scale=1.0):
-    """Resample a label to fit w x h and return its palette indices (0 = clear). Scaled uniformly (never
-    above max_scale), then stretched vertically up to max_stretch to use the height available. Each role
-    is resampled as a coverage map (area filter); a pixel is drawn when the label covers at least 0.4
-    of it (0.4), in the role with the most (weighted) coverage, so the result has hard edges and only the
-    palette entries named in `roles`: no blur."""
+def carve_axis(grid, target, axis):
+    """Remove whole columns (axis 1) or rows (axis 0) of an integer label map until `target` are left.
+    The line that loses the least goes first: lines identical to a neighbour (the middle of a thick
+    stroke, a wide gap) cost nothing, a one-pixel stroke or a one-pixel gap costs a lot. Nothing is
+    averaged, so every remaining pixel is a pixel of the original art."""
+    g = grid if axis == 1 else grid.T
+    cols = list(range(g.shape[1]))
+    g = g.copy()
+    taken = []
+    while g.shape[1] > target:
+        n = g.shape[1]
+        best, best_cost = None, None
+        for c in range(n):
+            left = g[:, c - 1] if c > 0 else np.zeros_like(g[:, 0])
+            right = g[:, c + 1] if c < n - 1 else np.zeros_like(g[:, 0])
+            cur = g[:, c]
+            loss = int((left != cur).sum()) + int((cur != right).sum()) - int((left != right).sum())
+            if c in (0, n - 1):
+                loss += 1                                   # keep the outermost pixels
+            loss = loss * 100 + sum(1 for t in taken if abs(t - cols[c]) <= 2) * 3 + (n - 1 - c) % 2
+            if best_cost is None or loss < best_cost:
+                best, best_cost = c, loss
+        taken.append(cols[best])
+        g = np.delete(g, best, axis=1)
+        del cols[best]
+    return g if axis == 1 else g.T
+
+
+def fit(mask, cls, roles, w, h, max_stretch=1.0, max_scale=1.0, method="carve"):
+    """The label as an array of palette indices (0 = clear) that fits w x h. method "carve" (default)
+    removes the least important columns and rows (see carve_axis); "area" resamples with an area filter
+    (smoother, softer). Labels are never enlarged."""
     sh, sw = mask.shape
+    names = list(roles)
+    if method == "carve":
+        grid = np.zeros(mask.shape, np.int32)
+        for k, name in enumerate(names):
+            grid[mask & (cls == name)] = k + 1
+        if sw > w:
+            grid = carve_axis(grid, max(w, 1), 1)
+        if sh > h:
+            grid = carve_axis(grid, max(h, 1), 0)
+        table = np.array([0] + [roles[n] for n in names], np.uint8)
+        return table[grid]
     sx = min(w / sw, max_scale)
     sy = min(sx * max_stretch, h / sh, max_scale * max_stretch)
     sy = max(sy, min(sx, h / sh))
     nw, nh = max(1, round(sw * sx)), max(1, round(sh * sy))
-    names = list(roles)
     cover = []
     for name in names:
         m = ((cls == name) & mask).astype(np.float32)
@@ -279,7 +341,8 @@ def render(spec, d, banks, project=None):
         for k, (wm, wc) in enumerate(words):
             box = (ax0, ay0 + k * band, ax1, ay0 + (k + 1) * band)
             label = fit(wm, wc, variant["roles"], box[2] - box[0] - 2 * pad, box[3] - box[1] - 2 * pad,
-                        variant.get("max_stretch", 1.6), variant.get("max_scale", 1.0))
+                        variant.get("max_stretch", 1.0), variant.get("max_scale", 1.0),
+                        variant.get("method", "carve"))
             scales.append((lab["name"], label.shape, wm.shape))
             draw(pages[key], lab["rect"], box, label)
         add_halo(pages[key], lab["rect"], halo)
