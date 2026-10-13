@@ -6,7 +6,7 @@
    "palette": 32,
    "style": "motivation",
    "font": "tag",
-   "under": 3,
+   "under": 5,
    "gap": [
     1,
     1
@@ -96,6 +96,53 @@
     {
      "sprite": "65",
      "text": "Power"
+    }
+   ]
+  },
+  {
+   "bank": "z3_smr_0",
+   "palette": 82,
+   "font": "tag",
+   "under": 4,
+   "areas": [
+    [
+     3,
+     0,
+     48,
+     48,
+     72
+    ],
+    [
+     3,
+     80,
+     96,
+     120,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      48,
+      48,
+      72
+     ],
+     "text": "Injury",
+     "style": "plain"
+    },
+    {
+     "from": [
+      3,
+      80,
+      96,
+      120,
+      120
+     ],
+     "text": "Rating",
+     "style": "hint",
+     "under": 3
     }
    ]
   }

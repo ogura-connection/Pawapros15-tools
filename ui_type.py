@@ -504,6 +504,8 @@ RENDER = {
     "glow": ringed([0, 9, 11, 12, 13, 14, 15], [4, 2]),
     # white letters, black outline: the button hints (palette 60 of y5_npm, a grey ramp)
     "hint": outlined([0, 8, 10, 12, 13, 14, 15], 1, 2),
+    # plain black letters, no outline (palette 82 of z3_smr, light grey to black)
+    "plain": outlined([0, 3, 6, 9, 11, 13, 15], 0, 0),
     "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),
