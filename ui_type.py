@@ -366,6 +366,18 @@ def typeset(text, font="command", project=None):
         for y in range(h):
             out[y, lean[y] - low:lean[y] - low + w] = ink[y]
         return out, base
+    if "\n" in text:                                 # lines stacked and centred, 3 clear rows between them
+        lines = [typeset(t, font, project) for t in text.split("\n")]
+        w = max(i.shape[1] for i, _ in lines)
+        rows, base = [], 0
+        for k, (i, b) in enumerate(lines):
+            x = (w - i.shape[1]) // 2
+            rows.append(np.pad(i, ((0, 0), (x, w - i.shape[1] - x))))
+            if k < len(lines) - 1:
+                rows.append(np.zeros((max(3 - (i.shape[0] - b), 1), w), int))
+            else:
+                base = sum(r.shape[0] for r in rows[:-1]) + b
+        return np.vstack(rows), base
     if font.startswith("ttf:"):
         a = font.split(":")
         return ttf_ink(text, a[1], int(a[2]), *[float(x) for x in a[3:6]])
@@ -582,8 +594,39 @@ def titled(ramp, white, shadow, rim, plate=3):
     return style
 
 
+def badged(fill, soft, outline, white, glow):
+    """A style: the large names on the ratings page. Letters filled from `fill`[0] at the top to `fill`[-1]
+    at the foot, with an outline two pixels wide (`soft` = the colours between outline and fill, for the
+    soft edge of the letters), a white band two pixels wide and a `glow` (near, far) below and to the right."""
+    def style(ink, base):
+        pad = 6
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        dark = grow(grow(letters, 1), 1, diagonal=False)
+        band = grow(grow(dark, 1), 1, diagonal=False)
+        out = np.zeros(big.shape, np.uint8)
+        for k in range(len(glow), 0, -1):
+            out[shift(band, k, k)] = glow[k - 1]
+        out[band] = white
+        out[dark] = outline
+        ys = np.nonzero(letters.any(1))[0]
+        f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+        row = np.array(fill)[np.rint(f.clip(0, 1) * (len(fill) - 1)).astype(int)][:, None]
+        edge = np.array([outline] + list(soft) + [0], np.uint8)[np.rint(big * (len(soft) + 1) / 6.0).astype(int)]
+        out[letters] = np.where(big >= 6, np.broadcast_to(row, big.shape), edge)[letters]
+        return out, base + pad
+    return style
+
+
 RENDER = {
     "command": style_command,
+    # the names on the ratings page (palettes 147-150 of y5_mh): Kantoku, Scout, Teammates, Bucho
+    "rater147": badged([8, 9, 10], [2, 3, 5, 6, 7], 1, 11, [12, 14, 13]),
+    "rater148": badged([12, 13, 14, 15], [2, 3, 4, 5], 1, 11, [8, 7, 6]),
+    "rater149": badged([11, 12, 13, 14, 15], [8, 9, 10], 7, 1, [2, 3, 4]),
+    "rater150": badged([14, 13, 12, 8, 7, 6, 5], [2, 3, 4], 1, 15, [13, 10, 11]),
     # the screen titles (palettes 22-28 of z3_dts; every palette has its own order of colours)
     "title22": titled([1, 2, 3, 4, 5, 6, 7], 10, [8, 9], [13, 15], 2),
     "title23": titled([1, 2, 3, 4, 5, 6, 7], 15, [8, 9], [12, 10], 2),
