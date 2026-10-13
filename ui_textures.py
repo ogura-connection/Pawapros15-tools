@@ -14,8 +14,8 @@ The .arc files are ELF objects. Their .data holds sprite banks, named by symbol:
   pal_<bank>       RGB5A3 colours, 16 per palette for the 4-bit pages
   opd_<bank>_NN    one sprite: a 10-byte header (byte 0 = number of parts) followed by that many
                    10-byte parts: page (bit 7 = mirrored, bit 6 = another flag), palette,
-                   offset on screen (x, y as s16), then the rectangle on the page as
-                   rows y0 to y1 and columns x0 to x1 (in that byte order: y0, x0, y1, x1).
+                   offset on screen from the sprite's anchor (y, x as s16), then the
+                   rectangle on the page as rows y0 to y1 and columns x0 to x1 (byte order y0, x0, y1, x1).
                    Page numbers count the tex_ symbols of the bank in file order (the numbers in
                    the symbol names can start at 1).
 Each page is drawn with the palette that most of its sprite parts use, so a page shared by
@@ -62,12 +62,12 @@ def elf_symbols(d):
     return syms
 
 
-Part = collections.namedtuple("Part", "sprite page flags palette x y y0 x0 y1 x1")
+Part = collections.namedtuple("Part", "sprite page flags palette y x y0 x0 y1 x1 offset")
 
 
 def banks(d, syms):
     """Sprite banks of an ELF object in file order:
-    [{"name", "pal": (offset, size) or None, "pages": [(offset, size)], "sprites": {opd name: [Part]}}].
+    [{"name", "pal": (offset, size) or None, "pages": [(offset, size)], "sprites": {opd name: [Part]}}]; Part.offset = file offset of the 10 bytes.
     A bank is the run of opd_, pal_*_tbl, tex_ symbols that ends at its pal_ colour table."""
     out, cur = [], None
     for name in sorted(syms, key=lambda n: syms[n][1] and syms[n][0]):
@@ -80,7 +80,7 @@ def banks(d, syms):
         if kind == "opd_":
             if size >= 20 and size == 10 + 10 * d[off]:
                 cur["sprites"][name] = [
-                    Part(name, d[o] & 0x3F, d[o] & 0xC0, d[o + 1], *struct.unpack_from(">hhBBBB", d, o + 2))
+                    Part(name, d[o] & 0x3F, d[o] & 0xC0, d[o + 1], *struct.unpack_from(">hhBBBB", d, o + 2), o)
                     for o in range(off + 10, off + size, 10)]
         elif kind == "tex_":
             if not name.endswith("_tbl"):
@@ -100,6 +100,11 @@ def banks(d, syms):
         cur["name"] = cur["name"] or re.sub(r"\d\d$", "", cur["page_names"][0][4:])
         out.append(cur)
     return [b for b in out if b["pages"]]
+
+
+def pack_part(page, flags, palette, y, x, y0, x0, y1, x1):
+    """The 10 bytes of a sprite part."""
+    return struct.pack(">BBhhBBBB", page | flags, palette, y, x, y0, x0, y1, x1)
 
 
 def palette_colours(d, pal):
