@@ -1,433 +1,6 @@
 {
  "arc": "scs_main.arc",
- "labels": [
-  {
-   "name": "STAM",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    0,
-    0,
-    64,
-    24
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    115,
-    38,
-    171,
-    61
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    2,
-    5
-   ]
-  },
-  {
-   "name": "CTRL",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    64,
-    0,
-    128,
-    24
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    56,
-    38,
-    111,
-    62
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    2,
-    5
-   ]
-  },
-  {
-   "name": "(blank)",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    56,
-    24,
-    72,
-    48
-   ]
-  },
-  {
-   "name": "Position",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    0,
-    24,
-    56,
-    48
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    173,
-    38,
-    244,
-    62
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    2,
-    5
-   ],
-   "speck": 5
-  },
-  {
-   "name": "E RES",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    72,
-    24,
-    120,
-    48
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    150,
-    100,
-    203,
-    126
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    2,
-    5
-   ]
-  },
-  {
-   "name": "CON",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    0,
-    48,
-    48,
-    72
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    55,
-    6,
-    102,
-    29
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    2,
-    5
-   ]
-  },
-  {
-   "name": "RUN SPD",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    48,
-    48,
-    88,
-    72
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    157,
-    4,
-    208,
-    29
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "outer",
-    "ring"
-   ],
-   "halo": [
-    2
-   ],
-   "lines": 2,
-   "max_stretch": 1.0,
-   "speck": 7
-  },
-  {
-   "name": "ARM STR",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    88,
-    48,
-    128,
-    72
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    150,
-    69,
-    205,
-    97
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "outer",
-    "ring"
-   ],
-   "halo": [
-    2
-   ],
-   "lines": 2,
-   "max_stretch": 1.0,
-   "speck": 7
-  },
-  {
-   "name": "PWR",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    0,
-    72,
-    48,
-    96
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    107,
-    6,
-    154,
-    30
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    2,
-    5
-   ]
-  },
-  {
-   "name": "TOP SPD",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    48,
-    72,
-    88,
-    96
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    1,
-    37,
-    52,
-    62
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "outer",
-    "ring"
-   ],
-   "halo": [
-    2
-   ],
-   "lines": 2,
-   "max_stretch": 1.0,
-   "speck": 7
-  },
-  {
-   "name": "TRJ",
-   "bank": "y5_np_0",
-   "page": 6,
-   "palette": 58,
-   "rect": [
-    88,
-    72,
-    128,
-    96
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    1,
-    6,
-    48,
-    30
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    2,
-    5
-   ]
-  },
-  {
-   "name": "FLD",
-   "bank": "y5_np_0",
-   "page": 7,
-   "palette": 58,
-   "rect": [
-    0,
-    72,
-    32,
-    96
-   ],
-   "pack": "ScsParamPlate",
-   "tex": 0,
-   "box": [
-    207,
-    70,
-    254,
-    94
-   ],
-   "style": "param",
-   "roles": {
-    "fill": [
-     15,
-     12
-    ]
-   },
-   "area": "rect",
-   "margin": 0,
-   "drop": [
-    "ring",
-    "outer"
-   ],
-   "halo": [
-    2,
-    5
-   ]
-  }
- ],
+ "labels": [],
  "repack": [
   {
    "bank": "y5_smi_0",
@@ -624,14 +197,39 @@
   {
    "bank": "y5_np_0",
    "palette": 58,
-   "style": "tag",
-   "font": "tag",
-   "under": 2,
    "areas": [
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
     [
      9,
      0,
      56,
+     128,
+     80
+    ],
+    [
+     7,
+     0,
+     72,
+     88,
+     96
+    ],
+    [
+     0,
+     104,
+     0,
+     128,
+     80
+    ],
+    [
+     4,
+     104,
+     0,
      128,
      80
     ]
@@ -643,9 +241,285 @@
      32,
      128,
      56
+    ],
+    [
+     6,
+     56,
+     24,
+     72,
+     48
     ]
    ],
    "labels": [
+    {
+     "name": "STAM",
+     "from": [
+      6,
+      0,
+      0,
+      64,
+      24
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       115,
+       38,
+       171,
+       61
+      ],
+      "style": "param",
+      "role": "fill"
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "CTRL",
+     "from": [
+      6,
+      64,
+      0,
+      128,
+      24
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       56,
+       38,
+       111,
+       62
+      ],
+      "style": "param",
+      "role": "fill"
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "Position",
+     "from": [
+      6,
+      0,
+      24,
+      56,
+      48
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       173,
+       38,
+       244,
+       62
+      ],
+      "style": "param",
+      "role": "fill",
+      "speck": 5
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "E RES",
+     "from": [
+      6,
+      72,
+      24,
+      120,
+      48
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       150,
+       100,
+       203,
+       126
+      ],
+      "style": "param",
+      "role": "fill"
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "CON",
+     "from": [
+      6,
+      0,
+      48,
+      48,
+      72
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       55,
+       6,
+       102,
+       29
+      ],
+      "style": "param",
+      "role": "fill"
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "RUN SPD",
+     "from": [
+      6,
+      48,
+      48,
+      88,
+      72
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       157,
+       4,
+       208,
+       29
+      ],
+      "style": "param",
+      "role": "fill",
+      "speck": 7
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "ARM STR",
+     "from": [
+      6,
+      88,
+      48,
+      128,
+      72
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       150,
+       69,
+       205,
+       97
+      ],
+      "style": "param",
+      "role": "fill",
+      "speck": 7
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "PWR",
+     "from": [
+      6,
+      0,
+      72,
+      48,
+      96
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       107,
+       6,
+       154,
+       30
+      ],
+      "style": "param",
+      "role": "fill"
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "TOP SPD",
+     "from": [
+      6,
+      48,
+      72,
+      88,
+      96
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       1,
+       37,
+       52,
+       62
+      ],
+      "style": "param",
+      "role": "fill",
+      "speck": 7
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "TRJ",
+     "from": [
+      6,
+      88,
+      72,
+      128,
+      96
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       1,
+       6,
+       48,
+       30
+      ],
+      "style": "param",
+      "role": "fill"
+     },
+     "style": "stat",
+     "under": 2
+    },
+    {
+     "name": "FLD",
+     "from": [
+      7,
+      0,
+      72,
+      32,
+      96
+     ],
+     "art": {
+      "pack": "ScsParamPlate",
+      "tex": 0,
+      "box": [
+       207,
+       70,
+       254,
+       94
+      ],
+      "style": "param",
+      "role": "fill"
+     },
+     "style": "stat",
+     "under": 2,
+     "centre_x": 24
+    },
     {
      "from": [
       9,
@@ -655,6 +529,9 @@
       80
      ],
      "text": "Vitality",
+     "font": "tag",
+     "style": "tag",
+     "under": 2,
      "centre_x": 24
     },
     {
@@ -666,26 +543,11 @@
       80
      ],
      "text": "Passion",
+     "font": "tag",
+     "style": "tag",
+     "under": 2,
      "centre_x": 24
-    }
-   ]
-  },
-  {
-   "bank": "y5_np_0",
-   "palette": 19,
-   "style": "money",
-   "font": "tag",
-   "under": 1,
-   "areas": [
-    [
-     7,
-     90,
-     72,
-     128,
-     88
-    ]
-   ],
-   "labels": [
+    },
     {
      "from": [
       7,
@@ -694,25 +556,11 @@
       128,
       88
      ],
-     "text": "Money"
-    }
-   ]
-  },
-  {
-   "bank": "y5_np_0",
-   "palette": 50,
-   "style": "motivation",
-   "under": 2,
-   "areas": [
-    [
-     7,
-     32,
-     72,
-     88,
-     96
-    ]
-   ],
-   "labels": [
+     "text": "Money",
+     "font": "tag",
+     "style": "money",
+     "under": 1
+    },
     {
      "from": [
       7,
@@ -721,10 +569,52 @@
       88,
       96
      ],
-     "text": "Motivation"
+     "text": "Motivation",
+     "font": "tag",
+     "style": "motivation",
+     "under": 2
+    },
+    {
+     "name": "arrow 0",
+     "from": [
+      6,
+      0,
+      96,
+      32,
+      128
+     ]
+    },
+    {
+     "name": "arrow 1",
+     "from": [
+      6,
+      32,
+      96,
+      64,
+      128
+     ]
+    },
+    {
+     "name": "arrow 2",
+     "from": [
+      6,
+      64,
+      96,
+      96,
+      128
+     ]
+    },
+    {
+     "name": "arrow 3",
+     "from": [
+      6,
+      96,
+      96,
+      128,
+      128
+     ]
     }
-   ],
-   "font": "tag"
+   ]
   }
  ]
 }

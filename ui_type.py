@@ -14,6 +14,7 @@ Fonts
 Styles (how ink becomes palette indices of the Pawapuro 15 page)
   command    violet letters on a white plate with a green rim and a dark green shadow to the lower
              right, as on y5_smi pages 1 and 2 (palette 28).
+  stat       the stat labels: MLB's letters (cut whole from ScsParamPlate) in white with two rings.
   tag, money, motivation   letters with a one-pixel outline, in the colours of the HUD tags.
 
 Font "tag" is the one exception to "nothing is drawn here": MLB has no small bold lettering, so the 13
@@ -310,8 +311,27 @@ def outlined(ramp, ring, corner):
     return style
 
 
+def style_stat(ink, base):
+    """The stat labels (palette 58, blue to white): white letters shading to light blue at the foot,
+    a blue ring (2) and a lighter outer ring (5), both solid."""
+    pad = 2
+    h, w = ink.shape
+    big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+    big[pad:pad + h, pad:pad + w] = ink
+    letters = big > 0
+    ring1 = grow(letters, 1) & ~letters
+    ring2 = grow(letters, 2) & ~letters & ~ring1
+    out = np.zeros(big.shape, np.uint8)
+    out[ring2] = 5
+    out[ring1] = 2
+    shade = np.rint(15 - 3 * np.arange(h) / max(h - 1, 1)).astype(np.uint8)
+    out[pad:pad + h][letters[pad:pad + h]] = np.broadcast_to(shade[:, None], (h, w + 2 * pad))[letters[pad:pad + h]]
+    return out, base + pad
+
+
 RENDER = {
     "command": style_command,
+    "stat": style_stat,
     # white letters, dark blue outline: the 体力 / 熱血 tags (palette 58, a blue-to-white ramp)
     "tag": outlined([0, 5, 7, 10, 12, 14, 15], 1, 3),
     # dark blue letters, white outline: 所持金 (palette 19, dark blue to white)
@@ -327,8 +347,11 @@ def art_ink(art, project=None):
     mask, cls = L.source_classes(dict(art, drop=[r for r in ("fill", "ring", "outer", "letter", "plate",
                                                          "edge_dark", "edge_light")
                                                if r != art.get("role", "fill")]), project)
-    ink = np.where(mask, 6, 0)
-    return ink, ink.shape[0]
+    grid = L.despeckle(mask.astype(int))
+    ink = np.where(grid > 0, 6, 0)
+    ys, xs = np.nonzero(ink)
+    ink = ink[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+    return ink, art.get("base", ink.shape[0])
 
 
 # ── Repacking ────────────────────────────────────────────────────────────────────────────
@@ -365,8 +388,9 @@ def repack(group, d, bank, pages, patches, project=None):
     """Lay out the labels of one repack group. `pages` {page: index array} are edited in place;
     `patches` collects (file offset, 10 bytes) for the sprite parts. Returns report rows."""
     areas = [tuple(a) for a in group["areas"]]
-    style = RENDER[group.get("style", "command")]
-    font = group.get("font", "command")
+
+    def opt(lab, key, default=None):                 # a label can override the group's settings
+        return lab.get(key, group.get(key, default))
     for p in {a[0] for a in areas}:
         if p not in pages:
             pages[p] = U.decode_indices(d, *bank["pages"][p]).copy()
@@ -396,8 +420,9 @@ def repack(group, d, bank, pages, patches, project=None):
     blanks = {tuple(r) for r in group.get("blank", ())}
     art = []
     for i, lab in enumerate(labels):
+        style = RENDER[opt(lab, "style", "command")]
         if "text" in lab:
-            ink, base = typeset(lab["text"], font, project)
+            ink, base = typeset(lab["text"], opt(lab, "font", "command"), project)
             art.append(style(ink, base))
         elif "art" in lab:
             art.append(style(*art_ink(lab["art"], project)))
@@ -410,7 +435,6 @@ def repack(group, d, bank, pages, patches, project=None):
         if page not in pages:
             pages[page] = U.decode_indices(d, *bank["pages"][page]).copy()
         pages[page][y0:y1, x0:x1] = 0
-    under = group.get("under", 4)          # rows of the Japanese art below the foot of its letters
     rows = []
     for i, lab in enumerate(labels):
         img, base = art[i]
@@ -420,6 +444,7 @@ def repack(group, d, bank, pages, patches, project=None):
         opage, (ox0, oy0, ox1, oy1), (ax0, ay0, ax1, ay1) = old[i]
         centre = lab.get("centre_x", (ax0 + ax1) // 2 - ox0)      # keep the horizontal centre
         dx = centre - w // 2
+        under = opt(lab, "under", 4)       # rows of the Japanese art below the foot of its letters
         dy = (ay1 - under - oy0 - base) if base is not None else ay0 - oy0   # sit on the old baseline
         n = 0
         for p in parts:
@@ -427,6 +452,6 @@ def repack(group, d, bank, pages, patches, project=None):
                 patches.append((p.offset, U.pack_part(page, p.flags, p.palette, p.y + dy, p.x + dx,
                                                       y, x, y + h, x + w)))
                 n += 1
-        rows.append((lab.get("text", "(kept)"), "%dx%d" % (ax1 - ax0, ay1 - ay0), "%dx%d" % (w, h),
+        rows.append((lab.get("text") or lab.get("name") or "(kept)", "%dx%d" % (ax1 - ax0, ay1 - ay0), "%dx%d" % (w, h),
                      "page %d x %d y %d" % (page, x, y), n))
     return rows
