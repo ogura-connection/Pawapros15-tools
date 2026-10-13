@@ -25,6 +25,8 @@ Repacking: an English word is wider than the Japanese label it replaces (練習 
 labels of a page are laid out again at their natural width inside the areas named in the spec, and the
 sprite parts that showed the old rectangles are pointed at the new ones. A group can also list
 "blank" rectangles (cleared, never drawn into: the second half of a label that came in two pieces),
+or give that half as a label {"from": [...], "empty": true}: its parts are pointed at an empty cell and the
+rectangle can be an area again,
 "gap" (clear pixels between labels, across and down, default [1, 1]),
 "under" (rows of the Japanese art below the foot of its letters, default 4) and, per label, "align":
 "left" (keep the left edge, not the centre), "valign": "centre" (middle of the old art, not its baseline) or "centre_x"
@@ -620,9 +622,10 @@ def badged(fill, soft, outline, white, glow):
     return style
 
 
-def boxed(ramp, pad=(3, 4), size=(0, 0)):
+def boxed(ramp, pad=(3, 4), size=(0, 0), rim=None):
     """A style: letters drawn with `ramp` on a filled box of colour `ramp`[0] with its four corner pixels
-    cut off, `pad` (across, down) pixels larger than the letters and at least `size`. The button hints."""
+    cut off, `pad` (across, down) pixels larger than the letters and at least `size`; `rim` = the colour
+    of a one-pixel edge round the box. The button hints."""
     ramp = np.array(ramp, np.uint8)
 
     def style(ink, base):
@@ -633,6 +636,11 @@ def boxed(ramp, pad=(3, 4), size=(0, 0)):
         out[y:y + h, x:x + w] = ramp[ink]
         for cy, cx in ((0, 0), (0, -1), (-1, 0), (-1, -1)):
             out[cy, cx] = 0
+        if rim is not None:
+            out = np.pad(out, 1, constant_values=rim)
+            for cy, cx in ((0, 0), (0, -1), (-1, 0), (-1, -1)):
+                out[cy, cx] = 0
+            y += 1
         return out, base + y
     return style
 
@@ -731,6 +739,12 @@ RENDER = {
     "shopsold": logo([7, 7, 7, 6, 6, 6, 5, 5, 4, 3], [2, 3], 1, 15, 13, [8, 9]),
     # the gear names on the item icons (m4_item1, palette 13, a grey ramp): white, black outline, grey shadow
     "gear": shadowed([0, 4, 7, 10, 12, 14, 15], 1, 9, 1),
+    # the settings list of the System screen (scs_sys.arc, pages z3_sys): row names, yellow shading from orange,
+    # in a violet outline with a paler edge (palette 161); values, dark at the top to light at the foot, white
+    # band, blue shadow (162-170, one colour each); 難度, yellow-green on a blue box (160)
+    "sysheader": haloed(None, 9, [12, 11, 11, 10, 10, 10, 10, 11, 12, 13], fill=[3, 3, 3, 2, 2, 2, 1, 1, 1], light=9),
+    "sysvalue": haloed(None, 8, [8, 8, 8, 9, 10, 12, 14, 15, 15, 15], fill=[1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 5], light=8),
+    "sysbox": boxed([9, 8, 7, 6, 5, 3, 2], (3, 4), (0, 0), 11),
     # the item list (scs_main.arc, z3_itw): tab names, blue shading to pale at the foot, white band (palettes 50, 51)
     "itemtab": haloed(None, 15, [14, 14, 14, 14, 13, 12, 10, 9, 8, 7, 7, 7],
                       fill=[1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6, 7, 8], light=15),
@@ -854,6 +868,8 @@ def repack(group, d, bank, pages, patches, project=None):
             art.append(style(*typeset(lab["text"], opt(lab, "font", "command"), project)))
         elif "art" in lab:
             art.append(style(*art_ink(lab["art"], project)))
+        elif lab.get("empty"):                                   # a piece that is not needed any more
+            art.append((np.zeros((1, 1), np.uint8), None))
         else:                                                    # keep the Japanese label as it is
             pg, x0, y0, x1, y1 = lab["from"]
             art.append((page(pg)[y0 + box[1]:y0 + box[3], x0 + box[0]:x0 + box[2]].copy(), None))
@@ -869,6 +885,11 @@ def repack(group, d, bank, pages, patches, project=None):
         pg, x, y = placed[i]
         h, w = img.shape
         page(pg)[y:y + h, x:x + w] = img
+        if lab.get("empty"):                                     # its parts show the empty cell from now on
+            sp, sx, sy = placed[len(labels)]
+            patches.extend((p.offset, U.pack_part(sp, 0, p.palette, p.y, p.x, sy, sx, sy + 4, sx + 4)) for p in mine)
+            rows.append(("(emptied)", "%dx%d" % (box[2] - box[0], box[3] - box[1]), "-", "-", len(mine)))
+            continue
         under = opt(lab, "under", 4)       # rows of the Japanese art below the foot of its letters
         centre = lab.get("centre_x", (box[0] + box[2]) // 2)     # keep the horizontal centre
         if lab.get("align") == "left":                           # or the left edge
