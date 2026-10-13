@@ -53,14 +53,19 @@ The same rule gives the widths in LINE_CELLS (checked for the 3 x 17 tips, 2 x 1
 
 main.dol holds the blue system dialogs (save prompts, memory notices): 264 strings back to back at
 file offsets 0x143AA0..0x145ACE, each unit 0x1000 | glyph number, 0xFFFF ends a string, no slots and
-no padding. Each string is one line of a dialog. 0x1FFD is a control unit of the Yes/No rows, shown
-as {} ; the English must keep the same number of {}. The IDs are 0:<file offset>. main_prg.rel has
+no padding. Each string is one line of a dialog. 0x1FFD, shown as {}, is the blank cell of these
+strings (the Japanese never uses glyph 0 here): it indents the menu options and the Yes/No and
+"press A" rows, which come in copies with 1 to 9 and 1 to 12 of them in front. The English must
+keep the same number of {}. Two spaces that fill a cell of the English become glyph 0 (0x1000),
+which no Japanese dialog line uses. The IDs are 0:<file offset>. main_prg.rel has
 a table of 252 pointers (relocations against module 0): 251 point at the start of a string, the
 last one at a row of ten stars right behind the block. The 13 strings no relocation points at
 cannot move ("fixed"): their English must fit the Japanese cell count. All others are laid out
 again by the build and re-pointed, so a line may grow: at most to the longest Japanese line of the
 block, with a warning from 4 cells over its own Japanese (the box was sized for the Japanese). The
-strings between two fixed strings must fit the space between them, and all together the block.
+strings between two fixed strings must fit the space between them, and all together the block
+(a fixed string that is shorter in English leaves the rest of its place to the strings behind it).
+check, merge and the build apply the same rules.
 The untouched original is kept at _work/orig_sys/main.dol and strings are always read from there.
 """
 import collections
