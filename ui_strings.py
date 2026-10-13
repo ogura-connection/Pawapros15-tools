@@ -458,7 +458,7 @@ def check_rows(name, pairs):
     strs = strings_of(name)
     found = {(s["section"], s["offset"]): s for s in strs}
     longest = max(s["cells"] for s in strs) if name == DOL else 0
-    good, problems, warnings = {}, [], []
+    good, seen, problems, warnings = {}, set(), [], []
     for where, en in pairs:
         try:
             sec, off = (int(x) for x in where.split(":"))
@@ -468,9 +468,10 @@ def check_rows(name, pairs):
         s = found.get((sec, off))
         if s is None:
             problems.append("%s: unknown ID" % where)
-        elif (sec, off) in good:
+        elif (sec, off) in seen:
             problems.append("%s: duplicate ID" % where)
         else:
+            seen.add((sec, off))
             errors, warns, _ = judge(s, en, longest)
             problems += ["%s: %s" % (where, e) for e in errors]
             warnings += ["%s: warning: %s" % (where, w) for w in warns]
@@ -526,19 +527,24 @@ def cmd_set(name, where, en):
 
 HEADER = """# %s: one string per line, columns separated by tabs
 # 1 ID        section:offset. Lines for check/apply are ID<tab>English.
-# 2 cells     size of the slot. One cell holds two letters, or one Japanese character.
+# 2 cells     %s. One cell holds two letters, or one Japanese character.
 # 3 capacity  %s
 # 4 Japanese  %s
-# 5 English   so far; | starts a new line
+# 5 English   so far%s
 """
-HEADER_REL = ("letters each line holds, for example 44|38: two lines, 44 and 38 letters. A ? behind it: the line"
+HEADER_REL = ("size of the slot",
+              "letters each line holds, for example 44|38: two lines, 44 and 38 letters. A ? behind it: the line"
               "\n#             width is a guess (see ui_strings.py), check such a string in the game.",
-              "with | where the game breaks the line (line padding removed)")
-HEADER_DOL = ("soft/hard letters: beyond soft (3 cells over the Japanese) check warns, beyond hard it fails."
+              "with | where the game breaks the line (line padding removed)",
+              "; | starts a new line, a line may be shorter and lines may be left out")
+HEADER_DOL = ("length of the Japanese, each {} included",
+              "soft/hard letters: beyond soft (3 cells over the Japanese) check warns, beyond hard it fails."
               "\n#             \"N fixed\": the string cannot move, N letters is all it holds. A {} is not counted,"
               "\n#             and letter pairs start again behind a {} (an odd run of letters wastes half a cell)."
-              "\n#             The strings between two fixed ones must also fit together: check tells.",
-              "one line of a blue system dialog. {} is a control code of the Yes/No rows: keep every {}.")
+              "\n#             The strings between two fixed ones share their space (the # lines): what one line"
+              "\n#             grows, others must give back. check tells when it does not fit.",
+              "one line of a blue system dialog. {} is a control code of the Yes/No rows: keep every {}.",
+              "; always one line, no |")
 
 
 def capacity(s, longest=0):
@@ -565,7 +571,16 @@ def cmd_export(names):
         longest = max(s["cells"] for s in found) if name == DOL else 0
         with open(path, "w", encoding="utf-8") as f:
             f.write(HEADER % ((name,) + (HEADER_DOL if name == DOL else HEADER_REL)))
+            notes = {}
+            if name == DOL:                 # the space each run of movable strings shares
+                english = {key: en for key, (_, en) in done.items()}
+                for run, room in dol_segments(found):
+                    used = sum((dol_cells(english[(0, s["offset"])]) if (0, s["offset"]) in english else s["cells"]) + 1
+                               for s in run)
+                    notes[run[0]["offset"]] = ("# the %d strings from here to the next fixed string share %d units "
+                                               "(cells + 1 per string); in use now: %d\n" % (len(run), room, used))
             for s in found:
+                f.write(notes.get(s["offset"], ""))
                 f.write("%d:%d\t%d\t%s\t%s\t%s\n" % (s["section"], s["offset"], s["cells"], capacity(s, longest),
                                                      japanese_lines(s), done.get((s["section"], s["offset"]), ("", ""))[1]))
         total += len(found)
