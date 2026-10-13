@@ -190,6 +190,7 @@ Line counts are text runs in scenario 1.
 | 体力 / やる気 | vitality / motivation | the gauges; "Vitality" is the official English term and keeps 体力 apart from the pitcher stat スタミナ (Stamina) |
 | 熱血練習 | Hot-Blooded Practice | |
 | 熱血 / 熱血度 (the gauge) | Passion | the HUD gauge that fills up and sets off Hot-Blooded Practice: "Your Passion is full." |
+| 熱血状態 / 熱血発動中 | fired up / Fired Up! | the state while the gauge is spent |
 | もう一丁練習 | One-More Practice | from もう一丁！ "One more!" |
 | 練習器材 | training gear | |
 | チーム方針 | team policy | |
@@ -243,9 +244,28 @@ Words on screen (Success Mode), with where the lettering comes from:
 |---|---|---|
 | 練習 / 通院 / お店 / データ / システム / 能力アップ | Practice / Hospital / Shop / Data / System / Boost | MLB 2008 art, as drawn |
 | お出かけ | Free Time | MLB 2008 art: the series' name for this slot of the command bar |
-| 休む / 仕事 / アイテム / 遊ぶ / デート / 試合 / リスト / 治療 | Rest / Work / Items / Play / Date / Game / List / Treat | set from MLB letters (G and I derived) |
-| 体力 / 熱血 / やる気 / 所持金 | Vitality / Passion / Motivation / Money | drawn for this patch (no MLB lettering in the tag style) |
+| 休む / 仕事 / アイテム / 遊ぶ / デート / 試合 / リスト / 治療 | Rest / Work / Items / Play / Date / Game / List / Treat | set from MLB letters (G, I, J and b derived) |
+| 仕事探す / 仕事する | Jobs / Work | set from MLB letters |
 | stat labels | TRJ, CON, PWR, RUN SPD, ARM STR, FLD, E RES, TOP SPD, CTRL, STAM, Position | MLB 2008 art |
+| 体力 / 熱血 / やる気 / 所持金 / 天気 | Vitality / Passion / Motivation / Money / Weather | tag font (drawn for this patch) |
+| 熱血発動中 | Fired Up! | Arial Rounded Bold |
+| 天気予報 | Forecast | Arial Rounded Bold (plate), tag font (button hint) |
+| 年目 / 月 / 週 | Yr / Mo / Wk | Times New Roman Bold Italic, to go with the game's italic numerals. The game draws the number first, so the unit follows it: 1Yr 9Mo 1Wk |
+| 役職 / 平社員 / 係長 / 課長 | Post / Rank & File / Kakaricho / Kacho | Arial Rounded Bold, in the three colourings of the Japanese plates |
+
+Pitch names on the HUD use MLB Power Pros 2008's English names, shortened where the Japanese is short:
+
+| Japanese | English | | Japanese | English |
+|---|---|---|---|---|
+| ストレート | Fastball | | ツーシーム | 2-Seamer |
+| スライダー / Hスライダー / Vスライダー | Slider / Hard Slider / V-Slider | | カットボール | Cutter |
+| カーブ / スローカーブ / ドロップカーブ / ナックルカーブ | Curve / Slow Curve / Drop Curve / Knuckle Curve | | スラーブ | Slurve |
+| フォーク / SFF | Fork / Splitter | | パーム / ナックル | Palm / Knuckle |
+| シンカー / Hシンカー / スクリュー | Sinker / Hard Sinker / Screwball | | チェンジアップ / サークルチェンジ | Changeup / Circle Change |
+| シュート / Hシュート / カミソリシュート | Shuuto / Hard Shuuto / Razor Shuuto | | ドロップ / スローボール | Drop / Slow Ball |
+| オリジナル | Original | | ヨネボール / ヨシボール / エモボール | Yone Ball / Yoshi Ball / Emo Ball |
+
+"Shuuto" is the spelling of the English games (not Hepburn "shuto"). H is 高速: "Hard", as in MLB.
 
 Still Japanese on these pages: プログラム, テキスト, 特別ルーム (not met in scenario 1; meaning to be
 confirmed in play before they are worded).
