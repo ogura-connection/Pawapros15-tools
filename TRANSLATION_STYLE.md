@@ -365,5 +365,35 @@ Data screen (scs_data.arc, scs_sys.arc), Arial Rounded Bold in the colours of th
 Signature forms keep their Japanese names (Masakari, Kannushi, Tenbin, Konnyaku), like Koshien and bento. MLB Power Pros
 called 神主 "Loose" and 振り子 "Bat Wavin"; neither says what the stance is.
 
+Ability plates (are_abi.arc, 248 names). The book abilities use the names of the item term sheet, letter for
+letter. Names from MLB Power Pros 2008's plate sheet: Starter, Swing Man (先発中継), Middle Reliever, Closer,
+Mop-up Man (敗戦処理), SIT. Lefty (左のワンポイント), Pinch Hitter, Pinch Runner, DEF Replcmnt (守備要員),
+DEF Liability (途中交代), Gd / Pr Home, Road, Day Game, Night Game, Gd Rain (雨男), All Star (お祭り男),
+Summer Star (夏男). Worded for the patch:
+
+| Japanese | English |
+|---|---|
+| 慎重走塁 / 持続 / バント◎ / 弱気 / 筋肉痛 | Cautious Run / Staying Power / Grt Bunt / Timidity / Sore Muscles |
+| ～消す (Boost screen) | Remove + the ability, on two lines |
+| ささやきやぶり / 絶好調男 / がんばり屋さん | Talk-Proof / Mr. Top Form / Hard Worker |
+| 闘気 / 奪力 / 神速 / 豪力 / 緊縛 | Fighting Aura / Power Drain / Godspeed / Brute Force / Lockdown |
+| 鉄腕 / 剛球 / 絶倫 / 呪縛 / 気迫 | Iron Arm / Power Ball / Tireless / Hex / Grit |
+| 青い稲妻 / ガソリンタンク / 鉄人 / 鉄仮面 / 安打製造機 | Blue Lightning / Gas Tank / Iron Man / Iron Mask / Hit Machine |
+| 牛若丸 / スーパーカートリオ / 怪童 / 精密機械 | Ushiwakamaru / Supercar Trio / Wonder Boy / Precision Machine |
+| ブンブン丸 / バックスクリーン男 / 代打の神様 / ドクターK | Free Swinger / Mr. Backscreen / Pinch-Hit God / Doctor K (奪三振 is Dr. K) |
+| おまかせ / 完投 / 調子次第 / スタミナ限界 / スタミナ温存 / 勝利投手 | Auto / Complete Game / By Condition / Stamina Limit / Save Stamina / Winning P |
+| リード時 / 中継ぎエース / ビハインドでも / 守護神 / セーブ狙い / 接戦時 / 先発適性 | When Ahead / Relief Ace / Even Behind / Stopper / Save Chance / Close Games / Starter Fit |
+| シリーズ男 / 逆シリーズ男 / シリーズ最強男 | Mr. Series / Series Slump / Series Legend (not MLB's Mr. October, Mr. May) |
+| 春男 / 秋男 / 4月男 ... 9月男 / 伝説の夏男 / 伝説のお祭り男 | Spring Star / Fall Star / April Star ... Sept. Star / Summer Legend / All Star Legend |
+| アベック砲 / 最強アベック砲 / 援護射撃 / ミスター2ラン | Slugger Duo / Top Slugger Duo / Run Support / Mr. 2-Run |
+| ドーム / 野外 / 交流戦 / サンデー / 初対決 / 外国人 / 先頭打者 ○× | Gd / Pr Dome, Outdoors, Interleague, Sunday, 1st Meeting, vs. Imports, Leadoff |
+| ストレート / 変化球 ○× / 古巣に強い / 古巣に弱い | Gd / Pr Fastball, Brk Ball / Gd vs. Ex-Team / Pr vs. Ex-Team |
+| 巨人 ... キラー | Giants, Chunichi, Hiroshima, Swallows, Yokohama, Hanshin, Orix, Nippon-Ham, Seibu, Kintetsu, Lotte, Daiei, Lions (レオ), Yakult, BlueWave (青波), Rakuten, Hawks, SoftBank + Killer |
+| 打撲 / ねんざ / 腰痛 / 脇腹痛 / 突き指 / 肩痛 / 肘痛 / 肉離れ | Bruise / Sprain / Back Pain / Side Pain / Stubbed Finger / Shoulder Pain / Elbow Pain / Pulled Muscle |
+| アキレス腱痛 / 断裂 / 頬骨骨折 / 鎖骨骨折 / ヒザ靭帯断裂 / ギックリ腰 / リュウマチ | Achilles Pain / Achilles Tear / Broken Cheekbone / Broken Collarbone / Torn Knee Ligament / Strained Back / Rheumatism |
+| 投球位置右 / 投球位置左 | Rubber: Right / Rubber: Left |
+
+What 持続 and the ○ / × of ストレート and 変化球 do in play was not checked; the English follows the words.
+
 Still Japanese on these pages: プログラム, テキスト, 特別ルーム (not met in scenario 1; meaning to be
 confirmed in play before they are worded).
