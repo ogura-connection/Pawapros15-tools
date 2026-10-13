@@ -1,4 +1,503 @@
 # section_offset	hash of the original run	English (see tl.py)
+14340	955b	Dummy 0
+14428	b49b	Ouch! 
+14440	dd0e	Shoulder
+14448	61db	 hurts...
+14532	b49b	Ouch! 
+14544	d1e0	Elbow 
+14554	61db	hurts...
+14644	b49b	Ouch! 
+14656	16fd	Leg 
+14664	61db	hurts...
+14768	b49b	Ouch! 
+14780	14e7	Nail
+14788	61db	 hurts...
+14870	81b6	I got hurt...
+14896	275d	A minor one, no hospital needed:
+14934	5335	a lump
+14946	b1c5	 is what I got.
+14982	e434	a stubbed finger
+14994	98b6	 is what I got.
+15050	81b6	I got hurt...
+15088	29dc	The doctor says\n
+15110	6f39	a stubbed finger.\nAbout 2 weeks to heal
+15152	29dc	The doctor says\n
+15174	9ddf	a sprain.\nAbout 3 weeks to heal
+15212	cbae	The doctor says 
+15232	feae	a fracture,\n1.5 to 2 months to heal
+15284	29dc	The doctor says\n
+15306	2147	a torn Achilles tendon
+15340	29dc	The doctor says\n
+15362	d410	a compound fracture
+15382	6dcd	Or so they say...
+15428	59b6	Cavity
+15502	aac8	Strength
+15566	b49b	Ouch! 
+15578	59b6	Cavity
+15588	bc10	 hurts. I can't put\nany strength in.
+15630	aac8	Strength
+15706	c915	【
+15716	f3d8	】
+15762	0258	Quickness
+15830	0258	Quickness
+15906	c915	【
+15916	f3d8	】
+15962	c344	Technique
+16030	c344	Technique
+16106	c915	【
+16116	f3d8	】
+16162	7244	Breaking Ball
+16230	7244	Breaking Ball
+16306	c915	【
+16316	f3d8	】
+16362	680c	Mentality
+16430	680c	Mentality
+16506	c915	【
+16516	f3d8	】
+16550	f414	Velocity
+16584	a142	 +
+16674	fc40	Stamina 
+16686	a142	+
+16714	fc40	Stamina 
+16726	a142	
+16786	20dc	Control 
+16802	a142	+
+16826	20dc	Control 
+16842	a142	
+16938	be28	Trajectory
+16956	be28	Trajectory
+16990	4c6f	Contact Cursor
+17018	d527	 got bigger.
+17046	58a2	 got smaller.
+17086	4c0c	Power
+17120	a142	 +
+17198	794b	Speed
+17254	9a94	Arm Strength
+17318	ee09	Fielding
+17382	aa61	Error Resistance
+17442	c0cb	Pitch movement increased.
+17486	febb	Gained a new pitch.
+17546	a7be	Max Vitality went up.
+17582	bbee	Max Vitality went down.
+17630	a7be	Max Vitality went up.
+17694	368f	Fatigue cleared.
+17722	02be	Fatigue built up.
+17774	c915	【
+17784	f3d8	】
+17834	2308	Motivation dropped.
+17866	b7c5	Motivation went up!
+17934	8ea8	Your Passion is full.
+17960	74cb	Passion went up.
+17998	6eb7	Passion went down.
+18068	1ca1	Kantoku Tamano's rating went up.
+18108	007a	Kantoku Otokomaeda's rating\nwent up.
+18152	c2c2	Kantoku Otori's rating went up.
+18204	c915	【
+18214	f3d8	】
+18252	c30c	Kantoku Tamano's rating went down.
+18292	d4d4	Kantoku Otokomaeda's rating\nwent down.
+18336	8536	Kantoku Otori's rating went down.
+18388	c915	【
+18398	f3d8	】
+18450	d868	Scout rating rose.
+18498	c915	【
+18508	f3d8	】
+18530	1a5c	Scout rating fell.
+18578	c915	【
+18588	f3d8	】
+18686	9185	's rating went up.
+18758	f583	Heavy Swinger
+18814	8336	Contact Swinger
+18870	f942	Aggressive Batting
+18926	d14a	Patient Batting
+18982	edd4	Aggressive Stealing
+19038	0203	Cautious Stealing
+19094	6f61	Aggressive Baserunning
+19150	73c1	Fastball Focus
+19206	f1c8	Breaking Ball Focus
+19262	90a6	Average Hitter
+19326	dbfd	Power Hitter
+19382	9a2a	Spray Hitter
+19438	c385	Pull Hitter
+19494	398a	Opposite-Field Hitter
+19562	3db6	Good at bunting
+19602	3db6	Good at bunting
+19638	e39d	Great at bunting
+19682	e39d	Great at bunting
+19738	4988	Good vs. Lefty Pitchers
+19762	3923	Poor vs. Lefty Pitchers
+19810	8054	Good in the clutch
+19834	d626	Poor in the clutch
+19870	123c	Tough in adversity
+19926	3b1a	Walk-Off Hit Man
+19982	fb7a	Walk-Off HR Man
+20046	0e94	Good Infield Hitter
+20102	c3de	Headfirst Slide
+20166	4097	Bowl Over
+20234	8a84	Good at stealing
+20274	8a84	Good at stealing
+20310	a780	Poor at stealing
+20346	a680	Poor Stealer
+20394	0807	Good at baserunning
+20434	0807	Good at baserunning
+20470	c776	Poor at baserunning
+20506	3036	Poor Baserunner
+20554	e1b2	Good Thrower
+20590	e1b2	Good Thrower
+20626	77eb	Poor Thrower
+20658	77eb	Poor Thrower
+20706	5672	Utility Man
+20750	5672	Utility Man
+20794	4c52	Poor at Sub-Positions
+20834	4c52	Poor at Sub-Positions
+20890	b2c4	Good Cleanup Hitter
+20926	b2c4	Good Cleanup Hitter
+20962	b784	Poor Cleanup Hitter
+20994	b784	Poor Cleanup Hitter
+21042	9271	Good Catcher
+21082	9271	Good Catcher
+21122	5b2c	Great Catcher
+21170	5b2c	Great Catcher
+21214	455f	Good at blocking
+21278	d331	Bases-Loaded Hit Man
+21334	3692	Bases-Loaded HR Man
+21390	3649	Gd Pinch Hitter
+21446	20b9	Strikeout Man
+21502	d5e6	Good on the first pitch
+21558	9271	Streak Hitter
+21614	d196	Gd Consecutive Hits
+21670	c552	Fielding Artisan
+21726	6751	Pitch Fouler
+21782	34e8	Timely Error Man
+21846	7c0e	Mood Maker
+21902	ef05	Fielder Intimidation
+21958	c41f	Pitcher Intimidation
+22026	f7ed	Mood Booster
+22070	f7ed	Mood Booster
+22114	309f	Mood Wrecker
+22136	a629	\n
+22166	309f	Mood Wrecker
+22226	cd1f	Very Fast Recovery
+22266	7eb7	Fast Recovery
+22310	7eb7	Fast Recovery
+22346	3d06	Slow Recovery
+22382	40b3	Slow Recovery
+22426	3524	Weak at the Brink
+22450	af92	Weak at the Brink
+22486	bb4e	Poor with Runners On
+22542	5372	Good Release
+22618	5f3e	Good in a Jam
+22658	5f3e	Good in a Jam
+22698	ae68	Poor in a Jam
+22738	667d	Poor in a Jam
+22774	b399	Homer-Prone
+22830	1c0e	Escaping Ball
+22886	3261	Late Bloomer
+22954	cde3	Winning Luck
+22986	cde3	Winning Luck
+23018	4d05	Losing Luck
+23050	4d05	Losing Luck
+23086	5799	Quick Reactions
+23142	724e	Hot Temper
+23198	7bf9	Batting Consistency
+23254	349d	Pitching Consistency
+23310	7bf9	Batting Consistency
+23374	349d	Pitching Consistency
+23434	03f1	Walk Man
+23486	f760	Slow Starter
+23562	8c97	Good vs. Left Batters
+23602	8c97	Good vs. Left Batters
+23642	a40b	Poor vs. Left Batters
+23682	a40b	Poor vs. Left Batters
+23718	23f6	Good Pickoff
+23774	a173	Good at Low Pitches
+23838	3e7a	Poker Face
+23902	d77d	Heavy Ball
+23978	830a	Resilient
+24022	a3cc	Fragile
+24074	923d	Good Quick Delivery
+24114	923d	Good Quick Delivery
+24154	e58b	Poor Quick Delivery
+24194	e58b	Poor Quick Delivery
+24242	4d97	Good Fastball Life
+24278	6638	Great Fastball Life
+24318	4d97	Good Fastball Life
+24354	653d	Poor Fastball Life
+24390	653d	Poor Fastball Life
+24442	e3d3	Good Spin
+24482	e3d3	Good Spin
+24522	3fb6	Poor Spin
+24562	3fb6	Poor Spin
+24610	b6e8	Good Team Player
+24650	b6e8	Good Team Player
+24690	d49d	Poor Team Player
+24730	d49d	Poor Team Player
+24770	da4b	Chance Maker
+24830	c140	Gyroballer
+24894	2935	Quick Pitching Tempo
+24958	bacb	Fiery Pitching
+25022	8070	Whisper Tactics
+25078	9f35	Double-Play Breaker
+25134	e5e9	Low Ball Hitter
+25198	9960	High Ball Hitter
+25262	c730	Light Ball
+25318	5915	Dr. K
+25374	9f2f	Shuuto Spin
+25430	b30c	Laser Beam
+25486	296f	Unsung Hero
+25542	9978	Aggressive Fielding
+25598	c949	Gd Full Count
+25654	7814	Erratic
+25710	fe2f	Gd Guts
+25766	edac	Gd vs. Sluggers
+25822	3123	Crossfire
+25886	e7e7	Good Eye
+25942	a7c6	Wild Card
+26006	d826	Gd vs. Aces
+26062	fa97	Height
+26092	978d	 grew.
+26140	be4b	 shrank.
+26190	978a	Fan Favorite
+26246	938b	Pitch Pacing
+26274	0782	 started.
+26306	9a33	 stopped.
+26362	225b	Got a time bomb in my shoulder
+26374	6d34	.
+26406	03fd	Time bomb in my shoulder
+26418	b75b	 is gone.
+26478	551f	Got a time bomb in the elbow
+26492	6d34	.
+26522	b8a1	Time bomb in the elbow
+26536	b75b	 is gone.
+26594	d6de	Got a time bomb in the leg
+26606	6d34	.
+26638	38a4	Time bomb in the leg
+26650	b75b	 is gone.
+26714	38b6	Good Baseball Sense
+26754	38b6	Good Baseball Sense
+26794	7e35	Poor Baseball Sense
+26834	4e88	Poor Baseball Sense
+26882	a827	Injury-resistant
+26918	4f40	Very injury-resistant
+26958	0112	Injury-prone
+26994	253a	Injury risk
+27030	a827	Injury-resistant
+27066	b0dd	Insomnia
+27130	14e7	Nail
+27146	6708	Cracked a nail
+27160	13ef	.
+27202	1041	Heartthrob
+27254	5618	Laziness
+27290	1079	 set in.
+27338	d810	Lovesick
+27390	6fa7	Timidity
+27446	e917	Oversleeper
+27502	db39	Smart Shopper
+27558	3167	Hard Worker
+27614	4b8c	Baseball Nut
+27670	9484	Lucky Boy
+27726	b077	Showman
+27782	2ddd	Good Guy
+27838	0352	Good Ball Hold
+27906	1609	Throwing from the left end\n
+27928	9cec	of the rubber
+27948	e93a	Throwing from the middle\n
+27972	9cec	of the rubber
+28018	cf4a	Throwing from the right end\n
+28040	9cec	of the rubber
+28060	e93a	Throwing from the middle\n
+28084	9cec	of the rubber
+28118	43c1	Batting Reliability
+28174	43c1	Batting Reliability
+28230	ae99	Workaholic
+28286	ecf3	Smooth Talker
+28342	3955	Cold
+28736	8129	Points
+28756	8129	Points
+28776	8129	Points
+28792	8129	Points
+28808	8129	Points
+28824	8129	Points
+28876	c945	's rating
+28890	c911	 went up.
+28914	9e83	 went down.
+28938	d86d	 went way up.
+28970	63db	 went way down.
+29002	fc0c	 went up a little.
+29030	ba90	 went down a little.
+29058	0fc8	.
+29082	9363	.
+29118	345f	 learned.
+29146	a873	 improved.
+29186	2408	 is what they call you now.
+29234	6f84	 got worse.
+29262	28f1	 now.
+29290	c776	 now.
+29318	7fa7	 no longer.
+29346	54bc	 is gone.
+29378	d78b	 is no longer what they call you.
+29410	721c	 acquired.
+29442	abb4	 forgotten.
+29466	0c64	 now, sadly.
+29494	8b66	 now, sadly.
+29526	8b66	 now, sadly.
+29562	8b66	 now, sadly.
+29598	543d	: I caught it.
+29634	7602	 is fixed.
+29658	7602	 is fixed.
+29686	5fca	 is cured.
+29712	4c1f	...
+29728	e2b9	・
+29738	e2b9	・
+29748	e2b9	・
+29760	d2e9	・\n
+29772	d2e9	・\n
+29784	d2e9	・\n
+29800	d2e9	・\n
+29812	d2e9	・\n
+29824	d2e9	・\n
+29836	d2e9	・\n
+29960	6bc8	Ugh, I don't feel like practicing.
+29992	514b	Just wing it and
+30012	ac9b	 slack
+30022	bf1b	 off.
+30136	ee00	All I can think about is her!
+30258	5a5a	I can't afford to rest.\n
+30288	5f2f	Right, I'm a total baseball nut!
+30406	21fd	Man, at this rate\nthe pros are a long way off...
+30452	ecc8	I want to practice baseball.\n
+30474	66a7	I'm falling behind my team mates.
+30586	b362	Hmm, I just can't sleep.
+30696	b257	Hmm, I got here a bit early.
+30734	433a	Well, I am a hard worker.
+30766	38fe	Guess I'll loosen up a bit.
+30936	8864	Ugh, so noisy.
+30972	19c1	Wait, is it this late already!?
+31000	f6fc	I did it again... I'm late today.
+31116	3407	Cough! Cough!
+31140	6841	My cold is still bad.
+31218	9185	's rating went up.
+31258	c915	【
+31268	f3d8	】
+31298	07a3	Team mates' rating went up.
+31338	ee19	Senpai's rating went up.
+31402	9aa4	's rating went down.
+31440	3a37	Rating Change 
+31452	c915	【
+31462	f3d8	】
+31502	0241	Team mates' rating went down.
+31542	7610	Senpai's rating went down.
+31594	6515	This version ends here.\n
+31622	ce50	Enjoy the rest in the full game!
+31656	f0fd	No such command!
+31680	bbf6	The data table is out of sync.
+31862	abff	Avoid Gyo Gyo? (debug)
+31892	4347	Yes\n
+31900	f901	No
+31932	4895	Gyo,
+31948	4895	 gyo, 
+31964	4895	gyo,
+31980	4895	 gyo, 
+31996	9ab7	gyo.
+32010	2fca	Gedo-kun,\n
+32024	f1cf	What is all this commotion?
+32048	7e7f	Gyo gyo gyo!
+32064	5f9d	What!? The data has an error!?
+32096	e401	Last time, it seems you did not\n
+32128	8bdf	exit properly from the icon menu.
+32154	0d03	Gyo!
+32170	9faf	But Daijobu! Do not worry.
+32196	c58e	I shall\n
+32208	4f87	repair the data for you!
+32246	d86e	(Click, 
+32268	e348	tick, 
+32288	dc16	click)
+32306	53e2	Phew. The repair is complete.
+32328	a10b	From now on,\n
+32342	3666	please exit properly.
+32498	b41b	Pitch movement decreased.
+32542	6799	Second pitch movement decreased.
+32624	3cf2	Yabe-kun
+32652	69a4	Tojo
+32676	15e5	Zento
+32700	6e45	Tanakayama
+32724	414f	Takumi
+32748	008b	Mido-san
+32776	4c35	Namigashira-san
+32804	12ea	Reito-san
+32832	ea66	Todoroki-san
+32856	3ed1	Maruo
+32880	50b1	Koshihaba-san
+32908	2bef	Mitsuhiko
+32932	e54c	Morita-san
+32960	d4f9	Matsuo
+32984	ab50	Takeda
+33036	0d0f	-san
+42548	bd94	I'll rest up in my room today!
+42810	51ac	(Zzz zzz)
+42840	e706	Hmm... I slept great.
+42868	76fd	I feel more rested than usual!
+42902	8042	Body refreshed, mood fantastic!
+42972	d09a	Hmm, fatigue is building up
+42998	2e20	all over my body.
+43018	a684	I'll lie down for a bit.
+43044	4c1f	...
+43054	f5b9	...Zzz zzz...
+43084	4d16	Huh? There's some chocolate.\nMust be left over from before.
+43130	2205	I'll eat it!
+43158	0ab8	Mm, delicious!
+43192	f4da	(Ouch!)
+43214	c1ab	Ow!! My back tooth hurts.
+43246	59b3	Looks like I got a cavity...
+43322	d46d	Stress relieved!!
+43388	3bc3	Time to unwind in the massage
+43416	d309	chair I bought the other day♪
+43438	f31c	(Whirr)
+43458	f31c	(Whirr)
+43478	f31c	(Whirr)
+43500	fd4a	Ahh, that feels great♪
+43528	f31c	(Whirr)
+43548	f31c	(Whirr)
+43568	f31c	(Whirr)
+43590	8042	Body refreshed, mood fantastic!
+43754	10df	Hmm, slept well.
+43774	bb9a	In top shape!
+43792	8df5	Slept more soundly than usual!
+43866	f590	...Hm?\nYaaawn... morning already?...
+43902	0a34	It's a day off, so one more nap...
+43944	2220	Oh no! Today's a practice day!\nLook at the time!!!
+43992	06ff	I'll be late for practice!!!
+44112	138f	After that, Kantoku really
+44134	7052	chewed me out.
+44210	0cea	Ugh...
+44226	3c1f	I couldn't sleep at all.
+44260	fe74	Yaaawn...
+44272	df53	I'm still totally tired.
+44300	4325	Will I be okay at practice today?
+45536	fbb9	Pawafuru Corp.
+45568	fffe	The Kagurazaka Group
+45600	e71b	Otori Phoenix
+45640	3cec	Busters
+46018	af31	 and you\nbecame friends.
+46068	3cf2	Yabe-kun
+46096	69a4	Tojo
+46120	15e5	Zento
+46144	6e45	Tanakayama
+46168	414f	Takumi
+46192	008b	Mido-san
+46220	4c35	Namigashira-san
+46248	12ea	Reito-san
+46276	ea66	Todoroki-san
+46300	3ed1	Maruo
+46324	50b1	Koshihaba-san
+46352	ae0b	Kagurazaka
+46376	e54c	Morita-san
+46404	d4f9	Matsuo
+46428	ab50	Takeda
+46452	43d1	Shacho Tamano
+46480	fa8a	Bucho Yajima
+46508	454c	Kagurazaka CEO
+47360	3cec	Busters
 49884	6267	Dumbbell
 49912	2aef	Barbell
 49940	ce10	Bench Press
@@ -32,3 +531,2276 @@
 50964	ac3e	Notebook
 50988	cf87	Whiteboard
 51020	0617	Laptop (1 GB RAM)
+203736	e65a	Phew, I'm worn out.\nThis is coming together pretty
+203770	22e0	much like I pictured.
+203790	8b5a	(Zip!)
+203820	8b5a	(Zip!)
+203854	87e9	Hm!
+203864	ebaf	What's that sound?
+203894	750a	Yabe-kun!\nYou're still here.
+203924	e643	What are you doing?
+203944	c06d	Bunt practice, naturally.
+203970	c679	Small plays like this\nshow off yours truly's legs
+204004	6d3b	all the better!
+204036	dc1b	Huh.
+204058	e6d9	-kun, are you
+204068	d019	staying late to practice too?
+204094	d357	Yeah.
+204104	ac86	Thought I'd learn a few things.
+204130	0608	If yours truly will do,
+204148	17c3	I'll be your practice partner.
+204176	5808	Hmm,
+204188	521e	then let's get right to it...
+204214	c587	Let's practice bunting
+204236	303b	Train my fielding
+204254	cc8c	Learn batting technique
+204274	61e0	Just do strength training
+204336	b5c4	Understood.
+204356	fa9c	I'm practicing my bunts as well,
+204384	112c	so this works out perfectly!
+204420	f942	We spent several hours
+204444	4268	working hard on bunting.
+204516	0928	Ah!
+204526	01fa	I see, so that's how it works!
+204554	9327	You seem to have picked up\na trick or two.
+204692	c993	Okay,
+204702	09b7	that's it for today.
+204724	796c	That was a fine practice.
+204792	b5c4	Understood.
+204812	2fd9	I'm decent at fielding too, so
+204846	112c	this works out perfectly!
+204876	5cac	Listen to yourself.
+204902	f942	We spent several hours
+204926	2215	working hard on fielding.
+204996	0928	Ah!
+205006	01fa	I see, so that's how it works!
+205034	9327	You seem to have picked up\na trick or two.
+205120	c993	Okay,
+205130	09b7	that's it for today.
+205152	796c	That was a fine practice.
+205224	b5c4	Understood.
+205244	1966	I want to hit better too, so
+205290	112c	this works out perfectly!
+205326	f942	We spent several hours
+205350	194d	working hard on batting.
+205422	9a2e	-kun, you
+205436	327e	have a surprisingly mature swing.
+205472	8a03	R-really?
+205490	3a84	You put me in mind of the
+205512	9271	great veterans of years past.
+205542	f3a6	Got the hang of hitting.
+205632	c993	Okay,
+205642	09b7	that's it for today.
+205664	796c	That was a fine practice.
+205736	b5c4	Understood.
+205756	b5ac	I want to build strength too, so
+205792	112c	this works out perfectly!
+205828	f942	We spent several hours
+205852	b3db	working hard on strength training.
+205928	0928	Ah!
+205938	01fa	I see, so that's how it works!
+205966	9327	You seem to have picked up\na trick or two.
+206044	c993	Okay,
+206054	09b7	that's it for today.
+206076	796c	That was a fine practice.
+206220	7be0	Listen, 
+206230	f926	.
+206242	0195	Did you need me, Kantoku?
+206264	3fd8	I have been watching you pitch,\nand you might do well to shift
+206308	0732	where you stand a little.
+206340	dddd	Huh?!
+206350	35e5	Where I stand?
+206364	053b	Just so.
+206378	d6a4	Merely by moving to the right or\nleft of the plate, the same ball
+206418	93cd	can be given a different path.
+206446	4b37	To a batter, a change in the\npath alone
+206478	4e2f	feels like quite a difference.
+206510	b8e5	Is that so.
+206530	221b	Well?
+206544	24e6	Shall we try a small change?
+206568	8004	Hmm, what should I do?\n
+206594	8885	Right Side
+206604	7248	 or 
+206616	7a03	Left Side 
+206626	bd14	...
+206640	487d	\n【Right Side】\nPitching from the third-base side\n【Left Side】\nPitching from the first-base side\n
+206710	772b	Keep my position as it is
+206738	4686	Try a little to the right
+206768	5407	Try a little to the left
+206828	6cda	Very well.\nSo you will keep your usual
+206862	af67	position when you pitch.
+206892	8b92	Yes.
+206908	d1d0	After that, Kantoku taught me
+206926	33bd	all kinds of pitching know-how.
+206980	64e6	Very well.\nFrom now on you will pitch
+207016	d7cb	from a spot to the right.
+207042	8b92	Yes.
+207058	d1d0	After that, Kantoku taught me
+207076	33bd	all kinds of pitching know-how.
+207132	b5cd	Very well.\nFrom now on you will pitch
+207168	d7cb	from a spot to the left.
+207194	8b92	Yes.
+207210	d1d0	After that, Kantoku taught me
+207228	33bd	all kinds of pitching know-how.
+207292	7be0	Listen, 
+207302	f926	.
+207314	0195	Did you need me, Kantoku?
+207336	9edd	I was watching you pitch,\nand you could change where you
+207378	0732	stand a little.
+207410	dddd	Huh?!
+207420	35e5	Where I stand?
+207434	1ead	That is right.
+207446	d6a4	Merely by moving to the right or\nleft of the plate, the same ball
+207486	6703	can be given a different path.
+207512	4b37	To a batter, a change in the\npath alone
+207544	bc6f	feels like quite a difference.
+207574	b8e5	Is that so.
+207594	6497	Well?
+207606	24e6	Want to try a small change?
+207630	8004	Hmm, what should I do?\n
+207656	8885	Right Side
+207666	7248	 or 
+207678	7a03	Left Side 
+207688	bd14	...
+207702	487d	\n【Right Side】\nPitching from the third-base side\n【Left Side】\nPitching from the first-base side\n
+207772	772b	Keep my position as it is
+207800	4686	Try a little to the right
+207830	5407	Try a little to the left
+207892	6cda	Very well.\nSo you will keep your usual
+207926	a8d7	position when you pitch.
+207954	8b92	Yes.
+207970	d1d0	After that, Kantoku taught me
+207988	33bd	all kinds of pitching know-how.
+208040	64e6	Very well.\nFrom now on you will pitch
+208076	8f5b	from a spot to the right.
+208100	8b92	Yes.
+208116	d1d0	After that, Kantoku taught me
+208134	33bd	all kinds of pitching know-how.
+208192	b5cd	Very well.\nFrom now on you will pitch
+208228	8f5b	from a spot to the left.
+208252	8b92	Yes.
+208268	d1d0	After that, Kantoku taught me
+208286	33bd	all kinds of pitching know-how.
+208356	7be0	Listen, 
+208366	f926	.
+208378	0195	Did you need me, Kantoku?
+208400	3fd8	I have been watching you pitch,\nand you might do well to shift
+208444	0732	where you stand a little.
+208476	dddd	Huh?!
+208486	35e5	Where I stand?
+208500	053b	Just so.
+208514	d6a4	Merely by moving to the right or\nleft of the plate, the same ball
+208554	93cd	can be given a different path.
+208578	4b37	To a batter, a change in the\npath alone
+208610	4e2f	feels like quite a difference.
+208642	b8e5	Is that so.
+208658	221b	Well?
+208672	24e6	Shall we try a small change?
+208696	8004	Hmm, what should I do?\n
+208722	8885	Right Side
+208732	7248	 or 
+208744	7a03	Left Side 
+208754	bd14	...
+208768	487d	\n【Right Side】\nPitching from the third-base side\n【Left Side】\nPitching from the first-base side\n
+208838	772b	Keep my position as it is
+208866	4686	Try a little to the right
+208896	5407	Try a little to the left
+208956	6cda	Very well.\nSo you will keep your usual
+208990	af67	position when you pitch.
+209020	8b92	Yes.
+209036	d1d0	After that, Kantoku taught me
+209054	33bd	all kinds of pitching know-how.
+209108	64e6	Very well.\nFrom now on you will pitch
+209144	d7cb	from a spot to the right.
+209170	8b92	Yes.
+209186	d1d0	After that, Kantoku taught me
+209204	33bd	all kinds of pitching know-how.
+209260	b5cd	Very well.\nFrom now on you will pitch
+209296	d7cb	from a spot to the left.
+209322	8b92	Yes.
+209338	d1d0	After that, Kantoku taught me
+209356	33bd	all kinds of pitching know-how.
+209600	7be0	Listen, 
+209610	f926	.
+209622	9a4c	Did you need me, Kantoku?
+209644	cea8	You seem to be working hard\nin practice, and rather well.
+209680	8c4f	I am expecting great things.
+209702	d0fd	Yes, sir!
+209714	ce87	Thank you, sir!
+209768	7be0	Listen, 
+209778	f926	.
+209790	9a4c	Did you need me, Kantoku?
+209820	9aa7	You have gone slack lately!
+209846	8a4f	Pull yourself together!
+209872	29f5	Y-yes, sir!
+209888	5b2d	I'm sorry.
+209914	f5ac	Kantoku chewed me out.
+209984	7be0	Listen, 
+209994	f926	.
+210006	9a4c	Did you need me, Kantoku?
+210032	9054	You seem to be working hard\nin practice.
+210066	e274	I am counting on you.
+210088	d0fd	Yes, sir!
+210100	ce87	Thank you, sir!
+210156	7be0	Listen, 
+210166	f926	.
+210178	9a4c	Did you need me, Kantoku?
+210208	58ea	You have gone slack lately!
+210236	8a4f	Pull yourself together!
+210262	29f5	Y-yes, sir!
+210278	5b2d	I'm sorry.
+210300	f5ac	Kantoku chewed me out.
+210394	f926	.
+210406	299d	Oh, Kanna... no, I mean\n
+210432	1344	Acting Kantoku!
+210446	ce0d	Looks like you're working hard.
+210468	aed4	Counting on you in the final game!
+210496	1852	Bring it on!
+210524	b5c3	Ah, 
+210534	f926	.
+210546	9a4c	Did you need me, Kantoku?
+210568	cea8	You seem to be training hard, eh?\n
+210604	cd75	I'm expecting great things, mind.
+210628	d0fd	Yes, sir!
+210640	ce87	Thank you, sir!
+210726	e126	,\n
+210734	cfa5	you've been kind of slack lately.
+210762	c236	Huh!
+210776	047e	D-do you think so?
+210796	b8c7	Put some spirit into\n
+210810	e686	your practice, okay?
+210836	7083	Sorry.
+210860	b5c3	Ah, 
+210870	f926	.
+210882	9a4c	Did you need me, Kantoku?
+210912	d2fa	You have grown a bit loose, eh?
+210948	4cb0	Pull yourself together, mind!
+210980	d863	That face isn't very convincing...
+211010	e4c7	But he's right. I can't stay\n
+211034	4afb	like this...
+211054	cb1a	I'm sorry, sir.
+211086	f5ac	Kantoku chewed me out.
+211152	18ba	I'm beat today...
+211174	6fcd	Time to head home.
+211206	cb94	Yo, 
+211218	3f00	.\nWe're all going for yakiniku now,
+211252	9042	want to come along?
+211284	8ca7	I'm broke this month.
+211304	c380	Ask me again next time.
+211338	9374	I'm definitely going!
+211354	8e6f	Too tired. I'll rest at home
+211408	4028	Oh, too bad.
+211428	ca98	Next time, then.
+211448	c0e9	Sorry.
+211466	0b99	I took it easy and rested at home.
+211528	a384	Okay,
+211540	2b5a	I knew you'd say that.
+211572	9291	Then let's go!
+211598	9ade	Indeed!
+211620	7481	Yabe-kun, when did you get here!
+211674	ce08	Yakiniku is the best!
+211698	d5ce	(Sizzle sizzle)
+211722	423f	I'd die for yakiniku!
+211754	d5ce	(Sizzle sizzle)
+211774	1519	Yeah, right.
+211792	d5ce	(Sizzle sizzle)
+211814	93a9	We
+211828	2fe5	enjoyed a yakiniku party.
+211896	b21f	Ugh, I'm stuffed...
+211986	04f4	(Guffaw guffaw)
+212006	b23c	Whoa, seriously?
+212026	29dd	I never heard that story!
+212054	ac03	Ha ha ha ha!
+212076	7256	Okay, time to try something...
+212108	8cd3	Show off a party trick
+212128	393b	Praise my team mates
+212150	55c6	Gripe about Kantoku
+212196	872a	Everybody, listen up!!!
+212230	865b	What's this?
+212248	c5cb	(Chatter chatter)
+212322	aff3	(Dead silence)
+212358	0de3	My big routine bombed completely,
+212384	6cdf	and it got awkward for a while.
+212428	e5ad	-kun is a letdown.
+212504	d616	Ha ha ha ha ha!
+212524	e93d	The act I did out of desperation
+212548	caf0	went over surprisingly well.
+212654	63eb	What, 
+212668	f926	.
+212676	dde6	Praising me gets you nowhere.
+212708	659c	Still, being praised
+212732	d9b2	does feel kind of good.
+212754	2f13	That just raised my
+212776	4e4a	 points went up.
+212804	c1dc	What's that supposed to mean?
+212880	d1f4	So that's how 
+212892	cb91	-kun\ngets through life so smoothly,
+212918	8158	I see.
+212946	3c66	Oh, I get it.
+212962	78ac	So that's his game.
+212984	5b8d	Huh?
+212998	c8a3	You don't suck up to Kantoku\nlike that too,
+213042	b5e0	do you?
+213064	6c0d	Whaaat?!
+213086	18ed	Yabe-kun's remark did me in.
+213166	fbf7	Ha ha ha ha.
+213216	1016	That's awful!
+213238	d6f8	Never heard that one before.
+213266	9dd3	Me, the other day...
+213300	098c	We all griped about Kantoku
+213328	84fa	and let off our everyday steam.
+213408	10c7	But that's going a bit
+213422	a9b6	too far, isn't it?
+213456	6b9d	I think so too.
+213486	1b8c	Things got a little awkward.
+213604	f393	Now then, 
+213614	8b2c	Weekly Nyamp
+213630	6cbc	, let's see.
+213648	5b00	【Weekly Nyamp】\nA popular manga magazine loved by kids and adults alike.
+213708	f02b	I look forward to this every week.
+213768	1f9e	Normal\n
+213776	9b57	Fired up\n
+213790	ae64	Funny!\n
+213804	83dc	Dull\n
+213816	f613	Give it to a team mate
+213956	e50c	Whoa!
+213968	7da9	Whoaaaa!
+213988	165e	Awesome!
+214000	e2ad	It goes this way here?!
+214040	472d	Man, that was great!
+214070	6b8b	Since I was done reading,
+214086	7cb8	I decided to give it to Yabe-kun.
+214164	51b4	Pfft!
+214178	6a3a	Ha ha ha!
+214198	4a8e	This is hilarious!
+214214	9d9f	Nyamp never disappoints!
+214254	6b8b	Since I was done reading,
+214270	7cb8	I decided to give it to Yabe-kun.
+214340	e50c	Oh!
+214356	e5ab	Huh?
+214370	0e38	Whaaat?!
+214398	c588	Hmm, not great.
+214418	3371	This week's was boring.
+214452	6b8b	Since I was done reading,
+214468	7cb8	I decided to give it to Yabe-kun.
+214554	511d	Ha ha ha ha!
+214582	7932	Man, that was fun.
+214604	22eb	Hm? That thing\nyou're holding,
+214632	9b38	Weekly Nyamp?
+214652	126d	I haven't read that one yet.
+214678	33a7	Let me read it a sec.
+214706	7263	OK!
+214726	6b8b	Done reading, so I gave it to
+214748	addd	.
+214926	406b	For once, relaxing in the park
+214942	0f8b	isn't bad at all...
+214984	612f	Hm?
+214994	022d	Isn't that...
+215024	e3af	Zento Kaoru!
+215042	e50c	Hey!
+215054	2441	Long time no see, 
+215070	f926	.
+215082	bb84	What are you doing here?
+215130	88af	Hey!\nKeep your voice down.
+215154	cf1d	You'll scare the fish away!
+215184	9bbb	Don't mess up my fishing!
+215214	1eef	Sorry...
+215234	f0a9	Amateurs, I swear.
+215262	9240	I'm moving to another spot.
+215286	b05c	Move quietly at a fishing spot.
+215322	04b6	See you around.
+215364	da9c	You look at this and
+215380	cb28	still can't tell what I'm doing?
+215432	7566	You've got no common sense.
+215460	cbd1	Leave me alone.
+215480	1d08	This is fishing.\nFishing, but of the kind
+215508	c9d1	called lure fishing.
+215534	dc3e	Fish will take this 
+215544	0e96	lure
+215554	be66	 for food,
+215572	ff39	and bite. That's the trick.
+215598	479a	\n【lure】\nAn artificial bait.\nThey come in many kinds: fish, frogs, worms and more.
+215680	cc10	Wow, fish actually bite at this...
+215712	27d3	Fishing is a battle of wits\nbetween man and fish. There's
+215764	ef59	really deep technique packed in.
+215786	869b	In baseball terms, it's like the
+215814	516e	duel between batter and pitcher.
+215842	b536	Huh.
+215852	daab	So you like fishing, Zento.
+215884	a089	Heh.\nBelieve it or not, back home
+215910	fb8b	I was kind of a local celebrity.
+215948	6ba3	Fishing! It's fishing!
+215976	1ead	Right.
+215988	fa40	Want to give it a try?
+216016	47f8	Let's do this!
+216030	8752	Not this time
+216076	8e3f	Okay.\nI'll lend you my rod,
+216114	941f	so try copying what I do.
+216142	90ef	And so\nI ended up trying
+216176	e022	lure fishing.
+216252	e2b9	・
+216264	e2b9	・
+216288	b316	I got one!
+216304	1f7c	Oh!\nThat's a strong pull!
+216336	111d	Not bad!
+216370	9141	Reeled in an unexpectedly big one.
+216398	b2f9	Hey,\nyou might have a talent for this!
+216432	1178	You're pretty good!
+216504	e2b9	・
+216516	e2b9	・
+216540	b316	I got one!
+216556	9051	Oh, nice one!
+216594	8f9d	Caught a fish!
+216620	8441	,\nnot bad at all.
+216648	d0e8	That looked good.
+216700	e2b9	・
+216712	e2b9	・
+216738	6759	(Snap!)
+216760	0928	Ah!
+216770	c4cb	The line snapped!!!
+216794	0775	Seriously?
+216810	1bb9	That lure was expensive!
+216840	1eef	Sorry...
+216860	be0d	Honestly, you're hopeless.
+216882	c273	This is how you fish.
+216920	c33a	And so
+216936	a1c9	I enjoyed some lure fishing.
+217000	6c63	I see.
+217012	6ca0	Then it can't be helped.
+217036	5e23	I'm switching spots.
+217064	0e48	See you!
+217088	b3e2	Lure fishing, huh.
+217110	837f	Might be nice once in a while.
+217132	782e	I went home
+217146	d036	and rested up good.
+217576	443f	Chilling in the park once in a\nwhile is nice.
+217620	3b41	Oh, that's... Zento?!
+217648	6eca	Oh, if it isn't 
+217658	00a4	.
+217690	d048	At it again, running drills.
+217724	7699	Yeah.\nWant to join me?
+217764	8ce9	What are you doing in the park?
+217788	68ec	Running drills.
+217810	e680	To build up my sky-high stamina\neven more.
+217862	0df3	Wow, you actually work hard,\nfor how you look.
+217902	f919	You say one word too many.
+217928	ef1e	Oops, I said that out loud.
+217950	7e49	Sorry, sorry.
+217970	f60c	Tch...
+217988	a1e4	Whatever. Want to join?
+218022	d622	Join in!\n
+218034	4778	Better not
+218060	7aea	Sure, I'm free.
+218094	26e8	Okay, let's do it.
+218114	64ff	Let's give it everything!
+218198	713f	What's wrong, is that all?
+218224	998e	I'm not done y...
+218252	dcbf	Collapsed, huh...
+218276	a17e	Looks like I win.\nKnow your place.
+218328	a13f	Ugh...
+218414	23ff	Huff huff...
+218430	2308	Puff puff...
+218446	5452	We ran all the way into town.\nNot bad, pal.
+218498	fd23	Ha, you too.
+218572	2468	I'm tired right now, so I'll pass.
+218604	c500	Tch, no guts.\nOh well, later!
+218652	8836	And off they go.
+218672	3fe6	Rest on that bench, then go home.
+357286	bd9d	Today it's Pichipichi Fisheries.
+357314	69a5	What kind of team are they?
+357340	e7f7	As the name suggests,\nI hope it's a team of young
+357380	27db	and lively pichi-pichi girls
+357402	aed3	亞
+357416	917f	Ha ha, no way.
+357446	c122	Pardon me!
+357460	b970	You two,
+357482	0aea	you are our opponents, yes?!
+357510	9cd9	I pitch for Pichipichi Fisheries,
+357536	64c7	Namigashira Shibuki
+357550	7358	
+357572	1ef4	is what they call me!
+357596	9c3a	Let us have a fine game today!
+357624	5030	Y-Yes!
+357644	3171	!
+357658	0d7e	I'm Yabe!
+357674	b15f	Pleased to meet you.
+357700	33b7	Hm!\nI am glad to face opponents
+357730	900b	with some backbone!
+357752	04e2	Then let us make it a fine game!
+357788	b43b	Yabe-kun, did you see?
+357810	82b7	I did indeed.
+357826	38f4	His clothes were skin-tight.
+357858	770a	Is that why they're Pichipichi?
+357884	46a3	N-Now I'm curious...
+357958	06f3	Today it's Pichipichi Fisheries.
+357986	3ac1	I'll do my best!
+358010	7772	It has been a while!
+358028	241f	So, have you practiced
+358050	d6cb	plenty?
+358066	5708	Our team is, at this very moment,
+358082	1db2	riding the crest of a wave.
+358104	b29c	We will not lose easily!
+358132	e859	Likewise!
+358146	f867	We won't lose!!
+358256	0095	We won!
+358274	b01e	Hmph...\nI could not ride the wave!
+358308	1d77	Bitter, so bitter...
+358356	f297	We lost...
+358374	9bb1	We won!\nWe return to port!
+358408	41f2	Hoist the big-catch flags!!
+358516	e41c	You are quite good, friend!
+358540	eb4e	I have never had a practice
+358562	fa71	so in tune with me.
+358578	0210	I am of Pichipichi Fisheries,
+358602	64c7	Namigashira Shibuki.
+358616	3ac7	
+358650	eda0	A pitcher, same as you!
+358672	103d	Let us get along!
+358700	6e6e	(Grip!)
+358726	306b	Wow, you are strong.
+358746	18d7	And such thick arms.
+358766	a40e	Daily work at sea builds one up!
+358798	648e	Using this power,
+358820	0a61	I boast a wave-piercing fastball!
+358854	9f4b	That power...
+358868	0d61	I'm so envious.
+358892	e425	Hm! Then every day
+358912	8195	eat fish!
+358928	66cd	Fish builds a sturdy body!!
+358956	3534	While we can practice together,\nI can be of help.
+358994	4867	Ask me anything!
+359022	f2f5	Yes!
+359032	5428	Please take care of me!
+359120	e41c	You are quite good, friend!
+359144	eb4e	I have never had a practice
+359166	fa71	so in tune with me.
+359186	9274	Y-You are!
+359206	69d3	Pichipichi's Namigashira Shibuki!
+359234	1dc9	Do you remember?
+359264	6e6e	(Grip!)
+359290	3b2e	Of course.
+359306	b4f2	That grip and the pain in my hand,
+359332	6b08	there's no way I'd forget!
+359362	a40e	Daily work at sea builds one up!
+359394	648e	Using this power,
+359416	0a61	I boast a wave-piercing fastball!
+359450	9f4b	That power...
+359464	0d61	I'm so envious.
+359488	e425	Hm! Then every day
+359508	8195	eat fish!
+359524	66cd	Fish builds a sturdy body!!
+359552	3534	While we can practice together,\nI can be of help.
+359590	4867	Ask me anything!
+359618	f2f5	Yes!
+359628	5428	Please take care of me!
+359730	58fc	Hi there★
+359740	7428	You must be today's opponent.
+359766	dbc8	I'm Ageage★Baseball Club's
+359796	5df9	Hamu Reito
+359810	302e	.
+359846	9a26	Go easy on me.
+359878	62d9	I'm
+359890	5637	
+359904	3171	!
+359914	8596	Pleased to meet you!
+359996	fd25	Reito-sama,
+360012	2b79	I bought you a drink!
+360042	6ac4	Hey!
+360058	bcd7	Don't you sneak ahead of us!
+360090	aea0	Here you are, Reito-sama
+360106	aed3	亞
+360116	eba0	I brought tea for you.
+360142	3ede	Drink mine!
+360210	ea39	What's that?
+360224	f483	Don't get in the way!
+360252	8896	Look who's talking!
+360272	e24a	Honeys, please stop fighting.
+360304	7b85	It makes me sad.
+360342	bef1	It's not you two fighting today,
+360370	9484	it's me.
+360390	55f4	Cheer for me, all friendly.
+360414	c3ee	Today, I'll give it my all
+360440	b08d	just for you two, you know
+360456	aed3	亞
+360474	215d	Ohh, Reito-sama...
+360490	6d92	亞亞亞
+360508	6cc9	What is with these people...
+360594	385f	Today it's Ageage.
+360620	3ac1	I'll do my best!
+360644	1c6e	Hi, 
+360654	43bc	-kun!
+360666	dde1	I'm feeling totally
+360688	c793	pumped and hyped today★
+360710	4ecc	Sorry, but we'll take the win.
+360744	e859	Same here!
+360758	f867	We won't lose!!
+360872	0095	We won!
+360890	521b	Impossible,
+360902	4303	that I would lose!
+360926	5d2c	How can I face my Honeys...
+360988	f297	We lost...
+361006	6f8f	Yeah! We won★
+361032	a6de	It's party time today.
+361054	9b7a	We party till dawn, baby!
+361164	9711	Hey, that one
+361188	9d34	came out just right!
+361204	37bf	My name is
+361222	5df9	Hamu Reito
+361236	1de1	.
+361266	dbc8	Ageage★Baseball Club's
+361294	9762	pitcher, pleased to meet you♪
+361324	ed6d	Hamu Reito?
+361340	c2af	That's an unusual name.
+361366	555c	That's just my
+361382	9d1b	 club name
+361392	6798	, you see.
+361406	6f20	\n【Club name】\nMainly a nickname or stage name taken by
+361442	be23	people who work in the nightlife trade.
+361466	a489	Everyone around me mostly
+361488	281d	calls me Reito, I'd say.
+361514	0687	Then I'll call you Reito-san too.
+361544	71bd	By the way, Reito-san,
+361566	954b	Besides control,\n
+361586	fbdc	are you good with breaking balls?
+361614	eb5f	Yeah, that's right.\nI throw a splitter, a slurve, and
+361654	f6dd	a shuuto.
+361668	cf58	Their names sound cool,
+361698	8a7e	so I picked those three★
+361718	10f9	What, for the name?!
+361734	4011	Well, that's amazing in a way...
+361766	ef51	Looking forward to it★
+361790	6835	Now, let's pump up the mood!
+361820	76cb	I won't lose either!
+361902	9711	Hey, that one
+361926	9d34	came out just right!
+361946	9274	Y-You are!
+361966	4744	It's been a while.
+361982	6c85	I'm Hamu Reito of Ageage★
+362004	278b	Do you remember me?
+362030	ed44	Of course!
+362054	71bd	By the way, Reito-san,
+362076	954b	Besides control,\n
+362096	fbdc	are you good with breaking balls?
+362124	eb5f	Yeah, that's right.\nI throw a splitter, a slurve, and
+362164	f6dd	a shuuto.
+362178	cf58	Their names sound cool,
+362208	dab7	so I picked those three★.
+362228	10f9	What, for the name?!
+362244	4011	Well, that's amazing in a way...
+362276	ef51	Looking forward to it★
+362300	6835	Now, let's pump up the mood!
+362330	76cb	I won't lose either!
+362408	3244	Ahh!\n
+362420	6f10	Yours truly bought loads again!
+362450	6b4e	I'm so happy.
+362472	693a	That's a lot.
+362492	a618	Yabe-kun, did you\n
+362506	dc1c	really have that much money?
+362536	4e71	Probably, 
+362546	a623	-kun and I\n
+362556	24d2	are about the same, really.
+362588	297d	Even so,\n
+362602	8dcb	you're always shopping a lot.
+362636	8efd	I have my little tricks.
+362664	ea62	I shop to get discount services,\n
+362694	710e	or order by mail and such\n
+362726	1a9d	That's how it is.
+362746	af13	Even small discounts, piled up,\n
+362774	fc18	add up to quite a lot.
+362806	92db	I see.
+362826	72da	From now on, I think I'll\n
+362846	ab32	try shopping with some thought.
+362882	e079	As for penny-pinching tricks,\n
+362904	4cc6	I'll teach you any time.
+362940	4fcc	Sure, thanks.
+362964	9386	Well, I'll head to another shop\n
+362988	a56c	to keep shopping...
+363012	e5ab	Huh?
+363030	6b13	What's wrong?
+363050	6918	My wallet is totally empty.
+363082	43fa	Well, overspending does that.
+363114	64c7	To keep this from happening\n
+363134	0ef2	I'll be careful.
+363160	906c	I'll be plenty careful.\n
+363250	8fc2	Good work today, too!
+363282	d26d	Good work.
+363302	0b97	By the way, Yabe-kun,\n
+363324	c6c8	you ate something rare at lunch.
+363358	9aee	The natto bowl bento?
+363384	abf3	I just love natto bowls.
+363418	3c39	It's amazing they even sell\n
+363436	2f28	a natto bowl bento.
+363470	df2f	And Yabe-kun,\n
+363490	3368	did you even like that stuff?
+363512	ce49	That's right!\n
+363530	d35a	It's the best.
+363550	e342	Hmm.
+363572	958e	Hey, hey. Did you see the
+363588	1467	Morning Pawa Big Meal Corner
+363612	972c	?
+363620	9b5f	\n【Morning Pawa Big Meal Corner】\nOne segment of the early-morning news show\n'Powerful Mornings'. Eating the big meal\nannounced there may bring you wealth, fame, even luck
+363744	90fc	all in one go... maybe?\n
+363776	c7d6	Saw it, saw it!
+363792	124a	Today absolutely everybody\n
+363812	bd00	was eating natto bowl bentos.
+363842	9b3e	It smelled intense.
+363868	a2cc	But, but!\n
+363884	2e50	It really does seem to work.
+363912	9ed7	Ryoko from the next section\n
+363934	75f1	got a rich boyfriend, they say.
+363968	065c	No way!? Really?
+363994	b158	It's true!
+364012	a9d2	She went for the big meals\n
+364042	1049	harder than anyone, remember?
+364068	623f	The big meal really is something.
+364108	1e27	Natto bowl bento is the big meal?
+364140	bee1	W-What an amazing coincidence,\n
+364166	2605	I must say.
+364180	007b	I'm astonished.
+364204	e342	Hmm.
+364220	045b	R-Really, it is.
+364242	6cbf	I'm not the sort of lightweight\n
+364274	148f	who gets swept up by a TV show.
+364308	1e9f	So did you see what came after?
+364336	dba4	Huh? What do you mean, after!?
+364362	3fd5	Tomorrow's corner is off, so\n
+364392	53af	they did tomorrow's at the end.
+364438	5655	What!
+364450	1c60	They did such a thing?!
+364484	4135	I missed it...
+364506	7247	I can't go on living.
+364538	fdbf	You're totally hooked.
+364576	1064	I missed it.
+364598	92cc	Hey, what was it?
+364634	0231	What was it?!
+364666	187b	Yabe-kun, calm down!!
+364704	3f2b	This time it was oddly specific.
+364732	fa81	Specific how?
+364754	d006	It works on working adults\n
+364780	433c	who play baseball, they say.
+364810	482e	Perfect!\n
+364826	1997	That's me, a perfect fit!
+364862	00a1	Is it that specific?
+364882	fa8d	So what was it?!!
+364920	2959	So, what was it?
+364956	fba0	What was it again?
+364982	0212	What's with that?
+365002	f442	Well, once it didn't concern me\n
+365032	51bf	my interest just faded.
+365068	8947	Grraaah!
+365088	5f47	Well, naturally.
+365114	a512	I'll try my hardest!
+365134	e1f5	I'll remember it.
+365166	069e	What was it...
+365184	b4a7	Canned mackerel... was it?
+365218	319b	I'll go buy them all up!!
+365280	5686	Oh, no, no.\n
+365296	1a0a	It was salmon ochazuke, I think.
+365324	c1c1	That's totally different!
+365348	d83c	Ha ha ha.
+365362	cca3	Well, never mind.\n
+365382	0363	It doesn't concern us.
+365410	8c2f	True enough.
+365436	d309	You jumped the gun, Yabe-kun.
+365472	5ecd	Salmon ochazuke, huh...
+365504	5c7a	Yeah...
+365526	49de	I have a feeling I'll just happen\n
+365550	5b69	to crave ochazuke tomorrow.
+365600	27e0	What's this, Yabe?
+365616	3f2f	Why are you carrying so many cans?
+365648	14a7	Today I'm all mackerel cans.
+365684	4015	Time to dig in!
+365712	89cf	I don't really get it, but\n
+365738	538c	that's bold.
+365756	e574	Then there are plain ones too.
+365786	a89c	Ochazuke, really?
+365806	8914	Well, once in a while...
+365832	7a97	What about your meal?
+365854	8013	Me?
+365870	0723	I've got a pork cutlet curry.
+365892	da69	Apparently it's today's big meal.
+365936	5590	Huh?
+365950	b457	What on earth do you mean...
+365974	d740	I don't know the details.
+366002	31d6	The curry place on my way said so\n
+366030	d6b6	and had a sale, so I bought it.
+366064	c552	So those office ladies had it\n
+366094	3106	wrong, did they...
+366116	9080	And by two levels, too...
+366146	e2fb	Two levels?
+366162	06af	Never mind, Yabe-kun.
+366190	6e21	Yabe-kun, want some ochazuke?
+366226	4a77	Then I'll give you a few\n
+366254	a2e4	cans of mackerel.
+366274	100c	Afterward, beside the delicious\n
+366292	ef5b	smell of curry, we devoured\n
+366318	6f9f	ochazuke and canned mackerel.
+366434	843f	Oh! 
+366444	775a	-kun.
+366454	6da4	Look at that.
+366480	6b13	What's wrong?
+366496	e790	At what...?
+366522	2610	Oh, that's...!
+366544	a1a0	Is that true!?
+366560	36b3	It really does seem to be true!
+366598	3c5a	The mackerel can office ladies.
+366620	943c	The ochazuke ladies, rather.
+366646	497c	Why do we see it so differently?
+366682	af8e	Forget it already, Yabe-kun.
+366712	9a72	And forget the Big Meal Corner,\n
+366740	6a1f	Yabe-kun.
+366758	98a3	I never cared about it to begin\n
+366786	8174	with, I'll have you know.
+366804	b8a5	Honestly, now.
+366834	af1e	Now Kana did!?
+366852	aa15	Yes, she won first prize\n
+366872	5ff6	in the Lotto, they say!
+366894	d560	It really is amazing.
+366920	4e53	We'll give it our all too!
+366946	ad69	So what is it this time?
+366974	1829	Let's see...
+366992	3354	Trend Bowl
+367004	a991	, 
+367014	87c7	Chirashi Set
+367028	2716	 and\n
+367038	9b4b	Tiered Dashimaki Bento
+367054	f926	.
+367060	57af	\n【Trend Bowl】\nA rice bowl topped with trendy ingredients,\narranged with real style.\nEat it and you'll be quite the trendsetter!\n【Chirashi Set】\nA set meal lavishly topped with fresh\ningredients, scattered prettily.\n【Tiered Dashimaki Bento】\nA bento proud of its thick dashimaki.\nA flashback power meal: eat it while\nrecalling a rival you once faced.\nFor someone who has won many battles,
+367316	1a69	there may be something to gain!
+367344	5e15	Why are there three?
+367370	65a3	Each one seems to have a meaning.
+367396	89cf	But three is really too much.
+367428	f96b	How timid.
+367442	1784	I'll try all three!
+367470	e67f	How bold.
+367494	6d0f	Still on the Big Meal Corner, huh.
+367522	1136	After last time,\n
+367544	f148	what should I do?
+367574	2aa0	Trend Bowl\nChirashi Set\nTiered Dashimaki Bento
+367608	4778	Better not
+367640	1f92	Then Trend Bowl it is.
+367692	1fcb	Then Chirashi Set it is.
+367744	6f59	Then Tiered Dashimaki Bento it is.
+367794	b48f	Well then, I'll have the\n
+367818	dabe	-kun's\n
+367836	efc0	same thing.
+367880	b816	-kun,\n
+367890	940f	good morning.
+367914	7142	Morning, Yabe-kun.
+367936	98ce	How did the big meal work out?
+367966	a33b	Looks like it didn't work.
+368002	b59c	-kun,\n
+368012	b250	how about you?
+368044	0b6e	Seems it failed for me too.
+368074	f4bb	Things never go quite that\n
+368092	b396	smoothly, I'm afraid.
+368118	9403	Tell me about it.
+368138	288a	I'm graduating from\n
+368152	9caf	big meals now.
+368174	7440	You're right.
+368194	2db1	Now, the famous Big Meal Corner\n
+368218	a007	of Powerful Mornings!
+368240	f756	Today's big meal is...
+368270	e488	What is it today!?
+368302	1665	Looks like you can't graduate yet.
+368364	4faf	Heh heh heh.
+368388	e3d5	Today's me is a cut above\n
+368414	b625	yesterday's me, Yabe-kun.
+368444	f04e	R-Really!?!
+368468	42bd	I can't sit still!
+368496	d1fb	I'll go buy up big meals\n
+368516	99b0	like crazy too!!!!
+368562	ffe0	Next day, Yabe-kun ate big meals\n
+368592	ddb4	to the limit, and needless to say\n
+368618	bf78	his stomach gave out...
+368686	f407	-kun is timid too.
+368712	547b	I'm going for all three!
+368744	9642	Try not to wreck your stomach.
+368784	fc38	Next day, Yabe-kun ate all three\n
+368814	ddb4	big meals, and needless to say\n
+368840	9aa2	his stomach gave out.
+478624	e2b9	・
+478634	e2b9	・
+478644	e2b9	・
+479770	0d0f	-san
+479886	0d0f	-san
+493712	c915	【
+493722	f3d8	】
+493940	c915	【
+493950	f3d8	】
+529320	264a	Hello, Momoko-chan?
+529346	2896	Oh, is that 
+529358	8054	-kun!
+529368	f018	What's up?
+529384	8c9a	I was thinking of going\nout somewhere.
+529424	a328	Is that okay?
+529444	9762	...Sure, okay.
+529466	3077	Where to?
+529486	1ea2	Hmm, let me think...
+529522	587a	Okay.
+529536	b827	I'll get ready right now.
+529568	73ea	(Beep boop beep)
+529588	721f	(Brrring, brrring)
+529614	220f	(Click)
+529644	264a	Hello, Momoko-chan?
+529676	8054	-kun!
+529686	83b5	I was thinking of going
+529704	cfae	out somewhere.
+529732	b047	Sure, okay.
+529748	3077	Where to?
+529768	1ea2	Hmm, let me think...
+529802	7263	OK!
+529816	b827	I'll get ready right now.
+529848	d026	Huh?!
+529874	47fe	But it's raining out?
+529908	55ab	But it's snowing out?
+529930	4fe4	Let's pick somewhere else.
+529956	80d9	Oh, right.
+529992	e841	So where to?
+530016	1ea2	Hmm, let me think...
+530048	4043	Huh?!\nWe were just there.
+530086	4fe4	Let's pick somewhere else.
+530112	80d9	Oh, right.
+530148	e841	So where to?
+530172	1ea2	Hmm, let me think...
+530238	5c50	-kun!
+530254	73f3	Oh, Momoko-chan!
+530272	2040	Why are you here?
+530328	8aa1	Wondering how practice is going.
+530392	d3c6	I got curious, so I came by.
+530448	6c65	Here.
+530458	6ac6	Hand towel and an energy drink.
+530516	42f1	Thank you!
+530580	107d	Uuugh
+530628	bb4d	Wooooooah!
+530654	6fae	I suddenly feel full of power!!!
+530686	2fdc	Thanks!\nIt's Momoko-chan's love!
+530722	1d9f	I'm totally fired up!
+530778	3a82	Love Power activated!
+530806	dfb9	【Love Power】\n...It is the power of love.\nSometimes it gives the heart courage,\nand sometimes it leads the heart astray.
+530988	09f1	It's raining today.
+531004	77c5	Let me pop over to the store.
+531048	dd87	Got my eggs!
+531064	0a77	Thanks, come again.
+531104	6bee	Whoa!\nIt's pouring out of nowhere!!!
+531138	21f4	This is bad!
+531282	ddbe	Eek!
+531298	cd4a	Ow ow ow,
+531318	2c2d	S-sorry!
+531342	837b	My apologies, too.
+531368	2a3a	Oh, the eggs are broken...
+531394	4857	I-I'm sorry, sir!
+531416	ab57	All because I'm so clumsy.
+531448	5583	It's fine, it's fine.
+531470	338b	(Achoo!)
+531496	3a3d	Are you all right?
+531516	5c94	Yeah, I'm fine.
+531546	e27d	And so, until the rain stopped,
+531572	1b11	we sheltered in a nearby arcade.
+531602	fab2	Ohh,
+531612	32e5	-kun
+531622	0d14	that's nice.
+531638	48b2	My name is
+531654	cd88	Hanai Momoko.
+531668	6182	
+531690	cf22	See you!
+531722	d1ad	Hanai Momoko-chan, huh?
+531742	d256	She's so cute.
+531766	e5ab	Huh?
+531776	df47	Something's been dropped here...
+531806	4d03	A commuter pass!
+531820	8fd0	She must have dropped it
+531842	61be	when we bumped just now.
+531920	09f1	It's raining today.
+531936	77c5	Let me pop over to the store.
+531980	dd87	Got my eggs!
+531996	0a77	Thanks, come again.
+532036	6bee	Whoa!\nIt's pouring out of nowhere!!!
+532070	21f4	This is bad!
+532210	ddbe	Eek!
+532226	cd4a	Ow ow ow,
+532246	2c2d	S-sorry!
+532274	0928	Ah!
+532284	c589	You're from my dispatch site...
+532306	3e00	Wait, Hanai Momoko-chan!
+532336	2244	It's you, 
+532348	8054	-kun!
+532362	2a3a	Oh, the eggs are broken...
+532388	c334	S-sorry.
+532414	ab57	All because I'm so clumsy.
+532446	5583	It's fine, it's fine.
+532468	338b	(Achoo!)
+532494	1923	Are you okay?
+532514	5c94	Yeah, I'm fine.
+532544	e27d	And so, until the rain stopped,
+532570	1b11	we sheltered in a nearby arcade.
+532600	dabf	Oh wow, 
+532612	d1cc	-kun is
+532624	0d3b	so interesting!
+532642	db35	Oh no!\nI have to go now.
+532680	41e7	See you again.
+532712	c665	She's cute every time I see her.
+532744	e5ab	Huh?
+532754	df47	Something's been dropped here...
+532784	4d03	A commuter pass!
+532798	8fd0	She must have dropped it
+532820	61be	when we bumped just now.
+532840	6be3	Met Hanai Momoko again.
+532996	c623	Today is Christmas Eve.
+533036	c623	Today is Christmas Eve.
+533074	fd01	Wow!\nOn Christmas of all days,
+533104	ed26	you got such a great spot!
+533136	e1fa	It was expensive, right?
+533158	27f0	Heh heh.
+533170	517f	Not really.
+533202	03fe	Ha ha ha.
+533216	3ebd	Man, that was fun.
+533236	d32f	Here's your bill, please.
+533268	0e5d	Okay.
+533284	e2b9	・
+533300	e2b9	・
+533316	ca32	Huh? Huh?
+533336	be59	Don't tell me,\nyou don't have enough money,
+533364	8afb	do you?
+533390	d578	Um,
+533404	6aad	Actually, that's exactly it...
+533430	26e5	How lame.
+533444	e750	I had her cover
+533460	0e03	some of the shortfall...
+533548	c623	Today is Christmas Eve.
+533586	9715	Ha ha ha ha.
+533602	7a23	And then,
+533616	c2cf	this happened, you know.
+533642	d7d7	Huh?!
+533654	f422	Really?
+533672	36b3	We went to a family restaurant
+533702	6d13	and enjoyed a decent dinner.
+533788	c623	Today is Christmas Eve.
+533826	fd01	Wow!\nOn Christmas of all days,
+533856	ed26	you got such a great spot!
+533888	e1fa	It was expensive, right?
+533910	27f0	Heh heh.
+533922	517f	Not really.
+533954	03fe	Ha ha ha.
+533968	3ebd	Man, that was fun.
+533996	1bc2	We went to a fancy restaurant
+534022	141e	and enjoyed a grown-up dinner.
+534124	c623	Today is Christmas Eve.
+534162	fd01	Wow!\nOn Christmas of all days,
+534192	ed26	you got such a great spot!
+534224	e1fa	It was expensive, right?
+534246	27f0	Heh heh.
+534258	517f	Not really.
+534290	03fe	Ha ha ha.
+534304	3ebd	Man, that was fun.
+534486	1bc2	We went to a fancy restaurant
+534512	141e	and enjoyed a grown-up dinner.
+534596	f313	Oh, right.
+534612	f3fc	I have something for you.
+534638	67ed	It's this...
+535196	dddd	Huh?!
+535206	c39f	Don't tell me this is...
+535228	155c	You've wanted this a while, right?
+535262	a02f	Thank you!\nI'm so happy!
+535292	178e	I'll treasure it.
+535318	461d	We stayed on\nat the fancy restaurant
+535352	141e	and enjoyed a grown-up dinner.
+535804	8871	Today is Valentine's Day.
+535848	8871	Today is Valentine's Day.
+535888	c1dd	We're supposed to be dating,\nbut
+535918	170b	we hardly ever meet, right?
+535946	27c2	True... maybe so.
+535972	841d	I want to chat more,\nand go out and play more,
+536018	8446	so call me once in a while!
+536044	d357	Yeah.
+536060	ccc7	Come to think of it, lately
+536076	704e	I haven't been in touch much...
+536122	e599	From my girlfriend,
+536134	8064	I got some very bitter chocolate.
+536224	8871	Today is Valentine's Day.
+536264	03fe	Ha ha ha.
+536286	ba05	Oh, right!
+536308	78f8	-kun,
+536318	f3fc	I have something for you.
+536344	794d	Here, chocolate!
+536370	92a3	It's Valentine's chocolate!
+536400	42f1	Thank you!
+536422	e599	From my girlfriend,
+536434	ba6a	I got Valentine's chocolate.
+536524	8871	Today is Valentine's Day.
+536564	03fe	Ha ha ha.
+536586	ba05	Oh, right!
+536608	78f8	-kun,
+536618	f3fc	I have something for you.
+536644	794d	Here, chocolate!
+536666	e8c2	It's homemade, sort of.
+536688	92a3	It's Valentine's chocolate!
+536718	42f1	Thank you!
+536734	99d0	And you can have this, too.
+536756	56c2	I bought it in case you wanted it.
+536792	548e	It's Pawarin!
+536820	bb15	From my girlfriend, I got homemade
+536844	c6f2	chocolate and Pawarin.
+536958	8871	Today is Valentine's Day.
+536998	03fe	Ha ha ha.
+537020	ba05	Oh, right!
+537042	78f8	-kun,
+537052	f3fc	I have something for you.
+537078	b580	Here, chocolate!\nIt's homemade.
+537110	b65c	I stayed up all night making it!
+537138	92a3	It's Valentine's chocolate!
+537168	42f1	Thank you!
+537184	99d0	And you can have this, too.
+537206	56c2	I bought it in case you wanted it.
+537248	8879	Wow! It's 
+537266	801e	!
+537286	bb15	I got homemade chocolate and
+537324	7e9c	 from my girlfriend.
+537596	7547	Today is the summer festival.
+537636	7547	Today is the summer festival.
+537692	7055	Wooow!
+537708	d627	So many people.
+537732	cb0a	Yeah.\nJust couples and
+537756	5a1b	families everywhere.
+537782	7eb4	By the way,
+537802	9a2e	-kun,
+537816	13c8	you hardly ever call me, right?
+537842	e8b9	Did you fall for someone else?
+537870	f765	(Smiling brightly)
+537892	d026	Huh?!
+537904	bd51	That's not true!
+537928	2c13	I see.
+537948	3548	Then let's meet like this
+537966	81b3	once in a while, too.
+537996	d357	Yeah.
+538012	ccc7	Come to think of it, lately
+538028	704e	I haven't been in touch much...
+538072	e4e9	For a while after that,\nshe kept lecturing me
+538112	9fdc	for how little I got in touch.
+538172	7547	Today is the summer festival.
+538228	7055	Wooow!
+538244	d627	So many people.
+538268	6e55	Sure is.
+538288	9e42	Oh, goldfish scooping!
+538312	faa2	I'm good at this one!
+538338	dabf	Ohh,
+538350	e826	I'm pretty good, too.
+538380	21bd	Then it's a contest!
+538396	b522	Loser obeys the winner for a day.
+538426	a611	Whaaat?!
+538452	329f	We enjoyed the summer festival.
+538528	7547	Today is the summer festival.
+538584	7055	Wooow!
+538600	d627	So many people.
+538624	6e55	Sure is.
+538646	7cc7	(Whooo)
+538668	9fa7	(Kaboom!)
+538694	8e0b	(Sizzle sizzle...)
+538722	0442	Wow, so pretty!
+538744	c2bf	What a big firework.
+538768	ba49	True. But at a time like this,
+538798	ac5f	「You are prettier」
+538824	7885	 or something,
+538834	726e	you say some corny line like that.
+538870	0e5d	Okay.
+538892	6fd6	For a while after that,
+538914	4686	we kept watching the fireworks.
+538980	7547	Today is the summer festival.
+539036	7055	Wooow!
+539052	d627	So many people.
+539076	6e55	Sure is.
+539098	7cc7	(Whooo)
+539112	9fa7	(Kaboom!)
+539130	8e0b	(Sizzle sizzle...)
+539154	0442	Wow, so pretty!
+539176	8997	Momoko-chan, you're every bit
+539202	f7f8	as pretty as they are.
+539230	d026	Huh?!
+539246	0e17	Oh stop it!\nWhat are you even saying!!!
+539286	8904	You're embarrassing me.
+539312	27f0	Heh heh.
+539338	775a	-kun.
+539356	d709	Momoko-chan.
+539378	6fd6	For a while after that,
+539400	4686	we kept watching the fireworks.
+539452	9a5c	Hello,
+539472	e0bd	-kun?
+539486	4873	Oh, Momoko-chan!
+539514	f7a7	You haven't called lately,
+539542	641a	did something happen?
+539566	732c	I don't like being left alone.
+539598	d587	So get in touch again, okay?
+539646	9a5c	Hello,
+539666	e0bd	-kun?
+539682	4873	Oh, Momoko-chan!
+539704	9a4e	I'm nearby right now,
+539730	e296	do you have some time?
+539754	d357	Yeah.
+539780	2957	We've been dating for
+539822	6488	 months now.
+539834	d8db	Come to think of it,
+539848	c14e	I guess it has.
+539870	da4a	Lately I've been thinking\nwe may not really be
+539910	0982	a good match...
+539938	5b8d	Huh?
+539952	9c4d	I'm sorry!\nI thought about it a lot,
+539986	e455	but I can't date you anymore.
+540040	f83c	From now on, if you see me\nin town,
+540068	36f5	don't call out to me or anything.
+540108	6c02	From now on, if you see me,
+540132	36f5	don't call out to me or anything.
+540162	8400	Oh, and\nat the office I'll act the same,
+540206	95f5	so don't get the wrong idea!
+540236	216a	Well then, goodbye.
+540270	ee84	M-Momoko-chan...
+540296	0726	N-no way...
+540318	3d43	I should have treated her
+540338	cafb	better...
+540404	0928	Ah!
+540414	12b3	That's Momoko-chan!
+540438	113b	Hey!
+540464	8054	-kun!
+540478	4744	It's been a while.
+540498	ca8d	Here, your commuter pass.\nI think you dropped it
+540532	a4f8	when we bumped into each other?
+540560	f350	Oh!
+540570	5f72	I was looking for that.
+540596	6267	Thank you!
+540616	266f	I thought I'd see you here.
+540650	dacd	Last time I broke your eggs,\nand today you brought my pass,
+540700	9fd4	thank you so much!
+540724	3335	Is there anything I can do
+540736	1107	to thank you?
+540764	3030	Oh, no need to thank me.
+540794	4c76	Then,\nif anything comes up, call here.
+540828	3885	I'm sure I can help.
+540858	032a	Th-this is...
+540874	51ad	A cell phone number!
+540902	7c13	Got Hanai Momoko's phone number.
+540932	de0d	You can now ask her on dates.
+541136	2379	It's raining today,
+541152	fe9a	so I'll focus on work...
+541184	cc65	Phew, finally done with work.
+541210	cd9f	Even got tomorrow's done!
+541242	7672	Wow, amazing, 
+541256	775a	-kun.
+541270	602a	Capable men really are cool.
+541306	73f3	Oh, Momoko-chan!
+541328	c2a6	So, right after work tomorrow,\njust for a little while,
+541364	95f2	will you come along with me?
+541392	1540	Huh?
+541402	4c0f	Sure, I guess...
+541428	5845	What could it be?
+541440	3d18	Maybe, just maybe...
+541488	17dd	(Huff, huff, huff)
+541516	42c4	Come on,\nhang in there, baseball boy!
+541544	31fa	That's nothing for you!
+541576	1b9f	"Come along," she says...
+541612	fbfc	I'm just a pack mule here!
+541648	cb23	Sniff.
+541660	eee0	You don't have to get so mad...
+541692	4690	Oh, sorry.
+541724	1634	Hey!\nThat was expensive,
+541756	acd8	so hold it properly!
+541784	8a27	Yes, sir...
+541814	42f1	Thank you!
+541830	a5d9	See you. Bye-bye♪
+541868	c9ab	In the end, I was just run
+541884	ebc6	ragged for a whole day.
+541914	edc1	It's late already. Let's go home.
+541946	e5ab	Huh?
+541956	986f	A slip of paper in my pocket.
+541988	f2aa	「
+541996	d37c	-kun,
+542006	ee36	  Thank you for today」
+542028	7c58	「Next time, it's your treat.
+542050	c594	  I'm waiting for your call!!!」
+542078	c5a5	The slip had a cell phone
+542092	f485	number written on it.
+542126	7c13	Got Hanai Momoko's phone number.
+542156	de0d	You can now ask her on dates.
+542282	5881	Then we spent a fun time
+542308	385d	out in the city at night.
+542446	d0ea	 is now\nyour girlfriend.
+542508	f0f0	Hmm, maybe too early...
+542540	8764	Rushing in a romance
+542568	e750	is a big no-no. Yep, yep.
+542596	7ab3	...Mumbling to himself,
+542620	6591	what's with this guy?
+542658	7db4	Calm down 
+542670	611e	,
+542678	624f	this is an important point,
+542702	fffc	don't make the wrong call...
+542726	add5	Calmer, calmer...
+542758	44d0	Well, shall we head home?
+542776	7ba1	I'll walk you.
+542802	d37a	Yeah, thanks, 
+542912	1cb1	I'll relax with a girl today.
+542944	d4ac	Who should I invite?
+543012	993e	Momoko-chan\n
+543026	de46	Miyo-san\n
+543148	ef7e	\n
+543294	c993	Okay, let's ask 
+543306	3475	 out on a date.
+543502	d038	Amusement park\n
+543512	5d3e	Town\n
+543520	b493	Beach\n
+543528	0f20	Park\n
+543536	675d	Movie
+543672	2a4a	So, how about 
+543686	27b2	 today?
+543746	d848	Debug message
+543766	7d37	Within 3 months,\n
+543780	4d12	went there twice in a row
+543928	d848	Debug message
+543948	a6ea	Though rain or snow,\n
+543962	60c6	an outdoor date spot was chosen.
+544234	78c2	Okay, let's head out right away!
+544370	d848	Debug message
+544390	0667	From here to each date...
+544532	d1c3	Though I don't know any girls\n
+544562	0190	like that, now that I think of it.
+544586	a4c5	I'll just laze around all day.
+559840	587a	Okay.
+559854	b827	I'll get ready right now.
+593484	c623	Today is Christmas Eve.
+596738	ef7e	\n
+596830	ef7e	\n
+596922	ef7e	\n
+616524	c623	Today is Christmas Eve.
+620008	8871	Today is Valentine's Day.
+622052	7547	Today is the summer festival.
+629888	fbb9	Pawafuru Corp.
+629920	fffe	The Kagurazaka Group
+629952	e71b	Otori Phoenix
+630984	3cec	Busters
+669698	4bc6	Field Good Sunny (Day\n
+669718	3530	Press the button.
+669740	cd0c	Field Good Rain (Day\n
+669760	3530	Press the button.
+669782	9e10	Field Good Snow (Day\n
+669802	3530	Press the button.
+669824	34e5	Field Good Sunny (Night\n
+669844	3530	Press the button.
+669866	703f	Field Good Rain (Night\n
+669886	3530	Press the button.
+669908	8448	Field Good Snow (Night\n
+669928	3530	Press the button.
+669950	1841	Field Avg Sunny (Day\n
+669970	3530	Press the button.
+669992	4b73	Field Avg Rain (Day\n
+670012	3530	Press the button.
+670034	0b45	Field Avg Snow (Day\n
+670054	3530	Press the button.
+670076	8b46	Field Avg Sunny (Night\n
+670096	3530	Press the button.
+670118	7daf	Field Avg Rain (Night\n
+670138	3530	Press the button.
+670160	24bc	Field Avg Snow (Night\n
+670180	3530	Press the button.
+670202	7130	Shacho's Office\n
+670212	3530	Press the button.
+670234	d4f8	Fancy Shacho's Office (Rain\n
+670250	3530	Press the button.
+670272	6e1b	Office (Day\n
+670286	3530	Press the button.
+670308	92b3	Office (Night\n
+670322	3530	Press the button.
+670344	8761	Rich Company Interior\n
+670358	3530	Press the button.
+670380	d026	Rural Stadium Interior\n
+670394	3530	Press the button.
+670416	1d46	Own Room (Day\n
+670428	3530	Press the button.
+670450	98e6	Own Room (Night\n
+670462	3530	Press the button.
+670484	58a2	Warehouse\n
+670492	3530	Press the button.
+670514	0a0d	Construction Site\n
+670526	3530	Press the button.
+670548	0011	Lake (Day\n
+670558	3530	Press the button.
+670580	14a5	Lake (Dusk\n
+670590	3530	Press the button.
+670612	0d88	Sky (Dusk\n
+670622	3530	Press the button.
+670644	1d07	Nice Apartment Interior (Night\n
+670668	3530	Press the button.
+670690	ea90	Rain Clouds\n
+670698	3530	Press the button.
+670720	f4c6	Draft\n
+670732	3530	Press the button.
+670758	97f8	Stadium Bench\n
+670772	3530	Press the button.
+670794	2499	In Front of Station\n
+670802	3530	Press the button.
+670824	c10e	Training Gym\n
+670842	3530	Press the button.
+670864	063a	Hospital Room\n
+670872	3530	Press the button.
+670894	34d2	Shrine (Night\n
+670906	3530	Press the button.
+670928	26d8	Riverbank (Day\n
+670940	3530	Press the button.
+670962	f680	Riverbank (Dusk\n
+670976	3530	Press the button.
+670998	662c	Cafe (Restaurant\n
+671018	3530	Press the button.
+671040	8db6	Laboratory\n
+671050	3530	Press the button.
+671072	87fb	News Screen\n
+671086	3530	Press the button.
+671108	3a94	Park (Day\n
+671120	3530	Press the button.
+671142	5c84	Park (Night\n
+671154	3530	Press the button.
+671176	c3b6	Inn\n
+671184	3530	Press the button.
+671206	4276	Indoor Practice Field\n
+671220	3530	Press the button.
+671242	116b	Inside Shop\n
+671250	3530	Press the button.
+671272	f41f	Movie Theater\n
+671282	3530	Press the button.
+671304	d038	Amusement Park\n
+671314	3530	Press the button.
+671336	b493	Sea\n
+671344	3530	Press the button.
+671366	8822	Town (Day\n
+671376	3530	Press the button.
+671398	07e1	Town (Night\n
+671408	3530	Press the button.
+671430	4071	Family Home Interior\n
+671442	3530	Press the button.
+671464	22a0	Festival\n
+671472	3530	Press the button.
+671494	47a7	Generic Plaza\n
+671506	3530	Press the button.
+671528	6387	Batting Center\n
+671548	3530	Press the button.
+671570	744c	Convenience Store\n
+671582	3530	Press the button.
+671604	26d2	Hot Spring\n
+671612	3530	Press the button.
+671634	a09f	Mountain\n
+671642	3530	Press the button.
+671664	1ce8	Family Home Exterior\n
+671676	3530	Press the button.
+671698	8f93	Diner\n
+671712	3530	Press the button.
+671734	e10f	Regional Souvenir Shop\n
+671748	3530	Press the button.
+671770	659b	Castle Scenery\n
+671784	3530	Press the button.
+671806	4fd8	Buddha Statue Temple\n
+671816	3530	Press the button.
+671838	3daa	Koshien Exterior\n
+671852	3530	Press the button.
+671874	6815	Koshien Interior\n
+671888	3530	Press the button.
+671910	cd3d	Shrine (Day\n
+671922	3530	Press the button.
+671944	2807	Department Store Interior\n
+671958	3530	Press the button.
+671980	e1da	Shopping Street\n
+671990	3530	Press the button.
+672012	6caf	Airport\n
+672020	3530	Press the button.
+672042	568f	Camp Hotel (Day\n
+672066	3530	Press the button.
+672088	fad1	Camp Hotel (Night\n
+672112	3530	Press the button.
+672134	07b4	Dome Interior\n
+672148	3530	Press the button.
+672170	27bd	Dome Exterior\n
+672184	3530	Press the button.
+672206	9095	Izakaya\n
+672216	3530	Press the button.
+672238	56e9	First-Team Locker Room\n
+672252	3530	Press the button.
+672274	ac74	Owner's Room\n
+672290	3530	Press the button.
+672312	1dd9	First-Team Field (Day\n
+672332	3530	Press the button.
+672354	1b83	First-Team Field (Night\n
+672374	3530	Press the button.
+672396	bdf5	Stadium Exterior\n
+672408	3530	Press the button.
+672430	609b	Second-Team Locker Room\n
+672444	3530	Press the button.
+672466	526d	Dorm Exterior\n
+672476	3530	Press the button.
+672498	ec8e	Bar\n
+672506	3530	Press the button.
+672528	115e	Night Sky\n
+672536	3530	Press the button.
+672558	e6af	Nice Apartment Interior\n
+672580	3530	Press the button.
+672602	2326	Spectator View Stadium Interior\n
+672620	3530	Press the button.
+672642	38b1	Sky\n
+672650	3530	Press the button.
+672672	b95e	Hotel Lobby\n
+672686	3530	Press the button.
+672708	f579	Bad Ending Background\n
+672728	3530	Press the button.
+672852	fcb2	Back to Start\n
+672866	33ce	Happy End\n
+672882	2660	Fired\n
+672890	f66d	Injured, Game Over
+673012	fcb2	Back to Start\n
+673026	02ab	Light Bulb\n
+673034	1013	---\n
+673044	3e6a	---
+673100	fcb2	Back to Start\n
+673114	3689	Fade Out (Black\n
+673134	ff72	Fade Out (White\n
+673154	00cd	Fade In
+673228	a7d0	Vibration ON\n
+673240	b409	Vibration OFF\n
+673254	e9a3	Vibration Strong\n
+673264	611a	Vibration Weak
+673372	9e0d	Next\n
+673380	e700	Vitality MAX Up\n
+673398	43e8	　\n
+673406	43e8	　\n
+673414	6084	Fired, Become Inherited Player\n
+673434	2a14	Injury Game Over\n
+673454	5173	Game End Check\n
+673474	88ad	Cure Illness
+673582	9e0d	Next\n
+673590	4127	Vibration Test\n
+673604	2e8a	Velocity, Control Up\n
+673628	5139	Velocity, Control Down
+673740	385a	Special Ability\n
+673752	9786	Success Ability
+673788	9e0d	Next\n
+673796	8ddb	Grt Bunt\n
+673808	9a4d	Gd Bunt\n
+673820	3a76	Grt Clutch\n
+673834	d287	Gd Clutch\n
+673848	e106	Pr Clutch\n
+673862	727e	Awful Clutch
+674004	9e0d	Next\n
+674012	e4cb	Gd vs. LH Batters\n
+674026	fb50	Pr vs. LH Batters\n
+674040	d7fc	Grt vs. LH Pitchers\n
+674054	6216	Gd vs. LH Pitchers\n
+674068	ca48	Pr vs. LH Pitchers\n
+674082	0a57	Awful vs. LH Pitchers
+674224	9e0d	Next\n
+674232	26fa	Gd Spin\n
+674242	9ff5	Pr Spin\n
+674252	37b1	Gd Quick Delivery\n
+674266	fdb8	Pr Quick Delivery\n
+674280	6ca5	Gd Throwing\n
+674290	a089	Pr Throwing
+674424	9e0d	Next\n
+674432	f6d9	Grt Steal\n
+674442	df10	Gd Steal\n
+674452	8bf4	Pr Steal\n
+674462	9a09	Gd Baserunning\n
+674472	1bdd	Pr Baserunning\n
+674482	ca8d	Gd in a Jam\n
+674494	06e5	Pr in a Jam
+674652	9e0d	Next\n
+674660	afb0	Gd Durability\n
+674674	6fd0	Pr Durability\n
+674688	4cc3	Gd Recovery\n
+674698	3697	Pr Recovery\n
+674708	cdff	Gd Teamwork\n
+674724	de22	Pr Teamwork
+674868	9e0d	Next\n
+674876	19bd	Laser Beam\n
+674892	18de	Steady Veteran\n
+674904	4286	Aggressive Fielding\n
+674916	7856	Low Ball Hitter\n
+674936	b1b6	High Ball Hitter\n
+674956	eba8	Double Play Breaker\n
+674972	e053	Moving Fast Ball
+675038	9e0d	Next\n
+675046	89b6	Heavy Ball\n
+675056	cb35	Light Ball\n
+675066	7e89	Dr. K\n
+675076	3699	(Invalid) 2-Seamer\n
+675096	66f3	(Invalid) Ichinose Original\n
+675120	b0fa	(Invalid) Riser Shot
+675168	9e0d	Next\n
+675176	98ac	(Invalid) Rising Cannon\n
+675202	fbd2	Gd Cleanup\n
+675212	e05c	Pr Cleanup\n
+675222	6710	Streak Hitter\n
+675234	1b19	Consecutive Hits\n
+675242	5869	Bases-Loaded Hit\n
+675254	355d	Bases-Loaded Homer
+675336	9e0d	Next\n
+675344	1165	Walk-Off Hit Man\n
+675360	b562	Walk-Off Man\n
+675374	3bca	Adversity\n
+675382	309c	Gd Sub Position\n
+675396	8fc9	Pr Sub Position\n
+675410	1948	Intimidation\n
+675418	a386	Gd Morale\n
+675430	607d	Pr Morale
+675524	9e0d	Next\n
+675532	6670	Escape Ball\n
+675542	59fb	Release\n
+675554	d815	Short Temper\n
+675562	5e0e	Slow Starter\n
+675580	61f1	Win Luck\n
+675590	9580	Loss Luck\n
+675600	7c0e	Mood Maker
+675676	9e0d	Next\n
+675684	0d66	Brink\n
+675692	80c7	Gyro\n
+675704	9bde	Pacing\n
+675714	a93f	Whisper Tactics\n
+675728	c405	Shuuto Spin\n
+675742	6018	Taciturn
+675792	9e0d	Next\n
+675800	f844	Gd Fastball Life\n
+675810	0864	Pr Fastball Life\n
+675820	32c0	Gd Stability\n
+675832	7803	Pr Stability\n
+675844	d056	Lose Gd Stability\n
+675858	a652	Lose Pr Stability\n
+675872	1b87	Gd Injury Resist\n
+675882	e18a	Pr Injury Resist
+676092	9e0d	Next\n
+676100	713d	Gd Full Count\n
+676116	5ba4	Erratic\n
+676124	3e5c	Gd Guts\n
+676134	66e7	Gd vs. Sluggers\n
+676148	3944	Gd vs. Aces\n
+676162	a3e1	Crossfire
+676332	9e0d	Next\n
+676340	529a	Gd Eye\n
+676352	eb2d	Surprise Factor\n
+676362	8e2e	Walk Man\n
+676372	8f3a	Remove Walk Man
+676500	9e0d	Next\n
+676508	c0a1	Gd Sense\n
+676520	9bb9	Pr Sense\n
+676532	57a8	Lose Gd Sense\n
+676546	a50b	Lose Pr Sense\n
+676560	d974	Heartthrob\n
+676572	87b1	Timidity (No Pow 13\n
+676592	5618	Laziness
+676694	9e0d	Next\n
+676702	43e8	　\n
+676710	b58c	Lucky Boy\n
+676726	6d11	Showman\n
+676740	2153	Good Guy\n
+676752	ef7e	\n
+676900	9e0d	Next\n
+676908	2b0b	Oversleeper\n
+676916	a2e0	Baseball Nut\n
+676928	f4d0	Shoulder Time Bomb\n
+676938	28c5	Elbow Time Bomb\n
+676950	5dd5	Leg Time Bomb\n
+676960	dc4d	Cold\n
+677124	9e0d	Next\n
+677132	b477	Smart Shopper\n
+677146	5530	Hard Worker\n
+677160	a4da	Lovesick\n
+677170	4140	Cavity\n
+677178	75d7	Cracked Nail\n
+677188	c128	Insomnia\n
+677198	c6a1	Cure Illness
+677844	7433	1\n
+677852	55e3	2\n
+677860	f798	3\n
+677868	58b8	4\n
+677876	d403	5\n
+677884	c69b	6\n
+677892	b4fa	7\n
+677900	15ab	8
+677966	0a8e	L0R0 Version\n
+677986	b1fc	L1R1 Version
+678018	02eb	End\n
+678028	3e36	All Common\n
+678038	665f	Pawafuru Corp.\n
+678054	bb9c	Kagurazaka\n
+678064	7d35	Otori Phoenix\n
+678080	1b13	Enemy Team\n
+678092	e974	Pro Player Type
+678148	b521	Next\n
+678158	be3a	All Common\n
+678172	6365	Pawapuro\n
+678184	4d6b	Yabe\n
+678192	13d0	Tomozawa\n
+678200	214f	Mizuki\n
+678210	32aa	Ikari Mamoru\n
+678220	f44b	Mob Generics
+678278	b521	Next\n
+678288	b2fb	Dog, Kato Kyoko, Gedo\n
+678308	f862	Daijobu\n
+678322	d3e6	Mob Girlfriend\n
+678334	8deb	Tournament Winner Tsubasa\n
+678352	2d11	Momoko\n
+678360	0f9b	Miyo\n
+678368	10be	Kanna, Otori
+678424	b521	Next\n
+678434	f8dc	Kageyama\n
+678442	1bd8	Clerk\n
+678450	85df	Mob Resident\n
+678462	8ee9	Mob Resident Child\n
+678476	7061	Hijiri\n
+678484	1f2a	Tojo\n
+678492	ab50	Takeda
+678548	b521	Next\n
+678558	9c97	Mole\n
+678568	e142	Coach Kantoku\n
+678582	4bed	Aoi\n
+678592	fbc3	Mob Reporter
+678640	b521	Next\n
+678650	7615	Giants\n
+678658	fc55	Chunichi\n
+678666	9361	Hiroshima\n
+678674	413a	Yakult\n
+678686	6590	Yokohama\n
+678694	eb3d	Hanshin Tigers
+678744	b521	Next\n
+678754	ae71	Rakuten\n
+678762	457a	Nippon-Ham\n
+678772	2db9	Seibu\n
+678780	ac73	Orix\n
+678794	d40c	Lotte\n
+678804	507a	SoftBank
+678860	b521	Next\n
+678870	4183	Powerfuls\n
+678884	98ae	Kaisers\n
+678898	6ae3	Cathands\n
+678914	c23b	Yankiis\n
+678928	fba2	Busters\n
+678942	97d5	Vulcans Team
+678996	b521	Next\n
+679006	5238	Sea Rex\n
+679020	86b5	Sarpas\n
+679032	9bd4	Goodwill
+679070	b521	Next\n
+679080	7aad	Gokuaku\n
+679088	7d90	Rocket\n
+679100	6739	Naniwa\n
+679110	ee21	Pichipichi\n
+679122	0974	Ageage\n
+679134	128c	Hao\n
+679142	c0e9	Dosukoi!
+679200	02eb	End\n
+679210	f0c6	Mizotto\n
+679222	bb64	Tenka Construction\n
+679234	34dd	WWW\n
+679244	bbc9	Konjo\n
+679252	639b	Main Power\n
+679262	3954	Tekuteku\n
+679274	74b0	Kurojishi
+679328	02eb	End\n
+679338	88f9	Pawa Shacho\n
+679350	4c8e	Pawa Bucho\n
+679362	18c3	Pawa Senpai\n
+679374	0db4	Pawa Kohai\n
+679386	ceab	Pawa Mob
+727076	b521	Next\n
+727086	be3a	All Common\n
+727100	6365	Pawapuro\n
+727112	4d6b	Yabe\n
+727120	13d0	Tomozawa\n
+727128	214f	Mizuki\n
+727138	32aa	Ikari Mamoru\n
+727148	f44b	Mob Generics
+727206	b521	Next\n
+727216	b2fb	Dog, Kato Kyoko, Gedo\n
+727236	f862	Daijobu\n
+727250	d3e6	Mob Girlfriend\n
+727262	8deb	Tournament Winner Tsubasa\n
+727280	2d11	Momoko\n
+727288	0f9b	Miyo\n
+727296	10be	Kanna, Otori
+727352	b521	Next\n
+727362	f8dc	Kageyama\n
+727370	1bd8	Clerk\n
+727378	85df	Mob Resident\n
+727390	8ee9	Mob Resident Child\n
+727404	7061	Hijiri\n
+727412	1f2a	Tojo\n
+727420	ab50	Takeda
+727476	b521	Next\n
+727486	9c97	Mole\n
+727496	e142	Coach Kantoku\n
+727510	4bed	Aoi\n
+727520	fbc3	Mob Reporter
+727568	b521	Next\n
+727578	7615	Giants\n
+727586	fc55	Chunichi\n
+727594	9361	Hiroshima\n
+727602	413a	Yakult\n
+727614	6590	Yokohama\n
+727622	eb3d	Hanshin Tigers
+727672	b521	Next\n
+727682	ae71	Rakuten\n
+727690	457a	Nippon-Ham\n
+727700	2db9	Seibu\n
+727708	ac73	Orix\n
+727722	d40c	Lotte\n
+727732	507a	SoftBank
+727788	b521	Next\n
+727798	4183	Powerfuls\n
+727812	98ae	Kaisers\n
+727826	6ae3	Cathands\n
+727842	c23b	Yankiis\n
+727856	fba2	Busters\n
+727870	97d5	Vulcans Team
+727924	b521	Next\n
+727934	5238	Sea Rex\n
+727948	86b5	Sarpas\n
+727960	9bd4	Goodwill
+727998	b521	Next\n
+728008	7aad	Gokuaku\n
+728016	7d90	Rocket\n
+728028	6739	Naniwa\n
+728038	ee21	Pichipichi\n
+728050	0974	Ageage\n
+728062	128c	Hao\n
+728070	c0e9	Dosukoi!
+728128	02eb	End\n
+728138	f0c6	Mizotto\n
+728150	bb64	Tenka Construction\n
+728162	34dd	WWW\n
+728172	bbc9	Konjo\n
+728180	639b	Main Power\n
+728190	3954	Tekuteku\n
+728202	74b0	Kurojishi
+728256	02eb	End\n
+728266	88f9	Pawa Shacho\n
+728278	4c8e	Pawa Bucho\n
+728290	18c3	Pawa Senpai\n
+728302	0db4	Pawa Kohai\n
+728314	ceab	Pawa Mob
+834622	b521	Next\n
+834632	9646	Renewal 2: never Grade 2\n
+834658	949b	Renewal 2: other\n
+834682	57db	Renewal 2: other, no goal\n
+834714	48b9	Renewal 2: other, goal met\n
+834744	8852	Renewal 2: other, goal missed\n
+834774	7f91	Renewal 2: other, fired\n
+834802	4f6b	Renewal 2: other, pay cut
+834958	b521	Next\n
+834968	f21e	Renewal 2: set goal\n
+834992	93cc	Renewal 2: just go pro\n
+835022	c0bc	Renewal 2: 1st-round pick\n
+835048	9f07	Renewal 2: end\n
+835070	1af1	Renewal 3\n
+835086	065d	Renewal 3: 1st-round pick, met\n
+835114	554d	Renewal 3: 1st-round, missed
+835262	b521	Next\n
+835272	d22f	Renewal 3: just go pro, met
+835334	b521	Next\n
+835344	4756	Match grade change: top\n
+835368	357f	Match grade change: Grade 1 to 2\n
+835394	ef89	Match grade change: Grade 2 to 1
+835482	b521	Next\n
+835492	8246	Kagu&Koshi match\n
+835506	199b	Kagu&Koshi match, P: start\n
+835532	67e0	Kagu&Koshi match, P: decline\n
+835558	5ff1	Kagu&Koshi match, P: accept\n
+835580	14ec	Kagu&Koshi match, P: Kantoku\n
+835602	17cf	Kagu&Koshi match, P: normal\n
+835628	81e3	Kagu&Koshi match, P: to practical
+835774	b521	Next\n
+835784	d898	Kagu&Koshi match, F: start\n
+835810	2827	Kagu&Koshi match, F: decline\n
+835836	0133	Kagu&Koshi match, F: accept\n
+835858	c4af	Kagu&Koshi match, F: Kantoku\n
+835880	f27a	Kagu&Koshi match, F: normal\n
+835906	d2ce	Kagu&Koshi match, F: to practical\n
+835930	25ad	Kagu&Koshi after match
+836070	b521	Next\n
+836080	9436	Kagu&Koshi after: P win\n
+836102	b0eb	Kagu&Koshi after: P loss\n
+836124	413c	Kagu&Koshi after: F win\n
+836146	9939	Kagu&Koshi after: F loss\n
+836168	edf0	Kagu&Koshi after: Kantoku praises\n
+836192	8143	Kagu&Koshi after: Kantoku scolds\n
+836216	cb2d	Kagu&Koshi after: win, unchanged
+836366	b521	Next\n
+836376	f7e0	Kagu&Koshi after: loss, unchanged
+836434	b521	Next\n
+836444	49d8	Hijiri: top\n
+836460	4dec	Hijiri: first time\n
+836478	a27f	Hijiri: 2nd time\n
+836494	c605	Hijiri: start\n
+836512	4d12	Hijiri: fastball target\n
+836536	6f79	Hijiri: breaking target\n
+836556	38ac	Hijiri: breaking target, none
+836710	b521	Next\n
+836720	a938	Hijiri: breaking target, has one\n
+836746	70c6	Hijiri: duel (P)\n
+836768	4a44	Hijiri: 10 fastballs\n
+836794	a260	Hijiri: 10 breaking balls\n
+836816	c456	Hijiri: duel (F)\n
+836838	403a	Hijiri: to practical\n
+836854	ec13	Hijiri: after practical
+836990	b521	Next\n
+837000	d3a8	Hijiri: after, failed\n
+837022	2472	Hijiri: after, 1st success\n
+837048	4094	Hijiri: after, 2nd success\n
+837074	45cd	Hijiri: after, orig. pitch ON\n
+837100	97f9	Hijiri: after, orig. pitch end\n
+837126	791f	Hijiri: after, 3rd success\n
+837152	f8fd	Hijiri: prev x, start
+837294	b521	Next\n
+837304	1114	Hijiri: prev x, fastball target\n
+837332	5dd9	Hijiri: prev x, breaking target\n
+837358	928f	Hijiri: prev x, duel (P)\n
+837384	34d6	Hijiri: prev x, 10 fastballs\n
+837416	241b	Hijiri: prev x, 10 breaking\n
+837444	eb00	Hijiri: prev x, duel (F)\n
+837470	38ed	Hijiri: prev x, practical start
+837614	b521	Next\n
+837624	281d	Hijiri: prev x, practical, go
+837682	b521	Next\n
+837692	32b7	Showdown\n
+837706	ac00	Showdown: vs Zako\n
+837726	3fb4	Showdown: vs Yabe\n
+837746	2a5f	Showdown: vs Koshi\n
+837766	b31e	Showdown: vs Kagurazaka\n
+837788	5540	Showdown: to duel\n
+837808	2bab	Showdown: after duel
+837950	b521	Next\n
+837960	ac2e	Showdown after: win\n
+837984	ad30	Showdown after: win, Zako\n
+838010	495b	Showdown after: win, Yabe\n
+838036	b291	Showdown after: win, Koshi\n
+838062	9c2a	Showdown after: win, Kagurazaka\n
+838090	57b4	Showdown after: win, branch\n
+838116	c253	Showdown after: loss
+838262	b521	Next\n
+838272	5339	Showdown after: loss, Zako\n
+838298	f605	Showdown after: loss, Yabe\n
+838324	fe4a	Showdown after: loss, Koshi\n
+838350	371a	Showdown after: loss, Kagurazaka\n
+838378	2055	Showdown after: loss, branch\n
+838404	52e1	Showdown after: up to Grade 2/3\n
+838434	278b	Showdown after: reward
+838582	b521	Next\n
+838592	0f3b	Showdown after: down Grade 1/2\n
+838622	2223	Showdown after: down Grade 3\n
+838650	9cf8	Showdown after: Gr 3 down, saved\n
+838680	3f41	Showdown after: Gr 3, not saved
+838710	2512	Showdown after: penalty
+838834	b521	Next\n
+838844	62be	Kagurazaka test\n
+838858	8abf	Kagurazaka test: first time\n
+838878	898f	Kagurazaka test: not first time\n
+838900	7f20	Kagurazaka test: test part\n
+838920	96a6	Kagurazaka test: 5-pitch duel (P)\n
+838946	d99e	Kagurazaka test: target\n
+838966	573b	Kagurazaka test: fastball target
+839110	b521	Next\n
+839120	dae0	Kagurazaka test: 5-pitch duel (F)\n
+839146	b16b	Kagurazaka test: batting machine\n
+839168	af46	Kagurazaka test: batting eye\n
+839188	73be	Kagurazaka test: bunt\n
+839208	bb80	Kagurazaka test: game fielding\n
+839228	6573	Kagurazaka test: 1st test start\n
+839254	1f57	Kagurazaka test: 1st test ends
+839406	b521	Next\n
+839416	0dea	Kagurazaka test: 2nd test start\n
+839442	50aa	Kagurazaka test: 2nd test ends\n
+839470	2858	Kagurazaka test: both fail (G1/2)\n
+839502	9707	Kagurazaka test: both fail (G3)\n
+839530	ccb9	Kagurazaka test: one pass\n
+839550	30f1	Kagurazaka test: both pass (G2/3)\n
+839580	e3d5	Kagurazaka test: both pass (G1)
+839734	b521	Next\n
+839744	1a20	Kagurazaka test: after 1st test\n
+839764	4636	Kagurazaka test: Koshi to Gr 1\n
+839786	b447	Kagurazaka test: first Grade 1
+839880	67d5	Back\nEvents\nItems\nShortcuts\nAbilities\nChange position
+839946	7c22	Other
+840008	35ec	Back\nDaijobu Hakase\nDog\nInheritance\nShop\nHospital\nAbilities
+840060	031e	Common
+840124	5cb4	Back\nKyoko encounter, time bomb\nNone\nNone\nNone\nNone\nNone
+840166	1a2e	None
+840200	0abf	Next\nDog encounter\nDog 0\nDog 1\nDog 2\nDog 3\nDog 4\nDog 5
+840300	def3	Next\nDog 6\nDog 7\nDog 8\nDog tag team\nDog rating up\nDog rating down
+840352	4f1d	Clear dog flags
+840512	e082	Next\nDog 6 part 1\nDog 8, 2nd time\nDog hospitalized\nAdd Negiri shelf items
+840608	bdb6	Back\nBookstore\nButcher\nFishmonger\nGreengrocer\nBakery\nCraftsman\nNext
+840712	03d7	Back\nIdol\nShop clerk\nSalaryman\nThug\nMizotto worker\nNurse\nFortune teller
+840844	ea5c	Back\nIdol 0\nIdol 1
+840872	e6d0	Idol 2
+840916	982f	Back\nShop clerk 0\nShop clerk 1\nShop clerk 1-2\nShop clerk 2
+840976	ebd2	Shop clerk 2-2
+841044	094c	Back\nSalaryman 0\nSalaryman 1
+841078	5379	Salaryman 2
+841124	9550	Back\nThug 0\nThug 1
+841154	c8bc	Thug 2
+841204	ac28	Back\nMizotto worker 0\nMizotto worker 1
+841238	ace0	Mizotto worker 2
+841286	32a6	Back\nNurse 0\nNurse 1
+841310	3ee7	Nurse 2
+841356	858d	Back\nFortune teller 0\nFortune teller 1
+841380	4bcf	Fortune teller 2
+841432	8dd2	Back\nGet all items\nClear all items
+841490	421f	Got all items.
+841534	fb36	Lost all items.
+841580	e250	Back\nPitcher\nCatcher\nFirst baseman\nSecond baseman\nThird baseman\nShortstop
+841622	a75c	Outfielder
+841658	1885	Now a pitcher! ♪
+841700	69d5	Now a catcher! ♪
+841744	ebf6	Now a first baseman! ♪
+841788	b2c4	Now a second baseman! ♪
+841832	e3ae	Now a third baseman! ♪
+841876	dcdc	Now a shortstop! ♪
+841920	dd30	Now an outfielder! ♪
+841972	37fc	Shortcuts turned off.
+842016	1caf	Shortcuts turned on.
+842076	19b7	Winning-streak flag turned off.
+842120	235c	Winning-streak flag turned on.
+842164	81ce	Back\nRemedy\nManicure\nToothbrush Set
+842200	fd61	Pillow
+842260	99b8	Next\nCommon\nRandom Common 0\nRandom Common 1\nRandom Common 2\nRandom Common 3\nRandom Common 4\nRandom Common 5
+842412	0749	Next\nRandom Common 6\nRandom Common 7\nRandom Common 8\nRandom Common 9\nRandom Common 10\nRandom Common 11\nRandom Common 12
+842576	65b4	Next\nRandom Common 13
+842624	7ba9	Next\nCreate inherited character\nPre-game flow (bench)\nPre-game flow (starter)\nPre-game flow (not on bench)
+842704	c5eb	Hospital 10 turns\n
+842720	ce6e	Hospital 200 turns\n
+842738	8518	Sneak Niko Niko Insurance\n
+842880	67c9	 is hospitalized.
+842936	fd80	 is hospitalized!
+842982	d5fd	Niko Niko Insurance
+842998	0522	Obtained secretly!
+843044	4805	Next\nRestore BGM\nBGM: Shop\nNenga event
+843084	5e85	Hospital 1 turn\n
+843098	cdb0	Sound test\n
+843114	b3bd	Winning-streak flag\n
+843214	c827	I'll be out of here soon!
+843260	9e0d	Next\n
+843268	3c64	MENU1\n
+843282	db37	MENU2\n
+843296	e6db	MENU3\n
+843310	5ad7	MENU4\n
+843324	ad71	BAD1\n
+843336	217c	GOOD1\n
+843350	e558	GOOD2\n
+843364	6ddf	GOOD3\n
+843378	7454	NOTICE1\n
+843394	4c0d	KYPIN1\n
+843408	7393	GET1\n
+843420	9843	REJI4\n
+843706	c915	【
+843716	f3d8	】
+843740	2323	Random\n
+843752	d2a7	Pro ballplayer\n
+843766	5400	Scout\n
+843778	8c75	Craftsman\n
+843786	b388	Shop clerk\n
+843800	a693	Butcher\n
+843808	76db	Fishmonger\n
+843816	e572	Next
+844020	3613	Greengrocer\n
+844030	57aa	Bakery\n
+844040	d470	Bookstore\n
+844048	c1b6	Salaryman\n
+844062	50bc	Mizotto worker\n
+844076	4fd8	Thug\n
+844090	fdfc	Fortune teller\n
+844100	9e0d	Next\n
+844308	2849	Idol\n
+844320	4f46	Nurse\n
+844330	9e0d	Next\n
+844438	d44d	Back\n
+844446	cd14	Event test\n
+844462	4608	Sound novel test\n
+844482	d339	Show reinforcement players\n
+844496	a2c0	Face B&W test\n
+844510	8c3f	Tekuteku Tech\n
+844526	41bc	Rocket Express\n
+844540	0df4	Found Pawarin!\n
+844556	a0e8	Reinforcement pitcher\n
+844568	c1fe	Biorhythm\n
+844582	2a5c	-------
+844674	d44d	Back\n
+844682	30de	Pre-game encounter\n
+844696	942a	Pre-game, already met\n
+844716	822e	Post-game win\n
+844730	6b00	Post-game loss\n
+844744	dcfd	After 1st rival tag, encounter\n
+844768	1255	After 1st rival tag, met\n
+844796	f41e	Slide puzzle\n
+844812	506e	Tanakayama and Zako\n
+844826	1e6d	Take care of baseball tools\n
+844844	9ce8	-------\n
+844860	2a5c	-------
+844950	d44d	Back\n
+844958	30de	Pre-game encounter\n
+844972	942a	Pre-game, already met\n
+844992	822e	Post-game win\n
+845006	6b00	Post-game loss\n
+845020	dcfd	After 1st rival tag, encounter\n
+845044	1255	After 1st rival tag, met\n
+845072	c71e	Rival tag, 2nd time onward\n
+845096	6169	Chase him down!\n
+845110	7ac8	Base running
+845202	d44d	Back\n
+845210	1cfc	Reinforcements, 1st time\n
+845230	5d1f	Reinforcements, 2nd time\n
+845250	9ce8	-------\n
+845266	9ce8	-------\n
+845282	9ce8	-------\n
+845298	9ce8	-------\n
+845314	9ce8	-------\n
+845330	9ce8	-------\n
+845346	9ce8	-------\n
+845362	2a5c	-------
+845448	23f4	1st display.
+845476	9243	2nd display.
+845506	4ab0	Aiueo
+845522	861b	Clear face
+845542	c130	This is Pawakuro.
+845566	6821	It's light-blue Yabe.
+845594	41ca	Pink Mizuki.
+845618	b679	Normal color.
+845642	2550	　\n　\n
+845656	230a	        Outfielder  Yabe Akio
+845688	e3ee	Yabe: Yours truly is Yabe Akio.
+845724	2442	   : A fast outfielder, that's me.
+845752	a6fe	   : Aiming to soar even higher,
+845780	71d5	   : I seek the legendary spikes!
+845828	84f1	Momoko: You're leaving me behind!?
+845862	3778	Yabe: Momoko-chan!!
+845890	b3dc	Search for the legendary spikes
+845912	19d5	Live happily with Momoko-chan
+845948	f64f	Yabe: Momoko-chan!
+846006	b1e5	Momoko: Yabe-san!
+846062	85d2	   : The two lived happily.
+846104	f497	         THE
+846120	812f	 E
+846130	4008	ND
+846140	3c01	
+846174	4cc6	Slide puzzle
+846192	9f13	How's this?
+846214	123e	Pawapuro-kun, normal
+846240	f0c3	Pawapuro-kun, black and white?
+846268	bd51	Pawapuro-kun, sepia?
+846298	5de4	Yabe-kun, normal
+846322	344d	Yabe-kun, black and white?
+846346	8cbc	Yabe-kun, sepia?
+846376	147d	The relief ace is
+846402	801e	!
+846410	9f13	How's that?
+846450	d44d	Back\n
+846458	4906	Pichipichi rival event\n
+846482	1fcd	Ageage rival event\n
+846506	b742	Girlfriend event: Kanna\n
+846526	fe68	Yamamoto conversion: random\n
+846544	c804	Yamamoto conversion: girlfriend\n
+846558	f305	Mood-maker and such\n
+846578	9ce8	-------\n
+846594	9ce8	-------\n
+846610	9ce8	-------\n
+846626	2a5c	-------
+846706	b521	Next\n
+846716	49e8	Beach date Nov-Feb\n
+846736	6891	Beach date Nov-Feb: Momoko\n
+846760	a6f2	Beach date Nov-Feb: Momoko safe\n
+846788	d399	Beach date Nov-Feb: Miyo\n
+846812	e82a	Beach date Nov-Feb: Miyo safe\n
+846840	8062	Beach date Nov-Feb: Kanna\n
+846864	dcde	Beach date Nov-Feb: Kanna safe
+847014	b521	Next\n
+847024	cf80	Beach date Nov-Feb: Momoko B\n
+847050	4cdb	Beach date Nov-Feb: Miyo B\n
+847076	4d68	Beach date Nov-Feb: Kanna B\n
+847102	ea22	Beach date 3/6/9/10\n
+847122	4ba0	Beach date 3/6/9/10: Momoko\n
+847146	80e3	Beach date 3/6/9/10: Miyo\n
+847170	3f72	Beach date 3/6/9/10: Kanna
+847318	b521	Next\n
+847328	1c90	Beach date Jul-Aug\n
+847346	6140	Beach date Jul-Aug: Momoko\n
+847368	835c	Beach date Jul-Aug: Miyo\n
+847390	6cbb	Beach date Jul-Aug: Miyo A\n
+847414	c505	Beach date Jul-Aug: Miyo B\n
+847438	fc74	Beach date Jul-Aug: Kanna\n
+847460	415c	Beach date Aug wk 4
+847598	b521	Next\n
+847608	edb0	Beach date Aug wk 4: Momoko\n
+847630	c9e5	Beach date Aug wk 4: Miyo\n
+847652	382e	Beach date Aug wk 4: Kanna\n
+847674	4799	Beach date Aug wk 4: end
+847778	b521	Next\n
+847788	2bab	Get popularity\n
+847800	f678	Get popularity: yes\n
+847816	d2ae	Get popularity: no\n
+847834	87fa	Magazine article\n
+847846	7274	Magazine article: Powerfuls\n
+847866	ace7	Magazine article: Kagurazaka\n
+847884	868e	Magazine article: Otori
+848022	b521	Next\n
+848032	3bde	Magazine article: end\n
+848050	7257	Scout scolds\n
+848068	6a10	Scout scolds: low\n
+848090	9183	Scout scolds: high
+848190	b521	Next\n
+848200	7c5d	Scout appeal\n
+848214	cc8c	Scout appeal: fastball\n
+848234	208b	Scout appeal: control\n
+848254	774f	Scout appeal: breaking ball\n
+848274	7f17	Scout appeal: quit\n
+848294	bca6	Scout appeal: start\n
+848314	e6d9	Scout appeal: success
+848454	b521	Next\n
+848464	4314	Scout appeal: fail
+848506	b521	Next\n
+848516	1d25	Shibuki seine haul\n
+848528	f9d8	Shibuki seine: big haul\n
+848544	a21b	Shibuki seine: decent catch\n
+848564	26dd	Shibuki seine: junk\n
+848580	a4c6	Shibuki bream gift\n
+848600	01a8	Shibuki delivery\n
+848612	6a9e	Shibuki delivery: try hard
+848758	b521	Next\n
+848768	1fb7	Shibuki delivery: As for me\n
+848786	dac1	Shibuki litter pickup
+848846	b521	Next\n
+848856	de2f	Shibuki pitching\n
+848870	c25f	Shibuki pitching: yes\n
+848886	3d0c	Shibuki pitching: yes, success\n
+848904	8b07	Shibuki pitching: yes, fail\n
+848922	21e3	Shibuki pitching: no\n
+848940	bfb6	Shibuki heavy ball\n
+848954	5908	Shibuki heavy ball: yes
+849094	b521	Next\n
+849104	5801	Shibuki heavy ball: 1st time\n
+849124	27b8	Shibuki heavy ball: 2nd time\n
+849144	4411	Shibuki heavy ball: 3rd time\n
+849164	1f67	Shibuki heavy ball: 4th time\n
+849184	293f	Shibuki heavy ball: success\n
+849200	476f	Shibuki heavy ball: fail\n
+849216	a9a6	Shibuki heavy ball: no
+849358	b521	Next\n
+849368	f0db	Shibuki entranced\n
+849382	7c20	Shibuki entranced: Momoko\n
+849402	f5b2	Shibuki entranced: Miyo\n
+849422	8b25	Shibuki entranced: Kanna
+849518	b521	Next\n
+849528	66aa	Reito spotted\n
+849542	97d3	Reito studying\n
+849554	335b	Reito studying: 1st time\n
+849572	3842	Reito studying: 2nd time\n
+849590	8021	Reito studying: 2nd, yes\n
+849610	650c	Reito studying: 2nd, no\n
+849632	c72d	Reito darts
+849766	b521	Next\n
+849776	dd18	Reito darts: fail\n
+849792	02ad	Reito darts: success
+849854	b521	Next\n
+849864	9715	Reito love season\n
+849878	136f	Reito love season: Mar\n
+849896	3126	Reito love season: Jul\n
+849914	b742	Reito love season: Oct\n
+849934	6423	Reito love season: Dec\n
+849954	b465	Reito love season: up to 2nd\n
+849976	5b04	Reito love season: 3rd time
