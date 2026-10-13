@@ -37,7 +37,7 @@ COMMAND_GLYPHS = {
     "S": ("Shop", 0), "T": ("Free Time", 0), "U": ("Use", 0), "W": ("Weight", 0), "Y": ("Yes", 0),
     "a": ("Lake", 0), "c": ("Practice", 0), "d": ("Food", 0), "e": ("Lake", 0), "g": ("Hotdog", 0),
     "h": ("Shop", 0), "i": ("Equip", 0), "k": ("Park", 0), "l": ("Fielding", 0), "m": ("System", 0),
-    "n": ("Run", 0), "o": ("Boost", 0), "p": ("Shop", 0), "q": ("Equip", 0), "r": ("Park", 0),
+    "n": ("Run", 0), "o": ("Boost", 0), "p": ("Shop", 0), "q": ("Equip", 0), "r": ("Practice", 0),
     "s": ("Use", 0), "t": ("Boost", 0), "u": ("Run", 0), "y": ("System", 0),
 }
 DERIVED = {"G": "C of 'SC' with a crossbar", "I": "the l of 'Fielding'"}
@@ -126,7 +126,8 @@ def segment(ink, n, minw=2, maxw=12):
 
 
 def clean(ink):
-    """Drop stray pixels: pieces (8-way) of 1 or 2 pixels, and of 3 that never reach ink level 5."""
+    """Drop stray pixels: pieces (8-way) of 1 or 2 pixels, and any piece that never reaches ink
+    level 4 (the soft edge of a neighbouring letter that a cut left behind)."""
     solid = ink > 0
     seen = np.zeros_like(solid)
     out = ink.copy()
@@ -144,7 +145,7 @@ def clean(ink):
                     if solid[yy, xx] and not seen[yy, xx]:
                         seen[yy, xx] = True
                         stack.append((yy, xx))
-        if len(pts) <= 2 or (len(pts) == 3 and max(ink[p] for p in pts) < 5):
+        if len(pts) <= 2 or max(ink[p] for p in pts) < 4:
             for p in pts:
                 out[p] = 0
     return out
