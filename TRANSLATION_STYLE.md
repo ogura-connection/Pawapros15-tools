@@ -300,6 +300,14 @@ Words on screen (Success Mode), with where the lettering comes from:
 | 熱血発動中 | Fired Up! | Arial Rounded Bold |
 | 天気予報 | Forecast | Arial Rounded Bold (plate), tag font (button hint) |
 | 年目 / 月 / 週 | Yr / Mo / Wk | Times New Roman Bold Italic, to go with the game's italic numerals. The game draws the number first, so the unit follows it: 1Yr 9Mo 1Wk |
+| 練習後 / 次の日 / 数日後・・・ / 大会当日 / 運命のドラフト当日・・・ | After Practice / Next Day / A Few Days Later... / Tournament Day / Fateful Draft Day... | Arial Rounded Bold, white in a navy outline (scene captions) |
+| 月 (month banner) | Mo | Arial Rounded Bold, slanted like the numeral in front of it |
+| 投手 捕手 一塁手 二塁手 三塁手 遊撃手 外野手 | Pitcher, Catcher, 1st Base, 2nd Base, 3rd Base, Shortstop, Outfield; short P, C, 1B, 2B, 3B, SS, OF | Arial Rounded Bold in the plate colours |
+| 変更前 / 変更後 | Before / After | Arial Rounded Bold (Equip page) |
+| スライダー系 カーブ系 フォーク系 シンカー系 シュート系 ストレート系 | Slider, Curve, Fork, Sinker, Shuuto, Fastball | as the item term sheet |
+| セ・リーグ / パ・リーグ / レ・リーグ | Central League / Pacific League / Rev. League | Arial Narrow Bold on the plate |
+| 巨人 中日 広島 ヤクルト 横浜 阪神 楽天 日本ハム 西武 オリックス ロッテ ソフトバンク | Giants, Chunichi, Hiroshima, Yakult, Yokohama, Hanshin, Rakuten, Nippon-Ham, Seibu, Orix, Lotte, SoftBank | the Japanese short forms, as in the glossary |
+| パワフルズ カイザース キャットハンズ やんきーズ バルカンズ バスターズ | Powerfuls, Kaisers, Cathands, Yankiis, Vulcans, Busters | |
 | 役職 / 平社員 / 係長 / 課長 | Post / Rank & File / Kakaricho / Kacho | Arial Rounded Bold, in the three colourings of the Japanese plates |
 
 Practice menu (scs_rens.arc), tag font: 筋力 Weights, 打撃 Batting, 走塁 Running, 守備 Fielding, 精神 Mental,
