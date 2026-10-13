@@ -566,6 +566,10 @@ RENDER = {
     # tags of the team-mate list (palettes 116-125 of z3_dtn), the equipment headers (82 of z3_dt)
     "datastat": haloed(None, 8, [8, 9, 10, 11, 12, 13, 14, 15], fill=[5, 4, 4, 3, 3, 2, 2, 1, 1], light=8),
     "datastat1": haloed(None, 8, [8, 9, 10, 11, 12, 13, 14, 15], 1, fill=[5, 4, 4, 3, 3, 2, 2, 1, 1], light=8),
+    # blue letters in a white band, pale blue glow: the lists of the equipment page (palette 82 of z3_dt)
+    "datahead": haloed([0, 7, 6, 5, 4, 3, 2], 8, [8, 9, 10, 11, 12, 13, 14, 15]),
+    # white letters in one dark ring: a trait name that lies across the two colours of its plate
+    "dataflat": banded([0, 6, 8, 10, 12, 14, 15], [4, 4]),
     # dark blue at the top to light blue at the foot, white band: 装備中アイテム (palette 80 of z3_dt)
     "dataequip": haloed(None, 15, [15, 15, 15, 14, 13, 12, 11, 10], fill=[1, 2, 3, 4, 5, 6, 7], light=15),
     # the rank plate of scenario 1 (y5_siba_1): 平社員 grey with a white outline (palette 19), 係長 dark with a white
