@@ -1,0 +1,1164 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	1964	3233	It worked great!
+5	1984	5f05	Did not work much
+5	2004	ded6	It barely worked
+5	2028	8875	No effect at all
+5	2048	acf8	It no longer works
+5	2072	7aca	Motivation up!
+5	2088	a398	No effect
+5	2104	cd88	None
+5	2116	07d8	Nothing equipped
+5	2136	cd88	None
+5	2148	baa5	Unequip
+5	2168	0c84	 used.
+5	2180	5d37	 now.
+5	2192	fc98	: use it?
+5	2208	aa76	: read it?
+5	2244	b811	Yes     No
+5	2260	a996	Read it. Did not get it.
+5	2288	c50b	Read it. Already knew it.
+5	2316	619b	No breaking ball. Cannot be used.
+5	2360	9de3	No 2nd position. Cannot be used.
+5	2400	3388	Next week will be sunny.
+5	2432	32c1	...Hung it upside down.
+5	2464	af43	Next week may be rainy.
+5	5552	9b9b	Std Bat
+5	5568	d02d	It's a Mizotto bat.|Pro players use them too.
+5	5632	3b4d	True to its name: for power hitters.
+5	5680	b37b	Perfect for technique.
+5	5708	3881	It should beat any bat you've|used so far.
+5	5760	883d	Sure of yourself? Take this.
+5	5792	a7e4	Even the name sounds amazing.|Practice with it and... Hee hee.
+5	5864	49e5	Std Ball
+5	5880	da75	It's a Mizotto ball.|Pro players use them too.
+5	5944	da75	It's a Mizotto ball.|Pro players use them too.
+5	6008	2999	This ball is for people who want|needle-threading control.
+5	6076	f8b2	The greats of old used this ball.|This one focuses on control.
+5	6144	71ac	For people who train breaking balls.|You can trust Mizotto's quality.
+5	6216	bbb6	To polish your breaking ball,|this is the one.
+5	6276	c61a	Want breaking balls low and sharp?|Try it!
+5	6324	188c	The greats of old used this ball.|For breaking balls.
+5	6384	7ddd	Std Glove
+5	6400	8c87	It's a Mizotto glove.|Use it for fielding practice.
+5	6472	c139	Designed with your throws in mind.|You'll throw better in no time.
+5	6548	c3d2	For those chasing perfect fielding,|this glove is ideal.
+5	6608	1e86	Sure of yourself? This one.
+5	6640	ef02	It should beat any glove you've|used so far.
+5	6692	e278	Going by the name, it looks|tough to master.
+5	6752	f834	Std Shoes
+5	6768	773f	They're Mizotto spikes.|With these you're set for now.
+5	6840	91d5	Want to get better at stealing?|These spikes are my pick.
+5	6904	b649	The good baserunners usually wear|these spikes.
+5	6984	14be	They should beat any spikes you've|used yet.
+5	7032	ad27	They say the pros wore these.|Put them on and who could keep up?
+5	7108	887c	Mizotto spikes for pitchers.
+5	7144	e542	Spikes for those who want to pitch|with more power.
+5	7204	0913	Spikes for those who want pitches|with late life at the plate.
+5	7280	bbff	They should beat any pitching spikes|you've used so far.
+5	7344	f522	Pro spikes, they say. For pitchers.
+5	7392	36be	Good old Pawarin.|You should have one a day.
+5	7460	4fb5	Pawarin DX, the bigger Pawarin.
+5	7496	4bd9	A drink that raises Max Vitality.|Not too much. Hee hee.
+5	7560	63ef	Build Pawarin DX, the bigger|Build Pawarin.
+5	7620	84f7	It's incense, basically.|Helps you unwind.
+5	7680	087d	Women's designer clothes.|It gives off a celebrity feel.
+5	7748	c9b5	A huge stuffed toy.|You can't wear it, I guess.
+5	7816	7fd8	Some sparkling accessories.|For looking your best.
+5	7884	55db	Works well when you're worn|down mentally.
+5	7940	6e5b	Of course you read it.
+5	7968	53e6	Injured? This is it.
+5	7992	ec7e	Lets you read the pitcher, I hear.|Only useful if you're batting.
+5	8064	9c6c	They say owners hit the lottery,|or become irresistible.
+5	8132	2e4a	The first-prize money is|supposedly huge.
+5	8188	8266	Not sold
+5	8200	af07	Game too hard? Take this! Sorry,|but you'll get fewer game points.
+5	8280	8b76	Cures fatigue, I hear.
+5	8304	8c59	It slows Vitality loss in practice.|Hugely soothing.
+5	8360	c3c9	A wristband with weights in it.|Best for strength.
+5	8420	1012	Helps prevent injuries.|Better safe than sorry.
+5	8488	ba2f	Could save your skin.
+5	8548	f562	You know what it's for. Hee hee.
+5	8604	519a	Welcome!
+5	9856	d558	Old Bat
+5	9872	d6a2	Contact Bat
+5	9888	f757	S Contact Bat
+5	9904	8e77	Control Bat
+5	9924	f1cc	S Control Bat
+5	9952	052f	Liner Bat
+5	9968	72b1	Impact Bat
+5	9988	08f8	S Impact Bat
+5	10008	0b12	Power Bat
+5	10024	f584	S Power Bat
+5	10040	666a	Brute Bat
+5	10056	38ab	Mighty Bat
+5	10072	b407	Pro Bat
+5	10084	4d0e	Pro Power Bat
+5	10104	9cfe	Lock-On Bat
+5	10128	5a37	Lock-On Bat Lv.1
+5	10152	1e84	Lock-On Bat Lv.2
+5	10176	3d45	Lock-On Bat Lv.3
+5	10200	132e	Lock-On Bat Lv.4
+5	10224	b58b	Lock-On Bat Lv.5
+5	10248	fdb2	Sweet Bat
+5	10264	18f8	Old Ball
+5	10280	d206	Sniper Ball
+5	10300	853e	S Sniper Ball
+5	10320	c5a3	Pro Sniper Ball
+5	10344	69f8	Slider Drill Ball
+5	10368	db10	Curve Drill Ball
+5	10388	74c9	Fork Drill Ball
+5	10408	a2d5	Sinker Drill Ball
+5	10428	98be	Shuuto Drill Ball
+5	10448	caf3	Old Spikes
+5	10468	62a8	Running Spikes
+5	10488	7820	Dig-In Spikes
+5	10508	de26	Pro Spikes
+5	10524	d5e5	Pitching Spikes
+5	10544	5384	S Pitching Spikes
+5	10568	21df	Heavy Spikes
+5	10584	7e4c	S Heavy Spikes
+5	10608	5c32	Pro Pitching Spikes
+5	10632	5186	Iron Spikes
+5	10648	2781	Old Glove
+5	10664	8d5c	Catching Glove
+5	10684	748f	S Catching Glove
+5	10712	10e5	No-Miss Glove
+5	10728	d8cb	S No-Miss Glove
+5	10748	d9d2	Pro Glove
+5	10760	7565	Power Ring
+5	10776	68ff	Speed Ring
+5	10792	be7c	Spirit Ring
+5	10812	14b1	Relax Necklace
+5	10836	c63f	Blaze Band
+5	10856	9bda	Insight Beads
+5	10872	54db	Defense Wear
+5	10892	2511	Offense Wear
+5	10912	8edf	Pitching Wear
+5	10932	758c	Pitching Wear 2
+5	10952	589e	Pitching Wear 3
+5	10972	0645	Mind Charm
+5	10988	da77	PawaSpo Mag
+5	11004	382e	Psychic Goggles
+5	11024	9c1f	Gold Gem
+5	11036	7c43	Silver Gem
+5	11048	9efc	Lotto
+5	11056	035a	Rookie's Charm
+5	11076	3f54	Love Charm
+5	11096	2428	Blue Hanky
+5	11112	847f	Calm Towel
+5	11124	47de	Tourmaline Ring
+5	11144	ff16	Weight Set
+5	11160	749e	Joint Wrap
+5	11176	23e2	Silver Member Card
+5	11200	93f5	Gold Member Card
+5	11224	227b	Foam Mat
+5	11240	98cc	Credit Card
+5	11264	488b	Remedy
+5	11272	c9e6	Manicure
+5	11288	b33a	Toothbrush Set
+5	11304	fd61	Pillow
+5	11312	e955	Fund
+5	11320	3ed9	Pheromone
+5	11336	cafa	Plush Toy
+5	11348	fb90	Necklace
+5	11360	07ab	Fancy Ring
+5	11372	6106	Card
+5	11384	bd00	Grown-Up Suit
+5	11400	19ca	Sponge & Bucket
+5	11420	8b2c	Weekly Nyamp
+5	11436	becb	Bingo Card
+5	11456	035c	Nenga
+5	11464	5b1c	Pawarin
+5	11476	442e	Pawarin DX
+5	11496	434b	Build Pawarin
+5	11512	a9b9	Build Pawarin DX
+5	11532	a652	Aroma Kit
+5	11548	45f8	Teru Bozu
+5	11564	f9d3	Idol Primer
+5	11580	2c9f	Swing Hard!
+5	11600	48f3	Make Contact!
+5	11616	190b	Bold Batting
+5	11632	dcbc	Wary Batting
+5	11648	ca06	Bold Steals
+5	11664	aab2	Wary Steals
+5	11680	58a0	Bold Running
+5	11696	64d4	Bold Defense
+5	11712	da3e	Play for the Team
+5	11736	dcff	Not for the Team
+5	11760	c3a9	Pick Your Pitch!
+5	11784	c316	Fastball Outs
+5	11800	dce7	Break Them Down
+5	11824	7c49	Tempo Is Key
+5	11840	65c3	Pitch from Left!
+5	11860	3eaf	Pitch from Right!
+5	11880	9587	Morale Studies
+5	11896	2d6e	Morale Builder
+5	11912	503b	4th Batter
+5	11924	20d4	Seize the Chance 2
+5	11948	ccb7	Seize the Chance 1
+5	11972	d921	Prey on Lefties!
+5	11992	ae49	Don't Fear Lefties
+5	12016	029c	Better at 2nd Position
+5	12040	9b43	Super Sturdy Body
+5	12060	5934	Sturdy Body Book
+5	12080	8a36	Steal Art 2
+5	12096	4651	Steal Art
+5	12112	3822	Running Diamond
+5	12136	8b7d	Better Throwing
+5	12156	fe20	Stability! (Fielder)
+5	12184	d2e1	Average Legend
+5	12200	5eda	Power Hit Legend
+5	12224	b6f9	Pull Your Hits
+5	12240	a733	Wide Angle
+5	12252	f4c0	Go with the Flow!
+5	12272	6acf	Streak Hits!
+5	12288	ce8c	Hang Tough
+5	12300	6195	Better Bunting
+5	12324	f66e	Bunt Artisan
+5	12340	c574	Rattle Infield!
+5	12360	be0b	First Pitch Hits
+5	12380	9a87	Make a Chance!
+5	12400	c302	Bases Loaded 1
+5	12420	3d79	Bases Loaded 2
+5	12440	8a4f	Little Goodbye
+5	12456	9f71	Big Goodbye
+5	12472	d888	Adversity!?
+5	12488	c5b9	Sub Life
+5	12504	e97b	Crash Legend
+5	12520	0fd9	Slide In Safe!
+5	12544	f3bd	Glove Work
+5	12560	a91a	Catcher Tips 2
+5	12576	e4e8	Catcher Tips 1
+5	12592	a3af	Iron Curtain
+5	12608	dee6	Intimidating (Fielder)
+5	12632	0840	Hit Life
+5	12644	aaaa	Aim Low, Swing!
+5	12664	c911	Aim High, Swing!
+5	12684	1f39	Dodge Double Plays
+5	12712	ff9c	Subtle Charm
+5	12728	e832	Laser Throws
+5	12744	85e8	Wild Cards
+5	12760	db29	Whisper to Win
+5	12784	e7a4	I Dare
+5	12792	0256	Be Tough at Full Count
+5	12816	61c9	Trusted Batting
+5	12836	83f2	Trusted Fielding
+5	12856	cb27	Better in a Pinch
+5	12876	eaca	Prey on LH Bats!
+5	12896	123b	Hit, Not Beaten
+5	12916	83cf	Stability! (Pitcher)
+5	12944	12b2	Much Better Fastballs
+5	12968	300e	Better Fastballs
+5	12988	2aa9	Better Spin
+5	13008	6898	Quick Release
+5	13024	af47	Breathwork
+5	13036	ed9b	Super Breath
+5	13052	4ee9	Air Drag Pitches
+5	13072	e8c7	Keep It Low
+5	13088	8092	Gravity
+5	13100	f8ae	Hard-to-Hit Ball
+5	13120	e74a	Ride the Wave Forever
+5	13144	4c9c	Pickoff Tricks
+5	13160	2f66	Better Delivery
+5	13184	49ce	Quick Reflexes
+5	13200	1401	Win Rules
+5	13216	dff2	Intimidating (Pitcher)
+5	13240	9b77	Spirited Battle
+5	13260	3b56	Strikeout Primer
+5	13280	bb3b	Life of Guts
+5	13296	eadf	I'm the Hero
+5	13312	12bf	Cross Flame
+5	13328	e7eb	Hold Notes
+5	13344	7677	Poker Face Tactics
+5	13364	8cd2	Morale Killer
+5	13384	977b	Cleanup Pressure
+5	13408	42f8	Hopeless in the Clutch
+5	13432	6ace	Weak in the Clutch
+5	13456	a4f3	Lefty Terror
+5	13472	f696	Lefty Fear
+5	13488	70b0	Worse at 2nd Position
+5	13512	8aea	Injured Life
+5	13528	de9f	Bad Steals
+5	13544	e7ac	Bad Running
+5	13560	671f	Where Will It Go?
+5	13580	42aa	Restless Fielder
+5	13600	ebde	Devil's Whiffs
+5	13616	54af	The Error
+5	13628	fa7e	Worse in a Pinch
+5	13648	5cd2	LH Bat Fear
+5	13664	62b4	Runner Pressure
+5	13688	653e	Hit? Don't Cry
+5	13704	314f	Restless Pitcher
+5	13728	9350	Lifeless Ball
+5	13744	9529	Spinless Ball
+5	13764	9464	How to Get Stolen On
+5	13788	990a	Tired All the Time
+5	13812	c90d	Blue Skies
+5	13824	3b20	Choke at End
+5	13840	686c	Shaky Mix
+5	13856	f760	Slow Starter
+5	13876	a0a7	Pace Your Effort
+5	13896	841a	THE Losers
+5	13912	c8b9	Short Fuse
+5	13924	535a	Bad Rotation Notes
+5	13944	42c8	What Flies Far?
+5	13964	6321	Chaos and Turmoil
+5	13984	9782	Strength Pts Vol.1
+5	14008	9bf8	Strength Pts Vol.2
+5	14032	b167	Strength Pts Vol.3
+5	14056	18ec	Quickness Pts Vol.1
+5	14080	7560	Quickness Pts Vol.2
+5	14104	cbb0	Quickness Pts Vol.3
+5	14128	c6e6	Technique Pts Vol.1
+5	14152	cc90	Technique Pts Vol.2
+5	14176	51c9	Technique Pts Vol.3
+5	14200	1509	Brk Ball Pts Vol.1
+5	14224	c118	Brk Ball Pts Vol.2
+5	14248	c84a	Brk Ball Pts Vol.3
+5	14272	aa8f	Mentality Pts Vol.1
+5	14296	25a1	Mentality Pts Vol.2
+5	14320	84fa	Mentality Pts Vol.3
+5	15304	5382	Old favorite
+5	15336	c93b	CON +1
+5	15360	e776	CON +2
+5	15384	5494	CON +1, PWR -10
+5	15424	9d40	CON +2, PWR -20
+5	15464	88ec	TRJ -1, PWR +15
+5	15504	4ecd	TRJ +1
+5	15528	c661	TRJ +2
+5	15552	fcab	PWR +10
+5	15584	88c6	PWR +15
+5	15616	a939	TRJ +1, PWR +15
+5	15656	a80a	CON -1, PWR +20
+5	15696	32b6	CON +1, PWR +10
+5	15736	05d6	CON +1, PWR +15
+5	15776	827f	Lock-On at bat
+5	15808	827f	Lock-On at bat
+5	15840	827f	Lock-On at bat
+5	15872	827f	Lock-On at bat
+5	15904	827f	Lock-On at bat
+5	15936	827f	Lock-On at bat
+5	15968	394d	All sweetspot
+5	16000	5382	Old favorite
+5	16032	9984	CTRL +10
+5	16064	2592	CTRL +15
+5	16096	33df	ARM +1, CTRL +15
+5	16144	d731	Slider-type break +1
+5	16184	cc1a	Curve-type break +1
+5	16224	71c1	Fork-type break +1
+5	16264	9fc4	Sinker-type break +1
+5	16304	5a5c	Shuuto-type break +1
+5	16344	5382	Old favorite
+5	16376	1cbe	SPD +1
+5	16400	b5b9	ARM +1
+5	16424	196d	SPD +1, ARM +1
+5	16456	c27c	+1 km/h
+5	16480	83bf	+3 km/h
+5	16504	f82b	STAM +10
+5	16536	8db4	STAM +15
+5	16568	eec1	+2 km/h, STAM +15
+5	16608	da57	STAM +20
+5	16640	5382	Old favorite
+5	16672	eb72	FLD +1
+5	16696	84f2	FLD +2
+5	16720	da6c	E RES +1
+5	16752	9262	E RES +2
+5	16784	9e08	FLD +1, E RES +1
+5	16824	0900	PWR +5
+5	16848	1cbe	SPD +1
+5	16872	da6c	E RES +1
+5	16904	a181	STAM +5
+5	16936	c27c	+1 km/h
+5	16960	c6e5	CTRL +5
+5	16992	cdf7	PWR -5, ARM +1, FLD +1, E RES +1
+5	17048	aa61	CON +1, PWR +5, FLD -1
+5	17096	61a3	+1 km/h, CTRL +5, STAM -5
+5	17152	ea7e	+1 km/h, CTRL -5, STAM +5
+5	17208	8ace	-1 km/h, CTRL +5, STAM +5
+5	17264	1a44	Wards off illness
+5	17288	6ee0	Works just by owning it
+5	17328	b5d8	A few handy perks
+5	17352	6ee0	Works just by owning it
+5	17392	e71e	Shows the pitch and cursor
+5	17420	6ee0	Works just by owning it
+5	17456	1fff	Lucky all around!
+5	17476	6ee0	Works just by owning it
+5	17512	48d7	Lucky all around...?
+5	17536	6ee0	Works just by owning it
+5	17576	8ea1	Win and get rich
+5	17596	6ee0	Works just by owning it
+5	17632	f94a	Games go easy on rookies
+5	17660	6ee0	Works just by owning it
+5	17696	cb02	Love is sure to go well
+5	17724	6ee0	Works just by owning it
+5	17760	48cd	Rest recovery +5%, practice Vitality -5%
+5	17808	6ee0	Works just by owning it
+5	17848	805b	Rest recovery +5%
+5	17876	6ee0	Works just by owning it
+5	17912	2f89	Practice Vitality -10%
+5	17940	6ee0	Works just by owning it
+5	17976	6867	Per practice: Strength +2-4
+5	18008	d202	Vitality use +10%. Works just by owning it
+5	18064	01a9	Injury rate -3%
+5	18084	6ee0	Works just by owning it
+5	18120	9d66	Shop prices 5% off
+5	18144	6ee0	Works just by owning it
+5	18184	5c77	Shop prices 10% off
+5	18212	6ee0	Works just by owning it
+5	18248	a020	Daily recovery up
+5	18272	6ee0	Works just by owning it
+5	18312	7e83	Can withdraw cash?
+5	18332	6ee0	Works just by owning it
+5	18368	07c7	Cold cure
+5	18380	6ee0	Works just by owning it
+5	18416	5427	Nail cure
+5	18432	6ee0	Works just by owning it
+5	18472	342d	Tooth cure
+5	18484	6ee0	Works just by owning it
+5	18520	9cdd	Sleep cure
+5	18536	6ee0	Works just by owning it
+5	18576	1ac8	Get rich quick!?
+5	18600	6ee0	Works just by owning it
+5	18640	f3f9	Irresistible to girls
+5	18668	6ee0	Works just by owning it
+5	18704	f4ad	Her rating up (S)
+5	18724	6ee0	Works just by owning it
+5	18760	3552	Her rating up (M)
+5	18780	6ee0	Works just by owning it
+5	18816	1be1	Her rating up (L)
+5	18836	6ee0	Works just by owning it
+5	18872	7168	Work essential
+5	18904	82e1	Grown-up
+5	18916	6ee0	Works just by owning it
+5	18952	6892	Cancels rain penalty for 2 weeks
+5	18992	6ee0	Works just by owning it
+5	19032	c696	Good things may happen
+5	19056	6ee0	Works just by owning it
+5	19096	8e93	3 numbers announced each month
+5	19132	6ee0	Works just by owning it
+5	19168	d20b	New Year cards from admirers
+5	19216	74ef	Vitality up a little
+5	19256	e54b	Vitality up a lot
+5	19296	8754	Max Vitality up a little
+5	19336	05ff	Max Vitality up a lot
+5	19384	2cce	Motivates
+5	19416	e1b2	Makes the weather sunny, but if used
+5	19464	95a1	wrongly it may backfire...
+5	19504	c7f4	Extremely popular
+5	19544	e099	Uses power swings often
+5	19572	4c96	☆Not with Slap Hitter
+5	19624	0150	Uses contact swings often
+5	19656	59cd	☆Not with Slugger
+5	19704	24ad	Attacks the first pitch
+5	19732	ed44	☆Not with Patient Htr
+5	19776	050e	Reads the ball, hits carefully
+5	19816	9abc	☆Not with Aggressive Htr
+5	19864	f539	Steals bases aggressively
+5	19896	da9d	☆Not with Cautious Stl
+5	19944	770a	Rarely steals bases
+5	19968	937b	☆Not with Aggressive Stl
+5	20016	6db4	Runs the bases aggressively
+5	20064	5a27	Fields aggressively
+5	20112	825f	Bunts and hits to move
+5	20140	f867	runners over
+5	20184	825f	Does not bunt or hit to
+5	20212	24ce	move runners over
+5	20248	b4b5	Good at judging balls and strikes
+5	20304	4229	Throws mostly fastballs
+5	20336	5c36	☆Not with Brk Ball P
+5	20384	1adf	Throws mostly breaking balls
+5	20416	dbca	☆Not with Power P
+5	20464	1557	Pitches at a quick tempo
+5	20504	5d57	Rubber side: left
+5	20536	fd8c	Rubber side: right
+5	20568	0591	Improves the team's morale
+5	20616	cbe8	Batting results sway the team's morale
+5	20680	5239	Fits the cleanup spot
+5	20720	c279	Great in the clutch
+5	20768	ce26	Good in the clutch
+5	20808	e782	Great vs. lefties
+5	20848	1419	Good vs. lefties
+5	20880	f636	Good at 2nd position
+5	20920	425b	Great injury resistance
+5	20960	2a48	Injury resistant
+5	20992	9dda	Great at stealing
+5	21032	0072	Good at stealing
+5	21064	b013	Good baserunner
+5	21096	914d	Accurate throws
+5	21136	8c4f	Less swayed by condition
+5	21176	0b2b	Gets many hits
+5	21224	6707	Gets many home runs
+5	21272	c754	Hits hard to the pull side
+5	21312	e74a	☆Not with Spray Hitter
+5	21360	03f5	Hits hard to the opposite field
+5	21400	d450	☆Not with Pull Hitter
+5	21448	9751	Good at push hitting
+5	21488	3b33	Batting up with each hit
+5	21544	b3b9	Keeps bat control until the
+5	21580	c523	very last moment
+5	21608	5bd4	Good at bunting
+5	21640	56ca	Great at bunting
+5	21680	f6c7	Fast start out of the box
+5	21736	fa80	Hits 1st pitch
+5	21768	518d	Good at getting on base
+5	21816	a060	Hits well, bases loaded
+5	21864	5ed3	Homers often, bases loaded
+5	21912	73fe	Hits well when one hit wins it
+5	21968	d082	Homers often when one hit wins it
+5	22024	e308	Batting up when losing
+5	22064	e92c	Good pinch hitter
+5	22112	abfd	Bowls over the catcher at the plate
+5	22168	84b1	Dives headfirst on close plays
+5	22216	e7db	Top class fielding
+5	22272	ef53	Great at helping the pitcher
+5	22328	303c	Good at helping the pitcher
+5	22384	c865	Blocks runners sliding in
+5	22440	4f5a	Intimidates pitchers
+5	22488	d6ca	Batting up if the last batter got a hit
+5	22544	6f13	Hits low balls better
+5	22572	8b89	☆Not with High Ball Htr
+5	22632	495b	Hits high balls better
+5	22660	c090	☆Not with Low Ball Htr
+5	22720	107d	Breaks up double plays when
+5	22756	9750	running from first
+5	22792	044c	Smart hitter with a great swing
+5	22848	199f	Throws as sharp as an arrow
+5	22904	6879	PWR up to score first from the 5th, or
+5	22948	25d2	to tie or come back from the 7th
+5	23000	ddd3	Whispers to unsettle batters
+5	23048	10bc	Batting up against aces and
+5	23080	6bc7	closers
+5	23112	1229	Ability up on a full count
+5	23168	d2a8	Inspires trust with the bat
+5	23216	941c	Inspires trust with the glove
+5	23264	807f	Pitches well with RISP
+5	23320	bddd	Good vs. lefties
+5	23352	5057	Keeps cool after a hit
+5	23400	8c4f	Less swayed by condition
+5	23440	4ba3	Great life on fastball
+5	23480	5ce8	☆Not with Gyroball
+5	23536	a1be	Good life on fastball
+5	23564	5ce8	☆Not with Gyroball
+5	23616	f1c7	Good breaking spin
+5	23656	1401	Quick release, hard to steal on
+5	23704	656e	Recovers quickly
+5	23736	496e	Recovers very quickly
+5	23776	b6b3	Throws a Gyroball
+5	23800	83c0	☆Not with Fastball Life
+5	23840	7a2f	Good control on low pitches
+5	23888	f9e3	Batted balls do not carry far
+5	23936	2116	Mistakes avoid the middle
+5	23984	1ab5	Gets better late in games
+5	24024	9575	Good at pickoffs
+5	24056	c156	Same motion, fastball or breaking ball
+5	24112	e235	Good at fielding comebackers
+5	24168	e8d7	Often gets wins when pitching
+5	24216	8f6c	Intimidates batters
+5	24264	9283	Pitches with fighting spirit
+5	24300	9fba	☆Not with Poker Face
+5	24352	ceb5	Pitches well with two strikes
+5	24408	4fbe	Loses less stamina as a starter
+5	24456	7e33	Pitches well against big hitters
+5	24512	76f5	Pitches well lefty vs. lefty or righty
+5	24560	ddfb	vs. righty
+5	24584	daba	Holds the ball long, hard to hit
+5	24640	f8be	Shows no fatigue or emotion
+5	24672	0293	☆Not with Battler
+5	24712	3899	Worsens the team's morale
+5	24760	d69b	Unfit for the cleanup spot
+5	24800	a5ff	Terrible in the clutch
+5	24848	a904	Poor in the clutch
+5	24888	a98b	Terrible vs. lefties
+5	24928	9532	Poor vs. lefties
+5	24960	b9a6	Poor at 2nd position
+5	25000	514f	Injury prone
+5	25032	2af0	Poor at stealing
+5	25064	f0c4	Poor baserunner
+5	25096	bb0c	Inaccurate throws
+5	25136	c75c	Big swings in condition
+5	25192	f8f3	Bats poorly with two strikes
+5	25248	f995	Makes errors under pressure
+5	25296	55bb	Pitches poorly with RISP
+5	25352	a6cb	Poor vs. lefties
+5	25384	78a5	Pitches poorly with runners on
+5	25440	a261	Rattled after a hit
+5	25480	c75c	Big swings in condition
+5	25536	2d2d	Poor life on fastball
+5	25576	7003	Poor breaking spin
+5	25616	b4ee	Slow release, easy to steal on
+5	25664	cc50	Recovers slowly
+5	25696	57be	Mistakes drift to the middle
+5	25744	fa82	Pitches poorly to close out a game
+5	25800	f963	Walks many batters
+5	25848	c3d0	Slow to get started
+5	25888	5beb	Relaxes too much vs. weak batters
+5	25936	5f67	Rarely gets wins when pitching
+5	25984	5d65	Loses cool when hit hard
+5	26032	b2fd	Fastballs sometimes bend toward
+5	26068	364d	the shuuto side
+5	26096	8d44	Batted balls carry farther
+5	26144	e383	Control suddenly worsens in a new
+5	26184	93f9	inning
+5	26208	6b22	Strength Points +10
+5	26256	de9b	Strength Points +20
+5	26304	7c44	Strength Points +30
+5	26352	a20b	Quickness Points +10
+5	26400	8d70	Quickness Points +20
+5	26448	7a43	Quickness Points +30
+5	26496	e3ef	Technique Points +10
+5	26544	7cf9	Technique Points +20
+5	26592	bcf7	Technique Points +30
+5	26640	ccc9	Breaking Ball Points +10
+5	26688	a389	Breaking Ball Points +20
+5	26736	3f41	Breaking Ball Points +30
+5	26784	3b77	Mentality Points +10
+5	26832	5175	Mentality Points +20
+5	26880	6f10	Mentality Points +30
+5	27888	5382	Old favorite
+5	27920	c32f	With this bat,
+5	27940	eeab	you'll make contact easier.
+5	27984	c32f	With this bat,
+5	28004	d194	you'll make contact much easier.
+5	28048	cdec	With this bat, you'll make contact
+5	28088	5f4a	easier. But it won't fly as far.
+5	28136	cdec	With this bat, you'll make contact
+5	28176	b676	easier. But distance drops a lot.
+5	28224	bbcb	With this bat, you'll hit it far.
+5	28260	b51c	But the ball won't fly as high.
+5	28304	c32f	With this bat,
+5	28328	a236	the ball flies higher.
+5	28360	c32f	With this bat,
+5	28380	a1de	the ball flies much higher.
+5	28424	c32f	With this bat,
+5	28444	8d0c	you'll hit the ball farther.
+5	28488	c32f	With this bat,
+5	28508	39b4	you'll hit the ball much farther.
+5	28552	bbcb	With this bat, you'll hit it far.
+5	28592	3a29	Plus it flies higher.
+5	28624	b710	With this bat, you'll hit the ball
+5	28664	14d6	much farther. Contact may suffer.
+5	28712	c6e0	With this bat, you'll hit it far
+5	28748	4822	and make contact easily.
+5	28784	ee5c	With this bat, you hit it very far
+5	28824	4822	and make contact easily.
+5	28864	af82	With this bat, any pitch
+5	28896	096e	is one you can hit for sure.
+5	28936	af82	With this bat, any pitch
+5	28968	096e	is one you can hit for sure.
+5	29008	af82	With this bat, any pitch
+5	29040	096e	is one you can hit for sure.
+5	29080	af82	With this bat, any pitch
+5	29112	096e	is one you can hit for sure.
+5	29152	af82	With this bat, any pitch
+5	29184	096e	is one you can hit for sure.
+5	29224	af82	With this bat, any pitch
+5	29256	096e	is one you can hit for sure.
+5	29296	af82	With this bat, any pitch
+5	29328	8713	is one you can hit hard.
+5	29368	5382	Old favorite
+5	29400	b2fa	Practice with this ball
+5	29428	5d77	and your control improves.
+5	29464	b2fa	Practice with this ball
+5	29492	aecc	and your control improves a lot.
+5	29536	f070	Practice with this and your arm
+5	29576	1eca	gets strong, control too.
+5	29616	0dab	Practice with this
+5	29636	d287	and sharpen your sliders.
+5	29680	0dab	Practice with this
+5	29700	7825	and sharpen your curves.
+5	29744	0dab	Practice with this
+5	29768	672d	and sharpen your forks.
+5	29808	0dab	Practice with this
+5	29832	32d8	and sharpen your sinkers.
+5	29872	0dab	Practice with this
+5	29896	a7b8	and sharpen your shuutos.
+5	29936	5382	Old favorite
+5	29968	15c0	With these spikes you'll run faster.
+5	30024	0db9	Dig in with these spikes,
+5	30052	2ac6	and throw it nicely.
+5	30088	da63	Run fast in these spikes,
+5	30116	5193	and throw well.
+5	30144	8c9b	With these spikes on,
+5	30168	c098	you'll throw faster.
+5	30208	8c9b	With these spikes on,
+5	30232	67e7	you'll throw much faster.
+5	30280	8c9b	With these spikes on,
+5	30304	82a4	you'll pitch longer.
+5	30344	8c9b	With these spikes on,
+5	30368	0246	you'll pitch much longer.
+5	30408	bc66	With these on, you throw faster,
+5	30444	46b7	and pitch longer.
+5	30472	8c9b	With these spikes on,
+5	30496	d49e	you'll pitch a very long time.
+5	30536	5382	Old favorite
+5	30568	8ae0	With this glove on,
+5	30592	78b3	you'll field better.
+5	30624	8ae0	With this glove on,
+5	30648	86c1	you'll field much better.
+5	30688	8ae0	With this glove on,
+5	30712	52a9	expect fewer errors.
+5	30744	8ae0	With this glove on,
+5	30768	7fcf	errors? What errors?
+5	30800	8ae0	With this glove on,
+5	30824	d185	you'll field better and err less.
+5	30872	cde5	With this on, the ball will fly
+5	30908	3764	farther.
+5	30928	bbfe	With this on, you'll run faster.
+5	30976	1a6a	With this on, you'll err less.
+5	31024	8f22	With this on, you'll pitch longer.
+5	31080	58aa	With this on, your pitch speed
+5	31112	cca4	goes up.
+5	31136	1ea1	With this on, control improves.
+5	31184	bb1a	With this on, you'll field better.
+5	31224	f298	But hits won't fly as far.
+5	31264	c64e	With this on, hits go farther,
+5	31296	3e56	but fielding may suffer.
+5	31336	a658	With this on, you'll pitch better.
+5	31372	ce7b	But it may hurt your stamina.
+5	31416	a658	With this on, you'll pitch better.
+5	31456	ffec	But it may hurt your control.
+5	31496	a658	With this on, you'll pitch better.
+5	31536	aac9	But it may hurt pitch speed.
+5	31576	5dbe	Keeps you safe
+5	31596	31da	from all sorts of illness.
+5	31632	4cc1	Handy for players,
+5	31652	05a5	it's full of articles.
+5	31688	15f9	Can you really see this much!?
+5	31720	f792	Isn't that a bit much? I'd say so.
+5	31768	dfcf	The lucky power sleeping in you
+5	31804	2cdb	awakens now.
+5	31832	085c	A silver gem!?
+5	31852	b63a	What power could it be...?
+5	31888	7740	Chance at a fortune!
+5	31912	1a8e	Hope and wait for results.
+5	31952	f979	With this in games,
+5	31976	3f0e	you'll surely shine.
+5	32008	32eb	Girlfriend soon?
+5	32040	4d6e	A soothing blue hanky.
+5	32080	aee9	Soft to the touch,
+5	32104	2843	heals body and mind.
+5	32136	3cfa	Even top pros use it!?
+5	32164	d236	Practice fatigue fades faster.
+5	32208	8253	Practice with this on
+5	32232	b9e3	and any drill turns tougher.
+5	32272	fcf7	Guards against injury.
+5	32296	af2a	Best for protecting joints.
+5	32336	816d	Shop member card. With this,
+5	32376	165c	you'll get a discount.
+5	32408	816d	Shop member card. With this,
+5	32444	6ad4	you'll get a big discount.
+5	32488	799a	Premium urethane goods
+5	32512	b28b	Sleep soundly daily.
+5	32544	1bd8	Cash is key.
+5	32576	d919	Drink it and
+5	32592	5ab2	colds clear up faster.
+5	32632	f96f	Grooming matters.
+5	32672	fa2f	You don't want cavities.
+5	32712	ab90	When you sleep,
+5	32732	2892	you want deep sleep.
+5	32768	a589	Want to cash in big?
+5	32808	f08c	Sometimes you have to be bold.
+5	32856	e39a	Want this as a gift?
+5	32896	cbab	Maybe this for a gift?
+5	32936	7610	A gift? This, right?
+5	32976	bb9a	A work essential.
+5	33008	0c20	Wear it once you're grown-up.
+5	33040	03af	Everyone might praise you.
+5	33080	b190	Rain would be a pain.
+5	33120	d5ba	Read it when bored.
+5	33160	2515	Your chance to win big.
+5	33200	0e9d	For New Year's.
+5	33232	46f3	Loved for its powerful kick.
+5	33280	1308	Packs a far stronger kick,
+5	33316	07d1	the DX version of Pawarin.
+5	33360	2432	Your hidden Vitality
+5	33384	8d2c	may start to show.
+5	33416	2432	Your hidden Vitality
+5	33440	7afe	may show a lot more.
+5	33472	659c	A calming scent that
+5	33496	b4a7	helps raise Motivation.
+5	33536	e84c	For rain, this is best.
+5	33564	025e	Next week will be sunny.
+5	33600	1a2e	None
+5	33624	1a2e	None
+5	33648	1a2e	None
+5	33672	1a2e	None
+5	33696	1a2e	None
+5	33720	1a2e	None
+5	33744	1a2e	None
+5	33768	1a2e	None
+5	33792	1a2e	None
+5	33816	1a2e	None
+5	33840	1a2e	None
+5	33864	1a2e	None
+5	33888	1a2e	None
+5	33912	1a2e	None
+5	33936	1a2e	None
+5	33960	1a2e	None
+5	33984	1a2e	None
+5	34008	1a2e	None
+5	34032	1a2e	None
+5	34056	1a2e	None
+5	34080	1a2e	None
+5	34104	1a2e	None
+5	34128	1a2e	None
+5	34152	1a2e	None
+5	34176	1a2e	None
+5	34200	1a2e	None
+5	34224	1a2e	None
+5	34248	1a2e	None
+5	34272	1a2e	None
+5	34296	1a2e	None
+5	34320	1a2e	None
+5	34344	1a2e	None
+5	34368	1a2e	None
+5	34392	1a2e	None
+5	34416	1a2e	None
+5	34440	1a2e	None
+5	34464	1a2e	None
+5	34488	1a2e	None
+5	34512	1a2e	None
+5	34536	1a2e	None
+5	34560	1a2e	None
+5	34584	1a2e	None
+5	34608	1a2e	None
+5	34632	1a2e	None
+5	34656	1a2e	None
+5	34680	1a2e	None
+5	34704	1a2e	None
+5	34728	1a2e	None
+5	34752	1a2e	None
+5	34776	1a2e	None
+5	34800	1a2e	None
+5	34824	1a2e	None
+5	34848	1a2e	None
+5	34872	1a2e	None
+5	34896	1a2e	None
+5	34920	1a2e	None
+5	34944	1a2e	None
+5	34968	1a2e	None
+5	34992	1a2e	None
+5	35016	1a2e	None
+5	35040	1a2e	None
+5	35064	1a2e	None
+5	35088	1a2e	None
+5	35112	1a2e	None
+5	35136	1a2e	None
+5	35160	1a2e	None
+5	35184	1a2e	None
+5	35208	1a2e	None
+5	35232	1a2e	None
+5	35256	1a2e	None
+5	35280	1a2e	None
+5	35304	1a2e	None
+5	35328	1a2e	None
+5	35352	1a2e	None
+5	35376	1a2e	None
+5	35400	1a2e	None
+5	35424	1a2e	None
+5	35448	1a2e	None
+5	35472	1a2e	None
+5	35496	1a2e	None
+5	35520	1a2e	None
+5	35544	1a2e	None
+5	35568	1a2e	None
+5	35592	1a2e	None
+5	35616	1a2e	None
+5	35640	1a2e	None
+5	35664	1a2e	None
+5	35688	1a2e	None
+5	35712	1a2e	None
+5	35736	1a2e	None
+5	35760	1a2e	None
+5	35784	1a2e	None
+5	35808	1a2e	None
+5	35832	1a2e	None
+5	35856	1a2e	None
+5	35880	1a2e	None
+5	35904	1a2e	None
+5	35928	1a2e	None
+5	35952	1a2e	None
+5	35976	1a2e	None
+5	36000	1a2e	None
+5	36024	1a2e	None
+5	36048	1a2e	None
+5	36072	1a2e	None
+5	36096	1a2e	None
+5	36120	1a2e	None
+5	36144	1a2e	None
+5	36168	1a2e	None
+5	36192	1a2e	None
+5	36216	1a2e	None
+5	36240	1a2e	None
+5	36264	1a2e	None
+5	36288	1a2e	None
+5	36312	1a2e	None
+5	36336	1a2e	None
+5	36360	1a2e	None
+5	36384	1a2e	None
+5	36408	1a2e	None
+5	36432	1a2e	None
+5	36456	1a2e	None
+5	36480	1a2e	None
+5	36504	1a2e	None
+5	36528	1a2e	None
+5	36552	1a2e	None
+5	36576	1a2e	None
+5	36600	1a2e	None
+5	36624	1a2e	None
+5	36648	1a2e	None
+5	36672	1a2e	None
+5	36696	1a2e	None
+5	36720	1a2e	None
+5	36744	1a2e	None
+5	36768	1a2e	None
+5	36792	1a2e	None
+5	36816	1a2e	None
+5	36840	1a2e	None
+5	36864	1a2e	None
+5	36888	1a2e	None
+5	36912	1a2e	None
+5	36936	1a2e	None
+5	36960	1a2e	None
+5	36984	1a2e	None
+5	37008	1a2e	None
+5	37032	1a2e	None
+5	38016	f009	Cannot be used
+5	38048	f009	Cannot be used
+5	38080	f009	Cannot be used
+5	38112	f009	Cannot be used
+5	38144	f009	Cannot be used
+5	38176	f009	Cannot be used
+5	38208	f009	Cannot be used
+5	38240	f009	Cannot be used
+5	38272	f009	Cannot be used
+5	38304	f009	Cannot be used
+5	38336	f009	Cannot be used
+5	38368	f009	Cannot be used
+5	38400	f009	Cannot be used
+5	38432	f009	Cannot be used
+5	38464	f009	Cannot be used
+5	38496	f009	Cannot be used
+5	38528	f009	Cannot be used
+5	38560	f009	Cannot be used
+5	38592	f009	Cannot be used
+5	38624	f009	Cannot be used
+5	38656	f009	Cannot be used
+5	38688	f009	Cannot be used
+5	38720	f009	Cannot be used
+5	38752	f009	Cannot be used
+5	38784	f009	Cannot be used
+5	38816	f009	Cannot be used
+5	38848	f009	Cannot be used
+5	38880	f009	Cannot be used
+5	38912	f009	Cannot be used
+5	38944	f009	Cannot be used
+5	38976	f009	Cannot be used
+5	39008	f009	Cannot be used
+5	39040	f009	Cannot be used
+5	39072	f009	Cannot be used
+5	39104	f009	Cannot be used
+5	39136	f009	Cannot be used
+5	39168	f009	Cannot be used
+5	39200	f009	Cannot be used
+5	39232	f009	Cannot be used
+5	39264	f009	Cannot be used
+5	39296	f009	Cannot be used
+5	39328	f009	Cannot be used
+5	39360	f009	Cannot be used
+5	39392	f009	Cannot be used
+5	39424	f009	Cannot be used
+5	39456	f009	Cannot be used
+5	39488	f009	Cannot be used
+5	39520	f009	Cannot be used
+5	39552	f009	Cannot be used
+5	39584	f009	Cannot be used
+5	39616	f009	Cannot be used
+5	39648	f009	Cannot be used
+5	39680	f009	Cannot be used
+5	39712	f009	Cannot be used
+5	39744	f009	Cannot be used
+5	39776	f009	Cannot be used
+5	39808	f009	Cannot be used
+5	39840	f009	Cannot be used
+5	39872	f009	Cannot be used
+5	39904	f009	Cannot be used
+5	39936	f009	Cannot be used
+5	39968	f009	Cannot be used
+5	40000	f009	Cannot be used
+5	40032	f009	Cannot be used
+5	40064	f009	Cannot be used
+5	40096	f009	Cannot be used
+5	40128	f009	Cannot be used
+5	40160	f009	Cannot be used
+5	40192	f009	Cannot be used
+5	40224	f009	Cannot be used
+5	40256	f009	Cannot be used
+5	40288	f009	Cannot be used
+5	40320	f009	Cannot be used
+5	40352	f009	Cannot be used
+5	40384	f009	Cannot be used
+5	40416	f009	Cannot be used
+5	40448	f009	Cannot be used
+5	40480	f009	Cannot be used
+5	40512	f009	Cannot be used
+5	40544	f009	Cannot be used
+5	40576	f009	Cannot be used
+5	40608	f009	Cannot be used
+5	40640	f009	Cannot be used
+5	40672	f009	Cannot be used
+5	40704	f009	Cannot be used
+5	40736	f009	Cannot be used
+5	40768	f009	Cannot be used
+5	40800	f009	Cannot be used
+5	40832	f009	Cannot be used
+5	40864	cd9e	Used Pawarin.
+5	40896	8871	Used Pawarin DX.
+5	40936	9303	Used Build Pawarin.
+5	40976	f444	Used Build Pawarin DX.
+5	41016	6735	Used Aroma Kit.
+5	41056	5b9e	Hung a teru teru bozu for sun.
+5	41112	0b1f	Got Star!
+5	41144	11a0	Got Slugger!
+5	41176	3a46	Got Slap Hitter!
+5	41208	246e	Aggressive Htr!
+5	41240	3f02	Got Patient Htr!
+5	41272	8d10	Aggressive Stl!
+5	41304	da0f	Cautious Stl!
+5	41336	24e1	Aggressive Run!
+5	41368	2e30	Aggressive Fld!
+5	41400	bdb3	Got Gd Small Ball!
+5	41440	042c	Got Pr Small Ball!
+5	41480	5cc8	Got Gd Eye!
+5	41512	b565	Got Power P!
+5	41544	06f5	Got Brk Ball P!
+5	41576	979d	Got Gd Pace!
+5	41608	a2ee	Rubber side: left
+5	41648	75ef	Rubber side: right
+5	41688	cdce	Got Gd Morale!
+5	41720	a757	Got Sparkplug!
+5	41760	87ae	Gd Cleanup!
+5	41792	fddb	Got Clutch Hit 5!
+5	41824	8dd4	Got Clutch Hit 4!
+5	41856	f1b1	Got Vs. Lefty 5!
+5	41888	e97b	Got Vs. Lefty 4!
+5	41920	e27f	2nd Position 4!
+5	41952	8f79	Got Durability 5!
+5	41992	4603	Got Durability 4!
+5	42032	1ec9	Stealing 5!
+5	42064	a560	Stealing 4!
+5	42096	3eb3	Base Running 4
+5	42128	e5f8	Throwing 4!
+5	42160	3c3d	Got Consistency 4!
+5	42200	c3eb	Got Contact Hitter!
+5	42240	b2f3	Got Power Hitter!
+5	42280	2765	Got Pull Hitter!
+5	42320	0d26	Spray Hitter!
+5	42352	20c8	Got Push Hitter!
+5	42384	6307	Got Hot Hitter!
+5	42416	057b	Got Tough Out!
+5	42448	b58a	Got Gd Bunt!
+5	42480	3558	Got Bunt Master!
+5	42512	d582	Got Gd IF Htr!
+5	42544	0e19	Firstball Htr!
+5	42576	aae5	Got Table Setter!
+5	42616	8184	Got Bases Clearer!
+5	42648	3b92	Got Grand Slammer!
+5	42688	be01	Got Walk-off Htr!
+5	42728	ca68	Got Walk-off HR!
+5	42768	40ad	Rally Hitter!
+5	42800	cd59	Gd Pinch Htr!
+5	42832	ee11	Tough Runner!
+5	42864	0db3	Got Hd 1st Slide!
+5	42912	a01e	Got Gold Glover!
+5	42944	1349	Got Grt Catcher!
+5	42984	038c	Got Gd Catcher!
+5	43024	6886	Got Gd Block!
+5	43056	84a5	Got Intimidator!
+5	43088	549f	Gd B2B Htr!
+5	43120	7c62	Got Low Ball Htr!
+5	43160	085b	Got High Ball Htr!
+5	43200	5f15	Got Breakup DP!
+5	43240	face	Got Refined!
+5	43272	17b1	Got Laser Beam!
+5	43312	524a	Dark Horse!
+5	43344	2df1	Got Trash Talk!
+5	43384	e744	Got Gd vs. Ace!
+5	43416	da6d	Got Gd Full Count!
+5	43456	c8d0	Got Trusted Bat!
+5	43488	c71e	Got Trusted Glove!
+5	43520	61c6	Got w/RISP 4!
+5	43552	411c	Vs. LH Batter 4!
+5	43584	a677	Got Poise 4!
+5	43624	7996	Got Consistency 4!
+5	43664	9c44	Got FB Life 5!
+5	43696	158d	Got FB Life 4!
+5	43728	5e7a	Got Spin 4!
+5	43760	1de4	Got Release 4!
+5	43792	ce37	Recovery 4!
+5	43824	0ee9	Recovery 5!
+5	43856	3fb0	Got Gyroball!
+5	43896	15ac	Gd Low Pitch!
+5	43928	d5f1	Groundball P!
+5	43960	aace	Safe Pitch!
+5	43992	0b1c	Str Finisher!
+5	44024	32c7	Gd Pickoff!
+5	44056	459c	Got Gd Delivery!
+5	44088	8bbc	Got Gd Reflexes!
+5	44120	f3b5	Got Lucky!
+5	44152	67c3	Got Intimidator!
+5	44184	7e9c	Got Battler!
+5	44216	5a71	Got Dr. K!
+5	44248	e632	Got Gd Guts!
+5	44280	9c5f	Gd vs. Big Bat!
+5	44312	c714	Got Crossfire!
+5	44352	4d85	Gd Extension!
+5	44384	5d0d	Got Poker Face!
+5	44424	dbec	Got Pr Morale!
+5	44456	8460	Pr Cleanup!
+5	44488	07b6	Got Clutch Hit 1!
+5	44520	925a	Got Clutch Hit 2!
+5	44552	f188	Got Vs. Lefty 1!
+5	44584	2204	Got Vs. Lefty 2!
+5	44616	ed6c	2nd Position 2!
+5	44648	fc0a	Got Durability 2!
+5	44688	e8ca	Stealing 2!
+5	44720	50b6	Base Running 2
+5	44752	c9f6	Throwing 2!
+5	44784	cc6e	Got Consistency 2!
+5	44824	c716	Timely Whiff!
+5	44856	aafa	Error Prone!
+5	44888	01ec	Got w/RISP 2!
+5	44920	aa1d	Vs. LH Batter 2!
+5	44952	1dba	Got Vs. Runner 2!
+5	44992	45ee	Got Poise 2!
+5	45032	32b6	Got Consistency 2!
+5	45072	a02e	Got FB Life 2!
+5	45104	f5e5	Got Spin 2!
+5	45136	0136	Got Release 2!
+5	45168	83e6	Recovery 2!
+5	45200	6f06	Got Fat Pitch!
+5	45232	272c	Choke Artist!
+5	45264	67d9	Got Walk!
+5	45296	a7c1	Got Slow Starter!
+5	45336	60f7	Got Sandbag!
+5	45368	c879	Got Unlucky!
+5	45400	215d	Hot Head!
+5	45432	c5ae	Got Shuuto Spin!
+5	45472	da3a	Got Flyball P!
+5	45504	ed44	Got Erratic!
+5	45536	ec75	Got 10 Strength Points!
+5	45584	cf24	Got 20 Strength Points!
+5	45632	a90b	Got 30 Strength Points!
+5	45680	2801	Got 10 Quickness Points!
+5	45728	86cf	Got 20 Quickness Points!
+5	45776	22b5	Got 30 Quickness Points!
+5	45824	87c0	Got 10 Technique Points!
+5	45872	9a07	Got 20 Technique Points!
+5	45920	8a62	Got 30 Technique Points!
+5	45968	6f53	Got 10 Breaking Ball Points!
+5	46016	1ebe	Got 20 Breaking Ball Points!
+5	46064	722c	Got 30 Breaking Ball Points!
+5	46112	1682	Got 10 Mentality Points!
+5	46160	0870	Got 20 Mentality Points!
+5	46208	fabb	Got 30 Mentality Points!

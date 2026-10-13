@@ -1,0 +1,265 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+0	1325728	456b	From Wii System Memory,
+0	1325754	9bce	The Wii System Memory
+0	1325778	4cd9	Wii System Memory:
+0	1325802	4b0b	The Wii System Memory
+0	1325828	f67e	Wii System Memory:
+0	1325852	8884	The Wii System Memory
+0	1325876	8884	The Wii System Memory
+0	1325900	da2b	Wii System Memory:
+0	1325924	b7b8	Save?
+0	1325942	a38c	was not found.
+0	1325966	17cb	Slot A contains something other
+0	1326002	d9bf	than a Memory Card.
+0	1326026	179f	has corrupted data, so
+0	1326052	0931	it needs formatting.
+0	1326072	9a87	Formatting will erase all files
+0	1326106	082d	on the Memory Card.
+0	1326130	fbec	Do you want to format it?
+0	1326160	6939	Formatting.
+0	1326176	e0f3	Not enough available space in Wii System Memory.
+0	1326226	e4b4	Create 18 blocks of free space by either moving
+0	1326278	e645	data to an SD Card or deleting data in the
+0	1326324	d077	Data Management screen.
+0	1326344	18ae	Not enough available space in Wii System Memory.
+0	1326400	e4b4	Either move data to an SD Card or delete data
+0	1326452	9750	in the Data Management screen.
+0	1326480	4e15	The Wii System Memory free space is abnormal.
+0	1326524	392b	Refer to the Wii Operations Manual for details.
+0	1326576	66c8	The Wii System Memory free file count is abnormal.
+0	1326626	392b	Refer to the Wii Operations Manual for details.
+0	1326678	582c	The Wii System Memory has been damaged.
+0	1326714	392b	Refer to the Wii Operations Manual for details.
+0	1326766	9557	Could not write to/read from the Wii System Memory.
+0	1326828	392b	Refer to the Wii Operations Manual for details.
+0	1326880	0b25	An error occurred while writing to/reading
+0	1326926	8e34	from the Wii System Memory.
+0	1326950	392b	Refer to the Wii Operations Manual for details.
+0	1327002	616d	Data was not found.
+0	1327034	9b94	{}Yes{}{}{}No
+0	1327054	4d8d	{}{}Yes{}{}{}No
+0	1327076	0a81	{}{}{}Yes{}{}{}No
+0	1327100	e3f4	{}{}{}{}Yes{}{}{}No
+0	1327126	fcb9	{}{}{}{}{}Yes{}{}{}No
+0	1327154	0379	{}{}{}{}{}{}Yes{}{}{}No
+0	1327184	22bd	{}{}{}{}{}{}{}Yes{}{}{}No
+0	1327216	1883	{}{}{}{}{}{}{}{}Yes{}{}{}No
+0	1327250	4732	{}{}{}{}{}{}{}{}{}Yes{}{}{}No
+0	1327286	8999	The destination is not an empty Pitcher slot.
+0	1327332	5d2b	The destination is not an empty Fielder slot.
+0	1327378	50bf	You cannot swap a pitcher with a fielder.
+0	1327422	fc0d	You cannot swap with an empty slot.
+0	1327458	4cda	The copy destination is not empty.
+0	1327494	bf84	There is no Pawapuro 15 file.
+0	1327532	8df2	Create a Pawapuro 15 file?
+0	1327572	23d7	Creating a Pawapuro 15 file.
+0	1327610	9b92	Loading.
+0	1327626	7ce4	Saving.
+0	1327642	4ce3	Accessing.
+0	1327660	8f24	Please press the A Button.
+0	1327688	3f6c	{}Please press the A Button.
+0	1327718	2bbf	{}{}Please press the A Button.
+0	1327750	7346	{}{}{}Please press the A Button.
+0	1327784	a967	{}{}{}{}Please press the A Button.
+0	1327820	4a40	{}{}{}{}{}Please press the A Button.
+0	1327858	3caf	{}{}{}{}{}{}Please press the A Button.
+0	1327898	6e1c	{}{}{}{}{}{}{}Please press the A Button.
+0	1327940	0ecd	{}{}{}{}{}{}{}{}Please press the A Button.
+0	1327984	5538	{}{}{}{}{}{}{}{}{}Please press the A Button.
+0	1328030	8b03	{}{}{}{}{}{}{}{}{}{}Please press the A Button.
+0	1328078	1443	{}{}{}{}{}{}{}{}{}{}{}Please press the A Button.
+0	1328128	eeeb	{}{}{}{}{}{}{}{}{}{}{}{}Please press the A Button.
+0	1328180	7abb	Settings have changed.
+0	1328206	46f4	Load complete.
+0	1328224	5233	Load failed.
+0	1328248	fcda	Save complete.
+0	1328266	aad4	Save failed.
+0	1328290	b203	You cannot save like this.
+0	1328322	74b4	Is this OK?
+0	1328340	a036	Switch to Playoff Mode?
+0	1328370	9d58	This character cannot come first.
+0	1328408	cf0d	A "-" cannot follow "n" or a small "tsu".
+0	1328452	8ea5	Do not touch the Power Button.
+0	1328488	b203	You cannot save like this.
+0	1328520	74b4	Is this OK?
+0	1328538	5701	You got an OB player.
+0	1328564	fa03	You got a bonus player.
+0	1328594	09d3	Checking.
+0	1328612	e0f3	Not enough available space in Wii System Memory.
+0	1328662	e4b4	Create 18 blocks of free space by either moving
+0	1328714	e645	data to an SD Card or deleting data in the
+0	1328760	d077	Data Management screen.
+0	1328780	18ae	Not enough available space in Wii System Memory.
+0	1328836	e4b4	Either move data to an SD Card or delete data
+0	1328888	9750	in the Data Management screen.
+0	1328916	be6d	{}{}{}{}{}{}{}Start without saving
+0	1328950	5cb4	{}{}{}{}{}{}{}Continue without saving
+0	1328984	249e	{}{}{}{}{}{}{}Return to the Wii Menu
+0	1329024	c25d	Start the game anyway?
+0	1329056	5d15	The data is corrupted, so
+0	1329082	dda6	this file cannot be used.
+0	1329114	4727	{}Continue without save/load
+0	1329144	fbc2	{}Delete file
+0	1329166	5d15	The data is corrupted.
+0	1329192	dda6	This file cannot be used.
+0	1329224	4727	{}Continue without save/load
+0	1329254	fbc2	{}Delete file
+0	1329276	5d15	The data is corrupted, so
+0	1329302	dda6	this file cannot be used.
+0	1329334	4727	{}Continue without save/load
+0	1329364	fbc2	{}Delete file
+0	1329386	5fc4	Pawapuro 15 save data
+0	1329416	1f91	is being deleted.
+0	1329430	5d15	The data is corrupted, so
+0	1329456	dda6	this file cannot be used.
+0	1329488	4727	{}Continue without save/load
+0	1329518	fbc2	{}Delete file
+0	1329540	1c6a	is not supported.
+0	1329560	1d3f	The player data is full.
+0	1329588	71ba	To create players in Success Mode,
+0	1329622	4788	please delete unwanted player data
+0	1329656	544c	to make room in the player data.
+0	1329694	7009	No room left in the fielder data.
+0	1329726	83e2	To create a fielder in Success Mode,
+0	1329760	a175	please delete unwanted fielder data
+0	1329794	dc21	to make room in the fielder data.
+0	1329832	dba2	No room left in the pitcher data.
+0	1329864	bc02	To create a pitcher in Success Mode,
+0	1329898	2c1d	please delete unwanted pitcher data
+0	1329932	95eb	to make room in the pitcher data.
+0	1329970	723f	During Success Mode, do not
+0	1330000	11c1	swap the Memory Card.
+0	1330026	76ca	To stop Success Mode partway,
+0	1330064	8f1e	be sure to quit from the menu
+0	1330100	1332	under "System".
+0	1330120	0dc5	Never reset or turn off the power
+0	1330156	cf99	during play.
+0	1330184	be4a	All data used by Pawapuro 15:
+0	1330222	50e1	do you want to load it?
+0	1330252	2152	Pitcher data is full, so the player
+0	1330286	f8fa	could not be created.
+0	1330306	2c1d	Please delete unwanted pitcher data
+0	1330340	95eb	to make room in the pitcher data.
+0	1330378	bee6	Fielder data is full, so the player
+0	1330412	f8fa	could not be created.
+0	1330432	a175	Please delete unwanted fielder data
+0	1330466	dc21	to make room in the fielder data.
+0	1330504	73fb	Cheer song data is full, so the file
+0	1330544	f8fa	could not be created.
+0	1330564	8b48	Please delete unwanted cheer song data
+0	1330600	f3f4	to make room.
+0	1330626	b8c7	Could not make a password for this song.
+0	1330666	a383	Please adjust the song data or name.
+0	1330702	b8c7	Could not make a password for this song.
+0	1330742	0e8e	Sample songs cannot be made into passwords.
+0	1330790	8535	load player data?
+0	1330820	456b	From Wii System Memory,
+0	1330846	8041	load cheer song data?
+0	1330880	246c	do you want to load
+0	1330906	1a1e	Arrange Team data?
+0	1330924	6d4a	There is no player data.
+0	1330950	1833	Exhibition option data
+0	1330978	0de6	Practice option data
+0	1331006	08df	Exhibition setup data
+0	1331028	9a0c	Practice setup data
+0	1331050	61e5	Exhibition defensive shift data
+0	1331082	73ca	Practice defensive shift data
+0	1331114	4e01	Pennant data
+0	1331134	50b0	My Life data
+0	1331156	c07d	Player Directory data was not found.
+0	1331194	823e	Arrange Team data
+0	1331220	86ce	League data
+0	1331238	e91c	Home Run Derby data
+0	1331264	2738	Showdown! Legends data
+0	1331290	99ec	Scenario data
+0	1331310	57bb	Sound setup data
+0	1331336	e74f	OB player data
+0	1331356	4fc3	Bonus player data
+0	1331380	745a	Player data was not found.
+0	1331416	ac2f	You already have this
+0	1331452	ef01	password's OB player.
+0	1331480	ac2f	You already have this
+0	1331516	afa4	password's bonus player.
+0	1331548	5cc9	Save and quit Success Mode.
+0	1331582	74b4	Is this OK?
+0	1331600	04d3	If you give up on Success Mode,
+0	1331634	5561	you will not be able to continue.
+0	1331670	9d6e	Data saved in the Wii System Memory
+0	1331708	60f1	lets you continue your game.
+0	1331736	197c	The data will be erased.
+0	1331756	74b4	Is this OK?
+0	1331774	5cf8	Saving Success Mode startup data.
+0	1331812	6deb	has been replaced.
+0	1331834	9fff	Slot A
+0	1331846	d11f	Slot B
+0	1331858	5e44	Only one of Pennant or League
+0	1331890	64ef	can be saved.
+0	1331910	d0f4	If a League has been saved and
+0	1331942	35b9	you save a Pennant, the League
+0	1331976	45f3	will be erased.
+0	1331996	4dd7	Save anyway?
+0	1332026	e5ea	If a Pennant has been saved and
+0	1332060	f06e	you save a League, the Pennant
+0	1332094	85be	cannot be used.
+0	1332112	441e	is corrupted and cannot be used.
+0	1332146	516d	Saving will begin.
+0	1332162	1078	If you start the game as is,
+0	1332190	485f	you will not be able to save.
+0	1332220	d4d5	Start the game anyway?
+0	1332252	9cde	If you continue as is,
+0	1332278	d669	you will not be able to save/load.
+0	1332316	0680	Continue the game anyway?
+0	1332346	36ad	Saved Success Mode data
+0	1332378	028d	was found.
+0	1332390	b7e6	Starting from the beginning
+0	1332420	d325	will overwrite the data.
+0	1332446	74b4	Is this OK?
+0	1332464	df9b	Save the system data for
+0	1332498	eddf	Success Mode?
+0	1332510	8fe9	(If you save, the player you
+0	1332542	148c	{}raised carries over to future
+0	1332576	b102	{}Success Mode games.)
+0	1332594	9bba	Success Mode startup system data
+0	1332630	485f	cannot be saved.
+0	1332660	74b4	Is this OK?
+0	1332678	6deb	has been replaced.
+0	1332700	c6a2	is not inserted.
+0	1332720	0a6d	Please insert the Memory Card
+0	1332752	b431	used to start Success Mode.
+0	1332786	784b	If you change controller settings here,
+0	1332824	caf3	other modes (except Pennant and League)
+0	1332866	84b0	will use the new settings too.
+0	1332902	e4d2	Change the settings?
+0	1332930	c967	You can save your Success player.
+0	1332962	2c8a	Saved players can be used in Arrange.
+0	1333004	5d15	The data is corrupted.
+0	1333030	dda6	This file cannot be used.
+0	1333062	4727	{}Continue without save/load
+0	1333092	fbc2	{}Delete file
+0	1333114	1187	Swapping Pawapuro 15 player data
+0	1333152	7ff5	is not possible.
+0	1333166	27d0	Copying to Pawapuro 15 player data
+0	1333206	7ff5	is not possible.
+0	1333220	fd8c	Pawapuro 15 player data cannot be deleted.
+0	1333262	11e3	Swapping Pawapuro 15 team data
+0	1333302	7ff5	is not possible.
+0	1333316	2731	Copying to Pawapuro 15 team data
+0	1333358	7ff5	is not possible.
+0	1333372	2038	Pawapuro 15 team data cannot be deleted.
+0	1333416	6188	Swapping Pawapuro 15 cheer song data
+0	1333456	7ff5	is not possible.
+0	1333470	c8b7	Copying to Pawapuro 15 cheer song data
+0	1333512	7ff5	is not possible.
+0	1333526	b4cd	Pawapuro 15 cheer song data cannot be deleted.
+0	1333570	32bd	In Pawapuro 15 Ketteiban, Pawapuro 15 data
+0	1333616	32ee	cannot be changed.
+0	1333644	5233	Load failed.
+0	1333668	dde9	The Pawapuro 15 data is corrupted.
+0	1333706	7d33	Corrupted Pawapuro 15 data
+0	1333740	7532	can be deleted in the
+0	1333774	1097	Data Management screen.
+0	1333800	caf3	In Pawapuro 15 Ketteiban,
+0	1333838	bf22	Pawapuro 15 data cannot be deleted.
+0	1333874	bf84	There is no Pawapuro 15 file.
+0	1333912	d425	Pawapuro 15 Ketteiban
+0	1333934	4ea5	data failed to load.
