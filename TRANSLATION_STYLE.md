@@ -395,5 +395,32 @@ Summer Star (夏男). Worded for the patch:
 
 What 持続 and the ○ / × of ストレート and 変化球 do in play was not checked; the English follows the words.
 
+Shop and item list (scs_item.arc; the item list is in scs_main.arc), Arial Rounded Bold in the colours of the Japanese labels:
+
+| Japanese | English |
+|---|---|
+| ショップ / 所持金 / 説明 | Shop (Arial Black, slanted) / Money / Info |
+| 全ての商品 / ボール / バット / グラブ / スパイク / その他 | All Items / Balls / Bats / Gloves / Spikes / Other |
+| OK / キャンセル | OK (as drawn) / Cancel |
+| 購入 / 所持 (behind a count) | Buy / Own: `x1 Buy`, `x3 Own` (24 pixels each) |
+| 購入済 / 取得済 / 売り切れ！ | Bought / Owned / Sold Out! |
+| 全ての商品 / 練習道具 / その他 (larger tabs, not seen in game) | All Items / Accessories / Other (練習道具 is Accessories on the Data screen too) |
+| 消費アイテム / その他 (item list) | Consumables / Other |
+| 装備中 / アイテムリスト (equip pop-up) | Equipped / Item List |
+| 円 | stays 円, as on the HUD |
+| お買得！でやんす (Yabe's bubble) | stays: decided as a picture |
+
+取得済 was not seen in game. "Owned" covers both readings (an ability already learned, an item already held).
+Gear names on the item icons (not seen in game): the term sheet's names without the kind of gear, 40 pixels wide:
+Catching, No-Miss, S No-Miss, Pro, Contact, Impact, Power, S Power, Mighty, Pro Power, Lock-On, Sweet, Running,
+Dig-In, Pitching, S Pitching, Heavy, S Heavy, Pro Pitch, Sniper, S Sniper, Pro Sniper.
+
+Schedule (scs_data.rel, strings that the build lays out again; all 24 share 444 bytes, so the tournament rounds stay
+short): Practice Game; Intercity Qual R1 / SF / Final; Intercity Natl SF / Final; Japan Champ Qual R1 / Final;
+Japan Champ Natl SF / Final; Elite Squad Camp; Elite Squad Camp Game; Welcome Ceremony (入社式); CEO New Year Edict;
+Closing of the Books (決算, the glossary term); Exam; Exam, Japan Champ Qual Final (the week that has both: this
+order lets the two entries share their letters); Contract Renewal; Club Dues (部費); Summer Festival; Christmas;
+New Year's; Valentine's Day; Industrial & College Draft. Date column: `9 Mo 3 Wk`, as on the HUD.
+
 Still Japanese on these pages: プログラム, テキスト, 特別ルーム (not met in scenario 1; meaning to be
 confirmed in play before they are worded).
