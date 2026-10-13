@@ -202,7 +202,7 @@ Line counts are text runs in scenario 1.
 | ベンチ入り / スタメン | make the bench / starter | |
 | 特殊能力 | special ability | |
 | 広角打法 / プルヒッター | Spray Hitter / Pull Hitter | MLB Power Pros names |
-| ノビ / ジャイロボール | Fastball Life / Spin | MLB Power Pros names |
+| ノビ / キレ / ジャイロボール | Fastball Life / Spin / Gyroball | MLB Power Pros plate names. Spin is キレ (graded: Spin 4, Spin 2); until 2026-10-12 this row wrongly gave Spin for ジャイロボール |
 | ムービングファスト / ツーシーム | Moving Fastball / 2-Seamer | |
 | サボりぐせ / 弱気 | Laziness / Timidity | MLB Power Pros names |
 | 世渡り上手 / いいやつ / 寝坊 | Smooth Talker / Good Guy / Oversleeper | |
