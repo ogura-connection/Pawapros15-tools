@@ -1605,7 +1605,7 @@
    "name": "inning",
    "bank": "h3_ulk_0",
    "style": "ulk_inn",
-   "font": "ttf:din:10:0:1:0.1",
+   "font": "ttf:din:11:0:1:0.1",
    "areas": [
     [
      2,
@@ -1650,7 +1650,7 @@
      ],
      "text": "TOP",
      "left": -17,
-     "baseline": 13
+     "baseline": 14
     },
     {
      "from": [
@@ -1662,7 +1662,7 @@
      ],
      "text": "BOT",
      "left": -17,
-     "baseline": 13
+     "baseline": 14
     }
    ]
   },

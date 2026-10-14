@@ -30,7 +30,7 @@ def outlined_pair(top, core, bottom, thresh=3):
     """Letters of palette index `core` in a solid one-pixel ring: `top` on the upper-left side of a stroke, `bottom` on
     the lower-right side (the Japanese list lettering of y3_mys is dark outline / pale fill / dark outline)."""
     def style(ink, base):
-        pad = 2
+        pad = 1
         h, w = ink.shape
         m = np.zeros((h + 2 * pad, w + 2 * pad), bool)
         m[pad:pad + h, pad:pad + w] = ink >= thresh
