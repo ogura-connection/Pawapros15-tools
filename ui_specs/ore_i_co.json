@@ -1,0 +1,256 @@
+{
+ "arc": "ore_i_co.arc",
+ "repack": [
+  {
+   "bank": "y4_btn",
+   "style": "btn_grey",
+   "font": "ttf:din:11:0:1:0",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     24,
+     80,
+     48
+    ],
+    [
+     0,
+     0,
+     48,
+     56,
+     72
+    ],
+    [
+     0,
+     40,
+     96,
+     128,
+     120
+    ],
+    [
+     0,
+     0,
+     72,
+     80,
+     96
+    ],
+    [
+     0,
+     0,
+     96,
+     40,
+     120
+    ],
+    [
+     0,
+     56,
+     48,
+     80,
+     72
+    ],
+    [
+     1,
+     0,
+     96,
+     64,
+     120
+    ],
+    [
+     1,
+     56,
+     48,
+     128,
+     72
+    ],
+    [
+     1,
+     0,
+     0,
+     104,
+     48
+    ],
+    [
+     2,
+     0,
+     0,
+     80,
+     24
+    ],
+    [
+     2,
+     0,
+     72,
+     80,
+     96
+    ],
+    [
+     2,
+     16,
+     96,
+     128,
+     120
+    ],
+    [
+     2,
+     80,
+     72,
+     128,
+     96
+    ],
+    [
+     2,
+     0,
+     96,
+     16,
+     120
+    ],
+    [
+     2,
+     72,
+     24,
+     80,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": ": Turn View",
+     "style": "btn_view",
+     "font": "ttf:din:11:0:1:0",
+     "left": 0,
+     "baseline": 19
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      56,
+      72
+     ],
+     "text": "Type",
+     "style": "btn_type",
+     "font": "ttf:din:12:0:1:0",
+     "left": 2,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      64,
+      120
+     ],
+     "text": ": Switch View",
+     "style": "btn_grey",
+     "font": "ttf:din:10:0:1:0",
+     "left": 0,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      56,
+      48,
+      128,
+      72
+     ],
+     "text": ": Sort",
+     "style": "btn_grey",
+     "font": "ttf:din:11:0:1:0",
+     "left": 0,
+     "baseline": 17
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": ": Show Info",
+     "style": "btn_blue",
+     "font": "ttf:din:11:0:1:0",
+     "left": 0,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      32,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      40,
+      96,
+      128,
+      120
+     ],
+     "text": ": Hide Info",
+     "style": "btn_red",
+     "font": "ttf:din:11:0:1:0",
+     "left": -24,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      80,
+      96
+     ],
+     "text": ": Switch",
+     "style": "btn_grey2",
+     "font": "ttf:din:11:0:1:0",
+     "left": 0,
+     "baseline": 17
+    },
+    {
+     "from": [
+      2,
+      80,
+      96,
+      128,
+      120
+     ],
+     "text": ": Switch",
+     "style": "btn_redlet",
+     "font": "ttf:din:11:0:1:0",
+     "left": 0,
+     "baseline": 17
+    },
+    {
+     "from": [
+      2,
+      16,
+      96,
+      128,
+      120
+     ],
+     "text": "SELECT: Switch",
+     "style": "btn_redlet",
+     "font": "ttf:din:11:0:1:0",
+     "left": 1,
+     "baseline": 17
+    }
+   ]
+  }
+ ]
+}
