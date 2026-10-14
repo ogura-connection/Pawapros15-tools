@@ -52,9 +52,14 @@ def main():
             except Exception:
                 continue
             img = rgba(idx, pal, fmt)
-            for l, tp, r, b in L.find_boxes(idx):
+            ok = lambda bx: 6 <= bx[3] - bx[1] <= 96 and 6 <= bx[2] - bx[0] <= 512
+            # the ink threshold that gives the most label-sized boxes (a run-time palette leaves the
+            # background on a low index that is not 0, and the glow can join two rows)
+            best = max(((thr, [bx for bx in L.find_boxes(idx, thr) if ok(bx)])
+                        for thr in ((1, 4, 8) if fmt == 8 else (1, 32, 64, 128))), key=lambda x: len(x[1]))
+            for l, tp, r, b in best[1]:
                 w, h = r - l, b - tp
-                if not (6 <= h <= 96 and 6 <= w <= 512) or (idx[tp:b, l:r] > 0).sum() < 30:
+                if (idx[tp:b, l:r] >= best[0]).sum() < 30:
                     continue
                 crop = Image.fromarray(np.ascontiguousarray(img[tp:b, l:r]), "RGBA")
                 name = "%s/%d_%d_%d_%d_%d.png" % (pack, t, l, tp, r, b)

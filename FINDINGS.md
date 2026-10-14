@@ -592,6 +592,9 @@ New in the tools (`ui_type.py`; all ten older specs still render byte-identical 
   a style's art: 16-pixel rows), `pitchchart`, `panel`, `subhead`, `subtab`.
 - `"left"` / `"baseline"` per cell where the Japanese cells sit a pixel or three off their row (pitching lines,
   player panel): computed from the sprite's own offsets in the generator.
+- Previews: `_work/ui_pages/tools/after.py SPEC BANK OUT.png [scale] [sprite ...]` composes a bank's sprites with
+  the spec applied in memory (each part in its own palette; `ui_labels.py preview` colours a page with one
+  palette), `bank_sheet.py ARC BANK OUT.png [scale]` every sprite of a bank from the original.
 
 Room is the limit everywhere in the match, not the byte budget: pages hold little free space, the pause menu
 needed 96% of its label rows until Pinch and Replay were shared again as in the Japanese. Pages that no sprite
