@@ -1,0 +1,50 @@
+"""Label styles of ore_fa.arc (My Life free agency screen, bank y3_fa). Loaded by ui_type.py.
+crisp(fill, rings, shadow, cut): letters (ink >= cut of 6) filled from `fill` (a list is a ramp from the top row of the
+letters to the foot), solid one-pixel rings (innermost first), a shadow (near to far, one pixel a colour) cast down and
+right. Colours are palette indices read from the Japanese lettering."""
+import numpy as np
+import ui_type
+from ui_type import grow, shift
+
+ui_type.TTF["din"] = ("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf", 0)
+
+
+def crisp(fill, rings, shadow=(), cut=3):
+    fill = list(fill) if isinstance(fill, (list, tuple)) else [fill]
+
+    def style(ink, base):
+        pad = len(rings) + len(shadow) + 2
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big >= cut
+        masks = [grow(letters, 1)]
+        for _ in rings[1:]:
+            masks.append(grow(masks[-1], 1, diagonal=False))
+        out = np.zeros(big.shape, np.uint8)
+        edge = masks[-1]
+        for k in range(len(shadow), 0, -1):
+            out[shift(edge, k, k) | shift(edge, k, k - 1) | shift(edge, k - 1, k)] = shadow[k - 1]
+        for mk, v in zip(masks[::-1], rings[::-1]):
+            out[mk] = v
+        ys = np.nonzero(letters.any(1))[0]
+        f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+        row = np.array(fill)[np.rint(f.clip(0, 1) * (len(fill) - 1)).astype(int)][:, None]
+        out[letters] = np.broadcast_to(row, big.shape)[letters]
+        ys = np.nonzero(out.any(1))[0]
+        xs = np.nonzero(out.any(0))[0]
+        r0, r1, c0, c1 = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
+        return out[r0:r1, c0:c1], base + pad - r0
+    return style
+
+
+STYLES = {
+    # FA / destination heading (palette 7): blue ramp, white ring
+    "fa_head": crisp([5, 5, 4, 4, 3, 3, 2, 2], [15]),
+    # the purple labels of the status box (palettes 4 and 5): fill f, white ring 6, blue shadow 9 / 1 / 3
+    "fa_label": crisp(15, [6], [9, 1, 3]),
+    # the team-choice prompt on the green bar (palette 11): dark green, white ring
+    "fa_prompt": crisp(11, [4, 4]),
+    # Yes / No and the question (palette 21): deep blue, white ring, pale blue shadow
+    "fa_ask": crisp([3, 2, 1, 1, 1], [15, 15], [10, 5, 5]),
+}

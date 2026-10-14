@@ -705,21 +705,7 @@
      0,
      0,
      128,
-     96
-    ],
-    [
-     0,
-     0,
-     96,
-     96,
-     120
-    ],
-    [
-     0,
-     104,
-     96,
-     128,
-     120
+     128
     ],
     [
      1,
@@ -727,6 +713,20 @@
      0,
      128,
      48
+    ],
+    [
+     1,
+     32,
+     64,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     80,
+     32,
+     128
     ]
    ],
    "labels": [
@@ -928,7 +928,7 @@
    "bank": "y4_ind_0",
    "palette": 0,
    "style": "gdo_dream",
-   "font": "ttf:rounded:36:0:1:0.0",
+   "font": "ttf:din:36:0:1:0.0",
    "under": 3,
    "gap": [
     1,
@@ -968,8 +968,8 @@
      ],
      "text": "Thank",
      "style": "gdo_dream",
-     "font": "ttf:rounded:36:0:0.95:0.4",
-     "left": -120,
+     "font": "ttf:din:36:0:1:0.4",
+     "left": -45,
      "baseline": 55
     },
     {
@@ -982,8 +982,8 @@
      ],
      "text": "you",
      "style": "gdo_dream",
-     "font": "ttf:rounded:36:0:0.95:0.4",
-     "left": -15,
+     "font": "ttf:din:36:0:1:0.4",
+     "left": 18,
      "baseline": 55
     },
     {
@@ -996,8 +996,8 @@
      ],
      "text": "for",
      "style": "gdo_dream",
-     "font": "ttf:rounded:36:0:0.95:0.4",
-     "left": 39,
+     "font": "ttf:din:36:0:1:0.4",
+     "left": 47,
      "baseline": 55
     },
     {
@@ -1010,8 +1010,8 @@
      ],
      "text": "the",
      "style": "gdo_dream",
-     "font": "ttf:rounded:36:0:0.95:0.4",
-     "left": 78,
+     "font": "ttf:din:36:0:1:0.4",
+     "left": 66,
      "baseline": 55
     },
     {
@@ -1024,8 +1024,8 @@
      ],
      "text": "dream",
      "style": "gdo_dream",
-     "font": "ttf:rounded:36:0:0.95:0.4",
-     "left": 131,
+     "font": "ttf:din:36:0:1:0.4",
+     "left": 98,
      "baseline": 55
     },
     {
@@ -1038,8 +1038,8 @@
      ],
      "text": "!",
      "style": "gdo_dream",
-     "font": "ttf:rounded:36:0:0.95:0.4",
-     "left": 229,
+     "font": "ttf:din:36:0:1:0.4",
+     "left": 153,
      "baseline": 55
     },
     {
@@ -1068,7 +1068,7 @@
    "bank": "y4_ind_0",
    "palette": 1,
    "style": "gdo_ribbon",
-   "font": "ttf:rounded:31:0:1:0.0",
+   "font": "ttf:din:30:0:1:0.0",
    "under": 3,
    "gap": [
     1,
@@ -1106,11 +1106,11 @@
       128,
       128
      ],
-     "text": "Great Work",
+     "text": "Great",
      "style": "gdo_ribbon",
-     "font": "ttf:rounded:31:0:0.95:0.4",
-     "left": -20,
-     "baseline": 38
+     "font": "ttf:din:30:0:1:0.3",
+     "left": 48,
+     "baseline": 37
     },
     {
      "from": [
@@ -1120,11 +1120,11 @@
       128,
       128
      ],
-     "text": "This Year",
+     "text": "Work",
      "style": "gdo_ribbon",
-     "font": "ttf:rounded:31:0:0.95:0.4",
-     "left": 89,
-     "baseline": 38
+     "font": "ttf:din:30:0:1:0.3",
+     "left": 8,
+     "baseline": 37
     },
     {
      "from": [
@@ -1134,7 +1134,11 @@
       128,
       128
      ],
-     "empty": true
+     "text": "This Year",
+     "style": "gdo_ribbon",
+     "font": "ttf:din:30:0:1:0.3",
+     "left": -32,
+     "baseline": 37
     }
    ]
   }
