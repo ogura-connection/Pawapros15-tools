@@ -16,6 +16,7 @@ STYLES["me_white"] = dropped([0, 0, 0, 15, 15, 15, 15], [1])
 # y3_se16, palettes 16 (team names, W / L / T): white to pale blue letters, blue rings
 _BLUE = [11, 12, 13, 14, 15, 15, 14, 13, 12, 11, 10]
 STYLES["me_team"] = ringfill(_BLUE, [6, 5, 3], [])
+STYLES["me_team"] = ringfill(_BLUE, [5, 3], [])
 STYLES["me_wlt"] = ringfill(_BLUE, [6, 5, 5, 3], [])
 # banners, 32 rows high: orange (17), violet (18), pink (22); stat words, green (19)
 STYLES["me_ban17"] = ringfill([10, 11, 12, 13, 14, 15, 14, 13, 12, 11, 10], [5, 5, 3], [])
