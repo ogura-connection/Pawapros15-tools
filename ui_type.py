@@ -1292,3 +1292,10 @@ def repack(group, d, bank, pages, patches, project=None):
         rows.append((lab.get("text") or lab.get("name") or "(kept)", "%dx%d" % (box[2] - box[0], box[3] - box[1]),
                      "%dx%d" % (w, h), "page %d x %d y %d" % (pg, x, y), len(mine)))
     return rows
+
+
+# Styles of other screens can live in their own module (one per workstream, so two sessions never edit this file
+# at once): ui_styles_<name>.py with a dict STYLES = {name: style}, built with the helpers above.
+import glob as _glob, importlib as _importlib, os as _os
+for _path in sorted(_glob.glob(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "ui_styles_*.py"))):
+    RENDER.update(_importlib.import_module(_os.path.basename(_path)[:-3]).STYLES)
