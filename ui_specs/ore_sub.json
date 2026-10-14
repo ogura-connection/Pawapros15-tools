@@ -156,20 +156,6 @@
      128
     ],
     [
-     17,
-     80,
-     0,
-     128,
-     32
-    ],
-    [
-     17,
-     0,
-     104,
-     128,
-     128
-    ],
-    [
      18,
      0,
      0,
@@ -245,13 +231,6 @@
      48,
      64,
      72
-    ],
-    [
-     28,
-     64,
-     96,
-     128,
-     128
     ],
     [
      32,
@@ -439,120 +418,130 @@
      "sprite": "a8",
      "text": "Jingu Stadium",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:15:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "a9",
      "text": "Hiro Stadium",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:14:0:1:0.3",
      "valign": "centre"
     },
     {
      "sprite": "aa",
      "text": "Tokyo Dome",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:12:0:1:0.3",
      "valign": "centre"
     },
     {
      "sprite": "ab",
      "text": "Yokohama Stadium",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:11:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "ac",
      "text": "Nagoya Dome",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:13:0:1:0.3",
      "valign": "centre"
     },
     {
      "sprite": "ad",
      "text": "Koshien Stadium",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:13:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "ae",
      "text": "Skymark Stadium",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:13:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "af",
      "text": "Chiba Marine Stadium",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:10:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "b0",
      "text": "Seibu Dome",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:13:0:1:0.3",
      "valign": "centre"
     },
     {
      "sprite": "b1",
      "text": "Fukuoka Dome",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:16:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "b2",
      "text": "Kyocera Dome",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:16:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "b3",
      "text": "Sapporo Dome",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:10:0:1:0.3",
      "valign": "centre"
     },
     {
      "sprite": "b4",
      "text": "Kleenex Stadium Miyagi",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:10:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "ce",
-     "text": "Regional Stadium",
+     "text": "Regional",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:14:0:1:0.3",
      "valign": "centre"
     },
     {
      "sprite": "146",
      "text": "Regional Dome",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:10:0:1:0.3",
      "valign": "centre"
     },
     {
      "sprite": "147",
      "text": "Overseas Stadium",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:12:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "148",
      "text": "School Ground",
      "style": "stad",
-     "font": "ttf:din:10:0:1:0",
-     "valign": "centre"
+     "font": "ttf:rounded:14:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
     },
     {
      "sprite": "dd",

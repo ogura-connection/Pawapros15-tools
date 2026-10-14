@@ -30,6 +30,14 @@ for _cap in range(8, 21):
             ui_type.FONTS["dc%dg%db%d" % (_cap, _gap, _b)] = _din_font(_cap, _gap, _b / 100.0)
 
 
+def _arc():
+    import ui_textures as U
+    if "d" not in _ARC:
+        _ARC["d"] = open(os.path.join(U.ORIG_ARC_DIR, "orepena.arc"), "rb").read()
+        _ARC["b"] = {x["name"]: x for x in U.banks(_ARC["d"], U.elf_symbols(_ARC["d"]))}
+    return _ARC["d"], _ARC["b"]
+
+
 def old_page(bank, pg):
     import ui_textures as U
     if "d" not in _ARC:

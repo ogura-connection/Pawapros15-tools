@@ -824,6 +824,112 @@
      "empty": true
     }
    ]
+  },
+  {
+   "bank": "y3_c16",
+   "palette": 2,
+   "style": "c16_00",
+   "font": "ttf:din:12:0:1:0.4",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     32,
+     64,
+     56
+    ],
+    [
+     3,
+     0,
+     56,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      104,
+      128,
+      128
+     ],
+     "text": "Choose a Team",
+     "style": "c16_00",
+     "font": "ttf:din:12:0:1:0.4",
+     "left": -15,
+     "baseline": 21,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      64,
+      56
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      56,
+      128,
+      80
+     ],
+     "text": "Choose the Team That Drafted You",
+     "style": "c16_03a",
+     "font": "ttf:din:12:0:1:0.4",
+     "left": 0,
+     "baseline": 21
+    },
+    {
+     "from": [
+      3,
+      0,
+      80,
+      128,
+      104
+     ],
+     "text": "Choose the Team That Drafted You",
+     "style": "c16_03b",
+     "font": "ttf:din:12:0:1:0.4",
+     "left": 0,
+     "baseline": 21
+    },
+    {
+     "from": [
+      3,
+      0,
+      104,
+      128,
+      128
+     ],
+     "text": "Choose the Team That Drafted You",
+     "style": "c16_03c",
+     "font": "ttf:din:12:0:1:0.4",
+     "left": 0,
+     "baseline": 21,
+     "sprites": [
+      "03"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      56,
+      32,
+      80
+     ]
+    }
+   ]
   }
  ]
 }
