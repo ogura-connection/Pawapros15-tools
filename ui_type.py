@@ -863,6 +863,8 @@ RENDER = {
     # with a lilac rim (palette 30); the lists, dark grey letters with a pale shadow (26)
     "makehead": logo([9, 9, 10, 11, 12], [5], 1, 1, 14, [], 1, 2),
     "makeitem": dropped([0, 11, 11, 13, 13, 15, 15], [7, 5]),
+    # the view hint of the form screens: lilac letters on a white band with a pale shadow (16)
+    "makehint": banded([0, 13, 5, 3, 2, 1, 1], [15, 15], 7),
     # the difficulty screen (y5_nan_0): Normal, green fading to white at the foot in a dark green outline on a
     # white band (palette 24); Rookie, the same in orange (23, another order of colours). Palette 31 draws
     # each again in black as its shadow.
