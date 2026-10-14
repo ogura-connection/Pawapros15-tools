@@ -312,7 +312,8 @@ BLOCK_SCRIPTS = {"sct_main.rel": {"section": 5, "region": (14416, 189368), "labe
 
 class BlockScript(Script):
     """A script that shares its section with other data (see BLOCK_SCRIPTS). Same attributes as Script.
-    Halfwords of the region that no instruction covers are the zero padding in front of a label."""
+    Halfwords of the region that no instruction covers are zero padding in front of a label (every label
+    is at a multiple of 4 and follows a return or a goto); kind "dead" = other data nothing reaches."""
 
     def __init__(self, rel, spec):
         self.rel, self.spec, self.sec = rel, spec, spec["section"]
@@ -330,7 +331,10 @@ class BlockScript(Script):
         self.op_count, self.errors = collections.Counter(), collections.Counter()
         self._parse()
         lo, hi = self.region[0] // 2, self.region[1] // 2
-        if any(self.hw[i] for i in range(lo, hi) if i not in self.kind):
+        for i in range(lo, hi):             # one return that nothing reaches (sct_main.rel +90684): kept as it is
+            if i not in self.kind and self.hw[i]:
+                self.kind[i] = "dead"
+        if sum(k == "dead" for k in self.kind.values()) > spec.get("dead", 1):
             self.errors["data between the instructions"] += 1
 
     def _length(self, i):

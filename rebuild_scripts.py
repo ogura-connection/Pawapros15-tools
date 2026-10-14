@@ -178,6 +178,50 @@ def emit_script(sc, repl, pad=0):
     return data, Remap(lo, hi, newidx, growth)
 
 
+class BlockRemap:
+    """Old section offset -> new one for a script laid out again inside its own space (S.BlockScript)."""
+    growth = 0
+
+    def __init__(self, lo, hi, newidx):
+        self.lo, self.hi, self.newidx = lo, hi, newidx
+
+    def __call__(self, off):
+        if not self.lo <= off < self.hi:
+            return off
+        if off % 2 or off // 2 not in self.newidx:
+            raise ValueError("reference into the middle of a text run or instruction: 0x%X" % off)
+        return self.newidx[off // 2] * 2
+
+
+def emit_block(sc, repl):
+    """Lay a block script out again in the bytes it has: the zero padding in front of the labels is given
+    up (the Success scripts run without that alignment since their first rebuild) and collected at the end.
+    Returns (bytes of the region, BlockRemap); stops if the English needs more than the padding gives."""
+    hw = sc.hw
+    lo, hi = sc.region[0] // 2, sc.region[1] // 2
+    out, newidx, i = [], {}, lo
+    while i < hi:
+        k = sc.kind.get(i)
+        if k is None:
+            i += 1
+            continue
+        if k == "op":
+            newidx[i] = lo + len(out)
+        out.append(hw[i])
+        if i in sc.texts:
+            _, _, j = sc.texts[i]
+            out += S.pack_text(repl[i]) if i in repl else hw[i + 1:j]
+            i = j
+        else:
+            i += 1
+    room = hi - lo - len(out)
+    if room < 0:
+        sys.exit("%s: the script is %d bytes too long for its place (%d bytes); shorten some lines."
+                 % (sc.rel.name, -room * 2, (hi - lo) * 2))
+    out += [0] * room
+    return struct.pack(">%dH" % len(out), *out), BlockRemap(lo * 2, hi * 2, newidx), room * 2
+
+
 # ── Memory plan (moduleID2addr.o) ─────────────────────────────────────────
 
 def plan_tables(d):
@@ -517,10 +561,11 @@ def rebuild_module(rel, sec, new_sec, remaps):
     return bytes(head) + b"".join(table) + b"".join(streams) + tail
 
 
-def patch_addends(rel, remaps):
-    """Other modules: addends that point into a rebuilt section, patched in place."""
-    d, n = bytearray(rel.data), 0
-    for mod, _, entries, _ in parse_imports(rel.data, rel.imp_off, rel.imp_size):
+def patch_addends(rel, remaps, image=None):
+    """Other modules: addends that point into a rebuilt section, patched in place.
+    image = the module as built so far, when its relocation tables have not moved."""
+    d, n = bytearray(image if image is not None else rel.data), 0
+    for mod, _, entries, _ in parse_imports(bytes(d), rel.imp_off, rel.imp_size):
         for sec, pos, typ, tsec, addend, off in entries:
             if (mod, tsec) in remaps:
                 new = remaps[(mod, tsec)](addend)
@@ -552,7 +597,7 @@ def load_translation(path, scripts):
         for kind, _ in pair_font.text_segments(e["en"]):
             line = 0 if kind == "newline" else line + 1
             cells = max(cells, line)
-        limit = POPUP_CELLS if sc.texts[i][0] == POPUP_WINDOW else LINE_CELLS
+        limit = sc.spec["line"] if hasattr(sc, "spec") else POPUP_CELLS if sc.texts[i][0] == POPUP_WINDOW else LINE_CELLS
         if cells > limit:
             print("warning: %s +0x%X is %d cells wide, the line holds %d (%d letters): %r"
                   % (e["file"], e["section_offset"], cells, limit, limit * 2, e["en"]))
@@ -589,6 +634,8 @@ def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None):
                 elif kind == "char":
                     usage[char_to_glyph(value)] += 1
     for sc in scripts:              # the string tables of the script modules that stay Japanese
+        if hasattr(sc, "spec"):     # a block script's module is counted with the other modules, below
+            continue
         idx = sorted(sc.kind)
         done = (strings or {}).get(sc.rel.name, {})
         for st in ui_strings.find(sc.rel, (sc.sec, idx[0] * 2, (idx[-1] + 1) * 2)):
@@ -598,7 +645,8 @@ def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None):
         new = texts.get(sc.rel.name, {})
         for i, (_, units, _) in sc.texts.items():
             if i not in new:
-                usage.update(units)
+                if not hasattr(sc, "spec"):
+                    usage.update(units)
                 continue
             for kind, value in pair_font.text_segments(new[i]):
                 if kind == "pair" and value != "  ":
@@ -694,11 +742,25 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     for sc in scripts:
         if sc.errors or len(sc.hw) * 2 != sc.rel.sections[sc.sec]["size"]:
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
-    slots = assign_pairs(scripts, texts, orig, strings, dol, messages)
+    blocks = S.load_block_scripts(orig)         # scripts of the other modes: laid out again in place
+    for sc in blocks:
+        if sc.errors:
+            sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
+    slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages)
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
     remaps, new_secs = {}, {}
+    inplace, block_data = {}, {}
+    for sc in blocks:
+        r = repl.get(sc.rel.name, {})
+        if not r:
+            continue
+        data, remap, room = emit_block(sc, r)
+        inplace[(sc.rel.mod_id, sc.sec)] = remap
+        block_data[sc.rel.mod_id] = (sc.sec, sc.region[0], data)
+        print("%-13s %5d runs replaced, script laid out again in its 0x%X bytes (%d bytes left)"
+              % (sc.rel.name, len(r), len(data), room))
     for sc in scripts:
         r = repl.get(sc.rel.name, {})
         p = (pad or {}).get(sc.rel.name, 0)
@@ -780,6 +842,23 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 patched[m.mod_id][(sec, off)] = data
             image = bytes(image)
             note += ", %d messages" % len(messages[m.name])
+        if inplace and m.name != "fonttex2.rel":                 # a block script laid out again: bytes and pointers
+            if m.mod_id in new_secs:
+                image, n = bytes(image), sum((mod, e[3]) in inplace for mod, _, entries, _ in
+                                             parse_imports(m.data, m.imp_off, m.imp_size) for e in entries)
+                if n or m.mod_id in block_data:
+                    sys.exit("%s: a rebuilt module that also points at a block script is not supported" % m.name)
+            else:
+                if m.mod_id in block_data:
+                    sec, off, data = block_data[m.mod_id]
+                    pos = m.sections[sec]["offset"] + off
+                    if any(s == sec and off <= o < off + len(data) for s, o in strings.get(m.name, ())):
+                        sys.exit("%s: a UI string is translated inside the script" % m.name)
+                    image = image[:pos] + data + image[pos + len(data):]
+                    patched.setdefault(m.mod_id, {})[(sec, off)] = data
+                image, n = patch_addends(m, inplace, bytes(image))
+                if n:
+                    note += ", %d pointers into a script laid out again" % n
         if image != m.data:
             with open(os.path.join(BUILD_DIR, m.name), "wb") as f:
                 f.write(image)
@@ -792,13 +871,13 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    new = verify(orig, scripts, repl, remaps, patched, moved)
+    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks)
     if dol:
         verify_dol(orig, new, dol, slots)
     return changed
 
 
-def verify(orig, old_scripts, repl, remaps, patched=None, moved=None):
+def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=()):
     """Re-read the built files and compare them with the originals, structure by structure.
     Returns the modules as re-read (for verify_dol). moved = the relocations whose addend the build
     changed on purpose (pointers to strings that were laid out again): {(module, section, position): addend}."""
@@ -810,10 +889,11 @@ def verify(orig, old_scripts, repl, remaps, patched=None, moved=None):
             if sec == idx:
                 d[off:off + len(data)] = data
         return bytes(d)
-    new_scripts = load_scripts(new, remaps)
-    for old, sc in zip(old_scripts, new_scripts):
+    inplace = inplace or {}
+    new_scripts = load_scripts(new, remaps) + S.load_block_scripts(new)
+    for old, sc in zip(list(old_scripts) + list(blocks), new_scripts):
         name = old.rel.name
-        remap = remaps.get((old.rel.mod_id, old.sec), lambda off: off)
+        remap = remaps.get((old.rel.mod_id, old.sec)) or inplace.get((old.rel.mod_id, old.sec), lambda off: off)
         assert not sc.errors, (name, sc.errors)
         # same instructions at the mapped positions, same labels, same text except replacements
         assert {remap(i * 2) // 2 for i, k in old.kind.items() if k == "op"} == \
@@ -831,6 +911,7 @@ def verify(orig, old_scripts, repl, remaps, patched=None, moved=None):
         for (s, pos, typ, tm, ts, ad), (s2, pos2, typ2, tm2, ts2, ad2) in zip(a, b):
             pos = remaps[(mid, s)](pos) if (mid, s) in remaps else pos
             ad = remaps[(tm, ts)](ad) if (tm, ts) in remaps else ad
+            ad = inplace[(tm, ts)](ad) if (tm, ts) in inplace else ad
             ad = (moved or {}).get((mid, s, pos), ad)
             assert (s, pos, typ, tm, ts, ad) == (s2, pos2, typ2, tm2, ts2, ad2), \
                 "%s: relocation sec%d+0x%X" % (m.name, s, pos)
@@ -914,7 +995,8 @@ def cmd_check(args):
 
 
 def cmd_build(args):
-    scripts = load_scripts(load_dir(ORIG_DIR))
+    orig = load_dir(ORIG_DIR)
+    scripts = load_scripts(orig) + S.load_block_scripts(orig)
     texts = load_translation(args.json, scripts)
     pad = {}
     for item in args.pad or []:
