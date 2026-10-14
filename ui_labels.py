@@ -13,7 +13,8 @@
 "font", "ramp": palette index for ink 0 (the plate) to 6}.
 With "copy": [page, x0, y0, x1, y1] (the same plate with nothing on it, taken from the original file) and
 "style" (a ui_type style) the plate is copied into the rectangle and the styled word is centred on it
-("dx", "dy" move it). A "copy" narrower than the rectangle is repeated across it (a strip of plain plate).
+("dx", "dy" move it). A "copy" narrower than the rectangle is repeated across it (a strip of plain plate);
+"copy": "clear" empties the rectangle (lettering with nothing behind it).
 A label of a group without "text" keeps its Japanese art. A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
 A spec is a JSON file:
   {"arc": "scs_main.arc",
@@ -383,8 +384,11 @@ def render(spec, d, banks, project=None):
         x0, y0, x1, y1 = lab["rect"]
         ink, base = ui_type.typeset(lab["text"], lab["font"], project)
         if "copy" in lab:                           # a plate with nothing on it, from the original file
-            cp, cx0, cy0, cx1, cy1 = lab["copy"]
-            src = U.decode_indices(d, *b["pages"][cp])[cy0:cy1, cx0:cx1]
+            if lab["copy"] == "clear":              # lettering with nothing behind it: cleared
+                src = np.zeros((y1 - y0, x1 - x0), np.uint8)
+            else:
+                cp, cx0, cy0, cx1, cy1 = lab["copy"]
+                src = U.decode_indices(d, *b["pages"][cp])[cy0:cy1, cx0:cx1]
             if src.shape[1] != x1 - x0:             # a narrower strip of plain plate is repeated across
                 src = src[:, np.arange(x1 - x0) % src.shape[1]]
             pages[key][y0:y1, x0:x1] = src

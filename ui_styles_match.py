@@ -1,7 +1,17 @@
 """Label styles of the match screens: umpire's calls, pause menu, pitch chart, player panel, substitution screen
 (see ui_type.py: RENDER takes STYLES from every ui_styles_*.py). Specs: ui_specs/gameplay.json, main_prg.json,
 time.json, written by _work/ui_pages/gen_match_spec.py."""
+import numpy as np
 from ui_type import banded, called, tight
+
+
+def turned(style):
+    """A style turned a quarter clockwise: vertical lettering that reads from top to bottom."""
+    def t(ink, base):
+        art, _ = style(ink, base)
+        return np.ascontiguousarray(np.rot90(art, -1)), 0
+    return t
+
 
 STYLES = {
     # the umpire's calls of a match (gameplay.arc h3_stf_0), one per palette of the bank
@@ -26,4 +36,6 @@ STYLES = {
     "tim_bar": tight(banded([0, 6, 4, 1, 1, 1, 1], [15], 12)),
     # 今日の成績 between « » (pal 8): deep blue letters in a white halo of two pixels, a blue shadow
     "tim_halo": tight(banded([0, 5, 3, 1, 1, 1, 1], [8, 8], 15)),
+    # 攻撃中 standing between two red bars (pal 9): red letters in a white halo, blue shadow, turned
+    "tim_vert": turned(tight(banded([0, 5, 3, 1, 1, 1, 1], [8, 8], 15))),
 }
