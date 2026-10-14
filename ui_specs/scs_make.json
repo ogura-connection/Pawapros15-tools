@@ -798,6 +798,124 @@
      "baseline": 31
     }
    ]
+  },
+  {
+   "bank": "y5_nan_0",
+   "palette": 30,
+   "style": "makehead",
+   "font": "ttf:rounded:14:0:0.9:0.5",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     48,
+     96
+    ],
+    [
+     5,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Choose the",
+     "style": "makehead",
+     "font": "ttf:rounded:14:0:0.9:0.5",
+     "left": 42,
+     "baseline": 25
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "difficulty",
+     "style": "makehead",
+     "font": "ttf:rounded:14:0:0.9:0.5",
+     "left": 14,
+     "baseline": 25
+    },
+    {
+     "from": [
+      5,
+      112,
+      64,
+      120,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      128,
+      96
+     ],
+     "text": "Normal",
+     "style": "nannormal",
+     "font": "ttf:rounded:24:0:0.9:0.6",
+     "left": 33,
+     "baseline": 41
+    },
+    {
+     "from": [
+      5,
+      0,
+      48,
+      48,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      48
+     ],
+     "text": "Rookie",
+     "style": "nanrookie",
+     "font": "ttf:rounded:24:0:0.9:0.6",
+     "left": 36,
+     "baseline": 41
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      48,
+      48
+     ],
+     "empty": true
+    }
+   ]
   }
  ]
 }
