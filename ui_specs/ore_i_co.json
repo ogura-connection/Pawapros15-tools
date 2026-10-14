@@ -124,8 +124,8 @@
      ],
      "text": ": Turn View",
      "style": "btn_view",
-     "font": "ttf:din:11:0:1:0",
-     "left": -17,
+     "font": "ttf:din:12:0:1:0",
+     "left": -20,
      "baseline": 19
     },
     {
@@ -151,9 +151,9 @@
       120
      ],
      "text": ": Switch View",
-     "style": "btn_grey",
-     "font": "ttf:din:10:0:1:0",
-     "left": -11,
+     "style": "btn_grey1",
+     "font": "ttf:din:11:0:1:0",
+     "left": -13,
      "baseline": 17
     },
     {
@@ -166,8 +166,8 @@
      ],
      "text": ": Sort",
      "style": "btn_grey",
-     "font": "ttf:din:11:0:1:0",
-     "left": -7,
+     "font": "ttf:din:12:0:1:0",
+     "left": -10,
      "baseline": 17
     },
     {
@@ -180,30 +180,9 @@
      ],
      "text": ": Show Info",
      "style": "btn_blue",
-     "font": "ttf:din:11:0:1:0",
-     "left": -7,
-     "baseline": 18,
-     "sprites": [
-      "12"
-     ]
-    },
-    {
-     "from": [
-      2,
-      0,
-      0,
-      80,
-      24
-     ],
-     "text": ": Show Info",
-     "style": "btn_blue",
-     "font": "ttf:din:11:0:1:0",
-     "left": -6,
-     "baseline": 18,
-     "sprites": [
-      "13",
-      "14"
-     ]
+     "font": "ttf:din:12:0:1:0",
+     "left": -9,
+     "baseline": 18
     },
     {
      "from": [
@@ -225,30 +204,9 @@
      ],
      "text": ": Hide Info",
      "style": "btn_red",
-     "font": "ttf:din:11:0:1:0",
-     "left": -31,
-     "baseline": 18,
-     "sprites": [
-      "15"
-     ]
-    },
-    {
-     "from": [
-      0,
-      40,
-      96,
-      128,
-      120
-     ],
-     "text": ": Hide Info",
-     "style": "btn_red",
-     "font": "ttf:din:11:0:1:0",
-     "left": -30,
-     "baseline": 18,
-     "sprites": [
-      "16",
-      "17"
-     ]
+     "font": "ttf:din:12:0:1:0",
+     "left": -33,
+     "baseline": 18
     },
     {
      "from": [
@@ -260,63 +218,9 @@
      ],
      "text": ": Switch",
      "style": "btn_grey2",
-     "font": "ttf:din:11:0:1:0",
-     "left": -7,
-     "baseline": 17,
-     "sprites": [
-      "18"
-     ]
-    },
-    {
-     "from": [
-      2,
-      0,
-      72,
-      80,
-      96
-     ],
-     "text": ": Switch",
-     "style": "btn_grey2",
-     "font": "ttf:din:11:0:1:0",
-     "left": -8,
-     "baseline": 17,
-     "sprites": [
-      "19"
-     ]
-    },
-    {
-     "from": [
-      2,
-      0,
-      72,
-      80,
-      96
-     ],
-     "text": ": Switch",
-     "style": "btn_grey2",
-     "font": "ttf:din:11:0:1:0",
-     "left": -9,
-     "baseline": 17,
-     "sprites": [
-      "1a"
-     ]
-    },
-    {
-     "from": [
-      2,
-      80,
-      96,
-      128,
-      120
-     ],
-     "text": ": Switch",
-     "style": "btn_redlet",
-     "font": "ttf:din:11:0:1:0",
+     "font": "ttf:din:12:0:1:0",
      "left": -10,
-     "baseline": 17,
-     "sprites": [
-      "1c"
-     ]
+     "baseline": 17
     },
     {
      "from": [
@@ -328,12 +232,9 @@
      ],
      "text": ": Switch",
      "style": "btn_redlet",
-     "font": "ttf:din:11:0:1:0",
-     "left": -11,
-     "baseline": 17,
-     "sprites": [
-      "1d"
-     ]
+     "font": "ttf:din:12:0:1:0",
+     "left": -13,
+     "baseline": 17
     },
     {
      "from": [
@@ -345,7 +246,7 @@
      ],
      "text": "SELECT: Switch",
      "style": "btn_redlet",
-     "font": "ttf:din:11:0:1:0",
+     "font": "ttf:din:12:0:1:0",
      "left": -2,
      "baseline": 17
     }
@@ -378,9 +279,93 @@
    "bank": "y4_btn",
    "page": 0,
    "rect": [
+    111,
+    0,
+    112,
+    5
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 0,
+   "rect": [
+    111,
+    21,
+    112,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 0,
+   "rect": [
     48,
     0,
     64,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 0,
+   "rect": [
+    47,
+    0,
+    48,
+    5
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 0,
+   "rect": [
+    47,
+    22,
+    48,
     24
    ],
    "text": ".",
@@ -420,9 +405,93 @@
    "bank": "y4_btn",
    "page": 1,
    "rect": [
+    47,
+    48,
+    48,
+    52
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    47,
+    69,
+    48,
+    72
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
     120,
     0,
     128,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    119,
+    0,
+    120,
+    8
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    119,
+    16,
+    120,
     24
    ],
    "text": ".",
@@ -462,9 +531,93 @@
    "bank": "y4_btn",
    "page": 1,
    "rect": [
+    119,
+    24,
+    120,
+    28
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    119,
+    45,
+    120,
+    48
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
     68,
     72,
     72,
+    96
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    67,
+    72,
+    68,
+    75
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    67,
+    94,
+    68,
     96
    ],
    "text": ".",
@@ -504,9 +657,93 @@
    "bank": "y4_btn",
    "page": 2,
    "rect": [
+    99,
+    0,
+    100,
+    7
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    99,
+    15,
+    100,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
     124,
     0,
     128,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    123,
+    0,
+    124,
+    3
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    123,
+    21,
+    124,
     24
    ],
    "text": ".",
@@ -546,9 +783,93 @@
    "bank": "y4_btn",
    "page": 2,
    "rect": [
+    65,
+    24,
+    66,
+    27
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    65,
+    45,
+    66,
+    48
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
     99,
     24,
     104,
+    48
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    98,
+    24,
+    99,
+    32
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    98,
+    41,
+    99,
     48
    ],
    "text": ".",
@@ -588,9 +909,93 @@
    "bank": "y4_btn",
    "page": 2,
    "rect": [
+    122,
+    24,
+    123,
+    28
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    122,
+    44,
+    123,
+    48
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
     76,
     48,
     80,
+    72
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    75,
+    48,
+    76,
+    50
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    75,
+    70,
+    76,
     72
    ],
    "text": ".",
@@ -630,9 +1035,93 @@
    "bank": "y4_btn",
    "page": 2,
    "rect": [
+    121,
+    48,
+    122,
+    56
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    121,
+    65,
+    122,
+    72
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
     97,
     48,
     104,
+    72
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    96,
+    48,
+    97,
+    52
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    96,
+    71,
+    97,
     72
    ],
    "text": ".",
@@ -672,9 +1161,93 @@
    "bank": "y4_btn",
    "page": 1,
    "rect": [
+    120,
+    72,
+    121,
+    76
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    120,
+    88,
+    121,
+    96
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
     119,
     96,
     128,
+    120
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    118,
+    96,
+    119,
+    99
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    118,
+    118,
+    119,
     120
    ],
    "text": ".",

@@ -39,6 +39,7 @@ STYLES = {
     "btn_type": banded([0, 14, 15, 15, 15, 15, 15], [6, 6, 6, 1]),
     # palette 1: dark grey letters, white ring, pale blue shadow
     "btn_grey": shaded([0, 9, 12, 14, 15, 15, 15], [6, 6], 3, 3),
+    "btn_grey1": shaded([0, 9, 12, 14, 15, 15, 15], [6], 3, 2),
     # palette 4: the same with the darker blue shadow
     "btn_grey2": shaded([0, 9, 12, 14, 15, 15, 15], [6, 6], 2, 3),
     # palette 3: white letters, strong blue band, pale outer edge
