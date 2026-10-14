@@ -333,7 +333,19 @@
 "style": "ren_f15_r88",
 "font": "dc11g2b10",
 "valign": "centre",
-"layers": 2
+"palettes": [
+43
+]
+},
+{
+"sprite": "0a",
+"text": "Pitching Coach",
+"style": "ren_f15_r88",
+"font": "dc11g2b10",
+"valign": "centre",
+"palettes": [
+85
+]
 },
 {
 "sprite": "0b",
@@ -341,23 +353,59 @@
 "style": "ren_f15_r88",
 "font": "dc13g2b10",
 "valign": "centre",
-"layers": 2
+"palettes": [
+44
+]
+},
+{
+"sprite": "0b",
+"text": "Batting Coach",
+"style": "ren_f15_r88",
+"font": "dc13g2b10",
+"valign": "centre",
+"palettes": [
+85
+]
 },
 {
 "sprite": "0c",
 "text": "Def/Run\nCoach",
 "style": "ren_f15_r88",
-"font": "dc14g2b10",
+"font": "dc13g2b10",
 "valign": "centre",
-"layers": 2
+"palettes": [
+45
+]
+},
+{
+"sprite": "0c",
+"text": "Def/Run\nCoach",
+"style": "ren_f15_r88",
+"font": "dc13g2b10",
+"valign": "centre",
+"palettes": [
+85
+]
 },
 {
 "sprite": "0d",
 "text": "Temp Coach",
 "style": "ren_f15_r88",
-"font": "dc14g2b10",
+"font": "dc13g2b10",
 "valign": "centre",
-"layers": 2
+"palettes": [
+46
+]
+},
+{
+"sprite": "0d",
+"text": "Temp Coach",
+"style": "ren_f15_r88",
+"font": "dc13g2b10",
+"valign": "centre",
+"palettes": [
+85
+]
 },
 {
 "from": [
@@ -385,7 +433,7 @@
 "13"
 ],
 "text": "Velocity",
-"style": "ren_f7_r7",
+"style": "ren_f15_r77",
 "font": "dc16g2b10",
 "left": 13,
 "baseline": 25
@@ -604,7 +652,7 @@
 "19"
 ],
 "text": "Running",
-"style": "ren_f7_r3",
+"style": "ren_f15_r73",
 "font": "dc16g2b10",
 "left": 15,
 "baseline": 25
@@ -647,7 +695,7 @@
 "1a"
 ],
 "text": "Fielding",
-"style": "ren_f7_r3",
+"style": "ren_f15_r73",
 "font": "dc16g2b10",
 "left": 15,
 "baseline": 25
@@ -711,9 +759,9 @@
 "1e"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -1,
+"left": -5,
 "baseline": 25
 },
 {
@@ -728,9 +776,9 @@
 "1e"
 ],
 "text": "Breaking",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 32,
+"left": 28,
 "baseline": 25
 },
 {
@@ -758,9 +806,9 @@
 "1f"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 31,
+"left": 27,
 "baseline": 25
 },
 {
@@ -775,9 +823,9 @@
 "1f"
 ],
 "text": "Control",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 66,
+"left": 62,
 "baseline": 25
 },
 {
@@ -805,9 +853,9 @@
 "20"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -8,
+"left": -12,
 "baseline": 25
 },
 {
@@ -822,9 +870,9 @@
 "20"
 ],
 "text": "Velocity",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 27,
+"left": 23,
 "baseline": 25
 },
 {
@@ -852,9 +900,9 @@
 "21"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -7,
+"left": -11,
 "baseline": 25
 },
 {
@@ -869,9 +917,9 @@
 "21"
 ],
 "text": "Pitching",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 18,
+"left": 14,
 "baseline": 25
 },
 {
@@ -899,9 +947,9 @@
 "22"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 12,
+"left": 8,
 "baseline": 25
 },
 {
@@ -916,9 +964,9 @@
 "22"
 ],
 "text": "Stamina",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 51,
+"left": 47,
 "baseline": 25
 },
 {
@@ -946,9 +994,9 @@
 "23"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 9,
+"left": 5,
 "baseline": 25
 },
 {
@@ -963,9 +1011,9 @@
 "23"
 ],
 "text": "Power",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 42,
+"left": 38,
 "baseline": 25
 },
 {
@@ -993,9 +1041,9 @@
 "24"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -4,
+"left": -8,
 "baseline": 25
 },
 {
@@ -1010,9 +1058,9 @@
 "24"
 ],
 "text": "Batting",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 31,
+"left": 27,
 "baseline": 25
 },
 {
@@ -1040,9 +1088,9 @@
 "25"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 3,
+"left": -1,
 "baseline": 25
 },
 {
@@ -1057,9 +1105,9 @@
 "25"
 ],
 "text": "Contact",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 36,
+"left": 32,
 "baseline": 25
 },
 {
@@ -1087,9 +1135,9 @@
 "26"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -20,
+"left": -24,
 "baseline": 25
 },
 {
@@ -1104,9 +1152,9 @@
 "26"
 ],
 "text": "All-Around",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 15,
+"left": 11,
 "baseline": 25
 },
 {
@@ -1134,9 +1182,9 @@
 "27"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -6,
+"left": -10,
 "baseline": 25
 },
 {
@@ -1151,9 +1199,9 @@
 "27"
 ],
 "text": "Fielding",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 29,
+"left": 25,
 "baseline": 25
 },
 {
@@ -1181,9 +1229,9 @@
 "28"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -6,
+"left": -10,
 "baseline": 25
 },
 {
@@ -1198,9 +1246,9 @@
 "28"
 ],
 "text": "Running",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 29,
+"left": 25,
 "baseline": 25
 },
 {
@@ -1228,9 +1276,9 @@
 "29"
 ],
 "text": "Special Arm",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -15,
+"left": -19,
 "baseline": 25
 },
 {
@@ -1245,9 +1293,9 @@
 "29"
 ],
 "text": "Work",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 58,
+"left": 54,
 "baseline": 25
 },
 {
@@ -1275,9 +1323,9 @@
 "2a"
 ],
 "text": "Special",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": -29,
+"left": -33,
 "baseline": 25
 },
 {
@@ -1292,9 +1340,9 @@
 "2a"
 ],
 "text": "Coaching",
-"style": "ren_f1_r1",
+"style": "ren_f14_r11511",
 "font": "dc16g2b10",
-"left": 3,
+"left": -1,
 "baseline": 25
 },
 {
@@ -1359,28 +1407,28 @@
 {
 "sprite": "4b",
 "text": "Earn My Spirit",
-"style": "ren_f2_r2",
-"font": "dc11g2b10",
+"style": "ren_f11_r22222",
+"font": "dc10g1b10",
 "valign": "centre"
 },
 {
 "sprite": "56",
 "text": "Until Vessel",
-"style": "ren_f2_r2",
+"style": "ren_f11_r22222",
 "font": "dc14g2b10",
 "valign": "centre"
 },
 {
 "sprite": "57",
 "text": "Only",
-"style": "ren_f2_r2",
-"font": "dc13g2b10",
+"style": "ren_f12_r2222",
+"font": "dc10g1b10",
 "valign": "centre"
 },
 {
 "sprite": "58",
 "text": "more",
-"style": "ren_f2_r4",
+"style": "ren_f11_r28224",
 "font": "dc9g1b10",
 "valign": "centre",
 "align": "left"
@@ -1398,9 +1446,9 @@
 ],
 "text": "Adjusts to keep",
 "style": "ren_f7_rff",
-"font": "dc14g2b10",
+"font": "dc11g2b10",
 "left": 2,
-"baseline": 25
+"baseline": 23
 },
 {
 "from": [
@@ -1415,9 +1463,9 @@
 ],
 "text": "your",
 "style": "ren_f7_rff",
-"font": "dc14g2b10",
-"left": -5,
-"baseline": 25
+"font": "dc11g2b10",
+"left": -25,
+"baseline": 23
 },
 {
 "from": [
@@ -1483,9 +1531,9 @@
 ],
 "text": "current form.",
 "style": "ren_f7_r66f",
-"font": "dc14g2b10",
+"font": "dc11g2b10",
 "left": 2,
-"baseline": 24
+"baseline": 23
 },
 {
 "from": [
@@ -1500,9 +1548,9 @@
 ],
 "text": "Skip practice and",
 "style": "ren_f7_r6f",
-"font": "dc12g2b10",
+"font": "dc11g2b10",
 "left": 4,
-"baseline": 23
+"baseline": 22
 },
 {
 "from": [
@@ -1517,9 +1565,9 @@
 ],
 "text": "rest",
 "style": "ren_f7_r6f",
-"font": "dc12g2b10",
-"left": 0,
-"baseline": 23
+"font": "dc11g2b10",
+"left": -9,
+"baseline": 22
 },
 {
 "from": [
@@ -1534,9 +1582,9 @@
 ],
 "text": "to ease fatigue.",
 "style": "ren_f7_r6f",
-"font": "dc14g2b10",
+"font": "dc11g2b10",
 "left": 4,
-"baseline": 24
+"baseline": 22
 }
 ]
 },
