@@ -1367,11 +1367,11 @@
 "sprites": [
 "34"
 ],
-"text": "Adjusts to keep your",
+"text": "Keeps your form",
 "style": "ren_f7_rff",
-"font": "dc10g1b10",
+"font": "dc13g2b10",
 "left": 2,
-"baseline": 23
+"baseline": 41
 },
 {
 "from": [
@@ -1384,11 +1384,11 @@
 "sprites": [
 "34"
 ],
-"text": "current",
+"text": "steady.",
 "style": "ren_f7_rff",
-"font": "dc10g1b10",
-"left": -19,
-"baseline": 23
+"font": "dc13g2b10",
+"left": -5,
+"baseline": 41
 },
 {
 "from": [
@@ -1398,14 +1398,10 @@
 112,
 64
 ],
+"empty": true,
 "sprites": [
 "34"
-],
-"text": "form steady.",
-"style": "ren_f7_r66f",
-"font": "dc12g2b10",
-"left": 2,
-"baseline": 23
+]
 },
 {
 "from": [
@@ -1418,11 +1414,11 @@
 "sprites": [
 "35"
 ],
-"text": "Adjusts to improve",
+"text": "Works to raise your",
 "style": "ren_f7_rff",
 "font": "dc11g2b10",
 "left": 2,
-"baseline": 23
+"baseline": 39
 },
 {
 "from": [
@@ -1435,11 +1431,11 @@
 "sprites": [
 "35"
 ],
-"text": "your",
+"text": "form.",
 "style": "ren_f7_rff",
 "font": "dc11g2b10",
-"left": 38,
-"baseline": 23
+"left": 40,
+"baseline": 39
 },
 {
 "from": [
@@ -1449,14 +1445,10 @@
 112,
 64
 ],
+"empty": true,
 "sprites": [
 "35"
-],
-"text": "current form.",
-"style": "ren_f7_r66f",
-"font": "dc12g2b10",
-"left": 2,
-"baseline": 23
+]
 },
 {
 "from": [
@@ -1469,11 +1461,11 @@
 "sprites": [
 "36"
 ],
-"text": "Skip practice and",
+"text": "Rest to ease",
 "style": "ren_f7_r6f",
-"font": "dc12g2b10",
+"font": "dc13g2b10",
 "left": 4,
-"baseline": 23
+"baseline": 40
 },
 {
 "from": [
@@ -1486,11 +1478,11 @@
 "sprites": [
 "36"
 ],
-"text": "rest",
+"text": "fatigue.",
 "style": "ren_f7_r6f",
-"font": "dc12g2b10",
-"left": 0,
-"baseline": 23
+"font": "dc13g2b10",
+"left": -35,
+"baseline": 40
 },
 {
 "from": [
@@ -1500,14 +1492,10 @@
 120,
 64
 ],
+"empty": true,
 "sprites": [
 "36"
-],
-"text": "to ease fatigue.",
-"style": "ren_f7_r6f",
-"font": "dc12g2b10",
-"left": 4,
-"baseline": 23
+]
 }
 ]
 },
