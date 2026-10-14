@@ -645,17 +645,19 @@ def boxed(ramp, pad=(3, 4), size=(0, 0), rim=None):
     return style
 
 
-def logo(fill, soft, outline, white, rim, shadow, band=2):
+def logo(fill, soft, outline, white, rim, shadow, band=2, thick=1):
     """A style: the shop titles. Letters filled from `fill`[0] at the top to `fill`[-1] at the foot (`soft` =
-    the colours between outline and fill), a one-pixel `outline`, a white band `band` pixels wide with a
-    one-pixel `rim`, and a `shadow` (near to far) cast below and to the right of the whole."""
+    the colours between outline and fill), an `outline` `thick` pixels wide, a white band `band` pixels wide
+    with a one-pixel `rim`, and a `shadow` (near to far) cast below and to the right of the whole."""
     def style(ink, base):
-        pad = band + 2 + len(shadow)
+        pad = band + 1 + thick + len(shadow)
         h, w = ink.shape
         big = np.zeros((h + 2 * pad, w + 2 * pad), int)
         big[pad:pad + h, pad:pad + w] = ink
         letters = big > 0
         dark = grow(letters, 1)
+        for _ in range(thick - 1):
+            dark = grow(dark, 1, diagonal=False)
         plate = grow(grow(dark, band - 1), 1, diagonal=False) if band > 1 else grow(dark, 1, diagonal=False)
         edge = grow(plate, 1, diagonal=False)
         out = np.zeros(big.shape, np.uint8)
@@ -815,6 +817,18 @@ RENDER = {
     "money": outlined([0, 12, 10, 8, 5, 3, 2], 15, 15),
     # blue letters, white outline: やる気 (palette 50; the game draws a shadow copy with palette 30)
     "motivation": outlined([0, 12, 10, 8, 5, 2, 1], 15, 15),
+    # the Success start screen (scs_titl.arc, y5_scs_tit_0). The three buttons: yellow letters in a thick brown
+    # outline (palette 17), pink in dark magenta (18), light green in dark green (19), each on a white band
+    # with a pale rim and a blue shadow
+    "titlestart": logo([6, 6, 6, 6, 7, 7], [2, 4, 7], 1, 13, 11, [9, 8], 2, 2),
+    "titleview": logo([12, 12, 12, 13, 14, 15], [4, 5, 6], 3, 10, 8, [2, 1], 2, 2),
+    "titlelink": logo([6, 6, 6, 6, 5, 5], [2, 3, 4], 1, 14, 12, [9, 8], 2, 2),
+    # New Game / Continue / the lists: white letters in a blue outline that is cast down and to the right (22)
+    "titleitem": captioned([4, 10, 11, 12, 13, 14, 15], 5, 3),
+    # the counts line: white letters in a navy ring (26)
+    "titlecount": banded([0, 5, 7, 9, 11, 13, 15], [1]),
+    # Cleared / Turned Pro: navy letters on a white band with a grey shadow (45)
+    "titleclear": banded([0, 12, 10, 9, 1, 2, 3], [15, 15], 5),
 }
 
 
