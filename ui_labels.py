@@ -15,6 +15,7 @@ With "copy": [page, x0, y0, x1, y1] (the same plate with nothing on it, taken fr
 "style" (a ui_type style) the plate is copied into the rectangle and the styled word is centred on it
 ("dx", "dy" move it). A "copy" narrower than the rectangle is repeated across it (a strip of plain plate);
 "copy": "clear" empties the rectangle (lettering with nothing behind it).
+"sheet" entries paint lettering into a picture cut over several pages (see ui_sheet.py).
 A label of a group without "text" keeps its Japanese art. A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
 A spec is a JSON file:
   {"arc": "scs_main.arc",
@@ -407,6 +408,9 @@ def render(spec, d, banks, project=None):
         area[ink > 0] = np.array(lab["ramp"], np.uint8)[ink[ink > 0]]
         render.repacked.append((lab["bank"], lab["text"], "painted", "%dx%d" % (w, h),
                                 "page %d x %d y %d" % (lab["page"], ox, oy), 0))
+    for entry in spec.get("sheet", ()):             # lettering painted across the pages of one picture
+        import ui_sheet
+        ui_sheet.paint(entry, d, banks, render.patches, project)
     for lab in spec.get("labels", ()):
         b = next(x for x in banks if x["name"] == lab["bank"])
         key = (lab["bank"], lab["page"])
