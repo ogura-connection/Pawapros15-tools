@@ -857,6 +857,8 @@ RENDER = {
     # letters in thick navy (2)
     "albumclear": banded([0, 9, 8, 6, 4, 2, 1], [10, 10, 12, 14, 15]),
     "albummovie": banded([0, 6, 8, 10, 12, 14, 15], [3, 3, 3]),
+    # the scenario's team name on the start screen (y5_sge_0, palette 4): white letters in two blue rings
+    "titleteam": banded([0, 10, 11, 12, 13, 14, 15], [4, 5]),
     # the profile screens (scs_make.arc, y5_cmk_0): headings, cream shading from orange in a thick blue outline
     # with a lilac rim (palette 30); the lists, dark grey letters with a pale shadow (26)
     "makehead": logo([9, 9, 10, 11, 12], [5], 1, 1, 14, [], 1, 2),

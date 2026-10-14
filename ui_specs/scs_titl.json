@@ -541,6 +541,107 @@
      "valign": "centre"
     }
    ]
+  },
+  {
+   "bank": "y5_sge_0",
+   "palette": 4,
+   "style": "titleteam",
+   "font": "ttf:rounded:11:0:0.85:0.5",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     16,
+     128,
+     112
+    ],
+    [
+     0,
+     0,
+     112,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      80,
+      128,
+      112
+     ],
+     "text": "Pawafuru Corp.",
+     "left": 2,
+     "baseline": 26
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      128,
+      80
+     ],
+     "text": "Kagurazaka Group",
+     "left": 2,
+     "baseline": 26
+    },
+    {
+     "from": [
+      0,
+      0,
+      16,
+      128,
+      48
+     ],
+     "text": "Otori Phoenix",
+     "left": 2,
+     "baseline": 26
+    },
+    {
+     "from": [
+      0,
+      0,
+      112,
+      16,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      16,
+      112,
+      32,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      32,
+      112,
+      48,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      48,
+      112,
+      64,
+      128
+     ],
+     "empty": true
+    }
+   ]
   }
  ]
 }
