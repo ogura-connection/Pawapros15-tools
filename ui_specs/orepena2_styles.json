@@ -58,6 +58,16 @@
   "shadow": 0,
   "cut": 1
  },
+ "o2_ff_r1_s0_c1": {
+  "fills": [
+   15
+  ],
+  "rings": [
+   1
+  ],
+  "shadow": 0,
+  "cut": 1
+ },
  "o2_f6bc_r11ff_s12_c2": {
   "fills": [
    6,
@@ -481,16 +491,6 @@
   "rings": [
    15,
    15
-  ],
-  "shadow": 0,
-  "cut": 1
- },
- "o2_ff_r1_s0_c1": {
-  "fills": [
-   15
-  ],
-  "rings": [
-   1
   ],
   "shadow": 0,
   "cut": 1
