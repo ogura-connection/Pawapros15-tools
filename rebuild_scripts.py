@@ -230,12 +230,13 @@ class OreRemap:
     annex_lo stands for the address `base`."""
     growth = 0
 
-    def __init__(self, lo, hi, newidx, annex_lo, base):
+    def __init__(self, lo, hi, newidx, annex_lo, base, islands=()):
         self.lo, self.hi, self.newidx, self.annex_lo, self.base = lo, hi, newidx, annex_lo, base
+        self.islands = islands
 
     def __call__(self, off):
-        if not self.lo <= off < self.hi:
-            return off
+        if not self.lo <= off < self.hi or any(a <= off < b for a, b in self.islands):
+            return off                          # other data, and the islands, stay where they are
         if off % 2 or off // 2 not in self.newidx:
             raise ValueError("reference into the middle of a text run or instruction: 0x%X" % off)
         return self.newidx[off // 2] * 2
@@ -305,7 +306,7 @@ def emit_ore(sc, repl, base):
     if annex:
         annex += [0] * (-(len(annex) + 4) % (SECTION_ALIGN // 2))
         blob = struct.pack(">2HI", *S.ORE_ANNEX_MAGIC, base - 8) + struct.pack(">%dH" % len(annex), *annex)
-    remap = OreRemap(sc.region[0], sc.region[1], newidx, sc.annex_at * 2, base)
+    remap = OreRemap(sc.region[0], sc.region[1], newidx, sc.annex_at * 2, base, sc.spec["islands"])
     return segs, blob, remap, (kept, room * 2)
 
 
@@ -323,7 +324,7 @@ def ore_relocations(m, image, sc, remap):
     stay, go = [], []
     for e in own[2]:
         sec, pos, typ, tsec, addend = e[:5]
-        if tsec == sc.sec and sc.region[0] <= addend < sc.region[1]:
+        if tsec == sc.sec and sc.region[0] <= addend < sc.region[1] and not sc.in_island(addend):
             if not (sec == sc.sec and typ == 1 and a <= pos < b):
                 raise ValueError("%s: sec%d+%d points into the script and is not a label" % (m.name, sec, pos))
             new = remap(addend)
@@ -1045,7 +1046,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             extra_images[m.name] = (m.data, image, None)
             note += ", script laid out again, %d labels in the annex" % n
         elif ore and any(mod == ore["sc"].rel.mod_id and e[3] == ore["sc"].sec
-                         and ore["sc"].region[0] <= e[4] < ore["sc"].region[1]
+                         and ore["sc"].region[0] <= e[4] < ore["sc"].region[1] and not ore["sc"].in_island(e[4])
                          for mod, _, entries, _ in parse_imports(m.data, m.imp_off, m.imp_size) for e in entries):
             sys.exit("%s points into the My Life script: not supported" % m.name)
         if image != m.data:
