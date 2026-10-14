@@ -21,7 +21,7 @@ STYLES = {
     "o3pm": uniform(dropped([0, 11, 12, 13, 14, 14, 14], [6, 4, 2]), 20),
     # y3_kine palette 18: white letters, a dark ring and a thin brown one, a one-pixel shadow
     "o3stadraw": banded([0, 10, 12, 14, 15, 15, 15], [3, 1], 2),
-    "o3stad": uniform(banded([0, 10, 12, 14, 15, 15, 15], [3, 1], 2), 22),
+    "o3stad": banded([0, 10, 12, 14, 15, 15, 15], [3, 1], 2),
     # y3_kine palette 16: the green sign of the trophy room: yellow letters in pale green, dark green and bright green rings
     "o3memo": banded([0, 12, 13, 14, 15, 15, 15], [9, 5, 4, 2], 0),
     # no art at all (a plate copied by a "paint" entry with "copy")

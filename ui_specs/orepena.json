@@ -9119,11 +9119,11 @@
      "sprites": [
       "46"
      ],
-     "text": "Monthly Growth",
+     "text": "Monthly",
      "style": "o2_f47b_rff_s0_c2",
-     "font": "ds18",
-     "left": 0,
-     "baseline": 32
+     "font": "ds20",
+     "left": -4,
+     "baseline": 33
     },
     {
      "from": [
@@ -9136,7 +9136,11 @@
      "sprites": [
       "46"
      ],
-     "empty": true
+     "text": "Growth",
+     "style": "o2_f47b_rff_s0_c2",
+     "font": "ds20",
+     "left": -37,
+     "baseline": 33
     },
     {
      "from": [
