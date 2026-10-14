@@ -18,415 +18,9 @@
     [
      9,
      88,
-     64,
+     0,
      128,
      104
-    ],
-    [
-     39,
-     0,
-     0,
-     128,
-     40
-    ],
-    [
-     39,
-     0,
-     40,
-     24,
-     80
-    ],
-    [
-     10,
-     56,
-     0,
-     128,
-     24
-    ],
-    [
-     10,
-     0,
-     40,
-     40,
-     64
-    ],
-    [
-     18,
-     32,
-     32,
-     128,
-     64
-    ],
-    [
-     18,
-     24,
-     0,
-     128,
-     32
-    ],
-    [
-     39,
-     24,
-     104,
-     128,
-     128
-    ],
-    [
-     40,
-     0,
-     0,
-     104,
-     8
-    ],
-    [
-     10,
-     56,
-     24,
-     120,
-     40
-    ],
-    [
-     10,
-     40,
-     40,
-     72,
-     56
-    ],
-    [
-     10,
-     120,
-     24,
-     128,
-     32
-    ],
-    [
-     28,
-     40,
-     0,
-     128,
-     24
-    ],
-    [
-     28,
-     0,
-     24,
-     16,
-     48
-    ],
-    [
-     28,
-     0,
-     48,
-     8,
-     56
-    ],
-    [
-     10,
-     0,
-     64,
-     128,
-     88
-    ],
-    [
-     10,
-     72,
-     40,
-     112,
-     64
-    ],
-    [
-     20,
-     0,
-     88,
-     128,
-     120
-    ],
-    [
-     20,
-     0,
-     120,
-     72,
-     128
-    ],
-    [
-     20,
-     72,
-     120,
-     128,
-     128
-    ],
-    [
-     20,
-     112,
-     64,
-     128,
-     88
-    ],
-    [
-     19,
-     0,
-     32,
-     56,
-     48
-    ],
-    [
-     29,
-     32,
-     64,
-     128,
-     96
-    ],
-    [
-     29,
-     0,
-     96,
-     104,
-     128
-    ],
-    [
-     28,
-     48,
-     24,
-     128,
-     56
-    ],
-    [
-     28,
-     48,
-     56,
-     88,
-     88
-    ],
-    [
-     28,
-     24,
-     32,
-     40,
-     48
-    ],
-    [
-     28,
-     88,
-     56,
-     128,
-     88
-    ],
-    [
-     30,
-     104,
-     96,
-     128,
-     128
-    ],
-    [
-     30,
-     104,
-     64,
-     128,
-     96
-    ],
-    [
-     30,
-     32,
-     96,
-     40,
-     112
-    ],
-    [
-     11,
-     32,
-     24,
-     112,
-     48
-    ],
-    [
-     11,
-     112,
-     24,
-     128,
-     48
-    ],
-    [
-     11,
-     0,
-     48,
-     64,
-     72
-    ],
-    [
-     18,
-     0,
-     40,
-     32,
-     64
-    ],
-    [
-     18,
-     0,
-     16,
-     24,
-     40
-    ],
-    [
-     20,
-     40,
-     32,
-     48,
-     56
-    ],
-    [
-     20,
-     0,
-     0,
-     128,
-     32
-    ],
-    [
-     20,
-     0,
-     32,
-     24,
-     64
-    ],
-    [
-     20,
-     24,
-     32,
-     40,
-     56
-    ],
-    [
-     27,
-     40,
-     32,
-     128,
-     64
-    ],
-    [
-     27,
-     0,
-     64,
-     56,
-     96
-    ],
-    [
-     27,
-     80,
-     64,
-     128,
-     96
-    ],
-    [
-     27,
-     56,
-     72,
-     80,
-     96
-    ],
-    [
-     27,
-     112,
-     104,
-     128,
-     128
-    ],
-    [
-     27,
-     96,
-     104,
-     112,
-     128
-    ],
-    [
-     27,
-     56,
-     64,
-     72,
-     72
-    ],
-    [
-     27,
-     72,
-     64,
-     80,
-     72
-    ],
-    [
-     29,
-     0,
-     0,
-     128,
-     32
-    ],
-    [
-     29,
-     0,
-     32,
-     128,
-     64
-    ],
-    [
-     29,
-     0,
-     64,
-     32,
-     96
-    ],
-    [
-     39,
-     24,
-     40,
-     72,
-     72
-    ],
-    [
-     39,
-     24,
-     72,
-     128,
-     104
-    ],
-    [
-     39,
-     72,
-     40,
-     128,
-     72
-    ],
-    [
-     39,
-     0,
-     112,
-     16,
-     128
-    ],
-    [
-     39,
-     0,
-     80,
-     24,
-     112
-    ],
-    [
-     40,
-     104,
-     0,
-     128,
-     32
-    ],
-    [
-     19,
-     0,
-     0,
-     48,
-     32
-    ],
-    [
-     19,
-     48,
-     0,
-     120,
-     32
     ],
     [
      9,
@@ -434,314 +28,6 @@
      96,
      72,
      128
-    ],
-    [
-     18,
-     0,
-     64,
-     88,
-     112
-    ],
-    [
-     18,
-     88,
-     64,
-     128,
-     112
-    ],
-    [
-     18,
-     0,
-     112,
-     48,
-     128
-    ],
-    [
-     18,
-     48,
-     112,
-     96,
-     128
-    ],
-    [
-     18,
-     96,
-     112,
-     128,
-     128
-    ],
-    [
-     25,
-     64,
-     80,
-     128,
-     128
-    ],
-    [
-     25,
-     24,
-     64,
-     48,
-     80
-    ],
-    [
-     25,
-     0,
-     64,
-     24,
-     80
-    ],
-    [
-     25,
-     48,
-     64,
-     72,
-     80
-    ],
-    [
-     40,
-     0,
-     80,
-     80,
-     112
-    ],
-    [
-     40,
-     80,
-     80,
-     128,
-     112
-    ],
-    [
-     40,
-     0,
-     112,
-     32,
-     128
-    ],
-    [
-     40,
-     32,
-     112,
-     64,
-     128
-    ],
-    [
-     9,
-     88,
-     0,
-     128,
-     64
-    ],
-    [
-     10,
-     0,
-     24,
-     32,
-     40
-    ],
-    [
-     10,
-     40,
-     24,
-     56,
-     40
-    ],
-    [
-     11,
-     88,
-     48,
-     128,
-     112
-    ],
-    [
-     14,
-     0,
-     56,
-     72,
-     128
-    ],
-    [
-     14,
-     96,
-     112,
-     128,
-     128
-    ],
-    [
-     19,
-     56,
-     32,
-     128,
-     48
-    ],
-    [
-     19,
-     64,
-     96,
-     128,
-     128
-    ],
-    [
-     20,
-     96,
-     32,
-     128,
-     48
-    ],
-    [
-     20,
-     0,
-     64,
-     112,
-     88
-    ],
-    [
-     25,
-     72,
-     64,
-     128,
-     80
-    ],
-    [
-     27,
-     0,
-     48,
-     40,
-     64
-    ],
-    [
-     27,
-     0,
-     104,
-     96,
-     128
-    ],
-    [
-     28,
-     16,
-     0,
-     40,
-     24
-    ],
-    [
-     28,
-     0,
-     56,
-     48,
-     88
-    ],
-    [
-     29,
-     104,
-     96,
-     128,
-     128
-    ],
-    [
-     30,
-     0,
-     0,
-     128,
-     56
-    ],
-    [
-     30,
-     0,
-     56,
-     56,
-     96
-    ],
-    [
-     30,
-     88,
-     64,
-     104,
-     96
-    ],
-    [
-     30,
-     0,
-     96,
-     32,
-     112
-    ],
-    [
-     30,
-     56,
-     96,
-     104,
-     128
-    ],
-    [
-     30,
-     0,
-     112,
-     40,
-     128
-    ],
-    [
-     31,
-     80,
-     88,
-     128,
-     128
-    ],
-    [
-     32,
-     88,
-     0,
-     104,
-     16
-    ],
-    [
-     33,
-     112,
-     48,
-     128,
-     72
-    ],
-    [
-     33,
-     0,
-     112,
-     32,
-     128
-    ],
-    [
-     40,
-     0,
-     8,
-     104,
-     32
-    ],
-    [
-     40,
-     0,
-     32,
-     128,
-     48
-    ],
-    [
-     40,
-     16,
-     48,
-     96,
-     80
-    ],
-    [
-     40,
-     64,
-     112,
-     128,
-     128
-    ],
-    [
-     42,
-     0,
-     0,
-     128,
-     16
     ]
    ],
    "labels": [
@@ -749,34 +35,222 @@
      "sprite": "00",
      "text": "Voice Settings",
      "style": "v_title",
-     "font": "ttf:rounded:18:0:0.85:0.5",
+     "font": "ttf:rounded:16:0:0.8:0.5",
      "slices": true,
-     "slice_width": 128,
-     "dy": 2,
+     "slice_width": 88,
+     "dy": 1,
      "pages": [
       9
      ],
      "palettes": [
       32
      ],
-     "left": 7
+     "left": 8
     },
+    {
+     "sprite": "54",
+     "text": "Save",
+     "style": "v_btn_olive",
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 28,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      68
+     ]
+    }
+   ],
+   "name": "p9"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     39,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     39,
+     0,
+     40,
+     24,
+     112
+    ],
+    [
+     39,
+     24,
+     40,
+     128,
+     128
+    ],
+    [
+     39,
+     0,
+     112,
+     16,
+     128
+    ]
+   ],
+   "labels": [
     {
      "sprite": "4b",
      "text": "Jersey Name",
      "style": "v_title",
-     "font": "ttf:rounded:18:0:0.85:0.5",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 3,
+     "font": "ttf:rounded:16:0:0.8:0.5",
+     "baseline": 38,
      "pages": [
       39
      ],
      "palettes": [
       45
      ],
-     "left": 5
+     "left": 6
     },
+    {
+     "sprite": "4d",
+     "text": "New Name",
+     "style": "v_new44",
+     "font": "ttf:rounded:14:0:0.9:0.4",
+     "baseline": 108,
+     "palettes": [
+      44
+     ],
+     "align": "left"
+    },
+    {
+     "sprite": "4e",
+     "text": "Enter a jersey name",
+     "style": "v_p43",
+     "font": "ttf:rounded:16:0:0.9:0.4",
+     "slices": true,
+     "slice_width": 104,
+     "dy": 3,
+     "palettes": [
+      43
+     ]
+    }
+   ],
+   "name": "p39"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     40,
+     0,
+     80,
+     80,
+     112
+    ],
+    [
+     40,
+     80,
+     80,
+     128,
+     112
+    ],
+    [
+     40,
+     0,
+     112,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "64",
+     "text": "Next",
+     "style": "v_btn_orange",
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 28,
+     "palettes": [
+      70
+     ]
+    },
+    {
+     "sprite": "65",
+     "text": "Quit",
+     "style": "v_btn_purple",
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 29,
+     "palettes": [
+      72
+     ]
+    }
+   ],
+   "name": "p40"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     56,
+     0,
+     128,
+     24
+    ],
+    [
+     10,
+     56,
+     24,
+     120,
+     40
+    ],
+    [
+     10,
+     0,
+     40,
+     40,
+     64
+    ],
+    [
+     10,
+     40,
+     40,
+     72,
+     56
+    ],
+    [
+     10,
+     0,
+     64,
+     128,
+     88
+    ],
+    [
+     10,
+     72,
+     40,
+     112,
+     64
+    ],
+    [
+     10,
+     0,
+     24,
+     32,
+     40
+    ]
+   ],
+   "labels": [
     {
      "from": [
       10,
@@ -800,45 +274,6 @@
       64
      ],
      "empty": true
-    },
-    {
-     "from": [
-      18,
-      32,
-      32,
-      128,
-      64
-     ],
-     "text": "Current",
-     "style": "v_cur86",
-     "font": "ttf:rounded:14:0:0.9:0.4",
-     "baseline": 22,
-     "left": 3
-    },
-    {
-     "from": [
-      18,
-      24,
-      0,
-      128,
-      32
-     ],
-     "text": "New Voice",
-     "style": "v_new81",
-     "font": "ttf:rounded:14:0:0.9:0.4",
-     "baseline": 22,
-     "left": 1
-    },
-    {
-     "sprite": "4d",
-     "text": "New Name",
-     "style": "v_new44",
-     "font": "ttf:rounded:14:0:0.9:0.4",
-     "baseline": 108,
-     "palettes": [
-      44
-     ],
-     "align": "left"
     },
     {
      "from": [
@@ -876,6 +311,557 @@
     },
     {
      "from": [
+      10,
+      0,
+      64,
+      128,
+      88
+     ],
+     "text": "Choose a player",
+     "style": "v_q50_a",
+     "font": "ttf:rounded:14:0:0.9:0.4",
+     "baseline": 18,
+     "left": 14
+    },
+    {
+     "from": [
+      10,
+      72,
+      40,
+      112,
+      64
+     ],
+     "text": "Choose a player",
+     "style": "v_q50_b",
+     "font": "ttf:rounded:14:0:0.9:0.4",
+     "baseline": 18,
+     "left": 14
+    }
+   ],
+   "name": "p10"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     11,
+     32,
+     24,
+     112,
+     48
+    ],
+    [
+     11,
+     112,
+     24,
+     128,
+     48
+    ],
+    [
+     11,
+     0,
+     48,
+     64,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "27",
+     "text": "List",
+     "style": "v_tag57",
+     "font": "ttf:rounded:11:0:0.9:0.4",
+     "baseline": 18
+    },
+    {
+     "sprite": "28",
+     "text": "Type",
+     "style": "v_tag58",
+     "font": "ttf:rounded:11:0:0.9:0.4",
+     "baseline": 18
+    }
+   ],
+   "name": "p11"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     18,
+     24,
+     0,
+     128,
+     32
+    ],
+    [
+     18,
+     32,
+     32,
+     128,
+     64
+    ],
+    [
+     18,
+     0,
+     40,
+     32,
+     64
+    ],
+    [
+     18,
+     0,
+     8,
+     24,
+     40
+    ],
+    [
+     18,
+     0,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      18,
+      32,
+      32,
+      128,
+      64
+     ],
+     "text": "Current",
+     "style": "v_cur86",
+     "font": "ttf:rounded:14:0:0.9:0.4",
+     "baseline": 22,
+     "left": 3
+    },
+    {
+     "from": [
+      18,
+      24,
+      0,
+      128,
+      32
+     ],
+     "text": "New Voice",
+     "style": "v_new81",
+     "font": "ttf:rounded:14:0:0.9:0.4",
+     "baseline": 22,
+     "left": 1
+    },
+    {
+     "sprite": "29",
+     "text": "List",
+     "style": "v_tag82",
+     "font": "ttf:rounded:11:0:0.9:0.4",
+     "baseline": 18
+    },
+    {
+     "sprite": "2a",
+     "text": "Type",
+     "style": "v_tag83",
+     "font": "ttf:rounded:11:0:0.9:0.4",
+     "baseline": 16
+    },
+    {
+     "sprite": "58",
+     "text": "List",
+     "style": "v_btn_green",
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 37,
+     "palettes": [
+      69
+     ]
+    },
+    {
+     "sprite": "59",
+     "text": "Type",
+     "style": "v_btn_olive",
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 38,
+     "palettes": [
+      68
+     ]
+    },
+    {
+     "from": [
+      18,
+      0,
+      0,
+      16,
+      8
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      18,
+      0,
+      8,
+      24,
+      16
+     ],
+     "empty": true
+    }
+   ],
+   "name": "p18"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     17,
+     104,
+     0,
+     128,
+     128
+    ],
+    [
+     17,
+     0,
+     72,
+     104,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      17,
+      0,
+      72,
+      104,
+      104
+     ],
+     "text": "Choose a setting type",
+     "style": "v_p66_a",
+     "font": "ttf:rounded:15:0:0.9:0.4",
+     "baseline": 23,
+     "left": -50
+    },
+    {
+     "from": [
+      17,
+      104,
+      0,
+      128,
+      32
+     ],
+     "text": "Choose a setting type",
+     "style": "v_p66_b",
+     "font": "ttf:rounded:15:0:0.9:0.4",
+     "baseline": 23,
+     "left": 146
+    },
+    {
+     "from": [
+      17,
+      104,
+      32,
+      128,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      17,
+      104,
+      64,
+      128,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      17,
+      104,
+      96,
+      128,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      17,
+      0,
+      104,
+      88,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      17,
+      88,
+      104,
+      104,
+      112
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      17,
+      88,
+      112,
+      104,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      17,
+      88,
+      120,
+      104,
+      128
+     ],
+     "empty": true
+    }
+   ],
+   "name": "p17"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     19,
+     0,
+     0,
+     48,
+     32
+    ],
+    [
+     19,
+     48,
+     0,
+     120,
+     32
+    ],
+    [
+     19,
+     0,
+     32,
+     56,
+     48
+    ],
+    [
+     20,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     20,
+     0,
+     32,
+     24,
+     64
+    ],
+    [
+     20,
+     0,
+     88,
+     128,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "5e",
+     "text": "Yes",
+     "style": "v_yn89",
+     "font": "ttf:rounded:16:0:0.9:0.4",
+     "baseline": 24,
+     "palettes": [
+      89
+     ],
+     "align": "left"
+    },
+    {
+     "sprite": "5f",
+     "text": "No",
+     "style": "v_yn89",
+     "font": "ttf:rounded:16:0:0.9:0.4",
+     "baseline": 24,
+     "palettes": [
+      89
+     ],
+     "align": "left"
+    },
+    {
+     "sprite": "14",
+     "text": "Is this OK?",
+     "style": "v_q89",
+     "font": "ttf:rounded:16:0:0.9:0.4",
+     "baseline": 24,
+     "palettes": [
+      89
+     ]
+    },
+    {
+     "sprite": "2b",
+     "text": "Choose a voice",
+     "style": "v_p87",
+     "font": "ttf:rounded:16:0:0.9:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      87
+     ]
+    }
+   ],
+   "name": "p20"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     25,
+     64,
+     80,
+     128,
+     128
+    ],
+    [
+     25,
+     0,
+     64,
+     72,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "5a",
+     "text": "Cancel",
+     "style": "v_btn_purple",
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 38,
+     "palettes": [
+      72
+     ]
+    }
+   ],
+   "name": "p25"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     27,
+     40,
+     32,
+     128,
+     64
+    ],
+    [
+     27,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     27,
+     96,
+     104,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "2c",
+     "text": "Enter the reading",
+     "style": "v_p99",
+     "font": "ttf:rounded:16:0:0.9:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    }
+   ],
+   "name": "p27"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     28,
+     40,
+     0,
+     128,
+     24
+    ],
+    [
+     28,
+     0,
+     24,
+     16,
+     56
+    ],
+    [
+     28,
+     24,
+     32,
+     40,
+     48
+    ],
+    [
+     28,
+     48,
+     24,
+     128,
+     88
+    ],
+    [
+     30,
+     104,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
       28,
       40,
       0,
@@ -909,59 +895,13 @@
      "empty": true
     },
     {
-     "from": [
-      10,
-      0,
-      64,
-      128,
-      88
-     ],
-     "text": "Choose a player",
-     "style": "v_q50_a",
-     "font": "ttf:rounded:15:0:0.9:0.4",
-     "baseline": 18,
-     "left": 8
-    },
-    {
-     "from": [
-      10,
-      72,
-      40,
-      112,
-      64
-     ],
-     "text": "Choose a player",
-     "style": "v_q50_b",
-     "font": "ttf:rounded:15:0:0.9:0.4",
-     "baseline": 18,
-     "left": 8
-    },
-    {
-     "sprite": "14",
-     "text": "Is this OK?",
-     "style": "v_q89",
-     "font": "ttf:rounded:16:0:0.9:0.4",
-     "baseline": 24,
-     "palettes": [
-      89
-     ]
-    },
-    {
-     "sprite": "15",
-     "text": "Is this OK?",
-     "style": "v_q107",
-     "font": "ttf:rounded:16:0:0.9:0.4",
-     "baseline": 36,
-     "palettes": [
-      107
-     ]
-    },
-    {
      "sprite": "10",
      "text": "Announcer",
      "style": "v_ann111",
      "font": "ttf:rounded:15:0:0.9:0.4",
-     "baseline": 34,
+     "slices": true,
+     "slice_width": 80,
+     "dy": 1,
      "palettes": [
       111
      ]
@@ -985,56 +925,40 @@
      "palettes": [
       102
      ]
-    },
-    {
-     "sprite": "27",
-     "text": "List",
-     "style": "v_tag57",
-     "font": "ttf:rounded:11:0:0.9:0.4",
-     "baseline": 18
-    },
-    {
-     "sprite": "28",
-     "text": "Type",
-     "style": "v_tag58",
-     "font": "ttf:rounded:11:0:0.9:0.4",
-     "baseline": 18
-    },
-    {
-     "sprite": "29",
-     "text": "List",
-     "style": "v_tag82",
-     "font": "ttf:rounded:11:0:0.9:0.4",
-     "baseline": 18
-    },
-    {
-     "sprite": "2a",
-     "text": "Type",
-     "style": "v_tag83",
-     "font": "ttf:rounded:11:0:0.9:0.4",
-     "baseline": 16
-    },
-    {
-     "sprite": "2b",
-     "text": "Choose a voice",
-     "style": "v_p87",
-     "font": "ttf:rounded:16:0:0.9:0.4",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 1,
-     "palettes": [
-      87
-     ]
-    },
-    {
-     "sprite": "2c",
-     "text": "Enter the reading",
-     "style": "v_p99",
-     "font": "ttf:rounded:16:0:0.9:0.4",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 3
-    },
+    }
+   ],
+   "name": "p28"
+  },
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:14:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     29,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     29,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     29,
+     0,
+     96,
+     104,
+     128
+    ]
+   ],
+   "labels": [
     {
      "sprite": "2d",
      "text": "Choose a voice pattern",
@@ -1045,103 +969,17 @@
      "dy": 2
     },
     {
-     "sprite": "4e",
-     "text": "Enter a jersey name",
-     "style": "v_p43",
-     "font": "ttf:rounded:16:0:0.9:0.4",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 3,
+     "sprite": "15",
+     "text": "Is this OK?",
+     "style": "v_q107",
+     "font": "ttf:rounded:15:0:0.9:0.4",
+     "baseline": 36,
      "palettes": [
-      43
-     ]
-    },
-    {
-     "sprite": "5e",
-     "text": "Yes",
-     "style": "v_yn89",
-     "font": "ttf:rounded:16:0:0.9:0.4",
-     "baseline": 24,
-     "palettes": [
-      89
-     ],
-     "left": 3
-    },
-    {
-     "sprite": "5f",
-     "text": "No",
-     "style": "v_yn89",
-     "font": "ttf:rounded:16:0:0.9:0.4",
-     "baseline": 24,
-     "palettes": [
-      89
-     ],
-     "left": 4
-    },
-    {
-     "sprite": "54",
-     "text": "Save",
-     "style": "v_btn_olive",
-     "font": "ttf:rounded:14:0:0.85:0.4",
-     "baseline": 28,
-     "pages": [
-      9
-     ],
-     "palettes": [
-      68
-     ]
-    },
-    {
-     "sprite": "58",
-     "text": "List",
-     "style": "v_btn_green",
-     "font": "ttf:rounded:14:0:0.85:0.4",
-     "baseline": 37,
-     "palettes": [
-      69
-     ]
-    },
-    {
-     "sprite": "59",
-     "text": "Type",
-     "style": "v_btn_olive",
-     "font": "ttf:rounded:14:0:0.85:0.4",
-     "baseline": 38,
-     "palettes": [
-      68
-     ]
-    },
-    {
-     "sprite": "5a",
-     "text": "Cancel",
-     "style": "v_btn_purple",
-     "font": "ttf:rounded:14:0:0.85:0.4",
-     "baseline": 38,
-     "palettes": [
-      72
-     ]
-    },
-    {
-     "sprite": "64",
-     "text": "Next",
-     "style": "v_btn_orange",
-     "font": "ttf:rounded:14:0:0.85:0.4",
-     "baseline": 28,
-     "palettes": [
-      70
-     ]
-    },
-    {
-     "sprite": "65",
-     "text": "Quit",
-     "style": "v_btn_purple",
-     "font": "ttf:rounded:14:0:0.85:0.4",
-     "baseline": 29,
-     "palettes": [
-      72
+      107
      ]
     }
-   ]
+   ],
+   "name": "p29"
   }
  ]
 }
