@@ -403,6 +403,1115 @@
      "baseline": 22
     }
    ]
+  },
+  {
+   "bank": "y3_msy",
+   "style": "command",
+   "areas": [
+    [
+     0,
+     0,
+     80,
+     96,
+     104
+    ],
+    [
+     0,
+     0,
+     104,
+     96,
+     128
+    ],
+    [
+     2,
+     64,
+     64,
+     120,
+     88
+    ],
+    [
+     2,
+     0,
+     88,
+     56,
+     112
+    ],
+    [
+     2,
+     64,
+     88,
+     120,
+     112
+    ],
+    [
+     3,
+     0,
+     72,
+     88,
+     96
+    ],
+    [
+     3,
+     0,
+     96,
+     56,
+     120
+    ],
+    [
+     4,
+     0,
+     32,
+     56,
+     56
+    ],
+    [
+     4,
+     56,
+     32,
+     128,
+     56
+    ],
+    [
+     4,
+     0,
+     56,
+     56,
+     80
+    ],
+    [
+     4,
+     56,
+     56,
+     128,
+     80
+    ],
+    [
+     4,
+     0,
+     80,
+     64,
+     104
+    ],
+    [
+     4,
+     64,
+     80,
+     128,
+     104
+    ],
+    [
+     4,
+     0,
+     104,
+     80,
+     128
+    ],
+    [
+     4,
+     80,
+     104,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     64,
+     32
+    ],
+    [
+     5,
+     64,
+     0,
+     128,
+     32
+    ],
+    [
+     5,
+     0,
+     32,
+     88,
+     56
+    ],
+    [
+     5,
+     48,
+     56,
+     128,
+     80
+    ],
+    [
+     5,
+     48,
+     80,
+     128,
+     104
+    ],
+    [
+     5,
+     48,
+     104,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     80,
+     32
+    ],
+    [
+     6,
+     0,
+     32,
+     104,
+     56
+    ],
+    [
+     6,
+     0,
+     56,
+     104,
+     80
+    ],
+    [
+     6,
+     0,
+     80,
+     48,
+     104
+    ],
+    [
+     6,
+     48,
+     80,
+     96,
+     104
+    ],
+    [
+     6,
+     0,
+     104,
+     88,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     112,
+     24
+    ],
+    [
+     7,
+     0,
+     24,
+     56,
+     48
+    ],
+    [
+     7,
+     56,
+     24,
+     104,
+     48
+    ],
+    [
+     7,
+     0,
+     48,
+     88,
+     72
+    ],
+    [
+     8,
+     0,
+     0,
+     104,
+     24
+    ],
+    [
+     8,
+     0,
+     56,
+     88,
+     80
+    ],
+    [
+     8,
+     0,
+     80,
+     88,
+     104
+    ],
+    [
+     8,
+     0,
+     104,
+     88,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     9,
+     0,
+     24,
+     80,
+     48
+    ],
+    [
+     9,
+     0,
+     48,
+     80,
+     72
+    ],
+    [
+     9,
+     0,
+     72,
+     80,
+     96
+    ],
+    [
+     10,
+     0,
+     0,
+     88,
+     24
+    ],
+    [
+     10,
+     0,
+     24,
+     80,
+     48
+    ],
+    [
+     10,
+     0,
+     48,
+     72,
+     72
+    ],
+    [
+     10,
+     0,
+     72,
+     112,
+     96
+    ],
+    [
+     10,
+     0,
+     96,
+     112,
+     120
+    ],
+    [
+     11,
+     0,
+     0,
+     104,
+     24
+    ],
+    [
+     11,
+     0,
+     24,
+     72,
+     48
+    ],
+    [
+     11,
+     0,
+     72,
+     40,
+     96
+    ],
+    [
+     11,
+     40,
+     72,
+     104,
+     96
+    ],
+    [
+     11,
+     0,
+     96,
+     72,
+     120
+    ],
+    [
+     11,
+     72,
+     96,
+     112,
+     120
+    ],
+    [
+     12,
+     0,
+     0,
+     88,
+     24
+    ],
+    [
+     12,
+     0,
+     24,
+     48,
+     48
+    ],
+    [
+     12,
+     0,
+     48,
+     104,
+     72
+    ],
+    [
+     12,
+     0,
+     72,
+     64,
+     96
+    ],
+    [
+     12,
+     0,
+     96,
+     96,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      80,
+      96,
+      104
+     ],
+     "text": "Standard",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      0,
+      104,
+      96,
+      128
+     ],
+     "text": "Hide",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      120,
+      88
+     ],
+     "text": "Weak",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      2,
+      0,
+      88,
+      56,
+      112
+     ],
+     "text": "Normal",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      2,
+      64,
+      88,
+      120,
+      112
+     ],
+     "text": "Strong",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:15:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      88,
+      96
+     ],
+     "text": "Very Strong",
+     "style": "o_f6_rf1_s0_c3",
+     "font": "ttf:din:12:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      56,
+      120
+     ],
+     "text": "Type",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:15:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      0,
+      32,
+      56,
+      56
+     ],
+     "text": "Auto",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      56,
+      32,
+      128,
+      56
+     ],
+     "text": "Hardest",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      0,
+      56,
+      56,
+      80
+     ],
+     "text": "Off",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      56,
+      56,
+      128,
+      80
+     ],
+     "text": "Easiest",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      64,
+      104
+     ],
+     "text": "Sweet Spot",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:12:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      64,
+      80,
+      128,
+      104
+     ],
+     "text": "Show",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      0,
+      104,
+      80,
+      128
+     ],
+     "text": "Lock On",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      80,
+      104,
+      128,
+      128
+     ],
+     "text": "On",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      64,
+      32
+     ],
+     "text": "Load",
+     "style": "o_f11_r35_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      5,
+      64,
+      0,
+      128,
+      32
+     ],
+     "text": "Save",
+     "style": "o_f11_r31_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      5,
+      0,
+      32,
+      88,
+      56
+     ],
+     "text": "COM Batting",
+     "style": "o_f15_r23_s0_c3",
+     "font": "ttf:din:12:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      5,
+      48,
+      56,
+      128,
+      80
+     ],
+     "text": "Show",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      5,
+      48,
+      80,
+      128,
+      104
+     ],
+     "text": "Powerful",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      5,
+      48,
+      104,
+      128,
+      128
+     ],
+     "text": "Hide",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      80,
+      32
+     ],
+     "text": "Quit",
+     "style": "o_f11_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      104,
+      56
+     ],
+     "text": "Pitch Cursor",
+     "style": "o_f15_r33_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      56,
+      104,
+      80
+     ],
+     "text": "Controller",
+     "style": "o_f15_r32_s0_c3",
+     "font": "ttf:din:13:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      80,
+      48,
+      104
+     ],
+     "text": "Rumble",
+     "style": "o_f15_r24_s0_c3",
+     "font": "ttf:din:12:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      48,
+      80,
+      96,
+      104
+     ],
+     "text": "Batting",
+     "style": "o_f15_r63_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      104,
+      88,
+      128
+     ],
+     "text": "Pitch Guide",
+     "style": "o_f15_r11_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      112,
+      24
+     ],
+     "text": "Strike Zone",
+     "style": "o_f15_r11_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      0,
+      24,
+      56,
+      48
+     ],
+     "text": "Difficulty",
+     "style": "o_f15_r37_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      56,
+      24,
+      104,
+      48
+     ],
+     "text": "Steal",
+     "style": "o_f15_r45_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      88,
+      72
+     ],
+     "text": "Manual",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      104,
+      24
+     ],
+     "text": "Meet Cursor",
+     "style": "o_f15_r33_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      0,
+      56,
+      88,
+      80
+     ],
+     "text": "COM Running",
+     "style": "o_f15_r41_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      0,
+      80,
+      88,
+      104
+     ],
+     "text": "COM Pitching",
+     "style": "o_f15_r12_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      0,
+      104,
+      88,
+      128
+     ],
+     "text": "COM Fielding",
+     "style": "o_f15_r32_s0_c3",
+     "font": "ttf:din:12:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Pitch / Bat Type",
+     "style": "o_f15_r33_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": "No Window",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:15:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      0,
+      48,
+      80,
+      72
+     ],
+     "text": "Window",
+     "style": "o_f6_re1_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      0,
+      72,
+      80,
+      96
+     ],
+     "text": "Pitcher View",
+     "style": "o_f6_r1_s0_c3",
+     "font": "ttf:din:13:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      0,
+      0,
+      88,
+      24
+     ],
+     "text": "Pitching View",
+     "style": "o_f15_r16_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": "Batting View",
+     "style": "o_f15_r616_s0_c3",
+     "font": "ttf:din:10:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      0,
+      48,
+      72,
+      72
+     ],
+     "text": "Landing Spot",
+     "style": "o_f15_r16_s0_c3",
+     "font": "ttf:din:10:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      0,
+      72,
+      112,
+      96
+     ],
+     "text": "Close-Up Cam",
+     "style": "o_f15_r11_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      0,
+      96,
+      112,
+      120
+     ],
+     "text": "Scene Replay",
+     "style": "o_f15_r11_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      0,
+      0,
+      104,
+      24
+     ],
+     "text": "Player Data",
+     "style": "o_f15_r11_s0_c3",
+     "font": "ttf:din:11:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      0,
+      24,
+      72,
+      48
+     ],
+     "text": "Lock On",
+     "style": "o_f15_r65_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      0,
+      72,
+      40,
+      96
+     ],
+     "text": "On",
+     "style": "o_f15_r66b_s0_c3",
+     "font": "ttf:din:12:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      40,
+      72,
+      104,
+      96
+     ],
+     "text": "Ball",
+     "style": "o_f15_r6b_s0_c3",
+     "font": "ttf:din:15:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      0,
+      96,
+      72,
+      120
+     ],
+     "text": "Point",
+     "style": "o_f15_r6b_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      72,
+      96,
+      112,
+      120
+     ],
+     "text": "Off",
+     "style": "o_f15_r6b_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      0,
+      88,
+      24
+     ],
+     "text": "Hide",
+     "style": "o_f15_r666_s0_c3",
+     "font": "ttf:din:15:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      24,
+      48,
+      48
+     ],
+     "text": "Aim",
+     "style": "o_f15_r666_s0_c3",
+     "font": "ttf:din:15:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      48,
+      104,
+      72
+     ],
+     "text": "Aim & Pitch",
+     "style": "o_f15_r666_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "Hide",
+     "style": "o_f15_r666_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      96,
+      96,
+      120
+     ],
+     "text": "Show",
+     "style": "o_f15_r666_s0_c3",
+     "font": "ttf:din:16:0:1:0.45",
+     "valign": "centre"
+    }
+   ],
+   "under": 3
   }
  ]
 }

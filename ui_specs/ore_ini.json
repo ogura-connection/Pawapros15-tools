@@ -1,0 +1,133 @@
+{
+ "arc": "ore_ini.arc",
+ "repack": [
+  {
+   "bank": "y3_myt",
+   "palette": 2,
+   "style": "mylhead",
+   "font": "ttf:rounded:15:0:0.9:0.5",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     56,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Choose Your Face",
+     "slices": true
+    },
+    {
+     "sprite": "02",
+     "text": "Choose Your Hometown",
+     "slices": true
+    },
+    {
+     "sprite": "03",
+     "text": "Choose Your Background",
+     "slices": true
+    },
+    {
+     "sprite": "04",
+     "text": "Choose Your Birthday",
+     "slices": true
+    },
+    {
+     "sprite": "05",
+     "text": "Choose Your Draft Pick",
+     "slices": true
+    },
+    {
+     "sprite": "06",
+     "text": "Choose Your Handedness",
+     "slices": true
+    },
+    {
+     "sprite": "07",
+     "text": "Choose Your Position",
+     "slices": true
+    },
+    {
+     "sprite": "08",
+     "text": "Choose Your Form",
+     "slices": true
+    },
+    {
+     "sprite": "09",
+     "text": "Choose Your Ability Type",
+     "slices": true
+    },
+    {
+     "sprite": "0a",
+     "text": "Choose Two Appeal Points",
+     "slices": true
+    },
+    {
+     "sprite": "0b",
+     "text": "Choose One Appeal Point",
+     "slices": true
+    },
+    {
+     "sprite": "0c",
+     "text": "Choose Your Weak Points",
+     "slices": true
+    },
+    {
+     "sprite": "0d",
+     "text": "Choose Your Hobby",
+     "slices": true
+    },
+    {
+     "sprite": "0e",
+     "text": "Choose Your Family Makeup",
+     "slices": true
+    },
+    {
+     "sprite": "0f",
+     "text": "Choose Your Family Setup",
+     "slices": true
+    }
+   ]
+  }
+ ]
+}

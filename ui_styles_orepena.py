@@ -11,6 +11,25 @@ ui_type.TTF["din"] = ("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf
 _ARC = {}
 
 
+def _din_font(cap, gap, bold, space=None):
+    """Font "dc<cap>g<gap>b<bold*100>": DIN Condensed Bold one letter at a time with `gap` clear columns between
+    letters (the rings of neighbours must not run together)."""
+    def make(project=None):
+        glyphs = {}
+        chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,!?&'/-+:"
+        for ch in chars:
+            ink, base = ui_type.ttf_ink(ch, "din", cap, 0.0, 1.0, bold)
+            glyphs[ch] = (ink, ink.shape[0] - base)
+        return {"words": {}, "glyphs": glyphs, "space": space or max(3, round(cap * 0.3)), "gap": gap}
+    return make
+
+
+for _cap in range(8, 21):
+    for _gap in (1, 2):
+        for _b in (0, 10, 20, 30):
+            ui_type.FONTS["dc%dg%db%d" % (_cap, _gap, _b)] = _din_font(_cap, _gap, _b / 100.0)
+
+
 def old_page(bank, pg):
     import ui_textures as U
     if "d" not in _ARC:

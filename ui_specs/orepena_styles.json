@@ -1,0 +1,223 @@
+{
+ "o_f6_r1_s0_c3": {
+  "kind": "solid",
+  "fill": 6,
+  "rings": [
+   1
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f6_rf1_s0_c3": {
+  "kind": "solid",
+  "fill": 6,
+  "rings": [
+   15,
+   1
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f11_r35_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   3,
+   5
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f11_r31_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   3,
+   1
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r23_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   2,
+   3
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f11_r1_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   1
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r33_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   3,
+   3
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r32_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   3,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r24_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   2,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r63_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   6,
+   3
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r11_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   1,
+   1
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r37_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   3,
+   7
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r45_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   4,
+   5
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r41_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   4,
+   1
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r12_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   1,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f6_re1_s0_c3": {
+  "kind": "solid",
+  "fill": 6,
+  "rings": [
+   14,
+   1
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r16_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   1,
+   6
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r616_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   6,
+   1,
+   6
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r65_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   6,
+   5
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r66b_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   6,
+   6,
+   11
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r6b_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   6,
+   11
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r666_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   6,
+   6,
+   6
+  ],
+  "shadow": 0,
+  "cut": 3
+ }
+}
