@@ -286,6 +286,109 @@ def load_scripts():
     return [Script(by_name[fn], mods) for fn in SCRIPT_FILES]
 
 
+# ── Other script engines ──────────────────────────────────────────────────
+
+# Eikan Nine (sct_main.rel) runs the same kind of script with an interpreter of its own (sec1+0x22C18:
+# script pointer at r31+0x200, 207 opcodes, jump table at sec5+0x32A0). Text mode, the waits, the name
+# inserts and the conditions (0x00..0x66) are numbered as in Success Mode; the later opcodes are not.
+# The lengths below were read off the handlers (how far each moves the script pointer) and parse the
+# whole script with no error. The label table stands behind the script in the same section and is filled
+# by the module's own relocations; five entry points are also addressed from sct_card.rel and sct_sugo.rel.
+EIKAN_OP_LEN = {op: 1 for op in range(0x100)}
+for _op in (0x69, 0x6A, 0x6C, 0x6D, 0x6E, 0x6F, 0x70, 0x74, 0x75, 0x76, 0x7A, 0x7B, 0x7C, 0x7D, 0x7E, 0x7F,
+            0x82, 0x83, 0x84, 0x85, 0x87, 0x88, 0x8A, 0x8D, 0x8E, 0x92, 0xA1, 0xA2, 0xA9, 0xAA, 0xAB, 0xAC,
+            0xB3, 0xB4, 0xB9, 0xBA, 0xBC, 0xBD, 0xC1, 0xC2, 0xC6, 0xC7, 0xC8, 0xCB, 0xCD):
+    EIKAN_OP_LEN[_op] = 2
+for _op in list(range(0x26, 0x46)) + [0x89]:
+    EIKAN_OP_LEN[_op] = 3
+for _op in range(0x16, 0x26):
+    EIKAN_OP_LEN[_op] = 4
+# "region" = the script, "labels" = its label table (section offsets); "list" = the opcode that is
+# followed by values up to a zero; "ends" = return and goto; "line" = cells of the widest Japanese line.
+BLOCK_SCRIPTS = {"sct_main.rel": {"section": 5, "region": (14416, 189368), "labels": (189372, 210644),
+                                  "op_len": EIKAN_OP_LEN, "list": 0x67, "ends": (0x01, 0x87), "max_op": 0xCE,
+                                  "name_ops": tuple(range(0x4B, 0x51)), "line": 20}}
+
+
+class BlockScript(Script):
+    """A script that shares its section with other data (see BLOCK_SCRIPTS). Same attributes as Script.
+    Halfwords of the region that no instruction covers are the zero padding in front of a label."""
+
+    def __init__(self, rel, spec):
+        self.rel, self.spec, self.sec = rel, spec, spec["section"]
+        self.region, self.ends, self.name_ops = spec["region"], spec["ends"], spec["name_ops"]
+        d = rel.sec_data(self.sec)
+        self.sec_file_offset = rel.sections[self.sec]["offset"]
+        self.hw = struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2])
+        self.labels = collections.Counter()
+        for (s, pos, typ, tm, ts, addend) in rel.relocs():
+            if s == self.sec and typ == 1 and spec["labels"][0] <= pos < spec["labels"][1]:
+                if (tm, ts) != (rel.mod_id, self.sec) or addend % 2 or not self.region[0] <= addend < self.region[1]:
+                    raise ValueError("%s: label table entry at +%d points outside the script" % (rel.name, pos))
+                self.labels[addend // 2] += 1
+        self.kind, self.texts = {}, {}
+        self.op_count, self.errors = collections.Counter(), collections.Counter()
+        self._parse()
+        lo, hi = self.region[0] // 2, self.region[1] // 2
+        if any(self.hw[i] for i in range(lo, hi) if i not in self.kind):
+            self.errors["data between the instructions"] += 1
+
+    def _length(self, i):
+        hw, op = self.hw, self.hw[i] & 0xFF
+        if op == OP_IF:
+            return instruction_length(hw, i)
+        if op == self.spec["list"]:
+            j = i + 1
+            while j < len(hw) and hw[j] != 0:
+                j += 1
+            return j + 1 - i
+        return self.spec["op_len"][op]
+
+    def _parse(self):
+        hw, kind = self.hw, self.kind
+        lo, hi = self.region[0] // 2, self.region[1] // 2
+        work = sorted(self.labels)
+        while work:
+            i = work.pop()
+            while True:
+                if not lo <= i < hi:
+                    self.errors["runs out of the script"] += 1
+                    break
+                if i in kind:
+                    if kind[i] != "op":
+                        self.errors["label lands mid-instruction"] += 1
+                    break
+                op = hw[i] & 0xFF
+                self.op_count[op] += 1
+                kind[i] = "op"
+                if op == OP_TEXT:
+                    r = unpack_text(hw, i + 1)
+                    if r is None or r[1] > hi or not units_valid(r[0]):
+                        self.errors["bad text run"] += 1
+                        break
+                    units, j = r
+                    for k in range(i + 1, j):
+                        kind[k] = "text"
+                    self.texts[i] = (hw[i] >> 8, units, j)
+                    i = j
+                    continue
+                if op > self.spec["max_op"]:
+                    self.errors["unknown opcode"] += 1
+                    break
+                n = self._length(i)
+                for k in range(i + 1, min(i + n, hi)):
+                    kind[k] = "arg"
+                if op in self.ends:
+                    break
+                i += n
+
+
+def load_block_scripts(mods=None):
+    mods = mods or load_all_rels()
+    by_name = {m.name: m for m in mods.values()}
+    return [BlockScript(by_name[fn], spec) for fn, spec in BLOCK_SCRIPTS.items()]
+
+
 # ── extract ───────────────────────────────────────────────────────────────
 
 def cmd_extract(args):

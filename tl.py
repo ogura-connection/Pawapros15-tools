@@ -54,11 +54,34 @@ def text_hash(text):
 
 
 def speaker(face):
+    if face is None:
+        return "-"
     return next((name for lo, hi, name in SPEAKERS if lo <= face >> 4 <= hi), "%X" % face)
+
+
+def all_scripts():
+    """The Success Mode scripts and the scripts of the other modes (Eikan Nine)."""
+    mods = S.load_all_rels()
+    by_name = {m.name: m for m in mods.values()}
+    return [S.Script(by_name[fn], mods) for fn in S.SCRIPT_FILES] + S.load_block_scripts(mods)
+
+
+def find_script(name):
+    if name in S.BLOCK_SCRIPTS:
+        return S.load_block_scripts()[0 if len(S.BLOCK_SCRIPTS) == 1 else list(S.BLOCK_SCRIPTS).index(name)]
+    return find_script(name)
+
+
+def line_letters(sc):
+    """Letters a line of this script's boxes holds."""
+    return 2 * sc.spec["line"] if hasattr(sc, "spec") else LINE_LETTERS
 
 
 def scenes(sc):
     """[[row, ...], ...]; row = dict(off, window, face, mark, text) or dict(note=...)."""
+    block = hasattr(sc, "spec")             # another engine: no portrait or colour opcodes known
+    name_ops = sc.name_ops if block else NAME_OPS
+    ends = sc.ends if block else (S.OP_RETURN, S.OP_GOTO)
     out, cur = [], []
     face, mark, ended = {}, "B", True
     for i in sorted(k for k, v in sc.kind.items() if v == "op"):
@@ -70,11 +93,16 @@ def scenes(sc):
         ended = False
         if i in sc.texts:
             window, units, _ = sc.texts[i]
-            cur.append({"off": i * 2, "window": window, "face": face.get(window, 0), "mark": mark,
+            cur.append({"off": i * 2, "window": window, "face": None if block else face.get(window, 0), "mark": mark,
                         "text": S.decode_units(units)})
             mark = "+"
-        elif op in NAME_OPS:
+        elif op in name_ops:
             cur.append({"note": "{name}"})
+        elif block:
+            if op in (S.OP_NEWLINE, S.OP_NEWLINE_WAIT, S.OP_WAIT):
+                mark = {S.OP_NEWLINE: "L", S.OP_NEWLINE_WAIT: "W", S.OP_WAIT: "B"}[op]
+            elif op in ends:
+                ended = True
         elif op == OP_COLOUR:
             cur.append({"note": "colour %d" % (sc.hw[i] >> 8)})
         elif op in PORTRAIT_SLOT:
@@ -114,7 +142,7 @@ def save_tsv(name, rows):
 
 
 def cmd_export():
-    for sc in S.load_scripts():
+    for sc in all_scripts():
         folder = os.path.join(SCENE_DIR, sc.rel.name)
         os.makedirs(folder, exist_ok=True)
         done = load_tsv(sc.rel.name)
@@ -138,7 +166,7 @@ def cmd_export():
 
 
 def cmd_show(name, first, last):
-    sc = next(x for x in S.load_scripts() if x.rel.name == name)
+    sc = find_script(name)
     all_scenes = scenes(sc)
     for n in range(int(first.lstrip("s")), int(last.lstrip("s")) + 1):
         print("@s%04d" % n)
@@ -171,7 +199,7 @@ def read_input(scene=None):
 
 
 def cmd_apply(name, scene=None):
-    sc = next(x for x in S.load_scripts() if x.rel.name == name)
+    sc = find_script(name)
     all_scenes = scenes(sc)
     batches = read_input(scene)
     rows = load_tsv(name)
@@ -191,7 +219,7 @@ def cmd_apply(name, scene=None):
 
 def cmd_check(name):
     """Dry run of apply: errors (line counts, empty runs, stray characters) and the merge warnings."""
-    sc = next(x for x in S.load_scripts() if x.rel.name == name)
+    sc = find_script(name)
     all_scenes = scenes(sc)
     rows, errors, warnings, stored = load_tsv(name), [], [], 0
     for n, lines in read_input():
@@ -217,7 +245,7 @@ def cmd_check(name):
             rows[r["off"]] = (text_hash(r["text"]), en)
             stored += 1
         offs = {r["off"]: k for k, r in enumerate(runs, 1)}
-        for w in check_scene("s%04d" % n, all_scenes[n], rows):
+        for w in check_scene("s%04d" % n, all_scenes[n], rows, line_letters(sc)):
             head, _, rest = w.partition(":")
             off = head.split("+")[-1] if "+" in head else ""
             warnings.append("s%04d line %s:%s" % (n, offs.get(int(off), "?"), rest) if off.isdigit() else w)
@@ -244,7 +272,7 @@ def odd_tail(text):
     return n % 2 == 1
 
 
-def check_scene(name, rows, done):
+def check_scene(name, rows, done, per_line=LINE_LETTERS):
     """Warnings for one scene: long lines, too many lines, odd-length runs before a same-line run, gaps."""
     warn, line, pending, box, box_orig, bubble = [], 0, None, 0, 0, None
     runs = [r for r in rows if "off" in r]
@@ -268,7 +296,7 @@ def check_scene(name, rows, done):
             pending = None
             continue
         en = done[r["off"]][1]
-        limit = WIDE_WINDOWS.get(r["window"], LINE_LETTERS)
+        limit = WIDE_WINDOWS.get(r["window"], per_line)
         if (r["mark"] == "+" and pending is not None and odd_tail(pending[1]) and en
                 and r["window"] not in WIDE_WINDOWS):
             warn.append("%s +%d: odd number of letters before a same-line run: %r" % (name, *pending))
@@ -285,7 +313,7 @@ def check_scene(name, rows, done):
 
 def cmd_merge():
     entries, warnings = [], []
-    for sc in S.load_scripts():
+    for sc in all_scripts():
         done = load_tsv(sc.rel.name)
         if not done:
             continue
@@ -299,7 +327,7 @@ def cmd_merge():
                     seen.add(r["off"])
                     entries.append({"file": sc.rel.name, "section_offset": r["off"],
                                     "window": r["window"], "text": r["text"], "en": en})
-            warnings += check_scene(sc.rel.name, rows, done)
+            warnings += check_scene(sc.rel.name, rows, done, line_letters(sc))
         if set(done) - seen:
             sys.exit("%s: no text run at +%s" % (sc.rel.name, sorted(set(done) - seen)[:5]))
     with open(OUT_JSON, "w", encoding="utf-8") as f:
@@ -310,7 +338,7 @@ def cmd_merge():
 
 
 def cmd_status():
-    for sc in S.load_scripts():
+    for sc in all_scripts():
         done = load_tsv(sc.rel.name)
         runs = [r for rows in scenes(sc) for r in rows if "off" in r and r["text"]]
         print("%-13s %5d / %5d runs" % (sc.rel.name, sum(1 for r in runs if r["off"] in done), len(runs)))
