@@ -449,6 +449,51 @@ Frames of every one were read as contact sheets:
 - `15_scs` (6 s, Success intro): no text.
 - `yk15_00` .. `yk15_18` (320x224, 8 to 10 s each, the demo clips of the baseball school): no text.
 
+## Eikan Nine scripts (2026-10-13, seventh session)
+
+`sct_main.rel` holds the story and tutorial text of Eikan Nine as a script of the Success kind: 16-bit instructions, text mode `XX00` followed by 12-bit packed glyphs. 4,263 runs (4,101 not empty, 40,085 glyphs) in 1,980 scenes, in sec5+14416..189368. `tl.py` and the build handle it next to the four Success files (`scan_story.BLOCK_SCRIPTS`, class `BlockScript`).
+
+- **Interpreter**: sec1+0x22C18, script pointer at r31+0x200, opcode = low byte, 207 opcodes, jump table at sec5+0x32A0. Opcodes 0x00..0x66 mean what they mean in Success Mode (text, return 0x01, if 0x02, waits 0x46 / 0x49 / 0x4A, name inserts 0x4B..0x50); the later ones are numbered differently (goto 0x87, call 0x88, the list opcode 0x67). The lengths in `scan_story.EIKAN_OP_LEN` were read off the handlers with `derive_op_advance` (set `VM_IP = "0x200(r31)"`, exits 0x26B18 and 0x22C18) and parse the whole script with no error; the only unreached data is one return at +90684.
+- **Labels**: the table of 5,318 pointers stands right behind the script (sec5+189372..210644) and is filled by the module's own relocations. Five entry points are also addressed from code of `sct_card.rel` and `sct_sugo.rel` (ADDR16_HA / LO pairs).
+- **The module cannot grow.** In the memory plan `sct_main.rel` (6.4 MB with its BSS) ends 24 bytes before the next modules. So the script is laid out again inside its own 174,952 bytes (`rebuild_scripts.emit_block`): every label is at a multiple of 4 and follows a return or a goto, and the assembler filled the gaps with zeros (2,323 gaps, 6,528 bytes). Those gaps are given up and are the room the English has (about 10% of the text). The Success scripts have run without that alignment since their first rebuild, which is the evidence that the engine does not need it; not yet seen in game for this module. The build then rewrites the 5,317 label addends and the 14 code addends and checks them like every other relocation. If the English is too long the build stops and says by how many bytes.
+- A dialogue line is taken as 18 cells (36 letters): the Japanese rarely passes 18. Not measured in game.
+- Names padded with full-width spaces to a column (ability names, 10 cells) are padded again by `_work/tl_bulk/pad_columns.py` after `collect.py`.
+- Eikan Nine is entered from the Success screen (the right-hand picture), not from the main menu.
+- Not parsed yet: the same kind of text in `orepena.rel` (My Life), `scs_comi.rel`, `gdt_pn.rel`, `koukai.rel`. For each: find the dispatch loop, derive the lengths the same way, add an entry to `BLOCK_SCRIPTS`.
+
+## Art survey: every sprite page read by machine (2026-10-13, seventh session)
+
+`_work/ui_pages/tools/art_survey.py` renders every page of every `.arc` (each palette its sprite parts use, 3 at most), 4x, and reads it with the Mac's text recognition in Japanese (`dolphin-test/ocr/ocr ja-JP en-US`; the helper takes the languages as arguments now). 15 minutes for everything. Results in `_work/art_survey/`: `pages_text.tsv` (page, Japanese read, other text), `banks_japanese.tsv` (the work list: mode, file, bank, pages, boxes, sample).
+
+| Mode (by file name) | Pages | With Japanese | Text boxes | Banks |
+|---|---|---|---|---|
+| Pennant (pena*, pennant, pn_*, draft) | 1,178 | 367 | 1,297 | 85 |
+| Success (scs_*, gdt_scs) | 3,184 | 340 | 904 | 90 |
+| My Life (ore*, myend) | 591 | 303 | 1,376 | 47 |
+| Match and common (gameplay, vs*, main_prg, ctrler, option, order) | 882 | 283 | 969 | 70 |
+| Arrange and edit (arr*, are_*, chrsong) | 581 | 267 | 1,196 | 51 |
+| Records (rec_room, record, koukai) | 281 | 167 | 666 | 26 |
+| Eikan Nine (sct_*) | 1,418 | 137 | 438 | 42 |
+| Home Run, Remote, camp, calorie, scc_* | 268 | 110 | 391 | 20 |
+| Championship | 163 | 59 | 176 | 16 |
+| Baseball school | 126 | 52 | 133 | 7 |
+| Online (the service is closed) | 478 | 132 | 308 | 36 |
+| Staff roll (stays) | 231 | 38 | 222 | 7 |
+
+Without the staff roll and the online screens: **about 2,085 pages, 7,500 text boxes, 450 banks**, and almost nothing repeats between files (2,069 different pages). A text box is what the recogniser saw as one piece: a label, a line of a list, or lettering inside a picture; pictures (logos, sound effects) are not told apart. For scale: everything translated so far in sprite sheets is about 700 labels. Limits of the reading: stylised display lettering is missed (the eleven main menu words were not found, see below), a page shared by several colourings is read in three of them at most, and 250 pages in banks whose name occurs twice in a file are reported under one name.
+
+## Main menu and the Success start screens: where the art is (2026-10-13)
+
+Found with a texture dump taken screen by screen (`dolphin-test/looks/first/steps.py`: keys, one screenshot, the list of textures new since the last step) and `_work/ui_pages/tools/match_all.py` (dumped textures against all pages of all files at once; the decoded pages are cached).
+
+- **Main menu**: not in an `.arc`. `SMDL_TOP.rom` holds four 256x256 textures, 8 bits per pixel (GX C8, 8x4 tiles), stored plain, each right behind its 512-byte RGB5A3 palette: palettes at 6176, 93920, 160640 and 239328, pixels 512 bytes later. They decode to exactly the dumped textures. Texture at 93920: the blue button plates and ペナント サクセス 野球教室 アレンジ; 160640: the orange plates, サウンド (stored turned by 90 degrees) and リモパワ; 239328: 対戦 マイライフ ホームラン競争 応援曲 and the game logo; 6176: データあれこれ (turned) and the background. The other `.rom` files were not surveyed: `SMDL_*.rom` are probably the same kind of menu art for other modes.
+- MLB Power Pros and MLB 2008 have their menu words in `env_mainmenu.pack` (`MLB*/_scan/tex/env_mainmenu.png`): Exhibition, Success, Home Run, Arrange, Practice, My Data, Wii Remote, Season, MLB Life, League, Shop, Display Style, Baseball Cards, in a metallic small-caps style.
+- **Success screen** (mode select, title, 最初から / つづきから / 選手名鑑, the overwrite warning, クリア人数): `scs_titl.arc`, banks `y5_scs_tit_0`, `y5_sge_0`, `y5_tic_h1`, `r4_sta`, `r4_staz`; the Eikan Nine side is `sct_titl.arc` `r4_eikz`.
+- **Scenario start card** and loading pictures: `scs_load.arc` (`y5_tlog_*`, `z5_sop_0`).
+- **Name entry**: `namein.arc` `s3_nam` (pages 0 to 7). **Voice setup**: `arevoice.arc` `m3_onsei` (most of its dumps did not match a page: look again).
+- **Profile screens** (handedness, position, form, face, confirm, difficulty) and the application form behind them: `scs_make.arc`, banks `y5_cmk_0` (the lists and headings), `y5_cmc_0`, `y5_nan_0` (difficulty), `y5_pho_p`, `y5_make_bg_opd` (the form).
+- Keys from the main menu: DOWN, A (Success screen), A (白球ドリーム), A (title, cursor on Continue), UP, A (overwrite warning, cursor on "cancel"), UP, A starts a new game; then A through the opening card to name entry.
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
