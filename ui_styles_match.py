@@ -24,4 +24,6 @@ STYLES = {
     "tim_stripe": tight(banded([0, 5, 7, 8, 8, 8, 8], [1], 13)),
     # 今日の成績 on the bar of the score screen (pal 13): white, navy ring, blue shadow
     "tim_bar": tight(banded([0, 6, 4, 1, 1, 1, 1], [15], 12)),
+    # 今日の成績 between « » (pal 8): deep blue letters in a white halo of two pixels, a blue shadow
+    "tim_halo": tight(banded([0, 5, 3, 1, 1, 1, 1], [8, 8], 15)),
 }
