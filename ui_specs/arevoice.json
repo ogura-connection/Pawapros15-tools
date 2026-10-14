@@ -5,7 +5,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -35,7 +35,7 @@
      "sprite": "00",
      "text": "Voice Settings",
      "style": "v_title",
-     "font": "ttf:rounded:16:0:0.8:0.5",
+     "font": "ttf:rounded:15:0:0.85:0.4",
      "slices": true,
      "slice_width": 88,
      "dy": 1,
@@ -51,7 +51,7 @@
      "sprite": "54",
      "text": "Save",
      "style": "v_btn_olive",
-     "font": "ttf:rounded:14:0:0.85:0.4",
+     "font": "ttf:rounded:14:0:0.85:0.25",
      "baseline": 28,
      "pages": [
       9
@@ -67,7 +67,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -104,7 +104,7 @@
      "sprite": "4b",
      "text": "Jersey Name",
      "style": "v_title",
-     "font": "ttf:rounded:16:0:0.8:0.5",
+     "font": "ttf:rounded:15:0:0.85:0.4",
      "baseline": 38,
      "pages": [
       39
@@ -118,7 +118,7 @@
      "sprite": "4d",
      "text": "New Name",
      "style": "v_new44",
-     "font": "ttf:rounded:14:0:0.9:0.4",
+     "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 108,
      "palettes": [
       44
@@ -129,10 +129,10 @@
      "sprite": "4e",
      "text": "Enter a jersey name",
      "style": "v_p43",
-     "font": "ttf:rounded:16:0:0.9:0.4",
+     "font": "ttf:rounded:16:0:1.0:0.25",
      "slices": true,
      "slice_width": 104,
-     "dy": 3,
+     "dy": 2,
      "palettes": [
       43
      ]
@@ -144,7 +144,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -174,7 +174,7 @@
      "sprite": "64",
      "text": "Next",
      "style": "v_btn_orange",
-     "font": "ttf:rounded:14:0:0.85:0.4",
+     "font": "ttf:rounded:14:0:0.85:0.25",
      "baseline": 28,
      "palettes": [
       70
@@ -184,7 +184,7 @@
      "sprite": "65",
      "text": "Quit",
      "style": "v_btn_purple",
-     "font": "ttf:rounded:14:0:0.85:0.4",
+     "font": "ttf:rounded:14:0:0.85:0.25",
      "baseline": 29,
      "palettes": [
       72
@@ -197,7 +197,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -261,7 +261,7 @@
      ],
      "text": "Current",
      "style": "v_cur56",
-     "font": "ttf:rounded:13:0:0.9:0.4",
+     "font": "ttf:rounded:13:0:1.0:0.25",
      "baseline": 18,
      "left": 3
     },
@@ -285,7 +285,7 @@
      ],
      "text": ": Test Voice",
      "style": "v_t56",
-     "font": "ttf:rounded:9:0:0.9:0.4",
+     "font": "ttf:rounded:9:0:0.9:0.25",
      "baseline": 12,
      "left": 22
     },
@@ -319,9 +319,9 @@
      ],
      "text": "Choose a player",
      "style": "v_q50_a",
-     "font": "ttf:rounded:14:0:0.9:0.4",
+     "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 18,
-     "left": 14
+     "left": 6
     },
     {
      "from": [
@@ -333,9 +333,9 @@
      ],
      "text": "Choose a player",
      "style": "v_q50_b",
-     "font": "ttf:rounded:14:0:0.9:0.4",
+     "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 18,
-     "left": 14
+     "left": 6
     }
    ],
    "name": "p10"
@@ -344,7 +344,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -374,14 +374,14 @@
      "sprite": "27",
      "text": "List",
      "style": "v_tag57",
-     "font": "ttf:rounded:11:0:0.9:0.4",
+     "font": "ttf:rounded:11:0:1.0:0.25",
      "baseline": 18
     },
     {
      "sprite": "28",
      "text": "Type",
      "style": "v_tag58",
-     "font": "ttf:rounded:11:0:0.9:0.4",
+     "font": "ttf:rounded:11:0:1.0:0.25",
      "baseline": 18
     }
    ],
@@ -391,7 +391,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -441,7 +441,7 @@
      ],
      "text": "Current",
      "style": "v_cur86",
-     "font": "ttf:rounded:14:0:0.9:0.4",
+     "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 22,
      "left": 3
     },
@@ -455,7 +455,7 @@
      ],
      "text": "New Voice",
      "style": "v_new81",
-     "font": "ttf:rounded:14:0:0.9:0.4",
+     "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 22,
      "left": 1
     },
@@ -463,21 +463,21 @@
      "sprite": "29",
      "text": "List",
      "style": "v_tag82",
-     "font": "ttf:rounded:11:0:0.9:0.4",
+     "font": "ttf:rounded:11:0:1.0:0.25",
      "baseline": 18
     },
     {
      "sprite": "2a",
      "text": "Type",
      "style": "v_tag83",
-     "font": "ttf:rounded:11:0:0.9:0.4",
+     "font": "ttf:rounded:11:0:1.0:0.25",
      "baseline": 16
     },
     {
      "sprite": "58",
      "text": "List",
      "style": "v_btn_green",
-     "font": "ttf:rounded:14:0:0.85:0.4",
+     "font": "ttf:rounded:14:0:0.85:0.25",
      "baseline": 37,
      "palettes": [
       69
@@ -487,7 +487,7 @@
      "sprite": "59",
      "text": "Type",
      "style": "v_btn_olive",
-     "font": "ttf:rounded:14:0:0.85:0.4",
+     "font": "ttf:rounded:14:0:0.85:0.25",
      "baseline": 38,
      "palettes": [
       68
@@ -520,7 +520,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -549,9 +549,9 @@
      ],
      "text": "Choose a setting type",
      "style": "v_p66_a",
-     "font": "ttf:rounded:15:0:0.9:0.4",
+     "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 23,
-     "left": -50
+     "left": -53
     },
     {
      "from": [
@@ -563,9 +563,9 @@
      ],
      "text": "Choose a setting type",
      "style": "v_p66_b",
-     "font": "ttf:rounded:15:0:0.9:0.4",
+     "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 23,
-     "left": 146
+     "left": 147
     },
     {
      "from": [
@@ -644,7 +644,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -695,7 +695,7 @@
      "sprite": "5e",
      "text": "Yes",
      "style": "v_yn89",
-     "font": "ttf:rounded:16:0:0.9:0.4",
+     "font": "ttf:rounded:16:0:1.0:0.25",
      "baseline": 24,
      "palettes": [
       89
@@ -706,7 +706,7 @@
      "sprite": "5f",
      "text": "No",
      "style": "v_yn89",
-     "font": "ttf:rounded:16:0:0.9:0.4",
+     "font": "ttf:rounded:16:0:1.0:0.25",
      "baseline": 24,
      "palettes": [
       89
@@ -717,7 +717,7 @@
      "sprite": "14",
      "text": "Is this OK?",
      "style": "v_q89",
-     "font": "ttf:rounded:16:0:0.9:0.4",
+     "font": "ttf:rounded:16:0:1.0:0.25",
      "baseline": 24,
      "palettes": [
       89
@@ -727,10 +727,10 @@
      "sprite": "2b",
      "text": "Choose a voice",
      "style": "v_p87",
-     "font": "ttf:rounded:16:0:0.9:0.4",
+     "font": "ttf:rounded:16:0:1.0:0.25",
      "slices": true,
      "slice_width": 128,
-     "dy": 1,
+     "dy": 0,
      "palettes": [
       87
      ]
@@ -742,7 +742,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -765,7 +765,7 @@
      "sprite": "5a",
      "text": "Cancel",
      "style": "v_btn_purple",
-     "font": "ttf:rounded:14:0:0.85:0.4",
+     "font": "ttf:rounded:14:0:0.85:0.25",
      "baseline": 38,
      "palettes": [
       72
@@ -778,7 +778,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -808,10 +808,10 @@
      "sprite": "2c",
      "text": "Enter the reading",
      "style": "v_p99",
-     "font": "ttf:rounded:16:0:0.9:0.4",
+     "font": "ttf:rounded:16:0:1.0:0.25",
      "slices": true,
      "slice_width": 128,
-     "dy": 3
+     "dy": 2
     }
    ],
    "name": "p27"
@@ -820,7 +820,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -884,7 +884,7 @@
      ],
      "text": ": Test Voice",
      "style": "v_t101",
-     "font": "ttf:rounded:11:0:0.9:0.4",
+     "font": "ttf:rounded:11:0:1.0:0.25",
      "baseline": 17,
      "left": 1
     },
@@ -912,7 +912,7 @@
      "sprite": "10",
      "text": "Announcer",
      "style": "v_ann111",
-     "font": "ttf:rounded:15:0:0.9:0.4",
+     "font": "ttf:rounded:15:0:1.0:0.25",
      "baseline": 34,
      "palettes": [
       111
@@ -928,9 +928,9 @@
      ],
      "text": "PA Announcer",
      "style": "v_pa102_a",
-     "font": "ttf:rounded:12:0:0.9:0.4",
+     "font": "ttf:rounded:12:0:1.0:0.25",
      "baseline": 20,
-     "left": -11
+     "left": -16
     },
     {
      "from": [
@@ -942,9 +942,9 @@
      ],
      "text": "PA Announcer",
      "style": "v_pa102_b",
-     "font": "ttf:rounded:12:0:0.9:0.4",
+     "font": "ttf:rounded:12:0:1.0:0.25",
      "baseline": 20,
-     "left": 21
+     "left": 16
     },
     {
      "from": [
@@ -973,7 +973,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:14:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -1003,7 +1003,7 @@
      "sprite": "2d",
      "text": "Choose a voice pattern",
      "style": "v_p153",
-     "font": "ttf:rounded:16:0:0.9:0.4",
+     "font": "ttf:rounded:16:0:1.0:0.25",
      "slices": true,
      "slice_width": 128,
      "dy": 2
@@ -1012,7 +1012,7 @@
      "sprite": "15",
      "text": "Is this OK?",
      "style": "v_q107",
-     "font": "ttf:rounded:15:0:0.9:0.4",
+     "font": "ttf:rounded:15:0:1.0:0.25",
      "baseline": 36,
      "palettes": [
       107
