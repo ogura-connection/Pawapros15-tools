@@ -7,6 +7,7 @@
    "style": "mylhead",
    "font": "ttf:rounded:15:0:0.9:0.5",
    "under": 3,
+   "share": true,
    "areas": [
     [
      0,
@@ -53,79 +54,774 @@
    ],
    "labels": [
     {
-     "sprite": "01",
-     "text": "Choose Your Face",
-     "slices": true
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "01"
+     ],
+     "text": "Choose Your",
+     "left": -27,
+     "baseline": 28
     },
     {
-     "sprite": "02",
-     "text": "Choose Your Hometown",
-     "slices": true
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "01"
+     ],
+     "text": "Face",
+     "left": -38,
+     "baseline": 28
     },
     {
-     "sprite": "03",
-     "text": "Choose Your Background",
-     "slices": true
+     "from": [
+      1,
+      0,
+      80,
+      56,
+      120
+     ],
+     "sprites": [
+      "01"
+     ],
+     "empty": true
     },
     {
-     "sprite": "04",
-     "text": "Choose Your Birthday",
-     "slices": true
+     "from": [
+      3,
+      0,
+      40,
+      104,
+      80
+     ],
+     "sprites": [
+      "02"
+     ],
+     "text": "Choose Your",
+     "left": 29,
+     "baseline": 28
     },
     {
-     "sprite": "05",
-     "text": "Choose Your Draft Pick",
-     "slices": true
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "02"
+     ],
+     "text": "Hometown",
+     "left": 42,
+     "baseline": 28
     },
     {
-     "sprite": "06",
-     "text": "Choose Your Handedness",
-     "slices": true
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "02"
+     ],
+     "empty": true
     },
     {
-     "sprite": "07",
-     "text": "Choose Your Position",
-     "slices": true
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Choose Your",
+     "left": -69,
+     "baseline": 28
     },
     {
-     "sprite": "08",
-     "text": "Choose Your Form",
-     "slices": true
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Background",
+     "left": -80,
+     "baseline": 28
     },
     {
-     "sprite": "09",
-     "text": "Choose Your Ability Type",
-     "slices": true
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      40
+     ],
+     "sprites": [
+      "03"
+     ],
+     "empty": true
     },
     {
-     "sprite": "0a",
-     "text": "Choose Two Appeal Points",
-     "slices": true
+     "from": [
+      2,
+      96,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "03"
+     ],
+     "empty": true
     },
     {
-     "sprite": "0b",
-     "text": "Choose One Appeal Point",
-     "slices": true
+     "from": [
+      3,
+      0,
+      80,
+      104,
+      120
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Choose Your",
+     "left": 39,
+     "baseline": 28
     },
     {
-     "sprite": "0c",
-     "text": "Choose Your Weak Points",
-     "slices": true
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Birthday",
+     "left": 52,
+     "baseline": 28
     },
     {
-     "sprite": "0d",
-     "text": "Choose Your Hobby",
-     "slices": true
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
     },
     {
-     "sprite": "0e",
-     "text": "Choose Your Family Makeup",
-     "slices": true
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Choose Your",
+     "left": -126,
+     "baseline": 28
     },
     {
-     "sprite": "0f",
-     "text": "Choose Your Family Setup",
-     "slices": true
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Draft Pick",
+     "left": -137,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      40
+     ],
+     "sprites": [
+      "05"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      0,
+      40,
+      88,
+      80
+     ],
+     "sprites": [
+      "05"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Choose Your",
+     "left": -83,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Handedness",
+     "left": -94,
+     "baseline": 28
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      104,
+      40
+     ],
+     "sprites": [
+      "06"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Choose Your",
+     "left": -74,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Position",
+     "left": -85,
+     "baseline": 28
+    },
+    {
+     "from": [
+      2,
+      0,
+      40,
+      120,
+      80
+     ],
+     "sprites": [
+      "07"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "Choose Your",
+     "left": -61,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "Form",
+     "left": -72,
+     "baseline": 28
+    },
+    {
+     "from": [
+      4,
+      0,
+      40,
+      120,
+      80
+     ],
+     "sprites": [
+      "08"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Choose Your",
+     "left": -80,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Ability Type",
+     "left": -91,
+     "baseline": 28
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      104,
+      40
+     ],
+     "sprites": [
+      "09"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Choose Two",
+     "left": -166,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Appeal",
+     "left": -181,
+     "baseline": 28
+    },
+    {
+     "from": [
+      1,
+      80,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Points",
+     "left": 62,
+     "baseline": 28
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      40
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      0,
+      40,
+      80,
+      80
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      80,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Choose One",
+     "left": -113,
+     "baseline": 28
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Appeal",
+     "left": -48,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Point",
+     "left": -109,
+     "baseline": 28
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      40
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      0,
+      40,
+      80,
+      80
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "Choose Your",
+     "left": -139,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "Weak Points",
+     "left": -150,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      80,
+      88,
+      120
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "Choose Your",
+     "left": -45,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "Hobby",
+     "left": -56,
+     "baseline": 28
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      80,
+      40
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      56,
+      128,
+      96
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Choose Your",
+     "left": 24,
+     "baseline": 28
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Family",
+     "left": 13,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Makeup",
+     "left": -53,
+     "baseline": 28
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "Choose Your",
+     "left": -107,
+     "baseline": 28
+    },
+    {
+     "from": [
+      0,
+      88,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "Family",
+     "left": -118,
+     "baseline": 28
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      128,
+      128
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "Setup",
+     "left": 216,
+     "baseline": 28
+    },
+    {
+     "from": [
+      4,
+      0,
+      120,
+      128,
+      128
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      112,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "empty": true
     }
    ]
   }

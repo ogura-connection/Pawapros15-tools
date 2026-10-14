@@ -219,5 +219,275 @@
   ],
   "shadow": 0,
   "cut": 3
+ },
+ "o_f1_r1_s0_c3": {
+  "kind": "solid",
+  "fill": 1,
+  "rings": [
+   1
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f12_rb72_s0_c3": {
+  "kind": "solid",
+  "fill": 12,
+  "rings": [
+   11,
+   7,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f4_rcfb3_s0_c3": {
+  "kind": "solid",
+  "fill": 4,
+  "rings": [
+   12,
+   15,
+   11,
+   3
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f12_rabf4_s0_c3": {
+  "kind": "solid",
+  "fill": 12,
+  "rings": [
+   10,
+   11,
+   15,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f12_r44_s0_c3": {
+  "kind": "solid",
+  "fill": 12,
+  "rings": [
+   4,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f5_re4_s0_c3": {
+  "kind": "solid",
+  "fill": 5,
+  "rings": [
+   14,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f11_r5d4_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   5,
+   13,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f14_r4cf72_s0_c3": {
+  "kind": "solid",
+  "fill": 14,
+  "rings": [
+   4,
+   12,
+   15,
+   7,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f12_rb4_s0_c3": {
+  "kind": "solid",
+  "fill": 12,
+  "rings": [
+   11,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f13_rb4_s0_c3": {
+  "kind": "solid",
+  "fill": 13,
+  "rings": [
+   11,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f13_reb4_s0_c3": {
+  "kind": "solid",
+  "fill": 13,
+  "rings": [
+   14,
+   11,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f11_r842_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   8,
+   4,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f11_r4_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f11_r72_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   7,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r22_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   2,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r35_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   3,
+   5
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r15_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   1,
+   5
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f12_re4_s0_c3": {
+  "kind": "solid",
+  "fill": 12,
+  "rings": [
+   14,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r55_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   5,
+   5
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r77_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   7,
+   7
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r73_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   7,
+   3
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_r72_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   7,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f15_rf_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   15
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f1_rff_s0_c3": {
+  "kind": "solid",
+  "fill": 1,
+  "rings": [
+   15,
+   15
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f1_rbff_s0_c3": {
+  "kind": "solid",
+  "fill": 1,
+  "rings": [
+   11,
+   15,
+   15
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f1_r5ff_s0_c3": {
+  "kind": "solid",
+  "fill": 1,
+  "rings": [
+   5,
+   15,
+   15
+  ],
+  "shadow": 0,
+  "cut": 3
  }
 }
