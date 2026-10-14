@@ -1013,6 +1013,7 @@ def repack(group, d, bank, pages, patches, project=None):
                              % (p.sprite, p.x0, p.x1, p.y0, p.y1, p.page))
     art = []
     sliced = {}                                # label index: ([(dx, dy) of each strip], width, height)
+    seen, alias = {}, {}                       # strips of sliced labels: art -> first place; extra index -> that place
     extra = []                                 # (label index, art) of the second and later pieces of a label
     for k, (lab, (mine, box)) in enumerate(zip(labels, old)):
         style = RENDER[opt(lab, "style", "command")]
@@ -1027,12 +1028,19 @@ def repack(group, d, bank, pages, patches, project=None):
             H = step * (len(lines) - 1) + lines[-1][0].shape[0]
             strips = []                        # (art, dx, dy) from the top left of the whole label
             for li, (a, b) in enumerate(lines):
-                n = -(-a.shape[1] // lab.get("slice_width", U.PAGE))
-                cuts = np.linspace(0, a.shape[1], n + 1).astype(int)
-                strips += [(a[:, cuts[j]:cuts[j + 1]], (W - a.shape[1]) // 2 + cuts[j], li * step) for j in range(n)]
+                cuts = list(range(0, a.shape[1], lab.get("slice_width", U.PAGE))) + [a.shape[1]]
+                strips += [(a[:, c0:c1], (W - a.shape[1]) // 2 + c0, li * step) for c0, c1 in zip(cuts, cuts[1:])]
             sliced[k] = ([(dx, dy) for _, dx, dy in strips], W, H)
             art.append((strips[0][0], lines[0][1]))
-            extra += [(k, (a, lines[0][1])) for a, _, _ in strips[1:]]
+            seen.setdefault((strips[0][0].shape, strips[0][0].tobytes()), ("main", k))
+            for a, _, _ in strips[1:]:         # a strip drawn before (HOME RUN of the two-run homer) is shared
+                key = (a.shape, a.tobytes())
+                if key in seen:
+                    alias[len(extra)] = seen[key]
+                    extra.append((k, (np.zeros((1, 1), np.uint8), lines[0][1])))
+                else:
+                    seen[key] = ("extra", len(extra))
+                    extra.append((k, (a, lines[0][1])))
         elif "text" in lab:
             art.append(style(*typeset(lab["text"], opt(lab, "font", "command"), project)))
         elif "art" in lab:
@@ -1076,8 +1084,12 @@ def repack(group, d, bank, pages, patches, project=None):
         per = len(mine) // opt(lab, "layers", 1) if "sprite" in lab else 1
         if i in sliced:                                          # strip n is drawn by part n of the sprite
             offs, W, H = sliced[i]
-            spots = [(pg, x, y, img)] + [placed[len(labels) + 1 + j] + (a[0],)
-                                         for j, (li, a) in enumerate(extra) if li == i]
+            def spot(j):
+                kind, n = alias.get(j, ("extra", j))
+                if kind == "main":
+                    return placed[n] + (art[n][0],)
+                return placed[len(labels) + 1 + n] + (extra[n][1][0],)
+            spots = [(pg, x, y, img)] + [spot(j) for j, (li, a) in enumerate(extra) if li == i]
             if len(spots) > len(mine):
                 raise ValueError("%s needs %d parts, its sprite has %d" % (lab["text"], len(spots), len(mine)))
             left = opt(lab, "left", lab.get("centre_x", (box[0] + box[2]) // 2) - W // 2)
