@@ -1001,6 +1001,84 @@
      "align": "left"
     }
    ]
+  },
+  {
+   "name": "at-bat number",
+   "bank": "h3_sc_ps2",
+   "style": "sc_atbat",
+   "font": "ttf:din:11:0:1:0.1",
+   "valign": "centre",
+   "share": true,
+   "areas": [
+    [
+     1,
+     48,
+     80,
+     96,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      48,
+      80,
+      96,
+      96
+     ],
+     "sprites": [
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "2a",
+      "2b",
+      "2c"
+     ],
+     "text": "AT-BAT",
+     "left": -55
+    },
+    {
+     "from": [
+      1,
+      48,
+      80,
+      96,
+      96
+     ],
+     "sprites": [
+      "2d"
+     ],
+     "text": "AT-BAT",
+     "left": -58
+    }
+   ]
+  }
+ ],
+ "paint": [
+  {
+   "bank": "h3_sc_ps2",
+   "page": 0,
+   "rect": [
+    3,
+    75,
+    51,
+    93
+   ],
+   "copy": [
+    0,
+    3,
+    75,
+    5,
+    93
+   ],
+   "text": "SIGN",
+   "font": "ttf:din:13:0:1:0.2",
+   "style": "sc_sign",
+   "dy": 1
   }
  ]
 }
