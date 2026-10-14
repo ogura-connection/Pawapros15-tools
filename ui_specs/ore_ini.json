@@ -4110,6 +4110,7 @@
     1,
     1
    ],
+   "share": true,
    "areas": [
     [
      2,
@@ -4263,158 +4264,238 @@
      "valign": "centre"
     },
     {
-     "sprite": "07",
-     "palettes": [
-      20
+     "from": [
+      6,
+      0,
+      0,
+      56,
+      32
+     ],
+     "sprites": [
+      "07"
      ],
      "text": "1 boy",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 7,
+     "baseline": 22
     },
     {
-     "sprite": "08",
-     "palettes": [
-      20
+     "from": [
+      4,
+      0,
+      0,
+      32,
+      32
+     ],
+     "sprites": [
+      "08"
      ],
      "text": "2 boys",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 4,
+     "baseline": 22
     },
     {
-     "sprite": "09",
-     "palettes": [
-      20
+     "from": [
+      4,
+      0,
+      32,
+      32,
+      64
+     ],
+     "sprites": [
+      "09"
      ],
      "text": "3 boys",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 4,
+     "baseline": 22
     },
     {
-     "sprite": "0a",
-     "palettes": [
-      20
+     "from": [
+      6,
+      56,
+      0,
+      112,
+      32
+     ],
+     "sprites": [
+      "0a"
      ],
      "text": "1 girl",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 9,
+     "baseline": 22
     },
     {
-     "sprite": "0b",
-     "palettes": [
-      20
+     "from": [
+      4,
+      64,
+      0,
+      96,
+      32
+     ],
+     "sprites": [
+      "0b"
      ],
      "text": "2 girls",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 6,
+     "baseline": 22
     },
     {
-     "sprite": "0c",
-     "palettes": [
-      20
+     "from": [
+      4,
+      64,
+      32,
+      96,
+      64
+     ],
+     "sprites": [
+      "0c"
      ],
      "text": "3 girls",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 6,
+     "baseline": 22
     },
     {
-     "sprite": "0d",
-     "palettes": [
-      20
+     "from": [
+      6,
+      0,
+      0,
+      56,
+      32
      ],
-     "text": "1 boy, 1 girl",
+     "sprites": [
+      "0d",
+      "0e",
+      "0f"
+     ],
+     "text": "1 boy,",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 7,
+     "baseline": 22
     },
     {
-     "sprite": "0e",
-     "palettes": [
-      20
+     "from": [
+      4,
+      0,
+      0,
+      32,
+      32
      ],
-     "text": "1 boy, 2 girls",
+     "sprites": [
+      "10",
+      "11",
+      "12"
+     ],
+     "text": "2 boys,",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": -1,
+     "baseline": 22
     },
     {
-     "sprite": "0f",
-     "palettes": [
-      20
+     "from": [
+      4,
+      0,
+      32,
+      32,
+      64
      ],
-     "text": "1 boy, 3 girls",
+     "sprites": [
+      "13",
+      "14"
+     ],
+     "text": "3 boys,",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": -1,
+     "baseline": 22
     },
     {
-     "sprite": "10",
-     "palettes": [
-      20
+     "from": [
+      6,
+      56,
+      0,
+      112,
+      32
      ],
-     "text": "2 boys, 1 girl",
+     "sprites": [
+      "0d",
+      "10",
+      "13"
+     ],
+     "text": "1 girl",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 6,
+     "baseline": 22
     },
     {
-     "sprite": "11",
-     "palettes": [
-      20
+     "from": [
+      4,
+      64,
+      0,
+      96,
+      32
      ],
-     "text": "2 boys, 2 girls",
+     "sprites": [
+      "0e",
+      "11",
+      "14"
+     ],
+     "text": "2 girls",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 6,
+     "baseline": 22
     },
     {
-     "sprite": "12",
-     "palettes": [
-      20
+     "from": [
+      4,
+      64,
+      32,
+      96,
+      64
      ],
-     "text": "2 boys, 3 girls",
+     "sprites": [
+      "0f",
+      "12"
+     ],
+     "text": "3 girls",
      "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "font": "ttf:din:14:0:1:0.35",
+     "left": 6,
+     "baseline": 22
     },
     {
-     "sprite": "13",
-     "palettes": [
-      20
+     "from": [
+      6,
+      32,
+      0,
+      56,
+      32
      ],
-     "text": "3 boys, 1 girl",
-     "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "empty": true
     },
     {
-     "sprite": "14",
-     "palettes": [
-      20
+     "from": [
+      6,
+      88,
+      0,
+      112,
+      32
      ],
-     "text": "3 boys, 2 girls",
-     "style": "kzomint",
-     "font": "ttf:din:15:0:1:0.35",
-     "centre_x": 217,
-     "valign": "centre"
+     "empty": true
     },
     {
      "sprite": "02",
