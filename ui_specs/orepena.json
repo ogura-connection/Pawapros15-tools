@@ -6620,10 +6620,10 @@
       "0d"
      ],
      "text": "Series",
-     "style": "o2_f79b_r11ff_s12_c1",
-     "font": "dc13g2b10",
-     "left": -2,
-     "baseline": 20
+     "style": "o2_f79b_r11ff_s12_c2",
+     "font": "dc15g2b10",
+     "left": -6,
+     "baseline": 22
     },
     {
      "from": [
@@ -6637,10 +6637,10 @@
       "0d"
      ],
      "text": "Champ Bonus",
-     "style": "o2_f79b_r11ff_s12_c1",
-     "font": "dc13g2b10",
+     "style": "o2_f79b_r11ff_s12_c2",
+     "font": "dc15g2b10",
      "left": -80,
-     "baseline": 20
+     "baseline": 22
     },
     {
      "from": [
@@ -6906,9 +6906,9 @@
      ],
      "text": "Perfect Game",
      "style": "o2_f568_rc1_s11_c1",
-     "font": "nb11",
-     "left": 2,
-     "baseline": 17
+     "font": "dc11g2b10",
+     "left": -7,
+     "baseline": 18
     },
     {
      "from": [
@@ -7180,9 +7180,9 @@
      ],
      "text": "3-Hit Game",
      "style": "o2_ff_r72_s11_c1",
-     "font": "nb11",
-     "left": 2,
-     "baseline": 17
+     "font": "dc11g2b10",
+     "left": -6,
+     "baseline": 19
     },
     {
      "from": [
@@ -7626,8 +7626,8 @@
      ],
      "text": "Sac Fly",
      "style": "o2_ff_r72_s11_c1",
-     "font": "dc11g2b10",
-     "left": -2,
+     "font": "dc12g2b10",
+     "left": -4,
      "baseline": 18
     },
     {
@@ -7724,9 +7724,9 @@
      ],
      "text": "Strikeouts",
      "style": "o2_ff_r72_s11_c1",
-     "font": "nb11",
-     "left": 3,
-     "baseline": 16
+     "font": "dc11g2b10",
+     "left": -5,
+     "baseline": 18
     },
     {
      "from": [
@@ -7771,9 +7771,9 @@
      ],
      "text": "Scoreless Streak",
      "style": "o2_ff_r72_s11_c1",
-     "font": "nb11",
-     "left": 6,
-     "baseline": 16
+     "font": "dc11g2b10",
+     "left": -7,
+     "baseline": 18
     },
     {
      "from": [
@@ -8185,9 +8185,9 @@
      ],
      "text": "Shutout",
      "style": "o2_f568_rc1_s11_c1",
-     "font": "nb11",
-     "left": -2,
-     "baseline": 17
+     "font": "dc11g2b10",
+     "left": -7,
+     "baseline": 18
     },
     {
      "from": [
@@ -8219,9 +8219,9 @@
      ],
      "text": "Hits Allowed",
      "style": "o2_fe9_r1f_s7_c1",
-     "font": "nb11",
-     "left": 1,
-     "baseline": 18
+     "font": "dc11g2b10",
+     "left": -7,
+     "baseline": 20
     },
     {
      "from": [
@@ -8282,9 +8282,9 @@
       "00"
      ],
      "text": "Results",
-     "style": "o2_fa2_r1f1f_s0_c2",
+     "style": "o2_fc8d0dde8_r393939a2a21f1f_s0_c2",
      "font": "dc28g2b10",
-     "left": 22,
+     "left": 16,
      "baseline": 38
     },
     {
