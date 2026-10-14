@@ -12670,7 +12670,7 @@
       "76"
      ],
      "text": "Slider",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 2,
      "baseline": 13
@@ -12687,7 +12687,7 @@
       "77"
      ],
      "text": "Curve",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 4,
      "baseline": 13
@@ -12704,7 +12704,7 @@
       "78"
      ],
      "text": "Fork",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 3,
      "baseline": 14
@@ -12734,7 +12734,7 @@
       "79"
      ],
      "text": "Sinker",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 3,
      "baseline": 13
@@ -12751,7 +12751,7 @@
       "7a"
      ],
      "text": "Shuuto",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 3,
      "baseline": 13
@@ -12781,7 +12781,7 @@
       "7b"
      ],
      "text": "Slow Ball",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 4,
      "baseline": 13
@@ -12798,7 +12798,7 @@
       "7c"
      ],
      "text": "Fastball",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 2,
      "baseline": 13
@@ -12828,7 +12828,7 @@
       "7d"
      ],
      "text": "Palm",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 4,
      "baseline": 13
@@ -12845,7 +12845,7 @@
       "7e"
      ],
      "text": "Knuckle",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 2,
      "baseline": 13
@@ -12875,7 +12875,7 @@
       "7f"
      ],
      "text": "V-Slider",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 2,
      "baseline": 13
@@ -12892,7 +12892,7 @@
       "81"
      ],
      "text": "Screwball",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 2,
      "baseline": 13
@@ -12909,7 +12909,7 @@
       "82"
      ],
      "text": "Slow Curve",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb12",
      "left": 2,
      "baseline": 12
@@ -12939,8 +12939,8 @@
       "83"
      ],
      "text": "Hard Slider",
-     "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
+     "style": "o2_f21_r8c_s0_c1",
+     "font": "nb11",
      "left": 3,
      "baseline": 12
     },
@@ -12956,10 +12956,10 @@
       "84"
      ],
      "text": "Changeup",
-     "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
+     "style": "o2_f21_r8c_s0_c1",
+     "font": "nb13",
      "left": 2,
-     "baseline": 13
+     "baseline": 12
     },
     {
      "from": [
@@ -12986,7 +12986,7 @@
       "85"
      ],
      "text": "Drop",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 3,
      "baseline": 13
@@ -13003,7 +13003,7 @@
       "86"
      ],
      "text": "Hard Sinker",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb11",
      "left": 2,
      "baseline": 12
@@ -13033,7 +13033,7 @@
       "87"
      ],
      "text": "Slurve",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 2,
      "baseline": 13
@@ -13050,7 +13050,7 @@
       "88"
      ],
      "text": "Cutter",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 1,
      "baseline": 13
@@ -13067,7 +13067,7 @@
       "89"
      ],
      "text": "Circle Change",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb11",
      "left": 1,
      "baseline": 12
@@ -13084,7 +13084,7 @@
       "8a"
      ],
      "text": "Hard Shuuto",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb11",
      "left": 2,
      "baseline": 12
@@ -13101,7 +13101,7 @@
       "8b"
      ],
      "text": "Drop Curve",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb11",
      "left": 3,
      "baseline": 12
@@ -13118,7 +13118,7 @@
       "8c"
      ],
      "text": "Knuckle Curve",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb11",
      "left": 1,
      "baseline": 12
@@ -13135,7 +13135,7 @@
       "8d"
      ],
      "text": "Original",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 1,
      "baseline": 14
@@ -13165,7 +13165,7 @@
       "8e"
      ],
      "text": "Yone Ball",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 2,
      "baseline": 13
@@ -13182,7 +13182,7 @@
       "8f"
      ],
      "text": "Yoshi Ball",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 2,
      "baseline": 13
@@ -13199,7 +13199,7 @@
       "90"
      ],
      "text": "Emo Ball",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 1,
      "baseline": 13
@@ -13216,7 +13216,7 @@
       "91"
      ],
      "text": "Razor Shuuto",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb11",
      "left": 2,
      "baseline": 12
@@ -13233,7 +13233,7 @@
       "92"
      ],
      "text": "2-Seamer",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_f21_r8c_s0_c1",
      "font": "nb14",
      "left": 10,
      "baseline": 13
@@ -13667,9 +13667,9 @@
       "10"
      ],
      "text": "Slider",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 13,
+     "left": 12,
      "baseline": 22
     },
     {
@@ -13684,9 +13684,9 @@
       "11"
      ],
      "text": "Curve",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 6,
+     "left": 5,
      "baseline": 22
     },
     {
@@ -13714,7 +13714,7 @@
       "12"
      ],
      "text": "Fork",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
      "left": 18,
      "baseline": 24
@@ -13731,9 +13731,9 @@
       "13"
      ],
      "text": "Sinker",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 12,
+     "left": 11,
      "baseline": 24
     },
     {
@@ -13761,9 +13761,9 @@
       "14"
      ],
      "text": "Shuuto",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 10,
+     "left": 8,
      "baseline": 24
     },
     {
@@ -13791,9 +13791,9 @@
       "15"
      ],
      "text": "Palm",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 10,
+     "left": 9,
      "baseline": 23
     },
     {
@@ -13808,9 +13808,9 @@
       "16"
      ],
      "text": "Knuckle",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 6,
+     "left": 5,
      "baseline": 24
     },
     {
@@ -13838,9 +13838,9 @@
       "17"
      ],
      "text": "V-Slider",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 4,
+     "left": 3,
      "baseline": 22
     },
     {
@@ -13855,7 +13855,7 @@
       "19"
      ],
      "text": "Screwball",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
      "left": 8,
      "baseline": 22
@@ -13872,9 +13872,9 @@
       "1a"
      ],
      "text": "Slow Curve",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
-     "left": 4,
+     "left": 3,
      "baseline": 20
     },
     {
@@ -13902,9 +13902,9 @@
       "1b"
      ],
      "text": "Hard Slider",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
-     "left": 6,
+     "left": 4,
      "baseline": 20
     },
     {
@@ -13919,9 +13919,9 @@
       "1c"
      ],
      "text": "Changeup",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
-     "left": 8,
+     "left": 7,
      "baseline": 21
     },
     {
@@ -13949,7 +13949,7 @@
       "1d"
      ],
      "text": "Drop",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
      "left": 18,
      "baseline": 23
@@ -13966,9 +13966,9 @@
       "1e"
      ],
      "text": "Hard Sinker",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
-     "left": 4,
+     "left": 3,
      "baseline": 22
     },
     {
@@ -13996,9 +13996,9 @@
       "1f"
      ],
      "text": "Slurve",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 11,
+     "left": 10,
      "baseline": 22
     },
     {
@@ -14013,9 +14013,9 @@
       "20"
      ],
      "text": "Cutter",
-     "style": "o2_f8_r8_s0_c2",
+     "style": "o2_ff_r88_s0_c2",
      "font": "dc14g2b10",
-     "left": 14,
+     "left": 12,
      "baseline": 23
     },
     {
@@ -14030,9 +14030,9 @@
       "21"
      ],
      "text": "Circle Change",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb12",
-     "left": 3,
+     "left": 2,
      "baseline": 20
     },
     {
@@ -14060,10 +14060,10 @@
       "22"
      ],
      "text": "Hard Shuuto",
-     "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
+     "style": "o2_ff_r88_s0_c1",
+     "font": "nb13",
      "left": 1,
-     "baseline": 22
+     "baseline": 21
     },
     {
      "from": [
@@ -14077,9 +14077,9 @@
       "28"
      ],
      "text": "Razor Shuuto",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb12",
-     "left": 2,
+     "left": 0,
      "baseline": 21
     },
     {
@@ -14094,7 +14094,7 @@
       "29"
      ],
      "text": "Drop Curve",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
      "left": 4,
      "baseline": 20
@@ -14111,10 +14111,10 @@
       "2a"
      ],
      "text": "Knuckle Curve",
-     "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
+     "style": "o2_ff_r8_s0_c1",
+     "font": "nb11",
      "left": 0,
-     "baseline": 21
+     "baseline": 20
     },
     {
      "from": [
@@ -14128,9 +14128,9 @@
       "2b"
      ],
      "text": "2-Seamer",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
-     "left": 10,
+     "left": 8,
      "baseline": 21
     },
     {
@@ -14145,9 +14145,9 @@
       "2c"
      ],
      "text": "Moving Fast",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
-     "left": 2,
+     "left": 1,
      "baseline": 21
     },
     {
@@ -14159,9 +14159,9 @@
       64
      ],
      "text": "Original",
-     "style": "o2_f8_r8_s0_c1",
+     "style": "o2_ff_r88_s0_c1",
      "font": "nb14",
-     "left": 6,
+     "left": 4,
      "baseline": 21
     },
     {
@@ -14173,6 +14173,1216 @@
       96
      ],
      "empty": true
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "y3_jim0",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "From",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc36g2b10",
+     "left": 45,
+     "baseline": 48
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "the",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc36g2b10",
+     "left": 6,
+     "baseline": 48
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Fateful",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc36g2b10",
+     "left": -62,
+     "baseline": 48
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      128,
+      120
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Draft,",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc36g2b10",
+     "left": -70,
+     "baseline": 48
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      128,
+      120
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "One",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc36g2b10",
+     "left": 19,
+     "baseline": 44
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      128,
+      120
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Night",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc36g2b10",
+     "left": -43,
+     "baseline": 44
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      64,
+      120
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Later...",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc36g2b10",
+     "left": -83,
+     "baseline": 44
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "y3_jim1",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Last",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": 34,
+     "baseline": 43
+    },
+    {
+     "from": [
+      0,
+      0,
+      56,
+      128,
+      112
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Day of a",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": -21,
+     "baseline": 43
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Baseball",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": -21,
+     "baseline": 43
+    },
+    {
+     "from": [
+      1,
+      0,
+      56,
+      88,
+      112
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Life...",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": -20,
+     "baseline": 43
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      48
+     ],
+     "sprites": [
+      "01"
+     ],
+     "text": "The Grand Stage of Fate",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": -22,
+     "baseline": 40
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      128,
+      96
+     ],
+     "sprites": [
+      "01"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      48,
+      128
+     ],
+     "sprites": [
+      "01"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      48,
+      96,
+      88,
+      120
+     ],
+     "sprites": [
+      "01"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      128,
+      48
+     ],
+     "sprites": [
+      "02"
+     ],
+     "text": "Koshien Championship Final",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": -17,
+     "baseline": 40
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      128,
+      96
+     ],
+     "sprites": [
+      "02"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      88,
+      128
+     ],
+     "sprites": [
+      "02"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      88,
+      96,
+      128,
+      112
+     ],
+     "sprites": [
+      "02"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      88,
+      112,
+      128,
+      128
+     ],
+     "sprites": [
+      "02"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      112,
+      112,
+      120,
+      128
+     ],
+     "sprites": [
+      "02"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      48
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "College",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": 50,
+     "baseline": 39
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      128,
+      96
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "National",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": 33,
+     "baseline": 39
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      128,
+      128
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Final",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": 28,
+     "baseline": 39
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      128,
+      16
+     ],
+     "sprites": [
+      "03"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      0,
+      16,
+      16,
+      64
+     ],
+     "sprites": [
+      "03"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      128,
+      48
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Industrial League Final",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": 16,
+     "baseline": 40
+    },
+    {
+     "from": [
+      5,
+      0,
+      48,
+      128,
+      96
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      104,
+      128
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      16,
+      16,
+      112,
+      40
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      128,
+      48
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "The",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": 82,
+     "baseline": 40
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      128,
+      96
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Fateful",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": 13,
+     "baseline": 40
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      128,
+      128
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Final",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc32g2b10",
+     "left": -5,
+     "baseline": 40
+    },
+    {
+     "from": [
+      7,
+      0,
+      64,
+      128,
+      80
+     ],
+     "sprites": [
+      "05"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      0,
+      80,
+      16,
+      128
+     ],
+     "sprites": [
+      "05"
+     ],
+     "empty": true
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "y3_file",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     72
+    ],
+    [
+     1,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     72,
+     64,
+     96
+    ],
+    [
+     2,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     72
+    ],
+    [
+     4,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     72,
+     72,
+     96
+    ],
+    [
+     4,
+     104,
+     72,
+     128,
+     96
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     6,
+     96,
+     64,
+     128,
+     104
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      0,
+      48,
+      80,
+      88
+     ],
+     "sprites": [
+      "02"
+     ],
+     "text": "Save:",
+     "style": "o2_f77d_r62_s0_c2",
+     "font": "dc31g2b10",
+     "left": 35,
+     "baseline": 37
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Choose a",
+     "style": "o2_f77d_r62_s0_c2",
+     "font": "dc31g2b10",
+     "left": 37,
+     "baseline": 37
+    },
+    {
+     "from": [
+      3,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "File",
+     "style": "o2_f77d_r62_s0_c2",
+     "font": "dc31g2b10",
+     "left": 39,
+     "baseline": 37
+    },
+    {
+     "from": [
+      5,
+      0,
+      88,
+      80,
+      128
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Load:",
+     "style": "o2_f77d_r62_s0_c2",
+     "font": "dc31g2b10",
+     "left": 37,
+     "baseline": 37
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "If you",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 43,
+     "baseline": 19
+    },
+    {
+     "from": [
+      4,
+      0,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "swap memory",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": -39,
+     "baseline": 19
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "cards, re-enter",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": -58,
+     "baseline": 19
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "this screen.",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": -64,
+     "baseline": 19
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      72,
+      128
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "No",
+     "style": "o2_ff_r11_s0_c2",
+     "font": "dc22g2b10",
+     "left": 59,
+     "baseline": 27
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      128,
+      128
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "Data",
+     "style": "o2_ff_r11_s0_c2",
+     "font": "dc22g2b10",
+     "left": 18,
+     "baseline": 27
+    },
+    {
+     "from": [
+      4,
+      104,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Yr",
+     "style": "o2_ff_r11_s0_c2",
+     "font": "dc21g2b10",
+     "left": 0,
+     "baseline": 22
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      24,
+      120
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Mo",
+     "style": "o2_ff_r11_s0_c2",
+     "font": "dc19g2b10",
+     "left": -1,
+     "baseline": 21
+    },
+    {
+     "from": [
+      4,
+      24,
+      96,
+      48,
+      120
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Day",
+     "style": "o2_ff_r11_s0_c1",
+     "font": "nb14",
+     "left": 0,
+     "baseline": 17
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      72,
+      72
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "Very Easy",
+     "style": "o2_fe_r59_s0_c2",
+     "font": "dc15g2b10",
+     "left": -2,
+     "baseline": 19
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "16"
+     ],
+     "text": "Ordinary",
+     "style": "o2_fe_r559_s0_c2",
+     "font": "dc16g2b10",
+     "left": 10,
+     "baseline": 20
+    },
+    {
+     "from": [
+      7,
+      0,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "17"
+     ],
+     "text": "Very Hard",
+     "style": "o2_fe_r59_s0_c2",
+     "font": "dc15g2b10",
+     "left": -1,
+     "baseline": 19
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      24
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Pitcher",
+     "style": "o2_ff_r559_s0_c2",
+     "font": "dc17g2b10",
+     "left": 1,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      64,
+      48
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Catcher",
+     "style": "o2_ff_r449_s0_c2",
+     "font": "dc15g2b10",
+     "left": 1,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      64,
+      72
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "First Base",
+     "style": "o2_ff_r49_s0_c1",
+     "font": "nb14",
+     "left": 4,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      64,
+      96
+     ],
+     "sprites": [
+      "1b"
+     ],
+     "text": "Second Base",
+     "style": "o2_ff_r49_s0_c1",
+     "font": "nb12",
+     "left": 1,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Third Base",
+     "style": "o2_ff_r49_s0_c1",
+     "font": "nb14",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      64,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "Shortstop",
+     "style": "o2_ff_r49_s0_c1",
+     "font": "nb14",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      64,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "1e"
+     ],
+     "text": "Outfield",
+     "style": "o2_ff_r449_s0_c2",
+     "font": "dc15g2b10",
+     "left": 0,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      56,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "1f"
+     ],
+     "text": "Standard",
+     "style": "o2_ff_r888_s0_c2",
+     "font": "dc18g2b10",
+     "left": -8,
+     "baseline": 20
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      120,
+      24
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Idol Pro",
+     "style": "o2_ff_r888_s0_c2",
+     "font": "dc18g2b10",
+     "left": 22,
+     "baseline": 21
+    },
+    {
+     "from": [
+      5,
+      0,
+      24,
+      120,
+      48
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Hired Gun",
+     "style": "o2_ff_r888_s0_c2",
+     "font": "dc18g2b10",
+     "left": 14,
+     "baseline": 22
+    },
+    {
+     "from": [
+      6,
+      0,
+      104,
+      120,
+      128
+     ],
+     "sprites": [
+      "22"
+     ],
+     "text": "Player-Manager",
+     "style": "o2_ff_r88_s0_c1",
+     "font": "nb14",
+     "left": 13,
+     "baseline": 17
+    },
+    {
+     "from": [
+      7,
+      0,
+      72,
+      120,
+      96
+     ],
+     "sprites": [
+      "27"
+     ],
+     "text": "Farewell Run",
+     "style": "o2_ff_r88_s0_c1",
+     "font": "nb14",
+     "left": 21,
+     "baseline": 16
     }
    ],
    "under": 3

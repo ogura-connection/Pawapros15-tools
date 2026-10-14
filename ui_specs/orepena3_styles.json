@@ -162,12 +162,14 @@
   "shadow": 0,
   "cut": 2
  },
- "o2_f8_r8_s0_c1": {
+ "o2_f21_r8c_s0_c1": {
   "fills": [
-   8
+   2,
+   1
   ],
   "rings": [
-   8
+   8,
+   12
   ],
   "shadow": 0,
   "cut": 1
@@ -194,11 +196,94 @@
   "shadow": 0,
   "cut": 1
  },
- "o2_f8_r8_s0_c2": {
+ "o2_ff_r8_s0_c1": {
   "fills": [
-   8
+   15
   ],
   "rings": [
+   8
+  ],
+  "shadow": 0,
+  "cut": 1
+ },
+ "o2_f77d_r62_s0_c2": {
+  "fills": [
+   7,
+   7,
+   13
+  ],
+  "rings": [
+   6,
+   2
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
+ "o2_fe_r59_s0_c2": {
+  "fills": [
+   14
+  ],
+  "rings": [
+   5,
+   9
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
+ "o2_fe_r559_s0_c2": {
+  "fills": [
+   14
+  ],
+  "rings": [
+   5,
+   5,
+   9
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
+ "o2_ff_r559_s0_c2": {
+  "fills": [
+   15
+  ],
+  "rings": [
+   5,
+   5,
+   9
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
+ "o2_ff_r449_s0_c2": {
+  "fills": [
+   15
+  ],
+  "rings": [
+   4,
+   4,
+   9
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
+ "o2_ff_r49_s0_c1": {
+  "fills": [
+   15
+  ],
+  "rings": [
+   4,
+   9
+  ],
+  "shadow": 0,
+  "cut": 1
+ },
+ "o2_ff_r888_s0_c2": {
+  "fills": [
+   15
+  ],
+  "rings": [
+   8,
+   8,
    8
   ],
   "shadow": 0,
