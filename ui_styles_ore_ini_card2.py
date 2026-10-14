@@ -40,8 +40,8 @@ def ringed(fill, rings, shadow=None, off=(2, 2), bottom=None, thresh=3):
 STYLES = {
     # y3_myk (palette 23): blue letters, white ring, pale blue ring, blue-grey shadow to the lower right
     "mykblue": ringed(5, [14, 11], shadow=3, off=(2, 2)),
-    # y3_kzo list words (palette 20): mint letters, dark teal ring, grey-teal ring, blue-grey shadow
-    "kzomint": ringed(15, [11, 6], shadow=4, off=(2, 2), bottom=12),
+    # y3_kzo list words (palette 20): mint letters, dark teal ring, blue-grey shadow (one ring only: page room)
+    "kzomint": ringed(15, [11], shadow=5, off=(1, 1), bottom=12),
     # headings (pink palette 7 / green palette 6): light fill, dark ring (two pixels), white ring, grey shadow
     "kzohead_p": ringed(8, [14, 14, 6], shadow=2, off=(1, 1)),
     "kzohead_g": ringed(8, [14, 14, 6], shadow=2, off=(1, 1)),
