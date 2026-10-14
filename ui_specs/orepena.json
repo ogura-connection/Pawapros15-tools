@@ -174,9 +174,9 @@
      ],
      "text": "Abilities",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:1:0.25",
+     "font": "ttf:narrow:8:0:1:0",
      "left": -2,
-     "baseline": 17
+     "baseline": 16
     },
     {
      "from": [
@@ -202,7 +202,7 @@
      ],
      "text": "History",
      "style": "mltab",
-     "font": "ttf:narrow:9:0:1:0.25",
+     "font": "ttf:narrow:9:0:1:0",
      "left": 4,
      "baseline": 17
     },
@@ -230,7 +230,7 @@
      ],
      "text": "Growth",
      "style": "mltab",
-     "font": "ttf:narrow:9:0:1:0.25",
+     "font": "ttf:narrow:9:0:1:0",
      "left": 4,
      "baseline": 21
     },
@@ -272,9 +272,9 @@
      ],
      "text": "Trophies",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:1:0.25",
+     "font": "ttf:narrow:8:0:1:0",
      "left": 2,
-     "baseline": 17
+     "baseline": 16
     },
     {
      "from": [
@@ -286,7 +286,7 @@
      ],
      "text": "Friends",
      "style": "mltab",
-     "font": "ttf:narrow:9:0:1:0.25",
+     "font": "ttf:narrow:9:0:1:0",
      "left": -1,
      "baseline": 17
     },
@@ -328,9 +328,9 @@
      ],
      "text": "Heirloom\nList",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:1:0.25",
+     "font": "ttf:narrow:8:0:1:0",
      "left": 1,
-     "baseline": 31
+     "baseline": 30
     },
     {
      "from": [
@@ -356,9 +356,9 @@
      ],
      "text": "Special\nAbilities",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:1:0.25",
+     "font": "ttf:narrow:8:0:1:0",
      "left": 3,
-     "baseline": 23
+     "baseline": 22
     },
     {
      "from": [
@@ -370,9 +370,9 @@
      ],
      "text": "My\nHeirloom",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:1:0.25",
+     "font": "ttf:narrow:8:0:1:0",
      "left": 0,
-     "baseline": 23
+     "baseline": 22
     },
     {
      "from": [

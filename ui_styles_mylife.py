@@ -1,5 +1,10 @@
 """Label styles of the My Life screens (see ui_type.py: RENDER takes STYLES from every ui_styles_*.py)."""
+import ui_type
 from ui_type import banded, ringed, outlined, shadowed, haloed, logo, captioned, dropped, boxed, plated
+
+# DIN Condensed Bold: tall narrow letters with strokes two pixels wide, like the Japanese lettering (font spec
+# "ttf:din:<cap height>:0:1:0")
+ui_type.TTF["din"] = ("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf", 0)
 
 STYLES = {
     # the My Life menu tabs (orepena.arc, y3_menu, palette 4, a blue-to-white ramp): white letters whose soft edge runs
