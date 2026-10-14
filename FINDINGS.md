@@ -633,6 +633,16 @@ profile card), gdt_ore.arc, ore_ren.arc, gameplay.arc, gdt_sch.arc, pena_sub.arc
 pn_kivt.arc, pn_tgrow.arc, vs.arc. Before it, the later sets of such a bank were drawn from the wrong pages by every
 tool. Every spec renders byte-identical with it. The art survey TSV still counts the pages of the merged banks.
 
+## Strings with a coloured tail (2026-10-14, tenth session)
+
+A unit above the glyph range with a glyph number in its low 12 bits is that glyph drawn in colour (top 4 bits):
+the My Life title help lines of ore_ini.rel end in プレイ年数：最大20年 in colour 6, the Pennant report options in
+（日程早送りの場合、早送りを中断します。）. ui_strings.find takes such a tail as part of the string only when it is one
+colour, behind real text and closed by 0xFFFF (a looser rule found 7,800 false strings in binary tables). The export
+writes it {6:...}; the English writes it the same way and the build ORs the colour into every unit of the run (the
+letter pairs start again in each run). The neighbours' line widths shifted for eight Pennant help lines: three of
+their English lines were one line in a 25-cell box and are now split with |.
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
