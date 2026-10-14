@@ -507,6 +507,23 @@ Found with a texture dump taken screen by screen (`dolphin-test/looks/first/step
 - **Profile screens** (handedness, position, form, face, confirm, difficulty) and the application form behind them: `scs_make.arc`, banks `y5_cmk_0` (the lists and headings), `y5_cmc_0`, `y5_nan_0` (difficulty), `y5_pho_p`, `y5_make_bg_opd` (the form).
 - Keys from the main menu: DOWN, A (Success screen), A (白球ドリーム), A (title, cursor on Continue), UP, A (overwrite warning, cursor on "cancel"), UP, A starts a new game; then A through the opening card to name entry.
 
+## First screens of Success in English (2026-10-13, eighth session; on the sheets, not yet seen in game)
+
+Three files, each with a generator in `_work/ui_pages/` that writes its spec (`gen_titl_spec.py`, `gen_make_spec.py`, `gen_name_spec.py`); `python3 ui_labels.py apply ui_specs/<file>.json` writes the sheet, the originals are in `_work/orig_arc/`.
+
+- **`scs_titl.arc`**: the start screen (`y5_scs_tit_0`: Start, My Players, Linked World, Registered / Pit. / Fld., New Game, Continue, Players, Album, Cleared, Turned Pro) and the overwrite warning (`r4_sta`: Warning! and three lines, the two answers, Cleared, Ending Movie). Left: `r4_staz`, `y5_sge_0` (the three scenario names) and `y5_tic_h1` are 8-bit pages, which `compose.py` cannot show and the label tools have not been tried on.
+- **`scs_make.arc`**: the profile screens (`y5_cmk_0`: five headings, Is this OK?, six handedness lines, seven positions, four pitching and eight batting forms, Yes / No) and the difficulty screen (`y5_nan_0`: the heading, Normal, Rookie). Left: `L・Rで視点変更` and `⊖で視点変更` (sprites 36 and 45), the two subtitles painted on the difficulty plates (〜 いつものサクセス 〜, 〜 初めて遊ぶ人でも安心 〜), the application form (`y5_cmc_0`, `y5_make_bg_opd`).
+- **`namein.arc`** (`s3_nam`): six headings (Enter a name / a song title / a tourney name / a school name / the cap mark / a nickname) and the eight button words (Cancel, Kana, Kata, ABC, Kanji, Symbol, Delete, OK). Left: 選択タイプ音声あり (sprite 1c).
+
+What made these quick, and what to know for the next sheets:
+
+- **Sprites share pieces** (右投 + 左打; 二 + 塁手; 投球 + フォームを決めて + ください; 名前 / 曲名 / 大会名 + を入力してください). A label is addressed by its rectangle (`"from"`), and `"left"` + `"baseline"` put it on a fixed column and row of the sprite, measured from where the old rectangle stood (the part's x). So a row is set as words side by side: measure each word as its style draws it (`ui_type.RENDER[style](*ui_type.typeset(text, font))`), then give every piece its column. A shared piece gets one column for all the sprites that use it: a shared word goes first ("Enter" + "a name"), or the changing word gets a slot of one width ("Choose your" + pitching / batting + "form").
+- A part shows at most 128 pixels, so a long line is two or three pieces; the bands of neighbours overlap by twice the style's padding.
+- A piece that English does not need is `{"from": [...], "empty": true}`; a sub-rectangle of another label (を入 inside 名前を入) is a label of its own.
+- A sprite drawn twice (black or one-colour shadow, then colour) needs nothing special when both layers show the same rectangle.
+- "compressed page needs N bytes, its slot has M": fewer ink levels in the style (the soft colours between outline and fill, the ramp of the letters) fixed it both times.
+- New styles in `ui_type.RENDER`: `titlestart` / `titleview` / `titlelink`, `titleitem`, `titlecount`, `titleclear`, `warnline`, `warnhead`, `albumclear`, `albummovie`, `makehead`, `makeitem`, `nannormal`, `nanrookie`, `namehead`, `namebutton`; `logo` takes a `thick` outline, `dropped` is letters with a cast shadow and no outline.
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
