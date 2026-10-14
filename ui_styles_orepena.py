@@ -152,28 +152,21 @@ def make(v):
 
 
 def plate(v):
-    """The old art of a rectangle (or of several side by side, v["rects"] = [[pg, x0, y0, x1, y1], ...] cut into
-    the columns v["cols"]) with the Japanese lettering of the box v["erase"] painted over with the plate colour v["bg"],
-    and the English drawn by the style v["text"] centred at (v["cx"], v["cy"]) of the whole picture, `v["part"]` = which
-    slice of the picture's columns (a, b) this part shows."""
+    """A plate with lettering painted on it (the old art of the rectangles v["rects"] [[page, x0, y0, x1, y1], ...] side by
+    side, as one picture), the lettering box v["erase"] [x0, y0, x1, y1] painted over with the plate colour (the colour
+    just below the box), and the English drawn by solid(v["fill"], v["rings"], v["shadow"]) centred at (v["cx"], v["cy"])
+    of the picture. The style returns the columns v["part"] = (a, b) of the picture, with baseline 0: the label of
+    each rectangle has "left": 0 and "baseline": 0 and keeps its place."""
     inner = solid(v["fill"], v["rings"], v.get("shadow", 0), v.get("cut", 3))
 
     def style(ink, base):
-        parts = []
-        for pg, x0, y0, x1, y1 in v["rects"]:
-            parts.append(old_page(v["bank"], pg)[y0:y1, x0:x1].copy())
-        pic = np.concatenate(parts, axis=1) if len(parts) > 1 else parts[0]
+        pic = np.concatenate([old_page(v["bank"], pg)[y0:y1, x0:x1].copy() for pg, x0, y0, x1, y1 in v["rects"]], axis=1)
         ex0, ey0, ex1, ey1 = v["erase"]
-        for (ra, rb, rc) in v.get("repaint", []):
-            pass
-        pic[ey0:ey1, ex0:ex1] = v["bg"]
-        for r0, r1 in v.get("bg_rows", []):
-            pass
+        pic[ey0:ey1, ex0:ex1] = pic[ey1 + 1, (ex0 + ex1) // 2]
         art, b = inner(ink, base)
         h, w = art.shape
-        cx, cy = v["cx"], v["cy"]
-        x = cx - w // 2
-        y = cy - (v.get("foot", h) if False else h // 2) + v.get("dy", 0)
+        x = v["cx"] - w // 2
+        y = v["cy"] - h // 2
         sub = pic[y:y + h, x:x + w]
         sub[art > 0] = art[art > 0]
         a, c = v["part"]
