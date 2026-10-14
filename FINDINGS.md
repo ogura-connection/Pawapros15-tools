@@ -534,6 +534,82 @@ What made these quick, and what to know for the next sheets:
 - "compressed page needs N bytes, its slot has M": fewer ink levels in the style (the soft colours between outline and fill, the ramp of the letters) fixed it both times.
 - New styles in `ui_type.RENDER`: `titlestart` / `titleview` / `titlelink`, `titleitem`, `titlecount`, `titleclear`, `warnline`, `warnhead`, `albumclear`, `albummovie`, `makehead`, `makeitem`, `nannormal`, `nanrookie`, `namehead`, `namebutton`; `logo` takes a `thick` outline, `dropped` is letters with a cast shadow and no outline.
 
+## The match: where its text is, and the first sheets (2026-10-13, ninth session; NOT applied, NOT seen)
+
+Done offline while another session held the emulator and the build (My Life batches): three specs written,
+checked by rendering in memory, not applied to `DATA/files`. Generator: `_work/ui_pages/gen_match_spec.py`
+(writes `ui_specs/gameplay.json`, `main_prg.json`, `time.json`). Apply them, prove the sheets with a texture dump,
+then look (see "Next" below).
+
+- **The match's strings are done already.** `gameplay.rel` has 429 string slots, 343 English since the fifth
+  session; the 86 left are glyph grids and a few player names. The 24,000 cells of the inventory are mostly
+  such grids. So step 5 is sprite art.
+- **The art**, by machine survey and by looking at every bank: `gameplay.arc` (umpire's calls `h3_stf_0`, pause
+  menu `h3_tim_0`, records banner `h3_lo_0`, turning/attack point `y5_tnp_1`, shift tags `h3_aps_0`, the HUD
+  candidate `h3_ap_ps2`, the original-pitch font `h3_kyu_0`), `main_prg.arc` (line score `g3_sb` / `g3_sbn` /
+  `g3_sbk`, player panel `g3_np`, pitch chart `g3_np2`, at-bat result tags `g3_nk` / `g3_tij`, team logos
+  `r4_12h`), `time.arc` (`g3_tim`: the substitution screen that Bullpen / Defense / Pinch Hitter open),
+  `option.arc` (`g3_ops`: the options screen, 20 compressed pages, about 50 buttons and 45 help texts drawn as
+  pictures), `ctrler.arc` (controller diagrams, 4 banks), `order.arc`, `shift_ed.arc`, `vs.arc` / `vs_st.arc`
+  (exhibition setup, stadiums; the stadium ads are real sponsors and stay).
+- **No copies**: a hash of every decoded page of all `.arc` files finds none of these pages in another file
+  (one page of `g3_hk` is also in `scg_camp.arc`). Still to prove in game that these banks are what the screen
+  draws.
+- **Pitch names in a match** are whole-word sprites (`g3_np2`, 31 names). `h3_kyu_0` (katakana, A-Z, 魔 球 改 真 超
+  号) is the font for the names of original pitches, which the player types; nothing to translate there.
+- **Not located**: the score bug (inning 回表 and the count). `gameplay.arc` `h3_ap_ps2` (orange / navy plates,
+  S and B letters, 244 sprites) is the likely bank, but its pages decode with wrong colours; needs a texture dump.
+
+Specs (193 labels):
+- `gameplay.json` `calls` (20): STRIKE, BALL, FOUL, FAIR, SAFE, OUT, TIME, PLAY BALL, WARMING UP, WALK, HIT BY
+  PITCH, GROUND RULE / DOUBLE, HIT, CHANGE, GAME SET, INFIELD / FLY, HOME RUN, 2-RUN / 3-RUN HOME RUN, GRAND /
+  SLAM. MLB Power Pros wording (`env_game_mlb`) except where space ruled: GAME SET and CHANGE keep the
+  Japanese-English umpire words (MLB: THAT'S THE BALLGAME, CHANGE OF SIDES), WALK (MLB: BASE ON BALLS).
+  Style `call0`..`call5`, one per palette (fill gradient, purple outline, white band, coloured band, shadow).
+- `gameplay.json` `pause menu` (28): Play, Fast Game, Normal Game, End, Quit, Replay (+ the A / B tags, kept),
+  Score, Continue, Pitcher Data, Controller, Controller Setup, Audio, Options, Display Options, Turn Setup,
+  Bullpen, Defense, Pinch + Hitter / Runner, Instructions, Game Data, Give Up, Retry, Forfeit, Team Analysis,
+  Controls (MLB `env_game` wording where it has the item). Style `pausemenu`, fixed baseline (screen row 20).
+- `main_prg.json` line score (51 cells in three banks): 1..18 and R; H and E were Latin already.
+- `main_prg.json` `pitch chart` (31): the Success chart's wording, style `pitchchart` (white in a blue ring).
+- `main_prg.json` `player panel` (18 + 3 emptied): CON PWR SPD ARM FLD TRJ AVG HR RBI POS, ERA, Control,
+  Stamina, Age, Pro Yrs, FA, Salary, Loyalty; 本 and 点 (units behind HR and RBI) emptied; km/h kept.
+- `time.json` (46): column headers AB AVG HR RBI TRJ CON PWR SPD ARM FLD POS, R SB E; pitching IP BF NP SO WP BB
+  ER R H HR; Batter / Bench; runner tags 3rd / 2nd / 1st + Runner; the screen's two sets of menu words.
+
+New in the tools (`ui_type.py`; all ten older specs still render byte-identical to what is installed):
+- `"ribbon": true` group (`repack_ribbon`): big lettering set line by line and poured into the page rows,
+  cut where a row ends; piece n goes to part n of the sprite. A sprite has a fixed number of parts (a 2-part
+  call can show two pieces at most), so long lines take whole empty rows first. Lines drawn twice in one style
+  are stored once (HOME RUN of the 2-run and 3-run homers). Without this the calls did not fit: the English
+  needs about 3,700 columns of 54-pixel rows, the 14 pages hold 3,584.
+- `"slices": true` label: one label cut into strips over the parts of its sprite (kept; the ribbon replaced it
+  for the calls).
+- `"sprites": [ids]` on a `"from"` label: only those sprites' parts of a shared piece (走 is SPD in the column
+  headers and Runner on the base tags); the plain label for the same piece leaves them alone.
+- `"share": true` group: labels whose art comes out identical are stored once (the two sets of menu words).
+- Styles `called(...)` (`call0`..`call5`, `pausemenu`, `submenu`), `tight(style)` (drops the empty rows round
+  a style's art: 16-pixel rows), `pitchchart`, `panel`, `subhead`, `subtab`.
+- `"left"` / `"baseline"` per cell where the Japanese cells sit a pixel or three off their row (pitching lines,
+  player panel): computed from the sprite's own offsets in the generator.
+
+Room is the limit everywhere in the match, not the byte budget: pages hold little free space, the pause menu
+needed 96% of its label rows until Pinch and Replay were shared again as in the Japanese. Pages that no sprite
+shows are not free: page 2 of `g3_tim` is fully painted (probably drawn by code); leave such pages alone.
+
+Left for the match, with what blocks each:
+- Score bug and count: find the bank (texture dump in a match).
+- At-bat result tags `g3_nk` / `g3_tij` (投安, 左本, 三振 ...): a position cell and a result cell on a coloured
+  plate, 24-pixel cells, so they can be re-lettered cell by cell (LF + 1B). Undecided: what ス and ギ stand for
+  (seen in 左ス, 左ギ), and 三 is both "third base" and the first half of 三振: needs `"sprites"` overrides.
+- `time.arc`: 今日の成績 (Today's Stats, two headers with « »), the tabs on a stripe (控え投手, 控え野手, 右投手,
+  左投手, 投手: the stripe is in the same cell, needs a synthetic plate), 攻撃中 (vertical), 時間 / 分, the R / L / S
+  handedness icons.
+- `g3_np`: position marks 遊 外 投 捕 一 二 三 and handedness / form / type plates (letters on a plate: "paint").
+- `option.arc`, `ctrler.arc`, `order.arc`, `shift_ed.arc`, `vs.arc`, `y5_tnp_1`, `h3_lo_0`, `h3_aps_0`; small
+  pieces of `h3_stf_0` (投球練習 small, あと N 球, やめる).
+- Bench sheet: Success's `scs_main.arc` `z4_sod_*` (needs the cross-page paint).
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
