@@ -67,3 +67,47 @@ def copyof(arc, bank, page, rect, r0, r1):
 
 
 STYLES["c16_cap"] = copyof("ore_ini.arc", "y3_c16", 3, (0, 56, 32, 80), 6, 22)
+
+
+def gloss(fill, soft, outline, white, rim, shadow, band=2, thick=1, inner=None):
+    """Like ui_type.logo (letters filled top to foot from `fill`, an `outline`, a `white` band with a `rim`, a cast `shadow`),
+    but the soft edge of a letter runs outline -> soft -> fill and never leaves a hole."""
+    from ui_type import grow, shift
+    fill = list(fill)
+
+    def style(ink, base):
+        pad = band + 1 + thick + len(shadow)
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        dark = grow(letters, 1)
+        for _ in range(thick - 1):
+            dark = grow(dark, 1, diagonal=False)
+        plate = grow(grow(dark, band - 1), 1, diagonal=False) if band > 1 else grow(dark, 1, diagonal=False)
+        edge = grow(plate, 1, diagonal=False)
+        out = np.zeros(big.shape, np.uint8)
+        for k in range(len(shadow), 0, -1):
+            out[shift(edge, k, k) | shift(edge, k, k - 1) | shift(edge, k - 1, k)] = shadow[k - 1]
+        out[edge] = rim
+        out[plate] = white
+        out[dark] = outline
+        ys = np.nonzero(letters.any(1))[0]
+        f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+        row = np.array(fill)[np.rint(f.clip(0, 1) * (len(fill) - 1)).astype(int)][:, None]
+        row = np.broadcast_to(row, big.shape)
+        ring = np.array([outline] + list(soft))
+        lvl = np.rint((big - 1).clip(0, 4) * len(ring) / 4.0).astype(int)        # 1 .. 5 -> outline .. fill
+        low = np.where(lvl >= len(ring), row, ring[np.minimum(lvl, len(ring) - 1)])
+        out[letters] = np.where(big >= 5, row, low)[letters]
+        return out, base + pad
+    return style
+
+
+_YEL = [182, 180, 178, 177, 175, 173, 171, 170, 168, 162, 164]
+_SAL = [140, 143, 144, 147, 148, 151, 153, 155, 157, 158, 160]
+_PNK = [222, 223, 224, 225, 227, 231, 232, 233, 235, 237, 238, 240]
+# y4_t256 (8-bit page, 256 colours): gradient letters, navy outline, white band, cyan rim
+STYLES["mlbtn_y"] = gloss(_YEL, [29], 82, 15, 9, [], 3, 2)
+STYLES["mlbtn_s"] = gloss(_SAL, [29], 82, 15, 9, [], 3, 2)
+STYLES["mlbtn_p"] = gloss(_PNK, [26], 82, 15, 9, [], 3, 2)

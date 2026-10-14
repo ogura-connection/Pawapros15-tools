@@ -9,6 +9,55 @@
    "under": 4,
    "areas": [
     [
+     2,
+     0,
+     48,
+     104,
+     80
+    ],
+    [
+     2,
+     0,
+     80,
+     96,
+     104
+    ],
+    [
+     2,
+     72,
+     104,
+     128,
+     128
+    ],
+    [
+     3,
+     32,
+     24,
+     96,
+     48
+    ],
+    [
+     3,
+     32,
+     48,
+     72,
+     72
+    ],
+    [
+     3,
+     0,
+     72,
+     24,
+     96
+    ],
+    [
+     3,
+     96,
+     72,
+     128,
+     96
+    ],
+    [
      4,
      0,
      56,
@@ -21,6 +70,20 @@
      72,
      128,
      96
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     6,
+     0,
+     48,
+     72,
+     72
     ],
     [
      6,
@@ -40,7 +103,7 @@
      7,
      0,
      56,
-     80,
+     128,
      80
     ],
     [
@@ -48,6 +111,27 @@
      0,
      80,
      120,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     8,
+     0,
+     48,
+     72,
+     104
+    ],
+    [
+     8,
+     0,
+     104,
+     104,
      128
     ],
     [
@@ -61,8 +145,22 @@
      9,
      0,
      96,
-     40,
+     128,
      120
+    ],
+    [
+     10,
+     0,
+     0,
+     112,
+     112
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     112
     ],
     [
      12,
@@ -167,19 +265,19 @@
      0,
      40,
      80,
-     80
+     56
     ],
     [
      18,
      96,
      40,
      128,
-     80
+     56
     ],
     [
      18,
      0,
-     80,
+     56,
      128,
      120
     ],
@@ -233,11 +331,144 @@
      72
     ],
     [
-     32,
-     88,
+     22,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     22,
+     96,
+     56,
+     128,
+     112
+    ],
+    [
+     22,
+     0,
+     56,
+     80,
+     128
+    ],
+    [
+     23,
+     0,
+     0,
+     128,
+     112
+    ],
+    [
+     23,
+     64,
+     112,
+     128,
+     128
+    ],
+    [
+     24,
+     0,
+     0,
+     128,
+     112
+    ],
+    [
+     25,
+     72,
+     0,
+     128,
+     40
+    ],
+    [
+     25,
+     0,
+     96,
+     64,
+     128
+    ],
+    [
+     27,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     27,
+     0,
+     96,
+     72,
+     120
+    ],
+    [
+     29,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     29,
+     0,
+     24,
+     104,
+     72
+    ],
+    [
+     29,
+     48,
+     72,
+     128,
+     96
+    ],
+    [
+     29,
+     112,
+     96,
+     128,
+     120
+    ],
+    [
+     30,
+     96,
      32,
      128,
-     80
+     56
+    ],
+    [
+     32,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     33,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     33,
+     120,
+     32,
+     128,
+     56
+    ],
+    [
+     33,
+     0,
+     32,
+     112,
+     104
+    ],
+    [
+     33,
+     0,
+     104,
+     128,
+     128
     ],
     [
      34,
@@ -250,6 +481,13 @@
      35,
      0,
      0,
+     128,
+     24
+    ],
+    [
+     35,
+     0,
+     24,
      120,
      72
     ],
@@ -258,7 +496,7 @@
      0,
      72,
      128,
-     96
+     128
     ],
     [
      36,
@@ -279,13 +517,6 @@
      0,
      64,
      112,
-     96
-    ],
-    [
-     36,
-     72,
-     96,
-     112,
      120
     ],
     [
@@ -301,6 +532,13 @@
      40,
      128,
      64
+    ],
+    [
+     37,
+     0,
+     88,
+     48,
+     112
     ],
     [
      38,
@@ -322,6 +560,20 @@
      56,
      128,
      120
+    ],
+    [
+     41,
+     0,
+     0,
+     24,
+     112
+    ],
+    [
+     41,
+     72,
+     96,
+     128,
+     128
     ]
    ],
    "labels": [
@@ -913,6 +1165,703 @@
      "style": "city",
      "font": "ttf:din:10:0:1:0",
      "valign": "centre"
+    },
+    {
+     "sprite": "4d",
+     "text": "Rainout",
+     "style": "chip",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      48
+     ]
+    },
+    {
+     "sprite": "4e",
+     "text": "Spring\nCamp",
+     "style": "chip",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      48
+     ]
+    },
+    {
+     "sprite": "4f",
+     "text": "Preseason",
+     "style": "chip",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      48
+     ]
+    },
+    {
+     "sprite": "50",
+     "text": "Fall\nCamp",
+     "style": "chip",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      48
+     ]
+    },
+    {
+     "sprite": "51",
+     "text": "All-Star",
+     "style": "chip",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      48
+     ]
+    },
+    {
+     "sprite": "52",
+     "text": "Japan\nSeries",
+     "style": "chip",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      48
+     ]
+    },
+    {
+     "sprite": "53",
+     "text": "Contracts",
+     "style": "chip",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      48
+     ]
+    },
+    {
+     "sprite": "54",
+     "text": "Draft",
+     "style": "chip",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      48
+     ]
+    },
+    {
+     "sprite": "4b",
+     "text": "Home",
+     "style": "homeblue",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "24",
+     "text": "Private",
+     "style": "pinkband",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre",
+     "pages": [
+      2
+     ],
+     "palettes": [
+      66
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Baseball",
+     "style": "greenband",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre",
+     "pages": [
+      7
+     ],
+     "palettes": [
+      67
+     ]
+    },
+    {
+     "sprite": "55",
+     "text": "Pitching",
+     "style": "starter",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre",
+     "palettes": [
+      63
+     ]
+    },
+    {
+     "from": [
+      3,
+      32,
+      48,
+      72,
+      72
+     ],
+     "text": "Pitch",
+     "style": "pitchtag",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      22,
+      0,
+      112,
+      80,
+      128
+     ],
+     "text": "Other Teams",
+     "style": "others",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "9a",
+     "text": "Rainout",
+     "style": "rain",
+     "font": "ttf:rounded:18:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      32,
+      24,
+      56,
+      48
+     ],
+     "text": "Game",
+     "style": "gamew",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      56,
+      24,
+      96,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      24,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "sprite": "b5",
+     "text": "Travel Day",
+     "style": "bigdrop",
+     "font": "ttf:rounded:20:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "b6",
+     "text": "No Game",
+     "style": "bigdrop",
+     "font": "ttf:rounded:24:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "b7",
+     "text": "Contract Renewal",
+     "style": "bigdrop",
+     "font": "ttf:rounded:17:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "b8",
+     "text": "Spring Camp",
+     "style": "bigdrop",
+     "font": "ttf:rounded:24:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "b9",
+     "text": "Fall Camp",
+     "style": "bigdrop",
+     "font": "ttf:rounded:24:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "ba",
+     "text": "Draft",
+     "style": "bigdrop",
+     "font": "ttf:rounded:24:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "c7",
+     "text": "SELECT to Switch",
+     "style": "select",
+     "font": "ttf:rounded:12:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "c8",
+     "text": "Transfer Set",
+     "style": "transfer",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "pages": [
+      23
+     ],
+     "palettes": [
+      49
+     ]
+    },
+    {
+     "from": [
+      29,
+      0,
+      24,
+      104,
+      72
+     ],
+     "text": "Weekly\nSchedule",
+     "style": "weekly",
+     "font": "ttf:rounded:12:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      41,
+      0,
+      0,
+      24,
+      16
+     ],
+     "text": "Sun",
+     "style": "wksun",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      41,
+      0,
+      16,
+      24,
+      32
+     ],
+     "text": "Mon",
+     "style": "wkday",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      41,
+      0,
+      32,
+      24,
+      48
+     ],
+     "text": "Tue",
+     "style": "wkday",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      41,
+      0,
+      48,
+      24,
+      64
+     ],
+     "text": "Wed",
+     "style": "wkday",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      41,
+      0,
+      64,
+      24,
+      80
+     ],
+     "text": "Thu",
+     "style": "wkday",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      41,
+      0,
+      80,
+      24,
+      96
+     ],
+     "text": "Fri",
+     "style": "wkday",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      41,
+      0,
+      96,
+      24,
+      112
+     ],
+     "text": "Sat",
+     "style": "wksat",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "104",
+     "text": "Set Date",
+     "style": "listnavy",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "105",
+     "text": "Magic Number",
+     "style": "listnavy",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "106",
+     "text": "Central Title",
+     "style": "listnavy",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "125",
+     "text": "Pacific Title",
+     "style": "listnavy",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "107",
+     "text": "End 1st Half",
+     "style": "listnavy",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "108",
+     "text": "All-Star",
+     "style": "listnavy",
+     "font": "ttf:rounded:12:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "109",
+     "text": "Climax Series",
+     "style": "listnavy",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10a",
+     "text": "Japan Series",
+     "style": "listnavy",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10b",
+     "text": "Recovery",
+     "style": "listnavy",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10c",
+     "text": "Next Start",
+     "style": "listnavy",
+     "font": "ttf:rounded:12:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "113",
+     "text": "To Set Date",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "114",
+     "text": "To Magic Number",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:12:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "115",
+     "text": "To Central Title",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "116",
+     "text": "To End 1st Half",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:12:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "117",
+     "text": "To All-Star",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "118",
+     "text": "To Climax Series",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "119",
+     "text": "To Japan Series",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "11a",
+     "text": "To Recovery",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "11b",
+     "text": "To Next Start",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "11c",
+     "text": "To Pacific Title",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "from": [
+      29,
+      48,
+      72,
+      128,
+      96
+     ],
+     "text": "Skipping",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "align": "right",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      35,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Stop Fast-Forward",
+     "style": "stopmsg",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "121",
+     "text": "Skip",
+     "style": "fastbtn",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre",
+     "pages": [
+      33
+     ],
+     "palettes": [
+      105
+     ]
+    },
+    {
+     "sprite": "102",
+     "text": "Advance How Far?",
+     "style": "askhead",
+     "font": "ttf:rounded:18:0:1:0.3",
+     "slices": true,
+     "slice_width": 120,
+     "pages": [
+      32,
+      33
+     ],
+     "palettes": [
+      116
+     ]
+    },
+    {
+     "sprite": "103",
+     "text": "Advance How Far?",
+     "style": "askhead",
+     "font": "ttf:rounded:18:0:1:0.3",
+     "slices": true,
+     "slice_width": 120,
+     "pages": [
+      32,
+      33
+     ],
+     "palettes": [
+      116
+     ]
+    },
+    {
+     "from": [
+      28,
+      0,
+      96,
+      24,
+      120
+     ],
+     "text": "/",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      28,
+      112,
+      72,
+      128,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      28,
+      24,
+      96,
+      64,
+      120
+     ],
+     "text": "Day End",
+     "style": "pinkmsg",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      27,
+      88,
+      0,
+      128,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      29,
+      48,
+      72,
+      104,
+      96
+     ],
+     "text": "Skip",
+     "style": "pinkmsg",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      29,
+      112,
+      96,
+      128,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "sprite": "110",
+     "text": "Skip to\nHere",
+     "style": "bubble",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre",
+     "pages": [
+      25
+     ],
+     "palettes": [
+      123
+     ]
+    },
+    {
+     "sprite": "111",
+     "text": "Skip to\nHere",
+     "style": "bubble",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre",
+     "pages": [
+      25
+     ],
+     "palettes": [
+      123
+     ]
+    },
+    {
+     "sprite": "123",
+     "text": "Skip to\nHere",
+     "style": "bubble",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre",
+     "pages": [
+      25
+     ],
+     "palettes": [
+      123
+     ]
+    },
+    {
+     "sprite": "124",
+     "text": "Skip to\nHere",
+     "style": "bubble",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre",
+     "pages": [
+      25
+     ],
+     "palettes": [
+      123
+     ]
     }
    ]
   }

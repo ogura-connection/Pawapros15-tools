@@ -65,6 +65,7 @@
       "01"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -27,
      "baseline": 28
     },
@@ -80,6 +81,7 @@
       "01"
      ],
      "text": "Face",
+     "style": "mylhead",
      "left": -38,
      "baseline": 28
     },
@@ -108,6 +110,7 @@
       "02"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": 29,
      "baseline": 28
     },
@@ -123,6 +126,7 @@
       "02"
      ],
      "text": "Hometown",
+     "style": "mylhead",
      "left": 42,
      "baseline": 28
     },
@@ -151,6 +155,7 @@
       "03"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -69,
      "baseline": 28
     },
@@ -166,6 +171,7 @@
       "03"
      ],
      "text": "Background",
+     "style": "mylhead",
      "left": -80,
      "baseline": 28
     },
@@ -207,6 +213,7 @@
       "04"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": 39,
      "baseline": 28
     },
@@ -222,6 +229,7 @@
       "04"
      ],
      "text": "Birthday",
+     "style": "mylhead",
      "left": 52,
      "baseline": 28
     },
@@ -250,6 +258,7 @@
       "05"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -126,
      "baseline": 28
     },
@@ -265,6 +274,7 @@
       "05"
      ],
      "text": "Draft Pick",
+     "style": "mylhead",
      "left": -137,
      "baseline": 28
     },
@@ -306,6 +316,7 @@
       "06"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -83,
      "baseline": 28
     },
@@ -321,6 +332,7 @@
       "06"
      ],
      "text": "Handedness",
+     "style": "mylhead",
      "left": -94,
      "baseline": 28
     },
@@ -349,6 +361,7 @@
       "07"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -74,
      "baseline": 28
     },
@@ -364,6 +377,7 @@
       "07"
      ],
      "text": "Position",
+     "style": "mylhead",
      "left": -85,
      "baseline": 28
     },
@@ -392,6 +406,7 @@
       "08"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -61,
      "baseline": 28
     },
@@ -407,6 +422,7 @@
       "08"
      ],
      "text": "Form",
+     "style": "mylhead",
      "left": -72,
      "baseline": 28
     },
@@ -435,6 +451,7 @@
       "09"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -80,
      "baseline": 28
     },
@@ -450,6 +467,7 @@
       "09"
      ],
      "text": "Ability Type",
+     "style": "mylhead",
      "left": -91,
      "baseline": 28
     },
@@ -478,6 +496,7 @@
       "0a"
      ],
      "text": "Choose Two",
+     "style": "mylhead",
      "left": -166,
      "baseline": 28
     },
@@ -493,6 +512,7 @@
       "0a"
      ],
      "text": "Appeal",
+     "style": "mylhead",
      "left": -181,
      "baseline": 28
     },
@@ -508,6 +528,7 @@
       "0a"
      ],
      "text": "Points",
+     "style": "mylhead",
      "left": 62,
      "baseline": 28
     },
@@ -549,6 +570,7 @@
       "0b"
      ],
      "text": "Choose One",
+     "style": "mylhead",
      "left": -113,
      "baseline": 28
     },
@@ -564,6 +586,7 @@
       "0b"
      ],
      "text": "Appeal",
+     "style": "mylhead",
      "left": -48,
      "baseline": 28
     },
@@ -579,6 +602,7 @@
       "0b"
      ],
      "text": "Point",
+     "style": "mylhead",
      "left": -109,
      "baseline": 28
     },
@@ -620,6 +644,7 @@
       "0c"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -139,
      "baseline": 28
     },
@@ -635,6 +660,7 @@
       "0c"
      ],
      "text": "Weak Points",
+     "style": "mylhead",
      "left": -150,
      "baseline": 28
     },
@@ -676,6 +702,7 @@
       "0d"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -45,
      "baseline": 28
     },
@@ -691,6 +718,7 @@
       "0d"
      ],
      "text": "Hobby",
+     "style": "mylhead",
      "left": -56,
      "baseline": 28
     },
@@ -719,6 +747,7 @@
       "0e"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": 24,
      "baseline": 28
     },
@@ -734,6 +763,7 @@
       "0e"
      ],
      "text": "Family",
+     "style": "mylhead",
      "left": 13,
      "baseline": 28
     },
@@ -749,6 +779,7 @@
       "0e"
      ],
      "text": "Makeup",
+     "style": "mylhead",
      "left": -53,
      "baseline": 28
     },
@@ -764,6 +795,7 @@
       "0f"
      ],
      "text": "Choose Your",
+     "style": "mylhead",
      "left": -107,
      "baseline": 28
     },
@@ -779,6 +811,7 @@
       "0f"
      ],
      "text": "Family",
+     "style": "mylhead",
      "left": -118,
      "baseline": 28
     },
@@ -794,6 +827,7 @@
       "0f"
      ],
      "text": "Setup",
+     "style": "mylhead",
      "left": 216,
      "baseline": 28
     },
@@ -933,6 +967,140 @@
      "left": 0,
      "baseline": 6,
      "font": "ttf:rounded:12:0:0.9:0.3"
+    }
+   ]
+  },
+  {
+   "bank": "y4_t256",
+   "palette": 0,
+   "style": "mlbtn_y",
+   "font": "ttf:rounded:17:0:0.95:0.5",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      120,
+      40
+     ],
+     "sprites": [
+      "02"
+     ],
+     "text": "New Game",
+     "style": "mlbtn_y",
+     "left": -3,
+     "baseline": 27
+    },
+    {
+     "from": [
+      0,
+      0,
+      40,
+      120,
+      80
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Continue",
+     "style": "mlbtn_s",
+     "left": 7,
+     "baseline": 27
+    },
+    {
+     "from": [
+      0,
+      0,
+      80,
+      120,
+      120
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Directory",
+     "style": "mlbtn_p",
+     "left": 5,
+     "baseline": 27
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      40
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Pro Career",
+     "style": "mlbtn_y",
+     "left": 29,
+     "baseline": 27
+    },
+    {
+     "from": [
+      1,
+      0,
+      40,
+      56,
+      80
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      56,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Original",
+     "style": "mlbtn_s",
+     "left": 11,
+     "baseline": 27
+    },
+    {
+     "from": [
+      1,
+      0,
+      80,
+      120,
+      120
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Player",
+     "style": "mlbtn_s",
+     "left": 28,
+     "baseline": 27
     }
    ]
   }

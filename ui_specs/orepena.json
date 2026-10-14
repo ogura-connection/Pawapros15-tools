@@ -2144,7 +2144,7 @@
      ],
      "text": "0,000 yen",
      "style": "o_f15_r1_s0_c3",
-     "font": "nb9b",
+     "font": "nb12",
      "valign": "centre"
     },
     {
@@ -2157,7 +2157,7 @@
      ],
      "text": "yen",
      "style": "o_f15_r1_s0_c3",
-     "font": "nb12b",
+     "font": "dc12g2b20",
      "valign": "centre",
      "left": -6
     },
@@ -2181,7 +2181,7 @@
      ],
      "text": "Mo",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb13",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -2194,7 +2194,7 @@
      ],
      "text": "Day",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb9",
+     "font": "nb14",
      "valign": "centre"
     },
     {
@@ -2220,7 +2220,7 @@
      ],
      "text": "Yr",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc14g2b20",
+     "font": "dc15g2b20",
      "valign": "centre"
     },
     {
@@ -2291,7 +2291,7 @@
      ],
      "text": "Age",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb9b",
+     "font": "nb12",
      "valign": "centre"
     },
     {
@@ -2304,7 +2304,7 @@
      ],
      "text": "Mo",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb10b",
+     "font": "dc12g2b20",
      "valign": "centre"
     },
     {
@@ -2317,7 +2317,7 @@
      ],
      "text": "Tu",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb12b",
+     "font": "dc15g2b20",
      "valign": "centre"
     },
     {
@@ -2330,7 +2330,7 @@
      ],
      "text": "We",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb10b",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -2343,7 +2343,7 @@
      ],
      "text": "Th",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb12b",
+     "font": "dc15g2b20",
      "valign": "centre"
     },
     {
@@ -2356,7 +2356,7 @@
      ],
      "text": "Fr",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc14g2b20",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -2369,7 +2369,7 @@
      ],
      "text": "Sa",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb13b",
+     "font": "dc15g2b20",
      "valign": "centre"
     },
     {
@@ -2382,7 +2382,7 @@
      ],
      "text": "Su",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb12b",
+     "font": "dc15g2b20",
      "valign": "centre"
     },
     {
@@ -2395,7 +2395,7 @@
      ],
      "text": "Schedule",
      "style": "o_f15_r22_s0_c3",
-     "font": "nb10",
+     "font": "nb12",
      "valign": "centre"
     },
     {
@@ -2408,7 +2408,7 @@
      ],
      "text": "Standings",
      "style": "o_f15_r35_s0_c3",
-     "font": "nb9",
+     "font": "nb10",
      "valign": "centre"
     },
     {
@@ -2434,7 +2434,7 @@
      ],
      "text": "Fatigue",
      "style": "o_f13_r2_s6_c3",
-     "font": "nb9b",
+     "font": "nb12",
      "valign": "centre"
     },
     {
@@ -2577,7 +2577,7 @@
      ],
      "text": "Move",
      "style": "o_f15_r55_s0_c3",
-     "font": "nb10",
+     "font": "dc15g2b20",
      "valign": "centre",
      "centre_x": 24
     },
@@ -2601,7 +2601,7 @@
      ],
      "text": "Event",
      "style": "o_f15_r55_s0_c3",
-     "font": "nb9",
+     "font": "dc13g2b20",
      "valign": "centre",
      "centre_x": 24
     },
@@ -2661,7 +2661,7 @@
      ],
      "text": "Farewell Game",
      "style": "o_f15_r72_s0_c3",
-     "font": "nb9",
+     "font": "nb10",
      "valign": "centre"
     },
     {
@@ -2726,7 +2726,7 @@
      ],
      "text": "games",
      "style": "o_f15_r77_s0_c3",
-     "font": "nb9",
+     "font": "nb12",
      "valign": "centre"
     },
     {
@@ -2765,7 +2765,7 @@
      ],
      "text": "days",
      "style": "o_f15_r77_s0_c3",
-     "font": "nb10",
+     "font": "nb13",
      "valign": "centre"
     },
     {
