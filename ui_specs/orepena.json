@@ -174,9 +174,9 @@
      ],
      "text": "Abilities",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:1:0",
+     "font": "ttf:narrow:8:0:1:0.25",
      "left": -2,
-     "baseline": 16
+     "baseline": 17
     },
     {
      "from": [
@@ -188,7 +188,7 @@
      ],
      "text": "Skills",
      "style": "mltab",
-     "font": "ttf:narrow:11:0:1:0",
+     "font": "ttf:narrow:11:0:1:0.25",
      "left": 5,
      "baseline": 18
     },
@@ -202,8 +202,8 @@
      ],
      "text": "History",
      "style": "mltab",
-     "font": "ttf:narrow:10:0:0.94:0",
-     "left": 3,
+     "font": "ttf:narrow:9:0:1:0.25",
+     "left": 4,
      "baseline": 17
     },
     {
@@ -216,8 +216,8 @@
      ],
      "text": "Profile",
      "style": "mltab",
-     "font": "ttf:narrow:11:0:0.94:0",
-     "left": -1,
+     "font": "ttf:narrow:10:0:1:0.25",
+     "left": 0,
      "baseline": 25
     },
     {
@@ -230,9 +230,9 @@
      ],
      "text": "Growth",
      "style": "mltab",
-     "font": "ttf:narrow:10:0:0.94:0",
-     "left": 3,
-     "baseline": 22
+     "font": "ttf:narrow:9:0:1:0.25",
+     "left": 4,
+     "baseline": 21
     },
     {
      "from": [
@@ -244,7 +244,7 @@
      ],
      "text": "Home",
      "style": "mltab",
-     "font": "ttf:narrow:11:0:1:0",
+     "font": "ttf:narrow:11:0:1:0.25",
      "left": -7,
      "baseline": 18
     },
@@ -258,7 +258,7 @@
      ],
      "text": "Items",
      "style": "mltab",
-     "font": "ttf:narrow:11:0:1:0",
+     "font": "ttf:narrow:11:0:1:0.25",
      "left": 5,
      "baseline": 18
     },
@@ -272,9 +272,9 @@
      ],
      "text": "Trophies",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:0.94:0",
-     "left": 4,
-     "baseline": 16
+     "font": "ttf:narrow:8:0:1:0.25",
+     "left": 2,
+     "baseline": 17
     },
     {
      "from": [
@@ -286,7 +286,7 @@
      ],
      "text": "Friends",
      "style": "mltab",
-     "font": "ttf:narrow:9:0:1:0",
+     "font": "ttf:narrow:9:0:1:0.25",
      "left": -1,
      "baseline": 17
     },
@@ -300,9 +300,9 @@
      ],
      "text": "Rumor\nMemo",
      "style": "mltab",
-     "font": "ttf:narrow:10:0:1:0",
+     "font": "ttf:narrow:10:0:1:0.25",
      "left": 2,
-     "baseline": 24
+     "baseline": 25
     },
     {
      "from": [
@@ -314,8 +314,8 @@
      ],
      "text": "Buy",
      "style": "mltab",
-     "font": "ttf:narrow:11:0:1:0",
-     "left": 7,
+     "font": "ttf:narrow:11:0:1:0.25",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -328,9 +328,9 @@
      ],
      "text": "Heirloom\nList",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:0.94:0",
-     "left": 3,
-     "baseline": 30
+     "font": "ttf:narrow:8:0:1:0.25",
+     "left": 1,
+     "baseline": 31
     },
     {
      "from": [
@@ -342,9 +342,9 @@
      ],
      "text": "Key\nItems",
      "style": "mltab",
-     "font": "ttf:narrow:11:0:1:0",
+     "font": "ttf:narrow:11:0:1:0.25",
      "left": 5,
-     "baseline": 33
+     "baseline": 35
     },
     {
      "from": [
@@ -356,9 +356,9 @@
      ],
      "text": "Special\nAbilities",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:1:0",
+     "font": "ttf:narrow:8:0:1:0.25",
      "left": 3,
-     "baseline": 22
+     "baseline": 23
     },
     {
      "from": [
@@ -370,9 +370,9 @@
      ],
      "text": "My\nHeirloom",
      "style": "mltab",
-     "font": "ttf:narrow:8:0:0.94:0",
-     "left": 2,
-     "baseline": 22
+     "font": "ttf:narrow:8:0:1:0.25",
+     "left": 0,
+     "baseline": 23
     },
     {
      "from": [
@@ -384,9 +384,9 @@
      ],
      "text": "My\nItems",
      "style": "mltab",
-     "font": "ttf:narrow:11:0:1:0",
+     "font": "ttf:narrow:11:0:1:0.25",
      "left": 6,
-     "baseline": 33
+     "baseline": 35
     },
     {
      "from": [
@@ -398,7 +398,7 @@
      ],
      "text": "Goals",
      "style": "mltab",
-     "font": "ttf:narrow:11:0:1:0",
+     "font": "ttf:narrow:11:0:1:0.25",
      "left": 0,
      "baseline": 22
     }
