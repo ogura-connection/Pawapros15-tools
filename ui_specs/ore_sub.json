@@ -4230,86 +4230,86 @@
     },
     {
      "sprite": "41",
-     "text": "GIA",
+     "text": "GI",
      "style": "o3pm",
-     "font": "ttf:din:11:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "42",
-     "text": "CHU",
+     "text": "CH",
      "style": "o3pm",
-     "font": "ttf:din:8:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "43",
-     "text": "HIR",
+     "text": "HI",
      "style": "o3pm",
-     "font": "ttf:din:11:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "44",
-     "text": "YAK",
+     "text": "YA",
      "style": "o3pm",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "45",
-     "text": "YOK",
+     "text": "YO",
      "style": "o3pm",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "46",
-     "text": "HAN",
+     "text": "HA",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "47",
-     "text": "ORI",
+     "text": "OR",
      "style": "o3pm",
-     "font": "ttf:din:11:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "48",
-     "text": "NIP",
-     "style": "o3pm",
-     "font": "ttf:din:8:0:1:0",
-     "valign": "centre"
-    },
-    {
-     "sprite": "49",
-     "text": "SEI",
-     "style": "o3pm",
-     "font": "ttf:din:11:0:1:0",
-     "valign": "centre"
-    },
-    {
-     "sprite": "4a",
-     "text": "RAK",
+     "text": "NH",
      "style": "o3pm",
      "font": "ttf:din:10:0:1:0",
      "valign": "centre"
     },
     {
-     "sprite": "4b",
-     "text": "LOT",
+     "sprite": "49",
+     "text": "SE",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4a",
+     "text": "RA",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4b",
+     "text": "LO",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "4c",
-     "text": "SOF",
+     "text": "SB",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
@@ -5186,9 +5186,9 @@
     },
     {
      "sprite": "ce",
-     "text": "Outstanding Strikeout Skill",
+     "text": "Superb Strikeouts",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
@@ -5214,9 +5214,9 @@
     },
     {
      "sprite": "d2",
-     "text": "Struggles vs Lefty Pitchers",
+     "text": "Weak vs Lefty Arms",
      "style": "o3pm",
-     "font": "ttf:din:8:0:1:0",
+     "font": "ttf:din:12:0:1:0",
      "valign": "centre"
     },
     {
@@ -5279,9 +5279,9 @@
     },
     {
      "sprite": "db",
-     "text": "Short-Tempered",
+     "text": "Hot-Headed",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
@@ -5300,9 +5300,9 @@
     },
     {
      "sprite": "de",
-     "text": "Struggles vs Lefty Batters",
+     "text": "Weak vs Lefty Bats",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:12:0:1:0",
      "valign": "centre"
     },
     {
@@ -5416,16 +5416,16 @@
     },
     {
      "sprite": "f3",
-     "text": "Strong on High Pitches",
+     "text": "Strong vs High",
      "style": "o3pm",
-     "font": "ttf:din:8:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "f4",
-     "text": "Strong on Low Pitches",
+     "text": "Strong vs Low",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {

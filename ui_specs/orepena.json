@@ -4581,10 +4581,10 @@
       "00"
      ],
      "text": "vs Giants",
-     "style": "o2_f1_rfff_s0_c2",
-     "font": "nb11",
-     "left": 2,
-     "baseline": 16
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc10g1b10",
+     "left": 4,
+     "baseline": 17
     },
     {
      "from": [
@@ -4598,10 +4598,10 @@
       "01"
      ],
      "text": "vs Chunichi",
-     "style": "o2_fff1_r5_s0_c2",
-     "font": "nb11",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc10g1b10",
      "left": -1,
-     "baseline": 16
+     "baseline": 17
     },
     {
      "from": [
@@ -4615,10 +4615,10 @@
       "02"
      ],
      "text": "vs Hiroshima",
-     "style": "o2_f1_rff7_s0_c2",
-     "font": "nb9",
-     "left": 1,
-     "baseline": 15
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc9g1b10",
+     "left": -3,
+     "baseline": 16
     },
     {
      "from": [
@@ -4649,10 +4649,10 @@
       "04"
      ],
      "text": "vs Yokohama",
-     "style": "o2_f1_rfff_s0_c2",
-     "font": "nb9",
-     "left": -1,
-     "baseline": 15
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc9g1b10",
+     "left": -3,
+     "baseline": 16
     },
     {
      "from": [
@@ -4666,10 +4666,10 @@
       "05"
      ],
      "text": "vs Hanshin",
-     "style": "o2_f1_rff7_s0_c2",
-     "font": "nb11",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc10g1b10",
+     "left": 0,
+     "baseline": 17
     },
     {
      "from": [
@@ -4683,7 +4683,7 @@
       "06"
      ],
      "text": "vs Orix",
-     "style": "o2_ff_r5_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
      "left": 9,
      "baseline": 19
@@ -4700,10 +4700,10 @@
       "07"
      ],
      "text": "vs Nippon-Ham",
-     "style": "o2_f1ff_r4_s0_c2",
-     "font": "nb10",
-     "left": 4,
-     "baseline": 16
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc9g1b10",
+     "left": 1,
+     "baseline": 17
     },
     {
      "from": [
@@ -4717,10 +4717,10 @@
       "08"
      ],
      "text": "vs Seibu",
-     "style": "o2_f1_rffb_s0_c2",
-     "font": "dc11g2b10",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc12g2b10",
      "left": -1,
-     "baseline": 17
+     "baseline": 18
     },
     {
      "from": [
@@ -4734,10 +4734,10 @@
       "09"
      ],
      "text": "vs Rakuten",
-     "style": "o2_f1_rffb_s0_c2",
-     "font": "nb10",
-     "left": 1,
-     "baseline": 16
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc10g1b10",
+     "left": -1,
+     "baseline": 17
     },
     {
      "from": [
@@ -4751,9 +4751,9 @@
       "0a"
      ],
      "text": "vs Lotte",
-     "style": "o2_f1_rfff_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 3,
+     "left": 5,
      "baseline": 20
     },
     {
@@ -4769,8 +4769,8 @@
      ],
      "text": "vs SoftBank",
      "style": "o2_ff_rf_s0_c2",
-     "font": "nb12b",
-     "left": 0,
+     "font": "dc10g1b10",
+     "left": 5,
      "baseline": 16
     },
     {
@@ -4785,10 +4785,10 @@
       "0c"
      ],
      "text": "vs Shonan",
-     "style": "o2_f1_rfffd_s0_c2",
-     "font": "nb11",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc10g1b10",
+     "left": 1,
+     "baseline": 17
     },
     {
      "from": [
@@ -4802,7 +4802,7 @@
       "0d"
      ],
      "text": "vs Surpass",
-     "style": "o2_f1ff_ra_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc11g2b10",
      "left": 1,
      "baseline": 17
@@ -4819,9 +4819,9 @@
       "0e"
      ],
      "text": "Date",
-     "style": "o2_ff_rf_s0_c2",
+     "style": "o2_f1_rfff_s0_c2",
      "font": "dc14g2b10",
-     "left": 7,
+     "left": 5,
      "baseline": 19
     },
     {
@@ -4836,9 +4836,9 @@
       "0f"
      ],
      "text": "Plans",
-     "style": "o2_f1_rffa_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 0,
+     "left": 2,
      "baseline": 20
     },
     {
@@ -4853,10 +4853,10 @@
       "10"
      ],
      "text": "Practice",
-     "style": "o2_f1_rff2_s0_c2",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 17
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc10g1b10",
+     "left": 1,
+     "baseline": 18
     },
     {
      "from": [
@@ -4870,9 +4870,9 @@
       "11"
      ],
      "text": "Move",
-     "style": "o2_f1_rffc_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 2,
+     "left": 4,
      "baseline": 20
     },
     {
@@ -4887,9 +4887,9 @@
       "12"
      ],
      "text": "Rest",
-     "style": "o2_f1_rff7_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 4,
+     "left": 6,
      "baseline": 20
     },
     {
@@ -4904,10 +4904,10 @@
       "13"
      ],
      "text": "Tune-Up",
-     "style": "o2_f1_rff2_s0_c2",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc10g1b10",
+     "left": 1,
+     "baseline": 18
     },
     {
      "from": [
@@ -4938,9 +4938,9 @@
       "15"
      ],
      "text": "All-Star Game",
-     "style": "o2_f1_rfff_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 2,
+     "left": 4,
      "baseline": 20
     },
     {
@@ -5023,10 +5023,10 @@
       "1a"
      ],
      "text": "Victory Trip",
-     "style": "o2_ff_r7_s0_c2",
-     "font": "nb10",
-     "left": 2,
-     "baseline": 15
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc9g1b10",
+     "left": -2,
+     "baseline": 16
     },
     {
      "from": [
@@ -5040,10 +5040,10 @@
       "1b"
      ],
      "text": "Spring Camp",
-     "style": "o2_f1_rfff_s0_c2",
-     "font": "dc13g2b10",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc14g2b10",
      "left": 5,
-     "baseline": 18
+     "baseline": 19
     },
     {
      "from": [
@@ -5057,10 +5057,10 @@
       "1c"
      ],
      "text": "Fall Camp",
-     "style": "o2_f1_rfff_s0_c2",
-     "font": "dc13g2b10",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc14g2b10",
      "left": 15,
-     "baseline": 18
+     "baseline": 19
     },
     {
      "from": [
@@ -5074,9 +5074,9 @@
       "1d"
      ],
      "text": "Round 1",
-     "style": "o2_f1_rffc_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 14,
+     "left": 16,
      "baseline": 19
     },
     {
@@ -5091,9 +5091,9 @@
       "1e"
      ],
      "text": "Round 2",
-     "style": "o2_f1_rfff_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 13,
+     "left": 15,
      "baseline": 19
     },
     {
@@ -5121,9 +5121,9 @@
       "1f"
      ],
      "text": "Round 3",
-     "style": "o2_f1_rfff_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 13,
+     "left": 15,
      "baseline": 19
     },
     {
@@ -5151,9 +5151,9 @@
       "20"
      ],
      "text": "Round 4",
-     "style": "o2_f1_rfff_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
-     "left": 13,
+     "left": 15,
      "baseline": 19
     },
     {
@@ -5233,9 +5233,9 @@
      ],
      "text": "Solo Training",
      "style": "o2_ff_rf_s0_c2",
-     "font": "nb11",
-     "left": 2,
-     "baseline": 16
+     "font": "dc10g1b10",
+     "left": 1,
+     "baseline": 18
     },
     {
      "from": [
@@ -5249,10 +5249,10 @@
       "25"
      ],
      "text": "Contract Talks",
-     "style": "o2_f1ff_rc_s0_c2",
-     "font": "nb11",
-     "left": -1,
-     "baseline": 15
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc9g1b10",
+     "left": 0,
+     "baseline": 16
     },
     {
      "from": [
@@ -5266,10 +5266,10 @@
       "26"
      ],
      "text": "Wedding & Reception",
-     "style": "o2_f1_rfff_s0_c2",
-     "font": "nb12b",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_f1_rff_s0_c2",
+     "font": "dc10g1b10",
+     "left": 9,
+     "baseline": 17
     },
     {
      "from": [
@@ -5309,9 +5309,9 @@
       "27"
      ],
      "text": "Date",
-     "style": "o2_ff_rf_s0_c2",
+     "style": "o2_f1_rfff_s0_c2",
      "font": "dc14g2b10",
-     "left": 8,
+     "left": 6,
      "baseline": 20
     },
     {
@@ -5326,7 +5326,7 @@
       "28"
      ],
      "text": "Trip",
-     "style": "o2_ff_r5_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc14g2b10",
      "left": 8,
      "baseline": 19
@@ -5344,9 +5344,9 @@
      ],
      "text": "Golf Tournament",
      "style": "o2_ff_rf_s0_c2",
-     "font": "nb11",
+     "font": "dc10g1b10",
      "left": 0,
-     "baseline": 15
+     "baseline": 17
     },
     {
      "from": [
@@ -5361,9 +5361,9 @@
      ],
      "text": "Preseason Game",
      "style": "o2_ff_rf_s0_c2",
-     "font": "nb11",
-     "left": 5,
-     "baseline": 15
+     "font": "dc10g1b10",
+     "left": 1,
+     "baseline": 17
     },
     {
      "from": [
@@ -5377,10 +5377,10 @@
       "2b"
      ],
      "text": "Fishing Tourney",
-     "style": "o2_ff_rc_s0_c2",
-     "font": "nb10",
-     "left": 2,
-     "baseline": 15
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc9g1b10",
+     "left": -2,
+     "baseline": 16
     },
     {
      "from": [
@@ -5412,9 +5412,9 @@
      ],
      "text": "Goodwill Game",
      "style": "o2_ff_rf_s0_c2",
-     "font": "nb11",
-     "left": -1,
-     "baseline": 16
+     "font": "dc9g1b10",
+     "left": 1,
+     "baseline": 17
     },
     {
      "from": [
@@ -5429,9 +5429,9 @@
      ],
      "text": "All-Star Game",
      "style": "o2_ff_rf_s0_c2",
-     "font": "nb11",
+     "font": "dc9g1b10",
      "left": 1,
-     "baseline": 16
+     "baseline": 17
     },
     {
      "from": [
@@ -5479,10 +5479,10 @@
       "45"
      ],
      "text": "Sapporo",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
      "left": -2,
-     "baseline": 16
+     "baseline": 17
     },
     {
      "from": [
@@ -5496,10 +5496,10 @@
       "46"
      ],
      "text": "Tokyo",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "dc13g2b10",
-     "left": -2,
-     "baseline": 18
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc14g2b10",
+     "left": -4,
+     "baseline": 19
     },
     {
      "from": [
@@ -5514,9 +5514,9 @@
      ],
      "text": "Yokohama",
      "style": "o2_ff_r13_s0_c2",
-     "font": "nb9",
-     "left": -2,
-     "baseline": 16
+     "font": "dc9g1b10",
+     "left": -4,
+     "baseline": 17
     },
     {
      "from": [
@@ -5530,7 +5530,7 @@
       "48"
      ],
      "text": "Chiba",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": -2,
      "baseline": 19
@@ -5547,10 +5547,10 @@
       "49"
      ],
      "text": "Saitama",
-     "style": "o2_ff_rd13_s0_c2",
-     "font": "nb11",
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
      "left": -2,
-     "baseline": 16
+     "baseline": 18
     },
     {
      "from": [
@@ -5564,7 +5564,7 @@
       "4a"
      ],
      "text": "Nagoya",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": 0,
      "baseline": 18
@@ -5581,9 +5581,9 @@
       "4b"
      ],
      "text": "Osaka",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "dc12g2b10",
-     "left": -2,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc14g2b10",
+     "left": -4,
      "baseline": 18
     },
     {
@@ -5598,9 +5598,9 @@
       "4c"
      ],
      "text": "Nishinomiya",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb9",
-     "left": -4,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -10,
      "baseline": 16
     },
     {
@@ -5615,7 +5615,7 @@
       "4d"
      ],
      "text": "Kobe",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": 0,
      "baseline": 18
@@ -5632,9 +5632,9 @@
       "4e"
      ],
      "text": "Hiroshima",
-     "style": "o2_ff6f_r11_s0_c2",
-     "font": "nb10",
-     "left": -2,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -4,
      "baseline": 16
     },
     {
@@ -5650,9 +5650,9 @@
      ],
      "text": "Fukuoka",
      "style": "o2_ff_r13_s0_c2",
-     "font": "nb10",
-     "left": 2,
-     "baseline": 16
+     "font": "dc10g1b10",
+     "left": -3,
+     "baseline": 17
     },
     {
      "from": [
@@ -5666,10 +5666,10 @@
       "50"
      ],
      "text": "Sendai",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb12b",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc13g2b10",
+     "left": -6,
+     "baseline": 18
     },
     {
      "from": [
@@ -5683,10 +5683,10 @@
       "51"
      ],
      "text": "Toyama",
-     "style": "o2_f2ff_r13_s0_c2",
-     "font": "nb11",
-     "left": -2,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc11g2b10",
+     "left": -5,
+     "baseline": 18
     },
     {
      "from": [
@@ -5700,9 +5700,9 @@
       "52"
      ],
      "text": "Kanazawa",
-     "style": "o2_ff_r12_s0_c2",
-     "font": "nb9",
-     "left": -2,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -4,
      "baseline": 16
     },
     {
@@ -5717,9 +5717,9 @@
       "53"
      ],
      "text": "Nishikyogoku",
-     "style": "o2_ff_re12_s0_c2",
-     "font": "nb10",
-     "left": -2,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -5,
      "baseline": 16
     },
     {
@@ -5734,10 +5734,10 @@
       "54"
      ],
      "text": "Kurashiki",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb10",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -6,
+     "baseline": 17
     },
     {
      "from": [
@@ -5751,7 +5751,7 @@
       "55"
      ],
      "text": "Iwaki",
-     "style": "o2_fff2_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": 6,
      "baseline": 20
@@ -5769,9 +5769,9 @@
      ],
      "text": "Hitachinaka",
      "style": "o2_ff_r13_s0_c2",
-     "font": "nb12b",
-     "left": 2,
-     "baseline": 16
+     "font": "dc12g2b10",
+     "left": -5,
+     "baseline": 18
     },
     {
      "from": [
@@ -5785,9 +5785,9 @@
       "57"
      ],
      "text": "Yamagata",
-     "style": "o2_fff2_r11_s0_c2",
-     "font": "nb9",
-     "left": -3,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -5,
      "baseline": 16
     },
     {
@@ -5802,10 +5802,10 @@
       "58"
      ],
      "text": "Toyohashi",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb9",
-     "left": -2,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -5,
+     "baseline": 17
     },
     {
      "from": [
@@ -5819,9 +5819,9 @@
       "59"
      ],
      "text": "Miyazaki",
-     "style": "o2_fbff_r11_s0_c2",
-     "font": "nb10",
-     "left": 0,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -4,
      "baseline": 16
     },
     {
@@ -5836,9 +5836,9 @@
       "5a"
      ],
      "text": "Hamamatsu",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb9",
-     "left": -4,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -8,
      "baseline": 16
     },
     {
@@ -5853,7 +5853,7 @@
       "5b"
      ],
      "text": "Fukui",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": -1,
      "baseline": 19
@@ -5870,7 +5870,7 @@
       "5c"
      ],
      "text": "Akita",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": -1,
      "baseline": 18
@@ -5888,8 +5888,8 @@
      ],
      "text": "Matsuyama",
      "style": "o2_ff_r13_s0_c2",
-     "font": "nb9",
-     "left": -4,
+     "font": "dc9g1b10",
+     "left": -8,
      "baseline": 16
     },
     {
@@ -5904,7 +5904,7 @@
       "5e"
      ],
      "text": "Gifu",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": 3,
      "baseline": 19
@@ -5922,8 +5922,8 @@
      ],
      "text": "Fukuyama",
      "style": "o2_ff_r13_s0_c2",
-     "font": "nb9",
-     "left": -1,
+     "font": "dc9g1b10",
+     "left": -6,
      "baseline": 16
     },
     {
@@ -5938,10 +5938,10 @@
       "60"
      ],
      "text": "Hakodate",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb10",
-     "left": -2,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -6,
+     "baseline": 17
     },
     {
      "from": [
@@ -5955,10 +5955,10 @@
       "61"
      ],
      "text": "Nagano",
-     "style": "o2_ff_re12_s0_c2",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc12g2b10",
+     "left": -6,
+     "baseline": 18
     },
     {
      "from": [
@@ -5972,9 +5972,9 @@
       "62"
      ],
      "text": "Asahikawa",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb9",
-     "left": -3,
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -7,
      "baseline": 16
     },
     {
@@ -5989,10 +5989,10 @@
       "63"
      ],
      "text": "Kagoshima",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
-     "left": 1,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": 0,
+     "baseline": 18
     },
     {
      "from": [
@@ -6007,9 +6007,9 @@
      ],
      "text": "Shimonoseki",
      "style": "o2_ff_r13_s0_c2",
-     "font": "nb9",
-     "left": -5,
-     "baseline": 16
+     "font": "dc9g1b10",
+     "left": -11,
+     "baseline": 17
     },
     {
      "from": [
@@ -6023,10 +6023,10 @@
       "65"
      ],
      "text": "Shikoku",
-     "style": "o2_fff2_r625_s0_c2",
-     "font": "nb10",
-     "left": 2,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -2,
+     "baseline": 18
     },
     {
      "from": [
@@ -6040,10 +6040,10 @@
       "66"
      ],
      "text": "Kyushu",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc11g2b10",
+     "left": -5,
+     "baseline": 18
     },
     {
      "from": [
@@ -6057,10 +6057,10 @@
       "67"
      ],
      "text": "Okinawa",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
-     "left": -2,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -4,
+     "baseline": 18
     },
     {
      "from": [
@@ -6074,10 +6074,10 @@
       "68"
      ],
      "text": "Korea",
-     "style": "o2_ff_r41_s0_c2",
-     "font": "dc13g2b10",
-     "left": -2,
-     "baseline": 18
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc14g2b10",
+     "left": -4,
+     "baseline": 19
     },
     {
      "from": [
@@ -6091,10 +6091,10 @@
       "69"
      ],
      "text": "Kushiro",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -2,
+     "baseline": 18
     },
     {
      "from": [
@@ -6108,10 +6108,10 @@
       "6a"
      ],
      "text": "Kumamoto",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb9",
-     "left": -2,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -6,
+     "baseline": 17
     },
     {
      "from": [
@@ -6125,10 +6125,10 @@
       "6b"
      ],
      "text": "Morioka",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
      "left": -2,
-     "baseline": 16
+     "baseline": 17
     },
     {
      "from": [
@@ -6142,10 +6142,10 @@
       "6c"
      ],
      "text": "Shizuoka",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb10",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -4,
+     "baseline": 18
     },
     {
      "from": [
@@ -6159,10 +6159,10 @@
       "6d"
      ],
      "text": "Maebashi",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb10",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -5,
+     "baseline": 18
     },
     {
      "from": [
@@ -6176,10 +6176,10 @@
       "6e"
      ],
      "text": "Obihiro",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc11g2b10",
+     "left": -6,
+     "baseline": 18
     },
     {
      "from": [
@@ -6193,10 +6193,10 @@
       "6f"
      ],
      "text": "Nagasaki",
-     "style": "o2_ff_r14_s0_c2",
-     "font": "nb10",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -5,
+     "baseline": 18
     },
     {
      "from": [
@@ -6210,10 +6210,10 @@
       "70"
      ],
      "text": "Fukushima",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb9",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -7,
+     "baseline": 17
     },
     {
      "from": [
@@ -6227,10 +6227,10 @@
       "71"
      ],
      "text": "Hiratsuka",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb10",
-     "left": -2,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -5,
+     "baseline": 17
     },
     {
      "from": [
@@ -6244,10 +6244,10 @@
       "72"
      ],
      "text": "Yonago",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc12g2b10",
+     "left": -5,
+     "baseline": 18
     },
     {
      "from": [
@@ -6261,10 +6261,10 @@
       "73"
      ],
      "text": "Kitakyushu",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -2,
+     "baseline": 18
     },
     {
      "from": [
@@ -6278,10 +6278,10 @@
       "74"
      ],
      "text": "Kure",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb11",
-     "left": -1,
-     "baseline": 17
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc12g2b10",
+     "left": -5,
+     "baseline": 19
     },
     {
      "from": [
@@ -6295,7 +6295,7 @@
       "75"
      ],
      "text": "Kofu",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": 2,
      "baseline": 20
@@ -6312,10 +6312,10 @@
       "76"
      ],
      "text": "Yamaguchi",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb9",
-     "left": -4,
-     "baseline": 17
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc9g1b10",
+     "left": -8,
+     "baseline": 18
     },
     {
      "from": [
@@ -6329,10 +6329,10 @@
       "77"
      ],
      "text": "Utsunomiya",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "nb10",
-     "left": 1,
-     "baseline": 16
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc10g1b10",
+     "left": -3,
+     "baseline": 17
     },
     {
      "from": [
@@ -6346,7 +6346,7 @@
       "78"
      ],
      "text": "Oita",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r13_s0_c2",
      "font": "dc14g2b10",
      "left": 4,
      "baseline": 19
@@ -6363,10 +6363,10 @@
       "79"
      ],
      "text": "Omiya",
-     "style": "o2_ff_r11_s0_c2",
-     "font": "dc11g2b10",
-     "left": 0,
-     "baseline": 18
+     "style": "o2_ff_r13_s0_c2",
+     "font": "dc14g2b10",
+     "left": -4,
+     "baseline": 19
     }
    ],
    "under": 3
@@ -6705,9 +6705,9 @@
       "10"
      ],
      "text": "Slump",
-     "style": "o2_f1bf_r2ffff_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc15g2b10",
-     "left": 4,
+     "left": 8,
      "baseline": 22
     },
     {
@@ -6722,9 +6722,9 @@
       "10"
      ],
      "text": "Buster Bonus",
-     "style": "o2_f1bf_r2ffff_s0_c2",
+     "style": "o2_ff_rf_s0_c2",
      "font": "dc15g2b10",
-     "left": -74,
+     "left": -70,
      "baseline": 22
     },
     {
@@ -6786,7 +6786,7 @@
       "12"
      ],
      "text": "Comeback",
-     "style": "o2_fc61_rb1_s0_c2",
+     "style": "o2_fc_rb1_s0_c2",
      "font": "dc12g2b10",
      "left": 0,
      "baseline": 20
@@ -6803,7 +6803,7 @@
       "12"
      ],
      "text": "Walk-off",
-     "style": "o2_fc61_rb1_s0_c2",
+     "style": "o2_fc_rb1_s0_c2",
      "font": "dc12g2b10",
      "left": -56,
      "baseline": 20
@@ -6820,7 +6820,7 @@
       "12"
      ],
      "text": "Grand Slam",
-     "style": "o2_fc61_rb1_s0_c2",
+     "style": "o2_fc_rb1_s0_c2",
      "font": "dc12g2b10",
      "left": -23,
      "baseline": 20
@@ -6837,7 +6837,7 @@
       "13"
      ],
      "text": "Comeback Home Run",
-     "style": "o2_fcc1_rb1_s0_c2",
+     "style": "o2_fc_rb1_s0_c2",
      "font": "dc11g2b10",
      "left": -4,
      "baseline": 19
@@ -6854,7 +6854,7 @@
       "14"
      ],
      "text": "Comeback",
-     "style": "o2_fcc1_rb1_s0_c2",
+     "style": "o2_fc_rb1_s0_c2",
      "font": "dc15g2b10",
      "left": 6,
      "baseline": 21
@@ -6871,7 +6871,7 @@
       "14"
      ],
      "text": "Walk-off HR",
-     "style": "o2_fcc1_rb1_s0_c2",
+     "style": "o2_fc_rb1_s0_c2",
      "font": "dc15g2b10",
      "left": -10,
      "baseline": 21
@@ -6888,7 +6888,7 @@
       "15"
      ],
      "text": "CG",
-     "style": "o2_f458_rb1_s0_c2",
+     "style": "o2_fc_rb1_s0_c2",
      "font": "dc15g2b10",
      "left": 10,
      "baseline": 20
@@ -6905,10 +6905,10 @@
       "16"
      ],
      "text": "Perfect Game",
-     "style": "o2_fc_r41b1_s0_c2",
-     "font": "nb11",
+     "style": "o2_fc_rb1_s0_c2",
+     "font": "dc10g1b10",
      "left": 0,
-     "baseline": 17
+     "baseline": 18
     },
     {
      "from": [
@@ -6965,7 +6965,7 @@
       "18"
      ],
      "text": "Hero Player",
-     "style": "o2_fcc8_rb1_s0_c2",
+     "style": "o2_fc_rb1_s0_c2",
      "font": "dc15g2b10",
      "left": 7,
      "baseline": 20
@@ -6982,9 +6982,9 @@
       "19"
      ],
      "text": "Home Run",
-     "style": "o2_f7_rb2_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 11,
+     "left": 9,
      "baseline": 19
     },
     {
@@ -6999,9 +6999,9 @@
       "1a"
      ],
      "text": "2-Run HR",
-     "style": "o2_f7_rb2_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 39,
+     "left": 37,
      "baseline": 19
     },
     {
@@ -7029,9 +7029,9 @@
       "1b"
      ],
      "text": "3-Run HR",
-     "style": "o2_f7_r22_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 39,
+     "left": 37,
      "baseline": 19
     },
     {
@@ -7072,9 +7072,9 @@
       "1d"
      ],
      "text": "Walk-off Hit",
-     "style": "o2_f772_rb2_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 17,
+     "left": 15,
      "baseline": 19
     },
     {
@@ -7102,9 +7102,9 @@
       "1e"
      ],
      "text": "Walk-off HR",
-     "style": "o2_f772_rb2_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 36,
+     "left": 34,
      "baseline": 19
     },
     {
@@ -7132,10 +7132,10 @@
       "1f"
      ],
      "text": "Bases-Loaded Hit",
-     "style": "o2_ff_r777b2_s0_c2",
-     "font": "nb11",
-     "left": 2,
-     "baseline": 16
+     "style": "o2_f7_rf1b1_s0_c2",
+     "font": "dc10g1b10",
+     "left": -1,
+     "baseline": 18
     },
     {
      "from": [
@@ -7162,9 +7162,9 @@
       "20"
      ],
      "text": "RBI",
-     "style": "o2_f77f_rb2_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 10,
+     "left": 8,
      "baseline": 20
     },
     {
@@ -7179,10 +7179,10 @@
       "21"
      ],
      "text": "3-Hit Game",
-     "style": "o2_ff_r777b2_s0_c2",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 17
+     "style": "o2_f7_rf1b1_s0_c2",
+     "font": "dc10g1b10",
+     "left": -1,
+     "baseline": 18
     },
     {
      "from": [
@@ -7222,9 +7222,9 @@
       "22"
      ],
      "text": "Win",
-     "style": "o2_f7_rf2_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 6,
+     "left": 4,
      "baseline": 20
     },
     {
@@ -7252,9 +7252,9 @@
       "23"
      ],
      "text": "Save",
-     "style": "o2_f7_ra2_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 11,
+     "left": 9,
      "baseline": 20
     },
     {
@@ -7308,9 +7308,9 @@
       "24"
      ],
      "text": "Hold",
-     "style": "o2_f7_r22_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 22,
+     "left": 20,
      "baseline": 19
     },
     {
@@ -7338,7 +7338,7 @@
       "25"
      ],
      "text": "CG",
-     "style": "o2_ff_r772_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
      "left": 10,
      "baseline": 20
@@ -7394,9 +7394,9 @@
       "26"
      ],
      "text": "Hit",
-     "style": "o2_ff_r771b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 6,
+     "left": 8,
      "baseline": 20
     },
     {
@@ -7411,9 +7411,9 @@
       "27"
      ],
      "text": "Double",
-     "style": "o2_ff_r741b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": -1,
+     "left": 1,
      "baseline": 20
     },
     {
@@ -7428,9 +7428,9 @@
       "28"
      ],
      "text": "Triple",
-     "style": "o2_f77b_r1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 7,
+     "left": 4,
      "baseline": 20
     },
     {
@@ -7458,9 +7458,9 @@
       "29"
      ],
      "text": "Leadoff HR",
-     "style": "o2_ff_r777b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 38,
+     "left": 40,
      "baseline": 20
     },
     {
@@ -7488,7 +7488,7 @@
       "2a"
      ],
      "text": "Clutch Hit",
-     "style": "o2_ff_r771_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
      "left": 8,
      "baseline": 20
@@ -7518,7 +7518,7 @@
       "2b"
      ],
      "text": "Clutch HR",
-     "style": "o2_ff_r7b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
      "left": 36,
      "baseline": 20
@@ -7548,9 +7548,9 @@
       "2c"
      ],
      "text": "Clutch RBI",
-     "style": "o2_ff_r771_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 8,
+     "left": 7,
      "baseline": 20
     },
     {
@@ -7578,9 +7578,9 @@
       "2d"
      ],
      "text": "Run",
-     "style": "o2_ff_r7b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 6,
+     "left": 5,
      "baseline": 20
     },
     {
@@ -7595,10 +7595,10 @@
       "2e"
      ],
      "text": "Sac Bunt",
-     "style": "o2_ff_r741_s0_c2",
-     "font": "nb11",
-     "left": -2,
-     "baseline": 16
+     "style": "o2_f7_rf1b1_s0_c2",
+     "font": "dc10g1b10",
+     "left": -4,
+     "baseline": 18
     },
     {
      "from": [
@@ -7625,7 +7625,7 @@
       "2f"
      ],
      "text": "Sac Fly",
-     "style": "o2_ff_r77b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc11g2b10",
      "left": -4,
      "baseline": 18
@@ -7642,7 +7642,7 @@
       "30"
      ],
      "text": "Walk",
-     "style": "o2_fff1_r77bb_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
      "left": -1,
      "baseline": 20
@@ -7659,7 +7659,7 @@
       "31"
      ],
      "text": "HBP",
-     "style": "o2_ff_r77b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
      "left": 5,
      "baseline": 20
@@ -7676,9 +7676,9 @@
       "32"
      ],
      "text": "Steal",
-     "style": "o2_fff1_r771b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": -4,
+     "left": -2,
      "baseline": 20
     },
     {
@@ -7693,7 +7693,7 @@
       "33"
      ],
      "text": "Innings",
-     "style": "o2_ff_r7b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
      "left": 0,
      "baseline": 20
@@ -7723,10 +7723,10 @@
       "34"
      ],
      "text": "Strikeouts",
-     "style": "o2_ff_r777b1_s0_c2",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 16
+     "style": "o2_f7_rf1b1_s0_c2",
+     "font": "dc10g1b10",
+     "left": 2,
+     "baseline": 18
     },
     {
      "from": [
@@ -7740,9 +7740,9 @@
       "35"
      ],
      "text": "Pitches",
-     "style": "o2_ff_r7b1_s0_c2",
+     "style": "o2_f7_rf1b1_s0_c2",
      "font": "dc15g2b10",
-     "left": 0,
+     "left": -1,
      "baseline": 20
     },
     {
@@ -7770,10 +7770,10 @@
       "36"
      ],
      "text": "Scoreless Streak",
-     "style": "o2_ff_r757b1_s0_c2",
-     "font": "nb11",
-     "left": 4,
-     "baseline": 16
+     "style": "o2_f7_rf1b1_s0_c2",
+     "font": "dc10g1b10",
+     "left": 2,
+     "baseline": 18
     },
     {
      "from": [
@@ -7800,10 +7800,10 @@
       "37"
      ],
      "text": "Strikeout",
-     "style": "o2_f1_r7f_s0_c2",
-     "font": "nb11",
-     "left": -1,
-     "baseline": 18
+     "style": "o2_f1_rf7f_s0_c2",
+     "font": "dc10g1b10",
+     "left": -2,
+     "baseline": 19
     },
     {
      "from": [
@@ -7817,9 +7817,9 @@
       "38"
      ],
      "text": "Error",
-     "style": "o2_f1_r7f_s0_c2",
+     "style": "o2_f1_rf7f_s0_c2",
      "font": "dc15g2b10",
-     "left": 3,
+     "left": 2,
      "baseline": 23
     },
     {
@@ -7834,9 +7834,9 @@
       "39"
      ],
      "text": "Walk",
-     "style": "o2_f11f_r7f_s0_c2",
+     "style": "o2_f1_rf7f_s0_c2",
      "font": "dc15g2b10",
-     "left": 4,
+     "left": 2,
      "baseline": 22
     },
     {
@@ -7864,7 +7864,7 @@
       "3a"
      ],
      "text": "Runs",
-     "style": "o2_f1_r7f_s0_c2",
+     "style": "o2_f1_rf7f_s0_c2",
      "font": "dc15g2b10",
      "left": 3,
      "baseline": 23
@@ -7881,10 +7881,10 @@
       "3b"
      ],
      "text": "Double Plays",
-     "style": "o2_f1_r7f_s0_c2",
-     "font": "nb12b",
-     "left": -4,
-     "baseline": 18
+     "style": "o2_f1_rf7f_s0_c2",
+     "font": "dc10g1b10",
+     "left": -2,
+     "baseline": 19
     },
     {
      "from": [
@@ -7928,9 +7928,9 @@
       "3d"
      ],
      "text": "HBP",
-     "style": "o2_f1_r77_s0_c2",
+     "style": "o2_f1_rf7f_s0_c2",
      "font": "dc15g2b10",
-     "left": 9,
+     "left": 8,
      "baseline": 22
     },
     {
@@ -7945,10 +7945,10 @@
       "3e"
      ],
      "text": "Earned Runs",
-     "style": "o2_f117_rf_s0_c2",
-     "font": "nb12b",
-     "left": -4,
-     "baseline": 19
+     "style": "o2_f1_rf7f_s0_c2",
+     "font": "dc10g1b10",
+     "left": -2,
+     "baseline": 20
     },
     {
      "from": [
@@ -7975,10 +7975,10 @@
       "3f"
      ],
      "text": "Wild Pitches",
-     "style": "o2_f1_r7f_s0_c2",
-     "font": "nb10",
-     "left": -4,
-     "baseline": 19
+     "style": "o2_f1_rf7f_s0_c2",
+     "font": "dc9g1b10",
+     "left": -8,
+     "baseline": 20
     },
     {
      "from": [
@@ -8077,7 +8077,7 @@
       "7d"
      ],
      "text": "Down",
-     "style": "o2_ff_r11_s0_c2",
+     "style": "o2_ff_r111_s0_c2",
      "font": "dc15g2b10",
      "left": 0,
      "baseline": 21
@@ -8184,10 +8184,10 @@
       "aa"
      ],
      "text": "Shutout",
-     "style": "o2_fc_r1b1_s0_c2",
-     "font": "nb11",
-     "left": -2,
-     "baseline": 17
+     "style": "o2_fc_rb1_s0_c2",
+     "font": "dc10g1b10",
+     "left": 0,
+     "baseline": 18
     },
     {
      "from": [
@@ -8218,10 +8218,10 @@
       "ae"
      ],
      "text": "Hits Allowed",
-     "style": "o2_f1_r7f_s0_c2",
-     "font": "nb12b",
-     "left": -4,
-     "baseline": 18
+     "style": "o2_f1_rf7f_s0_c2",
+     "font": "dc10g1b10",
+     "left": -1,
+     "baseline": 19
     },
     {
      "from": [
@@ -8248,9 +8248,9 @@
       "af"
      ],
      "text": "HR Allowed",
-     "style": "o2_f1_r7f_s0_c2",
+     "style": "o2_f1_rf7f_s0_c2",
      "font": "dc15g2b10",
-     "left": 1,
+     "left": 0,
      "baseline": 22
     }
    ],
@@ -8282,7 +8282,7 @@
       "00"
      ],
      "text": "Results",
-     "style": "o2_fa2_ra2_s0_c2",
+     "style": "o2_fa2_r1f1f_s0_c2",
      "font": "dc28g2b10",
      "left": 22,
      "baseline": 38
@@ -8532,7 +8532,7 @@
       "03"
      ],
      "text": "Starter",
-     "style": "o2_f55f_r11_s0_c2",
+     "style": "o2_ff59_r13_s0_c2",
      "font": "dc15g2b10",
      "left": 17,
      "baseline": 24
@@ -8566,7 +8566,7 @@
       "05"
      ],
      "text": "Closer",
-     "style": "o2_f58f_r13_s0_c2",
+     "style": "o2_ff59_r13_s0_c2",
      "font": "dc15g2b10",
      "left": 21,
      "baseline": 24
@@ -8630,7 +8630,7 @@
       "08"
      ],
      "text": "Second Base",
-     "style": "o2_f589_r13_s0_c2",
+     "style": "o2_f56f_r13_s0_c2",
      "font": "dc13g2b10",
      "left": -9,
      "baseline": 23
@@ -8647,9 +8647,9 @@
       "09"
      ],
      "text": "Third Base",
-     "style": "o2_f569_r713_s0_c2",
+     "style": "o2_f56f_r13_s0_c2",
      "font": "dc15g2b10",
-     "left": -5,
+     "left": -4,
      "baseline": 24
     },
     {
@@ -8664,7 +8664,7 @@
       "0a"
      ],
      "text": "Shortstop",
-     "style": "o2_f569_r13_s0_c2",
+     "style": "o2_f56f_r13_s0_c2",
      "font": "dc15g2b10",
      "left": -3,
      "baseline": 24
@@ -8699,9 +8699,9 @@
      ],
      "text": "Votes",
      "style": "o2_f1_rff_s0_c2",
-     "font": "nb9",
+     "font": "dc11g2b10",
      "left": 3,
-     "baseline": 16
+     "baseline": 18
     },
     {
      "from": [
@@ -8762,7 +8762,7 @@
       "23"
      ],
      "text": "Saves",
-     "style": "o2_f6_r1_s0_c2",
+     "style": "o2_f6fb_r1_s0_c2",
      "font": "dc15g2b10",
      "left": 17,
      "baseline": 23
@@ -8792,7 +8792,7 @@
       "24"
      ],
      "text": "AVG",
-     "style": "o2_f6f6_r1_s0_c2",
+     "style": "o2_f6fb_r1_s0_c2",
      "font": "dc15g2b10",
      "left": 13,
      "baseline": 24
@@ -8809,7 +8809,7 @@
       "25"
      ],
      "text": "RBI",
-     "style": "o2_f6_r1_s0_c2",
+     "style": "o2_f6fb_r1_s0_c2",
      "font": "dc15g2b10",
      "left": 16,
      "baseline": 24
@@ -8826,7 +8826,7 @@
       "26"
      ],
      "text": "HR",
-     "style": "o2_fff6_r1_s0_c2",
+     "style": "o2_f6fb_r1_s0_c2",
      "font": "dc15g2b10",
      "left": 29,
      "baseline": 24
@@ -8856,7 +8856,7 @@
       "2d"
      ],
      "text": "Trade",
-     "style": "o2_fb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": 11,
      "baseline": 38
@@ -8873,7 +8873,7 @@
       "2d"
      ],
      "text": "News",
-     "style": "o2_fb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": -21,
      "baseline": 38
@@ -8903,7 +8903,7 @@
       "2e"
      ],
      "text": "News",
-     "style": "o2_f478_r21_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": -3,
      "baseline": 38
@@ -8920,7 +8920,7 @@
       "2f"
      ],
      "text": "Japan",
-     "style": "o2_f5bb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": 21,
      "baseline": 37
@@ -8937,7 +8937,7 @@
       "2f"
      ],
      "text": "Series",
-     "style": "o2_f5bb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": -14,
      "baseline": 37
@@ -8954,7 +8954,7 @@
       "2f"
      ],
      "text": "MVP",
-     "style": "o2_f5bb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": 21,
      "baseline": 37
@@ -8971,7 +8971,7 @@
       "2f"
      ],
      "text": "Points",
-     "style": "o2_f5bb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": -39,
      "baseline": 37
@@ -8988,7 +8988,7 @@
       "30"
      ],
      "text": "Season",
-     "style": "o2_fb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": 31,
      "baseline": 37
@@ -9005,7 +9005,7 @@
       "30"
      ],
      "text": "MVP",
-     "style": "o2_fb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": 8,
      "baseline": 37
@@ -9022,7 +9022,7 @@
       "30"
      ],
      "text": "Points",
-     "style": "o2_fb_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds26",
      "left": -52,
      "baseline": 37
@@ -9039,7 +9039,7 @@
       "31"
      ],
      "text": "Rookie Race",
-     "style": "o2_f478_rff_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds18",
      "left": 19,
      "baseline": 33
@@ -9069,7 +9069,7 @@
       "32"
      ],
      "text": "New",
-     "style": "o2_fb78_ref_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds24",
      "left": -3,
      "baseline": 36
@@ -9086,7 +9086,7 @@
       "32"
      ],
      "text": "Import",
-     "style": "o2_fb78_ref_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds24",
      "left": 26,
      "baseline": 36
@@ -9103,7 +9103,7 @@
       "32"
      ],
      "text": "Ratings",
-     "style": "o2_fb78_ref_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds24",
      "left": -6,
      "baseline": 36
@@ -9154,7 +9154,7 @@
       "47"
      ],
      "text": "Monthly",
-     "style": "o2_f556_rabef_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds19",
      "left": -21,
      "baseline": 34
@@ -9197,9 +9197,9 @@
       "47"
      ],
      "text": "Forecast",
-     "style": "o2_f556_rabef_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds19",
-     "left": 1,
+     "left": 5,
      "baseline": 34
     },
     {
@@ -9214,7 +9214,7 @@
       "48"
      ],
      "text": "Monthly",
-     "style": "o2_f556_rabef_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds21",
      "left": -19,
      "baseline": 35
@@ -9257,9 +9257,9 @@
       "48"
      ],
      "text": "Winner",
-     "style": "o2_f556_rabef_s0_c2",
+     "style": "o2_f47b_rff_s0_c2",
      "font": "ds21",
-     "left": 10,
+     "left": 14,
      "baseline": 35
     },
     {
@@ -9291,7 +9291,7 @@
       "34"
      ],
      "text": "Pacific",
-     "style": "o2_ff77_r1_s0_c2",
+     "style": "o2_f775_r4_s0_c2",
      "font": "dc12g2b10",
      "left": 12,
      "baseline": 18
@@ -9373,9 +9373,9 @@
      ],
      "text": "ERA",
      "style": "o2_f1_rff_s0_c2",
-     "font": "nb10",
-     "left": 3,
-     "baseline": 16
+     "font": "dc11g2b10",
+     "left": 0,
+     "baseline": 18
     },
     {
      "from": [
@@ -9576,7 +9576,7 @@
       "0d"
      ],
      "text": "Yr",
-     "style": "o2_ff85_r442_s0_c2",
+     "style": "o2_ff_r444_s0_c2",
      "font": "dc14g2b10",
      "left": 0,
      "baseline": 20
@@ -9593,7 +9593,7 @@
       "0e"
      ],
      "text": "Mo",
-     "style": "o2_ff_r43_s0_c2",
+     "style": "o2_ff_r44_s0_c2",
      "font": "dc11g2b10",
      "left": 1,
      "baseline": 18
@@ -9610,10 +9610,10 @@
       "0f"
      ],
      "text": "Day",
-     "style": "o2_ff_r841_s0_c2",
-     "font": "nb9",
+     "style": "o2_ff_r44_s0_c2",
+     "font": "dc11g2b10",
      "left": 1,
-     "baseline": 17
+     "baseline": 18
     },
     {
      "from": [
@@ -9627,7 +9627,7 @@
       "10"
      ],
      "text": "Now",
-     "style": "o2_ff_r445_s0_c2",
+     "style": "o2_ff_r44_s0_c2",
      "font": "dc12g2b10",
      "left": 2,
      "baseline": 19
@@ -9657,7 +9657,7 @@
       "11"
      ],
      "text": "End of Season",
-     "style": "o2_ff_r444_s0_c2",
+     "style": "o2_ff_r44_s0_c2",
      "font": "dc12g2b10",
      "left": -16,
      "baseline": 19
@@ -9752,9 +9752,9 @@
      ],
      "text": "Clinch",
      "style": "o2_ff_r1_s0_c2",
-     "font": "nb10",
-     "left": 3,
-     "baseline": 11
+     "font": "dc11g2b10",
+     "left": -4,
+     "baseline": 13
     },
     {
      "from": [
