@@ -74,7 +74,8 @@
       32,
       120
      ],
-     "text": "AB"
+     "text": "AB",
+     "baseline": 16
     },
     {
      "from": [
@@ -84,7 +85,8 @@
       96,
       120
      ],
-     "text": "AVG"
+     "text": "AVG",
+     "baseline": 16
     },
     {
      "from": [
@@ -94,7 +96,8 @@
       32,
       24
      ],
-     "text": "HR"
+     "text": "HR",
+     "baseline": 16
     },
     {
      "from": [
@@ -104,7 +107,8 @@
       96,
       24
      ],
-     "text": "RBI"
+     "text": "RBI",
+     "baseline": 16
     },
     {
      "from": [
@@ -114,7 +118,8 @@
       32,
       48
      ],
-     "text": "TRJ"
+     "text": "TRJ",
+     "baseline": 16
     },
     {
      "from": [
@@ -124,7 +129,8 @@
       64,
       48
      ],
-     "text": "CON"
+     "text": "CON",
+     "baseline": 16
     },
     {
      "from": [
@@ -134,7 +140,8 @@
       96,
       48
      ],
-     "text": "PWR"
+     "text": "PWR",
+     "baseline": 16
     },
     {
      "from": [
@@ -144,7 +151,8 @@
       32,
       72
      ],
-     "text": "SPD"
+     "text": "SPD",
+     "baseline": 16
     },
     {
      "from": [
@@ -154,7 +162,8 @@
       64,
       72
      ],
-     "text": "ARM"
+     "text": "ARM",
+     "baseline": 16
     },
     {
      "from": [
@@ -164,7 +173,8 @@
       96,
       72
      ],
-     "text": "FLD"
+     "text": "FLD",
+     "baseline": 16
     },
     {
      "from": [
@@ -174,7 +184,8 @@
       96,
       96
      ],
-     "text": "POS"
+     "text": "POS",
+     "baseline": 16
     },
     {
      "from": [
@@ -184,7 +195,8 @@
       64,
       120
      ],
-     "text": "RBI"
+     "text": "RBI",
+     "baseline": 16
     },
     {
      "from": [
@@ -194,7 +206,8 @@
       128,
       96
      ],
-     "text": "R"
+     "text": "R",
+     "baseline": 16
     },
     {
      "from": [
@@ -204,7 +217,8 @@
       64,
       24
      ],
-     "text": "SB"
+     "text": "SB",
+     "baseline": 16
     },
     {
      "from": [
@@ -214,7 +228,8 @@
       128,
       24
      ],
-     "text": "E"
+     "text": "E",
+     "baseline": 16
     },
     {
      "from": [
@@ -224,7 +239,10 @@
       40,
       24
      ],
-     "text": "IP"
+     "text": "IP",
+     "baseline": 16,
+     "left": 0,
+     "align": "left"
     },
     {
      "from": [
@@ -234,7 +252,10 @@
       80,
       24
      ],
-     "text": "BF"
+     "text": "BF",
+     "baseline": 16,
+     "left": 0,
+     "align": "left"
     },
     {
      "from": [
@@ -244,7 +265,10 @@
       120,
       24
      ],
-     "text": "BB"
+     "text": "BB",
+     "baseline": 16,
+     "left": 0,
+     "align": "left"
     },
     {
      "from": [
@@ -254,7 +278,10 @@
       40,
       48
      ],
-     "text": "ER"
+     "text": "ER",
+     "baseline": 17,
+     "left": 0,
+     "align": "left"
     },
     {
      "from": [
@@ -264,7 +291,10 @@
       80,
       48
      ],
-     "text": "NP"
+     "text": "NP",
+     "baseline": 16,
+     "left": 3,
+     "align": "left"
     },
     {
      "from": [
@@ -274,7 +304,10 @@
       120,
       48
      ],
-     "text": "H"
+     "text": "H",
+     "baseline": 17,
+     "left": 3,
+     "align": "left"
     },
     {
      "from": [
@@ -284,7 +317,10 @@
       40,
       72
      ],
-     "text": "R"
+     "text": "R",
+     "baseline": 15,
+     "left": 4,
+     "align": "left"
     },
     {
      "from": [
@@ -294,7 +330,10 @@
       80,
       72
      ],
-     "text": "WP"
+     "text": "WP",
+     "baseline": 16,
+     "left": 3,
+     "align": "left"
     },
     {
      "from": [
@@ -304,7 +343,10 @@
       120,
       72
      ],
-     "text": "SO"
+     "text": "SO",
+     "baseline": 16,
+     "left": 3,
+     "align": "left"
     },
     {
      "from": [
@@ -314,7 +356,10 @@
       32,
       96
      ],
-     "text": "HR"
+     "text": "HR",
+     "baseline": 17,
+     "left": -2,
+     "align": "left"
     },
     {
      "from": [
@@ -334,7 +379,9 @@
       "7a"
      ],
      "align": "left",
-     "left": 3
+     "left": 3,
+     "baseline": 16,
+     "font": "ttf:rounded:8:0:0.75:0.3"
     }
    ]
   },
