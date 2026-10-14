@@ -412,6 +412,20 @@ already had English). Left out by the cut: name lists (`orepena.rel` sec5+40880.
 (tables of numbers that read as glyphs: 834 rows), the message region. Outside the messages only one string
 had a pointer inside its slot (`pn_fa.rel` 5:106, now in `START_TRIM`).
 
+**Result (built, verified, installed).** `ui_strings.py status`: 13,334 of 17,159 strings in English
+(4,163 new slots in the four modules); `ui_messages.py status`: 246 of 246 messages. Font: 1,897 letter pairs,
+1,141 kanji slots left, 1,271 pair slots are kanji that Japanese text still uses. **Seen in game:** the build
+boots, the main menu help line shows, the Success save continues to the command menu. **Not seen:** every
+Pennant and My Life screen, and not one news message (the line width of 40 letters and the spacing around an
+inserted name are guesses until one is seen).
+
+Weak spots of this pass: 44 help texts longer than 30 cells for which no line width was found are stored as one
+line and will wrap in the middle of a word (the Pennant help pages are 19 cells wide and start after an inserted
+word: the padding of the Japanese shows it, `ui_strings` has no rule for a shorter first line); labels of 2 to 4
+cells are made-up abbreviations (`Sapp`, `Mnsn A`, `Tmrw`, `Sawa.`); pieces the game joins to a name or a number
+(` was traded!`, ` pk,`, `00M yen player`) were written without seeing what stands in front; in the messages
+`{84}`, `{75}`, `{93}` to `{98}` were guessed from the Japanese next to them.
+
 **The packed text of the other modes (looked at, not done).** `sct_main.rel` (Eikan Nine) keeps its packed
 text at sec5+14416..189372 and a table of 5,319 `R_PPC_ADDR32` pointers right behind it (sec5+189368..210640):
 every text seems to be reached through the table, so it could be laid out again like a block of strings (the
