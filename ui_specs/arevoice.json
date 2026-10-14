@@ -1,0 +1,177 @@
+{
+ "arc": "arevoice.arc",
+ "repack": [
+  {
+   "bank": "m3_onsei",
+   "palette": 0,
+   "style": "v_btn_olive",
+   "font": "ttf:rounded:17:0:0.9:0.4",
+   "under": 3,
+   "areas": [
+    [
+     9,
+     0,
+     96,
+     72,
+     128
+    ],
+    [
+     18,
+     0,
+     64,
+     88,
+     112
+    ],
+    [
+     18,
+     88,
+     64,
+     128,
+     112
+    ],
+    [
+     18,
+     0,
+     112,
+     48,
+     128
+    ],
+    [
+     18,
+     48,
+     112,
+     96,
+     128
+    ],
+    [
+     18,
+     96,
+     112,
+     128,
+     128
+    ],
+    [
+     25,
+     64,
+     80,
+     128,
+     128
+    ],
+    [
+     25,
+     24,
+     64,
+     48,
+     80
+    ],
+    [
+     25,
+     0,
+     64,
+     24,
+     80
+    ],
+    [
+     25,
+     48,
+     64,
+     72,
+     80
+    ],
+    [
+     40,
+     0,
+     80,
+     80,
+     112
+    ],
+    [
+     40,
+     80,
+     80,
+     128,
+     112
+    ],
+    [
+     40,
+     0,
+     112,
+     32,
+     128
+    ],
+    [
+     40,
+     32,
+     112,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "54",
+     "text": "Save",
+     "style": "v_btn_olive",
+     "font": "ttf:rounded:17:0:0.9:0.4",
+     "baseline": 30,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      68
+     ]
+    },
+    {
+     "sprite": "58",
+     "text": "List",
+     "style": "v_btn_green",
+     "font": "ttf:rounded:17:0:0.9:0.4",
+     "baseline": 38,
+     "palettes": [
+      69
+     ]
+    },
+    {
+     "sprite": "59",
+     "text": "Type",
+     "style": "v_btn_olive",
+     "font": "ttf:rounded:17:0:0.9:0.4",
+     "baseline": 39,
+     "palettes": [
+      68
+     ]
+    },
+    {
+     "sprite": "5a",
+     "text": "Cancel",
+     "style": "v_btn_purple",
+     "font": "ttf:rounded:17:0:0.9:0.4",
+     "baseline": 39,
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "64",
+     "text": "Next",
+     "style": "v_btn_orange",
+     "font": "ttf:rounded:17:0:0.9:0.4",
+     "baseline": 30,
+     "palettes": [
+      70
+     ]
+    },
+    {
+     "sprite": "65",
+     "text": "Quit",
+     "style": "v_btn_purple",
+     "font": "ttf:rounded:17:0:0.9:0.4",
+     "baseline": 30,
+     "palettes": [
+      72
+     ]
+    }
+   ]
+  }
+ ]
+}
