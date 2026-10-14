@@ -1103,6 +1103,109 @@
      "baseline": 27
     }
    ]
+  },
+  {
+   "bank": "y3_c256",
+   "palette": 0,
+   "style": "mlban",
+   "font": "ttf:din:22:0:1:0.5",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     0,
+     0,
+     56,
+     16,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Join a Team",
+     "style": "mlban",
+     "left": 68,
+     "baseline": 36
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "01"
+     ],
+     "text": "Select Team",
+     "style": "mlban",
+     "left": -27,
+     "baseline": 36
+    },
+    {
+     "from": [
+      0,
+      88,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "01"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      0,
+      56,
+      16,
+      120
+     ],
+     "sprites": [
+      "01"
+     ],
+     "empty": true
+    }
+   ]
   }
  ]
 }
