@@ -2057,6 +2057,679 @@
      ]
     }
    ]
+  },
+  {
+   "bank": "y3_prof",
+   "palette": 15,
+   "style": "o2pos",
+   "font": "ttf:rounded:12:0:1:0.3",
+   "under": 3,
+   "share": true,
+   "areas": [
+    [
+     1,
+     56,
+     80,
+     96,
+     104
+    ],
+    [
+     1,
+     0,
+     104,
+     88,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     2,
+     0,
+     48,
+     64,
+     72
+    ],
+    [
+     2,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     3,
+     48,
+     0,
+     128,
+     24
+    ],
+    [
+     3,
+     48,
+     24,
+     120,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     128,
+     72
+    ],
+    [
+     3,
+     0,
+     72,
+     104,
+     96
+    ],
+    [
+     3,
+     112,
+     72,
+     128,
+     96
+    ],
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      72,
+      104,
+      96
+     ],
+     "text": "Personal Data",
+     "style": "o2cyan",
+     "font": "ttf:rounded:10:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      128,
+      72
+     ],
+     "text": "Titles & Records",
+     "style": "o2pink",
+     "font": "ttf:rounded:11:0:1:0.3",
+     "valign": "centre",
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      3,
+      112,
+      72,
+      128,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Profile",
+     "style": "o2green",
+     "font": "ttf:rounded:17:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "06",
+     "text": "Pitcher",
+     "style": "o2pos",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "07",
+     "text": "Catcher",
+     "style": "o2pos",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "08",
+     "text": "1st Base",
+     "style": "o2pos",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "09",
+     "text": "2nd Base",
+     "style": "o2pos",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0a",
+     "text": "3rd Base",
+     "style": "o2pos",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0b",
+     "text": "Shortstop",
+     "style": "o2pos",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0c",
+     "text": "Outfield",
+     "style": "o2pos",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      1,
+      56,
+      80,
+      96,
+      104
+     ],
+     "text": "Year",
+     "style": "o2pos",
+     "font": "ttf:din:12:0:1:0",
+     "left": 6
+    },
+    {
+     "from": [
+      1,
+      64,
+      104,
+      88,
+      128
+     ],
+     "text": "Age",
+     "style": "o2pos",
+     "font": "ttf:din:12:0:1:0",
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      0,
+      104,
+      40,
+      128
+     ],
+     "text": "Active",
+     "style": "o2pos",
+     "font": "ttf:din:12:0:1:0",
+     "left": 2
+    },
+    {
+     "from": [
+      1,
+      40,
+      104,
+      64,
+      128
+     ],
+     "text": "Yrs",
+     "style": "o2pos",
+     "font": "ttf:din:12:0:1:0",
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      48,
+      0,
+      128,
+      24
+     ],
+     "text": "Since 2008",
+     "style": "o2pink",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "left": 0,
+     "sprites": [
+      "28"
+     ]
+    },
+    {
+     "from": [
+      3,
+      48,
+      24,
+      120,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      128,
+      72
+     ],
+     "text": "Titles & Records",
+     "style": "o2pink",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "left": -47,
+     "sprites": [
+      "28"
+     ]
+    },
+    {
+     "from": [
+      3,
+      112,
+      72,
+      128,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "28"
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "r5_ut",
+   "palette": 16,
+   "style": "o2head",
+   "font": "ttf:rounded:12:0:1:0.3",
+   "under": 3,
+   "share": true,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     80,
+     64
+    ],
+    [
+     4,
+     0,
+     96,
+     80,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     5,
+     0,
+     48,
+     104,
+     120
+    ],
+    [
+     6,
+     0,
+     0,
+     48,
+     24
+    ],
+    [
+     6,
+     80,
+     24,
+     120,
+     48
+    ],
+    [
+     6,
+     0,
+     48,
+     120,
+     72
+    ],
+    [
+     6,
+     80,
+     72,
+     120,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Vessel",
+     "style": "o2head",
+     "font": "ttf:rounded:16:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "01",
+     "text": "Training",
+     "style": "o2head",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "07",
+     "text": "Cancel",
+     "style": "o2cancel",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0a",
+     "text": "Add Spirit",
+     "style": "o2mini",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0b",
+     "text": "Capacity",
+     "style": "o2mini",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0c",
+     "text": "Details",
+     "style": "o2mini",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0d",
+     "text": "Abilities",
+     "style": "o2mini",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "32",
+     "text": "Clear Capacity",
+     "style": "o2mini",
+     "font": "ttf:din:7:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "12",
+     "text": "Abilities",
+     "style": "o2tab",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "13",
+     "text": "People",
+     "style": "o2tab",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "14",
+     "text": "Private",
+     "style": "o2tab",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "15",
+     "text": "Special",
+     "style": "o2tab",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "16",
+     "text": "Other",
+     "style": "o2tab",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "17",
+     "text": "All",
+     "style": "o2tab",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "19",
+     "text": "Age",
+     "style": "o2age",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "pages": [
+      6
+     ],
+     "palettes": [
+      10
+     ]
+    },
+    {
+     "from": [
+      6,
+      80,
+      24,
+      120,
+      48
+     ],
+     "text": "Throws R,",
+     "style": "o2hand",
+     "font": "ttf:din:10:0:1:0",
+     "left": 0,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "Throws L,",
+     "style": "o2hand",
+     "font": "ttf:din:10:0:1:0",
+     "left": 0,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      40,
+      48,
+      80,
+      72
+     ],
+     "text": "Bats R",
+     "style": "o2hand",
+     "font": "ttf:din:10:0:1:0",
+     "left": 7,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      80,
+      48,
+      120,
+      72
+     ],
+     "text": "Bats L",
+     "style": "o2hand",
+     "font": "ttf:din:10:0:1:0",
+     "left": 7,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      80,
+      72,
+      120,
+      96
+     ],
+     "text": "Bats S",
+     "style": "o2hand",
+     "font": "ttf:din:10:0:1:0",
+     "left": 7,
+     "valign": "centre"
+    }
+   ]
+  },
+  {
+   "bank": "r5_tsu",
+   "palette": 16,
+   "style": "o2head",
+   "font": "ttf:rounded:12:0:1:0.3",
+   "under": 3,
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     104,
+     56
+    ],
+    [
+     0,
+     48,
+     56,
+     128,
+     80
+    ],
+    [
+     0,
+     48,
+     80,
+     80,
+     104
+    ],
+    [
+     9,
+     80,
+     32,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     72,
+     128,
+     96
+    ],
+    [
+     10,
+     0,
+     96,
+     88,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Bonds",
+     "style": "o2head",
+     "font": "ttf:rounded:18:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "01",
+     "text": "Switch View",
+     "style": "o2switch",
+     "font": "ttf:din:14:0:1:0",
+     "valign": "centre",
+     "pages": [
+      0
+     ],
+     "palettes": [
+      10
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Open Menu",
+     "style": "o2menu",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "29",
+     "text": "Fill",
+     "style": "o2btn",
+     "font": "ttf:din:18:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "2a",
+     "text": "Remove",
+     "style": "o2btn",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "2b",
+     "text": "Train",
+     "style": "o2btn",
+     "font": "ttf:din:18:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "35",
+     "text": "Fill",
+     "style": "o2small",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "36",
+     "text": "Remove",
+     "style": "o2small",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "37",
+     "text": "Menu",
+     "style": "o2small",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "38",
+     "text": "Switch View",
+     "style": "o2small",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    }
+   ]
   }
  ],
  "paint": [
