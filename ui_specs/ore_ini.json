@@ -2471,13 +2471,6 @@
    ],
    "areas": [
     [
-     2,
-     0,
-     120,
-     128,
-     128
-    ],
-    [
      5,
      96,
      0,
@@ -2489,41 +2482,6 @@
      0,
      72,
      96,
-     128
-    ],
-    [
-     7,
-     0,
-     0,
-     128,
-     104
-    ],
-    [
-     7,
-     64,
-     104,
-     104,
-     128
-    ],
-    [
-     9,
-     0,
-     0,
-     128,
-     56
-    ],
-    [
-     9,
-     120,
-     88,
-     128,
-     128
-    ],
-    [
-     9,
-     0,
-     120,
-     120,
      128
     ],
     [
@@ -2743,8 +2701,8 @@
      ],
      "text": "Overhand",
      "style": "mypit",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 33,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 23,
      "baseline": 19
     },
     {
@@ -2757,8 +2715,8 @@
      ],
      "text": "3-Quarters",
      "style": "mypit",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 36,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 26,
      "baseline": 19
     },
     {
@@ -2771,8 +2729,8 @@
      ],
      "text": "Sidearm",
      "style": "mypit",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 26,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 18,
      "baseline": 19
     },
     {
@@ -2785,8 +2743,8 @@
      ],
      "text": "Submarine",
      "style": "mypit",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 29,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 19,
      "baseline": 19
     },
     {
@@ -2799,8 +2757,8 @@
      ],
      "text": "Standard",
      "style": "mybat",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 24,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 16,
      "baseline": 18
     },
     {
@@ -2813,8 +2771,8 @@
      ],
      "text": "Open",
      "style": "mybat",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 39,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 33,
      "baseline": 18
     },
     {
@@ -2827,8 +2785,8 @@
      ],
      "text": "Kannushi",
      "style": "mybat",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 5,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": -4,
      "baseline": 17
     },
     {
@@ -2851,8 +2809,8 @@
      ],
      "text": "Crouching",
      "style": "mybat",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 23,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -2865,8 +2823,8 @@
      ],
      "text": "Pendulum",
      "style": "mybat",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 1,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": -8,
      "baseline": 18
     },
     {
@@ -2879,8 +2837,8 @@
      ],
      "text": "Fake Bunt",
      "style": "mybat",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 5,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": -4,
      "baseline": 18
     },
     {
@@ -2893,8 +2851,8 @@
      ],
      "text": "Flamingo",
      "style": "mybat",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 2,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": -6,
      "baseline": 18
     },
     {
@@ -2907,8 +2865,8 @@
      ],
      "text": "Original",
      "style": "mybat",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 22,
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -2921,9 +2879,9 @@
      ],
      "text": "Overhand",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 44,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 34,
+     "baseline": 19
     },
     {
      "from": [
@@ -2945,9 +2903,9 @@
      ],
      "text": "3-Quarters",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 46,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 36,
+     "baseline": 19
     },
     {
      "from": [
@@ -2969,9 +2927,9 @@
      ],
      "text": "Sidearm",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 39,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 31,
+     "baseline": 19
     },
     {
      "from": [
@@ -2983,9 +2941,9 @@
      ],
      "text": "Submarine",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 39,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 29,
+     "baseline": 19
     },
     {
      "from": [
@@ -3007,9 +2965,9 @@
      ],
      "text": "Standard",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 32,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 24,
+     "baseline": 19
     },
     {
      "from": [
@@ -3021,9 +2979,9 @@
      ],
      "text": "Open",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 61,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 55,
+     "baseline": 19
     },
     {
      "from": [
@@ -3045,9 +3003,9 @@
      ],
      "text": "Kannushi",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 3,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": -6,
+     "baseline": 19
     },
     {
      "from": [
@@ -3069,9 +3027,9 @@
      ],
      "text": "Crouching",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 27,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 17,
+     "baseline": 19
     },
     {
      "from": [
@@ -3083,9 +3041,9 @@
      ],
      "text": "Pendulum",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 3,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": -6,
+     "baseline": 19
     },
     {
      "from": [
@@ -3097,9 +3055,9 @@
      ],
      "text": "Fake Bunt",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 13,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 4,
+     "baseline": 19
     },
     {
      "from": [
@@ -3111,9 +3069,9 @@
      ],
      "text": "Flamingo",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 5,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": -3,
+     "baseline": 19
     },
     {
      "from": [
@@ -3125,9 +3083,9 @@
      ],
      "text": "Original",
      "style": "myshad",
-     "font": "ttf:din:11:0:1:0.1",
-     "left": 29,
-     "baseline": 18
+     "font": "ttf:rounded:12:0:0.85:0",
+     "left": 21,
+     "baseline": 19
     },
     {
      "from": [
@@ -3139,9 +3097,9 @@
      ],
      "text": "L / R: Turn View",
      "style": "myhint",
-     "font": "ttf:din:12:0:1:0.1",
-     "left": 29,
-     "baseline": 18
+     "font": "ttf:rounded:11:0:0.9:0.1",
+     "left": 20,
+     "baseline": 17
     },
     {
      "from": [
@@ -3163,9 +3121,9 @@
      ],
      "text": "C / Z: Turn View",
      "style": "myhint",
-     "font": "ttf:din:12:0:1:0.1",
-     "left": 30,
-     "baseline": 18
+     "font": "ttf:rounded:11:0:0.9:0.1",
+     "left": 19,
+     "baseline": 17
     }
    ]
   }
