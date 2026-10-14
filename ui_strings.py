@@ -553,7 +553,8 @@ def too_long(line, cap, count=letters):
 
 def pad_line(line, width):
     """A line filled up with spaces to `width` cells."""
-    tail = len(line) - len(line.rstrip("".join(map(chr, range(0x20, 0x7F)))))
+    last = colour_runs(line)[-1][1]                     # the letter pairs start again in every coloured run
+    tail = len(last) - len(last.rstrip("".join(map(chr, range(0x20, 0x7F)))))
     line += " " * (tail % 2)
     return line + "  " * (width - letters(line))
 

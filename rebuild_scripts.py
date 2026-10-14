@@ -790,7 +790,7 @@ def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None):
                     usage[char_to_glyph(value)] += 1
     for name, slots_ in (strings or {}).items():
         for _, en in slots_.values():
-            for kind, value in pair_font.text_segments(en):
+            for kind, value in (seg for _, part in ui_strings.colour_runs(en) for seg in pair_font.text_segments(part)):
                 if kind == "pair" and value != "  ":
                     pairs.add(value)
                 elif kind == "char":
@@ -802,7 +802,7 @@ def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None):
         done = (strings or {}).get(sc.rel.name, {})
         for st in ui_strings.find(sc.rel, (sc.sec, idx[0] * 2, (idx[-1] + 1) * 2)):
             if (st["section"], st["offset"]) not in done:
-                usage.update(u for u in st["units"] if u)
+                usage.update(u & 0xFFF if u > S.MAX_GLYPH else u for u in st["units"] if u & 0xFFF)
     for sc in scripts:
         new = texts.get(sc.rel.name, {})
         for i, (_, units, _) in sc.texts.items():
@@ -853,8 +853,11 @@ def build_font_file(orig, slots):
 
 
 def encode_string(en, cells, slots):
-    """An English UI string as the bytes of its slot: glyph numbers, padded with glyph 0."""
-    units = encode_text(en, slots)
+    """An English UI string as the bytes of its slot: glyph numbers, padded with glyph 0. A run written
+    {c:...} (ui_strings.colour_runs) gets colour c in the top four bits of each of its units."""
+    units = []
+    for colour, part in ui_strings.colour_runs(en):
+        units += [u | colour << 12 for u in encode_text(part, slots)] if colour else encode_text(part, slots)
     if S.TEXT_NEWLINE in units or len(units) > cells:
         raise ValueError("%r does not fit a slot of %d cells (no line breaks)" % (en, cells))
     return struct.pack(">%dH" % cells, *(units + [0] * (cells - len(units))))
