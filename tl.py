@@ -43,6 +43,7 @@ OP_COLOUR = 0x73
 PORTRAIT_SLOT = {0x7A: 2, 0x7B: 3, 0x7C: 4, 0x7D: 5}     # opcode -> window type it speaks in
 WIDE_WINDOWS = {31: 60}                                    # glossary pop-ups: a wider box
 BOX_LINES = 3
+ORE_WINDOW_BASE = 100                                      # My Life: window = 100 + the number its 0018 gives
 # Portrait id ranges seen in scenario 1 (id // 16), for the speaker column of the scene files.
 SPEAKERS = [(0x00, 0x03, "player"), (0x04, 0x05, "Yabe"), (0x2B, 0x37, "extra"), (0x4D, 0x4E, "Momoko"),
             (0x56, 0x56, "Kageyama"), (0x5E, 0x5F, "Tamano"), (0x60, 0x60, "Yajima"),
@@ -68,8 +69,9 @@ def all_scripts():
 
 def find_script(name):
     if name in S.BLOCK_SCRIPTS:
-        return S.load_block_scripts()[0 if len(S.BLOCK_SCRIPTS) == 1 else list(S.BLOCK_SCRIPTS).index(name)]
-    return find_script(name)
+        return S.load_block_scripts()[list(S.BLOCK_SCRIPTS).index(name)]
+    mods = S.load_all_rels()
+    return S.Script(next(m for m in mods.values() if m.name == name), mods)
 
 
 def line_letters(sc):
@@ -80,24 +82,39 @@ def line_letters(sc):
 def scenes(sc):
     """[[row, ...], ...]; row = dict(off, window, face, mark, text) or dict(note=...)."""
     block = hasattr(sc, "spec")             # another engine: no portrait or colour opcodes known
+    ore = block and sc.spec.get("engine") == "ore"      # My Life: whole-halfword opcodes, windows set by 0018
     name_ops = sc.name_ops if block else NAME_OPS
     ends = sc.ends if block else (S.OP_RETURN, S.OP_GOTO)
     out, cur = [], []
-    face, mark, ended = {}, "B", True
+    face, mark, ended, ore_window = {}, "B", True, ORE_WINDOW_BASE
     for i in sorted(k for k, v in sc.kind.items() if v == "op"):
-        op = sc.hw[i] & 0xFF
+        op = sc.op(i) if block else sc.hw[i] & 0xFF
         if i in sc.labels and ended:
             if any("off" in r for r in cur):
                 out.append(cur)
-            cur, mark, face = [], "B", {}
+            cur, mark, face, ore_window = [], "B", {}, ORE_WINDOW_BASE
         ended = False
         if i in sc.texts:
             window, units, _ = sc.texts[i]
-            cur.append({"off": i * 2, "window": window, "face": None if block else face.get(window, 0), "mark": mark,
+            cur.append({"off": i * 2, "window": ore_window if ore else window,
+                        "face": None if block else face.get(window, 0), "mark": mark,
                         "text": S.decode_units(units)})
             mark = "+"
         elif op in name_ops:
             cur.append({"note": "{name}"})
+        elif ore:
+            if op in sc.spec["marks"]:
+                mark = sc.spec["marks"][op]
+            elif op == S.ORE_WINDOW:
+                ore_window, mark = ORE_WINDOW_BASE + sc.hw[i + 1], "B"
+            elif op in S.ORE_IF:
+                cur.append({"note": "if"})
+            elif op == S.ORE_ELSE:
+                cur.append({"note": "else"})
+            elif op == S.ORE_BLOCK_END:
+                cur.append({"note": "end"})
+            elif op in ends:
+                ended = True
         elif block:
             if op in (S.OP_NEWLINE, S.OP_NEWLINE_WAIT, S.OP_WAIT):
                 mark = {S.OP_NEWLINE: "L", S.OP_NEWLINE_WAIT: "W", S.OP_WAIT: "B"}[op]

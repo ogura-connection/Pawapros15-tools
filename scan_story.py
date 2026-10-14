@@ -332,10 +332,13 @@ class BlockScript(Script):
         self._parse()
         lo, hi = self.region[0] // 2, self.region[1] // 2
         for i in range(lo, hi):             # one return that nothing reaches (sct_main.rel +90684): kept as it is
-            if i not in self.kind and self.hw[i]:
+            if i not in self.kind and self.hw[i] and not any(a <= i * 2 < b for a, b in spec.get("islands", ())):
                 self.kind[i] = "dead"
         if sum(k == "dead" for k in self.kind.values()) > spec.get("dead", 1):
             self.errors["data between the instructions"] += 1
+
+    def op(self, i):
+        return self.hw[i] & 0xFF
 
     def _length(self, i):
         hw, op = self.hw, self.hw[i] & 0xFF
@@ -387,10 +390,90 @@ class BlockScript(Script):
                 i += n
 
 
+# My Life (orepena.rel) has an engine of its own: the interpreter is ore_work.rel sec1+0x1CE4 (script pointer at
+# r15+0x58, label table pointer at r15+0x4C), and sec1+0x3BE0 skips a block, which gives every length.
+# An instruction is a whole halfword: 0000 text (the same 12-bit packing, read at sec1+0x3F30; line breaks
+# are instructions, not units), 0001 new line, 0006 / 0007 wait for a button, 0008 return, 0018 window,
+# 001C insert a name or number, 0032 call, 0033 / 0034 mark and jump back, 0035 goto, 0036 / 0037 if and
+# 0038 else (followed by FFF0 .. FFF1 around a block, or by one label), 003C a list with its count.
+# Jumps take a label number; the table (sec5+173464, 1,852 entries) is filled by the module's relocations
+# and nothing else points into the script. Three islands of other data (tables with relocations of their
+# own, debug strings) lie between the scenes and stay where they are.
+ORE_OP_LEN = {0x04: 2, 0x09: 2, 0x17: 6, 0x18: 3, 0x19: 3, 0x1A: 3, 0x1B: 3, 0x1C: 5, 0x32: 2, 0x33: 2, 0x34: 2,
+              0x35: 2, 0x36: 6, 0x37: 6, 0x38: 2, 0x39: 3, 0x3A: 4, 0x3B: 3, 0x3E: 2, 0x3F: 2, 0x41: 2, 0x42: 4,
+              0x43: 5, 0x44: 5, 0x46: 2, 0x47: 4, 0x48: 6, 0x49: 8}
+ORE_LIST, ORE_BLOCK, ORE_BLOCK_END = 0x3C, 0xFFF0, 0xFFF1
+ORE_IF, ORE_ELSE, ORE_WINDOW = (0x36, 0x37), 0x38, 0x18
+BLOCK_SCRIPTS["orepena.rel"] = {"engine": "ore", "section": 5, "region": (182584, 803170),
+                                "labels": (173464, 180872),
+                                "islands": ((187254, 189808), (228090, 229016), (779308, 780240)),
+                                "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C,), "max_op": 0x49, "line": 16,
+                                "marks": {0x01: "L", 0x06: "B", 0x07: "B"}, "dead": 400}
+
+
+class OreScript(BlockScript):
+    """The My Life script (see ORE_OP_LEN). Same attributes as BlockScript; an opcode is the whole halfword."""
+
+    def op(self, i):
+        return self.hw[i]
+
+    def in_island(self, off):
+        return any(a <= off < b for a, b in self.spec["islands"])
+
+    def _length(self, i):
+        op = self.hw[i]
+        return 2 + self.hw[i + 1] if op == ORE_LIST else ORE_OP_LEN.get(op, 1)
+
+    def _parse(self):
+        hw, kind = self.hw, self.kind
+        lo, hi = self.region[0] // 2, self.region[1] // 2
+        for start in sorted(self.labels):
+            i, depth = start, 0
+            while True:
+                if not lo <= i < hi or self.in_island(i * 2):
+                    self.errors["runs out of the script"] += 1
+                    break
+                if i in kind:
+                    if kind[i] != "op":
+                        self.errors["label lands mid-instruction"] += 1
+                    break
+                op = hw[i]
+                self.op_count[op] += 1
+                kind[i] = "op"
+                if op == OP_TEXT:
+                    r = unpack_text(hw, i + 1)
+                    if r is None or r[1] > hi or not units_valid(r[0]) or list(hw[i + 1:r[1]]) != pack_text(r[0]):
+                        self.errors["bad text run"] += 1
+                        break
+                    units, j = r
+                    for k in range(i + 1, j):
+                        kind[k] = "text"
+                    self.texts[i] = (0, units, j)
+                    i = j
+                    continue
+                if self.spec["max_op"] < op < ORE_BLOCK:
+                    self.errors["unknown opcode"] += 1
+                    break
+                n = self._length(i)
+                for k in range(i + 1, min(i + n, hi)):
+                    kind[k] = "arg"
+                if op == ORE_BLOCK or (op in ORE_IF + (ORE_ELSE,) and hw[i + n - 1] == ORE_BLOCK):
+                    depth += 1
+                elif op == ORE_BLOCK_END:
+                    depth -= 1
+                    if depth < 0:
+                        self.errors["block end without a block"] += 1
+                        break
+                if op in self.ends and depth == 0:
+                    break
+                i += n
+
+
 def load_block_scripts(mods=None):
     mods = mods or load_all_rels()
     by_name = {m.name: m for m in mods.values()}
-    return [BlockScript(by_name[fn], spec) for fn, spec in BLOCK_SCRIPTS.items()]
+    return [(OreScript if spec.get("engine") == "ore" else BlockScript)(by_name[fn], spec)
+            for fn, spec in BLOCK_SCRIPTS.items()]
 
 
 # ── extract ───────────────────────────────────────────────────────────────
