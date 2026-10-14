@@ -21,12 +21,12 @@
 5	4720	3921	Set whether to hold the Climax Series.
 5	4776	5b0e	Set whether players can move teams via free|agency.
 5	4960	a6cb	Set whether you can sign imports by scouting|foreigners.
-5	5132	5169	Set whether to use foreign player slots (max 4 on 1st Team).
-5	5200	345a	Set whether you can scout draft prospects and sign them at the draft.
+5	5132	5169	Set whether to use foreign player slots (max 4 on|1st Team).
+5	5200	345a	Set whether draft prospects can be scouted and|signed at the draft.
 5	5384	1713	Set whether player abilities grow.
 5	5444	e187	Start Pennant right away|with basic settings?
 5	5504	3ab0	Pick one team and play.|Can't change players midway.
-5	5572	91d7	Up to 12 can play at once. MAN and COM can't be changed midway.
+5	5572	91d7	Up to 12 can play at once. MAN / COM can't|be changed midway.
 5	5648	1c7a	Start a new league.
 5	5680	988f	Continue the league.
 5	5716	1d3d	View your records so far.
