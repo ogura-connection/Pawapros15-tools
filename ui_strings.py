@@ -276,8 +276,8 @@ def line_caps(s):
 def japanese_lines(s):
     """The Japanese with | where the game breaks the line, padding removed."""
     if s.get("width"):
-        chars = [glyph_to_char(u) or "?" for u in s["units"]]
-        lines = ["".join(chars[i:i + s["width"]]).rstrip("　") for i in range(0, len(chars), s["width"])]
+        w, u = s["width"], s["units"]
+        lines = [units_text(u[i:i + w]).rstrip("　") for i in range(0, len(u), w)]
         while len(lines) > 1 and not lines[-1]:
             lines.pop()
         return "|".join(lines)
