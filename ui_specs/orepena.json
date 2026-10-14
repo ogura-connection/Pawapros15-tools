@@ -9936,6 +9936,2646 @@
     }
    ],
    "under": 3
+  },
+  {
+   "bank": "b5_m00",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     32,
+     128,
+     128
+    ],
+    [
+     0,
+     104,
+     0,
+     128,
+     32
+    ],
+    [
+     0,
+     80,
+     24,
+     104,
+     32
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      104,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "01"
+     ],
+     "text": "Fix SO",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 11,
+     "baseline": 20
+    },
+    {
+     "from": [
+      0,
+      0,
+      32,
+      56,
+      56
+     ],
+     "sprites": [
+      "01"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      56,
+      32,
+      128,
+      56
+     ],
+     "sprites": [
+      "02"
+     ],
+     "text": "Fix Errors",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc13g2b10",
+     "left": 1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      0,
+      56,
+      72,
+      80
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Fix BB",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 11,
+     "baseline": 20
+    },
+    {
+     "from": [
+      0,
+      80,
+      56,
+      128,
+      80
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Fix HR",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 11,
+     "baseline": 20
+    },
+    {
+     "from": [
+      0,
+      0,
+      80,
+      24,
+      104
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      32,
+      80,
+      104,
+      104
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Fix Choke",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc15g2b10",
+     "left": -1,
+     "baseline": 20
+    },
+    {
+     "from": [
+      0,
+      112,
+      80,
+      128,
+      104
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Quick Start",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 3,
+     "baseline": 17
+    },
+    {
+     "from": [
+      0,
+      0,
+      104,
+      56,
+      128
+     ],
+     "sprites": [
+      "06"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      56,
+      104,
+      128,
+      128
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Gusto",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 9,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      72,
+      24
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "Fix Temper",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc11g2b10",
+     "left": 1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Spin Fix",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc15g2b10",
+     "left": 5,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      16,
+      48
+     ],
+     "sprites": [
+      "09"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      16,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Fine",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 8,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Media",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 12,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      16,
+      72
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      16,
+      48,
+      88,
+      72
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "Cheap Ticket",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": -1,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      88,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "Referral",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": -3,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      32,
+      96
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      32,
+      72,
+      104,
+      96
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Golf Range",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc11g2b10",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      104,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "Konbini",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 5,
+     "baseline": 19
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      48,
+      120
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      48,
+      96,
+      120,
+      120
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "1-on-1",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 8,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      120,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "Honoka's Heart",
+     "style": "o2_ff_r7_s0_c1",
+     "font": "nb11",
+     "left": -1,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      64,
+      24
+     ],
+     "sprites": [
+      "11"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      64,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "12"
+     ],
+     "text": "Iori's Heart",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 4,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      8,
+      48
+     ],
+     "sprites": [
+      "12"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      8,
+      24,
+      80,
+      48
+     ],
+     "sprites": [
+      "13"
+     ],
+     "text": "Luna's Heart",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 0,
+     "baseline": 17
+    },
+    {
+     "from": [
+      2,
+      80,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "14"
+     ],
+     "text": "Midori's Heart",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb12",
+     "left": 0,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      24,
+      72
+     ],
+     "sprites": [
+      "14"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      24,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "Miho's Heart",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 0,
+     "baseline": 17
+    },
+    {
+     "from": [
+      2,
+      96,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "16"
+     ],
+     "text": "Ring",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 19,
+     "baseline": 19
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      40,
+      96
+     ],
+     "sprites": [
+      "16"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      40,
+      72,
+      112,
+      96
+     ],
+     "sprites": [
+      "17"
+     ],
+     "text": "Garage",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 8,
+     "baseline": 19
+    },
+    {
+     "from": [
+      2,
+      112,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Sponsor",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 19
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      56,
+      120
+     ],
+     "sprites": [
+      "18"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      56,
+      96,
+      112,
+      120
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Dorm",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 4,
+     "baseline": 20
+    },
+    {
+     "from": [
+      2,
+      112,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "Agent",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 12,
+     "baseline": 19
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      56,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "1b"
+     ],
+     "text": "Doctor",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 6,
+     "baseline": 20
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      48,
+      48
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Mama",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc15g2b10",
+     "left": 1,
+     "baseline": 20
+    },
+    {
+     "from": [
+      3,
+      48,
+      24,
+      120,
+      48
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "Fan Club",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": -2,
+     "baseline": 20
+    },
+    {
+     "from": [
+      3,
+      120,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "1e"
+     ],
+     "text": "Pawarin",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 1,
+     "baseline": 19
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      64,
+      72
+     ],
+     "sprites": [
+      "1e"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      64,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "1f"
+     ],
+     "text": "Massage",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 2,
+     "baseline": 19
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      8,
+      96
+     ],
+     "sprites": [
+      "1f"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      8,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Therapy",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      3,
+      48,
+      72,
+      80,
+      96
+     ],
+     "sprites": [
+      "20"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      80,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Date",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 12,
+     "baseline": 19
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      16,
+      120
+     ],
+     "sprites": [
+      "21"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      16,
+      96,
+      88,
+      120
+     ],
+     "sprites": [
+      "23"
+     ],
+     "text": "Family Time",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 4,
+     "baseline": 16
+    },
+    {
+     "from": [
+      3,
+      88,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "24"
+     ],
+     "text": "Gem",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 6,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      8,
+      24
+     ],
+     "sprites": [
+      "24"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      8,
+      0,
+      80,
+      24
+     ],
+     "sprites": [
+      "25"
+     ],
+     "text": "Good Pupil",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc12g2b10",
+     "left": 0,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      80,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "26"
+     ],
+     "text": "Good Mixer",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc11g2b10",
+     "left": 0,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      0,
+      24,
+      24,
+      48
+     ],
+     "sprites": [
+      "26"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      24,
+      24,
+      88,
+      48
+     ],
+     "sprites": [
+      "27"
+     ],
+     "text": "Bro",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 16,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      88,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "28"
+     ],
+     "text": "Boss",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 3,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      8,
+      72
+     ],
+     "sprites": [
+      "28"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      8,
+      48,
+      80,
+      72
+     ],
+     "sprites": [
+      "29"
+     ],
+     "text": "Elite Mark",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc13g2b10",
+     "left": -1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      80,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "2a"
+     ],
+     "text": "Star",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": -1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      24,
+      96
+     ],
+     "sprites": [
+      "2a"
+     ],
+     "text": "Aura",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": -13,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      24,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "2b"
+     ],
+     "text": "Mentor",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 6,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      96,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "2d"
+     ],
+     "text": "FA Vow",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 5,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      40,
+      120
+     ],
+     "sprites": [
+      "2d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      40,
+      96,
+      112,
+      120
+     ],
+     "sprites": [
+      "2e"
+     ],
+     "text": "Retire Vow",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc11g2b10",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      112,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "31"
+     ],
+     "text": "Diet",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 18,
+     "baseline": 20
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "31"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      56,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "32"
+     ],
+     "text": "Weights",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc13g2b10",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      5,
+      0,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "33"
+     ],
+     "text": "Autograph",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc12g2b10",
+     "left": -1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "35"
+     ],
+     "text": "Trajectory",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc11g2b10",
+     "left": -9,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      56,
+      0,
+      120,
+      24
+     ],
+     "sprites": [
+      "36"
+     ],
+     "text": "Contact",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": -1,
+     "baseline": 20
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "37"
+     ],
+     "text": "Power",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 6,
+     "baseline": 19
+    },
+    {
+     "from": [
+      6,
+      72,
+      24,
+      120,
+      48
+     ],
+     "sprites": [
+      "38"
+     ],
+     "text": "Power",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": -4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      24,
+      72
+     ],
+     "sprites": [
+      "38"
+     ],
+     "text": "+5",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      72,
+      24,
+      120,
+      48
+     ],
+     "sprites": [
+      "39"
+     ],
+     "text": "Power +10",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc12g2b10",
+     "left": -2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      7,
+      24,
+      48,
+      56,
+      72
+     ],
+     "sprites": [
+      "39"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      56,
+      72
+     ],
+     "sprites": [
+      "3a"
+     ],
+     "text": "Speed",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 0,
+     "baseline": 19
+    },
+    {
+     "from": [
+      6,
+      56,
+      48,
+      112,
+      72
+     ],
+     "sprites": [
+      "3b"
+     ],
+     "text": "Arm",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 7,
+     "baseline": 20
+    },
+    {
+     "from": [
+      6,
+      0,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "3c"
+     ],
+     "text": "Fielding",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 2,
+     "baseline": 19
+    },
+    {
+     "from": [
+      6,
+      72,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "3d"
+     ],
+     "text": "Error Res.",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc13g2b10",
+     "left": 0,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      16,
+      120
+     ],
+     "sprites": [
+      "3d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      16,
+      96,
+      72,
+      120
+     ],
+     "sprites": [
+      "3e"
+     ],
+     "text": "Velocity",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": -6,
+     "baseline": 19
+    },
+    {
+     "from": [
+      6,
+      72,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "3f"
+     ],
+     "text": "Control",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 4,
+     "baseline": 20
+    },
+    {
+     "from": [
+      6,
+      112,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "3f"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "40"
+     ],
+     "text": "Control +5",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc11g2b10",
+     "left": -2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      24,
+      72
+     ],
+     "sprites": [
+      "40"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "41"
+     ],
+     "text": "Control +10",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      7,
+      24,
+      48,
+      56,
+      72
+     ],
+     "sprites": [
+      "41"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      48,
+      0,
+      120,
+      24
+     ],
+     "sprites": [
+      "42"
+     ],
+     "text": "Stamina",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 2,
+     "baseline": 20
+    },
+    {
+     "from": [
+      7,
+      120,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "43"
+     ],
+     "text": "Stamina +5",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 1,
+     "baseline": 16
+    },
+    {
+     "from": [
+      7,
+      0,
+      24,
+      40,
+      48
+     ],
+     "sprites": [
+      "43"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      24,
+      72
+     ],
+     "sprites": [
+      "43"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      120,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "44"
+     ],
+     "text": "Stamina +10",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 1,
+     "baseline": 16
+    },
+    {
+     "from": [
+      7,
+      0,
+      24,
+      40,
+      48
+     ],
+     "sprites": [
+      "44"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      24,
+      48,
+      56,
+      72
+     ],
+     "sprites": [
+      "44"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      40,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "45"
+     ],
+     "text": "Luck Up",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc15g2b10",
+     "left": 6,
+     "baseline": 19
+    },
+    {
+     "from": [
+      7,
+      56,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "46"
+     ],
+     "text": "Date: Honoka",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb13",
+     "left": 0,
+     "baseline": 16
+    },
+    {
+     "from": [
+      7,
+      0,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "47"
+     ],
+     "text": "Date: Iori",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc15g2b10",
+     "left": 0,
+     "baseline": 19
+    },
+    {
+     "from": [
+      7,
+      72,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "48"
+     ],
+     "text": "Date: Luna",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc12g2b10",
+     "left": -1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      7,
+      0,
+      96,
+      16,
+      120
+     ],
+     "sprites": [
+      "48"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      16,
+      96,
+      88,
+      120
+     ],
+     "sprites": [
+      "49"
+     ],
+     "text": "Date: Midori",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": 2,
+     "baseline": 16
+    },
+    {
+     "from": [
+      7,
+      88,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "4a"
+     ],
+     "text": "Date: Miho",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc12g2b10",
+     "left": 0,
+     "baseline": 18
+    },
+    {
+     "from": [
+      5,
+      80,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "4a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      48,
+      72,
+      72
+     ],
+     "sprites": [
+      "4b"
+     ],
+     "text": "Clinic",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 10,
+     "baseline": 20
+    },
+    {
+     "from": [
+      5,
+      0,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "4c"
+     ],
+     "text": "Driving",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 8,
+     "baseline": 18
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      72,
+      120
+     ],
+     "sprites": [
+      "4d"
+     ],
+     "text": "Change Gear",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb14",
+     "left": -1,
+     "baseline": 17
+    },
+    {
+     "from": [
+      5,
+      72,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "4e"
+     ],
+     "text": "Treatment",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "dc13g2b10",
+     "left": -9,
+     "baseline": 18
+    },
+    {
+     "from": [
+      5,
+      72,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "4f"
+     ],
+     "text": "Talk",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 9,
+     "baseline": 20
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      72,
+      24
+     ],
+     "sprites": [
+      "50"
+     ],
+     "text": "Advice",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 8,
+     "baseline": 19
+    },
+    {
+     "from": [
+      8,
+      0,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "51"
+     ],
+     "text": "Regular Spot",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb13",
+     "left": -1,
+     "baseline": 16
+    },
+    {
+     "from": [
+      5,
+      72,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "52"
+     ],
+     "text": "Banquet",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": -3,
+     "baseline": 19
+    },
+    {
+     "from": [
+      8,
+      0,
+      48,
+      72,
+      72
+     ],
+     "sprites": [
+      "53"
+     ],
+     "text": "TV Spot",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc14g2b10",
+     "left": 6,
+     "baseline": 19
+    },
+    {
+     "from": [
+      8,
+      0,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "54"
+     ],
+     "text": "Convert",
+     "style": "o2_ff_r77_s0_c2",
+     "font": "dc16g2b10",
+     "left": 1,
+     "baseline": 19
+    },
+    {
+     "from": [
+      8,
+      0,
+      96,
+      72,
+      120
+     ],
+     "sprites": [
+      "55"
+     ],
+     "text": "Body Rebuild",
+     "style": "o2_ff_r77_s0_c1",
+     "font": "nb13",
+     "left": 0,
+     "baseline": 16
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "b5_mm",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     32,
+     48,
+     128,
+     56
+    ],
+    [
+     0,
+     112,
+     0,
+     128,
+     24
+    ],
+    [
+     0,
+     32,
+     32,
+     40,
+     48
+    ],
+    [
+     1,
+     48,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     48,
+     88,
+     80,
+     128
+    ],
+    [
+     1,
+     112,
+     24,
+     128,
+     88
+    ],
+    [
+     1,
+     80,
+     112,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     120,
+     48,
+     128
+    ],
+    [
+     1,
+     0,
+     72,
+     16,
+     88
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     64,
+     32,
+     96,
+     64
+    ],
+    [
+     4,
+     112,
+     112,
+     128,
+     128
+    ],
+    [
+     4,
+     72,
+     64,
+     96,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      48,
+      0,
+      88,
+      24
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Deadline",
+     "style": "o2_ff_r99_s0_c1",
+     "font": "nb14",
+     "left": -6,
+     "baseline": 16
+    },
+    {
+     "from": [
+      1,
+      88,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Due in",
+     "style": "o2_ff_rd4_s0_c1",
+     "font": "nb14",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      48,
+      88,
+      80,
+      120
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "Days",
+     "style": "o2_ff_rd44_s0_c2",
+     "font": "dc14g2b10",
+     "left": 5,
+     "baseline": 24
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      88,
+      24
+     ],
+     "sprites": [
+      "34"
+     ],
+     "text": "Newscaster",
+     "style": "o2_ff_r11_s0_c1",
+     "font": "dc12g2b10",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      88,
+      48
+     ],
+     "sprites": [
+      "35"
+     ],
+     "text": "Flight Attendant",
+     "style": "o2_ff_r11_s0_c1",
+     "font": "nb12",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      80,
+      72
+     ],
+     "sprites": [
+      "36"
+     ],
+     "text": "Golfer",
+     "style": "o2_ff_r11_s0_c2",
+     "font": "dc16g2b10",
+     "left": 14,
+     "baseline": 20
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      56,
+      96
+     ],
+     "sprites": [
+      "37"
+     ],
+     "text": "Doctor",
+     "style": "o2_ff_r11_s0_c2",
+     "font": "dc15g2b10",
+     "left": 0,
+     "baseline": 20
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      88,
+      120
+     ],
+     "sprites": [
+      "38"
+     ],
+     "text": "Konbini Clerk",
+     "style": "o2_ff_r11_s0_c1",
+     "font": "dc11g2b10",
+     "left": 0,
+     "baseline": 18
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "g3_rire",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     88,
+     48
+    ],
+    [
+     1,
+     0,
+     96,
+     96,
+     128
+    ],
+    [
+     1,
+     88,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     64,
+     72,
+     96,
+     96
+    ],
+    [
+     2,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     32,
+     72,
+     104,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      96,
+      96,
+      128
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Growth Chart",
+     "style": "o2_fd_rcc443_s0_c1",
+     "font": "dc13g2b10",
+     "left": -8,
+     "baseline": 22
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      24
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Joined",
+     "style": "o2_fe_r881_s0_c2",
+     "font": "dc16g2b10",
+     "left": 2,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Retired",
+     "style": "o2_fe_r881_s0_c2",
+     "font": "dc14g2b10",
+     "left": 0,
+     "baseline": 19
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      48,
+      48
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Now",
+     "style": "o2_fe_r881_s0_c2",
+     "font": "dc16g2b10",
+     "left": 4,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      48,
+      24,
+      88,
+      48
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Yr",
+     "style": "o2_fe_r881_s0_c2",
+     "font": "dc16g2b10",
+     "left": 9,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      64,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Yr",
+     "style": "o2_fe_r881_s0_c2",
+     "font": "dc16g2b10",
+     "left": 5,
+     "baseline": 20
+    },
+    {
+     "from": [
+      2,
+      32,
+      72,
+      104,
+      96
+     ],
+     "sprites": [
+      "2a"
+     ],
+     "text": "SELECT: Sort",
+     "style": "o2_ff64_r36_s0_c2",
+     "font": "dc14g2b10",
+     "left": 24,
+     "baseline": 20
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      72,
+      120
+     ],
+     "sprites": [
+      "2a"
+     ],
+     "empty": true
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "y3_hist",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     1,
+     80,
+     96,
+     128,
+     104
+    ],
+    [
+     1,
+     80,
+     104,
+     88,
+     128
+    ],
+    [
+     1,
+     120,
+     104,
+     128,
+     128
+    ],
+    [
+     1,
+     120,
+     64,
+     128,
+     80
+    ],
+    [
+     2,
+     24,
+     72,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     96,
+     24,
+     128
+    ],
+    [
+     3,
+     0,
+     48,
+     128,
+     56
+    ],
+    [
+     3,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     3,
+     120,
+     56,
+     128,
+     120
+    ],
+    [
+     4,
+     120,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     104,
+     0,
+     120,
+     32
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     16,
+     0,
+     24,
+     128
+    ],
+    [
+     6,
+     32,
+     0,
+     40,
+     128
+    ],
+    [
+     6,
+     80,
+     112,
+     128,
+     128
+    ],
+    [
+     6,
+     104,
+     80,
+     128,
+     104
+    ],
+    [
+     6,
+     120,
+     16,
+     128,
+     40
+    ],
+    [
+     6,
+     120,
+     104,
+     128,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      96,
+      104,
+      128
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "History",
+     "style": "o2_f4_r4_s0_c2",
+     "font": "dc21g2b10",
+     "left": 17,
+     "baseline": 25
+    },
+    {
+     "from": [
+      0,
+      0,
+      104,
+      128,
+      128
+     ],
+     "sprites": [
+      "25"
+     ],
+     "text": "SELECT:",
+     "style": "o2_f6_r6_s0_c2",
+     "font": "dc14g2b10",
+     "left": 11,
+     "baseline": 19
+    },
+    {
+     "from": [
+      2,
+      24,
+      72,
+      80,
+      96
+     ],
+     "sprites": [
+      "25"
+     ],
+     "text": "Sort by Date",
+     "style": "o2_f6_r6_s0_c2",
+     "font": "dc14g2b10",
+     "left": -54,
+     "baseline": 19
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      128,
+      40
+     ],
+     "sprites": [
+      "43"
+     ],
+     "text": "No History",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc24g2b10",
+     "left": 132,
+     "baseline": 32
+    },
+    {
+     "from": [
+      5,
+      0,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "43"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      80,
+      128,
+      120
+     ],
+     "sprites": [
+      "43"
+     ],
+     "empty": true
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "y3_m256",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     0,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     1,
+     0,
+     112,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "My Life",
+     "style": "o2_fffd5af_r838383_s0_c2",
+     "font": "dc26g2b10",
+     "left": 1,
+     "baseline": 41
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      88,
+      56
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Directory",
+     "style": "o2_fffd5af_r838383_s0_c2",
+     "font": "dc26g2b10",
+     "left": -32,
+     "baseline": 41
+    }
+   ],
+   "under": 3
   }
  ],
  "paint": [
