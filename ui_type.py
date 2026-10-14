@@ -1188,10 +1188,10 @@ def repack(group, d, bank, pages, patches, project=None):
         else:                                                    # keep the Japanese label as it is
             pg, x0, y0, x1, y1 = lab["from"]
             art.append((page(pg)[y0 + box[1]:y0 + box[3], x0 + box[0]:x0 + box[2]].copy(), None))
-    same = {}                                  # a label whose art another label already has: stored once
+    same = {}                                  # "share": a label whose art another label has is stored once
     first = {}
     for k, (lab, (a, b)) in enumerate(zip(labels, art)):
-        if "text" in lab and "pieces" not in lab and k not in sliced and not lab.get("empty"):
+        if group.get("share") and "text" in lab and "pieces" not in lab and k not in sliced and not lab.get("empty"):
             key = (a.shape, a.tobytes(), b)
             if key in first:
                 same[k] = first[key]

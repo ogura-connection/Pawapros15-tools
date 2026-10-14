@@ -482,6 +482,7 @@
    "bank": "g3_tim",
    "style": "submenu",
    "font": "ttf:rounded:12:0:0.8:0.4",
+   "share": true,
    "valign": "centre",
    "areas": [
     [
