@@ -534,7 +534,7 @@ What made these quick, and what to know for the next sheets:
 - "compressed page needs N bytes, its slot has M": fewer ink levels in the style (the soft colours between outline and fill, the ramp of the letters) fixed it both times.
 - New styles in `ui_type.RENDER`: `titlestart` / `titleview` / `titlelink`, `titleitem`, `titlecount`, `titleclear`, `warnline`, `warnhead`, `albumclear`, `albummovie`, `makehead`, `makeitem`, `nannormal`, `nanrookie`, `namehead`, `namebutton`; `logo` takes a `thick` outline, `dropped` is letters with a cast shadow and no outline.
 
-## The match: where its text is, and the first sheets (2026-10-13, ninth session; NOT applied, NOT seen)
+## The match: where its text is, and the first sheets (2026-10-13, ninth session; applied, calls seen in game)
 
 Done offline while another session held the emulator and the build (My Life batches): three specs written,
 checked by rendering in memory, not applied to `DATA/files`. Generator: `_work/ui_pages/gen_match_spec.py`
@@ -559,6 +559,16 @@ then look (see "Next" below).
   号) is the font for the names of original pitches, which the player types; nothing to translate there.
 - **Not located**: the score bug (inning 回表 and the count). `gameplay.arc` `h3_ap_ps2` (orange / navy plates,
   S and B letters, 244 sprites) is the likely bank, but its pages decode with wrong colours; needs a texture dump.
+
+**In game (22:05-22:20, applied, COM vs COM exhibition + a 1P game; dolphin-test/looks/match/):** STRIKE, BALL, FOUL,
+SAFE, CHANGE, WARMING UP seen, centred and crisp; every call page was among the loaded textures. Proven by the
+texture dump for what is still Japanese: score bug and batter / pitcher panels (率 本 打点, 防, 試合 勝 敗, 球, ポイント)
+= `gameplay.arc` `h3_ap_ps2`; inning 回 表 裏, 号, 飛距離 = `main_prg.arc` `h3_ulk_0`. **The pitch name shown after a
+pitch and on the pitch selector is text drawn with the `h3_kyu_0` katakana font**, so `g3_np2` is only the
+pitch chart; the table behind it is not found yet (not standard glyphs, kyu sprite indices or Shift-JIS in any
+module: search RAM during a pitch). Player names are rendered into textures at run time from the font. The pause
+menu could not be opened (+ does nothing in watch mode or a 1P game; HOME is the Wii system menu): pause menu,
+substitution screen, pitch chart, `g3_np` panel and line-score boards are applied but not seen.
 
 Specs (193 labels):
 - `gameplay.json` `calls` (20): STRIKE, BALL, FOUL, FAIR, SAFE, OUT, TIME, PLAY BALL, WARMING UP, WALK, HIT BY
