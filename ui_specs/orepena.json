@@ -6586,7 +6586,7 @@
       "0b"
      ],
      "text": "Win Bonus",
-     "style": "o2_f6bc_r11ff_s12_c2",
+     "style": "o2_f79b_r11ff_s12_c2",
      "font": "dc15g2b10",
      "left": 22,
      "baseline": 22
@@ -6603,7 +6603,7 @@
       "0c"
      ],
      "text": "Title Bonus",
-     "style": "o2_f6bc_r11ff_s12_c2",
+     "style": "o2_f79b_r11ff_s12_c2",
      "font": "dc15g2b10",
      "left": 17,
      "baseline": 22
@@ -6620,7 +6620,7 @@
       "0d"
      ],
      "text": "Series",
-     "style": "o2_f6bc_r11ff_s12_c1",
+     "style": "o2_f79b_r11ff_s12_c1",
      "font": "dc13g2b10",
      "left": -2,
      "baseline": 20
@@ -6637,7 +6637,7 @@
       "0d"
      ],
      "text": "Champ Bonus",
-     "style": "o2_f6bc_r11ff_s12_c1",
+     "style": "o2_f79b_r11ff_s12_c1",
      "font": "dc13g2b10",
      "left": -80,
      "baseline": 20
@@ -6654,7 +6654,7 @@
       "0e"
      ],
      "text": "Win Streak Bonus",
-     "style": "o2_f6bc_r1f_s12_c1",
+     "style": "o2_f79b_r1f_s12_c1",
      "font": "dc12g2b10",
      "left": 2,
      "baseline": 20
@@ -6671,7 +6671,7 @@
       "0f"
      ],
      "text": "All-Star",
-     "style": "o2_f6bc_r11ff_s12_c2",
+     "style": "o2_f79b_r11ff_s12_c2",
      "font": "dc15g2b10",
      "left": 38,
      "baseline": 22
@@ -6688,7 +6688,7 @@
       "0f"
      ],
      "text": "Win Bonus",
-     "style": "o2_f6bc_r11ff_s12_c2",
+     "style": "o2_f79b_r11ff_s12_c2",
      "font": "dc15g2b10",
      "left": -21,
      "baseline": 22
@@ -6705,7 +6705,7 @@
       "10"
      ],
      "text": "Slump",
-     "style": "o2_f6bc_r11ff_s12_c2",
+     "style": "o2_f79b_r11ff_s12_c2",
      "font": "dc15g2b10",
      "left": 4,
      "baseline": 22
@@ -6722,7 +6722,7 @@
       "10"
      ],
      "text": "Buster Bonus",
-     "style": "o2_f6bc_r11ff_s12_c2",
+     "style": "o2_f79b_r11ff_s12_c2",
      "font": "dc15g2b10",
      "left": -73,
      "baseline": 22
@@ -6739,7 +6739,7 @@
       "11"
      ],
      "text": "Walk-off",
-     "style": "o2_f6bc_r11ff_s12_c2",
+     "style": "o2_f79b_r11ff_s12_c2",
      "font": "dc15g2b10",
      "left": 24,
      "baseline": 22
@@ -6756,7 +6756,7 @@
       "11"
      ],
      "text": "Win Bonus",
-     "style": "o2_f6bc_r11ff_s12_c2",
+     "style": "o2_f79b_r11ff_s12_c2",
      "font": "dc15g2b10",
      "left": -30,
      "baseline": 22
@@ -6786,7 +6786,7 @@
       "12"
      ],
      "text": "Comeback",
-     "style": "o2_fc6c_rc1_s11_c1",
+     "style": "o2_f568_rc1_s11_c1",
      "font": "dc12g2b10",
      "left": -1,
      "baseline": 20
@@ -6803,7 +6803,7 @@
       "12"
      ],
      "text": "Walk-off",
-     "style": "o2_fc6c_rc1_s11_c1",
+     "style": "o2_f568_rc1_s11_c1",
      "font": "dc12g2b10",
      "left": -56,
      "baseline": 20
@@ -6820,7 +6820,7 @@
       "12"
      ],
      "text": "Grand Slam",
-     "style": "o2_fc6c_rc1_s11_c1",
+     "style": "o2_f568_rc1_s11_c1",
      "font": "dc12g2b10",
      "left": -22,
      "baseline": 20
@@ -6837,7 +6837,7 @@
       "13"
      ],
      "text": "Comeback Home Run",
-     "style": "o2_fc6c_rc1_s11_c1",
+     "style": "o2_f568_rc1_s11_c1",
      "font": "nb11",
      "left": 8,
      "baseline": 18
@@ -6854,7 +6854,7 @@
       "14"
      ],
      "text": "Comeback",
-     "style": "o2_fc6c_rcc11_s11_c2",
+     "style": "o2_f568_rcc11_s11_c2",
      "font": "dc15g2b10",
      "left": 2,
      "baseline": 21
@@ -6871,7 +6871,7 @@
       "14"
      ],
      "text": "Walk-off HR",
-     "style": "o2_fc6c_rcc11_s11_c2",
+     "style": "o2_f568_rcc11_s11_c2",
      "font": "dc15g2b10",
      "left": -13,
      "baseline": 21
@@ -6888,7 +6888,7 @@
       "15"
      ],
      "text": "CG",
-     "style": "o2_fc6c_rcc11_s11_c2",
+     "style": "o2_f568_rcc11_s11_c2",
      "font": "dc15g2b10",
      "left": 8,
      "baseline": 20
@@ -6905,7 +6905,7 @@
       "16"
      ],
      "text": "Perfect Game",
-     "style": "o2_fc6c_rc1_s11_c1",
+     "style": "o2_f568_rc1_s11_c1",
      "font": "nb11",
      "left": 2,
      "baseline": 17
@@ -6922,7 +6922,7 @@
       "17"
      ],
      "text": "No-Hitter",
-     "style": "o2_fc6c_rcc11_s11_c2",
+     "style": "o2_f568_rcc11_s11_c2",
      "font": "dc15g2b10",
      "left": 35,
      "baseline": 19
@@ -6965,7 +6965,7 @@
       "18"
      ],
      "text": "Hero Player",
-     "style": "o2_fc6c_rcc11_s11_c2",
+     "style": "o2_f568_rcc11_s11_c2",
      "font": "dc14g2b10",
      "left": 4,
      "baseline": 20
@@ -7800,7 +7800,7 @@
       "37"
      ],
      "text": "Strikeout",
-     "style": "o2_f61b_r1f_s7_c1",
+     "style": "o2_fe9_r1f_s7_c1",
      "font": "nb11",
      "left": -2,
      "baseline": 18
@@ -7817,7 +7817,7 @@
       "38"
      ],
      "text": "Error",
-     "style": "o2_f61b_r11ff_s7_c2",
+     "style": "o2_fe9_r11ff_s7_c2",
      "font": "dc15g2b10",
      "left": 1,
      "baseline": 23
@@ -7834,7 +7834,7 @@
       "39"
      ],
      "text": "Walk",
-     "style": "o2_f61b_r11ff_s7_c2",
+     "style": "o2_fe9_r11ff_s7_c2",
      "font": "dc15g2b10",
      "left": 1,
      "baseline": 22
@@ -7864,7 +7864,7 @@
       "3a"
      ],
      "text": "Runs",
-     "style": "o2_f61b_r11ff_s7_c2",
+     "style": "o2_fe9_r11ff_s7_c2",
      "font": "dc15g2b10",
      "left": 1,
      "baseline": 23
@@ -7881,7 +7881,7 @@
       "3b"
      ],
      "text": "Double Plays",
-     "style": "o2_f61b_r1f_s7_c1",
+     "style": "o2_fe9_r1f_s7_c1",
      "font": "nb11",
      "left": 2,
      "baseline": 18
@@ -7911,7 +7911,7 @@
       "3c"
      ],
      "text": "Loss",
-     "style": "o2_f61b_r11ff_s7_c2",
+     "style": "o2_fe9_r11ff_s7_c2",
      "font": "dc15g2b10",
      "left": 1,
      "baseline": 23
@@ -7928,7 +7928,7 @@
       "3d"
      ],
      "text": "HBP",
-     "style": "o2_f61b_r11ff_s7_c2",
+     "style": "o2_fe9_r11ff_s7_c2",
      "font": "dc15g2b10",
      "left": 6,
      "baseline": 22
@@ -7945,7 +7945,7 @@
       "3e"
      ],
      "text": "Earned Runs",
-     "style": "o2_f61b_r1f_s7_c1",
+     "style": "o2_fe9_r1f_s7_c1",
      "font": "nb11",
      "left": 0,
      "baseline": 19
@@ -7975,7 +7975,7 @@
       "3f"
      ],
      "text": "WP",
-     "style": "o2_f61b_r11ff_s7_c2",
+     "style": "o2_fe9_r11ff_s7_c2",
      "font": "dc15g2b10",
      "left": 9,
      "baseline": 22
@@ -7992,7 +7992,7 @@
       "60"
      ],
      "text": "My Spirit Gained",
-     "style": "o2_f4d1_r11_s0_c2",
+     "style": "o2_f7a_r11_s0_c2",
      "font": "dc15g2b10",
      "left": 0,
      "baseline": 22
@@ -8009,7 +8009,7 @@
       "6e"
      ],
      "text": "Salary",
-     "style": "o2_f711_r111_s0_c2",
+     "style": "o2_fdb9_r111_s0_c2",
      "font": "dc15g2b10",
      "left": 2,
      "baseline": 22
@@ -8026,7 +8026,7 @@
       "6f"
      ],
      "text": "00M",
-     "style": "o2_f711_r111_s0_c2",
+     "style": "o2_fdb9_r111_s0_c2",
      "font": "dc15g2b10",
      "left": 0,
      "baseline": 22
@@ -8043,7 +8043,7 @@
       "70"
      ],
      "text": "0K",
-     "style": "o2_f711_r111_s0_c2",
+     "style": "o2_fdb9_r111_s0_c2",
      "font": "dc15g2b10",
      "left": 0,
      "baseline": 21
@@ -8060,7 +8060,7 @@
       "71"
      ],
      "text": "yen",
-     "style": "o2_f711_r111_s0_c2",
+     "style": "o2_fdb9_r111_s0_c2",
      "font": "dc15g2b10",
      "left": 0,
      "baseline": 22
@@ -8184,7 +8184,7 @@
       "aa"
      ],
      "text": "Shutout",
-     "style": "o2_fc6c_rc1_s11_c1",
+     "style": "o2_f568_rc1_s11_c1",
      "font": "nb11",
      "left": -2,
      "baseline": 17
@@ -8201,7 +8201,7 @@
       "ab"
      ],
      "text": "Grand Slam",
-     "style": "o2_fc6c_rcc11_s11_c2",
+     "style": "o2_f568_rcc11_s11_c2",
      "font": "dc15g2b10",
      "left": 14,
      "baseline": 22
@@ -8218,7 +8218,7 @@
       "ae"
      ],
      "text": "Hits Allowed",
-     "style": "o2_f61b_r1f_s7_c1",
+     "style": "o2_fe9_r1f_s7_c1",
      "font": "nb11",
      "left": 1,
      "baseline": 18
@@ -8248,7 +8248,7 @@
       "af"
      ],
      "text": "HR Allowed",
-     "style": "o2_f61b_r11ff_s7_c2",
+     "style": "o2_fe9_r11ff_s7_c2",
      "font": "dc15g2b10",
      "left": -2,
      "baseline": 22
