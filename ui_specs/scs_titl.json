@@ -1,0 +1,262 @@
+{
+ "arc": "scs_titl.arc",
+ "repack": [
+  {
+   "bank": "y5_scs_tit_0",
+   "palette": 22,
+   "style": "titleitem",
+   "font": "ttf:rounded:16:0:0.85:0.6",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     96,
+     128
+    ],
+    [
+     2,
+     96,
+     32,
+     120,
+     64
+    ],
+    [
+     2,
+     96,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     32,
+     128,
+     56
+    ],
+    [
+     3,
+     0,
+     56,
+     64,
+     80
+    ],
+    [
+     3,
+     0,
+     80,
+     112,
+     128
+    ],
+    [
+     3,
+     16,
+     0,
+     128,
+     24
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     4,
+     0,
+     32,
+     104,
+     64
+    ],
+    [
+     4,
+     0,
+     64,
+     96,
+     88
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      0,
+      32,
+      104,
+      64
+     ],
+     "text": "Start",
+     "style": "titlestart",
+     "font": "ttf:rounded:20:0:0.9:0.6",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      80,
+      112,
+      128
+     ],
+     "text": "My Players",
+     "style": "titleview",
+     "font": "ttf:rounded:14:0:0.85:0.5",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Linked World",
+     "style": "titlelink",
+     "font": "ttf:rounded:13:0:0.82:0.5",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      104,
+      56
+     ],
+     "text": "Registered",
+     "style": "titlecount",
+     "font": "ttf:rounded:11:0:0.9:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      3,
+      0,
+      56,
+      32,
+      80
+     ],
+     "text": "Pit.",
+     "style": "titlecount",
+     "font": "ttf:rounded:11:0:0.9:0.4"
+    },
+    {
+     "from": [
+      3,
+      32,
+      56,
+      64,
+      80
+     ],
+     "text": "Fld.",
+     "style": "titlecount",
+     "font": "ttf:rounded:11:0:0.9:0.4"
+    },
+    {
+     "from": [
+      3,
+      104,
+      32,
+      128,
+      56
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      96,
+      32
+     ],
+     "text": "New Game",
+     "align": "left"
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      120,
+      64
+     ],
+     "text": "Continue",
+     "align": "left"
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      96,
+      96
+     ],
+     "text": "Players",
+     "align": "left"
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Album",
+     "align": "left"
+    },
+    {
+     "from": [
+      2,
+      112,
+      64,
+      128,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      64,
+      96,
+      88
+     ],
+     "text": "Cleared",
+     "style": "titleclear",
+     "font": "ttf:rounded:11:0:0.9:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      1,
+      80,
+      72,
+      104,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      16,
+      0,
+      128,
+      24
+     ],
+     "text": "Turned Pro",
+     "style": "titleclear",
+     "font": "ttf:rounded:11:0:0.9:0.4",
+     "align": "left"
+    }
+   ]
+  }
+ ]
+}
