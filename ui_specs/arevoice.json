@@ -849,6 +849,13 @@
      48,
      24,
      128,
+     56
+    ],
+    [
+     28,
+     0,
+     56,
+     128,
      88
     ],
     [
@@ -857,6 +864,13 @@
      64,
      128,
      128
+    ],
+    [
+     30,
+     0,
+     0,
+     128,
+     56
     ]
    ],
    "labels": [
@@ -899,32 +913,58 @@
      "text": "Announcer",
      "style": "v_ann111",
      "font": "ttf:rounded:15:0:0.9:0.4",
-     "slices": true,
-     "slice_width": 80,
-     "dy": 1,
+     "baseline": 34,
      "palettes": [
       111
      ]
     },
     {
-     "sprite": "11",
+     "from": [
+      30,
+      104,
+      64,
+      128,
+      96
+     ],
      "text": "PA Announcer",
-     "style": "v_pa102",
+     "style": "v_pa102_a",
      "font": "ttf:rounded:12:0:0.9:0.4",
-     "baseline": 32,
-     "palettes": [
-      102
-     ]
+     "baseline": 20,
+     "left": -11
     },
     {
-     "sprite": "12",
+     "from": [
+      30,
+      104,
+      96,
+      128,
+      128
+     ],
      "text": "PA Announcer",
-     "style": "v_pa102",
+     "style": "v_pa102_b",
      "font": "ttf:rounded:12:0:0.9:0.4",
-     "baseline": 30,
-     "palettes": [
-      102
-     ]
+     "baseline": 20,
+     "left": 21
+    },
+    {
+     "from": [
+      28,
+      88,
+      56,
+      128,
+      88
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      30,
+      32,
+      96,
+      40,
+      112
+     ],
+     "empty": true
     }
    ],
    "name": "p28"
