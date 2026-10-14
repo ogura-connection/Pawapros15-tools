@@ -2912,6 +2912,2455 @@
      "valign": "centre"
     }
    ]
+  },
+  {
+   "bank": "y3_kine",
+   "palette": 18,
+   "style": "o3stad",
+   "font": "ttf:rounded:12:0:1:0.3",
+   "under": 3,
+   "share": true,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     0,
+     24,
+     40,
+     48
+    ],
+    [
+     1,
+     80,
+     24,
+     128,
+     48
+    ],
+    [
+     1,
+     0,
+     80,
+     80,
+     128
+    ],
+    [
+     2,
+     0,
+     40,
+     128,
+     64
+    ],
+    [
+     2,
+     0,
+     64,
+     112,
+     112
+    ],
+    [
+     6,
+     0,
+     0,
+     112,
+     24
+    ],
+    [
+     6,
+     0,
+     24,
+     96,
+     96
+    ],
+    [
+     6,
+     56,
+     96,
+     128,
+     120
+    ],
+    [
+     8,
+     88,
+     0,
+     128,
+     48
+    ],
+    [
+     8,
+     48,
+     48,
+     128,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Trophy Room",
+     "style": "o3memo",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1d",
+     "text": "Jingu Stadium",
+     "style": "o3stad",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1e",
+     "text": "Hiroshima Stadium",
+     "style": "o3stad",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1f",
+     "text": "Tokyo Dome",
+     "style": "o3stad",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "20",
+     "text": "Yokohama Stadium",
+     "style": "o3stad",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "21",
+     "text": "Nagoya Dome",
+     "style": "o3stad",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "22",
+     "text": "Koshien Stadium",
+     "style": "o3stad",
+     "font": "ttf:din:14:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "23",
+     "text": "Skymark Stadium",
+     "style": "o3stad",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "24",
+     "text": "Chiba Marine Stadium",
+     "style": "o3stad",
+     "font": "ttf:din:15:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "25",
+     "text": "Seibu Dome",
+     "style": "o3stad",
+     "font": "ttf:din:14:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "26",
+     "text": "Fukuoka Dome",
+     "style": "o3stad",
+     "font": "ttf:din:15:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "27",
+     "text": "Kyocera Dome Osaka",
+     "style": "o3stad",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "28",
+     "text": "Sapporo Dome",
+     "style": "o3stad",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "48",
+     "text": "Kleenex Stadium Miyagi",
+     "style": "o3stad",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    }
+   ]
+  },
+  {
+   "bank": "y3_pmoji",
+   "palette": 0,
+   "style": "o3pm",
+   "font": "ttf:rounded:12:0:1:0.3",
+   "under": 3,
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     0,
+     24,
+     112,
+     72
+    ],
+    [
+     1,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     1,
+     120,
+     72,
+     128,
+     96
+    ],
+    [
+     1,
+     0,
+     96,
+     112,
+     120
+    ],
+    [
+     1,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     112,
+     24
+    ],
+    [
+     3,
+     0,
+     24,
+     128,
+     72
+    ],
+    [
+     3,
+     24,
+     72,
+     40,
+     80
+    ],
+    [
+     3,
+     88,
+     72,
+     128,
+     80
+    ],
+    [
+     3,
+     96,
+     80,
+     128,
+     88
+    ],
+    [
+     3,
+     24,
+     88,
+     32,
+     96
+    ],
+    [
+     3,
+     88,
+     88,
+     128,
+     96
+    ],
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     5,
+     0,
+     48,
+     88,
+     72
+    ],
+    [
+     5,
+     104,
+     48,
+     128,
+     72
+    ],
+    [
+     5,
+     16,
+     96,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     17,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     18,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     19,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     20,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     21,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     22,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     23,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     24,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     24,
+     0,
+     120,
+     32,
+     128
+    ],
+    [
+     25,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     25,
+     0,
+     120,
+     72,
+     128
+    ],
+    [
+     25,
+     80,
+     120,
+     128,
+     128
+    ],
+    [
+     26,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     27,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     28,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     29,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     30,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     31,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     32,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     32,
+     0,
+     48,
+     96,
+     72
+    ],
+    [
+     32,
+     0,
+     72,
+     128,
+     128
+    ],
+    [
+     33,
+     0,
+     0,
+     96,
+     24
+    ],
+    [
+     33,
+     0,
+     24,
+     112,
+     48
+    ],
+    [
+     33,
+     0,
+     48,
+     128,
+     128
+    ],
+    [
+     34,
+     0,
+     0,
+     112,
+     24
+    ],
+    [
+     34,
+     0,
+     24,
+     128,
+     120
+    ],
+    [
+     35,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      96,
+      96,
+      128,
+      120
+     ],
+     "text": "Family",
+     "style": "o3pm",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      48,
+      72,
+      112,
+      96
+     ],
+     "text": "Form",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      0,
+      72,
+      48,
+      96
+     ],
+     "text": "Type",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      96,
+      120
+     ],
+     "text": "Selling Point",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0c",
+     "text": "Born",
+     "style": "o3pm",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0d",
+     "text": "Throws R, Bats R",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0e",
+     "text": "Throws R, Bats L",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0f",
+     "text": "Throws R, Bats S",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10",
+     "text": "Throws L, Bats R",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "11",
+     "text": "Throws L, Bats L",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "12",
+     "text": "Throws L, Bats S",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "13",
+     "text": "From Hokkaido",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "14",
+     "text": "From Aomori",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "15",
+     "text": "From Akita",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "16",
+     "text": "From Iwate",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "17",
+     "text": "From Yamagata",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "18",
+     "text": "From Miyagi",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "19",
+     "text": "From Niigata",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1a",
+     "text": "From Fukushima",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1b",
+     "text": "From Gunma",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1c",
+     "text": "From Saitama",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1d",
+     "text": "From Tokyo",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1e",
+     "text": "From Chiba",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1f",
+     "text": "From Nagano",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "20",
+     "text": "From Yamanashi",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "21",
+     "text": "From Kanagawa",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "22",
+     "text": "From Shizuoka",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "23",
+     "text": "From Toyama",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "24",
+     "text": "From Gifu",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "25",
+     "text": "From Aichi",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "26",
+     "text": "From Ishikawa",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "27",
+     "text": "From Fukui",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "28",
+     "text": "From Shiga",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "29",
+     "text": "From Mie",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "2a",
+     "text": "From Nara",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "2b",
+     "text": "From Kyoto",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "2c",
+     "text": "From Osaka",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "2d",
+     "text": "From Wakayama",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "2e",
+     "text": "From Hyogo",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "2f",
+     "text": "From Tottori",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "30",
+     "text": "From Okayama",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "31",
+     "text": "From Shimane",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "32",
+     "text": "From Hiroshima",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "33",
+     "text": "From Yamaguchi",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "34",
+     "text": "From Kagawa",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "35",
+     "text": "From Tokushima",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "36",
+     "text": "From Kochi",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "37",
+     "text": "From Ehime",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "38",
+     "text": "From Fukuoka",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "39",
+     "text": "From Oita",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "3a",
+     "text": "From Saga",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "3b",
+     "text": "From Nagasaki",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "3c",
+     "text": "From Kumamoto",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "3d",
+     "text": "From Miyazaki",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "3e",
+     "text": "From Kagoshima",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "3f",
+     "text": "From Okinawa",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "eb",
+     "text": "From Tochigi",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ec",
+     "text": "From Ibaraki",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "40",
+     "text": "Team History:",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "41",
+     "text": "GIA",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "42",
+     "text": "CHU",
+     "style": "o3pm",
+     "font": "ttf:din:8:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "43",
+     "text": "HIR",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "44",
+     "text": "YAK",
+     "style": "o3pm",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "45",
+     "text": "YOK",
+     "style": "o3pm",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "46",
+     "text": "HAN",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "47",
+     "text": "ORI",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "48",
+     "text": "NIP",
+     "style": "o3pm",
+     "font": "ttf:din:8:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "49",
+     "text": "SEI",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4a",
+     "text": "RAK",
+     "style": "o3pm",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4b",
+     "text": "LOT",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4c",
+     "text": "SOF",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4e",
+     "text": "HS Draft Pick #",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "sprite": "4f",
+     "text": "College Draft Pick #",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "sprite": "50",
+     "text": "Corp. Team Draft Pick #",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "align": "left",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "51",
+     "text": "Until FA:",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "align": "right"
+    },
+    {
+     "sprite": "52",
+     "text": "yr",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "53",
+     "text": "days",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "58",
+     "text": "Wife Juri",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "59",
+     "text": "Wife Luna",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "5a",
+     "text": "Wife Honoka",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "5b",
+     "text": "Wife Midori",
+     "style": "o3pm",
+     "font": "ttf:din:8:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "5c",
+     "text": "Wife Ikumi",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "5d",
+     "text": "Wife Miho",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "5e",
+     "text": "Wife Iori",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "5f",
+     "text": "Wife",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "61",
+     "text": "Wife",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "62",
+     "text": "&",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "63",
+     "text": "Boys",
+     "style": "o3pm",
+     "font": "ttf:din:8:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "64",
+     "text": "Girls",
+     "style": "o3pm",
+     "font": "ttf:din:8:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "65",
+     "text": "1",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "66",
+     "text": "2",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "67",
+     "text": "3",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "68",
+     "text": "4",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "69",
+     "text": "5",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "6a",
+     "text": "3-Quarters",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "6b",
+     "text": "Sidearm",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "6c",
+     "text": "Submarine",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ef",
+     "text": "Overhand",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "6e",
+     "text": "Standard",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "6f",
+     "text": "Crouching",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "70",
+     "text": "Fake Bunt",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "71",
+     "text": "Open Stance",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "72",
+     "text": "Pendulum",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "73",
+     "text": "Flamingo",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ee",
+     "text": "Kannushi",
+     "style": "o3pm",
+     "font": "ttf:din:8:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ed",
+     "text": "Original",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "74",
+     "text": "Fastball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "75",
+     "text": "Breaking",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "76",
+     "text": "Control",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "77",
+     "text": "Stamina",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "78",
+     "text": "Power",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "79",
+     "text": "Speed",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "7a",
+     "text": "Defense",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "7b",
+     "text": "Balanced",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "7c",
+     "text": "Comeback Award",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "7d",
+     "text": "Japan Series MVP",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "7e",
+     "text": "MVP",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "7f",
+     "text": "Best Nine",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "80",
+     "text": "Golden Glove",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "81",
+     "text": "Top Rookie",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "82",
+     "text": "Triple Crown",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "83",
+     "text": "HR King",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "84",
+     "text": "RBI King",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "85",
+     "text": "Batting Title",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "86",
+     "text": "SB King",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "87",
+     "text": "Four Crowns",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "88",
+     "text": "Sawamura",
+     "style": "o3pm",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "89",
+     "text": "Most Wins",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "8a",
+     "text": "ERA Title",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "8b",
+     "text": "Most Strikeouts",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "8c",
+     "text": "Most Saves",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "8d",
+     "text": "Top Reliever",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "8e",
+     "text": "Perfect Game",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "8f",
+     "text": "No-Hitter",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "90",
+     "text": "Hit for the Cycle",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "91",
+     "text": ".300 / 30 HR / 30 SB",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "92",
+     "text": "K Every Inning",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "97",
+     "text": "Inn.",
+     "style": "o3pm",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "99",
+     "text": "50 m Dash Under 6 Sec",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "9a",
+     "text": "Outstanding Bat Control",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "9b",
+     "text": "Hard-Hitting Slugger",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "9c",
+     "text": "Dazzling Defense",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "9d",
+     "text": "Plain but Steady Defense",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "9e",
+     "text": "Clutch Hitting",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "9f",
+     "text": "Can Play Anywhere",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "a0",
+     "text": "Quick Feet of a Small Player",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "a1",
+     "text": "Exceptional Baseball IQ",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "a2",
+     "text": "Lightning-Quick Throws",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "a3",
+     "text": "No Trouble vs Lefties",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "a4",
+     "text": "13-Sec Base Running",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "a5",
+     "text": "Accurate Throws",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "a6",
+     "text": "Tenacious Batting",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "a7",
+     "text": "Skilled Bunter",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "a8",
+     "text": "Chance Magnet",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "a9",
+     "text": "Handles Rough Play",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "aa",
+     "text": "Ironclad Defense",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ab",
+     "text": "Trusted by Teammates",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ac",
+     "text": "Natural Slugger",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ad",
+     "text": "Bullet Liners",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ae",
+     "text": "Arm Throws Over 120 m",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "af",
+     "text": "Back Strength Over 230 kg",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "b0",
+     "text": "Gutsy Play",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b1",
+     "text": "Idol-Like Good Looks",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b2",
+     "text": "Blessed Physique",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b3",
+     "text": "Nimble Hands",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b4",
+     "text": "Cheerful Mood Maker",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b5",
+     "text": "Sturdy Body",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b6",
+     "text": "Many Talents",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b7",
+     "text": "Koshien Veteran",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b8",
+     "text": "Consistent Condition",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "b9",
+     "text": "Roaring Fastball",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ba",
+     "text": "Unmatched Toughness",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "bb",
+     "text": "Outstanding Control",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "bc",
+     "text": "Sharp Breaking Ball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "bd",
+     "text": "Ever-Changing Pitches",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "be",
+     "text": "Arm That Never Tires",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "bf",
+     "text": "Small Frame, Great Control & Break",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "c0",
+     "text": "Late-140s km/h Fastball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "c1",
+     "text": "Fearless Pitching",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "c2",
+     "text": "Needle-Threading Accuracy",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "c3",
+     "text": "Sweeping Breaking Ball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "c4",
+     "text": "Lefty Killer",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "c5",
+     "text": "Nerves of Steel",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "c6",
+     "text": "Rising Fastball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "c7",
+     "text": "Quick Delivery Skill",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "c8",
+     "text": "Amazing Recovery",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "c9",
+     "text": "Heavy Fastball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ca",
+     "text": "Rarely Hit Hard",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "cb",
+     "text": "Control Low in the Zone",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "cc",
+     "text": "Heavy Ball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "cd",
+     "text": "Gets Stronger Late",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ce",
+     "text": "Outstanding Strikeout Skill",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "cf",
+     "text": "Fiery Pitching",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d0",
+     "text": "Poker Face",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d1",
+     "text": "Weak in the Clutch",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d2",
+     "text": "Struggles vs Lefty Pitchers",
+     "style": "o3pm",
+     "font": "ttf:din:8:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d3",
+     "text": "Injury Prone",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d4",
+     "text": "Poor Base Stealer",
+     "style": "o3pm",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d5",
+     "text": "Poor Base Running",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d6",
+     "text": "Shaky Throwing",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d7",
+     "text": "Streaky Condition",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "d8",
+     "text": "Tenses Up Behind in Count",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "d9",
+     "text": "Can't Read the Room",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "da",
+     "text": "Weak Under Pressure",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "db",
+     "text": "Short-Tempered",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "dc",
+     "text": "Average Looks",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "dd",
+     "text": "Easily Rattled",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "de",
+     "text": "Struggles vs Lefty Batters",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "df",
+     "text": "Shaky from the Stretch",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "e0",
+     "text": "Crybaby",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e1",
+     "text": "Flat Fastball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e2",
+     "text": "Dull Breaking Ball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e3",
+     "text": "Poor Quick Delivery",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e4",
+     "text": "Slow Recovery",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e5",
+     "text": "Prone to Mistakes",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e6",
+     "text": "Lacks Finishing Touch",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "e7",
+     "text": "Walks Too Many",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e8",
+     "text": "Slow to Warm Up",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e9",
+     "text": "Slacks Off",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ea",
+     "text": "Tailing Fastball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f0",
+     "text": "None",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f1",
+     "text": "Rookie Eligible",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f2",
+     "text": "FA Eligible",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f3",
+     "text": "Strong on High Pitches",
+     "style": "o3pm",
+     "font": "ttf:din:8:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f4",
+     "text": "Strong on Low Pitches",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f5",
+     "text": "Tricky Fastball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f6",
+     "text": "Light Ball",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10c",
+     "text": "Starter",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10d",
+     "text": "Reliever",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10e",
+     "text": "Closer",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10f",
+     "text": "Suddenly Loses Control",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "sprite": "10a",
+     "text": "Single",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f7",
+     "text": "Year",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "f8",
+     "text": "Career",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "110",
+     "text": "Salary",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "111",
+     "text": "yen",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "112",
+     "text": "oku",
+     "style": "o3pm",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "113",
+     "text": "man",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "114",
+     "text": "man yen",
+     "style": "o3pm",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "fa",
+     "text": "Games",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "fb",
+     "text": "AB",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "fc",
+     "text": "Hits",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "fd",
+     "text": "HR",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "fe",
+     "text": "RBI",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "ff",
+     "text": "AVG",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "100",
+     "text": "Games",
+     "style": "o3pm",
+     "font": "ttf:din:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "101",
+     "text": "W",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "102",
+     "text": "L",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "104",
+     "text": "SO",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "105",
+     "text": "IP",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "106",
+     "text": "ERA",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "109",
+     "text": "Saves",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    }
+   ]
   }
  ],
  "paint": [
@@ -2935,6 +5384,46 @@
     7,
     7
    ]
+  },
+  {
+   "bank": "y3_kine",
+   "page": 1,
+   "rect": [
+    88,
+    64,
+    128,
+    80
+   ],
+   "copy": [
+    1,
+    48,
+    64,
+    88,
+    80
+   ],
+   "text": ".",
+   "style": "o3none",
+   "font": "ttf:din:8:0:1:0"
+  },
+  {
+   "bank": "y3_kine",
+   "page": 8,
+   "rect": [
+    48,
+    104,
+    96,
+    128
+   ],
+   "copy": [
+    8,
+    0,
+    104,
+    48,
+    128
+   ],
+   "text": ".",
+   "style": "o3none",
+   "font": "ttf:din:8:0:1:0"
   }
  ]
 }
