@@ -51,7 +51,7 @@ for _s in range(9, 19):
     ui_type.FONTS["nb%db" % _s] = _nb_font(_s, 1, 1)
 
 
-for _cap in range(8, 21):
+for _cap in range(8, 29):
     for _gap in (1, 2):
         for _b in (0, 10, 20, 30):
             ui_type.FONTS["dc%dg%db%d" % (_cap, _gap, _b)] = _din_font(_cap, _gap, _b / 100.0)

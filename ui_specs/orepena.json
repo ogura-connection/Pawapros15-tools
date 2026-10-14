@@ -2800,8 +2800,8 @@
       48
      ],
      "text": "AVG",
-     "style": "o_f15_rf_s0_c3",
-     "font": "dc15g2b20",
+     "style": "o_f1_rbff_s0_c3",
+     "font": "dc12g2b20",
      "valign": "centre"
     },
     {
@@ -2813,8 +2813,8 @@
       48
      ],
      "text": "HR",
-     "style": "o_f1_rff_s0_c3",
-     "font": "dc16g2b20",
+     "style": "o_f1_rbff_s0_c3",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -2826,8 +2826,8 @@
       72
      ],
      "text": "RBI",
-     "style": "o_f15_rf_s0_c3",
-     "font": "dc16g2b20",
+     "style": "o_f1_rbff_s0_c3",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -2852,7 +2852,7 @@
       72
      ],
      "text": "ERA",
-     "style": "o_f1_r5ff_s0_c3",
+     "style": "o_f1_rbff_s0_c3",
      "font": "dc14g2b20",
      "valign": "centre"
     },
@@ -2865,8 +2865,8 @@
       96
      ],
      "text": "W",
-     "style": "o_f1_rff_s0_c3",
-     "font": "dc16g2b20",
+     "style": "o_f1_rbff_s0_c3",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -2878,8 +2878,8 @@
       96
      ],
      "text": "L",
-     "style": "o_f1_rff_s0_c3",
-     "font": "dc16g2b20",
+     "style": "o_f1_rbff_s0_c3",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -2891,12 +2891,77 @@
       96
      ],
      "text": "SV",
-     "style": "o_f15_rf_s0_c3",
-     "font": "dc16g2b20",
+     "style": "o_f1_rbff_s0_c3",
+     "font": "dc13g2b20",
      "valign": "centre"
     }
    ],
    "under": 3
+  }
+ ],
+ "paint": [
+  {
+   "bank": "y4_mm",
+   "page": 9,
+   "rect": [
+    6,
+    8,
+    128,
+    50
+   ],
+   "text": "New Vessel!",
+   "font": "dc18g2b20",
+   "ramp": [
+    11,
+    11,
+    12,
+    13,
+    14,
+    15,
+    15
+   ]
+  },
+  {
+   "bank": "y4_mm",
+   "page": 11,
+   "rect": [
+    0,
+    8,
+    8,
+    50
+   ],
+   "text": ".",
+   "font": "dc8g2b20",
+   "ramp": [
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11
+   ]
+  },
+  {
+   "bank": "y4_mm",
+   "page": 13,
+   "rect": [
+    6,
+    8,
+    98,
+    66
+   ],
+   "text": "New Item!",
+   "font": "dc17g2b20",
+   "ramp": [
+    11,
+    11,
+    12,
+    13,
+    14,
+    15,
+    15
+   ]
   }
  ]
 }

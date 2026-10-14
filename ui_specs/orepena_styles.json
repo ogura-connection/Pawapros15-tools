@@ -318,62 +318,12 @@
   "shadow": 0,
   "cut": 3
  },
- "o_f15_rf_s0_c3": {
-  "kind": "solid",
-  "fill": 15,
-  "rings": [
-   15
-  ],
-  "shadow": 0,
-  "cut": 3
- },
- "o_f1_rff_s0_c3": {
-  "kind": "solid",
-  "fill": 1,
-  "rings": [
-   15,
-   15
-  ],
-  "shadow": 0,
-  "cut": 3
- },
  "o_f1_rbff_s0_c3": {
   "kind": "solid",
   "fill": 1,
   "rings": [
    11,
    15,
-   15
-  ],
-  "shadow": 0,
-  "cut": 3
- },
- "o_f1_rbf_s0_c3": {
-  "kind": "solid",
-  "fill": 1,
-  "rings": [
-   11,
-   15
-  ],
-  "shadow": 0,
-  "cut": 3
- },
- "o_f1_r5ff_s0_c3": {
-  "kind": "solid",
-  "fill": 1,
-  "rings": [
-   5,
-   15,
-   15
-  ],
-  "shadow": 0,
-  "cut": 3
- },
- "o_f1_r5f_s0_c3": {
-  "kind": "solid",
-  "fill": 1,
-  "rings": [
-   5,
    15
   ],
   "shadow": 0,
