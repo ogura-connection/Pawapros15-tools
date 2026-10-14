@@ -20,4 +20,8 @@ STYLES = {
     "subhead": tight(banded([0, 7, 6, 5, 3, 2, 1], [8, 8])),                 # column headers: navy in a white ring
     "subtab": tight(banded([0, 5, 4, 3, 2, 1, 1], [15, 13])),                # Batter / Bench: white in navy, italic
     "submenu": called([15, 15], [9, 11, 13], 8, 8, 4, [3, 2], thick=1, wide=0, bandw=1),   # palettes 55..60
+    # words on the stripes of time.arc g3_tim (pals 20, 21): white, dark ring, light cyan shadow
+    "tim_stripe": tight(banded([0, 5, 7, 8, 8, 8, 8], [1], 13)),
+    # 今日の成績 on the bar of the score screen (pal 13): white, navy ring, blue shadow
+    "tim_bar": tight(banded([0, 6, 4, 1, 1, 1, 1], [15], 12)),
 }

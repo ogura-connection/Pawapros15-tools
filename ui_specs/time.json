@@ -668,5 +668,211 @@
     }
    ]
   }
+ ],
+ "paint": [
+  {
+   "bank": "g3_tim",
+   "page": 11,
+   "rect": [
+    0,
+    0,
+    48,
+    24
+   ],
+   "copy": [
+    11,
+    0,
+    0,
+    2,
+    24
+   ],
+   "text": "Pitcher",
+   "font": "ttf:din:13:0:1:0.1",
+   "style": "tim_stripe"
+  },
+  {
+   "bank": "g3_tim",
+   "page": 11,
+   "rect": [
+    0,
+    24,
+    80,
+    48
+   ],
+   "copy": [
+    11,
+    0,
+    24,
+    2,
+    48
+   ],
+   "text": "Bullpen",
+   "font": "ttf:din:13:0:1:0.1",
+   "style": "tim_stripe"
+  },
+  {
+   "bank": "g3_tim",
+   "page": 11,
+   "rect": [
+    0,
+    48,
+    80,
+    72
+   ],
+   "copy": [
+    11,
+    0,
+    48,
+    2,
+    72
+   ],
+   "text": "Bench",
+   "font": "ttf:din:13:0:1:0.1",
+   "style": "tim_stripe"
+  },
+  {
+   "bank": "g3_tim",
+   "page": 16,
+   "rect": [
+    0,
+    96,
+    64,
+    120
+   ],
+   "copy": [
+    16,
+    0,
+    96,
+    2,
+    120
+   ],
+   "text": "Righties",
+   "font": "ttf:din:12:0:1:0.1",
+   "style": "tim_stripe"
+  },
+  {
+   "bank": "g3_tim",
+   "page": 16,
+   "rect": [
+    64,
+    96,
+    128,
+    120
+   ],
+   "copy": [
+    16,
+    64,
+    96,
+    66,
+    120
+   ],
+   "text": "Lefties",
+   "font": "ttf:din:12:0:1:0.1",
+   "style": "tim_stripe"
+  },
+  {
+   "bank": "g3_tim",
+   "page": 7,
+   "rect": [
+    24,
+    96,
+    96,
+    120
+   ],
+   "copy": [
+    7,
+    24,
+    96,
+    26,
+    120
+   ],
+   "text": "Today's Stats",
+   "font": "ttf:din:12:0:1:0.1",
+   "style": "tim_bar"
+  },
+  {
+   "bank": "g3_tim",
+   "page": 11,
+   "rect": [
+    25,
+    99,
+    83,
+    114
+   ],
+   "text": "Today's Stats",
+   "font": "ttf:din:11:0:1:0",
+   "ramp": [
+    8,
+    6,
+    4,
+    3,
+    2,
+    1,
+    1
+   ]
+  },
+  {
+   "bank": "g3_tim",
+   "page": 11,
+   "rect": [
+    51,
+    3,
+    67,
+    17
+   ],
+   "text": "R",
+   "font": "ttf:din:13:0:1:0.3",
+   "ramp": [
+    8,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ]
+  },
+  {
+   "bank": "g3_tim",
+   "page": 11,
+   "rect": [
+    75,
+    3,
+    91,
+    17
+   ],
+   "text": "L",
+   "font": "ttf:din:13:0:1:0.3",
+   "ramp": [
+    8,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ]
+  },
+  {
+   "bank": "g3_tim",
+   "page": 11,
+   "rect": [
+    99,
+    3,
+    115,
+    17
+   ],
+   "text": "S",
+   "font": "ttf:din:13:0:1:0.3",
+   "ramp": [
+    8,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1
+   ]
+  }
  ]
 }
