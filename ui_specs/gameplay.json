@@ -690,6 +690,317 @@
      "align": "right"
     }
    ]
+  },
+  {
+   "name": "swing tags",
+   "bank": "h3_ap_ps2",
+   "style": "psp_tag",
+   "font": "ttf:din:9:0:0.9:0",
+   "valign": "centre",
+   "share": true,
+   "areas": [
+    [
+     0,
+     48,
+     104,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     104,
+     32,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      48,
+      104,
+      72,
+      128
+     ],
+     "sprites": [
+      "37"
+     ],
+     "text": "Power",
+     "left": 9
+    },
+    {
+     "from": [
+      0,
+      72,
+      104,
+      96,
+      128
+     ],
+     "sprites": [
+      "37"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      96,
+      104,
+      128,
+      128
+     ],
+     "sprites": [
+      "38"
+     ],
+     "text": "Push",
+     "left": 13
+    },
+    {
+     "from": [
+      1,
+      0,
+      104,
+      16,
+      128
+     ],
+     "sprites": [
+      "38"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      112,
+      104,
+      128,
+      128
+     ],
+     "sprites": [
+      "3d"
+     ],
+     "text": "Bunt",
+     "left": 14
+    },
+    {
+     "from": [
+      2,
+      0,
+      104,
+      32,
+      128
+     ],
+     "sprites": [
+      "3d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      16,
+      104,
+      40,
+      128
+     ],
+     "sprites": [
+      "39"
+     ],
+     "text": "In",
+     "left": 6
+    },
+    {
+     "from": [
+      1,
+      40,
+      104,
+      64,
+      128
+     ],
+     "sprites": [
+      "39"
+     ],
+     "text": "Front",
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      16,
+      104,
+      40,
+      128
+     ],
+     "sprites": [
+      "3a"
+     ],
+     "text": "In",
+     "left": 6
+    },
+    {
+     "from": [
+      1,
+      88,
+      104,
+      112,
+      128
+     ],
+     "sprites": [
+      "3a"
+     ],
+     "text": "Back",
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      64,
+      104,
+      88,
+      128
+     ],
+     "sprites": [
+      "3b"
+     ],
+     "text": "Out",
+     "left": 3
+    },
+    {
+     "from": [
+      1,
+      40,
+      104,
+      64,
+      128
+     ],
+     "sprites": [
+      "3b"
+     ],
+     "text": "Front",
+     "left": -1
+    },
+    {
+     "from": [
+      1,
+      64,
+      104,
+      88,
+      128
+     ],
+     "sprites": [
+      "3c"
+     ],
+     "text": "Out",
+     "left": 3
+    },
+    {
+     "from": [
+      1,
+      88,
+      104,
+      112,
+      128
+     ],
+     "sprites": [
+      "3c"
+     ],
+     "text": "Back",
+     "left": -1
+    },
+    {
+     "from": [
+      1,
+      16,
+      104,
+      40,
+      128
+     ],
+     "sprites": [
+      "5c"
+     ],
+     "text": "In",
+     "left": 12
+    },
+    {
+     "from": [
+      1,
+      16,
+      104,
+      40,
+      128
+     ],
+     "sprites": [
+      "5d"
+     ],
+     "text": "In",
+     "left": 12
+    },
+    {
+     "from": [
+      1,
+      64,
+      104,
+      88,
+      128
+     ],
+     "sprites": [
+      "5e"
+     ],
+     "text": "Out",
+     "left": 6
+    },
+    {
+     "from": [
+      1,
+      64,
+      104,
+      88,
+      128
+     ],
+     "sprites": [
+      "5f"
+     ],
+     "text": "Out",
+     "left": 6
+    }
+   ]
+  },
+  {
+   "name": "pitch count unit",
+   "bank": "h3_ap_ps2",
+   "style": "psp_ball",
+   "font": "ttf:din:10:0:1:0",
+   "valign": "centre",
+   "areas": [
+    [
+     2,
+     80,
+     64,
+     96,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      80,
+      64,
+      96,
+      80
+     ],
+     "text": "P",
+     "align": "left"
+    }
+   ]
   }
  ]
 }
