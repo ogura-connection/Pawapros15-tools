@@ -472,7 +472,7 @@
  },
  "o2_plate_0": {
   "kind": "plate2",
-  "fillrow": 19,
+  "fillrow": 20,
   "bank": "y3_mjun",
   "rects": [
    [
@@ -487,7 +487,7 @@
    6,
    3,
    98,
-   19
+   20
   ],
   "fill": 15,
   "rings": [
@@ -504,7 +504,7 @@
  },
  "o2_plate_1": {
   "kind": "plate2",
-  "fillrow": 19,
+  "fillrow": 20,
   "bank": "y3_mjun",
   "rects": [
    [
@@ -519,7 +519,7 @@
    6,
    3,
    98,
-   19
+   20
   ],
   "fill": 15,
   "rings": [
@@ -536,7 +536,7 @@
  },
  "o2_plate_2": {
   "kind": "plate2",
-  "fillrow": 19,
+  "fillrow": 20,
   "bank": "y3_mjun",
   "rects": [
    [
@@ -551,7 +551,7 @@
    6,
    3,
    98,
-   19
+   20
   ],
   "fill": 15,
   "rings": [
@@ -568,7 +568,7 @@
  },
  "o2_plate_3": {
   "kind": "plate2",
-  "fillrow": 19,
+  "fillrow": 20,
   "bank": "y3_mjun",
   "rects": [
    [
@@ -583,7 +583,7 @@
    6,
    3,
    98,
-   19
+   20
   ],
   "fill": 15,
   "rings": [
