@@ -7,9 +7,11 @@ A spec's "sheet" entries (read by ui_labels.render):
    "cols": 4,                        page n of the bank sits at (128 * (n % cols), 128 * (n // cols))
    "items": [{"box": [x0, y0, x1, y1],   picture pixels rebuilt (end exclusive)
               "bg": "rows",               background: per row, from the pixel left of the box to the one right of
-                                          it ("cols": per column, above to below; "keep": leave it)
+                                          it ("cols": per column, above to below; "mode": the commonest colour
+                                          of the box, for a flat cell; "keep": leave it)
               "text": "Bullpen", "font": "ttf:...", "centre": [x, y] (default: the middle of the box),
               "colour": "#203040",        letter colour; the ink levels blend it into what is behind
+                                          ("crisp": true draws solid letters, which pack smaller)
               "rings": ["#ffffff"],       solid rings round the letters, innermost first (optional)
               "shadow": ["#7090b0", 1, 1]}]}   one copy of the letters and rings behind them, moved (optional)
 Colours are taken to the nearest colour the picture already uses, so nothing outside its palette appears.
@@ -22,6 +24,7 @@ import ui_textures as U
 import ui_type
 
 PAGE = U.PAGE
+ui_type.TTF.setdefault("din", ("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf", 0))
 
 
 def bank_by_pages(banks, prefix):
@@ -60,6 +63,9 @@ def draw(item, img, project=None):
         a, b = img[y0:y1, x0 - 1], img[y0:y1, x1]
         t = (np.arange(x1 - x0) + 1)[None, :, None] / (x1 - x0 + 1)
         img[y0:y1, x0:x1] = a[:, None, :] * (1 - t) + b[:, None, :] * t
+    elif bg == "mode":                                   # a flat cell: its commonest colour
+        cols, n = np.unique(img[y0:y1, x0:x1].reshape(-1, 3), axis=0, return_counts=True)
+        img[y0:y1, x0:x1] = cols[n.argmax()]
     elif bg == "cols":
         a, b = img[y0 - 1, x0:x1], img[y1, x0:x1]
         t = (np.arange(y1 - y0) + 1)[:, None, None] / (y1 - y0 + 1)
@@ -90,7 +96,10 @@ def draw(item, img, project=None):
     for mk, c in zip(masks[::-1], rings[::-1]):
         area[mk] = rgb(c)
     col = rgb(item["colour"])
-    a = level[..., None] if not rings else np.where(letters, 1.0, 0.0)[..., None]
+    if rings or item.get("crisp"):                      # solid letters (packs smaller on a compressed page)
+        a = np.where(level >= (0.5 if item.get("crisp") else 0.01), 1.0, 0.0)[..., None]
+    else:
+        a = level[..., None]
     area[:] = area * (1 - a) + col * a
 
 
