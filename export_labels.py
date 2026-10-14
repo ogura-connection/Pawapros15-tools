@@ -38,7 +38,7 @@ def built(spec):
 
 
 def labels_of(spec, banks):
-    """(bank, sprite id, English, style, font) for every label with text."""
+    """(repack group, sprite id, English, style, font) for every label with text."""
     for g in spec.get("repack", ()):
         b = L.bank_of(banks, g)
         rect = lambda p: [p.page, p.x0, p.y0, p.x1, p.y1]
@@ -53,7 +53,7 @@ def labels_of(spec, banks):
                 ids = sorted({n.rsplit("_", 1)[1] for n, ps in b["sprites"].items() for p in ps
                               if rect(p) == lab["from"] and (not lab.get("sprites") or n.rsplit("_", 1)[1] in lab["sprites"])})
             for sid in ids:
-                yield g["bank"], sid, text, style, font
+                yield g, sid, text, style, font
 
 
 def main():
@@ -66,11 +66,12 @@ def main():
         arc = os.path.basename(spec["arc"])
         d, banks, o, banks2 = built(spec)
         done = set()
-        for bank, sid, text, style, font in labels_of(spec, banks):
+        for g, sid, text, style, font in labels_of(spec, banks):
+            bank = g["bank"]
             key = (bank, sid)
             names = {}
             for tag, data, bs in (("ja", d, banks), ("en", o, banks2)):
-                b = L.bank_of(bs, {"bank": bank})
+                b = L.bank_of(bs, g)
                 ps = next((ps for n, ps in b["sprites"].items() if n.endswith("_" + sid)), None)
                 if not ps:
                     break
