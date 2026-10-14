@@ -34,20 +34,6 @@
 128
 ],
 [
-3,
-112,
-0,
-128,
-128
-],
-[
-4,
-0,
-72,
-128,
-80
-],
-[
 5,
 0,
 32,
@@ -142,15 +128,8 @@
 10,
 0,
 112,
-128,
+56,
 128
-],
-[
-10,
-112,
-40,
-128,
-112
 ],
 [
 11,
@@ -160,24 +139,10 @@
 128
 ],
 [
-11,
-104,
-48,
-128,
-80
-],
-[
 12,
 32,
 88,
 88,
-128
-],
-[
-12,
-120,
-80,
-128,
 128
 ],
 [
@@ -240,7 +205,7 @@
 17,
 0,
 72,
-112,
+104,
 96
 ],
 [
@@ -251,53 +216,11 @@
 112
 ],
 [
-17,
-48,
-120,
-128,
-128
-],
-[
-17,
-0,
-112,
-32,
-120
-],
-[
-17,
-40,
-112,
-48,
-120
-],
-[
 18,
 32,
 104,
 128,
 128
-],
-[
-18,
-0,
-72,
-72,
-80
-],
-[
-19,
-96,
-0,
-104,
-80
-],
-[
-19,
-24,
-72,
-96,
-80
 ]
 ],
 "labels": [
@@ -1407,29 +1330,29 @@
 {
 "sprite": "4b",
 "text": "Earn My Spirit",
-"style": "ren_f11_r22222",
-"font": "dc10g1b10",
+"style": "ren_f2_r",
+"font": "dc12g2b10",
 "valign": "centre"
 },
 {
 "sprite": "56",
 "text": "Until Vessel",
-"style": "ren_f11_r22222",
+"style": "ren_f2_r",
 "font": "dc14g2b10",
 "valign": "centre"
 },
 {
 "sprite": "57",
 "text": "Only",
-"style": "ren_f12_r2222",
-"font": "dc10g1b10",
+"style": "ren_f2_r",
+"font": "dc13g2b10",
 "valign": "centre"
 },
 {
 "sprite": "58",
 "text": "more",
-"style": "ren_f11_r28224",
-"font": "dc9g1b10",
+"style": "ren_f2_r4",
+"font": "dc11g2b10",
 "valign": "centre",
 "align": "left"
 },
@@ -1444,9 +1367,9 @@
 "sprites": [
 "34"
 ],
-"text": "Adjusts to keep",
+"text": "Adjusts to keep your",
 "style": "ren_f7_rff",
-"font": "dc11g2b10",
+"font": "dc10g1b10",
 "left": 2,
 "baseline": 23
 },
@@ -1461,10 +1384,10 @@
 "sprites": [
 "34"
 ],
-"text": "your",
+"text": "current",
 "style": "ren_f7_rff",
-"font": "dc11g2b10",
-"left": -25,
+"font": "dc10g1b10",
+"left": -19,
 "baseline": 23
 },
 {
@@ -1478,11 +1401,11 @@
 "sprites": [
 "34"
 ],
-"text": "current form steady.",
+"text": "form steady.",
 "style": "ren_f7_r66f",
-"font": "dc10g1b10",
+"font": "dc12g2b10",
 "left": 2,
-"baseline": 22
+"baseline": 23
 },
 {
 "from": [
@@ -1531,7 +1454,7 @@
 ],
 "text": "current form.",
 "style": "ren_f7_r66f",
-"font": "dc11g2b10",
+"font": "dc12g2b10",
 "left": 2,
 "baseline": 23
 },
@@ -1548,9 +1471,9 @@
 ],
 "text": "Skip practice and",
 "style": "ren_f7_r6f",
-"font": "dc11g2b10",
+"font": "dc12g2b10",
 "left": 4,
-"baseline": 22
+"baseline": 23
 },
 {
 "from": [
@@ -1565,9 +1488,9 @@
 ],
 "text": "rest",
 "style": "ren_f7_r6f",
-"font": "dc11g2b10",
-"left": -9,
-"baseline": 22
+"font": "dc12g2b10",
+"left": 0,
+"baseline": 23
 },
 {
 "from": [
@@ -1582,9 +1505,9 @@
 ],
 "text": "to ease fatigue.",
 "style": "ren_f7_r6f",
-"font": "dc11g2b10",
+"font": "dc12g2b10",
 "left": 4,
-"baseline": 22
+"baseline": 23
 }
 ]
 },
