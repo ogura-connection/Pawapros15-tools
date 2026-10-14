@@ -206,13 +206,11 @@
   "shadow": 0,
   "cut": 1
  },
- "o2_ff_r5_s0_c2": {
+ "o2_ff_r_s0_c2": {
   "fills": [
    15
   ],
-  "rings": [
-   5
-  ],
+  "rings": [],
   "shadow": 0,
   "cut": 2
  },
