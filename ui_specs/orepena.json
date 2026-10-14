@@ -805,7 +805,7 @@
      ],
      "text": "Standard",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -818,7 +818,7 @@
      ],
      "text": "Hide",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -831,7 +831,7 @@
      ],
      "text": "Weak",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -844,7 +844,7 @@
      ],
      "text": "Normal",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc13g2b20",
      "valign": "centre"
     },
     {
@@ -857,7 +857,7 @@
      ],
      "text": "Strong",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:15:0:1:0.45",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -870,7 +870,7 @@
      ],
      "text": "Very Strong",
      "style": "o_f6_rf1_s0_c3",
-     "font": "ttf:din:12:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -883,7 +883,7 @@
      ],
      "text": "Type",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:15:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -896,7 +896,7 @@
      ],
      "text": "Auto",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -909,7 +909,7 @@
      ],
      "text": "Hardest",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -922,7 +922,7 @@
      ],
      "text": "Off",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -935,7 +935,7 @@
      ],
      "text": "Easiest",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -948,7 +948,7 @@
      ],
      "text": "Sweet Spot",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:12:0:1:0.45",
+     "font": "dc9g1b20",
      "valign": "centre"
     },
     {
@@ -961,7 +961,7 @@
      ],
      "text": "Show",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -974,7 +974,7 @@
      ],
      "text": "Lock On",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -987,7 +987,7 @@
      ],
      "text": "On",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1000,7 +1000,7 @@
      ],
      "text": "Load",
      "style": "o_f11_r35_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1013,7 +1013,7 @@
      ],
      "text": "Save",
      "style": "o_f11_r31_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1026,7 +1026,7 @@
      ],
      "text": "COM Batting",
      "style": "o_f15_r23_s0_c3",
-     "font": "ttf:din:12:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1039,7 +1039,7 @@
      ],
      "text": "Show",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1052,7 +1052,7 @@
      ],
      "text": "Powerful",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc13g2b20",
      "valign": "centre"
     },
     {
@@ -1065,7 +1065,7 @@
      ],
      "text": "Hide",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1078,7 +1078,7 @@
      ],
      "text": "Quit",
      "style": "o_f11_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1091,7 +1091,7 @@
      ],
      "text": "Pitch Cursor",
      "style": "o_f15_r33_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1104,7 +1104,7 @@
      ],
      "text": "Controller",
      "style": "o_f15_r32_s0_c3",
-     "font": "ttf:din:13:0:1:0.45",
+     "font": "dc15g2b20",
      "valign": "centre"
     },
     {
@@ -1117,7 +1117,7 @@
      ],
      "text": "Rumble",
      "style": "o_f15_r24_s0_c3",
-     "font": "ttf:din:12:0:1:0.45",
+     "font": "dc10g1b20",
      "valign": "centre"
     },
     {
@@ -1130,7 +1130,7 @@
      ],
      "text": "Batting",
      "style": "o_f15_r63_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc10g1b20",
      "valign": "centre"
     },
     {
@@ -1143,7 +1143,7 @@
      ],
      "text": "Pitch Guide",
      "style": "o_f15_r11_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc13g2b20",
      "valign": "centre"
     },
     {
@@ -1156,7 +1156,7 @@
      ],
      "text": "Strike Zone",
      "style": "o_f15_r11_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1169,7 +1169,7 @@
      ],
      "text": "Difficulty",
      "style": "o_f15_r37_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc9g1b20",
      "valign": "centre"
     },
     {
@@ -1182,7 +1182,7 @@
      ],
      "text": "Steal",
      "style": "o_f15_r45_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc13g2b20",
      "valign": "centre"
     },
     {
@@ -1195,7 +1195,7 @@
      ],
      "text": "Manual",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1208,7 +1208,7 @@
      ],
      "text": "Meet Cursor",
      "style": "o_f15_r33_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -1221,7 +1221,7 @@
      ],
      "text": "COM Running",
      "style": "o_f15_r41_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1234,7 +1234,7 @@
      ],
      "text": "COM Pitching",
      "style": "o_f15_r12_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1247,7 +1247,7 @@
      ],
      "text": "COM Fielding",
      "style": "o_f15_r32_s0_c3",
-     "font": "ttf:din:12:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1260,7 +1260,7 @@
      ],
      "text": "Pitch / Bat Type",
      "style": "o_f15_r33_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1273,7 +1273,7 @@
      ],
      "text": "No Window",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:15:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1286,7 +1286,7 @@
      ],
      "text": "Window",
      "style": "o_f6_re1_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1299,7 +1299,7 @@
      ],
      "text": "Pitcher View",
      "style": "o_f6_r1_s0_c3",
-     "font": "ttf:din:13:0:1:0.45",
+     "font": "dc11g1b20",
      "valign": "centre"
     },
     {
@@ -1312,7 +1312,7 @@
      ],
      "text": "Pitching View",
      "style": "o_f15_r16_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc9g1b20",
      "valign": "centre"
     },
     {
@@ -1325,7 +1325,7 @@
      ],
      "text": "Batting View",
      "style": "o_f15_r616_s0_c3",
-     "font": "ttf:din:10:0:1:0.45",
+     "font": "dc10g1b20",
      "valign": "centre"
     },
     {
@@ -1338,7 +1338,7 @@
      ],
      "text": "Landing Spot",
      "style": "o_f15_r16_s0_c3",
-     "font": "ttf:din:10:0:1:0.45",
+     "font": "dc8g1b20",
      "valign": "centre"
     },
     {
@@ -1351,7 +1351,7 @@
      ],
      "text": "Close-Up Cam",
      "style": "o_f15_r11_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1364,7 +1364,7 @@
      ],
      "text": "Scene Replay",
      "style": "o_f15_r11_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1377,7 +1377,7 @@
      ],
      "text": "Player Data",
      "style": "o_f15_r11_s0_c3",
-     "font": "ttf:din:11:0:1:0.45",
+     "font": "dc12g1b20",
      "valign": "centre"
     },
     {
@@ -1390,7 +1390,7 @@
      ],
      "text": "Lock On",
      "style": "o_f15_r65_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1403,7 +1403,7 @@
      ],
      "text": "On",
      "style": "o_f15_r66b_s0_c3",
-     "font": "ttf:din:12:0:1:0.45",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -1416,7 +1416,7 @@
      ],
      "text": "Ball",
      "style": "o_f15_r6b_s0_c3",
-     "font": "ttf:din:15:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1429,7 +1429,7 @@
      ],
      "text": "Point",
      "style": "o_f15_r6b_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1442,7 +1442,7 @@
      ],
      "text": "Off",
      "style": "o_f15_r6b_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1455,7 +1455,7 @@
      ],
      "text": "Hide",
      "style": "o_f15_r666_s0_c3",
-     "font": "ttf:din:15:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1468,7 +1468,7 @@
      ],
      "text": "Aim",
      "style": "o_f15_r666_s0_c3",
-     "font": "ttf:din:15:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1481,7 +1481,7 @@
      ],
      "text": "Aim & Pitch",
      "style": "o_f15_r666_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -1494,7 +1494,7 @@
      ],
      "text": "Hide",
      "style": "o_f15_r666_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     },
     {
@@ -1507,7 +1507,7 @@
      ],
      "text": "Show",
      "style": "o_f15_r666_s0_c3",
-     "font": "ttf:din:16:0:1:0.45",
+     "font": "dc16g2b20",
      "valign": "centre"
     }
    ],
