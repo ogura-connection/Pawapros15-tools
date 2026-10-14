@@ -12684,10 +12684,10 @@
       "76"
      ],
      "text": "Slider",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc16g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 2,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -12718,10 +12718,10 @@
       "78"
      ],
      "text": "Fork",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc15g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 3,
-     "baseline": 16
+     "baseline": 14
     },
     {
      "from": [
@@ -12748,10 +12748,10 @@
       "79"
      ],
      "text": "Sinker",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc15g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 3,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -12842,10 +12842,10 @@
       "7d"
      ],
      "text": "Palm",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc16g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 4,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -12907,9 +12907,9 @@
      ],
      "text": "Screwball",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
+     "font": "nb14",
      "left": 2,
-     "baseline": 12
+     "baseline": 13
     },
     {
      "from": [
@@ -12924,7 +12924,7 @@
      ],
      "text": "Slow Curve",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb11",
+     "font": "nb12",
      "left": 2,
      "baseline": 12
     },
@@ -12954,7 +12954,7 @@
      ],
      "text": "Hard Slider",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb11",
+     "font": "nb12",
      "left": 3,
      "baseline": 12
     },
@@ -12971,9 +12971,9 @@
      ],
      "text": "Changeup",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
+     "font": "nb14",
      "left": 2,
-     "baseline": 12
+     "baseline": 13
     },
     {
      "from": [
@@ -13047,10 +13047,10 @@
       "87"
      ],
      "text": "Slurve",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc15g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 2,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -13064,10 +13064,10 @@
       "88"
      ],
      "text": "Cutter",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc16g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 1,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -13197,9 +13197,9 @@
      ],
      "text": "Yoshi Ball",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
+     "font": "nb14",
      "left": 2,
-     "baseline": 12
+     "baseline": 13
     },
     {
      "from": [
