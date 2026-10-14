@@ -1186,7 +1186,16 @@ def repack(group, d, bank, pages, patches, project=None):
         else:                                                    # keep the Japanese label as it is
             pg, x0, y0, x1, y1 = lab["from"]
             art.append((page(pg)[y0 + box[1]:y0 + box[3], x0 + box[0]:x0 + box[2]].copy(), None))
-    sizes = [(a.shape[1], a.shape[0]) for a, _ in art]
+    same = {}                                  # a label whose art another label already has: stored once
+    first = {}
+    for k, (lab, (a, b)) in enumerate(zip(labels, art)):
+        if "text" in lab and "pieces" not in lab and k not in sliced and not lab.get("empty"):
+            key = (a.shape, a.tobytes(), b)
+            if key in first:
+                same[k] = first[key]
+            else:
+                first[key] = k
+    sizes = [(1, 1) if k in same else (a.shape[1], a.shape[0]) for k, (a, _) in enumerate(art)]
     spare = any("sprite" in lab and len(mine) > opt(lab, "layers", 1) for lab, (mine, _) in zip(labels, old))
     placed = shelf_pack(sizes + [(4, 4)] + [(a.shape[1], a.shape[0]) for _, (a, _) in extra], areas,
                         tuple(group.get("gap", (1, 1))))
@@ -1195,7 +1204,7 @@ def repack(group, d, bank, pages, patches, project=None):
     rows = []
     for i, (lab, (mine, box)) in enumerate(zip(labels, old)):
         img, base = art[i]
-        pg, x, y = placed[i]
+        pg, x, y = placed[same.get(i, i)]
         h, w = img.shape
         page(pg)[y:y + h, x:x + w] = img
         if lab.get("empty"):                                     # its parts show the empty cell from now on
