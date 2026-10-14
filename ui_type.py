@@ -820,7 +820,7 @@ RENDER = {
     # the Success start screen (scs_titl.arc, y5_scs_tit_0). The three buttons: yellow letters in a thick brown
     # outline (palette 17), pink in dark magenta (18), light green in dark green (19), each on a white band
     # with a pale rim and a blue shadow
-    "titlestart": logo([6, 6, 6, 6, 7, 7], [2, 4, 7], 1, 13, 11, [9, 8], 2, 2),
+    "titlestart": logo([6], [2, 3, 4, 5], 1, 13, 11, [9, 8], 2, 2),
     "titleview": logo([12, 12, 12, 13, 14, 15], [4, 5, 6], 3, 10, 8, [2, 1], 2, 2),
     "titlelink": logo([6, 6, 6, 6, 5, 5], [2, 3, 4], 1, 14, 12, [9, 8], 2, 2),
     # New Game / Continue / the lists: white letters in a blue outline that is cast down and to the right (22)
