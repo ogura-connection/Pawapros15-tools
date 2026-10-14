@@ -278,6 +278,14 @@ Company and club teams: the name romanised, the business translated (ぴちぴ�
 | 装備 | equip, equipment | never "gear": that is the training gear |
 | 達人 (item names) | Pro | Pro Bat, Pro Glove |
 
+## Eikan Nine (set for the bulk translation, 2026-10-13)
+
+- The student manager addresses the player as "Kantoku". The boy (僕, 〜ッス) is an eager junior: short sentences, "sir" now and then. The girl (私, 〜ですね) is bright and tidy. A line without a marker is written so either could say it.
+- Narration is the kantoku in the first person; result lines have no subject ("All players' grades went up.").
+- Panels: White / Blue / Red / Green / Yellow Panel, Schedule Panel. 進行アイコン progress icon, 戦術アイコン tactic icon, 特訓 Special Training, 世間の評判 public reputation, 信頼度 trust, 新入部員 new recruits, 練習試合 practice game.
+- School reputation ranks: 弱小 Weak, そこそこ Fair, 中堅 Mid, 強豪 Good, 名門 Top. Prefectures romanised without the suffix; 北北海道 N. Hokkaido, 東東京 E. Tokyo.
+- A line holds 36 letters. The whole script must fit the bytes of the Japanese (the build checks).
+
 ## Limits set by the game
 
 - 34 letters per line. Speech bubbles and the status-screen message box hold 3 lines; the letterbox
@@ -334,6 +342,7 @@ Words on screen (Success Mode), with where the lettering comes from:
 | 巨人 中日 広島 ヤクルト 横浜 阪神 楽天 日本ハム 西武 オリックス ロッテ ソフトバンク | Giants, Chunichi, Hiroshima, Yakult, Yokohama, Hanshin, Rakuten, Nippon-Ham, Seibu, Orix, Lotte, SoftBank | the Japanese short forms, as in the glossary |
 | パワフルズ カイザース キャットハンズ やんきーズ バルカンズ バスターズ | Powerfuls, Kaisers, Cathands, Yankiis, Vulcans, Busters | |
 | 役職 / 平社員 / 係長 / 課長 | Post / Rank & File / Kakaricho / Kacho | Arial Rounded Bold, in the three colourings of the Japanese plates |
+| 対戦 サクセス マイライフ ホームラン競争 アレンジ データあれこれ サウンド リモパワ ペナント 野球教室 応援曲 (main menu buttons) | Exhibition, Success, My Life, Home Run Derby, Arrange, My Data, Sound, Remo-Pawa, Pennant, Baseball School, Cheer Songs | Arial Rounded Bold in each button's own colours (`SMDL_TOP.rom`); My Data as in MLB Power Pros |
 
 Practice menu (scs_rens.arc), tag font: 筋力 Weights, 打撃 Batting, 走塁 Running, 守備 Fielding, 精神 Mental,
 スタミナ Stamina, 球速 Velocity, 変化球 Breaking, 走り込み Roadwork, コントロール Control, 投球 Pitching,
