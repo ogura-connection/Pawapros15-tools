@@ -132,7 +132,7 @@
      "font": "ttf:rounded:16:0:1.0:0.25",
      "slices": true,
      "slice_width": 104,
-     "dy": 2,
+     "dy": 3,
      "palettes": [
       43
      ]
@@ -551,7 +551,7 @@
      "style": "v_p66_a",
      "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 23,
-     "left": -53
+     "left": -54
     },
     {
      "from": [
@@ -565,7 +565,7 @@
      "style": "v_p66_b",
      "font": "ttf:rounded:14:0:1.0:0.25",
      "baseline": 23,
-     "left": 147
+     "left": 146
     },
     {
      "from": [
@@ -730,7 +730,7 @@
      "font": "ttf:rounded:16:0:1.0:0.25",
      "slices": true,
      "slice_width": 128,
-     "dy": 0,
+     "dy": 1,
      "palettes": [
       87
      ]
@@ -811,7 +811,7 @@
      "font": "ttf:rounded:16:0:1.0:0.25",
      "slices": true,
      "slice_width": 128,
-     "dy": 2
+     "dy": 3
     }
    ],
    "name": "p27"
@@ -928,9 +928,9 @@
      ],
      "text": "PA Announcer",
      "style": "v_pa102_a",
-     "font": "ttf:rounded:12:0:1.0:0.25",
-     "baseline": 20,
-     "left": -16
+     "font": "ttf:rounded:11:0:0.9:0.25",
+     "baseline": 19,
+     "left": 1
     },
     {
      "from": [
@@ -942,9 +942,9 @@
      ],
      "text": "PA Announcer",
      "style": "v_pa102_b",
-     "font": "ttf:rounded:12:0:1.0:0.25",
-     "baseline": 20,
-     "left": 16
+     "font": "ttf:rounded:11:0:0.9:0.25",
+     "baseline": 19,
+     "left": 33
     },
     {
      "from": [
