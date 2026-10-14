@@ -17,9 +17,9 @@
 183132	294b	, 
 183150	bd9a	:
 183160	dfa2	I'm in the starting lineup!
-183260	1885	Your best matchup is
+183260	1885	Your best match is
 183290	a179	.
-183298	d21b	I'll start you only in that game.
+183298	d21b	I'll start you only in that one.
 183326	558f	Be well prepared!
 183416	1a31	 game only:
 183434	6ce8	I'll be in the starting lineup.
@@ -37,7 +37,7 @@
 183808	056b	What could it be?
 183904	0616	You'll start the season on the
 183932	ec7f	farm team, as it turns out...
-183954	2d10	Naturally, your goal from here is
+183954	2d10	Naturally, your goal now is
 183984	c7c3	promotion to the first team.
 184004	69f3	So first, I want to hear
 184030	847f	your own view.
@@ -55,7 +55,7 @@
 184378	04f8	Yeah, I think so too.
 184402	2ad3	First, 
 184418	eba9	
-184426	0ae8	needs to get up to a solid level.
+184426	0ae8	needs to reach a solid level.
 184456	cab0	If you can't, 
 184476	7b63	forget about
 184490	9fcc	promotion.
@@ -100,7 +100,7 @@
 190104	0aba	My Team Requests
 190120	30b0	 are
 190134	405b	paying off, man!
-190164	8579	Everyone's getting stronger fast.
+190164	8579	Everyone's improving so fast.
 190194	fa46	It's all down to player-manager
 190220	9e07	's work, man!
 190250	a5f6	! I'm gonna watch your
@@ -118,7 +118,7 @@
 190864	0aba	 My Team Requests
 190894	3d32	are helping farm pitcher
 190928	cb1c	 is growing fast.
-190950	c210	When he's up to first-team level,
+190950	c210	Once he's at first-team level,
 190978	9436	please give him a chance.
 191014	3f7a	 is better, but
 191046	b251	 isn't bad either.
@@ -126,8 +126,8 @@
 191088	a3ea	no one to match 
 191100	fd20	's
 191110	85b2	expectations yet.
-191144	5dab	There seem to be no farm pitchers
-191172	6484	who meet such expectations.
+191144	5dab	It seems no farm pitchers
+191172	6484	meet such expectations.
 191236	a3ea	Currently 
 191248	fd20	's
 191260	0aba	My Team Requests
@@ -135,7 +135,7 @@
 191306	c01b	Notably 
 191324	9b58	
 191334	8b38	has been growing.
-191352	c210	When he's up to first-team level,
+191352	c210	Once he's at first-team level,
 191380	9436	please give him a chance.
 191416	8f10	A farm pitcher is looking sharp.
 191456	c1a4	 is quite something.
@@ -143,8 +143,8 @@
 191498	a3ea	no one to match 
 191510	fd20	's
 191520	85b2	expectations yet.
-191554	4561	There seem to be no farm pitchers
-191576	6484	who meet Kantoku's hopes.
+191554	4561	It seems no farm pitchers
+191576	6484	meet Kantoku's hopes.
 192154	f350	Ah! 
 192166	a41f	 Kantoku!
 192176	aec7	Do you have a moment?
@@ -155,7 +155,7 @@
 192310	0aba	 My Team Requests
 192340	02e9	are helping farm fielder
 192374	cb1c	 is growing fast.
-192396	c210	When he's up to first-team level,
+192396	c210	Once he's at first-team level,
 192424	9436	please give him a chance.
 192460	3f7a	 is better, but
 192492	b251	 isn't bad either.
@@ -163,8 +163,8 @@
 192534	a3ea	no one to match 
 192546	fd20	's
 192556	85b2	expectations yet.
-192590	f079	There seem to be no farm fielders
-192618	6484	who meet such expectations.
+192590	f079	It seems no farm fielders
+192618	6484	meet such expectations.
 192682	a3ea	Currently 
 192694	fd20	's
 192706	0aba	My Team Requests
@@ -172,7 +172,7 @@
 192752	c01b	Notably 
 192770	9b58	
 192780	8b38	has been growing.
-192798	c210	When he's up to first-team level,
+192798	c210	Once he's at first-team level,
 192826	9436	please give him a chance.
 192862	f379	A farm fielder is looking sharp.
 192902	c1a4	 is quite something.
@@ -180,14 +180,14 @@
 192944	a3ea	no one to match 
 192956	fd20	's
 192966	85b2	expectations yet.
-193000	9e2d	There seem to be no farm fielders
-193022	6484	who meet Kantoku's hopes.
+193000	9e2d	It seems no farm fielders
+193022	6484	meet Kantoku's hopes.
 193052	25b8	Playing manager event test.
 193094	c403	  Title hopes gone, ended
 193120	080a	  At end of league title event
 193148	922d	  Japan champions
 193236	25b8	Playing manager event test.
-193278	9aed	  League title (lost Japan Series
+193278	9aed	  League win (lost Japan Series
 193306	bc21	  Pacific playoffs loss
 193330	c26c	  Out during season (no chance
 193456	f9e1	Done greeting the club staff...
@@ -216,7 +216,7 @@
 194076	e2b9	・
 194086	e2b9	・
 194096	e2b9	・
-194104	3c48	that just because you've become a
+194104	3c48	that just because you became a
 194128	3101	playing manager,
 194148	803e	you forgot all about me,
 194170	771a	did you, man?
@@ -247,7 +247,7 @@
 194782	443a	No big deal, just pay me back
 194812	59c9	by playing me in games, man.
 194844	6996	Ah, 
-194856	f11c	. So you're here.
+194856	f11c	. You're here.
 194872	bb66	You, a kantoku? You've come far!
 194902	cfa1	I've known you since you were a
 194930	0852	rookie, so introducing myself
@@ -258,11 +258,11 @@
 195010	c8e3	.
 195038	59b3	You just became player-manager,
 195068	efb4	so there may be things to check.
-195096	d5a2	Want the game explained in detail?
+195096	d5a2	Want the game explained in full?
 195126	846b	  No, I'm fine
 195148	4598	  Yes, please
 195216	b5a7	All right, then.
-195238	35e3	I'll be expecting your first win.
+195238	35e3	I'm expecting your first win.
 195266	7c76	If anything comes up, don't
 195288	e08d	hesitate to talk to me.
 195332	7139	With the team's title in sight,
@@ -275,9 +275,9 @@
 195504	6d15	a playing manager.
 195532	86f9	  Mm-hm, and then?
 195554	4a4b	  Got it
-195606	2171	The title is the top goal
+195606	2171	Winning is the top goal
 195636	9913	and also the bare minimum.
-195658	3e0d	Once your title chances are gone,
+195658	3e0d	Once title chances are gone,
 195684	fc62	your role as playing manager
 195708	3eb1	ends too.
 195724	b620	Whether you lead the team to a
@@ -292,13 +292,13 @@
 195968	994b	There'll be times you can't win.
 195994	8d9c	Often your own ability and calls
 196022	88d4	make the difference.
-196040	b95d	Under your playing-manager calls,
+196040	b95d	Under your playing-manager lead,
 196070	e8fb	the team will fight with you.
 196094	9723	Well, anyway, it's your life.
 196124	498c	Live so you have no regrets.
 196160	db0a	Oh right, one more thing...
 196188	8e38	If the team's chance of winning
-196212	9370	the title is gone, it ends there.
+196212	9370	the title is gone, it ends here.
 196240	43cf	By the owner's request, you're
 196258	eafe	no longer a playing
 196286	281a	manager at that point.
@@ -310,11 +310,11 @@
 196536	4ae0	forever.
 196562	faed	Truly, well done...
 196586	0e7c	Oh, wait.
-196598	0281	There's one more important thing.
+196598	0281	One more important thing.
 196626	527c	With your title chances gone,
 196654	e615	we no longer need a playing
 196678	a707	manager.
-196696	d342	Sorry, but this is where it ends!
+196696	d342	Sorry, but it ends here!
 196718	9164	Next time, lead the team to a
 196746	bb3e	title and aim to be a true
 196774	5f6a	playing manager!
@@ -327,18 +327,18 @@
 196950	4ae0	forever.
 196976	faed	Truly, well done...
 197000	0e7c	Oh, wait.
-197012	0281	There's one more important thing.
+197012	0281	One more important thing.
 197040	527c	With your title chances gone,
 197068	e615	we no longer need a playing
 197092	a707	manager.
-197110	d342	Sorry, but this is where it ends!
+197110	d342	Sorry, but it ends here!
 197132	9164	Next time, lead the team to a
 197160	bb3e	title and aim to be a true
 197188	5f6a	playing manager!
 197234	f206	 title is yours, but...
 197256	b90b	You narrowly lost the Japan
 197284	6d51	Series.
-197300	54fc	Still, you reached the title goal.
+197300	54fc	Still, you met the title goal.
 197328	fc62	Living up to your title of
 197352	e5bf	playing manager,
 197368	67ce	you led the team to the title!
@@ -348,11 +348,11 @@
 197462	4ae0	forever.
 197488	faed	Truly, well done...
 197512	0e7c	Oh, wait.
-197524	0281	There's one more important thing.
+197524	0281	One more important thing.
 197552	46dd	That's it for this time, but
 197574	b190	next time, take the team to
 197600	e532	Japan champions! So close...
-197628	e4b7	We agreed on it in the contract...
+197628	e4b7	It was agreed in the contract...
 197682	4b12	 title,
 197698	a9ea	and the Japan Series! Superb!
 197728	fc62	True to your title of playing
@@ -364,8 +364,8 @@
 197874	4ae0	forever.
 197900	faed	Truly, well done...
 197924	0e7c	Oh, wait.
-197936	0281	There's one more important thing.
-197964	5769	Sorry, but this is where it ends.
+197936	0281	One more important thing.
+197964	5769	Sorry, but it ends here.
 197992	e4b7	It's what the contract says...
 198018	f8b0	The next kantoku has already
 198038	3811	been chosen...
@@ -392,7 +392,7 @@
 199016	963e	  Golf invite
 199038	93e6	  Bat artisan 「Shigemasa」
 199062	6f2d	  Kohai night out
-199184	9a9a	  Kids' Day gift
+199184	9a9a	  Kids' Day kit
 199212	c4fb	  Tanabata gift
 199240	aa26	  Owner 3-gm set
 199368	c630	  Sudden trade
@@ -466,7 +466,7 @@
 202246	ba2c	-san invited me out.
 202266	d734	  Yes, I'll come along
 202286	42b9	  I'd better not
-202326	fbad	OK, let's go then!
+202326	fbad	OK, let's go!
 202366	82a3	Okay, see you around.
 202478	a9fa	-san and I had a great time
 202498	ccf2	at a place nearby!
@@ -477,7 +477,7 @@
 202828	afe5	Let's go blow off some steam!
 202882	f5b6	Hey 
 202894	801e	!
-202902	3edc	Seems your form's been bad lately.
+202902	3edc	Your form seems bad lately.
 202932	6497	How about it?
 202944	9107	Want to go out and blow off
 202970	daa6	some steam?
@@ -508,14 +508,14 @@
 203840	6889	Mama, let me introduce someone.
 203862	5b1b	A junior of mine, 
 203874	c8e3	.
-203884	552c	He'll be dropping by from time to
+203884	552c	He'll drop by from time to
 203914	894c	time, so take good care of him.
 203944	8eb0	Likewise, pleased to meet you!
 203968	f238	I'm 
 203978	db03	Akemi.
 203988	af2f	
 203998	c821	...Oh my?
-204014	c6a0	Somehow, this feels like deja vu.
+204014	c6a0	Somehow this feels like deja vu.
 204050	dbd3	Ha ha, lots of ballplayers come
 204076	a8ea	here, after all.
 204110	5379	-chan brings them in,
@@ -639,7 +639,7 @@
 208216	934e	Please don't be put off, and
 208244	c1a4	work with me again next year.
 208274	dce4	...I see.
-208290	60e7	Sorry I fell short of your hopes.
+208290	60e7	Sorry I let your hopes down.
 208318	c22b	So I wasn't up to it.
 208388	2d22	Thank you, good work today.
 208420	5f36	Um, I'm sorry I wasn't much
@@ -649,7 +649,7 @@
 208534	fb09	  Try harder
 208598	43ae	Y-Yes, of course!
 208618	39df	No matter how hard I tried,
-208648	8572	with a record like that...
+208648	8572	with that poor record...
 208664	996e	Ah, no.
 208678	463c	Well, excuse me!
 208708	4c1f	...
@@ -1122,7 +1122,7 @@
 229508	5678	Oh! 
 229520	801e	!
 229528	e8a1	Nice one, All-Star MVP!
-229556	8cfc	I'll go for it next year too, man!
+229556	8cfc	Going for it next year too, man!
 229588	0928	Ah! 
 229600	961d	-san!
 229610	2b0f	I'm going for All-Star MVP
@@ -1149,9 +1149,9 @@
 230404	e939	Want me to teach you that?
 230424	fb31	Oh, all right...
 230442	c69f	Grip it like this, fingers so.
-230464	c6fe	...then swing your arm like this.
+230464	c6fe	...then swing your arm like so.
 230492	263c	That's the idea.
-230506	328c	Well, you can't get it overnight,
+230506	328c	You can't get it overnight,
 230534	1f2c	so practice until it's yours.
 230586	d198	 learned!
 230676	78ac	What do you need?
@@ -1171,7 +1171,7 @@
 231060	2ec0	Want me to teach you that?
 231082	a722	Sure, but...
 231102	c69f	Grip it like this, fingers so.
-231124	c6fe	...then swing your arm like this.
+231124	c6fe	...then swing your arm like so.
 231152	d3f5	Something like that.
 231190	d198	 learned!
 231304	eed2	I slipped by unnoticed.
@@ -1202,12 +1202,12 @@
 232672	1e0f	What you do from here matters!
 232700	17de	Keep it up!
 232720	b520	Hey, in the All-Star fan vote
-232748	2719	update: you got No. 
+232748	2719	update: you're #
 232770	ca3c	!
 232814	634c	A package arrived from a fan!
 232954	634c	A package arrived from a fan!
 233032	40e3	「I wish you'd be picked for the
-233062	bb97	  All-Star Game, so I mail a vote
+233062	bb97	  All-Star Game so I mail a vote
 233090	6483	  postcard every single day.
 233104	d74c	  I pray you finish #1 in the
 233132	d90f	  fan vote.
@@ -1215,7 +1215,7 @@
 233192	341f	「I'm rooting for you!!!
 233214	34a4	  Please win the #1 spot in
 233236	53f3	  the fan vote!!!」
-233278	adad	「Whatever it takes, finish #1 in
+233278	adad	「At all costs, finish #1 in
 233306	a0d5	  the fan vote and show us great
 233330	3a59	  play at the All-Star Game」
 233372	c54e	「I'll be at the All-Star Game,
@@ -1230,7 +1230,7 @@
 233656	adea	It's for the All-Star fan vote,
 233682	d16d	so you can vote for yourself!
 233706	08c8	I vote every day too, man!
-233734	c4ae	Mash that vote button! Mash! Mash!
+233734	c4ae	Mash that vote button! Mash!
 233762	0a13	Like that, you know.
 233778	81c8	Well, you do your best too, man.
 233840	839c	Foul play has come to light in
@@ -1258,7 +1258,7 @@
 234450	eb2d	You sure pulled that off.
 234478	e5c6	Did you pull some strings,
 234508	5475	honestly!
-234522	8671	Well, now that you're in, it makes
+234522	8671	Well, now you're in, it makes
 234552	6695	no difference whether it was the
 234582	cc31	fan vote or a manager's pick!
 234594	99d3	Play your game to the fullest
@@ -1289,7 +1289,7 @@
 235256	c110	champion - which will it be?!
 235282	5d25	I can hardly wait!!
 235310	96e9	Let's look forward to tomorrow!
-235360	59c5	In today's Konami Cup Asia Series
+235360	59c5	Today's Konami Cup Asia Series
 235390	e756	final,
 235444	a142	 beat 
 235460	eba9	
@@ -1304,7 +1304,7 @@
 235690	835b	It ended in a draw.
 235714	9216	Which team will be Asian
 235742	c110	champions?!
-235768	f721	Let's look forward to a thriller!
+235768	f721	Let's expect a thriller!
 235880	9270	Won the Asia Series in
 235898	ea1f	great style!
 235940	a5a6	Our team, 
@@ -1422,8 +1422,8 @@
 239446	979c	But next year,
 239462	8400	who knows what will happen,
 239486	4fad	so watch yourself!
-239608	56fa	How's it feel up on the platform?
-239668	56fa	How's it feel up on the platform?
+239608	56fa	How's it feel up there?
+239668	56fa	How's it feel up there?
 239710	70b6	How does your first win taste?
 239746	752d	How does your first save taste?
 239776	b2c2	Well, if you're satisfied with
@@ -1437,7 +1437,7 @@
 239930	923d	Tetsu 
 239940	4275	is fine!
 239956	509d	Nice to meet you!
-239970	2f1d	I've been watching players for 20
+239970	2f1d	I've watched players for 20
 239992	6224	years, and you've got something
 240022	47e4	that shines!
 240046	b245	The day you become the face of
@@ -1508,9 +1508,9 @@
 241870	d836	my birthday no. 
 241890	f7e7	
 241906	ae6c	!
-241920	d91b	My family has come to cheer, too!
+241920	d91b	My family came to cheer, too!
 241950	20b7	I'll show them something good
-241980	55f9	and win this game no matter what!
+241980	55f9	and win today no matter what!
 242006	1e51	Please help me out!
 242030	413f	I'm counting on you!
 242280	7169	Glad the team won!
@@ -1531,14 +1531,14 @@
 242770	e756	with a win...
 242822	aa5d	Please leave me alone today...
 242850	5f1f	I'll spend it alone, sadly...
-242884	a888	I'm off to dinner with my family,
+242884	a888	I'm off to eat with my family,
 242912	f8eb	and I can't face them...
 242944	a04c	I couldn't celebrate my birthday
 242962	e756	with a win...
 243014	c768	Leave me alone today...
 243040	ea87	I want to be alone and sulk.
-243074	ebdf	I'm off to dinner with my family,
-243102	a27c	but I can't face them, damn it...
+243074	ebdf	I'm off to eat with my family,
+243102	a27c	but I can't face them, dammit...
 243132	6bce	See ya...
 243232	a04c	I couldn't celebrate my birthday
 243250	e756	with a win...
@@ -1546,7 +1546,7 @@
 243306	85c9	which makes it awkward, really.
 243358	aa5d	Please leave me alone today...
 243386	5d02	I'd like to be alone and sulk...
-243422	a888	I'm off to dinner with my family,
+243422	a888	I'm off to eat with my family,
 243450	f8eb	and I can't face them...
 243476	a04c	I couldn't celebrate my birthday
 243494	e756	with a win...
@@ -1554,8 +1554,8 @@
 243550	9fcc	which makes it awkward, damn it.
 243602	c768	Leave me alone today...
 243628	1055	I want to be alone and sulk...
-243664	ebdf	I'm off to dinner with my family,
-243692	ed9c	but I can't face them, damn it...
+243664	ebdf	I'm off to eat with my family,
+243692	ed9c	but I can't face them, dammit...
 243722	6bce	See ya...
 243778	6a81	Well done!
 243794	fd7d	A birthday win!
@@ -1578,7 +1578,7 @@
 244558	9518	heads or tails of it,
 244580	0b56	so you can have it, man.
 244598	bc24	Be grateful, man.
-244626	0dd8	It says 「Original Ball Secrets」
+244626	0dd8	It says「Original Ball Secrets」
 244654	77eb	on the cover...
 244676	aad3	  Read it
 244692	e798	  No thanks
@@ -1598,7 +1598,7 @@
 245332	a8f4	　
 245350	d4ee	  Fastball
 245468	e3d0	Original Ball mastered!
-245514	53b8	Well, it looks like a tough book,
+245514	53b8	Well, looks like a tough book,
 245542	c993	Okay, 
 245552	65c1	I'll get rid of it for you, man.
 245688	34c5	Hey, you're at it!
@@ -1618,12 +1618,12 @@
 246020	95d7	To return the favor,
 246044	29ba	about your current 
 246074	d4df	 - how about
-246098	dd12	turning it into a faster-breaking 
+246098	dd12	turning it into faster-breaking 
 246134	99a2	turning it into a late-breaking 
-246170	4316	turning it into a change-of-pace 
-246206	dd12	turning it into a faster-breaking 
-246242	dd12	turning it into a faster-breaking 
-246270	5b77	turning it into a faster-dropping 
+246170	4316	turning it into change-of-pace 
+246206	dd12	turning it into faster-breaking 
+246242	dd12	turning it into faster-breaking 
+246270	5b77	turning it into faster-dropping 
 246304	de3d	 instead?
 246312	0e60	Want to try it?
 246346	7570	  Yes, teach me!!!
@@ -1671,12 +1671,12 @@
 247448	1520	To return the favor, 
 247478	f24d	-san, your current 
 247508	a0cb	 - how about
-247530	dd12	turning it into a faster-breaking 
+247530	dd12	turning it into faster-breaking 
 247566	99a2	turning it into a late-breaking 
-247602	4316	turning it into a change-of-pace 
-247638	dd12	turning it into a faster-breaking 
-247674	dd12	turning it into a faster-breaking 
-247702	5b77	turning it into a faster-dropping 
+247602	4316	turning it into change-of-pace 
+247638	dd12	turning it into faster-breaking 
+247674	dd12	turning it into faster-breaking 
+247702	5b77	turning it into faster-dropping 
 247736	de3d	 instead?
 247744	93a5	Care to try it?
 247780	7570	  Yes, teach me!!!
@@ -1729,7 +1729,7 @@
 249252	78ac	See you.
 249320	eb65	I'm the 
 249332	5637	
-249340	4e5a	 dorm manager
+249340	4e5a	 dorm head
 249350	eba9	
 249358	6e41	and my name is: 
 249372	c8e3	.
@@ -1737,7 +1737,7 @@
 249442	bfec	You don't live in the dorm,
 249470	51d8	but fate brought us together.
 249496	6d23	Come to me with anything.
-249540	0ec2	In pro year no. 
+249540	0ec2	In pro year 
 249568	7777	 now.
 249610	ad0c	Time flies...
 249638	4e5a	As dorm manager,
@@ -1753,7 +1753,7 @@
 249872	6473	I expect even more from you!
 249904	cb78	This is your
 249920	cd49	year number 
-249942	7777	 in Japan.
+249942	7777	 here.
 249982	ad0c	Time flies...
 250012	4e5a	As dorm manager,
 250022	223a	 I care about
@@ -1799,7 +1799,7 @@
 251064	2b92	The way you've handled
 251076	3f4c	being a playing manager
 251104	4965	has been pretty good, man.
-251124	f918	You've even got some presence now.
+251124	f918	You've even got presence now.
 251152	42a2	Of course, just because
 251166	11dc	you're a playing manager
 251194	9b11	doesn't mean things between
@@ -1942,7 +1942,7 @@
 255730	8609	Throwing form?
 255748	929b	Well, you start like this.
 255776	9e0d	Here it goes like this, and keep
-255804	8708	this in mind, then throw, like so.
+255804	8708	this in mind, and throw like so.
 255832	4311	Yeah, yeah,
 255846	50d5	that's it,
 255860	3679	Looking good!
@@ -1963,13 +1963,13 @@
 256242	b890	Pacing your stamina?
 256258	134f	Well,
 256270	a81c	in this kind of situation, about
-256298	165f	this much. In that one, like this.
+256298	165f	this much. In that one, like so.
 256328	4311	Yeah, yeah,
 256342	564d	that's how it is.
 256384	ac06	Control advice?
 256404	f701	First,
 256416	d59c	you start like this and keep
-256444	5443	this in mind, here like this, and
+256444	5443	this in mind, here like so, and
 256474	54f3	release it like this.
 256502	4311	Yeah, yeah,
 256516	50d5	that's it,
@@ -2006,7 +2006,7 @@
 257566	e3af	Throwing form?
 257588	fc03	Well, it goes like this.
 257610	9e0d	Here it goes like this, and keep
-257638	8708	this in mind, then throw, like so.
+257638	8708	this in mind, and throw like so.
 257666	7f3b	Yes, that's it.
 257688	9c74	I think that looks good!
 257726	9c75	Baserunning advice?
@@ -2024,13 +2024,13 @@
 258068	079d	Pacing your stamina?
 258090	134f	Well,
 258102	a81c	in this kind of situation, about
-258130	165f	this much. In that one, like this.
+258130	165f	this much. In that one, like so.
 258160	7f3b	Yes, that's it.
 258182	5d2f	Exactly like that.
 258216	36b9	Control advice?
 258240	f701	First,
 258252	d59c	you start like this and keep
-258280	5443	this in mind, here like this, and
+258280	5443	this in mind, here like so, and
 258310	54f3	release it like this.
 258338	7f3b	Yes, that's it.
 258360	9c74	I think that looks good!
@@ -2111,21 +2111,21 @@
 261100	fa37	What?!
 261112	17d2	You won't take it on?
 261130	c2d5	And after I brought you this...
-261156	dcd7	Well, if you don't want it, fine.
+261156	dcd7	If you don't want it, fine.
 261184	49ce	Forget I brought it up.
 261224	16c7	Okay!
 261238	8d91	 as well. I'll train you
 261254	2625	to cover it!
 261296	a782	Fielding drills done!
 261338	ef87	You've got the sense for it!
-261360	b5ef	With those moves, you'll be fine.
+261360	b5ef	With those moves you'll be fine.
 261414	8d91	 is now one you can
 261430	4259	play!
 261444	9fb9	Of course, your main position:
 261488	7484	 will always feel easier.
-261514	9777	But with effort, there's plenty of
+261514	9777	But with work, there's plenty of
 261544	87b1	room to improve. Work hard.
-261884	8ef7	What about January solo training?
+261884	8ef7	How about January solo training?
 261912	931b	  Invite someone
 261928	f5e9	  No solo training
 261990	fe29	Who will you invite?
@@ -2191,7 +2191,7 @@
 264454	e4b5	I don't need this, man,
 264478	0ffb	so you can have it.
 264518	c9f7	Take good care of it, man.
-264542	76aa	Looks like you don't need it, man.
+264542	76aa	Seems you don't need it, man.
 264566	b9a3	I'll go give it to someone else.
 264674	961d	-san!
 264710	33df	Hm?
@@ -2205,7 +2205,7 @@
 264970	6042	He's another
 264982	0fb3	class, man. Class.
 264998	61d7	Aww,
-265014	62be	someday I wanna get close to him,
+265014	62be	someday I wanna catch up to him,
 265042	1f83	for real, man.
 265086	1283	Tomorrow's a rest day, so
 265108	f43a	rest up well and get ready
@@ -2227,7 +2227,7 @@
 265480	6393	polish your fastball more!
 265500	d683	Why do nothing but breaking
 265528	1797	balls?
-265540	f4e7	 You've got plenty already,
+265540	f4e7	 You've got plenty,
 265554	3fd7	haven't you?
 265570	ec70	Don't lean on breaking balls
 265596	705e	while you're young. You should
@@ -2301,7 +2301,7 @@
 267720	e0c8	How awful, awful, aaawful!
 267780	0ef3	The fans hate me...
 267818	b2bc	Yes! An autograph! An autograph!
-267866	fca8	Oh! Over there, it's
+267866	fca8	Oh! Look, it's
 267890	b840	!
 267902	e89c	Give back my card and pen!
 267924	2e87	Hurry up!!!
@@ -2323,7 +2323,7 @@
 268414	b51a	Well, 
 268428	dbd2	time to practice.
 268458	50c7	Yes! An autograph! An autograph!
-268492	fca8	Oh! Over there, it's
+268492	fca8	Oh! Look, it's
 268516	b840	!
 268532	e438	But really, 
 268550	d1e7	-san's
@@ -2409,7 +2409,7 @@
 270714	8d90	If you insist, so be it.
 270742	b6bf	But remember this.
 270770	0bac	Sooner or later, the time to
-270798	46eb	rethink your pitching style comes.
+270798	46eb	rethink your style will come.
 270818	e18d	Misjudge that moment, and
 270840	b5b2	your time as a pro will be
 270868	c117	that much shorter.
@@ -2424,7 +2424,7 @@
 271198	6d5e	practice properly, and yet.
 271228	83bc	Changing your natural pitching
 271254	85ea	style seems hard...
-271294	8c93	Failed to become a Crafty pitcher.
+271294	8c93	Didn't become a Crafty pitcher.
 271330	00bd	You ought to start thinking
 271356	1181	about hitting the ball farther,
 271384	e4a8	too.
@@ -2433,7 +2433,7 @@
 271460	55a9	form?
 271472	9733	  I'll take it on!
 271492	ebda	  Not changing
-271536	b77c	Good! So you're in.
+271536	b77c	Good! You're in.
 271564	0514	Let's start right away.
 271584	e2b9	・
 271594	e2b9	・
@@ -2545,7 +2545,7 @@
 274734	f2aa	「
 274750	9b10	 fans
 274762	5b08	 all, all, all, all of us
-274792	c879	 are waiting for you to return.」
+274792	c879	 are waiting for your return.」
 274836	9858	「I went to the game.
 274860	a73d	 But you weren't there.
 274882	9224	 You're seeing the doctor
@@ -2628,7 +2628,7 @@
 278228	bafb	 baseball auction,
 278248	b2b6	from what I hear.
 278272	ebf7	Your first pro home run ball
-278300	aed4	is up at the
+278300	aed4	is up at
 278322	a0c3	 baseball
 278332	f0cf	auction, I hear.
 278362	fa70	Let's go check it out!
@@ -2652,7 +2652,7 @@
 278912	1ecb	Let's go take a look!
 278946	0dfa	  Okay! Let's go!
 278968	0fe5	  That day's no good
-279030	0f09	Settled, then!
+279030	0f09	Settled!
 279056	fdc8	 is the day, so
 279068	a751	please don't forget.
 279116	d08a	Come now, don't say that,
@@ -2673,7 +2673,7 @@
 280072	a678	would you like to go?
 280112	0dfa	  Okay! Let's go!
 280134	0fe5	  That day's no good
-280196	0f09	Settled, then!
+280196	0f09	Settled!
 280222	fdc8	 is the day, so
 280234	a751	please don't forget.
 280314	9618	I see,
@@ -2728,7 +2728,7 @@
 282318	a37a	 was passed, too.
 282354	22a8	My playing-days hit total of
 282392	a37a	 was passed, too.
-282428	e8c2	My playing-days home run total of
+282428	e8c2	My playing-days HR total of
 282468	a37a	 was passed, too.
 282504	5bbb	My playing-days steal total of
 282542	a37a	 was passed, too.
@@ -2815,8 +2815,8 @@
 284944	7890	all up to you. Remember that!
 285244	e400	Come to think of it,
 285260	4f19	With today's start you passed 30
-285288	5431	innings, so this year is your only
-285316	45f2	shot at Rookie of the Year.
+285288	5431	innings, so this year is your
+285316	45f2	only shot at Rookie of the Year.
 285346	d499	It's a rare chance, after all.
 285374	3a94	Go for it!
 285404	5d64	With the games left, you've got
@@ -2828,8 +2828,8 @@
 285558	c8d9	Few games left... it looks tough
 285804	e400	Come to think of it,
 285820	5cd3	You passed 60 career plate
-285850	f866	appearances today, so this year is
-285880	8735	your only Rookie of the Year shot.
+285850	f866	appearances today, so this year
+285880	8735	is your one Rookie of Year shot.
 285904	d499	It's a rare chance, after all.
 285932	3a94	Go for it!
 285962	5d64	With the games left, you've got
@@ -2845,8 +2845,8 @@
 286280	88d0	That's all from Powerful Sports!
 286320	eeb1	That's all for this month's
 286346	4fcd	Who Will Be MVP? segment!
-286396	b027	Today: the Central League edition.
-286472	db88	Today: the Pacific League edition.
+286396	b027	Today: Central League edition.
+286472	db88	Today: Pacific League edition.
 286546	be0d	Who Will Be This Month's MVP?
 286576	3c6d	Where we predict the monthly MVP
 286602	4de2	before anyone else!
@@ -2886,8 +2886,8 @@
 287526	0e6d	But these are just the current
 287554	7474	favorites; players not named
 287582	4039	still have plenty of chance.
-287608	adda	Let's look forward to their play!
-287648	b027	Today: the Central League edition.
+287608	adda	Let's look forward to them!
+287648	b027	Today: Central League edition.
 287672	5ae7	First, the pitchers.
 287690	0d4d	In the pitching category,
 287724	2673	Next, the position players.
@@ -2895,7 +2895,7 @@
 287784	af9d	This month is nearly over.
 287812	4949	Who will come out on top in
 287836	757a	the end? Keep your eyes on it!
-287876	00e5	Today, MVP for month 
+287876	00e5	The MVP for month 
 287894	94aa	
 287914	db82	has been announced.
 287976	c6ad	Now, who on earth will be
@@ -2961,7 +2961,7 @@
 289574	8d0b	Seems the kantoku and coaches
 289602	36ea	all get replaced this offseason.
 289630	18a3	Who on earth will it be...
-289658	96ba	Practice menus might change a lot,
+289658	96ba	Practice menus may change a lot,
 289688	e129	for better or worse.
 289734	611e	,
 289742	ea0b	You have speed as a weapon.
@@ -2977,10 +2977,10 @@
 290026	843c	Good, 
 290040	085e	I knew you'd say
 290060	6a15	that.
-290074	3f88	I'm a switch-hitter too, so I know
+290074	3f88	I switch-hit too, so I know
 290104	4abc	exactly how hard left-handed
 290132	4bc9	practice is.
-290148	4f6f	But if you master switch-hitting,
+290148	4f6f	If you master switch-hitting,
 290178	526a	it will be your biggest weapon!
 290200	bcdf	Let's work hard together!
 290222	3ecb	You're now aiming to master
@@ -3006,7 +3006,7 @@
 290724	127d	it?
 290742	2f2e	  Hand it over
 290752	0527	  Keep it
-290824	e996	You'll let me have it? Wonderful!
+290824	e996	You'll give it to me? Wonderful!
 290848	2d38	That's something I really wanted
 290876	fb37	to keep close as a memento.
 290904	2735	It means a lot to me.
@@ -3098,14 +3098,14 @@
 293024	c359	 Shine!
 293048	db19	I'm expecting a lot from you!
 293094	b030	All-night party for the title.
-293124	6652	Of course, nobody slept a wink...
+293124	6652	Of course nobody slept a wink...
 293158	d7b4	The whole team's form dropped
 293184	9363	sharply.
 293222	611e	, 
 293232	801e	!
 293240	ef58	News, news!
 293262	fa46	On June 30, the last day to sign
-293290	a3c4	players, our team's getting a new
+293290	a3c4	players, our team gets a new
 293318	dfb8	foreign player, I hear.
 293346	19a2	And he plays your position:
 293384	801e	!
@@ -3117,7 +3117,7 @@
 293888	c1b5	Well, ending up a triple short
 293916	322e	of the cycle is not all that
 293944	f9fe	unusual.
-293960	c8b9	But if you'd been a single short,
+293960	c8b9	But if you'd been one short,
 293988	2b0b	you could never stop regretting
 294018	c4b1	it.
 294030	9406	Another chance will come along
@@ -3151,10 +3151,10 @@
 294968	ed18	Well, another chance will come
 294996	b4d4	along.
 295008	240f	Anyway, the best shot comes when
-295036	cf9e	you hit the hardest one, a triple.
+295036	cf9e	you hit the hardest, a triple.
 295232	fa3b	For a bigger leap, your pitching
 295266	344a	For a bigger leap, your batting
-295296	f3d8	form could use a remodel. Want to
+295296	f3d8	form needs a remodel. Want to
 295324	284a	give it a try?
 295348	2c01	  I'll take the challenge!
 295364	5102	  Stick with my current form
@@ -3175,7 +3175,7 @@
 295774	5cdd	Okay! Next year, use this form
 295800	5db1	and go wild!
 295826	db19	I'm expecting a lot from you!
-295872	5457	Pitching form overhaul succeeded!
+295872	5457	Pitching form overhaul worked!
 295906	c927	Batting form overhaul succeeded!
 295970	843c	Well, 
 295984	d8f7	if that's how you feel, it
@@ -3192,7 +3192,7 @@
 296418	0a0b	This is the first time you and I
 296442	c5cc	have both homered in one game!
 296464	de64	Today, you and I both homered.
-296494	3c69	That makes time no. 
+296494	3c69	That's time no. 
 296510	5e2b	!
 296540	d04d	Let's keep hitting 'em hard
 296564	0103	from here on!
@@ -3235,7 +3235,7 @@
 297678	68b3	」to「
 297708	eb47	」
 297718	e942	The change was made today.
-297734	ff11	Let's look forward to a big year!
+297734	ff11	Let's expect a big year!
 297896	4bdf	For Children's Day, I'm planning
 297926	658a	to give kids baseball gear,
 297954	68bb	and I wanted to ask you:
@@ -3284,7 +3284,7 @@
 299316	b6ed	It seems it was a Children's Day
 299344	4279	they will never forget!
 299408	6031	On Children's Day today,
-299426	124a	the yearly baseball-gear gift from
+299426	124a	the gear gift from
 299458	9b7f	 players
 299476	8fba	to the kids
 299506	9ff5	took place.
@@ -3300,7 +3300,7 @@
 299950	0e03	  Sit this one out
 300062	1312	I knew you'd say yes,
 300088	77a3	if it was you!
-300148	a96b	You earn plenty, so 
+300148	a96b	You earn lots, so 
 300170	1cc1	7,70
 300180	0d3b	0,000 yen
 300188	7814	is what I'll put you down for!
@@ -3309,7 +3309,7 @@
 300242	9d3c	  770,000 yen...
 300304	f52e	 I see...
 300320	b5d3	Then I'll make it 770,000 yen.
-300352	9fc7	For Tanabata, make it 
+300352	9fc7	Tanabata: make it 
 300372	a746	77
 300382	0d3b	0,000 yen
 300390	4594	to match the date, see?
@@ -3319,9 +3319,9 @@
 300532	7c75	presents has now reached
 300556	28f1	.
 300886	0a00	A letter and a package arrived.
-300910	939c	「Thank you for the bat and glove!
+300910	939c	「Thanks for the bat and glove!
 300938	de19	We'll take good care of them!!
-300974	5adf	As thanks, I'm sending you this.」
+300974	5adf	As thanks, I'm sending this.」
 301008	c230	As thanks, I'm sending you this.
 301036	5fda	I think my dad used to
 301052	9314	collect these.」
@@ -3333,7 +3333,7 @@
 301148	a142	
 301156	94dd	was in there!
 301194	e733	I see... What a letdown.
-301348	2aa2	This year again, on Tanabata, I'm
+301348	2aa2	This year too, on Tanabata, I'm
 301376	40b8	planning to give kids baseball
 301404	8964	gear, and
 301428	a575	, will you join in too?
@@ -3349,7 +3349,7 @@
 301742	6858	I hope a Pro Player emerges
 301766	0753	from among them!
 301840	163a	On Tanabata today,
-301856	124a	the yearly baseball-gear gift from
+301856	124a	the gear gift from
 301888	9b7f	 players
 301906	8fba	to the kids
 301936	9ff5	took place.
@@ -3371,7 +3371,7 @@
 302430	1ff3	first-ever pennant
 302440	03c3	
 302560	21db	How's pro practice?
-302582	d1af	Well, everyone struggles at first.
+302582	d1af	Everyone struggles at first.
 302612	9f93	You'll get used to it in time.
 302782	7fa1	As you probably know, our team's
 302810	b277	rotation is thin right now.
@@ -3380,7 +3380,7 @@
 302888	b441	But that goes for every pitcher.
 302918	38a3	Every one of them.
 302930	587a	Everyone is practicing like mad,
-302958	7f3d	aiming for the starting rotation.
+302958	7f3d	aiming for a rotation spot.
 302988	a82d	You're a rookie, so doing what
 303018	17b0	everyone else does won't cut it.
 303040	b644	Put in even a bit more practice
@@ -3418,13 +3418,13 @@
 303792	73e3	even a little better!
 303806	db19	I'm expecting a lot from you!
 303830	7fa1	As you probably know, our team
-303858	c99b	is well stocked: starters, middle
+303858	c99b	is stacked: starters, middle
 303886	0d72	relief, closer. All of it.
 303908	af21	For a rookie like you, breaking
 303936	bff0	into that is, I must say, quite
 303964	0e17	difficult.
 303984	346f	But your chance will come.
-304014	1fff	For that day, practice even a bit
+304014	1fff	For that day, practice a bit
 304042	6811	more than the others and try to
 304070	117f	get even a little better!
 304088	db19	I'm expecting a lot from you!
@@ -3443,12 +3443,12 @@
 304526	5637	,
 304534	6732	the fight for a regular spot is
 304562	f582	very fierce.
-304574	6cd7	For a rookie like you, it's tough,
+304574	6cd7	For a rookie, it's tough,
 304604	7938	I have to say.
 304626	bf9e	But if you can't take a starting
 304654	778f	position, you can't survive as
 304682	a853	a pro.
-304698	7704	For that, practice even a bit more
+304698	7704	For that, practice a bit more
 304726	1eb0	than the others and try to
 304756	73e3	improve even a little!
 304770	db19	I'm expecting a lot from you!
@@ -3463,7 +3463,7 @@
 304984	13e3	win a regular spot.
 305008	a82d	You're a rookie, so doing what
 305038	17b0	everyone else does won't cut it.
-305060	b644	Practice even a bit more than the
+305060	b644	Practice a bit more than the
 305086	0222	others, and try to improve!
 305118	db19	I'm expecting a lot from you!
 305168	3e43	In the outfield, we have only
@@ -3476,7 +3476,7 @@
 305358	ef50	Still, if you can't win a spot,
 305386	e382	you can't survive as a
 305412	a853	pro.
-305428	7704	For that, practice even a bit more
+305428	7704	For that, practice a bit more
 305456	1eb0	than the others and try to
 305486	73e3	improve even a little!
 305500	db19	I'm expecting a lot from you!
@@ -3484,14 +3484,14 @@
 305572	611e	, 
 305592	17de	
 305608	47be	Just the two of them.
-305624	fc67	You have to win the one remaining
+305624	fc67	You have to win the one open
 305652	8a54	spot.
 305672	c4ed	But for a rookie, I have to say
 305700	f55b	that is quite tough.
 305730	ef50	Still, if you can't win a spot,
 305758	e382	you can't survive as a
 305784	a853	pro.
-305800	7704	For that, practice even a bit more
+305800	7704	For that, practice a bit more
 305828	1eb0	than the others and try to
 305858	73e3	improve even a little!
 305872	db19	I'm expecting a lot from you!
@@ -3499,17 +3499,17 @@
 305936	611e	, 
 305956	611e	, and 
 305978	42f4	.
-306002	ae2d	Taking a position from these three
+306002	ae2d	Taking a spot from these three
 306032	6e62	is no small thing.
 306060	eab0	But if you can't win a spot,
 306088	e382	you can't survive as a
 306114	a853	pro.
-306130	7704	For that, practice even a bit more
+306130	7704	For that, practice a bit more
 306158	1eb0	than the others and try to
 306188	73e3	improve even a little!
 306202	db19	I'm expecting a lot from you!
-306228	f668	Right now our outfield has no firm
-306258	e4b4	regulars.
+306228	f668	Right now our outfield has no
+306258	e4b4	firm regulars.
 306286	6d17	For you, that's a very big
 306312	73cf	chance, I'd say.
 306334	5fc1	But that's true of every player.
@@ -3518,28 +3518,28 @@
 306406	13e3	win a regular spot.
 306430	a82d	You're a rookie, so doing what
 306460	17b0	everyone else does won't cut it.
-306482	a26f	Practice even a bit more than the
+306482	a26f	Practice a bit more than the
 306512	cc3f	others, and try to improve!
 306540	db19	I'm expecting a lot from you!
 306788	f7c7	The owner is coming to watch the
-306816	e26a	three-game series starting today.
+306816	e26a	three-game series from today.
 306836	ed9c	At all costs, avoid losing all
 306864	f568	three games.
 306874	29a5	I'm counting on you!
 306936	2666	A win. That's a relief, anyway.
 306966	7c42	If we lost all three, I couldn't
 306996	2f1f	face the owner.
-307026	86ad	Let's stay focused tomorrow, too!
+307026	86ad	Let's focus tomorrow, too!
 307108	967f	We lost...
-307124	3222	Can't be helped. Forget today and
-307152	f288	focus on tomorrow!
+307124	3222	Can't be helped. Forget today,
+307152	f288	and focus on tomorrow!
 307170	2c93	At all costs, avoid losing all
 307198	f568	three games.
 307208	29a5	I'm counting on you!
 307268	6f24	A draw...
-307286	3222	Can't be helped. Forget today and
-307314	f288	focus on tomorrow!
-307332	adb4	Win at least one, no matter what.
+307286	3222	Can't be helped. Forget today,
+307314	f288	and focus on tomorrow!
+307332	adb4	Win at least one, at all costs.
 307360	29a5	I'm counting on you!
 307420	1ffe	Of course, the owner is here to
 307448	9e14	watch again today.
@@ -3558,10 +3558,10 @@
 307814	bd90	Today or tomorrow, I don't care
 307842	4e6b	which, just get one win.
 307864	29a5	I'm counting on you!
-307924	9d04	Two straight wins, owner watching!
+307924	9d04	2 straight wins, owner watching!
 307952	0da5	The owner must be pleased as
 307982	b31d	well.
-307994	86ad	Let's stay focused tomorrow, too!
+307994	86ad	Let's focus tomorrow, too!
 308064	d9bc	Lost again today...
 308086	4fa0	Win tomorrow, whatever it takes.
 308114	c9bb	Please...
@@ -3570,7 +3570,7 @@
 308226	c9bb	Please...
 308288	1263	We lost today...
 308310	c9cb	Well, it can't be helped.
-308330	db2a	Win tomorrow and take the series!
+308330	db2a	Win tomorrow, take the series!
 308404	2666	A win. That's a relief, anyway.
 308434	a145	That's two games without a loss.
 308456	6a11	Let's go all out tomorrow, too!
@@ -3578,11 +3578,11 @@
 308550	c7bb	Well, that's two games unbeaten!
 308576	f791	The owner should be fairly
 308606	b4d4	satisfied.
-308618	f1aa	I'm counting on you tomorrow, too!
+308618	f1aa	Counting on you tomorrow, too!
 308684	56de	No good again today...
-308708	3222	Can't be helped. Forget today and
-308736	f288	focus on tomorrow!
-308754	adb4	Win at least one, no matter what.
+308708	3222	Can't be helped. Forget today,
+308736	f288	and focus on tomorrow!
+308754	adb4	Win at least one, at all costs.
 308782	29a5	I'm counting on you!
 308844	1ffe	Of course, the owner is here to
 308872	9e14	watch again today.
@@ -3592,7 +3592,7 @@
 308958	ab53	There might be a reward in it!
 309036	1ffe	As always, the owner has come to
 309064	9e14	watch today.
-309078	4a10	Two straight losses, so the owner
+309078	4a10	2 straight losses, so the owner
 309106	f86d	was apparently furious...
 309134	e733	Please, win today!
 309160	bcd8	Not three straight losses...
@@ -3603,7 +3603,7 @@
 309360	1ffe	As always, the owner has come to
 309388	9e14	watch today.
 309402	fe46	Give it everything you've got!
-309476	7689	3 straight wins before the owner!
+309476	7689	3 straight wins, owner watching!
 309504	45d8	And the owner even gave us a
 309530	cdde	celebratory bonus.
 309546	8b76	Here, this is for you too.
@@ -3616,7 +3616,7 @@
 309842	2a32	The owner went home satisfied,
 309870	e854	it seems.
 309882	9070	Really, what a relief.
-309956	0de1	At least we avoided three straight
+309956	0de1	At least we avoided 3 straight
 309984	9070	losses. What a relief.
 310060	176b	Unbeaten in three games!
 310076	2a32	The owner went home satisfied,
@@ -3656,20 +3656,20 @@
 311484	198b	 Coach, #
 311506	fba1	birthday seems to be today.
 311534	0bf7	Let's give him a win as a gift!
-311870	b17d	Thanks, everyone, for the gift of
+311870	b17d	Thanks everyone for the gift of
 311898	fd6e	a win today!
 311926	b169	Thanks to you, this will be a
 311954	1aaf	birthday I won't forget.
 311986	0d17	Let's have a blast!
 312014	0d17	Let's have a blast!
 312038	51c2	And today's on me, of course!
-312072	06e1	Thanks for celebrating my birthday
-312102	6267	with a win!
+312072	06e1	Thanks for celebrating my
+312102	6267	birthday with a win!
 312118	2404	I'm in a great mood today!
 312150	3e96	Let's have a blast!
 312172	3e96	Let's have a blast!
 312190	e68a	Of course, today's on me!
-312254	ba4f	We all hit the town for the night.
+312254	ba4f	We all hit the town tonight.
 312288	c5a1	We all hit the town.
 312650	60e5	Yo, 
 312662	801e	!
@@ -3677,25 +3677,25 @@
 312750	4e47	looked really angry.
 312776	de06	We couldn't celebrate his
 312798	9b46	birthday with a win...
-312858	3f7c	I just passed 
+312858	3f7c	I passed by 
 312876	a688	 Coach,
 312888	a1ba	and he
 312910	4e47	looked pretty angry.
 312936	134a	We couldn't celebrate his
 312952	9b46	birthday with a win...
-313012	3f7c	I just passed 
+313012	3f7c	I passed by 
 313030	a688	 Coach,
 313042	a1ba	and he
 313064	4e47	looked pretty angry.
 313090	134a	We couldn't celebrate his
 313106	9b46	birthday with a win...
-313166	3f7c	I just passed 
+313166	3f7c	I passed by 
 313184	a688	 Coach,
 313196	a1ba	and he
 313218	4e47	looked pretty angry.
 313244	134a	We couldn't celebrate his
 313260	9b46	birthday with a win...
-313288	773e	Better skip going out tonight and
+313288	773e	Better skip the night out and
 313316	6595	just head home quietly.
 313340	0519	If we bump into him, who knows
 313370	442f	what he'll say to us,
@@ -3707,25 +3707,25 @@
 313564	c87e	looked really angry.
 313592	475f	We didn't win on his birthday,
 313618	ab61	after all...
-313672	3f7c	I just passed 
+313672	3f7c	I passed by 
 313690	a688	 Coach,
 313702	18e0	and he
 313724	c87e	looked pretty angry.
 313752	3e1e	We didn't win on his birthday,
 313774	ab61	after all...
-313828	3f7c	I just passed 
+313828	3f7c	I passed by 
 313846	a688	 Coach,
 313858	18e0	and he
 313880	c87e	looked pretty angry.
 313908	3e1e	We didn't win on his birthday,
 313930	ab61	after all...
-313984	3f7c	I just passed 
+313984	3f7c	I passed by 
 314002	a688	 Coach,
 314014	18e0	and he
 314036	c87e	looked pretty angry.
 314064	3e1e	We didn't win on his birthday,
 314086	ab61	after all...
-314108	773e	Better skip going out tonight and
+314108	773e	Better skip the night out and
 314136	9bda	just head home quietly.
 314162	0519	If we run into him, who knows
 314192	9011	what he'll say to us.
@@ -3771,11 +3771,11 @@
 315896	b9da	The pain is still there, so
 315924	868b	you can't swing hard yet.
 315944	2bac	Hm.
-315960	5631	There's still some pain, I see...
+315960	5631	Still some pain, I see...
 315986	98b9	Looks like you can't swing hard.
 316012	2bac	Hm.
 316028	faa3	Some pain is still lingering.
-316056	836e	Just bear with it a little longer.
+316056	836e	Just bear with it a bit longer.
 316088	2bac	Hm.
 316100	3d60	The pain has eased quite a
 316116	57fb	bit, I'd say.
@@ -3792,7 +3792,7 @@
 316336	2bac	Hm.
 316364	851c	Righty swings 
 316376	df3e	 Lefty swings 
-316384	758d	would still hurt,
+316384	758d	would hurt yet,
 316404	0e36	I'd say.
 316432	2bac	Hm.
 316444	b9da	Still hurts,
@@ -3800,30 +3800,30 @@
 316500	df3e	 lefty
 316508	ddc2	 swing is out.
 316528	2bac	Hm.
-316540	5631	Still hurts...
+316540	5631	Still sore...
 316582	851c	Righty
 316594	df3e	 lefty
-316602	71e7	 swing is out.
+316602	71e7	 swing's out.
 316628	2bac	Hm.
 316644	faa3	Some pain is still lingering.
-316672	836e	Just bear with it a little longer.
+316672	836e	Just bear with it a bit longer.
 316704	2bac	Hm.
 316716	3d60	The pain has eased quite a
 316732	57fb	bit, I'd say.
 316758	b0de	Soon,
 316786	851c	Righty
 316798	df3e	 lefty
-316806	d36f	 swinging works again!
+316806	d36f	 swing works again!
 316832	2bac	Hm.
 316844	58a4	Fine now.
 316874	851c	Righty
 316886	df3e	 lefty
-316894	14f6	 swinging is fine!
+316894	14f6	 swing is fine!
 316922	03f7	But I can no longer swing the
 316950	f23e	bat hard...
-316982	a2f0	But I can no longer swing the bat
+316982	a2f0	But I can't swing the bat
 317012	7eda	from the right side...
-317046	9e94	But I can no longer swing the bat
+317046	9e94	But I can't swing the bat
 317076	7eda	from the left side...
 317152	303a	So you finally got free agency.
 317182	e605	Exercising it is your right, but
@@ -3854,8 +3854,8 @@
 318084	dca8	But if you hesitate too long to
 318114	0c8c	bid, someone else gets it, so
 318144	a9be	watch out!
-318164	4740	If you want to stop bidding on
-318194	d2a4	the item midway, pick「
+318164	4740	To stop bidding midway on
+318194	d2a4	the item, pick「
 318212	83c3	Drop out
 318222	f061	」
 318232	2085	and you're out.
@@ -3866,15 +3866,15 @@
 318362	cabe	That's how it works.
 318384	3562	Choose the item you want and the
 318414	8776	auction begins. Then you call
-318442	aa0f	out higher prices than the others.
+318442	aa0f	out higher prices than the rest.
 318468	d297	If no one calls out a higher
 318496	d7d0	price than yours, the item
 318526	9095	becomes yours!
 318536	4fb3	But if you hesitate too long to
 318566	1ebc	bid, someone else gets it, so
 318594	2ec3	please be careful!
-318620	4740	If you want to stop bidding on
-318650	d2a4	the item midway, pick「
+318620	4740	To stop bidding midway on
+318650	d2a4	the item, pick「
 318668	83c3	Drop out
 318678	f061	」
 318688	3635	and that will do it.
@@ -3952,13 +3952,13 @@
 323322	29a5	I'm counting on you!
 323360	b39e	Broke out of the slump!
 323454	0b9f	Superb performance today!
-323480	6982	Truly the 
+323480	6982	Truly 
 323502	efcd	Legendary Festival Man
 323522	43ad	Festival Man
 323536	a986	,
 323544	b542	just as they call you. You've
 323568	3ddb	earned that name.
-323666	c997	What happened with today's result?
+323666	c997	What's with today's result?
 323694	6a9a	I was expecting more...
 323722	a5b9	Well, 
 323742	efcd	Legendary Festival Man
@@ -3985,8 +3985,8 @@
 324228	5cd3	Series Man
 324242	0dc9	 name,
 324258	0a2c	no doubt about it.
-324284	5ae1	I'm counting on you next game too!
-324390	c997	What happened with today's result?
+324284	5ae1	Counting on you next game too!
+324390	c997	What's with today's result?
 324418	7b78	I was expecting more.
 324442	5cd3	Series Man
 324456	72df	 name is in tears,
@@ -3996,7 +3996,7 @@
 324626	db25	Series Dud
 324642	05b4	 tag may be gone soon,
 324660	9d97	it could happen!
-324676	5ae1	I'm counting on you next game too!
+324676	5ae1	Counting on you next game too!
 324782	e82a	In a way, today's result was
 324812	5182	what I expected...
 324832	060f	Not easy to shake the 
@@ -4011,14 +4011,14 @@
 325202	8326	Bases-Loaded Man
 325212	ec69	,
 325234	49a7	just as they call you!
-325250	ccb6	I expect more clutch hitting with
+325250	ccb6	I expect more clutch hits with
 325280	6b61	the bases loaded from now on!
 325372	9130	You blew every bases-loaded
 325400	efbc	chance!
 325434	a5b9	Well, the 
 325444	8326	Bases-Loaded Man
 325454	6dcb	 isn't
-325474	0d9f	always going to hit, just because
+325474	0d9f	always going to hit just because
 325504	e130	he's called that...
 325528	c012	Do better next time!
 325620	9668	That grand slam today was truly
@@ -4028,7 +4028,7 @@
 325724	f2aa	「
 325732	8326	Bases-Loaded Man
 325742	4c02	」
-325750	8134	 will soon be
+325750	8134	 may soon be
 325770	1d32	what they call you!
 325790	69e8	I'm counting on you!
 325888	9668	That grand slam today was truly
@@ -4053,7 +4053,7 @@
 326482	6603	impressive.
 326494	6982	Truly a 
 326504	3eec	Clutch Hitter 
-326520	2d53	as they say,
+326520	2d53	indeed,
 326534	e754	you've earned the name.
 326560	5e4e	Poor in the Clutch
 326576	1bae	, they say,
@@ -4105,14 +4105,14 @@
 327848	641f	I'm so glad I used you in that
 327876	a405	bases-loaded spot!
 327896	69e8	I'm counting on you!
-327984	abf4	I sent you up in that bases-loaded
-328010	c3c7	spot expecting more...
+327984	abf4	I sent you up with bases loaded
+328010	c3c7	expecting more...
 328038	c012	Do better next time!
 328120	c066	Superb pinch-hit homer!
 328148	cb4d	I'm so glad I used you in that
 328170	6587	big chance!
-328198	16f4	I'm counting on you next time too!
-328280	56f1	That timely hit as a pinch hitter
+328198	16f4	Counting on you next time too!
+328280	56f1	That timely hit off the bench
 328308	e66e	was well done!
 328322	cb4d	In that chance situation,
 328344	6587	I'm really glad I used you!
@@ -4128,14 +4128,14 @@
 328816	267c	You delivered properly as a
 328832	11f1	pinch hitter!
 328854	16f4	I'm counting on you again!
-328936	fd89	Your bad habit, the 
+328936	fd89	Your habit, the 
 328962	b399	long-ball bug
 328974	0abe	has shown up again.
 329010	eb9d	Even so 
 329034	0740	 HR is awful
 329050	9f7c	I tell you!
 329074	eb9d	Even so 
-329098	5094	 HR is rough.
+329098	5094	 HR hurts.
 329130	eb9d	Even so 
 329154	6020	 HR allowed
 329170	8845	is just too many!
@@ -4143,23 +4143,23 @@
 329238	a3e9	You have to work much harder on
 329268	f756	your pitching, or you'll never
 329298	cc31	get over this!
-329342	4030	The ball wasn't moving much today
+329342	4030	The ball wasn't moving today
 329370	273b	but you held them down well.
-329392	2d27	You had nothing on the ball today,
+329392	2d27	You had nothing on it today,
 329422	1ca3	but you shut them down well.
 329488	9626	Today, only 
-329516	f8fc	 pitches,
+329516	f8fc	 throws,
 329530	fe10	that was energy-saving pitching.
-329552	2285	Striking batters out is appealing,
-329580	5a61	but pitching to contact is pretty
+329552	2285	Striking batters out has appeal,
+329580	5a61	but pitching to contact is quite
 329608	255a	good too!
-329636	5374	Retiring 27 batters on 27 pitches
+329636	5374	Getting 27 outs on 27 pitches
 329666	ec29	may be the most artistic thing
 329696	4c87	there is.
-329730	f776	Three strikeouts in a row! Superb!
+329730	f776	3 strikeouts in a row! Superb!
 329754	a08f	Three batters, perfect pitching.
 329784	a08f	Three batters, perfect pitching.
-329814	ff95	Three batters, cleanly shut down!
+329814	ff95	Three batters, cleanly retired!
 329832	7051	Three batters down, two by K!
 329856	fbea	You handled the three nicely.
 329878	5dc8	Nice pitching!
@@ -4168,10 +4168,10 @@
 329934	2e2c	You're really reliable!
 329954	2e97	Seriously, I'm relying on you!
 330048	bf48	Know what a retired number is?
-330070	dda6	To honor a player's deeds forever,
+330070	dda6	To honor great deeds forever,
 330100	a037	a uniform number is left unused.
 330142	0650	Our team retired Nos. 3 and 8,
-330172	222b	the numbers once worn by Kinugasa
+330172	222b	the numbers worn by Kinugasa
 330200	a41d	and Yamamoto.
 330216	1193	You're a pro now, so think big:
 330244	354b	"My No. 
@@ -4200,7 +4200,7 @@
 330808	8dd1	Have that kind of drive.
 330838	e274	I'm counting on you.
 330870	53f0	Our team has retired the numbers
-330900	2a08	of Fujimura, Murayama and Yoshida:
+330900	2a08	of Fujimura, Murayama, Yoshida:
 330928	2390	Nos. 10, 11 and 23.
 330956	1193	You're a pro now, so think big:
 330984	354b	"My No. 
@@ -4230,7 +4230,7 @@
 331562	1193	You're a pro now, so think big:
 331590	354b	"My No. 
 331608	48cf	 will be
-331624	d910	the club's first retired number!"
+331624	d910	the club's 1st retired number!"
 331646	8dd1	Have that kind of drive.
 331676	e274	I'm counting on you.
 331826	f55c	! I need a word with you!
@@ -4238,7 +4238,7 @@
 331862	450f	! 
 331892	fd45	Do well!
 331910	fd45	Do well!
-331932	8d1b	Suddenly, traded to 
+331932	8d1b	Sudden trade to 
 331950	0962	.
 331980	1393	
 332002	1393	It's official.
@@ -4267,7 +4267,7 @@
 333200	509d	Looking forward to it!
 333276	69f7	That's all of them.
 333288	1e62	One last thing.
-333304	1d2e	If you ever need the dorm manager,
+333304	1d2e	If you need the dorm manager,
 333328	e55a	get in touch here.
 333354	f253	, the dorm manager,
 333370	a60f	will take care of it.
@@ -4278,7 +4278,7 @@
 333878	c8e3	.
 333984	4bf9	First, let me introduce the new
 334012	68c5	coaches.
-334046	0172	Next, I'll introduce the coaches.
+334046	0172	Next I'll introduce the coaches.
 334090	d6f8	Continuing the introductions.
 334160	5637	: 
 334176	c8e3	.
@@ -4286,13 +4286,13 @@
 334240	1be1	Give it your best, now!
 334276	509d	Looking forward to it!
 334354	86ed	Enough introductions for now.
-334416	b60d	We took the pennant in fine style
+334416	b60d	We won the pennant in fine style
 334444	1cb1	this season, but
 334462	35a2	a pennant is no reason to get
 334490	a3bc	carried away!
 334512	59b1	The fight for next season has
 334540	5b0f	already begun!
-334554	dba6	Each of you, reflect on this year
+334554	dba6	Each of you, reflect on the year
 334584	205c	and keep sharpening yourselves!
 334616	c028	We finished in the top three
 334644	e60c	this season, but being satisfied
@@ -4300,16 +4300,16 @@
 334682	3364	We're aiming for one thing only:
 334710	ec6f	the pennant!
 334722	5795	To win the title next season,
-334748	d7b4	push your bodies to the limit once
-334778	3866	more before the offseason,
+334748	d7b4	push your bodies to the limit
+334778	3866	once more before the offseason,
 334794	2f1c	and keep polishing yourselves!
-334838	b60d	We took the pennant in fine style
+334838	b60d	We won the pennant in fine style
 334866	1cb1	this season, but
 334884	35a2	a pennant is no reason to get
 334912	a3bc	carried away!
 334934	59b1	The fight for next season has
 334962	5b0f	already begun!
-334976	dba6	Each of you, reflect on this year
+334976	dba6	Each of you, reflect on the year
 335006	205c	and keep sharpening yourselves!
 335038	c028	We finished in the top three
 335066	e60c	this season, but being satisfied
@@ -4317,8 +4317,8 @@
 335104	3364	We're aiming for one thing only:
 335132	ec6f	the pennant!
 335144	5795	To win the title next season,
-335170	d7b4	push your bodies to the limit once
-335200	3866	more before the offseason,
+335170	d7b4	push your bodies to the limit
+335200	3866	once more before the offseason,
 335216	2f1c	and keep polishing yourselves!
 335258	8e3b	We finished No. 
 335282	c772	
@@ -4327,25 +4327,25 @@
 335338	3364	We're aiming for one thing only:
 335366	ec6f	the pennant!
 335378	5795	To win the title next season,
-335404	d7b4	push your bodies to the limit once
-335434	3866	more before the offseason,
+335404	d7b4	push your bodies to the limit
+335434	3866	once more before the offseason,
 335450	2f1c	and keep polishing yourselves!
 335488	8e3b	We finished No. 
 335512	3f19	,
 335530	aff2	a poor finish this season.
 335552	393f	What were we missing?
 335580	25e5	Each of you, think it over well
-335608	4743	and set a goal for your training!
+335608	4743	and set a goal for training!
 335638	e88d	This season, we tasted the
 335666	5b53	humiliation of finishing last...
 335688	c9ba	To get our revenge, each of you,
-335716	e562	pick out this season's weak points
+335716	e562	find this season's weak points
 335744	f8b6	and train with a goal in mind!
 335772	5293	There's no time to rest!
 335922	1514	Everyone, fall in!!
 335938	f3fc	Good, looks like you've all
 335966	c305	finished warming up.
-335986	9203	Then let's get right to practice.
+335986	9203	Then let's get to practice.
 336198	45a9	New 
 336216	081d	:
 336240	c8e3	.
@@ -4370,7 +4370,7 @@
 337284	94ab	The series record is 
 337320	d222	so far.
 337396	658b	,
-337406	24c0	if they win or draw the next game,
+337406	24c0	if they win or draw next game,
 337438	83ce	 advance is decided.
 337482	658b	, 
 337490	b826	if they win next,
@@ -4379,7 +4379,7 @@
 337564	b826	if they win next,
 337586	83ce	 advance is decided.
 337630	658b	,
-337640	24c0	if they win or draw the next game,
+337640	24c0	if they win or draw next game,
 337672	2451	 advance is clinched.
 337688	3e2d	If they lose, 
 337708	5637	's
@@ -4400,13 +4400,13 @@
 338154	5408	W 
 338184	dfc2	L 
 338214	0d74	D
-338292	fe6f	All Interleague games have ended.
+338292	fe6f	All Interleague games are over.
 338320	0fdd	The Interleague champion is...
 338376	e31b	 plus 
 338392	c24b	 more!
 338424	3171	!
 338436	26eb	Congratulations, truly!
-338512	bebe	We won Interleague play in style!
+338512	bebe	We won Interleague in style!
 338658	e88d	April is over as of today.
 338698	6f59	May is over too.
 338732	1a63	June is over too.
@@ -4452,27 +4452,27 @@
 339780	97b5	May looks promising.
 339810	ac47	It wasn't quite a flying start,
 339836	cf8e	but
-339858	2f3f	May should be one to look forward
-339886	449b	to, shouldn't it?
+339858	2f3f	May should be one to look
+339886	449b	forward to, shouldn't it?
 339932	2dd9	Early on, 
 339954	28b4	 under .500
-339972	c247	but now they're 
+339972	c247	but they're 
 339992	0124	 over!
 340050	2dd9	Early on, 
-340072	15f5	 over .500,
+340072	15f5	 over .500
 340090	e3f0	but now they're 
 340108	7355	 under...
 340160	2dd9	Early on, 
-340182	9225	 over .500,
+340182	9225	 over .500
 340198	0062	they have spent it all.
 340238	2dd9	Early on, 
 340260	024c	 under .500,
-340276	8df0	they repaid it all: exactly .500.
+340276	8df0	they repaid it all: just .500.
 340306	1c0d	They can't seem to break away
 340334	3f9c	from .500.
 340468	62cb	Will we see 
 340488	dad2	
-340502	bd77	take it all, just as things stand?
+340502	bd77	take it all, as things stand?
 340518	b098	Or will a team stop 
 340538	dc0f	
 340548	04b8	its runaway march by rising
@@ -4492,7 +4492,7 @@
 340944	757a	You can't take your eyes off it!
 340970	62cb	Will we see 
 340990	dad2	
-341004	e227	take it all, just as things stand?
+341004	e227	take it all, as things stand?
 341038	6fdf	The pennant race is finally
 341066	8639	entering its decisive stretch.
 341086	757a	You can't take your eyes off it!
@@ -4527,7 +4527,7 @@
 341914	3a4c	We can't help but look forward
 341936	45ab	to even greater things ahead!
 341972	186d	New Foreign Player Check Corner!
-342002	7d20	Checking up on how this year's new
+342002	7d20	Checking on how this year's new
 342032	536e	foreign players are doing!
 342064	5325	That was the New Foreign Player
 342092	78cf	Check Corner!
@@ -4544,18 +4544,18 @@
 342498	c8b9	The deadline to sign new foreign
 342526	fa20	players and make trades nears.
 342550	176c	Teams sometimes make last-minute
-342580	1bf3	moves to strengthen their rosters,
+342580	1bf3	moves to bolster their rosters,
 342608	53a0	so watch every team closely.
 342642	5f53	It's July. The deadline for new
-342672	2f44	foreign players and trades has now
-342702	05e3	passed.
+342672	2f44	foreign players and trades has
+342702	05e3	now passed.
 342714	81c7	Each team must make the best use
 342744	5d3e	of the roster it has, which will
 342772	81cd	be the key to the pennant.
 342836	5637	: 
 342856	9b58	
 342866	52d8	has failed to agree a new deal
-342894	c177	and it is all but certain he will
+342894	c177	and it's all but certain he will
 342924	4f33	leave the team.
 342960	611e	, 
 342980	b258	 and others
@@ -4571,7 +4571,7 @@
 343236	a8dd	officially decided.
 343258	2a19	Great things are expected of him
 343276	00d3	in his new home.
-343442	b788	Hailed as Taiwan baseball's jewel,
+343442	b788	Hailed as Taiwan baseball's gem,
 343472	1121	Chen
 343480	626e	 has said he wants to move
 343508	7ff2	to Japanese baseball.
@@ -4584,7 +4584,7 @@
 343672	5a11	 RBI.
 343694	cc95	Several clubs are said to be
 343724	5b8a	negotiating quietly already, and
-343754	0df1	his next move is drawing interest.
+343754	0df1	his next move draws interest.
 343796	54cf	 announced today that
 343808	6323	the closely watched jewel of
 343836	b644	Taiwanese baseball, 
@@ -4601,7 +4601,7 @@
 344092	67d4	Last place this season,
 344124	7885	No. 
 344146	fa1c	 this season,
-344174	b788	Hailed as Taiwan baseball's jewel,
+344174	b788	Hailed as Taiwan baseball's gem,
 344204	00fc	Yang
 344212	4dc4	 has said he wants to move
 344240	7ff2	to Japanese baseball.
@@ -4614,7 +4614,7 @@
 344404	3f56	.
 344426	ee48	Several clubs are said to be
 344454	089b	negotiating quietly already, and
-344482	5b2e	his next move is drawing interest.
+344482	5b2e	his next move draws interest.
 344532	54cf	 announced today that
 344544	6323	the closely watched jewel of
 344572	b644	Taiwanese baseball, 
@@ -4661,8 +4661,8 @@
 345544	7ff2	to move to Japanese baseball.
 345566	32a6	Jeon
 345574	18df	 is a lefty power pitcher
-345600	3f0e	with a fastball maxing at 152 km/h
-345628	3542	and a sharp screwball as weapons.
+345600	3f0e	with a fastball topping 152 km/h
+345628	3542	and a sharp screwball weapon.
 345692	7885	
 345714	5408	W-
 345730	f786	L 3SV,
@@ -4706,7 +4706,7 @@
 346682	2da2	.
 346698	2641	New 1st-team batting coach:
 346730	2da2	.
-346746	0427	New 1st-team fielding/base coach:
+346746	0427	New 1st-team field/base coach:
 346780	9028	.
 346806	7ce4	On the farm, new pitching coach:
 346846	2da2	.
@@ -4756,11 +4756,11 @@
 348438	9736	The decision carries over.
 348466	4d5f	Who will come out on top?!
 348508	3e10	Now 
-348526	491d	 has struck back,
+348526	491d	 strikes back,
 348540	c7b3	putting on the pressure!
 348562	4d5f	Who will come out on top?!
 348596	3e10	Now 
-348614	491d	 has struck back,
+348614	491d	 strikes back,
 348628	c7b3	putting on the pressure!
 348650	4d5f	Who will come out on top?!
 348710	9b41	Which side will get the first
@@ -4865,11 +4865,11 @@
 351146	26eb	Congratulations!
 351378	1f9c	The season's titles were also
 351398	c6cb	announced.
-351426	bc49	Central Rookie of the Year: 
+351426	bc49	Central Rookie Award: 
 351458	228e	None.
 351496	5637	, 
 351532	801e	!
-351542	fd7e	Pacific Rookie of the Year: 
+351542	fd7e	Pacific Rookie Award: 
 351574	228e	None.
 351612	5637	, 
 351644	9f44	is the winner!
@@ -4892,15 +4892,15 @@
 352118	cee0	Maybe they think the current
 352146	c174	roster is enough?
 352162	2faf	Or are they planning to add
-352190	36cc	players via trades or free agency?
+352190	36cc	players via trade or FA?
 352216	2efb	Either way, having no rookies
 352246	f2d5	feels a little lonely.
 352290	1fa0	 picked 
 352306	f2e5	 player(s),
-352320	4148	and they are almost sure to join.
-352346	a7ff	Let's look forward to next season!
-352390	b5a8	Today, foreign players with failed
-352420	242f	talks, players leaving the game,
+352320	4148	and they're almost sure to join.
+352346	a7ff	Let's look forward to next year!
+352390	b5a8	Today, foreign players with no
+352420	242f	deal, players leaving the game,
 352450	b012	and others were announced.
 352520	e236	The players above will
 352536	5709	take off the uniform after
@@ -4944,7 +4944,7 @@
 353892	c2a0	And once you were in the box,
 353922	aef6	how was it?
 353940	844c	  Just hit what came
-353962	febb	  Zeroed in on a pitch and hit it
+353962	febb	  Zeroed in on one and hit it
 353992	e76e	  Same as always
 354100	367d	Is that so? Wow.
 354126	e221	Thank you for joining us so
@@ -4961,7 +4961,7 @@
 354536	1b84	I'm counting on a nice comment!
 354628	5b18	Today, a brilliant no-hitter by
 354656	95fe	our guest,
-354676	ca31	A perfect game today by our guest,
+354676	ca31	A perfect game by today's guest,
 354716	88c7	 is on the
 354748	485b	 phone
 354758	c975	with us now.
@@ -4970,22 +4970,22 @@
 354820	d8c4	, is that you?
 354862	8556	Congratulations on your
 354890	6602	no-hitter!
-354912	d849	Congratulations on a perfect game!
+354912	d849	Congrats on the perfect game!
 354944	1b5c	  Easy!
 354960	d79a	  Thanks!
 354976	7bf0	  Well, yeah
-355076	fc2f	From which inning did
+355076	fc2f	From what inning did
 355104	a90c	you start to think of it?
 355120	9b67	  I hadn't noticed
 355142	3f53	  Always from the 1st inning
 355170	7f12	  Never thought about it
-355282	312c	Ah, I see.
+355282	312c	I see.
 355304	84fc	When did you feel sure that
 355330	7653	you could do it?
 355354	3557	  Didn't realize till the end
 355382	a28e	  Only after the game ended
 355406	60bb	  From around the 8th
-355512	85f4	Really?! Wow.
+355512	85f4	Really?!
 355534	e221	Thank you for joining us so
 355562	a23f	late tonight.
 355578	3a90	Congratulations once again.
@@ -4999,7 +4999,7 @@
 355848	7421	clinches a Japan Series berth!
 355888	9d84	Who will they face in the Japan
 355918	426c	Series?!
-355948	9262	The Pacific League is a must-see!
+355948	9262	The Pacific League's a must-see!
 355984	6011	Who will win the Japan crown?
 356020	83a0	,
 356030	b098	Or will 
@@ -5019,7 +5019,7 @@
 356420	7421	clinches a Japan Series berth!
 356460	9d84	Who will they face in the Japan
 356490	426c	Series?!
-356520	8aa8	The Central League is a must-see!
+356520	8aa8	The Central League's a must-see!
 356556	6011	Who will win the Japan crown?
 356592	83a0	,
 356602	b098	Or will 
@@ -5052,18 +5052,18 @@
 357376	a142	 wins
 357384	28ae	its first pennant ever!
 357414	4edc	Congratulations!!
-357456	dbb4	Starting today, All-Star Game fan
+357456	dbb4	Starting today, All-Star fan
 357486	e3e9	voting is open.
-357508	1aff	The dream festival of superstars,
+357508	1aff	The superstars' dream festival,
 357538	1d63	held once a year!
 357552	0e09	Who gets to play is up to your
 357582	dbdf	votes!
 357600	b4e8	Let's vote and vote some more!
-357678	4283	Today, for the All-Star fan vote,
+357678	4283	Today, for the All-Star vote,
 357706	dae8	Interim No. 
 357722	e291	 is out.
-357760	4283	Today, for the All-Star fan vote,
-357788	8332	the final interim results are out.
+357760	4283	Today, for the All-Star vote,
+357788	8332	the final interim tally is out.
 357816	733a	Let's start with the Central
 357838	c22c	League!
 357940	3caa	Next, the Pacific League.
@@ -5076,7 +5076,7 @@
 358262	aa60	Will these rankings hold as
 358290	ac09	they are?!
 358306	21db	Or will there be a turnaround?!
-358330	f2d5	Look forward to the final result!!
+358330	f2d5	Look out for the final result!!
 358364	b4fc	Starting pitchers:
 358446	d8a5	Middle relievers:
 358524	fd7c	Finally, closers:
@@ -5095,7 +5095,7 @@
 359398	40cb	0
 359432	e796	 votes
 359476	65e5	Today the final results of the
-359506	2bf7	All-Star fan vote were announced.
+359506	2bf7	All-Star fan vote came out.
 359528	733a	Let's start with the Central
 359550	c22c	League!
 359666	3caa	Next, the Pacific League.
@@ -5107,13 +5107,13 @@
 360218	c6db	We interviewed a player as he
 360244	6c97	left the seminar. Please take
 360272	8cc7	a look.
-360310	5b60	The seminar had lectures on how a
-360340	1c0b	working adult and pro should speak
+360310	5b60	The seminar taught how a working
+360340	1c0b	adult and pro should speak
 360370	2408	and handle interviews.
 360390	6864	It was very useful.
 360414	ba75	What stuck with me is that top
-360444	3e5c	players don't just play baseball;
-360472	5d26	they give back to society widely.
+360444	3e5c	players don't just play ball;
+360472	5d26	they serve society widely.
 360500	e2e2	I want to make my mark soon
 360520	6b05	and give back to society in
 360546	11ff	many ways, too.
@@ -5139,7 +5139,7 @@
 361136	4579	New entrant Rakuten,
 361154	dbfc	merged club Orix,
 361176	7081	and the new SoftBank bring
-361198	c044	big changes to the Pacific League.
+361198	c044	big changes to Pacific League.
 361226	8a8d	Year One of reform: 
 361260	9b44	has three berths up for grabs.
 361276	1ce0	Which three teams will get
@@ -5261,11 +5261,11 @@
 366932	dfc2	L 
 366962	f494	T 
 367012	b925	1st place!
-367030	aad1	The Central League now heads into
+367030	aad1	The Central League heads into
 367056	de3d	
 367064	d15d	Here we go!
 367102	27c4	 place finish.
-367116	aad1	The Central League now heads into
+367116	aad1	The Central League heads into
 367142	de3d	
 367150	d15d	Here we go!
 367178	e364	Finished dead last.
@@ -5283,11 +5283,11 @@
 367530	bfa3	pennant!
 367566	e1f6	 place finish.
 367624	b925	Superb, 1st place!
-367642	be2b	The Pacific League now heads into
+367642	be2b	The Pacific League heads into
 367668	de3d	
 367676	d15d	Here we go!
 367714	27c4	 place finish.
-367728	be2b	The Pacific League now heads into
+367728	be2b	The Pacific League heads into
 367754	de3d	
 367762	d15d	Here we go!
 367790	e364	Finished dead last.
@@ -5316,7 +5316,7 @@
 368648	335c	give it everything to impress,
 368674	7786	so we must judge them well.
 368696	4e62	Well then, let's go!
-368738	e5f4	Today is the last preseason game.
+368738	e5f4	Today's the last preseason game.
 368766	263b	I want a final check on how the
 368796	200a	regulars are shaping up.
 368816	34e8	Well then, let's go!
@@ -5338,7 +5338,7 @@
 369338	e6e1	 is promised!
 369378	33c6	A first-team berth
 369390	e6e1	 is promised!
-369444	8d30	You could open on the first team!
+369444	8d30	You could open on the 1st team!
 369472	eba9	In the preseason, if you can
 369494	4844	get 2+ hits in every game,
 369514	bb45	meeting that goal,
@@ -5364,7 +5364,7 @@
 370046	e6e1	 is promised!
 370086	33c6	A first-team berth
 370098	e6e1	 is promised!
-370152	8d30	You could open on the first team!
+370152	8d30	You could open on the 1st team!
 370180	4b0e	In the preseason, if you can
 370202	b10a	allow zero runs 
 370212	7350	
@@ -5397,7 +5397,7 @@
 370980	ddf9	From today's game on,
 371000	47a5	I want to check how the regulars
 371028	2f55	are coming along as well.
-371050	81fb	It's tough on the young guys, but
+371050	81fb	Tough on the young guys, but
 371078	5894	give it your all while you can
 371106	e399	and grab a first-team spot.
 371156	801e	!
@@ -5409,7 +5409,7 @@
 371324	ddf9	From today's game on,
 371344	47a5	I want to check how the regulars
 371372	2f55	are coming along as well.
-371394	81fb	It's tough on the young guys, but
+371394	81fb	Tough on the young guys, but
 371422	5894	give it your all while you can
 371450	e399	and grab a first-team spot.
 371512	801e	!
@@ -5458,13 +5458,13 @@
 373748	77e8	But you've got good stuff.
 373778	c001	Polish it well, then
 373804	5e37	come on up.
-373820	cc0a	I'll be waiting on the first team!
-373888	6429	Opening Day farm team confirmed...
+373820	cc0a	I'll be waiting on the 1st team!
+373888	6429	Opening Day farm team is set...
 373954	074e	You've got some good stuff,
 373982	3fd7	don't you?
 373998	9ef7	Polish it even more.
-374022	4364	I'll be waiting on the first team!
-374062	6429	Opening Day farm team confirmed...
+374022	4364	I'll be waiting on the 1st team!
+374062	6429	Opening Day farm team is set...
 374128	3e30	That was pretty good.
 374150	274f	Keep it up in the next game.
 374176	e274	I'm counting on you.
@@ -5472,12 +5472,12 @@
 374290	b158	today.
 374306	6988	Train hard once more and
 374334	cc3c	come back!
-374344	cc0a	I'll be waiting on the first team!
-374412	6429	Opening Day farm team confirmed...
+374344	cc0a	I'll be waiting on the 1st team!
+374412	6429	Opening Day farm team is set...
 374466	eb37	Yes, pretty good again today.
 374496	29cb	Keep polishing.
-374520	4364	I'll be waiting on the first team!
-374560	6429	Opening Day farm team confirmed...
+374520	4364	I'll be waiting on the 1st team!
+374560	6429	Opening Day farm team is set...
 374614	f069	Pretty good again today.
 374640	274f	Keep it up in the next game.
 374666	76a4	I have high hopes.
@@ -5485,12 +5485,12 @@
 374782	b158	today.
 374798	6988	Train hard once more and
 374826	cc3c	come back!
-374836	cc0a	I'll be waiting on the first team!
-374904	6429	Opening Day farm team confirmed...
+374836	cc0a	I'll be waiting on the 1st team!
+374904	6429	Opening Day farm team is set...
 374946	eb37	Yes, pretty good again today.
 374976	29cb	Keep polishing.
-375000	4364	I'll be waiting on the first team!
-375040	6429	Opening Day farm team confirmed...
+375000	4364	I'll be waiting on the 1st team!
+375040	6429	Opening Day farm team is set...
 375082	8677	Good again today.
 375102	5afb	You open on the first team.
 375126	dc30	Be ready.
@@ -5521,21 +5521,21 @@
 376124	68b7	That's a relief.
 376140	e51f	Get your form up even more
 376168	1773	before Opening Day!
-376212	3bf2	Opening Day first team confirmed!
+376212	3bf2	Opening Day first team is set!
 376248	9e7c	You seem to be in pretty good
 376274	8fb2	shape!
 376284	68b7	That's a relief.
 376300	e51f	Get your form up even more
 376328	1773	before Opening Day!
-376372	3bf2	Opening Day first team confirmed!
+376372	3bf2	Opening Day first team is set!
 376408	9e98	You seem to be in decent shape!
 376436	68b7	That's a relief.
 376452	e51f	Get your form up even more
 376480	1773	before Opening Day!
-376524	3bf2	Opening Day first team confirmed!
+376524	3bf2	Opening Day first team is set!
 376552	3896	Your form isn't great.
 376578	709d	Raise it before Opening Day!
-376622	3bf2	Opening Day first team confirmed!
+376622	3bf2	Opening Day first team is set!
 376852	2f4f	You're coming along nicely!
 376876	a646	Keep up this form!
 376922	2f4f	You're coming along nicely!
@@ -5555,8 +5555,8 @@
 377376	5d93	Your form isn't great.
 377426	44c1	Hmm, go train hard again
 377454	90d8	and come back!
-377470	cc0a	I'll be waiting on the first team!
-377508	b0d2	Opening Day farm team confirmed...
+377470	cc0a	I'll be waiting on the 1st team!
+377508	b0d2	Opening Day farm team is set...
 377562	1767	Raise your form even more from
 377590	5b5a	here on!
 377610	1767	Raise your form even more from
@@ -5566,32 +5566,32 @@
 377734	68b7	That's a relief.
 377750	e51f	Get your form up even more
 377778	1773	before Opening Day!
-377822	3bf2	Opening Day first team confirmed!
+377822	3bf2	Opening Day first team is set!
 377858	9e7c	You seem to be in pretty good
 377884	8fb2	shape!
 377894	68b7	That's a relief.
 377910	e51f	Get your form up even more
 377938	1773	before Opening Day!
-377982	3bf2	Opening Day first team confirmed!
+377982	3bf2	Opening Day first team is set!
 378018	9e98	You seem to be in decent shape!
 378046	68b7	That's a relief.
 378062	e51f	Get your form up even more
 378090	1773	before Opening Day!
-378134	3bf2	Opening Day first team confirmed!
+378134	3bf2	Opening Day first team is set!
 378174	44c1	Hmm, go train hard again
 378202	90d8	and come back!
-378218	cc0a	I'll be waiting on the first team!
-378256	b0d2	Opening Day farm team confirmed...
+378218	cc0a	I'll be waiting on the 1st team!
+378256	b0d2	Opening Day farm team is set...
 378318	44c1	Hmm, go train hard again
 378346	90d8	and come back!
-378362	cc0a	I'll be waiting on the first team!
-378400	b0d2	Opening Day farm team confirmed...
+378362	cc0a	I'll be waiting on the 1st team!
+378400	b0d2	Opening Day farm team is set...
 378442	3896	Your form isn't great.
 378468	709d	Raise it before Opening Day!
-378512	3bf2	Opening Day first team confirmed!
+378512	3bf2	Opening Day first team is set!
 378542	3896	Your form isn't great.
 378568	709d	Raise it before Opening Day!
-378612	3bf2	Opening Day first team confirmed!
+378612	3bf2	Opening Day first team is set!
 378748	38a1	Don't worry too much about
 378764	c178	today's result!
 378790	437d	Use the time left before
@@ -5601,13 +5601,13 @@
 379550	77e8	But you've got good stuff.
 379580	c001	Polish it well, then
 379606	5e37	come on up.
-379622	cc0a	I'll be waiting on the first team!
-379690	6429	Opening Day farm team confirmed...
+379622	cc0a	I'll be waiting on the 1st team!
+379690	6429	Opening Day farm team is set...
 379756	074e	You've got some good stuff,
 379784	3fd7	don't you?
 379800	9ef7	Polish it even more.
-379824	4364	I'll be waiting on the first team!
-379864	6429	Opening Day farm team confirmed...
+379824	4364	I'll be waiting on the 1st team!
+379864	6429	Opening Day farm team is set...
 379930	3e30	That was pretty good.
 379952	274f	Keep it up in the next game.
 379978	e274	I'm counting on you.
@@ -5615,12 +5615,12 @@
 380092	b158	today.
 380108	6988	Train hard once more and
 380136	cc3c	come back!
-380146	cc0a	I'll be waiting on the first team!
-380214	6429	Opening Day farm team confirmed...
+380146	cc0a	I'll be waiting on the 1st team!
+380214	6429	Opening Day farm team is set...
 380268	8fc9	Yes, that was pretty good.
 380294	29cb	Keep polishing.
-380318	4364	I'll be waiting on the first team!
-380358	6429	Opening Day farm team confirmed...
+380318	4364	I'll be waiting on the 1st team!
+380358	6429	Opening Day farm team is set...
 380412	3c06	Today was pretty good.
 380438	274f	Keep it up in the next game.
 380464	76a4	I have high hopes.
@@ -5628,12 +5628,12 @@
 380580	b158	today.
 380596	6988	Train hard once more and
 380624	cc3c	come back!
-380634	cc0a	I'll be waiting on the first team!
-380702	6429	Opening Day farm team confirmed...
+380634	cc0a	I'll be waiting on the 1st team!
+380702	6429	Opening Day farm team is set...
 380744	aec4	Yes, today was pretty good.
 380774	29cb	Keep polishing.
-380798	4364	I'll be waiting on the first team!
-380828	6429	Opening Day farm team confirmed...
+380798	4364	I'll be waiting on the 1st team!
+380828	6429	Opening Day farm team is set...
 380870	0a2f	Today was good.
 380890	5afb	You open on the first team.
 380914	dc30	Be ready.
@@ -5667,7 +5667,7 @@
 382090	ed48	You're not there yet.
 382112	44c1	Hmm, go train hard once more
 382140	90d8	and come back!
-382156	cc0a	I'll be waiting on the first team!
+382156	cc0a	I'll be waiting on the 1st team!
 382194	b0d2	I'm on the farm for Opening Day.
 382282	579c	Your form still seems off.
 382310	182b	I want you to keep improving
@@ -5675,7 +5675,7 @@
 382380	ed48	You're not there yet.
 382402	44c1	Hmm, go train hard once more
 382430	90d8	and come back!
-382446	cc0a	I'll be waiting on the first team!
+382446	cc0a	I'll be waiting on the 1st team!
 382484	b0d2	I'm on the farm for Opening Day.
 382550	579c	Your form still seems off.
 382578	182b	I want you to keep improving
@@ -5686,7 +5686,7 @@
 382760	ed48	You're not there yet.
 382782	44c1	Hmm, go train hard once more
 382810	90d8	and come back!
-382826	cc0a	I'll be waiting on the first team!
+382826	cc0a	I'll be waiting on the 1st team!
 382864	b0d2	I'm on the farm for Opening Day.
 382930	579c	Your form still seems off.
 382958	182b	I want you to keep improving
@@ -5696,36 +5696,36 @@
 383098	68b7	That's a relief.
 383114	e51f	Get your form even higher by
 383142	1773	Opening Day!
-383186	3bf2	First team for Opening Day is set!
+383186	3bf2	Opening Day first team is set!
 383222	3896	Your form isn't great yet.
 383248	709d	Get your form up by Opening Day!
-383308	3bf2	First team for Opening Day is set!
+383308	3bf2	Opening Day first team is set!
 383336	9e98	You seem to be in decent shape!
 383364	68b7	That's a relief.
 383380	e51f	Get your form even higher by
 383408	1773	Opening Day!
-383452	3bf2	First team for Opening Day is set!
+383452	3bf2	Opening Day first team is set!
 383502	3896	Your form isn't great yet.
 383528	f876	It's your final season!
 383548	709d	Get your form up by Opening Day!
-383592	3bf2	First team for Opening Day is set!
+383592	3bf2	Opening Day first team is set!
 383620	ed48	You're not there yet.
 383642	44c1	Hmm, go train hard once more
 383670	90d8	and come back!
-383686	cc0a	I'll be waiting on the first team!
+383686	cc0a	I'll be waiting on the 1st team!
 383740	b0d2	I'm on the farm for Opening Day.
 383804	3896	Your form isn't great yet.
 383830	f876	It's your final season!
 383850	709d	Get your form up by Opening Day!
-383894	3bf2	First team for Opening Day is set!
+383894	3bf2	Opening Day first team is set!
 383930	ed48	You're not there yet.
 383952	44c1	Hmm, go train hard once more
 383980	90d8	and come back!
-383996	cc0a	I'll be waiting on the first team!
+383996	cc0a	I'll be waiting on the 1st team!
 384050	b0d2	I'm on the farm for Opening Day.
 384092	3896	Your form isn't great yet.
 384118	709d	Get your form up by Opening Day!
-384162	3bf2	First team for Opening Day is set!
+384162	3bf2	Opening Day first team is set!
 384328	f55c	Come see me!
 384358	c46d	You open the season!
 384380	558f	Get ready properly!
@@ -5749,7 +5749,7 @@
 384860	1b2c	Let me explain briefly.
 384888	2dc9	Mizotto provides baseball gear
 384918	aed0	to you free of charge.
-384942	ca38	We provide a bat, 
+384942	ca38	We provide bat, 
 384968	9f29	catcher's mitt,
 384992	0600	first base mitt,
 385016	702e	glove,
@@ -5791,7 +5791,7 @@
 386182	4c1f	...
 386318	2d03	-kun, it's me.
 386342	3bff	Candidates have come up for
-386370	b47f	the foreign player you asked for.
+386370	b47f	the foreign player you wanted.
 386398	1bec	We couldn't find the foreign
 386426	b9de	player you wanted, sadly.
 386454	a869	He's not what you asked for,
@@ -5848,7 +5848,7 @@
 388446	1032	  Stop watching
 388538	1032	  Stop watching
 388556	5577	  Next
-388768	ecd0	I decided not to watch after all.
+388768	ecd0	I chose not to watch after all.
 388810	eba9	
 388818	d24f	I decided to watch.
 388840	e2b9	・
@@ -5871,9 +5871,9 @@
 389324	59d2	Everybody wants to switch to a
 389352	8838	lower number right away, but
 389380	a917	treasure your first number!
-389402	4874	I understand admiring the numbers
+389402	4874	I understand admiring numbers
 389432	f341	of past greats, but
-389454	e1b0	Be great so No. 
+389454	e1b0	Be great, so #
 389484	5244	 calls
 389500	aa98	your name to mind,
 389528	8bfd	 at once.
@@ -5890,8 +5890,8 @@
 389772	8f48	You're really something!
 389826	066d	With
 389844	a1a2	 games left,
-389854	3eb9	I wonder how far your total goes.
-389878	a985	I'm really looking forward to it.
+389854	3eb9	Wonder how far your total goes.
+389878	a985	I'm looking forward to it.
 389912	066d	With
 389930	635a	 games to go,
 389946	cbff	40 is within reach!
@@ -5910,7 +5910,7 @@
 390294	c3cb	That's really something!
 390342	1fe6	 years in, and finally
 390358	9a81	you've won a regular spot!
-390382	0c02	Of course, don't settle for this,
+390382	0c02	Of course don't settle for this,
 390412	9cf4	and soar even higher.
 390488	ec18	Yo, 
 390500	801e	!
@@ -5928,7 +5928,7 @@
 390752	775a	-kun.
 390762	aef3	I need a word with you.
 390788	0258	Time you thought about moving
-390816	372b	out of the dorm, don't you think?
+390816	372b	out of the dorm, right?
 390844	c40f	Live somewhere nice and they say
 390872	728f	data shows your career lasts
 390902	cb71	longer, or so the rumor goes.
@@ -5937,7 +5937,7 @@
 390982	353d	so that's the dilemma.
 391092	6c77	Starting today, interleague
 391112	b0fa	play begins!
-391134	af0f	They say whoever wins interleague
+391134	af0f	They say who wins interleague
 391156	b7bc	play wins the pennant,
 391176	03e9	and that may even be true,
 391204	a737	it's not entirely wrong!
@@ -6043,7 +6043,7 @@
 395230	dc13	I'm counting on the next one!
 395282	46d0	Extras, 
 395302	d1ef	 battle,
-395316	fa55	and it ends in a walk-off loss...
+395316	fa55	and it's a walk-off loss...
 395338	62cf	What a draining game...
 395360	aecd	These are the hardest to take.
 395388	d296	But we just have to shake
@@ -6069,7 +6069,7 @@
 395960	f1d0	Today's game took 
 395978	a986	
 395986	1fa1	What a long one.
-396006	fe60	These take the most out of you...
+396006	fe60	Those drain you the most...
 396046	cc83	We won, so it's fine, but
 396076	a997	the thought of losing this
 396102	d141	one gives me chills.
@@ -6077,7 +6077,7 @@
 396164	0994	would have blown away...
 396218	df0e	A tie makes it feel even
 396240	94a8	less settled...
-396496	2fe6	Today's game time was 
+396496	2fe6	Game time today was 
 396522	a986	
 396530	4148	We finished pretty early.
 396566	2891	We won, too, so I'll
@@ -6087,7 +6087,7 @@
 396672	1d4c	rest up.
 396696	2532	It ended undecided.
 396722	5523	Good work!
-396820	2fe6	Today's game time was 
+396820	2fe6	Game time today was 
 396846	a986	
 396854	1e46	We finished pretty early.
 396894	38f3	I know!
@@ -6098,9 +6098,9 @@
 397030	fa4a	let's forget all that
 397060	0f80	and go out and cut loose!
 397102	2818	Everyone had a great time.
-397220	4fbd	First place 
+397220	4fbd	1st place 
 397238	507b	 swept!!!
-397254	b0be	3 straight! The owner is thrilled!
+397254	b0be	3 straight! Owner's thrilled!
 397300	e36f	You hail from 
 397318	bd68	!
 397334	5c62	I come from 
@@ -6136,7 +6136,7 @@
 398984	0d0f	-san
 398994	d793	 is along.
 399168	178a	Oops, you caught me.
-399196	fccc	I'm going out with 
+399196	fccc	I go out with 
 399234	0d0f	-san
 399244	a986	 to
 399252	1826	cut loose, man.
@@ -6301,14 +6301,14 @@
 404996	c02d	What a shame...
 405060	e16f	From tomorrow, the long-awaited
 405088	92e8	interleague play begins!
-405114	32c7	Fierce clashes, once only seen in
-405142	4d48	the Japan Series, between Central
-405172	79f7	and Pacific League teams!
+405114	32c7	Fierce clashes once seen only in
+405142	4d48	the Japan Series, Central teams
+405172	79f7	against Pacific League teams!
 405200	ae69	A dream matchup for the fans!
 405226	016d	It's sure to be a big hit!
 405264	979a	From tomorrow, interleague play
 405292	1bd3	begins.
-405308	0f60	Central League teams face off with
+405308	0f60	Central League teams clash with
 405330	e5aa	Pacific League teams in fierce
 405358	96d5	battles, so watch closely!
 405436	7660	Winning pitcher on a single
@@ -6363,7 +6363,7 @@
 406792	345d	What's so great, you ask?
 406818	a5b9	Well, 
 406830	ea72	it's, um,
-406842	a8bc	Lots of things. All kinds of 'em.
+406842	a8bc	Lots of things. All kinds.
 406870	6a15	I won't force you,
 406892	27f6	but it's worth thinking about.
 406948	ddd4	So you're 
@@ -6425,7 +6425,7 @@
 408480	801e	!
 408488	e82a	Were you all well
 408506	332a	while I was gone?
-408526	b693	The baby's here, the baby's here!
+408526	b693	Baby's here, baby's here!
 408548	60d3	A healthy baby girl!
 408570	5612	I wanted more time with them,
 408598	8fca	but I can't cause the team
@@ -6465,7 +6465,7 @@
 409426	bbc0	The rumor of the kantoku being
 409450	1386	fired was true.
 409466	7f58	That sudden news shocked me.
-409510	bbdf	The team is in a real crisis now,
+409510	bbdf	The team's in a real crisis now,
 409540	1386	and that's no lie.
 409556	49a9	Everyone, give it your all!
 409580	29a5	I'm counting on you!
@@ -6474,10 +6474,10 @@
 409630	8188	This is bad, really bad!
 409646	ea26	Citing the team's poor results,
 409674	7ee8	they just announced first-team
-409704	95cb	coaches go down, farm coaches up!
+409704	95cb	coaches go down, farm ones up!
 409732	bfe1	Man, our team sure does some
 409760	9a99	drastic things.
-409784	c8c1	Practice menus will change a lot,
+409784	c8c1	Practice menus change a lot,
 409812	f78f	too. Who knows how it'll go.
 409840	c325	Oops, gotta go tell the others
 409868	d279	too.
@@ -6518,7 +6518,7 @@
 410958	f64e	I'm 
 410978	3171	, club president!
 410988	72d1	For today's hometown game,
-411016	529d	all supporters' club members will
+411016	529d	all supporters club members will
 411044	4785	cheer with everything we've got.
 411068	cd3c	Do your best!
 411144	f237	Party with the supporters' club!
@@ -6548,7 +6548,7 @@
 412038	535f	Let me briefly explain what
 412064	5519	happens from here.
 412082	b4dd	Er, our role is, well...
-412110	2bb3	In short, we root for 
+412110	2bb3	We root for 
 412124	d7fc	
 412134	38ce	That's what it comes down to...
 412162	ce33	Basically, we throw a party and
@@ -6612,7 +6612,7 @@
 413872	611e	, 
 413882	801e	!
 413890	3f8f	This is bad, really bad!
-413928	a36a	Whoa, 
+413928	a36a	Oh! 
 413946	71a1	 Kantoku fainted
 413966	721d	from stress, rushed to hospital!
 413994	9022	I just hope it's nothing
@@ -6620,7 +6620,7 @@
 414048	8d4b	-san, 
 414060	961d	-san!
 414070	40f3	Oh no, oh no!
-414106	a36a	Whoa, 
+414106	a36a	Oh! 
 414124	71a1	 Kantoku fainted
 414144	0a89	from stress, rushed to hospital!
 414172	fa23	I do hope it's not serious,
@@ -6635,7 +6635,7 @@
 414468	a26c	You've probably heard already,
 414494	6a15	the kantoku will be resting for
 414524	28f1	a while.
-414538	b8d3	Left behind, our mission is, until
+414538	b8d3	Left behind, our job is, until
 414568	240c	the kantoku returns, to defend
 414598	d0df	first place at all costs!
 414614	c20f	I'm counting on you.
@@ -6654,7 +6654,7 @@
 414946	1da8	You all did really well
 414974	74c1	while I was away.
 414990	ebfd	Now straight on to the title!
-415012	c93c	While I was out we fell to No. ●,
+415012	c93c	While away we fell to No. ●,
 415042	4adc	but we'll fight back from here!
 415100	0cb2	 speaking?
 415116	10d9	I'm 
@@ -6684,7 +6684,7 @@
 415756	6877	Then we'll keep cheering with
 415780	b030	the same song, so do your
 415806	283c	best!
-415844	29ad	Heh heh, I thought you'd say that.
+415844	29ad	Heh heh, figured you'd say that.
 415874	215a	Then let me play my very best
 415902	5fee	song for you last!
 415930	a5e5	Then how about this one?
@@ -6694,7 +6694,7 @@
 416130	201d	Still, plenty of players could
 416160	93b0	move up to the first team any
 416190	3f64	day now. Let's keep an eye out!
-416232	b16a	Only rookie on Opening Day roster:
+416232	b16a	Only rookie on the first team:
 416262	5637	 (
 416292	9b58	).
 416310	e768	).
@@ -6707,12 +6707,12 @@
 416482	5637	 (
 416512	2cfd	),
 416532	83ad	),
-416556	d63b	Both made the Opening Day roster.
+416556	d63b	Both made the Opening Day team.
 416592	71c4	In total, 
 416608	a866	 rookies
 416630	05e3	made the Opening Day roster.
 416644	3172	Let's keep an eye on them!
-416716	c3d9	Next: your hometown 
+416716	c3d9	Next up: hometown 
 416740	9053	.
 416750	0e0a	Game on there.
 416776	21a0	You've got the start!
@@ -6722,7 +6722,7 @@
 416904	fd07	Get ready properly!
 416954	1e7f	I'll be in the starting lineup
 416982	1fd0	in the next game!
-417044	eb2b	Your hometown today 
+417044	eb2b	Hometown today: 
 417070	9053	.
 417080	0e0a	Time for the game.
 417106	0013	Show your hometown fans your
@@ -6731,14 +6731,14 @@
 417174	afcc	Show your hometown fans your
 417202	24da	best play!
 417218	4618	Okay, let's go!
-417240	e515	Kantoku's hometown: 
+417240	e515	Kantoku's home: 
 417266	9053	.
 417276	fe40	Today's game is there.
 417292	e8c9	Let's show them
 417308	41d8	something good!
 417330	c14f	Let's give it our all!
-417374	9264	When fatigue builds up, your form
-417402	92a9	drops before you ever reach Great
+417374	9264	When fatigue builds, your form
+417402	92a9	drops before you reach Great
 417430	88b6	or Good.
 417452	b9bf	As a pro, managing your
 417474	b89b	condition is very important!
@@ -6762,15 +6762,15 @@
 417992	3588	He has been the driving force
 418014	5ab6	behind the team's surge,
 418034	bc12	so this looks like a tough spot.
-418074	0de5	News just in: the player who went
+418074	0de5	News flash: the player who went
 418104	d9ee	home for tests, ●●●●●●●,
 418134	8703	is leaving the team.
 418164	4ef9	The exam showed that surgery is
 418194	6c94	needed, and after talks with the
 418222	1e68	club, he will leave the team.
 418250	62ee	He had been putting up great
-418280	f31e	numbers, so this is a real shame.
-418310	0de5	News just in: the player who went
+418280	f31e	numbers, so it's a real shame.
+418310	0de5	News flash: the player who went
 418340	2e7f	home for tests, ●●●●●●●,
 418368	2291	will return to Japan.
 418396	fc97	He is expected to arrive within
@@ -6796,13 +6796,13 @@
 418840	ad68	outfielder
 418850	3f0e	max 152 km/h
 418878	3542	fastball and a sharp screwball.
-418906	786a	Power hitting is his biggest draw.
+418906	786a	Power hitting is his big draw.
 419070	5637	 (
 419096	a986	) and
 419114	5637	 (
 419140	5637	)
 419148	e276	have been traded for each other.
-419184	5a92	Let's root for them on new teams!
+419184	5a92	Let's cheer them on new teams!
 419242	c1ed	As for Contact, you've already
 419270	fe14	reached the highest level.
 419350	c1ed	In Contact, you seem to have
@@ -6850,7 +6850,7 @@
 421238	a5dd	With you
 421252	4f0e	With Kantoku
 421262	535b	 there,
-421276	d0ac	the fans will surely be thrilled!
+421276	d0ac	the fans will be thrilled!
 421304	29a5	I'm counting on you!
 421352	f52e	I see...
 421370	4c0a	 That's a shame.
@@ -6953,7 +6953,7 @@
 424456	0544	See ya, man!
 424490	7b81	Yeah, you're right, man.
 424506	7eee	It's a right I worked hard for.
-424534	7841	I'll think it through and decide.
+424534	7841	I'll think it over and decide.
 424562	0544	Later, man!
 424610	1387	He went off somewhere...
 424702	73ef	At the goods shop, your jersey
@@ -6982,7 +6982,7 @@
 425590	91ea	Long road trip starts in 2 days.
 425618	bc30	It's the so-called
 425632	1258	"road of death."
-425660	f9ef	But the road of death is old news!
+425660	f9ef	The road of death is old news!
 425690	adfa	With how transport has advanced,
 425718	39bb	there's no such thing now.
 425746	cff5	People are going to fuss about
@@ -6992,7 +6992,7 @@
 425850	4833	road trip in two days.
 425872	ce52	It's the so-called
 425884	1258	"road of death."
-425912	f9ef	But the road of death is old news!
+425912	f9ef	The road of death is old news!
 425942	e829	Even if you move up, don't
 425960	0477	let it bother you!
 426000	6c03	The first team starts the
@@ -7004,22 +7004,22 @@
 426132	cff5	People are going to fuss about
 426160	b4a8	the road of death, but
 426182	2800	don't let it get to you.
-426216	b2b4	Hanshin starts its
+426216	b2b4	Hanshin starts
 426234	1acf	 "road of death"
 426248	eb47	
 426258	541b	tomorrow.
-426274	9959	Every year, it's said the road of
+426274	9959	Each year, it's said the road of
 426302	4f92	death record decides the team's
 426330	61d3	standing,
 426350	4cbd	so how will this year go?
 426390	6d50	They next return to Koshien on
 426418	2bfe	August 28.
-426446	bd67	Currently on the "road of death,"
+426446	bd67	Now on the "road of death,"
 426474	e144	Hanshin.
 426484	48e5	Sadly, the loss makes it ●-●,
 426514	8d1d	and a losing record is settled
 426544	af08	for the road of death.
-426566	bd67	Currently on the "road of death,"
+426566	bd67	Now on the "road of death,"
 426594	e144	Hanshin.
 426604	2515	Today's win makes it ●●-●●,
 426632	b721	and a winning record on the road
@@ -7037,12 +7037,12 @@
 426892	7350	
 426900	3c73	 earns 5,000,000 yen
 426914	611e	,
-426924	6d93	Win all 15 to get 15,000,000 yen
+426924	6d93	Win all 15, get 15,000,000 yen
 426946	a034	!
 426976	02ff	Listen up, everyone!
 426996	2e81	A message from the owner!
 427018	cbdf	Again 
-427028	d210	through the first 15 games
+427028	d210	for the first 15 games
 427046	a329	,
 427056	135a	per win over .500:
 427074	f1b2	 1,000,000 yen
@@ -7053,7 +7053,7 @@
 427146	7350	
 427154	3c73	 earns 5,000,000 yen
 427168	611e	,
-427178	6d93	Win all 15 to get 15,000,000 yen
+427178	6d93	Win all 15, get 15,000,000 yen
 427200	a034	!
 427226	2d6d	This is a big chance.
 427254	0b2d	Show you can live up to it!
@@ -7091,7 +7091,7 @@
 428578	2510	Keep improving from here and
 428606	41f8	somehow earn that reward!
 428714	066d	Left: 
-428732	01e5	 games. Fire up!
+428732	01e5	 games. Fight!
 428856	089a	Open: 
 428874	f7a2	straight wins!!!
 428902	089a	Open: 
@@ -7132,7 +7132,7 @@
 429900	22f7	To get the reward,
 429926	2052	we can't even afford a tie!
 429956	2a6c	Get fired up!
-429996	45e2	That settles it: above .500 after
+429996	45e2	That settles it: over .500 after
 430024	d48b	the first 15 games!!
 430076	13b3	We're below .500 after the first
 430102	a69c	15 games, then.
@@ -7286,12 +7286,12 @@
 434378	5e6b	much made it to a 20-win season,
 434408	70a8	I'd say.
 434422	5f8f	Well, thanks to me you pretty
-434448	639f	much made it to double-digit wins,
+434448	639f	much reached double-digit wins,
 434476	e87f	I'd say.
 434506	16c7	Okay! 
-434518	e754	Let's go have some fun now!
+434518	e754	Let's go have fun now!
 434546	16c7	Okay! 
-434558	e754	Let's go have some fun now!
+434558	e754	Let's go have fun now!
 434716	09d3	Yoneda Tetsuya's career wins:
 434742	67c7	Which is it?
 434764	5b8d	  1.
@@ -7308,7 +7308,7 @@
 434912	2760	251
 434922	c1eb	  3.
 434930	cd1b	281
-434962	6cdb	Suzuki Keishi's career strikeouts:
+434962	6cdb	Suzuki Keishi's career Ks:
 434990	67c7	Which is it?
 435012	5b8d	  1.
 435020	3bd6	1061
@@ -7316,7 +7316,7 @@
 435040	02a4	2061
 435052	c1eb	  3.
 435060	dd92	3061
-435094	701c	Murata Choji's career strikeouts:
+435094	701c	Murata Choji's career Ks:
 435122	67c7	Which is it?
 435144	5b8d	  1.
 435152	2182	1363
@@ -7357,7 +7357,7 @@
 435722	c1eb	  3.
 435730	f653	1977
 435764	dcc3	Which year did Uehara Koji win
-435786	8edf	the wins, ERA and strikeout titles
+435786	8edf	the wins, ERA, strikeout titles
 435812	74c7	(the pitching triple crown)?
 435846	5b8d	  1.
 435854	622d	1999
@@ -7365,8 +7365,8 @@
 435874	e5cf	2000
 435886	c1eb	  3.
 435894	07ea	2001
-435928	a6aa	Which year did Komatsu Tatsuo win
-435950	8edf	the wins, ERA and strikeout titles
+435928	a6aa	What year did Komatsu Tatsuo win
+435950	8edf	the wins, ERA, strikeout titles
 435976	74c7	(the pitching triple crown)?
 436010	5b8d	  1.
 436018	176b	1975
@@ -7406,7 +7406,7 @@
 436566	4bb8	3045
 436578	c1eb	  3.
 436586	8153	3085
-436620	c349	Kadota Hiromitsu's HR king titles:
+436620	c349	Kadota Hiromitsu's HR titles:
 436648	6473	How many?
 436666	5b8d	  1.
 436674	b9f5	1
@@ -7414,7 +7414,7 @@
 436690	ff37	2
 436698	c1eb	  3.
 436706	ab8e	3
-436736	728d	Nagashima Shigeo's HR king titles:
+436736	728d	Nagashima Shigeo's HR titles:
 436764	6473	How many?
 436782	5b8d	  1.
 436790	40cb	0
@@ -7479,7 +7479,7 @@
 437704	701d	14
 437714	c1eb	  3.
 437722	1650	15
-437754	b9c3	Hirose Yoshinori's SB king titles:
+437754	b9c3	Hirose Yoshinori's SB titles:
 437782	6473	How many?
 437800	5b8d	  1.
 437808	e2d4	5
@@ -7519,7 +7519,7 @@
 438324	f8ac	24
 438334	c1eb	  3.
 438342	ce42	34
-438374	00a9	Which number did Chunichi retire?
+438374	00a9	What number did Chunichi retire?
 438402	5b8d	  1.
 438410	64b5	13
 438420	271b	  2.
@@ -7726,7 +7726,7 @@
 441602	ff37	2
 441610	c1eb	  3.
 441618	ab8e	3
-441648	c70a	In what year did Akiyama Koji win
+441648	c70a	What year did Akiyama Koji win
 441676	c69c	the home run title?
 441698	5b8d	  1.
 441706	2bdc	1984
@@ -7798,15 +7798,15 @@
 442808	25a2	25
 442818	c1eb	  3.
 442826	e5ab	30
-442858	05e0	How many wins did Takeda Kazuhiro
-442886	c22a	have when he led the league?
+442858	05e0	What was Takeda Kazuhiro's win
+442886	c22a	total when he led the league?
 442910	5b8d	  1.
 442918	64b5	13
 442928	271b	  2.
 442936	701d	14
 442946	c1eb	  3.
 442954	1650	15
-442986	6040	In what year did Kobayashi Shigeru
+442986	6040	What year did Kobayashi Shigeru
 443012	c69c	lead the league in wins?
 443034	5b8d	  1.
 443042	29dd	1969
@@ -7822,7 +7822,7 @@
 443194	3233	1992
 443206	c1eb	  3.
 443214	7cc7	1993
-443248	84ed	In what year did Kitabeppu Manabu
+443248	84ed	What year did Kitabeppu Manabu
 443276	c69c	lead the league in wins?
 443298	5b8d	  1.
 443306	2bdc	1984
@@ -7859,7 +7859,7 @@
 444244	b0bf	I didn't play today.
 444280	0c1d	I didn't play again today.
 444316	e237	No playing time again today.
-444434	fb27	Don't slack off on your prep just
+444434	fb27	Don't slack on your prep just
 444462	140c	because you're not playing!
 444496	cf09	No playing time again today...
 444532	7f72	No playing time again today.....
@@ -7873,7 +7873,7 @@
 444876	b0bf	I didn't play today.
 444912	0c1d	I didn't play again today.
 444948	e237	No playing time again today.
-445066	fb27	Don't slack off on your prep just
+445066	fb27	Don't slack on your prep just
 445094	140c	because you're not playing!
 445128	cf09	No playing time again today...
 445164	7f72	No playing time again today.....
@@ -7882,23 +7882,23 @@
 445330	5724	Be ready to go in whenever
 445352	3307	you're needed!
 445388	7f72	No playing time again today.....
-445666	f1d0	Stolen bases today: 
+445666	f1d0	Steals today: 
 445684	cd67	!
-445718	f1d0	Hit by pitch today: 
+445718	f1d0	Hit by pitch: 
 445736	5417	!
 445772	f1d0	Bunts laid today: 
 445790	39bb	!
-445826	f1d0	Stolen bases today: 
+445826	f1d0	Steals today: 
 445844	760c	.
 445878	f1d0	Bunts laid today: 
 445896	3538	.
 445932	d388	Runs batted in: 
 445956	9c9a	.
-445982	ee39	Stolen bases today: 
+445982	ee39	Steals today: 
 446006	6529	.
-446034	8f5e	Walks earned today: 
+446034	8f5e	Walks earned: 
 446058	0e7a	.
-446086	084e	Hit by pitch today: 
+446086	084e	Hit by pitch: 
 446110	d62e	.
 446140	ec40	Bunts laid today: 
 446164	6529	.
@@ -7907,7 +7907,7 @@
 446280	7081	.
 446304	f1d0	Today I was 0 for 
 446322	7081	.
-446360	348d	Pinch hitting, RBI: 
+446360	348d	Pinch-hit RBIs: 
 446388	9c9a	.
 446406	d388	Runs batted in: 
 446430	9c9a	.
@@ -7956,22 +7956,22 @@
 448052	cf5b	A hit in my first pro at-bat:
 448080	4956	a brilliant debut!
 448114	f4e0	First pro at-bat: a hit to left!
-448162	1a45	First pro at-bat: a hit to center!
-448212	11f5	First pro at-bat: a hit to right!
+448162	1a45	First pro AB: a hit to center!
+448212	11f5	First pro AB: a hit to right!
 448260	3572	First pro at-bat: a double!
 448302	8dcb	First pro at-bat: a triple!
 448344	3383	A homer in my first pro at-bat:
 448372	4956	a brilliant debut!
-448406	97a1	An inside-the-park HR in my first
+448406	97a1	An inside-the-park HR in my 1st
 448436	6f65	pro at-bat: a brilliant debut!
 448476	4181	First pro at-bat: a walk.
 448514	dfb8	First pro at-bat, and I got hit
 448540	157f	by a pitch.
-448568	cc2b	First pro AB: dropped 3rd strike.
-448610	b18a	First pro AB: an intentional walk.
+448568	cc2b	First pro AB: dropped 3rd K.
+448610	b18a	First pro AB: intentional walk.
 448652	ed00	No hit in my first pro at-bat.
 448696	08fd	First pro at-bat: a sac bunt.
-448738	40fc	First pro at-bat: a squeeze play!
+448738	40fc	First pro AB: a squeeze play!
 448780	0cb9	First pro at-bat ended in a
 448808	647b	grounder to the pitcher.
 448836	875d	First pro at-bat ended in a
@@ -8040,8 +8040,8 @@
 450656	862e	home run!
 450682	2fc7	But later on, I got my first pro
 450710	862e	hit!
-450750	a56d	And after that, I hit my first pro
-450780	862e	home run!
+450750	a56d	And after that, I hit my first
+450780	862e	pro home run!
 450824	b0bf	I didn't pitch today.
 450896	d0f4	Starting: 
 450920	dce6	 IP, 0 R,
@@ -8181,7 +8181,7 @@
 454282	bad2	one step short of a sellout.
 454310	5637	That was
 454318	3daf	a sellout crowd!!
-455100	ddcb	I celebrated my own birthday with
+455100	ddcb	I celebrated my birthday with
 455130	dc4b	a birthday homer!
 455194	11df	 straight PA with a HR!
 455244	18f6	 straight AB with a HR!
@@ -8216,7 +8216,7 @@
 456330	1c2d	
 456346	2e1a	In the books!
 456416	d035	First homers from both sides!
-456454	3693	Both-sides HRs, second time ever!
+456454	3693	HRs in both at-bats, 2nd time!
 456498	d630	Both-sides HR no. 
 456516	0fd4	
 456538	18f9	In my career!
@@ -8301,7 +8301,7 @@
 459336	7f2e	birthday win!
 459396	abae	Marked my own birthday with a
 459426	f4b9	birthday save!
-459488	5411	Birthday outing ends in a loss...
+459488	5411	Birthday outing, but a loss...
 459576	1ce5	Unbeaten streak 
 459600	cb44	 wins!
 459616	3e10	Now 
@@ -8325,7 +8325,7 @@
 460358	e4f4	Every-Inning K achieved!
 460428	74ae	I ended the team's winning
 460450	cd2d	streak...
-460510	6cc4	Stopped the team's losing streak!
+460510	6cc4	Ended the team's losing streak!
 462122	0839	A win in your pro debut,
 462146	2e6c	well, aren't you something!
 462216	c87b	Okay! Let's go have some fun!
@@ -8413,12 +8413,12 @@
 465238	95e8	Shut them down firmly next time!
 465332	96f8	You got the save, but it was
 465354	feaa	a lackluster outing.
-465378	115d	Shut them down cleanly next time!
+465378	115d	Shut them down clean next time!
 465418	96f8	You got the save, but it was
 465440	feaa	a lackluster outing.
-465464	115d	Shut them down cleanly next time!
+465464	115d	Shut them down clean next time!
 465528	f9c4	Three straight Ks - flawless!
-465570	5892	You shut them down one-two-three!
+465570	5892	You mowed them down 1-2-3!
 465606	8f0f	A decent outing.
 465644	4093	No hits allowed - flawless!
 465678	8f0f	A decent outing.
@@ -8533,11 +8533,11 @@
 470472	09a0	return is far off!
 470504	b55c	Like that, the first team's far!
 470638	feaa	A lackluster outing.
-470662	115d	Shut them down cleanly next time!
+470662	115d	Shut them down clean next time!
 470702	feaa	A lackluster outing.
-470726	115d	Shut them down cleanly next time!
+470726	115d	Shut them down clean next time!
 470790	f9c4	Three straight Ks - flawless!
-470832	5892	You shut them down one-two-three!
+470832	5892	You mowed them down 1-2-3!
 470868	8f0f	A decent outing.
 470906	4093	No hits allowed - flawless!
 470940	8f0f	A decent outing.
@@ -8598,7 +8598,7 @@
 474048	8743	Okay! Let's go have some fun!
 474106	6bab	And we vanished into the night.
 474140	f1ed	And we vanished into town.
-474208	4537	Nice - your first Multi-Hit Game!
+474208	4537	Nice, a first Multi-Hit Game!
 474236	d04d	Keep slugging like that and
 474260	5edc	help the team win!
 474288	db19	I'm counting on you!
@@ -8710,7 +8710,7 @@
 482434	a17f	You need to step it up, or
 482464	4e55	we have a problem!
 482488	db39	Now Night Game ×.
-482590	0811	You seem to be getting results in
+482590	0811	You've been getting results in
 482620	cc96	night games lately.
 482636	cbf8	Keep it up.
 482662	db19	I'm counting on you!
@@ -8814,7 +8814,7 @@
 487350	50a7	-Month Star is gone.
 487454	c48d	You're really strong in summer.
 487482	69e8	I'm counting on you!
-487782	c245	Lately you aren't getting results
+487782	c245	Lately you've had no results
 487812	379f	in summer...
 487828	29dd	They called you Summer Star,
 487838	f8c8	
@@ -8830,7 +8830,7 @@
 488294	5b5a	expectations!
 488502	8510	You used to be a star in the
 488530	5a70	All-Star Game...
-488552	43ad	They once called you Festival Man,
+488552	43ad	They called you Festival Man, 
 488564	f8c8	
 488586	9a65	but that was long ago...
 488616	e21e	No longer Festival Man.
@@ -8947,7 +8947,7 @@
 493506	2faa	Next time, hit in a way that
 493534	d1fd	leads the team to victory!
 493562	b09f	Help us win next time!
-493606	643a	Lead the team to a win next time!
+493606	643a	Bring the team a win next time!
 493640	0a75	Next time, bring the team a
 493668	fd45	win!
 493974	1ec6	Homers: 
@@ -8966,7 +8966,7 @@
 494438	f3b4	, wow!
 494448	d95e	Not bad at all!
 494490	7f97	Aside from the HRs, every
-494514	471d	at-bat was a strikeout, though...
+494514	471d	at-bat struck out, though...
 494558	fb3c	 Ks bug me, though.
 494600	70c1	Remember how you swung when
 494630	9b1f	you hit those homers.
@@ -9010,7 +9010,7 @@
 496022	929e	judge the balls well, that's
 496046	f0fc	good enough.
 496068	8e38	A walk is as good as a hit.
-496096	2ccf	Just think about getting on base!
+496096	2ccf	Just focus on getting on base!
 496140	ce3b	Sac flies - 
 496162	795b	.
 496172	c436	You did the bare minimum job
@@ -9182,7 +9182,7 @@
 502536	7885	Comeback loss no. 
 502558	e91b	
 502576	ba6d	this season...
-502662	dd68	First 10+ run rout of the season!
+502662	dd68	First 10+ run rout this season!
 502698	021e	First 10+ run win of the season!
 502748	7885	10+ run rout, no. 
 502770	5068	
@@ -9190,7 +9190,7 @@
 502806	7885	10+ run win no. 
 502828	5068	
 502848	110d	this season!
-502924	4b9d	Routed: 10+ runs allowed, a first.
+502924	4b9d	Routed: first 10+ runs allowed.
 502960	a14d	Lost: 10+ runs allowed, a first.
 503010	7885	Allowed 10+ runs, no. 
 503032	d4a6	
@@ -9336,7 +9336,7 @@
 507296	2808	How far will you take this
 507324	e464	record? Unbelievable!
 507342	2645	●● straight Multi-Hit Games!
-507372	3d2e	A ●●-win streak, not bad at all.
+507372	3d2e	A ●●-win streak, quite good.
 507400	e28d	●● straight wins is great.
 507428	9623	An unbeaten ●●-win streak,
 507456	1ec2	not bad at all.
@@ -9347,7 +9347,7 @@
 507550	bb5d	A slump is bound to come
 507580	e3fe	sooner or later, so while
 507608	60b6	you're winning, keep winning!
-507630	1ce0	Your home run streak stopped at ●
+507630	1ce0	Your HR streak stopped at ●
 507660	127d	games, huh.
 507670	0ce3	You can go further than that!
 507698	0fe8	Take another shot tomorrow!
@@ -9408,7 +9408,7 @@
 509778	4824	Aw, come on, don't say that.
 509802	da4e	Tonight's on me, so don't hold
 509832	808d	back. Enjoy yourself.
-509884	6bab	And so we vanished into the night.
+509884	6bab	So we vanished into the night.
 509918	f1ed	And so we headed off into town.
 510020	cce0	Oh, 
 510032	d21a	-san.
@@ -9438,7 +9438,7 @@
 510798	c02d	What a shame...
 510858	9080	Had to pay the whole bill.
 510900	6629	Treated them to the whole bill.
-510938	f942	Ended up paying the whole bill...
+510938	f942	Ended up paying it all...
 511076	172b	Yo, 
 511088	127d	.
 511110	f1bc	Did ya see my dramatic walk-off
@@ -9460,12 +9460,12 @@
 511566	c431	  Not today...
 511646	3fe4	My treat tonight,
 511674	7a42	so don't hold back, enjoy it!
-511722	3fe4	It's on me tonight, so don't hold
+511722	3fe4	It's on me, so don't hold
 511750	7a42	back, enjoy yourself!
 511798	4824	Aw, come on, don't be like that.
-511822	3fe4	It's on me tonight, so don't hold
+511822	3fe4	It's on me, so don't hold
 511850	7a42	back, enjoy yourself!
-511908	6bab	And so we vanished into the night.
+511908	6bab	So we vanished into the night.
 511942	f1ed	And so we headed off into town.
 512124	94ab	That walk-off homer was superb!
 512166	6378	That walk-off hit was superb!
@@ -9509,10 +9509,10 @@
 513532	6ba5	 HR and 
 513550	de06	 RBI
 513714	3985	so I win this one!
-513758	9804	I'll shut you down next time too!
-513792	5df6	No hits for you next time either!
+513758	9804	I'll shut you down again!
+513792	5df6	No hits for you next time!
 513824	2fcb	So that's my win!
-513840	89a2	I won't give you a hit next time!
+513840	89a2	I won't give you a hit again!
 513894	c165	Huh...
 513906	f74c	Next time you won't get a hit!
 513936	590d	Is that so...
@@ -9521,8 +9521,8 @@
 514034	1365	Next time I'll shut you down!
 514068	8e5d	That's about even, then.
 514096	ff6c	I won't let you hit next time!
-514276	95ab	Today's 
-514294	bd08	 game: I'm counting on you!
+514276	95ab	vs. 
+514294	bd08	: count on you!
 514368	903d	The scorer's analysis shows that
 514390	d15d	you swing at full power on
 514430	f334	% of swings.
@@ -9647,21 +9647,21 @@
 517714	903d	The scorer's analysis shows
 517736	8a25	your first-pitch attack rate is
 517766	35da	high.
-517786	1aa2	You're quite aggressive, it seems.
+517786	1aa2	You seem quite aggressive.
 517816	903d	The scorer's analysis shows
 517838	8a25	your first-pitch attack rate is
 517868	9d92	high.
-517888	389d	You're quite aggressive, it seems.
+517888	389d	You seem quite aggressive.
 517986	903d	The scorer's analysis shows
 518008	8a25	your first-pitch attack rate has
 518038	5c3d	dropped.
-518064	2dc1	You've changed from the aggressive
-518092	5447	batting you used to do, it seems.
+518064	2dc1	You've changed from your old
+518092	5447	aggressive batting, it seems.
 518122	903d	The scorer's analysis shows
 518144	8a25	your first-pitch attack rate has
 518174	d87c	dropped.
-518200	2dc1	You've changed from the aggressive
-518228	e781	batting you used to do, it seems.
+518200	2dc1	You've changed from your old
+518228	e781	aggressive batting, it seems.
 518278	f2e0	No longer an Attack hitter.
 518330	903d	The scorer's analysis shows
 518352	8a25	your first-pitch attack rate is
@@ -9708,7 +9708,7 @@
 519578	903d	The scorer's analysis shows
 519600	8499	that you rarely try to steal
 519624	fd29	bases.
-519640	5bee	Looks like you're getting careful.
+519640	5bee	Looks like you're more careful.
 519674	903d	The scorer's analysis shows
 519696	8499	that you rarely try to steal
 519720	fd29	bases.
@@ -9719,12 +9719,12 @@
 519904	6864	You seem to be getting
 519924	a4ff	more aggressive.
 519946	903d	The scorer's analysis results
-519968	4436	show you have been trying to steal
+519968	4436	show you've tried to steal
 519996	ce89	more often.
 520012	6864	You seem to be growing
 520032	f165	more aggressive.
 520072	d91c	Cautious Steal is gone.
-520166	4e9f	You're great in interleague play.
+520166	4e9f	You shine in interleague play.
 520194	69e8	I'm counting on you!
 520454	82d5	Your results in interleague
 520476	4873	play haven't been great.
@@ -9837,7 +9837,7 @@
 525622	1f1b	To answer the fans' loud cheers,
 525648	d9b7	keep giving it even more
 525674	4a67	from here on!
-525692	6150	Keep this up! I'm expecting more!
+525692	6150	Keep it up! I expect more!
 525730	f400	No longer prone to strikeouts!
 525822	8cae	Special coaching for you today.
 525850	5dc4	Work on beating your weak spots!
@@ -9856,7 +9856,7 @@
 526414	1f1b	To answer the fans' loud cheers,
 526440	d9b7	keep giving it even more
 526466	4a67	from here on!
-526484	6150	Keep this up! I'm expecting more!
+526484	6150	Keep it up! I expect more!
 526522	f5ec	Timely Error is gone!
 527238	8cae	Special coaching for you today.
 527266	5dc4	Work on beating your weak spots!
@@ -9875,7 +9875,7 @@
 527814	1f1b	To answer the fans' loud cheers,
 527840	d9b7	keep giving it even more
 527866	4a67	from here on!
-527884	6150	Keep this up! I'm expecting more!
+527884	6150	Keep it up! I expect more!
 527922	1904	No longer prone to walks!
 528014	8cae	Special coaching for you today.
 528042	5dc4	Work on beating your weak spots!
@@ -9895,7 +9895,7 @@
 528606	1f1b	To answer the fans' loud cheers,
 528632	d9b7	keep giving it even more
 528658	4a67	from here on!
-528676	6150	Keep this up! I'm expecting more!
+528676	6150	Keep it up! I expect more!
 528714	8af3	No longer prone to home runs!
 528806	8cae	Special coaching for you today.
 528834	5dc4	Work on beating your weak spots!
@@ -9915,14 +9915,14 @@
 529406	1f1b	To answer the fans' loud cheers,
 529432	d9b7	keep giving it even more
 529458	4a67	from here on!
-529476	6150	Keep this up! I'm expecting more!
-529514	b8d9	No more tightening up near a win!
+529476	6150	Keep it up! I expect more!
+529514	b8d9	No more tightening near a win!
 529606	8cae	Special coaching for you today.
 529634	5dc4	Work on beating your weak spots!
 529662	3746	You have to do something about
 529690	557f	your slow starts!
 529716	69e8	I'm counting on you!
-529878	dcbe	You get hit hard early too often!
+529878	dcbe	You get rocked early too often!
 529908	10d5	Be aware of it and pitch
 529936	87a3	with care!
 529962	b2e7	To answer the fans' loud cheers,
@@ -9935,15 +9935,15 @@
 530224	1f1b	To answer the fans' loud cheers,
 530250	d9b7	keep giving it even more
 530276	4a67	from here on!
-530294	6150	Keep this up! I'm expecting more!
+530294	6150	Keep it up! I expect more!
 530332	b5ac	Slow Starter is gone!
 530434	8cae	Special coaching for you today.
 530462	5dc4	Work on beating your weak spots!
 530490	455f	You let your guard down against
-530520	08c5	everyone but the cleanup hitters!
+530520	08c5	all but the cleanup hitters!
 530544	69e8	I'm counting on you!
 530702	e397	Saving strength for some batters
-530732	9d14	is smart, but don't get careless!
+530732	9d14	is smart, but don't get lax!
 530760	7b2f	Give me your best pitching!
 530786	b2e7	To answer the fans' loud cheers,
 530814	c859	give it even more effort!
@@ -9955,7 +9955,7 @@
 531042	1f1b	To answer the fans' loud cheers,
 531068	d9b7	keep giving it even more
 531094	4a67	from here on!
-531112	6150	Keep this up! I'm expecting more!
+531112	6150	Keep it up! I expect more!
 531150	1699	Pace problem is gone!
 531246	8cae	Special coaching for you today.
 531274	5dc4	Work on beating your weak spots!
@@ -9969,12 +9969,12 @@
 531612	c859	give it even more effort!
 531652	eac0	Hothead has
 531668	decd	set in...
-531758	03f2	Lately you haven't lost your cool
+531758	03f2	Lately you've kept your cool
 531786	807a	and you're holding them down!
 531812	1f1b	To answer the fans' loud cheers,
 531838	d9b7	keep giving it even more
 531864	4a67	from here on!
-531882	6150	Keep this up! I'm expecting more!
+531882	6150	Keep it up! I expect more!
 531920	2116	Hothead is gone!
 532014	8cae	Special coaching for you today.
 532042	5dc4	Work on beating your weak spots!
@@ -9993,14 +9993,14 @@
 532602	1f1b	To answer the fans' loud cheers,
 532628	d9b7	keep giving it even more
 532654	4a67	from here on!
-532672	6150	Keep this up! I'm expecting more!
+532672	6150	Keep it up! I expect more!
 532710	967c	Shoot Spin is gone!
 532810	8cae	Special coaching for you today.
 532838	5dc4	Work on beating your weak spots!
 532866	26c5	Your good and bad stretches are
 532894	716b	very clear-cut!
 532920	dd53	Toughen your mind, even it out!
-533086	dcaa	You swing wildly from good to bad!
+533086	dcaa	Your highs and lows are wild!
 533114	5241	That's what you call erratic!
 533134	b2e7	To answer the fans' loud cheers,
 533162	c859	give it even more effort!
@@ -10011,18 +10011,18 @@
 533360	1f1b	To answer the fans' loud cheers,
 533386	d9b7	keep giving it even more
 533412	4a67	from here on!
-533430	6150	Keep this up! I'm expecting more!
+533430	6150	Keep it up! I expect more!
 533526	801e	!
 533534	5d35	You took Rookie of the Year!
 533554	968a	I always believed you'd do it.
 533594	edbf	Just like you said at the
 533620	4b75	welcome press conference.
 533634	e78a	Quite the accomplishment!
-533664	b4e3	At the press conference, you said
-533692	3cac	you wanted to make the first team,
+533664	b4e3	At the press event, you said
+533692	3cac	you wanted a first-team spot,
 533718	b4d1	and you took Rookie of the Year!
 533746	c428	You said at the press conference
-533774	9106	you'd modestly work on your body,
+533774	9106	you'd modestly build your body,
 533804	31af	and ended up Rookie of the Year!
 533820	997e	You never know what'll happen
 533846	0651	in this world.
@@ -10083,21 +10083,21 @@
 535840	8113	At last, today is
 535858	e7e0	your retirement game...
 535894	00fa	To the fans who cheered you on,
-535922	1784	to the team mates who pushed you,
+535922	1784	to teammates who pushed you,
 535950	319f	and above all, to me,
 535974	9449	show your final glory!
 535998	1d71	I'll burn it
 536012	08e5	into my memory!
 536044	00fa	To the fans who cheered you on,
-536072	1784	to the team mates who pushed you,
+536072	1784	to teammates who pushed you,
 536100	4bd0	to the family who supported you,
 536120	319f	and above all, to me,
 536144	9449	show your final glory!
 536168	1d71	I'll burn it
 536182	08e5	into my memory!
 536260	133b	 years as a pro,
-536278	f91d	Thank you for all your hard work.
-536298	60da	We want your achievements told to
+536278	f91d	Thanks for all your hard work.
+536298	60da	We want your feats told to
 536326	52d4	future generations, and so
 536346	354b	Uniform No. 
 536364	eba9	
@@ -10108,11 +10108,11 @@
 536492	4386	goes to this number. Decided!
 536518	f010	You will be remembered
 536534	4ae0	forever.
-536560	f91d	Thank you for all your hard work.
+536560	f91d	Thanks for all your hard work.
 536634	0e7c	Oh, wait.
-536646	0281	There's one more important thing.
+536646	0281	There's one more big thing.
 536928	133b	 years as a pro,
-536946	f91d	Thank you for all your hard work.
+536946	f91d	Thanks for all your hard work.
 536968	e17d	Actually, next season I want you
 536996	98e9	to take over from me as manager.
 537022	2589	Will you do it?
@@ -10165,7 +10165,7 @@
 538602	c137	playing.
 538618	2d2a	Well, nobody but you decides
 538646	aa23	when to step away.
-538668	f906	Stay true to yourself to the end!
+538668	f906	Be yourself to the very end!
 538704	9c64	What a shame, really...
 538726	3325	But it's the road you chose.
 538754	5c7d	In the remaining games, leave no
@@ -10176,14 +10176,14 @@
 538914	f538	For the remaining games,
 538934	3adc	-san's glory
 538950	10b8	will be burned into my eyes.
-538988	bf29	You could still play on, you know.
+538988	bf29	You could still play, you know.
 539014	4f1e	But it can't be helped...
 539042	cee2	I'm truly sorry to see it...
 539070	acd4	Our time playing together
 539096	f331	is running short, but
 539118	82d9	Even if only a little,
 539136	81d3	-san's example,
-539152	57e8	I want to learn as much as I can.
+539152	57e8	I want to learn all I can.
 539210	f64e	Fan club chief, 
 539230	3171	here!
 539240	6f27	I was truly shocked to hear you
@@ -10266,7 +10266,7 @@
 541968	a142	
 541976	6cb1	has announced his retirement.
 542018	76ce	 said,
-542028	5be3	「I can't throw my pitch anymore,
+542028	5be3	「I can't throw my pitch now,
 542056	cc6d	  so I decided to retire.」
 542078	f220	He made this statement.
 542100	8dc0	The club respects his decision
@@ -10286,7 +10286,7 @@
 542558	cd49	fine piece of hitting...
 542584	90cc	I threw what I thought was a
 542606	aba8	pretty confident pitch, but...
-542634	b5f1	Maybe it's time for me to go, too.
+542634	b5f1	Maybe it's my time to go, too.
 542672	9c17	Enough of that talk.
 542700	2ff1	Let's liven things up!
 542728	ed02	Please.
@@ -10298,7 +10298,7 @@
 542928	a142	
 542936	6cb1	has announced his retirement.
 542978	76ce	 said,
-542988	5be3	「I can't throw my pitch anymore,
+542988	5be3	「I can't throw my pitch now,
 543016	cc6d	  so I decided to retire.」
 543038	f220	He made this statement.
 543060	8dc0	The club respects his decision
@@ -10322,14 +10322,14 @@
 543690	8f25	 vs 
 543708	bd9a	:
 543718	77c5	Go out in style!
-543756	0567	Your retirement is set this year.
-543820	74d0	We're holding an autograph session
+543756	0567	You're retiring after this year.
+543820	74d0	We're holding an autograph
 543840	bcd4	before the game.
 543862	3604	Please take part!
 543894	dd58	  Of course!
 543910	a02a	  Not before a game...
 543972	b476	Meeting the fans matters.
-544000	d0ac	The fans will be thrilled, I bet!
+544000	d0ac	Fans will be thrilled, I bet!
 544028	29a5	I'm counting on you!
 544070	f52e	I see...
 544088	4c0a	 Too bad.
@@ -10351,9 +10351,9 @@
 544532	3947	will be your biggest goal.
 544558	7704	  Hm, hm. Anything else?
 544580	4a4b	  Got it. That's enough.
-544632	5f86	Well, no matter how well you play,
+544632	5f86	Well, however well you play,
 544660	42c0	baseball is a team game.
-544686	994b	There will be times you can't win.
+544686	994b	There'll be times you can't win.
 544712	35b5	The young players, practicing
 544742	91ce	with you, should grow a lot.
 544766	5f66	With everyone's strength,
@@ -10429,7 +10429,7 @@
 546622	3f59	 years...
 546636	1ef6	The crown of your pro career.
 546660	df54	Your final year,
-546674	5e91	 leave no regrets;
+546674	5e91	 no regrets;
 546696	5092	you must play to the end.
 546722	3c3c	I'll be cheering for you too.
 546748	38f3	Oh, that's right!
@@ -10440,8 +10440,8 @@
 547042	7175	We missed the pennant, but
 547076	1232	I tasted the long-awaited
 547092	aca8	Japan championship!!
-547152	be48	We missed out on the Japan title,
-547182	c137	but I tasted the pennant at last!
+547152	be48	We missed the Japan title,
+547182	c137	but I finally tasted a pennant!
 547252	a0a6	 reached!
 547264	6888	I made the Hall of Fame!!
 547320	8226	I packed my home ballpark
@@ -10486,7 +10486,7 @@
 548478	edb4	 begins.
 548494	4a8c	What kind of drama awaits
 548516	5e9c	us this year?
-548544	f721	Let's look forward to great games!
+548544	f721	Let's expect some great games!
 548608	123a	At the summer 
 548620	7350	,
 548642	9213	 is on scouts' radar.
@@ -10496,7 +10496,7 @@
 548742	8226	Over this two-month battle,
 548766	6e97	what kind of drama
 548788	eea6	awaits us?
-548812	f721	Let's look forward to great games!
+548812	f721	Let's expect some great games!
 548876	b1f4	At the spring 
 548888	7350	,
 548910	4d04	 as an instant asset,
@@ -10507,7 +10507,7 @@
 549030	fd08	Over this two-month battle,
 549054	6e97	what kind of drama
 549076	eea6	awaits us?
-549100	f721	Let's look forward to great games!
+549100	f721	Let's expect some great games!
 549164	488e	At the fall 
 549176	7350	,
 549198	4d04	 as an instant asset,
@@ -10517,7 +10517,7 @@
 549298	edb4	 begins.
 549314	6e97	What kind of drama
 549336	f0c2	will unfold?
-549358	f721	Let's look forward to great games!
+549358	f721	Let's expect some great games!
 549424	123a	At the summer 
 549436	7350	,
 549458	4d04	 as an instant asset,
@@ -10601,8 +10601,8 @@
 551892	984e	Next, the fielders.
 551948	174c	These players are ones to watch!
 551982	0577	This player is one to watch!
-552008	9e98	Not long until the fateful Draft.
-552036	f466	Who will be picked by which team?
+552008	9e98	Soon comes the fateful Draft.
+552036	f466	Who gets picked by which team?
 552064	9ab1	It's really exciting!
 552124	7350	: 
 552170	1850	 pitcher,
@@ -10612,7 +10612,7 @@
 552890	f68c	a no-hit shutout
 552910	00cb	 achieved
 552930	b6d0	shutouts in every game
-552944	3ad6	 pulled off
+552944	3ad6	 achieved
 552980	e2da	km/h
 552992	d258	 recorded
 553010	b2b1	in a game 
@@ -10635,7 +10635,7 @@
 553330	2942	tournament AVG.
 553356	d258	
 553376	fbe1	I want to be a pitcher who
-553400	d53f	gets strikeouts with my fastball!
+553400	d53f	racks up Ks with my fastball!
 553422	0196	I'll use many breaking balls
 553448	6b20	to get outs on contact!
 553476	f713	I want to show off my best
@@ -10662,7 +10662,7 @@
 553932	2210	I'm confident in my power!
 553958	d201	I'm aiming to become a
 553986	11ff	home run hitter.
-554002	284e	I'm proud of my reliable hitting!
+554002	284e	I'm proud of my steady hitting!
 554032	9062	When it comes to bat control,
 554054	4dce	I won't lose to anyone!
 554074	574e	I'm confident in my hitting!
@@ -10677,7 +10677,7 @@
 554298	ada0	and I want to show it off!
 554324	1c42	I'm certain I can beat lefties!
 554354	d1c8	I'll aim for Rookie of the Year!
-554410	e7dd	The Japan Series MVP honor goes to
+554410	e7dd	The Japan Series MVP goes to
 554438	b5a4	
 554454	5637	's 
 554466	1e72	
@@ -10700,7 +10700,7 @@
 555006	69ef	Now we're one win away!!
 555024	ce89	Next game we clinch the title!!!
 555058	4fe4	That puts us one win away!!
-555080	a570	Let's clinch the title next game!
+555080	a570	Let's clinch it next game!
 555138	823f	That's three wins in a row!!!
 555158	20fa	But it's too early to celebrate!
 555194	37e8	Tighten up one more time and
@@ -10709,17 +10709,17 @@
 555274	aad1	But,
 555286	fdf3	let's tighten up once more
 555310	f6f8	and clinch the title tomorrow!!
-555370	bcfd	Three straight losses, cornered...
+555370	bcfd	Lost 3 straight, cornered...
 555398	29d8	But it's not over yet!
-555438	92bd	After three losses, some teams won
-555468	c4a9	four straight. Many have done it.
-555494	3c7b	Never give up hope until the end,
+555438	92bd	After three losses, some won
+555468	c4a9	four straight; many teams have.
+555494	3c7b	Never lose hope until the end,
 555518	7fea	show them our brand of baseball!
-555552	c490	Three straight losses, cornered...
+555552	c490	Lost 3 straight, cornered...
 555580	9450	But it's not over
 555608	e103	yet!
-555622	92bd	After three losses, some teams won
-555652	f1df	four straight. Many have done it.
+555622	92bd	After three losses, some won
+555652	f1df	four straight; many teams have.
 555678	3c7b	Let's never give up hope,
 555702	08f9	and show them our brand of
 555720	a6b1	baseball!
@@ -10774,7 +10774,7 @@
 557064	bdbd	So today,
 557080	5820	I'd like to give my predictions
 557104	2d2f	for who wins the Japan Series.
-557124	c14c	My prediction is
+557124	c14c	My call is
 557140	e2b9	..
 557150	e2b9	..
 557160	e2b9	..
@@ -10796,7 +10796,7 @@
 557690	a986	 vs 
 557708	b8cd	Which team will claim
 557732	7ed1	the Japan Series crown?
-557760	4376	First pitch is at 6 o'clock sharp!
+557760	4376	First pitch is at 6 sharp!
 557848	801e	!
 557856	5e20	You're in the starting lineup!
 557902	29a5	I'm counting on you!
@@ -10838,7 +10838,7 @@
 559584	0373	you're growing the most!
 559612	5fc1	Make sure you don't waste even
 559642	5632	a single day.
-559724	2dca	You're already a finished player.
+559724	2dca	You already feel polished.
 559752	c72a	Whether you become a true star
 559780	1173	depends on how long you can keep
 559810	c09b	your current peak condition!
@@ -11036,7 +11036,7 @@
 566638	8d1a	  Home for medical tests
 566662	79d0	  Trophy boast
 566746	2dc0	  Jerseys sell out!
-566770	9f5d	  3 more for all ballpark trophies
+566770	9f5d	  3 more for all park trophies
 566798	af74	  New cheer song
 566886	010c	  Wife on leave
 566908	d7d9	  Rumor: Kantoku quits midyear
@@ -11505,7 +11505,7 @@
 588184	ddb0	It's a mentally tough role, but
 588214	390f	you can do it!
 588286	801e	!
-588294	6510	Trying you in middle relief first.
+588294	6510	Trying you in middle relief.
 588384	f5b6	Hey 
 588396	4c1f	...
 588418	a004	It was a short time, but the
@@ -11553,7 +11553,7 @@
 589668	e518	we'll surely win!
 589698	2ad9	Our opponent: 
 589748	c8e3	Finished 4th or lower last year.
-589758	6b8e	Still, don't let your guard down.
+589758	6b8e	Still, don't get complacent.
 589822	efd9	We finished 4th or lower too,
 589844	11f0	remember.
 589880	efd9	We finished 4th or lower too,
@@ -11563,7 +11563,7 @@
 590054	6c0f	and stares, the reporters throw
 590084	86f2	questions at me...
 590144	1481	Reporter: 
-590154	ebb9	Best high school memory?
+590154	ebb9	Best school memory?
 590182	67eb	  Hanging out with friends
 590210	f01e	  All baseball, I guess
 590234	e935	  Winning Koshien, of course
@@ -11592,7 +11592,7 @@
 594446	3396	Lastly, your goals
 594468	34f8	please.
 594484	7c07	  I want Rookie of the Year
-594506	bc2e	  I want to play first-team games
+594506	bc2e	  I want first-team games
 594530	1903	  Building my body first
 594590	1481	Reporter: 
 594600	e415	We're counting on you!
@@ -11611,7 +11611,7 @@
 598386	3396	Lastly, your goals
 598408	34f8	please.
 598424	7c07	  I want Rookie of the Year
-598446	bc2e	  I want to play first-team games
+598446	bc2e	  I want first-team games
 598470	1903	  Building my body first
 598530	1481	Reporter: 
 598540	e415	We're counting on you!
@@ -11621,18 +11621,18 @@
 598846	bbd1	Move-in day
 598860	7cb3	 dorm
 598870	d04d	The day to move in finally came,
-598894	8062	and I opened the door to the pros.
+598894	8062	and I opened the pros' door.
 598924	d792	At last, I opened the pro door.
 598978	0cf8	Hey, we've been waiting for you.
 599004	8054	-kun!
-599014	69e0	Being famous must be rough, I bet.
+599014	69e0	Fame must be rough, I bet.
 599048	7c07	Oh, you must be...
 599078	a757	-kun, right?
 599108	8aaf	Come on in, come in!
 599130	46ad	I'll show you to your room.
 599182	e141	This is where you'll be living
 599210	a82b	from today. Your room.
-599222	bb34	Oops, I haven't introduced myself.
+599222	bb34	Oops, let me introduce myself.
 599256	eb65	I'm the 
 599268	bfe6	 dorm manager,
 599280	6e41	Call me 
@@ -11640,7 +11640,7 @@
 599304	a52d	Pleased to meet you!
 599338	dd54	Well, your pro baseball life
 599366	158e	is about to start, but...
-599392	5f56	Want to hear a short explanation?
+599392	5f56	Want a short explanation?
 599422	45d2	  Yes, please
 599444	6d60	  No, I'm fine
 599488	07e4	Okay, all right.
@@ -11656,11 +11656,11 @@
 599794	46e8	 Coach.
 599830	caee	Fielding/run: 
 599876	8177	 Coach.
-599914	ce2a	In this camp and preseason games,
+599914	ce2a	In camp and preseason games,
 599940	b956	keep showing us what you've got.
 599970	04bd	Even if the Opening Day roster
-599996	9de9	is a stretch, a first-team call-up
-600020	fe54	this season is well within reach!
+599996	9de9	is a stretch, a 1st-team call-up
+600020	fe54	this season is well in reach!
 600044	9e28	Now, let's begin practice.
 600066	acb8	It's day one, so we'll go easy.
 600140	84ff	I ran through the basic drills
@@ -11681,7 +11681,7 @@
 600758	0177	you should keep improving.
 600786	db19	I'm expecting a lot from you!
 600856	1514	Everyone, gather round!!
-600872	3426	Okay, from today we finally begin
+600872	3426	Okay, from today we begin
 600900	7c71	full-scale practice.
 600922	b379	We're about to start practice,
 600944	9433	but do you have any questions?
@@ -11690,25 +11690,25 @@
 601024	dcae	Okay! Let's start practice!
 601056	ce73	Okay, I'll explain.
 601076	ef55	First, take a look at this.
-601108	cabd	Camp practice or regular practice,
-601136	3c25	you basically just choose a drill
+601108	cabd	Camp or regular practice,
+601136	3c25	you basically just pick a drill
 601166	78ae	from this menu.
-601184	a3f7	These options change depending on
+601184	a3f7	These change depending on
 601214	7d05	the coach in charge.
 601232	f1fc	The right shows drill details.
 601262	e1ff	In order: drill name, coach in
 601290	83bf	charge, and the drill's effect.
 601312	afa4	You can earn My Spirit by
 601338	f51a	practicing.
-601356	4b47	The more stars the My Spirit has,
+601356	4b47	The more stars My Spirit has,
 601384	c9e1	the more My Spirit you earn.
 601410	e931	The stars show how strong your
-601432	5462	bond is with the coach in charge.
+601432	5462	bond is with the coach.
 601458	c0b8	Also, a vessel you can earn
 601486	d813	through a drill may be
 601514	028d	displayed.
-601528	2328	By practicing the number of times
-601550	a79e	shown, you can earn the
+601528	2328	By practicing the number of
+601550	a79e	times shown, you can earn the
 601574	38fc	vessel.
 601608	f9c0	Hey, why are you spacing out?
 601634	96c8	Listen up, I'm explaining.
@@ -11718,17 +11718,17 @@
 601720	6beb	That could be how you two
 601748	1edc	become friends.
 601764	7597	Now, I want you to watch the
-601792	e88b	fatigue meter at upper left, too.
+601792	e88b	fatigue meter at top left, too.
 601814	e714	When fatigue has built up, don't
 601844	bba4	push it. Taking a 
 601854	a626	rest
-601864	1052	 is key too.
+601864	1052	 is key.
 601886	a0bd	If fatigue builds up, you get
-601908	f2c6	injured more easily, or your form
+601908	f2c6	hurt more easily, or your form
 601936	d86e	stops improving.
 601964	1130	Check your abilities as you go,
 601990	b13b	and plan your practice.
-602016	d561	Oh yeah, drills with the Intensive
+602016	d561	Oh yeah, drills with Intensive
 602044	144b	Practice mark work very well,
 602074	aae7	so I recommend them.
 602098	0589	That covers the key points.
@@ -11745,7 +11745,7 @@
 602470	64be	Anyway, you've got pretty good
 602500	2b68	reflexes, man.
 602534	dda5	Did we have a guy like this...?
-602582	0eac	Believe it or not, I've got a shy
+602582	0eac	Believe it, I've got a shy
 602610	8d97	side, so it's been hard to
 602640	e436	come talk to you, man.
 602650	acfb	We're from the same draft class,
@@ -11787,16 +11787,16 @@
 604372	9fe2	Okay, then 「
 604390	42f9	」 it is.
 604400	ab3a	Let's launch with that!
-604534	e4b6	After agonizing over it, I finally
+604534	e4b6	After agonizing, I finally
 604560	d8d8	decided to tell the kantoku I'm
 604588	d6df	retiring.
 604674	08a8	Retirement... I see...
-604696	cfee	You've thought it through, right?
+604696	cfee	You've thought it over, right?
 604724	ebe4	Okay, understood.
 604742	b45c	I'll respect your decision.
-604778	d9b5	/
+604778	d9b5	/ 
 604794	8f25	 vs 
-604812	6178	 game will be your last.
+604812	6178	 is your last.
 604826	3338	Let's go with that.
 604838	0f83	Until then, play so that you
 604868	71f9	have no regrets.
@@ -11853,13 +11853,13 @@
 606640	dfa1	Okay, we'll follow that rotation
 606670	8e9a	as best we can.
 606726	d29f	You're not a starter, so...
-606754	b5ac	Basically, you'll be on the bench
+606754	b5ac	Basically, you're on the bench
 606782	ee79	every day.
-606846	f00f	How about making a statement with
+606846	f00f	How about a statement with
 606872	764a	your baseball gear by now?
 606898	ce10	I know, I'll introduce someone.
 606978	f1a1	Lucky you.
-606994	3684	Getting new gear is a nice change
+606994	3684	New gear is a nice change
 607024	c328	of pace.
 607040	f482	Give him a call next time.
 607114	5ac0	Nice to meet you.
@@ -11957,14 +11957,14 @@
 611444	26f9	Okay, then finish up early and
 611474	eb22	get a good rest.
 611500	0e4a	Cut practice short.
-611530	9924	I see. Then let's start practice.
+611530	9924	I see. Let's start practice.
 611574	e22b	Then let's start practice.
 611794	49a1	: Headed there.
 611834	481c	: Headed back.
 611864	32c7	 to 
 611882	49a1	: Headed out.
 611990	801e	!
-611998	6f63	Go up to the first team tomorrow!
+611998	6f63	Go up to the 1st team tomorrow!
 612054	48ee	  Yes!
 612066	7413	  I'm not confident...
 612118	b020	Yeah, you can do it!
@@ -11973,12 +11973,12 @@
 612196	00a8	If you have no confidence, don't
 612224	c280	be a pro ballplayer!
 612242	ec43	Listen, you can do it!
-612268	18f6	Grab your chance on the first team
+612268	18f6	Grab a chance on the 1st team
 612292	6c95	and win a regular's spot!
-612346	3e0e	First team promotion is official!
+612346	3e0e	First-team call-up is official!
 613136	461a	Hey!
 613148	801e	!
-613156	705b	I got promoted to the first team!
+613156	705b	I got promoted to the 1st team!
 613194	7463	Hurry up and join me, man!
 613226	9f08	Looking forward to it, man.
 613406	e91a	What?!
@@ -11986,22 +11986,22 @@
 613450	7a3c	You beat me to it, huh.
 613514	0633	Yo! 
 613526	801e	!
-613534	80b6	Finally made the first team, huh.
-613564	b101	I'm on the farm just for now, but
-613592	0ee5	I've done the first team already.
+613534	80b6	Finally made the 1st team, huh.
+613564	b101	I'm on the farm for now, but
+613592	0ee5	I've already done the 1st team.
 613620	9722	Call me a repeater, ya know?
 613646	a43d	Don't get that wrong, man.
 613684	80bd	Don't repeat the farm, though...
 613718	0633	Yo! 
 613730	801e	!
-613738	7312	Finally made it to the first team.
+613738	7312	Finally up on the first team.
 613766	593c	Oops!
 613778	b6d2	I got promoted a little earlier,
 613808	55bd	but you can talk casually, man.
 613836	87ac	If you have questions about the
 613866	2b8e	first team, just ask me.
 613986	801e	!
-613994	e50d	Go up to the first team tomorrow!
+613994	e50d	Go up to the 1st team tomorrow!
 614040	7cb5	Moved up to the first team.
 614074	6265	Played in a preseason game.
 614150	03ee	Got My Spirit!
@@ -12017,19 +12017,19 @@
 614916	e0f4	From here on, we coaches will
 614944	6df1	do all we can to support you,
 614972	3899	so count on us.
-615076	aa15	Now, a last word from the kantoku.
+615076	aa15	Now, a last word from Kantoku.
 615172	ee8a	This camp let me gauge your
 615198	61b8	strength to some extent.
-615228	04e5	Now we head into preseason games,
+615228	04e5	Now we enter preseason games,
 615256	dd7d	and I'll pick the Opening Day
 615286	82c8	roster by those results.
 615314	aeee	There's still plenty of chance,
-615344	3167	so young players, make your case.
+615344	3167	so young guys, make your case.
 615374	69f7	That is all.
-615392	9946	Whatever issues remain from camp,
-615418	aed7	solve them during preseason games,
+615392	9946	Any issues left from camp,
+615418	aed7	solve them in preseason games,
 615444	521f	before Opening Day.
-615472	21ce	Assume the regular spots are open
+615472	21ce	Assume regular spots are open
 615498	1de4	and keep making your case!
 615524	69f7	That is all.
 615614	e732	! Okui!
@@ -12045,10 +12045,10 @@
 615840	db19	I'm expecting great things!
 615900	e831	Kantoku talked to us himself?
 615928	24ca	What an honor, man!
-615944	8054	I wanna reach the first team soon
+615944	8054	I wanna reach the 1st team soon
 615972	8c86	and help Kantoku out, man!
-616162	d66e	Finally, my first preseason games
-616184	af92	as a pro are here!
+616162	d66e	Finally, my first preseason
+616184	af92	games as a pro are here!
 616218	54cd	Preseason games
 616240	27ca	are finally here!
 616278	b447	Hey, rookies!
@@ -12063,7 +12063,7 @@
 616546	354e	-san just
 616556	3564	talked to us, man!
 616576	5535	Let's follow the seniors around
-616606	ece7	and get intros to shops and girls!
+616606	ece7	and get shop and girl intros!
 616644	4c1f	...
 616686	159d	...I mean, sure, baseball skills
 616716	6dd1	too, of course.
@@ -12089,7 +12089,7 @@
 617416	dffb	Oh! Thanks, thanks.
 617438	5532	Mmm, so good!
 617462	a1d4	The last to laugh is the winner!
-617492	ca22	So, this year's 
+617492	ca22	This year's 
 617508	9a3d	Contract Renewal
 617520	b6ba	:
 617534	a6ba	whose salary is bigger.
@@ -12100,16 +12100,16 @@
 617698	4166	's restless chatter
 617720	d586	filled the meal.
 617770	d91e	Well now, since it's your treat,
-617796	50a8	I'll dig in without holding back.
+617796	50a8	I'll dig in with no restraint.
 617822	3ead	Excuse me!
 617846	8c2a	Coming!
 617860	6f52	What'll it be?
-617888	8c2c	Let's see, first a special drink,
+617888	8c2c	Hmm, first a special drink,
 617918	0a1b	yakitori platter, dice steak,
-617948	af62	chicken wings, then fugu sashimi,
+617948	af62	wings, then fugu sashimi,
 617978	1ef9	seared bonito and fried tofu,
-618006	932d	premium beef shabu-shabu, large...
-618036	722a	stone-pot bibimbap, liver sashimi,
+618006	932d	premium beef shabu, large...
+618036	722a	stone-pot bibimbap, raw liver,
 618064	0284	raw oysters, tempura platter...
 618118	4d5e	, anything else?
 618152	5daa	  That's plenty!
@@ -12120,7 +12120,7 @@
 618332	32c3	OK! I'm eating my fill tonight!
 618380	6497	How about it?
 618392	2755	This year, at Contract Renewal,
-618420	131d	let's see whose salary is higher!
+618420	131d	let's see who earns more!
 618448	2205	Next, a showdown with a special
 618476	68a8	dinner on the line!
 618506	1f4e	So I ended up in yet another
@@ -12144,9 +12144,9 @@
 619026	d14d	For example, if three clubs make
 619054	ce99	offers by Jan. 25...
 619082	e6a0	you may choose where to go from
-619112	ffbf	four, including your current club.
-619134	166a	Once you use free agency, it takes
-619162	e267	at least 4 years to earn it again.
+619112	ffbf	four, including your own club.
+619134	166a	Once you use your FA, it takes
+619162	e267	at least 4 years to regain it.
 619194	b93c	...That's about it.
 619216	6be7	I'd hate to see you go, but make
 619244	a187	your baseball life one with no
@@ -12168,8 +12168,8 @@
 619794	f3ee	I considered using free agency,
 619822	0641	but I'll retire after all.
 619886	4dbf	Announced my free agency!
-619916	5aa2	(From now until Jan. 25 next year,
-619944	a9dd	you will wait for approaches from
+619916	5aa2	(Until Jan. 25 of next year,
+619944	a9dd	you wait for approaches from
 619972	a931	other clubs.)
 620068	8054	-kun!
 620078	348e	Offer: uniform No.
@@ -12217,7 +12217,7 @@
 621378	3876	Your treat, of course, man!
 621450	4dea	Had a meal with Okui at a diner.
 621488	099b	Yep, I knew you had it, man.
-621516	247d	Every bit the guy I had my eye on.
+621516	247d	Every bit the guy I had pegged.
 621538	dfbe	You're a fitting rival for me.
 621564	7986	Man, you really are.
 621592	ff6f	Got stuck listening to Okui's
@@ -12227,7 +12227,7 @@
 621756	3527	understand what the word
 621780	f1bc	'pro' means!?
 621796	cdbb	Me, I...
-621828	72ce	Got stuck listening to Okui brag.
+621828	72ce	Stuck listening to Okui brag.
 621902	da2e	Became jinxed to lose.
 621964	6bd1	Became prone to errors at key
 621988	0c64	moments.
@@ -12237,21 +12237,21 @@
 622138	6dee	pitching, too!
 622160	a676	Teach me your secrets of
 622182	6dee	hitting, too!
-622210	8b16	Oh! This omelet roll is the best!
+622210	8b16	Oh! This rolled omelet rocks!
 622270	7142	By the way...
-622288	0ff2	This time of year, you hear about
+622288	0ff2	This time of year, you hear of
 622318	0b3d	people leaving baseball, huh.
 622346	b39a	We've only just gotten started,
 622374	3ea1	though.
 622390	7fbe	Someday we gotta be ready for
 622414	0919	retirement or getting released.
-622452	8915	Despite his looks, he thinks about
+622452	8915	Despite his looks, he thinks of
 622480	dd51	what he should...
-622512	3a67	Well, I'll probably get a glorious
+622512	3a67	Well, I'll probably get a grand
 622536	9158	send-off for my retirement,
 622564	0446	though.
-622588	60d1	It's far off, but I want to decide
-622616	f453	how my baseball life ends myself.
+622588	60d1	Far off, but I want to decide
+622616	f453	how my own baseball life ends.
 622674	84a6	Hey now,
 622688	8b81	why so serious, man?
 622714	f8b0	More importantly, we can finally
@@ -12265,7 +12265,7 @@
 622924	1106	Connections screen!
 623006	e5f7	Downed a Pawarin in one go.
 623050	2f8a	Fired up!
-623128	5479	I feel I've truly joined the ranks
+623128	5479	I feel I've joined the ranks
 623158	f90b	of top-class players.
 623182	1fef	A star's aura overflows
 623206	a0ee	from my whole body!
@@ -12273,19 +12273,19 @@
 623296	1591	I feel my status as a pro player
 623326	b9ac	has gone up!
 623424	65b0	I was active widely, from fan
-623452	cafe	service to donations and charity.
+623452	cafe	service to donations, charity.
 623480	5be3	Contributing to all of society,
 623508	6152	not just to baseball.
-623518	503b	This is the mark of a top player.
+623518	503b	This is proof of a top player.
 623546	7ab2	I can now own a mansion!
 623588	df0e	I can now own a luxury car!
 623660	7f0e	Blegh!
 623672	a3b7	Felt sick.
 623692	7cf4	Too many drinks, maybe...
 623852	e209	, about time
-623884	b2fc	you thought about installing seats
+623884	b2fc	you thought of installing seats
 623914	7805	for the fans, don't you think?
-623936	34ae	you thought about installing seats
+623936	34ae	you thought of installing seats
 623952	a1f2	for the fans, don't you think?
 623984	9739	Installing seats gives more
 624012	5db7	children a chance to come and
@@ -12307,7 +12307,7 @@
 624488	c930	(Grab!)
 624504	ebe6	He gripped my hand.
 624530	2188	I'm glad!
-624548	aaa9	Let's reset our minds and aim for
+624548	aaa9	Let's refocus and aim for
 624576	8d93	the pennant together!
 624592	c20f	I'm counting on you.
 624664	a994	 is where I decided to go.
@@ -12469,7 +12469,7 @@
 629884	cd8b	you're not happy with your name?
 629912	3f41	All right.
 629924	86da	I'll read your registered name.
-629952	fe9d	Mama held a hand over the crystal
+629952	fe9d	Mama held a hand to the crystal
 629982	25d7	and kept muttering the name.
 630016	af2b	Hm
 630026	1f9b	mm
@@ -12541,7 +12541,7 @@
 632544	bf24	Today, the team golf tournament
 632572	c91a	is on!
 632986	801e	!
-632994	09a1	The club called: you got an offer
+632994	09a1	The club called with an offer
 633024	a45d	to appear in a commercial.
 633046	761b	The club has approved it, so
 633074	0ddb	it's up to you. What'll it be?
@@ -12555,12 +12555,12 @@
 633338	90e0	I see. You'll appear, then.
 633366	87d9	Understood. I'll pass the word
 633394	09ca	along.
-633418	167b	Commercial set for the offseason!
+633418	167b	Commercial set for offseason!
 633494	26e7	Well, knowing you, I figured
 633522	ba42	you'd say that.
 633550	64b1	What, you're declining?
 633570	794f	That's not like you.
-633598	6986	I see. It's a precious offseason,
+633598	6986	I see. Offseason is precious,
 633628	2539	so plan it carefully.
 633660	2af4	Understood. I'll tell them
 633688	2815	you're declining.
@@ -12579,18 +12579,18 @@
 634228	611e	, 
 634244	bf88	 years of real
 634258	3c29	hard work. Well done.
-634286	8d5a	I thought you were still a player
+634286	8d5a	I thought you were a player
 634316	8b8f	with a future, but...
 634340	3933	Well, no use saying it now.
 634382	116c	You've lasted this long as a
 634410	e60c	player, which means that,
-634426	7c6d	besides your own effort, there are
-634452	6e11	the parents who made you strong...
+634426	7c6d	besides your effort, there are
+634452	6e11	parents who made you strong...
 634480	c5e8	the team mates and family who
 634506	1752	supported you. Be thankful.
-634540	4c81	Well? A career that felt long and
+634540	4c81	Well? Your career felt long and
 634570	cac8	yet short, wasn't it?
-634612	711c	Well, with your golf skills, going
+634612	711c	Well, with your golf, going
 634640	acef	pro might not be a dream
 634670	c6ba	either.
 634694	05b7	Well, you have the education for
@@ -12656,14 +12656,14 @@
 636670	4ac9	work. Thank you.
 636682	074d	To have played this long means
 636710	e708	more than effort, of course:
-636740	6e11	the parents who made you strong...
+636740	6e11	parents who made you strong...
 636768	425b	the team mates and family who
 636798	8f03	supported you. Be thankful.
 636864	a984	, good work.
 636880	ad87	What a wonderful career!
 636908	fc5c	It's thanks to the support of
 636930	a7c2	the fans who cheered for you.
-636958	78fe	You were blessed with great fans!
+636958	78fe	You had truly great fans!
 637200	6996	Yo, 
 637212	801e	!
 637220	9a37	Retiring, huh? It'll be lonely.
@@ -12767,7 +12767,7 @@
 641076	40f8	 won
 641094	86b5	the pennant, V
 641112	a0a6	 done!
-641138	147c	Finally, 1st team 
+641138	147c	Finally 
 641160	a142	, 
 641176	4d88	 years
 641188	4608	since the last title. Clinched!
@@ -12793,7 +12793,7 @@
 641842	9cc0	to being Japan champions!
 641904	56ae	-san, this is the best!
 641938	08aa	Let's go all out tonight!
-641972	37e5	Winning the pennant sure is nice!
+641972	37e5	Winning the pennant is great!
 642202	7a6b	A letter and a package arrived!
 642224	dc33	The letter said...
 642242	e310	「Congratulations on the title!!
@@ -12924,7 +12924,7 @@
 646782	9591	Your career was nearly cut off
 646812	1c0f	once already.
 646830	914e	You have nothing left to fear.
-646854	e44b	Give it everything you've got and
+646854	e44b	Give it all you've got and
 646884	2841	deliver results.
 646898	1e62	One last thing.
 646914	d247	If you need the dorm manager,
@@ -12968,19 +12968,19 @@
 647926	662d	introduce it...
 647940	521e	Goodbye now.
 647978	03ee	On the Buy screen, you can now
-648008	1106	donate to the Aodamo Association!
+648008	1106	donate to Aodamo Association!
 648096	612f	Hm?
-648106	632e	Something is in the crystal ball.
+648106	632e	Something shows in the crystal.
 648152	5051	What was that?
 648218	71db	This is your 20th year.
 648246	3603	You've really done well.
 648270	0f8e	But the time has come.
-648334	d9b5	/
+648334	d9b5	/ 
 648350	8f25	 vs. 
 648368	bd9a	
 648378	77c5	Make it your grand farewell.
-648416	0567	Retirement is set after this year.
-648470	e4c3	Today, the free agents' new clubs
+648416	0567	You retire after this year.
+648470	e4c3	Today, free agents' new clubs
 648498	796e	have been decided.
 648546	5637	's  
 648562	9b58	 moved to
@@ -12989,7 +12989,7 @@
 648760	f2ed	Well, 
 648772	801e	!
 648780	7d76	As expected of a top rookie!
-648808	a5a7	I'm the first-team batting coach,
+648808	a5a7	I'm the 1st-team batting coach,
 648846	e666	!
 648956	acc4	Welcome to the first team!
 648976	782d	I'm pitching coach, 
@@ -13006,7 +13006,7 @@
 649410	130c	still deliver results.
 649432	964d	Even though you made the Opening
 649462	1584	Day roster, don't let up.
-649486	c429	Well, if anything's troubling you,
+649486	c429	If anything's bothering you,
 649516	ff50	feel free to come talk to me.
 649548	36c6	Casually talk to the kantoku...
 649582	cd7b	It may be hard at first,
@@ -13015,7 +13015,7 @@
 650836	f2ed	Well, 
 650848	801e	!
 650856	f910	You're finally here!
-650872	a5a7	I'm the first-team batting coach,
+650872	a5a7	I'm the 1st-team batting coach,
 650910	e666	!
 650920	db19	I'm counting on you!
 651050	acc4	Welcome to the first team!
@@ -13033,7 +13033,7 @@
 651540	b172	where no results means you go.
 651568	ea5e	Overcome your issues, grow, and
 651598	130c	still deliver results.
-651620	c429	Well, if anything's troubling you,
+651620	c429	If anything's bothering you,
 651650	ff50	feel free to come talk to me.
 651682	36c6	Casually talk to the kantoku...
 651716	cd7b	It may be hard at first,
@@ -13044,7 +13044,7 @@
 652014	d77d	Oh yes, how we use you from now
 652044	e002	on depends on your aptitude.
 652072	e296	If you want a say in how you're
-652102	28d8	used, come and
+652102	28d8	used, come
 652118	6c3f	 discuss
 652128	0c5d	 it with me.
 652138	168a	I can't change your role right
@@ -13112,7 +13112,7 @@
 654056	13be	You need to start playing a
 654084	34b5	central role on the team!
 654114	f2d4	Like when you were young, it's
-654142	dca1	not enough to mind just yourself.
+654142	dca1	no use minding just yourself.
 654174	41ec	From now on, I must look over
 654204	94a4	the whole team!
 654236	0b19	Hm, you seem to have developed
@@ -13125,7 +13125,7 @@
 654410	8ae9	Now that you care,
 654438	4575	you can use your own vessel on
 654464	2172	peers and juniors.
-654490	ca2d	On the Link screen, pick a linked
+654490	ca2d	On Link screen, pick a linked
 654518	e610	peer or junior, then choose the
 654540	4d4a	Train command.
 654568	70d2	You'll enter a Train screen just
@@ -13162,7 +13162,7 @@
 655760	9828	first pitch on...
 655824	6e61	Sturdy and eco-friendly.
 655848	b301	Now this is a standard car!
-655872	40dc	A ballplayer has to stay grounded
+655872	40dc	A ballplayer must stay grounded
 655896	c99b	and play steady every day or
 655924	6ddd	there's no point.
 655984	6746	Seats lots, carries lots!
@@ -13172,11 +13172,11 @@
 656140	31b2	Settle into roomy, relaxing
 656164	c0c8	leather seats for a moment of
 656194	9f8a	pure bliss.
-656208	c432	Left-hand drive: timeless status.
+656208	c432	Left-hand drive: ageless status.
 656284	31b2	Settle into roomy, relaxing
 656308	c0c8	leather seats for a moment of
 656338	9f8a	pure bliss.
-656352	c432	Left-hand drive: timeless status.
+656352	c432	Left-hand drive: ageless status.
 656440	e218	Press the pedal and the V6
 656468	deda	heart beats, as the exhaust
 656496	99f0	note plays a melody.
@@ -13189,7 +13189,7 @@
 656774	8652	Firm shocks and a gripping
 656798	b9ea	steering feel give me hints
 656822	0f57	on my bat swing.
-656924	cdd3	At your signing press conference,
+656924	cdd3	At your signing press event,
 656950	6187	you wanted to play up here.
 656980	8339	You did get to play, nicely.
 657008	7f2c	How does it feel to play?
@@ -13231,7 +13231,7 @@
 658232	01c4	promoted to the first team.
 658272	bb4f	...Come to think of it, you said
 658296	ea99	at your signing press conference
-658322	09b1	you'd start by building your body.
+658322	09b1	at your signing press event
 658338	566d	Okay, today I'll personally
 658362	14b7	coach you!
 658426	6287	Received special coaching!
@@ -13578,7 +13578,7 @@
 672748	6e41	Call me 
 672762	c8e3	.
 672790	fb6c	You've only just arrived, so
-672808	0f40	there'll be things you don't know.
+672808	0f40	there are things you don't know.
 672836	d5a2	Want to hear how the game works?
 672866	846b	  No, thank you.
 672888	4598	  Yes, please.
@@ -13625,7 +13625,7 @@
 674084	994b	Sometimes you won't win.
 674110	f943	One player's strength often
 674140	88d4	affects the team, too.
-674158	b950	Your teammates are surely watching
+674158	b950	Teammates are surely watching
 674186	b8c4	and will fight alongside you.
 674214	9723	Anyway, it's your life.
 674244	498c	Live it without regrets.
@@ -13634,18 +13634,18 @@
 674332	9370	team winning, it ends there.
 674360	d3c1	You'd no longer be a Hired Gun.
 674528	d615	Finally,
-674538	e30d	the chance of reaching the Climax
+674538	e30d	the chance to reach the Climax
 674566	3ba7	Series is gone.
 674604	3c61	Since a Japan title is no longer
-674634	f321	possible, no Hired Gun is needed.
+674634	f321	possible, no Hired Gun needed.
 674662	d342	Sorry, but this is the end!
 674694	472c	Next time, lead the team to the
-674724	4296	Japan title: be a true Hired Gun!
+674724	4296	Japan title as a true Hired Gun!
 674800	b9a0	 reached, but
 674814	8cb2	the chance for a Japan title is
 674836	8345	finally gone.
 674868	3c61	Since a Japan title is no longer
-674898	f321	possible, no Hired Gun is needed.
+674898	f321	possible, no Hired Gun needed.
 674926	d342	Sorry, but this is the end!
 674982	aad1	However,
 674994	92b9	we did win the league pennant.
@@ -13654,11 +13654,11 @@
 675078	92b9	we did win the league pennant.
 675106	6267	Thank you!
 675126	472c	Next time, lead the team to the
-675156	4296	Japan title: be a true Hired Gun!
+675156	4296	Japan title as a true Hired Gun!
 675228	6efe	You made it to the Japan Series,
 675256	0ba1	but you ended up losing in
 675274	52da	the Japan Series.
-675304	b053	Still, you got through the Climax
+675304	b053	Still, you got past the Climax
 675334	d0f4	Series and earned a spot in
 675360	a56b	the Japan Series.
 675406	049a	Though we lost the Japan Series,
@@ -13722,25 +13722,25 @@
 679188	7b77	Okay.
 679204	6e7e	I'll group the same items!
 679252	7083	I'm sorry.
-679268	a5f8	I can't spare a hand right now...
+679268	a5f8	I'm tied up right now...
 679336	731a	Understood.
 679352	cc1c	I'll organize it neatly.
 679400	7083	I'm sorry.
-679416	a5f8	I can't spare a hand right now...
+679416	a5f8	I'm tied up right now...
 679484	b99b	Leave it to me!
 679504	77cf	I'll make it spotless!
 679556	c104	I'm so sorry, but...
-679582	a5f8	I can't spare a hand right now...
+679582	a5f8	I'm tied up right now...
 679650	61c4	Understood!
 679670	3fa7	I'll do my best!
 679708	97fd	I'm sorry.
-679728	a5f8	I can't spare a hand right now...
+679728	a5f8	I'm tied up right now...
 679796	5cb4	Leave it to me.
 679838	a5f8	I'm busy right now...
 679898	bc5a	Yes, I'll put the same things
 679918	3428	together.
 679962	7083	I'm sorry.
-679978	a5f8	I can't spare a hand right now...
+679978	a5f8	I'm tied up right now...
 680034	0328	My wife tidied up the room.
 680070	3d80	Items were sorted!
 680110	b8fc	She turned me down...
@@ -13905,15 +13905,15 @@
 686362	2d1d	Please bring me again.
 686402	869e	I'm sorry. I don't seem to like
 686428	12c9	this kind of food much.
-686456	7bce	Somewhere else next time, please.
-686492	04f3	This is the same place, isn't it?
+686456	7bce	Somewhere else next time, okay?
+686492	04f3	Isn't this the same place?
 686522	6802	Coming back so soon, it loses
 686550	b846	its freshness, doesn't it?
 686650	47f1	Such delicious food,
 686672	7857	and you treated me,
 686690	2916	Thank you very much.
 686712	0b06	Please invite me again!
-686748	1c3e	A relaxed meal is nice, isn't it?
+686748	1c3e	A slow meal is nice, isn't it?
 686776	d85f	Please ask me again.
 686814	7d82	The taste was rather off...
 686838	34df	Next time, I would like to try
@@ -13927,7 +13927,7 @@
 687104	6756	That was delicious!
 687126	8269	Please take me again!
 687160	db98	Thanks for the meal...
-687186	11ea	This place is a bit hard for me...
+687186	11ea	This place is tough for me...
 687210	c2c5	Next time, please, somewhere
 687232	f07f	different...
 687260	04ec	Don't tell me...
@@ -14071,7 +14071,7 @@
 692142	c755	Thanks, I'll keep it.
 692182	877a	I'm so happy!
 692196	2916	Thank you very much.
-692218	096d	But even without a gift like this,
+692218	096d	Even without a gift like this,
 692244	eb4d	I can feel your love, you know?
 692276	a8ec	Thank you!
 692328	6267	Thank you!
@@ -14136,11 +14136,11 @@
 694278	18ad	Sorry to keep you waiting.
 694308	b273	Iori-san comes toward me
 694338	dfd2	with a smile.
-694348	6d90	Maybe it's her walk, or maybe her
+694348	6d90	Maybe it's her walk, or her
 694378	fa16	clothes. People nearby keep
 694408	500f	glancing at Iori-san.
 694448	f7e7	Are we going for a drive today?
-694470	c5fd	I like vehicles, so I can't wait.
+694470	c5fd	I like vehicles, so can't wait.
 694536	70de	Which drink would you like?
 694574	dd63	Iori-san takes orange juice,
 694602	284c	coffee and other drinks out of
@@ -14154,7 +14154,7 @@
 694804	67ea	I have no idea what she means
 694834	fe25	and stare blankly, so Iori-san
 694862	2d0b	hurriedly explains.
-694896	e178	Oh, taxiing means a plane's ground
+694896	e178	Oh, taxiing is a plane's ground
 694924	4da8	run before takeoff.
 694964	4233	  It's a car, though...
 694992	5208	  Sounds like our relationship
@@ -14175,9 +14175,9 @@
 695536	706c	That's probably just fatigue.
 695562	de41	Live regularly, and get plenty
 695590	d994	of nutrition and sleep.
-695620	9613	Coming from you, of all people...
+695620	9613	Not from you of all people...
 695648	520e	First I thank her for examining
-695676	de9a	me, then ask her out for a drive.
+695676	de9a	me, then ask her for a drive.
 695720	a4a4	A drive?
 695734	aada	You never learn, do you?
 695756	57f8	I'm busy...
@@ -14190,7 +14190,7 @@
 695936	cb81	she seems to have come to.
 695976	5023	Sorry, I'm fine...
 695998	bbfa	Just a dizzy spell.
-696040	896a	I put her in my car and drove her
+696040	896a	I put her in my car and drove
 696070	408b	to her clinic.
 696082	342f	She sleeps peacefully beside me.
 696112	c374	Her grueling days seem to have
@@ -14211,12 +14211,12 @@
 696542	c6fd	Um... take care of me
 696564	7483	from now on, too.
 696640	0609	A full day of family service!
-696712	f2a4	The whole family went for a drive!
+696712	f2a4	The whole family went driving!
 696760	0815	The kids are enjoying it too.
 696810	2977	 and I went driving!
 696862	3ce2	Driving is every bit as good as
 696890	1151	flying.
-696924	1f2b	A drive after surgery is the best!
+696924	1f2b	A drive after surgery is best!
 696958	a66d	The wind feels wonderful!
 697036	47da	The whole family went fishing!
 697064	e72f	The kids seem to be enjoying it.
@@ -14227,12 +14227,12 @@
 697280	b928	Look forward to dinner!
 697316	3d5e	Well, now and then this is
 697342	edb3	all right.
-697400	4c78	...That was the plan, but I'm too
+697400	4c78	...I planned to, but I'm too
 697426	45f4	tired to feel like going out.
 697494	410b	It's your day off, so let's go
 697516	8187	somewhere!
 697548	a11b	My, aren't we living the life.
-697572	8732	I'm taking the kids. Without you!
+697572	8732	I'm taking the kids, not you!
 697616	533f	Honestly!
 697626	b413	Lounging around on a rare day
 697650	970b	off!
@@ -14299,7 +14299,7 @@
 700278	3591	(Scurry)
 700320	80bb	Bringing a girl up to a dorm
 700348	2dc9	room? What were you thinking!
-700376	7621	And of course I'll report this to
+700376	7621	Of course I'll report this to
 700402	0ef0	the Kantoku too.
 700494	4c1f	...
 700514	5a44	Something came up at work.
@@ -14320,14 +14320,14 @@
 700990	2091	I'm going home soon.
 701016	c057	We enjoyed the rides at the
 701044	5f43	theme park.
-701104	8a8c	We talked on a nearby park bench.
+701104	8a8c	We talked on a nearby bench.
 701176	4129	We enjoyed a chat at a cafe.
 701200	f858	Time flew by.
-701248	44c7	We went up the rumored observation
+701248	44c7	We went up the famed observation
 701274	ac8f	deck and enjoyed the view.
 701356	b4ca	This is the same place as last
 701378	ea8a	time, you know.
-701410	1f97	We were here the other day, right?
+701410	1f97	We were here before, right?
 701452	9801	Haven't we been here before?
 701490	653e	Isn't this place
 701504	be93	where we came the other day?
@@ -14336,7 +14336,7 @@
 701598	6dc9	Hey! This is the place
 701620	e2e2	we just came to!
 701644	8fd9	Don't you have any repertoire?
-701686	48a0	This is the same place as before.
+701686	48a0	It's the same place as before.
 701716	51a7	Honestly, 
 701732	d45f	-san, come on...
 701840	3d45	So, what shall we do next?
@@ -14357,11 +14357,11 @@
 703006	f98c	Coming back from a date, maybe?
 703030	a361	And you left me out of it...
 703068	83e6	Well, coming home this early
-703096	985e	means you're still a rookie, man.
+703096	985e	means you're still green, man.
 703122	a941	Me, I'd take the date into extra
 703152	f510	innings and go for the win.
 703190	2b91	Seems dates have extra innings.
-703244	19e5	Like, after dinner, take her to a
+703244	19e5	After dinner, take her to a
 703274	55b3	classy spot. That'd score big,
 703304	17a0	right?
 703338	56b6	Huh? Where should you go?
@@ -14447,7 +14447,7 @@
 706160	0bda	I'll make a big feast
 706184	df24	and wait for you.
 706200	b6d3	Do your best in the game!
-706236	7fc6	Today is your birthday, is it not?
+706236	7fc6	Today is your birthday, yes?
 706260	7404	I pray that you play well.
 706288	2294	Do look forward to the feast.
 706330	2128	Come to think of it, today is
@@ -14463,7 +14463,7 @@
 706578	aed3	亞
 706588	c7f4	Happy birthday!!
 706610	b6d3	Do your best in the game!
-706646	7fc6	Today is your birthday, is it not?
+706646	7fc6	Today is your birthday, yes?
 706670	7404	I pray that you play well.
 706712	2128	Come to think of it, today is
 706738	5534	your birthday, isn't it?
@@ -14475,7 +14475,7 @@
 706874	3440	Right, today I turn 
 706902	11eb	.
 706912	b718	It's my birthday.
-706924	9512	I'll shine and make it a good one.
+706924	9512	I'll shine and make today good.
 706990	6fc8	Dear, wait a moment.
 707016	4b24	Listen, today is my birthday.
 707044	67d4	So make sure you do well today!
@@ -14561,7 +14561,7 @@
 710828	6a76	Hey now, Okui!
 710846	b5ab	Impressing the anchor is fine,
 710876	aeaa	but impress me with baseball
-710904	6c00	first, or it's the farm for life.
+710904	6c00	first, or it's the farm forever.
 710964	96b6	Ugh,
 710976	0d42	 I-I know that,
 710998	d831	Coach...
@@ -14618,7 +14618,7 @@
 712670	9cb2	Your future star's over here!
 712720	7f5f	Hello!
 712736	94e8	It's been a while.
-712776	198b	I'll work hard on the interviews,
+712776	198b	I'll work hard on interviews,
 712800	8596	so please bear with me!
 712842	6008	Now, let's begin...
 712864	f316	I'd like to ask someone for
@@ -14704,7 +14704,7 @@
 715284	ca21	Ow ow ow ow!
 715320	d23a	In this line of work, the right
 715348	c862	response is needed in a pinch.
-715406	a6cd	Hey, is knocking a passenger away
+715406	a6cd	Hey, is flattening a passenger
 715434	19a7	the right response?!
 715470	9dce	Oh, sir,
 715486	1770	you look ashen. Are you
@@ -14746,7 +14746,7 @@
 716582	a922	to shout, I returned to my seat.
 716628	f2ea	How is it?
 716644	8c7f	It's my favorite restaurant.
-716682	52bb	Sea urchin, salmon roe, and a lot
+716682	52bb	Sea urchin, roe, and a lot
 716712	3175	of seafood made it a feast!
 716752	6f87	A nice mood with Iori-san!
 716774	491f	She might be interested!
@@ -14789,17 +14789,17 @@
 717996	129c	...Thick skin on your hands.
 718018	32b4	Baseball?
 718028	7ce3	Hmm...
-718054	1b07	At a glance she seems sloppy, but
-718084	5d64	up close she may be quite pretty.
+718054	1b07	At a glance she's sloppy, but
+718084	5d64	up close she's quite pretty.
 718128	a1b8	Okay, done.
 718144	473e	It's nothing serious.
-718166	d59f	Put on a patch and you'll be fine.
+718166	d59f	Put on a patch and you're fine.
 718194	f42d	Take care.
 718208	2637	Oh, right.
 718224	4e9a	If you're an athlete, you might
 718252	c654	want to watch the nutrition
 718278	b1f3	balance of your meals more.
-718308	de2b	Met the doctor Araryoji Luna
+718308	de2b	Met doctor Araryoji Luna
 718322	f0e0	-san.
 718432	a1e2	To Luna-san's clinic!
 718472	117e	Next patient, please.
@@ -14818,7 +14818,7 @@
 718826	8d75	Sorry, but I have zero interest
 718854	fc5d	in watching games.
 718870	d9a2	If I have time to watch others
-718900	3ffb	work hard, I'll work hard myself.
+718900	3ffb	work hard, I'll just work hard.
 718928	9053	What?
 718938	87bb	Is that all?
 718972	15c9	Listen, I'm busy here,
@@ -14908,7 +14908,7 @@
 721580	8683	Miho-chan?
 721596	5e13	Miho-chan 
 721610	3c69	is also 
-721618	4aae	cute, isn't she!
+721618	4aae	cute, right?
 721638	3176	A college girl in full bloom!
 721672	cb92	Oh, I'm nothing like that...
 721698	3c0b	Please don't say strange things
@@ -15060,13 +15060,13 @@
 726146	9b8b	What!?!?
 726168	8034	W-Why!?
 726198	cc50	Listen, you...
-726216	f188	You've had your head in the clouds
+726216	f188	Your head's been in the clouds
 726246	1073	lately, haven't you?
 726262	c53b	In that state, I can't trust
 726288	5613	you with the shop's work.
 726324	4c1f	...
 726342	cfc2	So, I'll give you some time off,
-726370	304a	so hurry and settle your
+726370	304a	so quickly settle your
 726396	84e5	 problem.
 726428	4c70	Huh...?
 726450	ed0f	Come on, go after it!
@@ -15079,7 +15079,7 @@
 726670	7c25	Um, Mr. Problem... no, I mean,
 726698	849c	you're the problem, so I got
 726726	10bf	fired, and so...
-726758	0c82	What on earth is this girl saying?
+726758	0c82	What is this girl even saying?
 726802	78e6	J-Just calm down, please!
 726850	8618	I had no idea what she meant,
 726878	0841	so I heard her out at a nearby
@@ -15173,7 +15173,7 @@
 729532	beb5	I cleaned it up.
 729554	5113	I want you to praise me.
 729628	dfd0	Darling, are you not tired...?
-729656	2001	I shall massage your shoulders...
+729656	2001	I shall rub your shoulders...
 729720	3209	Dear,
 729734	b9dc	today it's grilled eel.
 729756	ac5e	The fish seller suggested it.
@@ -15257,14 +15257,14 @@
 732760	ed16	Today I'll propose to Luna-san
 732788	7bdc	with a bang!!
 732834	a748	To the clinic!!
-732874	056a	W-What are you so fired up about?
+732874	056a	W-Why are you so fired up?
 732900	33b9	I've never seen anyone come to
 732928	efeb	a clinic so cheerfully...
 732966	b81c	Taking her hand, I slip an
 732994	adce	engagement ring on her finger.
 733026	fb3e	This is... what!?
 733048	77d1	You want to marry me?
-733076	44b7	Some people sure have odd tastes.
+733076	44b7	Some people have odd tastes.
 733104	9120	Besides, I can't do surgery
 733132	ecd5	with a ring on.
 733150	69ac	...But thanks.
@@ -15273,7 +15273,7 @@
 733370	f89a	At last, wedding to 
 733394	9483	.
 733490	aee1	Kin, friends, TV folk,
-733516	8964	 stars came.
+733516	8964	 stars.
 733564	e4e4	Kin, friends and TV 
 733590	c494	staff came.
 733630	e4e4	Kin, friends and TV 
@@ -15291,11 +15291,11 @@
 734228	765a	.
 734272	e590	Hey, you did it, man!
 734296	047a	I'm kinda happy about it too!
-734338	ec05	Didn't think I'd get invited too.
+734338	ec05	Didn't expect an invite myself.
 734366	c722	Thank you.
 734382	b460	Be happy, you hear.
 734420	d3e4	-san, congratulations.
-734440	b56c	The compatibility reading is good.
+734440	b56c	Compatibility reading is good.
 734466	7ef7	I'm a little jealous, though.
 734586	9170	Congratulations!
 734616	2a8d	Congrats!
@@ -15344,7 +15344,7 @@
 735954	a7bb	Marriage is a great thing!
 735976	fd46	Be nice to your wife!
 736018	8448	Congratulations.
-736034	b25c	Marriage gets tough from here on.
+736034	b25c	Marriage gets harder from here.
 736066	9170	Congratulations!
 736082	6ac6	You've settled down, so now you
 736110	5924	can focus on baseball!
@@ -15376,11 +15376,11 @@
 736888	10cc	I'm looking forward to it.
 736938	5a50	Marriage is nice, isn't it?
 736960	a9d4	I'm jealous.
-736982	f593	Maybe I should think about it too.
+736982	f593	Maybe I should consider it too.
 737022	a451	Congratulations.
 737044	5123	What a lovely wedding.
 737070	a451	Congratulations.
-737092	8ead	Now that you have a family, you'll
+737092	8ead	Now that you have a family, you
 737122	882f	have to try even harder!
 737150	7b14	Congratulations!
 737188	af0e	You have someone to protect now,
@@ -15417,7 +15417,7 @@
 738166	22dc	Our... baby.
 738204	3ccf	Darling, got a minute?
 738238	b9f9	I had a feeling for a while now,
-738266	3572	and it seems it really is a baby.
+738266	3572	and it does seem to be a baby.
 738308	17c7	Dear, listen!
 738336	8ee0	I went to the hospital today,
 738360	a47b	and they said I'm expecting!
@@ -15447,7 +15447,7 @@
 739028	0964	I can't wait.
 739056	4b30	Due date is 
 739080	7da6	.
-739090	ceba	I'll work hard for a healthy baby!
+739090	ceba	I'll work for a healthy baby!
 739124	4b30	Due date is 
 739148	d79f	.
 739162	c3f1	I can't wait.
@@ -15482,7 +15482,7 @@
 740194	2e12	Pick a great name, okay?
 740230	916d	I'm worn out, honestly.
 740250	864a	Think of a good name, okay?
-740278	529b	Thanks to you, we're both healthy!
+740278	529b	Thanks to you, we're both well!
 740304	0a3d	Dear, what will we name it?
 740370	7449	The baby and I will be waiting
 740400	a51a	for you to come home.
@@ -15492,7 +15492,7 @@
 740528	b6bf	coming back from the road trip.
 740556	d3f7	Come home soon.
 740576	11ff	I'm looking forward to it.
-740610	7fa6	Hurry home and help with the baby.
+740610	7fa6	Hurry home and mind the baby.
 740642	294f	We'll be waiting with the baby.
 740672	d3f7	Come home soon.
 740804	2717	 was born.
@@ -15688,7 +15688,7 @@
 746648	4caa	stands is cheering you on!
 746708	33bf	Better do your best and show
 746736	762a	her something good!
-746770	e3a6	Putting on a show for the family?
+746770	e3a6	Showing off for the family?
 746798	95f7	That's heartwarming.
 746856	b05e	Huh!?
 746866	9946	Isn't that Honoka-san from
@@ -15778,7 +15778,7 @@
 749896	dcbe	That's bad.
 749908	a77e	You need to rest...
 749970	1923	A-are you OK?
-749992	a6fd	Getting hurt right in front of me.
+749992	a6fd	Getting hurt in front of me.
 750020	86ad	But it can't be helped.
 750046	861c	Rest and heal fast, that's all.
 750090	449a	An injury...
@@ -15804,7 +15804,7 @@
 750726	c792	Well, that's your ability.
 750748	e998	...I'm kidding.
 750768	dee5	Forget it, forget it.
-750798	f9b4	It's a shame, but that's the game.
+750798	f9b4	A shame, but that's the game.
 750826	8f5b	That's how it goes.
 750846	6aa1	If anything hurts, I'll operate,
 750870	ed89	so don't hold back and
@@ -15866,7 +15866,7 @@
 752666	c767	Dear!
 752686	f791	Dear!
 752714	8698	...!
-752726	ca28	A familiar voice from the stands.
+752726	ca28	A familiar voice in the stands.
 752788	8176	I came to watch your last scene,
 752810	758b	properly!
 752846	7ef6	Do your best to the end!
@@ -16054,7 +16054,7 @@
 758262	4765	(My birthday...
 758282	7041	did you maybe remember it?)
 758314	3e61	Oh, then I'm coming now!
-758350	bd10	Understood, I'll be there shortly.
+758350	bd10	Got it, I'll be there shortly.
 758410	ee98	You remembered my birthday!
 758438	0e19	I'll be right there!
 758460	ff99	It's my birthday today.
@@ -16373,10 +16373,10 @@
 769136	8eaf	It broke down.
 769270	f6cf	?
 769280	4853	Special delivery!
-769302	b602	A neatly wrapped package arrived.
-769376	25e7	From my wife, 
+769302	b602	A neatly wrapped parcel came.
+769376	25e7	From wife 
 769394	32c7	
-769408	a95a	The sender is 
+769408	a95a	Sender: 
 769434	c8e3	.
 769480	bcf2	Ah, 
 769492	a142	,
@@ -16402,7 +16402,7 @@
 770022	e421	went wrong, so...
 770046	7312	I'm giving a store-bought one...
 770082	e945	Next year for sure,
-770098	4fef	I want to make it properly myself.
+770098	4fef	I want to make it right myself.
 770150	9534	Happy Valentine's Day!
 770172	f8bf	I put my whole heart into it!
 770200	d131	Tell me properly what you
@@ -16474,7 +16474,7 @@
 771974	956a	Rest up, and then let's take on
 772002	afc1	something new again!
 772058	135f	 years,
-772068	f433	thank you for all your hard work.
+772068	f433	thanks for all your hard work.
 772102	7796	Your baseball life, like soaring
 772132	321f	through the sky, was the best.
 772160	76f4	Here's to the years
@@ -16560,7 +16560,7 @@
 774912	9f6e	The mood has improved, too!
 774938	e821	Let's keep doing our best!
 774972	961d	-san!
-774982	587b	The team's mood is excellent, too!
+774982	587b	The team's mood is great, too!
 775010	e821	Let's keep doing our best!
 775090	c602	The mood improved.
 775118	2310	The mood improved a lot.
@@ -16692,9 +16692,9 @@
 780526	5b71	practice or
 780542	1eb3	get results in games
 780564	1c5e	,
-780576	e2c8	your My Spirit keeps rising fast.
+780576	e2c8	your My Spirit keeps climbing.
 780604	2843	The same goes for your salary.
-780634	064b	In short, 
+780634	064b	So, 
 780644	5992	My Spirit 
 780652	1fa0	is both 
 780660	5e29	XP
@@ -16767,10 +16767,10 @@
 782210	aad1	But 
 782222	fce9	a vessel
 782232	1fa0	 is no use
-782240	c9a9	 if you only
-782254	1dff	hold onto it
+782240	c9a9	 if you
+782254	1dff	only hold on to it
 782274	f926	.
-782282	81fa	To really make it yours, you must
+782282	81fa	To really own it, you must
 782312	9bd7	pour in all the experience
 782340	7d07	you've built up so far.
 782362	7a22	Here we go again: 
@@ -16781,7 +16781,7 @@
 782464	7df4	the vessel. That's all.
 782480	d116	Here's a point to note!
 782498	0250	To pour My Spirit into a vessel,
-782526	67ef	Get fired up, and 
+782526	67ef	Get pumped, and 
 782542	9265	hold the Inject
 782558	37aa	button down.
 782572	791c	 It's a must!
@@ -16862,7 +16862,7 @@
 784294	5577	Take a look at the real screen.
 784340	6497	Well?
 784352	3179	Right now there's only the dorm,
-784376	53fb	As you fill vessels, more and more
+784376	53fb	Filling vessels, more and more
 784406	580f	people will link up around you.
 784436	49e5	Not just people. Houses and cars
 784464	3caa	will connect
@@ -16870,7 +16870,7 @@
 784486	99f4	In short, it's your
 784508	24cd	surroundings, you could say.
 784528	1b4b	Widen and deepen your links, and
-784558	e464	you'll be able to get all kinds of
+784558	e464	you'll get all kinds of
 784586	a4d1	support.
 784602	82a2	Deepening a link
 784624	e2b9	・
@@ -16881,7 +16881,7 @@
 784702	3c59	.
 784718	b6d2	Right, it's My Spirit here too.
 784746	2e57	Buying a house takes money,
-784774	e06a	and getting closer to people takes
+784774	e06a	and bonding with people takes
 784802	a026	time and effort, right?
 784824	9a57	Right, so it's My Spirit.
 784848	0b9e	How to do it is very simple.
@@ -16890,26 +16890,26 @@
 784908	56b7	thing to level up, then hold the
 784938	b6b5	Inject button down
 784948	f7d4	.
-784958	896e	Well, with something like a house,
-784986	feb8	it's less a raise than an 
+784958	896e	Well, with things like a house,
+784986	feb8	it's less raise than an 
 785006	cce7	upgrade
 785024	1ed0	so to speak.
 785052	f66d	Well, you'll get that once you
 785080	0bd9	actually try it.
-785094	0c43	Lastly, there are various 
+785094	0c43	Lastly, there are a few 
 785114	4bc9	limits,
 785130	830e	and sometimes you can't pour in
 785160	5032	My Spirit, so watch out.
 785182	d491	For example,
-785194	2c54	 for your first year,
-785216	5924	you can't pour My Spirit into the
+785194	2c54	 in the first year,
+785216	5924	you can't put My Spirit in the
 785246	1995	dorm.
 785256	4f86	Since you're set to live in the
 785284	c4b1	dorm for one year.
 785296	8018	Also, whether coach, senior, or
 785324	7c33	draft classmate, a person's role
 785354	5d4c	fixes the number of slots.
-785370	6f36	For example, with a senior already
+785370	6f36	For example, a senior already
 785400	9da9	connected, you can't connect
 785430	6f76	another senior.
 785444	7656	Then only the 
@@ -16929,9 +16929,9 @@
 785766	cf06	  I know that!
 785828	4175	Oh... interview?
 785850	4aa9	That vessel doesn't raise your
-785878	8f29	abilities, nor does it widen your
+785878	8f29	abilities, nor widen your
 785906	c310	links with people.
-785928	41bf	Simply put, it's an 
+785928	41bf	Simply, it's an 
 785940	e9bc	action
 785956	3428	 vessel!
 785970	698e	The interview vessel you got:
@@ -16940,12 +16940,12 @@
 786042	4c6c	Get it?
 786058	9053	What?
 786068	a5e2	Still don't get it?
-786090	e4de	Put more simply, fill that vessel
+786090	e4de	Put simply, fill that vessel
 786120	8f5e	and 
 786134	7384	an event happens
 786152	a771	.
 786162	d17a	That's the idea.
-786174	6227	There are other vessels that cause
+786174	6227	There are other vessels causing
 786202	ad15	events, but 
 786214	099d	ones about romance
 786236	6ff4	are 
@@ -16953,7 +16953,7 @@
 786270	5f5b	They're filed under 
 786286	e2a7	Private 
 786302	565f	
-786312	aca5	on the vessel screen, so go check
+786312	aca5	on the vessel screen, go check
 786342	f7d4	them out.
 786352	1b3f	Well, as usual, just pour in My
 786380	3e82	Spirit and you'll see.
@@ -16970,22 +16970,22 @@
 786604	27e8	In some cases, an event may be
 786630	f4bc	canceled.
 786658	d524	Say you want to go see a game,
-786688	21a3	but the season has already ended.
+786688	21a3	but the season's already over.
 786716	2f97	Nothing you can do then, right?
 786740	d117	It all depends on the timing.
 786768	50d5	Oh right, 
-786782	ab40	when you raise someone's
+786782	ab40	if you raise someone's
 786804	6c5f	Link level
 786818	a986	, 
 786826	e352	a reusable vessel
 786848	16d2	can appear
 786858	59ce	 at times.
-786874	2c24	For example, raise Link level with
-786904	6847	Kantoku to get the
+786874	2c24	For instance, raise Link with
+786904	6847	Kantoku for the 
 786920	d443	Consult vessel
 786936	c8e3	.
 786946	a82d	These have no limit on uses, but
-786972	6333	they're the same as event vessels.
+786972	6333	they work like event vessels.
 787000	edad	Pop into the vessel screen now
 787030	b551	and then to check.
 787048	d607	Well, I've explained a lot about
@@ -16999,8 +16999,8 @@
 787238	7df4	.
 787254	88d5	Which 
 787264	fce9	vessel
-787274	1c04	 gets assets, skills,
-787296	1fef	time, effort... that is 
+787274	1c04	 gets cash, skills,
+787296	1fef	time, effort, that is 
 787318	5992	My Spirit,
 787328	eba9	
 787336	48f8	is up to you.
@@ -17026,25 +17026,25 @@
 787860	4a4b	  That's all
 787912	93ca	Still, only practice
 787942	e825	and games gets dull.
-787964	8c05	Bond with team mates
-787992	555c	or a girl too.
-788016	32fa	Improving your surroundings, like
+787964	8c05	Bond with teammates 
+787992	555c	or a girl.
+788016	32fa	Improving surroundings, like
 788046	487d	a home or car, is good too.
-788072	8ae4	Links with people and things like
+788072	8ae4	Links to people and things like
 788102	ce3f	that can end up making you
 788130	c691	grow as a person.
-788156	d028	Well, you only live once, so live
+788156	d028	Well, you live once, so live
 788184	6546	without regrets.
 788210	75ea	Roughly speaking, it goes
 788236	bb50	Spring Camp, Preseason, then
 788264	f487	the season opens.
-788290	a179	In the season, first-team players
+788290	a179	In-season, first-team players
 788318	2fc2	fight the pennant race, and farm
 788348	61e1	players play farm games.
 788368	177f	There's also the All-Star Game,
 788396	ffb2	and at the end of the season,
 788424	32e7	the Japan Series.
-788434	ab96	Of course, whether you play in the
+788434	ab96	Of course, if you play in the
 788464	1da1	All-Star Game or Japan Series
 788492	a98e	depends on you and your team.
 788512	baaa	After that, the Asia Series
@@ -17068,7 +17068,7 @@
 788974	457c	screen!
 788994	d582	This is the main screen you
 789024	9628	see most of the time.
-789048	cbfc	Here you run commands, use items,
+789048	cbfc	Here: run commands, use items,
 789078	9dd9	save your data, and do all sorts
 789108	0cd1	of things.
 789136	2a48	I'll go through it in order.
@@ -17078,7 +17078,7 @@
 789238	f926	.
 789246	e933	Well, no problem there.
 789272	ad0d	Let's keep a good pace.
-789306	19ef	Next is the 
+789306	19ef	Next, the 
 789328	d873	team
 789338	337f	 flag you joined.
 789362	e60e	And this is the 
@@ -17094,22 +17094,22 @@
 789478	845d	
 789486	611e	
 789494	01ca	
-789504	9cb3	blue, purple as your form worsens.
+789504	9cb3	blue, purple as form worsens.
 789528	c338	Yellow
 789538	4e4c	 is Normal.
 789556	a47d	Good form lets you bring out
 789586	403c	all of your strength.
-789616	f46c	Conversely, when your form is bad,
-789646	3a00	you can't use your full strength,
+789616	f46c	Conversely, when form is bad,
+789646	3a00	you can't use your full power,
 789676	b814	so watch out.
-789704	5e60	The arrow beside it shows the 
+789704	5e60	The arrow by it shows the 
 789730	baa7	form
 789740	0a92	change
 789750	3635	 to come.
 789766	ed76	An upward arrow means a rising
 789796	9301	trend, so expect your form to go
 789826	4203	up from here.
-789842	95f3	Downward is the reverse: expect it
+789842	95f3	Down is the reverse: expect it
 789872	7d17	to drop from here.
 789914	9d1a	This displays your
 789932	4388	 fan count
@@ -17117,10 +17117,10 @@
 789956	0134	at the moment.
 789968	9e8e	The more fans, the more popular
 789998	d17a	you are.
-790010	9739	If you're popular, you tend to get
+790010	9739	If popular, you tend to get
 790040	c516	offers of baseball gear and CM
 790068	ca5d	appearance requests, they say.
-790086	a387	Well, you're a pro, so popularity
+790086	a387	Well, you're a pro, popularity
 790116	ae93	can only help.
 790144	c8e7	Take good care of your fans.
 790184	473d	Next up is your 
@@ -17153,7 +17153,7 @@
 790814	76c3	you're a pro, so get results
 790844	5bf0	on the field.
 790868	09c6	Then, at the year-end Contract
-790898	1acc	Renewal, your salary should go up.
+790898	1acc	Renewal, your pay should go up.
 790926	0faa	Depends on how you negotiate.
 790954	5833	When your salary goes up, the
 790984	0ac7	taxes taken out go up too.
@@ -17171,7 +17171,7 @@
 791240	7c4b	When Vitality hits 0...
 791270	af90	It means you're completely
 791300	60fd	worn out.
-791316	551d	When it happens in a game,
+791316	551d	If it happens in a game,
 791338	e92e	 you may
 791354	bd96	get pulled early
 791370	5733	.
@@ -17181,24 +17181,24 @@
 791486	3476	will only have half Stamina if
 791514	9ddf	Vitality is at half.
 791542	9302	Vitality
-791552	3964	 recovers after a night's
+791552	3964	 recovers with a night's
 791578	ffab	sleep,
 791586	236d	 so while you're young,
-791614	e4c4	unless you overdo it, you're fine.
-791636	dd12	If you keep acting on no Vitality,
-791666	d4db	then, at right, 
+791614	e4c4	unless you overdo it, you're OK.
+791636	dd12	If you act on no Vitality,
+791666	d4db	at right, 
 791686	4059	Fatigue 
 791710	4070	builds up.
-791728	411d	This Fatigue is 
+791728	411d	Fatigue means 
 791742	0487	season-long wear
 791758	6f4a	.
 791770	f568	Keep that in mind.
-791782	05d9	Unlike Vitality, it heals slowly
+791782	05d9	Unlike Vitality, it heals slow
 791810	f926	.
 791818	181b	So if you keep pushing without
 791846	2af7	Vitality, Fatigue piles up
 791874	d665	faster and faster.
-791892	ac9f	When Fatigue builds,
+791892	ac9f	As Fatigue builds,
 791908	c916	 you get hurt
 791928	f3e8	more easily, and your form
 791956	288c	
@@ -17225,7 +17225,7 @@
 792486	271f	 it's worth 2 turns
 792508	7f93	all the same
 792522	ae4e	, so don't worry.
-792542	0f35	Also the Offseason, Japan Series,
+792542	0f35	Also Offseason, Japan Series,
 792572	2f2f	and other special events,
 792598	6927	some days are only
 792608	aab1	 1 turn long
@@ -17234,7 +17234,7 @@
 792680	9b37	Where you are limits what you
 792708	beee	can do, so watch it.
 792730	47db	Next, the commands.
-792772	923d	First, see this icon at top left.
+792772	923d	First, see this icon top left.
 792802	a5a5	This icon is the
 792820	5c6d	 Action Icon
 792838	c8e3	.
@@ -17274,16 +17274,16 @@
 793546	dd74	items sell out
 793558	682a	.
 793572	96e8	Sold-out items
-793594	d4ab	 restock in 1 month
+793594	d4ab	 return in 1 month
 793610	3c04	or so, at times,
 793626	9116	 so keep it
 793646	7e64	in mind.
 793660	861a	Some
-793670	2a9f	 items you can hold only 1
+793670	2a9f	 items you hold only 1
 793694	3c69	 of
 793702	534f	also exist. If you own one,
 793732	c0bf	it may show as sold out.
-793754	e690	Cars: if the house
+793754	e690	Cars: if a house
 793772	a7ba	 has no garage,
 793790	2492	you can't buy it
 793810	f926	.
@@ -17303,10 +17303,10 @@
 794102	4e37	Also your player profile and
 794132	93e5	history, which you can see too.
 794162	8925	History is
-794178	a9cd	 the path you've walked
+794178	a9cd	 the path you walked
 794200	1956	that gets recorded
 794216	0651	 here.
-794228	847e	Our first meeting is recorded too,
+794228	847e	Our first meeting is saved too,
 794258	5b9e	so check it later.
 794316	f06f	Also, you can view
 794326	0183	 Goals
@@ -17331,7 +17331,7 @@
 794728	3c69	
 794736	8b31	in practice and games too.
 794748	d00d	You can check friendship with
-794778	cdb1	people you met and where they are.
+794778	cdb1	people met and where they are.
 794808	f9c6	Come on, keep it moving.
 794844	8c61	Next up: the
 794854	4a2d	 Dojos
@@ -17346,8 +17346,8 @@
 795028	2776	As a playing manager, make
 795056	a121	requests to the team and make it
 795084	bab6	stronger.
-795100	9c46	You can set player usage too, but
-795126	dcd7	some usage may keep a player from
+795100	9c46	You can set player usage, but
+795126	dcd7	some usage may keep him from
 795156	0ef9	showing his ability.
 795178	457c	Use each player the right way.
 795210	548f	Now, let's take a breather.
@@ -17359,27 +17359,27 @@
 795356	c8e3	.
 795366	7aec	Straight up: it shows your game
 795396	f5e7	records.
-795418	9c92	You can check first team and farm
+795418	9c92	You can check 1st-team and farm
 795448	d053	game and career records.
 795468	28ff	First team records are kept
 795496	204b	season by season.
 795528	8c61	Next is 
 795538	7b58	Full Records
 795548	f926	.
-795556	30f6	All player records, team results,
+795556	30f6	All records, team results,
 795586	748b	Monthly MVPs, titles and more:
 795616	e004	all can be viewed.
-795636	daf3	A real treasure trove of records.
-795658	34c5	Also: first/farm swaps, transfers,
+795636	daf3	Truly a trove of records.
+795658	34c5	Also: farm swaps, transfers,
 795688	9d19	injury news and ability lists
 795714	e004	for all players.
 795748	8c61	Next is 
 795758	c788	Ability Data
 795772	f926	.
-795780	2d68	This shows your baseball abilities
+795780	2d68	This shows your baseball ability
 795810	c1bb	and skills
 795820	8587	 and so on.
-795840	bb27	Skills are like how proficient you
+795840	bb27	Skills are how proficient you
 795870	ad76	are at hobbies.
 795890	d491	For example, if 
 795902	56fd	Golf
@@ -17391,15 +17391,15 @@
 796006	bdab	 and
 796016	237d	Drinking Style
 796030	a057	 are skills too.
-796052	d65f	Even I don't know what they affect
+796052	d65f	Even I don't know what they do
 796082	2f1a	in detail, but...
 796100	75d4	High skills will
-796118	157f	 win you friends,
+796118	157f	 win friends,
 796134	3beb	get you closer
-796150	ee21	 to people, I hear.
+796150	ee21	 to folks, I hear.
 796166	f06f	Also, 
 796176	4524	Class 
-796184	ea37	and your growth are in
+796184	ea37	and growth are in
 796206	485d	the growth chart, too.
 796270	592b	And the last command is
 796300	b3d8	System
@@ -17428,7 +17428,7 @@
 796858	c52e	
 796888	8f40	You may also get items from
 796918	09ca	people.
-796928	7d9b	Items you got are on the
+796928	7d9b	Your items show on the
 796950	5c8a	 Treasures
 796966	fbb9	Screen.
 797006	a0b1	It is split into
@@ -17453,7 +17453,7 @@
 797386	38a3	.
 797398	3528	First, look at the top left.
 797438	42c3	This is where you equip bats.
-797478	c5ff	As a pitcher this hardly matters,
+797478	c5ff	As a pitcher it hardly matters,
 797506	7eea	but let me explain the count.
 797536	c975	Look at the bottom right.
 797572	24ee	This number is how many bats you
@@ -17469,9 +17469,9 @@
 797822	ac15	But bats
 797838	2b3f	 can break
 797848	59ce	.
-797864	c265	Naturally a broken bat is useless,
+797864	c265	A broken bat can't be used, so
 797892	fb1c	so you have to buy a new one...
-797920	ab83	Look at the bottom right of a bat.
+797920	ab83	Look at a bat's bottom right.
 797962	24ee	This number is how many bats you
 797990	ba42	have.
 798000	e7d9	Each slot holds 
@@ -17479,7 +17479,7 @@
 798028	cdf5	 bats at most,
 798042	b99d	you know.
 798060	6a5c	So if you just check your count
-798090	5c6d	before an away trip, you won't be
+798090	5c6d	before away trips, you won't be
 798120	f240	short on bats.
 798148	91b4	Even if you run out, a team mate
 798178	e6ac	can lend you one, so don't worry
@@ -17488,9 +17488,9 @@
 798252	fc17	batting ability easier to raise,
 798282	c6ba	I think.
 798292	db37	Next up, the glove.
-798330	f49d	Unlike bats, you can equip only 1
+798330	f49d	Unlike bats, you equip only 1
 798358	b00a	glove.
-798374	5116	But gloves don't break like bats,
+798374	5116	Gloves don't break like bats,
 798402	d4a5	so one is plenty.
 798430	3d7b	Still, even gloves wear out.
 798458	4215	Use one for a long time and it
@@ -17531,7 +17531,7 @@
 799358	e08f	bring a rod.
 799378	70cb	If travel fatigue worries you,
 799408	9f87	you can carry an energy drink.
-799430	e545	You could also dress up in a suit
+799430	e545	You can also dress up in a suit
 799460	b13e	for dates.
 799486	c764	Now, on to the Home Items below.
 799514	0e29	Let me tell you about them.
@@ -17544,7 +17544,7 @@
 799704	e69a	than Equipment.
 799730	e47f	How many you can hold depends on
 799760	1ccc	the house.
-799776	45cd	At the dorm, the max is 
+799776	45cd	At the dorm, max is 
 799792	bd17	18
 799802	40bc	 items.
 799816	5cd8	Also, these are kept at home,
@@ -17556,7 +17556,7 @@
 799958	48a8	Oh yes, there are two ways to
 799986	aef5	equip: pick an item from Home
 800016	1e19	Items, or...
-800054	a784	choose an empty slot in Equipment
+800054	a784	pick an empty slot in Equipment
 800084	a0db	as the other way.
 800120	7587	The cursor moves freely between
 800150	6ce0	Equipment and Home Items
@@ -17566,7 +17566,7 @@
 800238	378a	either place.
 800264	3765	Lastly, let me explain the item
 800294	f31f	types.
-800310	6e6f	Background: 
+800310	6e6f	Backdrop: 
 800320	c6ae	blue
 800330	4604	 is baseball gear.
 800346	bf42	Naturally you can carry it.
@@ -17585,14 +17585,14 @@
 800592	49da	Now try things out yourself and
 800620	c2e1	learn!
 800642	1881	Fine, let's stop here.
-800696	b485	Hobbies range from golf, fishing,
+800696	b485	Hobbies run from golf, fishing,
 800726	7d2b	to RC cars, mahjong and more.
 800756	32e7	There are many.
 800768	c551	On Free 
 800778	d0a7	turns, besides rest and
-800804	4c2c	solo training, you can do a hobby
+800804	4c2c	solo training, you get a hobby
 800834	1969	command.
-800852	21ea	Hobbies come in several types with
+800852	21ea	Hobbies have several types with
 800882	696a	different effects.
 800898	c22b	Some relax you and
 800916	c4af	 improve form
@@ -17632,11 +17632,11 @@
 801524	998c	2 turns, 1 day
 801542	3452	.
 801554	f4c2	It must be a Free turn.
-801576	bbb1	Some, like mahjong, 
+801576	bbb1	Some like mahjong 
 801596	4ab9	are night only
 801614	c99f	.
 801636	416f	Well, think of it as a breath of
-801664	be29	fresh air in baseball-filled days.
+801664	be29	fresh air in baseball days.
 801860	461a	Hey!
 801880	612f	Hm?
 801890	cdb5	Ryocho...
@@ -17651,7 +17651,7 @@
 802096	8951	 Gold Vessel
 802110	6218	.
 802134	8698	...!
-802154	2624	Heh heh, so you know what I mean.
+802154	2624	Heh heh, you know what I mean.
 802182	950f	So, want to hear about it?
 802222	f5d9	  Yes
 802232	cf06	  I know
@@ -17667,7 +17667,7 @@
 802532	2614	lower it
 802544	1995	.
 802554	d103	That means that even as you age,
-802582	a2c9	you've gained absolute power that
+802582	a2c9	you have absolute power that
 802610	08c3	never fades.
 802634	7086	Truly, Stay Gold!
 802656	c08d	Eternal ability, in other words!
@@ -17677,7 +17677,7 @@
 802734	c57b	, so
 802744	14d2	watch out.
 802760	8956	It won't fall below the value
-802788	69ab	set when a gold vessel raised it,
+802788	69ab	set when gold vessel raised it,
 802818	4e49	so don't get it wrong.
 802840	10a3	For example, a gold Speed vessel
 802868	b129	raises Speed to 10...
