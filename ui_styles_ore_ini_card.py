@@ -26,7 +26,27 @@ def bevel(top, core, bottom, thresh=3):
     return style
 
 
+def outlined_pair(top, core, bottom, thresh=3):
+    """Letters of palette index `core` in a solid one-pixel ring: `top` on the upper-left side of a stroke, `bottom` on
+    the lower-right side (the Japanese list lettering of y3_mys is dark outline / pale fill / dark outline)."""
+    def style(ink, base):
+        pad = 2
+        h, w = ink.shape
+        m = np.zeros((h + 2 * pad, w + 2 * pad), bool)
+        m[pad:pad + h, pad:pad + w] = ink >= thresh
+        ring = grow(m, 1) & ~m
+        dn = np.zeros_like(m); dn[:-1] = m[1:]          # letter below
+        rt = np.zeros_like(m); rt[:, :-1] = m[:, 1:]    # letter to the right
+        out = np.zeros(m.shape, np.uint8)
+        out[ring] = bottom
+        out[ring & (dn | rt)] = top
+        out[m] = core
+        return out, base + pad
+    return style
+
+
 STYLES = {
+    "mysr": outlined_pair(5, 14, 7),
     # y3_mys (palette 8, pink ramp): core 14 (e), left/top edge 5, right/bottom edge 7
     "mysl": bevel(5, 14, 7),
 }
