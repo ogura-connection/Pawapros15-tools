@@ -5,7 +5,7 @@
    "bank": "m3_onsei",
    "palette": 0,
    "style": "v_btn_olive",
-   "font": "ttf:rounded:17:0:0.9:0.4",
+   "font": "ttf:rounded:14:0:0.9:0.4",
    "under": 3,
    "areas": [
     [
@@ -112,8 +112,8 @@
      "sprite": "54",
      "text": "Save",
      "style": "v_btn_olive",
-     "font": "ttf:rounded:17:0:0.9:0.4",
-     "baseline": 30,
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 28,
      "pages": [
       9
      ],
@@ -125,8 +125,8 @@
      "sprite": "58",
      "text": "List",
      "style": "v_btn_green",
-     "font": "ttf:rounded:17:0:0.9:0.4",
-     "baseline": 38,
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 37,
      "palettes": [
       69
      ]
@@ -135,8 +135,8 @@
      "sprite": "59",
      "text": "Type",
      "style": "v_btn_olive",
-     "font": "ttf:rounded:17:0:0.9:0.4",
-     "baseline": 39,
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 38,
      "palettes": [
       68
      ]
@@ -145,8 +145,8 @@
      "sprite": "5a",
      "text": "Cancel",
      "style": "v_btn_purple",
-     "font": "ttf:rounded:17:0:0.9:0.4",
-     "baseline": 39,
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 38,
      "palettes": [
       72
      ]
@@ -155,8 +155,8 @@
      "sprite": "64",
      "text": "Next",
      "style": "v_btn_orange",
-     "font": "ttf:rounded:17:0:0.9:0.4",
-     "baseline": 30,
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 28,
      "palettes": [
       70
      ]
@@ -165,8 +165,8 @@
      "sprite": "65",
      "text": "Quit",
      "style": "v_btn_purple",
-     "font": "ttf:rounded:17:0:0.9:0.4",
-     "baseline": 30,
+     "font": "ttf:rounded:14:0:0.85:0.4",
+     "baseline": 29,
      "palettes": [
       72
      ]
