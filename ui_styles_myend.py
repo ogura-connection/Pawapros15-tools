@@ -42,6 +42,6 @@ def window(style, k, size=128):
     return cut
 
 
-for _name in ("me_chrome", "me_slate", "me_burn", "me_ban17", "me_ban18", "me_ban22"):
+for _name in ("me_chrome", "me_slate", "me_burn", "me_ban17", "me_ban18", "me_ban22", "me_team"):
     for _k in range(3):
         STYLES["win_%s_%d" % (_name, _k)] = window(STYLES[_name], _k)

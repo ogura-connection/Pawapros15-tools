@@ -1,0 +1,1320 @@
+{
+ "arc": "myend.arc",
+ "repack": [
+  {
+   "bank": "y3_end",
+   "palette": 0,
+   "style": "me_white",
+   "font": "ttf:rounded:22:0:1:0.5",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     0,
+     0,
+     96,
+     32,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "My Life",
+     "font": "ttf:rounded:22:0:1:0.5",
+     "style": "me_white",
+     "left": 30,
+     "baseline": 26
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      32,
+      128
+     ],
+     "empty": true
+    }
+   ]
+  },
+  {
+   "bank": "y3_se16",
+   "palette": 16,
+   "style": "me_team",
+   "font": "ttf:din:12:0:1:0.5",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     7,
+     0,
+     80,
+     32,
+     120
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     7,
+     0,
+     0,
+     32,
+     40
+    ],
+    [
+     8,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     7,
+     32,
+     40,
+     64,
+     80
+    ],
+    [
+     6,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     7,
+     0,
+     40,
+     32,
+     80
+    ],
+    [
+     8,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     7,
+     32,
+     80,
+     64,
+     120
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     7,
+     32,
+     0,
+     64,
+     40
+    ],
+    [
+     10,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     7,
+     96,
+     80,
+     128,
+     120
+    ],
+    [
+     9,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     7,
+     64,
+     80,
+     96,
+     120
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     7,
+     64,
+     0,
+     96,
+     40
+    ],
+    [
+     10,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     7,
+     96,
+     40,
+     128,
+     80
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     7,
+     96,
+     0,
+     128,
+     40
+    ],
+    [
+     9,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     7,
+     64,
+     40,
+     96,
+     80
+    ],
+    [
+     11,
+     0,
+     0,
+     32,
+     40
+    ],
+    [
+     11,
+     32,
+     0,
+     64,
+     40
+    ],
+    [
+     11,
+     64,
+     0,
+     96,
+     40
+    ],
+    [
+     12,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     3,
+     120,
+     0,
+     128,
+     32
+    ],
+    [
+     13,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     13,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     13,
+     120,
+     32,
+     128,
+     64
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     12,
+     0,
+     32,
+     8,
+     64
+    ],
+    [
+     11,
+     48,
+     40,
+     72,
+     72
+    ],
+    [
+     11,
+     48,
+     72,
+     72,
+     104
+    ],
+    [
+     13,
+     72,
+     0,
+     128,
+     32
+    ],
+    [
+     12,
+     72,
+     96,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     48,
+     32
+    ],
+    [
+     13,
+     48,
+     0,
+     72,
+     32
+    ],
+    [
+     11,
+     0,
+     72,
+     48,
+     104
+    ],
+    [
+     11,
+     0,
+     40,
+     48,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      6,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Yomiuri Giants",
+     "font": "ttf:din:23:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 5,
+     "baseline": 31
+    },
+    {
+     "from": [
+      7,
+      0,
+      80,
+      32,
+      120
+     ],
+     "text": "Yomiuri Giants",
+     "font": "ttf:din:23:0:1:0.4",
+     "style": "win_me_team_1",
+     "left": 5,
+     "baseline": 31
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Chunichi Dragons",
+     "font": "ttf:din:19:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 5,
+     "baseline": 26
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      32,
+      40
+     ],
+     "text": "Chunichi Dragons",
+     "font": "ttf:din:19:0:1:0.4",
+     "style": "win_me_team_1",
+     "left": 5,
+     "baseline": 26
+    },
+    {
+     "from": [
+      8,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Hiroshima Toyo Carp",
+     "font": "ttf:din:17:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 3,
+     "baseline": 26
+    },
+    {
+     "from": [
+      7,
+      32,
+      40,
+      64,
+      80
+     ],
+     "text": "Hiroshima Toyo Carp",
+     "font": "ttf:din:17:0:1:0.4",
+     "style": "win_me_team_1",
+     "left": 3,
+     "baseline": 26
+    },
+    {
+     "from": [
+      6,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Tokyo Yakult Swallows",
+     "font": "ttf:din:15:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 4,
+     "baseline": 25
+    },
+    {
+     "from": [
+      7,
+      0,
+      40,
+      32,
+      80
+     ],
+     "text": "Tokyo Yakult Swallows",
+     "font": "ttf:din:15:0:1:0.4",
+     "style": "win_me_team_1",
+     "left": 4,
+     "baseline": 25
+    },
+    {
+     "from": [
+      8,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Yokohama BayStars",
+     "font": "ttf:din:17:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 4,
+     "baseline": 26
+    },
+    {
+     "from": [
+      7,
+      32,
+      80,
+      64,
+      120
+     ],
+     "text": "Yokohama BayStars",
+     "font": "ttf:din:17:0:1:0.4",
+     "style": "win_me_team_1",
+     "left": 4,
+     "baseline": 26
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Hanshin Tigers",
+     "font": "ttf:din:23:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 4,
+     "baseline": 28
+    },
+    {
+     "from": [
+      7,
+      32,
+      0,
+      64,
+      40
+     ],
+     "text": "Hanshin Tigers",
+     "font": "ttf:din:23:0:1:0.4",
+     "style": "win_me_team_1",
+     "left": 4,
+     "baseline": 28
+    },
+    {
+     "from": [
+      10,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Tohoku Rakuten\nGolden Eagles",
+     "font": "ttf:din:12:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 36,
+     "baseline": 32
+    },
+    {
+     "from": [
+      7,
+      96,
+      80,
+      128,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      9,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Hokkaido Nippon-Ham\nFighters",
+     "font": "ttf:din:11:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 23,
+     "baseline": 32
+    },
+    {
+     "from": [
+      7,
+      64,
+      80,
+      96,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      9,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Seibu Lions",
+     "font": "ttf:din:24:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 17,
+     "baseline": 32
+    },
+    {
+     "from": [
+      7,
+      64,
+      0,
+      96,
+      40
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      10,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Orix Buffaloes",
+     "font": "ttf:din:24:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 5,
+     "baseline": 32
+    },
+    {
+     "from": [
+      7,
+      96,
+      40,
+      128,
+      80
+     ],
+     "text": "Orix Buffaloes",
+     "font": "ttf:din:24:0:1:0.4",
+     "style": "win_me_team_1",
+     "left": 5,
+     "baseline": 32
+    },
+    {
+     "from": [
+      10,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Chiba Lotte Marines",
+     "font": "ttf:din:17:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 5,
+     "baseline": 28
+    },
+    {
+     "from": [
+      7,
+      96,
+      0,
+      128,
+      40
+     ],
+     "text": "Chiba Lotte Marines",
+     "font": "ttf:din:17:0:1:0.4",
+     "style": "win_me_team_1",
+     "left": 5,
+     "baseline": 28
+    },
+    {
+     "from": [
+      9,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Fukuoka SoftBank\nHawks",
+     "font": "ttf:din:14:0:1:0.4",
+     "style": "win_me_team_0",
+     "left": 21,
+     "baseline": 36
+    },
+    {
+     "from": [
+      7,
+      64,
+      40,
+      96,
+      80
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      11,
+      0,
+      0,
+      32,
+      40
+     ],
+     "text": "W",
+     "font": "ttf:din:26:0:1:0.6",
+     "style": "me_wlt",
+     "left": 1,
+     "baseline": 33
+    },
+    {
+     "from": [
+      11,
+      32,
+      0,
+      64,
+      40
+     ],
+     "text": "L",
+     "font": "ttf:din:26:0:1:0.6",
+     "style": "me_wlt",
+     "left": 5,
+     "baseline": 33
+    },
+    {
+     "from": [
+      11,
+      64,
+      0,
+      96,
+      40
+     ],
+     "text": "T",
+     "font": "ttf:din:26:0:1:0.6",
+     "style": "me_wlt",
+     "left": 5,
+     "baseline": 33
+    },
+    {
+     "from": [
+      12,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "Title Contractor",
+     "font": "ttf:din:19:0:1:0.5",
+     "style": "win_me_ban17_0",
+     "left": 2,
+     "baseline": 25
+    },
+    {
+     "from": [
+      3,
+      120,
+      0,
+      128,
+      32
+     ],
+     "text": "Title Contractor",
+     "font": "ttf:din:19:0:1:0.5",
+     "style": "win_me_ban17_1",
+     "left": 2,
+     "baseline": 25
+    },
+    {
+     "from": [
+      13,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "Player-Manager",
+     "font": "ttf:din:19:0:1:0.5",
+     "style": "win_me_ban18_0",
+     "left": 62,
+     "baseline": 23
+    },
+    {
+     "from": [
+      13,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Player-Manager",
+     "font": "ttf:din:19:0:1:0.5",
+     "style": "win_me_ban18_1",
+     "left": 62,
+     "baseline": 23
+    },
+    {
+     "from": [
+      13,
+      120,
+      32,
+      128,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      12,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Grand Farewell",
+     "font": "ttf:din:19:0:1:0.5",
+     "style": "win_me_ban22_0",
+     "left": 2,
+     "baseline": 25
+    },
+    {
+     "from": [
+      12,
+      0,
+      32,
+      8,
+      64
+     ],
+     "text": "Grand Farewell",
+     "font": "ttf:din:19:0:1:0.5",
+     "style": "win_me_ban22_1",
+     "left": 2,
+     "baseline": 25
+    },
+    {
+     "from": [
+      11,
+      48,
+      40,
+      72,
+      72
+     ],
+     "text": "W",
+     "font": "ttf:din:22:0:1:0.5",
+     "style": "me_stat",
+     "left": 0,
+     "baseline": 27
+    },
+    {
+     "from": [
+      11,
+      48,
+      72,
+      72,
+      104
+     ],
+     "text": "L",
+     "font": "ttf:din:22:0:1:0.5",
+     "style": "me_stat",
+     "left": 3,
+     "baseline": 27
+    },
+    {
+     "from": [
+      13,
+      72,
+      0,
+      128,
+      32
+     ],
+     "text": "SV",
+     "font": "ttf:din:22:0:1:0.5",
+     "style": "me_stat",
+     "left": 12,
+     "baseline": 27
+    },
+    {
+     "from": [
+      12,
+      72,
+      96,
+      128,
+      128
+     ],
+     "text": "ERA",
+     "font": "ttf:din:22:0:1:0.5",
+     "style": "me_stat",
+     "left": 6,
+     "baseline": 27
+    },
+    {
+     "from": [
+      13,
+      0,
+      0,
+      48,
+      32
+     ],
+     "text": "AVG",
+     "font": "ttf:din:22:0:1:0.5",
+     "style": "me_stat",
+     "left": 2,
+     "baseline": 27
+    },
+    {
+     "from": [
+      13,
+      48,
+      0,
+      72,
+      32
+     ],
+     "text": "HR",
+     "font": "ttf:din:14:0:1:0.5",
+     "style": "me_stat",
+     "left": 0,
+     "baseline": 23
+    },
+    {
+     "from": [
+      11,
+      0,
+      72,
+      48,
+      104
+     ],
+     "text": "RBI",
+     "font": "ttf:din:22:0:1:0.5",
+     "style": "me_stat",
+     "left": 5,
+     "baseline": 27
+    },
+    {
+     "from": [
+      11,
+      0,
+      40,
+      48,
+      72
+     ],
+     "text": "SB",
+     "font": "ttf:din:22:0:1:0.5",
+     "style": "me_stat",
+     "left": 8,
+     "baseline": 27
+    }
+   ]
+  },
+  {
+   "bank": "y3_se256",
+   "palette": 32,
+   "style": "me_chrome",
+   "font": "ttf:din:36:0:1:0.6",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     64,
+     80,
+     128
+    ],
+    [
+     10,
+     0,
+     104,
+     16,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     88
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     88
+    ],
+    [
+     7,
+     104,
+     0,
+     128,
+     88
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     5,
+     80,
+     64,
+     128,
+     128
+    ],
+    [
+     10,
+     16,
+     104,
+     48,
+     128
+    ],
+    [
+     10,
+     48,
+     104,
+     80,
+     128
+    ],
+    [
+     10,
+     88,
+     112,
+     96,
+     120
+    ],
+    [
+     10,
+     0,
+     0,
+     64,
+     104
+    ],
+    [
+     10,
+     64,
+     0,
+     128,
+     104
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     7,
+     0,
+     0,
+     96,
+     104
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     88
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     88
+    ],
+    [
+     12,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     56,
+     128,
+     64
+    ],
+    [
+     5,
+     0,
+     56,
+     128,
+     64
+    ],
+    [
+     10,
+     80,
+     104,
+     128,
+     128
+    ],
+    [
+     7,
+     96,
+     88,
+     128,
+     104
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      0,
+      64,
+      128,
+      128
+     ],
+     "text": "Missed the Title...",
+     "font": "ttf:din:32:0:1:0.6",
+     "style": "win_me_slate_0",
+     "left": 7,
+     "baseline": 47
+    },
+    {
+     "from": [
+      5,
+      0,
+      64,
+      80,
+      128
+     ],
+     "text": "Missed the Title...",
+     "font": "ttf:din:32:0:1:0.6",
+     "style": "win_me_slate_1",
+     "left": 7,
+     "baseline": 47
+    },
+    {
+     "from": [
+      10,
+      0,
+      104,
+      16,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      128,
+      88
+     ],
+     "text": "Congratulations!",
+     "font": "ttf:din:36:0:1:0.6",
+     "style": "win_me_chrome_0",
+     "left": 4,
+     "baseline": 53
+    },
+    {
+     "from": [
+      9,
+      0,
+      0,
+      128,
+      88
+     ],
+     "text": "Congratulations!",
+     "font": "ttf:din:36:0:1:0.6",
+     "style": "win_me_chrome_1",
+     "left": 4,
+     "baseline": 53
+    },
+    {
+     "from": [
+      7,
+      104,
+      0,
+      128,
+      88
+     ],
+     "text": "Congratulations!",
+     "font": "ttf:din:36:0:1:0.6",
+     "style": "win_me_chrome_2",
+     "left": 4,
+     "baseline": 53
+    },
+    {
+     "from": [
+      11,
+      0,
+      0,
+      128,
+      104
+     ],
+     "text": "Japan Series",
+     "font": "ttf:din:28:0:1:0.6",
+     "style": "me_chrome",
+     "left": 35,
+     "baseline": 37
+    },
+    {
+     "from": [
+      5,
+      80,
+      64,
+      128,
+      128
+     ],
+     "text": "Champions",
+     "font": "ttf:din:28:0:1:0.6",
+     "style": "me_chrome",
+     "left": -81,
+     "baseline": 69
+    },
+    {
+     "from": [
+      10,
+      16,
+      104,
+      48,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      10,
+      48,
+      104,
+      80,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      10,
+      88,
+      112,
+      96,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      128,
+      104
+     ],
+     "text": "League",
+     "font": "ttf:din:28:0:1:0.6",
+     "style": "me_chrome",
+     "left": 84,
+     "baseline": 37
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      96,
+      104
+     ],
+     "text": "Champions",
+     "font": "ttf:din:28:0:1:0.6",
+     "style": "me_chrome",
+     "left": -125,
+     "baseline": 85
+    },
+    {
+     "from": [
+      10,
+      0,
+      0,
+      64,
+      104
+     ],
+     "text": "Central",
+     "font": "ttf:din:28:0:1:0.6",
+     "style": "me_chrome",
+     "left": 34,
+     "baseline": 37
+    },
+    {
+     "from": [
+      10,
+      64,
+      0,
+      128,
+      104
+     ],
+     "text": "Pacific",
+     "font": "ttf:din:28:0:1:0.6",
+     "style": "me_chrome",
+     "left": 39,
+     "baseline": 37
+    },
+    {
+     "sprite": "0c",
+     "palettes": [
+      96
+     ],
+     "text": "Gave It All",
+     "font": "ttf:din:46:0:1:0.8",
+     "style": "me_burn",
+     "slices": true,
+     "left": -227,
+     "dy": 0
+    },
+    {
+     "sprite": "0c",
+     "palettes": [
+      112
+     ],
+     "empty": true
+    }
+   ],
+   "share": true
+  }
+ ]
+}
