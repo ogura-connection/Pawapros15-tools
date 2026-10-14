@@ -304,10 +304,10 @@ for _op in list(range(0x26, 0x46)) + [0x89]:
 for _op in range(0x16, 0x26):
     EIKAN_OP_LEN[_op] = 4
 # "region" = the script, "labels" = its label table (section offsets); "list" = the opcode that is
-# followed by values up to a zero; "ends" = return and goto; "line" = cells of the widest Japanese line.
+# followed by values up to a zero; "ends" = return and goto; "line" = cells a line may take (the Japanese rarely passes 18; not measured in game yet).
 BLOCK_SCRIPTS = {"sct_main.rel": {"section": 5, "region": (14416, 189368), "labels": (189372, 210644),
                                   "op_len": EIKAN_OP_LEN, "list": 0x67, "ends": (0x01, 0x87), "max_op": 0xCE,
-                                  "name_ops": tuple(range(0x4B, 0x51)), "line": 20}}
+                                  "name_ops": tuple(range(0x4B, 0x51)), "line": 18}}
 
 
 class BlockScript(Script):
