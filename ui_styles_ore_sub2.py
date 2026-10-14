@@ -44,7 +44,7 @@ STYLES = {
     # white letters in blue rings with the button picture (palette 8 of r5_tsu)
     "o2menu": with_icon(banded([0, 12, 13, 14, 15, 15, 15], [7, 1]), ICON_MENU),
     # gold / purple / green letters in a white band and blue rings (palettes 36, 43, 38)
-    "o2btn": banded([0, 12, 13, 14, 15, 15, 15], [9, 5, 2], 1),
+    "o2btn": banded([0, 12, 13, 14, 15, 15, 15], [9, 3], 2),
     # navy letters, white ring, lime glow (palette 74)
     "o2small": banded([0, 10, 12, 13, 14, 15, 15], [7, 2]),
     # profile: cyan heading (palette 9), pink heading (10), green heading (1), positions (15)
