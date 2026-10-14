@@ -829,7 +829,7 @@
    "bank": "y3_c16",
    "palette": 2,
    "style": "c16_00",
-   "font": "ttf:din:12:0:1:0.4",
+   "font": "ttf:rounded:12:0:0.9:0.3",
    "under": 3,
    "areas": [
     [
@@ -858,8 +858,8 @@
      ],
      "text": "Choose a Team",
      "style": "c16_00",
-     "font": "ttf:din:12:0:1:0.4",
-     "left": -15,
+     "font": "ttf:rounded:12:0:0.9:0.3",
+     "left": -27,
      "baseline": 21,
      "sprites": [
       "00"
@@ -885,7 +885,7 @@
      ],
      "text": "Choose the Team That Drafted You",
      "style": "c16_03a",
-     "font": "ttf:din:12:0:1:0.4",
+     "font": "ttf:rounded:12:0:0.9:0.3",
      "left": 0,
      "baseline": 21
     },
@@ -899,7 +899,7 @@
      ],
      "text": "Choose the Team That Drafted You",
      "style": "c16_03b",
-     "font": "ttf:din:12:0:1:0.4",
+     "font": "ttf:rounded:12:0:0.9:0.3",
      "left": 0,
      "baseline": 21
     },
@@ -913,7 +913,7 @@
      ],
      "text": "Choose the Team That Drafted You",
      "style": "c16_03c",
-     "font": "ttf:din:12:0:1:0.4",
+     "font": "ttf:rounded:12:0:0.9:0.3",
      "left": 0,
      "baseline": 21,
      "sprites": [
@@ -927,7 +927,12 @@
       56,
       32,
       80
-     ]
+     ],
+     "text": "I",
+     "style": "c16_cap",
+     "left": 0,
+     "baseline": 6,
+     "font": "ttf:rounded:12:0:0.9:0.3"
     }
    ]
   }

@@ -50,9 +50,20 @@ def onbar(inner, nrings, bar, rows, canvas, window, cap=None):
     return style
 
 
-_ring = banded([0, 6, 5, 4, 3, 2, 1], [15, 13])
+_ring = banded([0, 6, 5, 4, 3, 2, 1], [15])
 # sprite 00 of y3_c16: the whole heading on one piece 92 wide; sprite 03: three pieces of a bar 408 wide
-STYLES["c16_00"] = onbar(_ring, 2, 11, 16, 92, (0, 92))
-STYLES["c16_03a"] = onbar(_ring, 2, 11, 16, 408, (0, 128), ("ore_ini.arc", "y3_c16", 3, (0, 56, 32, 80), 6))
-STYLES["c16_03b"] = onbar(_ring, 2, 11, 16, 408, (128, 256))
-STYLES["c16_03c"] = onbar(_ring, 2, 11, 16, 408, (256, 376))
+STYLES["c16_00"] = onbar(_ring, 1, 11, 16, 116, (0, 116))
+STYLES["c16_03a"] = onbar(_ring, 1, 11, 16, 408, (0, 128), ("ore_ini.arc", "y3_c16", 3, (0, 56, 32, 80), 6))
+STYLES["c16_03b"] = onbar(_ring, 1, 11, 16, 408, (128, 256))
+STYLES["c16_03c"] = onbar(_ring, 1, 11, 16, 408, (256, 376))
+
+
+def copyof(arc, bank, page, rect, r0, r1):
+    """A style that ignores its word and returns the rows r0..r1 of a rectangle of the original page (a plate end that has to stay as it is)."""
+    def style(ink, base):
+        x0, y0, x1, y1 = rect
+        return _orig_page(arc, bank, page)[y0 + r0:y0 + r1 + 1, x0:x1].copy(), 0
+    return style
+
+
+STYLES["c16_cap"] = copyof("ore_ini.arc", "y3_c16", 3, (0, 56, 32, 80), 6, 22)

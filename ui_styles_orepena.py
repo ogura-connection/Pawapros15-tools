@@ -24,6 +24,30 @@ def _din_font(cap, gap, bold, space=None):
     return make
 
 
+def _nb_font(size, gap=1):
+    """Font "nb<size>": Arial Narrow Bold hinted at `size` pixels, no anti-aliasing: crisp pixels for small lettering."""
+    def make(project=None):
+        from PIL import Image, ImageDraw, ImageFont
+        f = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf", size)
+        glyphs = {}
+        chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,!?&'/-+:~"
+        for ch in chars:
+            im = Image.new("L", (size * 2, size * 3), 0)
+            dr = ImageDraw.Draw(im)
+            dr.fontmode = "1"
+            dr.text((2, size * 2), ch, font=f, fill=255, anchor="ls")
+            a = np.asarray(im) > 0
+            ys, xs = np.nonzero(a)
+            ink = np.where(a[ys.min():ys.max() + 1, xs.min():xs.max() + 1], 6, 0)
+            glyphs[ch] = (ink, ys.max() + 1 - size * 2)
+        return {"words": {}, "glyphs": glyphs, "space": max(3, size // 4), "gap": gap}
+    return make
+
+
+for _s in range(9, 19):
+    ui_type.FONTS["nb%d" % _s] = _nb_font(_s)
+
+
 for _cap in range(8, 21):
     for _gap in (1, 2):
         for _b in (0, 10, 20, 30):

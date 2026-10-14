@@ -178,6 +178,16 @@
   "shadow": 0,
   "cut": 3
  },
+ "o_f15_r66_s0_c3": {
+  "kind": "solid",
+  "fill": 15,
+  "rings": [
+   6,
+   6
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
  "o_f15_r65_s0_c3": {
   "kind": "solid",
   "fill": 15,
@@ -240,6 +250,16 @@
   "shadow": 0,
   "cut": 3
  },
+ "o_f12_rb2_s0_c3": {
+  "kind": "solid",
+  "fill": 12,
+  "rings": [
+   11,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
  "o_f4_rcfb3_s0_c3": {
   "kind": "solid",
   "fill": 4,
@@ -252,6 +272,16 @@
   "shadow": 0,
   "cut": 3
  },
+ "o_f4_rc3_s0_c3": {
+  "kind": "solid",
+  "fill": 4,
+  "rings": [
+   12,
+   3
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
  "o_f12_rabf4_s0_c3": {
   "kind": "solid",
   "fill": 12,
@@ -259,6 +289,16 @@
    10,
    11,
    15,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f12_ra4_s0_c3": {
+  "kind": "solid",
+  "fill": 12,
+  "rings": [
+   10,
    4
   ],
   "shadow": 0,
@@ -295,6 +335,16 @@
   "shadow": 0,
   "cut": 3
  },
+ "o_f11_r54_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   5,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
  "o_f14_r4cf72_s0_c3": {
   "kind": "solid",
   "fill": 14,
@@ -303,6 +353,16 @@
    12,
    15,
    7,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f14_r42_s0_c3": {
+  "kind": "solid",
+  "fill": 14,
+  "rings": [
+   4,
    2
   ],
   "shadow": 0,
@@ -339,12 +399,32 @@
   "shadow": 0,
   "cut": 3
  },
+ "o_f13_re4_s0_c3": {
+  "kind": "solid",
+  "fill": 13,
+  "rings": [
+   14,
+   4
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
  "o_f11_r842_s0_c3": {
   "kind": "solid",
   "fill": 11,
   "rings": [
    8,
    4,
+   2
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f11_r82_s0_c3": {
+  "kind": "solid",
+  "fill": 11,
+  "rings": [
+   8,
    2
   ],
   "shadow": 0,
@@ -479,12 +559,32 @@
   "shadow": 0,
   "cut": 3
  },
+ "o_f1_rbf_s0_c3": {
+  "kind": "solid",
+  "fill": 1,
+  "rings": [
+   11,
+   15
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
  "o_f1_r5ff_s0_c3": {
   "kind": "solid",
   "fill": 1,
   "rings": [
    5,
    15,
+   15
+  ],
+  "shadow": 0,
+  "cut": 3
+ },
+ "o_f1_r5f_s0_c3": {
+  "kind": "solid",
+  "fill": 1,
+  "rings": [
+   5,
    15
   ],
   "shadow": 0,
