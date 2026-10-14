@@ -1,9 +1,8 @@
-"""Label styles and a bank fix for ore_ren.arc (My Life practice menu: banks g3_0ren, g3_1ren .. g3_3ren). Loaded by ui_type.py.
+"""Label styles for ore_ren.arc (My Life practice menu: banks g3_0ren, g3_1ren .. g3_3ren). Loaded by ui_type.py.
 
 1. ore_ren.arc has no palette symbol for g3_1ren, g3_2ren and g3_3ren, so ui_textures.banks() returns the three as one
    bank "g3_1ren" (27 pages, 212 sprites) in which the sprites of g3_2ren / g3_3ren count their pages from 0 again.
-   banks() is wrapped here for this one file (recognised by its symbols) so that the three come out as separate banks
-   with the pages of each; every other file is untouched.
+   ui_textures.split_merged gives the three back as separate banks with the pages of each.
 2. Styles ren_<n> from ui_specs/ore_ren_styles.json (written by _work/ui_pages/gen_ore_ren_spec.py): crisp letters in one
    fill colour inside solid one-pixel rings, the colours read from the Japanese lettering (palette indices).
 """
@@ -14,26 +13,7 @@ import ui_textures as _U
 from ui_type import grow, shift
 import ui_styles_orepena as _O            # registers the DIN fonts "dc<cap>g<gap>b<bold>" and "nb<size>"
 
-_orig_banks = _U.banks
-
-
-def _split(d, syms):
-    out = []
-    for b in _orig_banks(d, syms):
-        names = {re.match(r"opd_(g3_\dren)_", n).group(1) for n in b["sprites"] if re.match(r"opd_g3_\dren_", n)}
-        if b["pal"] is None and len(names) > 1 and "tex_g3_1re00" in syms:
-            pages = list(zip(b["page_names"], b["pages"]))
-            for nm in sorted(names):
-                digit = nm[3]
-                mine = [pg for pn, pg in pages if pn.startswith("tex_g3_%sre" % digit)]
-                out.append({"name": nm, "pal": None, "pages": mine, "page_names": [pn for pn, _ in pages if pn.startswith("tex_g3_%sre" % digit)],
-                            "sprites": {n: ps for n, ps in b["sprites"].items() if n.startswith("opd_%s_" % nm)}})
-        else:
-            out.append(b)
-    return out
-
-
-_U.banks = _split
+# (the bank split that was here is now ui_textures.split_merged)
 
 
 def solid(fill, rings, shadow=0, cut=2):

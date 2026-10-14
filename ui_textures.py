@@ -102,7 +102,47 @@ def banks(d, syms):
     if cur and cur["pages"]:
         cur["name"] = cur["name"] or re.sub(r"\d\d$", "", cur["page_names"][0][4:])
         out.append(cur)
-    return [b for b in out if b["pages"]]
+    return [s for b in out if b["pages"] for s in split_merged(b)]
+
+
+def split_merged(b):
+    """Some files merge several sprite sets into one bank (ore_ini.arc y3_mym + y3_mys + y3_myk + y3_kzo,
+    gdt_ore.arc, ore_ren.arc): the pages run tex_<set1>00.., tex_<set2>00.., and the sprites of every set
+    count their pages from 0 again. Such a bank is returned as one bank per set, each with its own pages;
+    the palette is shared. A bank whose sprites number the pages straight through is left whole."""
+    groups = []                                     # [(page prefix, [indices into the bank's pages])]
+    for k, pn in enumerate(b["page_names"]):
+        pre = re.sub(r"\d\d$", "", pn[4:])
+        if groups and groups[-1][0] == pre:
+            groups[-1][1].append(k)
+        else:
+            groups.append((pre, [k]))
+    sets = {}
+    for n in b["sprites"]:
+        sets.setdefault(re.sub(r"_[0-9a-f]{2}$", "", n[4:]), []).append(n)
+    if len(groups) < 2 or len(sets) < 2 or len({g for g, _ in groups}) != len(groups):
+        return [b]
+    owner = {}                                      # set -> group index (the longest page prefix of its name)
+    for s in sets:
+        fits = [i for i, (g, _) in enumerate(groups) if s.startswith(g)]
+        if not fits:
+            return [b]
+        owner[s] = max(fits, key=lambda i: len(groups[i][0]))
+    if sorted(owner.values()) != list(range(len(groups))):
+        return [b]
+    for s, i in owner.items():
+        used = [p.page for n in sets[s] for p in b["sprites"][n]]
+        start, count = groups[i][1][0], len(groups[i][1])
+        if used and max(used) >= count:             # pages beyond the set's own: numbered straight through
+            return [b]
+        if i and used and min(used) >= start:       # fits both ways: keep the old reading
+            return [b]
+    out = []
+    for i, (pre, idx) in sorted(enumerate(groups), key=lambda t: t[0]):
+        s = next(s for s, j in owner.items() if j == i)
+        out.append(dict(b, name=s, pages=[b["pages"][k] for k in idx], page_names=[b["page_names"][k] for k in idx],
+                        sprites={n: b["sprites"][n] for n in sets[s]}))
+    return out
 
 
 def pack_part(page, flags, palette, y, x, y0, x0, y1, x1):
