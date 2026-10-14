@@ -34,18 +34,18 @@ def shaded(ramp, rings, shadow, depth):
 
 STYLES = {
     # palette 0: sky-blue letters, white band, pale outer edge (視点変更)
-    "btn_view": banded([0, 12, 13, 14, 14, 14, 14], [4, 4, 1]),
+    "btn_view": banded([0, 4, 14, 14, 14, 14, 14], [4, 4, 1]),
     # palette 6: Type: pale letters in a dark blue body, white outer edge
-    "btn_type": banded([0, 14, 15, 15, 15, 15, 15], [6, 6, 6, 1]),
+    "btn_type": banded([0, 6, 15, 15, 15, 15, 15], [6, 6, 6, 1]),
     # palette 1: dark grey letters, white ring, pale blue shadow
-    "btn_grey": shaded([0, 9, 12, 14, 15, 15, 15], [6, 6], 3, 3),
-    "btn_grey1": shaded([0, 9, 12, 14, 15, 15, 15], [6], 3, 2),
+    "btn_grey": shaded([0, 6, 15, 15, 15, 15, 15], [6, 6], 3, 3),
+    "btn_grey1": shaded([0, 6, 15, 15, 15, 15, 15], [6], 3, 2),
     # palette 4: the same with the darker blue shadow
-    "btn_grey2": shaded([0, 9, 12, 14, 15, 15, 15], [6, 6], 2, 3),
+    "btn_grey2": shaded([0, 6, 15, 15, 15, 15, 15], [6, 6], 2, 3),
     # palette 3: white letters, strong blue band, pale outer edge
-    "btn_blue": banded([0, 12, 13, 14, 14, 14, 14], [7, 7, 1]),
+    "btn_blue": banded([0, 7, 14, 14, 14, 14, 14], [7, 7, 1]),
     # palette 2: white letters, red band, pale outer edge
-    "btn_red": banded([0, 12, 13, 14, 14, 14, 14], [7, 7, 1]),
+    "btn_red": banded([0, 7, 14, 14, 14, 14, 14], [7, 7, 1]),
     # palette 5: red letters, white ring, blue shadow
-    "btn_redlet": shaded([0, 11, 13, 15, 15, 15, 15], [4, 4], 10, 3),
+    "btn_redlet": shaded([0, 4, 15, 15, 15, 15, 15], [4, 4], 10, 3),
 }
