@@ -3,7 +3,7 @@
 186	0b62	-kun!
 196	2138	I hear you are working hard.
 224	8548	Oh, Shacho!
-238	ceaa	Is your work going well?
+238	ceaa	How is your work coming along?
 270	ee99	Yes, sir. I'm managing.
 292	c175	You are a kacho now, so I feel
 312	d62c	I can trust you with this.
@@ -14,7 +14,7 @@
 454	f9a9	Baseball, sir? During work?
 482	3c0e	It concerns our current
 506	94ca	team policy...
-532	dd8b	Which way should we take it?
+532	dd8b	Which way would you steer it?
 564	830a	Hmm,
 576	def9	let me think...
 600	2931	Balanced training\nBatting first\nSpeed first\nFielding first
@@ -66,11 +66,11 @@
 2340	411a	I've sent you 
 2358	611e	,
 2366	63f1	your favorite.
-2384	1ab8	Enjoy it later.
+2384	1ab8	Eat it later, okay?
 2406	4fe5	Mom...
 2428	3d08	After that, I polished off
 2454	0b04	 in no time.
-2482	4118	Delicious!
+2482	4118	So good!
 2522	998f	I had some of the bonus left over.
 2608	c169	a hot spring trip
 2636	8082	a computer
@@ -122,7 +122,7 @@
 4414	1a8c	-kacho, I trained the\nway you told me to.
 4450	3759	I wonder if it did much good.
 4482	5e08	Oh well.
-4498	a5de	Time to go back to my old ways!
+4498	a5de	Time to train like I used to!
 4542	5637	's
 4550	22a2	practice preference is restored.
 5024	276a	The shacho announced the results.
@@ -143,22 +143,22 @@
 5416	b6d6	is...
 5438	3f1a	\n【Closing the books / half-year results】\nAdding up income and spending over a set period to work\nout profit or loss. Done every six months it gives half-year\nresults; done every three months, quarterly results.
 5610	d824	...and that's the idea.
-5632	3ad4	Anyway, for a company\nit's the moment the results
-5672	81fe	show. It matters a lot.
+5632	3ad4	Anyway, for a company,\nit's where its performance shows.
+5672	81fe	It's a big deal.
 5696	5f3b	In everyday terms, I suppose
 5724	151f	it's like a household budget.
 5752	45f3	See? Simple.
 5776	a507	Uh, yes.
-5796	0830	Hmm...\nI sort of get it,
+5796	0830	Hmmm...\nI sort of get it,
 5822	b127	and sort of don't...
 5854	f784	I have a feeling that's not
 5868	a69d	quite a household budget...
 5910	e710	And if the results are good,
 5936	d328	our pay goes up too.
 5968	2a16	Seriously?!
-5988	9fa5	Okay, then!
+5988	9fa5	Okay!
 6000	d018	Bring on the next results!
-6028	5980	Hold on, that's six months away.
+6028	5980	Whoa, whoa. That's six months off.
 6054	a5be	Our company closes its books at
 6074	61b0	the end of September
 6084	a986	 and
@@ -188,8 +188,8 @@
 6740	74dc	The higher the training level,\nthe more effective your
 6780	8ba4	practice becomes.
 6826	df30	It's half-year results day.
-6860	6287	The shacho has important news.
-6892	336f	Listen with care.
+6860	6287	The shacho will now address you.
+6892	336f	Listen carefully.
 6920	38f9	You worked hard these six months.
 6956	99ae	...is what I would like to say,\nbut sadly times remain hard and
 7008	f748	the company has nothing to spare.
@@ -198,19 +198,19 @@
 7090	1792	From next month,
 7102	ad0f	my pay would go down a little.
 7144	df30	It's half-year results day.
-7178	6287	The shacho has important news.
-7210	336f	Listen with care.
+7178	6287	The shacho will now address you.
+7210	336f	Listen carefully.
 7238	38f9	You worked hard these six months.
 7274	c3dd	Keep it up, and
 7288	a7b9	work even harder from here.
 7324	e7ed	Nothing much
 7340	d47b	changed.
 7376	df30	It's half-year results day.
-7410	6287	The shacho has important news.
-7442	336f	Listen with care.
+7410	6287	The shacho will now address you.
+7442	336f	Listen carefully.
 7470	38f9	You worked hard these six months.
-7510	67f1	Thanks to you, business is up
-7532	c23a	and our stock is up a little.
+7510	67f1	Thanks to you, business is better,
+7532	c23a	and our stock price is up a bit.
 7554	ad2c	...And so,
 7576	e369	I have something for you all.
 7618	fd58	The shacho handed everyone
@@ -237,22 +237,22 @@
 8340	5bea	Now we can train better
 8356	e5d5	than ever before!
 8400	df30	It's half-year results day.
-8434	6287	The shacho has important news.
-8466	336f	Listen with care.
+8434	6287	The shacho will now address you.
+8466	336f	Listen carefully.
 8494	38f9	You worked hard these six months.
-8530	67f1	Thanks to you, business is up
-8552	6304	and our stock is up.
+8530	67f1	Thanks to you, business is better,
+8552	6304	and our stock price is up.
 8572	7d8b	From the end of the month,\npay will be adjusted a little.
 8608	b22b	You may look forward to it.
 8634	1792	From next month,
 8646	5b7d	my pay would go up a little.
 8814	e5e1	Today is payday.
 8846	1970	, this month's pay.
-8870	4a84	I received my pay.
+8870	4a84	My pay came in.
 8900	11b8	Resident tax
 8910	bdab	, 
 8918	acdb	income tax
-8932	d2a7	and more had been taken out.
+8932	d2a7	and plenty more were taken out.
 8968	74b5	【Resident tax】\nTax paid to the prefecture and town\nyou live in. It funds local government,\nand the amount varies a little by area.
 9078	22aa	【Income tax】\nTax charged on what you earn. It funds\nnational spending such as public works and\nwelfare. The more you earn, the more you pay.
 9238	c80b	Rent was taken out.
@@ -284,36 +284,36 @@
 10174	1809	Press the R Button again
 10198	de82	to return.
 10338	e5e1	Today is payday.
-10370	0b02	,\nyour work this month was
-10392	9fc8	not up to standard, was it?
+10370	0b02	,\nyou were not pulling your weight
+10392	9fc8	this month, were you?
 10422	b2a6	I expect better next month.
 10448	8a27	Yes, sir...
-10464	4a84	I received my pay.
-10512	f75e	Oh yeah, today was payday.
-10542	4a84	I received my pay.
+10464	4a84	My pay came in.
+10512	f75e	Oh right, it's payday today.
+10542	4a84	My pay came in.
 10602	e5e1	Today is payday.
 10634	1970	, this month's pay.
-10658	1d58	I received the pay I expected.
-10712	f75e	Oh yeah, today was payday.
-10742	1d58	I received the pay I expected.
+10658	1d58	My pay came in, as expected.
+10712	f75e	Oh right, it's payday today.
+10742	1d58	My pay came in, as expected.
 10806	e5e1	Today is payday.
-10838	f24c	,\nyou worked well this month.
-10870	8616	I have added a little extra.
+10838	f24c	,\nyou did good work this month.
+10870	8616	I have slipped in a little extra.
 10902	f3b7	All right!
-10922	351c	I received a little extra pay.
-10984	f75e	Oh yeah, today was payday.
-11014	351c	I received a little extra pay.
+10922	351c	My pay came with a little extra.
+10984	f75e	Oh right, it's payday today.
+11014	351c	My pay came with a little extra.
 11086	e5e1	Today is payday.
 11118	1447	,\nyou seem to have worked very
 11136	21c4	hard this month.
 11164	e7e3	Keep this to yourself, but I
-11184	5f4e	have added a good bit extra.
+11184	5f4e	have slipped in a good bit extra.
 11216	f3b7	All right!
-11236	bdc5	I received a good deal more
-11250	6f2f	pay than usual.
-11308	f75e	Oh yeah, today was payday.
-11338	bdc5	I received a good deal more
-11352	6f2f	pay than usual.
+11236	bdc5	My pay was a good deal
+11250	6f2f	bigger than usual.
+11308	f75e	Oh right, it's payday today.
+11338	bdc5	My pay was a good deal
+11352	6f2f	bigger than usual.
 11452	cc63	Rent, utilities and other
 11472	4ba1	living costs took some of it.
 11568	cc63	Rent, utilities and other
@@ -328,8 +328,8 @@
 11824	8b92	Yes, sir.
 11852	c33a	And so
 11868	627a	I spent the day making copies.
-11960	cb2a	Are they still not done?
-11982	40a0	They will be late for the meeting!
+11960	cb2a	Still not done?!
+11982	40a0	The meeting will not wait for us!
 12032	efb4	Good.
 12042	aa21	Well done!
 12080	816d	Oh?\nFinished already?
@@ -344,11 +344,11 @@
 12336	1518	(Scrape, scrape, scrape)
 12364	c33a	And so
 12380	9efe	I spent my day sharpening pencils.
-12472	319c	You there!\nThe leads are broken.
-12506	5564	These are of no use to anyone!
+12472	319c	Hey, you!\nThe leads are broken!
+12506	5564	What use are these to anyone?!
 12552	2af0	Hm.
-12562	0df3	Rather well sharpened.
-12612	0ce4	Hm.\nSplendid. I can feel the soul.
+12562	0df3	Nicely sharpened, I see.
+12612	0ce4	Hm.\nA splendid job, with soul in it.
 12646	1953	Well done!
 12700	6928	, good timing.
 12726	4150	Go and buy this, this and this.
@@ -357,7 +357,7 @@
 12790	e1fb	By noon, sir?
 12812	1ead	Correct.
 12828	77ac	Ah, and\neverything on this list as well.
-12864	a61b	It is somewhat heavy. Take care.
+12864	a61b	It is a little heavy. Be careful.
 12898	11e3	Yes, sir!
 12914	1a98	That's a mountain of stuff...
 12950	c33a	And so
@@ -377,7 +377,7 @@
 13384	8b92	Yes, sir.
 13408	2347	(Glug glug glug)
 13430	c33a	And so
-13446	6886	I made the tea.
+13446	6886	I did tea duty.
 13528	46d7	Hot, hot!\nY-you there! This is scalding!
 13564	5070	I cannot drink anything hot!
 13600	2af0	Hm.
@@ -386,7 +386,7 @@
 13688	1953	Well done!
 13726	6928	, good timing.
 13752	464a	That window.
-13766	8b4c	Do you not think it looks dirty?
+13766	8b4c	Does it not look rather dirty?
 13800	4569	Does it, sir?
 13816	a43a	It doesn't really bother me.
 13846	0a33	"Does it, sir?"\nIs that an answer?
@@ -401,7 +401,7 @@
 14164	d12a	and I walked straight into it!
 14198	1eb2	Put a notice on it from now on!
 14248	2af0	Hm.
-14258	c896	It seems to be nicely polished.
+14258	c896	Nicely polished, it seems.
 14320	4304	Oh?\nPolished to quite a shine.
 14354	1953	Well done!
 14400	6928	, good timing.
@@ -426,16 +426,16 @@
 14964	daf1	Splendid!\nThat felt very good indeed.
 14998	7495	I may well ask you again.
 15048	6928	, good timing.
-15074	2631	Would you rub my shoulders?
-15104	bb5a	They have been stiff of late.
+15074	2631	Rub my shoulders for me, will you?
+15104	bb5a	They have been terribly stiff.
 15134	209e	...Me, sir?
 15160	1ead	Correct.
-15172	10fe	Who else is fit for the task?
+15172	10fe	You are the only man for the job.
 15206	f152	Bucho, could I have a word...?
 15250	611e	,
 15258	a8c6	something came up. Never mind.
 15290	f9ad	Right...
-15302	e4e6	He calls me over, then that...?
+15302	e4e6	Then why did he call me over...?
 15336	c33a	And so
 15352	9cec	I got on with my usual work.
 15640	e9e6	Busy, busy, busy...
@@ -506,7 +506,7 @@
 17496	700e	I nailed my work today!
 17552	62c8	Work went all right today.
 17612	0a7d	My work today was
-17632	bb05	nothing special...
+17632	bb05	not so great...
 17762	77bc	What should I do?
 17952	320f	 it is.
 17998	77bc	What should I do?
@@ -527,7 +527,7 @@
 18756	bb28	At the board meeting
 18788	2463	Board meeting prep
 19238	7be0	Ah, 
-19248	63ca	.\nThe shacho wants you.
+19248	63ca	.\nThe shacho wants to see you.
 19270	aea8	Go at once.
 19306	0205	It is about how you have
 19322	bb22	been working lately...
@@ -557,8 +557,8 @@
 19956	5637	
 19964	bcfc	is buying!
 19984	e492	Whaaat?!
-20000	1145	Just kidding.
-20022	5f34	Keep it up on the team too.
+20000	1145	I'm only kidding.
+20022	5f34	I'm counting on you on the field.
 20054	11e3	Yes!
 20116	c6d8	I have been hearing bad reports.
 20158	a7b6	You are demoted to
@@ -582,7 +582,7 @@
 20562	3348	I'm so sorry,
 20584	775a	-kun.
 20594	49e1	A demotion...
-20618	50a8	Chin up.
+20618	50a8	Do cheer up.
 20638	21f6	Life has its peaks and valleys.
 20674	84de	Look at yours truly:
 20696	bb84	still on the very bottom rung.
@@ -597,10 +597,10 @@
 20996	3358	You need not come here again.
 21022	5b8d	Huh?
 21032	ccb1	You mean...
-21048	288c	Dis-
-21058	cf28	miss
-21070	a22c	-ed!
-21084	19e6	Dismissed, I say.
+21048	288c	F-
+21058	cf28	I-R-
+21070	a22c	E-D!
+21084	19e6	Fired, I say.
 21100	0d3e	No need to come in any more.
 21132	1ddb	Whaaaaaaat?!!!
 21162	0726	N-no way...
@@ -613,20 +613,20 @@
 21384	387e	someone else.
 21414	d026	Huh?!
 21430	b80f	If you see me in town,\ndon't come up and talk to me.
-21470	426f	Promise.
-21488	6f2a	Well, goodbye.
+21470	426f	I mean it.
+21488	6f2a	Goodbye, then.
 21546	d37c	-kun,
 21556	65c9	I'm so sorry.
 21576	74e3	Momoko-chan!
-21600	57b6	So you can't play ball here.
+21600	57b6	Even if you can't play ball here,
 21628	2a21	You can make it somewhere else!
 21660	6172	I'll always be cheering for you.
 21696	2c11	Momoko-chan,\nthank you...
 21732	b769	See you later, then!
 21756	a66d	Cheer up, OK?
-21784	6e87	Things being as they are, you\ncannot carry on in the
+21784	6e87	With things as they are, you\ncan't carry on in the
 21822	72e8	industrial leagues.
-21844	61d3	To avoid being fired,\ntake on more work and raise
+21844	61d3	To keep from getting fired,\ndo more work and raise
 21888	a92c	your bosses' opinion of you.
 21924	c6d8	I have been hearing bad reports.
 21956	d026	Huh?!
@@ -634,21 +634,21 @@
 21988	e8ff	not been working at all.
 22020	451a	If you mean to stay here,\nyou must do your job properly,
 22062	80f9	not only play baseball.
-22096	8823	At this rate you will be out of
-22124	7ca2	the team, and the company too!
+22096	8823	At this rate, never mind the team,
+22124	7ca2	you will be out of the company!
 22162	0e38	Whaaat?!
-22182	0dd7	I shall overlook it this once.\nFrom now on, work properly.
+22182	0dd7	I shall let it slide this once.\nFrom now on, work in earnest.
 22234	9dc4	There will be no next time.
 22252	8b92	Yes, sir.
 22262	ca36	I'm sorry...
 22704	0527	 kakaricho
 22728	49ca	 kacho
 22740	f4c9	 rank and file
-22766	cb6e	...Easier said than done.
-22790	ce7b	That's a serious pile of work.
+22766	cb6e	...That said,
+22790	ce7b	that's a whole lot of work.
 22812	45fa	Okay. At times like this,
-22832	4e5e	I delegate.
-22862	114f	So, without delay...
+22832	4e5e	I'll get someone else to do it.
+22862	114f	Let's get right to it...
 22884	e23c	Give it to Yabe-kun
 22904	5914	Give it to Maruo
 22920	69a5	Give it to Todoroki-senpai
@@ -664,7 +664,7 @@
 23166	ff41	Good work.
 23184	c4ad	Let's take a look...
 23228	75f9	Oh!\nIt's perfect.
-23250	4119	Not bad at all, Yabe-kun.
+23250	4119	You're pretty good, Yabe-kun.
 23282	c1fa	But of course.
 23336	52ac	Ugh... There's a mistake.
 23362	bc4d	Oh, here too.
@@ -699,10 +699,10 @@
 24216	db57	Todoroki-senpai!\nCould I ask you to finish
 24242	8831	this job by tonight?
 24270	9700	Hm...?
-24288	d222	Sure, got it.
-24306	521f	By tonight.
+24288	d222	Right, got it.
+24306	521f	By tonight, then.
 24332	b269	 is starting to look
-24348	43df	the part as kacho.
+24348	43df	every bit the kacho.
 24372	7367	No, no,
 24386	b406	I've got a long way to go.
 24422	e2b9	・
@@ -717,15 +717,15 @@
 24602	8bba	I knew I could count on you.
 24634	6a58	Ha ha ha!
 24646	307d	I've been at this job a long time.
-24752	0b1a	Okay.\nI'll work at it until I'm
-24786	3ac1	that reliable too!
+24752	0b1a	Okay.\nI'll keep at it until my work's
+24786	3ac1	solid every time!
 24848	b90e	(Whisper whisper)
 24870	84a6	Hey, did you see?
 24890	edb5	 was giving
 24900	6aa6	orders to Todoroki-senpai!
-24932	9aa3	So he made kacho. Isn't that
-24954	4562	taking it a bit far?
-24982	88b1	Hasn't he come up in the world.
+24932	9aa3	So he made kacho. Isn't he
+24954	4562	getting a little full of himself?
+24982	88b1	Big shot now, isn't he?
 25034	52ac	Ugh... There's a mistake.
 25060	b847	That's not like senpai.
 25088	bab7	In the end,
@@ -734,7 +734,7 @@
 25168	0eb6	my very first day at work.
 25198	503a	(Tap tap)
 25224	c67b	My papers are all filled in.
-25254	03fd	I haven't forgotten anything.
+25254	03fd	Haven't forgotten anything, right?
 25276	02da	The industrial leagues I've
 25304	edbb	waited so long for start today.
 25324	7133	And with a little luck,
@@ -768,10 +768,10 @@
 26016	243a	Off I go to "Pawafuru Corp."!
 26066	2d12	Well, 
 26078	f926	.
-26086	1cf7	Is your work going well?
+26086	1cf7	How is the work coming along?
 26114	11e3	Yes, sir!
 26124	f358	Couldn't be better!
-26158	d411	 is\nworking well, it seems.
+26158	d411	 is\nworking hard, I see.
 26186	b9a5	I shall report it to the shacho.
 26250	4798	-kun,\nI have heard from the bucho.
 26280	0e79	You are doing very well, I hear.
@@ -794,7 +794,7 @@
 26750	9f42	Money to play for life!\nA day off and some free time.\nNew training gear for the team.
 26824	d369	A girlfriend.
 26880	b02e	Hm, hm.\nEnough money to play for life.
-26914	61fe	I would like that myself.
+26914	61fe	I would like some of that myself.
 26938	587a	Very well.
 26952	6526	I shall think about it.
 26982	e838	A few days later, the shacho
@@ -811,8 +811,8 @@
 27286	0809	Today I'm taking it easy!
 27360	f3d2	Hm, hm. A new girlfriend.\nThey do say wives and tatami
 27410	af6b	are best when new.
-27434	7a45	...but that is one thing even
-27456	4c50	I can do nothing about!
+27434	7a45	...but that, I am afraid,
+27456	4c50	is beyond even me!
 27488	3187	Joking aside,
 27508	9c40	give me a proper answer.
 27536	bd2d	What is it you really want?
@@ -821,7 +821,7 @@
 27606	8dbe	New training gear.
 27630	f84d	True, it may be about time
 27654	dec6	we replaced some.
-27680	9a61	What kind of gear do you want?
+27680	9a61	What sort of gear would you like?
 27712	4056	Um...
 27952	8ee2	Hm, hm. I see, I see.
 28046	127d	, then.
@@ -866,7 +866,7 @@
 29196	6d9d	Let me think it over.
 29242	f6b3	That last win was splendid.
 29272	beb4	You all did very well.
-29304	7283	This is a gift from me.
+29304	7283	Here is a gift from me.
 29350	d81d	Th-this is...!
 29396	ad16	!
 29418	2cd2	It is nothing grand, but
@@ -883,32 +883,32 @@
 29758	c037	When it comes down like this,
 29778	d14f	practice is less efficient
 29804	4c87	.
-29818	cb60	And compared with usual,
-29840	d85d	fewer people have come to train
-29868	c593	today, I do believe.
+29818	cb60	And if you ask me,
+29840	d85d	fewer people came to train
+29868	c593	than usual today, I do believe.
 29896	d00a	If only it cleared up,
 29910	78a5	we could really cut loose...
-29946	5d20	If this is how it is,\nI would have been better off
+29946	5d20	If it's going to be like this,\nI'd have been better off
 29980	0d16	staying at work!
-30006	d199	Oh?\nYou should have said so. I've
-30040	1870	got plenty of work to hand you.
+30006	d199	Oh?\nYou should've just said so.
+30040	1870	I've got loads of work for you.
 30080	74e3	Momoko-chan!
-30100	44ac	I was nearby, so I came
-30118	7891	to take a look.
-30144	347c	It's really pouring, isn't it!
-30174	4102	I made a teru teru bozu.\nWould you like it?
+30100	44ac	I was in the area, so I
+30118	7891	came by to watch.
+30144	347c	Wow, it's really pouring!
+30174	4102	I made a teru teru bozu.\nDo you want it?
 30210	b942	It's only a little charm, but...
 30256	d37b	Momoko gave me a teru teru bozu.
-30322	8c81	The rain made a mess of today.
+30322	8c81	The rain made today a washout.
 30356	9d4c	Good evening.
 30372	9da0	It's time for PawaSpo News.
-30400	b0c4	Stormy skies are covering\nthe whole of Japan.
-30440	1ebd	If you are heading out...
+30400	b0c4	Wild weather is sweeping\nacross all of Japan.
+30440	1ebd	Those of you heading out...
 30474	0acd	Whoa, it's really coming down!
 30500	a917	The 
 30512	97d2	weather forecast
 30524	eba9	...
-30532	5378	I should have checked it.
+30532	5378	I should've checked it properly.
 30576	6b51	On the main command screen,
 30616	639d	press SELECT
 30660	b975	press the - Button
@@ -919,7 +919,7 @@
 30854	677c	Snow today, huh.
 30874	0929	When it's this cold,
 30890	2117	practice is bound to suffer.
-30916	e481	Just like on rainy days,\nfewer people have come to train
+30916	e481	Just like on rainy days,\nfewer people came to train
 30952	c593	today, I do believe.
 30980	d00a	If only it cleared up,
 30994	78a5	we could really cut loose...
@@ -939,9 +939,9 @@
 31420	305d	you need a breather now and then.
 31450	74e3	Momoko-chan!
 31474	37d4	Why not go out somewhere\nonce in a while,
-31508	a613	for a change of scene?
+31508	a613	for a change of pace?
 31534	f3d4	If you don't recharge and\ncome to work full of drive,
-31574	04f7	the bucho will scold you.
+31574	04f7	you'll get it from the bucho.
 31600	e231	Come to think of it,\nlately it's been nothing but
 31636	3401	work and baseball practice...
 31658	3ad0	Work or baseball, whatever you do,
@@ -965,29 +965,29 @@
 32066	17f5	But as Hanai says,\na break now and then is the
 32112	3573	best way to lift motivation.
 32146	7d18	...Okay!
-32162	53b9	Let's all go for a meal tonight.
+32162	53b9	How about we all go eat tonight?
 32198	f3b7	All right!
 32220	42a2	Naturally,
 32234	92ff	yours truly is coming too.
-32282	fa75	After that we all went to eat.
+32282	fa75	Then we all went out to eat.
 32332	56e3	Kanpai!
 32346	a58c	\nThey are drinking tea, juice\nand other soft drinks!\n
 32408	9022	Each week, motivation has a set
 32438	2af7	chance of returning to normal.
 32568	4d70	With my promotion,
 32588	264a	I decided to move somewhere nicer.
-32624	58e7	The rent is high, so I'd
-32642	1e03	better cut down on waste...
+32624	58e7	The rent's steep, so I'd
+32642	1e03	better stop wasting money...
 32728	b425	It seems everyone is here.
 32758	cc80	I shall now announce
 32772	b4a0	who has made the bench.
 32820	2e31	Here is the squad for tomorrow!
-32910	ea6b	Sadly, I did not
+32910	ea6b	Sadly, I didn't
 32928	f39c	make the bench.
 32958	38f1	Yours truly did not make
 32978	7bdb	the bench either.
-33004	0d0c	And Maruo, who's our kohai,
-33030	a412	is a regular starter...
+33004	0d0c	And Maruo, our own kohai,
+33030	a412	is in the starting lineup...
 33066	8f91	It can't be helped.\nHis feel for the game is on
 33100	a458	another level from ours!
 33130	7724	Oh well.
@@ -996,14 +996,14 @@
 33200	dd8c	And then, game day...
 33234	2527	Go for it!
 33292	cc3d	・\n・
-33302	5d00	Game set!
+33302	5d00	That's the game!
 33320	b984	For all our cheering,
 33346	970e	we lost the game.
 33374	8a20	Oh dear, oh dear.
 33418	0faf	To think we'd lose\nto a team like that.
 33452	5bd7	Back to square one...
-33486	4e8f	What a thing to happen.\nAt this rate the nationals, and
-33526	6c5c	a title, are a dream of a dream.
+33486	4e8f	Good heavens.\nAt this rate the nationals, and
+33526	6c5c	a title, are a distant dream.
 33620	c993	Okay,
 33642	62d9	I'm batting 
 33654	46d8	.
@@ -1015,7 +1015,7 @@
 33826	8cd3	And so does yours truly!
 33850	c0d6	You two,
 33864	6a12	I'm expecting big things today!
-33896	11e3	Yes!
+33896	11e3	Yes, sir!
 33906	1ab3	Yes indeed!
 33948	611e	,
 33956	eb6c	I have a favor to ask you.
@@ -1024,7 +1024,7 @@
 34032	ab91	others have come to trust you.
 34068	4569	You think so?
 34084	5ba2	Ha ha.
-34100	d444	So here it is.
+34100	d444	So, here's the thing.
 34118	06c0	After this tournament,\nI want you to lead the team
 34152	d04f	as captain.
 34178	6178	Huh?
@@ -1033,8 +1033,8 @@
 34226	1d26	You'll do it, won't you?
 34250	da91	Yes, I'll do it!
 34268	c7ce	Captain's a bit much...
-34320	1570	Good!\nI was sure you'd
-34346	04a8	say yes.
+34320	1570	Great!\nI just knew you'd
+34346	04a8	take it on.
 34386	bc25	, Captain!
 34402	52d9	We're counting on you!
 34426	02ff	Listen up, everyone!
@@ -1054,7 +1054,7 @@
 34820	f7f1	I'm sorry.
 34840	ba2b	Fair enough.\nThen I'll go on leading
 34872	41c4	the team myself.
-34910	c184	I turned down captain, so I'll\nmake up for it by owning what\nI do more than ever!
+34910	c184	I turned down captain, but I'll\nmake up for it by taking more\nresponsibility than ever!
 34986	f72b	Special abilities are now\neasier to gain during games.
 35052	8054	-kun!
 35066	73f3	Oh, Momoko-chan!
@@ -1062,7 +1062,7 @@
 35128	bf5b	Here's hoping for sunshine!
 35154	8aa8	This is...
 35166	7482	a teru teru bozu!
-35186	42f1	Thank you!
+35186	42f1	Thaaank you!
 35236	dd8c	And then, game day...
 35272	6396	So this is the ballpark.
 35292	79df	Knowing the game is so close,
@@ -1087,7 +1087,7 @@
 36056	d4df	I'm counting on you all.
 36082	be8c	At the national level,\nevery team is a strong one.
 36122	d4df	I'm counting on you all.
-36150	ae59	Today's opponent: Kurojishi Heavy\nIndustries, the strongest ever.
+36150	ae59	Today's opponent: Kurojishi Heavy\nIndustries, called the best ever.
 36190	d4df	I'm counting on you all.
 36222	ef89	Today's opponent:\nthe mystery powerhouse, "Hao".
 36260	d4df	I'm counting on you all.
@@ -1097,10 +1097,10 @@
 36360	c0d6	You two,
 36374	6a12	I'm expecting big things today!
 36414	44e6	Okay! When my chance comes,
-36438	b1ce	I'll shine and get noticed!
+36438	b1ce	I'll come through and stand out!
 36466	1fbc	Yes indeed!
-36492	0d0c	And Maruo, who's our kohai,
-36518	a412	is a regular starter...
+36492	0d0c	And Maruo, our own kohai,
+36518	a412	is in the starting lineup...
 36554	8f91	It can't be helped.\nHis feel for the game is on
 36588	a458	another level from ours!
 36718	f3b7	We did it!
@@ -1114,14 +1114,14 @@
 36936	32a6	We did it!
 36952	d4b1	But it's a long road to the title.
 36984	cdb8	Stay sharp and win the next one!
-37022	d0fd	Yes!
+37022	d0fd	Yes, sir!
 37034	1ab3	Yes indeed!
-37052	a86b	Just as I hoped.
+37052	a86b	I expected no less.
 37068	cc90	A splendid victory.
 37154	f3b7	We did it!
 37168	2ba1	We won!!!
 37194	12f0	We beat the
-37212	025d	Kagurazaka Group!
+37212	025d	Kagurazaka Grouuup!
 37240	32a6	We did it!
 37260	266e	YEEEAAAHHH!\nWe took down Kagurazaka!
 37300	ed5e	We're going to the nationals!
@@ -1129,7 +1129,7 @@
 37370	8141	That was a splendid victory!
 37398	5148	Heh heh...
 37412	4f47	Quite the celebration, no?
-37442	2c96	Well, enjoy your victory for now.
+37442	2c96	Well, savor your win for now, see.
 37474	cdbf	But you mustn't relax, you know.
 37506	c55c	The nation still has fabulous,
 37534	77ff	unbeatable foes MIX & MATCH, see
@@ -1137,7 +1137,7 @@
 37578	a15b	I'll take my leave for today.
 37606	c1a5	But 
 37616	775a	-kun.
-37626	257d	real battles lie ahead, you know
+37626	257d	Real battles lie ahead, you know
 37652	aed3	亞
 37698	f3b7	We did it!
 37712	2ba1	We won!!!
@@ -1164,94 +1164,94 @@
 38278	2ba1	We won!!!
 38316	7cc0	Intercity nationals:
 38340	b884	Championship nationals:
-38368	8962	we're through the semifinal!
+38368	8962	We're through the semifinal!
 38398	32a6	We did it!
-38418	0b9b	We did it.\nBut the final will be tough.
+38418	0b9b	We did it.\nBut the final won't be easy.
 38456	983c	Stay sharp. On to the final!
-38496	d0fd	Yes!
+38496	d0fd	Yes, sir!
 38508	1ab3	Yes indeed!
-38526	a86b	Just as I hoped.
+38526	a86b	I expected no less.
 38542	29f2	That was a splendid victory.
-38596	c5b7	So, as expected,
-38608	b48c	they have made it this far.
-38696	434f	We did it!\nWe won!!!
-38724	4896	We're the champions!!!
+38596	c5b7	Just as I thought,
+38608	b48c	they've fought their way up.
+38696	434f	We did it!\nWe woooon!!!
+38724	4896	We're the champiooons!!!
 38766	4cb7	The Intercity title is ours!
 38800	7771	The Japan Championship is ours!
 38840	32a6	We did it!
-38856	0a1a	I'm so moved right now, senpai!
+38856	0a1a	Sooo moved right now, senpai!
 38892	d78b	We did it...
 38908	43ae	We really did it.
-38930	69d7	The strongest team in history,
+38930	69d7	They called them the best ever,
 38950	9d05	and we beat 
 38962	9bfa	...
 38986	269d	YEEEAAAHHH!\nWe did it!
-39018	7174	We did iiit!
-39044	5d1f	We are the
+39018	7174	We did iiiiit!
+39044	5d1f	We're the
 39056	ed0c	national champions!
-39090	a86b	Just as I hoped.
+39090	a86b	I expected no less.
 39106	29f2	That was a splendid victory.
-39132	4265	To be honest, that this team
-39154	c6fb	should truly win the title...
-39180	7676	Even I can still
-39196	ec7c	hardly believe it.
-39224	0455	So this is no dream.\nYou are wonderful, all of you.
+39132	4265	I must confess, this team
+39154	c6fb	truly winning the title...
+39180	7676	Even I, of all people,
+39196	ec7c	still cannot believe it.
+39224	0455	So this is not a dream...\nYou were magnificent, everyone.
 39264	7964	You have done me proud!
 39324	b9dd	So Kurojishi has lost.
-39344	ed50	The times have moved on...
-39396	434f	We did it!\nWe won!!!
-39424	4896	We're the champions!!!
+39344	ed50	The tide has turned...
+39396	434f	We did it!\nWe woooon!!!
+39424	4896	We're the champiooons!!!
 39454	7771	The Japan Championship is ours!
 39490	32a6	We did it!
-39506	c26d	I've never been so thrilled!
+39506	c26d	Never been this moved in my life!
 39540	c53b	...Huh?
-39556	2ab8	That's odd. I can't see for tears.
+39556	2ab8	Funny... can't see for the tears.
 39590	8fef	We did it...\nWe really did it.
 39622	ca6e	We beat 
 39634	cb86	...
 39660	269d	YEEEAAAHHH!\nWe did it!
-39692	7174	We did iiit!
-39714	5d1f	We are the
+39692	7174	We did iiiiit!
+39714	5d1f	We're the
 39726	ed0c	national champions!
-39760	a86b	Just as I hoped.
+39760	a86b	I expected no less.
 39776	29f2	That was a splendid victory.
-39802	4265	To be honest, this team beating
-39832	8a0e	 and taking the title
+39802	4265	I must confess, this team beating
+39832	8a0e	 and taking the title...
 39860	63c1	is more than even I can believe.
-39890	0455	So this is no dream.\nYou are wonderful, all of you.
+39890	0455	So this is not a dream...\nYou were magnificent, everyone.
 39930	7964	You have done me proud!
-39954	3e5d	And all of it is thanks to
+39954	3e5d	And it's all thanks to you,
 39972	9fa1	Tamano-kantoku!
 39998	b560	Hear, hear!
 40018	fbad	We only got this far because
-40046	1814	you guided us, Tamano-kantoku.
+40046	1814	you coached us, Tamano-kantoku.
 40084	a41f	Kantoku!
 40106	8413	Tamano-kantoku!
 40126	baf3	Y-you boys...!
 40152	097f	I... I am...
-40178	23ba	I am the happiest man alive!
+40178	23ba	the happiest man alive!
 40220	c2e2	All together now...
 40248	55f2	Banzaa
 40262	e253	ai!
 40304	55f2	Banzaa
 40318	e253	ai!
-40346	4a17	That day was carved into our
-40372	53df	hearts as the best of our lives.
+40346	4a17	That day was carved in our hearts
+40372	53df	as the best day of our lives.
 40442	3754	Damn it!
 40456	3b2f	We lost...
 40494	a725	Round one was too high a wall.
 40528	bc9f	Round two was too high a wall.
 40560	832e	What a shame...
 40576	4c7c	Mmmph...
-40588	92ae	To think that we would lose.
-40638	443a	And that was my last
-40654	6b45	big game, too...
-40696	83ed	No use moping.
-40710	54ed	We start over for the next game.
-40736	8b92	Yes.
+40588	92ae	I never imagined we would lose.
+40638	443a	And for me, that was
+40654	6b45	my last big game...
+40696	83ed	Can't be helped.
+40710	54ed	We regroup for the next game.
+40736	8b92	Yes, sir.
 40746	cae2	Yes indeed.
-40770	870b	A bitter pity.\nI thought this time
-40792	fb3c	we would make it...
+40770	870b	A bitter pity.\nI truly believed this time
+40792	fb3c	we could do it...
 40850	3754	Damn it!
 40864	3b2f	We lost...
 40890	31fd	The Kagurazaka Group was
@@ -1259,126 +1259,126 @@
 40932	832e	What a shame...
 40948	9f4c	Mmmph...\nBeaten by the Kagurazaka Group
 40982	ec62	yet again!
-41024	443a	And that was my last
-41040	6b45	big game, too...
-41080	dd7a	No use moping.\nWe start over, and we win at
-41108	5f4f	the next tournament.
-41134	8b92	Yes.
+41024	443a	And for me, that was
+41040	6b45	my last big game...
+41080	dd7a	Can't be helped.\nWe regroup and get ready
+41108	5f4f	to win the next tournament.
+41134	8b92	Yes, sir.
 41144	cae2	Yes indeed.
-41166	aa85	A bitter pity.\nOne more win and we had our
-41198	e40b	long-dreamed-of nationals...
+41166	aa85	A bitter pity.\nWe were one win away from the
+41198	e40b	nationals we have longed for...
 41256	3754	Damn it!
 41270	3b2f	We lost...
-41296	d507	The semifinal of the nationals
+41296	d507	The semifinal at the nationals
 41320	e422	was too high a wall.
 41340	832e	What a shame...
 41356	e859	So this is what the top level
 41366	99fe	of the nationals is like!
-41402	56b9	No use moping.\nWe start over, and next time
-41436	5f4f	we reach the final.
-41462	8b92	Yes.
+41402	56b9	Can't be helped.\nWe regroup, and next time
+41436	5f4f	we make it to the final.
+41462	8b92	Yes, sir.
 41472	cae2	Yes indeed.
-41490	1c55	A bitter pity.\nThe title we dreamed of was
-41518	abae	so very close...
+41490	1c55	A bitter pity.\nThe national title we longed
+41518	abae	for was so very close...
 41608	3754	Damn it!
 41622	3b2f	We lost...
 41648	7c63	The national title was
 41664	e422	too high a wall.
 41684	832e	What a shame...
-41700	7200	What strength!
-41722	e859	This is how 
+41700	7200	They're so strong!
+41722	e859	So this is what 
 41734	5637	
-41742	6007	really plays!
+41742	6007	is really made of!
 41764	09b4	A great pity.
 41800	a41f	Kantoku!
-41810	f199	I'm sorry.
+41810	f199	I'm sorry...
 41826	f9a8	If only we'd been stronger...
-41860	efea	A pity about the title,
-41892	4608	but it was a fine game.
+41860	efea	Not winning the title is a pity,
+41892	4608	but that was a fine game.
 41916	cc61	To have come this far at all
 41938	cf41	makes me a happy man.
-41960	f33f	Let this defeat break you, or\ncome back stronger and try again.
-42006	a150	That is up to you.
+41960	f33f	Whether this defeat breaks you,\nor you come back stronger,
+42006	a150	that is up to you.
 42030	99fe	You have a long road ahead yet.
 42074	9c68	Kantoku...
 42104	2ee5	Next time, we'll win. I swear!
-42132	5301	I want to win and toss Kantoku\nin the air!
+42132	5301	Want to win and toss Kantoku\nin the air!
 42166	86da	You boys...
-42200	182c	With a new goal before us,
-42228	3878	we left the stadium.
+42200	182c	We found a new goal
+42228	3878	and left the ballpark behind.
 42288	3754	Damn it!
 42302	3b2f	We lost...
-42328	7c63	The national title was too
-42344	408e	high a wall after all.
+42328	7c63	The national title was too high
+42344	408e	a wall after all, I'm afraid.
 42370	832e	What a shame...
-42386	7200	What strength!
-42408	e859	This is how 
+42386	7200	They're so strong!
+42408	e859	So this is what 
 42420	5637	
-42428	6007	really plays!
+42428	6007	is really made of!
 42450	09b4	A great pity.
 42486	a41f	Kantoku!
-42500	71f0	I'm sorry.\nLosing to the same team not
-42534	a693	once, but twice...
-42568	efea	A pity about the title,
-42600	4608	but it was a fine game.
-42624	c8d9	To stand in the national final\ntwice makes me a lucky man.
+42500	71f0	I'm sorry...\nNot just once, but twice,
+42534	a693	we lost to the same team.
+42568	efea	Not winning the title is a pity,
+42600	4608	but that was a fine game.
+42624	c8d9	Just reaching the national final\ntwice makes me a fortunate man.
 42676	6d17	I am truly grateful.
 42714	9c68	Kantoku...
-42730	b0b9	Holding our feelings inside,
-42762	3878	we left the stadium.
+42730	b0b9	Hearts full of things unsaid,
+42762	3878	we left the ballpark behind.
 42830	8cd0	Looks like the Kagurazaka
 42848	3541	Group is cruising through.
 42880	d4d4	That's Kagurazaka for you.
 42906	e207	Kagurazaka Mitsuhiko...
-42928	5b94	He's my eternal rival, after all.
-42956	c0ea	I hope he goes far.
+42928	5b94	Being my eternal rival and all,
+42956	c0ea	I hope he does well.
 42982	26df	Nobody else sees it that way,
 43000	db7d	I'm afraid.
 43038	edb7	Ha ha ha ha ha!
-43070	5727	Terrible news!
+43070	5727	Big news!
 43086	a4dd	The Kagurazaka Group has lost!
 43120	e174	Wh-what?!
-43146	0cca	And who beat them?
+43146	0cca	So who beat them?
 43174	a525	Kurojishi Heavy Industries.
 43200	ac56	K-Kurojishi Heavy Industries?!
-43220	67c9	They haven't entered\nfor a while. So they've
-43252	4d56	finally come out!
+43220	67c9	They haven't entered lately,\nbut now...
+43252	4d56	they're finally back!
 43276	0c3b	Is this Kurojishi outfit
 43302	d5c4	really as strong as all that?
-43326	9e92	Strong doesn't cover it.\nFrankly, we wouldn't lay
-43372	f6eb	a finger on them.
-43400	e385	I see...
+43326	9e92	Strong doesn't cover it.\nHonestly? We wouldn't stand
+43372	f6eb	a chance against them.
+43400	e385	That strong, huh...
 43422	92a4	But if we make the\nnationals, we'll face them
 43462	ecd6	sooner or later.
-43488	3edf	So that's what it means to
-43516	aa9f	go as a representative team.
-43544	9fa5	Okay!
-43556	0216	No time to sit around!
-43582	b775	Let us practice for
+43488	3edf	So that's what it means
+43516	aa9f	to represent your region, huh.
+43544	9fa5	Okay,
+43556	0216	we can't just sit around!
+43582	b775	Let's get practicing for
 43600	e452	the next tournament!
-43620	0052	Let's do it!
-43642	86da	All of you...
-43658	e8e5	You've toughened up.
+43620	0052	Let's do this!
+43642	86da	You guys...
+43658	e8e5	you've really grown.
 43686	3e2f	Okay!\nI can't let them outdo me.
-43716	36a5	Let's get to it!
-43742	32a8	The whole team is fired up!
+43716	36a5	Time to really go for it!
+43742	32a8	The whole team was raring to go!
 43842	f636	Today is the final of the
 43864	a18b	Intercity qualifiers, I believe.
 43894	0dc0	If we'd kept winning, we'd be
 43920	12bd	playing right about now...
-43944	8d5b	Wish we were playing...
-43980	ddff	As everyone expected, the
-44008	7689	Kagurazaka Group won it.
+43944	8d5b	Sure wish we were playing...
+43980	ddff	As a matter of course, the
+44008	7689	Kagurazaka Group won it all.
 44088	1835	Good evening!
 44104	a6f1	It's time for PawaSpo News!
 44136	8f1a	In today's Japan Championship
 44154	c3a6	national semifinal,
 44184	176f	the ladies' number one favorite,\npitcher Kagurazaka Mitsuhiko,
-44220	f168	threw a perfect game, no less.
-44252	f372	The final is next week.
-44280	5ec1	If you are coming to the game...
-44318	d76a	Kagurazaka again.
-44334	557e	Next year, that'll be me...
+44220	f168	threw a stunning perfect game!
+44252	f372	The final will be held next week.
+44280	5ec1	Fans heading to the ballpark...
+44318	d76a	Kagurazaka again, huh.
+44334	557e	Next year, I'll be up there...
 44372	c515	I couldn't sit still any longer,\nso I went to work up a sweat
 44414	b0ad	for a while.
 44482	18e5	(Whoosh!)
@@ -1387,7 +1387,7 @@
 44558	8b5a	(Zip!)
 44578	8b5a	(Zip!)
 44598	8b5a	(Zip!)
-44628	1a12	Phew, that was a good sweat!
+44628	1a12	Phew! Nothing like a good sweat!
 44714	18e5	(Whoosh!)
 44734	18e5	(Whoosh!)
 44766	8b5a	(Zip!)
@@ -1398,16 +1398,16 @@
 44872	6ce9	Practice went better
 44894	9dcc	than usual!
 44992	b284	Tomorrow, with a place in the\nJapan Championship at stake,
-45028	439e	we face the Kagurazaka Group.
-45090	2369	The final is tomorrow, at last.
+45028	439e	we take on the Kagurazaka Group.
+45090	2369	Tomorrow's the final, at last.
 45112	c858	This time we rest up and go\nin at our very best!
-45154	e70f	Special training is off.
-45188	d0fd	Yes!
+45154	e70f	No special training this time.
+45188	d0fd	Yes, sir!
 45200	1fbc	Yes indeed!
 45220	ad2c	...And so,
 45242	4dc3	our secret weapon is tactics!
-45286	8b35	We crammed all night like exam\nstudents, learning new signs and
-45340	7876	trick plays for the game.
+45286	8b35	We pulled an all-nighter like exam\nstudents, memorizing new signs and
+45340	7876	trick plays for our new game plan.
 45380	dd8c	And then, game day...
 45430	fe8f	(Crack!)
 45450	fe8f	(Crack!)
@@ -1420,26 +1420,26 @@
 45642	a5c5	I honestly never expected
 45666	cf13	the gap to be this big...
 45696	97f3	They got us again.
-45726	dd7a	No use moping.\nWe start over, and next year
-45754	f32f	we win.
-45784	8b92	Yes.
+45726	dd7a	Can't be helped.\nWe regroup for next year,
+45754	f32f	and next time we win.
+45784	8b92	Yes, sir.
 45794	cae2	Yes indeed.
 45816	b9d7	A bitter pity.\nWe were one win away from
 45844	e40b	the nationals...
 45910	395f	Let's see...
-45934	af4c	Central League top: 
-45952	1df6	
-45980	7935	Pacific League top: 
-45998	c074	
+45934	af4c	Central leader: 
+45952	1df6	,
+45980	7935	Pacific leader: 
+45998	c074	, huh.
 46016	7353	This looks set to go right
 46032	ce04	down to the wire...
-46062	7be0	Oh, 
-46072	6103	!\nThat's today's evening paper?
-46098	f6b1	Let me take a look.
+46062	7be0	Hey 
+46072	6103	!\nIs that today's evening paper?
+46098	f6b1	Let me have a look at that.
 46126	5b8d	Huh?
-46136	e922	Oh, sure.
-46150	82e4	"Kagurazaka Mitsuhiko throws\n a no-hitter! Into the final
-46186	be0d	 in style, cool as you like!"
+46136	e922	Oh, here you go.
+46150	82e4	"Kagurazaka Mitsuhiko\n throws a no-hitter!
+46186	be0d	 Into the final, cool as ice!"
 46220	078d	Kagurazaka. He's the real thing.
 46256	65ba	Come to think of it,\ntoday was the semifinal of
 46288	266a	the Intercity nationals.
@@ -1447,9 +1447,9 @@
 46334	b773	Either way,\nKagurazaka is a team we
 46368	112d	have to beat.
 46400	e463	In the fall Japan Championship,
-46420	db13	we take our revenge.
-46454	a36c	Yes!\nYes indeed!
-46476	c38d	Yes!
+46420	db13	we'll have to get our revenge.
+46454	a36c	Yes, sir!\nYes indeed!
+46476	c38d	Yes, sir!
 46516	d4c6	We stayed late and each
 46538	4dd0	polished our own skills.
 46696	d85a	Giants
@@ -1466,30 +1466,30 @@
 46972	507a	SoftBank
 46992	f91a	Giants?
 47032	ad8a	Tomorrow, with a place in the\nIntercity nationals at stake,
-47066	439e	we face the Kagurazaka Group.
-47128	afb6	The final is tomorrow, at last.\nWe shall now begin our final
-47160	5410	special training for it!
+47066	439e	we take on the Kagurazaka Group.
+47128	afb6	At last, the final is tomorrow.\nAs of now, we begin our last
+47160	5410	special training for the showdown!
 47190	7ae7	Here we go!
 47224	a19b	Yeeeaaah!
 47270	4e95	We trained like men possessed.
 47296	8763	Yes.
 47306	0351	Until we had nothing left...
 47346	dd8c	And then, game day...
-47388	9a5e	I can still...
-47420	5b32	...carry on, yes...
-47456	69d7	This year's Kagurazaka Group,
-47476	fe73	said to be their best ever,
-47500	2d4e	was no team for us to beat,\nworn out from training and
-47530	88f8	barely able to move.
+47388	9a5e	We can still...
+47420	5b32	...go on, yes indeed...
+47456	69d7	Called the strongest in history,
+47476	fe73	this year's Kagurazaka Group
+47500	2d4e	was far too much for us, worn\nout from training and barely
+47530	88f8	able to move.
 47564	4c7c	Mmmph...
 47576	d5b8	Another record-breaking rout!
 47618	9dd6	I never expected Kagurazaka
 47638	5c8e	Mitsuhiko to be that good.
-47672	e859	So that's
-47682	0ffd	a top national team!
-47714	dd7a	No use moping.\nWe start over, and this fall
-47742	3404	we win.
-47772	8b92	Yes.
+47672	e859	So this is
+47682	0ffd	what a top national team can do!
+47714	dd7a	Can't be helped.\nWe regroup for the fall,
+47742	3404	and next time we win.
+47772	8b92	Yes, sir.
 47782	cae2	Yes indeed.
 47804	b9d7	A bitter pity.\nWe were one win away from
 47832	e40b	the nationals...
@@ -1504,7 +1504,7 @@
 48126	3534	New blood for mighty Kagurazaka!
 48160	ae57	Oh, right. The nationals have
 48182	369c	already started.
-48208	bbce	I wish we'd made it...
+48208	bbce	Man, I wish we'd made it...
 48232	e190	Not that one.
 48250	3c9c	This article, if you please.
 48276	1540	Huh?
@@ -1514,43 +1514,43 @@
 48396	00b0	What a guy.
 48416	c873	Kagurazaka-kun only has to turn
 48444	2483	up at a ballpark to cause a stir.
-48474	a61d	Who'd think 
+48474	a61d	You'd never think 
 48484	67ca	-kun
 48494	1487	was the same age as him!
 48526	f5f1	Same goes for you, Yabe-kun.
-48550	c34a	A whole different life from mine.
+48550	c34a	His life's nothing like mine, huh.
 48586	190a	Okay! We can't let him\nleave us behind.
-48626	78be	Hard training, for our showdown!
+48626	78be	Train hard now for the showdown!
 48662	1ab3	Yes indeed!
 48804	dca4	I'm worn out!
 48818	5bca	That's practice done for today!
-48848	950d	Today is the final of the Japan
-48876	e810	Championship qualifiers, I see.
+48848	950d	Today's the final of the Japan
+48876	e810	Championship regionals, I believe.
 48902	4405	You know, if we'd won that\nlast game, it might have been
 48944	6361	us playing in that final.
 48978	f6a3	The chances of that were
 49000	18b8	about as close to zero as it gets.
-49036	6c9b	And besides, neither of us\nso much as made
-49072	5399	the bench.
-49102	fcd7	Sigh...
+49036	6c9b	Besides, neither one of us\neven made
+49072	5399	the bench, I'm afraid.
+49102	fcd7	*sigh*
 49128	fe8f	(Crack!)
 49148	f9eb	(Crack!!)
 49166	28b1	(Crack!!!)
-49192	2f5e	What's that incredible sound?
+49192	2f5e	What's with that crack of the bat?
 49224	71e4	Todorokiii!
-49240	de8d	Here comes one more!
+49240	de8d	One more! Here it comes!
 49266	d0fd	Yes, sir!
-49284	12c1	Wh-what a session.\nHas he been fielding hits like
-49320	b65d	this the whole time?
-49342	5249	And Kantoku with that bat,\nhe's a demon.
-49380	fd2a	Nothing like he is in the office.
+49284	12c1	Wh-what a workout.\nHas he always taken fielding
+49320	b65d	drills like this?
+49342	5249	And the way Kantoku hits them...\nthe man's a demon.
+49380	fd2a	Not the man he is in the office.
 49414	48fb	Less a demon, I'd say,
 49430	b1de	and more a baseball nut.
-49462	4cab	That's it!
-49482	a2db	Phew.
-49492	3d09	That was a good sweat.
-49520	0582	More practice after a full
-49548	f927	day's training? That's amazing.
+49462	4cab	That will do!
+49482	a2db	Phew,
+49492	3d09	now that's a good sweat.
+49520	0582	Even more practice after a whole
+49548	f927	day of drills? That's amazing.
 49584	0f51	Oh, you were watching?
 49606	7a52	Tiring, but it was good training.
 49642	e18c	We call that kind of session
@@ -1558,115 +1558,115 @@
 49680	be2a	
 49704	8594	One-More Practice?
 49724	9039	Kantoku's drills are brutal,\nbut you can feel them working.
-49772	b3cc	Whether you join is up to you.
-49804	3f28	Take care of your condition, too.\nYou're a grown man, so I'm
+49772	b3cc	Whether you join in is your call.
+49804	3f28	Of course, look after your health.\nYou're a grown man, so I'm
 49852	0cf2	sure you know that already.
-49890	f6b3	One-More Practice, huh...\nTraining where Kantoku is might
-49936	15c0	be a good way to get noticed.
-50020	8ab1	I'm worn out!\nSo this is senpai's
-50054	fcf0	One-More Practice.
-50070	127d	
+49890	f6b3	One-More Practice, huh...\nIf I train where Kantoku can see,
+49936	15c0	I might just catch his eye.
+50020	8ab1	I'm worn out!\nSo this is what senpai called
+50054	fcf0	One-More Practice,
+50070	127d	 huh.
 50080	d990	Now that I've tried it,
 50096	0a09	it really is tough...
-50124	eb3f	But somehow\nI feel like I've grown more
-50152	0446	than I usually do!
-50188	750c	,\nthat was rather good.
+50124	eb3f	But somehow,\nI feel like I grew more
+50152	0446	than usual today!
+50188	750c	,\nyou looked quite good out there.
 50218	b8fc	Shall we do it again tomorrow?
-50242	c91c	Tomorrow's a bit...
+50242	c91c	Tomorrow might be a bit much...
 50268	21f2	I see. We cannot have it\ngetting in the way of your work.
 50322	1459	Fatigue shows on your face
 50338	77c8	, yes.
-50360	2ec4	Whether to do it or not
-50388	1e73	is for you yourself to judge.
+50360	2ec4	When deciding whether to do it,
+50388	1e73	let yourself be the judge.
 50410	11e3	Yes, sir!
 50454	4c08	(Crick!)
 50480	b312	A-are you hurt, 
 50496	801e	?!
 50508	ddf4	Ow ow...
 50522	6012	Y-yes, sir, more or less...
-50550	a3e4	Was the fatigue not on your face?\nWhen you are tired, you need
+50550	a3e4	You looked tired, did you not?\nWhen you are tired, you need
 50594	f5f6	the courage to say no.
 50616	2ddd	Get yourself injured
 50636	412a	and you lose everything.
 50662	8a27	Yes, sir...
 50682	d75a	So it showed on my face.
-50706	894e	I'll watch for that next time.
-50808	d744	The Japan Championship is close.
-50832	f2f6	This year, we break into the top.
-50864	afb7	Even the nationals are in reach!
-50906	e197	First, we win round one!
+50706	894e	I'll be more careful next time.
+50808	d744	The Japan Championship is coming.
+50832	f2f6	This year, we make a deep run.
+50864	afb7	The nationals aren't just a dream!
+50906	e197	First, we get past round one!
 50938	47f8	Let's do this!
-50968	956a	Yeeeaaah!
-50994	ce9b	A few days later,
-51010	1ff2	the bracket was drawn.
+50968	956a	Yeaaah!
+50994	ce9b	And then, a few days later,
+51010	1ff2	the bracket draw took place.
 51056	2086	Th-this is bad!
-51072	e2de	Our first opponent!
+51072	e2de	Our first-round opponent is...!
 51092	81b1	What about our first opponent?
 51144	28cd	Of all the rotten luck...
-51174	8929	Our first opponent, of all teams,
-51194	5671	is the Kagurazaka Group...
-51224	fffe	The Kagurazaka Group
+51174	8929	To think our first opponent
+51194	5671	would be the Kagurazaka Group...
+51224	fffe	Kagurazaka Group
 51240	f6fb	?
-51250	3e40	What might that be?
-51268	b8ca	\n【Kagurazaka Group】\nA giant conglomerate said to have the power to move Japan.\nIts influence reaches every industry there is, not only\nsports such as the industrial leagues.
-51414	b2e7	The nationals are a given for
-51438	6e93	them. They win titles as a habit.
-51478	b568	They're that good a team...
+51250	3e40	And who might they be?
+51268	b8ca	\n【Kagurazaka Group】\nJapan's top conglomerate, rumored even to steer the nation.\nBeyond sports such as industrial-league baseball,\nit holds great sway over every industry there is.
+51414	b2e7	They always make the nationals,
+51438	6e93	and they're perennial champions.
+51478	b568	That's some team...
 51516	e799	Game day...
-51542	e727	Here it is at last.
-51564	276b	Championship qualifiers, round 1!
-51602	e886	Eeeek! Eeeek!
+51542	e727	Here it is at last:
+51564	276b	round one of the qualifiers!
+51602	e886	Eeee! Eeee!
 51620	bd22	Kagurazaka-saaan!
-51640	0f19	So dreamy!
-51654	79ca	Look this way!
-51670	d19a	Prince!
-51708	b335	Eeeek!
+51640	0f19	You're so dreamy!
+51654	79ca	Look over heeere!
+51670	d19a	Priiince!
+51708	b335	Eeee!
 51720	a89b	He looked right at me!
-51740	fb8b	I'm going weak at the knees!
-51770	8c1b	What on earth is all that?
+51740	fb8b	I'm meltiiing!
+51770	8c1b	What on earth is that?
 51796	aad2	That's the Kagurazaka Group heir,
 51826	b160	Kagurazaka Mitsuhiko
-51844	f1e5	The Prince himself.
-51910	c06e	He was studying abroad until
-51942	34d4	lately. Looks like he's back.
-51974	3193	Now I remember!
-52000	b703	Kagurazaka! A few years ago\nhe was that idol pitcher, the
-52040	1417	star of Koshien.
+51844	f1e5	in the flesh.
+51910	c06e	I heard he was studying abroad,
+51942	34d4	but it seems he's finally back.
+51974	3193	Ah, now I remember.
+52000	b703	Kagurazaka... A few years back,\nhe tore up the Koshien tournament.
+52040	1417	That famous idol pitcher, no less!
 52070	e91a	What?!
-52086	31cd	You mean THE Prince?!
-52114	6d79	...So that means
-52132	b732	he's pitching today.
+52086	31cd	The Prince everyone talks about?!
+52114	6d79	...So does that mean
+52132	b732	that guy's pitching today?
 52170	d348	No,
 52180	40cf	that won't happen.
 52200	d026	Huh?!
-52216	3600	For a mere qualifier,
-52238	fb21	he's not going to pitch.
-52266	a6f3	In fact,\nI doubt they'll even field
-52300	ca74	their first team.
-52320	4644	They're that good,
-52342	6514	the Kagurazaka Group...?
-52370	160c	Mighty Kagurazaka Group or not,\nwe've put in hard training
-52412	9cab	of our own.
-52438	1030	We win today, no matter what!
-52460	3b11	Let's go!
-52492	7881	Yeeeaaah!
+52216	3600	For a mere qualifier like this,
+52238	fb21	I doubt he'll take the mound.
+52266	a6f3	In fact,\nI'm not even sure they'll field
+52300	ca74	their first string against us.
+52320	4644	Are they really that good,
+52342	6514	this Kagurazaka Group...?
+52370	160c	Kagurazaka may be a powerhouse,\nbut we've put in
+52412	9cab	plenty of hard practice ourselves.
+52438	1030	We will win today. We will!
+52460	3b11	Let's gooo!
+52492	7881	Yeaaah!
 52524	8adc	We cheered from the stands.
-52560	aa39	Come on, senpai!
-52578	0892	Knock Kagurazaka flat!
-52610	e2b9	・
-52626	e2b9	・
-52638	e2b9	・
-52654	5450	Come o...
-52674	05c2	...on...
-52694	e853	We lost by a record margin.
-52736	bb20	Damn it all!
-52758	a80f	My pitches did nothing to them.
-52796	64ac	And in the end, Kagurazaka-kun
-52816	19f5	never even came out.
-52848	3fb3	Mmm. A bitter pity.
-52886	3266	Crestfallen, the Pawafuru nine
-52914	d331	left with much to work on.
-53014	7be0	Ah, 
+52560	aa39	Go get 'em, senpai!
+52578	0892	Kagurazaka's nothing! Crush 'em!
+52610	e2b9	.
+52626	e2b9	.
+52638	e2b9	.
+52654	5450	Go get...
+52674	05c2	...'em...
+52694	e853	It was a record-breaking blowout.
+52736	bb20	Damn it! How could this happen?!
+52758	a80f	Nothing I threw got past them.
+52796	64ac	In the end, Kagurazaka-kun
+52816	19f5	never so much as showed his face.
+52848	3fb3	Hmmm... A bitter pity.
+52886	3266	Heads hung, the Pawafuru Nine
+52914	d331	left the park with a lot to fix.
+53014	7be0	Hey 
 53024	63ca	.\nThe shacho wants you.
 53046	aea8	Go at once.
 53088	611e	,
@@ -1702,9 +1702,9 @@
 53780	6a25	you are at the camp.
 53914	8392	The members of the elite
 53934	6093	squad camp were announced.
-53978	4a11	Not one person from\nPawafuru Corp.
+53978	4a11	Not a single player from\nPawafuru Corp.
 54012	dc47	was chosen.
-54036	5757	Todoroki-senpai looked crushed.
+54036	5757	Todoroki-senpai took it hard.
 54106	7a91	Scout rating      【
 54130	f3d8	】
 54298	1194	After scout bonus 【
@@ -1741,20 +1741,20 @@
 55280	592c	But there's always a chance,
 55304	ec63	even for the likes of us.
 55336	6b7a	Who knows, next year maybe you...
-55374	0e0f	Just kidding.
+55374	0e0f	Naah, just kidding.
 55390	4546	It'd be an honor to be picked.
 55422	0581	The elite squad camp, huh.
 55444	4f88	I'd like to go too...
 55470	3a3b	I learned about the elite\nsquad camp.
 55548	8aa1	Here I am!
-55564	d3e9	This is 
+55564	d3e9	So, this is 
 55574	fbb9	Pawafuru Corp.
 55592	127d	
 55606	54c8	Hello, my glorious future!
 55648	0518	Okay, in we go...
 55680	0f30	Ow ow ow!
 55700	96bf	S-sorry about that!
-55722	e4a7	I can't be late on my first day!
+55722	e4a7	Late on day one? Heaven forbid!
 55754	b144	Kindly step aside, if you please!
 55786	6178	Huh?
 55796	123b	Late?!
@@ -1762,8 +1762,8 @@
 55830	1bb8	but I misread my watch.
 55862	9de9	What a relief to be on time.
 55894	41bb	It's no relief to me!!!
-55916	8c7b	Oh?\nIf you stand about there,
-55950	68a1	you really will be late.
+55916	8c7b	Oh?\nIf you just stand around there,
+55950	68a1	you really will be late, you know.
 55982	ea34	He's throwing me right off...
 56016	ed9f	The name of yours truly is
 56034	6e28	Yabe Akio.
@@ -1788,7 +1788,7 @@
 56514	f4fb	From now on, as full adults...
 56556	214a	So that is the Tamano-shacho
 56576	0329	one hears so much about.
-56602	7ffc	Hears what?
+56602	7ffc	What about him?
 56622	a38b	They say he loves baseball so\nmuch that, once it comes up,
 56670	817d	he sees nothing else at all.
 56696	b536	Huh.
@@ -1817,8 +1817,8 @@
 57372	ca09	You are in the ball club, yes?
 57404	a840	Baseball is all very well, but a
 57434	1d6c	working adult must do his job.
-57470	5d2a	Become a full member of staff
-57492	3b1b	soon, and do work to be proud of.
+57470	5d2a	Learn to pull your weight soon,
+57492	3b1b	and do work you can be proud of.
 57526	8b92	Yes, sir.
 57540	3809	Very good.
 57558	c747	I shall give you these.
@@ -1831,13 +1831,13 @@
 57788	dcfe	Closing time
 57798	e88b	 is your deadline.
 57822	b896	\n【Closing time】\nThe fixed hours set by a company, during which\nyou must be at work.\n(For example, regular hours of 9 a.m. to 6 p.m.)
-57938	1991	Well, now I'm in a bind.
+57938	1991	Boy, I'm in for it now.
 57962	c5e5	Still, I've just got to do it!
 57998	d269	Busy, busy...
 58026	6ebe	(Scribble scribble)
 58060	d37c	-kun,
 58070	f026	want a hand with that?
-58102	cd6c	Oh, you joined when I did.
+58102	cd6c	Oh, it's my fellow new hire,
 58126	cd88	Hanai Momoko-chan!
 58140	70b7	
 58160	aeac	It's you!
@@ -1845,11 +1845,11 @@
 58214	bf7c	Oh, no reason.
 58240	ead5	Anyway, thank you!
 58278	78f6	Time passed in silent work...
-58314	34a2	Oh no!\nI was in the middle of making tea!
+58314	34a2	Oh no, silly me!\nI was in the middle of making tea!
 58360	9b09	I've got to run!
 58386	e437	Sorry.
-58400	ee78	I wasn't much help.
-58422	6be7	Not at all.
+58400	ee78	I can't stay and help.
+58422	6be7	No, no, it's fine.
 58442	5177	Scatterbrained as ever.
 58538	61e7	(Thwack!)
 58558	b5d4	(Thwack!!)
@@ -1857,7 +1857,7 @@
 58610	612f	Hm?
 58620	9c4c	What's that sound?
 58646	efa0	Damn!
-58658	b440	Struck out on three pitches again.
+58658	b440	Three pitches, and I'm out again?!
 58678	a384	Okay!
 58690	da1b	I'm fired up again today!
 58728	e0d8	That's
@@ -1871,33 +1871,33 @@
 58910	6996	Hey,
 58926	2fb3	 and Yabe.
 58940	b48c	Giving it everything you've got?
-58972	8b92	Yes.
+58972	8b92	Yes, sir.
 58990	b9a7	Baseball and work.\nWe have to pull our weight
 59024	c5f1	in both.
 59052	b8c4	No slacking on either one.
-59076	ed70	Give them all you've got.
-59108	d0fd	Yes!
+59076	ed70	Work your hardest at both.
+59108	d0fd	Yes, sir!
 59120	1fbc	Yes indeed!
 59200	2d12	Well, 
 59212	f926	.
 59220	af64	How's practice going?
-59240	219b	Great, thank you!
-59270	4079	Is that so.
-59282	a141	Good to hear.
+59240	219b	Yes, sir! Going great!
+59270	4079	I see.
+59282	a141	That's what I like to hear.
 59304	5662	When you're tired and low on\nvitality, be sure to "Rest"
 59350	6be4	and get your vitality back
 59364	0c68	.
 59384	a30f	A ballplayer looks after his
 59402	157a	condition. That's a given.
-59430	8b92	Yes.
+59430	8b92	Yes, sir.
 59450	4b07	Practicing when you're tired
 59472	875c	risks injury
 59488	63b1	, so be careful.
 59514	5803	Landing in the hospital with an
 59534	6b06	injury is no joke.
-59562	11e3	Yes!
+59562	11e3	Yes, sir!
 59572	a8ec	Thank you very much!
-59602	2637	Oh, and another thing.
+59602	2637	Oh, right, right.
 59618	2723	This helps with tiredness too.
 59654	530b	What's this?
 59672	5b1c	Pawarin.
@@ -1929,7 +1929,7 @@
 60344	fc82	Hot-Blooded Practice
 60356	39f1	, like him.
 60382	7209	Hot-Blooded Practice?
-60400	af9d	That's right.\nYour own "hot blood" boosts
+60400	af9d	That's right.\nYour own "Passion" boosts
 60430	3726	what you get out of practice.
 60462	1565	That said,\n"strike while the iron is hot",
 60494	b7f6	as the old saying goes.
@@ -1937,7 +1937,7 @@
 60568	51bd	cool off.
 60588	84d0	Practice while the fire's
 60610	3a8f	lit... huh.
-60632	c36a	When the Hot Blood gauge is full,
+60632	c36a	When your Passion gauge is full,
 60662	ba1c	you can do Hot-Blooded Practice.
 60694	b29e	Use Hot-Blooded Practice well
 60722	1893	and you will grow faster.
@@ -1947,21 +1947,21 @@
 60876	aed5	You finally did it, 
 60892	f926	.
 60900	141a	That was Hot-Blooded Practice.
-60920	2607	That was?
+60920	2607	That was it?
 60936	1ead	That's right.
 60948	3c0b	While 
 60958	56c2	your fire is still burning,
-60982	97a6	repeat it while vitality lasts
+60982	97a6	repeat it as vitality allows
 61010	3cb7	!
-61024	1509	Again and again?!
-61044	c7cf	Okay! Hot-Blooded Practice
-61072	b680	is how I'm getting strong!
-61150	7be0	Ah, 
+61024	1509	As often as I like?!
+61044	c7cf	Okay! With Hot-Blooded Practice,
+61072	b680	I'm gonna train like craaazy!
+61150	7be0	See here, 
 61160	e8dd	.\nRun down to the store and
 61184	25f4	buy some Pawarin.
 61216	1f50	Huh? Shopping, sir?
 61242	7c06	Here is the money.
-61272	e96e	5 bottles of Pawarin
+61272	e96e	For 5 bottles of Pawarin
 61288	c8e3	.
 61304	756f	Go to "Items" → "Shop"
 61328	6165	to buy items
@@ -1969,7 +1969,7 @@
 61364	7258	Understood?
 61384	11e3	Yes, sir!
 61396	20c3	The bucho sent me out shopping.
-61480	7be0	Ah, 
+61480	7be0	See here, 
 61490	5403	.\nThose 5 bottles of Pawarin.
 61522	52cb	Have you bought them?
 61612	8b92	Yes, sir.
@@ -1977,7 +1977,7 @@
 61642	6ff1	Good. They all seem to be here.
 61670	020a	I shall take charge of these.
 61700	0093	I gave the bucho 5 Pawarin.
-61768	0928	Ah!
+61768	0928	Uh-oh!
 61782	d4f8	Hm? What is it?\nDo not tell me
 61806	b1b4	you have not got them yet?
 61838	4857	I-I'm sorry, sir!
@@ -1989,7 +1989,7 @@
 61986	8a27	Yes, sir...
 62002	b8e1	After that, the bucho gave me
 62024	b341	a thorough scolding.
-62104	0928	Ah!
+62104	0928	Uh-oh!
 62118	d4f8	Hm? What is it?\nDo not tell me
 62142	b1b4	you have not got them yet?
 62174	4857	I-I'm sorry, sir!
@@ -2020,7 +2020,7 @@
 62898	8b5a	(Zip!)
 62918	8b5a	(Zip!)
 62948	830a	Hmm...
-62960	5ad9	It's lonely on your own...
+62960	5ad9	It's lonely on my own...
 62988	bb33	The next day...
 63018	a10c	Phew, I'm worn out.\nPracticing with everyone really
 63052	5198	does beat going it alone.
@@ -2033,20 +2033,20 @@
 63276	2afd	The practice he's good at?
 63302	2f15	Every player has practice he's
 63322	7125	good at and practice he's not.
-63354	35a0	Shown with symbols...
-63378	ca89	it looks like this.
+63354	35a0	If we used symbols...
+63378	ca89	it'd look like this.
 63404	6222	○＝good at it
 63420	348b	◎＝very good at it
-63452	d80c	In the case of yours truly,
-63468	b89a	baserunning is the strong suit.
-63496	7d2c	So\nif I do baserunning with you,
-63532	18f2	Yabe-kun, I get more out of it.
+63452	d80c	As for yours truly,
+63468	b89a	baserunning is my strong suit.
+63496	7d2c	So,\nif I do baserunning with Yabe-kun,
+63532	18f2	I get more out of it, huh?
 63566	cb5a	Exactly!
 63584	8a29	Of course,\neven without a strong suit,
 63618	834e	training together still helps.
 63650	2994	Wanting to learn more skills\nfrom more people:
 63688	2434	that attitude is what counts.
-63720	11e3	Yes!
+63720	11e3	Yes, sir!
 63730	1ab3	Yes indeed!
 63744	51f3	Todoroki-senpai taught me
 63758	b27d	a lot about practice.
@@ -2061,12 +2061,12 @@
 64112	068b	You are shaping up rather well.
 64154	7e08	He's always buttering up
 64170	29e6	Kantoku.
-64198	122a	One might also call it savvy.
+64198	122a	Or a Smooth Talker, one might say.
 64230	53fb	He only ever practices where\nKantoku happens to be, so
 64268	ecf4	Kantoku rates him highly.
 64314	d24a	I get it.
 64330	4b4d	Practice where Kantoku is and
-64358	f7ab	Kantoku's rating goes up
+64358	f7ab	Kantoku's rating climbs faster
 64382	a35e	!
 64424	f874	For industrial-league and college
 64452	23f6	players, today is draft day.
@@ -2098,17 +2098,17 @@
 65218	caf7	I was treated to several hours
 65234	9b62	of senpai's passionate speech.
 65296	159f	I see!
-65314	1bd5	Okay. Heart.
+65314	1bd5	Okay! Heart, huh.
 65338	f5d9	I'm never losing on spirit either!
 65372	f679	Listening to senpai's speech
 65400	8bd9	got my own spirits up.
 65498	9117	The new recruits arrive today.
-65532	194c	They do!
+65532	194c	Yep!
 65548	a4eb	At last, yours truly is a senpai.
 65588	a2d8	From now on, every last chore
 65610	cfa3	gets dumped on the newcomers!
-65640	9723	Hey, now...
-65664	1345	A whole year since then.
+65640	9723	Hey, hey...
+65664	1345	It's been a year already, huh.
 65686	a2c3	Time really flies.
 65712	4209	Still, I wonder what kind of
 65734	870e	kohai we'll get?
@@ -2155,7 +2155,7 @@
 66998	d4a9	-kun.
 67022	236f	I'm 
 67058	af2f	, second-year.
-67068	0437	I'm confident in my baseball!
+67068	0437	I've got confidence in my game!
 67096	396c	Good to meet you all.
 67128	0bfa	Maruo-kun and 
 67144	e594	-kun
@@ -2193,7 +2193,7 @@
 68378	b90e	(Whisper whisper)
 68406	3710	Kageyama-san's been in and\nout an awful lot lately.
 68444	cf05	I wonder if something's up.
-68468	64ba	Oh?\nYou haven't heard?
+68468	64ba	Oh?\nHave you not heard?
 68496	9d58	About Todoroki-senpai.
 68512	5b8d	Huh?
 68526	8dc7	It's the talk of the town!\nTodoroki-senpai may be picked
@@ -2207,7 +2207,7 @@
 68760	2c13	I see.
 68782	ffae	A few days later...
 68802	f874	For industrial-league and college
-68830	23f6	players, today is draft day.
+68830	23f6	players, it's the fateful draft.
 68872	48f2	Several of the players to watch
 68898	d90f	were drafted by the pros.
 68926	3219	But Todoroki-senpai's name
@@ -2215,12 +2215,12 @@
 68986	5727	Terrible news!
 69002	f9b1	Todoroki-senpai is...!
 69024	659b	Whaaat?!
-69038	0474	He's quitting the company?
-69068	8b45	Shh, please.\nThis is still a secret.
-69108	0074	It is only a rumor, after all.
-69140	a0ac	Isn't there anything we can do?
+69038	0474	He's quitting the company?!
+69068	8b45	Shh, if you please.\nThis is still a secret.
+69108	0074	It's only a rumor, mind you.
+69140	a0ac	Nothing we can do about it?
 69176	d13e	Todoroki.
-69186	7027	A great pity about this time.
+69186	7027	A great pity, this time around.
 69212	9c68	Kantoku...
 69230	4473	I know that in secret\nyou have dreamed of becoming
 69266	e805	a professional ballplayer.
@@ -2243,15 +2243,15 @@
 69806	9117	The new recruits arrive today.
 69840	194c	They do!
 69860	744a	Finally get to be a senpai too.
-69896	a2d8	From now on, all the chores
-69918	8789	go to the newcomers!
+69896	a2d8	From now on, every chore
+69918	8789	gets dumped on the newbies!
 69944	9723	Hey, now...
-69964	30fc	A year already since Maruo came.
+69964	30fc	Maruo's been here a year already.
 69992	a2c3	Time really flies.
 70018	8029	Wonder who we'll get?\nAny cocky ones, and
 70062	a0e8	I'll set them straight myself!
 70102	e230	From today you are working adults.
-70128	f4fb	From now on, as full adults...
+70128	f4fb	As proper adults, from now on...
 70162	58c2	The shacho gave his
 70176	987b	customary annual speech.
 70218	5687	Then the new recruits were\nintroduced.
@@ -2260,7 +2260,7 @@
 70356	9659	From what I saw,\nno big fish among this
 70386	c804	year's newcomers.
 70414	7f15	No real boost to the team, so
-70446	cd70	this year's tournaments look bad.
+70446	cd70	this year could get ugly, senpai.
 70476	e142	What?!
 70496	7475	Then it's up to us to train
 70528	d6b8	harder and get stronger!
@@ -2268,9 +2268,9 @@
 70582	cb44	Hard training till the Intercity!
 70614	1ab3	Yes indeed!
 70640	440a	Same as ever.
-70656	e01c	My senpai are so simple.
-70684	544d	Oh well, I'll tag along too!
-70742	5aeb	Alarmed, we all trained hard!
+70656	e01c	My senpai are sooo simple.
+70684	544d	Oh well, guess I'll tag along!
+70742	5aeb	Worried, we all trained like mad!
 70768	e844	The Pawafuru Corp. ball club
 70794	f85f	grew tougher than before!
 70850	6f1e	That concludes this year's
@@ -2281,7 +2281,7 @@
 70962	d4a9	-kun.
 70992	789a	I'm 
 71028	af2f	, third-year.
-71038	fd5a	I love baseball more than food!
+71038	fd5a	I'd skip meals for baseball!
 71070	509d	Good to meet you!
 71140	e594	-kun
 71152	a057	will also join the ball club.
@@ -2290,13 +2290,13 @@
 71250	9659	From what I saw,\nno big fish among this
 71280	c804	year's newcomers.
 71308	c6a3	If I had to pick one,
-71324	5b6a	it's the transfer.
+71324	5b6a	it'd be that transfer guy.
 71346	0784	Like the shacho said,
 71370	7742	he's the real thing!
 71400	6e92	Get careless,\nand even you senpai could
 71442	eafc	lose your positions to him!
 71468	d4f9	Is he as good as all that?
-71498	c2e4	Yes.\nI've heard that name
+71498	c2e4	Yep.\nHeard that name
 71524	e83a	somewhere before.
 71546	6f51	They say he's good enough
 71568	097a	to go pro.
@@ -2305,7 +2305,7 @@
 71648	cb44	Hard training till the Intercity!
 71680	1ab3	Yes indeed!
 71706	440a	Same as ever.
-71722	e01c	My senpai are so simple.
+71722	e01c	My senpai are sooo simple.
 71750	55fc	Then again,\nI can't relax either.
 71784	42d9	Got to practice more!
 71810	0010	With new members in,\nthe Pawafuru Corp. ball club
@@ -2340,10 +2340,10 @@
 72746	d801	Everyone else has gone home...
 72778	192e	(Grumble grumble)
 72800	1064	Yours truly is heading home too.
-72832	351f	-kun, aren't you?
+72832	351f	-kun, not going home?
 72862	f010	Oh, Yabe-kun.
 72880	9998	You're still here.
-72906	159f	Hmm, what to do.
+72906	159f	Hmmm, what should I do?
 72934	2d5e	Stick it out to the end
 72960	1166	Go home and get a good sleep
 73008	f704	Okay, I'm going home to rest!
@@ -2357,7 +2357,7 @@
 73276	9e3b	-kun, you
 73286	9ebd	really are something.
 73310	7bae	We joined in the same year, yet
-73332	636c	yours truly never left the ranks.
+73332	636c	yours truly's still rank and file.
 73368	8720	-kun is a kacho,
 73384	ada7	and an executive in the making.
 73416	d84d	Y-Yabe-kun!
@@ -2373,7 +2373,7 @@
 73688	87c8	Yours truly feels a little
 73712	b127	better, I must say!
 73802	ad45	A title means nothing, you say?
-73834	bb8c	That is wrong.
+73834	bb8c	You are mistaken.
 73866	7ff4	B-Bucho!!!
 73894	b895	A title, you see,\nis proof that your work, job by
 73934	6348	job, has earned people's respect.
@@ -2388,13 +2388,13 @@
 74176	1fbc	Yes indeed!
 74272	338b	(Achoo!)
 74298	0c22	Oh, do you have a cold, Bucho?
-74324	886e	Yes. I am somewhat unwell.
+74324	886e	Yes, I am a bit under the weather.
 74354	3366	(Sniffle...)
 74376	338b	(Achoo!)
 74402	3e02	That sounds rough, sir.
 74470	d8db	Come to think of it,
 74486	488b	Cold medicine!
-74496	33c4	 I carry some.
+74496	33c4	 I've got some.
 74524	fc31	Give the bucho the medicine
 74544	97db	Keep it for a rainy day
 74596	cd2c	Bucho!
@@ -2442,7 +2442,7 @@
 75668	6a70	been working so hard lately.
 75694	52be	A regular workaholic, I'd say!
 75718	427d	Spare a thought for the team too.
-75746	d0fd	Yes!
+75746	d0fd	Yes, sir!
 75792	fb35	(Scribble scribble...)
 75824	c62d	Phew, I'm worn out.
 75846	aad1	And yet
@@ -2464,7 +2464,7 @@
 76442	53a4	If you are tired, go home early.
 76478	e6b8	Working yourself into the\nground will not do, either.
 76518	1fcd	Here. Take this.
-76544	548e	It's Pawarin!
+76544	548e	It's a Pawarin!
 76566	0174	Thank you very much!
 76622	afcb	I'll keep at it a little longer.
 76654	c37a	Ugh, I'm wiped out.
@@ -2475,7 +2475,7 @@
 76774	4ff2	Awake at last, I see.
 76806	6469	S-senpai!
 76824	23ea	Pull yourself together.\nI thought you were working all
-76866	908a	night, and you were just asleep.
+76866	908a	night. Just sleeping won't do!
 76918	2508	,\nI hear you were working
 76938	a736	late last night.
 76970	6e06	Let me see how it turned out.\n・
@@ -2483,7 +2483,7 @@
 77016	b154	What is this?!
 77034	93b4	You have done nothing at all!
 77066	8580	Pointless overtime wastes power.
-77098	c5d7	Pull yourself together!
+77098	c5d7	Shape up!
 77118	8a27	Yes, sir...
 77184	c993	Okay,
 77194	d41c	home I go for a good sleep!
@@ -2493,16 +2493,16 @@
 77396	0800	Oh?
 77412	c0a6	 has gone home, I see.
 77436	58b6	Let me see.
-77450	1622	How far has the work got?
+77450	1622	How far along is the work?
 77486	4c1f	...
 77500	d7b3	Hopeless.
 77514	5466	He has done nothing at all!
 77546	b7e8	Not a man to be relied on.
 77590	9752	Bucho, you idiot!
-77610	8add	How much work can you dump on me?!
+77610	8add	How much can you dump on meeee?!
 77672	50bf	Phew, that feels better!
 77694	fbba	Okay, back to work.
-77748	cac5	Who, pray, is an idiot?
+77748	cac5	Who did you call an idiot?
 77778	826a	Aah!\nBucho!!!
 77798	e9f9	Nothing, sir, nothing!
 77824	f4d7	Mind your tongue in the office.
@@ -2522,7 +2522,7 @@
 78328	3c04	\nIt may look like a uniform,\nbut he is wearing a suit.\n
 78380	0d8c	Heh.
 78392	14df	You think so?
-78406	7139	You look like a real grown-up.
+78406	7139	You look like a real grown man.
 78434	e7ef	Good thing I own
 78460	f7a6	a decent suit!
 78508	34b5	Busy, busy, busy...
@@ -2552,13 +2552,13 @@
 79260	8b92	Yes, sir.
 79270	d0c3	He is working very hard indeed!
 79304	1fa0	 has
-79312	9d99	real backbone, I must say.
+79312	9d99	real backbone, I assure you.
 79340	dc62	Is that so!
 79352	3af6	Then I look forward to his future.
 79402	60d5	?
 79414	0cb0	Average, I would say. So-so.
 79444	7f4c	I see.\nVery well.
-79472	4ecb	 is so-so... is he.
+79472	4ecb	 is so-so... hm.
 79504	bb15	Hopeless, sir.\nFrankly, as he is now
 79544	e4f0	he is of no use to us.
 79566	b9db	If only he would show
@@ -2590,10 +2590,10 @@
 80284	20a6	be one to really look out for.
 80318	7f4c	I see.\nVery well.
 80346	a81f	 needs more... hm.
-80376	7e9a	At baseball he's still iffy.\nFrankly, I can't say how he'll
+80376	7e9a	As for baseball, he's still shaky.\nFrankly, I can't say how he'll
 80434	edaf	cope at industrial-league level.
-80464	b928	If he'd put more focus\ninto his practice... but he's
-80512	d783	got it all still ahead of him.
+80464	b928	If only he'd focus more\non his practice... Still, he's
+80512	d783	only just getting started.
 80548	4079	I see.
 80560	9912	That is a pity.
 81318	fe8f	(Crack!)
@@ -2617,7 +2617,7 @@
 81756	c3c8	How's it going today?
 81784	2c91	Maruo!
 81794	d230	If it's fielding,\nask me anything!
-81828	d313	Happy to help, if I'll do.
+81828	d313	Happy to help, if you'll have me.
 81860	1bcf	So, straight to it:
 81876	5756	want to practice together?
 81902	3a77	Practice together
@@ -2637,8 +2637,8 @@
 82318	fe8f	(Crack!)
 82342	e597	Hm?!
 82354	0bb2	That's Maruo!
-82374	28d4	He's not just a fielder.
-82398	ca90	He can really hit, too.
+82374	28d4	He's not just good with the glove,
+82398	ca90	he can really hit, too.
 82424	c691	Okay, today I'll copy Maruo
 82448	9a92	and work on my batting!
 82472	15d2	After that,\nto polish my batting, I
@@ -2649,14 +2649,14 @@
 82622	d21a	-san.
 82632	c3c8	How's it going today?
 82660	2c91	Maruo!
-82674	c499	You're amazing.
-82686	e683	You can do everything.
+82674	c499	You're something else.
+82686	e683	Is there anything you can't do?
 82710	27f0	Heh heh.
-82722	f933	It's nothing special, really.
+82722	f933	Aw, it's nothing much.
 82750	0d1a	Pretty handy with the bat too.
 82780	d313	Happy to help, if I'll do.
-82812	1bcf	So, straight to it:
-82828	5756	want to practice together?
+82812	1bcf	No time like the present!
+82828	5756	Want to practice together?
 82854	3a77	Practice together
 82870	96dc	Too tired, I'll pass
 82920	bc65	Roger that!
@@ -2672,8 +2672,8 @@
 83266	62a4	(Sliiide!)
 83294	e597	Hm?!
 83306	0bb2	That's Maruo!
-83326	28d4	He's not just a fielder.
-83350	5b00	He's fast on his feet, too.
+83326	28d4	He's not just good with the glove,
+83350	5b00	he's fast on his feet, too.
 83374	c691	Okay, today I'll copy Maruo
 83398	f5c2	and work on my baserunning!
 83422	b1fb	After that,\nto polish my baserunning, I
@@ -2684,14 +2684,14 @@
 83574	d21a	-san.
 83584	c3c8	How's it going today?
 83612	2c91	Maruo!
-83626	c499	You're amazing.
-83638	e683	You can do everything.
+83626	c499	You're something else.
+83638	e683	Is there anything you can't do?
 83662	27f0	Heh heh.
-83674	f933	It's nothing special, really.
+83674	f933	Aw, it's nothing much.
 83702	f7a8	Nothing to brag about, but
 83734	d313	happy to help, if I'll do.
-83766	1bcf	So, straight to it:
-83782	5756	want to practice together?
+83766	1bcf	No time like the present!
+83782	5756	Want to practice together?
 83808	3a77	Practice together
 83824	96dc	Too tired, I'll pass
 83872	bc65	Roger that!
@@ -2709,34 +2709,34 @@
 84364	9e82	Oh, senpai!
 84380	90be	Hi there.
 84398	749d	You are rather good, I must say.
-84430	a5fb	Even better than the rumors.
+84430	a5fb	You're even better than they say.
 84454	1d83	Heh heh,\nit's nothing.
-84484	8002	Anyone ought to manage this much.
+84484	8002	This much is just the basics.
 84514	cf03	Next to you two regulars,
-84542	4834	I've got a long way to go.
+84542	4834	Still got a long way to go.
 84570	f5c5	Ah ha ha...
 84590	65bd	The two of us
-84606	7867	are not regulars yet, alas.
+84606	7867	aren't regulars yet, I'm afraid.
 84644	55d5	Huh?! You're not?
-84670	2bc0	Oh. Is that all.
+84670	2bc0	Awww, is that all?
 84684	7eca	Wasted a perfectly good greeting.
 84720	62ee	Hey, now.
 84742	5a5c	The regulars will be announced
 84762	f726	before the next Intercity.
 84796	da7b	So if I catch Kantoku's eye\nbefore then,
-84834	f587	I'm all set!
-84860	3354	Okay, I'll be off, then!
+84834	f587	it's in the bag!
+84860	3354	Off I go, then!
 84892	f72c	Kantokuuu!
 84904	6b80	Watch me play, pleeease!
 84942	602a	And off he goes.
 84968	3ea9	Maruo, huh...\nA bit cocky, but
 85008	e011	there's no doubting his skill.
-85034	766d	We can't lose to a kohai.
+85034	766d	We can't let a kohai outdo us.
 85064	8bb8	To practice, without delay!
-85092	afaf	Yeah!
+85092	afaf	You bet!
 85120	be2a	We practiced hard until late.
 85290	15d7	-kun,\nthis player is remarkable.
-85322	cb36	He has broken the record again!
+85322	cb36	He's set a new record again!
 85358	4ff7	I saw, I saw!\nIt was on TV yesterday.
 85392	679a	Some players really are amazing.
 85430	7c11	He's a big star in the\npros now, but they say he
@@ -2749,23 +2749,23 @@
 85672	4f0c	Honestly, I envy him.
 85698	9354	Me too.
 85714	6f8d	Then we too
-85730	f427	must never stint on effort.
-85768	b973	That settles it. Practice time.
+85730	f427	must never skimp on effort!
+85768	b973	That settles it. Practice time!
 85808	dddd	Huh?!
 85818	dda5	Right now?!
 85840	9f39	We only just finished practice!
-85878	15fe	Let's go!
+85878	15fe	Let's gooo!
 85902	82e1	Yeeeah!
 85914	8076	Yes indeed!
-85946	34ed	Ugh, not listening at all...\nOh well,
-85980	182b	I'll join them for a bit.
+85946	34ed	Ugh, they're not even listening...\nOh well,
+85980	182b	guess I'll tag along a bit.
 86024	be2a	We practiced hard until late.
 86198	597b	Senpaaai!
 86242	eb95	-kakaricho!
 86274	2403	-kacho!
-86288	d5e2	Want me to rub your shoulders?
+86288	d5e2	How about a shoulder rub?
 86314	612f	Hm?
-86324	fce1	What is it, Maruo?
+86324	fce1	What's this, Maruo?
 86344	4987	You won't get anything out of me.
 86374	5ba2	Heh heh.
 86386	3bf1	Oh, come on, why not?
@@ -2792,12 +2792,12 @@
 86946	5e1a	You're charging me?
 86966	7009	Of course.
 86982	7988	Money makes the world go round.
-87014	6388	He doesn't miss a trick...
-87070	e1d0	And so he collected in full.
-87268	0951	Huh?!\nSenpai, you're broke? Really?
+87014	6388	You don't miss a trick, huh...
+87070	e1d0	And so he collected every yen.
+87268	0951	Huh?!\nSenpai, you're broke? Seriously?
 87302	a89b	Even kids carry that much now.
 87338	032b	Oh well.\nToday's on the house.
-87374	064a	Bring it next time, please.
+87374	064a	Have it ready next time, okay?
 87558	426d	(Squeeze)
 87576	426d	(Squeeze)
 87594	426d	(Squeeze)
@@ -2811,41 +2811,41 @@
 87784	39ea	I couldn't move.
 87854	d026	Huh?!
 87866	9ec1	You don't want one?
-87884	40c4	What a shame.
+87884	40c4	Aww, what a shame.
 87900	ebe6	I'm better at it than I look.
 87936	8700	Got it.\nIf you ever need anything,
 87970	4edf	just say the word.
 88000	e45a	Yabe-senpaaai!
-88018	62ee	Want me to rub your shoulders?
+88018	62ee	How about a shoulder ruuub?
 88080	57b5	Phew, worn out again today.
-88102	92df	I'll groom the field before I go.
+88102	92df	I'd better groom the field first.
 88132	597b	Senpaaai!
 88158	0454	Oh, Maruo.
-88174	9fe5	I'm heading to the arcade\nto have some fun.
-88216	514e	You're coming too, of course?
+88174	9fe5	Heading to the arcade\nfor some fun.
+88216	514e	You're coming too, right, senpai?
 88248	6342	Hmm, what to do.
 88276	71a0	Of course I'm coming!
 88294	39c2	The field still needs grooming...
 88356	181d	Roger that.
 88380	3ccb	-senpai,
 88392	24b0	I knew you'd say that.
-88432	ec1a	To blow off all our\neveryday frustrations, we
+88432	ec1a	To blow off all our pent-up\nfrustration, we
 88470	71f2	played to our hearts' content.
 88586	2b72	Hm? What's this?\nThe field hasn't been
 88622	0e3a	groomed at all.
 88650	7275	Today was 
 88664	a142	's
-88672	f4d0	turn to do it, I'm sure.
-88696	61ce	Honestly, that one...
+88672	f4d0	turn to do it, if I recall.
+88696	61ce	Honestly, that guy...
 88752	c143	Oh, right.\nCan't be helped.
-88780	b89d	I'll go with someone else.
-88814	e3e5	Okay, let's get it done.
+88780	b89d	Guess I'll ask someone else.
+88814	e3e5	Okay, let's do it in one go!
 88840	e2b9	・
 88852	e2b9	・
 88864	e2b9	・
-88880	cd11	Phew, finally finished.
-88906	ea95	A well-kept field\nfeels good.
-88940	c9d4	Now home for a good rest.
+88880	cd11	Phew, done at last.
+88906	ea95	There's nothing like\na freshly groomed field.
+88940	c9d4	Now to go home and rest up.
 89058	2af0	Mm.
 89068	6329	Groomed right into the corners.
 89104	c6d4	 does a decent job.
@@ -2859,27 +2859,27 @@
 89310	639f	As if!\nLook at the size of this pile.
 89352	44aa	This company works us to death!
 89390	0fd4	Help with the work
-89406	9e23	Cheer him on from the heart
+89406	9e23	Cheer him on with all my heart
 89452	dfe0	Now, now, don't be like that.
 89476	e049	I'll give you a hand.
 89504	dddd	Huh?!
 89514	66c2	Seriously?
 89534	c94b	You're nicer than you look.
-89566	343b	In that case,\nthis, this and that as well,
+89566	343b	In that case,\nthis, that and the other too,
 89594	f48e	while you're at it!
 89622	9075	What, all this?!
 89640	fed6	Heh heh.\nFor your adorable kohai.
 89668	5526	Pretty please!
-89694	d4e1	Okay, let's get to work.
+89694	d4e1	Okay! Time to dig in.
 89722	b307	Heave-ho.
 89784	c989	Phew, done.
 89802	45c2	That's my senpai!
 89818	e7ed	You really saved me.
 89846	3a33	Gods, Buddha, 
-89862	a8f8	-sama!\nThat's what they mean.
+89862	a8f8	-sama!\nJust like the saying goes.
 89886	7d7f	Same again next time, please!
 89914	62ee	Hey, now.
-89928	3c0d	Give me a break next time.
+89928	3c0d	Next time, spare me.
 90020	127d	, is it.
 90030	9df1	You are working hard, I see.
 90084	92c1	Ow ow ow...
@@ -2894,16 +2894,16 @@
 90318	8088	S-senpai,
 90332	cb85	please stop, it's embarrassing!
 90364	4690	Oh, sorry.
-90380	1c84	I thought it'd help.
+90380	1c84	I thought it was good, though.
 90482	597b	Senpaaai!
 90502	099e	Hm? What is it, Maruo?
 90518	4faa	Heh heh heh.
-90532	89cb	Found a rather good book.
+90532	89cb	Found a really good book.
 90564	279f	A good book?
 90580	c24f	Senpai, you're not picturing
 90602	c5c5	something dirty, are you?
 90626	5b8d	Huh?
-90640	e5b8	Wrong.
+90640	e5b8	Nope, not that.
 90654	b84b	Today it's this!
 90674	5003	Lives of the Baseball Greats
 90688	e473	!
@@ -2922,17 +2922,17 @@
 91092	6638	That's the one!
 91110	a79c	So today, once again, we copy
 91128	3090	the methods of the greats.
-91160	7263	OK!
+91160	7263	Okay!
 91188	4b07	Let's see.
 91204	9d59	What'll it be today?
 91234	470c	(Flip, flip...)
 91272	d81d	Th-this is...!
 91324	973a	!!
 91348	159f	I see!
-91362	ecc1	This looks like it might work.
-91392	0391	Okay, let's begin!
+91362	ecc1	This could really work.
+91392	0391	Okay, here we go!
 91424	a3f6	Let's start right away!\n
-91446	c59c	On second thoughts, maybe not...
+91446	c59c	Actually, maybe not...
 91496	9fa5	Okay,
 91508	3389	let's do this!
 91538	e2b9	・
@@ -2948,15 +2948,15 @@
 91842	bf4c	A-are you all right,
 91862	b91d	senpai?!
 91876	82dd	Yeah, more or less...
-91902	f99a	Let's call it
-91918	4dfe	a day there.
+91902	f99a	Let's leave it
+91918	4dfe	at that for today.
 91952	72b5	I hurt myself.
 91996	5b8d	Huh?
 92006	3e76	You're not doing it, senpai?
-92032	92eb	No.\nI've got a bad feeling.
+92032	92eb	Nah.\nI've got a bad feeling about it.
 92062	218a	I'll sit this one out.
 92088	ee1b	Oh, right.
-92104	acd8	What a shame.
+92104	acd8	What a shame...
 92120	bf2a	I decided to rest today.
 92188	38f9	 Oil Bath Training
 92224	57e4	 Beehive Dash Training
@@ -3000,7 +3000,7 @@
 94424	43af	I see. That's a shame.
 94448	ef18	Can't be helped if you're tired.
 94472	28e3	Give that shoulder a good rest.
-94502	8b92	Yes.
+94502	8b92	Yes, sir.
 94558	8b5a	(Zip!)
 94582	c3c7	(Swerve)
 94604	3c78	(Smack!)
@@ -3033,7 +3033,7 @@
 95352	43af	I see. That's a shame.
 95376	ef18	Can't be helped if you're tired.
 95400	28e3	Give that shoulder a good rest.
-95430	8b92	Yes.
+95430	8b92	Yes, sir.
 95482	dc05	(Siiiiiiilence)
 95512	8b5a	(Zip!)
 95532	3c78	(Smack!)
@@ -3063,7 +3063,7 @@
 96184	43af	I see. That's a shame.
 96208	ef18	Can't be helped if you're tired.
 96232	28e3	Give that shoulder a good rest.
-96262	8b92	Yes.
+96262	8b92	Yes, sir.
 96446	8b5a	(Zip!)
 96470	8b5a	(Zip!)
 96494	8b5a	(Zip!)
@@ -3078,50 +3078,50 @@
 96666	39c6	I want to master breaking balls
 96688	643f	I want to throw faster
 96714	b616	I get tired easily these days...
-96784	cc62	Control, eh?\nThat's something I'm good at.
-96820	0e3d	I'll take a look at your pitching.
+96784	cc62	Control, eh?\nNow that I'm pretty good at.
+96820	0e3d	Let me watch you pitch a bit.
 96852	a8ec	Thank you very much!
-96884	117f	After that, Todoroki-senpai
+96884	117f	Todoroki-senpai stuck with me and
 96912	95bf	taught me the ABCs of pitching.
 96960	395f	Mm-hm.
 96974	0124	I'd say that's a lot better.
 97010	4c94	I feel like I got a bit better.
-97116	4ce0	Breaking balls, eh?\nUse them well and you're
-97150	fecd	an oni with an iron club.
+97116	4ce0	Breaking balls, eh?\nMaster those, and you'll be
+97150	fecd	downright unstoppable.
 97170	587a	All right.
-97184	d89e	I'll take a look, if I'll do.
+97184	d89e	I'll take a look, if you like.
 97212	a8ec	Thank you very much!
-97244	117f	After that, Todoroki-senpai
+97244	117f	Todoroki-senpai stuck with me and
 97272	95bf	taught me the ABCs of pitching.
 97320	395f	Mm-hm.
 97334	0124	I'd say that's a lot better.
 97370	4c94	I feel like I got a bit better.
-97476	f01d	A faster ball, eh?\nTrue, if you can throw hard,
+97476	f01d	Velocity, eh?\nTrue, if you can throw hard,
 97518	fb00	there's no better weapon.
 97552	587a	All right.
-97566	d89e	I'll take a look, if I'll do.
+97566	d89e	I'll take a look, if you like.
 97594	a8ec	Thank you very much!
-97626	117f	After that, Todoroki-senpai
+97626	117f	Todoroki-senpai stuck with me and
 97654	95bf	taught me the ABCs of pitching.
 97702	395f	Mm-hm.
 97716	0124	I'd say that's a lot better.
 97752	4c94	I feel like I got a bit better.
-97852	d088	Getting tired easily... huh.
-97880	df1f	You're not that old yet.
-97914	cf17	Are you resting before you train?
-97946	a403	If vitality's still short...
+97852	d088	Tiring out easily... huh.
+97880	df1f	You're too young for that.
+97914	cf17	Do you rest up before practice?
+97946	a403	If you're still low on vitality...
 97980	6481	use Pawarin and other items,\nand keep an eye on your
-98030	32ed	vitality at all times.
+98030	32ed	vitality. That might help.
 98052	3166	Now, let me see...
-98140	7605	Here we are!\nTake this.
+98140	7605	Here it is, here it is!\nTake this.
 98168	1d27	Drink it when you're tired.
-98198	548e	It's Pawarin!
-98216	0174	Thank you very much!
+98198	548e	Whoa, Pawarin!
+98216	0174	Thaaank you very much!
 98284	594e	Huh? Sorry.\nLooks like I didn't bring
 98316	a1b4	any Pawarin today.
 98348	57f7	Anyway, when you're tired,
-98374	cba7	get some real rest!
-98396	8b92	Yes.
+98374	cba7	make sure you rest up!
+98396	8b92	Yes, sir.
 98446	18e5	(Whoosh!)
 98470	18e5	(Whoosh!)
 98494	18e5	(Whoosh!)
@@ -3133,73 +3133,73 @@
 98606	5d7f	Todoroki-senpai!
 98622	38f5	Well, actually...
 98642	e547	I want to make better contact
-98670	578a	I want to hit the ball further
+98670	578a	I want to hit the ball farther
 98692	4256	I want to fix my weak spots
 98710	bff8	I get tired easily these days...
 98776	d419	Better contact, eh?\nTrue, a batter who can hit
-98824	50bf	anything scares any pitcher.
-98852	fa36	Okay. If I'll do,\nI can pitch batting practice
-98892	ddcd	for you.
+98824	50bf	anything is a pitcher's nightmare.
+98852	fa36	Okay, if you want,\nI can throw you some
+98892	ddcd	batting practice.
 98918	a8ec	Thank you very much!
-98950	2bfb	After that, Todoroki-senpai
-98980	df49	helped me learn to hit.
+98950	2bfb	Todoroki-senpai worked with me
+98980	df49	on my hitting technique.
 99020	395f	Mm-hm.
 99034	0124	I'd say that's a lot better.
 99070	4c94	I feel like I got a bit better.
 99172	8e2a	Distance, eh?
-99190	788c	True, sending one a long way\nis about the best feeling
-99234	ce11	a batter can have.
-99266	fa36	Okay. If I'll do,\nI can pitch batting practice
-99306	ddcd	for you.
+99190	788c	True, for a batter, nothing\nfeels quite as good as
+99234	ce11	launching one deep.
+99266	fa36	Okay, if you want,\nI can throw you some
+99306	ddcd	batting practice.
 99332	a8ec	Thank you very much!
-99364	2bfb	After that, Todoroki-senpai
-99394	df49	helped me learn to hit.
+99364	2bfb	Todoroki-senpai worked with me
+99394	df49	on my hitting technique.
 99434	395f	Mm-hm.
 99448	0124	I'd say that's a lot better.
 99484	4c94	I feel like I got a bit better.
-99576	a570	Fix your weak spots... huh.\nTrue, a weakness hurts, because
-99616	155b	that's where they'll attack.
-99650	c2d2	Either way, the only answer
-99666	6751	is practice...
-99698	f9ad	Right...
-99712	fa36	Okay. If I'll do,\nI can pitch batting practice
-99752	ddcd	for you.
+99576	a570	Fix your weak spots... huh.\nSure, a weak spot hurts, since
+99616	155b	that's where they'll go after you.
+99650	c2d2	When all's said and done, there's
+99666	6751	nothing for it but practice...
+99698	f9ad	Er... right.
+99712	fa36	Okay, if you want,\nI can throw you some
+99752	ddcd	batting practice.
 99778	a8ec	Thank you very much!
-99810	2bfb	After that, Todoroki-senpai
-99840	df49	helped me learn to hit.
+99810	2bfb	Todoroki-senpai worked with me
+99840	df49	on my hitting technique.
 99880	395f	Mm-hm.
 99894	0124	I'd say that's a lot better.
 99930	4c94	I feel like I got a bit better.
 100176	f393	Now then,
-100186	f444	let's watch practice again today.
+100186	f444	time to watch practice again.
 100218	a012	(Staaare)
 100240	cbbe	Urk.
-100250	c9d6	I can feel someone's eyes on me...
+100250	c9d6	I can feel a burning stare...
 100286	0928	Ah!
 100296	9d4b	That's Kageyama-san, the scout?!
 100328	61ab	Here's my chance to show\nwhat I can do!
-100362	3c81	Okay, let's give it everything!
-100404	9a37	Okay, I nailed it today.\nWell, Kageyama-san?!
+100362	3c81	Okay! Time to give it everything!
+100404	9a37	Okay, nailed it today!\nWhat do you think, Kageyama-san?
 100462	b047	How was my batting?
 100488	2da1	How was my pitching?
-100522	001d	Todoroki-kun, as good as ever.\nEvery time I watch,
-100550	5e45	that control never wavers.
+100522	001d	That's Todoroki-kun for you.\nEvery time I watch him,
+100550	5e45	his control never wavers.
 100578	14bc	A captain who leads his team,
 100608	2a15	and a fine pitcher... hm.
 100630	0f69	A strong prospect, this one.
-100652	af48	Let me just make a note...
+100652	af48	Let me jot that down... jot, jot.
 100682	ae84	Ugh...
-100694	c9a1	He's not looking at me at all...
+100694	c9a1	He's not even looking at me...
 100722	84e1	Todoroki-senpai's scout rating\nwent up.
 100842	cb94	Hey!
 100854	88b3	Let's practice together!
-100880	7263	OK!
-100904	c105	Those two are always together.
+100880	7263	Okay!
+100904	c105	Those guys sure get along.
 100932	ba4b	They were at it yesterday too.
 100970	9087	For all the world like a
 100992	ecc7	lovey-dovey newlywed couple!
 101022	dae7	Ha ha ha.\nNothing wrong with that.
-101048	c691	Lovey-dovey is fine.
+101048	c691	Lovey-dovey's just fine.
 101072	bc25	Captain!
 101092	230b	Do things together and
 101112	d38f	you grow closer,
@@ -3208,20 +3208,20 @@
 101202	7f1b	Is that how it works, I wonder.
 101230	2162	Well, don't be picky.\nTry practicing with all sorts
 101274	e4a8	of people. That's my advice.
-101298	8b92	Yes.
+101298	8b92	Yes, sir!
 101308	1ab3	Yes indeed!
 101376	9d75	Debug message!
 101398	496a	Make this follow on from\n"And time went by..."!
 101442	f9e1	When coming here after an injury,\ninsert "My injury healed..."!
 101544	d29d	Ah, all that work was worth it...
-101584	e7a8	Hurraaay!
+101584	e7a8	Yes indeeeed!
 101604	d84d	Y-Yabe-kun!
-101624	a68d	My contract is renewed too!\nYours truly has done it!
+101624	a68d	My contract's been renewed too!\nYours truly did it!
 101672	abff	What, you too, Yabe-kun?!
-101694	454d	That's great!!
-101714	b93d	I am glad I kept the faith.\nNext year, let us do it together!
-101776	a2da	Let's never forget this feeling!\nHard work doesn't let you down.\nGood things are waiting for us!
-101850	ce29	You are full of drive, I see...
+101694	454d	Thank goodness!!
+101714	b93d	So glad I kept the faith.\nLet us do our best next year too!
+101776	a2da	Let's never forget this feeling!\nHard work never betrays you.\nGood things are waiting for us!
+101850	ce29	Brimming with drive, I see...
 101882	f675	Yours truly won't be outdone!
 101914	9f35	...Neither will I!
 101980	660c	Me, going pro...
