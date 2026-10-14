@@ -5,7 +5,7 @@
    "bank": "y3_fa",
    "palette": 4,
    "style": "fa_label",
-   "font": "dc12g2b0",
+   "font": "dc11g1b0",
    "under": 4,
    "areas": [
     [
@@ -63,6 +63,13 @@
      48,
      128,
      72
+    ],
+    [
+     1,
+     0,
+     0,
+     72,
+     80
     ],
     [
      3,
@@ -146,8 +153,8 @@
      ],
      "text": "Choose Team",
      "style": "fa_head",
-     "font": "dc17g2b10",
-     "left": -41,
+     "font": "dc16g1b0",
+     "left": -37,
      "baseline": 22
     },
     {
@@ -160,7 +167,7 @@
      ],
      "text": "Status",
      "style": "fa_label",
-     "font": "dc12g2b0",
+     "font": "dc11g1b0",
      "under": 4
     },
     {
@@ -173,7 +180,7 @@
      ],
      "text": "Salary",
      "style": "fa_label",
-     "font": "dc12g2b0",
+     "font": "dc11g1b0",
      "under": 4
     },
     {
@@ -186,7 +193,7 @@
      ],
      "text": "Number",
      "style": "fa_label",
-     "font": "dc12g2b0",
+     "font": "dc11g1b0",
      "under": 4
     },
     {
@@ -199,7 +206,7 @@
      ],
      "text": "00M",
      "style": "fa_label",
-     "font": "dc11g2b0",
+     "font": "dc11g1b0",
      "under": 4
     },
     {
@@ -212,7 +219,7 @@
      ],
      "text": "0K yen",
      "style": "fa_label",
-     "font": "dc11g2b0",
+     "font": "dc11g1b0",
      "under": 4
     },
     {
@@ -225,8 +232,22 @@
      ],
      "text": "yen",
      "style": "fa_label",
-     "font": "dc11g2b0",
+     "font": "dc11g1b0",
      "under": 4
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      72,
+      80
+     ],
+     "text": "x",
+     "style": "fa_offerleft",
+     "font": "dc15g1b0",
+     "left": 0,
+     "baseline": 0
     },
     {
      "from": [
@@ -238,7 +259,7 @@
      ],
      "text": "Offer",
      "style": "fa_offer",
-     "font": "dc15g2b10",
+     "font": "dc15g1b0",
      "left": 0,
      "baseline": 0
     },
@@ -252,7 +273,7 @@
      ],
      "text": "Select a team to",
      "style": "fa_prompt",
-     "font": "dc15g2b10",
+     "font": "dc15g1b0",
      "left": 1,
      "baseline": 21
     },
@@ -266,8 +287,8 @@
      ],
      "text": "sign with.",
      "style": "fa_prompt",
-     "font": "dc15g2b10",
-     "left": 0,
+     "font": "dc15g1b0",
+     "left": -7,
      "baseline": 21
     },
     {
@@ -290,9 +311,9 @@
      ],
      "text": "Is this team OK?",
      "style": "fa_ask",
-     "font": "dc16g2b10",
-     "left": 55,
-     "baseline": 57,
+     "font": "dc15g1b0",
+     "left": 65,
+     "baseline": 25,
      "under": 5
     },
     {
@@ -315,7 +336,7 @@
      ],
      "text": "Yes",
      "style": "fa_ask",
-     "font": "dc16g2b10",
+     "font": "dc16g1b0",
      "under": 5
     },
     {
@@ -328,7 +349,7 @@
      ],
      "text": "No",
      "style": "fa_ask",
-     "font": "dc16g2b10",
+     "font": "dc16g1b0",
      "under": 5
     }
    ],

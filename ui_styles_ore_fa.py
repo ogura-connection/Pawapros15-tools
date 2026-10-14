@@ -69,15 +69,25 @@ def _old_plate():
     return _PLATE["p"].copy()
 
 
-def offerplate(fill, rings, cx=29, cy=18):
-    """The old 72x32 plate with its lettering (columns 0-58, rows 6-28) painted over with the colour of the plate
-    (pale 'e' down to row 25, 'd' below) and the English centred at (cx, cy). Use with "left": 0, "baseline": 0."""
+def _bg(r, c):
+    """Plate colour at row r, column c of the 条件提示 band: pale 'e' (14) to row 15, a dither of e / d (13) from 16 to
+    22, 'd' below."""
+    if r <= 15 or r == 17:
+        return 14
+    return {16: 14 if c % 2 == 0 else 13, 18: 13 if c % 2 == 0 else 14, 19: 14 if c % 2 == 0 else 13,
+            20: 13 if c % 2 == 0 else 14, 22: 14 if c % 2 == 0 else 13}.get(r, 13)
+
+
+def offerplate(fill, rings, cx=27, cy=18):
+    """The old 72x32 plate with its lettering (columns 0-58, rows 6-28) painted over with the plate colours and the
+    English centred at (cx, cy). Use with "left": 0, "baseline": 0."""
     inner = crisp(fill, rings)
 
     def style(ink, base):
         pic = _old_plate()
         for r in range(6, 29):
-            pic[r, 0:59] = 14 if r <= 25 else 13
+            for c in range(0, 59):
+                pic[r, c] = _bg(r, c)
         art, b = inner(ink, base)
         h, w = art.shape
         x, y = cx - w // 2, cy - h // 2
@@ -87,4 +97,19 @@ def offerplate(fill, rings, cx=29, cy=18):
     return style
 
 
+def offerleft(ink, base):
+    """Page 1 rect (0,0,72,80) of y3_fa: the plate end, with the right edge of the 条 painted out (columns 62-71, rows 8-28)."""
+    path = os.path.join(_U.ORIG_ARC_DIR, "ore_fa.arc")
+    if not os.path.exists(path):
+        path = os.path.join(_S.DATA_FILES, "ore_fa.arc")
+    d = open(path, "rb").read()
+    b = next(x for x in _U.banks(d, _U.elf_symbols(d)) if x["name"] == "y3_fa")
+    pic = _U.decode_indices(d, *b["pages"][1])[0:80, 0:72].copy()
+    for r in range(8, 29):
+        for c in range(62, 72):
+            pic[r, c] = _bg(r, c)
+    return pic, 0
+
+
 STYLES["fa_offer"] = offerplate(15, [3, 3])
+STYLES["fa_offerleft"] = offerleft

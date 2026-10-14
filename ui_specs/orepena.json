@@ -8470,20 +8470,6 @@
      128
     ],
     [
-     13,
-     0,
-     48,
-     128,
-     128
-    ],
-    [
-     13,
-     0,
-     0,
-     128,
-     24
-    ],
-    [
      14,
      112,
      0,
@@ -8856,7 +8842,7 @@
       "2d"
      ],
      "text": "Trade",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": 8,
      "baseline": 38
@@ -8873,7 +8859,7 @@
       "2d"
      ],
      "text": "News",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": -23,
      "baseline": 38
@@ -8903,7 +8889,7 @@
       "2e"
      ],
      "text": "News",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": -7,
      "baseline": 38
@@ -8920,7 +8906,7 @@
       "2f"
      ],
      "text": "Japan",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": 17,
      "baseline": 37
@@ -8937,7 +8923,7 @@
       "2f"
      ],
      "text": "Series",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": -17,
      "baseline": 37
@@ -8954,7 +8940,7 @@
       "2f"
      ],
      "text": "MVP",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": 19,
      "baseline": 37
@@ -8971,7 +8957,7 @@
       "2f"
      ],
      "text": "Points",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": -40,
      "baseline": 37
@@ -8988,7 +8974,7 @@
       "30"
      ],
      "text": "Season",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": 28,
      "baseline": 37
@@ -9005,7 +8991,7 @@
       "30"
      ],
      "text": "MVP",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": 6,
      "baseline": 37
@@ -9022,7 +9008,7 @@
       "30"
      ],
      "text": "Points",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": -53,
      "baseline": 37
@@ -9039,7 +9025,7 @@
       "31"
      ],
      "text": "Rookie",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": -4,
      "baseline": 37
@@ -9056,7 +9042,7 @@
       "31"
      ],
      "text": "Race",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds26",
      "left": -30,
      "baseline": 37
@@ -9073,7 +9059,7 @@
       "32"
      ],
      "text": "New",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds23",
      "left": 1,
      "baseline": 35
@@ -9090,7 +9076,7 @@
       "32"
      ],
      "text": "Import",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds23",
      "left": 29,
      "baseline": 35
@@ -9107,7 +9093,7 @@
       "32"
      ],
      "text": "Ratings",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds23",
      "left": -7,
      "baseline": 35
@@ -9124,7 +9110,7 @@
       "46"
      ],
      "text": "Monthly",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds20",
      "left": -6,
      "baseline": 33
@@ -9141,7 +9127,7 @@
       "46"
      ],
      "text": "Growth",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds20",
      "left": -38,
      "baseline": 33
@@ -9158,7 +9144,7 @@
       "47"
      ],
      "text": "Monthly",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds18",
      "left": -19,
      "baseline": 33
@@ -9201,7 +9187,7 @@
       "47"
      ],
      "text": "Forecast",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds18",
      "left": 1,
      "baseline": 33
@@ -9218,7 +9204,7 @@
       "48"
      ],
      "text": "Monthly",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds21",
      "left": -20,
      "baseline": 35
@@ -9261,7 +9247,7 @@
       "48"
      ],
      "text": "Winner",
-     "style": "o2_f4b_rbbff_s1_c2",
+     "style": "o2_fb_rbbff_s1_c2",
      "font": "ds21",
      "left": 10,
      "baseline": 35

@@ -76,3 +76,59 @@ def solid_grad(fills, rings, cut=3):
 
 # y4_ind_0 ribbon (palette 1, grey ramp): white to light grey top to bottom, black ring
 STYLES["gdo_ribbon"] = solid_grad([13, 12, 11, 10, 10, 9], [1, 1, 1], cut=3)
+
+# ---- letters on plates: styles written by _work/ui_pages/gen_gdt_ore_spec.py to ui_specs/gdt_ore_styles.json
+# {name: {"kind": "pill", "bank", "rect": [page, x0, y0, x1, y1], "ref": column, "erase": [c0, c1], "fill", "rings", "cx", "baseline"}}
+# pill: the old picture of the rectangle with the columns erase[0]..erase[1] set to what column `ref` shows (a clean piece of the
+# plate; the lettering and its shadow above and below are gone) and the English drawn over it; the picture is the label's art.
+# {"kind": "badge", ... "box": [x0, y0, x1, y1], "colour"}: the box of the picture painted with one colour, the English over it.
+import json as _json
+import os as _os
+
+_OLD = {}
+
+
+def _old_page(bank, pg):
+    if "d" not in _OLD:
+        p = _os.path.join(_U.ORIG_ARC_DIR, "gdt_ore.arc")
+        if not _os.path.exists(p):
+            p = _os.path.join(_U.S.DATA_FILES, "gdt_ore.arc")
+        _OLD["d"] = open(p, "rb").read()
+        _OLD["b"] = {x["name"]: x for x in _U.banks(_OLD["d"], _U.elf_symbols(_OLD["d"]))}
+    return _U.decode_indices(_OLD["d"], *_OLD["b"][bank]["pages"][pg])
+
+
+def _make(v):
+    inner = solid(v["fill"], v["rings"], v.get("shadow", 0), v.get("cut", 3))
+
+    def style(ink, base):
+        pg, x0, y0, x1, y1 = v["rect"]
+        pic = _old_page(v["bank"], pg)[y0:y1, x0:x1].copy()
+        if v["kind"] == "pill":
+            c0, c1 = v["erase"]
+            pic[:, c0:c1] = pic[:, v["ref"]][:, None]
+        else:
+            bx0, by0, bx1, by1 = v["box"]
+            pic[by0:by1, bx0:bx1] = v["colour"]
+        art, b = inner(ink, base)
+        h, w = art.shape
+        x = v["cx"] - w // 2
+        y = v["baseline"] - b
+        ys0, xs0 = max(y, 0), max(x, 0)
+        sub = art[ys0 - y:, xs0 - x:][:pic.shape[0] - ys0, :pic.shape[1] - xs0]
+        area = pic[ys0:ys0 + sub.shape[0], xs0:xs0 + sub.shape[1]]
+        area[sub > 0] = sub[sub > 0]
+        return pic, 0
+    return style
+
+
+def _load():
+    path = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "ui_specs", "gdt_ore_styles.json")
+    out = {}
+    if _os.path.exists(path):
+        for name, v in _json.load(open(path)).items():
+            out[name] = _make(v)
+    return out
+
+
+STYLES.update(_load())
