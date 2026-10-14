@@ -645,6 +645,25 @@ def boxed(ramp, pad=(3, 4), size=(0, 0), rim=None):
     return style
 
 
+def dropped(ramp, shadow):
+    """A style: letters drawn with `ramp` and nothing round them but a `shadow` (near to far, one pixel a
+    colour) cast below and to the right."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        h, w = ink.shape
+        depth = len(shadow)
+        big = np.zeros((h + depth, w + depth), int)
+        big[:h, :w] = ink
+        letters = big > 0
+        out = np.zeros(big.shape, np.uint8)
+        for k in range(depth, 0, -1):
+            out[shift(letters, k, k) | shift(letters, k, k - 1) | shift(letters, k - 1, k)] = shadow[k - 1]
+        out[letters] = ramp[big[letters]]
+        return out, base
+    return style
+
+
 def logo(fill, soft, outline, white, rim, shadow, band=2, thick=1):
     """A style: the shop titles. Letters filled from `fill`[0] at the top to `fill`[-1] at the foot (`soft` =
     the colours between outline and fill), an `outline` `thick` pixels wide, a white band `band` pixels wide
@@ -838,6 +857,10 @@ RENDER = {
     # letters in thick navy (2)
     "albumclear": banded([0, 9, 8, 6, 4, 2, 1], [10, 10, 12, 14, 15]),
     "albummovie": banded([0, 6, 8, 10, 12, 14, 15], [3, 3, 3]),
+    # the profile screens (scs_make.arc, y5_cmk_0): headings, cream shading from orange in a thick blue outline
+    # with a lilac rim (palette 30); the lists, dark grey letters with a pale shadow (26)
+    "makehead": logo([9, 9, 10, 11, 12], [5], 1, 1, 14, [], 1, 2),
+    "makeitem": dropped([0, 11, 11, 13, 13, 15, 15], [7, 5]),
 }
 
 
