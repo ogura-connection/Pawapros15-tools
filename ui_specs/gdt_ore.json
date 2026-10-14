@@ -73,7 +73,14 @@
      0,
      72,
      64,
-     96
+     128
+    ],
+    [
+     2,
+     64,
+     96,
+     88,
+     128
     ]
    ],
    "labels": [
@@ -454,6 +461,680 @@
      "font": "ttf:din:12:0:1:0.0",
      "left": -4,
      "baseline": 19
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      88,
+      128
+     ],
+     "text": "First Duel",
+     "style": "gdo_big",
+     "font": "ttf:din:20:0:1:0.3"
+    }
+   ]
+  },
+  {
+   "bank": "y3_sb",
+   "palette": 0,
+   "style": "gdo_white1",
+   "font": "ttf:din:15:0:1:0.0",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     0,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     1,
+     0,
+     0,
+     104,
+     48
+    ],
+    [
+     1,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     1,
+     104,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     112,
+     24,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Walk him here!",
+     "style": "gdo_white1",
+     "font": "ttf:din:15:0:1:0.0",
+     "left": 21,
+     "baseline": 19,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      88,
+      96,
+      96,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "Load the bases!",
+     "style": "gdo_white1",
+     "font": "ttf:din:15:0:1:0.0",
+     "left": 19,
+     "baseline": 19,
+     "sprites": [
+      "05"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      128,
+      72
+     ],
+     "text": "Bunt here!",
+     "style": "gdo_white1",
+     "font": "ttf:din:15:0:1:0.0",
+     "left": 37,
+     "baseline": 19,
+     "sprites": [
+      "06"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      72,
+      128,
+      96
+     ],
+     "text": "Aim to the right!",
+     "style": "gdo_white1",
+     "font": "ttf:din:15:0:1:0.0",
+     "left": 8,
+     "baseline": 19,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      88,
+      120
+     ],
+     "text": "Pull it!",
+     "style": "gdo_white1",
+     "font": "ttf:din:15:0:1:0.0",
+     "left": 23,
+     "baseline": 19,
+     "sprites": [
+      "08"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Hit and run!",
+     "style": "gdo_white1",
+     "font": "ttf:din:15:0:1:0.0",
+     "left": 33,
+     "baseline": 19,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      1,
+      112,
+      24,
+      128,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      104,
+      48
+     ],
+     "text": "Squeeze play!",
+     "style": "gdo_white1",
+     "font": "ttf:din:15:0:1:0.0",
+     "left": 7,
+     "baseline": 19,
+     "sprites": [
+      "0a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      104,
+      128,
+      128
+     ],
+     "text": "Double steal!",
+     "style": "gdo_white1",
+     "font": "ttf:din:15:0:1:0.0",
+     "left": 27,
+     "baseline": 19,
+     "sprites": [
+      "0b"
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "y3_ss",
+   "palette": 0,
+   "style": "gdo_cyan",
+   "font": "ttf:din:12:0:1:0.0",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     0,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     0,
+     104,
+     96,
+     128,
+     120
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      120,
+      24
+     ],
+     "text": "Injury: No Power Swing",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": -6,
+     "baseline": 18,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "Injury: Can't Bat Left",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": 14,
+     "baseline": 17,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      0,
+      120,
+      0,
+      128,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      128,
+      72
+     ],
+     "text": "Injury: Can't Bat Right",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": 9,
+     "baseline": 17,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      1,
+      120,
+      24,
+      128,
+      48
+     ],
+     "empty": true,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "First Pro At-Bat",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": -10,
+     "baseline": 18,
+     "sprites": [
+      "03"
+     ]
+    },
+    {
+     "from": [
+      0,
+      64,
+      72,
+      128,
+      96
+     ],
+     "text": "First Pro Lineup Spot",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": -14,
+     "baseline": 18,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      104,
+      96,
+      128,
+      120
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      96,
+      120
+     ],
+     "text": "Last Pro At-Bat",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": 2,
+     "baseline": 18,
+     "sprites": [
+      "05"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      24
+     ],
+     "text": "Pro Pitching Debut",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": -18,
+     "baseline": 18,
+     "sprites": [
+      "06"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      128,
+      24
+     ],
+     "text": "First Pro Start",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": -6,
+     "baseline": 18,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      120,
+      48
+     ],
+     "text": "Last Pro Mound",
+     "style": "gdo_cyan",
+     "font": "ttf:din:12:0.18:1:0.1",
+     "left": 14,
+     "baseline": 18,
+     "sprites": [
+      "08"
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "y4_ind_0",
+   "palette": 0,
+   "style": "gdo_dream",
+   "font": "ttf:rounded:36:0:1:0.0",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     112,
+     72
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     72
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      56,
+      72
+     ],
+     "text": "Thank",
+     "style": "gdo_dream",
+     "font": "ttf:rounded:36:0:0.95:0.4",
+     "left": -120,
+     "baseline": 55
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      48,
+      72
+     ],
+     "text": "you",
+     "style": "gdo_dream",
+     "font": "ttf:rounded:36:0:0.95:0.4",
+     "left": -15,
+     "baseline": 55
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      48,
+      72
+     ],
+     "text": "for",
+     "style": "gdo_dream",
+     "font": "ttf:rounded:36:0:0.95:0.4",
+     "left": 39,
+     "baseline": 55
+    },
+    {
+     "from": [
+      1,
+      48,
+      0,
+      88,
+      72
+     ],
+     "text": "the",
+     "style": "gdo_dream",
+     "font": "ttf:rounded:36:0:0.95:0.4",
+     "left": 78,
+     "baseline": 55
+    },
+    {
+     "from": [
+      0,
+      56,
+      0,
+      112,
+      72
+     ],
+     "text": "dream",
+     "style": "gdo_dream",
+     "font": "ttf:rounded:36:0:0.95:0.4",
+     "left": 131,
+     "baseline": 55
+    },
+    {
+     "from": [
+      2,
+      48,
+      0,
+      96,
+      72
+     ],
+     "text": "!",
+     "style": "gdo_dream",
+     "font": "ttf:rounded:36:0:0.95:0.4",
+     "left": 229,
+     "baseline": 55
+    },
+    {
+     "from": [
+      1,
+      88,
+      0,
+      128,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      96,
+      0,
+      128,
+      72
+     ],
+     "empty": true
+    }
+   ]
+  },
+  {
+   "bank": "y4_ind_0",
+   "palette": 1,
+   "style": "gdo_ribbon",
+   "font": "ttf:rounded:31:0:1:0.0",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     0,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     80,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      80,
+      128,
+      128
+     ],
+     "text": "Great Work",
+     "style": "gdo_ribbon",
+     "font": "ttf:rounded:31:0:0.95:0.4",
+     "left": -20,
+     "baseline": 38
+    },
+    {
+     "from": [
+      1,
+      0,
+      80,
+      128,
+      128
+     ],
+     "text": "This Year",
+     "style": "gdo_ribbon",
+     "font": "ttf:rounded:31:0:0.95:0.4",
+     "left": 89,
+     "baseline": 38
+    },
+    {
+     "from": [
+      2,
+      0,
+      80,
+      128,
+      128
+     ],
+     "empty": true
     }
    ]
   }
