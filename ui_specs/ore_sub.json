@@ -2305,7 +2305,7 @@
      ],
      "text": "Since 2008",
      "style": "o2pink",
-     "font": "ttf:rounded:13:0:1:0.3",
+     "font": "ttf:rounded:11:0:1:0.3",
      "left": 0,
      "sprites": [
       "28"
@@ -2331,8 +2331,8 @@
      ],
      "text": "Titles & Records",
      "style": "o2pink",
-     "font": "ttf:rounded:13:0:1:0.3",
-     "left": -47,
+     "font": "ttf:rounded:11:0:1:0.3",
+     "left": -61,
      "sprites": [
       "28"
      ]
@@ -2469,9 +2469,9 @@
     },
     {
      "sprite": "32",
-     "text": "Clear Capacity",
+     "text": "Clear",
      "style": "o2mini",
-     "font": "ttf:din:7:0:1:0",
+     "font": "ttf:din:11:0:1:0",
      "valign": "centre"
     },
     {
