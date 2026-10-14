@@ -161,5 +161,47 @@
   ],
   "shadow": 0,
   "cut": 2
+ },
+ "o2_f8_r8_s0_c2": {
+  "fills": [
+   8
+  ],
+  "rings": [
+   8
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
+ "o2_f8_r8_s0_c1": {
+  "fills": [
+   8
+  ],
+  "rings": [
+   8
+  ],
+  "shadow": 0,
+  "cut": 1
+ },
+ "o2_ff_r88_s0_c2": {
+  "fills": [
+   15
+  ],
+  "rings": [
+   8,
+   8
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
+ "o2_ff_r88_s0_c1": {
+  "fills": [
+   15
+  ],
+  "rings": [
+   8,
+   8
+  ],
+  "shadow": 0,
+  "cut": 1
  }
 }

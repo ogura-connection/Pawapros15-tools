@@ -10034,9 +10034,9 @@
      ],
      "text": "Fix SO",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 11,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 13,
+     "baseline": 19
     },
     {
      "from": [
@@ -10081,9 +10081,9 @@
      ],
      "text": "Fix BB",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 11,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 13,
+     "baseline": 19
     },
     {
      "from": [
@@ -10098,9 +10098,9 @@
      ],
      "text": "Fix HR",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 11,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 13,
+     "baseline": 18
     },
     {
      "from": [
@@ -10128,9 +10128,9 @@
      ],
      "text": "Fix Choke",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc15g2b10",
+     "font": "dc14g2b10",
      "left": -1,
-     "baseline": 20
+     "baseline": 19
     },
     {
      "from": [
@@ -10175,9 +10175,9 @@
      ],
      "text": "Gusto",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 9,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 12,
+     "baseline": 19
     },
     {
      "from": [
@@ -10209,7 +10209,7 @@
      ],
      "text": "Spin Fix",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc15g2b10",
+     "font": "dc14g2b10",
      "left": 5,
      "baseline": 20
     },
@@ -10239,9 +10239,9 @@
      ],
      "text": "Fine",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 8,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 9,
+     "baseline": 19
     },
     {
      "from": [
@@ -10256,9 +10256,9 @@
      ],
      "text": "Media",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 12,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 14,
+     "baseline": 19
     },
     {
      "from": [
@@ -10303,9 +10303,9 @@
      ],
      "text": "Referral",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": -3,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 0,
+     "baseline": 19
     },
     {
      "from": [
@@ -10350,9 +10350,9 @@
      ],
      "text": "Konbini",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 5,
-     "baseline": 19
+     "font": "dc14g2b10",
+     "left": 7,
+     "baseline": 18
     },
     {
      "from": [
@@ -10380,9 +10380,9 @@
      ],
      "text": "1-on-1",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 8,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 11,
+     "baseline": 19
     },
     {
      "from": [
@@ -10598,9 +10598,9 @@
      ],
      "text": "Dorm",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 4,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 5,
+     "baseline": 19
     },
     {
      "from": [
@@ -10645,9 +10645,9 @@
      ],
      "text": "Doctor",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 6,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 9,
+     "baseline": 18
     },
     {
      "from": [
@@ -10662,8 +10662,8 @@
      ],
      "text": "Mama",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc15g2b10",
-     "left": 1,
+     "font": "dc14g2b10",
+     "left": 3,
      "baseline": 20
     },
     {
@@ -10679,9 +10679,9 @@
      ],
      "text": "Fan Club",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": -2,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 1,
+     "baseline": 19
     },
     {
      "from": [
@@ -10696,9 +10696,9 @@
      ],
      "text": "Pawarin",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 1,
-     "baseline": 19
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 18
     },
     {
      "from": [
@@ -10786,9 +10786,9 @@
      ],
      "text": "Date",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 12,
-     "baseline": 19
+     "font": "dc14g2b10",
+     "left": 15,
+     "baseline": 18
     },
     {
      "from": [
@@ -10833,9 +10833,9 @@
      ],
      "text": "Gem",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 6,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 7,
+     "baseline": 19
     },
     {
      "from": [
@@ -10910,9 +10910,9 @@
      ],
      "text": "Bro",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 16,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 18,
+     "baseline": 19
     },
     {
      "from": [
@@ -10927,9 +10927,9 @@
      ],
      "text": "Boss",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 3,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 5,
+     "baseline": 19
     },
     {
      "from": [
@@ -11008,9 +11008,9 @@
      ],
      "text": "Mentor",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 6,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 10,
+     "baseline": 19
     },
     {
      "from": [
@@ -11025,9 +11025,9 @@
      ],
      "text": "FA Vow",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 5,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 8,
+     "baseline": 19
     },
     {
      "from": [
@@ -11072,9 +11072,9 @@
      ],
      "text": "Diet",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 18,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 20,
+     "baseline": 18
     },
     {
      "from": [
@@ -11153,9 +11153,9 @@
      ],
      "text": "Contact",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": -1,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 3,
+     "baseline": 18
     },
     {
      "from": [
@@ -11170,9 +11170,9 @@
      ],
      "text": "Power",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 6,
-     "baseline": 19
+     "font": "dc14g2b10",
+     "left": 9,
+     "baseline": 18
     },
     {
      "from": [
@@ -11268,9 +11268,9 @@
      ],
      "text": "Arm",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 7,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 9,
+     "baseline": 19
     },
     {
      "from": [
@@ -11349,9 +11349,9 @@
      ],
      "text": "Control",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 4,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 6,
+     "baseline": 19
     },
     {
      "from": [
@@ -11439,9 +11439,9 @@
      ],
      "text": "Stamina",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 2,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 18
     },
     {
      "from": [
@@ -11542,9 +11542,9 @@
      ],
      "text": "Luck Up",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc15g2b10",
-     "left": 6,
-     "baseline": 19
+     "font": "dc14g2b10",
+     "left": 7,
+     "baseline": 18
     },
     {
      "from": [
@@ -11576,9 +11576,9 @@
      ],
      "text": "Date: Iori",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc15g2b10",
+     "font": "dc14g2b10",
      "left": 0,
-     "baseline": 19
+     "baseline": 18
     },
     {
      "from": [
@@ -11670,9 +11670,9 @@
      ],
      "text": "Clinic",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 10,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 12,
+     "baseline": 19
     },
     {
      "from": [
@@ -11738,9 +11738,9 @@
      ],
      "text": "Talk",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 9,
-     "baseline": 20
+     "font": "dc14g2b10",
+     "left": 10,
+     "baseline": 19
     },
     {
      "from": [
@@ -11755,9 +11755,9 @@
      ],
      "text": "Advice",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 8,
-     "baseline": 19
+     "font": "dc14g2b10",
+     "left": 10,
+     "baseline": 18
     },
     {
      "from": [
@@ -11823,9 +11823,9 @@
      ],
      "text": "Convert",
      "style": "o2_ff_r77_s0_c2",
-     "font": "dc16g2b10",
-     "left": 1,
-     "baseline": 19
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 18
     },
     {
      "from": [
@@ -12577,6 +12577,1664 @@
      "font": "dc26g2b10",
      "left": -32,
      "baseline": 41
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "z3_nph_ore_0_opd",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     72,
+     72,
+     80
+    ],
+    [
+     1,
+     0,
+     72,
+     72,
+     80
+    ],
+    [
+     2,
+     24,
+     0,
+     96,
+     128
+    ],
+    [
+     2,
+     96,
+     0,
+     128,
+     64
+    ],
+    [
+     2,
+     0,
+     0,
+     24,
+     80
+    ],
+    [
+     2,
+     96,
+     80,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     96,
+     24,
+     128
+    ],
+    [
+     3,
+     8,
+     0,
+     120,
+     80
+    ],
+    [
+     3,
+     16,
+     80,
+     80,
+     112
+    ],
+    [
+     3,
+     120,
+     0,
+     128,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     8,
+     80
+    ],
+    [
+     3,
+     0,
+     0,
+     8,
+     16
+    ],
+    [
+     3,
+     120,
+     64,
+     128,
+     80
+    ],
+    [
+     3,
+     8,
+     80,
+     16,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      0,
+      72,
+      16
+     ],
+     "sprites": [
+      "76"
+     ],
+     "text": "Slider",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc16g2b10",
+     "left": 3,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      72,
+      0,
+      120,
+      16
+     ],
+     "sprites": [
+      "77"
+     ],
+     "text": "Curve",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc16g2b10",
+     "left": 0,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      120,
+      0,
+      128,
+      16
+     ],
+     "sprites": [
+      "78"
+     ],
+     "text": "Fork",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc15g2b10",
+     "left": 11,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      0,
+      16,
+      48,
+      32
+     ],
+     "sprites": [
+      "78"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      48,
+      16,
+      104,
+      32
+     ],
+     "sprites": [
+      "79"
+     ],
+     "text": "Sinker",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc16g2b10",
+     "left": 2,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      104,
+      16,
+      128,
+      32
+     ],
+     "sprites": [
+      "7a"
+     ],
+     "text": "Shuuto",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc16g2b10",
+     "left": -1,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      32,
+      48
+     ],
+     "sprites": [
+      "7a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      32,
+      32,
+      104,
+      48
+     ],
+     "sprites": [
+      "7b"
+     ],
+     "text": "Slow Ball",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc15g2b10",
+     "left": 0,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      104,
+      32,
+      128,
+      48
+     ],
+     "sprites": [
+      "7c"
+     ],
+     "text": "Fastball",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 5,
+     "baseline": 13
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      48,
+      64
+     ],
+     "sprites": [
+      "7c"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      48,
+      48,
+      96,
+      64
+     ],
+     "sprites": [
+      "7d"
+     ],
+     "text": "Palm",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc16g2b10",
+     "left": 4,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      96,
+      48,
+      128,
+      64
+     ],
+     "sprites": [
+      "7e"
+     ],
+     "text": "Knuckle",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc15g2b10",
+     "left": -2,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      24,
+      80
+     ],
+     "sprites": [
+      "7e"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      24,
+      64,
+      96,
+      80
+     ],
+     "sprites": [
+      "7f"
+     ],
+     "text": "V-Slider",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 5,
+     "baseline": 13
+    },
+    {
+     "from": [
+      2,
+      24,
+      80,
+      80,
+      96
+     ],
+     "sprites": [
+      "81"
+     ],
+     "text": "Screwball",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 1,
+     "baseline": 13
+    },
+    {
+     "from": [
+      2,
+      80,
+      80,
+      128,
+      96
+     ],
+     "sprites": [
+      "82"
+     ],
+     "text": "Slow Curve",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb12",
+     "left": 0,
+     "baseline": 12
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      8,
+      112
+     ],
+     "sprites": [
+      "82"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      80,
+      112
+     ],
+     "sprites": [
+      "83"
+     ],
+     "text": "Hard Slider",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb12",
+     "left": 0,
+     "baseline": 12
+    },
+    {
+     "from": [
+      2,
+      80,
+      96,
+      128,
+      112
+     ],
+     "sprites": [
+      "84"
+     ],
+     "text": "Changeup",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 0,
+     "baseline": 13
+    },
+    {
+     "from": [
+      2,
+      0,
+      112,
+      24,
+      128
+     ],
+     "sprites": [
+      "84"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      24,
+      112,
+      80,
+      128
+     ],
+     "sprites": [
+      "85"
+     ],
+     "text": "Drop",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 14,
+     "baseline": 13
+    },
+    {
+     "from": [
+      2,
+      80,
+      112,
+      128,
+      128
+     ],
+     "sprites": [
+      "86"
+     ],
+     "text": "Hard Sinker",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb12",
+     "left": -2,
+     "baseline": 12
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      8,
+      16
+     ],
+     "sprites": [
+      "86"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      8,
+      0,
+      64,
+      16
+     ],
+     "sprites": [
+      "87"
+     ],
+     "text": "Slurve",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc16g2b10",
+     "left": 1,
+     "baseline": 16
+    },
+    {
+     "from": [
+      3,
+      64,
+      0,
+      128,
+      16
+     ],
+     "sprites": [
+      "88"
+     ],
+     "text": "Cutter",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc16g2b10",
+     "left": 1,
+     "baseline": 16
+    },
+    {
+     "from": [
+      3,
+      8,
+      16,
+      64,
+      32
+     ],
+     "sprites": [
+      "89"
+     ],
+     "text": "Circle Change",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb11",
+     "left": -6,
+     "baseline": 12
+    },
+    {
+     "from": [
+      3,
+      64,
+      16,
+      128,
+      32
+     ],
+     "sprites": [
+      "8a"
+     ],
+     "text": "Hard Shuuto",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb11",
+     "left": -4,
+     "baseline": 12
+    },
+    {
+     "from": [
+      3,
+      8,
+      32,
+      64,
+      48
+     ],
+     "sprites": [
+      "8b"
+     ],
+     "text": "Drop Curve",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb12",
+     "left": -1,
+     "baseline": 13
+    },
+    {
+     "from": [
+      3,
+      64,
+      32,
+      120,
+      48
+     ],
+     "sprites": [
+      "8c"
+     ],
+     "text": "Knuckle Curve",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb11",
+     "left": -8,
+     "baseline": 12
+    },
+    {
+     "from": [
+      3,
+      120,
+      32,
+      128,
+      48
+     ],
+     "sprites": [
+      "8d"
+     ],
+     "text": "Original",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 6,
+     "baseline": 14
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      48,
+      64
+     ],
+     "sprites": [
+      "8d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      48,
+      48,
+      120,
+      64
+     ],
+     "sprites": [
+      "8e"
+     ],
+     "text": "Yone Ball",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      64,
+      80
+     ],
+     "sprites": [
+      "8f"
+     ],
+     "text": "Yoshi Ball",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 0,
+     "baseline": 13
+    },
+    {
+     "from": [
+      3,
+      64,
+      64,
+      128,
+      80
+     ],
+     "sprites": [
+      "90"
+     ],
+     "text": "Emo Ball",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 4,
+     "baseline": 13
+    },
+    {
+     "from": [
+      3,
+      8,
+      80,
+      80,
+      96
+     ],
+     "sprites": [
+      "91"
+     ],
+     "text": "Razor Shuuto",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb11",
+     "left": -6,
+     "baseline": 12
+    },
+    {
+     "from": [
+      3,
+      16,
+      96,
+      80,
+      112
+     ],
+     "sprites": [
+      "92"
+     ],
+     "text": "2-Seamer",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 10,
+     "baseline": 13
+    },
+    {
+     "from": [
+      0,
+      0,
+      72,
+      72,
+      80
+     ],
+     "sprites": [
+      "93"
+     ],
+     "text": "Moving",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb11",
+     "left": -11,
+     "baseline": 12
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      72,
+      80
+     ],
+     "sprites": [
+      "93"
+     ],
+     "text": "Fastball",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb11",
+     "left": 27,
+     "baseline": 4
+    }
+   ],
+   "under": 3
+  },
+  {
+   "bank": "z3_ut_hen",
+   "style": "command",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     0,
+     48,
+     32,
+     128,
+     64
+    ],
+    [
+     0,
+     80,
+     16,
+     88,
+     24
+    ],
+    [
+     1,
+     0,
+     0,
+     104,
+     64
+    ],
+    [
+     1,
+     48,
+     96,
+     128,
+     128
+    ],
+    [
+     1,
+     104,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     2,
+     0,
+     96,
+     80,
+     128
+    ],
+    [
+     3,
+     8,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     32,
+     8,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     88,
+     96
+    ],
+    [
+     4,
+     88,
+     0,
+     128,
+     64
+    ],
+    [
+     4,
+     32,
+     96,
+     104,
+     128
+    ],
+    [
+     4,
+     88,
+     64,
+     112,
+     72
+    ],
+    [
+     4,
+     0,
+     96,
+     16,
+     104
+    ],
+    [
+     4,
+     120,
+     64,
+     128,
+     72
+    ],
+    [
+     4,
+     0,
+     120,
+     8,
+     128
+    ],
+    [
+     4,
+     24,
+     120,
+     32,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      48,
+      32,
+      72,
+      64
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Trajectory",
+     "style": "o2_ff_r88_s0_c1",
+     "font": "nb14",
+     "left": -2,
+     "baseline": 20
+    },
+    {
+     "from": [
+      0,
+      72,
+      32,
+      96,
+      64
+     ],
+     "sprites": [
+      "00"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      96,
+      32,
+      128,
+      64
+     ],
+     "sprites": [
+      "01"
+     ],
+     "text": "Contact",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "dc14g2b10",
+     "left": -6,
+     "baseline": 22
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      16,
+      96
+     ],
+     "sprites": [
+      "01"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      16,
+      64,
+      72,
+      96
+     ],
+     "sprites": [
+      "02"
+     ],
+     "text": "Power",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 22
+    },
+    {
+     "from": [
+      0,
+      72,
+      64,
+      96,
+      96
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Speed",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 22
+    },
+    {
+     "from": [
+      0,
+      96,
+      64,
+      120,
+      96
+     ],
+     "sprites": [
+      "03"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      120,
+      64,
+      128,
+      96
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Arm",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "dc14g2b10",
+     "left": 12,
+     "baseline": 22
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      16,
+      128
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      16,
+      96,
+      40,
+      128
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      40,
+      96,
+      96,
+      128
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Fielding",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "dc14g2b10",
+     "left": -4,
+     "baseline": 22
+    },
+    {
+     "from": [
+      0,
+      96,
+      96,
+      128,
+      128
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Error Res.",
+     "style": "o2_ff_r88_s0_c1",
+     "font": "nb14",
+     "left": 7,
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      40,
+      32
+     ],
+     "sprites": [
+      "06"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      40,
+      0,
+      64,
+      32
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Velocity",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "dc14g2b10",
+     "left": -4,
+     "baseline": 22
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      88,
+      32
+     ],
+     "sprites": [
+      "07"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      88,
+      0,
+      128,
+      32
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "Control",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "dc14g2b10",
+     "left": 7,
+     "baseline": 22
+    },
+    {
+     "from": [
+      1,
+      0,
+      32,
+      32,
+      64
+     ],
+     "sprites": [
+      "08"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      32,
+      32,
+      104,
+      64
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Stamina",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 22
+    },
+    {
+     "from": [
+      1,
+      48,
+      96,
+      120,
+      128
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "Slider",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 13,
+     "baseline": 22
+    },
+    {
+     "from": [
+      1,
+      120,
+      96,
+      128,
+      128
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "Curve",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 6,
+     "baseline": 22
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      48,
+      32
+     ],
+     "sprites": [
+      "11"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      48,
+      0,
+      120,
+      32
+     ],
+     "sprites": [
+      "12"
+     ],
+     "text": "Fork",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 18,
+     "baseline": 24
+    },
+    {
+     "from": [
+      2,
+      120,
+      0,
+      128,
+      32
+     ],
+     "sprites": [
+      "13"
+     ],
+     "text": "Sinker",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 12,
+     "baseline": 24
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      64,
+      64
+     ],
+     "sprites": [
+      "13"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      64,
+      32,
+      128,
+      64
+     ],
+     "sprites": [
+      "14"
+     ],
+     "text": "Shuuto",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 10,
+     "baseline": 24
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      8,
+      96
+     ],
+     "sprites": [
+      "14"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      8,
+      64,
+      64,
+      96
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "Palm",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 10,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      128,
+      96
+     ],
+     "sprites": [
+      "16"
+     ],
+     "text": "Knuckle",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 6,
+     "baseline": 24
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      8,
+      128
+     ],
+     "sprites": [
+      "16"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      80,
+      128
+     ],
+     "sprites": [
+      "17"
+     ],
+     "text": "V-Slider",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 4,
+     "baseline": 22
+    },
+    {
+     "from": [
+      3,
+      8,
+      0,
+      80,
+      32
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Screwball",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 8,
+     "baseline": 22
+    },
+    {
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      32
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "Slow Curve",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 4,
+     "baseline": 20
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      24,
+      64
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      24,
+      32,
+      96,
+      64
+     ],
+     "sprites": [
+      "1b"
+     ],
+     "text": "Hard Slider",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 6,
+     "baseline": 20
+    },
+    {
+     "from": [
+      3,
+      96,
+      32,
+      128,
+      64
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Changeup",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 8,
+     "baseline": 21
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      40,
+      96
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      40,
+      64,
+      112,
+      96
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "Drop",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 18,
+     "baseline": 23
+    },
+    {
+     "from": [
+      3,
+      112,
+      64,
+      128,
+      96
+     ],
+     "sprites": [
+      "1e"
+     ],
+     "text": "Hard Sinker",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 4,
+     "baseline": 22
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      56,
+      128
+     ],
+     "sprites": [
+      "1e"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      56,
+      96,
+      128,
+      128
+     ],
+     "sprites": [
+      "1f"
+     ],
+     "text": "Slurve",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 11,
+     "baseline": 22
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      72,
+      32
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Cutter",
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 14,
+     "baseline": 23
+    },
+    {
+     "from": [
+      4,
+      72,
+      0,
+      128,
+      32
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Circle Change",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb12",
+     "left": 3,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      0,
+      32,
+      16,
+      64
+     ],
+     "sprites": [
+      "21"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      16,
+      32,
+      88,
+      64
+     ],
+     "sprites": [
+      "22"
+     ],
+     "text": "Hard Shuuto",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb13",
+     "left": 2,
+     "baseline": 21
+    },
+    {
+     "from": [
+      4,
+      16,
+      64,
+      88,
+      96
+     ],
+     "sprites": [
+      "28"
+     ],
+     "text": "Razor Shuuto",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb12",
+     "left": 2,
+     "baseline": 21
+    },
+    {
+     "from": [
+      5,
+      0,
+      64,
+      72,
+      96
+     ],
+     "sprites": [
+      "29"
+     ],
+     "text": "Drop Curve",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 4,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      32,
+      96,
+      104,
+      128
+     ],
+     "sprites": [
+      "2a"
+     ],
+     "text": "Knuckle Curve",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb11",
+     "left": 0,
+     "baseline": 20
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      72,
+      32
+     ],
+     "sprites": [
+      "2b"
+     ],
+     "text": "2-Seamer",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 10,
+     "baseline": 21
+    },
+    {
+     "from": [
+      5,
+      0,
+      32,
+      72,
+      64
+     ],
+     "sprites": [
+      "2c"
+     ],
+     "text": "Moving Fastball",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb11",
+     "left": -2,
+     "baseline": 19
+    },
+    {
+     "from": [
+      4,
+      88,
+      32,
+      128,
+      64
+     ],
+     "text": "Original",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
+     "left": 6,
+     "baseline": 21
+    },
+    {
+     "from": [
+      4,
+      0,
+      64,
+      16,
+      96
+     ],
+     "empty": true
     }
    ],
    "under": 3
