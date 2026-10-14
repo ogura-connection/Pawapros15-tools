@@ -12701,10 +12701,10 @@
       "77"
      ],
      "text": "Curve",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc16g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 4,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -12749,7 +12749,7 @@
      ],
      "text": "Sinker",
      "style": "o2_f8_r8_s0_c2",
-     "font": "dc16g2b10",
+     "font": "dc15g2b10",
      "left": 3,
      "baseline": 16
     },
@@ -12765,10 +12765,10 @@
       "7a"
      ],
      "text": "Shuuto",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc16g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 3,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -12795,10 +12795,10 @@
       "7b"
      ],
      "text": "Slow Ball",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc16g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 4,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -12812,10 +12812,10 @@
       "7c"
      ],
      "text": "Fastball",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc14g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 2,
-     "baseline": 15
+     "baseline": 13
     },
     {
      "from": [
@@ -12859,10 +12859,10 @@
       "7e"
      ],
      "text": "Knuckle",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc15g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 2,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
@@ -12907,9 +12907,9 @@
      ],
      "text": "Screwball",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
+     "font": "nb12",
      "left": 2,
-     "baseline": 13
+     "baseline": 12
     },
     {
      "from": [
@@ -12924,9 +12924,9 @@
      ],
      "text": "Slow Curve",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
+     "font": "nb11",
      "left": 2,
-     "baseline": 13
+     "baseline": 12
     },
     {
      "from": [
@@ -12954,9 +12954,9 @@
      ],
      "text": "Hard Slider",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
+     "font": "nb11",
      "left": 3,
-     "baseline": 13
+     "baseline": 12
     },
     {
      "from": [
@@ -12971,9 +12971,9 @@
      ],
      "text": "Changeup",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
+     "font": "nb12",
      "left": 2,
-     "baseline": 13
+     "baseline": 12
     },
     {
      "from": [
@@ -13018,7 +13018,7 @@
      ],
      "text": "Hard Sinker",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb13",
+     "font": "nb11",
      "left": 2,
      "baseline": 12
     },
@@ -13048,7 +13048,7 @@
      ],
      "text": "Slurve",
      "style": "o2_f8_r8_s0_c2",
-     "font": "dc16g2b10",
+     "font": "dc15g2b10",
      "left": 2,
      "baseline": 16
     },
@@ -13116,9 +13116,9 @@
      ],
      "text": "Drop Curve",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb13",
+     "font": "nb11",
      "left": 3,
-     "baseline": 13
+     "baseline": 12
     },
     {
      "from": [
@@ -13197,9 +13197,9 @@
      ],
      "text": "Yoshi Ball",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
+     "font": "nb12",
      "left": 2,
-     "baseline": 13
+     "baseline": 12
     },
     {
      "from": [
@@ -13213,10 +13213,10 @@
       "90"
      ],
      "text": "Emo Ball",
-     "style": "o2_f8_r8_s0_c2",
-     "font": "dc15g2b10",
+     "style": "o2_f8_r8_s0_c1",
+     "font": "nb14",
      "left": 1,
-     "baseline": 16
+     "baseline": 13
     },
     {
      "from": [
