@@ -12,3 +12,6 @@ dumps/
 *.rel
 *.arc
 *.elf
+
+# Japanese game text extracted from the disc: stays local
+translation_high_quality.json
