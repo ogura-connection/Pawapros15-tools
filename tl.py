@@ -303,11 +303,26 @@ def check_scene(name, rows, done, per_line=LINE_LETTERS):
     missing = [r["off"] for r in runs if r["text"] and r["off"] not in done]
     if some and missing:
         warn.append("%s: scene partly translated, missing +%s" % (name, ", +".join(map(str, missing[:5]))))
+    frames, closed = [], None       # My Life: the runs between "if" and "end" are alternatives, one is shown
     for r in rows:
         if "note" in r:
-            if r["note"] == "{name}":
+            note = r["note"]
+            if note == "{name}":
                 line += 12                                  # an inserted name: up to 6 full cells
+            if note in ("if", "else"):
+                if closed is not None:                      # the next of a row of alternatives: same start
+                    frames.append(closed)
+                    line = closed[0]
+                else:
+                    frames.append([line, line])             # [line before the block, widest way through it]
+            elif note == "end" and frames:
+                closed = frames.pop()
+                closed[1] = max(closed[1], line)
+                line, pending = closed[1], None
+                continue
+            closed = None
             continue
+        closed = None
         if r["mark"] == "B" or (r["window"] != 30 and r["window"] != bubble):
             box = box_orig = 0                              # a new box, or another speaker's bubble
         if r["window"] != 30:
