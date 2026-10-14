@@ -866,6 +866,10 @@ RENDER = {
     # each again in black as its shadow.
     "nannormal": logo([10, 9, 8, 7, 6, 5, 4], [13, 11], 15, 3, 2, [], 2, 2),
     "nanrookie": logo([9, 11, 12, 13, 14, 15, 4], [6, 8], 5, 4, 2, [], 2, 2),
+    # name entry (namein.arc, s3_nam): headings, yellow in a thick blue outline on a white band with a lilac
+    # shadow (palette 14); the button words, dark letters on a white band in blue rings (25, 26, 28)
+    "namehead": logo([13, 13, 11, 11, 10, 10], [8], 3, 15, 14, [7, 6], 2, 2),
+    "namebutton": banded([0, 10, 11, 12, 13, 14, 15], [9, 9, 7, 5]),
 }
 
 

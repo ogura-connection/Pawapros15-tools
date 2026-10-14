@@ -1,0 +1,384 @@
+{
+ "arc": "namein.arc",
+ "repack": [
+  {
+   "bank": "s3_nam",
+   "palette": 14,
+   "style": "namehead",
+   "font": "ttf:rounded:13:0:0.85:0.5",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     5,
+     0,
+     0,
+     88,
+     40
+    ],
+    [
+     5,
+     0,
+     40,
+     96,
+     88
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     9,
+     0,
+     80,
+     72,
+     128
+    ],
+    [
+     9,
+     72,
+     88,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     6,
+     0,
+     32,
+     96,
+     104
+    ],
+    [
+     6,
+     0,
+     104,
+     112,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Enter",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": -38,
+     "baseline": 30
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      88,
+      40
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      72,
+      0,
+      128,
+      40
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "a name",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": 136,
+     "baseline": 30
+    },
+    {
+     "from": [
+      5,
+      0,
+      40,
+      96,
+      88
+     ],
+     "text": "a song title",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": 136,
+     "baseline": 30
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "a tourney name",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": 166,
+     "baseline": 30
+    },
+    {
+     "from": [
+      8,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "a school name",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": 166,
+     "baseline": 30
+    },
+    {
+     "from": [
+      8,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Enter the",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": 151,
+     "baseline": 30
+    },
+    {
+     "from": [
+      9,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "cap mark",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": 95,
+     "baseline": 30
+    },
+    {
+     "from": [
+      9,
+      0,
+      40,
+      128,
+      80
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      9,
+      0,
+      80,
+      72,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      10,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Enter a",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": 150,
+     "baseline": 30
+    },
+    {
+     "from": [
+      10,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "nickname",
+     "style": "namehead",
+     "font": "ttf:rounded:13:0:0.85:0.5",
+     "left": 80,
+     "baseline": 30
+    },
+    {
+     "from": [
+      10,
+      0,
+      80,
+      128,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      9,
+      72,
+      88,
+      128,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      48,
+      104,
+      112,
+      128
+     ],
+     "text": "Cancel",
+     "style": "namebutton",
+     "font": "ttf:rounded:9:0:0.9:0.4",
+     "left": 8,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      48,
+      56
+     ],
+     "text": "Kana",
+     "style": "namebutton",
+     "font": "ttf:rounded:9:0:0.9:0.4",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      48,
+      32,
+      96,
+      56
+     ],
+     "text": "Kata",
+     "style": "namebutton",
+     "font": "ttf:rounded:9:0:0.9:0.4",
+     "left": 8,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      56,
+      48,
+      80
+     ],
+     "text": "ABC",
+     "style": "namebutton",
+     "font": "ttf:rounded:9:0:0.9:0.4",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      48,
+      56,
+      96,
+      80
+     ],
+     "text": "Kanji",
+     "style": "namebutton",
+     "font": "ttf:rounded:9:0:0.9:0.4",
+     "left": 6,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      80,
+      48,
+      104
+     ],
+     "text": "Symbol",
+     "style": "namebutton",
+     "font": "ttf:rounded:9:0:0.9:0.4",
+     "left": -1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      48,
+      80,
+      96,
+      104
+     ],
+     "text": "Delete",
+     "style": "namebutton",
+     "font": "ttf:rounded:9:0:0.9:0.4",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      104,
+      48,
+      128
+     ],
+     "text": "OK",
+     "style": "namebutton",
+     "font": "ttf:rounded:9:0:0.9:0.4",
+     "left": 10,
+     "baseline": 18
+    }
+   ]
+  }
+ ]
+}
