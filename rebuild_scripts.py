@@ -56,6 +56,7 @@ import shutil
 import struct
 import sys
 
+import kyu_names
 import pair_font
 import scan_story as S
 import ui_messages
@@ -903,6 +904,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     scripts = load_scripts(orig)
     strings = strings or {}
     messages = messages or {}
+    kyu_english = kyu_names.load_tsv()
     dol = load_dol(dol)
     for sc in scripts:
         if sc.errors or len(sc.hw) * 2 != sc.rel.sections[sc.sec]["size"]:
@@ -1024,6 +1026,33 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 patched[m.mod_id][(sec, off)] = data
             image = bytes(image)
             note += ", %d messages" % len(messages[m.name])
+        if m.name in kyu_names.BLOCKS and kyu_english:           # pitch names (kyu font): new layout, new pointers
+            if m.mod_id in new_secs or any(mid == m.mod_id for mid, _ in remaps):
+                sys.exit("%s: pitch names in a rebuilt module are not supported" % m.name)
+            blk = kyu_names.BLOCKS[m.name]
+            if any(s == blk["section"] and blk["start"] <= o < blk["end"] for s, o in strings.get(m.name, ())):
+                sys.exit("%s: a UI string is translated inside the pitch names" % m.name)
+            try:
+                data, addends, reads = kyu_names.layout(m, blk, kyu_english)
+            except ValueError as e:
+                sys.exit(str(e))
+            image = bytearray(image)
+            pos = m.sections[blk["section"]]["offset"] + blk["start"]
+            image[pos:pos + len(data)] = data
+            patched.setdefault(m.mod_id, {})[(blk["section"], blk["start"])] = data
+            done = 0
+            for mod, _, entries, _ in parse_imports(bytes(image), m.imp_off, m.imp_size):
+                for sec, rpos, typ, tsec, addend, off in entries:
+                    if mod == m.mod_id and sec == blk["section"] and rpos in addends:
+                        struct.pack_into(">I", image, off + 4, addends[rpos])
+                        moved[(m.mod_id, sec, rpos)] = addends[rpos]
+                        done += 1
+            assert done == blk["count"], (m.name, done)
+            for a, s in reads.items():                           # every pointer reads its name, closed by the end mark
+                at = m.sections[blk["section"]]["offset"] + a
+                assert image[at:at + len(s) + 1] == s + bytes([kyu_names.END]) and blk["start"] <= a < blk["end"]
+            image = bytes(image)
+            note += ", %d pitch names" % len(kyu_english)
         if inplace and m.name != "fonttex2.rel":                 # a block script laid out again: bytes and pointers
             if m.mod_id in new_secs:
                 image, n = bytes(image), sum((mod, e[3]) in inplace for mod, _, entries, _ in
