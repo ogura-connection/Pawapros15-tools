@@ -20,6 +20,8 @@
 5	13816	90e9	Go to work.
 5	13856	05cf	Go to the training room.
 5	13896	9a6e	Go back.
+5	13936	8c45	Scenario Debug
+5	13976	8090	Program Debug
 5	1093880	7e22	"Success Tips" is short for|"a few good tips for Success|Mode". Did you know?
 5	1093984	fd19	Love Power from your girlfriend|makes practice far more|effective. That is love for you.
 5	1094088	8ab6	Which events happen depends on|who is among the Townsfolk.|Check them often!
@@ -37,6 +39,10 @@
 5	1095336	f2bd	Good or bad Weather changes the|experience points you earn.|Pick your practice to suit it.
 5	1095440	aec9	Players raised in Hakkyu Dream|join the Linked World, whether|or not they turn pro.
 5	1095544	1dc2	In a game, watch what your rival|says and does. There is sure to|be a hint in it!
+5	1095648	8cd3	Press the SELECT Button while|picking a practice to see your|ratings. Let's check them!
+5	1095752	4aa1	Press the R1 Button in an event|to see the event log.|Never fear missing a line!
+5	1095856	266d	Once you have made a few players,|the L1 Button fast-forwards text.
+5	1095960	4458	Press the SELECT Button on the|main screen to see the forecast.|Check it out!
 5	1096064	0b58	In Normal mode, a great showing|in a game can earn you a|special ability!
 5	1096168	dbe2	To hide Success Tips, turn off|Support Messages on the System|screen.
 5	1096272	7e22	"Success Tips" is short for|"a few good tips for Success|Mode". Did you know?
@@ -74,3 +80,6 @@
 5	1099638	4a9a	Learning Moving Fastball removes|the 2-Seamer.|Is that OK?
 5	1099734	224e	Learning Spray Hitter removes|Pull Hitter.|Is that OK?
 5	1099830	2504	Learning Pull Hitter removes|Spray Hitter.|Is that OK?
+5	1100616	6d7f	Give up
+5	1100722	ee9f	Congratulations! You cleared it!
+5	1100820	3a4e	Too bad! Time is up
