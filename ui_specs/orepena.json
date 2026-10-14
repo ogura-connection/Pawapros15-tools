@@ -14823,10 +14823,10 @@
       "02"
      ],
      "text": "Save:",
-     "style": "o2_f77d_r62_s0_c2",
-     "font": "dc31g2b10",
-     "left": 35,
-     "baseline": 37
+     "style": "o2_ffed_r772_s6_c2",
+     "font": "dc28g2b10",
+     "left": 45,
+     "baseline": 35
     },
     {
      "from": [
@@ -14837,10 +14837,10 @@
       40
      ],
      "text": "Choose a",
-     "style": "o2_f77d_r62_s0_c2",
-     "font": "dc31g2b10",
-     "left": 37,
-     "baseline": 37
+     "style": "o2_ffed_r772_s6_c2",
+     "font": "dc28g2b10",
+     "left": 41,
+     "baseline": 35
     },
     {
      "from": [
@@ -14851,10 +14851,10 @@
       80
      ],
      "text": "File",
-     "style": "o2_f77d_r62_s0_c2",
-     "font": "dc31g2b10",
-     "left": 39,
-     "baseline": 37
+     "style": "o2_ffed_r772_s6_c2",
+     "font": "dc28g2b10",
+     "left": 32,
+     "baseline": 35
     },
     {
      "from": [
@@ -14868,10 +14868,10 @@
       "03"
      ],
      "text": "Load:",
-     "style": "o2_f77d_r62_s0_c2",
-     "font": "dc31g2b10",
-     "left": 37,
-     "baseline": 37
+     "style": "o2_ffed_r772_s6_c2",
+     "font": "dc28g2b10",
+     "left": 47,
+     "baseline": 35
     },
     {
      "from": [
@@ -14880,9 +14880,6 @@
       0,
       128,
       24
-     ],
-     "sprites": [
-      "04"
      ],
      "text": "If you",
      "style": "o2_ff_r77_s0_c2",
@@ -14898,9 +14895,6 @@
       128,
       48
      ],
-     "sprites": [
-      "04"
-     ],
      "text": "swap memory",
      "style": "o2_ff_r77_s0_c2",
      "font": "dc14g2b10",
@@ -14915,9 +14909,6 @@
       128,
       72
      ],
-     "sprites": [
-      "04"
-     ],
      "text": "cards, re-enter",
      "style": "o2_ff_r77_s0_c2",
      "font": "dc14g2b10",
@@ -14931,9 +14922,6 @@
       72,
       72,
       96
-     ],
-     "sprites": [
-      "04"
      ],
      "text": "this screen.",
      "style": "o2_ff_r77_s0_c2",
@@ -14988,9 +14976,9 @@
      ],
      "text": "Yr",
      "style": "o2_ff_r11_s0_c2",
-     "font": "dc21g2b10",
-     "left": 0,
-     "baseline": 22
+     "font": "dc16g2b10",
+     "left": 2,
+     "baseline": 19
     },
     {
      "from": [
@@ -15005,9 +14993,9 @@
      ],
      "text": "Mo",
      "style": "o2_ff_r11_s0_c2",
-     "font": "dc19g2b10",
+     "font": "dc16g2b10",
      "left": -1,
-     "baseline": 21
+     "baseline": 20
     },
     {
      "from": [
@@ -15021,10 +15009,10 @@
       "0a"
      ],
      "text": "Day",
-     "style": "o2_ff_r11_s0_c1",
-     "font": "nb14",
-     "left": 0,
-     "baseline": 17
+     "style": "o2_ff_r11_s0_c2",
+     "font": "dc16g2b10",
+     "left": -4,
+     "baseline": 19
     },
     {
      "from": [
@@ -15122,11 +15110,11 @@
      "sprites": [
       "1a"
      ],
-     "text": "First Base",
-     "style": "o2_ff_r49_s0_c1",
-     "font": "nb14",
-     "left": 4,
-     "baseline": 17
+     "text": "1st Base",
+     "style": "o2_ff_r449_s0_c2",
+     "font": "dc14g2b10",
+     "left": 0,
+     "baseline": 19
     },
     {
      "from": [
@@ -15139,10 +15127,10 @@
      "sprites": [
       "1b"
      ],
-     "text": "Second Base",
+     "text": "2nd Base",
      "style": "o2_ff_r49_s0_c1",
-     "font": "nb12",
-     "left": 1,
+     "font": "nb14",
+     "left": 6,
      "baseline": 17
     },
     {
@@ -15156,10 +15144,10 @@
      "sprites": [
       "1c"
      ],
-     "text": "Third Base",
+     "text": "3rd Base",
      "style": "o2_ff_r49_s0_c1",
      "font": "nb14",
-     "left": 2,
+     "left": 8,
      "baseline": 17
     },
     {
