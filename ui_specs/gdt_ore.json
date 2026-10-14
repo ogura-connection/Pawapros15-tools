@@ -740,8 +740,8 @@
      ],
      "text": "Injury: No Power Swing",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
-     "left": -6,
+     "font": "ttf:din:12:0.16:1:0",
+     "left": -4,
      "baseline": 18,
      "sprites": [
       "00"
@@ -757,7 +757,7 @@
      ],
      "text": "Injury: Can't Bat Left",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
+     "font": "ttf:din:12:0.16:1:0",
      "left": 14,
      "baseline": 17,
      "sprites": [
@@ -787,8 +787,8 @@
      ],
      "text": "Injury: Can't Bat Right",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
-     "left": 9,
+     "font": "ttf:din:12:0.16:1:0",
+     "left": 10,
      "baseline": 17,
      "sprites": [
       "02"
@@ -817,8 +817,8 @@
      ],
      "text": "First Pro At-Bat",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
-     "left": -10,
+     "font": "ttf:din:12:0.16:1:0",
+     "left": -8,
      "baseline": 18,
      "sprites": [
       "03"
@@ -834,8 +834,8 @@
      ],
      "text": "First Pro Lineup Spot",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
-     "left": -14,
+     "font": "ttf:din:12:0.16:1:0",
+     "left": -12,
      "baseline": 18,
      "sprites": [
       "04"
@@ -864,8 +864,8 @@
      ],
      "text": "Last Pro At-Bat",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
-     "left": 2,
+     "font": "ttf:din:12:0.16:1:0",
+     "left": 3,
      "baseline": 18,
      "sprites": [
       "05"
@@ -881,8 +881,8 @@
      ],
      "text": "Pro Pitching Debut",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
-     "left": -18,
+     "font": "ttf:din:12:0.16:1:0",
+     "left": -16,
      "baseline": 18,
      "sprites": [
       "06"
@@ -898,8 +898,8 @@
      ],
      "text": "First Pro Start",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
-     "left": -6,
+     "font": "ttf:din:12:0.16:1:0",
+     "left": -4,
      "baseline": 18,
      "sprites": [
       "07"
@@ -915,8 +915,8 @@
      ],
      "text": "Last Pro Mound",
      "style": "gdo_cyan",
-     "font": "ttf:din:12:0.18:1:0.1",
-     "left": 14,
+     "font": "ttf:din:12:0.16:1:0",
+     "left": 16,
      "baseline": 18,
      "sprites": [
       "08"

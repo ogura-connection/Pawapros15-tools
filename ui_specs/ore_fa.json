@@ -1,0 +1,341 @@
+{
+ "arc": "ore_fa.arc",
+ "repack": [
+  {
+   "bank": "y3_fa",
+   "palette": 4,
+   "style": "fa_label",
+   "font": "dc12g2b0",
+   "under": 4,
+   "areas": [
+    [
+     1,
+     88,
+     0,
+     128,
+     48
+    ],
+    [
+     1,
+     64,
+     104,
+     128,
+     128
+    ],
+    [
+     0,
+     0,
+     80,
+     40,
+     104
+    ],
+    [
+     0,
+     0,
+     104,
+     40,
+     128
+    ],
+    [
+     0,
+     40,
+     80,
+     96,
+     104
+    ],
+    [
+     1,
+     0,
+     104,
+     24,
+     128
+    ],
+    [
+     1,
+     24,
+     104,
+     64,
+     128
+    ],
+    [
+     1,
+     104,
+     48,
+     128,
+     72
+    ],
+    [
+     3,
+     0,
+     72,
+     72,
+     104
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     6,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     2,
+     88,
+     0,
+     128,
+     24
+    ],
+    [
+     5,
+     0,
+     32,
+     120,
+     64
+    ],
+    [
+     5,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     5,
+     0,
+     0,
+     48,
+     32
+    ],
+    [
+     5,
+     48,
+     0,
+     120,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      88,
+      0,
+      128,
+      48
+     ],
+     "text": "FA",
+     "style": "fa_head",
+     "font": "ttf:rounded:17:0:1:0.3",
+     "left": 1,
+     "baseline": 24
+    },
+    {
+     "from": [
+      1,
+      64,
+      104,
+      128,
+      128
+     ],
+     "text": "Choose Team",
+     "style": "fa_head",
+     "font": "dc17g2b10",
+     "left": -41,
+     "baseline": 22
+    },
+    {
+     "from": [
+      0,
+      0,
+      80,
+      40,
+      104
+     ],
+     "text": "Status",
+     "style": "fa_label",
+     "font": "dc12g2b0",
+     "under": 4
+    },
+    {
+     "from": [
+      0,
+      0,
+      104,
+      40,
+      128
+     ],
+     "text": "Salary",
+     "style": "fa_label",
+     "font": "dc12g2b0",
+     "under": 4
+    },
+    {
+     "from": [
+      0,
+      40,
+      80,
+      96,
+      104
+     ],
+     "text": "Number",
+     "style": "fa_label",
+     "font": "dc12g2b0",
+     "under": 4
+    },
+    {
+     "from": [
+      1,
+      0,
+      104,
+      24,
+      128
+     ],
+     "text": "00M",
+     "style": "fa_label",
+     "font": "dc11g2b0",
+     "under": 4
+    },
+    {
+     "from": [
+      1,
+      24,
+      104,
+      64,
+      128
+     ],
+     "text": "0K yen",
+     "style": "fa_label",
+     "font": "dc11g2b0",
+     "under": 4
+    },
+    {
+     "from": [
+      1,
+      104,
+      48,
+      128,
+      72
+     ],
+     "text": "yen",
+     "style": "fa_label",
+     "font": "dc11g2b0",
+     "under": 4
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      72,
+      104
+     ],
+     "text": "Offer",
+     "style": "fa_offer",
+     "font": "dc15g2b10",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Select a team to",
+     "style": "fa_prompt",
+     "font": "dc15g2b10",
+     "left": 1,
+     "baseline": 21
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "sign with.",
+     "style": "fa_prompt",
+     "font": "dc15g2b10",
+     "left": 0,
+     "baseline": 21
+    },
+    {
+     "from": [
+      2,
+      88,
+      0,
+      128,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      32,
+      120,
+      64
+     ],
+     "text": "Is this team OK?",
+     "style": "fa_ask",
+     "font": "dc16g2b10",
+     "left": 55,
+     "baseline": 57,
+     "under": 5
+    },
+    {
+     "from": [
+      5,
+      0,
+      64,
+      128,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      48,
+      32
+     ],
+     "text": "Yes",
+     "style": "fa_ask",
+     "font": "dc16g2b10",
+     "under": 5
+    },
+    {
+     "from": [
+      5,
+      48,
+      0,
+      120,
+      32
+     ],
+     "text": "No",
+     "style": "fa_ask",
+     "font": "dc16g2b10",
+     "under": 5
+    }
+   ],
+   "gap": [
+    1,
+    1
+   ]
+  }
+ ]
+}

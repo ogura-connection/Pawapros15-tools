@@ -43,7 +43,7 @@ STYLES["gdo_white"] = solid(15, [2, 1], cut=3)
 STYLES["gdo_white1"] = solid(15, [1], cut=3)
 STYLES["gdo_big"] = solid(15, [2, 1], cut=3)                 # the big lettering (First Duel): a thicker ring
 # y3_ss event captions (palette 0, teal ramp): white letters, a mint ring and a dark teal ring
-STYLES["gdo_cyan"] = solid(15, [3, 1], cut=3)
+STYLES["gdo_cyan"] = solid(15, [1], cut=3)
 # y4_ind_0 thanks banner (palette 0, blue ramp): white letters, two sky-blue rings, two dark blue, one slate
 STYLES["gdo_dream"] = solid(15, [10, 10, 4, 4, 2], cut=3)
 
