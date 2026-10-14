@@ -2458,6 +2458,716 @@
      "empty": true
     }
    ]
+  },
+  {
+   "bank": "y3_mym",
+   "palette": 12,
+   "style": "mypit",
+   "font": "ttf:din:11:0:1:0.1",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     2,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     5,
+     96,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     72,
+     96,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     7,
+     64,
+     104,
+     104,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     9,
+     120,
+     88,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     120,
+     120,
+     128
+    ],
+    [
+     11,
+     72,
+     0,
+     80,
+     128
+    ],
+    [
+     11,
+     80,
+     48,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     64,
+     72,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     72
+    ],
+    [
+     15,
+     0,
+     96,
+     48,
+     128
+    ],
+    [
+     15,
+     48,
+     112,
+     120,
+     120
+    ],
+    [
+     15,
+     120,
+     120,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     32,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      0,
+      72,
+      48,
+      88
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Hometown",
+     "style": "mycard48",
+     "font": "ttf:din:11:0:1:0.2",
+     "left": -4,
+     "baseline": 14
+    },
+    {
+     "from": [
+      5,
+      48,
+      72,
+      88,
+      88
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Background",
+     "style": "mycard40",
+     "font": "ttf:din:11:0:1:0.2",
+     "left": -12,
+     "baseline": 15
+    },
+    {
+     "from": [
+      5,
+      88,
+      72,
+      128,
+      88
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Birthday",
+     "style": "mycard64",
+     "font": "ttf:din:11:0:1:0.2",
+     "left": 0,
+     "baseline": 15
+    },
+    {
+     "from": [
+      5,
+      24,
+      88,
+      72,
+      104
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Handedness",
+     "style": "mycard48",
+     "font": "ttf:din:11:0:1:0.2",
+     "left": -8,
+     "baseline": 14
+    },
+    {
+     "from": [
+      5,
+      72,
+      88,
+      128,
+      104
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Position",
+     "style": "mycard64",
+     "font": "ttf:din:11:0:1:0.2",
+     "left": 0,
+     "baseline": 14
+    },
+    {
+     "from": [
+      5,
+      8,
+      104,
+      72,
+      120
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Form",
+     "style": "mycard64",
+     "font": "ttf:din:11:0:1:0.2",
+     "left": 0,
+     "baseline": 14
+    },
+    {
+     "from": [
+      5,
+      0,
+      88,
+      24,
+      104
+     ],
+     "sprites": [
+      "00"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      104,
+      8,
+      120
+     ],
+     "sprites": [
+      "00"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      12,
+      0,
+      0,
+      112,
+      24
+     ],
+     "text": "Overhand",
+     "style": "mypit",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 33,
+     "baseline": 19
+    },
+    {
+     "from": [
+      12,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "3-Quarters",
+     "style": "mypit",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 36,
+     "baseline": 19
+    },
+    {
+     "from": [
+      12,
+      0,
+      48,
+      96,
+      72
+     ],
+     "text": "Sidearm",
+     "style": "mypit",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 26,
+     "baseline": 19
+    },
+    {
+     "from": [
+      12,
+      0,
+      72,
+      112,
+      96
+     ],
+     "text": "Submarine",
+     "style": "mypit",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 29,
+     "baseline": 19
+    },
+    {
+     "from": [
+      12,
+      0,
+      96,
+      96,
+      120
+     ],
+     "text": "Standard",
+     "style": "mybat",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 24,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      0,
+      24,
+      104,
+      48
+     ],
+     "text": "Open",
+     "style": "mybat",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 39,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      104,
+      0,
+      128,
+      24
+     ],
+     "text": "Kannushi",
+     "style": "mybat",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 5,
+     "baseline": 17
+    },
+    {
+     "from": [
+      13,
+      104,
+      24,
+      128,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      13,
+      0,
+      0,
+      96,
+      24
+     ],
+     "text": "Crouching",
+     "style": "mybat",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 23,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      64,
+      72,
+      120,
+      96
+     ],
+     "text": "Pendulum",
+     "style": "mybat",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "Fake Bunt",
+     "style": "mybat",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      80,
+      48,
+      128,
+      72
+     ],
+     "text": "Flamingo",
+     "style": "mybat",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      0,
+      48,
+      80,
+      72
+     ],
+     "text": "Original",
+     "style": "mybat",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 22,
+     "baseline": 18
+    },
+    {
+     "from": [
+      15,
+      0,
+      48,
+      128,
+      72
+     ],
+     "text": "Overhand",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 44,
+     "baseline": 18
+    },
+    {
+     "from": [
+      14,
+      112,
+      72,
+      120,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      15,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "3-Quarters",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 46,
+     "baseline": 18
+    },
+    {
+     "from": [
+      14,
+      104,
+      48,
+      128,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      14,
+      0,
+      96,
+      120,
+      120
+     ],
+     "text": "Sidearm",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 39,
+     "baseline": 18
+    },
+    {
+     "from": [
+      15,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "Submarine",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 39,
+     "baseline": 18
+    },
+    {
+     "from": [
+      14,
+      120,
+      72,
+      128,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      14,
+      0,
+      72,
+      112,
+      96
+     ],
+     "text": "Standard",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 32,
+     "baseline": 18
+    },
+    {
+     "from": [
+      11,
+      0,
+      104,
+      128,
+      128
+     ],
+     "text": "Open",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 61,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      104,
+      96,
+      128,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      12,
+      104,
+      48,
+      128,
+      72
+     ],
+     "text": "Kannushi",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      12,
+      104,
+      96,
+      128,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      14,
+      0,
+      0,
+      112,
+      24
+     ],
+     "text": "Crouching",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 27,
+     "baseline": 18
+    },
+    {
+     "from": [
+      14,
+      0,
+      24,
+      64,
+      48
+     ],
+     "text": "Pendulum",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      14,
+      0,
+      48,
+      80,
+      72
+     ],
+     "text": "Fake Bunt",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 13,
+     "baseline": 18
+    },
+    {
+     "from": [
+      14,
+      64,
+      24,
+      128,
+      48
+     ],
+     "text": "Flamingo",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      0,
+      96,
+      96,
+      120
+     ],
+     "text": "Original",
+     "style": "myshad",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": 29,
+     "baseline": 18
+    },
+    {
+     "from": [
+      11,
+      0,
+      72,
+      128,
+      96
+     ],
+     "text": "L / R: Turn View",
+     "style": "myhint",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 29,
+     "baseline": 18
+    },
+    {
+     "from": [
+      11,
+      112,
+      48,
+      128,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      16,
+      0,
+      32,
+      128,
+      56
+     ],
+     "text": "C / Z: Turn View",
+     "style": "myhint",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 30,
+     "baseline": 18
+    }
+   ]
   }
  ],
  "paint": []
