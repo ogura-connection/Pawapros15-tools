@@ -66,4 +66,6 @@ STYLES = {
     "ulk_c": banner([15, 14, 13, 12], [8, 8], [8, 8, 8], [7, 7]),
     # position plates of main_prg.arc g3_pur (pals 0..4): white letters, a dark ring and a mid ring of the plate colour
     "pur_pos": ui_type.tight(ui_type.banded([0, 1, 14, 13, 12, 11, 11], [1, 3, 6])),
+    # あき of the same bank (pal 21, a ramp from white 15 down to dark rose 8): white letters, dark rose ring
+    "pur_empty": ui_type.tight(ui_type.banded([0, 9, 11, 13, 14, 15, 15], [8, 5])),
 }

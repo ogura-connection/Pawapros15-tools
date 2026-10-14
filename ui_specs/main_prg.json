@@ -2303,7 +2303,7 @@
   {
    "name": "empty slot",
    "bank": "g3_pur",
-   "style": "pur_pos",
+   "style": "pur_empty",
    "font": "ttf:din:14:0:1:0.2",
    "valign": "centre",
    "areas": [
