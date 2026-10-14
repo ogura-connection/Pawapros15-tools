@@ -172,6 +172,18 @@
   "shadow": 0,
   "cut": 1
  },
+ "o2_f21_r8c_s0_c2": {
+  "fills": [
+   2,
+   1
+  ],
+  "rings": [
+   8,
+   12
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
  "o2_ff_r88_s0_c2": {
   "fills": [
    15
@@ -295,5 +307,95 @@
   ],
   "shadow": 0,
   "cut": 2
+ },
+ "o3_pill_0": {
+  "kind": "plate2",
+  "fillrow": 2,
+  "bank": "y3_file",
+  "rects": [
+   [
+    1,
+    64,
+    72,
+    128,
+    96
+   ]
+  ],
+  "erase": [
+   5,
+   4,
+   59,
+   20
+  ],
+  "fill": 1,
+  "rings": [],
+  "shadow": 0,
+  "cut": 2,
+  "cx": 32,
+  "cy": 11,
+  "part": [
+   0,
+   64
+  ]
+ },
+ "o3_pill_1": {
+  "kind": "plate2",
+  "fillrow": 2,
+  "bank": "y3_file",
+  "rects": [
+   [
+    3,
+    0,
+    80,
+    64,
+    104
+   ]
+  ],
+  "erase": [
+   5,
+   4,
+   59,
+   20
+  ],
+  "fill": 1,
+  "rings": [],
+  "shadow": 0,
+  "cut": 2,
+  "cx": 32,
+  "cy": 11,
+  "part": [
+   0,
+   64
+  ]
+ },
+ "o3_pill_2": {
+  "kind": "plate2",
+  "fillrow": 2,
+  "bank": "y3_file",
+  "rects": [
+   [
+    3,
+    64,
+    80,
+    128,
+    104
+   ]
+  ],
+  "erase": [
+   5,
+   4,
+   59,
+   20
+  ],
+  "fill": 1,
+  "rings": [],
+  "shadow": 0,
+  "cut": 2,
+  "cx": 32,
+  "cy": 11,
+  "part": [
+   0,
+   64
+  ]
  }
 }

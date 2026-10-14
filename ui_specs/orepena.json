@@ -12482,6 +12482,20 @@
    "share": true,
    "areas": [
     [
+     0,
+     0,
+     72,
+     72,
+     80
+    ],
+    [
+     1,
+     0,
+     72,
+     72,
+     80
+    ],
+    [
      2,
      0,
      0,
@@ -13132,6 +13146,14 @@
      "font": "nb14",
      "left": 10,
      "baseline": 13
+    },
+    {
+     "sprite": "93",
+     "text": "Moving Fast",
+     "style": "o2_f21_r8c_s0_c2",
+     "font": "nb14",
+     "align": "left",
+     "valign": "centre"
     }
    ],
    "under": 3
@@ -13166,22 +13188,8 @@
      1,
      0,
      0,
-     104,
-     64
-    ],
-    [
-     1,
-     48,
-     96,
      128,
      128
-    ],
-    [
-     1,
-     104,
-     0,
-     128,
-     32
     ],
     [
      2,
@@ -14068,6 +14076,136 @@
       96
      ],
      "empty": true
+    },
+    {
+     "from": [
+      1,
+      104,
+      32,
+      128,
+      64
+     ],
+     "text": "Sub",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "nb14",
+     "left": 2,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      32,
+      96
+     ],
+     "text": "Pos.",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "nb14",
+     "left": 6,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      32,
+      64,
+      56,
+      96
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "C",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "nb14",
+     "left": 9,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      56,
+      64,
+      80,
+      96
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "1B",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "nb14",
+     "left": 7,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      80,
+      64,
+      104,
+      96
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "2B",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "nb14",
+     "left": 6,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      104,
+      64,
+      128,
+      96
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "3B",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "nb14",
+     "left": 6,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      24,
+      128
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "SS",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "nb14",
+     "left": 5,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      24,
+      96,
+      48,
+      128
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "OF",
+     "style": "o2_ff_r88_s0_c2",
+     "font": "nb14",
+     "left": 5,
+     "baseline": 21
     }
    ],
    "under": 3
@@ -14723,21 +14861,7 @@
      0,
      0,
      128,
-     72
-    ],
-    [
-     1,
-     0,
-     96,
-     128,
      128
-    ],
-    [
-     1,
-     0,
-     72,
-     64,
-     96
     ],
     [
      2,
@@ -14751,7 +14875,7 @@
      0,
      0,
      128,
-     80
+     104
     ],
     [
      4,
@@ -15268,6 +15392,57 @@
      "font": "nb14",
      "left": 21,
      "baseline": 16
+    },
+    {
+     "from": [
+      1,
+      64,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Now",
+     "style": "o3_pill_0",
+     "font": "dc14g2b10",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      80,
+      64,
+      104
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Difficulty",
+     "style": "o3_pill_1",
+     "font": "nb14",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      3,
+      64,
+      80,
+      128,
+      104
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Position",
+     "style": "o3_pill_2",
+     "font": "nb14",
+     "left": 0,
+     "baseline": 0
     }
    ],
    "under": 3
