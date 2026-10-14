@@ -905,10 +905,24 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
     remaps, new_secs = {}, {}
-    inplace, block_data = {}, {}
+    inplace, block_data, ore, extra_images = {}, {}, None, {}
     for sc in blocks:
         r = repl.get(sc.rel.name, {})
         if not r:
+            continue
+        if sc.spec.get("engine") == "ore":      # My Life: laid out again in place, the overflow in an annex
+            host = next(m for m in orig.values() if m.name == S.ORE_ANNEX_MODULE)
+            hsec, hfrom = sc.spec["annex_section"], sc.spec["annex_from"]
+            if host.sections[hsec]["size"] != hfrom or hfrom % SECTION_ALIGN:
+                sys.exit("%s: its data section is not the %d bytes the annex expects" % (host.name, hfrom))
+            base = ORE_WORK_ADDR + host.sections[hsec]["offset"] + hfrom + 8
+            segs, annex, remap, (kept, room) = emit_ore(sc, r, base)
+            ore = {"sc": sc, "segs": segs, "remap": remap, "annex": annex, "host": host}
+            if annex:
+                remaps[(host.mod_id, hsec)] = Remap(hfrom // 2, hfrom // 2, {}, len(annex))
+                new_secs[host.mod_id] = (hsec, host.sec_data(hsec) + annex)
+            print("%-13s %5d runs replaced, %d pieces stay in place (%d bytes left there), %d bytes go to the "
+                  "annex in %s" % (sc.rel.name, len(r), kept, room, len(annex), host.name))
             continue
         data, remap, room = emit_block(sc, r)
         inplace[(sc.rel.mod_id, sc.sec)] = remap
@@ -939,7 +953,10 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         elif m.mod_id in new_secs:
             sec, data = new_secs[m.mod_id]
             image, note = rebuild_module(m, sec, data, remaps), "rebuilt"
-            images[m.name] = (m.data, image)
+            if ore and m is ore["host"]:
+                extra_images[m.name] = (m.data, image, ORE_WORK_ADDR)
+            else:
+                images[m.name] = (m.data, image)
         else:
             image, n = patch_addends(m, remaps)
             note = "%d addends" % n
@@ -1013,6 +1030,24 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 image, n = patch_addends(m, inplace, bytes(image))
                 if n:
                     note += ", %d pointers into a script laid out again" % n
+        if ore and m is ore["sc"].rel:                             # My Life: the script and its label table
+            sc = ore["sc"]
+            if m.mod_id in new_secs or any(mid == m.mod_id for mid, _ in remaps):
+                sys.exit("%s: a rebuilt module cannot hold the My Life script" % m.name)
+            image = bytearray(image)
+            for off, data in ore["segs"]:
+                if any(t == sc.sec and off <= o < off + len(data) for t, o in strings.get(m.name, ())):
+                    sys.exit("%s: a UI string is translated inside the script" % m.name)
+                pos = m.sections[sc.sec]["offset"] + off
+                image[pos:pos + len(data)] = data
+                patched.setdefault(m.mod_id, {})[(sc.sec, off)] = data
+            image, n = ore_relocations(m, bytes(image), sc, ore["remap"])
+            extra_images[m.name] = (m.data, image, None)
+            note += ", script laid out again, %d labels in the annex" % n
+        elif ore and any(mod == ore["sc"].rel.mod_id and e[3] == ore["sc"].sec
+                         and ore["sc"].region[0] <= e[4] < ore["sc"].region[1]
+                         for mod, _, entries, _ in parse_imports(m.data, m.imp_off, m.imp_size) for e in entries):
+            sys.exit("%s points into the My Life script: not supported" % m.name)
         if image != m.data:
             with open(os.path.join(BUILD_DIR, m.name), "wb") as f:
                 f.write(image)
@@ -1021,17 +1056,19 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     with open(os.path.join(ORIG_DIR, PLAN_FILE), "rb") as f:
         plan = f.read()
     new_plan = update_plan(plan, images)
+    if extra_images:
+        new_plan = update_plan_ore(new_plan, plan, extra_images)
     if new_plan != plan:
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks)
+    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ore)
     if dol:
         verify_dol(orig, new, dol, slots)
     return changed
 
 
-def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=()):
+def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=(), ore=None):
     """Re-read the built files and compare them with the originals, structure by structure.
     Returns the modules as re-read (for verify_dol). moved = the relocations whose addend the build
     changed on purpose (pointers to strings that were laid out again): {(module, section, position): addend}."""
@@ -1048,6 +1085,8 @@ def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=No
     for old, sc in zip(list(old_scripts) + list(blocks), new_scripts):
         name = old.rel.name
         remap = remaps.get((old.rel.mod_id, old.sec)) or inplace.get((old.rel.mod_id, old.sec), lambda off: off)
+        if ore and old is ore["sc"]:
+            remap = ore["remap"]
         assert not sc.errors, (name, sc.errors)
         # same instructions at the mapped positions, same labels, same text except replacements
         assert {remap(i * 2) // 2 for i, k in old.kind.items() if k == "op"} == \
@@ -1062,13 +1101,22 @@ def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=No
     for mid, m in orig.items():
         a, b = m.relocs(), new[mid].relocs()
         assert len(a) == len(b), m.name
-        for (s, pos, typ, tm, ts, ad), (s2, pos2, typ2, tm2, ts2, ad2) in zip(a, b):
+        want = []
+        for (s, pos, typ, tm, ts, ad) in a:
             pos = remaps[(mid, s)](pos) if (mid, s) in remaps else pos
             ad = remaps[(tm, ts)](ad) if (tm, ts) in remaps else ad
             ad = inplace[(tm, ts)](ad) if (tm, ts) in inplace else ad
             ad = (moved or {}).get((mid, s, pos), ad)
-            assert (s, pos, typ, tm, ts, ad) == (s2, pos2, typ2, tm2, ts2, ad2), \
-                "%s: relocation sec%d+0x%X" % (m.name, s, pos)
+            if ore and (tm, ts) == (ore["sc"].rel.mod_id, ore["sc"].sec):
+                ad = ore["remap"](ad)                   # a label of the My Life script
+                if ore["remap"].address(ad) is not None:
+                    tm, ts, ad = 0, 4, ore["remap"].address(ad)     # in the annex: an absolute address
+            want.append((s, pos, typ, tm, ts, ad))
+        if ore and m is ore["sc"].rel:                  # labels changed stream: the same set, another order
+            assert sorted(want) == sorted(b), m.name + ": relocations"
+            want = b
+        for (s, pos, typ, tm, ts, ad), got in zip(want, b):
+            assert (s, pos, typ, tm, ts, ad) == got, "%s: relocation sec%d+0x%X" % (m.name, s, pos)
         # everything in front of a rebuilt section, and the data behind the script, is untouched
         for t, t2 in zip(m.sections, new[mid].sections):
             if (mid, t["index"]) in remaps:
