@@ -4,7 +4,7 @@
   {
    "name": "calls",
    "bank": "h3_stf_0",
-   "valign": "centre",
+   "ribbon": true,
    "gap": [
     1,
     1
@@ -114,141 +114,121 @@
      "sprite": "00",
      "text": "WARMING\nUP",
      "style": "call0",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "01",
      "text": "PLAY BALL",
      "style": "call0",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "02",
      "text": "TIME",
      "style": "call0",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "03",
      "text": "BALL",
      "style": "call0",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "04",
      "text": "STRIKE",
      "style": "call1",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "05",
      "text": "FOUL",
      "style": "call1",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "06",
-     "text": "BASE ON\nBALLS",
+     "text": "WALK",
      "style": "call2",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "07",
      "text": "HIT BY\nPITCH",
      "style": "call2",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "08",
      "text": "FAIR",
      "style": "call2",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "09",
      "text": "SAFE",
      "style": "call2",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "0a",
      "text": "GROUND RULE\nDOUBLE",
      "style": "call2",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "16",
      "text": "HIT",
      "style": "call2",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "0d",
      "text": "OUT",
      "style": "call3",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "0e",
      "text": "CHANGE",
      "style": "call3",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "0f",
      "text": "GAME SET",
      "style": "call3",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "17",
      "text": "INFIELD\nFLY",
      "style": "call3",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "12",
      "text": "HOME RUN",
      "style": "call5",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "13",
      "text": "2-RUN\nHOME RUN",
      "style": "call5",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "14",
      "text": "3-RUN\nHOME RUN",
      "style": "call5",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     },
     {
      "sprite": "15",
      "text": "GRAND\nSLAM",
      "style": "call5",
-     "font": "ttf:rounded:34:0:0.8:1.0",
-     "slices": true
+     "font": "ttf:rounded:34:0:0.8:1.0"
     }
    ]
   }

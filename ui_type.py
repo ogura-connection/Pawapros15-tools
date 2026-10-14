@@ -961,6 +961,109 @@ def shelf_pack(sizes, areas, gap=(1, 1)):
     return placed
 
 
+def ribbon_pack(widths, height, areas, gap=1, empty=4):
+    """Pour lines of art (all `height` rows high) into the rows of the areas, cutting a line where a row
+    ends. Returns ({line: [(page, x, y, c0, c1)]}, (page, x, y) of an empty empty x empty cell). Lines are
+    placed widest first; one that fits the rest of a row goes into the row it fills best, one that fits
+    no row starts in the row with the most room left and goes on in the next."""
+    rows = []                                                     # [page, x, y, x1]
+    for pg, x0, y0, x1, y1 in areas:
+        y = y0
+        while y + height <= y1:
+            rows.append([pg, x0, y, x1])
+            y += height + gap
+    out = {}
+    for i in sorted(range(len(widths)), key=lambda i: -widths[i]):
+        c, w = 0, widths[i]
+        out[i] = []
+        while c < w:
+            fits = [r for r in rows if r[3] - r[1] >= w - c]
+            r = min(fits, key=lambda r: r[3] - r[1]) if fits else max(rows, key=lambda r: r[3] - r[1])
+            take = min(w - c, r[3] - r[1])
+            if take < min(12, w - c):
+                raise ValueError("no room for %d more columns of a line" % (w - c))
+            out[i].append((r[0], r[1], r[2], c, c + take))
+            r[1] += take + gap
+            c += take
+    for pg, x0, y0, x1, y1 in areas:                              # an empty cell: below the rows, or a row's end
+        if y1 - (y0 + ((y1 - y0 + gap) // (height + gap)) * (height + gap)) >= empty and x1 - x0 >= empty:
+            return out, (pg, x0, y1 - empty)
+    r = max(rows, key=lambda r: r[3] - r[1])
+    if r[3] - r[1] < empty:
+        raise ValueError("no room for the empty cell")
+    return out, (r[0], r[1], r[2])
+
+
+def repack_ribbon(group, d, bank, pages, patches, project=None):
+    """A group of sprite labels set as lines of big lettering ("ribbon": true; the umpire's calls). Each
+    label is a sprite; its text (lines split by \\n) is styled line by line, the lines are poured into the
+    areas by ribbon_pack, and part n of the sprite shows piece n (the rest show an empty cell). A line
+    drawn twice in the same style (HOME RUN in the two-run homer) is stored once. The label is centred on
+    the old art; lines stand `step` rows apart (default: line height - "overlap", 8)."""
+    def page(n):
+        if n not in pages:
+            pages[n] = U.decode_indices(d, *bank["pages"][n]).copy()
+        return pages[n]
+    gap = group.get("gap", [1, 1])[0]
+    labels, lines, keys = group["labels"], [], {}
+    plan = []                                    # per label: (parts, screen box, [(line, dx, dy)], W, H)
+    for lab in labels:
+        mine = next(ps for name, ps in bank["sprites"].items() if name.endswith("_" + lab["sprite"]))
+        box = None
+        for p in mine:
+            ys, xs = np.nonzero(page(p.page)[p.y0:p.y1, p.x0:p.x1])
+            if len(xs):
+                b = (p.x + xs.min(), p.y + ys.min(), p.x + xs.max() + 1, p.y + ys.max() + 1)
+                box = b if box is None else (min(box[0], b[0]), min(box[1], b[1]), max(box[2], b[2]), max(box[3], b[3]))
+        style = RENDER[lab.get("style", group.get("style"))]
+        font = lab.get("font", group.get("font"))
+        mine_lines = []
+        for t in lab["text"].split("\n"):
+            key = (lab.get("style", group.get("style")), font, t)
+            if key not in keys:
+                keys[key] = len(lines)
+                lines.append(style(*typeset(t, font, project))[0])
+            mine_lines.append(keys[key])
+        hs = [lines[n].shape[0] for n in mine_lines]
+        step = lab.get("line_step", hs[0] - lab.get("overlap", 8))
+        W = max(lines[n].shape[1] for n in mine_lines)
+        H = step * (len(hs) - 1) + hs[-1]
+        plan.append((mine, box, [(n, (W - lines[n].shape[1]) // 2, k * step) for k, n in enumerate(mine_lines)], W, H))
+    height = max(a.shape[0] for a in lines)
+    owned = {(p.page, p.x0, p.y0, p.x1, p.y1) for mine, *_ in plan for p in mine}
+    areas = [tuple(a) for a in group["areas"]]
+    clear = areas + sorted(owned)
+    for p in (p for ps in bank["sprites"].values() for p in ps):
+        key = (p.page, p.x0, p.y0, p.x1, p.y1)
+        if key not in owned and any(key[0] == r[0] and key[1] < r[3] and r[1] < key[3] and key[2] < r[4]
+                                    and r[2] < key[4] for r in clear):
+            raise ValueError("sprite %s uses x %d-%d y %d-%d of page %d, which this group clears"
+                             % (p.sprite, p.x0, p.x1, p.y0, p.y1, p.page))
+    where, (ep, ex, ey) = ribbon_pack([a.shape[1] for a in lines], height, areas, gap)
+    for pg, x0, y0, x1, y1 in clear:
+        page(pg)[y0:y1, x0:x1] = 0
+    for n, a in enumerate(lines):
+        for pg, x, y, c0, c1 in where[n]:
+            page(pg)[y:y + a.shape[0], x:x + c1 - c0] = a[:, c0:c1]
+    rows = []
+    for lab, (mine, box, ls, W, H) in zip(labels, plan):
+        left = (box[0] + box[2]) // 2 - W // 2 + lab.get("dx", 0)
+        top = (box[1] + box[3]) // 2 - H // 2 + lab.get("dy", 0)
+        pieces = [(pg, x, y, c0, c1, n, dx, dy) for n, dx, dy in ls for pg, x, y, c0, c1 in where[n]]
+        if len(pieces) > len(mine):
+            raise ValueError("%r needs %d parts, its sprite has %d" % (lab["text"], len(pieces), len(mine)))
+        for k, p in enumerate(mine):
+            if k < len(pieces):
+                pg, x, y, c0, c1, n, dx, dy = pieces[k]
+                data = U.pack_part(pg, p.flags, p.palette, top + dy, left + dx + c0, y, x, y + lines[n].shape[0], x + c1 - c0)
+            else:
+                data = U.pack_part(ep, 0, p.palette, p.y, p.x, ey, ex, ey + 4, ex + 4)
+            patches.append((p.offset, data))
+        rows.append((lab["text"].replace("\n", " / "), "%dx%d" % (box[2] - box[0], box[3] - box[1]),
+                     "%dx%d" % (W, H), "%d pieces" % len(pieces), len(mine)))
+    return rows
+
+
 def repack(group, d, bank, pages, patches, project=None):
     """Lay out the labels of one repack group. `pages` {page: index array} are edited in place;
     `patches` collects (file offset, 10 bytes) for the sprite parts. Returns report rows.
@@ -969,6 +1072,8 @@ def repack(group, d, bank, pages, patches, project=None):
     re-pointed and keeps its place) or by "sprite" (the end of an opd_ name: the whole sprite is one
     label, however many pieces it was drawn from; its first part shows the new art, the others are
     pointed at an empty cell)."""
+    if group.get("ribbon"):
+        return repack_ribbon(group, d, bank, pages, patches, project)
     areas = [tuple(a) for a in group["areas"]]
 
     def opt(lab, key, default=None):                 # a label can override the group's settings
