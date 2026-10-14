@@ -669,3 +669,31 @@ python3 tl.py export|apply|merge   # translation workflow: scenes out, English i
 python3 ui_strings.py export|apply|merge   # menu and system strings, English in translation/strings/*.tsv
 python3 ui_labels.py apply ui_specs/scs_main.json   # English lettering into a sprite sheet (.arc)
 ```
+
+
+## Pitch names of a match (2026-10-14, eleventh session)
+
+The name under the pitcher after a pitch ("ストレート 146 km/h") and on the pitch selector is **text in a
+code of its own**, not glyphs, sprites of a word or Shift-JIS: `gameplay.rel` sec5+0x29CD4 holds the 26
+standard names, one byte per letter, each closed by 0x7D, reached through 26 `R_PPC_ADDR32` at sec5+0x29DA8
+(the pitch type is the index; code reads the table at sec1+0x176A6). A byte indexes a table of sprite
+pointers that the game fills at run time (0x80A5CDB8 in a match) with the sprites of `gameplay.arc`
+`h3_kyu_0`, the font of the original-pitch names: blank, katakana in JIS order, ー, 0-9, A-Z, 号 超 真 改 魔 球
+(`kyu_names.CODES`). No lower case, no punctuation.
+
+How it was found: every search for the text (any 1-, 2- or 4-byte code, 12-bit packing, glyph numbers, SJIS,
+JIS, EUC, UTF-16, in the files and in memory) missed or was misread: one byte-pattern search did hit the block (ス = 0x19), but it was
+dismissed because the code had been assumed to be the sprite order. What worked: the font's sprite data (`opd_h3_kyu_0_*`)
+found in a save state by the bytes of one part rectangle (km/h), then a search for 32-bit pointers to those
+sprites, which lands on the code -> sprite table; the names sit right behind it. Save states were taken by
+`dolphin-test/looks/pitchnames/catch2.py` at the moment a name is on screen.
+
+`kyu_names.py` (list, check) and `translation/pitch_names.tsv`; the build lays the names out again in the
+212 bytes (shared tails) and rewrites the 26 addends; verify checks them. **The game draws 9 letters at
+most** (9 sprite slots, 12 pixels apart: "DROP CURVE" showed as "DROP CURV"), and a space leaves a gap wider
+than a letter, so the long names are SLOWBALL, SLOWCURVE, DROPCURVE, KN-CURVE, H-SLIDER, H-SINKER, H-SHUUTO,
+C-CHANGE, MOVING-FB; "-" is drawn with the long-vowel bar. Seen in game (COM vs COM, two games, about 290
+pitches read): FASTBALL, 2-SEAMER, SLIDER, FORK, CURVE, SHUUTO, CUTTER, CHANGEUP, C-CHANGE
+(`dolphin-test/looks/pitchnames/`). Not seen: the pitch selector of a 1P game; the rarer names.
+Original pitches keep the names the player typed (katakana); the font has A-Z, so English names
+can be typed there too.
