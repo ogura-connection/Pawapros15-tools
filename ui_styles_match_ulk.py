@@ -64,4 +64,6 @@ STYLES = {
     "ulk_b": banner([15, 15, 14, 13], [5, 6], [6, 6]),
     # the replay banners (pal 158): gold, navy outline and extrusion, white ring
     "ulk_c": banner([15, 14, 13, 12], [8, 8], [8, 8, 8], [7, 7]),
+    # position plates of main_prg.arc g3_pur (pals 0..4): white letters, a dark ring and a mid ring of the plate colour
+    "pur_pos": ui_type.tight(ui_type.banded([0, 1, 14, 13, 12, 11, 11], [1, 3, 6])),
 }
