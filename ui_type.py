@@ -923,6 +923,8 @@ RENDER = {
     "pausemenu": called([15, 14, 13, 12, 11], [8, 9, 10], 6, 6, 4, [6, 2], thick=1, wide=0, bandw=1),
     # pitch names of the match's pitch chart (main_prg.arc g3_np2, palette 14): white in a solid blue ring
     "pitchchart": tight(banded([0, 1, 1, 7, 7, 7, 7], [1])),
+    # the player panel of a match (main_prg.arc g3_np, palette 13): navy in a white ring, a teal shadow
+    "panel": tight(banded([0, 5, 6, 7, 8, 8, 8], [4, 4], 12)),
     # the substitution screen of a match (time.arc g3_tim)
     "subhead": tight(banded([0, 7, 6, 5, 3, 2, 1], [8, 8])),                 # column headers: navy in a white ring
     "subtab": tight(banded([0, 5, 4, 3, 2, 1, 1], [15, 13])),                # Batter / Bench: white in navy, italic

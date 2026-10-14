@@ -241,7 +241,7 @@
      ],
      "text": "IP",
      "baseline": 16,
-     "left": 0,
+     "left": 2,
      "align": "left"
     },
     {
@@ -254,7 +254,7 @@
      ],
      "text": "BF",
      "baseline": 16,
-     "left": 0,
+     "left": 2,
      "align": "left"
     },
     {
@@ -267,7 +267,7 @@
      ],
      "text": "BB",
      "baseline": 16,
-     "left": 0,
+     "left": 2,
      "align": "left"
     },
     {
@@ -280,7 +280,7 @@
      ],
      "text": "ER",
      "baseline": 17,
-     "left": 0,
+     "left": 2,
      "align": "left"
     },
     {
@@ -293,7 +293,7 @@
      ],
      "text": "NP",
      "baseline": 16,
-     "left": 3,
+     "left": 5,
      "align": "left"
     },
     {
@@ -306,7 +306,7 @@
      ],
      "text": "H",
      "baseline": 17,
-     "left": 3,
+     "left": 5,
      "align": "left"
     },
     {
@@ -319,7 +319,7 @@
      ],
      "text": "R",
      "baseline": 15,
-     "left": 4,
+     "left": 6,
      "align": "left"
     },
     {
@@ -332,7 +332,7 @@
      ],
      "text": "WP",
      "baseline": 16,
-     "left": 3,
+     "left": 5,
      "align": "left"
     },
     {
@@ -345,7 +345,7 @@
      ],
      "text": "SO",
      "baseline": 16,
-     "left": 3,
+     "left": 5,
      "align": "left"
     },
     {
@@ -358,7 +358,7 @@
      ],
      "text": "HR",
      "baseline": 17,
-     "left": -2,
+     "left": 0,
      "align": "left"
     },
     {
