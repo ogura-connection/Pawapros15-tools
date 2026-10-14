@@ -343,6 +343,14 @@ Words on screen (Success Mode), with where the lettering comes from:
 | パワフルズ カイザース キャットハンズ やんきーズ バルカンズ バスターズ | Powerfuls, Kaisers, Cathands, Yankiis, Vulcans, Busters | |
 | 役職 / 平社員 / 係長 / 課長 | Post / Rank & File / Kakaricho / Kacho | Arial Rounded Bold, in the three colourings of the Japanese plates |
 | 対戦 サクセス マイライフ ホームラン競争 アレンジ データあれこれ サウンド リモパワ ペナント 野球教室 応援曲 (main menu buttons) | Exhibition, Success, My Life, Home Run Derby, Arrange, My Data, Sound, Remo-Pawa, Pennant, Baseball School, Cheer Songs | Arial Rounded Bold in each button's own colours (`SMDL_TOP.rom`); My Data as in MLB Power Pros |
+| はじめる / 作った選手を見る・消す / リンクする世界 (Success start screen buttons) | Start / My Players / Linked World | `scs_titl.arc` `y5_scs_tit_0`; the help line says what My Players does |
+| 現在の登録人数 / 投手 / 野手 / クリア人数 / プロ入り人数 | Registered / Pit. / Fld. / Cleared / Turned Pro | the unit 人 is dropped |
+| 最初から / つづきから / 選手名鑑 / 卒業アルバム | New Game / Continue / Players / Album | |
+| ※注意！ このままゲームを始めると このセーブデータは消えてしまいます。 ゲームを始めますか？ | Warning! If you start a new game, this save data will be erased. Start the game? | `r4_sta`; answers: Yes, go ahead! / No, never mind. |
+| エンディングムービー再生 | Ending Movie | |
+| 利き腕 / 守備位置 / 投球フォーム / 打撃フォーム / 顔 を決めてください, これでいいですか？ (profile screens) | Choose your handedness / position / pitching form / batting form / face, Is this OK? | `scs_make.arc` `y5_cmk_0` |
+| 右投右打 ... 左投両打 (profile list) | Throws R, Bats R ... Throws L, Bats S | spelled out on the choosing screen; the Data screen keeps B/T |
+| 投手 捕手 一塁手 二塁手 三塁手 遊撃手 外野手 (profile list) | Pitcher, Catcher, 1st Base, 2nd Base, 3rd Base, Shortstop, Outfield | 二 / 三 share one 塁手 piece, hence 2nd / 3rd + Base |
 
 Practice menu (scs_rens.arc), tag font: 筋力 Weights, 打撃 Batting, 走塁 Running, 守備 Fielding, 精神 Mental,
 スタミナ Stamina, 球速 Velocity, 変化球 Breaking, 走り込み Roadwork, コントロール Control, 投球 Pitching,
