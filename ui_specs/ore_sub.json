@@ -5256,12 +5256,10 @@
     },
     {
      "sprite": "d8",
-     "text": "Tenses Up Behind in Count",
+     "text": "Presses at 2 Strikes",
      "style": "o3pm",
      "font": "ttf:din:13:0:1:0",
-     "valign": "centre",
-     "slices": true,
-     "slice_width": 120
+     "valign": "centre"
     },
     {
      "sprite": "d9",

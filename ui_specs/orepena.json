@@ -4616,9 +4616,9 @@
      ],
      "text": "vs Hiroshima",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc9g1b10",
-     "left": -3,
-     "baseline": 16
+     "font": "dc10g1b10",
+     "left": -6,
+     "baseline": 17
     },
     {
      "from": [
@@ -4633,9 +4633,9 @@
      ],
      "text": "vs Yakult",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc14g2b10",
-     "left": 0,
-     "baseline": 19
+     "font": "dc10g1b10",
+     "left": 11,
+     "baseline": 17
     },
     {
      "from": [
@@ -4650,9 +4650,9 @@
      ],
      "text": "vs Yokohama",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc9g1b10",
-     "left": -3,
-     "baseline": 16
+     "font": "dc10g1b10",
+     "left": -6,
+     "baseline": 17
     },
     {
      "from": [
@@ -4684,9 +4684,9 @@
      ],
      "text": "vs Orix",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc14g2b10",
-     "left": 9,
-     "baseline": 19
+     "font": "dc10g1b10",
+     "left": 17,
+     "baseline": 17
     },
     {
      "from": [
@@ -4701,8 +4701,8 @@
      ],
      "text": "vs Nippon-Ham",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc9g1b10",
-     "left": 1,
+     "font": "dc10g1b10",
+     "left": -2,
      "baseline": 17
     },
     {
@@ -4718,9 +4718,9 @@
      ],
      "text": "vs Seibu",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc12g2b10",
-     "left": -1,
-     "baseline": 18
+     "font": "dc10g1b10",
+     "left": 7,
+     "baseline": 17
     },
     {
      "from": [
@@ -4752,9 +4752,9 @@
      ],
      "text": "vs Lotte",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc14g2b10",
-     "left": 5,
-     "baseline": 20
+     "font": "dc10g1b10",
+     "left": 15,
+     "baseline": 18
     },
     {
      "from": [
@@ -4803,8 +4803,8 @@
      ],
      "text": "vs Surpass",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc11g2b10",
-     "left": 1,
+     "font": "dc10g1b10",
+     "left": 7,
      "baseline": 17
     },
     {

@@ -36,3 +36,8 @@ def _split(d, syms):
 _U.banks = _split
 
 STYLES = {}
+
+from ui_styles_orepena import solid          # also registers the font "din" and the DIN fonts
+# white letters (palette index 15 of the grey ramp of palettes 0 and 151), a solid near-black ring and a black ring outside it
+STYLES["gdo_white"] = solid(15, [2, 1], cut=3)
+STYLES["gdo_white1"] = solid(15, [1], cut=3)
