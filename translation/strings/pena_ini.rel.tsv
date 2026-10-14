@@ -15,14 +15,19 @@
 5	3984	c540	Set whether the DH rule is used.
 5	4032	3013	Set whether to hide players' Cond. marks.
 5	4100	b05b	Set whether games can be rained out.
+5	4168	bdce	Set whether games can be rained out.|{2:Set to Off if the game count changes.}
 5	4272	f598	Set whether trades happen.
+5	4312	a2f1	Set whether there are trades.|{2:Set to Off if the game count changes.}
 5	4404	31a8	Set whether interleague play is on.
 5	4444	b59b	Set whether the Climax Series is held.
 5	4720	3921	Set whether to hold the Climax Series.
 5	4776	5b0e	Set whether players can move teams via free|agency.
+5	4856	241b	Set whether players can move via free agency.|{2:Set to Off if the game count changes.}
 5	4960	a6cb	Set whether you can sign imports by scouting|foreigners.
+5	5028	6a00	Set whether you can sign scouted imports.|{2:Set to Off if the game count changes.}
 5	5132	5169	Set whether to use foreign player slots (max 4 on|1st Team).
 5	5200	345a	Set whether draft prospects can be scouted and|signed at the draft.
+5	5276	566a	Set whether you can scout and sign draft picks.|{2:Set to Off if the game count changes.}
 5	5384	1713	Set whether player abilities grow.
 5	5444	e187	Start Pennant right away|with basic settings?
 5	5504	3ab0	Pick one team and play.|Can't change players midway.

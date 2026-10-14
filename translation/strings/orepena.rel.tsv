@@ -16,6 +16,12 @@
 5	23968	a614	Quit My Life.
 5	23996	2288	Set My Life difficulty and control settings.
 5	24064	f583	Change the control settings.
+5	24096	4c4e	Recommended for beginners.|{2:Can't be changed once you start.}
+5	24184	89e0	A perfectly normal difficulty.|{2:Can't be changed once you start.}
+5	24272	d04c	A difficulty for experts.|{2:Can't be changed once you start.}
+5	24360	7754	Recommended for beginners.|{2:Can't change during play.}
+5	24440	e1f3	A perfectly normal difficulty.|{2:Can't change during play.}
+5	24520	a35d	A difficulty for experts.|{2:Can't change during play.}
 5	24600	217e	Pawapuro's recommended controls.
 5	24640	9b6e	Pick bases with the D-Pad.
 5	24680	217e	Pawapuro's recommended controls.
@@ -864,9 +870,18 @@
 5	43444	5a2b	Read: Stats up
 5	43464	ff6f	Learn to seize chances.
 5	43496	9309	Read to build your knowledge.
+5	43536	9bb4	Video game hobby {2:(needs console)}
+5	43576	bdd1	Bat used in games {6:(equipment)}
 5	43608	e045	Used in games
+5	43624	4198	Spikes for games {6:(equipment)}
+5	43660	1797	A comfy bat {6:(equipment)}
+5	43692	a63a	A bat that fits you {6:(equipment)}
 5	43728	5bdd	Perfect for you
+5	43748	813a	Spikes that fit you {6:(equipment)}
+5	43784	1c39	A just-right bat {6:(equipment)}
 5	43820	ab9c	Spot-on for you
+5	43840	ab54	Just-right spikes {6:(equipment)}
+5	43876	3a3c	A wristband {6:(equipment)}
 5	43908	7514	Solo Prac: Power up
 5	43936	5468	Solo Prac: Stamina up
 5	43968	6bf7	Solo Prac: Velocity up
@@ -995,9 +1010,11 @@
 5	47632	73b8	Mitt
 5	47640	4ca9	1st Base Mitt
 5	47660	fa7d	Spikes
+5	47688	003d	Master-made bat {6:(equipment)}
 5	47732	43ec	Glove artisan's ultimate
 5	47760	43ec	Glove artisan's ultimate
 5	47788	43ec	Glove artisan's ultimate
+5	47816	6e43	Master-made spikes {6:(equipment)}
 5	47902	ba93	Can't fast-forward the offseason.
 5	47948	bc03	Can't fast-forward from|the Japan Series on.
 5	48024	fb9e	Can't fast-forward from the|day before retirement game.
@@ -1275,7 +1292,9 @@
 5	102220	84ff	 etc. can be viewed.
 5	102370	301f	own data.
 5	102392	2ea8	View your items and heirloom items.|You can equip, use, or discard items.
+5	102536	f9d0	Items you equip go on the equipped items panel.|You always carry equipped items, so {6:you can use them on the road.}
 5	102802	af2f	.
+5	102812	ebb9	Home items can be stored, even ones you can't carry.|You can use them while at home, but {2:on the road you can't}|{2:use or discard them.}
 5	103112	71c8	 Do it.
 5	103162	fa71	View your base and special abilities.
 5	103292	6784	 location & training|menu details can be|viewed.

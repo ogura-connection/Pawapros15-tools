@@ -94,6 +94,7 @@
 5	16972	01aa	Show direction when pitching.
 5	17024	8a4c	Show direction and pitch type.
 5	17076	2e0f	Hide the pitch type you chose.
+5	17120	d258	The strike zone is not shown.|{6:(For experts)}
 5	17188	866f	Show the strike zone.
 5	17228	c3f3	Pitcher-view pitching.
 5	17260	f761	Pitch with the catcher window shown.
@@ -107,20 +108,31 @@
 5	17624	2ebd	Choose whether post-game event reports are shown.
 5	17696	448d	No report when a player is injured.
 5	17736	e680	Report when a player is injured.
+5	17776	f221	Reports when a player gets injured.|{6:(Stops the schedule fast-forward.)}
 5	17872	e9d1	No report on player joins or exits.
 5	17916	318a	Report when players join or leave.
+5	17960	857c	Reports when players join or leave.|{6:(Stops the schedule fast-forward.)}
 5	18056	9a3a	No trade news reports.
 5	18096	db87	Report trade news.
+5	18136	9447	Reports trade news.|{6:(Stops the schedule fast-forward.)}
 5	18232	ebb4	No reports from scouts.
 5	18272	1ff7	Report info from scouts.
+5	18312	4f0e	Reports news from your scouts.|{6:(Stops the schedule fast-forward.)}
 5	18408	8c03	No report of milestone events.
+5	18540	ad45	Reports events such as records set.|{2:(Stops the schedule fast-forward.)}
 5	18640	6b8c	No report when players improve.
+5	18772	4ca4	Reports when a player improves.|{6:(Stops the schedule fast-forward.)}
 5	18868	872f	No Coach Navi reports.
 5	18920	2a8c	Report Coach Navi info.
+5	18972	5e17	Reports Coach Navi advice.|{6:(Stops the schedule fast-forward.)}
 5	19068	d7a0	No report on Chemistry changes.
+5	19204	8075	Reports changes in Chemistry.|{6:(Stops the schedule fast-forward.)}
 5	19300	db7d	No report on fan count changes.
+5	19444	4d0f	Reports changes in the number of fans.|{6:(Stops the schedule fast-forward.)}
 5	19540	705a	No report on season fatigue.
+5	19684	9816	Reports on fatigue over the season.|{6:(Stops the schedule fast-forward.)}
 5	19780	c870	No game details when fast-forwarding.
+5	19920	734e	Shows game details in fast-forward.|{6:(Stops the schedule fast-forward.)}
 5	20068	a3ea	Now
 5	20076	9604	Yr
 5	20086	5fd9	Max years left
@@ -570,6 +582,7 @@
 5	76454	05aa	 will result, so be careful.
 5	76832	8d75	 is marked, and you can send scouts to chase.
 5	77062	24f9	 becomes key. Give your scouts good orders so other clubs don't take the players.
+5	77218	76ad	You can change your team's|scout. A new scout can't be|{2:changed for one year.}
 5	77362	e8a8	 Choose from these.
 5	77438	3451	 abilities decide this.|Scouts with higher abilities|get higher points.
 5	77544	6827	Command to tell a scout|directly which position|you want to reinforce.
@@ -580,6 +593,7 @@
 5	78204	5127	 depends on it.|Scouts with high|research skill check|abilities faster.
 5	78348	6d69	 becomes possible.
 5	78372	44e7	Negotiate with players|you scouted.|Usable from August on.
+5	78554	2f45	Even if another team picks|{6:them, they won't sign.}
 5	78736	a855	 Talks begin with them.
 5	78928	606e	 depends on the Player Rep chosen, and so do the affected players.
 5	79218	1b5b	 also drops.
