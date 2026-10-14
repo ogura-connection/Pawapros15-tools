@@ -694,6 +694,36 @@ def logo(fill, soft, outline, white, rim, shadow, band=2, thick=1):
     return style
 
 
+def called(fill, soft, outline, white, band, shadow, thick=2, wide=2, bandw=3, drop=(1, 0)):
+    """A style: the umpire's calls of a match (gameplay.arc h3_stf_0). Letters filled from `fill`[0] at the
+    top to `fill`[-1] at the foot (`soft` = colours between outline and fill), an `outline` `thick` pixels
+    wide, a `white` band `wide` pixels, a coloured `band` `bandw` pixels round everything, and a `shadow`
+    (near to far) cast below it: each step moves drop[0] down and drop[1] right."""
+    def style(ink, base):
+        pad = thick + wide + bandw + len(shadow) * max(drop) + 1
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        dark = grow(letters, thick)
+        plate = grow(dark, wide)
+        outer = grow(plate, bandw)
+        out = np.zeros(big.shape, np.uint8)
+        for k in range(len(shadow), 0, -1):
+            out[shift(outer, k * drop[0], k * drop[1])] = shadow[k - 1]
+        out[outer] = band
+        out[plate] = white
+        out[dark] = outline
+        ys = np.nonzero(letters.any(1))[0]
+        f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+        row = np.array(fill)[np.rint(f.clip(0, 1) * (len(fill) - 1)).astype(int)][:, None]
+        low = np.array([outline] + list(soft) + [0], np.uint8)[np.rint(big * (len(soft) + 1) / 6.0).astype(int)]
+        out[letters] = np.where(big >= 6, np.broadcast_to(row, big.shape), low)[letters]
+        ys, xs = np.nonzero(out)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base + pad - ys.min()
+    return style
+
+
 def captioned(ramp, outline, soft, ring=2, depth=2):
     """A style: the scene captions. Letters drawn with `ramp` in a solid `outline` `ring` pixels wide that is
     also cast `depth` pixels down and to the right; `soft` colours the inner corners of the outer edge."""
@@ -874,6 +904,12 @@ RENDER = {
     # shadow (palette 14); the button words, dark letters on a white band in blue rings (25, 26, 28)
     "namehead": logo([13, 13, 11, 11, 10, 10], [8], 3, 15, 14, [7, 6], 2, 2),
     "namebutton": banded([0, 10, 11, 12, 13, 14, 15], [9, 9, 7, 5]),
+    # the umpire's calls of a match (gameplay.arc h3_stf_0), one per palette of the bank
+    "call0": called([15, 14, 13, 12, 11], [3, 7], 1, 10, 2, [6, 6, 6, 6]),      # blue: Play Ball, Time, Ball
+    "call1": called([15, 14, 13, 12], [2, 3], 1, 11, 4, [6, 7, 7, 7]),          # yellow on olive: Strike, Foul
+    "call2": called([9, 10, 11, 13], [6, 7], 5, 14, 1, [4, 4, 4, 4]),           # green: Walk, Safe, Hit ...
+    "call3": called([9, 10, 11, 12, 13], [2, 3], 1, 15, 4, [6, 7, 7, 7]),       # pink: Out, Change, Game Set
+    "call5": called([6, 7, 8, 9], [2, 4], 1, 10, 15, [13, 12, 12, 12]),         # yellow on pink: home runs
 }
 
 
@@ -976,6 +1012,7 @@ def repack(group, d, bank, pages, patches, project=None):
             raise ValueError("sprite %s uses x %d-%d y %d-%d of page %d, which this group clears"
                              % (p.sprite, p.x0, p.x1, p.y0, p.y1, p.page))
     art = []
+    sliced = {}                                # label index: (cuts, full width) of a label cut into strips
     extra = []                                 # (label index, art) of the second and later pieces of a label
     for k, (lab, (mine, box)) in enumerate(zip(labels, old)):
         style = RENDER[opt(lab, "style", "command")]
@@ -983,6 +1020,14 @@ def repack(group, d, bank, pages, patches, project=None):
             arts = [style(*typeset(pc["text"], opt(lab, "font", "command"), project)) for pc in lab["pieces"]]
             art.append(arts[0])
             extra += [(k, a) for a in arts[1:]]
+        elif "text" in lab and lab.get("slices"):  # wider than a part: cut into strips, one part each
+            full, base = style(*typeset(lab["text"], opt(lab, "font", "command"), project))
+            n = -(-full.shape[1] // lab.get("slice_width", U.PAGE))
+            cuts = np.linspace(0, full.shape[1], n + 1).astype(int)
+            strips = [full[:, cuts[j]:cuts[j + 1]] for j in range(n)]
+            sliced[k] = (cuts, full.shape[1])
+            art.append((strips[0], base))
+            extra += [(k, (s, base)) for s in strips[1:]]
         elif "text" in lab:
             art.append(style(*typeset(lab["text"], opt(lab, "font", "command"), project)))
         elif "art" in lab:
@@ -1024,6 +1069,28 @@ def repack(group, d, bank, pages, patches, project=None):
         if opt(lab, "left") is not None:
             left = opt(lab, "left")
         per = len(mine) // opt(lab, "layers", 1) if "sprite" in lab else 1
+        if i in sliced:                                          # strip n is drawn by part n of the sprite
+            cuts, full_w = sliced[i]
+            more = [placed[len(labels) + 1 + j] for j, (li, a) in enumerate(extra) if li == i]
+            spots = [(pg, x, y)] + more
+            if len(spots) > len(mine):
+                raise ValueError("%s needs %d parts, its sprite has %d" % (lab["text"], len(spots), len(mine)))
+            centre = lab.get("centre_x", (box[0] + box[2]) // 2)
+            left = opt(lab, "left", centre - full_w // 2)
+            for n, p in enumerate(mine):
+                if n < len(spots):
+                    sp, sx, sy = spots[n]
+                    sw = cuts[n + 1] - cuts[n]
+                    if n:
+                        page(sp)[sy:sy + h, sx:sx + sw] = extra[[j for j, (li, _) in enumerate(extra) if li == i][n - 1]][1][0]
+                    data = U.pack_part(sp, p.flags, p.palette, top, left + cuts[n], sy, sx, sy + h, sx + sw)
+                else:
+                    sp, sx, sy = placed[len(labels)]
+                    data = U.pack_part(sp, 0, p.palette, p.y, p.x, sy, sx, sy + 4, sx + 4)
+                patches.append((p.offset, data))
+            rows.append((lab["text"], "%dx%d" % (box[2] - box[0], box[3] - box[1]), "%dx%d" % (full_w, h),
+                         "page %d x %d y %d +%d strips" % (pg, x, y, len(spots) - 1), len(mine)))
+            continue
         if "pieces" in lab:                                      # piece n is drawn by part n, left to right
             more = [(placed[len(labels) + 1 + j], a) for j, (li, a) in enumerate(extra) if li == i]
             join = opt(lab, "join", 0)                           # pixels a piece overlaps the one before
