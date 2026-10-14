@@ -829,6 +829,15 @@ RENDER = {
     "titlecount": banded([0, 5, 7, 9, 11, 13, 15], [1]),
     # Cleared / Turned Pro: navy letters on a white band with a grey shadow (45)
     "titleclear": banded([0, 12, 10, 9, 1, 2, 3], [15, 15], 5),
+    # the overwrite warning (r4_sta): red lines (palette 27) and black lines (28), each a ramp to white, in a
+    # white band; the heading, yellow in a thick blue outline on white (25; palette 26 draws it again in one
+    # colour as its shadow)
+    "warnline": banded([0, 12, 9, 7, 4, 2, 1], [15, 15, 15]),
+    "warnhead": logo([10, 10, 11, 11, 12, 12], [15, 14, 9], 1, 7, 7, [], 2, 2),
+    # Cleared on the album page: green letters on a white band inside blue rings (1); the movie button: white
+    # letters in thick navy (2)
+    "albumclear": banded([0, 9, 8, 6, 4, 2, 1], [10, 10, 12, 14, 15]),
+    "albummovie": banded([0, 6, 8, 10, 12, 14, 15], [3, 3, 3]),
 }
 
 
