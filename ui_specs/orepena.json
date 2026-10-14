@@ -12246,7 +12246,7 @@
      "sprites": [
       "2a"
      ],
-     "text": "SELECT: Sort",
+     "text": "SELECT:",
      "style": "o2_ff64_r36_s0_c2",
      "font": "dc14g2b10",
      "left": 24,
@@ -12263,7 +12263,11 @@
      "sprites": [
       "2a"
      ],
-     "empty": true
+     "text": "Sort",
+     "style": "o2_ff64_r36_s0_c2",
+     "font": "dc14g2b10",
+     "left": 15,
+     "baseline": 20
     }
    ],
    "under": 3
