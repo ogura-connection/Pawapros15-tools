@@ -10064,9 +10064,9 @@
      ],
      "text": "Fix Errors",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc13g2b10",
-     "left": 1,
-     "baseline": 18
+     "font": "nb14",
+     "left": 7,
+     "baseline": 17
     },
     {
      "from": [
@@ -10192,9 +10192,9 @@
      ],
      "text": "Fix Temper",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc11g2b10",
-     "left": 1,
-     "baseline": 18
+     "font": "nb14",
+     "left": 5,
+     "baseline": 17
     },
     {
      "from": [
@@ -10333,9 +10333,9 @@
      ],
      "text": "Golf Range",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc11g2b10",
-     "left": 2,
-     "baseline": 17
+     "font": "nb14",
+     "left": 4,
+     "baseline": 16
     },
     {
      "from": [
@@ -10863,9 +10863,9 @@
      ],
      "text": "Good Pupil",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc12g2b10",
-     "left": 0,
-     "baseline": 18
+     "font": "nb14",
+     "left": 4,
+     "baseline": 17
     },
     {
      "from": [
@@ -10880,9 +10880,9 @@
      ],
      "text": "Good Mixer",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc11g2b10",
-     "left": 0,
-     "baseline": 18
+     "font": "nb14",
+     "left": 2,
+     "baseline": 17
     },
     {
      "from": [
@@ -10957,9 +10957,9 @@
      ],
      "text": "Elite Mark",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc13g2b10",
-     "left": -1,
-     "baseline": 18
+     "font": "nb14",
+     "left": 8,
+     "baseline": 17
     },
     {
      "from": [
@@ -11055,9 +11055,9 @@
      ],
      "text": "Retire Vow",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc11g2b10",
-     "left": 2,
-     "baseline": 18
+     "font": "nb14",
+     "left": 4,
+     "baseline": 17
     },
     {
      "from": [
@@ -11102,9 +11102,9 @@
      ],
      "text": "Weights",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc13g2b10",
-     "left": 5,
-     "baseline": 18
+     "font": "nb14",
+     "left": 11,
+     "baseline": 16
     },
     {
      "from": [
@@ -11119,9 +11119,9 @@
      ],
      "text": "Autograph",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc12g2b10",
-     "left": -1,
-     "baseline": 18
+     "font": "nb14",
+     "left": 5,
+     "baseline": 16
     },
     {
      "from": [
@@ -11136,9 +11136,9 @@
      ],
      "text": "Trajectory",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc11g2b10",
-     "left": -9,
-     "baseline": 18
+     "font": "nb14",
+     "left": -4,
+     "baseline": 17
     },
     {
      "from": [
@@ -11221,9 +11221,9 @@
      ],
      "text": "Power +10",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc12g2b10",
-     "left": -2,
-     "baseline": 17
+     "font": "nb14",
+     "left": 6,
+     "baseline": 16
     },
     {
      "from": [
@@ -11302,9 +11302,9 @@
      ],
      "text": "Error Res.",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc13g2b10",
-     "left": 0,
-     "baseline": 18
+     "font": "nb14",
+     "left": 6,
+     "baseline": 17
     },
     {
      "from": [
@@ -11379,9 +11379,9 @@
      ],
      "text": "Control +5",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc11g2b10",
-     "left": -2,
-     "baseline": 18
+     "font": "nb14",
+     "left": 2,
+     "baseline": 17
     },
     {
      "from": [
@@ -11593,9 +11593,9 @@
      ],
      "text": "Date: Luna",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc12g2b10",
-     "left": -1,
-     "baseline": 18
+     "font": "nb14",
+     "left": 6,
+     "baseline": 16
     },
     {
      "from": [
@@ -11640,9 +11640,9 @@
      ],
      "text": "Date: Miho",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc12g2b10",
-     "left": 0,
-     "baseline": 18
+     "font": "nb14",
+     "left": 6,
+     "baseline": 16
     },
     {
      "from": [
@@ -11721,9 +11721,9 @@
      ],
      "text": "Treatment",
      "style": "o2_ff_r77_s0_c1",
-     "font": "dc13g2b10",
-     "left": -9,
-     "baseline": 18
+     "font": "nb14",
+     "left": -2,
+     "baseline": 17
     },
     {
      "from": [
@@ -12009,8 +12009,8 @@
      ],
      "text": "Newscaster",
      "style": "o2_ff_r11_s0_c1",
-     "font": "dc12g2b10",
-     "left": 2,
+     "font": "nb14",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -12077,8 +12077,8 @@
      ],
      "text": "Konbini Clerk",
      "style": "o2_ff_r11_s0_c1",
-     "font": "dc11g2b10",
-     "left": 0,
+     "font": "nb14",
+     "left": 6,
      "baseline": 18
     }
    ],
