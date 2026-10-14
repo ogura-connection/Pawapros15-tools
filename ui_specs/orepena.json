@@ -14403,9 +14403,9 @@
      ],
      "text": "Last",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": 34,
-     "baseline": 43
+     "font": "dc28g2b10",
+     "left": 59,
+     "baseline": 41
     },
     {
      "from": [
@@ -14418,11 +14418,11 @@
      "sprites": [
       "00"
      ],
-     "text": "Day of a",
+     "text": "Day of",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": -21,
-     "baseline": 43
+     "font": "dc28g2b10",
+     "left": -7,
+     "baseline": 41
     },
     {
      "from": [
@@ -14435,11 +14435,11 @@
      "sprites": [
       "00"
      ],
-     "text": "Baseball",
+     "text": "a Baseball",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": -21,
-     "baseline": 43
+     "font": "dc28g2b10",
+     "left": -48,
+     "baseline": 41
     },
     {
      "from": [
@@ -14454,9 +14454,9 @@
      ],
      "text": "Life...",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": -20,
-     "baseline": 43
+     "font": "dc28g2b10",
+     "left": -40,
+     "baseline": 41
     },
     {
      "from": [
@@ -14469,11 +14469,11 @@
      "sprites": [
       "01"
      ],
-     "text": "The Grand Stage of Fate",
+     "text": "The Grand",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": -22,
-     "baseline": 40
+     "font": "dc28g2b10",
+     "left": 0,
+     "baseline": 38
     },
     {
      "from": [
@@ -14486,7 +14486,11 @@
      "sprites": [
       "01"
      ],
-     "empty": true
+     "text": "Stage",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc28g2b10",
+     "left": 4,
+     "baseline": 38
     },
     {
      "from": [
@@ -14499,7 +14503,11 @@
      "sprites": [
       "01"
      ],
-     "empty": true
+     "text": "of Fate",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc28g2b10",
+     "left": -46,
+     "baseline": 38
     },
     {
      "from": [
@@ -14525,11 +14533,11 @@
      "sprites": [
       "02"
      ],
-     "text": "Koshien Championship Final",
+     "text": "Koshien",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": -17,
-     "baseline": 40
+     "font": "dc28g2b10",
+     "left": 89,
+     "baseline": 38
     },
     {
      "from": [
@@ -14542,7 +14550,11 @@
      "sprites": [
       "02"
      ],
-     "empty": true
+     "text": "Final",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc28g2b10",
+     "left": 66,
+     "baseline": 38
     },
     {
      "from": [
@@ -14609,9 +14621,9 @@
      ],
      "text": "College",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": 50,
-     "baseline": 39
+     "font": "dc28g2b10",
+     "left": 66,
+     "baseline": 37
     },
     {
      "from": [
@@ -14626,9 +14638,9 @@
      ],
      "text": "National",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": 33,
-     "baseline": 39
+     "font": "dc28g2b10",
+     "left": 37,
+     "baseline": 37
     },
     {
      "from": [
@@ -14643,9 +14655,9 @@
      ],
      "text": "Final",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": 28,
-     "baseline": 39
+     "font": "dc28g2b10",
+     "left": 18,
+     "baseline": 37
     },
     {
      "from": [
@@ -14684,11 +14696,11 @@
      "sprites": [
       "04"
      ],
-     "text": "Industrial League Final",
+     "text": "Industrial",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": 16,
-     "baseline": 40
+     "font": "dc28g2b10",
+     "left": 34,
+     "baseline": 38
     },
     {
      "from": [
@@ -14701,7 +14713,11 @@
      "sprites": [
       "04"
      ],
-     "empty": true
+     "text": "League",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc28g2b10",
+     "left": 33,
+     "baseline": 38
     },
     {
      "from": [
@@ -14714,7 +14730,11 @@
      "sprites": [
       "04"
      ],
-     "empty": true
+     "text": "Final",
+     "style": "o2_ff_rf_s0_c2",
+     "font": "dc28g2b10",
+     "left": -1,
+     "baseline": 38
     },
     {
      "from": [
@@ -14742,9 +14762,9 @@
      ],
      "text": "The",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": 82,
-     "baseline": 40
+     "font": "dc28g2b10",
+     "left": 95,
+     "baseline": 38
     },
     {
      "from": [
@@ -14759,9 +14779,9 @@
      ],
      "text": "Fateful",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": 13,
-     "baseline": 40
+     "font": "dc28g2b10",
+     "left": 19,
+     "baseline": 38
     },
     {
      "from": [
@@ -14776,9 +14796,9 @@
      ],
      "text": "Final",
      "style": "o2_ff_rf_s0_c2",
-     "font": "dc32g2b10",
-     "left": -5,
-     "baseline": 40
+     "font": "dc28g2b10",
+     "left": -13,
+     "baseline": 38
     },
     {
      "from": [
