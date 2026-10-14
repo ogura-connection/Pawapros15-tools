@@ -6,8 +6,8 @@ as its own PNG and read with the Mac's text recognition, so later projects can f
 
 PROJECT.BIN is the disc's project.bin, TEXTURES.TSV the list `mlb_assets.py textures` wrote (pack, count of
 textures, ...). Writes OUT_DIR/<pack>/<tex>_<l>_<t>_<r>_<b>.png (RGBA as the game's palette has it; a
-texture whose palette is filled in at run time comes out as grey levels of its indices, the way the MLB
-games tint it) and OUT_DIR/index.tsv: game, pack, texture, box, text, confidence, file. Boxes in which
+texture whose palette is filled in at run time, or whose stored palette does not read, comes out as grey
+levels of its indices, the way the MLB games tint it) and OUT_DIR/index.tsv: game, pack, texture, box, text, confidence, file. Boxes in which
 nothing is read are not kept. Photos, faces, backgrounds, credits and runner portraits are skipped.
 Needs dolphin-test/ocr/ocr (swiftc -O ocr.swift -o ocr). The output is game art: keep it out of this repository.
 """
@@ -28,10 +28,14 @@ SKIP = ("ScsBG", "ScsFace", "env_credit", "env_game_runner", "env_arrange_logo",
         "PMmot", "ScsBadEnd", "ScsGameOver")
 
 
+def grey(idx, fmt):
+    v = (idx.astype(np.int32) * (17 if fmt == 8 else 1)).clip(0, 255).astype(np.uint8)
+    return np.dstack([v, v, v, np.where(idx > 0, 255, 0).astype(np.uint8)])
+
+
 def rgba(idx, pal, fmt):
     if pal[:, 3].max() == 0:                         # palette set at run time: grey levels of the indices
-        v = (idx.astype(np.int32) * (17 if fmt == 8 else 1)).clip(0, 255).astype(np.uint8)
-        return np.dstack([v, v, v, np.where(idx > 0, 255, 0).astype(np.uint8)])
+        return grey(idx, fmt)
     return np.asarray(pal, np.uint8)[idx]
 
 
@@ -51,7 +55,7 @@ def main():
                 idx, pal, fmt = L.mlb_texture(pack, t, project)
             except Exception:
                 continue
-            img = rgba(idx, pal, fmt)
+            img, gimg = rgba(idx, pal, fmt), grey(idx, fmt)
             ok = lambda bx: 6 <= bx[3] - bx[1] <= 96 and 6 <= bx[2] - bx[0] <= 512
             # the ink threshold that gives the most label-sized boxes (a run-time palette leaves the
             # background on a low index that is not 0, and the glow can join two rows)
@@ -61,30 +65,35 @@ def main():
                 w, h = r - l, b - tp
                 if (idx[tp:b, l:r] >= best[0]).sum() < 30:
                     continue
-                crop = Image.fromarray(np.ascontiguousarray(img[tp:b, l:r]), "RGBA")
                 name = "%s/%d_%d_%d_%d_%d.png" % (pack, t, l, tp, r, b)
-                show = Image.new("RGBA", crop.size, (40, 40, 60, 255))
-                show.alpha_composite(crop)
-                q = os.path.join(tmp, "%d.png" % len(jobs))
-                show.convert("RGB").resize((w * 3, h * 3), Image.LANCZOS).save(q)
-                jobs.append((q, crop, name, pack, t, (l, tp, r, b)))
+                for kind, src in (("", img), ("~grey", gimg)):     # some stored palettes are junk (tinted
+                    crop = Image.fromarray(np.ascontiguousarray(src[tp:b, l:r]), "RGBA")   # at run time):
+                    show = Image.new("RGBA", crop.size, (40, 40, 60, 255))           # read both, keep the
+                    show.alpha_composite(crop)                                       # one that reads
+                    q = os.path.join(tmp, "%d%s.png" % (len(jobs), kind))
+                    show.convert("RGB").resize((w * 3, h * 3), Image.LANCZOS).save(q)
+                    jobs.append((q, crop, name, pack, t, (l, tp, r, b)))
     print("%d boxes to read" % len(jobs), flush=True)
     for a in range(0, len(jobs), 200):
-        batch = jobs[a:a + 200]
+        batch = jobs[a:a + 200]          # 200 is even: the two readings of a box stay in one batch
         r = subprocess.run([OCR], input="\n".join(j[0] for j in batch) + "\n", capture_output=True, text=True)
         read = {}
         for line in r.stdout.splitlines():
             d = json.loads(line)
             read[d["p"]] = d["l"]
+        best = {}
         for q, crop, name, pack, t, box in batch:
             ls = read.get(q, [])
             text = " ".join(x["t"] for x in sorted(ls, key=lambda x: (round(x["y"], 1), x["x"]))).strip()
-            if text:
+            conf = min((x.get("c", 0) for x in ls), default=0)
+            if text and (name not in best or conf > best[name][1]):
+                best[name] = (text, conf, crop, pack, t, box)
+            os.remove(q)
+        for name, (text, conf, crop, pack, t, box) in best.items():
+            if True:
                 os.makedirs(os.path.join(out, pack), exist_ok=True)
                 crop.save(os.path.join(out, name))
-                conf = min(x.get("c", 0) for x in ls)
                 rows.append((game, pack, t, "%d,%d,%d,%d" % box, text.replace("\t", " "), "%.2f" % conf, name))
-            os.remove(q)
         print("  %d / %d read, %d kept" % (min(a + 200, len(jobs)), len(jobs), len(rows)), flush=True)
     with open(os.path.join(out, "index.tsv"), "w", encoding="utf-8") as f:
         f.write("game\tpack\ttexture\tbox\ttext\tconfidence\tfile\n")
