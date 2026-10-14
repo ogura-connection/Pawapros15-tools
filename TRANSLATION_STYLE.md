@@ -387,6 +387,11 @@ Pitch names on the HUD use MLB Power Pros 2008's English names, shortened where 
 
 "Shuuto" is the spelling of the English games (not Hepburn "shuto"). H is 高速: "Hard", as in MLB.
 
+In a match the name under the pitcher and on the pitch selector is text in the original-pitch font
+(`kyu_names.py`, `translation/pitch_names.tsv`): capitals, 9 letters at most, no spaces. There the long names
+are SLOWBALL, SLOWCURVE, DROPCURVE, KN-CURVE, H-SLIDER, H-SINKER, H-SHUUTO, C-CHANGE, MOVING-FB, and
+ウエスト (pitchout) is PITCHOUT.
+
 Data screen (scs_data.arc, scs_sys.arc), Arial Rounded Bold in the colours of the Japanese labels:
 
 | Japanese | English |

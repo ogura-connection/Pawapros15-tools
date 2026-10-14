@@ -11,7 +11,8 @@ reads the table at sec1+0x176A6). A byte is an index into a table of sprite poin
 fills at run time (at 0x80A5CDB8 in a match): the sprites of gameplay.arc bank h3_kyu_0, the font of
 the original-pitch names. Its letters, in byte order, are CODES: katakana, the long-vowel bar, digits,
 capital A-Z and six kanji. There is no lower case and no punctuation: the English is written in capitals,
-"-" is drawn with the long-vowel bar.
+"-" is drawn with the long-vowel bar. The game draws MAX_LETTERS letters at most (9 sprite slots, 12 pixels
+apart: "DROP CURVE" showed as "DROP CURV"), and a space leaves a gap wider than a letter.
 
 The English is in translation/pitch_names.tsv (number, tab, English). The build lays the 26 names out
 again in their 212 bytes (a name that is the end of another shares its bytes: SLIDER in HARD SLIDER) and
@@ -26,6 +27,7 @@ import ui_strings
 HERE = os.path.dirname(os.path.abspath(__file__))
 TSV = os.path.join(HERE, "translation", "pitch_names.tsv")
 END = 0x7D
+MAX_LETTERS = 9
 CODES = (" ァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポ"
          "マミムメモャヤュユョヨラリルレロワヲンヴー0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ号超真改魔球")
 BLOCKS = {"gameplay.rel": {"section": 5, "start": 0x29CD4, "end": 0x29DA8, "table": 0x29DA8, "count": 26}}
@@ -34,6 +36,8 @@ BLOCKS = {"gameplay.rel": {"section": 5, "start": 0x29CD4, "end": 0x29DA8, "tabl
 def encode(text):
     """English -> bytes (without the end mark)."""
     out = []
+    if len(text) > MAX_LETTERS:
+        raise ValueError("%r: the game draws %d letters at most" % (text, MAX_LETTERS))
     for ch in text.upper().replace("-", "ー"):
         if ch not in CODES:
             raise ValueError("%r: the pitch-name font has no %r (A-Z, 0-9, space and - only)" % (text, ch))

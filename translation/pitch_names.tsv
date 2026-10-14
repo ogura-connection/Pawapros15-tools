@@ -1,28 +1,29 @@
-# Pitch names of a match (kyu_names.py): number<TAB>English. Capitals, digits, space and - only.
+# Pitch names of a match (kyu_names.py): number<TAB>English. Capitals, digits and - only, 9 letters at most
+# (the game draws 9; a space leaves a wide gap, so none is used).
 # Wording: TRANSLATION_STYLE.md, "Pitch names on the HUD" (MLB Power Pros 2008).
 0	SLIDER
 1	CURVE
 2	FORK
 3	SINKER
 4	SHUUTO
-5	SLOW BALL
+5	SLOWBALL
 6	FASTBALL
 7	PALM
 8	KNUCKLE
 9	V-SLIDER
 10	SPLITTER
 11	SCREWBALL
-12	SLOW CURVE
-13	HARD SLIDER
+12	SLOWCURVE
+13	H-SLIDER
 14	CHANGEUP
 15	DROP
-16	HARD SINKER
+16	H-SINKER
 17	SLURVE
 18	CUTTER
-19	CIRCLE CHANGE
-20	HARD SHUUTO
-21	DROP CURVE
-22	KNUCKLE CURVE
+19	C-CHANGE
+20	H-SHUUTO
+21	DROPCURVE
+22	KN-CURVE
 23	2-SEAMER
-24	MOVING FASTBALL
+24	MOVING-FB
 25	PITCHOUT
