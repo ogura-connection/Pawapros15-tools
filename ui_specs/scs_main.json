@@ -1285,13 +1285,13 @@
     {
      "box": [
       30,
-      12,
+      13,
       205,
-      42
+      44
      ],
-     "bg": "rows",
+     "bg": "cols",
      "text": "Lineup Card",
-     "font": "ttf:rounded:15:0.15:0.9:0.3",
+     "font": "ttf:rounded:17:0.15:0.9:0.3",
      "colour": "#ffffff",
      "rings": [
       "#6a9cbd"
@@ -1306,11 +1306,11 @@
       255,
       22,
       476,
-      82
+      84
      ],
-     "bg": "rows",
+     "bg": "cols",
      "text": "Pawafuru Corp.",
-     "font": "ttf:rounded:26:0.1:0.85:0.4",
+     "font": "ttf:rounded:24:0.1:0.85:0.4",
      "colour": "#ffffff",
      "rings": [
       "#6d94b4",
@@ -1448,7 +1448,7 @@
       143
      ],
      "bg": "mode",
-     "text": "Throws",
+     "text": "Thr.",
      "font": "ttf:din:11:0:1:0",
      "colour": "#106a7b",
      "crisp": true
@@ -1462,13 +1462,13 @@
     {
      "box": [
       30,
-      12,
+      13,
       205,
-      42
+      44
      ],
-     "bg": "rows",
+     "bg": "cols",
      "text": "Lineup Card",
-     "font": "ttf:rounded:15:0.15:0.9:0.3",
+     "font": "ttf:rounded:17:0.15:0.9:0.3",
      "colour": "#e2f6fe",
      "rings": [
       "#6188a5"
@@ -1483,11 +1483,11 @@
       255,
       22,
       476,
-      82
+      84
      ],
-     "bg": "rows",
+     "bg": "cols",
      "text": "Kagurazaka Group",
-     "font": "ttf:rounded:26:0.1:0.85:0.4",
+     "font": "ttf:rounded:19:0.1:0.85:0.4",
      "colour": "#eef6ff",
      "rings": [
       "#6b93af",
@@ -1543,8 +1543,8 @@
      "box": [
       29,
       81,
-      51,
-      95
+      52,
+      96
      ],
      "bg": "mode",
      "text": "No.",
@@ -1625,7 +1625,7 @@
       143
      ],
      "bg": "mode",
-     "text": "Throws",
+     "text": "Thr.",
      "font": "ttf:din:11:0:1:0",
      "colour": "#267585",
      "crisp": true
@@ -1639,13 +1639,13 @@
     {
      "box": [
       30,
-      12,
+      13,
       205,
-      42
+      44
      ],
-     "bg": "rows",
+     "bg": "cols",
      "text": "Lineup Card",
-     "font": "ttf:rounded:15:0.15:0.9:0.3",
+     "font": "ttf:rounded:17:0.15:0.9:0.3",
      "colour": "#e6f6ff",
      "rings": [
       "#7dadd1"
@@ -1660,11 +1660,11 @@
       255,
       22,
       476,
-      82
+      84
      ],
-     "bg": "rows",
+     "bg": "cols",
      "text": "Otori Phoenix",
-     "font": "ttf:rounded:26:0.1:0.85:0.4",
+     "font": "ttf:rounded:24:0.1:0.85:0.4",
      "colour": "#e6f6ff",
      "rings": [
       "#5e92aa",
@@ -1802,7 +1802,7 @@
       143
      ],
      "bg": "mode",
-     "text": "Throws",
+     "text": "Thr.",
      "font": "ttf:din:11:0:1:0",
      "colour": "#2f7898",
      "crisp": true
