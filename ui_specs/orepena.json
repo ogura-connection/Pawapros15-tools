@@ -12587,20 +12587,6 @@
    "share": true,
    "areas": [
     [
-     0,
-     0,
-     72,
-     72,
-     80
-    ],
-    [
-     1,
-     0,
-     72,
-     72,
-     80
-    ],
-    [
      2,
      24,
      0,
@@ -12700,7 +12686,7 @@
      "text": "Slider",
      "style": "o2_f8_r8_s0_c2",
      "font": "dc16g2b10",
-     "left": 3,
+     "left": 2,
      "baseline": 16
     },
     {
@@ -12717,7 +12703,7 @@
      "text": "Curve",
      "style": "o2_f8_r8_s0_c2",
      "font": "dc16g2b10",
-     "left": 0,
+     "left": 4,
      "baseline": 16
     },
     {
@@ -12734,7 +12720,7 @@
      "text": "Fork",
      "style": "o2_f8_r8_s0_c2",
      "font": "dc15g2b10",
-     "left": 11,
+     "left": 3,
      "baseline": 16
     },
     {
@@ -12764,7 +12750,7 @@
      "text": "Sinker",
      "style": "o2_f8_r8_s0_c2",
      "font": "dc16g2b10",
-     "left": 2,
+     "left": 3,
      "baseline": 16
     },
     {
@@ -12781,7 +12767,7 @@
      "text": "Shuuto",
      "style": "o2_f8_r8_s0_c2",
      "font": "dc16g2b10",
-     "left": -1,
+     "left": 3,
      "baseline": 16
     },
     {
@@ -12810,8 +12796,8 @@
      ],
      "text": "Slow Ball",
      "style": "o2_f8_r8_s0_c2",
-     "font": "dc15g2b10",
-     "left": 0,
+     "font": "dc16g2b10",
+     "left": 4,
      "baseline": 16
     },
     {
@@ -12826,10 +12812,10 @@
       "7c"
      ],
      "text": "Fastball",
-     "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
-     "left": 5,
-     "baseline": 13
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc14g2b10",
+     "left": 2,
+     "baseline": 15
     },
     {
      "from": [
@@ -12875,7 +12861,7 @@
      "text": "Knuckle",
      "style": "o2_f8_r8_s0_c2",
      "font": "dc15g2b10",
-     "left": -2,
+     "left": 2,
      "baseline": 16
     },
     {
@@ -12905,7 +12891,7 @@
      "text": "V-Slider",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb14",
-     "left": 5,
+     "left": 2,
      "baseline": 13
     },
     {
@@ -12922,7 +12908,7 @@
      "text": "Screwball",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb14",
-     "left": 1,
+     "left": 2,
      "baseline": 13
     },
     {
@@ -12938,9 +12924,9 @@
      ],
      "text": "Slow Curve",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
-     "left": 0,
-     "baseline": 12
+     "font": "nb14",
+     "left": 2,
+     "baseline": 13
     },
     {
      "from": [
@@ -12968,9 +12954,9 @@
      ],
      "text": "Hard Slider",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
-     "left": 0,
-     "baseline": 12
+     "font": "nb14",
+     "left": 3,
+     "baseline": 13
     },
     {
      "from": [
@@ -12986,7 +12972,7 @@
      "text": "Changeup",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb14",
-     "left": 0,
+     "left": 2,
      "baseline": 13
     },
     {
@@ -13016,7 +13002,7 @@
      "text": "Drop",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb14",
-     "left": 14,
+     "left": 3,
      "baseline": 13
     },
     {
@@ -13032,8 +13018,8 @@
      ],
      "text": "Hard Sinker",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
-     "left": -2,
+     "font": "nb13",
+     "left": 2,
      "baseline": 12
     },
     {
@@ -13063,7 +13049,7 @@
      "text": "Slurve",
      "style": "o2_f8_r8_s0_c2",
      "font": "dc16g2b10",
-     "left": 1,
+     "left": 2,
      "baseline": 16
     },
     {
@@ -13097,7 +13083,7 @@
      "text": "Circle Change",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb11",
-     "left": -6,
+     "left": 1,
      "baseline": 12
     },
     {
@@ -13114,7 +13100,7 @@
      "text": "Hard Shuuto",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb11",
-     "left": -4,
+     "left": 2,
      "baseline": 12
     },
     {
@@ -13130,8 +13116,8 @@
      ],
      "text": "Drop Curve",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb12",
-     "left": -1,
+     "font": "nb13",
+     "left": 3,
      "baseline": 13
     },
     {
@@ -13148,7 +13134,7 @@
      "text": "Knuckle Curve",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb11",
-     "left": -8,
+     "left": 1,
      "baseline": 12
     },
     {
@@ -13165,7 +13151,7 @@
      "text": "Original",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb14",
-     "left": 6,
+     "left": 1,
      "baseline": 14
     },
     {
@@ -13212,7 +13198,7 @@
      "text": "Yoshi Ball",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb14",
-     "left": 0,
+     "left": 2,
      "baseline": 13
     },
     {
@@ -13227,10 +13213,10 @@
       "90"
      ],
      "text": "Emo Ball",
-     "style": "o2_f8_r8_s0_c1",
-     "font": "nb14",
-     "left": 4,
-     "baseline": 13
+     "style": "o2_f8_r8_s0_c2",
+     "font": "dc15g2b10",
+     "left": 1,
+     "baseline": 16
     },
     {
      "from": [
@@ -13246,7 +13232,7 @@
      "text": "Razor Shuuto",
      "style": "o2_f8_r8_s0_c1",
      "font": "nb11",
-     "left": -6,
+     "left": 2,
      "baseline": 12
     },
     {
@@ -13265,40 +13251,6 @@
      "font": "nb14",
      "left": 10,
      "baseline": 13
-    },
-    {
-     "from": [
-      0,
-      0,
-      72,
-      72,
-      80
-     ],
-     "sprites": [
-      "93"
-     ],
-     "text": "Moving",
-     "style": "o2_f8_r8_s0_c1",
-     "font": "nb11",
-     "left": -11,
-     "baseline": 12
-    },
-    {
-     "from": [
-      1,
-      0,
-      72,
-      72,
-      80
-     ],
-     "sprites": [
-      "93"
-     ],
-     "text": "Fastball",
-     "style": "o2_f8_r8_s0_c1",
-     "font": "nb11",
-     "left": 27,
-     "baseline": 4
     }
    ],
    "under": 3
@@ -14123,9 +14075,9 @@
      ],
      "text": "Hard Shuuto",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb13",
-     "left": 2,
-     "baseline": 21
+     "font": "nb14",
+     "left": 1,
+     "baseline": 22
     },
     {
      "from": [
@@ -14174,9 +14126,9 @@
      ],
      "text": "Knuckle Curve",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb11",
+     "font": "nb12",
      "left": 0,
-     "baseline": 20
+     "baseline": 21
     },
     {
      "from": [
@@ -14206,11 +14158,11 @@
      "sprites": [
       "2c"
      ],
-     "text": "Moving Fastball",
+     "text": "Moving Fast",
      "style": "o2_f8_r8_s0_c1",
-     "font": "nb11",
-     "left": -2,
-     "baseline": 19
+     "font": "nb14",
+     "left": 2,
+     "baseline": 21
     },
     {
      "from": [
