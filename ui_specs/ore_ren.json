@@ -9708,9 +9708,9 @@
 ],
 "text": "Stretching",
 "style": "ren_f15_r33",
-"font": "dc14g2b10",
-"left": 8,
-"baseline": 20
+"font": "dc12g2b10",
+"left": 10,
+"baseline": 18
 },
 {
 "from": [
@@ -9725,9 +9725,9 @@
 ],
 "text": "Massage",
 "style": "ren_f15_r33",
-"font": "dc14g2b10",
-"left": 14,
-"baseline": 20
+"font": "dc12g2b10",
+"left": 18,
+"baseline": 18
 },
 {
 "from": [
@@ -9742,9 +9742,9 @@
 ],
 "text": "Acupuncture",
 "style": "ren_f15_r33",
-"font": "dc14g2b10",
-"left": -16,
-"baseline": 20
+"font": "dc12g2b10",
+"left": -12,
+"baseline": 18
 },
 {
 "from": [
@@ -9759,9 +9759,9 @@
 ],
 "text": "Team Defense",
 "style": "ren_f15_r33",
-"font": "dc14g2b10",
-"left": -14,
-"baseline": 20
+"font": "dc12g2b10",
+"left": -9,
+"baseline": 18
 },
 {
 "from": [
@@ -9776,9 +9776,9 @@
 ],
 "text": "Pep Talk",
 "style": "ren_f15_r33",
-"font": "dc14g2b10",
-"left": 15,
-"baseline": 20
+"font": "dc12g2b10",
+"left": 18,
+"baseline": 18
 },
 {
 "from": [
@@ -9793,9 +9793,9 @@
 ],
 "text": "Phoenix",
 "style": "ren_f15_r33",
-"font": "dc14g2b10",
-"left": 12,
-"baseline": 20
+"font": "dc12g2b10",
+"left": 16,
+"baseline": 18
 },
 {
 "from": [
@@ -9810,9 +9810,9 @@
 ],
 "text": "Rehab",
 "style": "ren_f15_r33",
-"font": "dc14g2b10",
-"left": 16,
-"baseline": 20
+"font": "dc12g2b10",
+"left": 14,
+"baseline": 18
 },
 {
 "from": [
