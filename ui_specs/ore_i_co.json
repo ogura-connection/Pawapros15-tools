@@ -125,7 +125,7 @@
      "text": ": Turn View",
      "style": "btn_view",
      "font": "ttf:din:11:0:1:0",
-     "left": 0,
+     "left": -17,
      "baseline": 19
     },
     {
@@ -153,7 +153,7 @@
      "text": ": Switch View",
      "style": "btn_grey",
      "font": "ttf:din:10:0:1:0",
-     "left": 0,
+     "left": -11,
      "baseline": 17
     },
     {
@@ -167,7 +167,7 @@
      "text": ": Sort",
      "style": "btn_grey",
      "font": "ttf:din:11:0:1:0",
-     "left": 0,
+     "left": -7,
      "baseline": 17
     },
     {
@@ -181,8 +181,29 @@
      "text": ": Show Info",
      "style": "btn_blue",
      "font": "ttf:din:11:0:1:0",
-     "left": 0,
-     "baseline": 18
+     "left": -7,
+     "baseline": 18,
+     "sprites": [
+      "12"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": ": Show Info",
+     "style": "btn_blue",
+     "font": "ttf:din:11:0:1:0",
+     "left": -6,
+     "baseline": 18,
+     "sprites": [
+      "13",
+      "14"
+     ]
     },
     {
      "from": [
@@ -205,8 +226,29 @@
      "text": ": Hide Info",
      "style": "btn_red",
      "font": "ttf:din:11:0:1:0",
-     "left": -24,
-     "baseline": 18
+     "left": -31,
+     "baseline": 18,
+     "sprites": [
+      "15"
+     ]
+    },
+    {
+     "from": [
+      0,
+      40,
+      96,
+      128,
+      120
+     ],
+     "text": ": Hide Info",
+     "style": "btn_red",
+     "font": "ttf:din:11:0:1:0",
+     "left": -30,
+     "baseline": 18,
+     "sprites": [
+      "16",
+      "17"
+     ]
     },
     {
      "from": [
@@ -219,8 +261,45 @@
      "text": ": Switch",
      "style": "btn_grey2",
      "font": "ttf:din:11:0:1:0",
-     "left": 0,
-     "baseline": 17
+     "left": -7,
+     "baseline": 17,
+     "sprites": [
+      "18"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      80,
+      96
+     ],
+     "text": ": Switch",
+     "style": "btn_grey2",
+     "font": "ttf:din:11:0:1:0",
+     "left": -8,
+     "baseline": 17,
+     "sprites": [
+      "19"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      80,
+      96
+     ],
+     "text": ": Switch",
+     "style": "btn_grey2",
+     "font": "ttf:din:11:0:1:0",
+     "left": -9,
+     "baseline": 17,
+     "sprites": [
+      "1a"
+     ]
     },
     {
      "from": [
@@ -233,8 +312,28 @@
      "text": ": Switch",
      "style": "btn_redlet",
      "font": "ttf:din:11:0:1:0",
-     "left": 0,
-     "baseline": 17
+     "left": -10,
+     "baseline": 17,
+     "sprites": [
+      "1c"
+     ]
+    },
+    {
+     "from": [
+      2,
+      80,
+      96,
+      128,
+      120
+     ],
+     "text": ": Switch",
+     "style": "btn_redlet",
+     "font": "ttf:din:11:0:1:0",
+     "left": -11,
+     "baseline": 17,
+     "sprites": [
+      "1d"
+     ]
     },
     {
      "from": [
@@ -247,9 +346,347 @@
      "text": "SELECT: Switch",
      "style": "btn_redlet",
      "font": "ttf:din:11:0:1:0",
-     "left": 1,
+     "left": -2,
      "baseline": 17
     }
+   ]
+  }
+ ],
+ "paint": [
+  {
+   "bank": "y4_btn",
+   "page": 0,
+   "rect": [
+    112,
+    0,
+    128,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 0,
+   "rect": [
+    48,
+    0,
+    64,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    48,
+    48,
+    56,
+    72
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    120,
+    0,
+    128,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    120,
+    24,
+    128,
+    48
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    68,
+    72,
+    72,
+    96
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    100,
+    0,
+    104,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    124,
+    0,
+    128,
+    24
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    66,
+    24,
+    72,
+    48
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    99,
+    24,
+    104,
+    48
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    123,
+    24,
+    128,
+    48
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    76,
+    48,
+    80,
+    72
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    122,
+    48,
+    128,
+    72
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 2,
+   "rect": [
+    97,
+    48,
+    104,
+    72
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    121,
+    72,
+    128,
+    96
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "bank": "y4_btn",
+   "page": 1,
+   "rect": [
+    119,
+    96,
+    128,
+    120
+   ],
+   "text": ".",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
    ]
   }
  ]
