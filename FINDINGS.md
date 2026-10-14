@@ -697,3 +697,41 @@ pitches read): FASTBALL, 2-SEAMER, SLIDER, FORK, CURVE, SHUUTO, CUTTER, CHANGEUP
 (`dolphin-test/looks/pitchnames/`). Not seen: the pitch selector of a 1P game; the rarer names.
 Original pitches keep the names the player typed (katakana); the font has A-Z, so English names
 can be typed there too.
+
+## Match leftovers and the bench sheets (2026-10-14, twelfth session)
+
+**Seen in game (1P exhibition, dolphin-test/looks/match3/):**
+- **The pause button is +, but only while the game waits for the player's pitch** (the pitch selector is up). During
+  the warm-up, a batter's turn or COM vs COM it does nothing, which is why it was "not found" before. It opens the
+  pause menu (TIME call, Play / Score / Bullpen / Pitcher Data / Defense / Controller / Options / Audio / Replay /
+  Quit, all English); Score, Bullpen and Pitching open the substitution screens of `time.arc`.
+- **The "右 / 左 tag" of the batter panel is the fielding position** (右 = right field), a plate of `main_prg.arc`
+  `g3_pur` (投 捕 一 二 三 遊 右 中 左 DH 走 打 外, あき). Each plate is a 32x32 plate part plus a 24x24 letter part in
+  the plate's palette, so only the letter part is re-lettered: P C 1B 2B 3B SS LF CF RF DH PR PH OF, EMPTY (style
+  `pur_pos` / `pur_empty`). The same plates show on the batter panel, the lineup screens and the score screen.
+- `gameplay.arc` `h3_sc_ps2`: 打席目 (the batter's Nth time up, a piece shared by the number sprites) is AT-BAT
+  set left of the number ("AT-BAT 1", seen on the pitch-count panel). Ordinals (1st, 2nd ...) would need four
+  pieces; its two pages have no room. サイン is SIGN, painted into its plate (not seen yet: it shows with a sign).
+- `time.arc` `g3_tim`: the bar buttons hold about 62 pixels, so the bar says Pitching / Pinch Hit / Pinch Run (the
+  wide buttons of the score screen use the same words: no room for two sets). Painted: Pitcher / Bullpen / Bench /
+  Righties / Lefties on their stripes, Today's Stats (bar and « » plate), the R / L / S hand plates, and the
+  vertical 攻撃中 as BATTING turned to read top to bottom (style wrapper `turned`). Still Japanese there: 分
+  (game minutes, a 16x24 cell) and 時間.
+- `ui_labels.py` paint: a `"copy"` narrower than the rectangle is repeated across it (a clean strip of a stripe
+  or plate), and `"copy": "clear"` empties it (lettering with nothing behind it).
+
+**Bench sheets (`scs_main.arc` z4_sod_*), applied, not seen yet.** Three sheets, each a 512x360 picture on 12
+compressed 8-bit pages (page n at 128 * (n % 4), 128 * (n // 4)): `tex_z4_sodp` (the player's team, (株)パワフル),
+`tex_z4_sodk` (Kagurazaka Group), `tex_z4_sodf` (Otori Phoenix). sodp's pages sit in a bank of the same name
+without sprites, so specs find a sheet by its page names. New tool `ui_sheet.py` ("sheet" entries of a spec, read
+by `ui_labels.render`): it assembles the picture, rebuilds the background under a heading (per row, per column or
+a flat cell's commonest colour), sets the English in RGB (letters, rings, a shadow) and maps every pixel to the
+nearest colour the picture already uses, then cuts the pages back out as byte patches. Wording (generator
+`_work/ui_pages/gen_sod_spec.py`): Lineup Card, team name, Starting Lineup, No. / Player / Pos, Bench, Bullpen,
+Player / Pos / Thr. ("Throws" does not fit the 26-pixel cell). Small cell words are drawn without anti-alias
+levels: one page of sodk was 11 bytes over its compressed slot with them.
+
+**Banners `z4_tem_0` / `z4_smj_0`: still blocked.** Each glyph sprite is centred on its own origin (x -64 for a
+128 cell), so the code alone sets the spacing; a list of the sprite numbers in `scs_main.rel` sec5+0x10616c turned
+out to be part of a calendar table (3 x 12 words read at sec1+0x6b410), not the banner layout. An English word cut
+over the glyph sprites needs the spacing seen on screen once.
