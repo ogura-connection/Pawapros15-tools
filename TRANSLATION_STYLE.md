@@ -486,3 +486,21 @@ New Year's; Valentine's Day; Industrial & College Draft. Date column: `9 Mo 3 Wk
 
 Still Japanese on these pages: プログラム, テキスト, 特別ルーム (not met in scenario 1; meaning to be
 confirmed in play before they are worded).
+
+### The match (2026-10-13, ninth session; written, not yet seen in game)
+
+| Japanese | English | Note |
+|---|---|---|
+| umpire's calls ストライク ボール ファウル フェア セーフ アウト タイム プレイボール | STRIKE, BALL, FOUL, FAIR, SAFE, OUT, TIME, PLAY BALL | MLB Power Pros (`env_game_mlb`) |
+| ゲームセット / チェンジ | GAME SET / CHANGE | the Japanese-English umpire words; MLB's THAT'S THE BALLGAME / CHANGE OF SIDES do not fit the pages |
+| フォアボール / デッドボール / エンタイトルツーベース / インフィールドフライ / 投球練習 | WALK / HIT BY PITCH / GROUND RULE DOUBLE / INFIELD FLY / WARMING UP | |
+| ホームラン / ツーラン / スリーラン / 満塁ホームラン / ヒット | HOME RUN / 2-RUN HOME RUN / 3-RUN HOME RUN / GRAND SLAM / HIT | |
+| pause menu プレイ 高速試合 通常試合 おわる やめる リプレイ スコア つづける | Play, Fast Game, Normal Game, End, Quit, Replay, Score, Continue | MLB `env_game` |
+| 投手データ コントローラ(設定) サウンド (表示)オプション 出番設定 説明見る 対戦データ | Pitcher Data, Controller (Setup), Audio, (Display) Options, Turn Setup, Instructions, Game Data | |
+| 投手 守備 代打 代走 (substitutions) | Bullpen, Defense, Pinch Hitter, Pinch Runner | MLB |
+| あきらめる リトライ 試合放棄 戦力分析 操作説明 | Give Up, Retry, Forfeit, Team Analysis, Controls | |
+| line score 一..十八 計 H E | 1..18, R, H, E | |
+| batting columns 打席 打率 HR 打点 弾道 ミート パワー 走 肩 守 守備位置 得点 盗塁 失策 | AB, AVG, HR, RBI, TRJ, CON, PWR, SPD, ARM, FLD, POS, R, SB, E | as the Success column headers |
+| pitching 投球回 対打者 投球 三振 暴投 四死球 自責点 失点 被安 被本 防(御率) | IP, BF, NP, SO, WP, BB, ER, R, H, HR, ERA | box-score abbreviations |
+| バッター / 控え / 一塁 二塁 三塁 + 走 | Batter / Bench / 1st 2nd 3rd + Runner | |
+| 年齢 プロ年数 FA権 年俸 チーム愛 | Age, Pro Yrs, FA, Salary, Loyalty | player panel |
