@@ -79,6 +79,7 @@ import collections
 import hashlib
 import json
 import os
+import re
 import shutil
 import struct
 import sys
@@ -161,9 +162,14 @@ def find(rel, region=None):
             j = i
             while j < len(hw) and hw[j] <= S.MAX_GLYPH:
                 j += 1
+            k = j                                       # a coloured tail: glyph | colour << 12, then 0xFFFF
+            while k < len(hw) and k - j < 64 and is_coloured(hw[k]) and hw[k] >> 12 == hw[j] >> 12:
+                k += 1
+            if k - j >= 2 and k < len(hw) and hw[k] == END and coloured_text_ok(hw[i:j], hw[j:k]):
+                j = k
             if j < len(hw) and hw[j] == END:
                 units = hw[i:j]
-                text = "".join(glyph_to_char(u) or "?" for u in units).rstrip("　")
+                text = units_text(units)
                 if sum(0x3040 <= ord(c) <= 0x30FF or 0x4E00 <= ord(c) <= 0x9FFF for c in text) >= 2 \
                         or (rel.name, sec["index"], i * 2) in SHORT_TEXT:
                     out.append({"section": sec["index"], "offset": i * 2, "cells": j - i,
@@ -301,7 +307,7 @@ def strings_of(name, mods=None):
         cut = START_TRIM.get(key)
         if cut:
             s["offset"], s["cells"], s["units"] = s["offset"] + cut * 2, s["cells"] - cut, s["units"][cut:]
-            s["text"] = "".join(glyph_to_char(u) or "?" for u in s["units"]).rstrip("　")
+            s["text"] = units_text(s["units"])
         found.append(s)
     found = line_widths(name, found)
     for s in found:
@@ -473,9 +479,64 @@ def save_tsv(name, rows):
 
 
 def letters(text):
-    """Cells an English string takes: two ASCII letters per cell, other characters one each."""
+    """Cells an English string takes: two ASCII letters per cell, other characters one each. A coloured
+    run {6:...} starts its letter pairs again."""
     import pair_font
-    return len(pair_font.text_segments(text))
+    return sum(len(pair_font.text_segments(part)) for _, part in colour_runs(text) if part)
+
+
+# Coloured text. A few strings end in units with a colour in their top four bits (glyph | colour << 12:
+# ore_ini.rel, the My Life title help lines end in プレイ年数：最大20年 in colour 6). The export shows such
+# a run as {6:...}; the English writes it the same way and the build sets the colour on every unit of it.
+COLOUR_RUN = re.compile(r"\{(\d{1,2}):([^{}]*)\}")
+
+
+def is_coloured(u):
+    return 0x1000 <= u < 0xF000 and (u & 0xFFF) <= S.MAX_GLYPH and glyph_to_char(u & 0xFFF) is not None
+
+
+def coloured_text_ok(plain_units, tail):
+    """A coloured tail counts only behind real text: the plain part has kana or kanji in most cells and
+    the tail is kana, kanji, digits and punctuation of the font only."""
+    def kind(u):
+        c = glyph_to_char(u) or "?"
+        return 2 if 0x3040 <= ord(c) <= 0x30FF or 0x4E00 <= ord(c) <= 0x9FFF else \
+            1 if c in "　、。！？：・ー（）０１２３４５６７８９" else 0
+    body = [kind(u) for u in plain_units if u]
+    tail = [kind(u & 0xFFF) for u in tail]
+    return len(body) >= 4 and sum(k == 2 for k in body) * 4 >= len(body) * 3 and all(tail) and tail.count(2) >= 2
+
+
+def units_text(units):
+    """The text of a string's units, coloured runs as {colour:text}, trailing full-width spaces cut."""
+    out, cur = [], None
+    for u in units:
+        c = u >> 12 if u > S.MAX_GLYPH else 0
+        if c != cur:
+            out.append("}" if cur else "")
+            out.append("{%d:" % c if c else "")
+            cur = c
+        out.append(glyph_to_char(u & 0xFFF if c else u) or "?")
+    if cur:
+        out.append("}")
+    text = "".join(out)
+    return text.rstrip("　") if not cur else text
+
+
+def colour_runs(text):
+    """[(colour, text)] of a string with {colour:...} runs; colour 0 = plain."""
+    out, pos = [], 0
+    for m in COLOUR_RUN.finditer(text):
+        out.append((0, text[pos:m.start()]))
+        out.append((int(m.group(1)), m.group(2)))
+        pos = m.end()
+    out.append((0, text[pos:]))
+    return [r for r in out if r[1]] or [(0, "")]
+
+
+def plain(text):
+    """The text with the colour marks taken out."""
+    return COLOUR_RUN.sub(lambda m: m.group(2), text)
 
 
 def dol_cells(en):
@@ -485,7 +546,7 @@ def dol_cells(en):
 
 def too_long(line, cap, count=letters):
     """How many letters a line is over its capacity of `cap` cells (0 = it fits)."""
-    if line.isascii() and "{}" not in line:
+    if line.isascii() and "{" not in line:
         return max(0, len(line) - cap * 2)
     return max(0, (count(line) - cap) * 2)
 
