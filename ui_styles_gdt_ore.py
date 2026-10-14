@@ -41,3 +41,38 @@ from ui_styles_orepena import solid          # also registers the font "din" and
 # white letters (palette index 15 of the grey ramp of palettes 0 and 151), a solid near-black ring and a black ring outside it
 STYLES["gdo_white"] = solid(15, [2, 1], cut=3)
 STYLES["gdo_white1"] = solid(15, [1], cut=3)
+STYLES["gdo_big"] = solid(15, [2, 1], cut=3)                 # the big lettering (First Duel): a thicker ring
+# y3_ss event captions (palette 0, teal ramp): white letters, a mint ring and a dark teal ring
+STYLES["gdo_cyan"] = solid(15, [3, 1], cut=3)
+# y4_ind_0 thanks banner (palette 0, blue ramp): white letters, two sky-blue rings, two dark blue, one slate
+STYLES["gdo_dream"] = solid(15, [10, 10, 4, 4, 2], cut=3)
+
+
+def solid_grad(fills, rings, cut=3):
+    """Like solid(), but the letters take their colour row by row from `fills` (top to bottom): a metallic gradient."""
+    def style(ink, base):
+        pad = len(rings) + 2
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big >= cut
+        masks = [grow(letters, 1)]
+        for _ in rings[1:]:
+            masks.append(grow(masks[-1], 1, diagonal=False))
+        out = np.zeros(big.shape, np.uint8)
+        for mk, v in zip(masks[::-1], rings[::-1]):
+            out[mk] = v
+        ys = np.nonzero(letters.any(1))[0]
+        top, bot = ys.min(), ys.max() + 1
+        for y in range(top, bot):
+            v = fills[min(len(fills) - 1, (y - top) * len(fills) // (bot - top))]
+            out[y][letters[y]] = v
+        ys = np.nonzero(out.any(1))[0]
+        xs = np.nonzero(out.any(0))[0]
+        r0, r1, c0, c1 = ys.min(), ys.max() + 1, xs.min(), xs.max() + 1
+        return out[r0:r1, c0:c1], base + pad - r0
+    return style
+
+
+# y4_ind_0 ribbon (palette 1, grey ramp): white to light grey top to bottom, black ring
+STYLES["gdo_ribbon"] = solid_grad([13, 12, 11, 10, 10, 9], [1, 1, 1], cut=3)
