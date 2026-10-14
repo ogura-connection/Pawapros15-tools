@@ -63,3 +63,22 @@ STYLES["v_p43"] = ringfill([15, 14, 13, 11, 10], [1, 3])
 
 # --- titles (palettes 32, 45): orange gradient, white ring, blue rings, blue shadow
 STYLES["v_title"] = ringfill([13, 13, 14, 14, 15, 15], [8, 5, 3, 2], [1, 1])
+
+# --- 現在の設定 and its kin: pale letters, violet ring
+STYLES["v_cur56"] = ringfill([15, 15, 14, 14, 13, 13], [1, 3])
+STYLES["v_cur86"] = ringfill([15, 15, 14, 14, 13, 13], [1, 3])
+STYLES["v_new81"] = ringfill([15, 14, 13, 12, 11, 10], [1, 3])
+STYLES["v_new44"] = ringfill([15, 14, 13, 12, 11, 10], [1, 3])
+# --- the test lines: dark letters on the plate (palette 56), pale letters in a violet ring (palette 101)
+STYLES["v_t56"] = flat([0, 11, 8, 5, 3, 2, 1])
+STYLES["v_t101"] = ringfill([15, 15, 14, 14], [1, 3])
+# --- Choose a player (palette 50): navy letters, white ring, grey-blue shadow
+STYLES["v_q50"] = ringfill([1], [15, 15], [8, 6])
+# --- voice names (palettes 111, 102): teal / magenta letters, white ring, blue ring
+STYLES["v_ann111"] = ringfill([14, 15, 15, 15], [9, 6, 3])
+STYLES["v_pa102"] = ringfill([13, 14, 15, 15], [9, 6, 3])
+
+# a word wider than one page (128 columns) is shown by two pieces: columns 0..128 and the rest
+for _name in ("v_q50", "v_p66"):
+    STYLES[_name + "_a"] = win(STYLES.get(_name) or STYLES["v_q50"], 0, 128)
+    STYLES[_name + "_b"] = win(STYLES.get(_name) or STYLES["v_q50"], 128, 4096)
