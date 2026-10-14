@@ -1287,7 +1287,6 @@
    "bank": "g3_np",
    "style": "panel",
    "font": "ttf:rounded:10:0:0.85:0.3",
-   "align": "left",
    "valign": "centre",
    "areas": [
     [
@@ -1370,7 +1369,9 @@
       40,
       120
      ],
-     "text": "CON"
+     "text": "CON",
+     "align": "left",
+     "left": 1
     },
     {
      "from": [
@@ -1380,7 +1381,9 @@
       40,
       96
      ],
-     "text": "PWR"
+     "text": "PWR",
+     "align": "left",
+     "left": 1
     },
     {
      "from": [
@@ -1390,7 +1393,9 @@
       80,
       96
      ],
-     "text": "SPD"
+     "text": "SPD",
+     "align": "left",
+     "left": 2
     },
     {
      "from": [
@@ -1400,7 +1405,9 @@
       80,
       120
      ],
-     "text": "ARM"
+     "text": "ARM",
+     "align": "left",
+     "left": 2
     },
     {
      "from": [
@@ -1410,7 +1417,9 @@
       120,
       96
      ],
-     "text": "FLD"
+     "text": "FLD",
+     "align": "left",
+     "left": 2
     },
     {
      "from": [
@@ -1420,7 +1429,9 @@
       120,
       120
      ],
-     "text": "TRJ"
+     "text": "TRJ",
+     "align": "left",
+     "left": 2
     },
     {
      "from": [
@@ -1430,7 +1441,9 @@
       40,
       24
      ],
-     "text": "AVG"
+     "text": "AVG",
+     "align": "left",
+     "left": 2
     },
     {
      "from": [
@@ -1440,7 +1453,9 @@
       80,
       24
      ],
-     "text": "HR"
+     "text": "HR",
+     "align": "left",
+     "left": 1
     },
     {
      "from": [
@@ -1450,7 +1465,9 @@
       120,
       24
      ],
-     "text": "RBI"
+     "text": "RBI",
+     "align": "left",
+     "left": 1
     },
     {
      "from": [
@@ -1460,7 +1477,9 @@
       128,
       48
      ],
-     "text": "POS"
+     "text": "POS",
+     "align": "left",
+     "left": -5
     },
     {
      "from": [
@@ -1490,7 +1509,8 @@
       120,
       48
      ],
-     "text": "ERA"
+     "text": "ERA",
+     "align": "left"
     },
     {
      "from": [
@@ -1500,7 +1520,8 @@
       104,
       48
      ],
-     "text": "Control"
+     "text": "Control",
+     "align": "left"
     },
     {
      "from": [
@@ -1510,7 +1531,8 @@
       48,
       48
      ],
-     "text": "Stamina"
+     "text": "Stamina",
+     "align": "left"
     },
     {
      "from": [
@@ -1520,7 +1542,8 @@
       64,
       72
      ],
-     "text": "Pro Yrs"
+     "text": "Pro Yrs",
+     "align": "left"
     },
     {
      "from": [
@@ -1530,7 +1553,8 @@
       128,
       104
      ],
-     "text": "Age"
+     "text": "Age",
+     "align": "left"
     },
     {
      "from": [
@@ -1550,7 +1574,8 @@
       48,
       96
      ],
-     "text": "FA"
+     "text": "FA",
+     "align": "left"
     },
     {
      "from": [
@@ -1560,7 +1585,8 @@
       96,
       72
      ],
-     "text": "Salary"
+     "text": "Salary",
+     "align": "left"
     },
     {
      "from": [
@@ -1570,7 +1596,8 @@
       128,
       24
      ],
-     "text": "Loyalty"
+     "text": "Loyalty",
+     "align": "left"
     }
    ]
   }
