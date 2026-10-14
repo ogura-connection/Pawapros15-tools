@@ -814,8 +814,8 @@
      "sprites": [
       "39"
      ],
-     "text": "In",
-     "left": 6
+     "text": "IF",
+     "left": 10
     },
     {
      "from": [
@@ -828,8 +828,8 @@
      "sprites": [
       "39"
      ],
-     "text": "Front",
-     "left": -4
+     "text": "In",
+     "left": 3
     },
     {
      "from": [
@@ -842,8 +842,8 @@
      "sprites": [
       "3a"
      ],
-     "text": "In",
-     "left": 6
+     "text": "IF",
+     "left": 4
     },
     {
      "from": [
@@ -857,7 +857,7 @@
       "3a"
      ],
      "text": "Back",
-     "left": -4
+     "left": -3
     },
     {
      "from": [
@@ -870,8 +870,8 @@
      "sprites": [
       "3b"
      ],
-     "text": "Out",
-     "left": 3
+     "text": "OF",
+     "left": 9
     },
     {
      "from": [
@@ -884,8 +884,8 @@
      "sprites": [
       "3b"
      ],
-     "text": "Front",
-     "left": -1
+     "text": "In",
+     "left": 5
     },
     {
      "from": [
@@ -898,7 +898,7 @@
      "sprites": [
       "3c"
      ],
-     "text": "Out",
+     "text": "OF",
      "left": 3
     },
     {
@@ -926,7 +926,7 @@
      "sprites": [
       "5c"
      ],
-     "text": "In",
+     "text": "IF",
      "left": 12
     },
     {
@@ -940,7 +940,7 @@
      "sprites": [
       "5d"
      ],
-     "text": "In",
+     "text": "IF",
      "left": 12
     },
     {
@@ -954,8 +954,8 @@
      "sprites": [
       "5e"
      ],
-     "text": "Out",
-     "left": 6
+     "text": "OF",
+     "left": 9
     },
     {
      "from": [
@@ -968,8 +968,8 @@
      "sprites": [
       "5f"
      ],
-     "text": "Out",
-     "left": 6
+     "text": "OF",
+     "left": 9
     }
    ]
   },
