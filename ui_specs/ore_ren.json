@@ -1,0 +1,9681 @@
+{
+"arc": "ore_ren.arc",
+"repack": [
+{
+"bank": "g3_0ren",
+"palette": 2,
+"style": "ren_f15_r33",
+"share": true,
+"gap": [
+1,
+1
+],
+"under": 3,
+"areas": [
+[
+9,
+48,
+104,
+128,
+128
+],
+[
+9,
+40,
+0,
+80,
+24
+],
+[
+9,
+0,
+32,
+56,
+56
+],
+[
+9,
+0,
+0,
+40,
+24
+],
+[
+9,
+0,
+56,
+80,
+96
+],
+[
+9,
+80,
+0,
+120,
+24
+],
+[
+9,
+56,
+32,
+112,
+56
+],
+[
+7,
+0,
+0,
+48,
+32
+],
+[
+7,
+80,
+96,
+128,
+128
+],
+[
+7,
+0,
+32,
+128,
+64
+],
+[
+7,
+88,
+64,
+104,
+96
+],
+[
+7,
+0,
+64,
+88,
+96
+],
+[
+7,
+0,
+96,
+72,
+128
+],
+[
+7,
+72,
+96,
+80,
+128
+],
+[
+7,
+56,
+0,
+128,
+32
+],
+[
+8,
+0,
+0,
+72,
+32
+],
+[
+1,
+56,
+88,
+104,
+120
+],
+[
+8,
+120,
+0,
+128,
+32
+],
+[
+8,
+72,
+0,
+120,
+32
+],
+[
+8,
+0,
+32,
+96,
+64
+],
+[
+8,
+0,
+96,
+88,
+128
+],
+[
+5,
+0,
+0,
+40,
+32
+],
+[
+5,
+0,
+96,
+72,
+128
+],
+[
+5,
+40,
+0,
+80,
+32
+],
+[
+5,
+0,
+32,
+128,
+64
+],
+[
+6,
+56,
+96,
+112,
+128
+],
+[
+5,
+88,
+0,
+128,
+32
+],
+[
+5,
+0,
+64,
+96,
+96
+],
+[
+6,
+0,
+0,
+72,
+32
+],
+[
+6,
+0,
+32,
+56,
+64
+],
+[
+6,
+56,
+32,
+128,
+64
+],
+[
+6,
+0,
+64,
+56,
+96
+],
+[
+6,
+0,
+96,
+56,
+128
+],
+[
+6,
+56,
+64,
+112,
+96
+],
+[
+6,
+72,
+0,
+128,
+32
+],
+[
+5,
+96,
+64,
+128,
+96
+],
+[
+5,
+80,
+96,
+128,
+128
+],
+[
+11,
+0,
+104,
+40,
+128
+],
+[
+11,
+40,
+104,
+64,
+128
+],
+[
+11,
+64,
+104,
+88,
+128
+],
+[
+12,
+32,
+88,
+88,
+128
+],
+[
+10,
+0,
+112,
+56,
+128
+],
+[
+16,
+72,
+104,
+128,
+128
+],
+[
+18,
+32,
+104,
+128,
+128
+],
+[
+17,
+0,
+72,
+104,
+96
+],
+[
+17,
+0,
+96,
+32,
+112
+],
+[
+17,
+32,
+96,
+48,
+112
+],
+[
+13,
+0,
+64,
+128,
+96
+],
+[
+14,
+0,
+64,
+80,
+96
+],
+[
+14,
+0,
+32,
+112,
+64
+],
+[
+13,
+0,
+96,
+128,
+128
+],
+[
+13,
+0,
+0,
+128,
+32
+],
+[
+14,
+0,
+0,
+80,
+32
+],
+[
+13,
+0,
+32,
+120,
+64
+]
+],
+"labels": [
+{
+"sprite": "02",
+"text": "1st Team Practice",
+"style": "ren_f5_rdd",
+"font": "dc10g1b10",
+"valign": "centre",
+"pages": [
+9
+],
+"palettes": [
+19
+]
+},
+{
+"sprite": "03",
+"text": "Farm Practice",
+"style": "ren_f5_rd",
+"font": "dc11g2b10",
+"valign": "centre",
+"pages": [
+9
+],
+"palettes": [
+20
+]
+},
+{
+"sprite": "0a",
+"text": "Pitching Coach",
+"style": "ren_f15_r88",
+"font": "dc11g2b10",
+"valign": "centre",
+"layers": 2
+},
+{
+"sprite": "0b",
+"text": "Batting Coach",
+"style": "ren_f15_r88",
+"font": "dc13g2b10",
+"valign": "centre",
+"layers": 2
+},
+{
+"sprite": "0c",
+"text": "Def/Run\nCoach",
+"style": "ren_f15_r88",
+"font": "dc14g2b10",
+"valign": "centre",
+"layers": 2
+},
+{
+"sprite": "0d",
+"text": "Temp Coach",
+"style": "ren_f15_r88",
+"font": "dc14g2b10",
+"valign": "centre",
+"layers": 2
+},
+{
+"from": [
+9,
+56,
+32,
+112,
+56
+],
+"text": "Level",
+"style": "ren_f10_r44",
+"font": "dc16g2b10",
+"valign": "centre",
+"align": "right"
+},
+{
+"from": [
+7,
+0,
+0,
+48,
+32
+],
+"sprites": [
+"13"
+],
+"text": "Velocity",
+"style": "ren_f7_r7",
+"font": "dc18g2b10",
+"left": 11,
+"baseline": 26
+},
+{
+"from": [
+7,
+80,
+96,
+128,
+128
+],
+"sprites": [
+"13"
+],
+"empty": true
+},
+{
+"from": [
+7,
+0,
+32,
+128,
+64
+],
+"sprites": [
+"14"
+],
+"text": "Control",
+"style": "ren_f15_r77",
+"font": "dc18g2b10",
+"left": 54,
+"baseline": 26
+},
+{
+"from": [
+7,
+80,
+96,
+128,
+128
+],
+"sprites": [
+"14"
+],
+"empty": true
+},
+{
+"from": [
+7,
+88,
+64,
+104,
+96
+],
+"sprites": [
+"14"
+],
+"empty": true
+},
+{
+"from": [
+7,
+0,
+64,
+96,
+96
+],
+"sprites": [
+"15"
+],
+"text": "Stamina",
+"style": "ren_f15_r77",
+"font": "dc18g2b10",
+"left": 30,
+"baseline": 26
+},
+{
+"from": [
+7,
+88,
+96,
+128,
+128
+],
+"sprites": [
+"15"
+],
+"empty": true
+},
+{
+"from": [
+7,
+0,
+96,
+72,
+128
+],
+"sprites": [
+"16"
+],
+"text": "Breaking",
+"style": "ren_f15_r77",
+"font": "dc18g2b10",
+"left": 21,
+"baseline": 26
+},
+{
+"from": [
+7,
+0,
+96,
+80,
+128
+],
+"sprites": [
+"16"
+],
+"empty": true
+},
+{
+"from": [
+7,
+88,
+96,
+128,
+128
+],
+"sprites": [
+"16"
+],
+"empty": true
+},
+{
+"from": [
+7,
+56,
+0,
+128,
+32
+],
+"sprites": [
+"17"
+],
+"text": "Contact",
+"style": "ren_f15_r77",
+"font": "dc18g2b10",
+"left": 19,
+"baseline": 26
+},
+{
+"from": [
+7,
+88,
+96,
+128,
+128
+],
+"sprites": [
+"17"
+],
+"empty": true
+},
+{
+"from": [
+8,
+0,
+0,
+72,
+32
+],
+"sprites": [
+"18"
+],
+"text": "Power",
+"style": "ren_f15_r77",
+"font": "dc18g2b10",
+"left": 33,
+"baseline": 26
+},
+{
+"from": [
+7,
+120,
+0,
+128,
+32
+],
+"sprites": [
+"18"
+],
+"empty": true
+},
+{
+"from": [
+7,
+88,
+96,
+128,
+128
+],
+"sprites": [
+"18"
+],
+"empty": true
+},
+{
+"from": [
+1,
+56,
+88,
+104,
+120
+],
+"sprites": [
+"19"
+],
+"text": "Running",
+"style": "ren_f7_r3",
+"font": "dc18g2b10",
+"left": 12,
+"baseline": 25
+},
+{
+"from": [
+7,
+80,
+96,
+128,
+128
+],
+"sprites": [
+"19"
+],
+"empty": true
+},
+{
+"from": [
+8,
+120,
+0,
+128,
+32
+],
+"sprites": [
+"19"
+],
+"empty": true
+},
+{
+"from": [
+8,
+72,
+0,
+120,
+32
+],
+"sprites": [
+"1a"
+],
+"text": "Fielding",
+"style": "ren_f7_r3",
+"font": "dc18g2b10",
+"left": 12,
+"baseline": 25
+},
+{
+"from": [
+7,
+80,
+96,
+128,
+128
+],
+"sprites": [
+"1a"
+],
+"empty": true
+},
+{
+"from": [
+8,
+0,
+32,
+96,
+64
+],
+"sprites": [
+"1b"
+],
+"text": "Arm Work",
+"style": "ren_f15_r73",
+"font": "dc18g2b10",
+"left": 3,
+"baseline": 25
+},
+{
+"from": [
+8,
+0,
+96,
+88,
+128
+],
+"sprites": [
+"1c"
+],
+"text": "Rehab",
+"style": "ren_f15_r77",
+"font": "dc18g2b10",
+"left": 15,
+"baseline": 26
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"1e"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -7,
+"baseline": 26
+},
+{
+"from": [
+5,
+0,
+96,
+72,
+128
+],
+"sprites": [
+"1e"
+],
+"text": "Breaking",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 33,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"1e"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"1f"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 27,
+"baseline": 26
+},
+{
+"from": [
+5,
+0,
+32,
+128,
+64
+],
+"sprites": [
+"1f"
+],
+"text": "Control",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 69,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"1f"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"20"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -15,
+"baseline": 26
+},
+{
+"from": [
+6,
+56,
+96,
+112,
+128
+],
+"sprites": [
+"20"
+],
+"text": "Velocity",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 27,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"20"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"21"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -14,
+"baseline": 26
+},
+{
+"from": [
+5,
+88,
+0,
+128,
+32
+],
+"sprites": [
+"21"
+],
+"text": "Pitching",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 18,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"21"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"22"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 4,
+"baseline": 26
+},
+{
+"from": [
+5,
+0,
+64,
+96,
+96
+],
+"sprites": [
+"22"
+],
+"text": "Stamina",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 50,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"22"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"23"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 4,
+"baseline": 26
+},
+{
+"from": [
+6,
+0,
+0,
+72,
+32
+],
+"sprites": [
+"23"
+],
+"text": "Power",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 44,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"23"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"24"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -9,
+"baseline": 26
+},
+{
+"from": [
+6,
+0,
+32,
+56,
+64
+],
+"sprites": [
+"24"
+],
+"text": "Batting",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 33,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"24"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"25"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -3,
+"baseline": 26
+},
+{
+"from": [
+6,
+56,
+32,
+128,
+64
+],
+"sprites": [
+"25"
+],
+"text": "Contact",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 37,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"25"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"26"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -26,
+"baseline": 26
+},
+{
+"from": [
+6,
+0,
+64,
+56,
+96
+],
+"sprites": [
+"26"
+],
+"text": "All-Around",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 16,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"26"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"27"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -13,
+"baseline": 26
+},
+{
+"from": [
+6,
+0,
+96,
+56,
+128
+],
+"sprites": [
+"27"
+],
+"text": "Fielding",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 29,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"27"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"28"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -13,
+"baseline": 26
+},
+{
+"from": [
+6,
+56,
+64,
+112,
+96
+],
+"sprites": [
+"28"
+],
+"text": "Running",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 29,
+"baseline": 26
+},
+{
+"from": [
+5,
+40,
+0,
+80,
+32
+],
+"sprites": [
+"28"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"29"
+],
+"text": "Special Arm",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -21,
+"baseline": 26
+},
+{
+"from": [
+6,
+72,
+0,
+128,
+32
+],
+"sprites": [
+"29"
+],
+"text": "Work",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 61,
+"baseline": 26
+},
+{
+"from": [
+5,
+96,
+64,
+128,
+96
+],
+"sprites": [
+"29"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+0,
+40,
+32
+],
+"sprites": [
+"2a"
+],
+"text": "Special",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": -35,
+"baseline": 26
+},
+{
+"from": [
+5,
+80,
+96,
+128,
+128
+],
+"sprites": [
+"2a"
+],
+"text": "Coaching",
+"style": "ren_f1_r1",
+"font": "dc18g2b10",
+"left": 4,
+"baseline": 26
+},
+{
+"from": [
+11,
+0,
+104,
+40,
+128
+],
+"text": "Form",
+"style": "ren_f15_r88",
+"font": "dc13g2b10",
+"valign": "centre"
+},
+{
+"sprite": "32",
+"text": "Rest",
+"style": "ren_f15_r88",
+"font": "dc15g2b10",
+"valign": "centre",
+"pages": [
+11
+]
+},
+{
+"from": [
+12,
+32,
+88,
+88,
+128
+],
+"text": "Form",
+"style": "ren_f12_r44",
+"font": "dc15g2b10",
+"valign": "centre"
+},
+{
+"from": [
+10,
+0,
+112,
+56,
+128
+],
+"text": "Change",
+"style": "ren_f12_r44dd",
+"font": "dc11g2b10",
+"valign": "centre"
+},
+{
+"sprite": "4a",
+"text": "Boost",
+"style": "ren_f15_r57",
+"font": "dc14g2b10",
+"valign": "centre",
+"pages": [
+16
+]
+},
+{
+"sprite": "4b",
+"text": "Earn My Spirit",
+"style": "ren_f2_r2",
+"font": "dc11g2b10",
+"valign": "centre"
+},
+{
+"sprite": "56",
+"text": "Until Vessel",
+"style": "ren_f2_r2",
+"font": "dc14g2b10",
+"valign": "centre"
+},
+{
+"sprite": "57",
+"text": "Only",
+"style": "ren_f2_r2",
+"font": "dc13g2b10",
+"valign": "centre"
+},
+{
+"sprite": "58",
+"text": "more",
+"style": "ren_f2_r4",
+"font": "dc9g1b10",
+"valign": "centre",
+"align": "left"
+},
+{
+"from": [
+13,
+0,
+64,
+128,
+96
+],
+"text": "Adjusts to keep your",
+"style": "ren_f7_rff",
+"font": "dc10g1b10",
+"valign": "centre",
+"sprites": [
+"34"
+],
+"align": "left"
+},
+{
+"from": [
+14,
+0,
+64,
+80,
+96
+],
+"empty": true,
+"sprites": [
+"34"
+]
+},
+{
+"from": [
+14,
+0,
+32,
+112,
+64
+],
+"text": "current form steady.",
+"style": "ren_f7_r66f",
+"font": "dc10g1b10",
+"valign": "centre",
+"sprites": [
+"34"
+],
+"align": "left"
+},
+{
+"from": [
+13,
+0,
+64,
+96,
+96
+],
+"text": "Adjusts to improve your",
+"style": "ren_f7_rff",
+"font": "dc10g1b10",
+"valign": "centre",
+"sprites": [
+"35"
+],
+"align": "left"
+},
+{
+"from": [
+13,
+0,
+96,
+128,
+128
+],
+"empty": true,
+"sprites": [
+"35"
+]
+},
+{
+"from": [
+14,
+0,
+32,
+112,
+64
+],
+"text": "current form.",
+"style": "ren_f7_r66f",
+"font": "dc13g2b10",
+"valign": "centre",
+"sprites": [
+"35"
+],
+"align": "left"
+},
+{
+"from": [
+13,
+0,
+0,
+128,
+32
+],
+"text": "Skip practice to rest",
+"style": "ren_f7_r6f",
+"font": "dc10g1b10",
+"valign": "centre",
+"sprites": [
+"36"
+],
+"align": "left"
+},
+{
+"from": [
+14,
+0,
+0,
+80,
+32
+],
+"empty": true,
+"sprites": [
+"36"
+]
+},
+{
+"from": [
+13,
+0,
+32,
+120,
+64
+],
+"text": "and recover from fatigue.",
+"style": "ren_f7_r6f",
+"font": "dc9g1b10",
+"valign": "centre",
+"sprites": [
+"36"
+],
+"align": "left"
+}
+]
+},
+{
+"bank": "g3_1ren",
+"palette": 2,
+"style": "ren_f15_r33",
+"share": true,
+"gap": [
+1,
+1
+],
+"areas": [
+[
+0,
+0,
+0,
+128,
+128
+],
+[
+1,
+0,
+0,
+128,
+128
+],
+[
+2,
+0,
+0,
+128,
+128
+],
+[
+3,
+0,
+0,
+128,
+128
+],
+[
+4,
+0,
+0,
+128,
+128
+],
+[
+5,
+0,
+0,
+128,
+128
+],
+[
+6,
+0,
+0,
+128,
+128
+],
+[
+7,
+0,
+0,
+128,
+128
+],
+[
+8,
+0,
+0,
+128,
+128
+],
+[
+9,
+0,
+0,
+128,
+128
+],
+[
+10,
+0,
+0,
+128,
+128
+],
+[
+11,
+0,
+0,
+128,
+128
+],
+[
+12,
+0,
+0,
+128,
+128
+]
+],
+"labels": [
+{
+"from": [
+0,
+0,
+0,
+72,
+24
+],
+"sprites": [
+"00"
+],
+"text": "Weight",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 30,
+"baseline": 20
+},
+{
+"from": [
+0,
+72,
+0,
+128,
+24
+],
+"sprites": [
+"00"
+],
+"text": "Training",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 17,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+0,
+56,
+24
+],
+"sprites": [
+"00"
+],
+"empty": true
+},
+{
+"from": [
+0,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"01"
+],
+"text": "Tube",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 42,
+"baseline": 20
+},
+{
+"from": [
+0,
+72,
+0,
+128,
+24
+],
+"sprites": [
+"01"
+],
+"text": "Training",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 8,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+0,
+56,
+24
+],
+"sprites": [
+"01"
+],
+"empty": true
+},
+{
+"from": [
+0,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"02"
+],
+"text": "Throwing",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 20
+},
+{
+"from": [
+0,
+80,
+24,
+104,
+48
+],
+"sprites": [
+"03"
+],
+"text": "Long",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -6,
+"baseline": 20
+},
+{
+"from": [
+0,
+104,
+24,
+128,
+48
+],
+"sprites": [
+"03"
+],
+"text": "Toss",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+96,
+64,
+120
+],
+"sprites": [
+"04"
+],
+"text": "200",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 23,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"04"
+],
+"text": "Pitches",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -5,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"05"
+],
+"text": "Pitching Form",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 14,
+"baseline": 20
+},
+{
+"from": [
+5,
+56,
+0,
+112,
+24
+],
+"sprites": [
+"05"
+],
+"text": "Check",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -5,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"06"
+],
+"text": "Play",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 26,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"06"
+],
+"text": "Catch",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"06"
+],
+"empty": true
+},
+{
+"from": [
+1,
+0,
+72,
+128,
+96
+],
+"sprites": [
+"07"
+],
+"text": "Shadow",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 20,
+"baseline": 20
+},
+{
+"from": [
+5,
+48,
+24,
+88,
+48
+],
+"sprites": [
+"07"
+],
+"text": "Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -45,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+72,
+80,
+96
+],
+"sprites": [
+"08"
+],
+"text": "BP Throw",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 5,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+48,
+56,
+72
+],
+"sprites": [
+"09"
+],
+"text": "Location",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"09"
+],
+"text": "Work",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 28,
+"baseline": 20
+},
+{
+"from": [
+0,
+80,
+72,
+128,
+96
+],
+"sprites": [
+"0a"
+],
+"text": "Sprints",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+6,
+96,
+96,
+120,
+120
+],
+"sprites": [
+"0a"
+],
+"empty": true
+},
+{
+"from": [
+0,
+80,
+48,
+128,
+72
+],
+"sprites": [
+"0b"
+],
+"text": "Running",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 11,
+"baseline": 20
+},
+{
+"from": [
+6,
+96,
+72,
+128,
+96
+],
+"sprites": [
+"0b"
+],
+"empty": true
+},
+{
+"from": [
+1,
+56,
+48,
+96,
+72
+],
+"sprites": [
+"0c"
+],
+"text": "Stair",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 5,
+"baseline": 20
+},
+{
+"from": [
+0,
+80,
+72,
+128,
+96
+],
+"sprites": [
+"0c"
+],
+"text": "Sprints",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+6,
+96,
+96,
+120,
+120
+],
+"sprites": [
+"0c"
+],
+"empty": true
+},
+{
+"from": [
+0,
+64,
+96,
+128,
+120
+],
+"sprites": [
+"0d"
+],
+"text": "Distance",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -9,
+"baseline": 20
+},
+{
+"from": [
+6,
+112,
+0,
+128,
+24
+],
+"sprites": [
+"0d"
+],
+"text": "Run",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+1,
+96,
+48,
+128,
+72
+],
+"sprites": [
+"0e"
+],
+"text": "Marathon",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 3,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+24,
+48,
+48
+],
+"sprites": [
+"0e"
+],
+"empty": true
+},
+{
+"from": [
+2,
+56,
+0,
+128,
+24
+],
+"sprites": [
+"0f"
+],
+"text": "Slider",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 20
+},
+{
+"from": [
+9,
+96,
+72,
+120,
+96
+],
+"sprites": [
+"0f"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -12,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"0f"
+],
+"empty": true
+},
+{
+"from": [
+1,
+0,
+96,
+56,
+120
+],
+"sprites": [
+"10"
+],
+"text": "Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -9,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"10"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -18,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+72,
+80,
+96
+],
+"sprites": [
+"11"
+],
+"text": "Fork",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"11"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -31,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"12"
+],
+"text": "Sinker",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"12"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -24,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"13"
+],
+"text": "Shuuto",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -3,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"13"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+2,
+80,
+72,
+128,
+96
+],
+"sprites": [
+"14"
+],
+"text": "Slow Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 20
+},
+{
+"from": [
+5,
+120,
+0,
+128,
+24
+],
+"sprites": [
+"14"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 32,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"14"
+],
+"empty": true
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"14"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"14"
+],
+"empty": true
+},
+{
+"from": [
+2,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"15"
+],
+"text": "Fastball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 0,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+48,
+48,
+72
+],
+"sprites": [
+"15"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 21,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"15"
+],
+"empty": true
+},
+{
+"from": [
+2,
+0,
+0,
+56,
+24
+],
+"sprites": [
+"16"
+],
+"text": "Palm",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -6,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"16"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"17"
+],
+"text": "Knuckle",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"17"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -18,
+"baseline": 20
+},
+{
+"from": [
+3,
+104,
+96,
+120,
+120
+],
+"sprites": [
+"18"
+],
+"text": "V Slider",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 8,
+"baseline": 20
+},
+{
+"from": [
+2,
+56,
+0,
+128,
+24
+],
+"sprites": [
+"18"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 57,
+"baseline": 20
+},
+{
+"from": [
+9,
+96,
+72,
+120,
+96
+],
+"sprites": [
+"18"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"18"
+],
+"empty": true
+},
+{
+"sprite": "19",
+"pieces": [
+{
+"text": "SFF",
+"palette": 2
+},
+{
+"text": "Practice",
+"palette": 2
+}
+],
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"baseline": 27,
+"join": -2
+},
+{
+"from": [
+1,
+56,
+96,
+128,
+120
+],
+"sprites": [
+"1a"
+],
+"text": "Screw",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 8,
+"baseline": 20
+},
+{
+"from": [
+8,
+96,
+48,
+120,
+72
+],
+"sprites": [
+"1a"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -12,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"1a"
+],
+"empty": true
+},
+{
+"from": [
+2,
+80,
+72,
+128,
+96
+],
+"sprites": [
+"1b"
+],
+"text": "Slow Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+5,
+120,
+0,
+128,
+24
+],
+"sprites": [
+"1b"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 39,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+96,
+56,
+120
+],
+"sprites": [
+"1b"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"1b"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+72,
+96,
+96
+],
+"sprites": [
+"1c"
+],
+"text": "H Slider",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+2,
+56,
+0,
+128,
+24
+],
+"sprites": [
+"1c"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 57,
+"baseline": 20
+},
+{
+"from": [
+9,
+96,
+72,
+120,
+96
+],
+"sprites": [
+"1c"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"1c"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"1d"
+],
+"text": "Changeup",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 16,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+96,
+32,
+120
+],
+"sprites": [
+"1d"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 43,
+"baseline": 20
+},
+{
+"from": [
+3,
+32,
+96,
+88,
+120
+],
+"sprites": [
+"1d"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"1d"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+0,
+80,
+24
+],
+"sprites": [
+"1e"
+],
+"text": "Drop",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"1e"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -32,
+"baseline": 20
+},
+{
+"from": [
+3,
+80,
+72,
+96,
+96
+],
+"sprites": [
+"1f"
+],
+"text": "H Sinker",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"1f"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 51,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"1f"
+],
+"empty": true
+},
+{
+"from": [
+11,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"20"
+],
+"text": "Slurve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 0,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"20"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -23,
+"baseline": 21
+},
+{
+"from": [
+2,
+80,
+48,
+128,
+72
+],
+"sprites": [
+"21"
+],
+"text": "Cutter",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 14,
+"baseline": 20
+},
+{
+"from": [
+5,
+112,
+0,
+120,
+24
+],
+"sprites": [
+"21"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 20,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"21"
+],
+"empty": true
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"21"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"21"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"22"
+],
+"text": "Circle Change",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+3,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"22"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 43,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+96,
+32,
+120
+],
+"sprites": [
+"22"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"22"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+72,
+96,
+96
+],
+"sprites": [
+"23"
+],
+"text": "H Shuuto",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -4,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"23"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 53,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"23"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+0,
+80,
+24
+],
+"sprites": [
+"24"
+],
+"text": "Drop Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+96,
+56,
+120
+],
+"sprites": [
+"24"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 20,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"24"
+],
+"empty": true
+},
+{
+"from": [
+2,
+80,
+96,
+128,
+120
+],
+"sprites": [
+"25"
+],
+"text": "Original Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 13,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+72,
+48,
+96
+],
+"sprites": [
+"25"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 63,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"25"
+],
+"empty": true
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"25"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"25"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"26"
+],
+"text": "Yone Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -4,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"26"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 33,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"26"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"26"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+48,
+80,
+72
+],
+"sprites": [
+"27"
+],
+"text": "Yoshi Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -6,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"27"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 36,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"27"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"27"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+48,
+120,
+72
+],
+"sprites": [
+"28"
+],
+"text": "Emo Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"28"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 30,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"28"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"28"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+0,
+128,
+24
+],
+"sprites": [
+"29"
+],
+"text": "Razor Shuuto",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+9,
+104,
+0,
+128,
+24
+],
+"sprites": [
+"29"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 64,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"29"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"29"
+],
+"empty": true
+},
+{
+"from": [
+2,
+56,
+0,
+128,
+24
+],
+"sprites": [
+"2a"
+],
+"text": "Slider",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 20,
+"baseline": 20
+},
+{
+"from": [
+9,
+96,
+72,
+120,
+96
+],
+"sprites": [
+"2a"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"2a"
+],
+"empty": true
+},
+{
+"from": [
+1,
+0,
+96,
+56,
+120
+],
+"sprites": [
+"2b"
+],
+"text": "Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 1,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"2b"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -8,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+72,
+80,
+96
+],
+"sprites": [
+"2c"
+],
+"text": "Fork",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 17,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"2c"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"2d"
+],
+"text": "Sinker",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"2d"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"2e"
+],
+"text": "Shuuto",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"2e"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -11,
+"baseline": 20
+},
+{
+"from": [
+2,
+80,
+72,
+128,
+96
+],
+"sprites": [
+"2f"
+],
+"text": "Slow Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 14,
+"baseline": 20
+},
+{
+"from": [
+5,
+120,
+0,
+128,
+24
+],
+"sprites": [
+"2f"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 42,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"2f"
+],
+"empty": true
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"2f"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"2f"
+],
+"empty": true
+},
+{
+"from": [
+2,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"30"
+],
+"text": "Fastball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+48,
+48,
+72
+],
+"sprites": [
+"30"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 31,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"30"
+],
+"empty": true
+},
+{
+"from": [
+2,
+0,
+0,
+56,
+24
+],
+"sprites": [
+"31"
+],
+"text": "Palm",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 5,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"31"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"32"
+],
+"text": "Knuckle",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"32"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+3,
+104,
+96,
+120,
+120
+],
+"sprites": [
+"33"
+],
+"text": "V Slider",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 19,
+"baseline": 20
+},
+{
+"from": [
+2,
+56,
+0,
+128,
+24
+],
+"sprites": [
+"33"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 68,
+"baseline": 20
+},
+{
+"from": [
+9,
+96,
+72,
+120,
+96
+],
+"sprites": [
+"33"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"33"
+],
+"empty": true
+},
+{
+"sprite": "34",
+"pieces": [
+{
+"text": "SFF",
+"palette": 2
+},
+{
+"text": "Boost",
+"palette": 2
+}
+],
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"baseline": 27,
+"join": -2
+},
+{
+"from": [
+1,
+56,
+96,
+128,
+120
+],
+"sprites": [
+"35"
+],
+"text": "Screw",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 19,
+"baseline": 20
+},
+{
+"from": [
+8,
+96,
+48,
+120,
+72
+],
+"sprites": [
+"35"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"35"
+],
+"empty": true
+},
+{
+"from": [
+2,
+80,
+72,
+128,
+96
+],
+"sprites": [
+"36"
+],
+"text": "Slow Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 8,
+"baseline": 20
+},
+{
+"from": [
+5,
+120,
+0,
+128,
+24
+],
+"sprites": [
+"36"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 49,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+96,
+56,
+120
+],
+"sprites": [
+"36"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"36"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+72,
+96,
+96
+],
+"sprites": [
+"37"
+],
+"text": "H Slider",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 20,
+"baseline": 20
+},
+{
+"from": [
+2,
+56,
+0,
+128,
+24
+],
+"sprites": [
+"37"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 68,
+"baseline": 20
+},
+{
+"from": [
+9,
+96,
+72,
+120,
+96
+],
+"sprites": [
+"37"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"37"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"38"
+],
+"text": "Changeup",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 27,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+96,
+32,
+120
+],
+"sprites": [
+"38"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 54,
+"baseline": 20
+},
+{
+"from": [
+3,
+32,
+96,
+88,
+120
+],
+"sprites": [
+"38"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"38"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+0,
+80,
+24
+],
+"sprites": [
+"39"
+],
+"text": "Drop",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 15,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"39"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+3,
+80,
+72,
+96,
+96
+],
+"sprites": [
+"3a"
+],
+"text": "H Sinker",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"3a"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 61,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"3a"
+],
+"empty": true
+},
+{
+"from": [
+11,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"3b"
+],
+"text": "Slurve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"3b"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+2,
+80,
+48,
+128,
+72
+],
+"sprites": [
+"3c"
+],
+"text": "Cutter",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 24,
+"baseline": 20
+},
+{
+"from": [
+5,
+112,
+0,
+120,
+24
+],
+"sprites": [
+"3c"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 30,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"3c"
+],
+"empty": true
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"3c"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"3c"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"3d"
+],
+"text": "Circle Change",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 20,
+"baseline": 20
+},
+{
+"from": [
+3,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"3d"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 54,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+96,
+32,
+120
+],
+"sprites": [
+"3d"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"3d"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+72,
+96,
+96
+],
+"sprites": [
+"3e"
+],
+"text": "H Shuuto",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"3e"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 64,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"3e"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+0,
+80,
+24
+],
+"sprites": [
+"3f"
+],
+"text": "Drop Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 20,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+96,
+56,
+120
+],
+"sprites": [
+"3f"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 31,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"3f"
+],
+"empty": true
+},
+{
+"from": [
+2,
+80,
+96,
+128,
+120
+],
+"sprites": [
+"40"
+],
+"text": "Original Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 24,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+72,
+48,
+96
+],
+"sprites": [
+"40"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 74,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"40"
+],
+"empty": true
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"40"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"40"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"41"
+],
+"text": "Yone Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"41"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 44,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"41"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"41"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+48,
+80,
+72
+],
+"sprites": [
+"42"
+],
+"text": "Yoshi Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"42"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 46,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"42"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"42"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+48,
+120,
+72
+],
+"sprites": [
+"43"
+],
+"text": "Emo Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"43"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 41,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"43"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"43"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+0,
+128,
+24
+],
+"sprites": [
+"44"
+],
+"text": "Razor Shuuto",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 17,
+"baseline": 20
+},
+{
+"from": [
+9,
+104,
+0,
+128,
+24
+],
+"sprites": [
+"44"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 74,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"44"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"44"
+],
+"empty": true
+},
+{
+"from": [
+5,
+48,
+48,
+88,
+72
+],
+"sprites": [
+"45"
+],
+"text": "Original Fork",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+72,
+80,
+96
+],
+"sprites": [
+"45"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 57,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"45"
+],
+"empty": true
+},
+{
+"from": [
+4,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"46"
+],
+"text": "Precise",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 6,
+"baseline": 20
+},
+{
+"from": [
+4,
+112,
+24,
+120,
+48
+],
+"sprites": [
+"46"
+],
+"text": "Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -61,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"47"
+],
+"text": "Heat",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -15,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"47"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+4,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"48"
+],
+"text": "Rock",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -17,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"48"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+6,
+0,
+0,
+112,
+24
+],
+"sprites": [
+"49"
+],
+"text": "Endless Gas",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"49"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+3,
+80,
+0,
+128,
+24
+],
+"sprites": [
+"4a"
+],
+"text": "Razor Shuuto",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 5,
+"baseline": 20
+},
+{
+"from": [
+9,
+104,
+0,
+128,
+24
+],
+"sprites": [
+"4a"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 62,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"4a"
+],
+"empty": true
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"4a"
+],
+"empty": true
+},
+{
+"from": [
+6,
+0,
+48,
+96,
+72
+],
+"sprites": [
+"4b"
+],
+"text": "Pace Deception",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+3,
+80,
+48,
+120,
+72
+],
+"sprites": [
+"4c"
+],
+"text": "Emo Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"4c"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 29,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"4c"
+],
+"empty": true
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"4c"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+96,
+128,
+120
+],
+"sprites": [
+"4d"
+],
+"text": "No-Hitter",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 25,
+"baseline": 20
+},
+{
+"from": [
+6,
+96,
+48,
+128,
+72
+],
+"sprites": [
+"4d"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -26,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"4d"
+],
+"empty": true
+},
+{
+"from": [
+6,
+0,
+24,
+64,
+48
+],
+"sprites": [
+"4e"
+],
+"text": "Poker",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -8,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"4e"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -19,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+72,
+120,
+96
+],
+"sprites": [
+"4f"
+],
+"text": "Grit",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"4f"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -16,
+"baseline": 20
+},
+{
+"from": [
+5,
+48,
+72,
+88,
+96
+],
+"sprites": [
+"50"
+],
+"text": "Ogre",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -16,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"50"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -14,
+"baseline": 20
+},
+{
+"from": [
+6,
+64,
+24,
+128,
+48
+],
+"sprites": [
+"51"
+],
+"text": "Ultra Slow",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -26,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"51"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 1,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+24,
+112,
+48
+],
+"sprites": [
+"52"
+],
+"text": "Lefty Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 1,
+"baseline": 20
+},
+{
+"from": [
+6,
+0,
+72,
+96,
+96
+],
+"sprites": [
+"53"
+],
+"text": "Flame Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+48,
+120,
+72
+],
+"sprites": [
+"54"
+],
+"text": "Thread the Needle",
+"style": "ren_f15_r33",
+"font": "dc11g2b10",
+"left": 0,
+"baseline": 18
+},
+{
+"from": [
+3,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"55"
+],
+"text": "Yone Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -4,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"55"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 33,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"55"
+],
+"empty": true
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"55"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+48,
+80,
+72
+],
+"sprites": [
+"56"
+],
+"text": "Yoshi Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"56"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 35,
+"baseline": 20
+},
+{
+"from": [
+3,
+120,
+96,
+128,
+120
+],
+"sprites": [
+"56"
+],
+"empty": true
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"56"
+],
+"empty": true
+},
+{
+"from": [
+2,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"57"
+],
+"text": "Knuckle Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -3,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+96,
+56,
+120
+],
+"sprites": [
+"57"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 34,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"57"
+],
+"empty": true
+},
+{
+"from": [
+2,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"58"
+],
+"text": "Knuckle Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+96,
+56,
+120
+],
+"sprites": [
+"58"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 44,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"58"
+],
+"empty": true
+},
+{
+"from": [
+6,
+0,
+96,
+96,
+120
+],
+"sprites": [
+"59"
+],
+"text": "Boss Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -4,
+"baseline": 20
+},
+{
+"from": [
+12,
+0,
+72,
+64,
+96
+],
+"sprites": [
+"5a"
+],
+"text": "Weed Spirit",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -30,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"5a"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 5,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+48,
+128,
+72
+],
+"sprites": [
+"5b"
+],
+"text": "Hot Arm",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -28,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"5b"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+96,
+112,
+120
+],
+"sprites": [
+"5c"
+],
+"text": "Toughness",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"5c"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -26,
+"baseline": 20
+},
+{
+"from": [
+8,
+0,
+0,
+112,
+24
+],
+"sprites": [
+"5d"
+],
+"text": "Ace Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 8,
+"baseline": 20
+},
+{
+"from": [
+8,
+0,
+24,
+128,
+48
+],
+"sprites": [
+"5e"
+],
+"text": "Perfect Game",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -18,
+"baseline": 20
+},
+{
+"from": [
+8,
+112,
+0,
+120,
+24
+],
+"sprites": [
+"5e"
+],
+"text": "Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -39,
+"baseline": 20
+},
+{
+"from": [
+8,
+0,
+48,
+96,
+72
+],
+"sprites": [
+"5f"
+],
+"text": "Ultimate Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+8,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"60"
+],
+"text": "Ultimate Shuuto",
+"style": "ren_f15_r33",
+"font": "dc12g2b10",
+"left": -13,
+"baseline": 19
+},
+{
+"from": [
+8,
+0,
+72,
+120,
+96
+],
+"sprites": [
+"60"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc12g2b10",
+"left": 70,
+"baseline": 19
+},
+{
+"from": [
+8,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"61"
+],
+"text": "Ultimate Sinker",
+"style": "ren_f15_r33",
+"font": "dc13g2b10",
+"left": -15,
+"baseline": 19
+},
+{
+"from": [
+8,
+0,
+96,
+120,
+120
+],
+"sprites": [
+"61"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc13g2b10",
+"left": 68,
+"baseline": 19
+},
+{
+"from": [
+8,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"62"
+],
+"text": "Ultimate",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 8,
+"baseline": 20
+},
+{
+"from": [
+9,
+0,
+0,
+104,
+24
+],
+"sprites": [
+"62"
+],
+"text": "Slider",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 47,
+"baseline": 20
+},
+{
+"from": [
+8,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"63"
+],
+"text": "Ultimate Fork",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+9,
+0,
+24,
+88,
+48
+],
+"sprites": [
+"63"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 64,
+"baseline": 20
+},
+{
+"from": [
+8,
+88,
+72,
+120,
+96
+],
+"sprites": [
+"63"
+],
+"empty": true
+},
+{
+"from": [
+9,
+0,
+48,
+128,
+72
+],
+"sprites": [
+"64"
+],
+"text": "Deceptive Palm",
+"style": "ren_f15_r33",
+"font": "dc13g2b10",
+"left": -23,
+"baseline": 19
+},
+{
+"from": [
+8,
+120,
+0,
+128,
+24
+],
+"sprites": [
+"64"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc13g2b10",
+"left": -39,
+"baseline": 19
+},
+{
+"from": [
+9,
+0,
+72,
+96,
+96
+],
+"sprites": [
+"65"
+],
+"text": "Submarine",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -9,
+"baseline": 20
+},
+{
+"from": [
+9,
+88,
+24,
+128,
+48
+],
+"sprites": [
+"65"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -18,
+"baseline": 20
+},
+{
+"from": [
+9,
+0,
+96,
+112,
+120
+],
+"sprites": [
+"66"
+],
+"text": "Closer Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+7,
+0,
+72,
+96,
+96
+],
+"sprites": [
+"67"
+],
+"text": "Master Pitching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -14,
+"baseline": 20
+},
+{
+"from": [
+7,
+0,
+48,
+112,
+72
+],
+"sprites": [
+"68"
+],
+"text": "Strikeout Pitching",
+"style": "ren_f15_r33",
+"font": "dc11g2b10",
+"left": -5,
+"baseline": 18
+},
+{
+"from": [
+10,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"69"
+],
+"text": "Legend Curve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+10,
+104,
+72,
+112,
+96
+],
+"sprites": [
+"69"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -42,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+0,
+32,
+24
+],
+"sprites": [
+"6a"
+],
+"text": "Legend Shuuto",
+"style": "ren_f15_r33",
+"font": "dc14g2b10",
+"left": -17,
+"baseline": 19
+},
+{
+"from": [
+10,
+0,
+24,
+120,
+48
+],
+"sprites": [
+"6a"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc14g2b10",
+"left": 64,
+"baseline": 19
+},
+{
+"from": [
+10,
+0,
+0,
+32,
+24
+],
+"sprites": [
+"6b"
+],
+"text": "Legend Sinker",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -15,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+48,
+120,
+72
+],
+"sprites": [
+"6b"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 64,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+0,
+32,
+24
+],
+"sprites": [
+"6c"
+],
+"text": "Legend Slider",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -4,
+"baseline": 20
+},
+{
+"from": [
+11,
+0,
+48,
+96,
+72
+],
+"sprites": [
+"6c"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 72,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+24,
+128,
+48
+],
+"sprites": [
+"6c"
+],
+"empty": true
+},
+{
+"from": [
+10,
+0,
+0,
+32,
+24
+],
+"sprites": [
+"6d"
+],
+"text": "Legend Palm",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -18,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+72,
+104,
+96
+],
+"sprites": [
+"6d"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 49,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+96,
+112,
+120
+],
+"sprites": [
+"6e"
+],
+"text": "Legend Fork",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+11,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"6f"
+],
+"text": "Sharp Break",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -14,
+"baseline": 20
+},
+{
+"from": [
+10,
+104,
+72,
+112,
+96
+],
+"sprites": [
+"6f"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -47,
+"baseline": 20
+},
+{
+"from": [
+11,
+0,
+24,
+128,
+48
+],
+"sprites": [
+"70"
+],
+"text": "Flame Stopper",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+5,
+88,
+24,
+128,
+48
+],
+"sprites": [
+"70"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -20,
+"baseline": 20
+},
+{
+"from": [
+7,
+0,
+96,
+112,
+120
+],
+"sprites": [
+"71"
+],
+"text": "Iron Will Pitching",
+"style": "ren_f15_r33",
+"font": "dc12g2b10",
+"left": -5,
+"baseline": 19
+},
+{
+"from": [
+12,
+0,
+0,
+96,
+24
+],
+"sprites": [
+"72"
+],
+"text": "Demon Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -12,
+"baseline": 19
+},
+{
+"from": [
+7,
+0,
+24,
+120,
+48
+],
+"sprites": [
+"73"
+],
+"text": "Focus Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 19
+},
+{
+"from": [
+12,
+0,
+24,
+96,
+48
+],
+"sprites": [
+"74"
+],
+"text": "Strikeout Secrets",
+"style": "ren_f15_r33",
+"font": "dc12g2b10",
+"left": -14,
+"baseline": 19
+},
+{
+"from": [
+12,
+0,
+48,
+96,
+72
+],
+"sprites": [
+"75"
+],
+"text": "Sharpness Secrets",
+"style": "ren_f15_r33",
+"font": "dc11g2b10",
+"left": -11,
+"baseline": 18
+},
+{
+"from": [
+7,
+0,
+0,
+120,
+24
+],
+"sprites": [
+"76"
+],
+"text": "Form Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 3,
+"baseline": 20
+},
+{
+"from": [
+11,
+0,
+72,
+88,
+96
+],
+"sprites": [
+"77"
+],
+"text": "Legend Slurve",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -15,
+"baseline": 20
+},
+{
+"from": [
+11,
+88,
+72,
+128,
+96
+],
+"sprites": [
+"77"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+7,
+96,
+72,
+120,
+96
+],
+"sprites": [
+"77"
+],
+"empty": true
+},
+{
+"from": [
+12,
+96,
+0,
+128,
+24
+],
+"sprites": [
+"78"
+],
+"text": "2-Seamer",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -5,
+"baseline": 19
+},
+{
+"from": [
+12,
+96,
+24,
+128,
+48
+],
+"sprites": [
+"78"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 41,
+"baseline": 19
+},
+{
+"from": [
+12,
+96,
+48,
+128,
+72
+],
+"sprites": [
+"78"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"78"
+],
+"empty": true
+},
+{
+"from": [
+12,
+96,
+0,
+128,
+24
+],
+"sprites": [
+"79"
+],
+"text": "2-Seamer",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 6,
+"baseline": 19
+},
+{
+"from": [
+12,
+96,
+24,
+128,
+48
+],
+"sprites": [
+"79"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 52,
+"baseline": 19
+},
+{
+"from": [
+12,
+96,
+48,
+128,
+72
+],
+"sprites": [
+"79"
+],
+"empty": true
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"79"
+],
+"empty": true
+},
+{
+"from": [
+12,
+72,
+72,
+128,
+96
+],
+"sprites": [
+"7a"
+],
+"text": "Moving Fastball",
+"style": "ren_f15_r33",
+"font": "dc13g2b10",
+"left": 8,
+"baseline": 19
+},
+{
+"from": [
+12,
+0,
+96,
+96,
+120
+],
+"sprites": [
+"7a"
+],
+"text": "Practice",
+"style": "ren_f15_r33",
+"font": "dc13g2b10",
+"left": 69,
+"baseline": 19
+},
+{
+"from": [
+3,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"7a"
+],
+"empty": true
+},
+{
+"from": [
+12,
+72,
+72,
+128,
+96
+],
+"sprites": [
+"7b"
+],
+"text": "Moving Fastball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 11,
+"baseline": 20
+},
+{
+"from": [
+12,
+0,
+96,
+96,
+120
+],
+"sprites": [
+"7b"
+],
+"text": "Boost",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 82,
+"baseline": 20
+},
+{
+"from": [
+3,
+40,
+72,
+80,
+96
+],
+"sprites": [
+"7b"
+],
+"empty": true
+}
+]
+},
+{
+"bank": "g3_2ren",
+"palette": 2,
+"style": "ren_f15_r33",
+"share": true,
+"gap": [
+1,
+1
+],
+"areas": [
+[
+0,
+0,
+0,
+128,
+128
+],
+[
+1,
+0,
+0,
+128,
+128
+],
+[
+2,
+0,
+0,
+128,
+128
+],
+[
+3,
+0,
+0,
+128,
+128
+],
+[
+4,
+0,
+0,
+128,
+128
+],
+[
+5,
+0,
+0,
+128,
+128
+],
+[
+6,
+0,
+0,
+128,
+128
+],
+[
+7,
+0,
+0,
+128,
+128
+],
+[
+8,
+0,
+0,
+128,
+128
+],
+[
+9,
+0,
+0,
+128,
+128
+],
+[
+10,
+0,
+0,
+128,
+128
+],
+[
+11,
+0,
+0,
+128,
+128
+],
+[
+12,
+0,
+0,
+128,
+128
+]
+],
+"labels": [
+{
+"from": [
+0,
+0,
+0,
+56,
+24
+],
+"sprites": [
+"00"
+],
+"text": "Swings",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 0,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"01"
+],
+"text": "Batting Form",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 18,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"01"
+],
+"text": "Check",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 86,
+"baseline": 20
+},
+{
+"from": [
+2,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"01"
+],
+"empty": true
+},
+{
+"from": [
+2,
+64,
+96,
+96,
+120
+],
+"sprites": [
+"01"
+],
+"empty": true
+},
+{
+"from": [
+0,
+56,
+72,
+112,
+96
+],
+"sprites": [
+"02"
+],
+"text": "Tee",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 39,
+"baseline": 19
+},
+{
+"from": [
+3,
+0,
+24,
+112,
+48
+],
+"sprites": [
+"02"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 15,
+"baseline": 19
+},
+{
+"from": [
+1,
+80,
+48,
+120,
+72
+],
+"sprites": [
+"03"
+],
+"text": "Toss",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 27,
+"baseline": 19
+},
+{
+"from": [
+3,
+0,
+24,
+112,
+48
+],
+"sprites": [
+"03"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 28,
+"baseline": 19
+},
+{
+"from": [
+0,
+0,
+24,
+24,
+48
+],
+"sprites": [
+"04"
+],
+"text": "Extra",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -18,
+"baseline": 20
+},
+{
+"from": [
+0,
+24,
+24,
+48,
+48
+],
+"sprites": [
+"04"
+],
+"text": "Hitting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -12,
+"baseline": 20
+},
+{
+"from": [
+0,
+56,
+0,
+112,
+24
+],
+"sprites": [
+"05"
+],
+"text": "Push-Ups",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -8,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+0,
+80,
+24
+],
+"sprites": [
+"06"
+],
+"text": "Dumbbells",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+72,
+56,
+96
+],
+"sprites": [
+"07"
+],
+"text": "Long Tee",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 21,
+"baseline": 19
+},
+{
+"from": [
+0,
+56,
+72,
+112,
+96
+],
+"sprites": [
+"07"
+],
+"empty": true
+},
+{
+"from": [
+1,
+0,
+24,
+112,
+48
+],
+"sprites": [
+"08"
+],
+"text": "Bench Press",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+2,
+72,
+48,
+128,
+72
+],
+"sprites": [
+"09"
+],
+"text": "Free",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 1,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"09"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -17,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"0a"
+],
+"text": "Running",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+96,
+64,
+120
+],
+"sprites": [
+"0b"
+],
+"text": "Short",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 15,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+72,
+72
+],
+"sprites": [
+"0b"
+],
+"text": "Sprints",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 2,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"0c"
+],
+"text": "Hill",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 11,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+72,
+72
+],
+"sprites": [
+"0c"
+],
+"text": "Sprints",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 3,
+"baseline": 20
+},
+{
+"from": [
+1,
+40,
+48,
+80,
+72
+],
+"sprites": [
+"0d"
+],
+"text": "Stair",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+48,
+72,
+72
+],
+"sprites": [
+"0d"
+],
+"text": "Sprints",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+96,
+128,
+120
+],
+"sprites": [
+"0e"
+],
+"text": "Base",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 25,
+"baseline": 20
+},
+{
+"from": [
+3,
+32,
+72,
+56,
+96
+],
+"sprites": [
+"0e"
+],
+"text": "Running",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -60,
+"baseline": 20
+},
+{
+"from": [
+1,
+0,
+72,
+128,
+96
+],
+"sprites": [
+"0f"
+],
+"text": "Play Catch",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 23,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+48,
+56,
+72
+],
+"sprites": [
+"10"
+],
+"text": "Fungo",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 21
+},
+{
+"from": [
+0,
+56,
+48,
+120,
+72
+],
+"sprites": [
+"11"
+],
+"text": "Short",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 12,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+48,
+56,
+72
+],
+"sprites": [
+"11"
+],
+"text": "Fungo",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+24,
+24,
+48
+],
+"sprites": [
+"12"
+],
+"text": "Extra",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -22,
+"baseline": 20
+},
+{
+"from": [
+0,
+48,
+24,
+72,
+48
+],
+"sprites": [
+"12"
+],
+"text": "Fielding",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -16,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+72,
+72,
+96
+],
+"sprites": [
+"13"
+],
+"text": "100-Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 6,
+"baseline": 19
+},
+{
+"from": [
+0,
+0,
+48,
+56,
+72
+],
+"sprites": [
+"13"
+],
+"text": "Fungo",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 19
+},
+{
+"from": [
+1,
+0,
+96,
+112,
+120
+],
+"sprites": [
+"14"
+],
+"text": "Throwing",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 31,
+"baseline": 20
+},
+{
+"from": [
+2,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"14"
+],
+"text": "Check",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+2,
+64,
+96,
+96,
+120
+],
+"sprites": [
+"14"
+],
+"empty": true
+},
+{
+"from": [
+3,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"15"
+],
+"text": "Tube",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 41,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+72,
+56,
+96
+],
+"sprites": [
+"15"
+],
+"text": "Training",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -47,
+"baseline": 20
+},
+{
+"from": [
+0,
+72,
+24,
+96,
+48
+],
+"sprites": [
+"16"
+],
+"text": "Long",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -6,
+"baseline": 20
+},
+{
+"from": [
+0,
+96,
+24,
+120,
+48
+],
+"sprites": [
+"16"
+],
+"text": "Toss",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"17"
+],
+"text": "BP",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 4,
+"baseline": 20
+},
+{
+"from": [
+1,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"17"
+],
+"text": "Throw",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -12,
+"baseline": 20
+},
+{
+"from": [
+2,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"18"
+],
+"text": "Overhead",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 33,
+"baseline": 20
+},
+{
+"from": [
+2,
+72,
+72,
+128,
+96
+],
+"sprites": [
+"18"
+],
+"text": "Press",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+24,
+96,
+48
+],
+"sprites": [
+"19"
+],
+"text": "Warrior Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -16,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"19"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+4,
+96,
+24,
+112,
+48
+],
+"sprites": [
+"1a"
+],
+"text": "At-Bat Spirit",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+4,
+112,
+24,
+128,
+48
+],
+"sprites": [
+"1a"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 70,
+"baseline": 20
+},
+{
+"from": [
+3,
+0,
+96,
+64,
+120
+],
+"sprites": [
+"1a"
+],
+"empty": true
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"1a"
+],
+"empty": true
+},
+{
+"from": [
+5,
+0,
+72,
+64,
+96
+],
+"sprites": [
+"1b"
+],
+"text": "Switch Hit",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -25,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"1b"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 0,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+72,
+80,
+96
+],
+"sprites": [
+"1c"
+],
+"text": "Iron Man",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"1c"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -17,
+"baseline": 20
+},
+{
+"from": [
+5,
+64,
+72,
+128,
+96
+],
+"sprites": [
+"1d"
+],
+"text": "My Way",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -14,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"1d"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+6,
+0,
+72,
+64,
+96
+],
+"sprites": [
+"1e"
+],
+"text": "Triple Crown",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -34,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"1e"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+48,
+40,
+72
+],
+"sprites": [
+"1f"
+],
+"text": "Master",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -26,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"1f"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -3,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+48,
+96,
+72
+],
+"sprites": [
+"20"
+],
+"text": "Hit Maker",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -6,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"20"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -21,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+72,
+128,
+96
+],
+"sprites": [
+"21"
+],
+"text": "Leadoff",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -8,
+"baseline": 20
+},
+{
+"from": [
+6,
+96,
+0,
+128,
+24
+],
+"sprites": [
+"21"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"21"
+],
+"empty": true
+},
+{
+"from": [
+4,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"22"
+],
+"text": "Refined",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -5,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"22"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -20,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+0,
+112,
+24
+],
+"sprites": [
+"23"
+],
+"text": "Bullet Liner",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 0,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"23"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -17,
+"baseline": 20
+},
+{
+"from": [
+6,
+64,
+72,
+128,
+96
+],
+"sprites": [
+"24"
+],
+"text": "Clutch",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"24"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -15,
+"baseline": 20
+},
+{
+"from": [
+9,
+0,
+24,
+112,
+48
+],
+"sprites": [
+"25"
+],
+"text": "Naniwa Star",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 9,
+"baseline": 20
+},
+{
+"from": [
+5,
+40,
+48,
+80,
+72
+],
+"sprites": [
+"26"
+],
+"text": "Artisan",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -20,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"26"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 3,
+"baseline": 20
+},
+{
+"from": [
+8,
+0,
+96,
+128,
+120
+],
+"sprites": [
+"27"
+],
+"text": "Triple-Three",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"27"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -26,
+"baseline": 20
+},
+{
+"from": [
+1,
+112,
+96,
+128,
+120
+],
+"sprites": [
+"28"
+],
+"text": "Full Swing",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 5,
+"baseline": 20
+},
+{
+"from": [
+6,
+0,
+0,
+96,
+24
+],
+"sprites": [
+"28"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 72,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"28"
+],
+"empty": true
+},
+{
+"from": [
+4,
+80,
+96,
+128,
+120
+],
+"sprites": [
+"29"
+],
+"text": "Iron Will",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -9,
+"baseline": 20
+},
+{
+"from": [
+8,
+96,
+24,
+128,
+48
+],
+"sprites": [
+"29"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 12,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"29"
+],
+"empty": true
+},
+{
+"from": [
+5,
+80,
+48,
+120,
+72
+],
+"sprites": [
+"2a"
+],
+"text": "Artistry",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -30,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"2a"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 1,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+24,
+112,
+48
+],
+"sprites": [
+"2b"
+],
+"text": "Little Slugger",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -16,
+"baseline": 19
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"2b"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -12,
+"baseline": 20
+},
+{
+"from": [
+9,
+0,
+48,
+112,
+72
+],
+"sprites": [
+"2c"
+],
+"text": "Lefty Killer",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 20
+},
+{
+"from": [
+4,
+96,
+48,
+128,
+72
+],
+"sprites": [
+"2d"
+],
+"text": "Slugger",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 2,
+"baseline": 20
+},
+{
+"from": [
+3,
+56,
+72,
+120,
+96
+],
+"sprites": [
+"2d"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 33,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"2d"
+],
+"empty": true
+},
+{
+"from": [
+7,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"2e"
+],
+"text": "Mr. Red",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 11,
+"baseline": 20
+},
+{
+"from": [
+6,
+32,
+96,
+96,
+120
+],
+"sprites": [
+"2e"
+],
+"text": "Helmet",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+8,
+40,
+72,
+112,
+96
+],
+"sprites": [
+"2f"
+],
+"text": "V9 Brain",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -12,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"2f"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -16,
+"baseline": 20
+},
+{
+"from": [
+1,
+112,
+24,
+128,
+48
+],
+"sprites": [
+"30"
+],
+"text": "Nimble",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -14,
+"baseline": 19
+},
+{
+"from": [
+6,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"30"
+],
+"text": "Catching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 26,
+"baseline": 19
+},
+{
+"from": [
+7,
+0,
+96,
+112,
+120
+],
+"sprites": [
+"31"
+],
+"text": "Home Plate Guard",
+"style": "ren_f15_r33",
+"font": "dc13g2b10",
+"left": -7,
+"baseline": 19
+},
+{
+"from": [
+0,
+112,
+72,
+128,
+96
+],
+"sprites": [
+"32"
+],
+"text": "Supercar",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 16,
+"baseline": 20
+},
+{
+"from": [
+8,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"32"
+],
+"text": "Speed",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 73,
+"baseline": 20
+},
+{
+"from": [
+3,
+112,
+72,
+120,
+96
+],
+"sprites": [
+"32"
+],
+"empty": true
+},
+{
+"from": [
+6,
+80,
+24,
+120,
+48
+],
+"sprites": [
+"33"
+],
+"text": "Hell",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 6,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+48,
+56,
+72
+],
+"sprites": [
+"33"
+],
+"text": "Fungo",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 1,
+"baseline": 20
+},
+{
+"from": [
+6,
+72,
+48,
+128,
+72
+],
+"sprites": [
+"34"
+],
+"text": "Guts",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -8,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"34"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -22,
+"baseline": 20
+},
+{
+"from": [
+7,
+0,
+72,
+112,
+96
+],
+"sprites": [
+"35"
+],
+"text": "Wall Wizard",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"35"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -23,
+"baseline": 20
+},
+{
+"from": [
+5,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"36"
+],
+"text": "Blue Bolt",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"36"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -14,
+"baseline": 20
+},
+{
+"from": [
+7,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"37"
+],
+"text": "Leaping Catch",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 14,
+"baseline": 20
+},
+{
+"from": [
+8,
+0,
+72,
+40,
+96
+],
+"sprites": [
+"37"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -4,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"37"
+],
+"empty": true
+},
+{
+"from": [
+8,
+0,
+24,
+96,
+48
+],
+"sprites": [
+"38"
+],
+"text": "Cannon Throwing",
+"style": "ren_f15_r33",
+"font": "dc13g2b10",
+"left": -14,
+"baseline": 19
+},
+{
+"from": [
+5,
+40,
+48,
+80,
+72
+],
+"sprites": [
+"39"
+],
+"text": "Artisan",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -23,
+"baseline": 20
+},
+{
+"from": [
+4,
+40,
+0,
+80,
+24
+],
+"sprites": [
+"39"
+],
+"text": "Fielding",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 1,
+"baseline": 20
+},
+{
+"from": [
+1,
+120,
+48,
+128,
+72
+],
+"sprites": [
+"3a"
+],
+"text": "Mind",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -5,
+"baseline": 20
+},
+{
+"from": [
+6,
+0,
+48,
+72,
+72
+],
+"sprites": [
+"3a"
+],
+"text": "Games",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 26,
+"baseline": 20
+},
+{
+"from": [
+4,
+96,
+24,
+112,
+48
+],
+"sprites": [
+"3b"
+],
+"text": "One-Pitch Spirit",
+"style": "ren_f15_r33",
+"font": "dc12g2b10",
+"left": -33,
+"baseline": 19
+},
+{
+"from": [
+3,
+64,
+96,
+128,
+120
+],
+"sprites": [
+"3b"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc12g2b10",
+"left": 72,
+"baseline": 19
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"3b"
+],
+"empty": true
+},
+{
+"from": [
+7,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"3c"
+],
+"text": "Mr. Red Helmet",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -1,
+"baseline": 20
+},
+{
+"from": [
+6,
+32,
+96,
+96,
+120
+],
+"sprites": [
+"3c"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 46,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"3c"
+],
+"empty": true
+},
+{
+"from": [
+5,
+80,
+96,
+128,
+120
+],
+"sprites": [
+"3d"
+],
+"text": "Samurai",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+6,
+0,
+96,
+32,
+120
+],
+"sprites": [
+"3d"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 15,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"3d"
+],
+"empty": true
+},
+{
+"from": [
+3,
+80,
+48,
+120,
+72
+],
+"sprites": [
+"3e"
+],
+"text": "Boss",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"3e"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -7,
+"baseline": 20
+},
+{
+"from": [
+9,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"3f"
+],
+"text": "Mr. Tigers",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 30,
+"baseline": 20
+},
+{
+"from": [
+8,
+72,
+48,
+104,
+72
+],
+"sprites": [
+"3f"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -17,
+"baseline": 20
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"3f"
+],
+"empty": true
+},
+{
+"from": [
+7,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"40"
+],
+"text": "Mr. Lotte",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 21,
+"baseline": 20
+},
+{
+"from": [
+2,
+96,
+96,
+128,
+120
+],
+"sprites": [
+"40"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 25,
+"baseline": 20
+},
+{
+"from": [
+6,
+96,
+96,
+128,
+120
+],
+"sprites": [
+"40"
+],
+"empty": true
+},
+{
+"from": [
+4,
+80,
+0,
+120,
+24
+],
+"sprites": [
+"40"
+],
+"empty": true
+},
+{
+"from": [
+8,
+0,
+48,
+72,
+72
+],
+"sprites": [
+"41"
+],
+"text": "Data Ball",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -17,
+"baseline": 20
+},
+{
+"from": [
+4,
+0,
+0,
+40,
+24
+],
+"sprites": [
+"41"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -10,
+"baseline": 20
+},
+{
+"from": [
+7,
+0,
+48,
+112,
+72
+],
+"sprites": [
+"42"
+],
+"text": "Red Star",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 20
+},
+{
+"from": [
+7,
+80,
+24,
+120,
+48
+],
+"sprites": [
+"42"
+],
+"text": "Running",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -30,
+"baseline": 20
+},
+{
+"from": [
+9,
+0,
+72,
+112,
+96
+],
+"sprites": [
+"43"
+],
+"text": "Cleanup Coaching",
+"style": "ren_f15_r33",
+"font": "dc12g2b10",
+"left": -4,
+"baseline": 19
+},
+{
+"from": [
+10,
+0,
+72,
+96,
+96
+],
+"sprites": [
+"44"
+],
+"text": "1-Leg Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -9,
+"baseline": 20
+},
+{
+"from": [
+9,
+0,
+96,
+112,
+120
+],
+"sprites": [
+"45"
+],
+"text": "Naniwa Ogre",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 8,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"46"
+],
+"text": "Big Swinger",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -14,
+"baseline": 20
+},
+{
+"from": [
+9,
+112,
+24,
+120,
+48
+],
+"sprites": [
+"46"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -49,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+24,
+128,
+48
+],
+"sprites": [
+"47"
+],
+"text": "Mr. Lotte",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 12,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+96,
+40,
+120
+],
+"sprites": [
+"47"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -40,
+"baseline": 20
+},
+{
+"from": [
+10,
+0,
+48,
+128,
+72
+],
+"sprites": [
+"48"
+],
+"text": "Machine Gun",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -11,
+"baseline": 20
+},
+{
+"from": [
+9,
+120,
+24,
+128,
+48
+],
+"sprites": [
+"48"
+],
+"text": "Batting",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -41,
+"baseline": 20
+},
+{
+"from": [
+11,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"49"
+],
+"text": "Artist",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 8,
+"baseline": 20
+},
+{
+"from": [
+11,
+112,
+48,
+120,
+72
+],
+"sprites": [
+"49"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -69,
+"baseline": 20
+},
+{
+"from": [
+11,
+0,
+24,
+104,
+48
+],
+"sprites": [
+"4a"
+],
+"text": "Dark Horse Batting",
+"style": "ren_f15_r33",
+"font": "dc11g2b10",
+"left": -11,
+"baseline": 18
+},
+{
+"from": [
+11,
+0,
+48,
+104,
+72
+],
+"sprites": [
+"4b"
+],
+"text": "Bunt Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -4,
+"baseline": 20
+},
+{
+"from": [
+11,
+0,
+72,
+120,
+96
+],
+"sprites": [
+"4c"
+],
+"text": "Mister Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -2,
+"baseline": 20
+},
+{
+"from": [
+11,
+0,
+96,
+120,
+120
+],
+"sprites": [
+"4d"
+],
+"text": "Spray Hitter",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 11,
+"baseline": 20
+},
+{
+"from": [
+12,
+0,
+0,
+128,
+24
+],
+"sprites": [
+"4e"
+],
+"text": "Golden Glove",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 10,
+"baseline": 21
+},
+{
+"from": [
+12,
+0,
+24,
+64,
+48
+],
+"sprites": [
+"4e"
+],
+"text": "Catching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -15,
+"baseline": 21
+},
+{
+"from": [
+12,
+0,
+48,
+80,
+72
+],
+"sprites": [
+"4f"
+],
+"text": "Artful Throwing",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -20,
+"baseline": 20
+},
+{
+"from": [
+12,
+0,
+72,
+128,
+96
+],
+"sprites": [
+"50"
+],
+"text": "Throwing",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 7,
+"baseline": 20
+},
+{
+"from": [
+12,
+64,
+24,
+88,
+48
+],
+"sprites": [
+"50"
+],
+"text": "Coaching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -48,
+"baseline": 20
+},
+{
+"from": [
+12,
+0,
+96,
+80,
+120
+],
+"sprites": [
+"51"
+],
+"text": "Master Fielding",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -20,
+"baseline": 20
+}
+]
+},
+{
+"bank": "g3_3ren",
+"palette": 2,
+"style": "ren_f15_r33",
+"share": true,
+"gap": [
+1,
+1
+],
+"areas": [
+[
+0,
+0,
+0,
+128,
+128
+]
+],
+"labels": [
+{
+"from": [
+0,
+0,
+72,
+96,
+96
+],
+"sprites": [
+"00"
+],
+"text": "Stretching",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 6,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+96,
+96,
+120
+],
+"sprites": [
+"01"
+],
+"text": "Massage",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 14,
+"baseline": 20
+},
+{
+"from": [
+0,
+64,
+48,
+128,
+72
+],
+"sprites": [
+"02"
+],
+"text": "Acupuncture",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -18,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+24,
+80,
+48
+],
+"sprites": [
+"03"
+],
+"text": "Team Defense",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": -13,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+0,
+96,
+24
+],
+"sprites": [
+"04"
+],
+"text": "Pep Talk",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 15,
+"baseline": 20
+},
+{
+"from": [
+0,
+0,
+48,
+64,
+72
+],
+"sprites": [
+"05"
+],
+"text": "Phoenix",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 12,
+"baseline": 20
+},
+{
+"from": [
+0,
+80,
+24,
+128,
+48
+],
+"sprites": [
+"05"
+],
+"text": "Rehab",
+"style": "ren_f15_r33",
+"font": "dc15g2b10",
+"left": 16,
+"baseline": 20
+},
+{
+"from": [
+0,
+96,
+0,
+120,
+24
+],
+"sprites": [
+"05"
+],
+"empty": true
+}
+]
+}
+]
+}
