@@ -57,4 +57,5 @@ STYLES = {
     "bubble": banded([0, 8, 10, 12, 13, 14, 15], [2]),                           # palette 123
     "fastbtn": banded([0, 11, 10, 9, 9, 9, 9], [4, 6]),                          # palette 105
     "slash": banded([0, 9, 8, 7, 6, 6, 6], [3, 2], 4),                           # palette 26
+    "daygame": banded([0, 9, 11, 13, 14, 14, 14], [1]),                           # palette 53 (8d)
 }

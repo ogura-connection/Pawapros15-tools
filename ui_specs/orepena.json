@@ -805,7 +805,7 @@
      ],
      "text": "Ordinary",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -818,7 +818,7 @@
      ],
      "text": "Hide",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -831,7 +831,7 @@
      ],
      "text": "Weak",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -844,7 +844,7 @@
      ],
      "text": "Normal",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     },
     {
@@ -857,7 +857,7 @@
      ],
      "text": "Strong",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -883,7 +883,7 @@
      ],
      "text": "Type",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -896,7 +896,7 @@
      ],
      "text": "Auto",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -909,7 +909,7 @@
      ],
      "text": "Hardest",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -922,7 +922,7 @@
      ],
      "text": "Off",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -935,7 +935,7 @@
      ],
      "text": "Easiest",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -948,7 +948,7 @@
      ],
      "text": "Sweet",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -961,7 +961,7 @@
      ],
      "text": "Show",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -974,7 +974,7 @@
      ],
      "text": "Lock On",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -987,7 +987,7 @@
      ],
      "text": "On",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1000,7 +1000,7 @@
      ],
      "text": "Load",
      "style": "o_f11_r35_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1013,7 +1013,7 @@
      ],
      "text": "Save",
      "style": "o_f11_r31_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1039,7 +1039,7 @@
      ],
      "text": "Show",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1052,7 +1052,7 @@
      ],
      "text": "Powerful",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     },
     {
@@ -1065,7 +1065,7 @@
      ],
      "text": "Hide",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1078,7 +1078,7 @@
      ],
      "text": "Quit",
      "style": "o_f11_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1091,7 +1091,7 @@
      ],
      "text": "Pitch Cursor",
      "style": "o_f15_r33_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -1104,7 +1104,7 @@
      ],
      "text": "Controller",
      "style": "o_f15_r32_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -1143,7 +1143,7 @@
      ],
      "text": "Pitch Guide",
      "style": "o_f15_r11_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     },
     {
@@ -1156,7 +1156,7 @@
      ],
      "text": "Strike Zone",
      "style": "o_f15_r11_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1182,7 +1182,7 @@
      ],
      "text": "Steal",
      "style": "o_f15_r45_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     },
     {
@@ -1195,7 +1195,7 @@
      ],
      "text": "Manual",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1208,7 +1208,7 @@
      ],
      "text": "Meet Cursor",
      "style": "o_f15_r33_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -1260,7 +1260,7 @@
      ],
      "text": "Pitch / Bat Type",
      "style": "o_f15_r33_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -1273,7 +1273,7 @@
      ],
      "text": "No Window",
      "style": "o_f6_r1_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -1286,7 +1286,7 @@
      ],
      "text": "Window",
      "style": "o_f6_re1_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1351,7 +1351,7 @@
      ],
      "text": "Close-Up Cam",
      "style": "o_f15_r11_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -1364,7 +1364,7 @@
      ],
      "text": "Scene Replay",
      "style": "o_f15_r11_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -1377,7 +1377,7 @@
      ],
      "text": "Player Data",
      "style": "o_f15_r11_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -1390,7 +1390,7 @@
      ],
      "text": "Lock On",
      "style": "o_f15_r65_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1403,7 +1403,7 @@
      ],
      "text": "On",
      "style": "o_f15_r66b_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -1416,7 +1416,7 @@
      ],
      "text": "Ball",
      "style": "o_f15_r6b_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1429,7 +1429,7 @@
      ],
      "text": "Point",
      "style": "o_f15_r6b_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1442,7 +1442,7 @@
      ],
      "text": "Off",
      "style": "o_f15_r6b_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1455,7 +1455,7 @@
      ],
      "text": "Hide",
      "style": "o_f15_r666_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1468,7 +1468,7 @@
      ],
      "text": "Aim",
      "style": "o_f15_r666_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1481,7 +1481,7 @@
      ],
      "text": "Aim & Pitch",
      "style": "o_f15_r666_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -1494,7 +1494,7 @@
      ],
      "text": "Hide",
      "style": "o_f15_r666_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -1507,7 +1507,7 @@
      ],
      "text": "Show",
      "style": "o_f15_r666_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     }
    ],
@@ -2157,7 +2157,7 @@
      ],
      "text": "yen",
      "style": "o_f15_r1_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre",
      "left": -6
     },
@@ -2220,7 +2220,7 @@
      ],
      "text": "Yr",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -2255,7 +2255,7 @@
      ],
      "text": "st",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre",
      "sprites": [
       "1e"
@@ -2273,7 +2273,7 @@
      ],
      "text": "Farm",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre",
      "sprites": [
       "1f"
@@ -2304,7 +2304,7 @@
      ],
      "text": "Mo",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -2317,7 +2317,7 @@
      ],
      "text": "Tu",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -2343,7 +2343,7 @@
      ],
      "text": "Th",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -2356,7 +2356,7 @@
      ],
      "text": "Fr",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -2369,7 +2369,7 @@
      ],
      "text": "Sa",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -2382,7 +2382,7 @@
      ],
      "text": "Su",
      "style": "o_f13_r2_s6_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -2421,7 +2421,7 @@
      ],
      "text": "Info",
      "style": "o_f15_r15_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -2447,7 +2447,7 @@
      ],
      "text": "Game",
      "style": "o_f15_r55_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -2460,7 +2460,7 @@
      ],
      "text": "Trail",
      "style": "o_f15_r55_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -2473,7 +2473,7 @@
      ],
      "text": "Rest",
      "style": "o_f15_r55_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -2512,7 +2512,7 @@
      ],
      "text": "Stats",
      "style": "o_f15_r55_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -2551,7 +2551,7 @@
      ],
      "text": "Bonds",
      "style": "o_f15_r55_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     },
     {
@@ -2577,7 +2577,7 @@
      ],
      "text": "Move",
      "style": "o_f15_r55_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre",
      "centre_x": 24
     },
@@ -2601,7 +2601,7 @@
      ],
      "text": "Event",
      "style": "o_f15_r55_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre",
      "centre_x": 24
     },
@@ -2674,7 +2674,7 @@
      ],
      "text": "Next Start in",
      "style": "o_f15_r72_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     },
     {
@@ -2700,7 +2700,7 @@
      ],
      "text": "Heals in about",
      "style": "o_f15_r77_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     },
     {
@@ -2801,7 +2801,7 @@
      ],
      "text": "AVG",
      "style": "o_f1_rbff_s0_c3",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -2814,7 +2814,7 @@
      ],
      "text": "HR",
      "style": "o_f1_rbff_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -2827,7 +2827,7 @@
      ],
      "text": "RBI",
      "style": "o_f1_rbff_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -2840,7 +2840,7 @@
      ],
      "text": "SB",
      "style": "o_f1_rbff_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -2853,7 +2853,7 @@
      ],
      "text": "ERA",
      "style": "o_f1_rbff_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -2866,7 +2866,7 @@
      ],
      "text": "W",
      "style": "o_f1_rbff_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -2879,7 +2879,7 @@
      ],
      "text": "L",
      "style": "o_f1_rbff_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -2892,7 +2892,7 @@
      ],
      "text": "SV",
      "style": "o_f1_rbff_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     }
    ],
@@ -3111,7 +3111,7 @@
      ],
      "text": "Pitchers",
      "style": "o_tab_00_0_80",
-     "font": "dc11g2b20",
+     "font": "dc11g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3125,7 +3125,7 @@
      ],
      "text": "Fielders",
      "style": "o_tab_01_0_80",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3139,7 +3139,7 @@
      ],
      "text": "Other 1",
      "style": "o_tab_02_0_80",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3153,7 +3153,7 @@
      ],
      "text": "Other 2",
      "style": "o_tab_03_0_80",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3167,7 +3167,7 @@
      ],
      "text": "Other 3",
      "style": "o_tab_040_0_48",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3181,7 +3181,7 @@
      ],
      "text": "Other 3",
      "style": "o_tab_0448_48_80",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3195,7 +3195,7 @@
      ],
      "text": "Pitchers",
      "style": "o_tab_10_0_80",
-     "font": "dc11g2b20",
+     "font": "dc11g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3209,7 +3209,7 @@
      ],
      "text": "Fielders",
      "style": "o_tab_11_0_80",
-     "font": "dc12g2b20",
+     "font": "dc12g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3223,7 +3223,7 @@
      ],
      "text": "Other 1",
      "style": "o_tab_12_0_80",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3237,7 +3237,7 @@
      ],
      "text": "Other 2",
      "style": "o_tab_13_0_80",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3251,7 +3251,7 @@
      ],
      "text": "Other 3",
      "style": "o_tab_140_0_48",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "left": 0,
      "baseline": 0
     },
@@ -3265,7 +3265,7 @@
      ],
      "text": "Other 3",
      "style": "o_tab_1448_48_80",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "left": 0,
      "baseline": 0
     }
@@ -3369,13 +3369,6 @@
     ],
     [
      2,
-     72,
-     72,
-     128,
-     96
-    ],
-    [
-     2,
      0,
      96,
      128,
@@ -3536,20 +3529,6 @@
      120
     ],
     [
-     9,
-     80,
-     24,
-     128,
-     48
-    ],
-    [
-     9,
-     80,
-     48,
-     128,
-     72
-    ],
-    [
      11,
      0,
      0,
@@ -3562,6 +3541,13 @@
      32,
      128,
      64
+    ],
+    [
+     6,
+     88,
+     72,
+     96,
+     104
     ],
     [
      11,
@@ -3666,7 +3652,7 @@
      ],
      "text": "Select File",
      "style": "o_f15_r55_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc21g2b30",
      "valign": "centre",
      "centre_x": 64
     },
@@ -3690,7 +3676,7 @@
      ],
      "text": "Easiest",
      "style": "o_f15_r44_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -3716,7 +3702,7 @@
      ],
      "text": "Hardest",
      "style": "o_f15_r44_s0_c3",
-     "font": "dc13g2b20",
+     "font": "dc13g2b30",
      "valign": "centre"
     },
     {
@@ -3742,7 +3728,7 @@
      ],
      "text": "Title Man",
      "style": "o_f15_r43_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -3765,7 +3751,7 @@
      ],
      "text": "Idol Pro",
      "style": "o_f15_r42_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -3778,7 +3764,7 @@
      ],
      "text": "Pro Life",
      "style": "o_f15_r41_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre"
     },
     {
@@ -3823,27 +3809,14 @@
     {
      "from": [
       2,
-      72,
-      72,
-      128,
-      96
-     ],
-     "text": "Years Active",
-     "style": "o_f5_r3_s0_c3",
-     "font": "nb10",
-     "valign": "centre"
-    },
-    {
-     "from": [
-      2,
       0,
       96,
       128,
       128
      ],
      "text": "No Data",
-     "style": "o_f15_rf_s0_c3",
-     "font": "dc24g2b20",
+     "style": "o_f15_r8_s0_c3",
+     "font": "dc24g2b30",
      "valign": "centre",
      "centre_x": 112
     },
@@ -3880,7 +3853,7 @@
      ],
      "text": "History",
      "style": "o_f4_rbb1_s0_c3",
-     "font": "dc14g2b20",
+     "font": "dc14g2b30",
      "valign": "centre",
      "centre_x": 52
     },
@@ -3904,7 +3877,7 @@
      ],
      "text": "Growth",
      "style": "o_f15_rbb5_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre",
      "centre_x": 44
     },
@@ -3928,7 +3901,7 @@
      ],
      "text": "Profile",
      "style": "o_f11_r2_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc16g2b30",
      "valign": "centre",
      "centre_x": 52
     },
@@ -3988,7 +3961,7 @@
       24
      ],
      "text": "3rd Base",
-     "style": "o_f4_r8_s0_c3",
+     "style": "o_f15_r44_s0_c3",
      "font": "nb16",
      "valign": "centre",
      "centre_x": 28
@@ -4012,8 +3985,8 @@
       24
      ],
      "text": "Yr",
-     "style": "o_f15_r448_s0_c3",
-     "font": "dc15g2b20",
+     "style": "o_f15_r444_s0_c3",
+     "font": "dc15g2b30",
      "valign": "centre"
     },
     {
@@ -4089,8 +4062,8 @@
       96
      ],
      "text": "R Th  R Bt",
-     "style": "o_f15_r448_s0_c3",
-     "font": "dc12g2b20",
+     "style": "o_f15_r444_s0_c3",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -4103,7 +4076,7 @@
      ],
      "text": "R Th",
      "style": "o_f15_r444_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -4116,7 +4089,7 @@
      ],
      "text": "L Bt",
      "style": "o_f15_r444_s0_c3",
-     "font": "dc16g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -4129,7 +4102,7 @@
      ],
      "text": "R Bt",
      "style": "o_f15_r444_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc14g2b30",
      "valign": "centre"
     },
     {
@@ -4142,7 +4115,7 @@
      ],
      "text": "L Th",
      "style": "o_f15_r444_s0_c3",
-     "font": "dc15g2b20",
+     "font": "dc12g2b30",
      "valign": "centre"
     },
     {
@@ -4154,34 +4127,8 @@
       120
      ],
      "text": "Both",
-     "style": "o_f15_r444_s0_c3",
-     "font": "dc13g2b20",
-     "valign": "centre"
-    },
-    {
-     "from": [
-      9,
-      80,
-      24,
-      128,
-      48
-     ],
-     "text": "Defense",
-     "style": "o_f5_r5_s0_c3",
-     "font": "nb12",
-     "valign": "centre"
-    },
-    {
-     "from": [
-      9,
-      80,
-      48,
-      128,
-      72
-     ],
-     "text": "Arm",
-     "style": "o_f5_r4_s0_c3",
-     "font": "dc15g2b20",
+     "style": "o_f15_r44_s0_c3",
+     "font": "nb17",
      "valign": "centre"
     },
     {
@@ -4193,9 +4140,10 @@
       32
      ],
      "text": "Where will you save",
-     "style": "o_f15_r57_s0_c3",
-     "font": "nb16",
-     "valign": "centre"
+     "style": "o_f15_r557_s0_c3",
+     "font": "dc16g2b30",
+     "valign": "centre",
+     "left": -12
     },
     {
      "from": [
@@ -4205,10 +4153,21 @@
       128,
       64
      ],
-     "text": "this Directory entry?",
-     "style": "o_f5_r7_s0_c3",
-     "font": "nb16",
-     "valign": "centre"
+     "text": "your entry?",
+     "style": "o_f15_r557_s0_c3",
+     "font": "dc16g2b30",
+     "valign": "centre",
+     "left": 43
+    },
+    {
+     "from": [
+      6,
+      88,
+      72,
+      96,
+      104
+     ],
+     "empty": true
     },
     {
      "from": [
@@ -4219,8 +4178,8 @@
       88
      ],
      "text": "Farewell Tour",
-     "style": "o_f4_r4_s0_c3",
-     "font": "nb15",
+     "style": "o_f15_r43_s0_c3",
+     "font": "nb14",
      "valign": "centre"
     }
    ],
@@ -4238,7 +4197,7 @@
     50
    ],
    "text": "New Vessel!",
-   "font": "dc18g2b20",
+   "font": "dc18g2b30",
    "ramp": [
     11,
     11,
@@ -4280,7 +4239,7 @@
     66
    ],
    "text": "New Item!",
-   "font": "dc17g2b20",
+   "font": "dc17g2b30",
    "ramp": [
     11,
     11,
