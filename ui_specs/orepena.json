@@ -1,0 +1,373 @@
+{
+ "arc": "orepena.arc",
+ "repack": [
+  {
+   "bank": "y3_menu",
+   "palette": 4,
+   "style": "mltab",
+   "font": "ttf:rounded:10:0:0.9:0.5",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     88,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     72,
+     24,
+     120,
+     48
+    ],
+    [
+     2,
+     8,
+     48,
+     56,
+     72
+    ],
+    [
+     0,
+     0,
+     88,
+     40,
+     128
+    ],
+    [
+     0,
+     80,
+     96,
+     128,
+     128
+    ],
+    [
+     1,
+     48,
+     48,
+     72,
+     72
+    ],
+    [
+     0,
+     80,
+     72,
+     128,
+     96
+    ],
+    [
+     2,
+     72,
+     0,
+     120,
+     24
+    ],
+    [
+     1,
+     48,
+     0,
+     88,
+     24
+    ],
+    [
+     2,
+     8,
+     0,
+     56,
+     24
+    ],
+    [
+     1,
+     48,
+     24,
+     88,
+     48
+    ],
+    [
+     1,
+     0,
+     48,
+     48,
+     88
+    ],
+    [
+     1,
+     0,
+     88,
+     48,
+     128
+    ],
+    [
+     2,
+     8,
+     24,
+     56,
+     48
+    ],
+    [
+     2,
+     8,
+     72,
+     56,
+     96
+    ],
+    [
+     2,
+     72,
+     48,
+     120,
+     88
+    ],
+    [
+     0,
+     40,
+     96,
+     80,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      88,
+      0,
+      128,
+      24
+     ],
+     "text": "Abilities",
+     "style": "mltab",
+     "font": "ttf:rounded:8:0:0.85:0.4",
+     "left": -2,
+     "baseline": 16
+    },
+    {
+     "from": [
+      2,
+      72,
+      24,
+      120,
+      48
+     ],
+     "text": "Skills",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.9:0.5",
+     "left": 5,
+     "baseline": 17
+    },
+    {
+     "from": [
+      2,
+      8,
+      48,
+      56,
+      72
+     ],
+     "text": "History",
+     "style": "mltab",
+     "font": "ttf:rounded:9:0:0.8:0.4",
+     "left": 4,
+     "baseline": 17
+    },
+    {
+     "from": [
+      0,
+      0,
+      88,
+      40,
+      128
+     ],
+     "text": "Profile",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.8:0.5",
+     "left": 0,
+     "baseline": 24
+    },
+    {
+     "from": [
+      0,
+      80,
+      96,
+      128,
+      128
+     ],
+     "text": "Growth",
+     "style": "mltab",
+     "font": "ttf:rounded:9:0:0.8:0.4",
+     "left": 3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      48,
+      48,
+      72,
+      72
+     ],
+     "text": "Home",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.9:0.5",
+     "left": -7,
+     "baseline": 17
+    },
+    {
+     "from": [
+      0,
+      80,
+      72,
+      128,
+      96
+     ],
+     "text": "Items",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.9:0.5",
+     "left": 5,
+     "baseline": 17
+    },
+    {
+     "from": [
+      2,
+      72,
+      0,
+      120,
+      24
+     ],
+     "text": "Trophies",
+     "style": "mltab",
+     "font": "ttf:rounded:8:0:0.76:0.4",
+     "left": 3,
+     "baseline": 16
+    },
+    {
+     "from": [
+      1,
+      48,
+      0,
+      88,
+      24
+     ],
+     "text": "Friends",
+     "style": "mltab",
+     "font": "ttf:rounded:9:0:0.8:0.4",
+     "left": -1,
+     "baseline": 17
+    },
+    {
+     "from": [
+      2,
+      8,
+      0,
+      56,
+      24
+     ],
+     "text": "Rumor\nMemo",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.8:0.5",
+     "left": 2,
+     "baseline": 24
+    },
+    {
+     "from": [
+      1,
+      48,
+      24,
+      88,
+      48
+     ],
+     "text": "Buy",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.9:0.5",
+     "left": 7,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      48,
+      88
+     ],
+     "text": "Heirloom\nList",
+     "style": "mltab",
+     "font": "ttf:rounded:8:0:0.76:0.4",
+     "left": 3,
+     "baseline": 30
+    },
+    {
+     "from": [
+      1,
+      0,
+      88,
+      48,
+      128
+     ],
+     "text": "Key\nItems",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.9:0.5",
+     "left": 5,
+     "baseline": 33
+    },
+    {
+     "from": [
+      2,
+      8,
+      24,
+      56,
+      48
+     ],
+     "text": "Special\nAbilities",
+     "style": "mltab",
+     "font": "ttf:rounded:8:0:0.85:0.4",
+     "left": 3,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      8,
+      72,
+      56,
+      96
+     ],
+     "text": "My\nHeirloom",
+     "style": "mltab",
+     "font": "ttf:rounded:8:0:0.76:0.4",
+     "left": 2,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      72,
+      48,
+      120,
+      88
+     ],
+     "text": "My\nItems",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.9:0.5",
+     "left": 6,
+     "baseline": 33
+    },
+    {
+     "from": [
+      0,
+      40,
+      96,
+      80,
+      128
+     ],
+     "text": "Goals",
+     "style": "mltab",
+     "font": "ttf:rounded:10:0:0.9:0.5",
+     "left": 0,
+     "baseline": 21
+    }
+   ]
+  }
+ ]
+}
