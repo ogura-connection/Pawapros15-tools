@@ -923,6 +923,10 @@ RENDER = {
     "pausemenu": called([15, 14, 13, 12, 11], [8, 9, 10], 6, 6, 4, [6, 2], thick=1, wide=0, bandw=1),
     # pitch names of the match's pitch chart (main_prg.arc g3_np2, palette 14): white in a solid blue ring
     "pitchchart": tight(banded([0, 1, 1, 7, 7, 7, 7], [1])),
+    # the substitution screen of a match (time.arc g3_tim)
+    "subhead": tight(banded([0, 7, 6, 5, 3, 2, 1], [8, 8])),                 # column headers: navy in a white ring
+    "subtab": tight(banded([0, 5, 4, 3, 2, 1, 1], [15, 13])),                # Batter / Bench: white in navy, italic
+    "submenu": called([15, 15], [9, 11, 13], 8, 8, 4, [3, 2], thick=1, wide=0, bandw=1),   # palettes 55..60
 }
 
 
@@ -1090,7 +1094,8 @@ def repack(group, d, bank, pages, patches, project=None):
     `patches` collects (file offset, 10 bytes) for the sprite parts. Returns report rows.
 
     A label is found by "from" (a rectangle [page, x0, y0, x1, y1]: every part showing it is
-    re-pointed and keeps its place) or by "sprite" (the end of an opd_ name: the whole sprite is one
+    re-pointed and keeps its place; with "sprites": [ids] only the parts of those sprites, and the label
+    without "sprites" for the same rectangle leaves them alone) or by "sprite" (the end of an opd_ name: the whole sprite is one
     label, however many pieces it was drawn from; its first part shows the new art, the others are
     pointed at an empty cell)."""
     if group.get("ribbon"):
@@ -1125,6 +1130,11 @@ def repack(group, d, bank, pages, patches, project=None):
         else:
             pg, x0, y0, x1, y1 = lab["from"]
             mine = [p for p in parts if (p.page, p.x0, p.y0, p.x1, p.y1) == (pg, x0, y0, x1, y1)]
+            if "sprites" in lab:               # only these sprites' parts (a piece one sprite uses another way)
+                mine = [p for p in mine if p.sprite.rsplit("_", 1)[1] in lab["sprites"]]
+            else:                              # less the parts a label with "sprites" takes for the same piece
+                taken = {s for o in labels if o.get("from") == lab["from"] for s in o.get("sprites", ())}
+                mine = [p for p in mine if p.sprite.rsplit("_", 1)[1] not in taken]
             ax0, ay0, ax1, ay1 = art_box(page(pg), (x0, y0, x1, y1))
             old.append((mine, (ax0 - x0, ay0 - y0, ax1 - x0, ay1 - y0)))     # relative to the rectangle
         owned |= {(p.page, p.x0, p.y0, p.x1, p.y1) for p in mine}
