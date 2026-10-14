@@ -17,7 +17,7 @@ STYLES = {
     # 球 (pitch counts) on pages 2: letters 15 with a light ring 3 and an outer ring 5
     "psp_ball": tight(banded([0, 13, 13, 14, 14, 15, 15], [3, 5])),
     # bank h3_sc_ps2 (same runtime palettes): AT-BAT in the lettering colour 8 of 打席目 with its dark edge 3
-    "sc_atbat": tight(banded([0, 6, 7, 8, 8, 8, 8], [3])),
+    "sc_atbat": tight(banded([0, 0, 8, 8, 8, 8, 8], [3])),
     # SIGN on the サイン plate: letters 2 shading out through 3..8 into the plate, no ring
-    "sc_sign": tight(banded([0, 7, 5, 4, 3, 2, 2], [])),
+    "sc_sign": tight(banded([0, 0, 3, 2, 2, 2, 2], [])),
 }

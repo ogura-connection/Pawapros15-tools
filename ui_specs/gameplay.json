@@ -1076,7 +1076,7 @@
     93
    ],
    "text": "SIGN",
-   "font": "ttf:din:13:0:1:0.2",
+   "font": "ttf:din:13:0:1.3:0",
    "style": "sc_sign",
    "dy": 1
   }
