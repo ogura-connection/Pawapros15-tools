@@ -51,12 +51,32 @@ def gsolid(fills, rings, shadow=0, cut=2):
     return style
 
 
+def plate2(v):
+    """Like ui_styles_orepena.plate, but the erased box takes the colour of row v["fillrow"] (a plate whose lettering shadow
+    runs into the last rows)."""
+    inner = _O.solid(v["fill"], v["rings"], v.get("shadow", 0), v.get("cut", 3))
+
+    def style(ink, base):
+        pic = np.concatenate([_O.old_page(v["bank"], pg)[y0:y1, x0:x1].copy() for pg, x0, y0, x1, y1 in v["rects"]], axis=1)
+        ex0, ey0, ex1, ey1 = v["erase"]
+        pic[ey0:ey1, ex0:ex1] = pic[v["fillrow"], (ex0 + ex1) // 2]
+        art, b = inner(ink, base)
+        h, w = art.shape
+        x = v["cx"] - w // 2
+        y = v["cy"] - h // 2
+        sub = pic[y:y + h, x:x + w]
+        sub[art > 0] = art[art > 0]
+        a, c = v["part"]
+        return pic[:, a:c], 0
+    return style
+
+
 def _load():
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ui_specs", "orepena2_styles.json")
     out = {}
     if os.path.exists(path):
         for name, v in json.load(open(path)).items():
-            out[name] = _O.make(v) if v.get("kind") == "plate" else gsolid(v["fills"], v["rings"], v.get("shadow", 0), v.get("cut", 2))
+            out[name] = plate2(v) if v.get("kind") == "plate2" else _O.make(v) if v.get("kind") == "plate" else gsolid(v["fills"], v["rings"], v.get("shadow", 0), v.get("cut", 2))
     return out
 
 
