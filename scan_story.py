@@ -407,7 +407,7 @@ ORE_IF, ORE_ELSE, ORE_WINDOW = (0x36, 0x37), 0x38, 0x18
 BLOCK_SCRIPTS["orepena.rel"] = {"engine": "ore", "section": 5, "region": (182584, 803170),
                                 "labels": (173464, 180872),
                                 "islands": ((187254, 189808), (228090, 229016), (779308, 780240)),
-                                "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C, 0x3F), "max_op": 0x49, "line": 17,
+                                "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C, 0x3F), "max_op": 0x49, "line": 16,
                                 "marks": {0x01: "L", 0x06: "B", 0x07: "B"}, "dead": 400,
                                 "annex_section": 5, "annex_from": 2168}
 
