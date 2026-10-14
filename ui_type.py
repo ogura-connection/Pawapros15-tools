@@ -910,6 +910,8 @@ RENDER = {
     "call2": called([9, 10, 11, 13], [6, 7], 5, 14, 1, [4, 4, 4, 4]),           # green: Walk, Safe, Hit ...
     "call3": called([9, 10, 11, 12, 13], [2, 3], 1, 15, 4, [6, 7, 7, 7]),       # pink: Out, Change, Game Set
     "call5": called([6, 7, 8, 9], [2, 4], 1, 10, 15, [13, 12, 12, 12]),         # yellow on pink: home runs
+    # the pause menu of a match (gameplay.arc h3_tim_0, palettes 6..11 share one layout)
+    "pausemenu": called([15, 14, 13, 12, 11], [8, 9, 10], 6, 6, 4, [6, 2], thick=1, wide=0, bandw=1),
 }
 
 
