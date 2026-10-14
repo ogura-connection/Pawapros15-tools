@@ -10,6 +10,7 @@ font, both files. Nothing in DATA/files is read or written for the English: the 
 saved original, which is what `ui_labels.py apply` writes. The output is game art: keep it out of this repository.
 """
 import glob
+import json
 import os
 import sys
 
@@ -62,9 +63,15 @@ def main():
     specs = [x for x in a if x.endswith(".json")] or sorted(glob.glob(os.path.join(HERE, "ui_specs", "*.json")))
     rows = []
     for path in specs:
-        spec = L.load_spec(path)
-        arc = os.path.basename(spec["arc"])
-        d, banks, o, banks2 = built(spec)
+        try:
+            if "arc" not in json.load(open(path)):          # a style file, not a spec
+                continue
+            spec = L.load_spec(path)
+            arc = os.path.basename(spec["arc"])
+            d, banks, o, banks2 = built(spec)
+        except Exception as e:                              # report and go on with the other specs
+            print("%-14s skipped: %s %s" % (os.path.basename(path), type(e).__name__, e), flush=True)
+            continue
         done = set()
         for g, sid, text, style, font in labels_of(spec, banks):
             bank = g["bank"]
