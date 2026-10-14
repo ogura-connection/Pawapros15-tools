@@ -112,9 +112,9 @@
    "labels": [
     {
      "sprite": "00",
-     "text": "WARMING\nUP",
+     "text": "WARMING UP",
      "style": "call0",
-     "font": "ttf:rounded:34:0:0.8:1.0"
+     "font": "ttf:rounded:34:0:0.75:1.0"
     },
     {
      "sprite": "01",
@@ -154,9 +154,9 @@
     },
     {
      "sprite": "07",
-     "text": "HIT BY\nPITCH",
+     "text": "HIT BY PITCH",
      "style": "call2",
-     "font": "ttf:rounded:34:0:0.8:1.0"
+     "font": "ttf:rounded:34:0:0.7:1.0"
     },
     {
      "sprite": "08",

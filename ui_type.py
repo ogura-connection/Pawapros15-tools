@@ -963,30 +963,38 @@ def shelf_pack(sizes, areas, gap=(1, 1)):
 
 def ribbon_pack(widths, height, areas, gap=1, empty=4):
     """Pour lines of art (all `height` rows high) into the rows of the areas, cutting a line where a row
-    ends. Returns ({line: [(page, x, y, c0, c1)]}, (page, x, y) of an empty empty x empty cell). Lines are
-    placed widest first; one that fits the rest of a row goes into the row it fills best, one that fits
-    no row starts in the row with the most room left and goes on in the next."""
-    rows = []                                                     # [page, x, y, x1]
+    ends. Returns ({line: [(page, x, y, c0, c1)]}, (page, x, y) of an empty empty x empty cell). Widest
+    first, with as few cuts as possible: a line wider than a row takes whole empty rows and its rest goes
+    where it fills a row best; a line that fits no row whole is cut over the rows with the most room."""
+    rows = []                                                     # [page, x, y, x1, x0]
     for pg, x0, y0, x1, y1 in areas:
         y = y0
         while y + height <= y1:
-            rows.append([pg, x0, y, x1])
+            rows.append([pg, x0, y, x1, x0])
             y += height + gap
     out = {}
+
+    def put(i, r, c, take):
+        out[i].append((r[0], r[1], r[2], c, c + take))
+        r[1] += take + gap
     for i in sorted(range(len(widths)), key=lambda i: -widths[i]):
         c, w = 0, widths[i]
         out[i] = []
         while c < w:
             fits = [r for r in rows if r[3] - r[1] >= w - c]
-            r = min(fits, key=lambda r: r[3] - r[1]) if fits else max(rows, key=lambda r: r[3] - r[1])
+            if fits:                                              # the rest fits a row whole
+                put(i, min(fits, key=lambda r: r[3] - r[1]), c, w - c)
+                break
+            empty_rows = [r for r in rows if r[1] == r[4]]
+            r = empty_rows[0] if empty_rows else max(rows, key=lambda r: r[3] - r[1])
             take = min(w - c, r[3] - r[1])
             if take < min(12, w - c):
                 raise ValueError("no room for %d more columns of a line" % (w - c))
-            out[i].append((r[0], r[1], r[2], c, c + take))
-            r[1] += take + gap
+            put(i, r, c, take)
             c += take
     for pg, x0, y0, x1, y1 in areas:                              # an empty cell: below the rows, or a row's end
-        if y1 - (y0 + ((y1 - y0 + gap) // (height + gap)) * (height + gap)) >= empty and x1 - x0 >= empty:
+        n = (y1 - y0 + gap) // (height + gap)
+        if y1 - (y0 + n * (height + gap)) >= empty and x1 - x0 >= empty:
             return out, (pg, x0, y1 - empty)
     r = max(rows, key=lambda r: r[3] - r[1])
     if r[3] - r[1] < empty:
