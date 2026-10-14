@@ -1,0 +1,156 @@
+{
+ "gdo_pill_14": {
+  "kind": "pill",
+  "bank": "g3_mib",
+  "rect": [
+   4,
+   0,
+   48,
+   128,
+   72
+  ],
+  "ref": 8,
+  "erase": [
+   9,
+   119
+  ],
+  "fill": 8,
+  "rings": [
+   1
+  ],
+  "cx": 64,
+  "baseline": 17
+ },
+ "gdo_pill_15": {
+  "kind": "pill",
+  "bank": "g3_mib",
+  "rect": [
+   4,
+   0,
+   0,
+   128,
+   24
+  ],
+  "ref": 8,
+  "erase": [
+   9,
+   119
+  ],
+  "fill": 8,
+  "rings": [
+   1
+  ],
+  "cx": 64,
+  "baseline": 17
+ },
+ "gdo_pill_16": {
+  "kind": "pill",
+  "bank": "g3_mib",
+  "rect": [
+   4,
+   0,
+   24,
+   128,
+   48
+  ],
+  "ref": 8,
+  "erase": [
+   9,
+   119
+  ],
+  "fill": 8,
+  "rings": [
+   1
+  ],
+  "cx": 64,
+  "baseline": 17
+ },
+ "gdo_pill_17": {
+  "kind": "pill",
+  "bank": "g3_mib",
+  "rect": [
+   4,
+   0,
+   72,
+   128,
+   96
+  ],
+  "ref": 8,
+  "erase": [
+   9,
+   119
+  ],
+  "fill": 8,
+  "rings": [
+   1
+  ],
+  "cx": 64,
+  "baseline": 17
+ },
+ "gdo_pill_18": {
+  "kind": "pill",
+  "bank": "g3_mib",
+  "rect": [
+   4,
+   0,
+   96,
+   128,
+   120
+  ],
+  "ref": 8,
+  "erase": [
+   9,
+   119
+  ],
+  "fill": 8,
+  "rings": [
+   1
+  ],
+  "cx": 64,
+  "baseline": 17
+ },
+ "gdo_pill_19": {
+  "kind": "pill",
+  "bank": "g3_mib",
+  "rect": [
+   5,
+   0,
+   0,
+   128,
+   24
+  ],
+  "ref": 8,
+  "erase": [
+   9,
+   119
+  ],
+  "fill": 8,
+  "rings": [
+   1
+  ],
+  "cx": 64,
+  "baseline": 17
+ },
+ "gdo_pill_1a": {
+  "kind": "pill",
+  "bank": "g3_mib",
+  "rect": [
+   5,
+   0,
+   24,
+   128,
+   48
+  ],
+  "ref": 8,
+  "erase": [
+   9,
+   119
+  ],
+  "fill": 8,
+  "rings": [
+   1
+  ],
+  "cx": 64,
+  "baseline": 17
+ }
+}

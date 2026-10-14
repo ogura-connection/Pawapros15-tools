@@ -289,12 +289,12 @@
   "shadow": 0,
   "cut": 2
  },
- "o2_fb_rbbff_s1_c2": {
+ "o2_f4b_rbff_s1_c2": {
   "fills": [
+   4,
    11
   ],
   "rings": [
-   11,
    11,
    15,
    15

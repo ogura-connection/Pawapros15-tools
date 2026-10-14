@@ -524,6 +524,13 @@
     ],
     [
      1,
+     80,
+     88,
+     112,
+     104
+    ],
+    [
+     1,
      112,
      24,
      128,
@@ -686,6 +693,19 @@
      "sprites": [
       "0b"
      ]
+    },
+    {
+     "from": [
+      1,
+      80,
+      88,
+      112,
+      104
+     ],
+     "text": "Mgr",
+     "style": "gdo_navy",
+     "font": "ttf:din:9:0:1:0",
+     "valign": "centre"
     }
    ]
   },
@@ -1103,6 +1123,166 @@
      "font": "ttf:din:30:0:1:0.3",
      "left": -32,
      "baseline": 37
+    }
+   ]
+  },
+  {
+   "bank": "g3_mib",
+   "palette": 10,
+   "style": "gdo_mgr",
+   "font": "ttf:din:18:0:1:0.0",
+   "under": 3,
+   "gap": [
+    0,
+    0
+   ],
+   "areas": [
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      64,
+      96,
+      128,
+      128
+     ],
+     "text": "Manager",
+     "style": "gdo_mgr",
+     "font": "ttf:din:18:0:1:0.1",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      64,
+      128
+     ],
+     "text": "Coach",
+     "style": "gdo_mgr",
+     "font": "ttf:din:18:0:1:0.1",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      128,
+      72
+     ],
+     "text": "Bench",
+     "style": "gdo_pill_14",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Bench Pitchers",
+     "style": "gdo_pill_15",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      4,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "Bench Fielders",
+     "style": "gdo_pill_16",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      128,
+      96
+     ],
+     "text": "Current Pitcher",
+     "style": "gdo_pill_17",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      128,
+      120
+     ],
+     "text": "Current Fielder",
+     "style": "gdo_pill_18",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Current Batter",
+     "style": "gdo_pill_19",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 0,
+     "baseline": 0
+    },
+    {
+     "from": [
+      5,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "Current Runner",
+     "style": "gdo_pill_1a",
+     "font": "ttf:din:12:0:1:0.1",
+     "left": 0,
+     "baseline": 0
     }
    ]
   }

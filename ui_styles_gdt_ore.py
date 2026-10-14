@@ -132,3 +132,8 @@ def _load():
 
 
 STYLES.update(_load())
+
+# g3_mib 監督 / コーチ (palette 10): dark blue letters, a white ring two pixels wide and a pale blue shadow ring
+STYLES["gdo_mgr"] = solid(1, [8, 8, 11], cut=3)
+# y3_sb 監督 badge (palette 5): white letters, dark blue rings
+STYLES["gdo_navy"] = solid(14, [3, 1], cut=3)
