@@ -14401,11 +14401,11 @@
      "sprites": [
       "00"
      ],
-     "text": "Last Day of",
+     "text": "Last Day",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 86,
-     "baseline": 39
+     "font": "dc20g2b10",
+     "left": 98,
+     "baseline": 37
     },
     {
      "from": [
@@ -14418,11 +14418,11 @@
      "sprites": [
       "00"
      ],
-     "text": "a Baseball",
+     "text": "of a Baseball",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 86,
-     "baseline": 39
+     "font": "dc20g2b10",
+     "left": 60,
+     "baseline": 37
     },
     {
      "from": [
@@ -14437,9 +14437,9 @@
      ],
      "text": "Life...",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 75,
-     "baseline": 39
+     "font": "dc20g2b10",
+     "left": 63,
+     "baseline": 37
     },
     {
      "from": [
@@ -14465,11 +14465,11 @@
      "sprites": [
       "01"
      ],
-     "text": "The",
+     "text": "The Grand",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 24,
-     "baseline": 35
+     "font": "dc20g2b10",
+     "left": 35,
+     "baseline": 34
     },
     {
      "from": [
@@ -14482,11 +14482,11 @@
      "sprites": [
       "01"
      ],
-     "text": "Grand Stage",
+     "text": "Stage of Fate",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": -61,
-     "baseline": 35
+     "font": "dc20g2b10",
+     "left": 8,
+     "baseline": 34
     },
     {
      "from": [
@@ -14499,11 +14499,7 @@
      "sprites": [
       "01"
      ],
-     "text": "of Fate",
-     "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": -55,
-     "baseline": 35
+     "empty": true
     },
     {
      "from": [
@@ -14529,11 +14525,11 @@
      "sprites": [
       "02"
      ],
-     "text": "Koshien",
+     "text": "Koshien Final",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 103,
-     "baseline": 35
+     "font": "dc20g2b10",
+     "left": 109,
+     "baseline": 34
     },
     {
      "from": [
@@ -14546,11 +14542,7 @@
      "sprites": [
       "02"
      ],
-     "text": "Final",
-     "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 62,
-     "baseline": 35
+     "empty": true
     },
     {
      "from": [
@@ -14617,9 +14609,9 @@
      ],
      "text": "College",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 86,
-     "baseline": 35
+     "font": "dc20g2b10",
+     "left": 98,
+     "baseline": 33
     },
     {
      "from": [
@@ -14632,11 +14624,11 @@
      "sprites": [
       "03"
      ],
-     "text": "National",
+     "text": "National Final",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 41,
-     "baseline": 35
+     "font": "dc20g2b10",
+     "left": 44,
+     "baseline": 33
     },
     {
      "from": [
@@ -14649,11 +14641,7 @@
      "sprites": [
       "03"
      ],
-     "text": "Final",
-     "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 7,
-     "baseline": 35
+     "empty": true
     },
     {
      "from": [
@@ -14694,9 +14682,9 @@
      ],
      "text": "Industrial",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 56,
-     "baseline": 35
+     "font": "dc20g2b10",
+     "left": 67,
+     "baseline": 34
     },
     {
      "from": [
@@ -14709,11 +14697,11 @@
      "sprites": [
       "04"
      ],
-     "text": "League",
+     "text": "League Final",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
+     "font": "dc20g2b10",
      "left": 36,
-     "baseline": 35
+     "baseline": 34
     },
     {
      "from": [
@@ -14726,11 +14714,7 @@
      "sprites": [
       "04"
      ],
-     "text": "Final",
-     "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": -13,
-     "baseline": 35
+     "empty": true
     },
     {
      "from": [
@@ -14756,11 +14740,11 @@
      "sprites": [
       "05"
      ],
-     "text": "The Fateful",
+     "text": "The",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 111,
-     "baseline": 35
+     "font": "dc20g2b10",
+     "left": 120,
+     "baseline": 34
     },
     {
      "from": [
@@ -14773,11 +14757,11 @@
      "sprites": [
       "05"
      ],
-     "text": "Final",
+     "text": "Fateful Final",
      "style": "o2_ff_r_s0_c2",
-     "font": "dc22g2b10",
-     "left": 110,
-     "baseline": 35
+     "font": "dc20g2b10",
+     "left": 32,
+     "baseline": 34
     },
     {
      "from": [
