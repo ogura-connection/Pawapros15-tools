@@ -588,6 +588,108 @@
      "baseline": 17
     }
    ]
+  },
+  {
+   "name": "hud panel",
+   "bank": "h3_ap_ps2",
+   "style": "psp_panel",
+   "font": "ttf:din:10:0:1:0",
+   "valign": "centre",
+   "areas": [
+    [
+     4,
+     0,
+     88,
+     128,
+     112
+    ],
+    [
+     3,
+     88,
+     104,
+     104,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      80,
+      88,
+      96,
+      112
+     ],
+     "text": "AVG",
+     "align": "right"
+    },
+    {
+     "from": [
+      4,
+      32,
+      88,
+      48,
+      112
+     ],
+     "text": "HR",
+     "align": "right"
+    },
+    {
+     "from": [
+      4,
+      48,
+      88,
+      80,
+      112
+     ],
+     "text": "RBI",
+     "align": "right"
+    },
+    {
+     "from": [
+      4,
+      0,
+      88,
+      32,
+      112
+     ],
+     "text": "G",
+     "align": "right"
+    },
+    {
+     "from": [
+      4,
+      96,
+      88,
+      112,
+      112
+     ],
+     "text": "W",
+     "align": "right"
+    },
+    {
+     "from": [
+      4,
+      112,
+      88,
+      128,
+      112
+     ],
+     "text": "L",
+     "align": "right"
+    },
+    {
+     "from": [
+      3,
+      88,
+      104,
+      104,
+      128
+     ],
+     "text": "ERA",
+     "align": "right"
+    }
+   ]
   }
  ]
 }
