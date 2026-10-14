@@ -609,17 +609,19 @@
     },
     {
      "sprite": "5a",
-     "text": "Pinch Hitter",
-     "align": "left"
+     "text": "Pinch Hit",
+     "align": "left",
+     "font": "ttf:rounded:12:0:0.7:0.4"
     },
     {
      "sprite": "5b",
-     "text": "Pinch Runner",
-     "align": "left"
+     "text": "Pinch Run",
+     "align": "left",
+     "font": "ttf:rounded:12:0:0.7:0.4"
     },
     {
      "sprite": "5c",
-     "text": "Pitcher Data",
+     "text": "Pitching",
      "align": "left"
     },
     {
@@ -639,13 +641,15 @@
     },
     {
      "sprite": "60",
-     "text": "Pinch Hitter",
-     "align": "left"
+     "text": "Pinch Hit",
+     "align": "left",
+     "font": "ttf:rounded:12:0:0.7:0.4"
     },
     {
      "sprite": "61",
-     "text": "Pinch Runner",
-     "align": "left"
+     "text": "Pinch Run",
+     "align": "left",
+     "font": "ttf:rounded:12:0:0.7:0.4"
     },
     {
      "sprite": "62",
@@ -659,7 +663,7 @@
     },
     {
      "sprite": "64",
-     "text": "Pitcher Data",
+     "text": "Pitching",
      "align": "left"
     }
    ]
