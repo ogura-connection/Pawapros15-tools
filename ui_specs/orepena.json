@@ -2143,8 +2143,8 @@
       48
      ],
      "text": "0,000 yen",
-     "style": "o_f1_r1_s0_c3",
-     "font": "nb9",
+     "style": "o_f15_r1_s0_c3",
+     "font": "nb9b",
      "valign": "centre"
     },
     {
@@ -2156,8 +2156,8 @@
       48
      ],
      "text": "yen",
-     "style": "o_f1_r1_s0_c3",
-     "font": "nb16",
+     "style": "o_f15_r1_s0_c3",
+     "font": "nb12b",
      "valign": "centre",
      "left": -6
     },
@@ -2180,7 +2180,7 @@
       72
      ],
      "text": "Mo",
-     "style": "o_f12_rb2_s0_c3",
+     "style": "o_f13_r2_s6_c3",
      "font": "nb13",
      "valign": "centre"
     },
@@ -2193,7 +2193,7 @@
       72
      ],
      "text": "Day",
-     "style": "o_f4_rc3_s0_c3",
+     "style": "o_f13_r2_s6_c3",
      "font": "nb9",
      "valign": "centre"
     },
@@ -2206,7 +2206,7 @@
       72
      ],
      "text": "Wk",
-     "style": "o_f12_ra4_s0_c3",
+     "style": "o_f13_r2_s6_c3",
      "font": "nb12",
      "valign": "centre"
     },
@@ -2219,8 +2219,8 @@
       96
      ],
      "text": "Yr",
-     "style": "o_f12_r44_s0_c3",
-     "font": "dc13g2b20",
+     "style": "o_f13_r2_s6_c3",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -2254,7 +2254,7 @@
       72
      ],
      "text": "st",
-     "style": "o_f5_re4_s0_c3",
+     "style": "o_f13_r2_s6_c3",
      "font": "dc12g2b20",
      "valign": "centre",
      "sprites": [
@@ -2272,7 +2272,7 @@
       72
      ],
      "text": "Farm",
-     "style": "o_f5_re4_s0_c3",
+     "style": "o_f13_r2_s6_c3",
      "font": "dc12g2b20",
      "valign": "centre",
      "sprites": [
@@ -2290,8 +2290,8 @@
       120
      ],
      "text": "Age",
-     "style": "o_f11_r54_s0_c3",
-     "font": "nb9",
+     "style": "o_f13_r2_s6_c3",
+     "font": "nb9b",
      "valign": "centre"
     },
     {
@@ -2302,9 +2302,9 @@
       56,
       88
      ],
-     "text": "Mon",
-     "style": "o_f14_r42_s0_c3",
-     "font": "nb10",
+     "text": "Mo",
+     "style": "o_f13_r2_s6_c3",
+     "font": "nb10b",
      "valign": "centre"
     },
     {
@@ -2315,9 +2315,9 @@
       80,
       88
      ],
-     "text": "Tue",
-     "style": "o_f12_rb4_s0_c3",
-     "font": "nb12",
+     "text": "Tu",
+     "style": "o_f13_r2_s6_c3",
+     "font": "nb12b",
      "valign": "centre"
     },
     {
@@ -2328,9 +2328,9 @@
       104,
       88
      ],
-     "text": "Wed",
-     "style": "o_f13_rb4_s0_c3",
-     "font": "nb10",
+     "text": "We",
+     "style": "o_f13_r2_s6_c3",
+     "font": "nb10b",
      "valign": "centre"
     },
     {
@@ -2341,9 +2341,9 @@
       128,
       88
      ],
-     "text": "Thu",
-     "style": "o_f13_re4_s0_c3",
-     "font": "nb12",
+     "text": "Th",
+     "style": "o_f13_r2_s6_c3",
+     "font": "nb12b",
      "valign": "centre"
     },
     {
@@ -2354,9 +2354,9 @@
       56,
       112
      ],
-     "text": "Fri",
-     "style": "o_f11_r82_s0_c3",
-     "font": "nb18",
+     "text": "Fr",
+     "style": "o_f13_r2_s6_c3",
+     "font": "dc14g2b20",
      "valign": "centre"
     },
     {
@@ -2367,9 +2367,9 @@
       80,
       112
      ],
-     "text": "Sat",
-     "style": "o_f11_r4_s0_c3",
-     "font": "nb17",
+     "text": "Sa",
+     "style": "o_f13_r2_s6_c3",
+     "font": "nb13b",
      "valign": "centre"
     },
     {
@@ -2380,9 +2380,9 @@
       104,
       112
      ],
-     "text": "Sun",
-     "style": "o_f11_r72_s0_c3",
-     "font": "nb12",
+     "text": "Su",
+     "style": "o_f13_r2_s6_c3",
+     "font": "nb12b",
      "valign": "centre"
     },
     {
@@ -2433,8 +2433,8 @@
       48
      ],
      "text": "Fatigue",
-     "style": "o_f12_re4_s0_c3",
-     "font": "nb10",
+     "style": "o_f13_r2_s6_c3",
+     "font": "nb9b",
      "valign": "centre"
     },
     {
@@ -2458,9 +2458,9 @@
       96,
       24
      ],
-     "text": "Log",
+     "text": "Trail",
      "style": "o_f15_r55_s0_c3",
-     "font": "nb17",
+     "font": "dc15g2b20",
      "valign": "centre"
     },
     {
@@ -2484,9 +2484,9 @@
       96,
       48
      ],
-     "text": "Abilities",
+     "text": "Ability",
      "style": "o_f15_r55_s0_c3",
-     "font": "nb12",
+     "font": "nb17",
      "valign": "centre"
     },
     {
@@ -2510,9 +2510,9 @@
       96,
       72
      ],
-     "text": "All Records",
+     "text": "Stats",
      "style": "o_f15_r55_s0_c3",
-     "font": "nb9",
+     "font": "dc15g2b20",
      "valign": "centre"
     },
     {
@@ -2562,9 +2562,9 @@
       96,
       120
      ],
-     "text": "My Records",
+     "text": "Records",
      "style": "o_f15_r55_s0_c3",
-     "font": "nb9",
+     "font": "nb12",
      "valign": "centre"
     },
     {
