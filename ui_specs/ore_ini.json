@@ -1210,8 +1210,8 @@
   {
    "bank": "y3_mys",
    "palette": 8,
-   "style": "mysr",
-   "font": "ttf:din:11:0:1:0",
+   "style": "mysl",
+   "font": "ttf:din:12:0:1:0.1",
    "under": 3,
    "gap": [
     1,
@@ -1306,8 +1306,8 @@
       16
      ],
      "text": "Hokkaido",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 1,
      "baseline": 12
     },
@@ -1320,8 +1320,8 @@
       16
      ],
      "text": "Aomori",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 6,
      "baseline": 12
     },
@@ -1344,8 +1344,8 @@
       32
      ],
      "text": "Iwate",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 10,
      "baseline": 12
     },
@@ -1358,8 +1358,8 @@
       32
      ],
      "text": "Miyagi",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 8,
      "baseline": 12
     },
@@ -1372,8 +1372,8 @@
       32
      ],
      "text": "Akita",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 11,
      "baseline": 12
     },
@@ -1386,8 +1386,8 @@
       32
      ],
      "text": "Yamagata",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 0,
      "baseline": 12
     },
@@ -1400,8 +1400,8 @@
       48
      ],
      "text": "Fukushima",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -3,
      "baseline": 12
     },
@@ -1414,8 +1414,8 @@
       48
      ],
      "text": "Ibaraki",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 7,
      "baseline": 12
     },
@@ -1428,8 +1428,8 @@
       48
      ],
      "text": "Tochigi",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 7,
      "baseline": 12
     },
@@ -1442,8 +1442,8 @@
       48
      ],
      "text": "Gunma",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 7,
      "baseline": 12
     },
@@ -1456,8 +1456,8 @@
       64
      ],
      "text": "Saitama",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 4,
      "baseline": 12
     },
@@ -1470,8 +1470,8 @@
       64
      ],
      "text": "Chiba",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 10,
      "baseline": 12
     },
@@ -1484,8 +1484,8 @@
       64
      ],
      "text": "Tokyo",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 10,
      "baseline": 12
     },
@@ -1508,8 +1508,8 @@
       80
      ],
      "text": "Kanagawa",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 7,
      "baseline": 12
     },
@@ -1522,8 +1522,8 @@
       64
      ],
      "text": "Niigata",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 7,
      "baseline": 12
     },
@@ -1536,8 +1536,8 @@
       80
      ],
      "text": "Toyama",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 6,
      "baseline": 12
     },
@@ -1550,8 +1550,8 @@
       80
      ],
      "text": "Ishikawa",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 2,
      "baseline": 12
     },
@@ -1564,8 +1564,8 @@
       96
      ],
      "text": "Fukui",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 10,
      "baseline": 12
     },
@@ -1578,8 +1578,8 @@
       96
      ],
      "text": "Yamanashi",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -3,
      "baseline": 12
     },
@@ -1592,8 +1592,8 @@
       96
      ],
      "text": "Nagano",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 5,
      "baseline": 12
     },
@@ -1606,8 +1606,8 @@
       96
      ],
      "text": "Gifu",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 14,
      "baseline": 12
     },
@@ -1620,8 +1620,8 @@
       112
      ],
      "text": "Shizuoka",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 2,
      "baseline": 12
     },
@@ -1634,8 +1634,8 @@
       112
      ],
      "text": "Aichi",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 12,
      "baseline": 12
     },
@@ -1648,8 +1648,8 @@
       112
      ],
      "text": "Mie",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 15,
      "baseline": 12
     },
@@ -1662,8 +1662,8 @@
       112
      ],
      "text": "Shiga",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 10,
      "baseline": 12
     },
@@ -1676,8 +1676,8 @@
       128
      ],
      "text": "Kyoto",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 10,
      "baseline": 12
     },
@@ -1700,8 +1700,8 @@
       128
      ],
      "text": "Osaka",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 9,
      "baseline": 12
     },
@@ -1714,8 +1714,8 @@
       128
      ],
      "text": "Hyogo",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 9,
      "baseline": 12
     },
@@ -1728,8 +1728,8 @@
       128
      ],
      "text": "Nara",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 12,
      "baseline": 12
     },
@@ -1742,8 +1742,8 @@
       16
      ],
      "text": "Wakayama",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 5,
      "baseline": 12
     },
@@ -1756,8 +1756,8 @@
       16
      ],
      "text": "Tottori",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 9,
      "baseline": 12
     },
@@ -1770,8 +1770,8 @@
       16
      ],
      "text": "Shimane",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 2,
      "baseline": 12
     },
@@ -1784,8 +1784,8 @@
       32
      ],
      "text": "Okayama",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 1,
      "baseline": 12
     },
@@ -1798,8 +1798,8 @@
       32
      ],
      "text": "Hiroshima",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -1,
      "baseline": 12
     },
@@ -1812,8 +1812,8 @@
       32
      ],
      "text": "Yamaguchi",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -3,
      "baseline": 12
     },
@@ -1826,8 +1826,8 @@
       32
      ],
      "text": "Tokushima",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -2,
      "baseline": 12
     },
@@ -1840,8 +1840,8 @@
       48
      ],
      "text": "Kagawa",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 4,
      "baseline": 12
     },
@@ -1854,8 +1854,8 @@
       48
      ],
      "text": "Ehime",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 9,
      "baseline": 12
     },
@@ -1868,8 +1868,8 @@
       48
      ],
      "text": "Kochi",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 10,
      "baseline": 12
     },
@@ -1882,8 +1882,8 @@
       48
      ],
      "text": "Fukuoka",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 3,
      "baseline": 12
     },
@@ -1896,8 +1896,8 @@
       64
      ],
      "text": "Saga",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 12,
      "baseline": 12
     },
@@ -1910,8 +1910,8 @@
       64
      ],
      "text": "Nagasaki",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 1,
      "baseline": 12
     },
@@ -1924,8 +1924,8 @@
       64
      ],
      "text": "Kumamoto",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -2,
      "baseline": 12
     },
@@ -1938,8 +1938,8 @@
       64
      ],
      "text": "Oita",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 14,
      "baseline": 12
     },
@@ -1952,8 +1952,8 @@
       80
      ],
      "text": "Miyazaki",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 2,
      "baseline": 12
     },
@@ -1966,8 +1966,8 @@
       80
      ],
      "text": "Kagoshima",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 5,
      "baseline": 12
     },
@@ -1980,8 +1980,8 @@
       80
      ],
      "text": "Okinawa",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 3,
      "baseline": 12
     },
@@ -1994,8 +1994,8 @@
       48
      ],
      "text": "High School",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -13,
      "baseline": 12
     },
@@ -2008,8 +2008,8 @@
       48
      ],
      "text": "College",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -2,
      "baseline": 12
     },
@@ -2022,8 +2022,8 @@
       48
      ],
      "text": "Industrial",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 1,
      "baseline": 12
     },
@@ -2046,9 +2046,9 @@
       96
      ],
      "text": "Throws R, Bats R",
-     "style": "mysr",
-     "font": "ttf:din:10:0:1:0",
-     "left": -5,
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": -9,
      "baseline": 12
     },
     {
@@ -2060,9 +2060,9 @@
       96
      ],
      "text": "Throws L, Bats R",
-     "style": "mysr",
-     "font": "ttf:din:10:0:1:0",
-     "left": -5,
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": -8,
      "baseline": 12
     },
     {
@@ -2074,9 +2074,9 @@
       112
      ],
      "text": "Throws R, Bats L",
-     "style": "mysr",
-     "font": "ttf:din:10:0:1:0",
-     "left": -5,
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": -8,
      "baseline": 12
     },
     {
@@ -2088,9 +2088,9 @@
       112
      ],
      "text": "Throws L, Bats L",
-     "style": "mysr",
-     "font": "ttf:din:10:0:1:0",
-     "left": -4,
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": -8,
      "baseline": 12
     },
     {
@@ -2102,9 +2102,9 @@
       128
      ],
      "text": "Throws R, Bats S",
-     "style": "mysr",
-     "font": "ttf:din:10:0:1:0",
-     "left": -5,
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": -9,
      "baseline": 12
     },
     {
@@ -2116,9 +2116,9 @@
       128
      ],
      "text": "Throws L, Bats S",
-     "style": "mysr",
-     "font": "ttf:din:10:0:1:0",
-     "left": -4,
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
+     "left": -8,
      "baseline": 12
     },
     {
@@ -2130,8 +2130,8 @@
       32
      ],
      "text": "Pitcher",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -2,
      "baseline": 12
     },
@@ -2154,8 +2154,8 @@
       48
      ],
      "text": "Catcher",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": -3,
      "baseline": 12
     },
@@ -2168,8 +2168,8 @@
       16
      ],
      "text": "1st Base",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 3,
      "baseline": 12
     },
@@ -2182,8 +2182,8 @@
       16
      ],
      "text": "2nd Base",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 1,
      "baseline": 12
     },
@@ -2196,8 +2196,8 @@
       16
      ],
      "text": "3rd Base",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 2,
      "baseline": 12
     },
@@ -2220,8 +2220,8 @@
       32
      ],
      "text": "Shortstop",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 0,
      "baseline": 13
     },
@@ -2234,8 +2234,8 @@
       32
      ],
      "text": "Outfield",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 5,
      "baseline": 13
     },
@@ -2248,8 +2248,8 @@
       96
      ],
      "text": "Overhand",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 32,
      "baseline": 12
     },
@@ -2272,8 +2272,8 @@
       16
      ],
      "text": "3-Quarters",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 45,
      "baseline": 12
     },
@@ -2286,8 +2286,8 @@
       128
      ],
      "text": "Sidearm",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 24,
      "baseline": 12
     },
@@ -2300,8 +2300,8 @@
       16
      ],
      "text": "Submarine",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 27,
      "baseline": 12
     },
@@ -2324,8 +2324,8 @@
       64
      ],
      "text": "Standard",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 21,
      "baseline": 12
     },
@@ -2338,8 +2338,8 @@
       64
      ],
      "text": "Open",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 48,
      "baseline": 12
     },
@@ -2352,8 +2352,8 @@
       96
      ],
      "text": "Kannushi",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 1,
      "baseline": 12
     },
@@ -2366,8 +2366,8 @@
       112
      ],
      "text": "Crouching",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 18,
      "baseline": 12
     },
@@ -2390,8 +2390,8 @@
       48
      ],
      "text": "Pendulum",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 0,
      "baseline": 12
     },
@@ -2404,8 +2404,8 @@
       32
      ],
      "text": "Fake Bunt",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 8,
      "baseline": 12
     },
@@ -2428,8 +2428,8 @@
       48
      ],
      "text": "Flamingo",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 1,
      "baseline": 12
     },
@@ -2442,8 +2442,8 @@
       80
      ],
      "text": "Original",
-     "style": "mysr",
-     "font": "ttf:din:11:0:1:0",
+     "style": "mysl",
+     "font": "ttf:din:11:0:1:0.1",
      "left": 21,
      "baseline": 12
     },
