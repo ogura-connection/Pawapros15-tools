@@ -408,17 +408,69 @@ BLOCK_SCRIPTS["orepena.rel"] = {"engine": "ore", "section": 5, "region": (182584
                                 "labels": (173464, 180872),
                                 "islands": ((187254, 189808), (228090, 229016), (779308, 780240)),
                                 "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C, 0x3F), "max_op": 0x49, "line": 17,
-                                "marks": {0x01: "L", 0x06: "B", 0x07: "B"}, "dead": 400}
+                                "marks": {0x01: "L", 0x06: "B", 0x07: "B"}, "dead": 400,
+                                "annex_section": 5, "annex_from": 2168}
+
+
+# English needs more room than the script has (its module cannot grow: the next ones start where it ends), so
+# the build moves the scenes that do not fit to an annex behind the data of ore_work.rel, which it loads in
+# the free memory above the plan. A label of such a scene is filled by a relocation against main.dol, that
+# is an absolute address. The annex starts with ORE_ANNEX_MAGIC and its own address, so a built file can be
+# read without the memory plan.
+ORE_ANNEX_MODULE, ORE_ANNEX_MAGIC = "ore_work.rel", (0x4F52, 0x4558)
 
 
 class OreScript(BlockScript):
-    """The My Life script (see ORE_OP_LEN). Same attributes as BlockScript; an opcode is the whole halfword."""
+    """The My Life script (see ORE_OP_LEN). Same attributes as BlockScript; an opcode is the whole halfword.
+    With an annex (built files) the halfwords of the annex follow those of the section, from self.annex_at."""
+
+    def __init__(self, rel, spec, annex_rel=None):
+        self.rel, self.spec, self.sec = rel, spec, spec["section"]
+        self.region, self.ends, self.name_ops = spec["region"], spec["ends"], spec["name_ops"]
+        d = rel.sec_data(self.sec)
+        self.sec_file_offset = rel.sections[self.sec]["offset"]
+        hw = struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2])
+        self.annex_at, self.annex_base = len(hw), None
+        if annex_rel is not None:
+            a = annex_rel.sec_data(spec["annex_section"])[spec["annex_from"]:]
+            if len(a) >= 8 and struct.unpack_from(">2H", a) == ORE_ANNEX_MAGIC:
+                self.annex_base = struct.unpack_from(">I", a, 4)[0] + 8
+                hw += struct.unpack(">%dH" % (len(a) // 2 - 4), a[8:len(a) // 2 * 2])
+        self.hw = hw
+        self.labels = collections.Counter()
+        for (s, pos, typ, tm, ts, addend) in rel.relocs():
+            if s == self.sec and typ == 1 and spec["labels"][0] <= pos < spec["labels"][1]:
+                if (tm, ts) == (rel.mod_id, self.sec) and addend % 2 == 0 and self.region[0] <= addend < self.region[1]:
+                    self.labels[addend // 2] += 1
+                elif tm == 0 and self.annex_base is not None and addend % 2 == 0 \
+                        and 0 <= addend - self.annex_base < (len(hw) - self.annex_at) * 2:
+                    self.labels[self.annex_at + (addend - self.annex_base) // 2] += 1
+                else:
+                    raise ValueError("%s: label table entry at +%d points outside the script" % (rel.name, pos))
+        self.kind, self.texts = {}, {}
+        self.op_count, self.errors = collections.Counter(), collections.Counter()
+        self._parse()
+        for i in range(self.region[0] // 2, self.region[1] // 2):
+            if i not in self.kind and self.hw[i] and not self.in_island(i * 2):
+                self.kind[i] = "dead"
+        if sum(k == "dead" for k in self.kind.values()) > spec["dead"]:
+            self.errors["data between the instructions"] += 1
 
     def op(self, i):
         return self.hw[i]
 
     def in_island(self, off):
         return any(a <= off < b for a, b in self.spec["islands"])
+
+    def inside(self, i):
+        """True where an instruction may stand: the script without its islands, or the annex."""
+        return (self.region[0] <= i * 2 < self.region[1] and not self.in_island(i * 2)) or \
+            self.annex_at <= i < len(self.hw)
+
+    def segments(self):
+        """The stretches of the region between the islands, as (first, end) section offsets."""
+        cuts = [self.region[0]] + [x for isl in self.spec["islands"] for x in isl] + [self.region[1]]
+        return list(zip(cuts[0::2], cuts[1::2]))
 
     def label_table(self):
         """Halfword index of every label, in the order of the table (a jump names a label by its number)."""
@@ -454,11 +506,10 @@ class OreScript(BlockScript):
 
     def _parse(self):
         hw, kind = self.hw, self.kind
-        lo, hi = self.region[0] // 2, self.region[1] // 2
         for start in sorted(self.labels):
             i, depth = start, 0
             while True:
-                if not lo <= i < hi or self.in_island(i * 2):
+                if not self.inside(i):
                     self.errors["runs out of the script"] += 1
                     break
                 if i in kind:
@@ -470,7 +521,8 @@ class OreScript(BlockScript):
                 kind[i] = "op"
                 if op == OP_TEXT:
                     r = unpack_text(hw, i + 1)
-                    if r is None or r[1] > hi or not units_valid(r[0]) or list(hw[i + 1:r[1]]) != pack_text(r[0]):
+                    if r is None or not self.inside(r[1] - 1) or not units_valid(r[0]) \
+                            or list(hw[i + 1:r[1]]) != pack_text(r[0]):
                         self.errors["bad text run"] += 1
                         break
                     units, j = r
@@ -483,7 +535,7 @@ class OreScript(BlockScript):
                     self.errors["unknown opcode"] += 1
                     break
                 n = self._length(i)
-                for k in range(i + 1, min(i + n, hi)):
+                for k in range(i + 1, min(i + n, len(hw))):
                     kind[k] = "arg"
                 if op == ORE_BLOCK or (op in ORE_IF + (ORE_ELSE,) and hw[i + n - 1] == ORE_BLOCK):
                     depth += 1
@@ -500,8 +552,8 @@ class OreScript(BlockScript):
 def load_block_scripts(mods=None):
     mods = mods or load_all_rels()
     by_name = {m.name: m for m in mods.values()}
-    return [(OreScript if spec.get("engine") == "ore" else BlockScript)(by_name[fn], spec)
-            for fn, spec in BLOCK_SCRIPTS.items()]
+    return [OreScript(by_name[fn], spec, by_name.get(ORE_ANNEX_MODULE)) if spec.get("engine") == "ore"
+            else BlockScript(by_name[fn], spec) for fn, spec in BLOCK_SCRIPTS.items()]
 
 
 # ── extract ───────────────────────────────────────────────────────────────

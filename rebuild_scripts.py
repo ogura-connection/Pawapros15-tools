@@ -75,6 +75,9 @@ PLAN_FILE = "moduleID2addr.o"
 MAIN, SCENARIOS = "scs_main.rel", ("scs_sce1.rel", "scs_sce2.rel", "scs_sce3.rel")
 SCENARIO_SLOT = (0x80B5F880, 0x80BBD200)
 FREE_AREA = (0x812CB800, 0x814E0000)
+# My Life: the scenes that do not fit in orepena.rel go behind the data of ore_work.rel (S.ORE_ANNEX_MODULE),
+# which is then loaded here, in the upper part of the free area (the scenario modules use the lower part).
+ORE_WORK_ADDR = 0x81400000
 DOL = ui_strings.DOL
 DOL_BUILT = os.path.join(BUILD_DIR, DOL)
 DOL_END = 0xFFFF       # closes a dialog string of main.dol, and fills the space the block has left
@@ -220,6 +223,157 @@ def emit_block(sc, repl):
                  % (sc.rel.name, -room * 2, (hi - lo) * 2))
     out += [0] * room
     return struct.pack(">%dH" % len(out), *out), BlockRemap(lo * 2, hi * 2, newidx), room * 2
+
+
+class OreRemap:
+    """Old section offset -> new one for the My Life script. An offset at or past annex_lo is in the annex:
+    annex_lo stands for the address `base`."""
+    growth = 0
+
+    def __init__(self, lo, hi, newidx, annex_lo, base):
+        self.lo, self.hi, self.newidx, self.annex_lo, self.base = lo, hi, newidx, annex_lo, base
+
+    def __call__(self, off):
+        if not self.lo <= off < self.hi:
+            return off
+        if off % 2 or off // 2 not in self.newidx:
+            raise ValueError("reference into the middle of a text run or instruction: 0x%X" % off)
+        return self.newidx[off // 2] * 2
+
+    def address(self, new_off):
+        """Absolute address of a new offset that lies in the annex, else None."""
+        return self.base + new_off - self.annex_lo if new_off >= self.annex_lo else None
+
+
+def ore_chunks(sc, a, b, repl):
+    """The instructions between section offsets a and b as pieces that can stand anywhere: a piece ends with
+    the return or jump that nothing runs past. A piece is [(old halfword index or None, [halfwords])]."""
+    hw, chunks, cur, depth, i = sc.hw, [], [], 0, a // 2
+    while i < b // 2:
+        k = sc.kind.get(i)
+        if k is None:                           # zero padding in front of a label
+            i += 1
+            continue
+        if k == "dead":                         # a return nothing reaches: kept, it closes a piece
+            cur.append((None, [hw[i]]))
+            chunks.append(cur)
+            cur, depth, i = [], 0, i + 1
+            continue
+        assert k == "op", (sc.rel.name, i, k)
+        op = hw[i]
+        if i in sc.texts:
+            j = sc.texts[i][2]
+            cur.append((i, [op] + list(S.pack_text(repl[i]) if i in repl else hw[i + 1:j])))
+            i = j
+            continue
+        n = sc._length(i)
+        cur.append((i, list(hw[i:i + n])))
+        if op == S.ORE_BLOCK or (op in S.ORE_IF + (S.ORE_ELSE,) and hw[i + n - 1] == S.ORE_BLOCK):
+            depth += 1
+        elif op == S.ORE_BLOCK_END:
+            depth -= 1
+        if op in sc.ends and depth == 0:
+            chunks.append(cur)
+            cur = []
+        i += n
+    assert not cur, "%s: the script runs into an island at +%d" % (sc.rel.name, b)
+    return chunks
+
+
+def emit_ore(sc, repl, base):
+    """Lay the My Life script out again: every stretch between two islands keeps the pieces that fit in it,
+    in their order, and the others go to the annex. base = address of the first halfword of the annex.
+    Returns ([(section offset, bytes of the stretch)], annex bytes with its header or b"", OreRemap, notes)."""
+    newidx, annex, segs, kept, room = {}, [], [], 0, 0
+    for a, b in sc.segments():
+        out, size = [], (b - a) // 2
+        for chunk in ore_chunks(sc, a, b, repl):
+            n = sum(len(h) for _, h in chunk)
+            if len(out) + n <= size:
+                at, dest, kept = a // 2 + len(out), out, kept + 1
+            else:
+                at, dest = sc.annex_at + len(annex), annex
+            for i, h in chunk:
+                if i is not None:
+                    newidx[i] = at
+                at += len(h)
+                dest += h
+        room += size - len(out)
+        out += [0] * (size - len(out))
+        segs.append((a, struct.pack(">%dH" % size, *out)))
+    blob = b""
+    if annex:
+        annex += [0] * (-(len(annex) + 4) % (SECTION_ALIGN // 2))
+        blob = struct.pack(">2HI", *S.ORE_ANNEX_MAGIC, base - 8) + struct.pack(">%dH" % len(annex), *annex)
+    remap = OreRemap(sc.region[0], sc.region[1], newidx, sc.annex_at * 2, base)
+    return segs, blob, remap, (kept, room * 2)
+
+
+def ore_relocations(m, image, sc, remap):
+    """orepena.rel with its label table aimed at the new places. A label in the annex leaves the module's own
+    relocations for those against main.dol (an absolute address); both streams lie behind fixSize, so the
+    memory the module needs does not change. Returns (image, labels in the annex)."""
+    imports = parse_imports(image, m.imp_off, m.imp_size)
+    fix_size = struct.unpack_from(">I", image, 0x48)[0]
+    (own_k, own), (dol_k, dol) = [next((k, x) for k, x in enumerate(imports) if x[0] == mod) for mod in (m.mod_id, 0)]
+    if (own_k, dol_k) != (len(imports) - 2, len(imports) - 1) or own[1] != fix_size or own[3] != dol[1] \
+            or dol[3] != len(image):
+        raise ValueError("%s: unexpected order of the relocation streams" % m.name)
+    a, b = sc.spec["labels"]
+    stay, go = [], []
+    for e in own[2]:
+        sec, pos, typ, tsec, addend = e[:5]
+        if tsec == sc.sec and sc.region[0] <= addend < sc.region[1]:
+            if not (sec == sc.sec and typ == 1 and a <= pos < b):
+                raise ValueError("%s: sec%d+%d points into the script and is not a label" % (m.name, sec, pos))
+            new = remap(addend)
+            if remap.address(new) is not None:
+                go.append([sec, pos, 1, 4, remap.address(new), 0])      # as the module's other main.dol entries
+                continue
+            e = [sec, pos, typ, tsec, new, 0]
+        stay.append(e)
+    order = [e[:2] for e in dol[2]]
+    assert order == sorted(order), m.name + ": main.dol relocations are not in order"
+    blobs = encode_stream(stay), encode_stream(sorted(dol[2] + go, key=lambda e: e[:2]))
+    d = bytearray(image[:own[1]] + blobs[0] + blobs[1])
+    struct.pack_into(">II", d, m.imp_off + dol_k * 8, 0, own[1] + len(blobs[0]))
+    return bytes(d), len(go)
+
+
+def plan_index(plan, image):
+    """The row of a module in the memory plan (found by its file size and the memory it needs)."""
+    t_addr, t_size, t_file, n = plan_tables(plan)
+    hits = [i for i in range(n) if struct.unpack_from(">I", plan, t_file + i * 4)[0] == len(image)
+            and struct.unpack_from(">I", plan, t_size + i * 4)[0] == memory_size(image)]
+    if len(hits) != 1:
+        raise ValueError("a module is not in the memory plan, or twice (%d rows)" % len(hits))
+    return hits[0]
+
+
+def update_plan_ore(plan, orig_plan, changes):
+    """changes = {name: (original image, new image, new address or None)}: the My Life modules. Returns the plan."""
+    d = bytearray(plan)
+    t_addr, t_size, t_file, n = plan_tables(plan)
+    for name, (old, new, addr) in changes.items():
+        i = plan_index(orig_plan, old)
+        struct.pack_into(">I", d, t_file + i * 4, len(new))
+        if addr is None:
+            if memory_size(new) != memory_size(old):
+                sys.exit("%s would need another amount of memory; it cannot grow." % name)
+            continue
+        end = addr + memory_size(new)
+        for k in range(n):                  # nothing else may reach into the place (the scenario modules do not)
+            a2, s2 = (struct.unpack_from(">I", d, t + k * 4)[0] for t in (t_addr, t_size))
+            if k != i and s2 and a2 < end and a2 + s2 > addr:
+                sys.exit("%s at 0x%08X would share memory with module row %d of the plan (0x%08X..0x%08X)."
+                         % (name, addr, k, a2, a2 + s2))
+        if end > FREE_AREA[1]:
+            sys.exit("%s does not fit in the free memory: it ends at 0x%08X, the limit is 0x%08X (%d bytes "
+                     "too many)." % (name, end, FREE_AREA[1], end - FREE_AREA[1]))
+        struct.pack_into(">I", d, t_addr + i * 4, addr)
+        struct.pack_into(">I", d, t_size + i * 4, memory_size(new))
+        print("  %-13s 0x%08X..0x%08X, %d KB of room left" % (name, addr, end, (FREE_AREA[1] - end) // 1024))
+    return bytes(d)
 
 
 # ── Memory plan (moduleID2addr.o) ─────────────────────────────────────────
