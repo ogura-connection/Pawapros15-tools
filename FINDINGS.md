@@ -623,6 +623,16 @@ Left for the match, with what blocks each:
   pieces of `h3_stf_0` (投球練習 small, あと N 球, やめる).
 - Bench sheet: Success's `scs_main.arc` `z4_sod_*` (needs the cross-page paint).
 
+## Banks that hold several sprite sets (2026-10-14, tenth session)
+
+Some files keep several sprite sets behind one palette: the pages run tex_<set1>00.., tex_<set2>00.., and the sprites of
+every set number their pages from 0 again. `ui_textures.banks` now returns one bank per set (`split_merged`; shared
+palette). It splits only when every set maps to its own run of pages by name and uses no page beyond its own; in all
+12 files where it fires each set uses exactly its pages 0..n-1: ore_ini.arc (y3_mym, y3_mys, y3_myk, y3_kzo: the My Life
+profile card), gdt_ore.arc, ore_ren.arc, gameplay.arc, gdt_sch.arc, pena_sub.arc, pennant.arc, pn_civt.arc, pn_gaijn.arc,
+pn_kivt.arc, pn_tgrow.arc, vs.arc. Before it, the later sets of such a bank were drawn from the wrong pages by every
+tool. Every spec renders byte-identical with it. The art survey TSV still counts the pages of the merged banks.
+
 ## Testing notes
 
 - A Dolphin save state also holds the disc's file table. After any build that changes a file size, boot from scratch; an old state reads files from the wrong place.
