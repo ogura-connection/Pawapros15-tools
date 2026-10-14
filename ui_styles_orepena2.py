@@ -56,7 +56,7 @@ def _load():
     out = {}
     if os.path.exists(path):
         for name, v in json.load(open(path)).items():
-            out[name] = gsolid(v["fills"], v["rings"], v.get("shadow", 0), v.get("cut", 2))
+            out[name] = _O.make(v) if v.get("kind") == "plate" else gsolid(v["fills"], v["rings"], v.get("shadow", 0), v.get("cut", 2))
     return out
 
 

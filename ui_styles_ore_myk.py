@@ -34,11 +34,11 @@ def crisp(fill, rings, shadow=0, cut=2):
 
 STYLES = {
     "myk_stat": crisp(14, [4, 6]),               # palette 33: white in a blue ring and a navy ring
-    "myk_head": crisp(15, [10, 5, 3]),           # palette 19: yellow, brown ring, white band, pale blue glow
+    "myk_head": crisp(15, [10, 3], cut=2),           # palette 19: yellow, brown ring, white band, pale blue glow
     "myk_team": crisp(13, [10, 2]),              # palette 21: peach in a dark red ring and an orange ring
-    "myk_small": crisp(5, [2]),                  # palette 38: blue letters in a pale blue ring
-    "myk_tab": crisp(15, [2, 3]),                # palettes 8-11: white in the tab's dark ring
-    "myk_sel_b": crisp(14, [5, 7]),              # palette 27: SELECT hint, blue
-    "myk_sel_r": crisp(14, [5, 7]),              # palette 26: SELECT hint, red
-    "myk_title": crisp(15, [4, 8]),              # palette 55: green title
+    "myk_small": crisp(5, [2], cut=3),                  # palette 38: blue letters in a pale blue ring
+    "myk_tab": crisp(15, [2], cut=3),                # palettes 8-11: white in the tab's dark ring
+    "myk_sel_b": crisp(14, [7], cut=3),              # palette 27: SELECT hint, blue
+    "myk_sel_r": crisp(14, [7], cut=3),              # palette 26: SELECT hint, red
+    "myk_title": crisp(15, [4, 8], cut=3),              # palette 55: green title
 }

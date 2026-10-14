@@ -917,7 +917,7 @@
 ],
 "text": "Batter Stats",
 "style": "myk_tab",
-"font": "ttf:din:12:0:1:0",
+"font": "ttf:din:15:0:1:0",
 "valign": "centre"
 },
 {
@@ -930,7 +930,7 @@
 ],
 "text": "Batter Detail",
 "style": "myk_tab",
-"font": "ttf:din:11:0:1:0",
+"font": "ttf:din:15:0:1:0",
 "valign": "centre"
 },
 {
@@ -943,7 +943,7 @@
 ],
 "text": "Pitcher Stats",
 "style": "myk_tab",
-"font": "ttf:din:11:0:1:0",
+"font": "ttf:din:14:0:1:0",
 "valign": "centre"
 },
 {
@@ -956,7 +956,7 @@
 ],
 "text": "Pitcher Detail",
 "style": "myk_tab",
-"font": "ttf:din:10:0:1:0",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre"
 },
 {
@@ -1185,7 +1185,7 @@
 ],
 "text": "RISP",
 "style": "myk_head",
-"font": "ttf:din:22:0:1:0.3",
+"font": "ttf:din:22:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1199,7 +1199,7 @@
 ],
 "text": "Bases Loaded",
 "style": "myk_head",
-"font": "ttf:din:12:0:1:0.3",
+"font": "ttf:din:12:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1213,7 +1213,7 @@
 ],
 "text": "vs Lefty Pitchers",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1227,7 +1227,7 @@
 ],
 "text": "Pinch Hit",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:14:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1241,7 +1241,7 @@
 ],
 "text": "Last 5 Games",
 "style": "myk_head",
-"font": "ttf:din:20:0:1:0.3",
+"font": "ttf:din:21:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1255,7 +1255,7 @@
 ],
 "text": "Japan Series",
 "style": "myk_head",
-"font": "ttf:din:18:0:1:0.3",
+"font": "ttf:din:20:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1279,7 +1279,7 @@
 ],
 "text": "All-Star",
 "style": "myk_head",
-"font": "ttf:din:22:0:1:0.3",
+"font": "ttf:din:22:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1303,7 +1303,7 @@
 ],
 "text": "Dome Stadium",
 "style": "myk_head",
-"font": "ttf:din:18:0:1:0.3",
+"font": "ttf:din:18:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1317,7 +1317,7 @@
 ],
 "text": "Day Games",
 "style": "myk_head",
-"font": "ttf:din:19:0:1:0.3",
+"font": "ttf:din:20:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1331,9 +1331,9 @@
 ],
 "text": "Night",
 "style": "myk_head",
-"font": "ttf:din:22:0:1:0.3",
+"font": "ttf:din:22:0:1:0",
 "valign": "centre",
-"left": 22
+"left": 25
 },
 {
 "from": [
@@ -1345,9 +1345,9 @@
 ],
 "text": "Home",
 "style": "myk_head",
-"font": "ttf:din:22:0:1:0.3",
+"font": "ttf:din:22:0:1:0",
 "valign": "centre",
-"left": 20
+"left": 22
 },
 {
 "from": [
@@ -1359,9 +1359,9 @@
 ],
 "text": "Away",
 "style": "myk_head",
-"font": "ttf:din:22:0:1:0.3",
+"font": "ttf:din:22:0:1:0",
 "valign": "centre",
-"left": 46
+"left": 48
 },
 {
 "from": [
@@ -1373,7 +1373,7 @@
 ],
 "text": "Games",
 "style": "myk_head",
-"font": "ttf:din:22:0:1:0.3",
+"font": "ttf:din:22:0:1:0",
 "valign": "centre",
 "left": 0
 },
@@ -1393,7 +1393,7 @@
 ],
 "text": "Easy",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
 "left": 0
 },
@@ -1411,9 +1411,9 @@
 ],
 "text": "Pitchers",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
-"left": -18
+"left": -17
 },
 {
 "from": [
@@ -1431,7 +1431,7 @@
 ],
 "text": "Tough",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
 "left": 0
 },
@@ -1449,7 +1449,7 @@
 ],
 "text": "Pitchers",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
 "left": -10
 },
@@ -1467,9 +1467,9 @@
 ],
 "text": "Batters",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
-"left": -18
+"left": -17
 },
 {
 "from": [
@@ -1485,7 +1485,7 @@
 ],
 "text": "Batters",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
 "left": -10
 },
@@ -1499,7 +1499,7 @@
 ],
 "text": "vs Lefty",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
 "left": 0
 },
@@ -1516,9 +1516,9 @@
 ],
 "text": "Batters",
 "style": "myk_head",
-"font": "ttf:din:13:0:1:0.3",
+"font": "ttf:din:13:0:1:0",
 "valign": "centre",
-"left": 0
+"left": 1
 },
 {
 "from": [
@@ -1530,7 +1530,7 @@
 ],
 "text": "Team Stats",
 "style": "myk_head",
-"font": "ttf:din:22:0:1:0.3",
+"font": "ttf:din:22:0:1:0",
 "valign": "centre",
 "align": "left"
 },
@@ -1554,7 +1554,7 @@
 ],
 "text": "Yr",
 "style": "myk_head",
-"font": "ttf:din:16:0:1:0.3",
+"font": "ttf:din:16:0:1:0",
 "valign": "centre"
 },
 {
@@ -1567,7 +1567,7 @@
 ],
 "text": "Career",
 "style": "myk_head",
-"font": "ttf:din:16:0:1:0.3",
+"font": "ttf:din:16:0:1:0",
 "valign": "centre"
 },
 {
@@ -1836,21 +1836,21 @@
 ],
 "text": "My Records",
 "style": "myk_title",
-"font": "ttf:rounded:12:0:1:0.3",
+"font": "ttf:rounded:12:0:1:0",
 "valign": "centre"
 },
 {
 "sprite": "04",
 "text": "SELECT to Show Help",
 "style": "myk_sel_b",
-"font": "ttf:din:12:0:1:0",
+"font": "ttf:din:14:0:1:0",
 "valign": "centre"
 },
 {
 "sprite": "73",
 "text": "SELECT to Hide Help",
 "style": "myk_sel_r",
-"font": "ttf:din:12:0:1:0",
+"font": "ttf:din:14:0:1:0",
 "valign": "centre"
 }
 ]
