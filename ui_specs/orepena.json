@@ -14216,11 +14216,11 @@
      "sprites": [
       "00"
      ],
-     "text": "From",
+     "text": "From the",
      "style": "o2_ff_r5_s0_c2",
-     "font": "dc36g2b10",
-     "left": 45,
-     "baseline": 48
+     "font": "dc32g2b10",
+     "left": 59,
+     "baseline": 46
     },
     {
      "from": [
@@ -14233,11 +14233,11 @@
      "sprites": [
       "00"
      ],
-     "text": "the",
+     "text": "Fateful",
      "style": "o2_ff_r5_s0_c2",
-     "font": "dc36g2b10",
-     "left": 6,
-     "baseline": 48
+     "font": "dc32g2b10",
+     "left": 67,
+     "baseline": 46
     },
     {
      "from": [
@@ -14250,11 +14250,11 @@
      "sprites": [
       "00"
      ],
-     "text": "Fateful",
+     "text": "Draft,",
      "style": "o2_ff_r5_s0_c2",
-     "font": "dc36g2b10",
-     "left": -62,
-     "baseline": 48
+     "font": "dc32g2b10",
+     "left": 49,
+     "baseline": 46
     },
     {
      "from": [
@@ -14267,11 +14267,7 @@
      "sprites": [
       "00"
      ],
-     "text": "Draft,",
-     "style": "o2_ff_r5_s0_c2",
-     "font": "dc36g2b10",
-     "left": -70,
-     "baseline": 48
+     "empty": true
     },
     {
      "from": [
@@ -14286,9 +14282,9 @@
      ],
      "text": "One",
      "style": "o2_ff_r5_s0_c2",
-     "font": "dc36g2b10",
-     "left": 19,
-     "baseline": 44
+     "font": "dc32g2b10",
+     "left": 30,
+     "baseline": 42
     },
     {
      "from": [
@@ -14303,9 +14299,9 @@
      ],
      "text": "Night",
      "style": "o2_ff_r5_s0_c2",
-     "font": "dc36g2b10",
-     "left": -43,
-     "baseline": 44
+     "font": "dc32g2b10",
+     "left": -38,
+     "baseline": 42
     },
     {
      "from": [
@@ -14320,9 +14316,9 @@
      ],
      "text": "Later...",
      "style": "o2_ff_r5_s0_c2",
-     "font": "dc36g2b10",
-     "left": -83,
-     "baseline": 44
+     "font": "dc32g2b10",
+     "left": -86,
+     "baseline": 42
     }
    ],
    "under": 3
