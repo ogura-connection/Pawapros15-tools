@@ -8889,7 +8889,7 @@
      "sprites": [
       "2e"
      ],
-     "left": -1
+     "left": 4
     },
     {
      "from": [
@@ -8904,8 +8904,8 @@
      ],
      "text": "News",
      "style": "o2_f67_rbff_s1_c2",
-     "font": "ds26",
-     "left": -5,
+     "font": "ds22",
+     "left": -1,
      "baseline": 38
     },
     {
