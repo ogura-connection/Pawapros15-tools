@@ -586,7 +586,7 @@ def build_dol(dol, slots, orig, remaps):
     return data[:a] + block + data[b:]
 
 
-def verify_dol(orig, new, dol, slots):
+def verify_dol(orig, new, dol, slots, relinked=()):
     """Re-read main.dol as built (or the original when nothing was built) and check it against the
     original file and the relocations of all modules, without the layout: orig, new = the modules
     before and after, as verify() read them from disk."""
@@ -625,7 +625,7 @@ def verify_dol(orig, new, dol, slots):
             count += 1
         # outside its sections (header, relocation tables) a module that was not rebuilt differs
         # from the original in relocation addends only
-        if m.name not in S.SCRIPT_FILES and m.data != new[mid].data:
+        if m.name not in S.SCRIPT_FILES and m.name not in relinked and m.data != new[mid].data:
             assert len(m.data) == len(new[mid].data), m.name + ": size changed"
             image = bytearray(m.data)
             for _, _, entries, _ in parse_imports(new[mid].data, m.imp_off, m.imp_size):
@@ -1064,8 +1064,8 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             f.write(new_plan)
         changed.append(PLAN_FILE)
     new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ore)
-    if dol:
-        verify_dol(orig, new, dol, slots)
+    if dol:                             # the My Life modules: relocations and sections are checked in verify()
+        verify_dol(orig, new, dol, slots, tuple(extra_images))
     return changed
 
 
