@@ -120,16 +120,17 @@ def split_merged(b):
     sets = {}
     for n in b["sprites"]:
         sets.setdefault(re.sub(r"_[0-9a-f]{2}$", "", n[4:]), []).append(n)
-    if len(groups) < 2 or len(sets) < 2 or len({g for g, _ in groups}) != len(groups):
+    if len(sets) < 2:
         return [b]
     owner = {}                                      # set -> group index (the longest page prefix of its name)
     for s in sets:
         fits = [i for i, (g, _) in enumerate(groups) if s.startswith(g)]
         if not fits:
-            return [b]
+            break
         owner[s] = max(fits, key=lambda i: len(groups[i][0]))
-    if sorted(owner.values()) != list(range(len(groups))):
-        return [b]
+    if len(groups) < 2 or len({g for g, _ in groups}) != len(groups) or len(owner) != len(sets) \
+            or sorted(owner.values()) != list(range(len(groups))):
+        return split_by_order(b, sets)
     for s, i in owner.items():
         used = [p.page for n in sets[s] for p in b["sprites"][n]]
         start, count = groups[i][1][0], len(groups[i][1])
@@ -142,6 +143,28 @@ def split_merged(b):
         s = next(s for s, j in owner.items() if j == i)
         out.append(dict(b, name=s, pages=[b["pages"][k] for k in idx], page_names=[b["page_names"][k] for k in idx],
                         sprites={n: b["sprites"][n] for n in sets[s]}))
+    return out
+
+
+def split_by_order(b, sets):
+    """The same split when the page names do not tell the sets apart (gameplay.arc h3_ap_ps2: tex_h3_ap00..05 and
+    ap08 for h3_ap_ps2, ap06 / ap07 for h3_sc_ps2, mmk00..02 for h3_mmk_0): the sets, in file order of their
+    sprites, take the pages in file order, each as many as it uses. Only when every set uses each of its pages
+    0..n-1 and the counts add up to the bank's pages exactly; otherwise the bank stays whole."""
+    order = sorted(sets, key=lambda s: min(p.offset for n in sets[s] for p in b["sprites"][n]))
+    counts = []
+    for s in order:
+        used = {p.page for n in sets[s] for p in b["sprites"][n]}
+        if not used or used != set(range(max(used) + 1)):
+            return [b]
+        counts.append(max(used) + 1)
+    if sum(counts) != len(b["pages"]) or counts[0] == len(b["pages"]):
+        return [b]
+    out, k = [], 0
+    for s, c in zip(order, counts):
+        out.append(dict(b, name=s, pages=b["pages"][k:k + c], page_names=b["page_names"][k:k + c],
+                        sprites={n: b["sprites"][n] for n in sets[s]}))
+        k += c
     return out
 
 
