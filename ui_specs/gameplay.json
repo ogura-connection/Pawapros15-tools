@@ -114,7 +114,7 @@
      "sprite": "00",
      "text": "WARMING\nUP",
      "style": "call0",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
@@ -156,14 +156,14 @@
      "sprite": "06",
      "text": "BASE ON\nBALLS",
      "style": "call2",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
      "sprite": "07",
      "text": "HIT BY\nPITCH",
      "style": "call2",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
@@ -184,7 +184,7 @@
      "sprite": "0a",
      "text": "GROUND RULE\nDOUBLE",
      "style": "call2",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
@@ -205,21 +205,21 @@
      "sprite": "0e",
      "text": "CHANGE\nOF SIDES",
      "style": "call3",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
      "sprite": "0f",
      "text": "THAT'S THE\nBALLGAME",
      "style": "call3",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
      "sprite": "17",
      "text": "INFIELD\nFLY",
      "style": "call3",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
@@ -233,21 +233,21 @@
      "sprite": "13",
      "text": "2-RUN\nHOME RUN",
      "style": "call5",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
      "sprite": "14",
      "text": "3-RUN\nHOME RUN",
      "style": "call5",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     },
     {
      "sprite": "15",
      "text": "GRAND\nSLAM",
      "style": "call5",
-     "font": "ttf:rounded:32:0:0.9:1.0",
+     "font": "ttf:rounded:38:0:0.9:1.0",
      "slices": true
     }
    ]
