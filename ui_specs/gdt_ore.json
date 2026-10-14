@@ -4,8 +4,8 @@
   {
    "bank": "h3_apm_0",
    "palette": 151,
-   "style": "gdo_white",
-   "font": "ttf:din:13:0:1:0.2",
+   "style": "gdo_white1",
+   "font": "ttf:din:13:0:1:0.0",
    "under": 3,
    "gap": [
     1,
@@ -86,9 +86,9 @@
       128
      ],
      "text": "vs",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": 0,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 1,
      "baseline": 19
     },
     {
@@ -100,9 +100,9 @@
       72
      ],
      "text": "Giants",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -15,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 19
     },
     {
@@ -114,9 +114,9 @@
       72
      ],
      "text": "Chunichi",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -15,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 19
     },
     {
@@ -128,9 +128,9 @@
       72
      ],
      "text": "Hiroshima",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -15,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 19
     },
     {
@@ -142,9 +142,9 @@
       24
      ],
      "text": "Yakult",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -4,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -3,
      "baseline": 19
     },
     {
@@ -156,9 +156,9 @@
       96
      ],
      "text": "Yokohama",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -15,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 19
     },
     {
@@ -170,9 +170,9 @@
       96
      ],
      "text": "Hanshin",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -15,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 19
     },
     {
@@ -184,9 +184,9 @@
       96
      ],
      "text": "Rakuten",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -15,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 19
     },
     {
@@ -198,9 +198,9 @@
       24
      ],
      "text": "Nippon-Ham",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -4,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -3,
      "baseline": 19
     },
     {
@@ -212,9 +212,9 @@
       120
      ],
      "text": "Seibu",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -15,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 19
     },
     {
@@ -226,9 +226,9 @@
       48
      ],
      "text": "Orix",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -4,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -3,
      "baseline": 19
     },
     {
@@ -240,9 +240,9 @@
       120
      ],
      "text": "Lotte",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -12,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -11,
      "baseline": 19
     },
     {
@@ -254,9 +254,9 @@
       96
      ],
      "text": "SoftBank",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -4,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -3,
      "baseline": 19
     },
     {
@@ -268,9 +268,9 @@
       120
      ],
      "text": "Shonan",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -15,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 19
     },
     {
@@ -282,9 +282,9 @@
       48
      ],
      "text": "Surpass",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -2,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -1,
      "baseline": 19
     },
     {
@@ -296,9 +296,9 @@
       72
      ],
      "text": "All-Central",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -2,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -1,
      "baseline": 19
     },
     {
@@ -310,9 +310,9 @@
       72
      ],
      "text": "All-Pacific",
-     "style": "gdo_white",
-     "font": "ttf:din:13:0:1:0.2",
-     "left": -2,
+     "style": "gdo_white1",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -1,
      "baseline": 19
     },
     {
@@ -324,9 +324,9 @@
       80
      ],
      "text": "This Season",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": -2,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": -1,
      "baseline": 19
     },
     {
@@ -338,9 +338,9 @@
       80
      ],
      "text": "Last 5 Games",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": -5,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": -4,
      "baseline": 19
     },
     {
@@ -352,9 +352,9 @@
       104
      ],
      "text": "Japan Series",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": -2,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": -1,
      "baseline": 19
     },
     {
@@ -366,9 +366,9 @@
       104
      ],
      "text": "All-Star",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": 9,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": 10,
      "baseline": 19
     },
     {
@@ -380,9 +380,9 @@
       128
      ],
      "text": "Pinch Hit",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": -5,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": -4,
      "baseline": 19
     },
     {
@@ -394,9 +394,9 @@
       128
      ],
      "text": "Loaded",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": -1,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": 0,
      "baseline": 19
     },
     {
@@ -408,9 +408,9 @@
       24
      ],
      "text": "Clutch",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": 13,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": 15,
      "baseline": 19
     },
     {
@@ -422,9 +422,9 @@
       24
      ],
      "text": "Pinch",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": 8,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": 9,
      "baseline": 19
     },
     {
@@ -436,9 +436,9 @@
       48
      ],
      "text": "vs LH Pitchers",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": -8,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": -7,
      "baseline": 19
     },
     {
@@ -450,9 +450,9 @@
       48
      ],
      "text": "vs LH Batters",
-     "style": "gdo_white",
-     "font": "ttf:din:12:0:1:0.2",
-     "left": -5,
+     "style": "gdo_white1",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": -4,
      "baseline": 19
     }
    ]
