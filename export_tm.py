@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Translation memory: every translated piece of the game as a Japanese / English pair, for reuse in other games.
 
-  export_tm.py [OUT_DIR]     default ~/Projects/translation-kit/pawapuro15/tm (outside this repository)
+  export_tm.py [OUT_DIR]     default ~/Projects/translation-kit/pawapuro15-wii/tm (outside this repository)
 
 Writes tm.tsv (one pair per row: kind, file, id, scene, speaker, Japanese, English) and counts.txt.
 kind = script (story text, one run each, in scene order), string (fixed-slot menu and system text, main.dol dialogs included), message
@@ -90,7 +90,7 @@ def messages():
 
 
 def main():
-    out = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser("~/Projects/translation-kit/pawapuro15/tm")
+    out = sys.argv[1] if len(sys.argv) > 1 else os.path.expanduser("~/Projects/translation-kit/pawapuro15-wii/tm")
     os.makedirs(out, exist_ok=True)
     counts = {}
     with open(os.path.join(out, "tm.tsv"), "w", encoding="utf-8") as f:

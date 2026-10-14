@@ -2,7 +2,7 @@
 """Our English sprite lettering as pictures, for reuse in later games (the same art and colours turn up in
 other Pawapuro titles).
 
-  export_labels.py [OUT_DIR] [SPEC ...]     default ~/Projects/translation-kit/pawapuro15/labels, all ui_specs
+  export_labels.py [OUT_DIR] [SPEC ...]     default ~/Projects/translation-kit/pawapuro15-wii/labels, all ui_specs
 
 For every label of a spec: the sprites that show it, composed as the game draws them, from the original file
 (ja/) and with the spec applied in memory (en/), and OUT_DIR/index.tsv: arc, bank, sprite, English, style,
@@ -58,7 +58,7 @@ def labels_of(spec, banks):
 
 def main():
     a = sys.argv[1:]
-    out = a[0] if a and not a[0].endswith(".json") else os.path.expanduser("~/Projects/translation-kit/pawapuro15/labels")
+    out = a[0] if a and not a[0].endswith(".json") else os.path.expanduser("~/Projects/translation-kit/pawapuro15-wii/labels")
     specs = [x for x in a if x.endswith(".json")] or sorted(glob.glob(os.path.join(HERE, "ui_specs", "*.json")))
     rows = []
     for path in specs:
