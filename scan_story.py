@@ -407,7 +407,7 @@ ORE_IF, ORE_ELSE, ORE_WINDOW = (0x36, 0x37), 0x38, 0x18
 BLOCK_SCRIPTS["orepena.rel"] = {"engine": "ore", "section": 5, "region": (182584, 803170),
                                 "labels": (173464, 180872),
                                 "islands": ((187254, 189808), (228090, 229016), (779308, 780240)),
-                                "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C,), "max_op": 0x49, "line": 16,
+                                "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C, 0x3F), "max_op": 0x49, "line": 16,
                                 "marks": {0x01: "L", 0x06: "B", 0x07: "B"}, "dead": 400}
 
 
@@ -419,6 +419,34 @@ class OreScript(BlockScript):
 
     def in_island(self, off):
         return any(a <= off < b for a, b in self.spec["islands"])
+
+    def label_table(self):
+        """Halfword index of every label, in the order of the table (a jump names a label by its number)."""
+        a, b = self.spec["labels"]
+        at = {pos: addend // 2 for (s, pos, typ, tm, ts, addend) in self.rel.relocs()
+              if s == self.sec and typ == 1 and a <= pos < b}
+        return [at[pos] for pos in range(a, b, 4)]
+
+    def routine_text(self, i, limit=40):
+        """The text a routine prints before it returns (for the notes of the scene files)."""
+        out, depth = [], 0
+        while len(out) < limit and self.kind.get(i) == "op":
+            op = self.hw[i]
+            if i in self.texts:
+                out.append(decode_units(self.texts[i][1]))
+                i = self.texts[i][2]
+                continue
+            n = self._length(i)
+            if op in self.name_ops:
+                out.append("{name}")
+            elif op == ORE_BLOCK or (op in ORE_IF + (ORE_ELSE,) and self.hw[i + n - 1] == ORE_BLOCK):
+                depth += 1
+            elif op == ORE_BLOCK_END:
+                depth -= 1
+            if op in self.ends and depth <= 0:
+                break
+            i += n
+        return "".join(out)
 
     def _length(self, i):
         op = self.hw[i]

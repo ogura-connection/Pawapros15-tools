@@ -43,6 +43,7 @@ OP_COLOUR = 0x73
 PORTRAIT_SLOT = {0x7A: 2, 0x7B: 3, 0x7C: 4, 0x7D: 5}     # opcode -> window type it speaks in
 WIDE_WINDOWS = {31: 60}                                    # glossary pop-ups: a wider box
 BOX_LINES = 3
+ORE_CALL = 0x32
 ORE_WINDOW_BASE = 100                                      # My Life: window = 100 + the number its 0018 gives
 # Portrait id ranges seen in scenario 1 (id // 16), for the speaker column of the scene files.
 SPEAKERS = [(0x00, 0x03, "player"), (0x04, 0x05, "Yabe"), (0x2B, 0x37, "extra"), (0x4D, 0x4E, "Momoko"),
@@ -87,6 +88,7 @@ def scenes(sc):
     ends = sc.ends if block else (S.OP_RETURN, S.OP_GOTO)
     out, cur = [], []
     face, mark, ended, ore_window = {}, "B", True, ORE_WINDOW_BASE
+    ore_labels = sc.label_table() if ore else None
     for i in sorted(k for k, v in sc.kind.items() if v == "op"):
         op = sc.op(i) if block else sc.hw[i] & 0xFF
         if i in sc.labels and ended:
@@ -107,6 +109,10 @@ def scenes(sc):
                 mark = sc.spec["marks"][op]
             elif op == S.ORE_WINDOW:
                 ore_window, mark = ORE_WINDOW_BASE + sc.hw[i + 1], "B"
+            elif op == ORE_CALL:
+                said = sc.routine_text(ore_labels[sc.hw[i + 1]])
+                if said:
+                    cur.append({"note": "{sub} " + (said if len(said) <= 30 else said[:30] + "...")})
             elif op in S.ORE_IF:
                 cur.append({"note": "if"})
             elif op == S.ORE_ELSE:
