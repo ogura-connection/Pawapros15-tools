@@ -3131,7 +3131,7 @@
    "bank": "y3_myk",
    "palette": 23,
    "style": "mykblue",
-   "font": "ttf:din:16:0:1:0.35",
+   "font": "ttf:din:16:0:1:0.1",
    "under": 3,
    "gap": [
     1,
@@ -3485,9 +3485,9 @@
      ],
      "text": "Saitama",
      "style": "mykblue",
-     "font": "ttf:din:18:0:1:0.1",
-     "left": 5,
-     "baseline": 23
+     "font": "ttf:din:20:0:1:0.1",
+     "left": 2,
+     "baseline": 24
     },
     {
      "from": [
@@ -3537,9 +3537,9 @@
      ],
      "text": "Kanagawa",
      "style": "mykblue",
-     "font": "ttf:din:15:0:1:0.1",
-     "left": 19,
-     "baseline": 21
+     "font": "ttf:din:20:0:1:0.1",
+     "left": 8,
+     "baseline": 24
     },
     {
      "from": [
@@ -3579,9 +3579,9 @@
      ],
      "text": "Ishikawa",
      "style": "mykblue",
-     "font": "ttf:din:17:0:1:0.1",
-     "left": 4,
-     "baseline": 22
+     "font": "ttf:din:18:0:1:0.1",
+     "left": 2,
+     "baseline": 23
     },
     {
      "from": [
@@ -3771,9 +3771,9 @@
      ],
      "text": "Wakayama",
      "style": "mykblue",
-     "font": "ttf:din:14:0:1:0.1",
-     "left": 17,
-     "baseline": 21
+     "font": "ttf:din:18:0:1:0.1",
+     "left": 8,
+     "baseline": 23
     },
     {
      "from": [
@@ -3837,9 +3837,9 @@
      ],
      "text": "Hiroshima",
      "style": "mykblue",
-     "font": "ttf:din:15:0:1:0.1",
-     "left": 4,
-     "baseline": 21
+     "font": "ttf:din:16:0:1:0.1",
+     "left": 2,
+     "baseline": 22
     },
     {
      "from": [
@@ -3865,8 +3865,8 @@
      ],
      "text": "Tokushima",
      "style": "mykblue",
-     "font": "ttf:din:14:0:1:0.1",
-     "left": 4,
+     "font": "ttf:din:15:0:1:0.1",
+     "left": 2,
      "baseline": 21
     },
     {
@@ -4005,9 +4005,9 @@
      ],
      "text": "Kagoshima",
      "style": "mykblue",
-     "font": "ttf:din:14:0:1:0.1",
-     "left": 17,
-     "baseline": 21
+     "font": "ttf:din:18:0:1:0.1",
+     "left": 8,
+     "baseline": 23
     },
     {
      "from": [
@@ -4072,7 +4072,7 @@
      ],
      "text": "/",
      "style": "mykblue",
-     "font": "ttf:din:26:0:1:0.35",
+     "font": "ttf:din:26:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4085,7 +4085,7 @@
      ],
      "text": "/",
      "style": "mykblue",
-     "font": "ttf:din:26:0:1:0.35",
+     "font": "ttf:din:26:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4104,7 +4104,7 @@
    "bank": "y3_kzo",
    "palette": 20,
    "style": "kzomint",
-   "font": "ttf:din:14:0:1:0.35",
+   "font": "ttf:din:14:0:1:0.1",
    "under": 3,
    "gap": [
     1,
@@ -4240,7 +4240,7 @@
      ],
      "text": "Married",
      "style": "kzomint",
-     "font": "ttf:din:14:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4250,7 +4250,7 @@
      ],
      "text": "Single",
      "style": "kzomint",
-     "font": "ttf:din:14:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4260,7 +4260,7 @@
      ],
      "text": "None",
      "style": "kzomint",
-     "font": "ttf:din:14:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4276,9 +4276,9 @@
      ],
      "text": "1 boy",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "left": 8,
-     "baseline": 21
+     "baseline": 22
     },
     {
      "from": [
@@ -4293,9 +4293,9 @@
      ],
      "text": "1 girl",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "left": 10,
-     "baseline": 21
+     "baseline": 22
     },
     {
      "from": [
@@ -4310,9 +4310,9 @@
      ],
      "text": "2",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": 2,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": 0,
+     "baseline": 22
     },
     {
      "from": [
@@ -4327,9 +4327,9 @@
      ],
      "text": "boys",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": -13,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": -14,
+     "baseline": 22
     },
     {
      "from": [
@@ -4344,9 +4344,9 @@
      ],
      "text": "3",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": 2,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": 0,
+     "baseline": 22
     },
     {
      "from": [
@@ -4361,9 +4361,9 @@
      ],
      "text": "boys",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": -13,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": -14,
+     "baseline": 22
     },
     {
      "from": [
@@ -4378,9 +4378,9 @@
      ],
      "text": "2",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": 4,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": 3,
+     "baseline": 22
     },
     {
      "from": [
@@ -4395,9 +4395,9 @@
      ],
      "text": "girls",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "left": -11,
-     "baseline": 21
+     "baseline": 22
     },
     {
      "from": [
@@ -4412,9 +4412,9 @@
      ],
      "text": "3",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": 4,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": 3,
+     "baseline": 22
     },
     {
      "from": [
@@ -4429,9 +4429,9 @@
      ],
      "text": "girls",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "left": -11,
-     "baseline": 21
+     "baseline": 22
     },
     {
      "from": [
@@ -4448,9 +4448,9 @@
      ],
      "text": "1 boy",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "left": 9,
-     "baseline": 21
+     "baseline": 22
     },
     {
      "from": [
@@ -4467,9 +4467,9 @@
      ],
      "text": "2",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": -3,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": -6,
+     "baseline": 22
     },
     {
      "from": [
@@ -4486,9 +4486,9 @@
      ],
      "text": "boys",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": -18,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": -20,
+     "baseline": 22
     },
     {
      "from": [
@@ -4504,9 +4504,9 @@
      ],
      "text": "3",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": -3,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": -6,
+     "baseline": 22
     },
     {
      "from": [
@@ -4522,9 +4522,9 @@
      ],
      "text": "boys",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": -18,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": -20,
+     "baseline": 22
     },
     {
      "from": [
@@ -4541,9 +4541,9 @@
      ],
      "text": "1 girl",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "left": 9,
-     "baseline": 21
+     "baseline": 22
     },
     {
      "from": [
@@ -4560,9 +4560,9 @@
      ],
      "text": "2",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "left": 9,
-     "baseline": 21
+     "baseline": 22
     },
     {
      "from": [
@@ -4579,9 +4579,9 @@
      ],
      "text": "girls",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": -6,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": -5,
+     "baseline": 22
     },
     {
      "from": [
@@ -4597,9 +4597,9 @@
      ],
      "text": "3",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "left": 9,
-     "baseline": 21
+     "baseline": 22
     },
     {
      "from": [
@@ -4615,9 +4615,9 @@
      ],
      "text": "girls",
      "style": "kzomint",
-     "font": "ttf:din:13:0:1:0.35",
-     "left": -6,
-     "baseline": 21
+     "font": "ttf:din:14:0:1:0.1",
+     "left": -5,
+     "baseline": 22
     },
     {
      "sprite": "02",
@@ -4626,7 +4626,7 @@
      ],
      "text": "Wife",
      "style": "kzoplate",
-     "font": "ttf:din:18:0:1:0.35",
+     "font": "ttf:din:20:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4636,7 +4636,7 @@
      ],
      "text": "Kids",
      "style": "kzoplate",
-     "font": "ttf:din:18:0:1:0.35",
+     "font": "ttf:din:20:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4646,7 +4646,7 @@
      ],
      "text": "Wife Settings",
      "style": "kzohead_p",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4656,7 +4656,7 @@
      ],
      "text": "Kids Settings",
      "style": "kzohead_g",
-     "font": "ttf:din:13:0:1:0.35",
+     "font": "ttf:din:14:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4666,7 +4666,7 @@
      ],
      "text": "No Kids",
      "style": "mykblue",
-     "font": "ttf:din:22:0:1:0.35",
+     "font": "ttf:din:22:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4682,7 +4682,7 @@
      ],
      "text": "yrs",
      "style": "kzounit",
-     "font": "ttf:din:11:0:1:0.35",
+     "font": "ttf:din:12:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4698,7 +4698,7 @@
      ],
      "text": "/",
      "style": "kzounit",
-     "font": "ttf:din:11:0:1:0.35",
+     "font": "ttf:din:12:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4714,7 +4714,7 @@
      ],
      "text": "/",
      "style": "kzounit",
-     "font": "ttf:din:11:0:1:0.35",
+     "font": "ttf:din:12:0:1:0.1",
      "valign": "centre"
     },
     {
@@ -4730,7 +4730,7 @@
      ],
      "text": "Born",
      "style": "kzounit",
-     "font": "ttf:din:11:0:1:0.35",
+     "font": "ttf:din:12:0:1:0.1",
      "valign": "centre"
     },
     {
