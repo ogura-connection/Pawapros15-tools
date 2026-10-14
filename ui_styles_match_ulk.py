@@ -55,7 +55,9 @@ def banner(fill, inner, ext=(), outer=(), cut=3):
 
 STYLES = {
     # inning, home-run number, distance (pal 14): white, blue ring, deep blue shadow, as the digits beside them
-    "ulk_inn": banner([15], [6, 5], [2]),
+    "ulk_inn": banner([15], [6], [5, 2]),
+    # the big home-run number plate (pal 160): white, blue ring, bright blue extrusion
+    "ulk_hr": banner([15], [6], [4, 4, 4, 4]),
     # Replay of the bar (pal 38): yellow-to-orange, dark olive ring, teal shadow
     "ulk_a": banner([14, 14, 13, 12, 11, 11], [4, 4], [2, 1]),
     # the replay tags (pal 125): yellow, brown rings, dark brown extrusion

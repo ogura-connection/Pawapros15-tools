@@ -1290,7 +1290,7 @@
    "bank": "y3_cd",
    "palette": 9,
    "style": "gdo_cd",
-   "font": "ttf:din:13:0:1:0.3",
+   "font": "ttf:din:13:0:1:0.0",
    "under": 3,
    "gap": [
     1,
@@ -1359,8 +1359,8 @@
      ],
      "text": "Season",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "04",
@@ -1382,8 +1382,8 @@
      ],
      "text": "HR",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -16,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -15,
      "baseline": 20,
      "sprites": [
       "04"
@@ -1399,7 +1399,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": -27,
      "baseline": 20,
      "sprites": [
@@ -1466,8 +1466,8 @@
      ],
      "text": "To Break It:",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 2,
      "baseline": 20,
      "sprites": [
       "04",
@@ -1601,8 +1601,8 @@
      ],
      "text": "Hits",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -16,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -15,
      "baseline": 20,
      "sprites": [
       "05"
@@ -1618,7 +1618,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": -21,
      "baseline": 20,
      "sprites": [
@@ -1635,8 +1635,8 @@
      ],
      "text": "RBI",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -16,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -15,
      "baseline": 20,
      "sprites": [
       "06"
@@ -1652,7 +1652,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": -24,
      "baseline": 20,
      "sprites": [
@@ -1683,8 +1683,8 @@
      ],
      "text": "2B",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -16,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -15,
      "baseline": 20,
      "sprites": [
       "07"
@@ -1700,7 +1700,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": -28,
      "baseline": 20,
      "sprites": [
@@ -1717,8 +1717,8 @@
      ],
      "text": "3B",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -16,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -15,
      "baseline": 20,
      "sprites": [
       "08"
@@ -1734,7 +1734,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": -28,
      "baseline": 20,
      "sprites": [
@@ -1751,8 +1751,8 @@
      ],
      "text": "SO",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -16,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -15,
      "baseline": 20,
      "sprites": [
       "09"
@@ -1768,7 +1768,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": -27,
      "baseline": 20,
      "sprites": [
@@ -1802,8 +1802,8 @@
      ],
      "text": "Sac",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -16,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -15,
      "baseline": 20,
      "sprites": [
       "0a"
@@ -1819,7 +1819,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": -21,
      "baseline": 20,
      "sprites": [
@@ -1836,8 +1836,8 @@
      ],
      "text": "Season",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 3,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 4,
      "baseline": 20,
      "sprites": [
       "15",
@@ -1855,8 +1855,8 @@
      ],
      "text": "Wins",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -15,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 20,
      "sprites": [
       "15"
@@ -1872,8 +1872,8 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -14,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -13,
      "baseline": 20,
      "sprites": [
       "15"
@@ -1902,8 +1902,8 @@
      ],
      "text": "Saves",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -15,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 20,
      "sprites": [
       "16"
@@ -1919,8 +1919,8 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -8,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -7,
      "baseline": 20,
      "sprites": [
       "16"
@@ -1936,8 +1936,8 @@
      ],
      "text": "K",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -15,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -14,
      "baseline": 20,
      "sprites": [
       "17"
@@ -1953,8 +1953,8 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -34,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -33,
      "baseline": 20,
      "sprites": [
       "17"
@@ -1984,8 +1984,8 @@
      ],
      "text": "Career",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 0,
      "baseline": 20,
      "sprites": [
       "0b",
@@ -2009,7 +2009,7 @@
      ],
      "text": "HR",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2026,8 +2026,8 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 16,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 15,
      "baseline": 20,
      "sprites": [
       "0b"
@@ -2063,7 +2063,7 @@
      ],
      "text": "Hits",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2080,8 +2080,8 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 22,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 21,
      "baseline": 20,
      "sprites": [
       "0c"
@@ -2097,7 +2097,7 @@
      ],
      "text": "RBI",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2114,8 +2114,8 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 19,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 18,
      "baseline": 20,
      "sprites": [
       "0d"
@@ -2131,7 +2131,7 @@
      ],
      "text": "2B",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2148,8 +2148,8 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 15,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 14,
      "baseline": 20,
      "sprites": [
       "0e",
@@ -2166,7 +2166,7 @@
      ],
      "text": "3B",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2183,7 +2183,7 @@
      ],
      "text": "Sac",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2200,8 +2200,8 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 21,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 20,
      "baseline": 20,
      "sprites": [
       "10"
@@ -2217,7 +2217,7 @@
      ],
      "text": "Wins",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2234,7 +2234,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 28,
      "baseline": 20,
      "sprites": [
@@ -2251,7 +2251,7 @@
      ],
      "text": "Saves",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2268,7 +2268,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 2,
      "baseline": 20,
      "sprites": [
@@ -2285,7 +2285,7 @@
      ],
      "text": "K",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 11,
      "baseline": 20,
      "sprites": [
@@ -2302,7 +2302,7 @@
      ],
      "text": "Record",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
+     "font": "ttf:din:13:0:1:0.0",
      "left": 8,
      "baseline": 20,
      "sprites": [
@@ -2319,8 +2319,8 @@
      ],
      "text": "A Home Run",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 0,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 1,
      "baseline": 20,
      "sprites": [
       "11"
@@ -2351,8 +2351,8 @@
      ],
      "text": "Completes the Cycle",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 2,
      "baseline": 20,
      "sprites": [
       "11",
@@ -2404,8 +2404,8 @@
      ],
      "text": "A Triple",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 0,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 1,
      "baseline": 20,
      "sprites": [
       "12"
@@ -2421,8 +2421,8 @@
      ],
      "text": "A Double",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 0,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 1,
      "baseline": 20,
      "sprites": [
       "13"
@@ -2438,8 +2438,8 @@
      ],
      "text": "A Single",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": -1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 0,
      "baseline": 20,
      "sprites": [
       "14"
@@ -2455,8 +2455,8 @@
      ],
      "text": "To a No-Hitter",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 2,
      "baseline": 20,
      "sprites": [
       "1b"
@@ -2472,8 +2472,8 @@
      ],
      "text": "Outs Left:",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 2,
      "baseline": 20,
      "sprites": [
       "1b"
@@ -2502,8 +2502,8 @@
      ],
      "text": "To a Perfect Game",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 2,
      "baseline": 20,
      "sprites": [
       "1c"
@@ -2519,8 +2519,8 @@
      ],
      "text": "Only",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 2,
      "baseline": 20,
      "sprites": [
       "1c"
@@ -2536,8 +2536,8 @@
      ],
      "text": "HR",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "20"
@@ -2553,8 +2553,8 @@
      ],
      "text": "Hits",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "21"
@@ -2570,8 +2570,8 @@
      ],
      "text": "RBI",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "22"
@@ -2587,8 +2587,8 @@
      ],
      "text": "2B",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "23"
@@ -2604,8 +2604,8 @@
      ],
      "text": "3B",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "24"
@@ -2621,8 +2621,8 @@
      ],
      "text": "SO",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "25"
@@ -2638,8 +2638,8 @@
      ],
      "text": "Sac",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "26"
@@ -2655,8 +2655,8 @@
      ],
      "text": "Wins",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "27"
@@ -2672,8 +2672,8 @@
      ],
      "text": "Saves",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "28"
@@ -2689,8 +2689,8 @@
      ],
      "text": "K",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "29"
@@ -2706,8 +2706,8 @@
      ],
      "text": "To Go:",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 2,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
      "baseline": 20,
      "sprites": [
       "1d"
@@ -2723,8 +2723,8 @@
      ],
      "text": "To Go:",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 1,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 2,
      "baseline": 20,
      "sprites": [
       "3e"
@@ -2740,8 +2740,8 @@
      ],
      "text": "Career",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 76,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 77,
      "baseline": 20,
      "sprites": [
       "1f"
@@ -2757,8 +2757,8 @@
      ],
      "text": "Left",
      "style": "gdo_cd",
-     "font": "ttf:din:13:0:1:0.3",
-     "left": 0,
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 1,
      "baseline": 20,
      "sprites": [
       "1e"
