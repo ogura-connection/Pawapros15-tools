@@ -1300,7 +1300,7 @@
      "sprite": "24",
      "text": "Private",
      "style": "pinkband",
-     "font": "ttf:rounded:11:0:1:0.3",
+     "font": "ttf:rounded:13:0:1:0.3",
      "valign": "centre",
      "pages": [
       2
@@ -1342,7 +1342,7 @@
      ],
      "text": "Pitch",
      "style": "pitchtag",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:11:0:1:0.3",
      "valign": "centre"
     },
     {

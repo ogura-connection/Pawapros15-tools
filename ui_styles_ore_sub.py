@@ -33,10 +33,10 @@ STYLES = {
     # day tags on the plates (palette 48, grey ramp): dark letters in a solid white ring
     "chip": banded([0, 8, 4, 2, 2, 2, 2], [15]),
     "homeblue": banded([0, 10, 11, 12, 13, 13, 13], [3, 5], 2),                 # palette 27
-    "pinkband": onband(banded([0, 8, 4, 3, 3, 3, 3], [15]), 1, (96, 20), rim=6),    # palette 66, 24
-    "greenband": onband(banded([0, 8, 4, 3, 3, 3, 3], [15]), 1, (48, 20), rim=6),  # palette 67, 25
+    "pinkband": onband(banded([0, 3, 4, 5, 5, 5, 5], []), 1, (96, 20)),                    # palette 66, 24: pink letters on the pale band
+    "greenband": onband(banded([0, 3, 4, 5, 5, 5, 5], []), 1, (48, 20)),                  # palette 67, 25: dark green on light green
     "starter": ui_type.boxed([3, 5, 6, 7, 7, 7, 7], (2, 2), (46, 15), 4),       # palette 63 (55): yellow on brown
-    "pitchtag": ui_type.boxed([14, 9, 5, 3, 1, 1, 1], (2, 2), (34, 15), 12),    # palette 62 (8b): red on white
+    "pitchtag": banded([0, 8, 5, 3, 1, 1, 1], [14]),                                      # palette 62 (8b): red with a white ring
     "rain": banded([0, 9, 10, 12, 13, 14, 15], [3, 4]),                          # palette 45, purple
     "gamew": banded([0, 10, 12, 13, 14, 15, 15], [1]),                           # palette 52, navy
     "bigdrop": dropped([0, 3, 2, 1, 1, 1, 1], [8, 9, 10]),                       # palette 44
