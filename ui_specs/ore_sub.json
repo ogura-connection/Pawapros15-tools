@@ -32,10 +32,17 @@
     ],
     [
      2,
+     112,
+     80,
+     128,
+     104
+    ],
+    [
+     2,
      72,
      104,
      128,
-     120
+     112
     ],
     [
      3,
@@ -97,6 +104,13 @@
      4,
      0,
      56,
+     128,
+     80
+    ],
+    [
+     4,
+     0,
+     80,
      80,
      104
     ],
@@ -159,16 +173,9 @@
     [
      7,
      0,
-     56,
+     32,
      128,
-     80
-    ],
-    [
-     7,
-     0,
-     80,
-     120,
-     128
+     112
     ],
     [
      8,
@@ -210,7 +217,7 @@
      0,
      24,
      128,
-     96
+     128
     ],
     [
      10,
@@ -333,10 +340,17 @@
     ],
     [
      21,
+     80,
+     0,
+     104,
+     24
+    ],
+    [
+     21,
      0,
      48,
      64,
-     56
+     64
     ],
     [
      22,
@@ -371,21 +385,21 @@
      0,
      0,
      128,
-     88
+     104
+    ],
+    [
+     23,
+     64,
+     112,
+     128,
+     120
     ],
     [
      24,
      0,
      0,
      128,
-     48
-    ],
-    [
-     24,
-     80,
-     112,
-     112,
-     120
+     64
     ],
     [
      25,
@@ -497,7 +511,7 @@
      0,
      0,
      128,
-     104
+     128
     ],
     [
      34,
@@ -529,6 +543,13 @@
     ],
     [
      36,
+     0,
+     0,
+     48,
+     24
+    ],
+    [
+     36,
      88,
      8,
      128,
@@ -536,7 +557,7 @@
     ],
     [
      36,
-     48,
+     0,
      24,
      64,
      32
@@ -1730,17 +1751,19 @@
      "valign": "centre"
     },
     {
-     "from": [
-      35,
-      0,
-      96,
-      128,
-      128
-     ],
+     "sprite": "13e",
      "text": "Stop Fast-Forward",
      "style": "stopmsg",
-     "font": "ttf:rounded:10:0:1:0.3",
-     "valign": "centre"
+     "font": "ttf:rounded:13:0:1:0.3",
+     "slices": true,
+     "slice_width": 120,
+     "pages": [
+      35,
+      36
+     ],
+     "palettes": [
+      125
+     ]
     },
     {
      "sprite": "121",
@@ -1786,6 +1809,119 @@
      ]
     },
     {
+     "sprite": "d5",
+     "text": "/             (Sun)",
+     "style": "dsun",
+     "font": "ttf:din:12:0:1:0",
+     "left": 35,
+     "valign": "centre",
+     "palettes": [
+      54
+     ]
+    },
+    {
+     "sprite": "d6",
+     "text": "/             (Mon)",
+     "style": "dday",
+     "font": "ttf:din:12:0:1:0",
+     "left": 35,
+     "valign": "centre",
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "d7",
+     "text": "/             (Tue)",
+     "style": "dday",
+     "font": "ttf:din:12:0:1:0",
+     "left": 35,
+     "valign": "centre",
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "d8",
+     "text": "/             (Wed)",
+     "style": "dday",
+     "font": "ttf:din:12:0:1:0",
+     "left": 35,
+     "valign": "centre",
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "d9",
+     "text": "/             (Thu)",
+     "style": "dday",
+     "font": "ttf:din:12:0:1:0",
+     "left": 35,
+     "valign": "centre",
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "da",
+     "text": "/             (Fri)",
+     "style": "dday",
+     "font": "ttf:din:12:0:1:0",
+     "left": 35,
+     "valign": "centre",
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "db",
+     "text": "/             (Sat)",
+     "style": "dsat",
+     "font": "ttf:din:12:0:1:0",
+     "left": 35,
+     "valign": "centre",
+     "palettes": [
+      56
+     ]
+    },
+    {
+     "from": [
+      4,
+      80,
+      56,
+      104,
+      80
+     ],
+     "text": "/",
+     "style": "slash",
+     "font": "ttf:rounded:16:0:1:0.3",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      104,
+      56,
+      128,
+      80
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      21,
+      80,
+      0,
+      104,
+      24
+     ],
+     "text": "Wk",
+     "style": "slash",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
      "from": [
       28,
       0,
@@ -1818,7 +1954,8 @@
      ],
      "text": "Day End",
      "style": "pinkmsg",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:rounded:13:0:1:0.3",
+     "align": "left",
      "valign": "centre"
     },
     {
@@ -1906,6 +2043,29 @@
       123
      ]
     }
+   ]
+  }
+ ],
+ "paint": [
+  {
+   "bank": "y3_yotei",
+   "page": 17,
+   "rect": [
+    12,
+    40,
+    46,
+    64
+   ],
+   "text": "Stadium",
+   "font": "ttf:din:10:0:1:0",
+   "ramp": [
+    13,
+    4,
+    3,
+    2,
+    1,
+    1,
+    1
    ]
   }
  ]
