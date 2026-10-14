@@ -398,122 +398,146 @@
     {
      "sprite": "17",
      "text": "Play",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "18",
      "text": "Fast Game",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "19",
      "text": "Normal Game",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "1a",
      "text": "End",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "1b",
      "text": "Quit",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "1c",
      "text": "Replay",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "1f",
      "text": "Score",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "20",
      "text": "Continue",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "21",
      "text": "Pitcher Data",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "22",
      "text": "Controller",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "23",
      "text": "Controller Setup",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "24",
      "text": "Audio",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "25",
      "text": "Options",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "26",
      "text": "Display Options",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "27",
      "text": "Turn Setup",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "28",
      "text": "Bullpen",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "29",
      "text": "Defense",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "2c",
      "text": "Instructions",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "2d",
      "text": "Game Data",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "2e",
      "text": "Give Up",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "2f",
      "text": "Retry",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "30",
      "text": "Forfeit",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "36",
      "text": "Team Analysis",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "sprite": "37",
      "text": "Controls",
-     "align": "left"
+     "align": "left",
+     "baseline": 20
     },
     {
      "from": [
@@ -524,7 +548,8 @@
       120
      ],
      "text": "Replay",
-     "align": "left"
+     "align": "left",
+     "baseline": 18
     },
     {
      "from": [
@@ -535,7 +560,8 @@
       48
      ],
      "text": "Pinch",
-     "align": "left"
+     "align": "left",
+     "baseline": 17
     },
     {
      "from": [
@@ -546,7 +572,8 @@
       48
      ],
      "text": "Hitter",
-     "left": 2
+     "left": 2,
+     "baseline": 17
     },
     {
      "from": [
@@ -557,7 +584,8 @@
       48
      ],
      "text": "Runner",
-     "left": 2
+     "left": 2,
+     "baseline": 17
     }
    ]
   }
