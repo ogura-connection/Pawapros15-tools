@@ -610,7 +610,14 @@ def verify_dol(orig, new, dol, slots, relinked=()):
     old_at, new_at = [off for off, _ in olds], [pos for pos, _ in news]
     at_start, inside, count = set(), set(), 0
     for mid, m in orig.items():
-        for (s, pos, typ, tm, ts, ad), (_, _, typ2, tm2, ts2, ad2) in zip(m.relocs(), new[mid].relocs()):
+        theirs = new[mid].relocs()
+        if m.name in relinked:      # relocations changed stream or place: pair them by where they stand
+            at = {(s2, remap_pos): r for r in theirs for s2, remap_pos in [r[:2]]}
+            theirs = [at[(s, pos)] for (s, pos, typ, tm, ts, ad) in m.relocs() if tm == 0]
+            mine = [r for r in m.relocs() if r[3] == 0]
+        else:
+            mine = m.relocs()
+        for (s, pos, typ, tm, ts, ad), (_, _, typ2, tm2, ts2, ad2) in zip(mine, theirs):
             if tm != 0:
                 continue            # relocations against modules: verify()
             where = "%s: relocation sec%d+0x%X" % (m.name, s, pos)
