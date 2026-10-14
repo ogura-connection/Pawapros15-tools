@@ -48,3 +48,43 @@ STYLES = {
     # Yes / No and the question (palette 21): deep blue, white ring, pale blue shadow
     "fa_ask": crisp([3, 2, 1, 1, 1], [15, 15], [10, 5, 5]),
 }
+
+
+# ---- the plate of "条件提示" (sprite 11, page 3 rect 0,72,72,104 of y3_fa, palette 2): lettering painted on the plate.
+import os
+import ui_textures as _U
+import scan_story as _S
+
+_PLATE = {}
+
+
+def _old_plate():
+    if "p" not in _PLATE:
+        path = os.path.join(_U.ORIG_ARC_DIR, "ore_fa.arc")
+        if not os.path.exists(path):
+            path = os.path.join(_S.DATA_FILES, "ore_fa.arc")
+        d = open(path, "rb").read()
+        b = next(x for x in _U.banks(d, _U.elf_symbols(d)) if x["name"] == "y3_fa")
+        _PLATE["p"] = _U.decode_indices(d, *b["pages"][3])[72:104, 0:72].copy()
+    return _PLATE["p"].copy()
+
+
+def offerplate(fill, rings, cx=29, cy=18):
+    """The old 72x32 plate with its lettering (columns 0-58, rows 6-28) painted over with the colour of the plate
+    (pale 'e' down to row 25, 'd' below) and the English centred at (cx, cy). Use with "left": 0, "baseline": 0."""
+    inner = crisp(fill, rings)
+
+    def style(ink, base):
+        pic = _old_plate()
+        for r in range(6, 29):
+            pic[r, 0:59] = 14 if r <= 25 else 13
+        art, b = inner(ink, base)
+        h, w = art.shape
+        x, y = cx - w // 2, cy - h // 2
+        sub = pic[y:y + h, x:x + w]
+        sub[art > 0] = art[art > 0]
+        return pic, 0
+    return style
+
+
+STYLES["fa_offer"] = offerplate(15, [3, 3])

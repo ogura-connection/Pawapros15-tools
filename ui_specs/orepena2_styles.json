@@ -265,12 +265,11 @@
   "shadow": 0,
   "cut": 2
  },
- "o2_f1_rff_s0_c2": {
+ "o2_f1_rf_s0_c2": {
   "fills": [
    1
   ],
   "rings": [
-   15,
    15
   ],
   "shadow": 0,
@@ -329,6 +328,16 @@
   "shadow": 0,
   "cut": 2
  },
+ "o2_ff_r4_s0_c2": {
+  "fills": [
+   15
+  ],
+  "rings": [
+   4
+  ],
+  "shadow": 0,
+  "cut": 2
+ },
  "o2_ff_r44_s0_c2": {
   "fills": [
    15
@@ -350,11 +359,12 @@
   "shadow": 0,
   "cut": 2
  },
- "o2_f1_rf_s0_c2": {
+ "o2_f1_rff_s0_c2": {
   "fills": [
    1
   ],
   "rings": [
+   15,
    15
   ],
   "shadow": 0,

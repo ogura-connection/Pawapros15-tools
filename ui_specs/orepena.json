@@ -7974,11 +7974,11 @@
      "sprites": [
       "3f"
      ],
-     "text": "Wild Pitches",
-     "style": "o2_f61b_r1f_s7_c2",
-     "font": "dc9g1b10",
-     "left": -8,
-     "baseline": 20
+     "text": "WP",
+     "style": "o2_f61b_r11ff_s7_c2",
+     "font": "dc15g2b10",
+     "left": 9,
+     "baseline": 22
     },
     {
      "from": [
@@ -8698,7 +8698,7 @@
       "20"
      ],
      "text": "Votes",
-     "style": "o2_f1_rff_s0_c2",
+     "style": "o2_f1_rf_s0_c2",
      "font": "dc11g2b10",
      "left": 3,
      "baseline": 18
@@ -9038,11 +9038,11 @@
      "sprites": [
       "31"
      ],
-     "text": "Rookie Race",
+     "text": "Rookie",
      "style": "o2_f4bb_rbbff_s1_c2",
-     "font": "ds18",
-     "left": 17,
-     "baseline": 33
+     "font": "ds26",
+     "left": -4,
+     "baseline": 37
     },
     {
      "from": [
@@ -9055,7 +9055,11 @@
      "sprites": [
       "31"
      ],
-     "empty": true
+     "text": "Race",
+     "style": "o2_f4bb_rbbff_s1_c2",
+     "font": "ds26",
+     "left": -30,
+     "baseline": 37
     },
     {
      "from": [
@@ -9321,7 +9325,7 @@
       "38"
      ],
      "text": "AVG",
-     "style": "o2_f1_rff_s0_c2",
+     "style": "o2_f1_rf_s0_c2",
      "font": "dc12g2b10",
      "left": 6,
      "baseline": 18
@@ -9338,9 +9342,9 @@
       "39"
      ],
      "text": "HR",
-     "style": "o2_f1_rff_s0_c2",
+     "style": "o2_f1_rf_s0_c2",
      "font": "dc12g2b10",
-     "left": 2,
+     "left": 3,
      "baseline": 18
     },
     {
@@ -9355,9 +9359,9 @@
       "3a"
      ],
      "text": "RBI",
-     "style": "o2_f1_rff_s0_c2",
+     "style": "o2_f1_rf_s0_c2",
      "font": "dc12g2b10",
-     "left": 8,
+     "left": 10,
      "baseline": 18
     },
     {
@@ -9372,9 +9376,9 @@
       "3b"
      ],
      "text": "ERA",
-     "style": "o2_f1_rff_s0_c2",
+     "style": "o2_f1_rf_s0_c2",
      "font": "dc11g2b10",
-     "left": 0,
+     "left": 2,
      "baseline": 18
     },
     {
@@ -9389,9 +9393,9 @@
       "3c"
      ],
      "text": "W",
-     "style": "o2_f1_rff_s0_c2",
+     "style": "o2_f1_rf_s0_c2",
      "font": "dc12g2b10",
-     "left": 6,
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9406,9 +9410,9 @@
       "3d"
      ],
      "text": "L",
-     "style": "o2_f1_rff_s0_c2",
+     "style": "o2_f1_rf_s0_c2",
      "font": "dc12g2b10",
-     "left": 7,
+     "left": 8,
      "baseline": 18
     }
    ],
@@ -9560,8 +9564,8 @@
      ],
      "text": "Standings",
      "style": "o2_f3_r88ee_s0_c2",
-     "font": "dc16g2b10",
-     "left": -1,
+     "font": "dc17g2b10",
+     "left": 1,
      "baseline": 29
     },
     {
@@ -9576,7 +9580,7 @@
       "0d"
      ],
      "text": "Yr",
-     "style": "o2_ff_r44_s0_c2",
+     "style": "o2_ff_r4_s0_c2",
      "font": "dc14g2b10",
      "left": 0,
      "baseline": 20
@@ -9593,10 +9597,10 @@
       "0e"
      ],
      "text": "Mo",
-     "style": "o2_ff_r44_s0_c2",
-     "font": "dc11g2b10",
+     "style": "o2_ff_r4_s0_c2",
+     "font": "dc14g2b10",
      "left": 1,
-     "baseline": 18
+     "baseline": 20
     },
     {
      "from": [
@@ -9610,7 +9614,7 @@
       "0f"
      ],
      "text": "Day",
-     "style": "o2_ff_r44_s0_c2",
+     "style": "o2_ff_r4_s0_c2",
      "font": "dc11g2b10",
      "left": 1,
      "baseline": 18
@@ -9627,8 +9631,8 @@
       "10"
      ],
      "text": "Now",
-     "style": "o2_ff_r44_s0_c2",
-     "font": "dc13g2b10",
+     "style": "o2_ff_r4_s0_c2",
+     "font": "dc14g2b10",
      "left": 2,
      "baseline": 20
     },
