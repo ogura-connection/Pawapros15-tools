@@ -2576,9 +2576,9 @@
      ],
      "text": "Hometown",
      "style": "mycard48",
-     "font": "ttf:din:11:0:1:0.2",
-     "left": -4,
-     "baseline": 14
+     "font": "ttf:rounded:10:0:0.85:0",
+     "left": -7,
+     "baseline": 13
     },
     {
      "from": [
@@ -2593,9 +2593,9 @@
      ],
      "text": "Background",
      "style": "mycard40",
-     "font": "ttf:din:11:0:1:0.2",
-     "left": -12,
-     "baseline": 15
+     "font": "ttf:rounded:10:0:0.85:0",
+     "left": -15,
+     "baseline": 12
     },
     {
      "from": [
@@ -2610,9 +2610,9 @@
      ],
      "text": "Birthday",
      "style": "mycard64",
-     "font": "ttf:din:11:0:1:0.2",
+     "font": "ttf:rounded:10:0:0.85:0",
      "left": 0,
-     "baseline": 15
+     "baseline": 12
     },
     {
      "from": [
@@ -2627,9 +2627,9 @@
      ],
      "text": "Handedness",
      "style": "mycard48",
-     "font": "ttf:din:11:0:1:0.2",
-     "left": -8,
-     "baseline": 14
+     "font": "ttf:rounded:10:0:0.85:0",
+     "left": -12,
+     "baseline": 13
     },
     {
      "from": [
@@ -2644,9 +2644,9 @@
      ],
      "text": "Position",
      "style": "mycard64",
-     "font": "ttf:din:11:0:1:0.2",
+     "font": "ttf:rounded:10:0:0.85:0",
      "left": 0,
-     "baseline": 14
+     "baseline": 13
     },
     {
      "from": [
@@ -2661,9 +2661,9 @@
      ],
      "text": "Form",
      "style": "mycard64",
-     "font": "ttf:din:11:0:1:0.2",
+     "font": "ttf:rounded:10:0:0.85:0",
      "left": 0,
-     "baseline": 14
+     "baseline": 13
     },
     {
      "from": [
@@ -3128,5 +3128,69 @@
    ]
   }
  ],
- "paint": []
+ "paint": [
+  {
+   "bank": "y3_mym",
+   "page": 0,
+   "rect": [
+    8,
+    10,
+    112,
+    32
+   ],
+   "text": ".",
+   "font": "ttf:rounded:6:0:1:0",
+   "ramp": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+   ]
+  },
+  {
+   "bank": "y3_mym",
+   "page": 0,
+   "rect": [
+    13,
+    15,
+    63,
+    26
+   ],
+   "text": "Profile",
+   "font": "ttf:rounded:13:0.15:0.9:0.25",
+   "ramp": [
+    9,
+    9,
+    9,
+    2,
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "bank": "y3_mym",
+   "page": 3,
+   "rect": [
+    4,
+    62,
+    68,
+    120
+   ],
+   "text": "Photo\nHere",
+   "font": "ttf:rounded:14:0:0.9:0.1",
+   "ramp": [
+    15,
+    15,
+    15,
+    12,
+    11,
+    11,
+    11
+   ]
+  }
+ ]
 }

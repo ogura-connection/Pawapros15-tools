@@ -87,9 +87,9 @@ def cardplate(width, plate=1, core=15, light=5, height=16, thresh=3):
     (index `core`) centred on it and a one-pixel `light` shadow below and to the right of them."""
     def style(ink, base):
         h, w = ink.shape
-        bw, bh = max(width, w + 6), max(height, h + 2)
+        bw, bh = max(width, w + 4), max(height, h + 2)
         x, y = (bw - w) // 2, max((bh - base) // 2, 0)
-        bh = max(bh, y + h + 1)
+        bh = max(bh, y + h)
         m = np.zeros((bh, bw), bool)
         m[y:y + h, x:x + w] = ink >= thresh
         out = np.full((bh, bw), plate, np.uint8)
