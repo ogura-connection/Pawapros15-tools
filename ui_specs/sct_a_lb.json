@@ -1,0 +1,181 @@
+{
+ "arc": "sct_a_lb.arc",
+ "repack": [
+  {
+   "bank": "z4_le_0",
+   "palette": 0,
+   "style": "a4_lb_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     0,
+     0,
+     56,
+     88,
+     112
+    ],
+    [
+     1,
+     0,
+     0,
+     48,
+     24
+    ],
+    [
+     1,
+     0,
+     72,
+     64,
+     96
+    ],
+    [
+     1,
+     0,
+     48,
+     64,
+     72
+    ],
+    [
+     1,
+     0,
+     24,
+     112,
+     48
+    ],
+    [
+     1,
+     48,
+     0,
+     128,
+     24
+    ],
+    [
+     0,
+     88,
+     56,
+     128,
+     112
+    ],
+    [
+     1,
+     64,
+     48,
+     128,
+     96
+    ],
+    [
+     1,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      56
+     ],
+     "text": "Graduation Album",
+     "style": "a4_lb_title~0_128",
+     "font": "ttf:rounded:19:0.0:0.9:0.5",
+     "baseline": 38,
+     "left": 1
+    },
+    {
+     "from": [
+      0,
+      0,
+      56,
+      88,
+      112
+     ],
+     "text": "Graduation Album",
+     "style": "a4_lb_title~128_4096",
+     "font": "ttf:rounded:19:0.0:0.9:0.5",
+     "baseline": 38,
+     "left": 1
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      48,
+      24
+     ],
+     "text": "Name",
+     "style": "a4_lb_head",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "Grad Year",
+     "style": "a4_lb_head",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      64,
+      72
+     ],
+     "text": "Went To",
+     "style": "a4_lb_head",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      112,
+      48
+     ],
+     "text": "Records",
+     "style": "a4_lb_head",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      48,
+      0,
+      128,
+      24
+     ],
+     "text": "Class Year",
+     "style": "a4_lb_head",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 20
+    }
+   ],
+   "name": "album",
+   "split": true
+  }
+ ]
+}
