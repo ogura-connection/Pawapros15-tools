@@ -445,6 +445,12 @@ BLOCK_SCRIPTS["gdt_pn.rel"] = {"engine": "ore", "section": 5, "region": (1240, 7
                                "islands": (), "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C, 0x3F), "max_op": 0x49,
                                "line": 16, "marks": {0x01: "L", 0x06: "B", 0x07: "B"}, "dead": 3,
                                "annex_section": 5, "annex_from": 2168, "annex_magic": (0x504E, 0x4558)}
+# koukai.rel (a My Life module: it imports ore_work.rel and orepena.rel) holds a script of the same kind at the
+# end of its data: 32 labels in a table at sec5+112, nothing else points into it. Third annex, "KKEX".
+BLOCK_SCRIPTS["koukai.rel"] = {"engine": "ore", "section": 5, "region": (1328, 8672), "labels": (112, 240),
+                               "islands": (), "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C, 0x3F), "max_op": 0x49,
+                               "line": 16, "marks": {0x01: "L", 0x06: "B", 0x07: "B"}, "dead": 3,
+                               "annex_section": 5, "annex_from": 2168, "annex_magic": (0x4B4B, 0x4558)}
 
 
 class OreScript(BlockScript):
