@@ -1,0 +1,855 @@
+{
+ "arc": "sn_abiup.arc",
+ "repack": [
+  {
+   "bank": "z3_upp_0",
+   "palette": 42,
+   "style": "e_btn",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 0,
+   "areas": [
+    [
+     0,
+     80,
+     0,
+     96,
+     32
+    ],
+    [
+     0,
+     48,
+     32,
+     128,
+     64
+    ],
+    [
+     0,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      104,
+      32,
+      128,
+      64
+     ],
+     "text": "Sub-Pos",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      32,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      32,
+      64,
+      56,
+      96
+     ],
+     "text": "C",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      56,
+      64,
+      80,
+      96
+     ],
+     "text": "1B",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      80,
+      64,
+      104,
+      96
+     ],
+     "text": "2B",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      104,
+      64,
+      128,
+      96
+     ],
+     "text": "3B",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      24,
+      128
+     ],
+     "text": "SS",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      24,
+      96,
+      48,
+      128
+     ],
+     "text": "OF",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      4,
+      88,
+      32,
+      128,
+      64
+     ],
+     "text": "Original",
+     "style": "e_btn",
+     "font": "ttf:narrow:11:0.0:1.0:0.12",
+     "left": 2,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      0,
+      64,
+      16,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      48,
+      32,
+      72,
+      64
+     ],
+     "text": "Trajectory",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:0.92:0.12",
+     "left": -8,
+     "baseline": 21
+    },
+    {
+     "from": [
+      0,
+      72,
+      32,
+      96,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      96,
+      32,
+      128,
+      64
+     ],
+     "text": "Contact",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": -6,
+     "baseline": 23
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      16,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      16,
+      64,
+      72,
+      96
+     ],
+     "text": "Power",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 4,
+     "baseline": 23
+    },
+    {
+     "from": [
+      0,
+      72,
+      64,
+      96,
+      96
+     ],
+     "text": "Speed",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 4,
+     "baseline": 21
+    },
+    {
+     "from": [
+      0,
+      96,
+      64,
+      120,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      120,
+      64,
+      128,
+      96
+     ],
+     "text": "Arm",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 12,
+     "baseline": 23
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      16,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      16,
+      96,
+      40,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      40,
+      96,
+      96,
+      128
+     ],
+     "text": "Fielding",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": -2,
+     "baseline": 21
+    },
+    {
+     "from": [
+      0,
+      96,
+      96,
+      128,
+      128
+     ],
+     "text": "Error Res.",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:0.92:0.12",
+     "left": 0,
+     "baseline": 23
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      40,
+      32
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      40,
+      0,
+      64,
+      32
+     ],
+     "text": "Velocity",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": -3,
+     "baseline": 21
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      88,
+      32
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      88,
+      0,
+      128,
+      32
+     ],
+     "text": "Control",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 7,
+     "baseline": 23
+    },
+    {
+     "from": [
+      1,
+      0,
+      32,
+      32,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      32,
+      32,
+      104,
+      64
+     ],
+     "text": "Stamina",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 4,
+     "baseline": 23
+    },
+    {
+     "from": [
+      1,
+      48,
+      96,
+      120,
+      128
+     ],
+     "text": "Slider",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 13,
+     "baseline": 23
+    },
+    {
+     "from": [
+      1,
+      120,
+      96,
+      128,
+      128
+     ],
+     "text": "Curve",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 5,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      48,
+      32
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      48,
+      0,
+      120,
+      32
+     ],
+     "text": "Fork",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 19,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      120,
+      0,
+      128,
+      32
+     ],
+     "text": "Sinker",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 11,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      64,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      64,
+      32,
+      128,
+      64
+     ],
+     "text": "Shuuto",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 8,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      8,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      8,
+      64,
+      64,
+      96
+     ],
+     "text": "Palm",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 9,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      128,
+      96
+     ],
+     "text": "Knuckle",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 5,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      8,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      80,
+      128
+     ],
+     "text": "V-Slider",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 6,
+     "baseline": 23
+    },
+    {
+     "from": [
+      2,
+      80,
+      96,
+      128,
+      128
+     ],
+     "text": "Splitter",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 0,
+     "baseline": 21
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      8,
+      32
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      8,
+      0,
+      80,
+      32
+     ],
+     "text": "Screwball",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:0.92:0.12",
+     "left": 1,
+     "baseline": 23
+    },
+    {
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      32
+     ],
+     "text": "Slow Curve",
+     "style": "e_btn",
+     "font": "ttf:narrow:13:0.0:0.85:0.12",
+     "left": 1,
+     "baseline": 23
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      24,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      24,
+      32,
+      96,
+      64
+     ],
+     "text": "Hard Slider",
+     "style": "e_btn",
+     "font": "ttf:narrow:13:0.0:0.85:0.12",
+     "left": 2,
+     "baseline": 23
+    },
+    {
+     "from": [
+      3,
+      96,
+      32,
+      128,
+      64
+     ],
+     "text": "Changeup",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:0.85:0.12",
+     "left": 2,
+     "baseline": 21
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      40,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      40,
+      64,
+      112,
+      96
+     ],
+     "text": "Drop",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 17,
+     "baseline": 22
+    },
+    {
+     "from": [
+      3,
+      112,
+      64,
+      128,
+      96
+     ],
+     "text": "Hard Sinker",
+     "style": "e_btn",
+     "font": "ttf:narrow:12:0.0:0.85:0.12",
+     "left": 3,
+     "baseline": 23
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      56,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      56,
+      96,
+      128,
+      128
+     ],
+     "text": "Slurve",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 11,
+     "baseline": 23
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      72,
+      32
+     ],
+     "text": "Cutter",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.12",
+     "left": 12,
+     "baseline": 23
+    },
+    {
+     "from": [
+      4,
+      72,
+      0,
+      128,
+      32
+     ],
+     "text": "Circle\nChange",
+     "style": "e_btn",
+     "font": "ttf:narrow:9:0.0:1.0:0.12",
+     "left": 17,
+     "baseline": 25
+    },
+    {
+     "from": [
+      4,
+      0,
+      32,
+      16,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      16,
+      32,
+      88,
+      64
+     ],
+     "text": "Hard Shuuto",
+     "style": "e_btn",
+     "font": "ttf:narrow:12:0.0:0.85:0.12",
+     "left": 1,
+     "baseline": 22
+    },
+    {
+     "from": [
+      4,
+      16,
+      64,
+      88,
+      96
+     ],
+     "text": "Razor Shuuto",
+     "style": "e_btn",
+     "font": "ttf:narrow:11:0.0:0.85:0.12",
+     "left": 1,
+     "baseline": 22
+    },
+    {
+     "from": [
+      5,
+      0,
+      64,
+      72,
+      96
+     ],
+     "text": "Drop Curve",
+     "style": "e_btn",
+     "font": "ttf:narrow:13:0.0:0.85:0.12",
+     "left": 1,
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      32,
+      96,
+      104,
+      128
+     ],
+     "text": "Knuckle\nCurve",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 13,
+     "baseline": 28
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      72,
+      32
+     ],
+     "text": "2-Seamer",
+     "style": "e_btn",
+     "font": "ttf:narrow:14:0.0:0.92:0.12",
+     "left": 2,
+     "baseline": 22
+    },
+    {
+     "from": [
+      5,
+      0,
+      32,
+      72,
+      64
+     ],
+     "text": "Moving\nFastball",
+     "style": "e_btn",
+     "font": "ttf:narrow:10:0.0:1.0:0.12",
+     "left": 14,
+     "baseline": 27
+    }
+   ],
+   "name": "plates",
+   "gap": [
+    1,
+    1
+   ]
+  }
+ ]
+}

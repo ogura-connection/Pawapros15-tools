@@ -155,3 +155,44 @@ STYLES["d2_sy_title_bot"] = halved(STYLES["d2_sy_title"], 1, 1)
 STYLES["d2_ori_head"] = ringfill([12, 13, 14, 15], [7, 7, 2], [4, 5])             # palette 4: green to yellow letters, blue outline, white band, lilac shadow
 STYLES["d2_ori_hint"] = ringfill([11, 10, 9, 8], [2, 2], [4, 5])                  # palette 5: magenta to violet letters, white edge, lilac shadow
 STYLES["d2_ori_ask"] = ringfill([3, 3, 2, 2, 1], [7, 7, 15], [11, 12])            # palette 10: orange to yellow letters, violet outline, white band, lilac shadow
+
+# scs_grad z4_ls_0 (player directory)
+STYLES["d2_ls_title"] = ringfill([8], [2, 1, 12, 12, 9], [])                    # palette 16: white letters, brown outline, orange band
+STYLES["d2_ls_head"] = ringfill([2, 3, 4], [14, 13], [9])                      # palette 18: yellow letters, brown outline
+
+# ==== registry (keep last): the cut styles are made on demand; ui_type's loader updates RENDER only after this file is imported, so STYLES is merged here
+
+# ---- "cut" styles: a label drawn on a canvas the size of the Japanese art, and one piece of it --------------------------------
+# "cut:<style>:<W>:<H>:<ax>:<ay>:<x>:<y>:<w>:<h>": the styled art is laid on a W x H canvas (ax = left column, or c for centred;
+# ay = top row) and the w x h piece at (x, y) is returned, baseline at its foot. Every part of a Japanese label that is made
+# of several rectangles (some of them shared with other sprites) is re-pointed at its own piece, so the lettering keeps the
+# geometry of the original sprites and every sprite that shows the rectangles follows.
+def _cut(base, W, H, ax, ay, x, y, w, h):
+    def style(ink, base_row):
+        art, b = base(ink, base_row)
+        canvas = np.zeros((H, W), np.uint8)
+        ox = (W - art.shape[1]) // 2 if ax == "c" else int(ax)
+        oy = int(ay)
+        sx0, sy0 = max(-ox, 0), max(-oy, 0)
+        dx0, dy0 = max(ox, 0), max(oy, 0)
+        cw, ch = min(art.shape[1] - sx0, W - dx0), min(art.shape[0] - sy0, H - dy0)
+        if cw > 0 and ch > 0:
+            canvas[dy0:dy0 + ch, dx0:dx0 + cw] = art[sy0:sy0 + ch, sx0:sx0 + cw]
+        return canvas[y:y + h, x:x + w], h
+    return style
+
+
+class _Styles(dict):
+    def __missing__(self, name):
+        if name.startswith("cut:"):
+            a = name.split(":")
+            st = _cut(self[a[1]], int(a[2]), int(a[3]), a[4], a[5], int(a[6]), int(a[7]), int(a[8]), int(a[9]))
+            self[name] = st
+            return st
+        raise KeyError(name)
+
+
+
+
+if not isinstance(ui_type.RENDER, _Styles):
+    ui_type.RENDER = _Styles(dict(ui_type.RENDER, **STYLES))

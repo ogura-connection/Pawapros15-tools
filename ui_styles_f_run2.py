@@ -72,3 +72,7 @@ def win(style, c0, c1):
 for _name in ("f_teu_blue", "f_teu_pink", "f_teu_orange", "f_teu_steel", "f_teu_green"):
     for _c in ((0, 128), (128, 256), (0, 4096), (128, 4096)):
         STYLES["%s~%d_%d" % (_name, _c[0], _c[1])] = win(STYLES[_name], *_c)
+
+# scs_g_ed.arc i5_h (4-bit pages, palette 0): the draft team names: chrome blue letters (dark, light in the middle, dark),
+# a pale edge, a navy outline three pixels wide
+STYLES["f_g_team"] = ringfill([4, 5, 7, 9, 0xa, 0xa, 9, 8, 6, 4], [0xe, 1, 1, 1], edge=2)

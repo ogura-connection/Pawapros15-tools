@@ -1,0 +1,328 @@
+{
+ "arc": "scs_grad.arc",
+ "repack": [
+  {
+   "bank": "z4_ls_0",
+   "palette": 16,
+   "style": "d2_ls_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     0,
+     0,
+     48,
+     128,
+     96
+    ],
+    [
+     0,
+     0,
+     96,
+     40,
+     120
+    ],
+    [
+     0,
+     40,
+     96,
+     80,
+     120
+    ],
+    [
+     1,
+     32,
+     72,
+     80,
+     88
+    ],
+    [
+     1,
+     112,
+     24,
+     128,
+     32
+    ],
+    [
+     1,
+     112,
+     32,
+     128,
+     40
+    ],
+    [
+     1,
+     112,
+     40,
+     128,
+     48
+    ],
+    [
+     1,
+     32,
+     48,
+     96,
+     72
+    ],
+    [
+     0,
+     80,
+     96,
+     112,
+     120
+    ],
+    [
+     0,
+     112,
+     96,
+     120,
+     112
+    ],
+    [
+     0,
+     112,
+     112,
+     120,
+     120
+    ],
+    [
+     1,
+     32,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     32,
+     24,
+     112,
+     48
+    ],
+    [
+     0,
+     80,
+     16,
+     96,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      48
+     ],
+     "text": "Pro Player Directory",
+     "style": "cut:d2_ls_title:296:48:c:6:0:0:128:48",
+     "font": "d:rounded:24:0.85:0.45:0",
+     "baseline": 48,
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      128,
+      96
+     ],
+     "text": "Pro Player Directory",
+     "style": "cut:d2_ls_title:296:48:c:6:128:0:128:48",
+     "font": "d:rounded:24:0.85:0.45:0",
+     "baseline": 48,
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      40,
+      120
+     ],
+     "text": "Pro Player Directory",
+     "style": "cut:d2_ls_title:296:48:c:6:256:0:40:24",
+     "font": "d:rounded:24:0.85:0.45:0",
+     "baseline": 24,
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      40,
+      96,
+      80,
+      120
+     ],
+     "text": "Pro Player Directory",
+     "style": "cut:d2_ls_title:296:48:c:6:256:24:40:24",
+     "font": "d:rounded:24:0.85:0.45:0",
+     "baseline": 24,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      32,
+      72,
+      80,
+      88
+     ],
+     "text": "Player",
+     "style": "cut:d2_ls_head:48:24:c:1:0:0:48:16",
+     "font": "d:rounded:13:0.78:0.4:0",
+     "baseline": 16,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      112,
+      24,
+      128,
+      32
+     ],
+     "text": "Player",
+     "style": "cut:d2_ls_head:48:24:c:1:0:16:16:8",
+     "font": "d:rounded:13:0.78:0.4:0",
+     "baseline": 8,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      112,
+      32,
+      128,
+      40
+     ],
+     "text": "Player",
+     "style": "cut:d2_ls_head:48:24:c:1:16:16:16:8",
+     "font": "d:rounded:13:0.78:0.4:0",
+     "baseline": 8,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      112,
+      40,
+      128,
+      48
+     ],
+     "text": "Player",
+     "style": "cut:d2_ls_head:48:24:c:1:32:16:16:8",
+     "font": "d:rounded:13:0.78:0.4:0",
+     "baseline": 8,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      32,
+      48,
+      96,
+      72
+     ],
+     "text": "Surgery",
+     "style": "cut:d2_ls_head:64:24:c:0:0:0:64:24",
+     "font": "d:rounded:14:0.78:0.4:0",
+     "baseline": 24,
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      80,
+      96,
+      112,
+      120
+     ],
+     "text": "Girl",
+     "style": "cut:d2_ls_head:40:24:c:3:0:0:32:24",
+     "font": "d:rounded:14:1.0:0.4:0",
+     "baseline": 24,
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      112,
+      96,
+      120,
+      112
+     ],
+     "text": "Girl",
+     "style": "cut:d2_ls_head:40:24:c:3:32:0:8:16",
+     "font": "d:rounded:14:1.0:0.4:0",
+     "baseline": 16,
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      112,
+      112,
+      120,
+      120
+     ],
+     "text": "Girl",
+     "style": "cut:d2_ls_head:40:24:c:3:32:16:8:8",
+     "font": "d:rounded:14:1.0:0.4:0",
+     "baseline": 8,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      32,
+      0,
+      128,
+      24
+     ],
+     "text": "Best Finish",
+     "style": "cut:d2_ls_head:96:24:c:3:0:0:96:24",
+     "font": "d:rounded:14:0.85:0.4:0",
+     "baseline": 24,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      32,
+      24,
+      112,
+      48
+     ],
+     "text": "Team",
+     "style": "cut:d2_ls_head:80:24:c:3:0:0:80:24",
+     "font": "d:rounded:14:1.0:0.4:0",
+     "baseline": 24,
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      80,
+      16,
+      96,
+      32
+     ],
+     "empty": true
+    }
+   ],
+   "name": "ls_words"
+  }
+ ]
+}

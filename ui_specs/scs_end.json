@@ -133,7 +133,7 @@
      "sprite": "15",
      "text": "Giants",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 10,
      "pages": [
       8,
@@ -150,7 +150,7 @@
      "sprite": "16",
      "text": "Dragons",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 6,
      "pages": [
       8,
@@ -167,8 +167,8 @@
      "sprite": "17",
      "text": "Carp",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 8,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       8,
       9,
@@ -184,8 +184,8 @@
      "sprite": "18",
      "text": "BayStars",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 9,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 10,
      "pages": [
       8,
       9,
@@ -201,7 +201,7 @@
      "sprite": "19",
      "text": "Tigers",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       8,
@@ -218,7 +218,7 @@
      "sprite": "1a",
      "text": "Eagles",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       8,
@@ -235,8 +235,8 @@
      "sprite": "1b",
      "text": "Lions",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 8,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       8,
       9,
@@ -252,8 +252,8 @@
      "sprite": "1c",
      "text": "Swallows",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 8,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       8,
       9,
@@ -269,7 +269,7 @@
      "sprite": "1d",
      "text": "Fighters",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       8,
@@ -286,8 +286,8 @@
      "sprite": "1e",
      "text": "Marines",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 8,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       8,
       9,
@@ -303,7 +303,7 @@
      "sprite": "1f",
      "text": "Buffaloes",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       8,
@@ -320,8 +320,8 @@
      "sprite": "20",
      "text": "Hawks",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 8,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       8,
       9,
@@ -337,7 +337,7 @@
      "sprite": "21",
      "text": "Powerfuls",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       8,
@@ -354,7 +354,7 @@
      "sprite": "22",
      "text": "Kaisers",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       8,
@@ -371,7 +371,7 @@
      "sprite": "23",
      "text": "Yankiis",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       8,
@@ -388,8 +388,8 @@
      "sprite": "24",
      "text": "Vulcans",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 8,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       8,
       9,
@@ -405,7 +405,7 @@
      "sprite": "25",
      "text": "Busters",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       8,
@@ -428,8 +428,8 @@
      ],
      "text": "Cathands",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 24,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 25,
      "centre_x": 60
     },
     {
@@ -462,7 +462,7 @@
      ],
      "text": "Original",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 24,
      "centre_x": 63
     },
@@ -470,8 +470,8 @@
      "sprite": "3c",
      "text": "Standard",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 9,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 10,
      "pages": [
       13,
       14,
@@ -486,8 +486,8 @@
      "sprite": "3d",
      "text": "Open",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 9,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 10,
      "pages": [
       13,
       14,
@@ -502,7 +502,7 @@
      "sprite": "3e",
      "text": "Kannushi",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 10,
      "pages": [
       13,
@@ -518,8 +518,8 @@
      "sprite": "3f",
      "text": "Crouching",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 9,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 10,
      "pages": [
       13,
       14,
@@ -534,8 +534,8 @@
      "sprite": "40",
      "text": "Pendulum",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 9,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 10,
      "pages": [
       13,
       14,
@@ -550,7 +550,7 @@
      "sprite": "41",
      "text": "Buster",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       13,
@@ -566,7 +566,7 @@
      "sprite": "42",
      "text": "1-Leg",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
      "baseline": 10,
      "pages": [
       13,
@@ -582,8 +582,8 @@
      "sprite": "43",
      "text": "Original",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 8,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       13,
       14,
@@ -598,8 +598,8 @@
      "sprite": "44",
      "text": "Overhand",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 9,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 10,
      "pages": [
       13,
       14,
@@ -614,8 +614,10 @@
      "sprite": "45",
      "text": "3-Quarters",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 10,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
      "pages": [
       13,
       14,
@@ -630,8 +632,8 @@
      "sprite": "46",
      "text": "Sidearm",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 7,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 8,
      "pages": [
       13,
       14,
@@ -646,8 +648,10 @@
      "sprite": "47",
      "text": "Submarine",
      "style": "a_name",
-     "font": "ttf:rounded:17:0.0:1.0:0.5",
-     "baseline": 9,
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
      "pages": [
       13,
       14,
@@ -685,7 +689,7 @@
      ],
      "text": "Starter",
      "style": "a_name1",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
      "baseline": 20,
      "centre_x": 26,
      "sprites": [
@@ -702,7 +706,7 @@
      ],
      "text": "Swing Man",
      "style": "a_name1",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
      "baseline": 20,
      "centre_x": 47,
      "sprites": [
@@ -736,8 +740,8 @@
      ],
      "text": "Closer",
      "style": "a_name1",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 21,
      "centre_x": 25,
      "sprites": [
       "10"
@@ -757,7 +761,8 @@
      ]
     }
    ],
-   "name": "m4_stt01"
+   "name": "m4_stt01",
+   "share": true
   },
   {
    "bank": "m4_stt00",
@@ -1358,7 +1363,8 @@
      "centre_x": 8
     }
    ],
-   "name": "m4_stt00"
+   "name": "m4_stt00",
+   "share": true
   },
   {
    "bank": "y5_sss_0",
@@ -1961,7 +1967,8 @@
      ]
     }
    ],
-   "name": "y5_sss_0"
+   "name": "y5_sss_0",
+   "share": true
   },
   {
    "bank": "y5_sss_1",
@@ -2768,7 +2775,8 @@
      "left": 18
     }
    ],
-   "name": "y5_sss_1"
+   "name": "y5_sss_1",
+   "share": true
   },
   {
    "bank": "z3_sav_0",
@@ -2888,10 +2896,10 @@
      "sprite": "00",
      "text": "Register Original Player",
      "style": "a_z3title",
-     "font": "ttf:rounded:15:0.0:1.0:0.6",
+     "font": "ttf:rounded:19:0.0:0.88:0.6",
      "slices": true,
-     "slice_width": 128,
-     "dy": 2,
+     "slice_width": 72,
+     "dy": 3,
      "pages": [
       0,
       4
@@ -2904,8 +2912,8 @@
      "sprite": "05",
      "text": "Quit",
      "style": "a_z3end",
-     "font": "ttf:rounded:9:0.0:1.0:0.5",
-     "baseline": 37,
+     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "baseline": 39,
      "pages": [
       1
      ],
@@ -2917,8 +2925,8 @@
      "sprite": "07",
      "text": "Register",
      "style": "a_z3reg",
-     "font": "ttf:rounded:9:0.0:1.0:0.5",
-     "baseline": 37,
+     "font": "ttf:rounded:12:0.0:0.88:0.5",
+     "baseline": 38,
      "pages": [
       1
      ],
@@ -2930,8 +2938,8 @@
      "sprite": "09",
      "text": "Pro Players",
      "style": "a_z3pro",
-     "font": "ttf:rounded:9:0.0:1.0:0.5",
-     "baseline": 1,
+     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "baseline": 3,
      "pages": [
       1
      ],
@@ -2943,8 +2951,8 @@
      "sprite": "0a",
      "text": "Pro Players",
      "style": "a_z3pro",
-     "font": "ttf:rounded:9:0.0:1.0:0.5",
-     "baseline": 2,
+     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "baseline": 4,
      "pages": [
       1
      ],
@@ -2956,8 +2964,8 @@
      "sprite": "0e",
      "text": "View Password",
      "style": "a_z3pw",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
-     "baseline": 17,
+     "font": "ttf:rounded:10:0.0:0.94:0.3",
+     "baseline": 18,
      "pages": [
       6
      ],
@@ -2969,8 +2977,8 @@
      "sprite": "2f",
      "text": "Ability Details",
      "style": "a_z3det",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
-     "baseline": 16,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 18,
      "pages": [
       3,
       5
@@ -2983,8 +2991,8 @@
      "sprite": "26",
      "text": "New Player",
      "style": "a_z3new",
-     "font": "ttf:rounded:9:0.0:1.0:0.5",
-     "baseline": -10,
+     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "baseline": -8,
      "pages": [
       5
      ],
@@ -2998,7 +3006,7 @@
      "sprite": "27",
      "text": "Player to Delete",
      "style": "a_z3del",
-     "font": "ttf:rounded:9:0.0:1.0:0.5",
+     "font": "ttf:rounded:11:0.0:0.94:0.5",
      "baseline": -10,
      "pages": [
       5
@@ -3023,7 +3031,8 @@
      "valign": "centre"
     }
    ],
-   "name": "z3_sav_0"
+   "name": "z3_sav_0",
+   "share": true
   }
  ]
 }

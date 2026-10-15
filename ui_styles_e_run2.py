@@ -58,3 +58,7 @@ ui_type.FONTS["e_sop_title"] = _sop_title
 _big = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [3, 1])
 _small = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [3])
 STYLES["e_sop_title"] = lambda ink, base: (_big if ink.shape[0] > 30 else _small)(ink, base)      # one ring on the subtitle
+
+# sn_abiup.arc z3_upp_0 (palettes 42-47: teal, pink, blue, yellow, green plates; the index ramp is the same in all of them):
+# white letters shading to the plate colour at the foot, in a dark ring and a mid ring (8 = darkest, a = mid)
+STYLES["e_btn"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [8])
