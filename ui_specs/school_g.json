@@ -660,12 +660,40 @@
      0,
      0,
      128,
+     48
+    ],
+    [
+     20,
+     0,
+     96,
+     128,
      128
+    ],
+    [
+     20,
+     0,
+     48,
+     72,
+     96
     ],
     [
      21,
      0,
      0,
+     128,
+     48
+    ],
+    [
+     21,
+     0,
+     48,
+     104,
+     80
+    ],
+    [
+     21,
+     120,
+     48,
      128,
      80
     ],
@@ -679,9 +707,23 @@
     [
      21,
      80,
-     80,
+     96,
      128,
      128
+    ],
+    [
+     21,
+     80,
+     80,
+     104,
+     96
+    ],
+    [
+     21,
+     120,
+     80,
+     128,
+     96
     ],
     [
      21,
@@ -717,29 +759,29 @@
      "sprite": "30",
      "text": "Batting",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:26:0.0:0.85:0.3",
-     "baseline": 214
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 209
     },
     {
      "sprite": "31",
      "text": "Pitching",
      "style": "e4_sg_head",
-     "font": "ttf:narrow:26:0.0:0.85:0.3",
-     "baseline": 214
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 209
     },
     {
      "sprite": "32",
      "text": "Running",
      "style": "e4_sg_head",
-     "font": "ttf:narrow:26:0.0:0.85:0.3",
-     "baseline": 214
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 209
     },
     {
      "sprite": "33",
      "text": "Fielding",
      "style": "e4_sg_head",
-     "font": "ttf:narrow:26:0.0:0.92:0.3",
-     "baseline": 214
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 209
     },
     {
      "from": [
@@ -751,8 +793,8 @@
      ],
      "text": "Your",
      "style": "e4_sg_small",
-     "font": "ttf:rounded:18:0.0:1.0:0.3",
-     "baseline": 25
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 24
     },
     {
      "from": [
@@ -764,8 +806,8 @@
      ],
      "text": "Score",
      "style": "e4_sg_small",
-     "font": "ttf:rounded:18:0.0:0.85:0.3",
-     "baseline": 25
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 24
     },
     {
      "from": [
@@ -777,8 +819,8 @@
      ],
      "text": "pts",
      "style": "e4_sg_small",
-     "font": "ttf:narrow:18:0.0:0.92:0.3",
-     "baseline": 25
+     "font": "ttf:rounded:15:0.0:0.92:0.3",
+     "baseline": 24
     },
     {
      "from": [
@@ -790,8 +832,8 @@
      ],
      "text": "Average",
      "style": "e4_sg_small",
-     "font": "ttf:narrow:18:0.0:0.92:0.3",
-     "baseline": 24
+     "font": "ttf:rounded:15:0.0:0.92:0.3",
+     "baseline": 23
     }
    ],
    "name": "headings and score panel"
