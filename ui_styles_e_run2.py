@@ -7,6 +7,7 @@ from ui_type import grow, shift
 
 STYLES = {}
 ui_type.TTF.setdefault("italic", ("/System/Library/Fonts/Supplemental/Arial Italic.ttf", 0))
+ui_type.TTF.setdefault("narrow-italic", ("/System/Library/Fonts/Supplemental/Arial Narrow Italic.ttf", 0))
 ui_type.TTF.setdefault("chancery", ("/System/Library/Fonts/Supplemental/Apple Chancery.ttf", 0))
 
 # scs_b_ed.arc v4_go_16ji, the ending title: white calligraphic letters in a grey and a dark ring

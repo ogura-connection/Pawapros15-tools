@@ -12,3 +12,31 @@ STYLES["f_st_yel"] = ringfill([0xf, 0xf, 0xe, 0xe, 0xd, 0xd], [6, 6, 1])
 # h3_st_0 Bonus (palette 15): white to pink letters, deep blue outline, blue shadow
 STYLES["f_st_pink"] = ringfill([7, 7, 8, 9, 0xa, 0xb], [1, 1], [3, 4])
 STYLES["f_st_yel2"] = ringfill([0xf, 0xf, 0xe, 0xe, 0xd, 0xd], [6, 6])
+
+
+def stacked(inner, overlap=2):
+    """The same style applied to every line of a block on its own (typeset stacks lines with clear rows between them): each
+    line gets its own gradient and rings; the lines are centred on each other and overlap by `overlap` rows (the rings)."""
+    def style(ink, base):
+        rows = np.nonzero(ink.any(1))[0]
+        cuts = [0] + [k for k in range(1, len(rows)) if rows[k] != rows[k - 1] + 1]
+        blocks = []
+        for a, b in zip(cuts, cuts[1:] + [len(rows)]):
+            r0, r1 = rows[a], rows[b - 1] + 1
+            art, bs = inner(ink[r0:r1], r1 - r0)
+            blocks.append((art, bs))
+        W = max(a.shape[1] for a, _ in blocks)
+        H = sum(a.shape[0] for a, _ in blocks) - overlap * (len(blocks) - 1)
+        out = np.zeros((H, W), np.uint8)
+        y = 0
+        for art, bs in blocks:
+            x = (W - art.shape[1]) // 2
+            area = out[y:y + art.shape[0], x:x + art.shape[1]]
+            area[art > 0] = art[art > 0]
+            y += art.shape[0] - overlap
+        return out, H - (blocks[-1][0].shape[0] - blocks[-1][1])
+    return style
+
+
+# h3_st_0 popups (palettes 53 pink / 54 blue, the same indices): lilac to white letters, deep blue outline, blue edge
+STYLES["f_st_flash"] = stacked(ringfill([0xb, 0x9, 0x9, 0x8, 0x7, 0x7], [1, 1, 3]))

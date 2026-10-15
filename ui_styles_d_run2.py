@@ -122,9 +122,31 @@ def dfont(face, cap, squeeze=1.0, bold=0.4, pitch=0):
 STYLES["d2_sy_title"] = ringfill([13, 12, 11, 9, 8], [2, 2, 15, 7], [4, 1])           # palette 12: orange letters, navy outline, white band
 STYLES["d2_sy_hint"] = ringfill([2], [15], [9])                                                # palette 15: blue letters, white edge, lilac shadow
 STYLES["d2_sy_label"] = ringfill([14, 13, 12, 11, 10], [1, 1], [4])                            # palette 5: yellow letters, navy outline
-STYLES["d2_sy_t11"] = ringfill([2], [15], [4, 4])                                              # palettes 26 / 22 / 23 / 25 / 24: coloured letters, white edge, blue shadow
-STYLES["d2_sy_t12"] = ringfill([2], [15], [4, 4])
-STYLES["d2_sy_t13"] = ringfill([2], [15], [4, 4])
-STYLES["d2_sy_t14"] = ringfill([3], [15], [2, 2])
-STYLES["d2_sy_t15"] = ringfill([2], [15], [3, 3])
-STYLES["d2_sy_nodata"] = ringfill([4, 3], [15], [7, 7])                                        # palette 14: grey-blue letters, white edge
+STYLES["d2_sy_t11"] = ringfill([2], [15], [4])                                              # palettes 26 / 22 / 23 / 25 / 24: coloured letters, white edge, blue shadow
+STYLES["d2_sy_t12"] = ringfill([2], [15], [4])
+STYLES["d2_sy_t13"] = ringfill([2], [15], [4])
+STYLES["d2_sy_t14"] = ringfill([3], [15], [2])
+STYLES["d2_sy_t15"] = ringfill([2], [15], [3])
+STYLES["d2_sy_nodata"] = ringfill([4, 3], [15], [7])                                        # palette 14: grey-blue letters, white edge
+
+
+def halved(style, part, offset, rows=16, total=32):
+    """One horizontal band of a styled label: the art is laid on a canvas `total` rows high (`offset` empty rows above it) and
+    band `part` (0 = top) of `rows` rows is returned, with the baseline at the band's foot. A label drawn in two parts that
+    stand one above the other (the Japanese art is 32 rows high on two 16-row rectangles)."""
+    def f(ink, base):
+        art, b = style(ink, base)
+        canvas = np.zeros((total, art.shape[1]), np.uint8)
+        h = min(art.shape[0], total - offset)
+        canvas[offset:offset + h] = art[:h]
+        return canvas[part * rows:(part + 1) * rows], rows
+    return f
+
+
+def title_halves(name, style, offset):
+    STYLES[name + "_top"] = halved(style, 0, offset)
+    STYLES[name + "_bot"] = halved(style, 1, offset)
+
+# the title of scs_intr: 29 rows of art, 1 empty row above it
+STYLES["d2_sy_title_top"] = halved(STYLES["d2_sy_title"], 0, 1)
+STYLES["d2_sy_title_bot"] = halved(STYLES["d2_sy_title"], 1, 1)

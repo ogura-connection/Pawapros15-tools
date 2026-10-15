@@ -28,38 +28,55 @@
      8,
      24,
      40
-    ],
-    [
-     11,
-     56,
-     0,
-     128,
-     48
-    ],
-    [
-     11,
-     80,
-     80,
-     128,
-     128
-    ],
-    [
-     10,
-     96,
-     8,
-     128,
-     40
     ]
    ],
    "labels": [
     {
-     "sprite": "01",
+     "from": [
+      2,
+      0,
+      112,
+      128,
+      128
+     ],
      "text": "Characters",
-     "style": "d2_sy_title",
+     "style": "d2_sy_title_top",
      "font": "d:rounded:17:0.95:0.6:0",
-     "slices": true,
-     "slice_width": 48,
-     "dy": 1
+     "baseline": 16,
+     "left": 0,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      112,
+      128,
+      128
+     ],
+     "text": "Characters",
+     "style": "d2_sy_title_bot",
+     "font": "d:rounded:17:0.95:0.6:0",
+     "baseline": 16,
+     "left": 0,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      10,
+      0,
+      8,
+      24,
+      40
+     ],
+     "empty": true,
+     "sprites": [
+      "01"
+     ]
     }
    ],
    "name": "title"
@@ -91,7 +108,7 @@
      "sprite": "05",
      "text": "L/R: Show by scenario",
      "style": "d2_sy_hint",
-     "font": "d:rounded:9:0.9:0.4:0",
+     "font": "d:rounded:9:0.9:0.3:0",
      "slices": true,
      "slice_width": 128,
      "dy": 1
@@ -125,7 +142,7 @@
      ],
      "text": "Name|Works|Profile",
      "style": "d2_sy_label",
-     "font": "d:rounded:11:0.8:0.5:20",
+     "font": "d:rounded:11:0.8:0.3:20",
      "baseline": 56,
      "align": "left",
      "left": 2
@@ -153,51 +170,51 @@
      "sprite": "11",
      "text": "Common",
      "style": "d2_sy_t11",
-     "font": "d:rounded:9:0.9:0.55:0",
+     "font": "d:rounded:10:0.8:0.3:0",
      "palettes": [
       26
      ],
-     "baseline": 32
+     "baseline": 33
     },
     {
      "sprite": "12",
      "text": "Pawafuru",
      "style": "d2_sy_t12",
-     "font": "d:rounded:9:0.85:0.55:0",
+     "font": "d:rounded:10:0.8:0.3:0",
      "palettes": [
       22
      ],
-     "baseline": 32
+     "baseline": 33
     },
     {
      "sprite": "13",
      "text": "Teio",
      "style": "d2_sy_t13",
-     "font": "d:rounded:9:1.0:0.55:0",
+     "font": "d:rounded:10:1.0:0.3:0",
      "palettes": [
       23
      ],
-     "baseline": 32
+     "baseline": 33
     },
     {
      "sprite": "14",
      "text": "Tachibana",
      "style": "d2_sy_t14",
-     "font": "d:rounded:9:0.75:0.55:0",
+     "font": "d:rounded:10:0.7:0.3:0",
      "palettes": [
       25
      ],
-     "baseline": 32
+     "baseline": 33
     },
     {
      "sprite": "15",
      "text": "Haikyo",
      "style": "d2_sy_t15",
-     "font": "d:rounded:9:1.0:0.55:0",
+     "font": "d:rounded:10:1.0:0.3:0",
      "palettes": [
       24
      ],
-     "baseline": 32
+     "baseline": 33
     }
    ],
    "name": "tags"
@@ -229,7 +246,7 @@
      "sprite": "0f",
      "text": "No data.",
      "style": "d2_sy_nodata",
-     "font": "d:rounded:14:1.0:0.5:0",
+     "font": "d:rounded:16:1.0:0.4:0",
      "pages": [
       6,
       7

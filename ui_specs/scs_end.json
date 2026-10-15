@@ -3,11 +3,39 @@
  "repack": [
   {
    "bank": "m4_stt01",
-   "palette": 27,
+   "palette": 0,
    "style": "a_name",
    "font": "ttf:rounded:14:0.0:1.0:0.25",
    "under": 3,
    "areas": [
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     6,
+     0,
+     32,
+     16,
+     128
+    ],
+    [
+     6,
+     120,
+     80,
+     128,
+     128
+    ],
     [
      8,
      0,
@@ -70,342 +98,7 @@
      64,
      128,
      128
-    ]
-   ],
-   "labels": [
-    {
-     "sprite": "15",
-     "text": "Giants",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 9,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "16",
-     "text": "Dragons",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 6,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "17",
-     "text": "Carp",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "18",
-     "text": "BayStars",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "19",
-     "text": "Tigers",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "1a",
-     "text": "Eagles",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "1b",
-     "text": "Lions",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "1c",
-     "text": "Swallows",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "1d",
-     "text": "Fighters",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 7,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "1e",
-     "text": "Marines",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "1f",
-     "text": "Buffaloes",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "20",
-     "text": "Hawks",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "21",
-     "text": "Powerfuls",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "22",
-     "text": "Kaisers",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "23",
-     "text": "Yankiis",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "24",
-     "text": "Vulcans",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "25",
-     "text": "Busters",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "26",
-     "text": "Cathands",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    },
-    {
-     "sprite": "27",
-     "text": "Original",
-     "style": "a_name",
-     "font": "ttf:rounded:16:0.0:1.0:0.5",
-     "baseline": 8,
-     "pages": [
-      8,
-      9,
-      10,
-      11,
-      12
-     ],
-     "palettes": [
-      27
-     ]
-    }
-   ],
-   "name": "teams"
-  },
-  {
-   "bank": "m4_stt01",
-   "palette": 2,
-   "style": "a_name",
-   "font": "ttf:rounded:14:0.0:1.0:0.25",
-   "under": 3,
-   "areas": [
+    ],
     [
      13,
      0,
@@ -431,17 +124,354 @@
      16,
      0,
      0,
-     64,
-     32
+     128,
+     128
     ]
    ],
    "labels": [
     {
+     "sprite": "15",
+     "text": "Giants",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 10,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Dragons",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Carp",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "BayStars",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Tigers",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "Eagles",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "Lions",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Swallows",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Fighters",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Marines",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Buffaloes",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Hawks",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Powerfuls",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Kaisers",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Yankiis",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Vulcans",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Busters",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "from": [
+      10,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Cathands",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "centre_x": 60
+    },
+    {
+     "from": [
+      9,
+      104,
+      96,
+      128,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      11,
+      0,
+      0,
+      16,
+      32
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      12,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Original",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "centre_x": 63
+    },
+    {
      "sprite": "3c",
      "text": "Standard",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "baseline": 10,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       13,
       14,
@@ -456,8 +486,8 @@
      "sprite": "3d",
      "text": "Open",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "baseline": 10,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       13,
       14,
@@ -472,7 +502,7 @@
      "sprite": "3e",
      "text": "Kannushi",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
      "baseline": 10,
      "pages": [
       13,
@@ -488,8 +518,8 @@
      "sprite": "3f",
      "text": "Crouching",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "baseline": 10,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       13,
       14,
@@ -504,8 +534,8 @@
      "sprite": "40",
      "text": "Pendulum",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "baseline": 10,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       13,
       14,
@@ -520,7 +550,7 @@
      "sprite": "41",
      "text": "Buster",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
      "baseline": 8,
      "pages": [
       13,
@@ -536,7 +566,7 @@
      "sprite": "42",
      "text": "1-Leg",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
      "baseline": 10,
      "pages": [
       13,
@@ -552,8 +582,8 @@
      "sprite": "43",
      "text": "Original",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "baseline": 9,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
      "pages": [
       13,
       14,
@@ -568,8 +598,8 @@
      "sprite": "44",
      "text": "Overhand",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "baseline": 10,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       13,
       14,
@@ -584,10 +614,8 @@
      "sprite": "45",
      "text": "3-Quarters",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 1,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 10,
      "pages": [
       13,
       14,
@@ -602,8 +630,8 @@
      "sprite": "46",
      "text": "Sidearm",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "baseline": 8,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 7,
      "pages": [
       13,
       14,
@@ -618,10 +646,8 @@
      "sprite": "47",
      "text": "Submarine",
      "style": "a_name",
-     "font": "ttf:rounded:18:0.0:1.0:0.5",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 2,
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
      "pages": [
       13,
       14,
@@ -631,9 +657,107 @@
      "palettes": [
       2
      ]
+    },
+    {
+     "sprite": "08",
+     "text": "Bat Color\nGlove Color\nRight Wristband Color\nLeft Wristband Color",
+     "style": "a_eqm",
+     "font": "ttf:rounded:13:0.0:0.85:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 60,
+     "left": 37,
+     "dy": 0,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "from": [
+      5,
+      0,
+      88,
+      48,
+      120
+     ],
+     "text": "Starter",
+     "style": "a_name",
+     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "baseline": 20,
+     "centre_x": 26,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      96,
+      32
+     ],
+     "text": "Swing Man",
+     "style": "a_name",
+     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "baseline": 20,
+     "centre_x": 47,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      5,
+      48,
+      88,
+      120,
+      120
+     ],
+     "text": "Middle Reliever",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 19,
+     "centre_x": 37,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      6,
+      96,
+      0,
+      128,
+      32
+     ],
+     "text": "Closer",
+     "style": "a_name",
+     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "baseline": 21,
+     "centre_x": 25,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      16,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "10"
+     ]
     }
    ],
-   "name": "forms"
+   "name": "m4_stt01"
   }
  ]
 }
