@@ -921,8 +921,9 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         if sc.errors:
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
     names = name_table.load_tsv() if os.path.exists(name_table.TSV) else None
+    players = name_table.load_players() if names and os.path.exists(name_table.PLAYERS_TSV) else []
     slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages,
-                         name_table.plates(names) + name_table.short_names(names) if names else ())
+                         name_table.plates(names) + name_table.short_names(names) + name_table.player_plates(players) if names else ())
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
@@ -1123,6 +1124,20 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             image = image[:pos] + short[0] + image[pos + len(short[0]):]
             patched.setdefault(m.mod_id, {})[(name_table.SHORT_SECTION, a)] = short[0]
             note += ", surnames in 8 letters"
+            if players:                                          # real players: every copy, in place
+                try:
+                    pp = name_table.player_patches(m, players, lambda t: encode_text(t, slots))
+                except ValueError as e:
+                    sys.exit(str(e))
+                base = m.sections[5]["offset"]
+                if any(s == 5 and any(o <= so < o + 12 for o in pp) for s, so in strings.get(m.name, ())):
+                    sys.exit("%s: a UI string is translated inside a player name" % m.name)
+                image = bytearray(image)
+                for o, data in pp.items():
+                    image[base + o:base + o + len(data)] = data
+                    patched[m.mod_id][(5, o)] = data
+                image = bytes(image)
+                note += ", %d real players in %d places" % (len(players), len(pp))
         if names and m.name in name_table.READERS:               # surname readers: the new table, six cells
             try:
                 image, written = name_table.patch_code(m, image, host.mod_id)

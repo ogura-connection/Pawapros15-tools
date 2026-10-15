@@ -273,6 +273,64 @@ def plates(names):
     return [plate(en) for _, en in names.values()]
 
 
+# ── Real players (main_prg.rel) ────────────────────────────────────────────
+# The 2008 rosters: 480 records of six cells + (a, b, call id) at sec5+0x68826.., and the same six cells in a
+# names-only list by team and in the 144-byte player records. Every copy is a six-cell field: written in place.
+# Readings: the announcer's call (are_main.rel); English in translation/names/players.tsv (foreign players and
+# a few registered names by hand). Copies in other modules (pn_ore_i, pennant, draft) are other people with
+# the same surnames (draft prospects ...) and are not touched here.
+PLAYERS_TSV = os.path.join(HERE, "translation", "names", "players.tsv")
+PLAYER_REGIONS = [(0x3C738, 0x3E004, 477), (0x579F0, 0x6A9AA, 960)]    # sec5 spans: list by team; records + roster
+
+
+def load_players():
+    out = []
+    with open(PLAYERS_TSV, encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("#") or not line.strip():
+                continue
+            off, call, en = line.rstrip("\n").split("\t")
+            out.append((int(off, 16), int(call), en))
+    return out
+
+
+def player_patches(rel, players, encode):
+    """{sec5 offset: 12 bytes} for every copy of a real player's name in main_prg.rel."""
+    d = rel.sec_data(5)
+    cells = lambda o: d[o:o + 2 * CELLS]
+    by_pat = {}
+    for off, call, en in players:
+        if struct.unpack_from(">H", d, off + 2 * CELLS + 4)[0] != call:
+            raise ValueError("main_prg.rel sec5+0x%X: not the roster record of call %d" % (off, call))
+        if not letters_ok(en) or len(encode(plate(en))) > CELLS:
+            raise ValueError("player %r does not fit %d cells" % (en, CELLS))
+        by_pat.setdefault(cells(off), []).append((off, call, en))
+    out = {}
+    for lo, hi, want in PLAYER_REGIONS:
+        seen, n = {}, 0
+        for o in range(lo, hi, 2):
+            cands = by_pat.get(cells(o))
+            if not cands:
+                continue
+            if len({en for _, _, en in cands}) == 1:
+                en = cands[0][2]
+            else:                       # same kanji, other English: the roster record, a call id near, or order
+                calls = {struct.unpack_from(">H", d, p)[0] for p in range(max(lo, o - 144), min(hi, o + 156), 2)}
+                own = [c for c in cands if c[0] == o] or [c for c in cands if c[1] in calls]
+                k = seen[cells(o)] = seen.get(cells(o), -1) + 1
+                en = (own[0] if own else cands[k % len(cands)])[2]
+            units = encode(plate(en))
+            out[o] = struct.pack(">6H", *(units + [0] * (CELLS - len(units))))
+            n += 1
+        if n != want:
+            raise ValueError("main_prg.rel sec5+0x%X..0x%X: %d player names, %d expected" % (lo, hi, n, want))
+    return out
+
+
+def player_plates(players):
+    return [plate(en) for _, _, en in players]
+
+
 # ── Commands ───────────────────────────────────────────────────────────────
 
 def cmd_export():
