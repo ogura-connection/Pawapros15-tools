@@ -1,0 +1,2608 @@
+{
+ "arc": "scg_camp.arc",
+ "repack": [
+  {
+   "bank": "h3_st_0",
+   "palette": 13,
+   "style": "f_st_yel2",
+   "font": "ttf:rounded:13:0.0:0.9:0.0",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     1,
+     48,
+     120,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     96,
+     96
+    ],
+    [
+     2,
+     96,
+     0,
+     120,
+     48
+    ],
+    [
+     2,
+     72,
+     96,
+     104,
+     128
+    ],
+    [
+     2,
+     120,
+     24,
+     128,
+     48
+    ],
+    [
+     2,
+     104,
+     120,
+     128,
+     128
+    ],
+    [
+     0,
+     0,
+     64,
+     40,
+     96
+    ],
+    [
+     0,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      80,
+      24
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "High Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 17,
+     "left": 4
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -16
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      8,
+      48
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.75:0.0",
+     "baseline": 18,
+     "left": -19
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "04"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      80,
+      24
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "High Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 17,
+     "left": 4
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -16
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      8,
+      48
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.75:0.0",
+     "baseline": 18,
+     "left": -19
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -20
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      8,
+      48
+     ],
+     "sprites": [
+      "05"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -20
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      8,
+      48
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "12"
+     ],
+     "text": "Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -22
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      8,
+      48
+     ],
+     "sprites": [
+      "12"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "12"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.75:0.0",
+     "baseline": 18,
+     "left": -23
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "06"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.75:0.0",
+     "baseline": 18,
+     "left": -23
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "14"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.75:0.0",
+     "baseline": 18,
+     "left": -25
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "14"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      40,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "Their Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 3
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      88,
+      96
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "Your Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": 3
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "08"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -32
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "08"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      88,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Pitcher Pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 3
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      48,
+      120
+     ],
+     "sprites": [
+      "09"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "09"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -29
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "09"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      48,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "To Pass",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -2
+    },
+    {
+     "from": [
+      1,
+      48,
+      120,
+      56,
+      128
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      56,
+      120,
+      64,
+      128
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -27
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      8,
+      48
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -30
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      48,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "To Pass",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -3
+    },
+    {
+     "from": [
+      1,
+      48,
+      120,
+      56,
+      128
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      56,
+      120,
+      64,
+      128
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      88,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Pitcher Pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 3
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      48,
+      120
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -31
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "Time Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 18,
+     "left": -25
+    },
+    {
+     "from": [
+      2,
+      56,
+      0,
+      80,
+      24
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "sec",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 18,
+     "left": -8
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "13"
+     ],
+     "text": "Time Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 18,
+     "left": -25
+    },
+    {
+     "from": [
+      2,
+      56,
+      0,
+      80,
+      24
+     ],
+     "sprites": [
+      "13"
+     ],
+     "text": "sec",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 18,
+     "left": -8
+    },
+    {
+     "from": [
+      1,
+      48,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "To Pass",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -2
+    },
+    {
+     "from": [
+      1,
+      48,
+      120,
+      56,
+      128
+     ],
+     "sprites": [
+      "11"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      56,
+      120,
+      64,
+      128
+     ],
+     "sprites": [
+      "11"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "16"
+     ],
+     "text": "Score",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": 1
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      8,
+      48
+     ],
+     "sprites": [
+      "16"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "sprites": [
+      "16"
+     ],
+     "text": "pts",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 16,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      56,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "16"
+     ],
+     "text": "Successes",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      72,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "16"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "16"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -1
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "16"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "17"
+     ],
+     "text": "HRs Needed",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      72,
+      96,
+      104,
+      120
+     ],
+     "sprites": [
+      "17"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "17"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      56,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "17"
+     ],
+     "text": "Successes",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": -1
+    },
+    {
+     "from": [
+      2,
+      72,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "17"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "17"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -4
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "17"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      80,
+      0,
+      120,
+      24
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "XBH Needed",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 2
+    },
+    {
+     "from": [
+      1,
+      32,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "18"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "18"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      56,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Successes",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      72,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "18"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -1
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "18"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      56,
+      48
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Hits Needed",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 1
+    },
+    {
+     "from": [
+      1,
+      32,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "19"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "19"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      56,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Successes",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      72,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "19"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -1
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "19"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      72,
+      72
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "Bunts Needed",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 17,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      72,
+      96,
+      104,
+      120
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      56,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "Successes",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 17,
+     "left": -3
+    },
+    {
+     "from": [
+      2,
+      72,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      56,
+      24
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "Pitches Left",
+     "style": "f_st_yel2",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 18,
+     "left": -6
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      96,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Bonus",
+     "style": "f_st_pink",
+     "font": "ttf:rounded:12:0.0:0.95:0.0",
+     "baseline": 17,
+     "left": 9
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      40,
+      72
+     ],
+     "sprites": [
+      "07"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      96,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "Bonus",
+     "style": "f_st_pink",
+     "font": "ttf:rounded:12:0.0:0.95:0.0",
+     "baseline": 17,
+     "left": 9
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      40,
+      72
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      96,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "Bonus",
+     "style": "f_st_pink",
+     "font": "ttf:rounded:12:0.0:0.95:0.0",
+     "baseline": 17,
+     "left": 9
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      40,
+      72
+     ],
+     "sprites": [
+      "15"
+     ],
+     "empty": true
+    }
+   ],
+   "name": "st hud",
+   "share": true
+  },
+  {
+   "bank": "h3_st_0",
+   "palette": 53,
+   "style": "f_st_flash",
+   "font": "ttf:rounded:12:0.0:0.9:0.2",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     96,
+     72,
+     128
+    ],
+    [
+     3,
+     112,
+     48,
+     128,
+     56
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      96,
+      72,
+      128
+     ],
+     "text": "Catch Streak\nBonus!",
+     "style": "f_st_flash",
+     "font": "ttf:rounded:10:0.0:0.75:0.2",
+     "valign": "centre",
+     "left": 0
+    }
+   ],
+   "name": "st flash 1"
+  },
+  {
+   "bank": "h3_st_0",
+   "palette": 53,
+   "style": "f_st_flash",
+   "font": "ttf:rounded:12:0.0:0.9:0.2",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     48,
+     80,
+     96
+    ],
+    [
+     3,
+     112,
+     56,
+     128,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      48,
+      80,
+      96
+     ],
+     "text": "Special Skill\nGained!",
+     "style": "f_st_flash",
+     "font": "ttf:rounded:12:0.0:0.75:0.2",
+     "valign": "centre",
+     "left": 0
+    }
+   ],
+   "name": "st flash 2"
+  },
+  {
+   "bank": "h3_st_0",
+   "palette": 53,
+   "style": "f_st_flash",
+   "font": "ttf:rounded:12:0.0:0.9:0.2",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     120,
+     48
+    ],
+    [
+     3,
+     120,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      0,
+      64,
+      48
+     ],
+     "text": "EXP\nGained!",
+     "style": "f_st_flash",
+     "font": "ttf:rounded:12:0.0:0.95:0.2",
+     "valign": "centre",
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      64,
+      0,
+      120,
+      48
+     ],
+     "text": "Ability\nUp!",
+     "style": "f_st_flash",
+     "font": "ttf:rounded:12:0.0:0.95:0.2",
+     "valign": "centre",
+     "left": 0
+    }
+   ],
+   "name": "st flash 3"
+  },
+  {
+   "bank": "h3_kyos_0_opd",
+   "palette": 10,
+   "style": "f_ky_yel",
+   "font": "ttf:rounded:13:0.0:0.9:0.0",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     48,
+     96,
+     128
+    ],
+    [
+     2,
+     96,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     96,
+     48,
+     112,
+     72
+    ],
+    [
+     2,
+     120,
+     72,
+     128,
+     96
+    ],
+    [
+     3,
+     48,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      96,
+      88,
+      120
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "To Pass",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 14,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -32
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      88,
+      120
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "To Pass",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 14,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -32
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      88,
+      72
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Score",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "pts",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -14
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Tries Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -32
+    },
+    {
+     "from": [
+      2,
+      48,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "06"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      88,
+      72
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Score",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "pts",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -14
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Tries Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -32
+    },
+    {
+     "from": [
+      2,
+      48,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "07"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 10
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 10
+    },
+    {
+     "from": [
+      2,
+      48,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "x",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 1
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "pts",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -7
+    },
+    {
+     "from": [
+      2,
+      88,
+      48,
+      112,
+      72
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "balls",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.8:0.0",
+     "baseline": 14,
+     "left": -10
+    },
+    {
+     "from": [
+      0,
+      72,
+      80,
+      96,
+      104
+     ],
+     "sprites": [
+      "32"
+     ],
+     "text": "pts",
+     "style": "f_ky_pts",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 19,
+     "left": -4
+    }
+   ],
+   "name": "kyos hud",
+   "share": true
+  },
+  {
+   "bank": "h3_kyos_0_opd",
+   "palette": 16,
+   "style": "f_ky_btn",
+   "font": "ttf:rounded:9:0.0:0.95:0",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     0,
+     96,
+     56,
+     128,
+     80
+    ],
+    [
+     1,
+     0,
+     0,
+     80,
+     24
+    ],
+    [
+     0,
+     0,
+     64,
+     16,
+     80
+    ],
+    [
+     3,
+     0,
+     112,
+     48,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "11",
+     "text": "Power",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:10:0.0:0.9:0.0",
+     "baseline": 18,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Push",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:10:0.0:0.9:0.0",
+     "baseline": 17,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "IF In",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:8:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      17,
+      18
+     ]
+    },
+    {
+     "sprite": "14",
+     "text": "IF Back",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:8:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      17,
+      18
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "OF In",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:8:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      17,
+      18
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "OF Back",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:8:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      17,
+      18
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Bunt Shift",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:7:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      19
+     ]
+    }
+   ],
+   "name": "kyos tags"
+  },
+  {
+   "bank": "z4_teu_0",
+   "palette": 0,
+   "style": "f_teu_blue",
+   "font": "ttf:rounded:34:0.0:0.85:0.3",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      72
+     ],
+     "text": "Test Start",
+     "style": "f_teu_blue~0_128",
+     "font": "ttf:rounded:34:0.0:0.85:0.3",
+     "baseline": 52,
+     "left": -9
+    },
+    {
+     "from": [
+      0,
+      0,
+      72,
+      56,
+      128
+     ],
+     "text": "Test Start",
+     "style": "f_teu_blue~128_4096",
+     "font": "ttf:rounded:34:0.0:0.85:0.3",
+     "baseline": 52,
+     "left": -9
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      56,
+      16
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      0,
+      56,
+      72,
+      128,
+      128
+     ],
+     "text": "Test Over",
+     "style": "f_teu_pink~0_128",
+     "font": "ttf:rounded:34:0.0:0.85:0.3",
+     "baseline": 52,
+     "left": -7
+    },
+    {
+     "from": [
+      1,
+      56,
+      0,
+      128,
+      16
+     ],
+     "text": "Test Over",
+     "style": "f_teu_pink~128_4096",
+     "font": "ttf:rounded:34:0.0:0.85:0.3",
+     "baseline": -4,
+     "left": 121
+    },
+    {
+     "from": [
+      1,
+      0,
+      16,
+      112,
+      88
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      0,
+      88,
+      96,
+      128
+     ],
+     "text": "Win",
+     "style": "f_teu_orange~0_128",
+     "font": "ttf:rounded:56:0.0:0.9:0.3",
+     "baseline": 75,
+     "left": 37
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      96,
+      56
+     ],
+     "text": "Win",
+     "style": "f_teu_orange~128_4096",
+     "font": "ttf:rounded:56:0.0:0.9:0.3",
+     "baseline": 35,
+     "left": 165
+    },
+    {
+     "from": [
+      1,
+      96,
+      88,
+      128,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      96,
+      0,
+      128,
+      56
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      56,
+      64,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      64,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      64,
+      56,
+      128,
+      128
+     ],
+     "text": "Loss",
+     "style": "f_teu_steel~0_128",
+     "font": "ttf:rounded:56:0.0:0.9:0.3",
+     "baseline": 75,
+     "left": 22
+    },
+    {
+     "from": [
+      3,
+      64,
+      0,
+      128,
+      24
+     ],
+     "text": "Loss",
+     "style": "f_teu_steel~128_4096",
+     "font": "ttf:rounded:56:0.0:0.9:0.3",
+     "baseline": 3,
+     "left": 150
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      32,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      32,
+      24,
+      128,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      96
+     ],
+     "text": "Tie",
+     "style": "f_teu_green~0_4096",
+     "font": "ttf:rounded:56:0.0:0.9:0.3",
+     "baseline": 75,
+     "left": 47
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      80,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      80,
+      64
+     ],
+     "empty": true
+    }
+   ],
+   "name": "teu titles"
+  }
+ ]
+}
