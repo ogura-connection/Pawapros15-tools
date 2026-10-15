@@ -34,14 +34,14 @@
      0,
      0,
      128,
-     128
+     116
     ],
     [
      4,
      0,
      0,
      128,
-     116
+     104
     ],
     [
      5,
@@ -56,6 +56,13 @@
      0,
      128,
      128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     24
     ]
    ],
    "labels": [
@@ -287,31 +294,12 @@
       18
      ],
      "left": 4
-    }
-   ],
-   "name": "lines"
-  },
-  {
-   "bank": "y5_hak_0",
-   "palette": 17,
-   "style": "b_hak_rate",
-   "font": "ttf:rounded:14:0.0:1.0:0.25",
-   "under": 3,
-   "areas": [
-    [
-     1,
-     0,
-     0,
-     128,
-     24
-    ]
-   ],
-   "labels": [
+    },
     {
      "sprite": "04",
      "text": "OK",
      "style": "b_hak_rate",
-     "font": "ttf:avm:15:0.0:1.0:0.2",
+     "font": "ttf:avm:13:0.0:1.0:0.2",
      "baseline": 20,
      "palettes": [
       17
@@ -321,7 +309,7 @@
      "sprite": "05",
      "text": "Good",
      "style": "b_hak_rate",
-     "font": "ttf:avm:15:0.0:1.0:0.2",
+     "font": "ttf:avm:13:0.0:1.0:0.2",
      "baseline": 20,
      "palettes": [
       17
@@ -331,8 +319,8 @@
      "sprite": "06",
      "text": "Best",
      "style": "b_hak_rate",
-     "font": "ttf:avm:15:0.0:1.0:0.2",
-     "baseline": 20,
+     "font": "ttf:avm:13:0.0:1.0:0.2",
+     "baseline": 19,
      "palettes": [
       17
      ]
@@ -364,7 +352,243 @@
      "baseline": 16
     }
    ],
-   "name": "rate"
+   "name": "hak"
+  },
+  {
+   "bank": "y5_siba_3",
+   "palette": 22,
+   "style": "b_sib_name",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "05",
+     "text": "Gokuaku Trading",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Tekuteku Tech",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Rocket Express",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Naniwa Trading",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Pichipichi Fisheries",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Club Ageage",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "Takeda Construction",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "0c",
+     "text": "Mizotto Sports",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "0d",
+     "text": "Atsuatsu Diner",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "0e",
+     "text": "Karaoke",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "0f",
+     "text": "Convenience Store",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "10",
+     "text": "Amusement Park",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "11",
+     "text": "Ad Agency",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Pawafuru Corp.",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Sales Campaign",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "14",
+     "text": "Hot Spring",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Batting Center",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Beach Hut",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Hotel",
+     "style": "b_sib_name",
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": -18,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "from": [
+      2,
+      88,
+      96,
+      128,
+      120
+     ],
+     "text": "Pay",
+     "style": "b_sib_pay_34_20",
+     "font": "ttf:avm:9:0.0:1.0:0.0",
+     "baseline": 15
+    }
+   ],
+   "name": "sib"
   }
  ]
 }

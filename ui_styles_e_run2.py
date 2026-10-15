@@ -10,3 +10,7 @@ ui_type.TTF.setdefault("chancery", ("/System/Library/Fonts/Supplemental/Apple Ch
 
 # scs_b_ed.arc v4_go_16ji, the ending title: white calligraphic letters in a grey and a dark ring
 STYLES["e_go"] = ui_type.ringed([0, 10, 12, 13, 14, 15, 15], [8, 1])
+
+# scs_rens.arc y5_mic_0 (palette 17, a grey ramp 1 = white .. f = dark navy): the "one more round?" question and its
+# answers: heavy italic dark letters in a one-pixel light ring
+STYLES["e_mic"] = ui_type.ringed([0, 11, 12, 13, 14, 15, 15], [7])
