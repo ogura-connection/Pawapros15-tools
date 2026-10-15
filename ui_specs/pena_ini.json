@@ -752,68 +752,68 @@
      "sprite": "05",
      "text": "Central",
      "style": "c6_s3_pt00_05",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14
     },
     {
      "sprite": "06",
      "text": "Pacific",
      "style": "c6_s3_pt00_06",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14
     },
     {
      "sprite": "07",
      "text": "1 League",
      "style": "c6_s3_pt00_07",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 16
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 14
     },
     {
      "sprite": "2a",
      "text": "League Settings",
      "style": "c6_s3_pt00_2a",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 28
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 26
     },
     {
      "sprite": "2b",
      "text": "Central League Teams",
      "style": "c6_s3_pt00_2b",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 52,
+     "slice_width": 42,
      "dy": 2
     },
     {
      "sprite": "2c",
      "text": "Pacific League Teams",
      "style": "c6_s3_pt00_2c",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 51,
+     "slice_width": 41,
      "dy": 2
     },
     {
      "sprite": "2d",
      "text": "Teams",
      "style": "c6_s3_pt00_2d",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 30
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 27
     },
     {
      "sprite": "3f",
      "text": "Leagues",
      "style": "c6_s3_pt00_3f",
-     "font": "ttf:rounded:14:0.0:0.85:0.3",
-     "baseline": 22
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 20
     },
     {
      "sprite": "40",
      "text": "Teams",
      "style": "c6_s3_pt00_40",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 22
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 20
     }
    ],
    "name": "s3_pt00",
@@ -917,7 +917,7 @@
      "style": "c6_s3_ptz00_03",
      "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 71,
+     "slice_width": 72,
      "dy": 2
     },
     {
@@ -926,8 +926,8 @@
      "style": "c6_s3_ptz00_04",
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "slices": true,
-     "slice_width": 59,
-     "dy": 1
+     "slice_width": 60,
+     "dy": 2
     },
     {
      "sprite": "06",
@@ -935,14 +935,14 @@
      "style": "c6_s3_ptz00_06",
      "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 39,
-     "dy": 0
+     "slice_width": 40,
+     "dy": 1
     },
     {
      "sprite": "08",
      "text": "Cancel",
      "style": "c6_s3_ptz00_08",
-     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "font": "ttf:narrow:16:0.0:0.92:0.3",
      "baseline": 32
     },
     {
@@ -956,8 +956,8 @@
      "sprite": "0b",
      "text": "Remove",
      "style": "c6_s3_ptz00_0b",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 30
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "baseline": 31
     }
    ],
    "name": "s3_ptz00",
@@ -1018,47 +1018,47 @@
      "sprite": "00",
      "text": "Start",
      "style": "c6_s4_tai00_00",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
-     "baseline": 12
+     "font": "ttf:rounded:20:0.0:1.0:0.3",
+     "baseline": 10
     },
     {
      "sprite": "01",
      "text": "Solo",
      "style": "c6_s4_tai00_01",
-     "font": "ttf:rounded:26:0.0:1.0:0.3",
-     "slices": true,
-     "slice_width": 38,
-     "dy": 1
+     "font": "ttf:rounded:20:0.0:1.0:0.3",
+     "baseline": 10
     },
     {
      "sprite": "02",
      "text": "With Friends",
      "style": "c6_s4_tai00_02",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
      "slices": true,
-     "slice_width": 47,
+     "slice_width": 46,
      "dy": 1
     },
     {
      "sprite": "03",
      "text": "New Game",
      "style": "c6_s4_tai00_03",
-     "font": "ttf:narrow:18:0.0:0.85:0.3",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
      "baseline": 8
     },
     {
      "sprite": "04",
      "text": "Continue",
      "style": "c6_s4_tai00_04",
-     "font": "ttf:narrow:25:0.0:0.85:0.3",
-     "baseline": 11
+     "font": "ttf:rounded:20:0.0:0.85:0.3",
+     "baseline": 9
     },
     {
      "sprite": "05",
      "text": "Records",
      "style": "c6_s4_tai00_05",
      "font": "ttf:narrow:17:0.0:0.85:0.3",
-     "baseline": 8
+     "slices": true,
+     "slice_width": 36,
+     "dy": -1
     },
     {
      "sprite": "09",

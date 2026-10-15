@@ -1,0 +1,837 @@
+{
+ "arc": "pn_deban.arc",
+ "repack": [
+  {
+   "bank": "m3_ksd_0",
+   "palette": 0,
+   "style": "e6_sk",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     72,
+     56,
+     128,
+     128
+    ],
+    [
+     1,
+     56,
+     80,
+     72,
+     128
+    ],
+    [
+     3,
+     0,
+     56,
+     128,
+     88
+    ],
+    [
+     3,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     3,
+     64,
+     40,
+     128,
+     56
+    ],
+    [
+     3,
+     88,
+     88,
+     112,
+     104
+    ],
+    [
+     3,
+     0,
+     88,
+     8,
+     104
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     6,
+     80,
+     104,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      104,
+      128,
+      128
+     ],
+     "text": "Appearance Setup",
+     "style": "e6_ks_title~0_4096",
+     "font": "ttf:rounded:10:0.0:0.85:0.4",
+     "baseline": 27,
+     "left": 8
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Appearance Setup",
+     "style": "e6_ks_title~0_4096",
+     "font": "ttf:rounded:10:0.0:0.85:0.4",
+     "baseline": 3,
+     "left": 8
+    },
+    {
+     "sprite": "02",
+     "text": "Take control of fast games when set conditions occur",
+     "style": "e6_ks_help",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "palettes": [
+      85
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Cancel",
+     "style": "e6_ks_05",
+     "font": "ttf:rounded:12:0.0:0.85:0.5",
+     "baseline": 36,
+     "palettes": [
+      84
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Focus: Team",
+     "style": "e6_ks_focus",
+     "font": "ttf:narrow:10:0.0:0.85:0.5",
+     "baseline": 20,
+     "palettes": [
+      91
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Focus: Pitcher",
+     "style": "e6_ks_focus",
+     "font": "ttf:rounded:10:0.0:0.85:0.5",
+     "baseline": 19,
+     "palettes": [
+      91
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Focus: Fielder",
+     "style": "e6_ks_focus",
+     "font": "ttf:rounded:10:0.0:0.85:0.5",
+     "baseline": 19,
+     "palettes": [
+      91
+     ]
+    },
+    {
+     "from": [
+      4,
+      40,
+      72,
+      104,
+      96
+     ],
+     "text": "Team",
+     "style": "e6_ks_plate",
+     "font": "ttf:rounded:18:0.0:0.85:0.35",
+     "baseline": 23,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      104,
+      72,
+      128,
+      80
+     ],
+     "empty": true,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      104,
+      80,
+      128,
+      88
+     ],
+     "empty": true,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      24,
+      128
+     ],
+     "text": ":",
+     "style": "e6_ks_plate",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 24
+    },
+    {
+     "from": [
+      4,
+      24,
+      96,
+      88,
+      128
+     ],
+     "text": "->",
+     "style": "e6_ks_arrow",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 22
+    },
+    {
+     "from": [
+      4,
+      88,
+      96,
+      128,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "sprite": "0e",
+     "text": "Not Set",
+     "style": "e6_ks_focus",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 42,
+     "palettes": [
+      95
+     ]
+    },
+    {
+     "sprite": "0f",
+     "text": "On",
+     "style": "e6_ks_on",
+     "font": "ttf:rounded:17:0.0:1.0:0.4",
+     "baseline": 26,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "10",
+     "text": "Off",
+     "style": "e6_ks_on",
+     "font": "ttf:rounded:17:0.0:0.92:0.4",
+     "baseline": 27,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "11",
+     "text": "Pinch",
+     "style": "e6_ks_cond",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 34,
+     "palettes": [
+      78
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Chance",
+     "style": "e6_ks_cond",
+     "font": "ttf:narrow:14:0.0:0.92:0.4",
+     "baseline": 34,
+     "palettes": [
+      76
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Stop",
+     "style": "e6_ks_cond",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 33,
+     "palettes": [
+      77
+     ]
+    },
+    {
+     "sprite": "14",
+     "text": "Go Manual",
+     "style": "e6_ks_cond",
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 34,
+     "palettes": [
+      79
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Pitching",
+     "style": "e6_ks_cond",
+     "font": "ttf:rounded:14:0.0:0.92:0.4",
+     "baseline": 34,
+     "palettes": [
+      39
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Batting",
+     "style": "e6_ks_cond",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 34,
+     "palettes": [
+      39
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Pitching\nPinch",
+     "style": "e6_ks_cond",
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 34,
+     "palettes": [
+      78
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Batting\nChance",
+     "style": "e6_ks_cond",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 34,
+     "palettes": [
+      79
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Choose a player to focus on",
+     "style": "e6_ks_pick",
+     "font": "ttf:rounded:12:0.0:0.85:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "palettes": [
+      75
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Choose a player to focus on",
+     "style": "e6_ks_pick",
+     "font": "ttf:rounded:12:0.0:0.85:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "palettes": [
+      75
+     ]
+    }
+   ],
+   "name": "m3_ksd_0"
+  },
+  {
+   "bank": "s5_ptn",
+   "palette": 0,
+   "style": "e6_sk",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     32,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "05",
+     "text": "Twin Homers",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "06",
+     "text": "Twin Homers+",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "07",
+     "text": "Rumored Battery",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 18
+    },
+    {
+     "sprite": "08",
+     "text": "Golden Battery",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 19
+    },
+    {
+     "sprite": "09",
+     "text": "Double Steal",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "0a",
+     "text": "Double Steal+",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "0b",
+     "text": "Twin Pillars",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "0c",
+     "text": "Double Aces",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 19
+    },
+    {
+     "sprite": "0d",
+     "text": "L-R Aces",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "0e",
+     "text": "P Relay",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "0f",
+     "text": "Golden Relay",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "10",
+     "text": "Support",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.92:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "11",
+     "text": "Super Support",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.92:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "12",
+     "text": "Decoy",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "13",
+     "text": "Decoy+",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "14",
+     "text": "Closer Combo",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "15",
+     "text": "Double Closers",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "16",
+     "text": "3-4 Combo",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "17",
+     "text": "Golden 3-4",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "18",
+     "text": "1-2 Combo",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "19",
+     "text": "Golden 1-2",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "1a",
+     "text": "Bottom Combo",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "1b",
+     "text": "Scary Bottom",
+     "style": "e6_sk",
+     "font": "ttf:narrow:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "1c",
+     "text": "Rivalry",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 19
+    },
+    {
+     "sprite": "1d",
+     "text": "Super Rivalry",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 19
+    },
+    {
+     "sprite": "1e",
+     "text": "Run Combo",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "1f",
+     "text": "Super Run Combo",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "20",
+     "text": "Secure",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "21",
+     "text": "Super Secure",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "22",
+     "text": "Iron 1B-2B",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.92:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "23",
+     "text": "Golden 1B-2B",
+     "style": "e6_sk",
+     "font": "ttf:narrow:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "24",
+     "text": "Iron 3B-SS",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.92:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "25",
+     "text": "Golden 3B-SS",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "26",
+     "text": "Iron 2B-SS",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.92:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "27",
+     "text": "Golden 2B-SS",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "28",
+     "text": "Iron LF-CF",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.92:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "29",
+     "text": "Golden LF-CF",
+     "style": "e6_sk",
+     "font": "ttf:narrow:8:0.0:0.85:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "2a",
+     "text": "Iron RF-CF",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.92:0.6",
+     "baseline": 20
+    },
+    {
+     "sprite": "2b",
+     "text": "Golden RF-CF",
+     "style": "e6_sk",
+     "font": "ttf:rounded:8:0.0:0.85:0.6",
+     "baseline": 20
+    }
+   ],
+   "name": "s5_ptn"
+  },
+  {
+   "bank": "b5_r00",
+   "palette": 0,
+   "style": "e6_sk",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     72,
+     128,
+     128
+    ],
+    [
+     1,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     104,
+     48,
+     128,
+     72
+    ],
+    [
+     1,
+     48,
+     48,
+     64,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Chemistry Skills",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 24
+    },
+    {
+     "sprite": "13",
+     "text": "Chemistry Skills",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 24
+    },
+    {
+     "sprite": "07",
+     "text": "More",
+     "style": "e6_b5_small",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 146
+    },
+    {
+     "sprite": "1a",
+     "text": "More",
+     "style": "e6_b5_small",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 146
+    },
+    {
+     "sprite": "2c",
+     "text": "Field",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 91
+    },
+    {
+     "sprite": "2d",
+     "text": "Bat",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 91
+    },
+    {
+     "sprite": "33",
+     "text": "Field",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 91
+    },
+    {
+     "sprite": "34",
+     "text": "Bat",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 91
+    },
+    {
+     "sprite": "31",
+     "text": "Home",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 91
+    },
+    {
+     "sprite": "38",
+     "text": "Home",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 91
+    },
+    {
+     "sprite": "32",
+     "text": "Away",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 91
+    },
+    {
+     "sprite": "39",
+     "text": "Away",
+     "style": "e6_b5",
+     "font": "ttf:rounded:8:0.0:1.0:0.6",
+     "baseline": 91
+    }
+   ],
+   "name": "b5_r00"
+  }
+ ]
+}
