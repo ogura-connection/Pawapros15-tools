@@ -45,7 +45,7 @@ def canvas(inner, width, height=16, base=12):
 
 _HLP = ringfill([15], [7])
 STYLES["hlp_raw"] = _HLP
-for _w in range(16, 200, 8):
+for _w in range(16, 200):
     STYLES["hlp%d" % _w] = canvas(_HLP, _w, 15, 11)              # cap 9, 15 rows, baseline on row 11
     STYLES["hlq%d" % _w] = canvas(_HLP, _w, 17, 12)              # cap 10, 17 rows, baseline on row 12
 

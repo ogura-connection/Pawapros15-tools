@@ -2370,7 +2370,7 @@
      ],
      "valign": "centre",
      "style": "e_rt_title",
-     "font": "ttf:din:19:0:1:0.0",
+     "font": "ttf:din:24:0:1:0.0",
      "slices": true
     },
     {
@@ -2381,7 +2381,8 @@
      ],
      "valign": "centre",
      "style": "e_rt_tab",
-     "font": "ttf:din:20:0:1:0.0"
+     "font": "ttf:din:22:0:1:0.0",
+     "slices": true
     },
     {
      "sprite": "07",
@@ -2391,7 +2392,8 @@
      ],
      "valign": "centre",
      "style": "e_rt_tab",
-     "font": "ttf:din:20:0:1:0.0"
+     "font": "ttf:din:22:0:1:0.0",
+     "slices": true
     }
    ]
   },
