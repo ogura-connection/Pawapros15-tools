@@ -373,7 +373,7 @@ def inplace_stores():
 def name_field(d, o):
     """The six cells at o if they hold a name (glyphs, blank cells 0, at least one glyph), else None."""
     cells = struct.unpack_from(">6H", d, o)
-    if not any(cells) or any(c and not (0x100 <= c < 0x2000) for c in cells):
+    if not any(c >= 0x100 for c in cells) or any(c >= 0x2000 for c in cells):   # 0x18 is the repeat mark
         return None
     return cells
 
