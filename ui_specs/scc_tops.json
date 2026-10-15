@@ -257,8 +257,8 @@
      ],
      "text": "Pro Yr",
      "style": "b3_plate35",
-     "font": "ttf:rounded:10:0.0:0.9:0.35",
-     "baseline": 17,
+     "font": "ttf:narrow:11:0.0:0.92:0.25",
+     "baseline": 18,
      "left": -4
     },
     {
@@ -281,9 +281,9 @@
      ],
      "text": "Grad",
      "style": "b3_plate39",
-     "font": "ttf:rounded:11:0.0:1.0:0.35",
-     "baseline": 18,
-     "left": -10,
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 19,
+     "left": -7,
      "sprites": [
       "1d"
      ]
@@ -311,9 +311,9 @@
      ],
      "text": "Grad",
      "style": "b3_plate39",
-     "font": "ttf:rounded:11:0.0:1.0:0.35",
-     "baseline": 19,
-     "left": 7,
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 20,
+     "left": 10,
      "sprites": [
       "3d"
      ]
@@ -328,9 +328,9 @@
      ],
      "text": "Pawafuru",
      "style": "b3_team51",
-     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
      "baseline": 18,
-     "left": -4
+     "left": 1
     },
     {
      "from": [
@@ -352,9 +352,9 @@
      ],
      "text": "Kagurazaka",
      "style": "b3_team52",
-     "font": "ttf:rounded:10:0.0:0.9:0.35",
-     "baseline": 18,
-     "left": -3
+     "font": "ttf:narrow:11:0.0:0.95:0.25",
+     "baseline": 19,
+     "left": -2
     },
     {
      "from": [
@@ -386,9 +386,9 @@
      ],
      "text": "Phoenix",
      "style": "b3_team53",
-     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
      "baseline": 18,
-     "left": 9
+     "left": 13
     },
     {
      "from": [

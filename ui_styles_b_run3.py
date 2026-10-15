@@ -15,6 +15,16 @@ def trim(out, base):
     return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base - ys.min()
 
 
+def close_h(mask, n):
+    """Gaps of up to n columns between ink on a row filled (dilate, then erode, sideways)."""
+    m = mask.copy()
+    for _ in range(n):
+        m = m | shift(m, 0, 1) | shift(m, 0, -1)
+    for _ in range(n):
+        m = m & shift(m, 0, 1) & shift(m, 0, -1)
+    return m | mask
+
+
 def stack(fill, layers, inner=None, edge=3):
     """Letters filled top to foot from `fill`, then `layers` outwards, each ("ring", [index per pixel of width]) all round
     the whole so far, or ("se", [index per step]) a copy of the whole so far cast down and to the right (an extruded
@@ -34,17 +44,22 @@ def stack(fill, layers, inner=None, edge=3):
         cur = letters.copy()
         first = True
         for kind, idxs in layers:
-            if kind == "ring":
+            if kind == "close":                                # gaps of up to 4 columns between letters filled with one colour
+                gap = close_h(cur, 4) & ~cur
+                out[gap] = idxs[0]
+                cur = cur | gap
+            elif kind == "ring":
                 for v in idxs:
                     new = grow(cur, 1, diagonal=first)
                     first = False
                     out[new & ~cur] = v
                     cur = new
-            else:                                              # "se"
+            else:                                              # "se" (or "sec": gaps of up to 3 columns between letters closed first)
                 n = len(idxs)
                 union = cur.copy()
+                src = close_h(cur, 3) if kind == "sec" else cur
                 for k in range(n, 0, -1):
-                    reg = (shift(cur, k, k) | shift(cur, k, k - 1) | shift(cur, k - 1, k)) & ~cur
+                    reg = (shift(src, k, k) | shift(src, k, k - 1) | shift(src, k - 1, k)) & ~cur
                     out[reg] = idxs[k - 1]
                     union |= reg
                 cur = union
@@ -76,7 +91,7 @@ def win(style, c0, c1, r0=0, r1=4096):
 
 # ---- the title: Linked World (palette 16): yellow letters, brown rim and extruded edge, white band, light blue shadow, blue ring
 STYLES["b3_title"] = stack([0xc, 0xc, 0xd, 0xd, 0xe, 0xe], [("ring", [8, 8]), ("se", [8, 8, 8, 7, 7]), ("ring", [1, 1, 1]),
-                                                           ("se", [5, 5, 5, 5]), ("ring", [4, 2, 2])], inner=0xa)
+                                                           ("se", [5, 5, 5, 5]), ("close", [5]), ("ring", [4, 2, 2])], inner=0xa)
 
 # ---- the village headings and the three buttons: green (palette 17), mint (18), lavender (19) letters with a dark outline cast
 # down and to the right, a white band, a light blue shadow and a thin blue ring
