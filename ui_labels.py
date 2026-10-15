@@ -475,14 +475,18 @@ def cmd_preview(spec_path, out):
         d = f.read()
     banks = U.banks(d, U.elf_symbols(d))
     pages = render(spec, d, banks, spec.get("project"))
+    groups = list(spec.get("labels", ())) + list(spec.get("repack", ())) + list(spec.get("paint", ()))
     ims = []
     for (bank, page), new in pages.items():
-        b = next(x for x in banks if x["name"] == bank)
+        grp = next((g for g in groups if g.get("bank") == bank and g.get("page", page) == page), {"bank": bank})
+        b = bank_of(banks, grp) if "repack" in spec and grp in spec["repack"] else next(x for x in banks if x["name"] == bank)
         pal = U.palette_colours(d, b["pal"])
-        lab = next((x for x in spec.get("labels", ()) if x["bank"] == bank and x["page"] == page), None) \
-            or next(x for x in spec["repack"] if x["bank"] == bank)
-        col = U.page_colours(pal, lab["palette"], 8192)
+        index = grp.get("palette")
+        if index is None:                       # groups without "palette": the one most parts of the page use
+            use = U.page_palette_use(b)[page]
+            index = use.most_common(1)[0][0] if use else 0
         off, size = b["pages"][page]
+        col = U.page_colours(pal, index, U.raw_size(d, off, size))
         old = U.decode_indices(d, off, size)
         for arr in (old, new):
             im = Image.new("RGBA", (U.PAGE, U.PAGE), (96, 96, 96, 255))

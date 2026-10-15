@@ -442,12 +442,17 @@ def encode_indices(idx, size, bits=None):
 
 
 def page_colours(pal, index, size, n_used=0):
-    """The colours a page is drawn with: 16 entries of palette number `index` (4-bit pages) or all 256.
+    """The colours a page is drawn with: 16 entries of palette number `index` (4-bit pages), or for an 8-bit page
+    the 256 entries starting at 16 x `index` (the game loads the colour table from there; seen on scc_tops.arc
+    y5_tic and gameplay.arc pages). Entries past the end of the table are transparent.
     `size` is the unpacked size (raw_size): 8192 for any 4-bit page."""
     if size == 8192:
         colours = pal[index * 16:index * 16 + 16]
         return colours if len(colours) == 16 else pal[:16]
-    return pal[:256]
+    colours = pal[index * 16:index * 16 + 256]
+    if len(colours) < 256:
+        colours = np.concatenate([colours, np.zeros((256 - len(colours), 4), np.uint8)])
+    return colours
 
 
 def page_image(d, off, size, pal, index):
