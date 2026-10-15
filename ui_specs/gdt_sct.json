@@ -1,0 +1,906 @@
+{
+ "arc": "gdt_sct.arc",
+ "repack": [
+  {
+   "bank": "z4_gm_0",
+   "palette": 0,
+   "style": "d4_gm20",
+   "font": "ttf:narrow:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     24,
+     56,
+     48
+    ],
+    [
+     1,
+     0,
+     120,
+     48,
+     128
+    ],
+    [
+     1,
+     112,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     32,
+     96,
+     48,
+     120
+    ],
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     3,
+     96,
+     48,
+     128,
+     72
+    ],
+    [
+     3,
+     120,
+     72,
+     128,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "12",
+     "text": "Top",
+     "style": "d4_gm20",
+     "font": "ttf:narrow:11:0.0:1.0:0.2",
+     "baseline": 18
+    },
+    {
+     "sprite": "13",
+     "text": "Bot",
+     "style": "d4_gm20",
+     "font": "ttf:narrow:11:0.0:1.0:0.2",
+     "baseline": 18
+    },
+    {
+     "sprite": "56",
+     "text": "AVG",
+     "style": "d4_gm22",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
+     "baseline": 16
+    },
+    {
+     "sprite": "57",
+     "text": "HR",
+     "style": "d4_gm22",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
+     "baseline": 16
+    },
+    {
+     "sprite": "58",
+     "text": "RBI",
+     "style": "d4_gm22",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
+     "baseline": 16
+    },
+    {
+     "sprite": "59",
+     "text": "ERA",
+     "style": "d4_gm22",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
+     "baseline": 16
+    },
+    {
+     "sprite": "77",
+     "text": "Mash for a big cheer!",
+     "style": "d4_gm20",
+     "font": "ttf:narrow:9:0.0:1.0:0.15",
+     "baseline": 4
+    },
+    {
+     "sprite": "82",
+     "text": "New",
+     "style": "d4_gm22",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
+     "baseline": 16
+    },
+    {
+     "from": [
+      3,
+      96,
+      48,
+      120,
+      72
+     ],
+     "empty": true
+    }
+   ],
+   "name": "gm"
+  },
+  {
+   "bank": "z5_gmt_0",
+   "palette": 0,
+   "style": "d4_gmt",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "06",
+     "text": "Play",
+     "style": "d4_gmt",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 4
+    },
+    {
+     "sprite": "07",
+     "text": "Score",
+     "style": "d4_gmt",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 5
+    },
+    {
+     "sprite": "08",
+     "text": "Pitcher",
+     "style": "d4_gmt",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 5
+    },
+    {
+     "sprite": "09",
+     "text": "Defense",
+     "style": "d4_gmt",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 5
+    },
+    {
+     "sprite": "0a",
+     "text": "Pinch Hit",
+     "style": "d4_gmt",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 5
+    },
+    {
+     "sprite": "0b",
+     "text": "Pinch Run",
+     "style": "d4_gmt",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 5
+    },
+    {
+     "sprite": "0c",
+     "text": "Pitcher Data",
+     "style": "d4_gmt",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 5
+    },
+    {
+     "sprite": "0d",
+     "text": "Team Analysis",
+     "style": "d4_gmt",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 5
+    }
+   ],
+   "name": "gmt"
+  },
+  {
+   "bank": "z5_gmu_0",
+   "palette": 20,
+   "style": "d4_gmu",
+   "font": "ttf:narrow:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     0,
+     0,
+     0,
+     64,
+     48
+    ],
+    [
+     0,
+     24,
+     48,
+     64,
+     64
+    ],
+    [
+     0,
+     24,
+     64,
+     32,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "Trajectory Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 45
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Trajectory Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": -2
+    },
+    {
+     "from": [
+      0,
+      80,
+      96,
+      128,
+      128
+     ],
+     "text": "Trajectory Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": -2
+    }
+   ],
+   "name": "gmu page 0"
+  },
+  {
+   "bank": "z5_gmu_0",
+   "palette": 20,
+   "style": "d4_gmu",
+   "font": "ttf:narrow:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      80,
+      32
+     ],
+     "text": "Contact Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 50
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      32,
+      32
+     ],
+     "text": "Contact Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 7
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      32
+     ],
+     "text": "Contact Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 7
+    },
+    {
+     "from": [
+      1,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "Power Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 53
+    },
+    {
+     "from": [
+      1,
+      0,
+      32,
+      32,
+      64
+     ],
+     "text": "Power Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 15
+    },
+    {
+     "from": [
+      1,
+      80,
+      32,
+      128,
+      64
+     ],
+     "text": "Power Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 15
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      80,
+      96
+     ],
+     "text": "Speed Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 53
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      32,
+      96
+     ],
+     "text": "Speed Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 14
+    },
+    {
+     "from": [
+      1,
+      80,
+      64,
+      128,
+      96
+     ],
+     "text": "Speed Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 14
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "Arm Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 57
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Arm Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 22
+    },
+    {
+     "from": [
+      1,
+      80,
+      96,
+      128,
+      128
+     ],
+     "text": "Arm Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 22
+    }
+   ],
+   "name": "gmu page 1"
+  },
+  {
+   "bank": "z5_gmu_0",
+   "palette": 20,
+   "style": "d4_gmu",
+   "font": "ttf:narrow:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      0,
+      80,
+      32
+     ],
+     "text": "Fielding Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 49
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      32,
+      32
+     ],
+     "text": "Fielding Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 7
+    },
+    {
+     "from": [
+      2,
+      80,
+      0,
+      128,
+      32
+     ],
+     "text": "Fielding Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 7
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "Error Res. Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 45
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      32,
+      64
+     ],
+     "text": "Error Res. Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      80,
+      32,
+      128,
+      64
+     ],
+     "text": "Error Res. Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": -4
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      80,
+      96
+     ],
+     "text": "Velocity Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 49
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      32,
+      96
+     ],
+     "text": "Velocity Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 6
+    },
+    {
+     "from": [
+      2,
+      80,
+      64,
+      128,
+      96
+     ],
+     "text": "Velocity Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 6
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "Control Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 51
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Control Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 9
+    },
+    {
+     "from": [
+      2,
+      80,
+      96,
+      128,
+      128
+     ],
+     "text": "Control Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 9
+    }
+   ],
+   "name": "gmu page 2"
+  },
+  {
+   "bank": "z5_gmu_0",
+   "palette": 20,
+   "style": "d4_gmu",
+   "font": "ttf:narrow:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      0,
+      80,
+      32
+     ],
+     "text": "Stamina Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 49
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      32,
+      32
+     ],
+     "text": "Stamina Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 7
+    },
+    {
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      32
+     ],
+     "text": "Stamina Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 7
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "Condition Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 45
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      32,
+      64
+     ],
+     "text": "Condition Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": -2
+    },
+    {
+     "from": [
+      3,
+      80,
+      32,
+      128,
+      64
+     ],
+     "text": "Condition Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": -2
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      80,
+      96
+     ],
+     "text": "Growth Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 51
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      32,
+      96
+     ],
+     "text": "Growth Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 8
+    },
+    {
+     "from": [
+      3,
+      80,
+      64,
+      128,
+      96
+     ],
+     "text": "Growth Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 8
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "Focus Up",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 53
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Focus Down",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 14
+    },
+    {
+     "from": [
+      3,
+      80,
+      96,
+      128,
+      128
+     ],
+     "text": "Focus Down",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 14
+    }
+   ],
+   "name": "gmu page 3"
+  },
+  {
+   "bank": "z5_gmu_0",
+   "palette": 23,
+   "style": "d4_gmh",
+   "font": "ttf:narrow:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     64,
+     0,
+     128,
+     64
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Effects of Messengers & Special Cards",
+     "style": "d4_gmh",
+     "font": "ttf:narrow:11:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "06",
+     "text": "Offense",
+     "style": "d4_gms",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22
+    },
+    {
+     "sprite": "07",
+     "text": "Defense",
+     "style": "d4_gms",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22
+    }
+   ],
+   "name": "gmu heading"
+  }
+ ]
+}

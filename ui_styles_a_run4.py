@@ -65,10 +65,10 @@ STYLES["a4_mk_dark"] = flat([0, 2, 2, 2, 2, 2, 2], 3)                           
 STYLES["a4_mk_title"] = ringfill([1], [2, 2, 6])                                # pal 3: white letters, black ring, grey edge
 STYLES["a4_mk_title~0_128"] = win(STYLES["a4_mk_title"], 0, 128)
 STYLES["a4_mk_title~128_4096"] = win(STYLES["a4_mk_title"], 128, 4096)
-STYLES["a4_mk_menu"] = ringfill([1], [5, 5, 4])                                 # pal 6 / 11: white letters, black ring, dark green edge
+STYLES["a4_mk_menu"] = ringfill([1], [5, 4])                                 # pal 6 / 11: white letters, black ring, dark green edge
 STYLES["a4_mk_big"] = ringfill([1], [3, 3, 1, 2])                            # p4_mp pal 0: white letters, blue ring, white ring, pale glow
 STYLES["a4_mk_small"] = ringfill([1], [3, 3])                                # p4_mp pal 1
-STYLES["a4_mk_head"] = ringfill([1], [3, 1, 2])                               # p4_mp pal 0, the region headings (thinner rings: the words are long)
+STYLES["a4_mk_head"] = ringfill([1], [3, 3, 3, 1, 2])                               # p4_mp pal 0, the region headings (thinner rings: the words are long)
 STYLES["a4_mk_big"] = ringfill([1], [3, 3, 1])                                   # big prefecture names: blue ring, white edge
 STYLES["a4_mk_cell"] = ringfill([1], [2, 2])                                    # 77: white letters, blue ring on the pale blue cells
 STYLES["a4_mk_cell~0_8"] = win(STYLES["a4_mk_cell"], 0, 8)                       # Schools over its two parts (8 + 56)
@@ -96,7 +96,7 @@ def _plate(page, y0, h):
     return _PLATE_CACHE[key].copy()
 
 
-STYLES["a4_mk_pltext"] = ringfill([15], [2])                                  # the word of a call-out plate (measured with this)
+STYLES["a4_mk_pltext"] = flat([0, 15, 15, 15, 15, 15, 15], 3)                                  # the word of a call-out plate (measured with this)
 
 
 def callout(page, y0, h):
@@ -108,7 +108,7 @@ def callout(page, y0, h):
         ys0, xs0 = np.nonzero(out)
         top, bot, left, right = ys0.min(), ys0.max(), xs0.min(), xs0.max()
         out[top + 2:bot - 1, left + 2:right - 1] = 4                    # the flat inside of the plate (the Japanese word stood here)
-        ty0, ty1, tx0, tx1 = top + 4, bot - 3, left + 3, right - 2     # where the word may stand
+        ty0, ty1, tx0, tx1 = top + 3, bot - 2, left + 3, right - 2     # where the word may stand
         ah, aw = art.shape
         ox, oy = tx0 + (tx1 - tx0 - aw) // 2, ty0 + (ty1 - ty0 - ah) // 2
         sy0, sx0 = max(ty0 - oy, 0), max(tx0 - ox, 0)

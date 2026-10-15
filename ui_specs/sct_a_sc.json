@@ -1,0 +1,663 @@
+{
+ "arc": "sct_a_sc.arc",
+ "repack": [
+  {
+   "bank": "z4_edy_0#0",
+   "palette": 0,
+   "style": "d4_edy_month",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     8
+    ],
+    [
+     2,
+     0,
+     32,
+     128,
+     96
+    ],
+    [
+     2,
+     32,
+     8,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     96,
+     96,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0c",
+     "text": "Season",
+     "style": "d4_edy_head",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 22
+    },
+    {
+     "sprite": "0d",
+     "text": "Schedule",
+     "style": "d4_edy_head",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 21
+    },
+    {
+     "sprite": "0e",
+     "text": "Jan",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "0f",
+     "text": "Feb",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "10",
+     "text": "Mar",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "11",
+     "text": "Apr",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "12",
+     "text": "May",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "13",
+     "text": "Jun",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "14",
+     "text": "Jul",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "15",
+     "text": "Aug",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "16",
+     "text": "Sep",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "17",
+     "text": "Oct",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "18",
+     "text": "Nov",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "19",
+     "text": "Dec",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "1a",
+     "text": "Jan-Feb",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "1b",
+     "text": "Feb-Mar",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "1c",
+     "text": "Mar-Apr",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "1d",
+     "text": "Apr-May",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "1e",
+     "text": "May-Jun",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "1f",
+     "text": "Jun-Jul",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "20",
+     "text": "Jul-Aug",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "21",
+     "text": "Aug-Sep",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "22",
+     "text": "Sep-Oct",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "23",
+     "text": "Oct-Nov",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "24",
+     "text": "Nov-Dec",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    },
+    {
+     "sprite": "25",
+     "text": "Dec-Jan",
+     "style": "d4_edy_month",
+     "font": "tag",
+     "baseline": 6
+    }
+   ],
+   "name": "edy",
+   "sprites": "z4_edy_0#1",
+   "sprite_prefix": "z4_edy_0"
+  },
+  {
+   "bank": "z4_edy_0#1",
+   "palette": 0,
+   "style": "d4_hint",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      0,
+      80,
+      32
+     ],
+     "text": "\u25cb: Select,",
+     "style": "d4_hint",
+     "font": "ttf:d4uni:12:0.0:1.0:0.2",
+     "baseline": 22,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      80,
+      32,
+      128,
+      64
+     ],
+     "text": "A: Select,",
+     "style": "d4_hint~0_48",
+     "font": "ttf:d4uni:12:0.0:1.0:0.2",
+     "baseline": 21,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      32,
+      96
+     ],
+     "text": "A: Select,",
+     "style": "d4_hint~48_4096",
+     "font": "ttf:d4uni:12:0.0:1.0:0.2",
+     "baseline": 21,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      112,
+      64,
+      128,
+      96
+     ],
+     "text": "a: Select,",
+     "style": "d4_hint~0_16",
+     "font": "ttf:d4uni:12:0.0:1.0:0.2",
+     "baseline": 21,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      64,
+      128
+     ],
+     "text": "a: Select,",
+     "style": "d4_hint~16_4096",
+     "font": "ttf:d4uni:12:0.0:1.0:0.2",
+     "baseline": 21,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      32
+     ],
+     "text": "START: Play",
+     "style": "d4_hint~0_48",
+     "font": "ttf:d4uni:12:0.0:1.0:0.2",
+     "baseline": 22,
+     "left": 12
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "START: Play",
+     "style": "d4_hint~48_4096",
+     "font": "ttf:d4uni:12:0.0:1.0:0.2",
+     "baseline": 22,
+     "left": 12
+    },
+    {
+     "from": [
+      3,
+      32,
+      64,
+      112,
+      96
+     ],
+     "text": "\u2295: Play",
+     "style": "d4_hint",
+     "font": "ttf:d4uni:12:0.0:1.0:0.2",
+     "baseline": 22,
+     "left": 4
+    }
+   ],
+   "name": "ekk",
+   "sprites": "z4_ekk_0#2",
+   "sprite_prefix": "z4_ekk_0"
+  },
+  {
+   "bank": "z4_ekk_0#2",
+   "palette": 0,
+   "style": "d4_memo",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     32,
+     48,
+     64
+    ],
+    [
+     3,
+     0,
+     0,
+     64,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~0_128",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      48,
+      64
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~128_4096",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~0_128",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 24,
+     "left": 10
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      64,
+      32
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~128_4096",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 24,
+     "left": 10
+    }
+   ],
+   "name": "edm 10/15",
+   "sprites": "z5_edm_0#3",
+   "sprite_prefix": "z5_edm_0"
+  },
+  {
+   "bank": "z4_ekk_0#2",
+   "palette": 0,
+   "style": "d4_memo",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     32,
+     128,
+     96
+    ],
+    [
+     3,
+     64,
+     0,
+     128,
+     32
+    ],
+    [
+     3,
+     0,
+     96,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      64,
+      0,
+      128,
+      32
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~0_64",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 10
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~64_4096",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 10
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~0_128",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 24,
+     "left": 9
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      64,
+      128
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~128_4096",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 24,
+     "left": 9
+    }
+   ],
+   "name": "edm 16/17",
+   "sprites": "z5_edm_0#3",
+   "sprite_prefix": "z5_edm_0"
+  },
+  {
+   "bank": "z4_ekk_0#2",
+   "palette": 0,
+   "style": "d4_memo",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      64,
+      96,
+      128,
+      128
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~0_64",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 10
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~64_4096",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 10
+    },
+    {
+     "from": [
+      4,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~0_128",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 24,
+     "left": 10
+    },
+    {
+     "from": [
+      4,
+      0,
+      64,
+      64,
+      96
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~128_4096",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 24,
+     "left": 10
+    },
+    {
+     "from": [
+      4,
+      64,
+      64,
+      128,
+      96
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~0_64",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 10
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Manager's Memo",
+     "style": "d4_memo~64_4096",
+     "font": "ttf:d4hand:14:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 10
+    }
+   ],
+   "name": "edm 18/19/1a",
+   "sprites": "z5_edm_0#3",
+   "sprite_prefix": "z5_edm_0"
+  }
+ ]
+}

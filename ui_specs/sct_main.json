@@ -1,0 +1,1259 @@
+{
+ "arc": "sct_main.arc",
+ "repack": [
+  {
+   "bank": "p4_kpi_oto#106",
+   "palette": 0,
+   "style": "d4_efd",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     48,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     96,
+     72,
+     128,
+     96
+    ],
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     8
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Pro Draft",
+     "style": "d4_efd",
+     "font": "ttf:rounded:49:0.0:1.0:0.7",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "from": [
+      1,
+      72,
+      48,
+      128,
+      120
+     ],
+     "empty": true
+    }
+   ],
+   "name": "z4_efd_0",
+   "sprites": "z4_efd_0#107",
+   "sprite_prefix": "z4_efd_0"
+  },
+  {
+   "bank": "z4_efd_0#107",
+   "palette": 0,
+   "style": "d4_efk",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Koshien Tournament",
+     "style": "d4_efk",
+     "font": "ttf:rounded:21:0.0:1.0:0.7",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "01",
+     "text": "Berth Clinched!",
+     "style": "d4_efk",
+     "font": "ttf:rounded:21:0.0:1.0:0.7",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    }
+   ],
+   "name": "z4_efk_0",
+   "sprites": "z4_efk_0#108",
+   "sprite_prefix": "z4_efk_0"
+  },
+  {
+   "bank": "z4_efk_0#108",
+   "palette": 0,
+   "style": "d4_efc",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "District Tourney",
+     "style": "d4_efc",
+     "font": "ttf:rounded:23:0.0:1.0:0.7",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "01",
+     "text": "Berth Clinched!",
+     "style": "d4_efc",
+     "font": "ttf:rounded:23:0.0:1.0:0.7",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    }
+   ],
+   "name": "z4_efc_0",
+   "sprites": "z4_efc_0#109",
+   "sprite_prefix": "z4_efc_0"
+  },
+  {
+   "bank": "z4_efs_0#112",
+   "palette": 0,
+   "style": "d4_esr_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     64,
+     32,
+     128,
+     64
+    ],
+    [
+     2,
+     64,
+     64,
+     128,
+     96
+    ],
+    [
+     2,
+     64,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      64,
+      32,
+      128,
+      64
+     ],
+     "text": "~ Growth Report ~",
+     "style": "d4_esr_title~0_48",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 23,
+     "left": 17
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      128,
+      96
+     ],
+     "text": "~ Growth Report ~",
+     "style": "d4_esr_title~48_112",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 23,
+     "left": 1
+    },
+    {
+     "from": [
+      2,
+      64,
+      96,
+      128,
+      128
+     ],
+     "text": "~ Growth Report ~",
+     "style": "d4_esr_title~112_4096",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 23,
+     "left": 1
+    }
+   ],
+   "name": "esr title",
+   "sprites": "z5_esr_0#113",
+   "sprite_prefix": "z5_esr_0"
+  },
+  {
+   "bank": "z4_efs_0#112",
+   "palette": 0,
+   "style": "d4_esr_name",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     5,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     64,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "06",
+     "text": "Trust",
+     "style": "d4_esr_trust",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 24,
+     "left": 172
+    },
+    {
+     "sprite": "07",
+     "text": "Trust",
+     "style": "d4_esr_trust",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 171
+    },
+    {
+     "sprite": "16",
+     "text": "Trajectory",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 266
+    },
+    {
+     "sprite": "17",
+     "text": "Contact",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 268
+    },
+    {
+     "sprite": "18",
+     "text": "Power",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 266
+    },
+    {
+     "sprite": "19",
+     "text": "Speed",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 266
+    },
+    {
+     "sprite": "1a",
+     "text": "Arm",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 266
+    },
+    {
+     "sprite": "1b",
+     "text": "Fielding",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 267
+    },
+    {
+     "sprite": "1c",
+     "text": "Error Res.",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 267
+    },
+    {
+     "sprite": "1d",
+     "text": "Velocity",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 266
+    },
+    {
+     "sprite": "1e",
+     "text": "Control",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 268
+    },
+    {
+     "sprite": "1f",
+     "text": "Stamina",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 266
+    },
+    {
+     "from": [
+      4,
+      80,
+      96,
+      128,
+      128
+     ],
+     "text": "Breaking",
+     "style": "d4_esr_name~0_32",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": -1
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      16,
+      32
+     ],
+     "text": "Breaking",
+     "style": "d4_esr_name~32_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": -17
+    },
+    {
+     "from": [
+      5,
+      16,
+      0,
+      104,
+      32
+     ],
+     "text": "1st Breaking",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 5
+    },
+    {
+     "from": [
+      5,
+      16,
+      0,
+      32,
+      32
+     ],
+     "text": "2nd Breaking",
+     "style": "d4_esr_name~0_32",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 1
+    },
+    {
+     "from": [
+      5,
+      104,
+      0,
+      128,
+      32
+     ],
+     "text": "2nd Breaking",
+     "style": "d4_esr_name~32_64",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 17
+    },
+    {
+     "from": [
+      5,
+      56,
+      0,
+      104,
+      32
+     ],
+     "text": "2nd Breaking",
+     "style": "d4_esr_name~64_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 25
+    },
+    {
+     "from": [
+      5,
+      0,
+      32,
+      112,
+      64
+     ],
+     "text": "2nd Fastball",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 2
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "up!",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 4
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "down\u2026",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 4
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "learned!",
+     "style": "d4_esr_name",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 3
+    }
+   ],
+   "name": "esr",
+   "sprites": "z5_esr_0#113",
+   "sprite_prefix": "z5_esr_0"
+  },
+  {
+   "bank": "z5_esr_0#113",
+   "palette": 0,
+   "style": "d4_emj_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     64,
+     96,
+     128
+    ],
+    [
+     1,
+     96,
+     96,
+     128,
+     128
+    ],
+    [
+     1,
+     120,
+     64,
+     128,
+     96
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "04",
+     "text": "Nature",
+     "style": "d4_emj_head",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 211
+    },
+    {
+     "sprite": "05",
+     "text": "Trust",
+     "style": "d4_emj_head",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 244
+    },
+    {
+     "sprite": "06",
+     "text": "Scout Rating",
+     "style": "d4_emj_head",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 279
+    },
+    {
+     "sprite": "0c",
+     "text": "Starter",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 179
+    },
+    {
+     "sprite": "0d",
+     "text": "Bench",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 179
+    },
+    {
+     "sprite": "0e",
+     "text": "Off Bench",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 180
+    },
+    {
+     "sprite": "0f",
+     "text": "Ordinary",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 212
+    },
+    {
+     "sprite": "10",
+     "text": "Cool",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 212
+    },
+    {
+     "sprite": "11",
+     "text": "Shy",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 212
+    },
+    {
+     "sprite": "12",
+     "text": "Goofball",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 212
+    },
+    {
+     "sprite": "13",
+     "text": "Genius",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 212
+    },
+    {
+     "sprite": "14",
+     "text": "Naughty",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 212
+    },
+    {
+     "sprite": "15",
+     "text": "Fiery",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 212
+    },
+    {
+     "sprite": "16",
+     "text": "Shrewd",
+     "style": "d4_emj_word",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 212
+    }
+   ],
+   "name": "emj",
+   "sprites": "z5_emj_0#114",
+   "sprite_prefix": "z5_emj_0"
+  },
+  {
+   "bank": "z5_emj_0#114",
+   "palette": 0,
+   "style": "d4_edsm",
+   "font": "ttf:d4narrow:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     3,
+     0,
+     48,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     24,
+     80,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      0,
+      24,
+      24
+     ],
+     "text": "Title",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:14:0.0:1.0:0.15",
+     "baseline": 20,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      24,
+      0,
+      48,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      48,
+      0,
+      72,
+      24
+     ],
+     "text": "Nature",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:14:0.0:1.0:0.15",
+     "baseline": 20,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      72,
+      0,
+      96,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      96,
+      0,
+      128,
+      24
+     ],
+     "text": "Mood",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:14:0.0:1.0:0.15",
+     "baseline": 20,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      24,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      24,
+      24,
+      80,
+      48
+     ],
+     "text": "Trust",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:14:0.0:1.0:0.15",
+     "baseline": 20,
+     "left": 1
+    },
+    {
+     "sprite": "06",
+     "text": "yr",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:13:0.0:1.0:0.15",
+     "baseline": 19
+    },
+    {
+     "from": [
+      3,
+      32,
+      72,
+      80,
+      96
+     ],
+     "text": "No.",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:13:0.0:1.0:0.15",
+     "baseline": 19,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      72,
+      112
+     ],
+     "text": "(Starter)",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 13,
+     "left": 2
+    },
+    {
+     "from": [
+      3,
+      72,
+      96,
+      128,
+      112
+     ],
+     "text": "(Bench)",
+     "style": "d4_edsm~0_16",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 14,
+     "left": 14
+    },
+    {
+     "from": [
+      3,
+      0,
+      112,
+      16,
+      128
+     ],
+     "text": "(Bench)",
+     "style": "d4_edsm~16_4096",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 14,
+     "left": -26
+    },
+    {
+     "from": [
+      3,
+      32,
+      72,
+      112,
+      96
+     ],
+     "text": "No Number",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:13:0.0:1.0:0.15",
+     "baseline": 19,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      16,
+      112,
+      80,
+      128
+     ],
+     "text": "(Off Bench)",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 14,
+     "left": 2
+    },
+    {
+     "sprite": "25",
+     "text": "Scout's Comment",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:13:0.0:1.0:0.15",
+     "baseline": 350
+    }
+   ],
+   "name": "edsm p3",
+   "sprites": "z4_edsm_0_opd#115",
+   "sprite_prefix": "z4_edsm_0"
+  },
+  {
+   "bank": "z5_emj_0#114",
+   "palette": 0,
+   "style": "d4_edsm",
+   "font": "ttf:d4narrow:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     4,
+     0,
+     120,
+     8,
+     128
+    ],
+    [
+     4,
+     120,
+     120,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      72,
+      48,
+      112,
+      72
+     ],
+     "text": "Stats",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      112,
+      48,
+      128,
+      72
+     ],
+     "text": "ERA",
+     "style": "d4_edsm~0_16",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18,
+     "left": 15
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      40,
+      96
+     ],
+     "text": "ERA",
+     "style": "d4_edsm~16_4096",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18,
+     "left": 15
+    },
+    {
+     "from": [
+      4,
+      40,
+      72,
+      72,
+      96
+     ],
+     "text": "AVG",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      72,
+      72,
+      96,
+      96
+     ],
+     "text": "HR",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      96,
+      72,
+      120,
+      96
+     ],
+     "text": "RBI",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      120,
+      72,
+      128,
+      96
+     ],
+     "text": "SB",
+     "style": "d4_edsm~0_8",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18,
+     "left": 5
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      16,
+      120
+     ],
+     "text": "SB",
+     "style": "d4_edsm~8_4096",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18,
+     "left": 5
+    },
+    {
+     "from": [
+      4,
+      56,
+      96,
+      96,
+      120
+     ],
+     "text": "Career",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      96,
+      96,
+      128,
+      120
+     ],
+     "text": "G",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18,
+     "sprites": [
+      "18"
+     ]
+    },
+    {
+     "from": [
+      4,
+      16,
+      96,
+      56,
+      120
+     ],
+     "text": "Last",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18,
+     "left": 4,
+     "sprites": [
+      "24"
+     ]
+    },
+    {
+     "from": [
+      4,
+      96,
+      96,
+      128,
+      120
+     ],
+     "text": "games",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 18,
+     "left": 1,
+     "sprites": [
+      "24"
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Summer Tokyo",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "1a",
+     "text": "Summer Hokkaido",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "1b",
+     "text": "Summer Pref.",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "1c",
+     "text": "Summer Pref.",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "1d",
+     "text": "Fall Tokyo",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "1e",
+     "text": "Fall Hokkaido",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "1f",
+     "text": "Fall Pref.",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "20",
+     "text": "Fall Pref.",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "21",
+     "text": "Summer Koshien",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 292
+    },
+    {
+     "sprite": "22",
+     "text": "Spring Koshien",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    },
+    {
+     "sprite": "23",
+     "text": "Fall District",
+     "style": "d4_edsm",
+     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "baseline": 291
+    }
+   ],
+   "name": "edsm p4",
+   "sprites": "z4_edsm_0_opd#115",
+   "sprite_prefix": "z4_edsm_0"
+  }
+ ],
+ "sheet": [
+  {
+   "pages": "tex_n5_bg_kumiawase",
+   "cols": 3,
+   "items": [
+    {
+     "box": [
+      22,
+      0,
+      160,
+      30
+     ],
+     "bg": "rows",
+     "text": "Bracket Draw",
+     "font": "ttf:rounded:17:0:0.85:0.7",
+     "colour": "#505050",
+     "crisp": true,
+     "centre": [
+      88,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "pages": "tex_n5_bg_tournament",
+   "cols": 3,
+   "items": [
+    {
+     "box": [
+      56,
+      0,
+      272,
+      32
+     ],
+     "bg": "rows",
+     "text": "Koshien Bracket Draw",
+     "font": "ttf:rounded:16:0:0.8:0.7",
+     "colour": "#d85a45",
+     "crisp": true,
+     "centre": [
+      164,
+      16
+     ]
+    }
+   ]
+  }
+ ]
+}
