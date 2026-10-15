@@ -361,6 +361,9 @@ def bank_of(banks, group):
         b = dict(b, sprites=banks[banks.index(b) + 1]["sprites"])
     if "sprites" in group:
         b = dict(b, sprites=U.bank_named(banks, group["sprites"])["sprites"])
+    if "sprite_prefix" in group:                      # only the tables named opd_<prefix>_.. (a reader bank can hold several)
+        pre = "opd_" + group["sprite_prefix"] + "_"
+        b = dict(b, sprites={n: ps for n, ps in b["sprites"].items() if n.startswith(pre)})
     return b
 
 
