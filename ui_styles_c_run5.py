@@ -8,12 +8,18 @@ from ui_styles_c_run1 import win
 STYLES = {}
 
 
-def add(name, style, windows=False):
+def add(name, style, windows=False, middle=False):
     STYLES[name] = style
     if windows:
         for c in range(8, 296, 8):
             STYLES["%s~0_%d" % (name, c)] = win(style, 0, c)
             STYLES["%s~%d_4096" % (name, c)] = win(style, c, 4096)
+    if middle:                                         # a word cut over three or more parts: also the windows in between (multiples of 16)
+        for c in range(16, 368, 16):
+            STYLES["%s~0_%d" % (name, c)] = win(style, 0, c)
+            STYLES["%s~%d_4096" % (name, c)] = win(style, c, 4096)
+            for c2 in range(c + 16, 368, 16):
+                STYLES["%s~%d_%d" % (name, c, c2)] = win(style, c, c2)
 
 
 # ---- s3_phg00 stadium names (palette 48): white letters, three grey-blue rings, a shadow; the short plates (56x24) get two rings ----------
@@ -37,8 +43,8 @@ add("c5_pen_green", ringfill([11, 11, 12, 13, 14, 15], [2, 5, 8], [1]))         
 add("c5_pen_lime", ringfill([11, 11, 12, 13, 14, 14], [7, 4, 2]))                # pal 12: small plate heading
 add("c5_pen_mint", ringfill([10, 11, 12, 13, 13, 13], [6, 4, 2]))                # pal 11
 add("c5_pen_blue", ringfill([2, 2, 2, 2, 2, 2], [12]))                           # pal 13: tiny blue suffix
-add("c5_pen_help", ringfill([14, 15, 15, 15, 14, 14], [6, 3]))                   # pal 16: navy help text, white ring
-add("c5_pen_warn", ringfill([14, 15, 15, 14, 14, 13], [6, 3]))                   # pal 17: red warning text, white ring
+add("c5_pen_help", ringfill([14, 15, 15, 15, 14, 14], [6, 3]), middle=True)                   # pal 16: navy help text, white ring
+add("c5_pen_warn", ringfill([14, 15, 15, 14, 14, 13], [6, 3]), middle=True)                   # pal 17: red warning text, white ring
 
 # ---- s3_pnd00 ---------------------------------------------------------------------------------------------------------------------------------
 add("c5_pnd", ringfill([14, 14, 13, 12, 11, 10], [2, 3, 14], [6, 5]), windows=True)         # pal 125 / 126: pale silver letters, lilac rings
