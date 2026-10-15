@@ -118,6 +118,12 @@ STYLES["a5_s3_pi00_89"] = ringfill([1, 1, 1, 1, 1, 1], [10], [12])
 STYLES["a5_s3_pi00_89_s"] = ringfill([1, 1, 1, 1, 1, 1], [10], [12])
 STYLES["a5_s3_pi00_91"] = ringfill([2, 2, 2, 2, 2, 2], [15, 15], [1])
 STYLES["a5_s3_pi00_91_s"] = ringfill([2, 2, 2, 2, 2, 2], [15], [1])
+STYLES["a5_s3_sav00_0"] = ringfill([15, 15, 15, 15, 15, 15], [1, 1, 7], [5, 8])
+STYLES["a5_s3_sav00_0_s"] = ringfill([15, 15, 15, 15, 15, 15], [1], [5])
+STYLES["a5_s3_sav00_3"] = ringfill([14, 14, 14, 14, 14, 14], [1, 1, 15], [4, 7])
+STYLES["a5_s3_sav00_3_s"] = ringfill([14, 14, 14, 14, 14, 14], [1], [4])
+STYLES["a5_s3_sav00_4"] = ringfill([15, 15, 15, 15, 15, 15], [1, 1, 15], [6, 10])
+STYLES["a5_s3_sav00_4_s"] = ringfill([15, 15, 15, 15, 15, 15], [1], [6])
 STYLES["a5_s3_syp00_25"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7], [5, 2])
 STYLES["a5_s3_syp00_25_s"] = ringfill([15, 15, 15, 15, 15, 15], [7], [5])
 STYLES["a5_s3_syp00_39"] = ringfill([15, 15, 15, 15, 15, 15], [9, 6], [3, 1])
@@ -152,3 +158,45 @@ STYLES["a5_x2_asa16_1"] = ringfill([3, 3, 3, 3, 3, 3], [15, 15, 2], [])
 STYLES["a5_x2_asa16_1_s"] = ringfill([3, 3, 3, 3, 3, 3], [15], [])
 STYLES["a5_y9_hiz_0"] = ringfill([10, 10, 10, 10, 10, 10], [9, 4, 3], [1])
 STYLES["a5_y9_hiz_0_s"] = ringfill([10, 10, 10, 10, 10, 10], [9], [1])
+
+def twotone(left, right):
+    """Two words in two colours: the ink is cut at its widest empty column run (the space) and each half gets its own style."""
+    import numpy as np
+
+    def style(ink, base):
+        occ = ink.any(0)
+        best, run, start = (0, None), 0, None
+        xs = np.nonzero(occ)[0]
+        for x in range(int(xs.min()), int(xs.max()) + 1):
+            if not occ[x]:
+                if run == 0: start = x
+                run += 1
+                if run > best[0]: best = (run, start)
+            else:
+                run = 0
+        if best[1] is None:
+            return left(ink, base)
+        g0, g1 = best[1], best[1] + best[0]
+        la, lb = left(ink[:, :g0], base)
+        ra, rb = right(ink[:, g1:], base)
+        gap = max(1, best[0] - 3)
+        top = max(lb, rb)
+        H = max(top - lb + la.shape[0], top - rb + ra.shape[0])
+        out = np.zeros((H, la.shape[1] + gap + ra.shape[1]), np.uint8)
+        out[top - lb:top - lb + la.shape[0], :la.shape[1]] = la
+        sub = out[top - rb:top - rb + ra.shape[0], la.shape[1] + gap:]
+        sub[ra > 0] = ra[ra > 0]
+        return out, top
+    return style
+
+
+# g3_jun 05 / 07: the Japanese is two words in two colours (blue / gold, pink / gold), white rings, navy ring, teal shadow
+_TT05 = (ringfill([7, 8, 9, 9, 10, 10], [6, 6, 14], [11, 11, 11]), ringfill([1, 1, 2, 2, 3, 3], [6, 6, 14], [11, 11, 11]))
+_TT05S = (ringfill([7, 8, 9, 9, 10, 10], [6], [11]), ringfill([1, 1, 2, 2, 3, 3], [6], [11]))
+_TT07 = (ringfill([7, 6, 6, 5, 5, 5], [12, 12, 1], [15, 15, 15]), ringfill([10, 9, 9, 9, 8, 8], [12, 12, 1], [15, 15, 15]))
+_TT07S = (ringfill([7, 6, 6, 5, 5, 5], [12], [15]), ringfill([10, 9, 9, 9, 8, 8], [12], [15]))
+STYLES["a5_g3_jun_tt05"] = twotone(*_TT05)
+STYLES["a5_g3_jun_tt05_s"] = twotone(*_TT05S)
+STYLES["a5_g3_jun_tt07"] = twotone(*_TT07)
+STYLES["a5_g3_jun_tt07_s"] = twotone(*_TT07S)
+
