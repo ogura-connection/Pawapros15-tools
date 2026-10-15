@@ -51,7 +51,7 @@ def thin(inner, cut):
     return style
 
 
-_HLP = thin(ringfill([15], [4]), 3)
+_HLP = thin(ringfill([15], [4]), 2)
 STYLES["hlp_raw"] = _HLP
 for _w in range(16, 200):
     STYLES["hlp%d" % _w] = canvas(_HLP, _w, 15, 11)              # cap 9, 15 rows, baseline on row 11

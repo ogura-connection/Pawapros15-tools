@@ -1154,10 +1154,10 @@
     {
      "sprite": "45",
      "text": "No mark shows where\nthe ball will land.",
-     "style": "hlp101",
+     "style": "hlp102",
      "font": "ttf:narrowr:9:0:1.0:0.0",
      "slices": true,
-     "slice_width": 101,
+     "slice_width": 102,
      "line_step": 22,
      "palettes": [
       24
@@ -1168,10 +1168,10 @@
     {
      "sprite": "46",
      "text": "A mark shows where\nthe ball will land,\nmaking fielding easier.",
-     "style": "hlp101",
+     "style": "hlp102",
      "font": "ttf:narrowr:9:0:1.0:0.0",
      "slices": true,
-     "slice_width": 101,
+     "slice_width": 102,
      "line_step": 22,
      "palettes": [
       24
@@ -1182,7 +1182,7 @@
     {
      "sprite": "47",
      "text": "A cursor you move\nwhen pitching\nmakes pitching easier.",
-     "style": "hlp101",
+     "style": "hlp102",
      "font": "ttf:narrowr:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 51,
@@ -1392,7 +1392,7 @@
     {
      "sprite": "67",
      "text": "Pitch without the\ncatcher window.",
-     "style": "hlp75",
+     "style": "hlp76",
      "font": "ttf:narrowr:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1420,10 +1420,10 @@
     {
      "sprite": "69",
      "text": "Pitch from the\npitcher's view.",
-     "style": "hlp63",
+     "style": "hlp64",
      "font": "ttf:narrowr:9:0:1.0:0.0",
      "slices": true,
-     "slice_width": 63,
+     "slice_width": 64,
      "line_step": 22,
      "palettes": [
       24
@@ -1434,7 +1434,7 @@
     {
      "sprite": "6d",
      "text": "No callouts.\nPlayer names and\npositions are shown.",
-     "style": "hlp93",
+     "style": "hlp94",
      "font": "ttf:narrowr:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 47,

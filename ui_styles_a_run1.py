@@ -169,20 +169,26 @@ PLATE_MASKS = {
 }
 
 
-def _mask(key, size=None):
+def _mask(key, size=None, extra=0):
+    """The plate shape; `extra` columns (even) are added in the middle (a wider plate: caps move outwards)."""
     if key in PLATE_MASKS:
-        return np.array([[c == "#" for c in row] for row in PLATE_MASKS[key]])
-    return np.ones((size[1], size[0]), bool)
+        m = np.array([[c == "#" for c in row] for row in PLATE_MASKS[key]])
+    else:
+        m = np.ones((size[1], size[0]), bool)
+    if extra:
+        mid = m.shape[1] // 2
+        m = np.insert(m, [mid] * extra, m[:, mid:mid + 1], axis=1)
+    return m
 
 
-def plated(key, size=None, fill=(15,), rings=(8, 5), bg=1, pad=1):
+def plated(key, size=None, fill=(15,), rings=(8, 5), bg=1, pad=1, extra=0):
     """Lettering on a plate that is part of the art: the plate (index `bg`, in the shape of the Japanese plate) with the
     letters (fill, then rings) centred on it; the result is the whole plate, so it replaces the Japanese art exactly."""
     inner = ringfill(list(fill), list(rings))
 
     def style(ink, base):
         art, b = inner(ink, base)
-        m = _mask(key, size)
+        m = _mask(key, size, extra)
         H, W = m.shape
         h, w = art.shape
         if w > W - 2 * pad or h > H - 2 * pad:
@@ -196,7 +202,8 @@ def plated(key, size=None, fill=(15,), rings=(8, 5), bg=1, pad=1):
 
 
 for _k, _size in (("bat", (40, 24)), ("run", (40, 24)), ("shift", None), ("pitch", (40, 24)), ("throw", (40, 24)), ("pitcha", None)):
-    STYLES["ctl_tab_" + _k] = plated(_k, _size)
+    for _e in range(0, 17, 2):
+        STYLES["ctl_tab_%s_e%d" % (_k, _e)] = plated(_k, _size, extra=_e)
 STYLES["ctl_plate_atk"] = plated("atk", pad=2, rings=(7, 5))
 STYLES["ctl_plate_def"] = plated("def", pad=2, rings=(7, 5))
 

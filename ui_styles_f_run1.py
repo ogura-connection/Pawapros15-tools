@@ -80,3 +80,6 @@ def onoval(oval, rim, ring, shadow, ramp, height=13, margin=6, ends=(4, 2, 1)):
 STYLES["f_btn"] = bandtext([0, 12, 10, 9, 8, 8, 8], [15, 7], [4, 3])
 # g3_od bars (palettes 32-36): white letters on the dark oval (1) with a lighter rim (4); a light blue shadow (13, 12)
 STYLES["f_bar"] = onoval(1, 4, 1, [13, 12], [0, 9, 9, 8, 8, 8, 8])
+
+# g3_od tabs (palette 9, the 控え / 2軍 tabs of the bench panel): navy letters, white ring, blue shadow
+STYLES["f_tab"] = bandtext([0, 5, 3, 2, 1, 1, 1], [8, 9], [14, 13])

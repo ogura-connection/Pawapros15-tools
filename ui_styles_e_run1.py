@@ -120,6 +120,12 @@ def clean_inpaint(letters, box=None):
 
 STYLES = {
     "e_scm": scm_style,
+    # side marks on the digit font (g3_suuzi page 1): white letters, a black two-pixel outline
+    "e_suuzi": crisp(banded([0, 1, 1, 1, 1, 1, 1], [15, 15])),
+    # Mii choice plates (r4w_mi): green letters in a white halo; the game draws the same art again as a light blue silhouette
+    "e_mi": tight(banded([0, 8, 6, 4, 3, 2, 2], [15, 15])),
+    # 残り時間 (s4_clo00): blue letters shading to pale at the edge, a one-pixel white halo
+    "e_clo": tight(banded([0, 10, 7, 5, 3, 1, 1], [15])),
     "e_pl_bb": plated_text("r4_12h", "bb", clean_box((4, 7, 31, 25), fill=15), [0, 8, 5, 3, 2, 1, 1], [], (17, 16)),      # League (palette 84)
     "e_pl_e1": plated_text("r4_12h", "e1", clean_box((14, 12, 39, 39), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (26, 25), True),
     "e_pl_e2": plated_text("r4_12h", "e2", clean_box((9, 8, 26, 26), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (17, 17), True),

@@ -2329,6 +2329,156 @@
    ]
   },
   {
+   "name": "Mii plates",
+   "bank": "r4w_mi",
+   "style": "e_mi",
+   "share": true,
+   "areas": [
+    [
+     0,
+     112,
+     0,
+     128,
+     32
+    ],
+    [
+     0,
+     72,
+     32,
+     128,
+     48
+    ],
+    [
+     0,
+     0,
+     48,
+     128,
+     72
+    ],
+    [
+     0,
+     72,
+     72,
+     128,
+     88
+    ],
+    [
+     0,
+     0,
+     120,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      48,
+      48,
+      72
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Wii Console",
+     "font": "ttf:din:8:0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      48,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "03"
+     ],
+     "text": "Random",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "valign": "centre"
+    }
+   ]
+  },
+  {
+   "name": "time left",
+   "bank": "s4_clo00",
+   "style": "e_clo",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     16,
+     128,
+     24
+    ],
+    [
+     0,
+     88,
+     24,
+     128,
+     48
+    ],
+    [
+     0,
+     0,
+     40,
+     32,
+     48
+    ],
+    [
+     0,
+     32,
+     48,
+     128,
+     64
+    ],
+    [
+     0,
+     0,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      88,
+      24,
+      128,
+      40
+     ],
+     "sprites": [
+      "00"
+     ],
+     "text": "Time Left",
+     "font": "ttf:din:9:0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      88,
+      24,
+      128,
+      40
+     ],
+     "sprites": [
+      "01"
+     ],
+     "text": "Time Left",
+     "font": "ttf:din:9:0:1.0:0.0",
+     "valign": "centre"
+    }
+   ]
+  },
+  {
    "name": "team type plates",
    "bank": "r4_12h",
    "style": "e_plate",
@@ -3256,7 +3406,7 @@
      "sprite": "e3",
      "text": "HS",
      "style": "e_pl_e3",
-     "font": "ttf:din:18:0:1.0:0.0",
+     "font": "ttf:din:17:0:1.0:0.0",
      "valign": "centre"
     }
    ]
@@ -12647,6 +12797,50 @@
      "baseline": 18
     }
    ]
+  }
+ ],
+ "paint": [
+  {
+   "bank": "g3_suuzi",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    24,
+    24
+   ],
+   "text": "L",
+   "style": "e_suuzi",
+   "font": "ttf:rounded:16:0:1:0.6",
+   "copy": "clear"
+  },
+  {
+   "bank": "g3_suuzi",
+   "page": 1,
+   "rect": [
+    32,
+    0,
+    56,
+    24
+   ],
+   "text": "S",
+   "style": "e_suuzi",
+   "font": "ttf:rounded:16:0:1:0.6",
+   "copy": "clear"
+  },
+  {
+   "bank": "g3_suuzi",
+   "page": 1,
+   "rect": [
+    64,
+    0,
+    88,
+    24
+   ],
+   "text": "R",
+   "style": "e_suuzi",
+   "font": "ttf:rounded:16:0:1:0.6",
+   "copy": "clear"
   }
  ]
 }
