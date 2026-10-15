@@ -57,3 +57,4 @@ for _w in range(16, 97):
     STYLES["d_rt_%d" % _w] = platefill([0xf, 0xe, 0xd], [6], [], _w, 24)
     STYLES["d_oma_%d" % _w] = platefill([0xf, 0xf, 0xf, 0xe], [2], [1], _w, 24)
 STYLES["d_rt_measure"] = ringfill([0xf, 0xe, 0xd], [6])      # width probe for the plate styles
+STYLES["d_oma_measure"] = ringfill([0xf, 0xf, 0xf, 0xe], [2], [1])

@@ -83,15 +83,15 @@ STYLES['c_sd_custom'] = logo([12, 11, 9, 8, 7], [12, 12], 3, 12, 12, [1, 1, 1], 
 # r3_sd 45 Surround (palette 9): pink
 STYLES['c_sd_surround'] = logo([11, 9, 8, 7, 6], [11, 11], 3, 12, 12, [1, 1, 1], 2, 2)
 # r3_sd 11 High (palette 6): orange to pink
-STYLES['c_sd_high'] = logo([10, 9, 8, 7, 6], [10, 10], 3, 12, 12, [1, 1, 1], 2, 2)
+STYLES['c_sd_high'] = logo([10, 9, 8, 7, 6], [10, 10], 3, 12, 12, [1], 1, 1)
 # r3_sd 12 Mid (palette 7): yellow
-STYLES['c_sd_mid'] = logo([11, 10, 9, 8, 7], [11, 11], 3, 12, 12, [1, 1, 1], 2, 2)
+STYLES['c_sd_mid'] = logo([11, 10, 9, 8, 7], [11, 11], 3, 12, 12, [1], 1, 1)
 # r3_sd 13 Low (palette 8): green
-STYLES['c_sd_low'] = logo([11, 10, 9, 8, 6], [11, 11], 3, 12, 12, [1, 1, 1], 2, 2)
+STYLES['c_sd_low'] = logo([11, 10, 9, 8, 6], [11, 11], 3, 12, 12, [1], 1, 1)
 # r3_sd 14 Off (palette 5): pink
-STYLES['c_sd_off'] = logo([9, 8, 7, 6, 6], [9, 9], 3, 12, 12, [1, 1, 1], 2, 2)
+STYLES['c_sd_off'] = logo([9, 8, 7, 6, 6], [9, 9], 3, 12, 12, [1], 1, 1)
 # r3_sd 27 Sound banner lettering (palette 13): orange to pink letters, white ring, blue rings and shadow
-STYLES['c_sd_banner'] = ringfill([12, 12, 12, 13, 14, 14, 15, 15], [8, 7, 2, 1], [6, 5, 4, 3])
+STYLES['c_sd_banner'] = ringfill([12, 12, 12, 13, 14, 14, 15, 15], [8, 7, 1], [5, 4])
 STYLES['c_vs_ctl~0_32'] = win(STYLES['c_vs_ctl'], 0, 32)
 STYLES['c_vs_ctl~32_64'] = win(STYLES['c_vs_ctl'], 32, 64)
 STYLES['c_vs_ctl~64_4096'] = win(STYLES['c_vs_ctl'], 64, 4096)
