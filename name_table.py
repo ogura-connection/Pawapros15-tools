@@ -21,7 +21,7 @@ from the game's own readings (_work/surnames.json: kanji, call id, kana of the c
 by hand where needed.
     python3 name_table.py export      write the TSV (keeps English already there)
     python3 name_table.py check       lengths, short forms, the patch sites of the original modules
-    python3 name_table.py export-given / export-draft   translation/names/in_place/<module>.tsv (see below)
+    python3 name_table.py export-given / -draft / -holders   translation/names/in_place/<module>.tsv (see below)
 """
 import os, struct, sys
 
@@ -345,6 +345,11 @@ def player_plates(players):
 # Draft prospects: draft.rel sec5+0x2C08, 2,000 records of 144 bytes: six cells (kanji, two-kanji names
 #   as k1, blank, k2), the announcer's call id at +0x3C. English: the surname list's English for the same
 #   call id, else the call's reading romanised.
+# Record holders: pn_ore_i.rel sec4 (Pennant / My Life record books, NPB history): records start with 0xFFFF
+#   or 0xFFFE; (0x0100, kind << 8 | team, year) then six cells (two-kanji names as k1, blank, k2), or a
+#   variant with a date (0x012A..0x0140, ...) and the cells one later. 810 fields, 303 people; English by hand
+#   in _work/names/holders_en.json (name as decoded -> English, game text: not tracked). Two people share
+#   one name: Bobby Rose (team 4, Yokohama) and Tuffy Rhodes (the rest).
 IN_PLACE_DIR = os.path.join(HERE, "translation", "names", "in_place")
 GIVEN = ("main_prg.rel", 5, 0x3B288, 200, 16)
 GIVEN_FIXES = {18: "Koichi", 33: "Shoichi",           # romaji keeps "ou" before a vowel
@@ -395,6 +400,39 @@ def inplace_patches(rel, rows, encode):
 
 def inplace_plates(stores):
     return [plate(en) for rows in stores.values() for _, _, en in rows]
+
+
+def holder_fields(d):
+    """[(offset, cells, team)] of every name field of the record holders (pn_ore_i.rel sec4)."""
+    hw = struct.unpack(">%dH" % (len(d) // 2), d)
+    out = []
+    for i, x in enumerate(hw[:-12]):
+        if x not in (0xFFFF, 0xFFFE):
+            continue
+        at = i + 4 if hw[i + 1] == 0x0100 else i + 5 if 0x0120 <= hw[i + 1] <= 0x0140 else None
+        if at and name_field(d, 2 * at):
+            out.append((2 * at, hw[at:at + CELLS], hw[i + 2] & 0xFF))
+    return out
+
+
+def cmd_export_holders():
+    import json
+    with open(os.path.join(S.WORK_DIR, "names", "holders_en.json"), encoding="utf-8") as f:
+        english = json.load(f)
+    fn, sec = "pn_ore_i.rel", 4
+    d = S.Rel(os.path.join(S.WORK_DIR, "orig", fn)).sec_data(sec)
+    rows, left = [], []
+    for o, cells, team in holder_fields(d):
+        key = S.decode_units([c if c < 0x1000 else c - 0x1000 for c in cells if c])
+        en = english.get(key)
+        if en == "Rhodes" and team == 4:
+            en = "Rose"
+        if en:
+            rows.append((sec, o, en))
+        else:
+            left.append((hex(o), key))
+    _write_store(fn, "record holders, Pennant / My Life record books", rows)
+    print("left as they are:", left)
 
 
 def _write_store(module, header, rows):
@@ -475,4 +513,5 @@ def cmd_check():
 
 if __name__ == "__main__":
     {"export": cmd_export, "export-given": cmd_export_given, "export-draft": cmd_export_draft,
+     "export-holders": cmd_export_holders,
      "check": cmd_check}.get((sys.argv + [""])[1], lambda: sys.exit(__doc__))()
