@@ -54,3 +54,17 @@ for _n, _c in (("a4_stk_ts", (0, 32, 160)), ("a4_stk_s", (0, 16, 64)), ("a4_stk_
         STYLES["%s~%d_%d" % (_n, _a, _b)] = win(STYLES[_n], _a, _b)
 STYLES["a4_stk_pass~0_128"] = win(STYLES["a4_stk_pass"], 0, 128)
 STYLES["a4_stk_pass~128_4096"] = win(STYLES["a4_stk_pass"], 128, 4096)
+
+
+# ---- sct_a_mk.arc (Eikan Nine: new club members setup, region and prefecture names) -------------------------------------------
+from ui_styles_voice import flat
+STYLES["a4_mk_navy"] = flat([0, 2, 2, 2, 2, 2, 2], 3)                           # m4_mak pal 8: navy letters, no ring (form labels, list heading)
+STYLES["a4_mk_navy~0_56"] = win(STYLES["a4_mk_navy"], 0, 56)                   # High School over its two parts (56 + 16)
+STYLES["a4_mk_navy~56_4096"] = win(STYLES["a4_mk_navy"], 56, 4096)
+STYLES["a4_mk_dark"] = flat([0, 2, 2, 2, 2, 2, 2], 3)                           # pal 3: the small black help text
+STYLES["a4_mk_title"] = ringfill([1], [2, 2, 6])                                # pal 3: white letters, black ring, grey edge
+STYLES["a4_mk_title~0_128"] = win(STYLES["a4_mk_title"], 0, 128)
+STYLES["a4_mk_title~128_4096"] = win(STYLES["a4_mk_title"], 128, 4096)
+STYLES["a4_mk_menu"] = ringfill([1], [5, 5, 4])                                 # pal 6 / 11: white letters, black ring, dark green edge
+STYLES["a4_mk_big"] = ringfill([1], [3, 3, 3, 1, 2])                            # p4_mp pal 0: white letters, blue ring, white ring, pale glow
+STYLES["a4_mk_small"] = ringfill([1], [3, 3, 2])                                # p4_mp pal 1

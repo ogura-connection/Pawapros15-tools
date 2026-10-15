@@ -1,0 +1,841 @@
+{
+ "arc": "sct_a_pr.arc",
+ "repack": [
+  {
+   "bank": "z4_edr_0",
+   "palette": 40,
+   "style": "b4_pr_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     64,
+     64,
+     128,
+     88
+    ],
+    [
+     1,
+     0,
+     88,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "All",
+     "style": "b4_pr_tab",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Pitchers",
+     "style": "b4_pr_tab",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "palettes": [
+      41
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Fielders",
+     "style": "b4_pr_tab",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 20,
+     "palettes": [
+      42
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Easy Orders",
+     "style": "b4_pr_tab",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 20,
+     "palettes": [
+      43
+     ]
+    }
+   ],
+   "name": "tabs",
+   "split": true
+  },
+  {
+   "bank": "z4_edr_0",
+   "palette": 49,
+   "style": "b4_pr_head_s",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     16,
+     72,
+     48,
+     96
+    ],
+    [
+     3,
+     48,
+     72,
+     88,
+     96
+    ],
+    [
+     3,
+     88,
+     72,
+     120,
+     96
+    ],
+    [
+     3,
+     0,
+     24,
+     32,
+     48
+    ],
+    [
+     3,
+     32,
+     24,
+     64,
+     48
+    ],
+    [
+     3,
+     64,
+     24,
+     112,
+     48
+    ],
+    [
+     3,
+     112,
+     24,
+     128,
+     48
+    ],
+    [
+     3,
+     16,
+     48,
+     48,
+     72
+    ],
+    [
+     3,
+     48,
+     48,
+     80,
+     72
+    ],
+    [
+     3,
+     80,
+     48,
+     112,
+     72
+    ],
+    [
+     3,
+     112,
+     48,
+     128,
+     72
+    ],
+    [
+     3,
+     0,
+     48,
+     16,
+     72
+    ],
+    [
+     3,
+     0,
+     72,
+     16,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      16,
+      72,
+      48,
+      96
+     ],
+     "text": "VEL",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      48,
+      72,
+      88,
+      96
+     ],
+     "text": "CTL",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      88,
+      72,
+      120,
+      96
+     ],
+     "text": "STA",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      32,
+      48
+     ],
+     "text": "TRJ",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      32,
+      24,
+      64,
+      48
+     ],
+     "text": "CON",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      64,
+      24,
+      112,
+      48
+     ],
+     "text": "POW",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      112,
+      24,
+      128,
+      48
+     ],
+     "text": "SPD",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "centre_x": 17,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      16,
+      72
+     ],
+     "empty": true,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      16,
+      48,
+      48,
+      72
+     ],
+     "text": "ARM",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      48,
+      48,
+      80,
+      72
+     ],
+     "text": "FLD",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      80,
+      48,
+      112,
+      72
+     ],
+     "text": "ERR",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      112,
+      48,
+      128,
+      72
+     ],
+     "text": "POS",
+     "style": "b4_pr_head_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 16,
+     "centre_x": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      16,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "1b"
+     ]
+    }
+   ],
+   "name": "column heads",
+   "split": true
+  },
+  {
+   "bank": "z4_edr_0",
+   "palette": 52,
+   "style": "b4_pr_pos",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     0,
+     8,
+     24
+    ],
+    [
+     5,
+     8,
+     0,
+     32,
+     24
+    ],
+    [
+     5,
+     32,
+     0,
+     56,
+     24
+    ],
+    [
+     5,
+     56,
+     0,
+     80,
+     24
+    ],
+    [
+     5,
+     0,
+     24,
+     32,
+     48
+    ],
+    [
+     5,
+     32,
+     24,
+     48,
+     48
+    ],
+    [
+     5,
+     48,
+     24,
+     64,
+     48
+    ],
+    [
+     5,
+     64,
+     24,
+     80,
+     48
+    ],
+    [
+     5,
+     80,
+     24,
+     96,
+     48
+    ],
+    [
+     5,
+     96,
+     24,
+     112,
+     48
+    ],
+    [
+     5,
+     112,
+     24,
+     128,
+     48
+    ],
+    [
+     5,
+     0,
+     48,
+     32,
+     72
+    ],
+    [
+     5,
+     32,
+     48,
+     48,
+     72
+    ],
+    [
+     5,
+     48,
+     48,
+     64,
+     72
+    ],
+    [
+     5,
+     80,
+     0,
+     128,
+     24
+    ],
+    [
+     5,
+     64,
+     48,
+     96,
+     72
+    ],
+    [
+     5,
+     96,
+     48,
+     128,
+     72
+    ],
+    [
+     5,
+     0,
+     72,
+     32,
+     96
+    ],
+    [
+     7,
+     0,
+     48,
+     128,
+     88
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "27",
+     "text": "P",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "28",
+     "text": "C",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "29",
+     "text": "1B",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "2a",
+     "text": "2B",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "2b",
+     "text": "3B",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "2c",
+     "text": "SS",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 16
+    },
+    {
+     "sprite": "2d",
+     "text": "OF",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "2e",
+     "text": "P",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "2f",
+     "text": "C",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "30",
+     "text": "1B",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "31",
+     "text": "2B",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "32",
+     "text": "3B",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "33",
+     "text": "SS",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "34",
+     "text": "OF",
+     "style": "b4_pr_pos",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "35",
+     "text": "R/R",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "36",
+     "text": "R/L",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18,
+     "pieces": [
+      {
+       "text": "R/",
+       "palette": 63
+      },
+      {
+       "text": "L",
+       "palette": 61
+      }
+     ],
+     "join": 0
+    },
+    {
+     "sprite": "37",
+     "text": "R/S",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18,
+     "pieces": [
+      {
+       "text": "R/",
+       "palette": 63
+      },
+      {
+       "text": "S",
+       "palette": 62
+      }
+     ],
+     "join": 0
+    },
+    {
+     "sprite": "38",
+     "text": "L/R",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17,
+     "pieces": [
+      {
+       "text": "L/",
+       "palette": 61
+      },
+      {
+       "text": "R",
+       "palette": 63
+      }
+     ],
+     "join": 0
+    },
+    {
+     "sprite": "39",
+     "text": "L/L",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "3a",
+     "text": "L/S",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 17,
+     "pieces": [
+      {
+       "text": "L/",
+       "palette": 61
+      },
+      {
+       "text": "S",
+       "palette": 62
+      }
+     ],
+     "join": 0
+    },
+    {
+     "sprite": "3b",
+     "text": "Active",
+     "style": "b4_pr_head",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "52",
+     "text": "1st",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "53",
+     "text": "2nd",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "54",
+     "text": "3rd",
+     "style": "b4_pr_col",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "from": [
+      7,
+      32,
+      24,
+      48,
+      48
+     ],
+     "empty": true,
+     "sprites": [
+      "4b"
+     ]
+    }
+   ],
+   "name": "positions, hands, years, active",
+   "split": true
+  },
+  {
+   "bank": "z4_edr_0",
+   "palette": 64,
+   "style": "b4_pr_msg",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     5,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     5,
+     48,
+     96,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     7,
+     48,
+     24,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3c",
+     "text": "Give practice orders\nto all pitchers.",
+     "style": "b4_pr_msg",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 35
+    },
+    {
+     "sprite": "3d",
+     "text": "Give practice orders\nto all fielders.",
+     "style": "b4_pr_msg",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "3e",
+     "text": "Give practice orders\nto all catchers.",
+     "style": "b4_pr_msg",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "3f",
+     "text": "Give practice orders\nto all infielders.",
+     "style": "b4_pr_msg",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "40",
+     "text": "Give practice orders\nto all outfielders.",
+     "style": "b4_pr_msg",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 36
+    }
+   ],
+   "name": "practice orders",
+   "split": true
+  }
+ ]
+}

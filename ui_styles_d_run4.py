@@ -65,8 +65,8 @@ STYLES["d4_efk"] = ringfill([7, 8, 9, 10, 11, 11], [13, 12, 1, 1], [3, 3, 3, 4])
 STYLES["d4_efc"] = ringfill([13, 9, 9, 10, 11, 12], [3, 3, 15, 15], [1, 2, 2, 1])            # pal 4: pale to deep cyan, blue, white, navy shadow
 
 # ---- gdt_sct.arc (Eikan Nine match screen) -------------------------------------------------------------------------------------
-STYLES["d4_gm20"] = ringfill([15, 15, 14, 13, 12, 11], [4, 3, 2], [])                  # z4_gm_0 pal 20: white letters, black ring
-STYLES["d4_gm22"] = ringfill([15, 15, 14, 13, 12, 11], [1, 1])                         # z4_gm_0 pal 22: white letters, black ring (stats headings)
+STYLES["d4_gm20"] = ringfill([15, 15, 15, 14, 13, 12], [4, 3])                  # z4_gm_0 pal 20: white letters, black ring
+STYLES["d4_gm22"] = ringfill([15, 15, 15, 14, 13, 12], [1])                         # z4_gm_0 pal 22: white letters, black ring (stats headings)
 STYLES["d4_gmt"] = ringfill([15, 15, 14, 13, 12, 11], [4, 3], [2, 1])                  # z5_gmt_0 pal 20: yellow letters, olive and dark green rings
 STYLES["d4_gmu"] = ringfill([15, 15, 14, 13, 12, 11], [7, 4, 4, 2])                    # z5_gmu_0 pal 20 / 21: white letters, blue (red) rings; the black layer behind is a copy
 STYLES["d4_gmh"] = ringfill([15, 15, 14, 13, 12, 11], [4, 4, 2])                       # z5_gmu_0 sprite 00 (pal 23): white letters, dark ring
