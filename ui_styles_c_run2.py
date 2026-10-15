@@ -130,7 +130,7 @@ def _plate(kind, page, rect):
     yy, xx = np.mgrid[0:32, 0:32]
     dist = np.hypot(yy - cy, xx - cx)
     out = np.where(solid & (dist > r - 4.5), old, 0).astype(np.uint8)
-    out[np.isin(out, (2, 3, 4, 5, 6)) & (dist > r - 4.5)] = 10
+    out[np.isin(out, (2, 3, 4, 5, 6)) & (dist > r - 4.5)] = 8
     out[dist <= r - 4.5] = 12
     return out, (int(round(cy)), int(round(cx)))
 
