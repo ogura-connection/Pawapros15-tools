@@ -2,7 +2,7 @@
 Loaded by ui_type.py. Colours were read from the Japanese lettering of each palette."""
 import numpy as np
 import ui_type
-from ui_type import grow, shift
+from ui_type import grow, shift, logo
 from ui_styles_ore_ini import ringfill
 
 STYLES = {}
@@ -47,3 +47,28 @@ STYLES["f_ky_yel"] = ringfill([0xf, 0xe, 0xa, 0xd, 0xd, 0xc], [3, 3], [5, 5, 6, 
 STYLES["f_ky_btn"] = ringfill([0xf, 0xf, 0xe, 0xd, 0xd], [5, 4])
 # 点 next to the digits (palette 6): lilac-white letters, light edge, navy outline, blue shadow
 STYLES["f_ky_pts"] = ringfill([0xe, 0xe, 0xd, 0xd, 0xc, 0xb], [0xa, 4], [2, 2])
+
+
+# z4_teu_0 titles (one palette each; the white twins, palette 15, take the same art: every index is white there).
+# Letters: a gradient, a thin dark outline, a white band two pixels wide, a pale rim, a navy shadow below and to the right.
+STYLES["f_teu_blue"] = logo([8, 8, 7, 6, 5, 5], [8, 8], 9, 1, 3, [0xd, 0xd, 0xd, 0xd], 2, 1)        # palette 0: Test Start
+STYLES["f_teu_pink"] = logo([7, 7, 8, 9, 10, 11], [7, 7], 3, 15, 5, [1, 1, 1, 1], 2, 1)             # palette 2: Test Over
+STYLES["f_teu_orange"] = logo([6, 6, 5, 4, 3, 2, 1], [6, 6], 7, 15, 11, [10, 10, 10, 10], 2, 1)     # palette 4: Win
+STYLES["f_teu_steel"] = logo([7, 8, 8, 9, 10, 10], [7, 7], 2, 15, 11, [1, 1, 1, 1], 2, 1)           # palette 6: Loss
+STYLES["f_teu_green"] = logo([7, 7, 8, 9, 10, 10], [7, 7], 2, 15, 3, [1, 1, 1, 1], 2, 1)            # palette 8: Tie
+
+
+def win(style, c0, c1):
+    """Only the columns c0..c1 of the whole word (a word shared out over parts that stand side by side)."""
+    def cut(ink, base):
+        art, b = style(ink, base)
+        out = art[:, c0:c1]
+        if out.shape[1] == 0:
+            out = np.zeros((art.shape[0], 1), np.uint8)
+        return out, b
+    return cut
+
+
+for _name in ("f_teu_blue", "f_teu_pink", "f_teu_orange", "f_teu_steel", "f_teu_green"):
+    for _c in ((0, 128), (128, 256), (0, 4096), (128, 4096)):
+        STYLES["%s~%d_%d" % (_name, _c[0], _c[1])] = win(STYLES[_name], *_c)
