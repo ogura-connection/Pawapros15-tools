@@ -98,6 +98,7 @@
     }
    ],
    "name": "buttons 1 (pages 6, 7)",
+   "split": true,
    "gap": [
     1,
     1
@@ -164,6 +165,7 @@
     }
    ],
    "name": "buttons 2 (pages 13, 14 right)",
+   "split": true,
    "gap": [
     1,
     1
@@ -344,6 +346,7 @@
     }
    ],
    "name": "bars (pages 13, 14 left)",
+   "split": true,
    "share": true
   },
   {
@@ -396,7 +399,8 @@
      "baseline": 22
     }
    ],
-   "name": "tabs (page 15)"
+   "name": "tabs (page 15)",
+   "split": true
   },
   {
    "bank": "g3_od",
@@ -436,7 +440,8 @@
      ]
     }
    ],
-   "name": "title (pages 10, 11)"
+   "name": "title (pages 10, 11)",
+   "split": true
   },
   {
    "bank": "g3_od",
@@ -589,7 +594,8 @@
      "left": 2
     }
    ],
-   "name": "tags (page 11)"
+   "name": "tags (page 11)",
+   "split": true
   },
   {
    "bank": "g3_od",
@@ -699,7 +705,8 @@
      "baseline": 28
     }
    ],
-   "name": "thin buttons (page 12)"
+   "name": "thin buttons (page 12)",
+   "split": true
   },
   {
    "bank": "g3_od",
@@ -725,7 +732,8 @@
      "baseline": 0
     }
    ],
-   "name": "thin button (page 9)"
+   "name": "thin button (page 9)",
+   "split": true
   }
  ]
 }

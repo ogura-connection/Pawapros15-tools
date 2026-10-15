@@ -66,8 +66,8 @@ STYLES["d_nxt_rank"] = ringfill([0xb, 0xc, 0xd, 0xd], [1, 1, 0xa, 9], [2])
 STYLES["d_nxt_ce"] = ringfill([0xe, 0xd, 0xc, 0xb], [4, 1], [1])
 STYLES["d_nxt_pa"] = ringfill([0xf, 0xe, 0xd, 0xc], [6, 4, 1], [2])
 STYLES["d_nxt_le"] = ringfill([0xf, 0xe, 0xc, 0xa], [4, 1], [2])
-STYLES["d_nxt_cl"] = ringfill([0xf, 0xf, 0xe, 0xc], [4, 1])
-STYLES["d_nxt_ch"] = ringfill([0xf, 0xf, 0xe, 0xd], [9, 7])
+STYLES["d_nxt_cl"] = ringfill([0xf, 0xf, 0xe, 0xc], [4])
+STYLES["d_nxt_ch"] = ringfill([0xf, 0xf, 0xe, 0xd], [8])
 
 # h3_her_0: banners (palette 23): mint letters, bright green ring, dark green outer ring; highlights (14): green letters, blue ring;
 # Today's Highlights in red (65): red letters, dark ring, white edge

@@ -1249,7 +1249,7 @@
       48
      ],
      "text": "Record",
-     "left": 13
+     "left": 18
     },
     {
      "from": [
@@ -1260,7 +1260,7 @@
       48
      ],
      "text": "Set!",
-     "left": 5
+     "left": 0
     }
    ]
   },
@@ -2004,7 +2004,10 @@
       96,
       48
      ],
-     "empty": true
+     "text": ".",
+     "style": "d_rt_measure",
+     "font": "ttf:rounded:6:0.0:1.0:0.0",
+     "left": -3000
     },
     {
      "from": [
@@ -2053,7 +2056,10 @@
       48,
       120
      ],
-     "empty": true
+     "text": ".",
+     "style": "d_rt_measure",
+     "font": "ttf:rounded:6:0.0:1.0:0.0",
+     "left": -3000
     },
     {
      "from": [
@@ -2573,13 +2579,13 @@
     {
      "sprite": "47",
      "text": "Clinched",
-     "font": "ttf:narrow:12:0.0:0.7:0.2",
+     "font": "ttf:black:13:0.0:0.5:0.0",
      "style": "d_nxt_cl"
     },
     {
      "sprite": "48",
      "text": "Champs",
-     "font": "ttf:narrow:13:0.0:0.7:0.2",
+     "font": "ttf:black:14:0.0:0.5:0.0",
      "style": "d_nxt_ch"
     }
    ]
