@@ -689,8 +689,8 @@
      ],
      "text": "Starter",
      "style": "a_drop",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 19,
      "centre_x": 26,
      "sprites": [
       "10"
@@ -706,8 +706,8 @@
      ],
      "text": "Swing Man",
      "style": "a_drop",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 19,
      "centre_x": 47,
      "sprites": [
       "10"
@@ -740,8 +740,8 @@
      ],
      "text": "Closer",
      "style": "a_drop",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 21,
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 20,
      "centre_x": 25,
      "sprites": [
       "10"
@@ -2903,8 +2903,10 @@
      "sprite": "0c",
      "text": "Choose a player to set up",
      "style": "a_help_m1",
-     "font": "ttf:rounded:7:0.0:1.0:0.3",
-     "baseline": 12,
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 96,
+     "dy": 1,
      "pages": [
       1
      ],
@@ -2916,8 +2918,10 @@
      "sprite": "0d",
      "text": "Choose a player to set up",
      "style": "a_help_m1",
-     "font": "ttf:rounded:7:0.0:1.0:0.3",
-     "baseline": 12,
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 96,
+     "dy": 2,
      "pages": [
       1
      ],
@@ -2938,9 +2942,9 @@
      ],
      "text": "Choose OK without picking a player",
      "style": "a_help_m2~0_128",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 14,
-     "left": 12
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 15,
+     "left": 2
     },
     {
      "from": [
@@ -2955,9 +2959,9 @@
      ],
      "text": "Choose OK without picking a player",
      "style": "a_help_m2~128_4096",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 14,
-     "left": 12
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 15,
+     "left": 2
     },
     {
      "from": [
@@ -2971,10 +2975,10 @@
       "0e"
      ],
      "text": "to save with the current settings.",
-     "style": "a_help_m2~0_128",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 13,
-     "left": 56
+     "style": "a_help_m2~0_64",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14,
+     "left": 47
     },
     {
      "from": [
@@ -2988,10 +2992,10 @@
       "0e"
      ],
      "text": "to save with the current settings.",
-     "style": "a_help_m2~128_4096",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 13,
-     "left": 56
+     "style": "a_help_m2~64_128",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14,
+     "left": -17
     },
     {
      "from": [
@@ -3004,7 +3008,11 @@
      "sprites": [
       "0e"
      ],
-     "empty": true
+     "text": "to save with the current settings.",
+     "style": "a_help_m2~128_192",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14,
+     "left": -17
     },
     {
      "from": [
@@ -3017,7 +3025,11 @@
      "sprites": [
       "0e"
      ],
-     "empty": true
+     "text": "to save with the current settings.",
+     "style": "a_help_m2~192_4096",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14,
+     "left": -9
     },
     {
      "from": [
