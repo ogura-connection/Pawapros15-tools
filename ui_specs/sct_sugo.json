@@ -13,12 +13,12 @@
      0,
      0,
      128,
-     90
+     102
     ],
     [
      0,
      0,
-     90,
+     102,
      128,
      128
     ],
@@ -27,12 +27,12 @@
      0,
      0,
      128,
-     90
+     102
     ],
     [
      1,
      0,
-     90,
+     102,
      128,
      128
     ],
@@ -41,12 +41,12 @@
      0,
      0,
      128,
-     90
+     102
     ],
     [
      2,
      0,
-     90,
+     102,
      128,
      128
     ],
@@ -55,12 +55,12 @@
      0,
      0,
      128,
-     90
+     102
     ],
     [
      3,
      0,
-     90,
+     102,
      128,
      128
     ],
@@ -69,12 +69,12 @@
      0,
      0,
      128,
-     90
+     102
     ],
     [
      4,
      0,
-     90,
+     102,
      128,
      128
     ],
@@ -83,12 +83,12 @@
      0,
      0,
      128,
-     90
+     102
     ],
     [
      5,
      0,
-     90,
+     102,
      128,
      128
     ],
@@ -97,12 +97,12 @@
      0,
      0,
      128,
-     90
+     102
     ],
     [
      6,
      0,
-     90,
+     102,
      96,
      128
     ]
@@ -112,155 +112,155 @@
      "sprite": "00",
      "text": "Jan",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 8
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 5
     },
     {
      "sprite": "01",
      "text": "Feb",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 6
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 4
     },
     {
      "sprite": "02",
      "text": "Mar",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 6
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 4
     },
     {
      "sprite": "03",
      "text": "Apr",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 8
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 5
     },
     {
      "sprite": "04",
      "text": "May",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 8
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 5
     },
     {
      "sprite": "05",
      "text": "Jun",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 6
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 4
     },
     {
      "sprite": "06",
      "text": "Jul",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 8
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 5
     },
     {
      "sprite": "07",
      "text": "Aug",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 6
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 4
     },
     {
      "sprite": "08",
      "text": "Sep",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 6
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 4
     },
     {
      "sprite": "09",
      "text": "Oct",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 6
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 4
     },
     {
      "sprite": "0a",
      "text": "Nov",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 8
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 5
     },
     {
      "sprite": "0b",
      "text": "Dec",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:14:0.0:1.0:0.5",
-     "baseline": 6
+     "font": "ttf:sans-italic:9:0.0:1.0:0.5",
+     "baseline": 4
     },
     {
      "sprite": "19",
      "text": "0",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 38
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 44
     },
     {
      "sprite": "1a",
      "text": "1",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 38
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 44
     },
     {
      "sprite": "1b",
      "text": "2",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 37
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 43
     },
     {
      "sprite": "1c",
      "text": "3",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 38
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 44
     },
     {
      "sprite": "1d",
      "text": "4",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 38
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 44
     },
     {
      "sprite": "1e",
      "text": "5",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 39
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 45
     },
     {
      "sprite": "1f",
      "text": "6",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 38
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 44
     },
     {
      "sprite": "20",
      "text": "7",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 38
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 44
     },
     {
      "sprite": "21",
      "text": "8",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 38
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 44
     },
     {
      "sprite": "22",
      "text": "9",
      "style": "d4_etk",
-     "font": "ttf:sans-italic:78:0.0:1.0:0.5",
-     "baseline": 38
+     "font": "ttf:sans-italic:90:0.0:0.86:0.5",
+     "baseline": 44
     },
     {
      "from": [
