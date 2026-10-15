@@ -15,3 +15,4 @@ STYLES["b4_or"] = ringfill([15, 15, 15, 14, 14, 13], [8, 6])
 STYLES["b4_gd_blue"] = ringfill([5, 4, 3, 3, 2, 2], [8, 8], [10])                        # pal 18: blue letters, white ring
 STYLES["b4_gd_black"] = ringfill([1], [1, 1, 1], [1, 1])                                   # pal 13: the black twin of the blue line
 STYLES["b4_gd_green"] = ringfill([15, 14, 14, 13, 12, 12], [4, 4], [3, 2])                 # pal 20: lime letters, black ring
+STYLES["b4_gm_s"] = ringfill([15, 15, 15, 14, 13, 12], [4], [3])                           # the same on small plates: one ring, one shadow row
