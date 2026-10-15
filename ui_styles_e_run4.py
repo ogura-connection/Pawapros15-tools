@@ -57,3 +57,22 @@ def plate(style, w, h, bg):
 # pal 14: Start Practice on a black plate (index 1), white letters
 STYLES["e4_sg_start"] = plate(ringfill([15, 15, 15, 14, 14, 13], [6]), 80, 24, 1)
 STYLES["e4_sg_start_t"] = ringfill([15, 15, 15, 14, 14, 13], [6])                      # the same letters without the plate (for measuring)
+
+
+def vcut(style, lo, hi, H, W):
+    """The styled word centred on an H x W canvas, then only its rows lo..hi (a word cut across two page rectangles stacked
+    on top of each other: the pieces of クリア). The canvas rows below the word stay empty (0)."""
+    import numpy as np
+
+    def make(ink, base):
+        art, b = style(ink, base)
+        out = np.zeros((H, W), np.uint8)
+        oy, ox = (H - art.shape[0]) // 2, (W - art.shape[1]) // 2
+        out[oy:oy + art.shape[0], ox:ox + art.shape[1]] = art[:H, :W]
+        return out[lo:hi], b + oy - lo
+    return make
+
+
+# クリア (p16 y98-128 + p17 y96-108, one 42-row word): "Clear" 96 x 42
+STYLES["e4_sg_clear_0"] = vcut(STYLES["e4_sg_head"], 0, 30, 42, 96)
+STYLES["e4_sg_clear_1"] = vcut(STYLES["e4_sg_head"], 30, 42, 42, 96)
