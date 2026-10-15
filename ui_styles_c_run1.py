@@ -92,6 +92,8 @@ STYLES['c_sd_low'] = logo([11, 10, 9, 8, 6], [11, 11], 3, 12, 12, [1], 1, 1)
 STYLES['c_sd_off'] = logo([9, 8, 7, 6, 6], [9, 9], 3, 12, 12, [1], 1, 1)
 # r3_sd 27 Sound banner lettering (palette 13): orange to pink letters, white ring, blue rings and shadow
 STYLES['c_sd_banner'] = ringfill([12, 12, 12, 13, 14, 14, 15, 15], [8, 7, 1], [5, 4])
+# h5_ti03_opd 01 Game Start (256 colours): white letters, thick green outline, dark green shadow
+STYLES['c_title_start'] = ringfill([49], [123, 127, 127, 127, 127], [98, 98, 98])
 STYLES['c_vs_ctl~0_32'] = win(STYLES['c_vs_ctl'], 0, 32)
 STYLES['c_vs_ctl~32_64'] = win(STYLES['c_vs_ctl'], 32, 64)
 STYLES['c_vs_ctl~64_4096'] = win(STYLES['c_vs_ctl'], 64, 4096)

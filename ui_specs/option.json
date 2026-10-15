@@ -128,14 +128,7 @@
      8,
      0,
      80,
-     72,
-     104
-    ],
-    [
-     8,
-     0,
-     104,
-     56,
+     128,
      128
     ],
     [
@@ -181,6 +174,13 @@
      128
     ],
     [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
      9,
      0,
      0,
@@ -209,45 +209,31 @@
      128
     ],
     [
-     13,
+     18,
      0,
      0,
-     128,
-     80
-    ],
-    [
-     13,
-     0,
-     80,
-     48,
-     96
-    ],
-    [
-     13,
-     96,
-     104,
      128,
      128
     ],
     [
-     18,
+     19,
      0,
      0,
      128,
-     64
-    ],
-    [
-     18,
-     0,
-     64,
-     24,
-     80
+     96
     ],
     [
      19,
      0,
-     112,
+     96,
      56,
+     128
+    ],
+    [
+     19,
+     80,
+     96,
+     128,
      128
     ],
     [
@@ -460,6 +446,28 @@
      "font": "ttf:din:11:0:1.0:0.1",
      "left": 1,
      "baseline": 20,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "76",
+     "text": "Impact\nMark",
+     "style": "opt_tab2",
+     "font": "ttf:din:9:0:1.0:0.1",
+     "left": 9,
+     "baseline": 25,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "77",
+     "text": "Pitch\nGuide",
+     "style": "opt_tab2",
+     "font": "ttf:din:10:0:1.0:0.1",
+     "left": 9,
+     "baseline": 25,
      "palettes": [
       16
      ]
@@ -864,6 +872,50 @@
      "style": "opt_val",
      "font": "ttf:din:13:0:1.0:0.1",
      "left": 6,
+     "baseline": 21,
+     "palettes": [
+      7
+     ]
+    },
+    {
+     "sprite": "7d",
+     "text": "Ball",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 38,
+     "baseline": 21,
+     "palettes": [
+      7
+     ]
+    },
+    {
+     "sprite": "7e",
+     "text": "Point",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 33,
+     "baseline": 21,
+     "palettes": [
+      7
+     ]
+    },
+    {
+     "sprite": "7f",
+     "text": "Direction",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 15,
+     "baseline": 21,
+     "palettes": [
+      7
+     ]
+    },
+    {
+     "sprite": "80",
+     "text": "Dir. + Pitch",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 8,
      "baseline": 21,
      "palettes": [
       7
@@ -1450,6 +1502,76 @@
      ],
      "left": 8,
      "dy": -11
+    },
+    {
+     "sprite": "78",
+     "text": "Shows the impact point\nas a ball, so its spin\nis easy to read.",
+     "style": "hlp110",
+     "font": "ttf:avm:9:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 55,
+     "line_step": 22,
+     "palettes": [
+      24
+     ],
+     "left": 7,
+     "dy": 1
+    },
+    {
+     "sprite": "79",
+     "text": "Shows the impact point\nas a +, so its center\nis easy to see.",
+     "style": "hlp110",
+     "font": "ttf:avm:9:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 55,
+     "line_step": 22,
+     "palettes": [
+      24
+     ],
+     "left": 7,
+     "dy": 1
+    },
+    {
+     "sprite": "7a",
+     "text": "When pitching, shows\nthe break direction\nand the pitch name.",
+     "style": "hlp103",
+     "font": "ttf:avm:9:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 103,
+     "line_step": 22,
+     "palettes": [
+      24
+     ],
+     "left": 7,
+     "dy": 1
+    },
+    {
+     "sprite": "7b",
+     "text": "When pitching, shows\nonly the break direction.",
+     "style": "hlp113",
+     "font": "ttf:avm:9:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 113,
+     "line_step": 22,
+     "palettes": [
+      24
+     ],
+     "left": 7,
+     "dy": 0
+    },
+    {
+     "sprite": "7c",
+     "text": "When pitching, hides\nthe break direction\nand the pitch name.",
+     "style": "hlp100",
+     "font": "ttf:avm:9:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 100,
+     "line_step": 22,
+     "palettes": [
+      24
+     ],
+     "left": 7,
+     "dy": 1
     }
    ],
    "name": "option"

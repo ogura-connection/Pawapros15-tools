@@ -1,7 +1,7 @@
 """Label styles of art run 1, agent E: scorebook tags, team initials, plates, shift editor (see ui_type.py)."""
 import numpy as np
 import ui_type
-from ui_type import banded, outlined, tight, grow, logo
+from ui_type import banded, outlined, tight, grow, logo, called
 
 ui_type.TTF.setdefault("din", ("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf", 0))
 
@@ -118,7 +118,56 @@ def clean_inpaint(letters, box=None):
     return clean
 
 
+def _orig_rect(arc, bank, page, rect):
+    """Palette indices of a rectangle of a page, from the untouched original file (or the installed one)."""
+    import os
+    import ui_textures as U
+    key = (arc, bank, page)
+    if key not in _plates:
+        path = os.path.join(U.ORIG_ARC_DIR, arc)
+        d = open(path if os.path.exists(path) else os.path.join(U.S.DATA_FILES, arc), "rb").read()
+        b = next(x for x in U.banks(d, U.elf_symbols(d)) if x["name"] == bank)
+        _plates[key] = U.decode_indices(d, *b["pages"][page]).copy()
+    x0, y0, x1, y1 = rect
+    return _plates[key][y0:y1, x0:x1].copy()
+
+
+def gem_text(page, rect, glyph, centre, ring=15, soft=False):
+    """The batter mark on the jewels of the shift editor: the original face (a dark well round the glyph), cleaned of
+    the glyph by filling it from the nearest pixel that is not glyph, with the new letter in white and a black ring."""
+    inner = banded([0, 11, 11, 11, 11, 11, 11], [ring])
+
+    def style(ink, base):
+        im = _orig_rect("shift_ed.arc", "r4_syu", page, rect)
+        mask = np.isin(im, glyph)
+        out = inpaint(im, mask)
+        art, _ = tight(inner)(np.where(ink >= 3, 6, 0), base)
+        h, w = art.shape
+        cx, cy = centre
+        out[cy - h // 2:cy - h // 2 + h, cx - w // 2:cx - w // 2 + w][art > 0] = art[art > 0]
+        ys, xs = np.nonzero(im)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], 0
+    return style
+
+
+_WHITE = [0, 15, 15, 15, 15, 15, 15]
 STYLES = {
+    # the shift editor (shift_ed.arc r4_syu): screen title, orange to pink letters in a white band with a blue rim and shadow
+    "e_sh_title": crisp(logo([12, 12, 13, 13, 14, 14, 15, 15], [10], 9, 9, 3, [2, 1, 1], 3, 1)),
+    # the headings (palettes 27 yellow, 28 green, 29 cream share their indices): letters shading down in three steps,
+    # navy outline, a one-pixel teal edge with a darker teal shadow below
+    "e_sh_head": crisp(called([12, 12, 12, 13, 13, 13, 14, 14, 14], [7, 6], 5, 5, 4, [3, 2], thick=2, wide=0, bandw=1, drop=(1, 0))),
+    # Show Infield / Show Outfield (palette 24): dark blue letters, a white band, a teal edge
+    "e_sh_show": crisp(tight(banded(_WHITE, [5, 5, 3]))),
+    # column heads of the two gauges (palettes 98 and 99): dark blue letters in white, a dark edge
+    "e_sh_h98": crisp(tight(banded(_WHITE, [9, 9, 3]))),
+    "e_sh_h99": crisp(tight(banded([0, 5, 5, 5, 5, 5, 5], [13, 13, 4]))),
+    # the small plates (palettes 81, 82, 83): white letters, a dark blue ring
+    "e_sh_plate": crisp(tight(banded(_WHITE, [4]))),
+    # the buttons (palettes 21, 22, 23): coloured letters, a white band two pixels wide, blue and light blue edges
+    "e_sh_btn": crisp(tight(banded(_WHITE, [8, 8, 3, 5]))),
+    # Starter Avg. (palette 102): white letters, a navy band, a teal edge
+    "e_sh_avg": crisp(tight(banded(_WHITE, [8, 8, 6]))),
     "e_scm": scm_style,
     # side marks on the digit font (g3_suuzi page 1): white letters, a black two-pixel outline
     "e_suuzi": crisp(banded([0, 1, 1, 1, 1, 1, 1], [15, 15])),
@@ -130,6 +179,7 @@ STYLES = {
     "e_pl_e1": plated_text("r4_12h", "e1", clean_box((14, 12, 39, 39), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (26, 25), True),
     "e_pl_e2": plated_text("r4_12h", "e2", clean_box((9, 8, 26, 26), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (17, 17), True),
     "e_pl_e3": plated_text("r4_12h", "e3", clean_all(7), [0, 1, 1, 1, 1, 1, 1], [15, 11], (13, 16), True),
+    "e_sh_gem": gem_text(13, (0, 104, 24, 128), [10, 11, 12, 13, 14, 15], (11, 12)),
     "e_pl_bc": plated_text("r4_12h", "bc", clean_box((4, 7, 31, 24), (4, 24, 32, 25), (7, 25, 32, 28), fill=15), [0, 9, 6, 4, 2, 1, 1], [], (17, 16)),       # All-Time (palette 85)
     # team-type plates of r4_12h (palettes 32, 34, 37 share their indices): white letters, a dark ring, a lighter ring
     "e_plate": crisp(tight(banded([0, 11, 11, 11, 11, 11, 11], [1, 3]))),

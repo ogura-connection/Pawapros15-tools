@@ -1,0 +1,731 @@
+{
+ "arc": "order.arc",
+ "repack": [
+  {
+   "bank": "g3_od",
+   "palette": 0,
+   "style": "f_btn",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     64,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     64,
+     64,
+     128
+    ],
+    [
+     7,
+     56,
+     48,
+     128,
+     64
+    ],
+    [
+     7,
+     56,
+     64,
+     64,
+     96
+    ],
+    [
+     7,
+     0,
+     96,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "53",
+     "text": "Pitchers",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:0.9:0.25",
+     "baseline": 28
+    },
+    {
+     "sprite": "54",
+     "text": "Fielders",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:0.95:0.25",
+     "baseline": 28
+    },
+    {
+     "sprite": "55",
+     "text": "Farm (P)",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:0.9:0.25",
+     "baseline": 30
+    },
+    {
+     "sprite": "56",
+     "text": "Farm (F)",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:0.9:0.25",
+     "baseline": 30
+    },
+    {
+     "sprite": "58",
+     "text": "Injured",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 29
+    },
+    {
+     "sprite": "59",
+     "text": "Start Game",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 1,
+     "pages": [
+      6,
+      7
+     ],
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "buttons 1 (pages 6, 7)",
+   "gap": [
+    1,
+    1
+   ]
+  },
+  {
+   "bank": "g3_od",
+   "palette": 0,
+   "style": "f_btn",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     13,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     14,
+     64,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "5a",
+     "text": "Redo Lineup",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 1,
+     "palettes": [
+      21
+     ]
+    },
+    {
+     "sprite": "5b",
+     "text": "Options",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 2,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "5c",
+     "text": "Controllers",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 1,
+     "palettes": [
+      20
+     ]
+    }
+   ],
+   "name": "buttons 2 (pages 13, 14 right)",
+   "gap": [
+    1,
+    1
+   ]
+  },
+  {
+   "bank": "g3_od",
+   "palette": 0,
+   "style": "f_bar",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     13,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     13,
+     0,
+     96,
+     64,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      13,
+      0,
+      0,
+      64,
+      32
+     ],
+     "text": "Farm",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 21
+    },
+    {
+     "from": [
+      13,
+      0,
+      32,
+      64,
+      64
+     ],
+     "text": "Bench",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 21
+    },
+    {
+     "from": [
+      13,
+      0,
+      64,
+      64,
+      96
+     ],
+     "text": "Fielders",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 21
+    },
+    {
+     "from": [
+      13,
+      0,
+      96,
+      64,
+      128
+     ],
+     "text": "Pitchers",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 21
+    },
+    {
+     "from": [
+      13,
+      64,
+      0,
+      128,
+      32
+     ],
+     "text": "Off",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 21
+    },
+    {
+     "from": [
+      13,
+      64,
+      32,
+      128,
+      64
+     ],
+     "text": "Starting",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 20
+    },
+    {
+     "from": [
+      13,
+      64,
+      64,
+      128,
+      96
+     ],
+     "text": "1st Team",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 21
+    },
+    {
+     "from": [
+      14,
+      0,
+      0,
+      56,
+      32
+     ],
+     "text": "Starting",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 22
+    },
+    {
+     "from": [
+      14,
+      0,
+      32,
+      56,
+      64
+     ],
+     "text": "Bench",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 22
+    },
+    {
+     "from": [
+      14,
+      0,
+      64,
+      56,
+      96
+     ],
+     "text": "Off",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 22
+    },
+    {
+     "from": [
+      14,
+      0,
+      96,
+      64,
+      128
+     ],
+     "text": "Starters",
+     "style": "f_bar",
+     "font": "ttf:rounded:12:0.0:1.0:0.1",
+     "baseline": 20
+    }
+   ],
+   "name": "bars (pages 13, 14 left)",
+   "share": true
+  },
+  {
+   "bank": "g3_od",
+   "palette": 0,
+   "style": "f_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     15,
+     56,
+     56,
+     120,
+     88
+    ],
+    [
+     15,
+     56,
+     88,
+     120,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      15,
+      56,
+      56,
+      120,
+      88
+     ],
+     "text": "Bench",
+     "style": "f_tab",
+     "font": "ttf:narrow:14:0.0:1.0:0.2",
+     "baseline": 22
+    },
+    {
+     "from": [
+      15,
+      56,
+      88,
+      120,
+      120
+     ],
+     "text": "Farm",
+     "style": "f_tab",
+     "font": "ttf:narrow:14:0.0:1.0:0.2",
+     "baseline": 22
+    }
+   ],
+   "name": "tabs (page 15)"
+  },
+  {
+   "bank": "g3_od",
+   "palette": 0,
+   "style": "f_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     11,
+     0,
+     0,
+     24,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "41",
+     "text": "Starting Lineup",
+     "style": "f_title",
+     "font": "ttf:rounded:12:0.0:0.9:0.15",
+     "baseline": 26,
+     "pages": [
+      10,
+      11
+     ],
+     "palettes": [
+      12
+     ]
+    }
+   ],
+   "name": "title (pages 10, 11)"
+  },
+  {
+   "bank": "g3_od",
+   "palette": 0,
+   "style": "f_tag",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     11,
+     24,
+     0,
+     96,
+     72
+    ],
+    [
+     11,
+     0,
+     32,
+     24,
+     72
+    ],
+    [
+     11,
+     96,
+     40,
+     128,
+     96
+    ],
+    [
+     11,
+     80,
+     72,
+     96,
+     96
+    ],
+    [
+     11,
+     120,
+     96,
+     128,
+     112
+    ],
+    [
+     11,
+     64,
+     112,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     120,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "1a",
+     "style": "f_tag",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "under": 3,
+     "pieces": [
+      {
+       "text": "Type",
+       "palette": 43
+      },
+      {
+       "text": "A",
+       "palette": 45
+      }
+     ],
+     "join": -2
+    },
+    {
+     "sprite": "1b",
+     "style": "f_tag",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "under": 3,
+     "pieces": [
+      {
+       "text": "Type",
+       "palette": 43
+      },
+      {
+       "text": "B",
+       "palette": 44
+      }
+     ],
+     "join": -2
+    },
+    {
+     "sprite": "1c",
+     "text": "Rookie",
+     "style": "f_tag",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 34
+    },
+    {
+     "sprite": "1d",
+     "text": "Normal",
+     "style": "f_tag",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 34
+    },
+    {
+     "sprite": "1e",
+     "text": "Ready",
+     "style": "f_rdy",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 16,
+     "palettes": [
+      49
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Resting",
+     "style": "f_rdy",
+     "font": "ttf:narrow:10:0.0:0.95:0.2",
+     "baseline": 16,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "from": [
+      11,
+      80,
+      72,
+      112,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      11,
+      112,
+      72,
+      128,
+      96
+     ],
+     "text": "days",
+     "style": "f_days",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
+     "baseline": 16,
+     "left": 2
+    }
+   ],
+   "name": "tags (page 11)"
+  },
+  {
+   "bank": "g3_od",
+   "palette": 0,
+   "style": "f_thin",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     12,
+     80,
+     32,
+     128,
+     48
+    ],
+    [
+     12,
+     0,
+     48,
+     128,
+     128
+    ],
+    [
+     15,
+     96,
+     0,
+     128,
+     56
+    ],
+    [
+     15,
+     88,
+     32,
+     96,
+     48
+    ],
+    [
+     15,
+     64,
+     48,
+     96,
+     56
+    ],
+    [
+     15,
+     32,
+     56,
+     56,
+     64
+    ],
+    [
+     15,
+     0,
+     112,
+     56,
+     120
+    ],
+    [
+     15,
+     0,
+     120,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "72",
+     "text": "Best Lineup",
+     "style": "f_thin",
+     "font": "ttf:f_arial:12:0.0:1.0:0.0",
+     "baseline": 0
+    },
+    {
+     "sprite": "73",
+     "text": "vs RHP",
+     "style": "f_thin",
+     "font": "ttf:f_arial:12:0.0:1.0:0.0",
+     "baseline": 0
+    },
+    {
+     "sprite": "74",
+     "text": "vs LHP",
+     "style": "f_thin",
+     "font": "ttf:f_arial:12:0.0:1.0:0.0",
+     "baseline": 0
+    },
+    {
+     "sprite": "76",
+     "text": "Messages",
+     "style": "f_thin",
+     "font": "ttf:f_arial:11:0.0:0.85:0.0",
+     "baseline": 0
+    },
+    {
+     "sprite": "77",
+     "text": "Show Grade",
+     "style": "f_thin",
+     "font": "ttf:f_arial:12:0.0:0.85:0.0",
+     "baseline": -1
+    },
+    {
+     "sprite": "89",
+     "text": "Controls",
+     "style": "f_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 28
+    }
+   ],
+   "name": "thin buttons (page 12)"
+  },
+  {
+   "bank": "g3_od",
+   "palette": 0,
+   "style": "f_thin_blue",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     9,
+     0,
+     104,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "75",
+     "text": "Shift Setup",
+     "style": "f_thin_blue",
+     "font": "ttf:f_arial:12:0.0:1.0:0.0",
+     "baseline": 0
+    }
+   ],
+   "name": "thin button (page 9)"
+  }
+ ]
+}

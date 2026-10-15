@@ -1,0 +1,969 @@
+{
+ "arc": "shift_ed.arc",
+ "repack": [
+  {
+   "name": "shift editor",
+   "bank": "r4_syu",
+   "share": true,
+   "areas": [
+    [
+     1,
+     120,
+     72,
+     128,
+     88
+    ],
+    [
+     2,
+     120,
+     0,
+     128,
+     80
+    ],
+    [
+     2,
+     104,
+     80,
+     128,
+     96
+    ],
+    [
+     2,
+     24,
+     96,
+     128,
+     104
+    ],
+    [
+     2,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     3,
+     120,
+     0,
+     128,
+     32
+    ],
+    [
+     3,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     5,
+     96,
+     112,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     7,
+     120,
+     40,
+     128,
+     88
+    ],
+    [
+     7,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     8,
+     112,
+     48,
+     128,
+     96
+    ],
+    [
+     8,
+     0,
+     48,
+     56,
+     96
+    ],
+    [
+     8,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     10,
+     112,
+     0,
+     128,
+     40
+    ],
+    [
+     10,
+     120,
+     40,
+     128,
+     88
+    ],
+    [
+     10,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     12,
+     56,
+     32,
+     128,
+     64
+    ],
+    [
+     12,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     13,
+     0,
+     48,
+     80,
+     72
+    ],
+    [
+     13,
+     88,
+     72,
+     128,
+     120
+    ],
+    [
+     13,
+     0,
+     104,
+     32,
+     120
+    ],
+    [
+     13,
+     0,
+     120,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Defensive Shift Setup",
+     "style": "e_sh_title",
+     "font": "ttf:din:18:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "09",
+     "text": "Infield Shift A",
+     "style": "e_sh_head",
+     "font": "ttf:din:24:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "0a",
+     "text": "Infield Shift B",
+     "style": "e_sh_head",
+     "font": "ttf:din:24:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "0b",
+     "text": "Outfield Shift A",
+     "style": "e_sh_head",
+     "font": "ttf:din:24:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "0c",
+     "text": "Outfield Shift B",
+     "style": "e_sh_head",
+     "font": "ttf:din:24:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "0d",
+     "text": "Current Defense",
+     "style": "e_sh_head",
+     "font": "ttf:din:20:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "0e",
+     "text": "Standard Defense",
+     "style": "e_sh_head",
+     "font": "ttf:din:18:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "31",
+     "text": "Show Infield",
+     "style": "e_sh_show",
+     "font": "ttf:din:11:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "32",
+     "text": "Show Outfield",
+     "style": "e_sh_show",
+     "font": "ttf:din:10:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "5f",
+     "text": "Starter Avg.",
+     "style": "e_sh_avg",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "51",
+     "text": "Infield A",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "52",
+     "text": "Infield B",
+     "style": "e_sh_btn",
+     "font": "ttf:din:15:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "53",
+     "text": "Outfield A",
+     "style": "e_sh_btn",
+     "font": "ttf:din:14:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "54",
+     "text": "Outfield B",
+     "style": "e_sh_btn",
+     "font": "ttf:din:13:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "55",
+     "text": "First",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "56",
+     "text": "Second",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "57",
+     "text": "Third",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "58",
+     "text": "Short",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "59",
+     "text": "Left",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "5a",
+     "text": "Center",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "5b",
+     "text": "Right",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "5c",
+     "text": "Cancel",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "sprite": "5d",
+     "text": "Reset",
+     "style": "e_sh_btn",
+     "font": "ttf:din:16:0:1:0.0",
+     "slices": true,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      104,
+      32,
+      128
+     ],
+     "sprites": [
+      "34"
+     ],
+     "text": "SPD",
+     "style": "e_sh_h98",
+     "font": "ttf:din:14:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      32,
+      104,
+      64,
+      128
+     ],
+     "sprites": [
+      "34"
+     ],
+     "text": "ARM",
+     "style": "e_sh_h98",
+     "font": "ttf:din:13:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      64,
+      104,
+      96,
+      128
+     ],
+     "sprites": [
+      "34"
+     ],
+     "text": "FLD",
+     "style": "e_sh_h98",
+     "font": "ttf:din:14:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      96,
+      104,
+      128,
+      128
+     ],
+     "sprites": [
+      "34"
+     ],
+     "text": "ERR",
+     "style": "e_sh_h98",
+     "font": "ttf:din:14:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      2,
+      0,
+      104,
+      32,
+      128
+     ],
+     "sprites": [
+      "36"
+     ],
+     "text": "TRJ",
+     "style": "e_sh_h99",
+     "font": "ttf:din:14:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      2,
+      32,
+      104,
+      64,
+      128
+     ],
+     "sprites": [
+      "36"
+     ],
+     "text": "POW",
+     "style": "e_sh_h99",
+     "font": "ttf:din:13:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      2,
+      64,
+      104,
+      96,
+      128
+     ],
+     "sprites": [
+      "36"
+     ],
+     "text": "CON",
+     "style": "e_sh_h99",
+     "font": "ttf:din:14:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      2,
+      96,
+      104,
+      128,
+      128
+     ],
+     "sprites": [
+      "36"
+     ],
+     "text": "SPD",
+     "style": "e_sh_h99",
+     "font": "ttf:din:14:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      13,
+      0,
+      104,
+      24,
+      128
+     ],
+     "text": "B",
+     "style": "e_sh_gem",
+     "font": "ttf:din:14:0:1:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      13,
+      16,
+      24,
+      40,
+      48
+     ],
+     "sprites": [
+      "3c"
+     ],
+     "text": "IF",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 11,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      40,
+      24,
+      64,
+      48
+     ],
+     "sprites": [
+      "3c"
+     ],
+     "text": "In",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 3,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      16,
+      24,
+      40,
+      48
+     ],
+     "sprites": [
+      "3d"
+     ],
+     "text": "IF",
+     "style": "e_sh_plate",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 2,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      88,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "3d"
+     ],
+     "text": "Back",
+     "style": "e_sh_plate",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": -6,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      16,
+      24,
+      40,
+      48
+     ],
+     "sprites": [
+      "3e"
+     ],
+     "text": "IF",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 11,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      32,
+      48,
+      56,
+      72
+     ],
+     "sprites": [
+      "3e"
+     ],
+     "text": "A",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 3,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      16,
+      24,
+      40,
+      48
+     ],
+     "sprites": [
+      "3f"
+     ],
+     "text": "IF",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 12,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      56,
+      48,
+      80,
+      72
+     ],
+     "sprites": [
+      "3f"
+     ],
+     "text": "B",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 4,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      64,
+      24,
+      88,
+      48
+     ],
+     "sprites": [
+      "40"
+     ],
+     "text": "OF",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 8,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      40,
+      24,
+      64,
+      48
+     ],
+     "sprites": [
+      "40"
+     ],
+     "text": "In",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 5,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      64,
+      24,
+      88,
+      48
+     ],
+     "sprites": [
+      "41"
+     ],
+     "text": "OF",
+     "style": "e_sh_plate",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": 1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      88,
+      24,
+      112,
+      48
+     ],
+     "sprites": [
+      "41"
+     ],
+     "text": "Back",
+     "style": "e_sh_plate",
+     "font": "ttf:din:12:0:1:0.0",
+     "left": -3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      13,
+      64,
+      24,
+      88,
+      48
+     ],
+     "sprites": [
+      "42"
+     ],
+     "text": "OF",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 8,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      32,
+      48,
+      56,
+      72
+     ],
+     "sprites": [
+      "42"
+     ],
+     "text": "A",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 5,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      64,
+      24,
+      88,
+      48
+     ],
+     "sprites": [
+      "43"
+     ],
+     "text": "OF",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 9,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      56,
+      48,
+      80,
+      72
+     ],
+     "sprites": [
+      "43"
+     ],
+     "text": "B",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 6,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      112,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "44"
+     ],
+     "text": "Bunt",
+     "style": "e_sh_plate",
+     "font": "ttf:din:10:0:1:0.0",
+     "left": 3,
+     "baseline": 17
+    },
+    {
+     "from": [
+      13,
+      0,
+      48,
+      32,
+      72
+     ],
+     "sprites": [
+      "44"
+     ],
+     "text": "Shift",
+     "style": "e_sh_plate",
+     "font": "ttf:din:10:0:1:0.0",
+     "left": 9,
+     "baseline": 17
+    },
+    {
+     "from": [
+      13,
+      0,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "45"
+     ],
+     "text": "Normal",
+     "style": "e_sh_plate",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      0,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "46"
+     ],
+     "text": "Normal",
+     "style": "e_sh_plate",
+     "font": "ttf:din:13:0:1:0.0",
+     "left": 3,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      48,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "47"
+     ],
+     "text": "Standard",
+     "style": "e_sh_plate",
+     "font": "ttf:din:10:0:1:0.0",
+     "left": 4,
+     "baseline": 17
+    },
+    {
+     "from": [
+      13,
+      48,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "48"
+     ],
+     "text": "Standard",
+     "style": "e_sh_plate",
+     "font": "ttf:din:10:0:1:0.0",
+     "left": 4,
+     "baseline": 17
+    },
+    {
+     "from": [
+      13,
+      96,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "49"
+     ],
+     "text": "None",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 8,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      0,
+      24,
+      16,
+      48
+     ],
+     "sprites": [
+      "49"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      13,
+      96,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "4a"
+     ],
+     "text": "None",
+     "style": "e_sh_plate",
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 8,
+     "baseline": 19
+    },
+    {
+     "from": [
+      13,
+      0,
+      24,
+      16,
+      48
+     ],
+     "sprites": [
+      "4a"
+     ],
+     "empty": true
+    }
+   ]
+  }
+ ]
+}

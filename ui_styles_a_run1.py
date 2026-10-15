@@ -204,8 +204,8 @@ def plated(key, size=None, fill=(15,), rings=(8, 5), bg=1, pad=1, extra=0):
 for _k, _size in (("bat", (40, 24)), ("run", (40, 24)), ("shift", None), ("pitch", (40, 24)), ("throw", (40, 24)), ("pitcha", None)):
     for _e in range(0, 17, 2):
         STYLES["ctl_tab_%s_e%d" % (_k, _e)] = plated(_k, _size, extra=_e)
-STYLES["ctl_plate_atk"] = plated("atk", pad=2, rings=(7, 5))
-STYLES["ctl_plate_def"] = plated("def", pad=2, rings=(7, 5))
+STYLES["ctl_plate_atk"] = plated("atk", pad=1, rings=(7,))
+STYLES["ctl_plate_def"] = plated("def", pad=1, rings=(7,))
 
 # the type / rumble bars (page 0 / 1, palettes 3-6): fill index 15 with a light top edge, white ring of two pixels, pale
 # blue ring, blue shadow down and to the right
