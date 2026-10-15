@@ -145,8 +145,8 @@
      "sprite": "09",
      "text": "Choose\nPlayer",
      "style": "d6_b09",
-     "font": "ttf:rounded:9:0.0:1.0:0.25",
-     "baseline": 19,
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 20,
      "palettes": [
       40
      ]
@@ -174,8 +174,8 @@
      "sprite": "0a",
      "text": "Done",
      "style": "d6_b0a",
-     "font": "ttf:rounded:11:0.0:1.0:0.25",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
      "palettes": [
       38
      ]
@@ -210,8 +210,8 @@
      "sprite": "0b",
      "text": "Cancel",
      "style": "d6_b0b",
-     "font": "ttf:rounded:11:0.0:1.0:0.25",
-     "baseline": 22,
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 23,
      "palettes": [
       54
      ]
@@ -220,8 +220,8 @@
      "sprite": "4c",
      "text": "Cancel",
      "style": "d6_b0b",
-     "font": "ttf:rounded:11:0.0:1.0:0.25",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
      "palettes": [
       54
      ]
@@ -249,8 +249,8 @@
      "sprite": "0c",
      "text": "Player\nList",
      "style": "d6_b0c",
-     "font": "ttf:rounded:9:0.0:1.0:0.25",
-     "baseline": 20,
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 21,
      "palettes": [
       56
      ]
@@ -346,6 +346,13 @@
      96,
      24,
      128
+    ],
+    [
+     1,
+     40,
+     0,
+     96,
+     56
     ]
    ],
    "labels": [
@@ -426,10 +433,10 @@
      "sprite": "88",
      "text": "to show ratings",
      "style": "d6_wn212",
-     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "font": "ttf:narrow:13:0.0:0.92:0.25",
      "slices": true,
      "slice_width": 64,
-     "dy": 2,
+     "dy": 1,
      "left": 405
     }
    ],
@@ -490,6 +497,13 @@
      32,
      104,
      64
+    ],
+    [
+     6,
+     64,
+     80,
+     128,
+     96
     ]
    ],
    "labels": [
@@ -497,40 +511,40 @@
      "sprite": "2c",
      "text": "Salary",
      "style": "d6_wn216",
-     "font": "ttf:rounded:8:0.0:0.92:0.25",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
      "baseline": 18
     },
     {
      "sprite": "2e",
      "text": "Multi-Year Deal",
      "style": "d6_wn216",
-     "font": "ttf:rounded:12:0.0:0.85:0.25",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 64,
-     "dy": 3
+     "dy": 2
     },
     {
      "sprite": "2f",
      "text": "yr deal",
      "style": "d6_wn216",
-     "font": "ttf:rounded:15:0.0:0.85:0.25",
-     "baseline": 20
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 17
     },
     {
      "sprite": "30",
      "text": "Number",
      "style": "d6_wn216",
-     "font": "ttf:rounded:13:0.0:0.85:0.25",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 40,
-     "dy": 3
+     "dy": 2
     },
     {
      "sprite": "32",
      "text": "yr",
      "style": "d6_wn216",
-     "font": "ttf:rounded:17:0.0:0.85:0.25",
-     "baseline": 22
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 17
     }
    ],
    "name": "w216"
@@ -604,6 +618,13 @@
      104,
      128,
      128
+    ],
+    [
+     4,
+     24,
+     96,
+     96,
+     112
     ]
    ],
    "labels": [
@@ -611,32 +632,32 @@
      "sprite": "34",
      "text": "Salary",
      "style": "d6_wn216",
-     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
      "slices": true,
      "slice_width": 24,
-     "dy": 2
+     "dy": 3
     },
     {
      "sprite": "36",
      "text": "Multi-Year Deal",
      "style": "d6_wn216",
-     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
      "slices": true,
      "slice_width": 80,
-     "dy": 2
+     "dy": 1
     },
     {
      "sprite": "37",
      "text": "Number",
      "style": "d6_wn216",
-     "font": "ttf:narrow:12:0.0:0.85:0.25",
-     "baseline": 19
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 20
     },
     {
      "sprite": "b6",
      "text": ": Remove from offer",
      "style": "d6_wn216",
-     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "font": "ttf:narrow:12:0.0:0.92:0.25",
      "slices": true,
      "slice_width": 56,
      "dy": 1
@@ -692,6 +713,13 @@
      48,
      48,
      72
+    ],
+    [
+     2,
+     24,
+     96,
+     64,
+     128
     ]
    ],
    "labels": [
@@ -720,7 +748,7 @@
      "sprite": "8c",
      "text": "ERA",
      "style": "d6_wn213",
-     "font": "ttf:narrow:8:0.0:0.92:0.25",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
      "baseline": 16
     },
     {
@@ -774,6 +802,13 @@
      0,
      32,
      24
+    ],
+    [
+     14,
+     80,
+     96,
+     128,
+     128
     ]
    ],
    "labels": [
@@ -788,7 +823,7 @@
      "sprite": "33",
      "text": "Player's Wishes",
      "style": "d6_pale",
-     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 64,
      "dy": 1
@@ -879,6 +914,13 @@
      32,
      88,
      56
+    ],
+    [
+     12,
+     96,
+     40,
+     128,
+     64
     ]
    ],
    "labels": [
@@ -886,8 +928,8 @@
      "sprite": "72",
      "text": "Teams in\nTalks",
      "style": "d6_navy",
-     "font": "ttf:narrow:8:0.0:1.0:0.25",
-     "baseline": 294,
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 296,
      "palettes": [
       215
      ],
@@ -898,7 +940,7 @@
      "sprite": "73",
      "text": "Switch View",
      "style": "d6_navy",
-     "font": "ttf:narrow:8:0.0:0.92:0.25",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 40,
      "dy": 1,
@@ -1041,8 +1083,8 @@
      "sprite": "03",
      "text": "Ratings",
      "style": "d6_w_b4",
-     "font": "ttf:rounded:9:0.0:1.0:0.25",
-     "baseline": 24,
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 25,
      "palettes": [
       4
      ]
@@ -1051,8 +1093,8 @@
      "sprite": "0b",
      "text": "Player Comp.",
      "style": "d6_w_b4",
-     "font": "ttf:rounded:9:0.0:1.0:0.25",
-     "baseline": 24,
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 25,
      "palettes": [
       4
      ]
@@ -1061,10 +1103,10 @@
      "sprite": "3b",
      "text": "Start Talks",
      "style": "d6_w_b4",
-     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 48,
-     "dy": 2,
+     "dy": 1,
      "palettes": [
       4
      ]
@@ -1073,10 +1115,10 @@
      "sprite": "54",
      "text": "Choose Player",
      "style": "d6_w_b4",
-     "font": "ttf:rounded:9:0.0:0.92:0.25",
+     "font": "ttf:narrow:12:0.0:0.92:0.25",
      "slices": true,
      "slice_width": 56,
-     "dy": 3,
+     "dy": 2,
      "palettes": [
       4
      ]
@@ -1125,8 +1167,8 @@
      "sprite": "02",
      "text": "Cancel",
      "style": "d6_w_b7",
-     "font": "ttf:rounded:10:0.0:1.0:0.25",
-     "baseline": 24,
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 26,
      "palettes": [
       7
      ]
@@ -1135,10 +1177,10 @@
      "sprite": "3c",
      "text": "Choose Protected",
      "style": "d6_w_b7",
-     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 104,
-     "dy": 0,
+     "dy": 1,
      "palettes": [
       7
      ]
@@ -1173,10 +1215,10 @@
      "sprite": "0c",
      "text": "Cash Comp.",
      "style": "d6_w_b8",
-     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 64,
-     "dy": 2,
+     "dy": 1,
      "palettes": [
       8
      ]
@@ -1225,6 +1267,20 @@
      96,
      112,
      128
+    ],
+    [
+     9,
+     56,
+     0,
+     128,
+     48
+    ],
+    [
+     9,
+     0,
+     48,
+     128,
+     80
     ]
    ],
    "labels": [
@@ -1232,23 +1288,26 @@
      "sprite": "16",
      "text": "Choose FA Compensation",
      "style": "d6_w_title",
-     "font": "ttf:rounded:10:0.0:0.85:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 128,
-     "dy": 1
+     "dy": 1,
+     "overlap": 1
     },
     {
      "sprite": "17",
      "text": "Choose Protected",
      "style": "d6_w_title",
-     "font": "ttf:rounded:10:0.0:1.0:0.25",
-     "baseline": 18
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 18,
+     "slices": true,
+     "overlap": 1
     },
     {
      "sprite": "18",
      "text": "Choose Player",
      "style": "d6_w_title",
-     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 18
     }
    ],
@@ -1288,6 +1347,27 @@
      104,
      112,
      128
+    ],
+    [
+     3,
+     16,
+     72,
+     48,
+     96
+    ],
+    [
+     3,
+     88,
+     72,
+     128,
+     96
+    ],
+    [
+     4,
+     64,
+     96,
+     128,
+     128
     ]
    ],
    "labels": [
@@ -1295,21 +1375,21 @@
      "sprite": "19",
      "text": "Salary",
      "style": "d6_w_sal",
-     "font": "ttf:narrow:12:0.0:0.85:0.25",
-     "baseline": 16
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 15
     },
     {
      "sprite": "42",
      "text": "Ratings",
      "style": "d6_w_sal",
-     "font": "ttf:narrow:14:0.0:1.0:0.25",
-     "baseline": 19
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 16
     },
     {
      "sprite": "43",
      "text": "View the other team's ratings",
      "style": "d6_w_sal",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 112,
      "dy": 2
@@ -1358,17 +1438,17 @@
      "sprite": "25",
      "text": "Take an unprotected player",
      "style": "d6_w_sent",
-     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
      "slices": true,
      "slice_width": 128,
-     "dy": 3
+     "dy": 2
     },
     {
      "sprite": "27",
      "text": "in comp.",
      "style": "d6_w_sent",
-     "font": "ttf:narrow:12:0.0:1.0:0.25",
-     "baseline": 18
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 19
     },
     {
      "from": [
@@ -1427,9 +1507,9 @@
    "items": [
     {
      "box": [
-      62,
-      184,
-      462,
+      64,
+      186,
+      460,
       254
      ],
      "bg": "cols",
@@ -1450,6 +1530,24 @@
       2,
       2
      ]
+    },
+    {
+     "box": [
+      64,
+      186,
+      72,
+      254
+     ],
+     "bg": "rows"
+    },
+    {
+     "box": [
+      452,
+      186,
+      460,
+      254
+     ],
+     "bg": "rows"
     }
    ]
   }
