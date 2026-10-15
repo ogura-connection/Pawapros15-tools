@@ -968,11 +968,11 @@
       238,
       30
      ],
-     "bg": 0.0,
+     "bg": "mode",
      "colour": "#1d2530",
      "crisp": true,
      "text": "Baseball Club Application",
-     "font": "ttf:times-bold:12:0:1.0:0.2",
+     "font": "ttf:times-bold:12:0:1.0:0.0",
      "centre": [
       126,
       22
@@ -989,7 +989,7 @@
      "colour": "#5c5c60",
      "crisp": true,
      "text": "Date",
-     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "font": "ttf:tahoma:9:0:1.0:0.2",
      "centre": [
       29,
       51
@@ -1017,7 +1017,7 @@
      "colour": "#5c5c60",
      "crisp": true,
      "text": "/",
-     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "font": "ttf:tahoma:10:0:1.0:0.4",
      "centre": [
       132,
       51
@@ -1034,7 +1034,7 @@
      "colour": "#5c5c60",
      "crisp": true,
      "text": "/",
-     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "font": "ttf:tahoma:10:0:1.0:0.4",
      "centre": [
       173,
       51
@@ -1062,7 +1062,7 @@
      "colour": "#5c5c60",
      "crisp": true,
      "text": "Name",
-     "font": "ttf:tahoma:9:0:1.0:0.2",
+     "font": "ttf:tahoma:10:0:1.0:0.2",
      "centre": [
       29,
       76
@@ -1078,8 +1078,8 @@
      "bg": "mode",
      "colour": "#5c5c60",
      "crisp": true,
-     "text": "Handedness",
-     "font": "ttf:narrow:7:0:1.0:0.2",
+     "text": "Hand",
+     "font": "ttf:tahoma:11:0:1.0:0.2",
      "centre": [
       37,
       141
@@ -1096,7 +1096,7 @@
      "colour": "#5c5c60",
      "crisp": true,
      "text": "Position",
-     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "font": "ttf:tahoma:11:0:1.0:0.2",
      "centre": [
       37,
       173
@@ -1113,7 +1113,7 @@
      "colour": "#5c5c60",
      "crisp": true,
      "text": "Form",
-     "font": "ttf:tahoma:12:0:1.0:0.2",
+     "font": "ttf:tahoma:11:0:1.0:0.2",
      "centre": [
       37,
       205
@@ -1130,7 +1130,7 @@
      "colour": "#5c5c60",
      "crisp": true,
      "text": "Notes",
-     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "font": "ttf:tahoma:9:0:1.0:0.2",
      "centre": [
       30,
       232
@@ -1138,16 +1138,16 @@
     },
     {
      "box": [
-      178,
-      262,
-      224,
-      285
+      180,
+      264,
+      222,
+      283
      ],
      "bg": "mode",
      "colour": "#ffffff",
      "crisp": true,
      "text": "Photo",
-     "font": "ttf:tahoma:12:0:1.0:0.2",
+     "font": "ttf:tahoma:11:0:1.0:0.2",
      "centre": [
       201,
       274
@@ -1155,16 +1155,16 @@
     },
     {
      "box": [
-      178,
-      288,
-      224,
-      310
+      180,
+      289,
+      222,
+      308
      ],
      "bg": "mode",
      "colour": "#ffffff",
      "crisp": true,
      "text": "Here",
-     "font": "ttf:tahoma:12:0:1.0:0.2",
+     "font": "ttf:tahoma:11:0:1.0:0.2",
      "centre": [
       201,
       298

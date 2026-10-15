@@ -70,3 +70,39 @@ STYLES["a_tab19"] = flat([0, 12, 9, 6, 4, 2, 1])
 # y5_sss_0 (palette 16 title, 28 buttons): blue and white lettering
 STYLES["a_y5title"] = ringfill([15, 15, 14, 13, 12, 11], [8, 4, 2], [1])
 STYLES["a_y5btn"] = ringfill([3, 2, 2, 2], [15, 15], [10])
+
+
+# z3_sav_0: title (palette 28), buttons 終了 / 登録 (37, 38), プロ入り選手 (45; 14 draws its dark copy), パスワードを見る and
+# 能力詳細 (44, a grey ramp), the two panel headings (47 orange, 46 lilac; palette 31 draws each again as a blue shadow)
+STYLES["a_z3title"] = ringfill([10, 10, 7, 7, 6, 4], [15, 15, 3, 1], [])
+STYLES["a_z3end"] = ringfill([13, 12, 12, 11], [8, 7, 14], [6])
+STYLES["a_z3reg"] = ringfill([9, 10, 11, 12], [14, 13, 1], [3])
+STYLES["a_z3pro"] = ringfill([3, 2, 1, 1], [11, 11], [9, 8])
+STYLES["a_z3pw"] = ringfill([2], [15], [])
+STYLES["a_z3det"] = ringfill([15], [2], [])
+STYLES["a_z3new"] = ringfill([1, 1, 2, 3, 4], [8, 9, 12, 13], [])
+STYLES["a_z3del"] = ringfill([1, 2, 3, 4, 5], [8, 9, 10, 12], [])
+
+
+def stamp(size=40):
+    """The 済 stamp (palette 33): a round red seal, pale rim, white inside; the word is set in red in the middle."""
+    def style(ink, base):
+        out = np.zeros((size, size), np.uint8)
+        c = (size - 1) / 2.0
+        yy, xx = np.mgrid[0:size, 0:size]
+        r = np.hypot(yy - c, xx - c)
+        out[r <= c + 0.5] = 12
+        out[r <= c - 0.5] = 2
+        out[r <= c - 3.5] = 7
+        out[r <= c - 4.5] = 15
+        h, w = ink.shape
+        y0 = (size - h) // 2 + 1
+        x0 = (size - w) // 2
+        ramp = np.array([0, 7, 5, 3, 2, 1, 1], np.uint8)
+        sub = out[y0:y0 + h, x0:x0 + w]
+        sub[ink > 0] = ramp[ink[ink > 0]]
+        return out, y0 + base
+    return style
+
+
+STYLES["a_stamp"] = stamp()
