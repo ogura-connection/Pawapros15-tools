@@ -25,9 +25,10 @@ def win(style, c0, c1):
 def windows(name):
     """STYLES[name~c0_c1] for every c0, c1 on the 16-column grid (and 4096 = to the end): what Bank.window_n asks for."""
     base = STYLES[name]
-    for c0 in range(0, 192, 16):
-        for c1 in list(range(c0 + 16, 208, 16)) + [4096]:
-            STYLES["%s~%d_%d" % (name, c0, c1)] = win(base, c0, c1)
+    for step, top in ((16, 192), (8, 96)):
+        for c0 in range(0, top, step):
+            for c1 in list(range(c0 + step, top + 16, step)) + [4096]:
+                STYLES["%s~%d_%d" % (name, c0, c1)] = win(base, c0, c1)
 
 # ---- sct_main z5_esr_0 (growth report) ------------------------------------------------------------------------------------
 STYLES["d4_esr_name"] = ringfill([15, 15, 14, 13, 12, 11], [4, 4], [3, 2, 1])       # pal 32 / 34 / 35 / 36 share the index roles
@@ -35,3 +36,23 @@ STYLES["d4_esr_title"] = ringfill([15, 15, 15, 15, 15, 15], [11, 8, 5])         
 STYLES["d4_esr_trust"] = ringfill([2, 2, 1, 1, 3, 5], [8], [10, 12])                 # pal 23: dark green, white ring, teal glow
 for _n in ("d4_esr_name", "d4_esr_title"):
     windows(_n)
+
+
+def plain(dark, mid=None, edge=3):
+    """Flat dark lettering (the player info window, black on a white panel): solid `dark` where the ink is at least `edge`,
+    `mid` for the thinner edge (None: nothing)."""
+    import numpy as np
+
+    def style(ink, base):
+        out = np.zeros(ink.shape, np.uint8)
+        out[ink >= edge] = dark
+        if mid is not None:
+            out[(ink > 0) & (ink < edge)] = mid
+        ys, xs = np.nonzero(out)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base - ys.min()
+    return style
+
+
+# ---- sct_main z4_edsm_0 (player info window): pal 24, black ramp f (black) .. 1 (near white) ----------------------------------
+STYLES["d4_edsm"] = plain(15, 8)
+windows("d4_edsm")

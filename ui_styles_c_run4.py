@@ -33,11 +33,13 @@ RSZ = {
                       (28, [32, 96, 46, 112], [128, 48, 142, 64])]),
 }
 _RSZ_CLEAN = {}
+_RSZ_SHADOW = {27, 28, 33, 34, 35, 36, 39, 40, 42, 48, 49}
 
 
 def _rsz_clean(spr):
     """The oval of sprite `spr` of g3_rsz (palette indices, the oval's own coordinates) with the Japanese lettering and its shadow
-    replaced by the white of the oval's inside; read from the saved original file, once."""
+    taken out: where one oval has lettering the others (every oval has different kanji) show the bare oval; what no oval shows
+    bare is the white inside. Read from the saved original file, once."""
     if spr not in _RSZ_CLEAN:
         import sys, os
         import numpy as np
@@ -47,17 +49,33 @@ def _rsz_clean(spr):
                 sys.path.append(q)
         import gen_c_lib as G
         b = G.Arc("school.arc").bank("g3_rsz")
-        img, _, _ = b.index_image(spr, pad=0)
-        zone = set(np.unique(img[24:54, 30:126]).tolist()) - {0}
-        struct = set(np.unique(np.concatenate([img[0:13].ravel(), img[67:].ravel(), img[:, 0:9].ravel(), img[:, 148:].ravel()])).tolist()) - {0}
-        m = np.isin(img, list(zone - struct))
-        for _ in range(4):
-            m = ui_type.grow(m, 1)
-        keep = np.zeros_like(m)
-        keep[15:64, 18:142] = True
-        out = img.copy()
-        out[m & keep] = 197
-        _RSZ_CLEAN[spr] = out.astype(np.uint8)
+        group = ["00", "01", "02", "03"] if spr in ("00", "01", "02", "03") else [spr]
+        imgs, masks = {}, {}
+        for g in group:
+            img, _, _ = b.index_image(g, pad=0)
+            zone = set(np.unique(img[24:54, 30:126]).tolist()) - {0}
+            struct = set(np.unique(np.concatenate([img[0:13].ravel(), img[67:].ravel(), img[:, 0:9].ravel(), img[:, 148:].ravel()])).tolist()) - {0}
+            m0 = np.isin(img, list(zone - struct))
+            near = m0.copy()
+            for _ in range(4):
+                near = ui_type.grow(near, 1)
+            soft = np.isin(img, list((zone & struct) | _RSZ_SHADOW))          # the lilac shadow and the pale edge pixels of the lettering
+            imgs[g], masks[g] = img, m0 | (near & soft)
+        for g in group:
+            out = imgs[g].copy()
+            fill = np.full(out.shape, 197, np.uint8)
+            got = np.zeros(out.shape, bool)
+            for o in group:
+                if o == g:
+                    continue
+                ok = ~masks[o] & ~got
+                fill[ok] = imgs[o][ok]
+                got |= ok
+            keep = np.zeros_like(out, bool)
+            keep[15:64, 18:142] = True
+            sel = masks[g] & keep
+            out[sel] = fill[sel]
+            _RSZ_CLEAN[g] = out.astype(np.uint8)
     return _RSZ_CLEAN[spr]
 
 
