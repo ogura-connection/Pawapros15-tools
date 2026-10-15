@@ -293,3 +293,6 @@ for _n, (_t, _segs, _cap, _sq, _face) in enumerate(EFO):
         _w = sg[3] - sg[2] + 1
         STYLES["c4_efo_%d_%d" % (_n, _k)] = _efo_style("c4_efo_h" if sg[0] == 1 else "c4_efo", _cap, _W, _c, _c + _w, "\n" in _t, 27 if sg[0] == 1 else 32)
         _c += _w
+
+# ---- sct_a_nh.arc z4_es_0 (Eikan Nine opening story: white italic lines, black edge) ----------------------------------------------
+STYLES["c4_es"] = ringfill([4, 4, 4, 4, 4, 4], [15, 15, 3], [])
