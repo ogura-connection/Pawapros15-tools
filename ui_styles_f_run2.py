@@ -8,4 +8,4 @@ from ui_styles_ore_ini import ringfill
 STYLES = {}
 
 # h3_st_0 HUD labels (palette 13): yellow letters, tan inner edge, deep blue outline, light blue outer edge
-STYLES["f_st_yel"] = ringfill([0xf, 0xf, 0xe, 0xe, 0xd, 0xd], [0xc, 6, 6, 1])
+STYLES["f_st_yel"] = ringfill([0xf, 0xf, 0xe, 0xe, 0xd, 0xd], [6, 6, 1])

@@ -1,0 +1,83 @@
+{
+ "arc": "scs_b_ed.arc",
+ "repack": [
+  {
+   "bank": "v4_go_16ji",
+   "palette": 0,
+   "style": "e_go",
+   "font": "ttf:chancery:38:0.0:0.76:1.8",
+   "under": 0,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "My",
+     "style": "e_go",
+     "font": "ttf:chancery:38:0.0:0.76:1.8",
+     "baseline": 226,
+     "left": 316
+    },
+    {
+     "sprite": "01",
+     "text": "Baseball",
+     "style": "e_go",
+     "font": "ttf:chancery:38:0.0:0.76:1.8",
+     "baseline": 226,
+     "left": 383
+    },
+    {
+     "sprite": "02",
+     "text": "Life",
+     "style": "e_go",
+     "font": "ttf:chancery:38:0.0:0.76:1.8",
+     "baseline": 290,
+     "left": 350
+    },
+    {
+     "sprite": "03",
+     "text": "Is",
+     "style": "e_go",
+     "font": "ttf:chancery:38:0.0:0.76:1.8",
+     "baseline": 290,
+     "left": 421
+    },
+    {
+     "sprite": "04",
+     "text": "Over",
+     "style": "e_go",
+     "font": "ttf:chancery:38:0.0:0.76:1.8",
+     "baseline": 290,
+     "left": 465
+    },
+    {
+     "sprite": "05",
+     "empty": true
+    },
+    {
+     "sprite": "06",
+     "empty": true
+    },
+    {
+     "sprite": "07",
+     "empty": true
+    }
+   ],
+   "name": "ending title"
+  }
+ ]
+}

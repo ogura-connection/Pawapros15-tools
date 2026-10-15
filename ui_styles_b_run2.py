@@ -7,6 +7,7 @@ from ui_type import grow, shift
 from ui_styles_ore_ini import ringfill
 
 STYLES = {}
+ui_type.TTF.setdefault("avm", ("/System/Library/Fonts/Avenir Next Condensed.ttc", 5))      # Avenir Next Condensed Medium: small lettering
 
 
 def trim(out, base):
@@ -42,8 +43,8 @@ def rimmed(fill, rings, shadow, rim, edge=3):
 # ---- y5_hak_0: the job list (scenario 3) -------------------------------------------------------------------------------
 # list lines (palette 18): white letters in a one-pixel mid blue ring (one ring keeps the counters of small letters open)
 STYLES["b_hak_line"] = ringfill([0xf], [0x3])
-# trust ratings (palette 17): dark blue letters, a light blue ring, a near-white outer ring
-STYLES["b_hak_rate"] = ringfill([0xf], [0x7, 0x1])
+# trust ratings (palette 17): dark blue letters, a one-pixel light blue ring
+STYLES["b_hak_rate"] = ringfill([0xf], [0x7])
 # headings on the cream and white plates (palette 19, black on a grey ramp: 0xf black .. 1 light grey)
 STYLES["b_hak_tag"] = flat([0, 0, 0xa, 0x5, 0xd, 0xf, 0xf], cut=2)
 
