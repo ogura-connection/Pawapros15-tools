@@ -356,11 +356,11 @@ def split_words(mask, cls, parts=2, min_gap=2):
 def bank_of(banks, group):
     """The bank a repack group works on. A few files (scs_sys.arc) store the sprites of a bank behind its
     palette, so ui_textures.banks files them under the next bank: "sprites" names where they ended up."""
-    b = next(x for x in banks if x["name"] == group["bank"])
+    b = U.bank_named(banks, group["bank"])
     if group.get("split") and not b["sprites"]:       # order.arc g3_od: the sprites follow behind the palette, under the same name
         b = dict(b, sprites=banks[banks.index(b) + 1]["sprites"])
     if "sprites" in group:
-        b = dict(b, sprites=next(x for x in banks if x["name"] == group["sprites"])["sprites"])
+        b = dict(b, sprites=U.bank_named(banks, group["sprites"])["sprites"])
     return b
 
 
@@ -380,7 +380,7 @@ def render(spec, d, banks, project=None):
         render.repacked += [(group["bank"],) + r for r in rows]
     for lab in spec.get("paint", ()):               # lettering that is part of a plate: redrawn in place
         import ui_type
-        b = next(x for x in banks if x["name"] == lab["bank"])
+        b = U.bank_named(banks, lab["bank"])
         key = (lab["bank"], lab["page"])
         if key not in pages:
             pages[key] = U.decode_indices(d, *b["pages"][lab["page"]]).copy()
@@ -414,7 +414,7 @@ def render(spec, d, banks, project=None):
         import ui_sheet
         ui_sheet.paint(entry, d, banks, render.patches, project)
     for lab in spec.get("labels", ()):
-        b = next(x for x in banks if x["name"] == lab["bank"])
+        b = U.bank_named(banks, lab["bank"])
         key = (lab["bank"], lab["page"])
         if key not in pages:
             off, size = b["pages"][lab["page"]]
@@ -479,7 +479,7 @@ def cmd_preview(spec_path, out):
     ims = []
     for (bank, page), new in pages.items():
         grp = next((g for g in groups if g.get("bank") == bank and g.get("page", page) == page), {"bank": bank})
-        b = bank_of(banks, grp) if "repack" in spec and grp in spec["repack"] else next(x for x in banks if x["name"] == bank)
+        b = bank_of(banks, grp) if "repack" in spec and grp in spec["repack"] else U.bank_named(banks, bank)
         pal = U.palette_colours(d, b["pal"])
         index = grp.get("palette")
         if index is None:                       # groups without "palette": the one most parts of the page use
@@ -509,7 +509,7 @@ def cmd_apply(spec_path):
     pages = render(spec, d, banks, spec.get("project"))
     out = bytearray(d)
     for (bank, page), idx in pages.items():
-        b = next(x for x in banks if x["name"] == bank)
+        b = U.bank_named(banks, bank)
         off, size = b["pages"][page]
         out[off:off + size] = U.encode_indices(idx, size, U.page_bits(d, off, size))
     for off, data in render.patches:

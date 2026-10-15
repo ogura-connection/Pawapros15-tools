@@ -105,6 +105,20 @@ def banks(d, syms):
     return [s for b in hand_over_pages([b for b in out if b["pages"]]) for s in split_merged(b)]
 
 
+def bank_named(banks, ref):
+    """The bank `ref` names: "name" = the first bank of that name; "name#k" = banks[k] (k = place in the list
+    banks() returns; for files whose sprite tables the reader files one bank too late, e.g. sct_comd.arc, where
+    the sprites of bank k draw the pages of bank k - 1: a repack group then says "bank": "z4_eg_0#1",
+    "sprites": "z4_egp_0#2")."""
+    if "#" in ref:
+        name, k = ref.rsplit("#", 1)
+        b = banks[int(k)]
+        if b["name"] != name:
+            raise KeyError("bank %d is %s, not %s" % (int(k), b["name"], name))
+        return b
+    return next(x for x in banks if x["name"] == ref)
+
+
 # merged gameplay.arc banks that are split by sprite set (split_by_prefix, hand_over_pages); other files are untouched
 SPLIT_BY_SET = {"h3_tnm_0", "y4_dem_1", "g3_hk"}
 
