@@ -223,10 +223,14 @@ def short_form(en):
 
 
 def plate(en):
-    """The name as laid out in its cells. A name plate spreads the cells of a name over its width (trailing
-    blank cells dropped, a leading one kept), so a name of two cells shows as "Sa    to": names of four letters
-    or fewer are centred in three cells (" S" "at" "o ", "  " "It" "o ")."""
-    return {1: "  " + en + "   ", 2: "  " + en + "  ", 3: "  " + en + " ", 4: " " + en + " "}.get(len(en), en).rstrip()
+    """The name as laid out in its cells (seen in game, Eikan Nine squad list and result messages):
+    - a name plate spreads the cells over its width, trailing blank cells dropped, a leading one kept, so a
+      name of two cells shows as "Sa    to": names of four letters or fewer start with a blank cell;
+    - text drops blank cells but shows the space of a half-filled pair ("Goto 's", "Fujii 's"): an odd name
+      starts with a space instead of ending with one.
+    Ito -> "  " " I" "to", Goto -> "  " "Go" "to", Fujii -> " F" "uj" "ii", Takahashi -> " T" "ak" "ah" "as" "hi"."""
+    s = " " + en if len(en) % 2 else en
+    return "  " + s if len(s) <= 4 else s
 
 
 def table(names, encode):
