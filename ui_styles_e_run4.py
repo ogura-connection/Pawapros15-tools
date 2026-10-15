@@ -31,3 +31,7 @@ STYLES["e4_ed_gold~8_4096"] = win(STYLES["e4_ed_gold"], 8, 4096)
 # ---- sct_comd.arc (team strength screen) ---------------------------------------------------------------------------------
 STYLES["e4_cd_abil"] = ringfill([15, 15, 15, 14, 13, 12], [4], [3, 2])                 # pal 24: white letters, black ring, grey shadow
 STYLES["e4_cd_year"] = ringfill([4, 3, 3, 2, 2, 2], [8, 11])                           # pal 17-19 / 4: coloured digits, white ring, pale glow
+
+# ---- school_g.arc (Baseball School) --------------------------------------------------------------------------------------
+# the lesson plates: white letters, navy ring, blue shadow; the same indices serve the blue / red / teal / purple palettes (10-13)
+STYLES["e4_sg_btn"] = ringfill([15, 15, 15, 15, 14, 14], [8, 7], [5, 3, 2])
