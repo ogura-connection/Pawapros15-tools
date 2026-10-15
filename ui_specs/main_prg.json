@@ -2329,6 +2329,341 @@
    ]
   },
   {
+   "name": "team initials",
+   "bank": "g3_scm",
+   "style": "e_scm",
+   "share": true,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     72
+    ],
+    [
+     0,
+     0,
+     72,
+     48,
+     96
+    ],
+    [
+     0,
+     120,
+     72,
+     128,
+     120
+    ],
+    [
+     0,
+     0,
+     96,
+     72,
+     120
+    ],
+    [
+     0,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     1,
+     120,
+     0,
+     128,
+     120
+    ],
+    [
+     1,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     72,
+     24
+    ],
+    [
+     2,
+     96,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     72,
+     24,
+     96,
+     48
+    ],
+    [
+     2,
+     120,
+     24,
+     128,
+     48
+    ],
+    [
+     2,
+     48,
+     48,
+     128,
+     72
+    ],
+    [
+     2,
+     0,
+     72,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "G",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "01",
+     "text": "D",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "02",
+     "text": "C",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "03",
+     "text": "S",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "04",
+     "text": "B",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "05",
+     "text": "T",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "06",
+     "text": "E",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "07",
+     "text": "F",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "08",
+     "text": "L",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "09",
+     "text": "Bs",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0a",
+     "text": "M",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0b",
+     "text": "H",
+     "font": "ttf:black:14:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0c",
+     "text": "Sh",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0d",
+     "text": "Su",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0e",
+     "text": "Gw",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0f",
+     "text": "CL",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10",
+     "text": "PL",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "13",
+     "text": "KR",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "14",
+     "text": "TW",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "15",
+     "text": "CN",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "34",
+     "text": "Pw",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "35",
+     "text": "Kg",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "36",
+     "text": "Ph",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "38",
+     "text": "Se",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "3c",
+     "text": "Gk",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "40",
+     "text": "Gk",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "41",
+     "text": "Tk",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "42",
+     "text": "Rk",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "43",
+     "text": "Nw",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "44",
+     "text": "Pp",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "45",
+     "text": "Ag",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "46",
+     "text": "Ha",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "47",
+     "text": "Kj",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "48",
+     "text": "Ds",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "49",
+     "text": "Mz",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4a",
+     "text": "Tn",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4b",
+     "text": "Ww",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4c",
+     "text": "Gt",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "4d",
+     "text": "MP",
+     "font": "ttf:black:12:0:0.95:0.0",
+     "valign": "centre"
+    }
+   ]
+  },
+  {
    "name": "scorebook tags g3_nk",
    "bank": "g3_nk",
    "style": "e_tag",
@@ -11050,7 +11385,7 @@
      ],
      "text": "Def.",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 16,
+     "left": 14,
      "baseline": 18
     },
     {
@@ -11066,7 +11401,7 @@
      ],
      "text": "C",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 20,
+     "left": 22,
      "baseline": 18
     },
     {
@@ -11082,7 +11417,7 @@
      ],
      "text": "Def.",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 14,
+     "left": 12,
      "baseline": 18
     },
     {
@@ -11098,7 +11433,7 @@
      ],
      "text": "1B",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 17,
+     "left": 19,
      "baseline": 18
     },
     {
@@ -11114,7 +11449,7 @@
      ],
      "text": "Def.",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 14,
+     "left": 12,
      "baseline": 18
     },
     {
@@ -11130,7 +11465,7 @@
      ],
      "text": "2B",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 17,
+     "left": 19,
      "baseline": 18
     },
     {
@@ -11146,7 +11481,7 @@
      ],
      "text": "Def.",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 14,
+     "left": 12,
      "baseline": 18
     },
     {
@@ -11162,7 +11497,7 @@
      ],
      "text": "3B",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 17,
+     "left": 19,
      "baseline": 18
     },
     {
@@ -11178,7 +11513,7 @@
      ],
      "text": "Def.",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 13,
+     "left": 11,
      "baseline": 18
     },
     {
@@ -11194,7 +11529,7 @@
      ],
      "text": "SS",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 16,
+     "left": 18,
      "baseline": 18
     },
     {
@@ -11210,7 +11545,7 @@
      ],
      "text": "Def.",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 14,
+     "left": 12,
      "baseline": 18
     },
     {
@@ -11226,7 +11561,7 @@
      ],
      "text": "LF",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 17,
+     "left": 19,
      "baseline": 18
     },
     {
@@ -11242,7 +11577,7 @@
      ],
      "text": "Def.",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 14,
+     "left": 12,
      "baseline": 18
     },
     {
@@ -11258,7 +11593,7 @@
      ],
      "text": "CF",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 17,
+     "left": 19,
      "baseline": 18
     },
     {
@@ -11274,7 +11609,7 @@
      ],
      "text": "Def.",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 14,
+     "left": 12,
      "baseline": 18
     },
     {
@@ -11290,7 +11625,7 @@
      ],
      "text": "RF",
      "font": "ttf:din:12:0:1.0:0.0",
-     "left": 17,
+     "left": 19,
      "baseline": 18
     },
     {
