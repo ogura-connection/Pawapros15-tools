@@ -118,11 +118,24 @@ def sct_logo(title="Eikan Nine", sub="Build a Powerhouse Club!", tcap=34, tsq=0.
     new[reg][alpha] = q(out[alpha])
     # --- subtitle: the old lettering and its cream halo are cut out of the green (rows filled from the green on both sides), the new
     # words are set in the same brown with a cream halo of their own, as the Japanese had
-    green = (ri[..., 1] > ri[..., 0] + 20) & (ri[..., 1] > ri[..., 2] + 20)
-    reg = np.zeros(c.shape, bool); reg[86:117, 52:247] = True
-    old = reg & ~green & ~plate & (pal[c][..., 3] > 0)
-    old = _dilate(old, 1, 1, 1, 1) & reg & ~green & ~plate
-    rgb3 = A.row_inpaint(rgb, old, valid=green & ~old & (np.arange(W)[None, :] > 40) & (np.arange(W)[None, :] < 262))
+    green = (ri[..., 1] > ri[..., 0] + 40) & (ri[..., 1] > ri[..., 2] + 40) & (lum < 190)
+    reg = np.zeros(c.shape, bool); reg[85:118, 38:266] = True
+    rim = _dilate(pal[c][..., 3] == 0, 3, 3, 3, 3)                          # the white edge of the whole logo stays
+    old = reg & ~green & ~plate & ~rim & (pal[c][..., 3] > 0)
+    old = _dilate(old, 1, 1, 1, 1) & reg & ~green & ~plate & ~rim
+    # the green behind the band: rows read from the green that still shows inside it (between the old letters at the top, in the point
+    # below), the rows between them interpolated top to foot; the picture beside the band is darker at the top and lighter below it
+    inner = np.zeros(c.shape, bool); inner[:, 66:234] = True
+    known = {}
+    for y in range(86, 117):
+        px = rgb[y][green[y] & inner[y] & ~old[y]]
+        if len(px) >= 3:
+            known[y] = np.median(px, axis=0)
+    ys_k = sorted(known)
+    rgb3 = rgb.copy()
+    for y in range(86, 117):
+        row = np.array([np.interp(y, ys_k, [known[k][ch] for k in ys_k]) for ch in range(3)])
+        rgb3[y][old[y]] = row
     new[old] = q(rgb3[old])
     sm, sbase = A.crisp_mask(sub, scap, font="condb", stroke=sstroke, squeeze=ssq)
     sm = A.despeckle(sm)

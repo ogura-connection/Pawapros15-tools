@@ -42,8 +42,8 @@
      "sprite": "03",
      "text": "Item List",
      "style": "d4_edi_title",
-     "font": "ttf:rounded:11:0.0:1.0:0.5",
-     "baseline": -126
+     "font": "ttf:rounded:16:0.0:1.0:0.5",
+     "baseline": -124
     },
     {
      "from": [
@@ -55,7 +55,7 @@
      ],
      "text": "owned",
      "style": "d4_edi_owned",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
      "baseline": 16,
      "left": 4
     }

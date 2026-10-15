@@ -1,0 +1,1224 @@
+{
+ "arc": "sct_a_ar.arc",
+ "repack": [
+  {
+   "bank": "z4_ed_0",
+   "palette": 0,
+   "style": "c4_ed_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     32,
+     104,
+     72,
+     128
+    ],
+    [
+     0,
+     32,
+     96,
+     56,
+     104
+    ],
+    [
+     1,
+     48,
+     24,
+     128,
+     48
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     32,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     96,
+     64
+    ],
+    [
+     7,
+     16,
+     96,
+     96,
+     128
+    ],
+    [
+     7,
+     96,
+     0,
+     128,
+     32
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     8,
+     0,
+     64,
+     64,
+     128
+    ],
+    [
+     8,
+     64,
+     64,
+     72,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "20",
+     "text": "Player Data",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Practice\nOrders",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Practice\nCheck",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Items",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Roles",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Uniform",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Cheers\n& Song",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "Schedule\n& Memo",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 23,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "59",
+     "text": "Ability\nDetails",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "38",
+     "text": "Lineup & Game Roster",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "39",
+     "text": "Player Roles",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "3a",
+     "text": "Team Policy",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "3b",
+     "text": "Cheer Songs",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "3c",
+     "text": "School Song",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 4,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "3d",
+     "text": "Voice Settings",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 3,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "3e",
+     "text": "Change Name",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 3,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "57",
+     "text": "Schedule",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "58",
+     "text": "Manager's Memo",
+     "style": "c4_ed_plate",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      50
+     ]
+    },
+    {
+     "sprite": "4e",
+     "text": "Player Data",
+     "style": "c4_ed_big",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 46,
+     "palettes": [
+      56
+     ]
+    },
+    {
+     "sprite": "4f",
+     "text": "Practice Orders",
+     "style": "c4_ed_big",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 45,
+     "palettes": [
+      56
+     ]
+    },
+    {
+     "sprite": "50",
+     "text": "Practice Check",
+     "style": "c4_ed_big",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 45,
+     "palettes": [
+      56
+     ]
+    },
+    {
+     "sprite": "4b",
+     "text": ": Ability Details",
+     "style": "c4_ed_leg",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 44,
+     "palettes": [
+      9
+     ]
+    },
+    {
+     "sprite": "0c",
+     "text": "yr",
+     "style": "c4_ed_pts",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      18
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Record Points",
+     "style": "c4_ed_pts",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 17,
+     "palettes": [
+      18
+     ]
+    },
+    {
+     "sprite": "48",
+     "text": "Player Data",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "49",
+     "text": "Practice\nOrders",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "4a",
+     "text": "Practice\nCheck",
+     "style": "c4_ed_tab",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 24,
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "4c",
+     "text": ": Ability Details",
+     "style": "c4_ed_leg",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 44,
+     "palettes": [
+      9
+     ]
+    },
+    {
+     "sprite": "4d",
+     "text": ": Ability Details",
+     "style": "c4_ed_leg",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 44,
+     "palettes": [
+      9
+     ]
+    }
+   ],
+   "name": "ed",
+   "split": true
+  }
+ ],
+ "paint": [
+  {
+   "bank": "z4_efo_0",
+   "page": 1,
+   "rect": [
+    66,
+    96,
+    123,
+    128
+   ],
+   "text": "Training\nPolicy",
+   "font": "ttf:rounded:7:0.0:1.0:0.3",
+   "copy": "clear",
+   "style": "c4_efo_0_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 2,
+   "rect": [
+    5,
+    64,
+    76,
+    96
+   ],
+   "text": "Trajectory Up",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_1_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 2,
+   "rect": [
+    87,
+    64,
+    128,
+    96
+   ],
+   "text": "Contact Up",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_2_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 2,
+   "rect": [
+    0,
+    96,
+    28,
+    128
+   ],
+   "text": "Contact Up",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_2_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 2,
+   "rect": [
+    37,
+    96,
+    108,
+    128
+   ],
+   "text": "Power Up",
+   "font": "ttf:rounded:11:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_3_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 2,
+   "rect": [
+    117,
+    96,
+    128,
+    128
+   ],
+   "text": "Speed Up",
+   "font": "ttf:rounded:11:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_4_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    0,
+    0,
+    60,
+    32
+   ],
+   "text": "Speed Up",
+   "font": "ttf:rounded:11:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_4_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    68,
+    0,
+    128,
+    32
+   ],
+   "text": "Arm Up",
+   "font": "ttf:rounded:13:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_5_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    0,
+    32,
+    12,
+    64
+   ],
+   "text": "Arm Up",
+   "font": "ttf:rounded:13:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_5_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    21,
+    32,
+    91,
+    64
+   ],
+   "text": "Fielding Up",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_6_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    100,
+    32,
+    128,
+    64
+   ],
+   "text": "Error Res. Up",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_7_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    0,
+    64,
+    44,
+    96
+   ],
+   "text": "Error Res. Up",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_7_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    52,
+    64,
+    124,
+    96
+   ],
+   "text": "Velocity Up",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_8_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    4,
+    96,
+    77,
+    128
+   ],
+   "text": "Control Up",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_9_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 3,
+   "rect": [
+    83,
+    96,
+    128,
+    128
+   ],
+   "text": "Stamina Up",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_10_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 4,
+   "rect": [
+    0,
+    0,
+    29,
+    32
+   ],
+   "text": "Stamina Up",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_10_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 4,
+   "rect": [
+    38,
+    0,
+    91,
+    32
+   ],
+   "text": "Hone Brk.",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_11_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 4,
+   "rect": [
+    102,
+    0,
+    128,
+    32
+   ],
+   "text": "Learn Brk.",
+   "font": "ttf:rounded:7:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_12_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 4,
+   "rect": [
+    0,
+    32,
+    28,
+    64
+   ],
+   "text": "Learn Brk.",
+   "font": "ttf:rounded:7:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_12_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 4,
+   "rect": [
+    37,
+    32,
+    93,
+    64
+   ],
+   "text": "Break Up",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_13_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 4,
+   "rect": [
+    100,
+    32,
+    128,
+    64
+   ],
+   "text": "Hone Breaking",
+   "font": "ttf:rounded:7:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_14_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 4,
+   "rect": [
+    0,
+    64,
+    43,
+    96
+   ],
+   "text": "Hone Breaking",
+   "font": "ttf:rounded:7:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_14_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 4,
+   "rect": [
+    52,
+    64,
+    124,
+    96
+   ],
+   "text": "Learn Breaking",
+   "font": "ttf:rounded:7:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_15_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    5,
+    0,
+    75,
+    32
+   ],
+   "text": "Auto",
+   "font": "ttf:rounded:17:0.0:1.0:0.3",
+   "copy": "clear",
+   "style": "c4_efo_16_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    85,
+    0,
+    128,
+    32
+   ],
+   "text": "All-Round",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_17_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    0,
+    32,
+    11,
+    64
+   ],
+   "text": "All-Round",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_17_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    24,
+    32,
+    88,
+    64
+   ],
+   "text": "Change Position",
+   "font": "ttf:narrow:7:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_18_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    103,
+    32,
+    128,
+    64
+   ],
+   "text": "Change Order",
+   "font": "ttf:narrow:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_19_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    0,
+    64,
+    40,
+    96
+   ],
+   "text": "Change Order",
+   "font": "ttf:narrow:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_19_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    54,
+    64,
+    123,
+    96
+   ],
+   "text": "Change Form",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_20_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    5,
+    96,
+    59,
+    128
+   ],
+   "text": "Pitcher",
+   "font": "ttf:rounded:11:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_21_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 5,
+   "rect": [
+    69,
+    96,
+    123,
+    128
+   ],
+   "text": "Catcher",
+   "font": "ttf:narrow:12:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_22_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 6,
+   "rect": [
+    5,
+    0,
+    59,
+    32
+   ],
+   "text": "1st Base",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_23_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 6,
+   "rect": [
+    69,
+    0,
+    123,
+    32
+   ],
+   "text": "2nd Base",
+   "font": "ttf:rounded:8:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_24_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 6,
+   "rect": [
+    5,
+    32,
+    59,
+    64
+   ],
+   "text": "3rd Base",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_25_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 6,
+   "rect": [
+    69,
+    32,
+    123,
+    64
+   ],
+   "text": "Shortstop",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_26_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 6,
+   "rect": [
+    5,
+    64,
+    59,
+    96
+   ],
+   "text": "Outfield",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_27_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 6,
+   "rect": [
+    70,
+    64,
+    123,
+    96
+   ],
+   "text": "Bats Right",
+   "font": "ttf:rounded:7:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_28_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 6,
+   "rect": [
+    6,
+    96,
+    59,
+    128
+   ],
+   "text": "Bats Left",
+   "font": "ttf:rounded:8:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_29_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 6,
+   "rect": [
+    70,
+    96,
+    123,
+    128
+   ],
+   "text": "Switch",
+   "font": "ttf:narrow:14:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_30_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    3,
+    0,
+    77,
+    32
+   ],
+   "text": "Overhand",
+   "font": "ttf:narrow:14:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_31_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    83,
+    0,
+    128,
+    32
+   ],
+   "text": "3-Quarters",
+   "font": "ttf:narrow:13:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_32_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    0,
+    32,
+    29,
+    64
+   ],
+   "text": "3-Quarters",
+   "font": "ttf:narrow:13:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_32_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    35,
+    32,
+    109,
+    64
+   ],
+   "text": "Sidearm",
+   "font": "ttf:rounded:14:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_33_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    116,
+    32,
+    128,
+    64
+   ],
+   "text": "Submarine",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_34_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    0,
+    64,
+    61,
+    96
+   ],
+   "text": "Submarine",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_34_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    68,
+    64,
+    128,
+    96
+   ],
+   "text": "Standard",
+   "font": "ttf:narrow:15:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_35_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    0,
+    96,
+    13,
+    128
+   ],
+   "text": "Standard",
+   "font": "ttf:narrow:15:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_35_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    20,
+    96,
+    93,
+    128
+   ],
+   "text": "Open Stance",
+   "font": "ttf:rounded:8:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_36_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 7,
+   "rect": [
+    101,
+    96,
+    128,
+    128
+   ],
+   "text": "Kannushi",
+   "font": "ttf:rounded:8:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_37_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    0,
+    0,
+    27,
+    32
+   ],
+   "text": "Kannushi",
+   "font": "ttf:rounded:8:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_37_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    35,
+    0,
+    109,
+    32
+   ],
+   "text": "Crouching",
+   "font": "ttf:rounded:11:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_38_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    117,
+    0,
+    128,
+    32
+   ],
+   "text": "Pendulum",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_39_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    0,
+    32,
+    43,
+    64
+   ],
+   "text": "Pendulum",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_39_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    55,
+    32,
+    122,
+    64
+   ],
+   "text": "Buster",
+   "font": "ttf:rounded:15:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_40_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    5,
+    64,
+    59,
+    96
+   ],
+   "text": "Flamingo",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_41_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    68,
+    64,
+    128,
+    96
+   ],
+   "text": "Original",
+   "font": "ttf:rounded:13:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_42_0"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    0,
+    96,
+    13,
+    128
+   ],
+   "text": "Original",
+   "font": "ttf:rounded:13:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_efo_42_1"
+  },
+  {
+   "bank": "z4_efo_0",
+   "page": 8,
+   "rect": [
+    20,
+    96,
+    92,
+    128
+   ],
+   "text": "Pitching Form",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_efo_43_0"
+  }
+ ]
+}

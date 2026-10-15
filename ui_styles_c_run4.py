@@ -267,20 +267,20 @@ EFO = [
 ]
 
 
-def _efo_style(style_name, cap, W, c0, c1, two):
+def _efo_style(style_name, cap, W, c0, c1, two, H=32):
     inner = STYLES[style_name]
 
     def style(ink, base):
         import numpy as np
         art, b = inner(ink, base)
-        out = np.zeros((32, c1 - c0), np.uint8)
+        out = np.zeros((H, c1 - c0), np.uint8)
         h, w = art.shape
         ax = (W - w) // 2 - c0
-        ay = (32 - h) // 2 if two else int(round(15.5 + cap / 2.0)) - b
+        ay = (H - h) // 2 if two else int(round((H - 1) / 2.0 + cap / 2.0)) - b
         ys, xs = np.nonzero(art)
         for y, x in zip(ys, xs):
             yy, xx = ay + y, ax + x
-            if 0 <= yy < 32 and 0 <= xx < out.shape[1]:
+            if 0 <= yy < H and 0 <= xx < out.shape[1]:
                 out[yy, xx] = art[y, x]
         return out, b
     return style
@@ -291,5 +291,5 @@ for _n, (_t, _segs, _cap, _sq, _face) in enumerate(EFO):
     _c = 0
     for _k, sg in enumerate(_segs):
         _w = sg[3] - sg[2] + 1
-        STYLES["c4_efo_%d_%d" % (_n, _k)] = _efo_style("c4_efo_h" if sg[0] == 1 else "c4_efo", _cap, _W, _c, _c + _w, "\n" in _t)
+        STYLES["c4_efo_%d_%d" % (_n, _k)] = _efo_style("c4_efo_h" if sg[0] == 1 else "c4_efo", _cap, _W, _c, _c + _w, "\n" in _t, 27 if sg[0] == 1 else 32)
         _c += _w
