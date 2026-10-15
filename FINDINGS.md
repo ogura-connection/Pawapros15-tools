@@ -735,3 +735,28 @@ levels: one page of sodk was 11 bytes over its compressed slot with them.
 128 cell), so the code alone sets the spacing; a list of the sprite numbers in `scs_main.rel` sec5+0x10616c turned
 out to be part of a calendar table (3 x 12 words read at sec1+0x6b410), not the banner layout. An English word cut
 over the glyph sprites needs the spacing seen on screen once.
+
+## Surnames in Latin letters (2026-10-14, fourteenth session; seen in game)
+
+The surname list (1,856 names: team-mates, generated players, Eikan Nine squads) is English in two forms. Tool:
+`name_table.py` (doc string has the detail); English in `translation/names/surnames.tsv`, romanised from the
+announcer's own readings (each record's call id), so a kanji with several readings comes out as the game says it.
+
+- **A main.dol data section cannot hold it.** The apploader refuses any DOL section above 0x80900000 ("One of the
+  sections in the dol file exceeded its boundary ... (production mode)"); the game does not start. Real hardware too.
+- **scc_main.rel has a fixed slot** (0x807E8380, plan row 25; the size column there is the file size, not
+  fixSize + BSS) that ends 28 bytes before scs_main.rel. Grown in place it overwrote scs_main.rel ("OSLink: unknown
+  relocation type"). The build now moves it to 0x81460000 in the free area (like ore_work.rel) and appends a
+  16-byte-record table to its section 5 (six cells, 0x1FFF, call id). Readers in scc_main / scs_main / sct_main /
+  work_sct: relocations re-aimed (TableRemap), mulli 0xA -> 0x10, call id at +0xE, and the four-cell copiers turned
+  into six-cell loops in their own space. Watch out: `addi rD, r0, x` is `li` (rA = 0 is the value 0): use addic.
+- main_prg.rel cannot grow (next module 16 bytes behind): its own copy keeps 10-byte records with four cells
+  (8 letters) in the slot that held 0x1FFF; 187 longer names use a Kunrei short form (Takahasi), 21 stay kanji.
+  Its reader is reached through a function pointer; where those names show is not known yet.
+- **Layout, seen on the Eikan Nine squad list and in result messages:** a name plate spreads a name's cells over
+  its width (trailing blank cells dropped, a leading one kept); text drops blank cells but shows the space of a
+  half-filled pair. So odd names start with a space (" Fujii") and names of four letters or fewer start with a
+  blank cell ("  Goto"): plates read cleanly (short names sit right of centre), text reads "Goto's", "Fujii's".
+  Left: the chatter labels over the field drop the leading blank and spread two-cell names ("An  do").
+- Rosters made before the patch keep their kanji: Success team-mates live in the system save, so the test saves
+  still show kanji team-mates. A fresh Eikan Nine squad shows Latin names (dolphin-test/looks/eikan/).
