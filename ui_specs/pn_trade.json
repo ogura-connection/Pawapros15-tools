@@ -1642,6 +1642,27 @@
      96,
      32,
      128
+    ],
+    [
+     9,
+     72,
+     96,
+     128,
+     128
+    ],
+    [
+     5,
+     112,
+     64,
+     128,
+     96
+    ],
+    [
+     5,
+     64,
+     64,
+     96,
+     96
     ]
    ],
    "labels": [
@@ -1653,9 +1674,9 @@
       128,
       128
      ],
-     "text": "Outgoing Players",
+     "text": "Outgoing\nPlayers",
      "style": "a6_pt_out",
-     "font": "ttf:rounded:9:0.0:0.85:0.25",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
      "baseline": 20
     },
     {
@@ -1668,8 +1689,8 @@
      ],
      "text": "'s",
      "style": "a6_pt_out",
-     "font": "ttf:rounded:14:0.0:1.0:0.25",
-     "baseline": 26,
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 23,
      "align": "right"
     }
    ],
@@ -2117,6 +2138,13 @@
    "under": 3,
    "areas": [
     [
+     3,
+     48,
+     64,
+     88,
+     120
+    ],
+    [
      10,
      0,
      80,
@@ -2143,7 +2171,7 @@
      "sprite": "47",
      "text": "Withdraw",
      "style": "a6_btn_purple",
-     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
      "baseline": 20,
      "palettes": [
       42
@@ -2153,17 +2181,17 @@
      "sprite": "54",
      "text": "Remove\nfrom List",
      "style": "a6_btn_purple",
-     "font": "ttf:narrow:9:0.0:1.0:0.25",
-     "baseline": 20,
+     "font": "ttf:narrow:11:0.0:0.92:0.25",
+     "baseline": 22,
      "palettes": [
       42
      ]
     },
     {
      "sprite": "5a",
-     "text": "Decline Trade",
+     "text": "Decline\nTrade",
      "style": "a6_btn_purple",
-     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
      "baseline": 16,
      "palettes": [
       42
@@ -2262,6 +2290,13 @@
    "under": 3,
    "areas": [
     [
+     9,
+     16,
+     96,
+     72,
+     128
+    ],
+    [
      10,
      56,
      0,
@@ -2349,10 +2384,10 @@
    "labels": [
     {
      "sprite": "59",
-     "text": "Accept Trade",
+     "text": "Accept\nTrade",
      "style": "a6_btn_brown",
-     "font": "ttf:narrow:8:0.0:1.0:0.25",
-     "baseline": 14,
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 16,
      "palettes": [
       39
      ]
@@ -2462,6 +2497,20 @@
      32,
      120,
      64
+    ],
+    [
+     11,
+     56,
+     0,
+     64,
+     32
+    ],
+    [
+     11,
+     0,
+     32,
+     64,
+     40
     ],
     [
      13,
