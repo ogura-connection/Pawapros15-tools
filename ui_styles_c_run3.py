@@ -48,7 +48,7 @@ STYLES["c3_head"] = cut(ringfill([1, 1, 1, 4, 5], [14, 14], [13, 13]))
 ui_type.TTF["c3uni"] = ("/System/Library/Fonts/Supplemental/Arial Unicode.ttf", 0)       # has the star the tags use
 STYLES["c3_tag"] = plain([0, 2, 5, 8, 11, 14, 15])
 # the hints (palette 85, pages 13): thin blue-violet strokes
-STYLES["c3_hint"] = plain([0, 9, 7, 6, 5, 4, 3])
+STYLES["c3_hint"] = plain([0, 7, 5, 4, 3, 3, 3])
 # "this player cannot be uploaded" (palette 86): red letters, soft edge into the page behind
 STYLES["c3_red"] = plain([0, 7, 9, 11, 13, 14, 15])
 # the message of an unset voice (palette 13): white to yellow letters, dark blue outline, two lighter blue rings

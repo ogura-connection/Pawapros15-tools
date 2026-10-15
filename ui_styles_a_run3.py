@@ -370,6 +370,118 @@ def logo1b(l1="Hakkyu", l2="Dream", sub="~ Hot-Blooded Industrial-League Ball! ~
 WEDGE2 = [(122, 37), (164, 7), (172, 12), (176, 38)]
 
 
+# ---- Hakkyu Dream v3: keep the original wedge and starburst, one title line --------------------------------------
+def erase3(keep_extra=None):
+    c = logo_canvas(L1_PARTS, H=80); pal = logo_pal(16); q = Quant(pal, c)
+    rgb = pal[c][..., :3].astype(int)
+    R, G, B = rgb[..., 0], rgb[..., 1], rgb[..., 2]
+    H, W = c.shape
+    P = poly_mask(P1, H, W)
+    P[3:41, 100:172] = True
+    P[62:74, 24:60] = True
+    yy, xx = np.mgrid[0:H, 0:W]
+    d = np.hypot(xx - BALL[0], yy - BALL[1])
+    red = (c > 0) & (R > 200) & (R - G > 70) & (R - B > 40) & (G < 170) & (B > 50)
+    yellow = (c > 0) & (R > 200) & (G > 120) & (B < 130)
+    sblue = (c > 0) & (B > 200) & (G > 70) & (R < 100)
+    lettercol = ((R < 70) & (G < 110) & (B < 175)) | ((R < 45) & (G < 45))
+    P[28:31, 48:58] = True
+    P[18:24, 84:92] = True
+    keep = red & (xx >= 118) & (xx <= 173) & (yy < 40)
+    spikecol = ((R > 200) | ((B > 200) & (G > 50))) & ~lettercol
+    keep |= (xx >= 172) & (yy < 50) & (c > 0) & spikecol
+    keep |= (xx >= 190) & (yy >= 50) & (yy <= 60) & (c > 0) & spikecol
+    P |= poly_mask([(165, 20), (172, 24), (194, 60), (194, 66), (165, 66)], H, W)
+    keep &= ~poly_mask([(165, 20), (172, 24), (190, 56), (165, 66)], H, W)
+    erase = P & ~keep
+    inball = erase & (d <= BALL[2] - 0.5)
+    ring = erase & (d > BALL[2] - 0.5) & (d <= BALL[2] + 0.8)
+    border = erase & (d > BALL[2] + 0.8) & (d <= BALL[2] + 1.9)
+    stitch = (R > 200) & (G < 190) & (R - G > 45) & (np.abs(B - G) < 70)
+    kst = erase & stitch & (d <= BALL[2] + 1)
+    new = c.copy(); new[erase] = 0
+    new[inball] = q(np.array([(255, 255, 255)]))[0]
+    new[ring] = q(np.array([(106, 106, 148)]))[0]
+    new[border] = q(np.array([(255, 255, 255)]))[0]
+    new[kst] = c[kst]
+    return new, c, erase, red
+
+
+def sub_art(sub, scap, sq, font):
+    sm, _ = crisp_mask(sub, scap, font=font, stroke=0.0, squeeze=sq)
+    sm = despeckle(sm)
+    sh_, sw_ = sm.shape
+    bg = np.zeros((sh_ + 4, sw_ + 4), bool); bg[2:2 + sh_, 2:2 + sw_] = sm
+    d1 = grow(bg, 1); d2 = grow(d1, 1)
+    r = np.zeros(bg.shape + (3,)); r[d2] = (255, 255, 255); r[d1] = (110, 10, 0)
+    sg = np.nonzero(bg.any(1))[0]
+    gg = grad_rows(SUB_GRAD, sg.max() - sg.min() + 1)
+    rc = np.zeros((bg.shape[0], 3)); rc[sg.min():sg.max() + 1] = gg
+    r[bg] = np.broadcast_to(rc[:, None, :], bg.shape + (3,))[bg]
+    return r, d2
+
+def logo1c(title="Hakkyu Dream", sub="~ Hot-Blooded Industrial-League Ball! ~", tcap=22, tsq=0.72, trk=2.0, s0=0.85, s1=1.15, rise=6,
+           tx=30, tbottom=64, scap=8, ssq=0.9, sfont="condb", sright=206, tfont="condbi"):
+    new, c, erase, red = erase3()
+    pal = logo_pal(16); q = Quant(pal, c)
+    H, W = new.shape
+    rgb = np.zeros((H, W, 3)); A = np.zeros((H, W), bool)
+    # continue the pennant: a straight diagonal band, same stripes
+    keepred = red & (new == c) & (new > 0) & ~erase
+    ys, xs = np.nonzero(keepred)
+    top = {}
+    for x in range(128, 167):
+        col = np.nonzero(keepred[:, x])[0]
+        if len(col): top[x] = col.min()
+    px = np.array(list(top)); py = np.array([top[x] for x in top])
+    k, b0 = np.polyfit(px, py, 1)
+    rowcnt = keepred[:40].sum(1)
+    ybot = int(np.nonzero(rowcnt >= 8)[0].max())
+    yy, xx = np.mgrid[0:H, 0:W]
+    x0 = 98
+    band = (xx >= x0) & (xx <= 172) & (yy >= k * xx + b0 - 0.5) & (yy <= ybot) & (new == 0) & ~keepred
+    rowcol = {}
+    for y in range(H):
+        r = pal[c][y][keepred[y]][:, :3] if keepred[y].any() else None
+        rowcol[y] = np.median(r, 0) if r is not None else None
+    cyc = np.array(WEDGE_ROWS, float)
+    for y in range(H):
+        m = band[y]
+        if not m.any(): continue
+        col = rowcol[y] if rowcol[y] is not None else cyc[(y * 7 // 2) % len(cyc)]
+        rgb[y][m] = col; A[y] |= m
+    allw = keepred | band
+    bord = grow(allw, 2) & ~allw & (new == 0)
+    rgb[bord] = (255, 255, 255); A |= bord
+    new[A] = q(rgb[A]); A[:] = False
+    # title
+    tr, ta = title_art(title, tcap, tsq, stroke=0.25, trk=trk, s0=s0, s1=s1, rise=rise, font=tfont)
+    y = tbottom - tr.shape[0]
+    sl = (slice(y, y + tr.shape[0]), slice(tx, tx + tr.shape[1]))
+    rgb[sl][ta] = tr[ta]; A[sl] |= ta
+    # ball seam
+    seam = np.zeros((H, W), bool)
+    cxs, cys, R = 80.0, 44.0, 35.0
+    for ang in np.arange(150, 216, 1.0):
+        px_ = cxs + R * np.cos(np.radians(ang)); py_ = cys + R * np.sin(np.radians(ang))
+        if np.hypot(px_ - BALL[0], py_ - BALL[1]) < BALL[2] - 2.5: seam[int(py_), int(px_)] = True
+    for ang in np.arange(152, 214, 6.0):
+        for t in (-2, -1, 1, 2):
+            px_ = cxs + (R + t) * np.cos(np.radians(ang)); py_ = cys + (R + t) * np.sin(np.radians(ang))
+            if np.hypot(px_ - BALL[0], py_ - BALL[1]) < BALL[2] - 2.5: seam[int(py_), int(px_)] = True
+    under = new.copy()
+    # seam only where the new lettering is not
+    sm_ = seam & ~A
+    new[sm_] = q(np.array([(255, 150, 150)]))[0]
+    # subtitle
+    r, d2 = sub_art(sub, scap, ssq, sfont)
+    x_ = sright - r.shape[1]; y_ = H - r.shape[0]
+    sl2 = (slice(y_, y_ + r.shape[0]), slice(x_, x_ + r.shape[1]))
+    rgb[sl2][d2] = r[d2]; A[sl2] |= d2
+    new[A] = q(rgb[A])
+    return new
+
+
 import functools
 
 @functools.lru_cache(None)
@@ -378,7 +490,7 @@ def _banner():
 
 @functools.lru_cache(None)
 def _hakkyu():
-    return logo1b(sfont="condb")
+    return logo1c(tcap=20, tsq=0.76, trk=1.5, s0=0.82, s1=1.12, rise=6, tx=28, tbottom=64, ssq=1.0, sright=208)
 
 @functools.lru_cache(None)
 def _eikan():
