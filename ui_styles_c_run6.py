@@ -293,3 +293,23 @@ STYLES["c6_dtv_44"] = _sil("c6_dtv_43", 1)
 STYLES["c6_dtv_44_s"] = _sil("c6_dtv_43_s", 1)
 STYLES["c6_dtv_46"] = _sil("c6_dtv_45", 1)
 STYLES["c6_dtv_46_s"] = _sil("c6_dtv_45_s", 1)
+
+# v2_bgm01 sprites 00 / 01: whole-picture styles (the picture with the 2gun box cleared and the English set in it)
+import os
+_PICS = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)), '_work/ui_pages/run6/C/bgm_pics.npz'))
+_RING = ringfill([2] * 6, [15, 15], [])
+REGION = {'00': (69, 35, 128, 69), '01': (0, 13, 51, 45)}
+def _pic(sid):
+    pic = _PICS[sid]; x0, y0, x1, y1 = REGION[sid]
+    def style(ink, base):
+        art, _ = _RING(ink, base)
+        out = pic.copy(); out[y0:y1, x0:x1] = 0
+        h, w = art.shape
+        ox = x0 + max(((x1 - x0) - w) // 2, 0); oy = y0 + max(((y1 - y0) - h) // 2, 0)
+        m = art > 0
+        out[oy:oy + h, ox:ox + w][m] = art[m]
+        ys, xs = np.nonzero(out)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], 0
+    return style
+STYLES['c6_bgm_00'] = _pic('00')
+STYLES['c6_bgm_01'] = _pic('01')
