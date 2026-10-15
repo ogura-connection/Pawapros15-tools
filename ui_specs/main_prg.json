@@ -2357,22 +2357,22 @@
     ],
     [
      3,
-     120,
-     64,
+     112,
+     0,
      128,
      96
     ],
     [
      4,
-     56,
-     48,
      112,
-     96
+     0,
+     128,
+     48
     ],
     [
      4,
-     120,
-     64,
+     56,
+     48,
      128,
      96
     ],
@@ -3237,6 +3237,20 @@
      "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 22
+    },
+    {
+     "sprite": "bb",
+     "text": "League",
+     "style": "e_pl_bb",
+     "font": "ttf:din:8:0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "bc",
+     "text": "All-Time",
+     "style": "e_pl_bc",
+     "font": "ttf:din:7:0:0.9:0.0",
+     "valign": "centre"
     }
    ]
   },

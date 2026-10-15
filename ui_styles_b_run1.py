@@ -17,9 +17,9 @@ from ui_styles_ore_ini import ringfill
 STYLES = {}
 
 # --- tab buttons (palette 16)
-_TAB = [8, 7, 5, 4, 3, 2, 1]
+_TAB = [6, 5, 4, 3, 2, 1, 1]
 STYLES["opt_tab"] = ringfill(_TAB, [15, 15, 11])
-STYLES["opt_tab2"] = ringfill(_TAB, [15, 12])                  # the two-line tabs: smaller letters, one ring less
+STYLES["opt_tab2"] = ringfill([4, 3, 3, 2, 2, 1, 1], [15, 12])                  # the two-line tabs: smaller letters, one ring less
 
 # --- values on the blue plates (palette 7)
 STYLES["opt_val"] = ringfill([15, 15, 15, 14], [8, 7], [5])
@@ -43,7 +43,14 @@ def canvas(inner, width, height=16, base=12):
     return style
 
 
-_HLP = ringfill([15], [7])
+def thin(inner, cut):
+    """`inner` on the ink with every level below `cut` taken away: thin strokes stay one crisp pixel wide."""
+    def style(ink, base):
+        return inner(np.where(ink >= cut, ink, 0), base)
+    return style
+
+
+_HLP = thin(ringfill([15], [7]), 3)
 STYLES["hlp_raw"] = _HLP
 for _w in range(16, 200):
     STYLES["hlp%d" % _w] = canvas(_HLP, _w, 15, 11)              # cap 9, 15 rows, baseline on row 11

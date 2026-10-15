@@ -1325,6 +1325,223 @@
      "text": "R"
     }
    ]
+  },
+  {
+   "name": "team names",
+   "bank": "h3_mrg_0",
+   "style": "d_mrg_name",
+   "font": "ttf:rounded:16:0.0:1.0:0.0",
+   "valign": "centre",
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     32,
+     16,
+     64
+    ],
+    [
+     2,
+     96,
+     32,
+     128,
+     64
+    ]
+   ],
+   "blank": [
+    [
+     2,
+     16,
+     32,
+     96,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Giants",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "01",
+     "text": "Dragons",
+     "font": "ttf:rounded:15:0.0:0.9:0.4"
+    },
+    {
+     "sprite": "02",
+     "text": "Carp",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "03",
+     "text": "Swallows",
+     "font": "ttf:rounded:15:0.0:0.75:0.4"
+    },
+    {
+     "sprite": "04",
+     "text": "BayStars",
+     "font": "ttf:rounded:15:0.0:0.8:0.4"
+    },
+    {
+     "sprite": "05",
+     "text": "Tigers",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "06",
+     "text": "Eagles",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "07",
+     "text": "Fighters",
+     "font": "ttf:rounded:15:0.0:0.9:0.4"
+    },
+    {
+     "sprite": "08",
+     "text": "Lions",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "09",
+     "text": "Buffaloes",
+     "font": "ttf:rounded:15:0.0:0.8:0.4"
+    },
+    {
+     "sprite": "0a",
+     "text": "Marines",
+     "font": "ttf:rounded:15:0.0:0.95:0.4"
+    },
+    {
+     "sprite": "0b",
+     "text": "Hawks",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "0c",
+     "text": "Searex",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "0d",
+     "text": "Surpass",
+     "font": "ttf:rounded:15:0.0:0.9:0.4"
+    },
+    {
+     "sprite": "0f",
+     "text": "All-Central",
+     "font": "ttf:rounded:15:0.0:0.7:0.4"
+    },
+    {
+     "sprite": "10",
+     "text": "All-Pacific",
+     "font": "ttf:rounded:15:0.0:0.75:0.4"
+    },
+    {
+     "sprite": "11",
+     "text": "Korea",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "12",
+     "text": "Ch. Taipei",
+     "font": "ttf:rounded:15:0.0:0.75:0.4"
+    },
+    {
+     "sprite": "13",
+     "text": "China",
+     "font": "ttf:rounded:15:0.0:1.0:0.4"
+    }
+   ]
+  },
+  {
+   "name": "turning point titles",
+   "bank": "y5_tnp_1",
+   "style": "d_tnp_turn",
+   "font": "ttf:sans-italic:21:0.0:0.95:0.6",
+   "valign": "centre",
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     2,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     2,
+     104,
+     64,
+     120,
+     88
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Turning Point",
+     "style": "d_tnp_turn",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "04",
+     "text": "Defense Point",
+     "style": "d_tnp_def",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "05",
+     "text": "Attack Point",
+     "style": "d_tnp_atk",
+     "slices": true,
+     "slice_width": 128
+    }
+   ]
   }
  ],
  "paint": [

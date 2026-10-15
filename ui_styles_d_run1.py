@@ -20,5 +20,10 @@ STYLES["d_aps_row1"] = ringfill([4], [0xe])
 STYLES["d_lo_banner"] = ringfill([0xf, 0xe, 0xd, 0xc], [8, 8, 1])
 # hit-direction tags (palettes 39, 40): orange letters, green ring, dark green outer ring
 STYLES["d_lo_tag"] = ringfill([0xf], [4, 1])
-# h3_mrg_0 team names (palette 0): white letters, navy ring, blue outer ring
-STYLES["d_mrg_name"] = ringfill([0xf], [1, 5])
+# h3_mrg_0 team names (palette 0): white letters, navy ring (one ring: the page has room for 19 names of 20 pixels only)
+STYLES["d_mrg_name"] = ringfill([0xf], [1])
+# y5_tnp_1 titles: Turning Point (palette 4, cyan on navy), Defense Point (palette 6, mint on deep green),
+# Attack Point (palette 5, pink on maroon); each has a three-pixel dark outline and a white outer ring
+STYLES["d_tnp_turn"] = ringfill([4, 4, 3, 3, 2, 2], [0xf, 0xf, 0xf, 5, 5, 6])
+STYLES["d_tnp_def"] = ringfill([4, 5, 5, 8, 8, 8], [0xf, 0xf, 0xf, 3, 3, 2])
+STYLES["d_tnp_atk"] = ringfill([4, 5, 6, 7, 8, 8], [0xf, 0xf, 0xf, 2, 2, 1])

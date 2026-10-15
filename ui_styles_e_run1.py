@@ -37,8 +37,83 @@ def scm_style(ink, base):
     return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base + pad - ys.min()
 
 
+# ---- plates whose lettering is part of the picture: the plate is cleaned and the English drawn over it ----
+_plates = {}
+
+
+def _orig_sprite(bank, sid):
+    """Palette indices (h, w) of a sprite as the game composes it, from the untouched original file."""
+    key = (bank, sid)
+    if key not in _plates:
+        import os
+        import ui_textures as U
+        path = os.path.join(U.ORIG_ARC_DIR, "main_prg.arc")
+        d = open(path if os.path.exists(path) else os.path.join(U.S.DATA_FILES, "main_prg.arc"), "rb").read()
+        b = next(x for x in U.banks(d, U.elf_symbols(d)) if x["name"] == bank)
+        ps = next(v for n, v in b["sprites"].items() if n.endswith("_" + sid))
+        w = max(p.x + p.x1 - p.x0 for p in ps)
+        h = max(p.y + p.y1 - p.y0 for p in ps)
+        im = np.zeros((h, w), np.uint8)
+        for p in ps:
+            idx = U.decode_indices(d, *b["pages"][p.page])[p.y0:p.y1, p.x0:p.x1]
+            im[p.y:p.y + idx.shape[0], p.x:p.x + idx.shape[1]] = idx
+        _plates[key] = im
+    return _plates[key].copy()
+
+
+def inpaint(im, mask):
+    """Pixels of `mask` take the colour of the nearest pixel outside it (rows and columns, nearest first)."""
+    out = im.copy()
+    ys, xs = np.nonzero(~mask & (im > 0))
+    pts = np.stack([ys, xs], 1)
+    for y, x in zip(*np.nonzero(mask)):
+        d2 = ((pts - (y, x)) ** 2).sum(1)
+        out[y, x] = im[tuple(pts[d2.argmin()])]
+    return out
+
+
+def plated_text(bank, sid, clean, fill, rings, shadow=0, centre=None, size=None):
+    """A style that returns the whole plate: its original art, `clean`ed of the Japanese, with the ink drawn over
+    it (letters `fill`, solid `rings`, a one-pixel `shadow` colour), centred on `centre` (x, y)."""
+    inner = banded([0] + [fill] * 6, rings, shadow)
+
+    def style(ink, base):
+        plate = clean(_orig_sprite(bank, sid))
+        art, _ = tight(inner)(np.where(ink >= 3, 6, 0), base)
+        cx, cy = centre
+        h, w = art.shape
+        x0, y0 = cx - w // 2, cy - h // 2
+        area = plate[y0:y0 + h, x0:x0 + w]
+        assert area.shape == art.shape, (sid, art.shape, plate.shape)
+        area[art > 0] = art[art > 0]
+        return plate, 0
+    return style
+
+
+def clean_box(*boxes, fill):
+    def clean(im):
+        for x0, y0, x1, y1 in boxes:
+            im[y0:y1, x0:x1] = fill
+        return im
+    return clean
+
+
+def clean_inpaint(letters, box=None):
+    def clean(im):
+        mask = np.isin(im, letters)
+        if box:
+            keep = np.zeros_like(mask)
+            x0, y0, x1, y1 = box
+            keep[y0:y1, x0:x1] = True
+            mask &= keep
+        return inpaint(im, mask)
+    return clean
+
+
 STYLES = {
     "e_scm": scm_style,
+    "e_pl_bb": plated_text("r4_12h", "bb", clean_box((4, 7, 31, 25), fill=15), 1, [], 0, (17, 16)),      # League (palette 84)
+    "e_pl_bc": plated_text("r4_12h", "bc", clean_box((4, 7, 31, 25), (7, 25, 31, 28), fill=15), 1, [], 0, (17, 16)),       # All-Time (palette 85)
     # team-type plates of r4_12h (palettes 32, 34, 37 share their indices): white letters, a dark ring, a lighter ring
     "e_plate": crisp(tight(banded([0, 11, 11, 11, 11, 11, 11], [1, 3]))),
     # Baseball School & Practice (g3_rt): yellow shading to orange in a brown outline, a white band, blue rim and glow
