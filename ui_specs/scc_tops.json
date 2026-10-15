@@ -255,11 +255,11 @@
       32,
       24
      ],
-     "text": "Pro Yr",
+     "text": "Pro",
      "style": "b3_plate35",
-     "font": "ttf:narrow:11:0.0:0.92:0.25",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
      "baseline": 18,
-     "left": -4
+     "left": 2
     },
     {
      "from": [
@@ -269,7 +269,11 @@
       64,
       24
      ],
-     "empty": true
+     "text": "yr",
+     "style": "b3_plate35",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 18,
+     "left": 2
     },
     {
      "from": [
