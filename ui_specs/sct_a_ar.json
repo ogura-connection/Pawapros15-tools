@@ -399,9 +399,9 @@
    "page": 1,
    "rect": [
     66,
-    96,
+    85,
     123,
-    128
+    112
    ],
    "text": "Training\nPolicy",
    "font": "ttf:rounded:7:0.0:1.0:0.3",

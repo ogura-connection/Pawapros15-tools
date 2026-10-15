@@ -165,3 +165,6 @@ def _logo_window(c0, c1):
 STYLES["b4_eik0"] = _logo_window(0, 128)           # page 0 rect 0,0,128,128
 STYLES["b4_eik1"] = _logo_window(128, 256)         # page 1 rect 0,0,128,128
 STYLES["b4_eik2"] = _logo_window(256, 304)         # page 2 rect 0,0,48,128
+
+# ---- sct_titl.arc r4_eikz page 4 / 5: the info card of the Continue screen (green letters, white ring, blue glow; palettes 1 / 7) ----------------
+STYLES["b4_info"] = ringfill([9, 8, 5, 3, 2, 1], [10, 10, 12], [15, 15])

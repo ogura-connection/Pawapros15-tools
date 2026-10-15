@@ -220,7 +220,7 @@ STYLES["c4_efo_h"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4, 9], [1])         
 # z4_efo_0: the tape words painted in place. (English, [(page, row, x0, x1), ...] the Japanese word's columns (a word that runs on is cut at
 # the end of the row), cap, squeeze, face); the word is centred over its columns and cut where the Japanese was cut.
 EFO = [
-    ('Training\nPolicy', [(1, 3, 66, 122)], 7, 1.0, 'rounded'),
+    ('Training\nPolicy', [(1, 3, 65, 125)], 8, 1.0, 'rounded'),
     ('Trajectory Up', [(2, 2, 5, 75)], 8, 0.85, 'rounded'),
     ('Contact Up', [(2, 2, 87, 127), (2, 3, 0, 27)], 9, 0.85, 'rounded'),
     ('Power Up', [(2, 3, 37, 107)], 11, 0.85, 'rounded'),

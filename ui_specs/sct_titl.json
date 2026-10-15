@@ -1,0 +1,577 @@
+{
+ "arc": "sct_titl.arc",
+ "repack": [
+  {
+   "bank": "r4_eik_bg_opd#1",
+   "palette": 16,
+   "style": "d2_staz_new",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     64,
+     128,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "New Game",
+     "style": "d2_staz_new",
+     "font": "ttf:rounded:18:0.0:0.92:0.5",
+     "baseline": 40,
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "btn00",
+   "sprites": "r4_eikz#2"
+  },
+  {
+   "bank": "r4_eik_bg_opd#1",
+   "palette": 16,
+   "style": "d2_staz_cont",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     80,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Continue",
+     "style": "d2_staz_cont",
+     "font": "ttf:rounded:18:0.0:0.92:0.5",
+     "baseline": 40,
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "btn01",
+   "sprites": "r4_eikz#2"
+  },
+  {
+   "bank": "r4_eik_bg_opd#1",
+   "palette": 16,
+   "style": "d2_staz_list",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Album",
+     "style": "d2_staz_list",
+     "font": "ttf:rounded:18:0.0:0.92:0.5",
+     "baseline": 38,
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "btn02",
+   "sprites": "r4_eikz#2"
+  },
+  {
+   "bank": "r4_eikz#2",
+   "palette": 28,
+   "style": "warnline",
+   "font": "ttf:rounded:14:0.0:0.9:0.5",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     2,
+     16,
+     64,
+     128,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      16,
+      32,
+      128,
+      72
+     ],
+     "text": "Warning!",
+     "style": "warnhead",
+     "font": "ttf:rounded:18:0.0:0.9:0.6",
+     "left": 4,
+     "baseline": 30
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "If you start",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": 25,
+     "baseline": 25
+    },
+    {
+     "from": [
+      0,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "a new game,",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": -7,
+     "baseline": 25
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "this save",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": 61,
+     "baseline": 25
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "data will",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": 11,
+     "baseline": 25
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      112,
+      32
+     ],
+     "text": "be erased.",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": -43,
+     "baseline": 25
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      32
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Start the",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": 18,
+     "baseline": 25
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      64,
+      96
+     ],
+     "text": "game?",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": -33,
+     "baseline": 25
+    },
+    {
+     "from": [
+      1,
+      64,
+      64,
+      128,
+      96
+     ],
+     "text": "Yes,",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": 16,
+     "baseline": 25
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      96,
+      128
+     ],
+     "text": "go ahead!",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": -9,
+     "baseline": 25
+    },
+    {
+     "from": [
+      1,
+      96,
+      96,
+      128,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "No,",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": -12,
+     "baseline": 25
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      16,
+      64
+     ],
+     "text": "never mind.",
+     "style": "warnline",
+     "font": "ttf:rounded:14:0.0:0.9:0.5",
+     "left": -108,
+     "baseline": 25
+    }
+   ],
+   "name": "warning (pages 0-2)",
+   "sprites": "r4_eik#3"
+  },
+  {
+   "bank": "r4_eikz#2",
+   "palette": 1,
+   "style": "b4_info",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     48,
+     96,
+     72
+    ],
+    [
+     4,
+     24,
+     72,
+     80,
+     96
+    ],
+    [
+     4,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     4,
+     0,
+     72,
+     24,
+     96
+    ],
+    [
+     5,
+     64,
+     40,
+     128,
+     64
+    ],
+    [
+     5,
+     64,
+     64,
+     96,
+     88
+    ],
+    [
+     4,
+     120,
+     0,
+     128,
+     48
+    ],
+    [
+     4,
+     80,
+     72,
+     96,
+     96
+    ],
+    [
+     4,
+     96,
+     104,
+     128,
+     120
+    ],
+    [
+     4,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     5,
+     96,
+     64,
+     128,
+     88
+    ],
+    [
+     5,
+     64,
+     88,
+     128,
+     104
+    ],
+    [
+     5,
+     0,
+     112,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      0,
+      48,
+      96,
+      72
+     ],
+     "text": "Went Pro",
+     "style": "b4_info",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 18,
+     "left": 2,
+     "sprites": [
+      "0a"
+     ]
+    },
+    {
+     "from": [
+      4,
+      24,
+      72,
+      80,
+      96
+     ],
+     "text": "School",
+     "style": "b4_info",
+     "font": "ttf:rounded:12:0.0:0.85:0.35",
+     "baseline": 18,
+     "left": 2,
+     "sprites": [
+      "37"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      96,
+      120
+     ],
+     "text": "Date",
+     "style": "b4_info",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 18,
+     "left": 3,
+     "sprites": [
+      "37"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      24,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      5,
+      64,
+      40,
+      128,
+      64
+     ],
+     "text": "Years",
+     "style": "b4_info",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 18,
+     "left": 4,
+     "sprites": [
+      "37"
+     ]
+    },
+    {
+     "from": [
+      5,
+      64,
+      64,
+      96,
+      88
+     ],
+     "text": "Played",
+     "style": "b4_info",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 18,
+     "left": -10,
+     "sprites": [
+      "37"
+     ]
+    }
+   ],
+   "name": "info card (pages 4, 5)",
+   "sprites": "r4_eik#3"
+  }
+ ],
+ "paint": [
+  {
+   "bank": "r4_eik#3",
+   "page": 0,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Eikan Nine",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b4_eik0"
+  },
+  {
+   "bank": "r4_eik#3",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Eikan Nine",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b4_eik1"
+  },
+  {
+   "bank": "r4_eik#3",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    48,
+    128
+   ],
+   "text": "Eikan Nine",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b4_eik2"
+  }
+ ]
+}
