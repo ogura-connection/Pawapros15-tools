@@ -419,6 +419,15 @@ BLOCK_SCRIPTS["orepena.rel"] = {"engine": "ore", "section": 5, "region": (182584
 # read without the memory plan.
 ORE_ANNEX_MODULE, ORE_ANNEX_MAGIC = "ore_work.rel", (0x4F52, 0x4558)
 
+# The My Life Giants signing scene (and the other scenes of gdt_pn.rel) is run by the same interpreter: the
+# script parses with ORE_OP_LEN, 61 labels in a table of its own (sec5+768). Its module cannot grow either
+# (it shares its slot with gdt_o_c6 .. gdt_scc), so its overflow goes to a second annex behind the first one
+# in ore_work.rel, marked "PNEX". Three returns behind a goto are unreachable (kept).
+BLOCK_SCRIPTS["gdt_pn.rel"] = {"engine": "ore", "section": 5, "region": (1240, 7440), "labels": (768, 1012),
+                               "islands": (), "ends": (0x08, 0x34, 0x35), "name_ops": (0x1C, 0x3F), "max_op": 0x49,
+                               "line": 16, "marks": {0x01: "L", 0x06: "B", 0x07: "B"}, "dead": 3,
+                               "annex_section": 5, "annex_from": 2168, "annex_magic": (0x504E, 0x4558)}
+
 
 class OreScript(BlockScript):
     """The My Life script (see ORE_OP_LEN). Same attributes as BlockScript; an opcode is the whole halfword.
@@ -432,10 +441,18 @@ class OreScript(BlockScript):
         hw = struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2])
         self.annex_at, self.annex_base = len(hw), None
         if annex_rel is not None:
+            # the annexes stand one behind the other from annex_from, each a multiple of 8 bytes long; a header
+            # is its magic and its own address, so the first one dates the others
             a = annex_rel.sec_data(spec["annex_section"])[spec["annex_from"]:]
-            if len(a) >= 8 and struct.unpack_from(">2H", a) == ORE_ANNEX_MAGIC:
-                self.annex_base = struct.unpack_from(">I", a, 4)[0] + 8
-                hw += struct.unpack(">%dH" % (len(a) // 2 - 4), a[8:len(a) // 2 * 2])
+            magic = spec.get("annex_magic", ORE_ANNEX_MAGIC)
+            first = struct.unpack_from(">I", a, 4)[0] if len(a) >= 8 and struct.unpack_from(">2H", a) in \
+                [s.get("annex_magic", ORE_ANNEX_MAGIC) for s in BLOCK_SCRIPTS.values() if s.get("engine") == "ore"] \
+                else None
+            for p in range(0, len(a) - 7 if first is not None else 0, 8):
+                if struct.unpack_from(">2H", a, p) == magic and struct.unpack_from(">I", a, p + 4)[0] == first + p:
+                    self.annex_base = first + p + 8
+                    hw += struct.unpack(">%dH" % (len(a) // 2 - p // 2 - 4), a[p + 8:len(a) // 2 * 2])
+                    break
         self.hw = hw
         self.labels = collections.Counter()
         for (s, pos, typ, tm, ts, addend) in rel.relocs():

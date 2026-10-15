@@ -283,7 +283,7 @@ def ore_chunks(sc, a, b, repl):
     return chunks
 
 
-def emit_ore(sc, repl, base):
+def emit_ore(sc, repl, base, magic=S.ORE_ANNEX_MAGIC):
     """Lay the My Life script out again: every stretch between two islands keeps the pieces that fit in it,
     in their order, and the others go to the annex. base = address of the first halfword of the annex.
     Returns ([(section offset, bytes of the stretch)], annex bytes with its header or b"", OreRemap, notes)."""
@@ -307,7 +307,7 @@ def emit_ore(sc, repl, base):
     blob = b""
     if annex:
         annex += [0] * (-(len(annex) + 4) % (SECTION_ALIGN // 2))
-        blob = struct.pack(">2HI", *S.ORE_ANNEX_MAGIC, base - 8) + struct.pack(">%dH" % len(annex), *annex)
+        blob = struct.pack(">2HI", *magic, base - 8) + struct.pack(">%dH" % len(annex), *annex)
     remap = OreRemap(sc.region[0], sc.region[1], newidx, sc.annex_at * 2, base, sc.spec["islands"])
     return segs, blob, remap, (kept, room * 2)
 
@@ -930,7 +930,8 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
     remaps, new_secs = {}, {}
-    inplace, block_data, ore, extra_images = {}, {}, None, {}
+    inplace, block_data, ores, extra_images = {}, {}, [], {}
+    annexes = b""                   # of every script of the My Life kind, one behind the other
     for sc in blocks:
         r = repl.get(sc.rel.name, {})
         if not r:
@@ -940,12 +941,13 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             hsec, hfrom = sc.spec["annex_section"], sc.spec["annex_from"]
             if host.sections[hsec]["size"] != hfrom or hfrom % SECTION_ALIGN:
                 sys.exit("%s: its data section is not the %d bytes the annex expects" % (host.name, hfrom))
-            base = ORE_WORK_ADDR + host.sections[hsec]["offset"] + hfrom + 8
-            segs, annex, remap, (kept, room) = emit_ore(sc, r, base)
-            ore = {"sc": sc, "segs": segs, "remap": remap, "annex": annex, "host": host}
-            if annex:
-                remaps[(host.mod_id, hsec)] = Remap(hfrom // 2, hfrom // 2, {}, len(annex))
-                new_secs[host.mod_id] = (hsec, host.sec_data(hsec) + annex)
+            base = ORE_WORK_ADDR + host.sections[hsec]["offset"] + hfrom + len(annexes) + 8
+            segs, annex, remap, (kept, room) = emit_ore(sc, r, base, sc.spec.get("annex_magic", S.ORE_ANNEX_MAGIC))
+            ores.append({"sc": sc, "segs": segs, "remap": remap, "annex": annex, "host": host})
+            annexes += annex
+            if annexes:
+                remaps[(host.mod_id, hsec)] = Remap(hfrom // 2, hfrom // 2, {}, len(annexes))
+                new_secs[host.mod_id] = (hsec, host.sec_data(hsec) + annexes)
             print("%-13s %5d runs replaced, %d pieces stay in place (%d bytes left there), %d bytes go to the "
                   "annex in %s" % (sc.rel.name, len(r), kept, room, len(annex), host.name))
             continue
