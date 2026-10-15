@@ -4,6 +4,7 @@ from ui_styles_ore_ini import ringfill
 import ui_type
 
 STYLES = {}
+ui_type.TTF["c4serif"] = ("/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf", 0)       # story lines: a lighter serif italic than the stock one
 
 # ---- school.arc g3_ms (Baseball School menu) -------------------------------------------------------------------------------
 STYLES["c4_ms_00"] = ringfill([14, 12, 12, 13, 13, 13], [2, 2, 15], [9, 7, 5])      # pal 0: gold, dark ring, white ring, blue glow
@@ -295,4 +296,42 @@ for _n, (_t, _segs, _cap, _sq, _face) in enumerate(EFO):
         _c += _w
 
 # ---- sct_a_nh.arc z4_es_0 (Eikan Nine opening story: white italic lines, black edge) ----------------------------------------------
-STYLES["c4_es"] = ringfill([4, 4, 4, 4, 4, 4], [15, 15, 3], [])
+STYLES["c4_es"] = ringfill([4, 4, 4, 4, 4, 4], [15, 3], [])
+
+ES_FONT = (11, 0.9, 0.12)       # cap, squeeze, bold (face serif-italic)
+# line -> (English, [(page, rectangle of the page, x of the piece in the line)], centre of the Japanese line)
+ES = {
+    "01": ("Cherry blossoms dance.", [(0, [0, 0, 128, 32], 0), (0, [0, 32, 64, 64], 128)], 97.5),
+    "02": ("April, spring. A man took over as manager", [(0, [64, 32, 128, 64], 0), (0, [0, 64, 128, 96], 64), (0, [0, 96, 96, 128], 192)], 144.5),
+    "03": ("of a certain high school's baseball club.", [(0, [96, 96, 128, 128], 0), (1, [0, 0, 128, 32], 32), (1, [0, 32, 104, 64], 160)], 131.0),
+    "04": ("His aim: a contender, then a powerhouse.", [(1, [104, 32, 128, 64], 0), (1, [0, 64, 128, 96], 24), (1, [0, 96, 128, 128], 152), (2, [0, 0, 24, 32], 280)], 151.0),
+    "05": ("What awaits the club he leads,", [(2, [24, 0, 128, 32], 0), (2, [0, 32, 128, 64], 104), (2, [0, 64, 104, 96], 232)], 167.0),
+    "06": ("from this day on?", [(2, [104, 64, 128, 96], 0), (2, [0, 96, 128, 128], 24), (3, [0, 0, 128, 32], 152), (3, [0, 32, 128, 64], 280), (3, [0, 64, 16, 96], 408)], 213.5),
+    "07": ("Here, a new page of history begins.", [(3, [16, 64, 128, 96], 0), (3, [0, 96, 128, 128], 112), (4, [0, 0, 128, 32], 240), (4, [0, 32, 64, 64], 368)], 213.5),
+    "08": ("Onward...", [(4, [64, 32, 128, 64], 0), (4, [0, 64, 128, 96], 64)], 90.0),
+    "09": ("to win the crown that is the national title!", [(4, [0, 96, 128, 128], 0), (5, [0, 0, 128, 32], 128), (5, [0, 32, 128, 64], 256), (5, [0, 64, 96, 96], 384)], 241.5),
+}
+
+
+def _es_style(cap, cx, c0, c1):
+    inner = STYLES["c4_es"]
+
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        out = np.zeros((32, c1 - c0), np.uint8)
+        h, w = art.shape
+        ax = int(round(cx - w / 2.0)) - c0
+        ay = int(round(15.5 + cap / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y, ax + x
+            if 0 <= yy < 32 and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+for _l, (_t, _parts, _cx) in ES.items():
+    for _k, (_pg, _r, _x) in enumerate(_parts):
+        STYLES["c4_es_%s_%d" % (_l, _k)] = _es_style(ES_FONT[0], _cx, _x, _x + _r[2] - _r[0])

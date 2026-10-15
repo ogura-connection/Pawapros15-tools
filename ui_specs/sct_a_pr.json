@@ -769,20 +769,6 @@
      128
     ],
     [
-     5,
-     64,
-     96,
-     128,
-     128
-    ],
-    [
-     5,
-     48,
-     96,
-     128,
-     128
-    ],
-    [
      7,
      0,
      88,
@@ -800,38 +786,48 @@
    "labels": [
     {
      "sprite": "3c",
-     "text": "Give practice orders\nto all pitchers.",
+     "text": "Give practice orders to all pitchers.",
      "style": "b4_pr_msg",
-     "font": "ttf:rounded:8:0.0:1.0:0.3",
-     "baseline": 40
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
     },
     {
      "sprite": "3d",
-     "text": "Give practice orders\nto all fielders.",
+     "text": "Give practice orders to all fielders.",
      "style": "b4_pr_msg",
-     "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 42
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
     },
     {
      "sprite": "3e",
-     "text": "Give practice orders\nto all catchers.",
+     "text": "Give practice orders to all catchers.",
      "style": "b4_pr_msg",
-     "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 42
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
     },
     {
      "sprite": "3f",
-     "text": "Give practice orders\nto all infielders.",
+     "text": "Give practice orders to all infielders.",
      "style": "b4_pr_msg",
-     "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 42
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
     },
     {
      "sprite": "40",
-     "text": "Give practice orders\nto all outfielders.",
+     "text": "Give practice orders to all outfielders.",
      "style": "b4_pr_msg",
-     "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 42
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
     }
    ],
    "name": "practice orders",
