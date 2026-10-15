@@ -293,14 +293,14 @@
      0,
      0,
      48,
-     16
+     40
     ],
     [
      1,
      104,
      32,
      128,
-     80
+     104
     ],
     [
      1,
@@ -335,7 +335,7 @@
      72,
      48,
      128,
-     92
+     80
     ],
     [
      2,
@@ -391,7 +391,7 @@
      0,
      0,
      128,
-     116
+     128
     ],
     [
      9,
@@ -420,7 +420,7 @@
      "sprite": "01",
      "text": "Season Standings",
      "style": "a5_g3_jun_10",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "font": "ttf:rounded:20:0.0:0.94:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4,
@@ -435,7 +435,7 @@
      "sprite": "02",
      "text": "Interleague Standings",
      "style": "a5_g3_jun_10",
-     "font": "ttf:narrow:17:0.0:0.94:0.3",
+     "font": "ttf:narrow:18:0.0:0.88:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4,
@@ -451,7 +451,7 @@
      "sprite": "03",
      "text": "Season Head-to-Head",
      "style": "a5_g3_jun_10",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "font": "ttf:rounded:20:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -466,7 +466,7 @@
      "sprite": "04",
      "text": "Interleague Head-to-Head",
      "style": "a5_g3_jun_10",
-     "font": "ttf:narrow:17:0.0:1.0:0.3",
+     "font": "ttf:narrow:20:0.0:0.88:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4,
@@ -482,7 +482,7 @@
      "sprite": "3d",
      "text": "Interleague Standings",
      "style": "a5_g3_jun_10",
-     "font": "ttf:narrow:17:0.0:0.94:0.3",
+     "font": "ttf:narrow:18:0.0:0.88:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4,
@@ -498,7 +498,7 @@
      "sprite": "3e",
      "text": "Interleague Head-to-Head",
      "style": "a5_g3_jun_10",
-     "font": "ttf:narrow:17:0.0:1.0:0.3",
+     "font": "ttf:narrow:20:0.0:0.88:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4,
@@ -514,7 +514,7 @@
      "sprite": "3f",
      "text": "Season Standings",
      "style": "a5_g3_jun_15",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "font": "ttf:rounded:20:0.0:0.94:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4,
@@ -529,10 +529,10 @@
      "sprite": "40",
      "text": "Interleague Standings",
      "style": "a5_g3_jun_15",
-     "font": "ttf:narrow:17:0.0:0.94:0.3",
+     "font": "ttf:narrow:18:0.0:0.88:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 4,
+     "dy": 3,
      "pages": [
       8,
       10
@@ -545,10 +545,10 @@
      "sprite": "41",
      "text": "Season Head-to-Head",
      "style": "a5_g3_jun_15",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "font": "ttf:rounded:20:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 2,
+     "dy": 1,
      "pages": [
       9
      ],
@@ -560,10 +560,10 @@
      "sprite": "42",
      "text": "Interleague Head-to-Head",
      "style": "a5_g3_jun_15",
-     "font": "ttf:narrow:17:0.0:1.0:0.3",
+     "font": "ttf:narrow:20:0.0:0.94:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 3,
+     "dy": 4,
      "pages": [
       9,
       10
@@ -755,12 +755,12 @@
      ],
      "text": "Team",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1b"
      ],
-     "centre_x": 32
+     "centre_x": 36
     },
     {
      "from": [
@@ -772,8 +772,8 @@
      ],
      "text": "W",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1b"
      ],
@@ -789,8 +789,8 @@
      ],
      "text": "L",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1b"
      ],
@@ -806,8 +806,8 @@
      ],
      "text": "T",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1b"
      ],
@@ -823,8 +823,8 @@
      ],
      "text": "Win%",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1b"
      ],
@@ -840,8 +840,8 @@
      ],
      "text": "GB",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1b"
      ],
@@ -857,8 +857,8 @@
      ],
      "text": "Left",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1b"
      ],
@@ -874,12 +874,12 @@
      ],
      "text": "Team",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1c"
      ],
-     "centre_x": 32
+     "centre_x": 36
     },
     {
      "from": [
@@ -891,8 +891,8 @@
      ],
      "text": "AVG",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1c"
      ],
@@ -908,8 +908,8 @@
      ],
      "text": "Runs",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1c"
      ],
@@ -925,8 +925,8 @@
      ],
      "text": "Hits",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1c"
      ],
@@ -942,8 +942,8 @@
      ],
      "text": "HR",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1c"
      ],
@@ -959,8 +959,8 @@
      ],
      "text": "Sac",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1c"
      ],
@@ -976,8 +976,8 @@
      ],
      "text": "SB",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1c"
      ],
@@ -993,8 +993,8 @@
      ],
      "text": "Team",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1d"
      ],
@@ -1010,8 +1010,8 @@
      ],
      "text": "ERA",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1d"
      ],
@@ -1027,8 +1027,8 @@
      ],
      "text": "RA",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 18,
      "sprites": [
       "1d"
      ],
@@ -1044,8 +1044,8 @@
      ],
      "text": "H",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1d"
      ],
@@ -1061,8 +1061,8 @@
      ],
      "text": "HR",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1d"
      ],
@@ -1078,8 +1078,8 @@
      ],
      "text": "Ks",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1d"
      ],
@@ -1095,8 +1095,8 @@
      ],
      "text": "BB",
      "style": "a5_g3_jun_0",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
      "sprites": [
       "1d"
      ],
@@ -1106,7 +1106,7 @@
      "sprite": "05",
      "text": "Batting Stats",
      "style": "a5_g3_jun_tt05",
-     "font": "ttf:narrow:17:0.0:1.0:0.3",
+     "font": "ttf:narrow:20:0.0:0.88:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 5,
@@ -1122,10 +1122,10 @@
      "sprite": "07",
      "text": "Pitching Stats",
      "style": "a5_g3_jun_tt07",
-     "font": "ttf:narrow:17:0.0:0.94:0.3",
+     "font": "ttf:narrow:18:0.0:0.88:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 5,
+     "dy": 4,
      "pages": [
       2,
       6
@@ -3280,7 +3280,7 @@
      88,
      32,
      128,
-     72
+     84
     ],
     [
      19,
@@ -3308,12 +3308,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "4d"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -3324,9 +3324,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_77",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "4d"
      ],
@@ -3342,8 +3342,8 @@
      ],
      "text": "Cond.",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.82:0.2",
+     "baseline": 22,
      "sprites": [
       "4d"
      ],
@@ -3358,9 +3358,9 @@
       64
      ],
      "text": "T/B",
-     "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_77",
+     "font": "ttf:narrow:11:0.0:0.88:0.3",
+     "baseline": 22,
      "sprites": [
       "4d"
      ],
@@ -3376,8 +3376,8 @@
      ],
      "text": "VELO",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.88:0.2",
+     "baseline": 22,
      "sprites": [
       "4d"
      ],
@@ -3393,8 +3393,8 @@
      ],
      "text": "Control",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:9:0.0:0.88:0.12",
+     "baseline": 22,
      "sprites": [
       "4d"
      ],
@@ -3410,8 +3410,8 @@
      ],
      "text": "Stamina",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:8:0.0:0.82:0.12",
+     "baseline": 21,
      "sprites": [
       "4d"
      ],
@@ -3427,12 +3427,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "96"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -3443,9 +3443,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_77",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "96"
      ],
@@ -3461,8 +3461,8 @@
      ],
      "text": "Cond.",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.82:0.2",
+     "baseline": 22,
      "sprites": [
       "96"
      ],
@@ -3477,9 +3477,9 @@
       64
      ],
      "text": "T/B",
-     "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_77",
+     "font": "ttf:narrow:11:0.0:0.88:0.3",
+     "baseline": 22,
      "sprites": [
       "96"
      ],
@@ -3495,8 +3495,8 @@
      ],
      "text": "VELO",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.88:0.2",
+     "baseline": 22,
      "sprites": [
       "96"
      ],
@@ -3512,8 +3512,8 @@
      ],
      "text": "Control",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:9:0.0:0.88:0.12",
+     "baseline": 22,
      "sprites": [
       "96"
      ],
@@ -3529,8 +3529,8 @@
      ],
      "text": "Stamina",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:7:0.0:0.94:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:8:0.0:0.82:0.12",
+     "baseline": 21,
      "sprites": [
       "96"
      ],
@@ -3546,12 +3546,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "4e"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -3562,9 +3562,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3580,8 +3580,8 @@
      ],
      "text": "Cond.",
      "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "font": "ttf:narrow:10:0.0:0.82:0.2",
+     "baseline": 22,
      "sprites": [
       "4e"
      ],
@@ -3596,9 +3596,9 @@
       64
      ],
      "text": "T/B",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3613,9 +3613,9 @@
       96
      ],
      "text": "Traj",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3630,9 +3630,9 @@
       96
      ],
      "text": "CON",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3647,9 +3647,9 @@
       96
      ],
      "text": "Power",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:0.88:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3664,9 +3664,9 @@
       96
      ],
      "text": "SPD",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3694,9 +3694,9 @@
       128
      ],
      "text": "ARM",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3711,9 +3711,9 @@
       128
      ],
      "text": "FLD",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3728,9 +3728,9 @@
       128
      ],
      "text": "Error",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
+     "baseline": 23,
      "sprites": [
       "4e"
      ],
@@ -3746,12 +3746,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "97"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -3762,9 +3762,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3780,8 +3780,8 @@
      ],
      "text": "Cond.",
      "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "font": "ttf:narrow:10:0.0:0.82:0.2",
+     "baseline": 22,
      "sprites": [
       "97"
      ],
@@ -3796,9 +3796,9 @@
       64
      ],
      "text": "T/B",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3813,9 +3813,9 @@
       96
      ],
      "text": "Traj",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3830,9 +3830,9 @@
       96
      ],
      "text": "CON",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3847,9 +3847,9 @@
       96
      ],
      "text": "Power",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:0.88:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3864,9 +3864,9 @@
       96
      ],
      "text": "SPD",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3894,9 +3894,9 @@
       128
      ],
      "text": "ARM",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3911,9 +3911,9 @@
       128
      ],
      "text": "FLD",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3928,9 +3928,9 @@
       128
      ],
      "text": "Error",
-     "style": "a5_s3_pi00_78_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 21,
+     "style": "a5_s3_pi00_78",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
+     "baseline": 23,
      "sprites": [
       "97"
      ],
@@ -3946,12 +3946,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "4f"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -3962,9 +3962,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "4f"
      ],
@@ -3979,9 +3979,9 @@
       32
      ],
      "text": "Loyalty",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:0.94:0.3",
+     "baseline": 22,
      "sprites": [
       "4f"
      ],
@@ -4009,9 +4009,9 @@
       96
      ],
      "text": "Age",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "4f"
      ],
@@ -4026,9 +4026,9 @@
       96
      ],
      "text": "Pro Yrs",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:0.94:0.3",
+     "baseline": 22,
      "sprites": [
       "4f"
      ],
@@ -4043,9 +4043,9 @@
       96
      ],
      "text": "To FA",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "4f"
      ],
@@ -4073,9 +4073,9 @@
       128
      ],
      "text": "Rookie?",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
+     "baseline": 22,
      "sprites": [
       "4f"
      ],
@@ -4090,9 +4090,9 @@
       128
      ],
      "text": "Other",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:0.94:0.3",
+     "baseline": 22,
      "sprites": [
       "4f"
      ],
@@ -4108,12 +4108,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "9a"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -4124,9 +4124,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "9a"
      ],
@@ -4141,9 +4141,9 @@
       32
      ],
      "text": "Loyalty",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:0.94:0.3",
+     "baseline": 22,
      "sprites": [
       "9a"
      ],
@@ -4171,9 +4171,9 @@
       96
      ],
      "text": "Age",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "9a"
      ],
@@ -4188,9 +4188,9 @@
       96
      ],
      "text": "Pro Yrs",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:0.94:0.3",
+     "baseline": 22,
      "sprites": [
       "9a"
      ],
@@ -4205,9 +4205,9 @@
       96
      ],
      "text": "To FA",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "9a"
      ],
@@ -4235,9 +4235,9 @@
       128
      ],
      "text": "Rookie?",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
+     "baseline": 22,
      "sprites": [
       "9a"
      ],
@@ -4252,9 +4252,9 @@
       128
      ],
      "text": "Other",
-     "style": "a5_s3_pi00_76_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_76",
+     "font": "ttf:rounded:11:0.0:0.94:0.3",
+     "baseline": 22,
      "sprites": [
       "9a"
      ],
@@ -4270,12 +4270,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_135_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "95"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -4286,9 +4286,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_135_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_135",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "95"
      ],
@@ -4304,8 +4304,8 @@
      ],
      "text": "Last Year",
      "style": "a5_s3_pi00_135_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "95"
      ],
@@ -4320,9 +4320,9 @@
       128
      ],
      "text": "Wants",
-     "style": "a5_s3_pi00_135_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_135",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "95"
      ],
@@ -4350,9 +4350,9 @@
       32
      ],
      "text": "Offer",
-     "style": "a5_s3_pi00_135_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_135",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "95"
      ],
@@ -4368,12 +4368,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -4384,9 +4384,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "style": "a5_s3_pi00_138",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
@@ -4401,9 +4401,9 @@
       96
      ],
      "text": "ERA",
-     "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "style": "a5_s3_pi00_138",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
@@ -4418,9 +4418,9 @@
       96
      ],
      "text": "W",
-     "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "style": "a5_s3_pi00_138",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
@@ -4448,9 +4448,9 @@
       128
      ],
      "text": "L",
-     "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "style": "a5_s3_pi00_138",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
@@ -4466,8 +4466,8 @@
      ],
      "text": "Saves",
      "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "font": "ttf:narrow:10:0.0:0.88:0.2",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
@@ -4482,9 +4482,9 @@
       128
      ],
      "text": "Ks",
-     "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "style": "a5_s3_pi00_138",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
@@ -4499,9 +4499,9 @@
       32
      ],
      "text": "IP",
-     "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "style": "a5_s3_pi00_138",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
@@ -4516,9 +4516,9 @@
       32
      ],
      "text": "Apps",
-     "style": "a5_s3_pi00_138_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 22,
+     "style": "a5_s3_pi00_138",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
      "sprites": [
       "98"
      ],
@@ -4534,12 +4534,12 @@
      ],
      "text": "Team",
      "style": "a5_s3_pi00_139_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "font": "ttf:narrow:10:0.0:0.94:0.2",
+     "baseline": 22,
      "sprites": [
       "99"
      ],
-     "centre_x": 12
+     "centre_x": 16
     },
     {
      "from": [
@@ -4550,9 +4550,9 @@
       64
      ],
      "text": "Name",
-     "style": "a5_s3_pi00_139_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_139",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "99"
      ],
@@ -4567,9 +4567,9 @@
       32
      ],
      "text": "AVG",
-     "style": "a5_s3_pi00_139_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_139",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "99"
      ],
@@ -4584,9 +4584,9 @@
       32
      ],
      "text": "HR",
-     "style": "a5_s3_pi00_139_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_139",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "99"
      ],
@@ -4614,9 +4614,9 @@
       64
      ],
      "text": "RBI",
-     "style": "a5_s3_pi00_139_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_139",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "99"
      ],
@@ -4631,9 +4631,9 @@
       64
      ],
      "text": "SB",
-     "style": "a5_s3_pi00_139_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_139",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "99"
      ],
@@ -4648,9 +4648,9 @@
       64
      ],
      "text": "PA",
-     "style": "a5_s3_pi00_139_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_139",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "99"
      ],
@@ -4678,9 +4678,9 @@
       96
      ],
      "text": "Games",
-     "style": "a5_s3_pi00_139_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.12",
-     "baseline": 20,
+     "style": "a5_s3_pi00_139",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "99"
      ],
