@@ -14,12 +14,12 @@ import numpy as np
 from ui_styles_ore_ini import _orig_page
 
 
-def _neg(inner, rows=(6, 27), cols=(4, 25)):
-    """The green box of g3_fa_0 sprite 22 (page 6, rect 96,96,128,128) with a clean white face and `inner`'s lettering on it."""
+def _neg(inner, rows=(4, 28), cols=(4, 26)):
+    """The green box of g3_fa_0 sprite 22 (page 6, rect 96,96,128,128), its face cleaned of the kanji, with `inner`'s lettering on it."""
     def style(ink, base):
         art, b = inner(ink, base)
         plate = _orig_page("pn_fa.arc", "g3_fa_0", 6)[96:128, 96:128].astype(np.uint8).copy()
-        plate[rows[0]:rows[1], cols[0]:cols[1]] = 11
+        plate[3:29, 4:26] = 12                                   # the green ring, filled
         h, w = art.shape
         ox, oy = cols[0] + (cols[1] - cols[0] - w) // 2, rows[0] + (rows[1] - rows[0] - h) // 2
         ys, xs = np.nonzero(art)

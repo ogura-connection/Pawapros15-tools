@@ -169,7 +169,8 @@ def arrow(inner):
         a = np.zeros((11, 22), int)
         a[4:7, 0:17] = 6
         for k in range(6):
-            a[5 - k:6 + k, 16 + k] = 6
+            half = 5 - k
+            a[5 - half:6 + half, 16 + k] = 6
         art, b = inner(a, 11)
         return art, b + 2
     return style
