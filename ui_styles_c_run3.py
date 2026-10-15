@@ -43,3 +43,21 @@ STYLES["c3_name"] = cut(ringfill([14], [1], [11]))
 STYLES["c3_mid"] = cut(ringfill([13], [1], [10, 10]))
 # the column headings on the lilac plates (page 12): white letters, two rows of dark purple outline, medium purple shadow
 STYLES["c3_head"] = cut(ringfill([1, 1, 1, 4, 5], [14, 14], [13, 13]))
+
+# ---- m3_an, the pill tags (palette 71, lettering on a mint plate): thin navy letters, anti-aliased into the plate ---------------------
+ui_type.TTF["c3uni"] = ("/System/Library/Fonts/Supplemental/Arial Unicode.ttf", 0)       # has the star the tags use
+STYLES["c3_tag"] = plain([0, 2, 5, 8, 11, 14, 15])
+# the hints (palette 85, pages 13): thin blue-violet strokes
+STYLES["c3_hint"] = plain([0, 11, 9, 8, 7, 6, 5])
+# "this player cannot be uploaded" (palette 86): red letters, soft edge into the page behind
+STYLES["c3_red"] = plain([0, 7, 9, 11, 13, 14, 15])
+# the message of an unset voice (palette 13): white to yellow letters, dark blue outline, two lighter blue rings
+STYLES["c3_msg"] = cut(ringfill([10, 11, 12, 12, 13, 13], [1, 1, 3, 5], []))
+# the Role cell (palette 66): blue letters, light outline, painted into the plate
+STYLES["c3_role"] = cut(ringfill([1], [15], []))
+# the three blue buttons (palettes 83, 80, 84: teal, olive, violet from index 10 on): coloured letters, two white rings, blue glow
+STYLES["c3_btn"] = cut(ringfill([15], [9, 9, 7, 5], []))
+# z3_nph_0 (palette 32): the pitch-name plates, dark blue letters in a two-pixel white outline, light blue shadow
+STYLES["c3_nph"] = cut(ringfill([1, 1, 2, 2], [8, 8], [13, 14]))
+# z3_it_0 (palette 1): the colour words, black letters with a white outline
+STYLES["c3_it"] = cut(ringfill([15], [1], []))
