@@ -120,12 +120,6 @@ def _turned(style):
         out, b = style(t, t.shape[0])
         return out, out.shape[0]
     return f
-STYLES["d5_msg~0_120"] = _win(STYLES["d5_msg"], 0, 120)
-STYLES["d5_msg~0_128"] = _win(STYLES["d5_msg"], 0, 128)
-STYLES["d5_msg~120_248"] = _win(STYLES["d5_msg"], 120, 248)
-STYLES["d5_msg~128_256"] = _win(STYLES["d5_msg"], 128, 256)
-STYLES["d5_msg~248_4096"] = _win(STYLES["d5_msg"], 248, 4096)
-STYLES["d5_msg~256_4096"] = _win(STYLES["d5_msg"], 256, 4096)
 STYLES["d5_tab76_v"] = _turned(STYLES["d5_tab76"])
 STYLES["d5_tab76_vs"] = _turned(STYLES["d5_tab76_s"])
 STYLES["d5_tab77_v"] = _turned(STYLES["d5_tab77"])
