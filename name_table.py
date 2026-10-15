@@ -30,6 +30,7 @@ COUNT, CELLS, STRIDE = 1856, 6, 16
 TABLE_ADDR = 0x814D8000                 # .. 0x814DF400; modules stay below (rebuild_scripts.NAME_AREA)
 TABLE_SIZE = COUNT * STRIDE
 DOL_SECTION = 15                        # a free data slot of main.dol
+ENABLED = False                         # main.dol sections above 0x80900000 are refused by the apploader: being moved
 END = 0x1FFF
 OVERRIDES = {"石井": "Ishii"}           # calls that read a full name
 

@@ -934,7 +934,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     for sc in blocks:
         if sc.errors:
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
-    names = name_table.load_tsv() if os.path.exists(name_table.TSV) and dol else None
+    names = name_table.load_tsv() if name_table.ENABLED and os.path.exists(name_table.TSV) and dol else None
     slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages, names)
     nopped = {}                     # module id -> {(section, position)}: relocations turned into R_NOP on purpose
     patched = {}                    # module id -> {(section, old offset): new bytes}
