@@ -29,7 +29,7 @@ STYLES["a6_btn_brown"] = ringfill([5, 5, 5, 5, 5, 5], [1, 14], [7])             
 STYLES["a6_pt_out"] = ringfill([1, 1, 1, 2, 2, 2], [11, 13], [15])                      # pal 99: "'s Outgoing Players"
 STYLES["a6_banner"] = ringfill([12, 12, 13, 13, 14, 14], [3, 10, 8], [2, 1])              # pal 103: "No trade requests pending!"
 STYLES["a6_empty"] = ringfill([8, 8, 7, 7, 6, 6], [3, 11, 13], [2, 1])                    # pal 104: "List / Empty"
-STYLES["a6_noplayers"] = ringfill([4, 4, 5, 5, 6, 6], [1], [])                          # pal 110: "No Players"
+STYLES["a6_noplayers"] = ringfill([4, 4, 5, 5, 6, 6], [3], [])                          # pal 110: "No Players"
 
 # ---- g3_pts_0 -----------------------------------------------------------------------------------------------------------
 STYLES["a6_pts_head"] = ringfill([1, 1, 1, 2, 2, 3], [9, 12], [])                       # pal 120: dark brown letters, tan edge
