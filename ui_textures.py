@@ -296,6 +296,18 @@ def is_compressed(size):
     return size not in (8192, 16384)
 
 
+def padded_raw(d, off, size):
+    """A raw page stored with 16 bytes of padding (8208 / 16400 bytes; pena_sub.arc g3_psp_0, vs_st.arc s5_k*): the
+    same sizes also occur as compressed pages, so the content decides (it does not unpack)."""
+    if size not in (8208, 16400):
+        return False
+    try:
+        decompress_page(d[off:off + size])
+        return False
+    except Exception:
+        return True
+
+
 def decompress_page(data):
     """Compressed page -> (raw bytes, row width 64 or 128, bytes of `data` used)."""
     hdr = data[0] | data[1] << 8
@@ -419,7 +431,9 @@ def compress_page(raw, width):
 
 
 def page_bits(d, off, size):
-    """4 or 8 bits per pixel."""
+    """4 or 8 bits per pixel; -4 / -8 for a padded raw page (encode_indices then writes it raw)."""
+    if padded_raw(d, off, size):
+        return -4 if size == 8208 else -8
     if is_compressed(size):
         return 4 if d[off + 1] & 0x40 else 8
     return 4 if size == 8192 else 8
@@ -427,13 +441,15 @@ def page_bits(d, off, size):
 
 def raw_size(d, off, size):
     """Size of the page once unpacked: 8192 (4 bits per pixel) or 16384."""
-    return 8192 if page_bits(d, off, size) == 4 else 16384
+    return 8192 if abs(page_bits(d, off, size)) == 4 else 16384
 
 
 def decode_indices(d, off, size):
     """Palette indices of a page as a 128x128 uint8 array (C4 tiles of 8x8, C8 tiles of 8x4, or a
     compressed page in raster order)."""
-    if is_compressed(size):
+    if padded_raw(d, off, size):
+        size -= 16
+    elif is_compressed(size):
         raw, width, _ = decompress_page(d[off:off + size])
         raw = np.frombuffer(raw, dtype=np.uint8)
         return (np.stack([raw >> 4, raw & 15], -1) if width == 64 else raw).reshape(PAGE, PAGE)
@@ -447,6 +463,8 @@ def encode_indices(idx, size, bits=None):
     """Inverse of decode_indices: the page bytes for a 128x128 index array. A compressed page
     (bits = 4 or 8) is packed again and padded to `size`; ValueError if it no longer fits."""
     idx = np.ascontiguousarray(idx, dtype=np.uint8)
+    if bits in (-4, -8):                                  # padded raw page: raw bytes + 16 bytes of padding
+        return encode_indices(idx, size - 16) + bytes(16)
     if is_compressed(size):
         flat = idx.reshape(-1)
         raw = ((flat[0::2] << 4) | flat[1::2]).astype(np.uint8).tobytes() if bits == 4 else flat.tobytes()
