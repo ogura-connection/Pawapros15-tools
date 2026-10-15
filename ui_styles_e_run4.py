@@ -35,3 +35,24 @@ STYLES["e4_cd_year"] = ringfill([4, 3, 3, 2, 2, 2], [8, 11])                    
 # ---- school_g.arc (Baseball School) --------------------------------------------------------------------------------------
 # the lesson plates: white letters, navy ring, blue shadow; the same indices serve the blue / red / teal / purple palettes (10-13)
 STYLES["e4_sg_btn"] = ringfill([15, 15, 15, 15, 14, 14], [8, 7], [5, 3, 2])
+STYLES["e4_sg_head"] = ringfill([15, 15, 15, 15, 15, 15], [6, 3])                       # pal 15: white letters, green ring
+STYLES["e4_sg_small"] = ringfill([15, 15, 15, 15, 15, 15], [6])                         # pal 15: score panel words
+
+
+def plate(style, w, h, bg):
+    """The styled word centred on a plain plate of index `bg` (at least w x h): lettering that is part of a solid plate."""
+    import numpy as np
+
+    def make(ink, base):
+        art, b = style(ink, base)
+        H, W = max(h, art.shape[0]), max(w, art.shape[1])
+        out = np.full((H, W), bg, np.uint8)
+        oy, ox = (H - art.shape[0]) // 2, (W - art.shape[1]) // 2
+        sub = out[oy:oy + art.shape[0], ox:ox + art.shape[1]]
+        sub[art > 0] = art[art > 0]
+        return out, b + oy
+    return make
+
+
+# pal 14: Start Practice on a black plate (index 1), white letters
+STYLES["e4_sg_start"] = plate(ringfill([15, 15, 15, 14, 14, 13], [4, 3]), 80, 24, 1)
