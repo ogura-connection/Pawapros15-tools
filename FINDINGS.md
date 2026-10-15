@@ -760,3 +760,21 @@ announcer's own readings (each record's call id), so a kanji with several readin
   Left: the chatter labels over the field drop the leading blank and spread two-cell names ("An  do").
 - Rosters made before the patch keep their kanji: Success team-mates live in the system save, so the test saves
   still show kanji team-mates. A fresh Eikan Nine squad shows Latin names (dolphin-test/looks/eikan/).
+
+### Real players (same session; seen in game)
+- The 2008 rosters: 480 records in main_prg.rel sec5+0x68826.. of **six cells, then (a, b, call id)** (read with the
+  cells after the values the call ids look shifted by one record). Calls 46,735+ are past the surname voice list;
+  their readings come from the reading list of are_main.rel (`_work/voice_readings.json`, 6,942 entries) through
+  a parallel u16 table at halfword 16575 + entry index (aligned by brute force against the known surname calls:
+  652 hits). A reading can be a full name (たかはしひさのり): names written surname + one kanji (高橋尚) become
+  "Takahashi H"; surnames whose reading carries a given name for the announcer (緒方 / 尾形) get the initial too.
+- English: `translation/names/players.tsv` (roster offset, call id, English); 56 foreign players and a few
+  registered names by hand (Greisinger, Kroon, Ramirez, Lee S.Y., Darvish, G.G. Sato ...; "Inche" (いんちぇ) unsure).
+- Every copy is a six-cell field in main_prg.rel: the roster, a names-only list by team (sec5+0x3C738..) and the
+  144-byte player records (sec5+0x579F0..): 1,437 places, written in place by `name_table.player_patches`. Two
+  kanji patterns stand for two English names (中島 Nakashima / Nakajima, 林 Hayashi / Lin): the roster record or
+  a call id nearby decides. Copies in pn_ore_i.rel, pennant.rel and draft.rel are not real players (draft
+  prospects and others with the same surnames): a later pass.
+- Seen: Giants vs Fighters, COM vs COM (dolphin-test/looks/players1): lineup screens, NEXT panel, batter and
+  pitcher panels, fielder tags. Names of five or six cells are squeezed on the lineup plates (as long names were
+  in Japanese) but readable.
