@@ -78,7 +78,8 @@ def plated_text(bank, sid, clean, ramp, rings, centre, sharp=False):
     inner = banded(ramp, rings)
 
     def style(ink, base):
-        plate = clean(_orig_sprite(bank, sid))
+        orig = _orig_sprite(bank, sid)
+        plate = clean(orig.copy())
         art, _ = tight(inner)(np.where(ink >= 3, 6, 0) if sharp else ink, base)
         cx, cy = centre
         h, w = art.shape
@@ -98,6 +99,13 @@ def clean_box(*boxes, fill):
     return clean
 
 
+def clean_all(fill):
+    def clean(im):
+        im[im > 0] = fill
+        return im
+    return clean
+
+
 def clean_inpaint(letters, box=None):
     def clean(im):
         mask = np.isin(im, letters)
@@ -113,6 +121,9 @@ def clean_inpaint(letters, box=None):
 STYLES = {
     "e_scm": scm_style,
     "e_pl_bb": plated_text("r4_12h", "bb", clean_box((4, 7, 31, 25), fill=15), [0, 8, 5, 3, 2, 1, 1], [], (17, 16)),      # League (palette 84)
+    "e_pl_e1": plated_text("r4_12h", "e1", clean_box((14, 12, 39, 39), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (26, 25), True),
+    "e_pl_e2": plated_text("r4_12h", "e2", clean_box((9, 8, 26, 26), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (17, 17), True),
+    "e_pl_e3": plated_text("r4_12h", "e3", clean_all(7), [0, 1, 1, 1, 1, 1, 1], [15, 11], (13, 16), True),
     "e_pl_bc": plated_text("r4_12h", "bc", clean_box((4, 7, 31, 24), (4, 24, 32, 25), (7, 25, 32, 28), fill=15), [0, 9, 6, 4, 2, 1, 1], [], (17, 16)),       # All-Time (palette 85)
     # team-type plates of r4_12h (palettes 32, 34, 37 share their indices): white letters, a dark ring, a lighter ring
     "e_plate": crisp(tight(banded([0, 11, 11, 11, 11, 11, 11], [1, 3]))),

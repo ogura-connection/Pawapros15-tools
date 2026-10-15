@@ -29,3 +29,7 @@ STYLES["d_tnp_def"] = ringfill([4, 5, 5, 8, 8, 8], [0xf, 0xf, 0xf, 3, 3, 2])
 STYLES["d_tnp_atk"] = ringfill([4, 5, 6, 7, 8, 8], [0xf, 0xf, 0xf, 2, 2, 1])
 # y4_kkg_0 position names (palette 2): black italic letters with a thin white edge
 STYLES["d_kkg"] = ringfill([0xf], [1])
+# y4_dem_1 title 守備交代 (palette 4): orange letters, dark ring, brown shadow
+STYLES["d_dem_title"] = ringfill([0xf, 0xf, 0xe, 0xd], [4, 1], [8])
+# h3_dem_2 headings (palettes 2, 3: one red ramp each): red-orange letters, dark brown ring, black-green outer ring, brown shadow
+STYLES["d_dem_head"] = ringfill([0xf, 0xf, 0xe, 0xd], [4, 2], [7])

@@ -2483,6 +2483,13 @@
     ],
     [
      11,
+     0,
+     0,
+     56,
+     32
+    ],
+    [
+     11,
      104,
      0,
      128,
@@ -2490,29 +2497,8 @@
     ],
     [
      11,
-     56,
-     32,
-     128,
-     48
-    ],
-    [
-     11,
-     40,
-     48,
-     128,
-     80
-    ],
-    [
-     11,
-     32,
-     80,
-     128,
-     112
-    ],
-    [
-     11,
      0,
-     112,
+     32,
      128,
      128
     ]
@@ -3250,6 +3236,27 @@
      "text": "All-\nTime",
      "style": "e_pl_bc",
      "font": "ttf:din:8:0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e1",
+     "text": "HS",
+     "style": "e_pl_e1",
+     "font": "ttf:din:20:0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e2",
+     "text": "HS",
+     "style": "e_pl_e2",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "e3",
+     "text": "HS",
+     "style": "e_pl_e3",
+     "font": "ttf:din:18:0:1.0:0.0",
      "valign": "centre"
     }
    ]
