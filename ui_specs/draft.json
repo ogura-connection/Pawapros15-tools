@@ -132,8 +132,8 @@
      "sprite": "06",
      "text": "Search",
      "style": "e6_pd_06",
-     "font": "ttf:narrow:9:0.0:0.85:0.6",
-     "baseline": 20,
+     "font": "ttf:narrow:18:0.0:0.85:0.35",
+     "baseline": 24,
      "palettes": [
       57
      ]
@@ -142,8 +142,8 @@
      "sprite": "07",
      "text": "Research",
      "style": "e6_pd_07",
-     "font": "ttf:rounded:9:0.0:0.85:0.6",
-     "baseline": 20,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "palettes": [
       56
      ]
@@ -162,8 +162,8 @@
      "sprite": "09",
      "text": "Player List",
      "style": "e6_pd_09",
-     "font": "ttf:rounded:9:0.0:0.92:0.6",
-     "baseline": 20,
+     "font": "ttf:narrow:12:0.0:0.85:0.5",
+     "baseline": 21,
      "palettes": [
       56
      ]
@@ -192,8 +192,8 @@
      "sprite": "47",
      "text": "Favor UP",
      "style": "e6_pd_47",
-     "font": "ttf:rounded:9:0.0:0.85:0.6",
-     "baseline": 20,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 23,
      "palettes": [
       41
      ]
@@ -370,8 +370,8 @@
      "sprite": "29",
      "text": "Auto",
      "style": "e6_pd_pos",
-     "font": "ttf:rounded:11:0.0:1.0:0.5",
-     "baseline": 20,
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -383,8 +383,8 @@
      "sprite": "2a",
      "text": "Pitcher",
      "style": "e6_pd_pos",
-     "font": "ttf:narrow:11:0.0:0.85:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -396,8 +396,8 @@
      "sprite": "2b",
      "text": "Fielder",
      "style": "e6_pd_pos",
-     "font": "ttf:narrow:11:0.0:0.85:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -409,8 +409,8 @@
      "sprite": "2c",
      "text": "Catcher",
      "style": "e6_pd_pos",
-     "font": "ttf:narrow:11:0.0:0.85:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -422,8 +422,8 @@
      "sprite": "2d",
      "text": "1st Base",
      "style": "e6_pd_pos",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -435,8 +435,8 @@
      "sprite": "2e",
      "text": "2nd Base",
      "style": "e6_pd_pos",
-     "font": "ttf:narrow:11:0.0:0.85:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -448,8 +448,8 @@
      "sprite": "2f",
      "text": "3rd Base",
      "style": "e6_pd_pos",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -461,8 +461,8 @@
      "sprite": "30",
      "text": "Shortstop",
      "style": "e6_pd_pos",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -474,8 +474,8 @@
      "sprite": "31",
      "text": "Infield",
      "style": "e6_pd_pos",
-     "font": "ttf:narrow:11:0.0:0.92:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -487,8 +487,8 @@
      "sprite": "32",
      "text": "Outfield",
      "style": "e6_pd_pos",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
-     "baseline": 21,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 22,
      "pages": [
       7
      ],
@@ -721,10 +721,7 @@
       96,
       72
      ],
-     "text": "Searching\nfor",
-     "style": "e6_pd_help",
-     "font": "ttf:rounded:7:0.0:1.0:0.5",
-     "baseline": 16,
+     "empty": true,
      "sprites": [
       "40"
      ]
@@ -739,8 +736,9 @@
      ],
      "text": "...",
      "style": "e6_pd_help",
-     "font": "ttf:rounded:12:0.0:1.0:0.5",
-     "baseline": 18,
+     "font": "ttf:narrow:20:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 6,
      "sprites": [
       "40"
      ]
@@ -792,10 +790,7 @@
       112,
       96
      ],
-     "text": "Researching",
-     "style": "e6_pd_help",
-     "font": "ttf:narrow:8:0.0:0.85:0.6",
-     "baseline": 16,
+     "empty": true,
      "sprites": [
       "41"
      ]
@@ -810,8 +805,9 @@
      ],
      "text": "...",
      "style": "e6_pd_help",
-     "font": "ttf:rounded:12:0.0:1.0:0.5",
-     "baseline": 18,
+     "font": "ttf:narrow:20:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 4,
      "sprites": [
       "41"
      ]

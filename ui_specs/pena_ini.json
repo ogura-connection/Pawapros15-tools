@@ -918,7 +918,7 @@
      "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 72,
-     "dy": 4
+     "dy": 5
     },
     {
      "sprite": "04",
