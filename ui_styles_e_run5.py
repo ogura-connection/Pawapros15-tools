@@ -139,3 +139,9 @@ def yrs(ink, base):
 
 STYLES['e5_yrs'] = yrs
 
+_EDGES = list(range(0, 336, 16))
+for _k in [k for k in list(STYLES) if k.startswith("e5_s3_phd00_")]:
+    for _a in _EDGES:
+        for _b in _EDGES + [4096]:
+            if _b > _a:
+                STYLES["%s~%d_%d" % (_k, _a, _b)] = win(STYLES[_k], _a, _b)
