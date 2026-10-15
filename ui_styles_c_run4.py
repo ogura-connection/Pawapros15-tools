@@ -100,4 +100,38 @@ for _s, ((_cx, _cy), _parts) in RSZ.items():
 # ---- school.arc g3_ykm (Baseball School lessons) ---------------------------------------------------------------------------
 STYLES["c4_ykm_title"] = ringfill([15, 15, 15, 15, 14, 14], [11, 11, 6], [5, 4, 3])        # pal 16 / 24: white letters, navy ring, blue (or purple) shadow
 STYLES["c4_ykm_go"] = ringfill([12, 13, 14, 15, 15, 15], [9, 9, 6], [4, 3])               # pal 57 / 58: olive-gold (or green) letters, white ring, blue glow
-STYLES["c4_ykm_row"] = ringfill([14, 15, 15, 15, 15, 15], [10, 10, 12], [8])             # pal 34-37: dark letters on the coloured rows, white ring
+STYLES["c4_ykm_row"] = ringfill([14, 15, 15, 15, 15, 15], [10], [])                      # pal 34-37: dark letters on the coloured rows, white ring
+STYLES["c4_ykm_go1"] = ringfill([12, 13, 14, 15, 15, 15], [9, 6], [4])                    # pal 57 / 58 at small sizes: thin rings
+STYLES["c4_ykm_pan"] = ringfill([1, 1, 1, 1, 1, 1], [14], [])                           # pal 32: navy letters with a white ring (result panel)
+
+
+def _panel(inner, left, cy, rect_sprite, align="left", cap=14):
+    """A word of the result panel (sprite 4a, pal 32) placed by sprite coordinates: `left` = the art's left edge (align "left") or
+    right edge ("right"), `cy` = the row its capitals are centred on; returns the window `rect_sprite` (x0, y0, x1, y1) of the whole."""
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        x0, y0, x1, y1 = rect_sprite
+        out = np.zeros((y1 - y0, x1 - x0), np.uint8)
+        h, w = art.shape
+        ax = left if align == "left" else left - w
+        ay = int(round(cy + cap / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y - y0, ax + x - x0
+            if 0 <= yy < out.shape[0] and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+YKM_PAN_CAP = 13
+# (page, rectangle of the page, the same in the sprite's coordinates) pieces; the word's anchor
+YKM_PAN = {
+    "avg": ([(15, [14, 11, 92, 37], [14, 139, 92, 165])], ("left", 18, 151)),
+    "clr": ([(15, [14, 79, 94, 105], [14, 207, 94, 233])], ("left", 18, 220)),
+    "pts": ([(15, [114, 46, 128, 74], [114, 174, 128, 202]), (17, [32, 46, 50, 74], [128, 174, 146, 202])], ("right", 141, 188)),
+}
+for _n, (_parts, (_al, _l, _cy)) in YKM_PAN.items():
+    for _k, (_pg, _r, _sr) in enumerate(_parts):
+        STYLES["c4_ykm_%s_%d" % (_n, _k)] = _panel(STYLES["c4_ykm_pan"], _l, _cy, _sr, _al, YKM_PAN_CAP)
