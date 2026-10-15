@@ -83,3 +83,70 @@ STYLES["f_bar"] = onoval(1, 4, 1, [13, 12], [0, 9, 9, 8, 8, 8, 8])
 
 # g3_od tabs (palette 9, the 控え / 2軍 tabs of the bench panel): navy letters, white ring, blue shadow
 STYLES["f_tab"] = bandtext([0, 5, 3, 2, 1, 1, 1], [8, 9], [14, 13])
+
+
+# thin lettering (the Japanese is one or two pixels thick): regular weight faces
+ui_type.TTF["f_arial"] = ("/System/Library/Fonts/Supplemental/Arial.ttf", 0)
+ui_type.TTF["f_arialn"] = ("/System/Library/Fonts/Supplemental/Arial Narrow.ttf", 0)
+
+
+def thin(ramp):
+    """Letters only, ramp[ink] (ink 0..6), no ring and no shadow."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        out = np.zeros(ink.shape, np.uint8)
+        out[ink > 0] = ramp[ink[ink > 0]]
+        return trimmed(out, base)
+    return style
+
+
+# g3_od, light to dark ramps of one colour in the palette (index 1 lightest .. 15 darkest)
+STYLES["f_thin"] = thin([0, 4, 7, 9, 12, 14, 15])
+STYLES["f_thin_blue"] = thin([0, 4, 6, 9, 11, 13, 14])         # palette 100 (no index 15): ramp 1 .. 14
+
+# the tags Type A / Type B / Rookie / Normal (palettes 43-46): coloured letters (1 darkest .. 12 light edge), a white ring
+STYLES["f_tag"] = bandtext([0, 12, 9, 5, 3, 1, 1], [15, 15], [])
+# Ready / Resting (palettes 49, 50: 13 = light .. 15 = dark of the blue / red of the 可 / 不可), white ring (12), blue glow
+STYLES["f_rdy"] = bandtext([0, 13, 14, 15, 15, 15, 15], [12, 12], [7, 6])
+# days (palette 48): dark green letters, white ring (15), blue shadow
+STYLES["f_days"] = bandtext([0, 13, 9, 5, 3, 1, 1], [15, 15], [8])
+
+
+def titlebar(letter, ring, fill, outline, thick=2, margin=7, rows=8, over=1):
+    """White letters in a thick dark ring standing on a cyan pill (outline `outline` `thick` pixels, `rows` rows of `fill`).
+    The letters' baseline lies `over` rows below the top of the pill's fill. The title bar of the lineup screen."""
+    letter = np.array(letter, np.uint8)
+
+    def style(ink, base):
+        pd = margin + 4
+        h, w = ink.shape
+        H = h + 2 * 4 + rows + thick * 2
+        big = np.zeros((H, w + 2 * pd), int)
+        big[4:4 + h, pd:pd + w] = ink
+        L = big > 0
+        ringm = grow(grow(L, 1), 1, diagonal=False)
+        fill_top = 4 + base - over                     # first row of the pill's fill
+        top = fill_top - thick
+        bot = fill_top + rows + thick
+        bar = np.zeros(L.shape, bool)
+        for y in range(top, bot):
+            d = min(y - top, bot - 1 - y)
+            inset = (4, 2, 1, 0)[d] if d < 4 else 0
+            bar[y, pd - margin + inset:pd + w + margin - inset] = True
+        inner = np.zeros(L.shape, bool)
+        for y in range(fill_top, fill_top + rows):
+            d = min(y - fill_top, fill_top + rows - 1 - y)
+            inset = (3, 1, 0)[d] if d < 3 else 0
+            inner[y, pd - margin + thick + inset:pd + w + margin - thick - inset] = True
+        out = np.zeros(L.shape, np.uint8)
+        out[bar] = outline
+        out[inner] = fill
+        out[ringm] = ring
+        out[L] = letter[big[L]]
+        return trimmed(out, base + 4)
+    return style
+
+
+# the title bar Starting Lineup (palette 12): white letters, blue ring (1), cyan bar (15)
+STYLES["f_title"] = titlebar([0, 11, 12, 12, 12, 12, 12], 1, 15, 1)

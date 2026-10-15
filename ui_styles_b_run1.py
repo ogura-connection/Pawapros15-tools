@@ -19,12 +19,12 @@ ui_type.TTF.setdefault("avm", ("/System/Library/Fonts/Avenir Next Condensed.ttc"
 
 # --- tab buttons (palette 16)
 _TAB = [4, 3, 3, 2, 2, 1, 1]
-STYLES["opt_tab"] = ringfill(_TAB, [15, 15, 11])
-STYLES["opt_tab2"] = ringfill([3, 3, 2, 2, 1, 1, 1], [15, 12])                  # the two-line tabs: smaller letters, one ring less
+STYLES["opt_tab"] = ringfill(_TAB, [15, 15, 11], edge=2)
+STYLES["opt_tab2"] = ringfill([3, 3, 2, 2, 1, 1, 1], [15, 12], edge=1)                  # the two-line tabs: smaller letters, one ring less
 
 # --- values on the blue plates (palette 7)
 STYLES["opt_val"] = ringfill([15, 15, 15, 14], [8, 7], [5])
-STYLES["opt_val_s"] = ringfill([15, 15, 15, 14], [8], [5])      # small letters: a single navy ring
+STYLES["opt_val_s"] = ringfill([15, 15, 15, 14], [8], [5], edge=2)      # small letters: a single navy ring
 STYLES["opt_a"] = ringfill([15], [8, 6], [4])                   # the red A (palette 8)
 
 
