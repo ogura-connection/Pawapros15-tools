@@ -4540,18 +4540,18 @@
    "bank": "m4_stt00",
    "page": 10,
    "rect": [
-    24,
-    54,
-    96,
+    23,
+    56,
+    78,
     63
    ],
    "text": "Pitcher Role",
-   "font": "ttf:rounded:9:0.0:1.0:0.0",
+   "font": "ttf:rounded:7:0.0:1.0:0.0",
    "style": "a_tag",
    "copy": [
     10,
     20,
-    54,
+    56,
     24,
     63
    ]
@@ -4606,7 +4606,7 @@
     20
    ],
    "text": "Player Setup",
-   "font": "ttf:rounded:11:0.0:1.0:0.4",
+   "font": "ttf:rounded:11:0.0:1.0:0.3",
    "style": "a_cardhead",
    "copy": [
     5,

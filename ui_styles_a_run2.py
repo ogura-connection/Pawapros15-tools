@@ -141,7 +141,7 @@ def nothing(ink, base):
 # m4_stt00 profile card (palette 6): tags white on brown with a dark shadow, the heading white in brown rings
 STYLES["a_none"] = nothing
 STYLES["a_tag"] = crisp(15, 2, 3)
-STYLES["a_cardhead"] = ringfill([15, 15, 9, 9], [4, 3], [6])
+STYLES["a_cardhead"] = ringfill([15], [4, 3], [6])
 for _name in ("a_tag", "a_cardhead"):
     for _r0 in range(0, 27):
         for _r1 in range(_r0 + 1, 28):
