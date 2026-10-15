@@ -47,10 +47,10 @@
       64
      ],
      "text": "Playoffs",
-     "style": "c_dem_red_b~0_80",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 41,
-     "left": -35,
+     "style": "c_dem_red_b~0_96",
+     "font": "ttf:rounded:36:0.0:0.92:0.55",
+     "baseline": 44,
+     "left": -72,
      "sprites": [
       "00"
      ]
@@ -64,10 +64,10 @@
       128
      ],
      "text": "Playoffs",
-     "style": "c_dem_red_b~80_4096",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 41,
-     "left": -83,
+     "style": "c_dem_red_b~96_4096",
+     "font": "ttf:rounded:36:0.0:0.92:0.55",
+     "baseline": 44,
+     "left": -104,
      "sprites": [
       "00"
      ]
@@ -82,9 +82,9 @@
      ],
      "text": "Stage",
      "style": "c_dem_red_b~0_48",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 41,
-     "left": -65,
+     "font": "ttf:rounded:36:0.0:0.85:0.55",
+     "baseline": 44,
+     "left": -75,
      "sprites": [
       "00"
      ]
@@ -99,9 +99,9 @@
      ],
      "text": "Stage",
      "style": "c_dem_red_b~48_80",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 41,
-     "left": -104,
+     "font": "ttf:rounded:36:0.0:0.85:0.55",
+     "baseline": 44,
+     "left": -114,
      "sprites": [
       "00"
      ]
@@ -116,9 +116,9 @@
      ],
      "text": "Stage",
      "style": "c_dem_red_b~80_4096",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 41,
-     "left": -200,
+     "font": "ttf:rounded:36:0.0:0.85:0.55",
+     "baseline": 44,
+     "left": -210,
      "sprites": [
       "00"
      ]
@@ -132,10 +132,10 @@
       64
      ],
      "text": "Playoffs",
-     "style": "c_dem_red_b~0_80",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 41,
-     "left": 11,
+     "style": "c_dem_red_b~0_96",
+     "font": "ttf:rounded:36:0.0:0.92:0.55",
+     "baseline": 44,
+     "left": -2,
      "sprites": [
       "03"
      ]
@@ -149,10 +149,10 @@
       128
      ],
      "text": "Playoffs",
-     "style": "c_dem_red_b~80_4096",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 41,
-     "left": -37,
+     "style": "c_dem_red_b~96_4096",
+     "font": "ttf:rounded:36:0.0:0.92:0.55",
+     "baseline": 44,
+     "left": -34,
      "sprites": [
       "03"
      ]
@@ -214,10 +214,10 @@
       64
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -63,
+     "left": -52,
      "sprites": [
       "00"
      ]
@@ -231,10 +231,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -98,
+     "left": -103,
      "sprites": [
       "00"
      ]
@@ -248,10 +248,10 @@
       64
      ],
      "text": "Interleague",
-     "style": "c_dem_red_b~0_112",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -120,
+     "style": "c_dem_red_b~0_96",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
+     "baseline": 41,
+     "left": -87,
      "sprites": [
       "00"
      ]
@@ -265,10 +265,10 @@
       64
      ],
      "text": "Interleague",
-     "style": "c_dem_red_b~112_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -128,
+     "style": "c_dem_red_b~96_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
+     "baseline": 41,
+     "left": -111,
      "sprites": [
       "00"
      ]
@@ -282,10 +282,10 @@
       64
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -63,
+     "left": -52,
      "sprites": [
       "0f"
      ]
@@ -299,10 +299,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -98,
+     "left": -103,
      "sprites": [
       "0f"
      ]
@@ -316,10 +316,10 @@
       64
      ],
      "text": "Interleague",
-     "style": "c_dem_red_b~0_112",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -120,
+     "style": "c_dem_red_b~0_96",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
+     "baseline": 41,
+     "left": -87,
      "sprites": [
       "0f"
      ]
@@ -333,10 +333,10 @@
       64
      ],
      "text": "Interleague",
-     "style": "c_dem_red_b~112_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -128,
+     "style": "c_dem_red_b~96_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
+     "baseline": 41,
+     "left": -111,
      "sprites": [
       "0f"
      ]
@@ -350,10 +350,10 @@
       64
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -63,
+     "left": -52,
      "sprites": [
       "01"
      ]
@@ -367,10 +367,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -102,
+     "left": -107,
      "sprites": [
       "01"
      ]
@@ -384,10 +384,10 @@
       64
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -63,
+     "left": -52,
      "sprites": [
       "02"
      ]
@@ -401,10 +401,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -144,
+     "left": -149,
      "sprites": [
       "02"
      ]
@@ -418,10 +418,10 @@
       64
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -63,
+     "left": -52,
      "sprites": [
       "0d"
      ]
@@ -435,10 +435,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -187,
+     "left": -192,
      "sprites": [
       "0d"
      ]
@@ -452,10 +452,10 @@
       64
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -63,
+     "left": -52,
      "sprites": [
       "10"
      ]
@@ -469,10 +469,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -100,
+     "left": -105,
      "sprites": [
       "10"
      ]
@@ -486,10 +486,10 @@
       64
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -63,
+     "left": -52,
      "sprites": [
       "11"
      ]
@@ -503,10 +503,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -144,
+     "left": -149,
      "sprites": [
       "11"
      ]
@@ -520,10 +520,10 @@
       64
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -63,
+     "left": -52,
      "sprites": [
       "12"
      ]
@@ -537,10 +537,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
      "baseline": 44,
-     "left": -187,
+     "left": -192,
      "sprites": [
       "12"
      ]
@@ -554,10 +554,10 @@
       64
      ],
      "text": "Interleague",
-     "style": "c_dem_red_b~0_112",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -37,
+     "style": "c_dem_red_b~0_96",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
+     "baseline": 41,
+     "left": -26,
      "sprites": [
       "0e"
      ]
@@ -571,10 +571,10 @@
       64
      ],
      "text": "Interleague",
-     "style": "c_dem_red_b~112_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -45,
+     "style": "c_dem_red_b~96_4096",
+     "font": "ttf:rounded:27:0.0:0.85:0.55",
+     "baseline": 41,
+     "left": -50,
      "sprites": [
       "0e"
      ]
@@ -608,10 +608,10 @@
       64
      ],
      "text": "Preseason",
-     "style": "c_dem_red_b~0_96",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 45,
-     "left": 4
+     "style": "c_dem_red_b~0_112",
+     "font": "ttf:rounded:34:0.0:0.85:0.55",
+     "baseline": 48,
+     "left": 1
     },
     {
      "from": [
@@ -622,10 +622,10 @@
       128
      ],
      "text": "Preseason",
-     "style": "c_dem_red_b~96_4096",
-     "font": "ttf:rounded:28:0.0:1.0:0.25",
-     "baseline": 45,
-     "left": -28
+     "style": "c_dem_red_b~112_4096",
+     "font": "ttf:rounded:34:0.0:0.85:0.55",
+     "baseline": 48,
+     "left": -15
     }
    ],
    "name": "cards",
@@ -656,10 +656,10 @@
       128
      ],
      "text": "Stage",
-     "style": "c_dem_red_b~0_32",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -76,
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:28:0.0:1.0:0.55",
+     "baseline": 41,
+     "left": -83,
      "sprites": [
       "00"
      ]
@@ -673,10 +673,10 @@
       64
      ],
      "text": "Stage",
-     "style": "c_dem_red_b~32_80",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -113,
+     "style": "c_dem_red_b~48_80",
+     "font": "ttf:rounded:28:0.0:1.0:0.55",
+     "baseline": 41,
+     "left": -104,
      "sprites": [
       "00"
      ]
@@ -691,9 +691,9 @@
      ],
      "text": "Stage",
      "style": "c_dem_red_b~80_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 40,
-     "left": -193,
+     "font": "ttf:rounded:28:0.0:1.0:0.55",
+     "baseline": 41,
+     "left": -200,
      "sprites": [
       "00"
      ]
@@ -707,10 +707,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~0_64",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 44,
-     "left": -79,
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:28:0.0:0.85:0.55",
+     "baseline": 45,
+     "left": -71,
      "sprites": [
       "01"
      ]
@@ -724,10 +724,10 @@
       128
      ],
      "text": "Game",
-     "style": "c_dem_red_b~64_4096",
-     "font": "ttf:rounded:26:0.0:1.0:0.25",
-     "baseline": 44,
-     "left": -91,
+     "style": "c_dem_red_b~48_4096",
+     "font": "ttf:rounded:28:0.0:0.85:0.55",
+     "baseline": 45,
+     "left": -99,
      "sprites": [
       "01"
      ]
@@ -821,7 +821,7 @@
      ],
      "text": "Pennant Race Begins",
      "style": "c_dem_gold~0_128",
-     "font": "ttf:rounded:30:0.0:0.85:0.25",
+     "font": "ttf:rounded:30:0.0:0.85:0.5",
      "baseline": 42,
      "left": 4
     },
@@ -835,7 +835,7 @@
      ],
      "text": "Pennant Race Begins",
      "style": "c_dem_gold~128_240",
-     "font": "ttf:rounded:30:0.0:0.85:0.25",
+     "font": "ttf:rounded:30:0.0:0.85:0.5",
      "baseline": 42,
      "left": 4
     },
@@ -849,7 +849,7 @@
      ],
      "text": "Pennant Race Begins",
      "style": "c_dem_gold~240_4096",
-     "font": "ttf:rounded:30:0.0:0.85:0.25",
+     "font": "ttf:rounded:30:0.0:0.85:0.5",
      "baseline": 42,
      "left": -12
     }
@@ -889,7 +889,7 @@
      ],
      "text": "All-Star Game",
      "style": "c_dem_gold~0_128",
-     "font": "ttf:rounded:31:0.0:0.85:0.25",
+     "font": "ttf:rounded:31:0.0:0.85:0.5",
      "baseline": 46,
      "left": 46,
      "sprites": [
@@ -906,7 +906,7 @@
      ],
      "text": "All-Star Game",
      "style": "c_dem_gold~128_4096",
-     "font": "ttf:rounded:31:0.0:0.85:0.25",
+     "font": "ttf:rounded:31:0.0:0.85:0.5",
      "baseline": 46,
      "left": 46,
      "sprites": [
@@ -949,7 +949,7 @@
      ],
      "text": "All-Star Game",
      "style": "c_dem_gold~0_128",
-     "font": "ttf:rounded:31:0.0:0.85:0.25",
+     "font": "ttf:rounded:31:0.0:0.85:0.5",
      "baseline": 46,
      "left": -2,
      "sprites": [
@@ -966,7 +966,7 @@
      ],
      "text": "All-Star Game",
      "style": "c_dem_gold~128_4096",
-     "font": "ttf:rounded:31:0.0:0.85:0.25",
+     "font": "ttf:rounded:31:0.0:0.85:0.5",
      "baseline": 46,
      "left": -2,
      "sprites": [
@@ -1010,7 +1010,7 @@
      ],
      "text": "Japan Series Game",
      "style": "c_dem_gold~0_80",
-     "font": "ttf:rounded:25:0.0:1.0:0.25",
+     "font": "ttf:rounded:25:0.0:1.0:0.5",
      "baseline": 40,
      "left": -32,
      "sprites": [
@@ -1027,7 +1027,7 @@
      ],
      "text": "Japan Series Game",
      "style": "c_dem_gold~80_160",
-     "font": "ttf:rounded:25:0.0:1.0:0.25",
+     "font": "ttf:rounded:25:0.0:1.0:0.5",
      "baseline": 40,
      "left": -80,
      "sprites": [
@@ -1044,7 +1044,7 @@
      ],
      "text": "Japan Series Game",
      "style": "c_dem_gold~160_240",
-     "font": "ttf:rounded:25:0.0:1.0:0.25",
+     "font": "ttf:rounded:25:0.0:1.0:0.5",
      "baseline": 40,
      "left": -120,
      "sprites": [
@@ -1061,7 +1061,7 @@
      ],
      "text": "Japan Series Game",
      "style": "c_dem_gold~240_4096",
-     "font": "ttf:rounded:25:0.0:1.0:0.25",
+     "font": "ttf:rounded:25:0.0:1.0:0.5",
      "baseline": 40,
      "left": -138,
      "sprites": [
