@@ -58,3 +58,8 @@ def plain(dark, mid=None, edge=3):
 # ---- sct_main z4_edsm_0 (player info window): pal 24, black ramp f (black) .. 1 (near white) ----------------------------------
 STYLES["d4_edsm"] = plain(15, 8)
 windows("d4_edsm")
+
+# ---- sct_main logos (4-bit pages, big letters: fill ramp, dark inner rings, white ring, shadow) ------------------------------
+STYLES["d4_efd"] = ringfill([15, 14, 14, 13, 12, 11], [8, 7, 5, 3, 1], [1, 1])               # pal 0: silver-white, teal, near-black
+STYLES["d4_efk"] = ringfill([7, 8, 9, 10, 11, 11], [13, 12, 1, 1], [3, 3, 3, 4])             # pal 2: yellow to orange, dark red, white, violet shadow
+STYLES["d4_efc"] = ringfill([13, 9, 9, 10, 11, 12], [3, 3, 15, 15], [1, 2, 2, 1])            # pal 4: pale to deep cyan, blue, white, navy shadow

@@ -1005,7 +1005,7 @@
      "font": "ttf:narrow:10:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 2
+     "dy": 0
     },
     {
      "sprite": "05",
@@ -1014,14 +1014,14 @@
      "font": "ttf:narrow:10:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": -6
+     "dy": 0
     },
     {
      "sprite": "07",
      "text": "1 left",
      "style": "b4_gd_green",
      "font": "ttf:narrow:13:0.0:1.0:0.3",
-     "baseline": 8
+     "baseline": 6
     },
     {
      "sprite": "08",
@@ -1174,7 +1174,7 @@
      "text": "Advise",
      "style": "b4_gm_s",
      "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 20,
+     "baseline": 22,
      "pages": [
       1,
       2
@@ -1196,7 +1196,7 @@
      "text": "Advise Wisely",
      "style": "b4_gm_s",
      "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 21,
+     "baseline": 19,
      "pages": [
       1,
       2
@@ -1240,7 +1240,7 @@
      "text": "Praise",
      "style": "b4_gm_s",
      "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 20,
+     "baseline": 22,
      "pages": [
       1,
       2
@@ -1262,7 +1262,7 @@
      "text": "Praise a Lot",
      "style": "b4_gm_s",
      "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 20,
+     "baseline": 22,
      "pages": [
       1,
       2
