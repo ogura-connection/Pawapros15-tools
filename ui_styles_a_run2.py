@@ -106,3 +106,43 @@ def stamp(size=40):
 
 
 STYLES["a_stamp"] = stamp()
+
+
+def rows_win(style, r0, r1):
+    """Rows r0..r1 of the whole word (lettering painted into a picture that is cut over two pages)."""
+    def cut(ink, base):
+        art, b = style(ink, base)
+        return art[r0:r1], b - r0
+    return cut
+
+
+def crisp(fill, shadow=None, edge=3, depth=1):
+    """Solid letters (ink at `edge` or more -> fill), a one-pixel `shadow` down and to the right; no soft edge."""
+    def style(ink, base):
+        pad = depth + 1
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big >= edge
+        out = np.zeros(big.shape, np.uint8)
+        if shadow is not None:
+            for k in range(1, depth + 1):
+                out[shift(letters, k, k)] = shadow
+        out[letters] = fill
+        ys, xs = np.nonzero(out)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base + pad - ys.min()
+    return style
+
+
+def nothing(ink, base):
+    return np.zeros((1, 1), np.uint8), 0
+
+
+# m4_stt00 profile card (palette 6): tags white on brown with a dark shadow, the heading white in brown rings
+STYLES["a_none"] = nothing
+STYLES["a_tag"] = crisp(15, 2, 3)
+STYLES["a_cardhead"] = ringfill([15, 15, 9, 9], [4, 3], [6])
+for _name in ("a_tag", "a_cardhead"):
+    for _r0 in range(0, 27):
+        for _r1 in range(_r0 + 1, 28):
+            STYLES["%s~%d_%d" % (_name, _r0, _r1)] = rows_win(STYLES[_name], _r0, _r1)

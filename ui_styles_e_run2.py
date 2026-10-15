@@ -62,3 +62,17 @@ STYLES["e_sop_title"] = lambda ink, base: (_big if ink.shape[0] > 30 else _small
 # sn_abiup.arc z3_upp_0 (palettes 42-47: teal, pink, blue, yellow, green plates; the index ramp is the same in all of them):
 # white letters shading to the plate colour at the foot, in a dark ring and a mid ring (8 = darkest, a = mid)
 STYLES["e_btn"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [8])
+
+# sn_abiup.arc z3_up_0: headings of the ability-up panels. Every palette has its own ramp; the colours are read from them
+# (_work/ui_pages/run2/E/ notes): 現能力 green letters in dark blue, a white band, light blue glow and shadow (palette 60);
+# 能力アップ後 yellow in purple blue, white band (61); 経験点 columns green in violet (21); アイテム効果 white letters in the
+# plate's dark green (54); the tabs white letters in a dark ring of the plate's colour and a lighter one (24 pink, 25 blue,
+# 26 green); キャンセル purple letters in white and light blue (75; 76 draws the same art again as a flat blue shadow)
+STYLES["e_cur"] = ui_type.logo([7, 8, 9, 10, 10, 10], [14], 15, 1, 4, [5, 6], 2, 1)
+STYLES["e_after"] = ui_type.logo([10, 10, 11, 12, 12, 13], [2], 1, 9, 5, [15], 2, 1)
+STYLES["e_exp"] = ui_type.logo([9, 9, 10, 10, 11, 11], [8], 5, 14, 2, [], 1, 1)
+STYLES["e_item"] = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [2])
+STYLES["e_tabp"] = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [8, 8, 11])
+STYLES["e_tabf"] = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [8, 7, 2])
+STYLES["e_tabo"] = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [8, 7, 11])
+STYLES["e_cancel"] = ui_type.logo([8, 9, 10, 11, 12, 13, 14], [7], 14, 1, 3, [], 2, 1)
