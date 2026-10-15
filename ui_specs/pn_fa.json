@@ -1,0 +1,1457 @@
+{
+ "arc": "pn_fa.arc",
+ "repack": [
+  {
+   "bank": "g3_fa_0",
+   "palette": 192,
+   "style": "d6_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     8,
+     0,
+     48,
+     128,
+     96
+    ],
+    [
+     8,
+     0,
+     96,
+     8,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     8,
+     16
+    ],
+    [
+     8,
+     8,
+     96,
+     128,
+     128
+    ],
+    [
+     9,
+     8,
+     0,
+     128,
+     16
+    ],
+    [
+     9,
+     0,
+     16,
+     128,
+     64
+    ],
+    [
+     9,
+     0,
+     64,
+     64,
+     112
+    ],
+    [
+     9,
+     64,
+     64,
+     128,
+     112
+    ],
+    [
+     9,
+     0,
+     112,
+     40,
+     128
+    ],
+    [
+     9,
+     40,
+     112,
+     80,
+     128
+    ],
+    [
+     9,
+     80,
+     112,
+     120,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Declared Free Agents",
+     "style": "d6_title",
+     "font": "ttf:rounded:17:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "02",
+     "text": "Players Returning from Abroad",
+     "style": "d6_title",
+     "font": "ttf:rounded:17:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "03",
+     "text": "Choose\nPlayer",
+     "style": "d6_title",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": -7,
+     "overlap": 1
+    }
+   ],
+   "name": "titles"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 40,
+   "style": "d6_b09",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     64,
+     0,
+     128,
+     40
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "09",
+     "text": "Choose\nPlayer",
+     "style": "d6_b09",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 19,
+     "palettes": [
+      40
+     ]
+    }
+   ],
+   "name": "b09"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 38,
+   "style": "d6_b0a",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     40,
+     64,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0a",
+     "text": "Done",
+     "style": "d6_b0a",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 21,
+     "palettes": [
+      38
+     ]
+    }
+   ],
+   "name": "b0a"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 54,
+   "style": "d6_b0b",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     64,
+     40,
+     128,
+     80
+    ],
+    [
+     18,
+     0,
+     32,
+     56,
+     56
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0b",
+     "text": "Cancel",
+     "style": "d6_b0b",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      54
+     ]
+    },
+    {
+     "sprite": "4c",
+     "text": "Cancel",
+     "style": "d6_b0b",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 21,
+     "palettes": [
+      54
+     ]
+    }
+   ],
+   "name": "b0b"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 56,
+   "style": "d6_b0c",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     80,
+     64,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0c",
+     "text": "Player\nList",
+     "style": "d6_b0c",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 20,
+     "palettes": [
+      56
+     ]
+    }
+   ],
+   "name": "b0c"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 197,
+   "style": "d6_neg",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     96,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     96,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "22",
+     "text": "Neg",
+     "style": "d6_neg",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 20
+    }
+   ],
+   "name": "neg"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 70,
+   "style": "d6_teal",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     96,
+     96,
+     128,
+     104
+    ],
+    [
+     4,
+     96,
+     104,
+     128,
+     112
+    ],
+    [
+     4,
+     96,
+     112,
+     104,
+     120
+    ],
+    [
+     4,
+     24,
+     112,
+     96,
+     128
+    ],
+    [
+     21,
+     16,
+     64,
+     96,
+     96
+    ],
+    [
+     3,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     96,
+     24,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "29",
+     "text": "to show ratings",
+     "style": "d6_teal",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 72,
+     "dy": 0,
+     "left": 34
+    },
+    {
+     "sprite": "07",
+     "text": "Salary Wanted",
+     "style": "d6_teal",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 27,
+     "pages": [
+      21
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Team Wanted",
+     "style": "d6_teal",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": -1,
+     "pages": [
+      3,
+      4
+     ]
+    }
+   ],
+   "name": "teal"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 212,
+   "style": "d6_wn212",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     15,
+     0,
+     24,
+     16,
+     48
+    ],
+    [
+     15,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     15,
+     32,
+     0,
+     64,
+     24
+    ],
+    [
+     15,
+     64,
+     104,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "88",
+     "text": "to show ratings",
+     "style": "d6_wn212",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 2,
+     "left": 405
+    }
+   ],
+   "name": "w212"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 216,
+   "style": "d6_wn216",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     18,
+     0,
+     96,
+     40,
+     128
+    ],
+    [
+     19,
+     64,
+     64,
+     128,
+     96
+    ],
+    [
+     19,
+     0,
+     96,
+     48,
+     128
+    ],
+    [
+     20,
+     0,
+     32,
+     72,
+     64
+    ],
+    [
+     20,
+     104,
+     32,
+     128,
+     64
+    ],
+    [
+     20,
+     0,
+     64,
+     40,
+     96
+    ],
+    [
+     20,
+     72,
+     32,
+     104,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "2c",
+     "text": "Salary",
+     "style": "d6_wn216",
+     "font": "ttf:rounded:8:0.0:0.92:0.25",
+     "baseline": 18
+    },
+    {
+     "sprite": "2e",
+     "text": "Multi-Year Deal",
+     "style": "d6_wn216",
+     "font": "ttf:rounded:12:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 3
+    },
+    {
+     "sprite": "2f",
+     "text": "yr deal",
+     "style": "d6_wn216",
+     "font": "ttf:rounded:15:0.0:0.85:0.25",
+     "baseline": 20
+    },
+    {
+     "sprite": "30",
+     "text": "Number",
+     "style": "d6_wn216",
+     "font": "ttf:rounded:13:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 3
+    },
+    {
+     "sprite": "32",
+     "text": "yr",
+     "style": "d6_wn216",
+     "font": "ttf:rounded:17:0.0:0.85:0.25",
+     "baseline": 22
+    }
+   ],
+   "name": "w216"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 216,
+   "style": "d6_wn216",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     19,
+     104,
+     0,
+     128,
+     32
+    ],
+    [
+     19,
+     0,
+     32,
+     8,
+     64
+    ],
+    [
+     19,
+     48,
+     96,
+     128,
+     128
+    ],
+    [
+     20,
+     0,
+     0,
+     8,
+     32
+    ],
+    [
+     20,
+     40,
+     64,
+     96,
+     96
+    ],
+    [
+     20,
+     96,
+     64,
+     128,
+     96
+    ],
+    [
+     20,
+     0,
+     96,
+     56,
+     128
+    ],
+    [
+     2,
+     0,
+     96,
+     24,
+     128
+    ],
+    [
+     21,
+     0,
+     104,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "34",
+     "text": "Salary",
+     "style": "d6_wn216",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 24,
+     "dy": 2
+    },
+    {
+     "sprite": "36",
+     "text": "Multi-Year Deal",
+     "style": "d6_wn216",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 80,
+     "dy": 2
+    },
+    {
+     "sprite": "37",
+     "text": "Number",
+     "style": "d6_wn216",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 19
+    },
+    {
+     "sprite": "b6",
+     "text": ": Remove from offer",
+     "style": "d6_wn216",
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 56,
+     "dy": 1
+    }
+   ],
+   "name": "w216s"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 213,
+   "style": "d6_wn213",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     15,
+     16,
+     24,
+     48,
+     48
+    ],
+    [
+     15,
+     48,
+     24,
+     72,
+     48
+    ],
+    [
+     15,
+     72,
+     24,
+     104,
+     48
+    ],
+    [
+     15,
+     104,
+     24,
+     128,
+     48
+    ],
+    [
+     15,
+     0,
+     48,
+     24,
+     72
+    ],
+    [
+     15,
+     24,
+     48,
+     48,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "89",
+     "text": "AVG",
+     "style": "d6_wn213",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 17
+    },
+    {
+     "sprite": "8a",
+     "text": "HR",
+     "style": "d6_wn213",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "8b",
+     "text": "RBI",
+     "style": "d6_wn213",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "8c",
+     "text": "ERA",
+     "style": "d6_wn213",
+     "font": "ttf:narrow:8:0.0:0.92:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "8d",
+     "text": "W",
+     "style": "d6_wn213",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "8e",
+     "text": "L",
+     "style": "d6_wn213",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 16
+    }
+   ],
+   "name": "w213"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 220,
+   "style": "d6_pale",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     12,
+     0,
+     64,
+     104,
+     88
+    ],
+    [
+     12,
+     0,
+     96,
+     40,
+     120
+    ],
+    [
+     12,
+     40,
+     96,
+     104,
+     120
+    ],
+    [
+     15,
+     0,
+     0,
+     32,
+     24
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "2b",
+     "text": "Team's Offer",
+     "style": "d6_pale",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 28
+    },
+    {
+     "sprite": "33",
+     "text": "Player's Wishes",
+     "style": "d6_pale",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 1
+    }
+   ],
+   "name": "pale"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 209,
+   "style": "d6_olive",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     14,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     14,
+     0,
+     64,
+     48,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "28",
+     "text": "Contract Talks",
+     "style": "d6_olive",
+     "font": "ttf:rounded:20:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    }
+   ],
+   "name": "olive"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 215,
+   "style": "d6_navy",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     12,
+     96,
+     0,
+     128,
+     40
+    ],
+    [
+     12,
+     104,
+     64,
+     128,
+     104
+    ],
+    [
+     18,
+     88,
+     32,
+     128,
+     48
+    ],
+    [
+     18,
+     88,
+     48,
+     120,
+     64
+    ],
+    [
+     18,
+     0,
+     80,
+     128,
+     96
+    ],
+    [
+     18,
+     56,
+     32,
+     88,
+     56
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "72",
+     "text": "Teams in\nTalks",
+     "style": "d6_navy",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 294,
+     "palettes": [
+      215
+     ],
+     "slices": true,
+     "overlap": -2
+    },
+    {
+     "sprite": "73",
+     "text": "Switch View",
+     "style": "d6_navy",
+     "font": "ttf:narrow:8:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 1,
+     "palettes": [
+      215
+     ]
+    }
+   ],
+   "name": "navy"
+  },
+  {
+   "bank": "g3_fa_0",
+   "palette": 193,
+   "style": "d6_cyan",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     10,
+     0,
+     64,
+     80,
+     128
+    ],
+    [
+     10,
+     80,
+     64,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     11,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     96,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "9d",
+     "text": "This off-season,\nno player declared FA!",
+     "style": "d6_cyan",
+     "font": "ttf:rounded:21:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -10,
+     "overlap": 3
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      16,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "2a"
+     ]
+    }
+   ],
+   "name": "cyan"
+  },
+  {
+   "bank": "w5_fa",
+   "palette": 4,
+   "style": "d6_w_b4",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     32,
+     96,
+     120,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     96,
+     32
+    ],
+    [
+     7,
+     88,
+     32,
+     128,
+     64
+    ],
+    [
+     7,
+     24,
+     64,
+     72,
+     96
+    ],
+    [
+     7,
+     72,
+     64,
+     128,
+     96
+    ],
+    [
+     7,
+     96,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Ratings",
+     "style": "d6_w_b4",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 24,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "Player Comp.",
+     "style": "d6_w_b4",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 24,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "3b",
+     "text": "Start Talks",
+     "style": "d6_w_b4",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 48,
+     "dy": 2,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "54",
+     "text": "Choose Player",
+     "style": "d6_w_b4",
+     "font": "ttf:rounded:9:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 56,
+     "dy": 3,
+     "palettes": [
+      4
+     ]
+    }
+   ],
+   "name": "wb4"
+  },
+  {
+   "bank": "w5_fa",
+   "palette": 7,
+   "style": "d6_w_b7",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     96,
+     32,
+     128
+    ],
+    [
+     0,
+     64,
+     64,
+     128,
+     96
+    ],
+    [
+     7,
+     24,
+     0,
+     128,
+     32
+    ],
+    [
+     7,
+     48,
+     32,
+     88,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Cancel",
+     "style": "d6_w_b7",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 24,
+     "palettes": [
+      7
+     ]
+    },
+    {
+     "sprite": "3c",
+     "text": "Choose Protected",
+     "style": "d6_w_b7",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 104,
+     "dy": 0,
+     "palettes": [
+      7
+     ]
+    }
+   ],
+   "name": "wb7"
+  },
+  {
+   "bank": "w5_fa",
+   "palette": 8,
+   "style": "d6_w_b8",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     96,
+     0,
+     128,
+     32
+    ],
+    [
+     1,
+     0,
+     32,
+     64,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0c",
+     "text": "Cash Comp.",
+     "style": "d6_w_b8",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 2,
+     "palettes": [
+      8
+     ]
+    }
+   ],
+   "name": "wb8"
+  },
+  {
+   "bank": "w5_fa",
+   "palette": 22,
+   "style": "d6_w_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     96,
+     32,
+     120,
+     64
+    ],
+    [
+     2,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     2,
+     64,
+     32,
+     96,
+     64
+    ],
+    [
+     3,
+     0,
+     96,
+     112,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "16",
+     "text": "Choose FA Compensation",
+     "style": "d6_w_title",
+     "font": "ttf:rounded:10:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "17",
+     "text": "Choose Protected",
+     "style": "d6_w_title",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 18
+    },
+    {
+     "sprite": "18",
+     "text": "Choose Player",
+     "style": "d6_w_title",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 18
+    }
+   ],
+   "name": "wtitle"
+  },
+  {
+   "bank": "w5_fa",
+   "palette": 19,
+   "style": "d6_w_sal",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     40,
+     24
+    ],
+    [
+     7,
+     24,
+     96,
+     96,
+     120
+    ],
+    [
+     9,
+     0,
+     80,
+     112,
+     104
+    ],
+    [
+     9,
+     0,
+     104,
+     112,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "19",
+     "text": "Salary",
+     "style": "d6_w_sal",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "42",
+     "text": "Ratings",
+     "style": "d6_w_sal",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 19
+    },
+    {
+     "sprite": "43",
+     "text": "View the other team's ratings",
+     "style": "d6_w_sal",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 112,
+     "dy": 2
+    }
+   ],
+   "name": "wsal"
+  },
+  {
+   "bank": "w5_fa",
+   "palette": 26,
+   "style": "d6_w_sent",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     4,
+     0,
+     24,
+     48,
+     48
+    ],
+    [
+     4,
+     64,
+     24,
+     128,
+     48
+    ],
+    [
+     4,
+     0,
+     48,
+     64,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "25",
+     "text": "Take an unprotected player",
+     "style": "d6_w_sent",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "27",
+     "text": "in comp.",
+     "style": "d6_w_sent",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 18
+    },
+    {
+     "from": [
+      3,
+      48,
+      72,
+      72,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "45"
+     ]
+    }
+   ],
+   "name": "wsent"
+  },
+  {
+   "bank": "w5_faz",
+   "palette": 0,
+   "style": "d6_faz",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     0,
+     0,
+     48,
+     8,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "FA Comp.",
+     "style": "d6_faz",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 28
+    }
+   ],
+   "name": "faz"
+  }
+ ],
+ "sheet": [
+  {
+   "pages": "tex_g3_fax_0_00",
+   "cols": 4,
+   "items": [
+    {
+     "box": [
+      62,
+      184,
+      462,
+      254
+     ],
+     "bg": "rows",
+     "text": "Signing Day...",
+     "font": "ttf:rounded:43:0.0:1.0:0.3",
+     "centre": [
+      262,
+      220
+     ],
+     "colour": "#ffffff",
+     "crisp": true,
+     "rings": [
+      "#000000",
+      "#000000"
+     ],
+     "shadow": [
+      "#000000",
+      2,
+      2
+     ]
+    }
+   ]
+  }
+ ]
+}

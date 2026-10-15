@@ -1,0 +1,495 @@
+{
+ "arc": "dft_meet.arc",
+ "repack": [
+  {
+   "bank": "g3_dtv_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     56,
+     64,
+     80
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     3,
+     80,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     96,
+     96
+    ],
+    [
+     6,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     6,
+     96,
+     0,
+     128,
+     48
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     64,
+     40
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     44
+    ],
+    [
+     13,
+     0,
+     0,
+     64,
+     40
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "06",
+     "text": "Giants",
+     "style": "c6_g3_dtv_0_06_h",
+     "font": "ttf:rounded:12:0.0:0.92:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "07",
+     "text": "Dragons",
+     "style": "c6_g3_dtv_0_07_h",
+     "font": "ttf:narrow:11:0.0:0.85:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "08",
+     "text": "Carp",
+     "style": "c6_g3_dtv_0_08_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.15",
+     "baseline": 19
+    },
+    {
+     "sprite": "09",
+     "text": "Swallows",
+     "style": "c6_g3_dtv_0_09_h",
+     "font": "ttf:rounded:12:0.0:0.85:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "0a",
+     "text": "BayStars",
+     "style": "c6_g3_dtv_0_0a_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "0b",
+     "text": "Tigers",
+     "style": "c6_g3_dtv_0_0b_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "0c",
+     "text": "Eagles",
+     "style": "c6_g3_dtv_0_0c_h",
+     "font": "ttf:rounded:12:0.0:0.92:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "0d",
+     "text": "Fighters",
+     "style": "c6_g3_dtv_0_0d_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.15",
+     "baseline": 19
+    },
+    {
+     "sprite": "0e",
+     "text": "Lions",
+     "style": "c6_g3_dtv_0_0e_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "0f",
+     "text": "Buffaloes",
+     "style": "c6_g3_dtv_0_0f_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "10",
+     "text": "Marines",
+     "style": "c6_g3_dtv_0_10_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "11",
+     "text": "Hawks",
+     "style": "c6_g3_dtv_0_11_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "12",
+     "text": "Pitcher",
+     "style": "c6_g3_dtv_0_12_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.15",
+     "baseline": 14
+    },
+    {
+     "sprite": "13",
+     "text": "Catcher",
+     "style": "c6_g3_dtv_0_13_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.15",
+     "baseline": 14
+    },
+    {
+     "sprite": "14",
+     "text": "Infield",
+     "style": "c6_g3_dtv_0_14_h",
+     "font": "ttf:rounded:12:0.0:0.92:0.15",
+     "baseline": 14
+    },
+    {
+     "sprite": "15",
+     "text": "Outfield",
+     "style": "c6_g3_dtv_0_15_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.15",
+     "baseline": 14
+    },
+    {
+     "sprite": "16",
+     "text": "HS",
+     "style": "c6_g3_dtv_0_16_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.15",
+     "baseline": 14
+    },
+    {
+     "sprite": "17",
+     "text": "College",
+     "style": "c6_g3_dtv_0_17_h_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.15",
+     "baseline": 13
+    },
+    {
+     "sprite": "18",
+     "text": "Corp.",
+     "style": "c6_g3_dtv_0_18_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.15",
+     "baseline": 13
+    },
+    {
+     "sprite": "19",
+     "text": "No Players Signed",
+     "style": "c6_g3_dtv_0_19_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.15",
+     "baseline": 18
+    },
+    {
+     "sprite": "1a",
+     "text": "Draft Lottery",
+     "style": "c6_dtv_1a",
+     "font": "ttf:rounded:30:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 118,
+     "dy": 6
+    },
+    {
+     "sprite": "1b",
+     "text": "Draft Lottery",
+     "style": "c6_dtv_1b",
+     "font": "ttf:rounded:30:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 118,
+     "dy": 6
+    },
+    {
+     "sprite": "29",
+     "text": "Draft",
+     "style": "c6_dtv_29",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 26,
+     "dy": 1
+    },
+    {
+     "sprite": "2a",
+     "text": "Draft",
+     "style": "c6_dtv_2a",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 26,
+     "dy": 1
+    },
+    {
+     "sprite": "2b",
+     "text": "Rookie",
+     "style": "c6_dtv_2b",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 68,
+     "dy": 2
+    },
+    {
+     "sprite": "2c",
+     "text": "Rookie",
+     "style": "c6_dtv_2c",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 68,
+     "dy": 1
+    },
+    {
+     "sprite": "43",
+     "text": "High School",
+     "style": "c6_dtv_43",
+     "font": "ttf:narrow:22:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 2
+    },
+    {
+     "sprite": "44",
+     "text": "High School",
+     "style": "c6_dtv_44",
+     "font": "ttf:narrow:22:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 43,
+     "dy": 3
+    },
+    {
+     "sprite": "45",
+     "text": "College & Corporate",
+     "style": "c6_dtv_45",
+     "font": "ttf:narrow:26:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 83,
+     "dy": 5
+    },
+    {
+     "sprite": "46",
+     "text": "College & Corporate",
+     "style": "c6_dtv_46",
+     "font": "ttf:narrow:26:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 62,
+     "dy": 4
+    },
+    {
+     "sprite": "1d",
+     "text": "Won the Pick!",
+     "style": "c6_dtv_1d",
+     "font": "ttf:narrow:30:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 107,
+     "dy": 0,
+     "palettes": [
+      25
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Won the Pick!",
+     "style": "c6_dtv_1d",
+     "font": "ttf:narrow:30:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 107,
+     "dy": 1,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "from": [
+      9,
+      120,
+      80,
+      128,
+      120
+     ],
+     "empty": true,
+     "sprites": [
+      "2d"
+     ]
+    },
+    {
+     "from": [
+      10,
+      0,
+      0,
+      64,
+      40
+     ],
+     "empty": true,
+     "sprites": [
+      "2d"
+     ]
+    },
+    {
+     "from": [
+      12,
+      120,
+      80,
+      128,
+      120
+     ],
+     "empty": true,
+     "sprites": [
+      "2e"
+     ]
+    },
+    {
+     "from": [
+      13,
+      0,
+      0,
+      64,
+      40
+     ],
+     "empty": true,
+     "sprites": [
+      "2e"
+     ]
+    }
+   ],
+   "name": "g3_dtv_0",
+   "share": true
+  },
+  {
+   "bank": "g3_dtk_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     12,
+     0,
+     32,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "21",
+     "text": "Winner!",
+     "style": "c6_g3_dtk_0_21",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 51,
+     "dy": -1
+    },
+    {
+     "sprite": "22",
+     "text": "No Luck",
+     "style": "c6_g3_dtk_0_22",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 54,
+     "dy": 3
+    }
+   ],
+   "name": "g3_dtk_0",
+   "share": true
+  }
+ ]
+}
