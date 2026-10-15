@@ -298,7 +298,7 @@ for _n, (_t, _segs, _cap, _sq, _face) in enumerate(EFO):
 # ---- sct_a_nh.arc z4_es_0 (Eikan Nine opening story: white italic lines, black edge) ----------------------------------------------
 STYLES["c4_es"] = ringfill([4, 4, 4, 4, 4, 4], [15, 3], [])
 
-ES_FONT = (11, 0.9, 0.12)       # cap, squeeze, bold (face serif-italic)
+ES_FONT = (11, 0.93, 0.25)       # cap, squeeze, bold (face serif-italic)
 # line -> (English, [(page, rectangle of the page, x of the piece in the line)], centre of the Japanese line)
 ES = {
     "01": ("Cherry blossoms dance.", [(0, [0, 0, 128, 32], 0), (0, [0, 32, 64, 64], 128)], 97.5),

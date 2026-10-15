@@ -12,7 +12,7 @@
     32
    ],
    "text": "Cherry blossoms dance.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_01_0"
   },
@@ -26,7 +26,7 @@
     64
    ],
    "text": "Cherry blossoms dance.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_01_1"
   },
@@ -40,7 +40,7 @@
     64
    ],
    "text": "April, spring. A man took over as manager",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_02_0"
   },
@@ -54,7 +54,7 @@
     96
    ],
    "text": "April, spring. A man took over as manager",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_02_1"
   },
@@ -68,7 +68,7 @@
     128
    ],
    "text": "April, spring. A man took over as manager",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_02_2"
   },
@@ -82,7 +82,7 @@
     128
    ],
    "text": "of a certain high school's baseball club.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_03_0"
   },
@@ -96,7 +96,7 @@
     32
    ],
    "text": "of a certain high school's baseball club.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_03_1"
   },
@@ -110,7 +110,7 @@
     64
    ],
    "text": "of a certain high school's baseball club.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_03_2"
   },
@@ -124,7 +124,7 @@
     64
    ],
    "text": "His aim: a contender, then a powerhouse.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_04_0"
   },
@@ -138,7 +138,7 @@
     96
    ],
    "text": "His aim: a contender, then a powerhouse.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_04_1"
   },
@@ -152,7 +152,7 @@
     128
    ],
    "text": "His aim: a contender, then a powerhouse.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_04_2"
   },
@@ -166,7 +166,7 @@
     32
    ],
    "text": "His aim: a contender, then a powerhouse.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_04_3"
   },
@@ -180,7 +180,7 @@
     32
    ],
    "text": "What awaits the club he leads,",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_05_0"
   },
@@ -194,7 +194,7 @@
     64
    ],
    "text": "What awaits the club he leads,",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_05_1"
   },
@@ -208,7 +208,7 @@
     96
    ],
    "text": "What awaits the club he leads,",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_05_2"
   },
@@ -222,7 +222,7 @@
     96
    ],
    "text": "from this day on?",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_06_0"
   },
@@ -236,7 +236,7 @@
     128
    ],
    "text": "from this day on?",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_06_1"
   },
@@ -250,7 +250,7 @@
     32
    ],
    "text": "from this day on?",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_06_2"
   },
@@ -264,7 +264,7 @@
     64
    ],
    "text": "from this day on?",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_06_3"
   },
@@ -278,7 +278,7 @@
     96
    ],
    "text": "from this day on?",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_06_4"
   },
@@ -292,7 +292,7 @@
     96
    ],
    "text": "Here, a new page of history begins.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_07_0"
   },
@@ -306,7 +306,7 @@
     128
    ],
    "text": "Here, a new page of history begins.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_07_1"
   },
@@ -320,7 +320,7 @@
     32
    ],
    "text": "Here, a new page of history begins.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_07_2"
   },
@@ -334,7 +334,7 @@
     64
    ],
    "text": "Here, a new page of history begins.",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_07_3"
   },
@@ -348,7 +348,7 @@
     64
    ],
    "text": "Onward...",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_08_0"
   },
@@ -362,7 +362,7 @@
     96
    ],
    "text": "Onward...",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_08_1"
   },
@@ -376,7 +376,7 @@
     128
    ],
    "text": "to win the crown that is the national title!",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_09_0"
   },
@@ -390,7 +390,7 @@
     32
    ],
    "text": "to win the crown that is the national title!",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_09_1"
   },
@@ -404,7 +404,7 @@
     64
    ],
    "text": "to win the crown that is the national title!",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_09_2"
   },
@@ -418,7 +418,7 @@
     96
    ],
    "text": "to win the crown that is the national title!",
-   "font": "ttf:serif-italic:11:0.0:0.9:0.12",
+   "font": "ttf:c4serif:11:0.0:0.93:0.25",
    "copy": "clear",
    "style": "c4_es_09_3"
   }

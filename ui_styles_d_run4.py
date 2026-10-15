@@ -79,7 +79,17 @@ windows("d4_gm22")
 
 # ---- sct_a_sc.arc (schedule, manager's memo) / sct_a_it.arc / sct_sugo.arc ------------------------------------------------------
 STYLES["d4_edy_head"] = plain(15, 11)                                # z4_edy_0 pal 24: grey letters (ramp 1 light .. f dark)
-STYLES["d4_edy_month"] = plain(15, None, edge=3)                      # pal 25: black letters, set in the pixel "tag" font
+def padded(style, n):
+    """The styled art with `n` clear rows / columns round it (a margin the sprite's parts keep: nothing touches a part edge)."""
+    import numpy as np
+
+    def make(ink, base):
+        art, b = style(ink, base)
+        return np.pad(art, n), b + n
+    return make
+
+
+STYLES["d4_edy_month"] = padded(plain(15, None, edge=3), 1)               # pal 25: black letters, set in the pixel "tag" font, 1 clear px round them
 STYLES["d4_hint"] = ringfill([15, 15, 14, 13, 12, 10], [4, 4], [3, 2, 1])      # z4_ekk_0 pal 24: white letters, dark green-grey ring, pale glow
 
 
