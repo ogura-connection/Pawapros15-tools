@@ -136,7 +136,7 @@ def _plate(kind, page, rect):
 
 
 # 選 (palette 23): red tile, white capitals in dark red
-STYLES["c2_emb_03"] = emblem([15, 15, 15, 14, 14, 14, 14, 14], [4], [], ("tile", 1, (64, 0, 96, 32)), dy=-1)
+STYLES["c2_emb_03"] = emblem([15, 15, 15, 14, 14, 14, 14, 14], [4], [], ("tile", 1, (64, 0, 96, 32)), dy=1)
 # 極 (palette 43): pale lilac capitals, purple outline, blue shadow
 STYLES["c2_emb_05"] = emblem([7, 6, 6, 5, 5, 4, 4, 3], [1, 1], [13, 15])
 # て (palette 45): blue capitals, pale cyan outline, blue shadow
