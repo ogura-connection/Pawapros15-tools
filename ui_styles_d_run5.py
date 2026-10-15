@@ -90,12 +90,19 @@ STYLES["d5_room_s"] = ringfill([8, 8, 8, 10, 8, 8], [12], [4])
 STYLES["d5_gr"] = ringfill([14, 15, 13, 14, 13, 13], [8, 7, 7, 5, 2], [2, 3, 2])
 STYLES["d5_gr_s"] = ringfill([14, 15, 13, 14, 13, 13], [8], [2])
 STYLES["d5_t_renz"] = ui_type.logo(**{'fill': [111, 140, 143, 152, 157, 158], 'outline': 103, 'white': 227, 'rim': 254, 'shadow': [254, 254], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_renz_s"] = STYLES["d5_t_renz"]
 STYLES["d5_t_saz00"] = ui_type.logo(**{'fill': [239, 224, 200, 180, 178, 72], 'outline': 32, 'white': 255, 'rim': 98, 'shadow': [98], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz00_s"] = STYLES["d5_t_saz00"]
 STYLES["d5_t_saz02"] = ui_type.logo(**{'fill': [183, 190, 194, 196, 214, 214], 'outline': 2, 'white': 1, 'rim': 94, 'shadow': [35, 35, 35, 35, 78], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz02_s"] = STYLES["d5_t_saz02"]
 STYLES["d5_t_saz03"] = ui_type.logo(**{'fill': [188, 195, 158, 154, 163, 161], 'outline': 167, 'white': 1, 'rim': 71, 'shadow': [33, 33, 33, 33, 68], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz03_s"] = STYLES["d5_t_saz03"]
 STYLES["d5_t_saz04"] = ui_type.logo(**{'fill': [81, 81, 81, 92, 82, 91], 'outline': 44, 'white': 1, 'rim': 94, 'shadow': [90, 35, 35, 35, 71], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz04_s"] = STYLES["d5_t_saz04"]
 STYLES["d5_t_saz05"] = ui_type.logo(**{'fill': [227, 99, 101, 126, 124, 124], 'outline': 105, 'white': 1, 'rim': 12, 'shadow': [53, 33, 33, 33, 68], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz05_s"] = STYLES["d5_t_saz05"]
 STYLES["d5_t_saz06"] = ui_type.logo(**{'fill': [249, 235, 235, 254, 253, 253], 'outline': 239, 'white': 1, 'rim': 12, 'shadow': [53, 35, 35, 35, 78], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz06_s"] = STYLES["d5_t_saz06"]
 
 # vertical lettering: the same styles on art turned a quarter turn anticlockwise (reads bottom to top)
 import numpy as _np
