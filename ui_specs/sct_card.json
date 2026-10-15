@@ -1,0 +1,492 @@
+{
+ "arc": "sct_card.arc",
+ "repack": [
+  {
+   "bank": "z4_em_0",
+   "palette": 0,
+   "style": "e4_em_item",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "51",
+     "text": "Book a\nPractice Game",
+     "style": "e4_em_item",
+     "font": "ttf:narrow:8:0.0:0.85:0.3",
+     "baseline": 26,
+     "slices": true,
+     "line_step": 15
+    },
+    {
+     "sprite": "52",
+     "text": "Intrasquad\nGame",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "53",
+     "text": "Encourage",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "54",
+     "text": "Watch\nGame",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "55",
+     "text": "Review\nSchedule",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 28,
+     "slices": true,
+     "line_step": 17
+    },
+    {
+     "sprite": "56",
+     "text": "Team Meal",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "57",
+     "text": "Career\nTalk",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "58",
+     "text": "Contact\nBatting",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 29,
+     "slices": true,
+     "line_step": 21
+    },
+    {
+     "sprite": "59",
+     "text": "Swings",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.92:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "5a",
+     "text": "Machine\nBatting",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "5b",
+     "text": "Tee\nBatting",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.92:0.3",
+     "baseline": 29,
+     "slices": true,
+     "line_step": 21
+    },
+    {
+     "sprite": "5c",
+     "text": "Push-ups\n& Sit-ups",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 28,
+     "slices": true,
+     "line_step": 20
+    },
+    {
+     "sprite": "5d",
+     "text": "Fingertip\nPush-ups",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "5e",
+     "text": "Dumbbells",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "5f",
+     "text": "Bench\nPress",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "60",
+     "text": "Sprints",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.92:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "61",
+     "text": "Interval\nRuns",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.92:0.3",
+     "baseline": 30,
+     "slices": true,
+     "line_step": 20
+    },
+    {
+     "sprite": "62",
+     "text": "Base\nRunning",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 30,
+     "slices": true,
+     "line_step": 21
+    },
+    {
+     "sprite": "63",
+     "text": "Hurdles",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 39
+    },
+    {
+     "sprite": "64",
+     "text": "Throwing",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "65",
+     "text": "Long Toss",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "66",
+     "text": "Tube\nTraining",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 29,
+     "slices": true,
+     "line_step": 21
+    },
+    {
+     "sprite": "67",
+     "text": "Lat\nMachine",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "68",
+     "text": "Pepper",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.92:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "69",
+     "text": "Defensive\nTeamwork",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "6a",
+     "text": "Fungo",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 39
+    },
+    {
+     "sprite": "6b",
+     "text": "Machine-Gun\nFungo",
+     "style": "e4_em_item",
+     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "baseline": 28,
+     "slices": true,
+     "line_step": 18
+    },
+    {
+     "sprite": "6c",
+     "text": "Zazen",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "6d",
+     "text": "Mental\nTraining",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 30,
+     "slices": true,
+     "line_step": 21
+    },
+    {
+     "sprite": "6e",
+     "text": "Aroma-\ntherapy",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 30,
+     "slices": true,
+     "line_step": 21
+    },
+    {
+     "sprite": "6f",
+     "text": "Time to\nUnwind",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 30,
+     "slices": true,
+     "line_step": 20
+    },
+    {
+     "sprite": "70",
+     "text": "Form Check\n(Velocity)",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 20,
+     "slices": true,
+     "line_step": 17
+    },
+    {
+     "sprite": "71",
+     "text": "Bullpen",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.92:0.3",
+     "baseline": 40
+    },
+    {
+     "sprite": "72",
+     "text": "Speed Gun",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "73",
+     "text": "Muscler",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 39
+    },
+    {
+     "sprite": "74",
+     "text": "Squats",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "75",
+     "text": "Roadwork",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "76",
+     "text": "Tire Pull",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "77",
+     "text": "Roller",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 40
+    },
+    {
+     "sprite": "78",
+     "text": "Form Check\n(Control)",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 20,
+     "slices": true,
+     "line_step": 17
+    },
+    {
+     "sprite": "79",
+     "text": "Location\nBullpen",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 30,
+     "slices": true,
+     "line_step": 21
+    },
+    {
+     "sprite": "7a",
+     "text": "Target\nToss",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "7b",
+     "text": "Location\nTargets",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 30,
+     "slices": true,
+     "line_step": 21
+    },
+    {
+     "sprite": "7c",
+     "text": "Form Check\n(Breaking)",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 20,
+     "slices": true,
+     "line_step": 17
+    },
+    {
+     "sprite": "7d",
+     "text": "Breaking\nBullpen",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 28,
+     "slices": true,
+     "line_step": 20
+    },
+    {
+     "sprite": "7e",
+     "text": "Grip\nTraining",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "7f",
+     "text": "Breaking-\nBall Study",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "80",
+     "text": "All-Round\nPractice",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "81",
+     "text": "Bunt\nPractice",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "82",
+     "text": "Stretching",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "83",
+     "text": "Study",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "86",
+     "text": "Practice\nOrders",
+     "style": "e4_em_item1",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "8e",
+     "text": "Day Off",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "8f",
+     "text": "Portable\nShower",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 38,
+     "slices": true,
+     "line_step": 19
+    },
+    {
+     "sprite": "90",
+     "text": "Massage\nChair",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 29,
+     "slices": true,
+     "line_step": 21
+    }
+   ],
+   "name": "items",
+   "split": true
+  }
+ ]
+}
