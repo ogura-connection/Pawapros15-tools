@@ -29,3 +29,24 @@ STYLES["c2_sgi"] = padded(ringfill([15], [4, 2], []), 20)
 STYLES["c2_mrs"] = ringfill([15], [1, 3], [])
 # gdt_scs / scs_vs svt_0 (palette 0): white letters, navy outline, blue band, white rim
 STYLES["c2_svt"] = ringfill([15], [1, 1, 9, 9, 9, 15, 15], [7, 13])
+
+
+def window(inner, W, c0, c1):
+    """`inner` art centred on a canvas W columns wide, only the columns c0..c1 returned: one word shared out over the pieces
+    (parts) that the sprite is drawn from, each piece painted in place by a "paint" entry."""
+    def cut(ink, base):
+        art, b = inner(ink, base)
+        H, aw = art.shape
+        full = np.zeros((H, W), np.uint8)
+        x = (W - aw) // 2
+        if x >= 0:
+            full[:, x:x + aw] = art
+        else:
+            full[:] = art[:, -x:-x + W]
+        out = full[:, c0:c1]
+        return (out if out.shape[1] else np.zeros((H, 1), np.uint8)), b
+    return cut
+
+
+for _w, _c0, _c1 in ((80, 0, 80), (80, 0, 48), (80, 48, 80), (32, 0, 32)):
+    STYLES["c2_mrsw_%d_%d_%d" % (_w, _c0, _c1)] = window(STYLES["c2_mrs"], _w, _c0, _c1)

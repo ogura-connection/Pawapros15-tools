@@ -259,6 +259,46 @@
     1,
     1
    ]
+  },
+  {
+   "bank": "z5_sop_0",
+   "palette": 0,
+   "style": "e_sop_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 0,
+   "areas": [
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "13",
+     "text": "SOP_T1\nSOP_T2",
+     "style": "e_sop_title",
+     "font": "e_sop_title",
+     "slices": true,
+     "slice_width": 128,
+     "valign": "centre",
+     "overlap": 6
+    }
+   ],
+   "name": "title",
+   "gap": [
+    1,
+    1
+   ]
   }
  ]
 }

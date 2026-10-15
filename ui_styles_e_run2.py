@@ -23,3 +23,33 @@ STYLES["e_tlog"] = ui_type.ringed([0, 5, 4, 3, 2, 1, 1], [8, 15])
 
 # scs_load.arc z5_sop_0 (palette 0, a blue ramp): the story lines, white italic letters in a thin dark blue ring
 STYLES["e_sop"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [2])
+
+
+def _stack_unused(lines, gap=4):
+    """Two or more lines of ink, centred, each from ui_type.ttf_ink(*args): (ink, baseline row of the last line)."""
+    inks = [ui_type.ttf_ink(*a) for a in lines]
+    w = max(i.shape[1] for i, _ in inks)
+    rows, base = [], 0
+    for k, (i, b) in enumerate(inks):
+        x = (w - i.shape[1]) // 2
+        rows.append(np.pad(i, ((0, 0), (x, w - i.shape[1] - x))))
+        if k < len(inks) - 1:
+            rows.append(np.zeros((gap, w), int))
+        else:
+            base = sum(r.shape[0] for r in rows[:-1]) + b
+    return np.vstack(rows), base
+
+
+def _sop_title(project=None):
+    # scs_load.arc z5_sop_0 sprite 13: the title and its subtitle, two lines of ink in two sizes
+    for cap in range(48, 20, -1):                      # the largest title that leaves room for the rings in 288 columns
+        title = ("Hakkyu Dream", "rounded", cap, 0.12, 0.92, 1.0)
+        if ui_type.ttf_ink(*title)[0].shape[1] <= 278:
+            break
+    sub = ("~ Hot-Blooded Industrial-League Ball! ~", "narrow", 14, 0.0, 1.0, 0.6)
+    return {"words": {"SOP_T1": ui_type.ttf_ink(*title), "SOP_T2": ui_type.ttf_ink(*sub)}, "glyphs": {}, "space": 4, "gap": 1}
+
+
+ui_type.FONTS["e_sop_title"] = _sop_title
+# the title: white letters in a dark blue ring and a darker one (palette 0, a blue ramp)
+STYLES["e_sop_title"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [3, 1])

@@ -41,7 +41,8 @@ STYLES["a_name"] = ringfill([15], [1, 1], [])
 # y5_sss_1 names, forms, items (palettes 35, 46): white letters, blue and dark blue rings
 STYLES["a_y5name"] = ringfill([15], [5, 1], [])
 # m4_stt01 08 colour lines (palette 4): yellow letters, blue rings, right-aligned in 192 columns
-STYLES["a_eqm_u"] = ringfill([14, 14, 13, 12], [1, 2], [])
-STYLES["a_eqm"] = rpad(STYLES["a_eqm_u"], 192)
+STYLES["a_eqm_u"] = ringfill([14, 14, 13, 12], [1], [])
+STYLES["a_name1"] = ringfill([15], [1], [])
+STYLES["a_eqm"] = rpad(STYLES["a_eqm_u"], 200)
 # y5_sss_1 35-38 (palette 41): yellow letters, blue rings
 STYLES["a_eqy"] = ringfill([1, 1, 2, 3], [15, 14, 13], [])

@@ -662,11 +662,11 @@
      "sprite": "08",
      "text": "Bat Color\nGlove Color\nRight Wristband Color\nLeft Wristband Color",
      "style": "a_eqm",
-     "font": "ttf:rounded:13:0.0:0.85:0.5",
+     "font": "ttf:rounded:14:0.0:0.88:0.3",
      "slices": true,
      "slice_width": 128,
      "line_step": 60,
-     "left": 37,
+     "left": 29,
      "dy": 0,
      "pages": [
       5
@@ -684,8 +684,8 @@
       120
      ],
      "text": "Starter",
-     "style": "a_name",
-     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "style": "a_name1",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
      "baseline": 20,
      "centre_x": 26,
      "sprites": [
@@ -701,8 +701,8 @@
       32
      ],
      "text": "Swing Man",
-     "style": "a_name",
-     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "style": "a_name1",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
      "baseline": 20,
      "centre_x": 47,
      "sprites": [
@@ -718,8 +718,8 @@
       120
      ],
      "text": "Middle Reliever",
-     "style": "a_name",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "style": "a_name1",
+     "font": "ttf:rounded:11:0.0:0.88:0.3",
      "baseline": 19,
      "centre_x": 37,
      "sprites": [
@@ -735,9 +735,9 @@
       32
      ],
      "text": "Closer",
-     "style": "a_name",
-     "font": "ttf:rounded:13:0.0:1.0:0.5",
-     "baseline": 21,
+     "style": "a_name1",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 20,
      "centre_x": 25,
      "sprites": [
       "10"
