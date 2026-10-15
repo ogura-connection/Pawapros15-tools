@@ -487,10 +487,10 @@
       56
      ],
      "text": "Import Search Request",
-     "style": "b6_g3_pgy_0_148",
-     "font": "ttf:narrow:11:0.0:0.82:0.3",
-     "baseline": 30,
-     "centre_x": 84
+     "style": "b6_paper_L",
+     "font": "ttf:narrow:12:0.0:0.94:0.3",
+     "baseline": 28,
+     "left": 2
     },
     {
      "from": [
@@ -500,7 +500,11 @@
       64,
       104
      ],
-     "empty": true
+     "text": "Import Search Request",
+     "style": "b6_paper_R",
+     "font": "ttf:narrow:12:0.0:0.94:0.3",
+     "baseline": 28,
+     "left": 0
     },
     {
      "from": [
@@ -511,7 +515,7 @@
       16
      ],
      "text": "Please find an import",
-     "style": "b6_g3_pgy_0_148",
+     "style": "b6_g3_pgy_0_150",
      "font": "ttf:narrow:11:0.0:0.82:0.3",
      "baseline": 14,
      "centre_x": 64
@@ -525,7 +529,7 @@
       32
      ],
      "text": "matching the above.",
-     "style": "b6_g3_pgy_0_148",
+     "style": "b6_g3_pgy_0_150",
      "font": "ttf:narrow:11:0.0:0.82:0.3",
      "baseline": 14,
      "centre_x": 52
@@ -539,7 +543,7 @@
       64
      ],
      "text": "Received",
-     "style": "b6_g3_pgy_0_148",
+     "style": "b6_g3_pgy_0_150",
      "font": "ttf:narrow:11:0.0:0.82:0.3",
      "baseline": 14,
      "centre_x": 20

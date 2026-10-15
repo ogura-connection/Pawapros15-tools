@@ -805,9 +805,8 @@
      ],
      "text": "is being researched...",
      "style": "e6_pd_help",
-     "font": "ttf:narrow:9:0.0:0.85:0.3",
-     "baseline": 16,
-     "left": 4,
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 17,
      "sprites": [
       "41"
      ]

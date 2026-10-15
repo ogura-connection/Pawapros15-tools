@@ -95,7 +95,7 @@ def _strip():
             up = next((y - d for d in range(1, 30) if y - d >= 3 and not mask[y - d, x]), None)
             dn = next((y + d for d in range(1, 30) if y + d < 42 and not mask[y + d, x]), None)
             src = up if (dn is None or (up is not None and (y - up) <= (dn - y))) else dn
-            out[y, x] = S[src, min(max(x + ((y - src) // 3), 3), 172)] if src is not None else S[y, x]
+            out[y, x] = S[src, min(max(x + ((y - src) // 3), 4), 168)] if src is not None else S[y, x]
     _strip_cache.append(out)
     return out.copy()
 
@@ -137,3 +137,5 @@ def _stamp(ink, base):
 
 
 STYLES["a6_pts_stamp"] = _stamp
+
+STYLES["a6_ydm_gold"] = ringfill([11, 10, 9, 5, 4, 3], [2, 13], [15, 15])                # pal 7: gold calligraphy, brown ring, white, lilac shadow
