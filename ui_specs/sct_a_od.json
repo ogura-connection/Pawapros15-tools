@@ -105,29 +105,29 @@
      "sprite": "0b",
      "text": "Starter",
      "style": "e4_od_blue",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
-     "baseline": 17
+     "font": "ttf:rounded:9:0.0:1.0:0.4",
+     "baseline": 16
     },
     {
      "sprite": "0c",
      "text": "On Bench",
      "style": "e4_od_blue",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
-     "baseline": 17
+     "font": "ttf:rounded:9:0.0:1.0:0.4",
+     "baseline": 16
     },
     {
      "sprite": "0d",
      "text": "Off Bench",
      "style": "e4_od_blue",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
-     "baseline": 17
+     "font": "ttf:rounded:9:0.0:1.0:0.4",
+     "baseline": 16
     },
     {
      "sprite": "0e",
-     "text": "Lock",
+     "text": "Order Lock",
      "style": "e4_od_blue",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
-     "baseline": 17
+     "font": "ttf:rounded:9:0.0:1.0:0.4",
+     "baseline": 16
     }
    ],
    "name": "order screen",

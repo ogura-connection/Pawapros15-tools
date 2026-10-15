@@ -86,15 +86,15 @@
      "sprite": "0e",
      "text": "Season",
      "style": "e4_ed_gold",
-     "font": "ttf:rounded:14:0.0:0.85:0.3",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
      "baseline": 28
     },
     {
      "sprite": "0f",
      "text": "Grads",
      "style": "e4_ed_gold",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
-     "baseline": 32
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 28
     },
     {
      "from": [
@@ -104,10 +104,10 @@
       56,
       72
      ],
-     "text": "That's All",
+     "text": "The End",
      "style": "e4_ed_gold",
-     "font": "ttf:narrow:11:0.0:0.85:0.3",
-     "baseline": 26
+     "font": "ttf:narrow:13:0.0:0.85:0.3",
+     "baseline": 27
     },
     {
      "from": [
