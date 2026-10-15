@@ -870,5 +870,35 @@
    ],
    "name": "start practice"
   }
+ ],
+ "paint": [
+  {
+   "bank": "g3_kg",
+   "page": 16,
+   "rect": [
+    0,
+    98,
+    96,
+    128
+   ],
+   "text": "Clear",
+   "font": "ttf:rounded:26:0:1.0:0.3",
+   "copy": "clear",
+   "style": "e4_sg_clear_0"
+  },
+  {
+   "bank": "g3_kg",
+   "page": 17,
+   "rect": [
+    0,
+    96,
+    96,
+    108
+   ],
+   "text": "Clear",
+   "font": "ttf:rounded:26:0:1.0:0.3",
+   "copy": "clear",
+   "style": "e4_sg_clear_1"
+  }
  ]
 }
