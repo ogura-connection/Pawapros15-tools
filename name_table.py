@@ -21,6 +21,7 @@ from the game's own readings (_work/surnames.json: kanji, call id, kana of the c
 by hand where needed.
     python3 name_table.py export      write the TSV (keeps English already there)
     python3 name_table.py check       lengths, short forms, the patch sites of the original modules
+    python3 name_table.py export-given  translation/names/given.tsv (given names, written in place: see below)
 """
 import os, struct, sys
 
@@ -331,6 +332,79 @@ def player_plates(players):
     return [plate(en) for _, _, en in players]
 
 
+# ── Names written in place (given names; later: draft prospects, other copies) ──
+# Each store is a list of fixed records whose name cells are rewritten where they are; nothing moves.
+# translation/names/<store>.tsv: index, English (no Japanese). `python3 name_table.py export-given` writes it.
+#
+# Given names: main_prg.rel sec5+0x3B288, 200 records of 16 bytes: six cells (hiragana, padded with 0),
+# 0xFFFF, 0. A pointer table follows (sec5+0x3BF08). Read by main_prg.rel sec1+0x8F690 (reached from
+# camp.rel, Pawapuro Camp): it shuffles 100 names a side (0-99 boys, 100-199 girls) and copies six cells
+# into each generated team-mate (teams 0x31..0x34).
+GIVEN_TSV = os.path.join(HERE, "translation", "names", "given.tsv")
+GIVEN = ("main_prg.rel", 5, 0x3B288, 200)
+GIVEN_FIXES = {18: "Koichi", 33: "Shoichi",           # romaji keeps "ou" before a vowel
+               25: "Koutaro", 85: "Yuuki", 170: "Miyuu", 179: "Yuuka", 180: "Yuuna"}   # long vowel: kept apart
+
+
+def load_given():
+    out = {}
+    with open(GIVEN_TSV, encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("#") or not line.strip():
+                continue
+            i, en = line.rstrip("\n").split("\t")
+            out[int(i)] = en
+    if sorted(out) != list(range(GIVEN[3])):
+        raise ValueError("%s: needs every index 0..%d" % (GIVEN_TSV, GIVEN[3] - 1))
+    return out
+
+
+def inplace_stores():
+    """{module: [(section, offset, record bytes, names)]}: every store whose names are written in place."""
+    out = {}
+    if os.path.exists(GIVEN_TSV):
+        fn, sec, at, n = GIVEN
+        out.setdefault(fn, []).append((sec, at, 16, load_given()))
+    return out
+
+
+def inplace_patches(rel, stores, encode):
+    """{(section, offset): 12 bytes} for one module. Checks each original record first (cells, 0 pad, end mark)."""
+    out = {}
+    for sec, at, stride, names in stores:
+        d = rel.sec_data(sec)
+        for i, en in names.items():
+            o = at + i * stride
+            cells = struct.unpack_from(">6H", d, o)
+            k = next((j for j, c in enumerate(cells) if c == 0), CELLS)
+            if not k or any(cells[k:]) or struct.unpack_from(">2H", d, o + 2 * CELLS) != (0xFFFF, 0):
+                raise ValueError("%s sec%d+0x%X: not a name record" % (rel.name, sec, o))
+            units = encode(plate(en))
+            if not letters_ok(en) or len(units) > CELLS:
+                raise ValueError("%s: name %r does not fit %d cells" % (rel.name, en, CELLS))
+            out[(sec, o)] = struct.pack(">6H", *(units + [0] * (CELLS - len(units))))
+    return out
+
+
+def inplace_plates(stores):
+    return [plate(en) for lst in stores.values() for _, _, _, names in lst for en in names.values()]
+
+
+def cmd_export_given():
+    sys.path.insert(0, os.path.join(S.WORK_DIR, "names"))
+    from romaji import romaji
+    fn, sec, at, n = GIVEN
+    d = S.Rel(os.path.join(S.WORK_DIR, "orig", fn)).sec_data(sec)
+    have = load_given() if os.path.exists(GIVEN_TSV) else {}
+    with open(GIVEN_TSV, "w", encoding="utf-8") as f:
+        f.write("# index\tEnglish (given names, main_prg.rel: 0-99 boys, 100-199 girls; Pawapuro Camp team-mates;"
+                " up to 12 letters)\n")
+        for i in range(n):
+            kana = S.decode_units([c for c in struct.unpack_from(">6H", d, at + 16 * i) if c])
+            f.write("%d\t%s\n" % (i, have.get(i) or GIVEN_FIXES.get(i) or romaji(kana)))
+    print("%s: %d names" % (GIVEN_TSV, n))
+
+
 # ── Commands ───────────────────────────────────────────────────────────────
 
 def cmd_export():
@@ -364,4 +438,4 @@ def cmd_check():
 
 
 if __name__ == "__main__":
-    {"export": cmd_export, "check": cmd_check}.get((sys.argv + [""])[1], lambda: sys.exit(__doc__))()
+    {"export": cmd_export, "export-given": cmd_export_given, "check": cmd_check}.get((sys.argv + [""])[1], lambda: sys.exit(__doc__))()

@@ -922,8 +922,10 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
     names = name_table.load_tsv() if os.path.exists(name_table.TSV) else None
     players = name_table.load_players() if names and os.path.exists(name_table.PLAYERS_TSV) else []
+    stores = name_table.inplace_stores() if names else {}       # given names ...: written in place
     slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages,
-                         name_table.plates(names) + name_table.short_names(names) + name_table.player_plates(players) if names else ())
+                         name_table.plates(names) + name_table.short_names(names) + name_table.player_plates(players)
+                         + name_table.inplace_plates(stores) if names else ())
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
@@ -1138,6 +1140,21 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                     patched[m.mod_id][(5, o)] = data
                 image = bytes(image)
                 note += ", %d real players in %d places" % (len(players), len(pp))
+        if m.name in stores:                                     # names written in place (given names ...)
+            try:
+                pp = name_table.inplace_patches(m, stores[m.name], lambda t: encode_text(t, slots))
+            except ValueError as e:
+                sys.exit(str(e))
+            if any(any(s == ps and po <= so < po + len(data) for (ps, po), data in pp.items())
+                   for s, so in strings.get(m.name, ())):
+                sys.exit("%s: a UI string is translated inside a name" % m.name)
+            image = bytearray(image)
+            for (ps, po), data in pp.items():
+                pos = m.sections[ps]["offset"] + po
+                image[pos:pos + len(data)] = data
+                patched.setdefault(m.mod_id, {})[(ps, po)] = data
+            image = bytes(image)
+            note += ", %d names in place" % len(pp)
         if names and m.name in name_table.READERS:               # surname readers: the new table, six cells
             try:
                 image, written = name_table.patch_code(m, image, host.mod_id)
