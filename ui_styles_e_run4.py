@@ -80,3 +80,14 @@ STYLES["e4_sg_clear_1"] = vcut(STYLES["e4_sg_head"], 30, 42, 42, 96)
 # ---- sct_card.arc (Eikan Nine command cards) -----------------------------------------------------------------------------
 STYLES["e4_em_item"] = ringfill([15, 15, 15, 15, 12, 11], [6, 1])                      # pal 84: white letters, blue ring
 STYLES["e4_em_item1"] = ringfill([15, 15, 15, 15, 12, 11], [1])                        # the same with a one-pixel ring (two lines in 24 rows)
+
+# the 80x24 command buttons (pal 24) and the small cards / cross icon (pal 114): white letters, dark blue ring, teal glow
+STYLES["e4_em_card"] = ringfill([15, 15, 15, 14, 13, 12], [4, 3], [2])
+# the "(The more ...)" help line (pal 42) and the "Ability Details" help pieces (pal 9): white letters, dark rim, grey shadow
+STYLES["e4_em_help"] = ringfill([14, 14, 14, 13, 12, 11], [1, 1], [4])
+STYLES["e4_em_help2"] = ringfill([14, 14, 14, 13, 12, 11], [1, 1], [3, 4])
+# words cut over side-by-side page rectangles (window_n): the styles "<style>~c0_c1"
+for _n, _cuts in (("e4_em_card", [(0, 32), (32, 4096)]), ("e4_em_help", [(0, 128), (128, 256), (256, 4096)]),
+                  ("e4_em_help2", [(0, 32), (32, 4096)])):
+    for _c0, _c1 in _cuts:
+        STYLES["%s~%d_%d" % (_n, _c0, _c1)] = win(STYLES[_n], _c0, _c1)
