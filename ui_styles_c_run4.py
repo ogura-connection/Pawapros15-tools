@@ -96,3 +96,8 @@ def _rsz_style(spr, screen, cx, cy):
 for _s, ((_cx, _cy), _parts) in RSZ.items():
     for _k, (_pg, _rect, _scr) in enumerate(_parts):
         STYLES["c4_rsz_%s_%d" % (_s, _k)] = _rsz_style(_s, _scr, _cx, _cy)
+
+# ---- school.arc g3_ykm (Baseball School lessons) ---------------------------------------------------------------------------
+STYLES["c4_ykm_title"] = ringfill([15, 15, 15, 15, 14, 14], [11, 11, 6], [5, 4, 3])        # pal 16 / 24: white letters, navy ring, blue (or purple) shadow
+STYLES["c4_ykm_go"] = ringfill([12, 13, 14, 15, 15, 15], [9, 9, 6], [4, 3])               # pal 57 / 58: olive-gold (or green) letters, white ring, blue glow
+STYLES["c4_ykm_row"] = ringfill([14, 15, 15, 15, 15, 15], [10, 10, 12], [8])             # pal 34-37: dark letters on the coloured rows, white ring
