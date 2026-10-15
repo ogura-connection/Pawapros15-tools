@@ -158,3 +158,6 @@ STYLES["a_ban_y5"] = ringfill([12, 12, 11, 13, 14, 15], [7, 7, 4, 3], [2])
 STYLES["a_ban_m"] = ringfill([146, 139, 125, 115, 84, 72, 52], [255, 255, 109, 7], [106, 104])
 windows("a_help_m2")
 windows("a_help_y2")
+
+# m4_stt00 drop-down lists 3a / 3e (palette 2): small navy letters on the pale plate
+STYLES["a_drop"] = crisp(1, None, 3)

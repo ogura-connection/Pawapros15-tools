@@ -1209,8 +1209,8 @@
       104
      ],
      "text": "Japan",
-     "style": "a_name1",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "style": "a_drop",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
      "baseline": 18,
      "centre_x": 30,
      "sprites": [
@@ -1226,8 +1226,8 @@
       104
      ],
      "text": "Overseas",
-     "style": "a_name1",
-     "font": "ttf:rounded:13:0.0:0.88:0.3",
+     "style": "a_drop",
+     "font": "ttf:rounded:13:0.0:0.94:0.4",
      "baseline": 18,
      "centre_x": 31,
      "sprites": [
@@ -1243,9 +1243,9 @@
       32
      ],
      "text": "High School",
-     "style": "a_name1",
-     "font": "ttf:rounded:10:0.0:0.88:0.3",
-     "baseline": 18,
+     "style": "a_drop",
+     "font": "ttf:rounded:11:0.0:0.88:0.4",
+     "baseline": 19,
      "centre_x": 33,
      "sprites": [
       "3e"
@@ -1273,8 +1273,8 @@
       128
      ],
      "text": "College",
-     "style": "a_name1",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "style": "a_drop",
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
      "baseline": 19,
      "centre_x": 33,
      "sprites": [
@@ -1303,8 +1303,8 @@
       128
      ],
      "text": "Industrial",
-     "style": "a_name1",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "style": "a_drop",
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
      "baseline": 19,
      "centre_x": 33,
      "sprites": [

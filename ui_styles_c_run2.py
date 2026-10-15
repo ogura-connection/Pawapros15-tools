@@ -202,7 +202,7 @@ STYLES["c2_win_gold"] = ringfill(_GOLD, [1, 1, 1], [1, 1])
 # 敗北 (palette 4), 引き分け (5): the same from white to lilac
 STYLES["c2_win_lilac"] = ringfill([15, 14, 14, 13, 12, 11, 10, 9, 8, 7, 6, 6], [1, 1, 1], [1, 1])
 # the match types and the side words (palette 0): white letters, black outline and shadow
-STYLES["c2_win_h"] = ringfill([15, 15, 15, 15, 14, 14, 13, 12], [7, 7, 7], [7, 5])
+STYLES["c2_win_h"] = ringfill([15, 15, 15, 15, 14, 14, 13, 12], [7, 7], [7, 5])
 # the team names (palette 0, 32 rows): the same, thinner
 STYLES["c2_win_n"] = ringfill([15, 15, 15, 15, 14, 14, 13, 12], [7, 7], [7])
 
