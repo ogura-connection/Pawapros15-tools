@@ -33,11 +33,11 @@ def _symbol(ch, cap, bold):
     dr = ImageDraw.Draw(big)
     c = size * k / 2
     r = cap * k / 2
-    w = max(1.0, (0.16 + 0.35 * bold) * cap) * k
+    w = max(1.2, 0.13 * cap) * k
     if ch == "◎":
         dr.ellipse((c - r, c - r, c + r, c + r), fill=255)
         dr.ellipse((c - r + w, c - r + w, c + r - w, c + r - w), fill=0)
-        q = r * 0.42
+        q = r * 0.34
         dr.ellipse((c - q, c - q, c + q, c + q), fill=255)
     else:                                           # ×
         r *= 0.8

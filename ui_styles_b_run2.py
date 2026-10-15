@@ -7,6 +7,8 @@ from ui_type import grow, shift
 from ui_styles_ore_ini import ringfill
 
 STYLES = {}
+ui_type.TTF.setdefault("b_times", ("/System/Library/Fonts/Supplemental/Times New Roman.ttf", 0))             # Grade 3: thin serif letters
+ui_type.TTF.setdefault("b_georgia", ("/System/Library/Fonts/Supplemental/Georgia Bold.ttf", 0))             # Grades 2 and 1: heavy serif letters
 ui_type.TTF.setdefault("avm", ("/System/Library/Fonts/Avenir Next Condensed.ttc", 5))      # Avenir Next Condensed Medium: small lettering
 
 
@@ -96,9 +98,9 @@ STYLES["b_sib_pay_measure"] = ringfill([2], [])
 # stat labels (palette 16): white letters, a dark blue ring, a white outer ring
 STYLES["b_sjk_stat"] = ringfill([0xf], [5, 5, 0xf, 0xe])
 # banners: a gradient from near white to a saturated colour, a thick dark ring, a white outer ring
-STYLES["b_sjk_pink"] = ringfill([0xe, 0xd, 0xc, 0xb, 0xa, 0x9], [3, 3, 3, 0xf, 0xf])      # palette 20: Shift Over
-STYLES["b_sjk_green"] = ringfill([0xe, 0xd, 0xc, 0xb, 0xa, 0x9], [3, 3, 3, 0xf, 0xf])     # palette 21: On the Job
-STYLES["b_sjk_blue"] = ringfill([0xe, 0xd, 0xc, 0xb, 0xa, 0x9], [1, 1, 1, 0xf, 0xf])      # palette 22: Job Complete
+STYLES["b_sjk_pink"] = ringfill([0xe, 0xd, 0xc, 0xb, 0xa, 0x9], [3, 3, 0xf, 0xf])      # palette 20: Shift Over
+STYLES["b_sjk_green"] = ringfill([0xe, 0xd, 0xc, 0xb, 0xa, 0x9], [3, 3, 0xf, 0xf])     # palette 21: On the Job
+STYLES["b_sjk_blue"] = ringfill([0xe, 0xd, 0xc, 0xb, 0xa, 0x9], [1, 1, 0xf, 0xf])      # palette 22: Job Complete
 
 # ---- y5_siba_2: company ranks (scenario 2) -------------------------------------------------------------------------------
 # the small "Rank" heading above each plate: dark letters, a white ring, a grey soft shadow (palettes 22 / 23 / 24)

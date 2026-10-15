@@ -712,6 +712,82 @@
     }
    ],
    "name": "stat"
+  },
+  {
+   "bank": "y5_sjk_0",
+   "palette": 21,
+   "style": "b_sjk_green",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "06",
+     "text": "On the Job",
+     "style": "b_sjk_green",
+     "font": "ttf:rounded:18:0.2:1.0:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      21
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Shift Over",
+     "style": "b_sjk_pink",
+     "font": "ttf:rounded:18:0.2:1.0:0.5",
+     "baseline": 12,
+     "palettes": [
+      20
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Job Complete",
+     "style": "b_sjk_blue",
+     "font": "ttf:rounded:18:0.2:1.0:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "palettes": [
+      22
+     ]
+    }
+   ],
+   "name": "banner",
+   "blank": [
+    [
+     1,
+     80,
+     0,
+     104,
+     40
+    ],
+    [
+     1,
+     0,
+     40,
+     24,
+     80
+    ],
+    [
+     1,
+     104,
+     0,
+     128,
+     40
+    ]
+   ]
   }
  ]
 }

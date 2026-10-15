@@ -758,6 +758,2013 @@
     }
    ],
    "name": "m4_stt01"
+  },
+  {
+   "bank": "m4_stt00",
+   "palette": 0,
+   "style": "a_btn17",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     104,
+     64
+    ],
+    [
+     2,
+     104,
+     0,
+     120,
+     48
+    ],
+    [
+     2,
+     56,
+     88,
+     64,
+     128
+    ],
+    [
+     2,
+     24,
+     120,
+     56,
+     128
+    ],
+    [
+     2,
+     120,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     120,
+     56,
+     128,
+     64
+    ],
+    [
+     2,
+     24,
+     112,
+     32,
+     120
+    ],
+    [
+     5,
+     112,
+     0,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     72,
+     128,
+     128
+    ],
+    [
+     16,
+     96,
+     0,
+     128,
+     72
+    ],
+    [
+     17,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Edit Profile",
+     "style": "a_btn17",
+     "font": "ttf:rounded:14:0.0:0.94:0.35",
+     "baseline": 29,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      17
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Change Uniform",
+     "style": "a_btn18",
+     "font": "ttf:rounded:9:0.0:0.94:0.35",
+     "baseline": 27,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      18
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Equipment & Data",
+     "style": "a_btn19",
+     "font": "ttf:rounded:8:0.0:0.94:0.35",
+     "baseline": 26,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      19
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Equipment Colors",
+     "style": "a_btn20",
+     "font": "ttf:rounded:9:0.0:0.88:0.35",
+     "baseline": 27,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      20
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Use Items",
+     "style": "a_btn21",
+     "font": "ttf:rounded:14:0.0:1.0:0.35",
+     "baseline": 30,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      21
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Raise Abilities",
+     "style": "a_btn22",
+     "font": "ttf:rounded:11:0.0:0.88:0.35",
+     "baseline": 28,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Change Form",
+     "style": "a_btn24",
+     "font": "ttf:rounded:12:0.0:0.88:0.35",
+     "baseline": 28,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Change Name",
+     "style": "a_btn23",
+     "font": "ttf:rounded:11:0.0:0.88:0.35",
+     "baseline": 28,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      23
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Pitcher Role",
+     "style": "a_btn25",
+     "font": "ttf:rounded:13:0.0:0.88:0.35",
+     "baseline": 29,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      25
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Japan",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 18,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "Overseas",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:0.94:0.2",
+     "baseline": 18,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "High School",
+     "style": "a_thin5",
+     "font": "ttf:rounded:12:0.0:0.88:0.2",
+     "baseline": 18,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "College",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 19,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Industrial",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:0.94:0.2",
+     "baseline": 18,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Rookie",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 16,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Young",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 15,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Mid-Career",
+     "style": "a_thin5",
+     "font": "ttf:rounded:13:0.0:0.88:0.2",
+     "baseline": 14,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Veteran",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 16,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Super Veteran",
+     "style": "a_thin5",
+     "font": "ttf:rounded:10:0.0:0.88:0.2",
+     "baseline": 13,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Starter",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 15,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Swing Man",
+     "style": "a_thin5",
+     "font": "ttf:rounded:13:0.0:0.88:0.2",
+     "baseline": 14,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Middle Reliever",
+     "style": "a_thin5",
+     "font": "ttf:rounded:9:0.0:0.88:0.2",
+     "baseline": 12,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Closer",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 15,
+     "pages": [
+      1,
+      2,
+      5
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "from": [
+      16,
+      0,
+      72,
+      64,
+      104
+     ],
+     "text": "Japan",
+     "style": "a_name1",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 30,
+     "sprites": [
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      16,
+      64,
+      72,
+      128,
+      104
+     ],
+     "text": "Overseas",
+     "style": "a_name1",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 31,
+     "sprites": [
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      16,
+      96,
+      0,
+      128,
+      32
+     ],
+     "text": "High School",
+     "style": "a_name1",
+     "font": "ttf:rounded:12:0.0:0.88:0.3",
+     "baseline": 19,
+     "centre_x": 33,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "from": [
+      16,
+      96,
+      32,
+      128,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "from": [
+      16,
+      0,
+      104,
+      64,
+      128
+     ],
+     "text": "College",
+     "style": "a_name1",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 33,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "from": [
+      16,
+      64,
+      104,
+      128,
+      112
+     ],
+     "empty": true,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "from": [
+      16,
+      64,
+      112,
+      128,
+      128
+     ],
+     "text": "Industrial",
+     "style": "a_name1",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "centre_x": 33,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "from": [
+      17,
+      0,
+      0,
+      64,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      0,
+      48,
+      24
+     ],
+     "text": "/",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 18,
+     "centre_x": 7
+    },
+    {
+     "from": [
+      2,
+      48,
+      0,
+      64,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      64,
+      0,
+      80,
+      24
+     ],
+     "text": "yrs",
+     "style": "a_thin5",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 18,
+     "centre_x": 8
+    }
+   ],
+   "name": "m4_stt00"
+  },
+  {
+   "bank": "y5_sss_0",
+   "palette": 0,
+   "style": "a_y5title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     104,
+     128
+    ],
+    [
+     1,
+     120,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     104,
+     120,
+     120,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     80,
+     96
+    ],
+    [
+     2,
+     80,
+     24,
+     128,
+     72
+    ],
+    [
+     2,
+     88,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     80,
+     0,
+     104,
+     24
+    ],
+    [
+     2,
+     64,
+     112,
+     88,
+     128
+    ],
+    [
+     2,
+     120,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     120,
+     72,
+     128,
+     96
+    ],
+    [
+     3,
+     0,
+     80,
+     96,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     112,
+     40
+    ],
+    [
+     3,
+     112,
+     48,
+     128,
+     96
+    ],
+    [
+     3,
+     96,
+     80,
+     112,
+     96
+    ],
+    [
+     4,
+     0,
+     0,
+     112,
+     120
+    ],
+    [
+     4,
+     112,
+     96,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     72,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     104,
+     8,
+     128
+    ],
+    [
+     8,
+     120,
+     104,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Player Setup",
+     "style": "a_y5title",
+     "font": "ttf:rounded:14:0.0:0.88:0.6",
+     "baseline": 8,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Edit Profile",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Change Uniform",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:10:0.0:0.88:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Equipment & Data",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:9:0.0:0.88:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Equipment Colors",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:9:0.0:0.88:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Use Items",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Raise Abilities",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:11:0.0:0.88:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Change Name",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:11:0.0:0.94:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Change Form",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Pitcher Role",
+     "style": "a_y5btn",
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 22,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Origin",
+     "style": "a_tab19",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": -3,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      19
+     ],
+     "left": 9
+    },
+    {
+     "sprite": "14",
+     "text": "Birthday",
+     "style": "a_tab19",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": -4,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      19
+     ],
+     "left": 9
+    },
+    {
+     "sprite": "15",
+     "text": "Career",
+     "style": "a_tab19",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": -2,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      19
+     ],
+     "left": 9
+    },
+    {
+     "sprite": "16",
+     "text": "Pro Years",
+     "style": "a_tab19",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": -3,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      19
+     ],
+     "left": 10
+    },
+    {
+     "sprite": "17",
+     "text": "Number",
+     "style": "a_tab19",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": -3,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      19
+     ],
+     "left": 9
+    },
+    {
+     "sprite": "18",
+     "text": "Pitcher Role",
+     "style": "a_tab19",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": -2,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      19
+     ],
+     "left": 9
+    },
+    {
+     "sprite": "1b",
+     "text": "Japan",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Overseas",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "30",
+     "text": "High School",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:0.94:0.2",
+     "baseline": 17,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "College",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "Industrial",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "39",
+     "text": "Young",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 14,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "3a",
+     "text": "Mid-Career",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 13,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "3b",
+     "text": "Veteran",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 14,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "3c",
+     "text": "Super Veteran",
+     "style": "a_thin32",
+     "font": "ttf:rounded:10:0.0:0.88:0.2",
+     "baseline": 13,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "42",
+     "text": "Starter",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "43",
+     "text": "Swing Man",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "44",
+     "text": "Middle Reliever",
+     "style": "a_thin32",
+     "font": "ttf:rounded:9:0.0:0.88:0.2",
+     "baseline": 16,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "45",
+     "text": "Closer",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "47",
+     "text": "Rookie",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 14,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "/",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "38",
+     "text": "yrs",
+     "style": "a_thin32",
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 17,
+     "pages": [
+      4
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "from": [
+      4,
+      96,
+      0,
+      112,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "1e"
+     ]
+    }
+   ],
+   "name": "y5_sss_0"
+  },
+  {
+   "bank": "y5_sss_1",
+   "palette": 0,
+   "style": "a_y5name",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     96,
+     128
+    ],
+    [
+     6,
+     96,
+     64,
+     128,
+     128
+    ],
+    [
+     6,
+     120,
+     0,
+     128,
+     64
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     48,
+     104,
+     72
+    ],
+    [
+     9,
+     0,
+     120,
+     56,
+     128
+    ],
+    [
+     9,
+     112,
+     72,
+     128,
+     88
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Japan",
+     "style": "a_y5name",
+     "font": "ttf:rounded:14:0.0:1.0:0.45",
+     "baseline": 19,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Overseas",
+     "style": "a_y5name",
+     "font": "ttf:rounded:14:0.0:1.0:0.45",
+     "baseline": 19,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "High School",
+     "style": "a_y5name",
+     "font": "ttf:rounded:13:0.0:0.88:0.45",
+     "baseline": 18,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "College",
+     "style": "a_y5name",
+     "font": "ttf:rounded:14:0.0:1.0:0.45",
+     "baseline": 19,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Industrial",
+     "style": "a_y5name",
+     "font": "ttf:rounded:14:0.0:1.0:0.45",
+     "baseline": 19,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Starter",
+     "style": "a_y5name",
+     "font": "ttf:rounded:14:0.0:1.0:0.45",
+     "baseline": 19,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "Swing Man",
+     "style": "a_y5name",
+     "font": "ttf:rounded:14:0.0:0.88:0.45",
+     "baseline": 19,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "0c",
+     "text": "Middle Reliever",
+     "style": "a_y5name",
+     "font": "ttf:rounded:10:0.0:0.88:0.45",
+     "baseline": 17,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "0d",
+     "text": "Closer",
+     "style": "a_y5name",
+     "font": "ttf:rounded:14:0.0:1.0:0.45",
+     "baseline": 19,
+     "pages": [
+      3,
+      9
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Giants",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 25,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Dragons",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Carp",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Swallows",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "BayStars",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 25,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "Tigers",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 25,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "Eagles",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Fighters",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 25,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Lions",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 25,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Buffaloes",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 25,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Marines",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Hawks",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Powerfuls",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Kaisers",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Cathands",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Yankiis",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Vulcans",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Busters",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 24,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "Original",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 25,
+     "pages": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "41",
+     "text": "Standard",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "42",
+     "text": "Open",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "43",
+     "text": "Kannushi",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "44",
+     "text": "Crouching",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "45",
+     "text": "Pendulum",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "46",
+     "text": "Buster",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "47",
+     "text": "1-Leg",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "48",
+     "text": "Original",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 26,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "4c",
+     "text": "Overhand",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 20,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "4d",
+     "text": "3-Quarters",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 20,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "4e",
+     "text": "Sidearm",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 20,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "4f",
+     "text": "Submarine",
+     "style": "a_y5name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 20,
+     "pages": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "35",
+     "text": "Bat Color",
+     "style": "a_eqy",
+     "font": "ttf:rounded:16:0.0:1.0:0.35",
+     "baseline": 32,
+     "pages": [
+      3,
+      4
+     ],
+     "palettes": [
+      41
+     ],
+     "right": true
+    },
+    {
+     "sprite": "36",
+     "text": "Glove Color",
+     "style": "a_eqy",
+     "font": "ttf:rounded:16:0.0:1.0:0.35",
+     "baseline": 31,
+     "pages": [
+      3,
+      4
+     ],
+     "palettes": [
+      41
+     ],
+     "right": true
+    },
+    {
+     "sprite": "37",
+     "text": "Right Wristband Color",
+     "style": "a_eqy",
+     "font": "ttf:rounded:14:0.0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "pages": [
+      3,
+      4
+     ],
+     "palettes": [
+      41
+     ],
+     "right": true
+    },
+    {
+     "sprite": "38",
+     "text": "Left Wristband Color",
+     "style": "a_eqy",
+     "font": "ttf:rounded:15:0.0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "pages": [
+      3,
+      4
+     ],
+     "palettes": [
+      41
+     ],
+     "right": true
+    }
+   ],
+   "name": "y5_sss_1"
   }
  ]
 }

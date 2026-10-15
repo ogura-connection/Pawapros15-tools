@@ -86,7 +86,12 @@ def emblem(fill, rings, shadow=(), plate=None, dy=0):
     tile or ring of the original emblem: its edge `depth` pixels deep is copied (index in `drop` = old letter, replaced by `inner`),
     the inside is flat `inner`."""
     inner_style = ringfill(fill, rings, shadow)
+    cut = _emblem_cut(inner_style, plate, dy)
+    cut.raw = inner_style                           # the bare word (to measure it)
+    return cut
 
+
+def _emblem_cut(inner_style, plate, dy):
     def cut(ink, base):
         art, _ = inner_style(ink, base)
         out = np.zeros((32, 32), np.uint8)
@@ -107,16 +112,21 @@ def emblem(fill, rings, shadow=(), plate=None, dy=0):
 
 
 # 選 (palette 23): red tile, white capitals in dark red
-STYLES["c2_emb_03"] = emblem([15, 15, 14, 14, 13, 13, 13, 13], [4], [], (1, (64, 0, 96, 32), 3, 6, (9, 10, 11, 12, 13, 14, 15)), dy=-1)
+STYLES["c2_emb_03"] = emblem([15, 15, 15, 14, 14, 14, 14, 14], [4], [], (1, (64, 0, 96, 32), 3, 6, (9, 10, 11, 12, 13, 14, 15)), dy=-1)
 # 極 (palette 43): pale lilac capitals, purple outline, blue shadow
 STYLES["c2_emb_05"] = emblem([7, 6, 6, 5, 5, 4, 4, 3], [1, 1], [13, 15])
 # て (palette 45): blue capitals, pale cyan outline, blue shadow
-STYLES["c2_emb_06"] = emblem([14, 14, 14, 14, 14, 14, 14, 14], [10, 12], [5])
+STYLES["c2_emb_06"] = emblem([14, 14, 14, 14, 14, 14, 14, 14], [10], [5])
 # 浪 (palette 36): white capitals, dark purple outline, lilac shadow
 STYLES["c2_emb_08"] = emblem([1, 1, 2, 2, 3, 3, 3, 3], [7, 7], [10])
 # ぴ (palette 37): white capitals, royal blue outline, sky blue ring
 STYLES["c2_emb_09"] = emblem([15, 15, 14, 14, 13, 13, 12, 12], [2, 2], [9])
 # 覇 (palette 47): dark capitals on the pale grey disc of a red ring
-STYLES["c2_emb_0b"] = emblem([2, 2, 3, 3, 3, 3, 3, 3], [], [], (1, (32, 0, 64, 32), 4, 12, (2, 3, 4, 5, 6, 14, 13)), dy=0)
+STYLES["c2_emb_0b"] = emblem([2, 2, 2, 2, 3, 3, 3, 3], [12], [], (1, (32, 0, 64, 32), 4, 12, (2, 3, 4, 5, 6, 14, 13)), dy=0)
 # ど (palette 44): black capitals, pale blue outline
 STYLES["c2_emb_0d"] = emblem([2, 2, 3, 3, 2, 2, 1, 1], [10, 9], [7])
+
+
+for _k in list(STYLES):
+    if _k.startswith("c2_emb_"):
+        STYLES["c2_embm" + _k[6:]] = STYLES[_k].raw

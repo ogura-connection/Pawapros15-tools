@@ -300,5 +300,70 @@
     1
    ]
   }
+ ],
+ "sheet": [
+  {
+   "pages": "tex_i5_p1p",
+   "cols": 5,
+   "items": [
+    {
+     "box": [
+      244,
+      172,
+      373,
+      193
+     ],
+     "bg": "cols",
+     "text": "Pawafuru Corp.",
+     "font": "ttf:rounded:12:0:0.97:0.4",
+     "colour": "#1f2638",
+     "crisp": true,
+     "centre": [
+      309,
+      182
+     ]
+    }
+   ]
+  },
+  {
+   "pages": "tex_i5_p1c",
+   "cols": 5,
+   "items": [
+    {
+     "box": [
+      212,
+      310,
+      308,
+      333
+     ],
+     "bg": "cols",
+     "text": "Otori Phoenix",
+     "font": "ttf:narrow:11:0:0.9:0.4",
+     "colour": "#1f2638",
+     "crisp": true,
+     "centre": [
+      260,
+      321
+     ]
+    },
+    {
+     "box": [
+      333,
+      310,
+      424,
+      332
+     ],
+     "bg": "cols",
+     "text": "Now Recruiting!",
+     "font": "ttf:narrow:11:0:0.9:0.4",
+     "colour": "#1f2638",
+     "crisp": true,
+     "centre": [
+      378,
+      321
+     ]
+    }
+   ]
+  }
  ]
 }

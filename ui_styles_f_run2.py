@@ -40,3 +40,10 @@ def stacked(inner, overlap=2):
 
 # h3_st_0 popups (palettes 53 pink / 54 blue, the same indices): lilac to white letters, deep blue outline, blue edge
 STYLES["f_st_flash"] = stacked(ringfill([0xb, 0x9, 0x9, 0x8, 0x7, 0x7], [1, 1, 3]))
+
+# h3_kyos_0_opd HUD labels (palette 10): pale to deep yellow letters, navy outline, blue shadow running to violet
+STYLES["f_ky_yel"] = ringfill([0xf, 0xe, 0xa, 0xd, 0xd, 0xc], [3, 3], [5, 5, 6, 7])
+# swing tags (palettes 16-19, white letters on the orange / yellow / green / purple plates): navy outline, blue rim
+STYLES["f_ky_btn"] = ringfill([0xf, 0xf, 0xe, 0xd, 0xd], [5, 4])
+# 点 next to the digits (palette 6): lilac-white letters, light edge, navy outline, blue shadow
+STYLES["f_ky_pts"] = ringfill([0xe, 0xe, 0xd, 0xd, 0xc, 0xb], [0xa, 4], [2, 2])

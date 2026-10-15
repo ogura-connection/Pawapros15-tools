@@ -1,0 +1,109 @@
+{
+ "arc": "scs_sce2.arc",
+ "repack": [
+  {
+   "bank": "y5_siba_2",
+   "palette": 19,
+   "style": "b_ran_3",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     2,
+     0,
+     56,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Rank",
+     "style": "b_ran_head1",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": -18,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      22
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Rank",
+     "style": "b_ran_head2",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": -18,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      23
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Rank",
+     "style": "b_ran_head3",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": -18,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "01",
+     "text": "Grade 3\nEmployee",
+     "style": "b_ran_3",
+     "font": "ttf:b_times:15:0.0:1.0:0.0",
+     "baseline": 16,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      19
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Grade 2\nEmployee",
+     "style": "b_ran_2",
+     "font": "ttf:b_georgia:15:0.0:1.0:0.0",
+     "baseline": 16,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      20
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Grade 1\nEmployee",
+     "style": "b_ran_1",
+     "font": "ttf:b_georgia:15:0.0:1.0:0.0",
+     "baseline": 16,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      21
+     ]
+    }
+   ],
+   "name": "rank"
+  }
+ ]
+}

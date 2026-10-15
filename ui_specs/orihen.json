@@ -1,0 +1,208 @@
+{
+ "arc": "orihen.arc",
+ "repack": [
+  {
+   "bank": "m3_sbn00",
+   "palette": 4,
+   "style": "d2_ori_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     3,
+     0,
+     80,
+     8,
+     120
+    ],
+    [
+     2,
+     0,
+     88,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Name your Original Ball.",
+     "style": "d2_ori_head",
+     "font": "d:rounded:22:1.0:0.4:0",
+     "palettes": [
+      4
+     ],
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    }
+   ],
+   "name": "head"
+  },
+  {
+   "bank": "m3_sbn00",
+   "palette": 5,
+   "style": "d2_ori_hint",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     8,
+     80,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     11,
+     0,
+     80,
+     40,
+     104
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "\u25ce: OK  \u00d7: Cancel  L/R: Move cursor",
+     "style": "d2_ori_hint",
+     "font": "d:rounded:13:1.0:0.3:0",
+     "slices": true,
+     "slice_width": 120,
+     "dy": -2
+    },
+    {
+     "sprite": "02",
+     "text": ": OK,             : Cancel,",
+     "style": "d2_ori_hint",
+     "font": "d:rounded:13:1.0:0.3:0",
+     "slices": true,
+     "slice_width": 120,
+     "dy": 0,
+     "left": 163
+    }
+   ],
+   "name": "hint"
+  },
+  {
+   "bank": "m3_sbn00",
+   "palette": 10,
+   "style": "d2_ori_ask",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      10,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Is this",
+     "style": "d2_ori_ask",
+     "font": "d:rounded:21:1.0:0.3:0",
+     "baseline": 27,
+     "left": 53
+    },
+    {
+     "from": [
+      11,
+      0,
+      40,
+      72,
+      80
+     ],
+     "text": "OK?",
+     "style": "d2_ori_ask",
+     "font": "d:rounded:21:1.0:0.3:0",
+     "baseline": -61,
+     "left": -39
+    },
+    {
+     "from": [
+      11,
+      24,
+      0,
+      128,
+      40
+     ],
+     "text": "Yes,",
+     "style": "d2_ori_ask",
+     "font": "d:rounded:19:1.0:0.3:0",
+     "baseline": -12,
+     "left": 1
+    },
+    {
+     "from": [
+      10,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "that's it!",
+     "style": "d2_ori_ask",
+     "font": "d:rounded:19:1.0:0.3:0",
+     "baseline": 76,
+     "left": 1
+    },
+    {
+     "from": [
+      10,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "No, fix it!",
+     "style": "d2_ori_ask",
+     "font": "d:rounded:19:1.0:0.3:0",
+     "baseline": 64,
+     "left": 1
+    },
+    {
+     "from": [
+      11,
+      0,
+      0,
+      24,
+      40
+     ],
+     "empty": true
+    }
+   ],
+   "name": "ask"
+  }
+ ]
+}
