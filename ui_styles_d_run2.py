@@ -163,6 +163,19 @@ STYLES["d2_ls_t14"] = ringfill([15], [4, 4, 3], [])                             
 STYLES["d2_ls_t15"] = ringfill([15], [4, 4, 3], [])
 STYLES["d2_ls_t16"] = ringfill([15], [4, 4, 3], [])
 
+# scs_grad m3_stu
+STYLES["d2_st_tag"] = ringfill([4, 3, 3], [15, 15], [9])                                      # palette 11: practice names, blue letters, white edge, grey-blue shadow
+STYLES["d2_st_res"] = ringfill([5, 4, 3, 2], [15, 15], [10])                                   # palette 23: results, seasons: dark violet letters, white edge
+STYLES["d2_st_ok"] = ringfill([7, 5, 4, 3, 2], [15, 15, 9], [1])                               # palette 19: Success! pink to red
+STYLES["d2_st_ng"] = ringfill([7, 6, 5, 4, 3], [15, 15, 13], [1])                              # palette 20: Failure... blue
+STYLES["d2_st_half"] = ringfill([7, 6, 5, 4, 3], [15, 15, 11], [1])                            # palette 21: Half and Half? violet
+STYLES["d2_st_none"] = ringfill([8, 5, 3, 2], [15, 15, 11], [7])                               # palette 22: No Surgery, black to grey
+STYLES["d2_st_r1"] = ringfill([14, 13, 12, 11, 9], [1, 15, 15], [8])                           # palette 6: 1st, pink gradient, navy outline, white band
+STYLES["d2_st_r2"] = ringfill([14, 13, 10, 9, 7], [1, 15, 15], [8])                            # palette 7: 2nd / 3rd orange
+STYLES["d2_st_r4"] = ringfill([14, 13, 11, 10, 8], [1, 15, 15], [4])                           # palette 8: 4th / 5th green
+STYLES["d2_st_r6"] = ringfill([13, 12, 11, 10, 8], [1, 15, 15], [9])                           # palette 9: 6th cyan
+STYLES["d2_st_r7"] = ringfill([13, 12, 11, 10, 9, 8], [1, 15, 15], [7])                        # palette 10: 7th lavender
+
 # ==== registry (keep last): the cut styles are made on demand; ui_type's loader updates RENDER only after this file is imported, so STYLES is merged here
 
 # ---- "cut" styles: a label drawn on a canvas the size of the Japanese art, and one piece of it --------------------------------

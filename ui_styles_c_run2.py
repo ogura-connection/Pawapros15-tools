@@ -150,3 +150,8 @@ STYLES["c2_emb_0d"] = emblem([2, 2, 3, 3, 2, 2, 1, 1], [10, 9], [7])
 for _k in list(STYLES):
     if _k.startswith("c2_emb_"):
         STYLES["c2_embm" + _k[6:]] = STYLES[_k].raw
+
+
+# ---- scs_vs z5_svx_0 (256 colours): the tournament titles. Orange to yellow letters, dark red outline, white band, blue ring ----------
+from ui_type import called
+STYLES["c2_svx"] = called([78, 74, 66, 53, 43, 36], [78, 78], 125, 199, 154, [182], 2, 3, 3, (1, 1))

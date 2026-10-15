@@ -181,7 +181,7 @@
      ],
      "text": "Player",
      "style": "cut:d2_ls_head:48:24:c:1:0:0:48:16",
-     "font": "d:rounded:13:0.78:0.4:0",
+     "font": "d:narrow:13:0.92:0.4:0",
      "baseline": 16,
      "left": 0
     },
@@ -195,7 +195,7 @@
      ],
      "text": "Player",
      "style": "cut:d2_ls_head:48:24:c:1:0:16:16:8",
-     "font": "d:rounded:13:0.78:0.4:0",
+     "font": "d:narrow:13:0.92:0.4:0",
      "baseline": 8,
      "left": 0
     },
@@ -209,7 +209,7 @@
      ],
      "text": "Player",
      "style": "cut:d2_ls_head:48:24:c:1:16:16:16:8",
-     "font": "d:rounded:13:0.78:0.4:0",
+     "font": "d:narrow:13:0.92:0.4:0",
      "baseline": 8,
      "left": 0
     },
@@ -223,7 +223,7 @@
      ],
      "text": "Player",
      "style": "cut:d2_ls_head:48:24:c:1:32:16:16:8",
-     "font": "d:rounded:13:0.78:0.4:0",
+     "font": "d:narrow:13:0.92:0.4:0",
      "baseline": 8,
      "left": 0
     },
@@ -237,7 +237,7 @@
      ],
      "text": "Surgery",
      "style": "cut:d2_ls_head:64:24:c:0:0:0:64:24",
-     "font": "d:rounded:14:0.78:0.4:0",
+     "font": "d:narrow:13:1.0:0.4:0",
      "baseline": 24,
      "left": 0
     },
@@ -251,7 +251,7 @@
      ],
      "text": "Girl",
      "style": "cut:d2_ls_head:40:24:c:3:0:0:32:24",
-     "font": "d:rounded:14:1.0:0.4:0",
+     "font": "d:narrow:13:1.0:0.4:0",
      "baseline": 24,
      "left": 0
     },
@@ -265,7 +265,7 @@
      ],
      "text": "Girl",
      "style": "cut:d2_ls_head:40:24:c:3:32:0:8:16",
-     "font": "d:rounded:14:1.0:0.4:0",
+     "font": "d:narrow:13:1.0:0.4:0",
      "baseline": 16,
      "left": 0
     },
@@ -279,7 +279,7 @@
      ],
      "text": "Girl",
      "style": "cut:d2_ls_head:40:24:c:3:32:16:8:8",
-     "font": "d:rounded:14:1.0:0.4:0",
+     "font": "d:narrow:13:1.0:0.4:0",
      "baseline": 8,
      "left": 0
     },
@@ -293,7 +293,7 @@
      ],
      "text": "Best Finish",
      "style": "cut:d2_ls_head:96:24:c:3:0:0:96:24",
-     "font": "d:rounded:14:0.85:0.4:0",
+     "font": "d:narrow:13:1.0:0.4:0",
      "baseline": 24,
      "left": 0
     },
@@ -307,7 +307,7 @@
      ],
      "text": "Team",
      "style": "cut:d2_ls_head:80:24:c:3:0:0:80:24",
-     "font": "d:rounded:14:1.0:0.4:0",
+     "font": "d:narrow:13:1.0:0.4:0",
      "baseline": 24,
      "left": 0
     },
@@ -379,19 +379,19 @@
      "sprite": "14",
      "text": "Pawafuru",
      "style": "d2_ls_t14",
-     "font": "d:rounded:14:0.78:0.4:0",
+     "font": "d:narrow:13:1.0:0.4:0",
      "palettes": [
       35
      ],
      "slices": true,
      "slice_width": 80,
-     "dy": 3
+     "dy": 1
     },
     {
      "sprite": "15",
      "text": "Kagurazaka",
      "style": "d2_ls_t15",
-     "font": "d:rounded:11:0.78:0.4:0",
+     "font": "d:narrow:13:0.78:0.4:0",
      "palettes": [
       36
      ],
@@ -403,13 +403,13 @@
      "sprite": "16",
      "text": "Phoenix",
      "style": "d2_ls_t16",
-     "font": "d:rounded:14:0.92:0.4:0",
+     "font": "d:narrow:13:1.0:0.4:0",
      "palettes": [
       37
      ],
      "slices": true,
      "slice_width": 80,
-     "dy": 1
+     "dy": 0
     }
    ],
    "name": "ls_teams"
