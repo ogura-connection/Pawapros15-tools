@@ -3,6 +3,8 @@ from ui_styles_ore_ini import ringfill
 import ui_type
 
 STYLES = {}
+ui_type.TTF["d4narrow"] = ("/System/Library/Fonts/Supplemental/Arial Narrow.ttf", 0)       # regular weight, for the thin black lettering
+ui_type.TTF["d4tahoma"] = ("/System/Library/Fonts/Supplemental/Tahoma.ttf", 0)
 
 # ---- sct_main z5_emj_0 (scout window labels) -----------------------------------------------------------------------------
 STYLES["d4_emj_head"] = ringfill([1, 1, 2, 3, 4, 5], [15, 15], [11, 10])          # pal 23: violet ramp, white ring, pale blue glow

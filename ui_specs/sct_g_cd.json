@@ -1,0 +1,1367 @@
+{
+ "arc": "sct_g_cd.arc",
+ "repack": [
+  {
+   "bank": "z4_gmc_0",
+   "palette": 28,
+   "style": "b4_gm_s",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     64,
+     24,
+     128,
+     48
+    ],
+    [
+     4,
+     0,
+     0,
+     64,
+     24
+    ],
+    [
+     4,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     4,
+     0,
+     24,
+     40,
+     48
+    ],
+    [
+     4,
+     40,
+     24,
+     80,
+     48
+    ],
+    [
+     4,
+     80,
+     24,
+     120,
+     48
+    ],
+    [
+     4,
+     0,
+     48,
+     40,
+     80
+    ],
+    [
+     4,
+     40,
+     56,
+     72,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "1c",
+     "text": "Tactics",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "1d",
+     "text": "Back",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 356
+    },
+    {
+     "sprite": "1e",
+     "text": "Details",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 358
+    },
+    {
+     "sprite": "1f",
+     "text": "Contact",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "20",
+     "text": "Approach",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:8:0.0:0.85:0.3",
+     "baseline": 2
+    },
+    {
+     "sprite": "21",
+     "text": "Pitches",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "22",
+     "text": "Defensive\nShift",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:7:0.0:1.0:0.3",
+     "baseline": 8
+    }
+   ],
+   "name": "menu"
+  },
+  {
+   "bank": "z4_gmc_0",
+   "palette": 93,
+   "style": "b4_gm_s",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "26",
+     "text": "Pitch: Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "27",
+     "text": "Fastballs",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "28",
+     "text": "Breaking Balls",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "29",
+     "text": "Normal",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "2a",
+     "text": "Bunt Shift",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "2b",
+     "text": "Infield In",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "2c",
+     "text": "Infield Back",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "2d",
+     "text": "Outfield In",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "2e",
+     "text": "Outfield Back",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "2f",
+     "text": "Location: Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "30",
+     "text": "Inside",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "31",
+     "text": "Outside",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "32",
+     "text": "Borderline",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "33",
+     "text": "Pitch to Contact",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "34",
+     "text": "Waste One",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "35",
+     "text": "Walk Him",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "36",
+     "text": "Contact: Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "37",
+     "text": "Use Contact",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "38",
+     "text": "Power Swing",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "39",
+     "text": "Approach: Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "3a",
+     "text": "Patient",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "3b",
+     "text": "Aggressive",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "3c",
+     "text": "Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "3d",
+     "text": "Hit-and-Run",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "3e",
+     "text": "Sac Bunt",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "3f",
+     "text": "Squeeze",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "40",
+     "text": "Safety Bunt",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "41",
+     "text": "Sac Fly",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "42",
+     "text": "Steal",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "43",
+     "text": "Hit to Right",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "44",
+     "text": "Take",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "45",
+     "text": "Fight",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "46",
+     "text": "Max Fight",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "47",
+     "text": "Nerves of Steel",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "48",
+     "text": "Intimidate",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "49",
+     "text": "Hot Blood",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "4a",
+     "text": "Fighting Spirit",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "4b",
+     "text": "Peak Mind",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "4c",
+     "text": "Precision",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "4d",
+     "text": "Lucky Boy",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "4e",
+     "text": "Koshien Jinx",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "4f",
+     "text": "Field Jinx",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "50",
+     "text": "Local Park Jinx",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "51",
+     "text": "Growth Spurt",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "52",
+     "text": "Blossom",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "53",
+     "text": "Showman",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "54",
+     "text": "Fan Cheers",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "55",
+     "text": "Tricky",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "56",
+     "text": "Rattle",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "b4",
+     "text": "Keep Low",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "a7",
+     "text": "Hit Grounders",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 4
+    }
+   ],
+   "name": "plates 1 line (pages 5-9)"
+  },
+  {
+   "bank": "z4_gmc_0",
+   "palette": 84,
+   "style": "b4_gm_s",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "6e",
+     "text": "Location\nAuto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 17
+    },
+    {
+     "sprite": "6f",
+     "text": "Inside",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 10
+    },
+    {
+     "sprite": "70",
+     "text": "Outside",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 10
+    },
+    {
+     "sprite": "71",
+     "text": "Borderline",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 9
+    },
+    {
+     "sprite": "72",
+     "text": "Pitch to\nContact",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 16
+    },
+    {
+     "sprite": "73",
+     "text": "Waste\nOne",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "74",
+     "text": "Walk\nHim",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 20
+    },
+    {
+     "sprite": "75",
+     "text": "Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 13
+    },
+    {
+     "sprite": "76",
+     "text": "Hit and\nRun",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "77",
+     "text": "Sac\nBunt",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "78",
+     "text": "Squeeze",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 10
+    },
+    {
+     "sprite": "79",
+     "text": "Safety\nBunt",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19
+    },
+    {
+     "sprite": "7a",
+     "text": "Sac\nFly",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 16
+    },
+    {
+     "sprite": "7b",
+     "text": "Steal",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "7c",
+     "text": "Hit to\nRight",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19
+    },
+    {
+     "sprite": "7d",
+     "text": "Take",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "7e",
+     "text": "Fight",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "7f",
+     "text": "Max\nFight",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "80",
+     "text": "Nerves\nof Steel",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "81",
+     "text": "Intimidate",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "82",
+     "text": "Hot\nBlood",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "83",
+     "text": "Fighting\nSpirit",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 10
+    },
+    {
+     "sprite": "84",
+     "text": "Peak\nMind",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "85",
+     "text": "Precision",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "86",
+     "text": "Lucky\nBoy",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "87",
+     "text": "Koshien\nJinx",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "88",
+     "text": "Field\nJinx",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "89",
+     "text": "Local Park\nJinx",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "8a",
+     "text": "Growth\nSpurt",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "8b",
+     "text": "Blossom",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "8c",
+     "text": "Showman",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:8:0.0:0.92:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "8d",
+     "text": "Fan\nCheers",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "8e",
+     "text": "Tricky",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "8f",
+     "text": "Rattle",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "a5",
+     "text": "Hit\nGrounders",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "b3",
+     "text": "Keep\nLow",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "96",
+     "text": "Pitch: Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "97",
+     "text": "Fastballs",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "98",
+     "text": "Breaking Balls",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "99",
+     "text": "Normal",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "9a",
+     "text": "Bunt Shift",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "9b",
+     "text": "IF In",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "9c",
+     "text": "IF Back",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "9d",
+     "text": "OF In",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "9e",
+     "text": "OF Back",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "baseline": 5
+    },
+    {
+     "sprite": "9f",
+     "text": "Contact: Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "a0",
+     "text": "Use Contact",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "a1",
+     "text": "Power Swing",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 4
+    },
+    {
+     "sprite": "a2",
+     "text": "Approach: Auto",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 3
+    },
+    {
+     "sprite": "a3",
+     "text": "Patient",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
+    },
+    {
+     "sprite": "a4",
+     "text": "Aggressive",
+     "style": "b4_gm_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
+    }
+   ],
+   "name": "plates 2 lines + blue lines (pages 10-15)"
+  },
+  {
+   "bank": "z4_gmd_0",
+   "palette": 21,
+   "style": "b4_gm_s",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     0,
+     24,
+     72,
+     56,
+     96
+    ],
+    [
+     0,
+     56,
+     72,
+     120,
+     96
+    ],
+    [
+     0,
+     120,
+     72,
+     128,
+     96
+    ],
+    [
+     0,
+     24,
+     96,
+     32,
+     120
+    ],
+    [
+     0,
+     32,
+     96,
+     48,
+     120
+    ],
+    [
+     0,
+     48,
+     96,
+     64,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "04",
+     "text": "Choose a player to send as messenger.",
+     "style": "b4_gd_blue",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "05",
+     "text": "Choose a player to send as messenger.",
+     "style": "b4_gd_black",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -6
+    },
+    {
+     "sprite": "07",
+     "text": "1 left",
+     "style": "b4_gd_green",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 8
+    },
+    {
+     "sprite": "08",
+     "text": "2 left",
+     "style": "b4_gd_green",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 7
+    },
+    {
+     "sprite": "09",
+     "text": "3 left",
+     "style": "b4_gd_green",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 7
+    },
+    {
+     "sprite": "0a",
+     "text": "Encourage",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.92:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "Encourage",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.92:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "0c",
+     "text": "Really Encourage",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "0d",
+     "text": "Really Encourage",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "0e",
+     "text": "Hugely Encourage",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "0f",
+     "text": "Hugely Encourage",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "10",
+     "text": "Fire Up",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "11",
+     "text": "Fire Up",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Really Fire Up",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Really Fire Up",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "14",
+     "text": "Hugely Fire Up",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Hugely Fire Up",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Advise",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Advise",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Advise Wisely",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 21,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Advise Wisely",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 21,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "Advise Wisely & Calmly",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.92:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "Advise Wisely & Calmly",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.92:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Praise",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Praise",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Praise a Lot",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Praise a Lot",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Shower with Praise",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Shower with Praise",
+     "style": "b4_gm_s",
+     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "baseline": 20,
+     "pages": [
+      1,
+      2
+     ]
+    }
+   ],
+   "name": "messenger screen",
+   "share": true
+  }
+ ],
+ "paint": [
+  {
+   "bank": "z4_gmc_0",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    64,
+    24
+   ],
+   "text": "Tactics",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "b4_or"
+  },
+  {
+   "bank": "z4_gmc_0",
+   "page": 1,
+   "rect": [
+    0,
+    24,
+    64,
+    48
+   ],
+   "text": "Time",
+   "font": "ttf:rounded:11:0.0:1.0:0.3",
+   "copy": "clear",
+   "style": "b4_or"
+  },
+  {
+   "bank": "z4_gmc_0",
+   "page": 1,
+   "rect": [
+    0,
+    48,
+    64,
+    72
+   ],
+   "text": "Messenger",
+   "font": "ttf:narrow:8:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "b4_or"
+  },
+  {
+   "bank": "z4_gmc_0",
+   "page": 1,
+   "rect": [
+    0,
+    72,
+    64,
+    96
+   ],
+   "text": "Don't Mind!",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "b4_or"
+  }
+ ]
+}

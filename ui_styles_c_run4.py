@@ -33,10 +33,11 @@ RSZ = {
                       (28, [32, 96, 46, 112], [128, 48, 142, 64])]),
 }
 _RSZ_CLEAN = {}
+_RSZ_RIM = set(range(6, 27))
 _RSZ_SHADOW = {27, 28, 33, 34, 35, 36, 39, 40, 42, 48, 49}
 
 
-_RSZ_XL = [(16, 33), (18, 29), (20, 24), (22, 20), (24, 18), (26, 17), (28, 16.5), (30, 16), (32, 14), (34, 13), (36, 12), (38, 11)]
+_RSZ_XL = [(15, 35), (16, 28), (17, 26), (19, 26), (20, 24), (22, 20), (24, 18), (26, 17), (28, 16.5), (30, 16), (32, 14), (34, 13), (36, 12), (38, 11)]
 
 
 def _rsz_clean(spr):
@@ -56,13 +57,18 @@ def _rsz_clean(spr):
         zone = set(np.unique(img[24:54, 30:126]).tolist()) - {0}
         struct = set(np.unique(np.concatenate([img[0:13].ravel(), img[67:].ravel(), img[:, 0:9].ravel(), img[:, 148:].ravel()])).tolist()) - {0}
         out = img.copy()
-        out[np.isin(img, list(zone - struct))] = 197
+        m0 = np.isin(img, list(zone - struct))
+        out[m0] = 197
+        near = m0.copy()
+        for _ in range(2):
+            near = ui_type.grow(near, 1)
+        out[near & np.isin(img, list(_RSZ_RIM)) & ~m0] = 235            # dark-blue edge pixels of the lettering left on the pale ring
         ys = [y for y, _ in _RSZ_XL]
         xs = [x for _, x in _RSZ_XL]
-        for y in range(16, 63):
+        for y in range(15, 63):
             yy = y if y <= 38 else 77 - y
             xl = np.interp(yy, ys, xs)
-            x0, x1 = int(np.ceil(xl)) + 2, int(157 - xl) - 2
+            x0, x1 = int(np.ceil(xl)) + 1, int(157 - xl) - 1
             out[y, x0:x1 + 1] = 197
         _RSZ_CLEAN[spr] = out.astype(np.uint8)
     return _RSZ_CLEAN[spr]

@@ -1,0 +1,1189 @@
+{
+ "arc": "gdt_sch.arc",
+ "repack": [
+  {
+   "bank": "h3_kyo_0",
+   "palette": 10,
+   "style": "f_ky_yel",
+   "font": "ttf:rounded:13:0.0:0.9:0.0",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     96,
+     56,
+     128,
+     80
+    ],
+    [
+     0,
+     0,
+     64,
+     16,
+     80
+    ],
+    [
+     0,
+     120,
+     80,
+     128,
+     104
+    ],
+    [
+     0,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     80,
+     24
+    ],
+    [
+     2,
+     88,
+     48,
+     112,
+     72
+    ],
+    [
+     2,
+     0,
+     48,
+     88,
+     128
+    ],
+    [
+     2,
+     88,
+     72,
+     96,
+     96
+    ],
+    [
+     2,
+     120,
+     72,
+     128,
+     128
+    ],
+    [
+     2,
+     104,
+     112,
+     120,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      96,
+      88,
+      120
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "To Pass",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 14,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "04"
+     ],
+     "text": "Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -32
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      88,
+      120
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "To Pass",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 14,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "05"
+     ],
+     "text": "Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -32
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      88,
+      72
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Score",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "pts",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -14
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "06"
+     ],
+     "text": "Tries Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -32
+    },
+    {
+     "from": [
+      2,
+      48,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "06"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      88,
+      72
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Score",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "pts",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -14
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "07"
+     ],
+     "text": "Tries Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -32
+    },
+    {
+     "from": [
+      2,
+      48,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "07"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 10
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "Left",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 10
+    },
+    {
+     "from": [
+      2,
+      48,
+      72,
+      72,
+      96
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "x",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": 1
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      96,
+      96
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "pts",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.9:0.0",
+     "baseline": 15,
+     "left": -7
+    },
+    {
+     "from": [
+      2,
+      88,
+      48,
+      112,
+      72
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "balls",
+     "style": "f_ky_yel",
+     "font": "ttf:rounded:13:0.0:0.8:0.0",
+     "baseline": 14,
+     "left": -10
+    },
+    {
+     "from": [
+      0,
+      72,
+      80,
+      96,
+      104
+     ],
+     "sprites": [
+      "32"
+     ],
+     "text": "pts",
+     "style": "f_ky_pts",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "baseline": 19,
+     "left": -4
+    },
+    {
+     "sprite": "11",
+     "text": "Power",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:10:0.0:0.9:0.0",
+     "baseline": 18,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Push",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:10:0.0:0.9:0.0",
+     "baseline": 17,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "IF In",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:8:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      17,
+      18
+     ]
+    },
+    {
+     "sprite": "14",
+     "text": "IF Back",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:8:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      17,
+      18
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "OF In",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:8:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      17,
+      18
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "OF Back",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:8:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      17,
+      18
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Bunt Shift",
+     "style": "f_ky_btn",
+     "font": "ttf:rounded:7:0.0:0.85:0.0",
+     "baseline": 16,
+     "palettes": [
+      19
+     ]
+    }
+   ],
+   "name": "kyo labels",
+   "gap": [
+    0,
+    0
+   ],
+   "share": true
+  },
+  {
+   "bank": "h3_stk_0",
+   "palette": 3,
+   "style": "a4_stk_blue",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     96,
+     64,
+     128,
+     128
+    ],
+    [
+     3,
+     72,
+     64,
+     104,
+     128
+    ],
+    [
+     2,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     1,
+     96,
+     0,
+     128,
+     64
+    ],
+    [
+     3,
+     104,
+     64,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     3,
+     56,
+     64,
+     72,
+     128
+    ],
+    [
+     0,
+     120,
+     120,
+     128,
+     128
+    ],
+    [
+     1,
+     88,
+     120,
+     96,
+     128
+    ],
+    [
+     1,
+     40,
+     120,
+     48,
+     128
+    ],
+    [
+     3,
+     0,
+     64,
+     56,
+     128
+    ],
+    [
+     0,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     1,
+     0,
+     0,
+     96,
+     120
+    ],
+    [
+     1,
+     48,
+     120,
+     88,
+     128
+    ],
+    [
+     1,
+     0,
+     120,
+     8,
+     128
+    ],
+    [
+     1,
+     8,
+     120,
+     16,
+     128
+    ],
+    [
+     1,
+     16,
+     120,
+     24,
+     128
+    ],
+    [
+     1,
+     24,
+     120,
+     32,
+     128
+    ],
+    [
+     0,
+     0,
+     120,
+     8,
+     128
+    ],
+    [
+     0,
+     8,
+     120,
+     16,
+     128
+    ],
+    [
+     0,
+     16,
+     120,
+     24,
+     128
+    ],
+    [
+     0,
+     24,
+     120,
+     32,
+     128
+    ],
+    [
+     0,
+     32,
+     120,
+     40,
+     128
+    ],
+    [
+     0,
+     40,
+     120,
+     48,
+     128
+    ],
+    [
+     0,
+     48,
+     120,
+     56,
+     128
+    ],
+    [
+     0,
+     56,
+     120,
+     64,
+     128
+    ],
+    [
+     0,
+     64,
+     120,
+     72,
+     128
+    ],
+    [
+     0,
+     72,
+     120,
+     80,
+     128
+    ],
+    [
+     0,
+     80,
+     120,
+     88,
+     128
+    ],
+    [
+     0,
+     96,
+     120,
+     104,
+     128
+    ],
+    [
+     0,
+     88,
+     120,
+     96,
+     128
+    ],
+    [
+     0,
+     104,
+     120,
+     112,
+     128
+    ],
+    [
+     0,
+     112,
+     120,
+     120,
+     128
+    ],
+    [
+     1,
+     32,
+     120,
+     40,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      48,
+      120,
+      88,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      120,
+      8,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      1,
+      8,
+      120,
+      16,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      1,
+      16,
+      120,
+      24,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      1,
+      24,
+      120,
+      32,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      120,
+      8,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      8,
+      120,
+      16,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      16,
+      120,
+      24,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      24,
+      120,
+      32,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      32,
+      120,
+      40,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      40,
+      120,
+      48,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      48,
+      120,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      56,
+      120,
+      64,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      64,
+      120,
+      72,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      72,
+      120,
+      80,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      80,
+      120,
+      88,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      96,
+      120,
+      104,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      88,
+      120,
+      96,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      104,
+      120,
+      112,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      112,
+      120,
+      120,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      1,
+      32,
+      120,
+      40,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      1,
+      96,
+      64,
+      128,
+      128
+     ],
+     "text": "Test Start",
+     "style": "a4_stk_ts~0_32",
+     "font": "ttf:rounded:29:0.0:0.85:0.5",
+     "baseline": 43,
+     "left": -11,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      128,
+      128
+     ],
+     "text": "Test Start",
+     "style": "a4_stk_ts~32_160",
+     "font": "ttf:rounded:29:0.0:0.85:0.5",
+     "baseline": 43,
+     "left": -11,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      3,
+      72,
+      64,
+      104,
+      128
+     ],
+     "text": "Test Start",
+     "style": "a4_stk_ts~160_4096",
+     "font": "ttf:rounded:29:0.0:0.85:0.5",
+     "baseline": 43,
+     "left": -11,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      3,
+      56,
+      64,
+      72,
+      128
+     ],
+     "text": "Start",
+     "style": "a4_stk_s~0_16",
+     "font": "ttf:rounded:29:0.0:0.85:0.5",
+     "baseline": 43,
+     "left": 1,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      2,
+      80,
+      64,
+      128,
+      128
+     ],
+     "text": "Start",
+     "style": "a4_stk_s~16_64",
+     "font": "ttf:rounded:29:0.0:0.85:0.5",
+     "baseline": 43,
+     "left": 1,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      3,
+      72,
+      64,
+      104,
+      128
+     ],
+     "text": "Start",
+     "style": "a4_stk_s~64_4096",
+     "font": "ttf:rounded:29:0.0:0.85:0.5",
+     "baseline": 43,
+     "left": 1,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      96,
+      0,
+      128,
+      64
+     ],
+     "text": "Test Over",
+     "style": "a4_stk_over~0_32",
+     "font": "ttf:rounded:31:0.0:0.85:0.5",
+     "baseline": 46,
+     "left": 0,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Test Over",
+     "style": "a4_stk_over~32_160",
+     "font": "ttf:rounded:31:0.0:0.85:0.5",
+     "baseline": 46,
+     "left": 0,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      3,
+      104,
+      64,
+      128,
+      128
+     ],
+     "text": "Test Over",
+     "style": "a4_stk_over~160_4096",
+     "font": "ttf:rounded:31:0.0:0.85:0.5",
+     "baseline": 46,
+     "left": 0,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Failed",
+     "style": "a4_stk_violet",
+     "font": "ttf:rounded:35:0.0:0.85:0.5",
+     "baseline": 48
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      120
+     ],
+     "text": "Passed!",
+     "style": "a4_stk_pass~0_128",
+     "font": "ttf:rounded:48:0.0:0.85:0.5",
+     "baseline": 80,
+     "left": 2
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      96,
+      120
+     ],
+     "text": "Passed!",
+     "style": "a4_stk_pass~128_4096",
+     "font": "ttf:rounded:48:0.0:0.85:0.5",
+     "baseline": 80,
+     "left": 2
+    }
+   ],
+   "name": "test banners",
+   "share": true
+  }
+ ]
+}
