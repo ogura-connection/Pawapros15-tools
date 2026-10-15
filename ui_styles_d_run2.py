@@ -167,6 +167,7 @@ STYLES["d2_ls_t16"] = ringfill([15], [4, 4, 3], [])
 # scs_grad m3_stu
 STYLES["d2_st_tag"] = ringfill([4, 3], [15], [9])                                      # palette 11: practice names, blue letters, white edge, grey-blue shadow
 STYLES["d2_st_res"] = ringfill([5, 4, 3, 2], [15, 15], [10])                                   # palette 23: results, seasons: dark violet letters, white edge
+STYLES["d2_st_res1"] = ringfill([5, 4, 3, 2], [15], [])                                          # palette 23, small words: one white ring
 STYLES["d2_st_ok"] = ringfill([7, 5, 4, 3, 2], [15, 15, 9], [1])                               # palette 19: Success! pink to red
 STYLES["d2_st_ng"] = ringfill([7, 6, 5, 4, 3], [15, 15, 13], [1])                              # palette 20: Failure... blue
 STYLES["d2_st_half"] = ringfill([7, 6, 5, 4, 3], [15, 15, 11], [1])                            # palette 21: Half and Half? violet

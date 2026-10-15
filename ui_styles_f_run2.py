@@ -96,3 +96,30 @@ def tilted(style, rise):
 STYLES["f_g_title"] = tilted(logo([0xa, 9, 8, 7, 6, 5], [0xa, 0xa], 1, 0xf, 0xb, [], 4, 1), 6.0)
 for _c in ((0, 128), (128, 256), (256, 384), (384, 512), (0, 4096), (128, 4096), (256, 4096), (384, 4096)):
     STYLES["f_g_title~%d_%d" % _c] = win(STYLES["f_g_title"], *_c)
+
+
+# ---- scs_g_ed.arc newspaper pictures: lettering that is stored as a mask in the spec itself -------------------------------
+# The "text" of a sheet item is "m:<h>x<w>:<base64 of zlib of the mask bits>": a 1-bit picture (set = ink level 6) that the
+# font "f_pic" returns as it is. Used for the lettering set on a slope (headlines, a vertical strip) and for the masks that
+# paint the Japanese lettering away (gen_g_ed_pics.py makes both).
+import base64 as _b64, zlib as _zlib
+
+
+class _MaskWords(dict):
+    def __contains__(self, key):
+        return isinstance(key, str) and key.startswith("m:")
+
+    def __getitem__(self, key):
+        _, size, data = key.split(":", 2)
+        h, w = (int(v) for v in size.split("x"))
+        bits = np.unpackbits(np.frombuffer(_zlib.decompress(_b64.b64decode(data)), np.uint8))[:h * w].reshape(h, w)
+        return (bits * 6).astype(int), h
+
+
+ui_type.FONTS["f_pic"] = lambda project=None: {"words": _MaskWords(), "glyphs": {}, "space": 0, "gap": 0}
+
+
+def encode_mask(mask):
+    """The text of a sheet item for a boolean array (see above)."""
+    mask = np.asarray(mask, bool)
+    return "m:%dx%d:%s" % (mask.shape[0], mask.shape[1], _b64.b64encode(_zlib.compress(np.packbits(mask.reshape(-1)).tobytes(), 9)).decode())

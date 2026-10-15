@@ -975,9 +975,9 @@
      ],
      "text": "Current",
      "style": "e_cur",
-     "font": "ttf:rounded:8:0.0:1.0:0.4",
-     "left": 2,
-     "baseline": 19
+     "font": "ttf:narrow:12:0.0:1.0:0.5",
+     "left": -3,
+     "baseline": 22
     },
     {
      "from": [
@@ -989,9 +989,9 @@
      ],
      "text": "After",
      "style": "e_after",
-     "font": "ttf:rounded:17:0.0:1.0:0.4",
-     "left": 3,
-     "baseline": 24
+     "font": "ttf:narrow:18:0.0:1.0:0.5",
+     "left": 6,
+     "baseline": 25
     },
     {
      "from": [
@@ -1001,11 +1001,11 @@
       128,
       64
      ],
-     "text": "Item Effect",
+     "text": "Item\nEffect",
      "style": "e_item",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "left": 2,
-     "baseline": 17
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "left": 18,
+     "baseline": 22
     },
     {
      "from": [
@@ -1017,9 +1017,9 @@
      ],
      "text": "Current",
      "style": "e_cur",
-     "font": "ttf:rounded:12:0.0:1.0:0.4",
-     "left": -1,
-     "baseline": 25
+     "font": "ttf:narrow:18:0.0:1.0:0.5",
+     "left": -7,
+     "baseline": 29
     },
     {
      "from": [
@@ -1031,9 +1031,9 @@
      ],
      "text": "After",
      "style": "e_after",
-     "font": "ttf:rounded:18:0.0:1.0:0.4",
-     "left": 33,
-     "baseline": 28
+     "font": "ttf:narrow:18:0.0:1.0:0.5",
+     "left": 38,
+     "baseline": 29
     },
     {
      "from": [
@@ -1055,9 +1055,9 @@
      ],
      "text": "With Items",
      "style": "e_item",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "left": 5,
-     "baseline": 24
+     "font": "ttf:narrow:18:0.0:1.0:0.4",
+     "left": 11,
+     "baseline": 25
     },
     {
      "from": [
@@ -1069,9 +1069,9 @@
      ],
      "text": "TRJ",
      "style": "stat",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "left": 0,
-     "baseline": 18
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "left": -1,
+     "baseline": 21
     },
     {
      "from": [
@@ -1083,9 +1083,9 @@
      ],
      "text": "CON",
      "style": "stat",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "left": 0,
-     "baseline": 20
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "left": 1,
+     "baseline": 22
     },
     {
      "from": [
@@ -1097,9 +1097,9 @@
      ],
      "text": "POW",
      "style": "stat",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
      "left": 3,
-     "baseline": 20
+     "baseline": 22
     },
     {
      "from": [
@@ -1121,9 +1121,9 @@
      ],
      "text": "SPD",
      "style": "stat",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
-     "left": 2,
-     "baseline": 17
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "left": -2,
+     "baseline": 21
     },
     {
      "from": [
@@ -1135,9 +1135,9 @@
      ],
      "text": "ARM",
      "style": "stat",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "left": 2,
-     "baseline": 18
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "left": -4,
+     "baseline": 22
     },
     {
      "from": [
@@ -1149,9 +1149,9 @@
      ],
      "text": "FLD",
      "style": "stat",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "left": 5,
-     "baseline": 20
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "left": 8,
+     "baseline": 21
     },
     {
      "from": [
@@ -1173,8 +1173,8 @@
      ],
      "text": "ERR",
      "style": "stat",
-     "font": "ttf:rounded:18:0.0:1.0:0.3",
-     "left": 2,
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "left": 6,
      "baseline": 21
     },
     {
@@ -1187,9 +1187,9 @@
      ],
      "text": "VEL",
      "style": "stat",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
      "left": 3,
-     "baseline": 19
+     "baseline": 21
     },
     {
      "from": [
@@ -1201,9 +1201,9 @@
      ],
      "text": "CTL",
      "style": "stat",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "left": 9,
-     "baseline": 19
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "left": 11,
+     "baseline": 21
     },
     {
      "from": [
@@ -1215,9 +1215,9 @@
      ],
      "text": "STA",
      "style": "stat",
-     "font": "ttf:rounded:16:0.0:1.0:0.3",
-     "left": 6,
-     "baseline": 19
+     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "left": 7,
+     "baseline": 21
     },
     {
      "from": [
@@ -1229,9 +1229,9 @@
      ],
      "text": "Current\nEXP",
      "style": "e_exp",
-     "font": "ttf:rounded:12:0.0:1.0:0.35",
-     "left": 3,
-     "baseline": 42
+     "font": "ttf:narrow:15:0.0:1.0:0.4",
+     "left": 2,
+     "baseline": 46
     },
     {
      "from": [
@@ -1283,9 +1283,9 @@
      ],
      "text": "STR",
      "style": "e_exp",
-     "font": "ttf:rounded:12:0.0:1.0:0.35",
-     "left": 2,
-     "baseline": 17
+     "font": "ttf:narrow:15:0.0:1.0:0.4",
+     "left": 1,
+     "baseline": 20
     },
     {
      "from": [
@@ -1297,9 +1297,9 @@
      ],
      "text": "QCK",
      "style": "e_exp",
-     "font": "ttf:rounded:11:0.0:1.0:0.35",
-     "left": 1,
-     "baseline": 17
+     "font": "ttf:narrow:15:0.0:1.0:0.4",
+     "left": -2,
+     "baseline": 19
     },
     {
      "from": [
@@ -1311,9 +1311,9 @@
      ],
      "text": "TEC",
      "style": "e_exp",
-     "font": "ttf:rounded:11:0.0:1.0:0.35",
-     "left": 3,
-     "baseline": 17
+     "font": "ttf:narrow:15:0.0:1.0:0.4",
+     "left": 1,
+     "baseline": 20
     },
     {
      "from": [
@@ -1325,9 +1325,9 @@
      ],
      "text": "BRK",
      "style": "e_exp",
-     "font": "ttf:rounded:13:0.0:1.0:0.35",
-     "left": 7,
-     "baseline": 18
+     "font": "ttf:narrow:15:0.0:1.0:0.4",
+     "left": 6,
+     "baseline": 20
     },
     {
      "from": [
@@ -1349,9 +1349,9 @@
      ],
      "text": "MEN",
      "style": "e_exp",
-     "font": "ttf:rounded:11:0.0:1.0:0.35",
-     "left": 1,
-     "baseline": 17
+     "font": "ttf:narrow:15:0.0:1.0:0.4",
+     "left": -1,
+     "baseline": 20
     },
     {
      "from": [
@@ -1364,7 +1364,7 @@
      "text": "Pitcher Skills",
      "style": "e_tabp",
      "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "left": 5,
+     "left": 6,
      "baseline": 17
     },
     {
@@ -1378,7 +1378,7 @@
      "text": "Fielder Skills",
      "style": "e_tabf",
      "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "left": 6,
+     "left": 7,
      "baseline": 17
     },
     {
@@ -1391,9 +1391,9 @@
      ],
      "text": "Other",
      "style": "e_tabo",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
      "left": 2,
-     "baseline": 18
+     "baseline": 20
     },
     {
      "from": [
@@ -1415,8 +1415,8 @@
      ],
      "text": "Cancel",
      "style": "e_cancel",
-     "font": "ttf:rounded:11:0.0:1.0:0.35",
-     "left": 4,
+     "font": "ttf:narrow:9:0.0:1.0:0.4",
+     "left": 13,
      "baseline": 28
     },
     {
