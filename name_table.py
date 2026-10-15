@@ -21,7 +21,7 @@ from the game's own readings (_work/surnames.json: kanji, call id, kana of the c
 by hand where needed.
     python3 name_table.py export      write the TSV (keeps English already there)
     python3 name_table.py check       lengths, short forms, the patch sites of the original modules
-    python3 name_table.py export-given / -draft / -holders   translation/names/in_place/<module>.tsv (see below)
+    python3 name_table.py export-given / -draft / -holders / -foreign   translation/names/in_place/<module>.tsv (see below)
 """
 import os, struct, sys
 
@@ -350,6 +350,15 @@ def player_plates(players):
 #   variant with a date (0x012A..0x0140, ...) and the cells one later. 810 fields, 303 people; English by hand
 #   in _work/names/holders_en.json (name as decoded -> English, game text: not tracked). Two people share
 #   one name: Bobby Rose (team 4, Yokohama) and Tuffy Rhodes (the rest).
+# Foreign players: pennant.rel sec5, 656 six-cell fields in 82 lists of eight (pointer table sec5+0x7AE8,
+#   0xFFFF, 0 between some): 45 single-kanji Korean / Taiwanese surnames, then katakana given names in
+#   kana order (names of four kana or more with 0x1000 set in their cells). The game's own jersey spellings
+#   follow at sec5+0xC6F8 in the same order (A = 1, 0xFFFF after each: ANDOREW, EDWARZ); they stay as
+#   they are. scc_main.rel sec5+0x4AF0..0x68D0 (Success): 360 records of six cells, 0x1FFF, call id: the
+#   same names plus 88 Korean / Taiwanese full names; this module is moved by the build, so its fields are
+#   written into section 5 before the surname table is appended (rebuild_scripts). English by hand in
+#   _work/names/foreign_pool_en.json (by pool index) and foreign_extra_en.json (decoded name -> English).
+FOREIGN_TABLE = ("pennant.rel", 5, 0x7AE8, 82)
 IN_PLACE_DIR = os.path.join(HERE, "translation", "names", "in_place")
 GIVEN = ("main_prg.rel", 5, 0x3B288, 200, 16)
 GIVEN_FIXES = {18: "Koichi", 33: "Shoichi",           # romaji keeps "ou" before a vowel
@@ -435,6 +444,56 @@ def cmd_export_holders():
     print("left as they are:", left)
 
 
+def _dec(cells):
+    return S.decode_units([c if c < 0x1000 else c - 0x1000 for c in cells if c])
+
+
+def foreign_fields(rel):
+    """[(offset, cells)] of the 656 foreign-player names of pennant.rel, in pool order."""
+    fn, sec, at, lists = FOREIGN_TABLE
+    d = rel.sec_data(sec)
+    ptr = {pos: add for s, pos, typ, tm, ts, add in rel.relocs() if s == sec and tm == rel.mod_id and ts == sec}
+    out = []
+    for k in range(lists):
+        p, n = ptr[at + 4 * k], 0
+        while n < 8:
+            if struct.unpack_from(">H", d, p)[0] == 0xFFFF:
+                p += 4
+                continue
+            out.append((p, struct.unpack_from(">6H", d, p)))
+            p, n = p + 12, n + 1
+    return out
+
+
+def scc_foreign_fields(d):
+    """[(offset, cells)] of the Success foreign names (scc_main.rel sec5: six cells, 0x1FFF, call id)."""
+    out = []
+    for o in range(0x4AF0, 0x68D0 + 16, 2):
+        if struct.unpack_from(">H", d, o + 12)[0] == 0x1FFF and name_field(d, o):
+            c = struct.unpack_from(">6H", d, o)
+            if all(x == 0 or 0x179 <= x & 0xFFF <= 0x1D0 or x & 0xFFF == 0x1B for x in c):
+                out.append((o, c))
+    return out
+
+
+def cmd_export_foreign():
+    import json
+    load = lambda n: json.load(open(os.path.join(S.WORK_DIR, "names", n), encoding="utf-8"))
+    pool_en, extra = load("foreign_pool_en.json"), load("foreign_extra_en.json")
+    rel = S.Rel(os.path.join(S.WORK_DIR, "orig", FOREIGN_TABLE[0]))
+    fields = foreign_fields(rel)
+    assert len(fields) == len(pool_en) == 656
+    by_name = {}
+    for (o, c), en in zip(fields, pool_en):
+        by_name.setdefault(_dec(c), en)
+    _write_store(FOREIGN_TABLE[0], "foreign players: 45 surnames, then given names", 
+                 [(5, o, en) for (o, c), en in zip(fields, pool_en)])
+    d = S.Rel(os.path.join(S.WORK_DIR, "orig", HOST)).sec_data(HOST_SECTION)
+    rows = [(HOST_SECTION, o, by_name.get(_dec(c)) or extra[_dec(c)]) for o, c in scc_foreign_fields(d)]
+    assert len(rows) == 360, len(rows)
+    _write_store(HOST, "Success foreign players, written before the module moves", rows)
+
+
 def _write_store(module, header, rows):
     os.makedirs(IN_PLACE_DIR, exist_ok=True)
     path = os.path.join(IN_PLACE_DIR, module + ".tsv")
@@ -513,5 +572,5 @@ def cmd_check():
 
 if __name__ == "__main__":
     {"export": cmd_export, "export-given": cmd_export_given, "export-draft": cmd_export_draft,
-     "export-holders": cmd_export_holders,
+     "export-holders": cmd_export_holders, "export-foreign": cmd_export_foreign,
      "check": cmd_check}.get((sys.argv + [""])[1], lambda: sys.exit(__doc__))()

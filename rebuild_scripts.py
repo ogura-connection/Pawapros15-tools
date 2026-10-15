@@ -975,6 +975,17 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         except ValueError as e:
             sys.exit(str(e))
         sec_data, name_remap = name_table.append_table(host, name_bytes)
+        host_names = {}                                          # its own name fields (foreign players), in place
+        if host.name in stores:
+            try:
+                host_names = name_table.inplace_patches(host, stores[host.name], enc)
+            except ValueError as e:
+                sys.exit(str(e))
+            sec_data = bytearray(sec_data)
+            for (ps, po), data in host_names.items():
+                assert ps == name_table.HOST_SECTION and po + len(data) <= name_remap.hi
+                sec_data[po:po + len(data)] = data
+            sec_data = bytes(sec_data)
         new_secs[host.mod_id] = (name_table.HOST_SECTION, sec_data)
         remaps[(host.mod_id, name_table.HOST_SECTION)] = name_remap
         print("%-13s %5d surnames in Latin letters, %d bytes appended; main_prg.rel: %d in 8 letters, %d stay kanji"
@@ -1140,7 +1151,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                     patched[m.mod_id][(5, o)] = data
                 image = bytes(image)
                 note += ", %d real players in %d places" % (len(players), len(pp))
-        if m.name in stores:                                     # names written in place (given names ...)
+        if m.name in stores and not (names and m.name == name_table.HOST):   # names in place (given names ...)
             try:
                 pp = name_table.inplace_patches(m, stores[m.name], lambda t: encode_text(t, slots))
             except ValueError as e:
@@ -1189,6 +1200,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         h = new[host.mod_id]
         got = h.sec_data(name_table.HOST_SECTION)[name_remap.new_table:]
         assert got == name_bytes and len(h.sec_data(name_table.HOST_SECTION)) == name_remap.hi + name_remap.growth, h.name
+        assert all(h.sec_data(ps)[po:po + len(v)] == v for (ps, po), v in host_names.items()), h.name
         print("Verified: %s holds the %d-byte surname table at sec%d+0x%X." % (h.name, len(got), name_table.HOST_SECTION, name_remap.new_table))
     if dol:                             # the My Life modules: relocations and sections are checked in verify()
         verify_dol(orig, new, dol, slots, tuple(extra_images) + ((name_table.HOST,) if names else ()))
