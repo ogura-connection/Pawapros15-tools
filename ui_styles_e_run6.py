@@ -79,7 +79,7 @@ def pill(arcname, bank, rect, kind, inner, cx, cy, white=15, top_pale=None, shea
             for comp in comps[:-1]:
                 for y, x in comp:
                     gone[y, x] = True
-            for _ in range(2):
+            for _ in range(3):
                 g2 = gone.copy()
                 g2[1:] |= gone[:-1]; g2[:-1] |= gone[1:]; g2[:, 1:] |= gone[:, :-1]; g2[:, :-1] |= gone[:, 1:]
                 g2[1:, 1:] |= gone[:-1, :-1]; g2[:-1, :-1] |= gone[1:, 1:]; g2[1:, :-1] |= gone[:-1, 1:]; g2[:-1, 1:] |= gone[1:, :-1]

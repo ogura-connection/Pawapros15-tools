@@ -132,8 +132,8 @@
      "sprite": "06",
      "text": "Search",
      "style": "e6_pd_06",
-     "font": "ttf:narrow:17:0.0:0.85:0.4",
-     "baseline": 24,
+     "font": "ttf:narrow:9:0.0:0.85:0.6",
+     "baseline": 20,
      "palettes": [
       57
      ]
@@ -142,7 +142,7 @@
      "sprite": "07",
      "text": "Research",
      "style": "e6_pd_07",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "font": "ttf:rounded:9:0.0:0.85:0.6",
      "baseline": 20,
      "palettes": [
       56
@@ -152,8 +152,8 @@
      "sprite": "08",
      "text": "Use Preferred\nSlot",
      "style": "e6_pd_08",
-     "font": "ttf:rounded:7:0.0:0.85:0.6",
-     "baseline": 19,
+     "font": "ttf:narrow:9:0.0:0.85:0.6",
+     "baseline": 20,
      "palettes": [
       39
      ]
@@ -192,8 +192,8 @@
      "sprite": "47",
      "text": "Favor UP",
      "style": "e6_pd_47",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
-     "baseline": 22,
+     "font": "ttf:rounded:9:0.0:0.85:0.6",
+     "baseline": 20,
      "palettes": [
       41
      ]
@@ -231,8 +231,8 @@
      ],
      "text": "High",
      "style": "e6_pd_14",
-     "font": "ttf:rounded:17:0.0:1.0:0.4",
-     "baseline": 23,
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 21,
      "sprites": [
       "15"
      ]
@@ -247,8 +247,8 @@
      ],
      "text": "Low",
      "style": "e6_pd_14",
-     "font": "ttf:rounded:17:0.0:1.0:0.4",
-     "baseline": 23,
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 21,
      "sprites": [
       "15"
      ]
@@ -682,7 +682,7 @@
      "sprite": "3f",
      "text": "COM is handling all scouting & research...",
      "style": "e6_pd_help",
-     "font": "ttf:rounded:12:0.0:0.85:0.5",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 3
@@ -691,7 +691,7 @@
      "sprite": "42",
      "text": "No current activity",
      "style": "e6_pd_help",
-     "font": "ttf:rounded:12:0.0:1.0:0.5",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 2
@@ -700,7 +700,7 @@
      "sprite": "43",
      "text": "Preferred Signee slot not used",
      "style": "e6_pd_help",
-     "font": "ttf:rounded:12:0.0:0.92:0.5",
+     "font": "ttf:rounded:12:0.0:0.92:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 3
@@ -709,7 +709,7 @@
      "sprite": "44",
      "text": "as 1st pick",
      "style": "e6_pd_help",
-     "font": "ttf:rounded:12:0.0:1.0:0.5",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
      "baseline": 410,
      "left": 307
     },
@@ -859,7 +859,7 @@
      "sprite": "48",
      "text": "Preferred Signee slot not used",
      "style": "e6_pd_help",
-     "font": "ttf:rounded:11:0.0:0.92:0.5",
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -872,14 +872,14 @@
      "sprite": "48",
      "text": "(Usable from August on)",
      "style": "e6_pd_red",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
      "palettes": [
       175
      ],
-     "left": 254
+     "left": 253
     }
    ],
    "name": "g3_pd_0",
