@@ -233,3 +233,55 @@ def win(style, c0, c1):
 
 STYLES["ctl_msg_a"] = win(STYLES["ctl_msg"], 0, 128)
 STYLES["ctl_msg_b"] = win(STYLES["ctl_msg"], 128, 4096)
+
+
+# ---- r4w_ri (remote motion pages) -------------------------------------------------------------------------------
+def left_lines(style):
+    """Lines of stacked lettering (typeset centres them) moved to a common left edge."""
+    def run(ink, base):
+        art, b = style(ink, base)
+        rows = art.any(axis=1)
+        groups, start = [], None
+        for y, r in enumerate(rows):
+            if r and start is None: start = y
+            if not r and start is not None: groups.append((start, y)); start = None
+        if start is not None: groups.append((start, len(rows)))
+        if len(groups) > 1:
+            lefts = [np.nonzero(art[y0:y1].any(axis=0))[0].min() for y0, y1 in groups]
+            width = max(np.nonzero(art[y0:y1].any(axis=0))[0].max() + 1 - l for (y0, y1), l in zip(groups, lefts))
+            out = np.zeros((art.shape[0], width), art.dtype)
+            for (y0, y1), l in zip(groups, lefts):
+                seg = art[y0:y1, l:l + width]
+                out[y0:y1, :seg.shape[1]] = seg
+            art = out
+        return art, b
+    return run
+
+
+def padded(style, total):
+    """The art centred in `total` columns (so a word shared out over two parts always splits in the same column)."""
+    def run(ink, base):
+        art, b = style(ink, base)
+        w = art.shape[1]
+        if w >= total:
+            return art, b
+        out = np.zeros((art.shape[0], total), art.dtype)
+        x = (total - w) // 2
+        out[:, x:x + w] = art
+        return out, b
+    return run
+
+
+# black help text on the pastel plates (palettes 54-57: index 15 black ... 3 light)
+STYLES["ctl_help"] = left_lines(flat([0, 3, 6, 9, 12, 14, 15], cut=2))
+STYLES["ctl_help_a"] = win(STYLES["ctl_help"], 0, 128)
+STYLES["ctl_help_b"] = win(STYLES["ctl_help"], 128, 4096)
+# the big titles of the pages (palettes 2, 3): white to gold (or lilac) letters, dark blue ring, blue shadow; 144 wide in 2 parts
+_title = ringfill([15, 15, 14, 13, 12, 11, 10, 9, 8], [4, 4], [3, 2, 1])
+STYLES["ctl_title_a"] = win(padded(_title, 144), 0, 72)
+STYLES["ctl_title_b"] = win(padded(_title, 144), 72, 4096)
+STYLES["ctl_title"] = _title
+# small labels (palette 6): white letters, blue ring
+STYLES["ctl_ri_small"] = ringfill([15], [7, 7], [6])
+# the long pills (palettes 43-46): white letters, dark ring, brown shadow
+STYLES["ctl_pill"] = ringfill([15, 15, 15, 14, 13], [7, 7], [6, 5, 4])

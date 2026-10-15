@@ -2079,6 +2079,992 @@
      "valign": "centre"
     }
    ]
+  },
+  {
+   "name": "ticker and standings",
+   "bank": "h3_nxt_ps2",
+   "style": "d_nxt_head",
+   "font": "ttf:rounded:17:0.0:0.9:0.2",
+   "valign": "centre",
+   "areas": [
+    [
+     1,
+     0,
+     88,
+     88,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     2,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     2,
+     0,
+     96,
+     112,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     4,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     4,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     5,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     5,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     5,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     6,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     6,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     6,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     7,
+     48,
+     32,
+     120,
+     64
+    ],
+    [
+     7,
+     0,
+     96,
+     96,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      0,
+      48,
+      32
+     ],
+     "text": "AVG",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head"
+    },
+    {
+     "from": [
+      2,
+      48,
+      0,
+      112,
+      32
+     ],
+     "text": "HR",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head"
+    },
+    {
+     "from": [
+      2,
+      112,
+      0,
+      128,
+      32
+     ],
+     "text": "RBI",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head",
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      32,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      32,
+      32,
+      96,
+      64
+     ],
+     "text": "ERA",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head"
+    },
+    {
+     "from": [
+      2,
+      96,
+      32,
+      128,
+      64
+     ],
+     "text": "Wins",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head",
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      32,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      32,
+      64,
+      96,
+      96
+     ],
+     "text": "K",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head"
+    },
+    {
+     "from": [
+      2,
+      96,
+      64,
+      120,
+      96
+     ],
+     "text": "W",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head"
+    },
+    {
+     "from": [
+      2,
+      120,
+      64,
+      128,
+      96
+     ],
+     "text": "L",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head",
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      16,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      16,
+      96,
+      40,
+      128
+     ],
+     "text": "T",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head"
+    },
+    {
+     "from": [
+      2,
+      40,
+      96,
+      88,
+      128
+     ],
+     "text": "PCT",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head"
+    },
+    {
+     "from": [
+      2,
+      88,
+      96,
+      112,
+      128
+     ],
+     "text": "GB",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_head"
+    },
+    {
+     "sprite": "23",
+     "text": "Batting Top 3",
+     "style": "d_nxt_top",
+     "font": "ttf:narrow:22:0.0:0.7:0.4"
+    },
+    {
+     "sprite": "24",
+     "text": "Pitching Top 3",
+     "style": "d_nxt_top",
+     "font": "ttf:narrow:21:0.0:0.7:0.4"
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      56,
+      32
+     ],
+     "text": "AVG",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "align": "right"
+    },
+    {
+     "from": [
+      5,
+      56,
+      0,
+      128,
+      32
+     ],
+     "text": "HR",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "align": "right"
+    },
+    {
+     "from": [
+      5,
+      0,
+      32,
+      56,
+      64
+     ],
+     "text": "RBI",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "align": "right"
+    },
+    {
+     "from": [
+      5,
+      56,
+      32,
+      112,
+      64
+     ],
+     "text": "SB",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "align": "right"
+    },
+    {
+     "from": [
+      5,
+      0,
+      64,
+      56,
+      96
+     ],
+     "text": "ERA",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "align": "right"
+    },
+    {
+     "from": [
+      5,
+      56,
+      64,
+      128,
+      96
+     ],
+     "text": "Wins",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "align": "right"
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      72,
+      128
+     ],
+     "text": "K",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "align": "right"
+    },
+    {
+     "from": [
+      5,
+      72,
+      96,
+      128,
+      128
+     ],
+     "text": "Saves",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "align": "right"
+    },
+    {
+     "from": [
+      5,
+      112,
+      32,
+      128,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      88,
+      0,
+      128,
+      32
+     ],
+     "text": "Leaders",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "left": 3
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      48,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      16,
+      32
+     ],
+     "empty": true
+    },
+    {
+     "sprite": "36",
+     "text": "Holds Leaders",
+     "font": "ttf:rounded:17:0.0:0.9:0.2",
+     "style": "d_nxt_rank",
+     "slices": true
+    },
+    {
+     "sprite": "3c",
+     "text": "Standings",
+     "font": "ttf:narrow:22:0.0:0.95:0.4",
+     "style": "d_nxt_top"
+    },
+    {
+     "sprite": "3d",
+     "text": "Central",
+     "font": "ttf:sans-italic:20:0.0:0.9:0.4",
+     "style": "d_nxt_ce"
+    },
+    {
+     "sprite": "3e",
+     "text": "Pacific",
+     "font": "ttf:sans-italic:20:0.0:0.9:0.4",
+     "style": "d_nxt_pa"
+    },
+    {
+     "sprite": "3f",
+     "text": "League",
+     "font": "ttf:sans-italic:20:0.0:0.9:0.4",
+     "style": "d_nxt_le"
+    },
+    {
+     "sprite": "47",
+     "text": "Clinched",
+     "font": "ttf:narrow:12:0.0:0.7:0.2",
+     "style": "d_nxt_cl"
+    },
+    {
+     "sprite": "48",
+     "text": "Champs",
+     "font": "ttf:narrow:13:0.0:0.7:0.2",
+     "style": "d_nxt_ch"
+    }
+   ]
+  },
+  {
+   "name": "hero banners",
+   "bank": "h3_her_0",
+   "style": "d_her_big",
+   "font": "ttf:sans-italic:22:0.0:0.9:0.5",
+   "valign": "centre",
+   "areas": [
+    [
+     1,
+     0,
+     8,
+     128,
+     56
+    ],
+    [
+     1,
+     0,
+     56,
+     96,
+     104
+    ],
+    [
+     1,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     8
+    ],
+    [
+     2,
+     0,
+     8,
+     128,
+     40
+    ],
+    [
+     2,
+     0,
+     40,
+     128,
+     96
+    ],
+    [
+     2,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     3,
+     0,
+     24,
+     72,
+     80
+    ],
+    [
+     6,
+     96,
+     0,
+     104,
+     16
+    ],
+    [
+     6,
+     0,
+     0,
+     80,
+     48
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     48,
+     128,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "04",
+     "text": "Today's Hero",
+     "style": "d_her_big",
+     "font": "ttf:sans-italic:17:0.0:1.0:0.5",
+     "slices": true,
+     "slice_width": 78
+    },
+    {
+     "sprite": "05",
+     "text": "League Champions!",
+     "style": "d_her_big",
+     "font": "ttf:sans-italic:17:0.0:1.0:0.5",
+     "slices": true,
+     "slice_width": 118
+    },
+    {
+     "sprite": "06",
+     "text": "Japan Series Champions!",
+     "style": "d_her_big",
+     "font": "ttf:sans-italic:17:0.0:0.8:0.5",
+     "slices": true,
+     "slice_width": 121
+    },
+    {
+     "sprite": "08",
+     "text": "Tournament Champions!",
+     "style": "d_her_big",
+     "font": "ttf:sans-italic:17:0.0:0.85:0.5",
+     "slices": true,
+     "slice_width": 123
+    },
+    {
+     "sprite": "09",
+     "text": "Champions!",
+     "style": "d_her_big",
+     "font": "ttf:sans-italic:17:0.0:1.0:0.5",
+     "slices": true,
+     "slice_width": 73
+    },
+    {
+     "sprite": "0d",
+     "text": "Today's Highlights",
+     "style": "d_her_red",
+     "font": "ttf:sans-italic:19:0.0:1.0:0.5",
+     "slices": true,
+     "slice_width": 120
+    },
+    {
+     "from": [
+      1,
+      80,
+      104,
+      128,
+      128
+     ],
+     "text": "Today's",
+     "style": "d_her_hl",
+     "font": "ttf:sans-italic:14:0.0:0.9:0.3",
+     "baseline": 24
+    },
+    {
+     "from": [
+      2,
+      80,
+      0,
+      128,
+      8
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      8,
+      120,
+      40
+     ],
+     "text": "Highlights",
+     "style": "d_her_hl",
+     "font": "ttf:sans-italic:14:0.0:0.9:0.3",
+     "baseline": 24,
+     "left": 16
+    },
+    {
+     "from": [
+      1,
+      0,
+      104,
+      80,
+      128
+     ],
+     "text": "Replay",
+     "style": "d_her_hl",
+     "font": "ttf:sans-italic:14:0.0:0.9:0.3",
+     "baseline": 24
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      80,
+      8
+     ],
+     "empty": true
+    }
+   ]
+  },
+  {
+   "name": "defence practice",
+   "bank": "h3_rs_0",
+   "style": "d_rs_btn",
+   "font": "ttf:rounded:10:0.0:0.95:0.0",
+   "valign": "centre",
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     4,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     4,
+     0,
+     48,
+     128,
+     72
+    ],
+    [
+     4,
+     0,
+     72,
+     128,
+     104
+    ],
+    [
+     4,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     112,
+     16
+    ],
+    [
+     5,
+     0,
+     16,
+     128,
+     32
+    ],
+    [
+     5,
+     0,
+     32,
+     128,
+     48
+    ],
+    [
+     5,
+     0,
+     48,
+     56,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "palettes": [
+      26
+     ],
+     "text": "Fielding Practice Setup",
+     "style": "d_rs_head",
+     "font": "ttf:rounded:10:0.0:0.75:0.3"
+    },
+    {
+     "from": [
+      4,
+      0,
+      104,
+      72,
+      128
+     ],
+     "text": "Direction",
+     "font": "ttf:rounded:13:0.0:0.95:0.2",
+     "style": "d_rs_sub"
+    },
+    {
+     "from": [
+      4,
+      72,
+      104,
+      128,
+      128
+     ],
+     "text": "Runner",
+     "font": "ttf:rounded:13:0.0:0.95:0.2",
+     "style": "d_rs_sub"
+    },
+    {
+     "from": [
+      4,
+      112,
+      48,
+      128,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      40,
+      32,
+      120,
+      48
+     ],
+     "text": "Bat Myself",
+     "font": "ttf:rounded:10:0.0:0.95:0.0",
+     "style": "d_rs_btn"
+    },
+    {
+     "sprite": "07",
+     "text": "Auto",
+     "style": "d_rs_btn",
+     "font": "ttf:rounded:10:0.0:0.95:0.0"
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      88,
+      24
+     ],
+     "text": "Hit Power",
+     "font": "ttf:rounded:14:0.0:0.95:0.3",
+     "style": "d_rs_head"
+    },
+    {
+     "from": [
+      4,
+      48,
+      24,
+      88,
+      48
+     ],
+     "text": "Soft",
+     "font": "ttf:rounded:13:0.0:0.95:0.3",
+     "style": "d_rs_head"
+    },
+    {
+     "from": [
+      4,
+      88,
+      24,
+      128,
+      48
+     ],
+     "text": "Hard",
+     "font": "ttf:rounded:13:0.0:0.95:0.3",
+     "style": "d_rs_head"
+    },
+    {
+     "from": [
+      4,
+      88,
+      0,
+      128,
+      24
+     ],
+     "text": "Hit Height",
+     "font": "ttf:rounded:14:0.0:0.95:0.3",
+     "style": "d_rs_head"
+    },
+    {
+     "from": [
+      4,
+      0,
+      24,
+      48,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "High",
+     "font": "ttf:rounded:13:0.0:0.95:0.3",
+     "style": "d_rs_head"
+    },
+    {
+     "from": [
+      4,
+      40,
+      48,
+      80,
+      72
+     ],
+     "text": "Low",
+     "font": "ttf:rounded:13:0.0:0.95:0.3",
+     "style": "d_rs_head"
+    },
+    {
+     "from": [
+      4,
+      80,
+      48,
+      112,
+      72
+     ],
+     "text": "Level",
+     "font": "ttf:rounded:11:0.0:0.95:0.3",
+     "style": "d_rs_head"
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      112,
+      16
+     ],
+     "text": "Change Setup",
+     "font": "ttf:rounded:10:0.0:0.95:0.0",
+     "style": "d_rs_btn",
+     "align": "left"
+    },
+    {
+     "from": [
+      5,
+      0,
+      16,
+      64,
+      32
+     ],
+     "text": "Hit Again",
+     "font": "ttf:rounded:10:0.0:0.95:0.0",
+     "style": "d_rs_btn",
+     "align": "left"
+    },
+    {
+     "sprite": "39",
+     "pages": [
+      5
+     ],
+     "text": "Add Runner",
+     "style": "d_rs_btn",
+     "font": "ttf:rounded:10:0.0:0.95:0.0",
+     "align": "left"
+    }
+   ]
   }
  ],
  "paint": [

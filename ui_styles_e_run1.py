@@ -11,7 +11,7 @@ ui_type.TTF.setdefault("din", ("/System/Library/Fonts/Supplemental/DIN Condensed
 ETAG_EXTRA = {
     "1": ["..##", ".###", "####", "..##", "..##", "..##", "..##", "..##", "..##", "..##", "..##"],
     "3": ["+####+", "######", "##..##", "....##", "..###+", "..###+", "....##", "##..##", "##..##", "######", "+####+"],
-    "Q": ["+####+", "######", "##..##", "##..##", "##..##", "##..##", "##..##", "##.###", "##.+##", "######", "+#####"],
+    "Q": ["+####+", "######", "##..##", "##..##", "##..##", "##..##", "##.+##", "##.###", "##+###", "######", "+#####"],
     "w": ["##.#.#", "##.#.#", "##.#.#", "##.#.#", "##.#.#", "######", "######", "+#+.+#"],
     "g": ["+###+", "##.##", "##.##", "##.##", "+####", "...##", "...##", "...##", "...##", "##.##", "+###+"],
 }
@@ -200,6 +200,9 @@ STYLES = {
     # Starter Avg. (palette 102): white letters, a navy band, a teal edge
     "e_sh_avg": crisp(tight(banded(_WHITE, [8, 8, 6]))),
     "e_scm": scm_style,
+    # team-type plates of r4_12h, as the Japanese lettering: white letters, a light inner ring, a thick dark ring in the
+    # plate's colour (palettes 32, 34, 37 share their indices: 8 light, 1 dark)
+    "e_plate2": crisp(tight(banded([0, 11, 11, 11, 11, 11, 11], [8, 1, 1]))),
     # side marks on the digit font (g3_suuzi page 1): white letters, a black two-pixel outline
     "e_suuzi": crisp(banded([0, 1, 1, 1, 1, 1, 1], [15, 15])),
     # Mii choice plates (r4w_mi): green letters in a white halo; the game draws the same art again as a light blue silhouette

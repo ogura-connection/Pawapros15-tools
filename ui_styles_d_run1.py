@@ -75,6 +75,6 @@ STYLES["d_her_big"] = ringfill([0xc, 0xc, 0xd, 0xe, 0xf], [1, 1, 8, 5])
 STYLES["d_her_hl"] = ringfill([0xf, 0xf, 0xe, 0xd], [4, 1])
 STYLES["d_her_red"] = ringfill([9, 8, 8, 7], [4, 1, 0xf])
 # h3_rs_0: defence practice (palettes 11, 26, 27): white letters in blue rings
-STYLES["d_rs_btn"] = ringfill([0xf], [7, 4])
+STYLES["d_rs_btn"] = ringfill([0xf], [5])
 STYLES["d_rs_head"] = ringfill([0xf, 0xf, 0xe, 0xd], [7, 7], [6])
 STYLES["d_rs_sub"] = ringfill([5, 5, 6, 7], [2, 1])

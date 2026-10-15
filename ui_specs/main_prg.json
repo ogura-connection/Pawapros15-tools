@@ -2481,7 +2481,7 @@
   {
    "name": "team type plates",
    "bank": "r4_12h",
-   "style": "e_plate",
+   "style": "e_plate2",
    "share": true,
    "areas": [
     [
@@ -2666,9 +2666,10 @@
       "57"
      ],
      "text": "Scenario",
-     "font": "ttf:din:12:0:0.9:0.0",
-     "left": 2,
-     "baseline": 24
+     "font": "ttf:din:16:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 3,
+     "baseline": 25
     },
     {
      "from": [
@@ -2681,10 +2682,11 @@
      "sprites": [
       "5f"
      ],
-     "text": "Original",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
-     "baseline": 19
+     "text": "Original 1",
+     "font": "ttf:din:15:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 7,
+     "baseline": 23
     },
     {
      "from": [
@@ -2697,10 +2699,7 @@
      "sprites": [
       "5f"
      ],
-     "text": "1",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": -29,
-     "baseline": 36
+     "empty": true
     },
     {
      "from": [
@@ -2713,10 +2712,11 @@
      "sprites": [
       "60"
      ],
-     "text": "Original",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
-     "baseline": 19
+     "text": "Original 2",
+     "font": "ttf:din:15:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 7,
+     "baseline": 23
     },
     {
      "from": [
@@ -2729,10 +2729,7 @@
      "sprites": [
       "60"
      ],
-     "text": "2",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": -29,
-     "baseline": 36
+     "empty": true
     },
     {
      "from": [
@@ -2745,10 +2742,11 @@
      "sprites": [
       "61"
      ],
-     "text": "Original",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
-     "baseline": 19
+     "text": "Original 3",
+     "font": "ttf:din:15:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 7,
+     "baseline": 23
     },
     {
      "from": [
@@ -2761,10 +2759,7 @@
      "sprites": [
       "61"
      ],
-     "text": "3",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": -29,
-     "baseline": 36
+     "empty": true
     },
     {
      "from": [
@@ -2777,10 +2772,11 @@
      "sprites": [
       "62"
      ],
-     "text": "Original",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
-     "baseline": 19
+     "text": "Original 4",
+     "font": "ttf:din:15:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 7,
+     "baseline": 23
     },
     {
      "from": [
@@ -2793,10 +2789,7 @@
      "sprites": [
       "62"
      ],
-     "text": "4",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": -29,
-     "baseline": 36
+     "empty": true
     },
     {
      "from": [
@@ -2809,10 +2802,11 @@
      "sprites": [
       "63"
      ],
-     "text": "Original",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "text": "Original 5",
+     "font": "ttf:din:15:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 19
+     "baseline": 23
     },
     {
      "from": [
@@ -2825,10 +2819,7 @@
      "sprites": [
       "63"
      ],
-     "text": "5",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": -29,
-     "baseline": 36
+     "empty": true
     },
     {
      "from": [
@@ -2842,9 +2833,10 @@
       "64"
      ],
      "text": "Home Run",
-     "font": "ttf:din:11:0:0.85:0.0",
-     "left": 3,
-     "baseline": 22
+     "font": "ttf:din:14:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 4,
+     "baseline": 23
     },
     {
      "from": [
@@ -2858,9 +2850,10 @@
       "65"
      ],
      "text": "Pro Players",
-     "font": "ttf:din:10:0:0.8:0.0",
+     "font": "ttf:din:13:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 4,
-     "baseline": 21
+     "baseline": 20
     },
     {
      "from": [
@@ -2874,9 +2867,10 @@
       "66"
      ],
      "text": "Success",
-     "font": "ttf:din:12:0:0.9:0.0",
-     "left": 3,
-     "baseline": 22
+     "font": "ttf:din:17:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 4,
+     "baseline": 24
     },
     {
      "from": [
@@ -2889,10 +2883,11 @@
      "sprites": [
       "67"
      ],
-     "text": "All-Star",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "text": "All-Star 1",
+     "font": "ttf:din:15:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 5,
-     "baseline": 19
+     "baseline": 24
     },
     {
      "from": [
@@ -2905,10 +2900,7 @@
      "sprites": [
       "67"
      ],
-     "text": "1",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": -29,
-     "baseline": 36
+     "empty": true
     },
     {
      "from": [
@@ -2922,9 +2914,10 @@
       "68"
      ],
      "text": "All-Star",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "ttf:din:16:0.18:0.7:0.5",
+     "style": "e_plate2",
      "left": 5,
-     "baseline": 19
+     "baseline": 23
     },
     {
      "from": [
@@ -2938,9 +2931,10 @@
       "68"
      ],
      "text": "2",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "ttf:din:16:0.18:1.0:0.5",
+     "style": "e_plate2",
      "left": -29,
-     "baseline": 36
+     "baseline": 46
     },
     {
      "from": [
@@ -2954,9 +2948,10 @@
       "69"
      ],
      "text": "All-Star",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "ttf:din:16:0.18:0.7:0.5",
+     "style": "e_plate2",
      "left": 5,
-     "baseline": 19
+     "baseline": 23
     },
     {
      "from": [
@@ -2970,9 +2965,10 @@
       "69"
      ],
      "text": "3",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "ttf:din:16:0.18:1.0:0.5",
+     "style": "e_plate2",
      "left": -29,
-     "baseline": 36
+     "baseline": 46
     },
     {
      "from": [
@@ -2985,10 +2981,11 @@
      "sprites": [
       "6a"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": 6,
-     "baseline": 20
+     "text": "Players 1",
+     "font": "ttf:din:16:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 7,
+     "baseline": 24
     },
     {
      "from": [
@@ -3001,10 +2998,7 @@
      "sprites": [
       "6a"
      ],
-     "text": "1",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3017,10 +3011,11 @@
      "sprites": [
       "6b"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
+     "text": "Players 2",
+     "font": "ttf:din:16:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 20
+     "baseline": 23
     },
     {
      "from": [
@@ -3033,10 +3028,7 @@
      "sprites": [
       "6b"
      ],
-     "text": "2",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3049,10 +3041,11 @@
      "sprites": [
       "6c"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
+     "text": "Players 3",
+     "font": "ttf:din:16:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 20
+     "baseline": 23
     },
     {
      "from": [
@@ -3065,10 +3058,7 @@
      "sprites": [
       "6c"
      ],
-     "text": "3",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3081,10 +3071,11 @@
      "sprites": [
       "6d"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
+     "text": "Players 4",
+     "font": "ttf:din:16:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 20
+     "baseline": 24
     },
     {
      "from": [
@@ -3097,10 +3088,7 @@
      "sprites": [
       "6d"
      ],
-     "text": "4",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3113,10 +3101,11 @@
      "sprites": [
       "6e"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": 6,
-     "baseline": 20
+     "text": "Players 5",
+     "font": "ttf:din:15:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 7,
+     "baseline": 23
     },
     {
      "from": [
@@ -3129,10 +3118,7 @@
      "sprites": [
       "6e"
      ],
-     "text": "5",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3145,10 +3131,11 @@
      "sprites": [
       "6f"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
+     "text": "Players 6",
+     "font": "ttf:din:16:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 20
+     "baseline": 24
     },
     {
      "from": [
@@ -3161,10 +3148,7 @@
      "sprites": [
       "6f"
      ],
-     "text": "6",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3177,10 +3161,11 @@
      "sprites": [
       "70"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": 6,
-     "baseline": 20
+     "text": "Players 7",
+     "font": "ttf:din:15:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 7,
+     "baseline": 23
     },
     {
      "from": [
@@ -3193,10 +3178,7 @@
      "sprites": [
       "70"
      ],
-     "text": "7",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3209,10 +3191,11 @@
      "sprites": [
       "71"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
+     "text": "Players 8",
+     "font": "ttf:din:16:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 20
+     "baseline": 23
     },
     {
      "from": [
@@ -3225,10 +3208,7 @@
      "sprites": [
       "71"
      ],
-     "text": "8",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3241,10 +3221,11 @@
      "sprites": [
       "72"
      ],
-     "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
+     "text": "Players 9",
+     "font": "ttf:din:16:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 20
+     "baseline": 23
     },
     {
      "from": [
@@ -3257,10 +3238,7 @@
      "sprites": [
       "72"
      ],
-     "text": "9",
-     "font": "ttf:din:13:0:1.0:0.0",
-     "left": -28,
-     "baseline": 38
+     "empty": true
     },
     {
      "from": [
@@ -3274,9 +3252,10 @@
       "73"
      ],
      "text": "Players",
-     "font": "ttf:din:13:0:1.0:0.0",
+     "font": "ttf:din:16:0.18:0.7:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 20
+     "baseline": 24
     },
     {
      "from": [
@@ -3290,9 +3269,10 @@
       "73"
      ],
      "text": "10",
-     "font": "ttf:din:13:0:1.0:0.0",
+     "font": "ttf:din:16:0.18:1.0:0.5",
+     "style": "e_plate2",
      "left": -28,
-     "baseline": 38
+     "baseline": 51
     },
     {
      "from": [
@@ -3305,10 +3285,11 @@
      "sprites": [
       "74"
      ],
-     "text": "Bench",
-     "font": "ttf:din:14:0:1.0:0.0",
-     "left": 6,
-     "baseline": 21
+     "text": "Bench 1",
+     "font": "ttf:din:18:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 7,
+     "baseline": 26
     },
     {
      "from": [
@@ -3321,10 +3302,7 @@
      "sprites": [
       "74"
      ],
-     "text": "1",
-     "font": "ttf:din:14:0:1.0:0.0",
-     "left": -28,
-     "baseline": 40
+     "empty": true
     },
     {
      "from": [
@@ -3337,10 +3315,11 @@
      "sprites": [
       "75"
      ],
-     "text": "Bench",
-     "font": "ttf:din:14:0:1.0:0.0",
+     "text": "Bench 2",
+     "font": "ttf:din:18:0.18:0.62:0.5",
+     "style": "e_plate2",
      "left": 6,
-     "baseline": 21
+     "baseline": 26
     },
     {
      "from": [
@@ -3353,10 +3332,7 @@
      "sprites": [
       "75"
      ],
-     "text": "2",
-     "font": "ttf:din:14:0:1.0:0.0",
-     "left": -28,
-     "baseline": 40
+     "empty": true
     },
     {
      "from": [
@@ -3370,9 +3346,10 @@
       "e5"
      ],
      "text": "Original",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
-     "baseline": 22
+     "font": "ttf:din:18:0.18:0.62:0.5",
+     "style": "e_plate2",
+     "left": 3,
+     "baseline": 25
     },
     {
      "sprite": "bb",
@@ -3819,7 +3796,7 @@
    "name": "scorebook tags g3_nk",
    "bank": "g3_nk",
    "style": "e_tag",
-   "font": "ttf:din:12:0:1:0.0",
+   "font": "etag",
    "share": true,
    "areas": [
     [
@@ -3899,8 +3876,8 @@
       "00"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -3915,8 +3892,8 @@
       "00"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -3931,8 +3908,8 @@
       "01"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -3947,8 +3924,8 @@
       "01"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -3963,8 +3940,8 @@
       "02"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -3979,8 +3956,8 @@
       "02"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -3995,8 +3972,8 @@
       "03"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4011,8 +3988,8 @@
       "03"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4027,8 +4004,8 @@
       "04"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4043,8 +4020,8 @@
       "04"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4059,8 +4036,8 @@
       "05"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4075,8 +4052,8 @@
       "05"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4091,8 +4068,8 @@
       "06"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -4107,8 +4084,8 @@
       "06"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4123,8 +4100,8 @@
       "07"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -4139,8 +4116,8 @@
       "07"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4155,8 +4132,8 @@
       "08"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -4171,8 +4148,8 @@
       "08"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4187,8 +4164,8 @@
       "09"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -4203,7 +4180,7 @@
       "09"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -4219,8 +4196,8 @@
       "0a"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -4235,7 +4212,7 @@
       "0a"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -4251,8 +4228,8 @@
       "0b"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4267,8 +4244,8 @@
       "0b"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4283,8 +4260,8 @@
       "0c"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4299,8 +4276,8 @@
       "0c"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4315,8 +4292,8 @@
       "0d"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4331,8 +4308,8 @@
       "0d"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4347,8 +4324,8 @@
       "0e"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4363,8 +4340,8 @@
       "0e"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4379,8 +4356,8 @@
       "0f"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4395,8 +4372,8 @@
       "0f"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4411,8 +4388,8 @@
       "10"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4427,7 +4404,7 @@
       "10"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -4443,8 +4420,8 @@
       "11"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4459,7 +4436,7 @@
       "11"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -4475,8 +4452,8 @@
       "12"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -4491,7 +4468,7 @@
       "12"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -4507,8 +4484,8 @@
       "13"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -4523,7 +4500,7 @@
       "13"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -4539,8 +4516,8 @@
       "14"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4555,8 +4532,8 @@
       "14"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4571,8 +4548,8 @@
       "15"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4587,8 +4564,8 @@
       "15"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4603,8 +4580,8 @@
       "16"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4619,8 +4596,8 @@
       "16"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4635,8 +4612,8 @@
       "17"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4651,8 +4628,8 @@
       "17"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4667,8 +4644,8 @@
       "18"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4683,8 +4660,8 @@
       "18"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4699,8 +4676,8 @@
       "19"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4715,7 +4692,7 @@
       "19"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 4,
      "baseline": 18
     },
@@ -4731,8 +4708,8 @@
       "1a"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4747,7 +4724,7 @@
       "1a"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 4,
      "baseline": 18
     },
@@ -4763,8 +4740,8 @@
       "1b"
      ],
      "text": "HR-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4779,8 +4756,8 @@
       "1b"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4795,8 +4772,8 @@
       "1c"
      ],
      "text": "HR-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4811,7 +4788,7 @@
       "1c"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -4827,8 +4804,8 @@
       "1d"
      ],
      "text": "HR-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4843,7 +4820,7 @@
       "1d"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -4859,8 +4836,8 @@
       "1e"
      ],
      "text": "IPHR",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -4888,8 +4865,8 @@
       "1f"
      ],
      "text": "BB",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 13,
+     "font": "etag",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -4917,8 +4894,8 @@
       "20"
      ],
      "text": "HBP",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 9,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -4946,8 +4923,8 @@
       "21"
      ],
      "text": "K-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -4962,7 +4939,7 @@
       "21"
      ],
      "text": "WP",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 0,
      "baseline": 18
     },
@@ -4978,7 +4955,7 @@
       "22"
      ],
      "text": "IBB",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 12,
      "baseline": 18
     },
@@ -5007,8 +4984,8 @@
       "23"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5023,7 +5000,7 @@
       "23"
      ],
      "text": "FC",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -5039,8 +5016,8 @@
       "24"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -5055,8 +5032,8 @@
       "24"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -5071,8 +5048,8 @@
       "25"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -5087,8 +5064,8 @@
       "25"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -5103,8 +5080,8 @@
       "26"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5119,7 +5096,7 @@
       "26"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -5135,8 +5112,8 @@
       "27"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5151,8 +5128,8 @@
       "27"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5167,8 +5144,8 @@
       "28"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5183,8 +5160,8 @@
       "28"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5199,8 +5176,8 @@
       "29"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5215,7 +5192,7 @@
       "29"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 4,
      "baseline": 18
     },
@@ -5231,8 +5208,8 @@
       "2a"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5247,7 +5224,7 @@
       "2a"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -5263,8 +5240,8 @@
       "2b"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5279,8 +5256,8 @@
       "2b"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5295,8 +5272,8 @@
       "2c"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5311,8 +5288,8 @@
       "2c"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5327,8 +5304,8 @@
       "2d"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -5343,7 +5320,7 @@
       "2d"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -5359,8 +5336,8 @@
       "2e"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -5375,7 +5352,7 @@
       "2e"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -5391,8 +5368,8 @@
       "2f"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5407,8 +5384,8 @@
       "2f"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5423,8 +5400,8 @@
       "30"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5439,8 +5416,8 @@
       "30"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5455,8 +5432,8 @@
       "31"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5471,8 +5448,8 @@
       "31"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5487,8 +5464,8 @@
       "32"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5503,8 +5480,8 @@
       "32"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5519,8 +5496,8 @@
       "33"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5535,8 +5512,8 @@
       "33"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5551,8 +5528,8 @@
       "34"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5567,7 +5544,7 @@
       "34"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -5583,8 +5560,8 @@
       "35"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5599,7 +5576,7 @@
       "35"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -5615,8 +5592,8 @@
       "36"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -5631,7 +5608,7 @@
       "36"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -5647,8 +5624,8 @@
       "37"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -5663,7 +5640,7 @@
       "37"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -5679,8 +5656,8 @@
       "38"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5695,8 +5672,8 @@
       "38"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5711,8 +5688,8 @@
       "39"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5727,8 +5704,8 @@
       "39"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5743,8 +5720,8 @@
       "3a"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5759,8 +5736,8 @@
       "3a"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5775,8 +5752,8 @@
       "3b"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5791,8 +5768,8 @@
       "3b"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5807,8 +5784,8 @@
       "3c"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5823,8 +5800,8 @@
       "3c"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5839,8 +5816,8 @@
       "3d"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5855,7 +5832,7 @@
       "3d"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -5871,8 +5848,8 @@
       "3e"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5887,7 +5864,7 @@
       "3e"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -5903,8 +5880,8 @@
       "3f"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -5919,7 +5896,7 @@
       "3f"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -5935,8 +5912,8 @@
       "40"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -5951,7 +5928,7 @@
       "40"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -5967,8 +5944,8 @@
       "41"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5983,8 +5960,8 @@
       "41"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5999,8 +5976,8 @@
       "42"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6015,8 +5992,8 @@
       "42"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6031,8 +6008,8 @@
       "43"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6047,8 +6024,8 @@
       "43"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6063,8 +6040,8 @@
       "44"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6079,8 +6056,8 @@
       "44"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6095,8 +6072,8 @@
       "45"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6111,8 +6088,8 @@
       "45"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6127,8 +6104,8 @@
       "46"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6143,7 +6120,7 @@
       "46"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -6159,8 +6136,8 @@
       "47"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6175,7 +6152,7 @@
       "47"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -6191,8 +6168,8 @@
       "48"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -6207,7 +6184,7 @@
       "48"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -6223,8 +6200,8 @@
       "49"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -6239,7 +6216,7 @@
       "49"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -6255,8 +6232,8 @@
       "4a"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6271,7 +6248,7 @@
       "4a"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -6287,8 +6264,8 @@
       "4b"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6303,8 +6280,8 @@
       "4b"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6319,8 +6296,8 @@
       "4c"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6335,8 +6312,8 @@
       "4c"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6351,8 +6328,8 @@
       "4d"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6367,7 +6344,7 @@
       "4d"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 4,
      "baseline": 18
     },
@@ -6383,8 +6360,8 @@
       "4e"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6399,7 +6376,7 @@
       "4e"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -6415,8 +6392,8 @@
       "4f"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6431,7 +6408,7 @@
       "4f"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -6447,8 +6424,8 @@
       "50"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6463,7 +6440,7 @@
       "50"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -6479,8 +6456,8 @@
       "51"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -6495,8 +6472,8 @@
       "51"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -6511,8 +6488,8 @@
       "52"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -6527,8 +6504,8 @@
       "52"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -6543,8 +6520,8 @@
       "53"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -6559,7 +6536,7 @@
       "53"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -6575,8 +6552,8 @@
       "54"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6591,8 +6568,8 @@
       "54"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6607,8 +6584,8 @@
       "55"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6623,8 +6600,8 @@
       "55"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6639,8 +6616,8 @@
       "56"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6655,7 +6632,7 @@
       "56"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 4,
      "baseline": 18
     },
@@ -6671,8 +6648,8 @@
       "57"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -6687,7 +6664,7 @@
       "57"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -6703,8 +6680,8 @@
       "58"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6719,8 +6696,8 @@
       "58"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6735,8 +6712,8 @@
       "59"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6751,8 +6728,8 @@
       "59"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6767,8 +6744,8 @@
       "5a"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -6783,7 +6760,7 @@
       "5a"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -6799,8 +6776,8 @@
       "5b"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -6815,7 +6792,7 @@
       "5b"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -6831,8 +6808,8 @@
       "5c"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -6847,8 +6824,8 @@
       "5c"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6863,8 +6840,8 @@
       "5d"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6879,8 +6856,8 @@
       "5d"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6895,8 +6872,8 @@
       "5e"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6911,8 +6888,8 @@
       "5e"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6927,8 +6904,8 @@
       "5f"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6943,8 +6920,8 @@
       "5f"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6959,8 +6936,8 @@
       "60"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -6975,8 +6952,8 @@
       "60"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6991,8 +6968,8 @@
       "61"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7007,7 +6984,7 @@
       "61"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 4,
      "baseline": 18
     },
@@ -7023,8 +7000,8 @@
       "62"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7039,7 +7016,7 @@
       "62"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 4,
      "baseline": 18
     },
@@ -7055,8 +7032,8 @@
       "63"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7071,8 +7048,8 @@
       "63"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7087,8 +7064,8 @@
       "64"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7103,8 +7080,8 @@
       "64"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7119,8 +7096,8 @@
       "65"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7135,7 +7112,7 @@
       "65"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -7151,8 +7128,8 @@
       "66"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7167,8 +7144,8 @@
       "66"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7183,8 +7160,8 @@
       "67"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7199,8 +7176,8 @@
       "67"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7215,8 +7192,8 @@
       "68"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7231,7 +7208,7 @@
       "68"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 4,
      "baseline": 18
     },
@@ -7247,8 +7224,8 @@
       "69"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7263,7 +7240,7 @@
       "69"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 5,
      "baseline": 18
     },
@@ -7279,8 +7256,8 @@
       "6a"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7295,8 +7272,8 @@
       "6a"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7311,8 +7288,8 @@
       "6b"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7327,8 +7304,8 @@
       "6b"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7343,8 +7320,8 @@
       "6c"
      ],
      "text": "K-",
-     "font": "ttf:din:11:0:1.0:0.0",
-     "left": 1,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7359,8 +7336,8 @@
       "6c"
      ],
      "text": "Look",
-     "font": "ttf:din:11:0:1.0:0.0",
-     "left": -3,
+     "font": "etag",
+     "left": -4,
      "baseline": 18
     },
     {
@@ -7375,8 +7352,8 @@
       "6d"
      ],
      "text": "K-",
-     "font": "ttf:din:11:0:0.85:0.0",
-     "left": 1,
+     "font": "etag",
+     "left": 0,
      "baseline": 18
     },
     {
@@ -7391,8 +7368,8 @@
       "6d"
      ],
      "text": "Swing",
-     "font": "ttf:din:11:0:0.85:0.0",
-     "left": -5,
+     "font": "etag",
+     "left": -7,
      "baseline": 18
     },
     {
@@ -7407,8 +7384,8 @@
       "6e"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 9,
+     "font": "etag",
+     "left": 12,
      "baseline": 18
     },
     {
@@ -7423,8 +7400,8 @@
       "6e"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7439,8 +7416,8 @@
       "6f"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 9,
+     "font": "etag",
+     "left": 12,
      "baseline": 18
     },
     {
@@ -7455,8 +7432,8 @@
       "6f"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7471,8 +7448,8 @@
       "70"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -7487,8 +7464,8 @@
       "70"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 1,
      "baseline": 18
     },
     {
@@ -7503,8 +7480,8 @@
       "71"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7519,8 +7496,8 @@
       "71"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 0,
      "baseline": 18
     },
     {
@@ -7535,8 +7512,8 @@
       "72"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7551,8 +7528,8 @@
       "72"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 0,
      "baseline": 18
     },
     {
@@ -7567,8 +7544,8 @@
       "73"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7583,8 +7560,8 @@
       "73"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 1,
+     "font": "etag",
+     "left": 0,
      "baseline": 18
     },
     {
@@ -7599,8 +7576,8 @@
       "74"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -7615,8 +7592,8 @@
       "74"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 1,
      "baseline": 18
     },
     {
@@ -7631,8 +7608,8 @@
       "75"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -7647,8 +7624,8 @@
       "75"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 1,
      "baseline": 18
     },
     {
@@ -7663,8 +7640,8 @@
       "76"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -7679,8 +7656,8 @@
       "76"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 1,
      "baseline": 18
     },
     {
@@ -7695,8 +7672,8 @@
       "77"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7711,8 +7688,8 @@
       "77"
      ],
      "text": "E",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 9,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7727,8 +7704,8 @@
       "78"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7743,8 +7720,8 @@
       "78"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7759,8 +7736,8 @@
       "79"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -7775,8 +7752,8 @@
       "79"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7791,8 +7768,8 @@
       "7a"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7807,8 +7784,8 @@
       "7a"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7823,8 +7800,8 @@
       "7b"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7839,8 +7816,8 @@
       "7b"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7855,8 +7832,8 @@
       "7c"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7871,8 +7848,8 @@
       "7c"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7887,8 +7864,8 @@
       "7d"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7903,8 +7880,8 @@
       "7d"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7919,8 +7896,8 @@
       "7e"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7935,8 +7912,8 @@
       "7e"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7951,8 +7928,8 @@
       "7f"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7967,8 +7944,8 @@
       "7f"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7983,8 +7960,8 @@
       "80"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -7999,8 +7976,8 @@
       "80"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -8015,8 +7992,8 @@
       "81"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -8031,8 +8008,8 @@
       "81"
      ],
      "text": "E",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 9,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -8047,8 +8024,8 @@
       "82"
      ],
      "text": "Foul",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 11,
+     "font": "etag",
+     "left": 12,
      "baseline": 18
     },
     {
@@ -8063,7 +8040,7 @@
       "83"
      ],
      "text": "Take",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -8079,8 +8056,8 @@
       "84"
      ],
      "text": "Swing",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -8095,8 +8072,8 @@
       "85"
      ],
      "text": "Ball",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 11,
+     "font": "etag",
+     "left": 12,
      "baseline": 18
     },
     {
@@ -8110,8 +8087,8 @@
      "sprites": [
       "8b"
      ],
-     "text": "Bat  Int",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "text": "Bat Int",
+     "font": "etag",
      "left": 2,
      "baseline": 18
     },
@@ -8139,9 +8116,9 @@
      "sprites": [
       "8c"
      ],
-     "text": "Fld  Int",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 2,
+     "text": "Fld Int",
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -8168,9 +8145,9 @@
      "sprites": [
       "8d"
      ],
-     "text": "Run  Int",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 0,
+     "text": "Run Int",
+     "font": "etag",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -8192,7 +8169,7 @@
    "name": "scorebook tags g3_tij",
    "bank": "g3_tij",
    "style": "e_tag",
-   "font": "ttf:din:12:0:1:0.0",
+   "font": "etag",
    "share": true,
    "areas": [
     [
@@ -8237,8 +8214,8 @@
       "00"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -8253,8 +8230,8 @@
       "00"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -8269,8 +8246,8 @@
       "01"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -8285,8 +8262,8 @@
       "01"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -8301,8 +8278,8 @@
       "02"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8317,8 +8294,8 @@
       "02"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8333,8 +8310,8 @@
       "03"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8349,8 +8326,8 @@
       "03"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8365,8 +8342,8 @@
       "04"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8381,8 +8358,8 @@
       "04"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8397,8 +8374,8 @@
       "05"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8413,8 +8390,8 @@
       "05"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8429,8 +8406,8 @@
       "06"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8445,8 +8422,8 @@
       "06"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8461,8 +8438,8 @@
       "07"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8477,8 +8454,8 @@
       "07"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8493,8 +8470,8 @@
       "08"
      ],
      "text": "1B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8509,8 +8486,8 @@
       "08"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8525,8 +8502,8 @@
       "09"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -8541,7 +8518,7 @@
       "09"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -8557,8 +8534,8 @@
       "0a"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -8573,7 +8550,7 @@
       "0a"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -8589,8 +8566,8 @@
       "0b"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8605,8 +8582,8 @@
       "0b"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8621,8 +8598,8 @@
       "0c"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8637,8 +8614,8 @@
       "0c"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8653,8 +8630,8 @@
       "0d"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8669,8 +8646,8 @@
       "0d"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8685,8 +8662,8 @@
       "0e"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8701,8 +8678,8 @@
       "0e"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8717,8 +8694,8 @@
       "0f"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8733,8 +8710,8 @@
       "0f"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8749,8 +8726,8 @@
       "10"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8765,7 +8742,7 @@
       "10"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -8781,8 +8758,8 @@
       "11"
      ],
      "text": "2B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8797,7 +8774,7 @@
       "11"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -8813,8 +8790,8 @@
       "12"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -8829,7 +8806,7 @@
       "12"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -8845,8 +8822,8 @@
       "13"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -8861,7 +8838,7 @@
       "13"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -8877,8 +8854,8 @@
       "14"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8893,8 +8870,8 @@
       "14"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8909,8 +8886,8 @@
       "15"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8925,8 +8902,8 @@
       "15"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8941,8 +8918,8 @@
       "16"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8957,8 +8934,8 @@
       "16"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8973,8 +8950,8 @@
       "17"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -8989,8 +8966,8 @@
       "17"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9005,8 +8982,8 @@
       "18"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9021,8 +8998,8 @@
       "18"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9037,8 +9014,8 @@
       "19"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9053,7 +9030,7 @@
       "19"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9069,8 +9046,8 @@
       "1a"
      ],
      "text": "3B-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9085,7 +9062,7 @@
       "1a"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9101,8 +9078,8 @@
       "1b"
      ],
      "text": "HR-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9117,8 +9094,8 @@
       "1b"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9133,8 +9110,8 @@
       "1c"
      ],
      "text": "HR-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9149,7 +9126,7 @@
       "1c"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9165,8 +9142,8 @@
       "1d"
      ],
      "text": "HR-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9181,7 +9158,7 @@
       "1d"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9197,8 +9174,8 @@
       "1e"
      ],
      "text": "IPHR",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 9,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -9226,8 +9203,8 @@
       "1f"
      ],
      "text": "BB",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 14,
+     "font": "etag",
+     "left": 15,
      "baseline": 18
     },
     {
@@ -9255,8 +9232,8 @@
       "20"
      ],
      "text": "HBP",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 11,
      "baseline": 18
     },
     {
@@ -9284,8 +9261,8 @@
       "21"
      ],
      "text": "K-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -9300,7 +9277,7 @@
       "21"
      ],
      "text": "WP",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 2,
      "baseline": 18
     },
@@ -9316,7 +9293,7 @@
       "22"
      ],
      "text": "IBB",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 13,
      "baseline": 18
     },
@@ -9345,8 +9322,8 @@
       "23"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9361,7 +9338,7 @@
       "23"
      ],
      "text": "FC",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9377,8 +9354,8 @@
       "24"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -9393,8 +9370,8 @@
       "24"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -9409,8 +9386,8 @@
       "25"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -9425,8 +9402,8 @@
       "25"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -9441,8 +9418,8 @@
       "26"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9457,7 +9434,7 @@
       "26"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9473,8 +9450,8 @@
       "27"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9489,8 +9466,8 @@
       "27"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9505,8 +9482,8 @@
       "28"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9521,8 +9498,8 @@
       "28"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9537,8 +9514,8 @@
       "29"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9553,7 +9530,7 @@
       "29"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 6,
      "baseline": 18
     },
@@ -9569,8 +9546,8 @@
       "2a"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9585,7 +9562,7 @@
       "2a"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9601,8 +9578,8 @@
       "2b"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9617,8 +9594,8 @@
       "2b"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9633,8 +9610,8 @@
       "2c"
      ],
      "text": "FC-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9649,8 +9626,8 @@
       "2c"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9665,8 +9642,8 @@
       "2d"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -9681,7 +9658,7 @@
       "2d"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -9697,8 +9674,8 @@
       "2e"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -9713,7 +9690,7 @@
       "2e"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -9729,8 +9706,8 @@
       "2f"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9745,8 +9722,8 @@
       "2f"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9761,8 +9738,8 @@
       "30"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -9777,8 +9754,8 @@
       "30"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9793,8 +9770,8 @@
       "31"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -9809,8 +9786,8 @@
       "31"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9825,8 +9802,8 @@
       "32"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -9841,8 +9818,8 @@
       "32"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9857,8 +9834,8 @@
       "33"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9873,8 +9850,8 @@
       "33"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9889,8 +9866,8 @@
       "34"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9905,7 +9882,7 @@
       "34"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9921,8 +9898,8 @@
       "35"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9937,7 +9914,7 @@
       "35"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -9953,8 +9930,8 @@
       "36"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -9969,7 +9946,7 @@
       "36"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -9985,8 +9962,8 @@
       "37"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10001,7 +9978,7 @@
       "37"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -10017,8 +9994,8 @@
       "38"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10033,8 +10010,8 @@
       "38"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10049,8 +10026,8 @@
       "39"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10065,8 +10042,8 @@
       "39"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10081,8 +10058,8 @@
       "3a"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10097,8 +10074,8 @@
       "3a"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10113,8 +10090,8 @@
       "3b"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10129,8 +10106,8 @@
       "3b"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10145,8 +10122,8 @@
       "3c"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10161,8 +10138,8 @@
       "3c"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10177,8 +10154,8 @@
       "3d"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10193,7 +10170,7 @@
       "3d"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10209,8 +10186,8 @@
       "3e"
      ],
      "text": "SQ-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10225,7 +10202,7 @@
       "3e"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10241,8 +10218,8 @@
       "3f"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10257,7 +10234,7 @@
       "3f"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -10273,8 +10250,8 @@
       "40"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10289,7 +10266,7 @@
       "40"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -10305,8 +10282,8 @@
       "41"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10321,8 +10298,8 @@
       "41"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10337,8 +10314,8 @@
       "42"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10353,8 +10330,8 @@
       "42"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10369,8 +10346,8 @@
       "43"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10385,8 +10362,8 @@
       "43"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10401,8 +10378,8 @@
       "44"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10417,8 +10394,8 @@
       "44"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10433,8 +10410,8 @@
       "45"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10449,8 +10426,8 @@
       "45"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10465,8 +10442,8 @@
       "46"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10481,7 +10458,7 @@
       "46"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10497,8 +10474,8 @@
       "47"
      ],
      "text": "GO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10513,7 +10490,7 @@
       "47"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10529,8 +10506,8 @@
       "48"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10545,7 +10522,7 @@
       "48"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -10561,8 +10538,8 @@
       "49"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10577,7 +10554,7 @@
       "49"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 10,
      "baseline": 18
     },
@@ -10593,8 +10570,8 @@
       "4a"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10609,7 +10586,7 @@
       "4a"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10625,8 +10602,8 @@
       "4b"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10641,8 +10618,8 @@
       "4b"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10657,8 +10634,8 @@
       "4c"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10673,8 +10650,8 @@
       "4c"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10689,8 +10666,8 @@
       "4d"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10705,7 +10682,7 @@
       "4d"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 6,
      "baseline": 18
     },
@@ -10721,8 +10698,8 @@
       "4e"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10737,7 +10714,7 @@
       "4e"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10753,8 +10730,8 @@
       "4f"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10769,7 +10746,7 @@
       "4f"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10785,8 +10762,8 @@
       "50"
      ],
      "text": "DP-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10801,7 +10778,7 @@
       "50"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10817,8 +10794,8 @@
       "51"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10833,8 +10810,8 @@
       "51"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10849,8 +10826,8 @@
       "52"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10865,8 +10842,8 @@
       "52"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10881,8 +10858,8 @@
       "53"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10897,7 +10874,7 @@
       "53"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -10913,8 +10890,8 @@
       "54"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10929,8 +10906,8 @@
       "54"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10945,8 +10922,8 @@
       "55"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10961,8 +10938,8 @@
       "55"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10977,8 +10954,8 @@
       "56"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10993,7 +10970,7 @@
       "56"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 6,
      "baseline": 18
     },
@@ -11009,8 +10986,8 @@
       "57"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -11025,7 +11002,7 @@
       "57"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -11041,8 +11018,8 @@
       "58"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11057,8 +11034,8 @@
       "58"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11073,8 +11050,8 @@
       "59"
      ],
      "text": "FO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11089,8 +11066,8 @@
       "59"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11105,8 +11082,8 @@
       "5a"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -11121,7 +11098,7 @@
       "5a"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 9,
      "baseline": 18
     },
@@ -11137,8 +11114,8 @@
       "5b"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -11153,7 +11130,7 @@
       "5b"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 9,
      "baseline": 18
     },
@@ -11169,8 +11146,8 @@
       "5c"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -11185,8 +11162,8 @@
       "5c"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11201,8 +11178,8 @@
       "5d"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11217,8 +11194,8 @@
       "5d"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -11233,8 +11210,8 @@
       "5e"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11249,8 +11226,8 @@
       "5e"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -11265,8 +11242,8 @@
       "5f"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11281,8 +11258,8 @@
       "5f"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -11297,8 +11274,8 @@
       "60"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 5,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -11313,8 +11290,8 @@
       "60"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11329,8 +11306,8 @@
       "61"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -11345,7 +11322,7 @@
       "61"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 6,
      "baseline": 18
     },
@@ -11361,8 +11338,8 @@
       "62"
      ],
      "text": "FF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -11377,7 +11354,7 @@
       "62"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 6,
      "baseline": 18
     },
@@ -11393,8 +11370,8 @@
       "63"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -11409,8 +11386,8 @@
       "63"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -11425,8 +11402,8 @@
       "64"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -11441,8 +11418,8 @@
       "64"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -11457,8 +11434,8 @@
       "65"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -11473,7 +11450,7 @@
       "65"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -11489,8 +11466,8 @@
       "66"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11505,8 +11482,8 @@
       "66"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11521,8 +11498,8 @@
       "67"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11537,8 +11514,8 @@
       "67"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11553,8 +11530,8 @@
       "68"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11569,7 +11546,7 @@
       "68"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 6,
      "baseline": 18
     },
@@ -11585,8 +11562,8 @@
       "69"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -11601,7 +11578,7 @@
       "69"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 7,
      "baseline": 18
     },
@@ -11617,8 +11594,8 @@
       "6a"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11633,8 +11610,8 @@
       "6a"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11649,8 +11626,8 @@
       "6b"
      ],
      "text": "LO-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11665,8 +11642,8 @@
       "6b"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11681,8 +11658,8 @@
       "6c"
      ],
      "text": "K-",
-     "font": "ttf:din:11:0:1.0:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -11697,8 +11674,8 @@
       "6c"
      ],
      "text": "Look",
-     "font": "ttf:din:11:0:1.0:0.0",
-     "left": -1,
+     "font": "etag",
+     "left": -2,
      "baseline": 18
     },
     {
@@ -11713,8 +11690,8 @@
       "6d"
      ],
      "text": "K-",
-     "font": "ttf:din:11:0:0.85:0.0",
-     "left": 2,
+     "font": "etag",
+     "left": 1,
      "baseline": 18
     },
     {
@@ -11729,8 +11706,8 @@
       "6d"
      ],
      "text": "Swing",
-     "font": "ttf:din:11:0:0.85:0.0",
-     "left": -3,
+     "font": "etag",
+     "left": -5,
      "baseline": 18
     },
     {
@@ -11745,8 +11722,8 @@
       "6e"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -11761,8 +11738,8 @@
       "6e"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11777,8 +11754,8 @@
       "6f"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -11793,8 +11770,8 @@
       "6f"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -11809,8 +11786,8 @@
       "70"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -11825,8 +11802,8 @@
       "70"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -11841,8 +11818,8 @@
       "71"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -11857,8 +11834,8 @@
       "71"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -11873,8 +11850,8 @@
       "72"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -11889,8 +11866,8 @@
       "72"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -11905,8 +11882,8 @@
       "73"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -11921,8 +11898,8 @@
       "73"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -11937,8 +11914,8 @@
       "74"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -11953,8 +11930,8 @@
       "74"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -11969,8 +11946,8 @@
       "75"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -11985,8 +11962,8 @@
       "75"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -12001,8 +11978,8 @@
       "76"
      ],
      "text": "E-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -12017,8 +11994,8 @@
       "76"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -12033,8 +12010,8 @@
       "77"
      ],
      "text": "SH-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -12049,8 +12026,8 @@
       "77"
      ],
      "text": "E",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 11,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -12065,8 +12042,8 @@
       "78"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -12081,8 +12058,8 @@
       "78"
      ],
      "text": "P",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -12097,8 +12074,8 @@
       "79"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 6,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -12113,8 +12090,8 @@
       "79"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -12129,8 +12106,8 @@
       "7a"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -12145,8 +12122,8 @@
       "7a"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -12161,8 +12138,8 @@
       "7b"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12177,8 +12154,8 @@
       "7b"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12193,8 +12170,8 @@
       "7c"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12209,8 +12186,8 @@
       "7c"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12225,8 +12202,8 @@
       "7d"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12241,8 +12218,8 @@
       "7d"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12257,8 +12234,8 @@
       "7e"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 4,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -12273,8 +12250,8 @@
       "7e"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 8,
+     "font": "etag",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -12289,8 +12266,8 @@
       "7f"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12305,8 +12282,8 @@
       "7f"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12321,8 +12298,8 @@
       "80"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12337,8 +12314,8 @@
       "80"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12353,8 +12330,8 @@
       "81"
      ],
      "text": "SF-",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 7,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -12369,8 +12346,8 @@
       "81"
      ],
      "text": "E",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 11,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -12385,8 +12362,8 @@
       "82"
      ],
      "text": "Foul",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 9,
+     "font": "etag",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -12401,7 +12378,7 @@
       "83"
      ],
      "text": "Take",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 8,
      "baseline": 18
     },
@@ -12417,8 +12394,8 @@
       "84"
      ],
      "text": "Swing",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "font": "etag",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -12433,8 +12410,8 @@
       "85"
      ],
      "text": "Ball",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 10,
+     "font": "etag",
+     "left": 11,
      "baseline": 18
     },
     {
@@ -12448,8 +12425,8 @@
      "sprites": [
       "86"
      ],
-     "text": "Bat  Int",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "text": "Bat Int",
+     "font": "etag",
      "left": 3,
      "baseline": 18
     },
@@ -12477,9 +12454,9 @@
      "sprites": [
       "87"
      ],
-     "text": "Fld  Int",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 3,
+     "text": "Fld Int",
+     "font": "etag",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -12506,9 +12483,9 @@
      "sprites": [
       "88"
      ],
-     "text": "Run  Int",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 1,
+     "text": "Run Int",
+     "font": "etag",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -12536,8 +12513,8 @@
       "89"
      ],
      "text": "Def.",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 14,
+     "font": "etag",
+     "left": 15,
      "baseline": 18
     },
     {
@@ -12552,8 +12529,8 @@
       "89"
      ],
      "text": "C",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 22,
+     "font": "etag",
+     "left": 23,
      "baseline": 18
     },
     {
@@ -12568,8 +12545,8 @@
       "8a"
      ],
      "text": "Def.",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 12,
+     "font": "etag",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -12584,8 +12561,8 @@
       "8a"
      ],
      "text": "1B",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 19,
+     "font": "etag",
+     "left": 20,
      "baseline": 18
     },
     {
@@ -12600,7 +12577,7 @@
       "8b"
      ],
      "text": "Def.",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 12,
      "baseline": 18
     },
@@ -12616,7 +12593,7 @@
       "8b"
      ],
      "text": "2B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 19,
      "baseline": 18
     },
@@ -12632,7 +12609,7 @@
       "8c"
      ],
      "text": "Def.",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 12,
      "baseline": 18
     },
@@ -12648,7 +12625,7 @@
       "8c"
      ],
      "text": "3B",
-     "font": "ttf:din:12:0:1.0:0.0",
+     "font": "etag",
      "left": 19,
      "baseline": 18
     },
@@ -12664,8 +12641,8 @@
       "8d"
      ],
      "text": "Def.",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 11,
+     "font": "etag",
+     "left": 12,
      "baseline": 18
     },
     {
@@ -12680,8 +12657,8 @@
       "8d"
      ],
      "text": "SS",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 18,
+     "font": "etag",
+     "left": 19,
      "baseline": 18
     },
     {
@@ -12696,8 +12673,8 @@
       "8e"
      ],
      "text": "Def.",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 12,
+     "font": "etag",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -12712,8 +12689,8 @@
       "8e"
      ],
      "text": "LF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 19,
+     "font": "etag",
+     "left": 20,
      "baseline": 18
     },
     {
@@ -12728,8 +12705,8 @@
       "8f"
      ],
      "text": "Def.",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 12,
+     "font": "etag",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -12744,8 +12721,8 @@
       "8f"
      ],
      "text": "CF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 19,
+     "font": "etag",
+     "left": 20,
      "baseline": 18
     },
     {
@@ -12760,8 +12737,8 @@
       "90"
      ],
      "text": "Def.",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 12,
+     "font": "etag",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -12776,8 +12753,8 @@
       "90"
      ],
      "text": "RF",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 19,
+     "font": "etag",
+     "left": 20,
      "baseline": 18
     },
     {
@@ -12792,8 +12769,8 @@
       "91"
      ],
      "text": "DH",
-     "font": "ttf:din:12:0:1.0:0.0",
-     "left": 12,
+     "font": "etag",
+     "left": 13,
      "baseline": 18
     }
    ]
