@@ -526,7 +526,7 @@
      ],
      "text": "B",
      "style": "e_sh_gem",
-     "font": "ttf:din:14:0:1:0.0",
+     "font": "ttf:din:14:0:1:0.5",
      "valign": "centre"
     },
     {
@@ -576,8 +576,8 @@
      ],
      "text": "IF",
      "style": "e_sh_plate",
-     "font": "ttf:din:13:0:1:0.0",
-     "left": 2,
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 1,
      "baseline": 19
     },
     {
@@ -593,7 +593,7 @@
      ],
      "text": "Back",
      "style": "e_sh_plate",
-     "font": "ttf:din:13:0:1:0.0",
+     "font": "ttf:din:14:0:1:0.0",
      "left": -6,
      "baseline": 19
     },
@@ -848,8 +848,8 @@
      ],
      "text": "Normal",
      "style": "e_sh_plate",
-     "font": "ttf:din:13:0:1:0.0",
-     "left": 3,
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 2,
      "baseline": 19
     },
     {
@@ -865,8 +865,8 @@
      ],
      "text": "Normal",
      "style": "e_sh_plate",
-     "font": "ttf:din:13:0:1:0.0",
-     "left": 3,
+     "font": "ttf:din:14:0:1:0.0",
+     "left": 2,
      "baseline": 19
     },
     {
@@ -882,9 +882,9 @@
      ],
      "text": "Standard",
      "style": "e_sh_plate",
-     "font": "ttf:din:10:0:1:0.0",
-     "left": 4,
-     "baseline": 17
+     "font": "ttf:din:11:0:1:0.0",
+     "left": 2,
+     "baseline": 18
     },
     {
      "from": [
@@ -899,9 +899,9 @@
      ],
      "text": "Standard",
      "style": "e_sh_plate",
-     "font": "ttf:din:10:0:1:0.0",
-     "left": 4,
-     "baseline": 17
+     "font": "ttf:din:11:0:1:0.0",
+     "left": 2,
+     "baseline": 18
     },
     {
      "from": [

@@ -210,3 +210,11 @@ STYLES["ctl_plate_def"] = plated("def", pad=1, rings=(7,))
 # the type / rumble bars (page 0 / 1, palettes 3-6): fill index 15 with a light top edge, white ring of two pixels, pale
 # blue ring, blue shadow down and to the right
 STYLES["ctl_bar"] = ringfill([10, 15, 15, 15, 15, 13], [8, 8, 7], [4, 4, 3, 2])
+
+# type / on-off labels of the GameCube, Classic Controller and Wii remote pages (palettes 34-39): letters in the page
+# palette's own fill (index 15), white ring of two pixels, gold shadow down and to the right
+STYLES["ctl_type"] = ringfill([15], [5, 5], [3, 2, 1])
+# 操作 / 振動 headings on the blue bars (palettes 14, 15): white letters, blue ring, shade
+STYLES["ctl_barhead"] = ringfill([15], [7, 7], [6, 5])
+# "this controller is not connected" (palette 56): white letters in a black ring
+STYLES["ctl_msg"] = ringfill([15], [2, 1, 1])

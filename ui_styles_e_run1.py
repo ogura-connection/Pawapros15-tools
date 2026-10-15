@@ -132,19 +132,25 @@ def _orig_rect(arc, bank, page, rect):
     return _plates[key][y0:y1, x0:x1].copy()
 
 
-def gem_text(page, rect, glyph, centre, ring=15, soft=False):
-    """The batter mark on the jewels of the shift editor: the original face (a dark well round the glyph), cleaned of
-    the glyph by filling it from the nearest pixel that is not glyph, with the new letter in white and a black ring."""
-    inner = banded([0, 11, 11, 11, 11, 11, 11], [ring])
-
+def gem_text(page, rect, glyph, box, well, centre):
+    """The batter mark on the jewels of the shift editor: the original face with the glyph's box (x0, y0, x1, y1)
+    filled with the well colour `well`, and the new letter in white with a black shadow below and to the right."""
     def style(ink, base):
         im = _orig_rect("shift_ed.arc", "r4_syu", page, rect)
-        mask = np.isin(im, glyph)
-        out = inpaint(im, mask)
-        art, _ = tight(inner)(np.where(ink >= 3, 6, 0), base)
-        h, w = art.shape
+        out = im.copy()
+        x0, y0, x1, y1 = box
+        out[y0:y1, x0:x1] = 0                                       # the glyph and its dark halo: the jewel shows through
+        letters = np.where(ink >= 3, 1, 0).astype(bool)
+        h, w = letters.shape
+        art = np.zeros((h + 2, w + 2), np.uint8)
+        shadow = ui_type.shift(np.pad(letters, ((0, 2), (0, 2))), 1, 1) | ui_type.shift(np.pad(letters, ((0, 2), (0, 2))), 1, 0) \
+            | ui_type.shift(np.pad(letters, ((0, 2), (0, 2))), 0, 1)
+        art[shadow] = 15
+        art[:h, :w][letters] = 11
         cx, cy = centre
-        out[cy - h // 2:cy - h // 2 + h, cx - w // 2:cx - w // 2 + w][art > 0] = art[art > 0]
+        ah, aw = art.shape
+        area = out[cy - ah // 2:cy - ah // 2 + ah, cx - aw // 2:cx - aw // 2 + aw]
+        area[art > 0] = art[art > 0]
         ys, xs = np.nonzero(im)
         return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], 0
     return style
@@ -179,7 +185,7 @@ STYLES = {
     "e_pl_e1": plated_text("r4_12h", "e1", clean_box((14, 12, 39, 39), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (26, 25), True),
     "e_pl_e2": plated_text("r4_12h", "e2", clean_box((9, 8, 26, 26), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (17, 17), True),
     "e_pl_e3": plated_text("r4_12h", "e3", clean_all(7), [0, 1, 1, 1, 1, 1, 1], [15, 11], (13, 16), True),
-    "e_sh_gem": gem_text(13, (0, 104, 24, 128), [10, 11, 12, 13, 14, 15], (11, 12)),
+    "e_sh_gem": gem_text(13, (0, 104, 24, 128), [10, 11, 12, 13, 14, 15], (4, 6, 20, 21), [1, 2, 3, 4, 5], (11, 13)),
     "e_pl_bc": plated_text("r4_12h", "bc", clean_box((4, 7, 31, 24), (4, 24, 32, 25), (7, 25, 32, 28), fill=15), [0, 9, 6, 4, 2, 1, 1], [], (17, 16)),       # All-Time (palette 85)
     # team-type plates of r4_12h (palettes 32, 34, 37 share their indices): white letters, a dark ring, a lighter ring
     "e_plate": crisp(tight(banded([0, 11, 11, 11, 11, 11, 11], [1, 3]))),
