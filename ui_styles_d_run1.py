@@ -27,3 +27,5 @@ STYLES["d_mrg_name"] = ringfill([0xf], [1])
 STYLES["d_tnp_turn"] = ringfill([4, 4, 3, 3, 2, 2], [0xf, 0xf, 0xf, 5, 5, 6])
 STYLES["d_tnp_def"] = ringfill([4, 5, 5, 8, 8, 8], [0xf, 0xf, 0xf, 3, 3, 2])
 STYLES["d_tnp_atk"] = ringfill([4, 5, 6, 7, 8, 8], [0xf, 0xf, 0xf, 2, 2, 1])
+# y4_kkg_0 position names (palette 2): black italic letters with a thin white edge
+STYLES["d_kkg"] = ringfill([0xf], [1])

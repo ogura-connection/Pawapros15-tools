@@ -72,14 +72,14 @@ def inpaint(im, mask):
     return out
 
 
-def plated_text(bank, sid, clean, fill, rings, shadow=0, centre=None, size=None):
+def plated_text(bank, sid, clean, ramp, rings, centre, sharp=False):
     """A style that returns the whole plate: its original art, `clean`ed of the Japanese, with the ink drawn over
-    it (letters `fill`, solid `rings`, a one-pixel `shadow` colour), centred on `centre` (x, y)."""
-    inner = banded([0] + [fill] * 6, rings, shadow)
+    it (letters shaded with `ramp`, ink 0..6, solid `rings`; `sharp` = no half tones), centred on `centre` (x, y)."""
+    inner = banded(ramp, rings)
 
     def style(ink, base):
         plate = clean(_orig_sprite(bank, sid))
-        art, _ = tight(inner)(np.where(ink >= 3, 6, 0), base)
+        art, _ = tight(inner)(np.where(ink >= 3, 6, 0) if sharp else ink, base)
         cx, cy = centre
         h, w = art.shape
         x0, y0 = cx - w // 2, cy - h // 2
@@ -112,8 +112,8 @@ def clean_inpaint(letters, box=None):
 
 STYLES = {
     "e_scm": scm_style,
-    "e_pl_bb": plated_text("r4_12h", "bb", clean_box((4, 7, 31, 25), fill=15), 1, [], 0, (17, 16)),      # League (palette 84)
-    "e_pl_bc": plated_text("r4_12h", "bc", clean_box((4, 7, 31, 25), (7, 25, 31, 28), fill=15), 1, [], 0, (17, 16)),       # All-Time (palette 85)
+    "e_pl_bb": plated_text("r4_12h", "bb", clean_box((4, 7, 31, 25), fill=15), [0, 8, 5, 3, 2, 1, 1], [], (17, 16)),      # League (palette 84)
+    "e_pl_bc": plated_text("r4_12h", "bc", clean_box((4, 7, 31, 24), (4, 24, 32, 25), (7, 25, 32, 28), fill=15), [0, 9, 6, 4, 2, 1, 1], [], (17, 16)),       # All-Time (palette 85)
     # team-type plates of r4_12h (palettes 32, 34, 37 share their indices): white letters, a dark ring, a lighter ring
     "e_plate": crisp(tight(banded([0, 11, 11, 11, 11, 11, 11], [1, 3]))),
     # Baseball School & Practice (g3_rt): yellow shading to orange in a brown outline, a white band, blue rim and glow

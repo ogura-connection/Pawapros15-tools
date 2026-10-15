@@ -1487,7 +1487,7 @@
    "name": "turning point titles",
    "bank": "y5_tnp_1",
    "style": "d_tnp_turn",
-   "font": "ttf:sans-italic:21:0.0:0.95:0.6",
+   "font": "ttf:sans-italic:23:0.0:0.95:0.65",
    "valign": "centre",
    "areas": [
     [
@@ -1540,6 +1540,83 @@
      "style": "d_tnp_atk",
      "slices": true,
      "slice_width": 128
+    }
+   ]
+  },
+  {
+   "name": "position names",
+   "bank": "y4_kkg_0",
+   "style": "d_kkg",
+   "font": "ttf:sans-italic:24:0.0:0.9:0.4",
+   "valign": "centre",
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "04",
+     "text": "Pitcher",
+     "font": "ttf:sans-italic:24:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "05",
+     "text": "Catcher",
+     "font": "ttf:sans-italic:24:0.0:0.95:0.4"
+    },
+    {
+     "sprite": "06",
+     "text": "First",
+     "font": "ttf:sans-italic:24:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "07",
+     "text": "Second",
+     "font": "ttf:sans-italic:24:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "08",
+     "text": "Third",
+     "font": "ttf:sans-italic:24:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "09",
+     "text": "Short",
+     "font": "ttf:sans-italic:24:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "0a",
+     "text": "Left",
+     "font": "ttf:sans-italic:24:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "0b",
+     "text": "Center",
+     "font": "ttf:sans-italic:24:0.0:1.0:0.4"
+    },
+    {
+     "sprite": "0c",
+     "text": "Right",
+     "font": "ttf:sans-italic:24:0.0:1.0:0.4"
     }
    ]
   }

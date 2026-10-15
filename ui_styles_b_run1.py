@@ -15,6 +15,7 @@ import ui_type
 from ui_styles_ore_ini import ringfill
 
 STYLES = {}
+ui_type.TTF.setdefault("narrowr", ("/System/Library/Fonts/Supplemental/Arial Narrow.ttf", 0))      # the help text
 
 # --- tab buttons (palette 16)
 _TAB = [6, 5, 4, 3, 2, 1, 1]

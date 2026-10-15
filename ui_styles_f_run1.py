@@ -15,9 +15,14 @@ def cast(mask, shadow):
     return out
 
 
-def bandtext(ramp, rings, shadow=(), top=None):
+def trimmed(out, base):
+    ys, xs = np.nonzero(out)
+    return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base - ys.min()
+
+
+def bandtext(ramp, rings, shadow=()):
     """Coloured letters (ramp[ink], ink 0..6) directly inside solid one-pixel rings (innermost first; the first ring
-    keeps square corners, the others are rounded) and a cast shadow (near to far). Palettes 16-23 of g3_od (buttons)."""
+    keeps square corners, the others are rounded) and a cast shadow (near to far)."""
     ramp = np.array(ramp, np.uint8)
 
     def style(ink, base):
@@ -33,11 +38,45 @@ def bandtext(ramp, rings, shadow=(), top=None):
         for m, v in zip(masks[::-1], rings[::-1]):
             out[m] = v
         out[letters] = ramp[big[letters]]
-        ys, xs = np.nonzero(out)
-        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base + pad - ys.min()
+        return trimmed(out, base + pad)
     return style
 
 
-# g3_od buttons: letters 8 (the colour of the palette) shading up to e at the edge, white ring, lilac and blue rings,
-# a light blue shadow
-STYLES["f_btn"] = bandtext([0, 14, 13, 12, 11, 9, 8], [15, 15, 1, 7], [4, 3, 2])
+def onoval(oval, rim, ring, shadow, ramp, height=13, margin=6, ends=(4, 2, 1)):
+    """White letters on a dark oval (a stadium shape `height` rows high, the ends cut in by `ends` pixels on the first
+    rows, `margin` pixels longer than the word each side) with a lighter `rim` row round it, a one-pixel `ring` round
+    the letters (the colour of the oval: letters that stand out of it keep an edge) and the shadow of what hangs out
+    of it. The word headings of the bars in g3_od: the oval replaces the dark middle of the bar, which the heading's
+    part used to carry."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        pd = margin + 2
+        h, w = ink.shape
+        big = np.zeros((h + 2 * 4 + 4, w + 2 * pd), int)
+        big[4:4 + h, pd:pd + w] = ink
+        L = big > 0
+        B = grow(L, 1)
+        cy = 4 + base // 2
+        top = cy - height // 2
+        ov = np.zeros(L.shape, bool)
+        for y in range(top, top + height):
+            d = min(y - top, top + height - 1 - y)
+            inset = ends[d] if d < len(ends) else 0
+            ov[y, pd - margin + inset:pd + w + margin - inset] = True
+        rimm = grow(ov, 1, diagonal=False) & ~ov
+        out = cast(B, shadow)
+        out[(out > 0) & ov] = 0
+        out[rimm] = rim
+        out[ov] = oval
+        out[B & ~ov] = ring
+        out[L] = ramp[big[L]]
+        return trimmed(out, base + 4)
+    return style
+
+
+# g3_od buttons (palettes 16-23): letters in the colour of the palette (8 .. e, e the light edge), a white ring, a
+# blue ring, a light blue shadow
+STYLES["f_btn"] = bandtext([0, 12, 10, 9, 8, 8, 8], [15, 7], [4, 3])
+# g3_od bars (palettes 32-36): white letters on the dark oval (1) with a lighter rim (4); a light blue shadow (13, 12)
+STYLES["f_bar"] = onoval(1, 4, 1, [13, 12], [0, 9, 9, 8, 8, 8, 8])
