@@ -1,0 +1,655 @@
+{
+ "arc": "pn_gaijn.arc",
+ "repack": [
+  {
+   "bank": "g3_pg_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     32,
+     128,
+     128
+    ],
+    [
+     1,
+     56,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     40,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     72,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     48,
+     24
+    ],
+    [
+     6,
+     32,
+     48,
+     48,
+     72
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Create",
+     "style": "b6_g3_pg_0_58",
+     "font": "ttf:narrow:17:0.0:0.82:0.3",
+     "baseline": 24,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      58
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Cancel",
+     "style": "b6_g3_pg_0_42",
+     "font": "ttf:narrow:17:0.0:0.82:0.3",
+     "baseline": 24,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      42
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "List",
+     "style": "b6_g3_pg_0_55",
+     "font": "ttf:rounded:20:0.0:1.0:0.3",
+     "baseline": 26,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Sign",
+     "style": "b6_g3_pg_0_40",
+     "font": "ttf:rounded:19:0.0:0.94:0.3",
+     "baseline": 26,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Remove\nfrom List",
+     "style": "b6_g3_pg_0_42",
+     "font": "ttf:narrow:13:0.0:0.82:0.3",
+     "pages": [
+      1
+     ],
+     "palettes": [
+      42
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "09",
+     "text": "Scout\nImports",
+     "style": "b6_g3_pg_0_128",
+     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "pages": [
+      2
+     ],
+     "palettes": [
+      128
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "0a",
+     "text": "Import Watch List",
+     "style": "b6_g3_pg_0_128",
+     "font": "ttf:narrow:22:0.0:0.82:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "pages": [
+      2,
+      3
+     ],
+     "palettes": [
+      128
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "Create Search Request",
+     "style": "b6_g3_pg_0_128",
+     "font": "ttf:narrow:19:0.0:0.82:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "pages": [
+      2,
+      3
+     ],
+     "palettes": [
+      128
+     ]
+    },
+    {
+     "sprite": "0d",
+     "text": "Search Request Details",
+     "style": "b6_g3_pg_0_129",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "pages": [
+      4
+     ],
+     "palettes": [
+      129
+     ]
+    },
+    {
+     "sprite": "0e",
+     "text": "Import Watch List",
+     "style": "b6_g3_pg_0_129",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "pages": [
+      4
+     ],
+     "palettes": [
+      129
+     ]
+    },
+    {
+     "sprite": "28",
+     "text": "No search request filed right now!",
+     "style": "b6_g3_pg_0_134",
+     "font": "ttf:narrow:22:0.0:0.88:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "pages": [
+      5,
+      7
+     ],
+     "palettes": [
+      134
+     ]
+    },
+    {
+     "sprite": "29",
+     "text": "No players found",
+     "style": "b6_g3_pg_0_153",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "pages": [
+      6
+     ],
+     "palettes": [
+      153
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      96,
+      80
+     ],
+     "text": "*These ratings are",
+     "style": "b6_g3_pg_0_130_s",
+     "font": "ttf:narrow:9:0.0:1.0:0.12",
+     "baseline": 12,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      0,
+      80,
+      96,
+      96
+     ],
+     "text": "the scout's own",
+     "style": "b6_g3_pg_0_130_s",
+     "font": "ttf:narrow:9:0.0:1.0:0.12",
+     "baseline": 12,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      96,
+      112
+     ],
+     "text": "judgment",
+     "style": "b6_g3_pg_0_130_s",
+     "font": "ttf:narrow:9:0.0:1.0:0.12",
+     "baseline": 12,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      0,
+      112,
+      96,
+      128
+     ],
+     "text": "(not actual)",
+     "style": "b6_g3_pg_0_130_s",
+     "font": "ttf:narrow:9:0.0:1.0:0.12",
+     "baseline": 12,
+     "left": 3
+    },
+    {
+     "from": [
+      0,
+      0,
+      104,
+      56,
+      128
+     ],
+     "text": "Bonus",
+     "style": "b6_g3_pg_0_133",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 28
+    },
+    {
+     "from": [
+      5,
+      0,
+      40,
+      64,
+      64
+     ],
+     "text": "Position",
+     "style": "b6_g3_pg_0_133",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 32
+    },
+    {
+     "from": [
+      5,
+      64,
+      40,
+      128,
+      64
+     ],
+     "text": "Throws",
+     "style": "b6_g3_pg_0_133",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 32
+    },
+    {
+     "from": [
+      5,
+      0,
+      64,
+      80,
+      88
+     ],
+     "text": "Player Type",
+     "style": "b6_g3_pg_0_133",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 40
+    },
+    {
+     "from": [
+      5,
+      80,
+      64,
+      120,
+      88
+     ],
+     "text": "Pitch Type",
+     "style": "b6_g3_pg_0_133",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 40
+    },
+    {
+     "from": [
+      5,
+      40,
+      64,
+      80,
+      88
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      88,
+      64,
+      112
+     ],
+     "text": "Career",
+     "style": "b6_g3_pg_0_133",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 32
+    },
+    {
+     "from": [
+      5,
+      64,
+      88,
+      112,
+      112
+     ],
+     "text": "Received",
+     "style": "b6_g3_pg_0_133",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 24
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      24,
+      24
+     ],
+     "text": "+",
+     "style": "b6_g3_pg_0_153_s",
+     "font": "ttf:narrow:9:0.0:0.88:0.12",
+     "baseline": 17,
+     "centre_x": 12
+    },
+    {
+     "from": [
+      6,
+      24,
+      0,
+      48,
+      24
+     ],
+     "text": "more",
+     "style": "b6_g3_pg_0_153_s",
+     "font": "ttf:narrow:9:0.0:0.88:0.12",
+     "baseline": 17,
+     "centre_x": 12
+    }
+   ],
+   "name": "g3_pg_0",
+   "share": true
+  },
+  {
+   "bank": "g3_pgy_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     8,
+     8,
+     120,
+     120
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      8,
+      8,
+      120,
+      56
+     ],
+     "text": "Import Search Request",
+     "style": "b6_g3_pgy_0_148",
+     "font": "ttf:narrow:11:0.0:0.82:0.3",
+     "baseline": 30,
+     "centre_x": 84
+    },
+    {
+     "from": [
+      1,
+      8,
+      56,
+      64,
+      104
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      16
+     ],
+     "text": "Please find an import",
+     "style": "b6_g3_pgy_0_148",
+     "font": "ttf:narrow:11:0.0:0.82:0.3",
+     "baseline": 14,
+     "centre_x": 64
+    },
+    {
+     "from": [
+      2,
+      0,
+      16,
+      104,
+      32
+     ],
+     "text": "matching the above.",
+     "style": "b6_g3_pgy_0_148",
+     "font": "ttf:narrow:11:0.0:0.82:0.3",
+     "baseline": 14,
+     "centre_x": 52
+    },
+    {
+     "from": [
+      3,
+      80,
+      48,
+      120,
+      64
+     ],
+     "text": "Received",
+     "style": "b6_g3_pgy_0_148",
+     "font": "ttf:narrow:11:0.0:0.82:0.3",
+     "baseline": 14,
+     "centre_x": 20
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      64,
+      24
+     ],
+     "text": "Position",
+     "style": "b6_g3_pgy_0_149",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 32
+    },
+    {
+     "from": [
+      3,
+      64,
+      0,
+      112,
+      24
+     ],
+     "text": "Throws",
+     "style": "b6_g3_pgy_0_149",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 24
+    },
+    {
+     "from": [
+      3,
+      112,
+      0,
+      128,
+      24
+     ],
+     "text": "Player Type",
+     "style": "b6_g3_pgy_0_149",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 40
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      64,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      64,
+      24,
+      128,
+      48
+     ],
+     "text": "Pitch Type",
+     "style": "b6_g3_pgy_0_149",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 40
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      16,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      16,
+      48,
+      80,
+      72
+     ],
+     "text": "Career",
+     "style": "b6_g3_pgy_0_149",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 32
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      56,
+      48
+     ],
+     "text": "Bonus",
+     "style": "b6_g3_pgy_0_149",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 14,
+     "centre_x": 29
+    }
+   ],
+   "name": "g3_pgy_0",
+   "share": true
+  }
+ ]
+}

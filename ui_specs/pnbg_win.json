@@ -1,0 +1,40 @@
+{
+ "arc": "pnbg_win.arc",
+ "repack": [
+  {
+   "bank": "v2_pbg4",
+   "palette": 0,
+   "style": "e6_logo_pbg4",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     24,
+     40,
+     128,
+     128
+    ],
+    [
+     1,
+     104,
+     24,
+     128,
+     40
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Pennant Race",
+     "style": "e6_logo_pbg4",
+     "font": "ttf:narrow:24:0.0:0.92:0.55",
+     "slices": true,
+     "slice_width": 104,
+     "dy": 2
+    }
+   ],
+   "name": "v2_pbg4"
+  }
+ ]
+}

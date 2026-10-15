@@ -162,6 +162,7 @@ S["e6_b5_small"] = ringfill([1], [12])
 _LOGO = ringfill([8, 8, 8, 9, 9, 9], [15, 15, 6, 6])
 S["e6_logo_in"] = _LOGO
 S["e6_logo_pbg"] = onwhite(_LOGO, 184, 48)
+S["e6_logo_pbg4"] = onwhite(_LOGO, 184, 40)     # pnbg_win: the only room for the 80-wide strip is 80 x 40
 
 
 def arrow(inner):
