@@ -1,0 +1,137 @@
+{
+ "arc": "sct_a_od.arc",
+ "repack": [
+  {
+   "bank": "z4_edo_0",
+   "palette": 0,
+   "style": "e4_od_blue",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     88,
+     104,
+     128
+    ],
+    [
+     1,
+     64,
+     56,
+     120,
+     104
+    ],
+    [
+     1,
+     80,
+     0,
+     104,
+     48
+    ],
+    [
+     1,
+     0,
+     104,
+     80,
+     128
+    ],
+    [
+     1,
+     80,
+     104,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     32,
+     24
+    ],
+    [
+     2,
+     32,
+     0,
+     104,
+     24
+    ],
+    [
+     2,
+     104,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     0,
+     24,
+     40,
+     48
+    ],
+    [
+     0,
+     104,
+     88,
+     128,
+     128
+    ],
+    [
+     2,
+     64,
+     104,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Set Order",
+     "style": "e4_od_title",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 67
+    },
+    {
+     "sprite": "0a",
+     "text": "Cancel",
+     "style": "e4_od_cancel",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 33
+    },
+    {
+     "sprite": "0b",
+     "text": "Starter",
+     "style": "e4_od_blue",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 18
+    },
+    {
+     "sprite": "0c",
+     "text": "On Bench",
+     "style": "e4_od_blue",
+     "font": "ttf:rounded:13:0.0:0.92:0.25",
+     "baseline": 18
+    },
+    {
+     "sprite": "0d",
+     "text": "Off Bench",
+     "style": "e4_od_blue",
+     "font": "ttf:rounded:11:0.0:0.92:0.25",
+     "baseline": 17
+    },
+    {
+     "sprite": "0e",
+     "text": "Lock",
+     "style": "e4_od_blue",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 18
+    }
+   ],
+   "name": "order screen",
+   "split": true
+  }
+ ]
+}
