@@ -178,7 +178,7 @@ STYLES["d2_st_r2"] = ringfill([14, 10, 7], [1, 15, 15], [])                     
 STYLES["d2_st_r4"] = ringfill([14, 11, 8], [1, 15, 15], [])                           # palette 8: 4th / 5th green
 STYLES["d2_st_r6"] = ringfill([13, 11, 8], [1, 15, 15], [9])                           # palette 9: 6th cyan
 STYLES["d2_st_r7"] = ringfill([13, 10, 8], [1, 15, 15], [7])                        # palette 10: 7th lavender
-STYLES["d2_st_school"] = ringfill([14, 13], [4, 4], [])                                       # palette 24: pale letters, green outline
+STYLES["d2_st_school"] = ringfill([3, 2, 2], [15, 14], [])                                   # palette 24: green letters, pale outline
 STYLES["d2_st_head"] = ringfill([13, 12, 12, 10], [2, 2], [])                                 # palette 5: yellow letters, navy outline
 STYLES["d2_st_single"] = ringfill([2, 3], [15], [9])                                           # palette 18: navy letters, white edge
 

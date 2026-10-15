@@ -68,8 +68,8 @@ STYLES["a_thin5"] = flat([0, 7, 5, 3, 2, 1, 1])
 STYLES["a_thin32"] = flat([0, 4, 7, 10, 12, 14, 15])
 STYLES["a_tab19"] = flat([0, 12, 9, 6, 4, 2, 1])
 # y5_sss_0 (palette 16 title, 28 buttons): blue and white lettering
-STYLES["a_y5title"] = ringfill([15, 15, 14, 13, 12, 11], [8, 4, 2], [1])
-STYLES["a_y5btn"] = ringfill([3, 2, 2, 2], [15, 15], [10])
+STYLES["a_y5title"] = ringfill([15, 15, 14, 13, 12, 11], [6, 3, 2], [1])
+STYLES["a_y5btn"] = ringfill([3, 2, 2, 2], [15], [9])
 
 
 # z3_sav_0: title (palette 28), buttons 終了 / 登録 (37, 38), プロ入り選手 (45; 14 draws its dark copy), パスワードを見る and
