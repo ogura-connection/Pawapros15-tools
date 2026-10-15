@@ -273,8 +273,8 @@
      128
     ],
     [
-     3,
-     0,
+     2,
+     24,
      96,
      64,
      128
@@ -348,11 +348,11 @@
      128
     ],
     [
-     1,
-     40,
-     0,
-     96,
-     56
+     6,
+     64,
+     80,
+     128,
+     96
     ]
    ],
    "labels": [
@@ -499,11 +499,11 @@
      64
     ],
     [
-     6,
+     3,
+     0,
+     96,
      64,
-     80,
-     128,
-     96
+     128
     ]
    ],
    "labels": [
@@ -511,40 +511,40 @@
      "sprite": "2c",
      "text": "Salary",
      "style": "d6_wn216",
-     "font": "ttf:rounded:8:0.0:1.0:0.25",
-     "baseline": 18
+     "font": "ttf:rounded:13:0.0:0.85:0.25",
+     "baseline": 20
     },
     {
      "sprite": "2e",
      "text": "Multi-Year Deal",
      "style": "d6_wn216",
-     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "font": "ttf:rounded:12:0.0:0.85:0.25",
      "slices": true,
      "slice_width": 64,
-     "dy": 2
+     "dy": 3
     },
     {
      "sprite": "2f",
      "text": "yr deal",
      "style": "d6_wn216",
-     "font": "ttf:rounded:8:0.0:1.0:0.25",
-     "baseline": 17
+     "font": "ttf:rounded:15:0.0:0.85:0.25",
+     "baseline": 20
     },
     {
      "sprite": "30",
      "text": "Number",
      "style": "d6_wn216",
-     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "font": "ttf:rounded:13:0.0:0.85:0.25",
      "slices": true,
      "slice_width": 40,
-     "dy": 2
+     "dy": 3
     },
     {
      "sprite": "32",
      "text": "yr",
      "style": "d6_wn216",
-     "font": "ttf:rounded:8:0.0:1.0:0.25",
-     "baseline": 17
+     "font": "ttf:rounded:17:0.0:0.85:0.25",
+     "baseline": 22
     }
    ],
    "name": "w216"
@@ -715,11 +715,11 @@
      72
     ],
     [
-     2,
-     24,
+     1,
+     40,
+     0,
      96,
-     64,
-     128
+     56
     ]
    ],
    "labels": [
@@ -727,43 +727,43 @@
      "sprite": "89",
      "text": "AVG",
      "style": "d6_wn213",
-     "font": "ttf:narrow:8:0.0:1.0:0.25",
-     "baseline": 17
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 18
     },
     {
      "sprite": "8a",
      "text": "HR",
      "style": "d6_wn213",
-     "font": "ttf:narrow:8:0.0:1.0:0.25",
-     "baseline": 16
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 17
     },
     {
      "sprite": "8b",
      "text": "RBI",
      "style": "d6_wn213",
-     "font": "ttf:narrow:8:0.0:1.0:0.25",
-     "baseline": 16
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 17
     },
     {
      "sprite": "8c",
      "text": "ERA",
      "style": "d6_wn213",
-     "font": "ttf:narrow:8:0.0:1.0:0.25",
-     "baseline": 16
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "baseline": 17
     },
     {
      "sprite": "8d",
      "text": "W",
      "style": "d6_wn213",
-     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 16
     },
     {
      "sprite": "8e",
      "text": "L",
      "style": "d6_wn213",
-     "font": "ttf:narrow:8:0.0:1.0:0.25",
-     "baseline": 16
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 18
     }
    ],
    "name": "w213"
