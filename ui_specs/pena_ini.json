@@ -1030,10 +1030,12 @@
     },
     {
      "sprite": "02",
-     "text": "With\nFriends",
-     "style": "c6_s4_tai00_00_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 4
+     "text": "With Friends",
+     "style": "c6_s4_tai00_00",
+     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 74,
+     "dy": 2
     },
     {
      "sprite": "03",
