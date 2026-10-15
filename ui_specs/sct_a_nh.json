@@ -11,8 +11,8 @@
     128,
     32
    ],
-   "text": "Cherry blossoms dance.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "Cherry blossoms",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_01_0"
   },
@@ -25,8 +25,8 @@
     64,
     64
    ],
-   "text": "Cherry blossoms dance.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "Cherry blossoms",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_01_1"
   },
@@ -39,8 +39,8 @@
     128,
     64
    ],
-   "text": "April, spring. A man took over as manager",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "dance. April, spring. A man",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_02_0"
   },
@@ -53,8 +53,8 @@
     128,
     96
    ],
-   "text": "April, spring. A man took over as manager",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "dance. April, spring. A man",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_02_1"
   },
@@ -67,8 +67,8 @@
     96,
     128
    ],
-   "text": "April, spring. A man took over as manager",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "dance. April, spring. A man",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_02_2"
   },
@@ -81,8 +81,8 @@
     128,
     128
    ],
-   "text": "of a certain high school's baseball club.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "took over as manager of a",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_03_0"
   },
@@ -95,8 +95,8 @@
     128,
     32
    ],
-   "text": "of a certain high school's baseball club.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "took over as manager of a",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_03_1"
   },
@@ -109,8 +109,8 @@
     104,
     64
    ],
-   "text": "of a certain high school's baseball club.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "took over as manager of a",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_03_2"
   },
@@ -123,8 +123,8 @@
     128,
     64
    ],
-   "text": "His aim: a contender, then a powerhouse.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "certain high school's baseball",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_04_0"
   },
@@ -137,8 +137,8 @@
     128,
     96
    ],
-   "text": "His aim: a contender, then a powerhouse.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "certain high school's baseball",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_04_1"
   },
@@ -151,8 +151,8 @@
     128,
     128
    ],
-   "text": "His aim: a contender, then a powerhouse.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "certain high school's baseball",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_04_2"
   },
@@ -165,8 +165,8 @@
     24,
     32
    ],
-   "text": "His aim: a contender, then a powerhouse.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "certain high school's baseball",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_04_3"
   },
@@ -179,8 +179,8 @@
     128,
     32
    ],
-   "text": "What awaits the club he leads,",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "club. His aim: a contender, then a",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_05_0"
   },
@@ -193,8 +193,8 @@
     128,
     64
    ],
-   "text": "What awaits the club he leads,",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "club. His aim: a contender, then a",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_05_1"
   },
@@ -207,8 +207,8 @@
     104,
     96
    ],
-   "text": "What awaits the club he leads,",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "club. His aim: a contender, then a",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_05_2"
   },
@@ -221,8 +221,8 @@
     128,
     96
    ],
-   "text": "from this day on?",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "powerhouse. What awaits the club he leads,",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_06_0"
   },
@@ -235,8 +235,8 @@
     128,
     128
    ],
-   "text": "from this day on?",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "powerhouse. What awaits the club he leads,",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_06_1"
   },
@@ -249,8 +249,8 @@
     128,
     32
    ],
-   "text": "from this day on?",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "powerhouse. What awaits the club he leads,",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_06_2"
   },
@@ -263,8 +263,8 @@
     128,
     64
    ],
-   "text": "from this day on?",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "powerhouse. What awaits the club he leads,",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_06_3"
   },
@@ -277,8 +277,8 @@
     16,
     96
    ],
-   "text": "from this day on?",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "powerhouse. What awaits the club he leads,",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_06_4"
   },
@@ -291,8 +291,8 @@
     128,
     96
    ],
-   "text": "Here, a new page of history begins.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "from this day on? Here, a new page of history",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_07_0"
   },
@@ -305,8 +305,8 @@
     128,
     128
    ],
-   "text": "Here, a new page of history begins.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "from this day on? Here, a new page of history",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_07_1"
   },
@@ -319,8 +319,8 @@
     128,
     32
    ],
-   "text": "Here, a new page of history begins.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "from this day on? Here, a new page of history",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_07_2"
   },
@@ -333,8 +333,8 @@
     64,
     64
    ],
-   "text": "Here, a new page of history begins.",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "from this day on? Here, a new page of history",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_07_3"
   },
@@ -347,8 +347,8 @@
     128,
     64
    ],
-   "text": "Onward...",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "begins. Onward...",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_08_0"
   },
@@ -361,8 +361,8 @@
     128,
     96
    ],
-   "text": "Onward...",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "text": "begins. Onward...",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_08_1"
   },
@@ -376,7 +376,7 @@
     128
    ],
    "text": "to win the crown that is the national title!",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_09_0"
   },
@@ -390,7 +390,7 @@
     32
    ],
    "text": "to win the crown that is the national title!",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_09_1"
   },
@@ -404,7 +404,7 @@
     64
    ],
    "text": "to win the crown that is the national title!",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_09_2"
   },
@@ -418,7 +418,7 @@
     96
    ],
    "text": "to win the crown that is the national title!",
-   "font": "ttf:c4serif:11:0.0:0.93:0.25",
+   "font": "ttf:c4serif:18:0.0:0.82:0.25",
    "copy": "clear",
    "style": "c4_es_09_3"
   }
