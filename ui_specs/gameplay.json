@@ -1883,6 +1883,202 @@
      "text": "Relief"
     }
    ]
+  },
+  {
+   "name": "score challenge",
+   "bank": "h3_rt_0",
+   "style": "d_rt_80",
+   "font": "ttf:rounded:12:0.0:0.95:0.0",
+   "valign": "centre",
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     3,
+     8,
+     24,
+     128,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     128,
+     72
+    ],
+    [
+     3,
+     0,
+     72,
+     128,
+     96
+    ],
+    [
+     3,
+     0,
+     96,
+     128,
+     120
+    ],
+    [
+     2,
+     0,
+     104,
+     72,
+     128
+    ]
+   ],
+   "blank": [
+    [
+     3,
+     0,
+     24,
+     8,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": "High Score",
+     "style": "d_rt_71",
+     "font": "ttf:rounded:12:0.0:0.75:0.0",
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      24
+     ],
+     "text": "Score",
+     "style": "d_rt_48",
+     "font": "ttf:rounded:12:0.0:0.9:0.0",
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      8,
+      24,
+      32,
+      48
+     ],
+     "text": "pts",
+     "style": "d_rt_26",
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      32,
+      24,
+      72,
+      48
+     ],
+     "text": "Pitches Left",
+     "style": "d_rt_70",
+     "font": "ttf:rounded:11:0.0:0.75:0.0",
+     "left": -30
+    },
+    {
+     "from": [
+      3,
+      72,
+      24,
+      96,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      40,
+      48,
+      128,
+      72
+     ],
+     "text": "Their Score",
+     "style": "d_rt_72",
+     "font": "ttf:rounded:11:0.0:0.8:0.0",
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      88,
+      96
+     ],
+     "text": "Your Score",
+     "style": "d_rt_71",
+     "font": "ttf:rounded:12:0.0:0.75:0.0",
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      88,
+      72,
+      128,
+      96
+     ],
+     "text": "Pitcher Pts",
+     "style": "d_rt_70",
+     "font": "ttf:rounded:12:0.0:0.75:0.0",
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      48,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      48,
+      96,
+      128,
+      120
+     ],
+     "text": "To Pass",
+     "style": "d_rt_54",
+     "font": "ttf:rounded:12:0.0:0.8:0.0",
+     "left": 0
+    },
+    {
+     "sprite": "18",
+     "pages": [
+      3
+     ],
+     "text": "Bonus",
+     "style": "d_oma_72",
+     "font": "ttf:rounded:15:0.0:1.0:0.0",
+     "valign": "centre"
+    }
+   ]
   }
  ],
  "paint": [

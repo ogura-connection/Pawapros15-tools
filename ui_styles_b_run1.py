@@ -55,7 +55,9 @@ _HLP = thin(ringfill([15], [4]), 2)
 STYLES["hlp_raw"] = _HLP
 for _w in range(16, 200):
     STYLES["hlp%d" % _w] = canvas(_HLP, _w, 16, 11)              # cap 9, 16 rows, baseline on row 11
-    STYLES["hlq%d" % _w] = canvas(_HLP, _w, 17, 12)              # cap 10, 17 rows, baseline on row 12
+    for _h in range(12, 17):                                     # exact canvases: height, baseline row
+        for _b in range(8, 12):
+            STYLES["hlp%d_%d_%d" % (_w, _h, _b)] = canvas(_HLP, _w, _h, _b)
 
 
 # --- the blue bars (palette 21): 224 wide, 16 high, the rounded ends of the original bar

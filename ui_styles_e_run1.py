@@ -139,7 +139,7 @@ def gem_text(page, rect, glyph, box, well, centre):
         im = _orig_rect("shift_ed.arc", "r4_syu", page, rect)
         out = im.copy()
         x0, y0, x1, y1 = box
-        out[y0:y1, x0:x1] = 0                                       # the glyph and its dark halo: the jewel shows through
+        out[y0:y1, x0:x1] = well                                    # the glyph and its halo: the well's own dark
         letters = np.where(ink >= 3, 1, 0).astype(bool)
         h, w = letters.shape
         art = np.zeros((h + 2, w + 2), np.uint8)
@@ -185,7 +185,7 @@ STYLES = {
     "e_pl_e1": plated_text("r4_12h", "e1", clean_box((14, 12, 39, 39), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (26, 25), True),
     "e_pl_e2": plated_text("r4_12h", "e2", clean_box((9, 8, 26, 26), fill=10), [0, 15, 15, 15, 15, 15, 15], [1, 3], (17, 17), True),
     "e_pl_e3": plated_text("r4_12h", "e3", clean_all(7), [0, 1, 1, 1, 1, 1, 1], [15, 11], (13, 16), True),
-    "e_sh_gem": gem_text(13, (0, 104, 24, 128), [10, 11, 12, 13, 14, 15], (4, 6, 20, 21), [1, 2, 3, 4, 5], (11, 13)),
+    "e_sh_gem": gem_text(13, (0, 104, 24, 128), [10, 11, 12, 13, 14, 15], (4, 6, 22, 22), 1, (13, 14)),
     "e_pl_bc": plated_text("r4_12h", "bc", clean_box((4, 7, 31, 24), (4, 24, 32, 25), (7, 25, 32, 28), fill=15), [0, 9, 6, 4, 2, 1, 1], [], (17, 16)),       # All-Time (palette 85)
     # team-type plates of r4_12h (palettes 32, 34, 37 share their indices): white letters, a dark ring, a lighter ring
     "e_plate": crisp(tight(banded([0, 11, 11, 11, 11, 11, 11], [1, 3]))),

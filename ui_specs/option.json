@@ -960,7 +960,7 @@
     {
      "sprite": "36",
      "text": "Fielding and running on Auto,\nContact Cursor on Lock-On.",
-     "style": "hlp138",
+     "style": "hlp138_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 46,
@@ -974,7 +974,7 @@
     {
      "sprite": "37",
      "text": "Sets every option\nto the standard setting.",
-     "style": "hlp107",
+     "style": "hlp107_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 54,
@@ -988,7 +988,7 @@
     {
      "sprite": "38",
      "text": "The easy control type\nPawapuro recommends.",
-     "style": "hlp112",
+     "style": "hlp112_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 56,
@@ -1002,7 +1002,7 @@
     {
      "sprite": "39",
      "text": "Pick bases with\nthe direction buttons.",
-     "style": "hlp101",
+     "style": "hlp101_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 51,
@@ -1011,12 +1011,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "3a",
      "text": "Rumbles on hits and more.",
-     "style": "hlp124",
+     "style": "hlp124_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 42,
@@ -1025,12 +1025,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "3b",
      "text": "No rumble.",
-     "style": "hlp52",
+     "style": "hlp52_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1039,12 +1039,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "3c",
      "text": "You control everything.",
-     "style": "hlp108",
+     "style": "hlp108_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1058,7 +1058,7 @@
     {
      "sprite": "3d",
      "text": "You control only\nthe lead runner.\nCPU level adjustable.",
-     "style": "hlp98",
+     "style": "hlp98_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 49,
@@ -1072,7 +1072,7 @@
     {
      "sprite": "3e",
      "text": "The CPU controls everything.\nUse Auto while you learn.\nCPU level adjustable.",
-     "style": "hlp133",
+     "style": "hlp133_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 67,
@@ -1086,7 +1086,7 @@
     {
      "sprite": "3f",
      "text": "The CPU fields the ball,\nyou make the throw.\nCPU level adjustable.",
-     "style": "hlp107",
+     "style": "hlp107_15_11",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 54,
@@ -1095,12 +1095,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "40",
      "text": "You make every call,\nsubstitutions included.",
-     "style": "hlp106",
+     "style": "hlp106_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 53,
@@ -1114,7 +1114,7 @@
     {
      "sprite": "41",
      "text": "The CPU makes every call,\nsubstitutions included.",
-     "style": "hlp120",
+     "style": "hlp120_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 60,
@@ -1128,7 +1128,7 @@
     {
      "sprite": "42",
      "text": "Hit the sweet spot\nfor a hard-hit ball.",
-     "style": "hlp83",
+     "style": "hlp83_16_11",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 42,
@@ -1142,7 +1142,7 @@
     {
      "sprite": "43",
      "text": "Anywhere on the Contact Cursor\nhits like the sweet spot.",
-     "style": "hlp149",
+     "style": "hlp149_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 75,
@@ -1156,7 +1156,7 @@
     {
      "sprite": "44",
      "text": "The Contact Cursor moves\ntoward the ball by itself.\nThe higher the level,\nthe easier to square it up.",
-     "style": "hlp120",
+     "style": "hlp120_16_11",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 60,
@@ -1170,7 +1170,7 @@
     {
      "sprite": "45",
      "text": "No mark shows where\nthe ball will land.",
-     "style": "hlp102",
+     "style": "hlp102_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 102,
@@ -1179,12 +1179,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "46",
      "text": "A mark shows where\nthe ball will land,\nmaking fielding easier.",
-     "style": "hlp106",
+     "style": "hlp106_15_11",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 106,
@@ -1193,12 +1193,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "47",
      "text": "A cursor you move\nwhen pitching\nmakes pitching easier.",
-     "style": "hlp104",
+     "style": "hlp104_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 52,
@@ -1212,7 +1212,7 @@
     {
      "sprite": "48",
      "text": "No cursor when\nyou pitch.\nFor purists.",
-     "style": "hlp72",
+     "style": "hlp72_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1226,7 +1226,7 @@
     {
      "sprite": "49",
      "text": "Your chosen pitch\nis not shown.",
-     "style": "hlp82",
+     "style": "hlp82_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 82,
@@ -1240,7 +1240,7 @@
     {
      "sprite": "4a",
      "text": "Your chosen pitch\nis shown.",
-     "style": "hlp82",
+     "style": "hlp82_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 41,
@@ -1254,7 +1254,7 @@
     {
      "sprite": "4b",
      "text": "The strike zone\nis not shown.\nFor purists.",
-     "style": "hlp70",
+     "style": "hlp70_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 70,
@@ -1268,7 +1268,7 @@
     {
      "sprite": "4c",
      "text": "The strike zone\nis shown.",
-     "style": "hlp70",
+     "style": "hlp70_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1277,12 +1277,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "4d",
      "text": "The CPU sets every\nplayer's condition.",
-     "style": "hlp87",
+     "style": "hlp87_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 44,
@@ -1296,7 +1296,7 @@
     {
      "sprite": "4e",
      "text": "Every player is in\nGreat condition.",
-     "style": "hlp78",
+     "style": "hlp78_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1310,7 +1310,7 @@
     {
      "sprite": "4f",
      "text": "Every player is in\nGood condition.",
-     "style": "hlp78",
+     "style": "hlp78_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1324,7 +1324,7 @@
     {
      "sprite": "50",
      "text": "Every player is in\nNormal condition.",
-     "style": "hlp84",
+     "style": "hlp84_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 42,
@@ -1338,7 +1338,7 @@
     {
      "sprite": "51",
      "text": "Every player is in\nPoor condition.",
-     "style": "hlp78",
+     "style": "hlp78_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1352,7 +1352,7 @@
     {
      "sprite": "52",
      "text": "Every player is in\nAwful condition.",
-     "style": "hlp78",
+     "style": "hlp78_16_11",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1366,7 +1366,7 @@
     {
      "sprite": "5a",
      "text": "The CPU controls\neverything.",
-     "style": "hlp79",
+     "style": "hlp79_14_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 79,
@@ -1380,7 +1380,7 @@
     {
      "sprite": "5c",
      "text": "Pick bases with\nthe Control Stick.",
-     "style": "hlp79",
+     "style": "hlp79_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1389,12 +1389,12 @@
       24
      ],
      "left": 8,
-     "dy": -11
+     "dy": -12
     },
     {
      "sprite": "62",
      "text": "Pick bases with\nthe +Control Pad.",
-     "style": "hlp84",
+     "style": "hlp84_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 42,
@@ -1403,12 +1403,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "67",
      "text": "Pitch without the\ncatcher window.",
-     "style": "hlp79",
+     "style": "hlp79_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1417,12 +1417,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "68",
      "text": "Pitch with the\ncatcher window shown.",
-     "style": "hlp108",
+     "style": "hlp108_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 54,
@@ -1431,12 +1431,12 @@
       24
      ],
      "left": 8,
-     "dy": 0
+     "dy": -1
     },
     {
      "sprite": "69",
      "text": "Pitch from the\npitcher's view.",
-     "style": "hlp65",
+     "style": "hlp65_16_11",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 65,
@@ -1450,7 +1450,7 @@
     {
      "sprite": "6d",
      "text": "No callouts.\nPlayer names and\npositions are shown.",
-     "style": "hlp95",
+     "style": "hlp95_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 48,
@@ -1464,7 +1464,7 @@
     {
      "sprite": "6e",
      "text": "When fielding,\nteammates call out\nwhere the ball went.",
-     "style": "hlp95",
+     "style": "hlp95_15_11",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 48,
@@ -1473,12 +1473,12 @@
       24
      ],
      "left": 8,
-     "dy": 1
+     "dy": 0
     },
     {
      "sprite": "73",
      "text": "Pick bases with\nthe left stick.",
-     "style": "hlp69",
+     "style": "hlp69_13_11",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1487,12 +1487,12 @@
       24
      ],
      "left": 8,
-     "dy": -11
+     "dy": -13
     },
     {
      "sprite": "74",
      "text": "Pick bases with\nthe L stick.",
-     "style": "hlp69",
+     "style": "hlp69_12_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 40,
@@ -1501,12 +1501,12 @@
       24
      ],
      "left": 8,
-     "dy": -11
+     "dy": -12
     },
     {
      "sprite": "78",
      "text": "Shows the impact point\nas a ball, so its spin\nis easy to read.",
-     "style": "hlp110",
+     "style": "hlp110_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 55,
@@ -1520,7 +1520,7 @@
     {
      "sprite": "79",
      "text": "Shows the impact point\nas a +, so its center\nis easy to see.",
-     "style": "hlp110",
+     "style": "hlp110_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 55,
@@ -1534,7 +1534,7 @@
     {
      "sprite": "7a",
      "text": "When pitching, shows\nthe break direction\nand the pitch name.",
-     "style": "hlp103",
+     "style": "hlp103_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 103,
@@ -1548,7 +1548,7 @@
     {
      "sprite": "7b",
      "text": "When pitching, shows\nonly the break direction.",
-     "style": "hlp113",
+     "style": "hlp113_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 113,
@@ -1562,7 +1562,7 @@
     {
      "sprite": "7c",
      "text": "When pitching, hides\nthe break direction\nand the pitch name.",
-     "style": "hlp100",
+     "style": "hlp100_15_10",
      "font": "ttf:avm:9:0:1.0:0.0",
      "slices": true,
      "slice_width": 100,
