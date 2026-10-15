@@ -285,3 +285,25 @@ STYLES["ctl_title"] = _title
 STYLES["ctl_ri_small"] = ringfill([15], [7, 7], [6])
 # the long pills (palettes 43-46): white letters, dark ring, brown shadow
 STYLES["ctl_pill"] = ringfill([15, 15, 15, 14, 13], [7, 7], [6, 5, 4])
+
+
+# ---- s5w_rs (help screens) ----------------------------------------------------------------------------------------
+# banner headings (palettes 2, 3): gold or cyan letters, black ring, shade; shared out over two parts at column 128
+_banner = ringfill([15, 15, 14, 13, 12], [8, 8], [5, 4])
+STYLES["ctl_banner"] = _banner
+STYLES["ctl_banner_a"] = win(_banner, 0, 128)
+STYLES["ctl_banner_b"] = win(_banner, 128, 4096)
+# the small banner labels (palettes 4, 5): white letters, black ring
+STYLES["ctl_banner_small"] = ringfill([15, 15, 14, 12], [5, 5])
+# section headings on the dark pills (palettes 10, 11): white letters, dark ring
+STYLES["ctl_sec"] = ringfill([15, 15, 15, 14, 12, 11], [1, 1])
+# help lines (palettes 21 black, 22 red): thin letters on the grey page; a line is shared out over up to four parts of 128
+_line = flat([0, 3, 6, 9, 12, 14, 15], cut=2)
+for _k in range(4):
+    STYLES["ctl_line_%d" % _k] = win(_line, 128 * _k, 128 * (_k + 1) if _k < 3 else 4096)
+STYLES["ctl_line"] = _line
+# the note strip (palette 23): white letters, dark red ring
+_note = ringfill([15], [1, 1])
+STYLES["ctl_note"] = _note
+for _k in range(3):
+    STYLES["ctl_note_%d" % _k] = win(_note, 128 * _k, 128 * (_k + 1) if _k < 2 else 4096)

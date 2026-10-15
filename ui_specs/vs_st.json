@@ -449,7 +449,7 @@
      "sprite": "2e",
      "text": "A stadium is chosen at random.",
      "style": "f_help",
-     "font": "ttf:narrow:14:0.0:0.85:0.1",
+     "font": "ttf:narrow:13:0.0:0.95:0.1",
      "slices": true,
      "slice_width": 56,
      "dy": 2
