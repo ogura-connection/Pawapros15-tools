@@ -102,10 +102,96 @@ def banks(d, syms):
     if cur and cur["pages"]:
         cur["name"] = cur["name"] or re.sub(r"\d\d$", "", cur["page_names"][0][4:])
         out.append(cur)
-    return [s for b in out if b["pages"] for s in split_merged(b)]
+    return [s for b in hand_over_pages([b for b in out if b["pages"]]) for s in split_merged(b)]
+
+
+# merged gameplay.arc banks that are split by sprite set (split_by_prefix, hand_over_pages); other files are untouched
+SPLIT_BY_SET = {"h3_tnm_0", "y4_dem_1", "g3_hk"}
+
+
+def hand_over_pages(out):
+    """A page group that ends one bank (gameplay.arc tex_g3_hk00, listed after the pages of y4_dem_1 / h3_dem_2)
+    belongs to a sprite set of the next bank when no set of its own bank is named like it, a set of the next bank
+    is named exactly like it (opd_g3_hk_00..) and that set uses exactly the pages 0..n-1 of the n moved pages:
+    the group moves to the front of the next bank's pages."""
+    for i in range(len(out) - 1):
+        a, nxt = out[i], out[i + 1]
+        if a["name"] not in SPLIT_BY_SET or nxt["name"] not in SPLIT_BY_SET or not a["sprites"] or len(a["page_names"]) < 2:
+            continue
+        pre = re.sub(r"\d\d$", "", a["page_names"][-1][4:])
+        n = 0
+        while n < len(a["page_names"]) - 1 and re.sub(r"\d\d$", "", a["page_names"][-1 - n][4:]) == pre:
+            n += 1
+        sets_a = {re.sub(r"_[0-9a-f]{2}$", "", k[4:]) for k in a["sprites"]}
+        if any(s.startswith(pre) for s in sets_a) or any(re.sub(r"\d\d$", "", pn[4:]) == pre for pn in nxt["page_names"]):
+            continue
+        used = {p.page for k, ps in nxt["sprites"].items() if re.sub(r"_[0-9a-f]{2}$", "", k[4:]) == pre for p in ps}
+        if not used or used != set(range(n)):
+            continue
+        nxt["pages"] = a["pages"][-n:] + nxt["pages"]
+        nxt["page_names"] = a["page_names"][-n:] + nxt["page_names"]
+        a["pages"], a["page_names"] = a["pages"][:-n], a["page_names"][:-n]
+    return out
 
 
 def split_merged(b):
+    out = split_merged_old(b)
+    if len(out) == 1 and out[0] is b:
+        out = split_by_prefix(b)
+    return out
+
+
+def split_by_prefix(b):
+    """The split for a bank whose page groups are each named after one sprite set (tex_h3_nxt00..07 for
+    opd_h3_nxt_ps2, tex_h3_her00..06 for h3_her_0, tex_h3_rs00..06 for h3_rs_0) while one set has no pages of its
+    own (h3_tnm_0: its page table is empty; the old reading, the next set's pages, is kept) or its pages were
+    counted wrongly by split_by_order. Only when every page group is named by exactly one set, each such set uses
+    pages inside its group, and the sets without a group are followed by a set with one (a set at the end
+    without pages, gameplay.arc h3_cat_0 whose pages are stored under pal_ names, is dropped); else [b]."""
+    groups = []
+    for k, pn in enumerate(b["page_names"]):
+        pre = re.sub(r"\d\d$", "", pn[4:])
+        if groups and groups[-1][0] == pre:
+            groups[-1][1].append(k)
+        else:
+            groups.append((pre, [k]))
+    sets = {}
+    for n in b["sprites"]:
+        sets.setdefault(re.sub(r"_[0-9a-f]{2}$", "", n[4:]), []).append(n)
+    if b["name"] not in SPLIT_BY_SET or len(sets) < 2 or len({g for g, _ in groups}) != len(groups):
+        return [b]
+    first = {s: min(p.offset for n in sets[s] for p in b["sprites"][n]) for s in sets}
+    order = sorted(sets, key=first.get)
+    owner = {}
+    for s in order:
+        fits = [i for i, (g, _) in enumerate(groups) if s.startswith(g)]
+        if fits:
+            owner[s] = max(fits, key=lambda i: len(groups[i][0]))
+    if len(owner) == len(sets) or sorted(owner.values()) != list(range(len(groups))):
+        return [b]
+    for s, i in owner.items():
+        used = [p.page for n in sets[s] for p in b["sprites"][n]]
+        if used and max(used) >= len(groups[i][1]):
+            return [b]
+    pages_of = {}
+    for k, s in enumerate(order):
+        if s in owner:
+            pages_of[s] = owner[s]
+        else:
+            later = [t for t in order[k + 1:] if t in owner]
+            if later:
+                pages_of[s] = owner[later[0]]
+    out = []
+    for s in order:
+        if s not in pages_of:
+            continue
+        idx = groups[pages_of[s]][1]
+        out.append(dict(b, name=s, pages=[b["pages"][k] for k in idx], page_names=[b["page_names"][k] for k in idx],
+                        sprites={n: b["sprites"][n] for n in sets[s]}))
+    return out if len(out) > 1 else [b]
+
+
+def split_merged_old(b):
     """Some files merge several sprite sets into one bank (ore_ini.arc y3_mym + y3_mys + y3_myk + y3_kzo,
     gdt_ore.arc, ore_ren.arc): the pages run tex_<set1>00.., tex_<set2>00.., and the sprites of every set
     count their pages from 0 again. Such a bank is returned as one bank per set, each with its own pages;

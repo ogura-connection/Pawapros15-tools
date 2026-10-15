@@ -2332,7 +2332,7 @@
    "name": "scorebook tags g3_nk",
    "bank": "g3_nk",
    "style": "e_tag",
-   "font": "ttf:din:11:0:1:0.0",
+   "font": "ttf:din:12:0:1:0.0",
    "share": true,
    "areas": [
     [
@@ -2412,7 +2412,8 @@
       "00"
      ],
      "text": "1B-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -2427,6 +2428,7 @@
       "00"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -2442,7 +2444,8 @@
       "01"
      ],
      "text": "1B-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -2457,6 +2460,7 @@
       "01"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -2472,7 +2476,8 @@
       "02"
      ],
      "text": "1B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -2487,6 +2492,7 @@
       "02"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2502,7 +2508,8 @@
       "03"
      ],
      "text": "1B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -2517,6 +2524,7 @@
       "03"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2532,7 +2540,8 @@
       "04"
      ],
      "text": "1B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -2547,6 +2556,7 @@
       "04"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2562,7 +2572,8 @@
       "05"
      ],
      "text": "1B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -2577,6 +2588,7 @@
       "05"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -2592,7 +2604,8 @@
       "06"
      ],
      "text": "1B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -2607,6 +2620,7 @@
       "06"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2622,7 +2636,8 @@
       "07"
      ],
      "text": "1B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -2637,6 +2652,7 @@
       "07"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2652,7 +2668,8 @@
       "08"
      ],
      "text": "1B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -2667,6 +2684,7 @@
       "08"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2682,7 +2700,8 @@
       "09"
      ],
      "text": "2B-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -2697,6 +2716,7 @@
       "09"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -2712,7 +2732,8 @@
       "0a"
      ],
      "text": "2B-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -2727,6 +2748,7 @@
       "0a"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -2742,7 +2764,8 @@
       "0b"
      ],
      "text": "2B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -2757,6 +2780,7 @@
       "0b"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -2772,7 +2796,8 @@
       "0c"
      ],
      "text": "2B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -2787,6 +2812,7 @@
       "0c"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2802,7 +2828,8 @@
       "0d"
      ],
      "text": "2B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -2817,6 +2844,7 @@
       "0d"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2832,7 +2860,8 @@
       "0e"
      ],
      "text": "2B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -2847,6 +2876,7 @@
       "0e"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2862,7 +2892,8 @@
       "0f"
      ],
      "text": "2B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -2877,6 +2908,7 @@
       "0f"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -2892,7 +2924,8 @@
       "10"
      ],
      "text": "2B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -2907,6 +2940,7 @@
       "10"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2922,7 +2956,8 @@
       "11"
      ],
      "text": "2B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -2937,6 +2972,7 @@
       "11"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -2952,7 +2988,8 @@
       "12"
      ],
      "text": "3B-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -2967,6 +3004,7 @@
       "12"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -2982,7 +3020,8 @@
       "13"
      ],
      "text": "3B-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -2997,6 +3036,7 @@
       "13"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -3012,7 +3052,8 @@
       "14"
      ],
      "text": "3B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3027,6 +3068,7 @@
       "14"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3042,7 +3084,8 @@
       "15"
      ],
      "text": "3B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3057,6 +3100,7 @@
       "15"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -3072,7 +3116,8 @@
       "16"
      ],
      "text": "3B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3087,6 +3132,7 @@
       "16"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -3102,7 +3148,8 @@
       "17"
      ],
      "text": "3B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3117,6 +3164,7 @@
       "17"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -3132,7 +3180,8 @@
       "18"
      ],
      "text": "3B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3147,6 +3196,7 @@
       "18"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3162,7 +3212,8 @@
       "19"
      ],
      "text": "3B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3177,6 +3228,7 @@
       "19"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -3192,7 +3244,8 @@
       "1a"
      ],
      "text": "3B-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3207,6 +3260,7 @@
       "1a"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -3222,7 +3276,8 @@
       "1b"
      ],
      "text": "HR-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3237,6 +3292,7 @@
       "1b"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -3252,7 +3308,8 @@
       "1c"
      ],
      "text": "HR-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3267,6 +3324,7 @@
       "1c"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3282,7 +3340,8 @@
       "1d"
      ],
      "text": "HR-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3297,6 +3356,7 @@
       "1d"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3312,7 +3372,8 @@
       "1e"
      ],
      "text": "IPHR",
-     "left": 9,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -3340,7 +3401,8 @@
       "1f"
      ],
      "text": "BB",
-     "left": 14,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -3368,7 +3430,8 @@
       "20"
      ],
      "text": "HBP",
-     "left": 10,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -3396,6 +3459,7 @@
       "21"
      ],
      "text": "K-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -3411,6 +3475,7 @@
       "21"
      ],
      "text": "WP",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 0,
      "baseline": 18
     },
@@ -3426,6 +3491,7 @@
       "22"
      ],
      "text": "IBB",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 12,
      "baseline": 18
     },
@@ -3454,7 +3520,8 @@
       "23"
      ],
      "text": "SH-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3469,7 +3536,8 @@
       "23"
      ],
      "text": "FC",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -3484,7 +3552,8 @@
       "24"
      ],
      "text": "FC-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -3499,6 +3568,7 @@
       "24"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -3514,7 +3584,8 @@
       "25"
      ],
      "text": "FC-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -3529,6 +3600,7 @@
       "25"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -3544,7 +3616,8 @@
       "26"
      ],
      "text": "FC-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3559,6 +3632,7 @@
       "26"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3574,7 +3648,8 @@
       "27"
      ],
      "text": "FC-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3589,6 +3664,7 @@
       "27"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3604,7 +3680,8 @@
       "28"
      ],
      "text": "FC-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3619,6 +3696,7 @@
       "28"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3634,7 +3712,8 @@
       "29"
      ],
      "text": "FC-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3649,6 +3728,7 @@
       "29"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -3664,7 +3744,8 @@
       "2a"
      ],
      "text": "FC-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3679,6 +3760,7 @@
       "2a"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3694,7 +3776,8 @@
       "2b"
      ],
      "text": "FC-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3709,6 +3792,7 @@
       "2b"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3724,7 +3808,8 @@
       "2c"
      ],
      "text": "FC-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -3739,6 +3824,7 @@
       "2c"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -3754,7 +3840,8 @@
       "2d"
      ],
      "text": "SH-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -3769,7 +3856,8 @@
       "2d"
      ],
      "text": "P",
-     "left": 9,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -3784,7 +3872,8 @@
       "2e"
      ],
      "text": "SH-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -3799,7 +3888,8 @@
       "2e"
      ],
      "text": "C",
-     "left": 9,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -3814,6 +3904,7 @@
       "2f"
      ],
      "text": "SH-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -3829,6 +3920,7 @@
       "2f"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -3844,7 +3936,8 @@
       "30"
      ],
      "text": "SH-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3859,7 +3952,8 @@
       "30"
      ],
      "text": "2B",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -3874,7 +3968,8 @@
       "31"
      ],
      "text": "SH-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3889,7 +3984,8 @@
       "31"
      ],
      "text": "3B",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -3904,6 +4000,7 @@
       "32"
      ],
      "text": "SH-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -3919,6 +4016,7 @@
       "32"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -3934,6 +4032,7 @@
       "33"
      ],
      "text": "SH-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -3949,6 +4048,7 @@
       "33"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -3964,7 +4064,8 @@
       "34"
      ],
      "text": "SH-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -3979,7 +4080,8 @@
       "34"
      ],
      "text": "CF",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -3994,7 +4096,8 @@
       "35"
      ],
      "text": "SH-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4009,7 +4112,8 @@
       "35"
      ],
      "text": "RF",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4024,7 +4128,8 @@
       "36"
      ],
      "text": "SQ-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4039,7 +4144,8 @@
       "36"
      ],
      "text": "P",
-     "left": 9,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -4054,7 +4160,8 @@
       "37"
      ],
      "text": "SQ-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4069,7 +4176,8 @@
       "37"
      ],
      "text": "C",
-     "left": 9,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -4084,6 +4192,7 @@
       "38"
      ],
      "text": "SQ-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -4099,6 +4208,7 @@
       "38"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -4114,7 +4224,8 @@
       "39"
      ],
      "text": "SQ-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4129,7 +4240,8 @@
       "39"
      ],
      "text": "2B",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4144,7 +4256,8 @@
       "3a"
      ],
      "text": "SQ-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4159,7 +4272,8 @@
       "3a"
      ],
      "text": "3B",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4174,6 +4288,7 @@
       "3b"
      ],
      "text": "SQ-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -4189,6 +4304,7 @@
       "3b"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -4204,6 +4320,7 @@
       "3c"
      ],
      "text": "SQ-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -4219,6 +4336,7 @@
       "3c"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -4234,7 +4352,8 @@
       "3d"
      ],
      "text": "SQ-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4249,7 +4368,8 @@
       "3d"
      ],
      "text": "CF",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4264,7 +4384,8 @@
       "3e"
      ],
      "text": "SQ-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4279,7 +4400,8 @@
       "3e"
      ],
      "text": "RF",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4294,7 +4416,8 @@
       "3f"
      ],
      "text": "GO-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4309,6 +4432,7 @@
       "3f"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -4324,7 +4448,8 @@
       "40"
      ],
      "text": "GO-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4339,6 +4464,7 @@
       "40"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -4354,7 +4480,8 @@
       "41"
      ],
      "text": "GO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4369,6 +4496,7 @@
       "41"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -4384,7 +4512,8 @@
       "42"
      ],
      "text": "GO-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4399,6 +4528,7 @@
       "42"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -4414,7 +4544,8 @@
       "43"
      ],
      "text": "GO-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4429,6 +4560,7 @@
       "43"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -4444,7 +4576,8 @@
       "44"
      ],
      "text": "GO-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4459,6 +4592,7 @@
       "44"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -4474,7 +4608,8 @@
       "45"
      ],
      "text": "GO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4489,6 +4624,7 @@
       "45"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -4504,7 +4640,8 @@
       "46"
      ],
      "text": "GO-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4519,6 +4656,7 @@
       "46"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -4534,7 +4672,8 @@
       "47"
      ],
      "text": "GO-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4549,6 +4688,7 @@
       "47"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -4564,6 +4704,7 @@
       "48"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -4579,6 +4720,7 @@
       "48"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -4594,6 +4736,7 @@
       "49"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -4609,6 +4752,7 @@
       "49"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -4624,7 +4768,8 @@
       "4a"
      ],
      "text": "DP-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4639,7 +4784,8 @@
       "4a"
      ],
      "text": "1B",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -4654,6 +4800,7 @@
       "4b"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -4669,6 +4816,7 @@
       "4b"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -4684,6 +4832,7 @@
       "4c"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -4699,6 +4848,7 @@
       "4c"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -4714,7 +4864,8 @@
       "4d"
      ],
      "text": "DP-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -4729,7 +4880,8 @@
       "4d"
      ],
      "text": "SS",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -4744,7 +4896,8 @@
       "4e"
      ],
      "text": "DP-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -4759,627 +4912,669 @@
       "4e"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      24,
+      72
+     ],
+     "sprites": [
+      "4f"
+     ],
+     "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "4f"
+     ],
+     "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      96,
+      24,
+      120,
+      48
+     ],
+     "sprites": [
+      "50"
+     ],
+     "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      72,
+      48,
+      96
+     ],
+     "sprites": [
+      "50"
+     ],
+     "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "51"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "51"
+     ],
+     "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 8,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      48,
+      0,
+      72,
+      24
+     ],
+     "sprites": [
+      "52"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "52"
+     ],
+     "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 8,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      0,
+      24,
+      24,
+      48
+     ],
+     "sprites": [
+      "53"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "53"
+     ],
+     "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      24,
+      24,
+      48,
+      48
+     ],
+     "sprites": [
+      "54"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "54"
+     ],
+     "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      48,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "55"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "55"
+     ],
+     "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      72,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "56"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "56"
+     ],
+     "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      24,
+      48,
+      48,
+      72
+     ],
+     "sprites": [
+      "57"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "57"
+     ],
+     "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      24,
+      72
+     ],
+     "sprites": [
+      "58"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "58"
+     ],
+     "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      96,
+      24,
+      120,
+      48
+     ],
+     "sprites": [
+      "59"
+     ],
+     "text": "FO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "59"
+     ],
+     "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "5a"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "5a"
+     ],
+     "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      48,
+      0,
+      72,
+      24
+     ],
+     "sprites": [
+      "5b"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "5b"
+     ],
+     "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      0,
+      24,
+      24,
+      48
+     ],
+     "sprites": [
+      "5c"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "5c"
+     ],
+     "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      24,
+      24,
+      48,
+      48
+     ],
+     "sprites": [
+      "5d"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "5d"
+     ],
+     "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      48,
+      24,
+      72,
+      48
+     ],
+     "sprites": [
+      "5e"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "5e"
+     ],
+     "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      72,
+      48,
+      96,
+      72
+     ],
+     "sprites": [
+      "5f"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "5f"
+     ],
+     "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      24,
+      48,
+      48,
+      72
+     ],
+     "sprites": [
+      "60"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "60"
+     ],
+     "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      24,
+      72
+     ],
+     "sprites": [
+      "61"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "61"
+     ],
+     "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      96,
+      24,
+      120,
+      48
+     ],
+     "sprites": [
+      "62"
+     ],
+     "text": "FF-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "62"
+     ],
+     "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "63"
+     ],
+     "text": "LO-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
     {
      "from": [
       0,
-      0,
-      48,
-      24,
-      72
-     ],
-     "sprites": [
-      "4f"
-     ],
-     "text": "DP-",
-     "left": 3,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      72,
-      48,
-      96
-     ],
-     "sprites": [
-      "4f"
-     ],
-     "text": "CF",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      96,
-      24,
-      120,
-      48
-     ],
-     "sprites": [
-      "50"
-     ],
-     "text": "DP-",
-     "left": 3,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      72,
-      48,
-      96
-     ],
-     "sprites": [
-      "50"
-     ],
-     "text": "RF",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "51"
-     ],
-     "text": "FO-",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "51"
-     ],
-     "text": "P",
-     "left": 8,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      48,
-      0,
-      72,
-      24
-     ],
-     "sprites": [
-      "52"
-     ],
-     "text": "FO-",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "52"
-     ],
-     "text": "C",
-     "left": 8,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      0,
-      24,
-      24,
-      48
-     ],
-     "sprites": [
-      "53"
-     ],
-     "text": "FO-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "53"
-     ],
-     "text": "1B",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      24,
-      24,
-      48,
-      48
-     ],
-     "sprites": [
-      "54"
-     ],
-     "text": "FO-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "54"
-     ],
-     "text": "2B",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      48,
-      24,
-      72,
-      48
-     ],
-     "sprites": [
-      "55"
-     ],
-     "text": "FO-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "55"
-     ],
-     "text": "3B",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      72,
-      48,
-      96,
-      72
-     ],
-     "sprites": [
-      "56"
-     ],
-     "text": "FO-",
-     "left": 3,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "56"
-     ],
-     "text": "SS",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      24,
-      48,
-      48,
-      72
-     ],
-     "sprites": [
-      "57"
-     ],
-     "text": "FO-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "57"
-     ],
-     "text": "LF",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      0,
-      48,
-      24,
-      72
-     ],
-     "sprites": [
-      "58"
-     ],
-     "text": "FO-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "58"
-     ],
-     "text": "CF",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      96,
-      24,
-      120,
-      48
-     ],
-     "sprites": [
-      "59"
-     ],
-     "text": "FO-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "59"
-     ],
-     "text": "RF",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "5a"
-     ],
-     "text": "FF-",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "5a"
-     ],
-     "text": "P",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      48,
-      0,
-      72,
-      24
-     ],
-     "sprites": [
-      "5b"
-     ],
-     "text": "FF-",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "5b"
-     ],
-     "text": "C",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      0,
-      24,
-      24,
-      48
-     ],
-     "sprites": [
-      "5c"
-     ],
-     "text": "FF-",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "5c"
-     ],
-     "text": "1B",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      24,
-      24,
-      48,
-      48
-     ],
-     "sprites": [
-      "5d"
-     ],
-     "text": "FF-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "5d"
-     ],
-     "text": "2B",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      48,
-      24,
-      72,
-      48
-     ],
-     "sprites": [
-      "5e"
-     ],
-     "text": "FF-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "5e"
-     ],
-     "text": "3B",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      72,
-      48,
-      96,
-      72
-     ],
-     "sprites": [
-      "5f"
-     ],
-     "text": "FF-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "5f"
-     ],
-     "text": "SS",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      24,
-      48,
-      48,
-      72
-     ],
-     "sprites": [
-      "60"
-     ],
-     "text": "FF-",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "60"
-     ],
-     "text": "LF",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      0,
-      48,
-      24,
-      72
-     ],
-     "sprites": [
-      "61"
-     ],
-     "text": "FF-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "61"
-     ],
-     "text": "CF",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      96,
-      24,
-      120,
-      48
-     ],
-     "sprites": [
-      "62"
-     ],
-     "text": "FF-",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "62"
-     ],
-     "text": "RF",
-     "left": 4,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "63"
-     ],
-     "text": "LO-",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
       72,
       72,
       96,
@@ -5389,6 +5584,7 @@
       "63"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -5404,7 +5600,8 @@
       "64"
      ],
      "text": "LO-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5419,6 +5616,7 @@
       "64"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -5434,7 +5632,8 @@
       "65"
      ],
      "text": "LO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -5449,6 +5648,7 @@
       "65"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -5464,7 +5664,8 @@
       "66"
      ],
      "text": "LO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -5479,6 +5680,7 @@
       "66"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -5494,7 +5696,8 @@
       "67"
      ],
      "text": "LO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -5509,6 +5712,7 @@
       "67"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -5524,7 +5728,8 @@
       "68"
      ],
      "text": "LO-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -5539,6 +5744,7 @@
       "68"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -5554,7 +5760,8 @@
       "69"
      ],
      "text": "LO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -5569,6 +5776,7 @@
       "69"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -5584,7 +5792,8 @@
       "6a"
      ],
      "text": "LO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -5599,6 +5808,7 @@
       "6a"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -5614,7 +5824,8 @@
       "6b"
      ],
      "text": "LO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -5629,6 +5840,7 @@
       "6b"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -5644,6 +5856,7 @@
       "6c"
      ],
      "text": "K-",
+     "font": "ttf:din:11:0:1.0:0.0",
      "left": 1,
      "baseline": 18
     },
@@ -5659,6 +5872,7 @@
       "6c"
      ],
      "text": "Look",
+     "font": "ttf:din:11:0:1.0:0.0",
      "left": -3,
      "baseline": 18
     },
@@ -5674,7 +5888,8 @@
       "6d"
      ],
      "text": "K-",
-     "left": -3,
+     "font": "ttf:din:11:0:0.85:0.0",
+     "left": 1,
      "baseline": 18
     },
     {
@@ -5689,7 +5904,8 @@
       "6d"
      ],
      "text": "Swing",
-     "left": -7,
+     "font": "ttf:din:11:0:0.85:0.0",
+     "left": -5,
      "baseline": 18
     },
     {
@@ -5704,7 +5920,8 @@
       "6e"
      ],
      "text": "E-",
-     "left": 10,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -5719,6 +5936,7 @@
       "6e"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -5734,7 +5952,8 @@
       "6f"
      ],
      "text": "E-",
-     "left": 10,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -5749,6 +5968,7 @@
       "6f"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -5764,7 +5984,8 @@
       "70"
      ],
      "text": "E-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5779,6 +6000,7 @@
       "70"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -5794,7 +6016,8 @@
       "71"
      ],
      "text": "E-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5809,6 +6032,7 @@
       "71"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -5824,7 +6048,8 @@
       "72"
      ],
      "text": "E-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5839,6 +6064,7 @@
       "72"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -5854,7 +6080,8 @@
       "73"
      ],
      "text": "E-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5869,6 +6096,7 @@
       "73"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 1,
      "baseline": 18
     },
@@ -5884,7 +6112,8 @@
       "74"
      ],
      "text": "E-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5899,6 +6128,7 @@
       "74"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -5914,7 +6144,8 @@
       "75"
      ],
      "text": "E-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5929,6 +6160,7 @@
       "75"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -5944,7 +6176,8 @@
       "76"
      ],
      "text": "E-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5959,6 +6192,7 @@
       "76"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -5974,6 +6208,7 @@
       "77"
      ],
      "text": "SH-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -5989,6 +6224,7 @@
       "77"
      ],
      "text": "E",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 9,
      "baseline": 18
     },
@@ -6004,7 +6240,8 @@
       "78"
      ],
      "text": "SF-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6019,6 +6256,7 @@
       "78"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -6034,7 +6272,8 @@
       "79"
      ],
      "text": "SF-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6049,6 +6288,7 @@
       "79"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -6064,7 +6304,8 @@
       "7a"
      ],
      "text": "SF-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6079,6 +6320,7 @@
       "7a"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -6094,7 +6336,8 @@
       "7b"
      ],
      "text": "SF-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -6109,6 +6352,7 @@
       "7b"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -6124,7 +6368,8 @@
       "7c"
      ],
      "text": "SF-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -6139,6 +6384,7 @@
       "7c"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -6154,7 +6400,8 @@
       "7d"
      ],
      "text": "SF-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6169,6 +6416,7 @@
       "7d"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -6184,7 +6432,8 @@
       "7e"
      ],
      "text": "SF-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6199,6 +6448,7 @@
       "7e"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -6214,7 +6464,8 @@
       "7f"
      ],
      "text": "SF-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -6229,6 +6480,7 @@
       "7f"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -6244,7 +6496,8 @@
       "80"
      ],
      "text": "SF-",
-     "left": 3,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -6259,6 +6512,7 @@
       "80"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -6274,6 +6528,7 @@
       "81"
      ],
      "text": "SF-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -6289,7 +6544,8 @@
       "81"
      ],
      "text": "E",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -6304,7 +6560,8 @@
       "82"
      ],
      "text": "Foul",
-     "left": 12,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 11,
      "baseline": 18
     },
     {
@@ -6319,7 +6576,8 @@
       "83"
      ],
      "text": "Take",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -6334,7 +6592,8 @@
       "84"
      ],
      "text": "Swing",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -6349,7 +6608,8 @@
       "85"
      ],
      "text": "Ball",
-     "left": 12,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 11,
      "baseline": 18
     },
     {
@@ -6363,8 +6623,9 @@
      "sprites": [
       "8b"
      ],
-     "text": "Bat Int",
-     "left": 5,
+     "text": "Bat  Int",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -6391,8 +6652,9 @@
      "sprites": [
       "8c"
      ],
-     "text": "Fld Int",
-     "left": 5,
+     "text": "Fld  Int",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -6419,8 +6681,9 @@
      "sprites": [
       "8d"
      ],
-     "text": "Run Int",
-     "left": 3,
+     "text": "Run  Int",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 0,
      "baseline": 18
     },
     {
@@ -6442,7 +6705,7 @@
    "name": "scorebook tags g3_tij",
    "bank": "g3_tij",
    "style": "e_tag",
-   "font": "ttf:din:11:0:1:0.0",
+   "font": "ttf:din:12:0:1:0.0",
    "share": true,
    "areas": [
     [
@@ -6487,7 +6750,8 @@
       "00"
      ],
      "text": "1B-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -6502,6 +6766,7 @@
       "00"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -6517,7 +6782,8 @@
       "01"
      ],
      "text": "1B-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -6532,6 +6798,7 @@
       "01"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -6547,7 +6814,8 @@
       "02"
      ],
      "text": "1B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6562,6 +6830,7 @@
       "02"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6577,7 +6846,8 @@
       "03"
      ],
      "text": "1B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6592,6 +6862,7 @@
       "03"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6607,7 +6878,8 @@
       "04"
      ],
      "text": "1B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6622,6 +6894,7 @@
       "04"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6637,7 +6910,8 @@
       "05"
      ],
      "text": "1B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6652,6 +6926,7 @@
       "05"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -6667,7 +6942,8 @@
       "06"
      ],
      "text": "1B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6682,6 +6958,7 @@
       "06"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6697,7 +6974,8 @@
       "07"
      ],
      "text": "1B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6712,6 +6990,7 @@
       "07"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6727,7 +7006,8 @@
       "08"
      ],
      "text": "1B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6742,6 +7022,7 @@
       "08"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6757,7 +7038,8 @@
       "09"
      ],
      "text": "2B-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -6772,6 +7054,7 @@
       "09"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -6787,7 +7070,8 @@
       "0a"
      ],
      "text": "2B-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -6802,6 +7086,7 @@
       "0a"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -6817,7 +7102,8 @@
       "0b"
      ],
      "text": "2B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6832,6 +7118,7 @@
       "0b"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -6847,7 +7134,8 @@
       "0c"
      ],
      "text": "2B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6862,6 +7150,7 @@
       "0c"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6877,7 +7166,8 @@
       "0d"
      ],
      "text": "2B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6892,6 +7182,7 @@
       "0d"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6907,7 +7198,8 @@
       "0e"
      ],
      "text": "2B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6922,6 +7214,7 @@
       "0e"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6937,7 +7230,8 @@
       "0f"
      ],
      "text": "2B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -6952,6 +7246,7 @@
       "0f"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -6967,7 +7262,8 @@
       "10"
      ],
      "text": "2B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -6982,6 +7278,7 @@
       "10"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -6997,7 +7294,8 @@
       "11"
      ],
      "text": "2B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7012,6 +7310,7 @@
       "11"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7027,7 +7326,8 @@
       "12"
      ],
      "text": "3B-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7042,6 +7342,7 @@
       "12"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -7057,7 +7358,8 @@
       "13"
      ],
      "text": "3B-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7072,6 +7374,7 @@
       "13"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -7087,7 +7390,8 @@
       "14"
      ],
      "text": "3B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7102,6 +7406,7 @@
       "14"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -7117,7 +7422,8 @@
       "15"
      ],
      "text": "3B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7132,6 +7438,7 @@
       "15"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7147,7 +7454,8 @@
       "16"
      ],
      "text": "3B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7162,6 +7470,7 @@
       "16"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7177,7 +7486,8 @@
       "17"
      ],
      "text": "3B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7192,6 +7502,7 @@
       "17"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7207,7 +7518,8 @@
       "18"
      ],
      "text": "3B-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7222,6 +7534,7 @@
       "18"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -7237,7 +7550,8 @@
       "19"
      ],
      "text": "3B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7252,6 +7566,7 @@
       "19"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7267,7 +7582,8 @@
       "1a"
      ],
      "text": "3B-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7282,6 +7598,7 @@
       "1a"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7297,7 +7614,8 @@
       "1b"
      ],
      "text": "HR-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7312,6 +7630,7 @@
       "1b"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -7327,7 +7646,8 @@
       "1c"
      ],
      "text": "HR-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7342,6 +7662,7 @@
       "1c"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7357,7 +7678,8 @@
       "1d"
      ],
      "text": "HR-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7372,6 +7694,7 @@
       "1d"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7387,7 +7710,8 @@
       "1e"
      ],
      "text": "IPHR",
-     "left": 10,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -7415,7 +7739,8 @@
       "1f"
      ],
      "text": "BB",
-     "left": 15,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -7443,7 +7768,8 @@
       "20"
      ],
      "text": "HBP",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -7471,6 +7797,7 @@
       "21"
      ],
      "text": "K-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 5,
      "baseline": 18
     },
@@ -7486,6 +7813,7 @@
       "21"
      ],
      "text": "WP",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -7501,6 +7829,7 @@
       "22"
      ],
      "text": "IBB",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 13,
      "baseline": 18
     },
@@ -7529,7 +7858,8 @@
       "23"
      ],
      "text": "SH-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7544,7 +7874,8 @@
       "23"
      ],
      "text": "FC",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7559,7 +7890,8 @@
       "24"
      ],
      "text": "FC-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7574,6 +7906,7 @@
       "24"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -7589,7 +7922,8 @@
       "25"
      ],
      "text": "FC-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7604,6 +7938,7 @@
       "25"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -7619,7 +7954,8 @@
       "26"
      ],
      "text": "FC-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7634,6 +7970,7 @@
       "26"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7649,7 +7986,8 @@
       "27"
      ],
      "text": "FC-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7664,6 +8002,7 @@
       "27"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7679,7 +8018,8 @@
       "28"
      ],
      "text": "FC-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7694,6 +8034,7 @@
       "28"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7709,7 +8050,8 @@
       "29"
      ],
      "text": "FC-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7724,6 +8066,7 @@
       "29"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -7739,7 +8082,8 @@
       "2a"
      ],
      "text": "FC-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7754,6 +8098,7 @@
       "2a"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7769,7 +8114,8 @@
       "2b"
      ],
      "text": "FC-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7784,6 +8130,7 @@
       "2b"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7799,7 +8146,8 @@
       "2c"
      ],
      "text": "FC-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -7814,6 +8162,7 @@
       "2c"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -7829,7 +8178,8 @@
       "2d"
      ],
      "text": "SH-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7844,7 +8194,8 @@
       "2d"
      ],
      "text": "P",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -7859,7 +8210,8 @@
       "2e"
      ],
      "text": "SH-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -7874,7 +8226,8 @@
       "2e"
      ],
      "text": "C",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -7889,6 +8242,7 @@
       "2f"
      ],
      "text": "SH-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -7904,6 +8258,7 @@
       "2f"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -7919,7 +8274,8 @@
       "30"
      ],
      "text": "SH-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7934,7 +8290,8 @@
       "30"
      ],
      "text": "2B",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7949,7 +8306,8 @@
       "31"
      ],
      "text": "SH-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -7964,7 +8322,8 @@
       "31"
      ],
      "text": "3B",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -7979,6 +8338,7 @@
       "32"
      ],
      "text": "SH-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -7994,6 +8354,7 @@
       "32"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8009,6 +8370,7 @@
       "33"
      ],
      "text": "SH-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -8024,6 +8386,7 @@
       "33"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -8039,7 +8402,8 @@
       "34"
      ],
      "text": "SH-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8054,7 +8418,8 @@
       "34"
      ],
      "text": "CF",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8069,7 +8434,8 @@
       "35"
      ],
      "text": "SH-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8084,7 +8450,8 @@
       "35"
      ],
      "text": "RF",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8099,7 +8466,8 @@
       "36"
      ],
      "text": "SQ-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8114,7 +8482,8 @@
       "36"
      ],
      "text": "P",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -8129,7 +8498,8 @@
       "37"
      ],
      "text": "SQ-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8144,7 +8514,8 @@
       "37"
      ],
      "text": "C",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -8159,6 +8530,7 @@
       "38"
      ],
      "text": "SQ-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -8174,6 +8546,7 @@
       "38"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -8189,7 +8562,8 @@
       "39"
      ],
      "text": "SQ-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8204,7 +8578,8 @@
       "39"
      ],
      "text": "2B",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8219,7 +8594,8 @@
       "3a"
      ],
      "text": "SQ-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8234,7 +8610,8 @@
       "3a"
      ],
      "text": "3B",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8249,6 +8626,7 @@
       "3b"
      ],
      "text": "SQ-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -8264,6 +8642,7 @@
       "3b"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8279,6 +8658,7 @@
       "3c"
      ],
      "text": "SQ-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -8294,6 +8674,7 @@
       "3c"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -8309,7 +8690,8 @@
       "3d"
      ],
      "text": "SQ-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8324,7 +8706,8 @@
       "3d"
      ],
      "text": "CF",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8339,7 +8722,8 @@
       "3e"
      ],
      "text": "SQ-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8354,7 +8738,8 @@
       "3e"
      ],
      "text": "RF",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8369,7 +8754,8 @@
       "3f"
      ],
      "text": "GO-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8384,6 +8770,7 @@
       "3f"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -8399,7 +8786,8 @@
       "40"
      ],
      "text": "GO-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8414,6 +8802,7 @@
       "40"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -8429,7 +8818,8 @@
       "41"
      ],
      "text": "GO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -8444,6 +8834,7 @@
       "41"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -8459,7 +8850,8 @@
       "42"
      ],
      "text": "GO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8474,6 +8866,7 @@
       "42"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8489,7 +8882,8 @@
       "43"
      ],
      "text": "GO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8504,6 +8898,7 @@
       "43"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8519,7 +8914,8 @@
       "44"
      ],
      "text": "GO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8534,6 +8930,7 @@
       "44"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8549,7 +8946,8 @@
       "45"
      ],
      "text": "GO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -8564,6 +8962,7 @@
       "45"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -8579,7 +8978,8 @@
       "46"
      ],
      "text": "GO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8594,6 +8994,7 @@
       "46"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8609,7 +9010,8 @@
       "47"
      ],
      "text": "GO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8624,6 +9026,7 @@
       "47"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8639,6 +9042,7 @@
       "48"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8654,6 +9058,7 @@
       "48"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -8669,6 +9074,7 @@
       "49"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8684,6 +9090,7 @@
       "49"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -8699,7 +9106,8 @@
       "4a"
      ],
      "text": "DP-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -8714,7 +9122,8 @@
       "4a"
      ],
      "text": "1B",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8729,6 +9138,7 @@
       "4b"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -8744,6 +9154,7 @@
       "4b"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8759,6 +9170,7 @@
       "4c"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -8774,6 +9186,7 @@
       "4c"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8789,7 +9202,8 @@
       "4d"
      ],
      "text": "DP-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -8804,7 +9218,8 @@
       "4d"
      ],
      "text": "SS",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -8819,7 +9234,8 @@
       "4e"
      ],
      "text": "DP-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -8834,7 +9250,8 @@
       "4e"
      ],
      "text": "LF",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8849,6 +9266,7 @@
       "4f"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -8864,6 +9282,7 @@
       "4f"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8879,6 +9298,7 @@
       "50"
      ],
      "text": "DP-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -8894,6 +9314,7 @@
       "50"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8909,7 +9330,8 @@
       "51"
      ],
      "text": "FO-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8924,6 +9346,7 @@
       "51"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -8939,7 +9362,8 @@
       "52"
      ],
      "text": "FO-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -8954,6 +9378,7 @@
       "52"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -8969,7 +9394,8 @@
       "53"
      ],
      "text": "FO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -8984,6 +9410,7 @@
       "53"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -8999,7 +9426,8 @@
       "54"
      ],
      "text": "FO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9014,6 +9442,7 @@
       "54"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9029,7 +9458,8 @@
       "55"
      ],
      "text": "FO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9044,6 +9474,7 @@
       "55"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9059,7 +9490,8 @@
       "56"
      ],
      "text": "FO-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -9074,6 +9506,7 @@
       "56"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -9089,7 +9522,8 @@
       "57"
      ],
      "text": "FO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9104,6 +9538,7 @@
       "57"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9119,7 +9554,8 @@
       "58"
      ],
      "text": "FO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9134,6 +9570,7 @@
       "58"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9149,7 +9586,8 @@
       "59"
      ],
      "text": "FO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9164,6 +9602,7 @@
       "59"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9179,7 +9618,8 @@
       "5a"
      ],
      "text": "FF-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9194,6 +9634,7 @@
       "5a"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 9,
      "baseline": 18
     },
@@ -9209,7 +9650,8 @@
       "5b"
      ],
      "text": "FF-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9224,6 +9666,7 @@
       "5b"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 9,
      "baseline": 18
     },
@@ -9239,7 +9682,8 @@
       "5c"
      ],
      "text": "FF-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -9254,6 +9698,7 @@
       "5c"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9269,7 +9714,8 @@
       "5d"
      ],
      "text": "FF-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9284,6 +9730,7 @@
       "5d"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -9299,7 +9746,8 @@
       "5e"
      ],
      "text": "FF-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9314,6 +9762,7 @@
       "5e"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -9329,7 +9778,8 @@
       "5f"
      ],
      "text": "FF-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9344,6 +9794,7 @@
       "5f"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -9359,7 +9810,8 @@
       "60"
      ],
      "text": "FF-",
-     "left": 6,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 5,
      "baseline": 18
     },
     {
@@ -9374,6 +9826,7 @@
       "60"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9389,7 +9842,8 @@
       "61"
      ],
      "text": "FF-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9404,6 +9858,7 @@
       "61"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -9419,7 +9874,8 @@
       "62"
      ],
      "text": "FF-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9434,6 +9890,7 @@
       "62"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -9449,7 +9906,8 @@
       "63"
      ],
      "text": "LO-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9464,6 +9922,7 @@
       "63"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -9479,7 +9938,8 @@
       "64"
      ],
      "text": "LO-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9494,6 +9954,7 @@
       "64"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -9509,96 +9970,7 @@
       "65"
      ],
      "text": "LO-",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      48,
-      48,
-      72,
-      72
-     ],
-     "sprites": [
-      "65"
-     ],
-     "text": "1B",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      24,
-      0,
-      48,
-      24
-     ],
-     "sprites": [
-      "66"
-     ],
-     "text": "LO-",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      48,
-      48,
-      72,
-      72
-     ],
-     "sprites": [
-      "66"
-     ],
-     "text": "2B",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      48,
-      0,
-      72,
-      24
-     ],
-     "sprites": [
-      "67"
-     ],
-     "text": "LO-",
-     "left": 5,
-     "baseline": 18
-    },
-    {
-     "from": [
-      0,
-      48,
-      48,
-      72,
-      72
-     ],
-     "sprites": [
-      "67"
-     ],
-     "text": "3B",
-     "left": 7,
-     "baseline": 18
-    },
-    {
-     "from": [
-      1,
-      72,
-      0,
-      96,
-      24
-     ],
-     "sprites": [
-      "68"
-     ],
-     "text": "LO-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -9611,9 +9983,106 @@
       72
      ],
      "sprites": [
+      "65"
+     ],
+     "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      24,
+      0,
+      48,
+      24
+     ],
+     "sprites": [
+      "66"
+     ],
+     "text": "LO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      48,
+      48,
+      72,
+      72
+     ],
+     "sprites": [
+      "66"
+     ],
+     "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      48,
+      0,
+      72,
+      24
+     ],
+     "sprites": [
+      "67"
+     ],
+     "text": "LO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      48,
+      48,
+      72,
+      72
+     ],
+     "sprites": [
+      "67"
+     ],
+     "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "68"
+     ],
+     "text": "LO-",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      48,
+      48,
+      72,
+      72
+     ],
+     "sprites": [
       "68"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 6,
      "baseline": 18
     },
@@ -9629,7 +10098,8 @@
       "69"
      ],
      "text": "LO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9644,6 +10114,7 @@
       "69"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9659,7 +10130,8 @@
       "6a"
      ],
      "text": "LO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9674,6 +10146,7 @@
       "6a"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9689,7 +10162,8 @@
       "6b"
      ],
      "text": "LO-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9704,6 +10178,7 @@
       "6b"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9719,6 +10194,7 @@
       "6c"
      ],
      "text": "K-",
+     "font": "ttf:din:11:0:1.0:0.0",
      "left": 2,
      "baseline": 18
     },
@@ -9734,6 +10210,7 @@
       "6c"
      ],
      "text": "Look",
+     "font": "ttf:din:11:0:1.0:0.0",
      "left": -1,
      "baseline": 18
     },
@@ -9749,7 +10226,8 @@
       "6d"
      ],
      "text": "K-",
-     "left": -2,
+     "font": "ttf:din:11:0:0.85:0.0",
+     "left": 2,
      "baseline": 18
     },
     {
@@ -9764,7 +10242,8 @@
       "6d"
      ],
      "text": "Swing",
-     "left": -5,
+     "font": "ttf:din:11:0:0.85:0.0",
+     "left": -3,
      "baseline": 18
     },
     {
@@ -9779,7 +10258,8 @@
       "6e"
      ],
      "text": "E-",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -9794,6 +10274,7 @@
       "6e"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9809,7 +10290,8 @@
       "6f"
      ],
      "text": "E-",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -9824,6 +10306,7 @@
       "6f"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -9839,7 +10322,8 @@
       "70"
      ],
      "text": "E-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9854,6 +10338,7 @@
       "70"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -9869,7 +10354,8 @@
       "71"
      ],
      "text": "E-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9884,6 +10370,7 @@
       "71"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -9899,7 +10386,8 @@
       "72"
      ],
      "text": "E-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9914,6 +10402,7 @@
       "72"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -9929,7 +10418,8 @@
       "73"
      ],
      "text": "E-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -9944,6 +10434,7 @@
       "73"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 3,
      "baseline": 18
     },
@@ -9959,7 +10450,8 @@
       "74"
      ],
      "text": "E-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -9974,6 +10466,7 @@
       "74"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -9989,7 +10482,8 @@
       "75"
      ],
      "text": "E-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10004,6 +10498,7 @@
       "75"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -10019,7 +10514,8 @@
       "76"
      ],
      "text": "E-",
-     "left": 8,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10034,6 +10530,7 @@
       "76"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 4,
      "baseline": 18
     },
@@ -10049,6 +10546,7 @@
       "77"
      ],
      "text": "SH-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -10064,6 +10562,7 @@
       "77"
      ],
      "text": "E",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 11,
      "baseline": 18
     },
@@ -10079,7 +10578,8 @@
       "78"
      ],
      "text": "SF-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10094,6 +10594,7 @@
       "78"
      ],
      "text": "P",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -10109,7 +10610,8 @@
       "79"
      ],
      "text": "SF-",
-     "left": 7,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 6,
      "baseline": 18
     },
     {
@@ -10124,6 +10626,7 @@
       "79"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 10,
      "baseline": 18
     },
@@ -10139,7 +10642,8 @@
       "7a"
      ],
      "text": "SF-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -10154,6 +10658,7 @@
       "7a"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -10169,7 +10674,8 @@
       "7b"
      ],
      "text": "SF-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -10184,6 +10690,7 @@
       "7b"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -10199,7 +10706,8 @@
       "7c"
      ],
      "text": "SF-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -10214,6 +10722,7 @@
       "7c"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -10229,7 +10738,8 @@
       "7d"
      ],
      "text": "SF-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -10244,6 +10754,7 @@
       "7d"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -10259,7 +10770,8 @@
       "7e"
      ],
      "text": "SF-",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 4,
      "baseline": 18
     },
     {
@@ -10274,6 +10786,7 @@
       "7e"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 8,
      "baseline": 18
     },
@@ -10289,7 +10802,8 @@
       "7f"
      ],
      "text": "SF-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -10304,6 +10818,7 @@
       "7f"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -10319,7 +10834,8 @@
       "80"
      ],
      "text": "SF-",
-     "left": 4,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -10334,6 +10850,7 @@
       "80"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -10349,6 +10866,7 @@
       "81"
      ],
      "text": "SF-",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 7,
      "baseline": 18
     },
@@ -10364,7 +10882,8 @@
       "81"
      ],
      "text": "E",
-     "left": 10,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 11,
      "baseline": 18
     },
     {
@@ -10379,7 +10898,8 @@
       "82"
      ],
      "text": "Foul",
-     "left": 10,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 9,
      "baseline": 18
     },
     {
@@ -10394,7 +10914,8 @@
       "83"
      ],
      "text": "Take",
-     "left": 9,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 8,
      "baseline": 18
     },
     {
@@ -10409,7 +10930,8 @@
       "84"
      ],
      "text": "Swing",
-     "left": 5,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -10424,7 +10946,8 @@
       "85"
      ],
      "text": "Ball",
-     "left": 11,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 10,
      "baseline": 18
     },
     {
@@ -10438,8 +10961,9 @@
      "sprites": [
       "86"
      ],
-     "text": "Bat Int",
-     "left": 6,
+     "text": "Bat  Int",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -10466,8 +10990,9 @@
      "sprites": [
       "87"
      ],
-     "text": "Fld Int",
-     "left": 6,
+     "text": "Fld  Int",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 3,
      "baseline": 18
     },
     {
@@ -10494,8 +11019,9 @@
      "sprites": [
       "88"
      ],
-     "text": "Run Int",
-     "left": 4,
+     "text": "Run  Int",
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 1,
      "baseline": 18
     },
     {
@@ -10523,7 +11049,8 @@
       "89"
      ],
      "text": "Def.",
-     "left": 17,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 16,
      "baseline": 18
     },
     {
@@ -10538,6 +11065,7 @@
       "89"
      ],
      "text": "C",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 20,
      "baseline": 18
     },
@@ -10553,7 +11081,8 @@
       "8a"
      ],
      "text": "Def.",
-     "left": 15,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -10568,6 +11097,7 @@
       "8a"
      ],
      "text": "1B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 17,
      "baseline": 18
     },
@@ -10583,7 +11113,8 @@
       "8b"
      ],
      "text": "Def.",
-     "left": 15,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -10598,6 +11129,7 @@
       "8b"
      ],
      "text": "2B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 17,
      "baseline": 18
     },
@@ -10613,7 +11145,8 @@
       "8c"
      ],
      "text": "Def.",
-     "left": 15,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -10628,6 +11161,7 @@
       "8c"
      ],
      "text": "3B",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 17,
      "baseline": 18
     },
@@ -10643,7 +11177,8 @@
       "8d"
      ],
      "text": "Def.",
-     "left": 14,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 13,
      "baseline": 18
     },
     {
@@ -10658,6 +11193,7 @@
       "8d"
      ],
      "text": "SS",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 16,
      "baseline": 18
     },
@@ -10673,7 +11209,8 @@
       "8e"
      ],
      "text": "Def.",
-     "left": 15,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -10688,6 +11225,7 @@
       "8e"
      ],
      "text": "LF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 17,
      "baseline": 18
     },
@@ -10703,7 +11241,8 @@
       "8f"
      ],
      "text": "Def.",
-     "left": 15,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -10718,6 +11257,7 @@
       "8f"
      ],
      "text": "CF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 17,
      "baseline": 18
     },
@@ -10733,7 +11273,8 @@
       "90"
      ],
      "text": "Def.",
-     "left": 15,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 14,
      "baseline": 18
     },
     {
@@ -10748,6 +11289,7 @@
       "90"
      ],
      "text": "RF",
+     "font": "ttf:din:12:0:1.0:0.0",
      "left": 17,
      "baseline": 18
     },
@@ -10763,7 +11305,8 @@
       "91"
      ],
      "text": "DH",
-     "left": 13,
+     "font": "ttf:din:12:0:1.0:0.0",
+     "left": 12,
      "baseline": 18
     }
    ]
