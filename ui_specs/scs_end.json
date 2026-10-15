@@ -688,8 +688,8 @@
       120
      ],
      "text": "Starter",
-     "style": "a_name1",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "style": "a_drop",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
      "baseline": 20,
      "centre_x": 26,
      "sprites": [
@@ -705,8 +705,8 @@
       32
      ],
      "text": "Swing Man",
-     "style": "a_name1",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "style": "a_drop",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
      "baseline": 20,
      "centre_x": 47,
      "sprites": [
@@ -722,8 +722,8 @@
       120
      ],
      "text": "Middle Reliever",
-     "style": "a_name1",
-     "font": "ttf:rounded:11:0.0:0.88:0.3",
+     "style": "a_drop",
+     "font": "ttf:rounded:11:0.0:0.88:0.4",
      "baseline": 19,
      "centre_x": 37,
      "sprites": [
@@ -739,8 +739,8 @@
       32
      ],
      "text": "Closer",
-     "style": "a_name1",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "style": "a_drop",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
      "baseline": 21,
      "centre_x": 25,
      "sprites": [
@@ -1227,7 +1227,7 @@
      ],
      "text": "Overseas",
      "style": "a_drop",
-     "font": "ttf:rounded:13:0.0:0.94:0.4",
+     "font": "ttf:rounded:13:0.0:0.88:0.4",
      "baseline": 18,
      "centre_x": 31,
      "sprites": [
@@ -1244,8 +1244,8 @@
      ],
      "text": "High School",
      "style": "a_drop",
-     "font": "ttf:rounded:11:0.0:0.88:0.4",
-     "baseline": 19,
+     "font": "ttf:rounded:10:0.0:0.88:0.4",
+     "baseline": 18,
      "centre_x": 33,
      "sprites": [
       "3e"
@@ -1274,7 +1274,7 @@
      ],
      "text": "College",
      "style": "a_drop",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "font": "ttf:rounded:10:0.0:1.0:0.4",
      "baseline": 19,
      "centre_x": 33,
      "sprites": [
@@ -1304,7 +1304,7 @@
      ],
      "text": "Industrial",
      "style": "a_drop",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "font": "ttf:rounded:10:0.0:1.0:0.4",
      "baseline": 19,
      "centre_x": 33,
      "sprites": [

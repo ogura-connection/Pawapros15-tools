@@ -1,0 +1,1785 @@
+{
+ "arc": "scs_win.arc",
+ "repack": [
+  {
+   "bank": "r4_vs",
+   "palette": 0,
+   "style": "c2_win_h",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     81
+    ],
+    [
+     0,
+     0,
+     0,
+     128,
+     82
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     82
+    ],
+    [
+     5,
+     0,
+     72,
+     128,
+     118
+    ],
+    [
+     2,
+     0,
+     0,
+     72,
+     82
+    ],
+    [
+     6,
+     0,
+     72,
+     128,
+     118
+    ],
+    [
+     7,
+     0,
+     72,
+     128,
+     122
+    ],
+    [
+     0,
+     0,
+     83,
+     128,
+     121
+    ],
+    [
+     8,
+     0,
+     72,
+     108,
+     118
+    ],
+    [
+     11,
+     0,
+     0,
+     93,
+     50
+    ],
+    [
+     1,
+     0,
+     83,
+     128,
+     122
+    ],
+    [
+     2,
+     0,
+     83,
+     128,
+     123
+    ],
+    [
+     11,
+     0,
+     51,
+     128,
+     90
+    ],
+    [
+     11,
+     0,
+     91,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     38
+    ],
+    [
+     12,
+     0,
+     39,
+     128,
+     75
+    ],
+    [
+     2,
+     73,
+     0,
+     122,
+     82
+    ],
+    [
+     12,
+     0,
+     76,
+     121,
+     104
+    ],
+    [
+     13,
+     0,
+     0,
+     119,
+     28
+    ],
+    [
+     13,
+     0,
+     29,
+     118,
+     58
+    ],
+    [
+     12,
+     0,
+     105,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     59,
+     127,
+     85
+    ],
+    [
+     13,
+     0,
+     86,
+     117,
+     112
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     22
+    ],
+    [
+     14,
+     0,
+     23,
+     118,
+     46
+    ],
+    [
+     14,
+     0,
+     47,
+     76,
+     84
+    ],
+    [
+     14,
+     0,
+     85,
+     115,
+     111
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     21
+    ],
+    [
+     15,
+     0,
+     22,
+     117,
+     48
+    ],
+    [
+     15,
+     0,
+     49,
+     117,
+     75
+    ],
+    [
+     15,
+     0,
+     76,
+     125,
+     101
+    ],
+    [
+     16,
+     0,
+     0,
+     113,
+     27
+    ],
+    [
+     15,
+     0,
+     102,
+     128,
+     126
+    ],
+    [
+     16,
+     0,
+     28,
+     112,
+     54
+    ],
+    [
+     16,
+     0,
+     55,
+     90,
+     81
+    ],
+    [
+     16,
+     0,
+     82,
+     98,
+     108
+    ],
+    [
+     17,
+     0,
+     0,
+     88,
+     32
+    ],
+    [
+     17,
+     0,
+     33,
+     88,
+     65
+    ],
+    [
+     17,
+     0,
+     66,
+     116,
+     87
+    ],
+    [
+     17,
+     0,
+     88,
+     88,
+     119
+    ],
+    [
+     18,
+     0,
+     0,
+     88,
+     32
+    ],
+    [
+     18,
+     0,
+     33,
+     128,
+     53
+    ],
+    [
+     4,
+     0,
+     0,
+     59,
+     38
+    ],
+    [
+     18,
+     0,
+     54,
+     102,
+     76
+    ],
+    [
+     18,
+     0,
+     77,
+     104,
+     99
+    ],
+    [
+     18,
+     0,
+     100,
+     93,
+     126
+    ],
+    [
+     19,
+     0,
+     0,
+     91,
+     26
+    ],
+    [
+     19,
+     0,
+     27,
+     73,
+     59
+    ],
+    [
+     19,
+     0,
+     60,
+     85,
+     86
+    ],
+    [
+     19,
+     0,
+     87,
+     54,
+     125
+    ],
+    [
+     20,
+     0,
+     0,
+     86,
+     26
+    ],
+    [
+     20,
+     0,
+     27,
+     86,
+     53
+    ],
+    [
+     20,
+     0,
+     54,
+     93,
+     80
+    ],
+    [
+     4,
+     0,
+     39,
+     71,
+     65
+    ],
+    [
+     20,
+     0,
+     81,
+     77,
+     105
+    ],
+    [
+     4,
+     0,
+     66,
+     66,
+     97
+    ],
+    [
+     21,
+     0,
+     0,
+     92,
+     24
+    ],
+    [
+     4,
+     0,
+     98,
+     70,
+     124
+    ],
+    [
+     16,
+     0,
+     109,
+     99,
+     127
+    ],
+    [
+     21,
+     0,
+     25,
+     84,
+     51
+    ],
+    [
+     21,
+     0,
+     52,
+     98,
+     75
+    ],
+    [
+     19,
+     55,
+     87,
+     121,
+     113
+    ],
+    [
+     20,
+     0,
+     106,
+     96,
+     128
+    ],
+    [
+     4,
+     104,
+     0,
+     123,
+     81
+    ],
+    [
+     20,
+     87,
+     0,
+     127,
+     35
+    ],
+    [
+     19,
+     74,
+     27,
+     127,
+     53
+    ],
+    [
+     21,
+     0,
+     76,
+     91,
+     94
+    ],
+    [
+     14,
+     77,
+     47,
+     117,
+     82
+    ],
+    [
+     22,
+     0,
+     0,
+     40,
+     35
+    ],
+    [
+     21,
+     0,
+     95,
+     56,
+     125
+    ],
+    [
+     22,
+     41,
+     0,
+     81,
+     35
+    ],
+    [
+     22,
+     82,
+     0,
+     122,
+     35
+    ],
+    [
+     22,
+     0,
+     36,
+     40,
+     71
+    ],
+    [
+     22,
+     0,
+     72,
+     40,
+     107
+    ],
+    [
+     3,
+     96,
+     88,
+     126,
+     127
+    ],
+    [
+     22,
+     41,
+     36,
+     81,
+     71
+    ],
+    [
+     22,
+     82,
+     36,
+     122,
+     71
+    ],
+    [
+     17,
+     89,
+     88,
+     119,
+     127
+    ],
+    [
+     22,
+     0,
+     108,
+     57,
+     128
+    ],
+    [
+     16,
+     99,
+     55,
+     127,
+     91
+    ],
+    [
+     22,
+     58,
+     72,
+     116,
+     92
+    ],
+    [
+     21,
+     99,
+     0,
+     127,
+     40
+    ],
+    [
+     18,
+     94,
+     100,
+     126,
+     128
+    ],
+    [
+     11,
+     94,
+     0,
+     126,
+     28
+    ],
+    [
+     9,
+     0,
+     112,
+     60,
+     127
+    ],
+    [
+     20,
+     94,
+     36,
+     126,
+     64
+    ],
+    [
+     20,
+     94,
+     65,
+     126,
+     93
+    ],
+    [
+     21,
+     92,
+     76,
+     124,
+     104
+    ],
+    [
+     21,
+     57,
+     105,
+     105,
+     125
+    ],
+    [
+     18,
+     89,
+     0,
+     121,
+     28
+    ],
+    [
+     19,
+     86,
+     54,
+     118,
+     82
+    ],
+    [
+     17,
+     89,
+     0,
+     121,
+     28
+    ],
+    [
+     17,
+     89,
+     29,
+     121,
+     57
+    ],
+    [
+     20,
+     97,
+     94,
+     128,
+     122
+    ],
+    [
+     22,
+     58,
+     93,
+     90,
+     121
+    ],
+    [
+     22,
+     41,
+     72,
+     55,
+     107
+    ],
+    [
+     4,
+     60,
+     0,
+     69,
+     38
+    ],
+    [
+     21,
+     93,
+     0,
+     98,
+     46
+    ],
+    [
+     16,
+     91,
+     55,
+     98,
+     77
+    ],
+    [
+     12,
+     122,
+     76,
+     128,
+     97
+    ],
+    [
+     4,
+     67,
+     66,
+     71,
+     89
+    ],
+    [
+     17,
+     117,
+     58,
+     128,
+     67
+    ],
+    [
+     4,
+     67,
+     90,
+     71,
+     94
+    ],
+    [
+     22,
+     56,
+     72,
+     57,
+     73
+    ],
+    [
+     22,
+     56,
+     74,
+     57,
+     75
+    ],
+    [
+     22,
+     56,
+     76,
+     57,
+     77
+    ],
+    [
+     22,
+     56,
+     78,
+     57,
+     79
+    ],
+    [
+     22,
+     56,
+     80,
+     57,
+     81
+    ],
+    [
+     22,
+     56,
+     82,
+     57,
+     83
+    ],
+    [
+     22,
+     56,
+     84,
+     57,
+     85
+    ],
+    [
+     22,
+     56,
+     86,
+     57,
+     87
+    ],
+    [
+     22,
+     56,
+     88,
+     57,
+     89
+    ],
+    [
+     22,
+     56,
+     90,
+     57,
+     91
+    ],
+    [
+     22,
+     56,
+     92,
+     57,
+     93
+    ],
+    [
+     22,
+     56,
+     94,
+     57,
+     95
+    ],
+    [
+     22,
+     56,
+     96,
+     57,
+     97
+    ],
+    [
+     22,
+     56,
+     98,
+     57,
+     99
+    ],
+    [
+     22,
+     56,
+     100,
+     57,
+     101
+    ],
+    [
+     22,
+     56,
+     102,
+     57,
+     103
+    ],
+    [
+     22,
+     56,
+     104,
+     57,
+     105
+    ],
+    [
+     22,
+     56,
+     106,
+     57,
+     107
+    ],
+    [
+     4,
+     70,
+     0,
+     71,
+     1
+    ],
+    [
+     4,
+     70,
+     2,
+     71,
+     3
+    ],
+    [
+     4,
+     70,
+     4,
+     71,
+     5
+    ],
+    [
+     4,
+     70,
+     6,
+     71,
+     7
+    ],
+    [
+     4,
+     70,
+     8,
+     71,
+     9
+    ],
+    [
+     4,
+     70,
+     10,
+     71,
+     11
+    ],
+    [
+     4,
+     70,
+     12,
+     71,
+     13
+    ],
+    [
+     4,
+     70,
+     14,
+     71,
+     15
+    ],
+    [
+     4,
+     70,
+     16,
+     71,
+     17
+    ],
+    [
+     4,
+     70,
+     18,
+     71,
+     19
+    ],
+    [
+     4,
+     70,
+     20,
+     71,
+     21
+    ],
+    [
+     4,
+     70,
+     22,
+     71,
+     23
+    ],
+    [
+     4,
+     70,
+     24,
+     71,
+     25
+    ],
+    [
+     4,
+     70,
+     26,
+     71,
+     27
+    ],
+    [
+     4,
+     70,
+     28,
+     71,
+     29
+    ],
+    [
+     4,
+     70,
+     30,
+     71,
+     31
+    ],
+    [
+     4,
+     70,
+     32,
+     71,
+     33
+    ],
+    [
+     4,
+     70,
+     34,
+     71,
+     35
+    ],
+    [
+     4,
+     70,
+     36,
+     71,
+     37
+    ],
+    [
+     3,
+     127,
+     88,
+     128,
+     89
+    ],
+    [
+     3,
+     127,
+     90,
+     128,
+     91
+    ],
+    [
+     3,
+     127,
+     92,
+     128,
+     93
+    ],
+    [
+     3,
+     127,
+     94,
+     128,
+     95
+    ],
+    [
+     3,
+     127,
+     96,
+     128,
+     97
+    ],
+    [
+     3,
+     127,
+     98,
+     128,
+     99
+    ],
+    [
+     3,
+     127,
+     100,
+     128,
+     101
+    ],
+    [
+     3,
+     127,
+     102,
+     128,
+     103
+    ],
+    [
+     3,
+     127,
+     104,
+     128,
+     105
+    ],
+    [
+     3,
+     127,
+     106,
+     128,
+     107
+    ],
+    [
+     3,
+     127,
+     108,
+     128,
+     109
+    ],
+    [
+     3,
+     127,
+     110,
+     128,
+     111
+    ],
+    [
+     3,
+     127,
+     112,
+     128,
+     113
+    ],
+    [
+     3,
+     127,
+     114,
+     128,
+     115
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Win",
+     "style": "c2_win_gold",
+     "font": "ttf:rounded:72:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "01",
+     "text": "Loss",
+     "style": "c2_win_lilac",
+     "font": "ttf:rounded:72:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "02",
+     "text": "Tie",
+     "style": "c2_win_lilac",
+     "font": "ttf:rounded:72:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "1a",
+     "text": "Practice Game",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:30:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "1b",
+     "text": "Road Game",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:38:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "1c",
+     "text": "Koshien",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:42:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "1d",
+     "text": "District Tournament",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:17:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "1e",
+     "text": "Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:24:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 88,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "1f",
+     "text": "Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:24:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 88,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "20",
+     "text": "Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:24:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 88,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "21",
+     "text": "Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:23:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 88,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "22",
+     "text": "Round 1",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:33:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "23",
+     "text": "Round 2",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:32:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "24",
+     "text": "Semifinal",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:28:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "25",
+     "text": "Final",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:38:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "26",
+     "text": "Day",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:24:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "27",
+     "text": "Game",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:13:0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4,
+     "left": 3
+    },
+    {
+     "sprite": "32",
+     "text": "1B Side",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:13:0:0.8:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "33",
+     "text": "3B Side",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:13:0:0.8:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "34",
+     "text": "VS",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:30:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "35",
+     "text": "Giants",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:19:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "36",
+     "text": "Dragons",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:16:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "37",
+     "text": "Carp",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:15:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "38",
+     "text": "Swallows",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:19:0:0.8:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "39",
+     "text": "BayStars",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:15:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "3a",
+     "text": "Tigers",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:15:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "3b",
+     "text": "Eagles",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:15:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "3c",
+     "text": "Fighters",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:15:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "3d",
+     "text": "Lions",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:19:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "3e",
+     "text": "Buffaloes",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:20:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "3f",
+     "text": "Marines",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:20:0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "40",
+     "text": "Hawks",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:19:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "41",
+     "text": "Searex",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:19:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "42",
+     "text": "Surpass",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:15:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "43",
+     "text": "Goodwill",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:19:0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "44",
+     "text": "All-Central",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:19:0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "45",
+     "text": "All-Pacific",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:19:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "46",
+     "text": "Red Team",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:17:0:0.8:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "47",
+     "text": "White Team",
+     "style": "c2_win_n",
+     "font": "ttf:rounded:15:0:0.8:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "4b",
+     "text": "Round 3",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:32:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "4c",
+     "text": "Quarterfinal",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:28:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "4d",
+     "text": "Summer Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:21:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "4e",
+     "text": "Summer Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:21:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "4f",
+     "text": "Summer Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:21:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "50",
+     "text": "Summer Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:21:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "51",
+     "text": "Fall Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:28:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "52",
+     "text": "Fall Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:28:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "53",
+     "text": "Fall Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:28:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "54",
+     "text": "Fall Prefectural",
+     "style": "c2_win_h",
+     "font": "ttf:rounded:28:0:0.9:0.3",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 0,
+     "overlap": 6
+    },
+    {
+     "sprite": "55",
+     "text": "Pawafuru Corp.",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:16:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "56",
+     "text": "Kagurazaka Group",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:15:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "57",
+     "text": "Otori Phoenix",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:20:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "58",
+     "text": "TOJO International",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:15:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "59",
+     "text": "Gokuaku Trading",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:13:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "5a",
+     "text": "Tekuteku Tech",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:18:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "5b",
+     "text": "Rocket Express",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:17:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "5c",
+     "text": "Naniwa Trading",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:14:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "5d",
+     "text": "Pichipichi Fisheries",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:13:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "5e",
+     "text": "Ageage\u2605 Baseball Club",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:13:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "5f",
+     "text": "Hao",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:25:0:1.0:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "60",
+     "text": "Kurojishi Heavy\nIndustries",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:10:0:1.0:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "61",
+     "text": "Dosukoi Brewery",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:15:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "62",
+     "text": "Mizotto Sports",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:18:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "63",
+     "text": "Tenka Construction",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:11:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "64",
+     "text": "World Wide Works",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:16:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "65",
+     "text": "Dokonjo Guts",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:19:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "66",
+     "text": "Main Power Mainstays",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:13:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "sprite": "67",
+     "text": "All-Star Team",
+     "style": "c2_win_n",
+     "font": "ttf:narrow:17:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 4
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   ],
+   "name": "win"
+  }
+ ]
+}

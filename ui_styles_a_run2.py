@@ -74,7 +74,7 @@ STYLES["a_y5btn"] = ringfill([3, 2, 2, 2], [15], [9])
 
 # z3_sav_0: title (palette 28), buttons 終了 / 登録 (37, 38), プロ入り選手 (45; 14 draws its dark copy), パスワードを見る and
 # 能力詳細 (44, a grey ramp), the two panel headings (47 orange, 46 lilac; palette 31 draws each again as a blue shadow)
-STYLES["a_z3title"] = ringfill([10, 10, 7, 7, 6, 4], [15, 15, 3, 1], [])
+STYLES["a_z3title"] = ringfill([10, 10, 7, 7, 6, 4], [15, 15, 3, 2], [1])
 STYLES["a_z3end"] = ringfill([13, 12, 12, 11], [8, 7, 14], [6])
 STYLES["a_z3reg"] = ringfill([9, 10, 11, 12], [14, 13, 1], [3])
 STYLES["a_z3pro"] = ringfill([3, 2, 1, 1], [11, 11], [9, 8])
@@ -150,7 +150,7 @@ for _name in ("a_tag", "a_cardhead"):
 
 # m4_drf / y5_drf_0: the draft result screens. Help lines: m4 (palette 3) dark blue letters in a white band, y5 (27) green letters in a
 # white band; the two-line help on the pale plate: m4 (3) dark blue, y5 (22) blue; banners: m4_df256 (8-bit palette) and y5_drf_0 (29)
-STYLES["a_help_m1"] = ringfill([3], [15, 15], [])
+STYLES["a_help_m1"] = ringfill([3], [15], [])
 STYLES["a_help_m2"] = crisp(1, None, 3)
 STYLES["a_help_y1"] = ringfill([6, 5, 4, 3], [15, 14], [])
 STYLES["a_help_y2"] = crisp(1, None, 3)
