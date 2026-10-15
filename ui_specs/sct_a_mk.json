@@ -1,0 +1,2513 @@
+{
+ "arc": "sct_a_mk.arc",
+ "repack": [
+  {
+   "bank": "m4_mak#0",
+   "palette": 8,
+   "style": "a4_mk_navy",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     24,
+     72,
+     48
+    ],
+    [
+     4,
+     0,
+     48,
+     72,
+     72
+    ],
+    [
+     4,
+     0,
+     72,
+     88,
+     96
+    ],
+    [
+     4,
+     0,
+     96,
+     88,
+     120
+    ],
+    [
+     4,
+     88,
+     48,
+     112,
+     72
+    ],
+    [
+     4,
+     72,
+     24,
+     128,
+     48
+    ],
+    [
+     4,
+     112,
+     48,
+     128,
+     72
+    ],
+    [
+     4,
+     0,
+     0,
+     120,
+     24
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     10,
+     0,
+     96,
+     48,
+     128
+    ],
+    [
+     10,
+     48,
+     96,
+     96,
+     112
+    ],
+    [
+     10,
+     0,
+     48,
+     128,
+     96
+    ],
+    [
+     10,
+     48,
+     112,
+     96,
+     128
+    ],
+    [
+     14,
+     64,
+     0,
+     112,
+     32
+    ],
+    [
+     14,
+     64,
+     48,
+     120,
+     64
+    ],
+    [
+     12,
+     0,
+     32,
+     96,
+     64
+    ],
+    [
+     12,
+     0,
+     64,
+     104,
+     96
+    ],
+    [
+     12,
+     0,
+     96,
+     104,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     96,
+     32
+    ],
+    [
+     13,
+     0,
+     32,
+     96,
+     64
+    ],
+    [
+     13,
+     0,
+     64,
+     104,
+     96
+    ],
+    [
+     13,
+     0,
+     96,
+     104,
+     128
+    ],
+    [
+     4,
+     120,
+     0,
+     128,
+     24
+    ],
+    [
+     4,
+     72,
+     48,
+     88,
+     72
+    ],
+    [
+     4,
+     88,
+     72,
+     128,
+     120
+    ],
+    [
+     4,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     10,
+     96,
+     96,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     12,
+     96,
+     32,
+     128,
+     64
+    ],
+    [
+     12,
+     104,
+     64,
+     128,
+     128
+    ],
+    [
+     13,
+     96,
+     0,
+     128,
+     64
+    ],
+    [
+     13,
+     104,
+     64,
+     128,
+     128
+    ],
+    [
+     14,
+     56,
+     0,
+     64,
+     32
+    ],
+    [
+     14,
+     112,
+     0,
+     128,
+     32
+    ],
+    [
+     14,
+     56,
+     32,
+     128,
+     48
+    ],
+    [
+     14,
+     120,
+     48,
+     128,
+     64
+    ],
+    [
+     14,
+     56,
+     48,
+     64,
+     64
+    ],
+    [
+     14,
+     48,
+     64,
+     128,
+     96
+    ],
+    [
+     14,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      0,
+      24,
+      72,
+      48
+     ],
+     "text": "Manager",
+     "style": "a4_mk_navy",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 22
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      72,
+      72
+     ],
+     "text": "Prefecture",
+     "style": "a4_mk_navy",
+     "font": "ttf:narrow:13:0.0:0.92:0.1",
+     "baseline": 22
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      88,
+      96
+     ],
+     "text": "Cap Logo",
+     "style": "a4_mk_navy",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 22
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      88,
+      120
+     ],
+     "text": "New Members",
+     "style": "a4_mk_navy",
+     "font": "ttf:narrow:13:0.0:0.85:0.1",
+     "baseline": 22
+    },
+    {
+     "from": [
+      4,
+      72,
+      24,
+      128,
+      48
+     ],
+     "text": "High School",
+     "style": "a4_mk_navy~0_56",
+     "font": "ttf:narrow:13:0.0:0.85:0.1",
+     "baseline": 22,
+     "left": -2
+    },
+    {
+     "from": [
+      4,
+      112,
+      48,
+      128,
+      72
+     ],
+     "text": "High School",
+     "style": "a4_mk_navy~56_4096",
+     "font": "ttf:narrow:13:0.0:0.85:0.1",
+     "baseline": 22,
+     "left": -2
+    },
+    {
+     "from": [
+      4,
+      88,
+      48,
+      112,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      120,
+      24
+     ],
+     "text": "New Member List",
+     "style": "a4_mk_navy",
+     "font": "ttf:narrow:16:0.0:0.85:0.1",
+     "baseline": 24
+    },
+    {
+     "from": [
+      12,
+      0,
+      32,
+      96,
+      64
+     ],
+     "text": "Your Name",
+     "style": "a4_mk_menu",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 25
+    },
+    {
+     "from": [
+      12,
+      0,
+      64,
+      104,
+      96
+     ],
+     "text": "Prefecture",
+     "style": "a4_mk_menu",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 25
+    },
+    {
+     "from": [
+      12,
+      0,
+      96,
+      104,
+      128
+     ],
+     "text": "School Name",
+     "style": "a4_mk_menu",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 25
+    },
+    {
+     "from": [
+      13,
+      0,
+      0,
+      96,
+      32
+     ],
+     "text": "Cap Logo",
+     "style": "a4_mk_menu",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 25
+    },
+    {
+     "from": [
+      13,
+      0,
+      32,
+      96,
+      64
+     ],
+     "text": "Member Names",
+     "style": "a4_mk_menu",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 25
+    },
+    {
+     "from": [
+      13,
+      0,
+      64,
+      104,
+      96
+     ],
+     "text": "Uniform",
+     "style": "a4_mk_menu",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 25
+    },
+    {
+     "from": [
+      13,
+      0,
+      96,
+      104,
+      128
+     ],
+     "text": "School Song",
+     "style": "a4_mk_menu",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 25
+    },
+    {
+     "from": [
+      14,
+      64,
+      48,
+      120,
+      64
+     ],
+     "text": "Ability Details",
+     "style": "a4_mk_dark",
+     "font": "ttf:narrow:9:0.0:0.92:0.1",
+     "baseline": 14
+    },
+    {
+     "from": [
+      10,
+      0,
+      0,
+      128,
+      48
+     ],
+     "text": "Setup",
+     "style": "a4_mk_title~0_128",
+     "font": "ttf:rounded:30:0.0:1.0:0.5",
+     "baseline": 39,
+     "left": 27
+    },
+    {
+     "from": [
+      10,
+      0,
+      96,
+      48,
+      128
+     ],
+     "text": "Setup",
+     "style": "a4_mk_title~128_4096",
+     "font": "ttf:rounded:30:0.0:1.0:0.5",
+     "baseline": 39,
+     "left": 27
+    },
+    {
+     "from": [
+      10,
+      48,
+      96,
+      96,
+      112
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      10,
+      0,
+      48,
+      128,
+      96
+     ],
+     "text": "Change Settings",
+     "style": "a4_mk_title~0_128",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 33,
+     "left": -13
+    },
+    {
+     "from": [
+      10,
+      48,
+      112,
+      96,
+      128
+     ],
+     "text": "Change Settings",
+     "style": "a4_mk_title~128_4096",
+     "font": "ttf:rounded:18:0.0:1.0:0.5",
+     "baseline": 33,
+     "left": -13
+    },
+    {
+     "from": [
+      14,
+      64,
+      0,
+      112,
+      32
+     ],
+     "empty": true
+    }
+   ],
+   "name": "setup screen",
+   "share": true,
+   "sprites": "m4_mak#1",
+   "sprite_prefix": "m4_mak"
+  },
+  {
+   "bank": "m4_mak#1",
+   "palette": 0,
+   "style": "a4_mk_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     104,
+     48,
+     128,
+     96
+    ],
+    [
+     1,
+     88,
+     0,
+     128,
+     48
+    ],
+    [
+     0,
+     0,
+     0,
+     120,
+     48
+    ],
+    [
+     1,
+     0,
+     64,
+     88,
+     112
+    ],
+    [
+     0,
+     0,
+     48,
+     120,
+     96
+    ],
+    [
+     0,
+     0,
+     96,
+     88,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     88,
+     16
+    ],
+    [
+     1,
+     0,
+     16,
+     88,
+     64
+    ],
+    [
+     1,
+     0,
+     112,
+     88,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     88,
+     32
+    ],
+    [
+     2,
+     0,
+     32,
+     88,
+     80
+    ],
+    [
+     2,
+     0,
+     80,
+     88,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     88,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     88,
+     96
+    ],
+    [
+     0,
+     88,
+     96,
+     128,
+     128
+    ],
+    [
+     1,
+     88,
+     48,
+     104,
+     96
+    ],
+    [
+     1,
+     88,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     88,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     88,
+     0,
+     128,
+     80
+    ],
+    [
+     3,
+     0,
+     96,
+     72,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Hokkaido Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 3
+    },
+    {
+     "sprite": "01",
+     "text": "Tohoku Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 3
+    },
+    {
+     "sprite": "02",
+     "text": "Hokushinetsu Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 2
+    },
+    {
+     "sprite": "03",
+     "text": "Kanto Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 3
+    },
+    {
+     "sprite": "04",
+     "text": "Tokyo Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 3
+    },
+    {
+     "sprite": "05",
+     "text": "Tokai Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 3
+    },
+    {
+     "sprite": "06",
+     "text": "Kinki Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 3
+    },
+    {
+     "sprite": "07",
+     "text": "Chugoku Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 2
+    },
+    {
+     "sprite": "08",
+     "text": "Shikoku Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 3
+    },
+    {
+     "sprite": "09",
+     "text": "Kyushu Region",
+     "style": "a4_mk_head",
+     "font": "ttf:narrow:12:0.2:1.0:0.55",
+     "slices": true,
+     "slice_width": 86,
+     "dy": 3
+    }
+   ],
+   "name": "region headings",
+   "share": true,
+   "sprites": "p4_mp#2",
+   "sprite_prefix": "p4_mp"
+  },
+  {
+   "bank": "m4_mak#1",
+   "palette": 0,
+   "style": "a4_mk_big",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     4,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     4,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     5,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     5,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     6,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     6,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     7,
+     0,
+     0,
+     104,
+     40
+    ],
+    [
+     7,
+     0,
+     40,
+     104,
+     80
+    ],
+    [
+     7,
+     0,
+     80,
+     48,
+     120
+    ],
+    [
+     7,
+     56,
+     80,
+     128,
+     120
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     8,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     8,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     9,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     9,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     10,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     10,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     11,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     11,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     12,
+     0,
+     40,
+     96,
+     80
+    ],
+    [
+     12,
+     96,
+     48,
+     128,
+     88
+    ],
+    [
+     12,
+     0,
+     80,
+     96,
+     120
+    ],
+    [
+     12,
+     96,
+     88,
+     104,
+     128
+    ],
+    [
+     21,
+     0,
+     0,
+     72,
+     40
+    ],
+    [
+     21,
+     88,
+     0,
+     128,
+     40
+    ],
+    [
+     21,
+     0,
+     40,
+     72,
+     80
+    ],
+    [
+     21,
+     88,
+     40,
+     120,
+     80
+    ],
+    [
+     21,
+     72,
+     80,
+     128,
+     104
+    ],
+    [
+     21,
+     0,
+     80,
+     72,
+     120
+    ],
+    [
+     21,
+     72,
+     104,
+     80,
+     128
+    ],
+    [
+     21,
+     88,
+     104,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     7,
+     104,
+     0,
+     128,
+     80
+    ],
+    [
+     7,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     12,
+     96,
+     40,
+     128,
+     48
+    ],
+    [
+     12,
+     104,
+     88,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     120,
+     96,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0a",
+     "text": "N. Hokkaido",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "0b",
+     "text": "S. Hokkaido",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "0c",
+     "text": "Aomori",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "0d",
+     "text": "Iwate",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "0e",
+     "text": "Miyagi",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "0f",
+     "text": "Akita",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "10",
+     "text": "Yamagata",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "11",
+     "text": "Fukushima",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "12",
+     "text": "Ibaraki",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "13",
+     "text": "Tochigi",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "14",
+     "text": "Gunma",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "15",
+     "text": "Saitama",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "16",
+     "text": "Chiba",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "17",
+     "text": "East Tokyo",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "18",
+     "text": "West Tokyo",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "19",
+     "text": "Kanagawa",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "1a",
+     "text": "Niigata",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "1b",
+     "text": "Toyama",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "1c",
+     "text": "Ishikawa",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "1d",
+     "text": "Fukui",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "1e",
+     "text": "Yamanashi",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "1f",
+     "text": "Nagano",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "20",
+     "text": "Gifu",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "21",
+     "text": "Shizuoka",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "22",
+     "text": "Aichi",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "23",
+     "text": "Mie",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "24",
+     "text": "Shiga",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "25",
+     "text": "Kyoto",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "26",
+     "text": "Osaka",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "27",
+     "text": "Hyogo",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "28",
+     "text": "Nara",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "29",
+     "text": "Wakayama",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "2a",
+     "text": "Tottori",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "2b",
+     "text": "Shimane",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 30
+    },
+    {
+     "sprite": "2c",
+     "text": "Okayama",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "2d",
+     "text": "Hiroshima",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "2e",
+     "text": "Yamaguchi",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "2f",
+     "text": "Tokushima",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "30",
+     "text": "Kagawa",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "31",
+     "text": "Ehime",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "32",
+     "text": "Kochi",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "33",
+     "text": "Fukuoka",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "34",
+     "text": "Saga",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "35",
+     "text": "Nagasaki",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 29
+    },
+    {
+     "sprite": "36",
+     "text": "Kumamoto",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "37",
+     "text": "Oita",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "38",
+     "text": "Miyazaki",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "39",
+     "text": "Kagoshima",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "sprite": "3a",
+     "text": "Okinawa",
+     "style": "a4_mk_big",
+     "font": "ttf:narrow:13:0.2:1.0:0.5",
+     "baseline": 28
+    },
+    {
+     "from": [
+      21,
+      88,
+      104,
+      128,
+      128
+     ],
+     "text": "Population",
+     "style": "a4_mk_cell",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 16
+    },
+    {
+     "from": [
+      21,
+      72,
+      104,
+      80,
+      128
+     ],
+     "text": "Schools",
+     "style": "a4_mk_cell~0_8",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 16,
+     "left": 2
+    },
+    {
+     "from": [
+      21,
+      72,
+      80,
+      128,
+      104
+     ],
+     "text": "Schools",
+     "style": "a4_mk_cell~8_4096",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 16,
+     "left": 2
+    }
+   ],
+   "name": "big names",
+   "share": true,
+   "sprites": "p4_mp#2",
+   "sprite_prefix": "p4_mp"
+  },
+  {
+   "bank": "m4_mak#1",
+   "palette": 1,
+   "style": "a4_mk_small",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     13,
+     0,
+     0,
+     88,
+     24
+    ],
+    [
+     13,
+     0,
+     24,
+     88,
+     48
+    ],
+    [
+     13,
+     0,
+     48,
+     64,
+     72
+    ],
+    [
+     13,
+     104,
+     48,
+     128,
+     72
+    ],
+    [
+     13,
+     0,
+     72,
+     128,
+     96
+    ],
+    [
+     13,
+     0,
+     96,
+     64,
+     120
+    ],
+    [
+     13,
+     80,
+     96,
+     128,
+     120
+    ],
+    [
+     14,
+     0,
+     0,
+     96,
+     24
+    ],
+    [
+     14,
+     0,
+     24,
+     96,
+     48
+    ],
+    [
+     14,
+     0,
+     48,
+     96,
+     72
+    ],
+    [
+     14,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     14,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     15,
+     0,
+     0,
+     96,
+     24
+    ],
+    [
+     15,
+     0,
+     24,
+     96,
+     48
+    ],
+    [
+     15,
+     0,
+     48,
+     96,
+     72
+    ],
+    [
+     15,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     15,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     16,
+     0,
+     0,
+     96,
+     24
+    ],
+    [
+     16,
+     104,
+     0,
+     128,
+     24
+    ],
+    [
+     16,
+     0,
+     24,
+     96,
+     48
+    ],
+    [
+     16,
+     104,
+     24,
+     128,
+     48
+    ],
+    [
+     16,
+     0,
+     48,
+     96,
+     72
+    ],
+    [
+     16,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     16,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     17,
+     0,
+     0,
+     96,
+     24
+    ],
+    [
+     17,
+     0,
+     24,
+     96,
+     48
+    ],
+    [
+     17,
+     0,
+     48,
+     96,
+     72
+    ],
+    [
+     17,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     17,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     13,
+     88,
+     0,
+     128,
+     48
+    ],
+    [
+     13,
+     64,
+     48,
+     104,
+     72
+    ],
+    [
+     13,
+     64,
+     96,
+     80,
+     120
+    ],
+    [
+     13,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     14,
+     96,
+     0,
+     128,
+     120
+    ],
+    [
+     14,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     15,
+     96,
+     0,
+     128,
+     120
+    ],
+    [
+     15,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     16,
+     96,
+     48,
+     128,
+     120
+    ],
+    [
+     16,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     17,
+     96,
+     0,
+     128,
+     120
+    ],
+    [
+     17,
+     0,
+     120,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3b",
+     "text": "N. Hokkaido",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 225
+    },
+    {
+     "sprite": "3c",
+     "text": "S. Hokkaido",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 297
+    },
+    {
+     "sprite": "3d",
+     "text": "Aomori",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 129
+    },
+    {
+     "sprite": "3e",
+     "text": "Iwate",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 201
+    },
+    {
+     "sprite": "3f",
+     "text": "Miyagi",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 289
+    },
+    {
+     "sprite": "40",
+     "text": "Akita",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 201
+    },
+    {
+     "sprite": "41",
+     "text": "Yamagata",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 258
+    },
+    {
+     "sprite": "42",
+     "text": "Fukushima",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 345
+    },
+    {
+     "sprite": "43",
+     "text": "Ibaraki",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 217
+    },
+    {
+     "sprite": "44",
+     "text": "Tochigi",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 161
+    },
+    {
+     "sprite": "45",
+     "text": "Gunma",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 177
+    },
+    {
+     "sprite": "46",
+     "text": "Saitama",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 249
+    },
+    {
+     "sprite": "47",
+     "text": "Chiba",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 319
+    },
+    {
+     "sprite": "48",
+     "text": "East Tokyo",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 226
+    },
+    {
+     "sprite": "49",
+     "text": "West Tokyo",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 210
+    },
+    {
+     "sprite": "4a",
+     "text": "Kanagawa",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 361
+    },
+    {
+     "sprite": "4b",
+     "text": "Niigata",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 178
+    },
+    {
+     "sprite": "4c",
+     "text": "Toyama",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 257
+    },
+    {
+     "sprite": "4d",
+     "text": "Ishikawa",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 234
+    },
+    {
+     "sprite": "4e",
+     "text": "Fukui",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 305
+    },
+    {
+     "sprite": "4f",
+     "text": "Yamanashi",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 290
+    },
+    {
+     "sprite": "50",
+     "text": "Nagano",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 297
+    },
+    {
+     "sprite": "51",
+     "text": "Gifu",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 177
+    },
+    {
+     "sprite": "52",
+     "text": "Shizuoka",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 258
+    },
+    {
+     "sprite": "53",
+     "text": "Aichi",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 289
+    },
+    {
+     "sprite": "54",
+     "text": "Mie",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 337
+    },
+    {
+     "sprite": "55",
+     "text": "Shiga",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 193
+    },
+    {
+     "sprite": "56",
+     "text": "Kyoto",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 161
+    },
+    {
+     "sprite": "57",
+     "text": "Osaka",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 250
+    },
+    {
+     "sprite": "58",
+     "text": "Hyogo",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 187
+    },
+    {
+     "sprite": "59",
+     "text": "Nara",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 297
+    },
+    {
+     "sprite": "5a",
+     "text": "Wakayama",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 333
+    },
+    {
+     "sprite": "5b",
+     "text": "Tottori",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 133
+    },
+    {
+     "sprite": "5c",
+     "text": "Shimane",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 180
+    },
+    {
+     "sprite": "5d",
+     "text": "Okayama",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 218
+    },
+    {
+     "sprite": "5e",
+     "text": "Hiroshima",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 265
+    },
+    {
+     "sprite": "5f",
+     "text": "Yamaguchi",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 314
+    },
+    {
+     "sprite": "60",
+     "text": "Tokushima",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 201
+    },
+    {
+     "sprite": "61",
+     "text": "Kagawa",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 151
+    },
+    {
+     "sprite": "62",
+     "text": "Ehime",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 223
+    },
+    {
+     "sprite": "63",
+     "text": "Kochi",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 278
+    },
+    {
+     "sprite": "64",
+     "text": "Fukuoka",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 130
+    },
+    {
+     "sprite": "65",
+     "text": "Saga",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 153
+    },
+    {
+     "sprite": "66",
+     "text": "Nagasaki",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 178
+    },
+    {
+     "sprite": "67",
+     "text": "Kumamoto",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 247
+    },
+    {
+     "sprite": "68",
+     "text": "Oita",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 168
+    },
+    {
+     "sprite": "69",
+     "text": "Miyazaki",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 270
+    },
+    {
+     "sprite": "6a",
+     "text": "Kagoshima",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 333
+    },
+    {
+     "sprite": "6b",
+     "text": "Okinawa",
+     "style": "a4_mk_small",
+     "font": "ttf:narrow:9:0.2:1.0:0.5",
+     "baseline": 281
+    }
+   ],
+   "name": "small names",
+   "share": true,
+   "sprites": "p4_mp#2",
+   "sprite_prefix": "p4_mp"
+  },
+  {
+   "bank": "m4_mak#1",
+   "palette": 5,
+   "style": "a4_mk_plate_19_0",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     19,
+     0,
+     0,
+     80,
+     24
+    ],
+    [
+     19,
+     0,
+     24,
+     80,
+     48
+    ],
+    [
+     19,
+     0,
+     48,
+     80,
+     72
+    ],
+    [
+     19,
+     0,
+     72,
+     80,
+     96
+    ],
+    [
+     19,
+     0,
+     96,
+     80,
+     128
+    ],
+    [
+     20,
+     0,
+     0,
+     80,
+     24
+    ],
+    [
+     20,
+     0,
+     24,
+     80,
+     48
+    ],
+    [
+     20,
+     0,
+     48,
+     80,
+     72
+    ],
+    [
+     20,
+     0,
+     72,
+     80,
+     96
+    ],
+    [
+     20,
+     0,
+     96,
+     80,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      19,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": "Hokkaido",
+     "style": "a4_mk_plate_19_0",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      19,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": "Tohoku",
+     "style": "a4_mk_plate_19_24",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      19,
+      0,
+      48,
+      80,
+      72
+     ],
+     "text": "Hokushinetsu",
+     "style": "a4_mk_plate_19_48",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      19,
+      0,
+      72,
+      80,
+      96
+     ],
+     "text": "Kanto",
+     "style": "a4_mk_plate_19_72",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      19,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "Tokyo",
+     "style": "a4_mk_plate_19_96",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      20,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": "Shikoku",
+     "style": "a4_mk_plate_20_0",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      20,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": "Tokai",
+     "style": "a4_mk_plate_20_24",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      20,
+      0,
+      48,
+      80,
+      72
+     ],
+     "text": "Kyushu",
+     "style": "a4_mk_plate_20_48",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      20,
+      0,
+      72,
+      80,
+      96
+     ],
+     "text": "Kinki",
+     "style": "a4_mk_plate_20_72",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      20,
+      0,
+      96,
+      80,
+      120
+     ],
+     "text": "Chugoku",
+     "style": "a4_mk_plate_20_96",
+     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "valign": "centre"
+    }
+   ],
+   "name": "call-outs",
+   "sprites": "p4_mp#2",
+   "sprite_prefix": "p4_mp"
+  },
+  {
+   "bank": "m4_mak#1",
+   "palette": 16,
+   "style": "a4_mk_flat1",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     88,
+     80,
+     104,
+     96
+    ],
+    [
+     3,
+     112,
+     80,
+     128,
+     96
+    ],
+    [
+     3,
+     72,
+     96,
+     128,
+     112
+    ],
+    [
+     3,
+     72,
+     112,
+     128,
+     128
+    ],
+    [
+     3,
+     88,
+     0,
+     128,
+     80
+    ],
+    [
+     3,
+     104,
+     80,
+     112,
+     96
+    ],
+    [
+     3,
+     0,
+     96,
+     72,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "7d",
+     "text": "Many",
+     "style": "a4_mk_flat1",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 13
+    },
+    {
+     "sprite": "7e",
+     "text": "Average",
+     "style": "a4_mk_flat1",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 14
+    },
+    {
+     "sprite": "7f",
+     "text": "Few",
+     "style": "a4_mk_flat1",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 14
+    }
+   ],
+   "name": "amount words",
+   "sprites": "p4_mp#2",
+   "sprite_prefix": "p4_mp"
+  }
+ ]
+}
