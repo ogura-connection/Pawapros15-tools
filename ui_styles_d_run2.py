@@ -8,7 +8,7 @@ from ui_styles_ore_ini import ringfill
 STYLES = {}
 
 # scs_open z3_fic_0 (palette 0, grey ramp): white letters, a grey soft edge, black outline, dark blue-grey shadow
-STYLES["d2_fic"] = ringfill([0xf], [0xb, 4, 4], [3, 2])
+STYLES["d2_fic"] = ringfill([0xf], [0xb, 4], [3, 2])
 
 ui_type.TTF["d_georgia"] = ("/System/Library/Fonts/Supplemental/Georgia Bold.ttf", 0)
 ui_type.TTF["d_times"] = ("/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf", 0)
