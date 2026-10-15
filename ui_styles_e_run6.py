@@ -160,6 +160,7 @@ S["e6_sk"] = ringfill([15], [4])
 S["e6_b5"] = ringfill([14], [2])
 S["e6_b5_small"] = ringfill([1], [12])
 _LOGO = ringfill([8, 8, 8, 9, 9, 9], [15, 15, 6, 6])
+S["e6_logo_in"] = _LOGO
 S["e6_logo_pbg"] = onwhite(_LOGO, 184, 48)
 
 

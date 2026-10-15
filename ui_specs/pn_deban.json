@@ -339,7 +339,7 @@
      "sprite": "17",
      "text": "Pitching\nPinch",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
      "baseline": 34,
      "palettes": [
       78
@@ -349,7 +349,7 @@
      "sprite": "18",
      "text": "Batting\nChance",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
      "baseline": 34,
      "palettes": [
       79
@@ -666,14 +666,14 @@
     },
     {
      "sprite": "26",
-     "text": "Iron 2B-SS",
+     "text": "Iron 3B-SS",
      "style": "e6_sk",
      "font": "ttf:rounded:8:0.0:0.92:0.6",
      "baseline": 20
     },
     {
      "sprite": "27",
-     "text": "Golden 2B-SS",
+     "text": "Golden 3B-SS",
      "style": "e6_sk",
      "font": "ttf:rounded:8:0.0:0.85:0.6",
      "baseline": 20

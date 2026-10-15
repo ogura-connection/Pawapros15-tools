@@ -14,7 +14,7 @@ import numpy as np
 from ui_styles_ore_ini import _orig_page
 
 
-def _neg(inner, rows=(4, 28), cols=(4, 26)):
+def _neg(inner, rows=(6, 30), cols=(4, 26)):
     """The green box of g3_fa_0 sprite 22 (page 6, rect 96,96,128,128), its face cleaned of the kanji, with `inner`'s lettering on it."""
     def style(ink, base):
         art, b = inner(ink, base)
@@ -39,3 +39,11 @@ STYLES["d6_pale"] = ringfill([9, 9, 9, 5, 5, 5], [1])                         # 
 STYLES["d6_olive"] = ringfill([14, 13, 12, 11, 10, 9], [6, 4], [3])           # pal 209: olive-gold
 STYLES["d6_navy"] = flat([0, 1, 1, 1, 1, 1, 1], cut=3)                        # pal 215: navy letters on a white plate
 STYLES["d6_cyan"] = ringfill([5, 6, 12, 12, 13, 13], [1, 3], [2])             # pal 193: cyan notice
+
+# ---- pn_fa.arc w5_fa / w5_faz ----------------------------------------------------------------------------------------
+STYLES["d6_w_b4"] = ringfill([14, 15, 15, 15, 15, 15], [9], [3, 3])           # pal 4: crimson letters, white ring, blue shadow
+STYLES["d6_w_b7"] = ringfill([14, 15, 15, 15, 15, 15], [9], [3, 3])           # pal 7: purple (same ramp numbers, other palette)
+STYLES["d6_w_b8"] = ringfill([14, 15, 15, 15, 15, 15], [9], [3, 3])           # pal 8: violet-blue
+STYLES["d6_w_title"] = ringfill([12, 12, 13, 13, 14, 14], [3], [1])           # pal 22: lavender-white letters, violet ring
+STYLES["d6_w_sal"] = ringfill([15, 15, 14, 14, 13, 13], [3], [1])             # pal 19: white letters, navy ring
+STYLES["d6_w_sent"] = ringfill([15, 14, 14, 13, 13, 13], [3], [1])            # pal 26: the sentence, blue ring
