@@ -213,3 +213,6 @@ STYLES["c4_ed_plate"] = ringfill([3, 1, 1, 1, 1, 1], [15, 15, 13, 10], [5])     
 STYLES["c4_ed_big"] = ringfill([4, 4, 4, 4, 4, 4], [15, 15], [10, 9])                        # pal 56: navy letters, white ring
 STYLES["c4_ed_leg"] = ringfill([14, 14, 14, 14, 13, 12], [1, 1], [4])                       # pal 9: white letters, black ring (legend line)
 STYLES["c4_ed_pts"] = ringfill([15, 15, 15, 15, 14, 13], [4, 4], [2, 1])                    # pal 18: white letters, black ring, green shadow
+
+STYLES["c4_efo"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 10], [1, 1])                  # pal 26 (z4_efo_0 tape): white letters, teal ring, black shadow
+STYLES["c4_efo_h"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4, 9], [1])                  # page 1: the heading (black ring)

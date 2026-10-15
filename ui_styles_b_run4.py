@@ -27,3 +27,101 @@ STYLES["b4_pr_head_s"] = ringfill([15, 15, 14, 13, 12, 11], [4])                
 
 # ---- sct_a_sy.arc z4_esy_0 (system settings: chalk on the blackboard, palette 24) ----------------------------------------------------------
 STYLES["b4_sy"] = ringfill([15, 15, 14, 14, 13, 13], [3])                                  # chalk white, a dark green ring so the strokes stay solid
+
+# ---- sct_titl.arc: the Eikan Nine title logo (bank r4_eik, 8-bit pages 0-2: a 304 x 128 picture, colour table palette 144) ----------------------
+# The art is redrawn whole (as run 3's logo2 does for scc_tops.arc) and every page rectangle takes its window of it.
+import os, functools
+import numpy as np
+import ui_styles_a_run3 as _A3
+
+_B = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_work", "ui_pages", "run4", "B")
+LOGO_X = (0, 128, 256)                                           # canvas column of page 0, 1, 2
+
+
+def _logo_in():
+    return np.load(os.path.join(_B, "logo_orig_canvas.npy")), np.load(os.path.join(_B, "logo_pal.npy"))
+
+
+def _dilate(m, up=3, left=3, down=5, right=5):
+    out = m.copy()
+    H, W = m.shape
+    for dy in range(-up, down + 1):
+        for dx in range(-left, right + 1):
+            sy0, sy1 = max(0, -dy), min(H, H - dy)
+            sx0, sx1 = max(0, -dx), min(W, W - dx)
+            out[sy0 + dy:sy1 + dy, sx0 + dx:sx1 + dx] |= m[sy0:sy1, sx0:sx1]
+    return out
+
+
+def sct_logo(title="Eikan Nine", sub="Build a Powerhouse Club!", tcap=34, tsq=0.9, tstroke=0.35, scap=13, ssq=0.95, sstroke=0.0, tcx=146, tcy=59, scx=148):
+    A = _A3
+    c, pal = _logo_in()
+    q = A.Quant(pal, c)
+    rgb = pal[c][..., :3].astype(float)
+    ri = pal[c][..., :3].astype(int)
+    lum = 0.299 * ri[..., 0] + 0.587 * ri[..., 1] + 0.114 * ri[..., 2]
+    plate = (lum < 125) & (ri[..., 2] >= ri[..., 0] - 4) & (ri[..., 2] >= ri[..., 1] - 10) & (pal[c][..., 3] > 0)
+    new = c.copy()
+    H, W = c.shape
+    # --- erase the Japanese title: letters + their outline / shadow are cut out of the plate rows and filled from the plate beside them
+    zone = np.zeros(c.shape, bool)
+    for y in range(33, 87):
+        L = next((x for x in range(26, 100) if plate[y, x:x + 5].all()), 40)
+        R = next((x for x in range(290, 150, -1) if plate[y, x - 4:x + 1].all()), 250)
+        zone[y, L + 4:R - 3] = True
+    letters = zone & ~plate
+    mask = _dilate(letters, 3, 3, 5, 5) & zone
+    rgb2 = A.row_inpaint(rgb, mask, valid=plate & ~mask)
+    new[mask] = q(rgb2[mask])
+    # --- the new title
+    m, base = A.crisp_mask(title, tcap, font="condbi", stroke=tstroke, squeeze=tsq)
+    m = A.despeckle(m)
+    h, w = m.shape
+    pad = 4
+    big = np.zeros((h + 2 * pad, w + 2 * pad), bool); big[pad:pad + h, pad:pad + w] = m
+    out = np.zeros(big.shape + (3,)); alpha = np.zeros(big.shape, bool)
+    bevel = A.grow(big, 1)
+    shadow = A.shift(bevel, 2, 2) | A.shift(bevel, 1, 2) | A.shift(bevel, 2, 1)
+    out[shadow] = (16, 16, 32); alpha |= shadow
+    out[bevel] = (214, 216, 232); alpha |= bevel                         # silver bevel ring, as the Japanese lettering has
+    ring = A.grow(bevel, 1, diag=False) & ~bevel
+    out[ring] = (40, 40, 72); alpha |= ring
+    ys = np.nonzero(big.any(1))[0]
+    g = A.grad_rows(A.TITLE_GRAD, ys.max() - ys.min() + 1)
+    rowc = np.zeros((big.shape[0], 3)); rowc[ys.min():ys.max() + 1] = g
+    out[big] = np.broadcast_to(rowc[:, None, :], big.shape + (3,))[big]; alpha |= big
+    hi = big & ~A.shift(big, 1, 0)
+    out[hi] = (255, 250, 225)
+    y0, x0 = tcy - big.shape[0] // 2, tcx - big.shape[1] // 2
+    reg = (slice(y0, y0 + big.shape[0]), slice(x0, x0 + big.shape[1]))
+    new[reg][alpha] = q(out[alpha])
+    # --- subtitle: the brown letters are cut out of the cream band, new ones set in the same brown
+    bx0, bx1, by0, by1 = 56, 242, 87, 115
+    band = np.zeros(c.shape, bool); band[by0:by1, bx0:bx1] = True
+    text = band & (ri[..., 0] - ri[..., 2] > 28) & (ri[..., 0] > ri[..., 1] + 8) & (lum < 215)
+    cream = band & (ri[..., 0] > 235) & (ri[..., 1] > 235) & (ri[..., 2] > 205)
+    tm = _dilate(text, 1, 1, 1, 1) & band
+    rgb3 = A.row_inpaint(rgb, tm, valid=cream & ~tm)
+    new[tm] = q(rgb3[tm])
+    sm, sbase = A.crisp_mask(sub, scap, font="condb", stroke=sstroke, squeeze=ssq)
+    sm = A.despeckle(sm)
+    sh_, sw_ = sm.shape
+    sy = 101 - sh_ // 2; sx = scx - sw_ // 2
+    new[sy:sy + sh_, sx:sx + sw_][sm] = q(np.array([(98, 41, 16)]))[0]
+    return new, (w, h), (sw_, sh_)
+
+
+@functools.lru_cache(None)
+def _logo():
+    return sct_logo()[0]
+
+
+def _logo_window(c0, c1):
+    def style(ink, base):
+        return _logo()[:, c0:c1].copy(), 0
+    return style
+
+
+STYLES["b4_eik0"] = _logo_window(0, 128)           # page 0 rect 0,0,128,128
+STYLES["b4_eik1"] = _logo_window(128, 256)         # page 1 rect 0,0,128,128
+STYLES["b4_eik2"] = _logo_window(256, 304)         # page 2 rect 0,0,48,128

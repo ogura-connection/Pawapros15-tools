@@ -87,7 +87,7 @@ def memo(ink, base):
     """z5_edm_0: the manager's handwriting, one colour ramp (index 15 strongest .. 1 faintest)."""
     import numpy as np
     out = np.zeros(ink.shape, np.uint8)
-    for lv, ix in ((1, 4), (2, 7), (3, 10), (4, 12), (5, 14), (6, 15)):
+    for lv, ix in ((2, 8), (4, 15)):
         out[ink >= lv] = ix
     ys, xs = np.nonzero(out)
     return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base - ys.min()
