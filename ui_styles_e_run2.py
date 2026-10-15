@@ -15,5 +15,6 @@ STYLES["e_go"] = ui_type.ringed([0, 10, 12, 13, 14, 15, 15], [8, 1])
 # answers: heavy italic dark letters in a one-pixel light ring
 STYLES["e_mic"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [7])
 
-# scs_load.arc y5_tlog_0 (palette 20, white to dark brown): Cleared / Pitchers / Fielders: white letters in a dark ring
-STYLES["e_tlog"] = ui_type.ringed([0, 10, 12, 13, 14, 15, 15], [1])
+# scs_load.arc y5_tlog_0 (palette 20, white to dark brown): Cleared / Pitchers / Fielders: dark brown letters in a grey and a
+# white ring (as the Japanese lettering is)
+STYLES["e_tlog"] = ui_type.ringed([0, 5, 4, 3, 2, 1, 1], [8, 15])

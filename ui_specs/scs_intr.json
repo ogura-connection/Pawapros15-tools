@@ -1,0 +1,246 @@
+{
+ "arc": "scs_intr.arc",
+ "repack": [
+  {
+   "bank": "m3_syoukai",
+   "palette": 12,
+   "style": "d2_sy_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     8,
+     24,
+     40
+    ],
+    [
+     11,
+     56,
+     0,
+     128,
+     48
+    ],
+    [
+     11,
+     80,
+     80,
+     128,
+     128
+    ],
+    [
+     10,
+     96,
+     8,
+     128,
+     40
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Characters",
+     "style": "d2_sy_title",
+     "font": "d:rounded:19:0.92:0.6:0",
+     "slices": true,
+     "slice_width": 48,
+     "dy": 1
+    }
+   ],
+   "name": "title"
+  },
+  {
+   "bank": "m3_syoukai",
+   "palette": 15,
+   "style": "d2_sy_hint",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     112,
+     112,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "05",
+     "text": "L/R: Show by scenario",
+     "style": "d2_sy_hint",
+     "font": "d:rounded:10:0.9:0.4:0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    }
+   ],
+   "name": "hint"
+  },
+  {
+   "bank": "m3_syoukai",
+   "palette": 5,
+   "style": "d2_sy_label",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     80,
+     0,
+     128,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      64
+     ],
+     "text": "Name|Known For|Profile",
+     "style": "d2_sy_label",
+     "font": "d:rounded:9:0.85:0.5:20",
+     "baseline": 36,
+     "align": "left",
+     "left": 4
+    }
+   ],
+   "name": "plate"
+  },
+  {
+   "bank": "m3_syoukai",
+   "palette": 26,
+   "style": "d2_sy_t11",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     72,
+     40,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "11",
+     "text": "Common",
+     "style": "d2_sy_t11",
+     "font": "d:rounded:9:0.85:0.55:0",
+     "palettes": [
+      26
+     ],
+     "baseline": 32
+    },
+    {
+     "sprite": "12",
+     "text": "Pawafuru",
+     "style": "d2_sy_t12",
+     "font": "d:rounded:9:0.85:0.55:0",
+     "palettes": [
+      22
+     ],
+     "baseline": 32
+    },
+    {
+     "sprite": "13",
+     "text": "Teio",
+     "style": "d2_sy_t13",
+     "font": "d:rounded:9:0.85:0.55:0",
+     "palettes": [
+      23
+     ],
+     "baseline": 32
+    },
+    {
+     "sprite": "14",
+     "text": "Tachibana",
+     "style": "d2_sy_t14",
+     "font": "d:rounded:9:0.85:0.55:0",
+     "palettes": [
+      25
+     ],
+     "baseline": 32
+    },
+    {
+     "sprite": "15",
+     "text": "Haikyo",
+     "style": "d2_sy_t15",
+     "font": "d:rounded:9:0.85:0.55:0",
+     "palettes": [
+      24
+     ],
+     "baseline": 32
+    }
+   ],
+   "name": "tags"
+  },
+  {
+   "bank": "m3_syoukai",
+   "palette": 14,
+   "style": "d2_sy_nodata",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     104,
+     32,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0f",
+     "text": "No data.",
+     "style": "d2_sy_nodata",
+     "font": "d:rounded:14:1.0:0.5:0",
+     "pages": [
+      6,
+      7
+     ],
+     "palettes": [
+      14
+     ],
+     "baseline": 70
+    }
+   ],
+   "name": "nodata"
+  }
+ ]
+}

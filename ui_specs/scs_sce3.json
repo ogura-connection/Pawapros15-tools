@@ -584,11 +584,134 @@
      ],
      "text": "Pay",
      "style": "b_sib_pay_34_20",
-     "font": "ttf:avm:9:0.0:1.0:0.0",
-     "baseline": 15
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 16
     }
    ],
    "name": "sib"
+  },
+  {
+   "bank": "y5_sjk_0",
+   "palette": 16,
+   "style": "b_sjk_stat",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     88,
+     80
+    ],
+    [
+     3,
+     88,
+     0,
+     128,
+     40
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "11",
+     "text": "Strength",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 3,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Quickness",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 2,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Technique",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 3,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "14",
+     "text": "Mentality",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 2,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Velocity",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 3,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Breaking Ball",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:0.93:0.3",
+     "baseline": 2,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Stamina",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 2,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Control",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 2,
+     "palettes": [
+      16
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Trust",
+     "style": "b_sjk_stat",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 2,
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "stat"
   }
  ]
 }

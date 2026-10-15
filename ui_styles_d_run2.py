@@ -117,3 +117,14 @@ if not isinstance(ui_type.FONTS, _Fonts):
 
 def dfont(face, cap, squeeze=1.0, bold=0.4, pitch=0):
     return "d:%s:%d:%s:%s:%d" % (face, cap, squeeze, bold, pitch)
+
+# scs_intr m3_syoukai
+STYLES["d2_sy_title"] = ringfill([13, 12, 11, 9, 8], [2, 2, 15, 15, 7], [4, 1])           # palette 12: orange letters, navy outline, white band
+STYLES["d2_sy_hint"] = ringfill([2], [15], [9])                                                # palette 15: blue letters, white edge, lilac shadow
+STYLES["d2_sy_label"] = ringfill([14, 13, 12, 11, 10], [1, 1], [4])                            # palette 5: yellow letters, navy outline
+STYLES["d2_sy_t11"] = ringfill([2], [15], [4, 4])                                              # palettes 26 / 22 / 23 / 25 / 24: coloured letters, white edge, blue shadow
+STYLES["d2_sy_t12"] = ringfill([2], [15], [4, 4])
+STYLES["d2_sy_t13"] = ringfill([2], [15], [4, 4])
+STYLES["d2_sy_t14"] = ringfill([3], [15], [2, 2])
+STYLES["d2_sy_t15"] = ringfill([2], [15], [3, 3])
+STYLES["d2_sy_nodata"] = ringfill([4, 3], [15], [7, 7])                                        # palette 14: grey-blue letters, white edge

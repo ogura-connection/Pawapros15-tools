@@ -70,23 +70,26 @@ def plated(ink_ramp, plate, size):
 
 
 def pay_plate(w, h):
-    """The 報酬 heading plate (palette 18): white inside a lavender edge, a dark shadow line right and below."""
+    """The 報酬 heading plate (palette 18): white inside a lavender edge, rounded corners, a dark shadow line right and below."""
     p = np.zeros((h, w), np.uint8)
-    p[0:h - 1, 0:w - 1] = 7
-    p[1:h - 2, 1:w - 2] = 0xf
-    p[1, 2:w - 3] = 0xc                       # a lit top edge
-    p[h - 3, 2:w - 3] = 0xa                   # and a soft bottom edge
-    for (y, x) in ((0, 0), (0, w - 2), (h - 2, 0), (h - 2, w - 2)):
-        p[y, x] = 0                           # rounded corners
-    p[1:h - 1, w - 1] = 1
-    p[h - 1, 1:w] = 1
+    bw, bh = w - 1, h - 1                      # the plate proper; column w-1 and row h-1 carry the shadow
+    p[0:bh, 0:bw] = 7
+    p[1:bh - 1, 1:bw - 1] = 0xf
+    p[1, 1:bw - 1] = 0xc                       # a lit top edge
+    p[bh - 2, 1:bw - 1] = 0xa                  # and a soft bottom edge
+    p[bh - 3, 1:bw - 1] = 0xd
+    for r, n in ((0, 3), (1, 2), (2, 1)):      # rounded corners: n pixels cut from the corner rows
+        for x in range(n):
+            for (yy, xx) in ((r, x), (r, bw - 1 - x), (bh - 1 - r, x), (bh - 1 - r, bw - 1 - x)):
+                p[yy, xx] = 0
+    p[1:bh, bw] = np.where(p[1:bh, bw - 1] > 0, 1, 0)
+    p[bh, 1:bw + 1] = np.where(p[bh - 1, 0:bw] > 0, 1, 0)
     return p
 
 
-_PAY = {}
 for _h in (20, 22, 24):
     for _w in range(24, 41):
-        STYLES["b_sib_pay_%d_%d" % (_w, _h)] = plated([0, 0xe, 0x8, 0x5, 0x3, 0x2, 0x2], pay_plate, (_w, _h))
+        STYLES["b_sib_pay_%d_%d" % (_w, _h)] = plated([0, 0xe, 0x9, 0x4, 0x3, 0x2, 0x2], pay_plate, (_w, _h))
 STYLES["b_sib_pay_measure"] = ringfill([2], [])
 
 # ---- y5_sjk_0: the training screen ---------------------------------------------------------------------------------------
