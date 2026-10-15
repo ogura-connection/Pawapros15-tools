@@ -99,10 +99,15 @@ def banks(d, syms):
                 cur["name"] = name[4:]
             out.append(cur)
             cur = None
+    tail = None
     if cur and cur["pages"]:
         cur["name"] = cur["name"] or re.sub(r"\d\d$", "", cur["page_names"][0][4:])
         out.append(cur)
-    return [s for b in hand_over_pages([b for b in out if b["pages"]]) for s in split_merged(b)]
+    elif cur and cur["sprites"]:                    # sprite tables behind the file's last palette (sct_a_sy.arc): a
+        cur["name"] = re.sub(r"_[0-9a-f]{2}$", "", next(iter(cur["sprites"]))[4:])   # bank of sprites only, last
+        tail = cur
+    res = [s for b in hand_over_pages([b for b in out if b["pages"]]) for s in split_merged(b)]
+    return res + [tail] if tail else res
 
 
 def bank_named(banks, ref):
