@@ -27,7 +27,7 @@ import os, struct, sys
 import scan_story as S
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-TSV = os.path.join(HERE, "translation", "names", "surnames.tsv")
+TSV = os.environ.get("NAMES_TSV") or os.path.join(HERE, "translation", "names", "surnames.tsv")   # NAMES_TSV: a test table
 READINGS = os.path.join(S.WORK_DIR, "surnames.json")
 COUNT, CELLS, STRIDE, OLD_STRIDE = 1856, 6, 16, 10
 END = 0x1FFF
@@ -210,7 +210,7 @@ def load_tsv():
 
 
 def letters_ok(en, cells=CELLS):
-    return 0 < len(en) <= 2 * cells and all(0x20 < ord(c) < 0x7F for c in en)
+    return 0 < len(en.strip()) and len(en) <= 2 * cells and all(0x20 <= ord(c) < 0x7F for c in en)
 
 
 def short_form(en):
