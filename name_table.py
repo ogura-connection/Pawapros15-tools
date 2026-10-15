@@ -21,7 +21,7 @@ from the game's own readings (_work/surnames.json: kanji, call id, kana of the c
 by hand where needed.
     python3 name_table.py export      write the TSV (keeps English already there)
     python3 name_table.py check       lengths, short forms, the patch sites of the original modules
-    python3 name_table.py export-given  translation/names/given.tsv (given names, written in place: see below)
+    python3 name_table.py export-given / export-draft   translation/names/in_place/<module>.tsv (see below)
 """
 import os, struct, sys
 
@@ -332,77 +332,113 @@ def player_plates(players):
     return [plate(en) for _, _, en in players]
 
 
-# ── Names written in place (given names; later: draft prospects, other copies) ──
-# Each store is a list of fixed records whose name cells are rewritten where they are; nothing moves.
-# translation/names/<store>.tsv: index, English (no Japanese). `python3 name_table.py export-given` writes it.
+# ── Names written in place (given names, draft prospects, record holders ...) ──
+# Stores of fixed six-cell name fields that are rewritten where they are; nothing moves. One TSV per module,
+# translation/names/in_place/<module>.tsv: section, offset of the field (hex), English (no Japanese). The
+# build checks that each field holds a name in the original module (glyph cells, blank cells 0) and pads
+# the English with blank cells after the plate layout. Written by the export commands below.
 #
 # Given names: main_prg.rel sec5+0x3B288, 200 records of 16 bytes: six cells (hiragana, padded with 0),
-# 0xFFFF, 0. A pointer table follows (sec5+0x3BF08). Read by main_prg.rel sec1+0x8F690 (reached from
-# camp.rel, Pawapuro Camp): it shuffles 100 names a side (0-99 boys, 100-199 girls) and copies six cells
-# into each generated team-mate (teams 0x31..0x34).
-GIVEN_TSV = os.path.join(HERE, "translation", "names", "given.tsv")
-GIVEN = ("main_prg.rel", 5, 0x3B288, 200)
+#   0xFFFF, 0; a pointer table follows (sec5+0x3BF08). Read by main_prg.rel sec1+0x8F690 (team set-up,
+#   called from camp.rel, the Practice mode, and school_g.rel, Baseball School): it shuffles 100 names a side
+#   (0-99 boys, 100-199 girls) into generated team-mates of teams 0x31..0x34. Not seen on screen yet.
+# Draft prospects: draft.rel sec5+0x2C08, 2,000 records of 144 bytes: six cells (kanji, two-kanji names
+#   as k1, blank, k2), the announcer's call id at +0x3C. English: the surname list's English for the same
+#   call id, else the call's reading romanised.
+IN_PLACE_DIR = os.path.join(HERE, "translation", "names", "in_place")
+GIVEN = ("main_prg.rel", 5, 0x3B288, 200, 16)
 GIVEN_FIXES = {18: "Koichi", 33: "Shoichi",           # romaji keeps "ou" before a vowel
                25: "Koutaro", 85: "Yuuki", 170: "Miyuu", 179: "Yuuka", 180: "Yuuna"}   # long vowel: kept apart
-
-
-def load_given():
-    out = {}
-    with open(GIVEN_TSV, encoding="utf-8") as f:
-        for line in f:
-            if line.startswith("#") or not line.strip():
-                continue
-            i, en = line.rstrip("\n").split("\t")
-            out[int(i)] = en
-    if sorted(out) != list(range(GIVEN[3])):
-        raise ValueError("%s: needs every index 0..%d" % (GIVEN_TSV, GIVEN[3] - 1))
-    return out
+DRAFT = ("draft.rel", 5, 0x2C08, 2000, 144, 0x3C)
 
 
 def inplace_stores():
-    """{module: [(section, offset, record bytes, names)]}: every store whose names are written in place."""
+    """{module: [(section, offset, English)]} from translation/names/in_place/*.tsv."""
     out = {}
-    if os.path.exists(GIVEN_TSV):
-        fn, sec, at, n = GIVEN
-        out.setdefault(fn, []).append((sec, at, 16, load_given()))
+    if not os.path.isdir(IN_PLACE_DIR):
+        return out
+    for fn in sorted(os.listdir(IN_PLACE_DIR)):
+        if not fn.endswith(".tsv"):
+            continue
+        rows = out.setdefault(fn[:-4], [])
+        with open(os.path.join(IN_PLACE_DIR, fn), encoding="utf-8") as f:
+            for line in f:
+                if line.startswith("#") or not line.strip():
+                    continue
+                sec, off, en = line.rstrip("\n").split("\t")
+                rows.append((int(sec), int(off, 16), en))
     return out
 
 
-def inplace_patches(rel, stores, encode):
-    """{(section, offset): 12 bytes} for one module. Checks each original record first (cells, 0 pad, end mark)."""
+def name_field(d, o):
+    """The six cells at o if they hold a name (glyphs, blank cells 0, at least one glyph), else None."""
+    cells = struct.unpack_from(">6H", d, o)
+    if not any(cells) or any(c and not (0x100 <= c < 0x2000) for c in cells):
+        return None
+    return cells
+
+
+def inplace_patches(rel, rows, encode):
+    """{(section, offset): 12 bytes} for one module; each original field is checked first."""
     out = {}
-    for sec, at, stride, names in stores:
-        d = rel.sec_data(sec)
-        for i, en in names.items():
-            o = at + i * stride
-            cells = struct.unpack_from(">6H", d, o)
-            k = next((j for j, c in enumerate(cells) if c == 0), CELLS)
-            if not k or any(cells[k:]) or struct.unpack_from(">2H", d, o + 2 * CELLS) != (0xFFFF, 0):
-                raise ValueError("%s sec%d+0x%X: not a name record" % (rel.name, sec, o))
-            units = encode(plate(en))
-            if not letters_ok(en) or len(units) > CELLS:
-                raise ValueError("%s: name %r does not fit %d cells" % (rel.name, en, CELLS))
-            out[(sec, o)] = struct.pack(">6H", *(units + [0] * (CELLS - len(units))))
+    for sec, o, en in rows:
+        if name_field(rel.sec_data(sec), o) is None:
+            raise ValueError("%s sec%d+0x%X: not a name field" % (rel.name, sec, o))
+        units = encode(plate(en))
+        if not letters_ok(en) or len(units) > CELLS:
+            raise ValueError("%s sec%d+0x%X: name %r does not fit %d cells" % (rel.name, sec, o, en, CELLS))
+        if (sec, o) in out or any(s == sec and abs(p - o) < 2 * CELLS for s, p in out):
+            raise ValueError("%s sec%d+0x%X: fields overlap" % (rel.name, sec, o))
+        out[(sec, o)] = struct.pack(">6H", *(units + [0] * (CELLS - len(units))))
     return out
 
 
 def inplace_plates(stores):
-    return [plate(en) for lst in stores.values() for _, _, _, names in lst for en in names.values()]
+    return [plate(en) for rows in stores.values() for _, _, en in rows]
+
+
+def _write_store(module, header, rows):
+    os.makedirs(IN_PLACE_DIR, exist_ok=True)
+    path = os.path.join(IN_PLACE_DIR, module + ".tsv")
+    have = {(s, o): en for s, o, en in inplace_stores().get(module, [])}
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("# section\toffset\tEnglish (%s; up to 12 letters)\n" % header)
+        for sec, o, en in rows:
+            f.write("%d\t%X\t%s\n" % (sec, o, have.get((sec, o)) or en))
+    print("%s: %d names" % (path, len(rows)))
+
+
+def _romaji():
+    sys.path.insert(0, os.path.join(S.WORK_DIR, "names"))
+    from romaji import romaji
+    return romaji
 
 
 def cmd_export_given():
-    sys.path.insert(0, os.path.join(S.WORK_DIR, "names"))
-    from romaji import romaji
-    fn, sec, at, n = GIVEN
+    romaji = _romaji()
+    fn, sec, at, n, stride = GIVEN
     d = S.Rel(os.path.join(S.WORK_DIR, "orig", fn)).sec_data(sec)
-    have = load_given() if os.path.exists(GIVEN_TSV) else {}
-    with open(GIVEN_TSV, "w", encoding="utf-8") as f:
-        f.write("# index\tEnglish (given names, main_prg.rel: 0-99 boys, 100-199 girls; Pawapuro Camp team-mates;"
-                " up to 12 letters)\n")
-        for i in range(n):
-            kana = S.decode_units([c for c in struct.unpack_from(">6H", d, at + 16 * i) if c])
-            f.write("%d\t%s\n" % (i, have.get(i) or GIVEN_FIXES.get(i) or romaji(kana)))
-    print("%s: %d names" % (GIVEN_TSV, n))
+    rows = []
+    for i in range(n):
+        kana = S.decode_units([c for c in struct.unpack_from(">6H", d, at + stride * i) if c])
+        rows.append((sec, at + stride * i, GIVEN_FIXES.get(i) or romaji(kana)))
+    _write_store(fn, "given names: the first 100 boys, the next 100 girls", rows)
+
+
+def cmd_export_draft():
+    import json
+    romaji = _romaji()
+    with open(os.path.join(S.WORK_DIR, "call_readings.json"), encoding="utf-8") as f:
+        readings = {int(k): v for k, v in json.load(f).items()}
+    by_call = {call: en for call, en in load_tsv().values()}
+    fn, sec, at, n, stride, call_at = DRAFT
+    d = S.Rel(os.path.join(S.WORK_DIR, "orig", fn)).sec_data(sec)
+    rows = []
+    for i in range(n):
+        o = at + stride * i
+        call = struct.unpack_from(">H", d, o + call_at)[0]
+        rows.append((sec, o, by_call.get(call) or romaji(readings[call])))
+    _write_store(fn, "draft prospects, from the announcer's call ids", rows)
 
 
 # ── Commands ───────────────────────────────────────────────────────────────
@@ -438,4 +474,5 @@ def cmd_check():
 
 
 if __name__ == "__main__":
-    {"export": cmd_export, "export-given": cmd_export_given, "check": cmd_check}.get((sys.argv + [""])[1], lambda: sys.exit(__doc__))()
+    {"export": cmd_export, "export-given": cmd_export_given, "export-draft": cmd_export_draft,
+     "check": cmd_check}.get((sys.argv + [""])[1], lambda: sys.exit(__doc__))()
