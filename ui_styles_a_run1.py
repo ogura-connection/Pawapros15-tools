@@ -218,3 +218,18 @@ STYLES["ctl_type"] = ringfill([15], [5, 5], [3, 2, 1])
 STYLES["ctl_barhead"] = ringfill([15], [7, 7], [6, 5])
 # "this controller is not connected" (palette 56): white letters in a black ring
 STYLES["ctl_msg"] = ringfill([15], [2, 1, 1])
+
+
+def win(style, c0, c1):
+    """Only the columns c0..c1 of the whole word, so a word can be shared out over parts that stand side by side."""
+    def cut(ink, base):
+        art, b = style(ink, base)
+        out = art[:, c0:c1]
+        if out.shape[1] == 0:
+            out = np.zeros((art.shape[0], 1), np.uint8)
+        return out, b
+    return cut
+
+
+STYLES["ctl_msg_a"] = win(STYLES["ctl_msg"], 0, 128)
+STYLES["ctl_msg_b"] = win(STYLES["ctl_msg"], 128, 4096)

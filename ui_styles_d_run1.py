@@ -58,3 +58,13 @@ for _w in range(16, 97):
     STYLES["d_oma_%d" % _w] = platefill([0xf, 0xf, 0xf, 0xe], [2], [1], _w, 24)
 STYLES["d_rt_measure"] = ringfill([0xf, 0xe, 0xd], [6])      # width probe for the plate styles
 STYLES["d_oma_measure"] = ringfill([0xf, 0xf, 0xf, 0xe], [2], [1])
+
+# h3_nxt_ps2: ticker headings (palette 69): cream letters, navy ring; silver titles and rankings (72); league names (73-75); tags (95, 76)
+STYLES["d_nxt_head"] = ringfill([8, 8, 0xd, 0xd], [0xf, 0xf], [4])
+STYLES["d_nxt_top"] = ringfill([0xb, 0xc, 0xd, 0xd], [1, 1, 0xa, 9], [2])
+STYLES["d_nxt_rank"] = ringfill([0xb, 0xc, 0xd, 0xd], [1, 1, 0xa, 9], [2])
+STYLES["d_nxt_ce"] = ringfill([0xe, 0xd, 0xc, 0xb], [4, 1], [1])
+STYLES["d_nxt_pa"] = ringfill([0xf, 0xe, 0xd, 0xc], [6, 4, 1], [2])
+STYLES["d_nxt_le"] = ringfill([0xf, 0xe, 0xc, 0xa], [4, 1], [2])
+STYLES["d_nxt_cl"] = ringfill([0xf, 0xf, 0xe, 0xc], [4, 2, 1])
+STYLES["d_nxt_ch"] = ringfill([0xf, 0xf, 0xe, 0xd], [9, 7, 4])

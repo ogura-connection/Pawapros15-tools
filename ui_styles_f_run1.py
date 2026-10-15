@@ -150,3 +150,21 @@ def titlebar(letter, ring, fill, outline, thick=2, margin=7, rows=8, over=1):
 
 # the title bar Starting Lineup (palette 12): white letters, blue ring (1), cyan bar (15)
 STYLES["f_title"] = titlebar([0, 11, 12, 12, 12, 12, 12], 1, 15, 1)
+
+
+# ---- vs_st.arc (stadium select) -----------------------------------------------------------------------------------------
+from ui_styles_ore_ini import ringfill
+
+# s5_tk, the short names on the stadium tiles (palette 7): navy letters, a white ring, a pale teal glow
+STYLES["f_name"] = ringfill([6], [15, 15, 3, 4])
+# s5_tk, ランダムで球場が決まります (palette 9): gold letters shading to orange, a navy ring, a muted violet edge
+STYLES["f_help"] = ringfill([15, 15, 14, 14, 13, 13, 12, 12, 11, 11], [4, 4, 6], [7, 3])
+# s5_tk, the ground types (palettes 21, 22, 24): green / yellow / orange letters, a blue-violet ring, a lilac glow
+STYLES["f_turf"] = ringfill([15, 15, 14, 14, 13, 13, 12], [8, 7, 5], [5])
+STYLES["f_grass"] = ringfill([15, 15, 14, 14, 13, 13, 12], [5, 8, 4], [4])
+STYLES["f_dirt"] = ringfill([15, 15, 14, 14, 13, 13, 12], [8, 7, 5], [5])
+# s5_tkz, the full names (8-bit pages, palette 16 = entries 256-511): letters shading from yellow (231) to orange (162), a dark
+# teal ring (1), a light blue ring (193), a white band, a pink ring (135, 98) and a dark cast shadow
+GOLD = [231, 229, 227, 223, 222, 219, 217, 212, 210, 208, 205, 202, 198, 194, 192, 190, 187, 181, 179, 175, 173, 171, 165, 164, 162]
+STYLES["f_stad"] = ringfill(GOLD, [1, 193, 255, 255, 255, 135, 98], [35, 3, 3])
+STYLES["f_stad2"] = ringfill(GOLD, [1, 193, 255, 255, 135, 98], [35, 3])
