@@ -850,6 +850,595 @@
     1,
     1
    ]
+  },
+  {
+   "bank": "z3_up_0",
+   "palette": 60,
+   "style": "e_cur",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 0,
+   "areas": [
+    [
+     1,
+     64,
+     80,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     88,
+     64,
+     96
+    ],
+    [
+     4,
+     64,
+     40,
+     128,
+     64
+    ],
+    [
+     4,
+     32,
+     96,
+     64,
+     128
+    ],
+    [
+     4,
+     0,
+     112,
+     32,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     5,
+     96,
+     48,
+     128,
+     80
+    ],
+    [
+     6,
+     96,
+     72,
+     128,
+     96
+    ],
+    [
+     6,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     64,
+     0,
+     80,
+     88
+    ],
+    [
+     9,
+     80,
+     64,
+     104,
+     88
+    ],
+    [
+     9,
+     104,
+     72,
+     128,
+     80
+    ],
+    [
+     9,
+     0,
+     88,
+     104,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      6,
+      0,
+      96,
+      56,
+      128
+     ],
+     "text": "Current",
+     "style": "e_cur",
+     "font": "ttf:rounded:8:0.0:1.0:0.4",
+     "left": 2,
+     "baseline": 19
+    },
+    {
+     "from": [
+      6,
+      56,
+      96,
+      128,
+      128
+     ],
+     "text": "After",
+     "style": "e_after",
+     "font": "ttf:rounded:17:0.0:1.0:0.4",
+     "left": 3,
+     "baseline": 24
+    },
+    {
+     "from": [
+      4,
+      64,
+      40,
+      128,
+      64
+     ],
+     "text": "Item Effect",
+     "style": "e_item",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      72,
+      40
+     ],
+     "text": "Current",
+     "style": "e_cur",
+     "font": "ttf:rounded:12:0.0:1.0:0.4",
+     "left": -1,
+     "baseline": 25
+    },
+    {
+     "from": [
+      7,
+      72,
+      0,
+      128,
+      40
+     ],
+     "text": "After",
+     "style": "e_after",
+     "font": "ttf:rounded:18:0.0:1.0:0.4",
+     "left": 33,
+     "baseline": 28
+    },
+    {
+     "from": [
+      7,
+      0,
+      40,
+      80,
+      80
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "With Items",
+     "style": "e_item",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "left": 5,
+     "baseline": 24
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      40,
+      24
+     ],
+     "text": "TRJ",
+     "style": "stat",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "left": 0,
+     "baseline": 18
+    },
+    {
+     "from": [
+      8,
+      40,
+      0,
+      88,
+      24
+     ],
+     "text": "CON",
+     "style": "stat",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "left": 0,
+     "baseline": 20
+    },
+    {
+     "from": [
+      8,
+      88,
+      0,
+      128,
+      24
+     ],
+     "text": "POW",
+     "style": "stat",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "left": 3,
+     "baseline": 20
+    },
+    {
+     "from": [
+      8,
+      0,
+      24,
+      16,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      16,
+      24,
+      56,
+      48
+     ],
+     "text": "SPD",
+     "style": "stat",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      8,
+      56,
+      24,
+      96,
+      48
+     ],
+     "text": "ARM",
+     "style": "stat",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      8,
+      96,
+      24,
+      128,
+      48
+     ],
+     "text": "FLD",
+     "style": "stat",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "left": 5,
+     "baseline": 20
+    },
+    {
+     "from": [
+      8,
+      0,
+      48,
+      24,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      24,
+      48,
+      80,
+      72
+     ],
+     "text": "ERR",
+     "style": "stat",
+     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "left": 2,
+     "baseline": 21
+    },
+    {
+     "from": [
+      8,
+      80,
+      48,
+      128,
+      72
+     ],
+     "text": "VEL",
+     "style": "stat",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "left": 3,
+     "baseline": 19
+    },
+    {
+     "from": [
+      8,
+      0,
+      72,
+      72,
+      96
+     ],
+     "text": "CTL",
+     "style": "stat",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "left": 9,
+     "baseline": 19
+    },
+    {
+     "from": [
+      8,
+      72,
+      72,
+      128,
+      96
+     ],
+     "text": "STA",
+     "style": "stat",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "left": 6,
+     "baseline": 19
+    },
+    {
+     "from": [
+      7,
+      80,
+      40,
+      128,
+      80
+     ],
+     "text": "Current\nEXP",
+     "style": "e_exp",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "left": 3,
+     "baseline": 42
+    },
+    {
+     "from": [
+      7,
+      0,
+      80,
+      24,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      24,
+      80,
+      48,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      24,
+      96,
+      48,
+      112
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      24,
+      112,
+      48,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      48,
+      80,
+      88,
+      104
+     ],
+     "text": "STR",
+     "style": "e_exp",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      7,
+      88,
+      80,
+      128,
+      104
+     ],
+     "text": "QCK",
+     "style": "e_exp",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "left": 1,
+     "baseline": 17
+    },
+    {
+     "from": [
+      7,
+      48,
+      104,
+      88,
+      128
+     ],
+     "text": "TEC",
+     "style": "e_exp",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "left": 3,
+     "baseline": 17
+    },
+    {
+     "from": [
+      6,
+      96,
+      72,
+      128,
+      96
+     ],
+     "text": "BRK",
+     "style": "e_exp",
+     "font": "ttf:rounded:13:0.0:1.0:0.35",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      5,
+      104,
+      24,
+      128,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      88,
+      104,
+      128,
+      128
+     ],
+     "text": "MEN",
+     "style": "e_exp",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "left": 1,
+     "baseline": 17
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      88,
+      24
+     ],
+     "text": "Pitcher Skills",
+     "style": "e_tabp",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "left": 5,
+     "baseline": 17
+    },
+    {
+     "from": [
+      5,
+      0,
+      24,
+      88,
+      48
+     ],
+     "text": "Fielder Skills",
+     "style": "e_tabf",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "left": 6,
+     "baseline": 17
+    },
+    {
+     "from": [
+      5,
+      88,
+      0,
+      128,
+      24
+     ],
+     "text": "Other",
+     "style": "e_tabo",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "from": [
+      5,
+      88,
+      24,
+      104,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      64,
+      80,
+      128,
+      128
+     ],
+     "text": "Cancel",
+     "style": "e_cancel",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "left": 4,
+     "baseline": 28
+    },
+    {
+     "from": [
+      9,
+      0,
+      104,
+      88,
+      128
+     ],
+     "text": "Chance to learn!",
+     "style": "plain",
+     "font": "ttf:narrow:8:0.0:1.0:0.15",
+     "left": 7,
+     "baseline": 15
+    }
+   ],
+   "name": "headings",
+   "gap": [
+    1,
+    1
+   ]
   }
  ]
 }

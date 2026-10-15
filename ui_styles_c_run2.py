@@ -155,3 +155,15 @@ for _k in list(STYLES):
 # ---- scs_vs z5_svx_0 (256 colours): the tournament titles. Orange to yellow letters, dark red outline, white band, blue ring ----------
 from ui_type import called
 STYLES["c2_svx"] = called([78, 74, 66, 53, 43, 36], [78, 78], 125, 199, 154, [182], 2, 3, 3, (1, 1))
+
+
+# ---- scs_win r4_vs (palettes 0, 3, 4, 5): the result screen ------------------------------------------------------------------------
+# 勝利 (palette 3): letters from white at the top to dark gold at the foot, a thick black outline and shadow
+_GOLD = [15, 14, 14, 13, 12, 11, 10, 9, 8, 7, 6, 6]
+STYLES["c2_win_gold"] = ringfill(_GOLD, [1, 1, 1], [1, 1])
+# 敗北 (palette 4), 引き分け (5): the same from white to lilac
+STYLES["c2_win_lilac"] = ringfill([15, 14, 14, 13, 12, 11, 10, 9, 8, 7, 6, 6], [1, 1, 1], [1, 1])
+# the match types and the side words (palette 0): white letters, black outline and shadow
+STYLES["c2_win_h"] = ringfill([15, 15, 15, 15, 14, 14, 13, 12], [7, 7, 7], [7, 5])
+# the team names (palette 0, 32 rows): the same, thinner
+STYLES["c2_win_n"] = ringfill([15, 15, 15, 15, 14, 14, 13, 12], [7, 7], [7])

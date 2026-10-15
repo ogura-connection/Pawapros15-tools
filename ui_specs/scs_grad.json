@@ -579,6 +579,136 @@
     }
    ],
    "name": "ranks"
+  },
+  {
+   "bank": "m3_stu",
+   "palette": 11,
+   "style": "d2_st_tag",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     72
+    ],
+    [
+     2,
+     0,
+     72,
+     80,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0e",
+     "text": "Strength",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "slices": true,
+     "slice_width": 25,
+     "dy": 2
+    },
+    {
+     "sprite": "0f",
+     "text": "Batting",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "baseline": 16
+    },
+    {
+     "sprite": "10",
+     "text": "Running",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "slices": true,
+     "slice_width": 25,
+     "dy": 2
+    },
+    {
+     "sprite": "11",
+     "text": "Fielding",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "baseline": 16
+    },
+    {
+     "sprite": "12",
+     "text": "Mentality",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "baseline": 16
+    },
+    {
+     "sprite": "13",
+     "text": "Pitching",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "baseline": 16
+    },
+    {
+     "sprite": "14",
+     "text": "Stamina",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "baseline": 16
+    },
+    {
+     "sprite": "15",
+     "text": "Breaking",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "baseline": 16
+    },
+    {
+     "sprite": "16",
+     "text": "Meeting",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "baseline": 16
+    },
+    {
+     "sprite": "17",
+     "text": "Original",
+     "style": "d2_st_tag",
+     "font": "d:narrow:10:1.0:0.35:0",
+     "palettes": [
+      11
+     ],
+     "baseline": 18
+    }
+   ],
+   "name": "tags"
   }
  ]
 }
