@@ -376,7 +376,7 @@
     112
    ],
    "text": "Koshien",
-   "font": "ttf:narrow:8:0.0:0.85:0.3",
+   "font": "ttf:narrow:10:0.0:0.74:0.3",
    "copy": "clear",
    "style": "c4_td_g_kosh_0"
   },
