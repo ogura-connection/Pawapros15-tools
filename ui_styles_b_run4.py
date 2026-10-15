@@ -24,3 +24,6 @@ STYLES["b4_pr_pos"] = ringfill([15, 15, 14, 14, 13, 13], [3])                   
 STYLES["b4_pr_col"] = ringfill([6, 4, 3, 2, 2, 4], [8, 8], [14])                           # pal 61-63: brown / blue / green letters, white ring (hands, years)
 STYLES["b4_pr_msg"] = ringfill([3, 2, 1, 1, 1, 2], [8, 8, 8], [12, 13])                    # pal 64-68: dark letters, white band, pale glow (practice orders)
 STYLES["b4_pr_head_s"] = ringfill([15, 15, 14, 13, 12, 11], [4])                           # the same with one ring: heads of 32 px cells (two arts fit one 24 row cell)
+
+# ---- sct_a_sy.arc z4_esy_0 (system settings: chalk on the blackboard, palette 24) ----------------------------------------------------------
+STYLES["b4_sy"] = ringfill([15, 15, 14, 14, 13, 13], [3])                                  # chalk white, a dark green ring so the strokes stay solid

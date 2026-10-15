@@ -68,3 +68,4 @@ STYLES["a4_mk_title~128_4096"] = win(STYLES["a4_mk_title"], 128, 4096)
 STYLES["a4_mk_menu"] = ringfill([1], [5, 5, 4])                                 # pal 6 / 11: white letters, black ring, dark green edge
 STYLES["a4_mk_big"] = ringfill([1], [3, 3, 1, 2])                            # p4_mp pal 0: white letters, blue ring, white ring, pale glow
 STYLES["a4_mk_small"] = ringfill([1], [3, 2])                                # p4_mp pal 1
+STYLES["a4_mk_head"] = ringfill([1], [3, 1, 2])                               # p4_mp pal 0, the region headings (thinner rings: the words are long)
