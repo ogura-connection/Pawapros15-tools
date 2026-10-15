@@ -8,7 +8,7 @@ from ui_styles_ore_ini import ringfill
 
 STYLES = {}
 ui_type.TTF.setdefault("b_times", ("/System/Library/Fonts/Supplemental/Times New Roman.ttf", 0))             # Grade 3: thin serif letters
-ui_type.TTF.setdefault("b_georgia", ("/System/Library/Fonts/Supplemental/Georgia Bold.ttf", 0))             # Grades 2 and 1: heavy serif letters
+ui_type.TTF.setdefault("b_timesb", ("/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf", 0))         # Grades 2 and 1: heavy serif letters (lining figures)
 ui_type.TTF.setdefault("avm", ("/System/Library/Fonts/Avenir Next Condensed.ttc", 5))      # Avenir Next Condensed Medium: small lettering
 
 

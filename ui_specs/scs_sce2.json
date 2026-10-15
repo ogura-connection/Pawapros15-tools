@@ -67,7 +67,7 @@
      "sprite": "01",
      "text": "Grade 3\nEmployee",
      "style": "b_ran_3",
-     "font": "ttf:b_times:15:0.0:1.0:0.0",
+     "font": "ttf:b_times:13:0.0:1.0:0.25",
      "baseline": 16,
      "pages": [
       1
@@ -80,8 +80,8 @@
      "sprite": "02",
      "text": "Grade 2\nEmployee",
      "style": "b_ran_2",
-     "font": "ttf:b_georgia:15:0.0:1.0:0.0",
-     "baseline": 16,
+     "font": "ttf:b_timesb:13:0.0:1.0:0.0",
+     "baseline": 14,
      "pages": [
       1
      ],
@@ -93,8 +93,8 @@
      "sprite": "03",
      "text": "Grade 1\nEmployee",
      "style": "b_ran_1",
-     "font": "ttf:b_georgia:15:0.0:1.0:0.0",
-     "baseline": 16,
+     "font": "ttf:b_timesb:13:0.0:1.0:0.0",
+     "baseline": 15,
      "pages": [
       1
      ],

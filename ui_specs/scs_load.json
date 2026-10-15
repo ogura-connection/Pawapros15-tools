@@ -310,16 +310,15 @@
      "box": [
       244,
       172,
-      373,
+      379,
       193
      ],
      "bg": "cols",
      "text": "Pawafuru Corp.",
      "font": "ttf:rounded:12:0:0.97:0.4",
      "colour": "#1f2638",
-     "crisp": true,
      "centre": [
-      309,
+      310,
       182
      ]
     }
@@ -333,34 +332,32 @@
      "box": [
       212,
       310,
-      308,
+      310,
       333
      ],
      "bg": "cols",
      "text": "Otori Phoenix",
-     "font": "ttf:narrow:11:0:0.9:0.4",
+     "font": "ttf:narrow:10:0:1.0:0.35",
      "colour": "#1f2638",
-     "crisp": true,
      "centre": [
-      260,
-      321
+      259,
+      320
      ]
     },
     {
      "box": [
-      333,
+      329,
       310,
       424,
-      332
+      329
      ],
      "bg": "cols",
      "text": "Now Recruiting!",
-     "font": "ttf:narrow:11:0:0.9:0.4",
+     "font": "ttf:narrow:10:0:1.0:0.35",
      "colour": "#1f2638",
-     "crisp": true,
      "centre": [
       378,
-      321
+      320
      ]
     }
    ]

@@ -95,24 +95,44 @@ def _emblem_cut(inner_style, plate, dy):
     def cut(ink, base):
         art, _ = inner_style(ink, base)
         out = np.zeros((32, 32), np.uint8)
+        mid = (16, 16)
         if plate:
-            page, rect, depth, inner, drop = plate
-            old = _orig_rect("gdt_scs.arc", "y4_mmk_1", page, rect)
-            solid = old > 0
-            core = _erode(solid, depth)
-            out = np.where(solid, old, 0).astype(np.uint8)
-            out[np.isin(out, drop)] = inner
-            out[core] = inner
+            out, mid = _plate(*plate)
         H, W = art.shape
-        y, x = (32 - H) // 2 + dy, (32 - W) // 2
+        y, x = mid[0] - H // 2 + dy, mid[1] - W // 2
         area = out[y:y + H, x:x + W]
         area[art > 0] = art[art > 0]
         return out, 0
     return cut
 
 
+def _plate(kind, page, rect):
+    """The tile (kind "tile") or the ring and disc (kind "disc") of an emblem, cleaned of its kanji, from the untouched file."""
+    old = _orig_rect("gdt_scs.arc", "y4_mmk_1", page, rect)
+    solid = old > 0
+    ys, xs = np.nonzero(solid)
+    out = np.zeros((32, 32), np.uint8)
+    if kind == "tile":                       # 選: a red tile; the sweep of the kanji left of it is dropped
+        x0, x1, y0, y1 = xs.min() + 3, xs.max() + 1, ys.min(), ys.max() + 1
+        out[y0:y1, x0:x1] = 2                # pale blue edge
+        out[y0 + 1:y1 - 1, x0 + 1:x1 - 1] = 5     # dark red border
+        out[y0 + 2:y1 - 2, x0 + 2:x1 - 2] = 7     # red tile
+        out[y0 + 2, x0 + 2:x1 - 2] = 9            # light top edge
+        for cy, cx in ((y0, x0), (y0, x1 - 1), (y1 - 1, x0), (y1 - 1, x1 - 1)):
+            out[cy, cx] = 0
+        return out, ((y0 + y1) // 2, (x0 + x1) // 2)
+    cy, cx = (ys.min() + ys.max()) / 2.0, (xs.min() + xs.max()) / 2.0      # disc
+    r = (ys.max() - ys.min() + 1) / 2.0
+    yy, xx = np.mgrid[0:32, 0:32]
+    dist = np.hypot(yy - cy, xx - cx)
+    out = np.where(solid & (dist > r - 4.5), old, 0).astype(np.uint8)
+    out[np.isin(out, (2, 3, 4, 5, 6)) & (dist > r - 4.5)] = 10
+    out[dist <= r - 4.5] = 12
+    return out, (int(round(cy)), int(round(cx)))
+
+
 # 選 (palette 23): red tile, white capitals in dark red
-STYLES["c2_emb_03"] = emblem([15, 15, 15, 14, 14, 14, 14, 14], [4], [], (1, (64, 0, 96, 32), 3, 6, (9, 10, 11, 12, 13, 14, 15)), dy=-1)
+STYLES["c2_emb_03"] = emblem([15, 15, 15, 14, 14, 14, 14, 14], [4], [], ("tile", 1, (64, 0, 96, 32)), dy=-1)
 # 極 (palette 43): pale lilac capitals, purple outline, blue shadow
 STYLES["c2_emb_05"] = emblem([7, 6, 6, 5, 5, 4, 4, 3], [1, 1], [13, 15])
 # て (palette 45): blue capitals, pale cyan outline, blue shadow
@@ -122,7 +142,7 @@ STYLES["c2_emb_08"] = emblem([1, 1, 2, 2, 3, 3, 3, 3], [7, 7], [10])
 # ぴ (palette 37): white capitals, royal blue outline, sky blue ring
 STYLES["c2_emb_09"] = emblem([15, 15, 14, 14, 13, 13, 12, 12], [2, 2], [9])
 # 覇 (palette 47): dark capitals on the pale grey disc of a red ring
-STYLES["c2_emb_0b"] = emblem([2, 2, 2, 2, 3, 3, 3, 3], [12], [], (1, (32, 0, 64, 32), 4, 12, (2, 3, 4, 5, 6, 14, 13)), dy=0)
+STYLES["c2_emb_0b"] = emblem([2, 2, 2, 2, 3, 3, 3, 3], [12], [], ("disc", 1, (32, 0, 64, 32)), dy=0)
 # ど (palette 44): black capitals, pale blue outline
 STYLES["c2_emb_0d"] = emblem([2, 2, 3, 3, 2, 2, 1, 1], [10, 9], [7])
 
