@@ -240,6 +240,7 @@ def erase1():
     P = poly_mask(P1, H, W)
     P[3:41, 100:172] = True
     P[62:74, 24:60] = True
+    P[48:62, 190:212] = True
     yy, xx = np.mgrid[0:H, 0:W]
     d = np.hypot(xx + 0.5 - BALL[0] - 0.5, yy + 0.5 - BALL[1] - 0.5)
     new = c.copy()
@@ -304,7 +305,7 @@ def title_art(text, cap, sq, stroke=0.3, trk=3.0, s0=1.0, s1=1.0, rise=0, font="
     return tr, white
 
 def logo1b(l1="Hakkyu", l2="Dream", sub="~ Hot-Blooded Industrial-League Ball! ~", tcap=25, tsq=0.9, trk=3.0,
-           p1=(30, 3), p2=(96, 32), scap=8, sy=65, sstroke=0.0, sq=1.0, sfont="condd", subplate=False):
+           p1=(30, 0), p2=(104, 34), scap=8, sy=65, sstroke=0.0, sq=1.0, sfont="condd", subplate=False):
     new, c, P = erase1()
     pal = logo_pal(16); q = Quant(pal, c)
     H, W = new.shape
@@ -314,7 +315,7 @@ def logo1b(l1="Hakkyu", l2="Dream", sub="~ Hot-Blooded Industrial-League Ball! ~
     wb = grow(wm, 2) & ~wm
     rgb[wm] = np.broadcast_to(rows[:, None, :], (H, W, 3))[wm]; A |= wm
     rgb[wb] = (255, 255, 255); A |= wb
-    for text, (x, y) in ((l1, p1), (l2, p2)):
+    for text, (x, y) in ((l2, p2), (l1, p1)):
         tr, ta = title_art(text, tcap, tsq, trk=trk)
         sl = (slice(y, y + tr.shape[0]), slice(x, x + tr.shape[1]))
         rgb[sl][ta] = tr[ta]; A[sl] |= ta
@@ -366,7 +367,7 @@ def logo1b(l1="Hakkyu", l2="Dream", sub="~ Hot-Blooded Industrial-League Ball! ~
     rgb[sl][d2] = r[d2]; A[sl] |= d2
     new[A] = q(rgb[A])
     return new
-WEDGE2 = [(124, 36), (166, 7), (172, 14), (172, 36)]
+WEDGE2 = [(122, 37), (164, 7), (172, 12), (176, 38)]
 
 
 import functools
