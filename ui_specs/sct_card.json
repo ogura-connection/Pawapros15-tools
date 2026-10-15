@@ -304,10 +304,10 @@
      "sprite": "70",
      "text": "Form:\nVelocity",
      "style": "e4_em_item",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
      "baseline": 22,
      "slices": true,
-     "line_step": 21
+     "line_step": 20
     },
     {
      "sprite": "71",
@@ -362,10 +362,10 @@
      "sprite": "78",
      "text": "Form:\nControl",
      "style": "e4_em_item",
-     "font": "ttf:rounded:13:0.0:0.92:0.3",
-     "baseline": 23,
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 22,
      "slices": true,
-     "line_step": 20
+     "line_step": 17
     },
     {
      "sprite": "79",

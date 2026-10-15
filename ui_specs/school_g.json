@@ -819,7 +819,7 @@
      ],
      "text": "pts",
      "style": "e4_sg_head",
-     "font": "ttf:narrow:16:0.0:0.92:0.5",
+     "font": "ttf:rounded:15:0.0:0.92:0.5",
      "baseline": 24
     },
     {
