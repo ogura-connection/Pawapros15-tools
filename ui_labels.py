@@ -357,6 +357,8 @@ def bank_of(banks, group):
     """The bank a repack group works on. A few files (scs_sys.arc) store the sprites of a bank behind its
     palette, so ui_textures.banks files them under the next bank: "sprites" names where they ended up."""
     b = next(x for x in banks if x["name"] == group["bank"])
+    if group.get("split") and not b["sprites"]:       # order.arc g3_od: the sprites follow behind the palette, under the same name
+        b = dict(b, sprites=banks[banks.index(b) + 1]["sprites"])
     if "sprites" in group:
         b = dict(b, sprites=next(x for x in banks if x["name"] == group["sprites"])["sprites"])
     return b
