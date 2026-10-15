@@ -497,14 +497,14 @@
      0,
      0,
      128,
-     128
+     116
     ],
     [
      9,
      0,
      0,
      128,
-     128
+     116
     ],
     [
      10,
@@ -525,28 +525,28 @@
      0,
      0,
      128,
-     128
+     116
     ],
     [
      13,
      0,
      0,
      128,
-     128
+     116
     ],
     [
      14,
      0,
      0,
      128,
-     128
+     116
     ],
     [
      15,
      0,
      0,
      128,
-     128
+     116
     ],
     [
      16,
@@ -617,16 +617,16 @@
      "sprite": "14",
      "text": "Meiji Jingu Stadium",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:0.9:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 4
+     "dy": 5
     },
     {
      "sprite": "15",
      "text": "Hiroshima Municipal Stadium",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:0.9:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4
@@ -635,25 +635,25 @@
      "sprite": "16",
      "text": "Tokyo Dome",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 4
+     "dy": 5
     },
     {
      "sprite": "17",
      "text": "Yokohama Stadium",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:0.9:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "18",
      "text": "Nagoya Dome",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 5
@@ -662,16 +662,16 @@
      "sprite": "19",
      "text": "Hanshin Koshien Stadium",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "1a",
      "text": "Skymark Stadium",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 5
@@ -680,25 +680,25 @@
      "sprite": "1b",
      "text": "Chiba Marine Stadium",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "1c",
      "text": "Seibu Dome",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "1d",
      "text": "Fukuoka Yahoo! JAPAN Dome",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 0
@@ -707,25 +707,25 @@
      "sprite": "1e",
      "text": "Kyocera Dome Osaka",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 4
+     "dy": 5
     },
     {
      "sprite": "1f",
      "text": "Sapporo Dome",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 4
+     "dy": 5
     },
     {
      "sprite": "20",
      "text": "Kleenex Stadium Miyagi",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4
@@ -734,7 +734,7 @@
      "sprite": "21",
      "text": "Local Ballpark",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4
@@ -743,25 +743,25 @@
      "sprite": "22",
      "text": "Yamanote Ballpark",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:0.9:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 4
+     "dy": 5
     },
     {
      "sprite": "23",
      "text": "Ikari Dome",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 0
+     "dy": 2
     },
     {
      "sprite": "24",
      "text": "Blue Stadium",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 1
@@ -770,25 +770,25 @@
      "sprite": "25",
      "text": "School Field",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 1
+     "dy": 3
     },
     {
      "sprite": "26",
      "text": "Magma Dome",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 5
+     "dy": 4
     },
     {
      "sprite": "27",
      "text": "Rinkai Ballpark",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 4
@@ -797,16 +797,16 @@
      "sprite": "28",
      "text": "Local Dome",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 0
+     "dy": 2
     },
     {
      "sprite": "29",
      "text": "Overseas Stadium",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:0.95:0.4",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 0
@@ -815,8 +815,8 @@
      "sprite": "2a",
      "text": "Random",
      "style": "f_stad2",
-     "font": "ttf:narrow:25:0.0:1.0:0.4",
-     "baseline": 14
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
+     "baseline": 12
     }
    ],
    "name": "full names (s5_tkz)",

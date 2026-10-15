@@ -110,8 +110,8 @@ STYLES['c_sd_banner'] = ringfill([12, 12, 12, 13, 14, 14, 15, 15], [8, 7, 1], [5
 STYLES['c_title_start'] = ringfill([49], [123, 127, 127, 127, 127], [98, 98, 98])
 # y4_vs00 / 10 / 20 / 71 (palette 2): red letters, two brown rings
 STYLES['c_dem_red_raw'] = ringfill([14, 12, 14, 14, 10, 9, 9, 10], [1, 2, 2], [])
-# the same on a 64 row brown card piece
-STYLES['c_dem_red_b'] = banner(STYLES['c_dem_red_raw'], 64, 6)
+# the same on a 62 row brown card piece (two fit one page with the gap; the Japanese pieces are 64)
+STYLES['c_dem_red_b'] = banner(STYLES['c_dem_red_raw'], 62, 6)
 # y4_vs30 / 40 / 50 (palette 32): gold letters, black ring, white ring, grey edge
 STYLES['c_dem_gold'] = ringfill([0x7a, 0xb8, 0xe0, 0xf8, 0xe9, 0xb8, 0x8a, 0x31], [255, 164, 164, 188], [])
 STYLES['c_vs_ctl~0_32'] = win(STYLES['c_vs_ctl'], 0, 32)

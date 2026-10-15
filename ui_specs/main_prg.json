@@ -2666,10 +2666,10 @@
       "57"
      ],
      "text": "Scenario",
-     "font": "ttf:din:16:0.18:0.62:0.5",
+     "font": "ttf:din:13:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 3,
-     "baseline": 25
+     "baseline": 30
     },
     {
      "from": [
@@ -2682,11 +2682,11 @@
      "sprites": [
       "5f"
      ],
-     "text": "Original 1",
-     "font": "ttf:din:15:0.18:0.62:0.5",
+     "text": "Original",
+     "font": "ttf:din:15:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 7,
-     "baseline": 23
+     "baseline": 21
     },
     {
      "from": [
@@ -2699,7 +2699,11 @@
      "sprites": [
       "5f"
      ],
-     "empty": true
+     "text": "1",
+     "font": "ttf:din:15:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -28,
+     "baseline": 42
     },
     {
      "from": [
@@ -2712,11 +2716,11 @@
      "sprites": [
       "60"
      ],
-     "text": "Original 2",
-     "font": "ttf:din:15:0.18:0.62:0.5",
+     "text": "Original",
+     "font": "ttf:din:15:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 7,
-     "baseline": 23
+     "baseline": 21
     },
     {
      "from": [
@@ -2729,7 +2733,11 @@
      "sprites": [
       "60"
      ],
-     "empty": true
+     "text": "2",
+     "font": "ttf:din:15:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -28,
+     "baseline": 42
     },
     {
      "from": [
@@ -2742,11 +2750,11 @@
      "sprites": [
       "61"
      ],
-     "text": "Original 3",
-     "font": "ttf:din:15:0.18:0.62:0.5",
+     "text": "Original",
+     "font": "ttf:din:15:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 7,
-     "baseline": 23
+     "baseline": 21
     },
     {
      "from": [
@@ -2759,7 +2767,11 @@
      "sprites": [
       "61"
      ],
-     "empty": true
+     "text": "3",
+     "font": "ttf:din:15:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -28,
+     "baseline": 42
     },
     {
      "from": [
@@ -2772,11 +2784,11 @@
      "sprites": [
       "62"
      ],
-     "text": "Original 4",
-     "font": "ttf:din:15:0.18:0.62:0.5",
+     "text": "Original",
+     "font": "ttf:din:15:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 7,
-     "baseline": 23
+     "baseline": 21
     },
     {
      "from": [
@@ -2789,7 +2801,11 @@
      "sprites": [
       "62"
      ],
-     "empty": true
+     "text": "4",
+     "font": "ttf:din:15:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -28,
+     "baseline": 42
     },
     {
      "from": [
@@ -2802,11 +2818,11 @@
      "sprites": [
       "63"
      ],
-     "text": "Original 5",
-     "font": "ttf:din:15:0.18:0.62:0.5",
+     "text": "Original",
+     "font": "ttf:din:15:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 23
+     "left": 7,
+     "baseline": 21
     },
     {
      "from": [
@@ -2819,7 +2835,11 @@
      "sprites": [
       "63"
      ],
-     "empty": true
+     "text": "5",
+     "font": "ttf:din:15:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -28,
+     "baseline": 42
     },
     {
      "from": [
@@ -2832,11 +2852,11 @@
      "sprites": [
       "64"
      ],
-     "text": "Home Run",
-     "font": "ttf:din:14:0.18:0.62:0.5",
+     "text": "Home\nRun",
+     "font": "ttf:din:16:0.15:1.0:0.35",
      "style": "e_plate2",
-     "left": 4,
-     "baseline": 23
+     "left": 5,
+     "baseline": 42
     },
     {
      "from": [
@@ -2849,11 +2869,11 @@
      "sprites": [
       "65"
      ],
-     "text": "Pro Players",
-     "font": "ttf:din:13:0.18:0.62:0.5",
+     "text": "Pro\nPlayers",
+     "font": "ttf:din:14:0.15:0.9:0.35",
      "style": "e_plate2",
-     "left": 4,
-     "baseline": 20
+     "left": 5,
+     "baseline": 37
     },
     {
      "from": [
@@ -2867,10 +2887,10 @@
       "66"
      ],
      "text": "Success",
-     "font": "ttf:din:17:0.18:0.62:0.5",
+     "font": "ttf:din:14:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 4,
-     "baseline": 24
+     "baseline": 28
     },
     {
      "from": [
@@ -2883,11 +2903,11 @@
      "sprites": [
       "67"
      ],
-     "text": "All-Star 1",
-     "font": "ttf:din:15:0.18:0.62:0.5",
+     "text": "All-Star",
+     "font": "ttf:din:14:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 5,
-     "baseline": 24
+     "left": 6,
+     "baseline": 20
     },
     {
      "from": [
@@ -2900,7 +2920,11 @@
      "sprites": [
       "67"
      ],
-     "empty": true
+     "text": "1",
+     "font": "ttf:din:14:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -28,
+     "baseline": 36
     },
     {
      "from": [
@@ -2914,10 +2938,10 @@
       "68"
      ],
      "text": "All-Star",
-     "font": "ttf:din:16:0.18:0.7:0.5",
+     "font": "ttf:din:14:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 5,
-     "baseline": 23
+     "left": 6,
+     "baseline": 20
     },
     {
      "from": [
@@ -2931,10 +2955,10 @@
       "68"
      ],
      "text": "2",
-     "font": "ttf:din:16:0.18:1.0:0.5",
+     "font": "ttf:din:14:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": -29,
-     "baseline": 46
+     "left": -28,
+     "baseline": 36
     },
     {
      "from": [
@@ -2948,10 +2972,10 @@
       "69"
      ],
      "text": "All-Star",
-     "font": "ttf:din:16:0.18:0.7:0.5",
+     "font": "ttf:din:14:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 5,
-     "baseline": 23
+     "left": 6,
+     "baseline": 20
     },
     {
      "from": [
@@ -2965,10 +2989,10 @@
       "69"
      ],
      "text": "3",
-     "font": "ttf:din:16:0.18:1.0:0.5",
+     "font": "ttf:din:14:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": -29,
-     "baseline": 46
+     "left": -28,
+     "baseline": 36
     },
     {
      "from": [
@@ -2981,11 +3005,11 @@
      "sprites": [
       "6a"
      ],
-     "text": "Players 1",
-     "font": "ttf:din:16:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 7,
-     "baseline": 24
+     "baseline": 22
     },
     {
      "from": [
@@ -2998,7 +3022,11 @@
      "sprites": [
       "6a"
      ],
-     "empty": true
+     "text": "1",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3011,11 +3039,11 @@
      "sprites": [
       "6b"
      ],
-     "text": "Players 2",
-     "font": "ttf:din:16:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 23
+     "left": 7,
+     "baseline": 22
     },
     {
      "from": [
@@ -3028,7 +3056,11 @@
      "sprites": [
       "6b"
      ],
-     "empty": true
+     "text": "2",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3041,11 +3073,11 @@
      "sprites": [
       "6c"
      ],
-     "text": "Players 3",
-     "font": "ttf:din:16:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 23
+     "left": 7,
+     "baseline": 22
     },
     {
      "from": [
@@ -3058,7 +3090,11 @@
      "sprites": [
       "6c"
      ],
-     "empty": true
+     "text": "3",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3071,11 +3107,11 @@
      "sprites": [
       "6d"
      ],
-     "text": "Players 4",
-     "font": "ttf:din:16:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 24
+     "left": 7,
+     "baseline": 22
     },
     {
      "from": [
@@ -3088,7 +3124,11 @@
      "sprites": [
       "6d"
      ],
-     "empty": true
+     "text": "4",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3101,11 +3141,11 @@
      "sprites": [
       "6e"
      ],
-     "text": "Players 5",
-     "font": "ttf:din:15:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 7,
-     "baseline": 23
+     "baseline": 22
     },
     {
      "from": [
@@ -3118,7 +3158,11 @@
      "sprites": [
       "6e"
      ],
-     "empty": true
+     "text": "5",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3131,11 +3175,11 @@
      "sprites": [
       "6f"
      ],
-     "text": "Players 6",
-     "font": "ttf:din:16:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 24
+     "left": 7,
+     "baseline": 22
     },
     {
      "from": [
@@ -3148,7 +3192,11 @@
      "sprites": [
       "6f"
      ],
-     "empty": true
+     "text": "6",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3161,11 +3209,11 @@
      "sprites": [
       "70"
      ],
-     "text": "Players 7",
-     "font": "ttf:din:15:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 7,
-     "baseline": 23
+     "baseline": 22
     },
     {
      "from": [
@@ -3178,7 +3226,11 @@
      "sprites": [
       "70"
      ],
-     "empty": true
+     "text": "7",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3191,11 +3243,11 @@
      "sprites": [
       "71"
      ],
-     "text": "Players 8",
-     "font": "ttf:din:16:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 23
+     "left": 7,
+     "baseline": 22
     },
     {
      "from": [
@@ -3208,7 +3260,11 @@
      "sprites": [
       "71"
      ],
-     "empty": true
+     "text": "8",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3221,11 +3277,11 @@
      "sprites": [
       "72"
      ],
-     "text": "Players 9",
-     "font": "ttf:din:16:0.18:0.62:0.5",
+     "text": "Players",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 23
+     "left": 7,
+     "baseline": 22
     },
     {
      "from": [
@@ -3238,7 +3294,11 @@
      "sprites": [
       "72"
      ],
-     "empty": true
+     "text": "9",
+     "font": "ttf:din:16:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3252,10 +3312,10 @@
       "73"
      ],
      "text": "Players",
-     "font": "ttf:din:16:0.18:0.7:0.5",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 24
+     "left": 7,
+     "baseline": 22
     },
     {
      "from": [
@@ -3269,10 +3329,10 @@
       "73"
      ],
      "text": "10",
-     "font": "ttf:din:16:0.18:1.0:0.5",
+     "font": "ttf:din:16:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": -28,
-     "baseline": 51
+     "left": -27,
+     "baseline": 44
     },
     {
      "from": [
@@ -3285,11 +3345,11 @@
      "sprites": [
       "74"
      ],
-     "text": "Bench 1",
-     "font": "ttf:din:18:0.18:0.62:0.5",
+     "text": "Bench",
+     "font": "ttf:din:18:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 7,
-     "baseline": 26
+     "left": 8,
+     "baseline": 24
     },
     {
      "from": [
@@ -3302,7 +3362,11 @@
      "sprites": [
       "74"
      ],
-     "empty": true
+     "text": "1",
+     "font": "ttf:din:18:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -26,
+     "baseline": 44
     },
     {
      "from": [
@@ -3315,11 +3379,11 @@
      "sprites": [
       "75"
      ],
-     "text": "Bench 2",
-     "font": "ttf:din:18:0.18:0.62:0.5",
+     "text": "Bench",
+     "font": "ttf:din:18:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 6,
-     "baseline": 26
+     "left": 8,
+     "baseline": 24
     },
     {
      "from": [
@@ -3332,7 +3396,11 @@
      "sprites": [
       "75"
      ],
-     "empty": true
+     "text": "2",
+     "font": "ttf:din:18:0.15:0.8:0.35",
+     "style": "e_plate2",
+     "left": -26,
+     "baseline": 44
     },
     {
      "from": [
@@ -3346,10 +3414,10 @@
       "e5"
      ],
      "text": "Original",
-     "font": "ttf:din:18:0.18:0.62:0.5",
+     "font": "ttf:din:15:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 3,
-     "baseline": 25
+     "baseline": 27
     },
     {
      "sprite": "bb",

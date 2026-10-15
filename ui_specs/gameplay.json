@@ -2494,7 +2494,7 @@
      "text": "Saves",
      "font": "ttf:rounded:17:0.0:0.9:0.2",
      "style": "d_nxt_rank",
-     "align": "right"
+     "left": -5
     },
     {
      "from": [
@@ -2847,7 +2847,7 @@
      5,
      0,
      0,
-     112,
+     128,
      16
     ],
     [
@@ -2880,7 +2880,7 @@
      ],
      "text": "Fielding Practice Setup",
      "style": "d_rs_head",
-     "font": "ttf:rounded:10:0.0:0.75:0.3"
+     "font": "ttf:rounded:10:0.0:0.75:0.2"
     },
     {
      "from": [
@@ -2891,7 +2891,7 @@
       128
      ],
      "text": "Direction",
-     "font": "ttf:rounded:13:0.0:0.95:0.2",
+     "font": "ttf:rounded:11:0.0:0.95:0.1",
      "style": "d_rs_sub"
     },
     {
@@ -2903,7 +2903,7 @@
       128
      ],
      "text": "Runner",
-     "font": "ttf:rounded:13:0.0:0.95:0.2",
+     "font": "ttf:rounded:11:0.0:0.95:0.1",
      "style": "d_rs_sub"
     },
     {
@@ -2943,7 +2943,7 @@
       24
      ],
      "text": "Hit Power",
-     "font": "ttf:rounded:14:0.0:0.95:0.3",
+     "font": "ttf:rounded:12:0.0:0.95:0.2",
      "style": "d_rs_head"
     },
     {
@@ -2955,7 +2955,7 @@
       48
      ],
      "text": "Soft",
-     "font": "ttf:rounded:13:0.0:0.95:0.3",
+     "font": "ttf:rounded:11:0.0:0.95:0.2",
      "style": "d_rs_head"
     },
     {
@@ -2967,7 +2967,7 @@
       48
      ],
      "text": "Hard",
-     "font": "ttf:rounded:13:0.0:0.95:0.3",
+     "font": "ttf:rounded:11:0.0:0.95:0.2",
      "style": "d_rs_head"
     },
     {
@@ -2979,7 +2979,7 @@
       24
      ],
      "text": "Hit Height",
-     "font": "ttf:rounded:14:0.0:0.95:0.3",
+     "font": "ttf:rounded:12:0.0:0.95:0.2",
      "style": "d_rs_head"
     },
     {
@@ -3001,7 +3001,7 @@
       72
      ],
      "text": "High",
-     "font": "ttf:rounded:13:0.0:0.95:0.3",
+     "font": "ttf:rounded:11:0.0:0.95:0.2",
      "style": "d_rs_head"
     },
     {
@@ -3013,7 +3013,7 @@
       72
      ],
      "text": "Low",
-     "font": "ttf:rounded:13:0.0:0.95:0.3",
+     "font": "ttf:rounded:11:0.0:0.95:0.2",
      "style": "d_rs_head"
     },
     {
@@ -3025,7 +3025,7 @@
       72
      ],
      "text": "Level",
-     "font": "ttf:rounded:11:0.0:0.95:0.3",
+     "font": "ttf:rounded:10:0.0:0.95:0.2",
      "style": "d_rs_head"
     },
     {
@@ -3052,7 +3052,17 @@
      "text": "Hit Again",
      "font": "ttf:rounded:10:0.0:0.95:0.0",
      "style": "d_rs_btn",
-     "align": "left"
+     "left": -16
+    },
+    {
+     "from": [
+      5,
+      112,
+      0,
+      128,
+      16
+     ],
+     "empty": true
     },
     {
      "sprite": "39",
