@@ -12,6 +12,8 @@ def _sil(front, c):
     return style
 
 STYLES["c6_s3_ppjo_00_2"] = ringfill([11, 15, 11, 15, 15, 15], [4], [9, 9])
+STYLES["c6_s3_ppjo_00_2_h"] = ringfill([15, 15, 15, 15, 15, 15], [11], [9, 9])
+STYLES["c6_s3_ppjo_00_2_h_s"] = ringfill([15, 15, 15, 15, 15, 15], [11], [])
 STYLES["c6_s3_ppjo_00_2_s"] = ringfill([11, 15, 11, 15, 15, 15], [4], [])
 STYLES["c6_s3_ppjo_11_p"] = ringfill([15, 15, 15, 15, 15, 15], [0], [])
 STYLES["c6_s3_ppjo_11_p_s"] = ringfill([15, 15, 15, 15, 15, 15], [0], [])

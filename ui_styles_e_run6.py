@@ -69,12 +69,22 @@ def pill(arcname, bank, rect, kind, inner, cx, cy, white=15, top_pale=None, shea
             yy, xx = np.mgrid[0:pic.shape[0], 0:pic.shape[1]]
             pic[((yy - 15.5) ** 2 + (xx - 15.5) ** 2) < 10.5 ** 2] = white
         else:
-            fg = (pic != 0) & (pic != white)
-            comps = _components(fg)
+            strong = (pic >= 1) & (pic <= 6)
+            comps = _components(strong)
             comps.sort(key=len)
+            rim = np.zeros(pic.shape, bool)
+            for y, x in comps[-1]:
+                rim[y, x] = True
+            gone = np.zeros(pic.shape, bool)
             for comp in comps[:-1]:
                 for y, x in comp:
-                    pic[y, x] = white
+                    gone[y, x] = True
+            for _ in range(2):
+                g2 = gone.copy()
+                g2[1:] |= gone[:-1]; g2[:-1] |= gone[1:]; g2[:, 1:] |= gone[:, :-1]; g2[:, :-1] |= gone[:, 1:]
+                g2[1:, 1:] |= gone[:-1, :-1]; g2[:-1, :-1] |= gone[1:, 1:]; g2[1:, :-1] |= gone[:-1, 1:]; g2[:-1, 1:] |= gone[1:, :-1]
+                gone = g2
+            pic[gone & ~rim & (pic != 0)] = white
         art, b = inner(ink, base)
         h, w = art.shape
         x = cx - w // 2
@@ -120,15 +130,15 @@ S["e6_pd_lime"] = ringfill([15, 13, 13, 11, 11, 11], [5, 5], [7])
 S["e6_pd_pos"] = ringfill([10], [15], [12, 11])
 S["e6_pd_3c"] = ringfill([12, 11, 10, 9, 8, 7], [1, 1, 2])
 S["e6_pd_3e"] = ringfill([3, 3, 2, 2, 1, 1], [8, 13])
-S["e6_pd_help"] = ringfill([1], [4])
+S["e6_pd_help"] = ringfill([1], [8])
 S["e6_pd_red"] = ringfill([1], [8])
 S["e6_pd_stampfill"] = ringfill([1], [15])
 S["e6_in_badge"] = ringfill([7], [12])
 # letters on the round / tilted stamps and the school badges: the old picture with the English drawn over it
 _D = ("draft.arc", "g3_pd_0")
-S["e6_pd_25"] = pill(*_D, [3, 32, 96, 64, 128], "badge", S["e6_in_badge"], 13, 14, top_pale=9)
-S["e6_pd_26"] = pill(*_D, [3, 64, 96, 96, 128], "badge", S["e6_in_badge"], 13, 14, top_pale=9)
-S["e6_pd_27"] = pill(*_D, [3, 96, 96, 128, 128], "badge", S["e6_in_badge"], 13, 14, top_pale=9)
+S["e6_pd_25"] = pill(*_D, [3, 32, 96, 64, 128], "badge", S["e6_in_badge"], 13, 14, white=12, top_pale=9)
+S["e6_pd_26"] = pill(*_D, [3, 64, 96, 96, 128], "badge", S["e6_in_badge"], 13, 14, white=12, top_pale=9)
+S["e6_pd_27"] = pill(*_D, [3, 96, 96, 128, 128], "badge", S["e6_in_badge"], 13, 14, white=12, top_pale=9)
 S["e6_pd_36"] = pill(*_D, [8, 0, 0, 32, 32], "disc", S["e6_pd_stampfill"], 16, 16)
 S["e6_pd_37"] = pill(*_D, [8, 32, 0, 64, 32], "disc", S["e6_pd_stampfill"], 16, 16)
 S["e6_pd_38"] = pill(*_D, [8, 0, 32, 64, 80], "stamp", S["e6_pd_stampfill"], 32, 23, shear=0.17)

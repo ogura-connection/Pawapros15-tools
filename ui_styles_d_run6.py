@@ -22,8 +22,10 @@ def _neg(inner, rows=(7, 29), cols=(6, 24)):
         plate[rows[0]:rows[1], cols[0]:cols[1]] = 11
         h, w = art.shape
         ox, oy = (32 - w) // 2, (rows[0] + rows[1] - h) // 2
-        a = plate[oy:oy + h, ox:ox + w]
-        a[art > 0] = art[art > 0]
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            if 0 <= oy + y < 32 and 0 <= ox + x < 32:
+                plate[oy + y, ox + x] = art[y, x]
         return plate, oy + b
     return style
 
