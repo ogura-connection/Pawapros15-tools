@@ -2878,45 +2878,24 @@
     ],
     [
      5,
-     56,
      64,
+     0,
      120,
      128
     ],
     [
      5,
-     64,
-     0,
-     120,
-     48
-    ],
-    [
-     5,
      0,
      96,
-     56,
+     64,
      128
     ],
     [
      5,
-     64,
      56,
-     120,
-     64
-    ],
-    [
-     5,
      64,
-     48,
-     88,
-     56
-    ],
-    [
-     5,
-     96,
-     48,
-     120,
-     56
+     64,
+     96
     ]
    ],
    "labels": [
@@ -2958,10 +2937,10 @@
       "0e"
      ],
      "text": "Choose OK without picking a player",
-     "style": "a_help_m2~0_112",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "style": "a_help_m2~0_128",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
      "baseline": 14,
-     "left": 23
+     "left": 12
     },
     {
      "from": [
@@ -2975,10 +2954,10 @@
       "0e"
      ],
      "text": "Choose OK without picking a player",
-     "style": "a_help_m2~112_4096",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "style": "a_help_m2~128_4096",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
      "baseline": 14,
-     "left": 7
+     "left": 12
     },
     {
      "from": [
@@ -2992,10 +2971,10 @@
       "0e"
      ],
      "text": "to save with the current settings.",
-     "style": "a_help_m2~0_104",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "style": "a_help_m2~0_128",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
      "baseline": 13,
-     "left": 66
+     "left": 56
     },
     {
      "from": [
@@ -3009,10 +2988,10 @@
       "0e"
      ],
      "text": "to save with the current settings.",
-     "style": "a_help_m2~104_4096",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "style": "a_help_m2~128_4096",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
      "baseline": 13,
-     "left": 42
+     "left": 56
     },
     {
      "from": [
@@ -3052,6 +3031,19 @@
       "0e"
      ],
      "empty": true
+    },
+    {
+     "from": [
+      5,
+      88,
+      48,
+      96,
+      56
+     ],
+     "empty": true,
+     "sprites": [
+      "0e"
+     ]
     }
    ],
    "name": "m4_drf",
@@ -3133,10 +3125,10 @@
      "sprite": "0c",
      "text": "Choose a player to set up",
      "style": "a_help_y1",
-     "font": "ttf:rounded:13:0.0:1.0:0.45",
+     "font": "ttf:rounded:10:0.0:1.0:0.45",
      "slices": true,
      "slice_width": 128,
-     "dy": 3,
+     "dy": 2,
      "pages": [
       4,
       5
@@ -3149,7 +3141,7 @@
      "sprite": "0d",
      "text": "Choose a player to set up",
      "style": "a_help_y1",
-     "font": "ttf:rounded:13:0.0:1.0:0.45",
+     "font": "ttf:rounded:10:0.0:1.0:0.45",
      "slices": true,
      "slice_width": 128,
      "dy": 3,
@@ -3173,10 +3165,10 @@
       "0e"
      ],
      "text": "Press OK without picking a player\nto save with the current settings.",
-     "style": "a_help_y2~0_104",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
-     "baseline": 29,
-     "left": 53
+     "style": "a_help_y2~0_128",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 28,
+     "left": 65
     },
     {
      "from": [
@@ -3190,10 +3182,10 @@
       "0e"
      ],
      "text": "Press OK without picking a player\nto save with the current settings.",
-     "style": "a_help_y2~104_4096",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
-     "baseline": 29,
-     "left": 37
+     "style": "a_help_y2~128_4096",
+     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "baseline": 28,
+     "left": 73
     },
     {
      "from": [
@@ -3212,10 +3204,10 @@
      "sprite": "11",
      "text": "Drafted Players",
      "style": "a_ban_y5",
-     "font": "ttf:rounded:27:0.0:0.88:0.8",
+     "font": "ttf:rounded:24:0.0:1.0:0.8",
      "slices": true,
      "slice_width": 128,
-     "dy": 5,
+     "dy": 4,
      "pages": [
       4,
       5

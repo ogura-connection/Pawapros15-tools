@@ -173,4 +173,4 @@ STYLES["c2_win_h"] = ringfill([15, 15, 15, 15, 14, 14, 13, 12], [7, 7, 7], [7, 5
 STYLES["c2_win_n"] = ringfill([15, 15, 15, 15, 14, 14, 13, 12], [7, 7], [7])
 
 # svt_0 12 / 13 / 14 (palette 4, drawn again in white and in black by palettes 1 and 2): white letters, navy outline, cyan band, white rim
-STYLES["c2_svt_sel"] = ringfill([14], [1, 1, 9, 8, 8, 14, 14], [6, 10])
+STYLES["c2_svt_sel"] = ringfill([14], [1, 1, 9, 8, 8, 14, 14], [10])

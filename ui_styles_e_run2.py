@@ -122,3 +122,41 @@ def _badge(ink, base):
 
 
 STYLES["e_badge"] = _badge
+
+
+# scs_make.arc y5_make_bg_opd: the application form in perspective on a desk. ui_sheet.py draws a word from this "font" as
+# ink: the flat lettering is sheared and rotated to the direction of the paper (rows rise 0.14 per column, columns lean
+# 0.217 per row) and softened like the photograph (the key is the text; sizes: OPD_SIZES)
+OPD_SIZES = {"OPD_TITLE": ("Baseball Club Application", "times-bold", 10, 0.0), "OPD_DATE": ("Date", "tahoma", 8, 0.2),
+             "OPD_SLASH": ("/", "tahoma", 8, 0.4), "OPD_NAME": ("Name", "tahoma", 9, 0.2), "OPD_HAND": ("Hand", "tahoma", 9, 0.2),
+             "OPD_POS": ("Position", "tahoma", 9, 0.2), "OPD_FORM": ("Form", "tahoma", 9, 0.2),
+             "OPD_NOTES": ("Notes", "tahoma", 8, 0.2)}
+
+
+def _opd_font(project=None):
+    from PIL import Image, ImageFilter
+    words = {}
+    for key, (text, face, cap, bold) in OPD_SIZES.items():
+        ink, base = ui_type.ttf_ink(text, face, cap, 0.0, 1.0, bold)
+        img = Image.fromarray((np.clip(ink, 0, 6) * 255 // 6).astype(np.uint8), "L")
+        pad = 4
+        big = Image.new("L", (img.width + 2 * pad, img.height + 2 * pad), 0)
+        big.paste(img, (pad, pad))
+        k, m = -0.14, 0.217                              # rows rise k per column, columns lean m per row
+        det = 1.0 - m * k
+        # output pixel (X, Y) comes from the input pixel (u, v) = M^-1 (X, Y), M = [[1, m], [k, 1]]
+        a, b, c, d = 1 / det, -m / det, -k / det, 1 / det
+        W, H = big.width + int(abs(m) * big.height) + 4, big.height + int(abs(k) * big.width) + 4
+        cx, cy = big.width / 2, big.height / 2
+        ox, oy = W / 2, H / 2
+        # input = M^-1 (output - centre) + input centre
+        coeffs = (a, b, cx - a * ox - b * oy, c, d, cy - c * ox - d * oy)
+        out = big.transform((W, H), Image.AFFINE, coeffs, Image.BICUBIC).filter(ImageFilter.GaussianBlur(0.6))
+        arr = np.asarray(out, dtype=np.float32)
+        lv = np.rint(arr * 6 / 255).astype(int)
+        ys, xs = np.nonzero(lv)
+        words[key] = (lv[ys.min():ys.max() + 1, xs.min():xs.max() + 1], 0)
+    return {"words": words, "glyphs": {}, "space": 4, "gap": 1}
+
+
+ui_type.FONTS["e_opd"] = _opd_font
