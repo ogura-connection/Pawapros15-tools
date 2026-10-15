@@ -357,6 +357,76 @@
      "text": "Relax Capsule"
     }
    ]
+  },
+  {
+   "bank": "y5_mic_0",
+   "palette": 17,
+   "style": "e_mic",
+   "font": "ttf:black:26:0.12:1.0:0.3",
+   "under": 0,
+   "areas": [
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     96,
+     40
+    ],
+    [
+     6,
+     0,
+     40,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "One more round?!",
+     "style": "e_mic",
+     "font": "ttf:black:26:0.12:0.7:0.3",
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "0a",
+     "text": "One more?!",
+     "style": "e_mic",
+     "font": "ttf:black:26:0.12:0.55:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "03",
+     "text": "Yes!",
+     "style": "e_mic",
+     "font": "ttf:black:26:0.12:1.0:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "04",
+     "text": "No...",
+     "style": "e_mic",
+     "font": "ttf:black:26:0.12:1.0:0.3",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0b",
+     "text": "Yes!",
+     "style": "e_mic",
+     "font": "ttf:black:34:0.12:1.0:0.3",
+     "valign": "centre"
+    }
+   ],
+   "name": "one more round"
   }
  ]
 }

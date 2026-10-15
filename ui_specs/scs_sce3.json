@@ -388,7 +388,7 @@
      "sprite": "05",
      "text": "Gokuaku Trading",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
      "baseline": -18,
      "palettes": [
       22
@@ -398,8 +398,8 @@
      "sprite": "06",
      "text": "Tekuteku Tech",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -16,
      "palettes": [
       22
      ]
@@ -408,8 +408,8 @@
      "sprite": "07",
      "text": "Rocket Express",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -418,8 +418,8 @@
      "sprite": "08",
      "text": "Naniwa Trading",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -428,8 +428,8 @@
      "sprite": "09",
      "text": "Pichipichi Fisheries",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -16,
      "palettes": [
       22
      ]
@@ -438,8 +438,8 @@
      "sprite": "0a",
      "text": "Club Ageage",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -448,7 +448,7 @@
      "sprite": "0b",
      "text": "Takeda Construction",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:0.97:0.1",
      "baseline": -18,
      "palettes": [
       22
@@ -458,7 +458,7 @@
      "sprite": "0c",
      "text": "Mizotto Sports",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
      "baseline": -18,
      "palettes": [
       22
@@ -468,7 +468,7 @@
      "sprite": "0d",
      "text": "Atsuatsu Diner",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
      "baseline": -18,
      "palettes": [
       22
@@ -478,8 +478,8 @@
      "sprite": "0e",
      "text": "Karaoke",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -488,8 +488,8 @@
      "sprite": "0f",
      "text": "Convenience Store",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -16,
      "palettes": [
       22
      ]
@@ -498,8 +498,8 @@
      "sprite": "10",
      "text": "Amusement Park",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -508,7 +508,7 @@
      "sprite": "11",
      "text": "Ad Agency",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
      "baseline": -18,
      "palettes": [
       22
@@ -518,8 +518,8 @@
      "sprite": "12",
      "text": "Pawafuru Corp.",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -528,8 +528,8 @@
      "sprite": "13",
      "text": "Sales Campaign",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -538,8 +538,8 @@
      "sprite": "14",
      "text": "Hot Spring",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -548,8 +548,8 @@
      "sprite": "15",
      "text": "Batting Center",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -17,
      "palettes": [
       22
      ]
@@ -558,8 +558,8 @@
      "sprite": "16",
      "text": "Beach Hut",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": -18,
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": -16,
      "palettes": [
       22
      ]
@@ -568,7 +568,7 @@
      "sprite": "17",
      "text": "Hotel",
      "style": "b_sib_name",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
      "baseline": -18,
      "palettes": [
       22

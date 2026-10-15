@@ -13,4 +13,7 @@ STYLES["e_go"] = ui_type.ringed([0, 10, 12, 13, 14, 15, 15], [8, 1])
 
 # scs_rens.arc y5_mic_0 (palette 17, a grey ramp 1 = white .. f = dark navy): the "one more round?" question and its
 # answers: heavy italic dark letters in a one-pixel light ring
-STYLES["e_mic"] = ui_type.ringed([0, 11, 12, 13, 14, 15, 15], [7])
+STYLES["e_mic"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [7])
+
+# scs_load.arc y5_tlog_0 (palette 20, white to dark brown): Cleared / Pitchers / Fielders: white letters in a dark ring
+STYLES["e_tlog"] = ui_type.ringed([0, 10, 12, 13, 14, 15, 15], [1])

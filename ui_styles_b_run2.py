@@ -48,8 +48,8 @@ STYLES["b_hak_rate"] = ringfill([0xf], [0x7])
 # headings on the cream and white plates (palette 19, black on a grey ramp: 0xf black .. 1 light grey)
 STYLES["b_hak_tag"] = flat([0, 0, 0xa, 0x5, 0xd, 0xf, 0xf], cut=2)
 
-# ---- y5_siba_3: company names (palette 22): white letters, a black ring and shadow, a thin blue rim ---------------------------
-STYLES["b_sib_name"] = rimmed([0xf], [5, 5], [5, 5], 4)
+# ---- y5_siba_3: company names (palette 22): white letters, a black ring and a one-pixel shadow, a thin blue rim ---------------------------
+STYLES["b_sib_name"] = rimmed([0xf], [5, 5], [5], 4)
 
 
 def plated(ink_ramp, plate, size):
