@@ -157,6 +157,8 @@ from ui_styles_ore_ini import ringfill
 
 # s5_tk, the short names on the stadium tiles (palette 7): navy letters, a white ring, a pale teal glow
 STYLES["f_name"] = ringfill([6], [15, 15, 3, 4])
+STYLES["f_name2"] = ringfill([6], [15, 3, 4])
+STYLES["f_name3"] = ringfill([6], [15, 15, 3])
 # s5_tk, ランダムで球場が決まります (palette 9): gold letters shading to orange, a navy ring, a muted violet edge
 STYLES["f_help"] = ringfill([15, 15, 14, 14, 13, 13, 12, 12, 11, 11], [4, 4, 6], [7, 3])
 # s5_tk, the ground types (palettes 21, 22, 24): green / yellow / orange letters, a blue-violet ring, a lilac glow
