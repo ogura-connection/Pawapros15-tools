@@ -77,3 +77,21 @@ def win(style, c0, c1, r0=0, r1=4096):
 # ---- the title: Linked World (palette 16): yellow letters, brown rim and extruded edge, white band, light blue shadow, blue ring
 STYLES["b3_title"] = stack([0xc, 0xc, 0xd, 0xd, 0xe, 0xe], [("ring", [8, 8]), ("se", [8, 8, 8, 7, 7]), ("ring", [1, 1, 1]),
                                                            ("se", [5, 5, 5, 5]), ("ring", [4, 2, 2])], inner=0xa)
+
+# ---- the village headings and the three buttons: green (palette 17), mint (18), lavender (19) letters with a dark outline cast
+# down and to the right, a white band, a light blue shadow and a thin blue ring
+STYLES["b3_head1"] = stack([0xe, 0xe, 0xc, 0xc, 0xb, 0xb, 0x8, 0x8], [("ring", [2]), ("se", [2, 1]), ("ring", [5]), ("se", [9, 9]), ("ring", [3])])
+STYLES["b3_head2"] = stack([0xd, 0xd, 0xc, 0xc, 0xa, 0xa], [("ring", [5]), ("se", [3, 2]), ("ring", [1]), ("se", [9, 9]), ("ring", [4])])
+STYLES["b3_head3"] = stack([0xd, 0xc, 0xc, 0xb, 0xa, 0xa], [("ring", [4]), ("se", [3, 2]), ("ring", [1]), ("se", [9, 9]), ("ring", [5])])
+
+# ---- the A-button legend (palette 43): white letters, a black ring, a thin dark rim
+STYLES["b3_legend"] = stack([0xf, 0xf, 0xf, 0xe, 0xd, 0xc], [("ring", [4, 4]), ("ring", [2]), ("se", [1])])
+
+# ---- the small plates (pages 8 / 9): white letters, a dark ring in the plate's own colour, a thin rim; palette 35 (Pro Yr, dark
+# green), 39 (Grad, dark green), 51 / 52 / 53 (the team plates: red, blue, orange)
+_WHITE = [0xe, 0xf, 0xf, 0xf, 0xf, 0xd]
+STYLES["b3_plate35"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])])
+STYLES["b3_plate39"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])])
+STYLES["b3_team51"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])])
+STYLES["b3_team52"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])])
+STYLES["b3_team53"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])])
