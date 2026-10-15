@@ -118,8 +118,8 @@
      ],
      "text": "Name",
      "style": "a4_lb_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 20
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 18
     },
     {
      "from": [
@@ -131,8 +131,8 @@
      ],
      "text": "Grad Year",
      "style": "a4_lb_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 20
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 18
     },
     {
      "from": [
@@ -144,8 +144,8 @@
      ],
      "text": "Went To",
      "style": "a4_lb_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 20
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 18
     },
     {
      "from": [
@@ -157,8 +157,8 @@
      ],
      "text": "Records",
      "style": "a4_lb_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 20
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 18
     },
     {
      "from": [
@@ -170,8 +170,8 @@
      ],
      "text": "Class Year",
      "style": "a4_lb_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 20
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 18
     }
    ],
    "name": "album",

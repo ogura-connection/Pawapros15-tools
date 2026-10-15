@@ -21,4 +21,4 @@ def win(style, c0, c1):
 STYLES["a4_lb_title"] = ringfill([15, 15, 15, 15, 15, 15], [1, 3, 8, 12], [6, 7])       # pal 16: white, dark ring, gold bands
 STYLES["a4_lb_title~0_128"] = win(STYLES["a4_lb_title"], 0, 128)
 STYLES["a4_lb_title~128_4096"] = win(STYLES["a4_lb_title"], 128, 4096)
-STYLES["a4_lb_head"] = ringfill([14, 14, 14, 13, 13, 13], [1, 2])                                    # pal 18: pale letters, white and olive rings
+STYLES["a4_lb_head"] = ringfill([2, 2, 2, 2, 2, 2], [1, 1, 8])                                          # pal 18: olive letters, white ring, grey edge
