@@ -36,10 +36,13 @@ _RSZ_CLEAN = {}
 _RSZ_SHADOW = {27, 28, 33, 34, 35, 36, 39, 40, 42, 48, 49}
 
 
+_RSZ_XL = [(16, 33), (18, 29), (20, 24), (22, 20), (24, 18), (26, 17), (28, 16.5), (30, 16), (32, 14), (34, 13), (36, 12), (38, 11)]
+
+
 def _rsz_clean(spr):
-    """The oval of sprite `spr` of g3_rsz (palette indices, the oval's own coordinates) with the Japanese lettering and its shadow
-    taken out: where one oval has lettering the others (every oval has different kanji) show the bare oval; what no oval shows
-    bare is the white inside. Read from the saved original file, once."""
+    """The oval of sprite `spr` of g3_rsz (palette indices, the oval's own coordinates) with the Japanese lettering taken out: the white
+    inside of the oval (rows 16-62, measured edge of the inner ring, mirrored about row 38.5) is made flat white and any colour only the
+    lettering uses is white too. Read from the saved original file, once."""
     if spr not in _RSZ_CLEAN:
         import sys, os
         import numpy as np
@@ -49,33 +52,19 @@ def _rsz_clean(spr):
                 sys.path.append(q)
         import gen_c_lib as G
         b = G.Arc("school.arc").bank("g3_rsz")
-        group = ["00", "01", "02", "03"] if spr in ("00", "01", "02", "03") else [spr]
-        imgs, masks = {}, {}
-        for g in group:
-            img, _, _ = b.index_image(g, pad=0)
-            zone = set(np.unique(img[24:54, 30:126]).tolist()) - {0}
-            struct = set(np.unique(np.concatenate([img[0:13].ravel(), img[67:].ravel(), img[:, 0:9].ravel(), img[:, 148:].ravel()])).tolist()) - {0}
-            m0 = np.isin(img, list(zone - struct))
-            near = m0.copy()
-            for _ in range(4):
-                near = ui_type.grow(near, 1)
-            soft = np.isin(img, list((zone & struct) | _RSZ_SHADOW))          # the lilac shadow and the pale edge pixels of the lettering
-            imgs[g], masks[g] = img, m0 | (near & soft)
-        for g in group:
-            out = imgs[g].copy()
-            fill = np.full(out.shape, 197, np.uint8)
-            got = np.zeros(out.shape, bool)
-            for o in group:
-                if o == g:
-                    continue
-                ok = ~masks[o] & ~got
-                fill[ok] = imgs[o][ok]
-                got |= ok
-            keep = np.zeros_like(out, bool)
-            keep[15:64, 18:142] = True
-            sel = masks[g] & keep
-            out[sel] = fill[sel]
-            _RSZ_CLEAN[g] = out.astype(np.uint8)
+        img, _, _ = b.index_image(spr, pad=0)
+        zone = set(np.unique(img[24:54, 30:126]).tolist()) - {0}
+        struct = set(np.unique(np.concatenate([img[0:13].ravel(), img[67:].ravel(), img[:, 0:9].ravel(), img[:, 148:].ravel()])).tolist()) - {0}
+        out = img.copy()
+        out[np.isin(img, list(zone - struct))] = 197
+        ys = [y for y, _ in _RSZ_XL]
+        xs = [x for _, x in _RSZ_XL]
+        for y in range(16, 63):
+            yy = y if y <= 38 else 77 - y
+            xl = np.interp(yy, ys, xs)
+            x0, x1 = int(np.ceil(xl)) + 2, int(157 - xl) - 2
+            out[y, x0:x1 + 1] = 197
+        _RSZ_CLEAN[spr] = out.astype(np.uint8)
     return _RSZ_CLEAN[spr]
 
 
