@@ -56,7 +56,7 @@
      "sprite": "01",
      "text": "Characters",
      "style": "d2_sy_title",
-     "font": "d:rounded:19:0.92:0.6:0",
+     "font": "d:rounded:17:0.95:0.6:0",
      "slices": true,
      "slice_width": 48,
      "dy": 1
@@ -91,7 +91,7 @@
      "sprite": "05",
      "text": "L/R: Show by scenario",
      "style": "d2_sy_hint",
-     "font": "d:rounded:10:0.9:0.4:0",
+     "font": "d:rounded:9:0.9:0.4:0",
      "slices": true,
      "slice_width": 128,
      "dy": 1
@@ -123,12 +123,12 @@
       128,
       64
      ],
-     "text": "Name|Known For|Profile",
+     "text": "Name|Works|Profile",
      "style": "d2_sy_label",
-     "font": "d:rounded:9:0.85:0.5:20",
-     "baseline": 36,
+     "font": "d:rounded:11:0.8:0.5:20",
+     "baseline": 56,
      "align": "left",
-     "left": 4
+     "left": 2
     }
    ],
    "name": "plate"
@@ -153,7 +153,7 @@
      "sprite": "11",
      "text": "Common",
      "style": "d2_sy_t11",
-     "font": "d:rounded:9:0.85:0.55:0",
+     "font": "d:rounded:9:0.9:0.55:0",
      "palettes": [
       26
      ],
@@ -173,7 +173,7 @@
      "sprite": "13",
      "text": "Teio",
      "style": "d2_sy_t13",
-     "font": "d:rounded:9:0.85:0.55:0",
+     "font": "d:rounded:9:1.0:0.55:0",
      "palettes": [
       23
      ],
@@ -183,7 +183,7 @@
      "sprite": "14",
      "text": "Tachibana",
      "style": "d2_sy_t14",
-     "font": "d:rounded:9:0.85:0.55:0",
+     "font": "d:rounded:9:0.75:0.55:0",
      "palettes": [
       25
      ],
@@ -193,7 +193,7 @@
      "sprite": "15",
      "text": "Haikyo",
      "style": "d2_sy_t15",
-     "font": "d:rounded:9:0.85:0.55:0",
+     "font": "d:rounded:9:1.0:0.55:0",
      "palettes": [
       24
      ],

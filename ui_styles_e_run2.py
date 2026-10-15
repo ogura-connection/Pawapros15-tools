@@ -6,6 +6,7 @@ import ui_type
 from ui_type import grow, shift
 
 STYLES = {}
+ui_type.TTF.setdefault("italic", ("/System/Library/Fonts/Supplemental/Arial Italic.ttf", 0))
 ui_type.TTF.setdefault("chancery", ("/System/Library/Fonts/Supplemental/Apple Chancery.ttf", 0))
 
 # scs_b_ed.arc v4_go_16ji, the ending title: white calligraphic letters in a grey and a dark ring
@@ -18,3 +19,6 @@ STYLES["e_mic"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [7])
 # scs_load.arc y5_tlog_0 (palette 20, white to dark brown): Cleared / Pitchers / Fielders: dark brown letters in a grey and a
 # white ring (as the Japanese lettering is)
 STYLES["e_tlog"] = ui_type.ringed([0, 5, 4, 3, 2, 1, 1], [8, 15])
+
+# scs_load.arc z5_sop_0 (palette 0, a blue ramp): the story lines, white italic letters in a thin dark blue ring
+STYLES["e_sop"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [2])

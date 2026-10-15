@@ -1,11 +1,46 @@
 """Label styles of art run 2, agent A (scs_end.arc: end of a Success game). Loaded by ui_type.py (every ui_styles_*.py is).
-Colours read from the Japanese lettering of each palette (_work/ui_pages/run2/A/dump.py / roles.py)."""
+Colours read from the Japanese lettering of each palette (_work/ui_pages/run2/A/dump.py, palette lists).
+`rpad(style, w)` pads a word on the left to w columns (right-aligned lines); `win(style, c0, c1)` returns the columns c0..c1
+of the whole word (a line shared out over parts that stand side by side): the windows named "<style>~c0_c1" exist for
+columns at multiples of 8 up to 392, and the last window ends at 4096."""
 import numpy as np
 import ui_type
-from ui_type import grow, shift
+from ui_type import grow, shift, logo
 from ui_styles_ore_ini import ringfill
 
 STYLES = {}
 
-# m4_stt01 team names and forms (palettes 27, 2): white letters, thick navy outline
+
+def rpad(style, w):
+    def cut(ink, base):
+        art, b = style(ink, base)
+        out = np.zeros((art.shape[0], max(w, art.shape[1])), np.uint8)
+        out[:, out.shape[1] - art.shape[1]:] = art
+        return out, b
+    return cut
+
+
+def win(style, c0, c1):
+    def cut(ink, base):
+        art, b = style(ink, base)
+        out = art[:, c0:c1]
+        if out.shape[1] == 0:
+            out = np.zeros((art.shape[0], 1), np.uint8)
+        return out, b
+    return cut
+
+
+def windows(name, step=8, top=392):
+    for c0 in range(0, top + 1, step):
+        for c1 in list(range(c0 + step, top + 1, step)) + [4096]:
+            STYLES["%s~%d_%d" % (name, c0, c1)] = win(STYLES[name], c0, c1)
+
+
+# m4_stt01 / m4_stt00 team names, forms, drop-down lists (palettes 27, 2): white letters, thick navy outline
 STYLES["a_name"] = ringfill([15], [1, 1], [])
+# y5_sss_1 names, forms, items (palettes 35, 46): white letters, blue and dark blue rings
+STYLES["a_y5name"] = ringfill([15], [5, 1], [])
+# m4_stt01 08 colour lines (palette 4): yellow letters, blue rings, right-aligned in 192 columns
+STYLES["a_eqm"] = rpad(ringfill([14, 14, 13, 12], [1, 2], []), 192)
+# y5_sss_1 35-38 (palette 41): yellow letters, blue rings
+STYLES["a_eqy"] = ringfill([1, 1, 2, 3], [15, 14, 13], [])

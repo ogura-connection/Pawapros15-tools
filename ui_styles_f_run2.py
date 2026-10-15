@@ -11,3 +11,4 @@ STYLES = {}
 STYLES["f_st_yel"] = ringfill([0xf, 0xf, 0xe, 0xe, 0xd, 0xd], [6, 6, 1])
 # h3_st_0 Bonus (palette 15): white to pink letters, deep blue outline, blue shadow
 STYLES["f_st_pink"] = ringfill([7, 7, 8, 9, 0xa, 0xb], [1, 1], [3, 4])
+STYLES["f_st_yel2"] = ringfill([0xf, 0xf, 0xe, 0xe, 0xd, 0xd], [6, 6])

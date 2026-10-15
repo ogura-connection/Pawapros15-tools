@@ -51,6 +51,214 @@
     }
    ],
    "name": "team log headings"
+  },
+  {
+   "bank": "z5_sop_0",
+   "palette": 0,
+   "style": "e_sop",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 0,
+   "areas": [
+    [
+     0,
+     0,
+     32,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "I loved baseball from a young age,",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "04",
+     "text": "always chasing that white ball.",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "05",
+     "text": "In high school I aimed for Koshien,",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "06",
+     "text": "and in college I kept at it,",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "07",
+     "text": "dreaming of the pros.",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "08",
+     "text": "But not a single club",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "09",
+     "text": "ever called my name...",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "0a",
+     "text": "Even so,",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "0b",
+     "text": "I couldn't let go of",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "0c",
+     "text": "my pro dream,",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -192,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "0d",
+     "text": "so I took on the industrial leagues.",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -208,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "sprite": "0e",
+     "text": "...my dream riding on a white ball...",
+     "style": "e_sop",
+     "font": "ttf:italic:20:0.0:0.9:0.5",
+     "left": -208,
+     "valign": "centre",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "from": [
+      0,
+      0,
+      32,
+      32,
+      64
+     ]
+    }
+   ],
+   "name": "story lines",
+   "gap": [
+    1,
+    1
+   ]
   }
  ]
 }

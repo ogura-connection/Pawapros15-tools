@@ -24,7 +24,7 @@ def padded(style, h):
 # gdt_scs z3_sgr_0 (palette 11): white letters in a dark blue outline, one pixel, so that 71 phrases fit the ten pages
 STYLES["c2_sgr"] = padded(ringfill([15], [4], []), 17)
 # gdt_scs z3_sgi_0 (palette 2): white letters, navy outline, blue ring
-STYLES["c2_sgi"] = ringfill([15], [4, 2], [])
+STYLES["c2_sgi"] = padded(ringfill([15], [4, 2], []), 20)
 # gdt_scs h3_mrs_0 (palette 0): orange letters, dark brown outline, brown ring
 STYLES["c2_mrs"] = ringfill([15], [1, 3], [])
 # gdt_scs / scs_vs svt_0 (palette 0): white letters, navy outline, blue band, white rim
