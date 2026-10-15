@@ -46,10 +46,12 @@ def _sop_title(project=None):
         title = ("Hakkyu Dream", "rounded", cap, 0.12, 0.92, 1.0)
         if ui_type.ttf_ink(*title)[0].shape[1] <= 278:
             break
-    sub = ("~ Hot-Blooded Industrial-League Ball! ~", "narrow", 14, 0.0, 1.0, 0.6)
+    sub = ("~ Hot-Blooded Industrial-League Ball! ~", "narrow", 15, 0.0, 1.0, 0.3)
     return {"words": {"SOP_T1": ui_type.ttf_ink(*title), "SOP_T2": ui_type.ttf_ink(*sub)}, "glyphs": {}, "space": 4, "gap": 1}
 
 
 ui_type.FONTS["e_sop_title"] = _sop_title
 # the title: white letters in a dark blue ring and a darker one (palette 0, a blue ramp)
-STYLES["e_sop_title"] = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [3, 1])
+_big = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [3, 1])
+_small = ui_type.ringed([0, 15, 15, 15, 15, 15, 15], [3])
+STYLES["e_sop_title"] = lambda ink, base: (_big if ink.shape[0] > 30 else _small)(ink, base)      # one ring on the subtitle

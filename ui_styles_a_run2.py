@@ -46,3 +46,27 @@ STYLES["a_name1"] = ringfill([15], [1], [])
 STYLES["a_eqm"] = rpad(STYLES["a_eqm_u"], 200)
 # y5_sss_1 35-38 (palette 41): yellow letters, blue rings
 STYLES["a_eqy"] = ringfill([1, 1, 2, 3], [15, 14, 13], [])
+
+
+def flat(ramp, cut=1):
+    """Letters only, no ring: ink level k (1..6) -> palette index ramp[k]; pixels below `cut` are clear."""
+    ramp = np.array(ramp, np.uint8)
+
+    def style(ink, base):
+        out = np.where(ink >= cut, ramp[ink], 0).astype(np.uint8)
+        ys, xs = np.nonzero(out)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base - ys.min()
+    return style
+
+
+# m4_stt00 menu buttons (palettes 17-25): coloured letters, white ring, dark blue shadow cast down and right
+for _pal, _fill in {17: [5, 5, 5, 5, 7], 18: [5, 5, 5, 5, 7], 19: [3, 3, 3, 3, 6], 20: [3, 3, 5, 5, 6], 21: [4, 4, 4, 6, 7],
+                    22: [5, 5, 5, 6, 8], 23: [4, 4, 4, 4, 6], 24: [1, 1, 1, 3, 6], 25: [2, 2, 2, 4, 6]}.items():
+    STYLES["a_btn%d" % _pal] = ringfill(_fill, [14, 14], [3, 2, 1])
+# thin black pixel-font items: m4_stt00 (palette 5, cream), y5_sss_0 (palette 32, grey ramp), tags on the tan tabs (palette 19)
+STYLES["a_thin5"] = flat([0, 7, 5, 3, 2, 1, 1])
+STYLES["a_thin32"] = flat([0, 4, 7, 10, 12, 14, 15])
+STYLES["a_tab19"] = flat([0, 12, 9, 6, 4, 2, 1])
+# y5_sss_0 (palette 16 title, 28 buttons): blue and white lettering
+STYLES["a_y5title"] = ringfill([15, 15, 14, 13, 12, 11], [8, 4, 2], [1])
+STYLES["a_y5btn"] = ringfill([3, 2, 2, 2], [15, 15], [10])

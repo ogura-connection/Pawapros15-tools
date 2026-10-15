@@ -150,3 +150,8 @@ def title_halves(name, style, offset):
 # the title of scs_intr: 29 rows of art, 1 empty row above it
 STYLES["d2_sy_title_top"] = halved(STYLES["d2_sy_title"], 0, 1)
 STYLES["d2_sy_title_bot"] = halved(STYLES["d2_sy_title"], 1, 1)
+
+# orihen m3_sbn00
+STYLES["d2_ori_head"] = ringfill([12, 13, 14, 15], [7, 7, 2], [4, 5])             # palette 4: green to yellow letters, blue outline, white band, lilac shadow
+STYLES["d2_ori_hint"] = ringfill([11, 10, 9, 8], [2, 2], [4, 5])                  # palette 5: magenta to violet letters, white edge, lilac shadow
+STYLES["d2_ori_ask"] = ringfill([3, 3, 2, 2, 1], [7, 7, 15], [11, 12])            # palette 10: orange to yellow letters, violet outline, white band, lilac shadow

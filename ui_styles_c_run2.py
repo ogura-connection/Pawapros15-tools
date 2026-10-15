@@ -50,3 +50,73 @@ def window(inner, W, c0, c1):
 
 for _w, _c0, _c1 in ((80, 0, 80), (80, 0, 48), (80, 48, 80), (32, 0, 32)):
     STYLES["c2_mrsw_%d_%d_%d" % (_w, _c0, _c1)] = window(STYLES["c2_mrs"], _w, _c0, _c1)
+
+
+# ---- gdt_scs y4_mmk_1: the 32 x 32 team emblems with one kanji (two Latin capitals instead) ---------------------------
+import os
+import scan_story as _S
+import ui_textures as _U
+_ORIG = {}
+
+
+def _orig_rect(arc, bank, page, rect):
+    """The 32 x 32 indices of an emblem in the untouched file."""
+    key = (arc, bank, page)
+    if key not in _ORIG:
+        path = os.path.join(_U.ORIG_ARC_DIR, arc)
+        if not os.path.exists(path):
+            path = os.path.join(_S.DATA_FILES, arc)
+        d = open(path, "rb").read()
+        b = next(x for x in _U.banks(d, _U.elf_symbols(d)) if x["name"] == bank)
+        _ORIG[key] = _U.decode_indices(d, *b["pages"][page])
+    x0, y0, x1, y1 = rect
+    return _ORIG[key][y0:y1, x0:x1]
+
+
+def _erode(mask, n):
+    m = mask.copy()
+    for _ in range(n):
+        p = np.pad(m, 1)
+        m = m & p[:-2, 1:-1] & p[2:, 1:-1] & p[1:-1, :-2] & p[1:-1, 2:]
+    return m
+
+
+def emblem(fill, rings, shadow=(), plate=None, dy=0):
+    """The word (two capitals) in `ringfill` colours on a 32 x 32 canvas; `plate` = (page, rect, depth, inner, drop) keeps the
+    tile or ring of the original emblem: its edge `depth` pixels deep is copied (index in `drop` = old letter, replaced by `inner`),
+    the inside is flat `inner`."""
+    inner_style = ringfill(fill, rings, shadow)
+
+    def cut(ink, base):
+        art, _ = inner_style(ink, base)
+        out = np.zeros((32, 32), np.uint8)
+        if plate:
+            page, rect, depth, inner, drop = plate
+            old = _orig_rect("gdt_scs.arc", "y4_mmk_1", page, rect)
+            solid = old > 0
+            core = _erode(solid, depth)
+            out = np.where(solid, old, 0).astype(np.uint8)
+            out[np.isin(out, drop)] = inner
+            out[core] = inner
+        H, W = art.shape
+        y, x = (32 - H) // 2 + dy, (32 - W) // 2
+        area = out[y:y + H, x:x + W]
+        area[art > 0] = art[art > 0]
+        return out, 0
+    return cut
+
+
+# 選 (palette 23): red tile, white capitals in dark red
+STYLES["c2_emb_03"] = emblem([15, 15, 14, 14, 13, 13, 13, 13], [4], [], (1, (64, 0, 96, 32), 3, 6, (9, 10, 11, 12, 13, 14, 15)), dy=-1)
+# 極 (palette 43): pale lilac capitals, purple outline, blue shadow
+STYLES["c2_emb_05"] = emblem([7, 6, 6, 5, 5, 4, 4, 3], [1, 1], [13, 15])
+# て (palette 45): blue capitals, pale cyan outline, blue shadow
+STYLES["c2_emb_06"] = emblem([14, 14, 14, 14, 14, 14, 14, 14], [10, 12], [5])
+# 浪 (palette 36): white capitals, dark purple outline, lilac shadow
+STYLES["c2_emb_08"] = emblem([1, 1, 2, 2, 3, 3, 3, 3], [7, 7], [10])
+# ぴ (palette 37): white capitals, royal blue outline, sky blue ring
+STYLES["c2_emb_09"] = emblem([15, 15, 14, 14, 13, 13, 12, 12], [2, 2], [9])
+# 覇 (palette 47): dark capitals on the pale grey disc of a red ring
+STYLES["c2_emb_0b"] = emblem([2, 2, 3, 3, 3, 3, 3, 3], [], [], (1, (32, 0, 64, 32), 4, 12, (2, 3, 4, 5, 6, 14, 13)), dy=0)
+# ど (palette 44): black capitals, pale blue outline
+STYLES["c2_emb_0d"] = emblem([2, 2, 3, 3, 2, 2, 1, 1], [10, 9], [7])
