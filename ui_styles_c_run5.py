@@ -48,6 +48,7 @@ add("c5_pen_warn", ringfill([14, 15, 15, 14, 14, 13], [6, 3]), middle=True)     
 
 # ---- s3_pnd00 ---------------------------------------------------------------------------------------------------------------------------------
 add("c5_pnd", ringfill([14, 14, 13, 12, 11, 10], [2, 3, 14], [6, 5]), windows=True)         # pal 125 / 126: pale silver letters, lilac rings
-add("c5_pnd_s", ringfill([14, 13, 12, 11, 10, 10], [3, 14], [6]), windows=True)
+add("c5_pnd_s", ringfill([14, 13, 12, 11, 10, 10], [3, 14], [6]), windows=True, middle=True)
+add("c5_pnd_xs", ringfill([14, 14, 13, 12, 11, 10], [3], [6]), windows=True, middle=True)
 add("c5_pnd2", ringfill([10, 9, 8, 6, 6, 6], [3, 12, 13], [1]), windows=True)               # pal 57: Konami Cup lines
 add("c5_pnd2_s", ringfill([10, 9, 8, 6, 6, 6], [3, 13], [1]), windows=True)
