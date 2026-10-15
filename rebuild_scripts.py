@@ -922,7 +922,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
     names = name_table.load_tsv() if os.path.exists(name_table.TSV) else None
     slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages,
-                         [en for _, en in names.values()] + name_table.short_names(names) if names else ())
+                         name_table.plates(names) + name_table.short_names(names) if names else ())
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}

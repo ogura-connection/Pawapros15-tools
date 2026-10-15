@@ -222,12 +222,19 @@ def short_form(en):
     return en if len(en) <= 2 * SHORT_CELLS else None
 
 
+def plate(en):
+    """The name as laid out in its cells. A name plate spreads the cells of a name over its width (trailing
+    blank cells dropped, a leading one kept), so a name of two cells shows as "Sa    to": names of four letters
+    or fewer are centred in three cells (" S" "at" "o ", "  " "It" "o ")."""
+    return {1: "  " + en + "   ", 2: "  " + en + "  ", 3: "  " + en + " ", 4: " " + en + " "}.get(len(en), en).rstrip()
+
+
 def table(names, encode):
     """The 16-byte records. names = load_tsv(), encode = rebuild_scripts.encode_text bound to the font slots."""
     out = bytearray()
     for i in range(COUNT):
         call, en = names[i]
-        units = encode(en)
+        units = encode(plate(en))
         if not letters_ok(en) or len(units) > CELLS:
             raise ValueError("surname %d %r does not fit %d cells" % (i, en, CELLS))
         out += struct.pack(">8H", *(units + [END] * (CELLS - len(units))), END, call)
@@ -246,7 +253,7 @@ def short_table(names, encode, old):
         if s is None:
             kanji.append(en)
             continue
-        units = encode(s)
+        units = encode(plate(s))
         assert len(units) <= SHORT_CELLS, s
         struct.pack_into(">4H", out, at, *(units + [END] * (SHORT_CELLS - len(units))))
     return bytes(out), kanji
@@ -254,7 +261,12 @@ def short_table(names, encode, old):
 
 def short_names(names):
     """The English that main_prg.rel's table holds (for the font's letter pairs)."""
-    return [s for s in (short_form(en) for _, en in names.values()) if s]
+    return [plate(s) for s in (short_form(en) for _, en in names.values()) if s]
+
+
+def plates(names):
+    """The English of the wide table as laid out (for the font's letter pairs)."""
+    return [plate(en) for _, en in names.values()]
 
 
 # ── Commands ───────────────────────────────────────────────────────────────
