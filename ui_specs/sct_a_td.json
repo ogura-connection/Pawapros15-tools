@@ -110,7 +110,7 @@
     80
    ],
    "text": "All",
-   "font": "ttf:rounded:15:0.0:0.92:0.3",
+   "font": "ttf:rounded:13:0.0:1.0:0.3",
    "copy": "clear",
    "style": "c4_td_t_allc_0"
   },
@@ -138,7 +138,7 @@
     104
    ],
    "text": "1st",
-   "font": "ttf:narrow:15:0.0:0.92:0.3",
+   "font": "ttf:rounded:13:0.0:0.85:0.3",
    "copy": "clear",
    "style": "c4_td_t_1st_0"
   },
@@ -292,7 +292,7 @@
     48
    ],
    "text": "Scrim",
-   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "font": "ttf:narrow:11:0.0:0.85:0.3",
    "copy": "clear",
    "style": "c4_td_g_scrim_0"
   },
@@ -432,7 +432,7 @@
     88
    ],
    "text": "Played",
-   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "font": "ttf:narrow:11:0.0:0.85:0.3",
    "copy": "clear",
    "style": "c4_td_s_played_0"
   },
