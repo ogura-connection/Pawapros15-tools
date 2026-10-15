@@ -459,7 +459,7 @@ Frames of every one were read as contact sheets:
 - A dialogue line is taken as 18 cells (36 letters): the Japanese rarely passes 18. Lines of 36 letters showed whole in the manager's box.
 - Names padded with full-width spaces to a column (ability names, 10 cells) are padded again by `_work/tl_bulk/pad_columns.py` after `collect.py`.
 - Eikan Nine is entered from the Success screen (the right-hand picture), not from the main menu.
-- Not parsed yet: `scs_comi.rel`, `gdt_pn.rel`, `koukai.rel` (My Life, `orepena.rel`, is below). For each: find the dispatch loop, derive the lengths the same way, add an entry to `BLOCK_SCRIPTS`.
+- `scs_comi.rel`, `gdt_pn.rel`, `koukai.rel`: parsed and translated since, see "The three small script modules" below.
 
 ## My Life scripts (2026-10-13, eighth session)
 
@@ -476,7 +476,41 @@ Frames of every one were read as contact sheets:
 - `verify_dol` skips its "same size, only addends differ" test for the two My Life modules (their relocations are compared as a set in `verify`) and pairs their `main.dol` relocations by position.
 - A line is taken as 17 cells (34 letters), like the Success box: 1,101 Japanese lines are 16 characters and a few are 17.
 - Scene files show the window set by `0018` as 100 + its number, an insert as `{name}`, a called routine's text as `{sub}`, and `if` / `else` / `end` around alternatives. Brief for translators: `_work/tl_bulk/brief_mylife.md`; 35 batches of about 520 lines.
-- `gdt_pn.rel` calls the same text reader (`ore_work.rel` sec1+0x3F30), so its text is probably of this kind; `scs_comi.rel` and `koukai.rel` have jump tables of their own (sec5+0x3D8, 157 entries; sec5+0x3A8, 60 entries) and are not read yet.
+- `gdt_pn.rel` and `koukai.rel` hold scripts of this kind too; `scs_comi.rel` is of the Success kind (see "The three small script modules").
+
+## The three small script modules (2026-10-14, sixteenth session; built and verified)
+
+All three are English, built, verified (the build re-reads every script, label and relocation) and installed.
+`tl.py` and the build handle them through `scan_story.BLOCK_SCRIPTS`; translations in `translation/<file>.tsv`,
+batches in `_work/tl_bulk/<file>/` (one batch each, translated by Opus in the session, checker clean apart from
+debug menus whose Japanese breaks the same limits).
+
+- **`koukai.rel` is the signing and contract scene of My Life** (the "Giants signing scene" of the handoffs; it is
+  not in `gdt_pn.rel`): the man in glasses ("...That completes your signing."), the executive's speech, the
+  yearly salary announcement for every career stage (zero salary, rookie, veteran), the agent sitting in, the
+  team's finish (pennant / Japan Series / bottom half / last), free agency, and the speaker plates. 242 runs in
+  27 scenes, a My Life script (`OreScript`) at sec5+1328..8672, the end of its data; 32 labels in a table at
+  sec5+112. The module imports `ore_work.rel` and `orepena.rel`, so it only runs with `ore_work.rel` loaded.
+- **`gdt_pn.rel`**: the playing-manager prompts during a match ("Can you keep pitching?", "Let me qualify for
+  the win", the coaches' closer and pinch-hitter suggestions with the ◎ mark, the situation pieces "9th, 2 up"),
+  plus debug menus. 208 runs in 42 scenes, a My Life script at sec5+1240..7440, 61 labels at sec5+768. Its
+  module shares its slot with gdt_o_c6 .. gdt_scc and cannot grow.
+- **Annexes.** Neither module has room (64 and 52 bytes of padding), so both use the My Life annex: the build
+  appends one annex per script behind the data of `ore_work.rel` (loaded at 0x81400000), each starting with its
+  own magic (`OREX` orepena, `PNEX` gdt_pn, `KKEX` koukai) and its own address. `OreScript` finds its annex by
+  scanning from `annex_from` in 8-byte steps for its magic whose address field agrees with the first header.
+  `rebuild_scripts.build` keeps a list `ores` (was one `ore`); verify maps each script's labels with its own
+  remap. Present build: gdt_pn 96 bytes and koukai 56 bytes in the annex, `ore_work.rel` ends at 0x814356A0.
+- **`scs_comi.rel`**: the rival showdowns of a Success match (each opposing team's taunts, the player's answer
+  choices, pitch announcements, a pitch-name slot filled from scenes s0050..s0076, debug lists of faces and
+  teams). A script of the Success kind with an interpreter of its own: sec1+0x1CF8, script pointer at r15+0x154,
+  141 opcodes, jump table at sec5+0x3DC (0x3D8 is the end of a 3-word structure). Lengths from
+  `derive_op_advance` (`VM_IP = "0x154(r15)"`, exits 0x2B0C / 0x2B20) except 0x66 / 0x67, whose helpers
+  (sec1+0x2B58 / 0x2C20) move the pointer by one argument. 0x75 goto / 0x76 call read the label table that
+  sec5+0x2D90 points to (sec5+11672, 347 labels); the last label points behind the table to a lone ダミー run,
+  left out. Laid out in place like Eikan Nine (`emit_block`): 188 bytes left. Empty runs (the pitch slot) must
+  stay empty: the checker rejects text there.
+- Not seen in game yet, except as noted in HANDOFF.md.
 
 ## Art survey: every sprite page read by machine (2026-10-13, seventh session)
 
