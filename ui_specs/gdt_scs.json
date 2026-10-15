@@ -1,0 +1,3131 @@
+{
+ "arc": "gdt_scs.arc",
+ "repack": [
+  {
+   "bank": "z3_sgr_0",
+   "palette": 11,
+   "style": "c2_sgr",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     17
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     17
+    ],
+    [
+     1,
+     0,
+     18,
+     128,
+     35
+    ],
+    [
+     1,
+     0,
+     36,
+     128,
+     53
+    ],
+    [
+     1,
+     0,
+     54,
+     128,
+     71
+    ],
+    [
+     1,
+     0,
+     72,
+     128,
+     89
+    ],
+    [
+     1,
+     0,
+     90,
+     128,
+     107
+    ],
+    [
+     1,
+     0,
+     108,
+     128,
+     125
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     17
+    ],
+    [
+     2,
+     0,
+     18,
+     128,
+     35
+    ],
+    [
+     2,
+     0,
+     36,
+     128,
+     53
+    ],
+    [
+     2,
+     0,
+     54,
+     128,
+     71
+    ],
+    [
+     2,
+     0,
+     72,
+     128,
+     89
+    ],
+    [
+     2,
+     0,
+     90,
+     127,
+     107
+    ],
+    [
+     2,
+     0,
+     108,
+     127,
+     125
+    ],
+    [
+     3,
+     0,
+     0,
+     126,
+     17
+    ],
+    [
+     3,
+     0,
+     18,
+     126,
+     35
+    ],
+    [
+     3,
+     0,
+     36,
+     125,
+     53
+    ],
+    [
+     3,
+     0,
+     54,
+     125,
+     71
+    ],
+    [
+     3,
+     0,
+     72,
+     124,
+     89
+    ],
+    [
+     3,
+     0,
+     90,
+     122,
+     107
+    ],
+    [
+     3,
+     0,
+     108,
+     120,
+     125
+    ],
+    [
+     4,
+     0,
+     0,
+     114,
+     17
+    ],
+    [
+     4,
+     0,
+     18,
+     113,
+     35
+    ],
+    [
+     4,
+     0,
+     36,
+     113,
+     53
+    ],
+    [
+     4,
+     0,
+     54,
+     113,
+     71
+    ],
+    [
+     4,
+     0,
+     72,
+     113,
+     89
+    ],
+    [
+     4,
+     0,
+     90,
+     113,
+     107
+    ],
+    [
+     4,
+     0,
+     108,
+     113,
+     125
+    ],
+    [
+     5,
+     0,
+     0,
+     113,
+     17
+    ],
+    [
+     5,
+     0,
+     18,
+     113,
+     35
+    ],
+    [
+     5,
+     0,
+     36,
+     113,
+     53
+    ],
+    [
+     5,
+     0,
+     54,
+     108,
+     71
+    ],
+    [
+     5,
+     0,
+     72,
+     106,
+     89
+    ],
+    [
+     5,
+     0,
+     90,
+     106,
+     107
+    ],
+    [
+     5,
+     0,
+     108,
+     106,
+     125
+    ],
+    [
+     6,
+     0,
+     0,
+     106,
+     17
+    ],
+    [
+     6,
+     0,
+     18,
+     105,
+     35
+    ],
+    [
+     6,
+     0,
+     36,
+     102,
+     53
+    ],
+    [
+     6,
+     0,
+     54,
+     101,
+     71
+    ],
+    [
+     6,
+     0,
+     72,
+     101,
+     89
+    ],
+    [
+     6,
+     0,
+     90,
+     100,
+     107
+    ],
+    [
+     6,
+     0,
+     108,
+     99,
+     125
+    ],
+    [
+     7,
+     0,
+     0,
+     98,
+     17
+    ],
+    [
+     7,
+     0,
+     18,
+     97,
+     35
+    ],
+    [
+     7,
+     0,
+     36,
+     96,
+     53
+    ],
+    [
+     7,
+     0,
+     54,
+     94,
+     71
+    ],
+    [
+     7,
+     0,
+     72,
+     92,
+     89
+    ],
+    [
+     7,
+     0,
+     90,
+     91,
+     107
+    ],
+    [
+     7,
+     0,
+     108,
+     88,
+     125
+    ],
+    [
+     8,
+     0,
+     0,
+     87,
+     17
+    ],
+    [
+     8,
+     0,
+     18,
+     85,
+     35
+    ],
+    [
+     8,
+     0,
+     36,
+     83,
+     53
+    ],
+    [
+     8,
+     0,
+     54,
+     79,
+     71
+    ],
+    [
+     8,
+     0,
+     72,
+     77,
+     89
+    ],
+    [
+     8,
+     0,
+     90,
+     75,
+     107
+    ],
+    [
+     8,
+     0,
+     108,
+     74,
+     125
+    ],
+    [
+     9,
+     0,
+     0,
+     73,
+     17
+    ],
+    [
+     9,
+     0,
+     18,
+     70,
+     35
+    ],
+    [
+     9,
+     0,
+     36,
+     65,
+     53
+    ],
+    [
+     9,
+     66,
+     36,
+     128,
+     53
+    ],
+    [
+     9,
+     0,
+     54,
+     60,
+     71
+    ],
+    [
+     9,
+     61,
+     54,
+     120,
+     71
+    ],
+    [
+     9,
+     0,
+     72,
+     58,
+     89
+    ],
+    [
+     9,
+     71,
+     18,
+     128,
+     35
+    ],
+    [
+     9,
+     74,
+     0,
+     128,
+     17
+    ],
+    [
+     8,
+     78,
+     72,
+     128,
+     89
+    ],
+    [
+     8,
+     80,
+     54,
+     125,
+     71
+    ],
+    [
+     8,
+     84,
+     36,
+     126,
+     53
+    ],
+    [
+     8,
+     86,
+     18,
+     126,
+     35
+    ],
+    [
+     8,
+     88,
+     0,
+     124,
+     17
+    ],
+    [
+     0,
+     96,
+     32,
+     127,
+     49
+    ],
+    [
+     7,
+     98,
+     18,
+     127,
+     35
+    ],
+    [
+     7,
+     99,
+     0,
+     128,
+     17
+    ],
+    [
+     6,
+     100,
+     108,
+     128,
+     125
+    ],
+    [
+     6,
+     101,
+     90,
+     124,
+     107
+    ],
+    [
+     6,
+     103,
+     36,
+     126,
+     53
+    ],
+    [
+     6,
+     106,
+     18,
+     124,
+     35
+    ],
+    [
+     6,
+     107,
+     0,
+     125,
+     17
+    ],
+    [
+     7,
+     89,
+     108,
+     98,
+     125
+    ],
+    [
+     3,
+     121,
+     108,
+     127,
+     125
+    ],
+    [
+     3,
+     123,
+     90,
+     128,
+     107
+    ],
+    [
+     3,
+     125,
+     72,
+     128,
+     89
+    ],
+    [
+     6,
+     125,
+     18,
+     127,
+     35
+    ],
+    [
+     6,
+     126,
+     0,
+     128,
+     17
+    ],
+    [
+     9,
+     121,
+     54,
+     125,
+     58
+    ],
+    [
+     8,
+     125,
+     0,
+     128,
+     3
+    ],
+    [
+     8,
+     125,
+     4,
+     127,
+     7
+    ],
+    [
+     8,
+     125,
+     8,
+     128,
+     10
+    ],
+    [
+     1,
+     0,
+     126,
+     5,
+     127
+    ],
+    [
+     8,
+     125,
+     11,
+     127,
+     13
+    ],
+    [
+     1,
+     6,
+     126,
+     10,
+     127
+    ],
+    [
+     8,
+     125,
+     14,
+     126,
+     17
+    ],
+    [
+     6,
+     125,
+     54,
+     128,
+     55
+    ],
+    [
+     6,
+     127,
+     36,
+     128,
+     38
+    ],
+    [
+     8,
+     126,
+     54,
+     128,
+     55
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Get a foul",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -29
+    },
+    {
+     "sprite": "01",
+     "text": "Opposite-field hit",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "02",
+     "text": "If you strike out",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "03",
+     "text": "If you are retired",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "04",
+     "text": "Draw a walk",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "05",
+     "text": "If caught stealing",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "06",
+     "text": "Out back to the mound",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:0.9:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "07",
+     "text": "Intentional walk or homer",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "08",
+     "text": "Retire him on a low pitch",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "09",
+     "text": "Throw a perfect game",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "0a",
+     "text": "Throw a no-hitter",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "0b",
+     "text": "Hit a high pitch",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "0c",
+     "text": "Hit a low pitch",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "0d",
+     "text": "Walk-off hit",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "0e",
+     "text": "Walk-off homer",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "0f",
+     "text": "Opposite-field homer",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "10",
+     "text": "2+ RBI",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "11",
+     "text": "K with a fastball",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "12",
+     "text": "K with a breaking ball",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "13",
+     "text": "1st pitch: strike or out",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "14",
+     "text": "Pull a hit",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -32
+    },
+    {
+     "sprite": "15",
+     "text": "Pull a homer",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -32
+    },
+    {
+     "sprite": "22",
+     "text": "reached",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      6
+     ],
+     "palettes": [
+      10
+     ],
+     "left": 98
+    },
+    {
+     "sprite": "26",
+     "text": "Home run",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "27",
+     "text": "Successful bunt",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "28",
+     "text": "Hit",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -29
+    },
+    {
+     "sprite": "29",
+     "text": "Homer to left",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -29
+    },
+    {
+     "sprite": "2a",
+     "text": "Homer to center",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "2b",
+     "text": "Homer to right",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "2c",
+     "text": "Homer to left or center",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -28
+    },
+    {
+     "sprite": "2d",
+     "text": "Homer to left or right",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -28
+    },
+    {
+     "sprite": "2e",
+     "text": "Homer to center or right",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "2f",
+     "text": "Homer, not to left",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -28
+    },
+    {
+     "sprite": "30",
+     "text": "Homer, not to center",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "31",
+     "text": "Homer, not to right",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -28
+    },
+    {
+     "sprite": "32",
+     "text": "Successful squeeze",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "33",
+     "text": "Double",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "34",
+     "text": "Triple",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "35",
+     "text": "Foul off 1+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -29
+    },
+    {
+     "sprite": "36",
+     "text": "Foul off 2+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "37",
+     "text": "Foul off 3+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "38",
+     "text": "Foul off 4+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "39",
+     "text": "Foul off 5+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "3a",
+     "text": "Foul off 6+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "3b",
+     "text": "Foul off 7+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "3c",
+     "text": "Foul off 8+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "3d",
+     "text": "Foul off 9+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "3e",
+     "text": "Foul off 10+ pitches",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -33
+    },
+    {
+     "sprite": "3f",
+     "text": "Steal a base",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "40",
+     "text": "Infield hit",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "41",
+     "text": "Walk",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "42",
+     "text": "Hit or better",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -29
+    },
+    {
+     "sprite": "43",
+     "text": "Hit the first pitch",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "44",
+     "text": "Hit on a full count",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "45",
+     "text": "Strikeout",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "46",
+     "text": "3-pitch strikeout",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "47",
+     "text": "Infield out",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "48",
+     "text": "Get a weak out",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "49",
+     "text": "Catch a base stealer",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "4a",
+     "text": "Infield grounder",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "4b",
+     "text": "Retire him, fastballs only",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "4c",
+     "text": "Retire him, breaking balls only",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:0.9:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "4d",
+     "text": "K with fastballs only",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "4e",
+     "text": "K with breaking balls only",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "4f",
+     "text": "Get an out",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "50",
+     "text": "Drive in a run",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "51",
+     "text": "Extra-base hit",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "52",
+     "text": "Opposite-field hit",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "53",
+     "text": "Runner on 1st steals",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -29
+    },
+    {
+     "sprite": "54",
+     "text": "Runner on 2nd steals",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -30
+    },
+    {
+     "sprite": "55",
+     "text": "Runner on 3rd steals",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -31
+    },
+    {
+     "sprite": "56",
+     "text": "K with the Crescent Moon",
+     "style": "c2_sgr",
+     "font": "ttf:narrow:11:0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "palettes": [
+      11
+     ],
+     "left": -32
+    }
+   ],
+   "name": "sgr"
+  },
+  {
+   "bank": "z3_sgi_0",
+   "palette": 2,
+   "style": "c2_sgi",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     72,
+     18
+    ],
+    [
+     1,
+     0,
+     64,
+     62,
+     83
+    ],
+    [
+     1,
+     0,
+     84,
+     63,
+     102
+    ],
+    [
+     1,
+     73,
+     0,
+     127,
+     20
+    ],
+    [
+     1,
+     0,
+     103,
+     59,
+     121
+    ],
+    [
+     1,
+     0,
+     19,
+     62,
+     36
+    ],
+    [
+     1,
+     63,
+     21,
+     119,
+     39
+    ],
+    [
+     1,
+     0,
+     37,
+     59,
+     54
+    ],
+    [
+     1,
+     0,
+     122,
+     4,
+     126
+    ],
+    [
+     1,
+     60,
+     103,
+     63,
+     106
+    ],
+    [
+     1,
+     60,
+     37,
+     62,
+     40
+    ],
+    [
+     1,
+     60,
+     107,
+     63,
+     109
+    ],
+    [
+     1,
+     63,
+     19,
+     68,
+     20
+    ],
+    [
+     1,
+     60,
+     110,
+     62,
+     112
+    ],
+    [
+     1,
+     0,
+     127,
+     4,
+     128
+    ],
+    [
+     1,
+     60,
+     113,
+     61,
+     116
+    ],
+    [
+     1,
+     69,
+     19,
+     72,
+     20
+    ],
+    [
+     1,
+     62,
+     113,
+     63,
+     115
+    ],
+    [
+     1,
+     60,
+     117,
+     62,
+     118
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "06",
+     "text": "Strength",
+     "style": "c2_sgi",
+     "font": "ttf:narrow:11:0:1.0:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Quickness",
+     "style": "c2_sgi",
+     "font": "ttf:narrow:12:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Technique",
+     "style": "c2_sgi",
+     "font": "ttf:narrow:12:0:0.85:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Breaking Ball",
+     "style": "c2_sgi",
+     "font": "ttf:narrow:10:0:0.8:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Mentality",
+     "style": "c2_sgi",
+     "font": "ttf:narrow:11:0:1.0:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Rating Up",
+     "style": "c2_sgi",
+     "font": "ttf:narrow:11:0:1.0:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "EXP Up",
+     "style": "c2_sgi",
+     "font": "ttf:narrow:13:0:0.95:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "Big EXP Up",
+     "style": "c2_sgi",
+     "font": "ttf:narrow:11:0:1.0:0.1",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 0,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    }
+   ],
+   "name": "sgi"
+  },
+  {
+   "bank": "gdt_scs_z5_svt_0",
+   "palette": 0,
+   "style": "c2_svt",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     0,
+     0,
+     128,
+     51
+    ],
+    [
+     10,
+     0,
+     52,
+     128,
+     103
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     51
+    ],
+    [
+     3,
+     0,
+     52,
+     128,
+     102
+    ],
+    [
+     19,
+     0,
+     0,
+     128,
+     49
+    ],
+    [
+     19,
+     0,
+     50,
+     128,
+     98
+    ],
+    [
+     20,
+     0,
+     0,
+     128,
+     47
+    ],
+    [
+     20,
+     0,
+     48,
+     128,
+     94
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     45
+    ],
+    [
+     5,
+     0,
+     46,
+     110,
+     98
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     44
+    ],
+    [
+     14,
+     0,
+     45,
+     128,
+     89
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     44
+    ],
+    [
+     9,
+     0,
+     45,
+     128,
+     89
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     43
+    ],
+    [
+     1,
+     0,
+     44,
+     128,
+     87
+    ],
+    [
+     0,
+     0,
+     0,
+     128,
+     43
+    ],
+    [
+     0,
+     0,
+     44,
+     128,
+     87
+    ],
+    [
+     17,
+     0,
+     0,
+     128,
+     43
+    ],
+    [
+     17,
+     0,
+     44,
+     128,
+     87
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     42
+    ],
+    [
+     6,
+     0,
+     43,
+     116,
+     89
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     41
+    ],
+    [
+     7,
+     0,
+     42,
+     128,
+     83
+    ],
+    [
+     18,
+     0,
+     0,
+     108,
+     48
+    ],
+    [
+     18,
+     0,
+     49,
+     128,
+     88
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     39
+    ],
+    [
+     4,
+     0,
+     40,
+     128,
+     79
+    ],
+    [
+     14,
+     0,
+     90,
+     128,
+     127
+    ],
+    [
+     8,
+     0,
+     0,
+     102,
+     46
+    ],
+    [
+     8,
+     0,
+     47,
+     100,
+     90
+    ],
+    [
+     15,
+     0,
+     0,
+     98,
+     42
+    ],
+    [
+     15,
+     0,
+     43,
+     87,
+     89
+    ],
+    [
+     16,
+     0,
+     0,
+     71,
+     46
+    ],
+    [
+     7,
+     0,
+     84,
+     72,
+     127
+    ],
+    [
+     16,
+     0,
+     47,
+     64,
+     95
+    ],
+    [
+     16,
+     65,
+     47,
+     128,
+     94
+    ],
+    [
+     2,
+     0,
+     0,
+     65,
+     44
+    ],
+    [
+     2,
+     0,
+     45,
+     66,
+     88
+    ],
+    [
+     13,
+     0,
+     0,
+     69,
+     41
+    ],
+    [
+     13,
+     0,
+     42,
+     65,
+     85
+    ],
+    [
+     12,
+     0,
+     0,
+     65,
+     43
+    ],
+    [
+     12,
+     0,
+     44,
+     63,
+     88
+    ],
+    [
+     13,
+     0,
+     86,
+     66,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     67,
+     41
+    ],
+    [
+     13,
+     70,
+     0,
+     120,
+     51
+    ],
+    [
+     16,
+     72,
+     0,
+     124,
+     45
+    ],
+    [
+     2,
+     66,
+     0,
+     116,
+     44
+    ],
+    [
+     15,
+     88,
+     43,
+     128,
+     94
+    ],
+    [
+     1,
+     0,
+     88,
+     50,
+     127
+    ],
+    [
+     4,
+     0,
+     80,
+     41,
+     124
+    ],
+    [
+     11,
+     68,
+     0,
+     104,
+     43
+    ],
+    [
+     2,
+     67,
+     45,
+     97,
+     95
+    ],
+    [
+     11,
+     105,
+     0,
+     126,
+     43
+    ],
+    [
+     8,
+     103,
+     0,
+     121,
+     49
+    ],
+    [
+     5,
+     111,
+     46,
+     128,
+     97
+    ],
+    [
+     16,
+     125,
+     0,
+     127,
+     37
+    ],
+    [
+     8,
+     122,
+     0,
+     126,
+     4
+    ],
+    [
+     16,
+     125,
+     38,
+     128,
+     41
+    ],
+    [
+     16,
+     125,
+     42,
+     127,
+     45
+    ],
+    [
+     13,
+     66,
+     42,
+     69,
+     44
+    ],
+    [
+     8,
+     122,
+     5,
+     127,
+     6
+    ],
+    [
+     13,
+     67,
+     45,
+     69,
+     47
+    ],
+    [
+     8,
+     122,
+     7,
+     126,
+     8
+    ],
+    [
+     8,
+     127,
+     0,
+     128,
+     3
+    ],
+    [
+     13,
+     66,
+     48,
+     69,
+     49
+    ],
+    [
+     8,
+     101,
+     47,
+     102,
+     49
+    ],
+    [
+     13,
+     67,
+     50,
+     69,
+     51
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Pawafuru\nCorp.",
+     "style": "c2_svt",
+     "font": "ttf:rounded:27:0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "01",
+     "text": "Kagurazaka\nGroup",
+     "style": "c2_svt",
+     "font": "ttf:rounded:24:0:0.95:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "02",
+     "text": "Otori Phoenix",
+     "style": "c2_svt",
+     "font": "ttf:rounded:23:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "03",
+     "text": "TOJO\nInternational",
+     "style": "c2_svt",
+     "font": "ttf:rounded:25:0:0.9:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "04",
+     "text": "Gokuaku\nTrading",
+     "style": "c2_svt",
+     "font": "ttf:rounded:26:0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "05",
+     "text": "Tekuteku\nTech",
+     "style": "c2_svt",
+     "font": "ttf:rounded:28:0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "06",
+     "text": "Rocket Express",
+     "style": "c2_svt",
+     "font": "ttf:rounded:20:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "07",
+     "text": "Naniwa Trading",
+     "style": "c2_svt",
+     "font": "ttf:rounded:20:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "08",
+     "text": "Pichipichi\nFisheries",
+     "style": "c2_svt",
+     "font": "ttf:rounded:26:0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "09",
+     "text": "Ageage\u2605\nBaseball Club",
+     "style": "c2_svt",
+     "font": "ttf:sfr:23:0:0.9:0.9",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "0a",
+     "text": "Hao",
+     "style": "c2_svt",
+     "font": "ttf:rounded:28:0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "0b",
+     "text": "Kurojishi Heavy\nIndustries",
+     "style": "c2_svt",
+     "font": "ttf:rounded:20:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "0c",
+     "text": "Dosukoi\nBrewery",
+     "style": "c2_svt",
+     "font": "ttf:rounded:26:0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "0d",
+     "text": "Mizotto Sports",
+     "style": "c2_svt",
+     "font": "ttf:rounded:21:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "0e",
+     "text": "Tenka\nConstruction",
+     "style": "c2_svt",
+     "font": "ttf:rounded:24:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "0f",
+     "text": "World Wide\nWorks",
+     "style": "c2_svt",
+     "font": "ttf:rounded:28:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "10",
+     "text": "Dokonjo Guts",
+     "style": "c2_svt",
+     "font": "ttf:rounded:23:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "11",
+     "text": "Main Power\nMainstays",
+     "style": "c2_svt",
+     "font": "ttf:rounded:26:0:0.9:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "12",
+     "text": "All-Star Team",
+     "style": "c2_svt",
+     "font": "ttf:rounded:21:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "13",
+     "text": "All-Star Team",
+     "style": "c2_svt",
+     "font": "ttf:rounded:21:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    },
+    {
+     "sprite": "14",
+     "text": "All-Star Team",
+     "style": "c2_svt",
+     "font": "ttf:rounded:21:0:0.88:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "overlap": 8
+    }
+   ],
+   "name": "svt"
+  }
+ ],
+ "paint": [
+  {
+   "bank": "h3_mrs_0",
+   "page": 0,
+   "rect": [
+    80,
+    0,
+    128,
+    32
+   ],
+   "text": "Pawafuru",
+   "font": "ttf:narrow:17:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_48",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    32,
+    32
+   ],
+   "text": "Pawafuru",
+   "font": "ttf:narrow:17:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_48_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 0,
+   "rect": [
+    0,
+    0,
+    80,
+    32
+   ],
+   "text": "Kagurazaka",
+   "font": "ttf:narrow:13:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 2
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 2,
+   "rect": [
+    80,
+    96,
+    112,
+    128
+   ],
+   "text": "OP",
+   "font": "ttf:narrow:18:0.0:0.85:0.15",
+   "style": "c2_mrsw_32_0_32",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    48,
+    0,
+    128,
+    32
+   ],
+   "text": "All-Stars",
+   "font": "ttf:narrow:18:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 0,
+   "rect": [
+    0,
+    32,
+    80,
+    64
+   ],
+   "text": "Gokuaku",
+   "font": "ttf:narrow:18:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 2,
+   "rect": [
+    80,
+    0,
+    128,
+    32
+   ],
+   "text": "Tekuteku",
+   "font": "ttf:narrow:17:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_48",
+   "copy": "clear",
+   "dy": 1
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    32,
+    96,
+    64,
+    128
+   ],
+   "text": "Tekuteku",
+   "font": "ttf:narrow:17:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_48_80",
+   "copy": "clear",
+   "dy": 1
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 2,
+   "rect": [
+    80,
+    32,
+    128,
+    64
+   ],
+   "text": "Rocket",
+   "font": "ttf:narrow:18:0.0:1.0:0.15",
+   "style": "c2_mrsw_80_0_48",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    64,
+    96,
+    96,
+    128
+   ],
+   "text": "Rocket",
+   "font": "ttf:narrow:18:0.0:1.0:0.15",
+   "style": "c2_mrsw_80_48_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 0,
+   "rect": [
+    0,
+    64,
+    80,
+    96
+   ],
+   "text": "Naniwa",
+   "font": "ttf:narrow:18:0.0:1.0:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 0,
+   "rect": [
+    80,
+    64,
+    128,
+    96
+   ],
+   "text": "Pichipichi",
+   "font": "ttf:narrow:16:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_48",
+   "copy": "clear",
+   "dy": 2
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    0,
+    64,
+    32,
+    96
+   ],
+   "text": "Pichipichi",
+   "font": "ttf:narrow:16:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_48_80",
+   "copy": "clear",
+   "dy": 2
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 0,
+   "rect": [
+    80,
+    96,
+    128,
+    128
+   ],
+   "text": "Ageage",
+   "font": "ttf:narrow:18:0.0:0.92:0.15",
+   "style": "c2_mrsw_80_0_48",
+   "copy": "clear",
+   "dy": 2
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    0,
+    96,
+    32,
+    128
+   ],
+   "text": "Ageage",
+   "font": "ttf:narrow:18:0.0:0.92:0.15",
+   "style": "c2_mrsw_80_48_80",
+   "copy": "clear",
+   "dy": 2
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    48,
+    32,
+    128,
+    64
+   ],
+   "text": "Hao",
+   "font": "ttf:narrow:18:0.0:1.0:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 0,
+   "rect": [
+    0,
+    96,
+    80,
+    128
+   ],
+   "text": "Kurojishi",
+   "font": "ttf:narrow:17:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 2
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 2,
+   "rect": [
+    80,
+    64,
+    128,
+    96
+   ],
+   "text": "Dosukoi",
+   "font": "ttf:narrow:18:0.0:0.92:0.15",
+   "style": "c2_mrsw_80_0_48",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    96,
+    96,
+    128,
+    128
+   ],
+   "text": "Dosukoi",
+   "font": "ttf:narrow:18:0.0:0.92:0.15",
+   "style": "c2_mrsw_80_48_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 2,
+   "rect": [
+    0,
+    96,
+    80,
+    128
+   ],
+   "text": "Mizotto",
+   "font": "ttf:narrow:18:0.0:1.0:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 1,
+   "rect": [
+    48,
+    64,
+    128,
+    96
+   ],
+   "text": "Tenka",
+   "font": "ttf:narrow:18:0.0:1.0:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 1
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 2,
+   "rect": [
+    0,
+    64,
+    80,
+    96
+   ],
+   "text": "World",
+   "font": "ttf:narrow:18:0.0:1.0:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    80,
+    32
+   ],
+   "text": "Dokonjo",
+   "font": "ttf:narrow:18:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 2
+  },
+  {
+   "bank": "h3_mrs_0",
+   "page": 2,
+   "rect": [
+    0,
+    32,
+    80,
+    64
+   ],
+   "text": "Main Power",
+   "font": "ttf:narrow:13:0.0:0.85:0.15",
+   "style": "c2_mrsw_80_0_80",
+   "copy": "clear",
+   "dy": 0
+  },
+  {
+   "bank": "y4_mmk_1",
+   "page": 1,
+   "rect": [
+    64,
+    0,
+    96,
+    32
+   ],
+   "text": "AS",
+   "font": "ttf:rounded:8:0.0:1.0:0.25",
+   "style": "c2_emb_03",
+   "copy": "clear"
+  },
+  {
+   "bank": "y4_mmk_1",
+   "page": 0,
+   "rect": [
+    64,
+    64,
+    96,
+    96
+   ],
+   "text": "GK",
+   "font": "ttf:rounded:12:0.0:0.92:0.25",
+   "style": "c2_emb_05",
+   "copy": "clear"
+  },
+  {
+   "bank": "y4_mmk_1",
+   "page": 0,
+   "rect": [
+    96,
+    64,
+    128,
+    96
+   ],
+   "text": "TT",
+   "font": "ttf:rounded:15:0.0:0.92:0.25",
+   "style": "c2_emb_06",
+   "copy": "clear"
+  },
+  {
+   "bank": "y4_mmk_1",
+   "page": 0,
+   "rect": [
+    64,
+    32,
+    96,
+    64
+   ],
+   "text": "NW",
+   "font": "ttf:rounded:11:0.0:0.92:0.25",
+   "style": "c2_emb_08",
+   "copy": "clear"
+  },
+  {
+   "bank": "y4_mmk_1",
+   "page": 0,
+   "rect": [
+    0,
+    64,
+    32,
+    96
+   ],
+   "text": "PP",
+   "font": "ttf:rounded:14:0.0:0.92:0.25",
+   "style": "c2_emb_09",
+   "copy": "clear"
+  },
+  {
+   "bank": "y4_mmk_1",
+   "page": 1,
+   "rect": [
+    32,
+    0,
+    64,
+    32
+   ],
+   "text": "HO",
+   "font": "ttf:rounded:8:0.0:0.92:0.25",
+   "style": "c2_emb_0b",
+   "copy": "clear"
+  },
+  {
+   "bank": "y4_mmk_1",
+   "page": 0,
+   "rect": [
+    96,
+    96,
+    128,
+    128
+   ],
+   "text": "DS",
+   "font": "ttf:rounded:13:0.0:1.0:0.25",
+   "style": "c2_emb_0d",
+   "copy": "clear"
+  }
+ ]
+}
