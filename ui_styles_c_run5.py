@@ -31,10 +31,10 @@ add("c5_stad_xs", ringfill([15, 15, 15, 15, 15, 15], [6, 2]))
 add("c5_fan_t7", ringfill([1, 1, 1, 1, 1, 1], [11, 10], [14, 12]))              # pal 7: Fan Change, white letters, purple rings, cyan shadow
 add("c5_fan_t27", ringfill([1, 1, 1, 1, 1, 1], [10, 8], [12, 14]))              # pal 27: Fan Count Report
 add("c5_fan_h", ringfill([9, 9, 9, 10, 10, 10], [7, 2], [14, 15]))              # pal 20: brown heading with a cream ring and orange shadow
-add("c5_pink", ringfill([11, 10, 12, 13, 14, 14], [6, 5, 2], [1, 1]))            # pal 24: pink letters, blue rings, white ring
-add("c5_gold", ringfill([15, 15, 15, 14, 13, 12], [9, 7, 2], [1, 1]))            # pal 25: gold letters, blue rings, white ring
-add("c5_grey", ringfill([15, 15, 14, 14, 13, 13], [6, 5, 2], [1, 1]))            # pal 26: pale blue letters, navy ring, white ring
-add("c5_fans", ringfill([15, 14, 13, 12, 11, 10], [6, 2]))                        # pal 10 / 11 (4d / 4e, same art): pink / cyan 'people' counter
+add("c5_pink", ringfill([11, 10, 12, 13, 14, 14], [6, 2], [1]))            # pal 24: pink letters, blue rings, white ring
+add("c5_gold", ringfill([15, 15, 15, 14, 13, 12], [9, 2], [1]))            # pal 25: gold letters, blue rings, white ring
+add("c5_grey", ringfill([15, 15, 14, 14, 13, 13], [6, 2], [1]))            # pal 26: pale blue letters, navy ring, white ring
+add("c5_fans", ringfill([15, 14, 13, 12, 11, 10], [6]))                        # pal 10 / 11 (4d / 4e, same art): pink / cyan 'people' counter
 add("c5_fans_big", ringfill([12, 11, 10, 9, 8, 7], [1, 2], [4, 3]))              # pal 19 (91): orange counter
 
 # ---- s3_pen00 -----------------------------------------------------------------------------------------------------------------------------------
