@@ -219,8 +219,8 @@
      "sprite": "6f",
      "text": "Push",
      "style": "b6_m3_ks_0_24",
-     "font": "ttf:narrow:14:0.0:0.94:0.3",
-     "baseline": 19,
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 18,
      "pages": [
       5
      ],
@@ -232,7 +232,7 @@
      "sprite": "70",
      "text": "IF In",
      "style": "b6_m3_ks_0_25",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
      "baseline": 18,
      "pages": [
       5
@@ -245,8 +245,8 @@
      "sprite": "71",
      "text": "IF Back",
      "style": "b6_m3_ks_0_25_s",
-     "font": "ttf:narrow:9:0.0:1.0:0.12",
-     "baseline": 17,
+     "font": "ttf:narrow:10:0.0:0.88:0.2",
+     "baseline": 18,
      "pages": [
       5
      ],
@@ -258,7 +258,7 @@
      "sprite": "72",
      "text": "OF In",
      "style": "b6_m3_ks_0_26",
-     "font": "ttf:narrow:13:0.0:0.94:0.3",
+     "font": "ttf:rounded:11:0.0:0.94:0.3",
      "baseline": 18,
      "pages": [
       5
@@ -271,8 +271,8 @@
      "sprite": "73",
      "text": "OF Back",
      "style": "b6_m3_ks_0_26_s",
-     "font": "ttf:narrow:8:0.0:1.0:0.12",
-     "baseline": 16,
+     "font": "ttf:narrow:9:0.0:0.88:0.12",
+     "baseline": 17,
      "pages": [
       5
      ],
@@ -284,7 +284,7 @@
      "sprite": "74",
      "text": "Soft Bunt",
      "style": "b6_m3_ks_0_27_s",
-     "font": "ttf:narrow:8:0.0:1.0:0.12",
+     "font": "ttf:narrow:9:0.0:0.88:0.12",
      "baseline": 16,
      "pages": [
       5

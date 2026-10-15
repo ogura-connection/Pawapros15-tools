@@ -1,0 +1,87 @@
+{
+ "arc": "pnbg_sum.arc",
+ "repack": [
+  {
+   "bank": "v2_pbg2",
+   "palette": 2,
+   "style": "a6_pbg_ink",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     32,
+     48
+    ],
+    [
+     1,
+     40,
+     80,
+     128,
+     128
+    ],
+    [
+     1,
+     72,
+     32,
+     128,
+     80
+    ],
+    [
+     1,
+     40,
+     64,
+     56,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      32,
+      48
+     ],
+     "text": "Pennant Race",
+     "style": "a6_pbg2~0_32",
+     "font": "ttf:rounded:20:0.0:0.85:0.45",
+     "baseline": 60,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      40,
+      80,
+      128,
+      128
+     ],
+     "text": "Pennant Race",
+     "style": "a6_pbg2~32_120",
+     "font": "ttf:rounded:20:0.0:0.85:0.45",
+     "baseline": 60,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      72,
+      32,
+      128,
+      80
+     ],
+     "text": "Pennant Race",
+     "style": "a6_pbg2~120_176",
+     "font": "ttf:rounded:20:0.0:0.85:0.45",
+     "baseline": 60,
+     "left": 0
+    }
+   ],
+   "name": "pennant race logo"
+  }
+ ]
+}

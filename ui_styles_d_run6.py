@@ -51,12 +51,27 @@ STYLES["d6_w_sent"] = ringfill([15, 14, 14, 13, 13, 13], [3], [1])            # 
 # ---- pn_tgrow.arc -------------------------------------------------------------------------------------------------------
 # the title banks (s3_phd01, s3_pnd01) draw their 4-bit pages with colour tables the game fills in itself, so the styles are
 # read from the art's palette indices: ramp top to foot, rings inside out, shadow
-STYLES["d6_ph"] = ringfill([3, 10, 9, 7, 6, 6], [13, 12, 12], [1, 1])         # palette 58 (phd01 all, pnd01 07 08)
-STYLES["d6_pn"] = ringfill([14, 14, 13, 11, 10, 5], [1], [])                  # palette 126 (pnd01)
+STYLES["d6_ph"] = None         # palette 58 (phd01 all, pnd01 07 08)
+STYLES["d6_pn"] = None                  # palette 126 (pnd01)
 import ui_type
+
+
+def padded(inner, n=3):
+    """`inner` with n clear rows / columns round it (a plate colour margin where index 0 is drawn)."""
+    def style(ink, base):
+        art, b = inner(ink, base)
+        return np.pad(art, n), b + n
+    return style
+
+
 STYLES["d6_zi"] = ui_type.logo(**{'fill': [51, 207, 186, 173, 139, 51], 'outline': 1, 'white': 255, 'rim': 42, 'shadow': [42, 42], 'soft': [], 'thick': 2, 'band': 2})
 STYLES["d6_faz"] = ui_type.logo(**{'fill': [52, 52, 52, 52, 52, 52], 'outline': 24, 'white': 207, 'rim': 62, 'shadow': [62, 62, 62], 'soft': [], 'thick': 2, 'band': 2})
 STYLES["d6_zi_item"] = ringfill([15, 15, 14, 14, 13, 12], [7, 6], [])         # pal 13: white letters, black ring
-STYLES["d6_zi_head"] = ringfill([1, 1, 1, 2, 2, 2], [3], [9])                 # pal 4: navy letters, light shadow (heading in the panel)
+STYLES["d6_zi_head"] = flat([0, 1, 1, 1, 1, 1, 1], cut=3)                 # pal 4: navy letters, light shadow (heading in the panel)
 STYLES["d6_zi_dt"] = ringfill([15, 15, 15, 14, 14, 14], [3], [1])             # pal 7: dialog title, white letters
 STYLES["d6_zi_blue"] = flat([0, 1, 1, 1, 1, 1, 1], cut=3)                     # pal 5: blue letters on the white dialog
+
+STYLES["d6_ph"] = padded(ringfill([3, 10, 9, 7, 6, 6], [13, 12, 12], [1, 1]))
+STYLES["d6_pn"] = padded(ringfill([14, 14, 13, 11, 10, 5], [1], []))
+STYLES["d6_zi"] = padded(STYLES["d6_zi"])
+STYLES["d6_faz"] = padded(STYLES["d6_faz"])

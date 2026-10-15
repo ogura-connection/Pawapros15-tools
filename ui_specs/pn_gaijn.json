@@ -425,9 +425,9 @@
       24
      ],
      "text": "+",
-     "style": "b6_g3_pg_0_153_s",
-     "font": "ttf:narrow:9:0.0:0.88:0.12",
-     "baseline": 17,
+     "style": "b6_g3_pg_0_153",
+     "font": "ttf:narrow:14:0.0:0.88:0.3",
+     "baseline": 20,
      "centre_x": 12
     },
     {
@@ -439,9 +439,9 @@
       24
      ],
      "text": "more",
-     "style": "b6_g3_pg_0_153_s",
-     "font": "ttf:narrow:9:0.0:0.88:0.12",
-     "baseline": 17,
+     "style": "b6_g3_pg_0_153",
+     "font": "ttf:narrow:14:0.0:0.88:0.3",
+     "baseline": 20,
      "centre_x": 12
     }
    ],

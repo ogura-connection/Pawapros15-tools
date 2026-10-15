@@ -1,0 +1,90 @@
+{
+ "arc": "mbg_2gun.arc",
+ "repack": [
+  {
+   "bank": "v2_bgm01",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     1,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     1,
+     80,
+     96,
+     128,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      96
+     ],
+     "text": "Farm",
+     "style": "c6_bgm_00",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 0,
+     "sprites": [
+      "00"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      96
+     ],
+     "text": "Farm",
+     "style": "c6_bgm_01",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 0,
+     "sprites": [
+      "01"
+     ],
+     "left": 0
+    },
+    {
+     "sprite": "02",
+     "text": "My Life",
+     "style": "c6_v2_bgm01_02",
+     "font": "ttf:rounded:24:0.0:0.92:0.3",
+     "baseline": 28,
+     "pages": [
+      0
+     ]
+    }
+   ],
+   "name": "v2_bgm01",
+   "share": true
+  }
+ ]
+}

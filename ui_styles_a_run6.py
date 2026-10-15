@@ -35,7 +35,7 @@ STYLES["a6_noplayers"] = ringfill([4, 4, 5, 5, 6, 6], [1], [])                  
 STYLES["a6_pts_head"] = ringfill([1, 1, 1, 2, 2, 3], [9, 12], [])                       # pal 120: dark brown letters, tan edge
 
 # ---- h3_ydm_0 (gdt_pn.arc) ----------------------------------------------------------------------------------------------
-STYLES["a6_ydm_item"] = ringfill([15, 15, 15, 15, 15, 14], [2], [4])               # pal 4: white letters, blue ring, navy shadow
+STYLES["a6_ydm_item"] = ringfill([15, 15, 15, 15, 15, 14], [2])                    # pal 4: white letters, one blue ring
 
 import numpy as np
 from ui_styles_ore_ini import _orig_page
@@ -62,7 +62,7 @@ def _flat_bg(inner, bg, H, W, window, vcentre=None):
 
 
 # ---- pnbg_sum.arc / pnbg_fal.arc: the "Pennant Race" logos (white banner, pale ring round white letters) -------------------
-_LOGO = ringfill([15, 15, 15, 15, 15, 15], [8, 6, 4])
+_LOGO = ringfill([15, 15, 15, 15, 15, 15], [8, 6, 4, 3])
 for _name, _W in (("a6_pbg2", 176), ("a6_pbg3", 184)):
     STYLES[_name] = _flat_bg(_LOGO, 15, 48, _W, (0, _W))
 for _c0, _c1 in ((0, 32), (32, 120), (120, 176)):
@@ -139,3 +139,5 @@ def _stamp(ink, base):
 STYLES["a6_pts_stamp"] = _stamp
 
 STYLES["a6_ydm_gold"] = ringfill([11, 10, 9, 5, 4, 3], [2, 13], [15, 15])                # pal 7: gold calligraphy, brown ring, white, lilac shadow
+
+STYLES["a6_pbg_ink"] = _LOGO
