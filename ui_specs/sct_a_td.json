@@ -1,0 +1,524 @@
+{
+ "arc": "sct_a_td.arc",
+ "repack": [],
+ "paint": [
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    0,
+    32,
+    24,
+    56
+   ],
+   "text": "P",
+   "font": "ttf:rounded:15:0.0:1.0:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_p_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    24,
+    32,
+    48,
+    56
+   ],
+   "text": "C",
+   "font": "ttf:rounded:15:0.0:1.0:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_c_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    48,
+    32,
+    72,
+    56
+   ],
+   "text": "1B",
+   "font": "ttf:rounded:15:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_1b_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    72,
+    32,
+    96,
+    56
+   ],
+   "text": "2B",
+   "font": "ttf:rounded:15:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_2b_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    96,
+    32,
+    120,
+    56
+   ],
+   "text": "3B",
+   "font": "ttf:rounded:15:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_3b_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    16,
+    56,
+    40,
+    80
+   ],
+   "text": "OF",
+   "font": "ttf:rounded:15:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_of_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    40,
+    56,
+    64,
+    80
+   ],
+   "text": "All",
+   "font": "ttf:rounded:15:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_allr_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    64,
+    56,
+    88,
+    80
+   ],
+   "text": "All",
+   "font": "ttf:rounded:15:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_allc_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    88,
+    56,
+    112,
+    80
+   ],
+   "text": "3rd",
+   "font": "ttf:rounded:13:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_3rd_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    8,
+    80,
+    32,
+    104
+   ],
+   "text": "1st",
+   "font": "ttf:narrow:15:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_1st_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    120,
+    32,
+    128,
+    56
+   ],
+   "text": "SS",
+   "font": "ttf:rounded:15:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_ss_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    0,
+    56,
+    16,
+    80
+   ],
+   "text": "SS",
+   "font": "ttf:rounded:15:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_ss_1"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    112,
+    56,
+    128,
+    80
+   ],
+   "text": "2nd",
+   "font": "ttf:narrow:13:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_2nd_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    0,
+    80,
+    8,
+    104
+   ],
+   "text": "2nd",
+   "font": "ttf:narrow:13:0.0:0.92:0.3",
+   "copy": "clear",
+   "style": "c4_td_t_2nd_1"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    0,
+    104,
+    56,
+    128
+   ],
+   "text": "=Win",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_l_win_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 1,
+   "rect": [
+    56,
+    104,
+    128,
+    128
+   ],
+   "text": "=Mercy Win",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_l_mercy_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    24,
+    24
+   ],
+   "text": "=Mercy Win",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_l_mercy_1"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 2,
+   "rect": [
+    24,
+    0,
+    96,
+    24
+   ],
+   "text": "=Draw",
+   "font": "ttf:rounded:12:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_l_draw_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 2,
+   "rect": [
+    96,
+    0,
+    128,
+    24
+   ],
+   "text": "=Loss",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_l_loss_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 2,
+   "rect": [
+    0,
+    24,
+    24,
+    48
+   ],
+   "text": "=Loss",
+   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_l_loss_1"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 2,
+   "rect": [
+    24,
+    24,
+    64,
+    48
+   ],
+   "text": "Scrim",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_g_scrim_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 4,
+   "rect": [
+    0,
+    64,
+    40,
+    88
+   ],
+   "text": "Pref.",
+   "font": "ttf:rounded:12:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_g_pref1_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 4,
+   "rect": [
+    40,
+    64,
+    80,
+    88
+   ],
+   "text": "Pref.",
+   "font": "ttf:rounded:12:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_g_pref2_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 4,
+   "rect": [
+    80,
+    64,
+    120,
+    88
+   ],
+   "text": "Pref.",
+   "font": "ttf:rounded:12:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_g_pref3_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 4,
+   "rect": [
+    0,
+    88,
+    40,
+    112
+   ],
+   "text": "Pref.",
+   "font": "ttf:rounded:12:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_g_pref4_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 4,
+   "rect": [
+    40,
+    88,
+    80,
+    112
+   ],
+   "text": "Dist.",
+   "font": "ttf:rounded:12:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_g_dist_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 4,
+   "rect": [
+    80,
+    88,
+    120,
+    112
+   ],
+   "text": "Koshien",
+   "font": "ttf:narrow:8:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_g_kosh_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 6,
+   "rect": [
+    0,
+    0,
+    88,
+    32
+   ],
+   "text": "District Tourney",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_dist_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 6,
+   "rect": [
+    0,
+    32,
+    112,
+    64
+   ],
+   "text": "Spring Koshien",
+   "font": "ttf:rounded:12:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_spring_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 6,
+   "rect": [
+    0,
+    64,
+    112,
+    96
+   ],
+   "text": "Summer Koshien",
+   "font": "ttf:rounded:11:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_summer_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 2,
+   "rect": [
+    88,
+    48,
+    128,
+    88
+   ],
+   "text": "Played",
+   "font": "ttf:rounded:9:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_played_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 2,
+   "rect": [
+    88,
+    88,
+    128,
+    128
+   ],
+   "text": "Won",
+   "font": "ttf:rounded:14:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_won_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 6,
+   "rect": [
+    88,
+    0,
+    112,
+    32
+   ],
+   "text": "x",
+   "font": "ttf:rounded:16:0.0:1.0:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_x_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 7,
+   "rect": [
+    0,
+    48,
+    80,
+    72
+   ],
+   "text": "Equipment & Facilities",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_equip_0"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 7,
+   "rect": [
+    80,
+    48,
+    88,
+    72
+   ],
+   "text": "Equipment & Facilities",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_equip_1"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 7,
+   "rect": [
+    88,
+    48,
+    128,
+    72
+   ],
+   "text": "Equipment & Facilities",
+   "font": "ttf:rounded:10:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_equip_2"
+  },
+  {
+   "bank": "z4_edt_0",
+   "page": 7,
+   "rect": [
+    32,
+    96,
+    128,
+    120
+   ],
+   "text": "Field",
+   "font": "ttf:rounded:14:0.0:1.0:0.3",
+   "copy": "clear",
+   "style": "c4_td_s_field_0"
+  }
+ ]
+}

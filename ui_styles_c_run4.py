@@ -335,3 +335,102 @@ def _es_style(cap, cx, c0, c1):
 for _l, (_t, _parts, _cx) in ES.items():
     for _k, (_pg, _r, _x) in enumerate(_parts):
         STYLES["c4_es_%s_%d" % (_l, _k)] = _es_style(ES_FONT[0], _cx, _x, _x + _r[2] - _r[0])
+
+# ---- sct_a_td.arc z4_edt_0 (Eikan Nine tournament record) ---------------------------------------------------------------------
+STYLES["c4_td_blk"] = ringfill([15, 15, 15, 15, 15, 15], [0], [])                              # table cells: black letters on the cell colours (no ring)
+STYLES["c4_td_leg"] = ringfill([8, 8, 8, 8, 8, 8], [1], [14, 15])                              # pal 40: white letters, black ring, blue shadow
+STYLES["c4_td_tag"] = ringfill([15, 15, 15, 15, 15, 14], [4], [])                               # tags: white letters, dark ring (ring 4 of the plate colour)
+STYLES["c4_td_17"] = ringfill([1, 1, 1, 1, 1, 1], [15, 15], [8])                                # pal 52: black letters, white ring
+STYLES["c4_td_18"] = ringfill([8, 7, 6, 5, 4, 3], [15, 15], [1])                                # pal 54: blue letters, white ring
+STYLES["c4_td_1a"] = ringfill([8, 7, 6, 5, 4, 3], [15, 15], [1])                                # pal 55: green letters, white ring
+STYLES["c4_td_2d"] = ringfill([1, 1, 1, 1, 1, 1], [15, 15], [8])                                # pal 46: black letters, white ring
+STYLES["c4_td_38"] = ringfill([2, 3, 5, 6, 8, 9], [15, 15], [11, 10])                           # pal 47: blue to violet letters, white ring
+
+# in-place words: (key, [(page, rectangle, x of the piece in the word)], word width, height, style, mode, span of the English, English, cap, squeeze, face)
+# mode: ("clear",) the rectangle is emptied; ("plate", i) every pixel of the plate becomes colour i; ("keep_to", k) columns < k of the word stay (a
+# symbol); ("erase_to", k) columns < k are emptied (the rest stays). The word is centred in `span` and cut over its pieces like the Japanese.
+TD = [
+    ('t_p', [(1, [0, 32, 24, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'P', 15, 1.0, 'rounded'),
+    ('t_c', [(1, [24, 32, 48, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'C', 15, 1.0, 'rounded'),
+    ('t_1b', [(1, [48, 32, 72, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '1B', 15, 0.92, 'rounded'),
+    ('t_2b', [(1, [72, 32, 96, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '2B', 15, 0.92, 'rounded'),
+    ('t_3b', [(1, [96, 32, 120, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '3B', 15, 0.92, 'rounded'),
+    ('t_of', [(1, [16, 56, 40, 80], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'OF', 15, 0.85, 'rounded'),
+    ('t_allr', [(1, [40, 56, 64, 80], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'All', 15, 0.92, 'rounded'),
+    ('t_allc', [(1, [64, 56, 88, 80], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'All', 15, 0.92, 'rounded'),
+    ('t_3rd', [(1, [88, 56, 112, 80], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '3rd', 13, 0.85, 'rounded'),
+    ('t_1st', [(1, [8, 80, 32, 104], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '1st', 15, 0.92, 'narrow'),
+    ('t_ss', [(1, [120, 32, 128, 56], 0), (1, [0, 56, 16, 80], 8)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'SS', 15, 0.85, 'rounded'),
+    ('t_2nd', [(1, [112, 56, 128, 80], 0), (1, [0, 80, 8, 104], 16)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '2nd', 13, 0.92, 'narrow'),
+    ('l_win', [(1, [0, 104, 56, 128], 0)], 56, 24, 'c4_td_leg', ('keep_to', 23), (23, 56), '=Win', 10, 0.85, 'rounded'),
+    ('l_mercy', [(1, [56, 104, 128, 128], 0), (2, [0, 0, 24, 24], 72)], 96, 24, 'c4_td_leg', ('keep_to', 23), (23, 96), '=Mercy Win', 10, 0.85, 'rounded'),
+    ('l_draw', [(2, [24, 0, 96, 24], 0)], 72, 24, 'c4_td_leg', ('keep_to', 23), (23, 72), '=Draw', 12, 0.85, 'rounded'),
+    ('l_loss', [(2, [96, 0, 128, 24], 0), (2, [0, 24, 24, 48], 32)], 56, 24, 'c4_td_leg', ('keep_to', 23), (23, 56), '=Loss', 8, 0.85, 'rounded'),
+    ('g_scrim', [(2, [24, 24, 64, 48], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Scrim', 9, 0.85, 'rounded'),
+    ('g_pref1', [(4, [0, 64, 40, 88], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Pref.', 12, 0.85, 'rounded'),
+    ('g_pref2', [(4, [40, 64, 80, 88], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Pref.', 12, 0.85, 'rounded'),
+    ('g_pref3', [(4, [80, 64, 120, 88], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Pref.', 12, 0.85, 'rounded'),
+    ('g_pref4', [(4, [0, 88, 40, 112], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Pref.', 12, 0.85, 'rounded'),
+    ('g_dist', [(4, [40, 88, 80, 112], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Dist.', 12, 0.85, 'rounded'),
+    ('g_kosh', [(4, [80, 88, 120, 112], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Koshien', 8, 0.85, 'narrow'),
+    ('s_dist', [(6, [0, 0, 88, 32], 0)], 88, 32, 'c4_td_17', ('clear',), (0, 88), 'District Tourney', 9, 0.85, 'rounded'),
+    ('s_spring', [(6, [0, 32, 112, 64], 0)], 112, 32, 'c4_td_17', ('clear',), (0, 112), 'Spring Koshien', 12, 0.85, 'rounded'),
+    ('s_summer', [(6, [0, 64, 112, 96], 0)], 112, 32, 'c4_td_17', ('clear',), (0, 112), 'Summer Koshien', 11, 0.85, 'rounded'),
+    ('s_played', [(2, [88, 48, 128, 88], 0)], 40, 40, 'c4_td_18', ('clear',), (0, 40), 'Played', 9, 0.85, 'rounded'),
+    ('s_won', [(2, [88, 88, 128, 128], 0)], 40, 40, 'c4_td_1a', ('clear',), (0, 40), 'Won', 14, 0.85, 'rounded'),
+    ('s_x', [(6, [88, 0, 112, 32], 0)], 24, 32, 'c4_td_17', ('clear',), (0, 24), 'x', 16, 1.0, 'rounded'),
+    ('s_equip', [(7, [0, 48, 80, 72], 0), (7, [80, 48, 88, 72], 80), (7, [88, 48, 128, 72], 90)], 130, 24, 'c4_td_2d', ('clear',), (0, 130), 'Equipment & Facilities', 10, 0.85, 'rounded'),
+    ('s_field', [(7, [32, 96, 128, 120], 0)], 96, 24, 'c4_td_38', ('erase_to', 59), (0, 59), 'Field', 14, 1.0, 'rounded'),
+]
+_TD_ORIG = {}
+
+
+def _td_orig(page, rect):
+    import sys, os
+    here = os.path.dirname(os.path.abspath(__file__))
+    q = os.path.join(here, "_work", "ui_pages")
+    if q not in sys.path:
+        sys.path.append(q)
+    if "b" not in _TD_ORIG:
+        import gen_c_lib as G
+        _TD_ORIG["b"] = G.Arc("sct_a_td.arc").bank("z4_edt_0")
+    x0, y0, x1, y1 = rect
+    return _TD_ORIG["b"].page(page)[y0:y1, x0:x1]
+
+
+def _td_style(key, k, page, rect, wx, W, H, style, mode, span, cap):
+    inner = STYLES[style]
+
+    def style_fn(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        x0, y0, x1, y1 = rect
+        w_piece = x1 - x0
+        orig = _td_orig(page, rect)
+        cols = np.arange(w_piece) + wx
+        if mode[0] == "clear":
+            out = np.zeros_like(orig)
+        elif mode[0] == "plate":
+            out = np.where(orig > 0, mode[1], 0).astype(np.uint8)
+        elif mode[0] == "keep_to":
+            out = orig.copy()
+            out[:, cols >= mode[1]] = 0
+        else:
+            out = orig.copy()
+            out[:, cols < mode[1]] = 0
+        h, w = art.shape
+        a0, a1 = span
+        ax = a0 + (a1 - a0 - w) // 2 - wx
+        ay = int(round((H - 1) / 2.0 + cap / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y, ax + x
+            if 0 <= yy < out.shape[0] and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style_fn
+
+
+for _e in TD:
+    for _k, (_pg, _r, _wx) in enumerate(_e[1]):
+        STYLES["c4_td_%s_%d" % (_e[0], _k)] = _td_style(_e[0], _k, _pg, _r, _wx, _e[2], _e[3], _e[4], _e[5], _e[6], _e[8])
