@@ -60,8 +60,7 @@ def flat(ramp, cut=1):
 
 
 # m4_stt00 menu buttons (palettes 17-25): coloured letters, white ring, dark blue shadow cast down and right
-for _pal, _fill in {17: [5, 5, 5, 5, 7], 18: [5, 5, 5, 5, 7], 19: [3, 3, 3, 3, 6], 20: [3, 3, 5, 5, 6], 21: [4, 4, 4, 6, 7],
-                    22: [5, 5, 5, 6, 8], 23: [4, 4, 4, 4, 6], 24: [1, 1, 1, 3, 6], 25: [2, 2, 2, 4, 6]}.items():
+for _pal, _fill in {17: [5], 18: [5], 19: [3], 20: [3], 21: [4], 22: [5], 23: [4], 24: [1], 25: [2]}.items():
     STYLES["a_btn%d" % _pal] = ringfill(_fill, [14, 14], [3, 2, 1])
 # thin black pixel-font items: m4_stt00 (palette 5, cream), y5_sss_0 (palette 32, grey ramp), tags on the tan tabs (palette 19)
 STYLES["a_thin5"] = flat([0, 7, 5, 3, 2, 1, 1])

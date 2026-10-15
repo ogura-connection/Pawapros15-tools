@@ -105,16 +105,16 @@ class _Words(dict):
         return out, base_last - ys.min()
 
 
+def _font(name):
+    words = _Words(name[2:])
+    return lambda project=None: {"words": words}
+
+
 class _Fonts(dict):
     def __missing__(self, name):
         if name.startswith("d:"):
-            words = _Words(name[2:])
-            return lambda project=None: {"words": words}
+            return _font(name)
         raise KeyError(name)
-
-
-if not isinstance(ui_type.FONTS, _Fonts):
-    ui_type.FONTS = _Fonts(ui_type.FONTS)
 
 
 def dfont(face, cap, squeeze=1.0, bold=0.4, pitch=0):
@@ -182,7 +182,8 @@ STYLES["d2_st_school"] = ringfill([3, 2, 2], [15, 14], [])                      
 STYLES["d2_st_head"] = ringfill([13, 12, 12, 10], [2, 2], [])                                 # palette 5: yellow letters, navy outline
 STYLES["d2_st_single"] = ringfill([2, 3], [15], [9])                                           # palette 18: navy letters, white edge
 
-# ==== registry (keep last): the cut styles are made on demand; ui_type's loader updates RENDER only after this file is imported, so STYLES is merged here
+
+# ==== registry (keep last) ============================================================================================================
 
 # ---- "cut" styles: a label drawn on a canvas the size of the Japanese art, and one piece of it --------------------------------
 # "cut:<style>:<W>:<H>:<ax>:<ay>:<x>:<y>:<w>:<h>": the styled art is laid on a W x H canvas (ax = left column, or c for centred;
@@ -204,17 +205,54 @@ def _cut(base, W, H, ax, ay, x, y, w, h):
     return style
 
 
+def _cut_style(name, table):
+    a = name.split(":")
+    return _cut(table[a[1]], int(a[2]), int(a[3]), a[4], a[5], int(a[6]), int(a[7]), int(a[8]), int(a[9]))
+
+
 class _Styles(dict):
     def __missing__(self, name):
         if name.startswith("cut:"):
-            a = name.split(":")
-            st = _cut(self[a[1]], int(a[2]), int(a[3]), a[4], a[5], int(a[6]), int(a[7]), int(a[8]), int(a[9]))
-            self[name] = st
+            st = self[name] = _cut_style(name, self)
             return st
         raise KeyError(name)
 
 
 
 
-if not isinstance(ui_type.RENDER, _Styles):
-    ui_type.RENDER = _Styles(dict(ui_type.RENDER, **STYLES))
+
+def enable_lazy():
+    """For the generators: styles "cut:..." and fonts "d:..." are made on first use. (The files that use them are written as specs, and
+    _register below makes them known when ui_type is imported, so nothing is replaced in ui_type for anyone else.)"""
+    if not isinstance(ui_type.RENDER, _Styles):
+        ui_type.RENDER = _Styles(dict(ui_type.RENDER, **STYLES))
+    if not isinstance(ui_type.FONTS, _Fonts):
+        ui_type.FONTS = _Fonts(ui_type.FONTS)
+
+
+def _register():
+    """Every "cut:" style and "d:" font a spec of this run uses is registered as a plain entry (ui_type loads this file before it
+    applies a spec)."""
+    import json, os
+    here = os.path.dirname(os.path.abspath(__file__))
+    for stem in ("scs_grad", "scs_titl", "scs_open", "scs_intr", "orihen"):
+        path = os.path.join(here, "ui_specs", stem + ".json")
+        if not os.path.exists(path):
+            continue
+        try:
+            spec = json.load(open(path))
+        except Exception:
+            continue
+        for g in spec.get("repack", ()):
+            for lab in g.get("labels", ()) + [g]:
+                st, font = lab.get("style"), lab.get("font")
+                if isinstance(st, str) and st.startswith("cut:") and st not in STYLES:
+                    try:
+                        STYLES[st] = _cut_style(st, STYLES)
+                    except KeyError:
+                        pass
+                if isinstance(font, str) and font.startswith("d:") and font not in ui_type.FONTS:
+                    ui_type.FONTS[font] = _font(font)
+
+
+_register()
