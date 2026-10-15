@@ -95,3 +95,8 @@ STYLES["b3_plate39"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])]
 STYLES["b3_team51"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])])
 STYLES["b3_team52"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])])
 STYLES["b3_team53"] = stack(_WHITE, [("ring", [4]), ("ring", [3]), ("se", [2])])
+
+# ---- words shown by two parts that stand side by side: the left 128 columns, the rest (ui_type: "<style>~<c0>_<c1>")
+for _name in ("b3_title", "b3_head1", "b3_head2"):
+    STYLES[_name + "~0_128"] = win(STYLES[_name], 0, 128)
+    STYLES[_name + "~128_4096"] = win(STYLES[_name], 128, 4096)

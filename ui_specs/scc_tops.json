@@ -1,0 +1,408 @@
+{
+ "arc": "scc_tops.arc",
+ "repack": [
+  {
+   "bank": "z4_li_0",
+   "palette": 0,
+   "style": "b3_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.35",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Linked World",
+     "style": "b3_title~0_128",
+     "font": "ttf:rounded:29:0.0:0.94:0.7",
+     "baseline": 44,
+     "left": 1
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      128,
+      128
+     ],
+     "text": "Linked World",
+     "style": "b3_title~128_4096",
+     "font": "ttf:rounded:29:0.0:0.94:0.7",
+     "baseline": 44,
+     "left": 1
+    }
+   ],
+   "name": "title (page 0)",
+   "split": true
+  },
+  {
+   "bank": "z4_li_0",
+   "palette": 0,
+   "style": "b3_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.35",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      48
+     ],
+     "text": "Hakkyu Dream Village",
+     "style": "b3_head1~0_128",
+     "font": "ttf:rounded:17:0.0:0.95:0.4",
+     "baseline": 27,
+     "left": 12
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      128,
+      96
+     ],
+     "text": "Hakkyu Dream Village",
+     "style": "b3_head1~128_4096",
+     "font": "ttf:rounded:17:0.0:0.95:0.4",
+     "baseline": 27,
+     "left": 12
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Eikan Nine Village",
+     "style": "b3_head2~0_128",
+     "font": "ttf:rounded:17:0.0:0.95:0.4",
+     "baseline": 30,
+     "left": 24
+    },
+    {
+     "from": [
+      2,
+      0,
+      16,
+      120,
+      64
+     ],
+     "text": "Eikan Nine Village",
+     "style": "b3_head2~128_4096",
+     "font": "ttf:rounded:17:0.0:0.95:0.4",
+     "baseline": 30,
+     "left": 24
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      16
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      128,
+      112
+     ],
+     "text": "Townsfolk",
+     "style": "b3_head3",
+     "font": "ttf:rounded:17:0.0:0.95:0.4",
+     "baseline": 32
+    }
+   ],
+   "name": "buttons (pages 1, 2)",
+   "split": true
+  },
+  {
+   "bank": "z4_li_0",
+   "palette": 0,
+   "style": "b3_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.35",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     64,
+     120,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      0,
+      64,
+      120,
+      96
+     ],
+     "text": ":Player Details",
+     "style": "b3_legend",
+     "font": "ttf:rounded:12:0.0:0.97:0.3",
+     "baseline": 22,
+     "left": 1
+    }
+   ],
+   "name": "legend (page 5)",
+   "split": true
+  },
+  {
+   "bank": "z4_li_0",
+   "palette": 0,
+   "style": "b3_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.35",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     0,
+     0,
+     64,
+     24
+    ],
+    [
+     8,
+     96,
+     24,
+     128,
+     48
+    ],
+    [
+     8,
+     104,
+     96,
+     128,
+     128
+    ],
+    [
+     8,
+     120,
+     72,
+     128,
+     96
+    ],
+    [
+     9,
+     0,
+     48,
+     128,
+     88
+    ],
+    [
+     9,
+     80,
+     0,
+     128,
+     48
+    ],
+    [
+     9,
+     0,
+     88,
+     8,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      8,
+      0,
+      0,
+      32,
+      24
+     ],
+     "text": "Pro Yr",
+     "style": "b3_plate35",
+     "font": "ttf:rounded:10:0.0:0.9:0.35",
+     "baseline": 17,
+     "left": -4
+    },
+    {
+     "from": [
+      8,
+      32,
+      0,
+      64,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      96,
+      24,
+      128,
+      48
+     ],
+     "text": "Grad",
+     "style": "b3_plate39",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 18,
+     "left": -10,
+     "sprites": [
+      "1d"
+     ]
+    },
+    {
+     "from": [
+      8,
+      96,
+      24,
+      128,
+      48
+     ],
+     "empty": true,
+     "sprites": [
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      9,
+      80,
+      0,
+      128,
+      24
+     ],
+     "text": "Grad",
+     "style": "b3_plate39",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 19,
+     "left": 7,
+     "sprites": [
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      9,
+      0,
+      72,
+      64,
+      88
+     ],
+     "text": "Pawafuru",
+     "style": "b3_team51",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 18,
+     "left": -4
+    },
+    {
+     "from": [
+      9,
+      64,
+      80,
+      128,
+      88
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      9,
+      80,
+      24,
+      104,
+      48
+     ],
+     "text": "Kagurazaka",
+     "style": "b3_team52",
+     "font": "ttf:rounded:10:0.0:0.9:0.35",
+     "baseline": 18,
+     "left": -3
+    },
+    {
+     "from": [
+      9,
+      104,
+      24,
+      128,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      9,
+      24,
+      48,
+      48,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      9,
+      48,
+      48,
+      128,
+      72
+     ],
+     "text": "Phoenix",
+     "style": "b3_team53",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 18,
+     "left": 9
+    },
+    {
+     "from": [
+      9,
+      0,
+      48,
+      24,
+      72
+     ],
+     "empty": true
+    }
+   ],
+   "name": "small plates (pages 8, 9)",
+   "split": true
+  }
+ ]
+}
