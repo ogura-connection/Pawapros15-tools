@@ -416,69 +416,542 @@
   },
   {
    "bank": "m3_stu",
-   "palette": 7,
-   "style": "d2_st_r2",
+   "palette": 11,
+   "style": "d2_st_tag",
    "font": "ttf:rounded:14:0.0:1.0:0.25",
    "under": 3,
    "areas": [
     [
+     8,
+     0,
+     80,
+     93,
+     95
+    ],
+    [
+     26,
+     0,
+     104,
+     86,
+     127
+    ],
+    [
+     8,
+     0,
+     96,
+     86,
+     116
+    ],
+    [
+     2,
+     0,
+     0,
+     83,
+     21
+    ],
+    [
+     2,
+     0,
+     22,
+     83,
+     40
+    ],
+    [
+     2,
+     0,
+     41,
+     78,
+     60
+    ],
+    [
+     4,
+     0,
+     88,
+     68,
+     108
+    ],
+    [
+     1,
+     64,
+     64,
+     126,
+     84
+    ],
+    [
+     4,
+     0,
+     109,
+     62,
+     127
+    ],
+    [
+     1,
+     64,
+     85,
+     123,
+     102
+    ],
+    [
+     1,
+     64,
+     103,
+     121,
+     118
+    ],
+    [
+     2,
+     0,
+     61,
+     56,
+     81
+    ],
+    [
+     2,
+     57,
+     61,
+     113,
+     77
+    ],
+    [
+     4,
+     72,
+     0,
+     127,
+     20
+    ],
+    [
+     4,
+     72,
+     21,
+     126,
+     40
+    ],
+    [
+     4,
+     72,
+     41,
+     125,
+     60
+    ],
+    [
+     4,
+     72,
+     61,
+     124,
+     79
+    ],
+    [
+     4,
+     72,
+     80,
+     123,
+     98
+    ],
+    [
+     4,
+     72,
+     99,
+     122,
+     119
+    ],
+    [
+     5,
+     0,
+     0,
+     50,
+     20
+    ],
+    [
+     5,
+     51,
+     0,
+     100,
+     18
+    ],
+    [
+     5,
+     51,
+     19,
+     100,
+     37
+    ],
+    [
+     2,
+     79,
+     41,
+     127,
+     59
+    ],
+    [
+     2,
+     57,
+     78,
+     105,
+     93
+    ],
+    [
+     34,
+     80,
+     0,
+     127,
+     18
+    ],
+    [
+     34,
+     80,
+     19,
+     127,
+     37
+    ],
+    [
+     34,
+     80,
+     38,
+     127,
+     56
+    ],
+    [
+     34,
+     80,
+     57,
+     127,
+     72
+    ],
+    [
+     5,
+     0,
+     21,
+     46,
+     39
+    ],
+    [
+     5,
+     47,
+     38,
+     93,
+     56
+    ],
+    [
+     5,
+     0,
+     40,
+     45,
+     54
+    ],
+    [
+     5,
+     0,
+     55,
+     45,
+     69
+    ],
+    [
+     2,
+     84,
+     0,
+     126,
+     20
+    ],
+    [
+     5,
+     0,
+     70,
+     42,
+     90
+    ],
+    [
+     5,
+     0,
+     91,
+     42,
+     111
+    ],
+    [
+     5,
+     43,
+     70,
+     85,
+     90
+    ],
+    [
+     2,
+     84,
+     21,
+     126,
+     39
+    ],
+    [
+     5,
+     86,
+     57,
+     126,
+     89
+    ],
+    [
+     26,
+     87,
+     104,
+     127,
+     123
+    ],
+    [
+     5,
+     86,
+     90,
+     126,
+     109
+    ],
+    [
      2,
      0,
      96,
-     40,
-     128
+     32,
+     120
     ],
     [
-     1,
-     64,
-     64,
-     96,
-     88
+     34,
+     0,
+     0,
+     32,
+     24
     ],
     [
-     1,
-     96,
-     64,
-     128,
-     88
+     34,
+     0,
+     25,
+     32,
+     49
     ],
     [
-     1,
-     64,
+     3,
      88,
-     96,
-     112
+     0,
+     120,
+     24
     ],
     [
-     1,
-     96,
+     3,
      88,
-     128,
-     112
+     25,
+     120,
+     49
+    ],
+    [
+     3,
+     88,
+     50,
+     120,
+     74
     ],
     [
      5,
      0,
-     96,
+     112,
      32,
-     120
+     127
+    ],
+    [
+     7,
+     96,
+     112,
+     127,
+     127
     ],
     [
      5,
-     32,
-     96,
+     46,
+     57,
      64,
-     120
+     69
     ],
     [
-     11,
+     2,
+     106,
+     78,
+     123,
+     94
+    ],
+    [
+     5,
+     33,
      112,
-     112,
-     128,
-     128
+     49,
+     127
+    ],
+    [
+     4,
+     123,
+     99,
+     127,
+     103
+    ],
+    [
+     8,
+     94,
+     80,
+     95,
+     81
+    ],
+    [
+     8,
+     94,
+     82,
+     95,
+     83
+    ],
+    [
+     8,
+     94,
+     84,
+     95,
+     85
+    ],
+    [
+     8,
+     94,
+     86,
+     95,
+     87
+    ],
+    [
+     8,
+     94,
+     88,
+     95,
+     89
+    ],
+    [
+     8,
+     94,
+     90,
+     95,
+     91
+    ],
+    [
+     8,
+     94,
+     92,
+     95,
+     93
+    ],
+    [
+     8,
+     94,
+     94,
+     95,
+     95
+    ],
+    [
+     4,
+     126,
+     41,
+     127,
+     42
+    ],
+    [
+     4,
+     126,
+     43,
+     127,
+     44
+    ],
+    [
+     4,
+     126,
+     45,
+     127,
+     46
+    ],
+    [
+     4,
+     126,
+     47,
+     127,
+     48
+    ],
+    [
+     4,
+     126,
+     49,
+     127,
+     50
+    ],
+    [
+     4,
+     126,
+     51,
+     127,
+     52
+    ],
+    [
+     4,
+     126,
+     53,
+     127,
+     54
     ]
    ],
    "labels": [
+    {
+     "from": [
+      8,
+      80,
+      96,
+      104,
+      112
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      0,
+      112,
+      24,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      24,
+      112,
+      48,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      48,
+      112,
+      56,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      56,
+      112,
+      64,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      64,
+      112,
+      72,
+      128
+     ],
+     "empty": true
+    },
     {
      "from": [
       2,
@@ -576,258 +1049,16 @@
      "font": "d:narrow:15:1.0:0.5:0",
      "baseline": 24,
      "left": 0
-    }
-   ],
-   "name": "ranks"
-  },
-  {
-   "bank": "m3_stu",
-   "palette": 11,
-   "style": "d2_st_tag",
-   "font": "ttf:rounded:14:0.0:1.0:0.25",
-   "under": 3,
-   "areas": [
-    [
-     2,
-     0,
-     0,
-     128,
-     96
-    ],
-    [
-     3,
-     88,
-     0,
-     128,
-     128
-    ],
-    [
-     3,
-     0,
-     56,
-     88,
-     64
-    ],
-    [
-     3,
-     0,
-     120,
-     88,
-     128
-    ],
-    [
-     3,
-     80,
-     64,
-     88,
-     120
-    ],
-    [
-     4,
-     72,
-     0,
-     128,
-     128
-    ],
-    [
-     4,
-     0,
-     88,
-     72,
-     128
-    ],
-    [
-     5,
-     0,
-     0,
-     128,
-     96
-    ],
-    [
-     5,
-     64,
-     96,
-     128,
-     128
-    ],
-    [
-     5,
-     0,
-     120,
-     64,
-     128
-    ],
-    [
-     7,
-     112,
-     0,
-     128,
-     64
-    ],
-    [
-     7,
-     96,
-     112,
-     128,
-     128
-    ],
-    [
-     8,
-     0,
-     80,
-     96,
-     128
-    ],
-    [
-     8,
-     104,
-     96,
-     128,
-     128
-    ],
-    [
-     8,
-     96,
-     104,
-     104,
-     128
-    ],
-    [
-     8,
-     96,
-     80,
-     104,
-     96
-    ],
-    [
-     25,
-     104,
-     0,
-     128,
-     128
-    ],
-    [
-     26,
-     0,
-     104,
-     128,
-     128
-    ],
-    [
-     34,
-     80,
-     0,
-     128,
-     80
-    ],
-    [
-     34,
-     0,
-     0,
-     40,
-     72
-    ],
-    [
-     34,
-     80,
-     88,
-     112,
-     120
-    ],
-    [
-     34,
-     40,
-     48,
-     80,
-     72
-    ],
-    [
-     34,
-     64,
-     72,
-     80,
-     80
-    ],
-    [
-     11,
-     112,
-     112,
-     128,
-     128
-    ]
-   ],
-   "labels": [
-    {
-     "from": [
-      8,
-      80,
-      96,
-      104,
-      112
-     ],
-     "empty": true
-    },
-    {
-     "from": [
-      8,
-      0,
-      112,
-      24,
-      128
-     ],
-     "empty": true
-    },
-    {
-     "from": [
-      8,
-      24,
-      112,
-      48,
-      128
-     ],
-     "empty": true
-    },
-    {
-     "from": [
-      8,
-      48,
-      112,
-      56,
-      128
-     ],
-     "empty": true
-    },
-    {
-     "from": [
-      8,
-      56,
-      112,
-      64,
-      128
-     ],
-     "empty": true
-    },
-    {
-     "from": [
-      8,
-      64,
-      112,
-      72,
-      128
-     ],
-     "empty": true
     },
     {
      "sprite": "0e",
      "text": "Strength",
      "style": "d2_st_tag",
-     "font": "d:narrow:10:1.0:0.35:0",
+     "font": "d:narrow:10:0.92:0.35:0",
      "palettes": [
       11
      ],
-     "slices": true,
-     "slice_width": 25,
-     "dy": 2
+     "baseline": 16
     },
     {
      "sprite": "0f",
@@ -847,9 +1078,7 @@
      "palettes": [
       11
      ],
-     "slices": true,
-     "slice_width": 25,
-     "dy": 2
+     "baseline": 16
     },
     {
      "sprite": "11",
@@ -865,7 +1094,7 @@
      "sprite": "12",
      "text": "Mentality",
      "style": "d2_st_tag",
-     "font": "d:narrow:10:1.0:0.35:0",
+     "font": "d:narrow:10:0.92:0.35:0",
      "palettes": [
       11
      ],
@@ -895,7 +1124,7 @@
      "sprite": "15",
      "text": "Breaking",
      "style": "d2_st_tag",
-     "font": "d:narrow:10:1.0:0.35:0",
+     "font": "d:narrow:10:0.92:0.35:0",
      "palettes": [
       11
      ],
@@ -929,9 +1158,7 @@
      "palettes": [
       23
      ],
-     "slices": true,
-     "slice_width": 6,
-     "dy": 2,
+     "baseline": 18,
      "centre_x": 16
     },
     {
@@ -957,86 +1184,76 @@
     {
      "sprite": "28",
      "text": "District Tourney",
-     "style": "d2_st_res",
+     "style": "d2_st_res1",
      "font": "d:narrow:9:0.78:0.4:0",
      "palettes": [
       23
      ],
      "slices": true,
-     "slice_width": 33,
-     "dy": 1,
+     "slice_width": 32,
+     "dy": 2,
      "centre_x": 36
     },
     {
      "sprite": "29",
      "text": "Koshien",
-     "style": "d2_st_res",
-     "font": "d:narrow:14:1.0:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:12:1.0:0.4:0",
      "palettes": [
       23
      ],
-     "slices": true,
-     "slice_width": 23,
-     "dy": 1,
+     "baseline": 18,
      "centre_x": 36
     },
     {
      "sprite": "62",
      "text": "Pref. Tourney",
-     "style": "d2_st_res",
-     "font": "d:narrow:11:0.78:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:10:0.78:0.4:0",
      "palettes": [
       23
      ],
-     "slices": true,
-     "slice_width": 34,
-     "dy": 3,
+     "baseline": 17,
      "centre_x": 36
     },
     {
      "sprite": "63",
      "text": "Pref. Tourney",
-     "style": "d2_st_res",
-     "font": "d:narrow:11:0.78:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:10:0.78:0.4:0",
      "palettes": [
       23
      ],
-     "slices": true,
-     "slice_width": 34,
-     "dy": 3,
+     "baseline": 17,
      "centre_x": 36
     },
     {
      "sprite": "64",
      "text": "Pref. Tourney",
-     "style": "d2_st_res",
-     "font": "d:narrow:11:0.78:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:10:0.78:0.4:0",
      "palettes": [
       23
      ],
-     "slices": true,
-     "slice_width": 34,
-     "dy": 3,
+     "baseline": 17,
      "centre_x": 36
     },
     {
      "sprite": "65",
      "text": "Pref. Tourney",
-     "style": "d2_st_res",
-     "font": "d:narrow:11:0.78:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:10:0.78:0.4:0",
      "palettes": [
       23
      ],
-     "slices": true,
-     "slice_width": 34,
-     "dy": 3,
+     "baseline": 17,
      "centre_x": 36
     },
     {
      "sprite": "2a",
      "text": "Didn't Play",
-     "style": "d2_st_res",
-     "font": "d:narrow:12:0.92:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:11:0.92:0.4:0",
      "palettes": [
       23
      ],
@@ -1046,8 +1263,8 @@
     {
      "sprite": "2b",
      "text": "Rd. Loss",
-     "style": "d2_st_res",
-     "font": "d:narrow:13:0.78:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:11:0.85:0.4:0",
      "palettes": [
       23
      ],
@@ -1057,8 +1274,8 @@
     {
      "sprite": "2c",
      "text": "Runner-up",
-     "style": "d2_st_res",
-     "font": "d:narrow:13:0.85:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:11:0.78:0.4:0",
      "palettes": [
       23
      ],
@@ -1068,8 +1285,8 @@
     {
      "sprite": "2d",
      "text": "Champion",
-     "style": "d2_st_res",
-     "font": "d:narrow:13:0.85:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:11:0.78:0.4:0",
      "palettes": [
       23
      ],
@@ -1079,21 +1296,19 @@
     {
      "sprite": "73",
      "text": "Eliminated",
-     "style": "d2_st_res",
-     "font": "d:narrow:13:0.85:0.4:0",
+     "style": "d2_st_res1",
+     "font": "d:narrow:11:0.85:0.4:0",
      "palettes": [
       23
      ],
-     "slices": true,
-     "slice_width": 35,
-     "dy": -1,
+     "baseline": 17,
      "centre_x": 36
     },
     {
      "sprite": "2e",
      "text": "Success!",
      "style": "d2_st_ok",
-     "font": "d:rounded:15:1.0:0.5:0",
+     "font": "d:rounded:15:0.85:0.5:0",
      "palettes": [
       19
      ],
@@ -1103,31 +1318,31 @@
      "sprite": "2f",
      "text": "Failure...",
      "style": "d2_st_ng",
-     "font": "d:rounded:15:1.0:0.5:0",
+     "font": "d:rounded:15:0.92:0.5:0",
      "palettes": [
       20
      ],
      "slices": true,
-     "slice_width": 44,
-     "dy": 1
+     "slice_width": 40,
+     "dy": 0
     },
     {
      "sprite": "30",
      "text": "Half and Half?",
      "style": "d2_st_half",
-     "font": "d:rounded:12:0.78:0.5:0",
+     "font": "d:rounded:11:0.85:0.5:0",
      "palettes": [
       21
      ],
      "slices": true,
-     "slice_width": 47,
-     "dy": 1
+     "slice_width": 45,
+     "dy": 0
     },
     {
      "sprite": "31",
      "text": "No Surgery",
      "style": "d2_st_none",
-     "font": "d:rounded:15:0.78:0.5:0",
+     "font": "d:rounded:14:0.78:0.5:0",
      "palettes": [
       22
      ],
@@ -1137,7 +1352,7 @@
      "sprite": "39",
      "text": "Pawafuru High",
      "style": "d2_st_school",
-     "font": "d:d_narrowi:13:0.92:0.3:0",
+     "font": "d:d_narrowi:13:0.78:0.3:0",
      "palettes": [
       24
      ],
@@ -1147,46 +1362,42 @@
      "sprite": "3a",
      "text": "Teio Jitsugyo High",
      "style": "d2_st_school",
-     "font": "d:d_narrowi:12:0.78:0.3:0",
+     "font": "d:d_narrowi:10:0.78:0.3:0",
      "palettes": [
       24
      ],
-     "slices": true,
-     "slice_width": 49,
-     "dy": 1
+     "baseline": 349
     },
     {
      "sprite": "3b",
      "text": "St. Tachibana Gakuen High",
      "style": "d2_st_school",
-     "font": "d:d_narrowi:8:0.78:0.3:0",
+     "font": "d:d_narrowi:7:0.85:0.3:0",
      "palettes": [
       24
      ],
-     "slices": true,
-     "slice_width": 49,
-     "dy": 2
+     "baseline": 348
     },
     {
      "sprite": "3c",
      "text": "Haikyo High",
      "style": "d2_st_school",
-     "font": "d:d_narrowi:13:0.78:0.3:0",
+     "font": "d:d_narrowi:11:0.78:0.3:0",
      "palettes": [
       24
      ],
-     "baseline": 351
+     "baseline": 350
     },
     {
      "sprite": "07",
      "text": "Hardest Practice",
      "style": "d2_st_head",
-     "font": "d:narrow:14:1.0:0.4:0",
+     "font": "d:narrow:14:0.85:0.4:0",
      "palettes": [
       5
      ],
      "slices": true,
-     "slice_width": 65,
+     "slice_width": 56,
      "dy": 0,
      "left": 34
     },
@@ -1194,12 +1405,12 @@
      "sprite": "08",
      "text": "Game Record",
      "style": "d2_st_head",
-     "font": "d:narrow:14:1.0:0.4:0",
+     "font": "d:narrow:14:0.92:0.4:0",
      "palettes": [
       5
      ],
      "slices": true,
-     "slice_width": 54,
+     "slice_width": 50,
      "dy": 0,
      "left": 273
     },
@@ -1207,12 +1418,12 @@
      "sprite": "09",
      "text": "Memories with Her",
      "style": "d2_st_head",
-     "font": "d:narrow:14:1.0:0.4:0",
+     "font": "d:narrow:14:0.85:0.4:0",
      "palettes": [
       5
      ],
      "slices": true,
-     "slice_width": 30,
+     "slice_width": 42,
      "dy": 0,
      "left": 54
     },
@@ -1225,7 +1436,7 @@
       5
      ],
      "slices": true,
-     "slice_width": 27,
+     "slice_width": 54,
      "dy": 4,
      "left": 285
     },
@@ -1233,7 +1444,7 @@
      "sprite": "0c",
      "text": "Comment",
      "style": "d2_st_head",
-     "font": "d:narrow:14:1.0:0.4:0",
+     "font": "d:narrow:14:0.85:0.4:0",
      "palettes": [
       5
      ],
@@ -1244,18 +1455,22 @@
      "sprite": "18",
      "text": "Years Single\n18 yrs",
      "style": "d2_st_single",
-     "font": "d:narrow:15:1.0:0.4:0",
+     "font": "d:narrow:12:1.0:0.4:0",
      "palettes": [
       18
      ],
      "slices": true,
-     "slice_width": 40,
-     "dy": -7,
+     "slice_width": 128,
+     "dy": -6,
      "line_step": 27
     }
    ],
    "name": "pool",
-   "share": true
+   "share": true,
+   "gap": [
+    0,
+    0
+   ]
   }
  ]
 }

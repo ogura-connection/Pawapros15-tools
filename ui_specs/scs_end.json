@@ -2779,6 +2779,456 @@
    "share": true
   },
   {
+   "bank": "m4_df256",
+   "palette": 0,
+   "style": "a_ban_m",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     0,
+     72,
+     104,
+     128,
+     128
+    ],
+    [
+     0,
+     0,
+     96,
+     16,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Drafted Players",
+     "style": "a_ban_m",
+     "font": "ttf:rounded:27:0.0:0.88:0.8",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "m4_df256",
+   "share": true
+  },
+  {
+   "bank": "m4_drf",
+   "palette": 0,
+   "style": "a_help_m1",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     48,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     64,
+     56
+    ],
+    [
+     1,
+     104,
+     40,
+     128,
+     88
+    ],
+    [
+     1,
+     64,
+     40,
+     104,
+     56
+    ],
+    [
+     1,
+     112,
+     104,
+     128,
+     128
+    ],
+    [
+     1,
+     80,
+     120,
+     104,
+     128
+    ],
+    [
+     5,
+     56,
+     64,
+     120,
+     128
+    ],
+    [
+     5,
+     64,
+     0,
+     120,
+     48
+    ],
+    [
+     5,
+     0,
+     96,
+     56,
+     128
+    ],
+    [
+     5,
+     64,
+     56,
+     120,
+     64
+    ],
+    [
+     5,
+     64,
+     48,
+     88,
+     56
+    ],
+    [
+     5,
+     96,
+     48,
+     120,
+     56
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0c",
+     "text": "Choose a player to set up",
+     "style": "a_help_m1",
+     "font": "ttf:rounded:7:0.0:1.0:0.3",
+     "baseline": 12,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "0d",
+     "text": "Choose a player to set up",
+     "style": "a_help_m1",
+     "font": "ttf:rounded:7:0.0:1.0:0.3",
+     "baseline": 12,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      48,
+      128,
+      72
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Choose OK without picking a player",
+     "style": "a_help_m2~0_112",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 14,
+     "left": 23
+    },
+    {
+     "from": [
+      0,
+      0,
+      72,
+      128,
+      96
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Choose OK without picking a player",
+     "style": "a_help_m2~112_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 14,
+     "left": 7
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "to save with the current settings.",
+     "style": "a_help_m2~0_104",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 13,
+     "left": 66
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      24
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "to save with the current settings.",
+     "style": "a_help_m2~104_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 13,
+     "left": 42
+    },
+    {
+     "from": [
+      5,
+      64,
+      0,
+      120,
+      24
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      64,
+      24,
+      120,
+      48
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      64,
+      48,
+      88,
+      64
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "empty": true
+    }
+   ],
+   "name": "m4_drf",
+   "share": true
+  },
+  {
+   "bank": "y5_drf_0",
+   "palette": 0,
+   "style": "a_help_y1",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     8,
+     0,
+     128,
+     80
+    ],
+    [
+     2,
+     8,
+     120,
+     128,
+     128
+    ],
+    [
+     2,
+     120,
+     80,
+     128,
+     120
+    ],
+    [
+     3,
+     0,
+     40,
+     72,
+     80
+    ],
+    [
+     3,
+     72,
+     40,
+     128,
+     56
+    ],
+    [
+     3,
+     104,
+     112,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     5,
+     80,
+     72,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0c",
+     "text": "Choose a player to set up",
+     "style": "a_help_y1",
+     "font": "ttf:rounded:13:0.0:1.0:0.45",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "0d",
+     "text": "Choose a player to set up",
+     "style": "a_help_y1",
+     "font": "ttf:rounded:13:0.0:1.0:0.45",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "from": [
+      2,
+      8,
+      0,
+      128,
+      40
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Press OK without picking a player\nto save with the current settings.",
+     "style": "a_help_y2~0_104",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 29,
+     "left": 53
+    },
+    {
+     "from": [
+      2,
+      8,
+      40,
+      128,
+      80
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Press OK without picking a player\nto save with the current settings.",
+     "style": "a_help_y2~104_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 29,
+     "left": 37
+    },
+    {
+     "from": [
+      3,
+      0,
+      40,
+      72,
+      80
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "empty": true
+    },
+    {
+     "sprite": "11",
+     "text": "Drafted Players",
+     "style": "a_ban_y5",
+     "font": "ttf:rounded:27:0.0:0.88:0.8",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "pages": [
+      4,
+      5
+     ],
+     "palettes": [
+      29
+     ]
+    }
+   ],
+   "name": "y5_drf_0",
+   "share": true
+  },
+  {
    "bank": "z3_sav_0",
    "palette": 0,
    "style": "a_z3title",
