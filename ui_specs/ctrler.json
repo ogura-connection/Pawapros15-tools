@@ -1,0 +1,1586 @@
+{
+ "arc": "ctrler.arc",
+ "repack": [
+  {
+   "bank": "r4_co",
+   "palette": 23,
+   "style": "ctl_black",
+   "font": "ttf:narrow:8:0:1:0.2",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "share": true,
+   "areas": [
+    [
+     1,
+     112,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     96,
+     48,
+     112,
+     128
+    ],
+    [
+     1,
+     80,
+     96,
+     96,
+     128
+    ],
+    [
+     2,
+     96,
+     72,
+     104,
+     80
+    ],
+    [
+     2,
+     72,
+     88,
+     104,
+     128
+    ],
+    [
+     2,
+     104,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     104,
+     72,
+     128
+    ],
+    [
+     3,
+     80,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     120,
+     80,
+     128
+    ],
+    [
+     4,
+     120,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     112,
+     64,
+     120,
+     96
+    ],
+    [
+     4,
+     96,
+     72,
+     112,
+     80
+    ],
+    [
+     4,
+     72,
+     80,
+     88,
+     88
+    ],
+    [
+     4,
+     104,
+     80,
+     112,
+     96
+    ],
+    [
+     4,
+     96,
+     104,
+     104,
+     128
+    ],
+    [
+     5,
+     40,
+     24,
+     56,
+     48
+    ],
+    [
+     5,
+     72,
+     24,
+     104,
+     48
+    ],
+    [
+     5,
+     112,
+     24,
+     128,
+     48
+    ],
+    [
+     5,
+     104,
+     48,
+     120,
+     72
+    ],
+    [
+     5,
+     104,
+     72,
+     112,
+     128
+    ],
+    [
+     5,
+     120,
+     72,
+     128,
+     128
+    ],
+    [
+     5,
+     112,
+     80,
+     120,
+     88
+    ],
+    [
+     5,
+     112,
+     96,
+     120,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     16
+    ],
+    [
+     6,
+     24,
+     16,
+     128,
+     32
+    ],
+    [
+     6,
+     0,
+     32,
+     104,
+     48
+    ],
+    [
+     6,
+     0,
+     48,
+     64,
+     64
+    ],
+    [
+     6,
+     88,
+     48,
+     112,
+     128
+    ],
+    [
+     6,
+     16,
+     64,
+     64,
+     128
+    ],
+    [
+     6,
+     112,
+     64,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     80,
+     16,
+     128
+    ],
+    [
+     6,
+     64,
+     80,
+     88,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     7,
+     0,
+     48,
+     104,
+     96
+    ],
+    [
+     7,
+     104,
+     64,
+     128,
+     80
+    ],
+    [
+     7,
+     104,
+     80,
+     120,
+     96
+    ],
+    [
+     7,
+     0,
+     96,
+     56,
+     128
+    ],
+    [
+     7,
+     88,
+     96,
+     104,
+     128
+    ],
+    [
+     7,
+     112,
+     96,
+     128,
+     128
+    ],
+    [
+     7,
+     104,
+     104,
+     112,
+     128
+    ],
+    [
+     7,
+     56,
+     120,
+     88,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      6,
+      120,
+      64,
+      128,
+      80
+     ],
+     "sprites": [
+      "14"
+     ],
+     "text": "Switch to Power Swing",
+     "style": "ctl_black",
+     "font": "ttf:narrow:7:0:0.85:0.2",
+     "left": 3,
+     "baseline": 12
+    },
+    {
+     "from": [
+      6,
+      0,
+      80,
+      64,
+      96
+     ],
+     "sprites": [
+      "14"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      88,
+      16
+     ],
+     "sprites": [
+      "14"
+     ],
+     "text": "Contact Cursor",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      56,
+      16,
+      104,
+      32
+     ],
+     "sprites": [
+      "14"
+     ],
+     "text": "Bunt",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 4,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      88,
+      0,
+      128,
+      16
+     ],
+     "sprites": [
+      "14"
+     ],
+     "text": "Move",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 6,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      104,
+      16,
+      128,
+      32
+     ],
+     "sprites": [
+      "14"
+     ],
+     "text": "Swing",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      32,
+      48
+     ],
+     "sprites": [
+      "14"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      120,
+      64,
+      128,
+      80
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Switch to Power Swing",
+     "style": "ctl_black",
+     "font": "ttf:narrow:7:0:0.85:0.2",
+     "left": 3,
+     "baseline": 12
+    },
+    {
+     "from": [
+      6,
+      0,
+      80,
+      64,
+      96
+     ],
+     "sprites": [
+      "18"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      88,
+      16
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Contact Cursor",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      56,
+      16,
+      104,
+      32
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Bunt",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 4,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      88,
+      0,
+      128,
+      16
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Move",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 6,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      104,
+      16,
+      128,
+      32
+     ],
+     "sprites": [
+      "18"
+     ],
+     "text": "Swing",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      32,
+      48
+     ],
+     "sprites": [
+      "18"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      88,
+      80,
+      128,
+      96
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "All Runners Back",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.85:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      56,
+      112
+     ],
+     "sprites": [
+      "15"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      56,
+      96,
+      128,
+      112
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "Each Runner Back",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.85:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      0,
+      112,
+      16,
+      128
+     ],
+     "sprites": [
+      "15"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      16,
+      112,
+      112,
+      128
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "All Runners Go",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      112,
+      112,
+      128,
+      128
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "Each Runner Go",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.92:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      72,
+      16
+     ],
+     "sprites": [
+      "15"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      72,
+      0,
+      128,
+      16
+     ],
+     "sprites": [
+      "15"
+     ],
+     "text": "Runners Hold",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.92:0.2",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      16,
+      8,
+      32
+     ],
+     "sprites": [
+      "15"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      88,
+      80,
+      128,
+      96
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "All Runners Back",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.85:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      56,
+      112
+     ],
+     "sprites": [
+      "19"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      56,
+      96,
+      128,
+      112
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Each Runner Back",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.85:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      0,
+      112,
+      16,
+      128
+     ],
+     "sprites": [
+      "19"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      16,
+      112,
+      112,
+      128
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "All Runners Go",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      6,
+      112,
+      112,
+      128,
+      128
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Each Runner Go",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.92:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      72,
+      16
+     ],
+     "sprites": [
+      "19"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      72,
+      0,
+      128,
+      16
+     ],
+     "sprites": [
+      "19"
+     ],
+     "text": "Runners Hold",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.92:0.2",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      16,
+      8,
+      32
+     ],
+     "sprites": [
+      "19"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      16,
+      64,
+      48,
+      80
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Outfield",
+     "style": "ctl_black",
+     "font": "ttf:narrow:9:0:0.85:0.2",
+     "left": 3,
+     "baseline": 12
+    },
+    {
+     "from": [
+      6,
+      88,
+      64,
+      120,
+      80
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Infield",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      64,
+      64,
+      128,
+      80
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Bunt Shift",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      80,
+      16,
+      96
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      32,
+      32,
+      104,
+      48
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Pitch & Location",
+     "style": "ctl_black",
+     "font": "ttf:narrow:9:0:0.92:0.2",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      56,
+      16,
+      128,
+      32
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Throw to Cutoff",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.85:0.2",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      32,
+      16,
+      48
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      48,
+      64
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Move Fielder",
+     "style": "ctl_black",
+     "font": "ttf:narrow:7:0:0.85:0.2",
+     "left": 0,
+     "baseline": 11
+    },
+    {
+     "from": [
+      6,
+      16,
+      64,
+      48,
+      80
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Outfield",
+     "style": "ctl_black",
+     "font": "ttf:narrow:9:0:0.85:0.2",
+     "left": 3,
+     "baseline": 12
+    },
+    {
+     "from": [
+      6,
+      88,
+      64,
+      120,
+      80
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Infield",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 3,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      64,
+      64,
+      128,
+      80
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Bunt Shift",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      80,
+      16,
+      96
+     ],
+     "sprites": [
+      "20"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      32,
+      32,
+      104,
+      48
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Pitch & Location",
+     "style": "ctl_black",
+     "font": "ttf:narrow:9:0:0.92:0.2",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      56,
+      16,
+      128,
+      32
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Throw to Cutoff",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.85:0.2",
+     "left": 2,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      32,
+      16,
+      48
+     ],
+     "sprites": [
+      "20"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      48,
+      64
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Move Fielder",
+     "style": "ctl_black",
+     "font": "ttf:narrow:7:0:0.85:0.2",
+     "left": 0,
+     "baseline": 11
+    },
+    {
+     "from": [
+      1,
+      96,
+      72,
+      120,
+      96
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "2nd",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 8,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      16,
+      16,
+      56,
+      32
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "Pitch",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 6,
+     "baseline": 13
+    },
+    {
+     "from": [
+      1,
+      80,
+      96,
+      104,
+      120
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "3rd",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 10,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      96,
+      48,
+      120,
+      72
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "1st",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 10,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      16,
+      80,
+      96,
+      96
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "Switch to 2nd Pitch",
+     "style": "ctl_black",
+     "font": "ttf:narrow:9:0:0.85:0.2",
+     "left": 1,
+     "baseline": 12
+    },
+    {
+     "from": [
+      1,
+      104,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "Home",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      16,
+      32,
+      128,
+      48
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "Throw / Pickoff to Base",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:0.92:0.2",
+     "left": 1,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      16,
+      64
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      16,
+      16,
+      56,
+      32
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Pitch",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 6,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      16,
+      80,
+      96,
+      96
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Switch to 2nd Pitch",
+     "style": "ctl_black",
+     "font": "ttf:narrow:9:0:0.85:0.2",
+     "left": 1,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      16,
+      48,
+      104,
+      64
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Throw to Base",
+     "style": "ctl_black",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 1,
+     "baseline": 13
+    },
+    {
+     "from": [
+      7,
+      0,
+      64,
+      64,
+      80
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Pickoff to Base",
+     "style": "ctl_black",
+     "font": "ttf:narrow:8:0:0.92:0.2",
+     "left": 0,
+     "baseline": 12
+    },
+    {
+     "from": [
+      7,
+      0,
+      96,
+      56,
+      120
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "Choose Base",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:8:0:0.85:0.2",
+     "left": 5,
+     "baseline": 16
+    },
+    {
+     "from": [
+      1,
+      96,
+      72,
+      120,
+      96
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "2nd",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 8,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "10"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      80,
+      96,
+      104,
+      120
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "3rd",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 10,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "10"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      96,
+      48,
+      120,
+      72
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "1st",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 10,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "10"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      104,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "Home",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "10"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      0,
+      96,
+      56,
+      120
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "Choose Base",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:8:0:0.85:0.2",
+     "left": 5,
+     "baseline": 16
+    },
+    {
+     "from": [
+      1,
+      96,
+      72,
+      120,
+      96
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "2nd",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 8,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "11"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      80,
+      96,
+      104,
+      120
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "3rd",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 10,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "11"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      96,
+      48,
+      120,
+      72
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "1st",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 10,
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "11"
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      104,
+      96,
+      128,
+      120
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "Home",
+     "style": "ctl_black_halo",
+     "font": "ttf:narrow:10:0:1.0:0.2",
+     "left": 2,
+     "baseline": 17
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      24
+     ],
+     "sprites": [
+      "11"
+     ],
+     "empty": true
+    }
+   ]
+  }
+ ]
+}

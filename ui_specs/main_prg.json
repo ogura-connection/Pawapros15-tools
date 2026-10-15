@@ -2329,6 +2329,73 @@
    ]
   },
   {
+   "name": "practice header",
+   "bank": "g3_rt",
+   "areas": [
+    [
+     1,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     112
+    ],
+    [
+     3,
+     0,
+     0,
+     120,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     24,
+     104
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Baseball School & Practice",
+     "palettes": [
+      1
+     ],
+     "valign": "centre",
+     "style": "e_rt_title",
+     "font": "ttf:din:19:0:1:0.0",
+     "slices": true
+    },
+    {
+     "sprite": "06",
+     "text": "Baseball School",
+     "palettes": [
+      2
+     ],
+     "valign": "centre",
+     "style": "e_rt_tab",
+     "font": "ttf:din:20:0:1:0.0"
+    },
+    {
+     "sprite": "07",
+     "text": "Practice",
+     "palettes": [
+      2
+     ],
+     "valign": "centre",
+     "style": "e_rt_tab",
+     "font": "ttf:din:20:0:1:0.0"
+    }
+   ]
+  },
+  {
    "name": "team initials",
    "bank": "g3_scm",
    "style": "e_scm",

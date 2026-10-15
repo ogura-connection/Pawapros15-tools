@@ -7,7 +7,7 @@ shadow). Colours are read from the Japanese lettering of each palette (_work/ui_
   palette 8   the red A of "A Type": white letters, red ring
   palette 24  the help sentences: dark blue letters, a mid and a pale blue ring
   palette 21  the blue bars "STARTボタンで決定": white letters on a bar whose rounded ends are cut from the original art
-"help" styles hlp<W> paint a line of the help text on a fixed canvas W wide and 16 rows high with the baseline on a
+"help" styles hlp<W> paint a line of the help text on a fixed canvas W wide and 15 rows high with the baseline on a
 fixed row, left aligned, so a sprite's lines (cut into strips by ui_type) stand on one baseline and start in one column."""
 import os
 import numpy as np
@@ -46,7 +46,7 @@ def canvas(inner, width, height=16, base=12):
 _HLP = ringfill([15], [7])
 STYLES["hlp_raw"] = _HLP
 for _w in range(16, 200, 8):
-    STYLES["hlp%d" % _w] = canvas(_HLP, _w, 16, 12)              # cap 9, 16 rows, baseline on row 12
+    STYLES["hlp%d" % _w] = canvas(_HLP, _w, 15, 11)              # cap 9, 15 rows, baseline on row 11
     STYLES["hlq%d" % _w] = canvas(_HLP, _w, 17, 12)              # cap 10, 17 rows, baseline on row 12
 
 

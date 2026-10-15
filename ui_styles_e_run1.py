@@ -1,7 +1,7 @@
 """Label styles of art run 1, agent E: scorebook tags, team initials, plates, shift editor (see ui_type.py)."""
 import numpy as np
 import ui_type
-from ui_type import banded, outlined, tight, grow
+from ui_type import banded, outlined, tight, grow, logo
 
 ui_type.TTF.setdefault("din", ("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf", 0))
 
@@ -39,6 +39,10 @@ def scm_style(ink, base):
 
 STYLES = {
     "e_scm": scm_style,
+    # Baseball School & Practice (g3_rt): yellow shading to orange in a brown outline, a white band, blue rim and glow
+    "e_rt_title": crisp(logo([12, 12, 14, 14, 13, 13], [1], 3, 15, 4, [6, 8], 2, 2)),
+    # the two tabs (palette 2): the same in orange
+    "e_rt_tab": crisp(logo([14, 14, 13, 12, 12], [1], 3, 15, 4, [6, 8], 2, 2)),
     # scorebook tags (g3_nk, g3_tij): white letters, navy ring, a blue outer ring (palettes 7-10 share indices 3..f)
     "e_tag": crisp(tight(banded([0, 15, 15, 15, 15, 15, 15], [4, 6]))),
 }
