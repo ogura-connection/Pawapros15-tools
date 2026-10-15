@@ -1,0 +1,1242 @@
+{
+ "arc": "option.arc",
+ "repack": [
+  {
+   "bank": "g3_ops",
+   "palette": 16,
+   "style": "opt_tab",
+   "font": "ttf:rounded:12:0:1.0:0.2",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     1,
+     120,
+     64,
+     128,
+     112
+    ],
+    [
+     1,
+     0,
+     112,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Setup",
+     "style": "opt_tab",
+     "font": "ttf:rounded:11:0:0.9:0.25",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "sprite": "01",
+     "text": "Controls",
+     "style": "opt_tab2",
+     "font": "ttf:din:10:0:1.0:0.1",
+     "left": 5,
+     "baseline": 19
+    },
+    {
+     "sprite": "02",
+     "text": "Rumble",
+     "style": "opt_tab",
+     "font": "ttf:din:11:0:1.0:0.1",
+     "left": 3,
+     "baseline": 20
+    },
+    {
+     "sprite": "03",
+     "text": "Running",
+     "style": "opt_tab2",
+     "font": "ttf:din:10:0:1.0:0.1",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "sprite": "04",
+     "text": "Fielding",
+     "style": "opt_tab",
+     "font": "ttf:din:11:0:1.0:0.1",
+     "left": 2,
+     "baseline": 18
+    },
+    {
+     "sprite": "05",
+     "text": "Batting",
+     "style": "opt_tab",
+     "font": "ttf:din:11:0:1.0:0.1",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "sprite": "06",
+     "text": "Pitching",
+     "style": "opt_tab2",
+     "font": "ttf:din:10:0:1.0:0.1",
+     "left": 5,
+     "baseline": 17
+    },
+    {
+     "sprite": "07",
+     "text": "Manager",
+     "style": "opt_tab2",
+     "font": "ttf:din:10:0:1.0:0.1",
+     "left": 3,
+     "baseline": 18
+    },
+    {
+     "sprite": "08",
+     "text": "Contact\nCursor",
+     "style": "opt_tab2",
+     "font": "ttf:din:9:0:1.0:0.1",
+     "left": 6,
+     "baseline": 25
+    },
+    {
+     "sprite": "09",
+     "text": "Landing\nSpot",
+     "style": "opt_tab2",
+     "font": "ttf:din:8:0:1.0:0.1",
+     "left": 8,
+     "baseline": 23
+    },
+    {
+     "sprite": "0a",
+     "text": "Pitch\nCursor",
+     "style": "opt_tab2",
+     "font": "ttf:din:9:0:1.0:0.1",
+     "left": 9,
+     "baseline": 25
+    },
+    {
+     "sprite": "0b",
+     "text": "Pitch\nDisplay",
+     "style": "opt_tab2",
+     "font": "ttf:din:8:0:1.0:0.1",
+     "left": 10,
+     "baseline": 23
+    },
+    {
+     "sprite": "0c",
+     "text": "Strike\nZone",
+     "style": "opt_tab2",
+     "font": "ttf:din:9:0:1.0:0.1",
+     "left": 11,
+     "baseline": 25
+    },
+    {
+     "sprite": "0d",
+     "text": "Handicap",
+     "style": "opt_tab2",
+     "font": "ttf:din:10:0:1.0:0.1",
+     "left": 1,
+     "baseline": 18
+    },
+    {
+     "sprite": "63",
+     "text": "Pitch\nView",
+     "style": "opt_tab2",
+     "font": "ttf:din:9:0:1.0:0.1",
+     "left": 13,
+     "baseline": 24
+    },
+    {
+     "sprite": "6a",
+     "text": "Callouts",
+     "style": "opt_tab",
+     "font": "ttf:din:11:0:1.0:0.1",
+     "left": 1,
+     "baseline": 20
+    }
+   ],
+   "name": "tabs"
+  },
+  {
+   "bank": "g3_ops",
+   "palette": 7,
+   "style": "opt_val",
+   "font": "ttf:rounded:12:0:1.0:0.2",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     16
+    ],
+    [
+     2,
+     0,
+     16,
+     96,
+     32
+    ],
+    [
+     2,
+     40,
+     32,
+     128,
+     56
+    ],
+    [
+     2,
+     0,
+     56,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     3,
+     0,
+     24,
+     80,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     64,
+     40,
+     88
+    ],
+    [
+     1,
+     0,
+     88,
+     64,
+     112
+    ],
+    [
+     8,
+     112,
+     0,
+     128,
+     32
+    ],
+    [
+     8,
+     0,
+     32,
+     96,
+     80
+    ],
+    [
+     8,
+     120,
+     32,
+     128,
+     80
+    ],
+    [
+     8,
+     0,
+     80,
+     72,
+     104
+    ],
+    [
+     8,
+     48,
+     104,
+     56,
+     120
+    ],
+    [
+     8,
+     0,
+     120,
+     56,
+     128
+    ],
+    [
+     6,
+     120,
+     0,
+     128,
+     32
+    ],
+    [
+     6,
+     112,
+     32,
+     128,
+     56
+    ],
+    [
+     6,
+     48,
+     40,
+     64,
+     56
+    ],
+    [
+     6,
+     48,
+     56,
+     96,
+     80
+    ],
+    [
+     6,
+     120,
+     56,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     120,
+     96,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "17",
+     "text": "Rookie",
+     "style": "opt_val",
+     "font": "ttf:din:13:0:1.0:0.1",
+     "left": 6,
+     "baseline": 21
+    },
+    {
+     "sprite": "18",
+     "text": "Normal",
+     "style": "opt_val",
+     "font": "ttf:din:13:0:1.0:0.1",
+     "left": 4,
+     "baseline": 21
+    },
+    {
+     "sprite": "19",
+     "palettes": [
+      7,
+      8
+     ],
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "join": 2,
+     "pieces": [
+      {
+       "text": "Type",
+       "palette": 7
+      },
+      {
+       "text": "A",
+       "palette": 8,
+       "style": "opt_a"
+      }
+     ],
+     "baseline": 19
+    },
+    {
+     "sprite": "1a",
+     "text": "Type B",
+     "style": "opt_val",
+     "font": "ttf:din:13:0:1.0:0.1",
+     "left": 36,
+     "baseline": 20
+    },
+    {
+     "sprite": "1b",
+     "text": "Off",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 38,
+     "baseline": 21
+    },
+    {
+     "sprite": "1c",
+     "text": "On",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 39,
+     "baseline": 21
+    },
+    {
+     "sprite": "1d",
+     "text": "Weak",
+     "style": "opt_val",
+     "font": "ttf:narrow:13:0:1.0:0.2",
+     "left": 4,
+     "baseline": 22
+    },
+    {
+     "sprite": "1e",
+     "text": "Normal",
+     "style": "opt_val",
+     "font": "ttf:din:13:0:1.0:0.1",
+     "left": 4,
+     "baseline": 22
+    },
+    {
+     "sprite": "1f",
+     "text": "Strong",
+     "style": "opt_val",
+     "font": "ttf:din:13:0:1.0:0.1",
+     "left": 6,
+     "baseline": 20
+    },
+    {
+     "sprite": "20",
+     "text": "Very Strong",
+     "style": "opt_val_s",
+     "font": "ttf:din:8:0:1.0:0.1",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "sprite": "21",
+     "text": "Powerful",
+     "style": "opt_val_s",
+     "font": "ttf:din:10:0:1.0:0.1",
+     "left": 6,
+     "baseline": 21
+    },
+    {
+     "sprite": "22",
+     "text": "Semi-Auto",
+     "style": "opt_val_s",
+     "font": "ttf:din:9:0:1.0:0.1",
+     "left": 5,
+     "baseline": 20
+    },
+    {
+     "sprite": "23",
+     "text": "Auto",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 5,
+     "baseline": 20
+    },
+    {
+     "sprite": "24",
+     "text": "Manual",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 21,
+     "baseline": 21
+    },
+    {
+     "sprite": "25",
+     "text": "Normal",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 22,
+     "baseline": 21
+    },
+    {
+     "sprite": "26",
+     "text": "All Sweet Spot",
+     "style": "opt_val",
+     "font": "ttf:din:13:0:1.0:0.1",
+     "left": 12,
+     "baseline": 20
+    },
+    {
+     "sprite": "27",
+     "text": "Lock-On",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:0.9:0.25",
+     "left": 5,
+     "baseline": 21
+    },
+    {
+     "sprite": "28",
+     "text": "Hide",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 34,
+     "baseline": 21
+    },
+    {
+     "sprite": "29",
+     "text": "Show",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 29,
+     "baseline": 21
+    },
+    {
+     "sprite": "2a",
+     "text": "Show",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 27,
+     "baseline": 21
+    },
+    {
+     "sprite": "2b",
+     "text": "Hide",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 34,
+     "baseline": 21
+    },
+    {
+     "sprite": "2c",
+     "text": "Off",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 40,
+     "baseline": 21
+    },
+    {
+     "sprite": "2d",
+     "text": "Great",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 29,
+     "baseline": 21
+    },
+    {
+     "sprite": "2e",
+     "text": "Good",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 29,
+     "baseline": 21
+    },
+    {
+     "sprite": "2f",
+     "text": "Normal",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 23,
+     "baseline": 21
+    },
+    {
+     "sprite": "30",
+     "text": "Poor",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 32,
+     "baseline": 21
+    },
+    {
+     "sprite": "31",
+     "text": "Awful",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 30,
+     "baseline": 21
+    },
+    {
+     "sprite": "5d",
+     "palettes": [
+      7,
+      8
+     ],
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "join": 2,
+     "pieces": [
+      {
+       "text": "Type",
+       "palette": 7
+      },
+      {
+       "text": "A",
+       "palette": 8,
+       "style": "opt_a"
+      }
+     ],
+     "baseline": 19
+    },
+    {
+     "sprite": "5e",
+     "text": "Type B",
+     "style": "opt_val",
+     "font": "ttf:din:13:0:1.0:0.1",
+     "left": 35,
+     "baseline": 20
+    },
+    {
+     "sprite": "61",
+     "text": "Auto",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 33,
+     "baseline": 21
+    },
+    {
+     "sprite": "64",
+     "text": "No Window",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 6,
+     "baseline": 21
+    },
+    {
+     "sprite": "65",
+     "text": "Window",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 18,
+     "baseline": 21
+    },
+    {
+     "sprite": "66",
+     "text": "Pitcher View",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:0.9:0.25",
+     "left": 5,
+     "baseline": 21
+    },
+    {
+     "sprite": "6b",
+     "text": "On",
+     "style": "opt_val",
+     "font": "ttf:rounded:13:0:1.0:0.25",
+     "left": 41,
+     "baseline": 21
+    },
+    {
+     "sprite": "70",
+     "text": "Cancel",
+     "style": "opt_val",
+     "font": "ttf:din:13:0:1.0:0.1",
+     "left": 6,
+     "baseline": 21
+    },
+    {
+     "sprite": "11",
+     "text": "Press START to confirm",
+     "style": "opt_bar",
+     "font": "ttf:rounded:10:0:1.0:0.2",
+     "slices": true,
+     "slice_width": 128,
+     "left": 0,
+     "dy": 0
+    },
+    {
+     "sprite": "75",
+     "text": "Press + to confirm",
+     "style": "opt_bar",
+     "font": "ttf:rounded:10:0:1.0:0.2",
+     "slices": true,
+     "slice_width": 128,
+     "left": 0,
+     "dy": 0
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      8,
+      24
+     ],
+     "empty": true
+    }
+   ],
+   "name": "values"
+  },
+  {
+   "bank": "g3_ops",
+   "palette": 24,
+   "style": "hlq176",
+   "font": "ttf:din:10:0:1.0:0.2",
+   "under": 3,
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     13,
+     0,
+     80,
+     48,
+     96
+    ],
+    [
+     13,
+     96,
+     104,
+     128,
+     128
+    ],
+    [
+     18,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     18,
+     0,
+     64,
+     24,
+     80
+    ],
+    [
+     19,
+     56,
+     96,
+     80,
+     112
+    ],
+    [
+     19,
+     0,
+     112,
+     80,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     104,
+     48,
+     120
+    ],
+    [
+     5,
+     0,
+     88,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "36",
+     "text": "Fielding and running on Auto,\nContact Cursor on Lock-On.",
+     "style": "hlq136",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": -10
+    },
+    {
+     "sprite": "37",
+     "text": "Sets every option\nto the standard setting.",
+     "style": "hlq104",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "38",
+     "text": "The easy control type\nPawapuro recommends.",
+     "style": "hlq112",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": -10
+    },
+    {
+     "sprite": "39",
+     "text": "Pick bases with\nthe direction buttons.",
+     "style": "hlq96",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "3a",
+     "text": "Rumbles on hits and more.",
+     "style": "hlq120",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "3b",
+     "text": "No rumble.",
+     "style": "hlq56",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "3c",
+     "text": "You control everything.",
+     "style": "hlq104",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "3d",
+     "text": "You control only\nthe lead runner.\nCPU level adjustable.",
+     "style": "hlq96",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "3e",
+     "text": "The CPU controls everything.\nUse Auto while you learn.\nCPU level adjustable.",
+     "style": "hlq136",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "3f",
+     "text": "The CPU fields the ball,\nyou make the throw.\nCPU level adjustable.",
+     "style": "hlq104",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "40",
+     "text": "You make every call,\nsubstitutions included.",
+     "style": "hlq104",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "41",
+     "text": "The CPU makes every call,\nsubstitutions included.",
+     "style": "hlq120",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "42",
+     "text": "Hit the sweet spot\nfor a hard-hit ball.",
+     "style": "hlq88",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "43",
+     "text": "Anywhere on the Contact Cursor\nhits like the sweet spot.",
+     "style": "hlq152",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "44",
+     "text": "The Contact Cursor moves\ntoward the ball by itself.\nThe higher the level,\nthe easier to square it up.",
+     "style": "hlp112",
+     "font": "ttf:din:9:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 16,
+     "left": 4,
+     "dy": 0
+    },
+    {
+     "sprite": "45",
+     "text": "No mark shows where\nthe ball will land.",
+     "style": "hlq104",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "46",
+     "text": "A mark shows where\nthe ball will land,\nmaking fielding easier.",
+     "style": "hlq104",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "47",
+     "text": "A cursor you move\nwhen pitching\nmakes pitching easier.",
+     "style": "hlq104",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "48",
+     "text": "No cursor when\nyou pitch.\nFor purists.",
+     "style": "hlq72",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 2
+    },
+    {
+     "sprite": "49",
+     "text": "Your chosen pitch\nis not shown.",
+     "style": "hlq88",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "4a",
+     "text": "Your chosen pitch\nis shown.",
+     "style": "hlq88",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "4b",
+     "text": "The strike zone\nis not shown.\nFor purists.",
+     "style": "hlq72",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 2
+    },
+    {
+     "sprite": "4c",
+     "text": "The strike zone\nis shown.",
+     "style": "hlq72",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "4d",
+     "text": "The CPU sets every\nplayer's condition.",
+     "style": "hlq88",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "4e",
+     "text": "Every player is in\nGreat condition.",
+     "style": "hlq80",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "4f",
+     "text": "Every player is in\nGood condition.",
+     "style": "hlq80",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "50",
+     "text": "Every player is in\nNormal condition.",
+     "style": "hlq80",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "51",
+     "text": "Every player is in\nPoor condition.",
+     "style": "hlq80",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "52",
+     "text": "Every player is in\nAwful condition.",
+     "style": "hlq80",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "5a",
+     "text": "The CPU controls\neverything.",
+     "style": "hlq80",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "5c",
+     "text": "Pick bases with\nthe Control Stick.",
+     "style": "hlq80",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": -10
+    },
+    {
+     "sprite": "62",
+     "text": "Pick bases with\nthe +Control Pad.",
+     "style": "hlq88",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "67",
+     "text": "Pitch without the\ncatcher window.",
+     "style": "hlq80",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "68",
+     "text": "Pitch with the\ncatcher window shown.",
+     "style": "hlq112",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "69",
+     "text": "Pitch from the\npitcher's view.",
+     "style": "hlq72",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "6d",
+     "text": "No callouts.\nPlayer names and\npositions are shown.",
+     "style": "hlq96",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 1
+    },
+    {
+     "sprite": "6e",
+     "text": "When fielding,\nteammates call out\nwhere the ball went.",
+     "style": "hlq96",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": 2
+    },
+    {
+     "sprite": "73",
+     "text": "Pick bases with\nthe left stick.",
+     "style": "hlq72",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": -10
+    },
+    {
+     "sprite": "74",
+     "text": "Pick bases with\nthe L stick.",
+     "style": "hlq72",
+     "font": "ttf:din:10:0:1.0:0.15",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 22,
+     "left": 8,
+     "dy": -10
+    }
+   ],
+   "name": "help"
+  }
+ ]
+}

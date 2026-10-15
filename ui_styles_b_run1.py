@@ -44,8 +44,10 @@ def canvas(inner, width, height=16, base=12):
 
 
 _HLP = ringfill([15], [9, 4])
+STYLES["hlp_raw"] = _HLP
 for _w in range(16, 200, 8):
-    STYLES["hlp%d" % _w] = canvas(_HLP, _w)
+    STYLES["hlp%d" % _w] = canvas(_HLP, _w)                      # cap 9, 16 rows, baseline on row 12
+    STYLES["hlq%d" % _w] = canvas(_HLP, _w, 18, 13)              # cap 10, 18 rows, baseline on row 13
 
 
 # --- the blue bars (palette 21): 224 wide, 16 high, the rounded ends of the original bar
