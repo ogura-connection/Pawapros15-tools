@@ -185,6 +185,20 @@
     ],
     [
      8,
+     80,
+     64,
+     128,
+     96
+    ],
+    [
+     8,
+     0,
+     80,
+     64,
+     96
+    ],
+    [
+     8,
      0,
      96,
      128,
@@ -196,29 +210,37 @@
      "sprite": "05",
      "text": "\u203b System Settings \u203b",
      "style": "b4_sy",
-     "font": "ttf:b4uni:9:0.0:1.0:0.35",
-     "baseline": 4
+     "font": "ttf:b4uni:12:0.0:0.92:0.35",
+     "slices": true,
+     "slice_width": 75,
+     "dy": -1
     },
     {
      "sprite": "07",
      "text": "Save and Quit",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 4
+     "font": "ttf:rounded:15:0.0:0.85:0.2",
+     "slices": true,
+     "slice_width": 59,
+     "dy": 1
     },
     {
      "sprite": "08",
      "text": "Quit Without Saving",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 4
+     "font": "ttf:rounded:13:0.0:0.85:0.2",
+     "slices": true,
+     "slice_width": 72,
+     "dy": 0
     },
     {
      "sprite": "0b",
      "text": "Sound Options",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 4
+     "font": "ttf:rounded:15:0.0:0.85:0.2",
+     "slices": true,
+     "slice_width": 62,
+     "dy": 0
     },
     {
      "from": [
@@ -230,8 +252,8 @@
      ],
      "text": "Back",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 20,
+     "font": "ttf:rounded:15:0.0:0.85:0.2",
+     "baseline": 24,
      "centre_x": 27
     },
     {
@@ -244,8 +266,8 @@
      ],
      "text": "Ambient Sound",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 20,
+     "font": "ttf:rounded:10:0.0:0.85:0.2",
+     "baseline": 21,
      "left": 4
     },
     {
@@ -258,7 +280,7 @@
      ],
      "text": "Support Messages",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "font": "ttf:rounded:10:0.0:0.85:0.2",
      "baseline": 22,
      "left": 4
     },
@@ -316,15 +338,15 @@
      "sprite": "11",
      "text": "/",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 20
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 22
     },
     {
      "sprite": "1e",
      "text": "Sun",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:0.92:0.2",
-     "baseline": 20
+     "font": "ttf:rounded:10:0.0:0.85:0.2",
+     "baseline": 21
     },
     {
      "sprite": "1f",
@@ -337,8 +359,8 @@
      "sprite": "20",
      "text": "Tue",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 20
+     "font": "ttf:narrow:13:0.0:0.85:0.2",
+     "baseline": 22
     },
     {
      "sprite": "21",
@@ -351,22 +373,22 @@
      "sprite": "22",
      "text": "Thu",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "font": "ttf:rounded:10:0.0:0.85:0.2",
      "baseline": 22
     },
     {
      "sprite": "23",
      "text": "Fri",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 21
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 22
     },
     {
      "sprite": "24",
      "text": "Sat",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 18
+     "font": "ttf:rounded:12:0.0:0.85:0.2",
+     "baseline": 19
     }
    ],
    "name": "blackboard",

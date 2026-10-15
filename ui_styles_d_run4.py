@@ -4,6 +4,8 @@ import ui_type
 
 STYLES = {}
 ui_type.TTF["d4narrow"] = ("/System/Library/Fonts/Supplemental/Arial Narrow.ttf", 0)       # regular weight, for the thin black lettering
+ui_type.TTF["d4hand"] = ("/System/Library/Fonts/Supplemental/Bradley Hand Bold.ttf", 0)           # the manager's handwriting
+ui_type.TTF["d4uni"] = ("/System/Library/Fonts/Supplemental/Arial Unicode.ttf", 0)             # has the circle and the circled plus of the button hints
 ui_type.TTF["d4tahoma"] = ("/System/Library/Fonts/Supplemental/Tahoma.ttf", 0)
 
 # ---- sct_main z5_emj_0 (scout window labels) -----------------------------------------------------------------------------
@@ -74,3 +76,26 @@ STYLES["d4_gms"] = ringfill([2, 2, 1, 1, 3, 5], [8], [10, 12])                  
 windows("d4_gmu")
 windows("d4_gm20")
 windows("d4_gm22")
+
+# ---- sct_a_sc.arc (schedule, manager's memo) / sct_a_it.arc / sct_sugo.arc ------------------------------------------------------
+STYLES["d4_edy_head"] = plain(15, 11)                                # z4_edy_0 pal 24: grey letters (ramp 1 light .. f dark)
+STYLES["d4_edy_month"] = plain(15, 8, edge=2)                         # pal 25: black numerals
+STYLES["d4_hint"] = ringfill([15, 15, 14, 13, 12, 10], [4, 4], [3, 2, 1])      # z4_ekk_0 pal 24: white letters, dark green-grey ring, pale glow
+
+
+def memo(ink, base):
+    """z5_edm_0: the manager's handwriting, one colour ramp (index 15 strongest .. 1 faintest)."""
+    import numpy as np
+    out = np.zeros(ink.shape, np.uint8)
+    for lv, ix in ((1, 4), (2, 7), (3, 10), (4, 12), (5, 14), (6, 15)):
+        out[ink >= lv] = ix
+    ys, xs = np.nonzero(out)
+    return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base - ys.min()
+
+
+STYLES["d4_memo"] = memo
+STYLES["d4_edi_title"] = ringfill([8, 8, 9, 11, 13, 15], [4, 2, 1])            # z4_edi_0 pal 18: white to teal, blue rings
+STYLES["d4_edi_owned"] = ringfill([15, 15, 14, 13, 12, 11], [4, 3], [2, 1])    # pal 24: white letters, navy ring, blue glow
+STYLES["d4_etk"] = ringfill([15, 15, 15, 15, 15, 15], [1, 1, 1, 1])               # z4_etk_0: big white italic letters, black ring
+for _n in ("d4_edy_head", "d4_edy_month", "d4_hint", "d4_memo", "d4_edi_owned"):
+    windows(_n)

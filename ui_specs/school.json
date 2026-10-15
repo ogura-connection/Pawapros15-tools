@@ -1,0 +1,1157 @@
+{
+ "arc": "school.arc",
+ "repack": [
+  {
+   "bank": "g3_ms",
+   "palette": 0,
+   "style": "c4_ms_02",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     2,
+     0,
+     56,
+     48,
+     112
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     7,
+     56,
+     80,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     64,
+     128
+    ],
+    [
+     9,
+     64,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Baseball School",
+     "style": "c4_ms_00",
+     "font": "ttf:narrow:22:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Offense",
+     "style": "c4_ms_02",
+     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "baseline": 33,
+     "palettes": [
+      38
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Defense",
+     "style": "c4_ms_05",
+     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "baseline": 33,
+     "palettes": [
+      39
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Save",
+     "style": "c4_ms_06",
+     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "baseline": 34,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Delete",
+     "style": "c4_ms_07",
+     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "baseline": 34,
+     "palettes": [
+      41
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Controller Setup",
+     "style": "c4_ms_08",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      42
+     ]
+    },
+    {
+     "sprite": "10",
+     "text": "Offense",
+     "style": "c4_ms_10",
+     "font": "ttf:rounded:31:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Defense",
+     "style": "c4_ms_13",
+     "font": "ttf:rounded:31:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      33
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Save",
+     "style": "c4_ms_15",
+     "font": "ttf:rounded:31:0.0:1.0:0.3",
+     "baseline": 336,
+     "palettes": [
+      34
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Delete",
+     "style": "c4_ms_16",
+     "font": "ttf:rounded:31:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Controller Setup",
+     "style": "c4_ms_17",
+     "font": "ttf:narrow:31:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      36
+     ]
+    }
+   ],
+   "name": "ms"
+  },
+  {
+   "bank": "g3_ykm",
+   "palette": 0,
+   "style": "c4_ykm_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     5,
+     0,
+     80,
+     64,
+     120
+    ],
+    [
+     6,
+     0,
+     0,
+     64,
+     120
+    ],
+    [
+     6,
+     64,
+     80,
+     128,
+     120
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     10,
+     0,
+     80,
+     64,
+     120
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     16,
+     0,
+     32,
+     48,
+     128
+    ],
+    [
+     16,
+     48,
+     32,
+     96,
+     64
+    ],
+    [
+     19,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     20,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     20,
+     0,
+     80,
+     64,
+     120
+    ],
+    [
+     21,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     22,
+     0,
+     0,
+     128,
+     120
+    ],
+    [
+     27,
+     0,
+     0,
+     72,
+     80
+    ],
+    [
+     27,
+     72,
+     0,
+     128,
+     40
+    ],
+    [
+     28,
+     0,
+     0,
+     64,
+     72
+    ],
+    [
+     28,
+     64,
+     0,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "14",
+     "text": "Try Hitting a Fastball",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:17:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "15",
+     "text": "Power-Swing at a Fastball",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "16",
+     "text": "Try Hitting a Slider",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "17",
+     "text": "Try Hitting a Curve",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "18",
+     "text": "Try Hitting a Forkball",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "19",
+     "text": "Try Hitting a Sinker",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "1a",
+     "text": "Try Hitting a Shuuto",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "1b",
+     "text": "Try Bunting",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5
+    },
+    {
+     "sprite": "1c",
+     "text": "Sharpen Your Strike-Zone Eye",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "1d",
+     "text": "Time Inside and Outside Pitches",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "1e",
+     "text": "Try a Squeeze Play",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "1f",
+     "text": "Try a Hit-and-Run",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "20",
+     "text": "Try Throwing a Fastball",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "21",
+     "text": "Try Throwing a Breaking Ball",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "22",
+     "text": "Try Pitching to Spots",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "23",
+     "text": "Pitch Breaking Balls to Spots",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "24",
+     "text": "Try Stealing a Base",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "25",
+     "text": "Try Controlling Runners",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "26",
+     "text": "Try Tagging Up",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "27",
+     "text": "Field a Grounder and Throw",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "28",
+     "text": "Catch a Fly and Throw",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "29",
+     "text": "Try Throwing Out a Runner",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:14:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "2a",
+     "text": "Try a Great Play",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "6b",
+     "text": "Try Contact Hitting",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "6c",
+     "text": "Try Power Hitting",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "6d",
+     "text": "Hit Breaking Balls, Part 1",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "6e",
+     "text": "Hit Breaking Balls, Part 2",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:15:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "6f",
+     "text": "Try a Sacrifice Bunt",
+     "style": "c4_ykm_title",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "70",
+     "text": "Field Grounders, Part 1",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "71",
+     "text": "Field Grounders, Part 2",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "72",
+     "text": "Catch Fly Balls, Part 1",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "73",
+     "text": "Catch Fly Balls, Part 2",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "85",
+     "text": "Learn to Lay Off Balls",
+     "style": "c4_ykm_title",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "0b",
+     "text": "To\nOffense",
+     "style": "c4_ykm_go1",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 30,
+     "palettes": [
+      57
+     ]
+    },
+    {
+     "sprite": "8b",
+     "text": "To\nDefense",
+     "style": "c4_ykm_go1",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 30,
+     "palettes": [
+      58
+     ]
+    },
+    {
+     "sprite": "4a",
+     "text": "Batting",
+     "style": "c4_ykm_row",
+     "font": "ttf:narrow:13:0.0:0.85:0.35",
+     "baseline": 34,
+     "palettes": [
+      34
+     ]
+    },
+    {
+     "sprite": "4a",
+     "text": "Pitching",
+     "style": "c4_ykm_row",
+     "font": "ttf:narrow:11:0.0:0.85:0.35",
+     "baseline": 64,
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "4a",
+     "text": "Running",
+     "style": "c4_ykm_row",
+     "font": "ttf:narrow:11:0.0:0.85:0.35",
+     "baseline": 95,
+     "palettes": [
+      36
+     ]
+    },
+    {
+     "sprite": "4a",
+     "text": "Fielding",
+     "style": "c4_ykm_row",
+     "font": "ttf:narrow:12:0.0:0.85:0.35",
+     "baseline": 127,
+     "palettes": [
+      37
+     ]
+    }
+   ],
+   "name": "ykm"
+  }
+ ],
+ "paint": [
+  {
+   "bank": "g3_rsz",
+   "page": 10,
+   "rect": [
+    18,
+    15,
+    128,
+    64
+   ],
+   "text": "Batting",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_00_0"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 8,
+   "rect": [
+    96,
+    7,
+    110,
+    56
+   ],
+   "text": "Batting",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_00_1"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 10,
+   "rect": [
+    18,
+    95,
+    128,
+    128
+   ],
+   "text": "Pitching",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_01_0"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 11,
+   "rect": [
+    18,
+    0,
+    128,
+    16
+   ],
+   "text": "Pitching",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_01_1"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 8,
+   "rect": [
+    96,
+    71,
+    110,
+    120
+   ],
+   "text": "Pitching",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_01_2"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 11,
+   "rect": [
+    18,
+    47,
+    128,
+    96
+   ],
+   "text": "Running",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_02_0"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 3,
+   "rect": [
+    96,
+    71,
+    110,
+    120
+   ],
+   "text": "Running",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_02_1"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 12,
+   "rect": [
+    18,
+    15,
+    128,
+    64
+   ],
+   "text": "Fielding",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_03_0"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 12,
+   "rect": [
+    0,
+    95,
+    14,
+    128
+   ],
+   "text": "Fielding",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_03_1"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 12,
+   "rect": [
+    32,
+    96,
+    46,
+    112
+   ],
+   "text": "Fielding",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_03_2"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 28,
+   "rect": [
+    18,
+    15,
+    128,
+    64
+   ],
+   "text": "Offense",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_0f_0"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 28,
+   "rect": [
+    0,
+    96,
+    14,
+    128
+   ],
+   "text": "Offense",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_0f_1"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 28,
+   "rect": [
+    0,
+    95,
+    8,
+    96
+   ],
+   "text": "Offense",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_0f_2"
+  },
+  {
+   "bank": "g3_rsz",
+   "page": 28,
+   "rect": [
+    32,
+    96,
+    46,
+    112
+   ],
+   "text": "Offense",
+   "font": "ttf:rounded:20:0.0:0.92:0.35",
+   "copy": "clear",
+   "style": "c4_rsz_0f_3"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 15,
+   "rect": [
+    14,
+    11,
+    92,
+    37
+   ],
+   "text": "Average",
+   "font": "ttf:rounded:13:0.0:1.0:0.35",
+   "copy": [
+    15,
+    70,
+    11,
+    80,
+    37
+   ],
+   "style": "c4_ykm_avg_0"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 15,
+   "rect": [
+    14,
+    79,
+    94,
+    105
+   ],
+   "text": "Cleared",
+   "font": "ttf:rounded:13:0.0:1.0:0.35",
+   "copy": [
+    15,
+    90,
+    79,
+    100,
+    105
+   ],
+   "style": "c4_ykm_clr_0"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 15,
+   "rect": [
+    114,
+    46,
+    128,
+    74
+   ],
+   "text": "pts",
+   "font": "ttf:rounded:13:0.0:1.0:0.35",
+   "copy": [
+    15,
+    90,
+    46,
+    100,
+    74
+   ],
+   "style": "c4_ykm_pts_0"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 17,
+   "rect": [
+    32,
+    46,
+    50,
+    74
+   ],
+   "text": "pts",
+   "font": "ttf:rounded:13:0.0:1.0:0.35",
+   "copy": [
+    15,
+    90,
+    46,
+    100,
+    74
+   ],
+   "style": "c4_ykm_pts_1"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 21,
+   "rect": [
+    0,
+    80,
+    64,
+    120
+   ],
+   "text": "Bravo!",
+   "font": "ttf:rounded:12:0.0:1.0:0.35",
+   "copy": "clear",
+   "style": "c4_tag_74_0"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 21,
+   "rect": [
+    64,
+    80,
+    128,
+    120
+   ],
+   "text": "Great!!",
+   "font": "ttf:rounded:9:0.0:0.9:0.35",
+   "copy": "clear",
+   "style": "c4_tag_75_0"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 23,
+   "rect": [
+    8,
+    64,
+    48,
+    104
+   ],
+   "text": "Yes!",
+   "font": "ttf:rounded:11:0.0:1.0:0.35",
+   "copy": "clear",
+   "style": "c4_tag_76_0"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 23,
+   "rect": [
+    48,
+    64,
+    72,
+    104
+   ],
+   "text": "Yes!",
+   "font": "ttf:rounded:11:0.0:1.0:0.35",
+   "copy": "clear",
+   "style": "c4_tag_76_1"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 23,
+   "rect": [
+    72,
+    64,
+    128,
+    104
+   ],
+   "text": "Too Bad",
+   "font": "ttf:rounded:9:0.0:0.95:0.35",
+   "copy": "clear",
+   "style": "c4_tag_77_0"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 26,
+   "rect": [
+    120,
+    88,
+    128,
+    128
+   ],
+   "text": "Too Bad",
+   "font": "ttf:rounded:9:0.0:0.95:0.35",
+   "copy": "clear",
+   "style": "c4_tag_77_1"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 26,
+   "rect": [
+    96,
+    64,
+    120,
+    72
+   ],
+   "text": "Too Bad",
+   "font": "ttf:rounded:9:0.0:0.95:0.35",
+   "copy": "clear",
+   "style": "c4_tag_77_2"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 23,
+   "rect": [
+    0,
+    104,
+    72,
+    128
+   ],
+   "text": "So Close\u2026",
+   "font": "ttf:rounded:8:0.0:0.9:0.35",
+   "copy": "clear",
+   "style": "c4_tag_78_0"
+  },
+  {
+   "bank": "g3_ykm",
+   "page": 23,
+   "rect": [
+    72,
+    104,
+    128,
+    120
+   ],
+   "text": "So Close\u2026",
+   "font": "ttf:rounded:8:0.0:0.9:0.35",
+   "copy": "clear",
+   "style": "c4_tag_78_1"
+  }
+ ]
+}
