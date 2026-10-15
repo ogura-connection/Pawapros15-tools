@@ -752,6 +752,13 @@
      104,
      128,
      112
+    ],
+    [
+     5,
+     0,
+     96,
+     128,
+     128
     ]
    ],
    "labels": [
@@ -759,29 +766,29 @@
      "sprite": "30",
      "text": "Batting",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 209
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 210
     },
     {
      "sprite": "31",
      "text": "Pitching",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 209
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 210
     },
     {
      "sprite": "32",
      "text": "Running",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 209
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 210
     },
     {
      "sprite": "33",
      "text": "Fielding",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 209
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 210
     },
     {
      "from": [
@@ -793,8 +800,8 @@
      ],
      "text": "Your",
      "style": "e4_sg_small",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 24
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 23
     },
     {
      "from": [
@@ -806,8 +813,8 @@
      ],
      "text": "Score",
      "style": "e4_sg_small",
-     "font": "ttf:rounded:15:0.0:1.0:0.3",
-     "baseline": 24
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 23
     },
     {
      "from": [
@@ -819,8 +826,8 @@
      ],
      "text": "pts",
      "style": "e4_sg_small",
-     "font": "ttf:rounded:15:0.0:0.92:0.3",
-     "baseline": 24
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 23
     },
     {
      "from": [
@@ -832,8 +839,8 @@
      ],
      "text": "Average",
      "style": "e4_sg_small",
-     "font": "ttf:rounded:15:0.0:0.92:0.3",
-     "baseline": 23
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 22
     }
    ],
    "name": "headings and score panel"
