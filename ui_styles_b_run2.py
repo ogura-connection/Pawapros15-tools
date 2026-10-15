@@ -40,8 +40,8 @@ def rimmed(fill, rings, shadow, rim, edge=3):
 
 
 # ---- y5_hak_0: the job list (scenario 3) -------------------------------------------------------------------------------
-# list lines (palette 18): white letters, a pale lavender ring and a mid blue edge
-STYLES["b_hak_line"] = ringfill([0xf], [0xb, 0x3])
+# list lines (palette 18): white letters in a one-pixel mid blue ring (one ring keeps the counters of small letters open)
+STYLES["b_hak_line"] = ringfill([0xf], [0x3])
 # trust ratings (palette 17): dark blue letters, a light blue ring, a near-white outer ring
 STYLES["b_hak_rate"] = ringfill([0xf], [0x7, 0x1])
 # headings on the cream and white plates (palette 19, black on a grey ramp: 0xf black .. 1 light grey)

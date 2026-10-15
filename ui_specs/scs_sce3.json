@@ -27,21 +27,21 @@
      0,
      0,
      128,
-     128
+     104
     ],
     [
      3,
      0,
      0,
      128,
-     128
+     92
     ],
     [
      4,
      0,
      0,
      128,
-     128
+     92
     ],
     [
      5,
@@ -63,7 +63,7 @@
      "sprite": "07",
      "text": "Gokuaku Trading: Odd Jobs",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -76,7 +76,7 @@
      "sprite": "08",
      "text": "Tekuteku Tech: Assembly",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 3,
@@ -89,7 +89,7 @@
      "sprite": "09",
      "text": "Rocket Express: Delivery",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 1,
@@ -102,7 +102,7 @@
      "sprite": "0a",
      "text": "Naniwa Trading: Office Staff",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -115,7 +115,7 @@
      "sprite": "0b",
      "text": "Pichipichi Fisheries: Hauling",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 3,
@@ -128,7 +128,7 @@
      "sprite": "0c",
      "text": "Club Ageage: Hosting",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -141,7 +141,7 @@
      "sprite": "0d",
      "text": "Takeda Construction: Labor",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 1,
@@ -154,7 +154,7 @@
      "sprite": "0e",
      "text": "Mizotto: Associate",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "baseline": 21,
      "palettes": [
       18
@@ -165,7 +165,7 @@
      "sprite": "0f",
      "text": "Atsuatsu Diner: Kitchen",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 0,
@@ -178,7 +178,7 @@
      "sprite": "10",
      "text": "Karaoke Staff",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "baseline": 22,
      "palettes": [
       18
@@ -189,7 +189,7 @@
      "sprite": "11",
      "text": "Convenience Store Clerk",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:0.82:0.3",
+     "font": "ttf:narrow:11:0.0:0.83:0.0",
      "baseline": 21,
      "palettes": [
       18
@@ -200,7 +200,7 @@
      "sprite": "12",
      "text": "Amusement Park Staff",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:0.9:0.3",
+     "font": "ttf:narrow:11:0.0:0.92:0.0",
      "baseline": 21,
      "palettes": [
       18
@@ -211,7 +211,7 @@
      "sprite": "13",
      "text": "Ad Agency Staff",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "baseline": 22,
      "palettes": [
       18
@@ -222,7 +222,7 @@
      "sprite": "14",
      "text": "Pawafuru Corp.: Office Help",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -235,7 +235,7 @@
      "sprite": "15",
      "text": "Sales Campaign Staff",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -248,7 +248,7 @@
      "sprite": "16",
      "text": "Hot Spring Cleaner",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "baseline": 22,
      "palettes": [
       18
@@ -259,7 +259,7 @@
      "sprite": "17",
      "text": "Batting Center Clerk",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "baseline": 22,
      "palettes": [
       18
@@ -270,7 +270,7 @@
      "sprite": "18",
      "text": "Beach Hut Staff",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "baseline": 22,
      "palettes": [
       18
@@ -281,7 +281,7 @@
      "sprite": "19",
      "text": "Hotel Staff",
      "style": "b_hak_line",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
      "baseline": 21,
      "palettes": [
       18

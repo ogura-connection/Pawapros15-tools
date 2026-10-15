@@ -1,0 +1,964 @@
+{
+ "arc": "scs_end.arc",
+ "repack": [
+  {
+   "bank": "m4_stt01",
+   "palette": 27,
+   "style": "a_name",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     32,
+     0,
+     64,
+     32
+    ],
+    [
+     8,
+     0,
+     0,
+     32,
+     32
+    ],
+    [
+     8,
+     0,
+     32,
+     32,
+     64
+    ],
+    [
+     8,
+     32,
+     32,
+     64,
+     64
+    ],
+    [
+     8,
+     0,
+     64,
+     32,
+     96
+    ],
+    [
+     8,
+     32,
+     64,
+     64,
+     96
+    ],
+    [
+     8,
+     0,
+     96,
+     32,
+     128
+    ],
+    [
+     8,
+     32,
+     96,
+     64,
+     128
+    ],
+    [
+     8,
+     64,
+     0,
+     96,
+     32
+    ],
+    [
+     8,
+     96,
+     0,
+     128,
+     32
+    ],
+    [
+     8,
+     64,
+     32,
+     96,
+     64
+    ],
+    [
+     8,
+     96,
+     32,
+     128,
+     64
+    ],
+    [
+     8,
+     64,
+     64,
+     96,
+     96
+    ],
+    [
+     8,
+     96,
+     64,
+     128,
+     96
+    ],
+    [
+     8,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     32,
+     32
+    ],
+    [
+     9,
+     32,
+     0,
+     128,
+     32
+    ],
+    [
+     9,
+     0,
+     32,
+     8,
+     64
+    ],
+    [
+     9,
+     8,
+     32,
+     88,
+     64
+    ],
+    [
+     9,
+     0,
+     64,
+     88,
+     96
+    ],
+    [
+     9,
+     88,
+     32,
+     128,
+     64
+    ],
+    [
+     9,
+     88,
+     64,
+     128,
+     96
+    ],
+    [
+     9,
+     0,
+     96,
+     104,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     10,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     10,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     11,
+     16,
+     0,
+     128,
+     32
+    ],
+    [
+     11,
+     0,
+     32,
+     40,
+     64
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     9,
+     104,
+     96,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     16,
+     32
+    ],
+    [
+     12,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     11,
+     80,
+     64,
+     128,
+     96
+    ],
+    [
+     11,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "15",
+     "text": "Giants",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Dragons",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 3,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Carp",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "BayStars",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Tigers",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 5,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "Eagles",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 5,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "Lions",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Swallows",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Fighters",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 4,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Marines",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Buffaloes",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 5,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Hawks",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Powerfuls",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 5,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Kaisers",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 5,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Yankiis",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 5,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Vulcans",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Busters",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 5,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Cathands",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 6,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "Original",
+     "style": "a_name",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 5,
+     "pages": [
+      8,
+      9,
+      10,
+      11,
+      12
+     ],
+     "palettes": [
+      27
+     ]
+    }
+   ],
+   "name": "teams"
+  },
+  {
+   "bank": "m4_stt01",
+   "palette": 2,
+   "style": "a_name",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     14,
+     48,
+     32,
+     128,
+     64
+    ],
+    [
+     14,
+     0,
+     64,
+     64,
+     96
+    ],
+    [
+     14,
+     64,
+     64,
+     128,
+     96
+    ],
+    [
+     14,
+     0,
+     96,
+     88,
+     128
+    ],
+    [
+     14,
+     88,
+     96,
+     120,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     32,
+     32
+    ],
+    [
+     15,
+     32,
+     0,
+     128,
+     32
+    ],
+    [
+     15,
+     0,
+     32,
+     56,
+     64
+    ],
+    [
+     15,
+     56,
+     32,
+     128,
+     64
+    ],
+    [
+     16,
+     56,
+     0,
+     64,
+     32
+    ],
+    [
+     15,
+     0,
+     64,
+     104,
+     96
+    ],
+    [
+     15,
+     104,
+     64,
+     128,
+     96
+    ],
+    [
+     15,
+     0,
+     96,
+     56,
+     128
+    ],
+    [
+     15,
+     56,
+     96,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     0,
+     56,
+     32
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     13,
+     0,
+     32,
+     48,
+     64
+    ],
+    [
+     13,
+     48,
+     32,
+     128,
+     64
+    ],
+    [
+     13,
+     0,
+     64,
+     96,
+     96
+    ],
+    [
+     13,
+     96,
+     64,
+     128,
+     96
+    ],
+    [
+     13,
+     0,
+     96,
+     120,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     14,
+     0,
+     32,
+     48,
+     64
+    ],
+    [
+     16,
+     64,
+     0,
+     128,
+     32
+    ],
+    [
+     16,
+     0,
+     32,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3c",
+     "text": "Standard",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "3d",
+     "text": "Open",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "3e",
+     "text": "Kannushi",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 10,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "3f",
+     "text": "Crouching",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "40",
+     "text": "Pendulum",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "41",
+     "text": "Buster",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "42",
+     "text": "1-Leg",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 10,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "43",
+     "text": "Original",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 8,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "44",
+     "text": "Overhand",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "45",
+     "text": "3-Quarters",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 10,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "46",
+     "text": "Sidearm",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 7,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "47",
+     "text": "Submarine",
+     "style": "a_name",
+     "font": "ttf:rounded:17:0.0:1.0:0.5",
+     "baseline": 9,
+     "pages": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "palettes": [
+      2
+     ]
+    }
+   ],
+   "name": "forms"
+  }
+ ]
+}

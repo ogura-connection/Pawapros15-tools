@@ -642,6 +642,93 @@
      "empty": true
     }
    ]
+  },
+  {
+   "bank": "r4_staz",
+   "palette": 16,
+   "style": "d2_staz_new",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "New Game",
+     "style": "d2_staz_new",
+     "font": "ttf:rounded:18:0.0:0.92:0.5",
+     "baseline": 40,
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "btn00"
+  },
+  {
+   "bank": "r4_staz",
+   "palette": 16,
+   "style": "d2_staz_cont",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     80,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Continue",
+     "style": "d2_staz_cont",
+     "font": "ttf:rounded:18:0.0:0.92:0.5",
+     "baseline": 40,
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "btn01"
+  },
+  {
+   "bank": "r4_staz",
+   "palette": 16,
+   "style": "d2_staz_list",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Players",
+     "style": "d2_staz_list",
+     "font": "ttf:rounded:18:0.0:0.92:0.5",
+     "baseline": 38,
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "btn02"
   }
  ]
 }
