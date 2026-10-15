@@ -4,6 +4,19 @@ from ui_styles_ore_ini import ringfill
 
 STYLES = {}
 
+
+def win(style, c0, c1):
+    """Only the columns c0..c1 of the whole word (a word shared out over parts that stand side by side)."""
+    import numpy as np
+
+    def cut(ink, base):
+        art, b = style(ink, base)
+        out = art[:, c0:c1]
+        if out.shape[1] == 0:
+            out = np.zeros((art.shape[0], 1), np.uint8)
+        return out, b
+    return cut
+
 # ---- sct_a_od.arc (Eikan Nine order screen) -----------------------------------------------------------------------------
 STYLES["e4_od_title"] = ringfill([15, 15, 15, 15, 13, 12], [4, 4, 3, 2])             # pal 40: white, navy rings, blue glow
 STYLES["e4_od_cancel"] = ringfill([12, 12, 11, 11, 8, 3], [15, 15, 5], [7, 9])         # pal 35: lavender, white ring, blue glow
@@ -12,3 +25,5 @@ STYLES["e4_od_blue"] = ringfill([15, 15, 15, 14, 13, 12], [1])                  
 # ---- sct_a_ed.arc (graduates screen) ------------------------------------------------------------------------------------
 STYLES["e4_ed_title"] = ringfill([15, 14, 13, 12, 11, 10], [5, 5, 1, 1], [2])          # pal 0: gold, near-black ring, blue ring
 STYLES["e4_ed_gold"] = ringfill([15, 14, 13, 11, 9, 7], [1, 1], [2])                   # pal 1: olive-gold brush, black ring
+STYLES["e4_ed_gold~0_8"] = win(STYLES["e4_ed_gold"], 0, 8)
+STYLES["e4_ed_gold~8_4096"] = win(STYLES["e4_ed_gold"], 8, 4096)
