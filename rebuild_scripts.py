@@ -1008,7 +1008,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             sec, data = new_secs[m.mod_id]
             both = {**remaps, **inplace} if names and m.name == name_table.HOST else remaps   # it points into block scripts
             image, note = rebuild_module(m, sec, data, both), "rebuilt"
-            if ore and m is ore["host"]:
+            if ores and m is ores[0]["host"]:
                 extra_images[m.name] = (m.data, image, ORE_WORK_ADDR)
             elif names and m.name == name_table.HOST:
                 note = "surname table appended"         # not in the memory plan: loaded into the heap
@@ -1114,7 +1114,8 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 image, n = patch_addends(m, inplace, bytes(image))
                 if n:
                     note += ", %d pointers into a script laid out again" % n
-        if ore and m is ore["sc"].rel:                             # My Life: the script and its label table
+        ore = next((o for o in ores if m is o["sc"].rel), None)
+        if ore:                                                  # My Life kind: the script and its label table
             sc = ore["sc"]
             if m.mod_id in new_secs or any(mid == m.mod_id for mid, _ in remaps):
                 sys.exit("%s: a rebuilt module cannot hold the My Life script" % m.name)
@@ -1128,10 +1129,10 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             image, n = ore_relocations(m, bytes(image), sc, ore["remap"])
             extra_images[m.name] = (m.data, image, None)
             note += ", script laid out again, %d labels in the annex" % n
-        elif ore and any(mod == ore["sc"].rel.mod_id and e[3] == ore["sc"].sec
-                         and ore["sc"].region[0] <= e[4] < ore["sc"].region[1] and not ore["sc"].in_island(e[4])
-                         for mod, _, entries, _ in parse_imports(m.data, m.imp_off, m.imp_size) for e in entries):
-            sys.exit("%s points into the My Life script: not supported" % m.name)
+        elif any(mod == o["sc"].rel.mod_id and e[3] == o["sc"].sec
+                 and o["sc"].region[0] <= e[4] < o["sc"].region[1] and not o["sc"].in_island(e[4])
+                 for o in ores for mod, _, entries, _ in parse_imports(m.data, m.imp_off, m.imp_size) for e in entries):
+            sys.exit("%s points into a script of the My Life kind: not supported" % m.name)
         if names and m.name == name_table.SHORT_HOST:            # its surname table in place, eight letters
             a = name_table.SHORT_TABLE
             if any(s == name_table.SHORT_SECTION and a <= o < a + len(short[0]) for s, o in strings.get(m.name, ())):
@@ -1198,7 +1199,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ore)
+    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ores)
     if names:                           # the appended table reads back as built
         h = new[host.mod_id]
         got = h.sec_data(name_table.HOST_SECTION)[name_remap.new_table:]
@@ -1210,7 +1211,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     return changed
 
 
-def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=(), ore=None):
+def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=(), ores=()):
     """Re-read the built files and compare them with the originals, structure by structure.
     Returns the modules as re-read (for verify_dol). moved = the relocations whose addend the build
     changed on purpose (pointers to strings that were laid out again): {(module, section, position): addend}."""
@@ -1223,10 +1224,12 @@ def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=No
                 d[off:off + len(data)] = data
         return bytes(d)
     inplace = inplace or {}
+    by_script = {(o["sc"].rel.mod_id, o["sc"].sec): o for o in ores}     # scripts of the My Life kind
     new_scripts = load_scripts(new, remaps) + S.load_block_scripts(new)
     for old, sc in zip(list(old_scripts) + list(blocks), new_scripts):
         name = old.rel.name
         remap = remaps.get((old.rel.mod_id, old.sec)) or inplace.get((old.rel.mod_id, old.sec), lambda off: off)
+        ore = by_script.get((old.rel.mod_id, old.sec))
         if ore and old is ore["sc"]:
             remap = ore["remap"]
         assert not sc.errors, (name, sc.errors)
@@ -1249,12 +1252,13 @@ def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=No
             ad = remaps[(tm, ts)](ad) if (tm, ts) in remaps else ad
             ad = inplace[(tm, ts)](ad) if (tm, ts) in inplace else ad
             ad = (moved or {}).get((mid, s, pos), ad)
-            if ore and (tm, ts) == (ore["sc"].rel.mod_id, ore["sc"].sec):
-                ad = ore["remap"](ad)                   # a label of the My Life script
+            ore = by_script.get((tm, ts))
+            if ore:
+                ad = ore["remap"](ad)                   # a label of a script of the My Life kind
                 if ore["remap"].address(ad) is not None:
                     tm, ts, ad = 0, 4, ore["remap"].address(ad)     # in the annex: an absolute address
             want.append((s, pos, typ, tm, ts, ad))
-        if ore and m is ore["sc"].rel:                  # labels changed stream: the same set, another order
+        if any(m is o["sc"].rel for o in ores):         # labels changed stream: the same set, another order
             assert sorted(want) == sorted(b), m.name + ": relocations"
             want = b
         for (s, pos, typ, tm, ts, ad), got in zip(want, b):
