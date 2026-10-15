@@ -5,8 +5,8 @@ announcer's call id. Three cells hold six letters in the pair font, and most cop
 so a romanised name (Takahashi, Yamaguchi) does not fit.
 
 - scc_main.rel sec5+0xC0 (read by scc_main.rel, scs_main.rel, sct_main.rel, work_sct.rel: Success, Eikan Nine):
-  scc_main.rel is not in the fixed memory plan (it is loaded into the heap), so the build appends a new table
-  to its data section: records of 16 bytes, six cells padded with 0x1FFF, 0x1FFF, the call id. The relocations
+  scc_main.rel's slot in the memory plan (0x807E8380) ends 28 bytes before scs_main.rel, so the build moves it
+  to HOST_ADDR in the free area (as ore_work.rel for My Life) and appends a new table to its data section: records of 16 bytes, six cells padded with 0x1FFF, 0x1FFF, the call id. The relocations
   that pointed at the old table are aimed at the new one (TableRemap), and the readers are patched in place:
   the record size (mulli 0xA -> 0x10), the call id (lhz 8(rX) -> 0xE(rX)), and the copiers that took four
   cells become a loop of up to six cells in the same space. Every patched instruction is checked first.
@@ -33,6 +33,7 @@ COUNT, CELLS, STRIDE, OLD_STRIDE = 1856, 6, 16, 10
 END = 0x1FFF
 OVERRIDES = {"石井": "Ishii"}           # calls that read a full name
 HOST, HOST_SECTION, HOST_TABLE = "scc_main.rel", 5, 0xC0
+HOST_ADDR = 0x81460000                  # free area: above ore_work.rel (0x81400000), below the arena (0x814E0000)
 SHORT_HOST, SHORT_SECTION, SHORT_TABLE, SHORT_CELLS = "main_prg.rel", 5, 0x168F0, 4
 
 # ── PowerPC words ──────────────────────────────────────────────────────────
@@ -167,6 +168,30 @@ def append_table(host, data):
     old = host.sec_data(HOST_SECTION)
     pad = bytes(-len(old) % 8)
     return old + pad + data, TableRemap(len(old), len(pad) + len(data), len(old) + len(pad))
+
+
+def place_host(plan, orig_plan, old, new, plan_tables, memory_size):
+    """The memory plan with scc_main.rel at HOST_ADDR. Its row is found by its file size (the size column
+    holds the larger of the file and its memory, which the game reads the whole file into)."""
+    d = bytearray(plan)
+    t_addr, t_size, t_file, n = plan_tables(plan)
+    rows = [i for i in range(n) if struct.unpack_from(">I", orig_plan, t_file + 4 * i)[0] == len(old)]
+    if len(rows) != 1:
+        raise ValueError("%s: %d rows of the memory plan have its file size" % (HOST, len(rows)))
+    i, size = rows[0], max(len(new), memory_size(new))
+    if struct.unpack_from(">I", orig_plan, t_size + 4 * i)[0] != max(len(old), memory_size(old)):
+        raise ValueError("%s: its row does not hold the size expected" % HOST)
+    end = HOST_ADDR + size
+    for k in range(n):
+        a2, s2 = (struct.unpack_from(">I", d, t + 4 * k)[0] for t in (t_addr, t_size))
+        if k != i and s2 and a2 < end and a2 + s2 > HOST_ADDR:
+            raise ValueError("%s at 0x%08X would share memory with row %d (0x%08X..0x%08X)" % (HOST, HOST_ADDR, k, a2, a2 + s2))
+    if end > 0x814E0000:
+        raise ValueError("%s ends at 0x%08X, past the free area" % (HOST, end))
+    struct.pack_into(">I", d, t_addr + 4 * i, HOST_ADDR)
+    struct.pack_into(">I", d, t_size + 4 * i, size)
+    struct.pack_into(">I", d, t_file + 4 * i, len(new))
+    return bytes(d), end
 
 
 # ── The tables ─────────────────────────────────────────────────────────────

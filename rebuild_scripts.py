@@ -1140,6 +1140,14 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     new_plan = update_plan(plan, images)
     if extra_images:
         new_plan = update_plan_ore(new_plan, plan, extra_images)
+    if names:                           # scc_main.rel moves to the free area with its surname table
+        with open(os.path.join(BUILD_DIR, name_table.HOST), "rb") as f:
+            host_image = f.read()
+        try:
+            new_plan, end = name_table.place_host(new_plan, plan, host.data, host_image, plan_tables, memory_size)
+        except ValueError as e:
+            sys.exit(str(e))
+        print("  %-13s 0x%08X..0x%08X" % (name_table.HOST, name_table.HOST_ADDR, end))
     if new_plan != plan:
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
