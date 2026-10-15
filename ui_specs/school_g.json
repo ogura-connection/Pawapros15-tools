@@ -665,16 +665,16 @@
     [
      20,
      0,
-     96,
-     128,
-     128
-    ],
-    [
-     20,
-     0,
      48,
      72,
      96
+    ],
+    [
+     20,
+     120,
+     96,
+     128,
+     128
     ],
     [
      21,
@@ -685,27 +685,6 @@
     ],
     [
      21,
-     0,
-     48,
-     104,
-     80
-    ],
-    [
-     21,
-     120,
-     48,
-     128,
-     80
-    ],
-    [
-     21,
-     0,
-     80,
-     64,
-     128
-    ],
-    [
-     21,
      80,
      96,
      128,
@@ -714,23 +693,30 @@
     [
      21,
      80,
-     80,
+     48,
      104,
      96
     ],
     [
      21,
      120,
-     80,
+     48,
      128,
      96
+    ],
+    [
+     21,
+     0,
+     112,
+     80,
+     128
     ],
     [
      21,
      64,
      104,
      80,
-     128
+     112
     ],
     [
      22,
@@ -759,30 +745,77 @@
      "sprite": "30",
      "text": "Batting",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:21:0.0:1.0:0.3",
-     "baseline": 212
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 208
     },
     {
      "sprite": "31",
      "text": "Pitching",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:21:0.0:0.92:0.3",
-     "baseline": 212
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 208
     },
     {
      "sprite": "32",
      "text": "Running",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:21:0.0:0.92:0.3",
-     "baseline": 212
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 208
     },
     {
      "sprite": "33",
      "text": "Fielding",
      "style": "e4_sg_head",
-     "font": "ttf:rounded:21:0.0:0.92:0.3",
-     "baseline": 212
-    },
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 208
+    }
+   ],
+   "name": "headings"
+  },
+  {
+   "bank": "g3_kg",
+   "palette": 0,
+   "style": "e4_sg_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     20,
+     0,
+     96,
+     88,
+     128
+    ],
+    [
+     21,
+     0,
+     80,
+     64,
+     112
+    ],
+    [
+     20,
+     88,
+     96,
+     120,
+     128
+    ],
+    [
+     21,
+     0,
+     48,
+     80,
+     80
+    ],
+    [
+     22,
+     0,
+     112,
+     128,
+     128
+    ]
+   ],
+   "labels": [
     {
      "from": [
       20,
@@ -792,9 +825,9 @@
       128
      ],
      "text": "Your",
-     "style": "e4_sg_small",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 23
+     "style": "e4_sg_head",
+     "font": "ttf:rounded:22:0.0:1.0:0.5",
+     "baseline": 27
     },
     {
      "from": [
@@ -805,9 +838,9 @@
       112
      ],
      "text": "Score",
-     "style": "e4_sg_small",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 23
+     "style": "e4_sg_head",
+     "font": "ttf:narrow:19:0.0:0.92:0.5",
+     "baseline": 26
     },
     {
      "from": [
@@ -818,9 +851,9 @@
       128
      ],
      "text": "pts",
-     "style": "e4_sg_small",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 23
+     "style": "e4_sg_head",
+     "font": "ttf:narrow:16:0.0:0.92:0.5",
+     "baseline": 24
     },
     {
      "from": [
@@ -831,12 +864,12 @@
       80
      ],
      "text": "Average",
-     "style": "e4_sg_small",
-     "font": "ttf:rounded:14:0.0:0.85:0.3",
-     "baseline": 22
+     "style": "e4_sg_head",
+     "font": "ttf:narrow:17:0.0:0.92:0.5",
+     "baseline": 24
     }
    ],
-   "name": "headings and score panel"
+   "name": "score panel"
   },
   {
    "bank": "g3_kg",
@@ -862,10 +895,10 @@
       128,
       128
      ],
-     "text": "Start Practice",
+     "text": "Start",
      "style": "e4_sg_start",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 16
+     "font": "ttf:rounded:16:0.0:1.0:0.45",
+     "baseline": 20
     }
    ],
    "name": "start practice"
