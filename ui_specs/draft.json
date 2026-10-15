@@ -1,0 +1,889 @@
+{
+ "arc": "draft.arc",
+ "repack": [
+  {
+   "bank": "g3_pd_0",
+   "palette": 0,
+   "style": "e6_pd_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     5,
+     120,
+     0,
+     128,
+     64
+    ],
+    [
+     6,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     6,
+     80,
+     96,
+     128,
+     128
+    ],
+    [
+     6,
+     88,
+     0,
+     128,
+     32
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     64,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Scouting & Player List",
+     "style": "e6_pd_00",
+     "font": "ttf:rounded:9:0.0:0.92:0.6",
+     "baseline": 20,
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Let COM\nHandle It",
+     "style": "e6_pd_05",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 22,
+     "palettes": [
+      58
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Search",
+     "style": "e6_pd_06",
+     "font": "ttf:narrow:17:0.0:0.85:0.4",
+     "baseline": 24,
+     "palettes": [
+      57
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Research",
+     "style": "e6_pd_07",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 20,
+     "palettes": [
+      56
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Use Preferred\nSlot",
+     "style": "e6_pd_08",
+     "font": "ttf:rounded:7:0.0:0.85:0.6",
+     "baseline": 19,
+     "palettes": [
+      39
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Player List",
+     "style": "e6_pd_09",
+     "font": "ttf:rounded:9:0.0:0.92:0.6",
+     "baseline": 20,
+     "palettes": [
+      56
+     ]
+    },
+    {
+     "sprite": "0d",
+     "text": "Choose a Player\nto Draft",
+     "style": "e6_pd_0d",
+     "font": "ttf:rounded:10:0.0:0.85:0.5",
+     "baseline": 20,
+     "palettes": [
+      39
+     ]
+    },
+    {
+     "sprite": "0e",
+     "text": "Finish Without\na Pick",
+     "style": "e6_pd_0e",
+     "font": "ttf:rounded:12:0.0:0.85:0.5",
+     "baseline": 21,
+     "palettes": [
+      42
+     ]
+    },
+    {
+     "sprite": "47",
+     "text": "Favor UP",
+     "style": "e6_pd_47",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 22,
+     "palettes": [
+      41
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Prospect Search",
+     "style": "e6_pd_title",
+     "font": "ttf:narrow:18:0.0:0.92:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    },
+    {
+     "sprite": "13",
+     "text": "Draft Pick",
+     "style": "e6_pd_title",
+     "font": "ttf:narrow:18:0.0:0.85:0.35",
+     "baseline": 46
+    },
+    {
+     "sprite": "14",
+     "text": "to switch view",
+     "style": "e6_pd_14",
+     "font": "ttf:rounded:10:0.0:0.92:0.5",
+     "baseline": 187
+    },
+    {
+     "from": [
+      6,
+      88,
+      0,
+      128,
+      32
+     ],
+     "text": "High",
+     "style": "e6_pd_14",
+     "font": "ttf:rounded:17:0.0:1.0:0.4",
+     "baseline": 23,
+     "sprites": [
+      "15"
+     ]
+    },
+    {
+     "from": [
+      6,
+      88,
+      32,
+      128,
+      64
+     ],
+     "text": "Low",
+     "style": "e6_pd_14",
+     "font": "ttf:rounded:17:0.0:1.0:0.4",
+     "baseline": 23,
+     "sprites": [
+      "15"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      96,
+      32
+     ],
+     "text": "Found",
+     "style": "e6_pd_lime",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 20,
+     "sprites": [
+      "16"
+     ]
+    },
+    {
+     "from": [
+      4,
+      96,
+      0,
+      128,
+      32
+     ],
+     "text": "Total",
+     "style": "e6_pd_lime",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 20,
+     "sprites": [
+      "16"
+     ]
+    },
+    {
+     "from": [
+      4,
+      96,
+      32,
+      128,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "16"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      32,
+      96,
+      64
+     ],
+     "text": "Researched",
+     "style": "e6_pd_lime",
+     "font": "ttf:rounded:11:0.0:0.92:0.5",
+     "baseline": 20,
+     "sprites": [
+      "17"
+     ]
+    },
+    {
+     "from": [
+      4,
+      96,
+      0,
+      128,
+      32
+     ],
+     "text": "Total",
+     "style": "e6_pd_lime",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 20,
+     "sprites": [
+      "17"
+     ]
+    },
+    {
+     "from": [
+      4,
+      96,
+      32,
+      128,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "17"
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Preferred Signees",
+     "style": "e6_pd_lime",
+     "font": "ttf:rounded:16:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "19",
+     "text": "Teams' Interest",
+     "style": "e6_pd_lime",
+     "font": "ttf:narrow:16:0.0:0.85:0.4",
+     "baseline": 182
+    },
+    {
+     "sprite": "1a",
+     "text": "Watch List",
+     "style": "e6_pd_lime",
+     "font": "ttf:narrow:16:0.0:0.85:0.4",
+     "baseline": 193
+    },
+    {
+     "sprite": "29",
+     "text": "Auto",
+     "style": "e6_pd_pos",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 20,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      168
+     ]
+    },
+    {
+     "sprite": "2a",
+     "text": "Pitcher",
+     "style": "e6_pd_pos",
+     "font": "ttf:narrow:11:0.0:0.85:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      169
+     ]
+    },
+    {
+     "sprite": "2b",
+     "text": "Fielder",
+     "style": "e6_pd_pos",
+     "font": "ttf:narrow:11:0.0:0.85:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      170
+     ]
+    },
+    {
+     "sprite": "2c",
+     "text": "Catcher",
+     "style": "e6_pd_pos",
+     "font": "ttf:narrow:11:0.0:0.85:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      171
+     ]
+    },
+    {
+     "sprite": "2d",
+     "text": "1st Base",
+     "style": "e6_pd_pos",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      172
+     ]
+    },
+    {
+     "sprite": "2e",
+     "text": "2nd Base",
+     "style": "e6_pd_pos",
+     "font": "ttf:narrow:11:0.0:0.85:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      172
+     ]
+    },
+    {
+     "sprite": "2f",
+     "text": "3rd Base",
+     "style": "e6_pd_pos",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      172
+     ]
+    },
+    {
+     "sprite": "30",
+     "text": "Shortstop",
+     "style": "e6_pd_pos",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      172
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "Infield",
+     "style": "e6_pd_pos",
+     "font": "ttf:narrow:11:0.0:0.92:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      172
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "Outfield",
+     "style": "e6_pd_pos",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "baseline": 21,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      173
+     ]
+    },
+    {
+     "from": [
+      3,
+      32,
+      96,
+      64,
+      128
+     ],
+     "text": "H",
+     "style": "e6_pd_25",
+     "font": "ttf:rounded:11:0.0:1.0:0.45",
+     "baseline": 0,
+     "sprites": [
+      "25"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      64,
+      96,
+      96,
+      128
+     ],
+     "text": "U",
+     "style": "e6_pd_26",
+     "font": "ttf:rounded:11:0.0:1.0:0.45",
+     "baseline": 0,
+     "sprites": [
+      "26"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      96,
+      96,
+      128,
+      128
+     ],
+     "text": "C",
+     "style": "e6_pd_27",
+     "font": "ttf:rounded:11:0.0:1.0:0.45",
+     "baseline": 0,
+     "sprites": [
+      "27"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      32,
+      32
+     ],
+     "text": "R",
+     "style": "e6_pd_36",
+     "font": "ttf:rounded:11:0.0:1.0:0.45",
+     "baseline": 0,
+     "sprites": [
+      "36"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      8,
+      32,
+      0,
+      64,
+      32
+     ],
+     "text": "OK",
+     "style": "e6_pd_37",
+     "font": "ttf:rounded:8:0.0:0.92:0.45",
+     "baseline": 0,
+     "sprites": [
+      "37"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      8,
+      0,
+      32,
+      64,
+      80
+     ],
+     "text": "Checking",
+     "style": "e6_pd_38",
+     "font": "ttf:rounded:8:0.0:0.85:0.45",
+     "baseline": 0,
+     "sprites": [
+      "38"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      8,
+      0,
+      80,
+      64,
+      128
+     ],
+     "text": "Checked",
+     "style": "e6_pd_39",
+     "font": "ttf:rounded:8:0.0:0.92:0.45",
+     "baseline": 0,
+     "sprites": [
+      "39"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      9,
+      0,
+      0,
+      128,
+      72
+     ],
+     "text": "Drafted",
+     "style": "e6_pd_3c~0_128",
+     "font": "ttf:rounded:36:0.0:0.85:0.45",
+     "baseline": 54,
+     "left": 7
+    },
+    {
+     "from": [
+      9,
+      0,
+      72,
+      40,
+      96
+     ],
+     "text": "Drafted",
+     "style": "e6_pd_3c~128_4096",
+     "font": "ttf:rounded:36:0.0:0.85:0.45",
+     "baseline": 54,
+     "left": 7
+    },
+    {
+     "from": [
+      9,
+      40,
+      72,
+      80,
+      96
+     ],
+     "text": "Drafted",
+     "style": "e6_pd_3c~128_4096",
+     "font": "ttf:rounded:36:0.0:0.85:0.45",
+     "baseline": 30,
+     "left": 7
+    },
+    {
+     "from": [
+      9,
+      80,
+      72,
+      120,
+      96
+     ],
+     "text": "Drafted",
+     "style": "e6_pd_3c~128_4096",
+     "font": "ttf:rounded:36:0.0:0.85:0.45",
+     "baseline": 6,
+     "left": 7
+    },
+    {
+     "sprite": "3e",
+     "text": "Scout Report:",
+     "style": "e6_pd_3e",
+     "font": "ttf:narrow:16:0.0:0.92:0.4",
+     "baseline": 152
+    },
+    {
+     "sprite": "3f",
+     "text": "COM is handling all scouting & research...",
+     "style": "e6_pd_help",
+     "font": "ttf:rounded:12:0.0:0.85:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "42",
+     "text": "No current activity",
+     "style": "e6_pd_help",
+     "font": "ttf:rounded:12:0.0:1.0:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "43",
+     "text": "Preferred Signee slot not used",
+     "style": "e6_pd_help",
+     "font": "ttf:rounded:12:0.0:0.92:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "44",
+     "text": "as 1st pick",
+     "style": "e6_pd_help",
+     "font": "ttf:rounded:12:0.0:1.0:0.5",
+     "baseline": 410,
+     "left": 307
+    },
+    {
+     "from": [
+      10,
+      40,
+      48,
+      96,
+      72
+     ],
+     "text": "Searching\nfor",
+     "style": "e6_pd_help",
+     "font": "ttf:rounded:7:0.0:1.0:0.5",
+     "baseline": 16,
+     "sprites": [
+      "40"
+     ]
+    },
+    {
+     "from": [
+      10,
+      96,
+      48,
+      128,
+      72
+     ],
+     "text": "...",
+     "style": "e6_pd_help",
+     "font": "ttf:rounded:12:0.0:1.0:0.5",
+     "baseline": 18,
+     "sprites": [
+      "40"
+     ]
+    },
+    {
+     "from": [
+      10,
+      0,
+      72,
+      64,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "40"
+     ]
+    },
+    {
+     "from": [
+      10,
+      56,
+      72,
+      64,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "40"
+     ]
+    },
+    {
+     "from": [
+      10,
+      56,
+      72,
+      64,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "40"
+     ]
+    },
+    {
+     "from": [
+      10,
+      64,
+      72,
+      112,
+      96
+     ],
+     "text": "Researching",
+     "style": "e6_pd_help",
+     "font": "ttf:narrow:8:0.0:0.85:0.6",
+     "baseline": 16,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "from": [
+      10,
+      112,
+      72,
+      128,
+      96
+     ],
+     "text": "...",
+     "style": "e6_pd_help",
+     "font": "ttf:rounded:12:0.0:1.0:0.5",
+     "baseline": 18,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "from": [
+      10,
+      0,
+      96,
+      64,
+      120
+     ],
+     "empty": true,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "from": [
+      10,
+      56,
+      96,
+      64,
+      120
+     ],
+     "empty": true,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "from": [
+      10,
+      56,
+      96,
+      64,
+      120
+     ],
+     "empty": true,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "sprite": "48",
+     "text": "Preferred Signee slot not used",
+     "style": "e6_pd_help",
+     "font": "ttf:rounded:11:0.0:0.92:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      174
+     ],
+     "left": 47
+    },
+    {
+     "sprite": "48",
+     "text": "(Usable from August on)",
+     "style": "e6_pd_red",
+     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      175
+     ],
+     "left": 254
+    }
+   ],
+   "name": "g3_pd_0",
+   "share": true
+  }
+ ]
+}
