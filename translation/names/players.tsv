@@ -1,0 +1,481 @@
+# main_prg.rel sec5 offset of the roster record	call id	English (real players, 2008 rosters; up to 12 letters)
+0x687f0	46741	Uehara
+0x68802	46742	Utsumi
+0x68814	46759	Greisinger
+0x68826	46769	Takahashi H
+0x68838	46755	Kisanuki
+0x6884a	46753	Kaneto
+0x6885c	46801	Yoshitake
+0x6886e	46747	Ochi
+0x68880	46800	Yamaguchi
+0x68892	46782	Nishimura
+0x688a4	46779	Toyoda
+0x688b6	46760	Kroon
+0x688c8	46784	Nomaguchi
+0x688da	46778	Togano
+0x688ec	46758	Kubo
+0x688fe	46797	Murata T
+0x68910	46786	Hayashi
+0x68922	46791	Fujita
+0x68934	46736	Abe
+0x68946	46750	Kato
+0x68958	46738	Lee S.Y.
+0x6896a	46745	Ogasawara
+0x6897c	46781	Nioka
+0x6898e	46803	Wakiya
+0x689a0	46763	Sakamoto
+0x689b2	46794	Furuki
+0x689c4	46744	Omichi
+0x689d6	46757	Kimura T
+0x689e8	46802	Ramirez
+0x689fa	46773	Tani
+0x68a0c	46770	Takahashi Y
+0x68a1e	46799	Yano
+0x68a30	46754	Kamei
+0x68a42	46768	Suzuki T
+0x68a54	46798	Murata Y
+0x68a66	46762	Gonzalez
+0x68a78	46761	Kosaka
+0x68a8a	46792	Fujimura
+0x68a9c	46766	Shimizu
+0x68aae	46804	Inzen
+0x68ac0	46821	Kawakami
+0x68ad2	46807	Asakura
+0x68ae4	46817	Ogasawara
+0x68af6	46847	Nakata
+0x68b08	46868	Yoshimi
+0x68b1a	46865	Yamai
+0x68b2c	46846	Nakazato
+0x68b3e	46836	Takahashi
+0x68b50	46824	Kobayashi
+0x68b62	46833	Suzuki
+0x68b74	46856	Hirai
+0x68b86	46815	Iwase
+0x68b98	46867	Yamamoto M
+0x68baa	46841	Chen
+0x68bbc	46820	Kawai
+0x68bce	46806	Asao
+0x68be0	46854	Hisamoto
+0x68bf2	46866	Yamauchi
+0x68c04	46840	Tanishige
+0x68c16	46819	Oda
+0x68c28	46818	Ogawa
+0x68c3a	46834	Woods
+0x68c4c	46837	Tatsunami
+0x68c5e	46851	Nakamura N
+0x68c70	46852	Nishikawa
+0x68c82	46842	De la Rosa
+0x68c94	46812	Ibata
+0x68ca6	46809	Araki
+0x68cb8	46863	Morino
+0x68cca	46869	Wada
+0x68cdc	46813	Lee B.K.
+0x68cee	46855	Hidenori
+0x68d00	46860	Fujii
+0x68d12	46811	Inoue
+0x68d24	46808	Arai
+0x68d36	46862	Morioka
+0x68d48	46839	Tani
+0x68d5a	46830	Sawai
+0x68d6c	46843	Donoue T
+0x68d7e	46857	Hirata
+0x68d90	46886	Otake
+0x68da2	46938	Lewis
+0x68db4	46912	Takahashi
+0x68dc6	46917	Hasegawa
+0x68dd8	46930	Miyazaki
+0x68dea	46872	Aoki T
+0x68dfc	46918	Hayashi
+0x68e0e	46883	Umetsu
+0x68e20	46891	Kishimoto
+0x68e32	46899	Kozlowski
+0x68e44	46913	Nagakawa
+0x68e56	46936	Yokoyama
+0x68e68	46924	Maeda K
+0x68e7a	46905	Shinoda
+0x68e8c	46901	Satake
+0x68e9e	46921	Hiroike
+0x68eb0	46881	Ueno
+0x68ec2	46873	Aoki H
+0x68ed4	46879	Ishihara
+0x68ee6	46895	Kura
+0x68ef8	46896	Kurihara
+0x68f0a	46920	Higashide
+0x68f1c	46904	Seabol
+0x68f2e	46911	Soyogi
+0x68f40	46933	Yamasaki
+0x68f52	46893	Kimura
+0x68f64	46892	Kida G
+0x68f76	46874	Akamatsu
+0x68f88	46915	Nakahigashi
+0x68f9a	46876	Amaya
+0x68fac	46887	Ogata K
+0x68fbe	46923	Maeda
+0x68fd0	46877	Alex
+0x68fe2	46906	Shima
+0x68ff4	46882	Uemura
+0x69006	46925	Matsumoto
+0x69018	46888	Ogata Y
+0x6902a	46922	Hirose
+0x6903c	46926	Matsuyama
+0x6904e	46932	Morikasa
+0x69060	46943	Ishikawa
+0x69072	47003	Rios
+0x69084	46975	Tateyama
+0x69096	46996	Muranaka
+0x690a8	46987	Masubuchi
+0x690ba	46957	Kato
+0x690cc	46980	Hagiwara
+0x690de	46983	Hanada
+0x690f0	47000	Yoshikawa
+0x69102	46952	Oshimoto
+0x69114	46941	Igarashi
+0x69126	46945	Lim
+0x69138	46959	Kawashima R
+0x6914a	46966	Gonzalez
+0x6915c	47001	Yoshinori
+0x6916e	46971	Takai
+0x69180	46968	Sato
+0x69192	46958	Kamada
+0x691a4	46984	Fukukawa
+0x691b6	46963	Kawamoto
+0x691c8	47004	Riggs
+0x691da	46976	Tanaka
+0x691ec	46970	Shiroishi
+0x691fe	46994	Miyamoto
+0x69210	46993	Miyade
+0x69222	46999	Yuichi
+0x69234	47005	Watarai
+0x69246	46960	Kawashima K
+0x69258	46940	Iihara
+0x6926a	46990	Manaka
+0x6927c	46969	Shida
+0x6928e	46985	Fukuchi
+0x692a0	46955	Guiel
+0x692b2	46939	Aoki
+0x692c4	47002	Yoneno
+0x692d6	46982	Hatakeyama
+0x692e8	46953	Onizaki
+0x692fa	46961	Kawabata S
+0x6930c	46974	Takeuchi
+0x6931e	46967	Saito
+0x69330	47065	Miura
+0x69342	47014	Wood
+0x69354	47026	Kudo
+0x69366	47051	Doi
+0x69378	47033	Kobayashi
+0x6938a	47053	Nasuno
+0x6939c	47030	Kuwahara K
+0x693ae	47070	Yokoyama
+0x693c0	47024	Kizuka
+0x693d2	47020	Kato
+0x693e4	47064	Matt White
+0x693f6	47050	Terahara
+0x69408	47044	Takasaki
+0x6941a	47073	Yoshimi
+0x6942c	47066	Mitsuhashi
+0x6943e	47068	Yamakita
+0x69450	47021	Kawamura
+0x69462	47061	Hughes
+0x69474	47006	Aikawa
+0x69486	47049	Tsuruoka
+0x69498	47055	Nishi
+0x694aa	47067	Murata
+0x694bc	47008	Ishii T
+0x694ce	47039	J.J.
+0x694e0	47036	Saeki
+0x694f2	47057	Nonaka
+0x69504	47060	Bigbie
+0x69516	47074	Yoshimura
+0x69528	47013	Uchikawa
+0x6953a	47015	Onishi
+0x6954c	47042	Suzuki T
+0x6955e	47025	Kinjo
+0x69570	47031	Koike
+0x69582	47017	Ozeki
+0x69594	47034	Saito T
+0x695a6	47062	Fujita
+0x695b8	47035	Saito H
+0x695ca	47009	Ishikawa
+0x695dc	47041	Shimozono
+0x695ee	47040	Shimokubo
+0x69600	47080	Ando
+0x69612	47104	Shimoyanagi
+0x69624	47128	Fukuhara
+0x69636	47084	Iwata
+0x69648	47077	Atchison
+0x6965a	47109	Sugiyama
+0x6966c	47078	Abe K
+0x6967e	47087	Egusa
+0x69690	47141	Watanabe
+0x696a2	47096	Kubota
+0x696b4	47085	Williams
+0x696c6	47129	Fujikawa
+0x696d8	47086	Uezono
+0x696ea	47132	Vogelsong
+0x696fc	47091	Kanemura S
+0x6970e	47120	Nomi
+0x69720	47123	Hashimoto K
+0x69732	47117	Tsutsui
+0x69744	47135	Yano
+0x69756	47121	Noguchi
+0x69768	47076	Asai
+0x6977a	47079	Arai
+0x6978c	47130	Fujimoto
+0x6979e	47100	Saka
+0x697b0	47082	Imaoka
+0x697c2	47110	Sekimoto
+0x697d4	47119	Toritani
+0x697e6	47126	Hirano
+0x697f8	47090	Katsuragi
+0x6980a	47093	Kanemoto
+0x6981c	47075	Akahoshi
+0x6982e	47127	Ford
+0x69840	47101	Sakurai
+0x69852	47125	Hiyama
+0x69864	47103	Shimizu
+0x69876	47094	Kano
+0x69888	47112	Takahashi M
+0x6989a	47105	Shuta
+0x698ac	47139	Lin
+0x698be	47107	Shoda T
+0x698d0	47152	Iwakuma
+0x698e2	47175	Tanaka
+0x698f4	47180	Nagai
+0x69906	47144	Asai
+0x69918	47179	Domingo
+0x6992a	47185	Hasebe
+0x6993c	47145	Arime
+0x6994e	47153	Inche
+0x69960	47157	Ogura
+0x69972	47203	Yoshizaki
+0x69984	47168	Koyama
+0x69996	47143	Aoyama
+0x699a8	47150	Ichiba
+0x699ba	47158	Katayama
+0x699cc	47194	Matsumoto
+0x699de	47160	Kawagishi
+0x699f0	47142	Aikyo
+0x69a02	47199	Yamamura
+0x69a14	47189	Fujii
+0x69a26	47171	Shima
+0x69a38	47164	Kimura
+0x69a4a	47197	Yamasaki T
+0x69a5c	47188	Fernandez
+0x69a6e	47172	Takasu
+0x69a80	47170	Shiokawa
+0x69a92	47166	Kusano
+0x69aa4	47198	Yamashita
+0x69ab6	47207	Watanabe N
+0x69ac8	47204	Rick
+0x69ada	47167	Kenshi
+0x69aec	47176	Teppei
+0x69afe	47149	Isobe
+0x69b10	47190	Makida
+0x69b22	47173	Takanami
+0x69b34	47151	Ino
+0x69b46	47202	Yoshioka
+0x69b58	47155	Ohiro
+0x69b6a	47181	Nakashima
+0x69b7c	47195	Moritani
+0x69b8e	47186	Hijirisawa
+0x69ba0	47252	Darvish
+0x69bb2	47234	Glynn
+0x69bc4	47260	Fujii
+0x69bd6	47249	Tadano
+0x69be8	47272	Yoshikawa
+0x69bfa	47241	Sweeney
+0x69c0c	47238	Sakamoto
+0x69c1e	47265	Miyanishi
+0x69c30	47261	Hoshino
+0x69c42	47250	Tateyama
+0x69c54	47247	Takeda H
+0x69c66	47262	Michael
+0x69c78	47248	Takeda M
+0x69c8a	47269	Yagi
+0x69c9c	47232	Kinoshita
+0x69cae	47270	Yamamoto
+0x69cc0	47228	Kanamori
+0x69cd2	47256	Toyoshima
+0x69ce4	47255	Tsuruoka
+0x69cf6	47246	Takahashi
+0x69d08	47224	Oda
+0x69d1a	47251	Tanaka K
+0x69d2c	47245	Takaguchi
+0x69d3e	47229	Kaneko M
+0x69d50	47209	Iiyama
+0x69d62	47214	Inada
+0x69d74	47243	Sledge
+0x69d86	47240	Jones
+0x69d98	47236	Koyano
+0x69daa	47215	Inaba
+0x69dbc	47268	Morimoto
+0x69dce	47254	Tsuboi
+0x69de0	47233	Kudo
+0x69df2	47211	Itoi
+0x69e04	47217	Imanari
+0x69e16	47271	Yang
+0x69e28	47258	Nakata
+0x69e3a	47237	Konta
+0x69e4c	47230	Kaneko Y
+0x69e5e	47267	Murata
+0x69e70	47342	Wakui
+0x69e82	47327	Hoashi
+0x69e94	47276	Ishii K
+0x69ea6	47293	Kinney
+0x69eb8	47319	Nishiguchi
+0x69eca	47292	Kishi
+0x69edc	47285	Onuma
+0x69eee	47289	Onodera
+0x69f00	47338	Yamazaki
+0x69f12	47330	Hoshino
+0x69f24	47286	Okamoto S
+0x69f36	47296	Graman
+0x69f48	47333	Matsunaga
+0x69f5a	47323	Hirano
+0x69f6c	47279	Iwasaki
+0x69f7e	47306	Shotsu
+0x69f90	47337	Yamagishi
+0x69fa2	47336	Mitsui
+0x69fb4	47331	Hosokawa
+0x69fc6	47295	Ginjiro
+0x69fd8	47326	Brazell
+0x69fea	47282	Eto
+0x69ffc	47322	Hirao
+0x6a00e	47291	Kataoka
+0x6a020	47277	Ishii Y
+0x6a032	47317	Nakamura
+0x6a044	47315	Nakajima
+0x6a056	47284	Oshima
+0x6a068	47328	Bocachica
+0x6a07a	47274	Akada
+0x6a08c	47332	Matsusaka
+0x6a09e	47302	G.G. Sato
+0x6a0b0	47301	Sato T
+0x6a0c2	47297	Kuriyama
+0x6a0d4	47320	Noda
+0x6a0e6	47280	Uemoto
+0x6a0f8	47313	Taneda
+0x6a10a	47290	Kaizuka
+0x6a11c	47308	Takayama
+0x6a12e	47300	Saito
+0x6a140	47354	Kaneko
+0x6a152	47388	Hirano Y
+0x6a164	47357	Kawagoe
+0x6a176	47368	Kondo
+0x6a188	47359	Kishida
+0x6a19a	47367	Komatsu
+0x6a1ac	47400	Yamamoto
+0x6a1be	47358	Kikuchi H
+0x6a1d0	47375	Takagi
+0x6a1e2	47406	Yoshino
+0x6a1f4	47396	Motoyanagi
+0x6a206	47353	Kato D
+0x6a218	47381	Nakayama
+0x6a22a	47409	Ortiz
+0x6a23c	47392	Mitsuhara
+0x6a24e	47364	Kosuke
+0x6a260	47398	Yamaguchi
+0x6a272	47352	Katsuki
+0x6a284	47386	Hidaka
+0x6a296	47390	Maeda
+0x6a2a8	47360	Kitagawa
+0x6a2ba	47355	Cabrera
+0x6a2cc	47361	Kimoto
+0x6a2de	47370	Shiozaki
+0x6a2f0	47365	Goto
+0x6a302	47407	LaRocca
+0x6a314	47344	Abe
+0x6a326	47349	Obiki
+0x6a338	47385	Hamanaka
+0x6a34a	47395	Muramatsu
+0x6a35c	47373	Shimoyama
+0x6a36e	47408	Rhodes
+0x6a380	47369	Sakaguchi
+0x6a392	47394	Mukae
+0x6a3a4	47377	Tsuji
+0x6a3b6	47376	Tanaka
+0x6a3c8	47371	Shibata
+0x6a3da	47343	Aikawa
+0x6a3ec	47405	Yoshida
+0x6a3fe	47389	Furuki
+0x6a410	47438	Kobayashi H
+0x6a422	47457	Naruse
+0x6a434	47476	Watanabe S
+0x6a446	47428	Ono
+0x6a458	47445	Shimizu N
+0x6a46a	47431	Karakawa
+0x6a47c	47451	Takagi
+0x6a48e	47439	Komiyama
+0x6a4a0	47417	Ito
+0x6a4b2	47415	Abreu
+0x6a4c4	47432	Kawasaki
+0x6a4d6	47427	Ogino
+0x6a4e8	47426	Omine
+0x6a4fa	47455	Tejima
+0x6a50c	47435	Kubo
+0x6a51e	47444	Sikorski
+0x6a530	47460	Nemoto T
+0x6a542	47433	Kanda
+0x6a554	47442	Satozaki
+0x6a566	47461	Hashimoto
+0x6a578	47453	Tanaka M
+0x6a58a	47466	Fukura
+0x6a59c	47424	Ortiz
+0x6a5ae	47470	Hosoya
+0x6a5c0	47459	Nemoto S
+0x6a5d2	47418	Imae
+0x6a5e4	47471	Hori
+0x6a5f6	47458	Nishioka
+0x6a608	47449	Zuleta
+0x6a61a	47452	Takehara
+0x6a62c	47443	Saburo
+0x6a63e	47463	Hayakawa
+0x6a650	47425	Omatsu
+0x6a662	47429	Kakunaka
+0x6a674	47477	Watanabe M
+0x6a686	47464	Hayasaka
+0x6a698	47412	Aono
+0x6a6aa	47469	Benny
+0x6a6bc	47423	Otsuka
+0x6a6ce	47474	Minami
+0x6a6e0	47506	Sugiuchi
+0x6a6f2	47545	Wada
+0x6a704	47479	Arakaki
+0x6a716	47486	Otonari
+0x6a728	47488	Oba
+0x6a73a	47493	Guttormson
+0x6a74c	47523	Fujioka
+0x6a75e	47534	Mise
+0x6a770	47518	Nikowski
+0x6a782	47524	Houlton
+0x6a794	47499	Kume
+0x6a7a6	47532	Mahara
+0x6a7b8	47502	Saito K
+0x6a7ca	47546	Powell
+0x6a7dc	47495	Kamiuchi
+0x6a7ee	47507	Standridge
+0x6a800	47491	Katto
+0x6a812	47490	Ogura
+0x6a824	47538	Yamazaki
+0x6a836	47512	Tanoue
+0x6a848	47531	Matoyama
+0x6a85a	47527	Honma
+0x6a86c	47526	Honda
+0x6a87e	47515	Nakazawa
+0x6a890	47536	Morimoto
+0x6a8a2	47500	Kokubo
+0x6a8b4	47528	Matsuda
+0x6a8c6	47496	Kawasaki
+0x6a8d8	47529	Matsunaka
+0x6a8ea	47544	Restovich
+0x6a8fc	47513	Tamura
+0x6a90e	47489	Omura
+0x6a920	47505	Shibahara
+0x6a932	47482	Ide
+0x6a944	47510	Takaya
+0x6a956	47530	Matoba
+0x6a968	47494	Kaneko
+0x6a97a	47484	Egawa
+0x6a98c	47498	Kidokoro
+0x6a99e	47480	Arakane
