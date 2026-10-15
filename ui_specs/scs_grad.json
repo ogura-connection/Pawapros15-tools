@@ -592,17 +592,210 @@
      0,
      0,
      128,
+     96
+    ],
+    [
+     3,
+     88,
+     0,
+     128,
+     120
+    ],
+    [
+     3,
+     80,
+     64,
+     88,
+     88
+    ],
+    [
+     3,
+     80,
+     96,
+     88,
+     120
+    ],
+    [
+     4,
+     72,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     88,
+     72,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     5,
+     16,
+     120,
+     32,
+     128
+    ],
+    [
+     7,
+     112,
+     0,
+     128,
+     48
+    ],
+    [
+     7,
+     96,
+     112,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     80,
+     96,
+     128
+    ],
+    [
+     8,
+     96,
+     112,
+     128,
+     120
+    ],
+    [
+     8,
+     120,
+     96,
+     128,
+     112
+    ],
+    [
+     8,
+     96,
+     120,
+     112,
+     128
+    ],
+    [
+     8,
+     96,
+     104,
+     104,
+     112
+    ],
+    [
+     25,
+     104,
+     0,
+     128,
+     48
+    ],
+    [
+     25,
+     104,
+     48,
+     112,
      72
     ],
     [
-     2,
+     26,
      0,
-     72,
+     104,
+     128,
+     128
+    ],
+    [
+     34,
+     40,
+     48,
+     64,
+     72
+    ],
+    [
+     34,
+     64,
+     48,
      80,
-     96
+     56
+    ],
+    [
+     11,
+     112,
+     112,
+     128,
+     128
     ]
    ],
    "labels": [
+    {
+     "from": [
+      8,
+      80,
+      96,
+      104,
+      112
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      0,
+      112,
+      24,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      24,
+      112,
+      48,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      48,
+      112,
+      56,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      56,
+      112,
+      64,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      64,
+      112,
+      72,
+      128
+     ],
+     "empty": true
+    },
     {
      "sprite": "0e",
      "text": "Strength",
@@ -706,9 +899,342 @@
       11
      ],
      "baseline": 18
+    },
+    {
+     "sprite": "1c",
+     "text": "yr",
+     "style": "d2_st_res1",
+     "font": "d:narrow:12:1.0:0.4:0",
+     "palettes": [
+      23
+     ],
+     "slices": true,
+     "slice_width": 6,
+     "dy": 2,
+     "centre_x": 16
+    },
+    {
+     "sprite": "26",
+     "text": "Spr",
+     "style": "d2_st_res1",
+     "font": "d:narrow:9:0.78:0.4:0",
+     "palettes": [
+      23
+     ],
+     "baseline": 16
+    },
+    {
+     "sprite": "27",
+     "text": "Sum",
+     "style": "d2_st_res1",
+     "font": "d:narrow:8:0.78:0.4:0",
+     "palettes": [
+      23
+     ],
+     "baseline": 17
+    },
+    {
+     "sprite": "28",
+     "text": "District Tourney",
+     "style": "d2_st_res",
+     "font": "d:narrow:9:0.78:0.4:0",
+     "palettes": [
+      23
+     ],
+     "slices": true,
+     "slice_width": 33,
+     "dy": 1,
+     "centre_x": 36
+    },
+    {
+     "sprite": "29",
+     "text": "Koshien",
+     "style": "d2_st_res",
+     "font": "d:narrow:14:1.0:0.4:0",
+     "palettes": [
+      23
+     ],
+     "slices": true,
+     "slice_width": 23,
+     "dy": 1,
+     "centre_x": 36
+    },
+    {
+     "sprite": "62",
+     "text": "Pref. Tourney",
+     "style": "d2_st_res",
+     "font": "d:narrow:11:0.78:0.4:0",
+     "palettes": [
+      23
+     ],
+     "slices": true,
+     "slice_width": 34,
+     "dy": 3,
+     "centre_x": 36
+    },
+    {
+     "sprite": "63",
+     "text": "Pref. Tourney",
+     "style": "d2_st_res",
+     "font": "d:narrow:11:0.78:0.4:0",
+     "palettes": [
+      23
+     ],
+     "slices": true,
+     "slice_width": 34,
+     "dy": 3,
+     "centre_x": 36
+    },
+    {
+     "sprite": "64",
+     "text": "Pref. Tourney",
+     "style": "d2_st_res",
+     "font": "d:narrow:11:0.78:0.4:0",
+     "palettes": [
+      23
+     ],
+     "slices": true,
+     "slice_width": 34,
+     "dy": 3,
+     "centre_x": 36
+    },
+    {
+     "sprite": "65",
+     "text": "Pref. Tourney",
+     "style": "d2_st_res",
+     "font": "d:narrow:11:0.78:0.4:0",
+     "palettes": [
+      23
+     ],
+     "slices": true,
+     "slice_width": 34,
+     "dy": 3,
+     "centre_x": 36
+    },
+    {
+     "sprite": "2a",
+     "text": "Didn't Play",
+     "style": "d2_st_res",
+     "font": "d:narrow:12:0.92:0.4:0",
+     "palettes": [
+      23
+     ],
+     "baseline": 18,
+     "centre_x": 36
+    },
+    {
+     "sprite": "2b",
+     "text": "Rd. Loss",
+     "style": "d2_st_res",
+     "font": "d:narrow:13:0.78:0.4:0",
+     "palettes": [
+      23
+     ],
+     "baseline": 18,
+     "centre_x": 43
+    },
+    {
+     "sprite": "2c",
+     "text": "Runner-up",
+     "style": "d2_st_res",
+     "font": "d:narrow:13:0.85:0.4:0",
+     "palettes": [
+      23
+     ],
+     "baseline": 18,
+     "centre_x": 36
+    },
+    {
+     "sprite": "2d",
+     "text": "Champion",
+     "style": "d2_st_res",
+     "font": "d:narrow:13:0.85:0.4:0",
+     "palettes": [
+      23
+     ],
+     "baseline": 18,
+     "centre_x": 36
+    },
+    {
+     "sprite": "73",
+     "text": "Eliminated",
+     "style": "d2_st_res",
+     "font": "d:narrow:13:0.85:0.4:0",
+     "palettes": [
+      23
+     ],
+     "slices": true,
+     "slice_width": 35,
+     "dy": -1,
+     "centre_x": 36
+    },
+    {
+     "sprite": "2e",
+     "text": "Success!",
+     "style": "d2_st_ok",
+     "font": "d:rounded:15:1.0:0.5:0",
+     "palettes": [
+      19
+     ],
+     "baseline": 238
+    },
+    {
+     "sprite": "2f",
+     "text": "Failure...",
+     "style": "d2_st_ng",
+     "font": "d:rounded:15:1.0:0.5:0",
+     "palettes": [
+      20
+     ],
+     "slices": true,
+     "slice_width": 44,
+     "dy": 1
+    },
+    {
+     "sprite": "30",
+     "text": "Half and Half?",
+     "style": "d2_st_half",
+     "font": "d:rounded:12:0.78:0.5:0",
+     "palettes": [
+      21
+     ],
+     "slices": true,
+     "slice_width": 47,
+     "dy": 1
+    },
+    {
+     "sprite": "31",
+     "text": "No Surgery",
+     "style": "d2_st_none",
+     "font": "d:rounded:15:0.78:0.5:0",
+     "palettes": [
+      22
+     ],
+     "baseline": 236
+    },
+    {
+     "sprite": "39",
+     "text": "Pawafuru High",
+     "style": "d2_st_school",
+     "font": "d:d_narrowi:13:0.92:0.3:0",
+     "palettes": [
+      24
+     ],
+     "baseline": 351
+    },
+    {
+     "sprite": "3a",
+     "text": "Teio Jitsugyo High",
+     "style": "d2_st_school",
+     "font": "d:d_narrowi:12:0.78:0.3:0",
+     "palettes": [
+      24
+     ],
+     "slices": true,
+     "slice_width": 49,
+     "dy": 1
+    },
+    {
+     "sprite": "3b",
+     "text": "St. Tachibana Gakuen High",
+     "style": "d2_st_school",
+     "font": "d:d_narrowi:8:0.78:0.3:0",
+     "palettes": [
+      24
+     ],
+     "slices": true,
+     "slice_width": 49,
+     "dy": 2
+    },
+    {
+     "sprite": "3c",
+     "text": "Haikyo High",
+     "style": "d2_st_school",
+     "font": "d:d_narrowi:13:0.78:0.3:0",
+     "palettes": [
+      24
+     ],
+     "baseline": 351
+    },
+    {
+     "sprite": "07",
+     "text": "Hardest Practice",
+     "style": "d2_st_head",
+     "font": "d:narrow:14:1.0:0.4:0",
+     "palettes": [
+      5
+     ],
+     "slices": true,
+     "slice_width": 65,
+     "dy": 0,
+     "left": 34
+    },
+    {
+     "sprite": "08",
+     "text": "Game Record",
+     "style": "d2_st_head",
+     "font": "d:narrow:14:1.0:0.4:0",
+     "palettes": [
+      5
+     ],
+     "slices": true,
+     "slice_width": 54,
+     "dy": 0,
+     "left": 273
+    },
+    {
+     "sprite": "09",
+     "text": "Memories with Her",
+     "style": "d2_st_head",
+     "font": "d:narrow:14:1.0:0.4:0",
+     "palettes": [
+      5
+     ],
+     "slices": true,
+     "slice_width": 30,
+     "dy": 0,
+     "left": 54
+    },
+    {
+     "sprite": "0a",
+     "text": "Doctor's Surgery Result",
+     "style": "d2_st_head",
+     "font": "d:narrow:10:0.78:0.4:0",
+     "palettes": [
+      5
+     ],
+     "slices": true,
+     "slice_width": 27,
+     "dy": 4,
+     "left": 285
+    },
+    {
+     "sprite": "0c",
+     "text": "Comment",
+     "style": "d2_st_head",
+     "font": "d:narrow:14:1.0:0.4:0",
+     "palettes": [
+      5
+     ],
+     "baseline": 289,
+     "left": 250
+    },
+    {
+     "sprite": "18",
+     "text": "Years Single\n18 yrs",
+     "style": "d2_st_single",
+     "font": "d:narrow:15:1.0:0.4:0",
+     "palettes": [
+      18
+     ],
+     "slices": true,
+     "slice_width": 40,
+     "dy": -7,
+     "line_step": 27
     }
    ],
-   "name": "tags"
+   "name": "pool",
+   "share": true
   }
  ]
 }
