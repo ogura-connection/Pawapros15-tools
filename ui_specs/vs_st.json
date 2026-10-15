@@ -66,9 +66,9 @@
     {
      "sprite": "07",
      "text": "Hiroshima",
-     "style": "f_name3",
-     "font": "ttf:narrow:11:0.0:0.9:0.0",
-     "baseline": 41,
+     "style": "f_name5",
+     "font": "ttf:narrow:12:0.0:0.9:0.0",
+     "baseline": 42,
      "palettes": [
       7
      ],
@@ -78,7 +78,7 @@
      "sprite": "08",
      "text": "Tokyo D",
      "style": "f_name3",
-     "font": "ttf:narrow:13:0.0:0.95:0.0",
+     "font": "ttf:narrow:13:0.0:1.0:0.0",
      "baseline": 42,
      "palettes": [
       7
@@ -89,7 +89,7 @@
      "sprite": "09",
      "text": "Yokohama",
      "style": "f_name3",
-     "font": "ttf:narrow:10:0.0:0.95:0.0",
+     "font": "ttf:narrow:11:0.0:0.9:0.0",
      "baseline": 41,
      "palettes": [
       7
@@ -111,7 +111,7 @@
      "sprite": "0b",
      "text": "Koshien",
      "style": "f_name3",
-     "font": "ttf:narrow:13:0.0:0.95:0.0",
+     "font": "ttf:narrow:13:0.0:1.0:0.0",
      "baseline": 42,
      "palettes": [
       7
@@ -166,7 +166,7 @@
      "sprite": "10",
      "text": "Kyocera",
      "style": "f_name3",
-     "font": "ttf:narrow:13:0.0:0.95:0.0",
+     "font": "ttf:narrow:13:0.0:1.0:0.0",
      "baseline": 42,
      "palettes": [
       7
@@ -177,7 +177,7 @@
      "sprite": "11",
      "text": "Sapporo D",
      "style": "f_name3",
-     "font": "ttf:narrow:10:0.0:0.95:0.0",
+     "font": "ttf:narrow:11:0.0:0.9:0.0",
      "baseline": 41,
      "palettes": [
       7
@@ -209,9 +209,9 @@
     {
      "sprite": "14",
      "text": "Yamanote",
-     "style": "f_name3",
-     "font": "ttf:narrow:11:0.0:0.9:0.0",
-     "baseline": 41,
+     "style": "f_name5",
+     "font": "ttf:narrow:12:0.0:0.9:0.0",
+     "baseline": 42,
      "palettes": [
       7
      ],
@@ -275,8 +275,8 @@
     {
      "sprite": "1a",
      "text": "Overseas",
-     "style": "f_name3",
-     "font": "ttf:narrow:12:0.0:0.9:0.0",
+     "style": "f_name5",
+     "font": "ttf:narrow:13:0.0:0.9:0.0",
      "baseline": 42,
      "palettes": [
       7
@@ -287,7 +287,7 @@
      "sprite": "05",
      "text": "Random",
      "style": "f_name3",
-     "font": "ttf:narrow:13:0.0:0.95:0.0",
+     "font": "ttf:narrow:13:0.0:1.0:0.0",
      "baseline": 43,
      "palettes": [
       7
