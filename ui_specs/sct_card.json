@@ -576,8 +576,8 @@
      ],
      "text": "Go\nOn",
      "style": "e4_em_card",
-     "font": "ttf:rounded:14:0.0:0.92:0.3",
-     "baseline": 26
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 25
     },
     {
      "from": [
@@ -589,9 +589,9 @@
      ],
      "text": "This\nWeek",
      "style": "e4_em_card~0_32",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 27,
-     "left": 2
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 25,
+     "left": 5
     },
     {
      "from": [
@@ -603,9 +603,9 @@
      ],
      "text": "This\nWeek",
      "style": "e4_em_card~32_4096",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 27,
-     "left": 2
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 25,
+     "left": 5
     },
     {
      "from": [
@@ -617,8 +617,8 @@
      ],
      "text": "Data",
      "style": "e4_em_card",
-     "font": "ttf:rounded:15:0.0:0.85:0.3",
-     "baseline": 19
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 17
     },
     {
      "from": [
@@ -684,9 +684,9 @@
      ],
      "text": "(The more \u2605, the harder it is to learn.)",
      "style": "e4_em_help~0_128",
-     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "font": "ttf:e4uni:14:0.0:0.92:0.3",
      "baseline": 23,
-     "left": 10
+     "left": 15
     },
     {
      "from": [
@@ -698,9 +698,9 @@
      ],
      "text": "(The more \u2605, the harder it is to learn.)",
      "style": "e4_em_help~128_256",
-     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "font": "ttf:e4uni:14:0.0:0.92:0.3",
      "baseline": 23,
-     "left": 10
+     "left": 15
     },
     {
      "from": [
@@ -712,9 +712,9 @@
      ],
      "text": "(The more \u2605, the harder it is to learn.)",
      "style": "e4_em_help~256_4096",
-     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "font": "ttf:e4uni:14:0.0:0.92:0.3",
      "baseline": 23,
-     "left": 10
+     "left": 15
     },
     {
      "from": [
@@ -724,11 +724,11 @@
       128,
       128
      ],
-     "text": "Ability Details",
+     "text": ": Ability Details",
      "style": "e4_em_help2~0_32",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 21,
-     "left": 2
+     "font": "ttf:rounded:8:0.0:0.92:0.3",
+     "baseline": 20,
+     "left": 1
     },
     {
      "from": [
@@ -738,11 +738,11 @@
       48,
       32
      ],
-     "text": "Ability Details",
+     "text": ": Ability Details",
      "style": "e4_em_help2~32_4096",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 21,
-     "left": 2
+     "font": "ttf:rounded:8:0.0:0.92:0.3",
+     "baseline": 20,
+     "left": 1
     }
    ],
    "name": "help lines",

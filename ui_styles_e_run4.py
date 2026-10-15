@@ -1,6 +1,9 @@
 """Label styles of art run 4, agent E (school_g.arc, sct_card.arc, sct_comd.arc, sct_a_ed.arc, sct_a_od.arc). Loaded by ui_type.py.
 Colours are read from the Japanese lettering of each palette; every style is crisp (solid rings, no half tones except fill ramps)."""
 from ui_styles_ore_ini import ringfill
+import ui_type
+
+ui_type.TTF["e4uni"] = ("/System/Library/Fonts/Supplemental/Arial Unicode.ttf", 0)       # has the star of the help line
 
 STYLES = {}
 
@@ -84,7 +87,7 @@ STYLES["e4_em_item1"] = ringfill([15, 15, 15, 15, 12, 11], [1])                 
 # the 80x24 command buttons (pal 24) and the small cards / cross icon (pal 114): white letters, dark blue ring, teal glow
 STYLES["e4_em_card"] = ringfill([15, 15, 15, 14, 13, 12], [4, 3], [2])
 # the "(The more ...)" help line (pal 42) and the "Ability Details" help pieces (pal 9): white letters, dark rim, grey shadow
-STYLES["e4_em_help"] = ringfill([14, 14, 14, 13, 12, 11], [1, 1], [4])
+STYLES["e4_em_help"] = ringfill([14, 14, 14, 13, 12, 11], [4, 4], [5])
 STYLES["e4_em_help2"] = ringfill([14, 14, 14, 13, 12, 11], [1, 1], [3, 4])
 # words cut over side-by-side page rectangles (window_n): the styles "<style>~c0_c1"
 for _n, _cuts in (("e4_em_card", [(0, 32), (32, 4096)]), ("e4_em_help", [(0, 128), (128, 256), (256, 4096)]),
