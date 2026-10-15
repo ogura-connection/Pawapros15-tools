@@ -1,0 +1,209 @@
+# section_offset	hash of the original run	English (see tl.py)
+1246	0400	  Narita event
+1264	813b	  Kinno event
+1282	de65	  Onji event
+1364	00df	Test 1
+1376	022e	Test 2
+1388	b73a	Test 3
+1400	fb44	Test 4
+1412	00df	Test 1
+1424	022e	Test 2
+1436	b73a	Test 3
+1448	fb44	Test 4
+1460	00df	Test 1
+1472	022e	Test 2
+1484	b73a	Test 3
+1496	fb44	Test 4
+1518	49e7	  Screen display test
+1536	7b30	  Message display test
+1558	93f4	  Back to top
+1638	f439	  Event test
+1656	27d5	  Playing manager event
+1684	93f4	  Back to top
+1772	ed35	Player select screen
+1802	7c3f	Blank screen
+1830	d171	Event screen
+1858	c2b8	Pitching change process
+1876	4665	Pick a pitcher for the change.
+1914	0a0b	Pinch hitter process
+1932	cf4e	Pick a batter for the change.
+1970	4623	Pinch runner process
+1988	f05c	Pick a runner for the change.
+2026	2f67	Special select process
+2048	7711	Pick whatever you like.
+2102	8f3e	You chose no. 
+2126	652b	.
+2142	155d	Special select process 2
+2164	79c6	This one is just for looking.
+2200	5aae	End of screen display test
+2228	eefd	Name: 
+2258	a673	  123456789012345
+2288	777f	  aiueo
+2304	f507	  kakikukeko
+2320	83fe	  ABCDEFGHIJ
+2342	f213	  ??????????????
+2370	dd5e	  aaaaaaa
+2388	3b00	  iiiiiii
+2406	1448	  uuuuuuu
+2424	6e36	  eeeeeee
+2442	71e3	  ooooooo
+2460	dc73	  kakakakakakaka
+2478	441d	  kikiikikikiki
+2498	4305	  ABCDEFGHIJKLMN
+2530	699c	How to use the special select
+2554	8583	No commands except line breaks.
+2584	caeb	Max 200 chars incl. commands.
+2614	1d19	No wrapping: use ret to break.
+2644	fe29	No ret on the last line.
+2672	ce68	pn_end goes in.
+2698	32ad	Choices: leave 1 space in front.
+2728	fe7d	etc.
+2742	fe7d	etc.
+2754	fe7d	etc.
+2766	fe7d	etc.
+2828	0799	I'm 
+2840	6140	 Kantoku!
+2908	0799	I'm 
+2920	362d	, pitching coach!
+2990	04dd	My name's 
+3014	e666	!
+3036	6aa9	The end
+3048	e69a	Pitching change!
+3070	4665	Pick a pitcher for the change.
+3112	06ff	Batter substitution!
+3148	051a	Runner substitution!
+3190	aabf	  Can't qualify for the win
+3214	6658	  Out of stamina
+3230	777f	  aiueo
+3328	761e	What's going on?
+3344	6598	Can you keep pitching?
+3370	0ccb	  I want to come out
+3386	0fd7	  Pull me if I give up a run
+3414	26fd	  Let me qualify for the win
+3528	761e	What's going on?
+3544	6598	Can you keep pitching?
+3570	0ccb	  I want to come out
+3586	0fd7	  Pull me if I give up a run
+3614	f6d9	  Let me finish the game
+3716	58bf	Can't be helped.
+3732	8783	You're coming out!
+3768	f328	All right, as planned,
+3786	8783	you're coming out!
+3820	587a	Got it.
+3834	0324	You're coming out!
+3860	587a	Got it.
+3874	46b3	You stay in until they score!
+3908	2b77	But if they start hitting you,
+3932	ca75	or your stamina runs out,
+3964	9f56	I'll pull you. No mercy!
+4012	587a	Got it.
+4026	386c	You stay in until you qualify!
+4060	2b77	But if they start hitting you,
+4084	ca75	or your stamina runs out,
+4116	9f56	I'll pull you. No mercy!
+4164	587a	Got it.
+4178	f9bc	You go the distance!
+4200	2b77	But if they start hitting you,
+4224	ca75	or your stamina runs out,
+4256	9f56	I'll pull you. No mercy!
+4308	587a	Got it.
+4322	46b3	You stay in until they score!
+4356	2b77	But if they start hitting you,
+4380	ca75	or your stamina runs out,
+4412	9f56	I'll pull you. No mercy!
+4460	587a	Got it.
+4474	0602	Stay in for this inning only!
+4500	2b77	But if they start hitting you,
+4524	ca75	or your stamina runs out,
+4556	9f56	I'll pull you. No mercy!
+4604	587a	Got it.
+4618	72e0	You stay in while we're ahead!
+4644	2b77	But if they start hitting you,
+4668	ca75	or your stamina runs out,
+4700	9f56	I'll pull you. No mercy!
+4748	587a	Got it.
+4762	f037	Stay in unless they go ahead!
+4792	2b77	But if they start hitting you,
+4816	ca75	or your stamina runs out,
+4848	9f56	I'll pull you. No mercy!
+4928	4465	A hit here is a walk-off!
+4946	29a5	I'm counting on you!
+5012	e1f5	Bases loaded!
+5024	29a5	I'm counting on you!
+5084	2f99	A hit here gets us rolling.
+5112	29a5	I'm counting on you!
+5134	ce41	  Choose setup man
+5156	9276	  Choose closer
+5172	6dcd	  Pitcher's done. Change him.
+5264	1b6b	  Pinch hitter, walk-off chance
+5290	dcb9	  Pinch runner, walk-off chance
+5316	b76d	  CPU pinch hitter
+5396	2d8d	  CPU pinch runner
+5412	dcb9	  Pinch runner, walk-off chance
+5438	b76d	  CPU pinch hitter
+5532	a41f	Kantoku!
+5582	dde4	 up. Hold them here,
+5610	068e	and the win is ours.
+5634	864b	Let's bring in the closer
+5654	c453	and close it out.
+5684	fecf	Who should it be?
+5704	4b29	Please choose a closer.
+5734	a53b	My pick is marked 
+5748	ba4a	◎
+5756	af2f	.
+5788	731a	Understood.
+5804	f384	Pitching change!
+5840	a41f	Kantoku!
+5854	34c7	Let's change pitchers here
+5876	7af2	and turn the tide.
+5902	fecf	Who should it be?
+5922	4b77	Please choose a pitcher.
+5954	a53b	My pick is marked 
+5968	ba4a	◎
+5976	af2f	.
+6010	731a	Understood.
+6026	f384	Pitching change!
+6064	a41f	Kantoku!
+6074	b1b7	One hit here wins it.
+6102	3d04	Let's send in a pinch hitter
+6118	b5a2	and end it right now.
+6144	fecf	Who should it be?
+6164	a9f0	Please choose a pinch hitter.
+6190	a53b	My pick is marked 
+6204	ba4a	◎
+6212	af2f	.
+6244	731a	Understood.
+6260	393f	Pinch hitter!
+6296	a41f	Kantoku!
+6306	b79a	The bases are loaded.
+6328	86bf	Let's send in a pinch hitter!
+6358	fecf	Who should it be?
+6378	a9f0	Please choose a pinch hitter.
+6404	a53b	My pick is marked 
+6418	ba4a	◎
+6426	af2f	.
+6458	731a	Understood.
+6474	393f	Pinch hitter!
+6512	a41f	Kantoku!
+6526	2401	Let's send in a pinch hitter
+6548	ba63	and swing the momentum our way.
+6576	fecf	Who should it be?
+6596	a9f0	Please choose a pinch hitter.
+6622	a53b	My pick is marked 
+6636	ba4a	◎
+6644	af2f	.
+6678	731a	Understood.
+6694	393f	Pinch hitter!
+6950	5b72	th, 
+6972	6a95	Top
+6984	527c	Bottom
+7030	44c4	 out
+7050	4e1f	 strike
+7074	04e9	 ball
+7138	b8e4	
+7154	80f2	 Kantoku
+7170	b8e4	
+7186	7f28	, Pitching Coach
+7210	b8e4	
+7226	3305	, Batting Coach
+7258	a833	, Fielding Coach
