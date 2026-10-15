@@ -778,3 +778,34 @@ announcer's own readings (each record's call id), so a kanji with several readin
 - Seen: Giants vs Fighters, COM vs COM (dolphin-test/looks/players1): lineup screens, NEXT panel, batter and
   pitcher panels, fielder tags. Names of five or six cells are squeezed on the lineup plates (as long names were
   in Japanese) but readable.
+
+### Other name stores, written in place (2026-10-14, fifteenth session; built and verified, not seen)
+One mechanism for every store whose names sit in fixed six-cell fields: `translation/names/in_place/<module>.tsv`
+(section, offset, English; no Japanese), checked against the original (glyph cells, blank cells 0) and laid out
+with `name_table.plate`. `name_table.py export-given / -draft / -holders / -foreign` write the TSVs; the build
+(`name_table.inplace_patches`) writes them. Detail in the doc comments of `name_table.py`.
+- **Given names** (main_prg.rel sec5+0x3B288, 200 x 16 bytes: 0-99 boys, 100-199 girls; Hepburn from the kana,
+  long vowels kept where two names would meet: Yuuki / Yuki, Miyuu / Miyu, Koutaro / Kotaro). Read only by the
+  team set-up at main_prg.rel sec1+0x8F690 for teams 0x31..0x34, called from camp.rel (Practice) and
+  school_g.rel (Baseball School). Not on screen in Baseball School lessons 1, Practice with a real team or the
+  team select (RAM checked): those teams come later in the lessons.
+- **Draft prospects** (draft.rel sec5+0x2C08, 2,000 x 144 bytes, call id at +0x3C): the surname list's English
+  for the same call (1,105), else the call's reading romanised (895). Scouting / draft screens of Pennant.
+- **Record holders** (pn_ore_i.rel sec4, 809 fields of 303 historical players, records `FFFF|FFFE, 0x0100,
+  kind<<8|team, year, six cells, value` or a dated variant with the cells one later): English by hand
+  (Oh, Kaneda, Starffin, Ichiro, G.G. Sato, Michael ...). ローズ is Rose for team 4 (Yokohama), else Rhodes.
+  Rare glyphs read from the font: 礒部 Isobe, 廣瀬 Hirose, 廣澤 Hirosawa, 髙橋慶 Takahashi Y, 簑田 Minoda,
+  毒嶌 Busujima. Codes 0xF00.. are pictures of whole names (G.G. Sato, Michael), not font glyphs.
+- **Foreign players**: pennant.rel sec5, 656 fields (pointer table sec5+0x7AE8: 45 Korean / Taiwanese
+  single-kanji surnames, then katakana given names). The game's jersey spellings (sec5+0xC6F8, A = 1:
+  ANDOREW, EDWARZ) are a parallel list in the same order; they stay. English: real names (Andrew, Edwards,
+  Gagne); invented katakana kept close to the jersey (Agle, Zatto). Success uses its own copy: scc_main.rel
+  sec5+0x4AF0..0x68D0, 360 records (six cells, 0x1FFF, call id) incl. 88 Korean / Taiwanese full names
+  (Lee Kyungho, Kim Sangil, Lin Tsunghan; too long: initials, Lee D.K.). Taiwanese names written in
+  Japanese readings are a best guess at the Mandarin. scc_main.rel moves in the build, so its fields are
+  written into section 5 before the surname table is appended.
+- Font: 2,022 letter pairs (1,016 slots left).
+- Harness: in Pennant, A does nothing on the coach screen (long setup) and on the main-menu commands
+  (新戦力 ...); "Start right away with basic settings? Yes" reaches the main screen (state slot 2). The
+  menu needs another input (pointer?) before draft, scouting or foreign players can be seen.
+- Left: coaches' names (kanji, Pennant coach screen), the jersey spellings, Eikan Nine school names.
