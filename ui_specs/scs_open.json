@@ -1,0 +1,59 @@
+{
+ "arc": "scs_open.arc",
+ "repack": [
+  {
+   "bank": "z3_fic_0",
+   "palette": 0,
+   "style": "d2_fic",
+   "font": "ttf:d_georgia:17:0.0:0.92:0.2",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     112
+    ],
+    [
+     2,
+     0,
+     112,
+     112,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "* This is a work of fiction.\nIt has no connection to any real\npeople, groups or events.",
+     "style": "d2_fic",
+     "font": "ttf:d_georgia:17:0.0:0.92:0.2",
+     "slices": true,
+     "slice_width": 128,
+     "line_step": 38,
+     "pages": [
+      0,
+      1,
+      2
+     ]
+    }
+   ],
+   "name": "fiction"
+  }
+ ]
+}
