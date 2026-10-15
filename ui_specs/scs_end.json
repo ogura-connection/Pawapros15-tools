@@ -863,7 +863,7 @@
      "sprite": "02",
      "text": "Edit Profile",
      "style": "a_btn17",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "font": "ttf:rounded:12:0.0:1.0:0.4",
      "baseline": 28,
      "pages": [
       0,
@@ -919,7 +919,7 @@
      "sprite": "06",
      "text": "Use Items",
      "style": "a_btn21",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "font": "ttf:rounded:12:0.0:1.0:0.4",
      "baseline": 28,
      "pages": [
       0,
@@ -931,23 +931,23 @@
     },
     {
      "sprite": "07",
-     "text": "Raise Abilities",
+     "text": "Raise\nAbilities",
      "style": "a_btn22",
-     "font": "ttf:rounded:11:0.0:0.88:0.4",
-     "baseline": 28,
+     "font": "ttf:rounded:12:0.0:1.0:0.4",
      "pages": [
       0,
       1
      ],
      "palettes": [
       22
-     ]
+     ],
+     "valign": "centre"
     },
     {
      "sprite": "08",
      "text": "Change Form",
      "style": "a_btn24",
-     "font": "ttf:rounded:11:0.0:0.94:0.4",
+     "font": "ttf:rounded:12:0.0:0.88:0.4",
      "baseline": 28,
      "pages": [
       0,
@@ -975,7 +975,7 @@
      "sprite": "0a",
      "text": "Pitcher Role",
      "style": "a_btn25",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "font": "ttf:rounded:12:0.0:0.94:0.4",
      "baseline": 28,
      "pages": [
       0,
@@ -1519,8 +1519,8 @@
      "sprite": "02",
      "text": "Edit Profile",
      "style": "a_y5btn",
-     "font": "ttf:rounded:12:0.0:1.0:0.4",
-     "baseline": 23,
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 22,
      "pages": [
       1,
       2
@@ -1575,8 +1575,8 @@
      "sprite": "06",
      "text": "Use Items",
      "style": "a_y5btn",
-     "font": "ttf:rounded:12:0.0:1.0:0.4",
-     "baseline": 23,
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 22,
      "pages": [
       1,
       2
@@ -1617,8 +1617,8 @@
      "sprite": "09",
      "text": "Change Form",
      "style": "a_y5btn",
-     "font": "ttf:rounded:12:0.0:0.88:0.4",
-     "baseline": 23,
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 22,
      "pages": [
       1,
       2
@@ -1631,8 +1631,8 @@
      "sprite": "0a",
      "text": "Pitcher Role",
      "style": "a_y5btn",
-     "font": "ttf:rounded:12:0.0:0.94:0.4",
-     "baseline": 23,
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 22,
      "pages": [
       1,
       2
@@ -1673,7 +1673,7 @@
      "sprite": "15",
      "text": "Career",
      "style": "a_tab19",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "font": "ttf:rounded:12:0.0:1.0:0.2",
      "baseline": -2,
      "pages": [
       3
@@ -1687,7 +1687,7 @@
      "sprite": "16",
      "text": "Pro Years",
      "style": "a_tab19",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "font": "ttf:rounded:12:0.0:1.0:0.2",
      "baseline": -2,
      "pages": [
       3
@@ -1701,7 +1701,7 @@
      "sprite": "17",
      "text": "Number",
      "style": "a_tab19",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "font": "ttf:rounded:12:0.0:1.0:0.2",
      "baseline": -2,
      "pages": [
       3
@@ -1715,7 +1715,7 @@
      "sprite": "18",
      "text": "Pitcher Role",
      "style": "a_tab19",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "font": "ttf:rounded:12:0.0:1.0:0.2",
      "baseline": -2,
      "pages": [
       3
@@ -1729,7 +1729,7 @@
      "sprite": "1b",
      "text": "Japan",
      "style": "a_thin32",
-     "font": "ttf:rounded:12:0.0:1.0:0.2",
+     "font": "ttf:rounded:13:0.0:1.0:0.2",
      "baseline": 18,
      "pages": [
       4,
@@ -1743,7 +1743,7 @@
      "sprite": "1c",
      "text": "Overseas",
      "style": "a_thin32",
-     "font": "ttf:rounded:12:0.0:1.0:0.2",
+     "font": "ttf:rounded:13:0.0:1.0:0.2",
      "baseline": 18,
      "pages": [
       4,
@@ -1925,7 +1925,7 @@
      "sprite": "1d",
      "text": "/",
      "style": "a_thin32",
-     "font": "ttf:rounded:12:0.0:1.0:0.2",
+     "font": "ttf:rounded:13:0.0:1.0:0.2",
      "baseline": 18,
      "pages": [
       4
@@ -1938,7 +1938,7 @@
      "sprite": "38",
      "text": "yrs",
      "style": "a_thin32",
-     "font": "ttf:rounded:12:0.0:1.0:0.2",
+     "font": "ttf:rounded:13:0.0:0.88:0.2",
      "baseline": 18,
      "pages": [
       4
