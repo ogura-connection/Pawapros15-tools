@@ -69,3 +69,53 @@ STYLES["a4_mk_menu"] = ringfill([1], [5, 5, 4])                                 
 STYLES["a4_mk_big"] = ringfill([1], [3, 3, 1, 2])                            # p4_mp pal 0: white letters, blue ring, white ring, pale glow
 STYLES["a4_mk_small"] = ringfill([1], [3, 2])                                # p4_mp pal 1
 STYLES["a4_mk_head"] = ringfill([1], [3, 1, 2])                               # p4_mp pal 0, the region headings (thinner rings: the words are long)
+STYLES["a4_mk_big"] = ringfill([1], [3, 1, 2])                                   # big prefecture names: as the headings
+STYLES["a4_mk_cell"] = ringfill([1], [2, 2])                                    # 77: white letters, blue ring on the pale blue cells
+STYLES["a4_mk_cell~0_8"] = win(STYLES["a4_mk_cell"], 0, 8)                       # Schools over its two parts (8 + 56)
+STYLES["a4_mk_cell~8_4096"] = win(STYLES["a4_mk_cell"], 8, 4096)
+STYLES["a4_mk_flat1"] = flat([0, 1, 1, 1, 1, 1, 1], 3)                         # 7d-7f: solid letters of index 1 (the palette gives red / green / blue)
+
+# the ten map call-out plates: the plate is part of the page (80 wide, border + flat orange / blue inside), so the label is the whole
+# plate redrawn: the original plate with its interior cleared and the word set in it
+PLATES = {(19, 0): 24, (19, 24): 24, (19, 48): 24, (19, 72): 24, (19, 96): 32, (20, 0): 24, (20, 24): 24, (20, 48): 24, (20, 72): 24, (20, 96): 24}
+_PLATE_CACHE = {}
+
+
+def _plate(page, y0, h):
+    key = (page, y0, h)
+    if key not in _PLATE_CACHE:
+        import os
+        import ui_textures as U
+        path = os.path.join(U.ORIG_ARC_DIR, "sct_a_mk.arc")
+        if not os.path.exists(path):
+            import scan_story as S
+            path = os.path.join(S.DATA_FILES, "sct_a_mk.arc")
+        d = open(path, "rb").read()
+        b = U.bank_named(U.banks(d, U.elf_symbols(d)), "m4_mak#1")
+        _PLATE_CACHE[key] = U.decode_indices(d, *b["pages"][page])[y0:y0 + h, 0:80].copy()
+    return _PLATE_CACHE[key].copy()
+
+
+STYLES["a4_mk_pltext"] = ringfill([15], [2])                                  # the word of a call-out plate (measured with this)
+
+
+def callout(page, y0, h):
+    text = STYLES["a4_mk_pltext"]
+
+    def make(ink, base):
+        art, _ = text(ink, base)
+        out = _plate(page, y0, h)
+        out[4:18, 7:74] = 4                                   # the flat inside of the plate (the Japanese word stood here)
+        ah, aw = art.shape
+        ox, oy = 7 + (67 - aw) // 2, 4 + (14 - ah) // 2
+        x0, y0_ = max(ox, 7), max(oy, 4)
+        sub = art[y0_ - oy:y0_ - oy + min(ah, 14), x0 - ox:x0 - ox + min(aw, 67)]
+        tgt = out[y0_:y0_ + sub.shape[0], x0:x0 + sub.shape[1]]
+        tgt[sub > 0] = sub[sub > 0]
+        ys, xs = np.nonzero(out)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], 0
+    return make
+
+
+for (_pg, _y), _h in PLATES.items():
+    STYLES["a4_mk_plate_%d_%d" % (_pg, _y)] = callout(_pg, _y, _h)

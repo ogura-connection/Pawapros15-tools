@@ -345,22 +345,22 @@
      "sprite": "1e",
      "text": "Sun",
      "style": "b4_sy",
-     "font": "ttf:rounded:10:0.0:0.85:0.2",
-     "baseline": 21
+     "font": "ttf:rounded:8:0.0:0.85:0.2",
+     "baseline": 20
     },
     {
      "sprite": "1f",
      "text": "Mon",
      "style": "b4_sy",
-     "font": "ttf:rounded:9:0.0:0.85:0.2",
+     "font": "ttf:rounded:8:0.0:0.85:0.2",
      "baseline": 20
     },
     {
      "sprite": "20",
      "text": "Tue",
      "style": "b4_sy",
-     "font": "ttf:narrow:13:0.0:0.85:0.2",
-     "baseline": 22
+     "font": "ttf:narrow:8:0.0:0.85:0.2",
+     "baseline": 20
     },
     {
      "sprite": "21",
@@ -373,22 +373,22 @@
      "sprite": "22",
      "text": "Thu",
      "style": "b4_sy",
-     "font": "ttf:rounded:10:0.0:0.85:0.2",
-     "baseline": 22
+     "font": "ttf:rounded:8:0.0:0.85:0.2",
+     "baseline": 21
     },
     {
      "sprite": "23",
      "text": "Fri",
      "style": "b4_sy",
-     "font": "ttf:rounded:14:0.0:1.0:0.2",
-     "baseline": 22
+     "font": "ttf:rounded:8:0.0:1.0:0.2",
+     "baseline": 20
     },
     {
      "sprite": "24",
      "text": "Sat",
      "style": "b4_sy",
-     "font": "ttf:rounded:12:0.0:0.85:0.2",
-     "baseline": 19
+     "font": "ttf:rounded:8:0.0:0.85:0.2",
+     "baseline": 17
     }
    ],
    "name": "blackboard",
