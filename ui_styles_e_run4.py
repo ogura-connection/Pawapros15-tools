@@ -7,4 +7,4 @@ STYLES = {}
 # ---- sct_a_od.arc (Eikan Nine order screen) -----------------------------------------------------------------------------
 STYLES["e4_od_title"] = ringfill([15, 15, 15, 15, 13, 12], [4, 4, 3, 2])             # pal 40: white, navy rings, blue glow
 STYLES["e4_od_cancel"] = ringfill([12, 12, 11, 11, 8, 3], [15, 15, 5], [7, 9])         # pal 35: lavender, white ring, blue glow
-STYLES["e4_od_blue"] = ringfill([15, 15, 15, 15, 14, 13], [1, 1])                      # pal 20: white, blue ring
+STYLES["e4_od_blue"] = ringfill([15, 15, 15, 14, 13, 12], [1])                      # pal 20: white, blue ring

@@ -91,43 +91,43 @@
      "sprite": "03",
      "text": "Set Order",
      "style": "e4_od_title",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 67
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 68
     },
     {
      "sprite": "0a",
      "text": "Cancel",
      "style": "e4_od_cancel",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 33
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 34
     },
     {
      "sprite": "0b",
      "text": "Starter",
      "style": "e4_od_blue",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 18
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 17
     },
     {
      "sprite": "0c",
      "text": "On Bench",
      "style": "e4_od_blue",
-     "font": "ttf:rounded:13:0.0:0.92:0.25",
-     "baseline": 18
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 17
     },
     {
      "sprite": "0d",
      "text": "Off Bench",
      "style": "e4_od_blue",
-     "font": "ttf:rounded:11:0.0:0.92:0.25",
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
      "baseline": 17
     },
     {
      "sprite": "0e",
      "text": "Lock",
      "style": "e4_od_blue",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 18
+     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "baseline": 17
     }
    ],
    "name": "order screen",
