@@ -61,12 +61,12 @@
    "labels": [
     {
      "sprite": "51",
-     "text": "Book a\nPractice Game",
+     "text": "Practice\nGame",
      "style": "e4_em_item",
-     "font": "ttf:narrow:8:0.0:0.85:0.3",
-     "baseline": 26,
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 28,
      "slices": true,
-     "line_step": 15
+     "line_step": 19
     },
     {
      "sprite": "52",
@@ -302,12 +302,12 @@
     },
     {
      "sprite": "70",
-     "text": "Form Check\n(Velocity)",
+     "text": "Form:\nVelocity",
      "style": "e4_em_item",
-     "font": "ttf:rounded:8:0.0:0.85:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 22,
      "slices": true,
-     "line_step": 17
+     "line_step": 21
     },
     {
      "sprite": "71",
@@ -360,12 +360,12 @@
     },
     {
      "sprite": "78",
-     "text": "Form Check\n(Control)",
+     "text": "Form:\nControl",
      "style": "e4_em_item",
-     "font": "ttf:rounded:8:0.0:0.85:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:13:0.0:0.92:0.3",
+     "baseline": 23,
      "slices": true,
-     "line_step": 17
+     "line_step": 20
     },
     {
      "sprite": "79",
@@ -394,12 +394,12 @@
     },
     {
      "sprite": "7c",
-     "text": "Form Check\n(Breaking)",
+     "text": "Form:\nBreaking",
      "style": "e4_em_item",
-     "font": "ttf:rounded:8:0.0:0.85:0.3",
-     "baseline": 20,
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 22,
      "slices": true,
-     "line_step": 17
+     "line_step": 20
     },
     {
      "sprite": "7d",
@@ -513,10 +513,10 @@
    "labels": [
     {
      "sprite": "08",
-     "text": "Advance Days",
+     "text": "Advance",
      "style": "e4_em_card",
-     "font": "ttf:rounded:8:0.0:0.92:0.3",
-     "baseline": 15
+     "font": "ttf:rounded:14:0.0:0.85:0.3",
+     "baseline": 18
     },
     {
      "sprite": "09",
@@ -724,10 +724,10 @@
       128,
       128
      ],
-     "text": ": Ability Details",
+     "text": ": Details",
      "style": "e4_em_help2~0_32",
-     "font": "ttf:rounded:8:0.0:0.92:0.3",
-     "baseline": 20,
+     "font": "ttf:narrow:18:0.0:0.92:0.3",
+     "baseline": 26,
      "left": 1
     },
     {
@@ -738,10 +738,10 @@
       48,
       32
      ],
-     "text": ": Ability Details",
+     "text": ": Details",
      "style": "e4_em_help2~32_4096",
-     "font": "ttf:rounded:8:0.0:0.92:0.3",
-     "baseline": 20,
+     "font": "ttf:narrow:18:0.0:0.92:0.3",
+     "baseline": 26,
      "left": 1
     }
    ],
