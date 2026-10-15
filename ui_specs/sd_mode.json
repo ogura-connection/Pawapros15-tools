@@ -1,0 +1,434 @@
+{
+ "arc": "sd_mode.arc",
+ "repack": [
+  {
+   "bank": "r3_sd",
+   "palette": 33,
+   "style": "c_sd_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Stereo Settings",
+     "style": "c_sd_title~0_128",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 1
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      16,
+      64
+     ],
+     "text": "Stereo Settings",
+     "style": "c_sd_title~128_4096",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 1
+    },
+    {
+     "from": [
+      2,
+      16,
+      32,
+      128,
+      64
+     ],
+     "text": "Sound Settings",
+     "style": "c_sd_title~0_128",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      32,
+      96
+     ],
+     "text": "Sound Settings",
+     "style": "c_sd_title~128_4096",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 18
+    },
+    {
+     "from": [
+      2,
+      32,
+      64,
+      128,
+      96
+     ],
+     "text": "Commentary",
+     "style": "c_sd_head",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": -10
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "PA Announcer",
+     "style": "c_sd_head",
+     "font": "ttf:rounded:13:0.0:0.92:0.25",
+     "baseline": 21,
+     "left": 5
+    }
+   ],
+   "name": "p2"
+  },
+  {
+   "bank": "r3_sd",
+   "palette": 32,
+   "style": "c_sd_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     3,
+     0,
+     64,
+     32,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      0,
+      96,
+      32
+     ],
+     "text": "Umpire",
+     "style": "c_sd_head",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 10
+    },
+    {
+     "from": [
+      3,
+      96,
+      0,
+      128,
+      32
+     ],
+     "text": "Cheering",
+     "style": "c_sd_head~0_60",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 21,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      64,
+      64
+     ],
+     "text": "Cheering",
+     "style": "c_sd_head~60_4096",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 21,
+     "left": 28
+    },
+    {
+     "from": [
+      3,
+      64,
+      32,
+      128,
+      64
+     ],
+     "text": "Crowd",
+     "style": "c_sd_head~0_60",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 13
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      32,
+      96
+     ],
+     "text": "Crowd",
+     "style": "c_sd_head~60_4096",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 9
+    }
+   ],
+   "name": "p3"
+  },
+  {
+   "bank": "r3_sd",
+   "palette": 32,
+   "style": "c_sd_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     11,
+     0,
+     32,
+     128,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      11,
+      0,
+      32,
+      112,
+      64
+     ],
+     "text": "Sound FX",
+     "style": "c_sd_head",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 7
+    }
+   ],
+   "name": "p11"
+  },
+  {
+   "bank": "r3_sd",
+   "palette": 7,
+   "style": "c_sd_stereo",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0d",
+     "text": "Stereo",
+     "style": "c_sd_stereo",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "baseline": 26
+    },
+    {
+     "sprite": "0e",
+     "text": "Mono",
+     "style": "c_sd_mono",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "baseline": 26
+    },
+    {
+     "sprite": "45",
+     "text": "Surround",
+     "style": "c_sd_surround",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "baseline": 26
+    }
+   ],
+   "name": "p1"
+  },
+  {
+   "bank": "r3_sd",
+   "palette": 2,
+   "style": "c_sd_rec",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     40,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0f",
+     "text": "Recommended",
+     "style": "c_sd_rec",
+     "font": "ttf:rounded:13:0.0:0.85:0.25",
+     "baseline": 24
+    },
+    {
+     "sprite": "10",
+     "text": "Custom",
+     "style": "c_sd_custom",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "baseline": 26
+    }
+   ],
+   "name": "p0"
+  },
+  {
+   "bank": "r3_sd",
+   "palette": 6,
+   "style": "c_sd_high",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     4,
+     0,
+     40,
+     80,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      40,
+      40,
+      80,
+      80
+     ],
+     "text": "High",
+     "style": "c_sd_high",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 27,
+     "left": -4
+    },
+    {
+     "from": [
+      4,
+      0,
+      40,
+      40,
+      80
+     ],
+     "text": "Mid",
+     "style": "c_sd_mid",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 28,
+     "left": 2
+    },
+    {
+     "from": [
+      4,
+      56,
+      0,
+      96,
+      40
+     ],
+     "text": "Low",
+     "style": "c_sd_low",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 27,
+     "left": 0
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      56,
+      40
+     ],
+     "text": "Off",
+     "style": "c_sd_off",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 27,
+     "left": 10
+    }
+   ],
+   "name": "p4"
+  },
+  {
+   "bank": "r3_sd",
+   "palette": 13,
+   "style": "c_sd_banner",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     9,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "27",
+     "text": "Sound",
+     "style": "c_sd_banner",
+     "font": "ttf:rounded:22:0.0:1.0:0.25",
+     "baseline": 34,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      13
+     ]
+    },
+    {
+     "from": [
+      11,
+      0,
+      104,
+      112,
+      112
+     ],
+     "empty": true
+    }
+   ],
+   "name": "p9"
+  }
+ ]
+}

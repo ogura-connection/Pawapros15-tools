@@ -1,0 +1,1284 @@
+{
+ "arc": "dem_open.arc",
+ "repack": [
+  {
+   "bank": "y4_vs00",
+   "palette": 2,
+   "style": "c_dem_red_b",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     1,
+     0,
+     64,
+     32,
+     128
+    ],
+    [
+     1,
+     120,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Playoffs",
+     "style": "c_dem_red_b~0_80",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 41,
+     "left": -35,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      56,
+      128
+     ],
+     "text": "Playoffs",
+     "style": "c_dem_red_b~80_4096",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 41,
+     "left": -83,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      56,
+      64,
+      112,
+      128
+     ],
+     "text": "Stage",
+     "style": "c_dem_red_b~0_48",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 41,
+     "left": -65,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Stage",
+     "style": "c_dem_red_b~48_80",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 41,
+     "left": -104,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      32,
+      128
+     ],
+     "text": "Stage",
+     "style": "c_dem_red_b~80_4096",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 41,
+     "left": -200,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Playoffs",
+     "style": "c_dem_red_b~0_80",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 41,
+     "left": 11,
+     "sprites": [
+      "03"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      56,
+      128
+     ],
+     "text": "Playoffs",
+     "style": "c_dem_red_b~80_4096",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 41,
+     "left": -37,
+     "sprites": [
+      "03"
+     ]
+    }
+   ],
+   "name": "cards",
+   "share": true
+  },
+  {
+   "bank": "y4_vs10",
+   "palette": 2,
+   "style": "c_dem_red_b",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     0,
+     0,
+     64,
+     96,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     64,
+     64
+    ],
+    [
+     3,
+     56,
+     0,
+     128,
+     64
+    ],
+    [
+     3,
+     0,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      64
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -63,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      96,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -98,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Interleague",
+     "style": "c_dem_red_b~0_112",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -120,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      3,
+      112,
+      0,
+      128,
+      64
+     ],
+     "text": "Interleague",
+     "style": "c_dem_red_b~112_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -128,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      64
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -63,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      96,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -98,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Interleague",
+     "style": "c_dem_red_b~0_112",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -120,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      3,
+      112,
+      0,
+      128,
+      64
+     ],
+     "text": "Interleague",
+     "style": "c_dem_red_b~112_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -128,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      64
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -63,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      96,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -102,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      64
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -63,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      96,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -144,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      64
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -63,
+     "sprites": [
+      "0d"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      96,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -187,
+     "sprites": [
+      "0d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      64
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -63,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      96,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -100,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      64
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -63,
+     "sprites": [
+      "11"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      96,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -144,
+     "sprites": [
+      "11"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      64
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -63,
+     "sprites": [
+      "12"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      96,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -187,
+     "sprites": [
+      "12"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Interleague",
+     "style": "c_dem_red_b~0_112",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -37,
+     "sprites": [
+      "0e"
+     ]
+    },
+    {
+     "from": [
+      3,
+      112,
+      0,
+      128,
+      64
+     ],
+     "text": "Interleague",
+     "style": "c_dem_red_b~112_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -45,
+     "sprites": [
+      "0e"
+     ]
+    }
+   ],
+   "name": "cards",
+   "share": true
+  },
+  {
+   "bank": "y4_vs20",
+   "palette": 2,
+   "style": "c_dem_red_b",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Preseason",
+     "style": "c_dem_red_b~0_96",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 45,
+     "left": 4
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      88,
+      128
+     ],
+     "text": "Preseason",
+     "style": "c_dem_red_b~96_4096",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "baseline": 45,
+     "left": -28
+    }
+   ],
+   "name": "cards",
+   "share": true
+  },
+  {
+   "bank": "y4_vs71",
+   "palette": 2,
+   "style": "c_dem_red_b",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      16,
+      64,
+      64,
+      128
+     ],
+     "text": "Stage",
+     "style": "c_dem_red_b~0_32",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -76,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Stage",
+     "style": "c_dem_red_b~32_80",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -113,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      16,
+      128
+     ],
+     "text": "Stage",
+     "style": "c_dem_red_b~80_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -193,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      16,
+      64,
+      64,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~0_64",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -79,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      0,
+      64,
+      64,
+      112,
+      128
+     ],
+     "text": "Game",
+     "style": "c_dem_red_b~64_4096",
+     "font": "ttf:rounded:26:0.0:1.0:0.25",
+     "baseline": 44,
+     "left": -91,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      0,
+      16,
+      64,
+      64,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      16,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      0,
+      64,
+      64,
+      112,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "07"
+     ]
+    }
+   ],
+   "name": "cards",
+   "share": true
+  },
+  {
+   "bank": "y4_vs30",
+   "palette": 32,
+   "style": "c_dem_gold",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Pennant Race Begins",
+     "style": "c_dem_gold~0_128",
+     "font": "ttf:rounded:30:0.0:0.85:0.25",
+     "baseline": 42,
+     "left": 4
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      128,
+      128
+     ],
+     "text": "Pennant Race Begins",
+     "style": "c_dem_gold~128_240",
+     "font": "ttf:rounded:30:0.0:0.85:0.25",
+     "baseline": 42,
+     "left": 4
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      112,
+      64
+     ],
+     "text": "Pennant Race Begins",
+     "style": "c_dem_gold~240_4096",
+     "font": "ttf:rounded:30:0.0:0.85:0.25",
+     "baseline": 42,
+     "left": -12
+    }
+   ],
+   "name": "cards"
+  },
+  {
+   "bank": "y4_vs40",
+   "palette": 32,
+   "style": "c_dem_gold",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "All-Star Game",
+     "style": "c_dem_gold~0_128",
+     "font": "ttf:rounded:31:0.0:0.85:0.25",
+     "baseline": 46,
+     "left": 46,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      120,
+      128
+     ],
+     "text": "All-Star Game",
+     "style": "c_dem_gold~128_4096",
+     "font": "ttf:rounded:31:0.0:0.85:0.25",
+     "baseline": 46,
+     "left": 46,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      56,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      56,
+      0,
+      112,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "All-Star Game",
+     "style": "c_dem_gold~0_128",
+     "font": "ttf:rounded:31:0.0:0.85:0.25",
+     "baseline": 46,
+     "left": -2,
+     "sprites": [
+      "03"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      120,
+      128
+     ],
+     "text": "All-Star Game",
+     "style": "c_dem_gold~128_4096",
+     "font": "ttf:rounded:31:0.0:0.85:0.25",
+     "baseline": 46,
+     "left": -2,
+     "sprites": [
+      "03"
+     ]
+    }
+   ],
+   "name": "cards",
+   "share": true
+  },
+  {
+   "bank": "y4_vs50",
+   "palette": 32,
+   "style": "c_dem_gold",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     112,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Japan Series Game",
+     "style": "c_dem_gold~0_80",
+     "font": "ttf:rounded:25:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -32,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      120,
+      128
+     ],
+     "text": "Japan Series Game",
+     "style": "c_dem_gold~80_160",
+     "font": "ttf:rounded:25:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -80,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      56,
+      64
+     ],
+     "text": "Japan Series Game",
+     "style": "c_dem_gold~160_240",
+     "font": "ttf:rounded:25:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -120,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      56,
+      0,
+      112,
+      64
+     ],
+     "text": "Japan Series Game",
+     "style": "c_dem_gold~240_4096",
+     "font": "ttf:rounded:25:0.0:1.0:0.25",
+     "baseline": 40,
+     "left": -138,
+     "sprites": [
+      "00"
+     ]
+    }
+   ],
+   "name": "cards"
+  },
+  {
+   "bank": "y4_vs60",
+   "palette": 7,
+   "style": "c_dem_tag_b",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     64,
+     64,
+     128,
+     96
+    ],
+    [
+     0,
+     32,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      64,
+      64,
+      96,
+      96
+     ],
+     "text": "Qualifier",
+     "style": "c_dem_tag_b~0_48",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 20,
+     "left": 11
+    },
+    {
+     "from": [
+      0,
+      96,
+      64,
+      128,
+      96
+     ],
+     "text": "Qualifier",
+     "style": "c_dem_tag_b~48_4096",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 20,
+     "left": -16
+    },
+    {
+     "from": [
+      0,
+      64,
+      96,
+      96,
+      128
+     ],
+     "text": "Final",
+     "style": "c_dem_tag_b~0_16",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 21,
+     "left": 28
+    },
+    {
+     "from": [
+      0,
+      96,
+      96,
+      128,
+      128
+     ],
+     "text": "Final",
+     "style": "c_dem_tag_b~16_32",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 21,
+     "left": 7
+    },
+    {
+     "from": [
+      0,
+      32,
+      96,
+      64,
+      128
+     ],
+     "text": "Final",
+     "style": "c_dem_tag_b~32_4096",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 21,
+     "left": -15
+    }
+   ],
+   "name": "tags",
+   "share": true
+  },
+  {
+   "bank": "y4_vsb",
+   "palette": 4,
+   "style": "c_dem_vs",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     72,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      72,
+      72
+     ],
+     "text": "VS",
+     "style": "c_dem_vs",
+     "font": "ttf:rounded:40:0.0:0.85:0.25",
+     "baseline": 55,
+     "left": 1
+    }
+   ],
+   "name": "vs"
+  },
+  {
+   "bank": "y4_vsb",
+   "palette": 5,
+   "style": "c_dem_credit",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     72,
+     0,
+     128,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      72,
+      0,
+      128,
+      24
+     ],
+     "text": "Commentary: Kawaji Naoki",
+     "style": "c_dem_credit~0_56",
+     "font": "ttf:rounded:11:0.0:0.85:0.25",
+     "baseline": 15,
+     "left": 1
+    },
+    {
+     "from": [
+      0,
+      72,
+      24,
+      128,
+      48
+     ],
+     "text": "Commentary: Kawaji Naoki",
+     "style": "c_dem_credit~56_112",
+     "font": "ttf:rounded:11:0.0:0.85:0.25",
+     "baseline": 15,
+     "left": 1
+    },
+    {
+     "from": [
+      0,
+      72,
+      48,
+      128,
+      72
+     ],
+     "text": "Commentary: Kawaji Naoki",
+     "style": "c_dem_credit~112_4096",
+     "font": "ttf:rounded:11:0.0:0.85:0.25",
+     "baseline": 15,
+     "left": 1
+    }
+   ],
+   "name": "credit"
+  }
+ ],
+ "paint": [
+  {
+   "bank": "y4_vs60",
+   "page": 0,
+   "rect": [
+    28,
+    48,
+    104,
+    64
+   ],
+   "text": "Asia Series",
+   "font": "ttf:rounded:10:0.0:0.9:0.0",
+   "copy": "clear",
+   "style": "c_dem_asia",
+   "dx": 1,
+   "dy": 0
+  }
+ ]
+}

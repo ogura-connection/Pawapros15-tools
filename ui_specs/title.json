@@ -1,0 +1,33 @@
+{
+ "arc": "title.arc",
+ "repack": [
+  {
+   "bank": "h5_ti03_opd",
+   "palette": 0,
+   "style": "c_title_start",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Game Start",
+     "style": "c_title_start",
+     "font": "ttf:rounded:31:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5
+    }
+   ],
+   "name": "start"
+  }
+ ]
+}
