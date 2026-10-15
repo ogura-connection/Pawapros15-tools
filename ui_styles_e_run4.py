@@ -76,3 +76,7 @@ def vcut(style, lo, hi, H, W):
 # クリア (p16 y98-128 + p17 y96-108, one 42-row word): "Clear" 96 x 42
 STYLES["e4_sg_clear_0"] = vcut(STYLES["e4_sg_head"], 0, 30, 42, 96)
 STYLES["e4_sg_clear_1"] = vcut(STYLES["e4_sg_head"], 30, 42, 42, 96)
+
+# ---- sct_card.arc (Eikan Nine command cards) -----------------------------------------------------------------------------
+STYLES["e4_em_item"] = ringfill([15, 15, 15, 15, 12, 11], [6, 1])                      # pal 84: white letters, blue ring
+STYLES["e4_em_item1"] = ringfill([15, 15, 15, 15, 12, 11], [1])                        # the same with a one-pixel ring (two lines in 24 rows)
