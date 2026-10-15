@@ -17,3 +17,6 @@ STYLES["c4_ms_13"] = ringfill([10, 11, 12, 13, 14, 15], [1, 1, 8, 7], [6, 5])   
 STYLES["c4_ms_15"] = ringfill([13, 13, 12, 11, 10, 5], [1, 1, 14, 9], [8, 7])        # pal 34: yellow to lime
 STYLES["c4_ms_16"] = ringfill([13, 12, 11, 10, 9, 9], [1, 1, 15, 8], [7, 6])         # pal 35: pink to lilac
 STYLES["c4_ms_17"] = ringfill([15, 9, 8, 7, 6, 5], [1, 1, 12, 13], [11, 10])         # pal 36: sky blue
+
+# ---- school.arc g3_rsz (Baseball School tabs: gold letters in a blue oval, 8-bit page) ---------------------------------------
+STYLES["c4_rsz"] = ringfill([142, 144, 148, 152, 157, 162, 166], [75, 70, 70, 197], [32, 32])
