@@ -986,6 +986,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 assert ps == name_table.HOST_SECTION and po + len(data) <= name_remap.hi
                 sec_data[po:po + len(data)] = data
             sec_data = bytes(sec_data)
+            patched.setdefault(host.mod_id, {}).update(host_names)
         new_secs[host.mod_id] = (name_table.HOST_SECTION, sec_data)
         remaps[(host.mod_id, name_table.HOST_SECTION)] = name_remap
         print("%-13s %5d surnames in Latin letters, %d bytes appended; main_prg.rel: %d in 8 letters, %d stay kanji"
@@ -1016,7 +1017,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             note = "%d addends" % n
         if m.name in strings:                                    # UI strings, in place
             image = bytearray(image)
-            patched[m.mod_id] = {}
+            patched.setdefault(m.mod_id, {})
             for (sec, off), (cells, en) in strings[m.name].items():
                 if ui_strings.block_of(m.name, sec, off):
                     continue                                     # laid out with its block, below
