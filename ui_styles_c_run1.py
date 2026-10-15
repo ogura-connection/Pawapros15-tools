@@ -23,6 +23,13 @@ def banner(style, h, mx):
     return cut
 
 
+def blank(w, h):
+    """A plain card piece w x h (index 0): where a Japanese word is dropped, the card keeps its length."""
+    def cut(ink, base):
+        return np.zeros((h, w), np.uint8), 0
+    return cut
+
+
 def win(style, c0, c1):
     """Only the columns c0..c1 of the whole word (a word shared out over parts that stand side by side)."""
     def cut(ink, base):
@@ -114,6 +121,22 @@ STYLES['c_dem_red_raw'] = ringfill([14, 12, 14, 14, 10, 9, 9, 10], [1, 2, 2], []
 STYLES['c_dem_red_b'] = banner(STYLES['c_dem_red_raw'], 62, 6)
 # y4_vs30 / 40 / 50 (palette 32): gold letters, black ring, white ring, grey edge
 STYLES['c_dem_gold'] = ringfill([0x7a, 0xb8, 0xe0, 0xf8, 0xe9, 0xb8, 0x8a, 0x31], [255, 164, 164, 188], [])
+STYLES['c_dem_blank_8_62'] = blank(8, 62)
+STYLES['c_dem_blank_16_62'] = blank(16, 62)
+STYLES['c_dem_blank_24_62'] = blank(24, 62)
+STYLES['c_dem_blank_32_62'] = blank(32, 62)
+STYLES['c_dem_blank_40_62'] = blank(40, 62)
+STYLES['c_dem_blank_48_62'] = blank(48, 62)
+STYLES['c_dem_blank_56_62'] = blank(56, 62)
+STYLES['c_dem_blank_64_62'] = blank(64, 62)
+STYLES['c_dem_blank_72_62'] = blank(72, 62)
+STYLES['c_dem_blank_80_62'] = blank(80, 62)
+STYLES['c_dem_blank_88_62'] = blank(88, 62)
+STYLES['c_dem_blank_96_62'] = blank(96, 62)
+STYLES['c_dem_blank_104_62'] = blank(104, 62)
+STYLES['c_dem_blank_112_62'] = blank(112, 62)
+STYLES['c_dem_blank_120_62'] = blank(120, 62)
+STYLES['c_dem_blank_128_62'] = blank(128, 62)
 STYLES['c_vs_ctl~0_32'] = win(STYLES['c_vs_ctl'], 0, 32)
 STYLES['c_vs_ctl~32_64'] = win(STYLES['c_vs_ctl'], 32, 64)
 STYLES['c_vs_ctl~64_4096'] = win(STYLES['c_vs_ctl'], 64, 4096)

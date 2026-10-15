@@ -2669,7 +2669,7 @@
      "font": "ttf:din:13:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 3,
-     "baseline": 30
+     "baseline": 24
     },
     {
      "from": [
@@ -2852,11 +2852,11 @@
      "sprites": [
       "64"
      ],
-     "text": "Home\nRun",
-     "font": "ttf:din:16:0.15:1.0:0.35",
+     "text": "Home Run",
+     "font": "ttf:din:12:0.15:0.8:0.35",
      "style": "e_plate2",
-     "left": 5,
-     "baseline": 42
+     "left": 3,
+     "baseline": 22
     },
     {
      "from": [
@@ -2869,11 +2869,11 @@
      "sprites": [
       "65"
      ],
-     "text": "Pro\nPlayers",
-     "font": "ttf:din:14:0.15:0.9:0.35",
+     "text": "Pro Players",
+     "font": "ttf:din:10:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 5,
-     "baseline": 37
+     "baseline": 19
     },
     {
      "from": [
@@ -2890,7 +2890,7 @@
      "font": "ttf:din:14:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 4,
-     "baseline": 28
+     "baseline": 22
     },
     {
      "from": [
@@ -3417,7 +3417,7 @@
      "font": "ttf:din:15:0.15:0.8:0.35",
      "style": "e_plate2",
      "left": 3,
-     "baseline": 27
+     "baseline": 21
     },
     {
      "sprite": "bb",
@@ -5661,7 +5661,7 @@
      ],
      "text": "SQ-",
      "font": "etag",
-     "left": 8,
+     "left": 7,
      "baseline": 18
     },
     {
@@ -5693,7 +5693,7 @@
      ],
      "text": "SQ-",
      "font": "etag",
-     "left": 8,
+     "left": 7,
      "baseline": 18
     },
     {
@@ -5741,7 +5741,7 @@
      ],
      "text": "1B",
      "font": "etag",
-     "left": 5,
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5773,7 +5773,7 @@
      ],
      "text": "2B",
      "font": "etag",
-     "left": 4,
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5805,7 +5805,7 @@
      ],
      "text": "3B",
      "font": "etag",
-     "left": 4,
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5837,7 +5837,7 @@
      ],
      "text": "SS",
      "font": "etag",
-     "left": 4,
+     "left": 5,
      "baseline": 18
     },
     {
@@ -5869,7 +5869,7 @@
      ],
      "text": "LF",
      "font": "etag",
-     "left": 5,
+     "left": 6,
      "baseline": 18
     },
     {
@@ -5885,7 +5885,7 @@
      ],
      "text": "SQ-",
      "font": "etag",
-     "left": 5,
+     "left": 4,
      "baseline": 18
     },
     {
@@ -5917,7 +5917,7 @@
      ],
      "text": "SQ-",
      "font": "etag",
-     "left": 5,
+     "left": 4,
      "baseline": 18
     },
     {
@@ -9999,7 +9999,7 @@
      ],
      "text": "SQ-",
      "font": "etag",
-     "left": 9,
+     "left": 8,
      "baseline": 18
     },
     {
@@ -10031,7 +10031,7 @@
      ],
      "text": "SQ-",
      "font": "etag",
-     "left": 9,
+     "left": 8,
      "baseline": 18
     },
     {
@@ -10079,7 +10079,7 @@
      ],
      "text": "1B",
      "font": "etag",
-     "left": 7,
+     "left": 8,
      "baseline": 18
     },
     {
@@ -10111,7 +10111,7 @@
      ],
      "text": "2B",
      "font": "etag",
-     "left": 6,
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10143,7 +10143,7 @@
      ],
      "text": "3B",
      "font": "etag",
-     "left": 6,
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10175,7 +10175,7 @@
      ],
      "text": "SS",
      "font": "etag",
-     "left": 6,
+     "left": 7,
      "baseline": 18
     },
     {
@@ -10207,7 +10207,7 @@
      ],
      "text": "LF",
      "font": "etag",
-     "left": 7,
+     "left": 8,
      "baseline": 18
     },
     {
@@ -10223,7 +10223,7 @@
      ],
      "text": "SQ-",
      "font": "etag",
-     "left": 6,
+     "left": 5,
      "baseline": 18
     },
     {
@@ -10255,7 +10255,7 @@
      ],
      "text": "SQ-",
      "font": "etag",
-     "left": 6,
+     "left": 5,
      "baseline": 18
     },
     {
