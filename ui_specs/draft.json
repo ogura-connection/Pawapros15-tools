@@ -734,10 +734,10 @@
       128,
       72
      ],
-     "text": "...",
+     "text": "is being scouted...",
      "style": "e6_pd_help",
-     "font": "ttf:narrow:20:0.0:1.0:0.3",
-     "baseline": 22,
+     "font": "ttf:narrow:14:0.0:0.85:0.3",
+     "baseline": 20,
      "left": 6,
      "sprites": [
       "40"
@@ -803,10 +803,10 @@
       128,
       96
      ],
-     "text": "...",
+     "text": "is being researched...",
      "style": "e6_pd_help",
-     "font": "ttf:narrow:20:0.0:1.0:0.3",
-     "baseline": 22,
+     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "baseline": 16,
      "left": 4,
      "sprites": [
       "41"

@@ -78,7 +78,7 @@ STYLES["b6_paper_R"] = _paper(STYLES["b6_pt"], 110, 164)
 import numpy as np
 _BADGE = np.array([[int(ch, 16) for ch in row] for row in ['00000eeeeeeeeeeee000000', '000eeeccccccccccddd0000', '00eeccaaaaaaaaaaccdd000', '0eecaaaaaaaaaaaaaacdd00', '0ecaabbbbbbbbbbbbaacc00', 'eecabbccccccccccbbacbb0', 'eeabccccccccccccccbabb0', 'eebbccccccccccccccbabb2', 'eebccccccccccccccccbbb2', 'ddbccccccccccccccccbbb2', 'ddbcccccccccccccccccaa2', 'ddacccccccccccccccccaa2', 'ddbccccccccccccccccaaa2', 'ccbccccccccccccccccaaa2', 'ccbccccccccccccccccaaa2', 'ccbccccccccccccccccaaa2', 'cccccccccccccccccccaaa2', 'cccccccccccccccccccc992', 'bbcccccccccccccccccc992', 'bbcccccccccccccccccc992', 'bbcccccccccccccccccc992', 'bbcccccccccccccccccd992', 'aacccccccccccccccccd992', '0accccccccccccccccdb922', '0aaccccccccccdddeeb9922', '00aacddddeeeeeecb999220', '002aaa99999999999992220', '00022999999999999222200', '00002222222222222222000', '00000022222222222200000']], np.uint8)
 # letters: white with a light top edge, one dark ring, a shadow
-STYLES["b6_bl"] = ringfill([13, 15, 15, 15, 15, 15], [4], [8])
+STYLES["b6_bl"] = ringfill([13, 15, 15, 15, 15, 15], [4], [])
 def _plate(letter_style, cx=10, cy=14):
     def style(ink, base):
         art, b = letter_style(ink, base)

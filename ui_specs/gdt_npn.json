@@ -1,0 +1,1133 @@
+{
+ "arc": "gdt_npn.arc",
+ "repack": [
+  {
+   "bank": "m3_ks_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     72,
+     64,
+     96
+    ],
+    [
+     2,
+     0,
+     64,
+     56,
+     96
+    ],
+    [
+     2,
+     96,
+     32,
+     128,
+     64
+    ],
+    [
+     3,
+     0,
+     64,
+     80,
+     128
+    ],
+    [
+     3,
+     80,
+     64,
+     128,
+     96
+    ],
+    [
+     3,
+     104,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     120,
+     32,
+     128,
+     64
+    ],
+    [
+     4,
+     0,
+     104,
+     32,
+     128
+    ],
+    [
+     4,
+     112,
+     80,
+     128,
+     104
+    ],
+    [
+     5,
+     48,
+     24,
+     104,
+     128
+    ],
+    [
+     5,
+     0,
+     24,
+     48,
+     72
+    ],
+    [
+     5,
+     0,
+     96,
+     48,
+     128
+    ],
+    [
+     5,
+     104,
+     72,
+     128,
+     128
+    ],
+    [
+     5,
+     104,
+     0,
+     128,
+     48
+    ],
+    [
+     5,
+     96,
+     0,
+     104,
+     24
+    ],
+    [
+     6,
+     56,
+     72,
+     120,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     48,
+     48
+    ],
+    [
+     6,
+     96,
+     0,
+     128,
+     24
+    ],
+    [
+     6,
+     48,
+     24,
+     72,
+     48
+    ],
+    [
+     6,
+     120,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "1d",
+     "text": "HR",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 8,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Distance",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "baseline": 8,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "sprite": "5e",
+     "text": "Top",
+     "style": "b6_m3_ks_0_14_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 18,
+     "pages": [
+      4
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "sprite": "5f",
+     "text": "Bot",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
+     "baseline": 19,
+     "pages": [
+      4
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "sprite": "6e",
+     "text": "Power",
+     "style": "b6_m3_ks_0_24",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
+     "baseline": 18,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "6f",
+     "text": "Push",
+     "style": "b6_m3_ks_0_24",
+     "font": "ttf:narrow:14:0.0:0.94:0.3",
+     "baseline": 19,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "70",
+     "text": "IF In",
+     "style": "b6_m3_ks_0_25",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 18,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      25
+     ]
+    },
+    {
+     "sprite": "71",
+     "text": "IF Back",
+     "style": "b6_m3_ks_0_25_s",
+     "font": "ttf:narrow:9:0.0:1.0:0.12",
+     "baseline": 17,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      25
+     ]
+    },
+    {
+     "sprite": "72",
+     "text": "OF In",
+     "style": "b6_m3_ks_0_26",
+     "font": "ttf:narrow:13:0.0:0.94:0.3",
+     "baseline": 18,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      26
+     ]
+    },
+    {
+     "sprite": "73",
+     "text": "OF Back",
+     "style": "b6_m3_ks_0_26_s",
+     "font": "ttf:narrow:8:0.0:1.0:0.12",
+     "baseline": 16,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      26
+     ]
+    },
+    {
+     "sprite": "74",
+     "text": "Soft Bunt",
+     "style": "b6_m3_ks_0_27_s",
+     "font": "ttf:narrow:8:0.0:1.0:0.12",
+     "baseline": 16,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "7d",
+     "text": "Normal",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
+     "baseline": 36,
+     "pages": [
+      6
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "sprite": "81",
+     "text": "Fast",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 36,
+     "pages": [
+      6
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "sprite": "82",
+     "text": "Fastest",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
+     "baseline": 36,
+     "pages": [
+      6
+     ],
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "from": [
+      6,
+      96,
+      0,
+      120,
+      24
+     ],
+     "text": "x",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 18,
+     "sprites": [
+      "7e",
+      "7f",
+      "80"
+     ],
+     "left": -9
+    },
+    {
+     "from": [
+      5,
+      80,
+      48,
+      104,
+      72
+     ],
+     "text": "ERA",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:13:0.0:0.82:0.3",
+     "baseline": 19,
+     "left": 5
+    },
+    {
+     "from": [
+      5,
+      16,
+      24,
+      40,
+      48
+     ],
+     "text": "AVG",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:11:0.0:0.82:0.3",
+     "baseline": 18,
+     "centre_x": 13
+    },
+    {
+     "from": [
+      5,
+      40,
+      24,
+      64,
+      48
+     ],
+     "text": "HR",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:11:0.0:0.82:0.3",
+     "baseline": 18,
+     "centre_x": 12
+    },
+    {
+     "from": [
+      5,
+      64,
+      24,
+      104,
+      48
+     ],
+     "text": "RBI",
+     "style": "b6_m3_ks_0_14",
+     "font": "ttf:narrow:11:0.0:0.82:0.3",
+     "baseline": 18,
+     "centre_x": 20
+    },
+    {
+     "sprite": "35",
+     "text": "P",
+     "style": "b6_badge",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      43
+     ]
+    },
+    {
+     "sprite": "36",
+     "text": "C",
+     "style": "b6_badge",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      44
+     ]
+    },
+    {
+     "sprite": "37",
+     "text": "1B",
+     "style": "b6_badge",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 21,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      45
+     ]
+    },
+    {
+     "sprite": "38",
+     "text": "2B",
+     "style": "b6_badge",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 21,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      45
+     ]
+    },
+    {
+     "sprite": "39",
+     "text": "3B",
+     "style": "b6_badge",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 21,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      45
+     ]
+    },
+    {
+     "sprite": "3a",
+     "text": "SS",
+     "style": "b6_badge",
+     "font": "ttf:narrow:10:0.0:0.88:0.3",
+     "baseline": 21,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      45
+     ]
+    },
+    {
+     "sprite": "3b",
+     "text": "LF",
+     "style": "b6_badge",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 21,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "3c",
+     "text": "CF",
+     "style": "b6_badge",
+     "font": "ttf:narrow:10:0.0:0.88:0.3",
+     "baseline": 21,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "3d",
+     "text": "RF",
+     "style": "b6_badge",
+     "font": "ttf:narrow:10:0.0:0.88:0.3",
+     "baseline": 21,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "3f",
+     "text": "PH",
+     "style": "b6_badge",
+     "font": "ttf:narrow:10:0.0:0.94:0.3",
+     "baseline": 21,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      47
+     ]
+    },
+    {
+     "sprite": "93",
+     "text": "R",
+     "style": "b6_badge",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      47
+     ]
+    }
+   ],
+   "name": "m3_ks_0",
+   "share": true
+  },
+  {
+   "bank": "m3c_kss_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     1,
+     112,
+     40,
+     128,
+     88
+    ],
+    [
+     2,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     3,
+     56,
+     40,
+     128,
+     72
+    ],
+    [
+     3,
+     104,
+     72,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     80,
+     128
+    ],
+    [
+     7,
+     80,
+     0,
+     128,
+     72
+    ],
+    [
+     8,
+     0,
+     40,
+     48,
+     72
+    ],
+    [
+     8,
+     96,
+     40,
+     128,
+     80
+    ],
+    [
+     10,
+     0,
+     96,
+     96,
+     128
+    ],
+    [
+     10,
+     96,
+     40,
+     128,
+     80
+    ],
+    [
+     10,
+     96,
+     104,
+     128,
+     128
+    ],
+    [
+     11,
+     80,
+     48,
+     128,
+     128
+    ],
+    [
+     11,
+     40,
+     0,
+     80,
+     48
+    ],
+    [
+     11,
+     0,
+     48,
+     40,
+     96
+    ],
+    [
+     11,
+     40,
+     96,
+     80,
+     128
+    ],
+    [
+     11,
+     80,
+     0,
+     128,
+     16
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      7,
+      96,
+      0,
+      120,
+      24
+     ],
+     "text": "Take",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:15:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 28
+    },
+    {
+     "from": [
+      7,
+      120,
+      0,
+      128,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      0,
+      24,
+      16,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      56,
+      72,
+      128,
+      96
+     ],
+     "text": "Contact",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:15:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      6,
+      8,
+      96,
+      80,
+      120
+     ],
+     "text": "Go Deep",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:15:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      7,
+      112,
+      48,
+      128,
+      72
+     ],
+     "text": "Auto",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:15:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      7,
+      0,
+      72,
+      56,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      96,
+      48,
+      128,
+      72
+     ],
+     "text": "Hit & Run",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:15:0.0:0.82:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      6,
+      0,
+      72,
+      40,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      16,
+      24,
+      40,
+      48
+     ],
+     "text": "Steal",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:15:0.0:0.82:0.3",
+     "baseline": 20,
+     "centre_x": 28
+    },
+    {
+     "from": [
+      7,
+      40,
+      24,
+      64,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      32,
+      48,
+      88,
+      72
+     ],
+     "text": "Bunt",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:15:0.0:0.82:0.3",
+     "baseline": 20,
+     "centre_x": 28
+    },
+    {
+     "from": [
+      6,
+      80,
+      96,
+      128,
+      120
+     ],
+     "text": "Squeeze",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:15:0.0:0.82:0.3",
+     "baseline": 19,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      24,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      24,
+      0,
+      96,
+      24
+     ],
+     "text": "Pitchout",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:16:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      7,
+      80,
+      24,
+      128,
+      48
+     ],
+     "text": "Nibble",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:16:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      24,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      40,
+      48,
+      112,
+      72
+     ],
+     "text": "Attack",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:16:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      6,
+      88,
+      24,
+      128,
+      48
+     ],
+     "text": "OF Back",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:16:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      32,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      16,
+      24,
+      88,
+      48
+     ],
+     "text": "OF In",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:16:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      72,
+      24
+     ],
+     "text": "IF In",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:16:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      6,
+      72,
+      0,
+      128,
+      24
+     ],
+     "text": "IF Back",
+     "style": "b6_m3c_kss_0_14",
+     "font": "ttf:narrow:16:0.0:0.88:0.3",
+     "baseline": 20,
+     "centre_x": 36
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      16,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "sprite": "2f",
+     "text": "Off",
+     "style": "b6_m3c_kss_0_30",
+     "font": "ttf:rounded:16:0.0:0.94:0.3",
+     "baseline": 5,
+     "pages": [
+      11
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "30",
+     "text": "Def",
+     "style": "b6_m3c_kss_0_30",
+     "font": "ttf:narrow:16:0.0:1.0:0.3",
+     "baseline": 6,
+     "pages": [
+      8
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "Off",
+     "style": "b6_m3c_kss_0_31",
+     "font": "ttf:rounded:16:0.0:0.94:0.3",
+     "baseline": 5,
+     "pages": [
+      11
+     ],
+     "palettes": [
+      31
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "Def",
+     "style": "b6_m3c_kss_0_31",
+     "font": "ttf:narrow:16:0.0:1.0:0.3",
+     "baseline": 6,
+     "pages": [
+      8
+     ],
+     "palettes": [
+      31
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      104,
+      64,
+      128
+     ],
+     "text": "Pause",
+     "style": "b6_m3c_kss_0_45",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 32
+    },
+    {
+     "from": [
+      1,
+      64,
+      104,
+      128,
+      128
+     ],
+     "text": "Paused",
+     "style": "b6_m3c_kss_0_46",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 18,
+     "centre_x": 32
+    },
+    {
+     "from": [
+      3,
+      80,
+      40,
+      128,
+      56
+     ],
+     "text": "Pause",
+     "style": "b6_m3c_kss_0_45",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14,
+     "centre_x": 24
+    },
+    {
+     "from": [
+      3,
+      80,
+      56,
+      128,
+      72
+     ],
+     "text": "Paused",
+     "style": "b6_m3c_kss_0_46",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 14,
+     "centre_x": 24
+    },
+    {
+     "sprite": "4a",
+     "text": "Leave It\nto COM",
+     "style": "b6_m3c_kss_0_42",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "pages": [
+      10
+     ],
+     "palettes": [
+      42
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "4c",
+     "text": "L e a v e   I t   t o   C O M",
+     "style": "b6_m3c_kss_0_42",
+     "font": "ttf:narrow:19:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      42
+     ]
+    }
+   ],
+   "name": "m3c_kss_0",
+   "share": true
+  }
+ ]
+}
