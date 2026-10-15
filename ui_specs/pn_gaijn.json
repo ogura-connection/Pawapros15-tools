@@ -84,7 +84,7 @@
      "sprite": "01",
      "text": "Create",
      "style": "b6_g3_pg_0_58",
-     "font": "ttf:narrow:17:0.0:0.82:0.3",
+     "font": "ttf:narrow:15:0.0:0.94:0.3",
      "baseline": 24,
      "pages": [
       1
@@ -97,7 +97,7 @@
      "sprite": "02",
      "text": "Cancel",
      "style": "b6_g3_pg_0_42",
-     "font": "ttf:narrow:17:0.0:0.82:0.3",
+     "font": "ttf:narrow:15:0.0:0.94:0.3",
      "baseline": 24,
      "pages": [
       1
@@ -136,7 +136,7 @@
      "sprite": "05",
      "text": "Remove\nfrom List",
      "style": "b6_g3_pg_0_42",
-     "font": "ttf:narrow:13:0.0:0.82:0.3",
+     "font": "ttf:narrow:11:0.0:0.94:0.3",
      "pages": [
       1
      ],
@@ -162,10 +162,10 @@
      "sprite": "0a",
      "text": "Import Watch List",
      "style": "b6_g3_pg_0_128",
-     "font": "ttf:narrow:22:0.0:0.82:0.3",
+     "font": "ttf:narrow:19:0.0:0.94:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 5,
+     "dy": 4,
      "pages": [
       2,
       3
@@ -176,19 +176,20 @@
     },
     {
      "sprite": "0b",
-     "text": "Create Search Request",
+     "text": "Create Search\nRequest",
      "style": "b6_g3_pg_0_128",
-     "font": "ttf:narrow:19:0.0:0.82:0.3",
+     "font": "ttf:rounded:19:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 5,
+     "dy": -7,
      "pages": [
       2,
       3
      ],
      "palettes": [
       128
-     ]
+     ],
+     "valign": "centre"
     },
     {
      "sprite": "0d",
@@ -224,10 +225,10 @@
      "sprite": "28",
      "text": "No search request filed right now!",
      "style": "b6_g3_pg_0_134",
-     "font": "ttf:narrow:22:0.0:0.88:0.3",
+     "font": "ttf:narrow:20:0.0:0.94:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 5,
+     "dy": 4,
      "pages": [
       5,
       7

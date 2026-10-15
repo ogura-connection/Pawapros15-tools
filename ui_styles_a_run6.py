@@ -36,3 +36,104 @@ STYLES["a6_pts_head"] = ringfill([1, 1, 1, 2, 2, 3], [9, 12], [])               
 
 # ---- h3_ydm_0 (gdt_pn.arc) ----------------------------------------------------------------------------------------------
 STYLES["a6_ydm_item"] = ringfill([15, 15, 15, 15, 15, 14], [2], [4])               # pal 4: white letters, blue ring, navy shadow
+
+import numpy as np
+from ui_styles_ore_ini import _orig_page
+
+K = 60                                          # the baseline row every whole-rectangle style below returns (the label sets it too)
+
+
+def _win(full, c0, c1):
+    return full[:, c0:c1], K
+
+
+def _flat_bg(inner, bg, H, W, window, vcentre=None):
+    """Lettering on a flat opaque rectangle (the logo banners): the art is centred on an H x W canvas of palette index `bg`."""
+    def style(ink, base):
+        art, b = inner(ink, base)
+        full = np.full((H, W), bg, np.uint8)
+        h, w = art.shape
+        top = (H - h) // 2 if vcentre is None else vcentre - h // 2
+        left = (W - w) // 2
+        sub = full[top:top + h, left:left + w]
+        sub[art > 0] = art[art > 0]
+        return _win(full, *window)
+    return style
+
+
+# ---- pnbg_sum.arc / pnbg_fal.arc: the "Pennant Race" logos (white banner, pale ring round white letters) -------------------
+_LOGO = ringfill([15, 15, 15, 15, 15, 15], [8, 6, 4])
+for _name, _W in (("a6_pbg2", 176), ("a6_pbg3", 184)):
+    STYLES[_name] = _flat_bg(_LOGO, 15, 48, _W, (0, _W))
+for _c0, _c1 in ((0, 32), (32, 120), (120, 176)):
+    STYLES["a6_pbg2~%d_%d" % (_c0, _c1)] = _flat_bg(_LOGO, 15, 48, 176, (_c0, _c1))
+for _c0, _c1 in ((0, 128), (128, 184)):
+    STYLES["a6_pbg3~%d_%d" % (_c0, _c1)] = _flat_bg(_LOGO, 15, 48, 184, (_c0, _c1))
+
+# ---- g3_pts_0 sprite 01: the "Trade Request" strip (white letters on the brown paper strip) ---------------------------------
+_TITLE_INK = ringfill([15, 15, 15, 15, 15, 15], [2])
+_strip_cache = []
+
+
+def _strip():
+    """The original 48 x 176 strip (three page rectangles side by side) with the Japanese letters painted out."""
+    if _strip_cache:
+        return _strip_cache[0].copy()
+    pg = _orig_page("pn_trade.arc", "g3_pts_0", 1)
+    S = np.hstack([pg[32:80, 16:56], pg[80:128, 16:112], pg[32:80, 72:112]]).astype(np.uint8)
+    mask = np.zeros(S.shape, bool)
+    mask[6:36, 6:170] = S[6:36, 6:170] >= 11
+    grow_ = mask.copy()
+    for dy in (-1, 0, 1):
+        for dx in (-1, 0, 1):
+            grow_ |= np.roll(np.roll(mask, dy, 0), dx, 1)
+    mask = grow_ & (np.arange(48)[:, None] >= 5) & (np.arange(48)[:, None] < 38)
+    out = S.copy()
+    H, W = S.shape
+    for x in range(W):
+        for y in np.nonzero(mask[:, x])[0]:
+            up = next((y - d for d in range(1, 30) if y - d >= 3 and not mask[y - d, x]), None)
+            dn = next((y + d for d in range(1, 30) if y + d < 42 and not mask[y + d, x]), None)
+            src = up if (dn is None or (up is not None and (y - up) <= (dn - y))) else dn
+            out[y, x] = S[src, min(max(x + ((y - src) // 3), 3), 172)] if src is not None else S[y, x]
+    _strip_cache.append(out)
+    return out.copy()
+
+
+def _title_strip(window):
+    def style(ink, base):
+        art, b = _TITLE_INK(ink, base)
+        full = _strip()
+        h, w = art.shape
+        top = 21 - h // 2
+        left = 88 - w // 2
+        sub = full[top:top + h, left:left + w]
+        sub[art > 0] = art[art > 0]
+        return _win(full, *window)
+    return style
+
+
+for _c0, _c1 in ((0, 40), (40, 136), (136, 176)):
+    STYLES["a6_pts_title~%d_%d" % (_c0, _c1)] = _title_strip((_c0, _c1))
+
+# ---- g3_pts_0 sprite 0e: the red approval stamp, re-drawn as a ring round red "OK" ------------------------------------------
+_STAMP_INK = ringfill([1, 1, 1, 2, 2, 3], [15])
+
+
+def _stamp(ink, base):
+    art, b = _STAMP_INK(ink, base)
+    full = np.zeros((80, 80), np.uint8)
+    ring = {35: 15, 34: 15, 33: 1, 32: 1, 31: 1, 30: 1, 29: 14, 28: 15}      # radial profile read from the top of the original
+    for y in range(80):
+        for x in range(80):
+            r = ((y - 39.5) ** 2 + (x - 39.5) ** 2) ** 0.5
+            full[y, x] = ring.get(int(r), 0)
+    h, w = art.shape
+    top = 40 - h // 2
+    left = 40 - w // 2
+    sub = full[top:top + h, left:left + w]
+    sub[art > 0] = art[art > 0]
+    return full, K
+
+
+STYLES["a6_pts_stamp"] = _stamp

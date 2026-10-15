@@ -891,7 +891,7 @@
      "font": "ttf:rounded:18:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 81,
-     "dy": 3
+     "dy": 2
     },
     {
      "sprite": "01",
@@ -900,7 +900,7 @@
      "font": "ttf:narrow:18:0.0:0.92:0.3",
      "slices": true,
      "slice_width": 74,
-     "dy": 2
+     "dy": 3
     },
     {
      "sprite": "02",
@@ -909,7 +909,7 @@
      "font": "ttf:narrow:17:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 67,
-     "dy": 1
+     "dy": 7
     },
     {
      "sprite": "03",
@@ -927,7 +927,7 @@
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 58,
-     "dy": 3
+     "dy": 5
     },
     {
      "sprite": "06",
@@ -936,14 +936,14 @@
      "font": "ttf:rounded:18:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 43,
-     "dy": 1
+     "dy": 5
     },
     {
      "sprite": "08",
      "text": "Cancel",
      "style": "c6_s3_ptz00_08",
      "font": "ttf:narrow:18:0.0:0.85:0.3",
-     "baseline": 33
+     "baseline": 34
     },
     {
      "sprite": "09",
@@ -957,7 +957,7 @@
      "text": "Remove",
      "style": "c6_s3_ptz00_0b",
      "font": "ttf:rounded:14:0.0:0.85:0.3",
-     "baseline": 30
+     "baseline": 32
     }
    ],
    "name": "s3_ptz00",
