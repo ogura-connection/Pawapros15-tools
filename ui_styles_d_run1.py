@@ -12,7 +12,7 @@ STYLES = {}
 # h3_aps_0: Def. Shift title (palette 14): orange letters in two black rings
 STYLES["d_aps_title"] = ringfill([0xf], [1, 1])
 # Outfield / Infield (palettes 50, 51): lavender letters, a blue-lavender ring, black shadow
-STYLES["d_aps_side"] = ringfill([0xf], [6], [3, 2])
+STYLES["d_aps_side"] = ringfill([0xf], [6], [3])
 # the rows of shift choices and the Bunt Shift line (palette 52): navy letters in light rings
 STYLES["d_aps_row"] = ringfill([4], [0xe, 0xa])
 STYLES["d_aps_row1"] = ringfill([4], [0xe])
