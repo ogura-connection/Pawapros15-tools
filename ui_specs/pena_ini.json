@@ -888,37 +888,37 @@
      "sprite": "00",
      "text": "Choose the team you'll play",
      "style": "c6_s3_ptz00_00",
-     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 81,
-     "dy": 2
+     "slice_width": 73,
+     "dy": 4
     },
     {
      "sprite": "01",
      "text": "Choose the teams that take part",
      "style": "c6_s3_ptz00_01",
-     "font": "ttf:narrow:18:0.0:0.92:0.3",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
      "slices": true,
-     "slice_width": 74,
-     "dy": 3
+     "slice_width": 73,
+     "dy": 4
     },
     {
      "sprite": "02",
      "text": "Change Settings",
      "style": "c6_s3_ptz00_02",
-     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "font": "ttf:rounded:14:0.0:0.85:0.3",
      "slices": true,
-     "slice_width": 67,
-     "dy": 7
+     "slice_width": 68,
+     "dy": 4
     },
     {
      "sprite": "03",
      "text": "Add Arrange Teams",
      "style": "c6_s3_ptz00_03",
-     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 79,
-     "dy": 2
+     "slice_width": 72,
+     "dy": 4
     },
     {
      "sprite": "04",
@@ -926,38 +926,38 @@
      "style": "c6_s3_ptz00_04",
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "slices": true,
-     "slice_width": 58,
-     "dy": 5
+     "slice_width": 60,
+     "dy": 4
     },
     {
      "sprite": "06",
      "text": "Cancel",
      "style": "c6_s3_ptz00_06",
-     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 43,
-     "dy": 5
+     "slice_width": 40,
+     "dy": 3
     },
     {
      "sprite": "08",
      "text": "Cancel",
      "style": "c6_s3_ptz00_08",
-     "font": "ttf:narrow:18:0.0:0.85:0.3",
-     "baseline": 34
+     "font": "ttf:narrow:16:0.0:0.92:0.3",
+     "baseline": 32
     },
     {
      "sprite": "09",
      "text": "Reset\nTeams",
      "style": "c6_s3_ptz00_09",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 30
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 29
     },
     {
      "sprite": "0b",
      "text": "Remove",
      "style": "c6_s3_ptz00_0b",
-     "font": "ttf:rounded:14:0.0:0.85:0.3",
-     "baseline": 32
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 30
     }
    ],
    "name": "s3_ptz00",
