@@ -39,6 +39,8 @@ def scm_style(ink, base):
 
 STYLES = {
     "e_scm": scm_style,
+    # team-type plates of r4_12h (palettes 32, 34, 37 share their indices): white letters, a dark ring, a lighter ring
+    "e_plate": crisp(tight(banded([0, 11, 11, 11, 11, 11, 11], [1, 3]))),
     # Baseball School & Practice (g3_rt): yellow shading to orange in a brown outline, a white band, blue rim and glow
     "e_rt_title": crisp(logo([12, 12, 14, 14, 13, 13], [1], 3, 15, 4, [6, 8], 2, 2)),
     # the two tabs (palette 2): the same in orange

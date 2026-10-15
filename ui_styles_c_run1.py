@@ -7,6 +7,19 @@ from ui_type import grow, shift, logo, boxed
 from ui_styles_ore_ini import ringfill
 
 STYLES = {}
+
+
+def win(style, c0, c1):
+    """Only the columns c0..c1 of the whole word (a word shared out over parts that stand side by side)."""
+    def cut(ink, base):
+        art, b = style(ink, base)
+        out = art[:, c0:c1]
+        if out.shape[1] == 0:
+            out = np.zeros((art.shape[0], 1), np.uint8)
+        return out, b
+    return cut
+
+
 # s4_ts00 headings (palette 0): deep blue letters, white ring, blue ring, teal shadow
 STYLES['c_vs_head'] = ringfill([6, 6, 6, 6, 6, 6, 8], [15, 9], [4, 1])
 # s4_ts00 option values (palette 1): purple letters, white ring, blue shadow
@@ -45,7 +58,16 @@ STYLES['c_tmz_green3'] = logo([227, 244, 201, 190, 154, 148], [227, 227], 3, 255
 STYLES['c_tmz_sky3'] = logo([205, 205, 191, 172, 159, 152], [205, 205], 3, 255, 130, [30, 92, 92], 3, 2)
 #  learned from vs.arc s5_tmz 0f
 STYLES['c_tmz_pink'] = logo([247, 241, 227, 171, 135], [247, 247], 2, 255, 198, [98, 59, 59, 59], 3, 2)
+# s5_tmz 0c VS: hollow letters, navy outline, cyan ring, grey shadow
+STYLES['c_tmz_vs'] = ringfill([0], [2, 2, 2, 2, 0x8f, 0x8f], [0xb4, 0xb4, 0xb4])
+#  learned from vs.arc s5_tmz 0d
+STYLES['c_tmz_away'] = ringfill([248, 233, 228, 198, 182, 132, 124, 106], [2, 2, 2], [142, 142])
+#  learned from vs.arc s5_tmz 0e
+STYLES['c_tmz_home'] = ringfill([251, 240, 234, 217, 199, 185, 180, 166], [3, 3, 173], [142])
 #  learned from vs.arc s5w_trx 00
 STYLES['c_trx_orange'] = logo([245, 228, 198, 172, 138, 94], [245, 245], 2, 255, 114, [72, 137, 137, 137], 3, 2)
 #  learned from vs.arc s5w_trx 01
 STYLES['c_trx_green'] = logo([236, 231, 224, 218, 208, 108], [236, 236], 3, 255, 114, [86, 116, 137, 137], 3, 2)
+STYLES['c_vs_ctl~0_32'] = win(STYLES['c_vs_ctl'], 0, 32)
+STYLES['c_vs_ctl~32_64'] = win(STYLES['c_vs_ctl'], 32, 64)
+STYLES['c_vs_ctl~64_4096'] = win(STYLES['c_vs_ctl'], 64, 4096)

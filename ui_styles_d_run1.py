@@ -16,3 +16,9 @@ STYLES["d_aps_side"] = ringfill([0xf], [6], [3])
 # the rows of shift choices and the Bunt Shift line (palette 52): navy letters in light rings
 STYLES["d_aps_row"] = ringfill([4], [0xe, 0xa])
 STYLES["d_aps_row1"] = ringfill([4], [0xe])
+# h3_lo_0: the record banner (palette 23): white letters shading to cream, blue ring, dark brown outer ring
+STYLES["d_lo_banner"] = ringfill([0xf, 0xe, 0xd, 0xc], [8, 8, 1])
+# hit-direction tags (palettes 39, 40): orange letters, green ring, dark green outer ring
+STYLES["d_lo_tag"] = ringfill([0xf], [4, 1])
+# h3_mrg_0 team names (palette 0): white letters, navy ring, blue outer ring
+STYLES["d_mrg_name"] = ringfill([0xf], [1, 5])
