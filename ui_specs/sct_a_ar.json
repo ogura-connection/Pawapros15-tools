@@ -398,13 +398,13 @@
    "bank": "z4_efo_0",
    "page": 1,
    "rect": [
-    66,
+    65,
     85,
-    123,
+    126,
     112
    ],
    "text": "Training\nPolicy",
-   "font": "ttf:rounded:7:0.0:1.0:0.3",
+   "font": "ttf:rounded:8:0.0:1.0:0.3",
    "copy": "clear",
    "style": "c4_efo_0_0"
   },

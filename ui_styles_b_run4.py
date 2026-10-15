@@ -168,3 +168,4 @@ STYLES["b4_eik2"] = _logo_window(256, 304)         # page 2 rect 0,0,48,128
 
 # ---- sct_titl.arc r4_eikz page 4 / 5: the info card of the Continue screen (green letters, white ring, blue glow; palettes 1 / 7) ----------------
 STYLES["b4_info"] = ringfill([9, 8, 5, 3, 2, 1], [10, 10, 12], [15, 15])
+STYLES["b4_info2"] = ringfill([13, 15, 15, 15, 13, 11], [7, 7], [5, 4])                    # palette 7: dark green letters, white ring, pale glow (card labels)
