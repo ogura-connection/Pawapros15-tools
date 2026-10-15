@@ -955,5 +955,222 @@
     }
    ]
   }
+ ],
+ "sheet": [
+  {
+   "pages": "tex_y5_cmc",
+   "cols": 2,
+   "items": [
+    {
+     "box": [
+      14,
+      13,
+      238,
+      30
+     ],
+     "bg": 0.0,
+     "colour": "#1d2530",
+     "crisp": true,
+     "text": "Baseball Club Application",
+     "font": "ttf:times-bold:12:0:1.0:0.2",
+     "centre": [
+      126,
+      22
+     ]
+    },
+    {
+     "box": [
+      11,
+      45,
+      47,
+      57
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true,
+     "text": "Date",
+     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "centre": [
+      29,
+      51
+     ]
+    },
+    {
+     "box": [
+      74,
+      45,
+      100,
+      57
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true
+    },
+    {
+     "box": [
+      124,
+      45,
+      141,
+      57
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true,
+     "text": "/",
+     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "centre": [
+      132,
+      51
+     ]
+    },
+    {
+     "box": [
+      165,
+      45,
+      182,
+      57
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true,
+     "text": "/",
+     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "centre": [
+      173,
+      51
+     ]
+    },
+    {
+     "box": [
+      206,
+      45,
+      222,
+      57
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true
+    },
+    {
+     "box": [
+      11,
+      64,
+      47,
+      89
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true,
+     "text": "Name",
+     "font": "ttf:tahoma:9:0:1.0:0.2",
+     "centre": [
+      29,
+      76
+     ]
+    },
+    {
+     "box": [
+      11,
+      131,
+      64,
+      152
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true,
+     "text": "Handedness",
+     "font": "ttf:narrow:7:0:1.0:0.2",
+     "centre": [
+      37,
+      141
+     ]
+    },
+    {
+     "box": [
+      11,
+      160,
+      64,
+      185
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true,
+     "text": "Position",
+     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "centre": [
+      37,
+      173
+     ]
+    },
+    {
+     "box": [
+      11,
+      194,
+      64,
+      216
+     ],
+     "bg": "mode",
+     "colour": "#5c5c60",
+     "crisp": true,
+     "text": "Form",
+     "font": "ttf:tahoma:12:0:1.0:0.2",
+     "centre": [
+      37,
+      205
+     ]
+    },
+    {
+     "box": [
+      11,
+      224,
+      82,
+      242
+     ],
+     "bg": "rows",
+     "colour": "#5c5c60",
+     "crisp": true,
+     "text": "Notes",
+     "font": "ttf:tahoma:10:0:1.0:0.2",
+     "centre": [
+      30,
+      232
+     ]
+    },
+    {
+     "box": [
+      178,
+      262,
+      224,
+      285
+     ],
+     "bg": "mode",
+     "colour": "#ffffff",
+     "crisp": true,
+     "text": "Photo",
+     "font": "ttf:tahoma:12:0:1.0:0.2",
+     "centre": [
+      201,
+      274
+     ]
+    },
+    {
+     "box": [
+      178,
+      288,
+      224,
+      310
+     ],
+     "bg": "mode",
+     "colour": "#ffffff",
+     "crisp": true,
+     "text": "Here",
+     "font": "ttf:tahoma:12:0:1.0:0.2",
+     "centre": [
+      201,
+      298
+     ]
+    }
+   ]
+  }
  ]
 }
