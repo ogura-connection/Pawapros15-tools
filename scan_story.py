@@ -309,6 +309,24 @@ BLOCK_SCRIPTS = {"sct_main.rel": {"section": 5, "region": (14416, 189368), "labe
                                   "op_len": EIKAN_OP_LEN, "list": 0x67, "ends": (0x01, 0x87), "max_op": 0xCE,
                                   "name_ops": tuple(range(0x4B, 0x51)), "line": 18}}
 
+# The player's lines during a Success match (scs_comi.rel: "I'll hit a homer!", the answers to a sign) run on
+# an interpreter of their own (sec1+0x1CF8: script pointer at r15+0x154, 141 opcodes, jump table at
+# sec5+0x3DC), numbered like Success Mode. Lengths read off the handlers; 0x66 / 0x67 move the pointer in a
+# helper (sec1+0x2B58 / 0x2C20). 0x75 goto and 0x76 call take a label number from the table that sec5+0x2D90
+# points to (sec5+11672, 347 labels; the last entry, sec5+13064, is a lone ダミー run behind the table and
+# stays as it is). 0x4B / 0x4C insert a name. Four halfwords behind a goto at +1846 are unreachable.
+COMI_OP_LEN = {op: 1 for op in range(0x100)}
+for _op in (0x5F, 0x60, 0x62, 0x63, 0x65, 0x66, 0x67, 0x69, 0x6A, 0x6B, 0x6C, 0x6D, 0x71, 0x72, 0x73, 0x75, 0x76,
+            0x78, 0x88):
+    COMI_OP_LEN[_op] = 2
+for _op in list(range(0x26, 0x46)) + [0x77]:
+    COMI_OP_LEN[_op] = 3
+for _op in range(0x16, 0x26):
+    COMI_OP_LEN[_op] = 4
+BLOCK_SCRIPTS["scs_comi.rel"] = {"section": 5, "region": (1800, 11664), "labels": (11672, 13060),
+                                 "op_len": COMI_OP_LEN, "list": 0x5D, "ends": (0x01, 0x75), "max_op": 0x8C,
+                                 "name_ops": (0x4B, 0x4C), "line": 17, "dead": 4}
+
 
 class BlockScript(Script):
     """A script that shares its section with other data (see BLOCK_SCRIPTS). Same attributes as Script.
