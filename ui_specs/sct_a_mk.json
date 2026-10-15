@@ -2300,7 +2300,7 @@
      ],
      "text": "Hokkaido",
      "style": "a4_mk_plate_19_0",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2313,7 +2313,7 @@
      ],
      "text": "Tohoku",
      "style": "a4_mk_plate_19_24",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2326,7 +2326,7 @@
      ],
      "text": "Hokushinetsu",
      "style": "a4_mk_plate_19_48",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2339,7 +2339,7 @@
      ],
      "text": "Kanto",
      "style": "a4_mk_plate_19_72",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2352,7 +2352,7 @@
      ],
      "text": "Tokyo",
      "style": "a4_mk_plate_19_96",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2365,7 +2365,7 @@
      ],
      "text": "Shikoku",
      "style": "a4_mk_plate_20_0",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2378,7 +2378,7 @@
      ],
      "text": "Tokai",
      "style": "a4_mk_plate_20_24",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2391,7 +2391,7 @@
      ],
      "text": "Kyushu",
      "style": "a4_mk_plate_20_48",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2404,7 +2404,7 @@
      ],
      "text": "Kinki",
      "style": "a4_mk_plate_20_72",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     },
     {
@@ -2417,7 +2417,7 @@
      ],
      "text": "Chugoku",
      "style": "a4_mk_plate_20_96",
-     "font": "ttf:narrow:8:0.0:1.0:0.4",
+     "font": "ttf:narrow:8:0.0:1.0:0.5",
      "valign": "centre"
     }
    ],

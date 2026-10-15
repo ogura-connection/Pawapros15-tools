@@ -105,12 +105,15 @@ def callout(page, y0, h):
     def make(ink, base):
         art, _ = text(ink, base)
         out = _plate(page, y0, h)
-        out[4:18, 7:74] = 4                                   # the flat inside of the plate (the Japanese word stood here)
+        ys0, xs0 = np.nonzero(out)
+        top, bot, left, right = ys0.min(), ys0.max(), xs0.min(), xs0.max()
+        out[top + 2:bot - 1, left + 2:right - 1] = 4                    # the flat inside of the plate (the Japanese word stood here)
+        ty0, ty1, tx0, tx1 = top + 4, bot - 3, left + 3, right - 2     # where the word may stand
         ah, aw = art.shape
-        ox, oy = 7 + (67 - aw) // 2, 4 + (14 - ah) // 2
-        x0, y0_ = max(ox, 7), max(oy, 4)
-        sub = art[y0_ - oy:y0_ - oy + min(ah, 14), x0 - ox:x0 - ox + min(aw, 67)]
-        tgt = out[y0_:y0_ + sub.shape[0], x0:x0 + sub.shape[1]]
+        ox, oy = tx0 + (tx1 - tx0 - aw) // 2, ty0 + (ty1 - ty0 - ah) // 2
+        sy0, sx0 = max(ty0 - oy, 0), max(tx0 - ox, 0)
+        sub = art[sy0:ah, sx0:aw][:ty1 - max(oy, ty0), :tx1 - max(ox, tx0)]
+        tgt = out[max(oy, ty0):max(oy, ty0) + sub.shape[0], max(ox, tx0):max(ox, tx0) + sub.shape[1]]
         tgt[sub > 0] = sub[sub > 0]
         ys, xs = np.nonzero(out)
         return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], 0

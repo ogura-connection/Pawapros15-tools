@@ -1,0 +1,68 @@
+{
+ "arc": "sct_a_it.arc",
+ "repack": [
+  {
+   "bank": "z4_edi_0#0",
+   "palette": 0,
+   "style": "d4_edi_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     16,
+     112,
+     128,
+     128
+    ],
+    [
+     1,
+     16,
+     104,
+     88,
+     112
+    ],
+    [
+     1,
+     48,
+     80,
+     88,
+     104
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Item List",
+     "style": "d4_edi_title",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": -126
+    },
+    {
+     "from": [
+      1,
+      48,
+      80,
+      88,
+      104
+     ],
+     "text": "owned",
+     "style": "d4_edi_owned",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": 4
+    }
+   ],
+   "name": "edi",
+   "sprites": "z4_edi_0#1",
+   "sprite_prefix": "z4_edi_0"
+  }
+ ]
+}

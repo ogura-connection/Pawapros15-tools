@@ -53,7 +53,28 @@ def _dilate(m, up=3, left=3, down=5, right=5):
     return out
 
 
-def sct_logo(title="Eikan Nine", sub="Build a Powerhouse Club!", tcap=34, tsq=0.9, tstroke=0.35, scap=13, ssq=0.95, sstroke=0.0, tcx=146, tcy=59, scx=148):
+def _propagate(rgb, mask, valid):
+    """Fill `mask` pixels from the valid pixels round them, layer by layer (each takes the mean of its valid 8-neighbours)."""
+    out = rgb.copy(); ok = valid & ~mask; todo = mask.copy()
+    H, W = mask.shape
+    while todo.any():
+        pk = np.pad(ok, 1); pc = np.pad(out, ((1, 1), (1, 1), (0, 0)))
+        cnt = np.zeros(mask.shape); acc = np.zeros(out.shape)
+        for dy in (-1, 0, 1):
+            for dx in (-1, 0, 1):
+                if dy or dx:
+                    sel = pk[1 + dy:1 + dy + H, 1 + dx:1 + dx + W]
+                    cnt += sel
+                    acc += pc[1 + dy:1 + dy + H, 1 + dx:1 + dx + W] * sel[..., None]
+        now = todo & (cnt > 0)
+        if not now.any():
+            break
+        out[now] = acc[now] / cnt[now][:, None]
+        ok = ok | now; todo = todo & ~now
+    return out
+
+
+def sct_logo(title="Eikan Nine", sub="Build a Powerhouse Club!", tcap=34, tsq=0.9, tstroke=0.35, scap=12, ssq=0.9, sstroke=0.0, tcx=146, tcy=59, scx=148, scy=100):
     A = _A3
     c, pal = _logo_in()
     q = A.Quant(pal, c)
@@ -95,19 +116,25 @@ def sct_logo(title="Eikan Nine", sub="Build a Powerhouse Club!", tcap=34, tsq=0.
     y0, x0 = tcy - big.shape[0] // 2, tcx - big.shape[1] // 2
     reg = (slice(y0, y0 + big.shape[0]), slice(x0, x0 + big.shape[1]))
     new[reg][alpha] = q(out[alpha])
-    # --- subtitle: the brown letters are cut out of the cream band, new ones set in the same brown
-    bx0, bx1, by0, by1 = 56, 242, 87, 115
-    band = np.zeros(c.shape, bool); band[by0:by1, bx0:bx1] = True
-    text = band & (ri[..., 0] - ri[..., 2] > 28) & (ri[..., 0] > ri[..., 1] + 8) & (lum < 215)
-    cream = band & (ri[..., 0] > 235) & (ri[..., 1] > 235) & (ri[..., 2] > 205)
-    tm = _dilate(text, 1, 1, 1, 1) & band
-    rgb3 = A.row_inpaint(rgb, tm, valid=cream & ~tm)
-    new[tm] = q(rgb3[tm])
+    # --- subtitle: the old lettering and its cream halo are cut out of the green (rows filled from the green on both sides), the new
+    # words are set in the same brown with a cream halo of their own, as the Japanese had
+    green = (ri[..., 1] > ri[..., 0] + 20) & (ri[..., 1] > ri[..., 2] + 20)
+    reg = np.zeros(c.shape, bool); reg[86:117, 52:247] = True
+    old = reg & ~green & ~plate & (pal[c][..., 3] > 0)
+    old = _dilate(old, 1, 1, 1, 1) & reg & ~green & ~plate
+    rgb3 = A.row_inpaint(rgb, old, valid=green & ~old & (np.arange(W)[None, :] > 40) & (np.arange(W)[None, :] < 262))
+    new[old] = q(rgb3[old])
     sm, sbase = A.crisp_mask(sub, scap, font="condb", stroke=sstroke, squeeze=ssq)
     sm = A.despeckle(sm)
     sh_, sw_ = sm.shape
-    sy = 101 - sh_ // 2; sx = scx - sw_ // 2
-    new[sy:sy + sh_, sx:sx + sw_][sm] = q(np.array([(98, 41, 16)]))[0]
+    pad2 = 5
+    sbig = np.zeros((sh_ + 2 * pad2, sw_ + 2 * pad2), bool); sbig[pad2:pad2 + sh_, pad2:pad2 + sw_] = sm
+    halo = A.grow(sbig, 3); edge = A.grow(halo, 1, diag=False) & ~halo
+    sy0 = scy - sbig.shape[0] // 2; sx0 = scx - sbig.shape[1] // 2
+    sreg = (slice(sy0, sy0 + sbig.shape[0]), slice(sx0, sx0 + sbig.shape[1]))
+    new[sreg][edge] = q(np.array([(255, 255, 255)]))[0]
+    new[sreg][halo] = q(np.array([(255, 252, 232)]))[0]
+    new[sreg][sbig] = q(np.array([(98, 41, 16)]))[0]
     return new, (w, h), (sw_, sh_)
 
 

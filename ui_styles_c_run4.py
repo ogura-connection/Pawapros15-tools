@@ -216,3 +216,80 @@ STYLES["c4_ed_pts"] = ringfill([15, 15, 15, 15, 14, 13], [4, 4], [2, 1])        
 
 STYLES["c4_efo"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 10], [1, 1])                  # pal 26 (z4_efo_0 tape): white letters, teal ring, black shadow
 STYLES["c4_efo_h"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4, 9], [1])                  # page 1: the heading (black ring)
+
+# z4_efo_0: the tape words painted in place. (English, [(page, row, x0, x1), ...] the Japanese word's columns (a word that runs on is cut at
+# the end of the row), cap, squeeze, face); the word is centred over its columns and cut where the Japanese was cut.
+EFO = [
+    ('Training\nPolicy', [(1, 3, 66, 122)], 7, 1.0, 'rounded'),
+    ('Trajectory Up', [(2, 2, 5, 75)], 8, 0.85, 'rounded'),
+    ('Contact Up', [(2, 2, 87, 127), (2, 3, 0, 27)], 9, 0.85, 'rounded'),
+    ('Power Up', [(2, 3, 37, 107)], 11, 0.85, 'rounded'),
+    ('Speed Up', [(2, 3, 117, 127), (3, 0, 0, 59)], 11, 0.85, 'rounded'),
+    ('Arm Up', [(3, 0, 68, 127), (3, 1, 0, 11)], 13, 0.92, 'rounded'),
+    ('Fielding Up', [(3, 1, 21, 90)], 9, 0.85, 'rounded'),
+    ('Error Res. Up', [(3, 1, 100, 127), (3, 2, 0, 43)], 8, 0.85, 'rounded'),
+    ('Velocity Up', [(3, 2, 52, 123)], 10, 0.85, 'rounded'),
+    ('Control Up', [(3, 3, 4, 76)], 10, 0.85, 'rounded'),
+    ('Stamina Up', [(3, 3, 83, 127), (4, 0, 0, 28)], 10, 0.85, 'rounded'),
+    ('Hone Brk.', [(4, 0, 38, 90)], 8, 0.85, 'rounded'),
+    ('Learn Brk.', [(4, 0, 102, 127), (4, 1, 0, 27)], 7, 0.92, 'rounded'),
+    ('Break Up', [(4, 1, 37, 92)], 9, 0.85, 'rounded'),
+    ('Hone Breaking', [(4, 1, 100, 127), (4, 2, 0, 42)], 7, 0.85, 'rounded'),
+    ('Learn Breaking', [(4, 2, 52, 123)], 7, 0.85, 'rounded'),
+    ('Auto', [(5, 0, 5, 74)], 17, 1.0, 'rounded'),
+    ('All-Round', [(5, 0, 85, 127), (5, 1, 0, 10)], 8, 0.85, 'rounded'),
+    ('Change Position', [(5, 1, 24, 87)], 7, 0.85, 'narrow'),
+    ('Change Order', [(5, 1, 103, 127), (5, 2, 0, 39)], 8, 0.85, 'narrow'),
+    ('Change Form', [(5, 2, 54, 122)], 8, 0.85, 'rounded'),
+    ('Pitcher', [(5, 3, 5, 58)], 11, 0.85, 'rounded'),
+    ('Catcher', [(5, 3, 69, 122)], 12, 0.85, 'narrow'),
+    ('1st Base', [(6, 0, 5, 58)], 9, 0.85, 'rounded'),
+    ('2nd Base', [(6, 0, 69, 122)], 8, 0.92, 'rounded'),
+    ('3rd Base', [(6, 1, 5, 58)], 9, 0.85, 'rounded'),
+    ('Shortstop', [(6, 1, 69, 122)], 8, 0.85, 'rounded'),
+    ('Outfield', [(6, 2, 5, 58)], 10, 0.85, 'rounded'),
+    ('Bats Right', [(6, 2, 70, 122)], 7, 0.92, 'rounded'),
+    ('Bats Left', [(6, 3, 6, 58)], 8, 0.92, 'rounded'),
+    ('Switch', [(6, 3, 70, 122)], 14, 0.85, 'narrow'),
+    ('Overhand', [(7, 0, 3, 76)], 14, 0.85, 'narrow'),
+    ('3-Quarters', [(7, 0, 83, 127), (7, 1, 0, 28)], 13, 0.85, 'narrow'),
+    ('Sidearm', [(7, 1, 35, 108)], 14, 0.85, 'rounded'),
+    ('Submarine', [(7, 1, 116, 127), (7, 2, 0, 60)], 10, 0.85, 'rounded'),
+    ('Standard', [(7, 2, 68, 127), (7, 3, 0, 12)], 15, 0.85, 'narrow'),
+    ('Open Stance', [(7, 3, 20, 92)], 8, 0.92, 'rounded'),
+    ('Kannushi', [(7, 3, 101, 127), (8, 0, 0, 26)], 8, 0.92, 'rounded'),
+    ('Crouching', [(8, 0, 35, 108)], 11, 0.85, 'rounded'),
+    ('Pendulum', [(8, 0, 117, 127), (8, 1, 0, 42)], 8, 0.85, 'rounded'),
+    ('Buster', [(8, 1, 55, 121)], 15, 0.85, 'rounded'),
+    ('Flamingo', [(8, 2, 5, 58)], 9, 0.85, 'rounded'),
+    ('Original', [(8, 2, 68, 127), (8, 3, 0, 12)], 13, 0.92, 'rounded'),
+    ('Pitching Form', [(8, 3, 20, 91)], 8, 0.85, 'rounded'),
+]
+
+
+def _efo_style(style_name, cap, W, c0, c1, two):
+    inner = STYLES[style_name]
+
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        out = np.zeros((32, c1 - c0), np.uint8)
+        h, w = art.shape
+        ax = (W - w) // 2 - c0
+        ay = (32 - h) // 2 if two else int(round(15.5 + cap / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y, ax + x
+            if 0 <= yy < 32 and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+for _n, (_t, _segs, _cap, _sq, _face) in enumerate(EFO):
+    _W = sum(sg[3] - sg[2] + 1 for sg in _segs)
+    _c = 0
+    for _k, sg in enumerate(_segs):
+        _w = sg[3] - sg[2] + 1
+        STYLES["c4_efo_%d_%d" % (_n, _k)] = _efo_style("c4_efo_h" if sg[0] == 1 else "c4_efo", _cap, _W, _c, _c + _w, "\n" in _t)
+        _c += _w
