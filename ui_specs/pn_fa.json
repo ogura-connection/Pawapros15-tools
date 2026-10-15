@@ -1432,7 +1432,7 @@
       462,
       254
      ],
-     "bg": "rows",
+     "bg": "cols",
      "text": "Signing Day...",
      "font": "ttf:rounded:43:0.0:1.0:0.3",
      "centre": [

@@ -472,20 +472,20 @@
     {
      "sprite": "21",
      "text": "Winner!",
-     "style": "c6_g3_dtk_0_21",
+     "style": "c6_g3_dtk_0_21_h",
      "font": "ttf:rounded:30:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 51,
+     "slice_width": 53,
      "dy": -1
     },
     {
      "sprite": "22",
      "text": "No Luck",
-     "style": "c6_g3_dtk_0_22",
+     "style": "c6_g3_dtk_0_22_h",
      "font": "ttf:rounded:30:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 54,
-     "dy": 3
+     "slice_width": 55,
+     "dy": 1
     }
    ],
    "name": "g3_dtk_0",

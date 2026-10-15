@@ -2192,8 +2192,8 @@
      "sprite": "4c",
      "text": "Pick from\nList Below",
      "style": "a6_btn_olive",
-     "font": "ttf:narrow:11:0.0:0.85:0.25",
-     "baseline": 21,
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "baseline": 20,
      "palettes": [
       38
      ]
