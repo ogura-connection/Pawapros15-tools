@@ -1267,20 +1267,6 @@
      96,
      112,
      128
-    ],
-    [
-     9,
-     56,
-     0,
-     128,
-     48
-    ],
-    [
-     9,
-     0,
-     48,
-     128,
-     80
     ]
    ],
    "labels": [
@@ -1288,27 +1274,24 @@
      "sprite": "16",
      "text": "Choose FA Compensation",
      "style": "d6_w_title",
-     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "font": "ttf:narrow:12:0.0:0.92:0.25",
      "slices": true,
      "slice_width": 128,
-     "dy": 1,
-     "overlap": 1
+     "dy": 1
     },
     {
      "sprite": "17",
      "text": "Choose Protected",
      "style": "d6_w_title",
-     "font": "ttf:narrow:10:0.0:1.0:0.25",
-     "baseline": 18,
-     "slices": true,
-     "overlap": 1
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 19
     },
     {
      "sprite": "18",
      "text": "Choose Player",
      "style": "d6_w_title",
-     "font": "ttf:narrow:10:0.0:1.0:0.25",
-     "baseline": 18
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 19
     }
    ],
    "name": "wtitle"
@@ -1361,13 +1344,6 @@
      72,
      128,
      96
-    ],
-    [
-     4,
-     64,
-     96,
-     128,
-     128
     ]
    ],
    "labels": [
@@ -1375,24 +1351,24 @@
      "sprite": "19",
      "text": "Salary",
      "style": "d6_w_sal",
-     "font": "ttf:narrow:9:0.0:1.0:0.25",
-     "baseline": 15
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 16
     },
     {
      "sprite": "42",
      "text": "Ratings",
      "style": "d6_w_sal",
-     "font": "ttf:narrow:9:0.0:1.0:0.25",
-     "baseline": 16
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 18
     },
     {
      "sprite": "43",
      "text": "View the other team's ratings",
      "style": "d6_w_sal",
-     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 112,
-     "dy": 2
+     "dy": 1
     }
    ],
    "name": "wsal"

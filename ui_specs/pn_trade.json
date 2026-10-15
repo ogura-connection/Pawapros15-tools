@@ -1644,11 +1644,18 @@
      128
     ],
     [
-     9,
+     14,
      72,
      96,
      128,
      128
+    ],
+    [
+     3,
+     48,
+     64,
+     88,
+     120
     ],
     [
      5,
@@ -2138,11 +2145,11 @@
    "under": 3,
    "areas": [
     [
-     3,
-     48,
+     1,
      64,
-     88,
-     120
+     0,
+     128,
+     40
     ],
     [
      10,
@@ -2171,7 +2178,7 @@
      "sprite": "47",
      "text": "Withdraw",
      "style": "a6_btn_purple",
-     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
      "baseline": 20,
      "palettes": [
       42
@@ -2181,8 +2188,8 @@
      "sprite": "54",
      "text": "Remove\nfrom List",
      "style": "a6_btn_purple",
-     "font": "ttf:narrow:11:0.0:0.92:0.25",
-     "baseline": 22,
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 21,
      "palettes": [
       42
      ]
@@ -2191,7 +2198,7 @@
      "sprite": "5a",
      "text": "Decline\nTrade",
      "style": "a6_btn_purple",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 16,
      "palettes": [
       42
@@ -2293,7 +2300,7 @@
      9,
      16,
      96,
-     72,
+     56,
      128
     ],
     [
@@ -2386,8 +2393,8 @@
      "sprite": "59",
      "text": "Accept\nTrade",
      "style": "a6_btn_brown",
-     "font": "ttf:narrow:10:0.0:1.0:0.25",
-     "baseline": 16,
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 15,
      "palettes": [
       39
      ]
@@ -2499,6 +2506,13 @@
      64
     ],
     [
+     9,
+     56,
+     96,
+     128,
+     128
+    ],
+    [
      11,
      56,
      0,
@@ -2525,13 +2539,6 @@
      0,
      128,
      64
-    ],
-    [
-     14,
-     72,
-     96,
-     128,
-     128
     ]
    ],
    "labels": [
