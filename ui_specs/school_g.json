@@ -1,0 +1,652 @@
+{
+ "arc": "school_g.arc",
+ "repack": [
+  {
+   "bank": "g3_kg",
+   "palette": 0,
+   "style": "e4_sg_btn",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     112,
+     128
+    ],
+    [
+     9,
+     120,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     112,
+     96,
+     120,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     17,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     18,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     19,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     23,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     24,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     25,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     26,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0d",
+     "text": "Try Hitting a Fastball",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "0e",
+     "text": "Power-Swing at a Fastball",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "0f",
+     "text": "Try Hitting a Slider",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "10",
+     "text": "Try Hitting a Curve",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "11",
+     "text": "Try Hitting a Forkball",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Try Hitting a Sinker",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Try Hitting a Shuuto",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "14",
+     "text": "Try Bunting",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Sharpen Your Strike-Zone Eye",
+     "style": "e4_sg_btn",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Time Inside and Outside Pitches",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Try a Squeeze Play",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Try a Hit-and-Run",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Try Throwing a Fastball",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "Try Throwing a Breaking Ball",
+     "style": "e4_sg_btn",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "Try Pitching to Spots",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Pitch Breaking Balls to Spots",
+     "style": "e4_sg_btn",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Try Stealing a Base",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Try Controlling Runners",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Try Tagging Up",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Field a Grounder and Throw",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Catch a Fly and Throw",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Try Throwing Out a Runner",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Try a Great Play",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "3f",
+     "text": "Try Contact Hitting",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "40",
+     "text": "Try Power Hitting",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "41",
+     "text": "Hit Breaking Balls, Part 1",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "42",
+     "text": "Hit Breaking Balls, Part 2",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "43",
+     "text": "Try a Sacrifice Bunt",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "44",
+     "text": "Field Grounders, Part 1",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "45",
+     "text": "Field Grounders, Part 2",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "46",
+     "text": "Catch Fly Balls, Part 1",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "47",
+     "text": "Catch Fly Balls, Part 2",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    },
+    {
+     "sprite": "48",
+     "text": "Learn to Lay Off Balls",
+     "style": "e4_sg_btn",
+     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5,
+     "palettes": [
+      10,
+      11,
+      12,
+      13
+     ]
+    }
+   ],
+   "name": "lesson plates"
+  }
+ ]
+}
