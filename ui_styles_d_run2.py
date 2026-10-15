@@ -170,11 +170,11 @@ STYLES["d2_st_ok"] = ringfill([7, 5, 4, 3, 2], [15, 15, 9], [1])                
 STYLES["d2_st_ng"] = ringfill([7, 6, 5, 4, 3], [15, 15, 13], [1])                              # palette 20: Failure... blue
 STYLES["d2_st_half"] = ringfill([7, 6, 5, 4, 3], [15, 15, 11], [1])                            # palette 21: Half and Half? violet
 STYLES["d2_st_none"] = ringfill([8, 5, 3, 2], [15, 15, 11], [7])                               # palette 22: No Surgery, black to grey
-STYLES["d2_st_r1"] = ringfill([14, 13, 12, 11, 9], [1, 15, 15], [8])                           # palette 6: 1st, pink gradient, navy outline, white band
-STYLES["d2_st_r2"] = ringfill([14, 13, 10, 9, 7], [1, 15, 15], [8])                            # palette 7: 2nd / 3rd orange
-STYLES["d2_st_r4"] = ringfill([14, 13, 11, 10, 8], [1, 15, 15], [4])                           # palette 8: 4th / 5th green
-STYLES["d2_st_r6"] = ringfill([13, 12, 11, 10, 8], [1, 15, 15], [9])                           # palette 9: 6th cyan
-STYLES["d2_st_r7"] = ringfill([13, 12, 11, 10, 9, 8], [1, 15, 15], [7])                        # palette 10: 7th lavender
+STYLES["d2_st_r1"] = ringfill([14, 12, 9], [1, 15, 15], [8])                           # palette 6: 1st, pink gradient, navy outline, white band
+STYLES["d2_st_r2"] = ringfill([14, 10, 7], [1, 15, 15], [])                            # palette 7: 2nd / 3rd orange
+STYLES["d2_st_r4"] = ringfill([14, 11, 8], [1, 15, 15], [])                           # palette 8: 4th / 5th green
+STYLES["d2_st_r6"] = ringfill([13, 11, 8], [1, 15, 15], [9])                           # palette 9: 6th cyan
+STYLES["d2_st_r7"] = ringfill([13, 10, 8], [1, 15, 15], [7])                        # palette 10: 7th lavender
 
 # ==== registry (keep last): the cut styles are made on demand; ui_type's loader updates RENDER only after this file is imported, so STYLES is merged here
 
