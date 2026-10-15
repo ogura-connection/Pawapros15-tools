@@ -6,6 +6,31 @@ from ui_type import banded, outlined, tight, grow, logo, called
 ui_type.TTF.setdefault("din", ("/System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf", 0))
 
 
+# ---- the scorebook tag font: ui_type's pixel tag font (capitals 11 high, two-pixel stems, every B with its bar) plus the
+# 1, 3 and Q it lacks and narrower w and g, so that K-Swing fits one line ----
+ETAG_EXTRA = {
+    "1": ["..##", ".###", "####", "..##", "..##", "..##", "..##", "..##", "..##", "..##", "..##"],
+    "3": ["+####+", "######", "##..##", "....##", "..###+", "..###+", "....##", "##..##", "##..##", "######", "+####+"],
+    "Q": ["+####+", "######", "##..##", "##..##", "##..##", "##..##", "##..##", "##.###", "##.+##", "######", "+#####"],
+    "w": ["##.#.#", "##.#.#", "##.#.#", "##.#.#", "##.#.#", "######", "######", "+#+.+#"],
+    "g": ["+###+", "##.##", "##.##", "##.##", "+####", "...##", "...##", "...##", "...##", "##.##", "+###+"],
+}
+
+
+def etag_font(project=None):
+    if "etag" not in ui_type._fonts:
+        level = {".": 0, "+": 3, "#": 6}
+        rows = dict(ui_type.TAG_GLYPHS)
+        rows.update(ETAG_EXTRA)
+        ui_type._fonts["etag"] = {"words": {}, "space": 5, "gap": 1, "glyphs": {
+            ch: (np.array([[level[c] for c in row] for row in r]), ui_type.TAG_DROP.get(ch, 0))
+            for ch, r in rows.items()}}
+    return ui_type._fonts["etag"]
+
+
+ui_type.FONTS["etag"] = etag_font
+
+
 def crisp(style, thr=3):
     """The style applied to ink cut at `thr`: every letter pixel full ink, no half tones."""
     def s(ink, base):
@@ -194,5 +219,5 @@ STYLES = {
     # the two tabs (palette 2): the same in orange
     "e_rt_tab": crisp(logo([14, 14, 13, 12, 12], [1], 3, 15, 4, [6, 8], 2, 2)),
     # scorebook tags (g3_nk, g3_tij): white letters, navy ring, a blue outer ring (palettes 7-10 share indices 3..f)
-    "e_tag": crisp(tight(banded([0, 15, 15, 15, 15, 15, 15], [4, 6]))),
+    "e_tag": crisp(tight(banded([0, 15, 15, 15, 15, 15, 15], [4])), 4),
 }

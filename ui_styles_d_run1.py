@@ -71,7 +71,7 @@ STYLES["d_nxt_ch"] = ringfill([0xf, 0xf, 0xe, 0xd], [9, 7])
 
 # h3_her_0: banners (palette 23): mint letters, bright green ring, dark green outer ring; highlights (14): green letters, blue ring;
 # Today's Highlights in red (65): red letters, dark ring, white edge
-STYLES["d_her_big"] = ringfill([0xc, 0xc, 0xd, 0xe, 0xf], [1, 1, 8, 8, 5])
+STYLES["d_her_big"] = ringfill([0xc, 0xc, 0xd, 0xe, 0xf], [1, 1, 8, 5])
 STYLES["d_her_hl"] = ringfill([0xf, 0xf, 0xe, 0xd], [4, 1])
 STYLES["d_her_red"] = ringfill([9, 8, 8, 7], [4, 1, 0xf])
 # h3_rs_0: defence practice (palettes 11, 26, 27): white letters in blue rings
