@@ -53,175 +53,1059 @@
      "baseline": 21
     },
     {
-     "sprite": "0e",
+     "from": [
+      2,
+      48,
+      32,
+      72,
+      64
+     ],
+     "sprites": [
+      "0e"
+     ],
      "text": "Jan",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
     },
     {
-     "sprite": "0f",
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "0e"
+     ]
+    },
+    {
+     "from": [
+      2,
+      72,
+      32,
+      96,
+      64
+     ],
+     "sprites": [
+      "0f"
+     ],
      "text": "Feb",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
     },
     {
-     "sprite": "10",
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      2,
+      96,
+      32,
+      120,
+      64
+     ],
+     "sprites": [
+      "10"
+     ],
      "text": "Mar",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
     },
     {
-     "sprite": "11",
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      2,
+      120,
+      32,
+      128,
+      64
+     ],
+     "sprites": [
+      "11"
+     ],
      "text": "Apr",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 11
     },
     {
-     "sprite": "12",
+     "from": [
+      2,
+      0,
+      64,
+      16,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "11"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "11"
+     ]
+    },
+    {
+     "from": [
+      2,
+      16,
+      64,
+      40,
+      96
+     ],
+     "sprites": [
+      "12"
+     ],
      "text": "May",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 11
     },
     {
-     "sprite": "13",
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "12"
+     ]
+    },
+    {
+     "from": [
+      2,
+      40,
+      64,
+      64,
+      96
+     ],
+     "sprites": [
+      "13"
+     ],
      "text": "Jun",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
     },
     {
-     "sprite": "14",
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "13"
+     ]
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      88,
+      96
+     ],
+     "sprites": [
+      "14"
+     ],
      "text": "Jul",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 14
     },
     {
-     "sprite": "15",
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "14"
+     ]
+    },
+    {
+     "from": [
+      2,
+      88,
+      64,
+      112,
+      96
+     ],
+     "sprites": [
+      "15"
+     ],
      "text": "Aug",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 10
     },
     {
-     "sprite": "16",
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "15"
+     ]
+    },
+    {
+     "from": [
+      2,
+      112,
+      64,
+      128,
+      96
+     ],
+     "sprites": [
+      "16"
+     ],
      "text": "Sep",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 11
     },
     {
-     "sprite": "17",
+     "from": [
+      2,
+      0,
+      96,
+      8,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "16"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "16"
+     ]
+    },
+    {
+     "from": [
+      2,
+      48,
+      32,
+      72,
+      64
+     ],
+     "sprites": [
+      "17"
+     ],
      "text": "Oct",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 18
+    },
+    {
+     "from": [
+      2,
+      24,
+      32,
+      48,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "17"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "17"
+     ]
     },
     {
      "sprite": "18",
      "text": "Nov",
      "style": "d4_edy_month",
-     "font": "tag",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
      "baseline": 6
     },
     {
-     "sprite": "19",
+     "from": [
+      2,
+      48,
+      32,
+      72,
+      64
+     ],
+     "sprites": [
+      "19"
+     ],
      "text": "Dec",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 17
     },
     {
-     "sprite": "1a",
-     "text": "Jan-Feb",
-     "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "from": [
+      2,
+      72,
+      32,
+      96,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "19"
+     ]
     },
     {
-     "sprite": "1b",
-     "text": "Feb-Mar",
-     "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "19"
+     ]
     },
     {
-     "sprite": "1c",
-     "text": "Mar-Apr",
+     "from": [
+      2,
+      48,
+      32,
+      72,
+      64
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "Jan",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 11
     },
     {
-     "sprite": "1d",
-     "text": "Apr-May",
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "-",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 21
     },
     {
-     "sprite": "1e",
-     "text": "May-Jun",
+     "from": [
+      2,
+      72,
+      32,
+      96,
+      64
+     ],
+     "sprites": [
+      "1a"
+     ],
+     "text": "Feb",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
     },
     {
-     "sprite": "1f",
-     "text": "Jun-Jul",
-     "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "1a"
+     ]
     },
     {
-     "sprite": "20",
-     "text": "Jul-Aug",
+     "from": [
+      2,
+      72,
+      32,
+      96,
+      64
+     ],
+     "sprites": [
+      "1b"
+     ],
+     "text": "Feb",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 11
     },
     {
-     "sprite": "21",
-     "text": "Aug-Sep",
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "1b"
+     ],
+     "text": "-",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 21
     },
     {
-     "sprite": "22",
-     "text": "Sep-Oct",
+     "from": [
+      2,
+      96,
+      32,
+      120,
+      64
+     ],
+     "sprites": [
+      "1b"
+     ],
+     "text": "Mar",
      "style": "d4_edy_month",
-     "font": "tag",
-     "baseline": 6
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      2,
+      96,
+      32,
+      120,
+      64
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Mar",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 11
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "-",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 21
+    },
+    {
+     "from": [
+      2,
+      120,
+      32,
+      128,
+      64
+     ],
+     "sprites": [
+      "1c"
+     ],
+     "text": "Apr",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      16,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "1c"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "1c"
+     ]
+    },
+    {
+     "from": [
+      2,
+      120,
+      32,
+      128,
+      64
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "Apr",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 10
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "-",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 21
+    },
+    {
+     "from": [
+      2,
+      16,
+      64,
+      40,
+      96
+     ],
+     "sprites": [
+      "1d"
+     ],
+     "text": "May",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      16,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "1d"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "1d"
+     ]
+    },
+    {
+     "from": [
+      2,
+      16,
+      64,
+      40,
+      96
+     ],
+     "sprites": [
+      "1e"
+     ],
+     "text": "May",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 10
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "1e"
+     ],
+     "text": "-",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 22
+    },
+    {
+     "from": [
+      2,
+      40,
+      64,
+      64,
+      96
+     ],
+     "sprites": [
+      "1e"
+     ],
+     "text": "Jun",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 13
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "1e"
+     ]
+    },
+    {
+     "from": [
+      2,
+      40,
+      64,
+      64,
+      96
+     ],
+     "sprites": [
+      "1f"
+     ],
+     "text": "Jun",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 13
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "1f"
+     ],
+     "text": "-",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 23
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      88,
+      96
+     ],
+     "sprites": [
+      "1f"
+     ],
+     "text": "Jul",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 14
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "1f"
+     ]
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      88,
+      96
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Jul",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 12
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "-",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 18
+    },
+    {
+     "from": [
+      2,
+      88,
+      64,
+      112,
+      96
+     ],
+     "sprites": [
+      "20"
+     ],
+     "text": "Aug",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 9
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "20"
+     ]
+    },
+    {
+     "from": [
+      2,
+      88,
+      64,
+      112,
+      96
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Aug",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 9
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "-",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 22
+    },
+    {
+     "from": [
+      2,
+      112,
+      64,
+      128,
+      96
+     ],
+     "sprites": [
+      "21"
+     ],
+     "text": "Sep",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 13
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      8,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "21"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "21"
+     ]
+    },
+    {
+     "from": [
+      2,
+      112,
+      64,
+      128,
+      96
+     ],
+     "sprites": [
+      "22"
+     ],
+     "text": "Sep",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 14
+    },
+    {
+     "from": [
+      2,
+      8,
+      96,
+      32,
+      128
+     ],
+     "sprites": [
+      "22"
+     ],
+     "text": "-",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 26
+    },
+    {
+     "from": [
+      2,
+      48,
+      32,
+      72,
+      64
+     ],
+     "sprites": [
+      "22"
+     ],
+     "text": "Oct",
+     "style": "d4_edy_month",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 23,
+     "left": 21
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      8,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "22"
+     ]
+    },
+    {
+     "from": [
+      2,
+      24,
+      32,
+      48,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "22"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      96,
+      56,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "22"
+     ]
     },
     {
      "sprite": "23",
      "text": "Oct-Nov",
      "style": "d4_edy_month",
-     "font": "tag",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
      "baseline": 6
     },
     {
      "sprite": "24",
      "text": "Nov-Dec",
      "style": "d4_edy_month",
-     "font": "tag",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
      "baseline": 6
     },
     {
      "sprite": "25",
      "text": "Dec-Jan",
      "style": "d4_edy_month",
-     "font": "tag",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
      "baseline": 6
     }
    ],
    "name": "edy",
+   "share": true,
    "sprites": "z4_edy_0#1",
    "sprite_prefix": "z4_edy_0"
   },

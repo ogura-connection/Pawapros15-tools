@@ -89,7 +89,7 @@ def padded(style, n):
     return make
 
 
-STYLES["d4_edy_month"] = padded(plain(15, None, edge=3), 1)               # pal 25: black letters, set in the pixel "tag" font, 1 clear px round them
+STYLES["d4_edy_month"] = padded(plain(15, 9, edge=4), 1)                  # pal 25: black letters, 1 clear px round them
 STYLES["d4_hint"] = ringfill([15, 15, 14, 13, 12, 10], [4, 4], [3, 2, 1])      # z4_ekk_0 pal 24: white letters, dark green-grey ring, pale glow
 
 
