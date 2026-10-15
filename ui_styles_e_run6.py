@@ -127,10 +127,17 @@ S["e6_in_badge"] = ringfill([7], [12])
 # letters on the round / tilted stamps and the school badges: the old picture with the English drawn over it
 _D = ("draft.arc", "g3_pd_0")
 S["e6_pd_25"] = pill(*_D, [3, 32, 96, 64, 128], "badge", S["e6_in_badge"], 13, 14, top_pale=9)
-S["e6_pd_26"] = pill(*_D, [3, 32, 96, 64, 128], "badge", S["e6_in_badge"], 13, 14, top_pale=9)
-S["e6_pd_27"] = pill(*_D, [3, 32, 96, 64, 128], "badge", S["e6_in_badge"], 13, 14, top_pale=9)
+S["e6_pd_26"] = pill(*_D, [3, 64, 96, 96, 128], "badge", S["e6_in_badge"], 13, 14, top_pale=9)
+S["e6_pd_27"] = pill(*_D, [3, 96, 96, 128, 128], "badge", S["e6_in_badge"], 13, 14, top_pale=9)
+S["e6_pd_36"] = pill(*_D, [8, 0, 0, 32, 32], "disc", S["e6_pd_stampfill"], 16, 16)
+S["e6_pd_37"] = pill(*_D, [8, 32, 0, 64, 32], "disc", S["e6_pd_stampfill"], 16, 16)
+S["e6_pd_38"] = pill(*_D, [8, 0, 32, 64, 80], "stamp", S["e6_pd_stampfill"], 32, 23, shear=0.17)
+S["e6_pd_39"] = pill(*_D, [8, 0, 80, 64, 128], "stamp", S["e6_pd_stampfill"], 32, 23, shear=0.17)
+S["e6_pd_3c~0_128"] = win(S["e6_pd_3c"], 0, 128)
+S["e6_pd_3c~128_4096"] = win(S["e6_pd_3c"], 128, 4096)
 # ---- m3_ksd_0 (pn_deban.arc)
 S["e6_ks_title"] = ringfill([12, 12, 11, 11, 9, 8], [2, 2, 15], [1])
+S["e6_ks_title~0_4096"] = S["e6_ks_title"]
 S["e6_ks_help"] = ringfill([1], [8])
 S["e6_ks_05"] = ringfill([15], [9], [3])
 S["e6_ks_focus"] = ringfill([15], [5], [1])
@@ -142,6 +149,21 @@ S["e6_ks_pick"] = ringfill([4], [15], [2])
 S["e6_sk"] = ringfill([15], [4])
 S["e6_b5"] = ringfill([14], [2])
 S["e6_b5_small"] = ringfill([1], [12])
-S["e6_logo_pbg0"] = ringfill([15, 15, 15, 8, 15, 15], [12])
-S["e6_logo_pbg4"] = ringfill([15, 15, 15, 8, 15, 15], [12])
+_LOGO = ringfill([8, 8, 8, 9, 9, 9], [15, 15, 6, 6])
+S["e6_logo_pbg"] = onwhite(_LOGO, 184, 48)
+
+
+def arrow(inner):
+    """A right arrow (the English has no glyph for it) drawn through `inner`'s rings and shadow, centred on the capitals."""
+    def style(ink, base):
+        a = np.zeros((11, 22), int)
+        a[4:7, 0:17] = 6
+        for k in range(6):
+            a[5 - k:6 + k, 16 + k] = 6
+        art, b = inner(a, 11)
+        return art, b + 2
+    return style
+
+
+S["e6_ks_arrow"] = arrow(S["e6_ks_plate"])
 # windows of one word over several parts are added by mkcuts below
