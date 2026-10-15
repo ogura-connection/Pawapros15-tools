@@ -33,3 +33,27 @@ STYLES["d_kkg"] = ringfill([0xf], [1])
 STYLES["d_dem_title"] = ringfill([0xf, 0xf, 0xe, 0xd], [4, 1], [8])
 # h3_dem_2 headings (palettes 2, 3: one red ramp each): red-orange letters, dark brown ring, black-green outer ring, brown shadow
 STYLES["d_dem_head"] = ringfill([0xf, 0xf, 0xe, 0xd], [4, 2], [7])
+
+
+def platefill(fill, rings, shadow, w, h):
+    """ringfill lettering centred on a w x h plate (the plate is palette index 0, opaque in these palettes)."""
+    inner = ringfill(fill, rings, shadow)
+
+    def style(ink, base):
+        a, b = inner(ink, base)
+        ah, aw = a.shape
+        if aw > w or ah > h:
+            raise ValueError("lettering %dx%d does not fit a plate %dx%d" % (aw, ah, w, h))
+        out = np.zeros((h, w), np.uint8)
+        x, y = (w - aw) // 2, (h - ah) // 2
+        out[y:y + ah, x:x + aw] = a
+        return out, b + y
+    return style
+
+
+# h3_rt_0 (g3_hk) score-challenge labels (palette 13): light tan letters, brown ring, on the orange plate (index 0);
+# Bonus (palette 15): white letters, grey ring, on the cream plate
+for _w in range(16, 97):
+    STYLES["d_rt_%d" % _w] = platefill([0xf, 0xe, 0xd], [6], [], _w, 24)
+    STYLES["d_oma_%d" % _w] = platefill([0xf, 0xf, 0xf, 0xe], [2], [1], _w, 24)
+STYLES["d_rt_measure"] = ringfill([0xf, 0xe, 0xd], [6])      # width probe for the plate styles

@@ -68,6 +68,34 @@ STYLES['c_tmz_home'] = ringfill([251, 240, 234, 217, 199, 185, 180, 166], [3, 3,
 STYLES['c_trx_orange'] = logo([245, 228, 198, 172, 138, 94], [245, 245], 2, 255, 114, [72, 137, 137, 137], 3, 2)
 #  learned from vs.arc s5w_trx 01
 STYLES['c_trx_green'] = logo([236, 231, 224, 218, 208, 108], [236, 236], 3, 255, 114, [86, 116, 137, 137], 3, 2)
+# r3_sd 05 06 (palette 33): white to cyan letters, dark teal outline, green shadow
+STYLES['c_sd_title'] = ringfill([15, 14, 14, 13, 13, 12, 12, 11], [4, 4], [3, 2, 1])
+# r3_sd 07-0b, 54 (palette 32; the grey copies, palette 34, show the same art): mint letters, navy outline, blue shadow
+STYLES['c_sd_head'] = ringfill([15, 15, 14, 13, 13, 12, 11, 11], [4, 4], [3, 2, 1])
+# r3_sd 0d Stereo (palette 7): white to yellow letters, blue outline, white band, grey shadow
+STYLES['c_sd_stereo'] = logo([12, 12, 9, 7, 6], [12, 12], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 0e Mono (palette 8): lilac to green
+STYLES['c_sd_mono'] = logo([14, 10, 9, 8, 6], [14, 14], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 0f Recommended (palette 2): yellow to orange
+STYLES['c_sd_rec'] = logo([9, 8, 7, 6, 6], [9, 9], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 10 Custom (palette 4): white to cyan
+STYLES['c_sd_custom'] = logo([12, 11, 9, 8, 7], [12, 12], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 45 Surround (palette 9): pink
+STYLES['c_sd_surround'] = logo([11, 9, 8, 7, 6], [11, 11], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 11 High (palette 6): orange to pink
+STYLES['c_sd_high'] = logo([10, 9, 8, 7, 6], [10, 10], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 12 Mid (palette 7): yellow
+STYLES['c_sd_mid'] = logo([11, 10, 9, 8, 7], [11, 11], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 13 Low (palette 8): green
+STYLES['c_sd_low'] = logo([11, 10, 9, 8, 6], [11, 11], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 14 Off (palette 5): pink
+STYLES['c_sd_off'] = logo([9, 8, 7, 6, 6], [9, 9], 3, 12, 12, [1, 1, 1], 2, 2)
+# r3_sd 27 Sound banner lettering (palette 13): orange to pink letters, white ring, blue rings and shadow
+STYLES['c_sd_banner'] = ringfill([12, 12, 12, 13, 14, 14, 15, 15], [8, 7, 2, 1], [6, 5, 4, 3])
 STYLES['c_vs_ctl~0_32'] = win(STYLES['c_vs_ctl'], 0, 32)
 STYLES['c_vs_ctl~32_64'] = win(STYLES['c_vs_ctl'], 32, 64)
 STYLES['c_vs_ctl~64_4096'] = win(STYLES['c_vs_ctl'], 64, 4096)
+STYLES['c_sd_head~0_60'] = win(STYLES['c_sd_head'], 0, 60)
+STYLES['c_sd_head~60_4096'] = win(STYLES['c_sd_head'], 60, 4096)
+STYLES['c_sd_title~0_128'] = win(STYLES['c_sd_title'], 0, 128)
+STYLES['c_sd_title~128_4096'] = win(STYLES['c_sd_title'], 128, 4096)

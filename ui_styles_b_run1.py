@@ -7,7 +7,7 @@ shadow). Colours are read from the Japanese lettering of each palette (_work/ui_
   palette 8   the red A of "A Type": white letters, red ring
   palette 24  the help sentences: dark blue letters, a mid and a pale blue ring
   palette 21  the blue bars "STARTボタンで決定": white letters on a bar whose rounded ends are cut from the original art
-"help" styles hlp<W> paint a line of the help text on a fixed canvas W wide and 15 rows high with the baseline on a
+"help" styles hlp<W> paint a line of the help text on a fixed canvas W wide and 16 rows high with the baseline on a
 fixed row, left aligned, so a sprite's lines (cut into strips by ui_type) stand on one baseline and start in one column."""
 import os
 import numpy as np
@@ -15,7 +15,7 @@ import ui_type
 from ui_styles_ore_ini import ringfill
 
 STYLES = {}
-ui_type.TTF.setdefault("narrowr", ("/System/Library/Fonts/Supplemental/Arial Narrow.ttf", 0))      # the help text
+ui_type.TTF.setdefault("avm", ("/System/Library/Fonts/Avenir Next Condensed.ttc", 5))      # Avenir Next Condensed Medium: the help text
 
 # --- tab buttons (palette 16)
 _TAB = [4, 3, 3, 2, 2, 1, 1]
@@ -54,7 +54,7 @@ def thin(inner, cut):
 _HLP = thin(ringfill([15], [4]), 2)
 STYLES["hlp_raw"] = _HLP
 for _w in range(16, 200):
-    STYLES["hlp%d" % _w] = canvas(_HLP, _w, 15, 11)              # cap 9, 15 rows, baseline on row 11
+    STYLES["hlp%d" % _w] = canvas(_HLP, _w, 16, 11)              # cap 9, 16 rows, baseline on row 11
     STYLES["hlq%d" % _w] = canvas(_HLP, _w, 17, 12)              # cap 10, 17 rows, baseline on row 12
 
 
