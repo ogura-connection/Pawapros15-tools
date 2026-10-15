@@ -99,6 +99,14 @@ STYLES["d5_t_saz06"] = ui_type.logo(**{'fill': [249, 235, 235, 254, 253, 253], '
 
 # vertical lettering: the same styles on art turned a quarter turn anticlockwise (reads bottom to top)
 import numpy as _np
+def _win(style, c0, c1):
+    def cut(ink, base):
+        art, b = style(ink, base)
+        out = art[:, c0:c1]
+        if out.shape[1] == 0:
+            out = _np.zeros((art.shape[0], 1), _np.uint8)
+        return out, b
+    return cut
 def _turned(style):
     def f(ink, base):
         t = _np.rot90(ink)
