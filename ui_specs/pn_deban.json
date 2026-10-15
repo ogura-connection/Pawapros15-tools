@@ -131,8 +131,8 @@
      "sprite": "05",
      "text": "Cancel",
      "style": "e6_ks_05",
-     "font": "ttf:rounded:12:0.0:0.85:0.5",
-     "baseline": 36,
+     "font": "ttf:rounded:11:0.0:0.92:0.5",
+     "baseline": 35,
      "palettes": [
       84
      ]
@@ -141,7 +141,7 @@
      "sprite": "08",
      "text": "Focus: Team",
      "style": "e6_ks_focus",
-     "font": "ttf:narrow:12:0.0:0.92:0.5",
+     "font": "ttf:narrow:11:0.0:1.0:0.5",
      "baseline": 20,
      "palettes": [
       91
@@ -151,7 +151,7 @@
      "sprite": "09",
      "text": "Focus: Pitcher",
      "style": "e6_ks_focus",
-     "font": "ttf:narrow:12:0.0:0.85:0.5",
+     "font": "ttf:narrow:11:0.0:0.92:0.5",
      "baseline": 20,
      "palettes": [
       91
@@ -161,7 +161,7 @@
      "sprite": "0a",
      "text": "Focus: Fielder",
      "style": "e6_ks_focus",
-     "font": "ttf:narrow:12:0.0:0.85:0.5",
+     "font": "ttf:narrow:11:0.0:0.92:0.5",
      "baseline": 20,
      "palettes": [
       91
@@ -177,7 +177,7 @@
      ],
      "text": "Team",
      "style": "e6_ks_plate",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
      "baseline": 20,
      "sprites": [
       "0b"
@@ -219,8 +219,8 @@
      ],
      "text": ":",
      "style": "e6_ks_plate",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 22
+     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "baseline": 20
     },
     {
      "from": [
@@ -249,8 +249,8 @@
      "sprite": "0e",
      "text": "Not Set",
      "style": "e6_ks_focus",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 40,
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 42,
      "palettes": [
       95
      ]
@@ -259,8 +259,8 @@
      "sprite": "0f",
      "text": "On",
      "style": "e6_ks_on",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 24,
+     "font": "ttf:rounded:17:0.0:1.0:0.4",
+     "baseline": 26,
      "palettes": [
       40
      ]
@@ -269,8 +269,8 @@
      "sprite": "10",
      "text": "Off",
      "style": "e6_ks_on",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 25,
+     "font": "ttf:rounded:17:0.0:0.92:0.4",
+     "baseline": 27,
      "palettes": [
       40
      ]
@@ -279,8 +279,8 @@
      "sprite": "11",
      "text": "Pinch",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:11:0.0:1.0:0.5",
-     "baseline": 32,
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 34,
      "palettes": [
       78
      ]
@@ -289,8 +289,8 @@
      "sprite": "12",
      "text": "Chance",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:11:0.0:1.0:0.5",
-     "baseline": 32,
+     "font": "ttf:narrow:14:0.0:0.92:0.4",
+     "baseline": 34,
      "palettes": [
       76
      ]
@@ -299,8 +299,8 @@
      "sprite": "13",
      "text": "Stop",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:11:0.0:1.0:0.5",
-     "baseline": 32,
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 33,
      "palettes": [
       77
      ]
@@ -309,8 +309,8 @@
      "sprite": "14",
      "text": "Go Manual",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
-     "baseline": 32,
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 34,
      "palettes": [
       79
      ]
@@ -319,8 +319,8 @@
      "sprite": "15",
      "text": "Pitching",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:11:0.0:1.0:0.5",
-     "baseline": 32,
+     "font": "ttf:rounded:14:0.0:0.92:0.4",
+     "baseline": 34,
      "palettes": [
       39
      ]
@@ -329,8 +329,8 @@
      "sprite": "16",
      "text": "Batting",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:11:0.0:1.0:0.5",
-     "baseline": 32,
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 34,
      "palettes": [
       39
      ]
@@ -339,8 +339,8 @@
      "sprite": "17",
      "text": "Pitching\nPinch",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:13:0.0:0.92:0.4",
-     "baseline": 33,
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
+     "baseline": 34,
      "palettes": [
       78
      ]
@@ -349,8 +349,8 @@
      "sprite": "18",
      "text": "Batting\nChance",
      "style": "e6_ks_cond",
-     "font": "ttf:rounded:13:0.0:0.92:0.4",
-     "baseline": 33,
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
+     "baseline": 34,
      "palettes": [
       79
      ]
@@ -359,10 +359,10 @@
      "sprite": "20",
      "text": "Choose a player to focus on",
      "style": "e6_ks_pick",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "font": "ttf:narrow:11:0.0:1.0:0.5",
      "slices": true,
      "slice_width": 128,
-     "dy": 2,
+     "dy": 1,
      "palettes": [
       75
      ]
@@ -371,10 +371,10 @@
      "sprite": "21",
      "text": "Choose a player to focus on",
      "style": "e6_ks_pick",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "font": "ttf:narrow:11:0.0:1.0:0.5",
      "slices": true,
      "slice_width": 128,
-     "dy": 2,
+     "dy": 1,
      "palettes": [
       75
      ]
