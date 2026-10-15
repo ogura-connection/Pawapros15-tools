@@ -593,7 +593,7 @@
      "text": "2B",
      "style": "b4_pr_pos",
      "font": "ttf:rounded:9:0.0:1.0:0.3",
-     "baseline": 18
+     "baseline": 16
     },
     {
      "sprite": "32",
@@ -803,35 +803,35 @@
      "text": "Give practice orders\nto all pitchers.",
      "style": "b4_pr_msg",
      "font": "ttf:rounded:8:0.0:1.0:0.3",
-     "baseline": 35
+     "baseline": 40
     },
     {
      "sprite": "3d",
      "text": "Give practice orders\nto all fielders.",
      "style": "b4_pr_msg",
      "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 36
+     "baseline": 42
     },
     {
      "sprite": "3e",
      "text": "Give practice orders\nto all catchers.",
      "style": "b4_pr_msg",
      "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 36
+     "baseline": 42
     },
     {
      "sprite": "3f",
      "text": "Give practice orders\nto all infielders.",
      "style": "b4_pr_msg",
      "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 36
+     "baseline": 42
     },
     {
      "sprite": "40",
      "text": "Give practice orders\nto all outfielders.",
      "style": "b4_pr_msg",
      "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 36
+     "baseline": 42
     }
    ],
    "name": "practice orders",

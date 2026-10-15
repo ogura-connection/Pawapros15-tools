@@ -135,3 +135,73 @@ YKM_PAN = {
 for _n, (_parts, (_al, _l, _cy)) in YKM_PAN.items():
     for _k, (_pg, _r, _sr) in enumerate(_parts):
         STYLES["c4_ykm_%s_%d" % (_n, _k)] = _panel(STYLES["c4_ykm_pan"], _l, _cy, _sr, _al, YKM_PAN_CAP)
+
+
+# ---- g3_ykm reaction tags (74-78: a cap-face sticker with hand lettering): the Japanese lettering is taken out of the sticker, the English
+# goes where it stood with the same white sticker edge. per sprite: (white, lettering indices, face indices, ink fill, centre x, centre y, parts)
+TAG_CAP = 11
+TAGS = {
+    "74": (15, {1, 2, 3}, {4, 5, 6}, 3, 31, 10, [(21, [0, 80, 64, 120], [0, 0, 64, 40])], [(10, 20, 24, 40)]),
+    "75": (15, {7, 8}, {3, 4, 5, 6}, 7, 22, 12, [(21, [64, 80, 128, 120], [0, 0, 64, 40])], [(12, 20, 24, 40)]),
+    "76": (15, {1, 2, 3}, {4, 5, 6}, 3, 19, 11, [(23, [8, 64, 48, 104], [0, 0, 40, 40]), (23, [48, 64, 72, 104], [40, 0, 64, 40])], [(14, 18, 25, 40)]),
+    "77": (9, {5, 6, 7}, {1, 2, 3, 4}, 7, 25, 9, [(23, [72, 64, 128, 104], [0, 0, 56, 40]), (26, [120, 88, 128, 128], [56, 0, 64, 40]), (26, [96, 64, 120, 72], [8, 40, 32, 48])], [(8, 24, 32, 48)]),
+    "78": (15, {5, 6, 7}, {3, 4}, 6, 27, 8, [(23, [0, 104, 72, 128], [0, 0, 72, 24]), (23, [72, 104, 128, 120], [8, 24, 64, 40])], [(14, 14, 26, 40)]),
+}
+for _s, _t in TAGS.items():
+    STYLES["c4_tag_" + _s] = ringfill([_t[3]] * 6, [_t[0], _t[0]], [])
+_TAG_CLEAN = {}
+
+
+def _tag_clean(spr):
+    """The tag sprite's picture (palette indices, sprite coordinates) with the Japanese lettering and its sticker edge taken out."""
+    if spr not in _TAG_CLEAN:
+        import sys, os
+        import numpy as np
+        here = os.path.dirname(os.path.abspath(__file__))
+        q = os.path.join(here, "_work", "ui_pages")
+        if q not in sys.path:
+            sys.path.append(q)
+        import gen_c_lib as G
+        b = G.Arc("school.arc").bank("g3_ykm")
+        white, text, face, _, _, _, _, decor = TAGS[spr]
+        img, _, _ = b.index_image(spr, pad=0)
+        T = np.isin(img, list(text))
+        F = np.isin(img, list(face))
+        near = T.copy()
+        for _ in range(3):
+            near = ui_type.grow(near, 1)
+        keep = F.copy()
+        for _ in range(2):
+            keep = ui_type.grow(keep, 1)
+        for x0, y0, x1, y1 in decor:
+            keep[y0:y1, x0:x1] = True
+        out = img.copy()
+        out[(T | (near & ~keep)) & (img > 0)] = 0
+        out[T] = 0
+        _TAG_CLEAN[spr] = out.astype(np.uint8)
+    return _TAG_CLEAN[spr]
+
+
+def _tag_style(spr, screen):
+    inner = STYLES["c4_tag_" + spr]
+    cx, cy = TAGS[spr][4], TAGS[spr][5]
+
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        sx0, sy0, sx1, sy1 = screen
+        out = _tag_clean(spr)[sy0:sy1, sx0:sx1].copy()
+        h, w = art.shape
+        ax, ay = cx - w // 2, int(round(cy + TAG_CAP / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y - sy0, ax + x - sx0
+            if 0 <= yy < out.shape[0] and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+for _s, _t in TAGS.items():
+    for _k, (_pg, _rect, _scr) in enumerate(_t[6]):
+        STYLES["c4_tag_%s_%d" % (_s, _k)] = _tag_style(_s, _scr)
