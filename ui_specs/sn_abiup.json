@@ -77,8 +77,8 @@
      "text": "Sub-Pos",
      "style": "e_btn",
      "font": "ttf:narrow:10:0.0:1.0:0.12",
-     "left": 3,
-     "baseline": 21
+     "left": 14,
+     "baseline": 15
     },
     {
      "from": [
@@ -101,8 +101,8 @@
      "text": "C",
      "style": "e_btn",
      "font": "ttf:narrow:10:0.0:1.0:0.12",
-     "left": 3,
-     "baseline": 21
+     "left": -19,
+     "baseline": 27
     },
     {
      "from": [
@@ -115,8 +115,8 @@
      "text": "1B",
      "style": "e_btn",
      "font": "ttf:narrow:10:0.0:1.0:0.12",
-     "left": 3,
-     "baseline": 21
+     "left": -22,
+     "baseline": 27
     },
     {
      "from": [
@@ -129,8 +129,8 @@
      "text": "2B",
      "style": "e_btn",
      "font": "ttf:narrow:10:0.0:1.0:0.12",
-     "left": 3,
-     "baseline": 21
+     "left": -22,
+     "baseline": 27
     },
     {
      "from": [
@@ -143,8 +143,8 @@
      "text": "3B",
      "style": "e_btn",
      "font": "ttf:narrow:10:0.0:1.0:0.12",
-     "left": 3,
-     "baseline": 21
+     "left": -22,
+     "baseline": 27
     },
     {
      "from": [
@@ -157,8 +157,8 @@
      "text": "SS",
      "style": "e_btn",
      "font": "ttf:narrow:10:0.0:1.0:0.12",
-     "left": 3,
-     "baseline": 21
+     "left": -22,
+     "baseline": 27
     },
     {
      "from": [
@@ -171,8 +171,8 @@
      "text": "OF",
      "style": "e_btn",
      "font": "ttf:narrow:10:0.0:1.0:0.12",
-     "left": 3,
-     "baseline": 21
+     "left": -23,
+     "baseline": 27
     },
     {
      "from": [

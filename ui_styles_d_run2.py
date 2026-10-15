@@ -159,6 +159,9 @@ STYLES["d2_ori_ask"] = ringfill([3, 3, 2, 2, 1], [7, 7, 15], [11, 12])          
 # scs_grad z4_ls_0 (player directory)
 STYLES["d2_ls_title"] = ringfill([8], [2, 1, 12, 12, 9], [])                    # palette 16: white letters, brown outline, orange band
 STYLES["d2_ls_head"] = ringfill([2, 3, 4], [14, 13], [9])                      # palette 18: yellow letters, brown outline
+STYLES["d2_ls_t14"] = ringfill([15], [4, 4, 3], [])                              # team plates: white letters, dark outline, one soft ring (palettes 35 red, 36 blue, 37 orange)
+STYLES["d2_ls_t15"] = ringfill([15], [4, 4, 3], [])
+STYLES["d2_ls_t16"] = ringfill([15], [4, 4, 3], [])
 
 # ==== registry (keep last): the cut styles are made on demand; ui_type's loader updates RENDER only after this file is imported, so STYLES is merged here
 

@@ -323,6 +323,96 @@
     }
    ],
    "name": "ls_words"
+  },
+  {
+   "bank": "z4_ls_0",
+   "palette": 35,
+   "style": "d2_ls_t14",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     2,
+     0,
+     48,
+     24,
+     72
+    ],
+    [
+     2,
+     24,
+     48,
+     48,
+     72
+    ],
+    [
+     2,
+     48,
+     48,
+     72,
+     72
+    ],
+    [
+     2,
+     72,
+     48,
+     128,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "14",
+     "text": "Pawafuru",
+     "style": "d2_ls_t14",
+     "font": "d:rounded:14:0.78:0.4:0",
+     "palettes": [
+      35
+     ],
+     "slices": true,
+     "slice_width": 80,
+     "dy": 3
+    },
+    {
+     "sprite": "15",
+     "text": "Kagurazaka",
+     "style": "d2_ls_t15",
+     "font": "d:rounded:11:0.78:0.4:0",
+     "palettes": [
+      36
+     ],
+     "slices": true,
+     "slice_width": 26,
+     "dy": 2
+    },
+    {
+     "sprite": "16",
+     "text": "Phoenix",
+     "style": "d2_ls_t16",
+     "font": "d:rounded:14:0.92:0.4:0",
+     "palettes": [
+      37
+     ],
+     "slices": true,
+     "slice_width": 80,
+     "dy": 1
+    }
+   ],
+   "name": "ls_teams"
   }
  ]
 }

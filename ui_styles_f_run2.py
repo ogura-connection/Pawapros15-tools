@@ -76,3 +76,23 @@ for _name in ("f_teu_blue", "f_teu_pink", "f_teu_orange", "f_teu_steel", "f_teu_
 # scs_g_ed.arc i5_h (4-bit pages, palette 0): the draft team names: chrome blue letters (dark, light in the middle, dark),
 # a pale edge, a navy outline three pixels wide
 STYLES["f_g_team"] = ringfill([4, 5, 7, 9, 0xa, 0xa, 9, 8, 6, 4], [0xe, 1, 1, 1], edge=2)
+
+
+def tilted(style, rise):
+    """The word on a slope: each column of the ink is lifted `rise` pixels per 100 columns towards the right (whole pixels:
+    the steps stay crisp), then the style is applied."""
+    def lift(ink, base):
+        h, w = ink.shape
+        dy = [int(round(rise * (w - 1 - x) / 100.0)) for x in range(w)]
+        out = np.zeros((h + max(dy), w), ink.dtype)
+        for x in range(w):
+            out[dy[x]:dy[x] + h, x] = ink[:, x]
+        return style(out, base + max(dy))
+    return lift
+
+
+# scs_g_ed.arc i5_h sprites 00 / 01 (palette 1, the shadow twin palette 2): the welcome banner: mint to green letters, a thin
+# dark outline, a yellow band three pixels wide, a white rim; tilted up to the right as the Japanese is
+STYLES["f_g_title"] = tilted(logo([0xa, 9, 8, 7, 6, 5], [0xa, 0xa], 1, 0xf, 0xb, [], 4, 1), 6.0)
+for _c in ((0, 128), (128, 256), (256, 384), (384, 512), (0, 4096), (128, 4096), (256, 4096), (384, 4096)):
+    STYLES["f_g_title~%d_%d" % _c] = win(STYLES["f_g_title"], *_c)
