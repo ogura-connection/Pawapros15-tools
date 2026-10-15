@@ -23,8 +23,8 @@ def add(name, style, windows=False, middle=False):
 
 
 # ---- s3_phg00 stadium names (palette 48): white letters, three grey-blue rings, a shadow; the short plates (56x24) get two rings ----------
-add("c5_stad", ringfill([15, 15, 15, 15, 15, 14], [8, 6, 2], [3]))
-add("c5_stad_s", ringfill([15, 15, 15, 15, 14, 14], [8, 6, 2]))
+add("c5_stad", ringfill([15, 15, 15, 15, 15, 14], [8, 6, 3]))
+add("c5_stad_s", ringfill([15, 15, 15, 15, 14, 14], [6, 3]))
 add("c5_stad_xs", ringfill([15, 15, 15, 15, 15, 15], [6, 2]))
 
 # ---- b5_pe00 (fan report) -------------------------------------------------------------------------------------------------------------------
