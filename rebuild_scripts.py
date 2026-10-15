@@ -57,6 +57,7 @@ import struct
 import sys
 
 import kyu_names
+import name_table
 import pair_font
 import scan_story as S
 import ui_messages
@@ -75,7 +76,7 @@ PLAN_FILE = "moduleID2addr.o"
 # arena to it) and its plan ends at 0x812CB794: the area in between is free.
 MAIN, SCENARIOS = "scs_main.rel", ("scs_sce1.rel", "scs_sce2.rel", "scs_sce3.rel")
 SCENARIO_SLOT = (0x80B5F880, 0x80BBD200)
-FREE_AREA = (0x812CB800, 0x814E0000)
+FREE_AREA = (0x812CB800, name_table.TABLE_ADDR)      # the top 32 KB (to 0x814E0000) holds the surname table
 # My Life: the scenes that do not fit in orepena.rel go behind the data of ore_work.rel (S.ORE_ANNEX_MODULE),
 # which is then loaded here, in the upper part of the free area (the scenario modules use the lower part).
 ORE_WORK_ADDR = 0x81400000
@@ -587,7 +588,7 @@ def build_dol(dol, slots, orig, remaps):
     return data[:a] + block + data[b:]
 
 
-def verify_dol(orig, new, dol, slots, relinked=()):
+def verify_dol(orig, new, dol, slots, relinked=(), nopped=None, names=None):
     """Re-read main.dol as built (or the original when nothing was built) and check it against the
     original file and the relocations of all modules, without the layout: orig, new = the modules
     before and after, as verify() read them from disk."""
@@ -596,6 +597,13 @@ def verify_dol(orig, new, dol, slots, relinked=()):
         old_d = f.read()
     with open(DOL_BUILT if os.path.exists(DOL_BUILT) else ui_strings.DOL_ORIG, "rb") as f:
         new_d = f.read()
+    if names is not None:           # the surname section: appended, its header slot filled in
+        assert name_table.dol_section(new_d) == (name_table.TABLE_ADDR, names), DOL + ": the surname section"
+        k = name_table.DOL_SECTION
+        head = bytearray(new_d[:0x100])
+        for t in (0, 0x48, 0x90):
+            struct.pack_into(">I", head, t + 4 * k, 0)
+        new_d = bytes(head) + new_d[0x100:len(old_d)]
     assert len(old_d) == len(new_d) and old_d[:a] == new_d[:a] and old_d[b:] == new_d[b:], \
         DOL + ": bytes outside the dialog block changed"
     olds, news = parse_dol(old_d), parse_dol(new_d)
@@ -618,6 +626,9 @@ def verify_dol(orig, new, dol, slots, relinked=()):
             mine = [r for r in m.relocs() if r[3] == 0]
         else:
             mine = m.relocs()
+        off = (nopped or {}).get(mid, set())
+        mine = [r for r in mine if r[:2] not in off]
+        assert len(mine) == len(theirs) or m.name in relinked, m.name + ": number of relocations"
         for (s, pos, typ, tm, ts, ad), (_, _, typ2, tm2, ts2, ad2) in zip(mine, theirs):
             if tm != 0:
                 continue            # relocations against modules: verify()
@@ -639,6 +650,10 @@ def verify_dol(orig, new, dol, slots, relinked=()):
             for _, _, entries, _ in parse_imports(new[mid].data, m.imp_off, m.imp_size):
                 for e in entries:
                     struct.pack_into(">I", image, e[5] + 4, e[4])
+            for _, _, entries, _ in parse_imports(m.data, m.imp_off, m.imp_size):
+                for e in entries:
+                    if tuple(e[:2]) in off:
+                        image[e[5] + 2] = S.R_NOP
             other = bytearray(new[mid].data)
             for t in m.sections:
                 if t["offset"] and not t["bss"]:
@@ -767,10 +782,16 @@ def load_translation(path, scripts):
     return texts
 
 
-def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None):
+def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None, names=None):
     """Choose a glyph slot for every letter pair in the translation. Returns {pair: glyph index}.
-    dol = load_dol(): the dialog strings of main.dol with their English."""
+    dol = load_dol(): the dialog strings of main.dol with their English. names = name_table.load_tsv()."""
     pairs, usage = set(), collections.Counter()
+    for _, en in (names or {}).values():         # surnames: one name per field, pairs from its first letter
+        for kind, value in pair_font.text_segments(en):
+            if kind == "pair" and value != "  ":
+                pairs.add(value)
+            elif kind == "char":
+                usage[char_to_glyph(value)] += 1
     for msgs in (messages or {}).values():      # message scripts: the pairs start again in every piece
         for _, pieces in msgs.values():
             for en in pieces:
@@ -913,7 +934,9 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     for sc in blocks:
         if sc.errors:
             sys.exit("%s: script does not parse cleanly, not rebuilding" % sc.rel.name)
-    slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages)
+    names = name_table.load_tsv() if os.path.exists(name_table.TSV) and dol else None
+    slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages, names)
+    nopped = {}                     # module id -> {(section, position)}: relocations turned into R_NOP on purpose
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
@@ -953,6 +976,13 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         print("%-13s %5d runs replaced, script section 0x%X -> 0x%X bytes (data behind it moves %+d)"
               % (sc.rel.name, len(r), sc.rel.sections[sc.sec]["size"], len(data), remap.growth))
     dol_image = build_dol(dol, slots, orig, remaps) if dol else None
+    if names:                       # the surname table: a data section of main.dol, read by patched code
+        try:
+            name_bytes = name_table.table(names, lambda t: encode_text(t, slots))
+        except ValueError as e:
+            sys.exit(str(e))
+        dol_image = name_table.add_dol_section(dol_image, name_bytes)
+        print("%-13s %5d surnames in Latin letters, %d bytes at 0x%08X" % ("main.dol", len(names), len(name_bytes), name_table.TABLE_ADDR))
     shutil.rmtree(BUILD_DIR, ignore_errors=True)
     os.makedirs(BUILD_DIR)
     changed, images = [], {sc.rel.name: (sc.rel.data, sc.rel.data) for sc in scripts}
@@ -1088,6 +1118,14 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                          and ore["sc"].region[0] <= e[4] < ore["sc"].region[1] and not ore["sc"].in_island(e[4])
                          for mod, _, entries, _ in parse_imports(m.data, m.imp_off, m.imp_size) for e in entries):
             sys.exit("%s points into the My Life script: not supported" % m.name)
+        if names and m.name in name_table.READERS:               # surname readers: the new table, six cells
+            try:
+                image, written, nops = name_table.patch_module(m, image, parse_imports, S.R_NOP)
+            except ValueError as e:
+                sys.exit(str(e))
+            patched.setdefault(m.mod_id, {}).update(written)
+            nopped[m.mod_id] = nops
+            note += ", surname readers patched"
         if image != m.data:
             with open(os.path.join(BUILD_DIR, m.name), "wb") as f:
                 f.write(image)
@@ -1102,13 +1140,13 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ore)
+    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ore, nopped)
     if dol:                             # the My Life modules: relocations and sections are checked in verify()
-        verify_dol(orig, new, dol, slots, tuple(extra_images))
+        verify_dol(orig, new, dol, slots, tuple(extra_images), nopped, name_bytes if names else None)
     return changed
 
 
-def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=(), ore=None):
+def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=(), ore=None, nopped=None):
     """Re-read the built files and compare them with the originals, structure by structure.
     Returns the modules as re-read (for verify_dol). moved = the relocations whose addend the build
     changed on purpose (pointers to strings that were laid out again): {(module, section, position): addend}."""
@@ -1139,7 +1177,8 @@ def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=No
             assert w2 == window and u2 == repl.get(name, {}).get(i, units), "%s: text at 0x%X" % (name, i * 2)
     # every relocation: same kind and target, positions and addends moved exactly as mapped
     for mid, m in orig.items():
-        a, b = m.relocs(), new[mid].relocs()
+        off = (nopped or {}).get(mid, set())       # turned into R_NOP on purpose (surname readers)
+        a, b = [r for r in m.relocs() if r[:2] not in off], new[mid].relocs()
         assert len(a) == len(b), m.name
         want = []
         for (s, pos, typ, tm, ts, ad) in a:
