@@ -65,7 +65,7 @@ def padded(inner, n=3):
 
 
 STYLES["d6_zi"] = ui_type.logo(**{'fill': [51, 207, 186, 173, 139, 51], 'outline': 1, 'white': 255, 'rim': 42, 'shadow': [42, 42], 'soft': [], 'thick': 2, 'band': 2})
-STYLES["d6_faz"] = ui_type.logo(**{'fill': [52, 52, 52, 52, 52, 52], 'outline': 24, 'white': 207, 'rim': 62, 'shadow': [62, 62, 62], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d6_faz"] = ui_type.logo(**{'fill': [160, 163, 171, 172, 175, 183], 'outline': 52, 'white': 207, 'rim': 62, 'shadow': [62, 62, 62], 'soft': [], 'thick': 2, 'band': 2})
 STYLES["d6_zi_item"] = ringfill([15, 15, 14, 14, 13, 12], [7, 6], [])         # pal 13: white letters, black ring
 STYLES["d6_zi_head"] = flat([0, 1, 1, 1, 1, 1, 1], cut=3)                 # pal 4: navy letters, light shadow (heading in the panel)
 STYLES["d6_zi_dt"] = ringfill([15, 15, 15, 14, 14, 14], [3], [1])             # pal 7: dialog title, white letters

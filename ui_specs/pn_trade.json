@@ -1,0 +1,2549 @@
+{
+ "arc": "pn_trade.arc",
+ "repack": [
+  {
+   "bank": "g3_ptf_0",
+   "palette": 121,
+   "style": "a6_ptf_black",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     80,
+     0,
+     128,
+     24
+    ],
+    [
+     0,
+     0,
+     24,
+     120,
+     48
+    ],
+    [
+     0,
+     120,
+     24,
+     128,
+     120
+    ],
+    [
+     0,
+     0,
+     48,
+     120,
+     72
+    ],
+    [
+     0,
+     0,
+     72,
+     120,
+     96
+    ],
+    [
+     0,
+     0,
+     96,
+     120,
+     120
+    ],
+    [
+     0,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     1,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     1,
+     0,
+     48,
+     128,
+     72
+    ],
+    [
+     1,
+     0,
+     72,
+     128,
+     96
+    ],
+    [
+     1,
+     0,
+     96,
+     128,
+     120
+    ],
+    [
+     1,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     2,
+     0,
+     48,
+     128,
+     72
+    ],
+    [
+     2,
+     0,
+     72,
+     128,
+     96
+    ],
+    [
+     2,
+     0,
+     96,
+     128,
+     120
+    ],
+    [
+     2,
+     0,
+     120,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Pitcher",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "01",
+     "text": "Catcher",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "02",
+     "text": "1st Base",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "03",
+     "text": "2nd Base",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:0.92:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "04",
+     "text": "3rd Base",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "05",
+     "text": "Shortstop",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:0.85:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "06",
+     "text": "Outfield",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "07",
+     "text": "Fielder",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "08",
+     "text": "Throws R",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:0.92:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "09",
+     "text": "Throws L",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:0.92:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0a",
+     "text": "Bats R",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0b",
+     "text": "Bats L",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0c",
+     "text": "Switch",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0d",
+     "text": "Young",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0e",
+     "text": "Prime",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0f",
+     "text": "Veteran",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "10",
+     "text": "Throws Hard",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:0.92:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "11",
+     "text": "Many Pitches",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "12",
+     "text": "Good Control",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "13",
+     "text": "Stamina",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "14",
+     "text": "Power",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "15",
+     "text": "Good Contact",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:0.92:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "16",
+     "text": "Fast",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "17",
+     "text": "Strong Arm",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:0.85:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "18",
+     "text": "Good Glove",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "1a",
+     "text": "Infield",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "1b",
+     "text": "Has Out Pitch",
+     "style": "a6_ptf_black",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 6
+    }
+   ],
+   "name": "ptf items"
+  },
+  {
+   "bank": "g3_ptf_0",
+   "palette": 122,
+   "style": "a6_ptf_red",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     80,
+     24
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "19",
+     "text": "Any",
+     "style": "a6_ptf_red",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 7
+    }
+   ],
+   "name": "ptf any"
+  },
+  {
+   "bank": "g3_ptk_0",
+   "palette": 101,
+   "style": "a6_ptk_item",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     0,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     0,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     1,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     1,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     1,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     112,
+     40
+    ],
+    [
+     2,
+     0,
+     40,
+     112,
+     80
+    ],
+    [
+     2,
+     112,
+     64,
+     120,
+     80
+    ],
+    [
+     2,
+     0,
+     80,
+     120,
+     120
+    ],
+    [
+     2,
+     0,
+     120,
+     120,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     3,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     3,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     3,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     4,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     4,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     4,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     5,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     5,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     6,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     6,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     6,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     7,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     7,
+     112,
+     80,
+     128,
+     96
+    ],
+    [
+     7,
+     0,
+     80,
+     112,
+     120
+    ],
+    [
+     7,
+     0,
+     120,
+     16,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     10,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     10,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     10,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     11,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     11,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     11,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     12,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     12,
+     0,
+     80,
+     128,
+     96
+    ],
+    [
+     12,
+     56,
+     96,
+     128,
+     128
+    ],
+    [
+     17,
+     120,
+     0,
+     128,
+     64
+    ],
+    [
+     17,
+     32,
+     64,
+     128,
+     96
+    ],
+    [
+     17,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     18,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     18,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     18,
+     0,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Pitcher",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "01",
+     "text": "Catcher",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "02",
+     "text": "1st Base",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "03",
+     "text": "2nd Base",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:0.85:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "04",
+     "text": "3rd Base",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:0.92:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "05",
+     "text": "Shortstop",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:0.85:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "06",
+     "text": "Outfield",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "07",
+     "text": "Fielder",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "08",
+     "text": "Throws R",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "09",
+     "text": "Throws L",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "0a",
+     "text": "Bats R",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 8
+    },
+    {
+     "sprite": "0b",
+     "text": "Bats L",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 8
+    },
+    {
+     "sprite": "0c",
+     "text": "Switch",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 8
+    },
+    {
+     "sprite": "0d",
+     "text": "Young",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "0e",
+     "text": "Prime",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "0f",
+     "text": "Veteran",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 8
+    },
+    {
+     "sprite": "10",
+     "text": "Throws Hard",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "11",
+     "text": "Many Pitches",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "12",
+     "text": "Good Control",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "13",
+     "text": "Stamina",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "14",
+     "text": "Power",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "15",
+     "text": "Good Contact",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "16",
+     "text": "Fast",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "17",
+     "text": "Strong Arm",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "18",
+     "text": "Good Glove",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "1a",
+     "text": "Infield",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "1b",
+     "text": "Has Out Pitch",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "21",
+     "text": "Starter",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "22",
+     "text": "Closer",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "23",
+     "text": "All-Round",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 8
+    },
+    {
+     "sprite": "24",
+     "text": "Fastballer",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "25",
+     "text": "Finesse",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "26",
+     "text": "Breaking Balls",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "27",
+     "text": "Slugger",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "28",
+     "text": "Speed & Contact",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "29",
+     "text": "Defense",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 8
+    },
+    {
+     "sprite": "42",
+     "text": "Player Trade",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:17:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "43",
+     "text": "Cash Trade",
+     "style": "a6_ptk_item",
+     "font": "ttf:rounded:20:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    }
+   ],
+   "name": "ptk items"
+  },
+  {
+   "bank": "g3_ptk_0",
+   "palette": 100,
+   "style": "a6_ptk_any",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     40
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "19",
+     "text": "Any",
+     "style": "a6_ptk_any",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "baseline": 9
+    }
+   ],
+   "name": "ptk any"
+  },
+  {
+   "bank": "g3_ptk_0",
+   "palette": 131,
+   "style": "a6_ptk_help",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     12,
+     0,
+     96,
+     56,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     13,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     13,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     13,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     14,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     14,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     14,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     15,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     15,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     15,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     16,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     16,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     16,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "2a",
+     "text": "(Values every skill)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "2b",
+     "text": "(Values velocity)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "2c",
+     "text": "(Values control)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "2d",
+     "text": "(Values breaking balls)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "2e",
+     "text": "(Values power)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "2f",
+     "text": "(Values speed and contact)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "30",
+     "text": "(Values glove and arm)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "31",
+     "text": "(Easily affected by change)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "32",
+     "text": "(Ready to help right away)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "33",
+     "text": "(Steady and dependable)",
+     "style": "a6_ptk_help",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    }
+   ],
+   "name": "ptk help"
+  },
+  {
+   "bank": "g3_ptk_0",
+   "palette": 102,
+   "style": "a6_ptk_big",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     112,
+     0,
+     128,
+     64
+    ],
+    [
+     2,
+     120,
+     64,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     8,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     9,
+     0,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "20",
+     "text": "Too many players\nmatch these terms\nto choose one.",
+     "style": "a6_ptk_big",
+     "font": "ttf:rounded:21:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -25
+    }
+   ],
+   "name": "ptk notice"
+  },
+  {
+   "bank": "g3_pts_0",
+   "palette": 120,
+   "style": "a6_pts_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     16,
+     8,
+     112,
+     32
+    ],
+    [
+     1,
+     56,
+     32,
+     72,
+     80
+    ],
+    [
+     1,
+     112,
+     120,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     120,
+     24
+    ],
+    [
+     3,
+     120,
+     0,
+     128,
+     48
+    ],
+    [
+     3,
+     0,
+     24,
+     120,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     128,
+     72
+    ],
+    [
+     3,
+     0,
+     72,
+     128,
+     96
+    ],
+    [
+     3,
+     0,
+     96,
+     128,
+     120
+    ],
+    [
+     3,
+     0,
+     120,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "09",
+     "text": "Other Team",
+     "style": "a6_pts_head",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 38
+    },
+    {
+     "sprite": "0a",
+     "text": "Position Wanted",
+     "style": "a6_pts_head",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 38
+    },
+    {
+     "sprite": "0b",
+     "text": "Player Wanted",
+     "style": "a6_pts_head",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 102
+    },
+    {
+     "sprite": "0c",
+     "text": "Terms Wanted",
+     "style": "a6_pts_head",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 102
+    },
+    {
+     "sprite": "0d",
+     "text": "In Exchange",
+     "style": "a6_pts_head",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 262
+    },
+    {
+     "sprite": "0f",
+     "text": "Payment",
+     "style": "a6_pts_head",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 262
+    }
+   ],
+   "name": "pts headings"
+  },
+  {
+   "bank": "g3_pts_0",
+   "palette": 117,
+   "style": "a6_pts_ink",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     16,
+     32,
+     56,
+     80
+    ],
+    [
+     1,
+     16,
+     80,
+     112,
+     128
+    ],
+    [
+     1,
+     72,
+     32,
+     112,
+     80
+    ],
+    [
+     1,
+     0,
+     120,
+     16,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      16,
+      32,
+      56,
+      80
+     ],
+     "text": "Trade Request",
+     "style": "a6_pts_title~0_40",
+     "font": "ttf:rounded:15:0.0:0.85:0.35",
+     "baseline": 60,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      16,
+      80,
+      112,
+      128
+     ],
+     "text": "Trade Request",
+     "style": "a6_pts_title~40_136",
+     "font": "ttf:rounded:15:0.0:0.85:0.35",
+     "baseline": 60,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      72,
+      32,
+      112,
+      80
+     ],
+     "text": "Trade Request",
+     "style": "a6_pts_title~136_176",
+     "font": "ttf:rounded:15:0.0:0.85:0.35",
+     "baseline": 60,
+     "left": 0
+    }
+   ],
+   "name": "pts title"
+  },
+  {
+   "bank": "g3_pts_0",
+   "palette": 123,
+   "style": "a6_pts_stamp",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     48,
+     80,
+     128
+    ],
+    [
+     2,
+     80,
+     48,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      48,
+      80,
+      128
+     ],
+     "text": "OK",
+     "style": "a6_pts_stamp",
+     "font": "ttf:rounded:26:0.0:1.0:0.6",
+     "baseline": 60,
+     "left": 0
+    }
+   ],
+   "name": "pts stamp"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 97,
+   "style": "a6_head_green",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     7,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     7,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     7,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     7,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "08",
+     "text": "Offers from Other Teams",
+     "style": "a6_head_green",
+     "font": "ttf:rounded:16:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      97
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Pending Trade Requests",
+     "style": "a6_head_green",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      97
+     ]
+    }
+   ],
+   "name": "pt headings"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 99,
+   "style": "a6_pt_out",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     32,
+     96,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     96,
+     32,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      32,
+      96,
+      128,
+      128
+     ],
+     "text": "Outgoing Players",
+     "style": "a6_pt_out",
+     "font": "ttf:rounded:9:0.0:0.85:0.25",
+     "baseline": 20
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "'s",
+     "style": "a6_pt_out",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 26,
+     "align": "right"
+    }
+   ],
+   "name": "pt outgoing"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 72,
+   "style": "a6_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     0,
+     64,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "35",
+     "text": "All",
+     "style": "a6_tab",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 143,
+     "palettes": [
+      72
+     ]
+    }
+   ],
+   "name": "tab 35"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 73,
+   "style": "a6_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     64,
+     0,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "36",
+     "text": "Pitchers",
+     "style": "a6_tab",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 143,
+     "palettes": [
+      73
+     ]
+    }
+   ],
+   "name": "tab 36"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 74,
+   "style": "a6_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     32,
+     64,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "37",
+     "text": "Fielders",
+     "style": "a6_tab",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 143,
+     "palettes": [
+      74
+     ]
+    }
+   ],
+   "name": "tab 37"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 86,
+   "style": "a6_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     64,
+     32,
+     128,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "38",
+     "text": "Catchers",
+     "style": "a6_tab",
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "baseline": 142,
+     "palettes": [
+      86
+     ]
+    }
+   ],
+   "name": "tab 38"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 87,
+   "style": "a6_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     64,
+     64,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "39",
+     "text": "Infield",
+     "style": "a6_tab",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 143,
+     "palettes": [
+      87
+     ]
+    }
+   ],
+   "name": "tab 39"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 88,
+   "style": "a6_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     64,
+     64,
+     128,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3a",
+     "text": "Outfield",
+     "style": "a6_tab",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 143,
+     "palettes": [
+      88
+     ]
+    }
+   ],
+   "name": "tab 3a"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 70,
+   "style": "a6_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3c",
+     "text": "Name",
+     "style": "a6_tab",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 21
+    },
+    {
+     "sprite": "3d",
+     "text": "Age",
+     "style": "a6_tab",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 21
+    }
+   ],
+   "name": "pt columns"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 8,
+   "style": "a6_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     96,
+     64,
+     112,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      96,
+      64,
+      112,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "3e"
+     ]
+    }
+   ],
+   "name": "pt age erase"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 98,
+   "style": "a6_pt_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     8,
+     0,
+     56,
+     128,
+     112
+    ],
+    [
+     8,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     9,
+     0,
+     40,
+     128,
+     96
+    ],
+    [
+     9,
+     0,
+     96,
+     16,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3f",
+     "text": "Trade",
+     "style": "a6_pt_title",
+     "font": "ttf:rounded:26:0.0:0.85:0.45",
+     "baseline": 52
+    },
+    {
+     "sprite": "40",
+     "text": "Trade Request",
+     "style": "a6_pt_title",
+     "font": "ttf:rounded:15:0.0:0.85:0.45",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "41",
+     "text": "Offers from\nOther Teams",
+     "style": "a6_pt_title",
+     "font": "ttf:rounded:13:0.0:0.85:0.45",
+     "baseline": 40
+    },
+    {
+     "sprite": "42",
+     "text": "Watch List",
+     "style": "a6_pt_title",
+     "font": "ttf:rounded:26:0.0:0.85:0.45",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    }
+   ],
+   "name": "pt titles"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 57,
+   "style": "a6_btn_white",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     64,
+     0,
+     120,
+     40
+    ],
+    [
+     10,
+     0,
+     40,
+     64,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "44",
+     "text": "Request\nTrade",
+     "style": "a6_btn_white",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 20,
+     "palettes": [
+      57
+     ]
+    },
+    {
+     "sprite": "45",
+     "text": "See\nOffers",
+     "style": "a6_btn_white",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 20,
+     "palettes": [
+      57
+     ]
+    }
+   ],
+   "name": "btn 57"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 55,
+   "style": "a6_btn_navy",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     64,
+     40,
+     128,
+     80
+    ],
+    [
+     11,
+     64,
+     40,
+     128,
+     80
+    ],
+    [
+     12,
+     0,
+     64,
+     64,
+     104
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "46",
+     "text": "Watch\nList",
+     "style": "a6_btn_navy",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 21,
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "4e",
+     "text": "Add to\nWatch List",
+     "style": "a6_btn_navy",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 20,
+     "palettes": [
+      55
+     ]
+    },
+    {
+     "sprite": "53",
+     "text": "To List",
+     "style": "a6_btn_navy",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 20,
+     "palettes": [
+      55
+     ]
+    }
+   ],
+   "name": "btn 55"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 42,
+   "style": "a6_btn_purple",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     0,
+     80,
+     64,
+     120
+    ],
+    [
+     12,
+     32,
+     32,
+     104,
+     56
+    ],
+    [
+     12,
+     64,
+     64,
+     128,
+     104
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "47",
+     "text": "Withdraw",
+     "style": "a6_btn_purple",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 20,
+     "palettes": [
+      42
+     ]
+    },
+    {
+     "sprite": "54",
+     "text": "Remove\nfrom List",
+     "style": "a6_btn_purple",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 20,
+     "palettes": [
+      42
+     ]
+    },
+    {
+     "sprite": "5a",
+     "text": "Decline Trade",
+     "style": "a6_btn_purple",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 16,
+     "palettes": [
+      42
+     ]
+    }
+   ],
+   "name": "btn 42"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 38,
+   "style": "a6_btn_olive",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     11,
+     64,
+     0,
+     128,
+     40
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "4c",
+     "text": "Pick from\nList Below",
+     "style": "a6_btn_olive",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "baseline": 21,
+     "palettes": [
+      38
+     ]
+    }
+   ],
+   "name": "btn 38"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 58,
+   "style": "a6_btn_green",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     11,
+     0,
+     40,
+     64,
+     80
+    ],
+    [
+     12,
+     56,
+     104,
+     112,
+     112
+    ],
+    [
+     12,
+     0,
+     104,
+     56,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "4d",
+     "text": "Request\nAs Is",
+     "style": "a6_btn_green",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 21,
+     "palettes": [
+      58
+     ]
+    },
+    {
+     "sprite": "68",
+     "text": "Negotiate",
+     "style": "a6_btn_crimson",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 20,
+     "palettes": [
+      58
+     ]
+    }
+   ],
+   "name": "btn 58"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 39,
+   "style": "a6_btn_brown",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     10,
+     56,
+     0,
+     64,
+     32
+    ],
+    [
+     10,
+     120,
+     0,
+     128,
+     40
+    ],
+    [
+     10,
+     0,
+     32,
+     64,
+     40
+    ],
+    [
+     10,
+     64,
+     80,
+     128,
+     88
+    ],
+    [
+     10,
+     0,
+     120,
+     64,
+     128
+    ],
+    [
+     12,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     12,
+     64,
+     24,
+     128,
+     32
+    ],
+    [
+     12,
+     0,
+     32,
+     32,
+     56
+    ],
+    [
+     12,
+     104,
+     32,
+     128,
+     56
+    ],
+    [
+     12,
+     0,
+     56,
+     128,
+     64
+    ],
+    [
+     12,
+     112,
+     104,
+     128,
+     112
+    ],
+    [
+     12,
+     56,
+     112,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "59",
+     "text": "Accept Trade",
+     "style": "a6_btn_brown",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 14,
+     "palettes": [
+      39
+     ]
+    }
+   ],
+   "name": "btn 39"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 103,
+   "style": "a6_banner",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     13,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     13,
+     0,
+     56,
+     128,
+     112
+    ],
+    [
+     14,
+     0,
+     0,
+     72,
+     56
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "65",
+     "text": "No trade requests pending!",
+     "style": "a6_banner",
+     "font": "ttf:rounded:20:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    }
+   ],
+   "name": "banner"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 104,
+   "style": "a6_empty",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     14,
+     0,
+     56,
+     72,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "66",
+     "text": "List\nEmpty",
+     "style": "a6_empty",
+     "font": "ttf:rounded:18:0.0:0.85:0.25",
+     "baseline": 184
+    }
+   ],
+   "name": "empty"
+  },
+  {
+   "bank": "g3_pt_0",
+   "palette": 110,
+   "style": "a6_noplayers",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     14,
+     72,
+     0,
+     96,
+     32
+    ],
+    [
+     14,
+     96,
+     0,
+     120,
+     32
+    ],
+    [
+     14,
+     72,
+     32,
+     96,
+     64
+    ],
+    [
+     14,
+     96,
+     32,
+     120,
+     64
+    ],
+    [
+     13,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     14,
+     120,
+     0,
+     128,
+     64
+    ],
+    [
+     14,
+     72,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      14,
+      72,
+      0,
+      96,
+      32
+     ],
+     "text": "No Players",
+     "style": "a6_noplayers",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 22,
+     "sprites": [
+      "67"
+     ],
+     "left": 15
+    },
+    {
+     "from": [
+      14,
+      96,
+      0,
+      120,
+      32
+     ],
+     "empty": true,
+     "sprites": [
+      "67"
+     ]
+    },
+    {
+     "from": [
+      14,
+      72,
+      32,
+      96,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "67"
+     ]
+    },
+    {
+     "from": [
+      14,
+      96,
+      32,
+      120,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "67"
+     ]
+    }
+   ],
+   "name": "pt no players"
+  }
+ ]
+}
