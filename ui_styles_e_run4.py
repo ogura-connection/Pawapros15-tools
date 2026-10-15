@@ -55,4 +55,5 @@ def plate(style, w, h, bg):
 
 
 # pal 14: Start Practice on a black plate (index 1), white letters
-STYLES["e4_sg_start"] = plate(ringfill([15, 15, 15, 14, 14, 13], [4, 3]), 80, 24, 1)
+STYLES["e4_sg_start"] = plate(ringfill([15, 15, 15, 14, 14, 13], [6]), 80, 24, 1)
+STYLES["e4_sg_start_t"] = ringfill([15, 15, 15, 14, 14, 13], [6])                      # the same letters without the plate (for measuring)
