@@ -874,6 +874,13 @@
     ],
     [
      4,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     4,
      64,
      40,
      128,
@@ -944,17 +951,17 @@
     ],
     [
      9,
+     104,
+     40,
+     128,
+     80
+    ],
+    [
+     9,
      80,
      64,
      104,
      88
-    ],
-    [
-     9,
-     104,
-     72,
-     128,
-     80
     ],
     [
      9,
@@ -989,9 +996,9 @@
      ],
      "text": "After",
      "style": "e_after",
-     "font": "ttf:narrow:18:0.0:1.0:0.5",
-     "left": 6,
-     "baseline": 25
+     "font": "ttf:narrow:16:0.0:1.0:0.5",
+     "left": 9,
+     "baseline": 24
     },
     {
      "from": [
@@ -1017,9 +1024,9 @@
      ],
      "text": "Current",
      "style": "e_cur",
-     "font": "ttf:narrow:18:0.0:1.0:0.5",
-     "left": -7,
-     "baseline": 29
+     "font": "ttf:narrow:16:0.0:1.0:0.5",
+     "left": -3,
+     "baseline": 28
     },
     {
      "from": [
@@ -1031,9 +1038,9 @@
      ],
      "text": "After",
      "style": "e_after",
-     "font": "ttf:narrow:18:0.0:1.0:0.5",
-     "left": 38,
-     "baseline": 29
+     "font": "ttf:narrow:16:0.0:1.0:0.5",
+     "left": 41,
+     "baseline": 28
     },
     {
      "from": [
@@ -1055,9 +1062,9 @@
      ],
      "text": "With Items",
      "style": "e_item",
-     "font": "ttf:narrow:18:0.0:1.0:0.4",
-     "left": 11,
-     "baseline": 25
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": 16,
+     "baseline": 24
     },
     {
      "from": [
@@ -1069,9 +1076,9 @@
      ],
      "text": "TRJ",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": -1,
-     "baseline": 21
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": 0,
+     "baseline": 20
     },
     {
      "from": [
@@ -1083,9 +1090,9 @@
      ],
      "text": "CON",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": 1,
-     "baseline": 22
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": 2,
+     "baseline": 21
     },
     {
      "from": [
@@ -1097,9 +1104,9 @@
      ],
      "text": "POW",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": 3,
-     "baseline": 22
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": 4,
+     "baseline": 21
     },
     {
      "from": [
@@ -1121,9 +1128,9 @@
      ],
      "text": "SPD",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": -2,
-     "baseline": 21
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": -1,
+     "baseline": 20
     },
     {
      "from": [
@@ -1135,9 +1142,9 @@
      ],
      "text": "ARM",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": -4,
-     "baseline": 22
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": -3,
+     "baseline": 21
     },
     {
      "from": [
@@ -1149,9 +1156,9 @@
      ],
      "text": "FLD",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": 8,
-     "baseline": 21
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": 9,
+     "baseline": 20
     },
     {
      "from": [
@@ -1173,9 +1180,9 @@
      ],
      "text": "ERR",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": 6,
-     "baseline": 21
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": 7,
+     "baseline": 20
     },
     {
      "from": [
@@ -1187,9 +1194,9 @@
      ],
      "text": "VEL",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": 3,
-     "baseline": 21
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": 4,
+     "baseline": 20
     },
     {
      "from": [
@@ -1201,9 +1208,9 @@
      ],
      "text": "CTL",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
      "left": 11,
-     "baseline": 21
+     "baseline": 20
     },
     {
      "from": [
@@ -1215,9 +1222,9 @@
      ],
      "text": "STA",
      "style": "stat",
-     "font": "ttf:narrow:17:0.0:1.0:0.4",
-     "left": 7,
-     "baseline": 21
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "left": 8,
+     "baseline": 20
     },
     {
      "from": [
@@ -1415,9 +1422,9 @@
      ],
      "text": "Cancel",
      "style": "e_cancel",
-     "font": "ttf:narrow:9:0.0:1.0:0.4",
-     "left": 13,
-     "baseline": 28
+     "font": "ttf:narrow:12:0.0:1.0:0.4",
+     "left": 9,
+     "baseline": 29
     },
     {
      "from": [
@@ -1432,6 +1439,26 @@
      "font": "ttf:narrow:8:0.0:1.0:0.15",
      "left": 7,
      "baseline": 15
+    },
+    {
+     "sprite": "37",
+     "text": "Acquired",
+     "style": "e_acq",
+     "font": "ttf:rounded:16:0.0:1.0:0.5",
+     "slices": true,
+     "slice_width": 128
+    },
+    {
+     "from": [
+      9,
+      104,
+      40,
+      128,
+      72
+     ],
+     "text": "E",
+     "style": "e_badge",
+     "font": "ttf:rounded:10:0.0:1.0:0.0"
     }
    ],
    "name": "headings",

@@ -75,4 +75,50 @@ STYLES["e_item"] = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [2])
 STYLES["e_tabp"] = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [8, 11])
 STYLES["e_tabf"] = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [8, 2])
 STYLES["e_tabo"] = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [8, 11])
-STYLES["e_cancel"] = ui_type.logo([8, 9, 10, 11, 12, 13, 14], [7], 14, 1, 3, [], 2, 1)
+STYLES["e_cancel"] = ui_type.ringed([0, 10, 12, 13, 14, 14, 14], [1, 3])
+
+
+# z3_up_0 sprite 37 (the "acquired" bar, palette 23): the whole bar is one piece of art, 280 x 40: the mint gradient bar with its
+# rounded right end (as the Japanese bar is built from its pieces) and the word in white letters in blue rings in the middle
+_BAR = [0, 0, 0, 0, 0, 2, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 7, 7, 7, 6, 6, 6, 5, 5, 5, 4, 4, 3, 3, 2, 2, 0, 0, 0, 0, 0]
+_CAP = {5: 10, 6: 12, 7: 13, 8: 13, 31: 13, 32: 13, 33: 12, 34: 10}      # width of the end piece's rows (14 elsewhere)
+_ACQ_TEXT = ui_type.ringed([0, 13, 14, 15, 15, 15, 15], [8, 8, 12])
+
+
+def _acq(ink, base):
+    out = np.zeros((40, 280), np.uint8)
+    for y, v in enumerate(_BAR):
+        if v:
+            out[y, :264 + _CAP.get(y, 14)] = v
+    art, b = _ACQ_TEXT(ink, base)
+    h, w = art.shape
+    y0, x0 = 20 - h // 2, 144 - w // 2
+    area = out[y0:y0 + h, x0:x0 + w]
+    area[art > 0] = art[art > 0]
+    return out, 20
+
+
+STYLES["e_acq"] = _acq
+
+
+# z3_up_0 sprite b2 / b3 (palettes 80, 81): the round division tag, drawn again with an E in it (the picture does not depend on
+# the ink): a dark ring, the green ring that shades from top to foot, a white ring, the pale disc and the letter
+def _badge(ink, base):
+    H, W = 23, 20
+    out = np.zeros((H, W), np.uint8)
+    for y in range(H):
+        for x in range(W):
+            r = (((y - 11.0) / 11.6) ** 2 + ((x - 9.5) / 10.1) ** 2) ** 0.5
+            if r > 1.0:
+                continue
+            yn = y / (H - 1)
+            out[y, x] = (1 if yn < 0.30 else 2 if yn < 0.70 else 3) if r > 0.88 else min(8, 4 + int(yn * 5)) if r > 0.66 \
+                else 9 if r > 0.55 else 10
+    for j, row in enumerate(["######", "##....", "##....", "#####.", "#####.", "##....", "##....", "######"]):
+        for i, c in enumerate(row):
+            if c == "#":
+                out[7 + j, 7 + i] = 15
+    return out, H
+
+
+STYLES["e_badge"] = _badge
