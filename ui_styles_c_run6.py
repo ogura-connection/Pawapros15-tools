@@ -1,0 +1,63 @@
+"""Label styles of art run 6, agent C (pena_ini, dft_meet, mbg_2gun, pnbg_rai). Read from the Japanese lettering by
+run6/C/c6_lib.py; every style is crisp (solid rings, fill ramps only). _s = small plates (one ring)."""
+import numpy as np
+from ui_styles_ore_ini import ringfill
+
+STYLES = {}
+
+def _sil(front, c):
+    def style(ink, base):
+        out, b = STYLES[front](ink, base)
+        return np.where(out > 0, c, 0).astype(np.uint8), b
+    return style
+
+STYLES["c6_ppjo_check"] = ringfill([15, 15, 15, 15, 15, 15], [8], [])
+STYLES["c6_ppjo_check_s"] = ringfill([15, 15, 15, 15, 15, 15], [8], [])
+STYLES["c6_s3_ppjo_00_2"] = ringfill([11, 15, 11, 15, 15, 15], [4], [9, 9])
+STYLES["c6_s3_ppjo_00_2_s"] = ringfill([11, 15, 11, 15, 15, 15], [4], [])
+STYLES["c6_s3_ppjo_11"] = ringfill([9, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_11_s"] = ringfill([9, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_12"] = ringfill([5, 11, 15, 8, 15, 5], [0], [])
+STYLES["c6_s3_ppjo_12_s"] = ringfill([5, 11, 15, 8, 15, 5], [0], [])
+STYLES["c6_s3_ppjo_13"] = ringfill([9, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_13_s"] = ringfill([9, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_14"] = ringfill([5, 12, 15, 15, 15, 15], [0], [])
+STYLES["c6_s3_ppjo_14_s"] = ringfill([5, 12, 15, 15, 15, 15], [0], [])
+STYLES["c6_s3_ppjo_15"] = ringfill([10, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_15_s"] = ringfill([10, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_16"] = ringfill([5, 15, 15, 15, 15, 15], [12], [])
+STYLES["c6_s3_ppjo_16_s"] = ringfill([5, 15, 15, 15, 15, 15], [12], [])
+STYLES["c6_s3_ppjo_17"] = ringfill([3, 15, 15, 15, 15, 15], [12], [])
+STYLES["c6_s3_ppjo_17_s"] = ringfill([3, 15, 15, 15, 15, 15], [12], [])
+STYLES["c6_s3_ppjo_18"] = ringfill([9, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_18_s"] = ringfill([9, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_19"] = ringfill([15, 15, 15, 15, 15, 15], [12], [])
+STYLES["c6_s3_ppjo_19_s"] = ringfill([15, 15, 15, 15, 15, 15], [12], [])
+STYLES["c6_s3_ppjo_1a"] = ringfill([5, 15, 15, 15, 15, 15], [14], [])
+STYLES["c6_s3_ppjo_1a_s"] = ringfill([5, 15, 15, 15, 15, 15], [14], [])
+STYLES["c6_s3_ppjo_1b"] = ringfill([15, 15, 15, 15, 15, 15], [12], [])
+STYLES["c6_s3_ppjo_1b_s"] = ringfill([15, 15, 15, 15, 15, 15], [12], [])
+STYLES["c6_s3_ppjo_1c"] = ringfill([7, 7, 7, 7, 7, 7], [15, 15, 15], [15, 15])
+STYLES["c6_s3_ppjo_1c_s"] = ringfill([7, 7, 7, 7, 7, 7], [15], [])
+STYLES["c6_s3_ppjo_1d"] = ringfill([4, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_1d_s"] = ringfill([4, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_1e"] = ringfill([15, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_1e_s"] = ringfill([15, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_1f"] = ringfill([15, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_1f_s"] = ringfill([15, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_20"] = ringfill([9, 9, 15, 15, 15, 15], [3], [])
+STYLES["c6_s3_ppjo_20_s"] = ringfill([9, 9, 15, 15, 15, 15], [3], [])
+STYLES["c6_s3_ppjo_21"] = ringfill([12, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_21_s"] = ringfill([12, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_4a"] = ringfill([15, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_4a_s"] = ringfill([15, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_4b"] = ringfill([12, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_4b_s"] = ringfill([12, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_4c"] = ringfill([15, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_4c_s"] = ringfill([15, 15, 15, 15, 15, 15], [5], [])
+STYLES["c6_s3_ppjo_4d"] = ringfill([5, 15, 15, 15, 15, 15], [0], [])
+STYLES["c6_s3_ppjo_4d_s"] = ringfill([5, 15, 15, 15, 15, 15], [0], [])
+STYLES["c6_s3_ppjo_4e"] = ringfill([15, 15, 15, 15, 15, 15], [14], [])
+STYLES["c6_s3_ppjo_4e_s"] = ringfill([15, 15, 15, 15, 15, 15], [14], [])
+STYLES["c6_s3_ppjo_4f"] = ringfill([15, 15, 15, 15, 15, 15], [9], [])
+STYLES["c6_s3_ppjo_4f_s"] = ringfill([15, 15, 15, 15, 15, 15], [9], [])
