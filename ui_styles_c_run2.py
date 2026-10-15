@@ -156,10 +156,44 @@ for _k in list(STYLES):
         STYLES["c2_embm" + _k[6:]] = STYLES[_k].raw
 
 
-# ---- scs_vs z5_svx_0 (256 colours): the tournament titles. Orange to yellow letters, dark red outline, white band, blue ring ----------
-from ui_type import called
-STYLES["c2_svx"] = called([78, 74, 66, 53, 43, 36], [78, 78], 125, 199, 154, [182], 2, 3, 3, (1, 1))
+# ---- scs_vs z5_svx_0 (256 colours): the tournament titles --------------------------------------------------------------------------
+def extruded(fill, extrude, white, lavender, blue, wide=4, edge=3):
+    """Letters filled top to foot from `fill`, pushed out to the lower right by `extrude` (near to far, one pixel each), in a white
+    band `wide` pixels wide with a one pixel `lavender` edge and a thick `blue` band (colours inside to out)."""
+    fill = list(fill)
 
+    def style(ink, base):
+        pad = len(extrude) + wide + 1 + len(blue) + 1
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big >= edge
+        ext = np.zeros_like(letters)
+        for k in range(1, len(extrude) + 1):
+            ext |= shift(letters, k, k) | shift(letters, k, k - 1) | shift(letters, k - 1, k)
+        solid = letters | ext
+        out = np.zeros(big.shape, np.uint8)
+        masks = [grow(solid, 1)]
+        for _ in range(wide + 1 + len(blue) - 1):
+            masks.append(grow(masks[-1], 1, diagonal=False))
+        for k in range(len(blue), 0, -1):                          # outermost band first
+            out[masks[wide + k]] = blue[k - 1]
+        out[masks[wide]] = lavender
+        for m in masks[:wide][::-1]:
+            out[m] = white
+        for k in range(len(extrude), 0, -1):
+            out[shift(letters, k, k) | shift(letters, k, k - 1) | shift(letters, k - 1, k)] = extrude[k - 1]
+        ys = np.nonzero(letters.any(1))[0]
+        f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+        row = np.array(fill)[np.rint(f.clip(0, 1) * (len(fill) - 1)).astype(int)][:, None]
+        out[letters] = np.broadcast_to(row, big.shape)[letters]
+        ys, xs = np.nonzero(out)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base + pad - ys.min()
+    return style
+
+
+# red-orange letters turning to yellow at the foot, a dark red edge below and right, white band, lilac and blue bands
+STYLES["c2_svx"] = extruded([80, 78, 76, 73, 69, 65, 57, 51, 47, 43, 40, 37], [120, 125], 199, 182, [168, 168, 168, 154, 154, 148], 4)
 
 # ---- scs_win r4_vs (palettes 0, 3, 4, 5): the result screen ------------------------------------------------------------------------
 # 勝利 (palette 3): letters from white at the top to dark gold at the foot, a thick black outline and shadow

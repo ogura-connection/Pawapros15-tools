@@ -3125,10 +3125,10 @@
      "sprite": "0c",
      "text": "Choose a player to set up",
      "style": "a_help_y1",
-     "font": "ttf:rounded:10:0.0:1.0:0.45",
+     "font": "ttf:rounded:13:0.0:1.0:0.45",
      "slices": true,
      "slice_width": 128,
-     "dy": 2,
+     "dy": 3,
      "pages": [
       4,
       5
@@ -3141,7 +3141,7 @@
      "sprite": "0d",
      "text": "Choose a player to set up",
      "style": "a_help_y1",
-     "font": "ttf:rounded:10:0.0:1.0:0.45",
+     "font": "ttf:rounded:13:0.0:1.0:0.45",
      "slices": true,
      "slice_width": 128,
      "dy": 3,
@@ -3166,9 +3166,9 @@
      ],
      "text": "Press OK without picking a player\nto save with the current settings.",
      "style": "a_help_y2~0_128",
-     "font": "ttf:rounded:8:0.0:1.0:0.3",
-     "baseline": 28,
-     "left": 65
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 29,
+     "left": 53
     },
     {
      "from": [
@@ -3183,9 +3183,9 @@
      ],
      "text": "Press OK without picking a player\nto save with the current settings.",
      "style": "a_help_y2~128_4096",
-     "font": "ttf:rounded:8:0.0:1.0:0.3",
-     "baseline": 28,
-     "left": 73
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 29,
+     "left": 61
     },
     {
      "from": [
@@ -3204,10 +3204,10 @@
      "sprite": "11",
      "text": "Drafted Players",
      "style": "a_ban_y5",
-     "font": "ttf:rounded:24:0.0:1.0:0.8",
+     "font": "ttf:rounded:27:0.0:0.88:0.8",
      "slices": true,
      "slice_width": 128,
-     "dy": 4,
+     "dy": 5,
      "pages": [
       4,
       5

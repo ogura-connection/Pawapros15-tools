@@ -151,9 +151,9 @@ for _name in ("a_tag", "a_cardhead"):
 # m4_drf / y5_drf_0: the draft result screens. Help lines: m4 (palette 3) dark blue letters in a white band, y5 (27) green letters in a
 # white band; the two-line help on the pale plate: m4 (3) dark blue, y5 (22) blue; banners: m4_df256 (8-bit palette) and y5_drf_0 (29)
 STYLES["a_help_m1"] = ringfill([3], [15, 15], [])
-STYLES["a_help_m2"] = flat([0, 11, 9, 6, 4, 3, 1])
+STYLES["a_help_m2"] = crisp(1, None, 3)
 STYLES["a_help_y1"] = ringfill([6, 5, 4, 3], [15, 14], [])
-STYLES["a_help_y2"] = flat([0, 9, 7, 5, 3, 2, 1])
+STYLES["a_help_y2"] = crisp(1, None, 3)
 STYLES["a_ban_y5"] = ringfill([12, 12, 11, 13, 14, 15], [7, 7, 4, 3], [2])
 STYLES["a_ban_m"] = ringfill([146, 139, 125, 115, 84, 72, 52], [255, 255, 109, 7], [106, 104])
 windows("a_help_m2")
