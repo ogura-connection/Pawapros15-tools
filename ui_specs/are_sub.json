@@ -90,20 +90,6 @@
      112,
      128,
      128
-    ],
-    [
-     7,
-     120,
-     0,
-     128,
-     56
-    ],
-    [
-     9,
-     64,
-     80,
-     128,
-     120
     ]
    ],
    "labels": [
@@ -111,10 +97,10 @@
      "sprite": "01",
      "text": "Player Ratings",
      "style": "d7_m3_are_01",
-     "font": "ttf:rounded:14:0.0:0.92:0.4",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
      "slices": true,
      "slice_width": 128,
-     "dy": 3,
+     "dy": 4,
      "pages": [
       0,
       2
@@ -140,8 +126,8 @@
      "sprite": "03",
      "text": "Move Players",
      "style": "d7_m3_are_03",
-     "font": "ttf:rounded:14:0.0:1.0:0.4",
-     "baseline": 27,
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 26,
      "pages": [
       1
      ],
@@ -153,8 +139,8 @@
      "sprite": "04",
      "text": "Move Teams",
      "style": "d7_m3_are_04",
-     "font": "ttf:rounded:17:0.0:0.85:0.4",
-     "baseline": 28,
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 26,
      "pages": [
       1
      ],
@@ -218,8 +204,8 @@
      "sprite": "09",
      "text": "Install",
      "style": "d7_m3_are_09",
-     "font": "ttf:rounded:20:0.0:1.0:0.35",
-     "baseline": 30,
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 27,
      "pages": [
       2
      ],
@@ -231,8 +217,8 @@
      "sprite": "0a",
      "text": "Load Data",
      "style": "d7_m3_are_0a",
-     "font": "ttf:rounded:16:0.0:1.0:0.4",
-     "baseline": 28,
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 27,
      "pages": [
       1,
       2
@@ -271,165 +257,6 @@
     }
    ],
    "name": "m3_are_btn"
-  },
-  {
-   "bank": "s4w_are",
-   "palette": 0,
-   "style": "d7_m3_are_00",
-   "font": "ttf:rounded:14:0.0:1.0:0.25",
-   "under": 3,
-   "areas": [
-    [
-     2,
-     0,
-     0,
-     128,
-     48
-    ],
-    [
-     2,
-     0,
-     48,
-     120,
-     96
-    ]
-   ],
-   "labels": [
-    {
-     "sprite": "00",
-     "text": "Data Corner",
-     "style": "d7_m3_are_00",
-     "font": "ttf:rounded:27:0.0:1.0:0.35",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 3,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      9
-     ]
-    }
-   ],
-   "name": "s4w_are_titles"
-  },
-  {
-   "bank": "s4w_are",
-   "palette": 0,
-   "style": "d7_s4w_are_01",
-   "font": "ttf:rounded:14:0.0:1.0:0.25",
-   "under": 3,
-   "areas": [
-    [
-     0,
-     0,
-     0,
-     128,
-     128
-    ],
-    [
-     1,
-     0,
-     0,
-     128,
-     128
-    ]
-   ],
-   "labels": [
-    {
-     "sprite": "01",
-     "text": "Player Ratings",
-     "style": "d7_s4w_are_01",
-     "font": "ttf:rounded:14:0.0:0.85:0.4",
-     "baseline": 38,
-     "pages": [
-      1
-     ],
-     "palettes": [
-      1
-     ]
-    },
-    {
-     "sprite": "02",
-     "text": "Original Player\nPassword Entry",
-     "style": "d7_s4w_are_02",
-     "font": "ttf:rounded:10:0.0:1.0:0.45",
-     "baseline": 39,
-     "pages": [
-      0
-     ],
-     "palettes": [
-      1
-     ]
-    },
-    {
-     "sprite": "03",
-     "text": "Fight Song\nPassword Entry",
-     "style": "d7_s4w_are_03",
-     "font": "ttf:rounded:10:0.0:1.0:0.45",
-     "baseline": 39,
-     "pages": [
-      0
-     ],
-     "palettes": [
-      3
-     ]
-    },
-    {
-     "sprite": "04",
-     "text": "Voice Settings",
-     "style": "d7_s4w_are_04",
-     "font": "ttf:rounded:14:0.0:0.85:0.4",
-     "baseline": 36,
-     "pages": [
-      0,
-      1
-     ],
-     "palettes": [
-      4
-     ]
-    },
-    {
-     "sprite": "05",
-     "text": "Jersey Names",
-     "style": "d7_s4w_are_05",
-     "font": "ttf:rounded:14:0.0:0.85:0.4",
-     "baseline": 35,
-     "pages": [
-      1
-     ],
-     "palettes": [
-      4
-     ]
-    },
-    {
-     "sprite": "06",
-     "text": "Stats Settings",
-     "style": "d7_s4w_are_06",
-     "font": "ttf:rounded:15:0.0:0.85:0.4",
-     "baseline": 36,
-     "pages": [
-      1
-     ],
-     "palettes": [
-      4
-     ]
-    },
-    {
-     "sprite": "07",
-     "text": "Load Data",
-     "style": "d7_s4w_are_07",
-     "font": "ttf:rounded:18:0.0:0.92:0.35",
-     "baseline": 38,
-     "pages": [
-      1
-     ],
-     "palettes": [
-      5
-     ]
-    }
-   ],
-   "name": "s4w_are_btn"
   }
  ]
 }
