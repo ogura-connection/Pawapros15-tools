@@ -122,6 +122,7 @@
      "style": "e8_s4_kal00_02_2.80.0_h",
      "font": "ttf:rounded:12:0.0:1.0:0.3",
      "baseline": 18,
+     "centre_x": 15,
      "sprites": [
       "02"
      ]
@@ -136,8 +137,9 @@
      ],
      "text": "Pitch",
      "style": "e8_s4_kal00_02_2.80.24_h",
-     "font": "ttf:rounded:12:0.0:0.92:0.3",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
      "baseline": 18,
+     "centre_x": 7,
      "sprites": [
       "02"
      ]
@@ -186,7 +188,7 @@
      "style": "e8_s4_kal00_02_3.64.0-3.64.24_h~0_64",
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "baseline": 17,
-     "left": -17,
+     "left": -1,
      "sprites": [
       "02"
      ]
@@ -203,7 +205,7 @@
      "style": "e8_s4_kal00_02_3.64.0-3.64.24_h~64_4096",
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "baseline": 17,
-     "left": -17,
+     "left": -1,
      "sprites": [
       "02"
      ]
@@ -231,9 +233,10 @@
       80
      ],
      "text": "min",
-     "style": "e8_s4_kal00_02_3.112.64_h",
-     "font": "ttf:rounded:11:0.0:0.85:0.3",
-     "baseline": 14
+     "style": "e8_s4_kal00_02_3.112.64_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 14,
+     "centre_x": 3
     },
     {
      "sprite": "07",
