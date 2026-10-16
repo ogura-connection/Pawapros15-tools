@@ -191,7 +191,9 @@
      "baseline": 36,
      "palettes": [
       6
-     ]
+     ],
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "20",
@@ -211,7 +213,9 @@
      "baseline": 34,
      "palettes": [
       3
-     ]
+     ],
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "22",
@@ -221,15 +225,17 @@
      "baseline": 34,
      "palettes": [
       4
-     ]
+     ],
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "2f",
      "text": "This Round",
      "style": "e8_r3_hr_2f_26_h",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "font": "ttf:rounded:26:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 84,
+     "slice_width": 98,
      "dy": 0,
      "palettes": [
       26
@@ -420,7 +426,7 @@
      "sprite": "3b",
      "text": "Sapporo D",
      "style": "e8_r3_hr_3b_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
      "baseline": 22
     },
     {
@@ -448,7 +454,7 @@
      "sprite": "3f",
      "text": "Hiroshima",
      "style": "e8_r3_hr_3f_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
      "baseline": 22
     },
     {
@@ -476,7 +482,7 @@
      "sprite": "43",
      "text": "Yokohama",
      "style": "e8_r3_hr_43_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
      "baseline": 21
     },
     {
@@ -578,9 +584,9 @@
      "sprite": "4e",
      "text": "Hiroshima Municipal Stadium",
      "style": "e8_r3_hr_4e_h_s",
-     "font": "ttf:narrow:10:0.0:0.92:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 75,
+     "slice_width": 81,
      "dy": 1
     },
     {
@@ -603,10 +609,10 @@
      "sprite": "51",
      "text": "Hanshin Koshien Stadium",
      "style": "e8_r3_hr_51_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 72,
-     "dy": 0
+     "slice_width": 85,
+     "dy": 1
     },
     {
      "sprite": "52",
@@ -759,10 +765,31 @@
      64
     ],
     [
+     4,
+     112,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     120,
+     0,
+     128,
+     32
+    ],
+    [
+     7,
+     80,
+     48,
+     128,
+     96
+    ],
+    [
      7,
      96,
      0,
-     120,
+     128,
      24
     ],
     [
@@ -770,49 +797,77 @@
      80,
      32,
      96,
-     56
+     48
+    ],
+    [
+     7,
+     120,
+     24,
+     128,
+     48
     ],
     [
      11,
      0,
      104,
-     120,
+     128,
      128
     ],
     [
      15,
      0,
      104,
-     120,
+     128,
+     128
+    ],
+    [
+     16,
+     88,
+     56,
+     128,
      128
     ],
     [
      16,
      72,
      56,
-     128,
-     88
+     88,
+     104
+    ],
+    [
+     16,
+     64,
+     72,
+     72,
+     104
     ],
     [
      17,
      0,
      56,
-     56,
-     120
-    ],
-    [
-     17,
-     56,
-     56,
-     64,
-     88
+     80,
+     128
     ],
     [
      20,
      0,
      88,
      64,
-     112
+     128
+    ],
+    [
+     20,
+     56,
+     48,
+     64,
+     88
+    ],
+    [
+     20,
+     112,
+     32,
+     128,
+     48
     ]
    ],
    "labels": [
@@ -826,8 +881,8 @@
      ],
      "text": "Home Runs",
      "style": "e8_r3_hr_27_15.0.104_h_m",
-     "font": "ttf:narrow:13:0.0:0.92:0.25",
-     "baseline": 19
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 20
     },
     {
      "from": [
@@ -839,8 +894,8 @@
      ],
      "text": "Distance",
      "style": "e8_r3_hr_27_20.0.88_h_m",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 19
+     "font": "ttf:narrow:15:0.0:0.92:0.25",
+     "baseline": 20
     },
     {
      "from": [
@@ -852,8 +907,8 @@
      ],
      "text": "Points",
      "style": "e8_r3_hr_27_11.48.104_h_m",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 19
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 20
     },
     {
      "from": [
@@ -865,8 +920,8 @@
      ],
      "text": "Player",
      "style": "e8_r3_hr_27_15.72.104_h_m",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 19
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 20
     },
     {
      "from": [
@@ -891,9 +946,9 @@
      ],
      "text": "Most HRs",
      "style": "e8_r3_hr_8f_4.80.32-4.0.64_h_m~0_48",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 22,
-     "left": 15,
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 8,
      "sprites": [
       "8f"
      ]
@@ -908,9 +963,9 @@
      ],
      "text": "Most HRs",
      "style": "e8_r3_hr_8f_4.80.32-4.0.64_h_m~48_4096",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 22,
-     "left": 15,
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 8,
      "sprites": [
       "8f"
      ]
@@ -925,9 +980,9 @@
      ],
      "text": "Longest HR",
      "style": "e8_r3_hr_8f_4.64.64-17.0.56_h_m~0_32",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 22,
-     "left": -2,
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": -1,
      "sprites": [
       "8f"
      ]
@@ -942,9 +997,9 @@
      ],
      "text": "Longest HR",
      "style": "e8_r3_hr_8f_4.64.64-17.0.56_h_m~32_4096",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 22,
-     "left": -2,
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": -1,
      "sprites": [
       "8f"
      ]
@@ -959,9 +1014,9 @@
      ],
      "text": "Best Points",
      "style": "e8_r3_hr_8f_16.72.56-17.0.88_h_m~0_56",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 22,
-     "left": 7,
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 8,
      "sprites": [
       "8f"
      ]
@@ -976,9 +1031,9 @@
      ],
      "text": "Best Points",
      "style": "e8_r3_hr_8f_16.72.56-17.0.88_h_m~56_4096",
-     "font": "ttf:rounded:13:0.0:1.0:0.25",
-     "baseline": 22,
-     "left": 7,
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 23,
+     "left": 8,
      "sprites": [
       "8f"
      ]
@@ -993,8 +1048,8 @@
      ],
      "text": "HR",
      "style": "e8_r3_hr_2a_7.96.0_h_m",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 19
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "baseline": 20
     },
     {
      "from": [
