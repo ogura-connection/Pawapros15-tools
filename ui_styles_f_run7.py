@@ -34,5 +34,5 @@ STYLES["f7_sh_closer"] = ringfill([8, 15, 15, 15, 15, 8], [10], [])
 STYLES["f7_sh_tall_r"] = ringfill([15, 15, 1, 1, 1, 15], [11], [])
 STYLES["f7_sh_tall_c"] = ringfill([15, 15, 15, 15, 1, 15], [2], [])
 STYLES["f7_t_cancel"] = ringfill([9, 15, 15, 15, 15, 15], [10, 1], [3])
-STYLES["f7_ait"] = ringfill([15, 15, 15, 15, 15, 11], [9], [])
+STYLES["f7_ait"] = ringfill([15, 15, 15, 15, 15, 15], [2, 1], [])
 
