@@ -1208,5 +1208,63 @@
    "name": "s4_tai00",
    "share": true
   }
+ ],
+ "paint": [
+  {
+   "bank": "s4_taz00",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Pennant",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_pn_1"
+  },
+  {
+   "bank": "s4_taz00",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Pennant",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_pn_2"
+  },
+  {
+   "bank": "s4_taz00",
+   "page": 5,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Pennant",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_pn_5"
+  },
+  {
+   "bank": "s4_taz00",
+   "page": 6,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Pennant",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_pn_6"
+  }
  ]
 }

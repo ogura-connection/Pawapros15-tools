@@ -1,0 +1,47 @@
+{
+ "arc": "pn_acivt.arc",
+ "paint": [
+  {
+   "bank": "i3_f02",
+   "page": 0,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Fall Camp",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_fc_0"
+  },
+  {
+   "bank": "i3_f02",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Fall Camp",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_fc_1"
+  },
+  {
+   "bank": "i3_f02",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    112,
+    112
+   ],
+   "text": "Fall Camp",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_fc_2"
+  }
+ ]
+}
