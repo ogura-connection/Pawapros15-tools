@@ -266,9 +266,9 @@
     {
      "sprite": "01",
      "text": "00M",
-     "style": "f8_y3_koukai_01_s",
+     "style": "f8_y3_koukai_01_h_s",
      "font": "ttf:narrow:8:0.0:1.0:0.12",
-     "baseline": 21
+     "baseline": 20
     },
     {
      "sprite": "1a",
@@ -949,42 +949,42 @@
     {
      "sprite": "a8",
      "text": "0K",
-     "style": "f8_y3_koukai_a8_s",
-     "font": "ttf:narrow:17:0.0:1.0:0.3",
-     "baseline": 26
+     "style": "f8_y3_koukai_a8_h",
+     "font": "ttf:narrow:21:0.0:1.0:0.3",
+     "baseline": 28
     },
     {
      "sprite": "a9",
      "text": "0K",
-     "style": "f8_y3_koukai_a9_s",
-     "font": "ttf:narrow:17:0.0:1.0:0.3",
-     "baseline": 26
+     "style": "f8_y3_koukai_a9_h",
+     "font": "ttf:narrow:21:0.0:1.0:0.3",
+     "baseline": 28
     },
     {
      "sprite": "aa",
      "text": "yen",
-     "style": "f8_y3_koukai_aa_s",
+     "style": "f8_y3_koukai_aa_h_s",
      "font": "ttf:narrow:8:0.0:1.0:0.12",
      "baseline": 20
     },
     {
      "sprite": "ab",
      "text": "yen",
-     "style": "f8_y3_koukai_ab_s",
+     "style": "f8_y3_koukai_ab_h_s",
      "font": "ttf:narrow:8:0.0:1.0:0.12",
      "baseline": 20
     },
     {
      "sprite": "ac",
      "text": "00M",
-     "style": "f8_y3_koukai_ac_s",
+     "style": "f8_y3_koukai_ac_h",
      "font": "ttf:narrow:14:0.0:1.0:0.3",
      "baseline": 22
     },
     {
      "sprite": "ad",
      "text": "00M",
-     "style": "f8_y3_koukai_ad_s",
+     "style": "f8_y3_koukai_ad_h",
      "font": "ttf:narrow:14:0.0:1.0:0.3",
      "baseline": 22
     },
