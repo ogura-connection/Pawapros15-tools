@@ -425,7 +425,7 @@
      0,
      0,
      128,
-     128
+     116
     ],
     [
      27,
@@ -636,8 +636,8 @@
       96
      ],
      "text": "Which file",
-     "style": "c7_am_0d~0_112",
-     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "style": "c7_am_blue~0_112",
+     "font": "ttf:rounded:17:0.0:1.0:0.2",
      "baseline": 24,
      "sprites": [
       "0d"
@@ -653,8 +653,8 @@
       64
      ],
      "text": "Which file",
-     "style": "c7_am_0d~112_115",
-     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "style": "c7_am_blue~112_113",
+     "font": "ttf:rounded:17:0.0:1.0:0.2",
      "baseline": 24,
      "sprites": [
       "0d"
@@ -670,8 +670,8 @@
       32
      ],
      "text": "should hold the",
-     "style": "c7_am_0d~0_128",
-     "font": "ttf:rounded:18:0.0:0.92:0.2",
+     "style": "c7_am_blue~0_128",
+     "font": "ttf:rounded:17:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
       "0d"
@@ -687,8 +687,8 @@
       96
      ],
      "text": "should hold the",
-     "style": "c7_am_0d~128_166",
-     "font": "ttf:rounded:18:0.0:0.92:0.2",
+     "style": "c7_am_blue~128_162",
+     "font": "ttf:rounded:17:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
       "0d"
@@ -704,8 +704,8 @@
       64
      ],
      "text": "Arrange Team?",
-     "style": "c7_am_0d~0_128",
-     "font": "ttf:narrow:18:0.0:0.92:0.2",
+     "style": "c7_am_blue~0_128",
+     "font": "ttf:narrow:17:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
       "0d"
@@ -721,8 +721,8 @@
       96
      ],
      "text": "Arrange Team?",
-     "style": "c7_am_0d~128_141",
-     "font": "ttf:narrow:18:0.0:0.92:0.2",
+     "style": "c7_am_blue~128_135",
+     "font": "ttf:narrow:17:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
       "0d"
@@ -738,8 +738,8 @@
       96
      ],
      "text": "Which file's",
-     "style": "c7_am_0e~0_91",
-     "font": "ttf:rounded:12:0.0:1.0:0.2",
+     "style": "c7_am_blue~0_109",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
      "baseline": 22,
      "sprites": [
       "0e"
@@ -768,9 +768,9 @@
       32
      ],
      "text": "Arrange Team",
-     "style": "c7_am_0e~0_113",
-     "font": "ttf:rounded:12:0.0:1.0:0.2",
-     "baseline": 21,
+     "style": "c7_am_blue~0_128",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 22,
      "sprites": [
       "0e"
      ],
@@ -784,10 +784,14 @@
       128,
       96
      ],
-     "empty": true,
+     "text": "Arrange Team",
+     "style": "c7_am_blue~128_134",
+     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "baseline": 22,
      "sprites": [
       "0e"
-     ]
+     ],
+     "left": 0
     },
     {
      "from": [
@@ -798,8 +802,8 @@
       128
      ],
      "text": "should be deleted?",
-     "style": "c7_am_0e~0_128",
-     "font": "ttf:rounded:12:0.0:0.92:0.2",
+     "style": "c7_am_blue~0_128",
+     "font": "ttf:narrow:14:0.0:0.92:0.2",
      "baseline": 22,
      "sprites": [
       "0e"
@@ -815,8 +819,8 @@
       96
      ],
      "text": "should be deleted?",
-     "style": "c7_am_0e~128_140",
-     "font": "ttf:rounded:12:0.0:0.92:0.2",
+     "style": "c7_am_blue~128_139",
+     "font": "ttf:narrow:14:0.0:0.92:0.2",
      "baseline": 22,
      "sprites": [
       "0e"
@@ -832,7 +836,7 @@
       32
      ],
      "text": "Choose the file",
-     "style": "c7_am_0f~0_128",
+     "style": "c7_am_blue~0_128",
      "font": "ttf:narrow:18:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
@@ -849,7 +853,7 @@
       64
      ],
      "text": "Choose the file",
-     "style": "c7_am_0f~128_141",
+     "style": "c7_am_blue~128_142",
      "font": "ttf:narrow:18:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
@@ -866,7 +870,7 @@
       128
      ],
      "text": "you want",
-     "style": "c7_am_0f",
+     "style": "c7_am_blue",
      "font": "ttf:rounded:18:0.0:1.0:0.2",
      "baseline": 25,
      "sprites": [
@@ -883,7 +887,7 @@
       128
      ],
      "text": "to copy",
-     "style": "c7_am_0f~0_90",
+     "style": "c7_am_blue~0_91",
      "font": "ttf:rounded:18:0.0:1.0:0.2",
      "baseline": 24,
      "sprites": [
@@ -913,13 +917,13 @@
       32
      ],
      "text": "Choose where",
-     "style": "c7_am_10~0_127",
-     "font": "ttf:rounded:19:0.0:1.0:0.2",
-     "baseline": 25,
+     "style": "c7_am_blue~0_122",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "10"
      ],
-     "left": 1
+     "left": 6
     },
     {
      "from": [
@@ -930,9 +934,9 @@
       128
      ],
      "text": "Choose where",
-     "style": "c7_am_10~127_151",
-     "font": "ttf:rounded:19:0.0:1.0:0.2",
-     "baseline": 25,
+     "style": "c7_am_blue~122_146",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "10"
      ],
@@ -947,8 +951,8 @@
       96
      ],
      "text": "Choose where",
-     "style": "c7_am_10~151_181",
-     "font": "ttf:rounded:19:0.0:1.0:0.2",
+     "style": "c7_am_blue~146_171",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
      "baseline": 24,
      "sprites": [
       "10"
@@ -964,13 +968,13 @@
       128
      ],
      "text": "to copy it",
-     "style": "c7_am_10~0_107",
-     "font": "ttf:rounded:19:0.0:1.0:0.2",
-     "baseline": 25,
+     "style": "c7_am_blue~0_105",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "10"
      ],
-     "left": 21
+     "left": 23
     },
     {
      "from": [
@@ -981,9 +985,9 @@
       64
      ],
      "text": "to copy it",
-     "style": "c7_am_10~107_118",
-     "font": "ttf:rounded:19:0.0:1.0:0.2",
-     "baseline": 25,
+     "style": "c7_am_blue~105_113",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "10"
      ],
@@ -998,9 +1002,9 @@
       32
      ],
      "text": "The copy target",
-     "style": "c7_am_11~0_128",
-     "font": "ttf:rounded:19:0.0:0.92:0.2",
-     "baseline": 25,
+     "style": "c7_am_red~0_128",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "11"
      ],
@@ -1015,9 +1019,9 @@
       128
      ],
      "text": "The copy target",
-     "style": "c7_am_11~128_168",
-     "font": "ttf:rounded:19:0.0:0.92:0.2",
-     "baseline": 25,
+     "style": "c7_am_red~128_168",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "11"
      ],
@@ -1032,9 +1036,9 @@
       128
      ],
      "text": "The copy target",
-     "style": "c7_am_11~168_183",
-     "font": "ttf:rounded:19:0.0:0.92:0.2",
-     "baseline": 25,
+     "style": "c7_am_red~168_189",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "11"
      ],
@@ -1049,8 +1053,8 @@
       64
      ],
      "text": "is not",
-     "style": "c7_am_11",
-     "font": "ttf:rounded:19:0.0:1.0:0.2",
+     "style": "c7_am_red",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
      "baseline": 24,
      "sprites": [
       "11"
@@ -1066,9 +1070,9 @@
       128
      ],
      "text": "empty",
-     "style": "c7_am_11",
-     "font": "ttf:rounded:19:0.0:1.0:0.2",
-     "baseline": 25,
+     "style": "c7_am_red",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "11"
      ],
@@ -1083,13 +1087,13 @@
       32
      ],
      "text": "Copy this file?",
-     "style": "c7_am_p24~0_58",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue~0_50",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "12"
      ],
-     "left": 70
+     "left": 78
     },
     {
      "from": [
@@ -1100,9 +1104,9 @@
       64
      ],
      "text": "Copy this file?",
-     "style": "c7_am_p24~58_186",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue~50_178",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "12"
      ],
@@ -1117,9 +1121,9 @@
       96
      ],
      "text": "Copy this file?",
-     "style": "c7_am_p24~186_195",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue~178_179",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "12"
      ],
@@ -1134,13 +1138,13 @@
       128
      ],
      "text": "Yes",
-     "style": "c7_am_p24",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue",
+     "font": "ttf:rounded:17:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "12"
      ],
-     "left": 0
+     "left": 2
     },
     {
      "from": [
@@ -1151,13 +1155,13 @@
       64
      ],
      "text": "No",
-     "style": "c7_am_p24",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue",
+     "font": "ttf:rounded:17:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "12"
      ],
-     "left": 17
+     "left": 19
     },
     {
      "from": [
@@ -1168,13 +1172,13 @@
       96
      ],
      "text": "Save your changes?",
-     "style": "c7_am_p24~0_123",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue~0_112",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "13"
      ],
-     "left": 5
+     "left": 16
     },
     {
      "from": [
@@ -1185,9 +1189,9 @@
       128
      ],
      "text": "Save your changes?",
-     "style": "c7_am_p24~123_251",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue~112_240",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "13"
      ],
@@ -1202,9 +1206,9 @@
       96
      ],
      "text": "Save your changes?",
-     "style": "c7_am_p24~251_277",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue~240_254",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "13"
      ],
@@ -1219,13 +1223,13 @@
       128
      ],
      "text": "Yes",
-     "style": "c7_am_p24",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue",
+     "font": "ttf:rounded:17:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "13"
      ],
-     "left": 0
+     "left": 2
     },
     {
      "from": [
@@ -1236,13 +1240,13 @@
       64
      ],
      "text": "No",
-     "style": "c7_am_p24",
-     "font": "ttf:rounded:21:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue",
+     "font": "ttf:rounded:17:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "13"
      ],
-     "left": 17
+     "left": 19
     },
     {
      "from": [
@@ -1253,13 +1257,13 @@
       128
      ],
      "text": "Delete this team?",
-     "style": "c7_am_p24~0_124",
-     "font": "ttf:rounded:25:0.0:0.92:0.2",
-     "baseline": 30,
+     "style": "c7_am_blue~0_108",
+     "font": "ttf:rounded:20:0.0:1.0:0.2",
+     "baseline": 26,
      "sprites": [
       "28"
      ],
-     "left": 4
+     "left": 20
     },
     {
      "from": [
@@ -1270,9 +1274,9 @@
       32
      ],
      "text": "Delete this team?",
-     "style": "c7_am_p24~124_252",
-     "font": "ttf:rounded:25:0.0:0.92:0.2",
-     "baseline": 30,
+     "style": "c7_am_blue~108_231",
+     "font": "ttf:rounded:20:0.0:1.0:0.2",
+     "baseline": 26,
      "sprites": [
       "28"
      ],
@@ -1286,14 +1290,10 @@
       48,
       96
      ],
-     "text": "Delete this team?",
-     "style": "c7_am_p24~252_262",
-     "font": "ttf:rounded:25:0.0:0.92:0.2",
-     "baseline": 30,
+     "empty": true,
      "sprites": [
       "28"
-     ],
-     "left": 0
+     ]
     },
     {
      "from": [
@@ -1304,13 +1304,13 @@
       128
      ],
      "text": "Yes",
-     "style": "c7_am_p24",
-     "font": "ttf:rounded:22:0.0:1.0:0.2",
-     "baseline": 29,
+     "style": "c7_am_blue",
+     "font": "ttf:rounded:17:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "28"
      ],
-     "left": -2
+     "left": 2
     },
     {
      "from": [
@@ -1321,13 +1321,13 @@
       64
      ],
      "text": "No",
-     "style": "c7_am_p24",
-     "font": "ttf:rounded:22:0.0:1.0:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue",
+     "font": "ttf:rounded:17:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "28"
      ],
-     "left": 17
+     "left": 19
     },
     {
      "from": [
@@ -1440,13 +1440,13 @@
       32
      ],
      "text": "Which team",
-     "style": "c7_am_p24~0_128",
-     "font": "ttf:rounded:19:0.0:0.92:0.2",
-     "baseline": 26,
+     "style": "c7_am_blue~0_127",
+     "font": "ttf:rounded:18:0.0:0.92:0.2",
+     "baseline": 24,
      "sprites": [
       "57"
      ],
-     "left": 0
+     "left": 1
     },
     {
      "from": [
@@ -1457,9 +1457,9 @@
       128
      ],
      "text": "Which team",
-     "style": "c7_am_p24~128_136",
-     "font": "ttf:rounded:19:0.0:0.92:0.2",
-     "baseline": 26,
+     "style": "c7_am_blue~127_131",
+     "font": "ttf:rounded:18:0.0:0.92:0.2",
+     "baseline": 24,
      "sprites": [
       "57"
      ],
@@ -1474,13 +1474,13 @@
       64
      ],
      "text": "should be the base team?",
-     "style": "c7_am_p24~0_128",
-     "font": "ttf:narrow:20:0.0:0.92:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue~0_124",
+     "font": "ttf:narrow:19:0.0:0.92:0.2",
+     "baseline": 26,
      "sprites": [
       "57"
      ],
-     "left": 0
+     "left": 4
     },
     {
      "from": [
@@ -1491,9 +1491,9 @@
       96
      ],
      "text": "should be the base team?",
-     "style": "c7_am_p24~128_256",
-     "font": "ttf:narrow:20:0.0:0.92:0.2",
-     "baseline": 28,
+     "style": "c7_am_blue~124_250",
+     "font": "ttf:narrow:19:0.0:0.92:0.2",
+     "baseline": 26,
      "sprites": [
       "57"
      ],
@@ -1507,14 +1507,10 @@
       40,
       128
      ],
-     "text": "should be the base team?",
-     "style": "c7_am_p24~256_260",
-     "font": "ttf:narrow:20:0.0:0.92:0.2",
-     "baseline": 28,
+     "empty": true,
      "sprites": [
       "57"
-     ],
-     "left": 0
+     ]
     },
     {
      "from": [
