@@ -39,3 +39,5 @@ STYLES["d9_od_name"] = ringfill([15, 15, 15, 15, 15, 15], [5, 5], [5])
 STYLES["d9_od_thin"] = ringfill([15] * 6, [5], [5])
 # ---- orepena
 STYLES["d9_m16_plate"] = d9_ellipse(5, 15, 48, 20)
+# ---- rec_room
+STYLES["d9_rr_npk28"] = flat([14] * 6, cut=3)
