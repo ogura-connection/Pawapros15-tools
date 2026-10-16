@@ -165,14 +165,3 @@ def _win(style, c0, c1):
         return out, b
     return cut
 
-STYLES["aow_help_h~0_0"] = _win("aow_help_h", 0, 0)
-STYLES["aow_help_h~0_19"] = _win("aow_help_h", 0, 19)
-STYLES["aow_help_h~0_27"] = _win("aow_help_h", 0, 27)
-STYLES["aow_help_h~0_65"] = _win("aow_help_h", 0, 65)
-STYLES["aow_help_h~19_51"] = _win("aow_help_h", 19, 51)
-STYLES["aow_help_h~25_113"] = _win("aow_help_h", 25, 113)
-STYLES["aow_help_h~49_137"] = _win("aow_help_h", 49, 137)
-STYLES["aow_help_h~62_150"] = _win("aow_help_h", 62, 150)
-STYLES["aow_help_h~113_4096"] = _win("aow_help_h", 113, 4096)
-STYLES["aow_help_h~137_4096"] = _win("aow_help_h", 137, 4096)
-STYLES["aow_help_h~150_4096"] = _win("aow_help_h", 150, 4096)

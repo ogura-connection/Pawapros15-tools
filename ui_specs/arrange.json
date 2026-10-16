@@ -1,0 +1,2811 @@
+{
+ "arc": "arrange.arc",
+ "repack": [
+  {
+   "bank": "s3_s",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     2,
+     0,
+     48,
+     48,
+     72
+    ],
+    [
+     2,
+     48,
+     48,
+     96,
+     72
+    ],
+    [
+     2,
+     0,
+     72,
+     56,
+     96
+    ],
+    [
+     1,
+     0,
+     88,
+     80,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      88,
+      80,
+      112
+     ],
+     "text": "Basic Lineup",
+     "style": "c7_s3_02_0",
+     "font": "ttf:rounded:10:0.0:0.85:0.1",
+     "baseline": 0,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Save the Arrange Team as it is now?",
+     "style": "c7_s3_s_13_p~0_128",
+     "font": "ttf:rounded:15:0.0:0.85:0.1",
+     "baseline": 18,
+     "sprites": [
+      "13"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "Save the Arrange Team as it is now?",
+     "style": "c7_s3_s_13_p~128_256",
+     "font": "ttf:rounded:15:0.0:0.85:0.1",
+     "baseline": 18,
+     "sprites": [
+      "13"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      48,
+      72
+     ],
+     "text": "Save the Arrange Team as it is now?",
+     "style": "c7_s3_s_13_p~256_298",
+     "font": "ttf:rounded:15:0.0:0.85:0.1",
+     "baseline": 18,
+     "sprites": [
+      "13"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      48,
+      48,
+      96,
+      72
+     ],
+     "text": "Yes",
+     "style": "c7_s3_s_13_p",
+     "font": "ttf:rounded:15:0.0:1.0:0.1",
+     "baseline": 20,
+     "sprites": [
+      "13"
+     ],
+     "left": 3
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      56,
+      96
+     ],
+     "text": "No",
+     "style": "c7_s3_s_13_p",
+     "font": "ttf:rounded:15:0.0:1.0:0.1",
+     "baseline": 20,
+     "sprites": [
+      "13"
+     ],
+     "left": 13
+    }
+   ],
+   "name": "s3_s",
+   "share": true
+  },
+  {
+   "bank": "s3_amz",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     56,
+     48,
+     128,
+     64
+    ],
+    [
+     4,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     40,
+     64
+    ],
+    [
+     6,
+     0,
+     32,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      0,
+      64,
+      128,
+      128
+     ],
+     "text": "Arrange",
+     "style": "c7_amz_03_0",
+     "font": "ttf:rounded:28:0.0:1.0:0.35",
+     "baseline": 0,
+     "left": 0
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      40,
+      64
+     ],
+     "text": "Arrange",
+     "style": "c7_amz_03_1",
+     "font": "ttf:rounded:28:0.0:1.0:0.35",
+     "baseline": 0,
+     "left": 0
+    }
+   ],
+   "name": "s3_amz",
+   "share": true
+  },
+  {
+   "bank": "s3_am",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     5,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     5,
+     88,
+     64,
+     128,
+     80
+    ],
+    [
+     9,
+     48,
+     0,
+     128,
+     88
+    ],
+    [
+     9,
+     0,
+     40,
+     48,
+     128
+    ],
+    [
+     9,
+     48,
+     88,
+     64,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     14,
+     0,
+     96,
+     96,
+     128
+    ],
+    [
+     14,
+     120,
+     96,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     16,
+     64,
+     48,
+     112,
+     72
+    ],
+    [
+     16,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     16,
+     64,
+     24,
+     128,
+     48
+    ],
+    [
+     16,
+     0,
+     72,
+     48,
+     96
+    ],
+    [
+     16,
+     0,
+     96,
+     48,
+     120
+    ],
+    [
+     17,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     18,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     19,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     20,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     21,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     22,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     23,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     24,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     25,
+     0,
+     96,
+     56,
+     120
+    ],
+    [
+     26,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     27,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     28,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     29,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     30,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     31,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     32,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     33,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     34,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     35,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     104,
+     40,
+     128
+    ],
+    [
+     1,
+     40,
+     104,
+     80,
+     128
+    ],
+    [
+     6,
+     0,
+     48,
+     112,
+     96
+    ],
+    [
+     7,
+     0,
+     64,
+     72,
+     104
+    ],
+    [
+     7,
+     72,
+     64,
+     128,
+     104
+    ],
+    [
+     7,
+     0,
+     104,
+     16,
+     128
+    ],
+    [
+     8,
+     0,
+     80,
+     56,
+     120
+    ],
+    [
+     8,
+     56,
+     80,
+     112,
+     120
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     12,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     12,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     12,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     36,
+     0,
+     96,
+     64,
+     120
+    ],
+    [
+     36,
+     64,
+     96,
+     128,
+     120
+    ],
+    [
+     38,
+     40,
+     0,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Create",
+     "style": "c7_s3_am_00",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": -106,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "sprite": "01",
+     "text": "Delete",
+     "style": "c7_s3_am_01",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": -108,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Copy",
+     "style": "c7_s3_am_02",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": -108,
+     "pages": [
+      15
+     ]
+    },
+    {
+     "from": [
+      21,
+      0,
+      64,
+      112,
+      96
+     ],
+     "text": "Which file",
+     "style": "c7_am_0d~0_90",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "0d"
+     ],
+     "left": 22
+    },
+    {
+     "from": [
+      24,
+      80,
+      32,
+      120,
+      64
+     ],
+     "text": "Which file",
+     "style": "c7_am_0d~90_103",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "0d"
+     ],
+     "left": 7
+    },
+    {
+     "from": [
+      22,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "should hold the",
+     "style": "c7_am_0d~0_124",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 23,
+     "sprites": [
+      "0d"
+     ],
+     "left": 4
+    },
+    {
+     "from": [
+      20,
+      56,
+      64,
+      128,
+      96
+     ],
+     "text": "should hold the",
+     "style": "c7_am_0d~124_161",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 23,
+     "sprites": [
+      "0d"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      22,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Arrange Team?",
+     "style": "c7_am_0d~0_128",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 24,
+     "sprites": [
+      "0d"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      24,
+      64,
+      64,
+      72,
+      96
+     ],
+     "text": "Arrange Team?",
+     "style": "c7_am_0d~128_138",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 24,
+     "sprites": [
+      "0d"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      21,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "Which file's",
+     "style": "c7_am_0e~0_98",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "sprites": [
+      "0e"
+     ],
+     "left": 24
+    },
+    {
+     "from": [
+      21,
+      72,
+      32,
+      120,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "0e"
+     ]
+    },
+    {
+     "from": [
+      22,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Arrange Team",
+     "style": "c7_am_0e~0_104",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "sprites": [
+      "0e"
+     ],
+     "left": 24
+    },
+    {
+     "from": [
+      20,
+      56,
+      64,
+      128,
+      96
+     ],
+     "text": "Arrange Team",
+     "style": "c7_am_0e~104_121",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "sprites": [
+      "0e"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      21,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "should be deleted?",
+     "style": "c7_am_0e~0_128",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 22,
+     "sprites": [
+      "0e"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      24,
+      64,
+      64,
+      72,
+      96
+     ],
+     "text": "should be deleted?",
+     "style": "c7_am_0e~128_139",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 22,
+     "sprites": [
+      "0e"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      21,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Choose the file",
+     "style": "c7_am_0f~0_128",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 23,
+     "sprites": [
+      "0f"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      21,
+      0,
+      32,
+      24,
+      64
+     ],
+     "text": "Choose the file",
+     "style": "c7_am_0f~128_135",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 23,
+     "sprites": [
+      "0f"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      18,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "you want",
+     "style": "c7_am_0f",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "0f"
+     ],
+     "left": 5
+    },
+    {
+     "from": [
+      20,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "to copy",
+     "style": "c7_am_0f~0_80",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "0f"
+     ],
+     "left": 40
+    },
+    {
+     "from": [
+      21,
+      24,
+      32,
+      72,
+      64
+     ],
+     "empty": true,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      20,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Choose where",
+     "style": "c7_am_10~0_113",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "10"
+     ],
+     "left": 15
+    },
+    {
+     "from": [
+      19,
+      56,
+      96,
+      80,
+      128
+     ],
+     "text": "Choose where",
+     "style": "c7_am_10~113_137",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "10"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      20,
+      24,
+      64,
+      56,
+      96
+     ],
+     "text": "Choose where",
+     "style": "c7_am_10~137_153",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 22,
+     "sprites": [
+      "10"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      20,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "to copy it",
+     "style": "c7_am_10~0_98",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "10"
+     ],
+     "left": 30
+    },
+    {
+     "from": [
+      21,
+      24,
+      32,
+      72,
+      64
+     ],
+     "text": "to copy it",
+     "style": "c7_am_10~98_100",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "10"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      20,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "The copy target",
+     "style": "c7_am_11~0_118",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "11"
+     ],
+     "left": 10
+    },
+    {
+     "from": [
+      19,
+      56,
+      96,
+      96,
+      128
+     ],
+     "text": "The copy target",
+     "style": "c7_am_11~118_158",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "11"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      19,
+      56,
+      96,
+      128,
+      128
+     ],
+     "text": "The copy target",
+     "style": "c7_am_11~158_165",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "11"
+     ],
+     "left": 40
+    },
+    {
+     "from": [
+      20,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "is not",
+     "style": "c7_am_11",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 22,
+     "sprites": [
+      "11"
+     ],
+     "left": 31
+    },
+    {
+     "from": [
+      17,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "empty",
+     "style": "c7_am_11",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "11"
+     ],
+     "left": 25
+    },
+    {
+     "from": [
+      23,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Copy this file?",
+     "style": "c7_am_p24~0_35",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "12"
+     ],
+     "left": 93
+    },
+    {
+     "from": [
+      23,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Copy this file?",
+     "style": "c7_am_p24~35_148",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "12"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      23,
+      0,
+      64,
+      112,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "12"
+     ]
+    },
+    {
+     "from": [
+      19,
+      0,
+      96,
+      56,
+      128
+     ],
+     "text": "Yes",
+     "style": "c7_am_p24",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "12"
+     ],
+     "left": 5
+    },
+    {
+     "from": [
+      24,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "No",
+     "style": "c7_am_p24",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "12"
+     ],
+     "left": 21
+    },
+    {
+     "from": [
+      22,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "Save your changes?",
+     "style": "c7_am_p24~0_90",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 25,
+     "sprites": [
+      "13"
+     ],
+     "left": 38
+    },
+    {
+     "from": [
+      23,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Save your changes?",
+     "style": "c7_am_p24~90_210",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 25,
+     "sprites": [
+      "13"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      24,
+      0,
+      64,
+      32,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "13"
+     ]
+    },
+    {
+     "from": [
+      19,
+      0,
+      96,
+      56,
+      128
+     ],
+     "text": "Yes",
+     "style": "c7_am_p24",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "13"
+     ],
+     "left": 5
+    },
+    {
+     "from": [
+      24,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "No",
+     "style": "c7_am_p24",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "13"
+     ],
+     "left": 21
+    },
+    {
+     "from": [
+      22,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Delete this team?",
+     "style": "c7_am_p24~0_84",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "28"
+     ],
+     "left": 44
+    },
+    {
+     "from": [
+      24,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Delete this team?",
+     "style": "c7_am_p24~84_182",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "28"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      24,
+      32,
+      64,
+      48,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "28"
+     ]
+    },
+    {
+     "from": [
+      19,
+      0,
+      96,
+      56,
+      128
+     ],
+     "text": "Yes",
+     "style": "c7_am_p24",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "28"
+     ],
+     "left": 5
+    },
+    {
+     "from": [
+      24,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "No",
+     "style": "c7_am_p24",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "28"
+     ],
+     "left": 21
+    },
+    {
+     "from": [
+      30,
+      48,
+      40,
+      128,
+      80
+     ],
+     "text": "Save your changes?",
+     "style": "c7_am_p51~0_30",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "54"
+     ],
+     "left": 50
+    },
+    {
+     "from": [
+      30,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Save your changes?",
+     "style": "c7_am_p51~30_158",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "54"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      31,
+      0,
+      0,
+      104,
+      40
+     ],
+     "text": "Save your changes?",
+     "style": "c7_am_p51~158_212",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "54"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      30,
+      24,
+      0,
+      88,
+      40
+     ],
+     "text": "Yes",
+     "style": "c7_am_p51",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 27,
+     "sprites": [
+      "54"
+     ],
+     "left": 10
+    },
+    {
+     "from": [
+      30,
+      88,
+      0,
+      128,
+      40
+     ],
+     "text": "No",
+     "style": "c7_am_p51~0_12",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "54"
+     ],
+     "left": 28
+    },
+    {
+     "from": [
+      30,
+      0,
+      40,
+      48,
+      80
+     ],
+     "text": "No",
+     "style": "c7_am_p51~12_32",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "54"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      33,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Which team should be",
+     "style": "c7_am_p24~0_128",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 22,
+     "sprites": [
+      "57"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      33,
+      40,
+      96,
+      64,
+      128
+     ],
+     "text": "Which team should be",
+     "style": "c7_am_p24~128_135",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 22,
+     "sprites": [
+      "57"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      33,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "the base team?",
+     "style": "c7_am_p24~0_54",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "57"
+     ],
+     "left": 74
+    },
+    {
+     "from": [
+      33,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "the base team?",
+     "style": "c7_am_p24~54_111",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 24,
+     "sprites": [
+      "57"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      33,
+      0,
+      96,
+      40,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "57"
+     ]
+    },
+    {
+     "from": [
+      26,
+      88,
+      0,
+      128,
+      40
+     ],
+     "empty": true,
+     "sprites": [
+      "50"
+     ]
+    },
+    {
+     "from": [
+      26,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Too many foreign players",
+     "style": "c7_am_p51~0_115",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 27,
+     "sprites": [
+      "50"
+     ],
+     "left": 13
+    },
+    {
+     "from": [
+      26,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Too many foreign players",
+     "style": "c7_am_p51~115_243",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 27,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      27,
+      0,
+      0,
+      72,
+      40
+     ],
+     "text": "Too many foreign players",
+     "style": "c7_am_p51~243_264",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 27,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      27,
+      72,
+      0,
+      128,
+      40
+     ],
+     "text": "for the 1st Team!",
+     "style": "c7_am_p51~0_28",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 28
+    },
+    {
+     "from": [
+      27,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "for the 1st Team!",
+     "style": "c7_am_p51~28_156",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      27,
+      0,
+      80,
+      56,
+      120
+     ],
+     "text": "for the 1st Team!",
+     "style": "c7_am_p51~156_179",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      27,
+      56,
+      80,
+      128,
+      120
+     ],
+     "text": "If they join Pennant,",
+     "style": "c7_am_p51~0_43",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 29
+    },
+    {
+     "from": [
+      28,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "If they join Pennant,",
+     "style": "c7_am_p51~43_171",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      28,
+      0,
+      40,
+      72,
+      80
+     ],
+     "text": "If they join Pennant,",
+     "style": "c7_am_p51~171_209",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      28,
+      72,
+      40,
+      128,
+      80
+     ],
+     "text": "the import limit can't be set.",
+     "style": "c7_am_p51~0_7",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 49
+    },
+    {
+     "from": [
+      28,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "the import limit can't be set.",
+     "style": "c7_am_p51~7_135",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      29,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "the import limit can't be set.",
+     "style": "c7_am_p51~135_263",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      29,
+      0,
+      40,
+      80,
+      80
+     ],
+     "text": "the import limit can't be set.",
+     "style": "c7_am_p51~263_292",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      29,
+      80,
+      40,
+      128,
+      80
+     ],
+     "text": "Is this OK?",
+     "style": "c7_am_p51~0_6",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 27,
+     "sprites": [
+      "50"
+     ],
+     "left": 42
+    },
+    {
+     "from": [
+      29,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Is this OK?",
+     "style": "c7_am_p51~6_115",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 27,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      30,
+      0,
+      0,
+      24,
+      40
+     ],
+     "empty": true,
+     "sprites": [
+      "50"
+     ]
+    },
+    {
+     "from": [
+      30,
+      24,
+      0,
+      88,
+      40
+     ],
+     "text": "Yes",
+     "style": "c7_am_p51",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 27,
+     "sprites": [
+      "50"
+     ],
+     "left": 10
+    },
+    {
+     "from": [
+      30,
+      88,
+      0,
+      128,
+      40
+     ],
+     "text": "No",
+     "style": "c7_am_p51~0_12",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 28
+    },
+    {
+     "from": [
+      30,
+      0,
+      40,
+      48,
+      80
+     ],
+     "text": "No",
+     "style": "c7_am_p51~12_32",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "50"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      31,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Players with an original uniform",
+     "style": "c7_am_p51~0_128",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      31,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Players with an original uniform",
+     "style": "c7_am_p51~128_256",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      32,
+      0,
+      0,
+      48,
+      40
+     ],
+     "text": "Players with an original uniform",
+     "style": "c7_am_p51~256_304",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      32,
+      48,
+      0,
+      128,
+      40
+     ],
+     "text": "set can wear it",
+     "style": "c7_am_p51~0_43",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 37
+    },
+    {
+     "from": [
+      32,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "set can wear it",
+     "style": "c7_am_p51~43_157",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      32,
+      0,
+      80,
+      24,
+      120
+     ],
+     "empty": true,
+     "sprites": [
+      "52"
+     ]
+    },
+    {
+     "from": [
+      32,
+      24,
+      80,
+      128,
+      120
+     ],
+     "text": "in their games",
+     "style": "c7_am_p51~0_21",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 83
+    },
+    {
+     "from": [
+      34,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "in their games",
+     "style": "c7_am_p51~21_149",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      34,
+      0,
+      40,
+      88,
+      80
+     ],
+     "text": "in their games",
+     "style": "c7_am_p51~149_150",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      34,
+      88,
+      40,
+      128,
+      80
+     ],
+     "text": "(except Pennant)",
+     "style": "c7_am_p51~0_40",
+     "font": "ttf:narrow:16:0.0:0.92:0.3",
+     "baseline": 28,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      34,
+      0,
+      80,
+      104,
+      120
+     ],
+     "text": "(except Pennant)",
+     "style": "c7_am_p51~40_140",
+     "font": "ttf:narrow:16:0.0:0.92:0.3",
+     "baseline": 28,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      34,
+      104,
+      80,
+      128,
+      120
+     ],
+     "text": "Wear It",
+     "style": "c7_am_p51~0_19",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 5
+    },
+    {
+     "from": [
+      35,
+      0,
+      0,
+      64,
+      40
+     ],
+     "text": "Wear It",
+     "style": "c7_am_p51~19_79",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      35,
+      64,
+      0,
+      128,
+      40
+     ],
+     "text": "Don't",
+     "style": "c7_am_p51~0_35",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 25,
+     "sprites": [
+      "52"
+     ],
+     "left": 29
+    },
+    {
+     "from": [
+      35,
+      0,
+      40,
+      56,
+      72
+     ],
+     "text": "Don't",
+     "style": "c7_am_p51~35_58",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 25,
+     "sprites": [
+      "52"
+     ],
+     "left": 0
+    },
+    {
+     "sprite": "1c",
+     "text": "Original\nTeam",
+     "style": "c7_s3_am_1c",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 33
+    },
+    {
+     "sprite": "1d",
+     "text": "Pitcher\nArrange",
+     "style": "c7_s3_am_1d",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 32
+    },
+    {
+     "sprite": "1e",
+     "text": "Fielder\nArrange",
+     "style": "c7_s3_am_1e",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 32
+    },
+    {
+     "sprite": "1f",
+     "text": "Usage\nSettings",
+     "style": "c7_s3_am_1f_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.2",
+     "baseline": 30
+    },
+    {
+     "sprite": "20",
+     "text": "Roster\nSettings",
+     "style": "c7_s3_am_20_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.2",
+     "baseline": 30
+    },
+    {
+     "sprite": "21",
+     "text": "Player\nRatings",
+     "style": "c7_s3_am_21",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 32
+    },
+    {
+     "sprite": "23",
+     "text": "Save",
+     "style": "c7_s3_am_23",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 35
+    },
+    {
+     "sprite": "29",
+     "text": "Data View",
+     "style": "c7_am_29_y",
+     "font": "ttf:narrow:15:0.0:0.85:0.0",
+     "baseline": 18
+    },
+    {
+     "sprite": "2a",
+     "text": "Team View",
+     "style": "c7_am_2a_y",
+     "font": "ttf:narrow:14:0.0:0.85:0.0",
+     "slices": true,
+     "slice_width": 36,
+     "dy": -1
+    },
+    {
+     "from": [
+      1,
+      0,
+      104,
+      40,
+      128
+     ],
+     "text": "1st Team",
+     "style": "c7_am_19",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 18,
+     "sprites": [
+      "19"
+     ],
+     "left": -2
+    },
+    {
+     "from": [
+      1,
+      40,
+      104,
+      80,
+      128
+     ],
+     "text": "2nd Team",
+     "style": "c7_am_1a",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 16,
+     "sprites": [
+      "1a"
+     ],
+     "left": -2
+    },
+    {
+     "from": [
+      24,
+      0,
+      96,
+      56,
+      120
+     ],
+     "text": "Class",
+     "style": "c7_am_59",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 19,
+     "sprites": [
+      "59"
+     ],
+     "left": -2
+    },
+    {
+     "from": [
+      24,
+      56,
+      96,
+      112,
+      120
+     ],
+     "text": "Class",
+     "style": "c7_am_5a",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 18,
+     "sprites": [
+      "5a"
+     ],
+     "left": -1
+    },
+    {
+     "from": [
+      25,
+      0,
+      96,
+      56,
+      120
+     ],
+     "text": "Class",
+     "style": "c7_am_5b",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 18,
+     "sprites": [
+      "5b"
+     ],
+     "left": -2
+    },
+    {
+     "from": [
+      36,
+      0,
+      96,
+      64,
+      120
+     ],
+     "text": "Class",
+     "style": "c7_am_5c",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 18,
+     "sprites": [
+      "5c"
+     ],
+     "left": -1
+    },
+    {
+     "from": [
+      36,
+      64,
+      96,
+      128,
+      120
+     ],
+     "text": "Class",
+     "style": "c7_am_5d",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 18,
+     "sprites": [
+      "5d"
+     ],
+     "left": -1
+    },
+    {
+     "sprite": "2b",
+     "text": "Create an original team",
+     "style": "c7_s3_am_2b_p",
+     "font": "ttf:rounded:16:0.0:1.0:0.1",
+     "slices": true,
+     "slice_width": 81,
+     "dy": 3,
+     "align": "left"
+    },
+    {
+     "sprite": "2c",
+     "text": "Add pitchers from other teams",
+     "style": "c7_s3_am_2c_p",
+     "font": "ttf:rounded:16:0.0:1.0:0.1",
+     "slices": true,
+     "slice_width": 53,
+     "dy": 3,
+     "align": "left"
+    },
+    {
+     "sprite": "2d",
+     "text": "Add fielders from other teams",
+     "style": "c7_s3_am_2d_p",
+     "font": "ttf:rounded:16:0.0:1.0:0.1",
+     "slices": true,
+     "slice_width": 52,
+     "dy": 1,
+     "align": "left"
+    },
+    {
+     "sprite": "2e",
+     "text": "Set team policy, usage and lineup",
+     "style": "c7_s3_am_2e_p",
+     "font": "ttf:rounded:16:0.0:1.0:0.1",
+     "slices": true,
+     "slice_width": 115,
+     "dy": 3,
+     "align": "left"
+    },
+    {
+     "sprite": "2f",
+     "text": "Set voices, numbers, gear and fight songs",
+     "style": "c7_s3_am_2f_p",
+     "font": "ttf:rounded:16:0.0:0.85:0.1",
+     "slices": true,
+     "slice_width": 123,
+     "dy": 3,
+     "align": "left"
+    },
+    {
+     "sprite": "30",
+     "text": "Check players' detailed ratings",
+     "style": "c7_s3_am_30_p",
+     "font": "ttf:rounded:16:0.0:1.0:0.1",
+     "slices": true,
+     "slice_width": 106,
+     "dy": 3,
+     "align": "left"
+    },
+    {
+     "sprite": "32",
+     "text": "Save the Arrange Team",
+     "style": "c7_s3_am_32_p",
+     "font": "ttf:rounded:16:0.0:1.0:0.1",
+     "slices": true,
+     "slice_width": 48,
+     "dy": 3,
+     "align": "left"
+    },
+    {
+     "sprite": "41",
+     "text": "Yomiuri Giants",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 78,
+     "dy": 0
+    },
+    {
+     "sprite": "42",
+     "text": "Chunichi Dragons",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 80,
+     "dy": 4
+    },
+    {
+     "sprite": "43",
+     "text": "Hiroshima Toyo Carp",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:14:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 83,
+     "dy": 2
+    },
+    {
+     "sprite": "44",
+     "text": "Tokyo Yakult Swallows",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 110,
+     "dy": 4
+    },
+    {
+     "sprite": "45",
+     "text": "Yokohama BayStars",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 98,
+     "dy": 4
+    },
+    {
+     "sprite": "46",
+     "text": "Hanshin Tigers",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 80,
+     "dy": 4
+    },
+    {
+     "sprite": "47",
+     "text": "Tohoku Rakuten Golden Eagles",
+     "style": "c7_am_names",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 112,
+     "dy": 2
+    },
+    {
+     "sprite": "48",
+     "text": "Hokkaido Nippon-Ham Fighters",
+     "style": "c7_am_names",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 111,
+     "dy": 2
+    },
+    {
+     "sprite": "49",
+     "text": "Saitama Seibu Lions",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 107,
+     "dy": 1
+    },
+    {
+     "sprite": "4a",
+     "text": "Orix Buffaloes",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 76,
+     "dy": 1
+    },
+    {
+     "sprite": "4b",
+     "text": "Chiba Lotte Marines",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 107,
+     "dy": 2
+    },
+    {
+     "sprite": "4c",
+     "text": "Fukuoka SoftBank Hawks",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:15:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 107,
+     "dy": 1
+    },
+    {
+     "sprite": "4d",
+     "text": "All-Central",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 38,
+     "dy": 2
+    },
+    {
+     "sprite": "4e",
+     "text": "All-Pacific",
+     "style": "c7_am_names",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 55,
+     "dy": 2
+    },
+    {
+     "from": [
+      5,
+      88,
+      64,
+      128,
+      80
+     ],
+     "text": "Velo",
+     "style": "c7_am_33_38",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "33"
+     ],
+     "left": 5
+    },
+    {
+     "from": [
+      5,
+      80,
+      32,
+      120,
+      48
+     ],
+     "empty": true,
+     "sprites": [
+      "33"
+     ]
+    },
+    {
+     "from": [
+      5,
+      40,
+      32,
+      80,
+      48
+     ],
+     "text": "Ctrl",
+     "style": "c7_am_33_38",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 22,
+     "sprites": [
+      "33"
+     ],
+     "left": 10
+    },
+    {
+     "from": [
+      5,
+      40,
+      80,
+      80,
+      96
+     ],
+     "text": "Stam",
+     "style": "c7_am_33_38",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "33"
+     ],
+     "left": 3
+    },
+    {
+     "from": [
+      5,
+      80,
+      80,
+      120,
+      96
+     ],
+     "text": "Break",
+     "style": "c7_am_33_38",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "sprites": [
+      "33"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      40,
+      112
+     ],
+     "text": "Traj",
+     "style": "c7_am_33_39",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "33"
+     ],
+     "left": 8
+    },
+    {
+     "from": [
+      5,
+      0,
+      112,
+      40,
+      128
+     ],
+     "text": "Con",
+     "style": "c7_am_33_39",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "33"
+     ],
+     "left": 7
+    },
+    {
+     "from": [
+      5,
+      40,
+      112,
+      80,
+      128
+     ],
+     "text": "Pow",
+     "style": "c7_am_33_39",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "33"
+     ],
+     "left": 5
+    },
+    {
+     "from": [
+      5,
+      40,
+      96,
+      80,
+      112
+     ],
+     "text": "Spd",
+     "style": "c7_am_33_39",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 16,
+     "sprites": [
+      "33"
+     ],
+     "left": 7
+    },
+    {
+     "from": [
+      5,
+      80,
+      96,
+      120,
+      112
+     ],
+     "text": "Arm",
+     "style": "c7_am_33_39",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 16,
+     "sprites": [
+      "33"
+     ],
+     "left": 6
+    },
+    {
+     "from": [
+      5,
+      80,
+      112,
+      120,
+      128
+     ],
+     "text": "Fld",
+     "style": "c7_am_33_39",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "33"
+     ],
+     "left": 10
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      112,
+      96
+     ],
+     "text": "-",
+     "style": "c7_am_33_noi",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 0,
+     "sprites": [
+      "33"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      5,
+      0,
+      48,
+      16,
+      64
+     ],
+     "text": "Rank (of",
+     "style": "c7_am_34",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": 14,
+     "sprites": [
+      "34"
+     ],
+     "left": -36
+    },
+    {
+     "from": [
+      5,
+      16,
+      48,
+      120,
+      64
+     ],
+     "text": "teams)",
+     "style": "c7_am_34",
+     "font": "ttf:narrow:12:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "34"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      56,
+      16
+     ],
+     "text": "Starters",
+     "style": "c7_am_34",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "34"
+     ],
+     "left": 4
+    },
+    {
+     "from": [
+      5,
+      72,
+      16,
+      112,
+      32
+     ],
+     "text": "All Pitchers",
+     "style": "c7_am_34",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "34"
+     ],
+     "left": 2
+    },
+    {
+     "from": [
+      5,
+      0,
+      16,
+      72,
+      32
+     ],
+     "text": "Starting Fielders",
+     "style": "c7_am_34",
+     "font": "ttf:narrow:10:0.0:0.85:0.1",
+     "baseline": 14,
+     "sprites": [
+      "34"
+     ],
+     "left": 3
+    },
+    {
+     "from": [
+      5,
+      0,
+      32,
+      40,
+      48
+     ],
+     "text": "All Fielders",
+     "style": "c7_am_34",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "34"
+     ],
+     "left": 2
+    },
+    {
+     "from": [
+      5,
+      112,
+      0,
+      128,
+      16
+     ],
+     "text": "-player avg",
+     "style": "c7_am_34~0_14",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": 16,
+     "sprites": [
+      "34"
+     ],
+     "left": 2
+    },
+    {
+     "from": [
+      5,
+      64,
+      0,
+      88,
+      16
+     ],
+     "text": "-player avg",
+     "style": "c7_am_34~14_66",
+     "font": "ttf:narrow:11:0.0:1.0:0.1",
+     "baseline": 15,
+     "sprites": [
+      "34"
+     ],
+     "left": 1
+    }
+   ],
+   "name": "s3_am",
+   "share": true
+  }
+ ]
+}
