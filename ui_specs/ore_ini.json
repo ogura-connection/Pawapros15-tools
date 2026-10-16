@@ -5260,6 +5260,34 @@
     11,
     11
    ]
+  },
+  {
+   "bank": "y4_bsta_opd",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "My Life",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_ml_1"
+  },
+  {
+   "bank": "y4_bsta_opd",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "My Life",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "b9_ml_2"
   }
  ]
 }

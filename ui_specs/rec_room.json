@@ -11604,6 +11604,82 @@
    "name": "g3_sm",
    "share": true,
    "sprites": "g3_top#4"
+  },
+  {
+   "bank": "g3_npk#20",
+   "palette": 0,
+   "style": "d9_rr_npk28",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     28,
+     0,
+     48,
+     128,
+     64
+    ],
+    [
+     28,
+     96,
+     16,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      28,
+      0,
+      48,
+      72,
+      64
+     ],
+     "text": "Career HRs",
+     "style": "d9_rr_npk28",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "sprites": [
+      "db"
+     ]
+    },
+    {
+     "from": [
+      28,
+      72,
+      48,
+      88,
+      64
+     ],
+     "text": "x",
+     "style": "d9_rr_npk28",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "sprites": [
+      "db"
+     ]
+    },
+    {
+     "from": [
+      28,
+      72,
+      48,
+      88,
+      64
+     ],
+     "text": "x",
+     "style": "d9_rr_npk28",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "sprites": [
+      "dc"
+     ]
+    }
+   ],
+   "name": "d9 npk28",
+   "share": true,
+   "sprites": "g3_ki#21"
   }
  ],
  "sheet": [

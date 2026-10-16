@@ -1,0 +1,128 @@
+{
+ "arc": "arekore.arc",
+ "repack": [
+  {
+   "bank": "s4w_are",
+   "palette": 0,
+   "style": "d9_ak_01",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Original Player\nPassword Display",
+     "style": "d9_ak_01",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "pages": [
+      0
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "02",
+     "text": "Original Player\nPassword Entry",
+     "style": "d9_ak_02",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "pages": [
+      0
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "03",
+     "text": "Fight Song\nPassword Entry",
+     "style": "d9_ak_03",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "pages": [
+      0
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "04",
+     "text": "Voice Settings",
+     "style": "d9_ak_04",
+     "font": "ttf:narrow:16:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 63,
+     "dy": 3,
+     "pages": [
+      0,
+      1
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Jersey Names",
+     "style": "d9_ak_05",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 62,
+     "dy": 1,
+     "pages": [
+      1
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Stats Settings",
+     "style": "d9_ak_06",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 61,
+     "dy": 2,
+     "pages": [
+      1
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Load Data",
+     "style": "d9_ak_07",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 37,
+     "pages": [
+      1
+     ]
+    },
+    {
+     "sprite": "00",
+     "text": "Data Corner",
+     "style": "d9_ak_00_logo",
+     "font": "ttf:narrow:40:0.0:0.78:0.25",
+     "slices": true,
+     "slice_width": 112,
+     "dy": 1,
+     "pages": [
+      2
+     ]
+    }
+   ],
+   "name": "d9 arekore s4w",
+   "share": true
+  }
+ ]
+}

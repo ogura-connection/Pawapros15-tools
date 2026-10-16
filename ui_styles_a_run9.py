@@ -60,7 +60,7 @@ STYLES["a9_dtn_48"] = ringfill([4, 4, 4, 4, 4, 4], [8, 8, 8], [13])
 STYLES["a9_dtn_49"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7, 7, 7, 7])
 STYLES["a9_dtn_4a"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 8, 8], [8])
 STYLES["a9_dtn_4b"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 8, 3], [8])
-STYLES["a9_dtj_24"] = ringfill([1, 1, 1, 1, 1, 1], [2, 8, 8, 8])
+STYLES["a9_dtj_24"] = ringfill([14, 12, 9], [1, 8, 8])
 # styles_scs_main.txt
 STYLES["a9_smi_8a"] = flat([0, 2, 2, 2, 2, 2, 2], cut=3)
 STYLES["a9_smi_8b"] = flat([0, 2, 2, 2, 2, 2, 2], cut=3)
