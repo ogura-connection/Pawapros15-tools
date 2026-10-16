@@ -1,4 +1,14 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	1568	c423	Take on the computer!|Sharpen your skills in this mode!
+5	1670	2eeb	Face off with a friend!|Who's better? Time to settle it!!
+5	1772	8702	Who's the strongest?|Get rowdy in a tournament!
+5	1874	7d8f	Watch the computer play itself!|Simulate your favourite team, too!
+5	1976	ffe0	{6:For Pawapuro veterans}|Sets the controls to normal.
+5	2078	6c65	{2:For Pawapuro beginners}|You only control batter and pitcher.
+5	2180	df85	{2:Rookie}: control only the|batter and pitcher. Easy!
+5	2282	10ec	Batting is all about timing!|Fielding is done for you!
+5	2384	300a	A batting system with 3 swing heights!|When fielding, catch with A (or B)!
+5	2486	6880	Start by playing on the Normal setup!|Once used to it, try the Hustle setup!
 5	10832	551a	Don't plug or unplug an extension controller.
 5	10912	59dd	Make them in the Mii Channel.
 5	10948	cea5	The Wii Remote lost connection.

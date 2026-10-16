@@ -860,12 +860,15 @@ def build_font_file(orig, slots):
     return image
 
 
-def encode_string(en, cells, slots):
+def encode_string(en, cells, slots, help=False):
     """An English UI string as the bytes of its slot: glyph numbers, padded with glyph 0. A run written
-    {c:...} (ui_strings.colour_runs) gets colour c in the top four bits of each of its units."""
+    {c:...} (ui_strings.colour_runs) gets colour c in the top four bits of each of its units.
+    help: a help string of ui_strings.HELP_FILES, its line breaks written as HELP_NL."""
     units = []
     for colour, part in ui_strings.colour_runs(en):
         units += [u | colour << 12 for u in encode_text(part, slots)] if colour else encode_text(part, slots)
+    if help:
+        units = [ui_strings.HELP_NL if u == S.TEXT_NEWLINE else u for u in units]
     if S.TEXT_NEWLINE in units or len(units) > cells:
         raise ValueError("%r does not fit a slot of %d cells (no line breaks)" % (en, cells))
     return struct.pack(">%dH" % cells, *(units + [0] * (cells - len(units))))
@@ -1023,12 +1026,14 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             for (sec, off), (cells, en) in strings[m.name].items():
                 if ui_strings.block_of(m.name, sec, off):
                     continue                                     # laid out with its block, below
-                data = encode_string(en, cells, slots)
+                help = m.name in ui_strings.HELP_FILES and "\n" in en
+                data = encode_string(en, cells, slots, help)
                 remap = remaps.get((m.mod_id, sec), lambda o: o)
                 pos = m.sections[sec]["offset"] + remap(off)     # sections in front of a rebuilt one stay
                 if any(mid == m.mod_id and s < sec for mid, s in remaps):
                     sys.exit("%s: a string table behind the rebuilt section is not supported" % m.name)
-                assert image[pos + len(data):pos + len(data) + 2] == b"\xff\xff", (m.name, sec, off)
+                assert image[pos + len(data):pos + len(data) + 2] == (b"\x1f\xff" if help else b"\xff\xff"), \
+                    (m.name, sec, off)
                 image[pos:pos + len(data)] = data
                 patched[m.mod_id][(sec, off)] = data
             for blk in ui_strings.BLOCKS.get(m.name, ()):        # strings that move: new layout, new pointers

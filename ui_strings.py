@@ -92,6 +92,10 @@ TSV_DIR = os.path.join(HERE, "translation", "strings")
 LIST_DIR = os.path.join(S.WORK_DIR, "strings")
 OUT_JSON = os.path.join(S.WORK_DIR, "strings.json")
 END = 0xFFFF
+# Help texts of vs.rel (Exhibition menu, control setups): lines split by HELP_NL, closed by HELP_END (not 0xFFFF), a
+# coloured first line allowed. English: "|" between lines, {c:...} for colour. Cells = units in front of HELP_END.
+HELP_FILES = {"vs.rel"}
+HELP_NL, HELP_END = 0x1FFE, 0x1FFF
 # Line width overrides. (file, cells of the slot) -> cells per line: tested in the game.
 LINE_CELLS = {("scs_sys.rel", 36): 18, ("scs_titl.rel", 32): 16, ("scs_rens.rel", 28): 14,
               ("scs_main.rel", 51): 17, ("scs_main.rel", 33): 18, ("scs_main.rel", 44): 18}
@@ -142,10 +146,48 @@ def script_region(rel, mods):
     return sc.sec, idx[0] * 2, (idx[-1] + 1) * 2
 
 
+def help_text(units):
+    """units_text of a help string, HELP_NL shown as |."""
+    parts, cur = [], []
+    for u in units:
+        if u == HELP_NL:
+            parts.append(cur)
+            cur = []
+        else:
+            cur.append(u)
+    parts.append(cur)
+    return "|".join(units_text(p) for p in parts)
+
+
+def find_help(rel):
+    """The help strings of HELP_FILES (see HELP_END), each with "help": True."""
+    out = []
+    if rel.name not in HELP_FILES:
+        return out
+    for sec in rel.sections:
+        if sec["exec"] or sec["bss"] or not sec["offset"] or sec["size"] < 4:
+            continue
+        d = rel.sec_data(sec["index"])
+        hw = struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2])
+        for k, u in enumerate(hw):
+            if u != HELP_END:
+                continue
+            i = k
+            while i > 0 and hw[i - 1] != 0 and (hw[i - 1] <= S.MAX_GLYPH or hw[i - 1] == HELP_NL
+                                                 or is_coloured(hw[i - 1])):
+                i -= 1
+            units = hw[i:k]
+            text = help_text(units)
+            if HELP_NL in units and sum(0x3040 <= ord(c) <= 0x30FF or 0x4E00 <= ord(c) <= 0x9FFF for c in text) >= 2:
+                out.append({"section": sec["index"], "offset": i * 2, "cells": k - i, "units": list(units),
+                            "text": text, "help": True})
+    return out
+
+
 def find(rel, region=None):
     """[{"section", "offset", "cells", "units", "text"}] for every string slot of a module.
     cells = glyphs in front of the 0xFFFF, padding included: what an English string may fill."""
-    out = []
+    out = find_help(rel)
     for sec in rel.sections:
         if sec["exec"] or sec["bss"] or not sec["offset"] or sec["size"] < 4:
             continue
@@ -592,6 +634,20 @@ def judge(s, en, longest=0):
             errors.append("%d letters too long: an entry holds at most %d cells (%d letters)"
                           % (too_long(en, s["block"]["max"]), s["block"]["max"], s["block"]["max"] * 2))
         return errors, warnings, en
+    if s.get("help"):                                   # explicit line breaks (HELP_NL) in a slot of s["cells"] units
+        jl = [re.sub(r"\{\d+:|\}", "", line) for line in s["text"].split("|")]
+        width = max(len(line) for line in jl)            # the longest Japanese line, in cells
+        if len(lines) > len(jl):
+            errors.append("%d lines, the Japanese has %d" % (len(lines), len(jl)))
+        need = len(lines) - 1
+        for k, line in enumerate(lines):
+            n = sum(-(-len(part) // 2) for _, part in colour_runs(line))
+            need += n
+            if n > width + 4:
+                errors.append("line %d is %d cells, the longest Japanese line is %d" % (k + 1, n, width))
+        if need > s["cells"]:
+            errors.append("%d cells, the slot holds %d" % (need, s["cells"]))
+        return errors, warnings, "\n".join(lines)
     caps = line_caps(s)
     if len(lines) > len(caps):
         errors.append("%d lines, the slot has %d (%s letters)"
