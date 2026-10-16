@@ -13,3 +13,4 @@ STYLES["d9_np_hand"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8], [8, 4])
 STYLES["d9_np_type"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8], [8])
 # ---- order
 STYLES["d9_od_name"] = ringfill([15, 15, 15, 15, 15, 15], [5, 5], [5])
+STYLES["d9_od_thin"] = ringfill([15] * 6, [5], [5])

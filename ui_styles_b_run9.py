@@ -60,7 +60,7 @@ def rows_fill(rgb, box, cv=None, clear=None):
     rgb[y0:y1, x0:x1] = a[:, None, :] * (1 - t) + b[:, None, :] * t
 
 
-def mask_fill(rgb, box, strong, grow_n=4):
+def mask_fill(rgb, box, strong, grow_n=4, vfrom=None):
     """Erase the Japanese lettering of `box` without touching the rest of the picture: the pixels `strong(rgb)` marks
     (saturated body / outline colours), grown by `grow_n`, are rebuilt row by row run by run from the pixels left and
     right of each run. Returns the erased mask."""
@@ -70,6 +70,20 @@ def mask_fill(rgb, box, strong, grow_n=4):
     m = ui_type.grow(m, grow_n, diagonal=True)
     m[:y0] = False; m[y1:] = False; m[:, :x0] = False; m[:, x1:] = False
     src = rgb.copy()
+    full = m.copy()
+    if vfrom is not None:                           # column runs reaching row `vfrom` or lower: rebuilt column by column
+        done = np.zeros_like(m)
+        for x in range(x0, x1):
+            ys = np.nonzero(m[:, x])[0]
+            if not len(ys):
+                continue
+            for r in np.split(ys, np.nonzero(np.diff(ys) > 1)[0] + 1):
+                r = r[r >= vfrom]
+                if not len(r):
+                    continue
+                rgb[r, x] = src[min(r[-1] + 1, rgb.shape[0] - 1), x]
+                done[r, x] = True
+        m &= ~done
     for y in range(y0, y1):
         xs = np.nonzero(m[y])[0]
         if not len(xs):
@@ -79,7 +93,7 @@ def mask_fill(rgb, box, strong, grow_n=4):
             a, b = r[0] - 1, r[-1] + 1
             t = (np.arange(len(r)) + 1)[:, None] / (len(r) + 1)
             rgb[y, r] = src[y, a] * (1 - t) + src[y, min(b, rgb.shape[1] - 1)] * t
-    return m
+    return full
 
 
 def pen_strong(px):
@@ -244,9 +258,9 @@ register("hr", "homerun.arc", "r3_hrx", "00", 5, _hr)
 # pena_ini.arc s4_taz00 sprite 00: ペナント (+ small PENNANT above) -> Pennant (512 x 448 picture, pages 1, 2, 5, 6)
 def _pn(rgb, cv, colours, changed, clear):
     box = (140, 70, 378, 176)
-    m = mask_fill(rgb, box, pen_strong, 5)
+    m = mask_fill(rgb, box, pen_strong, 5, vfrom=150)
     changed |= m
-    m2, cap = fit_text("Pennant", 236, 84, 9, squeeze=0.75, bold=0.9)
+    m2, cap = fit_text("Pennant", 236, 84, 9, squeeze=0.64, bold=0.9)
     painted = draw_logo(rgb, m2, 259, 120, [(0, "fcd800"), (0.5, "f8b820"), (1, "f08020")],
                         [("#1018a8", 3, True), ("#ffffff", 2, True), ("#e86830", 1, True)])
     changed |= painted
