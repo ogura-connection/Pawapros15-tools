@@ -4,6 +4,7 @@ import ui_type
 from ui_styles_ore_ini import ringfill
 from ui_styles_voice import flat
 from ui_styles_c_run1 import win
+from ui_type import boxed
 import numpy as np
 
 def bandeco(fill, inner, shadow, outer, edge=3):
@@ -53,13 +54,13 @@ def bandeco(fill, inner, shadow, outer, edge=3):
 STYLES = {}
 
 # styles_scs_data.txt
-STYLES["a9_dtn_45"] = ringfill([14, 14, 14, 14, 14, 14], [9, 6, 6, 6, 6, 3, 3], [3, 3])
-STYLES["a9_dtn_46"] = ringfill([10, 10, 10, 10, 10, 10], [14, 1, 1])
+STYLES["a9_dtn_45"] = ringfill([12, 13, 13, 14, 14, 15], [9, 6, 6, 5, 4, 3], [1])
+STYLES["a9_dtn_46"] = ringfill([8, 9, 10, 10, 11, 12], [14, 1, 1, 3], [15])
 STYLES["a9_dtn_47"] = ringfill([4, 4, 4, 4, 4, 4], [8, 8, 8], [15])
 STYLES["a9_dtn_48"] = ringfill([4, 4, 4, 4, 4, 4], [8, 8, 8], [13])
-STYLES["a9_dtn_49"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7, 7, 7, 7])
-STYLES["a9_dtn_4a"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 8, 8], [8])
-STYLES["a9_dtn_4b"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 8, 3], [8])
+STYLES["a9_dtn_49"] = boxed([7, 7, 7, 15, 15, 15, 15], pad=(1, 1), size=(29, 22), rim=1)
+STYLES["a9_dtn_4a"] = boxed([8, 8, 8, 15, 15, 15, 15], pad=(1, 1), size=(29, 22), rim=1)
+STYLES["a9_dtn_4b"] = boxed([8, 8, 8, 15, 15, 15, 15], pad=(1, 1), size=(29, 22), rim=3)
 STYLES["a9_dtj_24"] = ringfill([15, 14, 13, 12, 10, 9], [11, 1, 1, 8, 8])
 # styles_scs_main.txt
 STYLES["a9_smi_8a"] = flat([0, 2, 2, 2, 2, 2, 2], cut=3)
