@@ -36,3 +36,40 @@ STYLES["g10_wd1"] = mk([1, 2, 4], [8])
 STYLES["g10_ban"] = mk([4], [8, 8, 15], foot=5)
 STYLES["g10_none"] = lambda ink, base: (np.zeros((1, 1), np.uint8), base)
 STYLES["g10_ok"] = mk([15], [11, 6])
+
+
+def card(core=15, shadow=5, t=3):
+    """Lettering of the My Life card atlas (y3_mym page 7): crisp letters `core`, a one-pixel `shadow` down and to the right."""
+    def style(ink, base):
+        pad = 1
+        h, w = ink.shape
+        m = np.zeros((h + 2 * pad, w + 2 * pad), bool)
+        m[pad:pad + h, pad:pad + w] = ink >= t
+        out = np.zeros(m.shape, np.uint8)
+        sh = ui_type.shift(m, 1, 1)
+        out[sh & ~m] = shadow
+        out[m] = core
+        return out, base + 0
+    return style
+
+
+def bevel(top, core, bottom, t=3):
+    """Crisp letters `core`; left / top edge `top`, right / bottom edge `bottom` (no ring)."""
+    def style(ink, base):
+        h, w = ink.shape
+        m = ink >= t
+        up = np.zeros_like(m); up[1:] = m[:-1]
+        left = np.zeros_like(m); left[:, 1:] = m[:, :-1]
+        dn = np.zeros_like(m); dn[:-1] = m[1:]
+        rt = np.zeros_like(m); rt[:, :-1] = m[:, 1:]
+        out = np.zeros(m.shape, np.uint8)
+        out[m] = core
+        out[m & (~dn | ~rt)] = bottom
+        out[m & (~up | ~left)] = top
+        return out, base
+    return style
+
+
+STYLES["g10_mc"] = card()
+STYLES["g10_mn"] = card(shadow=0)
+STYLES["g10_mt"] = bevel(11, 13, 5)
