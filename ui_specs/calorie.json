@@ -139,7 +139,6 @@
      "style": "e8_s4_kal00_02_2.80.24_h",
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "baseline": 18,
-     "centre_x": 7,
      "sprites": [
       "02"
      ]
@@ -253,7 +252,7 @@
     {
      "sprite": "10",
      "text": "pcs",
-     "style": "e8_s4_kal00_10_h_s",
+     "style": "e8_kal_cnt_h_s",
      "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14,
      "left": 3
@@ -261,7 +260,7 @@
     {
      "sprite": "11",
      "text": "plates",
-     "style": "e8_s4_kal00_11_h_s",
+     "style": "e8_kal_cnt_h_s",
      "font": "ttf:narrow:10:0.0:0.92:0.2",
      "baseline": 14,
      "left": 1
@@ -269,31 +268,31 @@
     {
      "sprite": "12",
      "text": "cups",
-     "style": "e8_s4_kal00_12_h",
-     "font": "ttf:narrow:14:0.0:0.92:0.3",
-     "baseline": 15,
+     "style": "e8_kal_cnt_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13,
      "left": 1
     },
     {
      "sprite": "13",
      "text": "bowls",
-     "style": "e8_s4_kal00_13_h_s",
-     "font": "ttf:narrow:9:0.0:1.0:0.2",
-     "baseline": 14,
+     "style": "e8_kal_cnt_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13,
      "left": 1
     },
     {
      "sprite": "14",
      "text": "slices",
-     "style": "e8_s4_kal00_14_h",
-     "font": "ttf:narrow:12:0.0:0.92:0.3",
-     "baseline": 14,
+     "style": "e8_kal_cnt_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13,
      "left": 1
     },
     {
      "sprite": "17",
      "text": "blocks",
-     "style": "e8_s4_kal00_17_h_s",
+     "style": "e8_kal_cnt_h_s",
      "font": "ttf:narrow:10:0.0:0.85:0.2",
      "baseline": 14,
      "left": 1
@@ -301,7 +300,7 @@
     {
      "sprite": "19",
      "text": "sheets",
-     "style": "e8_s4_kal00_19_h_s",
+     "style": "e8_kal_cnt_h_s",
      "font": "ttf:narrow:10:0.0:0.85:0.2",
      "baseline": 13,
      "left": 1

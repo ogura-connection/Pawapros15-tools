@@ -20,6 +20,8 @@ def _sil(front, c):
         return np.where(out > 0, c, 0).astype(np.uint8), b
     return style
 
+STYLES["e8_kal_cnt_h"] = ringfill([15, 15, 15, 15, 15, 15], [4], [])
+STYLES["e8_kal_cnt_h_s"] = ringfill([15, 15, 15, 15, 15, 15], [4], [])
 STYLES["e8_s4_kal00_02_2.104.0_h"] = ringfill([1, 1, 1, 1, 1, 1], [5], [])
 STYLES["e8_s4_kal00_02_2.104.0_h_s"] = ringfill([1, 1, 1, 1, 1, 1], [5], [])
 STYLES["e8_s4_kal00_02_2.104.24_h"] = ringfill([1, 1, 1, 1, 1, 1], [9], [])
