@@ -28,10 +28,10 @@
      "sprite": "00",
      "text": "Data Corner",
      "style": "d7_m3_are_00",
-     "font": "ttf:narrow:40:0.0:0.92:0.35",
+     "font": "ttf:rounded:33:0.0:0.92:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": 1,
+     "dy": 2,
      "pages": [
       3
      ],
@@ -69,6 +69,41 @@
      0,
      128,
      128
+    ],
+    [
+     4,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     112,
+     48,
+     128,
+     96
+    ],
+    [
+     5,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     7,
+     120,
+     0,
+     128,
+     56
+    ],
+    [
+     9,
+     64,
+     80,
+     128,
+     120
     ]
    ],
    "labels": [
@@ -260,10 +295,10 @@
      "sprite": "00",
      "text": "Data Corner",
      "style": "d7_m3_are_00",
-     "font": "ttf:narrow:40:0.0:0.92:0.35",
+     "font": "ttf:rounded:33:0.0:0.92:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": 1,
+     "dy": 2,
      "pages": [
       2
      ],

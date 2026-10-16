@@ -213,34 +213,34 @@
      "sprite": "17",
      "text": "On/Off",
      "style": "e7_s3_id_17_h",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 27,
-     "dy": 1
+     "slice_width": 24,
+     "dy": 0
     },
     {
      "sprite": "18",
      "text": "Off",
      "style": "e7_s3_id_18_h",
-     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
      "baseline": 10
     },
     {
      "sprite": "34",
      "text": "Limit On",
      "style": "e7_s3_id_34_h",
-     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "font": "ttf:rounded:18:0.0:0.92:0.3",
      "slices": true,
-     "slice_width": 44,
+     "slice_width": 45,
      "dy": 1
     },
     {
      "sprite": "35",
      "text": "Limit Off",
      "style": "e7_s3_id_35_h",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "font": "ttf:rounded:18:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 50,
+     "slice_width": 52,
      "dy": 1
     },
     {
@@ -279,7 +279,7 @@
      ],
      "text": "Import",
      "style": "e7_s3_id_00_4.0.80_h",
-     "font": "ttf:rounded:11:0.0:0.92:0.1",
+     "font": "ttf:narrow:11:0.0:0.85:0.1",
      "baseline": 14
     },
     {

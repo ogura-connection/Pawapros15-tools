@@ -14,11 +14,11 @@ STYLES["b7_ebox_t"] = ringfill([10, 10, 10, 9, 8, 8], [2, 1, 15, 15], [11])     
 # headings
 STYLES["b7_olive"] = ringfill([13, 15, 15, 15, 15, 15], [9, 9, 4, 1], [3])                  # s3_ein pal 74
 STYLES["b7_teal"] = ringfill([13, 15, 15, 15, 15, 15], [9, 9, 4, 1], [3])                   # s3_ein pal 76
-STYLES["b7_teal_yun"] = ringfill([13, 15, 15, 15, 15, 15], [11, 9, 6, 6], [3])              # s3_yun pal 21
+STYLES["b7_teal_yun"] = ringfill([13, 15, 15, 15, 15, 15], [9, 6], [3])              # s3_yun pal 21
 STYLES["b7_lav"] = ringfill([12, 15, 15, 15, 15, 15], [9, 9, 6], [3, 3])                    # s3_ein pal 73
 STYLES["b7_pur"] = ringfill([12, 15, 15, 15, 15, 15], [9, 8, 4], [3, 3])                    # pal 81 / 19
 STYLES["b7_ane_h"] = ringfill([13, 13, 13, 13, 13, 13], [1])                                # s3_ane pal 9 (white on green)
-STYLES["b7_okp_tab"] = ringfill([14, 13, 14, 14, 14, 14], [6, 6], [8])                      # s3_okp pal 14
+STYLES["b7_okp_tab"] = ringfill([14, 13, 14, 14, 14, 14], [6], [8])                      # s3_okp pal 14
 STYLES["b7_okp_st"] = ringfill([14, 14, 14, 14, 14, 14], [5])                               # s3_okp pal 0
 # flat blue / green lettering on plates
 STYLES["b7_okp_it"] = flat([0, 15, 15, 15, 15, 15, 15], cut=3)                              # s3_okp pal 3
@@ -50,3 +50,23 @@ for _c0, _c1 in ((0, 128), (128, 256), (256, 4096)):
 STYLES["b7_dl168"] = centred(STYLES["b7_dlg"], 168)
 for _c0, _c1 in ((0, 112), (112, 4096)):
     STYLES["b7_dl168~%d_%d" % (_c0, _c1)] = win(STYLES["b7_dl168"], _c0, _c1)
+
+
+def padright(style, total):
+    """The art padded on the right to `total` columns (a left-aligned word shown over several pieces)."""
+    def cut(ink, base):
+        art, b = style(ink, base)
+        if art.shape[1] >= total:
+            return art, b
+        out = np.zeros((art.shape[0], total), np.uint8)
+        out[:, :art.shape[1]] = art
+        return out, b
+    return cut
+
+
+STYLES["b7_yun_p72"] = padright(STYLES["b7_yun_bl"], 72)          # Cap Logo / Helmet Logo: pieces 16 + 56
+STYLES["b7_yun_p72~0_16"] = win(STYLES["b7_yun_p72"], 0, 16)
+STYLES["b7_yun_p72~16_4096"] = win(STYLES["b7_yun_p72"], 16, 4096)
+STYLES["b7_yun_p80"] = padright(STYLES["b7_yun_bl"], 80)          # Number Trim / Sleeves...: pieces 56 + 24
+STYLES["b7_yun_p80~0_56"] = win(STYLES["b7_yun_p80"], 0, 56)
+STYLES["b7_yun_p80~56_4096"] = win(STYLES["b7_yun_p80"], 56, 4096)
