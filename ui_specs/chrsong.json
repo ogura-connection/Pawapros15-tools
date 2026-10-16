@@ -244,7 +244,7 @@
      0,
      0,
      128,
-     84
+     96
     ],
     [
      23,
@@ -316,7 +316,7 @@
      "text": "Save",
      "style": "e7_r4_chm_02_1_h",
      "font": "ttf:narrow:19:0.0:0.85:0.3",
-     "baseline": 33,
+     "baseline": 32,
      "pages": [
       4
      ],
@@ -367,7 +367,7 @@
      "sprite": "06",
      "text": "Style",
      "style": "e7_r4_chm_06_5_h",
-     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
      "baseline": 32,
      "pages": [
       4
@@ -377,18 +377,36 @@
      ]
     },
     {
-     "sprite": "0c",
+     "from": [
+      5,
+      72,
+      48,
+      128,
+      72
+     ],
      "text": "16th Notes",
-     "style": "e7_r4_chm_0c_h_s",
-     "font": "ttf:rounded:8:0.0:0.92:0.12",
-     "baseline": 16
+     "style": "e7_r4_chm_0c_5.72.48_h_s",
+     "font": "ttf:narrow:10:0.0:0.92:0.2",
+     "baseline": 17,
+     "sprites": [
+      "0c"
+     ]
     },
     {
-     "sprite": "0d",
+     "from": [
+      5,
+      72,
+      72,
+      128,
+      96
+     ],
      "text": "Triplets",
-     "style": "e7_r4_chm_0d_h",
-     "font": "ttf:narrow:12:0.0:0.85:0.3",
-     "baseline": 18
+     "style": "e7_r4_chm_0d_5.72.72_h",
+     "font": "ttf:narrow:13:0.0:0.92:0.3",
+     "baseline": 18,
+     "sprites": [
+      "0d"
+     ]
     },
     {
      "sprite": "13",
