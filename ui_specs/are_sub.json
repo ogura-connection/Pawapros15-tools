@@ -1,0 +1,392 @@
+{
+ "arc": "are_sub.arc",
+ "repack": [
+  {
+   "bank": "m3_are",
+   "palette": 0,
+   "style": "d7_m3_are_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     120,
+     96
+    ],
+    [
+     3,
+     120,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Data Corner",
+     "style": "d7_m3_are_00",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 52,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      9
+     ]
+    }
+   ],
+   "name": "m3_are_titles"
+  },
+  {
+   "bank": "m3_are",
+   "palette": 0,
+   "style": "d7_m3_are_01",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Player Ratings",
+     "style": "d7_m3_are_01",
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 26,
+     "pages": [
+      0,
+      2
+     ],
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Original Player\nPassword Entry",
+     "style": "d7_m3_are_02",
+     "font": "ttf:rounded:11:0.0:0.85:0.45",
+     "baseline": 32,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Move Players",
+     "style": "d7_m3_are_03",
+     "font": "ttf:rounded:11:0.0:0.85:0.45",
+     "baseline": 26,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Move Teams",
+     "style": "d7_m3_are_04",
+     "font": "ttf:narrow:17:0.0:0.85:0.4",
+     "baseline": 28,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Voice Settings",
+     "style": "d7_m3_are_05",
+     "font": "ttf:rounded:10:0.0:0.85:0.45",
+     "baseline": 26,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Stats Settings",
+     "style": "d7_m3_are_06",
+     "font": "ttf:rounded:11:0.0:0.85:0.45",
+     "baseline": 26,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Fight Song\nPassword Entry",
+     "style": "d7_m3_are_07",
+     "font": "ttf:rounded:11:0.0:0.85:0.45",
+     "baseline": 32,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Fight Song\nData Corner",
+     "style": "d7_m3_are_08",
+     "font": "ttf:rounded:12:0.0:1.0:0.45",
+     "baseline": 33,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Install",
+     "style": "d7_m3_are_09",
+     "font": "ttf:rounded:19:0.0:1.0:0.35",
+     "baseline": 30,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Load Data",
+     "style": "d7_m3_are_0a",
+     "font": "ttf:rounded:20:0.0:0.85:0.35",
+     "baseline": 30,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "Power Pros Portable\nLink",
+     "style": "d7_m3_are_0b",
+     "font": "ttf:rounded:11:0.0:0.85:0.45",
+     "baseline": 32,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "0c",
+     "text": "Jersey Names",
+     "style": "d7_m3_are_0c",
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 28,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    }
+   ],
+   "name": "m3_are_btn"
+  },
+  {
+   "bank": "s4w_are",
+   "palette": 0,
+   "style": "d7_m3_are_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     120,
+     96
+    ],
+    [
+     2,
+     120,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Data Corner",
+     "style": "d7_m3_are_00",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 52,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      9
+     ]
+    }
+   ],
+   "name": "s4w_are_titles"
+  },
+  {
+   "bank": "s4w_are",
+   "palette": 0,
+   "style": "d7_s4w_are_01",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Player Ratings",
+     "style": "d7_s4w_are_01",
+     "font": "ttf:narrow:18:0.0:0.85:0.35",
+     "baseline": 40,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Original Player\nPassword Entry",
+     "style": "d7_s4w_are_02",
+     "font": "ttf:rounded:13:0.0:0.85:0.4",
+     "baseline": 43,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Fight Song\nPassword Entry",
+     "style": "d7_s4w_are_03",
+     "font": "ttf:rounded:12:0.0:0.92:0.45",
+     "baseline": 42,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Voice Settings",
+     "style": "d7_s4w_are_04",
+     "font": "ttf:rounded:12:0.0:0.85:0.45",
+     "baseline": 34,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Jersey Names",
+     "style": "d7_s4w_are_05",
+     "font": "ttf:narrow:18:0.0:0.85:0.35",
+     "baseline": 37,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Stats Settings",
+     "style": "d7_s4w_are_06",
+     "font": "ttf:narrow:15:0.0:0.85:0.4",
+     "baseline": 36,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Load Data",
+     "style": "d7_s4w_are_07",
+     "font": "ttf:rounded:22:0.0:0.85:0.35",
+     "baseline": 40,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      5
+     ]
+    }
+   ],
+   "name": "s4w_are_btn"
+  }
+ ]
+}
