@@ -175,9 +175,9 @@
      "sprite": "00",
      "text": "Practice",
      "style": "e8_g3_kya00_00_63_h",
-     "font": "ttf:narrow:30:0.0:0.92:0.3",
+     "font": "ttf:narrow:34:0.0:0.85:0.3",
      "slices": true,
-     "slice_width": 66,
+     "slice_width": 69,
      "dy": 1,
      "palettes": [
       63
@@ -199,9 +199,9 @@
      "sprite": "5f",
      "text": "Team Select",
      "style": "e8_g3_kya00_5f_63_h",
-     "font": "ttf:narrow:30:0.0:1.0:0.3",
+     "font": "ttf:narrow:34:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 52,
+     "slice_width": 58,
      "dy": 0,
      "palettes": [
       63
@@ -210,11 +210,11 @@
     {
      "sprite": "60",
      "text": "Batting Practice",
-     "style": "e8_g3_kya00_60_63_h",
-     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "style": "e8_g3_kya00_60_63_h_m",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
      "slices": true,
-     "slice_width": 37,
-     "dy": 3,
+     "slice_width": 34,
+     "dy": 2,
      "palettes": [
       63
      ]
@@ -222,10 +222,10 @@
     {
      "sprite": "61",
      "text": "Pitching Practice",
-     "style": "e8_g3_kya00_61_63_h",
-     "font": "ttf:narrow:18:0.0:0.85:0.3",
+     "style": "e8_g3_kya00_61_63_h_m",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
      "slices": true,
-     "slice_width": 38,
+     "slice_width": 36,
      "dy": 2,
      "palettes": [
       63
@@ -234,11 +234,11 @@
     {
      "sprite": "62",
      "text": "Pitch Menu",
-     "style": "e8_g3_kya00_62_63_h",
-     "font": "ttf:narrow:28:0.0:0.85:0.3",
+     "style": "e8_g3_kya00_62_63_h_m",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
      "slices": true,
-     "slice_width": 39,
-     "dy": 1,
+     "slice_width": 28,
+     "dy": 0,
      "palettes": [
       63
      ]
@@ -246,10 +246,10 @@
     {
      "sprite": "63",
      "text": "Fielding Practice",
-     "style": "e8_g3_kya00_63_63_h",
-     "font": "ttf:narrow:18:0.0:0.85:0.3",
+     "style": "e8_g3_kya00_63_63_h_m",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
      "slices": true,
-     "slice_width": 37,
+     "slice_width": 35,
      "dy": 2,
      "palettes": [
       63
@@ -258,8 +258,8 @@
     {
      "sprite": "64",
      "text": "Running Practice",
-     "style": "e8_g3_kya00_64_63_h",
-     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "style": "e8_g3_kya00_64_63_h_m",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 36,
      "dy": 2,
@@ -270,10 +270,10 @@
     {
      "sprite": "65",
      "text": "Full Offense",
-     "style": "e8_g3_kya00_65_63_h",
-     "font": "ttf:narrow:25:0.0:0.85:0.3",
+     "style": "e8_g3_kya00_65_63_h_m",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
      "slices": true,
-     "slice_width": 38,
+     "slice_width": 30,
      "dy": 1,
      "palettes": [
       63
@@ -282,11 +282,11 @@
     {
      "sprite": "66",
      "text": "Full Defense",
-     "style": "e8_g3_kya00_66_63_h",
-     "font": "ttf:narrow:24:0.0:0.85:0.3",
+     "style": "e8_g3_kya00_66_63_h_m",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
      "slices": true,
-     "slice_width": 30,
-     "dy": 0,
+     "slice_width": 25,
+     "dy": 1,
      "palettes": [
       63
      ]
@@ -553,7 +553,8 @@
      "style": "e8_g3_kya00_01_h_m",
      "font": "ttf:rounded:13:0.0:1.0:0.25",
      "baseline": 38,
-     "slices": true
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "02",
@@ -561,7 +562,8 @@
      "style": "e8_g3_kya00_02_h_m",
      "font": "ttf:rounded:13:0.0:1.0:0.25",
      "baseline": 38,
-     "slices": true
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "03",
@@ -569,7 +571,8 @@
      "style": "e8_g3_kya00_03_h_m",
      "font": "ttf:rounded:13:0.0:1.0:0.25",
      "baseline": 38,
-     "slices": true
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "04",
@@ -577,7 +580,8 @@
      "style": "e8_g3_kya00_04_h_m",
      "font": "ttf:rounded:13:0.0:1.0:0.25",
      "baseline": 38,
-     "slices": true
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "05",
@@ -585,7 +589,8 @@
      "style": "e8_g3_kya00_05_h_m",
      "font": "ttf:rounded:15:0.0:1.0:0.25",
      "baseline": 38,
-     "slices": true
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "06",
@@ -593,7 +598,8 @@
      "style": "e8_g3_kya00_06_h_m",
      "font": "ttf:rounded:15:0.0:1.0:0.25",
      "baseline": 38,
-     "slices": true
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "07",
@@ -601,7 +607,8 @@
      "style": "e8_g3_kya00_07_h_m",
      "font": "ttf:rounded:13:0.0:1.0:0.25",
      "baseline": 38,
-     "slices": true
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "08",
@@ -617,7 +624,8 @@
      "font": "ttf:rounded:26:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 27,
-     "dy": -13
+     "dy": -13,
+     "overlap": 4
     },
     {
      "sprite": "11",
@@ -626,7 +634,8 @@
      "font": "ttf:narrow:24:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 26,
-     "dy": -13
+     "dy": -13,
+     "overlap": 4
     },
     {
      "sprite": "22",
@@ -642,7 +651,8 @@
      "font": "ttf:narrow:24:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 36,
-     "dy": -14
+     "dy": -14,
+     "overlap": 4
     },
     {
      "sprite": "24",
@@ -650,13 +660,14 @@
      "style": "e8_g3_kya00_24_h",
      "font": "ttf:narrow:20:0.0:0.85:0.3",
      "baseline": 45,
-     "slices": true
+     "slices": true,
+     "overlap": 4
     },
     {
      "sprite": "46",
      "text": "1st Team",
      "style": "e8_g3_kya00_46_19_h_s",
-     "font": "ttf:narrow:9:0.0:0.85:0.2",
+     "font": "ttf:narrow:10:0.0:0.85:0.2",
      "baseline": -2,
      "palettes": [
       19
@@ -666,7 +677,7 @@
      "sprite": "47",
      "text": "2nd Team",
      "style": "e8_g3_kya00_47_20_h_s",
-     "font": "ttf:narrow:8:0.0:0.85:0.12",
+     "font": "ttf:narrow:9:0.0:0.92:0.2",
      "baseline": -2,
      "palettes": [
       20
@@ -772,311 +783,258 @@
      14,
      0,
      64,
-     96,
-     112
+     128,
+     128
     ],
     [
      14,
      96,
+     32,
+     128,
+     64
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     17,
+     80,
+     0,
+     128,
+     24
+    ],
+    [
+     17,
+     0,
+     0,
+     16,
+     48
+    ],
+    [
+     17,
+     16,
+     24,
+     32,
+     48
+    ],
+    [
+     22,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     22,
+     0,
      88,
      128,
-     112
+     128
     ],
     [
-     15,
-     0,
-     24,
-     104,
-     120
-    ],
-    [
-     15,
-     112,
-     0,
-     128,
-     120
-    ],
-    [
-     15,
-     0,
-     0,
-     72,
-     24
-    ],
-    [
-     15,
-     80,
-     0,
-     112,
-     24
-    ],
-    [
-     15,
-     104,
+     22,
+     88,
      48,
-     112,
-     120
+     128,
+     88
     ],
     [
-     16,
-     0,
-     24,
-     56,
-     120
-    ],
-    [
-     16,
+     27,
      80,
      0,
-     128,
-     72
+     120,
+     80
     ],
     [
-     16,
+     27,
+     0,
+     0,
+     80,
+     32
+    ],
+    [
+     27,
+     0,
      64,
-     72,
-     104,
-     120
-    ],
-    [
-     16,
-     56,
-     0,
-     72,
-     72
-    ],
-    [
-     16,
-     0,
-     0,
-     40,
-     24
-    ],
-    [
-     16,
-     112,
-     72,
-     128,
-     120
-    ],
-    [
-     16,
-     48,
-     0,
-     56,
-     24
-    ],
-    [
-     16,
-     72,
-     0,
      80,
-     24
-    ],
-    [
-     16,
-     72,
-     48,
-     80,
-     72
-    ],
-    [
-     16,
-     56,
-     72,
-     64,
      96
     ],
     [
-     16,
-     104,
+     27,
+     56,
      96,
-     112,
-     120
-    ],
-    [
-     17,
      80,
-     0,
-     128,
-     24
-    ],
-    [
-     17,
-     0,
-     24,
-     24,
-     48
-    ],
-    [
-     17,
-     0,
-     0,
-     8,
-     24
-    ],
-    [
-     22,
-     0,
-     0,
-     88,
-     48
-    ],
-    [
-     22,
-     88,
-     0,
-     128,
-     24
+     128
     ],
     [
      27,
-     72,
-     72,
-     112,
-     96
+     32,
+     32,
+     48,
+     64
     ],
     [
-     27,
-     72,
-     104,
-     104,
+     36,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     36,
+     0,
+     80,
+     128,
      128
     ],
     [
      36,
-     0,
-     0,
-     112,
-     48
-    ],
-    [
-     36,
-     112,
-     0,
+     104,
+     48,
      128,
-     24
+     80
     ]
    ],
    "labels": [
     {
      "sprite": "26",
      "text": "Slider",
-     "style": "e8_g3_kya00_26_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_26_h_m",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 1
     },
     {
      "sprite": "27",
      "text": "Curve",
-     "style": "e8_g3_kya00_27_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_27_h_m",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 0
     },
     {
      "sprite": "28",
      "text": "Fork",
-     "style": "e8_g3_kya00_28_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_28_h_m",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "baseline": 26
     },
     {
      "sprite": "29",
      "text": "Sinker",
-     "style": "e8_g3_kya00_29_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_29_h_m",
+     "font": "ttf:narrow:18:0.0:1.0:0.25",
+     "baseline": 26
     },
     {
      "sprite": "2a",
      "text": "Shuuto",
-     "style": "e8_g3_kya00_2a_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_2a_h",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 1
     },
     {
      "sprite": "2b",
      "text": "Fastball",
-     "style": "e8_g3_kya00_2b_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_2b_h_m",
+     "font": "ttf:narrow:18:0.0:0.85:0.25",
+     "baseline": 26
     },
     {
      "sprite": "2c",
      "text": "Palm",
-     "style": "e8_g3_kya00_2c_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_2c_h_m",
+     "font": "ttf:rounded:18:0.0:1.0:0.25",
+     "baseline": 26
     },
     {
      "sprite": "2d",
      "text": "Knuckle",
-     "style": "e8_g3_kya00_2d_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_2d_h_m",
+     "font": "ttf:narrow:18:0.0:0.85:0.25",
+     "baseline": 26
     },
     {
      "sprite": "2e",
      "text": "V-Slider",
-     "style": "e8_g3_kya00_2e_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_2e_h_m",
+     "font": "ttf:narrow:18:0.0:0.85:0.25",
+     "baseline": 26
     },
     {
      "sprite": "30",
      "text": "Screwball",
-     "style": "e8_g3_kya00_30_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_30_h_m",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "baseline": 24
     },
     {
      "sprite": "31",
      "text": "Slow Curve",
-     "style": "e8_g3_kya00_31_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_31_h_m",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 24
     },
     {
      "sprite": "32",
      "text": "H-Slider",
-     "style": "e8_g3_kya00_32_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_32_h_m",
+     "font": "ttf:narrow:18:0.0:0.85:0.25",
+     "baseline": 26
     },
     {
      "sprite": "33",
      "text": "Changeup",
-     "style": "e8_g3_kya00_33_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_33_h_m",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 24
     },
     {
      "sprite": "34",
      "text": "Drop",
-     "style": "e8_g3_kya00_34_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_34_h_m",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 26
     },
     {
      "sprite": "35",
      "text": "H-Sinker",
-     "style": "e8_g3_kya00_35_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_35_h_m",
+     "font": "ttf:narrow:17:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 37,
+     "dy": 0
     },
     {
      "sprite": "36",
      "text": "Slurve",
-     "style": "e8_g3_kya00_36_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_36_h",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 25
     },
     {
      "sprite": "37",
      "text": "Cutter",
-     "style": "e8_g3_kya00_37_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_37_h",
+     "font": "ttf:rounded:18:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 0
     },
     {
      "sprite": "38",
@@ -1088,16 +1046,16 @@
     {
      "sprite": "39",
      "text": "H-Shuuto",
-     "style": "e8_g3_kya00_39_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_39_h_m",
+     "font": "ttf:narrow:16:0.0:0.85:0.25",
+     "baseline": 25
     },
     {
      "sprite": "3a",
      "text": "Drop Curve",
-     "style": "e8_g3_kya00_3a_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_3a_h_m",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 24
     },
     {
      "sprite": "3b",
@@ -1111,53 +1069,59 @@
     {
      "sprite": "3c",
      "text": "Original",
-     "style": "e8_g3_kya00_3c_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_3c_h_m",
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 2
     },
     {
      "sprite": "3d",
      "text": "Yone Ball",
-     "style": "e8_g3_kya00_3d_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_3d_h_m",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "baseline": 24
     },
     {
      "sprite": "3e",
      "text": "Yoshi Ball",
-     "style": "e8_g3_kya00_3e_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_3e_h_m",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 37,
+     "dy": -1
     },
     {
      "sprite": "3f",
      "text": "Emo Ball",
-     "style": "e8_g3_kya00_3f_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_3f_h_m",
+     "font": "ttf:narrow:17:0.0:0.85:0.25",
+     "baseline": 26
     },
     {
      "sprite": "40",
      "text": "Razor Shuuto",
-     "style": "e8_g3_kya00_40_h_s",
-     "font": "ttf:narrow:10:0.0:0.92:0.2",
+     "style": "e8_g3_kya00_40_h_m",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
      "slices": true,
-     "slice_width": 36,
-     "dy": 0
+     "slice_width": 37,
+     "dy": -1
     },
     {
      "sprite": "7b",
      "text": "Moving FB",
-     "style": "e8_g3_kya00_7b_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 21
+     "style": "e8_g3_kya00_7b_h_m",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 23
     },
     {
      "sprite": "7c",
      "text": "2-Seamer",
-     "style": "e8_g3_kya00_7c_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "style": "e8_g3_kya00_7c_h_m",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 36,
+     "dy": -1
     }
    ],
    "name": "g3_kya00 pitches",
