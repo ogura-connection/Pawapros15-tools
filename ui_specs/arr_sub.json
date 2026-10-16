@@ -1,0 +1,4652 @@
+{
+ "arc": "arr_sub.arc",
+ "repack": [
+  {
+   "bank": "p5_od",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     32,
+     128,
+     96
+    ],
+    [
+     0,
+     0,
+     0,
+     72,
+     32
+    ],
+    [
+     0,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     0,
+     112,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     40,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     56,
+     128,
+     128
+    ],
+    [
+     4,
+     88,
+     32,
+     128,
+     56
+    ],
+    [
+     4,
+     112,
+     0,
+     128,
+     32
+    ],
+    [
+     6,
+     72,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     40,
+     128
+    ],
+    [
+     6,
+     40,
+     72,
+     72,
+     128
+    ],
+    [
+     6,
+     40,
+     0,
+     72,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Next",
+     "style": "p5_btn_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 26,
+     "pages": [
+      0
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Cancel",
+     "style": "p5_btn_c_h",
+     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "baseline": 26,
+     "pages": [
+      0
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Copy",
+     "style": "p5_btn_cp_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 26,
+     "pages": [
+      0
+     ]
+    },
+    {
+     "sprite": "2c",
+     "text": "Cancel",
+     "style": "p5_btn_c_h",
+     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "baseline": 34,
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "2c",
+     "text": "Copy",
+     "style": "p5_btn_cp_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 34,
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      56,
+      64,
+      80
+     ],
+     "text": "DH Best",
+     "style": "p5_tabbest_h",
+     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      64,
+      104
+     ],
+     "text": "DH vs LHP",
+     "style": "p5_tablhp_h",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      0,
+      104,
+      64,
+      128
+     ],
+     "text": "DH vs RHP",
+     "style": "p5_tabrhp_h",
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      64,
+      56,
+      128,
+      80
+     ],
+     "text": "No DH Best",
+     "style": "p5_tabnbest_h",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      64,
+      80,
+      128,
+      104
+     ],
+     "text": "No DH vs LHP",
+     "style": "p5_tabnlhp_h",
+     "font": "ttf:narrow:10:0.0:0.85:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      4,
+      64,
+      104,
+      128,
+      128
+     ],
+     "text": "No DH vs RHP",
+     "style": "p5_tabnrhp_h",
+     "font": "ttf:narrow:10:0.0:0.85:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      0,
+      64,
+      32,
+      128,
+      56
+     ],
+     "text": "Lineup",
+     "style": "p5_head_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      64,
+      56,
+      120,
+      80
+     ],
+     "text": "Order Lock",
+     "style": "p5_head_h",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 18
+    },
+    {
+     "from": [
+      0,
+      64,
+      80,
+      112,
+      104
+     ],
+     "text": "Bench",
+     "style": "p5_head_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      40,
+      128,
+      64
+     ],
+     "text": "Which lineup should be copied?",
+     "style": "p5_help_h~0_108",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 17,
+     "left": 5,
+     "sprites": [
+      "08"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      96,
+      88
+     ],
+     "text": "Which lineup should be copied?",
+     "style": "p5_help_h~108_4096",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 17,
+     "left": -15,
+     "sprites": [
+      "08"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      88,
+      128,
+      112
+     ],
+     "text": "Copy it where?",
+     "style": "p5_help_h~0_66",
+     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "baseline": 18,
+     "left": 4,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      2,
+      120,
+      64,
+      128,
+      88
+     ],
+     "text": "Copy it where?",
+     "style": "p5_help_h~66_4096",
+     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "baseline": 18,
+     "left": -58,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "OK to copy?",
+     "style": "p5_help_h~0_58",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 19,
+     "left": 35
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      64,
+      48
+     ],
+     "text": "OK to copy?",
+     "style": "p5_help_h~58_4096",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 19,
+     "left": -35
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "Yes",
+     "style": "p5_help_h",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      64,
+      24,
+      120,
+      48
+     ],
+     "text": "No",
+     "style": "p5_help_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 20
+    }
+   ],
+   "name": "p5_od",
+   "share": true
+  },
+  {
+   "bank": "s3_aow",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     56,
+     48,
+     112
+    ],
+    [
+     2,
+     64,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     48,
+     56,
+     64,
+     88
+    ],
+    [
+     2,
+     120,
+     32,
+     128,
+     64
+    ],
+    [
+     3,
+     0,
+     56,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     5,
+     16,
+     72,
+     128,
+     128
+    ],
+    [
+     5,
+     96,
+     48,
+     128,
+     72
+    ],
+    [
+     5,
+     48,
+     0,
+     64,
+     40
+    ],
+    [
+     5,
+     0,
+     104,
+     16,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     64,
+     24
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      56,
+      40,
+      72
+     ],
+     "text": "Choose this batter's song",
+     "style": "aow_help_h~0_27",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 13,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      3,
+      40,
+      56,
+      128,
+      72
+     ],
+     "text": "Choose this batter's song",
+     "style": "aow_help_h~25_113",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 0,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      88,
+      88
+     ],
+     "text": "Choose this batter's song",
+     "style": "aow_help_h~113_4096",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 0,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      3,
+      88,
+      72,
+      128,
+      88
+     ],
+     "text": "Song for scoring chances",
+     "style": "aow_help_h~0_0",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 47,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      88,
+      72,
+      104
+     ],
+     "text": "Song for scoring chances",
+     "style": "aow_help_h~0_65",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 7,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "from": [
+      3,
+      40,
+      56,
+      128,
+      72
+     ],
+     "text": "Song for scoring chances",
+     "style": "aow_help_h~62_150",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 0,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      88,
+      88
+     ],
+     "text": "Song for scoring chances",
+     "style": "aow_help_h~150_4096",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 0,
+     "sprites": [
+      "41"
+     ]
+    },
+    {
+     "from": [
+      3,
+      72,
+      88,
+      128,
+      104
+     ],
+     "text": "Song for runners on base",
+     "style": "aow_help_h~0_19",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 37,
+     "sprites": [
+      "42"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      104,
+      32,
+      120
+     ],
+     "text": "Song for runners on base",
+     "style": "aow_help_h~19_51",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 0,
+     "sprites": [
+      "42"
+     ]
+    },
+    {
+     "from": [
+      3,
+      40,
+      56,
+      128,
+      72
+     ],
+     "text": "Song for runners on base",
+     "style": "aow_help_h~49_137",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 0,
+     "sprites": [
+      "42"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      88,
+      88
+     ],
+     "text": "Song for runners on base",
+     "style": "aow_help_h~137_4096",
+     "font": "ttf:rounded:11:0.0:1.0:0.0",
+     "baseline": 13,
+     "left": 0,
+     "sprites": [
+      "42"
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": ":Listen",
+     "style": "aow_listen_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 16,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Cancel",
+     "style": "aow_cancel_h",
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 31,
+     "palettes": [
+      21
+     ]
+    },
+    {
+     "sprite": "2d",
+     "text": "Remove Fight Song",
+     "style": "aow_remove_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      88,
+      40,
+      112
+     ],
+     "text": "Page",
+     "style": "aow_page_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 17,
+     "sprites": [
+      "32"
+     ]
+    },
+    {
+     "sprite": "3d",
+     "text": "Clutch Song",
+     "style": "aow_btn_h",
+     "font": "ttf:narrow:11:0.0:0.78:0.3",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "3e",
+     "text": "On-Base Song",
+     "style": "aow_btn_h_s",
+     "font": "ttf:narrow:7:0.0:0.85:0.12",
+     "baseline": 18,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "3f",
+     "text": "Team Settings",
+     "style": "aow_head_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 24,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "40",
+     "text": "Player Settings",
+     "style": "aow_head_h_s",
+     "font": "ttf:rounded:8:0.0:0.85:0.12",
+     "baseline": 20,
+     "palettes": [
+      24
+     ]
+    }
+   ],
+   "name": "s3_aow",
+   "share": true
+  },
+  {
+   "bank": "s3_aso00",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     1,
+     64,
+     32,
+     128,
+     64
+    ],
+    [
+     1,
+     112,
+     0,
+     128,
+     32
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     5,
+     48,
+     88,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     48,
+     72,
+     72
+    ],
+    [
+     5,
+     24,
+     104,
+     48,
+     128
+    ],
+    [
+     5,
+     48,
+     72,
+     72,
+     88
+    ],
+    [
+     5,
+     120,
+     48,
+     128,
+     88
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     80,
+     0,
+     96,
+     64
+    ],
+    [
+     7,
+     0,
+     112,
+     64,
+     128
+    ],
+    [
+     7,
+     56,
+     64,
+     64,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Cancel",
+     "style": "aso_cancel_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 34,
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      96,
+      104,
+      120
+     ],
+     "text": "Player",
+     "style": "aso_head_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      48,
+      88
+     ],
+     "text": "Bat",
+     "style": "aso_head_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      48,
+      64,
+      104,
+      88
+     ],
+     "text": "Glove",
+     "style": "aso_head_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      88,
+      104,
+      112
+     ],
+     "text": "Wristband",
+     "style": "aso_head_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 17,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      112,
+      32,
+      128
+     ],
+     "text": "(L)",
+     "style": "aso_head_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 19,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      32,
+      112,
+      64,
+      120
+     ],
+     "empty": true,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      112,
+      96,
+      128
+     ],
+     "text": "(R)",
+     "style": "aso_head_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 18,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      1,
+      32,
+      120,
+      64,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      5,
+      104,
+      0,
+      128,
+      24
+     ],
+     "text": "Set up",
+     "style": "aso_help_h~0_26",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": 14,
+     "sprites": [
+      "08"
+     ]
+    },
+    {
+     "from": [
+      5,
+      0,
+      24,
+      56,
+      48
+     ],
+     "text": "Set up",
+     "style": "aso_help_h~26_4096",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": 16,
+     "sprites": [
+      "08"
+     ]
+    },
+    {
+     "from": [
+      5,
+      56,
+      24,
+      128,
+      48
+     ],
+     "text": "the gear",
+     "style": "aso_help_h~0_34",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 17,
+     "left": 37,
+     "sprites": [
+      "08"
+     ]
+    },
+    {
+     "from": [
+      5,
+      0,
+      48,
+      72,
+      72
+     ],
+     "text": "the gear",
+     "style": "aso_help_h~34_4096",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 17,
+     "left": -1,
+     "sprites": [
+      "08"
+     ]
+    },
+    {
+     "from": [
+      4,
+      64,
+      72,
+      128,
+      96
+     ],
+     "text": "All settings",
+     "style": "aso_help_h~0_45",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": 7,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      48,
+      120
+     ],
+     "text": "All settings",
+     "style": "aso_help_h~45_4096",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": -12,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      4,
+      48,
+      96,
+      128,
+      120
+     ],
+     "text": "return to",
+     "style": "aso_help_h~0_36",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": 8,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      16,
+      24
+     ],
+     "text": "return to",
+     "style": "aso_help_h~36_4096",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": -36,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      5,
+      16,
+      0,
+      104,
+      24
+     ],
+     "text": "their defaults",
+     "style": "aso_help_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 15,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      4,
+      96,
+      48,
+      128,
+      72
+     ],
+     "text": "Change the",
+     "style": "aso_help_h~0_46",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": -1,
+     "sprites": [
+      "0a"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "Change the",
+     "style": "aso_help_h~46_4096",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": 13,
+     "sprites": [
+      "0a"
+     ]
+    },
+    {
+     "from": [
+      4,
+      32,
+      24,
+      128,
+      48
+     ],
+     "text": "bat colour",
+     "style": "aso_help_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 17,
+     "sprites": [
+      "0a"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      96,
+      72
+     ],
+     "text": "Change the",
+     "style": "aso_help_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      32,
+      24,
+      128,
+      48
+     ],
+     "text": "glove colour",
+     "style": "aso_help_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 17,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      24
+     ],
+     "text": "Change the",
+     "style": "aso_help_h~0_46",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": 26,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      24,
+      16,
+      48
+     ],
+     "text": "Change the",
+     "style": "aso_help_h~46_4096",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 16,
+     "left": -56,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      4,
+      32,
+      24,
+      128,
+      48
+     ],
+     "text": "wristband colour",
+     "style": "aso_help_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "baseline": 17,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Wood",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Black",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Red",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "18",
+     "text": "Brown",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Blue",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "White",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "Gray",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Yellow",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Black/Wood",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 63,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Orange",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Pink",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 62,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Leather",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "None",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Black/Red",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 38,
+     "dy": 1,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Sky Blue",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 2,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Wood/Black",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 63,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "29",
+     "text": "Silver",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "2a",
+     "text": "Green",
+     "style": "aso_col_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 64,
+     "palettes": [
+      6
+     ]
+    }
+   ],
+   "name": "s3_aso00",
+   "share": true
+  },
+  {
+   "bank": "s3_ato00",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     48,
+     16,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Jersey Names",
+     "style": "ato_title_h",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Uniform\nNumbers",
+     "style": "ato_title_h",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 49,
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Voice Settings",
+     "style": "ato_title_h",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Fight Songs",
+     "style": "ato_title_h",
+     "font": "ttf:narrow:22:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Gear",
+     "style": "ato_title_h",
+     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "baseline": 44,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Registered\nNames",
+     "style": "ato_title_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 48,
+     "palettes": [
+      5
+     ]
+    }
+   ],
+   "name": "s3_ato00",
+   "share": true
+  },
+  {
+   "bank": "s3_atz00",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     0,
+     0,
+     64,
+     72,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Roster Settings",
+     "style": "atz_title_h",
+     "font": "ttf:narrow:24:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
+     "palettes": [
+      0
+     ]
+    }
+   ],
+   "name": "s3_atz00",
+   "share": true
+  },
+  {
+   "bank": "s3_shz00",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     40,
+     128,
+     128
+    ],
+    [
+     0,
+     104,
+     0,
+     128,
+     40
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     1,
+     56,
+     72,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     104,
+     56,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Pattern",
+     "style": "shz_pat_h",
+     "font": "ttf:rounded:21:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": -1,
+     "pages": [
+      0
+     ],
+     "align": "right"
+    },
+    {
+     "sprite": "02",
+     "text": "Pattern",
+     "style": "shz_pat_h",
+     "font": "ttf:rounded:21:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": -1,
+     "pages": [
+      0
+     ],
+     "align": "right"
+    },
+    {
+     "sprite": "03",
+     "text": "Pattern",
+     "style": "shz_pat_h",
+     "font": "ttf:rounded:21:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": -1,
+     "pages": [
+      0
+     ],
+     "align": "right"
+    },
+    {
+     "sprite": "04",
+     "text": "Pattern",
+     "style": "shz_pat_h",
+     "font": "ttf:rounded:21:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": -1,
+     "pages": [
+      0
+     ],
+     "align": "right"
+    },
+    {
+     "sprite": "05",
+     "text": "Remove Pattern",
+     "style": "shz_rem_h",
+     "font": "ttf:narrow:22:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 85,
+     "dy": 0,
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Cancel",
+     "style": "shz_cancel_h",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": 0,
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Winning Formula",
+     "style": "shz_title_h",
+     "font": "ttf:narrow:23:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 96,
+     "dy": 3,
+     "palettes": [
+      16
+     ]
+    }
+   ],
+   "name": "s3_shz00",
+   "share": true
+  },
+  {
+   "bank": "s3_sh00",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     4,
+     0,
+     24,
+     40,
+     48
+    ],
+    [
+     4,
+     120,
+     24,
+     128,
+     72
+    ],
+    [
+     6,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     6,
+     80,
+     48,
+     128,
+     96
+    ],
+    [
+     6,
+     16,
+     80,
+     64,
+     96
+    ],
+    [
+     6,
+     64,
+     48,
+     80,
+     80
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     96,
+     0,
+     120,
+     96
+    ],
+    [
+     2,
+     120,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     120,
+     48,
+     128,
+     72
+    ],
+    [
+     8,
+     0,
+     0,
+     40,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "19",
+     "text": "Relief",
+     "style": "sh_relief_h",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 72,
+     "palettes": [
+      7
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Closer",
+     "style": "sh_closer_h",
+     "font": "ttf:rounded:14:0.0:0.85:0.3",
+     "baseline": 236,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      120,
+      40
+     ],
+     "text": "Pattern",
+     "style": "sh_pat_h",
+     "font": "ttf:narrow:28:0.0:0.92:0.3",
+     "baseline": 34
+    },
+    {
+     "sprite": "1e",
+     "text": "Current Formula",
+     "style": "sh_title_h",
+     "font": "ttf:narrow:23:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": 0,
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "2e",
+     "text": "Relief",
+     "style": "sh_ab_r_h",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 30,
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "2f",
+     "text": "Closer",
+     "style": "sh_ab_c_h",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 28,
+     "palettes": [
+      13
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Choose 1 of 4 patterns",
+     "style": "sh_help_h~0_77",
+     "font": "ttf:rounded:18:0.0:0.85:0.3",
+     "baseline": 22,
+     "left": 8,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      6,
+      64,
+      48,
+      128,
+      80
+     ],
+     "text": "Choose 1 of 4 patterns",
+     "style": "sh_help_h~77_154",
+     "font": "ttf:rounded:18:0.0:0.85:0.3",
+     "baseline": 22,
+     "left": -43,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      56,
+      32
+     ],
+     "text": "Choose 1 of 4 patterns",
+     "style": "sh_help_h~154_4096",
+     "font": "ttf:rounded:18:0.0:0.85:0.3",
+     "baseline": 22,
+     "left": -30,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      7,
+      64,
+      0,
+      128,
+      32
+     ],
+     "text": "for the relief-to-closer",
+     "style": "sh_help_h~0_63",
+     "font": "ttf:narrow:18:0.0:0.85:0.3",
+     "baseline": 22,
+     "left": 3,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "for the relief-to-closer",
+     "style": "sh_help_h~63_126",
+     "font": "ttf:narrow:18:0.0:0.85:0.3",
+     "baseline": 22,
+     "left": 2,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      64,
+      8,
+      96
+     ],
+     "text": "for the relief-to-closer",
+     "style": "sh_help_h~126_4096",
+     "font": "ttf:narrow:18:0.0:0.85:0.3",
+     "baseline": 22,
+     "left": -63,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      7,
+      8,
+      64,
+      128,
+      96
+     ],
+     "text": "handoff",
+     "style": "sh_help_h~0_34",
+     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 90,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "handoff",
+     "style": "sh_help_h~34_67",
+     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": 4,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      40,
+      32
+     ],
+     "text": "handoff",
+     "style": "sh_help_h~67_4096",
+     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "baseline": 22,
+     "left": -91,
+     "sprites": [
+      "34"
+     ]
+    }
+   ],
+   "name": "s3_sh00",
+   "share": true
+  },
+  {
+   "bank": "s3_o",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     120,
+     0,
+     128,
+     64
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     112,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     7,
+     64,
+     32,
+     128,
+     104
+    ],
+    [
+     7,
+     64,
+     104,
+     80,
+     128
+    ],
+    [
+     7,
+     64,
+     0,
+     72,
+     32
+    ],
+    [
+     8,
+     0,
+     0,
+     96,
+     128
+    ],
+    [
+     8,
+     96,
+     64,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     32,
+     128,
+     80
+    ],
+    [
+     9,
+     104,
+     80,
+     128,
+     128
+    ],
+    [
+     9,
+     112,
+     0,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Cancel",
+     "style": "o_cancel_h",
+     "font": "ttf:narrow:14:0.0:0.85:0.3",
+     "baseline": 34,
+     "palettes": [
+      31
+     ]
+    },
+    {
+     "sprite": "2e",
+     "text": "Next",
+     "style": "o_next_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 34,
+     "palettes": [
+      29
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "Lineup",
+     "style": "o_head_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Order Lock",
+     "style": "o_head_h_s",
+     "font": "ttf:narrow:10:0.0:0.85:0.2",
+     "baseline": 17,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "Bench",
+     "style": "o_head_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "baseline": 18,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "00",
+     "text": "DH Best",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": -166,
+     "palettes": [
+      34
+     ]
+    },
+    {
+     "sprite": "2f",
+     "text": "No DH Best",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 44,
+     "dy": 1,
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "30",
+     "text": "DH Best",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": -166,
+     "palettes": [
+      34
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "No DH Best",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 44,
+     "dy": 1,
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "40",
+     "text": "DH vs RHP",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 41,
+     "dy": -1,
+     "palettes": [
+      34
+     ]
+    },
+    {
+     "sprite": "41",
+     "text": "DH vs LHP",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 40,
+     "dy": -1,
+     "palettes": [
+      34
+     ]
+    },
+    {
+     "sprite": "42",
+     "text": "No DH vs RHP",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": -1,
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "43",
+     "text": "No DH vs LHP",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 45,
+     "dy": -1,
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "44",
+     "text": "DH vs RHP",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 41,
+     "dy": -1,
+     "palettes": [
+      34
+     ]
+    },
+    {
+     "sprite": "45",
+     "text": "DH vs LHP",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 40,
+     "dy": -1,
+     "palettes": [
+      34
+     ]
+    },
+    {
+     "sprite": "46",
+     "text": "No DH vs RHP",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": -1,
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "47",
+     "text": "No DH vs LHP",
+     "style": "o_tab_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 45,
+     "dy": -1,
+     "palettes": [
+      35
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "DH Best",
+     "style": "o_ttl_h",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 46,
+     "dy": 0,
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "28",
+     "text": "No DH Best",
+     "style": "o_ttl_h",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 63,
+     "dy": -2,
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "3c",
+     "text": "DH vs RHP",
+     "style": "o_ttl_h",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 59,
+     "dy": -1,
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "3d",
+     "text": "DH vs LHP",
+     "style": "o_ttl_h",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 58,
+     "dy": -1,
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "3e",
+     "text": "No DH vs RHP",
+     "style": "o_ttl_h",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 57,
+     "dy": -4,
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "3f",
+     "text": "No DH vs LHP",
+     "style": "o_ttl_h",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 56,
+     "dy": -4,
+     "palettes": [
+      46
+     ]
+    },
+    {
+     "sprite": "2b",
+     "text": "Show DH Best",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:14:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 0,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "2c",
+     "text": "Show No DH Best",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 0,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "2d",
+     "text": "Clear DH Best",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:14:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 34,
+     "dy": 0,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "33",
+     "text": "Clear No DH Best",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 34,
+     "dy": 1,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "34",
+     "text": "Show DH vs RHP",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 33,
+     "dy": 1,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "35",
+     "text": "Clear DH vs RHP",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 1,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "36",
+     "text": "Show DH vs LHP",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 24,
+     "dy": 1,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "37",
+     "text": "Clear DH vs LHP",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 24,
+     "dy": 1,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "38",
+     "text": "Show No DH vs RHP",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:11:0.0:0.78:0.3",
+     "slices": true,
+     "slice_width": 33,
+     "dy": 0,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "39",
+     "text": "Clear No DH vs RHP",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:11:0.0:0.78:0.3",
+     "slices": true,
+     "slice_width": 33,
+     "dy": 0,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "3a",
+     "text": "Show No DH vs LHP",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:11:0.0:0.78:0.3",
+     "slices": true,
+     "slice_width": 25,
+     "dy": 0,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "3b",
+     "text": "Clear No DH vs LHP",
+     "style": "o_btn_h",
+     "font": "ttf:narrow:11:0.0:0.78:0.3",
+     "slices": true,
+     "slice_width": 25,
+     "dy": 0,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "48",
+     "text": "With DH",
+     "style": "o_dh_h",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 32,
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "49",
+     "text": "No DH",
+     "style": "o_dh_h",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 32,
+     "palettes": [
+      30
+     ]
+    }
+   ],
+   "name": "s3_o",
+   "share": true
+  },
+  {
+   "bank": "s3_t",
+   "palette": 0,
+   "style": "f7_t_blue",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     8,
+     40,
+     128,
+     80
+    ],
+    [
+     1,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     80,
+     72,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     72,
+     80,
+     80
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0a",
+     "text": "Lineup Style",
+     "style": "f7_t_lineup",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "0b",
+     "text": "Pinch Hitters",
+     "style": "f7_t_blue",
+     "font": "ttf:narrow:19:0.0:0.85:0.25",
+     "baseline": 30
+    },
+    {
+     "sprite": "0c",
+     "text": "Pinch Runners",
+     "style": "f7_t_blue",
+     "font": "ttf:narrow:16:0.0:0.85:0.25",
+     "baseline": 29
+    },
+    {
+     "sprite": "0d",
+     "text": "Defensive Subs",
+     "style": "f7_t_blue",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "baseline": 28
+    },
+    {
+     "sprite": "0e",
+     "text": "Steal",
+     "style": "f7_t_steal",
+     "font": "ttf:rounded:19:0.0:1.0:0.25",
+     "baseline": 30
+    },
+    {
+     "sprite": "0f",
+     "text": "Sac Bunt",
+     "style": "f7_t_green",
+     "font": "ttf:rounded:19:0.0:1.0:0.25",
+     "baseline": 30
+    },
+    {
+     "sprite": "10",
+     "text": "Squeeze",
+     "style": "f7_t_green",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 28
+    },
+    {
+     "sprite": "11",
+     "text": "Hit and Run",
+     "style": "f7_t_hit",
+     "font": "ttf:rounded:19:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    },
+    {
+     "sprite": "12",
+     "text": "Offense First",
+     "style": "f7_t_col",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 27
+    },
+    {
+     "sprite": "13",
+     "text": "Defense First",
+     "style": "f7_t_col",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 27
+    },
+    {
+     "sprite": "14",
+     "text": "Balanced",
+     "style": "f7_t_col",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 27
+    },
+    {
+     "sprite": "15",
+     "text": "Form First",
+     "style": "f7_t_col",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 27
+    },
+    {
+     "sprite": "16",
+     "text": "Often",
+     "style": "f7_t_col",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 28
+    },
+    {
+     "sprite": "17",
+     "text": "Normal",
+     "style": "f7_t_col",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 27
+    },
+    {
+     "sprite": "18",
+     "text": "Rarely",
+     "style": "f7_t_col",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 27
+    },
+    {
+     "sprite": "1b",
+     "text": "Platoon",
+     "style": "f7_t_col",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 27
+    },
+    {
+     "sprite": "1e",
+     "text": "Speed First",
+     "style": "f7_t_col",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 27
+    },
+    {
+     "sprite": "02",
+     "text": "Cancel",
+     "style": "f7_t_cancel",
+     "font": "ttf:rounded:21:0.0:1.0:0.25",
+     "baseline": 38
+    }
+   ],
+   "name": "f7 s3_t"
+  },
+  {
+   "bank": "s3_kh",
+   "palette": 42,
+   "style": "f7_kh_start",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     4,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     4,
+     120,
+     64,
+     128,
+     112
+    ],
+    [
+     4,
+     0,
+     112,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      4,
+      72,
+      32,
+      128,
+      64
+     ],
+     "text": "Starter",
+     "style": "f7_kh_start",
+     "font": "ttf:narrow:17:0.0:0.92:0.25",
+     "baseline": 24,
+     "centre_x": 35
+    },
+    {
+     "from": [
+      4,
+      0,
+      32,
+      64,
+      64
+     ],
+     "text": "Swingman",
+     "style": "f7_kh_swing",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 21,
+     "centre_x": 35
+    },
+    {
+     "from": [
+      4,
+      72,
+      0,
+      128,
+      32
+     ],
+     "text": "Relief",
+     "style": "f7_kh_relief",
+     "font": "ttf:narrow:17:0.0:1.0:0.25",
+     "baseline": 24,
+     "centre_x": 35
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      56,
+      32
+     ],
+     "text": "Closer",
+     "style": "f7_kh_closer",
+     "font": "ttf:narrow:17:0.0:0.92:0.25",
+     "baseline": 24,
+     "centre_x": 34
+    }
+   ],
+   "name": "f7 kh tabs"
+  },
+  {
+   "bank": "s3_kh",
+   "palette": 0,
+   "style": "f7_kh_btn",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     96,
+     64,
+     128
+    ],
+    [
+     14,
+     88,
+     72,
+     128,
+     96
+    ],
+    [
+     14,
+     112,
+     96,
+     128,
+     128
+    ],
+    [
+     14,
+     112,
+     0,
+     128,
+     24
+    ],
+    [
+     14,
+     64,
+     120,
+     112,
+     128
+    ],
+    [
+     14,
+     96,
+     24,
+     104,
+     48
+    ],
+    [
+     14,
+     120,
+     48,
+     128,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "1b",
+     "text": "Auto",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Complete\nGame",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 19,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "1d",
+     "text": "By Form",
+     "style": "f7_kh_btn",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Until\nSpent",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 19,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "1f",
+     "text": "Save\nStamina",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 20,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "20",
+     "text": "Get the Win",
+     "style": "f7_kh_btn",
+     "font": "ttf:narrow:12:0.0:0.92:0.25",
+     "baseline": 21,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "When\nLeading",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 18,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "22",
+     "text": "Relief Ace",
+     "style": "f7_kh_btn",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 22,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Even if\nBehind",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 19,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "24",
+     "text": "Mop-Up",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Lefty Specialist",
+     "style": "f7_kh_btn",
+     "font": "ttf:narrow:9:0.0:0.92:0.25",
+     "baseline": 19,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Save Chances",
+     "style": "f7_kh_btn",
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "baseline": 20,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "Shutdown",
+     "style": "f7_kh_btn",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 22,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "28",
+     "text": "Specialist",
+     "style": "f7_kh_btn",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 22,
+     "pages": [
+      9,
+      10,
+      14
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "PH",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 23,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "33",
+     "text": "PR",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 23,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "34",
+     "text": "Def",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 23,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      30
+     ]
+    },
+    {
+     "sprite": "35",
+     "text": "Out",
+     "style": "f7_kh_btn",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 23,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      30
+     ]
+    }
+   ],
+   "name": "f7 kh buttons"
+  },
+  {
+   "bank": "s3_kh",
+   "palette": 0,
+   "style": "f7_kh_help",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     88,
+     96
+    ],
+    [
+     14,
+     104,
+     24,
+     120,
+     72
+    ],
+    [
+     14,
+     88,
+     0,
+     112,
+     24
+    ],
+    [
+     14,
+     88,
+     24,
+     96,
+     72
+    ],
+    [
+     14,
+     120,
+     24,
+     128,
+     48
+    ],
+    [
+     14,
+     96,
+     48,
+     104,
+     72
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     16,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     17,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     18,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     19,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     20,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     21,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     22,
+     88,
+     0,
+     128,
+     128
+    ],
+    [
+     22,
+     0,
+     0,
+     88,
+     32
+    ],
+    [
+     22,
+     0,
+     112,
+     88,
+     128
+    ],
+    [
+     23,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     24,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3e",
+     "text": "All settings\nreturn to\ntheir defaults",
+     "style": "f7_kh_help",
+     "font": "ttf:rounded:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "3f",
+     "text": "Change how\npitchers are used",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "40",
+     "text": "Set usage\nconditions",
+     "style": "f7_kh_help",
+     "font": "ttf:rounded:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "41",
+     "text": "Choose where\nto place them",
+     "style": "f7_kh_help",
+     "font": "ttf:rounded:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "42",
+     "text": "You need at least\n1 starter",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "43",
+     "text": "Let COM decide\nwhen to replace\nthis player",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "44",
+     "text": "Try to let this pitcher\ngo the distance",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:12:0.0:0.85:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "45",
+     "text": "Leave this pitcher in\nas long as\nhis outing allows",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:0.85:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "46",
+     "text": "Start thinking\nabout a change\nwhen he tires",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "47",
+     "text": "Pull him with\ngas left for\nhis next start",
+     "style": "f7_kh_help",
+     "font": "ttf:rounded:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "48",
+     "text": "Consider a change\nonce he qualifies\nfor the win",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:0.92:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "49",
+     "text": "Used more often\nwhen leading,\nwhatever the score",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:0.85:0.1",
+     "baseline": 15,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "4a",
+     "text": "Used more often\nlate in games\nto hold a\nclose lead",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 2,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "4b",
+     "text": "Used more often\nwhen behind",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "4c",
+     "text": "Takes the load off\nother pitchers\nwhen a game is lost",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:0.85:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "4d",
+     "text": "Used more often\nas a lefty specialist",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:0.85:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "4e",
+     "text": "Used more often\nwhen a save\nis on the line",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "4f",
+     "text": "Used more often\nin close games",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "50",
+     "text": "Brought in only\nin the final inning\nto get the save",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 15,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "51",
+     "text": "Set how\nfielders are used",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "52",
+     "text": "Used more often\nas a pinch hitter",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "53",
+     "text": "Used more often\nas a pinch runner",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:0.92:0.1",
+     "baseline": 15,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "54",
+     "text": "Used more often\nas a defensive sub",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:0.92:0.1",
+     "baseline": 16,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "55",
+     "text": "Replaced more often\nby a defensive sub",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:12:0.0:0.92:0.1",
+     "baseline": 14,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "6a",
+     "text": "Set the team's\nrelief and closing\npattern",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "baseline": 11,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "6b",
+     "text": "At least\n1 reliever and 1 closer\nare needed",
+     "style": "f7_kh_help",
+     "font": "ttf:narrow:12:0.0:0.85:0.1",
+     "baseline": 10,
+     "palettes": [
+      10
+     ],
+     "valign": "centre"
+    }
+   ],
+   "name": "f7 kh help"
+  },
+  {
+   "bank": "s3_kh",
+   "palette": 0,
+   "style": "f7_kh_cancel",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     64,
+     0,
+     128,
+     32
+    ],
+    [
+     1,
+     64,
+     32,
+     80,
+     128
+    ],
+    [
+     1,
+     104,
+     112,
+     128,
+     128
+    ],
+    [
+     1,
+     80,
+     120,
+     104,
+     128
+    ],
+    [
+     5,
+     0,
+     72,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     48,
+     128,
+     56
+    ],
+    [
+     5,
+     80,
+     0,
+     96,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Cancel",
+     "style": "f7_kh_cancel2",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "baseline": 32
+    },
+    {
+     "sprite": "66",
+     "text": "Cancel",
+     "style": "f7_kh_cancel",
+     "font": "ttf:narrow:19:0.0:0.85:0.25",
+     "baseline": 38
+    },
+    {
+     "sprite": "64",
+     "text": "Winning\nFormula",
+     "style": "f7_kh_win",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 31,
+     "valign": "centre"
+    }
+   ],
+   "name": "f7 kh misc"
+  },
+  {
+   "bank": "s3_kh",
+   "palette": 41,
+   "style": "f7_kh_head",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      0,
+      56,
+      56
+     ],
+     "text": "Pinch\nHitter",
+     "style": "f7_kh_head",
+     "font": "ttf:narrow:12:0.0:1.0:0.1",
+     "baseline": 31,
+     "centre_x": 28,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      56,
+      0,
+      112,
+      56
+     ],
+     "text": "Pinch\nRunner",
+     "style": "f7_kh_head",
+     "font": "ttf:narrow:12:0.0:1.0:0.1",
+     "baseline": 31,
+     "centre_x": 28,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      56,
+      120
+     ],
+     "text": "Defensive\nSub",
+     "style": "f7_kh_head",
+     "font": "ttf:narrow:12:0.0:0.85:0.1",
+     "baseline": 31,
+     "centre_x": 28,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      56,
+      64,
+      112,
+      120
+     ],
+     "text": "Gets\nReplaced",
+     "style": "f7_kh_head",
+     "font": "ttf:narrow:12:0.0:0.92:0.1",
+     "baseline": 31,
+     "centre_x": 28,
+     "valign": "centre"
+    }
+   ],
+   "name": "f7 kh heads"
+  },
+  {
+   "bank": "s3_ks",
+   "palette": 0,
+   "style": "f7_ks_team",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Team Policy",
+     "style": "f7_ks_team",
+     "font": "ttf:narrow:27:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    },
+    {
+     "sprite": "04",
+     "text": "Usage",
+     "style": "f7_ks_usage",
+     "font": "ttf:rounded:39:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 6
+    },
+    {
+     "sprite": "05",
+     "text": "Lineup",
+     "style": "f7_ks_order",
+     "font": "ttf:rounded:36:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    }
+   ],
+   "name": "f7 ks titles"
+  },
+  {
+   "bank": "s3_kss",
+   "palette": 0,
+   "style": "f7_kss",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Usage Settings",
+     "style": "f7_kss",
+     "font": "ttf:narrow:17:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    }
+   ],
+   "name": "f7 kss title"
+  },
+  {
+   "bank": "s3_kkw",
+   "palette": 3,
+   "style": "f7_kkw",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     120,
+     128
+    ],
+    [
+     4,
+     120,
+     8,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "The numbers by the starters",
+     "style": "f7_kkw~0_122",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 23,
+     "left": 6
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      96,
+      32
+     ],
+     "text": "The numbers by the starters",
+     "style": "f7_kkw~122_4096",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 23,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "show the basic",
+     "style": "f7_kkw~0_52",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 76
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "show the basic",
+     "style": "f7_kkw~52_115",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      112,
+      0,
+      128,
+      32
+     ],
+     "text": "show the basic",
+     "style": "f7_kkw~180_4096",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "rotation order",
+     "style": "f7_kkw~0_101",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 27
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      32,
+      96
+     ],
+     "text": "rotation order",
+     "style": "f7_kkw~101_4096",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "When a starter hasn't recovered,",
+     "style": "f7_kkw~0_83",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 45
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "When a starter hasn't recovered,",
+     "style": "f7_kkw~83_211",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 0
+    },
+    {
+     "from": [
+      2,
+      48,
+      64,
+      128,
+      96
+     ],
+     "text": "When a starter hasn't recovered,",
+     "style": "f7_kkw~211_4096",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "pitchers from Swingman on",
+     "style": "f7_kkw~0_119",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 9
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      104,
+      32
+     ],
+     "text": "pitchers from Swingman on",
+     "style": "f7_kkw~119_4096",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "fill the rotation gaps",
+     "style": "f7_kkw~0_37",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 91
+    },
+    {
+     "from": [
+      4,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "fill the rotation gaps",
+     "style": "f7_kkw~37_152",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "fill the rotation gaps",
+     "style": "f7_kkw~165_4096",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 22,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "(In Pennant, 5 or 6 starters are recommended)",
+     "style": "f7_kkw~0_112",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 20,
+     "left": 16
+    },
+    {
+     "from": [
+      4,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "(In Pennant, 5 or 6 starters are recommended)",
+     "style": "f7_kkw~112_240",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 20,
+     "left": 0
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "(In Pennant, 5 or 6 starters are recommended)",
+     "style": "f7_kkw~240_4096",
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 20,
+     "left": 0
+    }
+   ],
+   "name": "f7 kkw"
+  },
+  {
+   "bank": "s4r_sh00",
+   "palette": 0,
+   "style": "f7_sh_cancel",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     56,
+     72,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     104,
+     56,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     112,
+     24
+    ],
+    [
+     4,
+     112,
+     32,
+     128,
+     56
+    ],
+    [
+     4,
+     48,
+     112,
+     64,
+     128
+    ],
+    [
+     4,
+     8,
+     104,
+     16,
+     128
+    ],
+    [
+     4,
+     120,
+     16,
+     128,
+     32
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Cancel",
+     "style": "f7_sh_cancel",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "baseline": 31
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      120,
+      40
+     ],
+     "text": "Pattern",
+     "style": "f7_sh_pat",
+     "font": "ttf:narrow:26:0.0:1.0:0.25",
+     "baseline": 34,
+     "centre_x": 60
+    },
+    {
+     "sprite": "12",
+     "text": "Current\nFormula",
+     "style": "f7_sh_formula",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 45,
+     "valign": "centre"
+    },
+    {
+     "sprite": "1e",
+     "text": "Relief",
+     "style": "f7_sh_relief",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 23
+    },
+    {
+     "sprite": "1f",
+     "text": "Closer",
+     "style": "f7_sh_closer",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 23
+    },
+    {
+     "from": [
+      3,
+      0,
+      104,
+      56,
+      128
+     ],
+     "text": "Relief",
+     "style": "f7_sh_tall_r",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 18,
+     "centre_x": 28,
+     "sprites": [
+      "13"
+     ]
+    },
+    {
+     "from": [
+      3,
+      56,
+      104,
+      112,
+      128
+     ],
+     "text": "Closer",
+     "style": "f7_sh_tall_c",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 18,
+     "centre_x": 29,
+     "sprites": [
+      "13"
+     ]
+    }
+   ],
+   "name": "f7 sh"
+  },
+  {
+   "bank": "z3_ait_0",
+   "palette": 0,
+   "style": "f7_ait",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     0,
+     104,
+     0,
+     128,
+     96
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "20",
+     "text": "Wood",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "21",
+     "text": "Black",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "22",
+     "text": "Black/\nWood",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28,
+     "valign": "centre"
+    },
+    {
+     "sprite": "23",
+     "text": "Wood/\nBlack",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28,
+     "valign": "centre"
+    },
+    {
+     "sprite": "24",
+     "text": "Red",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "25",
+     "text": "Brown",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "26",
+     "text": "Black/\nRed",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28,
+     "valign": "centre"
+    },
+    {
+     "sprite": "27",
+     "text": "Orange",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "28",
+     "text": "Black",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "29",
+     "text": "Leather",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "2a",
+     "text": "Blue",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "2b",
+     "text": "Brown",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "2c",
+     "text": "Red",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "2d",
+     "text": "Silver",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "2e",
+     "text": "None",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "2f",
+     "text": "Black",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "30",
+     "text": "White",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "31",
+     "text": "Red",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "32",
+     "text": "Blue",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "33",
+     "text": "Pink",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "34",
+     "text": "Gray",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "35",
+     "text": "Orange",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "36",
+     "text": "Yellow",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 29
+    },
+    {
+     "sprite": "37",
+     "text": "Sky Blue",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    },
+    {
+     "sprite": "38",
+     "text": "Hide",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 30
+    },
+    {
+     "sprite": "39",
+     "text": "Green",
+     "style": "f7_ait",
+     "font": "ttf:narrow:9:0.0:1.0:0.1",
+     "baseline": 28
+    }
+   ],
+   "name": "f7 ait"
+  }
+ ],
+ "paint": [
+  {
+   "bank": "s3_kh",
+   "page": 6,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Pitcher\nUsage",
+   "font": "ttf:narrow:24:0.0:1.0:0.3",
+   "style": "f7_plate05",
+   "copy": "clear"
+  },
+  {
+   "bank": "s3_kh",
+   "page": 7,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Fielder\nUsage",
+   "font": "ttf:narrow:24:0.0:1.0:0.3",
+   "style": "f7_plate06",
+   "copy": "clear"
+  },
+  {
+   "bank": "s3_kh",
+   "page": 1,
+   "rect": [
+    80,
+    64,
+    128,
+    88
+   ],
+   "text": "Info",
+   "font": "ttf:narrow:16:0.0:1.0:0.3",
+   "style": "f7_plate3d",
+   "copy": "clear"
+  }
+ ]
+}
