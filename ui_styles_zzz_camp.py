@@ -1,0 +1,66 @@
+"""camp.arc (g3_kya00) styles read again with style reader v2, no thicker than the old ones (twentieth session)."""
+from ui_styles_ore_ini import ringfill
+from ui_styles_voice import flat
+
+STYLES = {}
+
+STYLES["e8_g3_kya00_00_63_h"] = ringfill([3, 3, 3, 3, 3, 3], [4, 4, 12, 12], [12, 5])    # 00
+STYLES["e8_g3_kya00_01_h_m"] = ringfill([13, 13, 13, 13, 13, 13], [3, 15])    # 01
+STYLES["e8_g3_kya00_02_h_m"] = ringfill([13, 13, 13, 13, 13, 13], [3, 15])    # 02
+STYLES["e8_g3_kya00_03_h_m"] = ringfill([13, 13, 13, 13, 13, 13], [3, 15])    # 03
+STYLES["e8_g3_kya00_04_h_m"] = ringfill([12, 12, 12, 12, 12, 12], [3, 15])    # 04
+STYLES["e8_g3_kya00_05_h_m"] = ringfill([13, 13, 13, 13, 13, 13], [3, 15])    # 05
+STYLES["e8_g3_kya00_06_h_m"] = ringfill([13, 13, 13, 13, 13, 13], [3, 15])    # 06
+STYLES["e8_g3_kya00_0d_5_h_m"] = ringfill([1, 1, 1, 1, 1, 1], [4, 13])    # 0d
+STYLES["e8_g3_kya00_10_h"] = ringfill([1, 1, 1, 1, 1, 1], [3, 6, 6, 14], [8, 8])    # 10
+STYLES["e8_g3_kya00_24_h"] = ringfill([1, 1, 1, 1, 1, 1], [15, 15, 4, 9])    # 24
+STYLES["e8_g3_kya00_26_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 26
+STYLES["e8_g3_kya00_27_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11])    # 27
+STYLES["e8_g3_kya00_28_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11])    # 28
+STYLES["e8_g3_kya00_29_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 29
+STYLES["e8_g3_kya00_2a_h"] = ringfill([15, 15, 15, 15, 15, 15], [11], [11, 4])    # 2a
+STYLES["e8_g3_kya00_2b_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 2b
+STYLES["e8_g3_kya00_2c_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 2c
+STYLES["e8_g3_kya00_2d_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 2d
+STYLES["e8_g3_kya00_2e_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 2e
+STYLES["e8_g3_kya00_30_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 30
+STYLES["e8_g3_kya00_31_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 31
+STYLES["e8_g3_kya00_32_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 32
+STYLES["e8_g3_kya00_33_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 33
+STYLES["e8_g3_kya00_34_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 34
+STYLES["e8_g3_kya00_35_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 35
+STYLES["e8_g3_kya00_36_h"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11, 5])    # 36
+STYLES["e8_g3_kya00_37_h"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11, 11])    # 37
+STYLES["e8_g3_kya00_38_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 38
+STYLES["e8_g3_kya00_39_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11])    # 39
+STYLES["e8_g3_kya00_3a_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 3a
+STYLES["e8_g3_kya00_3b_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 3b
+STYLES["e8_g3_kya00_3c_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 3c
+STYLES["e8_g3_kya00_3d_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 3d
+STYLES["e8_g3_kya00_3e_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 3e
+STYLES["e8_g3_kya00_3f_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 3f
+STYLES["e8_g3_kya00_40_h_m"] = ringfill([11, 11, 11, 11, 11, 11], [15])    # 40
+STYLES["e8_g3_kya00_46_19_h_s"] = ringfill([13, 13, 13, 13, 13, 13], [15])    # 46
+STYLES["e8_g3_kya00_47_20_h_s"] = ringfill([13, 13, 13, 13, 13, 13], [15])    # 47
+STYLES["e8_g3_kya00_55_h"] = ringfill([14, 14, 14, 14, 14, 14], [1, 1, 1])    # 55
+STYLES["e8_g3_kya00_56_h"] = ringfill([1, 1, 1, 1, 1, 1], [7], [7])    # 56
+STYLES["e8_g3_kya00_57_h"] = ringfill([1, 1, 1, 1, 1, 1], [9, 13])    # 57
+STYLES["e8_g3_kya00_58_h"] = ringfill([1, 1, 1, 1, 1, 1], [10, 13])    # 58
+STYLES["e8_g3_kya00_59_h"] = ringfill([14, 14, 14, 14, 14, 14], [1, 1])    # 59
+STYLES["e8_g3_kya00_5a_h"] = ringfill([7, 7, 7, 7, 7, 7], [13], [4])    # 5a
+STYLES["e8_g3_kya00_5b_h"] = ringfill([7, 7, 7, 7, 7, 7], [13], [4])    # 5b
+STYLES["e8_g3_kya00_5c_h_m"] = ringfill([14, 14, 14, 14, 14, 14], [7, 7])    # 5c
+STYLES["e8_g3_kya00_5d_h"] = ringfill([13, 13, 13, 13, 13, 13], [7, 7, 15], [14])    # 5d
+STYLES["e8_g3_kya00_5f_63_h"] = ringfill([12, 12, 12, 12, 12, 12], [5, 5, 5, 5])    # 5f
+STYLES["e8_g3_kya00_60_63_h_m"] = ringfill([13, 13, 13, 13, 13, 13], [4, 1])    # 60
+STYLES["e8_g3_kya00_61_63_h_m"] = ringfill([3, 3, 3, 3, 3, 3], [1, 1])    # 61
+STYLES["e8_g3_kya00_62_63_h_m"] = ringfill([3, 3, 3, 3, 3, 3], [1, 1])    # 62
+STYLES["e8_g3_kya00_63_63_h_m"] = ringfill([3, 3, 3, 3, 3, 3], [1, 1])    # 63
+STYLES["e8_g3_kya00_64_63_h_m"] = ringfill([4, 4, 4, 4, 4, 4], [1, 1])    # 64
+STYLES["e8_g3_kya00_65_63_h_m"] = ringfill([3, 3, 3, 3, 3, 3], [1, 1])    # 65
+STYLES["e8_g3_kya00_66_63_h_m"] = ringfill([3, 3, 3, 3, 3, 3], [1, 1])    # 66
+STYLES["e8_g3_kya00_67_63_h"] = ringfill([12, 12, 12, 12, 12, 12], [5, 5, 5, 5], [1, 1])    # 67
+STYLES["e8_g3_kya00_7b_h_m"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 7b
+STYLES["e8_g3_kya00_7c_h"] = ringfill([15, 15, 15, 15, 15, 15], [11, 11])    # 7c
+STYLES["e8_g3_kya00_8b_h"] = ringfill([15, 15, 15, 15, 15, 15], [9, 9, 4])    # 8b
+STYLES["e8_g3_kya00_11_h"] = ringfill([1, 1, 1, 1, 1, 1], [3, 6, 6, 14], [8, 8])    # 11 (same as its twin 10)
