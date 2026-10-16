@@ -80,7 +80,7 @@ STYLES["a9_snm"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4], [4, 4])
 
 # styles_scs_make.txt
 STYLES["a9_nan_04"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4, 1])
-STYLES["a9_nan_08"] = ringfill([2, 2, 2, 2, 2, 2], [9, 9, 9, 9, 9, 9, 9], [9, 9])
+STYLES["a9_nan_08"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4, 2])
 # styles_scs_rens.txt
 STYLES["a9_smr_68"] = ringfill([13, 13, 13, 13, 13, 13], [2, 2], [2])
 STYLES["a9_smr_69"] = ringfill([9, 8, 7, 6, 5, 4], [15, 15])
