@@ -443,34 +443,6 @@
    "page": 0,
    "rect": [
     0,
-    0,
-    128,
-    80
-   ],
-   "text": "Hakkyu Dream",
-   "font": "ttf:rounded:10",
-   "copy": "clear",
-   "style": "a3_hak0"
-  },
-  {
-   "bank": "y5_tic_0",
-   "page": 1,
-   "rect": [
-    0,
-    0,
-    96,
-    80
-   ],
-   "text": "Hakkyu Dream",
-   "font": "ttf:rounded:10",
-   "copy": "clear",
-   "style": "a3_hak1"
-  },
-  {
-   "bank": "y5_tic_0",
-   "page": 0,
-   "rect": [
-    0,
     80,
     128,
     128
@@ -521,6 +493,34 @@
    "font": "ttf:rounded:10",
    "copy": "clear",
    "style": "a3_eik3"
+  },
+  {
+   "bank": "y5_tic_0",
+   "page": 0,
+   "rect": [
+    0,
+    0,
+    128,
+    80
+   ],
+   "text": "Hakkyu Dream",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "p11_hak0"
+  },
+  {
+   "bank": "y5_tic_0",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    96,
+    80
+   ],
+   "text": "Hakkyu Dream",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "p11_hak1"
   }
  ]
 }
