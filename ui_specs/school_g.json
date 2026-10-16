@@ -899,6 +899,67 @@
    "font": "ttf:rounded:26:0:1.0:0.3",
    "copy": "clear",
    "style": "e4_sg_clear_1"
+  },
+  {
+   "bank": "g3_kg",
+   "page": 7,
+   "rect": [
+    5,
+    98,
+    117,
+    128
+   ],
+   "text": "Congratu",
+   "font": "ttf:narrow:17:0:0.8:0.3",
+   "copy": "clear",
+   "style": "g10_ok",
+   "dx": 20,
+   "dy": 1
+  },
+  {
+   "bank": "g3_kg",
+   "page": 20,
+   "rect": [
+    72,
+    48,
+    128,
+    96
+   ],
+   "text": "lations",
+   "font": "ttf:narrow:17:0:0.8:0.3",
+   "copy": "clear",
+   "style": "g10_ok",
+   "dx": -1,
+   "dy": -7
+  },
+  {
+   "bank": "g3_kg",
+   "page": 21,
+   "rect": [
+    104,
+    48,
+    120,
+    96
+   ],
+   "text": "!",
+   "font": "ttf:narrow:17:0:1:0.35",
+   "copy": "clear",
+   "style": "g10_ok",
+   "dy": -8
+  },
+  {
+   "bank": "g3_kg",
+   "page": 7,
+   "rect": [
+    117,
+    98,
+    128,
+    128
+   ],
+   "text": ".",
+   "font": "ttf:narrow:17:0:0.8:0.3",
+   "copy": "clear",
+   "style": "g10_none"
   }
  ]
 }
