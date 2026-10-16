@@ -53,7 +53,6 @@ STYLES["d8_g3_kn_35"] = ringfill([8, 8, 8, 7, 7, 9], [15])      # fill [10, 11, 
 STYLES["d8_g3_kn_2a"] = ringfill([15, 15, 15, 15, 14, 14], [7, 7])      # fill [7, 9, 13]
 STYLES["d8_g3_kn_31"] = ringfill([15, 15, 15, 15, 14, 14], [7, 7])      # fill [7, 9, 13]
 STYLES["d8_g3_kn_40"] = ringfill([15, 15, 15, 15, 14, 14], [7, 7])      # fill [7, 9, 13]
-STYLES["d8_g3_ke_01"] = ringfill([8, 8, 8, 7, 7, 5], [15])      # fill [10, 13, 14, 15]
 STYLES["d8_g3_ke_03"] = ringfill([8, 8, 8, 7, 7, 5], [15])      # fill [11, 13, 14, 15]
 STYLES["d8_g3_ke_04"] = ringfill([8, 8, 8, 7, 7, 5], [15])      # fill [11, 14, 15]
 STYLES["d8_g3_ke_05"] = ringfill([8, 8, 8, 7, 7, 5], [15])      # fill [13, 15]

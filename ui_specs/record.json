@@ -2,9 +2,826 @@
  "arc": "record.arc",
  "repack": [
   {
+   "bank": "g3_kekx",
+   "palette": 0,
+   "style": "d8_g3_kekx_02",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     88,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Game Results",
+     "style": "d8_g3_kekx_02",
+     "font": "ttf:narrow:27:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -2,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Game Results",
+     "style": "d8_g3_kekx_03",
+     "font": "ttf:narrow:27:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -2,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Game Results",
+     "style": "d8_g3_kekx_04",
+     "font": "ttf:narrow:13:0.0:0.85:0.4",
+     "baseline": 5,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Game Results",
+     "style": "d8_g3_kekx_08",
+     "font": "ttf:narrow:18:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -2,
+     "pages": [
+      1,
+      2,
+      3
+     ],
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "vs",
+     "style": "d8_g3_kekx_05",
+     "font": "ttf:rounded:23:0.0:0.85:0.35",
+     "baseline": 10,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      0
+     ]
+    }
+   ],
+   "name": "g3_kekx"
+  },
+  {
+   "bank": "g3_kn",
+   "palette": 0,
+   "style": "d8_g3_kn_09",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     120,
+     128
+    ],
+    [
+     1,
+     120,
+     32,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     72,
+     96
+    ],
+    [
+     2,
+     72,
+     24,
+     128,
+     72
+    ],
+    [
+     2,
+     0,
+     96,
+     48,
+     128
+    ],
+    [
+     2,
+     88,
+     104,
+     128,
+     128
+    ],
+    [
+     2,
+     112,
+     72,
+     128,
+     104
+    ],
+    [
+     2,
+     72,
+     0,
+     88,
+     24
+    ],
+    [
+     2,
+     112,
+     0,
+     128,
+     24
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "09",
+     "text": "1B",
+     "style": "d8_g3_kn_09",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "2B",
+     "style": "d8_g3_kn_0a",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "3B",
+     "style": "d8_g3_kn_0b",
+     "font": "ttf:narrow:17:0.0:0.92:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "0c",
+     "text": "SS",
+     "style": "d8_g3_kn_0c",
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 19,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "0d",
+     "text": "LF",
+     "style": "d8_g3_kn_0d",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "0e",
+     "text": "CF",
+     "style": "d8_g3_kn_0e",
+     "font": "ttf:narrow:17:0.0:0.85:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "0f",
+     "text": "RF",
+     "style": "d8_g3_kn_0f",
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "10",
+     "text": "C",
+     "style": "d8_g3_kn_10",
+     "font": "ttf:rounded:17:0.0:1.0:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "11",
+     "text": "P",
+     "style": "d8_g3_kn_11",
+     "font": "ttf:rounded:17:0.0:1.0:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "12",
+     "text": "DH",
+     "style": "d8_g3_kn_12",
+     "font": "ttf:narrow:17:0.0:0.85:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "PH",
+     "style": "d8_g3_kn_13",
+     "font": "ttf:narrow:17:0.0:0.85:0.4",
+     "baseline": 20,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "14",
+     "text": "DS",
+     "style": "d8_g3_kn_14",
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 19,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "PR",
+     "style": "d8_g3_kn_15",
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 19,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      12
+     ]
+    },
+    {
+     "sprite": "34",
+     "text": "W",
+     "style": "d8_g3_kn_34",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 24,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "35",
+     "text": "L",
+     "style": "d8_g3_kn_35",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 24,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      9
+     ]
+    },
+    {
+     "sprite": "2a",
+     "text": "Total",
+     "style": "d8_g3_kn_2a",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 343,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      6
+     ],
+     "left": 16
+    },
+    {
+     "sprite": "31",
+     "text": "Total",
+     "style": "d8_g3_kn_31",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 22,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      6
+     ],
+     "left": 18
+    },
+    {
+     "sprite": "40",
+     "text": "Total",
+     "style": "d8_g3_kn_40",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 343,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      6
+     ],
+     "left": 16
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      56,
+      24
+     ],
+     "text": "IP",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "2d",
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "AB",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 19,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "BF",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 19,
+     "sprites": [
+      "2d",
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      24,
+      72
+     ],
+     "text": "SB",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      24,
+      96
+     ],
+     "text": "ER",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "2d",
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      24,
+      120
+     ],
+     "text": "RBI",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      24,
+      24,
+      48,
+      48
+     ],
+     "text": "H",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "2d",
+      "3a",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      24,
+      48,
+      48,
+      72
+     ],
+     "text": "GDP",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      24,
+      72,
+      48,
+      96
+     ],
+     "text": "WP",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "2d",
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      24,
+      96,
+      48,
+      120
+     ],
+     "text": "R",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      48,
+      24,
+      72,
+      48
+     ],
+     "text": "2B",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      48,
+      48,
+      72,
+      72
+     ],
+     "text": "E",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      48,
+      48,
+      72,
+      72
+     ],
+     "text": "R",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "2d",
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      48,
+      72,
+      72,
+      96
+     ],
+     "text": "Tot",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29"
+     ]
+    },
+    {
+     "from": [
+      1,
+      48,
+      96,
+      72,
+      120
+     ],
+     "text": "SO",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "2d",
+      "3a",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      56,
+      0,
+      112,
+      24
+     ],
+     "text": "ERA",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "2d",
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "text": "3B",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      72,
+      72,
+      96,
+      96
+     ],
+     "text": "BB",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "2d",
+      "3a",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      72,
+      96,
+      96,
+      120
+     ],
+     "text": "NP",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "2d",
+      "3a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      96,
+      24,
+      120,
+      48
+     ],
+     "text": "HR",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "2d",
+      "3a",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      96,
+      72,
+      120,
+      96
+     ],
+     "text": "SAC",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      1,
+      96,
+      96,
+      120,
+      120
+     ],
+     "text": "AVG",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:1.0:0.4",
+     "baseline": 18,
+     "centre_x": 20,
+     "sprites": [
+      "29",
+      "3d"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      88,
+      24
+     ],
+     "text": "Hold Points",
+     "style": "d8_g3_kn_cell",
+     "font": "ttf:narrow:13:0.0:0.92:0.4",
+     "baseline": 18,
+     "sprites": [
+      "2d"
+     ]
+    }
+   ],
+   "name": "g3_kn"
+  },
+  {
    "bank": "g3_ke",
    "palette": 0,
-   "style": "d8_g3_ke_01",
+   "style": "d8_g3_ke_03",
    "font": "ttf:rounded:14:0.0:1.0:0.25",
    "under": 3,
    "areas": [
@@ -318,19 +1135,6 @@
     ]
    ],
    "labels": [
-    {
-     "sprite": "01",
-     "text": "Game",
-     "style": "d8_g3_ke_01",
-     "font": "ttf:narrow:11:0.0:0.92:0.35",
-     "baseline": 20,
-     "pages": [
-      26
-     ],
-     "palettes": [
-      47
-     ]
-    },
     {
      "sprite": "03",
      "text": "W",
@@ -1074,8 +1878,8 @@
      "sprite": "a0",
      "text": "Fielders",
      "style": "d8_g3_ke_a0",
-     "font": "ttf:narrow:16:0.0:0.85:0.4",
-     "baseline": 48,
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 50,
      "pages": [
       28
      ],
@@ -1088,8 +1892,8 @@
      "sprite": "a1",
      "text": "Pitchers",
      "style": "d8_g3_ke_a1",
-     "font": "ttf:rounded:13:0.0:0.85:0.4",
-     "baseline": 47,
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 50,
      "pages": [
       28
      ],
@@ -1102,7 +1906,7 @@
      "sprite": "a2",
      "text": "Pitch View",
      "style": "d8_g3_ke_a2",
-     "font": "ttf:narrow:18:0.0:0.85:0.35",
+     "font": "ttf:rounded:18:0.0:0.92:0.35",
      "baseline": 50,
      "pages": [
       28
@@ -1116,8 +1920,8 @@
      "sprite": "a3",
      "text": "Pitch Records",
      "style": "d8_g3_ke_a3",
-     "font": "ttf:narrow:10:0.0:0.85:0.35",
-     "baseline": 46,
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 48,
      "pages": [
       28
      ],
@@ -1130,8 +1934,8 @@
      "sprite": "a4",
      "text": "Batted Balls",
      "style": "d8_g3_ke_a4",
-     "font": "ttf:rounded:10:0.0:0.85:0.35",
-     "baseline": 46,
+     "font": "ttf:rounded:17:0.0:0.85:0.4",
+     "baseline": 49,
      "pages": [
       28
      ],
@@ -1157,7 +1961,7 @@
     },
     {
      "sprite": "ae",
-     "text": "\u2460/\u2461: start pitch trace",
+     "text": "1/2: start pitch trace",
      "style": "d8_g3_ke_ae",
      "font": "ttf:rounded:14:0.0:1.0:0.4",
      "slices": true,
@@ -1989,8 +2793,8 @@
      ],
      "text": "CS Pacific",
      "style": "d8_g3_ke_a8a",
-     "font": "ttf:narrow:24:0.0:0.85:0.35",
-     "baseline": 30,
+     "font": "ttf:rounded:18:0.0:0.85:0.35",
+     "baseline": 27,
      "left": 2,
      "sprites": [
       "a8"
@@ -2006,8 +2810,8 @@
      ],
      "text": "CS Central",
      "style": "d8_g3_ke_a9a",
-     "font": "ttf:narrow:24:0.0:0.85:0.35",
-     "baseline": 30,
+     "font": "ttf:rounded:17:0.0:0.85:0.4",
+     "baseline": 26,
      "left": 2,
      "sprites": [
       "a9"
@@ -2023,8 +2827,8 @@
      ],
      "text": "Game",
      "style": "d8_g3_ke_dai",
-     "font": "ttf:narrow:10:0.0:0.85:0.35",
-     "baseline": 20
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 19
     },
     {
      "from": [
