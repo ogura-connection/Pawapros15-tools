@@ -2,6 +2,1674 @@
  "arc": "are_sub.arc",
  "repack": [
   {
+   "bank": "m3_are",
+   "palette": 0,
+   "style": "d7_m3_are_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     120,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Data Corner",
+     "style": "d7_m3_are_00",
+     "font": "ttf:rounded:27:0.0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      9
+     ]
+    }
+   ],
+   "name": "m3_are_titles"
+  },
+  {
+   "bank": "m3_are",
+   "palette": 0,
+   "style": "d7_m3_are_01",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     112,
+     48,
+     128,
+     96
+    ],
+    [
+     5,
+     0,
+     112,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Player Ratings",
+     "style": "d7_m3_are_01",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4,
+     "pages": [
+      0,
+      2
+     ],
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Original Player\nPassword Entry",
+     "style": "d7_m3_are_02",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 32,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Move Players",
+     "style": "d7_m3_are_03",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 26,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Move Teams",
+     "style": "d7_m3_are_04",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 26,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Voice Settings",
+     "style": "d7_m3_are_05",
+     "font": "ttf:rounded:13:0.0:0.92:0.4",
+     "baseline": 28,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Stats Settings",
+     "style": "d7_m3_are_06",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 28,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Fight Song\nPassword Entry",
+     "style": "d7_m3_are_07",
+     "font": "ttf:rounded:9:0.0:1.0:0.3",
+     "baseline": 29,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Fight Song\nData Corner",
+     "style": "d7_m3_are_08",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 32,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Install",
+     "style": "d7_m3_are_09",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 27,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Load Data",
+     "style": "d7_m3_are_0a",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 27,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "Power Pros Portable\nLink",
+     "style": "d7_m3_are_0b",
+     "font": "ttf:rounded:10:0.0:0.85:0.35",
+     "baseline": 32,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "0c",
+     "text": "Jersey Names",
+     "style": "d7_m3_are_0c",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    }
+   ],
+   "name": "m3_are_btn"
+  },
+  {
+   "bank": "s4w_are",
+   "palette": 0,
+   "style": "d7_m3_are_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     2,
+     0,
+     48,
+     120,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Data Corner",
+     "style": "d7_m3_are_00",
+     "font": "ttf:rounded:27:0.0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      9
+     ]
+    }
+   ],
+   "name": "s4w_are_titles"
+  },
+  {
+   "bank": "s4w_are",
+   "palette": 0,
+   "style": "d7_s4w_are_01",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Player Ratings",
+     "style": "d7_s4w_are_01",
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
+     "baseline": 38,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Original Player\nPassword Entry",
+     "style": "d7_s4w_are_02",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 39,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Fight Song\nPassword Entry",
+     "style": "d7_s4w_are_03",
+     "font": "ttf:rounded:10:0.0:1.0:0.35",
+     "baseline": 39,
+     "pages": [
+      0
+     ],
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Voice Settings",
+     "style": "d7_s4w_are_04",
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
+     "baseline": 36,
+     "pages": [
+      0,
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Jersey Names",
+     "style": "d7_s4w_are_05",
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
+     "baseline": 35,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Stats Settings",
+     "style": "d7_s4w_are_06",
+     "font": "ttf:rounded:14:0.0:0.92:0.4",
+     "baseline": 36,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Load Data",
+     "style": "d7_s4w_are_07",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 36,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      5
+     ]
+    }
+   ],
+   "name": "s4w_are_btn"
+  },
+  {
+   "bank": "m3_oen",
+   "palette": 0,
+   "style": "d7_m3_oen_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     88,
+     128
+    ],
+    [
+     1,
+     88,
+     0,
+     128,
+     40
+    ],
+    [
+     1,
+     88,
+     80,
+     112,
+     128
+    ],
+    [
+     1,
+     112,
+     80,
+     128,
+     96
+    ],
+    [
+     2,
+     0,
+     0,
+     104,
+     128
+    ],
+    [
+     2,
+     104,
+     64,
+     128,
+     128
+    ],
+    [
+     2,
+     104,
+     0,
+     128,
+     48
+    ],
+    [
+     2,
+     120,
+     48,
+     128,
+     64
+    ],
+    [
+     3,
+     0,
+     0,
+     40,
+     88
+    ],
+    [
+     11,
+     88,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     14,
+     88,
+     64,
+     128,
+     96
+    ],
+    [
+     14,
+     88,
+     0,
+     112,
+     32
+    ],
+    [
+     14,
+     112,
+     32,
+     128,
+     64
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     17,
+     0,
+     88,
+     8,
+     104
+    ],
+    [
+     18,
+     72,
+     72,
+     96,
+     104
+    ],
+    [
+     19,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     20,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Fight Song Data Corner",
+     "style": "d7_m3_oen_00",
+     "font": "ttf:rounded:18:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      129
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Listen",
+     "style": "d7_m3_oen_06",
+     "font": "ttf:narrow:20:0.0:0.92:0.35",
+     "baseline": 40,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      138
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Show\nPassword",
+     "style": "d7_m3_oen_07",
+     "font": "ttf:rounded:12:0.0:0.85:0.35",
+     "baseline": 42,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      139
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Copy",
+     "style": "d7_m3_oen_08",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 36,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      137
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "Swap",
+     "style": "d7_m3_oen_09",
+     "font": "ttf:rounded:19:0.0:1.0:0.35",
+     "baseline": 40,
+     "pages": [
+      2,
+      3
+     ],
+     "palettes": [
+      140
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Delete",
+     "style": "d7_m3_oen_0a",
+     "font": "ttf:rounded:19:0.0:0.85:0.35",
+     "baseline": 38,
+     "pages": [
+      2,
+      17
+     ],
+     "palettes": [
+      136
+     ]
+    },
+    {
+     "sprite": "0b",
+     "text": "Reload",
+     "style": "d7_m3_oen_0b",
+     "font": "ttf:narrow:20:0.0:0.92:0.35",
+     "baseline": 41,
+     "pages": [
+      20
+     ],
+     "palettes": [
+      74
+     ]
+    },
+    {
+     "sprite": "0c",
+     "text": "Send",
+     "style": "d7_m3_oen_0c",
+     "font": "ttf:rounded:20:0.0:1.0:0.35",
+     "baseline": 39,
+     "pages": [
+      19
+     ],
+     "palettes": [
+      139
+     ]
+    },
+    {
+     "sprite": "15",
+     "text": "Copy it?",
+     "style": "d7_m3_oen_15",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 22,
+     "pages": [
+      14,
+      15
+     ],
+     "palettes": [
+      141
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Swap them?",
+     "style": "d7_m3_oen_16",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
+     "baseline": 22,
+     "pages": [
+      14,
+      15
+     ],
+     "palettes": [
+      141
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "OK to delete?",
+     "style": "d7_m3_oen_1a",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
+     "pages": [
+      11,
+      14
+     ],
+     "palettes": [
+      133
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "Send\nFight Song",
+     "style": "d7_m3_oen_31",
+     "font": "ttf:narrow:18:0.0:0.85:0.35",
+     "baseline": 72,
+     "pages": [
+      20
+     ],
+     "palettes": [
+      175
+     ]
+    },
+    {
+     "sprite": "33",
+     "text": "No Jikkyou Pawapuro Wii\ndata found",
+     "style": "d7_m3_oen_33",
+     "font": "ttf:rounded:13:0.0:0.85:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "pages": [
+      18,
+      19,
+      20
+     ],
+     "palettes": [
+      168
+     ]
+    },
+    {
+     "sprite": "36",
+     "text": "Yes",
+     "style": "d7_m3_oen_36",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 24,
+     "pages": [
+      15
+     ],
+     "palettes": [
+      141
+     ]
+    },
+    {
+     "sprite": "37",
+     "text": "No",
+     "style": "d7_m3_oen_37",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 24,
+     "pages": [
+      15
+     ],
+     "palettes": [
+      141
+     ]
+    }
+   ],
+   "name": "m3_oen_all"
+  },
+  {
+   "bank": "m3_ido",
+   "palette": 0,
+   "style": "d7_m3_ido_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     64,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     80,
+     64,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     64,
+     40
+    ],
+    [
+     9,
+     0,
+     40,
+     16,
+     80
+    ],
+    [
+     10,
+     0,
+     0,
+     32,
+     16
+    ],
+    [
+     16,
+     0,
+     56,
+     128,
+     128
+    ],
+    [
+     16,
+     56,
+     0,
+     96,
+     56
+    ],
+    [
+     16,
+     120,
+     0,
+     128,
+     56
+    ],
+    [
+     17,
+     0,
+     0,
+     80,
+     128
+    ],
+    [
+     17,
+     88,
+     0,
+     128,
+     128
+    ],
+    [
+     17,
+     80,
+     0,
+     88,
+     72
+    ],
+    [
+     17,
+     80,
+     80,
+     88,
+     128
+    ],
+    [
+     18,
+     0,
+     0,
+     56,
+     72
+    ],
+    [
+     18,
+     56,
+     0,
+     88,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Move Players",
+     "style": "d7_m3_ido_00",
+     "font": "ttf:rounded:19:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
+     "pages": [
+      9,
+      10
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "01",
+     "text": "Move Teams",
+     "style": "d7_m3_ido_01",
+     "font": "ttf:rounded:20:0.0:0.92:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      45
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "View",
+     "style": "d7_m3_ido_03",
+     "font": "ttf:rounded:18:0.0:0.85:0.35",
+     "baseline": 34,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      26
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Copy",
+     "style": "d7_m3_ido_04",
+     "font": "ttf:rounded:18:0.0:0.92:0.35",
+     "baseline": 34,
+     "pages": [
+      7,
+      9
+     ],
+     "palettes": [
+      27
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Swap",
+     "style": "d7_m3_ido_05",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 32,
+     "pages": [
+      7,
+      9
+     ],
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Delete",
+     "style": "d7_m3_ido_06",
+     "font": "ttf:narrow:16:0.0:0.85:0.4",
+     "baseline": 33,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      29
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Reload",
+     "style": "d7_m3_ido_07",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 34,
+     "pages": [
+      18
+     ],
+     "palettes": [
+      38
+     ]
+    },
+    {
+     "sprite": "16",
+     "text": "Yes",
+     "style": "d7_m3_ido_16",
+     "font": "ttf:rounded:16:0.0:1.0:0.4",
+     "baseline": 27,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      21
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "No",
+     "style": "d7_m3_ido_17",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 26,
+     "pages": [
+      7
+     ],
+     "palettes": [
+      21
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "No Jikkyou Pawapuro Wii\ndata found",
+     "style": "d7_m3_ido_27",
+     "font": "ttf:rounded:20:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -2,
+     "pages": [
+      16,
+      17,
+      18
+     ],
+     "palettes": [
+      168
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      32,
+      128,
+      64
+     ],
+     "text": "Copy it?",
+     "style": "d7_m3_ido_0b~0_80",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 23,
+     "left": 45
+    },
+    {
+     "from": [
+      6,
+      0,
+      64,
+      96,
+      96
+     ],
+     "text": "Copy it?",
+     "style": "d7_m3_ido_0b~80_4096",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 23,
+     "left": 45
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Swap them?",
+     "style": "d7_m3_ido_0d~0_128",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 22,
+     "left": 33
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      48,
+      64
+     ],
+     "text": "Swap them?",
+     "style": "d7_m3_ido_0d~128_4096",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 22,
+     "left": 33
+    },
+    {
+     "from": [
+      6,
+      96,
+      64,
+      128,
+      96
+     ],
+     "text": "OK to delete?",
+     "style": "d7_m3_ido_0e~0_32",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 23,
+     "left": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "OK to delete?",
+     "style": "d7_m3_ido_0e~32_160",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 23,
+     "left": 18
+    },
+    {
+     "from": [
+      7,
+      120,
+      0,
+      128,
+      32
+     ],
+     "text": "OK to delete?",
+     "style": "d7_m3_ido_0e~160_168",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 23,
+     "left": 18
+    },
+    {
+     "from": [
+      7,
+      0,
+      32,
+      16,
+      64
+     ],
+     "text": "OK to delete?",
+     "style": "d7_m3_ido_0e~168_4096",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 23,
+     "left": 18
+    }
+   ],
+   "name": "m3_ido_all"
+  },
+  {
+   "bank": "m3_inst",
+   "palette": 0,
+   "style": "d7_m3_inst_02",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     104,
+     40,
+     128
+    ],
+    [
+     5,
+     64,
+     104,
+     104,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     9,
+     104,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Now",
+     "style": "d7_m3_inst_02",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 18,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      165
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "End",
+     "style": "d7_m3_inst_04",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 18,
+     "pages": [
+      5
+     ],
+     "palettes": [
+      165
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Moving data...",
+     "style": "d7_m3_inst_25",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 44,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      167
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Data moved!",
+     "style": "d7_m3_inst_26",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 44,
+     "pages": [
+      9
+     ],
+     "palettes": [
+      167
+     ]
+    }
+   ],
+   "name": "m3_inst_all"
+  },
+  {
+   "bank": "m3_pss",
+   "palette": 0,
+   "style": "d7_m3_pss_05",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     112,
+     96,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     4,
+     0,
+     88,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "05",
+     "text": "Insert",
+     "style": "d7_m3_pss_05",
+     "font": "ttf:rounded:15:0.0:0.92:0.4",
+     "baseline": 24,
+     "pages": [
+      4
+     ],
+     "palettes": [
+      187
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Quit",
+     "style": "d7_m3_pss_06",
+     "font": "ttf:rounded:12:0.0:1.0:0.35",
+     "baseline": 22,
+     "pages": [
+      4
+     ],
+     "palettes": [
+      185
+     ]
+    },
+    {
+     "from": [
+      4,
+      8,
+      112,
+      88,
+      128
+     ],
+     "text": "Move cursor",
+     "style": "d7_m3_pss_cur",
+     "font": "ttf:narrow:10:0.0:1.0:0.35",
+     "baseline": 13
+    },
+    {
+     "from": [
+      4,
+      88,
+      112,
+      128,
+      128
+     ],
+     "text": "L/R:",
+     "style": "d7_m3_pss_lr",
+     "font": "ttf:rounded:11:0.0:1.0:0.35",
+     "baseline": 15,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      112,
+      96,
+      128
+     ],
+     "text": "+Pad left/right:",
+     "style": "d7_m3_pss_pad",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 12
+    }
+   ],
+   "name": "m3_pss_all"
+  },
+  {
+   "bank": "m3_seiseki",
+   "palette": 0,
+   "style": "d7_m3_seiseki_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     1,
+     0,
+     96,
+     80,
+     128
+    ],
+    [
+     2,
+     0,
+     88,
+     112,
+     120
+    ],
+    [
+     2,
+     0,
+     0,
+     64,
+     40
+    ],
+    [
+     2,
+     64,
+     72,
+     96,
+     88
+    ],
+    [
+     2,
+     112,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     64,
+     0,
+     72,
+     24
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     3,
+     56,
+     112,
+     120,
+     128
+    ],
+    [
+     3,
+     112,
+     80,
+     128,
+     96
+    ],
+    [
+     3,
+     112,
+     96,
+     120,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Stats Settings",
+     "style": "d7_m3_seiseki_00",
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
+     "baseline": 32,
+     "pages": [
+      1
+     ],
+     "palettes": [
+      113
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Auto",
+     "style": "d7_m3_seiseki_05",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 28,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      78
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "Set Myself",
+     "style": "d7_m3_seiseki_06",
+     "font": "ttf:rounded:10:0.0:0.92:0.35",
+     "baseline": 26,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      77
+     ]
+    },
+    {
+     "sprite": "07",
+     "text": "Cancel",
+     "style": "d7_m3_seiseki_07",
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 29,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      76
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Delete",
+     "style": "d7_m3_seiseki_08",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 28,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      75
+     ]
+    },
+    {
+     "sprite": "10",
+     "text": "Save",
+     "style": "d7_m3_seiseki_10",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 30,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      122
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "After Change",
+     "style": "d7_m3_seiseki_03h",
+     "font": "ttf:rounded:14:0.0:0.92:0.4",
+     "baseline": 192,
+     "pages": [
+      2,
+      3
+     ],
+     "palettes": [
+      126
+     ]
+    },
+    {
+     "from": [
+      1,
+      80,
+      48,
+      128,
+      72
+     ],
+     "text": "Current Settings",
+     "style": "d7_m3_seiseki_01h~0_48",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 16,
+     "left": -3
+    },
+    {
+     "from": [
+      1,
+      80,
+      72,
+      120,
+      96
+     ],
+     "text": "Current Settings",
+     "style": "d7_m3_seiseki_01h~48_4096",
+     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "baseline": 16,
+     "left": -3
+    },
+    {
+     "from": [
+      2,
+      0,
+      88,
+      64,
+      112
+     ],
+     "text": "Choose a player",
+     "style": "d7_m3_seiseki_02~0_64",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 19,
+     "left": 6
+    },
+    {
+     "from": [
+      2,
+      0,
+      112,
+      64,
+      128
+     ],
+     "text": "Choose a player",
+     "style": "d7_m3_seiseki_02~64_128",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 19,
+     "left": 6
+    },
+    {
+     "from": [
+      2,
+      64,
+      96,
+      128,
+      104
+     ],
+     "text": "Choose a player",
+     "style": "d7_m3_seiseki_02~64_128",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 3,
+     "left": 6
+    },
+    {
+     "from": [
+      2,
+      64,
+      72,
+      96,
+      96
+     ],
+     "text": "Choose a player",
+     "style": "d7_m3_seiseki_02~128_160",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 19,
+     "left": 6
+    },
+    {
+     "from": [
+      2,
+      64,
+      104,
+      72,
+      120
+     ],
+     "text": "Choose a player",
+     "style": "d7_m3_seiseki_02~160_4096",
+     "font": "ttf:rounded:14:0.0:1.0:0.4",
+     "baseline": 14,
+     "left": 6
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      32,
+      72
+     ],
+     "text": "AVG",
+     "style": "d7_m3_seiseki_avg",
+     "font": "ttf:rounded:11:0.0:0.85:0.35",
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      48,
+      96
+     ],
+     "text": "HR",
+     "style": "d7_m3_seiseki_hr",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      48,
+      72,
+      80,
+      96
+     ],
+     "text": "RBI",
+     "style": "d7_m3_seiseki_rbi",
+     "font": "ttf:rounded:14:0.0:0.85:0.4",
+     "baseline": 19
+    },
+    {
+     "from": [
+      1,
+      32,
+      48,
+      80,
+      72
+     ],
+     "text": "ERA",
+     "style": "d7_m3_seiseki_era",
+     "font": "ttf:rounded:15:0.0:1.0:0.4",
+     "baseline": 20
+    }
+   ],
+   "name": "m3_seiseki_all"
+  },
+  {
    "bank": "s4_mem00",
    "palette": 0,
    "style": "d7_s4_mem00_00",
