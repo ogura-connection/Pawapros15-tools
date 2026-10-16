@@ -20,9 +20,18 @@ def _sil(front, c):
         return np.where(out > 0, c, 0).astype(np.uint8), b
     return style
 
+STYLES["e10_h3_stp_0_00_h"] = ringfill([15, 15, 14, 14, 13, 13], [1, 1, 11, 4, 4], [])
+STYLES["e10_h3_stp_0_00_h_m"] = ringfill([15, 15, 14, 14, 13, 13], [1, 1], [])
+STYLES["e10_h3_stp_0_00_h_s"] = ringfill([15, 15, 14, 14, 13, 13], [1], [])
+STYLES["e10_h3_stp_0_01_h"] = ringfill([15, 15, 14, 14, 13, 13], [1, 1, 11, 4, 4], [])
+STYLES["e10_h3_stp_0_01_h_m"] = ringfill([15, 15, 14, 14, 13, 13], [1, 1], [])
+STYLES["e10_h3_stp_0_01_h_s"] = ringfill([15, 15, 14, 14, 13, 13], [1], [])
 STYLES["e10_stp_00"] = ringfill([15, 15, 14, 13, 12, 1], [1], [])
 STYLES["e10_stp_00_m"] = ringfill([15, 15, 14, 13, 12, 1], [1], [])
 STYLES["e10_stp_00_s"] = ringfill([15, 15, 14, 13, 12, 1], [1], [])
 STYLES["e10_stp_01"] = ringfill([1, 10, 11, 1, 13, 4], [7], [7, 7, 7])
 STYLES["e10_stp_01_m"] = ringfill([1, 10, 11, 1, 13, 4], [7], [])
 STYLES["e10_stp_01_s"] = ringfill([1, 10, 11, 1, 13, 4], [7], [])
+STYLES["e10_tvsx_game"] = ringfill([207, 207, 207, 207, 207, 207], [157, 80, 157, 157], [60])
+STYLES["e10_tvsx_game_m"] = ringfill([207, 207, 207, 207, 207, 207], [157, 80], [])
+STYLES["e10_tvsx_game_s"] = ringfill([207, 207, 207, 207, 207, 207], [157], [])

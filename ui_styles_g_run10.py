@@ -33,5 +33,5 @@ def mk(fill, rings, t=3, foot=None):
 
 STYLES["g10_wd"] = mk([1, 2, 4], [8, 8])
 STYLES["g10_wd1"] = mk([1, 2, 4], [8])
-STYLES["g10_ban"] = mk([4], [8, 8, 15, 15], foot=5)
+STYLES["g10_ban"] = mk([4], [8, 8, 15], foot=5)
 STYLES["g10_none"] = lambda ink, base: (np.zeros((1, 1), np.uint8), base)
