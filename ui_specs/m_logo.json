@@ -1,0 +1,67 @@
+{
+ "arc": "m_logo.arc",
+ "repack": [
+  {
+   "bank": "g3_16r",
+   "palette": 0,
+   "style": "d9_ml_btn",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     16,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     16,
+     0,
+     56,
+     48,
+     128
+    ],
+    [
+     16,
+     96,
+     104,
+     128,
+     128
+    ],
+    [
+     16,
+     96,
+     56,
+     104,
+     104
+    ],
+    [
+     16,
+     104,
+     56,
+     128,
+     64
+    ],
+    [
+     16,
+     104,
+     80,
+     128,
+     88
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "15",
+     "text": "No Arrange\nTeams!",
+     "style": "d9_ml_msg_logo",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "valign": "centre"
+    }
+   ],
+   "name": "d9 m_logo",
+   "share": true
+  }
+ ]
+}

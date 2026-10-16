@@ -52,6 +52,15 @@ def bandeco(fill, inner, shadow, outer, edge=3):
 
 STYLES = {}
 
+# styles_scs_data.txt
+STYLES["a9_dtn_45"] = ringfill([14, 14, 14, 14, 14, 14], [9, 6, 6, 6, 6, 3, 3], [3, 3])
+STYLES["a9_dtn_46"] = ringfill([10, 10, 10, 10, 10, 10], [14, 1, 1])
+STYLES["a9_dtn_47"] = ringfill([4, 4, 4, 4, 4, 4], [8, 8, 8], [15])
+STYLES["a9_dtn_48"] = ringfill([4, 4, 4, 4, 4, 4], [8, 8, 8], [13])
+STYLES["a9_dtn_49"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7, 7, 7, 7])
+STYLES["a9_dtn_4a"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 8, 8], [8])
+STYLES["a9_dtn_4b"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 8, 3], [8])
+STYLES["a9_dtj_24"] = ringfill([1, 1, 1, 1, 1, 1], [2, 8, 8, 8])
 # styles_scs_main.txt
 STYLES["a9_smi_8a"] = flat([0, 2, 2, 2, 2, 2, 2], cut=3)
 STYLES["a9_smi_8b"] = flat([0, 2, 2, 2, 2, 2, 2], cut=3)

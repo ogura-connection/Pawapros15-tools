@@ -4648,5 +4648,62 @@
    "style": "f7_plate3d",
    "copy": "clear"
   }
+ ],
+ "sheet": [
+  {
+   "pages": "tex_s3_aso0",
+   "cols": 9,
+   "items": [
+    {
+     "box": [
+      270,
+      28,
+      370,
+      98
+     ],
+     "bg": "mode"
+    },
+    {
+     "box": [
+      270,
+      28,
+      370,
+      98
+     ],
+     "bg": "keep",
+     "text": "Gear",
+     "font": "ttf:rounded:24:0.0:0.9:0.3",
+     "centre": [
+      320,
+      48
+     ],
+     "colour": "#83ffac",
+     "rings": [
+      "#ffffff"
+     ],
+     "crisp": true
+    },
+    {
+     "box": [
+      270,
+      28,
+      370,
+      98
+     ],
+     "bg": "keep",
+     "text": "Settings",
+     "font": "ttf:rounded:24:0.0:0.9:0.3",
+     "centre": [
+      320,
+      78
+     ],
+     "colour": "#83ffac",
+     "rings": [
+      "#ffffff"
+     ],
+     "crisp": true
+    }
+   ]
+  }
  ]
 }
