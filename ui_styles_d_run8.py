@@ -5,10 +5,18 @@ import ui_type
 from ui_styles_ore_ini import ringfill
 
 STYLES = {}
-STYLES["d8_g3_kekx_02"] = ringfill([248, 248, 248, 246, 244, 242], [249, 250, 255, 255, 250, 250, 250], [255, 255, 153, 153])      # fill [242, 244, 246, 248]
-STYLES["d8_g3_kekx_04"] = ringfill([85, 85, 85, 233, 245, 243], [247, 251, 235, 251, 216], [153, 153, 153, 153])      # fill [85, 233, 243, 245]
-STYLES["d8_g3_kekx_08"] = ringfill([245, 245, 245, 243, 243, 243], [233, 233, 255, 247, 235, 235, 249], [134, 255, 255, 137])      # fill [243, 245]
-STYLES["d8_g3_kekx_05"] = ringfill([247, 247, 247, 247, 247, 247], [235, 85, 249, 236, 251, 251, 251], [241, 153, 255, 134])      # fill [247]
+
+
+def flat(style, idx):
+    """The same art as `style`, all one index (a flat shadow of the lettering)."""
+    def f(ink, base):
+        art, b = style(ink, base)
+        return np.where(art > 0, idx, 0).astype(np.uint8), b
+    return f
+STYLES["d8_g3_kekx_02"] = ui_type.logo(**{'fill': [252, 250, 248, 244, 242, 240], 'outline': 87, 'white': 255, 'rim': 125, 'shadow': [139, 153, 153, 153, 167], 'soft': [], 'thick': 2, 'band': 2})      # learn_logo
+STYLES["d8_g3_kekx_04"] = ui_type.logo(**{'fill': [253, 251, 235, 245, 243, 134], 'outline': 87, 'white': 255, 'rim': 166, 'shadow': [153, 153], 'soft': [], 'thick': 1, 'band': 1})      # learn_logo
+STYLES["d8_g3_kekx_08"] = ui_type.logo(**{'fill': [253, 251, 235, 245, 243, 134], 'outline': 87, 'white': 255, 'rim': 166, 'shadow': [153, 153, 153, 140, 153], 'soft': [], 'thick': 2, 'band': 2})      # learn_logo
+STYLES["d8_g3_kekx_05"] = ui_type.logo(**{'fill': [253, 251, 235, 245, 243, 134], 'outline': 87, 'white': 255, 'rim': 166, 'shadow': [153, 153], 'soft': [], 'thick': 1, 'band': 1})      # learn_logo
 STYLES["d8_g3_kn_09"] = ringfill([13, 13, 13, 13, 13, 13], [15, 15, 9, 7])      # fill [13]
 STYLES["d8_g3_kn_0a"] = ringfill([13, 13, 13, 13, 13, 13], [15, 15, 7, 7])      # fill [10, 13]
 STYLES["d8_g3_kn_0b"] = ringfill([7, 9, 7, 7, 7, 7], [15], [2])      # fill [7, 9, 10]
@@ -47,7 +55,7 @@ STYLES["d8_g3_ke_16"] = ringfill([15, 15, 15, 15, 15, 15], [8], [1])      # fill
 STYLES["d8_g3_ke_17"] = ringfill([15, 15, 15, 15, 15, 15], [14], [1])      # fill [10, 13, 15]
 STYLES["d8_g3_ke_18"] = ringfill([10, 10, 10, 10, 10, 10], [8, 8, 15], [1, 1])      # fill [10]
 STYLES["d8_g3_ke_20"] = ringfill([4, 4, 4, 4, 4, 4], [6, 15])      # fill [4]
-STYLES["d8_g3_ke_23"] = ringfill([3, 5, 13, 13, 12, 12], [9, 15, 15, 4], [8, 8, 8])      # fill [1, 3, 5, 12, 13]
+STYLES["d8_g3_ke_23"] = ui_type.logo(**{'fill': [14, 14, 13, 13, 12, 12], 'outline': 1, 'white': 15, 'rim': 7, 'shadow': [2, 8, 8, 7, 4, 8], 'soft': [], 'thick': 2, 'band': 2})      # learn_logo
 STYLES["d8_g3_ke_35"] = ringfill([7, 7, 7, 7, 7, 7], [13])      # fill [7]
 STYLES["d8_g3_ke_44"] = ringfill([7, 7, 7, 7, 7, 7], [15])      # fill [7, 13]
 STYLES["d8_g3_ke_4d"] = ringfill([7, 7, 7, 7, 7, 7], [15])      # fill [7, 9, 10, 13]
@@ -153,3 +161,4 @@ STYLES["d8_g3_ke_rival1"] = ringfill([10, 15, 15, 15, 14, 14], [8, 8])      # fi
 STYLES["d8_g3_ke_a8a"] = ringfill([5, 15, 15, 15, 15, 5], [8, 8])      # fill [5, 12, 14, 15]
 STYLES["d8_g3_ke_a9a"] = ringfill([5, 15, 15, 15, 15, 5], [8, 8])      # fill [5, 12, 14, 15]
 STYLES["d8_g3_ke_dai"] = ringfill([13, 15, 15, 15, 15, 15], [11, 7], [1, 1, 1])      # fill [10, 13, 14, 15]
+STYLES["d8_g3_kekx_03"] = flat(STYLES["d8_g3_kekx_02"], 255)      # the silhouette index of palette 32

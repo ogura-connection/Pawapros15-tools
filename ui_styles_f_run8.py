@@ -11,6 +11,8 @@ def _sil(front, c):
         return np.where(out > 0, c, 0).astype(np.uint8), b
     return style
 
+STYLES["dbg89"] = ringfill([1, 1, 1, 1, 1, 1], [10], [])
+STYLES["dbg89_s"] = ringfill([1, 1, 1, 1, 1, 1], [10], [])
 STYLES["f8_y3_kane_0a_h"] = ringfill([15, 15, 15, 15, 15, 15], [0], [7, 3])
 STYLES["f8_y3_kane_0a_h_s"] = ringfill([15, 15, 15, 15, 15, 15], [0], [])
 STYLES["f8_y3_kane_0b_h"] = ringfill([15, 15, 15, 15, 15, 15], [0], [7, 3])
