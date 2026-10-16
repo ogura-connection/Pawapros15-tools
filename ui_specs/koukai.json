@@ -1,0 +1,1086 @@
+{
+ "arc": "koukai.arc",
+ "repack": [
+  {
+   "bank": "y3_kane",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     32,
+     128,
+     128
+    ],
+    [
+     0,
+     32,
+     16,
+     80,
+     32
+    ],
+    [
+     0,
+     96,
+     16,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0a",
+     "text": "00M",
+     "style": "f8_y3_kane_0a_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 13
+    },
+    {
+     "sprite": "0b",
+     "text": "0K yen",
+     "style": "f8_y3_kane_0b_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "baseline": 14
+    },
+    {
+     "sprite": "0d",
+     "text": "yen",
+     "style": "f8_y3_kane_0d_h_s",
+     "font": "ttf:narrow:10:0.0:0.92:0.3",
+     "baseline": 14
+    },
+    {
+     "sprite": "0e",
+     "text": "00M yen",
+     "style": "f8_y3_kane_0e_h_s",
+     "font": "ttf:narrow:10:0.0:0.92:0.3",
+     "baseline": 13
+    }
+   ],
+   "name": "y3_kane",
+   "share": true
+  },
+  {
+   "bank": "y3_koukai",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     64,
+     128,
+     120
+    ],
+    [
+     2,
+     40,
+     0,
+     128,
+     64
+    ],
+    [
+     3,
+     112,
+     32,
+     128,
+     88
+    ],
+    [
+     3,
+     120,
+     88,
+     128,
+     120
+    ],
+    [
+     4,
+     96,
+     64,
+     128,
+     128
+    ],
+    [
+     4,
+     96,
+     48,
+     104,
+     64
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     6,
+     120,
+     0,
+     128,
+     112
+    ],
+    [
+     7,
+     80,
+     0,
+     128,
+     96
+    ],
+    [
+     7,
+     56,
+     112,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     112,
+     40,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     8,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     8,
+     32,
+     64,
+     128,
+     80
+    ],
+    [
+     8,
+     32,
+     80,
+     48,
+     104
+    ],
+    [
+     9,
+     0,
+     0,
+     96,
+     96
+    ],
+    [
+     9,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     9,
+     96,
+     80,
+     128,
+     96
+    ],
+    [
+     9,
+     48,
+     112,
+     64,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     64,
+     64
+    ],
+    [
+     11,
+     72,
+     56,
+     128,
+     128
+    ],
+    [
+     11,
+     64,
+     32,
+     104,
+     56
+    ],
+    [
+     12,
+     0,
+     112,
+     40,
+     128
+    ],
+    [
+     13,
+     0,
+     80,
+     88,
+     128
+    ],
+    [
+     13,
+     88,
+     80,
+     128,
+     96
+    ],
+    [
+     13,
+     88,
+     112,
+     104,
+     128
+    ],
+    [
+     14,
+     0,
+     88,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "First Offer",
+     "style": "f8_y3_koukai_00_26_h",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 30,
+     "palettes": [
+      26
+     ]
+    },
+    {
+     "sprite": "01",
+     "text": "00M",
+     "style": "f8_y3_koukai_01_s",
+     "font": "ttf:narrow:8:0.0:1.0:0.12",
+     "baseline": 21
+    },
+    {
+     "sprite": "1a",
+     "text": "Talks & Offers",
+     "style": "f8_y3_koukai_1a_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 47,
+     "dy": 1
+    },
+    {
+     "sprite": "26",
+     "text": "Negotiate",
+     "style": "f8_y3_koukai_26_15",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 25,
+     "palettes": [
+      15
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "Propose",
+     "style": "f8_y3_koukai_27_13",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 25,
+     "palettes": [
+      13
+     ]
+    },
+    {
+     "sprite": "28",
+     "text": "Sign",
+     "style": "f8_y3_koukai_28_14",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 25,
+     "palettes": [
+      14
+     ]
+    },
+    {
+     "sprite": "2f",
+     "text": "Series MVP",
+     "style": "f8_y3_koukai_2f_40_p_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.12",
+     "baseline": 21,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "Rookie of\nthe Year",
+     "style": "f8_y3_koukai_31_40_p_s",
+     "font": "ttf:rounded:7:0.0:1.0:0.12",
+     "baseline": 19,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "Sawamura Award",
+     "style": "f8_y3_koukai_32_40_p_s",
+     "font": "ttf:rounded:7:0.0:0.85:0.12",
+     "baseline": 18,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "33",
+     "text": "Most Wins",
+     "style": "f8_y3_koukai_33_40_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "34",
+     "text": "Best ERA",
+     "style": "f8_y3_koukai_34_40_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "35",
+     "text": "Most Strikeouts",
+     "style": "f8_y3_koukai_35_40_p_s",
+     "font": "ttf:rounded:7:0.0:0.92:0.12",
+     "baseline": 18,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "36",
+     "text": "Best Win %",
+     "style": "f8_y3_koukai_36_40_p_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "37",
+     "text": "Most Holds",
+     "style": "f8_y3_koukai_37_40_p_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "38",
+     "text": "Best Reliever",
+     "style": "f8_y3_koukai_38_40_p_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "39",
+     "text": "Most Saves",
+     "style": "f8_y3_koukai_39_40_p_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "3a",
+     "text": "HR Leader",
+     "style": "f8_y3_koukai_3a_40_p",
+     "font": "ttf:rounded:11:0.0:0.85:0.12",
+     "baseline": 21,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "3b",
+     "text": "RBI Leader",
+     "style": "f8_y3_koukai_3b_40_p_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "3c",
+     "text": "Batting Champ",
+     "style": "f8_y3_koukai_3c_40_p_s",
+     "font": "ttf:rounded:7:0.0:1.0:0.12",
+     "baseline": 19,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "3d",
+     "text": "Most Hits",
+     "style": "f8_y3_koukai_3d_40_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "3e",
+     "text": "Top OBP",
+     "style": "f8_y3_koukai_3e_40_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "3f",
+     "text": "SB Leader",
+     "style": "f8_y3_koukai_3f_40_p",
+     "font": "ttf:rounded:11:0.0:0.92:0.12",
+     "baseline": 21,
+     "palettes": [
+      40
+     ]
+    },
+    {
+     "sprite": "40",
+     "text": "Games",
+     "style": "f8_y3_koukai_40_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "41",
+     "text": "Wins",
+     "style": "f8_y3_koukai_41_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "42",
+     "text": "Losses",
+     "style": "f8_y3_koukai_42_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "43",
+     "text": "ERA",
+     "style": "f8_y3_koukai_43_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "44",
+     "text": "CG",
+     "style": "f8_y3_koukai_44_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "45",
+     "text": "Shutouts",
+     "style": "f8_y3_koukai_45_8_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "46",
+     "text": "Saves",
+     "style": "f8_y3_koukai_46_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "47",
+     "text": "Relief Points",
+     "style": "f8_y3_koukai_47_8_p_s",
+     "font": "ttf:rounded:9:0.0:0.92:0.12",
+     "baseline": 18,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "48",
+     "text": "Holds",
+     "style": "f8_y3_koukai_48_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "49",
+     "text": "Strikeouts",
+     "style": "f8_y3_koukai_49_8_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "4a",
+     "text": "Scoreless Streak",
+     "style": "f8_y3_koukai_4a_8_p_s",
+     "font": "ttf:rounded:7:0.0:0.85:0.12",
+     "baseline": 19,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "4b",
+     "text": "SP Streak",
+     "style": "f8_y3_koukai_4b_8_p",
+     "font": "ttf:rounded:12:0.0:0.85:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "4c",
+     "text": "Hits Allowed",
+     "style": "f8_y3_koukai_4c_8_p_s",
+     "font": "ttf:rounded:9:0.0:0.92:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "4d",
+     "text": "HRs Allowed",
+     "style": "f8_y3_koukai_4d_8_p_s",
+     "font": "ttf:rounded:9:0.0:0.92:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "4e",
+     "text": "Home Runs",
+     "style": "f8_y3_koukai_4e_8_p_s",
+     "font": "ttf:rounded:10:0.0:0.92:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "4f",
+     "text": "RBIs",
+     "style": "f8_y3_koukai_4f_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "50",
+     "text": "Steals",
+     "style": "f8_y3_koukai_50_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "51",
+     "text": "Sac Bunts",
+     "style": "f8_y3_koukai_51_8_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "52",
+     "text": "Sac Flies",
+     "style": "f8_y3_koukai_52_8_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "53",
+     "text": "Doubles",
+     "style": "f8_y3_koukai_53_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "54",
+     "text": "Triples",
+     "style": "f8_y3_koukai_54_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "55",
+     "text": "GIDP",
+     "style": "f8_y3_koukai_55_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "56",
+     "text": "Strikeouts",
+     "style": "f8_y3_koukai_56_8_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "57",
+     "text": "Chances",
+     "style": "f8_y3_koukai_57_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "58",
+     "text": "Errors",
+     "style": "f8_y3_koukai_58_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "59",
+     "text": "Games",
+     "style": "f8_y3_koukai_59_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "5a",
+     "text": "AVG",
+     "style": "f8_y3_koukai_5a_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "5b",
+     "text": "Walk-Offs",
+     "style": "f8_y3_koukai_5b_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "5c",
+     "text": "Bases Loaded",
+     "style": "f8_y3_koukai_5c_8_p_s",
+     "font": "ttf:rounded:7:0.0:1.0:0.12",
+     "baseline": 18,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "5d",
+     "text": "SB Success %",
+     "style": "f8_y3_koukai_5d_8_p_s",
+     "font": "ttf:rounded:7:0.0:1.0:0.12",
+     "baseline": 19,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "5e",
+     "text": "RISP",
+     "style": "f8_y3_koukai_5e_8_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "5f",
+     "text": "FA Rights",
+     "style": "f8_y3_koukai_5f_41_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      41
+     ]
+    },
+    {
+     "sprite": "60",
+     "text": "Japan Champs",
+     "style": "f8_y3_koukai_60_41_p_s",
+     "font": "ttf:rounded:7:0.0:1.0:0.12",
+     "baseline": 19,
+     "palettes": [
+      41
+     ]
+    },
+    {
+     "sprite": "61",
+     "text": "Pennant",
+     "style": "f8_y3_koukai_61_41_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      41
+     ]
+    },
+    {
+     "sprite": "62",
+     "text": "Injury",
+     "style": "f8_y3_koukai_62_41_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      41
+     ]
+    },
+    {
+     "sprite": "6b",
+     "text": "Trade Request",
+     "style": "f8_y3_koukai_6b_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "89",
+     "text": "0K yen",
+     "style": "f8_y3_koukai_89",
+     "font": "ttf:narrow:26:0.0:1.0:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "8a",
+     "text": "0K yen",
+     "style": "f8_y3_koukai_8a",
+     "font": "ttf:narrow:26:0.0:1.0:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "8b",
+     "text": "00M",
+     "style": "f8_y3_koukai_8b",
+     "font": "ttf:narrow:24:0.0:1.0:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "8c",
+     "text": "00M",
+     "style": "f8_y3_koukai_8c",
+     "font": "ttf:narrow:24:0.0:1.0:0.3",
+     "baseline": 36
+    },
+    {
+     "sprite": "8d",
+     "text": "Win %",
+     "style": "f8_y3_koukai_8d_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "8e",
+     "text": "Multi-Year Deal",
+     "style": "f8_y3_koukai_8e_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 22,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "8f",
+     "text": "Salary",
+     "style": "f8_y3_koukai_8f_52-54",
+     "font": "ttf:rounded:32:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 47,
+     "dy": 4,
+     "palettes": [
+      52,
+      54
+     ]
+    },
+    {
+     "sprite": "96",
+     "text": "Press to confirm",
+     "style": "f8_y3_koukai_96",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 60,
+     "dy": 0
+    },
+    {
+     "sprite": "a2",
+     "text": "Change Number",
+     "style": "f8_y3_koukai_a2_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "a3",
+     "text": "My Records",
+     "style": "f8_y3_koukai_a3_43",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 26,
+     "palettes": [
+      43
+     ]
+    },
+    {
+     "sprite": "a4",
+     "text": "Flag",
+     "style": "f8_y3_koukai_a4",
+     "font": "ttf:rounded:30:0.0:0.92:0.3",
+     "baseline": 41
+    },
+    {
+     "sprite": "a5",
+     "text": "Pinch Hit",
+     "style": "f8_y3_koukai_a5_8_p_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "a6",
+     "text": "vs LHP",
+     "style": "f8_y3_koukai_a6_8_p",
+     "font": "ttf:rounded:12:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "a7",
+     "text": "vs LHB",
+     "style": "f8_y3_koukai_a7_8_p",
+     "font": "ttf:rounded:11:0.0:1.0:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "a8",
+     "text": "0K yen",
+     "style": "f8_y3_koukai_a8_s",
+     "font": "ttf:narrow:8:0.0:1.0:0.12",
+     "baseline": 21
+    },
+    {
+     "sprite": "a9",
+     "text": "0K yen",
+     "style": "f8_y3_koukai_a9_s",
+     "font": "ttf:narrow:8:0.0:1.0:0.12",
+     "baseline": 21
+    },
+    {
+     "sprite": "aa",
+     "text": "yen",
+     "style": "f8_y3_koukai_aa_s",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "ab",
+     "text": "yen",
+     "style": "f8_y3_koukai_ab_s",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "ac",
+     "text": "00M yen",
+     "style": "f8_y3_koukai_ac_s",
+     "font": "ttf:narrow:7:0.0:1.0:0.12",
+     "baseline": 19
+    },
+    {
+     "sprite": "ad",
+     "text": "00M yen",
+     "style": "f8_y3_koukai_ad_s",
+     "font": "ttf:narrow:7:0.0:1.0:0.12",
+     "baseline": 19
+    },
+    {
+     "sprite": "ae",
+     "text": "0K",
+     "style": "f8_y3_koukai_ae",
+     "font": "ttf:narrow:30:0.0:1.0:0.3",
+     "baseline": 40
+    },
+    {
+     "sprite": "af",
+     "text": "0K",
+     "style": "f8_y3_koukai_af",
+     "font": "ttf:narrow:30:0.0:1.0:0.3",
+     "baseline": 40
+    },
+    {
+     "sprite": "b0",
+     "text": "yen",
+     "style": "f8_y3_koukai_b0",
+     "font": "ttf:narrow:27:0.0:1.0:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "b1",
+     "text": "yen",
+     "style": "f8_y3_koukai_b1",
+     "font": "ttf:narrow:27:0.0:1.0:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "b2",
+     "text": "Hold Points",
+     "style": "f8_y3_koukai_b2_8_p_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "b3",
+     "text": "HP Streak",
+     "style": "f8_y3_koukai_b3_8_p",
+     "font": "ttf:rounded:12:0.0:0.85:0.12",
+     "baseline": 21,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "b4",
+     "text": "Save Streak",
+     "style": "f8_y3_koukai_b4_8_p_s",
+     "font": "ttf:rounded:10:0.0:0.85:0.12",
+     "baseline": 20,
+     "palettes": [
+      8
+     ]
+    }
+   ],
+   "name": "y3_koukai",
+   "share": true
+  }
+ ]
+}
