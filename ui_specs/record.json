@@ -1,0 +1,112 @@
+{
+ "arc": "record.arc",
+ "repack": [
+  {
+   "bank": "g3_kekx",
+   "palette": 0,
+   "style": "d8_g3_kekx_02",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     88,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Game Results",
+     "style": "d8_g3_kekx_02",
+     "font": "ttf:narrow:29:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Game Results",
+     "style": "d8_g3_kekx_02",
+     "font": "ttf:narrow:29:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      32
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Game Results",
+     "style": "d8_g3_kekx_04",
+     "font": "ttf:narrow:12:0.0:0.92:0.35",
+     "baseline": 4,
+     "pages": [
+      1,
+      2
+     ],
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "08",
+     "text": "Game Results",
+     "style": "d8_g3_kekx_08",
+     "font": "ttf:narrow:19:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -1,
+     "pages": [
+      1,
+      2,
+      3
+     ],
+     "palettes": [
+      0
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "vs",
+     "style": "d8_g3_kekx_05",
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 7,
+     "pages": [
+      2
+     ],
+     "palettes": [
+      0
+     ]
+    }
+   ],
+   "name": "g3_kekx"
+  }
+ ]
+}
