@@ -219,13 +219,6 @@
     ],
     [
      11,
-     0,
-     0,
-     64,
-     64
-    ],
-    [
-     11,
      72,
      56,
      128,
@@ -264,13 +257,6 @@
      88,
      112,
      104,
-     128
-    ],
-    [
-     14,
-     0,
-     88,
-     128,
      128
     ]
    ],
@@ -902,14 +888,11 @@
     {
      "sprite": "8f",
      "text": "Salary",
-     "style": "f8_y3_koukai_8f_52-54",
-     "font": "ttf:rounded:32:0.0:1.0:0.3",
-     "slices": true,
-     "slice_width": 47,
-     "dy": 4,
+     "style": "f8_y3_koukai_8f_52_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 0,
      "palettes": [
-      52,
-      54
+      52
      ]
     },
     {
@@ -940,13 +923,6 @@
      "palettes": [
       43
      ]
-    },
-    {
-     "sprite": "a4",
-     "text": "Flag",
-     "style": "f8_y3_koukai_a4",
-     "font": "ttf:rounded:30:0.0:0.92:0.3",
-     "baseline": 41
     },
     {
      "sprite": "a5",

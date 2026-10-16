@@ -13,7 +13,7 @@
      80,
      0,
      128,
-     64
+     52
     ],
     [
      2,
@@ -34,7 +34,7 @@
      56,
      0,
      128,
-     80
+     68
     ],
     [
      3,
@@ -103,9 +103,9 @@
       24
      ],
      "text": "Bat",
-     "style": "e8_s4_kal00_02_2.104.0_h",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
-     "baseline": 18,
+     "style": "e8_s4_kal00_02_2.104.0_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 17,
      "sprites": [
       "02"
      ]
@@ -119,9 +119,9 @@
       24
      ],
      "text": "Run",
-     "style": "e8_s4_kal00_02_2.80.0_h",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
-     "baseline": 18,
+     "style": "e8_s4_kal00_02_2.80.0_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 16,
      "centre_x": 15,
      "sprites": [
       "02"
@@ -136,9 +136,9 @@
       48
      ],
      "text": "Pitch",
-     "style": "e8_s4_kal00_02_2.80.24_h",
-     "font": "ttf:rounded:12:0.0:0.85:0.3",
-     "baseline": 18,
+     "style": "e8_s4_kal00_02_2.80.24_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 17,
      "sprites": [
       "02"
      ]
@@ -152,9 +152,9 @@
       48
      ],
      "text": "Field",
-     "style": "e8_s4_kal00_02_2.104.24_h",
-     "font": "ttf:rounded:12:0.0:0.92:0.3",
-     "baseline": 18,
+     "style": "e8_s4_kal00_02_2.104.24_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 17,
      "sprites": [
       "02"
      ]
@@ -168,8 +168,8 @@
       64
      ],
      "text": "Rank",
-     "style": "e8_s4_kal00_02_2.80.48_h",
-     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "style": "e8_s4_kal00_02_2.80.48_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
      "baseline": 14,
      "sprites": [
       "02"
@@ -184,10 +184,10 @@
       24
      ],
      "text": "Calories Burned",
-     "style": "e8_s4_kal00_02_3.64.0-3.64.24_h~0_64",
-     "font": "ttf:rounded:12:0.0:0.85:0.3",
-     "baseline": 17,
-     "left": -1,
+     "style": "e8_s4_kal00_02_3.64.0-3.64.24_h_s~0_64",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 15,
+     "left": 0,
      "sprites": [
       "02"
      ]
@@ -201,10 +201,10 @@
       48
      ],
      "text": "Calories Burned",
-     "style": "e8_s4_kal00_02_3.64.0-3.64.24_h~64_4096",
-     "font": "ttf:rounded:12:0.0:0.85:0.3",
-     "baseline": 17,
-     "left": -1,
+     "style": "e8_s4_kal00_02_3.64.0-3.64.24_h_s~64_4096",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 15,
+     "left": 0,
      "sprites": [
       "02"
      ]
@@ -240,11 +240,11 @@
     {
      "sprite": "07",
      "text": "Rimopawa Test",
-     "style": "e8_s4_kal00_07_14_h",
-     "font": "ttf:narrow:14:0.0:1.0:0.3",
+     "style": "e8_s4_kal00_07_14_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 60,
-     "dy": -3,
+     "slice_width": 43,
+     "dy": 0,
      "palettes": [
       14
      ]
