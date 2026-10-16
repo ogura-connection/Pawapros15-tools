@@ -28,7 +28,7 @@
      "sprite": "00",
      "text": "Data Corner",
      "style": "d7_m3_are_00",
-     "font": "ttf:rounded:33:0.0:0.85:0.35",
+     "font": "ttf:rounded:33:0.0:0.92:0.35",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -111,8 +111,8 @@
      "sprite": "01",
      "text": "Player Ratings",
      "style": "d7_m3_are_01",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 24,
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 26,
      "pages": [
       0,
       2
@@ -125,8 +125,8 @@
      "sprite": "02",
      "text": "Original Player\nPassword Entry",
      "style": "d7_m3_are_02",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 30,
+     "font": "ttf:rounded:11:0.0:1.0:0.45",
+     "baseline": 32,
      "pages": [
       0
      ],
@@ -138,8 +138,8 @@
      "sprite": "03",
      "text": "Move Players",
      "style": "d7_m3_are_03",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 24,
+     "font": "ttf:rounded:17:0.0:0.85:0.4",
+     "baseline": 28,
      "pages": [
       1
      ],
@@ -151,8 +151,8 @@
      "sprite": "04",
      "text": "Move Teams",
      "style": "d7_m3_are_04",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 24,
+     "font": "ttf:narrow:20:0.0:0.85:0.35",
+     "baseline": 30,
      "pages": [
       1
      ],
@@ -164,8 +164,8 @@
      "sprite": "05",
      "text": "Voice Settings",
      "style": "d7_m3_are_05",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 26,
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "baseline": 28,
      "pages": [
       1
      ],
@@ -177,8 +177,8 @@
      "sprite": "06",
      "text": "Stats Settings",
      "style": "d7_m3_are_06",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 26,
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "baseline": 29,
      "pages": [
       1
      ],
@@ -190,8 +190,8 @@
      "sprite": "07",
      "text": "Fight Song\nPassword Entry",
      "style": "d7_m3_are_07",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 29,
+     "font": "ttf:rounded:11:0.0:1.0:0.45",
+     "baseline": 32,
      "pages": [
       0
      ],
@@ -203,8 +203,8 @@
      "sprite": "08",
      "text": "Fight Song\nData Corner",
      "style": "d7_m3_are_08",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 31,
+     "font": "ttf:rounded:12:0.0:1.0:0.45",
+     "baseline": 33,
      "pages": [
       0
      ],
@@ -216,8 +216,8 @@
      "sprite": "09",
      "text": "Install",
      "style": "d7_m3_are_09",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 25,
+     "font": "ttf:rounded:19:0.0:1.0:0.35",
+     "baseline": 30,
      "pages": [
       2
      ],
@@ -229,8 +229,8 @@
      "sprite": "0a",
      "text": "Load Data",
      "style": "d7_m3_are_0a",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 25,
+     "font": "ttf:rounded:20:0.0:0.92:0.35",
+     "baseline": 30,
      "pages": [
       1,
       2
@@ -243,8 +243,8 @@
      "sprite": "0b",
      "text": "Power Pros Portable\nLink",
      "style": "d7_m3_are_0b",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 29,
+     "font": "ttf:rounded:11:0.0:0.85:0.45",
+     "baseline": 32,
      "pages": [
       2
      ],
@@ -256,8 +256,10 @@
      "sprite": "0c",
      "text": "Jersey Names",
      "style": "d7_m3_are_0c",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 24,
+     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3,
      "pages": [
       1
      ],
@@ -295,7 +297,7 @@
      "sprite": "00",
      "text": "Data Corner",
      "style": "d7_m3_are_00",
-     "font": "ttf:rounded:33:0.0:0.85:0.35",
+     "font": "ttf:rounded:33:0.0:0.92:0.35",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -415,7 +417,7 @@
      "sprite": "07",
      "text": "Load Data",
      "style": "d7_s4w_are_07",
-     "font": "ttf:narrow:22:0.0:0.92:0.35",
+     "font": "ttf:rounded:21:0.0:0.85:0.35",
      "baseline": 40,
      "pages": [
       1

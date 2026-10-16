@@ -188,7 +188,7 @@
      0,
      0,
      128,
-     68
+     80
     ],
     [
      17,
@@ -244,7 +244,7 @@
      0,
      0,
      128,
-     84
+     96
     ],
     [
      23,
@@ -314,7 +314,7 @@
     {
      "sprite": "02",
      "text": "Save",
-     "style": "e7_r4_chm_02_1",
+     "style": "e7_r4_chm_02_1_h",
      "font": "ttf:narrow:19:0.0:0.85:0.3",
      "baseline": 32,
      "pages": [
@@ -327,9 +327,9 @@
     {
      "sprite": "03",
      "text": "Auto",
-     "style": "e7_r4_chm_03_2",
-     "font": "ttf:narrow:18:0.0:0.85:0.3",
-     "baseline": 32,
+     "style": "e7_r4_chm_03_2_h",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "baseline": 33,
      "pages": [
       4
      ],
@@ -340,7 +340,7 @@
     {
      "sprite": "04",
      "text": "Sample",
-     "style": "e7_r4_chm_04_3",
+     "style": "e7_r4_chm_04_3_h",
      "font": "ttf:narrow:12:0.0:0.85:0.3",
      "baseline": 29,
      "pages": [
@@ -353,8 +353,8 @@
     {
      "sprite": "05",
      "text": "Repeat",
-     "style": "e7_r4_chm_05_4",
-     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "style": "e7_r4_chm_05_4_h",
+     "font": "ttf:narrow:12:0.0:0.92:0.3",
      "baseline": 29,
      "pages": [
       4
@@ -366,9 +366,9 @@
     {
      "sprite": "06",
      "text": "Style",
-     "style": "e7_r4_chm_06_5",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 30,
+     "style": "e7_r4_chm_06_5_h",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "baseline": 32,
      "pages": [
       4
      ],
@@ -379,44 +379,44 @@
     {
      "sprite": "0c",
      "text": "16th Notes",
-     "style": "e7_r4_chm_0c",
-     "font": "ttf:narrow:11:0.0:0.85:0.3",
-     "baseline": 18
+     "style": "e7_r4_chm_0c_h_s",
+     "font": "ttf:rounded:8:0.0:0.92:0.12",
+     "baseline": 16
     },
     {
      "sprite": "0d",
      "text": "Triplets",
-     "style": "e7_r4_chm_0d",
-     "font": "ttf:narrow:13:0.0:0.85:0.3",
+     "style": "e7_r4_chm_0d_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
      "baseline": 18
     },
     {
      "sprite": "13",
      "text": "Fast",
-     "style": "e7_r4_chm_13",
-     "font": "ttf:rounded:15:0.0:0.85:0.3",
-     "baseline": 20
+     "style": "e7_r4_chm_13_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 18
     },
     {
      "sprite": "14",
      "text": "Normal",
-     "style": "e7_r4_chm_14",
-     "font": "ttf:narrow:11:0.0:0.85:0.3",
-     "baseline": 18
+     "style": "e7_r4_chm_14_h_s",
+     "font": "ttf:rounded:9:0.0:0.85:0.2",
+     "baseline": 17
     },
     {
      "sprite": "15",
      "text": "Slow",
-     "style": "e7_r4_chm_15",
-     "font": "ttf:rounded:14:0.0:0.85:0.3",
+     "style": "e7_r4_chm_15_h",
+     "font": "ttf:rounded:12:0.0:0.92:0.3",
      "baseline": 18
     },
     {
      "sprite": "16",
      "text": "Band",
-     "style": "e7_r4_chm_16_30",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 13,
+     "style": "e7_r4_chm_16_30_h",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 12,
      "pages": [
       5
      ],
@@ -427,7 +427,7 @@
     {
      "sprite": "17",
      "text": "Chants",
-     "style": "e7_r4_chm_17_31",
+     "style": "e7_r4_chm_17_31_h",
      "font": "ttf:narrow:11:0.0:0.85:0.3",
      "baseline": 10,
      "pages": [
@@ -440,226 +440,226 @@
     {
      "sprite": "7a",
      "text": "16th-Note Score",
-     "style": "e7_r4_chm_7a",
-     "font": "ttf:narrow:15:0.0:0.85:0.3",
-     "baseline": 24
+     "style": "e7_r4_chm_7a_h",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 21
     },
     {
      "sprite": "7b",
      "text": "Triplet Score",
-     "style": "e7_r4_chm_7b",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 24
-    },
-    {
-     "sprite": "7f",
-     "text": "Fast",
-     "style": "e7_r4_chm_7f",
-     "font": "ttf:rounded:20:0.0:0.92:0.3",
-     "baseline": 30
-    },
-    {
-     "sprite": "80",
-     "text": "Normal",
-     "style": "e7_r4_chm_80",
+     "style": "e7_r4_chm_7b_h",
      "font": "ttf:narrow:16:0.0:0.85:0.3",
      "baseline": 27
     },
     {
+     "sprite": "7f",
+     "text": "Fast",
+     "style": "e7_r4_chm_7f_h_s",
+     "font": "ttf:rounded:8:0.0:1.0:0.12",
+     "baseline": 18
+    },
+    {
+     "sprite": "80",
+     "text": "Normal",
+     "style": "e7_r4_chm_80_h",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "baseline": 28
+    },
+    {
      "sprite": "81",
      "text": "Slow",
-     "style": "e7_r4_chm_81",
-     "font": "ttf:rounded:18:0.0:0.92:0.3",
-     "baseline": 26
+     "style": "e7_r4_chm_81_h_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 18
     },
     {
      "sprite": "b1",
      "text": "Place",
-     "style": "e7_r4_chm_b1",
-     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "style": "e7_r4_chm_b1_h",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
      "baseline": 4
     },
     {
      "sprite": "b2",
      "text": "Grab",
-     "style": "e7_r4_chm_b2",
-     "font": "ttf:rounded:18:0.0:0.85:0.3",
-     "baseline": 7
+     "style": "e7_r4_chm_b2_h",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "b3",
      "text": "Stretch",
-     "style": "e7_r4_chm_b3",
+     "style": "e7_r4_chm_b3_h",
      "font": "ttf:narrow:15:0.0:0.85:0.3",
      "baseline": 6
     },
     {
      "sprite": "b4",
      "text": "Erase",
-     "style": "e7_r4_chm_b4",
+     "style": "e7_r4_chm_b4_h",
      "font": "ttf:narrow:12:0.0:0.85:0.3",
      "baseline": 6
     },
     {
      "sprite": "b5",
      "text": "Insert",
-     "style": "e7_r4_chm_b5",
+     "style": "e7_r4_chm_b5_h",
      "font": "ttf:narrow:12:0.0:0.85:0.3",
      "baseline": 6
     },
     {
      "sprite": "b6",
      "text": "Close Gap",
-     "style": "e7_r4_chm_b6_s",
+     "style": "e7_r4_chm_b6_h_s",
      "font": "ttf:rounded:8:0.0:0.92:0.12",
      "baseline": 5
     },
     {
      "sprite": "b7",
      "text": "Erase & Close",
-     "style": "e7_r4_chm_b7_s",
+     "style": "e7_r4_chm_b7_h_s",
      "font": "ttf:rounded:7:0.0:0.92:0.12",
      "baseline": 3
     },
     {
      "sprite": "c4",
      "text": "Can't make a password",
-     "style": "e7_r4_chm_c4",
+     "style": "e7_r4_chm_c4_h",
      "font": "ttf:narrow:11:0.0:0.85:0.3",
-     "slices": true,
-     "slice_width": 61,
-     "dy": 2
-    },
-    {
-     "sprite": "c5",
-     "text": "Password too long",
-     "style": "e7_r4_chm_c5",
-     "font": "ttf:rounded:12:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 62,
      "dy": 2
     },
     {
+     "sprite": "c5",
+     "text": "Password too long",
+     "style": "e7_r4_chm_c5_h",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 63,
+     "dy": 2
+    },
+    {
      "sprite": "c7",
      "text": ":Play",
-     "style": "e7_r4_chm_c7",
+     "style": "e7_r4_chm_c7_h",
      "font": "ttf:rounded:16:0.0:0.85:0.3",
      "baseline": 28
     },
     {
      "sprite": "cc",
      "text": ":Play",
-     "style": "e7_r4_chm_cc",
+     "style": "e7_r4_chm_cc_h",
      "font": "ttf:rounded:16:0.0:0.85:0.3",
      "baseline": 8
     },
     {
      "sprite": "cd",
      "text": ":Info",
-     "style": "e7_r4_chm_cd",
+     "style": "e7_r4_chm_cd_h",
      "font": "ttf:rounded:16:0.0:0.92:0.3",
      "baseline": 8
     },
     {
      "sprite": "d4",
      "text": "Play as on-base song",
-     "style": "e7_r4_chm_d4",
-     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "style": "e7_r4_chm_d4_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 89,
-     "dy": 2
+     "slice_width": 85,
+     "dy": 0
     },
     {
      "sprite": "d5",
      "text": "Play from this bar",
-     "style": "e7_r4_chm_d5",
-     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "style": "e7_r4_chm_d5_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 84,
-     "dy": 4
+     "slice_width": 70,
+     "dy": 0
     },
     {
      "sprite": "42",
      "text": "C",
-     "style": "e7_r4_chm_42",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "e7_r4_chm_42_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
      "baseline": 16
     },
     {
      "sprite": "43",
      "text": "D",
-     "style": "e7_r4_chm_43",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 16
+     "style": "e7_r4_chm_43_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "44",
      "text": "E",
-     "style": "e7_r4_chm_44",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 16
+     "style": "e7_r4_chm_44_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "45",
      "text": "F",
-     "style": "e7_r4_chm_45",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 16
+     "style": "e7_r4_chm_45_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "46",
      "text": "G",
-     "style": "e7_r4_chm_46",
+     "style": "e7_r4_chm_46_h",
      "font": "ttf:rounded:12:0.0:1.0:0.3",
      "baseline": 16
     },
     {
      "sprite": "47",
      "text": "A",
-     "style": "e7_r4_chm_47",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 15
+     "style": "e7_r4_chm_47_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "48",
      "text": "B",
-     "style": "e7_r4_chm_48",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
-     "baseline": 16
+     "style": "e7_r4_chm_48_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "49",
      "text": "C#",
-     "style": "e7_r4_chm_49",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "e7_r4_chm_49_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
      "baseline": 16
     },
     {
      "sprite": "4a",
      "text": "D#",
-     "style": "e7_r4_chm_4a",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "e7_r4_chm_4a_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
      "baseline": 16
     },
     {
      "sprite": "4b",
      "text": "F#",
-     "style": "e7_r4_chm_4b",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
-     "baseline": 16
+     "style": "e7_r4_chm_4b_h",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 18
     },
     {
      "sprite": "4c",
      "text": "G#",
-     "style": "e7_r4_chm_4c",
+     "style": "e7_r4_chm_4c_h",
      "font": "ttf:rounded:13:0.0:1.0:0.3",
      "baseline": 16
     },
     {
      "sprite": "4d",
      "text": "A#",
-     "style": "e7_r4_chm_4d",
-     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "e7_r4_chm_4d_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
      "baseline": 16
     },
     {
@@ -671,7 +671,7 @@
       128
      ],
      "text": "Choose how to play it",
-     "style": "e7_r4_chm_64_12.0.96-13.0.0~0_128",
+     "style": "e7_r4_chm_64_12.0.96-13.0.0_h~0_128",
      "font": "ttf:rounded:20:0.0:0.85:0.3",
      "baseline": 26,
      "left": 9,
@@ -688,7 +688,7 @@
       32
      ],
      "text": "Choose how to play it",
-     "style": "e7_r4_chm_64_12.0.96-13.0.0~128_4096",
+     "style": "e7_r4_chm_64_12.0.96-13.0.0_h~128_4096",
      "font": "ttf:rounded:20:0.0:0.85:0.3",
      "baseline": 26,
      "left": 9,
@@ -705,7 +705,7 @@
       128
      ],
      "text": "Choose how to play it",
-     "style": "e7_r4_chm_d0_12.0.96-13.0.0~0_128",
+     "style": "e7_r4_chm_d0_12.0.96-13.0.0_h~0_128",
      "font": "ttf:rounded:20:0.0:0.85:0.3",
      "baseline": 26,
      "left": 9,
@@ -722,7 +722,7 @@
       32
      ],
      "text": "Choose how to play it",
-     "style": "e7_r4_chm_d0_12.0.96-13.0.0~128_4096",
+     "style": "e7_r4_chm_d0_12.0.96-13.0.0_h~128_4096",
      "font": "ttf:rounded:20:0.0:0.85:0.3",
      "baseline": 26,
      "left": 9,
@@ -739,7 +739,7 @@
       128
      ],
      "text": "Choose how to play it",
-     "style": "e7_r4_chm_d1_12.0.96-13.0.0~0_128",
+     "style": "e7_r4_chm_d1_12.0.96-13.0.0_h~0_128",
      "font": "ttf:rounded:20:0.0:0.85:0.3",
      "baseline": 26,
      "left": 9,
@@ -756,7 +756,7 @@
       32
      ],
      "text": "Choose how to play it",
-     "style": "e7_r4_chm_d1_12.0.96-13.0.0~128_4096",
+     "style": "e7_r4_chm_d1_12.0.96-13.0.0_h~128_4096",
      "font": "ttf:rounded:20:0.0:0.85:0.3",
      "baseline": 26,
      "left": 9,
@@ -773,7 +773,7 @@
       64
      ],
      "text": "Choose a sample",
-     "style": "e7_r4_chm_65_13.0.32-12.96.96~0_96",
+     "style": "e7_r4_chm_65_13.0.32-12.96.96_h~0_96",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 16,
@@ -790,7 +790,7 @@
       128
      ],
      "text": "Choose a sample",
-     "style": "e7_r4_chm_65_13.0.32-12.96.96~96_128",
+     "style": "e7_r4_chm_65_13.0.32-12.96.96_h~96_128",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 16,
@@ -807,7 +807,7 @@
       32
      ],
      "text": "Choose a sample",
-     "style": "e7_r4_chm_65_13.0.32-12.96.96~128_4096",
+     "style": "e7_r4_chm_65_13.0.32-12.96.96_h~128_4096",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 16,
@@ -824,7 +824,7 @@
       64
      ],
      "text": "Set the band pattern",
-     "style": "e7_r4_chm_68_13.96.32-13.0.64~0_32",
+     "style": "e7_r4_chm_68_13.96.32-13.0.64_h~0_32",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 47,
@@ -841,7 +841,7 @@
       96
      ],
      "text": "Set the band pattern",
-     "style": "e7_r4_chm_68_13.96.32-13.0.64~32_160",
+     "style": "e7_r4_chm_68_13.96.32-13.0.64_h~32_160",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 47,
@@ -858,7 +858,7 @@
       128
      ],
      "text": "Set the band pattern",
-     "style": "e7_r4_chm_68_13.96.32-13.0.64~160_280",
+     "style": "e7_r4_chm_68_13.96.32-13.0.64_h~160_280",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 47,
@@ -875,7 +875,7 @@
       32
      ],
      "text": "Set the band pattern",
-     "style": "e7_r4_chm_68_13.96.32-13.0.64~280_4096",
+     "style": "e7_r4_chm_68_13.96.32-13.0.64_h~280_4096",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 47,
@@ -892,7 +892,7 @@
       128
      ],
      "text": "Set the chant pattern",
-     "style": "e7_r4_chm_69_13.120.96-14.0.0~0_8",
+     "style": "e7_r4_chm_69_13.120.96-14.0.0_h~0_8",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 43,
@@ -909,7 +909,7 @@
       32
      ],
      "text": "Set the chant pattern",
-     "style": "e7_r4_chm_69_13.120.96-14.0.0~8_72",
+     "style": "e7_r4_chm_69_13.120.96-14.0.0_h~8_72",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 43,
@@ -926,7 +926,7 @@
       96
      ],
      "text": "Set the chant pattern",
-     "style": "e7_r4_chm_69_13.120.96-14.0.0~72_160",
+     "style": "e7_r4_chm_69_13.120.96-14.0.0_h~72_160",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 43,
@@ -943,7 +943,7 @@
       128
      ],
      "text": "Set the chant pattern",
-     "style": "e7_r4_chm_69_13.120.96-14.0.0~160_280",
+     "style": "e7_r4_chm_69_13.120.96-14.0.0_h~160_280",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 43,
@@ -960,7 +960,7 @@
       32
      ],
      "text": "Set the chant pattern",
-     "style": "e7_r4_chm_69_13.120.96-14.0.0~280_4096",
+     "style": "e7_r4_chm_69_13.120.96-14.0.0_h~280_4096",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 43,
@@ -977,7 +977,7 @@
       32
      ],
      "text": "Set up repeat playback",
-     "style": "e7_r4_chm_70_14.64.0-14.0.32~0_64",
+     "style": "e7_r4_chm_70_14.64.0-14.0.32_h~0_64",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 18,
@@ -994,7 +994,7 @@
       64
      ],
      "text": "Set up repeat playback",
-     "style": "e7_r4_chm_70_14.64.0-14.0.32~64_192",
+     "style": "e7_r4_chm_70_14.64.0-14.0.32_h~64_192",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 18,
@@ -1011,7 +1011,7 @@
       96
      ],
      "text": "Set up repeat playback",
-     "style": "e7_r4_chm_70_14.64.0-14.0.32~192_216",
+     "style": "e7_r4_chm_70_14.64.0-14.0.32_h~192_216",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 18,
@@ -1028,7 +1028,7 @@
       128
      ],
      "text": "Set up repeat playback",
-     "style": "e7_r4_chm_70_14.64.0-14.0.32~216_256",
+     "style": "e7_r4_chm_70_14.64.0-14.0.32_h~216_256",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 18,
@@ -1045,7 +1045,7 @@
       32
      ],
      "text": "Set up repeat playback",
-     "style": "e7_r4_chm_70_14.64.0-14.0.32~256_4096",
+     "style": "e7_r4_chm_70_14.64.0-14.0.32_h~256_4096",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 25,
      "left": 18,
@@ -1062,7 +1062,7 @@
       104
      ],
      "text": "Play the whole song",
-     "style": "e7_r4_chm_64_10.0.80-10.0.104~0_128",
+     "style": "e7_r4_chm_64_10.0.80-10.0.104_h~0_128",
      "font": "ttf:narrow:15:0.0:0.85:0.3",
      "baseline": 20,
      "left": 4
@@ -1076,7 +1076,7 @@
       128
      ],
      "text": "Play the whole song",
-     "style": "e7_r4_chm_64_10.0.80-10.0.104~128_4096",
+     "style": "e7_r4_chm_64_10.0.80-10.0.104_h~128_4096",
      "font": "ttf:narrow:15:0.0:0.85:0.3",
      "baseline": 20,
      "left": 4
@@ -1090,9 +1090,9 @@
       128
      ],
      "text": "Play the trumpets only",
-     "style": "e7_r4_chm_64_10.24.104-11.24.0~0_104",
+     "style": "e7_r4_chm_64_10.24.104-11.24.0_h~0_104",
      "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 18,
+     "baseline": 17,
      "left": 5
     },
     {
@@ -1104,9 +1104,9 @@
       24
      ],
      "text": "Play the trumpets only",
-     "style": "e7_r4_chm_64_10.24.104-11.24.0~104_4096",
+     "style": "e7_r4_chm_64_10.24.104-11.24.0_h~104_4096",
      "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 18,
+     "baseline": 17,
      "left": 5
     },
     {
@@ -1118,10 +1118,10 @@
       64
      ],
      "text": "Mode",
-     "style": "e7_r4_chm_79_15.80.32-15.0.64~0_48",
-     "font": "ttf:rounded:20:0.0:0.85:0.3",
-     "baseline": 25,
-     "left": 4,
+     "style": "e7_r4_chm_79_15.80.32-15.0.64_h~0_48",
+     "font": "ttf:rounded:19:0.0:0.85:0.3",
+     "baseline": 28,
+     "left": 5,
      "sprites": [
       "79"
      ]
@@ -1135,10 +1135,10 @@
       96
      ],
      "text": "Mode",
-     "style": "e7_r4_chm_79_15.80.32-15.0.64~48_4096",
-     "font": "ttf:rounded:20:0.0:0.85:0.3",
-     "baseline": 25,
-     "left": 4,
+     "style": "e7_r4_chm_79_15.80.32-15.0.64_h~48_4096",
+     "font": "ttf:rounded:19:0.0:0.85:0.3",
+     "baseline": 28,
+     "left": 5,
      "sprites": [
       "79"
      ]
@@ -1152,7 +1152,7 @@
       96
      ],
      "text": "Tempo",
-     "style": "e7_r4_chm_79_15.24.64",
+     "style": "e7_r4_chm_79_15.24.64_h",
      "font": "ttf:narrow:20:0.0:0.92:0.3",
      "baseline": 24,
      "sprites": [
@@ -1168,7 +1168,7 @@
       96
      ],
      "text": "Auto-compose a song",
-     "style": "e7_r4_chm_8a_14.24.64-14.0.96~0_104",
+     "style": "e7_r4_chm_8a_14.24.64-14.0.96_h~0_104",
      "font": "ttf:narrow:20:0.0:0.85:0.3",
      "baseline": 26,
      "left": 5,
@@ -1185,7 +1185,7 @@
       128
      ],
      "text": "Auto-compose a song",
-     "style": "e7_r4_chm_8a_14.24.64-14.0.96~104_4096",
+     "style": "e7_r4_chm_8a_14.24.64-14.0.96_h~104_4096",
      "font": "ttf:narrow:20:0.0:0.85:0.3",
      "baseline": 26,
      "left": 5,
@@ -1202,7 +1202,7 @@
       128
      ],
      "text": "Choose the feel you want",
-     "style": "e7_r4_chm_8a_14.112.96-15.0.0~0_16",
+     "style": "e7_r4_chm_8a_14.112.96-15.0.0_h~0_16",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 26,
      "left": 30,
@@ -1219,7 +1219,7 @@
       32
      ],
      "text": "Choose the feel you want",
-     "style": "e7_r4_chm_8a_14.112.96-15.0.0~16_144",
+     "style": "e7_r4_chm_8a_14.112.96-15.0.0_h~16_144",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 26,
      "left": 30,
@@ -1236,7 +1236,7 @@
       64
      ],
      "text": "Choose the feel you want",
-     "style": "e7_r4_chm_8a_14.112.96-15.0.0~144_224",
+     "style": "e7_r4_chm_8a_14.112.96-15.0.0_h~144_224",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 26,
      "left": 30,
@@ -1253,7 +1253,7 @@
       128
      ],
      "text": "Choose the feel you want",
-     "style": "e7_r4_chm_8a_14.112.96-15.0.0~224_256",
+     "style": "e7_r4_chm_8a_14.112.96-15.0.0_h~224_256",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 26,
      "left": 30,
@@ -1270,7 +1270,7 @@
       32
      ],
      "text": "Choose the feel you want",
-     "style": "e7_r4_chm_8a_14.112.96-15.0.0~256_4096",
+     "style": "e7_r4_chm_8a_14.112.96-15.0.0_h~256_4096",
      "font": "ttf:rounded:20:0.0:1.0:0.3",
      "baseline": 26,
      "left": 30,
@@ -1287,9 +1287,9 @@
       48
      ],
      "text": "Hard Worker",
-     "style": "e7_r4_chm_8b_11.24.24",
+     "style": "e7_r4_chm_8b_11.24.24_h",
      "font": "ttf:narrow:15:0.0:0.85:0.3",
-     "baseline": 20,
+     "baseline": 19,
      "sprites": [
       "8b"
      ]
@@ -1303,7 +1303,7 @@
       24
      ],
      "text": "Earnest",
-     "style": "e7_r4_chm_8b_12.0.0",
+     "style": "e7_r4_chm_8b_12.0.0_h",
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "baseline": 18,
      "sprites": [
@@ -1319,7 +1319,7 @@
       72
      ],
      "text": "Rascal",
-     "style": "e7_r4_chm_8b_11.24.48",
+     "style": "e7_r4_chm_8b_11.24.48_h",
      "font": "ttf:narrow:20:0.0:0.92:0.3",
      "baseline": 22,
      "sprites": [
@@ -1335,8 +1335,8 @@
       48
      ],
      "text": "Cool",
-     "style": "e7_r4_chm_8b_12.0.24",
-     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "style": "e7_r4_chm_8b_12.0.24_h",
+     "font": "ttf:rounded:19:0.0:0.92:0.3",
      "baseline": 22,
      "sprites": [
       "8b"
@@ -1351,7 +1351,7 @@
       96
      ],
      "text": "Classy",
-     "style": "e7_r4_chm_8b_11.24.72",
+     "style": "e7_r4_chm_8b_11.24.72_h",
      "font": "ttf:rounded:13:0.0:0.85:0.3",
      "baseline": 18,
      "sprites": [
@@ -1367,7 +1367,7 @@
       72
      ],
      "text": "Easygoing",
-     "style": "e7_r4_chm_8b_12.0.48",
+     "style": "e7_r4_chm_8b_12.0.48_h",
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "baseline": 18,
      "sprites": [
@@ -1383,9 +1383,9 @@
       120
      ],
      "text": "Hasty",
-     "style": "e7_r4_chm_8b_11.24.96",
+     "style": "e7_r4_chm_8b_11.24.96_h",
      "font": "ttf:rounded:16:0.0:1.0:0.3",
-     "baseline": 20,
+     "baseline": 21,
      "sprites": [
       "8b"
      ]
@@ -1399,9 +1399,9 @@
       96
      ],
      "text": "Whimsical",
-     "style": "e7_r4_chm_8b_12.0.72",
+     "style": "e7_r4_chm_8b_12.0.72_h",
      "font": "ttf:narrow:14:0.0:0.85:0.3",
-     "baseline": 19,
+     "baseline": 20,
      "sprites": [
       "8b"
      ]
@@ -1415,8 +1415,8 @@
       24
      ],
      "text": "Pattern",
-     "style": "e7_r4_chm_a5_22.0.0",
-     "font": "ttf:narrow:20:0.0:0.85:0.3",
+     "style": "e7_r4_chm_a5_22.0.0_h",
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
      "baseline": 22
     },
     {
@@ -1428,9 +1428,9 @@
       40
      ],
      "text": "Password",
-     "style": "e7_r4_chm_b9_25.32.16",
+     "style": "e7_r4_chm_b9_25.32.16_h",
      "font": "ttf:rounded:11:0.0:0.85:0.3",
-     "baseline": 17,
+     "baseline": 18,
      "sprites": [
       "b9"
      ]
@@ -1444,7 +1444,7 @@
       40
      ],
      "text": "length",
-     "style": "e7_r4_chm_b9_25.96.16_s",
+     "style": "e7_r4_chm_b9_25.96.16_h_s",
      "font": "ttf:rounded:7:0.0:0.85:0.12",
      "baseline": 16,
      "sprites": [

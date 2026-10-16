@@ -2001,7 +2001,7 @@
      "style": "b7_yun_p72~0_16",
      "font": "ttf:narrow:11:0.0:1.0:0.25",
      "baseline": 13,
-     "left": -3
+     "left": 1
     },
     {
      "from": [
@@ -2015,7 +2015,7 @@
      "style": "b7_yun_p72~16_4096",
      "font": "ttf:narrow:11:0.0:1.0:0.25",
      "baseline": 13,
-     "left": -3
+     "left": 1
     },
     {
      "from": [
@@ -2029,7 +2029,7 @@
      "style": "b7_yun_p80~0_56",
      "font": "ttf:narrow:11:0.0:1.0:0.25",
      "baseline": 14,
-     "left": -2
+     "left": 2
     },
     {
      "from": [
@@ -2043,7 +2043,7 @@
      "style": "b7_yun_p80~56_4096",
      "font": "ttf:narrow:11:0.0:1.0:0.25",
      "baseline": 14,
-     "left": -2
+     "left": 2
     },
     {
      "from": [
@@ -2057,7 +2057,7 @@
      "style": "b7_yun_p80~0_56",
      "font": "ttf:narrow:8:0.0:0.92:0.25",
      "baseline": 12,
-     "left": -1
+     "left": 3
     },
     {
      "from": [
@@ -2071,7 +2071,7 @@
      "style": "b7_yun_p80~56_4096",
      "font": "ttf:narrow:8:0.0:0.92:0.25",
      "baseline": 12,
-     "left": -1
+     "left": 3
     }
    ],
    "name": "yun list pieces"
@@ -2521,29 +2521,29 @@
      "sprite": "26",
      "text": "Cat",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "27",
      "text": "Lion",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "28",
      "text": "Gorilla",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:0.85:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "29",
      "text": "Wolf",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "2a",
@@ -2556,22 +2556,22 @@
      "sprite": "2b",
      "text": "Eagle",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
-     "baseline": 5
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "2c",
      "text": "Orca",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 7
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 6
     },
     {
      "sprite": "2d",
      "text": "Pegasus",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
-     "baseline": 5
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "2e",
@@ -2584,21 +2584,21 @@
      "sprite": "2f",
      "text": "Samurai",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:12:0.0:0.85:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "30",
      "text": "Angel",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 4
     },
     {
      "sprite": "31",
      "text": "Pawapro-kun",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 4
     },
     {
@@ -2612,22 +2612,22 @@
      "sprite": "33",
      "text": "Cheetah",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 5
     },
     {
      "sprite": "34",
      "text": "Rhino",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "35",
      "text": "Cobra",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:0.92:0.25",
-     "baseline": 5
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "36",
@@ -2640,71 +2640,71 @@
      "sprite": "37",
      "text": "Bee",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "38",
      "text": "Shrimp",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 4
     },
     {
      "sprite": "39",
      "text": "Phoenix",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 5
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "3a",
      "text": "Ball",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "3b",
      "text": "Cowboy",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 4
     },
     {
      "sprite": "3c",
      "text": "Reaper",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
-     "baseline": 5
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "7a",
      "text": "Boar",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "7b",
      "text": "Impala",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 4
     },
     {
      "sprite": "7c",
      "text": "Bull",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "7d",
      "text": "Bear",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "7e",
@@ -2719,8 +2719,8 @@
      "sprite": "7f",
      "text": "Ninja",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
-     "baseline": 5
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "80",
@@ -2733,38 +2733,36 @@
      "sprite": "81",
      "text": "Beetle",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "82",
      "text": "Whale",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:0.92:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "83",
      "text": "Fish",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:13:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     },
     {
      "sprite": "84",
      "text": "Fairy",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:12:0.0:1.0:0.25",
-     "baseline": 6
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 5
     },
     {
      "sprite": "85",
      "text": "Gator",
      "style": "b7_okp_it",
-     "font": "ttf:narrow:12:0.0:1.0:0.25",
-     "slices": true,
-     "slice_width": 32,
-     "dy": -1
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
     }
    ],
    "name": "okp mascots"
@@ -3039,10 +3037,10 @@
     },
     {
      "sprite": "3f",
-     "text": "Hiroshima Municipal Stadium",
+     "text": "Hiroshima Municipal",
      "style": "b7_okp_st",
-     "font": "ttf:narrow:8:0.0:0.85:0.25",
-     "baseline": 4
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "baseline": 5
     },
     {
      "sprite": "40",
