@@ -248,7 +248,7 @@
      "text": "Switch by Group",
      "style": "e7_s3_id_00_36_h",
      "font": "ttf:rounded:13:0.0:0.85:0.3",
-     "baseline": 34,
+     "baseline": 41,
      "pages": [
       10
      ],
@@ -292,8 +292,8 @@
      ],
      "text": "Pitchers",
      "style": "e7_s3_id_00_4.48.80_h_s",
-     "font": "ttf:rounded:7:0.0:0.85:0.1",
-     "baseline": 12,
+     "font": "ttf:narrow:8:0.0:0.92:0.1",
+     "baseline": 13,
      "sprites": [
       "00"
      ]
@@ -308,8 +308,8 @@
      ],
      "text": "Fielders",
      "style": "e7_s3_id_00_4.80.80_h_s",
-     "font": "ttf:rounded:7:0.0:0.92:0.1",
-     "baseline": 12,
+     "font": "ttf:narrow:9:0.0:0.85:0.1",
+     "baseline": 14,
      "sprites": [
       "00"
      ]
