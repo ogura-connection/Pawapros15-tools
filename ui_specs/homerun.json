@@ -1215,6 +1215,36 @@
    "font": "ttf:rounded:10",
    "copy": "clear",
    "style": "b9_hr_4"
+  },
+  {
+   "bank": "r3_hr",
+   "page": 13,
+   "rect": [
+    0,
+    0,
+    128,
+    40
+   ],
+   "text": "Choose a",
+   "font": "ttf:rounded:22:0.0:0.85:0.3",
+   "style": "h10_hr_head",
+   "copy": "clear"
+  },
+  {
+   "bank": "r3_hr",
+   "page": 13,
+   "rect": [
+    0,
+    40,
+    112,
+    80
+   ],
+   "text": "Player",
+   "font": "ttf:rounded:22:0.0:0.85:0.3",
+   "style": "h10_hr_head",
+   "copy": "clear",
+   "dy": 3,
+   "dx": -8
   }
  ]
 }
