@@ -2173,6 +2173,382 @@
     }
    ],
    "name": "a9 ai"
+  },
+  {
+   "bank": "z3_snm_0",
+   "palette": 0,
+   "style": "a9_snm",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Yabe Akio",
+     "style": "a9_snm",
+     "font": "ttf:narrow:36:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -104,
+     "dy": 10
+    },
+    {
+     "sprite": "01",
+     "text": "Takeda Keiji",
+     "style": "a9_snm",
+     "font": "ttf:narrow:30:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -104,
+     "dy": 10
+    },
+    {
+     "sprite": "02",
+     "text": "Todoroki\nDaisuke",
+     "style": "a9_snm",
+     "font": "ttf:narrow:28:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -90,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "03",
+     "text": "Maruo Ippei",
+     "style": "a9_snm",
+     "font": "ttf:narrow:30:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -102,
+     "dy": 10
+    },
+    {
+     "sprite": "04",
+     "text": "Koshihaba\nTsukuo",
+     "style": "a9_snm",
+     "font": "ttf:narrow:28:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -101,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "05",
+     "text": "Kagurazaka\nMitsuhiko",
+     "style": "a9_snm",
+     "font": "ttf:rounded:22:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -120,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "06",
+     "text": "Morita Nenji",
+     "style": "a9_snm",
+     "font": "ttf:narrow:29:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -100,
+     "dy": 9
+    },
+    {
+     "sprite": "07",
+     "text": "Matsuo\nFutahisa",
+     "style": "a9_snm",
+     "font": "ttf:rounded:30:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -99,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "08",
+     "text": "Tojo Kojiro",
+     "style": "a9_snm",
+     "font": "ttf:narrow:38:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -124,
+     "dy": 10
+    },
+    {
+     "sprite": "09",
+     "text": "Zento\nKaoru",
+     "style": "a9_snm",
+     "font": "ttf:rounded:29:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -83,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "0a",
+     "text": "Tanakayama Taro",
+     "style": "a9_snm",
+     "font": "ttf:narrow:25:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -119,
+     "dy": 12
+    },
+    {
+     "sprite": "0b",
+     "text": "Takumi\nHayato",
+     "style": "a9_snm",
+     "font": "ttf:rounded:29:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -89,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "0c",
+     "text": "Mido Kintaro",
+     "style": "a9_snm",
+     "font": "ttf:narrow:35:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -120,
+     "dy": 10
+    },
+    {
+     "sprite": "0d",
+     "text": "Namigashira\nShibuki",
+     "style": "a9_snm",
+     "font": "ttf:rounded:22:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -118,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "0e",
+     "text": "Hamu Reito",
+     "style": "a9_snm",
+     "font": "ttf:narrow:31:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -99,
+     "dy": 10
+    },
+    {
+     "sprite": "0f",
+     "text": "Tamano Kyutaro",
+     "style": "a9_snm",
+     "font": "ttf:narrow:27:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -120,
+     "dy": 10
+    },
+    {
+     "sprite": "10",
+     "text": "Yajima Kinzo",
+     "style": "a9_snm",
+     "font": "ttf:narrow:28:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -105,
+     "dy": 10
+    },
+    {
+     "sprite": "11",
+     "text": "Kagurazaka\nMitsunari",
+     "style": "a9_snm",
+     "font": "ttf:rounded:22:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -120,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "12",
+     "text": "Otokomaeda\nYohei",
+     "style": "a9_snm",
+     "font": "ttf:rounded:28:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -122,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "13",
+     "text": "Otori\nNagamichi",
+     "style": "a9_snm",
+     "font": "ttf:narrow:27:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -89,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "14",
+     "text": "Scout Kageyama",
+     "style": "a9_snm",
+     "font": "ttf:narrow:27:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -124,
+     "dy": 10
+    },
+    {
+     "sprite": "15",
+     "text": "Hanai\nMomoko",
+     "style": "a9_snm",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -100,
+     "dy": 0,
+     "line_step": 30
+    },
+    {
+     "sprite": "16",
+     "text": "Hiyori Miyo",
+     "style": "a9_snm",
+     "font": "ttf:narrow:31:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -100,
+     "dy": 10
+    },
+    {
+     "sprite": "17",
+     "text": "Otori\nKanna",
+     "style": "a9_snm",
+     "font": "ttf:rounded:28:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "centre_x": -88,
+     "dy": 0,
+     "line_step": 30
+    }
+   ],
+   "name": "a9 snm"
   }
  ],
  "paint": [
