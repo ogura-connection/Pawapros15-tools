@@ -121,13 +121,11 @@ def _win(style, c0, c1):
         return out, b
     return cut
 
-STYLES["aso_help~0_30"] = _win("aso_help", 0, 30)
-STYLES["aso_help~0_40"] = _win("aso_help", 0, 40)
-STYLES["aso_help~0_46"] = _win("aso_help", 0, 46)
-STYLES["aso_help~0_52"] = _win("aso_help", 0, 52)
-STYLES["aso_help~0_54"] = _win("aso_help", 0, 54)
-STYLES["aso_help~30_4096"] = _win("aso_help", 30, 4096)
-STYLES["aso_help~40_4096"] = _win("aso_help", 40, 4096)
-STYLES["aso_help~46_4096"] = _win("aso_help", 46, 4096)
-STYLES["aso_help~52_4096"] = _win("aso_help", 52, 4096)
-STYLES["aso_help~54_4096"] = _win("aso_help", 54, 4096)
+STYLES["p5_help_h~0_58"] = _win("p5_help_h", 0, 58)
+STYLES["p5_help_h~0_64"] = _win("p5_help_h", 0, 64)
+STYLES["p5_help_h~0_66"] = _win("p5_help_h", 0, 66)
+STYLES["p5_help_h~0_108"] = _win("p5_help_h", 0, 108)
+STYLES["p5_help_h~58_4096"] = _win("p5_help_h", 58, 4096)
+STYLES["p5_help_h~64_4096"] = _win("p5_help_h", 64, 4096)
+STYLES["p5_help_h~66_4096"] = _win("p5_help_h", 66, 4096)
+STYLES["p5_help_h~108_4096"] = _win("p5_help_h", 108, 4096)
