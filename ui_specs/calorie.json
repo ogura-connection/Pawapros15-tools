@@ -28,137 +28,137 @@
      "sprite": "00",
      "text": "Rice Ball",
      "style": "e8_s4_kam00_00_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "01",
      "text": "Omurice",
      "style": "e8_s4_kam00_01_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "02",
      "text": "Curry Rice",
      "style": "e8_s4_kam00_02_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "03",
      "text": "Ramen",
      "style": "e8_s4_kam00_03_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "04",
      "text": "Katsudon",
      "style": "e8_s4_kam00_04_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "05",
      "text": "Salmon Roe Bowl",
      "style": "e8_s4_kam00_05_h_s",
-     "font": "ttf:rounded:9:0.0:0.85:0.2",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:0.92:0.2",
+     "baseline": 13
     },
     {
      "sprite": "06",
      "text": "Yakisoba",
      "style": "e8_s4_kam00_06_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "07",
      "text": "Spaghetti",
      "style": "e8_s4_kam00_07_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "08",
      "text": "Zaru Soba",
      "style": "e8_s4_kam00_08_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "09",
      "text": "Udon",
      "style": "e8_s4_kam00_09_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "0a",
      "text": "Takoyaki",
      "style": "e8_s4_kam00_0a_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "0b",
      "text": "Bread Roll",
      "style": "e8_s4_kam00_0b_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "0c",
      "text": "Hamburg Steak",
      "style": "e8_s4_kam00_0c_h_s",
-     "font": "ttf:rounded:10:0.0:0.85:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 44,
-     "dy": 3
+     "slice_width": 43,
+     "dy": 2
     },
     {
      "sprite": "0d",
      "text": "Gyoza",
      "style": "e8_s4_kam00_0d_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "0e",
      "text": "Pork Bun",
      "style": "e8_s4_kam00_0e_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "0f",
      "text": "Croquette",
      "style": "e8_s4_kam00_0f_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "10",
      "text": "Sweet Potato",
      "style": "e8_s4_kam00_10_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 44,
+     "slice_width": 37,
      "dy": 0
     },
     {
      "sprite": "11",
      "text": "Salted Salmon",
      "style": "e8_s4_kam00_11_h_s",
-     "font": "ttf:rounded:10:0.0:0.92:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "12",
      "text": "Grilled Sweetfish",
      "style": "e8_s4_kam00_12_h_s",
-     "font": "ttf:rounded:9:0.0:0.85:0.2",
+     "font": "ttf:narrow:10:0.0:0.92:0.2",
      "slices": true,
      "slice_width": 44,
      "dy": 0
@@ -167,84 +167,84 @@
      "sprite": "13",
      "text": "Fried Shrimp",
      "style": "e8_s4_kam00_13_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "14",
      "text": "Fried Egg",
      "style": "e8_s4_kam00_14_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "15",
      "text": "Boiled Egg",
      "style": "e8_s4_kam00_15_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "16",
      "text": "Tofu",
      "style": "e8_s4_kam00_16_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "17",
      "text": "Cucumber",
      "style": "e8_s4_kam00_17_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "18",
      "text": "Tomato",
      "style": "e8_s4_kam00_18_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "19",
      "text": "Miso Soup",
      "style": "e8_s4_kam00_19_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "1a",
      "text": "Bread Slice",
      "style": "e8_s4_kam00_1a_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "1b",
      "text": "Milk",
      "style": "e8_s4_kam00_1b_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "1c",
      "text": "Taiyaki",
      "style": "e8_s4_kam00_1c_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "1d",
      "text": "Daifuku",
      "style": "e8_s4_kam00_1d_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 13
     },
     {
      "sprite": "1e",
      "text": "Dorayaki",
      "style": "e8_s4_kam00_1e_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     }
    ],
@@ -278,141 +278,141 @@
      "sprite": "00",
      "text": "Walking",
      "style": "e8_s4_kan00_00_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "01",
      "text": "Jogging",
      "style": "e8_s4_kan00_01_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "02",
      "text": "Stair Climbing",
      "style": "e8_s4_kan00_02_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13
     },
     {
      "sprite": "03",
      "text": "Sit-Ups",
      "style": "e8_s4_kan00_03_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13
     },
     {
      "sprite": "04",
      "text": "Stretching",
      "style": "e8_s4_kan00_04_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "05",
      "text": "Aerobics",
      "style": "e8_s4_kan00_05_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13
     },
     {
      "sprite": "06",
      "text": "Hiking",
      "style": "e8_s4_kan00_06_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "07",
      "text": "Driving",
      "style": "e8_s4_kan00_07_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "08",
      "text": "Cycling",
      "style": "e8_s4_kan00_08_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13
     },
     {
      "sprite": "09",
      "text": "Golf",
      "style": "e8_s4_kan00_09_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
      "baseline": 14
     },
     {
      "sprite": "0a",
      "text": "Tennis",
      "style": "e8_s4_kan00_0a_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "0b",
      "text": "Bowling",
      "style": "e8_s4_kan00_0b_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "0c",
      "text": "Skiing",
      "style": "e8_s4_kan00_0c_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "0d",
      "text": "Horse Riding",
      "style": "e8_s4_kan00_0d_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "0e",
      "text": "Breaststroke",
      "style": "e8_s4_kan00_0e_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "0f",
      "text": "Front Crawl",
      "style": "e8_s4_kan00_0f_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13
     },
     {
      "sprite": "10",
      "text": "Sleeping",
      "style": "e8_s4_kan00_10_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "11",
      "text": "Cleaning",
      "style": "e8_s4_kan00_11_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13
     },
     {
      "sprite": "12",
      "text": "Bathing",
      "style": "e8_s4_kan00_12_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 13
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 14
     },
     {
      "sprite": "13",
      "text": "Sauna",
      "style": "e8_s4_kan00_13_h_s",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 13
     }
    ],
    "name": "s4_kan00",
