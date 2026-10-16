@@ -1,0 +1,124 @@
+{
+ "arc": "teammark.arc",
+ "repack": [
+  {
+   "bank": "p5_ms",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     16,
+     32,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     8,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      128
+     ],
+     "text": "All-Stars",
+     "style": "c7_ms_00_0",
+     "font": "ttf:rounded:18:0.0:0.85:0.35",
+     "baseline": 0,
+     "left": 0
+    }
+   ],
+   "name": "p5_ms",
+   "share": true
+  },
+  {
+   "bank": "r5_par",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "No Arrange",
+     "style": "c7_r5_par~0_124",
+     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "00"
+     ],
+     "left": 4
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      48,
+      96
+     ],
+     "text": "No Arrange",
+     "style": "c7_r5_par~124_164",
+     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "baseline": 26,
+     "sprites": [
+      "00"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      0,
+      32,
+      112,
+      64
+     ],
+     "text": "Teams",
+     "style": "c7_r5_par",
+     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "baseline": 27,
+     "sprites": [
+      "00"
+     ],
+     "left": 6
+    }
+   ],
+   "name": "r5_par",
+   "share": true
+  }
+ ]
+}
