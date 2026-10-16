@@ -271,6 +271,456 @@
    ],
    "name": "r3_tse_r9c",
    "share": true
+  },
+  {
+   "bank": "r3_tse",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     56,
+     24
+    ],
+    [
+     3,
+     56,
+     0,
+     80,
+     24
+    ],
+    [
+     3,
+     80,
+     0,
+     128,
+     24
+    ],
+    [
+     3,
+     0,
+     24,
+     56,
+     48
+    ],
+    [
+     3,
+     56,
+     24,
+     112,
+     48
+    ],
+    [
+     3,
+     120,
+     24,
+     128,
+     48
+    ],
+    [
+     3,
+     0,
+     48,
+     56,
+     72
+    ],
+    [
+     3,
+     56,
+     48,
+     128,
+     72
+    ],
+    [
+     3,
+     0,
+     72,
+     56,
+     96
+    ],
+    [
+     3,
+     56,
+     72,
+     128,
+     96
+    ],
+    [
+     3,
+     0,
+     96,
+     32,
+     120
+    ],
+    [
+     3,
+     40,
+     96,
+     128,
+     120
+    ],
+    [
+     4,
+     0,
+     0,
+     80,
+     24
+    ],
+    [
+     4,
+     80,
+     0,
+     112,
+     24
+    ],
+    [
+     4,
+     0,
+     24,
+     80,
+     48
+    ],
+    [
+     4,
+     80,
+     24,
+     128,
+     48
+    ],
+    [
+     4,
+     0,
+     48,
+     80,
+     72
+    ],
+    [
+     4,
+     80,
+     48,
+     128,
+     72
+    ],
+    [
+     4,
+     0,
+     72,
+     64,
+     96
+    ],
+    [
+     4,
+     80,
+     72,
+     128,
+     96
+    ],
+    [
+     4,
+     0,
+     96,
+     96,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      0,
+      56,
+      24
+     ],
+     "text": "Auto Normal",
+     "style": "e10_row_p3r0~6_53",
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "baseline": 20,
+     "left": 6
+    },
+    {
+     "from": [
+      3,
+      56,
+      0,
+      80,
+      24
+     ],
+     "text": "Auto Normal",
+     "style": "e10_row_p3r0~69_80",
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "baseline": 20,
+     "left": 13
+    },
+    {
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      24
+     ],
+     "text": "Auto Normal",
+     "style": "e10_row_p3r0~80_123",
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "baseline": 20,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      56,
+      48
+     ],
+     "text": "Sweet Spot Show",
+     "style": "e10_row_p3r1~2_54",
+     "font": "ttf:narrow:9:0.0:0.85:0.25",
+     "baseline": 18,
+     "left": 2
+    },
+    {
+     "from": [
+      3,
+      56,
+      24,
+      112,
+      48
+     ],
+     "text": "Sweet Spot Show",
+     "style": "e10_row_p3r1~62_111",
+     "font": "ttf:narrow:9:0.0:0.85:0.25",
+     "baseline": 18,
+     "left": 6
+    },
+    {
+     "from": [
+      3,
+      120,
+      24,
+      128,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      56,
+      72
+     ],
+     "text": "Manual",
+     "style": "e10_row_p3r2~8_56",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 19,
+     "left": 8
+    },
+    {
+     "from": [
+      3,
+      56,
+      48,
+      128,
+      72
+     ],
+     "text": "Manual",
+     "style": "e10_row_p3r2~56_85",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 19,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      56,
+      96
+     ],
+     "text": "Hide Show",
+     "style": "e10_row_p3r3~15_56",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 18,
+     "left": 15
+    },
+    {
+     "from": [
+      3,
+      56,
+      72,
+      128,
+      96
+     ],
+     "text": "Hide Show",
+     "style": "e10_row_p3r3~56_127",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 18,
+     "left": 0
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      32,
+      120
+     ],
+     "text": "Running Fielding Bat",
+     "style": "e10_row_p3r4~1_32",
+     "font": "ttf:narrow:10:0.0:0.85:0.42",
+     "baseline": 16,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      40,
+      96,
+      128,
+      120
+     ],
+     "text": "Running Fielding Bat",
+     "style": "e10_row_p3r4~40_126",
+     "font": "ttf:narrow:10:0.0:0.85:0.42",
+     "baseline": 16,
+     "left": 0
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": "Contact Cursor ting",
+     "style": "e10_row_p4r0~5_79",
+     "font": "ttf:narrow:10:0.0:0.85:0.42",
+     "baseline": 16,
+     "left": 5
+    },
+    {
+     "from": [
+      4,
+      80,
+      0,
+      112,
+      24
+     ],
+     "text": "Contact Cursor ting",
+     "style": "e10_row_p4r0~94_111",
+     "font": "ttf:narrow:10:0.0:0.85:0.42",
+     "baseline": 16,
+     "left": 14
+    },
+    {
+     "from": [
+      4,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": "Landing Spot Pitch",
+     "style": "e10_row_p4r1~2_74",
+     "font": "ttf:narrow:11:0.0:0.85:0.42",
+     "baseline": 16,
+     "left": 2
+    },
+    {
+     "from": [
+      4,
+      80,
+      24,
+      128,
+      48
+     ],
+     "text": "Landing Spot Pitch",
+     "style": "e10_row_p4r1~95_121",
+     "font": "ttf:narrow:11:0.0:0.85:0.42",
+     "baseline": 16,
+     "left": 15
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      80,
+      72
+     ],
+     "text": "Strike Zone ing",
+     "style": "e10_row_p4r2~8_80",
+     "font": "ttf:narrow:13:0.0:0.85:0.42",
+     "baseline": 17,
+     "left": 8
+    },
+    {
+     "from": [
+      4,
+      80,
+      48,
+      128,
+      72
+     ],
+     "text": "Strike Zone ing",
+     "style": "e10_row_p4r2~97_119",
+     "font": "ttf:narrow:13:0.0:0.85:0.42",
+     "baseline": 17,
+     "left": 17
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "Pitch Guide Mana",
+     "style": "e10_row_p4r3~1_63",
+     "font": "ttf:narrow:11:0.0:0.85:0.42",
+     "baseline": 18,
+     "left": 1
+    },
+    {
+     "from": [
+      4,
+      80,
+      72,
+      128,
+      96
+     ],
+     "text": "Pitch Guide Mana",
+     "style": "e10_row_p4r3~95_121",
+     "font": "ttf:narrow:11:0.0:0.85:0.42",
+     "baseline": 18,
+     "left": 15
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      96,
+      120
+     ],
+     "text": "Pitch Cursor",
+     "style": "e10_row_p4r4~1_91",
+     "font": "ttf:narrow:15:0.0:0.85:0.42",
+     "baseline": 19,
+     "left": 1
+    }
+   ],
+   "name": "r3_tse_r10e",
+   "share": true
   }
  ]
 }
