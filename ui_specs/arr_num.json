@@ -1,0 +1,185 @@
+{
+ "arc": "arr_num.arc",
+ "repack": [
+  {
+   "bank": "s3_no",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     2,
+     64,
+     0,
+     128,
+     40
+    ],
+    [
+     2,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     2,
+     120,
+     40,
+     128,
+     72
+    ],
+    [
+     3,
+     0,
+     64,
+     96,
+     128
+    ],
+    [
+     3,
+     0,
+     40,
+     64,
+     64
+    ],
+    [
+     3,
+     96,
+     64,
+     128,
+     96
+    ],
+    [
+     3,
+     48,
+     0,
+     64,
+     40
+    ],
+    [
+     4,
+     16,
+     48,
+     128,
+     96
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Cancel",
+     "style": "e7_s3_no_02",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 37
+    },
+    {
+     "sprite": "06",
+     "text": "Current\nNumber",
+     "style": "e7_s3_no_06_8",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 2,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "06",
+     "text": "New\nNumber",
+     "style": "e7_s3_no_06_7",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 0,
+     "palettes": [
+      7
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Left/Right: pick digit. Up/Down: change it.",
+     "style": "e7_s3_no_24",
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 91,
+     "dy": 2
+    },
+    {
+     "sprite": "25",
+     "text": "Choose a player to renumber",
+     "style": "e7_s3_no_25",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 58,
+     "dy": 2
+    },
+    {
+     "sprite": "26",
+     "text": "That number is retired",
+     "style": "e7_s3_no_26",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 75,
+     "dy": 2
+    },
+    {
+     "sprite": "27",
+     "text": "That number is already in use",
+     "style": "e7_s3_no_27",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 106,
+     "dy": 2
+    },
+    {
+     "sprite": "28",
+     "text": "Reset changed numbers to default",
+     "style": "e7_s3_no_28",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 90,
+     "dy": 3
+    },
+    {
+     "sprite": "2c",
+     "text": "Stick left/right: pick digit. Up/down: change it.",
+     "style": "e7_s3_no_2c",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 93,
+     "dy": 2
+    },
+    {
+     "sprite": "2d",
+     "text": "L Stick left/right: pick digit. Up/down: change it.",
+     "style": "e7_s3_no_2d",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 96,
+     "dy": 2
+    }
+   ],
+   "name": "s3_no",
+   "share": true
+  }
+ ]
+}
