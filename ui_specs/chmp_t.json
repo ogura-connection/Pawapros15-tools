@@ -440,13 +440,20 @@
      32,
      64,
      128,
-     128
+     96
     ],
     [
      6,
      0,
      96,
      32,
+     128
+    ],
+    [
+     6,
+     96,
+     96,
+     128,
      128
     ],
     [
@@ -575,31 +582,102 @@
      "baseline": 84
     },
     {
-     "sprite": "2f",
-     "text": "Champion",
-     "style": "f8_r3_tig_0_2f",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "slices": true,
-     "slice_width": 25,
-     "dy": 3
-    },
-    {
-     "sprite": "30",
-     "text": "Champion",
-     "style": "f8_r3_tig_0_30",
-     "font": "ttf:rounded:18:0.0:0.92:0.3",
-     "slices": true,
-     "slice_width": 28,
-     "dy": 2
-    },
-    {
-     "sprite": "3a",
+     "from": [
+      11,
+      0,
+      0,
+      128,
+      48
+     ],
      "text": "Taking Entries...",
-     "style": "f8_r3_tig_0_3a",
-     "font": "ttf:rounded:32:0.0:1.0:0.3",
-     "slices": true,
-     "slice_width": 57,
-     "dy": 5
+     "style": "f8_r3_tig_0_3a_r11_0_0~0_113",
+     "font": "ttf:narrow:35:0.0:0.85:0.3",
+     "baseline": 37,
+     "left": 14
+    },
+    {
+     "from": [
+      11,
+      0,
+      48,
+      128,
+      96
+     ],
+     "text": "Taking Entries...",
+     "style": "f8_r3_tig_0_3a_r11_0_0~113_241",
+     "font": "ttf:narrow:35:0.0:0.85:0.3",
+     "baseline": 37,
+     "left": -1
+    },
+    {
+     "from": [
+      11,
+      0,
+      96,
+      48,
+      128
+     ],
+     "text": "Taking Entries...",
+     "style": "f8_r3_tig_0_3a_r11_0_0~241_4096",
+     "font": "ttf:narrow:35:0.0:0.85:0.3",
+     "baseline": 29,
+     "left": -1
+    },
+    {
+     "from": [
+      6,
+      32,
+      64,
+      64,
+      96
+     ],
+     "text": "Champion",
+     "style": "f8_r3_tig_0_2f_r6_32_64~0_25",
+     "font": "ttf:rounded:7:0.0:0.85:0.3",
+     "baseline": 19,
+     "left": 7
+    },
+    {
+     "from": [
+      6,
+      64,
+      64,
+      96,
+      96
+     ],
+     "text": "Champion",
+     "style": "f8_r3_tig_0_2f_r6_32_64~20_4096",
+     "font": "ttf:rounded:7:0.0:0.85:0.3",
+     "baseline": 19,
+     "left": 0
+    },
+    {
+     "from": [
+      6,
+      96,
+      64,
+      128,
+      96
+     ],
+     "text": "Champion",
+     "style": "f8_r3_tig_0_30_r6_96_64~0_26",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 21,
+     "left": 6
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Champion",
+     "style": "f8_r3_tig_0_30_r6_96_64~28_4096",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "baseline": 21,
+     "left": 0
     }
    ],
    "name": "r3_tig_0",
@@ -613,38 +691,17 @@
    "under": 3,
    "areas": [
     [
-     1,
-     0,
-     112,
-     128,
-     128
-    ],
-    [
-     1,
-     104,
-     48,
-     128,
-     72
-    ],
-    [
      2,
-     0,
-     0,
+     56,
+     64,
      128,
      88
     ],
     [
      2,
-     0,
+     56,
      88,
      64,
-     128
-    ],
-    [
-     3,
-     0,
-     64,
-     128,
      128
     ],
     [
@@ -660,25 +717,9 @@
      0,
      128,
      32
-    ],
-    [
-     4,
-     0,
-     0,
-     128,
-     80
     ]
    ],
    "labels": [
-    {
-     "sprite": "00",
-     "text": "Past Champions",
-     "style": "f8_r3_tyr_00",
-     "font": "ttf:rounded:30:0.0:1.0:0.3",
-     "slices": true,
-     "slice_width": 23,
-     "dy": 6
-    },
     {
      "from": [
       2,
@@ -715,8 +756,8 @@
      ],
      "text": "Tournament #",
      "style": "f8_r3_tyr_03_r3_0_0",
-     "font": "ttf:narrow:10:0.0:0.85:0.3",
-     "baseline": 17
+     "font": "ttf:narrow:13:0.0:0.85:0.3",
+     "baseline": 18
     }
    ],
    "name": "r3_tyr",

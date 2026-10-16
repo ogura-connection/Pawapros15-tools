@@ -1,0 +1,75 @@
+{
+ "arc": "remopawa.arc",
+ "repack": [
+  {
+   "bank": "s4w_rpx00",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     17,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     18,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     19,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Versus",
+     "style": "f8_s4w_rpx00_00",
+     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 64,
+     "dy": 5
+    },
+    {
+     "sprite": "01",
+     "text": "Home Run Derby",
+     "style": "f8_s4w_rpx00_01",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 98,
+     "dy": 6
+    },
+    {
+     "sprite": "02",
+     "text": "Rimopawa",
+     "style": "f8_s4w_rpx00_02",
+     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 95,
+     "dy": 7
+    },
+    {
+     "sprite": "06",
+     "text": "Controls",
+     "style": "f8_s4w_rpx00_06",
+     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 78,
+     "dy": 4
+    }
+   ],
+   "name": "s4w_rpx00",
+   "share": true
+  }
+ ]
+}
