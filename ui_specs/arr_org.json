@@ -1,0 +1,3315 @@
+{
+ "arc": "arr_org.arc",
+ "repack": [
+  {
+   "bank": "s3_ein",
+   "palette": 1,
+   "style": "b7_ein_t",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     48,
+     128,
+     88
+    ],
+    [
+     6,
+     0,
+     88,
+     56,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Create Original Team",
+     "style": "b7_ein_t",
+     "font": "ttf:narrow:16:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 4
+    }
+   ],
+   "name": "ein title"
+  },
+  {
+   "bank": "s3_ein",
+   "palette": 74,
+   "style": "b7_olive",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     5,
+     0,
+     24,
+     88,
+     48
+    ],
+    [
+     5,
+     88,
+     72,
+     128,
+     96
+    ],
+    [
+     5,
+     88,
+     96,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     72,
+     88,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Name/Mark/Logo",
+     "style": "b7_olive",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 25
+    },
+    {
+     "sprite": "0f",
+     "text": "Owner",
+     "style": "b7_olive",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 23
+    },
+    {
+     "sprite": "10",
+     "text": "Team Name",
+     "style": "b7_olive",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 0
+    },
+    {
+     "sprite": "11",
+     "text": "Initial",
+     "style": "b7_olive",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 24
+    }
+   ],
+   "name": "ein olive"
+  },
+  {
+   "bank": "s3_ein",
+   "palette": 76,
+   "style": "b7_teal",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     32,
+     120,
+     64
+    ],
+    [
+     5,
+     0,
+     0,
+     56,
+     24
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "04",
+     "text": "Uniform",
+     "style": "b7_teal",
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "baseline": 26
+    },
+    {
+     "sprite": "12",
+     "text": "Mark",
+     "style": "b7_teal",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 25
+    }
+   ],
+   "name": "ein teal"
+  },
+  {
+   "bank": "s3_ein",
+   "palette": 73,
+   "style": "b7_lav",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     64,
+     112,
+     96
+    ],
+    [
+     5,
+     0,
+     96,
+     88,
+     120
+    ],
+    [
+     5,
+     0,
+     48,
+     88,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "05",
+     "text": "Home Stadium",
+     "style": "b7_lav",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 25
+    },
+    {
+     "sprite": "13",
+     "text": "Logo Text",
+     "style": "b7_lav",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 24
+    },
+    {
+     "sprite": "14",
+     "text": "Logo Colour",
+     "style": "b7_lav",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 23
+    }
+   ],
+   "name": "ein lav"
+  },
+  {
+   "bank": "s3_ein",
+   "palette": 81,
+   "style": "b7_pur",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     5,
+     88,
+     0,
+     128,
+     24
+    ],
+    [
+     5,
+     88,
+     24,
+     128,
+     48
+    ],
+    [
+     5,
+     88,
+     48,
+     96,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "06",
+     "text": "Back to Base Team",
+     "style": "b7_pur",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 24
+    },
+    {
+     "sprite": "15",
+     "text": "Cancel",
+     "style": "b7_pur",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 0
+    }
+   ],
+   "name": "ein purple"
+  },
+  {
+   "bank": "s3_ein",
+   "palette": 51,
+   "style": "b7_dlg",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     8,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     8,
+     0,
+     64,
+     16,
+     96
+    ],
+    [
+     8,
+     16,
+     64,
+     128,
+     96
+    ],
+    [
+     8,
+     0,
+     96,
+     56,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     9,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     9,
+     0,
+     64,
+     16,
+     96
+    ],
+    [
+     8,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     96,
+     88,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      8,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Stop creating",
+     "style": "b7_dl272~0_128",
+     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "baseline": 24,
+     "left": -3
+    },
+    {
+     "from": [
+      8,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Stop creating",
+     "style": "b7_dl272~128_256",
+     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "baseline": 24,
+     "left": -3
+    },
+    {
+     "from": [
+      8,
+      0,
+      64,
+      16,
+      96
+     ],
+     "text": "Stop creating",
+     "style": "b7_dl272~256_4096",
+     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "baseline": 24,
+     "left": -3
+    },
+    {
+     "from": [
+      8,
+      16,
+      64,
+      128,
+      96
+     ],
+     "text": "the original team?",
+     "style": "b7_dl168~0_112",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 23,
+     "left": -2
+    },
+    {
+     "from": [
+      8,
+      0,
+      96,
+      56,
+      128
+     ],
+     "text": "the original team?",
+     "style": "b7_dl168~112_4096",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 23,
+     "left": -2
+    },
+    {
+     "from": [
+      9,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "(Changes will not be kept)",
+     "style": "b7_dl272~0_128",
+     "font": "ttf:rounded:18:0.0:0.85:0.3",
+     "baseline": 24,
+     "left": -1
+    },
+    {
+     "from": [
+      9,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "(Changes will not be kept)",
+     "style": "b7_dl272~128_256",
+     "font": "ttf:rounded:18:0.0:0.85:0.3",
+     "baseline": 24,
+     "left": -1
+    },
+    {
+     "from": [
+      9,
+      0,
+      64,
+      16,
+      96
+     ],
+     "text": "(Changes will not be kept)",
+     "style": "b7_dl272~256_4096",
+     "font": "ttf:rounded:18:0.0:0.85:0.3",
+     "baseline": 24,
+     "left": -1
+    },
+    {
+     "from": [
+      8,
+      64,
+      96,
+      128,
+      128
+     ],
+     "text": "Yes",
+     "style": "b7_dlg",
+     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "baseline": 26
+    },
+    {
+     "from": [
+      9,
+      0,
+      96,
+      88,
+      128
+     ],
+     "text": "No",
+     "style": "b7_dlg",
+     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "baseline": 26
+    }
+   ],
+   "name": "ein dialog"
+  },
+  {
+   "bank": "s3_ane",
+   "palette": 16,
+   "style": "b7_ane_t",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     5,
+     0,
+     40,
+     96,
+     80
+    ],
+    [
+     5,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     2,
+     72,
+     80,
+     120,
+     120
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     3,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     3,
+     0,
+     80,
+     40,
+     120
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     4,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     4,
+     40,
+     80,
+     128,
+     120
+    ],
+    [
+     3,
+     40,
+     80,
+     72,
+     120
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     2,
+     0,
+     40,
+     128,
+     80
+    ],
+    [
+     2,
+     0,
+     80,
+     72,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Enter the owner company name",
+     "style": "b7_ane_t",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "02",
+     "text": "Enter the team name",
+     "style": "b7_ane_t",
+     "font": "ttf:rounded:19:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "03",
+     "text": "Enter the team initial",
+     "style": "b7_ane_t",
+     "font": "ttf:rounded:20:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "09",
+     "text": "Enter the logo text",
+     "style": "b7_ane_t",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    }
+   ],
+   "name": "ane titles"
+  },
+  {
+   "bank": "s3_ane",
+   "palette": 9,
+   "style": "b7_ane_h",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     0,
+     120,
+     24
+    ],
+    [
+     6,
+     0,
+     72,
+     72,
+     96
+    ],
+    [
+     6,
+     0,
+     24,
+     104,
+     48
+    ],
+    [
+     6,
+     0,
+     48,
+     104,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      6,
+      0,
+      0,
+      120,
+      24
+     ],
+     "text": "Owner Company",
+     "style": "b7_ane_h",
+     "font": "ttf:rounded:12:0.0:0.85:0.25",
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      72,
+      72,
+      96
+     ],
+     "text": "Team Name",
+     "style": "b7_ane_h",
+     "font": "ttf:rounded:10:0.0:0.85:0.25",
+     "baseline": 18
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      104,
+      48
+     ],
+     "text": "Initial",
+     "style": "b7_ane_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 20
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      104,
+      72
+     ],
+     "text": "Short Name",
+     "style": "b7_ane_h",
+     "font": "ttf:rounded:14:0.0:0.92:0.25",
+     "baseline": 20
+    }
+   ],
+   "name": "ane headings"
+  },
+  {
+   "bank": "s3_tmr",
+   "palette": 10,
+   "style": "b7_tmr_t",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     3,
+     0,
+     40,
+     112,
+     80
+    ],
+    [
+     5,
+     0,
+     88,
+     80,
+     128
+    ],
+    [
+     3,
+     0,
+     80,
+     128,
+     120
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Set the logo colour",
+     "style": "b7_tmr_t",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 3
+    },
+    {
+     "sprite": "12",
+     "text": "Set the team mark",
+     "style": "b7_tmr_t",
+     "font": "ttf:narrow:20:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    }
+   ],
+   "name": "tmr titles"
+  },
+  {
+   "bank": "s3_tmr",
+   "palette": 10,
+   "style": "b7_tmr_t",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     6,
+     0,
+     56,
+     64,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "1c",
+     "text": "Set the colour of\nthe logo outline",
+     "style": "b7_tmr_t",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 6
+    }
+   ],
+   "name": "tmr 1c"
+  },
+  {
+   "bank": "s3_ebox",
+   "palette": 14,
+   "style": "b7_ebox_t",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     3,
+     0,
+     40,
+     128,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "07",
+     "text": "Set the home stadium",
+     "style": "b7_ebox_t",
+     "font": "ttf:narrow:22:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": -1
+    }
+   ],
+   "name": "ebox title"
+  },
+  {
+   "bank": "s3_ebox",
+   "palette": 19,
+   "style": "b7_pur",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     64,
+     88,
+     128,
+     128
+    ],
+    [
+     5,
+     64,
+     0,
+     88,
+     24
+    ],
+    [
+     5,
+     96,
+     0,
+     128,
+     24
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Cancel",
+     "style": "b7_pur",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 28
+    }
+   ],
+   "name": "ebox cancel"
+  },
+  {
+   "bank": "s3_ebox",
+   "palette": 3,
+   "style": "b7_ebox_tf",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     40,
+     56,
+     56
+    ],
+    [
+     5,
+     56,
+     40,
+     112,
+     56
+    ],
+    [
+     8,
+     0,
+     48,
+     24,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "17",
+     "text": "Turf",
+     "style": "b7_ebox_tf",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 15
+    },
+    {
+     "sprite": "18",
+     "text": "Grass",
+     "style": "b7_ebox_tf",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 15
+    },
+    {
+     "sprite": "34",
+     "text": "Dirt",
+     "style": "b7_ebox_tf",
+     "font": "ttf:narrow:9:0.0:0.85:0.25",
+     "baseline": 12
+    }
+   ],
+   "name": "ebox turf"
+  },
+  {
+   "bank": "s3_ebox",
+   "palette": 28,
+   "style": "b7_ebox_pl",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     6,
+     0,
+     24,
+     64,
+     48
+    ],
+    [
+     6,
+     64,
+     24,
+     128,
+     48
+    ],
+    [
+     6,
+     0,
+     48,
+     64,
+     72
+    ],
+    [
+     6,
+     64,
+     48,
+     128,
+     72
+    ],
+    [
+     6,
+     0,
+     72,
+     64,
+     96
+    ],
+    [
+     6,
+     64,
+     72,
+     128,
+     96
+    ],
+    [
+     6,
+     0,
+     96,
+     64,
+     120
+    ],
+    [
+     6,
+     64,
+     96,
+     128,
+     120
+    ],
+    [
+     7,
+     0,
+     0,
+     64,
+     24
+    ],
+    [
+     7,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     7,
+     0,
+     24,
+     64,
+     48
+    ],
+    [
+     7,
+     64,
+     24,
+     128,
+     48
+    ],
+    [
+     7,
+     0,
+     48,
+     64,
+     72
+    ],
+    [
+     6,
+     0,
+     0,
+     64,
+     24
+    ],
+    [
+     7,
+     64,
+     48,
+     128,
+     72
+    ],
+    [
+     7,
+     64,
+     96,
+     128,
+     120
+    ],
+    [
+     7,
+     0,
+     96,
+     64,
+     120
+    ],
+    [
+     7,
+     64,
+     72,
+     128,
+     96
+    ],
+    [
+     8,
+     0,
+     0,
+     64,
+     24
+    ],
+    [
+     8,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     8,
+     0,
+     24,
+     64,
+     48
+    ],
+    [
+     8,
+     64,
+     24,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "19",
+     "text": "Jingu",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "1a",
+     "text": "Hiroshima",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 20,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "Tokyo D",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Yokohama",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 20,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Nagoya",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Koshien",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Skymark",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Chiba",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 23,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Seibu D",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Yahoo",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 20,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Kyocera",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 21,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Sapporo D",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "baseline": 20,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "K-Sta",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Local",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "???",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 24,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "28",
+     "text": "Local",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "29",
+     "text": "Yamanote",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 20,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "2a",
+     "text": "Ikari D",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "2b",
+     "text": "Rinkai",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "2e",
+     "text": "Blue",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 20,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "2f",
+     "text": "School",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "30",
+     "text": "Magma",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 21,
+     "palettes": [
+      28
+     ]
+    },
+    {
+     "sprite": "33",
+     "text": "Overseas",
+     "style": "b7_ebox_pl",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 22,
+     "palettes": [
+      28
+     ]
+    }
+   ],
+   "name": "ebox plates"
+  },
+  {
+   "bank": "s3_ebox",
+   "palette": 2,
+   "style": "b7_ebox_h",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     56,
+     56,
+     72
+    ],
+    [
+     5,
+     56,
+     56,
+     112,
+     72
+    ],
+    [
+     5,
+     72,
+     72,
+     120,
+     88
+    ],
+    [
+     5,
+     0,
+     72,
+     72,
+     88
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      0,
+      56,
+      56,
+      72
+     ],
+     "text": "Fence",
+     "style": "b7_ebox_h",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 14
+    },
+    {
+     "from": [
+      5,
+      56,
+      56,
+      112,
+      72
+     ],
+     "text": "Center",
+     "style": "b7_ebox_h",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 14
+    },
+    {
+     "from": [
+      5,
+      72,
+      72,
+      120,
+      88
+     ],
+     "text": "Corners",
+     "style": "b7_ebox_h",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 14
+    },
+    {
+     "from": [
+      5,
+      0,
+      72,
+      72,
+      88
+     ],
+     "text": "Field",
+     "style": "b7_ebox_h",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 15
+    }
+   ],
+   "name": "ebox rows"
+  },
+  {
+   "bank": "s3_yun",
+   "palette": 12,
+   "style": "b7_yun_t",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     5,
+     0,
+     32,
+     32,
+     64
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Set the uniform",
+     "style": "b7_yun_t",
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "palettes": [
+      12
+     ]
+    }
+   ],
+   "name": "yun title"
+  },
+  {
+   "bank": "s3_yun",
+   "palette": 19,
+   "style": "b7_pur",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     72,
+     48,
+     128,
+     72
+    ],
+    [
+     8,
+     0,
+     72,
+     24,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "04",
+     "text": "Cancel",
+     "style": "b7_pur",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 24
+    }
+   ],
+   "name": "yun cancel"
+  },
+  {
+   "bank": "s3_yun",
+   "palette": 21,
+   "style": "b7_teal_yun",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     64,
+     24,
+     128,
+     48
+    ],
+    [
+     8,
+     72,
+     72,
+     128,
+     96
+    ],
+    [
+     8,
+     72,
+     96,
+     88,
+     120
+    ],
+    [
+     11,
+     104,
+     24,
+     128,
+     48
+    ],
+    [
+     11,
+     0,
+     48,
+     48,
+     72
+    ],
+    [
+     4,
+     0,
+     88,
+     80,
+     112
+    ],
+    [
+     8,
+     0,
+     0,
+     64,
+     24
+    ],
+    [
+     8,
+     64,
+     0,
+     128,
+     24
+    ],
+    [
+     8,
+     0,
+     24,
+     64,
+     48
+    ],
+    [
+     8,
+     0,
+     48,
+     72,
+     72
+    ],
+    [
+     8,
+     0,
+     96,
+     72,
+     120
+    ],
+    [
+     8,
+     32,
+     72,
+     40,
+     96
+    ],
+    [
+     4,
+     64,
+     64,
+     128,
+     88
+    ],
+    [
+     11,
+     0,
+     0,
+     72,
+     24
+    ],
+    [
+     11,
+     72,
+     0,
+     128,
+     24
+    ],
+    [
+     11,
+     0,
+     24,
+     24,
+     48
+    ],
+    [
+     11,
+     24,
+     24,
+     104,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "05",
+     "text": "Cap",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 24
+    },
+    {
+     "sprite": "06",
+     "text": "Cap Brim",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:13:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 56,
+     "dy": 0
+    },
+    {
+     "sprite": "07",
+     "text": "Cap Logo",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 48,
+     "dy": 1
+    },
+    {
+     "sprite": "08",
+     "text": "Sleeves/Belt/Spikes",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:7:0.0:0.92:0.25",
+     "baseline": 22
+    },
+    {
+     "sprite": "09",
+     "text": "Top",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 25
+    },
+    {
+     "sprite": "0a",
+     "text": "Pants",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 26
+    },
+    {
+     "sprite": "0b",
+     "text": "Number",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 24
+    },
+    {
+     "sprite": "0c",
+     "text": "Number Trim",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 22
+    },
+    {
+     "sprite": "0d",
+     "text": "Line Type",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 72,
+     "dy": 1
+    },
+    {
+     "sprite": "0e",
+     "text": "Lines",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 24
+    },
+    {
+     "sprite": "59",
+     "text": "Helmet",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 26
+    },
+    {
+     "sprite": "5e",
+     "text": "Helmet Brim",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 56,
+     "dy": -1
+    },
+    {
+     "sprite": "5f",
+     "text": "Helmet Logo",
+     "style": "b7_teal_yun",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "baseline": 24
+    }
+   ],
+   "name": "yun heads"
+  },
+  {
+   "bank": "s3_yun",
+   "palette": 6,
+   "style": "b7_yun_bl",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     96,
+     96,
+     128,
+     112
+    ],
+    [
+     5,
+     72,
+     64,
+     128,
+     80
+    ],
+    [
+     11,
+     48,
+     48,
+     112,
+     64
+    ],
+    [
+     11,
+     56,
+     72,
+     128,
+     88
+    ],
+    [
+     11,
+     0,
+     88,
+     80,
+     104
+    ],
+    [
+     6,
+     80,
+     32,
+     128,
+     48
+    ],
+    [
+     6,
+     80,
+     48,
+     128,
+     64
+    ],
+    [
+     6,
+     80,
+     64,
+     128,
+     80
+    ],
+    [
+     6,
+     80,
+     16,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      96,
+      96,
+      128,
+      112
+     ],
+     "text": "Cap",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "left": 3
+    },
+    {
+     "from": [
+      5,
+      72,
+      64,
+      128,
+      80
+     ],
+     "text": "Cap Brim",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 13,
+     "left": 1
+    },
+    {
+     "from": [
+      11,
+      48,
+      48,
+      112,
+      64
+     ],
+     "text": "Helmet",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 15,
+     "left": 0
+    },
+    {
+     "from": [
+      11,
+      56,
+      72,
+      128,
+      88
+     ],
+     "text": "Helmet Brim",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:0.92:0.25",
+     "baseline": 14,
+     "left": 0
+    },
+    {
+     "from": [
+      11,
+      0,
+      88,
+      80,
+      104
+     ],
+     "text": "Helmet Logo",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "left": 0
+    },
+    {
+     "from": [
+      6,
+      80,
+      32,
+      128,
+      48
+     ],
+     "text": "Top",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "left": 4
+    },
+    {
+     "from": [
+      6,
+      80,
+      48,
+      128,
+      64
+     ],
+     "text": "Pants",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "left": 4
+    },
+    {
+     "from": [
+      6,
+      80,
+      64,
+      128,
+      80
+     ],
+     "text": "Number",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "left": 4
+    },
+    {
+     "from": [
+      6,
+      80,
+      16,
+      128,
+      32
+     ],
+     "text": "Lines",
+     "style": "b7_yun_bl",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 15,
+     "left": 4
+    }
+   ],
+   "name": "yun list"
+  },
+  {
+   "bank": "s3_yun",
+   "palette": 6,
+   "style": "b7_yun_bl",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     11,
+     112,
+     48,
+     128,
+     64
+    ],
+    [
+     11,
+     0,
+     72,
+     56,
+     88
+    ],
+    [
+     5,
+     72,
+     80,
+     128,
+     96
+    ],
+    [
+     5,
+     72,
+     96,
+     96,
+     112
+    ],
+    [
+     5,
+     72,
+     112,
+     128,
+     128
+    ],
+    [
+     6,
+     80,
+     80,
+     104,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      11,
+      112,
+      48,
+      128,
+      64
+     ],
+     "text": "Cap Logo",
+     "style": "b7_yun_p72~0_16",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 13,
+     "left": -3
+    },
+    {
+     "from": [
+      11,
+      0,
+      72,
+      56,
+      88
+     ],
+     "text": "Cap Logo",
+     "style": "b7_yun_p72~16_4096",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 13,
+     "left": -3
+    },
+    {
+     "from": [
+      5,
+      72,
+      80,
+      128,
+      96
+     ],
+     "text": "Number Trim",
+     "style": "b7_yun_p80~0_56",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "left": -2
+    },
+    {
+     "from": [
+      5,
+      72,
+      96,
+      96,
+      112
+     ],
+     "text": "Number Trim",
+     "style": "b7_yun_p80~56_4096",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 14,
+     "left": -2
+    },
+    {
+     "from": [
+      5,
+      72,
+      112,
+      128,
+      128
+     ],
+     "text": "Sleeves/Belt/Spikes",
+     "style": "b7_yun_p80~0_56",
+     "font": "ttf:narrow:8:0.0:0.92:0.25",
+     "baseline": 12,
+     "left": -1
+    },
+    {
+     "from": [
+      6,
+      80,
+      80,
+      104,
+      96
+     ],
+     "text": "Sleeves/Belt/Spikes",
+     "style": "b7_yun_p80~56_4096",
+     "font": "ttf:narrow:8:0.0:0.92:0.25",
+     "baseline": 12,
+     "left": -1
+    }
+   ],
+   "name": "yun list pieces"
+  },
+  {
+   "bank": "s3_okp",
+   "palette": 14,
+   "style": "b7_okp_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     80,
+     104,
+     128,
+     128
+    ],
+    [
+     5,
+     72,
+     80,
+     128,
+     104
+    ],
+    [
+     11,
+     32,
+     80,
+     80,
+     96
+    ],
+    [
+     11,
+     80,
+     80,
+     128,
+     88
+    ],
+    [
+     11,
+     96,
+     96,
+     128,
+     120
+    ],
+    [
+     5,
+     72,
+     104,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     104,
+     72,
+     128
+    ],
+    [
+     11,
+     0,
+     96,
+     48,
+     120
+    ],
+    [
+     11,
+     48,
+     96,
+     96,
+     120
+    ],
+    [
+     0,
+     0,
+     104,
+     80,
+     128
+    ],
+    [
+     5,
+     0,
+     80,
+     72,
+     104
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "0c",
+     "text": "Home",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "0d",
+     "text": "Away",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "0e",
+     "text": "Mark",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0f",
+     "text": "Logo",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "10",
+     "text": "Team Flag",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:9:0.0:0.92:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "11",
+     "text": "Stadium",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "78",
+     "text": "Batting",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "79",
+     "text": "Fielding",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:9:0.0:0.92:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "86",
+     "text": "Logo",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "87",
+     "text": "Mark",
+     "style": "b7_okp_tab",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 6
+    }
+   ],
+   "name": "okp tabs"
+  },
+  {
+   "bank": "s3_okp",
+   "palette": 3,
+   "style": "b7_okp_it",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     0,
+     48,
+     16
+    ],
+    [
+     4,
+     0,
+     16,
+     48,
+     32
+    ],
+    [
+     4,
+     0,
+     32,
+     64,
+     48
+    ],
+    [
+     4,
+     0,
+     48,
+     48,
+     64
+    ],
+    [
+     4,
+     0,
+     64,
+     64,
+     80
+    ],
+    [
+     4,
+     0,
+     80,
+     48,
+     96
+    ],
+    [
+     4,
+     0,
+     96,
+     64,
+     112
+    ],
+    [
+     4,
+     0,
+     112,
+     48,
+     128
+    ],
+    [
+     4,
+     64,
+     32,
+     128,
+     48
+    ],
+    [
+     4,
+     64,
+     80,
+     112,
+     96
+    ],
+    [
+     4,
+     64,
+     96,
+     112,
+     112
+    ],
+    [
+     4,
+     64,
+     112,
+     112,
+     128
+    ],
+    [
+     4,
+     48,
+     0,
+     128,
+     16
+    ],
+    [
+     5,
+     0,
+     0,
+     48,
+     16
+    ],
+    [
+     4,
+     64,
+     64,
+     128,
+     80
+    ],
+    [
+     5,
+     0,
+     16,
+     48,
+     32
+    ],
+    [
+     5,
+     0,
+     32,
+     48,
+     48
+    ],
+    [
+     5,
+     0,
+     48,
+     48,
+     64
+    ],
+    [
+     5,
+     64,
+     0,
+     112,
+     16
+    ],
+    [
+     5,
+     64,
+     16,
+     112,
+     32
+    ],
+    [
+     4,
+     48,
+     16,
+     128,
+     32
+    ],
+    [
+     5,
+     64,
+     32,
+     112,
+     48
+    ],
+    [
+     4,
+     48,
+     48,
+     128,
+     64
+    ],
+    [
+     5,
+     64,
+     48,
+     112,
+     64
+    ],
+    [
+     11,
+     0,
+     0,
+     64,
+     16
+    ],
+    [
+     11,
+     64,
+     0,
+     128,
+     16
+    ],
+    [
+     11,
+     0,
+     16,
+     48,
+     32
+    ],
+    [
+     11,
+     48,
+     16,
+     96,
+     32
+    ],
+    [
+     11,
+     96,
+     16,
+     128,
+     32
+    ],
+    [
+     11,
+     0,
+     32,
+     16,
+     48
+    ],
+    [
+     11,
+     16,
+     32,
+     80,
+     48
+    ],
+    [
+     11,
+     80,
+     32,
+     128,
+     48
+    ],
+    [
+     11,
+     0,
+     48,
+     80,
+     64
+    ],
+    [
+     11,
+     80,
+     48,
+     128,
+     64
+    ],
+    [
+     11,
+     0,
+     64,
+     48,
+     80
+    ],
+    [
+     11,
+     48,
+     64,
+     96,
+     80
+    ],
+    [
+     11,
+     96,
+     64,
+     128,
+     80
+    ],
+    [
+     11,
+     0,
+     80,
+     16,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "25",
+     "text": "Dog",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "26",
+     "text": "Cat",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "27",
+     "text": "Lion",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "28",
+     "text": "Gorilla",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "29",
+     "text": "Wolf",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "2a",
+     "text": "Dragon",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "2b",
+     "text": "Eagle",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "2c",
+     "text": "Orca",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "2d",
+     "text": "Pegasus",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "2e",
+     "text": "Knight",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "2f",
+     "text": "Samurai",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "30",
+     "text": "Angel",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "31",
+     "text": "Pawapro-kun",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "32",
+     "text": "Squirrel",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:10:0.0:0.92:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "33",
+     "text": "Cheetah",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "34",
+     "text": "Rhino",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "35",
+     "text": "Cobra",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:0.92:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "36",
+     "text": "Dinosaur",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "37",
+     "text": "Bee",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "38",
+     "text": "Shrimp",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "39",
+     "text": "Phoenix",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "3a",
+     "text": "Ball",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "3b",
+     "text": "Cowboy",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "3c",
+     "text": "Reaper",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "7a",
+     "text": "Boar",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "7b",
+     "text": "Impala",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "7c",
+     "text": "Bull",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "7d",
+     "text": "Bear",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "7e",
+     "text": "Scorpion",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 1
+    },
+    {
+     "sprite": "7f",
+     "text": "Ninja",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "80",
+     "text": "Elephant",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "81",
+     "text": "Beetle",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "82",
+     "text": "Whale",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:0.92:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "83",
+     "text": "Fish",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "84",
+     "text": "Fairy",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "85",
+     "text": "Gator",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 32,
+     "dy": -1
+    }
+   ],
+   "name": "okp mascots"
+  },
+  {
+   "bank": "s3_okp",
+   "palette": 0,
+   "style": "b7_okp_st",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     6,
+     120,
+     24,
+     128,
+     48
+    ],
+    [
+     6,
+     0,
+     24,
+     120,
+     48
+    ],
+    [
+     6,
+     0,
+     48,
+     96,
+     72
+    ],
+    [
+     6,
+     0,
+     72,
+     128,
+     96
+    ],
+    [
+     6,
+     120,
+     96,
+     128,
+     120
+    ],
+    [
+     6,
+     0,
+     96,
+     120,
+     120
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     10,
+     120,
+     0,
+     128,
+     24
+    ],
+    [
+     10,
+     0,
+     72,
+     128,
+     96
+    ],
+    [
+     10,
+     0,
+     96,
+     64,
+     120
+    ],
+    [
+     7,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     10,
+     96,
+     24,
+     128,
+     48
+    ],
+    [
+     7,
+     96,
+     96,
+     128,
+     120
+    ],
+    [
+     7,
+     0,
+     48,
+     96,
+     72
+    ],
+    [
+     10,
+     0,
+     48,
+     128,
+     72
+    ],
+    [
+     8,
+     64,
+     48,
+     128,
+     72
+    ],
+    [
+     7,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     6,
+     96,
+     48,
+     128,
+     72
+    ],
+    [
+     10,
+     64,
+     96,
+     88,
+     120
+    ],
+    [
+     8,
+     0,
+     0,
+     96,
+     24
+    ],
+    [
+     8,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     8,
+     0,
+     48,
+     64,
+     72
+    ],
+    [
+     8,
+     0,
+     72,
+     80,
+     96
+    ],
+    [
+     9,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     10,
+     0,
+     24,
+     96,
+     48
+    ],
+    [
+     9,
+     0,
+     96,
+     96,
+     120
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     12,
+     0,
+     24,
+     24,
+     48
+    ],
+    [
+     12,
+     24,
+     24,
+     128,
+     48
+    ],
+    [
+     12,
+     0,
+     48,
+     24,
+     72
+    ],
+    [
+     12,
+     24,
+     48,
+     128,
+     72
+    ],
+    [
+     12,
+     0,
+     72,
+     8,
+     96
+    ],
+    [
+     12,
+     8,
+     72,
+     104,
+     96
+    ],
+    [
+     8,
+     0,
+     96,
+     80,
+     120
+    ],
+    [
+     10,
+     0,
+     0,
+     56,
+     24
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3e",
+     "text": "Meiji Jingu Stadium",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "3f",
+     "text": "Hiroshima Municipal Stadium",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:8:0.0:0.85:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "40",
+     "text": "Tokyo Dome",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "41",
+     "text": "Yokohama Stadium",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    },
+    {
+     "sprite": "42",
+     "text": "Nagoya Dome",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "43",
+     "text": "Hanshin Koshien Stadium",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 4
+    },
+    {
+     "sprite": "44",
+     "text": "Skymark Stadium",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "45",
+     "text": "Chiba Marine Stadium",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    },
+    {
+     "sprite": "46",
+     "text": "Seibu Dome",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "47",
+     "text": "Fukuoka Yahoo! JAPAN Dome",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    },
+    {
+     "sprite": "48",
+     "text": "Kyocera Dome Osaka",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 96,
+     "dy": 3
+    },
+    {
+     "sprite": "49",
+     "text": "Sapporo Dome",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "4a",
+     "text": "Kleenex Stadium Miyagi",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "4b",
+     "text": "Local Ballpark",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "4c",
+     "text": "Yamanote Ballpark",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 5
+    },
+    {
+     "sprite": "4d",
+     "text": "Ikari Dome",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "4e",
+     "text": "Rinkai Ballpark",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "4f",
+     "text": "Blue Stadium",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "88",
+     "text": "School Field",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "89",
+     "text": "Magma Dome",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "8a",
+     "text": "Local Dome",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "8b",
+     "text": "Overseas Stadium",
+     "style": "b7_okp_st",
+     "font": "ttf:narrow:13:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 80,
+     "dy": 0
+    }
+   ],
+   "name": "okp stadiums"
+  },
+  {
+   "bank": "s3_okp",
+   "palette": 3,
+   "style": "b7_okp_it",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     64,
+     40,
+     80
+    ],
+    [
+     8,
+     80,
+     72,
+     128,
+     88
+    ],
+    [
+     7,
+     64,
+     72,
+     128,
+     88
+    ],
+    [
+     8,
+     96,
+     0,
+     128,
+     16
+    ],
+    [
+     10,
+     88,
+     96,
+     120,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      0,
+      64,
+      40,
+      80
+     ],
+     "text": "Colour",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 14
+    },
+    {
+     "from": [
+      8,
+      80,
+      72,
+      128,
+      88
+     ],
+     "text": "Lines:",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 14
+    },
+    {
+     "from": [
+      7,
+      64,
+      72,
+      128,
+      88
+     ],
+     "text": "Jersey Name:",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:10:0.0:0.85:0.25",
+     "baseline": 13
+    },
+    {
+     "from": [
+      8,
+      96,
+      0,
+      128,
+      16
+     ],
+     "text": "None",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:0.92:0.25",
+     "baseline": 14
+    },
+    {
+     "from": [
+      10,
+      88,
+      96,
+      120,
+      112
+     ],
+     "text": "On",
+     "style": "b7_okp_it",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "baseline": 14
+    }
+   ],
+   "name": "okp words"
+  }
+ ]
+}

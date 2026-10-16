@@ -28,7 +28,7 @@
      "sprite": "00",
      "text": "Data Corner",
      "style": "d7_m3_are_00",
-     "font": "ttf:rounded:33:0.0:0.92:0.35",
+     "font": "ttf:rounded:33:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -295,7 +295,7 @@
      "sprite": "00",
      "text": "Data Corner",
      "style": "d7_m3_are_00",
-     "font": "ttf:rounded:33:0.0:0.92:0.35",
+     "font": "ttf:rounded:33:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 128,
      "dy": 2,
@@ -415,7 +415,7 @@
      "sprite": "07",
      "text": "Load Data",
      "style": "d7_s4w_are_07",
-     "font": "ttf:rounded:21:0.0:0.85:0.35",
+     "font": "ttf:narrow:22:0.0:0.92:0.35",
      "baseline": 40,
      "pages": [
       1
