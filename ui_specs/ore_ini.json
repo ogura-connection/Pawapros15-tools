@@ -5293,62 +5293,6 @@
    "bank": "y3_mym",
    "page": 7,
    "rect": [
-    1,
-    1,
-    39,
-    15
-   ],
-   "text": "Hometown",
-   "font": "ttf:narrow:7:0:0.85:0.18",
-   "copy": "clear",
-   "style": "g10_mn"
-  },
-  {
-   "bank": "y3_mym",
-   "page": 7,
-   "rect": [
-    51,
-    1,
-    77,
-    15
-   ],
-   "text": "Career",
-   "font": "ttf:narrow:7:0:0.92:0.18",
-   "copy": "clear",
-   "style": "g10_mn"
-  },
-  {
-   "bank": "y3_mym",
-   "page": 7,
-   "rect": [
-    81,
-    1,
-    119,
-    15
-   ],
-   "text": "Ratings",
-   "font": "ttf:narrow:8:0:1.0:0.18",
-   "copy": "clear",
-   "style": "g10_mn"
-  },
-  {
-   "bank": "y3_mym",
-   "page": 7,
-   "rect": [
-    2,
-    17,
-    32,
-    32
-   ],
-   "text": "Parents",
-   "font": "ttf:narrow:7:0:0.92:0.18",
-   "copy": "clear",
-   "style": "g10_mn"
-  },
-  {
-   "bank": "y3_mym",
-   "page": 7,
-   "rect": [
     34,
     17,
     83,
@@ -5359,20 +5303,6 @@
    "copy": "clear",
    "style": "g10_mn",
    "dx": -10
-  },
-  {
-   "bank": "y3_mym",
-   "page": 7,
-   "rect": [
-    92,
-    17,
-    117,
-    32
-   ],
-   "text": "Joined",
-   "font": "ttf:narrow:7:0:0.85:0.18",
-   "copy": "clear",
-   "style": "g10_mn"
   },
   {
    "bank": "y3_mym",
@@ -5407,20 +5337,6 @@
    "bank": "y3_mym",
    "page": 7,
    "rect": [
-    112,
-    33,
-    128,
-    47
-   ],
-   "text": "Mom",
-   "font": "ttf:narrow:6:0:0.85:0.18",
-   "copy": "clear",
-   "style": "g10_mn"
-  },
-  {
-   "bank": "y3_mym",
-   "page": 7,
-   "rect": [
     3,
     48,
     52,
@@ -5431,34 +5347,6 @@
    "copy": "clear",
    "style": "g10_mn",
    "dx": -10
-  },
-  {
-   "bank": "y3_mym",
-   "page": 7,
-   "rect": [
-    59,
-    49,
-    85,
-    63
-   ],
-   "text": "Hobby",
-   "font": "ttf:narrow:7:0:0.92:0.18",
-   "copy": "clear",
-   "style": "g10_mn"
-  },
-  {
-   "bank": "y3_mym",
-   "page": 7,
-   "rect": [
-    88,
-    48,
-    102,
-    64
-   ],
-   "text": "Dad",
-   "font": "ttf:narrow:6:0:0.85:0.18",
-   "copy": "clear",
-   "style": "g10_mn"
   },
   {
    "bank": "y3_mym",
@@ -5503,6 +5391,118 @@
    "font": "ttf:narrow:20:0:0.8:0.5",
    "copy": "clear",
    "style": "g10_mtf"
+  },
+  {
+   "bank": "y3_mym",
+   "page": 7,
+   "rect": [
+    1,
+    1,
+    39,
+    15
+   ],
+   "text": "From",
+   "font": "ttf:narrow:9:0:1.0:0.18",
+   "copy": "clear",
+   "style": "g10_mn"
+  },
+  {
+   "bank": "y3_mym",
+   "page": 7,
+   "rect": [
+    51,
+    1,
+    77,
+    15
+   ],
+   "text": "Career",
+   "font": "ttf:narrow:9:0:0.7:0.0",
+   "copy": "clear",
+   "style": "g10_mn"
+  },
+  {
+   "bank": "y3_mym",
+   "page": 7,
+   "rect": [
+    81,
+    1,
+    119,
+    15
+   ],
+   "text": "Type",
+   "font": "ttf:narrow:8:0:1.0:0.1",
+   "copy": "clear",
+   "style": "g10_mn"
+  },
+  {
+   "bank": "y3_mym",
+   "page": 7,
+   "rect": [
+    2,
+    17,
+    32,
+    32
+   ],
+   "text": "Family",
+   "font": "ttf:narrow:9:0:0.85:0.1",
+   "copy": "clear",
+   "style": "g10_mn"
+  },
+  {
+   "bank": "y3_mym",
+   "page": 7,
+   "rect": [
+    92,
+    17,
+    117,
+    32
+   ],
+   "text": "Joined",
+   "font": "ttf:narrow:9:0:0.7:0.0",
+   "copy": "clear",
+   "style": "g10_mn"
+  },
+  {
+   "bank": "y3_mym",
+   "page": 7,
+   "rect": [
+    112,
+    33,
+    128,
+    47
+   ],
+   "text": "Mom",
+   "font": "ttf:narrow:8:0:0.7:0.0",
+   "copy": "clear",
+   "style": "g10_mn"
+  },
+  {
+   "bank": "y3_mym",
+   "page": 7,
+   "rect": [
+    59,
+    49,
+    85,
+    63
+   ],
+   "text": "Hobby",
+   "font": "ttf:narrow:8:0:0.85:0.1",
+   "copy": "clear",
+   "style": "g10_mn"
+  },
+  {
+   "bank": "y3_mym",
+   "page": 7,
+   "rect": [
+    88,
+    48,
+    102,
+    64
+   ],
+   "text": "Dad",
+   "font": "ttf:narrow:8:0:0.7:0.0",
+   "copy": "clear",
+   "style": "g10_mn"
   }
  ]
 }
