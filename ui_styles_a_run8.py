@@ -5,7 +5,7 @@ from ui_styles_ore_ini import ringfill
 
 STYLES = {}
 
-STYLES["a8_gkn"] = ringfill([15, 15, 15, 15, 15, 15], [1, 1], [6])
+STYLES["a8_gkn"] = ringfill([15, 15, 15, 15, 15, 15], [8, 1, 6])
 STYLES["a8_gkn_s"] = ringfill([1, 1, 1, 1, 1, 1], [8, 8, 9], [15, 15])
 STYLES["a8_gkn_6f"] = ringfill([1, 1, 1, 1, 1, 1], [8, 8], [15])
 STYLES["a8_gkn_71"] = ringfill([1, 1, 1, 1, 1, 1], [8, 8], [15])
