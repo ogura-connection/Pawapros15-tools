@@ -65,6 +65,7 @@ STYLES["a9_smj_b"] = bandeco([7, 8, 9, 10, 11, 11], [3], [1, 1, 1], [15, 15, 14]
 STYLES["a9_smj_c"] = bandeco([5, 6, 7, 9, 10, 10], [1], [1, 1, 1], [14, 14, 14, 15])
 STYLES["a9_smj_d"] = bandeco([5, 6, 7, 9, 10, 10], [1], [1, 1, 1], [14, 14, 14, 15])
 STYLES["a9_tem"] = ringfill([9, 9, 8, 8, 7, 7], [1, 1, 13, 13, 14], [15])
+STYLES["a9_snm"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4], [4, 4])
 # styles_scs_main_win.txt
 STYLES["a9_smj_a~0_64"] = win(STYLES["a9_smj_a"], 0, 64)
 STYLES["a9_smj_a~64_119"] = win(STYLES["a9_smj_a"], 64, 119)

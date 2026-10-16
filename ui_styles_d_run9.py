@@ -26,6 +26,15 @@ def d9_ellipse(plate, core, W, H, rims=(4, 2)):
         return out, base + oy
     return style
 
+# ---- arekore
+STYLES["d9_ak_01"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 3, 3], [4])
+STYLES["d9_ak_02"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 3, 5], [4])
+STYLES["d9_ak_03"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 3, 5], [4])
+STYLES["d9_ak_04"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 5, 3], [5])
+STYLES["d9_ak_05"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 3], [5, 4])
+STYLES["d9_ak_06"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 2], [5, 4])
+STYLES["d9_ak_07"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 3], [5, 4])
+STYLES["d9_ak_00_logo"] = ui_type.logo(**{'fill': [12, 12, 11, 11, 10, 10], 'outline': 1, 'white': 15, 'rim': 9, 'shadow': [1, 6, 6, 2, 2, 2], 'soft': []})      # learn_logo
 # ---- m_logo
 STYLES["d9_ml_btn"] = ringfill([8, 8, 8, 8, 8, 8], [1, 1, 1])
 STYLES["d9_ml_msg_logo"] = ui_type.logo(fill=[8, 8, 10, 11, 14, 14], outline=1, white=6, rim=6, shadow=[], soft=[])
