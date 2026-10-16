@@ -127,7 +127,7 @@
      "text": "Play",
      "style": "e8_r3_hr_01_59_h",
      "font": "ttf:rounded:18:0.0:1.0:0.3",
-     "baseline": 29,
+     "baseline": 30,
      "palettes": [
       59
      ]
@@ -139,7 +139,7 @@
      "font": "ttf:narrow:18:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 46,
-     "dy": 0,
+     "dy": 2,
      "palettes": [
       60
      ]
@@ -149,7 +149,7 @@
      "text": "Save",
      "style": "e8_r3_hr_03_61_h",
      "font": "ttf:rounded:18:0.0:1.0:0.3",
-     "baseline": 28,
+     "baseline": 30,
      "palettes": [
       61
      ]
@@ -167,10 +167,10 @@
     {
      "sprite": "05",
      "text": "Controller Setup",
-     "style": "e8_r3_hr_05_63_h",
-     "font": "ttf:narrow:13:0.0:0.85:0.3",
+     "style": "e8_r3_hr_05_63_h_m",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
      "slices": true,
-     "slice_width": 55,
+     "slice_width": 56,
      "dy": 3,
      "palettes": [
       63
@@ -186,9 +186,9 @@
     {
      "sprite": "1f",
      "text": "Home\nRuns",
-     "style": "e8_r3_hr_1f_6_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 33,
+     "style": "e8_r3_hr_1f_6_h_m",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 36,
      "palettes": [
       6
      ]
@@ -198,7 +198,7 @@
      "text": "Points",
      "style": "e8_r3_hr_20_2_h",
      "font": "ttf:narrow:17:0.0:0.85:0.3",
-     "baseline": 36,
+     "baseline": 37,
      "palettes": [
       2
      ]
@@ -206,9 +206,9 @@
     {
      "sprite": "21",
      "text": "Home Runs\nby Stadium",
-     "style": "e8_r3_hr_21_3_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
-     "baseline": 32,
+     "style": "e8_r3_hr_21_3_h_m",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "baseline": 34,
      "palettes": [
       3
      ]
@@ -216,9 +216,9 @@
     {
      "sprite": "22",
      "text": "Points\nby Stadium",
-     "style": "e8_r3_hr_22_4_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
-     "baseline": 32,
+     "style": "e8_r3_hr_22_4_h_m",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 34,
      "palettes": [
       4
      ]
@@ -227,9 +227,9 @@
      "sprite": "2f",
      "text": "This Round",
      "style": "e8_r3_hr_2f_26_h",
-     "font": "ttf:narrow:30:0.0:1.0:0.3",
+     "font": "ttf:rounded:22:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 98,
+     "slice_width": 84,
      "dy": 0,
      "palettes": [
       26
@@ -238,29 +238,29 @@
     {
      "sprite": "31",
      "text": "Play\nAgain",
-     "style": "e8_r3_hr_31_1_h",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "baseline": 40,
+     "style": "e8_r3_hr_31_1_h_m",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 42,
      "palettes": [
       1
      ]
     },
     {
      "sprite": "32",
-     "text": "Change Player",
+     "text": "Change\nPlayer",
      "style": "e8_r3_hr_32_8_h_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
-     "baseline": 38,
+     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "baseline": 40,
      "palettes": [
       8
      ]
     },
     {
      "sprite": "33",
-     "text": "Change Stadium",
-     "style": "e8_r3_hr_33_4_h_s",
-     "font": "ttf:narrow:10:0.0:0.85:0.2",
-     "baseline": 38,
+     "text": "Change\nStadium",
+     "style": "e8_r3_hr_33_4_h_m",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 40,
      "palettes": [
       4
      ]
@@ -278,11 +278,11 @@
     {
      "sprite": "78",
      "text": "New Record!",
-     "style": "e8_r3_hr_78_h",
-     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "style": "e8_r3_hr_78_h_m",
+     "font": "ttf:narrow:12:0.0:0.92:0.25",
      "slices": true,
      "slice_width": 40,
-     "dy": 0
+     "dy": 1
     }
    ],
    "name": "r3_hr buttons",
@@ -421,7 +421,7 @@
      "text": "Sapporo D",
      "style": "e8_r3_hr_3b_h_s",
      "font": "ttf:narrow:10:0.0:1.0:0.2",
-     "baseline": 21
+     "baseline": 22
     },
     {
      "sprite": "3c",
@@ -435,35 +435,35 @@
      "text": "Koshien",
      "style": "e8_r3_hr_3d_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 21
     },
     {
      "sprite": "3e",
      "text": "Chiba",
      "style": "e8_r3_hr_3e_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 22
     },
     {
      "sprite": "3f",
      "text": "Hiroshima",
      "style": "e8_r3_hr_3f_h_s",
      "font": "ttf:narrow:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 22
     },
     {
      "sprite": "40",
      "text": "Tokyo D",
      "style": "e8_r3_hr_40_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 21
+     "baseline": 22
     },
     {
      "sprite": "41",
      "text": "Seibu D",
      "style": "e8_r3_hr_41_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 22
     },
     {
      "sprite": "42",
@@ -477,21 +477,21 @@
      "text": "Yokohama",
      "style": "e8_r3_hr_43_h_s",
      "font": "ttf:narrow:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 21
     },
     {
      "sprite": "44",
      "text": "K-Sta",
      "style": "e8_r3_hr_44_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 21
     },
     {
      "sprite": "45",
      "text": "Kyocera",
      "style": "e8_r3_hr_45_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 22
     },
     {
      "sprite": "46",
@@ -505,7 +505,7 @@
      "text": "Nagoya",
      "style": "e8_r3_hr_47_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22
+     "baseline": 21
     },
     {
      "sprite": "48",
@@ -519,7 +519,7 @@
      "text": "Yamanote",
      "style": "e8_r3_hr_49_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 22
     },
     {
      "sprite": "4a",
@@ -533,14 +533,14 @@
      "text": "School",
      "style": "e8_r3_hr_4b_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 22
     },
     {
      "sprite": "79",
      "text": "Ikari D",
      "style": "e8_r3_hr_79_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 20
+     "baseline": 21
     },
     {
      "sprite": "91",
@@ -572,7 +572,7 @@
      "font": "ttf:rounded:10:0.0:1.0:0.2",
      "slices": true,
      "slice_width": 65,
-     "dy": 2
+     "dy": 3
     },
     {
      "sprite": "4e",
@@ -597,7 +597,7 @@
      "text": "Local Ballpark",
      "style": "e8_r3_hr_50_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 4
+     "baseline": 5
     },
     {
      "sprite": "51",
@@ -640,7 +640,7 @@
      "font": "ttf:rounded:10:0.0:1.0:0.2",
      "slices": true,
      "slice_width": 71,
-     "dy": 1
+     "dy": 2
     },
     {
      "sprite": "56",
@@ -649,7 +649,7 @@
      "font": "ttf:narrow:10:0.0:1.0:0.2",
      "slices": true,
      "slice_width": 83,
-     "dy": -1
+     "dy": 0
     },
     {
      "sprite": "57",
@@ -658,7 +658,7 @@
      "font": "ttf:rounded:10:0.0:1.0:0.2",
      "slices": true,
      "slice_width": 40,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "58",
@@ -672,14 +672,14 @@
      "text": "Nagoya Dome",
      "style": "e8_r3_hr_59_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 5
+     "baseline": 6
     },
     {
      "sprite": "5a",
      "text": "Yamanote Ballpark",
      "style": "e8_r3_hr_5a_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 4
+     "baseline": 5
     },
     {
      "sprite": "5b",
@@ -688,7 +688,7 @@
      "font": "ttf:rounded:10:0.0:1.0:0.2",
      "slices": true,
      "slice_width": 45,
-     "dy": -1
+     "dy": 0
     },
     {
      "sprite": "5c",
@@ -697,7 +697,7 @@
      "font": "ttf:rounded:10:0.0:1.0:0.2",
      "slices": true,
      "slice_width": 41,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "7a",
@@ -706,14 +706,14 @@
      "font": "ttf:rounded:10:0.0:1.0:0.2",
      "slices": true,
      "slice_width": 36,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "92",
      "text": "Magma Dome",
      "style": "e8_r3_hr_92_h_s",
      "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 4
+     "baseline": 5
     },
     {
      "sprite": "94",
@@ -722,7 +722,7 @@
      "font": "ttf:rounded:10:0.0:1.0:0.2",
      "slices": true,
      "slice_width": 50,
-     "dy": 1
+     "dy": 2
     },
     {
      "from": [
@@ -825,9 +825,9 @@
       128
      ],
      "text": "Home Runs",
-     "style": "e8_r3_hr_27_15.0.104_h",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
-     "baseline": 17
+     "style": "e8_r3_hr_27_15.0.104_h_m",
+     "font": "ttf:narrow:13:0.0:0.92:0.25",
+     "baseline": 19
     },
     {
      "from": [
@@ -838,9 +838,9 @@
       112
      ],
      "text": "Distance",
-     "style": "e8_r3_hr_27_20.0.88_h",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 18
+     "style": "e8_r3_hr_27_20.0.88_h_m",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 19
     },
     {
      "from": [
@@ -851,9 +851,9 @@
       128
      ],
      "text": "Points",
-     "style": "e8_r3_hr_27_11.48.104_h",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 17
+     "style": "e8_r3_hr_27_11.48.104_h_m",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 19
     },
     {
      "from": [
@@ -864,9 +864,9 @@
       128
      ],
      "text": "Player",
-     "style": "e8_r3_hr_27_15.72.104_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 16
+     "style": "e8_r3_hr_27_15.72.104_h_m",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 19
     },
     {
      "from": [
@@ -877,9 +877,9 @@
       128
      ],
      "text": "Stadium",
-     "style": "e8_r3_hr_27_11.0.104_h",
-     "font": "ttf:narrow:11:0.0:0.92:0.3",
-     "baseline": 17
+     "style": "e8_r3_hr_27_11.0.104_h_m",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 19
     },
     {
      "from": [
@@ -890,10 +890,10 @@
       64
      ],
      "text": "Most HRs",
-     "style": "e8_r3_hr_8f_4.80.32-4.0.64_h~0_48",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 20,
-     "left": 18,
+     "style": "e8_r3_hr_8f_4.80.32-4.0.64_h_m~0_48",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 15,
      "sprites": [
       "8f"
      ]
@@ -907,10 +907,10 @@
       96
      ],
      "text": "Most HRs",
-     "style": "e8_r3_hr_8f_4.80.32-4.0.64_h~48_4096",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 20,
-     "left": 18,
+     "style": "e8_r3_hr_8f_4.80.32-4.0.64_h_m~48_4096",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 15,
      "sprites": [
       "8f"
      ]
@@ -924,10 +924,10 @@
       96
      ],
      "text": "Longest HR",
-     "style": "e8_r3_hr_8f_4.64.64-17.0.56_h~0_32",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 20,
-     "left": 2,
+     "style": "e8_r3_hr_8f_4.64.64-17.0.56_h_m~0_32",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": -2,
      "sprites": [
       "8f"
      ]
@@ -941,10 +941,10 @@
       88
      ],
      "text": "Longest HR",
-     "style": "e8_r3_hr_8f_4.64.64-17.0.56_h~32_4096",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 20,
-     "left": 2,
+     "style": "e8_r3_hr_8f_4.64.64-17.0.56_h_m~32_4096",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": -2,
      "sprites": [
       "8f"
      ]
@@ -958,10 +958,10 @@
       88
      ],
      "text": "Best Points",
-     "style": "e8_r3_hr_8f_16.72.56-17.0.88_h~0_56",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 20,
-     "left": 12,
+     "style": "e8_r3_hr_8f_16.72.56-17.0.88_h_m~0_56",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 7,
      "sprites": [
       "8f"
      ]
@@ -975,10 +975,10 @@
       120
      ],
      "text": "Best Points",
-     "style": "e8_r3_hr_8f_16.72.56-17.0.88_h~56_4096",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 20,
-     "left": 12,
+     "style": "e8_r3_hr_8f_16.72.56-17.0.88_h_m~56_4096",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 22,
+     "left": 7,
      "sprites": [
       "8f"
      ]
@@ -992,9 +992,9 @@
       24
      ],
      "text": "HR",
-     "style": "e8_r3_hr_2a_7.96.0_h",
-     "font": "ttf:narrow:11:0.0:0.85:0.3",
-     "baseline": 18
+     "style": "e8_r3_hr_2a_7.96.0_h_m",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 19
     },
     {
      "from": [
