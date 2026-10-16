@@ -18,7 +18,7 @@ STYLES["b7_teal_yun"] = ringfill([13, 15, 15, 15, 15, 15], [9, 6], [3])         
 STYLES["b7_lav"] = ringfill([12, 15, 15, 15, 15, 15], [9, 9, 6], [3, 3])                    # s3_ein pal 73
 STYLES["b7_pur"] = ringfill([12, 15, 15, 15, 15, 15], [9, 8, 4], [3, 3])                    # pal 81 / 19
 STYLES["b7_ane_h"] = ringfill([13, 13, 13, 13, 13, 13], [1])                                # s3_ane pal 9 (white on green)
-STYLES["b7_okp_tab"] = ringfill([14, 13, 14, 14, 14, 14], [6], [8])                      # s3_okp pal 14
+STYLES["b7_okp_tab"] = ringfill([6, 6, 6, 6, 6, 6], [14])                      # s3_okp pal 14
 STYLES["b7_okp_st"] = ringfill([14, 14, 14, 14, 14, 14], [5])                               # s3_okp pal 0
 # flat blue / green lettering on plates
 STYLES["b7_okp_it"] = flat([0, 15, 15, 15, 15, 15, 15], cut=3)                              # s3_okp pal 3
@@ -70,3 +70,5 @@ STYLES["b7_yun_p72~16_4096"] = win(STYLES["b7_yun_p72"], 16, 4096)
 STYLES["b7_yun_p80"] = padright(STYLES["b7_yun_bl"], 80)          # Number Trim / Sleeves...: pieces 56 + 24
 STYLES["b7_yun_p80~0_56"] = win(STYLES["b7_yun_p80"], 0, 56)
 STYLES["b7_yun_p80~56_4096"] = win(STYLES["b7_yun_p80"], 56, 4096)
+
+STYLES["b7_okp_mas"] = ringfill([1, 1, 1, 1, 1, 1], [15])                                 # s3_okp pal 3: white letters, blue ring
