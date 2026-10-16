@@ -35,11 +35,13 @@ def load(arcname, bankref, sprite):
     cv = np.zeros((y1 - y0, x1 - x0), np.uint8)
     rgb = np.zeros((y1 - y0, x1 - x0, 3))
     full = U.palette_colours(d, b["pal"])
+    grey = np.stack([np.arange(256)] * 3, 1).astype(float)
     tables = []
     for p in ps:
         page = U.decode_indices(d, *b["pages"][p.page])
         idx = page[p.y0:p.y1, p.x0:p.x1]
-        tbl = U.page_colours(full, p.palette, U.raw_size(d, *b["pages"][p.page]))[:256, :3].astype(float)
+        tbl = U.page_colours(full, p.palette, U.raw_size(d, *b["pages"][p.page]))[:256, :3].astype(float) if len(full) else grey
+        if len(tbl) < 256: tbl = np.concatenate([tbl, np.zeros((256 - len(tbl), 3))])
         tables.append((tbl, sorted(set(np.unique(page).tolist()) - {0})))
         cv[p.y - y0:p.y - y0 + idx.shape[0], p.x - x0:p.x - x0 + idx.shape[1]] = idx
         rgb[p.y - y0:p.y - y0 + idx.shape[0], p.x - x0:p.x - x0 + idx.shape[1]] = tbl[idx]
@@ -219,8 +221,8 @@ def final(key):
         cv, rgb, ps, org, tables = load(spec["arc"], spec["bank"], spec["sprite"])
         changed = np.zeros(cv.shape, bool)
         clear = np.zeros(cv.shape, bool)
-        spec["recipe"](rgb, cv, None, changed, clear)
-        new = snap(rgb, cv, changed, ps, org, tables, clear)
+        out = spec["recipe"](rgb, cv, None, changed, clear)
+        new = out if isinstance(out, np.ndarray) else snap(rgb, cv, changed, ps, org, tables, clear)
         _cache[key] = (new, ps, org)
     return _cache[key]
 
@@ -295,3 +297,49 @@ def _ml(rgb, cv, colours, changed, clear):
 
 
 register("ml", "ore_ini.arc", "y4_bsta_opd", "00", 16, _ml)
+
+
+def rot_mask(m, deg):
+    """A bool mask rotated by `deg` degrees (counter-clockwise), grown to fit."""
+    from PIL import Image
+    im = Image.fromarray((m * 255).astype(np.uint8)).rotate(deg, resample=Image.BICUBIC, expand=True)
+    a = np.asarray(im) >= 128
+    ys, xs = np.nonzero(a)
+    return a[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
+# pn_acivt.arc i3_f02 sprite 00: 秋季キャンプ -> Fall Camp (368 x 179, 4-bit pages 0-2; the colours are loaded at run time,
+# so everything is done in palette indices: body 6..11 banded along y + 0.24 x, wire 13, wide ring 3, shadow 15)
+BODY_RAMP = [11] * 12 + [9] * 5 + [10] * 4 + [7] * 3 + [8] * 4 + [6] * 14 + [8] * 6 + [7] * 5 + [10] * 5 + [9] * 8 + [11] * 8
+
+
+def _fc(rgb, cv, colours, changed, clear):
+    H, W = cv.shape
+    pad = 12
+    best = None
+    for cap in range(80, 10, -1):
+        m = rot_mask(text_mask("Fall Camp", cap, 0.92, 0.9, 0.12), 13.5)
+        if m.shape[1] + 2 * pad <= W - 4 and m.shape[0] + 2 * pad <= H - 2:
+            best = m; break
+    m = best
+    h, w = m.shape
+    big = np.zeros((H, W), bool)
+    top, left = (H - h) // 2 + 1, (W - w) // 2
+    big[top:top + h, left:left + w] = m
+    r1 = ui_type.grow(big, 2, diagonal=True)
+    r2 = ui_type.grow(r1, 6, diagonal=True)
+    sh = np.zeros_like(r2)
+    for k in range(1, 4):
+        sh |= ui_type.shift(r2, k, k - 1)
+    new = np.zeros((H, W), np.uint8)
+    new[sh] = 15; new[r2] = 3; new[r1] = 13
+    yy, xx = np.mgrid[0:H, 0:W]
+    t = yy + 0.24 * xx
+    t0, t1 = t[big].min(), t[big].max()
+    u = ((t - t0) / (t1 - t0)).clip(0, 1)
+    ramp = np.array(BODY_RAMP)
+    new[big] = ramp[np.minimum((u * (len(ramp) - 1)).round().astype(int), len(ramp) - 1)][big]
+    return new
+
+
+register("fc", "pn_acivt.arc", "i3_f02", "00", 3, _fc)
