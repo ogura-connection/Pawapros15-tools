@@ -90,7 +90,7 @@
     {
      "sprite": "02",
      "text": "Cancel",
-     "style": "e7_s3_no_02",
+     "style": "e7_s3_no_02_h",
      "font": "ttf:rounded:13:0.0:0.85:0.3",
      "baseline": 37
     },
