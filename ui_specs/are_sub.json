@@ -63,8 +63,8 @@
      "sprite": "00",
      "text": "MEMORY CARD Slot 1",
      "style": "d7_s4_mem00_00",
-     "font": "ttf:rounded:9:0.0:0.92:0.55",
-     "baseline": 16,
+     "font": "ttf:narrow:10:0.0:1.0:0.45",
+     "baseline": 17,
      "pages": [
       0
      ],
@@ -76,10 +76,8 @@
      "sprite": "01",
      "text": "MEMORY CARD Slot 2",
      "style": "d7_s4_mem00_01",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 1,
+     "font": "ttf:narrow:10:0.0:1.0:0.45",
+     "baseline": 17,
      "pages": [
       0
      ],
@@ -91,7 +89,7 @@
      "sprite": "02",
      "text": "Wii System Memory",
      "style": "d7_s4_mem00_02",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
+     "font": "ttf:narrow:9:0.0:1.0:0.55",
      "baseline": 16,
      "pages": [
       0
@@ -104,7 +102,7 @@
      "sprite": "03",
      "text": "SD Card",
      "style": "d7_s4_mem00_03",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
+     "font": "ttf:narrow:10:0.0:1.0:0.45",
      "baseline": 16,
      "pages": [
       0
@@ -123,7 +121,7 @@
      ],
      "text": "Pawa 15",
      "style": "d7_s4_mem00_04",
-     "font": "ttf:rounded:8:0.0:0.85:0.55",
+     "font": "ttf:narrow:9:0.0:0.92:0.55",
      "baseline": 12
     },
     {
@@ -136,8 +134,8 @@
      ],
      "text": "15 DE",
      "style": "d7_s4_mem00_05",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
-     "baseline": 12
+     "font": "ttf:narrow:10:0.0:1.0:0.45",
+     "baseline": 13
     },
     {
      "from": [
@@ -149,7 +147,7 @@
      ],
      "text": "Pawa Wii",
      "style": "d7_s4_mem00_06",
-     "font": "ttf:rounded:7:0.0:0.92:0.55",
+     "font": "ttf:narrow:8:0.0:0.92:0.55",
      "baseline": 12
     },
     {
@@ -162,7 +160,7 @@
      ],
      "text": "Wii DE",
      "style": "d7_s4_mem00_07",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
+     "font": "ttf:narrow:10:0.0:1.0:0.45",
      "baseline": 12
     },
     {
@@ -175,7 +173,7 @@
      ],
      "text": "Opener",
      "style": "d7_s4_mem00_08",
-     "font": "ttf:rounded:8:0.0:0.92:0.55",
+     "font": "ttf:narrow:9:0.0:1.0:0.55",
      "baseline": 12
     },
     {
@@ -186,9 +184,9 @@
       40,
       120
      ],
-     "text": "Final",
+     "text": "Definitive",
      "style": "d7_s4_mem00_09",
-     "font": "ttf:rounded:9:0.0:1.0:0.55",
+     "font": "ttf:narrow:8:0.0:0.85:0.55",
      "baseline": 12
     }
    ],
