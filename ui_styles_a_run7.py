@@ -36,6 +36,8 @@ STYLES["aso_head_s"] = ringfill([1, 1, 1, 1, 1, 15], [1], [])
 STYLES["aso_help"] = ringfill([1, 1, 1, 1, 1, 1], [1], [])
 STYLES["aso_help_s"] = ringfill([1, 1, 1, 1, 1, 1], [1], [])
 STYLES["ato_title"] = ringfill([4, 9, 10, 11, 11, 4], [2, 3], [2])
+STYLES["ato_title_h"] = ringfill([9, 9, 10, 10, 11, 11], [4, 12, 3], [2])
+STYLES["ato_title_h_s"] = ringfill([9, 9, 10, 10, 11, 11], [4], [])
 STYLES["ato_title_s"] = ringfill([4, 9, 10, 11, 11, 4], [2], [])
 STYLES["atz_title"] = ringfill([157, 136, 110, 80, 61, 109], [255, 254, 10], [108, 236])
 STYLES["atz_title_s"] = ringfill([157, 136, 110, 80, 61, 109], [255], [])
@@ -121,11 +123,3 @@ def _win(style, c0, c1):
         return out, b
     return cut
 
-STYLES["p5_help_h~0_58"] = _win("p5_help_h", 0, 58)
-STYLES["p5_help_h~0_64"] = _win("p5_help_h", 0, 64)
-STYLES["p5_help_h~0_66"] = _win("p5_help_h", 0, 66)
-STYLES["p5_help_h~0_108"] = _win("p5_help_h", 0, 108)
-STYLES["p5_help_h~58_4096"] = _win("p5_help_h", 58, 4096)
-STYLES["p5_help_h~64_4096"] = _win("p5_help_h", 64, 4096)
-STYLES["p5_help_h~66_4096"] = _win("p5_help_h", 66, 4096)
-STYLES["p5_help_h~108_4096"] = _win("p5_help_h", 108, 4096)
