@@ -1431,14 +1431,14 @@
       128,
       32
      ],
-     "text": "Which team should be",
-     "style": "c7_am_p24~0_128",
-     "font": "ttf:rounded:11:0.0:0.85:0.3",
-     "baseline": 22,
+     "text": "Which team",
+     "style": "c7_am_p24~0_122",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24,
      "sprites": [
       "57"
      ],
-     "left": 0
+     "left": 6
     },
     {
      "from": [
@@ -1448,14 +1448,10 @@
       64,
       128
      ],
-     "text": "Which team should be",
-     "style": "c7_am_p24~128_135",
-     "font": "ttf:rounded:11:0.0:0.85:0.3",
-     "baseline": 22,
+     "empty": true,
      "sprites": [
       "57"
-     ],
-     "left": 0
+     ]
     },
     {
      "from": [
@@ -1465,14 +1461,14 @@
       128,
       64
      ],
-     "text": "the base team?",
-     "style": "c7_am_p24~0_54",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 24,
+     "text": "should be the base team?",
+     "style": "c7_am_p24~0_122",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": 26,
      "sprites": [
       "57"
      ],
-     "left": 74
+     "left": 6
     },
     {
      "from": [
@@ -1482,10 +1478,10 @@
       128,
       96
      ],
-     "text": "the base team?",
-     "style": "c7_am_p24~54_111",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 24,
+     "text": "should be the base team?",
+     "style": "c7_am_p24~122_247",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": 26,
      "sprites": [
       "57"
      ],
@@ -2140,17 +2136,15 @@
      "sprite": "29",
      "text": "Data View",
      "style": "c7_am_29_y",
-     "font": "ttf:narrow:15:0.0:0.85:0.0",
-     "baseline": 18
+     "font": "ttf:rounded:12:0.0:0.85:0.0",
+     "baseline": 16
     },
     {
      "sprite": "2a",
      "text": "Team View",
      "style": "c7_am_2a_y",
-     "font": "ttf:narrow:14:0.0:0.85:0.0",
-     "slices": true,
-     "slice_width": 36,
-     "dy": -1
+     "font": "ttf:rounded:11:0.0:0.85:0.0",
+     "baseline": 16
     },
     {
      "from": [
@@ -2195,13 +2189,10 @@
       120
      ],
      "text": "Class",
-     "style": "c7_am_59",
-     "font": "ttf:rounded:16:0.0:1.0:0.3",
-     "baseline": 19,
-     "sprites": [
-      "59"
-     ],
-     "left": -2
+     "style": "c7_am_59_c_0",
+     "font": "ttf:rounded:10:0.0:0.92:0.25",
+     "baseline": 0,
+     "left": 0
     },
     {
      "from": [
@@ -2212,13 +2203,10 @@
       120
      ],
      "text": "Class",
-     "style": "c7_am_5a",
-     "font": "ttf:rounded:16:0.0:1.0:0.3",
-     "baseline": 18,
-     "sprites": [
-      "5a"
-     ],
-     "left": -1
+     "style": "c7_am_5a_c_0",
+     "font": "ttf:rounded:10:0.0:0.92:0.25",
+     "baseline": 0,
+     "left": 0
     },
     {
      "from": [
@@ -2229,13 +2217,10 @@
       120
      ],
      "text": "Class",
-     "style": "c7_am_5b",
-     "font": "ttf:rounded:16:0.0:1.0:0.3",
-     "baseline": 18,
-     "sprites": [
-      "5b"
-     ],
-     "left": -2
+     "style": "c7_am_5b_c_0",
+     "font": "ttf:rounded:10:0.0:0.92:0.25",
+     "baseline": 0,
+     "left": 0
     },
     {
      "from": [
@@ -2246,13 +2231,10 @@
       120
      ],
      "text": "Class",
-     "style": "c7_am_5c",
-     "font": "ttf:rounded:16:0.0:1.0:0.3",
-     "baseline": 18,
-     "sprites": [
-      "5c"
-     ],
-     "left": -1
+     "style": "c7_am_5c_c_0",
+     "font": "ttf:rounded:10:0.0:0.92:0.25",
+     "baseline": 0,
+     "left": 0
     },
     {
      "from": [
@@ -2263,13 +2245,10 @@
       120
      ],
      "text": "Class",
-     "style": "c7_am_5d",
-     "font": "ttf:rounded:16:0.0:1.0:0.3",
-     "baseline": 18,
-     "sprites": [
-      "5d"
-     ],
-     "left": -1
+     "style": "c7_am_5d_c_0",
+     "font": "ttf:rounded:10:0.0:0.92:0.25",
+     "baseline": 0,
+     "left": 0
     },
     {
      "sprite": "2b",
@@ -2541,12 +2520,12 @@
      ],
      "text": "Break",
      "style": "c7_am_33_38",
-     "font": "ttf:narrow:13:0.0:1.0:0.1",
+     "font": "ttf:narrow:13:0.0:0.92:0.1",
      "baseline": 14,
      "sprites": [
       "33"
      ],
-     "left": 0
+     "left": 2
     },
     {
      "from": [
