@@ -2,823 +2,6 @@
  "arc": "record.arc",
  "repack": [
   {
-   "bank": "g3_kekx",
-   "palette": 0,
-   "style": "d8_g3_kekx_02",
-   "font": "ttf:rounded:14:0.0:1.0:0.25",
-   "under": 3,
-   "areas": [
-    [
-     1,
-     0,
-     0,
-     128,
-     128
-    ],
-    [
-     2,
-     0,
-     0,
-     128,
-     128
-    ],
-    [
-     3,
-     0,
-     88,
-     128,
-     128
-    ]
-   ],
-   "labels": [
-    {
-     "sprite": "02",
-     "text": "Game Results",
-     "style": "d8_g3_kekx_02",
-     "font": "ttf:narrow:27:0.0:0.85:0.35",
-     "slices": true,
-     "slice_width": 128,
-     "dy": -2,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      0
-     ]
-    },
-    {
-     "sprite": "03",
-     "text": "Game Results",
-     "style": "d8_g3_kekx_03",
-     "font": "ttf:narrow:27:0.0:0.85:0.35",
-     "slices": true,
-     "slice_width": 128,
-     "dy": -2,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      32
-     ]
-    },
-    {
-     "sprite": "04",
-     "text": "Game Results",
-     "style": "d8_g3_kekx_04",
-     "font": "ttf:narrow:13:0.0:0.85:0.4",
-     "baseline": 5,
-     "pages": [
-      1,
-      2
-     ],
-     "palettes": [
-      0
-     ]
-    },
-    {
-     "sprite": "08",
-     "text": "Game Results",
-     "style": "d8_g3_kekx_08",
-     "font": "ttf:narrow:18:0.0:0.85:0.35",
-     "slices": true,
-     "slice_width": 128,
-     "dy": -2,
-     "pages": [
-      1,
-      2,
-      3
-     ],
-     "palettes": [
-      0
-     ]
-    },
-    {
-     "sprite": "05",
-     "text": "vs",
-     "style": "d8_g3_kekx_05",
-     "font": "ttf:rounded:23:0.0:0.85:0.35",
-     "baseline": 10,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      0
-     ]
-    }
-   ],
-   "name": "g3_kekx"
-  },
-  {
-   "bank": "g3_kn",
-   "palette": 0,
-   "style": "d8_g3_kn_09",
-   "font": "ttf:rounded:14:0.0:1.0:0.25",
-   "under": 3,
-   "areas": [
-    [
-     1,
-     0,
-     0,
-     120,
-     128
-    ],
-    [
-     1,
-     120,
-     32,
-     128,
-     128
-    ],
-    [
-     2,
-     0,
-     0,
-     72,
-     96
-    ],
-    [
-     2,
-     72,
-     24,
-     128,
-     72
-    ],
-    [
-     2,
-     0,
-     96,
-     48,
-     128
-    ],
-    [
-     2,
-     88,
-     104,
-     128,
-     128
-    ],
-    [
-     2,
-     112,
-     72,
-     128,
-     104
-    ],
-    [
-     2,
-     72,
-     0,
-     88,
-     24
-    ],
-    [
-     2,
-     112,
-     0,
-     128,
-     24
-    ]
-   ],
-   "labels": [
-    {
-     "sprite": "09",
-     "text": "1B",
-     "style": "d8_g3_kn_09",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "0a",
-     "text": "2B",
-     "style": "d8_g3_kn_0a",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "0b",
-     "text": "3B",
-     "style": "d8_g3_kn_0b",
-     "font": "ttf:narrow:17:0.0:0.92:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "0c",
-     "text": "SS",
-     "style": "d8_g3_kn_0c",
-     "font": "ttf:rounded:15:0.0:0.85:0.4",
-     "baseline": 19,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "0d",
-     "text": "LF",
-     "style": "d8_g3_kn_0d",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "0e",
-     "text": "CF",
-     "style": "d8_g3_kn_0e",
-     "font": "ttf:narrow:17:0.0:0.85:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "0f",
-     "text": "RF",
-     "style": "d8_g3_kn_0f",
-     "font": "ttf:rounded:15:0.0:0.85:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "10",
-     "text": "C",
-     "style": "d8_g3_kn_10",
-     "font": "ttf:rounded:17:0.0:1.0:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "11",
-     "text": "P",
-     "style": "d8_g3_kn_11",
-     "font": "ttf:rounded:17:0.0:1.0:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "12",
-     "text": "DH",
-     "style": "d8_g3_kn_12",
-     "font": "ttf:narrow:17:0.0:0.85:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "13",
-     "text": "PH",
-     "style": "d8_g3_kn_13",
-     "font": "ttf:narrow:17:0.0:0.85:0.4",
-     "baseline": 20,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "14",
-     "text": "DS",
-     "style": "d8_g3_kn_14",
-     "font": "ttf:rounded:15:0.0:0.85:0.4",
-     "baseline": 19,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "15",
-     "text": "PR",
-     "style": "d8_g3_kn_15",
-     "font": "ttf:rounded:15:0.0:0.85:0.4",
-     "baseline": 19,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      12
-     ]
-    },
-    {
-     "sprite": "34",
-     "text": "W",
-     "style": "d8_g3_kn_34",
-     "font": "ttf:rounded:18:0.0:1.0:0.35",
-     "baseline": 24,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      8
-     ]
-    },
-    {
-     "sprite": "35",
-     "text": "L",
-     "style": "d8_g3_kn_35",
-     "font": "ttf:rounded:18:0.0:1.0:0.35",
-     "baseline": 24,
-     "pages": [
-      2
-     ],
-     "palettes": [
-      9
-     ]
-    },
-    {
-     "sprite": "2a",
-     "text": "Total",
-     "style": "d8_g3_kn_2a",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
-     "baseline": 343,
-     "pages": [
-      1
-     ],
-     "palettes": [
-      6
-     ],
-     "left": 16
-    },
-    {
-     "sprite": "31",
-     "text": "Total",
-     "style": "d8_g3_kn_31",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
-     "baseline": 22,
-     "pages": [
-      1
-     ],
-     "palettes": [
-      6
-     ],
-     "left": 18
-    },
-    {
-     "sprite": "40",
-     "text": "Total",
-     "style": "d8_g3_kn_40",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
-     "baseline": 343,
-     "pages": [
-      1
-     ],
-     "palettes": [
-      6
-     ],
-     "left": 16
-    },
-    {
-     "from": [
-      1,
-      0,
-      0,
-      56,
-      24
-     ],
-     "text": "IP",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "2d",
-      "3a"
-     ]
-    },
-    {
-     "from": [
-      1,
-      0,
-      24,
-      24,
-      48
-     ],
-     "text": "AB",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 19,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      0,
-      24,
-      24,
-      48
-     ],
-     "text": "BF",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 19,
-     "sprites": [
-      "2d",
-      "3a"
-     ]
-    },
-    {
-     "from": [
-      1,
-      0,
-      48,
-      24,
-      72
-     ],
-     "text": "SB",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      0,
-      72,
-      24,
-      96
-     ],
-     "text": "ER",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "2d",
-      "3a"
-     ]
-    },
-    {
-     "from": [
-      1,
-      0,
-      96,
-      24,
-      120
-     ],
-     "text": "RBI",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      24,
-      24,
-      48,
-      48
-     ],
-     "text": "H",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "2d",
-      "3a",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      24,
-      48,
-      48,
-      72
-     ],
-     "text": "GDP",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      24,
-      72,
-      48,
-      96
-     ],
-     "text": "WP",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "2d",
-      "3a"
-     ]
-    },
-    {
-     "from": [
-      1,
-      24,
-      96,
-      48,
-      120
-     ],
-     "text": "R",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      48,
-      24,
-      72,
-      48
-     ],
-     "text": "2B",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      48,
-      48,
-      72,
-      72
-     ],
-     "text": "E",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      48,
-      48,
-      72,
-      72
-     ],
-     "text": "R",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "2d",
-      "3a"
-     ]
-    },
-    {
-     "from": [
-      1,
-      48,
-      72,
-      72,
-      96
-     ],
-     "text": "Tot",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29"
-     ]
-    },
-    {
-     "from": [
-      1,
-      48,
-      96,
-      72,
-      120
-     ],
-     "text": "SO",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "2d",
-      "3a",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      56,
-      0,
-      112,
-      24
-     ],
-     "text": "ERA",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "2d",
-      "3a"
-     ]
-    },
-    {
-     "from": [
-      1,
-      72,
-      24,
-      96,
-      48
-     ],
-     "text": "3B",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      72,
-      72,
-      96,
-      96
-     ],
-     "text": "BB",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "2d",
-      "3a",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      72,
-      96,
-      96,
-      120
-     ],
-     "text": "NP",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "2d",
-      "3a"
-     ]
-    },
-    {
-     "from": [
-      1,
-      96,
-      24,
-      120,
-      48
-     ],
-     "text": "HR",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "2d",
-      "3a",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      96,
-      72,
-      120,
-      96
-     ],
-     "text": "SAC",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      1,
-      96,
-      96,
-      120,
-      120
-     ],
-     "text": "AVG",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:1.0:0.4",
-     "baseline": 18,
-     "centre_x": 20,
-     "sprites": [
-      "29",
-      "3d"
-     ]
-    },
-    {
-     "from": [
-      2,
-      0,
-      0,
-      88,
-      24
-     ],
-     "text": "Hold Points",
-     "style": "d8_g3_kn_cell",
-     "font": "ttf:narrow:13:0.0:0.92:0.4",
-     "baseline": 18,
-     "sprites": [
-      "2d"
-     ]
-    }
-   ],
-   "name": "g3_kn"
-  },
-  {
    "bank": "g3_ke",
    "palette": 0,
    "style": "d8_g3_ke_01",
@@ -1545,10 +728,10 @@
      "sprite": "8a",
      "text": "Meiji Jingu Stadium",
      "style": "d8_g3_ke_8a",
-     "font": "ttf:narrow:16:0.0:0.85:0.4",
+     "font": "ttf:rounded:18:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": 0,
+     "dy": 1,
      "pages": [
       20,
       24
@@ -1574,8 +757,10 @@
      "sprite": "8c",
      "text": "Tokyo Dome",
      "style": "d8_g3_ke_8c",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
-     "baseline": 23,
+     "font": "ttf:rounded:19:0.0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
      "pages": [
       23,
       25
@@ -1588,10 +773,10 @@
      "sprite": "8d",
      "text": "Yokohama Stadium",
      "style": "d8_g3_ke_8d",
-     "font": "ttf:narrow:16:0.0:0.85:0.4",
+     "font": "ttf:narrow:21:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": -2,
+     "dy": -3,
      "pages": [
       20,
       24
@@ -1617,7 +802,7 @@
      "sprite": "8f",
      "text": "Hanshin Koshien Stadium",
      "style": "d8_g3_ke_8f",
-     "font": "ttf:rounded:10:0.0:0.85:0.35",
+     "font": "ttf:narrow:16:0.0:0.85:0.4",
      "slices": true,
      "slice_width": 128,
      "dy": -2,
@@ -1649,10 +834,10 @@
      "sprite": "91",
      "text": "Chiba Marine Stadium",
      "style": "d8_g3_ke_91",
-     "font": "ttf:narrow:19:0.0:0.85:0.35",
+     "font": "ttf:narrow:22:0.0:0.92:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": -1,
+     "dy": 0,
      "pages": [
       21,
       24
@@ -1665,8 +850,8 @@
      "sprite": "92",
      "text": "Seibu Dome",
      "style": "d8_g3_ke_92",
-     "font": "ttf:narrow:19:0.0:0.85:0.35",
-     "baseline": 25,
+     "font": "ttf:narrow:22:0.0:0.85:0.35",
+     "baseline": 26,
      "pages": [
       21
      ],
@@ -1678,7 +863,7 @@
      "sprite": "93",
      "text": "Fukuoka Yahoo! JAPAN Dome",
      "style": "d8_g3_ke_93",
-     "font": "ttf:rounded:13:0.0:0.85:0.4",
+     "font": "ttf:narrow:18:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 128,
      "dy": -1,
@@ -1694,10 +879,10 @@
      "sprite": "94",
      "text": "Kyocera Dome Osaka",
      "style": "d8_g3_ke_94",
-     "font": "ttf:narrow:16:0.0:0.85:0.4",
+     "font": "ttf:rounded:18:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": 0,
+     "dy": 1,
      "pages": [
       24,
       29
@@ -1710,8 +895,8 @@
      "sprite": "95",
      "text": "Sapporo Dome",
      "style": "d8_g3_ke_95",
-     "font": "ttf:rounded:13:0.0:0.85:0.4",
-     "baseline": 22,
+     "font": "ttf:narrow:18:0.0:0.85:0.35",
+     "baseline": 24,
      "pages": [
       23
      ],
@@ -1723,10 +908,10 @@
      "sprite": "96",
      "text": "Kleenex Stadium Miyagi",
      "style": "d8_g3_ke_96",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "font": "ttf:rounded:19:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": 1,
+     "dy": 2,
      "pages": [
       23,
       25
@@ -1739,8 +924,10 @@
      "sprite": "97",
      "text": "Local Ballpark",
      "style": "d8_g3_ke_97",
-     "font": "ttf:rounded:11:0.0:0.85:0.35",
-     "baseline": 20,
+     "font": "ttf:narrow:19:0.0:0.92:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
      "pages": [
       23,
       25
@@ -1753,8 +940,10 @@
      "sprite": "98",
      "text": "Yamanote Ballpark",
      "style": "d8_g3_ke_98",
-     "font": "ttf:rounded:10:0.0:0.85:0.35",
-     "baseline": 20,
+     "font": "ttf:rounded:15:0.0:0.85:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
      "pages": [
       30
      ],
@@ -1766,7 +955,7 @@
      "sprite": "99",
      "text": "Ikari Dome",
      "style": "d8_g3_ke_99",
-     "font": "ttf:narrow:21:0.0:0.85:0.35",
+     "font": "ttf:rounded:21:0.0:0.85:0.35",
      "baseline": 26,
      "pages": [
       23
@@ -1779,7 +968,7 @@
      "sprite": "9a",
      "text": "Blue Stadium",
      "style": "d8_g3_ke_9a",
-     "font": "ttf:rounded:22:0.0:0.85:0.35",
+     "font": "ttf:rounded:22:0.0:1.0:0.35",
      "slices": true,
      "slice_width": 128,
      "dy": -1,
@@ -1794,10 +983,10 @@
      "sprite": "9b",
      "text": "School Field",
      "style": "d8_g3_ke_9b",
-     "font": "ttf:narrow:24:0.0:0.85:0.35",
+     "font": "ttf:rounded:22:0.0:1.0:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": -2,
+     "dy": -1,
      "pages": [
       31
      ],
@@ -1809,7 +998,7 @@
      "sprite": "a5",
      "text": "Konami Cup Asia Series",
      "style": "d8_g3_ke_a5",
-     "font": "ttf:rounded:16:0.0:0.85:0.4",
+     "font": "ttf:rounded:18:0.0:0.92:0.35",
      "slices": true,
      "slice_width": 128,
      "dy": 1,
@@ -1827,8 +1016,10 @@
      "sprite": "a6",
      "text": "Magma Dome",
      "style": "d8_g3_ke_a6",
-     "font": "ttf:narrow:18:0.0:0.92:0.35",
-     "baseline": 24,
+     "font": "ttf:rounded:19:0.0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2,
      "pages": [
       31
      ],
@@ -1840,8 +1031,10 @@
      "sprite": "a7",
      "text": "Rinkai Ballpark",
      "style": "d8_g3_ke_a7",
-     "font": "ttf:rounded:13:0.0:0.85:0.4",
-     "baseline": 21,
+     "font": "ttf:rounded:18:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1,
      "pages": [
       30
      ],
@@ -1853,8 +1046,8 @@
      "sprite": "aa",
      "text": "Local Dome",
      "style": "d8_g3_ke_aa",
-     "font": "ttf:narrow:19:0.0:0.85:0.35",
-     "baseline": 24,
+     "font": "ttf:narrow:22:0.0:0.85:0.35",
+     "baseline": 26,
      "pages": [
       32
      ],
@@ -1866,10 +1059,10 @@
      "sprite": "ab",
      "text": "Overseas Stadium",
      "style": "d8_g3_ke_ab",
-     "font": "ttf:narrow:17:0.0:0.85:0.4",
+     "font": "ttf:narrow:22:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 128,
-     "dy": -1,
+     "dy": 0,
      "pages": [
       29
      ],
@@ -2405,8 +1598,8 @@
      ],
      "text": "Slider",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2418,8 +1611,8 @@
      ],
      "text": "Curve",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2431,8 +1624,8 @@
      ],
      "text": "Fork",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2444,8 +1637,8 @@
      ],
      "text": "Sinker",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2457,8 +1650,8 @@
      ],
      "text": "Shuuto",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2470,8 +1663,8 @@
      ],
      "text": "Slowball",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2483,8 +1676,8 @@
      ],
      "text": "Fastball",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:0.92:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2496,8 +1689,8 @@
      ],
      "text": "Palm",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2509,8 +1702,8 @@
      ],
      "text": "Knuckle",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:0.92:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2522,8 +1715,8 @@
      ],
      "text": "V-Slider",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:0.92:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2535,8 +1728,8 @@
      ],
      "text": "Screwball",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:12:0.0:0.92:0.35",
+     "baseline": 18
     },
     {
      "from": [
@@ -2548,8 +1741,8 @@
      ],
      "text": "Slow Curve",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:10:0.0:0.92:0.35",
+     "baseline": 18
     },
     {
      "from": [
@@ -2561,8 +1754,8 @@
      ],
      "text": "H-Slider",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:0.92:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2574,8 +1767,8 @@
      ],
      "text": "Changeup",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:12:0.0:0.85:0.35",
+     "baseline": 18
     },
     {
      "from": [
@@ -2587,8 +1780,8 @@
      ],
      "text": "Drop",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2600,8 +1793,8 @@
      ],
      "text": "H-Sinker",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2613,8 +1806,8 @@
      ],
      "text": "Slurve",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 18
     },
     {
      "from": [
@@ -2626,8 +1819,8 @@
      ],
      "text": "Cutter",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2637,10 +1830,10 @@
       56,
       48
      ],
-     "text": "Circle Change",
+     "text": "Circle\nChange",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:0.92:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": 22
     },
     {
      "from": [
@@ -2652,8 +1845,8 @@
      ],
      "text": "H-Shuuto",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:13:0.0:0.85:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2665,8 +1858,8 @@
      ],
      "text": "Drop Curve",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:11:0.0:0.85:0.35",
+     "baseline": 18
     },
     {
      "from": [
@@ -2676,10 +1869,10 @@
       112,
       48
      ],
-     "text": "Razor Shuuto",
+     "text": "Razor\nShuuto",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:0.92:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "baseline": 23
     },
     {
      "from": [
@@ -2691,8 +1884,8 @@
      ],
      "text": "Yone Ball",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:13:0.0:0.85:0.4",
+     "baseline": 18
     },
     {
      "from": [
@@ -2704,8 +1897,8 @@
      ],
      "text": "Yoshi Ball",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:12:0.0:0.85:0.35",
+     "baseline": 18
     },
     {
      "from": [
@@ -2717,8 +1910,8 @@
      ],
      "text": "Emo Ball",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:0.85:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2730,8 +1923,8 @@
      ],
      "text": "Original",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:0.92:0.4",
+     "baseline": 20
     },
     {
      "from": [
@@ -2743,8 +1936,8 @@
      ],
      "text": "Mistake",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:14:0.0:1.0:0.4",
+     "baseline": 19
     },
     {
      "from": [
@@ -2756,8 +1949,8 @@
      ],
      "text": "2-Seamer",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 17
+     "font": "ttf:narrow:11:0.0:1.0:0.35",
+     "baseline": 18
     },
     {
      "from": [
@@ -2769,8 +1962,8 @@
      ],
      "text": "Moving FB",
      "style": "d8_g3_ke_n68",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 16
+     "font": "ttf:narrow:11:0.0:0.85:0.35",
+     "baseline": 18
     },
     {
      "from": [
