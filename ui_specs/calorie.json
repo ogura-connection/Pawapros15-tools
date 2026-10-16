@@ -42,10 +42,10 @@
      "sprite": "07",
      "text": "Rimopawa Test",
      "style": "e8_s4_kal00_07_14_h",
-     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
      "slices": true,
-     "slice_width": 70,
-     "dy": 1,
+     "slice_width": 80,
+     "dy": 0,
      "palettes": [
       14
      ]
