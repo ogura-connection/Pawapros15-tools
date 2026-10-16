@@ -1,0 +1,565 @@
+{
+ "arc": "gdt_remo.arc",
+ "repack": [
+  {
+   "bank": "y4_lpu_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     56,
+     120,
+     80
+    ],
+    [
+     3,
+     0,
+     80,
+     96,
+     104
+    ],
+    [
+     3,
+     0,
+     104,
+     96,
+     128
+    ],
+    [
+     2,
+     72,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     72,
+     24,
+     128,
+     48
+    ],
+    [
+     2,
+     72,
+     48,
+     128,
+     72
+    ],
+    [
+     2,
+     72,
+     72,
+     120,
+     96
+    ],
+    [
+     2,
+     72,
+     96,
+     120,
+     120
+    ],
+    [
+     3,
+     0,
+     0,
+     48,
+     24
+    ],
+    [
+     3,
+     0,
+     24,
+     48,
+     48
+    ],
+    [
+     3,
+     48,
+     24,
+     72,
+     48
+    ],
+    [
+     4,
+     56,
+     0,
+     128,
+     24
+    ],
+    [
+     4,
+     56,
+     24,
+     104,
+     48
+    ],
+    [
+     4,
+     56,
+     48,
+     112,
+     72
+    ],
+    [
+     4,
+     56,
+     72,
+     112,
+     96
+    ],
+    [
+     4,
+     0,
+     72,
+     56,
+     96
+    ],
+    [
+     0,
+     120,
+     64,
+     128,
+     120
+    ],
+    [
+     0,
+     104,
+     0,
+     112,
+     24
+    ],
+    [
+     0,
+     72,
+     104,
+     80,
+     128
+    ],
+    [
+     1,
+     64,
+     8,
+     72,
+     64
+    ],
+    [
+     2,
+     0,
+     0,
+     8,
+     128
+    ],
+    [
+     2,
+     64,
+     0,
+     72,
+     128
+    ],
+    [
+     2,
+     120,
+     72,
+     128,
+     128
+    ],
+    [
+     3,
+     120,
+     64,
+     128,
+     128
+    ],
+    [
+     3,
+     72,
+     0,
+     80,
+     48
+    ],
+    [
+     3,
+     96,
+     80,
+     104,
+     128
+    ],
+    [
+     3,
+     48,
+     8,
+     56,
+     24
+    ],
+    [
+     4,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     56,
+     24
+    ],
+    [
+     4,
+     112,
+     24,
+     128,
+     96
+    ],
+    [
+     4,
+     104,
+     24,
+     112,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      3,
+      0,
+      56,
+      120,
+      80
+     ],
+     "text": ": Stop Pitching Practice",
+     "style": "e8_y4_lpu_0_14_3.0.56_h_s",
+     "font": "ttf:narrow:10:0.0:0.85:0.2",
+     "baseline": 16,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      0,
+      80,
+      96,
+      104
+     ],
+     "text": ": Breaking Ball",
+     "style": "e8_y4_lpu_0_15_3.0.80_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "baseline": 18,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      0,
+      104,
+      96,
+      128
+     ],
+     "text": ": Pick Location",
+     "style": "e8_y4_lpu_0_16_3.0.104_h",
+     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "baseline": 18,
+     "left": 1
+    },
+    {
+     "from": [
+      2,
+      72,
+      0,
+      128,
+      24
+     ],
+     "text": "Swing!",
+     "style": "e8_y4_lpu_0_1d_2.72.0_h",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      72,
+      24,
+      128,
+      48
+     ],
+     "text": "Pitch",
+     "style": "e8_y4_lpu_0_17_2.72.24_h",
+     "font": "ttf:narrow:18:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      72,
+      48,
+      128,
+      72
+     ],
+     "text": "Bunt",
+     "style": "e8_y4_lpu_0_19_2.72.48_h",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      72,
+      72,
+      120,
+      96
+     ],
+     "text": "Swing",
+     "style": "e8_y4_lpu_0_18_2.72.72_h",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 2
+    },
+    {
+     "from": [
+      2,
+      72,
+      96,
+      120,
+      120
+     ],
+     "text": "Swing",
+     "style": "e8_y4_lpu_0_1a_2.72.96_h",
+     "font": "ttf:narrow:14:0.0:0.92:0.3",
+     "baseline": 20,
+     "left": 2
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      48,
+      24
+     ],
+     "text": "Pickoff",
+     "style": "e8_y4_lpu_0_38_3.0.0_h",
+     "font": "ttf:narrow:14:0.0:0.85:0.3",
+     "baseline": 19,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      48,
+      48
+     ],
+     "text": "High",
+     "style": "e8_y4_lpu_0_36_3.0.24_h",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 18,
+     "left": 4
+    },
+    {
+     "from": [
+      3,
+      48,
+      24,
+      72,
+      48
+     ],
+     "text": "Low",
+     "style": "e8_y4_lpu_0_37_3.24.24-3.48.24_h~0_24",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 19,
+     "left": 3,
+     "align": "left"
+    },
+    {
+     "from": [
+      3,
+      24,
+      24,
+      48,
+      48
+     ],
+     "text": "Low",
+     "style": "e8_y4_lpu_0_37_3.24.24-3.48.24_h~24_4096",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 19,
+     "left": 3,
+     "align": "left"
+    },
+    {
+     "from": [
+      4,
+      56,
+      0,
+      128,
+      24
+     ],
+     "text": "Pitchout",
+     "style": "e8_y4_lpu_0_3f_4.56.0_h",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 3
+    },
+    {
+     "from": [
+      4,
+      56,
+      24,
+      104,
+      48
+     ],
+     "text": "Steal",
+     "style": "e8_y4_lpu_0_41_4.56.24_h",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 3
+    },
+    {
+     "from": [
+      4,
+      56,
+      48,
+      112,
+      72
+     ],
+     "text": "Breaking Ball",
+     "style": "e8_y4_lpu_0_45_4.56.48_h",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 17,
+     "left": 3
+    },
+    {
+     "from": [
+      4,
+      56,
+      72,
+      112,
+      96
+     ],
+     "text": "Location",
+     "style": "e8_y4_lpu_0_43_4.56.72_h",
+     "font": "ttf:narrow:12:0.0:0.92:0.3",
+     "baseline": 18,
+     "left": 3
+    },
+    {
+     "from": [
+      3,
+      0,
+      56,
+      8,
+      80
+     ],
+     "text": ":",
+     "style": "e8_lpu_colon_h",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "from": [
+      3,
+      0,
+      56,
+      8,
+      80
+     ],
+     "empty": true,
+     "sprites": [
+      "25"
+     ]
+    },
+    {
+     "sprite": "39",
+     "text": "Catch!",
+     "style": "e8_y4_lpu_0_39_32_h",
+     "font": "ttf:narrow:16:0.0:0.92:0.3",
+     "baseline": 24,
+     "palettes": [
+      32
+     ]
+    }
+   ],
+   "name": "y4_lpu_0",
+   "share": true
+  },
+  {
+   "bank": "y4_miiset",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     1,
+     64,
+     72,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     112,
+     64,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Mii Memories",
+     "style": "e8_y4_miiset_00_h",
+     "font": "ttf:narrow:16:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 60,
+     "dy": -1
+    },
+    {
+     "sprite": "01",
+     "text": "Rimo Powers I",
+     "style": "e8_y4_miiset_01_h",
+     "font": "ttf:narrow:16:0.0:0.92:0.3",
+     "baseline": 7
+    },
+    {
+     "sprite": "02",
+     "text": "Rimo Powers II",
+     "style": "e8_y4_miiset_02_h",
+     "font": "ttf:narrow:16:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 63,
+     "dy": -1
+    },
+    {
+     "sprite": "03",
+     "text": "Mii All Stars",
+     "style": "e8_y4_miiset_03_h",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 63,
+     "dy": 0
+    }
+   ],
+   "name": "y4_miiset",
+   "share": true
+  }
+ ]
+}

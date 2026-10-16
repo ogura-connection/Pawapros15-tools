@@ -5,10 +5,10 @@ from ui_styles_ore_ini import ringfill
 
 STYLES = {}
 
-STYLES["b8_ck55"] = ringfill([15, 15, 15, 15, 15, 15], [12, 8, 10], [2, 2])
-STYLES["b8_ck41"] = ringfill([15, 15, 15, 15, 15, 15], [12, 8, 10], [2, 2])
+STYLES["b8_ck55"] = ringfill([15] * 6, [8], [2, 2])
+STYLES["b8_ck41"] = ringfill([15] * 6, [8], [10, 2])
 STYLES["b8_ck39"] = ringfill([8, 8, 8, 8, 8, 8], [1], [3, 2])
-STYLES["b8_ck58"] = ringfill([15, 15, 15, 15, 15, 15], [12, 8, 11], [2, 2])
+STYLES["b8_ck58"] = ringfill([15] * 6, [8], [11, 2])
 STYLES["b8_ckt30"] = ringfill([8, 8, 2, 3, 4, 4], [9], [15, 15])
 STYLES["b8_ckt31"] = ringfill([8, 8, 2, 3, 4, 4], [1], [15, 15, 14])
 STYLES["b8_ck4"] = ringfill([8, 1, 1, 1, 1, 1], [7], [15, 15])
