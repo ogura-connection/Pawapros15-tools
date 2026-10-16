@@ -82,7 +82,7 @@
       120
      ],
      "text": "This Batter",
-     "style": "c9_h3_hr_0_0e_1.0.96_h_m",
+     "style": "q11_h3_hr_0_0e_1.0.96_h_m",
      "font": "ttf:rounded:15:0.0:1.0:0.25",
      "baseline": 18
     },
@@ -95,7 +95,7 @@
       96
      ],
      "text": "Previous Batters",
-     "style": "c9_h3_hr_0_0f_1.0.72-1.120.96_h~0_128",
+     "style": "q11_h3_hr_0_0f_1.0.72-1.120.96_h~0_128",
      "font": "ttf:narrow:16:0.0:0.85:0.3",
      "baseline": 20,
      "left": 3
@@ -109,7 +109,7 @@
       120
      ],
      "text": "Previous Batters",
-     "style": "c9_h3_hr_0_0f_1.0.72-1.120.96_h~128_4096",
+     "style": "q11_h3_hr_0_0f_1.0.72-1.120.96_h~128_4096",
      "font": "ttf:narrow:16:0.0:0.85:0.3",
      "baseline": 20,
      "left": 3
@@ -123,7 +123,7 @@
       24
      ],
      "text": "Home Runs",
-     "style": "c9_h3_hr_0_10_1.0.0_h_m",
+     "style": "q11_h3_hr_0_10_1.0.0_h_m",
      "font": "ttf:narrow:14:0.0:0.85:0.25",
      "baseline": 18
     },
@@ -136,7 +136,7 @@
       24
      ],
      "text": "HR",
-     "style": "c9_h3_hr_0_10_1.80.0_h_m",
+     "style": "q11_h3_hr_0_10_1.80.0_h_m",
      "font": "ttf:narrow:14:0.0:0.85:0.25",
      "baseline": 18
     },
@@ -149,7 +149,7 @@
       48
      ],
      "text": "Longest",
-     "style": "c9_h3_hr_0_10_1.0.24_h_m",
+     "style": "q11_h3_hr_0_10_1.0.24_h_m",
      "font": "ttf:rounded:14:0.0:1.0:0.25",
      "baseline": 18
     },
@@ -162,7 +162,7 @@
       72
      ],
      "text": "Left",
-     "style": "c9_h3_hr_0_12_1.0.48_h",
+     "style": "q11_h3_hr_0_12_1.0.48_h",
      "font": "ttf:narrow:18:0.0:0.92:0.3",
      "baseline": 20
     },
@@ -174,10 +174,7 @@
       128,
       24
      ],
-     "text": "pitch",
-     "style": "c9_h3_hr_0_12_1.104.0_h_s",
-     "font": "ttf:narrow:9:0.0:0.85:0.2",
-     "baseline": 15
+     "empty": true
     },
     {
      "from": [
@@ -188,7 +185,7 @@
       72
      ],
      "text": "Bonus",
-     "style": "c9_h3_hr_0_13_1.40.48_h",
+     "style": "q11_h3_hr_0_13_1.40.48_h",
      "font": "ttf:rounded:19:0.0:0.85:0.3",
      "baseline": 21
     }

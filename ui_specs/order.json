@@ -738,7 +738,7 @@
   {
    "bank": "g3_odx#2",
    "palette": 0,
-   "style": "d9_od_name",
+   "style": "q11_od_thin",
    "font": "ttf:rounded:14:0.0:1.0:0.25",
    "under": 3,
    "areas": [
@@ -774,190 +774,192 @@
    "labels": [
     {
      "sprite": "00",
-     "text": "Meiji Jingu Stadium",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "text": "Meiji Jingu",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:15:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 72,
+     "slice_width": 45,
      "dy": 3
     },
     {
      "sprite": "01",
-     "text": "Hiroshima\nMunicipal Stadium",
-     "style": "d9_od_thin",
-     "font": "ttf:rounded:8:0.0:1.0:0.2",
-     "valign": "centre"
+     "text": "Hiroshima Muni.",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:14:0.0:1.0:0.2",
+     "baseline": -38
     },
     {
      "sprite": "02",
      "text": "Tokyo Dome",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:15:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 46,
+     "slice_width": 53,
      "dy": 3
     },
     {
      "sprite": "03",
-     "text": "Yokohama Stadium",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "text": "Yokohama",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 71,
+     "slice_width": 48,
      "dy": 1
     },
     {
      "sprite": "04",
      "text": "Nagoya Dome",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:15:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 52,
+     "slice_width": 58,
      "dy": 3
     },
     {
      "sprite": "05",
-     "text": "Hanshin Koshien Stadium",
-     "style": "d9_od_name",
-     "font": "ttf:narrow:11:0.0:1.0:0.2",
+     "text": "Koshien",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 81,
+     "slice_width": 37,
      "dy": 1
     },
     {
      "sprite": "06",
-     "text": "Skymark Stadium",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "text": "Skymark",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:15:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 65,
+     "slice_width": 37,
      "dy": 3
     },
     {
      "sprite": "07",
-     "text": "Chiba Marine Stadium",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "text": "Chiba Marine",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 81,
+     "slice_width": 59,
      "dy": 1
     },
     {
      "sprite": "08",
      "text": "Seibu Dome",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 45,
+     "slice_width": 55,
      "dy": 1
     },
     {
      "sprite": "09",
-     "text": "Fukuoka Yahoo!\nJAPAN Dome",
-     "style": "d9_od_thin",
-     "font": "ttf:rounded:9:0.0:1.0:0.2",
-     "valign": "centre"
+     "text": "Fukuoka Dome",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 67,
+     "dy": 0
     },
     {
      "sprite": "0a",
-     "text": "Kyocera Dome Osaka",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "text": "Kyocera Dome",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:15:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 79,
+     "slice_width": 61,
      "dy": 3
     },
     {
      "sprite": "0b",
      "text": "Sapporo Dome",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:14:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 56,
-     "dy": 3
+     "slice_width": 58,
+     "dy": 2
     },
     {
      "sprite": "0c",
-     "text": "Kleenex Stadium Miyagi",
-     "style": "d9_od_name",
-     "font": "ttf:narrow:11:0.0:1.0:0.2",
+     "text": "Kleenex Miyagi",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:15:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 75,
-     "dy": 2
+     "slice_width": 63,
+     "dy": 3
     },
     {
      "sprite": "0d",
-     "text": "Local Ballpark",
-     "style": "d9_od_name",
-     "font": "ttf:narrow:11:0.0:1.0:0.2",
+     "text": "Local Park",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 46,
-     "dy": 2
+     "slice_width": 48,
+     "dy": 1
     },
     {
      "sprite": "0e",
-     "text": "Yamanote Ballpark",
-     "style": "d9_od_name",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "text": "Yamanote",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 54,
-     "dy": 2
+     "slice_width": 45,
+     "dy": 1
     },
     {
      "sprite": "0f",
      "text": "Ikari Dome",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
-     "baseline": -40
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
+     "baseline": -37
     },
     {
      "sprite": "10",
      "text": "Blue Stadium",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 50,
-     "dy": 1
+     "slice_width": 60,
+     "dy": 0
     },
     {
      "sprite": "11",
      "text": "School Field",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 46,
+     "slice_width": 56,
      "dy": 1
     },
     {
      "sprite": "12",
      "text": "Magma Dome",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
-     "baseline": -40
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:15:0.0:1.0:0.2",
+     "baseline": -38
     },
     {
      "sprite": "13",
-     "text": "Rinkai Ballpark",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "text": "Rinkai",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 38,
-     "dy": 3
+     "slice_width": 19,
+     "dy": 1
     },
     {
      "sprite": "14",
      "text": "Local Dome",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
-     "baseline": -39
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
+     "baseline": -36
     },
     {
      "sprite": "15",
-     "text": "Overseas Stadium",
-     "style": "d9_od_name",
-     "font": "ttf:rounded:11:0.0:1.0:0.2",
+     "text": "Overseas",
+     "style": "q11_od_thin",
+     "font": "ttf:narrow:16:0.0:1.0:0.2",
      "slices": true,
-     "slice_width": 68,
+     "slice_width": 43,
      "dy": 1
     }
    ],
