@@ -130,9 +130,10 @@ def draw_logo(rgb, mask, cx, cy, fill, rings, plate_down=None, shadow=None, ligh
     layers = [(big, fill)]
     cur = big
     masks = []
-    for hexc, n, diag in rings:
+    for ring in rings:
+        hexc, n, diag = ring[:3]
         cur = ui_type.grow(cur, n, diagonal=diag)
-        masks.append((cur, hexc))
+        masks.append((cur, hexc, ring[3] if len(ring) > 3 else 1.0))
     top, left = cy - big.shape[0] // 2, cx - big.shape[1] // 2
     H, W = rgb.shape[:2]
     area = rgb[top:top + big.shape[0], left:left + big.shape[1]]
@@ -151,8 +152,8 @@ def draw_logo(rgb, mask, cx, cy, fill, rings, plate_down=None, shadow=None, ligh
     if plate_down:
         plate_m = plate_down_mask(outer, plate_down[1])
         area[plate_m] = hexrgb(plate_down[0])
-    for m, hexc in masks[::-1]:
-        area[m] = hexrgb(hexc)
+    for m, hexc, alpha in masks[::-1]:
+        area[m] = area[m] * (1 - alpha) + hexrgb(hexc) * alpha
     ys = np.nonzero(big.any(1))[0]
     colours = ramp(fill, ys.max() - ys.min() + 1)
     col = np.zeros((big.shape[0], 3))
@@ -175,7 +176,7 @@ def plate_down_mask(m, n):
     return out
 
 
-def fit_text(text, maxw, maxh, extra, caps=range(40, 7, -1), squeeze=1.0, bold=0.5, slant=0.0, face="rounded"):
+def fit_text(text, maxw, maxh, extra, caps=range(90, 7, -1), squeeze=1.0, bold=0.5, slant=0.0, face="rounded"):
     """Largest cap whose mask + `extra` px each side fits (maxw, maxh): (mask, cap)."""
     for cap in caps:
         m = text_mask(text, cap, squeeze, bold, slant, face)
@@ -260,10 +261,32 @@ def _pn(rgb, cv, colours, changed, clear):
     box = (140, 70, 378, 176)
     m = mask_fill(rgb, box, pen_strong, 5, vfrom=150)
     changed |= m
-    m2, cap = fit_text("Pennant", 236, 84, 9, squeeze=0.64, bold=0.9)
+    m2, cap = fit_text("Pennant", 236, 90, 9, squeeze=0.8, bold=0.9)
     painted = draw_logo(rgb, m2, 259, 120, [(0, "fcd800"), (0.5, "f8b820"), (1, "f08020")],
                         [("#1018a8", 3, True), ("#ffffff", 2, True), ("#e86830", 1, True)])
     changed |= painted
 
 
 register("pn", "pena_ini.arc", "s4_taz00", "00", 16, _pn)
+
+
+# ore_ini.arc y4_bsta_opd sprite 00: マイライフ -> My Life (512 x 448 picture, pages 1 and 2)
+def ml_strong(px):
+    r, g, b = px[..., 0], px[..., 1], px[..., 2]
+    gold = (r > 215) & (g > 170) & (b < 110)
+    navy = (b > 130) & (r < 60) & (g < 90)
+    cyan = (r < 70) & (g > 140) & (g < 220) & (b > 215)
+    return gold | navy | cyan
+
+
+def _ml(rgb, cv, colours, changed, clear):
+    box = (140, 4, 378, 84)
+    m = mask_fill(rgb, box, ml_strong, 6)
+    changed |= m
+    m2, cap = fit_text("My Life", 226, 70, 9, squeeze=0.85, bold=0.9)
+    painted = draw_logo(rgb, m2, 259, 40, [(0, "ffee20"), (0.6, "ffd810"), (1, "ffc000")],
+                        [("#1038a8", 2, True), ("#18b4f4", 3, True), ("#ffffff", 4, True, 0.55)])
+    changed |= painted
+
+
+register("ml", "ore_ini.arc", "y4_bsta_opd", "00", 16, _ml)
