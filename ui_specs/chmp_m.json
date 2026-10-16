@@ -238,20 +238,6 @@
      128
     ],
     [
-     2,
-     0,
-     0,
-     128,
-     128
-    ],
-    [
-     3,
-     0,
-     0,
-     128,
-     128
-    ],
-    [
      4,
      0,
      0,
@@ -278,14 +264,14 @@
      "sprite": "00",
      "text": "Away",
      "style": "f8_r3_tvsx_00",
-     "font": "ttf:rounded:23:0.0:1.0:0.3",
-     "baseline": 40
+     "font": "ttf:rounded:26:0.0:1.0:0.3",
+     "baseline": 41
     },
     {
      "sprite": "01",
      "text": "Home",
      "style": "f8_r3_tvsx_01",
-     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "font": "ttf:rounded:30:0.0:0.92:0.3",
      "slices": true,
      "slice_width": 36,
      "dy": 1
@@ -294,16 +280,16 @@
      "sprite": "02",
      "text": "vs",
      "style": "f8_r3_tvsx_02",
-     "font": "ttf:rounded:27:0.0:1.0:0.3",
-     "baseline": 8
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "baseline": 10
     },
     {
      "sprite": "06",
      "text": "Round 1",
      "style": "f8_r3_tvsx_06_0",
-     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 73,
+     "slice_width": 80,
      "dy": 0,
      "pages": [
       0
@@ -316,9 +302,9 @@
      "sprite": "07",
      "text": "Round 2",
      "style": "f8_r3_tvsx_07_0",
-     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 75,
+     "slice_width": 83,
      "dy": 0,
      "pages": [
       0
@@ -331,99 +317,19 @@
      "sprite": "08",
      "text": "Semifinal",
      "style": "f8_r3_tvsx_08",
-     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 85,
+     "slice_width": 93,
      "dy": 0
-    },
-    {
-     "sprite": "09",
-     "text": "Game 1",
-     "style": "f8_r3_tvsx_09",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 40,
-     "pages": [
-      2
-     ]
-    },
-    {
-     "sprite": "0a",
-     "text": "Game 2",
-     "style": "f8_r3_tvsx_0a",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 40,
-     "pages": [
-      2
-     ]
-    },
-    {
-     "sprite": "0b",
-     "text": "Game 3",
-     "style": "f8_r3_tvsx_0b",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 41,
-     "pages": [
-      2
-     ]
-    },
-    {
-     "sprite": "0c",
-     "text": "Game 4",
-     "style": "f8_r3_tvsx_0c",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 40,
-     "pages": [
-      2
-     ]
-    },
-    {
-     "sprite": "0d",
-     "text": "Game 5",
-     "style": "f8_r3_tvsx_0d",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 40,
-     "pages": [
-      3
-     ]
-    },
-    {
-     "sprite": "0e",
-     "text": "Game 6",
-     "style": "f8_r3_tvsx_0e",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 40,
-     "pages": [
-      3
-     ]
-    },
-    {
-     "sprite": "0f",
-     "text": "Game 7",
-     "style": "f8_r3_tvsx_0f",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 40,
-     "pages": [
-      3
-     ]
-    },
-    {
-     "sprite": "10",
-     "text": "Game 8",
-     "style": "f8_r3_tvsx_10",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 41,
-     "pages": [
-      3
-     ]
     },
     {
      "sprite": "11",
      "text": "Final",
      "style": "f8_r3_tvsx_11",
-     "font": "ttf:rounded:27:0.0:1.0:0.3",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 45,
-     "dy": 0
+     "slice_width": 49,
+     "dy": 1
     }
    ],
    "name": "r3_tvsx",

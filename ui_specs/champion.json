@@ -317,11 +317,11 @@
       128,
       32
      ],
-     "text": "Rock",
-     "style": "f8_r3_chpab_10_r10_72_0~0_48",
-     "font": "ttf:rounded:20:0.0:0.85:0.3",
-     "baseline": 26,
-     "left": 8
+     "text": "Scissors",
+     "style": "f8_r3_chpab_10_r10_72_0~0_47",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 21,
+     "left": 9
     },
     {
      "from": [
@@ -331,10 +331,10 @@
       88,
       64
      ],
-     "text": "Rock",
-     "style": "f8_r3_chpab_10_r10_72_0~48_4096",
-     "font": "ttf:rounded:20:0.0:0.85:0.3",
-     "baseline": 26,
+     "text": "Scissors",
+     "style": "f8_r3_chpab_10_r10_72_0~47_4096",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 21,
      "left": 0
     },
     {
@@ -345,10 +345,10 @@
       112,
       112
      ],
-     "text": "Scissors",
+     "text": "Rock",
      "style": "f8_r3_chpab_10_r11_56_80",
-     "font": "ttf:rounded:11:0.0:0.85:0.3",
-     "baseline": 22
+     "font": "ttf:rounded:19:0.0:0.85:0.3",
+     "baseline": 26
     },
     {
      "from": [

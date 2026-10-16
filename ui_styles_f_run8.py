@@ -556,3 +556,5 @@ STYLES["f8_r3_tsk_00_r0_0_0_p~245_4096"] = win(STYLES["f8_r3_tsk_00_r0_0_0_p"], 
 STYLES["f8_r3_tsk_00_r4_48_56~0_76"] = win(STYLES["f8_r3_tsk_00_r4_48_56"], 0, 76)
 STYLES["f8_r3_tsk_00_r4_48_56~76_124"] = win(STYLES["f8_r3_tsk_00_r4_48_56"], 76, 124)
 STYLES["f8_r3_tsk_00_r4_48_56~124_4096"] = win(STYLES["f8_r3_tsk_00_r4_48_56"], 124, 4096)
+STYLES["f8_r3_chpab_10_r10_72_0~0_47"] = win(STYLES["f8_r3_chpab_10_r10_72_0"], 0, 47)
+STYLES["f8_r3_chpab_10_r10_72_0~47_4096"] = win(STYLES["f8_r3_chpab_10_r10_72_0"], 47, 4096)
