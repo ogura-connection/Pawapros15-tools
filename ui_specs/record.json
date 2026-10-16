@@ -442,13 +442,13 @@
       24,
       48
      ],
-     "text": "AB",
+     "text": "BF",
      "style": "d8_g3_kn_cell",
      "font": "ttf:narrow:13:0.0:1.0:0.4",
      "baseline": 19,
      "sprites": [
-      "29",
-      "3d"
+      "2d",
+      "3a"
      ]
     },
     {
@@ -459,13 +459,13 @@
       24,
       48
      ],
-     "text": "BF",
+     "text": "Bat",
      "style": "d8_g3_kn_cell",
      "font": "ttf:narrow:13:0.0:1.0:0.4",
      "baseline": 19,
      "sprites": [
-      "2d",
-      "3a"
+      "29",
+      "3d"
      ]
     },
     {
@@ -789,11 +789,11 @@
       120,
       120
      ],
-     "text": "AVG",
+     "text": "Avg",
      "style": "d8_g3_kn_cell",
      "font": "ttf:narrow:13:0.0:1.0:0.4",
      "baseline": 18,
-     "centre_x": 20,
+     "centre_x": 16,
      "sprites": [
       "29",
       "3d"
