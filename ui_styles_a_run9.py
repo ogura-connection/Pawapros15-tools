@@ -4,6 +4,51 @@ import ui_type
 from ui_styles_ore_ini import ringfill
 from ui_styles_voice import flat
 from ui_styles_c_run1 import win
+import numpy as np
+
+def bandeco(fill, inner, shadow, outer, edge=3):
+    """Banner lettering: letters filled top to foot from `fill`, a thin `inner` ring, a dark extrusion `shadow` (near to far, down and
+    to the right of the ring) and the `outer` rings (nearest first) round letters and extrusion together."""
+    from ui_type import grow, shift
+    fill = list(fill)
+
+    def style(ink, base):
+        pad = len(inner) + len(shadow) + len(outer) + 1
+        h, w = ink.shape
+        big = np.zeros((h + 2 * pad, w + 2 * pad), int)
+        big[pad:pad + h, pad:pad + w] = ink
+        letters = big > 0
+        ring = letters
+        rings = []
+        for _ in inner:
+            ring = grow(ring, 1, diagonal=False) if rings else grow(ring, 1)
+            rings.append(ring)
+        body = rings[-1]
+        sh = np.zeros(big.shape, bool)
+        for k in range(1, len(shadow) + 1):
+            sh |= shift(body, k, k) | shift(body, k, k - 1) | shift(body, k - 1, k)
+        whole = body | sh
+        out = np.zeros(big.shape, np.uint8)
+        o = whole
+        orings = []
+        for _ in outer:
+            o = grow(o, 1, diagonal=False) if orings else grow(o, 1)
+            orings.append(o)
+        for m, v in zip(orings[::-1], outer[::-1]):
+            out[m] = v
+        for k in range(len(shadow), 0, -1):
+            mk = shift(body, k, k) | shift(body, k, k - 1) | shift(body, k - 1, k)
+            out[mk] = shadow[k - 1]
+        for m, v in zip(rings[::-1], inner[::-1]):
+            out[m] = v
+        ys = np.nonzero(letters.any(1))[0]
+        f = (np.arange(big.shape[0]) - ys.min()) / max(ys.max() - ys.min(), 1)
+        row = np.array(fill)[np.rint(f.clip(0, 1) * (len(fill) - 1)).astype(int)][:, None]
+        row = np.broadcast_to(row, big.shape)
+        out[letters] = np.where(big >= edge, row, inner[0])[letters]
+        ys, xs = np.nonzero(out)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1], base + pad - ys.min()
+    return style
 
 STYLES = {}
 
