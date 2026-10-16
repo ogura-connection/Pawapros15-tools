@@ -2,357 +2,209 @@
  "arc": "are_sub.arc",
  "repack": [
   {
-   "bank": "m3_oen",
+   "bank": "s4_mem00",
    "palette": 0,
-   "style": "d7_m3_oen_00",
+   "style": "d7_s4_mem00_00",
    "font": "ttf:rounded:14:0.0:1.0:0.25",
    "under": 3,
    "areas": [
     [
-     1,
      0,
      0,
-     88,
-     128
-    ],
-    [
-     1,
-     88,
      0,
      128,
-     40
+     24
     ],
     [
-     1,
-     88,
-     80,
-     112,
-     128
-    ],
-    [
-     1,
-     112,
-     80,
-     128,
-     96
-    ],
-    [
-     2,
      0,
      0,
-     104,
-     128
-    ],
-    [
-     2,
-     104,
-     64,
-     128,
-     128
-    ],
-    [
-     2,
-     104,
-     0,
+     24,
      128,
      48
     ],
     [
-     2,
-     120,
+     0,
+     0,
      48,
      128,
-     64
+     72
     ],
     [
-     3,
      0,
      0,
+     72,
      40,
      88
     ],
     [
-     11,
-     88,
      0,
-     128,
-     128
+     0,
+     88,
+     40,
+     104
     ],
     [
-     14,
+     0,
+     40,
+     72,
+     80,
+     88
+    ],
+    [
+     0,
+     40,
+     88,
+     88,
+     104
+    ],
+    [
+     0,
+     40,
+     104,
+     80,
+     120
+    ],
+    [
+     0,
      0,
      104,
-     128,
-     128
-    ],
-    [
-     14,
-     88,
-     64,
-     128,
-     96
-    ],
-    [
-     14,
-     88,
-     0,
-     112,
-     32
-    ],
-    [
-     14,
-     112,
-     32,
-     128,
-     64
-    ],
-    [
-     15,
-     0,
-     0,
-     128,
-     80
-    ],
-    [
-     17,
-     0,
-     88,
-     8,
-     104
-    ],
-    [
-     18,
-     72,
-     72,
-     96,
-     104
-    ],
-    [
-     19,
-     0,
-     0,
-     128,
-     128
-    ],
-    [
-     20,
-     0,
-     0,
-     128,
-     128
+     40,
+     120
     ]
    ],
    "labels": [
     {
      "sprite": "00",
-     "text": "Fight Song Data Corner",
-     "style": "d7_m3_oen_00",
-     "font": "ttf:rounded:16:0.0:0.92:0.4",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 3,
+     "text": "MEMORY CARD Slot 1",
+     "style": "d7_s4_mem00_00",
+     "font": "ttf:rounded:8:0.0:1.0:0.55",
+     "baseline": 16,
      "pages": [
-      1
+      0
      ],
      "palettes": [
-      129
+      0
      ]
     },
     {
-     "sprite": "06",
-     "text": "Listen",
-     "style": "d7_m3_oen_06",
-     "font": "ttf:rounded:16:0.0:1.0:0.4",
-     "baseline": 38,
+     "sprite": "01",
+     "text": "MEMORY CARD Slot 2",
+     "style": "d7_s4_mem00_01",
+     "font": "ttf:rounded:8:0.0:1.0:0.55",
+     "baseline": 16,
      "pages": [
-      2
+      0
      ],
      "palettes": [
-      138
+      0
      ]
     },
     {
-     "sprite": "07",
-     "text": "Show\nPassword",
-     "style": "d7_m3_oen_07",
-     "font": "ttf:rounded:12:0.0:0.85:0.45",
-     "baseline": 42,
+     "sprite": "02",
+     "text": "Wii System Memory",
+     "style": "d7_s4_mem00_02",
+     "font": "ttf:rounded:8:0.0:1.0:0.55",
+     "baseline": 16,
      "pages": [
-      3
+      0
      ],
      "palettes": [
-      139
+      0
      ]
     },
     {
-     "sprite": "08",
-     "text": "Copy",
-     "style": "d7_m3_oen_08",
-     "font": "ttf:rounded:16:0.0:1.0:0.4",
-     "baseline": 35,
+     "sprite": "03",
+     "text": "SD Card",
+     "style": "d7_s4_mem00_03",
+     "font": "ttf:rounded:8:0.0:1.0:0.55",
+     "baseline": 16,
      "pages": [
-      2
+      0
      ],
      "palettes": [
-      137
+      0
      ]
     },
     {
-     "sprite": "09",
-     "text": "Swap",
-     "style": "d7_m3_oen_09",
-     "font": "ttf:rounded:16:0.0:1.0:0.4",
-     "baseline": 38,
-     "pages": [
-      2,
-      3
+     "from": [
+      0,
+      0,
+      72,
+      40,
+      88
      ],
-     "palettes": [
-      140
-     ]
+     "text": "Pawa 15",
+     "style": "d7_s4_mem00_04",
+     "font": "ttf:rounded:8:0.0:0.85:0.55",
+     "baseline": 12
     },
     {
-     "sprite": "0a",
-     "text": "Delete",
-     "style": "d7_m3_oen_0a",
-     "font": "ttf:rounded:16:0.0:1.0:0.4",
-     "baseline": 37,
-     "pages": [
-      2,
-      17
+     "from": [
+      0,
+      0,
+      88,
+      40,
+      104
      ],
-     "palettes": [
-      136
-     ]
+     "text": "15 DE",
+     "style": "d7_s4_mem00_05",
+     "font": "ttf:rounded:8:0.0:1.0:0.55",
+     "baseline": 12
     },
     {
-     "sprite": "0b",
-     "text": "Reload",
-     "style": "d7_m3_oen_0b",
-     "font": "ttf:rounded:16:0.0:0.92:0.4",
-     "baseline": 39,
-     "pages": [
-      20
+     "from": [
+      0,
+      40,
+      72,
+      80,
+      88
      ],
-     "palettes": [
-      74
-     ]
+     "text": "Pawa Wii",
+     "style": "d7_s4_mem00_06",
+     "font": "ttf:rounded:7:0.0:0.92:0.55",
+     "baseline": 12
     },
     {
-     "sprite": "0c",
-     "text": "Send",
-     "style": "d7_m3_oen_0c",
-     "font": "ttf:rounded:16:0.0:1.0:0.4",
-     "baseline": 37,
-     "pages": [
-      19
+     "from": [
+      0,
+      40,
+      88,
+      88,
+      104
      ],
-     "palettes": [
-      139
-     ]
+     "text": "Wii DE",
+     "style": "d7_s4_mem00_07",
+     "font": "ttf:rounded:8:0.0:1.0:0.55",
+     "baseline": 12
     },
     {
-     "sprite": "15",
-     "text": "Copy it?",
-     "style": "d7_m3_oen_15",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 22,
-     "pages": [
-      14,
-      15
+     "from": [
+      0,
+      40,
+      104,
+      80,
+      120
      ],
-     "palettes": [
-      141
-     ]
+     "text": "Opener",
+     "style": "d7_s4_mem00_08",
+     "font": "ttf:rounded:8:0.0:0.92:0.55",
+     "baseline": 12
     },
     {
-     "sprite": "16",
-     "text": "Swap them?",
-     "style": "d7_m3_oen_16",
-     "font": "ttf:rounded:13:0.0:1.0:0.4",
-     "baseline": 22,
-     "pages": [
-      14,
-      15
+     "from": [
+      0,
+      0,
+      104,
+      40,
+      120
      ],
-     "palettes": [
-      141
-     ]
-    },
-    {
-     "sprite": "1a",
-     "text": "OK to delete?",
-     "style": "d7_m3_oen_1a",
-     "font": "ttf:rounded:15:0.0:1.0:0.4",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 1,
-     "pages": [
-      11,
-      14
-     ],
-     "palettes": [
-      133
-     ]
-    },
-    {
-     "sprite": "31",
-     "text": "Send\nFight Song",
-     "style": "d7_m3_oen_31",
-     "font": "ttf:rounded:15:0.0:0.85:0.4",
-     "baseline": 68,
-     "pages": [
-      20
-     ],
-     "palettes": [
-      175
-     ]
-    },
-    {
-     "sprite": "33",
-     "text": "No Jikkyou Pawapuro Wii\ndata found",
-     "style": "d7_m3_oen_33",
-     "font": "ttf:rounded:13:0.0:0.85:0.4",
-     "slices": true,
-     "slice_width": 128,
-     "dy": 0,
-     "pages": [
-      18,
-      19,
-      20
-     ],
-     "palettes": [
-      168
-     ]
-    },
-    {
-     "sprite": "36",
-     "text": "Yes",
-     "style": "d7_m3_oen_36",
-     "font": "ttf:rounded:15:0.0:1.0:0.4",
-     "baseline": 24,
-     "pages": [
-      15
-     ],
-     "palettes": [
-      141
-     ]
-    },
-    {
-     "sprite": "37",
-     "text": "No",
-     "style": "d7_m3_oen_37",
-     "font": "ttf:rounded:14:0.0:1.0:0.4",
-     "baseline": 24,
-     "pages": [
-      15
-     ],
-     "palettes": [
-      141
-     ]
+     "text": "Final",
+     "style": "d7_s4_mem00_09",
+     "font": "ttf:rounded:8:0.0:1.0:0.55",
+     "baseline": 12
     }
    ],
-   "name": "m3_oen_all"
+   "name": "s4_mem00_all"
   }
  ]
 }
