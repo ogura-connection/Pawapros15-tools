@@ -636,13 +636,13 @@
       96
      ],
      "text": "Which file",
-     "style": "c7_am_0d~0_100",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
-     "baseline": 25,
+     "style": "c7_am_0d~0_112",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "0d"
      ],
-     "left": 12
+     "left": 0
     },
     {
      "from": [
@@ -653,9 +653,9 @@
       64
      ],
      "text": "Which file",
-     "style": "c7_am_0d~100_123",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
-     "baseline": 25,
+     "style": "c7_am_0d~112_115",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "0d"
      ],
@@ -670,13 +670,13 @@
       32
      ],
      "text": "should hold the",
-     "style": "c7_am_0d~0_126",
-     "font": "ttf:rounded:19:0.0:0.85:0.3",
+     "style": "c7_am_0d~0_128",
+     "font": "ttf:rounded:18:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
       "0d"
      ],
-     "left": 2
+     "left": 0
     },
     {
      "from": [
@@ -687,8 +687,8 @@
       96
      ],
      "text": "should hold the",
-     "style": "c7_am_0d~126_163",
-     "font": "ttf:rounded:19:0.0:0.85:0.3",
+     "style": "c7_am_0d~128_166",
+     "font": "ttf:rounded:18:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
       "0d"
@@ -705,8 +705,8 @@
      ],
      "text": "Arrange Team?",
      "style": "c7_am_0d~0_128",
-     "font": "ttf:narrow:19:0.0:0.85:0.3",
-     "baseline": 25,
+     "font": "ttf:narrow:18:0.0:0.92:0.2",
+     "baseline": 24,
      "sprites": [
       "0d"
      ],
@@ -721,9 +721,9 @@
       96
      ],
      "text": "Arrange Team?",
-     "style": "c7_am_0d~128_136",
-     "font": "ttf:narrow:19:0.0:0.85:0.3",
-     "baseline": 25,
+     "style": "c7_am_0d~128_141",
+     "font": "ttf:narrow:18:0.0:0.92:0.2",
+     "baseline": 24,
      "sprites": [
       "0d"
      ],
@@ -738,13 +738,13 @@
       96
      ],
      "text": "Which file's",
-     "style": "c7_am_0e~0_98",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "style": "c7_am_0e~0_91",
+     "font": "ttf:rounded:12:0.0:1.0:0.2",
      "baseline": 22,
      "sprites": [
       "0e"
      ],
-     "left": 24
+     "left": 0
     },
     {
      "from": [
@@ -768,13 +768,13 @@
       32
      ],
      "text": "Arrange Team",
-     "style": "c7_am_0e~0_104",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 22,
+     "style": "c7_am_0e~0_113",
+     "font": "ttf:rounded:12:0.0:1.0:0.2",
+     "baseline": 21,
      "sprites": [
       "0e"
      ],
-     "left": 24
+     "left": 0
     },
     {
      "from": [
@@ -784,14 +784,10 @@
       128,
       96
      ],
-     "text": "Arrange Team",
-     "style": "c7_am_0e~104_121",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 22,
+     "empty": true,
      "sprites": [
       "0e"
-     ],
-     "left": 0
+     ]
     },
     {
      "from": [
@@ -803,7 +799,7 @@
      ],
      "text": "should be deleted?",
      "style": "c7_am_0e~0_128",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "font": "ttf:rounded:12:0.0:0.92:0.2",
      "baseline": 22,
      "sprites": [
       "0e"
@@ -819,8 +815,8 @@
       96
      ],
      "text": "should be deleted?",
-     "style": "c7_am_0e~128_139",
-     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "style": "c7_am_0e~128_140",
+     "font": "ttf:rounded:12:0.0:0.92:0.2",
      "baseline": 22,
      "sprites": [
       "0e"
@@ -837,7 +833,7 @@
      ],
      "text": "Choose the file",
      "style": "c7_am_0f~0_128",
-     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "font": "ttf:narrow:18:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
       "0f"
@@ -853,8 +849,8 @@
       64
      ],
      "text": "Choose the file",
-     "style": "c7_am_0f~128_136",
-     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "style": "c7_am_0f~128_141",
+     "font": "ttf:narrow:18:0.0:0.92:0.2",
      "baseline": 24,
      "sprites": [
       "0f"
@@ -871,8 +867,8 @@
      ],
      "text": "you want",
      "style": "c7_am_0f",
-     "font": "ttf:rounded:19:0.0:0.92:0.3",
-     "baseline": 26,
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "0f"
      ],
@@ -887,13 +883,13 @@
       128
      ],
      "text": "to copy",
-     "style": "c7_am_0f~0_95",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
-     "baseline": 25,
+     "style": "c7_am_0f~0_90",
+     "font": "ttf:rounded:18:0.0:1.0:0.2",
+     "baseline": 24,
      "sprites": [
       "0f"
      ],
-     "left": 32
+     "left": 0
     },
     {
      "from": [
@@ -918,7 +914,7 @@
      ],
      "text": "Choose where",
      "style": "c7_am_10~0_127",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
      "baseline": 25,
      "sprites": [
       "10"
@@ -935,7 +931,7 @@
      ],
      "text": "Choose where",
      "style": "c7_am_10~127_151",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
      "baseline": 25,
      "sprites": [
       "10"
@@ -952,7 +948,7 @@
      ],
      "text": "Choose where",
      "style": "c7_am_10~151_181",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
      "baseline": 24,
      "sprites": [
       "10"
@@ -969,7 +965,7 @@
      ],
      "text": "to copy it",
      "style": "c7_am_10~0_107",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
      "baseline": 25,
      "sprites": [
       "10"
@@ -986,7 +982,7 @@
      ],
      "text": "to copy it",
      "style": "c7_am_10~107_118",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
      "baseline": 25,
      "sprites": [
       "10"
@@ -1002,13 +998,13 @@
       32
      ],
      "text": "The copy target",
-     "style": "c7_am_11~0_127",
-     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "style": "c7_am_11~0_128",
+     "font": "ttf:rounded:19:0.0:0.92:0.2",
      "baseline": 25,
      "sprites": [
       "11"
      ],
-     "left": 1
+     "left": 0
     },
     {
      "from": [
@@ -1019,8 +1015,8 @@
       128
      ],
      "text": "The copy target",
-     "style": "c7_am_11~127_167",
-     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "style": "c7_am_11~128_168",
+     "font": "ttf:rounded:19:0.0:0.92:0.2",
      "baseline": 25,
      "sprites": [
       "11"
@@ -1036,8 +1032,8 @@
       128
      ],
      "text": "The copy target",
-     "style": "c7_am_11~167_183",
-     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "style": "c7_am_11~168_183",
+     "font": "ttf:rounded:19:0.0:0.92:0.2",
      "baseline": 25,
      "sprites": [
       "11"
@@ -1054,12 +1050,12 @@
      ],
      "text": "is not",
      "style": "c7_am_11",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
      "baseline": 24,
      "sprites": [
       "11"
      ],
-     "left": 25
+     "left": 0
     },
     {
      "from": [
@@ -1071,12 +1067,12 @@
      ],
      "text": "empty",
      "style": "c7_am_11",
-     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "font": "ttf:rounded:19:0.0:1.0:0.2",
      "baseline": 25,
      "sprites": [
       "11"
      ],
-     "left": 18
+     "left": 0
     },
     {
      "from": [
@@ -1088,7 +1084,7 @@
      ],
      "text": "Copy this file?",
      "style": "c7_am_p24~0_58",
-     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "12"
@@ -1105,7 +1101,7 @@
      ],
      "text": "Copy this file?",
      "style": "c7_am_p24~58_186",
-     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "12"
@@ -1122,7 +1118,7 @@
      ],
      "text": "Copy this file?",
      "style": "c7_am_p24~186_195",
-     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "12"
@@ -1139,12 +1135,12 @@
      ],
      "text": "Yes",
      "style": "c7_am_p24",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 29,
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
+     "baseline": 28,
      "sprites": [
       "12"
      ],
-     "left": -2
+     "left": 0
     },
     {
      "from": [
@@ -1156,7 +1152,7 @@
      ],
      "text": "No",
      "style": "c7_am_p24",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "12"
@@ -1173,7 +1169,7 @@
      ],
      "text": "Save your changes?",
      "style": "c7_am_p24~0_123",
-     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "13"
@@ -1190,7 +1186,7 @@
      ],
      "text": "Save your changes?",
      "style": "c7_am_p24~123_251",
-     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "13"
@@ -1207,7 +1203,7 @@
      ],
      "text": "Save your changes?",
      "style": "c7_am_p24~251_277",
-     "font": "ttf:rounded:21:0.0:1.0:0.3",
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "13"
@@ -1224,12 +1220,12 @@
      ],
      "text": "Yes",
      "style": "c7_am_p24",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
-     "baseline": 29,
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
+     "baseline": 28,
      "sprites": [
       "13"
      ],
-     "left": -2
+     "left": 0
     },
     {
      "from": [
@@ -1241,7 +1237,7 @@
      ],
      "text": "No",
      "style": "c7_am_p24",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "font": "ttf:rounded:21:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "13"
@@ -1258,7 +1254,7 @@
      ],
      "text": "Delete this team?",
      "style": "c7_am_p24~0_124",
-     "font": "ttf:rounded:25:0.0:0.92:0.3",
+     "font": "ttf:rounded:25:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "28"
@@ -1275,7 +1271,7 @@
      ],
      "text": "Delete this team?",
      "style": "c7_am_p24~124_252",
-     "font": "ttf:rounded:25:0.0:0.92:0.3",
+     "font": "ttf:rounded:25:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "28"
@@ -1292,7 +1288,7 @@
      ],
      "text": "Delete this team?",
      "style": "c7_am_p24~252_262",
-     "font": "ttf:rounded:25:0.0:0.92:0.3",
+     "font": "ttf:rounded:25:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "28"
@@ -1309,7 +1305,7 @@
      ],
      "text": "Yes",
      "style": "c7_am_p24",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "font": "ttf:rounded:22:0.0:1.0:0.2",
      "baseline": 29,
      "sprites": [
       "28"
@@ -1326,7 +1322,7 @@
      ],
      "text": "No",
      "style": "c7_am_p24",
-     "font": "ttf:rounded:22:0.0:1.0:0.3",
+     "font": "ttf:rounded:22:0.0:1.0:0.2",
      "baseline": 28,
      "sprites": [
       "28"
@@ -1343,7 +1339,7 @@
      ],
      "text": "Save your changes?",
      "style": "c7_am_p51~0_76",
-     "font": "ttf:rounded:25:0.0:0.92:0.3",
+     "font": "ttf:rounded:25:0.0:0.92:0.2",
      "baseline": 31,
      "sprites": [
       "54"
@@ -1360,7 +1356,7 @@
      ],
      "text": "Save your changes?",
      "style": "c7_am_p51~76_204",
-     "font": "ttf:rounded:25:0.0:0.92:0.3",
+     "font": "ttf:rounded:25:0.0:0.92:0.2",
      "baseline": 31,
      "sprites": [
       "54"
@@ -1377,7 +1373,7 @@
      ],
      "text": "Save your changes?",
      "style": "c7_am_p51~204_304",
-     "font": "ttf:rounded:25:0.0:0.92:0.3",
+     "font": "ttf:rounded:25:0.0:0.92:0.2",
      "baseline": 31,
      "sprites": [
       "54"
@@ -1394,7 +1390,7 @@
      ],
      "text": "Yes",
      "style": "c7_am_p51",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 31,
      "sprites": [
       "54"
@@ -1411,7 +1407,7 @@
      ],
      "text": "No",
      "style": "c7_am_p51~0_19",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 30,
      "sprites": [
       "54"
@@ -1428,7 +1424,7 @@
      ],
      "text": "No",
      "style": "c7_am_p51~19_46",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 30,
      "sprites": [
       "54"
@@ -1444,13 +1440,13 @@
       32
      ],
      "text": "Which team",
-     "style": "c7_am_p24~0_127",
-     "font": "ttf:rounded:20:0.0:0.85:0.3",
+     "style": "c7_am_p24~0_128",
+     "font": "ttf:rounded:19:0.0:0.92:0.2",
      "baseline": 26,
      "sprites": [
       "57"
      ],
-     "left": 1
+     "left": 0
     },
     {
      "from": [
@@ -1461,8 +1457,8 @@
       128
      ],
      "text": "Which team",
-     "style": "c7_am_p24~127_131",
-     "font": "ttf:rounded:20:0.0:0.85:0.3",
+     "style": "c7_am_p24~128_136",
+     "font": "ttf:rounded:19:0.0:0.92:0.2",
      "baseline": 26,
      "sprites": [
       "57"
@@ -1478,13 +1474,13 @@
       64
      ],
      "text": "should be the base team?",
-     "style": "c7_am_p24~0_125",
-     "font": "ttf:narrow:21:0.0:0.85:0.3",
+     "style": "c7_am_p24~0_128",
+     "font": "ttf:narrow:20:0.0:0.92:0.2",
      "baseline": 28,
      "sprites": [
       "57"
      ],
-     "left": 3
+     "left": 0
     },
     {
      "from": [
@@ -1495,8 +1491,8 @@
       96
      ],
      "text": "should be the base team?",
-     "style": "c7_am_p24~125_253",
-     "font": "ttf:narrow:21:0.0:0.85:0.3",
+     "style": "c7_am_p24~128_256",
+     "font": "ttf:narrow:20:0.0:0.92:0.2",
      "baseline": 28,
      "sprites": [
       "57"
@@ -1511,10 +1507,14 @@
       40,
       128
      ],
-     "empty": true,
+     "text": "should be the base team?",
+     "style": "c7_am_p24~256_260",
+     "font": "ttf:narrow:20:0.0:0.92:0.2",
+     "baseline": 28,
      "sprites": [
       "57"
-     ]
+     ],
+     "left": 0
     },
     {
      "from": [
@@ -1526,7 +1526,7 @@
      ],
      "text": "Too many foreign players",
      "style": "c7_am_p51~0_38",
-     "font": "ttf:rounded:24:0.0:0.92:0.3",
+     "font": "ttf:rounded:24:0.0:0.92:0.2",
      "baseline": 31,
      "sprites": [
       "50"
@@ -1543,7 +1543,7 @@
      ],
      "text": "Too many foreign players",
      "style": "c7_am_p51~38_166",
-     "font": "ttf:rounded:24:0.0:0.92:0.3",
+     "font": "ttf:rounded:24:0.0:0.92:0.2",
      "baseline": 31,
      "sprites": [
       "50"
@@ -1560,7 +1560,7 @@
      ],
      "text": "Too many foreign players",
      "style": "c7_am_p51~166_294",
-     "font": "ttf:rounded:24:0.0:0.92:0.3",
+     "font": "ttf:rounded:24:0.0:0.92:0.2",
      "baseline": 31,
      "sprites": [
       "50"
@@ -1577,7 +1577,7 @@
      ],
      "text": "Too many foreign players",
      "style": "c7_am_p51~294_367",
-     "font": "ttf:rounded:24:0.0:0.92:0.3",
+     "font": "ttf:rounded:24:0.0:0.92:0.2",
      "baseline": 31,
      "sprites": [
       "50"
@@ -1593,13 +1593,13 @@
       40
      ],
      "text": "for the 1st Team!",
-     "style": "c7_am_p51~0_52",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~0_56",
+     "font": "ttf:rounded:23:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "50"
      ],
-     "left": 4
+     "left": 0
     },
     {
      "from": [
@@ -1610,8 +1610,8 @@
       80
      ],
      "text": "for the 1st Team!",
-     "style": "c7_am_p51~52_180",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~56_184",
+     "font": "ttf:rounded:23:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1627,8 +1627,8 @@
       120
      ],
      "text": "for the 1st Team!",
-     "style": "c7_am_p51~180_227",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~184_235",
+     "font": "ttf:rounded:23:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1644,13 +1644,13 @@
       120
      ],
      "text": "If they join Pennant,",
-     "style": "c7_am_p51~0_71",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~0_69",
+     "font": "ttf:narrow:24:0.0:1.0:0.2",
      "baseline": 30,
      "sprites": [
       "50"
      ],
-     "left": 1
+     "left": 3
     },
     {
      "from": [
@@ -1661,8 +1661,8 @@
       40
      ],
      "text": "If they join Pennant,",
-     "style": "c7_am_p51~71_199",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~69_197",
+     "font": "ttf:narrow:24:0.0:1.0:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1678,8 +1678,8 @@
       80
      ],
      "text": "If they join Pennant,",
-     "style": "c7_am_p51~199_267",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~197_263",
+     "font": "ttf:narrow:24:0.0:1.0:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1695,13 +1695,13 @@
       80
      ],
      "text": "the import limit can't be set.",
-     "style": "c7_am_p51~0_48",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~0_54",
+     "font": "ttf:rounded:23:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "50"
      ],
-     "left": 8
+     "left": 2
     },
     {
      "from": [
@@ -1712,8 +1712,8 @@
       120
      ],
      "text": "the import limit can't be set.",
-     "style": "c7_am_p51~48_176",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~54_182",
+     "font": "ttf:rounded:23:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1729,8 +1729,8 @@
       40
      ],
      "text": "the import limit can't be set.",
-     "style": "c7_am_p51~176_304",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~182_310",
+     "font": "ttf:rounded:23:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1746,8 +1746,8 @@
       80
      ],
      "text": "the import limit can't be set.",
-     "style": "c7_am_p51~304_374",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
+     "style": "c7_am_p51~310_386",
+     "font": "ttf:rounded:23:0.0:0.92:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1764,7 +1764,7 @@
      ],
      "text": "Is this OK?",
      "style": "c7_am_p51~0_34",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 31,
      "sprites": [
       "50"
@@ -1781,7 +1781,7 @@
      ],
      "text": "Is this OK?",
      "style": "c7_am_p51~34_162",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 31,
      "sprites": [
       "50"
@@ -1798,7 +1798,7 @@
      ],
      "text": "Is this OK?",
      "style": "c7_am_p51~162_171",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 31,
      "sprites": [
       "50"
@@ -1815,7 +1815,7 @@
      ],
      "text": "Yes",
      "style": "c7_am_p51",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 31,
      "sprites": [
       "50"
@@ -1832,7 +1832,7 @@
      ],
      "text": "No",
      "style": "c7_am_p51~0_19",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1849,7 +1849,7 @@
      ],
      "text": "No",
      "style": "c7_am_p51~19_46",
-     "font": "ttf:rounded:24:0.0:1.0:0.3",
+     "font": "ttf:rounded:24:0.0:1.0:0.2",
      "baseline": 30,
      "sprites": [
       "50"
@@ -1865,13 +1865,13 @@
       80
      ],
      "text": "Players with an original uniform",
-     "style": "c7_am_p51~0_127",
-     "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "baseline": 27,
+     "style": "c7_am_p51~0_128",
+     "font": "ttf:rounded:16:0.0:0.92:0.2",
+     "baseline": 26,
      "sprites": [
       "52"
      ],
-     "left": 1
+     "left": 0
     },
     {
      "from": [
@@ -1882,9 +1882,9 @@
       120
      ],
      "text": "Players with an original uniform",
-     "style": "c7_am_p51~127_255",
-     "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "baseline": 27,
+     "style": "c7_am_p51~128_256",
+     "font": "ttf:rounded:16:0.0:0.92:0.2",
+     "baseline": 26,
      "sprites": [
       "52"
      ],
@@ -1899,9 +1899,9 @@
       40
      ],
      "text": "Players with an original uniform",
-     "style": "c7_am_p51~255_301",
-     "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "baseline": 27,
+     "style": "c7_am_p51~256_304",
+     "font": "ttf:rounded:16:0.0:0.92:0.2",
+     "baseline": 26,
      "sprites": [
       "52"
      ],
@@ -1916,13 +1916,13 @@
       40
      ],
      "text": "set can wear it",
-     "style": "c7_am_p51~0_47",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "baseline": 27,
+     "style": "c7_am_p51~0_43",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
+     "baseline": 26,
      "sprites": [
       "52"
      ],
-     "left": 33
+     "left": 37
     },
     {
      "from": [
@@ -1933,9 +1933,9 @@
       80
      ],
      "text": "set can wear it",
-     "style": "c7_am_p51~47_167",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "baseline": 27,
+     "style": "c7_am_p51~43_157",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
+     "baseline": 26,
      "sprites": [
       "52"
      ],
@@ -1963,13 +1963,13 @@
       120
      ],
      "text": "in their games",
-     "style": "c7_am_p51~0_25",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "style": "c7_am_p51~0_21",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
      "baseline": 26,
      "sprites": [
       "52"
      ],
-     "left": 79
+     "left": 83
     },
     {
      "from": [
@@ -1980,8 +1980,8 @@
       40
      ],
      "text": "in their games",
-     "style": "c7_am_p51~25_153",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "style": "c7_am_p51~21_149",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
      "baseline": 26,
      "sprites": [
       "52"
@@ -1997,8 +1997,8 @@
       80
      ],
      "text": "in their games",
-     "style": "c7_am_p51~153_160",
-     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "style": "c7_am_p51~149_150",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
      "baseline": 26,
      "sprites": [
       "52"
@@ -2014,13 +2014,13 @@
       80
      ],
      "text": "(except Pennant)",
-     "style": "c7_am_p51~0_38",
-     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "style": "c7_am_p51~0_40",
+     "font": "ttf:narrow:16:0.0:0.92:0.2",
      "baseline": 28,
      "sprites": [
       "52"
      ],
-     "left": 2
+     "left": 0
     },
     {
      "from": [
@@ -2031,8 +2031,8 @@
       120
      ],
      "text": "(except Pennant)",
-     "style": "c7_am_p51~38_137",
-     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "style": "c7_am_p51~40_140",
+     "font": "ttf:narrow:16:0.0:0.92:0.2",
      "baseline": 28,
      "sprites": [
       "52"
@@ -2048,13 +2048,13 @@
       120
      ],
      "text": "Wear It",
-     "style": "c7_am_p51~0_24",
-     "font": "ttf:narrow:27:0.0:0.85:0.3",
-     "baseline": 32,
+     "style": "c7_am_p51~0_19",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
+     "baseline": 26,
      "sprites": [
       "52"
      ],
-     "left": 0
+     "left": 5
     },
     {
      "from": [
@@ -2065,9 +2065,9 @@
       40
      ],
      "text": "Wear It",
-     "style": "c7_am_p51~24_92",
-     "font": "ttf:narrow:27:0.0:0.85:0.3",
-     "baseline": 32,
+     "style": "c7_am_p51~19_79",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
+     "baseline": 26,
      "sprites": [
       "52"
      ],
@@ -2082,13 +2082,13 @@
       40
      ],
      "text": "Don't",
-     "style": "c7_am_p51~0_53",
-     "font": "ttf:rounded:27:0.0:1.0:0.3",
-     "baseline": 30,
+     "style": "c7_am_p51~0_35",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "52"
      ],
-     "left": 11
+     "left": 29
     },
     {
      "from": [
@@ -2099,9 +2099,9 @@
       72
      ],
      "text": "Don't",
-     "style": "c7_am_p51~53_96",
-     "font": "ttf:rounded:27:0.0:1.0:0.3",
-     "baseline": 30,
+     "style": "c7_am_p51~35_58",
+     "font": "ttf:rounded:16:0.0:1.0:0.2",
+     "baseline": 25,
      "sprites": [
       "52"
      ],
