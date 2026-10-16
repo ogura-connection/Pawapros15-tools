@@ -8,7 +8,8 @@ A spec's "sheet" entries (read by ui_labels.render):
    "items": [{"box": [x0, y0, x1, y1],   picture pixels rebuilt (end exclusive)
               "bg": "rows",               background: per row, from the pixel left of the box to the one right of
                                           it ("cols": per column, above to below; "mode": the commonest colour
-                                          of the box, for a flat cell; "keep": leave it)
+                                          of the box, for a flat cell; "keep": leave it;
+                                          "clear_ends": true keeps rows with transparent ends transparent)
               "text": "Bullpen", "font": "ttf:...", "centre": [x, y] (default: the middle of the box),
               "colour": "#203040",        letter colour; the ink levels blend it into what is behind
                                           ("crisp": true draws solid letters, which pack smaller)
@@ -117,11 +118,18 @@ def paint(entry, d, banks, patches, project=None, pictures=None):
         draw(item, img, project)
         changed = np.abs(img - before).sum(-1) > 0
         x0, y0, x1, y1 = item["box"]
-        changed[y0:y1, x0:x1] = True                       # the rebuilt background, even where it matched
+        if item.get("bg", "rows") != "keep":
+            changed[y0:y1, x0:x1] = True                   # the rebuilt background, even where it matched
+        if not changed.any():
+            continue
         ys, xs = np.nonzero(changed)
         r = (slice(ys.min(), ys.max() + 1), slice(xs.min(), xs.max() + 1))
         sub = q(img[r])
         new[r] = np.where(changed[r], sub, new[r])
+        if item.get("clear_ends"):                         # rows with nothing either side of the box stay transparent
+            for y in range(y0, y1):
+                if idx[y, x0 - 1] == 0 and idx[y, x1] == 0:
+                    new[y, x0:x1] = 0
         img[r] = colours[new[r]]
     if pictures is not None:
         pictures.append((entry["pages"], colours[idx], colours[new]))
