@@ -1,0 +1,726 @@
+{
+ "arc": "chmp_t.arc",
+ "repack": [
+  {
+   "bank": "r3_ten",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     64,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     64,
+     64,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     64,
+     32
+    ],
+    [
+     5,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     5,
+     80,
+     0,
+     128,
+     64
+    ],
+    [
+     6,
+     0,
+     0,
+     48,
+     64
+    ],
+    [
+     6,
+     48,
+     48,
+     128,
+     64
+    ],
+    [
+     6,
+     0,
+     112,
+     64,
+     128
+    ],
+    [
+     6,
+     56,
+     64,
+     64,
+     112
+    ],
+    [
+     6,
+     120,
+     0,
+     128,
+     24
+    ],
+    [
+     6,
+     48,
+     88,
+     56,
+     112
+    ],
+    [
+     9,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     10,
+     32,
+     64,
+     128,
+     128
+    ],
+    [
+     10,
+     24,
+     96,
+     32,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     12,
+     0,
+     96,
+     56,
+     128
+    ],
+    [
+     12,
+     72,
+     96,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     13,
+     64,
+     40,
+     128,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "End Entry",
+     "style": "f8_r3_ten_01_64",
+     "font": "ttf:rounded:20:0.0:0.92:0.3",
+     "baseline": 25,
+     "palettes": [
+      64
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Enter Name",
+     "style": "f8_r3_ten_05_65",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "baseline": 30,
+     "palettes": [
+      65
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Player",
+     "style": "f8_r3_ten_13",
+     "font": "ttf:rounded:20:0.0:1.0:0.3",
+     "baseline": 26
+    },
+    {
+     "sprite": "16",
+     "text": "Controller Type",
+     "style": "f8_r3_ten_16",
+     "font": "ttf:rounded:21:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 91,
+     "dy": 3
+    },
+    {
+     "sprite": "1d",
+     "text": "Rumble",
+     "style": "f8_r3_ten_1d",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 36,
+     "dy": -1
+    },
+    {
+     "sprite": "1e",
+     "text": "Off",
+     "style": "f8_r3_ten_1e",
+     "font": "ttf:rounded:26:0.0:1.0:0.3",
+     "baseline": 28
+    },
+    {
+     "sprite": "1f",
+     "text": "On",
+     "style": "f8_r3_ten_1f",
+     "font": "ttf:rounded:29:0.0:1.0:0.3",
+     "baseline": 30
+    },
+    {
+     "sprite": "34",
+     "text": "Set Randomly",
+     "style": "f8_r3_ten_34_65",
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "baseline": 23,
+     "palettes": [
+      65
+     ]
+    },
+    {
+     "sprite": "35",
+     "text": "Delete",
+     "style": "f8_r3_ten_35_66",
+     "font": "ttf:rounded:27:0.0:0.92:0.3",
+     "baseline": 34,
+     "palettes": [
+      66
+     ]
+    },
+    {
+     "sprite": "53",
+     "text": "Delete All",
+     "style": "f8_r3_ten_53_66",
+     "font": "ttf:rounded:21:0.0:0.85:0.3",
+     "baseline": 26,
+     "palettes": [
+      66
+     ]
+    },
+    {
+     "from": [
+      10,
+      32,
+      64,
+      88,
+      96
+     ],
+     "text": "Type",
+     "style": "f8_r3_ten_19_r10_32_64",
+     "font": "ttf:narrow:20:0.0:0.92:0.3",
+     "baseline": 26
+    },
+    {
+     "from": [
+      10,
+      24,
+      96,
+      80,
+      128
+     ],
+     "text": "Type",
+     "style": "f8_r3_ten_1a_r10_24_96",
+     "font": "ttf:narrow:22:0.0:0.92:0.3",
+     "baseline": 26
+    },
+    {
+     "from": [
+      5,
+      80,
+      0,
+      128,
+      32
+     ],
+     "text": "Type A",
+     "style": "f8_r3_ten_17_r5_80_0~0_44",
+     "font": "ttf:narrow:25:0.0:0.92:0.3",
+     "baseline": 28,
+     "left": 4
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      48,
+      32
+     ],
+     "text": "Type A",
+     "style": "f8_r3_ten_17_r5_80_0~44_4096",
+     "font": "ttf:narrow:25:0.0:0.92:0.3",
+     "baseline": 28,
+     "left": 0
+    },
+    {
+     "from": [
+      5,
+      80,
+      32,
+      128,
+      64
+     ],
+     "text": "Type B",
+     "style": "f8_r3_ten_18_r5_80_32~0_44",
+     "font": "ttf:narrow:26:0.0:0.92:0.3",
+     "baseline": 28,
+     "left": 4
+    },
+    {
+     "from": [
+      6,
+      0,
+      32,
+      48,
+      64
+     ],
+     "text": "Type B",
+     "style": "f8_r3_ten_18_r5_80_32~44_4096",
+     "font": "ttf:narrow:26:0.0:0.92:0.3",
+     "baseline": 28,
+     "left": 0
+    },
+    {
+     "from": [
+      12,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Delete all entered teams?",
+     "style": "f8_r3_ten_54_r12_0_0~0_121",
+     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "baseline": 27,
+     "left": 7
+    },
+    {
+     "from": [
+      12,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Delete all entered teams?",
+     "style": "f8_r3_ten_54_r12_0_0~121_249",
+     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "baseline": 27,
+     "left": 0
+    },
+    {
+     "from": [
+      12,
+      0,
+      64,
+      40,
+      96
+     ],
+     "text": "Delete all entered teams?",
+     "style": "f8_r3_ten_54_r12_0_0~249_289",
+     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "baseline": 27,
+     "left": 0
+    },
+    {
+     "from": [
+      12,
+      72,
+      96,
+      88,
+      128
+     ],
+     "text": "Delete all entered teams?",
+     "style": "f8_r3_ten_54_r12_0_0~289_4096",
+     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "baseline": 27,
+     "left": 0
+    },
+    {
+     "from": [
+      12,
+      0,
+      96,
+      56,
+      128
+     ],
+     "text": "Yes",
+     "style": "f8_r3_ten_54_r12_0_96",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 24
+    },
+    {
+     "from": [
+      12,
+      40,
+      64,
+      120,
+      96
+     ],
+     "text": "No",
+     "style": "f8_r3_ten_54_r12_40_64",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 24
+    }
+   ],
+   "name": "r3_ten",
+   "share": true
+  },
+  {
+   "bank": "r3_tig_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     3,
+     64,
+     112,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     5,
+     0,
+     96,
+     96,
+     128
+    ],
+    [
+     6,
+     32,
+     64,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     96,
+     32,
+     128
+    ],
+    [
+     7,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     7,
+     112,
+     16,
+     128,
+     96
+    ],
+    [
+     7,
+     0,
+     80,
+     56,
+     96
+    ],
+    [
+     7,
+     48,
+     16,
+     56,
+     32
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Together",
+     "style": "f8_r3_tig_0_00",
+     "font": "ttf:narrow:26:0.0:0.92:0.3",
+     "baseline": 38
+    },
+    {
+     "sprite": "02",
+     "text": "New Game",
+     "style": "f8_r3_tig_0_02_8",
+     "font": "ttf:narrow:21:0.0:0.92:0.3",
+     "baseline": 42,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Continue",
+     "style": "f8_r3_tig_0_03_9",
+     "font": "ttf:rounded:21:0.0:0.92:0.3",
+     "baseline": 42,
+     "palettes": [
+      9
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Past Champions",
+     "style": "f8_r3_tig_0_04_10",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 38,
+     "palettes": [
+      10
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Round",
+     "style": "f8_r3_tig_0_0a",
+     "font": "ttf:rounded:14:0.0:0.85:0.3",
+     "baseline": 82
+    },
+    {
+     "sprite": "0b",
+     "text": "Semifinal",
+     "style": "f8_r3_tig_0_0b",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 84
+    },
+    {
+     "sprite": "0c",
+     "text": "Final",
+     "style": "f8_r3_tig_0_0c",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 85
+    },
+    {
+     "sprite": "0d",
+     "text": "Games Played",
+     "style": "f8_r3_tig_0_0d",
+     "font": "ttf:narrow:14:0.0:0.92:0.3",
+     "baseline": 82
+    },
+    {
+     "sprite": "0e",
+     "text": "Taking Entries",
+     "style": "f8_r3_tig_0_0e",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 72,
+     "dy": 3
+    },
+    {
+     "sprite": "0f",
+     "text": "Champion",
+     "style": "f8_r3_tig_0_0f",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 84
+    },
+    {
+     "sprite": "2f",
+     "text": "Champion",
+     "style": "f8_r3_tig_0_2f",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 25,
+     "dy": 3
+    },
+    {
+     "sprite": "30",
+     "text": "Champion",
+     "style": "f8_r3_tig_0_30",
+     "font": "ttf:rounded:18:0.0:0.92:0.3",
+     "slices": true,
+     "slice_width": 28,
+     "dy": 2
+    },
+    {
+     "sprite": "3a",
+     "text": "Taking Entries...",
+     "style": "f8_r3_tig_0_3a",
+     "font": "ttf:rounded:32:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 57,
+     "dy": 5
+    }
+   ],
+   "name": "r3_tig_0",
+   "share": true
+  },
+  {
+   "bank": "r3_tyr",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     1,
+     104,
+     48,
+     128,
+     72
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     88
+    ],
+    [
+     2,
+     0,
+     88,
+     64,
+     128
+    ],
+    [
+     3,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     88,
+     32
+    ],
+    [
+     3,
+     120,
+     0,
+     128,
+     32
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     80
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Past Champions",
+     "style": "f8_r3_tyr_00",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 23,
+     "dy": 6
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      96,
+      88
+     ],
+     "empty": true,
+     "sprites": [
+      "03"
+     ]
+    },
+    {
+     "from": [
+      2,
+      96,
+      64,
+      128,
+      88
+     ],
+     "empty": true,
+     "sprites": [
+      "03"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      88,
+      32
+     ],
+     "text": "Tournament #",
+     "style": "f8_r3_tyr_03_r3_0_0",
+     "font": "ttf:narrow:10:0.0:0.85:0.3",
+     "baseline": 17
+    }
+   ],
+   "name": "r3_tyr",
+   "share": true
+  }
+ ]
+}
