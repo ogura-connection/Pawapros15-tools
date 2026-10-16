@@ -73,3 +73,4 @@ def bevel(top, core, bottom, t=3):
 STYLES["g10_mc"] = card()
 STYLES["g10_mn"] = card(shadow=0)
 STYLES["g10_mt"] = bevel(11, 13, 5)
+STYLES["g10_mtf"] = bevel(13, 13, 5)

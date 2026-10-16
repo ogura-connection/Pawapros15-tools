@@ -13067,6 +13067,33 @@
    ],
    "name": "d9 np tags",
    "share": true
+  },
+  {
+   "bank": "g3_np",
+   "palette": 0,
+   "style": "d9_np_pos",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     56,
+     112,
+     112,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "2b",
+     "text": "Swingman",
+     "style": "d9_np_type",
+     "font": "ttf:narrow:7:0.0:1.0:0.25",
+     "baseline": 4
+    }
+   ],
+   "name": "r10f np tags",
+   "share": true
   }
  ],
  "paint": [
