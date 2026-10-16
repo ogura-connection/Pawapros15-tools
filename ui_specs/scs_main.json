@@ -1252,6 +1252,927 @@
      "font": "ttf:rounded:10:0:0.85:0.3"
     }
    ]
+  },
+  {
+   "bank": "z4_tem_0",
+   "palette": 0,
+   "style": "a9_tem",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     16,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     16,
+     16,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      0,
+      48,
+      72
+     ],
+     "empty": true,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      0,
+      48,
+      0,
+      96,
+      72
+     ],
+     "empty": true,
+     "sprites": [
+      "01"
+     ]
+    },
+    {
+     "from": [
+      0,
+      96,
+      0,
+      128,
+      72
+     ],
+     "empty": true,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      72,
+      16,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      1,
+      16,
+      0,
+      64,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "03"
+     ]
+    },
+    {
+     "from": [
+      0,
+      16,
+      72,
+      64,
+      128
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~0_32",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": 8,
+     "sprites": [
+      "03"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      112,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "04"
+     ]
+    },
+    {
+     "from": [
+      0,
+      64,
+      72,
+      112,
+      128
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~32_68",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -8,
+     "sprites": [
+      "04"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "05"
+     ]
+    },
+    {
+     "from": [
+      0,
+      112,
+      72,
+      128,
+      128
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~68_84",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -20,
+     "sprites": [
+      "05"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      1,
+      0,
+      16,
+      32,
+      88
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~84_116",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -20,
+     "sprites": [
+      "05"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      1,
+      32,
+      16,
+      80,
+      88
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~116_164",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -20,
+     "sprites": [
+      "06"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      1,
+      80,
+      16,
+      128,
+      88
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~164_212",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -20,
+     "sprites": [
+      "07"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      48,
+      32
+     ],
+     "empty": true,
+     "sprites": [
+      "08"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      88,
+      48,
+      128
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~212_255",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -20,
+     "sprites": [
+      "08"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      2,
+      48,
+      0,
+      96,
+      32
+     ],
+     "empty": true,
+     "sprites": [
+      "09"
+     ]
+    },
+    {
+     "from": [
+      1,
+      48,
+      88,
+      96,
+      128
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~255_303",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -25,
+     "sprites": [
+      "09"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      2,
+      96,
+      0,
+      128,
+      32
+     ],
+     "empty": true,
+     "sprites": [
+      "0a"
+     ]
+    },
+    {
+     "from": [
+      1,
+      96,
+      88,
+      128,
+      128
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~303_335",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -25,
+     "sprites": [
+      "0a"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      16,
+      104
+     ],
+     "text": "Original Breaking\nBall Acquired!",
+     "style": "a9_tem~335_351",
+     "font": "ttf:rounded:30:0.0:1.0:0.25",
+     "left": -25,
+     "sprites": [
+      "0a"
+     ],
+     "baseline": 66
+    },
+    {
+     "from": [
+      2,
+      16,
+      32,
+      64,
+      104
+     ],
+     "empty": true,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      2,
+      64,
+      32,
+      112,
+      104
+     ],
+     "empty": true,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      2,
+      112,
+      32,
+      128,
+      104
+     ],
+     "empty": true,
+     "sprites": [
+      "0d"
+     ]
+    },
+    {
+     "from": [
+      2,
+      16,
+      104,
+      32,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "0d"
+     ]
+    },
+    {
+     "from": [
+      2,
+      32,
+      104,
+      48,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "0d"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      104,
+      16,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "0d"
+     ]
+    }
+   ],
+   "name": "a9 tem"
+  },
+  {
+   "bank": "z4_smj_0",
+   "palette": 0,
+   "style": "a9_smj_a",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     56,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      0,
+      56,
+      64,
+      128
+     ],
+     "text": "Called Up!",
+     "style": "a9_smj_a~0_64",
+     "font": "ttf:rounded:33:0.0:1.0:0.25",
+     "left": 0,
+     "sprites": [
+      "08"
+     ],
+     "baseline": 46
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      56,
+      64
+     ],
+     "text": "Called Up!",
+     "style": "a9_smj_a~64_119",
+     "font": "ttf:rounded:33:0.0:1.0:0.25",
+     "left": 0,
+     "sprites": [
+      "09"
+     ],
+     "baseline": 44
+    },
+    {
+     "from": [
+      1,
+      56,
+      0,
+      112,
+      64
+     ],
+     "text": "Called Up!",
+     "style": "a9_smj_a~119_175",
+     "font": "ttf:rounded:33:0.0:1.0:0.25",
+     "left": -1,
+     "sprites": [
+      "0a"
+     ],
+     "baseline": 43
+    },
+    {
+     "from": [
+      1,
+      112,
+      0,
+      128,
+      64
+     ],
+     "text": "Called Up!",
+     "style": "a9_smj_a~175_191",
+     "font": "ttf:rounded:33:0.0:1.0:0.25",
+     "left": -1,
+     "sprites": [
+      "0b"
+     ],
+     "baseline": 43
+    },
+    {
+     "from": [
+      1,
+      0,
+      64,
+      40,
+      128
+     ],
+     "text": "Called Up!",
+     "style": "a9_smj_a~191_231",
+     "font": "ttf:rounded:33:0.0:1.0:0.25",
+     "left": -1,
+     "sprites": [
+      "0b"
+     ],
+     "baseline": 43
+    },
+    {
+     "from": [
+      0,
+      64,
+      56,
+      128,
+      128
+     ],
+     "text": "Sent Down",
+     "style": "a9_smj_b~0_61",
+     "font": "ttf:rounded:31:0.0:1.0:0.25",
+     "left": 3,
+     "sprites": [
+      "0c"
+     ],
+     "baseline": 49
+    },
+    {
+     "from": [
+      1,
+      40,
+      64,
+      96,
+      128
+     ],
+     "text": "Sent Down",
+     "style": "a9_smj_b~61_117",
+     "font": "ttf:rounded:31:0.0:1.0:0.25",
+     "left": 0,
+     "sprites": [
+      "0d"
+     ],
+     "baseline": 46
+    },
+    {
+     "from": [
+      1,
+      96,
+      64,
+      128,
+      128
+     ],
+     "text": "Sent Down",
+     "style": "a9_smj_b~117_149",
+     "font": "ttf:rounded:31:0.0:1.0:0.25",
+     "left": 0,
+     "sprites": [
+      "0e"
+     ],
+     "baseline": 46
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      24,
+      64
+     ],
+     "text": "Sent Down",
+     "style": "a9_smj_b~149_172",
+     "font": "ttf:rounded:31:0.0:1.0:0.25",
+     "left": 0,
+     "sprites": [
+      "0e"
+     ],
+     "baseline": 46
+    },
+    {
+     "from": [
+      2,
+      24,
+      0,
+      80,
+      64
+     ],
+     "text": "Sent Down",
+     "style": "a9_smj_b~172_226",
+     "font": "ttf:rounded:31:0.0:1.0:0.25",
+     "left": -1,
+     "sprites": [
+      "0f"
+     ],
+     "baseline": 46
+    },
+    {
+     "from": [
+      2,
+      80,
+      0,
+      128,
+      64
+     ],
+     "text": "Playoffs",
+     "style": "a9_smj_c~0_40",
+     "font": "ttf:rounded:46:0.0:1.0:0.25",
+     "left": 15,
+     "sprites": [
+      "10"
+     ],
+     "baseline": 45
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      8,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      2,
+      8,
+      64,
+      64,
+      128
+     ],
+     "text": "Playoffs",
+     "style": "a9_smj_c~40_85",
+     "font": "ttf:rounded:46:0.0:1.0:0.25",
+     "left": -1,
+     "sprites": [
+      "11"
+     ],
+     "baseline": 46
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      120,
+      128
+     ],
+     "text": "Playoffs",
+     "style": "a9_smj_c~85_138",
+     "font": "ttf:rounded:46:0.0:1.0:0.25",
+     "left": -12,
+     "sprites": [
+      "12"
+     ],
+     "baseline": 45
+    },
+    {
+     "from": [
+      2,
+      120,
+      64,
+      128,
+      128
+     ],
+     "text": "Playoffs",
+     "style": "a9_smj_c~138_146",
+     "font": "ttf:rounded:46:0.0:1.0:0.25",
+     "left": -15,
+     "sprites": [
+      "13"
+     ],
+     "baseline": 46
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      48,
+      64
+     ],
+     "text": "Playoffs",
+     "style": "a9_smj_c~146_193",
+     "font": "ttf:rounded:46:0.0:1.0:0.25",
+     "left": -15,
+     "sprites": [
+      "13"
+     ],
+     "baseline": 46
+    },
+    {
+     "from": [
+      3,
+      48,
+      0,
+      104,
+      64
+     ],
+     "text": "Playoffs",
+     "style": "a9_smj_c~193_249",
+     "font": "ttf:rounded:46:0.0:1.0:0.25",
+     "left": -16,
+     "sprites": [
+      "14"
+     ],
+     "baseline": 48
+    },
+    {
+     "from": [
+      3,
+      104,
+      0,
+      128,
+      64
+     ],
+     "text": "Opening\nDay",
+     "style": "a9_smj_d~0_24",
+     "font": "ttf:narrow:21:0.0:1.0:0.25",
+     "left": 1,
+     "sprites": [
+      "15"
+     ],
+     "baseline": 53
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      32,
+      128
+     ],
+     "text": "Opening\nDay",
+     "style": "a9_smj_d~24_55",
+     "font": "ttf:narrow:21:0.0:1.0:0.25",
+     "left": 1,
+     "sprites": [
+      "15"
+     ],
+     "baseline": 53
+    },
+    {
+     "from": [
+      3,
+      32,
+      64,
+      88,
+      128
+     ],
+     "text": "Opening\nDay",
+     "style": "a9_smj_d~55_109",
+     "font": "ttf:narrow:21:0.0:1.0:0.25",
+     "left": 0,
+     "sprites": [
+      "16"
+     ],
+     "baseline": 53
+    }
+   ],
+   "name": "a9 smj"
+  },
+  {
+   "bank": "y5_smi_0",
+   "palette": 0,
+   "style": "a9_smi_8a",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     14,
+     64,
+     0,
+     128,
+     64
+    ],
+    [
+     14,
+     64,
+     64,
+     72,
+     128
+    ],
+    [
+     14,
+     120,
+     64,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "8a",
+     "text": "Program",
+     "style": "a9_smi_8a",
+     "font": "ttf:narrow:20:0.0:0.68:0.25",
+     "baseline": 2,
+     "pages": [
+      14
+     ]
+    },
+    {
+     "sprite": "8b",
+     "text": "Text",
+     "style": "a9_smi_8b",
+     "font": "ttf:narrow:26:0.0:1.0:0.25",
+     "baseline": 5,
+     "pages": [
+      14
+     ]
+    }
+   ],
+   "name": "a9 smi14"
+  },
+  {
+   "bank": "r3_ai",
+   "palette": 0,
+   "style": "a9_ai_0f",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     7,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Pawapuro 15",
+     "style": "a9_ai_0f",
+     "font": "ttf:narrow:20:0.0:0.85:0.25",
+     "baseline": 28
+    },
+    {
+     "sprite": "39",
+     "text": "Pawapuro 15 Deluxe",
+     "style": "a9_ai_39",
+     "font": "ttf:narrow:16:0.0:0.68:0.25",
+     "baseline": 8
+    },
+    {
+     "sprite": "3a",
+     "text": "Pawapuro Wii",
+     "style": "a9_ai_3a",
+     "font": "ttf:narrow:20:0.0:0.78:0.25",
+     "baseline": 10
+    },
+    {
+     "sprite": "3b",
+     "text": "Pawapuro Wii Deluxe",
+     "style": "a9_ai_3b",
+     "font": "ttf:narrow:15:0.0:0.68:0.25",
+     "baseline": 8
+    }
+   ],
+   "name": "a9 ai"
   }
  ],
  "paint": [
