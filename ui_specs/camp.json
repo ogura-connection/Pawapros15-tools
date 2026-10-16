@@ -911,98 +911,96 @@
      "sprite": "26",
      "text": "Slider",
      "style": "e8_g3_kya00_26_h_m",
-     "font": "ttf:rounded:18:0.0:1.0:0.25",
-     "slices": true,
-     "slice_width": 36,
-     "dy": 1
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 25
     },
     {
      "sprite": "27",
      "text": "Curve",
      "style": "e8_g3_kya00_27_h_m",
-     "font": "ttf:rounded:18:0.0:1.0:0.25",
-     "slices": true,
-     "slice_width": 36,
-     "dy": 0
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 26
     },
     {
      "sprite": "28",
      "text": "Fork",
      "style": "e8_g3_kya00_28_h_m",
-     "font": "ttf:rounded:18:0.0:1.0:0.25",
-     "baseline": 26
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 25
     },
     {
      "sprite": "29",
      "text": "Sinker",
      "style": "e8_g3_kya00_29_h_m",
-     "font": "ttf:narrow:18:0.0:1.0:0.25",
-     "baseline": 26
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 25
     },
     {
      "sprite": "2a",
      "text": "Shuuto",
      "style": "e8_g3_kya00_2a_h",
-     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
      "slices": true,
-     "slice_width": 36,
+     "slice_width": 39,
      "dy": 1
     },
     {
      "sprite": "2b",
      "text": "Fastball",
      "style": "e8_g3_kya00_2b_h_m",
-     "font": "ttf:narrow:18:0.0:0.85:0.25",
-     "baseline": 26
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 0
     },
     {
      "sprite": "2c",
      "text": "Palm",
      "style": "e8_g3_kya00_2c_h_m",
-     "font": "ttf:rounded:18:0.0:1.0:0.25",
-     "baseline": 26
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 24
     },
     {
      "sprite": "2d",
      "text": "Knuckle",
      "style": "e8_g3_kya00_2d_h_m",
-     "font": "ttf:narrow:18:0.0:0.85:0.25",
-     "baseline": 26
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "baseline": 25
     },
     {
      "sprite": "2e",
      "text": "V-Slider",
      "style": "e8_g3_kya00_2e_h_m",
-     "font": "ttf:narrow:18:0.0:0.85:0.25",
-     "baseline": 26
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "baseline": 25
     },
     {
      "sprite": "30",
      "text": "Screwball",
      "style": "e8_g3_kya00_30_h_m",
-     "font": "ttf:narrow:15:0.0:0.85:0.25",
-     "baseline": 24
+     "font": "ttf:narrow:16:0.0:0.85:0.25",
+     "baseline": 25
     },
     {
      "sprite": "31",
      "text": "Slow Curve",
      "style": "e8_g3_kya00_31_h_m",
-     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
      "baseline": 24
     },
     {
      "sprite": "32",
      "text": "H-Slider",
      "style": "e8_g3_kya00_32_h_m",
-     "font": "ttf:narrow:18:0.0:0.85:0.25",
-     "baseline": 26
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
+     "baseline": 25
     },
     {
      "sprite": "33",
      "text": "Changeup",
      "style": "e8_g3_kya00_33_h_m",
-     "font": "ttf:narrow:14:0.0:0.85:0.25",
-     "baseline": 24
+     "font": "ttf:narrow:16:0.0:0.85:0.25",
+     "baseline": 25
     },
     {
      "sprite": "34",
@@ -1015,9 +1013,9 @@
      "sprite": "35",
      "text": "H-Sinker",
      "style": "e8_g3_kya00_35_h_m",
-     "font": "ttf:narrow:17:0.0:0.85:0.25",
+     "font": "ttf:narrow:16:0.0:1.0:0.25",
      "slices": true,
-     "slice_width": 37,
+     "slice_width": 40,
      "dy": 0
     },
     {
@@ -1031,40 +1029,40 @@
      "sprite": "37",
      "text": "Cutter",
      "style": "e8_g3_kya00_37_h",
-     "font": "ttf:rounded:18:0.0:0.85:0.3",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
-     "slice_width": 36,
+     "slice_width": 37,
      "dy": 0
     },
     {
      "sprite": "38",
      "text": "Circle Change",
-     "style": "e8_g3_kya00_38_h_s",
-     "font": "ttf:narrow:10:0.0:0.92:0.2",
+     "style": "e8_g3_kya00_38_h_m",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
      "baseline": 22
     },
     {
      "sprite": "39",
      "text": "H-Shuuto",
      "style": "e8_g3_kya00_39_h_m",
-     "font": "ttf:narrow:16:0.0:0.85:0.25",
+     "font": "ttf:narrow:16:0.0:0.92:0.25",
      "baseline": 25
     },
     {
      "sprite": "3a",
      "text": "Drop Curve",
      "style": "e8_g3_kya00_3a_h_m",
-     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
      "baseline": 24
     },
     {
      "sprite": "3b",
      "text": "Knuckle Curve",
-     "style": "e8_g3_kya00_3b_h_s",
-     "font": "ttf:narrow:10:0.0:0.85:0.2",
+     "style": "e8_g3_kya00_3b_h_m",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
      "slices": true,
-     "slice_width": 36,
-     "dy": 0
+     "slice_width": 40,
+     "dy": -1
     },
     {
      "sprite": "3c",
@@ -1079,49 +1077,49 @@
      "sprite": "3d",
      "text": "Yone Ball",
      "style": "e8_g3_kya00_3d_h_m",
-     "font": "ttf:narrow:15:0.0:0.85:0.25",
-     "baseline": 24
+     "font": "ttf:narrow:16:0.0:0.92:0.25",
+     "baseline": 25
     },
     {
      "sprite": "3e",
      "text": "Yoshi Ball",
      "style": "e8_g3_kya00_3e_h_m",
-     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "font": "ttf:narrow:16:0.0:0.85:0.25",
      "slices": true,
-     "slice_width": 37,
-     "dy": -1
+     "slice_width": 40,
+     "dy": 0
     },
     {
      "sprite": "3f",
      "text": "Emo Ball",
      "style": "e8_g3_kya00_3f_h_m",
-     "font": "ttf:narrow:17:0.0:0.85:0.25",
-     "baseline": 26
+     "font": "ttf:narrow:16:0.0:0.92:0.25",
+     "baseline": 25
     },
     {
      "sprite": "40",
      "text": "Razor Shuuto",
      "style": "e8_g3_kya00_40_h_m",
-     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
      "slices": true,
-     "slice_width": 37,
-     "dy": -1
+     "slice_width": 40,
+     "dy": 0
     },
     {
      "sprite": "7b",
      "text": "Moving FB",
      "style": "e8_g3_kya00_7b_h_m",
-     "font": "ttf:narrow:14:0.0:0.85:0.25",
-     "baseline": 23
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "baseline": 24
     },
     {
      "sprite": "7c",
      "text": "2-Seamer",
-     "style": "e8_g3_kya00_7c_h_m",
-     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "style": "e8_g3_kya00_7c_h",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
      "slices": true,
-     "slice_width": 36,
-     "dy": -1
+     "slice_width": 40,
+     "dy": 0
     }
    ],
    "name": "g3_kya00 pitches",
@@ -1138,19 +1136,33 @@
      12,
      0,
      32,
-     32,
+     40,
      128
     ],
     [
      12,
+     104,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     40,
      32,
-     32,
-     96,
+     104,
      56
     ],
     [
      12,
-     32,
+     96,
+     0,
+     104,
+     32
+    ],
+    [
+     12,
+     40,
      56,
      48,
      80
@@ -1159,15 +1171,22 @@
      24,
      0,
      72,
-     112,
-     120
+     128,
+     128
     ],
     [
      25,
      0,
      0,
-     88,
+     128,
      32
+    ],
+    [
+     25,
+     112,
+     32,
+     128,
+     80
     ]
    ],
    "labels": [
@@ -1180,9 +1199,9 @@
       104
      ],
      "text": "COM Level",
-     "style": "e8_g3_kya00_52_24.0.72_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22,
+     "style": "e8_g3_kya00_52_24.0.72_h_m",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 24,
      "sprites": [
       "52"
      ]
@@ -1196,9 +1215,9 @@
       128
      ],
      "text": "Errors",
-     "style": "e8_g3_kya00_52_24.0.104_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 18,
+     "style": "e8_g3_kya00_52_24.0.104_h_m",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 20,
      "sprites": [
       "52"
      ]
@@ -1238,9 +1257,9 @@
       32
      ],
      "text": "Wind",
-     "style": "e8_g3_kya00_52_25.0.0_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22,
+     "style": "e8_g3_kya00_52_25.0.0_h_m",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 24,
      "sprites": [
       "52"
      ]
@@ -1254,9 +1273,9 @@
       32
      ],
      "text": "Weather",
-     "style": "e8_g3_kya00_52_25.32.0_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 22,
+     "style": "e8_g3_kya00_52_25.32.0_h_m",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 24,
      "sprites": [
       "52"
      ]
@@ -1270,9 +1289,9 @@
       56
      ],
      "text": "Hot",
-     "style": "e8_g3_kya00_70_12.0.32_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 17,
+     "style": "e8_g3_kya00_70_12.0.32_h_m",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 19,
      "sprites": [
       "70"
      ]
@@ -1286,9 +1305,9 @@
       104
      ],
      "text": "Good",
-     "style": "e8_g3_kya00_70_12.0.80_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 17,
+     "style": "e8_g3_kya00_70_12.0.80_h_m",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 19,
      "sprites": [
       "70"
      ]
@@ -1302,9 +1321,9 @@
       56
      ],
      "text": "Normal",
-     "style": "e8_g3_kya00_70_12.48.32_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 17,
+     "style": "e8_g3_kya00_70_12.48.32_h_m",
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 19,
      "sprites": [
       "70"
      ]
@@ -1318,9 +1337,9 @@
       128
      ],
      "text": "Poor",
-     "style": "e8_g3_kya00_70_12.0.104_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 17,
+     "style": "e8_g3_kya00_70_12.0.104_h_m",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 19,
      "sprites": [
       "70"
      ]
@@ -1334,9 +1353,9 @@
       80
      ],
      "text": "Cold",
-     "style": "e8_g3_kya00_70_12.0.56_h_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.2",
-     "baseline": 17,
+     "style": "e8_g3_kya00_70_12.0.56_h_m",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 19,
      "sprites": [
       "70"
      ]
