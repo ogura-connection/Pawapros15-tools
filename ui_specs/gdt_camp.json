@@ -1,0 +1,417 @@
+{
+ "arc": "gdt_camp.arc",
+ "repack": [
+  {
+   "bank": "h3_rd_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     56,
+     128
+    ],
+    [
+     1,
+     56,
+     0,
+     128,
+     48
+    ],
+    [
+     2,
+     56,
+     104,
+     128,
+     128
+    ],
+    [
+     2,
+     112,
+     0,
+     128,
+     24
+    ],
+    [
+     2,
+     120,
+     56,
+     128,
+     104
+    ],
+    [
+     2,
+     104,
+     88,
+     120,
+     104
+    ],
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     104,
+     64,
+     128,
+     96
+    ],
+    [
+     4,
+     0,
+     32,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": "High Score",
+     "style": "e8_h3_rd_0_28_1.0.0_h_m",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      8,
+      24,
+      32,
+      48
+     ],
+     "text": "pts",
+     "style": "e8_h3_rd_0_28_1.8.24_h_m",
+     "font": "ttf:narrow:14:0.0:0.92:0.25",
+     "baseline": 18
+    },
+    {
+     "from": [
+      1,
+      80,
+      0,
+      128,
+      24
+     ],
+     "text": "Score",
+     "style": "e8_h3_rd_0_29_1.80.0-1.0.24_h~0_48",
+     "font": "ttf:narrow:18:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": -2
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      8,
+      48
+     ],
+     "text": "Score",
+     "style": "e8_h3_rd_0_29_1.80.0-1.0.24_h~48_4096",
+     "font": "ttf:narrow:18:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": -2
+    },
+    {
+     "from": [
+      1,
+      32,
+      24,
+      72,
+      48
+     ],
+     "text": "Left:",
+     "style": "e8_h3_rd_0_2a_1.32.24_h",
+     "font": "ttf:narrow:18:0.0:0.92:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      72,
+      24,
+      96,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      96,
+      24,
+      128,
+      48
+     ],
+     "text": "Bonus",
+     "style": "e8_h3_rd_0_2b_1.96.24-3.0.96_h~0_32",
+     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "baseline": 21,
+     "left": -2
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      40,
+      120
+     ],
+     "text": "Bonus",
+     "style": "e8_h3_rd_0_2b_1.96.24-3.0.96_h~32_4096",
+     "font": "ttf:rounded:19:0.0:0.92:0.3",
+     "baseline": 21,
+     "left": -2
+    },
+    {
+     "from": [
+      3,
+      40,
+      96,
+      96,
+      120
+     ],
+     "text": "Time:",
+     "style": "e8_h3_rd_0_2c_3.40.96_h",
+     "font": "ttf:narrow:18:0.0:1.0:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      3,
+      104,
+      64,
+      128,
+      88
+     ],
+     "text": "s",
+     "style": "e8_h3_rd_0_2c_3.104.64_h",
+     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "baseline": 20
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      56,
+      72
+     ],
+     "text": "Pass Line",
+     "style": "e8_h3_rd_0_2d_1.0.48-3.96.96_h~0_56",
+     "font": "ttf:narrow:18:0.0:0.85:0.3",
+     "baseline": 20,
+     "left": 1
+    },
+    {
+     "from": [
+      3,
+      96,
+      96,
+      128,
+      120
+     ],
+     "text": "Pass Line",
+     "style": "e8_h3_rd_0_2d_1.0.48-3.96.96_h~56_4096",
+     "font": "ttf:narrow:18:0.0:0.85:0.3",
+     "baseline": 20,
+     "left": 1
+    },
+    {
+     "sprite": "07",
+     "text": "Batting Result",
+     "style": "e8_h3_rd_0_07_h_s",
+     "font": "ttf:narrow:10:0.0:0.85:0.2",
+     "baseline": 26
+    },
+    {
+     "sprite": "33",
+     "text": "Pitching",
+     "style": "e8_h3_rd_0_33_h_s",
+     "font": "ttf:narrow:11:0.0:0.85:0.2",
+     "baseline": 15
+    },
+    {
+     "sprite": "34",
+     "text": "Mixed",
+     "style": "e8_h3_rd_0_34_h",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "35",
+     "text": "In Order",
+     "style": "e8_h3_rd_0_35_h",
+     "font": "ttf:rounded:18:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "sprite": "36",
+     "text": "2P Control",
+     "style": "e8_h3_rd_0_36_h",
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "baseline": 18
+    }
+   ],
+   "name": "h3_rd_0",
+   "share": true
+  }
+ ],
+ "paint": [
+  {
+   "bank": "h3_rd_0",
+   "page": 3,
+   "rect": [
+    4,
+    5,
+    36,
+    23
+   ],
+   "text": "Early",
+   "style": "e8_h3_plate",
+   "copy": [
+    3,
+    4,
+    5,
+    6,
+    23
+   ],
+   "font": "ttf:narrow:8:0.0:0.92:0.1"
+  },
+  {
+   "bank": "h3_rd_0",
+   "page": 3,
+   "rect": [
+    44,
+    5,
+    76,
+    23
+   ],
+   "text": "Late",
+   "style": "e8_h3_plate",
+   "copy": [
+    3,
+    44,
+    5,
+    46,
+    23
+   ],
+   "font": "ttf:narrow:8:0.0:0.92:0.1"
+  },
+  {
+   "bank": "h3_rd_0",
+   "page": 3,
+   "rect": [
+    84,
+    5,
+    116,
+    23
+   ],
+   "text": "A Bit\nEarly",
+   "style": "e8_h3_plate",
+   "copy": [
+    3,
+    84,
+    5,
+    86,
+    23
+   ],
+   "font": "ttf:narrow:7:0.0:1.0:0.1"
+  },
+  {
+   "bank": "h3_rd_0",
+   "page": 3,
+   "rect": [
+    36,
+    37,
+    68,
+    55
+   ],
+   "text": "Pulled",
+   "style": "e8_h3_plate",
+   "copy": [
+    3,
+    36,
+    37,
+    38,
+    55
+   ],
+   "font": "ttf:narrow:8:0.0:0.92:0.1"
+  },
+  {
+   "bank": "h3_rd_0",
+   "page": 3,
+   "rect": [
+    76,
+    37,
+    108,
+    55
+   ],
+   "text": "Opposite",
+   "style": "e8_h3_plate",
+   "copy": [
+    3,
+    76,
+    37,
+    78,
+    55
+   ],
+   "font": "ttf:narrow:8:0.0:0.92:0.1"
+  },
+  {
+   "bank": "h3_rd_0",
+   "page": 3,
+   "rect": [
+    28,
+    69,
+    60,
+    87
+   ],
+   "text": "Dead\nCenter",
+   "style": "e8_h3_plate",
+   "copy": [
+    3,
+    28,
+    69,
+    30,
+    87
+   ],
+   "font": "ttf:narrow:7:0.0:1.0:0.1"
+  },
+  {
+   "bank": "h3_rd_0",
+   "page": 3,
+   "rect": [
+    68,
+    69,
+    100,
+    87
+   ],
+   "text": "Sweet\nSpot",
+   "style": "e8_h3_plate",
+   "copy": [
+    3,
+    68,
+    69,
+    70,
+    87
+   ],
+   "font": "ttf:narrow:7:0.0:1.0:0.1"
+  }
+ ]
+}
