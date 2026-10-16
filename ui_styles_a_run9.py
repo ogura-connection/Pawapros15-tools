@@ -78,3 +78,15 @@ STYLES["a9_tem"] = ringfill([9, 9, 8, 8, 7, 7], [1, 1, 13, 13, 14], [15])
 STYLES["a9_snm"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4], [4, 4])
 # styles_scs_main_win.txt
 
+# styles_scs_rens.txt
+STYLES["a9_smr_68"] = ringfill([13, 13, 13, 13, 13, 13], [2, 2], [2])
+STYLES["a9_smr_69"] = ringfill([8, 8, 8, 8, 8, 8], [15, 15])
+STYLES["a9_smr_6a"] = ringfill([8, 8, 8, 8, 8, 8], [15, 15])
+STYLES["a9_smr_6b"] = ringfill([8, 8, 8, 8, 8, 8], [15, 15])
+STYLES["a9_smr_6c"] = ringfill([8, 8, 8, 8, 8, 8], [15, 15])
+STYLES["a9_smr_6d"] = ringfill([8, 8, 8, 8, 8, 8], [15, 15])
+STYLES["a9_smr_6e"] = ringfill([6, 6, 6, 6, 6, 6], [15, 15])
+STYLES["a9_smr_6f"] = ringfill([7, 7, 7, 7, 7, 7], [15, 15, 15])
+STYLES["a9_smr_70"] = ringfill([8, 8, 8, 8, 8, 8], [15, 15])
+STYLES["a9_smr_71"] = ringfill([7, 7, 7, 7, 7, 7], [15, 15])
+STYLES["a9_smr_72"] = ringfill([7, 7, 7, 7, 7, 7], [15, 15])
