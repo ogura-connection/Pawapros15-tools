@@ -1,0 +1,63 @@
+{
+ "arc": "chmp_c.arc",
+ "repack": [
+  {
+   "bank": "r3_tts_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     72,
+     80
+    ],
+    [
+     2,
+     72,
+     0,
+     128,
+     40
+    ],
+    [
+     2,
+     0,
+     112,
+     72,
+     128
+    ],
+    [
+     2,
+     104,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     64,
+     80,
+     72,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Special Rules",
+     "style": "f8_r3_tts_0_01",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 69,
+     "dy": 2
+    }
+   ],
+   "name": "r3_tts_0",
+   "share": true,
+   "split": true
+  }
+ ]
+}

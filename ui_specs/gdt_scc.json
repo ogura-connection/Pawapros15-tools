@@ -1,0 +1,39 @@
+{
+ "arc": "gdt_scc.arc",
+ "repack": [
+  {
+   "bank": "t4_gdt_scc_dummy_opd",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     112,
+     0,
+     128,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "16",
+     "text": "All-Star\nTeam",
+     "style": "f8_t4_gdt_scc_dummy_opd_16",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 30
+    }
+   ],
+   "name": "t4_gdt_scc_dummy_opd",
+   "share": true
+  }
+ ]
+}

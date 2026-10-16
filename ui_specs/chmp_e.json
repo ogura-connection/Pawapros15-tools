@@ -1,0 +1,290 @@
+{
+ "arc": "chmp_e.arc",
+ "repack": [
+  {
+   "bank": "r3_ted",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     104,
+     96
+    ],
+    [
+     0,
+     104,
+     24,
+     128,
+     128
+    ],
+    [
+     0,
+     0,
+     96,
+     32,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     80,
+     128
+    ],
+    [
+     3,
+     88,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     80,
+     56,
+     88,
+     128
+    ],
+    [
+     3,
+     80,
+     0,
+     88,
+     48
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Final",
+     "style": "f8_r3_ted_00",
+     "font": "ttf:rounded:25:0.0:1.0:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "01",
+     "text": "Semifinal",
+     "style": "f8_r3_ted_01",
+     "font": "ttf:narrow:25:0.0:0.85:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "0b",
+     "text": "vs",
+     "style": "f8_r3_ted_0b",
+     "font": "ttf:rounded:19:0.0:1.0:0.3",
+     "baseline": 10
+    },
+    {
+     "sprite": "18",
+     "text": "Champion",
+     "style": "f8_r3_ted_18",
+     "font": "ttf:rounded:40:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 45,
+     "dy": 5
+    },
+    {
+     "sprite": "19",
+     "text": "Round",
+     "style": "f8_r3_ted_19",
+     "font": "ttf:narrow:24:0.0:0.85:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "1e",
+     "text": "Walkover",
+     "style": "f8_r3_ted_1e",
+     "font": "ttf:narrow:22:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 49,
+     "dy": 0
+    },
+    {
+     "sprite": "1f",
+     "text": "Withdrew",
+     "style": "f8_r3_ted_1f",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 23
+    },
+    {
+     "from": [
+      0,
+      0,
+      32,
+      88,
+      64
+     ],
+     "text": "Semifinal",
+     "style": "f8_r3_ted_02_r0_0_32",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "baseline": 24,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Game",
+     "style": "f8_r3_ted_02_r0_0_96",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 19,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      0,
+      64,
+      64,
+      128,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      64,
+      96
+     ],
+     "text": "Round",
+     "style": "f8_r3_ted_1a_r0_0_64",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "baseline": 24,
+     "sprites": [
+      "1a"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Game",
+     "style": "f8_r3_ted_1a_r0_0_96",
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 19,
+     "sprites": [
+      "1a"
+     ]
+    },
+    {
+     "from": [
+      0,
+      64,
+      64,
+      128,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "1a"
+     ]
+    },
+    {
+     "from": [
+      4,
+      120,
+      80,
+      128,
+      104
+     ],
+     "text": "(",
+     "style": "f8_r3_ted_1b_r4_120_80",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 18,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      120,
+      104
+     ],
+     "text": "hits: win)",
+     "style": "f8_r3_ted_1b_r4_0_80",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 6,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      120,
+      80,
+      128,
+      104
+     ],
+     "text": "(",
+     "style": "f8_r3_ted_1c_r4_120_80",
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 18,
+     "sprites": [
+      "1c"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      104,
+      120,
+      128
+     ],
+     "text": "RPS win)",
+     "style": "f8_r3_ted_1c_r4_0_104",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 6,
+     "sprites": [
+      "1c"
+     ]
+    }
+   ],
+   "name": "r3_ted",
+   "share": true
+  }
+ ]
+}
