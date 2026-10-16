@@ -60,7 +60,7 @@ def rows_fill(rgb, box, cv=None, clear=None):
     rgb[y0:y1, x0:x1] = a[:, None, :] * (1 - t) + b[:, None, :] * t
 
 
-def mask_fill(rgb, box, strong, grow_n=4, vfrom=None):
+def mask_fill(rgb, box, strong, grow_n=4, vfrom=None, smooth=0, wy=0.4):
     """Erase the Japanese lettering of `box` without touching the rest of the picture: the pixels `strong(rgb)` marks
     (saturated body / outline colours), grown by `grow_n`, are rebuilt row by row run by run from the pixels left and
     right of each run. Returns the erased mask."""
@@ -93,6 +93,11 @@ def mask_fill(rgb, box, strong, grow_n=4, vfrom=None):
             a, b = r[0] - 1, r[-1] + 1
             t = (np.arange(len(r)) + 1)[:, None] / (len(r) + 1)
             rgb[y, r] = src[y, a] * (1 - t) + src[y, min(b, rgb.shape[1] - 1)] * t
+    if smooth:                                      # relax the rebuilt pixels towards their neighbours (rows weigh 1, columns wy)
+        for _ in range(smooth):
+            up = np.roll(rgb, 1, 0); dn = np.roll(rgb, -1, 0); lf = np.roll(rgb, 1, 1); rt = np.roll(rgb, -1, 1)
+            new = (lf + rt + wy * (up + dn)) / (2 + 2 * wy)
+            rgb[full] = new[full]
     return full
 
 
@@ -281,11 +286,11 @@ def ml_strong(px):
 
 def _ml(rgb, cv, colours, changed, clear):
     box = (140, 4, 378, 84)
-    m = mask_fill(rgb, box, ml_strong, 6)
+    m = mask_fill(rgb, box, ml_strong, 10, smooth=120, wy=0.5)
     changed |= m
-    m2, cap = fit_text("My Life", 226, 70, 9, squeeze=0.85, bold=0.9)
-    painted = draw_logo(rgb, m2, 259, 40, [(0, "ffee20"), (0.6, "ffd810"), (1, "ffc000")],
-                        [("#1038a8", 2, True), ("#18b4f4", 3, True), ("#ffffff", 4, True, 0.55)])
+    m2, cap = fit_text("My Life", 232, 80, 11, squeeze=0.85, bold=0.9)
+    painted = draw_logo(rgb, m2, 259, 44, [(0, "ffee20"), (0.6, "ffd810"), (1, "ffc000")],
+                        [("#1038a8", 2, True), ("#18b4f4", 3, True), ("#ffffff", 3, True, 0.7), ("#ffffff", 3, True, 0.35)])
     changed |= painted
 
 
