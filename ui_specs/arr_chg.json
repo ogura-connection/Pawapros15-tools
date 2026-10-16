@@ -1,0 +1,678 @@
+{
+ "arc": "arr_chg.arc",
+ "repack": [
+  {
+   "bank": "s3_id",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     16,
+     128,
+     64
+    ],
+    [
+     3,
+     0,
+     64,
+     24,
+     128
+    ],
+    [
+     4,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     64,
+     72,
+     80
+    ],
+    [
+     4,
+     120,
+     56,
+     128,
+     80
+    ],
+    [
+     5,
+     0,
+     40,
+     128,
+     128
+    ],
+    [
+     5,
+     88,
+     0,
+     128,
+     40
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     16,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     104,
+     16
+    ],
+    [
+     10,
+     120,
+     0,
+     128,
+     16
+    ],
+    [
+     11,
+     40,
+     32,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     64,
+     40,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     32,
+     32
+    ],
+    [
+     11,
+     112,
+     0,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "06",
+     "text": "Pitchers",
+     "style": "e7_s3_id_06_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 34
+    },
+    {
+     "sprite": "07",
+     "text": "Fielders",
+     "style": "e7_s3_id_07_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 34
+    },
+    {
+     "sprite": "08",
+     "text": "Remove\nfrom Team",
+     "style": "e7_s3_id_08_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 34
+    },
+    {
+     "sprite": "09",
+     "text": "Cancel",
+     "style": "e7_s3_id_09_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 32
+    },
+    {
+     "sprite": "17",
+     "text": "On/Off",
+     "style": "e7_s3_id_17_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 6
+    },
+    {
+     "sprite": "18",
+     "text": "Off",
+     "style": "e7_s3_id_18_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 6
+    },
+    {
+     "sprite": "34",
+     "text": "Limit On",
+     "style": "e7_s3_id_34_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 6
+    },
+    {
+     "sprite": "35",
+     "text": "Limit Off",
+     "style": "e7_s3_id_35_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 6
+    },
+    {
+     "sprite": "00",
+     "text": "Switch by Group",
+     "style": "e7_s3_id_00_36_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 32,
+     "pages": [
+      10
+     ],
+     "palettes": [
+      36
+     ]
+    },
+    {
+     "sprite": "00",
+     "text": "Current Team Status",
+     "style": "e7_s3_id_00_33_s",
+     "font": "ttf:rounded:9:0.0:0.92:0.2",
+     "baseline": 70,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      33
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      80,
+      48,
+      96
+     ],
+     "text": "Import",
+     "style": "e7_s3_id_00_4.0.80_h_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.1",
+     "baseline": 14
+    },
+    {
+     "from": [
+      4,
+      48,
+      80,
+      80,
+      96
+     ],
+     "text": "Pitchers",
+     "style": "e7_s3_id_00_4.48.80_h_s",
+     "font": "ttf:narrow:8:0.0:0.85:0.1",
+     "baseline": 13,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      4,
+      80,
+      80,
+      112,
+      96
+     ],
+     "text": "Fielders",
+     "style": "e7_s3_id_00_4.80.80_h_s",
+     "font": "ttf:rounded:7:0.0:0.85:0.1",
+     "baseline": 12,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      4,
+      112,
+      80,
+      128,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      96,
+      112
+     ],
+     "text": "Import Limit",
+     "style": "e7_s3_id_00_4.0.96_h_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.1",
+     "baseline": 14
+    },
+    {
+     "from": [
+      4,
+      96,
+      96,
+      112,
+      112
+     ],
+     "text": ":",
+     "style": "e7_s3_id_00_4.96.96_h_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.1",
+     "baseline": 14,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      112,
+      96,
+      128
+     ],
+     "text": "OK for Pennant",
+     "style": "e7_s3_id_00_4.0.112-4.96.112_h_s~0_92",
+     "font": "ttf:rounded:9:0.0:1.0:0.1",
+     "baseline": 14,
+     "left": 13,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "from": [
+      4,
+      96,
+      112,
+      128,
+      128
+     ],
+     "text": "OK for Pennant",
+     "style": "e7_s3_id_00_4.0.112-4.96.112_h_s~92_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.1",
+     "baseline": 14,
+     "left": 13,
+     "sprites": [
+      "00"
+     ]
+    },
+    {
+     "sprite": "33",
+     "text": "Imports (Pennant)",
+     "style": "e7_s3_id_33_33_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 70,
+     "pages": [
+      3
+     ],
+     "palettes": [
+      33
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Choose players",
+     "style": "e7_s3_id_2c_7.0.0-7.0.32_s~0_128",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 81,
+     "sprites": [
+      "2c"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Choose players",
+     "style": "e7_s3_id_2c_7.0.0-7.0.32_s~128_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 81,
+     "sprites": [
+      "2c"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "to remove from",
+     "style": "e7_s3_id_2c_7.0.64-7.0.96_s~0_128",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 56,
+     "sprites": [
+      "2c"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "to remove from",
+     "style": "e7_s3_id_2c_7.0.64-7.0.96_s~128_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 56,
+     "sprites": [
+      "2c"
+     ]
+    },
+    {
+     "from": [
+      7,
+      80,
+      96,
+      128,
+      128
+     ],
+     "text": "the Arrange Team",
+     "style": "e7_s3_id_2c_7.80.96-8.0.0_s~0_48",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 61,
+     "sprites": [
+      "2c"
+     ]
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "the Arrange Team",
+     "style": "e7_s3_id_2c_7.80.96-8.0.0_s~48_176",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 61,
+     "sprites": [
+      "2c"
+     ]
+    },
+    {
+     "from": [
+      8,
+      0,
+      32,
+      56,
+      64
+     ],
+     "text": "the Arrange Team",
+     "style": "e7_s3_id_2c_7.80.96-8.0.0_s~176_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 61,
+     "sprites": [
+      "2c"
+     ]
+    },
+    {
+     "from": [
+      9,
+      88,
+      0,
+      128,
+      32
+     ],
+     "text": "1st Team needs at least 9 fielders",
+     "style": "e7_s3_id_2d_9.88.0-9.0.32_s~0_40",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "left": 69
+    },
+    {
+     "from": [
+      9,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "1st Team needs at least 9 fielders",
+     "style": "e7_s3_id_2d_9.88.0-9.0.32_s~40_162",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "left": 69
+    },
+    {
+     "from": [
+      11,
+      32,
+      64,
+      128,
+      96
+     ],
+     "text": "1st Team needs at least 9 fielders",
+     "style": "e7_s3_id_2d_9.88.0-9.0.32_s~162_258",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "left": 69
+    },
+    {
+     "from": [
+      11,
+      0,
+      96,
+      72,
+      128
+     ],
+     "text": "1st Team needs at least 9 fielders",
+     "style": "e7_s3_id_2d_9.88.0-9.0.32_s~258_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "left": 69
+    },
+    {
+     "from": [
+      9,
+      88,
+      0,
+      128,
+      32
+     ],
+     "text": "1st Team needs at least 1 pitcher",
+     "style": "e7_s3_id_2e_9.88.0-9.0.32_s~0_40",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "left": 70
+    },
+    {
+     "from": [
+      9,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "1st Team needs at least 1 pitcher",
+     "style": "e7_s3_id_2e_9.88.0-9.0.32_s~40_168",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "left": 70
+    },
+    {
+     "from": [
+      9,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "1st Team needs at least 1 pitcher",
+     "style": "e7_s3_id_2e_9.88.0-9.0.32_s~168_296",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "left": 70
+    },
+    {
+     "from": [
+      9,
+      0,
+      96,
+      40,
+      128
+     ],
+     "text": "1st Team needs at least 1 pitcher",
+     "style": "e7_s3_id_2e_9.88.0-9.0.32_s~296_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "left": 70
+    },
+    {
+     "from": [
+      9,
+      40,
+      96,
+      128,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      11,
+      0,
+      64,
+      32,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      56,
+      32,
+      128,
+      64
+     ],
+     "text": "Remove this player?",
+     "style": "e7_s3_id_2f_8.56.32-8.0.64_s~0_72",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 67,
+     "sprites": [
+      "2f"
+     ]
+    },
+    {
+     "from": [
+      8,
+      0,
+      64,
+      128,
+      96
+     ],
+     "text": "Remove this player?",
+     "style": "e7_s3_id_2f_8.56.32-8.0.64_s~72_200",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 67,
+     "sprites": [
+      "2f"
+     ]
+    },
+    {
+     "from": [
+      8,
+      0,
+      96,
+      56,
+      128
+     ],
+     "text": "Remove this player?",
+     "style": "e7_s3_id_2f_8.56.32-8.0.64_s~200_4096",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 19,
+     "left": 67,
+     "sprites": [
+      "2f"
+     ]
+    },
+    {
+     "from": [
+      8,
+      56,
+      96,
+      128,
+      128
+     ],
+     "text": "Yes",
+     "style": "e7_s3_id_2f_8.56.96_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 20,
+     "sprites": [
+      "2f"
+     ]
+    },
+    {
+     "sprite": "2f",
+     "text": "No",
+     "style": "e7_s3_id_2f_s",
+     "font": "ttf:rounded:9:0.0:1.0:0.2",
+     "baseline": 34,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "name": "s3_id",
+   "share": true
+  }
+ ]
+}
