@@ -26,6 +26,9 @@ def d9_ellipse(plate, core, W, H, rims=(4, 2)):
         return out, base + oy
     return style
 
+# ---- m_logo
+STYLES["d9_ml_btn"] = ringfill([8, 8, 8, 8, 8, 8], [1, 1, 1])
+STYLES["d9_ml_msg_logo"] = ui_type.logo(fill=[8, 8, 10, 11, 14, 14], outline=1, white=6, rim=6, shadow=[], soft=[])
 # ---- main_prg
 STYLES["d9_np_pos"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8], [8])
 STYLES["d9_np_possm"] = ringfill([15] * 6, [8], [8])
