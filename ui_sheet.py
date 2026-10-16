@@ -104,10 +104,17 @@ def draw(item, img, project=None):
     area[:] = area * (1 - a) + col * a
 
 
-def paint(entry, d, banks, patches, project=None, pictures=None):
+def paint(entry, d, banks, patches, project=None, pictures=None, pages=None):
+    """pages: ui_labels.render's {(bank name, page): index array} of pages already redrawn (repack groups): painted on
+    top of those and written back there, so a page is never patched twice (the later patch would undo the other)."""
     b = bank_by_pages(banks, entry["pages"])
     cols = entry.get("cols", 4)
     idx = canvas(d, b, cols)
+    mine = {}
+    for (name, k), arr in (pages or {}).items():
+        if U.bank_named(banks, name) is b:
+            mine[k] = name
+            idx[(k // cols) * PAGE:(k // cols + 1) * PAGE, (k % cols) * PAGE:(k % cols + 1) * PAGE] = arr
     colours = U.palette_colours(d, b["pal"])[:256, :3].astype(float)
     used = sorted(set(np.unique(idx).tolist()) - {0, 1, 2})
     img = colours[idx].copy()
@@ -136,6 +143,9 @@ def paint(entry, d, banks, patches, project=None, pictures=None):
     for k, (off, size) in enumerate(b["pages"]):
         ry, rx = (k // cols) * PAGE, (k % cols) * PAGE
         page = new[ry:ry + PAGE, rx:rx + PAGE]
+        if k in mine:
+            pages[(mine[k], k)] = page.copy()
+            continue
         if not np.array_equal(page, idx[ry:ry + PAGE, rx:rx + PAGE]):
             try:
                 patches.append((off, U.encode_indices(page, size, U.page_bits(d, off, size))))

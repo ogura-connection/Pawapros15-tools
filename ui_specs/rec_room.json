@@ -1794,6 +1794,3931 @@
    "sprites": "g3_gkn#12"
   },
   {
+   "bank": "g2_ck#0",
+   "palette": 0,
+   "style": "b8_ck55",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     3,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     3,
+     96,
+     96,
+     128,
+     104
+    ],
+    [
+     4,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     4,
+     64,
+     32,
+     112,
+     64
+    ],
+    [
+     4,
+     120,
+     0,
+     128,
+     32
+    ],
+    [
+     4,
+     112,
+     56,
+     128,
+     64
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     5,
+     0,
+     112,
+     88,
+     128
+    ],
+    [
+     5,
+     96,
+     64,
+     128,
+     88
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "Fielder\nRecords",
+     "style": "b8_ck55",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "pages": [
+      4
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "2d",
+     "text": "Fielder\nList",
+     "style": "b8_ck55",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "pages": [
+      4
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "03",
+     "text": "Pitcher\nRecords",
+     "style": "b8_ck41",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "pages": [
+      4
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "2e",
+     "text": "Pitcher\nList",
+     "style": "b8_ck41",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "pages": [
+      4
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "04",
+     "text": "Individual\nTitles",
+     "style": "b8_ck39",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "pages": [
+      5,
+      4
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "2f",
+     "text": "Titles",
+     "style": "b8_ck39",
+     "font": "ttf:rounded:17:0.0:1.0:0.25",
+     "baseline": 28,
+     "pages": [
+      5
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Monthly\nRecords",
+     "style": "b8_ck58",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "pages": [
+      5
+     ],
+     "valign": "centre"
+    },
+    {
+     "sprite": "30",
+     "text": "Stats\nby Year",
+     "style": "b8_ck58",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "pages": [
+      5,
+      4
+     ],
+     "valign": "centre"
+    }
+   ],
+   "name": "ck_btn",
+   "share": true,
+   "sprites": "g2_ck#1"
+  },
+  {
+   "bank": "g2_ck#0",
+   "palette": 0,
+   "style": "b8_ckt30",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "08",
+     "text": "Single-Game Records",
+     "style": "b8_ckt30",
+     "font": "ttf:narrow:14:0.0:0.7:0.25",
+     "baseline": 95,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "sprite": "09",
+     "text": "W-L by Game Type",
+     "style": "b8_ckt31",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 93,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "Since 2005",
+     "style": "b8_ckt30",
+     "font": "ttf:narrow:19:0.0:1.0:0.25",
+     "baseline": 97,
+     "pages": [
+      9
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "Since 1950",
+     "style": "b8_ckt31",
+     "font": "ttf:narrow:19:0.0:1.0:0.25",
+     "baseline": 97,
+     "pages": [
+      9
+     ]
+    }
+   ],
+   "name": "ck_tab",
+   "share": true,
+   "sprites": "g2_ck#1"
+  },
+  {
+   "bank": "g2_ck#0",
+   "palette": 0,
+   "style": "b8_ck4",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     4,
+     120,
+     0,
+     128,
+     64
+    ],
+    [
+     4,
+     112,
+     32,
+     120,
+     64
+    ],
+    [
+     5,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     96,
+     128
+    ],
+    [
+     7,
+     96,
+     96,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      5,
+      0,
+      64,
+      24,
+      88
+     ],
+     "empty": true,
+     "sprites": [
+      "13"
+     ]
+    },
+    {
+     "from": [
+      5,
+      24,
+      64,
+      48,
+      88
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "13"
+     ]
+    },
+    {
+     "from": [
+      5,
+      48,
+      64,
+      72,
+      88
+     ],
+     "text": "L",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "13"
+     ]
+    },
+    {
+     "from": [
+      5,
+      72,
+      64,
+      96,
+      88
+     ],
+     "text": "D",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "13"
+     ]
+    },
+    {
+     "sprite": "17",
+     "text": "Top Win Streak",
+     "style": "b8_ck4",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 30,
+     "dy": 1
+    },
+    {
+     "from": [
+      6,
+      0,
+      72,
+      24,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "18"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      72,
+      48,
+      96
+     ],
+     "text": "wins",
+     "style": "b8_ck4",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 14,
+     "sprites": [
+      "18"
+     ]
+    },
+    {
+     "sprite": "19",
+     "text": "Top Loss Streak",
+     "style": "b8_ck5",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 32,
+     "dy": 1
+    },
+    {
+     "from": [
+      6,
+      0,
+      72,
+      24,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "1a"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      72,
+      72,
+      96
+     ],
+     "text": "losses",
+     "style": "b8_ck5",
+     "font": "ttf:narrow:8:0.0:0.92:0.25",
+     "baseline": 14,
+     "sprites": [
+      "1a"
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      24,
+      120
+     ],
+     "text": "Cur",
+     "style": "b8_ck7",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      96,
+      48,
+      120
+     ],
+     "text": "rent",
+     "style": "b8_ck7",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "1b"
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Win Streak",
+     "style": "b8_ck7",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "1d",
+     "text": "Most Hits",
+     "style": "b8_ck0",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 37,
+     "dy": 0
+    },
+    {
+     "sprite": "1e",
+     "text": "Most HRs",
+     "style": "b8_ck0",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 38,
+     "dy": 0
+    },
+    {
+     "sprite": "1f",
+     "text": "Most Runs",
+     "style": "b8_ck0",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 41,
+     "dy": 0
+    },
+    {
+     "sprite": "20",
+     "text": "Most Runs Allowed",
+     "style": "b8_ck1",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 57,
+     "dy": 0
+    },
+    {
+     "sprite": "21",
+     "text": "Most GIDP",
+     "style": "b8_ck1",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 42,
+     "dy": 1
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      24,
+      24
+     ],
+     "text": "HR",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "22"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      0,
+      48,
+      24
+     ],
+     "text": "/",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "22"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      0,
+      72,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "22"
+     ]
+    },
+    {
+     "from": [
+      6,
+      72,
+      0,
+      96,
+      24
+     ],
+     "text": "vs",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "22"
+     ]
+    },
+    {
+     "from": [
+      6,
+      72,
+      72,
+      96,
+      96
+     ],
+     "text": "pts",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "23"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      0,
+      48,
+      24
+     ],
+     "text": "/",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "23"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      0,
+      72,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "23"
+     ]
+    },
+    {
+     "from": [
+      6,
+      72,
+      0,
+      96,
+      24
+     ],
+     "text": "vs",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "23"
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      24,
+      24
+     ],
+     "text": "HR",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "24"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      0,
+      72,
+      24
+     ],
+     "text": "Day",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "centre_x": 22,
+     "sprites": [
+      "24"
+     ]
+    },
+    {
+     "from": [
+      6,
+      104,
+      80,
+      128,
+      104
+     ],
+     "empty": true,
+     "sprites": [
+      "24"
+     ]
+    },
+    {
+     "from": [
+      6,
+      72,
+      0,
+      96,
+      24
+     ],
+     "text": "vs",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "24"
+     ]
+    },
+    {
+     "from": [
+      6,
+      72,
+      72,
+      96,
+      96
+     ],
+     "text": "pts",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "25"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      0,
+      72,
+      24
+     ],
+     "text": "Day",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "centre_x": 22,
+     "sprites": [
+      "25"
+     ]
+    },
+    {
+     "from": [
+      6,
+      104,
+      80,
+      128,
+      104
+     ],
+     "empty": true,
+     "sprites": [
+      "25"
+     ]
+    },
+    {
+     "from": [
+      6,
+      72,
+      0,
+      96,
+      24
+     ],
+     "text": "vs",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16,
+     "sprites": [
+      "25"
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Scored First",
+     "style": "b8_ck2",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 16,
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "26"
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "Comebacks",
+     "style": "b8_ck2",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 45,
+     "dy": 1,
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "27"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      24,
+      48,
+      48
+     ],
+     "text": "L",
+     "style": "b8_ck5",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "27"
+     ]
+    },
+    {
+     "sprite": "28",
+     "text": "Walk-Offs",
+     "style": "b8_ck2",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 38,
+     "dy": 1,
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "28"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      24,
+      48,
+      48
+     ],
+     "text": "L",
+     "style": "b8_ck5",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "28"
+     ]
+    },
+    {
+     "sprite": "29",
+     "text": "Shutouts",
+     "style": "b8_ck2",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 1,
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "29"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      24,
+      72,
+      48
+     ],
+     "text": "D",
+     "style": "b8_ck6",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "29"
+     ]
+    },
+    {
+     "sprite": "2a",
+     "text": "1-Run Games",
+     "style": "b8_ck2",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 34,
+     "dy": 1,
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "2a"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      24,
+      48,
+      48
+     ],
+     "text": "L",
+     "style": "b8_ck5",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "2a"
+     ]
+    },
+    {
+     "sprite": "2b",
+     "text": "Extra Innings",
+     "style": "b8_ck2",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 50,
+     "dy": 3,
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "2b"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      24,
+      48,
+      48
+     ],
+     "text": "L",
+     "style": "b8_ck5",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "2b"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      24,
+      72,
+      48
+     ],
+     "text": "D",
+     "style": "b8_ck6",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "2b"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Pennants",
+     "style": "b8_ck27",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 26,
+     "sprites": [
+      "33"
+     ]
+    },
+    {
+     "from": [
+      5,
+      88,
+      88,
+      128,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "33"
+     ]
+    },
+    {
+     "from": [
+      8,
+      72,
+      24,
+      128,
+      64
+     ],
+     "text": "Japan Titles",
+     "style": "b8_ck27",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 26,
+     "centre_x": 64,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      8,
+      72,
+      64,
+      128,
+      104
+     ],
+     "empty": true,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      6,
+      112,
+      0,
+      128,
+      40
+     ],
+     "empty": true,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "from": [
+      5,
+      88,
+      88,
+      128,
+      128
+     ],
+     "empty": true,
+     "sprites": [
+      "34"
+     ]
+    },
+    {
+     "sprite": "35",
+     "text": "yr",
+     "style": "b8_ck2",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "baseline": 265
+    },
+    {
+     "sprite": "36",
+     "text": "Career",
+     "style": "b8_ck3",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 298
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "37"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      24,
+      48,
+      48
+     ],
+     "text": "L",
+     "style": "b8_ck5",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "37"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      24,
+      72,
+      48
+     ],
+     "text": "D",
+     "style": "b8_ck6",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "37"
+     ]
+    },
+    {
+     "sprite": "38",
+     "text": "Career HRs",
+     "style": "b8_ck3",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 46,
+     "dy": 1
+    },
+    {
+     "sprite": "39",
+     "text": "HR",
+     "style": "b8_ck7",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 332
+    },
+    {
+     "sprite": "3a",
+     "text": "Longest Win Streak",
+     "style": "b8_ck0",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 57,
+     "dy": 2
+    },
+    {
+     "sprite": "3b",
+     "text": "wins",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 367
+    },
+    {
+     "sprite": "3c",
+     "text": "Top Loss Streak",
+     "style": "b8_ck1",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 53,
+     "dy": 1
+    },
+    {
+     "sprite": "3d",
+     "text": "losses",
+     "style": "b8_ck5",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 401
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      24,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ck4",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "from": [
+      6,
+      24,
+      24,
+      48,
+      48
+     ],
+     "text": "L",
+     "style": "b8_ck5",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "from": [
+      6,
+      48,
+      24,
+      72,
+      48
+     ],
+     "text": "D",
+     "style": "b8_ck6",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "3e"
+     ]
+    },
+    {
+     "sprite": "3f",
+     "text": "Career Win %",
+     "style": "b8_ck3",
+     "font": "ttf:rounded:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 52,
+     "dy": 1
+    }
+   ],
+   "name": "ck_head",
+   "share": true,
+   "sprites": "g2_ck#1"
+  },
+  {
+   "bank": "g3_ft#10",
+   "palette": 0,
+   "style": "b8_ft16",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     72,
+     128
+    ],
+    [
+     2,
+     72,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     120,
+     0,
+     128,
+     72
+    ],
+    [
+     2,
+     88,
+     72,
+     96,
+     96
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     40,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     80,
+     40
+    ],
+    [
+     4,
+     104,
+     24,
+     128,
+     40
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Fielder Stats",
+     "style": "b8_ft27",
+     "font": "ttf:narrow:17:0.0:0.7:0.25",
+     "slices": true,
+     "slice_width": 44,
+     "dy": 1
+    },
+    {
+     "sprite": "02",
+     "text": "Pitcher Stats",
+     "style": "b8_ft27",
+     "font": "ttf:narrow:15:0.0:0.78:0.25",
+     "slices": true,
+     "slice_width": 44,
+     "dy": 1
+    },
+    {
+     "sprite": "03",
+     "text": "Team Stats",
+     "style": "b8_ft27",
+     "font": "ttf:narrow:19:0.0:0.7:0.25",
+     "slices": true,
+     "slice_width": 43,
+     "dy": 1
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      112,
+      48
+     ],
+     "text": "By Year",
+     "style": "b8_ft20",
+     "font": "ttf:narrow:22:0.0:1.0:0.25",
+     "baseline": 32,
+     "sprites": [
+      "06"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      112,
+      96
+     ],
+     "text": "Team",
+     "style": "b8_ft22",
+     "font": "ttf:narrow:31:0.0:1.0:0.25",
+     "baseline": 38,
+     "sprites": [
+      "06"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      80,
+      48
+     ],
+     "text": "Stats",
+     "style": "b8_ft20",
+     "font": "ttf:narrow:28:0.0:0.78:0.25",
+     "baseline": 35,
+     "sprites": [
+      "06"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      112,
+      48
+     ],
+     "text": "By Year",
+     "style": "b8_ft20",
+     "font": "ttf:narrow:22:0.0:1.0:0.25",
+     "baseline": 32,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      80,
+      96
+     ],
+     "text": "Fielder",
+     "style": "b8_ft21",
+     "font": "ttf:narrow:27:0.0:0.7:0.25",
+     "baseline": 37,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      80,
+      48
+     ],
+     "text": "Stats",
+     "style": "b8_ft20",
+     "font": "ttf:narrow:28:0.0:0.78:0.25",
+     "baseline": 35,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      112,
+      48
+     ],
+     "text": "By Year",
+     "style": "b8_ft20",
+     "font": "ttf:narrow:22:0.0:1.0:0.25",
+     "baseline": 32,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "Pitcher",
+     "style": "b8_ft23",
+     "font": "ttf:narrow:24:0.0:0.7:0.25",
+     "baseline": 31,
+     "centre_x": 40,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      80,
+      112
+     ],
+     "empty": true,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      80,
+      48
+     ],
+     "text": "Stats",
+     "style": "b8_ft20",
+     "font": "ttf:narrow:28:0.0:0.78:0.25",
+     "baseline": 35,
+     "sprites": [
+      "0f"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      128,
+      24
+     ],
+     "text": "Year",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      24,
+      128,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "L",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      64,
+      48
+     ],
+     "text": "D",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      64,
+      24
+     ],
+     "text": "W%",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "07"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      128,
+      24
+     ],
+     "text": "Year",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      24,
+      128,
+      48
+     ],
+     "text": "W",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "L",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      48,
+      128,
+      72
+     ],
+     "text": "H",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      72,
+      24
+     ],
+     "text": "HR",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      72,
+      128,
+      96
+     ],
+     "text": "SAC",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      96,
+      64,
+      120
+     ],
+     "text": "SB",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      1,
+      64,
+      0,
+      128,
+      24
+     ],
+     "text": "Year",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 17,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      72,
+      48
+     ],
+     "text": "ERA",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 19,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      64,
+      72
+     ],
+     "text": "R",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      72,
+      72
+     ],
+     "text": "K",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      72,
+      72,
+      96
+     ],
+     "text": "HA",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      4,
+      80,
+      40,
+      128,
+      64
+     ],
+     "text": "HRA",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      72,
+      120
+     ],
+     "text": "BB",
+     "style": "b8_ft16",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 18,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "sprite": "0a",
+     "text": "Total",
+     "style": "b8_ft13",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 424,
+     "pages": [
+      1
+     ]
+    },
+    {
+     "sprite": "13",
+     "text": "Total",
+     "style": "b8_ft13",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 424,
+     "pages": [
+      1
+     ]
+    }
+   ],
+   "name": "ft",
+   "share": true,
+   "sprites": "g3_nen#11"
+  },
+  {
+   "bank": "g3_syo#9",
+   "palette": 0,
+   "style": "b8_syo1",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     88,
+     128,
+     128
+    ],
+    [
+     0,
+     80,
+     56,
+     128,
+     88
+    ],
+    [
+     0,
+     32,
+     56,
+     56,
+     88
+    ],
+    [
+     1,
+     56,
+     0,
+     64,
+     128
+    ],
+    [
+     1,
+     120,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     112,
+     120,
+     128
+    ],
+    [
+     6,
+     120,
+     120,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "05",
+     "text": "Current Tally",
+     "style": "b8_syo2",
+     "font": "ttf:narrow:21:0.0:0.78:0.25",
+     "baseline": 125
+    },
+    {
+     "sprite": "06",
+     "text": "Results",
+     "style": "b8_syo2",
+     "font": "ttf:rounded:21:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 35,
+     "dy": 0
+    },
+    {
+     "sprite": "0a",
+     "text": "Pitcher",
+     "style": "b8_syo1",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0b",
+     "text": "Catcher",
+     "style": "b8_syo1",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "0c",
+     "text": "Shortstop",
+     "style": "b8_syo1",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "0d",
+     "text": "1st Base",
+     "style": "b8_syo1",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "0e",
+     "text": "2nd Base",
+     "style": "b8_syo1",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "0f",
+     "text": "3rd Base",
+     "style": "b8_syo1",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "baseline": 7
+    },
+    {
+     "sprite": "10",
+     "text": "Outfield",
+     "style": "b8_syo1",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "11",
+     "text": "Manager's Pick",
+     "style": "b8_syo1",
+     "font": "ttf:narrow:14:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "1e",
+     "text": "Starter",
+     "style": "b8_syo1",
+     "font": "ttf:narrow:15:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 31,
+     "dy": 1
+    },
+    {
+     "sprite": "1f",
+     "text": "Relief",
+     "style": "b8_syo1",
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 23,
+     "dy": 0
+    },
+    {
+     "sprite": "20",
+     "text": "Closer",
+     "style": "b8_syo1",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 24,
+     "dy": 2
+    },
+    {
+     "sprite": "21",
+     "text": "DH",
+     "style": "b8_syo1",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
+     "baseline": 6
+    },
+    {
+     "sprite": "12",
+     "text": "votes",
+     "style": "b8_syo0",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 23,
+     "palettes": [
+      0
+     ]
+    }
+   ],
+   "name": "syo",
+   "share": true,
+   "sprites": "g3_ft#10"
+  },
+  {
+   "bank": "g3_npk#20",
+   "palette": 0,
+   "style": "b8_npk24",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     0,
+     48,
+     128,
+     96
+    ],
+    [
+     8,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     22,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     22,
+     104,
+     32,
+     128,
+     64
+    ],
+    [
+     36,
+     0,
+     32,
+     128,
+     128
+    ],
+    [
+     36,
+     120,
+     0,
+     128,
+     16
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "9c",
+     "text": "Yomiuri",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "9d",
+     "text": "Chunichi",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "9e",
+     "text": "Hiroshima Toyo",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "9f",
+     "text": "Tokyo Yakult",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a0",
+     "text": "Yokohama",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a1",
+     "text": "Hanshin",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a2",
+     "text": "Tohoku Rakuten",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a3",
+     "text": "Hokkaido Nippon-Ham",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a4",
+     "text": "Saitama Seibu",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a5",
+     "text": "Orix",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a6",
+     "text": "Chiba Lotte",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a7",
+     "text": "Fukuoka SoftBank",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "a8",
+     "text": "Shonan",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "ab",
+     "text": "Central League",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "ac",
+     "text": "Pacific League",
+     "style": "b8_npk24",
+     "font": "ttf:rounded:7:0.0:1.0:0.25",
+     "baseline": 12,
+     "palettes": [
+      24
+     ]
+    }
+   ],
+   "name": "npk_cap",
+   "share": true,
+   "sprites": "g3_ki#21"
+  },
+  {
+   "bank": "g3_npk#20",
+   "palette": 0,
+   "style": "b8_npk20",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     88,
+     48,
+     128,
+     96
+    ],
+    [
+     5,
+     112,
+     16,
+     128,
+     48
+    ],
+    [
+     5,
+     16,
+     0,
+     32,
+     8
+    ],
+    [
+     5,
+     16,
+     120,
+     32,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     8,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     8,
+     112,
+     80,
+     128,
+     96
+    ],
+    [
+     10,
+     112,
+     40,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     120,
+     112,
+     128
+    ],
+    [
+     13,
+     112,
+     0,
+     128,
+     80
+    ],
+    [
+     13,
+     104,
+     104,
+     128,
+     128
+    ],
+    [
+     13,
+     120,
+     80,
+     128,
+     104
+    ],
+    [
+     16,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     17,
+     0,
+     0,
+     104,
+     128
+    ],
+    [
+     17,
+     104,
+     0,
+     128,
+     80
+    ],
+    [
+     17,
+     104,
+     112,
+     128,
+     128
+    ],
+    [
+     17,
+     120,
+     96,
+     128,
+     112
+    ],
+    [
+     21,
+     0,
+     96,
+     88,
+     128
+    ],
+    [
+     21,
+     120,
+     32,
+     128,
+     64
+    ],
+    [
+     21,
+     120,
+     96,
+     128,
+     128
+    ],
+    [
+     27,
+     112,
+     48,
+     128,
+     128
+    ],
+    [
+     27,
+     104,
+     24,
+     128,
+     40
+    ],
+    [
+     27,
+     96,
+     48,
+     112,
+     72
+    ],
+    [
+     27,
+     104,
+     96,
+     112,
+     128
+    ],
+    [
+     29,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     30,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     31,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     33,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     34,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     35,
+     40,
+     32,
+     128,
+     128
+    ],
+    [
+     35,
+     0,
+     64,
+     40,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "113",
+     "text": "Records Within Reach",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:20:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 82,
+     "dy": 0
+    },
+    {
+     "sprite": "114",
+     "text": "Records Achieved",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:20:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 101,
+     "dy": 0
+    },
+    {
+     "sprite": "116",
+     "text": "Single-Game Records",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:19:0.0:0.78:0.25",
+     "slices": true,
+     "slice_width": 91,
+     "dy": 3
+    },
+    {
+     "sprite": "117",
+     "text": "W-L by Game Type",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:20:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 105,
+     "dy": 3
+    },
+    {
+     "sprite": "11a",
+     "text": "Injured Player Exception",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:21:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 87,
+     "dy": 4
+    },
+    {
+     "sprite": "8f",
+     "text": "Season Records",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:22:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 67,
+     "dy": 1
+    },
+    {
+     "sprite": "93",
+     "text": "League Records",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:20:0.0:0.78:0.25",
+     "slices": true,
+     "slice_width": 72,
+     "dy": 3
+    },
+    {
+     "sprite": "94",
+     "text": "1st/2nd Team Moves",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:19:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 108,
+     "dy": 1
+    },
+    {
+     "sprite": "95",
+     "text": "Signings & Departures",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:17:0.0:0.7:0.25",
+     "slices": true,
+     "slice_width": 76,
+     "dy": 3
+    },
+    {
+     "sprite": "96",
+     "text": "Injury Report",
+     "style": "b8_npk20",
+     "font": "ttf:narrow:21:0.0:0.78:0.25",
+     "baseline": 36
+    },
+    {
+     "sprite": "97",
+     "text": "FA News",
+     "style": "b8_npk20",
+     "font": "ttf:rounded:21:0.0:1.0:0.25",
+     "baseline": 36
+    },
+    {
+     "sprite": "91",
+     "text": "All-Time Records",
+     "style": "b8_npk21",
+     "font": "ttf:narrow:19:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 37,
+     "dy": 1
+    },
+    {
+     "sprite": "92",
+     "text": "All-Time Pro Records",
+     "style": "b8_npk21",
+     "font": "ttf:narrow:21:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 125,
+     "dy": 2
+    },
+    {
+     "sprite": "90",
+     "text": "Player List",
+     "style": "b8_npk22",
+     "font": "ttf:rounded:21:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 30,
+     "dy": 4
+    },
+    {
+     "sprite": "70",
+     "text": "Records",
+     "style": "b8_npk65",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 40
+    },
+    {
+     "sprite": "71",
+     "text": "Player List",
+     "style": "b8_npk66",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 40
+    }
+   ],
+   "name": "npk_title",
+   "share": true,
+   "sprites": "g3_ki#21"
+  },
+  {
+   "bank": "g3_npk#20",
+   "palette": 0,
+   "style": "b8_npk36",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     0,
+     24,
+     128,
+     48
+    ],
+    [
+     8,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     8,
+     112,
+     80,
+     128,
+     96
+    ],
+    [
+     13,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     13,
+     112,
+     0,
+     128,
+     80
+    ],
+    [
+     19,
+     88,
+     0,
+     128,
+     32
+    ],
+    [
+     19,
+     112,
+     96,
+     128,
+     128
+    ],
+    [
+     23,
+     96,
+     96,
+     128,
+     128
+    ],
+    [
+     23,
+     112,
+     48,
+     128,
+     64
+    ],
+    [
+     24,
+     96,
+     16,
+     128,
+     48
+    ],
+    [
+     24,
+     112,
+     48,
+     128,
+     64
+    ],
+    [
+     24,
+     112,
+     80,
+     128,
+     96
+    ],
+    [
+     26,
+     0,
+     0,
+     104,
+     128
+    ],
+    [
+     26,
+     104,
+     0,
+     128,
+     96
+    ],
+    [
+     26,
+     104,
+     112,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "108",
+     "text": "Season Records",
+     "style": "b8_npk28",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 48,
+     "dy": 1
+    },
+    {
+     "sprite": "12",
+     "text": "Team Records",
+     "style": "b8_npk28",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "baseline": 94
+    },
+    {
+     "sprite": "109",
+     "text": "Records by Year",
+     "style": "b8_npk36",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "10a",
+     "text": "Team Stats",
+     "style": "b8_npk36",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 26,
+     "dy": 1
+    },
+    {
+     "sprite": "b1",
+     "text": "Career Records",
+     "style": "b8_npk36",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "b2",
+     "text": "Season Records",
+     "style": "b8_npk36",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "b3",
+     "text": "Standings",
+     "style": "b8_npk36",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "b4",
+     "text": "Head-to-Head",
+     "style": "b8_npk36",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "b5",
+     "text": "Player Stats",
+     "style": "b8_npk36",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "b6",
+     "text": "Team Records",
+     "style": "b8_npk36",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "b7",
+     "text": "Awards",
+     "style": "b8_npk36",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "b8",
+     "text": "News",
+     "style": "b8_npk36",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "b9",
+     "text": "Other",
+     "style": "b8_npk36",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 16
+    },
+    {
+     "sprite": "ba",
+     "text": "Other News",
+     "style": "b8_npk36",
+     "font": "ttf:rounded:10:0.0:1.0:0.25",
+     "baseline": 16
+    }
+   ],
+   "name": "npk_head",
+   "share": true,
+   "sprites": "g3_ki#21"
+  },
+  {
+   "bank": "g3_npk#20",
+   "palette": 0,
+   "style": "b8_npk39",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     11,
+     112,
+     0,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     120,
+     112,
+     128
+    ],
+    [
+     12,
+     112,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     120,
+     112,
+     128
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     24
+    ],
+    [
+     15,
+     0,
+     112,
+     128,
+     128
+    ],
+    [
+     15,
+     0,
+     96,
+     48,
+     112
+    ],
+    [
+     15,
+     112,
+     72,
+     128,
+     112
+    ],
+    [
+     15,
+     96,
+     96,
+     112,
+     112
+    ],
+    [
+     15,
+     120,
+     48,
+     128,
+     72
+    ],
+    [
+     17,
+     104,
+     80,
+     128,
+     128
+    ],
+    [
+     17,
+     0,
+     120,
+     104,
+     128
+    ],
+    [
+     23,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     23,
+     0,
+     96,
+     96,
+     128
+    ],
+    [
+     23,
+     96,
+     120,
+     128,
+     128
+    ],
+    [
+     24,
+     0,
+     0,
+     96,
+     128
+    ],
+    [
+     24,
+     96,
+     40,
+     128,
+     128
+    ],
+    [
+     24,
+     96,
+     0,
+     128,
+     16
+    ],
+    [
+     25,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     26,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     26,
+     104,
+     96,
+     128,
+     120
+    ],
+    [
+     32,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     32,
+     48,
+     40,
+     128,
+     72
+    ],
+    [
+     32,
+     32,
+     56,
+     48,
+     72
+    ],
+    [
+     32,
+     0,
+     56,
+     8,
+     72
+    ],
+    [
+     36,
+     0,
+     48,
+     128,
+     128
+    ],
+    [
+     36,
+     48,
+     16,
+     128,
+     48
+    ],
+    [
+     36,
+     0,
+     16,
+     48,
+     32
+    ],
+    [
+     36,
+     120,
+     0,
+     128,
+     16
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "10b",
+     "text": "Head-to-Head",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:8:0.0:0.92:0.25",
+     "baseline": 11
+    },
+    {
+     "sprite": "10c",
+     "text": "Fielder Stats",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "10d",
+     "text": "Pitcher Stats",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 39,
+     "dy": 1
+    },
+    {
+     "sprite": "10e",
+     "text": "Standings",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "10f",
+     "text": "Standings (Interleague)",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 31,
+     "dy": 2
+    },
+    {
+     "sprite": "110",
+     "text": "Fielder Rankings",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "111",
+     "text": "Pitcher Rankings",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 52,
+     "dy": 2
+    },
+    {
+     "sprite": "112",
+     "text": "MVP & Rookie & Sawamura",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 48,
+     "dy": 0
+    },
+    {
+     "sprite": "118",
+     "text": "Climax Series Central",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 57,
+     "dy": 0
+    },
+    {
+     "sprite": "119",
+     "text": "Climax Series Pacific",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "11b",
+     "text": "Injured Player Exception",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "be",
+     "text": "Season",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 11
+    },
+    {
+     "sprite": "bf",
+     "text": "Interleague",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 11
+    },
+    {
+     "sprite": "c0",
+     "text": "Fielder Records",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c1",
+     "text": "Pitcher Records",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c2",
+     "text": "Fielder Career Records",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c3",
+     "text": "Pitcher Career Records",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c4",
+     "text": "Fielder TOP30",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c5",
+     "text": "Pitcher TOP30",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c6",
+     "text": "Records by Year",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c7",
+     "text": "Monthly Team Records",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c8",
+     "text": "Single-Game Records",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "c9",
+     "text": "W-L by Game Type",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "ca",
+     "text": "Stats by Year",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "cb",
+     "text": "Standings & Records",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "cc",
+     "text": "Japan Series Records",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "cd",
+     "text": "Climax Series Records",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 68,
+     "dy": 1
+    },
+    {
+     "sprite": "ce",
+     "text": "Konami Cup Asia Series Records",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 49,
+     "dy": 1
+    },
+    {
+     "sprite": "cf",
+     "text": "Titles",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d0",
+     "text": "Monthly MVP",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d1",
+     "text": "Best Nine",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d2",
+     "text": "Golden Glove",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 11
+    },
+    {
+     "sprite": "d3",
+     "text": "Records Within Reach",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d4",
+     "text": "Records Achieved",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d5",
+     "text": "Injury Report",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d6",
+     "text": "Signings & Departures",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:9:0.0:0.85:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d7",
+     "text": "1st/2nd Team Moves",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d8",
+     "text": "Player Directory",
+     "style": "b8_npk39",
+     "font": "ttf:narrow:8:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "d9",
+     "text": "FA News",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:9:0.0:1.0:0.25",
+     "baseline": 12
+    },
+    {
+     "sprite": "da",
+     "text": "All-Star Fan Vote",
+     "style": "b8_npk39",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 11
+    }
+   ],
+   "name": "npk_menu",
+   "share": true,
+   "sprites": "g3_ki#21"
+  },
+  {
+   "bank": "g3_npk#20",
+   "palette": 0,
+   "style": "b8_npk18",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     9,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     9,
+     80,
+     0,
+     104,
+     24
+    ],
+    [
+     15,
+     48,
+     72,
+     128,
+     112
+    ],
+    [
+     15,
+     0,
+     72,
+     48,
+     96
+    ],
+    [
+     15,
+     0,
+     16,
+     128,
+     24
+    ],
+    [
+     15,
+     104,
+     48,
+     128,
+     72
+    ],
+    [
+     21,
+     120,
+     32,
+     128,
+     64
+    ],
+    [
+     21,
+     120,
+     96,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      9,
+      80,
+      0,
+      104,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "10"
+     ]
+    },
+    {
+     "from": [
+      9,
+      80,
+      0,
+      104,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "11"
+     ]
+    },
+    {
+     "from": [
+      9,
+      80,
+      0,
+      104,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "11"
+     ]
+    },
+    {
+     "from": [
+      15,
+      48,
+      96,
+      64,
+      112
+     ],
+     "text": "/",
+     "style": "b8_npk18",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12,
+     "sprites": [
+      "29"
+     ]
+    },
+    {
+     "from": [
+      15,
+      64,
+      96,
+      80,
+      112
+     ],
+     "text": "/",
+     "style": "b8_npk18",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 12,
+     "sprites": [
+      "29"
+     ]
+    },
+    {
+     "from": [
+      15,
+      80,
+      96,
+      96,
+      112
+     ],
+     "empty": true,
+     "sprites": [
+      "29"
+     ]
+    },
+    {
+     "sprite": "4d",
+     "text": "(Mon)",
+     "style": "b8_npk18",
+     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 13,
+     "dy": 2
+    },
+    {
+     "sprite": "4e",
+     "text": "(Tue)",
+     "style": "b8_npk18",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 13,
+     "dy": 1
+    },
+    {
+     "sprite": "4f",
+     "text": "(Wed)",
+     "style": "b8_npk18",
+     "font": "ttf:narrow:12:0.0:0.92:0.25",
+     "slices": true,
+     "slice_width": 13,
+     "dy": 1
+    },
+    {
+     "sprite": "50",
+     "text": "(Thu)",
+     "style": "b8_npk18",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 13,
+     "dy": 1
+    },
+    {
+     "sprite": "51",
+     "text": "(Fri)",
+     "style": "b8_npk18",
+     "font": "ttf:rounded:12:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 13,
+     "dy": 2
+    },
+    {
+     "sprite": "52",
+     "text": "(Sat)",
+     "style": "b8_npk18",
+     "font": "ttf:narrow:12:0.0:1.0:0.25",
+     "slices": true,
+     "slice_width": 13,
+     "dy": 1
+    },
+    {
+     "sprite": "53",
+     "pieces": [
+      {
+       "text": "(",
+       "palette": 18
+      },
+      {
+       "text": "Sun",
+       "palette": 17
+      },
+      {
+       "text": ")",
+       "palette": 18
+      }
+     ],
+     "style": "b8_npk18",
+     "text": "(Sun)",
+     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "baseline": 40
+    }
+   ],
+   "name": "npk_misc",
+   "share": true,
+   "sprites": "g3_ki#21"
+  },
+  {
+   "bank": "g3_npk#20",
+   "palette": 0,
+   "style": "b8_npk18",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      7,
+      64,
+      0,
+      96,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      40,
+      24
+     ],
+     "centre_x": 32,
+     "sprites": [
+      "5a"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      16,
+      24
+     ],
+     "centre_x": 21
+    },
+    {
+     "from": [
+      7,
+      0,
+      24,
+      24,
+      48
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "5b"
+     ]
+    },
+    {
+     "from": [
+      7,
+      24,
+      24,
+      48,
+      48
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "5c"
+     ]
+    },
+    {
+     "from": [
+      7,
+      48,
+      24,
+      72,
+      48
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "5d"
+     ]
+    },
+    {
+     "from": [
+      7,
+      72,
+      24,
+      96,
+      48
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "5e"
+     ]
+    },
+    {
+     "from": [
+      7,
+      96,
+      24,
+      120,
+      48
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "5f"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      24,
+      72
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "60"
+     ]
+    },
+    {
+     "from": [
+      7,
+      24,
+      48,
+      48,
+      72
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "61"
+     ]
+    },
+    {
+     "from": [
+      7,
+      48,
+      48,
+      72,
+      72
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "62"
+     ]
+    },
+    {
+     "from": [
+      7,
+      72,
+      48,
+      96,
+      72
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "63"
+     ]
+    },
+    {
+     "from": [
+      7,
+      96,
+      48,
+      120,
+      72
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "64"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      72,
+      24,
+      96
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "65"
+     ]
+    },
+    {
+     "from": [
+      7,
+      24,
+      72,
+      48,
+      96
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "66"
+     ]
+    },
+    {
+     "from": [
+      7,
+      48,
+      72,
+      72,
+      96
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "67"
+     ]
+    },
+    {
+     "from": [
+      7,
+      72,
+      72,
+      96,
+      96
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "68"
+     ]
+    },
+    {
+     "from": [
+      7,
+      96,
+      72,
+      120,
+      96
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "69"
+     ]
+    },
+    {
+     "from": [
+      7,
+      0,
+      96,
+      24,
+      120
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "6a"
+     ]
+    },
+    {
+     "from": [
+      7,
+      24,
+      96,
+      48,
+      120
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "6b"
+     ]
+    },
+    {
+     "from": [
+      7,
+      48,
+      96,
+      72,
+      120
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "6c"
+     ]
+    },
+    {
+     "from": [
+      7,
+      72,
+      96,
+      96,
+      120
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "6d"
+     ]
+    },
+    {
+     "from": [
+      7,
+      96,
+      96,
+      120,
+      120
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "6e"
+     ]
+    },
+    {
+     "from": [
+      7,
+      40,
+      0,
+      64,
+      24
+     ],
+     "centre_x": 24,
+     "sprites": [
+      "6f"
+     ]
+    }
+   ],
+   "name": "npk_year",
+   "share": true,
+   "sprites": "g3_ki#21"
+  },
+  {
    "bank": "g2_km#2",
    "palette": 0,
    "style": "c8_000",
@@ -7679,6 +11604,50 @@
    "name": "g3_sm",
    "share": true,
    "sprites": "g3_top#4"
+  }
+ ],
+ "sheet": [
+  {
+   "pages": "tex_g3_ft0",
+   "cols": 4,
+   "items": [
+    {
+     "box": [
+      24,
+      138,
+      341,
+      210
+     ],
+     "bg": "rows",
+     "clear_ends": true
+    },
+    {
+     "box": [
+      24,
+      138,
+      341,
+      210
+     ],
+     "bg": "keep",
+     "text": "All-Star Fan Vote",
+     "font": "ttf:rounded:38:0.0:0.8:0.3",
+     "centre": [
+      182,
+      172
+     ],
+     "colour": "#ff9c29",
+     "rings": [
+      "#942000",
+      "#942000",
+      "#ffffff"
+     ],
+     "shadow": [
+      "#942000",
+      1,
+      2
+     ]
+    }
+   ]
   }
  ]
 }

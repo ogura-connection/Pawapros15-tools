@@ -415,7 +415,7 @@ def render(spec, d, banks, project=None):
                                 "page %d x %d y %d" % (lab["page"], ox, oy), 0))
     for entry in spec.get("sheet", ()):             # lettering painted across the pages of one picture
         import ui_sheet
-        ui_sheet.paint(entry, d, banks, render.patches, project)
+        ui_sheet.paint(entry, d, banks, render.patches, project, pages=pages)
     for lab in spec.get("labels", ()):
         b = U.bank_named(banks, lab["bank"])
         key = (lab["bank"], lab["page"])
