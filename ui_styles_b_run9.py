@@ -38,9 +38,15 @@ def load(arcname, bankref, sprite):
     return cv, U.palette_colours(d, b["pal"])[:256, :3].astype(float), ps, (x0, y0)
 
 
-def rows_fill(rgb, box):
-    """Rebuild box (x0, y0, x1, y1) row by row between the pixel left of it and the one right of it."""
+def rows_fill(rgb, box, cv=None, clear=None):
+    """Rebuild box (x0, y0, x1, y1) row by row between the pixel left of it and the one right of it. With cv and a
+    bool array `clear`: rows whose two end pixels are transparent are flagged in `clear` (they end up transparent
+    unless lettering is drawn on them)."""
     x0, y0, x1, y1 = box
+    if cv is not None:
+        for y in range(y0, y1):
+            if cv[y, x0 - 1] == 0 and cv[y, x1] == 0:
+                clear[y, x0:x1] = True
     a, b = rgb[y0:y1, x0 - 1], rgb[y0:y1, x1]
     t = (np.arange(x1 - x0) + 1)[None, :, None] / (x1 - x0 + 1)
     rgb[y0:y1, x0:x1] = a[:, None, :] * (1 - t) + b[:, None, :] * t
@@ -85,11 +91,13 @@ def draw_logo(rgb, mask, cx, cy, fill, rings, plate_down=None, shadow=None, ligh
         base = plate_down_mask(outer, plate_down[1]) if plate_down else outer
         s = np.zeros_like(base)
         for k in range(1, n + 1):
-            s |= ui_type.shift(base, dy * k // 1, dx * k // 1) if False else ui_type.shift(base, dy + k - 1, dx + k - 1)
+            s |= ui_type.shift(base, dy + k - 1, dx + k - 1)
         s |= ui_type.shift(base, dy, dx)
         area[s] = hexrgb(hexc)
+        shadow_m = s
     if plate_down:
-        area[plate_down_mask(outer, plate_down[1])] = hexrgb(plate_down[0])
+        plate_m = plate_down_mask(outer, plate_down[1])
+        area[plate_m] = hexrgb(plate_down[0])
     for m, hexc in masks[::-1]:
         area[m] = hexrgb(hexc)
     ys = np.nonzero(big.any(1))[0]
@@ -100,12 +108,11 @@ def draw_logo(rgb, mask, cx, cy, fill, rings, plate_down=None, shadow=None, ligh
     area[big] = np.broadcast_to(col[:, None, :], big.shape + (3,))[big]
     if light:
         hexc, rows = light
-        inner = big & ~ui_type.shift(big, 1, 0)
-        for r in range(rows):
-            m = big & ~ui_type.shift(ui_type.shift(big, 1 + r, 0), 0, 0) if False else None
         top_edge = big & ~ui_type.shift(big, 1, 0)
         area[top_edge] = hexrgb(hexc)
-    return area
+    painted = np.zeros(rgb.shape[:2], bool)
+    painted[top:top + big.shape[0], left:left + big.shape[1]] = (shadow_m if shadow else outer) | (plate_m if plate_down else outer) | outer
+    return painted
 
 
 def plate_down_mask(m, n):
@@ -124,7 +131,7 @@ def fit_text(text, maxw, maxh, extra, caps=range(40, 7, -1), squeeze=1.0, bold=0
     raise ValueError("%r does not fit %dx%d" % (text, maxw, maxh))
 
 
-def snap(rgb, cv, changed, colours):
+def snap(rgb, cv, changed, colours, clear=None):
     """Nearest colour of the picture's own for every changed pixel (index 0 = clear is never chosen)."""
     used = sorted(set(np.unique(cv).tolist()) - {0})
     pal = colours[used]
@@ -134,6 +141,8 @@ def snap(rgb, cv, changed, colours):
         px = rgb[ys, xs]
         dist = ((px[:, None, :] - pal[None, :, :]) ** 2).sum(-1)
         out[ys, xs] = np.asarray(used)[dist.argmin(1)]
+    if clear is not None:
+        out[clear] = 0
     return out
 
 
@@ -148,10 +157,9 @@ def final(key):
         cv, colours, ps, org = load(spec["arc"], spec["bank"], spec["sprite"])
         rgb = colours[cv].copy()
         changed = np.zeros(cv.shape, bool)
-        spec["recipe"](rgb, cv, colours, changed)
-        new = snap(rgb, cv, changed, colours)
-        for q in spec.get("clear", ()):
-            pass
+        clear = np.zeros(cv.shape, bool)
+        spec["recipe"](rgb, cv, colours, changed, clear)
+        new = snap(rgb, cv, changed, colours, clear)
         _cache[key] = (new, ps, org)
     return _cache[key]
 
@@ -178,14 +186,15 @@ def parts_of(key):
 
 
 # homerun.arc r3_hrx sprite 00: ホームラン競争 -> Home Run Derby (banner 512 x 80)
-def _hr(rgb, cv, colours, changed):
-    box = (114, 8, 404, 73)
-    rows_fill(rgb, box)
-    m, cap = fit_text("Home Run Derby", 280, 58, 7, squeeze=0.92, bold=0.7)
-    draw_logo(rgb, m, 259, 42, [(0, "f6aa28"), (0.5, "ff7a50"), (1, "ff3694")],
+def _hr(rgb, cv, colours, changed, clear):
+    box = (114, 8, 404, 80)
+    rows_fill(rgb, box, cv, clear)
+    m, cap = fit_text("Home Run Derby", 280, 58, 7, squeeze=0.82, bold=0.7)
+    painted = draw_logo(rgb, m, 259, 42, [(0, "f6aa28"), (0.5, "ff7a50"), (1, "ff3694")],
               [("#ffffff", 2, True), ("#0f48d0", 1, True), ("#62b4f6", 2, True), ("#1862a4", 1, True)],
               plate_down=("#62b4f6", 3), shadow=("#4a6aa4", 1, 2, 2))
     changed[box[1]:box[3], box[0]:box[2]] = True
+    clear &= ~painted
 
 
 register("hr", "homerun.arc", "r3_hrx", "00", 5, _hr)
