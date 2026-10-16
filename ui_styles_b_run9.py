@@ -22,7 +22,8 @@ def hexrgb(h):
 
 
 def load(arcname, bankref, sprite):
-    """(index canvas, colours, parts, origin, bank) of a sprite, drawn from the saved original."""
+    """(index canvas, rgb canvas (float), parts, origin, tables): a sprite drawn from the saved original; each part is
+    coloured with its own palette; tables[k] = (colour table (256, 3), used indices of the part's whole page)."""
     import kit, ui_textures as U
     arc = kit.Arc(arcname)
     d = arc.D
@@ -32,10 +33,17 @@ def load(arcname, bankref, sprite):
     x0 = min(p.x for p in ps); y0 = min(p.y for p in ps)
     x1 = max(p.x + p.x1 - p.x0 for p in ps); y1 = max(p.y + p.y1 - p.y0 for p in ps)
     cv = np.zeros((y1 - y0, x1 - x0), np.uint8)
+    rgb = np.zeros((y1 - y0, x1 - x0, 3))
+    full = U.palette_colours(d, b["pal"])
+    tables = []
     for p in ps:
-        idx = U.decode_indices(d, *b["pages"][p.page])[p.y0:p.y1, p.x0:p.x1]
+        page = U.decode_indices(d, *b["pages"][p.page])
+        idx = page[p.y0:p.y1, p.x0:p.x1]
+        tbl = U.page_colours(full, p.palette, U.raw_size(d, *b["pages"][p.page]))[:256, :3].astype(float)
+        tables.append((tbl, sorted(set(np.unique(page).tolist()) - {0})))
         cv[p.y - y0:p.y - y0 + idx.shape[0], p.x - x0:p.x - x0 + idx.shape[1]] = idx
-    return cv, U.palette_colours(d, b["pal"])[:256, :3].astype(float), ps, (x0, y0)
+        rgb[p.y - y0:p.y - y0 + idx.shape[0], p.x - x0:p.x - x0 + idx.shape[1]] = tbl[idx]
+    return cv, rgb, ps, (x0, y0), tables
 
 
 def rows_fill(rgb, box, cv=None, clear=None):
@@ -131,16 +139,19 @@ def fit_text(text, maxw, maxh, extra, caps=range(40, 7, -1), squeeze=1.0, bold=0
     raise ValueError("%r does not fit %dx%d" % (text, maxw, maxh))
 
 
-def snap(rgb, cv, changed, colours, clear=None):
-    """Nearest colour of the picture's own for every changed pixel (index 0 = clear is never chosen)."""
-    used = sorted(set(np.unique(cv).tolist()) - {0})
-    pal = colours[used]
-    ys, xs = np.nonzero(changed)
+def snap(rgb, cv, changed, ps, org, tables, clear=None):
+    """Nearest colour of the part's own page for every changed pixel (index 0 = clear is never chosen)."""
     out = cv.copy()
-    if len(ys):
-        px = rgb[ys, xs]
+    for p, (tbl, used) in zip(ps, tables):
+        y, x = p.y - org[1], p.x - org[0]
+        h, w = p.y1 - p.y0, p.x1 - p.x0
+        ys, xs = np.nonzero(changed[y:y + h, x:x + w])
+        if not len(ys):
+            continue
+        pal = tbl[used]
+        px = rgb[y + ys, x + xs]
         dist = ((px[:, None, :] - pal[None, :, :]) ** 2).sum(-1)
-        out[ys, xs] = np.asarray(used)[dist.argmin(1)]
+        out[y + ys, x + xs] = np.asarray(used)[dist.argmin(1)]
     if clear is not None:
         out[clear] = 0
     return out
@@ -154,12 +165,11 @@ LOGOS = {}
 def final(key):
     if key not in _cache:
         spec = LOGOS[key]
-        cv, colours, ps, org = load(spec["arc"], spec["bank"], spec["sprite"])
-        rgb = colours[cv].copy()
+        cv, rgb, ps, org, tables = load(spec["arc"], spec["bank"], spec["sprite"])
         changed = np.zeros(cv.shape, bool)
         clear = np.zeros(cv.shape, bool)
-        spec["recipe"](rgb, cv, colours, changed, clear)
-        new = snap(rgb, cv, changed, colours, clear)
+        spec["recipe"](rgb, cv, None, changed, clear)
+        new = snap(rgb, cv, changed, ps, org, tables, clear)
         _cache[key] = (new, ps, org)
     return _cache[key]
 
@@ -181,7 +191,7 @@ def register(key, arc, bank, sprite, nparts, recipe):
 
 def parts_of(key):
     """[(page, [x0, y0, x1, y1])] of the logo's parts, for the generator."""
-    cv, colours, ps, org = load(LOGOS[key]["arc"], LOGOS[key]["bank"], LOGOS[key]["sprite"])
+    cv, rgb, ps, org, tables = load(LOGOS[key]["arc"], LOGOS[key]["bank"], LOGOS[key]["sprite"])
     return [(p.page, [p.x0, p.y0, p.x1, p.y1]) for p in ps]
 
 
@@ -191,7 +201,7 @@ def _hr(rgb, cv, colours, changed, clear):
     rows_fill(rgb, box, cv, clear)
     m, cap = fit_text("Home Run Derby", 280, 58, 7, squeeze=0.82, bold=0.7)
     painted = draw_logo(rgb, m, 259, 42, [(0, "f6aa28"), (0.5, "ff7a50"), (1, "ff3694")],
-              [("#ffffff", 2, True), ("#0f48d0", 1, True), ("#62b4f6", 2, True), ("#1862a4", 1, True)],
+              [("#ffffff", 2, True), ("#0f48d0", 1, True), ("#62b4f6", 2, True), ("#3c82d0", 1, True)],
               plate_down=("#62b4f6", 3), shadow=("#4a6aa4", 1, 2, 2))
     changed[box[1]:box[3], box[0]:box[2]] = True
     clear &= ~painted
