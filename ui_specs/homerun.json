@@ -1,0 +1,1018 @@
+{
+ "arc": "homerun.arc",
+ "repack": [
+  {
+   "bank": "r3_hr",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     12,
+     0,
+     0,
+     96,
+     80
+    ],
+    [
+     12,
+     96,
+     0,
+     112,
+     40
+    ],
+    [
+     13,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     14,
+     64,
+     48,
+     128,
+     128
+    ],
+    [
+     14,
+     0,
+     56,
+     48,
+     128
+    ],
+    [
+     14,
+     48,
+     96,
+     64,
+     128
+    ],
+    [
+     15,
+     32,
+     0,
+     128,
+     104
+    ],
+    [
+     15,
+     0,
+     24,
+     32,
+     80
+    ],
+    [
+     15,
+     0,
+     0,
+     32,
+     16
+    ],
+    [
+     17,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     17,
+     80,
+     56,
+     128,
+     120
+    ],
+    [
+     18,
+     0,
+     0,
+     96,
+     112
+    ],
+    [
+     18,
+     96,
+     0,
+     128,
+     56
+    ],
+    [
+     20,
+     0,
+     0,
+     72,
+     48
+    ],
+    [
+     20,
+     64,
+     96,
+     128,
+     128
+    ],
+    [
+     20,
+     112,
+     0,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Play",
+     "style": "e8_r3_hr_01_59_h",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 27,
+     "palettes": [
+      59
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "Records",
+     "style": "e8_r3_hr_02_60_h",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 43,
+     "dy": 1,
+     "palettes": [
+      60
+     ]
+    },
+    {
+     "sprite": "03",
+     "text": "Save",
+     "style": "e8_r3_hr_03_61_h",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 27,
+     "palettes": [
+      61
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Delete",
+     "style": "e8_r3_hr_04_62_h",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 28,
+     "palettes": [
+      62
+     ]
+    },
+    {
+     "sprite": "05",
+     "text": "Controller Setup",
+     "style": "e8_r3_hr_05_63_h",
+     "font": "ttf:narrow:14:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 56,
+     "dy": 0,
+     "palettes": [
+      63
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "Records",
+     "style": "e8_r3_hr_1b_h",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "baseline": 52
+    },
+    {
+     "sprite": "1f",
+     "text": "Home Runs",
+     "style": "e8_r3_hr_1f_6_h_s",
+     "font": "ttf:narrow:10:0.0:0.92:0.2",
+     "baseline": 33,
+     "palettes": [
+      6
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "Points",
+     "style": "e8_r3_hr_20_2_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 34,
+     "palettes": [
+      2
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Home Runs\nby Stadium",
+     "style": "e8_r3_hr_21_3_h_s",
+     "font": "ttf:narrow:10:0.0:0.92:0.2",
+     "baseline": 32,
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Points\nby Stadium",
+     "style": "e8_r3_hr_22_4_h",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 32,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "2f",
+     "text": "This Round",
+     "style": "e8_r3_hr_2f_26_h",
+     "font": "ttf:narrow:30:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 96,
+     "dy": 6,
+     "palettes": [
+      26
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "Play\nAgain",
+     "style": "e8_r3_hr_31_1_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 40,
+     "palettes": [
+      1
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "Change Player",
+     "style": "e8_r3_hr_32_8_h",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 38,
+     "palettes": [
+      8
+     ]
+    },
+    {
+     "sprite": "33",
+     "text": "Change Stadium",
+     "style": "e8_r3_hr_33_4_h_s",
+     "font": "ttf:narrow:10:0.0:0.85:0.2",
+     "baseline": 38,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "34",
+     "text": "Quit",
+     "style": "e8_r3_hr_34_5_h",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "baseline": 40,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "78",
+     "text": "New Record!",
+     "style": "e8_r3_hr_78_h",
+     "font": "ttf:narrow:13:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 0
+    }
+   ],
+   "name": "r3_hr buttons",
+   "share": true
+  },
+  {
+   "bank": "r3_hr",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     32,
+     48,
+     64
+    ],
+    [
+     3,
+     16,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     32,
+     16,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     80,
+     64
+    ],
+    [
+     4,
+     0,
+     96,
+     112,
+     128
+    ],
+    [
+     4,
+     80,
+     0,
+     120,
+     32
+    ],
+    [
+     4,
+     96,
+     64,
+     128,
+     96
+    ],
+    [
+     5,
+     0,
+     0,
+     96,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     96,
+     96
+    ],
+    [
+     6,
+     0,
+     96,
+     48,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     48,
+     32
+    ],
+    [
+     22,
+     0,
+     0,
+     104,
+     128
+    ],
+    [
+     22,
+     104,
+     0,
+     128,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "3b",
+     "text": "Sapporo D",
+     "style": "e8_r3_hr_3b_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "3c",
+     "text": "Jingu",
+     "style": "e8_r3_hr_3c_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "3d",
+     "text": "Koshien",
+     "style": "e8_r3_hr_3d_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "3e",
+     "text": "Chiba",
+     "style": "e8_r3_hr_3e_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "3f",
+     "text": "Hiroshima",
+     "style": "e8_r3_hr_3f_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "40",
+     "text": "Tokyo D",
+     "style": "e8_r3_hr_40_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 21
+    },
+    {
+     "sprite": "41",
+     "text": "Seibu D",
+     "style": "e8_r3_hr_41_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "42",
+     "text": "Yahoo",
+     "style": "e8_r3_hr_42_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 21
+    },
+    {
+     "sprite": "43",
+     "text": "Yokohama",
+     "style": "e8_r3_hr_43_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "44",
+     "text": "K-Sta",
+     "style": "e8_r3_hr_44_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "45",
+     "text": "Kyocera",
+     "style": "e8_r3_hr_45_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 21
+    },
+    {
+     "sprite": "46",
+     "text": "Skymark",
+     "style": "e8_r3_hr_46_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "47",
+     "text": "Nagoya",
+     "style": "e8_r3_hr_47_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "48",
+     "text": "Local",
+     "style": "e8_r3_hr_48_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "49",
+     "text": "Yamanote",
+     "style": "e8_r3_hr_49_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "4a",
+     "text": "Blue",
+     "style": "e8_r3_hr_4a_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "4b",
+     "text": "School",
+     "style": "e8_r3_hr_4b_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "79",
+     "text": "Ikari D",
+     "style": "e8_r3_hr_79_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "91",
+     "text": "Magma",
+     "style": "e8_r3_hr_91_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "93",
+     "text": "Rinkai",
+     "style": "e8_r3_hr_93_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 20
+    },
+    {
+     "sprite": "4c",
+     "text": "Yokohama Stadium",
+     "style": "e8_r3_hr_4c_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 63,
+     "dy": 0
+    },
+    {
+     "sprite": "4d",
+     "text": "Meiji Jingu Stadium",
+     "style": "e8_r3_hr_4d_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 65,
+     "dy": 2
+    },
+    {
+     "sprite": "4e",
+     "text": "Hiroshima Municipal Stadium",
+     "style": "e8_r3_hr_4e_h_s",
+     "font": "ttf:narrow:10:0.0:0.92:0.2",
+     "slices": true,
+     "slice_width": 75,
+     "dy": 1
+    },
+    {
+     "sprite": "4f",
+     "text": "Kleenex Stadium Miyagi",
+     "style": "e8_r3_hr_4f_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 53,
+     "dy": 2
+    },
+    {
+     "sprite": "50",
+     "text": "Local Ballpark",
+     "style": "e8_r3_hr_50_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 4
+    },
+    {
+     "sprite": "51",
+     "text": "Hanshin Koshien Stadium",
+     "style": "e8_r3_hr_51_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 72,
+     "dy": 0
+    },
+    {
+     "sprite": "52",
+     "text": "Chiba Marine Stadium",
+     "style": "e8_r3_hr_52_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 73,
+     "dy": 0
+    },
+    {
+     "sprite": "53",
+     "text": "Skymark Stadium",
+     "style": "e8_r3_hr_53_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 58,
+     "dy": 2
+    },
+    {
+     "sprite": "54",
+     "text": "Sapporo Dome",
+     "style": "e8_r3_hr_54_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 4
+    },
+    {
+     "sprite": "55",
+     "text": "Kyocera Dome Osaka",
+     "style": "e8_r3_hr_55_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 71,
+     "dy": 1
+    },
+    {
+     "sprite": "56",
+     "text": "Fukuoka Yahoo! JAPAN Dome",
+     "style": "e8_r3_hr_56_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 83,
+     "dy": 0
+    },
+    {
+     "sprite": "57",
+     "text": "Seibu Dome",
+     "style": "e8_r3_hr_57_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 40,
+     "dy": 0
+    },
+    {
+     "sprite": "58",
+     "text": "Tokyo Dome",
+     "style": "e8_r3_hr_58_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 4
+    },
+    {
+     "sprite": "59",
+     "text": "Nagoya Dome",
+     "style": "e8_r3_hr_59_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 4
+    },
+    {
+     "sprite": "5a",
+     "text": "Yamanote Ballpark",
+     "style": "e8_r3_hr_5a_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 4
+    },
+    {
+     "sprite": "5b",
+     "text": "Blue Stadium",
+     "style": "e8_r3_hr_5b_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 45,
+     "dy": -1
+    },
+    {
+     "sprite": "5c",
+     "text": "School Field",
+     "style": "e8_r3_hr_5c_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 41,
+     "dy": 0
+    },
+    {
+     "sprite": "7a",
+     "text": "Ikari Dome",
+     "style": "e8_r3_hr_7a_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 36,
+     "dy": 0
+    },
+    {
+     "sprite": "92",
+     "text": "Magma Dome",
+     "style": "e8_r3_hr_92_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 4
+    },
+    {
+     "sprite": "94",
+     "text": "Rinkai Ballpark",
+     "style": "e8_r3_hr_94_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "slices": true,
+     "slice_width": 50,
+     "dy": 1
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      16,
+      16
+     ]
+    }
+   ],
+   "name": "r3_hr stadiums",
+   "share": true
+  },
+  {
+   "bank": "r3_hr",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     4,
+     0,
+     64,
+     96,
+     96
+    ],
+    [
+     4,
+     80,
+     32,
+     128,
+     64
+    ],
+    [
+     7,
+     96,
+     0,
+     120,
+     24
+    ],
+    [
+     7,
+     80,
+     32,
+     96,
+     56
+    ],
+    [
+     11,
+     0,
+     104,
+     120,
+     128
+    ],
+    [
+     15,
+     0,
+     104,
+     120,
+     128
+    ],
+    [
+     16,
+     72,
+     56,
+     128,
+     88
+    ],
+    [
+     17,
+     0,
+     56,
+     56,
+     120
+    ],
+    [
+     17,
+     56,
+     56,
+     64,
+     88
+    ],
+    [
+     20,
+     0,
+     88,
+     64,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      15,
+      0,
+      104,
+      72,
+      128
+     ],
+     "text": "Home Runs",
+     "style": "e8_r3_hr_27_15.0.104_h",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "from": [
+      20,
+      0,
+      88,
+      64,
+      112
+     ],
+     "text": "Distance",
+     "style": "e8_r3_hr_27_20.0.88_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "from": [
+      11,
+      48,
+      104,
+      120,
+      128
+     ],
+     "text": "Points",
+     "style": "e8_r3_hr_27_11.48.104_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "from": [
+      15,
+      72,
+      104,
+      120,
+      128
+     ],
+     "text": "Player",
+     "style": "e8_r3_hr_27_15.72.104_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "from": [
+      11,
+      0,
+      104,
+      48,
+      128
+     ],
+     "text": "Stadium",
+     "style": "e8_r3_hr_27_11.0.104_h",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 17
+    },
+    {
+     "from": [
+      4,
+      80,
+      32,
+      128,
+      64
+     ],
+     "text": "Most HRs",
+     "style": "e8_r3_hr_8f_4.80.32-4.0.64_h~0_48",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 20,
+     "sprites": [
+      "8f"
+     ]
+    },
+    {
+     "from": [
+      4,
+      0,
+      64,
+      64,
+      96
+     ],
+     "text": "Most HRs",
+     "style": "e8_r3_hr_8f_4.80.32-4.0.64_h~48_4096",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 20,
+     "sprites": [
+      "8f"
+     ]
+    },
+    {
+     "from": [
+      4,
+      64,
+      64,
+      96,
+      96
+     ],
+     "text": "Longest HR",
+     "style": "e8_r3_hr_8f_4.64.64-17.0.56_h~0_32",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 5,
+     "sprites": [
+      "8f"
+     ]
+    },
+    {
+     "from": [
+      17,
+      0,
+      56,
+      64,
+      88
+     ],
+     "text": "Longest HR",
+     "style": "e8_r3_hr_8f_4.64.64-17.0.56_h~32_4096",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 5,
+     "sprites": [
+      "8f"
+     ]
+    },
+    {
+     "from": [
+      16,
+      72,
+      56,
+      128,
+      88
+     ],
+     "text": "Best Points",
+     "style": "e8_r3_hr_8f_16.72.56-17.0.88_h~0_56",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
+     "left": 14,
+     "sprites": [
+      "8f"
+     ]
+    },
+    {
+     "from": [
+      17,
+      0,
+      88,
+      56,
+      120
+     ],
+     "text": "Best Points",
+     "style": "e8_r3_hr_8f_16.72.56-17.0.88_h~56_4096",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 19,
+     "left": 14,
+     "sprites": [
+      "8f"
+     ]
+    },
+    {
+     "from": [
+      7,
+      96,
+      0,
+      120,
+      24
+     ],
+     "text": "HR",
+     "style": "e8_r3_hr_2a_7.96.0_h",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 18
+    },
+    {
+     "from": [
+      7,
+      80,
+      32,
+      96,
+      56
+     ],
+     "empty": true,
+     "sprites": [
+      "1c",
+      "1d"
+     ]
+    }
+   ],
+   "name": "r3_hr headings",
+   "share": true
+  }
+ ]
+}
