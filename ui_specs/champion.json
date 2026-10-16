@@ -639,6 +639,56 @@
    ],
    "name": "r3_tsk",
    "share": true
+  },
+  {
+   "bank": "r3_tsk",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     6,
+     0,
+     32,
+     88,
+     72
+    ],
+    [
+     6,
+     88,
+     40,
+     112,
+     72
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      6,
+      0,
+      32,
+      88,
+      72
+     ],
+     "text": "Hits",
+     "style": "c9_r3_tsk_03_6.0.32_h",
+     "font": "ttf:rounded:30:0.0:1.0:0.3",
+     "baseline": 33
+    },
+    {
+     "from": [
+      6,
+      88,
+      40,
+      112,
+      72
+     ],
+     "empty": true
+    }
+   ],
+   "name": "r3_tsk_r9c",
+   "share": true
   }
  ]
 }

@@ -1,0 +1,173 @@
+{
+ "arc": "gdt_cham.arc",
+ "repack": [
+  {
+   "bank": "h3_cha_0",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     80,
+     104,
+     128,
+     128
+    ],
+    [
+     0,
+     56,
+     32,
+     64,
+     64
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      1,
+      0,
+      0,
+      72,
+      24
+     ],
+     "text": "Time Left",
+     "style": "c9_h3_cha_0_03_1.0.0_h_m",
+     "font": "ttf:narrow:15:0.0:0.85:0.25",
+     "baseline": 16
+    },
+    {
+     "from": [
+      1,
+      72,
+      0,
+      88,
+      24
+     ],
+     "text": "m",
+     "style": "c9_h3_cha_0_03_1.72.0_h_m",
+     "font": "ttf:narrow:14:0.0:1.0:0.14",
+     "baseline": 16
+    },
+    {
+     "from": [
+      1,
+      88,
+      0,
+      104,
+      24
+     ],
+     "text": "s",
+     "style": "c9_h3_cha_0_05_1.88.0_h_m",
+     "font": "ttf:rounded:15:0.0:1.0:0.14",
+     "baseline": 16
+    },
+    {
+     "from": [
+      1,
+      0,
+      24,
+      128,
+      48
+     ],
+     "text": "Game ends at this time.",
+     "style": "c9_h3_cha_0_06_1.0.24_h_m",
+     "font": "ttf:narrow:11:0.0:0.85:0.25",
+     "baseline": 14
+    },
+    {
+     "from": [
+      1,
+      0,
+      48,
+      112,
+      72
+     ],
+     "text": "Special Extras!",
+     "style": "c9_h3_cha_0_07_1.0.48_h_s",
+     "font": "ttf:rounded:10:0.0:1.0:0.2",
+     "baseline": 14
+    },
+    {
+     "sprite": "0b",
+     "text": "Left     times\nPickoffs OK",
+     "style": "c9_h3_cha_0_0b_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.14",
+     "baseline": 38,
+     "slices": true,
+     "overlap": 4
+    },
+    {
+     "sprite": "0c",
+     "text": "Left     times\nPickoffs OK",
+     "style": "c9_h3_cha_0_0c_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.14",
+     "baseline": 38,
+     "slices": true,
+     "overlap": 4
+    },
+    {
+     "sprite": "3a",
+     "text": "Left     times\nPickoffs OK",
+     "style": "c9_h3_cha_0_3a_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.14",
+     "baseline": 38,
+     "slices": true,
+     "overlap": 4
+    },
+    {
+     "sprite": "3b",
+     "text": "Left     times\nPickoffs OK",
+     "style": "c9_h3_cha_0_3b_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.14",
+     "baseline": 38,
+     "slices": true,
+     "overlap": 4
+    },
+    {
+     "sprite": "10",
+     "text": "Until Next Pitch\nNo Pickoffs",
+     "style": "c9_h3_cha_0_10_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.14",
+     "slices": true,
+     "slice_width": 43,
+     "dy": -8,
+     "overlap": 4
+    },
+    {
+     "sprite": "3f",
+     "text": "Until Next Pitch\nNo Pickoffs",
+     "style": "c9_h3_cha_0_3f_h_s",
+     "font": "ttf:narrow:10:0.0:1.0:0.14",
+     "slices": true,
+     "slice_width": 43,
+     "dy": -7,
+     "overlap": 4
+    },
+    {
+     "from": [
+      0,
+      88,
+      104,
+      128,
+      128
+     ],
+     "text": "Left",
+     "style": "c9_h3_cha_0_14_0.88.104_h_m",
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 16
+    }
+   ],
+   "name": "h3_cha_0",
+   "share": true
+  }
+ ]
+}

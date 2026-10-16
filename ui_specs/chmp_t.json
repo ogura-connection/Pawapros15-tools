@@ -762,6 +762,59 @@
    ],
    "name": "r3_tyr",
    "share": true
+  },
+  {
+   "bank": "r3_ten",
+   "palette": 0,
+   "style": "command",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     7,
+     0,
+     0,
+     80,
+     56
+    ],
+    [
+     7,
+     0,
+     56,
+     80,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      7,
+      0,
+      0,
+      80,
+      56
+     ],
+     "text": "Choose the\nteams taking\npart.",
+     "style": "c9_r3_ten_0f_7.0.0_h_m",
+     "font": "ttf:narrow:13:0.0:0.85:0.25",
+     "baseline": 42
+    },
+    {
+     "from": [
+      7,
+      0,
+      56,
+      80,
+      112
+     ],
+     "text": "Set up the\ncontrols.",
+     "style": "c9_r3_ten_10_7.0.56_h",
+     "font": "ttf:narrow:16:0.0:0.85:0.3",
+     "baseline": 44
+    }
+   ],
+   "name": "r3_ten_r9c",
+   "share": true
   }
  ]
 }
