@@ -52,28 +52,37 @@ def smooth_mask(cov, thr=0.5):
     return np.asarray(im, np.float32) / 255.0 >= thr
 
 def compose_layers(face_mask, layers, face_rows, pad=6):
-    """face_mask hi-res bool. layers: list of (radius_hi, (r,g,b)) outermost first (each dilation of the face).
-    face_rows: function(n)->(n,3) colours for the face rows (1x rows).  Returns (rgb 1x float, alpha 1x bool)."""
+    """face_mask hi-res bool. layers: list of (radius_hi, (r,g,b), None) outermost first (each a dilation of the face).
+    Each 1x pixel takes the layer that covers most of it (solid outline, no blended colours); the face takes its row
+    gradient. Returns (rgb 1x float, alpha 1x bool)."""
     P = pad * OV
     h, w = face_mask.shape
     H = (h + 2 * P + OV - 1) // OV * OV; W = (w + 2 * P + OV - 1) // OV * OV
     big = np.zeros((H, W), bool); big[P:P + h, P:P + w] = face_mask
-    rgb = np.zeros((H, W, 3), float); al = np.zeros((H, W), bool)
-    for r, col, off in layers:
-        m = disc_dilate(big, r)
-        if off: m = shift_hi(m, off[0] * OV, off[1] * OV)
-        rgb[m] = col; al |= m
+    lay = np.zeros((H, W), np.int8)            # 0 none, 1.. layers outer->inner, len+1 face
+    for i, (r, col, off) in enumerate(layers):
+        d = disc_dilate(big, r)
+        if off: d = shift_hi(d, off[0] * OV, off[1] * OV)
+        lay[d] = i + 1
+    lay[big] = len(layers) + 1
+    n = len(layers) + 2
+    cnt = np.stack([(lay == k).reshape(H // OV, OV, W // OV, OV).sum((1, 3)) for k in range(n)])
+    # coverage thresholds: a pixel belongs to a layer when it is the one with most hi-res samples among non-empty ones,
+    # and is drawn at all when >= half covered
+    filled = cnt[1:].sum(0)
+    pick = cnt[1:].argmax(0) + 1
+    al = filled >= (OV * OV) // 2
     ys = np.nonzero(big.any(1))[0]
-    n = (ys.max() - ys.min() + 1)
-    g = face_rows(max(n, 2))
+    nn = (ys.max() - ys.min() + 1)
+    g = face_rows(max(nn, 2))
     rowc = np.zeros((H, 3)); rowc[ys.min():ys.max() + 1] = g
-    rgb[big] = np.broadcast_to(rowc[:, None, :], big.shape + (3,))[big]; al |= big
-    # downsample: alpha by coverage >= .5, colour = mean of covered subpixels
-    a4 = al.reshape(H // OV, OV, W // OV, OV)
-    cnt = a4.sum((1, 3))
-    c4 = (rgb * al[..., None]).reshape(H // OV, OV, W // OV, OV, 3).sum((1, 3))
-    out = c4 / np.maximum(cnt, 1)[..., None]
-    return out, cnt >= (OV * OV) // 2
+    face1 = rowc.reshape(H // OV, OV, 3).mean(1)
+    out = np.zeros((H // OV, W // OV, 3))
+    for i, (r, col, off) in enumerate(layers):
+        out[pick == i + 1] = col
+    fm = pick == len(layers) + 1
+    out[fm] = np.broadcast_to(face1[:, None, :], out.shape)[fm]
+    return out, al
 
 BLUE_FACE = [(0.0, (170, 205, 255)), (0.16, (90, 130, 255)), (0.45, (0, 0, 255)), (0.8, (0, 0, 180)), (1.0, (0, 0, 120))]
 SUB_FACE = [(0.0, (255, 250, 150)), (0.5, (255, 205, 40)), (1.0, (255, 130, 0))]
@@ -94,8 +103,8 @@ def sub_piece(text, cap, sq, font="condb", stroke=0.2):
         (OV * 0.8, (110, 10, 0), None),
     ], lambda n: A.grad_rows(SUB_FACE, n), pad=3)
 
-def logo(title="Hakkyu Dream", sub="~ Industrial-League Ball! ~", tcap=20, tsq=0.76, trk=1.5, s0=0.82, s1=1.12, rise=6,
-         tx=28, tbottom=64, scap=10, ssq=0.9, scx=118, sbottom=80, sfont="condb", sstroke=0.2, twhite=2.6, tnavy=0.8):
+def logo(title="Hakkyu Dream", sub="~ Industrial-League Ball! ~", tcap=21, tsq=0.76, trk=1.5, s0=0.82, s1=1.12, rise=6,
+         tx=28, tbottom=64, scap=11, ssq=0.9, scx=118, sbottom=80, sfont="condb", sstroke=0.2, twhite=2.6, tnavy=0.8, tstroke=0.1, strk=0.6, shadow=(1, 1)):
     new, c, erase, red = A.erase3()
     pal = A.logo_pal(16); q = A.Quant(pal, c)
     H, W = new.shape
@@ -123,9 +132,9 @@ def logo(title="Hakkyu Dream", sub="~ Industrial-League Ball! ~", tcap=20, tsq=0
     rgb[bord] = (255, 255, 255); Am |= bord
     new[Am] = q(rgb[Am]); Am[:] = False
     # title
-    cov = hires_cov(title, tcap, "condbi", 0.25, tsq, trk, s0, s1, rise)
+    cov = hires_cov(title, tcap, "condbi", tstroke, tsq, trk, s0, s1, rise)
     m = smooth_mask(cov)
-    tr, ta = compose_layers(m, [(OV * twhite, (255, 255, 255), None), (OV * tnavy, (0, 0, 90), None)], lambda n: A.grad_rows(BLUE_FACE, n))
+    tr, ta = compose_layers(m, [(OV * twhite, (255, 255, 255), None), (OV * tnavy, (0, 0, 90), shadow), (OV * tnavy, (0, 0, 90), None)], lambda n: A.grad_rows(BLUE_FACE, n))
     y = tbottom - tr.shape[0]
     sl = (slice(y, y + tr.shape[0]), slice(tx, tx + tr.shape[1]))
     rgb[sl][ta] = tr[ta]; Am[sl] |= ta
@@ -141,7 +150,7 @@ def logo(title="Hakkyu Dream", sub="~ Industrial-League Ball! ~", tcap=20, tsq=0
             if np.hypot(px_ - A.BALL[0], py_ - A.BALL[1]) < A.BALL[2] - 2.5: seam[int(py_), int(px_)] = True
     new[seam & ~Am] = q(np.array([(255, 150, 150)]))[0]
     # subtitle
-    cov = hires_cov(sub, scap, sfont, sstroke, ssq, 0.0)
+    cov = hires_cov(sub, scap, sfont, sstroke, ssq, strk)
     m = smooth_mask(cov)
     sr, sa = compose_layers(m, [(OV * 1.6, (255, 255, 255), None), (OV * 0.8, (110, 10, 0), None)], lambda n: A.grad_rows(SUB_FACE, n), pad=3)
     x_ = scx - sr.shape[1] // 2; y_ = sbottom - sr.shape[0]
