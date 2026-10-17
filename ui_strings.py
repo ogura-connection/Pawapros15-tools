@@ -94,7 +94,7 @@ OUT_JSON = os.path.join(S.WORK_DIR, "strings.json")
 END = 0xFFFF
 # Help texts of vs.rel (Exhibition menu, control setups): lines split by HELP_NL, closed by HELP_END (not 0xFFFF), a
 # coloured first line allowed. English: "|" between lines, {c:...} for colour. Cells = units in front of HELP_END.
-HELP_FILES = {"vs.rel"}
+HELP_FILES = {"vs.rel", "gameplay.rel", "sct_card.rel", "sct_a_sy.rel"}   # also 0xFFFF strings with a HELP_NL inside
 # Slots that may also use the alignment cell behind their 0xFFFF (a glyph 0 that ends on a 4-byte boundary): the
 # pitching / batting form names of main_prg.rel whose English needs 9-10 letters. The build moves the 0xFFFF one cell on.
 WIDE_SLOTS = {("main_prg.rel", 5, o) for o in (
@@ -177,7 +177,7 @@ def find_help(rel):
         d = rel.sec_data(sec["index"])
         hw = struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2])
         for k, u in enumerate(hw):
-            if u != HELP_END:
+            if u not in (HELP_END, END):
                 continue
             i = k
             while i > 0 and hw[i - 1] != 0 and (hw[i - 1] <= S.MAX_GLYPH or hw[i - 1] == HELP_NL
@@ -211,7 +211,9 @@ def find_tails(rel):
 def find(rel, region=None):
     """[{"section", "offset", "cells", "units", "text"}] for every string slot of a module.
     cells = glyphs in front of the 0xFFFF, padding included: what an English string may fill."""
-    out = find_help(rel) + find_tails(rel)
+    helps = find_help(rel)
+    out = helps + find_tails(rel)
+    inside = {(h["section"], h["offset"] + 2 * n) for h in helps for n in range(1, h["cells"] + 1)}
     for sec in rel.sections:
         if sec["exec"] or sec["bss"] or not sec["offset"] or sec["size"] < 4:
             continue
@@ -236,7 +238,9 @@ def find(rel, region=None):
             if j < len(hw) and hw[j] == END:
                 units = hw[i:j]
                 text = units_text(units)
-                if sum(0x3040 <= ord(c) <= 0x30FF or 0x4E00 <= ord(c) <= 0x9FFF for c in text) >= 2 \
+                if (sec["index"], i * 2) in inside:
+                    pass
+                elif sum(0x3040 <= ord(c) <= 0x30FF or 0x4E00 <= ord(c) <= 0x9FFF for c in text) >= 2 \
                         or (rel.name, sec["index"], i * 2) in SHORT_TEXT:
                     wide = (rel.name, sec["index"], i * 2) in WIDE_SLOTS and j + 1 < len(hw) and hw[j + 1] == 0 \
                         and (j + 2) * 2 % 4 == 0

@@ -1036,8 +1036,8 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                     assert image[pos + len(data) - 2:pos + len(data) + 2] == b"\xff\xff\x00\x00", (m.name, sec, off)
                     image[pos + len(data):pos + len(data) + 2] = b"\xff\xff"
                 else:
-                    assert image[pos + len(data):pos + len(data) + 2] == (b"\x1f\xff" if help else b"\xff\xff"), \
-                        (m.name, sec, off)
+                    assert image[pos + len(data):pos + len(data) + 2] in ((b"\x1f\xff", b"\xff\xff") if help
+                                                                         else (b"\xff\xff",)), (m.name, sec, off)
                 image[pos:pos + len(data)] = data
                 patched[m.mod_id][(sec, off)] = data + b"\xff\xff" * ((m.name, sec, off) in ui_strings.WIDE_SLOTS)
             for blk in ui_strings.BLOCKS.get(m.name, ()):        # strings that move: new layout, new pointers
