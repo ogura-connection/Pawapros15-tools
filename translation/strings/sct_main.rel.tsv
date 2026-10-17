@@ -1,0 +1,70 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	712	cf77	Save as an Arrange team?
+5	798	6326	Choose where to save.
+5	834	f9c9	Overwrite this save?
+5	872	7ff1	Is it OK to save here?
+5	424240	4499	Swaps out all progress icons.
+5	424272	664e	Adds a Tee to the gear.
+5	424304	3a48	Adds a Batting Machine|to gear.
+5	424360	4a94	Adds Dumbbells to the gear.
+5	424392	b32f	Adds a Bench Press to the gear.
+5	424432	2ab7	Adds a Stopwatch to the gear.
+5	424472	5304	Adds Mini Hurdles to the gear.
+5	424512	c79b	Adds Tubes to the gear.
+5	424544	3928	Adds a Lat Machine to gear.
+5	424580	0dfd	Adds a Fungo Bat to the gear.
+5	424616	5697	Adds a Fungo Machine to gear.
+5	424652	93d7	Adds Aroma Goods to the gear.
+5	424688	69e1	Adds a Relaxing CD to gear.
+5	424724	158b	Adds a Speed Gun to the gear.
+5	424760	ac10	Adds a Muscler to the gear.
+5	424796	dec9	Adds a Tyre to the gear.
+5	424832	7ab8	Adds a Roller to the gear.
+5	424864	d5d0	Adds a Target to the gear.
+5	424896	53b7	Adds a 3x3 Target to gear.
+5	424932	078e	Adds a Squishy Ball to the gear.
+5	424972	cc8e	Adds a DVD to the gear.
+5	425004	977c	Adds a Temp Shower to gear.
+5	425040	bd4c	Adds a Massage Chair to the gear.
+5	425080	d759	Adds one random piece|of gear.
+5	425148	2c8f	Ground LV goes up 1|(white dirt)
+5	425200	78a5	Ground LV goes up 2|(white dirt)
+5	425344	5db9	Ground LV goes up 2|(black dirt)
+5	425396	3a31	Ground LV goes up 3|(black dirt)
+5	425448	ae96	Ground LV goes up 4|(black dirt)
+5	425592	d3e3	All: Vitality +1
+5	425616	cbad	All: Vitality +2
+5	425640	2f15	All: Vitality +3
+5	425664	aa06	1 player: Trajectory +1
+5	425692	6da1	1 player: Contact +1
+5	425720	881b	1 player: Power +5
+5	425748	be53	1 player: Power +10
+5	425780	1717	1 player: Speed +1
+5	425808	be70	1 player: Arm +1
+5	425836	8307	1 player: Fielding +1
+5	425864	b65a	1 player: Error Res. +1
+5	425896	7d08	1 player: Velocity +1
+5	425924	6fe4	1 player: Control +5
+5	425960	a8f6	1 player: Control +10
+5	425996	b166	1 player: Stamina +5
+5	426032	9f8c	1 player: Stamina +10
+5	426064	aecd	Raises 1 player's Slider|level by 1
+5	426124	24ab	Raises 1 player's Curve|level by 1
+5	426184	3300	Raises 1 player's Fork|level by 1
+5	426244	b383	Raises 1 player's Sinker|level by 1
+5	426304	07ce	Raises 1 player's Shuuto|level by 1
+5	426368	2884	All icon numbers +1
+5	426400	ebdf	All icon numbers -1
+5	426432	c882	All icon numbers to max
+5	426468	4fe4	All icon numbers to min
+5	426504	13d3	1 player's Tension (drive)|goes up
+5	426560	a727	1 player: Grades up
+5	426584	b299	1 player: nature changes
+5	426612	9ad7	1 player: scout rating up
+5	426648	8442	1 player: scout rating|goes up a lot
+5	426708	9dcb	Skin tone a bit lighter
+5	426736	28be	Skin tone a bit darker
+5	426764	34cf	No rain penalty to practice|(2 weeks)
+5	426816	0ab5	No snow penalty to practice|(2 weeks)
+5	426868	4e3b	Blue and red panels swap
+5	426904	415a	Red panels turn blue

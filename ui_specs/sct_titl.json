@@ -543,7 +543,7 @@
    "text": "Eikan Nine",
    "font": "ttf:rounded:10",
    "copy": "clear",
-   "style": "b4_eik0"
+   "style": "l11_e1_0"
   },
   {
    "bank": "r4_eik#3",
@@ -557,7 +557,7 @@
    "text": "Eikan Nine",
    "font": "ttf:rounded:10",
    "copy": "clear",
-   "style": "b4_eik1"
+   "style": "l11_e1_1"
   },
   {
    "bank": "r4_eik#3",
@@ -571,7 +571,7 @@
    "text": "Eikan Nine",
    "font": "ttf:rounded:10",
    "copy": "clear",
-   "style": "b4_eik2"
+   "style": "l11_e1_2"
   }
  ]
 }

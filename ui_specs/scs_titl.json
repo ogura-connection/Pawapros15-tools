@@ -730,5 +730,49 @@
    ],
    "name": "btn02"
   }
+ ],
+ "paint": [
+  {
+   "bank": "y5_tic_h1",
+   "page": 0,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Hakkyu Dream",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "l11_h1_0"
+  },
+  {
+   "bank": "y5_tic_h1",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "Hakkyu Dream",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "l11_h1_1"
+  },
+  {
+   "bank": "y5_tic_h1",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    56,
+    128
+   ],
+   "text": "Hakkyu Dream",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "l11_h1_2"
+  }
  ]
 }
