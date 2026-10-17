@@ -422,13 +422,13 @@ EIK_TITLE = dict(face=[(0, (255, 246, 197)), (0.14, (255, 230, 140)), (0.32, (25
 EIK_SUB = dict(face=[(0, (115, 50, 20)), (1, (80, 24, 8))], soft=None, layers=[("ring", [8, 4], (255, 255, 238))])
 EIK = {
     "eik_tit": dict(
-        T=dict(text=dict(text="EIKAN NINE", face="futura", cap=38, squeeze=0.74, track=2.4), cx=145, y=38, style=EIK_TITLE),
+        T=dict(text=dict(text="EIKAN NINE", face="futura", cap=38, squeeze=0.72, track=2.0, bold=0.4), cx=145, y=38, style=EIK_TITLE),
         Sb=dict(text=dict(text="Build a Powerhouse Club!", face="avh", cap=15, squeeze=0.86, track=0.6), cx=150, y=91, style=EIK_SUB),
         tz=[(36, 28), (254, 28), (254, 87), (36, 87)], sz=[(56, 87), (246, 87), (246, 114), (56, 114)]),
     "eik_sel": dict(
-        T=dict(text=dict(text="EIKAN NINE", face="futura", cap=25, squeeze=0.74, track=1.6), cx=114, y=32,
+        T=dict(text=dict(text="EIKAN NINE", face="futura", cap=25, squeeze=0.72, track=1.5, bold=0.1), cx=114, y=32,
                style=dict(EIK_TITLE, layers=[("extrude", (-1, -1, 2), _bevel_col), ("shadow", (1, 1), (16, 16, 24))])),
-        Sb=dict(text=dict(text="Build a Powerhouse Club!", face="avh", cap=11, squeeze=0.84, track=0.5), cx=115, y=68,
+        Sb=dict(text=dict(text="Build a Powerhouse Club!", face="avh", cap=11, squeeze=0.78, track=0.5), cx=115, y=68,
                 style=dict(EIK_SUB, layers=[("ring", [8], (255, 255, 238))])),
         tz=[(40, 28), (190, 28), (190, 64), (40, 64)], sz=[(52, 64), (180, 64), (180, 84), (52, 84)]),
 }
