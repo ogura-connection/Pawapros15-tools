@@ -1237,5 +1237,21 @@
     }
    ]
   }
+ ],
+ "paint": [
+  {
+   "bank": "y5_cmk_0",
+   "page": 1,
+   "rect": [
+    31,
+    104,
+    128,
+    128
+   ],
+   "text": ": Change View",
+   "font": "ttf:rounded:10:0:0.9:0.4",
+   "copy": "clear",
+   "style": "makehint"
+  }
  ]
 }
