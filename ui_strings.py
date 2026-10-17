@@ -191,10 +191,27 @@ def find_help(rel):
     return out
 
 
+# Strings that end a longer glyph run (a symbol table in front of them): their own slot from this offset to the 0xFFFF.
+TAIL_SLOTS = {("sct_card.rel", 5, 3272)}                # 監督！ above the Eikan Nine command help ("Skip!")
+
+
+def find_tails(rel):
+    out = []
+    for name, sec, off in TAIL_SLOTS:
+        if name != rel.name:
+            continue
+        d = rel.sec_data(sec)
+        hw = struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2])
+        i = off // 2
+        j = hw.index(END, i)
+        out.append({"section": sec, "offset": off, "cells": j - i, "units": list(hw[i:j]), "text": units_text(hw[i:j])})
+    return out
+
+
 def find(rel, region=None):
     """[{"section", "offset", "cells", "units", "text"}] for every string slot of a module.
     cells = glyphs in front of the 0xFFFF, padding included: what an English string may fill."""
-    out = find_help(rel)
+    out = find_help(rel) + find_tails(rel)
     for sec in rel.sections:
         if sec["exec"] or sec["bss"] or not sec["offset"] or sec["size"] < 4:
             continue
