@@ -362,7 +362,7 @@ HAK = {
     "hak_sel": dict(
         T=dict(text=dict(text="HAKKYU DREAM", face="futura", cap=22, squeeze=0.68, shear=0.22, rise=9, track=1.4, bold=0.2), x=22, y=22,
                style=_with_depth(HAK_TITLE, 5)),
-        Sb=dict(text=dict(text="Industrial-League Ball!", face="avh", cap=11, squeeze=0.78, track=0.6), cx=141, y=58, style=HAK_SUB),
+        Sb=dict(text=dict(text="Industrial-League Ball!", face="din", cap=12, squeeze=1.0, track=0.6), cx=139, y=58, style=HAK_SUB),
         tz=[(26, 66), (32, 30), (80, 26), (130, 14), (178, 6), (186, 12), (191, 40), (197, 62), (80, 68), (40, 70)],
         sz=[_f(x, y) for x, y in HAK_SZ], dz=[_f(x, y) for x, y in HAK_DZ], ball=(56.5, 41.5, 29.5), fmap=_f, k=_K),
 }
@@ -428,7 +428,7 @@ EIK = {
     "eik_sel": dict(
         T=dict(text=dict(text="EIKAN NINE", face="futura", cap=25, squeeze=0.72, track=1.5, bold=0.1), cx=114, y=32,
                style=dict(EIK_TITLE, layers=[("extrude", (-1, -1, 2), _bevel_col), ("shadow", (1, 1), (16, 16, 24))])),
-        Sb=dict(text=dict(text="Build a Powerhouse Club!", face="avh", cap=11, squeeze=0.78, track=0.5), cx=115, y=68,
+        Sb=dict(text=dict(text="Build a Powerhouse Club!", face="din", cap=13, squeeze=0.95, track=0.6), cx=115, y=67,
                 style=dict(EIK_SUB, layers=[("ring", [8], (255, 255, 238))])),
         tz=[(40, 28), (190, 28), (190, 64), (40, 64)], sz=[(52, 64), (180, 64), (180, 84), (52, 84)]),
 }
