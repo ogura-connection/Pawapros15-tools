@@ -95,6 +95,11 @@ END = 0xFFFF
 # Help texts of vs.rel (Exhibition menu, control setups): lines split by HELP_NL, closed by HELP_END (not 0xFFFF), a
 # coloured first line allowed. English: "|" between lines, {c:...} for colour. Cells = units in front of HELP_END.
 HELP_FILES = {"vs.rel"}
+# Slots that may also use the alignment cell behind their 0xFFFF (a glyph 0 that ends on a 4-byte boundary): the
+# pitching / batting form names of main_prg.rel whose English needs 9-10 letters. The build moves the 0xFFFF one cell on.
+WIDE_SLOTS = {("main_prg.rel", 5, o) for o in (
+    150532, 150688, 150736, 150748, 151000, 151024, 151756, 151860, 151920, 152152, 152256, 152852, 152900, 152936,
+    153040, 153052, 153076, 153192, 153216, 153328, 153512, 153536, 154288)}
 HELP_NL, HELP_END = 0x1FFE, 0x1FFF
 # Line width overrides. (file, cells of the slot) -> cells per line: tested in the game.
 LINE_CELLS = {("scs_sys.rel", 36): 18, ("scs_titl.rel", 32): 16, ("scs_rens.rel", 28): 14,
@@ -214,7 +219,9 @@ def find(rel, region=None):
                 text = units_text(units)
                 if sum(0x3040 <= ord(c) <= 0x30FF or 0x4E00 <= ord(c) <= 0x9FFF for c in text) >= 2 \
                         or (rel.name, sec["index"], i * 2) in SHORT_TEXT:
-                    out.append({"section": sec["index"], "offset": i * 2, "cells": j - i,
+                    wide = (rel.name, sec["index"], i * 2) in WIDE_SLOTS and j + 1 < len(hw) and hw[j + 1] == 0 \
+                        and (j + 2) * 2 % 4 == 0
+                    out.append({"section": sec["index"], "offset": i * 2, "cells": j - i + wide,
                                 "units": list(units), "text": text})
             i = j + 1
     return out

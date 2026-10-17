@@ -1032,10 +1032,14 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 pos = m.sections[sec]["offset"] + remap(off)     # sections in front of a rebuilt one stay
                 if any(mid == m.mod_id and s < sec for mid, s in remaps):
                     sys.exit("%s: a string table behind the rebuilt section is not supported" % m.name)
-                assert image[pos + len(data):pos + len(data) + 2] == (b"\x1f\xff" if help else b"\xff\xff"), \
-                    (m.name, sec, off)
+                if (m.name, sec, off) in ui_strings.WIDE_SLOTS:      # the 0xFFFF moves into the alignment cell
+                    assert image[pos + len(data) - 2:pos + len(data) + 2] == b"\xff\xff\x00\x00", (m.name, sec, off)
+                    image[pos + len(data):pos + len(data) + 2] = b"\xff\xff"
+                else:
+                    assert image[pos + len(data):pos + len(data) + 2] == (b"\x1f\xff" if help else b"\xff\xff"), \
+                        (m.name, sec, off)
                 image[pos:pos + len(data)] = data
-                patched[m.mod_id][(sec, off)] = data
+                patched[m.mod_id][(sec, off)] = data + b"\xff\xff" * ((m.name, sec, off) in ui_strings.WIDE_SLOTS)
             for blk in ui_strings.BLOCKS.get(m.name, ()):        # strings that move: new layout, new pointers
                 if not any(ui_strings.block_of(m.name, sec, off) is blk for sec, off in strings[m.name]):
                     continue

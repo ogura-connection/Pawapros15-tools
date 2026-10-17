@@ -87,6 +87,7 @@
 5	150488	74e6	Overhand 10
 5	150508	3487	Fujii
 5	150520	c67f	Shimizu N.
+5	150532	8533	Kawasaki
 5	150544	f452	Ogino
 5	150556	3996	Sikorski Form
 5	150576	3d60	Saito K.
@@ -98,9 +99,12 @@
 5	150652	c022	Tanaka
 5	150664	2104	Iwakuma
 5	150676	108b	Nagai
+5	150688	a894	Yoshizaki
 5	150700	86a1	Wakui
 5	150712	8935	Ishii K.
 5	150724	5ea7	Okamoto S.
+5	150736	563b	Motoyanagi
+5	150748	45b7	Mitsuhara
 5	150760	fe2b	Uehara
 5	150772	7a43	Utsumi
 5	150784	15a0	Toyoda
@@ -118,9 +122,12 @@
 5	150928	4f6f	Yokoyama
 5	150940	bcad	Aoki T.
 5	150952	76a9	Nagakawa
+5	150964	64b4	Kawashima
 5	150976	2bc1	Kato
 5	150988	7028	Igarashi
+5	151000	e4df	Yoshinori
 5	151012	4d7c	Murata
+5	151024	82f6	Nishimoto
 5	151036	801d	Hoshino
 5	151048	ecd1	Yamauchi
 5	151060	fd86	Kaku Genji
@@ -162,6 +169,7 @@
 5	151716	71f6	Ariume
 5	151728	def5	Domingo Form
 5	151744	aef4	Hasebe
+5	151756	2475	Nishiguchi
 5	151768	82d9	Hoashi
 5	151780	b766	Hirano Y.
 5	151792	bcf7	Davey Form
@@ -169,10 +177,12 @@
 5	151820	49c0	Kroon Form
 5	151836	db85	Yamamoto M
 5	151848	cd43	Iwase
+5	151860	e1cf	Shimoyana
 5	151872	fc45	Uezono
 5	151884	a7ec	Nomi
 5	151896	b013	Doi Form
 5	151908	339a	Yoshimi
+5	151920	c0bd	Masubuchi
 5	151932	0aa3	Ono Form
 5	151944	9c29	3-Quarters 42
 5	151968	9fc1	3-Quarters 43
@@ -186,6 +196,7 @@
 5	152104	19d5	Sidearm 8
 5	152120	5c08	Micheal Form
 5	152140	7ec4	Shozu
+5	152152	b7a7	Iwasaki
 5	152164	da5e	Yoshino
 5	152176	37f6	Suzuki
 5	152188	b022	Williams Form
@@ -193,6 +204,7 @@
 5	152220	2bc1	Kato
 5	152232	2fc3	Umetsu
 5	152244	604b	Lim C.Y.
+5	152256	833e	Kobayashi
 5	152268	4736	Mizuki
 5	152280	5125	Submarine 1
 5	152300	4112	Submarine 2
@@ -225,19 +237,27 @@
 5	152800	d41c	Standard 24
 5	152820	c60d	Standard 25
 5	152840	3ea2	Morimoto
+5	152852	b6b2	Takahashi
 5	152864	3629	Fukuura
 5	152876	b990	Otsuka
 5	152888	4778	Benny Form
+5	152900	d6da	Matsunaka
 5	152912	27e6	Tamura
 5	152924	a174	Matsuda
+5	152936	23a7	Isobe
+5	152948	a3d5	Yamasaki T
 5	152960	a4e5	Rick Form
 5	152972	b46f	Nakajima
 5	152984	5aed	Kataoka
 5	152996	d56d	G.G. Sato Form
 5	153016	5e50	Hosokawa
 5	153028	804f	Eto Form
+5	153040	01bb	Matsuzaka
+5	153052	bbbc	Muramatsu
 5	153064	f106	Shiozaki
+5	153076	13de	Hamanaka
 5	153088	012a	Kiyohara
+5	153100	4b4e	Yoshinobu
 5	153112	3b2b	Niooka
 5	153124	f11f	Yano
 5	153136	d786	Kimura T.
@@ -245,7 +265,9 @@
 5	153160	2092	Tani
 5	153168	17c2	Abe Form
 5	153180	5dcf	Sakamoto
+5	153192	51ea	Tatsunami
 5	153204	28af	Ibata
+5	153216	7d29	Tanishige
 5	153228	7203	Nakamura N
 5	153240	00b5	T. Woods Form
 5	153256	3147	Eichi
@@ -254,12 +276,14 @@
 5	153292	3ce6	Fujimoto
 5	153304	0839	Hiyama
 5	153316	62fa	Kinjo
+5	153328	7374	Yoshimura
 5	153340	fd8b	Suzuki T.
 5	153352	19cb	Ishii T.
 5	153364	248d	Nishi
 5	153376	1d90	Onishi
 5	153388	63fd	Maeda
 5	153400	e1c0	Kurihara
+5	153412	14a7	Kida T.
 5	153424	6450	Ogata
 5	153436	5932	Amaya
 5	153448	66b8	Aoki
@@ -267,7 +291,9 @@
 5	153476	a892	Yoneno
 5	153488	b7bb	Saito
 5	153500	85e2	Kakefu
+5	153512	9b3b	Nagashima
 5	153524	2992	Haru
+5	153536	bf8e	Mizuguchi
 5	153548	5c77	Home Run-kun Form
 5	153568	c435	Standard 85
 5	153588	f85f	Standard 86
@@ -304,6 +330,7 @@
 5	154252	5485	Nakata
 5	154264	d52e	Nishioka
 5	154276	4228	Satozaki
+5	154288	51dd	Kawasaki
 5	154300	abd0	Honda
 5	154312	fdb0	Teppei
 5	154324	383c	Nakamura
