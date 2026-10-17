@@ -173,3 +173,119 @@ STYLES = {
     "p11_hak0": _window(_hakkyu, 0, 80, 0, 128),
     "p11_hak1": _window(_hakkyu, 0, 80, 128, 224),
 }
+
+
+# ---- scs_titl.arc y5_tic_h1: the big Hakkyu Dream title logo (sprite 00, canvas 312 x 128, palette 128) -----------------------
+import importlib.util as _iu
+_PARTS = [(0, -5, 128), (1, 123, 128), (2, 251, 56)]     # page, canvas x of page column 0, used width
+def _h1_orig():
+    import ui_textures as U
+    d = open(os.path.join(U.ORIG_ARC_DIR, "scs_titl.arc"), "rb").read()
+    b = next(x for x in U.banks(d, U.elf_symbols(d)) if x["name"] == "y5_tic_h1")
+    c = np.zeros((128, 312), np.uint8)
+    for pg, x0, w in _PARTS:
+        idx = U.decode_indices(d, *b["pages"][pg])
+        for X in range(w):
+            if 0 <= x0 + X < 312: c[:, x0 + X] = idx[:, X]
+    return c, U.palette_colours(d, b["pal"])[128 * 16:128 * 16 + 256]
+
+def _blob_filter(m, minsize):
+    from collections import deque
+    H, W = m.shape; seen = np.zeros_like(m); out = np.zeros_like(m)
+    for y in range(H):
+        for x in range(W):
+            if m[y, x] and not seen[y, x]:
+                q = deque([(y, x)]); seen[y, x] = True; comp = []
+                while q:
+                    a, b = q.popleft(); comp.append((a, b))
+                    for da in (-1, 0, 1):
+                        for db in (-1, 0, 1):
+                            a2, b2 = a + da, b + db
+                            if 0 <= a2 < H and 0 <= b2 < W and m[a2, b2] and not seen[a2, b2]:
+                                seen[a2, b2] = True; q.append((a2, b2))
+                if len(comp) >= minsize:
+                    for a, b in comp: out[a, b] = True
+    return out
+
+def logo_h1(title="Hakkyu Dream", sub="~ Industrial-League Ball! ~", tcap=34, tsq=0.78, trk=2.0, s0=0.85, s1=1.12, rise=12,
+            tx=26, tbottom=94, scap=14, ssq=0.9, scx=190, sbottom=116, sstroke=0.2, strk=0.8, tstroke=0.12, twhite=3.0, tnavy=1.0,
+            shadow=(1, 1), debug=None):
+    c, pal = _h1_orig()
+    q = A.Quant(pal, c)
+    rgb0 = pal[c][..., :3].astype(int); R, G, B = rgb0[..., 0], rgb0[..., 1], rgb0[..., 2]
+    H, W = c.shape; yy, xx = np.mgrid[0:H, 0:W]
+    nz = c > 0
+    red = (R > 200) & (R - G > 60) & (R - B > 20); orange = (R > 200) & (G > 90) & (B < 110)
+    sblue = (B > 200) & (G > 80) & (R < 110) & (G > R + 40)
+    flag = nz & (red | orange | sblue)
+    cx, cy, rr = 52.5, 65.0, 44.5
+    d = np.hypot(xx - cx, yy - cy)
+    ball = d <= rr + 2.5
+    keep = flag & ~ball & ~((xx >= 100) & (xx <= 273) & (yy >= 86))
+    keep |= flag & (xx <= 48) & (yy >= 98)
+    keep |= nz & ((R > 200) & (R - G > 40)) & ball & (xx >= 85) & (yy >= 98) & (xx <= 102)   # orange tip under the title
+    keep = _blob_filter(keep, 25)
+    new = np.zeros_like(c); rgbf = np.zeros((H, W, 3)); A_ = np.zeros((H, W), bool)
+    # ball: white disc, kept stitches, rim
+    disc = d <= rr
+    stitch = disc & (c > 0) & (R > 200) & (R - G > 45) & (np.abs(B - G) < 80) & (d <= rr - 2)
+    rgbf[disc] = (255, 255, 255); A_ |= disc
+    rim = (np.abs(d - rr) <= 0.75)
+    rgbf[rim] = (106, 106, 148)
+    rgbf[stitch] = rgb0[stitch]
+    # blue spikes rebuilt (fragments only survive under the old lettering)
+    def tri(pts):
+        return A.poly_mask(pts, H, W)
+    for pts in (((236, 22), (262, 16), (241, 32)), ((250, 41), (284, 43), (253, 50)), ((262, 62), (286, 68), (265, 71))):
+        m = tri(pts) & ~keep; keep |= m
+        rgbf[m] = (40, 110, 255)
+    # pennant: extend the red band to the left behind the title
+    redk = keep & (rgb0[..., 0] > 200) & (rgb0[..., 0] - rgb0[..., 1] > 60)
+    rgbf[keep & ~redk] = rgb0[keep & ~redk]
+    rgbf[redk] = rgb0[redk]
+    pen = tri(((150, 44), (178, 37), (232, 10), (238, 11), (232, 40), (200, 60), (150, 62))) & ~keep
+    for y in range(H):
+        row = pen[y]
+        if row.any():
+            ref = rgb0[y][redk[y]] if redk[y].any() else None
+            col = np.median(ref, 0) if ref is not None else np.array([255, 49, 82])
+            rgbf[y][row] = col
+    keep |= pen
+    A_ |= keep
+    shape = A_.copy()
+    # title
+    cov = hires_cov(title, tcap, "condbi", tstroke, tsq, trk, s0, s1, rise)
+    m = smooth_mask(cov)
+    tr, ta = compose_layers(m, [(OV * twhite, (255, 255, 255), None), (OV * tnavy, (0, 0, 90), shadow), (OV * tnavy, (0, 0, 90), None)],
+                            lambda n: A.grad_rows(BLUE_FACE, n), pad=6)
+    y = tbottom - tr.shape[0]
+    sl = (slice(y, y + tr.shape[0]), slice(tx, tx + tr.shape[1]))
+    # the title sits over ball/flags; stitches only where the title is not
+    rgbf[sl][ta] = tr[ta]; A_[sl] |= ta
+    # subtitle
+    cov = hires_cov(sub, scap, "condb", sstroke, ssq, strk)
+    m2 = smooth_mask(cov)
+    sr, sa = compose_layers(m2, [(OV * 1.6, (255, 255, 255), None), (OV * 0.8, (110, 10, 0), None)], lambda n: A.grad_rows(SUB_FACE, n), pad=3)
+    x_ = scx - sr.shape[1] // 2; y_ = sbottom - sr.shape[0]
+    sl2 = (slice(y_, y_ + sr.shape[0]), slice(x_, x_ + sr.shape[1]))
+    rgbf[sl2][sa] = sr[sa]; A_[sl2] |= sa
+    # outer white border around everything that is not already bordered (ball+flags)
+    allm = A_ & ~(disc & ~rim & False)
+    bord = A.grow(A_, 2) & ~A_
+    rgbf[bord] = (255, 255, 255); A_ |= bord
+    new[A_] = q(rgbf[A_])
+    return new, dict(title=(tr.shape[1], tr.shape[0], tx, y), sub=(sr.shape[1], sr.shape[0], x_, y_))
+
+@functools.lru_cache(None)
+def _h1():
+    return logo_h1()[0]
+
+def _h1page(page):
+    def style(ink, base):
+        C = _h1()
+        if page == 0: a = np.concatenate([np.zeros((128, 5), np.uint8), C[:, 0:123]], 1)
+        elif page == 1: a = C[:, 123:251]
+        else: a = C[:, 251:307]
+        return a.copy(), 0
+    return style
+STYLES["p11_h1_0"] = _h1page(0); STYLES["p11_h1_1"] = _h1page(1); STYLES["p11_h1_2"] = _h1page(2)
