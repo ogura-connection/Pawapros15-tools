@@ -298,8 +298,8 @@ def _with_depth(st, depth):
 
 
 # right-hand decoration (pennant + fan of two-tone spikes), title-screen coordinates
-PENNANT = [(150, 64), (150, 44), (241, 3), (246, 7), (238, 64)]
-HUB = (232, 66)
+PENNANT = [(150, 64), (150, 44), (250, 23.5), (252.5, 26), (238, 64)]   # tip ends under the top spike of the fan
+HUB = (238, 34)
 SPIKES = [((268, 13), "b", 5.5), ((290, 22), "y", 6), ((293, 42), "b", 6), ((287, 50), "r", 4), ((306, 58), "y", 6.5),
           ((297, 68), "b", 5.5), ((302, 90), "y", 6)]
 SPIKE_COL = {"b": ((60, 130, 255), (0, 16, 222)), "y": ((255, 230, 74), (255, 148, 8)), "r": ((246, 98, 131), (230, 32, 65))}
@@ -322,7 +322,7 @@ def deco(H, W, f, k=1.0):
     hx, hy = HUB
     for (tx, ty), ck, w in SPIKES:
         ax, ay = tx - hx, ty - hy; L = np.hypot(ax, ay); ux, uy = ax / L, ay / L; nx, ny = -uy, ux
-        bx, by = hx + ux * L * 0.35, hy + uy * L * 0.35
+        bx, by = hx + ux * L * 0.15, hy + uy * L * 0.15
         w = w * max(1.0, 0.8 / k)
         light = [(tx, ty), (bx + nx * w, by + ny * w), (bx, by)]
         dark = [(tx, ty), (bx, by), (bx - nx * w, by - ny * w)]
