@@ -2354,7 +2354,7 @@
      ],
      "text": "00M",
      "style": "o_f15_r11_s0_c2",
-     "font": "nb13b",
+     "font": "dc13g2b10",
      "valign": "centre"
     },
     {
@@ -4033,7 +4033,7 @@
       88,
       32
      ],
-     "text": "Trophy Room",
+     "text": "Trophy\nRoom",
      "style": "o_f15_rb1_s0_c2",
      "font": "nb16",
      "valign": "centre"
