@@ -30,20 +30,6 @@
      128
     ],
     [
-     4,
-     0,
-     0,
-     128,
-     76
-    ],
-    [
-     4,
-     120,
-     88,
-     128,
-     128
-    ],
-    [
      5,
      0,
      40,
@@ -95,160 +81,6 @@
    ],
    "labels": [
     {
-     "from": [
-      0,
-      0,
-      0,
-      128,
-      64
-     ],
-     "text": "Rock-Paper-Scissors",
-     "style": "f8_r3_chpab_12_r0_0_0~0_110",
-     "font": "ttf:narrow:31:0.0:0.85:0.3",
-     "baseline": 45,
-     "left": 18
-    },
-    {
-     "from": [
-      0,
-      0,
-      64,
-      128,
-      128
-     ],
-     "text": "Rock-Paper-Scissors",
-     "style": "f8_r3_chpab_12_r0_0_0~110_238",
-     "font": "ttf:narrow:31:0.0:0.85:0.3",
-     "baseline": 45,
-     "left": 0
-    },
-    {
-     "from": [
-      1,
-      0,
-      0,
-      80,
-      64
-     ],
-     "text": "Rock-Paper-Scissors",
-     "style": "f8_r3_chpab_12_r0_0_0~238_4096",
-     "font": "ttf:narrow:31:0.0:0.85:0.3",
-     "baseline": 45,
-     "left": 0
-    },
-    {
-     "from": [
-      12,
-      0,
-      0,
-      128,
-      72
-     ],
-     "text": "Rock,",
-     "style": "f8_r3_chpab_18_r12_0_0~0_126",
-     "font": "ttf:narrow:66:0.0:0.85:0.3",
-     "baseline": 70,
-     "left": 2
-    },
-    {
-     "from": [
-      5,
-      0,
-      40,
-      48,
-      112
-     ],
-     "text": "Rock,",
-     "style": "f8_r3_chpab_18_r12_0_0~126_4096",
-     "font": "ttf:narrow:66:0.0:0.85:0.3",
-     "baseline": 70,
-     "left": 0
-    },
-    {
-     "from": [
-      13,
-      0,
-      0,
-      128,
-      16
-     ],
-     "text": "Paper,",
-     "style": "f8_r3_chpab_19_r13_0_0~0_125",
-     "font": "ttf:narrow:40:0.0:0.85:0.3",
-     "baseline": 0,
-     "left": 3
-    },
-    {
-     "from": [
-      12,
-      0,
-      72,
-      128,
-      128
-     ],
-     "text": "Paper,",
-     "style": "f8_r3_chpab_19_r13_0_0~0_4096",
-     "font": "ttf:narrow:40:0.0:0.85:0.3",
-     "baseline": 56,
-     "left": 3
-    },
-    {
-     "from": [
-      13,
-      0,
-      16,
-      128,
-      104
-     ],
-     "text": "Shoot!",
-     "style": "f8_r3_chpab_1a_r13_0_16~0_124",
-     "font": "ttf:narrow:45:0.0:0.85:0.3",
-     "baseline": 66,
-     "left": 4
-    },
-    {
-     "from": [
-      2,
-      112,
-      0,
-      128,
-      88
-     ],
-     "text": "Shoot!",
-     "style": "f8_r3_chpab_1a_r13_0_16~124_4096",
-     "font": "ttf:narrow:45:0.0:0.85:0.3",
-     "baseline": 66,
-     "left": 0
-    },
-    {
-     "from": [
-      5,
-      48,
-      40,
-      128,
-      112
-     ],
-     "text": "Again",
-     "style": "f8_r3_chpab_1b_r5_48_40~0_69",
-     "font": "ttf:rounded:58:0.0:0.85:0.3",
-     "baseline": 66,
-     "left": 11
-    },
-    {
-     "from": [
-      4,
-      0,
-      0,
-      128,
-      72
-     ],
-     "text": "Again",
-     "style": "f8_r3_chpab_1b_r5_48_40~69_4096",
-     "font": "ttf:rounded:58:0.0:0.85:0.3",
-     "baseline": 66,
-     "left": 0
-    },
-    {
      "sprite": "14",
      "text": ": Start",
      "style": "f8_r3_chpab_14",
@@ -280,34 +112,6 @@
      "sprites": [
       "15"
      ]
-    },
-    {
-     "from": [
-      9,
-      0,
-      72,
-      128,
-      96
-     ],
-     "text": "Press the button on \"Shoot!\"",
-     "style": "f8_r3_chpab_15_r9_0_72_p~0_125",
-     "font": "ttf:rounded:13:0.0:0.85:0.2",
-     "baseline": 19,
-     "left": 3
-    },
-    {
-     "from": [
-      9,
-      0,
-      96,
-      88,
-      120
-     ],
-     "text": "Press the button on \"Shoot!\"",
-     "style": "f8_r3_chpab_15_r9_0_72_p~125_4096",
-     "font": "ttf:rounded:13:0.0:0.85:0.2",
-     "baseline": 19,
-     "left": 0
     },
     {
      "from": [
@@ -373,8 +177,172 @@
      ],
      "text": "Wins",
      "style": "f8_r3_chpab_1c_r1_0_64",
-     "font": "ttf:rounded:42:0.0:0.92:0.3",
-     "baseline": 50
+     "font": "ttf:rounded:38:0.0:0.92:0.3",
+     "baseline": 50,
+     "left": 8
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      64
+     ],
+     "text": "Rock-Paper-Scissors",
+     "style": "fxE_ch12~0_118",
+     "font": "ttf:narrow:32:0.0:0.85:0.3",
+     "baseline": 45,
+     "left": 10
+    },
+    {
+     "from": [
+      0,
+      0,
+      64,
+      128,
+      128
+     ],
+     "text": "Rock-Paper-Scissors",
+     "style": "fxE_ch12~118_246",
+     "font": "ttf:narrow:32:0.0:0.85:0.3",
+     "baseline": 45,
+     "left": 0
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      80,
+      64
+     ],
+     "text": "Rock-Paper-Scissors",
+     "style": "fxE_ch12~246_4096",
+     "font": "ttf:narrow:32:0.0:0.85:0.3",
+     "baseline": 45,
+     "left": 0
+    },
+    {
+     "from": [
+      9,
+      0,
+      72,
+      128,
+      96
+     ],
+     "text": "Press the button on \"Shoot!\"",
+     "style": "fxE_ch15~0_127",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 17,
+     "left": 1
+    },
+    {
+     "from": [
+      9,
+      0,
+      96,
+      88,
+      120
+     ],
+     "text": "Press the button on \"Shoot!\"",
+     "style": "fxE_ch15~127_4096",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 17,
+     "left": 0
+    },
+    {
+     "from": [
+      12,
+      0,
+      0,
+      128,
+      72
+     ],
+     "text": "Rock,",
+     "style": "fxE_ch18~0_107",
+     "font": "ttf:narrow:48:0.0:0.85:0.3",
+     "baseline": 61,
+     "left": 21
+    },
+    {
+     "from": [
+      5,
+      0,
+      40,
+      48,
+      112
+     ],
+     "text": "Rock,",
+     "style": "fxE_ch18~107_4096",
+     "font": "ttf:narrow:48:0.0:0.85:0.3",
+     "baseline": 61,
+     "left": 0
+    },
+    {
+     "sprite": "19",
+     "text": "Paper,",
+     "style": "fxE_ch19",
+     "font": "ttf:narrow:41:0.0:0.85:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5
+    },
+    {
+     "from": [
+      13,
+      0,
+      16,
+      128,
+      104
+     ],
+     "text": "Shoot!",
+     "style": "fxE_ch1a~0_124",
+     "font": "ttf:narrow:42:0.0:0.85:0.3",
+     "baseline": 62,
+     "left": 4
+    },
+    {
+     "from": [
+      2,
+      112,
+      0,
+      128,
+      88
+     ],
+     "text": "Shoot!",
+     "style": "fxE_ch1a~124_4096",
+     "font": "ttf:narrow:42:0.0:0.85:0.3",
+     "baseline": 62,
+     "left": 0
+    },
+    {
+     "from": [
+      5,
+      48,
+      40,
+      128,
+      112
+     ],
+     "text": "Again",
+     "style": "fxE_ch1b~0_44",
+     "font": "ttf:rounded:40:0.0:0.85:0.3",
+     "baseline": 54,
+     "left": 36
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      128,
+      72
+     ],
+     "text": "Again",
+     "style": "fxE_ch1b~44_4096",
+     "font": "ttf:rounded:40:0.0:0.85:0.3",
+     "baseline": 54,
+     "left": 0
     }
    ],
    "name": "r3_chpab#3",
@@ -406,7 +374,7 @@
     [
      4,
      64,
-     0,
+     40,
      128,
      72
     ],
@@ -422,44 +390,62 @@
     {
      "sprite": "05",
      "text": "Hira",
-     "style": "f8_r3_tna_05",
-     "font": "ttf:rounded:27:0.0:0.85:0.3",
-     "baseline": 34
+     "style": "fxE_tna",
+     "font": "ttf:narrow:13:0.0:0.9:0.3",
+     "baseline": 34,
+     "palettes": [
+      5
+     ]
     },
     {
      "sprite": "06",
      "text": "Hira",
-     "style": "f8_r3_tna_06",
-     "font": "ttf:rounded:27:0.0:0.85:0.3",
-     "baseline": 34
+     "style": "fxE_tna",
+     "font": "ttf:narrow:13:0.0:0.9:0.3",
+     "baseline": 34,
+     "palettes": [
+      8
+     ]
     },
     {
      "sprite": "07",
      "text": "Kata",
-     "style": "f8_r3_tna_07",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
-     "baseline": 33
+     "style": "fxE_tna",
+     "font": "ttf:narrow:13:0.0:0.9:0.3",
+     "baseline": 33,
+     "palettes": [
+      5
+     ]
     },
     {
      "sprite": "08",
      "text": "Kata",
-     "style": "f8_r3_tna_08",
-     "font": "ttf:rounded:24:0.0:0.85:0.3",
-     "baseline": 33
+     "style": "fxE_tna",
+     "font": "ttf:narrow:13:0.0:0.9:0.3",
+     "baseline": 33,
+     "palettes": [
+      8
+     ]
     },
     {
      "sprite": "09",
      "text": "ABC",
-     "style": "f8_r3_tna_09",
-     "font": "ttf:rounded:24:0.0:0.92:0.3",
-     "baseline": 32
+     "style": "fxE_tna",
+     "font": "ttf:narrow:13:0.0:0.9:0.3",
+     "baseline": 32,
+     "palettes": [
+      5
+     ]
     },
     {
      "sprite": "0a",
      "text": "ABC",
-     "style": "f8_r3_tna_0a",
-     "font": "ttf:rounded:24:0.0:0.92:0.3",
-     "baseline": 32
+     "style": "fxE_tna",
+     "font": "ttf:narrow:13:0.0:0.9:0.3",
+     "baseline": 32,
+     "palettes": [
+      8
+     ]
     }
    ],
    "name": "r3_tna",
@@ -513,8 +499,8 @@
     {
      "sprite": "1f",
      "text": "Game Results",
-     "style": "f8_r3_tsk_1f",
-     "font": "ttf:narrow:36:0.0:0.85:0.3",
+     "style": "fxE_tsk1f",
+     "font": "ttf:narrow:34:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 118,
      "dy": -1
@@ -525,48 +511,6 @@
      "style": "f8_r3_tsk_24",
      "font": "ttf:rounded:37:0.0:1.0:0.3",
      "baseline": 48
-    },
-    {
-     "from": [
-      0,
-      0,
-      0,
-      128,
-      40
-     ],
-     "text": "Same runs and hits, so it goes to",
-     "style": "f8_r3_tsk_00_r0_0_0_p~0_117",
-     "font": "ttf:narrow:18:0.0:0.85:0.2",
-     "baseline": 24,
-     "left": 11
-    },
-    {
-     "from": [
-      0,
-      0,
-      40,
-      128,
-      80
-     ],
-     "text": "Same runs and hits, so it goes to",
-     "style": "f8_r3_tsk_00_r0_0_0_p~117_245",
-     "font": "ttf:narrow:18:0.0:0.85:0.2",
-     "baseline": 24,
-     "left": 0
-    },
-    {
-     "from": [
-      0,
-      0,
-      80,
-      40,
-      120
-     ],
-     "text": "Same runs and hits, so it goes to",
-     "style": "f8_r3_tsk_00_r0_0_0_p~245_4096",
-     "font": "ttf:narrow:18:0.0:0.85:0.2",
-     "baseline": 24,
-     "left": 0
     },
     {
      "from": [
@@ -635,6 +579,48 @@
      "sprites": [
       "00"
      ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Same runs and hits, so it goes to",
+     "style": "fxE_tsk00~0_120",
+     "font": "ttf:narrow:18:0.0:0.85:0.2",
+     "baseline": 23,
+     "left": 8
+    },
+    {
+     "from": [
+      0,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Same runs and hits, so it goes to",
+     "style": "fxE_tsk00~120_248",
+     "font": "ttf:narrow:18:0.0:0.85:0.2",
+     "baseline": 23,
+     "left": 0
+    },
+    {
+     "from": [
+      0,
+      0,
+      80,
+      40,
+      120
+     ],
+     "text": "Same runs and hits, so it goes to",
+     "style": "fxE_tsk00~248_4096",
+     "font": "ttf:narrow:18:0.0:0.85:0.2",
+     "baseline": 23,
+     "left": 0
     }
    ],
    "name": "r3_tsk",

@@ -6501,10 +6501,10 @@
       96,
       96
      ],
-     "text": "Current →",
+     "text": "Now →",
      "style": "d5_btnb_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "0c"
      ]
@@ -6517,10 +6517,10 @@
       96,
       128
      ],
-     "text": "Practice Effect →",
+     "text": "Gain →",
      "style": "d5_btnb_s",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
-     "baseline": 19,
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
+     "baseline": 22,
      "sprites": [
       "0c"
      ]
@@ -6648,10 +6648,10 @@
       40,
       128
      ],
-     "text": "Run\nFld",
+     "text": "R/F",
      "style": "d5_sai_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.3",
-     "baseline": 18,
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
      "sprites": [
       "0d"
      ]
@@ -6728,9 +6728,9 @@
       104,
       72
      ],
-     "text": "Room for",
+     "text": "Can add",
      "style": "d5_sai_s",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
      "baseline": 14,
      "left": 1,
      "sprites": [
@@ -7799,9 +7799,9 @@
       128,
       24
      ],
-     "text": "Room for",
+     "text": "Can add",
      "style": "d5_room_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
      "baseline": 16,
      "left": 2,
      "sprites": [
@@ -7818,7 +7818,7 @@
      ],
      "text": "more",
      "style": "d5_room",
-     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
      "baseline": 16,
      "centre_x": 28,
      "sprites": [

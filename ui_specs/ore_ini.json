@@ -4024,11 +4024,11 @@
      "sprites": [
       "3e"
      ],
-     "text": "Parents Alive",
+     "text": "Parents\nAlive",
      "style": "mykblue",
      "font": "ttf:din:16:0:1:0.1",
-     "left": 32,
-     "baseline": 30
+     "left": 50,
+     "baseline": 42
     },
     {
      "from": [
@@ -4054,11 +4054,11 @@
      "sprites": [
       "3f"
      ],
-     "text": "Father Alive",
+     "text": "Father\nAlive",
      "style": "mykblue",
      "font": "ttf:din:16:0:1:0.1",
-     "left": 52,
-     "baseline": 30
+     "left": 72,
+     "baseline": 42
     },
     {
      "from": [
@@ -4097,11 +4097,11 @@
      "sprites": [
       "40"
      ],
-     "text": "Parents Passed",
+     "text": "Parents\nPassed",
      "style": "mykblue",
      "font": "ttf:din:16:0:1:0.1",
-     "left": 28,
-     "baseline": 30
+     "left": 52,
+     "baseline": 43
     },
     {
      "from": [
@@ -4140,11 +4140,11 @@
      "sprites": [
       "41"
      ],
-     "text": "Mother Alive",
+     "text": "Mother\nAlive",
      "style": "mykblue",
      "font": "ttf:din:16:0:1:0.1",
-     "left": 50,
-     "baseline": 30
+     "left": 69,
+     "baseline": 42
     },
     {
      "from": [
@@ -4183,11 +4183,11 @@
      "sprites": [
       "48"
      ],
-     "text": "Throws R, Bats R",
+     "text": "B/T: R/R",
      "style": "mykblue",
-     "font": "ttf:din:13:0:1:0.1",
-     "left": 5,
-     "baseline": 20
+     "font": "ttf:din:23:0:1:0.1",
+     "left": 15,
+     "baseline": 28
     },
     {
      "from": [
@@ -4213,11 +4213,11 @@
      "sprites": [
       "49"
      ],
-     "text": "Throws R, Bats L",
+     "text": "B/T: L/R",
      "style": "mykblue",
-     "font": "ttf:din:13:0:1:0.1",
-     "left": 6,
-     "baseline": 20
+     "font": "ttf:din:23:0:1:0.1",
+     "left": 16,
+     "baseline": 28
     },
     {
      "from": [
@@ -4243,11 +4243,11 @@
      "sprites": [
       "4a"
      ],
-     "text": "Throws R, Bats S",
+     "text": "B/T: S/R",
      "style": "mykblue",
-     "font": "ttf:din:13:0:1:0.1",
-     "left": 5,
-     "baseline": 20
+     "font": "ttf:din:23:0:1:0.1",
+     "left": 15,
+     "baseline": 28
     },
     {
      "from": [
@@ -4273,11 +4273,11 @@
      "sprites": [
       "4b"
      ],
-     "text": "Throws L, Bats R",
+     "text": "B/T: R/L",
      "style": "mykblue",
-     "font": "ttf:din:13:0:1:0.1",
-     "left": 6,
-     "baseline": 20
+     "font": "ttf:din:23:0:1:0.1",
+     "left": 16,
+     "baseline": 28
     },
     {
      "from": [
@@ -4303,11 +4303,11 @@
      "sprites": [
       "4c"
      ],
-     "text": "Throws L, Bats L",
+     "text": "B/T: L/L",
      "style": "mykblue",
-     "font": "ttf:din:14:0:1:0.1",
-     "left": 2,
-     "baseline": 21
+     "font": "ttf:din:23:0:1:0.1",
+     "left": 17,
+     "baseline": 28
     },
     {
      "from": [
@@ -4333,11 +4333,11 @@
      "sprites": [
       "4d"
      ],
-     "text": "Throws L, Bats S",
+     "text": "B/T: S/L",
      "style": "mykblue",
-     "font": "ttf:din:13:0:1:0.1",
-     "left": 6,
-     "baseline": 20
+     "font": "ttf:din:23:0:1:0.1",
+     "left": 16,
+     "baseline": 28
     },
     {
      "from": [
