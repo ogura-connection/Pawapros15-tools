@@ -483,8 +483,8 @@
       88,
       96
      ],
-     "text": "Drive",
-     "font": "ttf:narrow:17:0:1.0:0.4",
+     "text": "Motivation",
+     "font": "ttf:din:15:0:0.72:0.3",
      "style": "motivation",
      "under": 2
     },

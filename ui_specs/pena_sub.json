@@ -3410,21 +3410,21 @@
      "sprite": "6b",
      "text": "Walk-off Win",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "6c",
      "text": "1-Run Win",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "6d",
      "text": "Title Holder Played",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 69,
      "dy": 0
@@ -3440,14 +3440,14 @@
      "sprite": "70",
      "text": "All-Time Record",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "71",
      "text": "League-Best Record",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 75,
      "dy": 0
@@ -3456,7 +3456,7 @@
      "sprite": "72",
      "text": "Monthly MVP",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20,
      "left": 8
     },
