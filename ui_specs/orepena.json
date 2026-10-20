@@ -1470,7 +1470,7 @@
      ],
      "text": "Pitch / Bat Type",
      "style": "fxA_15_15_6_r33_s",
-     "font": "dc12g2b10",
+     "font": "nb14",
      "valign": "centre"
     },
     {
@@ -1587,7 +1587,7 @@
      ],
      "text": "Player Data",
      "style": "o_f15_r11_s0_c2",
-     "font": "dc12g2b10",
+     "font": "nb14",
      "valign": "centre"
     },
     {
@@ -9187,7 +9187,11 @@
      "sprites": [
       "47"
      ],
-     "left": 27
+     "left": 27,
+     "text": "MVP",
+     "style": "o2_f67_rbff_s1_c2",
+     "font": "ds22",
+     "baseline": 35
     },
     {
      "from": [
@@ -11973,8 +11977,8 @@
      "sprites": [
       "19"
      ],
-     "text": "Due in",
-     "style": "o2_ff_rd4_s0_c1",
+     "text": "Due In",
+     "style": "fxA_10_10_6_r4_s44e4",
      "font": "nb14",
      "left": 2,
      "baseline": 18
@@ -15149,7 +15153,7 @@
      "sprites": [
       "15"
      ],
-     "text": "Very Easy",
+     "text": "Easiest",
      "style": "o2_fe_r59_s0_c2",
      "font": "dc15g2b10",
      "left": -2,
@@ -15183,7 +15187,7 @@
      "sprites": [
       "17"
      ],
-     "text": "Very Hard",
+     "text": "Hardest",
      "style": "o2_fe_r59_s0_c2",
      "font": "dc15g2b10",
      "left": -1,
@@ -15252,7 +15256,7 @@
       "1b"
      ],
      "text": "2nd Base",
-     "style": "o2_ff_r49_s0_c1",
+     "style": "fxA_15_15_6_r44_s",
      "font": "nb14",
      "left": 6,
      "baseline": 17
@@ -15269,7 +15273,7 @@
       "1c"
      ],
      "text": "3rd Base",
-     "style": "o2_ff_r49_s0_c1",
+     "style": "fxA_15_15_6_r442_s",
      "font": "nb14",
      "left": 8,
      "baseline": 17
@@ -15286,7 +15290,7 @@
       "1d"
      ],
      "text": "Shortstop",
-     "style": "o2_ff_r49_s0_c1",
+     "style": "fxA_15_15_6_r44_s",
      "font": "nb14",
      "left": 2,
      "baseline": 17

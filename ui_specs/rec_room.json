@@ -678,7 +678,7 @@
      "sprite": "3b",
      "text": "CG",
      "style": "a8_gkn",
-     "font": "ttf:narrow:17:0.0:0.68:0.25",
+     "font": "ttf:narrow:15:0.0:0.68:0.25",
      "baseline": 6
     },
     {
@@ -2171,7 +2171,7 @@
      ],
      "text": "wins",
      "style": "b8_ck4",
-     "font": "ttf:narrow:11:0.0:1.0:0.25",
+     "font": "ttf:narrow:10:0.0:1.0:0.25",
      "baseline": 14,
      "sprites": [
       "18"
@@ -6086,8 +6086,8 @@
      "sprite": "28",
      "text": "R/R",
      "style": "fxB_km_text",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 14,
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 15,
      "pages": [
       7
      ],
@@ -6099,8 +6099,8 @@
      "sprite": "29",
      "text": "L/L",
      "style": "fxB_km_text",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 14,
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 15,
      "pages": [
       7
      ],
@@ -6112,8 +6112,8 @@
      "sprite": "2a",
      "text": "R/L",
      "style": "fxB_km_text",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 14,
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 15,
      "pages": [
       7
      ],
@@ -6125,8 +6125,8 @@
      "sprite": "2b",
      "text": "L/R",
      "style": "fxB_km_text",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 14,
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 15,
      "pages": [
       7
      ],
@@ -6138,8 +6138,8 @@
      "sprite": "2c",
      "text": "R/S",
      "style": "fxB_km_text",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 14,
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 15,
      "pages": [
       7
      ],
@@ -6151,8 +6151,8 @@
      "sprite": "2d",
      "text": "L/S",
      "style": "fxB_km_text",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 14,
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 15,
      "pages": [
       7
      ],
@@ -6164,8 +6164,8 @@
      "sprite": "2e",
      "text": "S/S",
      "style": "fxB_km_text",
-     "font": "ttf:rounded:13:0.0:1.0:0.3",
-     "baseline": 14,
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "baseline": 15,
      "pages": [
       7
      ],
@@ -6191,7 +6191,7 @@
      "text": "Hokkaido",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.81:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       7
      ],
@@ -6204,7 +6204,7 @@
      "text": "Aomori",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6217,7 +6217,7 @@
      "text": "Iwate",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6230,7 +6230,7 @@
      "text": "Miyagi",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6243,7 +6243,7 @@
      "text": "Akita",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6256,7 +6256,7 @@
      "text": "Yamagata",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.74:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6269,7 +6269,7 @@
      "text": "Fukushima",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.66:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6282,7 +6282,7 @@
      "text": "Ibaraki",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6295,7 +6295,7 @@
      "text": "Tochigi",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6308,7 +6308,7 @@
      "text": "Gunma",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6321,7 +6321,7 @@
      "text": "Saitama",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6334,7 +6334,7 @@
      "text": "Chiba",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6347,7 +6347,7 @@
      "text": "Tokyo",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6360,7 +6360,7 @@
      "text": "Kanagawa",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.74:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       3
      ],
@@ -6373,7 +6373,7 @@
      "text": "Niigata",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6386,7 +6386,7 @@
      "text": "Toyama",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6399,7 +6399,7 @@
      "text": "Ishikawa",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.87:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6412,7 +6412,7 @@
      "text": "Fukui",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6425,7 +6425,7 @@
      "text": "Yamanashi",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.66:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6438,7 +6438,7 @@
      "text": "Nagano",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       7
      ],
@@ -6451,7 +6451,7 @@
      "text": "Gifu",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6464,7 +6464,7 @@
      "text": "Shizuoka",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.87:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6477,7 +6477,7 @@
      "text": "Aichi",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6490,7 +6490,7 @@
      "text": "Mie",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6503,7 +6503,7 @@
      "text": "Shiga",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6516,7 +6516,7 @@
      "text": "Kyoto",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6529,7 +6529,7 @@
      "text": "Osaka",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6542,7 +6542,7 @@
      "text": "Hyogo",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6555,7 +6555,7 @@
      "text": "Nara",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       7
      ],
@@ -6568,7 +6568,7 @@
      "text": "Wakayama",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.66:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       7
      ],
@@ -6581,7 +6581,7 @@
      "text": "Tottori",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6594,7 +6594,7 @@
      "text": "Shimane",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.87:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6607,7 +6607,7 @@
      "text": "Okayama",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.81:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6620,7 +6620,7 @@
      "text": "Hiroshima",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.74:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6633,7 +6633,7 @@
      "text": "Yamaguchi",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.66:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6646,7 +6646,7 @@
      "text": "Tokushima",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.66:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6659,7 +6659,7 @@
      "text": "Kagawa",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.81:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       7
      ],
@@ -6672,7 +6672,7 @@
      "text": "Ehime",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6685,7 +6685,7 @@
      "text": "Kochi",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6698,7 +6698,7 @@
      "text": "Fukuoka",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.87:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6711,7 +6711,7 @@
      "text": "Saga",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6724,7 +6724,7 @@
      "text": "Nagasaki",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.81:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6737,7 +6737,7 @@
      "text": "Kumamoto",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.66:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6750,7 +6750,7 @@
      "text": "Oita",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.95:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6763,7 +6763,7 @@
      "text": "Miyazaki",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.87:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],
@@ -6776,7 +6776,7 @@
      "text": "Kagoshima",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.66:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       7
      ],
@@ -6789,7 +6789,7 @@
      "text": "Okinawa",
      "style": "fxB_km_text",
      "font": "ttf:rounded:8:0.0:0.87:0.3",
-     "baseline": 12,
+     "baseline": 13,
      "pages": [
       8
      ],

@@ -2886,7 +2886,7 @@
      "sprite": "3f",
      "text": "Local Dome",
      "style": "c5_stad",
-     "font": "ttf:narrow:17:0.0:0.92:0.35",
+     "font": "ttf:narrow:15:0.0:0.92:0.35",
      "baseline": 23
     },
     {
@@ -9206,7 +9206,7 @@
      "sprite": "05",
      "text": "Pennant!",
      "style": "fxB_pen00_05",
-     "font": "ttf:rounded:23:0.0:0.85:0.35",
+     "font": "ttf:rounded:22:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 63,
      "dy": 0
