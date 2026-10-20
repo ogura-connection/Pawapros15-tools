@@ -16,6 +16,7 @@ With "copy": [page, x0, y0, x1, y1] (the same plate with nothing on it, taken fr
 ("dx", "dy" move it). A "copy" narrower than the rectangle is repeated across it (a strip of plain plate);
 "copy": "clear" empties the rectangle (lettering with nothing behind it).
 "sheet" entries paint lettering into a picture cut over several pages (see ui_sheet.py).
+"strips" entries redraw names of a text atlas cut out by sprites of another file, in place (see paint_strips).
 A label of a group without "text" keeps its Japanese art. A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
 A spec is a JSON file:
   {"arc": "scs_main.arc",
@@ -416,6 +417,8 @@ def render(spec, d, banks, project=None):
     for entry in spec.get("sheet", ()):             # lettering painted across the pages of one picture
         import ui_sheet
         ui_sheet.paint(entry, d, banks, render.patches, project, pages=pages)
+    for entry in spec.get("strips", ()):            # names in a text atlas whose sprite tables are in another file
+        paint_strips(entry, d, banks, pages, project)
     for lab in spec.get("labels", ()):
         b = U.bank_named(banks, lab["bank"])
         key = (lab["bank"], lab["page"])
@@ -459,6 +462,83 @@ def render(spec, d, banks, project=None):
         add_halo(pages[key], lab["rect"], halo)
     render.report = {"scales": scales, "full": lab_used}
     return pages
+
+
+def strip_sprites(arc_name, prefix):
+    """{sprite id: [(page, palette, ox, oy, x0, y0, x1, y1)]} of the tables opd_<prefix>_NN of another .arc (its saved
+    original if there is one): the sprites that cut names out of a text atlas (gameplay.arc h3_tnm_0 / y5_knm_0 /
+    y4r_skn_0 draw the pages of dscn_str.arc)."""
+    path = os.path.join(U.ORIG_ARC_DIR, arc_name)
+    if not os.path.exists(path):
+        path = os.path.join(U.S.DATA_FILES, arc_name)
+    g = open(path, "rb").read()
+    syms = U.elf_symbols(g)
+    out = {}
+    for k in sorted(n for n in syms if n.startswith("opd_" + prefix + "_")):
+        off = syms[k][0]
+        ps = []
+        for i in range(g[off]):
+            q = g[off + 10 + 10 * i:off + 20 + 10 * i]
+            if q[0] & 0xC0:
+                raise ValueError("%s part %d is mirrored / flagged: not supported" % (k, i))
+            oy, ox = struct.unpack(">hh", q[2:6])
+            ps.append((q[0], q[1], ox, oy, q[7], q[6], q[9], q[8]))
+        out[k[len(prefix) + 5:]] = ps
+    return out
+
+
+def paint_strips(entry, d, banks, pages, project=None):
+    """A "strips" entry: names stored in a text atlas (pages of `bank` whose names start with `pages`, e.g.
+    "tex_h3_tnm") and cut out by sprite tables of ANOTHER file ("sprites_arc", "sprite_prefix"). The sprites are left as
+    they are: each item's English is drawn into the sprite's own picture (its parts side by side, as the game draws
+    them) and written back into the page rectangles of its parts, so every reader of the atlas still finds each name
+    where it was. {"bank", "pages", "sprites_arc", "sprite_prefix",
+     "items": [{"sprite": "03", "text": "...", "font": "ttf:...", "style": "...", "align": "centre" | "left",
+                "dx": 0, "dy": 0}]}  (vertically centred on the strip; "left" starts at column `dx`).
+    Raises when the art is wider than the sprite, when ink falls where no part shows it, or when two items write
+    different pixels into a rectangle they share."""
+    import ui_type
+    b = U.bank_named(banks, entry["bank"])
+    idx = [k for k, n in enumerate(b["page_names"]) if n.startswith(entry["pages"])]
+    sprites = strip_sprites(entry["sprites_arc"], entry["sprite_prefix"])
+    owner = {}
+    for item in entry["items"]:
+        parts = sprites[item["sprite"]]
+        X0 = min(p[2] for p in parts); Y0 = min(p[3] for p in parts)
+        X1 = max(p[2] + p[6] - p[4] for p in parts); Y1 = max(p[3] + p[7] - p[5] for p in parts)
+        W, H = X1 - X0, Y1 - Y0
+        shown = np.zeros((H, W), bool)
+        for pg, pal, ox, oy, x0, y0, x1, y1 in parts:
+            shown[oy - Y0:oy - Y0 + y1 - y0, ox - X0:ox - X0 + x1 - x0] = True
+        ink, base = ui_type.typeset(item["text"], item["font"], project)
+        art, _ = ui_type.RENDER[item["style"]](ink, base)
+        h, w = art.shape
+        if w > W or h > H:
+            raise ValueError("strip %s %s: %r is %dx%d, the sprite %dx%d" % (entry["sprite_prefix"], item["sprite"],
+                                                                         item["text"], w, h, W, H))
+        x = item.get("dx", 0) if item.get("align") == "left" else (W - w) // 2 + item.get("dx", 0)
+        y = (H - h) // 2 + item.get("dy", 0)
+        if x < 0 or y < 0 or x + w > W or y + h > H:
+            raise ValueError("strip %s %s: %r placed outside the sprite" % (entry["sprite_prefix"], item["sprite"], item["text"]))
+        canvas = np.zeros((H, W), np.uint8)
+        canvas[y:y + h, x:x + w] = art
+        if (canvas > 0)[~shown].any():
+            raise ValueError("strip %s %s: %r has ink where no part shows it" % (entry["sprite_prefix"], item["sprite"],
+                                                                               item["text"]))
+        for pg, pal, ox, oy, x0, y0, x1, y1 in parts:
+            key = (entry["bank"], idx[pg])
+            if key not in pages:
+                pages[key] = U.decode_indices(d, *b["pages"][idx[pg]]).copy()
+            new = canvas[oy - Y0:oy - Y0 + y1 - y0, ox - X0:ox - X0 + x1 - x0]
+            for yy in range(y0, y1):
+                for xx in range(x0, x1):
+                    v = new[yy - y0, xx - x0]
+                    o = owner.get((key, yy, xx))
+                    if o is not None and o[1] != v:
+                        raise ValueError("strip %s: sprites %s and %s share page %d (%d, %d) but differ there"
+                                         % (entry["sprite_prefix"], o[0], item["sprite"], idx[pg], xx, yy))
+                    owner[(key, yy, xx)] = (item["sprite"], v)
+            pages[key][y0:y1, x0:x1] = new
 
 
 def load_spec(path):
