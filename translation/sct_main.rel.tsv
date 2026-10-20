@@ -1,7 +1,7 @@
 # section_offset	hash of the original run	English (see tl.py)
 14438	0ebe	Today is the entrance ceremony.
 14472	8f04	It's a milestone, so maybe I should\nchange things up a bit...
-14540	95c2	To lift my mood, changing up my\nsurroundings might be good...
+14540	95c2	A change of scenery might lift\nmy mood...
 14608	d0c1	It's been a year. Maybe I should\nchange things up a bit...
 14736	8d6b	Go, everyone! Give it your all!
 14758	ff3e	...Hm?
@@ -15,7 +15,7 @@
 14986	3f5f	I'm a bright and shiny second-year!
 15010	ede7	Hee hee, I'm one year ahead of\nyou, Kantoku.
 15042	fcf9	I'll do my best to support you and\nthe players, Kantoku!
-15094	4e32	Our club's current goal is the one\nstarting in July: 
+15094	4e32	Our club's goal right now?\nIt's the July 
 15136	e7ff	tournament.
 15154	efce	It's the battle for summer Koshien!
 15190	0f87	First up, we win our opener, right?\nLet's aim for Koshien together!
@@ -34,10 +34,10 @@
 15582	9225	Others include special ones such as\n"Career Advice", or instant ones\nlike "Schedule Review"...
 15664	1854	There are plenty to choose from.
 15686	8214	Use them well to move the schedule\nforward!
-15730	d4c6	Did you get all that about progress\nicons?
+15730	d4c6	All clear on the progress icons?
 15776	794f	  Yes\n
 15786	04ef	  No
-15816	4e81	Got it, I'll wrap up here.\nNow then... Fight!
+15816	4e81	Great, that's all from me.\nNow then... go get 'em!
 15874	2637	Oh, right.
 15890	65fd	Let me save this as a 
 15904	d4e8	Manager's Memo
@@ -56,15 +56,15 @@
 16462	c8f2	On the GameCube Controller, hold\ndown the L Trigger or the Z Button.
 16544	64fd	Great for anyone who wants to move\nthrough the game quickly!
 16620	2244	Kantoku, today's the entrance\nceremony. A new school year begins!
-16670	9324	It's all practice now for the one\nstarting in July, the 
-16688	f9f2	tournament.\nPractice is all we need, sir!
-16736	d570	With the school's move, we all came\n
-16772	4baa	here, so let's make a fresh start!\nWe'll give it our all, sir!
+16670	9324	Next up is the July 
+16688	f9f2	tournament.\nIt's all practice from here, sir!
+16736	d570	We moved here along with the school,\n
+16772	4baa	so let's start fresh! All-out, sir!
 16844	f557	Kantoku, today is the entrance\nceremony. A new school year begins.
-16894	9324	It's all practice now for the one\nstarting in July, the 
-16912	b322	tournament.\nPractice is all we need!
-16960	d570	With the school's move, we all came\n
-16996	26ae	here, so let's make a fresh start!\nLet's give it our all!
+16894	9324	Next up is the July 
+16912	b322	tournament.\nIt's all practice from here!
+16960	d570	We moved here along with the school,\n
+16996	26ae	so let's start fresh! All-out!
 17080	92ae	Today is the entrance ceremony.\nFirst-years came to join the club.
 17126	c043	New recruits joined the club.
 17220	b46c	Kantoku, a first-year who wants to\nbe a manager is here, sir.
@@ -73,17 +73,17 @@
 17332	9b6e	Let me introduce you right away!
 17378	58c1	Nice to meet you, Kantoku.\nI'm 
 17402	b0a3	.
-17418	d9d5	I'll do my best as a trainee from\ntoday! I'll surely be a bother, but\nI'll work hard. Count on me, sir!
+17418	d9d5	Starting today, I'm your trainee!\nI'll probably cause you trouble,\nbut I'll give it everything, sir!
 17508	6085	Nice to meet you, Kantoku.\nI'm 
 17532	b0a3	.
-17548	f92b	I'll do my best as a trainee from\ntoday! I'll surely be a bother, but\nplease take good care of me!
+17548	f92b	Starting today, I'm your trainee!\nI'll probably cause you trouble,\nbut please bear with me!
 17634	745d	A new manager joined.
-17706	baa0	Kantoku, new students join us today,\nso we start fresh, sir!
+17706	baa0	Kantoku, the new students join us\ntoday. A fresh start, sir!
 17758	1056	I think we should decide the team's\ntraining policy now, sir.
-17800	13d9	Please choose just one.
-17832	b970	Kantoku, new students join us today,\nso we start fresh!
+17800	13d9	Pick one, please.
+17832	b970	Kantoku, the new students join us\ntoday. A fresh start!
 17882	b046	I think we should decide the team's\ntraining policy now.
-17922	13d9	Please choose just one.
+17922	13d9	Pick one, please.
 17966	98d1	  Next\n
 17978	3c1f	  Balanced Type\n
 17998	b3d4	  Batting Type
@@ -92,14 +92,14 @@
 18110	22da	  Defense/Pitching Type
 18220	0299	Got it, sir.\n
 18238	b616	 it is, then.
-18250	3c6e	Is that okay with you?
+18250	3c6e	Is that okay, sir?
 18280	4e7e	Understood.\n
 18300	dd01	 it is, then.
 18312	abbb	Is that all right?
 18342	794f	  Yes\n
 18352	04ef	  No
-18390	f0cc	Got it, sir.\nFrom now on, we'll use this policy!
-18432	2df3	Understood.\nFrom now on, we'll use this policy!
+18390	f0cc	Got it, sir.\nThat's our policy from now on!
+18432	2df3	Understood.\nThat's our policy from now on!
 18478	dc3a	Team training policy
 18496	2f4f	 is now:\n
 18512	9703	.
@@ -142,13 +142,13 @@
 19966	2716	 and\n
 19978	4c38	 could hurt practice.
 20012	1118	But, amazingly, 
-20028	0f69	 did well!\nIt seems their exam guesses\nall landed perfectly...
+20028	0f69	 did well!\nLooks like they crammed exactly\nthe right questions...
 20092	aad1	But
 20108	0857	Poor grades for 
 20126	2716	, \n
 20138	a986	, 
 20148	4c38	\ncould hurt practice.
-20576	023a	Good morning, Kantoku, sir!
+20576	023a	Morning, Kantoku!
 20598	c69d	We're setting off for the Koshien\ntournament! Come on, let's go, sir!
 20656	6df8	Good morning, Kantoku!
 20682	47a1	We're setting off for the Koshien\ntournament! Come on, hurry, hurry!
@@ -158,7 +158,7 @@
 20862	062f	Seeing Koshien in person has the\nplayers brimming with motivation!
 20968	d3e5	Kantoku, today's finally the\nhigh school draft, sir!
 21008	e97e	Will anyone from our team be picked?
-21042	4f0e	I've been nervous all morning, sir!\nLet's check the clubroom TV, sir!
+21042	4f0e	I've been nervous all morning!\nLet's watch on the clubroom TV, sir!
 21104	11a9	Kantoku, today's finally the\nhigh school draft!
 21144	6ef3	Will anyone on our team be picked?!
 21182	8d2f	My heart's been pounding all day!\nLet's watch the TV in the clubroom!
@@ -177,8 +177,8 @@
 21628	4041	　　
 21640	a8f4	　
 21648	ef27	 HS
-21754	44ff	We did it, Kantoku!\nSomeone was picked in the draft!
-21800	865e	We did it, Kantoku!\nSomeone was picked in the draft!
+21754	44ff	We did it, Kantoku!\nOne of ours got drafted, sir!
+21800	865e	We did it, Kantoku!\nOne of ours got drafted!
 21856	5682	A player has made it to the pros!\nEveryone's spirits are sky-high!
 21944	6df7	Players headed for the pros train\non their own in secret until\ngraduation day.
 21998	7185	With luck, they may grow even more.
@@ -195,17 +195,17 @@
 22630	a2d0	No players made it to the pros this\nyear...
 22688	fa64	...What a pity.
 22708	a2d0	No players made it to the pros this\nyear...
-22772	0bf5	Nobody was picked in the draft.\nEven braced for it, everyone looks\nshocked.
+22772	0bf5	Nobody was drafted.\nWe were braced for it, but everyone\nlooks crushed.
 22892	1007	Today's the school festival.\nLet's enjoy it to the fullest, sir!
 22936	1f4b	Today is the school festival.\nI want to enjoy it to the fullest!
-22992	ae25	Everyone looks like they're having a\ngreat time.
-23060	8537	Enjoying the haunted house and such,
-23108	0729	Enjoying the cafe and such,
-23152	bc93	Enjoying all the food stalls,
+22992	ae25	Everyone's having a great time.
+23060	8537	With the haunted house and all,
+23108	0729	With the cafe and all,
+23152	bc93	With all the food stalls,
 23184	6237	\neveryone seems recharged, sir!
-23236	8537	Enjoying the haunted house and such,
-23284	0729	Enjoying the cafe and such,
-23328	bc93	Enjoying all the food stalls,
+23236	8537	With the haunted house and all,
+23284	0729	With the cafe and all,
+23328	bc93	With all the food stalls,
 23360	b473	\neveryone seems recharged!
 23452	5007	Today's sports day, sir.
 23480	6b07	Today is sports day.
@@ -216,7 +216,7 @@
 23748	8fdd	Arm ace 
 23772	e8c9	 seems to\nhave shone at the ball toss, sir!
 23820	a5e1	Strongman 
-23846	db4b	 seems to\nhave shone in cavalry battle, sir!
+23846	db4b	 seems to have\nstarred in the cavalry battle, sir!
 23896	a984	Control ace 
 23922	e8c9	 seems to\nhave shone at the ball toss, sir!
 23976	fe64	Speedster 
@@ -224,7 +224,7 @@
 24048	8fdd	Arm ace 
 24072	bd7a	 seems to\nhave shone at the ball toss!
 24120	a5e1	Strongman 
-24146	5706	 seems to\nhave shone in cavalry battle!
+24146	5706	 seems to have\nstarred in the cavalry battle!
 24196	a984	Control ace 
 24222	bd7a	 seems to\nhave shone at the ball toss!
 24308	488e	We did well in the fall 
@@ -263,12 +263,12 @@
 25922	44e7	Let's wait for good news.
 25988	2db9	Kantoku, today they pick the schools\nfor the spring Koshien tournament.
 26038	8763	But going by the results, there's no\nchance we'll be called, sir...
-26088	2198	Forget it and practice, sir!
+26088	2198	Never mind. Let's practice, sir!
 26116	ae66	Kantoku, today they pick the schools\nfor the spring Koshien tournament.
 26166	9f7a	But going by the results, there's no\nchance we'll be picked...
-26216	b8d2	Forget it, and let's practice.
+26216	b8d2	Never mind. Let's practice.
 26294	3cbf	Oh, the phone, sir!
-26316	4a5a	Uh-huh, I see...
+26316	4a5a	Uh-huh... And then?
 26344	fd57	Roger that, sir!
 26368	5811	Oh, the phone!
 26390	f368	Yes, yes...
@@ -280,13 +280,13 @@
 26652	c912	We made the spring Koshien\ntournament! Everyone is thrilled!
 26712	34d8	We made the spring Koshien\ntournament.
 26794	3cbf	Oh, the phone, sir!
-26816	4a5a	Uh-huh, I see...
+26816	4a5a	Uh-huh... And then?
 26848	3597	I-I see, sir...
 26876	5811	Oh, the phone!
 26898	f368	Yes, yes...
 26926	3d49	I-I see...
-26970	c0c2	Kantoku...\nThe principal called: we didn't make\nthe spring Koshien, it seems, sir.
-27040	a5d9	Kantoku...\nThe principal called: we didn't make\nthe spring Koshien, it seems.
+26970	c0c2	Kantoku...\nThe principal called. Seems we\ndidn't make spring Koshien, sir.
+27040	a5d9	Kantoku...\nThe principal called. It seems we\ndidn't make spring Koshien.
 27120	eff8	We missed the spring Koshien\ntournament.\nThe players are very disappointed...
 27240	ab4f	Today's the graduation ceremony.\nThe third-years are leaving, sir...
 27288	9170	Today is the graduation ceremony.\nThe third-years are leaving...
@@ -322,10 +322,10 @@
 28448	2a8c	D
 28492	75a8	Kantoku, summer break's here, sir!
 28526	883d	Busy with homework and practice,
-28552	5134	but we'll make players grow a lot!
+28552	5134	but we'll get the players growing!
 28592	1087	Kantoku, summer break's here!
 28626	883d	Busy with homework and practice,
-28652	2cf6	but let's make players grow a lot!
+28652	2cf6	but let's get the players growing!
 28690	4921	Summer break has started.
 28748	3163	Kantoku, summer break ends today.
 28780	716e	Let's switch gears
@@ -336,10 +336,10 @@
 28914	fc72	Summer break has ended.
 28972	a432	Kantoku, spring break's here, sir!
 29006	2a79	In this warm, sunny weather,
-29026	5134	we'll make players grow a lot, sir!
+29026	5134	we'll get the players growing, sir!
 29060	10fd	Kantoku, spring break's here!
 29094	2a79	In this warm, sunny weather,
-29114	2cf6	let's make players grow a lot!
+29114	2cf6	let's get the players growing!
 29154	cf3d	Spring break has started.
 29212	a731	Kantoku, spring break ends today.
 29244	01cc	Let's switch gears,
@@ -408,16 +408,16 @@
 31236	fa2d	 strong as a\npinch hitter
 31288	a142	 got
 31296	6751	 Tough Out
-31348	a142	 got
-31356	33b8	 strong with\nbases loaded
-31412	a142	 got
-31420	33b8	 strong with\nbases loaded
-31472	a142	 got
-31480	2346	 strong in\nwalk-off spots
-31544	a142	 got
-31552	2346	 strong in\nwalk-off spots
-31620	a142	 got
-31628	0bf7	 strong in\nadversity
+31348	a142	 is 
+31356	33b8	strong with\nbases loaded
+31412	a142	 is 
+31420	33b8	strong with\nbases loaded
+31472	a142	 is 
+31480	2346	strong in\nwalk-off spots
+31544	a142	 is 
+31552	2346	strong in\nwalk-off spots
+31620	a142	 is 
+31628	0bf7	strong in\nadversity
 31680	5637	's
 31688	8a84	 base stealing\ngot better
 31744	5637	's
@@ -444,8 +444,8 @@
 32404	b57e	 2nd position\ngot worse
 32464	a142	 got
 32472	c552	 Gold Glover
-32524	a142	 got
-32532	34e8	 Timely Error
+32524	a142	 is 
+32532	34e8	error-prone
 32592	a142	 got
 32600	9271	 Gd Catcher
 32660	a142	 got
@@ -460,10 +460,10 @@
 32924	bb3e	 steadiness
 32972	a142	 got
 32980	0e96	 Intimidator
-33028	a142	 got
-33036	f7ed	 lifts the mood
-33100	a142	 got
-33108	309f	 hurts the mood
+33028	a142	 is 
+33036	f7ed	a mood booster
+33100	a142	 is 
+33108	309f	a mood wrecker
 33172	5637	's
 33180	85c7	 Small Ball\ngot better
 33240	5637	's
@@ -488,18 +488,18 @@
 33832	b399	 Fat Pitch
 33880	a142	 got
 33888	1c0e	 Safe Pitch
-33940	a142	 got
-33948	830a	 tough when hit
-34004	a142	 got
-34012	a3cc	 easily rattled\nwhen hit
-34064	a142	 got
-34072	5f3e	 strong in a pinch
-34128	a142	 got
-34136	ae68	 weak in a pinch
-34192	a142	 got
-34200	3e2d	 strong vs. lefty\nbatters
-34256	a142	 got
-34264	a833	 weak vs. lefty\nbatters
+33940	a142	 is 
+33948	830a	tough when hit
+34004	a142	 is 
+34012	a3cc	easily rattled\nwhen hit
+34064	a142	 is 
+34072	5f3e	strong in a pinch
+34128	a142	 is 
+34136	ae68	weak in a pinch
+34192	a142	 is 
+34200	3e2d	strong vs. lefty\nbatters
+34256	a142	 is 
+34264	a833	weak vs. lefty\nbatters
 34320	5637	's
 34328	923d	 quick delivery\ngot better
 34384	5637	's
@@ -508,8 +508,8 @@
 34456	23f6	 pickoff move\ngot better
 34512	5637	's
 34520	b7cd	 reflexes got\nbetter
-34576	a142	 got
-34584	ce5e	 bad with\nrunners on
+34576	a142	 is 
+34584	ce5e	bad with\nrunners on
 34640	a142	 got
 34648	03f1	 Walk-Prone
 34696	5637	's
@@ -526,8 +526,8 @@
 35012	cde3	 Lucky
 35060	a142	 got
 35068	4d05	 Unlucky
-35116	a142	 got
-35124	3524	 Choke Artist
+35116	a142	 is 
+35124	3524	a Choke Artist
 35176	5637	's
 35184	fbf5	 recovery got\nmuch faster
 35240	5637	's
@@ -547,13 +547,13 @@
 35684	a142	
 35692	8336	 favors Contact swings
 35748	a142	
-35756	3b8c	 pitches Fastball-first
+35756	3b8c	 favors the fastball
 35820	a142	
-35828	a8fb	 pitches Breaking-first
+35828	a8fb	 favors breaking balls
 35888	a142	
-35896	f942	 hits Attack-style
+35896	f942	 hits aggressively
 35948	a142	
-35956	d14a	 hits Patient-style
+35956	d14a	 waits for his pitch
 36008	a142	
 36016	edd4	 steals aggressively
 36068	a142	
@@ -567,7 +567,7 @@
 36320	a142	
 36328	da4b	 is a table setter
 36384	a142	
-36392	cc32	 paces his effort when pitching
+36392	cc32	 paces himself on the mound
 36448	de3d	 learned
 36456	8070	 Trash Talk
 36512	5637	's
@@ -581,11 +581,11 @@
 36788	5637	's
 36796	4db6	 pitches are lighter
 36848	a142	
-36856	326a	 strikes out batters more easily
+36856	326a	 racks up more strikeouts
 36912	a142	
 36920	2d24	 makes arrow-like throws
 36976	a142	
-36984	324c	 is called Refined
+36984	324c	 is a quiet pro
 37044	a142	
 37052	9978	 fields aggressively
 37104	a142	
@@ -597,7 +597,7 @@
 37288	a142	
 37296	8626	 shows guts
 37352	a142	
-37360	8d9f	 is strong against sluggers
+37360	8d9f	 is tough on sluggers
 37416	a142	
 37424	3123	 throws Crossfire
 37480	5637	's
@@ -605,7 +605,7 @@
 37544	a142	
 37552	a7c6	 is a dark-horse player
 37608	a142	
-37616	a0d3	 is strong against aces
+37616	a0d3	 is tough on aces
 37672	a142	
 37680	1639	 holds the ball well
 37736	a142	
@@ -785,12 +785,12 @@
 43944	5637	's
 43952	f697	 spirits
 43966	2f4f	 rose to\n
-43976	64b8	Super High
+43976	64b8	Super Pumped
 43990	28f1	.
-44016	106a	Awful players' spirits went up.
+44016	106a	Glum players' spirits went up.
 44068	78fb	A few players'
 44078	f697	 spirits
-44092	0aee	 became\nSuper High.
+44092	0aee	 became\nSuper Pumped.
 44140	6511	's fatigue eased.
 44184	86a0	's fatigue eased a lot.
 44218	2ec0	All players' fatigue eased.
@@ -1063,121 +1063,121 @@
 50554	dca1	 all-around XP
 50568	c911	\nwent up.
 50610	5637	's
-50618	2c14	 Position Change EXP
-50638	c911	 went up.
+50618	2c14	 Position Change XP 
+50638	c911	\nwent up.
 50674	5637	's
-50682	706a	 Bat Side Change EXP
-50702	c911	 went up.
+50682	706a	 Bat Side Change XP 
+50702	c911	\nwent up.
 50750	5637	's
-50758	0abb	 Form EXP 
-50774	c911	went up.
+50758	0abb	 Form XP
+50774	c911	 went up.
 50814	5637	's
-50822	0abb	 Form EXP 
-50838	c911	went up.
+50822	0abb	 Form XP
+50838	c911	 went up.
 50878	5637	's
-50886	29e1	 Breaking Ball EXP
-50902	c911	 went up.
+50886	29e1	 Breaking Ball XP 
+50902	c911	\nwent up.
 50942	5637	's
-50950	556f	 Current Individual\nPractice EXP
+50950	556f	 current practice\nXP
 50982	9e83	 went down.
 51018	5637	's
-51026	07dc	 Trajectory EXP 
-51040	9e83	went down.
+51026	07dc	 Trajectory XP
+51040	9e83	 went down.
 51086	5637	's
-51094	b543	 Contact EXP
-51110	9e83	 went down.
+51094	b543	 Contact XP 
+51110	9e83	went down.
 51150	5637	's
-51158	e966	 Power EXP
-51174	9e83	 went down.
+51158	e966	 Power XP 
+51174	9e83	went down.
 51214	5637	's
-51222	2747	 Speed EXP
-51236	9e83	 went down.
+51222	2747	 Speed XP 
+51236	9e83	went down.
 51278	5637	's
-51286	64f8	 Arm EXP
-51300	9e83	 went down.
+51286	64f8	 Arm XP 
+51300	9e83	went down.
 51342	5637	's
-51350	bba2	 Fielding EXP 
-51366	9e83	went down.
+51350	bba2	 Fielding XP
+51366	9e83	 went down.
 51406	5637	's
-51414	d903	 Error Resistance EXP 
-51432	9e83	went down.
+51414	d903	 Error Resistance XP
+51432	9e83	\nwent down.
 51478	5637	's
-51486	2973	 Stamina EXP
-51502	9e83	 went down.
+51486	2973	 Stamina XP 
+51502	9e83	went down.
 51542	5637	's
-51550	0fa1	 Velocity EXP 
-51564	9e83	went down.
+51550	0fa1	 Velocity XP
+51564	9e83	 went down.
 51606	5637	's
-51614	d0ec	 Control EXP
-51634	9e83	 went down.
+51614	d0ec	 Control XP 
+51634	9e83	went down.
 51674	5637	's
-51682	2c14	 Position Change EXP
-51702	9e83	 went down.
+51682	2c14	 Position Change XP 
+51702	9e83	\nwent down.
 51738	5637	's
-51746	706a	 Bat Side Change EXP
-51766	9e83	 went down.
+51746	706a	 Bat Side Change XP 
+51766	9e83	\nwent down.
 51814	5637	's
-51822	0abb	 Form EXP 
-51838	9e83	went down.
+51822	0abb	 Form XP
+51838	9e83	 went down.
 51878	5637	's
-51886	0abb	 Form EXP 
-51902	9e83	went down.
+51886	0abb	 Form XP
+51902	9e83	 went down.
 51942	5637	's
-51950	29e1	 Breaking Ball EXP
-51966	9e83	 went down.
+51950	29e1	 Breaking Ball XP 
+51966	9e83	\nwent down.
 53134	9d75	Debug message!
 53156	200b	Take the reset penalty?
 53190	0732	  No way!\n
 53202	64c4	  Accept it
-53254	e2b6	Kantoku, this is bad!\nSome bad rumors about our school\nare spreading!
-53312	1c0a	Because of that, it looks like the\nclub's budget is being cut too.
-53354	bc82	Could there have been some scandal\nthat we don't know about?
+53254	e2b6	Kantoku, this is terrible!\nNasty rumors about our school\nare going around!
+53312	1c0a	Because of them, it seems our\nclub budget is being cut too.
+53354	bc82	Was there some scandal\nwe don't know about?
 53406	5362	The whole club was shaken.
 53440	e68a	The grounds got worse.
 53474	b05f	Record Points went down.
 53512	5839	Reset event avoided
 54540	5ad0	When you stop on a White Panel,\nsometimes a good event happens\nand sometimes a bad one.
-54692	86df	Stop on a Blue Panel and an event\nthat helps the team happens.
+54692	86df	Stop on a Blue Panel and something\ngood happens for the team.
 54752	f5f3	Aim for them whenever you can.
-54860	3b0e	Stop on a Red Panel and an event\nthat hurts the team happens.
+54860	3b0e	Stop on a Red Panel and something\nbad happens for the team.
 54922	8413	Try to avoid them if you can.
 55028	c116	After practice, I let the players
 55048	dd5c	take a short break.
 55110	4f02	Stop on a Green Panel to let your\nplayers rest.
 55160	3574	Manage their condition well and\ntrain efficiently.
 55274	7937	Kantoku, about our schedule...
-55302	4ecb	I thought up a few plans.
-55334	7a9c	Please pick the schedule you\nlike, sir.
+55302	4ecb	I drew up a few plans.
+55334	7a9c	Pick whichever schedule\nyou like, sir!
 55376	fa06	Kantoku, about our schedule...
 55406	2ac9	I've come up with several plans.
 55438	cbfa	Please choose the schedule you\nprefer!
 55508	1b44	The panel you're on now is a\nSchedule Panel.
 55554	18e4	Stop here and 2 new routes appear,\nso you can pick from 3 in all.
-55618	42c5	It's most effective to aim for it\nwhen the near-term plans look weak.
-57844	e045	That was a more effective practice!
-57906	9bd6	Stop on a Yellow Panel and the\nselected practice progress icon\ngets bonus experience.
+55618	42c5	It's worth aiming for when the\nschedule ahead looks weak.
+57844	e045	Practice was extra effective!
+57906	9bd6	Stop on a Yellow Panel and the\nselected practice progress icon\ngets bonus XP.
 57982	20fb	Aim for them whenever you can!
-58010	6dc5	But if the selected icon isn't a\npractice, an event occurs.
+58010	6dc5	But if the selected icon isn't a\npractice, an event happens instead.
 59918	9d75	Debug message!
 59940	97c2	Game No. 【
 59960	f3d8	】
-60028	b050	Kantoku, it's a replay game today.
+60028	b050	Kantoku, today's the replay.
 60052	ff72	Let's win this time, sir!
-60080	0e99	Kantoku, it's a replay game today.
+60080	0e99	Kantoku, today's the replay.
 60106	c2d5	Let's win this time!
 60230	bf6d	Kantoku, the summer 
-60246	05d5	tournament is\nabout to begin, sir!
-60274	6f1d	We start in round 2 this time!
+60246	05d5	tournament is\nfinally here, sir!
+60274	6f1d	We get a bye into round 2!
 60312	bf6d	Kantoku, the summer 
-60328	b75e	tournament is\nabout to begin!
-60356	fd8c	We start in round 2 this time!
+60328	b75e	tournament is\nfinally here!
+60356	fd8c	We get a bye into round 2!
 60412	bf6d	Kantoku, the summer 
-60428	05d5	tournament is\nabout to begin, sir!
-60456	95a6	Let's win today's first game!
+60428	05d5	tournament is\nfinally here, sir!
+60456	95a6	Let's win today's opener!
 60488	bf6d	Kantoku, the summer 
-60504	b75e	tournament is\nabout to begin!
-60532	b97a	Let's win today's first game!
-60576	c390	If we get past the first game, our\npublic reputation might go up.
+60504	b75e	tournament is\nfinally here!
+60532	b97a	Let's win today's opener!
+60576	c390	If we win the opener, our public\nreputation might go up.
 60688	747c	Kantoku, today is 
 60706	6696	tournament\nround 2, sir!
 60728	f456	Let's do our best!
@@ -1204,26 +1204,26 @@
 61310	ed51	Let's do our best!
 61368	9ca8	Kantoku, if we win today,
 61388	4208	we're off to Koshien, sir!
-61418	6381	Let's be sure to win!!
+61418	6381	We've got to win this!!
 61444	9ca8	Kantoku, if we win today,
 61464	a262	we're off to Koshien!
-61494	69b6	Let's be sure to win!!
-61558	7488	Kantoku, the summer Koshien\ntournament is about to start, sir!
-61598	df8d	It's the nationals, so every team is\ntough, but let's win!
-61652	fd62	Kantoku, the summer Koshien\ntournament is about to start!
-61692	04b0	They're all powerhouses and tough,\nbut let's be sure to win!
+61494	69b6	We've got to win this!!
+61558	7488	Kantoku, summer Koshien is\nfinally here, sir!
+61598	df8d	Every team's tough at the nationals,\nbut let's make sure we win!
+61652	fd62	Kantoku, summer Koshien is\nfinally here!
+61692	04b0	It's all powerhouse teams, but\nlet's be sure to win!
 61776	3884	Kantoku, today is round 2 of the\nsummer Koshien, sir!
 61816	f456	Let's do our best!
 61840	4a4a	Kantoku, today is round 2 of the\nsummer Koshien!
 61880	ed51	Let's do our best!
 61940	c7ea	Kantoku, today is round 3 of the\nsummer Koshien, sir!
-61980	e908	Let's aim for the top 8 and do\nour best!
+61980	e908	Let's aim for the quarterfinals!
 62024	b611	Kantoku, today is round 3 of the\nsummer Koshien!
-62064	8973	Let's aim for the top 8 and do\nour best!
+62064	8973	Let's aim for the quarterfinals!
 62136	5585	Kantoku, today is the summer\nKoshien quarterfinal, sir!
-62178	e798	Let's win this one for sure!
+62178	e798	We have to win this one!
 62204	3eae	Kantoku, today is the summer\nKoshien quarterfinal!
-62246	78cf	Let's win this one for sure!
+62246	78cf	We have to win this one!
 62304	d311	Kantoku, if we win today,
 62330	bb32	we're finally in the final, sir!
 62346	f456	Let's do our best!
@@ -1231,17 +1231,17 @@
 62398	3cd4	we're finally in the final!
 62416	ed51	Let's do our best!
 62476	6ef6	Kantoku, if we win today... at last,
-62504	0497	it's the national title! Number 1!!
-62536	6381	Let's be sure to win!!
+62504	0497	the national title! Best in Japan!!
+62536	6381	We have to win this!!
 62564	6ef6	Kantoku, if we win today... at last,
-62592	f9cb	the national title! Japan's best!!
-62622	6381	Let's be sure to win!!
+62592	f9cb	the national title! Best in Japan!!
+62622	6381	We have to win this!!
 62702	ef06	Kantoku, the fall 
 62718	05d5	tournament is\nabout to begin, sir!
-62746	2620	Let's win this first game for sure!
+62746	2620	Let's win today's opener for sure!
 62780	ef06	Kantoku, the fall 
 62796	b75e	tournament is\nabout to begin!
-62824	e3c6	Let's win this first game for sure!
+62824	e3c6	Let's win today's opener for sure!
 62896	747c	Kantoku, today is 
 62914	6696	tournament\nround 2, sir!
 62936	f456	Let's do our best!
@@ -1253,17 +1253,17 @@
 63160	54a6	Kantoku, the district tournament\nstarts today!
 63204	b60f	A win puts Koshien a lot closer.\nLet's do our best!
 63288	1d01	Kantoku, win today and the ticket\nto Koshien is as good as ours!
-63346	69b6	Let's be sure to win!!
+63346	69b6	We have to win this!!
 63372	325a	Kantoku, win today and the ticket\nto Koshien is as good as ours!
-63430	69b6	Let's be sure to win!!
+63430	69b6	We have to win this!!
 63494	c415	Kantoku, the spring Koshien\ntournament is about to start, sir!
 63538	df8d	It's the nationals, so every team is\ntough, but let's win!
 63592	8067	Kantoku, the spring Koshien\ntournament is about to start!
-63636	04b0	They're all powerhouses and tough,\nbut let's be sure to win!
+63636	04b0	Every team's a tough powerhouse,\nbut we have to win!
 63720	bb62	Kantoku, today is round 2 of the\nspring Koshien, sir!
-63760	e908	Let's aim for the top 8 and do\nour best!
+63760	e908	Let's aim for the\nquarterfinals!
 63800	9bd2	Kantoku, today is round 2 of the\nspring Koshien!
-63840	8973	Let's aim for the top 8 and do\nour best!
+63840	8973	Let's aim for the\nquarterfinals!
 63912	acc0	Kantoku, today is the spring\nKoshien quarterfinal, sir!
 63954	f456	Let's do our best!
 63980	00ee	Kantoku, today is the spring\nKoshien quarterfinal!
@@ -1276,19 +1276,19 @@
 64192	ed51	Let's do our best!
 64252	6ef6	Kantoku, if we win today... at last,
 64280	efb9	it's the national title, sir!
-64298	293a	Let's reach the top this spring and\nbring home the championship flag!
+64298	293a	Let's rule the spring and\nbring home the championship flag!
 64344	6ef6	Kantoku, if we win today... at last,
 64372	5df6	it's the national title!
-64390	293a	Let's reach the top this spring and\nbring home the championship flag!
-64472	5e15	Kantoku, it's a practice game today!\nLet's do our best and win, sir!
+64390	293a	Let's rule the spring and\nbring home the championship flag!
+64472	5e15	Kantoku, it's a practice game today!\nLet's go win this, sir!
 64520	d397	Kantoku, it's a practice game today!\nLet's do our best!
 64598	6ffe	About branching after a game: the\nupper route is taken when you win.
 64664	69dd	The lower route is taken when the\ngame ends in a draw or a loss.
 64724	d210	In practice games and official games\nfrom July, the post-game branch can\nchange your public reputation.
 64852	8419	Kantoku, there's a game today!
-64874	842c	Let's do our best and win!
+64874	842c	Let's go win this!
 64904	8419	Kantoku, there's a game today!
-64926	842c	Let's do our best and win!
+64926	842c	Let's go win this!
 64982	0957	Let's pick today's Spotlight Player.\nWho should it be...
 65060	43d2	Spotlight Player candidates are\nchosen from the starters.
 65100	c3ae	A Spotlight Player can be given more\ninstructions in a game than others.
@@ -1388,48 +1388,48 @@
 67960	a75c	OF
 68330	5842	(And then...)
 68392	0899	We won, 
-68408	a347	 Kantoku.\nFirst game cleared, sir!
-68436	ee29	Let's do our best next time too!
+68408	a347	 Kantoku.\nThrough round 1, sir!
+68436	ee29	Let's win the next one too!
 68464	0899	We won, 
-68480	3d74	 Kantoku.\nFirst game cleared!
-68508	51f3	Let's do our best next time too!
+68480	3d74	 Kantoku.\nWe're through round 1!
+68508	51f3	Let's win the next one too!
 68574	0604	Nice one, Kantoku!\n
 68604	7ddb	 champions, sir!!
 68628	6861	I can't believe it...\nAll our hard work paid off, sir!!
 68688	077b	You did it, Kantoku!\n
 68718	ba93	 champions!!
-68744	0126	I'm so moved...\nSo glad we worked so hard until now!
+68744	0126	I'm so moved...\nAll our hard work paid off!
 68796	91b6	We qualified for the summer Koshien.
 68872	f569	Nice one, 
 68888	22ab	 Kantoku!!\n
-68900	0be5	We're on top of the nation, sir!!
+68900	0be5	We're national champions, sir!!
 68928	64f2	It's like a dream...\nWe're the best team in Japan!!
 68976	a18d	You did it, 
 68992	22ab	 Kantoku!!\n
-69004	78b6	We're on top of the whole nation!!
+69004	78b6	We're national champions!!
 69032	2ece	It's like a dream...\nWe're the best team in Japan!
 69116	0899	We won, 
-69132	a347	 Kantoku.\nFirst game cleared, sir!
-69160	ee29	Let's do our best next time too!
+69132	a347	 Kantoku.\nThrough round 1, sir!
+69160	ee29	Let's win the next one too!
 69192	0899	We won, 
-69208	3d74	 Kantoku.\nFirst game cleared!
-69236	51f3	Let's do our best next time too!
+69208	3d74	 Kantoku.\nWe're through round 1!
+69236	51f3	Let's win the next one too!
 69296	0604	Nice one, Kantoku!\n
 69326	30ab	 tournament round 2 cleared, sir!
-69348	2ae7	We're sure to make spring Koshien!
+69348	2ae7	Spring Koshien is a lock, sir!
 69378	d36f	Whether we make Koshien is decided\nin late January. Let's practice\nwhile we wait!
 69456	077b	You did it, Kantoku!\n
 69486	c983	 tournament round 2 cleared!
 69508	02c7	We're sure to make spring Koshien!
 69538	5c47	Whether we make Koshien is decided\nin late January. Let's practice\nwhile we wait!
 69648	f569	Nice one, 
-69664	a357	 Kantoku!!\nWe're on top of the nation, sir!!
+69664	a357	 Kantoku!!\nWe're national champions, sir!!
 69698	1c23	It's like a dream...\nWe're the best team in Japan!!\nLet's take the summer crown too!
 69772	a18d	You did it, 
-69788	5b84	 Kantoku!!\nWe're on top of the whole nation!!
+69788	5b84	 Kantoku!!\nWe're national champions!!
 69824	fddf	It's like a dream...\nWe're the best team in Japan!\nLet's take the summer crown too!
-69924	0c09	We won, sir! All right!
-69952	d8a9	We won! All right!
+69924	0c09	All right, we won, sir!
+69952	d8a9	All right, we won!
 70032	6ca1	Good news, Kantoku!\n
 70052	106c	Our reputation
 70066	a142	 is now 
@@ -1437,21 +1437,21 @@
 70086	bfd9	!
 70104	8068	Progress icons
 70120	a142	 are
-70128	089a	 now 5
+70128	089a	 up to 5
 70138	28f1	.
 70180	6ca1	Good news, Kantoku!\n
 70200	e7e1	Mid School
 70210	eff3	 is what they call us!
 70240	8068	Progress icons
 70256	a142	 are
-70264	404b	 now 6
+70264	404b	 up to 6
 70274	28f1	.
 70316	6ca1	Good news, Kantoku!\n
 70336	d65e	Good School 
 70346	eff3	is what they call us!
 70376	8068	Progress icons
 70392	a142	 are
-70400	adcd	 now 7
+70400	adcd	 up to 7
 70410	28f1	.
 70472	6ca1	Good news, Kantoku!\n
 70492	39ca	Top School
@@ -1465,21 +1465,21 @@
 70866	93d7	!
 70884	8068	Progress icons
 70900	a142	 are
-70908	089a	 now 5
+70908	089a	 up to 5
 70918	28f1	.
 70960	1456	Congratulations.\n
 70984	e7e1	Mid School
 70994	fe91	 is what they call us!
 71024	8068	Progress icons
 71040	a142	 are
-71048	404b	 now 6
+71048	404b	 up to 6
 71058	28f1	.
 71104	1456	Congratulations.\n
 71128	d65e	Good School 
 71138	fe91	is what they call us!
 71168	8068	Progress icons
 71184	a142	 are
-71192	adcd	 now 7
+71192	adcd	 up to 7
 71202	28f1	.
 71264	1456	Congratulations.\n
 71288	39ca	Top School
@@ -1497,42 +1497,42 @@
 72046	860b	Another draw... What a shame.
 72086	fdae	The second replay is right away.\nT-this time for sure, sir!
 72136	07d8	Another draw... What a shame.
-72178	65b1	The second replay is set for right\naway. T-this time for sure!
+72178	65b1	The second replay is right away.\nT-this time for sure!
 72242	95ab	But...
 72258	f138	In the second replay right after,\nwe narrowly lost...
 72352	c234	Out in round 1... A bitter loss.
 72392	801a	Out in round 1... What a shame.
-72456	28fb	One more win and it was Koshien...\nWhat a shame, sir.
-72504	48e3	One more win and it was Koshien...\nWhat a shame.
+72456	28fb	One win from Koshien, too...\nWhat a shame, sir.
+72504	48e3	One win from Koshien, too...\nWhat a shame.
 72584	a0f8	We lost... A bitter loss.
 72612	5ca6	Whether we make the spring Koshien\nis announced in late January.\nLet's practice while we wait.
 72696	1725	We lost... What a shame.
 72728	c06a	Whether we make the spring Koshien\nis announced in late January.\nLet's practice while we wait.
-72848	6e96	The top of the nation was right\nthere... What a shame, sir...
-72896	3f77	The top of the nation was right\nthere... What a shame...
+72848	6e96	The national title was so close...\nWhat a shame, sir...
+72896	3f77	The national title was so close...\nWhat a shame...
 72968	a0f8	We lost... A bitter loss.
 73000	1725	We lost... What a shame.
 73216	5368	We made Koshien, but it stings, sir.
 73254	e6e3	But let's head back to school proud!
 73288	8c6e	We made Koshien, but it stings.
 73326	6bae	But let's head back to school proud!
-73406	2275	(Heading back to school...)
-73460	71e2	We've reached the school. Everyone\nlost, but they look fulfilled.
+73406	2275	(Back to school...)
+73460	71e2	We're back at school. We lost, but\neveryone looks fulfilled.
 73516	338b	Summer tournament starts in July.\nThere's plenty of time. Let's\npractice hard!
-73584	7439	We've reached the school. Everyone\nlost, but they look fulfilled.
+73584	7439	We're back at school. We lost, but\neveryone looks fulfilled.
 73642	f5b0	Summer tournament starts in July.\nThere's plenty of time. Let's\npractice hard!
 73760	8254	Summer tournament starts in July.\nPlenty of time, sir. Let's practice\nhard!
 73828	f5b0	Summer tournament starts in July.\nThere's plenty of time. Let's\npractice hard!
 73988	c234	Out in round 1... A bitter loss.
 74024	801a	Out in round 1... What a shame.
-74088	28fb	One more win and it was Koshien...\nWhat a shame, sir.
-74136	48e3	One more win and it was Koshien...\nWhat a shame.
+74088	28fb	One win from Koshien, too...\nWhat a shame, sir.
+74136	48e3	One win from Koshien, too...\nWhat a shame.
 74216	a0f8	We lost... A bitter loss.
 74244	5419	Whether we make the spring Koshien\nis announced in late January. Let's\npractice while we wait.
 74332	1725	We lost... What a shame.
 74364	8d66	Whether we make the spring Koshien\nis announced in late January. Let's\npractice while we wait.
-74488	6e96	The top of the nation was right\nthere... What a shame, sir...
-74536	3f77	The top of the nation was right\nthere... What a shame...
+74488	6e96	The national title was so close...\nWhat a shame, sir...
+74536	3f77	The national title was so close...\nWhat a shame...
 74608	a0f8	We lost... A bitter loss.
 74640	1725	We lost... What a shame.
 74728	722f	Our reputation seems to be down.\n
@@ -1540,21 +1540,21 @@
 74770	71f2	is what they call us\nnow...
 74822	8068	Progress icons
 74838	a142	 are
-74846	4630	 now 4
+74846	4630	 down to 4
 74856	28f1	.
 74920	722f	Our reputation seems to be down.\n
 74952	034c	Decent
 74964	71f2	 is what they call us\nnow...
 75004	8068	Progress icons
 75020	a142	 are
-75028	089a	 now 5
+75028	089a	 down to 5
 75038	28f1	.
 75096	722f	Our reputation seems to be down.\n
 75128	e7e1	Mid School
 75138	71f2	 is what they call us\nnow...
 75178	8068	Progress icons
 75194	a142	 are
-75202	404b	 now 6
+75202	404b	 down to 6
 75212	28f1	.
 75272	722f	Our reputation seems to be down.\n
 75304	d65e	Good School 
@@ -1564,21 +1564,21 @@
 75444	74b1	is what they call us\nnow.
 75492	8068	Progress icons
 75508	a142	 are
-75516	4630	 now 4
+75516	4630	 down to 4
 75526	28f1	.
 75592	0320	Our reputation has dropped.\n
 75626	034c	Decent
 75638	bd64	 is what they call us\nnow...
 75678	8068	Progress icons
 75694	a142	 are
-75702	089a	 now 5
+75702	089a	 down to 5
 75712	28f1	.
 75776	0320	Our reputation has dropped.\n
 75810	e7e1	Mid School
 75820	bd64	 is what they call us\nnow...
 75860	8068	Progress icons
 75876	a142	 are
-75884	404b	 now 6
+75884	404b	 down to 6
 75894	28f1	.
 75952	0320	Our reputation has dropped.\n
 75986	d65e	Good School 
@@ -1587,17 +1587,17 @@
 76254	e6e3	But let's head back to school proud!
 76288	8c6e	We made Koshien, but it stings.
 76326	6bae	But let's head back to school proud!
-76406	2275	(Heading back to school...)
-76460	71e2	We've reached the school. Everyone\nlost, but they look fulfilled.
+76406	2275	(Back to school...)
+76460	71e2	We're back at school. We lost, but\neveryone looks fulfilled.
 76516	338b	Summer tournament starts in July.\nThere's plenty of time. Let's\npractice hard!
-76584	7439	We've reached the school. Everyone\nlost, but they look fulfilled.
+76584	7439	We're back at school. We lost, but\neveryone looks fulfilled.
 76642	f5b0	Summer tournament starts in July.\nThere's plenty of time. Let's\npractice hard!
 76760	8254	Summer tournament starts in July.\nPlenty of time, sir. Let's practice\nhard!
 76828	f5b0	Summer tournament starts in July.\nThere's plenty of time. Let's\npractice hard!
-76962	5575	Our reputation rose, and the ground\nsoil changed to black soil.
-77008	b96f	Our reputation rose, and the school\nground soil changed to black soil.
-77102	73c5	Our reputation fell, and the ground\nsoil went back to white soil.
-77144	8486	Our reputation fell, and the school\nground soil went back to white soil.
+76962	5575	Our reputation rose, and the field\ngot black soil.
+77008	b96f	Our reputation rose, and the school\nfield got black soil.
+77102	73c5	Our reputation fell, and the field\nwent back to white soil.
+77144	8486	Our reputation fell, and the school\nfield went back to white soil.
 77274	f1d5	Field LV
 77290	a142	 went up to 
 77304	31a7	.
@@ -1610,17 +1610,17 @@
 77748	9a19	-kun and the others,\nyou were great in today's game.
 77786	c38c	Keep up the good work!
 77832	74fc	 and the others,
-77848	3e22	Praised by the manager, we became
+77848	3e22	Praised by the manager, they got
 77874	1d7b	Super Pumped!
 78078	9556	When you're Super Pumped,
 78098	64f5	Special Training Panels are easier!
 78130	1952	Also, the effect of stopping on a
 78158	1513	Blue Panel gets a little stronger.
 78264	a41f	 Kantoku!
-78274	5bdd	Winning has raised the attention
-78290	92e2	our school gets!
-78322	262b	For a while, it looks like there'll
-78350	5cbb	be all sorts of new encounters.
+78274	5bdd	Our title win has all eyes
+78290	92e2	on our school now!
+78322	262b	For a while, we may meet
+78350	5cbb	all sorts of new people.
 78370	4a44	For a few days, you'll meet more\nwonderful people.
 78444	10fc	*You can save this team as an
 78476	ad23	  Arrange Team.
@@ -1632,14 +1632,14 @@
 78694	ed68	Flag in hand, let's walk back to\nschool with our heads high, sir!
 78744	964f	Flag in hand, let's walk back to\nschool with our heads high!
 78812	7209	Our summer is over, sir...
-78846	66df	It's so lonely...
+78846	66df	I'll really miss it...
 78872	af43	Our summer is over...
-78906	36df	It's so lonely...
-78974	2275	(Heading to school...)
+78906	36df	I'll miss it...
+78974	2275	(Back to school...)
 79046	7cf7	The third-years are retiring from\nthe club. Please name the next\ncaptain, sir!
 79108	408c	The third-year senpai are retiring\nfrom the club. Please name the next\ncaptain, sir!
 79188	f56a	The third-years are retiring from\nthe club. Please name the next\ncaptain.
-79252	87e0	The third-year senpai are retiring\nfrom the club. Please name the next\ncaptain.
+79252	87e0	The third-year senpai are retiring.\nPlease name the next captain.
 79324	70f7	I need to name a captain...
 79354	3d49	Three second-years are candidates\nfor the next captain.
 79412	2799	Number 1: 
@@ -1654,50 +1654,50 @@
 79570	ef7e	\n
 79582	a8f4	　
 79688	e694	 is the new captain.
-79712	7cef	A sense of responsibility seems to\nhave taken root.
+79712	7cef	He's growing into the role.
 79794	7120	I'm a third-year, so I retire today!\n
 79828	f595	 Kantoku, thank you for\neverything!
-79874	36e6	I'll come visit the club again\nsometime, sir!
+79874	36e6	I'll drop by the club again\nsometime, sir!
 79908	6010	I'm a third-year, so I retire today.\n
 79940	40b7	 Kantoku, thank you for\neverything.
-79984	f218	I'll come visit the club again\nsometime!
+79984	f218	I'll drop by the club again\nsometime!
 80032	d3aa	The manager 
 80048	d3da	 retired.
 80082	f6b4	From today I, 
 80098	ae8d	, will\ntake over as manager.
-80130	eb4d	I'll carry on my senpai's will!
+80130	eb4d	I'll carry the torch for senpai!
 80168	8110	From today I, 
 80184	ae8d	, will\ntake over as manager.
-80216	3760	I'll carry on my senpai's will!
+80216	3760	I'll carry the torch for senpai!
 80280	fccf	The third-years have retired.
 80326	0f9e	Kantoku, today the new team makes\na fresh start!
 80376	1ac8	Let's set our 
 80386	13a0	Training Policy 
-80398	df64	now.\nI think it's time!
+80398	df64	going\nforward, sir!
 80430	13d9	Please pick just one.
 80464	b782	Kantoku, today the new team makes\na fresh start!
 80512	1ac8	Let's set our 
 80522	13a0	Training Policy 
-80534	66df	now.\nI think it's time.
+80534	66df	going\nforward.
 80564	13d9	Please pick just one.
 80612	d6b9	...Oh, before that, let me explain\nthe policies.
 80664	c7de	Policies fall into four main types.
 80698	9d51	The 1st is
-80710	3858	 Balanced type
+80710	3858	 Balanced Type
 80730	f926	.
-80738	946b	It doesn't specialize in anything;\nit builds players evenly.
+80738	946b	Rather than specialize, it builds\nplayers up evenly.
 80784	b233	The 2nd is
-80796	475c	 Hitter-focused type
-80814	f926	.
-80822	eca5	It emphasizes building up Contact,\nPower and the like.
+80796	475c	 Batting Type.
+80814	f926	
+80822	eca5	It focuses on building Contact,\nPower and so on.
 80860	9604	The 3rd is
-80872	d3ae	 Mobility-focused type
-80890	f926	.
-80898	02e1	It emphasizes Contact and Speed.
+80872	d3ae	 Speed Type.
+80890	f926	
+80898	02e1	It focuses on Contact and Speed.
 80926	357a	The 4th is
-80938	7f50	 Defense/pitching type
+80938	7f50	 Defense/Pitching Type
 80960	f926	.
-80968	aeeb	It emphasizes building up Fielding\nand pitching.
+80968	aeeb	It focuses on building Fielding\nand pitching.
 81012	0244	Those are the four types.\nWhich will it be?
 81064	1996	Setting a Training Policy changes\nwhich practice icons tend to appear.
 81122	0744	Choose from the four types, keeping\nin mind the ideal player you want\nto raise.
@@ -1709,13 +1709,13 @@
 81358	22da	  Defense/Pitching Type
 81468	0299	Got it, sir.\n
 81486	b616	 it is, then.
-81498	3c6e	Is that okay with you?
+81498	3c6e	Is that okay, sir?
 81528	4e7e	Understood.\n
 81548	dd01	 it is, then.
 81560	abbb	Is that all right?
 81590	794f	  Yes\n
 81600	04ef	  No
-81638	f0cc	Got it, sir.\nFrom now on, we'll use this policy!
+81638	f0cc	Got it, sir.\nWe'll go with this policy, then!
 81680	2df3	Understood.\nFrom now on, we'll use this policy!
 81726	dc3a	Team training policy
 81744	2f4f	 is now:\n
@@ -1723,8 +1723,8 @@
 81820	780d	Okay, which one will it be, sir?
 81852	65a3	Okay, which one will it be?
 81908	3858	Balanced Type
-81944	475c	Hitter-Focused Type
-81976	d3ae	Mobility-Focused Type
+81944	475c	Batting Type
+81976	d3ae	Speed Type
 82008	7f50	Defense/Pitching Type
 82056	7fc3	P
 82080	5145	C
@@ -1759,51 +1759,51 @@
 83328	d31e	Top
 83418	0299	Got it, sir.\n
 83436	5637	, 
-83444	285e	 High, right?
+83444	285e	 High it is!
 83464	0299	Got it, sir.\n
-83480	285e	 High, right?
-83502	f9d5	Are you sure that school is fine?
+83480	285e	 High it is!
+83502	f9d5	Is that school really okay, sir?
 83548	4e7e	Understood.\n
 83568	5637	, 
-83576	299a	 High, right?
+83576	299a	 High it is!
 83596	4e7e	Understood.\n
-83614	299a	 High, right?
+83614	299a	 High it is!
 83634	12d1	Are you sure about that school?
 83674	6579	　No problem\n
 83688	5a2d	　Pick another school\n
 83706	10fa	　Cancel the practice game
 83754	dcbd	Got it.\nThen please pick again.
 83800	12c1	Understood.\nThen please choose again.
-83876	f858	Got it, sir.\nIt's a shame, but I'll skip it...
-83920	9f32	Understood.\nIt's a shame, but I'll skip it.
-83984	d008	Okay, I'll work in a practice game!
-84016	9254	Then I'll work in a practice game!
+83876	f858	Got it, sir.\nShame, but we'll pass, then...
+83920	9f32	Understood.\nIt's a shame, but we'll pass.
+83984	d008	Okay, I'll book a practice game!
+84016	9254	Then I'll book the practice game!
 84074	fe12	A practice game has been set.
 84122	0be9	The practice game was called off.
 84156	6c87	They turned us down... What a shame.
 84196	48b4	Kantoku, ○○ High has requested\na practice game!
 84242	86ed	Kantoku, ○○ High in ○○ has\nrequested a practice game!
-84294	d17d	What would you like to do?
+84294	d17d	What shall we do?
 84316	8b66	　Accept\n
 84328	3542	　Refuse
-84356	e648	Declining. Understood.
+84356	e648	Declining, then. Understood.
 84386	f012	I'll turn them down politely.
-84416	c072	You're accepting.
+84416	c072	Accepting, then.
 84434	3df4	Then I'll let them know.
-84500	2e2b	Kantoku, about the upcoming\n
+84500	2e2b	Kantoku, about the\n
 84528	16ed	practice game 
-84540	50ed	we should discuss...
-84578	0ed2	Huh? You didn't hear about it?
+84540	50ed	coming up...
+84578	0ed2	Huh? You haven't heard?
 84606	a8d3	Actually, I booked it on my own.\nTee hee!
 84642	ac23	　I'm sorry!
 84662	28c7	But I set it up on purpose so you\ncan get used to games, Kantoku!
 84720	12b8	...A-anyway. Before the game, I'd\nlike to explain a few things...
 84794	c2b2	By the way, I'll add what I explain
 84824	d4e8	to the Manager's Memo 
-84844	f4e6	as well.
+84844	f4e6	too.
 84936	91ed	　Hear the explanation\n
 84950	fdae	　Not needed
-84978	549c	Okay.\nWhat would you like to know about?
+84978	549c	Okay.\nWhat would you like to know?
 85020	44ad	Ah, 
 85030	0e4e	the explanation of tactics
 85048	c040	\nis one you should definitely hear.
@@ -1814,21 +1814,21 @@
 85274	d163	　Unique Tactics
 85312	ce7b	Tactics, got it!
 85338	ad86	In a game, you give the players\nall kinds of orders, like pitching\ninside or calling a hit-and-run.
-85426	8261	Which one to pick is your call,\nKantoku, depending on the moment!
+85426	8261	What to pick, moment to moment,\nis your call, Kantoku!
 85478	0eea	Each tactic has a 
 85490	15a6	strength
 85500	7d8d	.\n
 85518	121c	The tactic icon number
-85538	f56a	 is it, and\n
+85538	f56a	 shows it:\n
 85558	8eee	higher numbers work better
 85584	af2f	.
 85594	debd	The number depends on your trust\n
 85626	f7fa	level with each player
 85642	84c5	.
-85662	5538	Just think of the number as how much\nfocus a player has, and you're set!
+85662	5538	Just think of it as how focused the\nplayer is, and you're set!
 85720	5f9e	The situation and each player's\ncondition are always changing.
 85762	91fb	You can't just pick the tactic with\nthe biggest number every time!
-85822	eeba	Let's decide on tactics case by\ncase!
+85822	eeba	Let's pick our tactics case by case!
 85870	ac23	The numbers are reset every at-bat,\nbased on trust.
 85944	6ae1	Unique Tactics, got it!
 85974	00be	Every player has something called a\nUnique Tactic.
@@ -1849,17 +1849,17 @@
 86434	1229	You can send a messenger\n
 86446	eace	up to 3 times per game
 86462	473d	.
-86486	c8a5	In extra innings, you can use it\n
-86516	b568	once per inning.
-86532	36ae	The effect depends on the\nsent player's 
+86486	c8a5	In extra innings, you get one\n
+86516	b568	per inning.
+86532	36ae	The effect depends on the\nmessenger's 
 86550	41e4	year and personality
 86564	ffb0	.
-86598	7e06	Who to send, and when, is up to you.\nThe number of uses is limited, so\nbe careful!
+86598	7e06	Who to send, and when, is up to you.\nUses are limited, so be careful!
 86688	3074	Don't Mind, got it!
 86718	1e05	It's an order that sends the catcher\nto the mound.
-86766	308a	It calms down the pitcher's nerves
+86766	308a	It calms the pitcher's jitters
 86790	2abe	.
-86812	4e41	It's usable up to 2 times per game
+86812	4e41	You can use it twice in a game
 86834	d956	.\nKeep that in mind!
 86878	23c8	　Back\n
 86890	0de3	　Big Cheer\n
@@ -1883,17 +1883,17 @@
 87812	cc06	I guarantee everyone will grow by\nleaps and bounds!
 87856	4254	I assure you everyone will grow by\nleaps and bounds!
 87924	f16a	By the way, at camp everyone might\npick up specialized abilities, sir!
-87986	62da	Each day is hard training, so the\nexperience is more than usual!
-88044	bd86	Everyone tires more easily,\nthough.
+87986	62da	Every day is hard training, so they\nearn more experience than usual!
+88044	bd86	They'll tire out faster, though.
 88082	3450	What will you do, sir?
 88104	4024	By the way, at camp everyone might\npick up specialized abilities!
-88166	3acd	Each day is hard training, so you\ngain a little more experience\nthan usual!
-88234	2cd7	Everyone will tire more easily,\nthough.
-88274	d17d	What would you like to do?
+88166	3acd	Every day is hard training, so they\nearn a little more experience\nthan usual!
+88234	2cd7	They'll tire out faster, though.
+88274	d17d	What shall we do?
 88302	90cf	　Hold camp\n
 88316	e71d	　Skip this time
-88362	32c4	Got it.\nI'll put the camp on the schedule!
-88404	6e74	Understood.\nI'll put the camp on the schedule!
+88362	32c4	Got it, sir!\nI'll put camp on the schedule!
+88404	6e74	Understood.\nI'll put camp on the schedule!
 88450	1f2c	Camp is set for next month.
 88526	6aa9	At camp, players who are fired up\nthat day can aim for a\n『special ability』.
 88588	f2bd	Once camp starts, the practice\nprogress icons switch to ones with\nspecial abilities of their own.
@@ -1907,28 +1907,28 @@
 89100	35f6	I guarantee everyone will grow by\nleaps and bounds at summer camp!
 89152	0488	I assure you everyone will grow by\nleaps and bounds at summer camp!
 89228	81ce	By the way, at camp everyone might\npick up specialized abilities, sir!
-89290	62da	Each day is hard training, so the\nexperience is more than usual!
-89348	bd86	Everyone tires more easily,\nthough.
+89290	62da	Every day is hard training, so they\nearn more experience than usual!
+89348	bd86	They'll tire out faster, though.
 89386	3450	What will you do, sir?
 89408	2430	By the way, at camp everyone might\npick up specialized abilities!
-89470	3acd	Each day is hard training, so you\ngain a little more experience\nthan usual!
-89538	2cd7	Everyone will tire more easily,\nthough.
-89578	d17d	What would you like to do?
+89470	3acd	Every day is hard training, so they\nearn a little more experience\nthan usual!
+89538	2cd7	They'll tire out faster, though.
+89578	d17d	What shall we do?
 89606	90cf	　Hold camp\n
 89620	e71d	　Skip this time
-89666	32c4	Got it.\nI'll put the camp on the schedule!
-89708	6e74	Understood.\nI'll put the camp on the schedule!
+89666	32c4	Got it, sir!\nI'll put camp on the schedule!
+89708	6e74	Understood.\nI'll put camp on the schedule!
 89754	1f2c	Camp is set for next month.
 89832	5a09	Got it.\nWe'll skip it this time, sir.
 89872	8a86	Understood.\nWe'll skip it this time.
 89946	1c48	Kantoku, camp starts today, sir!\nLet's do our best!
 89992	8dfb	Kantoku, camp starts today!\nLet's do our best!
 90044	8935	Camp has started.
-90098	425b	Kantoku, camp is over, sir.\nEveryone looks a size bigger.
+90098	425b	Kantoku, camp is over, sir.\nEveryone's grown a notch!
 90152	2f25	Starting today it's back to regular\npractice. Fresh start, let's go!
-90208	3ea7	Kantoku, camp has ended.\nEveryone looks a size bigger!
+90208	3ea7	Kantoku, camp has ended.\nEveryone's grown a notch!
 90260	8ab0	Back to regular practice from today.\nLet's make a fresh start!
-90344	e699	Kantoku, it's mid-month. Shall we\ngive practice instructions?
+90344	e699	Kantoku, it's mid-month, but how\nabout giving practice orders?
 90400	9d15	　Give practice orders\n
 90418	e71d	　Skip this time
 90448	7dfd	Okay.\nPlease go ahead, then!
@@ -1947,16 +1947,16 @@
 91250	2840	　Spirits down
 91300	8545	The players
 91314	fa6c	were inspired by a heated battle!
-91378	09d8	Faced with the difference in level,
+91378	09d8	Seeing the gap in level,
 91394	70e4	some players lost confidence...
 91518	9aa8	Everyone is full of energy.
 91542	90b3	They'll give any practice their all!
 91604	e5ff	With plenty of Vitality,
 91626	68e0	practice is more efficient!
-91682	f936	Everyone is wiped out and quite\ntired.
+91682	f936	Everyone's completely wiped out.
 91716	759e	Maybe they should rest soon...
 91766	cb7c	With low Vitality,
-91788	590d	practice can't be done efficiently.
+91788	590d	practice is less efficient.
 91880	a41f	 Kantoku! 
 91906	46ee	\nCongratulations on your first win!
 91934	11b0	To mark this win, the principal
@@ -1978,12 +1978,12 @@
 92558	1a0b	Special Training set for a few days.
 92608	ef45	To reward the hard-working players,
 92630	63dc	I decided to give them time off.
-92662	7031	The schedule for the next few days\nchanged.
+92662	7031	The next few days' schedule changed.
 92710	dea5	Practice with a combined progress\nicon makes players train harder than
 92768	2b5a	usual, so they earn more experience.
 92802	4890	The more ★, the greater the effect.
-92836	2f32	Also, a combined icon is forced to
-92870	9d77	become a 1-day progress icon.
+92836	2f32	Also, a combined icon always
+92870	9d77	becomes a 1-day progress icon.
 92936	e2b9	・
 92946	e2b9	・
 92956	e2b9	・
@@ -2223,11 +2223,11 @@
 100764	eba9	
 100776	d274	00P 
 100786	adf7	earned.
-100846	1097	Record Points are points you earn\naccording to game results.
+100846	1097	You earn Record Points based on\nyour game results.
 100898	dd03	You can spend them on baseball\ntools, items and more.
-100938	0212	As you pile up wins, a vendor who\nsells items will visit the club\nregularly.
+100938	0212	Keep winning, and a vendor will\nvisit the club regularly to\nsell items.
 101012	60e3	You can use Record Points then.
-101044	b235	Save up lots and\nspend lots!
+101044	b235	Save up big,\nthen spend big!
 101116	03a8	Record Points 
 101132	eba9	
 101144	d274	00P 
@@ -2447,14 +2447,14 @@
 112546	fd18	.
 112590	ea10	Field soil improved.
 112646	8c6b	Field soil got worse.
-112702	f1d5	Field LV
+112702	f1d5	Ground Lv.
 112718	a142	 went up to 
 112732	31a7	.
-112778	f1d5	Field LV
+112778	f1d5	Ground Lv.
 112794	a142	 went down to 
 112808	c266	.
 112844	e55b	Practice held.
-112872	1fd0	Everyone is extra keen today!
+112872	1fd0	Everyone's keener than usual!
 113880	aa8a	Swing focus. 
 113928	fe2d	Contact batting focus.\n
 113984	56d1	Tee batting focus.\n
@@ -2504,22 +2504,22 @@
 116284	20c4	The players used the Massage Chair
 116312	ebe9	to knead out their daily fatigue.
 116408	732e	We got game practice in a scrimmage.
-116466	f611	 seems to have picked up something\nin this scrimmage.
+116466	f611	 seems to have found something\nin this scrimmage.
 116548	a8f4	　
 116560	40d8	 got a pep talk from me.\nSeems to be feeling better.
 116728	fa6e	We watched another team's game.\nEveryone learned a lot from it.
 116810	6391	We studied hard to raise our grades.
 116934	5dab	I reviewed the practice schedule.
-116986	33f4	A group meal brought us closer\nto the players.
-117134	9a29	Shall I give the players some\npractice instructions?
+116986	33f4	A team dinner brought me closer\nto the players.
+117134	9a29	Should I tell the players\nwhat to practice?
 117188	9d75	Debug message!
 117210	3a60	This progress icon is impossible!
 117286	a8f4	　
-117298	bb28	 and I talked about the next step.
-117390	3b47	Seems the anxiety is gone.\n
-117424	00e0	Seems the anxiety is mostly gone.\n
-117498	bdbe	If he doesn't go pro, there's a job\nhe wants, but
-117540	22b3	he can't decide which job to take.
+117298	bb28	 and I talked about his future.
+117390	3b47	His worries seem to be gone.\n
+117424	00e0	His worries seem mostly gone.\n
+117498	bdbe	If he can't go pro, he has some\njobs in mind, but
+117540	22b3	he can't decide which to pick.
 117572	c9e3	Which one should I recommend?
 117622	a8f4	　
 117632	ef7e	\n
@@ -2527,8 +2527,8 @@
 117654	ef7e	\n
 117666	a8f4	　
 117770	3c47	 is what I'll recommend.
-117808	19df	'sanxiety
-117820	3d4a	seems to be resolved.
+117808	19df	's worries
+117820	3d4a	seem to be gone.
 118020	5637	's
 118028	be28	 Trajectory
 118060	5637	's
@@ -2598,33 +2598,33 @@
 122730	ab38	Fatigue built up in several players.
 122810	a142	
 122824	0fc8	 went up.
-122870	5ca4	Some OBs came by the school and\ncheered everyone in the club on.
+122870	5ca4	Some OBs visited the school and\ncheered on the whole club.
 122924	0b74	Team-wide 
 122940	f697	spirits 
 122954	b16b	peaked.
 122998	3c86	 had something good happen.
-123060	81ca	's movements are light today.
+123060	81ca	's light on his feet today.
 123140	9cce	A local newspaper interviewed us,\nand everyone got motivated!
 123190	eca0	Practice was extra effective today.
 123256	47b3	 got my advice.
-123282	bd4f	 seems inspired.
+123282	bd4f	 took it to heart.
 123368	1c25	The whole club held a get-together.\n
-123394	986f	Everyone seems so happy.
+123394	986f	Everyone looks so happy.
 123412	174f	\n【Get-together】\nTo mingle in a friendly way\n
 123472	6557	To sharpen pitching, we got the\npitchers together to watch video.
 123528	0905	To sharpen batting, we got the\nfielders together to watch video.
 123580	27a4	Trajectory experience went up.
 123624	de4e	The principal brought us a treat.
-124084	e0b1	Due to heavy rain, we will do\nstrength training in the gym.
+124084	e0b1	Heavy rain sent us to the gym\nfor strength training.
 124120	e022	
 124198	7fc6	 is awfully down...\nSeems his girlfriend dumped him.
 124256	4ec0	I have no words...
 124336	21df	 wasn't focused on practice, so\nI scolded him.
-124374	b99f	He seems a little hurt...
-124440	a185	 asked me for a favor, and I\ntotally forgot.
+124374	b99f	He took it pretty hard...
+124440	a185	 asked me a favor, and I\nclean forgot.
 124476	170d	He seems down...
 124596	e756	 dropped his wallet, it seems.
-124622	d4e9	He's lost a lot of spirit...
+124622	d4e9	He's lost all his spark...
 124656	58cf	's spirits went down.
 124840	8aa1	The pro season opens soon. The media\nis busy predicting each league's
 124884	63ed	final standings.
@@ -2633,7 +2633,7 @@
 125088	a8f5	Pacific League: Rakuten Golden\nEagles are favorites to win.
 125152	7935	Pacific League: 
 125170	a142	
-125178	aff2	Picked as favorites to win.
+125178	aff2	are favorites to win.
 125220	1c55	The pro baseball pennant race
 125244	e686	has begun.
 125266	9fdd	Everyone is buzzing over the picks.
@@ -2642,10 +2642,10 @@
 125372	2e8b	Everyone is eager to see matchups
 125394	e539	we don't usually get.
 125440	ee9e	The pro baseball All-Star Game\nwas held.
-125482	8125	Aiming to be future star players,
-125508	b40f	everyone seems to be working hard.
+125482	8125	Dreaming of stardom someday,
+125508	b40f	everyone is working hard.
 125542	3d6e	All players improved.
-125592	78c1	Every league's official games ended.
+125592	78c1	The pro regular season has ended.
 125760	af4c	Central League: 
 125778	611e	,
 125940	afc5	Pacific League: Rakuten Golden\nEagles took the pennants.
@@ -2668,43 +2668,43 @@
 126486	c0f1	Right call: 
 126502	f18e	 is\nthrilled.
 126554	4a81	A famous pro player has retired.
-126590	f3f2	Fan of that player, 
+126590	f3f2	A fan of his, 
 126612	d86e	 is disappointed.
-126656	f152	The Contract Renewal season for pro
+126656	f152	Pro contract renewal season
 126672	fa79	players has begun.
 126700	9c53	With big-name transfers and such,\nthe hot stove league
-126734	9ffa	should heat up too.
+126734	9ffa	looks set to heat up.
 126780	5c33	The draw for the spring Koshien
 126798	8dbc	tournament was held.
-126836	93c0	With the upcoming Koshien in sight,
+126836	93c0	With Koshien coming up,
 126862	c0bf	everyone is training hard.
 126916	3cfc	The spring Koshien has begun.
 126952	a828	's entry,
-126966	da68	I do hope they do their best.
+126966	da68	I hope they give it their best.
 127004	6356	The Koshien final has been played.
-127032	0b1b	Next tournament, I want our school\nto be standing on that stage.
+127032	0b1b	Next time, I want our school\nto be the one on that stage.
 127104	123a	The summer
 127116	e6ed	 tournament is under a\nmonth away.
-127144	6cc1	For the third-years, it is their\nlast big tournament.
+127144	6cc1	For the third-years, it's their\nlast big tournament.
 127184	455f	The fall
 127202	65ac	 tournament starts soon.
-127248	1d27	Everyone aims to win round one,
-127296	7515	Everyone aims for a top finish,
-127340	fcc9	Everyone aims for the title,
-127364	0a7d	\nso they are training hard.
+127248	1d27	Eyes on a first-round win,
+127296	7515	Eyes on a deep run,
+127340	fcc9	Eyes on the title,
+127364	0a7d	\neveryone is training hard.
 127474	fdc3	Everyone,
-127486	b4fc	let's give tomorrow's game our best!
+127486	b4fc	let's go all out tomorrow!
 127516	fdc3	Everyone,
 127528	53a2	do your best tomorrow, okay?
 127586	afcb	The manager handed the players\nvictory charms.
 127640	cb44	The manager handed the players\ncharms made with love.
 127752	664f	Ahead of Koshien, fierce games
 127780	9c7c	are being played nationwide.
-127806	bf40	Which high school, this year, will\nwin a ticket
-127844	b46d	to Koshien?
+127806	bf40	Which school will punch its\nticket to Koshien
+127844	b46d	this year?
 127876	123a	The summer
 127888	3aed	 tournament final\nwas held.
-127910	3aba	Next year, I want us to be standing\non the stage of the final.
+127910	3aba	Next year, I want us\nto be the ones in that final.
 127976	a31e	The draw for the summer Koshien\ntournament was held.
 128026	aafb	The summer Koshien is the biggest\nstage, watched by all of Japan.
 128070	c0bf	Everyone is training hard.
@@ -2713,18 +2713,18 @@
 128204	3b1c	Hot: "
 128212	1ef6	 High Whirlwind!"
 128234	59b7	"New era for high school baseball?!"
-128266	a7a8	A magazine covered our performance.
-128306	a798	Without getting carried away,
+128266	a7a8	A magazine wrote up our run.
+128306	a798	No one's getting carried away;
 128330	97f9	everyone is training hard.
-128356	c1a8	We are close to the national title.
+128356	c1a8	The national title is so close.
 128390	af45	The crimson pennant is within reach.
 128424	7ca5	The purple pennant is within reach.
-128492	cd0d	The Draft will be held on the 3rd\nof next month.
-128526	2eb7	With the Draft coming up, TV and\nnewspapers
+128492	cd0d	The draft is on the 3rd\nof next month.
+128526	2eb7	With the draft coming up, TV and\nnewspapers
 128560	cba2	are running more specials.
 128942	49b8	Lately, 
 128954	5811	 seems low on energy.
-128970	9093	It seems he has
+128970	9093	Looks like he's
 128992	948b	gotten homesick.
 129054	d8ba	Recently, 
 129066	bdc4	 is full of energy.
@@ -2876,7 +2876,7 @@
 134436	db6e	Got it, sir!
 134450	a305	I'll pass the word along!
 134488	e978	Understood.
-134504	27e0	I'll pass along the instructions!
+134504	27e0	I'll let everyone know!
 134558	4324	 trained thoroughly.
 135876	1fe5	Practice is going strong today too!
 135898	b40f	Everyone seems to be working hard.
@@ -2890,18 +2890,18 @@
 136132	0b7e	After resting,\n
 136150	d9b2	's fatigue is gone!
 136212	d5f5	 returned to practice\nreluctantly.\nAnd then...
-136274	e5dd	 got over a big wall,
-136294	93ae	and grew a notch bigger!
+136274	e5dd	 broke through a wall
+136294	93ae	and came out stronger!
 136368	2c83	 is tired from practice.
 136386	495d	Practice is a little less effective.
 136460	bc45	To refresh, I had 
 136476	de3d	
 136484	6203	study.
 136646	ce2b	A local TV station came to cover us.
-136672	d733	It looks like an interview ahead of
+136672	d733	They want an interview before
 136694	fd99	the Koshien tournament.
-136716	470d	"Congratulations on making the
-136742	1b82	　Koshien tournament!"
+136716	470d	"Congratulations on reaching
+136742	1b82	　Koshien!"
 136768	b734	"What was the practice method
 136792	8ab1	　that made you so strong?"
 136830	98d1	　Next\n
@@ -2913,23 +2913,23 @@
 137014	23c8	　Back\n
 137026	0e25	　The players' hard work
 137072	9ec5	"I see! Fielding, then."
-137100	dc93	The reporter's interview went
-137122	6785	on for a while.
+137100	dc93	The interview went on
+137122	6785	for a while.
 137496	fba0	"I see! Pitching, then."
-137524	dc93	The reporter's interview went
-137546	6785	on for a while.
+137524	dc93	The interview went on
+137546	6785	for a while.
 138100	1bc8	"I see! Batting, then."
-138128	dc93	The reporter's interview went
-138150	6785	on for a while.
+138128	dc93	The interview went on
+138150	6785	for a while.
 138576	7fae	"I see! Baserunning, then."
-138604	dc93	The reporter's interview went
-138626	6785	on for a while.
+138604	dc93	The interview went on
+138626	6785	for a while.
 138980	e26a	"I see!
 138996	5031	　So it's the players' hard work."
-139020	dc93	The reporter's interview went
-139042	6785	on for a while.
-139188	44f5	Our team's performance was
-139208	ae3a	printed in the local paper.
+139020	dc93	The interview went on
+139042	6785	for a while.
+139188	44f5	The local paper ran a story
+139208	ae3a	on our team's success.
 139242	30f7	Everyone is delighted.
 139472	d60b	We came a long way to Koshien\nand watched other schools play.
 139536	b128	We watched other schools play\nat Koshien.
@@ -2950,10 +2950,10 @@
 140300	ff45	so we held a study session for all.
 140390	fe63	's advice was rejected,
 140406	125b	so we ended up practicing.
-140488	784c	Our local rep school's Koshien run
-140516	782d	made big headlines in the paper.
-140552	e2f2	(Someday, us too...)
-140584	7bfa	Everyone's hearts caught fire.
+140488	784c	Our prefecture's team at Koshien
+140516	782d	made big headlines.
+140552	e2f2	(Someday, that'll be us...)
+140584	7bfa	It lit a fire in everyone.
 140638	2840	By the way, Kantoku, club OB\n
 140668	5637	, 
 140676	7659	-san\nsent you a gift, sir!
@@ -2982,38 +2982,38 @@
 141364	cba5	Seer
 141388	e675	Idol
 141416	1d4e	Nurse
-141770	c45f	The baseball world championship,
+141770	c45f	The world baseball tournament,
 141792	eb25	held every 4 years, is coming up.
 141826	47e1	Everyone is talking about
-141842	aad1	nothing but the championship.
-141990	00bb	The Japan team at the\nbaseball world tournament
+141842	aad1	nothing but the tournament.
+141990	00bb	The Japan team at the\nworld baseball tournament
 142024	d69b	won the gold medal!
 142052	47e1	Everyone is talking about
 142068	aad1	nothing but the tournament.
 142108	485a	Everyone seems inspired, with\nhigher spirits than ever,
 142152	a7f8	and all fired up!
-142218	00bb	The Japan team at the\nbaseball world tournament
+142218	00bb	The Japan team at the\nworld baseball tournament
 142252	332d	took home the silver medal.
-142284	ec99	For the next tournament,\n"We'll win the gold ourselves,"
-142324	7e8b	so everyone is training hard!
-142378	00bb	The Japan team at the\nbaseball world tournament
+142284	ec99	"Next time, we'll win gold\nourselves!" With that goal,
+142324	7e8b	everyone's training like mad!
+142378	00bb	The Japan team at the\nworld baseball tournament
 142412	9451	took home the bronze medal.
-142444	ec99	For the next tournament,\n"We'll win the gold ourselves,"
-142484	7e8b	so everyone is training hard!
+142444	ec99	"Next time, we'll win gold\nourselves!" With that goal,
+142484	7e8b	everyone's training like mad!
 142568	65b7	Kantoku, at 
 142578	990a	 High,
 142588	61df	since you took over the club,
 142608	d630	so you've won 
-142620	32f2	 games in total, sir.
-142642	3b41	Isn't it time to bring in some new
+142620	32f2	you've won a total of 
+142642	3b41	 games, sir.
 142670	b63a	equipment or tools, sir?
 142700	9dc8	A vendor just happens to be here.\nLet's buy some things, sir!
 142756	65b7	Kantoku, at 
 142766	990a	 High,
 142776	61df	since you took over the club,
 142796	d630	so you've won 
-142808	c762	 games in total.
-142830	3b41	Isn't it time to bring in some new
+142808	c762	you've won a total of 
+142830	3b41	 games.
 142858	2f9a	equipment or tools?
 142890	4110	A vendor happens to be here.\nLet's buy some things.
 142962	5b64	Use Record Points to
@@ -3071,12 +3071,12 @@
 146764	b521	Next\n
 147124	31a9	Back\n
 147178	5ef2	Back to category select
-147330	40bf	We can't hold any more of that...\nSo you can't buy it.
-147376	5f71	We can't hold any more of that...\nPurchase isn't possible.
+147330	40bf	We can't hold any more, sir...\nYou can't buy it.
+147376	5f71	We can't hold any more...\nYou can't buy it.
 147430	e78e	　Back to Selection\n
 147446	6783	　Skip Buying
-147524	e98f	Not enough Record Points...\nYou can't buy it.
-147572	7bb2	Not enough Record Points...\nPurchase isn't possible.
+147524	e98f	Not enough Record Points, sir...\nYou can't buy it.
+147572	7bb2	Not enough Record Points...\nYou can't buy it.
 147630	e78e	　Back to Selection\n
 147646	6783	　Skip Buying
 147720	db6e	Got it, sir.
@@ -3093,9 +3093,9 @@
 148120	2c1f	　Stop
 148166	bc65	Got it, sir!
 148184	e978	Understood.
-148244	47c5	Oh, the vendor's time is up, sir.
+148244	47c5	Oh, the vendor has to go now.
 148280	43e5	That's all for now, sir.
-148308	edbc	Oh, the vendor's time is up.
+148308	edbc	Oh, the vendor has to go now.
 148344	78ac	Let's stop here this time.
 148412	9790	Hey, Kantoku, 
 148428	32a4	's fame\nis on the rise, sir.
@@ -3215,11 +3215,11 @@
 151748	e6ac	South
 151778	ad55	Club OB, now a fishmonger,\n
 151806	693b	 came by.
-151822	aede	Fresh fish came as a gift.\nThe players are overjoyed.
+151822	aede	He brought us fresh fish.\nThe players are overjoyed.
 151868	beb0	Fish spoils fast,\nso we hurried to eat it.
 152050	1e9f	Club OB, now a greengrocer,\n
 152080	693b	 came by.
-152096	65c1	He brought us vegetables.\nThe players ate plenty of them\nand seem better balanced now.
+152096	65c1	He brought us vegetables.\nThe players ate plenty of them\nand seem in better shape now.
 152318	178f	Club OB, now a baker,\n
 152348	693b	 came by.
 152364	1b9f	He brought us bread.\nThe players keep marveling at the\nskill behind such colorful loaves.
@@ -3237,7 +3237,7 @@
 153984	93e2	He oiled the club's equipment.
 154046	55c7	Club OB, now a delinquent,\n
 154076	693b	 came by.
-154092	4d96	I'd heard the rumors, but\nhe is as much a delinquent as ever.\nSuch an outlaw wannabe.
+154092	4d96	I'd heard the rumors, but\nhe's as wild as ever.\nWhat a wannabe outlaw.
 154164	b881	He wrecked the schedule\nand left...
 154210	97aa	Progress icons were swapped around.
 154268	5f08	Club OB, now a seer,\n
@@ -3278,15 +3278,15 @@
 155264	541f	Goofball
 155292	9408	Shrewd
 155326	b16a	Former club manager, now a\npopular idol, 
-155368	693b	came by.
-155400	f08d	A signing event was held\nout of the blue.
+155368	693b	 came by.
+155400	f08d	A surprise autograph session\nwas held.
 155426	d89d	The players are getting excited...
-155480	e263	A handshake event was held\nout of the blue.
-155504	7e43	Some players' eyes have changed...
-155576	a33f	She performed her new song for all.
-155608	e2df	The players' eyes have changed...
-155678	0ec1	A pro team's scout\ncame to visit.
-155728	714a	He took a good look at how\nseriously we practice.
+155480	e263	A surprise handshake event\nwas held.
+155504	7e43	Some players went starry-eyed...
+155576	a33f	She sang her new song for everyone.
+155608	e2df	The players have gone starry-eyed...
+155678	0ec1	A scout from a pro team\ncame by.
+155728	714a	He got a good look at us\npracticing hard.
 155806	fa88	Shall I recommend one more player?
 155836	96a3	These three are fired up today.
 155868	2799	Player 1: 
@@ -3304,7 +3304,7 @@
 156068	a8f4	　
 156078	a8f4	　
 156088	6f14	-year
-156190	5367	 was recommended to the\nscouts. They were so fired up that\nit left a good impression.
+156190	5367	 was recommended to the\nscout. They were so fired up that\nit left a good impression.
 156258	0805	 is one step closer\nto going pro!
 156338	1eca	Club OB, now a scout,\n
 156366	693b	 came by.
@@ -3326,47 +3326,47 @@
 156692	a8f4	　
 156702	a8f4	　
 156712	6f14	-year
-156814	9ea3	 was recommended to the\nscouts. They were quite fired up,\nwhich left a good impression.
+156814	9ea3	 was recommended to the\nscout. They were quite fired up,\nwhich left a good impression.
 156884	22af	 is a little closer\nto going pro!
 157336	14d0	Club OB, now a pro player,\n
 157368	693b	 came by.
-157384	b756	He's here to be our temporary\ncoach, apparently.
+157384	b756	Seems he's here to be a guest\ncoach.
 157414	3a22	I gladly accepted.
-157490	5893	The players, taught up close\nby a pro,
-157530	2ff3	are still thrilled.
+157490	5893	Coached up close by a pro,\nthe players
+157530	2ff3	can't stop buzzing.
 157552	7031	The next few days' schedule changed.
 157616	c39d	The team has grown a lot!
 157664	93cf	Club OB, now an industrial-league\nplayer, 
-157698	693b	came by.
+157698	693b	 came by.
 157728	86db	He's reportedly aiming for the pros
 157754	617d	and training like mad right now.
 157786	b407	He never gave up on the pros, even\nin industrial ball.
 157822	da88	Some players were deeply moved.
 157864	4ee6	He can't play the baseball he loves
 157890	a8b5	and is buried in work, I hear.
-157916	8227	He told us his troubles at length.
+157916	8227	We got an endless tale of woe.
 157958	bc00	The players are disappointed...
-158022	6ece	Club alum, now a craftsman,\n
+158022	6ece	Club OB, now a craftsman,\n
 158048	693b	 came by.
 158064	832c	He gave us shiny baseball gear\nhe made himself.
-158566	7ba3	Club alum, now working at a shop,\n
+158566	7ba3	Club OB, now working at a shop,\n
 158600	693b	 came by.
 158616	fec3	We got a treat.\nThe players are thrilled.
-159006	fb00	Club alum, now a butcher,\n
+159006	fb00	Club OB, now a butcher,\n
 159034	693b	 came by.
-159050	9a5c	He treated us to a meal made with\nfresh ingredients.
+159050	9a5c	He cooked us a meal with fresh\ningredients.
 159100	9e96	Premium meat at 3000 yen per 100 g!\nEveryone's super excited!
-159200	5030	The juicy flavor bursting out\nthrills everyone!
+159200	5030	Juicy meat makes solid contact\nwith every palate!
 159296	d649	The tasty meat powered everyone up!
 159392	628a	Tasty stamina food made with great\ningredients thrills everyone!
 159518	f294	Kantoku, April starts today!
 159548	786c	Everyone moved up a year, and they\nlook more focused, sir!
-159600	36b3	New students are coming soon too,\nso I have to do my best!
+159600	36b3	New students are coming soon,\nso I've got to step it up too!
 159652	b989	Kantoku, it's April today.
 159682	a0a6	Everyone moved up a year, and they\nlook a bit more focused!
 159734	31d5	New students will be here soon, so\nI have to do my best too!
 159794	d01c	The new second-years and third-years\nseem to have found a new resolve.
-159894	8c09	You're getting used to coaching,\nit seems.
+159894	8c09	You're getting the hang of\ncoaching, I think.
 159930	0bcb	...Listen to me, sounding so\nimportant... Hee hee.
 159976	a226	A suggestion: starting next month,\nhow about giving
 160014	e92a	 practice orders
@@ -3377,7 +3377,7 @@
 160224	e6ec	Let me explain the practice order\noptions a little.
 160280	c036	Auto
 160292	f541	 raises one item at random.
-160338	23bc	It's down to luck which it picks!
+160338	23bc	It's the luck of the draw!
 160368	b7cd	All-Around
 160378	3ac9	 trains the weakest\nareas first.
 160432	3226	Best for raising well-rounded\nplayers!
@@ -3385,8 +3385,8 @@
 160498	e643	Contact Up
 160514	25aa	 and\n
 160524	e93e	Stamina Up
-160540	f3b8	 are detailed orders.
-160572	eb74	Once you know how you want to grow a\nplayer, switch to detailed orders\nat that point.
+160540	f3b8	, are fine-tuned orders.
+160572	eb74	Once you know how to raise a\nplayer, it may be best to switch\nto detailed orders.
 160664	98dc	Then I'm counting on you, Kantoku!
 160714	522a	From now on, you will give practice\norders on the 1st of every month.
 160756	19d9	Right now, all players' practice\norders are set to 'Auto'.
@@ -3401,30 +3401,30 @@
 161152	cbbe	What each one does is something to\nlook forward to.
 161202	8e84	Personality also makes a bit of a\ndifference in growth.
 161250	269c	Please keep that in mind!
-161318	c7c6	The tournament's almost here!\nDid you forget the lineup?
-161370	9cec	If you haven't, I think you should\ndo it now, sir!
-161424	fa5f	The tournament is about to start.\nDid you forget to set the lineup?
-161478	fe64	If you haven't yet, you should do it\nnow.
+161318	c7c6	The tournament's almost here!\nYou didn't forget the lineup, sir?
+161370	9cec	If not, better do it now!
+161424	fa5f	The tournament is about to start.\nYou haven't forgotten the lineup?
+161478	fe64	If not, you should do it now.
 161558	7773	In 'Lineup Setup' on the Data\nscreen you can set your lineup,\nusage and team policy.
 161686	7689	Today I'll explain baseball tools,\nlike bats and gloves.
 161740	3ccf	Baseball Tools can make players\ngrow in one go.
 161790	501c	But each player can use one only\nonce.
 161848	321a	Why, you ask?
-161870	765a	Because if they get good gear\nwithout practice and think they got\nbetter, it does them no good!
+161870	765a	Because if good tools made them feel\nbetter without real practice, that\nwould do them no good!
 161956	51d5	I want them to grow as people, not\njust as ballplayers...
 162014	00b7	So, Kantoku, I'm counting on you!
 162066	01d6	Baseball Tools, the items that grow\na player, can be used only once per\nplayer.
 162132	0cb5	Books, the items that give a special\nability, can also be used only once\nper player.
 162196	3ff5	Think carefully before using these\ntwo types of items!
 162294	ea50	It looks like you're getting used to\ngames!
-162338	b962	But aren't you always giving orders\nhalf-heartedly?
+162338	b962	But you're not just giving orders\nat random, are you?
 162390	910e	In a game, orders affect growth\nwhether they succeed or fail
 162434	3b44	.\nFor example...
-162462	6286	Use Power at bat and Power goes up,\ngo for steals and Speed goes up,\nthat kind of thing.
+162462	6286	Power-swing a lot and Power goes up,\ngo for steals and Speed goes up,\nthat kind of thing.
 162542	506a	Winning is important, of course, but\nplease think about growth when\ngiving orders!
 162664	ca7b	Kantoku, that last game was a shame.
-162700	d6a9	...But it's okay!
-162722	1a1d	The history of our baseball club has\njust begun!
+162700	d6a9	...But don't worry!
+162722	1a1d	Our club's history has only just\nbegun!
 162764	a056	When today's first-years become\nthird-years, the team will surely\nbe... stronger than it is now!
 162862	5fd4	Thanks to you, Kantoku, everyone is\ngrowing nicely!
 162916	6b38	Everyone has their own traits,\nstarting with personality.
@@ -3437,7 +3437,7 @@
 163228	7634	Trust goes up when you\n
 163242	9a5d	start them in games\nor place them on the Bench
 163280	b7b7	.
-163304	cfc8	They're especially happy when they\nget used in games!
+163304	cfc8	They're especially happy when they\nget to play in games!
 163382	36f8	I got a Mystery Gear Pass from the\nprincipal!
 163426	f586	This is sure to boost practice!\nPrincipal... how generous of him!
 163526	f06a	...Huh?\nYou don't know how to use it?
@@ -3526,11 +3526,11 @@
 166852	f9f8	Starting tomorrow they'll put even\nmore spirit into practice!
 166898	a8f4	　
 166912	8aba	 looks like someone\nnot to cross...
-166972	6b38	Kantoku, my grandma gave me this\nnice thing today!
+166972	6b38	Kantoku, my grandma gave me\nsomething nice today!
 167024	d78e	Please use it whenever you like.
 167052	a8f4	　
 167066	2594	\nseems very close to their grandma.
-167094	f089	I'll gratefully use it.
+167094	f089	I'll gladly put it to use.
 167338	71d5	Short-Hair Manager Exclusive Event!
 167378	22cc	(Bustle bustle)
 167396	22cc	(Bustle bustle)
@@ -3542,11 +3542,11 @@
 167546	5abd	for us.
 167568	699a	oiled the practice gear
 167590	5abd	for us.
-167612	b564	Even where no one is looking, they
-167640	c2a6	seem to be doing their best.
+167612	b564	Even when no one's looking, they
+167640	c2a6	seem to be giving their all.
 167746	6cdd	Twin-Tail Manager Exclusive Event!
-167784	aa53	Kantoku, I made lunch boxes.
-167814	64ff	Please have them with everyone!
+167784	aa53	Kantoku, I made bento!
+167814	64ff	Please enjoy them, everyoooone!
 167840	3fe6	With great relish, the players ate
 167874	d19a	's homemade bento.
 167938	0f93	Phew... Nearly there, sir...
@@ -3555,47 +3555,47 @@
 168040	b605	Stubborn stains get a hand wash...
 168096	7a6e	Seeing that effort, everyone got\nfired up.
 168170	3dc8	Oh, darn!
-168192	60a3	Oh no, I've done it...
-168220	30e4	The uniform being washed tore with\na loud rip...
+168192	60a3	Oh no, I blew it...
+168220	30e4	I heard a uniform in the wash\ngo riiip...
 168284	9984	The uniform's owner 
 168308	77c5	\nseems quite shocked...
 168398	0abd	Kantoku, you look tired. Shall I\nrub your shoulders?
 168448	5ba6	Kantoku, you look tired. Shall I\nmassage your shoulders?
 168506	6850	The manager massaged my shoulders.
 168562	bd44	The players didn't seem to think\nanything of it.
-168630	15c7	Envious stares pierce me...
+168630	15c7	Envious glares are stabbing me...
 168686	30a2	Some players' motivation dropped...
 168744	3d8e	Fueled by jealousy, some players\nare brimming with motivation...
 168820	2baf	How much the students trust you
 168864	1dc5	is quite key, I think.
-168892	ecff	When you start them in games,
-168940	ce20	students come to trust you more.
+168892	ecff	Students are mercenary: start them
+168940	ce20	and they'll trust you more.
 168988	5800	It's May. Any problems this month?
 169048	fe2b	If anything is unclear to you,
 169072	19e1	do you have any questions?
 169104	eb60	Summer tournament is almost here!
-169132	b4be	Are you mentally prepared?
-169158	b557	Let's aim to win the first game and\ndo our best!
+169132	b4be	Are you ready for it?
+169158	b557	First, let's get past round one!
 169204	eb60	Summer tournament is almost here!
-169232	b4be	Are you mentally prepared?
-169258	b557	Let's aim to win the first game and\ndo our best!
+169232	b4be	Are you ready for it?
+169258	b557	First, let's get past round one!
 169304	861e	Summer Koshien is about to begin!
 169336	f90b	Grow them to suit their positions.
 169362	5f8c	For a 1B, go for Power over Speed...
 169408	f9d5	That gives you an edge in games too!
-169444	b1d9	We did it!!
+169444	b1d9	We did iiit!!
 169464	dae5	Won Koshien... I can't believe it!
 169520	a8f4	　
 169534	f27a	 Kantoku, good work!
 169560	a8f4	　
 169574	8f12	 Kantoku, well done.
-169660	5cde	Good morning, Kantoku.\nToday's date is 
-169696	6f14	 yr 
-169706	d9b5	 mo 
-169716	1591	 day
+169660	5cde	Good morning, Kantoku.\nIt's Year 
+169696	6f14	, Month 
+169706	d9b5	, Day 
+169716	1591	
 169736	8dfa	, sir.
 169752	af2f	.
-169768	741a	Our school is currently said to be 
+169768	741a	People call our school 
 169804	8e06	weak
 169828	034c	so-so
 169856	4165	a powerhouse
@@ -3603,7 +3603,7 @@
 169892	c842	mid-level
 169930	6c30	, sir.\nLet's work hard in practice today!
 169980	7f2d	, sir.\nLet's work hard in practice today!
-170036	fd45	, so they say.\nLet's do our best in practice today!
+170036	fd45	.\nLet's do our best in practice today!
 170088	20f6	.\nLet's do our best in practice today!
 170158	9d75	Debug message!
 170180	df17	Login present get?
@@ -3623,21 +3623,21 @@
 171056	4ee5	 Normal flow\n
 171070	f55b	 Once more
 171146	76ce	
-171156	225c	stays cool, unfazed by anything,
-171178	b9e8	and plays on, it seems.
+171156	225c	seems to play cool and calm,
+171178	b9e8	unfazed by anything.
 171266	16c0	Watching this, the other players
 171292	b1d9	seem to have been inspired.
 171506	b4df	Usually quiet 
 171526	a142	
-171534	bcfe	opened up in the Meeting about the
-171560	665d	feelings they hold for baseball.
+171534	bcfe	spoke at the Meeting about their
+171560	665d	hidden passion for baseball.
 171592	b9e0	Everyone seems fired up by it!
 171694	22c6	Scholar-athlete 
-171710	611e	,
-171718	3f34	is growing fast in baseball skill!
+171710	611e	
+171718	3f34	is improving fast at baseball, too!
 171826	887c	The goofball show-off 
-171860	243f	's idea: on the school PA,
-171882	857d	the club is to be introduced.
+171860	243f	's idea got the club
+171882	857d	a spot on the school PA.
 171922	1349	Everyone is practicing with gusto.
 172122	24cf	 is buttering up the kantoku by
 172148	efa7	grooming the field!
@@ -3645,19 +3645,19 @@
 172256	296d	is working hard in practice.
 172374	c164	's mother came by.
 172406	8845	's mom seems just as kind.
-172440	aa1a	We received a treat.
-172504	afef	They had only come to watch...
+172440	aa1a	She brought us a treat.
+172504	afef	She just came to watch...
 172578	51cc	Always buried in practice,
-172608	d271	 got a bad class test grade
+172608	d271	 bombed a class test
 172626	0b7b	and is badly shaken.
-172760	0cc3	's idea:
-172772	6214	everyone went to karaoke and
-172794	bbbb	practiced projecting their voices.
+172760	0cc3	's invite took
+172772	6214	everyone to karaoke to
+172794	bbbb	work on their field calls.
 172878	d0a4	Hot-blooded 
 172892	a142	
 172900	917f	is eagerly polishing their own
-172922	e199	baseball gear.
-172948	0f82	Inspired, everyone else started\npolishing their own gear too.
+172922	e199	equipment.
+172948	0f82	Inspired, everyone else started\npolishing their equipment too.
 172994	2051	This should help practice.
 173128	4ee5	 Normal flow\n
 173142	f55b	 Once more
@@ -3675,7 +3675,7 @@
 173528	4c1f	...
 173538	ab5e	.....
 173574	4bca	Seems they impressed the scout.
-173634	9d1e	They seem to have failed to impress.
+173634	9d1e	Looks like they failed to impress.
 173722	186d	 is quietly staying late
 173742	eead	to practice on their own.
 173858	7805	 has split from the group and
@@ -3692,22 +3692,22 @@
 174314	e9fd	their talent!
 174340	a7db	The other players who saw it
 174366	5442	seem inspired.
-174510	0d97	Talent-packed 
+174510	0d97	Brilliant 
 174528	5637	's
 174536	3c98	flair has everyone's eyes
-174558	6103	glued on them.
+174558	6103	glued to them.
 174648	ca89	Some players are so shocked by that\ntalent that they neglect practice.
 174782	a108	 apparently got a girlfriend.
-174804	07f4	Seems it went well for them.
-174894	4563	 is casually
-174910	104c	reading the pitcher's habits to
-174938	cac3	improve their base stealing!
-174992	ce8e	But they hardly seem
-175016	b794	to be putting it into practice.
-175082	b721	 seems to be
-175098	783d	rallying everyone.
-175186	ca47	 casually
-175200	0475	came over to talk to me.
+174804	07f4	Seems they played it smooth.
+174894	4563	 is slyly
+174910	104c	stealing the pitcher's tells to
+174938	cac3	get better at stealing bases!
+174992	ce8e	But they rarely manage to
+175016	b794	pull it off in games.
+175082	b721	 is lifting
+175098	783d	everyone's spirits.
+175186	ca47	 came over
+175200	0475	for a friendly chat.
 175256	41a7	Shall we do Special Training now?
 175278	f760	Those three are fired up today.
 175312	2799	Number 1 is 
@@ -3725,8 +3725,8 @@
 175512	a8f4	　
 175522	a8f4	　
 175532	6f14	 yr
-175626	86fe	 will go through Special Training.
-175648	1060	Now, what should I train?
+175626	86fe	 will get Special Training.
+175648	1060	Now, what should we work on?
 175724	a8f4	　
 175784	a8f4	　
 175802	ef7e	\n
@@ -3817,7 +3817,7 @@
 177482	ef7e	\n
 177500	a8f4	　
 177510	a8f4	　
-177792	15a7	 got special training.
+177792	15a7	 got Special Training.
 177810	b1a2	They seem to have good instincts.
 177848	54d3	 is working hard.
 177916	abed	 seems to have nailed\nit perfectly!
@@ -3825,48 +3825,48 @@
 177978	724e	It looked that way, but with a final
 178010	5357	push they nailed it!
 178060	c036	 found the practice\ntoo grueling...
-178276	2546	By the captain's orders,
-178300	c95a	they will work on their weak points.
-178342	07c4	Everyone seems to be trying hard!
-178404	2546	By the captain's orders,
-178428	2da4	they will focus on batting practice.
-178468	07c4	Everyone seems to be trying hard!
-178536	2546	By the captain's orders,
-178560	ce80	they will focus on baserunning.
-178600	07c4	Everyone seems to be trying hard!
-178660	2546	By the captain's orders,
-178684	fb58	they will focus on fielding.
-178724	07c4	Everyone seems to be trying hard!
-178798	2546	By the captain's orders,
-178822	4e17	they will groom the field.
-178864	e69c	The clean field thrills everyone!
-178940	2fbf	Under the Captain's fiery coaching,
-178968	8717	they will train their weak points.
+178276	2546	On the captain's orders,
+178300	c95a	we worked on our weak points.
+178342	07c4	Everyone's working hard!
+178404	2546	On the captain's orders,
+178428	2da4	we focused on batting practice.
+178468	07c4	Everyone's working hard!
+178536	2546	On the captain's orders,
+178560	ce80	we focused on baserunning.
+178600	07c4	Everyone's working hard!
+178660	2546	On the captain's orders,
+178684	fb58	we focused on fielding.
+178724	07c4	Everyone's working hard!
+178798	2546	On the captain's orders,
+178822	4e17	we groomed the field.
+178864	e69c	Everyone loves the clean field!
+178940	2fbf	Under the captain's fiery coaching,
+178968	8717	we drilled our weak points.
 179008	2aa7	Exhausted as they are,
 179030	26ee	everyone is pushing through!
-179104	2fbf	Under the Captain's fiery coaching,
-179132	4cd5	they will train with 1000 swings.
+179104	2fbf	Under the captain's fiery coaching,
+179132	4cd5	we trained with 1000 swings.
 179172	2aa7	Exhausted as they are,
 179194	26ee	everyone is pushing through!
-179280	2fbf	Under the Captain's fiery coaching,
-179308	56f6	they will train with 1000 sprints.
+179280	2fbf	Under the captain's fiery coaching,
+179308	56f6	we trained with 1000 sprints.
 179350	2aa7	Exhausted as they are,
 179372	26ee	everyone is pushing through!
-179448	2fbf	Under the Captain's fiery coaching,
-179476	c23d	they'll train on close-range fungo.
+179448	2fbf	Under the captain's fiery coaching,
+179476	c23d	we trained with close-range fungoes.
 179518	2aa7	Exhausted as they are,
 179540	26ee	everyone is pushing through!
-179624	2546	By the captain's orders,
-179648	8698	they did body maintenance.
+179624	2546	On the captain's orders,
+179648	8698	we did body maintenance.
 179684	7330	With no hard practice today,
 179708	abd7	everyone is happy.
-179764	2546	By the captain's orders,
-179788	b082	a study session was called at once.
-179828	322f	Everyone can now solve the hard\nproblems and is relieved.
+179764	2546	On the captain's orders,
+179788	b082	we held a snap study session.
+179828	322f	Everyone can now handle the hard\nquestions. What a relief.
 179898	2546	On the captain's orders,
 179922	7bd9	everyone is practicing efficiently.
-179960	0256	Maybe the advice was good,
-179988	bc37	since things are going well.
+179960	0256	Maybe it was good advice;
+179988	bc37	things are going smoothly.
 180034	91ef	Thanks to the captain's 
 180050	9982	Katsu!
 180058	6cc3	
@@ -3874,14 +3874,14 @@
 180092	16d3	\n【Katsu】\nA loud shout, as to encourage.\n
 180148	0d2b	Everyone is raring to go.
 180228	bd2a	The captain
-180244	9475	came up to me with a few others.
-180280	7f8a	They gave me a shoulder rub,
-180308	6e16	then left.
+180244	9475	showed up with a few others.
+180280	7f8a	They massaged my shoulders
+180308	6e16	and then just left.
 180324	e0d4	What on earth was that...
 180384	5057	At the captain's suggestion, we
-180408	5921	played the OBs by the nearby river.
-180450	be32	Since it was a game against the OBs,
-180478	b39e	everyone seemed fired up.
+180408	5921	played the OBs on the riverbank.
+180450	be32	Playing the OBs had
+180478	b39e	everyone fired up.
 180668	b521	Next\n
 180678	8015	Event\n
 180690	1322	Char Display Test\n
