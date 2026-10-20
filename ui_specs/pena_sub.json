@@ -3753,7 +3753,7 @@
      ],
      "text": "Season Over",
      "style": "c5_pen_gold",
-     "font": "ttf:narrow:15:0.0:0.85:0.45",
+     "font": "ttf:narrow:17:0.0:0.8:0.45",
      "baseline": 28
     },
     {
@@ -3770,9 +3770,9 @@
      "sprite": "03",
      "text": "Save Arrange Team",
      "style": "c5_pen_gold",
-     "font": "ttf:rounded:21:0.0:0.85:0.45",
+     "font": "ttf:rounded:20:0.0:0.8:0.45",
      "slices": true,
-     "slice_width": 79,
+     "slice_width": 106,
      "dy": 1
     }
    ],
