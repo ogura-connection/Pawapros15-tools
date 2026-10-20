@@ -463,21 +463,21 @@
     },
     {
      "sprite": "1c",
-     "text": "Sharpen Your Strike-Zone Eye",
+     "text": "Read the Zone",
      "style": "c4_ykm_title",
-     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 4
+     "dy": 3
     },
     {
      "sprite": "1d",
-     "text": "Time Inside and Outside Pitches",
+     "text": "Inside-Out Timing",
      "style": "c4_ykm_title",
-     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 1
+     "dy": 4
     },
     {
      "sprite": "1e",
@@ -526,12 +526,12 @@
     },
     {
      "sprite": "23",
-     "text": "Pitch Breaking Balls to Spots",
+     "text": "Spot Breaking Balls",
      "style": "c4_ykm_title",
-     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 2
+     "dy": 3
     },
     {
      "sprite": "24",
@@ -562,9 +562,9 @@
     },
     {
      "sprite": "27",
-     "text": "Field a Grounder and Throw",
+     "text": "Field and Throw",
      "style": "c4_ykm_title",
-     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 2

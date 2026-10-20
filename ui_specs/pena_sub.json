@@ -3115,14 +3115,14 @@
      "sprite": "51",
      "text": "Japan Series Win",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "52",
      "text": "Climax Series Title",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 69,
      "dy": -1
@@ -3131,7 +3131,7 @@
      "sprite": "53",
      "text": "Climax Series Win",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 67,
      "dy": -1
@@ -3140,7 +3140,7 @@
      "sprite": "54",
      "text": "Climax Series Berth",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 73,
      "dy": -1
@@ -3171,7 +3171,7 @@
      "sprite": "58",
      "text": "Losing Streak Over",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 71,
      "dy": 1
@@ -3180,7 +3180,7 @@
      "sprite": "59",
      "text": "Comeback Walk-off Slam",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 91,
      "dy": -1
@@ -3189,7 +3189,7 @@
      "sprite": "5a",
      "text": "Comeback Walk-off HR",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 85,
      "dy": 0
@@ -3198,14 +3198,14 @@
      "sprite": "5b",
      "text": "Comeback Walk-off",
      "style": "c5_pink",
-     "font": "ttf:narrow:12:0.0:0.85:0.0",
+     "font": "ttf:narrow:14:0.0:0.85:0.0",
      "baseline": 20
     },
     {
      "sprite": "5c",
      "text": "Walk-off HR",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
@@ -3220,7 +3220,7 @@
      "sprite": "5e",
      "text": "No-Hitter",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 21
     },
     {
@@ -3233,9 +3233,9 @@
     },
     {
      "sprite": "60",
-     "text": "Complete-Game Win",
+     "text": "CG Win",
      "style": "c5_pink",
-     "font": "ttf:narrow:9:0.0:0.92:0.0",
+     "font": "ttf:narrow:13:0.0:0.92:0.0",
      "baseline": 18,
      "left": 8
     },
@@ -3251,7 +3251,7 @@
      "sprite": "62",
      "text": "Title Won",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "baseline": 20
     },
     {
@@ -3271,7 +3271,7 @@
     },
     {
      "sprite": "65",
-     "text": "Win in 1st Place",
+     "text": "Win in 1st",
      "style": "c5_gold",
      "font": "ttf:narrow:13:0.0:0.85:0.0",
      "baseline": 20
@@ -3280,7 +3280,7 @@
      "sprite": "66",
      "text": "Up From Last Year",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 68,
      "dy": 0
@@ -3289,7 +3289,7 @@
      "sprite": "67",
      "text": "Moved Up",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "baseline": 20
     },
     {
@@ -3302,7 +3302,7 @@
     },
     {
      "sprite": "69",
-     "text": "Cheered Out of Skid",
+     "text": "Fans Snap Skid",
      "style": "c5_gold",
      "font": "ttf:narrow:13:0.0:0.85:0.0",
      "baseline": 20
@@ -3319,44 +3319,44 @@
      "sprite": "6b",
      "text": "Walk-off Win",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "6c",
      "text": "1-Run Win",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "6d",
      "text": "Title Holder Played",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 69,
      "dy": 0
     },
     {
      "sprite": "6e",
-     "text": "Star Player Played",
+     "text": "Star Played",
      "style": "c5_gold",
-     "font": "ttf:narrow:11:0.0:0.85:0.0",
+     "font": "ttf:narrow:13:0.0:0.85:0.0",
      "baseline": 18
     },
     {
      "sprite": "70",
      "text": "All-Time Record",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "71",
      "text": "League-Best Record",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 75,
      "dy": 0
@@ -3373,35 +3373,35 @@
      "sprite": "73",
      "text": "3-Run HR",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "74",
      "text": "2-Run HR",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "75",
      "text": "Hit for the Cycle",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "76",
      "text": "All-Star Pick",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "77",
      "text": "All-Star MVP",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
@@ -3415,14 +3415,14 @@
      "sprite": "79",
      "text": "Every Starter Hit",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "7a",
      "text": "Ace Win",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
@@ -3436,7 +3436,7 @@
      "sprite": "7c",
      "text": "Down From Last Year",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 79,
      "dy": 0
@@ -3452,7 +3452,7 @@
      "sprite": "7e",
      "text": "Fell to Last",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
@@ -3475,7 +3475,7 @@
      "sprite": "81",
      "text": "Moved Down",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "baseline": 19
     },
     {
@@ -3490,7 +3490,7 @@
      "sprite": "83",
      "text": "Title Hopes Gone",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:33:0.0:1.0:0.0",
      "baseline": 21
     },
     {
@@ -3505,14 +3505,14 @@
      "sprite": "92",
      "text": "Grand Slam",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "93",
      "text": "3 Straight HRs",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:30:0.0:1.0:0.0",
      "baseline": 20
     },
     {

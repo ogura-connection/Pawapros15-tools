@@ -1,109 +1,1470 @@
-{"arc": "scs_sys.arc",
+{
+ "arc": "scs_sys.arc",
  "repack": [
-  {"bank": "z3_dts_sys_0", "palette": 72, "style": "data", "font": "ttf:rounded:11:0:0.9:0.3", "under": 3, "areas": [[0, 0, 0, 128, 128], [1, 0, 0, 128, 80], [9, 48, 96, 128, 128], [3, 0, 0, 128, 128], [4, 0, 0, 128, 104], [5, 0, 0, 128, 104], [6, 0, 0, 128, 56], [6, 0, 56, 72, 96], [7, 0, 0, 128, 32], [7, 0, 32, 40, 64], [7, 72, 32, 128, 64], [7, 0, 64, 128, 96], [7, 0, 96, 80, 128], [8, 0, 0, 128, 104], [9, 0, 0, 128, 96], [9, 0, 96, 48, 128], [10, 0, 0, 128, 40]], "sprites": "z3_dts_sys_0_opd", "labels": [
-    {"sprite": "02", "text": "My Data", "style": "title22", "font": "ttf:rounded:16:0:0.85:0.7", "layers": 2, "under": 6, "align": "right"},
-    {"sprite": "03", "text": "Teammates", "style": "title23", "font": "ttf:rounded:16:0:0.85:0.7", "layers": 2, "under": 6, "align": "right"},
-    {"sprite": "04", "text": "Ratings", "style": "title24", "font": "ttf:rounded:16:0:0.85:0.7", "layers": 2, "under": 6, "align": "right"},
-    {"sprite": "05", "text": "Schedule", "style": "title25", "font": "ttf:rounded:16:0:0.85:0.7", "layers": 2, "under": 6, "align": "right"},
-    {"sprite": "06", "text": "Equip", "style": "title26", "font": "ttf:rounded:16:0:0.85:0.7", "layers": 2, "under": 6, "align": "right"},
-    {"sprite": "07", "text": "Item List", "style": "title27", "font": "ttf:rounded:16:0:0.85:0.7", "layers": 2, "under": 6, "align": "right"},
-    {"sprite": "51", "text": "System", "style": "title28", "font": "ttf:rounded:16:0:0.85:0.7", "layers": 2, "under": 6, "align": "right"},
-    {"sprite": "14", "text": "My Data", "style": "databutton", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4},
-    {"sprite": "15", "text": "Teammates", "style": "databutton", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4},
-    {"sprite": "16", "text": "Ratings", "style": "databutton", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4},
-    {"sprite": "17", "text": "Schedule", "style": "databutton", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4},
-    {"sprite": "18", "text": "Equip", "style": "databutton", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4},
-    {"sprite": "19", "text": "Item List", "style": "databutton", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4},
-    {"sprite": "4f", "text": "Save & Quit", "style": "databutton", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4},
-    {"sprite": "50", "text": "Give Up", "style": "databutton", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4},
-    {"sprite": "1a", "text": "Overhand", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "1b", "text": "3-Quarters", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "1c", "text": "Sidearm", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "1d", "text": "Submarine", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "1e", "text": "Tornado", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "1f", "text": "Masakari", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "20", "text": "UFO", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "21", "text": "Standard", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "22", "text": "Open", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "23", "text": "Fake Bunt", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "24", "text": "Crouching", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "25", "text": "Flamingo", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "26", "text": "Pendulum", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "27", "text": "Kannushi", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "28", "text": "Tenbin", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "29", "text": "Konnyaku", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "2a", "text": "Unique", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "2b", "text": "Original", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "2c", "text": "Manual", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "2d", "text": "Starter", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "2e", "text": "Reliever", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "2f", "text": "Closer", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "30", "text": "All-Rounder", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "31", "text": "Speedster", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "32", "text": "Contact", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "33", "text": "Slugger", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "34", "text": "Defense", "align": "left", "pages": [4, 5, 6], "palettes": [72]},
-    {"sprite": "39", "text": "Shoulder", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "3a", "text": "Elbow", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "3b", "text": "Leg", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "3c", "text": "Insomnia", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "3d", "text": "Laziness", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "3e", "text": "Heartthrob", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "3f", "text": "Lovesick", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "40", "text": "Cavity", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "41", "text": "Cracked Nail", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "42", "text": "Gd Sense", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "43", "text": "Pr Sense", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "44", "text": "Smart Shopper", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "45", "text": "Rich Kid", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "46", "text": "Baseball Nut", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105], "style": "dataflat"},
-    {"sprite": "47", "text": "Hot-Blooded", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "48", "text": "Listless", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "49", "text": "Lucky Boy", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "4a", "text": "Showman", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "4b", "text": "Good Guy", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "4c", "text": "Oversleeper", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "4d", "text": "Homebody", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "4e", "text": "Timidity", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "52", "text": "Workaholic", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "53", "text": "Smooth Talker", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]},
-    {"sprite": "54", "text": "Cold", "font": "ttf:narrow:9:0:1:0.2", "valign": "centre", "pages": [7, 8, 9, 10], "palettes": [104, 105]}]},
-  {"bank": "z3_dts_sys_0_opd", "sprites": "z3_sys_0", "palette": 167, "style": "sysvalue", "font": "ttf:rounded:11:0:0.9:0.3", "under": 4, "areas": [[2, 0, 0, 128, 128], [3, 0, 0, 128, 128], [4, 0, 0, 128, 72], [4, 0, 72, 96, 96], [4, 80, 96, 128, 120], [5, 0, 0, 128, 128]], "labels": [
-    {"from": [2, 0, 0, 128, 32], "text": "In-Game Controls", "style": "sysheader", "font": "ttf:rounded:12:0:0.8:0.4", "align": "left"},
-    {"from": [2, 0, 32, 72, 64], "empty": true},
-    {"from": [2, 72, 32, 128, 64], "text": "In-Game Controls", "style": "sysheader", "font": "ttf:rounded:12:0:0.8:0.4", "align": "left"},
-    {"from": [2, 0, 64, 80, 96], "empty": true},
-    {"from": [2, 80, 64, 128, 96], "text": "Event Rumble", "style": "sysheader", "font": "ttf:rounded:12:0:0.8:0.4", "align": "left"},
-    {"from": [2, 0, 96, 72, 128], "empty": true},
-    {"from": [2, 72, 96, 128, 128], "text": "Message Shortcut", "style": "sysheader", "font": "ttf:rounded:12:0:0.8:0.4", "align": "left"},
-    {"from": [3, 0, 0, 128, 32], "empty": true},
-    {"from": [3, 0, 32, 32, 64], "empty": true},
-    {"from": [3, 32, 32, 104, 64], "text": "Voice", "style": "sysheader", "font": "ttf:rounded:12:0:0.8:0.4", "align": "left"},
-    {"from": [3, 104, 32, 128, 64], "text": "Help Messages", "style": "sysheader", "font": "ttf:rounded:12:0:0.8:0.4", "align": "left"},
-    {"from": [3, 0, 64, 128, 96], "empty": true},
-    {"from": [3, 0, 96, 128, 128], "text": "Pitching / Batting", "style": "sysheader", "font": "ttf:rounded:12:0:0.8:0.4", "align": "left"},
-    {"from": [4, 0, 0, 72, 24], "text": "Type A"},
-    {"from": [4, 72, 0, 128, 24], "text": "Type B", "centre_x": 36},
-    {"from": [4, 0, 24, 16, 48], "empty": true},
-    {"from": [4, 16, 24, 88, 48], "text": "Rumble On", "font": "ttf:rounded:11:0:0.85:0.3"},
-    {"from": [4, 88, 24, 128, 48], "text": "Rumble Off", "font": "ttf:rounded:11:0:0.85:0.3", "centre_x": 36},
-    {"from": [4, 0, 48, 32, 72], "empty": true},
-    {"from": [4, 32, 48, 88, 72], "text": "Set", "align": "right"},
-    {"from": [4, 88, 48, 128, 72], "empty": true},
-    {"from": [4, 0, 72, 96, 96], "text": "Not Set", "align": "right"},
-    {"from": [4, 80, 96, 128, 120], "text": "+Control Pad", "centre_x": 44},
-    {"from": [5, 0, 0, 40, 24], "empty": true},
-    {"from": [5, 40, 0, 104, 24], "text": "Control Stick", "valign": "centre"},
-    {"from": [4, 0, 120, 64, 128], "empty": true},
-    {"from": [5, 104, 0, 128, 24], "text": "L Stick", "centre_x": 40},
-    {"from": [5, 0, 24, 56, 48], "empty": true},
-    {"from": [5, 56, 24, 128, 48], "text": "No Window", "centre_x": 48},
-    {"from": [5, 0, 48, 24, 72], "empty": true},
-    {"from": [5, 56, 24, 120, 48], "text": "Window", "centre_x": 48},
-    {"from": [5, 24, 48, 56, 72], "empty": true},
-    {"from": [5, 56, 48, 128, 72], "text": "Pitcher View", "centre_x": 24},
-    {"from": [5, 0, 72, 24, 104], "text": "Difficulty", "style": "sysbox", "font": "ttf:rounded:10:0:0.9:0.2", "centre_x": 28, "valign": "centre"},
-    {"from": [5, 24, 72, 48, 104], "empty": true},
-    {"from": [5, 0, 104, 64, 128], "text": "Normal", "font": "ttf:rounded:13:0:0.9:0.4"},
-    {"from": [5, 64, 104, 128, 128], "text": "Rookie", "font": "ttf:rounded:13:0:0.9:0.4"}]}
- ]}
+  {
+   "bank": "z3_dts_sys_0",
+   "palette": 72,
+   "style": "data",
+   "font": "ttf:rounded:11:0:0.9:0.3",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     80
+    ],
+    [
+     9,
+     48,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     56
+    ],
+    [
+     6,
+     0,
+     56,
+     72,
+     96
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     7,
+     0,
+     32,
+     40,
+     64
+    ],
+    [
+     7,
+     72,
+     32,
+     128,
+     64
+    ],
+    [
+     7,
+     0,
+     64,
+     128,
+     96
+    ],
+    [
+     7,
+     0,
+     96,
+     80,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     104
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     9,
+     0,
+     96,
+     48,
+     128
+    ],
+    [
+     10,
+     0,
+     0,
+     128,
+     40
+    ]
+   ],
+   "sprites": "z3_dts_sys_0_opd",
+   "labels": [
+    {
+     "sprite": "02",
+     "text": "My Data",
+     "style": "title22",
+     "font": "ttf:rounded:16:0:0.85:0.7",
+     "layers": 2,
+     "under": 6,
+     "align": "right"
+    },
+    {
+     "sprite": "03",
+     "text": "Teammates",
+     "style": "title23",
+     "font": "ttf:rounded:16:0:0.85:0.7",
+     "layers": 2,
+     "under": 6,
+     "align": "right"
+    },
+    {
+     "sprite": "04",
+     "text": "Ratings",
+     "style": "title24",
+     "font": "ttf:rounded:16:0:0.85:0.7",
+     "layers": 2,
+     "under": 6,
+     "align": "right"
+    },
+    {
+     "sprite": "05",
+     "text": "Schedule",
+     "style": "title25",
+     "font": "ttf:rounded:16:0:0.85:0.7",
+     "layers": 2,
+     "under": 6,
+     "align": "right"
+    },
+    {
+     "sprite": "06",
+     "text": "Equip",
+     "style": "title26",
+     "font": "ttf:rounded:16:0:0.85:0.7",
+     "layers": 2,
+     "under": 6,
+     "align": "right"
+    },
+    {
+     "sprite": "07",
+     "text": "Item List",
+     "style": "title27",
+     "font": "ttf:rounded:16:0:0.85:0.7",
+     "layers": 2,
+     "under": 6,
+     "align": "right"
+    },
+    {
+     "sprite": "51",
+     "text": "System",
+     "style": "title28",
+     "font": "ttf:rounded:16:0:0.85:0.7",
+     "layers": 2,
+     "under": 6,
+     "align": "right"
+    },
+    {
+     "sprite": "14",
+     "text": "My Data",
+     "style": "databutton",
+     "font": "ttf:rounded:11:0:0.9:0.3",
+     "under": 4
+    },
+    {
+     "sprite": "15",
+     "text": "Teammates",
+     "style": "databutton",
+     "font": "ttf:rounded:11:0:0.9:0.3",
+     "under": 4
+    },
+    {
+     "sprite": "16",
+     "text": "Ratings",
+     "style": "databutton",
+     "font": "ttf:rounded:11:0:0.9:0.3",
+     "under": 4
+    },
+    {
+     "sprite": "17",
+     "text": "Schedule",
+     "style": "databutton",
+     "font": "ttf:rounded:11:0:0.9:0.3",
+     "under": 4
+    },
+    {
+     "sprite": "18",
+     "text": "Equip",
+     "style": "databutton",
+     "font": "ttf:rounded:11:0:0.9:0.3",
+     "under": 4
+    },
+    {
+     "sprite": "19",
+     "text": "Item List",
+     "style": "databutton",
+     "font": "ttf:rounded:11:0:0.9:0.3",
+     "under": 4
+    },
+    {
+     "sprite": "4f",
+     "text": "Save & Quit",
+     "style": "databutton",
+     "font": "ttf:rounded:11:0:0.9:0.3",
+     "under": 4
+    },
+    {
+     "sprite": "50",
+     "text": "Give Up",
+     "style": "databutton",
+     "font": "ttf:rounded:11:0:0.9:0.3",
+     "under": 4
+    },
+    {
+     "sprite": "1a",
+     "text": "Overhand",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "1b",
+     "text": "3-Quarters",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "1c",
+     "text": "Sidearm",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "1d",
+     "text": "Submarine",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "1e",
+     "text": "Tornado",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "1f",
+     "text": "Masakari",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "20",
+     "text": "UFO",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "21",
+     "text": "Standard",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Open",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "23",
+     "text": "Fake Bunt",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "24",
+     "text": "Crouching",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "25",
+     "text": "Flamingo",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "26",
+     "text": "Pendulum",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "27",
+     "text": "Kannushi",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "28",
+     "text": "Tenbin",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "29",
+     "text": "Konnyaku",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "2a",
+     "text": "Unique",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "2b",
+     "text": "Original",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "2c",
+     "text": "Manual",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "2d",
+     "text": "Starter",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "2e",
+     "text": "Reliever",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "2f",
+     "text": "Closer",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "30",
+     "text": "All-Rounder",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "31",
+     "text": "Speedster",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "32",
+     "text": "Contact",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "33",
+     "text": "Slugger",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "34",
+     "text": "Defense",
+     "align": "left",
+     "pages": [
+      4,
+      5,
+      6
+     ],
+     "palettes": [
+      72
+     ]
+    },
+    {
+     "sprite": "39",
+     "text": "Shoulder",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "3a",
+     "text": "Elbow",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "3b",
+     "text": "Leg",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "3c",
+     "text": "Insomnia",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "3d",
+     "text": "Laziness",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "3e",
+     "text": "Heartthrob",
+     "font": "ttf:narrow:10:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "3f",
+     "text": "Lovesick",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "40",
+     "text": "Cavity",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "41",
+     "text": "Cracked Nail",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "42",
+     "text": "Gd Sense",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "43",
+     "text": "Pr Sense",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "44",
+     "text": "Smart Shopper",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "45",
+     "text": "Rich Kid",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "46",
+     "text": "Baseball Nut",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ],
+     "style": "dataflat"
+    },
+    {
+     "sprite": "47",
+     "text": "Hot-Blooded",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "48",
+     "text": "Listless",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "49",
+     "text": "Lucky Boy",
+     "font": "ttf:narrow:11:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "4a",
+     "text": "Showman",
+     "font": "ttf:narrow:11:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "4b",
+     "text": "Good Guy",
+     "font": "ttf:narrow:11:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "4c",
+     "text": "Oversleeper",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "4d",
+     "text": "Homebody",
+     "font": "ttf:narrow:10:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "4e",
+     "text": "Timidity",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "52",
+     "text": "Workaholic",
+     "font": "ttf:narrow:10:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "53",
+     "text": "Smooth Talker",
+     "font": "ttf:narrow:9:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    },
+    {
+     "sprite": "54",
+     "text": "Cold",
+     "font": "ttf:narrow:12:0:1:0.2",
+     "valign": "centre",
+     "pages": [
+      7,
+      8,
+      9,
+      10
+     ],
+     "palettes": [
+      104,
+      105
+     ]
+    }
+   ]
+  },
+  {
+   "bank": "z3_dts_sys_0_opd",
+   "sprites": "z3_sys_0",
+   "palette": 167,
+   "style": "sysvalue",
+   "font": "ttf:rounded:11:0:0.9:0.3",
+   "under": 4,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     72
+    ],
+    [
+     4,
+     0,
+     72,
+     96,
+     96
+    ],
+    [
+     4,
+     80,
+     96,
+     128,
+     120
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "In-Game Controls",
+     "style": "sysheader",
+     "font": "ttf:rounded:12:0:0.8:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      72,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      72,
+      32,
+      128,
+      64
+     ],
+     "text": "In-Game Controls",
+     "style": "sysheader",
+     "font": "ttf:rounded:12:0:0.8:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      80,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      80,
+      64,
+      128,
+      96
+     ],
+     "text": "Event Rumble",
+     "style": "sysheader",
+     "font": "ttf:rounded:12:0:0.8:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      72,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      72,
+      96,
+      128,
+      128
+     ],
+     "text": "Message Shortcut",
+     "style": "sysheader",
+     "font": "ttf:rounded:12:0:0.8:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      128,
+      32
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      32,
+      64
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      32,
+      32,
+      104,
+      64
+     ],
+     "text": "Voice",
+     "style": "sysheader",
+     "font": "ttf:rounded:12:0:0.8:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      3,
+      104,
+      32,
+      128,
+      64
+     ],
+     "text": "Help Messages",
+     "style": "sysheader",
+     "font": "ttf:rounded:12:0:0.8:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      3,
+      0,
+      64,
+      128,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Pitching / Batting",
+     "style": "sysheader",
+     "font": "ttf:rounded:12:0:0.8:0.4",
+     "align": "left"
+    },
+    {
+     "from": [
+      4,
+      0,
+      0,
+      72,
+      24
+     ],
+     "text": "Type A"
+    },
+    {
+     "from": [
+      4,
+      72,
+      0,
+      128,
+      24
+     ],
+     "text": "Type B",
+     "centre_x": 36
+    },
+    {
+     "from": [
+      4,
+      0,
+      24,
+      16,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      16,
+      24,
+      88,
+      48
+     ],
+     "text": "Rumble On",
+     "font": "ttf:rounded:11:0:0.85:0.3"
+    },
+    {
+     "from": [
+      4,
+      88,
+      24,
+      128,
+      48
+     ],
+     "text": "Rumble Off",
+     "font": "ttf:rounded:11:0:0.85:0.3",
+     "centre_x": 36
+    },
+    {
+     "from": [
+      4,
+      0,
+      48,
+      32,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      32,
+      48,
+      88,
+      72
+     ],
+     "text": "Set",
+     "align": "right"
+    },
+    {
+     "from": [
+      4,
+      88,
+      48,
+      128,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      96,
+      96
+     ],
+     "text": "Not Set",
+     "align": "right"
+    },
+    {
+     "from": [
+      4,
+      80,
+      96,
+      128,
+      120
+     ],
+     "text": "+Control Pad",
+     "centre_x": 44
+    },
+    {
+     "from": [
+      5,
+      0,
+      0,
+      40,
+      24
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      40,
+      0,
+      104,
+      24
+     ],
+     "text": "Control Stick",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      0,
+      120,
+      64,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      104,
+      0,
+      128,
+      24
+     ],
+     "text": "L Stick",
+     "centre_x": 40
+    },
+    {
+     "from": [
+      5,
+      0,
+      24,
+      56,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      56,
+      24,
+      128,
+      48
+     ],
+     "text": "No Window",
+     "centre_x": 48
+    },
+    {
+     "from": [
+      5,
+      0,
+      48,
+      24,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      56,
+      24,
+      120,
+      48
+     ],
+     "text": "Window",
+     "centre_x": 48
+    },
+    {
+     "from": [
+      5,
+      24,
+      48,
+      56,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      56,
+      48,
+      128,
+      72
+     ],
+     "text": "Pitcher View",
+     "centre_x": 24
+    },
+    {
+     "from": [
+      5,
+      0,
+      72,
+      24,
+      104
+     ],
+     "text": "Difficulty",
+     "style": "sysbox",
+     "font": "ttf:rounded:10:0:0.9:0.2",
+     "centre_x": 28,
+     "valign": "centre"
+    },
+    {
+     "from": [
+      5,
+      24,
+      72,
+      48,
+      104
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      5,
+      0,
+      104,
+      64,
+      128
+     ],
+     "text": "Normal",
+     "font": "ttf:rounded:13:0:0.9:0.4"
+    },
+    {
+     "from": [
+      5,
+      64,
+      104,
+      128,
+      128
+     ],
+     "text": "Rookie",
+     "font": "ttf:rounded:13:0:0.9:0.4"
+    }
+   ]
+  }
+ ]
+}
