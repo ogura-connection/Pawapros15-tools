@@ -589,7 +589,7 @@ def build_dol(dol, slots, orig, remaps):
     return data[:a] + block + data[b:]
 
 
-def verify_dol(orig, new, dol, slots, relinked=()):
+def verify_dol(orig, new, dol, slots, relinked=(), dropped=()):
     """Re-read main.dol as built (or the original when nothing was built) and check it against the
     original file and the relocations of all modules, without the layout: orig, new = the modules
     before and after, as verify() read them from disk."""
@@ -619,7 +619,7 @@ def verify_dol(orig, new, dol, slots, relinked=()):
             theirs = [at[(s, pos)] for (s, pos, typ, tm, ts, ad) in m.relocs() if tm == 0]
             mine = [r for r in m.relocs() if r[3] == 0]
         else:
-            mine = m.relocs()
+            mine = [r for r in m.relocs() if (mid, r[0], r[1]) not in dropped]     # dropped: now R_NOP
         for (s, pos, typ, tm, ts, ad), (_, _, typ2, tm2, ts2, ad2) in zip(mine, theirs):
             if tm != 0:
                 continue            # relocations against modules: verify()
@@ -638,6 +638,10 @@ def verify_dol(orig, new, dol, slots, relinked=()):
         if m.name not in S.SCRIPT_FILES and m.name not in relinked and m.data != new[mid].data:
             assert len(m.data) == len(new[mid].data), m.name + ": size changed"
             image = bytearray(m.data)
+            for mod, _, entries, _ in parse_imports(m.data, m.imp_off, m.imp_size):
+                for e in entries:
+                    if mod == mid and (mid, e[0], e[1]) in dropped:
+                        struct.pack_into(">BBI", image, e[5] + 2, R_NOP, 0, 0)
             for _, _, entries, _ in parse_imports(new[mid].data, m.imp_off, m.imp_size):
                 for e in entries:
                     struct.pack_into(">I", image, e[5] + 4, e[4])
@@ -1244,7 +1248,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         assert all(h.sec_data(ps)[po:po + len(v)] == v for (ps, po), v in host_names.items()), h.name
         print("Verified: %s holds the %d-byte surname table at sec%d+0x%X." % (h.name, len(got), name_table.HOST_SECTION, name_remap.new_table))
     if dol:                             # the My Life modules: relocations and sections are checked in verify()
-        verify_dol(orig, new, dol, slots, tuple(extra_images) + ((name_table.HOST,) if names else ()))
+        verify_dol(orig, new, dol, slots, tuple(extra_images) + ((name_table.HOST,) if names else ()), dropped)
     return changed
 
 
