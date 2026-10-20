@@ -1678,7 +1678,7 @@
     },
     {
      "sprite": "5e",
-     "text": "Ageage\u2605 Baseball Club",
+     "text": "Ageage★ Baseball Club",
      "style": "c2_win_n",
      "font": "ttf:sfr:10:0:0.85:0.7",
      "slices": true,
@@ -1728,9 +1728,9 @@
     },
     {
      "sprite": "63",
-     "text": "Tenka Construction",
+     "text": "Tenka Const.",
      "style": "c2_win_n",
-     "font": "ttf:narrow:11:0:0.8:0.1",
+     "font": "ttf:narrow:13:0:0.8:0.1",
      "slices": true,
      "slice_width": 128,
      "dy": 0,

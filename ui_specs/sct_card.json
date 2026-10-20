@@ -70,17 +70,17 @@
     },
     {
      "sprite": "52",
-     "text": "Intrasquad\nGame",
-     "style": "e4_em_item1",
-     "font": "ttf:rounded:9:0.0:0.92:0.3",
+     "text": "Scrimmage",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
      "baseline": 36
     },
     {
      "sprite": "53",
-     "text": "Encourage",
+     "text": "Cheer",
      "style": "e4_em_item",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 36
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 39
     },
     {
      "sprite": "54",
@@ -259,12 +259,10 @@
     },
     {
      "sprite": "6b",
-     "text": "Machine-Gun\nFungo",
+     "text": "Rapid Fungo",
      "style": "e4_em_item",
-     "font": "ttf:narrow:9:0.0:0.85:0.3",
-     "baseline": 28,
-     "slices": true,
-     "line_step": 18
+     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "baseline": 27
     },
     {
      "sprite": "6c",
@@ -412,16 +410,16 @@
     },
     {
      "sprite": "7e",
-     "text": "Grip\nTraining",
-     "style": "e4_em_item1",
-     "font": "ttf:rounded:8:0.0:1.0:0.3",
-     "baseline": 36
+     "text": "Grip",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 38
     },
     {
      "sprite": "7f",
-     "text": "Breaking-\nBall Study",
-     "style": "e4_em_item1",
-     "font": "ttf:rounded:8:0.0:1.0:0.3",
+     "text": "Pitch Study",
+     "style": "e4_em_item",
+     "font": "ttf:rounded:9:0.0:0.85:0.3",
      "baseline": 36
     },
     {

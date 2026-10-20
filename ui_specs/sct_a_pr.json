@@ -786,45 +786,45 @@
    "labels": [
     {
      "sprite": "3c",
-     "text": "Give practice orders to all pitchers.",
+     "text": "Train all pitchers",
      "style": "b4_pr_msg",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 0
     },
     {
      "sprite": "3d",
-     "text": "Give practice orders to all fielders.",
+     "text": "Train all fielders",
      "style": "b4_pr_msg",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 0
     },
     {
      "sprite": "3e",
-     "text": "Give practice orders to all catchers.",
+     "text": "Train all catchers",
      "style": "b4_pr_msg",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 0
     },
     {
      "sprite": "3f",
-     "text": "Give practice orders to all infielders.",
+     "text": "Train all infielders",
      "style": "b4_pr_msg",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 0
     },
     {
      "sprite": "40",
-     "text": "Give practice orders to all outfielders.",
+     "text": "Train all outfielders",
      "style": "b4_pr_msg",
-     "font": "ttf:narrow:9:0.0:1.0:0.3",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 0

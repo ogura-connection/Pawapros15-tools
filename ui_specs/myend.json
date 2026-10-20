@@ -361,11 +361,11 @@
       128,
       120
      ],
-     "text": "Yomiuri\nGiants",
-     "font": "dc12g1b0",
+     "text": "Giants",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
-     "left": 56,
-     "baseline": 33
+     "left": 28,
+     "baseline": 31
     },
     {
      "from": [
@@ -385,11 +385,11 @@
       128,
       40
      ],
-     "text": "Chunichi\nDragons",
-     "font": "dc12g1b0",
+     "text": "Dragons",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
-     "left": 54,
-     "baseline": 31
+     "left": 13,
+     "baseline": 28
     },
     {
      "from": [
@@ -399,7 +399,11 @@
       32,
       40
      ],
-     "empty": true
+     "text": "Dragons",
+     "font": "ttf:rounded:24:0:1:0.6",
+     "style": "win_me_team_1",
+     "left": 13,
+     "baseline": 28
     },
     {
      "from": [
@@ -409,35 +413,35 @@
       128,
       80
      ],
-     "text": "Hiroshima Toyo\nCarp",
-     "font": "dc12g1b0",
-     "style": "win_me_team_0",
-     "left": 32,
-     "baseline": 32
-    },
-    {
-     "from": [
-      7,
-      32,
-      40,
-      64,
-      80
-     ],
-     "empty": true
-    },
-    {
-     "from": [
-      6,
-      0,
-      40,
-      128,
-      80
-     ],
-     "text": "Tokyo Yakult\nSwallows",
-     "font": "dc12g1b0",
+     "text": "Carp",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
      "left": 40,
-     "baseline": 34
+     "baseline": 28
+    },
+    {
+     "from": [
+      7,
+      32,
+      40,
+      64,
+      80
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      6,
+      0,
+      40,
+      128,
+      80
+     ],
+     "text": "Swallows",
+     "font": "ttf:rounded:24:0:1:0.6",
+     "style": "win_me_team_0",
+     "left": 5,
+     "baseline": 31
     },
     {
      "from": [
@@ -447,7 +451,11 @@
       32,
       80
      ],
-     "empty": true
+     "text": "Swallows",
+     "font": "ttf:rounded:24:0:1:0.6",
+     "style": "win_me_team_1",
+     "left": 5,
+     "baseline": 31
     },
     {
      "from": [
@@ -457,11 +465,11 @@
       128,
       120
      ],
-     "text": "Yokohama\nBayStars",
-     "font": "dc12g1b0",
+     "text": "BayStars",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
-     "left": 49,
-     "baseline": 31
+     "left": 8,
+     "baseline": 28
     },
     {
      "from": [
@@ -471,7 +479,11 @@
       64,
       120
      ],
-     "empty": true
+     "text": "BayStars",
+     "font": "ttf:rounded:24:0:1:0.6",
+     "style": "win_me_team_1",
+     "left": 8,
+     "baseline": 28
     },
     {
      "from": [
@@ -481,11 +493,11 @@
       128,
       40
      ],
-     "text": "Hanshin\nTigers",
-     "font": "dc12g1b0",
+     "text": "Tigers",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
-     "left": 56,
-     "baseline": 31
+     "left": 29,
+     "baseline": 28
     },
     {
      "from": [
@@ -505,8 +517,60 @@
       128,
       120
      ],
-     "text": "Rakuten\nGolden Eagles",
-     "font": "dc12g1b0",
+     "text": "Eagles",
+     "font": "ttf:rounded:24:0:1:0.6",
+     "style": "win_me_team_0",
+     "left": 27,
+     "baseline": 28
+    },
+    {
+     "from": [
+      7,
+      96,
+      80,
+      128,
+      120
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      9,
+      0,
+      80,
+      128,
+      120
+     ],
+     "text": "Fighters",
+     "font": "ttf:rounded:24:0:1:0.6",
+     "style": "win_me_team_0",
+     "left": 15,
+     "baseline": 28
+    },
+    {
+     "from": [
+      7,
+      64,
+      80,
+      96,
+      120
+     ],
+     "text": "Fighters",
+     "font": "ttf:rounded:24:0:1:0.6",
+     "style": "win_me_team_1",
+     "left": 15,
+     "baseline": 28
+    },
+    {
+     "from": [
+      9,
+      0,
+      0,
+      128,
+      40
+     ],
+     "text": "Lions",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
      "left": 37,
      "baseline": 31
@@ -514,54 +578,6 @@
     {
      "from": [
       7,
-      96,
-      80,
-      128,
-      120
-     ],
-     "empty": true
-    },
-    {
-     "from": [
-      9,
-      0,
-      80,
-      128,
-      120
-     ],
-     "text": "Nippon-Ham\nFighters",
-     "font": "dc12g1b0",
-     "style": "win_me_team_0",
-     "left": 43,
-     "baseline": 32
-    },
-    {
-     "from": [
-      7,
-      64,
-      80,
-      96,
-      120
-     ],
-     "empty": true
-    },
-    {
-     "from": [
-      9,
-      0,
-      0,
-      128,
-      40
-     ],
-     "text": "Seibu\nLions",
-     "font": "dc12g1b0",
-     "style": "win_me_team_0",
-     "left": 63,
-     "baseline": 33
-    },
-    {
-     "from": [
-      7,
       64,
       0,
       96,
@@ -577,11 +593,11 @@
       128,
       80
      ],
-     "text": "Orix\nBuffaloes",
-     "font": "dc12g1b0",
+     "text": "Buffaloes",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
-     "left": 51,
-     "baseline": 33
+     "left": 4,
+     "baseline": 31
     },
     {
      "from": [
@@ -591,7 +607,11 @@
       128,
       80
      ],
-     "empty": true
+     "text": "Buffaloes",
+     "font": "ttf:rounded:24:0:1:0.6",
+     "style": "win_me_team_1",
+     "left": 4,
+     "baseline": 31
     },
     {
      "from": [
@@ -601,11 +621,11 @@
       128,
       40
      ],
-     "text": "Chiba Lotte\nMarines",
-     "font": "dc12g1b0",
+     "text": "Marines",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
-     "left": 44,
-     "baseline": 33
+     "left": 16,
+     "baseline": 31
     },
     {
      "from": [
@@ -625,11 +645,11 @@
       128,
       80
      ],
-     "text": "SoftBank\nHawks",
-     "font": "dc12g1b0",
+     "text": "Hawks",
+     "font": "ttf:rounded:24:0:1:0.6",
      "style": "win_me_team_0",
-     "left": 52,
-     "baseline": 33
+     "left": 27,
+     "baseline": 31
     },
     {
      "from": [
