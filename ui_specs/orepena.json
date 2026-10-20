@@ -6836,11 +6836,11 @@
      "sprites": [
       "13"
      ],
-     "text": "Comeback Home Run",
+     "text": "Comeback HR",
      "style": "o2_f568_rc1_s11_c1",
-     "font": "nb11",
-     "left": 8,
-     "baseline": 18
+     "font": "nb16",
+     "left": 18,
+     "baseline": 19
     },
     {
      "from": [
@@ -7178,10 +7178,10 @@
      "sprites": [
       "21"
      ],
-     "text": "3-Hit Game",
+     "text": "3 Hits",
      "style": "o2_ff_r72_s11_c1",
-     "font": "dc11g2b10",
-     "left": -6,
+     "font": "nb16",
+     "left": 12,
      "baseline": 19
     },
     {
@@ -7594,11 +7594,11 @@
      "sprites": [
       "2e"
      ],
-     "text": "Sac Bunt",
+     "text": "Sac",
      "style": "o2_ff_r72_s11_c1",
-     "font": "nb11",
-     "left": -2,
-     "baseline": 16
+     "font": "nb16",
+     "left": 8,
+     "baseline": 17
     },
     {
      "from": [
@@ -7722,10 +7722,10 @@
      "sprites": [
       "34"
      ],
-     "text": "Strikeouts",
+     "text": "K",
      "style": "o2_ff_r72_s11_c1",
-     "font": "dc11g2b10",
-     "left": -5,
+     "font": "nb16",
+     "left": 24,
      "baseline": 18
     },
     {
@@ -7799,11 +7799,11 @@
      "sprites": [
       "37"
      ],
-     "text": "Strikeout",
+     "text": "K",
      "style": "o2_fe9_r1f_s7_c1",
-     "font": "nb11",
-     "left": -2,
-     "baseline": 18
+     "font": "nb16",
+     "left": 17,
+     "baseline": 19
     },
     {
      "from": [
@@ -7880,11 +7880,11 @@
      "sprites": [
       "3b"
      ],
-     "text": "Double Plays",
+     "text": "GIDP",
      "style": "o2_fe9_r1f_s7_c1",
-     "font": "nb11",
-     "left": 2,
-     "baseline": 18
+     "font": "nb16",
+     "left": 18,
+     "baseline": 20
     },
     {
      "from": [
@@ -7944,11 +7944,11 @@
      "sprites": [
       "3e"
      ],
-     "text": "Earned Runs",
+     "text": "ER",
      "style": "o2_fe9_r1f_s7_c1",
-     "font": "nb11",
-     "left": 0,
-     "baseline": 19
+     "font": "nb16",
+     "left": 22,
+     "baseline": 20
     },
     {
      "from": [
@@ -8217,10 +8217,10 @@
      "sprites": [
       "ae"
      ],
-     "text": "Hits Allowed",
+     "text": "Hits",
      "style": "o2_fe9_r1f_s7_c1",
-     "font": "dc11g2b10",
-     "left": -7,
+     "font": "nb16",
+     "left": 21,
      "baseline": 20
     },
     {
@@ -9251,7 +9251,11 @@
      "sprites": [
       "48"
      ],
-     "left": 10
+     "left": 10,
+     "text": "MVP",
+     "style": "o2_f67_rbff_s1_c2",
+     "font": "ds21",
+     "baseline": 35
     },
     {
      "from": [

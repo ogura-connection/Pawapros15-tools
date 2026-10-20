@@ -28,7 +28,7 @@ STYLES["fxB_ptz_0b"] = ringfill([232, 232, 232, 200, 200, 232], [30, 255], [56])
 
 # rec_room g2_km#2 (bats/throws R/R..., prefectures): black letters with the soft brown edge the Japanese has, on the orange plate
 from ui_styles_a_run1 import flat as _flat
-STYLES["fxB_km_text"] = _flat([0, 13, 13, 12, 1, 1, 1], cut=2)
+STYLES["fxB_km_text"] = _flat([0, 13, 13, 1, 1, 1, 1], cut=2)
 
 # rec_room g3_sm#3 Best / Worst / Info (select-menu captions): thin letters, one white ring, light-blue outer ring, as the Japanese
 STYLES["fxB_sm_best"] = ui_type.ringed([0, 6, 4, 3, 2, 1, 1], [8, 14])
