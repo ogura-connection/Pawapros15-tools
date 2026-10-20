@@ -97,7 +97,7 @@
     {
      "sprite": "0a",
      "text": "Cancel",
-     "style": "e4_od_cancel",
+     "style": "fxL_od_cancel",
      "font": "ttf:rounded:14:0.0:1.0:0.3",
      "baseline": 34
     },
