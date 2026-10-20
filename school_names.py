@@ -21,15 +21,19 @@ import scan_story as S
 HERE = os.path.dirname(os.path.abspath(__file__))
 TSV = os.path.join(HERE, "translation", "names", "schools.tsv")
 MODULE, SECTION = "sct_main.rel", 5
+# My Life (orepena.rel) has the same kind of names: ~1,460 strings in section 5, each reached by a pointer of
+# its own section 5. Their table goes behind the annexes in ore_work.rel (rebuild_scripts.ORE_WORK_ADDR).
+ORE_TSV = os.path.join(HERE, "translation", "names", "ore_names.tsv")
+ORE_MODULE = "orepena.rel"
 R_ADDR32 = 1
 
 
-def load_tsv():
+def load_tsv(path=TSV):
     """{section 5 offset: English}"""
     out = {}
-    if not os.path.exists(TSV):
+    if not os.path.exists(path):
         return out
-    with open(TSV, encoding="utf-8") as f:
+    with open(path, encoding="utf-8") as f:
         for line in f:
             if line.startswith("#") or not line.strip():
                 continue
@@ -47,7 +51,7 @@ def pointers(rel, names):
             found.setdefault(addend, []).append(pos)
     bad = sorted(o for o in names if not found.get(o))     # reached by code, not by a pointer: left alone
     if bad:
-        print("%s: %d names have no data pointer, left Japanese (sec5+%s)" % (MODULE, len(bad), ", ".join("0x%X" % o for o in bad)))
+        print("%s: %d names have no data pointer, left Japanese (sec5+%s)" % (rel.name, len(bad), ", ".join("0x%X" % o for o in bad)))
     return {pos: o for o in names if found.get(o) for pos in found[o]}
 
 
@@ -57,7 +61,7 @@ def table(names, encode):
     for off in sorted(names):
         units = encode(names[off])
         if not units or any(u >= 0xF000 for u in units):
-            raise ValueError("school name %r does not encode" % names[off])
+            raise ValueError("name %r does not encode" % names[off])
         where[off] = len(data)
         data += struct.pack(">%dH" % (len(units) + 1), *units, 0xFFFF)
         data += bytes(-len(data) % 4)
@@ -65,14 +69,15 @@ def table(names, encode):
 
 
 def patch_pointers(rel, image, ptrs, address):
-    """sct_main.rel image with each pointer's relocation turned into R_NOP and the absolute address of its
+    """The module's image with each pointer's relocation turned into R_NOP and the absolute address of its
     English string written into the data word. address(string offset) -> absolute address.
     Returns (image, {(section, position): 4 bytes written})."""
     import rebuild_scripts as R
     d = bytearray(image)
     sec_off = rel.sections[SECTION]["offset"]
     written, n = {}, 0
-    for mod, _, entries, _ in R.parse_imports(bytes(d), rel.imp_off, rel.imp_size):
+    imp_off, imp_size = struct.unpack_from(">2I", d, 0x28)          # the image's own (My Life: streams rebuilt)
+    for mod, _, entries, _ in R.parse_imports(bytes(d), imp_off, imp_size):
         if mod != rel.mod_id:
             continue
         for sec, pos, typ, tsec, addend, off in entries:
@@ -85,5 +90,5 @@ def patch_pointers(rel, image, ptrs, address):
                 written[(SECTION, pos)] = word
                 n += 1
     if n != len(ptrs):
-        raise ValueError("%s: %d of %d school-name pointers found in its relocations" % (MODULE, n, len(ptrs)))
+        raise ValueError("%s: %d of %d name pointers found in its relocations" % (rel.name, n, len(ptrs)))
     return bytes(d), written
