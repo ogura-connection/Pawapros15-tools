@@ -3703,6 +3703,20 @@
      123,
      4,
      127
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
     ]
    ],
    "labels": [
@@ -3821,9 +3835,9 @@
      ],
      "text": "Swing",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0:0.88:0.3",
+     "font": "ttf:narrow:18:0.0:0.88:0.3",
      "left": 7,
-     "baseline": 23
+     "baseline": 25
     },
     {
      "from": [
@@ -3838,9 +3852,9 @@
      ],
      "text": "Bunt",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0.0:0.88:0.3",
+     "font": "ttf:narrow:18:0.0:0.88:0.3",
      "left": 11,
-     "baseline": 22
+     "baseline": 24
     },
     {
      "from": [
@@ -3855,9 +3869,9 @@
      ],
      "text": "Choose Pitch",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0.0:0.88:0.3",
+     "font": "ttf:narrow:18:0.0:0.88:0.3",
      "left": 5,
-     "baseline": 22
+     "baseline": 24
     },
     {
      "from": [
@@ -3872,9 +3886,9 @@
      ],
      "text": "Choose Location",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0.0:0.88:0.3",
+     "font": "ttf:narrow:18:0.0:0.72:0.3",
      "left": 5,
-     "baseline": 22
+     "baseline": 24
     },
     {
      "from": [
@@ -3889,9 +3903,9 @@
      ],
      "text": "Pitch",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0.0:0.88:0.3",
+     "font": "ttf:narrow:18:0.0:0.88:0.3",
      "left": 45,
-     "baseline": 22
+     "baseline": 24
     },
     {
      "from": [
