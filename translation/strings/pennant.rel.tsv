@@ -312,6 +312,8 @@
 5	24028	90a6	Contact Hitter
 5	24048	dbfd	Power Hitter
 5	24064	ff3f	Gd Bunt
+5	24080	8326	GS Man
+5	24088	8326	GS Man
 5	24096	3649	Gd PH
 5	24104	af95	Gd 1st
 5	24112	9271	Hot Htr
@@ -480,6 +482,7 @@
 5	26432	d663	Check player ages and more.
 5	26464	6adf	See a list of pitcher abilities.
 5	26504	14b1	See a list of fielder abilities.
+5	26544	0e5c	Cash
 5	26552	aed9	End Contract Renewal.
 5	26584	04e2	End spring camp orders.
 5	32576	b298	Draft results...
