@@ -1522,7 +1522,7 @@
      ],
      "text": "Pitch View",
      "style": "o_f15_r16_s0_c2",
-     "font": "nb13",
+     "font": "nb14",
      "valign": "centre"
     },
     {
@@ -1587,7 +1587,7 @@
      ],
      "text": "Player Data",
      "style": "o_f15_r11_s0_c2",
-     "font": "nb13",
+     "font": "dc12g2b10",
      "valign": "centre"
     },
     {
