@@ -288,20 +288,10 @@
       64,
       24
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       115,
-       38,
-       171,
-       61
-      ],
-      "style": "param",
-      "role": "fill"
-     },
      "style": "stat",
-     "under": 2
+     "text": "STA",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "CTRL",
@@ -312,20 +302,10 @@
       128,
       24
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       56,
-       38,
-       111,
-       62
-      ],
-      "style": "param",
-      "role": "fill"
-     },
      "style": "stat",
-     "under": 2
+     "text": "CTL",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "Position",
@@ -361,20 +341,10 @@
       120,
       48
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       150,
-       100,
-       203,
-       126
-      ],
-      "style": "param",
-      "role": "fill"
-     },
      "style": "stat",
-     "under": 2
+     "text": "ERR",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "CON",
@@ -385,20 +355,10 @@
       48,
       72
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       55,
-       6,
-       102,
-       29
-      ],
-      "style": "param",
-      "role": "fill"
-     },
      "style": "stat",
-     "under": 2
+     "text": "CON",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "RUN SPD",
@@ -409,21 +369,10 @@
       88,
       72
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       157,
-       4,
-       208,
-       29
-      ],
-      "style": "param",
-      "role": "fill",
-      "speck": 7
-     },
      "style": "stat",
-     "under": 2
+     "text": "SPD",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "ARM STR",
@@ -434,21 +383,10 @@
       128,
       72
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       150,
-       69,
-       205,
-       97
-      ],
-      "style": "param",
-      "role": "fill",
-      "speck": 7
-     },
      "style": "stat",
-     "under": 2
+     "text": "ARM",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "PWR",
@@ -459,20 +397,10 @@
       48,
       96
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       107,
-       6,
-       154,
-       30
-      ],
-      "style": "param",
-      "role": "fill"
-     },
      "style": "stat",
-     "under": 2
+     "text": "POW",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "TOP SPD",
@@ -483,21 +411,10 @@
       88,
       96
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       1,
-       37,
-       52,
-       62
-      ],
-      "style": "param",
-      "role": "fill",
-      "speck": 7
-     },
      "style": "stat",
-     "under": 2
+     "text": "VEL",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "TRJ",
@@ -508,20 +425,10 @@
       128,
       96
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       1,
-       6,
-       48,
-       30
-      ],
-      "style": "param",
-      "role": "fill"
-     },
      "style": "stat",
-     "under": 2
+     "text": "TRJ",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "FLD",
@@ -532,21 +439,10 @@
       32,
       96
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       207,
-       70,
-       254,
-       94
-      ],
-      "style": "param",
-      "role": "fill"
-     },
      "style": "stat",
-     "under": 2,
-     "centre_x": 24
+     "text": "FLD",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "from": [

@@ -1389,687 +1389,687 @@
      "sprite": "0a",
      "text": "N. Hokkaido",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "0b",
      "text": "S. Hokkaido",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "0c",
      "text": "Aomori",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "0d",
      "text": "Iwate",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "0e",
      "text": "Miyagi",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "0f",
      "text": "Akita",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "10",
      "text": "Yamagata",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "11",
      "text": "Fukushima",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "12",
      "text": "Ibaraki",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "13",
      "text": "Tochigi",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "14",
      "text": "Gunma",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "15",
      "text": "Saitama",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "16",
      "text": "Chiba",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "17",
      "text": "East Tokyo",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "18",
      "text": "West Tokyo",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "19",
      "text": "Kanagawa",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "1a",
      "text": "Niigata",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "1b",
      "text": "Toyama",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "1c",
      "text": "Ishikawa",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 29
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 30
     },
     {
      "sprite": "1d",
      "text": "Fukui",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "1e",
      "text": "Yamanashi",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 29
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 30
     },
     {
      "sprite": "1f",
      "text": "Nagano",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "20",
      "text": "Gifu",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "21",
      "text": "Shizuoka",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "22",
      "text": "Aichi",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "23",
      "text": "Mie",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 28
     },
     {
      "sprite": "24",
      "text": "Shiga",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 26
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 27
     },
     {
      "sprite": "25",
      "text": "Kyoto",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "26",
      "text": "Osaka",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 28
     },
     {
      "sprite": "27",
      "text": "Hyogo",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "28",
      "text": "Nara",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "29",
      "text": "Wakayama",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "2a",
      "text": "Tottori",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "2b",
      "text": "Shimane",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 30
     },
     {
      "sprite": "2c",
      "text": "Okayama",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 26
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 27
     },
     {
      "sprite": "2d",
      "text": "Hiroshima",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "2e",
      "text": "Yamaguchi",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "2f",
      "text": "Tokushima",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "30",
      "text": "Kagawa",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "31",
      "text": "Ehime",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "32",
      "text": "Kochi",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "33",
      "text": "Fukuoka",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "34",
      "text": "Saga",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 26
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 27
     },
     {
      "sprite": "35",
      "text": "Nagasaki",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "36",
      "text": "Kumamoto",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "37",
      "text": "Oita",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 28
     },
     {
      "sprite": "38",
      "text": "Miyazaki",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "39",
      "text": "Kagoshima",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
      "baseline": 27
     },
     {
      "sprite": "3a",
      "text": "Okinawa",
      "style": "a4_mk_big",
-     "font": "ttf:narrow:13:0.2:1.0:0.55",
-     "baseline": 28
+     "font": "ttf:narrow:14:0.2:1.0:0.55",
+     "baseline": 29
     },
     {
      "sprite": "3b",
      "text": "N. Hokkaido",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 228
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 227
     },
     {
      "sprite": "3c",
      "text": "S. Hokkaido",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 300
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 299
     },
     {
      "sprite": "3d",
      "text": "Aomori",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 132
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 131
     },
     {
      "sprite": "3e",
      "text": "Iwate",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 204
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 203
     },
     {
      "sprite": "3f",
      "text": "Miyagi",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 290
     },
     {
      "sprite": "40",
      "text": "Akita",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 204
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 203
     },
     {
      "sprite": "41",
      "text": "Yamagata",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 258
     },
     {
      "sprite": "42",
      "text": "Fukushima",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 348
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 347
     },
     {
      "sprite": "43",
      "text": "Ibaraki",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 220
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 219
     },
     {
      "sprite": "44",
      "text": "Tochigi",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 162
     },
     {
      "sprite": "45",
      "text": "Gunma",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 180
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 179
     },
     {
      "sprite": "46",
      "text": "Saitama",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 252
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 251
     },
     {
      "sprite": "47",
      "text": "Chiba",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 322
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 321
     },
     {
      "sprite": "48",
      "text": "East Tokyo",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 226
     },
     {
      "sprite": "49",
      "text": "West Tokyo",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 210
     },
     {
      "sprite": "4a",
      "text": "Kanagawa",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 362
     },
     {
      "sprite": "4b",
      "text": "Niigata",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 178
     },
     {
      "sprite": "4c",
      "text": "Toyama",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 258
     },
     {
      "sprite": "4d",
      "text": "Ishikawa",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 236
     },
     {
      "sprite": "4e",
      "text": "Fukui",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 308
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 307
     },
     {
      "sprite": "4f",
      "text": "Yamanashi",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 292
     },
     {
      "sprite": "50",
      "text": "Nagano",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 298
     },
     {
      "sprite": "51",
      "text": "Gifu",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 180
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 179
     },
     {
      "sprite": "52",
      "text": "Shizuoka",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 260
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 259
     },
     {
      "sprite": "53",
      "text": "Aichi",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 292
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 291
     },
     {
      "sprite": "54",
      "text": "Mie",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 339
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 338
     },
     {
      "sprite": "55",
      "text": "Shiga",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 194
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 193
     },
     {
      "sprite": "56",
      "text": "Kyoto",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 162
     },
     {
      "sprite": "57",
      "text": "Osaka",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 252
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 251
     },
     {
      "sprite": "58",
      "text": "Hyogo",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 188
     },
     {
      "sprite": "59",
      "text": "Nara",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 300
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 299
     },
     {
      "sprite": "5a",
      "text": "Wakayama",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 334
     },
     {
      "sprite": "5b",
      "text": "Tottori",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 136
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 135
     },
     {
      "sprite": "5c",
      "text": "Shimane",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 182
     },
     {
      "sprite": "5d",
      "text": "Okayama",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 218
     },
     {
      "sprite": "5e",
      "text": "Hiroshima",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 268
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 267
     },
     {
      "sprite": "5f",
      "text": "Yamaguchi",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 315
     },
     {
      "sprite": "60",
      "text": "Tokushima",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 204
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 203
     },
     {
      "sprite": "61",
      "text": "Kagawa",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 152
     },
     {
      "sprite": "62",
      "text": "Ehime",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 226
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 225
     },
     {
      "sprite": "63",
      "text": "Kochi",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 280
     },
     {
      "sprite": "64",
      "text": "Fukuoka",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 132
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 131
     },
     {
      "sprite": "65",
      "text": "Saga",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 154
     },
     {
      "sprite": "66",
      "text": "Nagasaki",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 178
     },
     {
      "sprite": "67",
      "text": "Kumamoto",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 250
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 249
     },
     {
      "sprite": "68",
      "text": "Oita",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 170
     },
     {
      "sprite": "69",
      "text": "Miyazaki",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 270
     },
     {
      "sprite": "6a",
      "text": "Kagoshima",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
      "baseline": 334
     },
     {
      "sprite": "6b",
      "text": "Okinawa",
      "style": "fxD_mk_small",
-     "font": "ttf:narrow:14:0.0:1.0:0.45",
-     "baseline": 284
+     "font": "ttf:narrow:13:0.0:1.0:0.45",
+     "baseline": 283
     },
     {
      "from": [
