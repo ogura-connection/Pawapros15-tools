@@ -3176,7 +3176,7 @@
    "bank": "h3_dem_0",
    "palette": 4,
    "style": "mi_head",
-   "font": "ttf:rounded:18:0.0:1.0:0.25",
+   "font": "ttf:rounded:16:0.0:1.0:0.25",
    "under": 3,
    "areas": [
     [
@@ -3220,7 +3220,7 @@
      "sprite": "02",
      "text": "Starting Lineup",
      "style": "mi_head",
-     "font": "ttf:rounded:18:0.0:1.0:0.4",
+     "font": "ttf:rounded:16:0.0:0.9:0.4",
      "slices": true,
      "slice_width": 128,
      "dy": 1,
@@ -3235,7 +3235,7 @@
      "sprite": "16",
      "text": "Lineup",
      "style": "mi_head",
-     "font": "ttf:rounded:18:0.0:1.0:0.4",
+     "font": "ttf:rounded:16:0.0:0.9:0.4",
      "baseline": 42,
      "pages": [
       1
