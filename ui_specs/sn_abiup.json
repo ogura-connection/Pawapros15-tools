@@ -1057,11 +1057,11 @@
       128,
       64
      ],
-     "text": "Item Effect",
+     "text": "Items",
      "style": "e_item",
-     "font": "ttf:narrow:10:0.0:1.0:0.4",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
      "left": 2,
-     "baseline": 17
+     "baseline": 18
     },
     {
      "from": [

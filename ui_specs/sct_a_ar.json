@@ -99,20 +99,20 @@
     },
     {
      "sprite": "21",
-     "text": "Practice\nOrders",
+     "text": "Drills",
      "style": "c4_ed_tab",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 24,
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 28,
      "palettes": [
       22
      ]
     },
     {
      "sprite": "22",
-     "text": "Practice\nCheck",
+     "text": "Drill Log",
      "style": "c4_ed_tab",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 24,
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 25,
      "palettes": [
       22
      ]
@@ -121,8 +121,8 @@
      "sprite": "23",
      "text": "Items",
      "style": "c4_ed_tab",
-     "font": "ttf:rounded:19:0.0:0.85:0.3",
-     "baseline": 28,
+     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "baseline": 26,
      "palettes": [
       22
      ]
@@ -131,8 +131,8 @@
      "sprite": "24",
      "text": "Roles",
      "style": "c4_ed_tab",
-     "font": "ttf:narrow:20:0.0:0.92:0.3",
-     "baseline": 29,
+     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "baseline": 28,
      "palettes": [
       22
      ]
@@ -149,30 +149,30 @@
     },
     {
      "sprite": "26",
-     "text": "Cheers\n& Song",
+     "text": "Cheers",
      "style": "c4_ed_tab",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
-     "baseline": 24,
+     "font": "ttf:narrow:17:0.0:0.85:0.3",
+     "baseline": 28,
      "palettes": [
       22
      ]
     },
     {
      "sprite": "27",
-     "text": "Schedule\n& Memo",
+     "text": "Schedule",
      "style": "c4_ed_tab",
-     "font": "ttf:rounded:10:0.0:0.92:0.3",
-     "baseline": 23,
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 24,
      "palettes": [
       22
      ]
     },
     {
      "sprite": "59",
-     "text": "Ability\nDetails",
+     "text": "Details",
      "style": "c4_ed_tab",
-     "font": "ttf:rounded:9:0.0:1.0:0.3",
-     "baseline": 24,
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "baseline": 26,
      "palettes": [
       22
      ]
@@ -231,20 +231,20 @@
     },
     {
      "sprite": "3d",
-     "text": "Voice Settings",
+     "text": "Voices",
      "style": "c4_ed_plate",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 3,
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 7,
      "palettes": [
       50
      ]
     },
     {
      "sprite": "3e",
-     "text": "Change Name",
+     "text": "Rename",
      "style": "c4_ed_plate",
-     "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 3,
+     "font": "ttf:rounded:17:0.0:0.85:0.3",
+     "baseline": 7,
      "palettes": [
       50
      ]
@@ -253,8 +253,8 @@
      "sprite": "57",
      "text": "Schedule",
      "style": "c4_ed_plate",
-     "font": "ttf:rounded:18:0.0:1.0:0.3",
-     "baseline": 8,
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 7,
      "palettes": [
       50
      ]
@@ -283,20 +283,20 @@
     },
     {
      "sprite": "4f",
-     "text": "Practice Orders",
+     "text": "Drills",
      "style": "c4_ed_big",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 45,
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 49,
      "palettes": [
       56
      ]
     },
     {
      "sprite": "50",
-     "text": "Practice Check",
+     "text": "Drill Log",
      "style": "c4_ed_big",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 45,
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": 48,
      "palettes": [
       56
      ]
@@ -343,20 +343,20 @@
     },
     {
      "sprite": "49",
-     "text": "Practice\nOrders",
+     "text": "Drills",
      "style": "c4_ed_tab",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 24,
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 28,
      "palettes": [
       22
      ]
     },
     {
      "sprite": "4a",
-     "text": "Practice\nCheck",
+     "text": "Drill Log",
      "style": "c4_ed_tab",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 24,
+     "font": "ttf:rounded:12:0.0:0.85:0.3",
+     "baseline": 25,
      "palettes": [
       22
      ]

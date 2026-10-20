@@ -3025,9 +3025,10 @@
     },
     {
      "sprite": "1e",
-     "text": "Tired",
+     "text": "Until\nSpent",
      "style": "f7_kh_btn",
-     "font": "ttf:rounded:17:0.0:0.9:0.25",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 19,
      "pages": [
       9,
       10,
@@ -3071,9 +3072,10 @@
     },
     {
      "sprite": "21",
-     "text": "Ahead",
+     "text": "When\nLeading",
      "style": "f7_kh_btn",
-     "font": "ttf:rounded:17:0.0:0.9:0.25",
+     "font": "ttf:rounded:8:0.0:1.0:0.25",
+     "baseline": 18,
      "pages": [
       9,
       10,
@@ -3764,8 +3766,8 @@
     },
     {
      "sprite": "64",
-     "text": "Win\nFormula",
-     "style": "fxE_kh64",
+     "text": "Winning\nFormula",
+     "style": "f7_kh_win",
      "font": "ttf:narrow:10:0.0:0.85:0.25",
      "baseline": 31,
      "valign": "centre"
@@ -4327,12 +4329,11 @@
     },
     {
      "sprite": "12",
-     "text": "Current Formula",
+     "text": "Current\nFormula",
      "style": "f7_sh_formula",
-     "font": "ttf:rounded:21:0.0:0.9:0.25",
-     "valign": "centre",
-     "slices": true,
-     "slice_width": 108
+     "font": "ttf:rounded:16:0.0:1.0:0.25",
+     "baseline": 45,
+     "valign": "centre"
     },
     {
      "sprite": "1e",
@@ -4358,9 +4359,9 @@
      ],
      "text": "Relief",
      "style": "f7_sh_tall_r",
-     "font": "ttf:rounded:11:0.0:0.9:0.25",
-     "baseline": 17,
-     "centre_x": 30,
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 18,
+     "centre_x": 28,
      "sprites": [
       "13"
      ]
@@ -4375,9 +4376,9 @@
      ],
      "text": "Closer",
      "style": "f7_sh_tall_c",
-     "font": "ttf:rounded:11:0.0:0.85:0.25",
-     "baseline": 16,
-     "centre_x": 27,
+     "font": "ttf:rounded:13:0.0:1.0:0.25",
+     "baseline": 18,
+     "centre_x": 29,
      "sprites": [
       "13"
      ]

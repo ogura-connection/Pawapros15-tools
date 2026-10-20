@@ -1316,7 +1316,7 @@
     {
      "sprite": "3c",
      "text": "Insomnia",
-     "font": "ttf:narrow:12:0:1:0.2",
+     "font": "ttf:narrow:11:0:1:0.2",
      "valign": "centre",
      "pages": [
       7,
@@ -1364,7 +1364,7 @@
     {
      "sprite": "3f",
      "text": "Lovesick",
-     "font": "ttf:narrow:12:0:1:0.2",
+     "font": "ttf:narrow:11:0:1:0.2",
      "valign": "centre",
      "pages": [
       7,
@@ -1412,7 +1412,7 @@
     {
      "sprite": "42",
      "text": "Gd Sense",
-     "font": "ttf:narrow:12:0:1:0.2",
+     "font": "ttf:narrow:11:0:1:0.2",
      "valign": "centre",
      "pages": [
       7,
@@ -1525,7 +1525,7 @@
     {
      "sprite": "49",
      "text": "Lucky Boy",
-     "font": "ttf:narrow:11:0:1:0.2",
+     "font": "ttf:narrow:10:0:1:0.2",
      "valign": "centre",
      "pages": [
       7,
@@ -1541,7 +1541,7 @@
     {
      "sprite": "4a",
      "text": "Showman",
-     "font": "ttf:narrow:11:0:1:0.2",
+     "font": "ttf:narrow:10:0:1:0.2",
      "valign": "centre",
      "pages": [
       7,
@@ -1557,7 +1557,7 @@
     {
      "sprite": "4b",
      "text": "Good Guy",
-     "font": "ttf:narrow:11:0:1:0.2",
+     "font": "ttf:narrow:10:0:1:0.2",
      "valign": "centre",
      "pages": [
       7,
@@ -1589,7 +1589,7 @@
     {
      "sprite": "4d",
      "text": "Homebody",
-     "font": "ttf:narrow:10:0:1:0.2",
+     "font": "ttf:narrow:9:0:1:0.2",
      "valign": "centre",
      "pages": [
       7,
@@ -1621,7 +1621,7 @@
     {
      "sprite": "52",
      "text": "Workaholic",
-     "font": "ttf:narrow:10:0:1:0.2",
+     "font": "ttf:narrow:9:0:1:0.2",
      "valign": "centre",
      "pages": [
       7,
