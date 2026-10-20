@@ -188,9 +188,9 @@
     },
     {
      "sprite": "13",
-     "text": "Teio",
+     "text": "TEIO",
      "style": "d2_sy_t13",
-     "font": "d:rounded:10:1.0:0.3:0",
+     "font": "d:rounded:12:1.0:0.3:0",
      "palettes": [
       23
      ],
@@ -208,9 +208,9 @@
     },
     {
      "sprite": "15",
-     "text": "Haikyo",
+     "text": "HAIKYO",
      "style": "d2_sy_t15",
-     "font": "d:rounded:10:1.0:0.3:0",
+     "font": "d:rounded:11:0.9:0.3:0",
      "palettes": [
       24
      ],
