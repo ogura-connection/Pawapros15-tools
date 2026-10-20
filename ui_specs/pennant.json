@@ -2380,7 +2380,7 @@
      ],
      "text": "Funds (Cp)",
      "style": "a5_r5_rad_20_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:11:0.0:1.0:0.2",
      "baseline": 16,
      "sprites": [
       "12"
@@ -2396,8 +2396,8 @@
       96
      ],
      "text": "Fans",
-     "style": "a5_r5_rad_19_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "style": "a5_r5_rad_20_s",
+     "font": "ttf:narrow:12:0.0:1.0:0.2",
      "baseline": 16,
      "sprites": [
       "12"
@@ -2413,8 +2413,8 @@
       120
      ],
      "text": "Income (Cp)",
-     "style": "a5_r5_rad_19_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "style": "a5_r5_rad_20_s",
+     "font": "ttf:narrow:11:0.0:1.0:0.2",
      "baseline": 16,
      "sprites": [
       "12"
@@ -2431,7 +2431,7 @@
      ],
      "text": "Payroll (Cp)",
      "style": "a5_r5_rad_21_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.2",
+     "font": "ttf:narrow:11:0.0:1.0:0.2",
      "baseline": 16,
      "sprites": [
       "12"
@@ -3374,9 +3374,9 @@
       32,
       32
      ],
-     "text": "VELO",
+     "text": "VEL",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:10:0.0:0.88:0.2",
+     "font": "ttf:narrow:11:0.0:0.88:0.2",
      "baseline": 22,
      "sprites": [
       "4d"
@@ -3391,14 +3391,14 @@
       72,
       32
      ],
-     "text": "Control",
+     "text": "CTL",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:9:0.0:0.88:0.12",
+     "font": "ttf:narrow:11:0.0:0.88:0.12",
      "baseline": 22,
      "sprites": [
       "4d"
      ],
-     "centre_x": 20
+     "centre_x": 16
     },
     {
      "from": [
@@ -3408,14 +3408,14 @@
       112,
       32
      ],
-     "text": "Stamina",
+     "text": "STA",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:8:0.0:0.82:0.12",
-     "baseline": 21,
+     "font": "ttf:narrow:11:0.0:0.82:0.12",
+     "baseline": 22,
      "sprites": [
       "4d"
      ],
-     "centre_x": 21
+     "centre_x": 16
     },
     {
      "from": [
@@ -3493,9 +3493,9 @@
       32,
       32
      ],
-     "text": "VELO",
+     "text": "VEL",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:10:0.0:0.88:0.2",
+     "font": "ttf:narrow:11:0.0:0.88:0.2",
      "baseline": 22,
      "sprites": [
       "96"
@@ -3510,14 +3510,14 @@
       72,
       32
      ],
-     "text": "Control",
+     "text": "CTL",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:9:0.0:0.88:0.12",
+     "font": "ttf:narrow:11:0.0:0.88:0.12",
      "baseline": 22,
      "sprites": [
       "96"
      ],
-     "centre_x": 20
+     "centre_x": 16
     },
     {
      "from": [
@@ -3527,14 +3527,14 @@
       112,
       32
      ],
-     "text": "Stamina",
+     "text": "STA",
      "style": "a5_s3_pi00_77_s",
-     "font": "ttf:narrow:8:0.0:0.82:0.12",
-     "baseline": 21,
+     "font": "ttf:narrow:11:0.0:0.82:0.12",
+     "baseline": 22,
      "sprites": [
       "96"
      ],
-     "centre_x": 21
+     "centre_x": 16
     },
     {
      "from": [
@@ -6486,7 +6486,7 @@
       16,
       64
      ],
-     "text": "\u00d7 Years (up to",
+     "text": "× Years (max",
      "style": "a5_s3_sys00_29",
      "font": "ttf:narrow:12:0.0:0.88:0.3",
      "baseline": 22,
@@ -6614,7 +6614,7 @@
       16,
       64
      ],
-     "text": "\u00d7 Years (up to",
+     "text": "× Years (max",
      "style": "a5_s3_sys00_29",
      "font": "ttf:narrow:11:0.0:0.94:0.3",
      "baseline": 22,
@@ -6725,7 +6725,7 @@
       128,
       96
      ],
-     "text": "\u00d7 Years (up to",
+     "text": "× Years (max",
      "style": "a5_s3_sys00_29",
      "font": "ttf:narrow:13:0.0:0.88:0.3",
      "baseline": 22,
@@ -6840,6 +6840,76 @@
       "3e"
      ],
      "centre_x": 12
+    },
+    {
+     "from": [
+      1,
+      32,
+      0,
+      48,
+      32
+     ],
+     "text": "2",
+     "style": "a5_s3_sys00_29",
+     "font": "ttf:narrow:13:0.0:0.94:0.3",
+     "baseline": 22,
+     "sprites": [
+      "3f",
+      "03"
+     ],
+     "centre_x": 8
+    },
+    {
+     "from": [
+      1,
+      0,
+      0,
+      16,
+      32
+     ],
+     "text": "0",
+     "style": "a5_s3_sys00_29",
+     "font": "ttf:narrow:13:0.0:0.94:0.3",
+     "baseline": 22,
+     "sprites": [
+      "3f",
+      "03"
+     ],
+     "centre_x": 8
+    },
+    {
+     "from": [
+      1,
+      64,
+      32,
+      80,
+      64
+     ],
+     "text": "2",
+     "style": "a5_s3_sys00_29",
+     "font": "ttf:narrow:13:0.0:0.94:0.3",
+     "baseline": 22,
+     "sprites": [
+      "04"
+     ],
+     "centre_x": 8
+    },
+    {
+     "from": [
+      1,
+      32,
+      32,
+      48,
+      64
+     ],
+     "text": "0",
+     "style": "a5_s3_sys00_29",
+     "font": "ttf:narrow:13:0.0:0.94:0.3",
+     "baseline": 22,
+     "sprites": [
+      "04"
+     ],
+     "centre_x": 8
     }
    ],
    "name": "s3_sys00",

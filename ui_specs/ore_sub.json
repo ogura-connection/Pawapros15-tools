@@ -884,7 +884,7 @@
      "sprite": "e2",
      "text": "Asahikawa",
      "style": "city",
-     "font": "ttf:din:10:0:0.7:0",
+     "font": "ttf:din:9:0:1:0",
      "valign": "centre"
     },
     {
@@ -919,7 +919,7 @@
      "sprite": "e7",
      "text": "Yokohama",
      "style": "city",
-     "font": "ttf:din:10:0:0.7:0",
+     "font": "ttf:din:10:0:1:0",
      "valign": "centre"
     },
     {
@@ -933,7 +933,7 @@
      "sprite": "e9",
      "text": "Fukuyama",
      "style": "city",
-     "font": "ttf:din:10:0:0.7:0",
+     "font": "ttf:din:10:0:1:0",
      "valign": "centre"
     },
     {
@@ -968,28 +968,28 @@
      "sprite": "ee",
      "text": "Toyohashi",
      "style": "city",
-     "font": "ttf:din:11:0:0.7:0",
+     "font": "ttf:din:10:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "ef",
      "text": "Yamagata",
      "style": "city",
-     "font": "ttf:din:11:0:0.7:0",
+     "font": "ttf:din:10:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "f0",
      "text": "Hamamatsu",
      "style": "city",
-     "font": "ttf:din:9:0:0.7:0",
+     "font": "ttf:din:9:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "f1",
      "text": "Nishinomiya",
      "style": "city",
-     "font": "ttf:din:9:0:0.7:0",
+     "font": "ttf:din:8:0:1:0",
      "valign": "centre"
     },
     {
@@ -1024,7 +1024,7 @@
      "sprite": "f6",
      "text": "Kanazawa",
      "style": "city",
-     "font": "ttf:din:11:0:0.7:0",
+     "font": "ttf:din:10:0:1:0",
      "valign": "centre"
     },
     {
@@ -1038,7 +1038,7 @@
      "sprite": "f8",
      "text": "Hiroshima",
      "style": "city",
-     "font": "ttf:din:11:0:0.7:0",
+     "font": "ttf:din:10:0:1:0",
      "valign": "centre"
     },
     {
@@ -1101,7 +1101,7 @@
      "sprite": "101",
      "text": "Matsuyama",
      "style": "city",
-     "font": "ttf:din:10:0:0.7:0",
+     "font": "ttf:din:9:0:1:0",
      "valign": "centre"
     },
     {
@@ -1115,7 +1115,7 @@
      "sprite": "135",
      "text": "Kumamoto",
      "style": "city",
-     "font": "ttf:din:10:0:0.7:0",
+     "font": "ttf:din:10:0:1:0",
      "valign": "centre"
     },
     {
@@ -1150,7 +1150,7 @@
      "sprite": "13a",
      "text": "Fukushima",
      "style": "city",
-     "font": "ttf:din:10:0:0.7:0",
+     "font": "ttf:din:9:0:1:0",
      "valign": "centre"
     },
     {
@@ -1192,7 +1192,7 @@
      "sprite": "141",
      "text": "Yamaguchi",
      "style": "city",
-     "font": "ttf:din:10:0:0.7:0",
+     "font": "ttf:din:9:0:1:0",
      "valign": "centre"
     },
     {

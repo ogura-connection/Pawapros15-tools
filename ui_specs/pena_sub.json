@@ -3206,7 +3206,7 @@
      "sprite": "51",
      "text": "Japan Series Win",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:16:0.0:1.0:0.0",
      "baseline": 20
     },
     {
@@ -3289,7 +3289,7 @@
      "sprite": "5b",
      "text": "Comeback Walk-off",
      "style": "c5_pink",
-     "font": "ttf:narrow:12:0.0:0.85:0.0",
+     "font": "ttf:narrow:13:0.0:0.85:0.0",
      "baseline": 20
     },
     {
@@ -3362,9 +3362,9 @@
     },
     {
      "sprite": "65",
-     "text": "Win in 1st Place",
+     "text": "Win in 1st",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:0.85:0.0",
+     "font": "ttf:narrow:14:0.0:0.85:0.0",
      "baseline": 20
     },
     {
@@ -3393,9 +3393,9 @@
     },
     {
      "sprite": "69",
-     "text": "Cheered Out of Skid",
+     "text": "Fans Snap Skid",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:0.85:0.0",
+     "font": "ttf:narrow:14:0.0:0.85:0.0",
      "baseline": 20
     },
     {
@@ -3431,9 +3431,9 @@
     },
     {
      "sprite": "6e",
-     "text": "Star Player Played",
+     "text": "Star Played",
      "style": "c5_gold",
-     "font": "ttf:narrow:11:0.0:0.85:0.0",
+     "font": "ttf:narrow:14:0.0:0.85:0.0",
      "baseline": 18
     },
     {
