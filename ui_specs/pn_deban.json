@@ -97,8 +97,8 @@
      ],
      "text": "Takeover\nSetup",
      "style": "e6_ks_title~0_4096",
-     "font": "ttf:rounded:17:0.0:0.92:0.4",
-     "baseline": 36,
+     "font": "ttf:rounded:16:0.0:0.92:0.4",
+     "baseline": 38,
      "left": 8
     },
     {
@@ -111,8 +111,8 @@
      ],
      "text": "Takeover\nSetup",
      "style": "e6_ks_title~0_4096",
-     "font": "ttf:rounded:17:0.0:0.92:0.4",
-     "baseline": 12,
+     "font": "ttf:rounded:16:0.0:0.92:0.4",
+     "baseline": 14,
      "left": 8
     },
     {
