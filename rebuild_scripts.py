@@ -58,6 +58,7 @@ import sys
 
 import kyu_names
 import name_table
+import school_names
 import pair_font
 import scan_story as S
 import ui_messages
@@ -926,9 +927,10 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     names = name_table.load_tsv() if os.path.exists(name_table.TSV) else None
     players = name_table.load_players() if names and os.path.exists(name_table.PLAYERS_TSV) else []
     stores = name_table.inplace_stores() if names else {}       # given names ...: written in place
+    schools = school_names.load_tsv() if names else {}          # Eikan Nine school names: a table behind the surnames
     slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages,
                          name_table.plates(names) + name_table.short_names(names) + name_table.player_plates(players)
-                         + name_table.inplace_plates(stores) if names else ())
+                         + name_table.inplace_plates(stores) + list(schools.values()) if names else ())
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
@@ -992,6 +994,22 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 sec_data[po:po + len(data)] = data
             sec_data = bytes(sec_data)
             patched.setdefault(host.mod_id, {}).update(host_names)
+        school_ptrs, school_addr = {}, None
+        if schools:
+            sct = next(m for m in orig.values() if m.name == school_names.MODULE)
+            try:
+                school_ptrs = school_names.pointers(sct, schools)
+                school_bytes, where = school_names.table(schools, enc)
+            except ValueError as e:
+                sys.exit(str(e))
+            pad = bytes(-len(sec_data) % 8)
+            school_base = len(sec_data) + len(pad)
+            sec_data = sec_data + pad + school_bytes
+            name_remap.growth += len(pad) + len(school_bytes)
+            sec_base = name_table.HOST_ADDR + host.sections[name_table.HOST_SECTION]["offset"]
+            school_addr = lambda off: sec_base + school_base + where[off]
+            print("%-13s %5d school names in Latin letters, %d bytes appended (for %s)"
+                  % (host.name, len(schools), len(pad) + len(school_bytes), school_names.MODULE))
         new_secs[host.mod_id] = (name_table.HOST_SECTION, sec_data)
         remaps[(host.mod_id, name_table.HOST_SECTION)] = name_remap
         print("%-13s %5d surnames in Latin letters, %d bytes appended; main_prg.rel: %d in 8 letters, %d stay kanji"
@@ -1123,6 +1141,13 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 image, n = patch_addends(m, inplace, bytes(image))
                 if n:
                     note += ", %d pointers into a script laid out again" % n
+        if names and schools and m.name == school_names.MODULE:  # school names: pointers to the table in scc_main.rel
+            try:
+                image, written = school_names.patch_pointers(m, image, school_ptrs, school_addr)
+            except ValueError as e:
+                sys.exit(str(e))
+            patched.setdefault(m.mod_id, {}).update(written)
+            note += ", %d school-name pointers into %s" % (len(written), name_table.HOST)
         ore = next((o for o in ores if m is o["sc"].rel), None)
         if ore:                                                  # My Life kind: the script and its label table
             sc = ore["sc"]
@@ -1208,10 +1233,12 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ores)
+    dropped = {(m.mod_id, name_table.HOST and school_names.SECTION, pos) for m in orig.values()
+               if m.name == school_names.MODULE for pos in school_ptrs} if names else set()
+    new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ores, dropped)
     if names:                           # the appended table reads back as built
         h = new[host.mod_id]
-        got = h.sec_data(name_table.HOST_SECTION)[name_remap.new_table:]
+        got = h.sec_data(name_table.HOST_SECTION)[name_remap.new_table:name_remap.new_table + len(name_bytes)]
         assert got == name_bytes and len(h.sec_data(name_table.HOST_SECTION)) == name_remap.hi + name_remap.growth, h.name
         assert all(h.sec_data(ps)[po:po + len(v)] == v for (ps, po), v in host_names.items()), h.name
         print("Verified: %s holds the %d-byte surname table at sec%d+0x%X." % (h.name, len(got), name_table.HOST_SECTION, name_remap.new_table))
@@ -1220,7 +1247,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     return changed
 
 
-def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=(), ores=()):
+def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=None, blocks=(), ores=(), dropped=()):
     """Re-read the built files and compare them with the originals, structure by structure.
     Returns the modules as re-read (for verify_dol). moved = the relocations whose addend the build
     changed on purpose (pointers to strings that were laid out again): {(module, section, position): addend}."""
@@ -1253,7 +1280,7 @@ def verify(orig, old_scripts, repl, remaps, patched=None, moved=None, inplace=No
             assert w2 == window and u2 == repl.get(name, {}).get(i, units), "%s: text at 0x%X" % (name, i * 2)
     # every relocation: same kind and target, positions and addends moved exactly as mapped
     for mid, m in orig.items():
-        a, b = m.relocs(), new[mid].relocs()
+        a, b = [r for r in m.relocs() if (mid, r[0], r[1]) not in dropped], new[mid].relocs()   # dropped: now NOP
         assert len(a) == len(b), m.name
         want = []
         for (s, pos, typ, tm, ts, ad) in a:
