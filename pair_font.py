@@ -37,6 +37,10 @@ SMALL = {"adv": 8, "base": 14, "cap": 11.5, "ink_w": 7.0}
 FONTS = (("small", 0x000000, SMALL), ("large", 0x05DF64, LARGE))
 FONT_END = {0x000000: 0x05DF64, 0x05DF64: 0x117400}             # each font's space ends at the next one
 KANJI_SLOTS = range(706, 3744)
+# The game's own full-width Latin letters (name entry, names typed by the player, ＭＶＰ ...) are redrawn as one
+# letter of this font, centred, so a typed name looks like the English around it. Key: SINGLE + the letter.
+SINGLE = "\x01"
+FULLWIDTH = {chr(0xFF21 + i): chr(0x41 + i) for i in range(26)} | {chr(0xFF41 + i): chr(0x61 + i) for i in range(26)}
 _cache, _faces = {}, {}
 
 
@@ -53,6 +57,10 @@ def _coverage(pair, m):
     h = int(CELL_H * SS / stretch) + 1
     img = Image.new("L", (CELL_W * SS, h), 0)
     draw = ImageDraw.Draw(img)
+    if pair.startswith(SINGLE):                                       # one letter, centred in the cell
+        ch = pair[1]
+        draw.text(((CELL_W * SS - face.getlength(ch)) / 2, m["base"] * SS / stretch), ch, font=face, fill=255, anchor="ls")
+        pair = ""
     for k, ch in enumerate(pair):
         if ch != " ":
             x = k * m["adv"] * SS + (m["adv"] * SS - face.getlength(ch)) / 2

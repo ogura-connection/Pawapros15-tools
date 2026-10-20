@@ -850,6 +850,9 @@ def build_font_file(orig, slots):
         with open(cache_path) as f:
             cache = json.load(f)
     known = len(cache)
+    slots = dict(slots)
+    for fw, letter in pair_font.FULLWIDTH.items():             # full-width letters: one letter of the pair font
+        slots[pair_font.SINGLE + letter] = char_to_glyph(fw)
     image = pair_font.build_font(rel.data, rel.sections[4]["offset"], {g: p for p, g in slots.items()}, cache)
     if len(cache) != known:
         with open(cache_path, "w") as f:
