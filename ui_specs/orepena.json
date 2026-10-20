@@ -1327,7 +1327,7 @@
      ],
      "text": "Rumble",
      "style": "o_f15_r24_s0_c2",
-     "font": "nb11",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -1340,7 +1340,7 @@
      ],
      "text": "Batting",
      "style": "fxA_15_15_6_r333_s",
-     "font": "nb11",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -1379,7 +1379,7 @@
      ],
      "text": "Difficulty",
      "style": "o_f15_r37_s0_c2",
-     "font": "nb11",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -1507,9 +1507,9 @@
       80,
       96
      ],
-     "text": "Pitcher View",
+     "text": "P View",
      "style": "o_f6_r1_s0_c2",
-     "font": "nb12b",
+     "font": "nb16b",
      "valign": "centre"
     },
     {
@@ -1520,9 +1520,9 @@
       88,
       24
      ],
-     "text": "Pitching View",
+     "text": "Pitch View",
      "style": "o_f15_r16_s0_c2",
-     "font": "nb11",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -1533,9 +1533,9 @@
       80,
       48
      ],
-     "text": "Batting View",
+     "text": "Bat View",
      "style": "o_f15_r66_s0_c2",
-     "font": "nb11",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -1546,9 +1546,9 @@
       72,
       72
      ],
-     "text": "Landing Spot",
+     "text": "Landing",
      "style": "o_f15_r16_s0_c2",
-     "font": "nb10",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -2417,7 +2417,7 @@
      ],
      "text": "Day",
      "style": "o_f13_r2_s6_c2",
-     "font": "nb11",
+     "font": "nb12",
      "valign": "centre"
     },
     {
@@ -2631,7 +2631,7 @@
      ],
      "text": "Standings",
      "style": "o_f15_r35_s0_c2",
-     "font": "nb10",
+     "font": "nb12",
      "valign": "centre"
     },
     {
@@ -2882,9 +2882,9 @@
       128,
       48
      ],
-     "text": "Farewell Game",
+     "text": "Farewell",
      "style": "o_f15_r72_s0_c2",
-     "font": "nb10",
+     "font": "nb16",
      "valign": "centre"
     },
     {
@@ -4035,7 +4035,7 @@
      ],
      "text": "Trophy Room",
      "style": "o_f15_rb1_s0_c2",
-     "font": "nb11",
+     "font": "nb16",
      "valign": "centre"
     },
     {

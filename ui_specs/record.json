@@ -1546,9 +1546,9 @@
     },
     {
      "sprite": "8b",
-     "text": "Hiroshima Municipal Stadium",
+     "text": "Hiroshima Muni.",
      "style": "d8_g3_ke_8b",
-     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "font": "ttf:narrow:14:0.0:0.85:0.3",
      "baseline": 20,
      "pages": [
       20
@@ -2825,10 +2825,10 @@
       24,
       32
      ],
-     "text": "Game",
+     "text": "Gm",
      "style": "d8_g3_ke_dai",
-     "font": "ttf:rounded:9:0.0:0.92:0.3",
-     "baseline": 19
+     "font": "ttf:rounded:17:0.0:0.92:0.3",
+     "baseline": 24
     },
     {
      "from": [

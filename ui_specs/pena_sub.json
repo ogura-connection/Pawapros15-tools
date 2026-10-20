@@ -3566,14 +3566,14 @@
      "sprite": "81",
      "text": "Moved Down",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 19
     },
     {
      "sprite": "82",
      "text": "Lost 1st Place",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "font": "ttf:narrow:17:0.0:0.92:0.0",
      "baseline": 20,
      "left": 8
     },
@@ -3596,14 +3596,14 @@
      "sprite": "92",
      "text": "Grand Slam",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "93",
      "text": "3 Straight HRs",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:15:0.0:1.0:0.0",
      "baseline": 20
     },
     {
@@ -3664,7 +3664,7 @@
      "sprite": "91",
      "text": "fans",
      "style": "c5_fans_big",
-     "font": "ttf:narrow:12:0.0:0.85:0.3",
+     "font": "ttf:narrow:15:0.0:0.85:0.3",
      "baseline": 23
     }
    ],
