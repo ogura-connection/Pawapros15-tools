@@ -1,0 +1,66 @@
+# section	offset	hash of the original string	English (see ui_strings.py)
+5	928	29b0	Dummy
+5	940	b128	Stall
+5	952	86e2	Sales
+5	968	9d68	Runner
+5	976	8506	Screws
+5	988	e83d	Soldering
+5	1000	c0d3	Assembly
+5	1012	c326	Loading
+5	1024	2310	Post
+5	1032	9d77	Moving
+5	1040	1efc	Haul:Wheat
+5	1052	e3e4	Haul:Crab
+5	1064	d564	Haul:?
+5	1076	040b	Haul:Sardine
+5	1092	332e	Haul:Buri
+5	1104	2843	Haul:Tuna
+5	1120	9bad	Floor Help
+5	1132	31e0	Server
+5	1144	2b47	Floor Lead
+5	1156	56bb	Repairs
+5	1168	cec4	Roadwork
+5	1180	f3e9	Demolish
+5	1192	c085	Storage
+5	1204	5d23	Packing
+5	1216	1752	Shop Clerk
+5	1232	6a7d	Dishes
+5	1240	263b	Kitchen
+5	1252	d567	Head Cook
+5	1264	0edd	Mop
+5	1272	5ece	Wait
+5	1280	312b	Desk
+5	1288	955b	Eve Shift
+5	1300	7aa3	Day Shift
+5	1312	5ed6	Nightshift
+5	1324	7ca9	Sweeper
+5	1336	a9d3	Ticketing
+5	1352	248f	Usher
+5	1360	2f2f	Flyers:Arcade
+5	1376	6df8	Flyers:Stn.
+5	1392	385e	Flyers:Center
+5	1408	af12	Tea Duty
+5	1420	e5d8	Copying
+5	1432	5410	Data Entry
+5	1448	0734	Sales: Food
+5	1464	587f	Sales: Drink
+5	1480	a1d6	Sales:Cloth
+5	1496	ad5c	Bath:Men's
+5	1508	8de7	Bath:Women
+5	1520	968d	Bath:Rock
+5	1536	312b	Desk
+5	1544	8d59	Balls
+5	1552	8431	Coach
+5	1560	6d9d	Housekeeper
+5	1576	2c2b	Bellboy
+5	1592	6a08	Banquet Staff
+5	1608	55ec	Beach Hut
+5	1620	191f	Boat Rental
+5	1640	973d	Guard
+5	1648	4c94	Pawarin Sale
+5	1664	fc16	Little League
+5	1680	cb52	Ball Boy
+5	1696	48f4	Tester
+5	1732	7e31	Workload ~
+5	1744	fb9e	weeks
+5	1752	1fb7	Pay
