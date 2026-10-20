@@ -17,3 +17,7 @@ STYLES['fxL_km'] = flat([0, 0, 13, 1, 1, 1, 1], cut=2)
 STYLES['fxL_km1'] = flat([0, 0, 0, 1, 1, 1, 1], cut=3)
 STYLES['fxL_od_cancel'] = ringfill([12, 12, 11, 11, 8, 3], [1, 15, 5], [7, 9])
 STYLES['fxL_month'] = ringfill([8], [15, 15, 8], [1, 1])
+STYLES['fxL_pnews'] = __import__('ui_styles_orepena2').gsolid([5, 6, 7, 8], [11, 11, 15, 15], 1)
+import ui_type
+# option.arc help text: Avenir Next Medium (not condensed): letters stand apart at 9 px
+ui_type.TTF.setdefault('avn', ('/System/Library/Fonts/Avenir Next.ttc', 5))
