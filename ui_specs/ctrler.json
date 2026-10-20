@@ -460,13 +460,6 @@
      104,
      128,
      128
-    ],
-    [
-     3,
-     80,
-     0,
-     128,
-     120
     ]
    ],
    "labels": [
@@ -816,7 +809,7 @@
      ],
      "text": "OF",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0.0:1.0:0.2",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
      "left": 3,
      "baseline": 13
     },
@@ -834,7 +827,7 @@
      ],
      "text": "IF",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0.0:1.0:0.2",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
      "left": 4,
      "baseline": 12
     },
@@ -2071,13 +2064,6 @@
      128
     ],
     [
-     12,
-     80,
-     72,
-     128,
-     128
-    ],
-    [
      13,
      0,
      112,
@@ -2694,7 +2680,7 @@
      ],
      "text": "OF",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0.0:1.0:0.2",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
      "left": 3,
      "baseline": 13
     },
@@ -2716,7 +2702,7 @@
      ],
      "text": "IF",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0.0:1.0:0.2",
+     "font": "ttf:narrow:9:0.0:1.0:0.2",
      "left": 4,
      "baseline": 12
     },

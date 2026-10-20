@@ -4582,8 +4582,8 @@
      ],
      "text": "Giants",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 9,
+     "font": "nb14",
+     "left": 8,
      "baseline": 17
     },
     {
@@ -4599,8 +4599,8 @@
      ],
      "text": "Chunichi",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 3,
+     "font": "nb14",
+     "left": 2,
      "baseline": 17
     },
     {
@@ -4616,8 +4616,8 @@
      ],
      "text": "Hiroshima",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 0,
+     "font": "nb14",
+     "left": -1,
      "baseline": 17
     },
     {
@@ -4633,9 +4633,9 @@
      ],
      "text": "Yakult",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 17,
-     "baseline": 16
+     "font": "nb14",
+     "left": 16,
+     "baseline": 17
     },
     {
      "from": [
@@ -4650,9 +4650,9 @@
      ],
      "text": "Yokohama",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": -1,
-     "baseline": 16
+     "font": "nb14",
+     "left": -2,
+     "baseline": 17
     },
     {
      "from": [
@@ -4667,8 +4667,8 @@
      ],
      "text": "Hanshin",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 5,
+     "font": "nb14",
+     "left": 4,
      "baseline": 17
     },
     {
@@ -4684,8 +4684,8 @@
      ],
      "text": "Orix",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 23,
+     "font": "nb14",
+     "left": 22,
      "baseline": 17
     },
     {
@@ -4701,8 +4701,8 @@
      ],
      "text": "Nippon-Ham",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 2,
+     "font": "nb14",
+     "left": 1,
      "baseline": 15
     },
     {
@@ -4718,7 +4718,7 @@
      ],
      "text": "Seibu",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
+     "font": "nb14",
      "left": 11,
      "baseline": 17
     },
@@ -4735,9 +4735,9 @@
      ],
      "text": "Rakuten",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 4,
-     "baseline": 16
+     "font": "nb14",
+     "left": 3,
+     "baseline": 17
     },
     {
      "from": [
@@ -4752,9 +4752,9 @@
      ],
      "text": "Lotte",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 20,
-     "baseline": 16
+     "font": "nb14",
+     "left": 19,
+     "baseline": 17
     },
     {
      "from": [
@@ -4769,9 +4769,9 @@
      ],
      "text": "SoftBank",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 9,
-     "baseline": 16
+     "font": "nb14",
+     "left": 8,
+     "baseline": 17
     },
     {
      "from": [
@@ -4786,9 +4786,9 @@
      ],
      "text": "Shonan",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
-     "left": 6,
-     "baseline": 16
+     "font": "nb14",
+     "left": 5,
+     "baseline": 17
     },
     {
      "from": [
@@ -4803,7 +4803,7 @@
      ],
      "text": "Surpass",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "nb13",
+     "font": "nb14",
      "left": 12,
      "baseline": 15
     },

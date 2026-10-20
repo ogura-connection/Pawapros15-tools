@@ -3349,14 +3349,14 @@
      "sprite": "63",
      "text": "Battle for 1st",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "64",
      "text": "Race for 1st",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "baseline": 20,
      "left": 8
     },
@@ -3371,7 +3371,7 @@
      "sprite": "66",
      "text": "Up From Last Year",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 68,
      "dy": 0
@@ -3380,14 +3380,14 @@
      "sprite": "67",
      "text": "Moved Up",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "68",
      "text": "Win Streak",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20,
      "left": 8
     },
@@ -3402,7 +3402,7 @@
      "sprite": "6a",
      "text": "Comeback Win",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:0.85:0.0",
+     "font": "ttf:narrow:17:0.0:0.85:0.0",
      "baseline": 21,
      "left": 8
     },
