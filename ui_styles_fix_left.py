@@ -16,3 +16,4 @@ def win(style, c0, c1):
 STYLES['fxL_km'] = flat([0, 0, 13, 1, 1, 1, 1], cut=2)
 STYLES['fxL_km1'] = flat([0, 0, 0, 1, 1, 1, 1], cut=3)
 STYLES['fxL_od_cancel'] = ringfill([12, 12, 11, 11, 8, 3], [1, 15, 5], [7, 9])
+STYLES['fxL_month'] = ringfill([8], [15, 15, 8], [1, 1])

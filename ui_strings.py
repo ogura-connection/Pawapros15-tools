@@ -109,7 +109,7 @@ LINE_CELLS = {("scs_sys.rel", 36): 18, ("scs_titl.rel", 32): 16, ("scs_rens.rel"
               ("scs_main.rel", 51): 17, ("scs_main.rel", 33): 18, ("scs_main.rel", 44): 18}
 # (file, section, offset) -> cells per line of one string, 0 = one line. For uncertain strings
 # once the game has shown the answer.
-LINE_WIDTH = {}
+LINE_WIDTH = {("main_prg.rel", 5, 90372): 23}   # boot controller screen: seen in game, 23 cells a line
 TABLE_GAP = 64      # bytes between two strings of the same table, at most
 NEAR = 8            # how many strings away a neighbour may be
 MIN_WIDTH = 8       # padding that ends before this cell is not line padding

@@ -1014,6 +1014,48 @@
      88,
      128,
      128
+    ],
+    [
+     13,
+     0,
+     0,
+     128,
+     64
+    ],
+    [
+     13,
+     0,
+     64,
+     96,
+     128
+    ],
+    [
+     4,
+     64,
+     8,
+     128,
+     32
+    ],
+    [
+     6,
+     104,
+     0,
+     128,
+     64
+    ],
+    [
+     9,
+     0,
+     80,
+     128,
+     96
+    ],
+    [
+     11,
+     0,
+     80,
+     128,
+     88
     ]
    ],
    "labels": [
@@ -1071,74 +1113,74 @@
     {
      "sprite": "2d",
      "text": "Jan",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.65:0.45"
     },
     {
      "sprite": "2e",
      "text": "Feb",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.7:0.45"
     },
     {
      "sprite": "2f",
      "text": "Mar",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.6:0.45"
     },
     {
      "sprite": "30",
      "text": "Apr",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.65:0.45"
     },
     {
      "sprite": "31",
      "text": "May",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.6:0.45"
     },
     {
      "sprite": "32",
      "text": "Jun",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.65:0.45"
     },
     {
      "sprite": "33",
      "text": "Jul",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.8:0.45"
     },
     {
      "sprite": "34",
      "text": "Aug",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.6:0.45"
     },
     {
      "sprite": "35",
      "text": "Sep",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.65:0.45"
     },
     {
      "sprite": "36",
      "text": "Oct",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.65:0.45"
     },
     {
      "sprite": "37",
      "text": "Nov",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.6:0.45"
     },
     {
      "sprite": "38",
      "text": "Dec",
-     "style": "month",
-     "font": "ttf:rounded:20:0.2:0.7:0.2"
+     "style": "fxL_month",
+     "font": "ttf:rounded:34:0.1:0.6:0.45"
     }
    ]
   },
