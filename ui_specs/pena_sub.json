@@ -2718,9 +2718,9 @@
     },
     {
      "sprite": "13",
-     "text": "Hiroshima Municipal Stadium",
+     "text": "Hiroshima Municipal",
      "style": "c5_stad",
-     "font": "ttf:narrow:10:0.0:0.85:0.35",
+     "font": "ttf:narrow:14:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 72,
      "dy": 1
@@ -2820,9 +2820,9 @@
     },
     {
      "sprite": "1f",
-     "text": "Regional Stadium",
+     "text": "Local Ballpark",
      "style": "c5_stad",
-     "font": "ttf:narrow:11:0.0:0.85:0.35",
+     "font": "ttf:narrow:14:0.0:0.85:0.35",
      "baseline": 21
     },
     {
@@ -2836,7 +2836,7 @@
     },
     {
      "sprite": "21",
-     "text": "Yamanote Stadium",
+     "text": "Yamanote Ballpark",
      "style": "c5_stad",
      "font": "ttf:narrow:13:0.0:0.85:0.35",
      "baseline": 22
@@ -2866,9 +2866,9 @@
     },
     {
      "sprite": "3d",
-     "text": "School Ground",
+     "text": "School Field",
      "style": "c5_stad",
-     "font": "ttf:narrow:15:0.0:1.0:0.35",
+     "font": "ttf:narrow:17:0.0:1.0:0.35",
      "slices": true,
      "slice_width": 65,
      "dy": 0
@@ -2884,9 +2884,9 @@
     },
     {
      "sprite": "3f",
-     "text": "Regional Dome",
+     "text": "Local Dome",
      "style": "c5_stad",
-     "font": "ttf:narrow:15:0.0:0.92:0.35",
+     "font": "ttf:narrow:17:0.0:0.92:0.35",
      "baseline": 23
     },
     {
@@ -3647,7 +3647,7 @@
      ],
      "text": "Pennant",
      "style": "c5_pen_gold",
-     "font": "ttf:rounded:15:0.0:1.0:0.45",
+     "font": "ttf:rounded:17:0.0:1.0:0.45",
      "baseline": 28,
      "centre_x": 67
     },
@@ -5090,9 +5090,9 @@
       80,
       128
      ],
-     "text": "Chem Partner",
+     "text": "Partner",
      "style": "d5_chp_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
      "baseline": 20,
      "left": 4,
      "sprites": [
@@ -5109,9 +5109,9 @@
       128,
       24
      ],
-     "text": "(Chemistry Skill 1)",
+     "text": "(Skill 1)",
      "style": "d5_chp_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
      "baseline": 16,
      "left": 0,
      "sprites": [
@@ -5126,9 +5126,9 @@
       128,
       24
      ],
-     "text": "(Chemistry Skill 2)",
+     "text": "(Skill 2)",
      "style": "d5_chp_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
      "baseline": 16,
      "left": 0,
      "sprites": [
@@ -5143,9 +5143,9 @@
       128,
       48
      ],
-     "text": "(Chemistry Level)",
+     "text": "(Level)",
      "style": "d5_chp_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:14:0.0:1.0:0.3",
      "baseline": 16,
      "left": 0,
      "sprites": [
