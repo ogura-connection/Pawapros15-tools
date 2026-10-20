@@ -4024,11 +4024,11 @@
      "sprites": [
       "3e"
      ],
-     "text": "Parents\nAlive",
+     "text": "Parents Alive",
      "style": "mykblue",
-     "font": "ttf:din:16:0:1:0.1",
-     "left": 50,
-     "baseline": 42
+     "font": "ttf:din:18:0:1:0.1",
+     "left": 26,
+     "baseline": 33
     },
     {
      "from": [
@@ -4054,11 +4054,11 @@
      "sprites": [
       "3f"
      ],
-     "text": "Father\nAlive",
+     "text": "Father Alive",
      "style": "mykblue",
-     "font": "ttf:din:16:0:1:0.1",
-     "left": 72,
-     "baseline": 42
+     "font": "ttf:din:18:0:1:0.1",
+     "left": 48,
+     "baseline": 33
     },
     {
      "from": [
@@ -4097,11 +4097,11 @@
      "sprites": [
       "40"
      ],
-     "text": "Parents\nPassed",
+     "text": "Parents Passed",
      "style": "mykblue",
-     "font": "ttf:din:16:0:1:0.1",
-     "left": 52,
-     "baseline": 43
+     "font": "ttf:din:18:0:1:0.1",
+     "left": 19,
+     "baseline": 34
     },
     {
      "from": [
@@ -4140,11 +4140,11 @@
      "sprites": [
       "41"
      ],
-     "text": "Mother\nAlive",
+     "text": "Mother Alive",
      "style": "mykblue",
-     "font": "ttf:din:16:0:1:0.1",
-     "left": 69,
-     "baseline": 42
+     "font": "ttf:din:18:0:1:0.1",
+     "left": 46,
+     "baseline": 33
     },
     {
      "from": [

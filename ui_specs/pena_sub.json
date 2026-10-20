@@ -7963,9 +7963,9 @@
     },
     {
      "sprite": "14",
-     "text": "1st/2nd Team\nSwap",
+     "text": "Roster\nSwap",
      "style": "e5_s3_itn00_14",
-     "font": "ttf:rounded:11:0.0:1.0:0.4",
+     "font": "ttf:rounded:13:0.0:1.0:0.4",
      "baseline": 39
     },
     {
@@ -8937,9 +8937,9 @@
     },
     {
      "sprite": "02",
-     "text": "1st/2nd Team Swap",
+     "text": "Roster Swap",
      "style": "e5_s3_psz00_02",
-     "font": "ttf:narrow:12:0.0:0.92:0.5",
+     "font": "ttf:narrow:13:0.0:0.92:0.5",
      "slices": true,
      "slice_width": 62,
      "dy": 1
