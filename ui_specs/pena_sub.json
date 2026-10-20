@@ -9538,7 +9538,7 @@
      "sprites": [
       "01"
      ],
-     "centre_x": 28
+     "left": 4
     },
     {
      "from": [
@@ -9858,7 +9858,7 @@
      "sprites": [
       "0c"
      ],
-     "centre_x": 28
+     "left": 4
     },
     {
      "from": [
@@ -10012,7 +10012,7 @@
      "sprites": [
       "0d"
      ],
-     "centre_x": 28
+     "left": 4
     },
     {
      "from": [

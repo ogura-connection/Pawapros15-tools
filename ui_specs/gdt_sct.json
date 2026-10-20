@@ -110,10 +110,10 @@
     },
     {
      "sprite": "77",
-     "text": "Mash for a big cheer!",
+     "text": "Mash to cheer!",
      "style": "d4_gm20",
-     "font": "ttf:narrow:9:0.0:1.0:0.15",
-     "baseline": 4
+     "font": "ttf:narrow:13:0.0:1.0:0.15",
+     "baseline": 6
     },
     {
      "sprite": "82",
@@ -255,11 +255,11 @@
       80,
       128
      ],
-     "text": "Trajectory Up",
+     "text": "Traj.",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 45
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 59
     },
     {
      "from": [
@@ -269,11 +269,11 @@
       32,
       128
      ],
-     "text": "Trajectory Down",
+     "text": "Traj.",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": -2
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 38
     },
     {
      "from": [
@@ -283,11 +283,11 @@
       128,
       128
      ],
-     "text": "Trajectory Down",
+     "text": "Traj.",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": -2
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 38
     }
    ],
    "name": "gmu page 0"
@@ -316,11 +316,11 @@
       80,
       32
      ],
-     "text": "Contact Up",
+     "text": "Contact",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 50
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 47
     },
     {
      "from": [
@@ -330,11 +330,11 @@
       32,
       32
      ],
-     "text": "Contact Down",
+     "text": "Contact",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 7
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 15
     },
     {
      "from": [
@@ -344,67 +344,67 @@
       128,
       32
      ],
-     "text": "Contact Down",
+     "text": "Contact",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 7
-    },
-    {
-     "from": [
-      1,
-      0,
-      32,
-      80,
-      64
-     ],
-     "text": "Power Up",
-     "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
      "baseline": 20,
-     "centre_x": 53
-    },
-    {
-     "from": [
-      1,
-      0,
-      32,
-      32,
-      64
-     ],
-     "text": "Power Down",
-     "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 15
-    },
-    {
-     "from": [
-      1,
-      80,
-      32,
-      128,
-      64
-     ],
-     "text": "Power Down",
-     "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
      "left": 15
     },
     {
      "from": [
       1,
       0,
+      32,
+      80,
+      64
+     ],
+     "text": "Power",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 52
+    },
+    {
+     "from": [
+      1,
+      0,
+      32,
+      32,
+      64
+     ],
+     "text": "Power",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 25
+    },
+    {
+     "from": [
+      1,
+      80,
+      32,
+      128,
+      64
+     ],
+     "text": "Power",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 25
+    },
+    {
+     "from": [
+      1,
+      0,
       64,
       80,
       96
      ],
-     "text": "Speed Up",
+     "text": "Speed",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 53
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 52
     },
     {
      "from": [
@@ -414,11 +414,11 @@
       32,
       96
      ],
-     "text": "Speed Down",
+     "text": "Speed",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 14
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 24
     },
     {
      "from": [
@@ -428,11 +428,11 @@
       128,
       96
      ],
-     "text": "Speed Down",
+     "text": "Speed",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 14
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 24
     },
     {
      "from": [
@@ -442,11 +442,11 @@
       80,
       128
      ],
-     "text": "Arm Up",
+     "text": "Arm",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 57
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 59
     },
     {
      "from": [
@@ -456,11 +456,11 @@
       32,
       128
      ],
-     "text": "Arm Down",
+     "text": "Arm",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 22
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 38
     },
     {
      "from": [
@@ -470,11 +470,11 @@
       128,
       128
      ],
-     "text": "Arm Down",
+     "text": "Arm",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 22
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 38
     }
    ],
    "name": "gmu page 1"
@@ -503,11 +503,11 @@
       80,
       32
      ],
-     "text": "Fielding Up",
+     "text": "Fielding",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 49
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 46
     },
     {
      "from": [
@@ -517,11 +517,11 @@
       32,
       32
      ],
-     "text": "Fielding Down",
+     "text": "Fielding",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 7
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 13
     },
     {
      "from": [
@@ -531,11 +531,11 @@
       128,
       32
      ],
-     "text": "Fielding Down",
+     "text": "Fielding",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 7
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 13
     },
     {
      "from": [
@@ -545,11 +545,11 @@
       80,
       64
      ],
-     "text": "Error Res. Up",
+     "text": "Err. Res.",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 45
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 44
     },
     {
      "from": [
@@ -559,11 +559,11 @@
       32,
       64
      ],
-     "text": "Error Res. Down",
+     "text": "Err. Res.",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": -4
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 8
     },
     {
      "from": [
@@ -573,11 +573,11 @@
       128,
       64
      ],
-     "text": "Error Res. Down",
+     "text": "Err. Res.",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": -4
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 8
     },
     {
      "from": [
@@ -587,11 +587,11 @@
       80,
       96
      ],
-     "text": "Velocity Up",
+     "text": "Velocity",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 49
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 46
     },
     {
      "from": [
@@ -601,11 +601,11 @@
       32,
       96
      ],
-     "text": "Velocity Down",
+     "text": "Velocity",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 6
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 12
     },
     {
      "from": [
@@ -615,11 +615,11 @@
       128,
       96
      ],
-     "text": "Velocity Down",
+     "text": "Velocity",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 6
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 12
     },
     {
      "from": [
@@ -629,11 +629,11 @@
       80,
       128
      ],
-     "text": "Control Up",
+     "text": "Control",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 51
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 48
     },
     {
      "from": [
@@ -643,11 +643,11 @@
       32,
       128
      ],
-     "text": "Control Down",
+     "text": "Control",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 9
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 17
     },
     {
      "from": [
@@ -657,11 +657,11 @@
       128,
       128
      ],
-     "text": "Control Down",
+     "text": "Control",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 9
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 17
     }
    ],
    "name": "gmu page 2"
@@ -690,67 +690,67 @@
       80,
       32
      ],
-     "text": "Stamina Up",
+     "text": "Stamina",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 49
-    },
-    {
-     "from": [
-      3,
-      0,
-      0,
-      32,
-      32
-     ],
-     "text": "Stamina Down",
-     "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 7
-    },
-    {
-     "from": [
-      3,
-      80,
-      0,
-      128,
-      32
-     ],
-     "text": "Stamina Down",
-     "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 7
-    },
-    {
-     "from": [
-      3,
-      0,
-      32,
-      80,
-      64
-     ],
-     "text": "Condition Up",
-     "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
      "centre_x": 45
     },
     {
      "from": [
       3,
       0,
+      0,
+      32,
+      32
+     ],
+     "text": "Stamina",
+     "style": "d4_gmu~0_32",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 11
+    },
+    {
+     "from": [
+      3,
+      80,
+      0,
+      128,
+      32
+     ],
+     "text": "Stamina",
+     "style": "d4_gmu~32_4096",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 20,
+     "left": 11
+    },
+    {
+     "from": [
+      3,
+      0,
+      32,
+      80,
+      64
+     ],
+     "text": "Condition",
+     "style": "d4_gmu",
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 40
+    },
+    {
+     "from": [
+      3,
+      0,
       32,
       32,
       64
      ],
-     "text": "Condition Down",
+     "text": "Condition",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": -2
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 0
     },
     {
      "from": [
@@ -760,11 +760,11 @@
       128,
       64
      ],
-     "text": "Condition Down",
+     "text": "Condition",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": -2
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 0
     },
     {
      "from": [
@@ -774,11 +774,11 @@
       80,
       96
      ],
-     "text": "Growth Up",
+     "text": "Growth",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 51
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 48
     },
     {
      "from": [
@@ -788,11 +788,11 @@
       32,
       96
      ],
-     "text": "Growth Down",
+     "text": "Growth",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 8
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 16
     },
     {
      "from": [
@@ -802,11 +802,11 @@
       128,
       96
      ],
-     "text": "Growth Down",
+     "text": "Growth",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 8
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 16
     },
     {
      "from": [
@@ -816,11 +816,11 @@
       80,
       128
      ],
-     "text": "Focus Up",
+     "text": "Focus",
      "style": "d4_gmu",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 20,
-     "centre_x": 53
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 22,
+     "centre_x": 52
     },
     {
      "from": [
@@ -830,11 +830,11 @@
       32,
       128
      ],
-     "text": "Focus Down",
+     "text": "Focus",
      "style": "d4_gmu~0_32",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 14
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 24
     },
     {
      "from": [
@@ -844,11 +844,11 @@
       128,
       128
      ],
-     "text": "Focus Down",
+     "text": "Focus",
      "style": "d4_gmu~32_4096",
-     "font": "ttf:narrow:8:0.0:1.0:0.3",
-     "baseline": 18,
-     "left": 14
+     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "baseline": 21,
+     "left": 24
     }
    ],
    "name": "gmu page 3"

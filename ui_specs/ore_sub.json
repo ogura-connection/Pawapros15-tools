@@ -2539,44 +2539,44 @@
     {
      "sprite": "24",
      "text": "B/T: R/R",
-     "style": "fxA_ut",
+     "style": "o2hand",
      "valign": "centre",
-     "font": "ttf:din:19:0:1:0"
+     "font": "ttf:din:13:0:1:0"
     },
     {
      "sprite": "25",
      "text": "B/T: L/R",
-     "style": "fxA_ut",
+     "style": "o2hand",
      "valign": "centre",
-     "font": "ttf:din:19:0:1:0"
+     "font": "ttf:din:13:0:1:0"
     },
     {
      "sprite": "26",
      "text": "B/T: S/R",
-     "style": "fxA_ut",
+     "style": "o2hand",
      "valign": "centre",
-     "font": "ttf:din:19:0:1:0"
+     "font": "ttf:din:13:0:1:0"
     },
     {
      "sprite": "27",
      "text": "B/T: R/L",
-     "style": "fxA_ut",
+     "style": "o2hand",
      "valign": "centre",
-     "font": "ttf:din:19:0:1:0"
+     "font": "ttf:din:13:0:1:0"
     },
     {
      "sprite": "28",
      "text": "B/T: L/L",
-     "style": "fxA_ut",
+     "style": "o2hand",
      "valign": "centre",
-     "font": "ttf:din:19:0:1:0"
+     "font": "ttf:din:13:0:1:0"
     },
     {
      "sprite": "29",
      "text": "B/T: S/L",
-     "style": "fxA_ut",
+     "style": "o2hand",
      "valign": "centre",
-     "font": "ttf:din:19:0:1:0"
+     "font": "ttf:din:13:0:1:0"
     }
    ]
   },
@@ -3825,43 +3825,43 @@
     {
      "sprite": "0d",
      "text": "B/T: R/R",
-     "style": "fxA_pm",
-     "font": "ttf:din:17:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "0e",
      "text": "B/T: L/R",
-     "style": "fxA_pm",
-     "font": "ttf:din:17:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "0f",
      "text": "B/T: S/R",
-     "style": "fxA_pm",
-     "font": "ttf:din:17:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "10",
      "text": "B/T: R/L",
-     "style": "fxA_pm",
-     "font": "ttf:din:17:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "11",
      "text": "B/T: L/L",
-     "style": "fxA_pm",
-     "font": "ttf:din:17:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "12",
      "text": "B/T: S/L",
-     "style": "fxA_pm",
-     "font": "ttf:din:17:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:13:0:1:0",
      "valign": "centre"
     },
     {
@@ -5480,22 +5480,22 @@
     {
      "sprite": "112",
      "text": "00M",
-     "style": "fxA_pm",
-     "font": "ttf:din:11:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "113",
      "text": "0K",
-     "style": "fxA_pm",
-     "font": "ttf:din:17:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "114",
      "text": "0K yen",
-     "style": "fxA_pm",
-     "font": "ttf:din:12:0:1:0",
+     "style": "o3pm",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
