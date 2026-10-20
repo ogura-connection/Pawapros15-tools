@@ -1127,80 +1127,80 @@
     },
     {
      "sprite": "19",
-     "text": "Summer Tokyo",
+     "text": "Sum. Tokyo",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "1a",
-     "text": "Summer Hokkaido",
+     "text": "Sum. Hokkaido",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "1b",
-     "text": "Summer Pref.",
+     "text": "Sum. Pref.",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "1c",
-     "text": "Summer Pref.",
+     "text": "Sum. Pref.",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "1d",
      "text": "Fall Tokyo",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "1e",
      "text": "Fall Hokkaido",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "1f",
      "text": "Fall Pref.",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "20",
      "text": "Fall Pref.",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "21",
-     "text": "Summer Koshien",
+     "text": "Sum. Koshien",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
      "baseline": 292
     },
     {
      "sprite": "22",
-     "text": "Spring Koshien",
+     "text": "Spr. Koshien",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     },
     {
      "sprite": "23",
      "text": "Fall District",
      "style": "d4_edsm",
-     "font": "ttf:d4narrow:9:0.0:1.0:0.15",
-     "baseline": 291
+     "font": "ttf:d4narrow:11:0.0:1.0:0.15",
+     "baseline": 292
     }
    ],
    "name": "edsm p4",

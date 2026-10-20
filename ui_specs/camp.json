@@ -602,7 +602,7 @@
       128
      ],
      "text": "Errors",
-     "style": "e8_g3_kya00_52_24.0.104_h_m",
+     "style": "fxC_kya52",
      "font": "ttf:rounded:14:0.0:1.0:0.25",
      "baseline": 20,
      "sprites": [
@@ -644,7 +644,7 @@
       32
      ],
      "text": "Wind",
-     "style": "e8_g3_kya00_52_25.0.0_h_m",
+     "style": "fxC_kya52",
      "font": "ttf:narrow:14:0.0:0.92:0.25",
      "baseline": 24,
      "sprites": [
@@ -660,7 +660,7 @@
       32
      ],
      "text": "Weather",
-     "style": "e8_g3_kya00_52_25.32.0_h_m",
+     "style": "fxC_kya52",
      "font": "ttf:narrow:14:0.0:0.85:0.25",
      "baseline": 24,
      "sprites": [
@@ -708,8 +708,8 @@
       56
      ],
      "text": "Normal",
-     "style": "e8_g3_kya00_70_12.48.32_h_m",
-     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "style": "fxC_kya70_normal",
+     "font": "ttf:narrow:14:0.0:0.95:0.25",
      "baseline": 19,
      "sprites": [
       "70"

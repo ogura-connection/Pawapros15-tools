@@ -3647,7 +3647,7 @@
      ],
      "text": "Pennant",
      "style": "c5_pen_gold",
-     "font": "ttf:rounded:17:0.0:1.0:0.45",
+     "font": "ttf:rounded:20:0.0:1.0:0.45",
      "baseline": 28,
      "centre_x": 67
     },
@@ -3661,7 +3661,7 @@
      ],
      "text": "Season Over",
      "style": "c5_pen_gold",
-     "font": "ttf:narrow:15:0.0:0.85:0.45",
+     "font": "ttf:narrow:17:0.0:0.85:0.45",
      "baseline": 28
     },
     {

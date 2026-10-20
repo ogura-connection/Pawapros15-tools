@@ -4655,20 +4655,6 @@
      4,
      0,
      0,
-     96,
-     128
-    ],
-    [
-     4,
-     96,
-     0,
-     128,
-     32
-    ],
-    [
-     4,
-     96,
-     64,
      128,
      128
     ]
@@ -5196,6 +5182,18 @@
     {
      "sprite": "47",
      "text": "5 boys",
+     "style": "kzomint",
+     "font": "ttf:din:16:0:1:0.1"
+    },
+    {
+     "sprite": "48",
+     "text": "4 girls",
+     "style": "kzomint",
+     "font": "ttf:din:16:0:1:0.1"
+    },
+    {
+     "sprite": "49",
+     "text": "5 girls",
      "style": "kzomint",
      "font": "ttf:din:16:0:1:0.1"
     },
