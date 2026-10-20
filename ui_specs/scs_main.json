@@ -316,21 +316,10 @@
       56,
       48
      ],
-     "art": {
-      "pack": "ScsParamPlate",
-      "tex": 0,
-      "box": [
-       173,
-       38,
-       244,
-       62
-      ],
-      "style": "param",
-      "role": "fill",
-      "speck": 5
-     },
      "style": "stat",
-     "under": 2
+     "text": "POS",
+     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "baseline": 20
     },
     {
      "name": "E RES",
@@ -343,7 +332,7 @@
      ],
      "style": "stat",
      "text": "ERR",
-     "font": "ttf:narrow:16:0.0:1.0:0.4",
+     "font": "ttf:narrow:16:0.0:0.85:0.4",
      "baseline": 20
     },
     {
@@ -441,8 +430,9 @@
      ],
      "style": "stat",
      "text": "FLD",
-     "font": "ttf:narrow:16:0.0:1.0:0.4",
-     "baseline": 20
+     "font": "ttf:narrow:16:0.0:0.8:0.4",
+     "baseline": 20,
+     "left": 0
     },
     {
      "from": [

@@ -889,9 +889,9 @@
     },
     {
      "sprite": "96",
-     "text": "Press to confirm",
-     "style": "f8_y3_koukai_96",
-     "font": "ttf:rounded:12:0.0:0.92:0.3",
+     "text": "Press to OK",
+     "style": "fxA_koukai_96",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
      "slices": true,
      "slice_width": 61,
      "dy": 0

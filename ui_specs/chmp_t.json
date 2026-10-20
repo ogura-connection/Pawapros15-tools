@@ -659,11 +659,11 @@
       128,
       96
      ],
-     "text": "Champion",
-     "style": "f8_r3_tig_0_30_r6_96_64~0_26",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 21,
-     "left": 6
+     "text": "Champs",
+     "style": "fxE_tig30~0_29",
+     "font": "ttf:narrow:15:0.0:0.85:0.3",
+     "baseline": 24,
+     "left": 3
     },
     {
      "from": [
@@ -673,10 +673,10 @@
       32,
       128
      ],
-     "text": "Champion",
-     "style": "f8_r3_tig_0_30_r6_96_64~28_4096",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 21,
+     "text": "Champs",
+     "style": "fxE_tig30~31_4096",
+     "font": "ttf:narrow:15:0.0:0.85:0.3",
+     "baseline": 24,
      "left": 0
     }
    ],

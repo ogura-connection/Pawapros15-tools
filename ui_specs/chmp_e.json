@@ -56,6 +56,27 @@
      56,
      88,
      88
+    ],
+    [
+     1,
+     0,
+     96,
+     128,
+     128
+    ],
+    [
+     2,
+     96,
+     0,
+     128,
+     56
+    ],
+    [
+     3,
+     80,
+     0,
+     128,
+     24
     ]
    ],
    "labels": [
@@ -106,31 +127,12 @@
     {
      "from": [
       0,
-      0,
-      32,
-      88,
-      64
+      64,
+      64,
+      128,
+      96
      ],
-     "text": "Semifinal",
-     "style": "f8_r3_ted_02_r0_0_32",
-     "font": "ttf:narrow:13:0.0:0.85:0.3",
-     "baseline": 22,
-     "sprites": [
-      "02"
-     ]
-    },
-    {
-     "from": [
-      0,
-      0,
-      96,
-      32,
-      128
-     ],
-     "text": "Game",
-     "style": "f8_r3_ted_02_r0_0_96",
-     "font": "ttf:rounded:7:0.0:0.85:0.3",
-     "baseline": 18,
+     "empty": true,
      "sprites": [
       "02"
      ]
@@ -144,6 +146,39 @@
       96
      ],
      "empty": true,
+     "sprites": [
+      "1a"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      32,
+      88,
+      64
+     ],
+     "text": "Semifinal",
+     "style": "fxE_ted",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "baseline": 24,
+     "sprites": [
+      "02"
+     ]
+    },
+    {
+     "from": [
+      0,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Game",
+     "style": "fxE_ted",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 20,
+     "left": 2,
      "sprites": [
       "02"
      ]
@@ -157,9 +192,9 @@
       96
      ],
      "text": "Round",
-     "style": "f8_r3_ted_1a_r0_0_64",
-     "font": "ttf:narrow:13:0.0:0.85:0.3",
-     "baseline": 22,
+     "style": "fxE_ted",
+     "font": "ttf:narrow:19:0.0:0.85:0.3",
+     "baseline": 24,
      "sprites": [
       "1a"
      ]
@@ -173,22 +208,10 @@
       128
      ],
      "text": "Game",
-     "style": "f8_r3_ted_1a_r0_0_96",
-     "font": "ttf:rounded:7:0.0:0.85:0.3",
-     "baseline": 18,
-     "sprites": [
-      "1a"
-     ]
-    },
-    {
-     "from": [
-      0,
-      64,
-      64,
-      128,
-      96
-     ],
-     "empty": true,
+     "style": "fxE_ted",
+     "font": "ttf:narrow:11:0.0:0.85:0.3",
+     "baseline": 20,
+     "left": 2,
      "sprites": [
       "1a"
      ]

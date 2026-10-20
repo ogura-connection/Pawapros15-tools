@@ -110,10 +110,10 @@
     },
     {
      "sprite": "22",
-     "text": "Defensive\nShift",
+     "text": "Shift",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:7:0.0:1.0:0.3",
-     "baseline": 8
+     "font": "ttf:rounded:14:0.0:0.85:0.3",
+     "baseline": 6
     }
    ],
    "name": "menu"
@@ -166,15 +166,15 @@
      "sprite": "26",
      "text": "Pitch: Auto",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "27",
      "text": "Fastballs",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "28",
@@ -187,43 +187,43 @@
      "sprite": "29",
      "text": "Normal",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "2a",
      "text": "Bunt Shift",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "2b",
      "text": "Infield In",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "2c",
      "text": "Infield Back",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "2d",
      "text": "Outfield In",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "2e",
      "text": "Outfield Back",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:0.92:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 6
     },
     {
      "sprite": "2f",
@@ -236,22 +236,22 @@
      "sprite": "30",
      "text": "Inside",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 5
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "31",
      "text": "Outside",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 5
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "32",
      "text": "Borderline",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "33",
@@ -264,36 +264,36 @@
      "sprite": "34",
      "text": "Waste One",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "35",
      "text": "Walk Him",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "36",
      "text": "Contact: Auto",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:0.92:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 6
     },
     {
      "sprite": "37",
      "text": "Use Contact",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 6
     },
     {
      "sprite": "38",
      "text": "Power Swing",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 4
     },
     {
      "sprite": "39",
@@ -306,92 +306,92 @@
      "sprite": "3a",
      "text": "Patient",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "3b",
      "text": "Aggressive",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "3c",
      "text": "Auto",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "3d",
      "text": "Hit-and-Run",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "3e",
      "text": "Sac Bunt",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "3f",
      "text": "Squeeze",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "40",
      "text": "Safety Bunt",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "41",
      "text": "Sac Fly",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "42",
      "text": "Steal",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "43",
      "text": "Hit to Right",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "44",
      "text": "Take",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "45",
      "text": "Fight",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "46",
      "text": "Max Fight",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "47",
@@ -404,15 +404,15 @@
      "sprite": "48",
      "text": "Intimidate",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "49",
      "text": "Hot Blood",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "4a",
@@ -425,36 +425,36 @@
      "sprite": "4b",
      "text": "Peak Mind",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "4c",
      "text": "Precision",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "4d",
      "text": "Lucky Boy",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
      "baseline": 3
     },
     {
      "sprite": "4e",
      "text": "Koshien Jinx",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:0.92:0.3",
+     "baseline": 6
     },
     {
      "sprite": "4f",
      "text": "Field Jinx",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "50",
@@ -467,57 +467,57 @@
      "sprite": "51",
      "text": "Growth Spurt",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:0.92:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 4
     },
     {
      "sprite": "52",
      "text": "Blossom",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 5
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "53",
      "text": "Showman",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 5
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "54",
      "text": "Fan Cheers",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 5
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "55",
      "text": "Tricky",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "56",
      "text": "Rattle",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "b4",
      "text": "Keep Low",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:1.0:0.3",
-     "baseline": 3
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 4
     },
     {
      "sprite": "a7",
-     "text": "Hit Grounders",
+     "text": "Roll It",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:10:0.0:0.92:0.3",
-     "baseline": 4
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 6
     }
    ],
    "name": "plates 1 line (pages 5-9)"
@@ -596,10 +596,10 @@
     },
     {
      "sprite": "71",
-     "text": "Borderline",
+     "text": "Edges",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:8:0.0:0.85:0.3",
-     "baseline": 9
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
+     "baseline": 10
     },
     {
      "sprite": "72",
@@ -813,10 +813,10 @@
     },
     {
      "sprite": "a5",
-     "text": "Hit\nGrounders",
+     "text": "Roll It",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:9:0.0:0.85:0.3",
-     "baseline": 18
+     "font": "ttf:narrow:16:0.0:0.92:0.3",
+     "baseline": 15
     },
     {
      "sprite": "b3",
@@ -864,29 +864,29 @@
      "sprite": "9b",
      "text": "IF In",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
-     "baseline": 6
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 8
     },
     {
      "sprite": "9c",
-     "text": "IF Back",
+     "text": "IF Bk",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "font": "ttf:rounded:13:0.0:0.85:0.3",
      "baseline": 5
     },
     {
      "sprite": "9d",
      "text": "OF In",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "font": "ttf:rounded:12:0.0:0.92:0.3",
      "baseline": 6
     },
     {
      "sprite": "9e",
-     "text": "OF Back",
+     "text": "OF Bk",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:9:0.0:0.85:0.3",
-     "baseline": 5
+     "font": "ttf:rounded:10:0.0:0.92:0.3",
+     "baseline": 4
     },
     {
      "sprite": "9f",
@@ -1000,18 +1000,18 @@
    "labels": [
     {
      "sprite": "04",
-     "text": "Choose a player to send as messenger.",
+     "text": "Choose a messenger.",
      "style": "b4_gd_blue",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:18:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "05",
-     "text": "Choose a player to send as messenger.",
+     "text": "Choose a messenger.",
      "style": "b4_gd_black",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
      "dy": 0
@@ -1020,28 +1020,28 @@
      "sprite": "07",
      "text": "1 left",
      "style": "b4_gd_green",
-     "font": "ttf:narrow:13:0.0:1.0:0.3",
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
      "baseline": 6
     },
     {
      "sprite": "08",
      "text": "2 left",
      "style": "b4_gd_green",
-     "font": "ttf:narrow:13:0.0:1.0:0.3",
-     "baseline": 7
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "09",
      "text": "3 left",
      "style": "b4_gd_green",
-     "font": "ttf:narrow:13:0.0:1.0:0.3",
-     "baseline": 7
+     "font": "ttf:narrow:11:0.0:1.0:0.3",
+     "baseline": 6
     },
     {
      "sprite": "0a",
      "text": "Encourage",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:9:0.0:0.92:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1052,7 +1052,7 @@
      "sprite": "0b",
      "text": "Encourage",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:9:0.0:0.92:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1063,7 +1063,7 @@
      "sprite": "0c",
      "text": "Really Encourage",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1074,7 +1074,7 @@
      "sprite": "0d",
      "text": "Really Encourage",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1085,7 +1085,7 @@
      "sprite": "0e",
      "text": "Hugely Encourage",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1096,7 +1096,7 @@
      "sprite": "0f",
      "text": "Hugely Encourage",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1107,7 +1107,7 @@
      "sprite": "10",
      "text": "Fire Up",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1118,7 +1118,7 @@
      "sprite": "11",
      "text": "Fire Up",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1129,7 +1129,7 @@
      "sprite": "12",
      "text": "Really Fire Up",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1140,7 +1140,7 @@
      "sprite": "13",
      "text": "Really Fire Up",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1151,7 +1151,7 @@
      "sprite": "14",
      "text": "Hugely Fire Up",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1162,7 +1162,7 @@
      "sprite": "15",
      "text": "Hugely Fire Up",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1173,8 +1173,8 @@
      "sprite": "16",
      "text": "Advise",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 22,
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
      "pages": [
       1,
       2
@@ -1184,7 +1184,7 @@
      "sprite": "17",
      "text": "Advise",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1195,8 +1195,8 @@
      "sprite": "18",
      "text": "Advise Wisely",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 19,
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
      "pages": [
       1,
       2
@@ -1206,8 +1206,8 @@
      "sprite": "19",
      "text": "Advise Wisely",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 21,
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
      "pages": [
       1,
       2
@@ -1217,7 +1217,7 @@
      "sprite": "1a",
      "text": "Advise Wisely & Calmly",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:9:0.0:0.92:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1228,7 +1228,7 @@
      "sprite": "1b",
      "text": "Advise Wisely & Calmly",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:9:0.0:0.92:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1239,8 +1239,8 @@
      "sprite": "1c",
      "text": "Praise",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 22,
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
      "pages": [
       1,
       2
@@ -1250,7 +1250,7 @@
      "sprite": "1d",
      "text": "Praise",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1261,8 +1261,8 @@
      "sprite": "1e",
      "text": "Praise a Lot",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
-     "baseline": 22,
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
+     "baseline": 20,
      "pages": [
       1,
       2
@@ -1272,7 +1272,7 @@
      "sprite": "1f",
      "text": "Praise a Lot",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:10:0.0:1.0:0.3",
+     "font": "ttf:narrow:8:0.0:1.0:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1283,7 +1283,7 @@
      "sprite": "20",
      "text": "Shower with Praise",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "font": "ttf:narrow:8:0.0:0.92:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1294,7 +1294,7 @@
      "sprite": "21",
      "text": "Shower with Praise",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:9:0.0:0.85:0.3",
+     "font": "ttf:narrow:8:0.0:0.92:0.3",
      "baseline": 20,
      "pages": [
       1,
@@ -1344,8 +1344,8 @@
     64,
     72
    ],
-   "text": "Messenger",
-   "font": "ttf:narrow:8:0.0:0.92:0.3",
+   "text": "Visit",
+   "font": "ttf:rounded:11:0.0:1.0:0.3",
    "copy": "clear",
    "style": "b4_or"
   },
@@ -1358,8 +1358,8 @@
     64,
     96
    ],
-   "text": "Don't Mind!",
-   "font": "ttf:rounded:8:0.0:0.85:0.3",
+   "text": "Chin Up!",
+   "font": "ttf:rounded:10:0.0:0.92:0.3",
    "copy": "clear",
    "style": "b4_or"
   }
