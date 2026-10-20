@@ -1014,7 +1014,7 @@
       104
      ],
      "text": "Ordinary",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1027,7 +1027,7 @@
       128
      ],
      "text": "Hide",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1040,7 +1040,7 @@
       88
      ],
      "text": "Weak",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1053,7 +1053,7 @@
       112
      ],
      "text": "Normal",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc15g2b10",
      "valign": "centre"
     },
@@ -1066,7 +1066,7 @@
       112
      ],
      "text": "Strong",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc15g2b10",
      "valign": "centre"
     },
@@ -1079,7 +1079,7 @@
       96
      ],
      "text": "Very Strong",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "nb15b",
      "valign": "centre"
     },
@@ -1092,7 +1092,7 @@
       120
      ],
      "text": "Type",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1105,7 +1105,7 @@
       56
      ],
      "text": "Auto",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1118,7 +1118,7 @@
       56
      ],
      "text": "Hardest",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1131,7 +1131,7 @@
       80
      ],
      "text": "Off",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1157,7 +1157,7 @@
       104
      ],
      "text": "Sweet",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1170,7 +1170,7 @@
       104
      ],
      "text": "Show",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1183,7 +1183,7 @@
       128
      ],
      "text": "Lock On",
-     "style": "fxA_15_15_6_r666_s",
+     "style": "fxA_6_6_6_rfff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1196,7 +1196,7 @@
       128
      ],
      "text": "On",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1248,7 +1248,7 @@
       80
      ],
      "text": "Show",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1261,7 +1261,7 @@
       104
      ],
      "text": "Powerful",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc15g2b10",
      "valign": "centre"
     },
@@ -1274,7 +1274,7 @@
       128
      ],
      "text": "Hide",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1404,7 +1404,7 @@
       72
      ],
      "text": "Manual",
-     "style": "fxA_15_15_6_r16_s",
+     "style": "fxA_1_1_6_rff_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1482,7 +1482,7 @@
       48
      ],
      "text": "No Window",
-     "style": "fxA_15_15_6_r66_s",
+     "style": "fxA_6_6_6_rff_s",
      "font": "dc13g2b10",
      "valign": "centre"
     },

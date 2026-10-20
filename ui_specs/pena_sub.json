@@ -3513,21 +3513,21 @@
      "sprite": "7a",
      "text": "Ace Win",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "7b",
      "text": "HRs From Both Sides",
      "style": "c5_gold",
-     "font": "ttf:narrow:11:0.0:0.85:0.0",
+     "font": "ttf:narrow:12:0.0:0.85:0.0",
      "baseline": 20
     },
     {
      "sprite": "7c",
      "text": "Down From Last Year",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 79,
      "dy": 0
@@ -3536,14 +3536,14 @@
      "sprite": "7d",
      "text": "Last Place Locked",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:0.85:0.0",
+     "font": "ttf:narrow:14:0.0:0.85:0.0",
      "baseline": 20
     },
     {
      "sprite": "7e",
      "text": "Fell to Last",
      "style": "c5_grey",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {
