@@ -1002,19 +1002,19 @@
      "sprite": "04",
      "text": "Choose a messenger.",
      "style": "b4_gd_blue",
-     "font": "ttf:narrow:14:0.0:1.0:0.3",
+     "font": "ttf:narrow:16:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 0
+     "dy": 1
     },
     {
      "sprite": "05",
      "text": "Choose a messenger.",
      "style": "b4_gd_black",
-     "font": "ttf:narrow:14:0.0:1.0:0.3",
+     "font": "ttf:narrow:15:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 128,
-     "dy": 1
+     "dy": 0
     },
     {
      "sprite": "07",

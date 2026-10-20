@@ -2544,25 +2544,14 @@
       120,
       48
      ],
-     "text": "Throws R,",
+     "text": "B/T:",
      "style": "o2hand",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:din:14:0:1:0",
      "left": 0,
-     "valign": "centre"
-    },
-    {
-     "from": [
-      6,
-      0,
-      48,
-      40,
-      72
-     ],
-     "text": "Throws L,",
-     "style": "o2hand",
-     "font": "ttf:din:10:0:1:0",
-     "left": 0,
-     "valign": "centre"
+     "valign": "centre",
+     "sprites": [
+      "24"
+     ]
     },
     {
      "from": [
@@ -2572,11 +2561,31 @@
       80,
       72
      ],
-     "text": "Bats R",
+     "text": "R/R",
      "style": "o2hand",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:din:14:0:1:0",
      "left": 7,
-     "valign": "centre"
+     "valign": "centre",
+     "sprites": [
+      "24"
+     ]
+    },
+    {
+     "from": [
+      6,
+      80,
+      24,
+      120,
+      48
+     ],
+     "text": "B/T:",
+     "style": "o2hand",
+     "font": "ttf:din:14:0:1:0",
+     "left": 0,
+     "valign": "centre",
+     "sprites": [
+      "25"
+     ]
     },
     {
      "from": [
@@ -2586,11 +2595,31 @@
       120,
       72
      ],
-     "text": "Bats L",
+     "text": "L/R",
      "style": "o2hand",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:din:14:0:1:0",
      "left": 7,
-     "valign": "centre"
+     "valign": "centre",
+     "sprites": [
+      "25"
+     ]
+    },
+    {
+     "from": [
+      6,
+      80,
+      24,
+      120,
+      48
+     ],
+     "text": "B/T:",
+     "style": "o2hand",
+     "font": "ttf:din:14:0:1:0",
+     "left": 0,
+     "valign": "centre",
+     "sprites": [
+      "26"
+     ]
     },
     {
      "from": [
@@ -2600,11 +2629,116 @@
       120,
       96
      ],
-     "text": "Bats S",
+     "text": "S/R",
      "style": "o2hand",
-     "font": "ttf:din:10:0:1:0",
+     "font": "ttf:din:14:0:1:0",
      "left": 7,
-     "valign": "centre"
+     "valign": "centre",
+     "sprites": [
+      "26"
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "B/T:",
+     "style": "o2hand",
+     "font": "ttf:din:14:0:1:0",
+     "left": 0,
+     "valign": "centre",
+     "sprites": [
+      "27"
+     ]
+    },
+    {
+     "from": [
+      6,
+      40,
+      48,
+      80,
+      72
+     ],
+     "text": "R/L",
+     "style": "o2hand",
+     "font": "ttf:din:14:0:1:0",
+     "left": 7,
+     "valign": "centre",
+     "sprites": [
+      "27"
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "B/T:",
+     "style": "o2hand",
+     "font": "ttf:din:14:0:1:0",
+     "left": 0,
+     "valign": "centre",
+     "sprites": [
+      "28"
+     ]
+    },
+    {
+     "from": [
+      6,
+      80,
+      48,
+      120,
+      72
+     ],
+     "text": "L/L",
+     "style": "o2hand",
+     "font": "ttf:din:14:0:1:0",
+     "left": 7,
+     "valign": "centre",
+     "sprites": [
+      "28"
+     ]
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "B/T:",
+     "style": "o2hand",
+     "font": "ttf:din:14:0:1:0",
+     "left": 0,
+     "valign": "centre",
+     "sprites": [
+      "29"
+     ]
+    },
+    {
+     "from": [
+      6,
+      80,
+      72,
+      120,
+      96
+     ],
+     "text": "S/L",
+     "style": "o2hand",
+     "font": "ttf:din:14:0:1:0",
+     "left": 7,
+     "valign": "centre",
+     "sprites": [
+      "29"
+     ]
     }
    ]
   },
@@ -3852,44 +3986,44 @@
     },
     {
      "sprite": "0d",
-     "text": "Throws R, Bats R",
+     "text": "B/T: R/R",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "0e",
-     "text": "Throws R, Bats L",
+     "text": "B/T: L/R",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "0f",
-     "text": "Throws R, Bats S",
+     "text": "B/T: S/R",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "10",
-     "text": "Throws L, Bats R",
+     "text": "B/T: R/L",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "11",
-     "text": "Throws L, Bats L",
+     "text": "B/T: L/L",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "12",
-     "text": "Throws L, Bats S",
+     "text": "B/T: S/L",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:7:0:1:0",
      "valign": "centre"
     },
     {
@@ -4385,7 +4519,7 @@
      "sprite": "5b",
      "text": "Wife Midori",
      "style": "o3pm",
-     "font": "ttf:din:8:0:1:0",
+     "font": "ttf:din:12:0:0.78:0",
      "valign": "centre"
     },
     {
@@ -5507,23 +5641,23 @@
     },
     {
      "sprite": "112",
-     "text": "oku",
+     "text": "00M",
      "style": "o3pm",
      "font": "ttf:din:11:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "113",
-     "text": "man",
+     "text": "0K",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:17:0:1:0",
      "valign": "centre"
     },
     {
      "sprite": "114",
-     "text": "man yen",
+     "text": "0K yen",
      "style": "o3pm",
-     "font": "ttf:din:9:0:1:0",
+     "font": "ttf:din:12:0:1:0",
      "valign": "centre"
     },
     {

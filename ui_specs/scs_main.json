@@ -965,6 +965,20 @@
      0,
      128,
      120
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     17,
+     8,
+     64,
+     56,
+     128
     ]
    ],
    "labels": [
@@ -1020,17 +1034,76 @@
      "join": 4
     },
     {
-     "from": [
-      17,
-      8,
-      64,
-      56,
-      128
-     ],
-     "text": "Mo",
+     "sprite": "2d",
+     "text": "Jan",
      "style": "month",
-     "font": "ttf:rounded:30:0.2:0.85:0.2",
-     "align": "left"
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "2e",
+     "text": "Feb",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "2f",
+     "text": "Mar",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "30",
+     "text": "Apr",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "31",
+     "text": "May",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "32",
+     "text": "Jun",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "33",
+     "text": "Jul",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "34",
+     "text": "Aug",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "35",
+     "text": "Sep",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "36",
+     "text": "Oct",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "37",
+     "text": "Nov",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
+    },
+    {
+     "sprite": "38",
+     "text": "Dec",
+     "style": "month",
+     "font": "ttf:rounded:14:0.2:0.85:0.2"
     }
    ]
   },
