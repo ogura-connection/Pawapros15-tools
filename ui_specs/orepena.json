@@ -1014,7 +1014,7 @@
       104
      ],
      "text": "Ordinary",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1027,7 +1027,7 @@
       128
      ],
      "text": "Hide",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1040,7 +1040,7 @@
       88
      ],
      "text": "Weak",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1053,7 +1053,7 @@
       112
      ],
      "text": "Normal",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc15g2b10",
      "valign": "centre"
     },
@@ -1066,7 +1066,7 @@
       112
      ],
      "text": "Strong",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc15g2b10",
      "valign": "centre"
     },
@@ -1079,7 +1079,7 @@
       96
      ],
      "text": "Very Strong",
-     "style": "o_f6_rf1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "nb15b",
      "valign": "centre"
     },
@@ -1092,7 +1092,7 @@
       120
      ],
      "text": "Type",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1105,7 +1105,7 @@
       56
      ],
      "text": "Auto",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1118,7 +1118,7 @@
       56
      ],
      "text": "Hardest",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1131,7 +1131,7 @@
       80
      ],
      "text": "Off",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1144,7 +1144,7 @@
       80
      ],
      "text": "Easiest",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_6_6_6_r11_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1157,7 +1157,7 @@
       104
      ],
      "text": "Sweet",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1170,7 +1170,7 @@
       104
      ],
      "text": "Show",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1183,7 +1183,7 @@
       128
      ],
      "text": "Lock On",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r666_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1196,7 +1196,7 @@
       128
      ],
      "text": "On",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1209,7 +1209,7 @@
       32
      ],
      "text": "Load",
-     "style": "o_f11_r35_s0_c2",
+     "style": "fxA_12_12_6_r111_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1222,7 +1222,7 @@
       32
      ],
      "text": "Save",
-     "style": "o_f11_r31_s0_c2",
+     "style": "fxA_12_12_6_r111_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1235,7 +1235,7 @@
       56
      ],
      "text": "COM Batting",
-     "style": "o_f15_r23_s0_c2",
+     "style": "fxA_15_15_6_r22_s",
      "font": "nb13b",
      "valign": "centre"
     },
@@ -1248,7 +1248,7 @@
       80
      ],
      "text": "Show",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1261,7 +1261,7 @@
       104
      ],
      "text": "Powerful",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc15g2b10",
      "valign": "centre"
     },
@@ -1274,7 +1274,7 @@
       128
      ],
      "text": "Hide",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1287,7 +1287,7 @@
       32
      ],
      "text": "Quit",
-     "style": "o_f11_r1_s0_c2",
+     "style": "fxA_12_12_6_r111_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1300,7 +1300,7 @@
       56
      ],
      "text": "Pitch Cursor",
-     "style": "o_f15_r33_s0_c2",
+     "style": "fxA_15_15_6_r33_s",
      "font": "dc13g2b10",
      "valign": "centre"
     },
@@ -1339,7 +1339,7 @@
       104
      ],
      "text": "Batting",
-     "style": "o_f15_r63_s0_c2",
+     "style": "fxA_15_15_6_r333_s",
      "font": "nb11",
      "valign": "centre"
     },
@@ -1391,7 +1391,7 @@
       48
      ],
      "text": "Steal",
-     "style": "o_f15_r45_s0_c2",
+     "style": "fxA_15_15_6_r55_s",
      "font": "dc14g2b10",
      "valign": "centre"
     },
@@ -1404,7 +1404,7 @@
       72
      ],
      "text": "Manual",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r16_s",
      "font": "dc16g2b10",
      "valign": "centre"
     },
@@ -1430,7 +1430,7 @@
       80
      ],
      "text": "COM Running",
-     "style": "o_f15_r41_s0_c2",
+     "style": "fxA_15_15_6_r22_s",
      "font": "nb12b",
      "valign": "centre"
     },
@@ -1443,7 +1443,7 @@
       104
      ],
      "text": "COM Pitching",
-     "style": "o_f15_r12_s0_c2",
+     "style": "fxA_15_15_6_r22_s",
      "font": "nb12b",
      "valign": "centre"
     },
@@ -1456,7 +1456,7 @@
       128
      ],
      "text": "COM Fielding",
-     "style": "o_f15_r32_s0_c2",
+     "style": "fxA_15_15_6_r22_s",
      "font": "nb13b",
      "valign": "centre"
     },
@@ -1469,7 +1469,7 @@
       24
      ],
      "text": "Pitch / Bat Type",
-     "style": "o_f15_r33_s0_c2",
+     "style": "fxA_15_15_6_r33_s",
      "font": "dc12g2b10",
      "valign": "centre"
     },
@@ -1482,7 +1482,7 @@
       48
      ],
      "text": "No Window",
-     "style": "o_f6_r1_s0_c2",
+     "style": "fxA_15_15_6_r66_s",
      "font": "dc13g2b10",
      "valign": "centre"
     },

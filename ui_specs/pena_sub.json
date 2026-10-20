@@ -3464,42 +3464,42 @@
      "sprite": "73",
      "text": "3-Run HR",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "74",
      "text": "2-Run HR",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "75",
      "text": "Hit for the Cycle",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "76",
      "text": "All-Star Pick",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "77",
      "text": "All-Star MVP",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "78",
      "text": "Winning Formula",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "font": "ttf:narrow:14:0.0:0.92:0.0",
      "baseline": 20
     },
     {

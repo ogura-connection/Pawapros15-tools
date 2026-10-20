@@ -25,3 +25,7 @@ for _k, (_f, _r, _s) in _PEN.items():
 STYLES["fxB_ptz_04"] = ringfill([234, 230, 212, 182, 174, 180], [6, 255, 24], [153])
 STYLES["fxB_ptz_06"] = ringfill([249, 249, 242, 233, 222, 201], [2, 255, 24], [185])
 STYLES["fxB_ptz_0b"] = ringfill([232, 232, 232, 200, 200, 232], [30, 255], [56])
+
+# rec_room g2_km#2 (bats/throws R/R..., prefectures): black letters with the soft brown edge the Japanese has, on the orange plate
+from ui_styles_a_run1 import flat as _flat
+STYLES["fxB_km_text"] = _flat([0, 13, 13, 12, 1, 1, 1], cut=2)
