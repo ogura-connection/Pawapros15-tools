@@ -20,3 +20,8 @@ _PEN = {
 }
 for _k, (_f, _r, _s) in _PEN.items():
     STYLES["fxB_pen00_" + _k] = ringfill(_f, _r, _s)
+
+# pena_ini s3_ptz00 04 / 06 / 0b (buttons): fill, inner dark ring, white rings, outer ring, read from the Japanese lettering.
+STYLES["fxB_ptz_04"] = ringfill([234, 230, 212, 182, 174, 180], [6, 255, 24], [153])
+STYLES["fxB_ptz_06"] = ringfill([249, 249, 242, 233, 222, 201], [2, 255, 24], [185])
+STYLES["fxB_ptz_0b"] = ringfill([232, 232, 232, 200, 200, 232], [30, 255], [56])

@@ -1452,9 +1452,9 @@
     },
     {
      "sprite": "06",
-     "text": "Set Myself",
+     "text": "Manual",
      "style": "d7_m3_seiseki_06",
-     "font": "ttf:rounded:10:0.0:0.92:0.35",
+     "font": "ttf:rounded:11:0.0:0.92:0.35",
      "baseline": 26,
      "pages": [
       3

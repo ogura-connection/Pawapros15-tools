@@ -3206,14 +3206,14 @@
      "sprite": "51",
      "text": "Japan Series Win",
      "style": "c5_pink",
-     "font": "ttf:narrow:16:0.0:1.0:0.0",
+     "font": "ttf:narrow:13:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "52",
      "text": "Climax Series Title",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 69,
      "dy": -1
@@ -3222,7 +3222,7 @@
      "sprite": "53",
      "text": "Climax Series Win",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 67,
      "dy": -1
@@ -3231,7 +3231,7 @@
      "sprite": "54",
      "text": "Climax Series Berth",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 73,
      "dy": -1
@@ -3240,14 +3240,14 @@
      "sprite": "55",
      "text": "Interleague Win",
      "style": "c5_gold",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "56",
      "text": "Title Decider",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {

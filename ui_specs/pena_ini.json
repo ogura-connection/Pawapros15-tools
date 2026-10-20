@@ -923,7 +923,7 @@
     {
      "sprite": "04",
      "text": "Change Settings",
-     "style": "c6_s3_ptz00_04",
+     "style": "fxB_ptz_04",
      "font": "ttf:rounded:12:0.0:0.85:0.3",
      "slices": true,
      "slice_width": 60,
@@ -932,7 +932,7 @@
     {
      "sprite": "06",
      "text": "Cancel",
-     "style": "c6_s3_ptz00_06",
+     "style": "fxB_ptz_06",
      "font": "ttf:rounded:16:0.0:1.0:0.3",
      "slices": true,
      "slice_width": 40,
@@ -955,7 +955,7 @@
     {
      "sprite": "0b",
      "text": "Remove",
-     "style": "c6_s3_ptz00_0b",
+     "style": "fxB_ptz_0b",
      "font": "ttf:rounded:13:0.0:0.85:0.3",
      "baseline": 30
     }

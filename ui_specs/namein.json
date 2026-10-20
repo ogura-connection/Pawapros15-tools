@@ -5,7 +5,7 @@
    "bank": "s3_nam",
    "palette": 14,
    "style": "namehead",
-   "font": "ttf:rounded:13:0:0.85:0.5",
+   "font": "ttf:narrow:20:0:0.7:0.5",
    "under": 3,
    "areas": [
     [
@@ -90,7 +90,7 @@
      ],
      "text": "Enter",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
+     "font": "ttf:narrow:20:0:0.7:0.5",
      "left": -38,
      "baseline": 30
     },
@@ -122,10 +122,10 @@
       128,
       40
      ],
-     "text": "a name",
+     "text": "Name",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
-     "left": 136,
+     "font": "ttf:narrow:20:0:0.7:0.5",
+     "left": 138,
      "baseline": 30
     },
     {
@@ -136,10 +136,10 @@
       96,
       88
      ],
-     "text": "a song title",
+     "text": "Song Title",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
-     "left": 136,
+     "font": "ttf:narrow:20:0:0.7:0.5",
+     "left": 138,
      "baseline": 30
     },
     {
@@ -150,10 +150,10 @@
       128,
       40
      ],
-     "text": "a tourney name",
+     "text": "Tourney Name",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
-     "left": 166,
+     "font": "ttf:narrow:20:0:0.7:0.5",
+     "left": 168,
      "baseline": 30
     },
     {
@@ -164,10 +164,10 @@
       128,
       80
      ],
-     "text": "a school name",
+     "text": "School Name",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
-     "left": 166,
+     "font": "ttf:narrow:20:0:0.7:0.5",
+     "left": 168,
      "baseline": 30
     },
     {
@@ -178,10 +178,10 @@
       128,
       120
      ],
-     "text": "Enter the",
+     "text": "Enter",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
-     "left": 151,
+     "font": "ttf:narrow:20:0:0.7:0.5",
+     "left": 161,
      "baseline": 30
     },
     {
@@ -192,10 +192,10 @@
       128,
       40
      ],
-     "text": "cap mark",
+     "text": "Cap Mark",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
-     "left": 95,
+     "font": "ttf:narrow:20:0:0.7:0.5",
+     "left": 81,
      "baseline": 30
     },
     {
@@ -226,10 +226,10 @@
       128,
       40
      ],
-     "text": "Enter a",
+     "text": "Enter",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
-     "left": 150,
+     "font": "ttf:narrow:20:0:0.7:0.5",
+     "left": 151,
      "baseline": 30
     },
     {
@@ -240,10 +240,10 @@
       128,
       80
      ],
-     "text": "nickname",
+     "text": "Nickname",
      "style": "namehead",
-     "font": "ttf:rounded:13:0:0.85:0.5",
-     "left": 80,
+     "font": "ttf:narrow:20:0:0.7:0.5",
+     "left": 71,
      "baseline": 30
     },
     {
