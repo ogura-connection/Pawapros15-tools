@@ -328,8 +328,8 @@
      "sprite": "02",
      "text": "VS",
      "style": "f8_r3_tvsx_02",
-     "font": "ttf:rounded:38:0.0:1.0:0.3",
-     "baseline": 14
+     "font": "ttf:rounded:60:0.0:0.85:0.3",
+     "valign": "centre"
     }
    ],
    "name": "r3_tvsx",

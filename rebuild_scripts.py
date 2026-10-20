@@ -72,6 +72,17 @@ SECTION_ALIGN = 8      # data behind a script keeps its alignment (REL header al
 LINE_CELLS = 17        # width of the dialogue box (window type 29) in glyph cells
 POPUP_WINDOW, POPUP_CELLS = 31, 30   # glossary pop-ups: the original lines run to about 31 cells
 PLAN_FILE = "moduleID2addr.o"
+REL_ART = os.path.join(S.WORK_DIR, "boot", "rel_art.json")   # sprite art inside modules: {file: {"sec:off": hex}}
+
+
+def rel_art():
+    """Byte patches of art kept in .rel modules (written by _work/boot/make_ctl.py): {file: {(sec, off): bytes}}."""
+    if not os.path.exists(REL_ART):
+        return {}
+    with open(REL_ART) as f:
+        js = json.load(f)
+    return {fn: {tuple(int(v) for v in k.split(":")): bytes.fromhex(h) for k, h in p.items()} for fn, p in js.items()}
+
 # Memory plan. scs_main.rel is followed by the scenario slot, then by scs_load.rel / scs_face.rel.
 # The game reserves everything below 0x814E0000 for modules (main.dol 0x8003A938 raises the OS
 # arena to it) and its plan ends at 0x812CB794: the area in between is free.
@@ -1248,6 +1259,18 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 sys.exit(str(e))
             patched.setdefault(m.mod_id, {}).update(written)
             note += ", surname readers patched"
+        art = rel_art().get(m.name)                              # sprite art kept in a module (boot controller screen)
+        if art:
+            if any(any(s == ps and po <= so < po + len(data) for (ps, po), data in art.items())
+                   for s, so in strings.get(m.name, ())):
+                sys.exit("%s: a UI string is translated inside sprite art" % m.name)
+            image = bytearray(image)
+            for (ps, po), data in art.items():
+                pos = m.sections[ps]["offset"] + po
+                image[pos:pos + len(data)] = data
+                patched.setdefault(m.mod_id, {})[(ps, po)] = data
+            image = bytes(image)
+            note += ", %d art patches" % len(art)
         if image != m.data:
             with open(os.path.join(BUILD_DIR, m.name), "wb") as f:
                 f.write(image)
