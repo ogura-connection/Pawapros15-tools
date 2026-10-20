@@ -5074,20 +5074,20 @@
    "bank": "m4_stt00",
    "page": 5,
    "rect": [
-    3,
+    2,
     0,
-    99,
-    20
+    101,
+    26
    ],
    "text": "Player Setup",
-   "font": "ttf:rounded:11:0.0:1.0:0.3",
+   "font": "ttf:rounded:14:0.0:0.78:0.3",
    "style": "a_cardhead",
    "copy": [
     5,
     103,
     0,
     104,
-    20
+    26
    ]
   }
  ]
