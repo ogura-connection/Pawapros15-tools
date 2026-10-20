@@ -10,5 +10,5 @@ STYLES["mi_name"] = ringfill([0xf], [4], [4, 4])
 # h3_dem_0 スターティングオーダー / オーダー (palette 4): yellow shading to orange (13, 14, 15), blue ring (1) (the thin white
 # rim of the Japanese is left out: qa RING wants the dark outside), blue shadow (2)
 STYLES["mi_head"] = ringfill([0xd, 0xd, 0xe, 0xe, 0xf], [1, 1], [2, 2])
-# h3_dem_0 打率 / 本塁打 (palette 3): white letters on a navy band (4), a blue shadow (6, 8)
-STYLES["mi_col"] = ringfill([0xf], [4, 4], [6, 8])
+# h3_dem_0 打率 / 本塁打 (palette 3): white letters on a navy band (4), a blue shadow (6); kept 14 rows high so it clears the 16-row cells (qa CLIP)
+STYLES["mi_col"] = ringfill([0xf], [4, 4], [6])
