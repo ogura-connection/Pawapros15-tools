@@ -361,160 +361,6 @@
     },
     {
      "from": [
-      7,
-      0,
-      0,
-      128,
-      32
-     ],
-     "text": "Throws R, Bats R",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 2,
-     "baseline": 25
-    },
-    {
-     "from": [
-      7,
-      0,
-      0,
-      64,
-      32
-     ],
-     "text": "Throws R,",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 2,
-     "baseline": 25
-    },
-    {
-     "from": [
-      7,
-      0,
-      32,
-      64,
-      64
-     ],
-     "text": "Throws L,",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 2,
-     "baseline": 25
-    },
-    {
-     "from": [
-      7,
-      64,
-      0,
-      128,
-      32
-     ],
-     "text": "Bats R",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 14,
-     "baseline": 25
-    },
-    {
-     "from": [
-      7,
-      64,
-      32,
-      128,
-      64
-     ],
-     "text": "Bats L",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 14,
-     "baseline": 25
-    },
-    {
-     "from": [
-      7,
-      64,
-      64,
-      128,
-      96
-     ],
-     "text": "Bats S",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 14,
-     "baseline": 25
-    },
-    {
-     "from": [
-      9,
-      40,
-      0,
-      128,
-      32
-     ],
-     "text": "Pitcher",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 18,
-     "baseline": 25
-    },
-    {
-     "from": [
-      9,
-      40,
-      32,
-      128,
-      64
-     ],
-     "text": "1st Base",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 13,
-     "baseline": 25
-    },
-    {
-     "from": [
-      9,
-      40,
-      96,
-      128,
-      128
-     ],
-     "text": "Shortstop",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 8,
-     "baseline": 25
-    },
-    {
-     "from": [
-      10,
-      40,
-      0,
-      128,
-      32
-     ],
-     "text": "Outfield",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 15,
-     "baseline": 25
-    },
-    {
-     "from": [
-      10,
-      0,
-      0,
-      32,
-      32
-     ],
-     "text": "Catcher",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 14,
-     "baseline": 25
-    },
-    {
-     "from": [
       9,
       96,
       0,
@@ -526,62 +372,6 @@
     {
      "from": [
       9,
-      40,
-      64,
-      72,
-      96
-     ],
-     "text": "2nd",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 10,
-     "baseline": 25
-    },
-    {
-     "from": [
-      9,
-      72,
-      64,
-      104,
-      96
-     ],
-     "text": "3rd",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 10,
-     "baseline": 25
-    },
-    {
-     "from": [
-      9,
-      72,
-      32,
-      128,
-      64
-     ],
-     "text": "Base",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 8,
-     "baseline": 25
-    },
-    {
-     "from": [
-      8,
-      0,
-      0,
-      128,
-      32
-     ],
-     "text": "Overhand",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 48,
-     "baseline": 25
-    },
-    {
-     "from": [
-      9,
       0,
       0,
       40,
@@ -591,20 +381,6 @@
     },
     {
      "from": [
-      8,
-      0,
-      32,
-      128,
-      64
-     ],
-     "text": "3-Quarters",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 44,
-     "baseline": 25
-    },
-    {
-     "from": [
       9,
       0,
       32,
@@ -615,20 +391,6 @@
     },
     {
      "from": [
-      8,
-      0,
-      64,
-      128,
-      96
-     ],
-     "text": "Sidearm",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 53,
-     "baseline": 25
-    },
-    {
-     "from": [
       9,
       0,
       64,
@@ -636,20 +398,6 @@
       96
      ],
      "empty": true
-    },
-    {
-     "from": [
-      8,
-      0,
-      96,
-      128,
-      128
-     ],
-     "text": "Submarine",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 45,
-     "baseline": 25
     },
     {
      "from": [
@@ -660,118 +408,6 @@
       128
      ],
      "empty": true
-    },
-    {
-     "from": [
-      6,
-      0,
-      80,
-      128,
-      104
-     ],
-     "text": "Standard",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 31,
-     "baseline": 19
-    },
-    {
-     "from": [
-      10,
-      0,
-      32,
-      128,
-      56
-     ],
-     "text": "Open",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 60,
-     "baseline": 19
-    },
-    {
-     "from": [
-      7,
-      0,
-      72,
-      64,
-      96
-     ],
-     "text": "Kannushi",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": -2,
-     "baseline": 19
-    },
-    {
-     "from": [
-      6,
-      0,
-      104,
-      128,
-      128
-     ],
-     "text": "Crouching",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 26,
-     "baseline": 19
-    },
-    {
-     "from": [
-      10,
-      0,
-      104,
-      64,
-      128
-     ],
-     "text": "Pendulum",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": -4,
-     "baseline": 19
-    },
-    {
-     "from": [
-      10,
-      0,
-      80,
-      88,
-      104
-     ],
-     "text": "Fake Bunt",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 1,
-     "baseline": 19
-    },
-    {
-     "from": [
-      10,
-      64,
-      104,
-      128,
-      128
-     ],
-     "text": "Flamingo",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": -1,
-     "baseline": 19
-    },
-    {
-     "from": [
-      10,
-      0,
-      56,
-      112,
-      80
-     ],
-     "text": "Original",
-     "style": "makeitem",
-     "font": "ttf:rounded:12:0:0.9:0.5",
-     "left": 27,
-     "baseline": 19
     },
     {
      "from": [
@@ -834,6 +470,181 @@
       24
      ],
      "empty": true
+    },
+    {
+     "sprite": "0c",
+     "text": "B/T: R/R",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0d",
+     "text": "B/T: L/R",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0e",
+     "text": "B/T: S/R",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "0f",
+     "text": "B/T: R/L",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "10",
+     "text": "B/T: L/L",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "11",
+     "text": "B/T: S/L",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "12",
+     "text": "Pitcher",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "13",
+     "text": "Catcher",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "14",
+     "text": "1st Base",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "15",
+     "text": "2nd Base",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "16",
+     "text": "3rd Base",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "17",
+     "text": "Shortstop",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "18",
+     "text": "Outfield",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "19",
+     "text": "Overhand",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1a",
+     "text": "3-Quarters",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1b",
+     "text": "Sidearm",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1c",
+     "text": "Submarine",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1d",
+     "text": "Standard",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1e",
+     "text": "Open",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1f",
+     "text": "Kannushi",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "20",
+     "text": "Crouching",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "21",
+     "text": "Pendulum",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "22",
+     "text": "Fake Bunt",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "23",
+     "text": "Flamingo",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
+    },
+    {
+     "sprite": "24",
+     "text": "Original",
+     "style": "makeitem",
+     "font": "ttf:rounded:19:0:0.9:0.5",
+     "valign": "centre"
     }
    ]
   },

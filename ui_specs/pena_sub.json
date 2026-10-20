@@ -3254,7 +3254,7 @@
      "sprite": "57",
      "text": "Took 1st Place",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "font": "ttf:narrow:17:0.0:0.92:0.0",
      "baseline": 20,
      "left": 8
     },
@@ -3271,7 +3271,7 @@
      "sprite": "59",
      "text": "Comeback Walk-off Slam",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "slices": true,
      "slice_width": 91,
      "dy": -1
@@ -3296,7 +3296,7 @@
      "sprite": "5c",
      "text": "Walk-off HR",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20
     },
     {

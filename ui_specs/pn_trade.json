@@ -1407,17 +1407,17 @@
     },
     {
      "sprite": "0b",
-     "text": "Player Wanted",
+     "text": "Wanted",
      "style": "a6_pts_head",
-     "font": "ttf:rounded:9:0.0:1.0:0.25",
-     "baseline": 102
+     "font": "ttf:rounded:13:0.0:0.9:0.25",
+     "baseline": 104
     },
     {
      "sprite": "0c",
-     "text": "Terms Wanted",
+     "text": "Terms",
      "style": "a6_pts_head",
-     "font": "ttf:rounded:9:0.0:1.0:0.25",
-     "baseline": 102
+     "font": "ttf:rounded:14:0.0:1.0:0.25",
+     "baseline": 104
     },
     {
      "sprite": "0d",
@@ -1667,9 +1667,9 @@
       128,
       128
      ],
-     "text": "Outgoing Players",
+     "text": "Outgoing",
      "style": "a6_pt_out",
-     "font": "ttf:rounded:9:0.0:0.85:0.25",
+     "font": "ttf:rounded:15:0.0:1.0:0.25",
      "baseline": 20
     },
     {

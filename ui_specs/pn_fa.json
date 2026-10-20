@@ -368,19 +368,19 @@
     },
     {
      "sprite": "07",
-     "text": "Salary Wanted",
+     "text": "Pay Ask",
      "style": "d6_teal",
-     "font": "ttf:narrow:9:0.0:1.0:0.25",
-     "baseline": 27,
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
+     "baseline": 29,
      "pages": [
       21
      ]
     },
     {
      "sprite": "07",
-     "text": "Team Wanted",
+     "text": "Team Ask",
      "style": "d6_teal",
-     "font": "ttf:narrow:9:0.0:1.0:0.25",
+     "font": "ttf:narrow:13:0.0:1.0:0.25",
      "slices": true,
      "slice_width": 64,
      "dy": -1,

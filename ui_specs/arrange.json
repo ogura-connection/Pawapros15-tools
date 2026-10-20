@@ -2125,20 +2125,6 @@
      "baseline": 32
     },
     {
-     "sprite": "1f",
-     "text": "Usage\nSettings",
-     "style": "c7_s3_am_1f_s",
-     "font": "ttf:rounded:9:0.0:0.85:0.2",
-     "baseline": 30
-    },
-    {
-     "sprite": "20",
-     "text": "Roster\nSettings",
-     "style": "c7_s3_am_20_s",
-     "font": "ttf:rounded:9:0.0:0.85:0.2",
-     "baseline": 30
-    },
-    {
      "sprite": "21",
      "text": "Player\nRatings",
      "style": "c7_s3_am_21",
@@ -2151,13 +2137,6 @@
      "style": "c7_s3_am_23",
      "font": "ttf:rounded:19:0.0:0.92:0.3",
      "baseline": 36
-    },
-    {
-     "sprite": "29",
-     "text": "Data View",
-     "style": "c7_am_29_y",
-     "font": "ttf:rounded:12:0.0:0.85:0.0",
-     "baseline": 16
     },
     {
      "sprite": "2a",
@@ -2174,10 +2153,10 @@
       40,
       128
      ],
-     "text": "1st Team",
+     "text": "1st",
      "style": "c7_am_19",
-     "font": "ttf:rounded:8:0.0:0.85:0.3",
-     "baseline": 18,
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "baseline": 22,
      "sprites": [
       "19"
      ],
@@ -2191,10 +2170,10 @@
       80,
       128
      ],
-     "text": "2nd Team",
+     "text": "2nd",
      "style": "c7_am_1a",
-     "font": "ttf:rounded:8:0.0:0.85:0.3",
-     "baseline": 16,
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "baseline": 20,
      "sprites": [
       "1a"
      ],
@@ -2801,6 +2780,27 @@
       "34"
      ],
      "left": 1
+    },
+    {
+     "sprite": "1f",
+     "text": "Usage",
+     "style": "fxE_am1f",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 32
+    },
+    {
+     "sprite": "20",
+     "text": "Roster",
+     "style": "fxE_am1f",
+     "font": "ttf:rounded:10:0.0:0.85:0.3",
+     "baseline": 31
+    },
+    {
+     "sprite": "29",
+     "text": "Data View",
+     "style": "fxE_am29",
+     "font": "ttf:narrow:12:0.0:0.85:0.25",
+     "baseline": 19
     }
    ],
    "name": "s3_am",
