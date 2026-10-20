@@ -494,14 +494,16 @@ def paint_strips(entry, d, banks, pages, project=None):
     them) and written back into the page rectangles of its parts, so every reader of the atlas still finds each name
     where it was. {"bank", "pages", "sprites_arc", "sprite_prefix",
      "items": [{"sprite": "03", "text": "...", "font": "ttf:...", "style": "...", "align": "centre" | "left",
-                "dx": 0, "dy": 0}]}  (vertically centred on the strip; "left" starts at column `dx`).
+                "dx": 0, "dy": 0, "baseline": row}]}  (vertically centred on the strip, or its baseline on `baseline`;
+    "left" starts at column `dx`). Several items may name one sprite (words placed one by one: the second is drawn
+    over the first); names whose sprites share a rectangle (オール・セントラル / オール・パシフィック) must draw it alike.
     Raises when the art is wider than the sprite, when ink falls where no part shows it, or when two items write
     different pixels into a rectangle they share."""
     import ui_type
     b = U.bank_named(banks, entry["bank"])
     idx = [k for k, n in enumerate(b["page_names"]) if n.startswith(entry["pages"])]
     sprites = strip_sprites(entry["sprites_arc"], entry["sprite_prefix"])
-    owner = {}
+    owner, painted = {}, set()
     for item in entry["items"]:
         parts = sprites[item["sprite"]]
         X0 = min(p[2] for p in parts); Y0 = min(p[3] for p in parts)
@@ -511,17 +513,22 @@ def paint_strips(entry, d, banks, pages, project=None):
         for pg, pal, ox, oy, x0, y0, x1, y1 in parts:
             shown[oy - Y0:oy - Y0 + y1 - y0, ox - X0:ox - X0 + x1 - x0] = True
         ink, base = ui_type.typeset(item["text"], item["font"], project)
-        art, _ = ui_type.RENDER[item["style"]](ink, base)
+        art, abase = ui_type.RENDER[item["style"]](ink, base)
         h, w = art.shape
         if w > W or h > H:
             raise ValueError("strip %s %s: %r is %dx%d, the sprite %dx%d" % (entry["sprite_prefix"], item["sprite"],
                                                                          item["text"], w, h, W, H))
         x = item.get("dx", 0) if item.get("align") == "left" else (W - w) // 2 + item.get("dx", 0)
-        y = (H - h) // 2 + item.get("dy", 0)
+        y = item["baseline"] - abase if "baseline" in item else (H - h) // 2 + item.get("dy", 0)
         if x < 0 or y < 0 or x + w > W or y + h > H:
             raise ValueError("strip %s %s: %r placed outside the sprite" % (entry["sprite_prefix"], item["sprite"], item["text"]))
         canvas = np.zeros((H, W), np.uint8)
-        canvas[y:y + h, x:x + w] = art
+        if item["sprite"] in painted:                # a second word of the same sprite: drawn over the first
+            for pg, pal, ox, oy, x0, y0, x1, y1 in parts:
+                canvas[oy - Y0:oy - Y0 + y1 - y0, ox - X0:ox - X0 + x1 - x0] = pages[(entry["bank"], idx[pg])][y0:y1, x0:x1]
+        painted.add(item["sprite"])
+        area = canvas[y:y + h, x:x + w]
+        area[art > 0] = art[art > 0]
         if (canvas > 0)[~shown].any():
             raise ValueError("strip %s %s: %r has ink where no part shows it" % (entry["sprite_prefix"], item["sprite"],
                                                                                item["text"]))
@@ -534,7 +541,7 @@ def paint_strips(entry, d, banks, pages, project=None):
                 for xx in range(x0, x1):
                     v = new[yy - y0, xx - x0]
                     o = owner.get((key, yy, xx))
-                    if o is not None and o[1] != v:
+                    if o is not None and o[1] != v and o[0] != item["sprite"]:
                         raise ValueError("strip %s: sprites %s and %s share page %d (%d, %d) but differ there"
                                          % (entry["sprite_prefix"], o[0], item["sprite"], idx[pg], xx, yy))
                     owner[(key, yy, xx)] = (item["sprite"], v)

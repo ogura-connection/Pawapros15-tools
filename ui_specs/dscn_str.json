@@ -11,101 +11,135 @@
      "sprite": "00",
      "text": "Yomiuri Giants",
      "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 18
     },
     {
      "sprite": "01",
      "text": "Chunichi Dragons",
      "font": "ttf:rounded:14:0.0:0.78:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 16
     },
     {
      "sprite": "02",
      "text": "Hiroshima Carp",
      "font": "ttf:rounded:14:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 16
     },
     {
      "sprite": "03",
      "text": "Tokyo Yakult Swallows",
      "font": "ttf:rounded:14:0.0:0.95:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 16
     },
     {
      "sprite": "04",
      "text": "Yokohama BayStars",
      "font": "ttf:rounded:14:0.0:0.78:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 16
     },
     {
      "sprite": "05",
      "text": "Hanshin Tigers",
      "font": "ttf:rounded:14:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 16
     },
     {
      "sprite": "06",
      "text": "Rakuten Golden Eagles",
      "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 16
     },
     {
      "sprite": "07",
      "text": "Nippon-Ham Fighters",
      "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 16
     },
     {
      "sprite": "08",
      "text": "Seibu Lions",
      "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 18
     },
     {
      "sprite": "09",
      "text": "Orix Buffaloes",
      "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 18
     },
     {
      "sprite": "0a",
      "text": "Lotte Marines",
      "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 18
     },
     {
      "sprite": "0b",
      "text": "SoftBank Hawks",
      "font": "ttf:rounded:14:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 18
     },
     {
      "sprite": "0c",
      "text": "Shonan SeaRex",
      "font": "ttf:rounded:14:0.0:0.95:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 18
     },
     {
      "sprite": "0d",
      "text": "Surpass",
      "font": "ttf:rounded:14:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 16
     },
     {
      "sprite": "0f",
-     "text": "All-Central",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "text": "All-Star",
+     "font": "ttf:rounded:14:0.0:0.92:0.3",
      "style": "mi_name",
      "align": "left",
-     "dx": 2
+     "dx": 1,
+     "baseline": 18
+    },
+    {
+     "sprite": "0f",
+     "text": "Central",
+     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "style": "mi_name",
+     "align": "left",
+     "dx": 72,
+     "baseline": 18
     },
     {
      "sprite": "10",
-     "text": "All-Pacific",
-     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "text": "All-Star",
+     "font": "ttf:rounded:14:0.0:0.92:0.3",
      "style": "mi_name",
      "align": "left",
-     "dx": 2
+     "dx": 1,
+     "baseline": 18
+    },
+    {
+     "sprite": "10",
+     "text": "Pacific",
+     "font": "ttf:rounded:14:0.0:0.92:0.3",
+     "style": "mi_name",
+     "align": "left",
+     "dx": 72,
+     "baseline": 18
     }
    ]
   },
@@ -119,133 +153,155 @@
      "sprite": "00",
      "text": "Meiji Jingu Stadium",
      "font": "ttf:rounded:15:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 22
     },
     {
      "sprite": "01",
      "text": "Hiroshima Stadium",
      "font": "ttf:rounded:14:0.0:0.78:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 22
     },
     {
      "sprite": "02",
      "text": "Tokyo Dome",
      "font": "ttf:rounded:17:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "03",
      "text": "Yokohama Stadium",
      "font": "ttf:rounded:15:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 22
     },
     {
      "sprite": "04",
      "text": "Nagoya Dome",
      "font": "ttf:rounded:17:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "05",
      "text": "Koshien Stadium",
      "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "06",
      "text": "Skymark Stadium",
      "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "07",
      "text": "Chiba Marine Stadium",
      "font": "ttf:rounded:17:0.0:0.9:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "08",
      "text": "Seibu Dome",
      "font": "ttf:rounded:17:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "09",
      "text": "Fukuoka Yahoo! JAPAN Dome",
      "font": "ttf:rounded:16:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "0a",
      "text": "Kyocera Dome Osaka",
      "font": "ttf:rounded:16:0.0:0.78:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "0b",
      "text": "Sapporo Dome",
      "font": "ttf:rounded:14:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 22
     },
     {
      "sprite": "0c",
      "text": "Kleenex Stadium Miyagi",
      "font": "ttf:rounded:17:0.0:0.9:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "0d",
      "text": "Local Park",
      "font": "ttf:rounded:16:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "0e",
      "text": "Yamanote Park",
      "font": "ttf:rounded:14:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 22
     },
     {
      "sprite": "0f",
      "text": "Ikari Dome",
      "font": "ttf:rounded:17:0.0:0.9:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "10",
      "text": "Blue Stadium",
      "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "11",
      "text": "School Field",
      "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "12",
      "text": "Magma Dome",
      "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "13",
      "text": "Rinkai Park",
      "font": "ttf:rounded:17:0.0:0.9:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "14",
      "text": "Local Dome",
      "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "15",
      "text": "Overseas Stadium",
      "font": "ttf:rounded:16:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     }
    ]
   },
@@ -259,79 +315,92 @@
      "sprite": "00",
      "text": "Ganbare Park",
      "font": "ttf:rounded:17:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "01",
      "text": "Pawagawa Park",
      "font": "ttf:rounded:14:0.0:0.78:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 22
     },
     {
      "sprite": "02",
      "text": "Ikari Dome",
      "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "03",
      "text": "Sokonomae Park",
      "font": "ttf:rounded:13:0.0:0.78:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 22
     },
     {
      "sprite": "04",
      "text": "Catnip Stadium",
      "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "05",
      "text": "Paw Pad Park",
      "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "06",
      "text": "Gokuaku Showdown Park",
      "font": "ttf:rounded:15:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 22
     },
     {
      "sprite": "07",
      "text": "City Gym Back Lot",
      "font": "ttf:rounded:17:0.0:0.85:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "08",
      "text": "The Vulcan Stadium",
      "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "09",
      "text": "Moo-Moo Grounds",
      "font": "ttf:rounded:17:0.0:0.95:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     },
     {
      "sprite": "0a",
      "text": "Shining Stadium",
      "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "0b",
      "text": "Micom Stadium",
      "font": "ttf:rounded:16:0.0:0.8:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 23
     },
     {
      "sprite": "0c",
      "text": "Blue Stadium Hawaii",
      "font": "ttf:rounded:17:0.0:1.0:0.3",
-     "style": "mi_name"
+     "style": "mi_name",
+     "baseline": 24
     }
    ]
   }
