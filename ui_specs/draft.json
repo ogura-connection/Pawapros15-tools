@@ -263,7 +263,7 @@
      ],
      "text": "Found",
      "style": "e6_pd_lime",
-     "font": "ttf:rounded:11:0.0:1.0:0.5",
+     "font": "ttf:rounded:16:0.0:1.0:0.5",
      "baseline": 20,
      "sprites": [
       "16"
@@ -279,7 +279,7 @@
      ],
      "text": "Total",
      "style": "e6_pd_lime",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "font": "ttf:rounded:13:0.0:0.85:0.5",
      "baseline": 20,
      "sprites": [
       "16"
@@ -306,9 +306,9 @@
       96,
       64
      ],
-     "text": "Researched",
+     "text": "Checked",
      "style": "e6_pd_lime",
-     "font": "ttf:rounded:11:0.0:0.92:0.5",
+     "font": "ttf:rounded:16:0.0:0.92:0.5",
      "baseline": 20,
      "sprites": [
       "17"
@@ -324,7 +324,7 @@
      ],
      "text": "Total",
      "style": "e6_pd_lime",
-     "font": "ttf:rounded:11:0.0:0.85:0.5",
+     "font": "ttf:rounded:13:0.0:0.85:0.5",
      "baseline": 20,
      "sprites": [
       "17"

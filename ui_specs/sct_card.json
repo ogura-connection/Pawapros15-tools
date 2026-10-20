@@ -70,10 +70,10 @@
     },
     {
      "sprite": "52",
-     "text": "Scrimmage",
+     "text": "Scrim",
      "style": "e4_em_item",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 36
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": 40
     },
     {
      "sprite": "53",
@@ -259,10 +259,10 @@
     },
     {
      "sprite": "6b",
-     "text": "Rapid Fungo",
+     "text": "Fungo",
      "style": "e4_em_item",
-     "font": "ttf:rounded:8:0.0:0.85:0.3",
-     "baseline": 27
+     "font": "ttf:rounded:13:0.0:1.0:0.3",
+     "baseline": 30
     },
     {
      "sprite": "6c",
@@ -417,10 +417,10 @@
     },
     {
      "sprite": "7f",
-     "text": "Pitch Study",
+     "text": "Pitches",
      "style": "e4_em_item",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
-     "baseline": 36
+     "font": "ttf:rounded:14:0.0:0.85:0.3",
+     "baseline": 39
     },
     {
      "sprite": "80",
