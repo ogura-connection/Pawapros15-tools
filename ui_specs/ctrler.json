@@ -453,6 +453,20 @@
      95,
      81,
      99
+    ],
+    [
+     2,
+     0,
+     104,
+     128,
+     128
+    ],
+    [
+     3,
+     80,
+     0,
+     128,
+     120
     ]
    ],
    "labels": [
@@ -800,11 +814,11 @@
       "1c",
       "20"
      ],
-     "text": "Outfield",
+     "text": "OF",
      "style": "ctl_black",
-     "font": "ttf:narrow:7:0:1.0:0.2",
+     "font": "ttf:narrow:8:0.0:1.0:0.2",
      "left": 3,
-     "baseline": 12
+     "baseline": 13
     },
     {
      "from": [
@@ -818,11 +832,11 @@
       "1c",
       "20"
      ],
-     "text": "Infield",
+     "text": "IF",
      "style": "ctl_black",
-     "font": "ttf:narrow:7:0:1.0:0.2",
+     "font": "ttf:narrow:8:0.0:1.0:0.2",
      "left": 4,
-     "baseline": 11
+     "baseline": 12
     },
     {
      "from": [
@@ -868,9 +882,9 @@
       "1c",
       "20"
      ],
-     "text": "Pitch & Location",
+     "text": "Pitch / Aim",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0:0.94:0.2",
+     "font": "ttf:narrow:8:0.0:0.94:0.2",
      "left": 2,
      "baseline": 12
     },
@@ -918,9 +932,9 @@
       "1c",
       "20"
      ],
-     "text": "Move Fielder",
+     "text": "Fielders",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0:0.94:0.2",
+     "font": "ttf:narrow:8:0.0:0.94:0.2",
      "left": 3,
      "baseline": 12
     },
@@ -1056,9 +1070,9 @@
       "1d",
       "21"
      ],
-     "text": "Switch to 2nd Pitch",
+     "text": "2nd Pitch",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0:0.88:0.2",
+     "font": "ttf:narrow:8:0.0:0.88:0.2",
      "left": 1,
      "baseline": 12
     },
@@ -1222,9 +1236,9 @@
       "10",
       "11"
      ],
-     "text": "Choose Base",
+     "text": "Pick Base",
      "style": "ctl_black_halo",
-     "font": "ttf:narrow:9:0:0.88:0.2",
+     "font": "ttf:narrow:9:0.0:0.88:0.2",
      "left": 4,
      "baseline": 16
     },
@@ -2034,6 +2048,41 @@
      79,
      73,
      83
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     0,
+     0,
+     0,
+     96,
+     40
+    ],
+    [
+     11,
+     96,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     80,
+     72,
+     128,
+     128
+    ],
+    [
+     13,
+     0,
+     112,
+     128,
+     128
     ]
    ],
    "labels": [
@@ -2053,9 +2102,9 @@
       "4e",
       "4f"
      ],
-     "text": "Choose Base",
+     "text": "Pick Base",
      "style": "ctl_black_halo",
-     "font": "ttf:narrow:9:0:0.88:0.2",
+     "font": "ttf:narrow:9:0.0:0.88:0.2",
      "left": 4,
      "baseline": 16
     },
@@ -2643,11 +2692,11 @@
       "59",
       "5d"
      ],
-     "text": "Outfield",
+     "text": "OF",
      "style": "ctl_black",
-     "font": "ttf:narrow:7:0:1.0:0.2",
+     "font": "ttf:narrow:8:0.0:1.0:0.2",
      "left": 3,
-     "baseline": 12
+     "baseline": 13
     },
     {
      "from": [
@@ -2665,11 +2714,11 @@
       "59",
       "5d"
      ],
-     "text": "Infield",
+     "text": "IF",
      "style": "ctl_black",
-     "font": "ttf:narrow:7:0:1.0:0.2",
+     "font": "ttf:narrow:8:0.0:1.0:0.2",
      "left": 4,
-     "baseline": 11
+     "baseline": 12
     },
     {
      "from": [
@@ -2727,9 +2776,9 @@
       "59",
       "5d"
      ],
-     "text": "Pitch & Location",
+     "text": "Pitch / Aim",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0:0.94:0.2",
+     "font": "ttf:narrow:8:0.0:0.94:0.2",
      "left": 2,
      "baseline": 12
     },
@@ -2789,9 +2838,9 @@
       "59",
       "5d"
      ],
-     "text": "Move Fielder",
+     "text": "Fielders",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0:0.94:0.2",
+     "font": "ttf:narrow:8:0.0:0.94:0.2",
      "left": 3,
      "baseline": 12
     },
@@ -2892,9 +2941,9 @@
       "5a",
       "5e"
      ],
-     "text": "Switch to 2nd Pitch",
+     "text": "2nd Pitch",
      "style": "ctl_black",
-     "font": "ttf:narrow:8:0:0.88:0.2",
+     "font": "ttf:narrow:8:0.0:0.88:0.2",
      "left": 1,
      "baseline": 12
     },
@@ -3803,7 +3852,7 @@
      ],
      "text": "Bunt",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0:0.88:0.3",
+     "font": "ttf:narrow:14:0.0:0.88:0.3",
      "left": 11,
      "baseline": 22
     },
@@ -3820,7 +3869,7 @@
      ],
      "text": "Choose Pitch",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0:0.88:0.3",
+     "font": "ttf:narrow:14:0.0:0.88:0.3",
      "left": 5,
      "baseline": 22
     },
@@ -3837,7 +3886,7 @@
      ],
      "text": "Choose Location",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0:0.88:0.3",
+     "font": "ttf:narrow:14:0.0:0.88:0.3",
      "left": 5,
      "baseline": 22
     },
@@ -3854,7 +3903,7 @@
      ],
      "text": "Pitch",
      "style": "ctl_pill",
-     "font": "ttf:narrow:14:0:0.88:0.3",
+     "font": "ttf:narrow:14:0.0:0.88:0.3",
      "left": 45,
      "baseline": 22
     },

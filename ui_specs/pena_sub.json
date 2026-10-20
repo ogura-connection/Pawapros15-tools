@@ -3303,7 +3303,7 @@
      "sprite": "5d",
      "text": "Perfect Game",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:16:0.0:1.0:0.0",
      "baseline": 20,
      "left": 8
     },
@@ -3311,14 +3311,14 @@
      "sprite": "5e",
      "text": "No-Hitter",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 21
     },
     {
      "sprite": "5f",
      "text": "Shutout Win",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:17:0.0:1.0:0.0",
      "baseline": 20,
      "left": 8
     },
@@ -3334,7 +3334,7 @@
      "sprite": "61",
      "text": "Zero-Run Win",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "font": "ttf:narrow:17:0.0:0.92:0.0",
      "baseline": 20,
      "left": 8
     },
@@ -3342,7 +3342,7 @@
      "sprite": "62",
      "text": "Title Won",
      "style": "c5_pink",
-     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "baseline": 20
     },
     {

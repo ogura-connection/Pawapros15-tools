@@ -70,43 +70,43 @@
      "sprite": "12",
      "text": "Top",
      "style": "d4_gm20",
-     "font": "ttf:narrow:11:0.0:1.0:0.2",
-     "baseline": 18
+     "font": "ttf:din:14:0.0:1.0:0.15:0.0:1.0:0.15",
+     "valign": "centre"
     },
     {
      "sprite": "13",
      "text": "Bot",
      "style": "d4_gm20",
-     "font": "ttf:narrow:11:0.0:1.0:0.2",
-     "baseline": 18
+     "font": "ttf:din:14:0.0:1.0:0.15:0.0:1.0:0.15",
+     "valign": "centre"
     },
     {
      "sprite": "56",
      "text": "AVG",
      "style": "d4_gm22",
-     "font": "ttf:narrow:9:0.0:1.0:0.2",
-     "baseline": 16
+     "font": "ttf:din:14:0.0:1.0:0.15:0.0:1.0:0.15",
+     "valign": "centre"
     },
     {
      "sprite": "57",
      "text": "HR",
      "style": "d4_gm22",
-     "font": "ttf:narrow:9:0.0:1.0:0.2",
-     "baseline": 16
+     "font": "ttf:din:14:0.0:1.0:0.15:0.0:1.0:0.15",
+     "valign": "centre"
     },
     {
      "sprite": "58",
      "text": "RBI",
      "style": "d4_gm22",
-     "font": "ttf:narrow:9:0.0:1.0:0.2",
-     "baseline": 16
+     "font": "ttf:din:14:0.0:1.0:0.15:0.0:1.0:0.15",
+     "valign": "centre"
     },
     {
      "sprite": "59",
      "text": "ERA",
      "style": "d4_gm22",
-     "font": "ttf:narrow:9:0.0:1.0:0.2",
-     "baseline": 16
+     "font": "ttf:din:14:0.0:1.0:0.15:0.0:1.0:0.15",
+     "valign": "centre"
     },
     {
      "sprite": "77",
@@ -119,8 +119,8 @@
      "sprite": "82",
      "text": "New",
      "style": "d4_gm22",
-     "font": "ttf:narrow:9:0.0:1.0:0.2",
-     "baseline": 16
+     "font": "ttf:din:14:0.0:1.0:0.15:0.0:1.0:0.15",
+     "valign": "centre"
     },
     {
      "from": [

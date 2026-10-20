@@ -4582,8 +4582,8 @@
      ],
      "text": "Giants",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 11,
+     "font": "nb13",
+     "left": 9,
      "baseline": 17
     },
     {
@@ -4599,8 +4599,8 @@
      ],
      "text": "Chunichi",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 5,
+     "font": "nb13",
+     "left": 3,
      "baseline": 17
     },
     {
@@ -4616,8 +4616,8 @@
      ],
      "text": "Hiroshima",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 2,
+     "font": "nb13",
+     "left": 0,
      "baseline": 17
     },
     {
@@ -4633,9 +4633,9 @@
      ],
      "text": "Yakult",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 19,
-     "baseline": 17
+     "font": "nb13",
+     "left": 17,
+     "baseline": 16
     },
     {
      "from": [
@@ -4650,9 +4650,9 @@
      ],
      "text": "Yokohama",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 1,
-     "baseline": 17
+     "font": "nb13",
+     "left": -1,
+     "baseline": 16
     },
     {
      "from": [
@@ -4667,8 +4667,8 @@
      ],
      "text": "Hanshin",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 7,
+     "font": "nb13",
+     "left": 5,
      "baseline": 17
     },
     {
@@ -4684,8 +4684,8 @@
      ],
      "text": "Orix",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 24,
+     "font": "nb13",
+     "left": 23,
      "baseline": 17
     },
     {
@@ -4701,9 +4701,9 @@
      ],
      "text": "Nippon-Ham",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 3,
-     "baseline": 16
+     "font": "nb13",
+     "left": 2,
+     "baseline": 15
     },
     {
      "from": [
@@ -4718,8 +4718,8 @@
      ],
      "text": "Seibu",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 12,
+     "font": "nb13",
+     "left": 11,
      "baseline": 17
     },
     {
@@ -4735,9 +4735,9 @@
      ],
      "text": "Rakuten",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 6,
-     "baseline": 17
+     "font": "nb13",
+     "left": 4,
+     "baseline": 16
     },
     {
      "from": [
@@ -4752,9 +4752,9 @@
      ],
      "text": "Lotte",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 22,
-     "baseline": 17
+     "font": "nb13",
+     "left": 20,
+     "baseline": 16
     },
     {
      "from": [
@@ -4769,9 +4769,9 @@
      ],
      "text": "SoftBank",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 12,
-     "baseline": 17
+     "font": "nb13",
+     "left": 9,
+     "baseline": 16
     },
     {
      "from": [
@@ -4786,9 +4786,9 @@
      ],
      "text": "Shonan",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 8,
-     "baseline": 17
+     "font": "nb13",
+     "left": 6,
+     "baseline": 16
     },
     {
      "from": [
@@ -4803,9 +4803,9 @@
      ],
      "text": "Surpass",
      "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:1:0",
-     "left": 14,
-     "baseline": 16
+     "font": "nb13",
+     "left": 12,
+     "baseline": 15
     },
     {
      "from": [
@@ -5598,10 +5598,10 @@
       "4c"
      ],
      "text": "Nishinomiya",
-     "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:0.65:0",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_r1_s0_c1",
+     "font": "nb10",
+     "left": -6,
+     "baseline": 15
     },
     {
      "from": [
@@ -5836,10 +5836,10 @@
       "5a"
      ],
      "text": "Hamamatsu",
-     "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:0.65:0",
-     "left": -1,
-     "baseline": 17
+     "style": "o2_ff_r1_s0_c1",
+     "font": "nb10",
+     "left": -6,
+     "baseline": 16
     },
     {
      "from": [
@@ -5972,10 +5972,10 @@
       "62"
      ],
      "text": "Asahikawa",
-     "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:0.75:0",
-     "left": -2,
-     "baseline": 17
+     "style": "o2_ff_r1_s0_c1",
+     "font": "nb12",
+     "left": -6,
+     "baseline": 16
     },
     {
      "from": [
@@ -6006,10 +6006,10 @@
       "64"
      ],
      "text": "Shimonoseki",
-     "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:0.65:0",
-     "left": -2,
-     "baseline": 17
+     "style": "o2_ff_r1_s0_c1",
+     "font": "nb10",
+     "left": -7,
+     "baseline": 16
     },
     {
      "from": [
@@ -6108,10 +6108,10 @@
       "6a"
      ],
      "text": "Kumamoto",
-     "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:0.75:0",
-     "left": -1,
-     "baseline": 17
+     "style": "o2_ff_r1_s0_c1",
+     "font": "nb12",
+     "left": -7,
+     "baseline": 16
     },
     {
      "from": [
@@ -6193,10 +6193,10 @@
       "6f"
      ],
      "text": "Nagasaki",
-     "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:0.85:0",
-     "left": -1,
-     "baseline": 16
+     "style": "o2_ff_r1_s0_c1",
+     "font": "nb13",
+     "left": -4,
+     "baseline": 15
     },
     {
      "from": [
@@ -6210,10 +6210,10 @@
       "70"
      ],
      "text": "Fukushima",
-     "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:0.75:0",
-     "left": -2,
-     "baseline": 17
+     "style": "o2_ff_r1_s0_c1",
+     "font": "nb12",
+     "left": -7,
+     "baseline": 16
     },
     {
      "from": [
@@ -6312,10 +6312,10 @@
       "76"
      ],
      "text": "Yamaguchi",
-     "style": "o2_ff_r1f_s0_c1",
-     "font": "ttf:din:11:0:0.75:0",
-     "left": -2,
-     "baseline": 16
+     "style": "o2_ff_r1_s0_c1",
+     "font": "nb12",
+     "left": -7,
+     "baseline": 15
     },
     {
      "from": [
