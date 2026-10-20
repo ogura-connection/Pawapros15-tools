@@ -999,6 +999,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             sct = next(m for m in orig.values() if m.name == school_names.MODULE)
             try:
                 school_ptrs = school_names.pointers(sct, schools)
+                schools = {o: schools[o] for o in set(school_ptrs.values())}
                 school_bytes, where = school_names.table(schools, enc)
             except ValueError as e:
                 sys.exit(str(e))
@@ -1233,7 +1234,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         with open(os.path.join(BUILD_DIR, PLAN_FILE), "wb") as f:
             f.write(new_plan)
         changed.append(PLAN_FILE)
-    dropped = {(m.mod_id, name_table.HOST and school_names.SECTION, pos) for m in orig.values()
+    dropped = {(m.mod_id, school_names.SECTION, pos) for m in orig.values()
                if m.name == school_names.MODULE for pos in school_ptrs} if names else set()
     new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ores, dropped)
     if names:                           # the appended table reads back as built

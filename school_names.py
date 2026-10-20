@@ -40,16 +40,15 @@ def load_tsv():
 
 def pointers(rel, names):
     """{position in section 5 of the pointer: offset of the string it points at} for the strings in `names`;
-    every string must have exactly one pointer."""
+    every string must have a pointer (a few, the team names, have two)."""
     found = {}
     for sec, pos, typ, tm, ts, addend in rel.relocs():
         if tm == rel.mod_id and sec == SECTION and ts == SECTION and typ == R_ADDR32 and addend in names:
             found.setdefault(addend, []).append(pos)
-    bad = [o for o in names if len(found.get(o, ())) != 1]
+    bad = sorted(o for o in names if not found.get(o))     # reached by code, not by a pointer: left alone
     if bad:
-        raise ValueError("%s: %d school names do not have exactly one pointer (first at sec5+0x%X)"
-                         % (MODULE, len(bad), bad[0]))
-    return {found[o][0]: o for o in names}
+        print("%s: %d names have no data pointer, left Japanese (sec5+%s)" % (MODULE, len(bad), ", ".join("0x%X" % o for o in bad)))
+    return {pos: o for o in names if found.get(o) for pos in found[o]}
 
 
 def table(names, encode):
