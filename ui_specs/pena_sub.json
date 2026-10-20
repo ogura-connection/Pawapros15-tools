@@ -9042,8 +9042,8 @@
     {
      "sprite": "00",
      "text": "Home Wins",
-     "style": "e5_b5_pen00_00",
-     "font": "ttf:rounded:26:0.0:0.85:0.35",
+     "style": "fxB_pen00_00",
+     "font": "ttf:rounded:24:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 84,
      "dy": -3
@@ -9051,8 +9051,8 @@
     {
      "sprite": "01",
      "text": "Road Wins",
-     "style": "e5_b5_pen00_01",
-     "font": "ttf:rounded:26:0.0:1.0:0.35",
+     "style": "fxB_pen00_01",
+     "font": "ttf:rounded:24:0.0:1.0:0.35",
      "slices": true,
      "slice_width": 61,
      "dy": -1
@@ -9060,8 +9060,8 @@
     {
      "sprite": "02",
      "text": "Home Losses",
-     "style": "e5_b5_pen00_02",
-     "font": "ttf:narrow:26:0.0:0.85:0.35",
+     "style": "fxB_pen00_02",
+     "font": "ttf:narrow:24:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 84,
      "dy": -1
@@ -9069,8 +9069,8 @@
     {
      "sprite": "03",
      "text": "Road Losses",
-     "style": "e5_b5_pen00_03",
-     "font": "ttf:rounded:26:0.0:0.85:0.35",
+     "style": "fxB_pen00_03",
+     "font": "ttf:rounded:24:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 63,
      "dy": 1
@@ -9078,8 +9078,8 @@
     {
      "sprite": "06",
      "text": "Total Fans",
-     "style": "e5_b5_pen00_06",
-     "font": "ttf:rounded:26:0.0:0.92:0.35",
+     "style": "fxB_pen00_06",
+     "font": "ttf:rounded:24:0.0:0.92:0.35",
      "slices": true,
      "slice_width": 84,
      "dy": -4
@@ -9087,8 +9087,8 @@
     {
      "sprite": "07",
      "text": "Home Ties",
-     "style": "e5_b5_pen00_07",
-     "font": "ttf:rounded:26:0.0:1.0:0.35",
+     "style": "fxB_pen00_07",
+     "font": "ttf:rounded:24:0.0:1.0:0.35",
      "slices": true,
      "slice_width": 61,
      "dy": -2
@@ -9096,8 +9096,8 @@
     {
      "sprite": "08",
      "text": "Road Ties",
-     "style": "e5_b5_pen00_08",
-     "font": "ttf:rounded:26:0.0:1.0:0.35",
+     "style": "fxB_pen00_08",
+     "font": "ttf:rounded:24:0.0:1.0:0.35",
      "slices": true,
      "slice_width": 57,
      "dy": -5
@@ -9105,8 +9105,8 @@
     {
      "sprite": "04",
      "text": "Japan Champs!",
-     "style": "e5_b5_pen00_04",
-     "font": "ttf:narrow:22:0.0:0.85:0.35",
+     "style": "fxB_pen00_04",
+     "font": "ttf:narrow:20:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 83,
      "dy": 4
@@ -9114,8 +9114,8 @@
     {
      "sprite": "05",
      "text": "Pennant!",
-     "style": "e5_b5_pen00_05",
-     "font": "ttf:rounded:25:0.0:0.85:0.35",
+     "style": "fxB_pen00_05",
+     "font": "ttf:rounded:23:0.0:0.85:0.35",
      "slices": true,
      "slice_width": 63,
      "dy": 0

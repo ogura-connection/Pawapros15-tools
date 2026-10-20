@@ -470,6 +470,13 @@
      0,
      64,
      24
+    ],
+    [
+     6,
+     0,
+     32,
+     128,
+     128
     ]
    ],
    "labels": [
@@ -720,10 +727,10 @@
     },
     {
      "sprite": "3e",
-     "text": "On-Base Song",
+     "text": "On-Base",
      "style": "aow_btn_h_s",
-     "font": "ttf:narrow:7:0.0:0.85:0.12",
-     "baseline": 18,
+     "font": "ttf:narrow:14:0.0:0.85:0.25",
+     "baseline": 20,
      "palettes": [
       8
      ]
@@ -741,9 +748,9 @@
     {
      "sprite": "40",
      "text": "Player Settings",
-     "style": "aow_head_h_s",
-     "font": "ttf:rounded:8:0.0:0.85:0.12",
-     "baseline": 20,
+     "style": "aow_head_h",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "baseline": 24,
      "palettes": [
       24
      ]

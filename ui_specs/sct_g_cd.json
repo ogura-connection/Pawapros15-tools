@@ -91,21 +91,21 @@
      "sprite": "1f",
      "text": "Contact",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:8:0.0:0.85:0.3",
+     "font": "ttf:narrow:9:0.0:0.92:0.3",
      "baseline": 4
     },
     {
      "sprite": "20",
-     "text": "Approach",
+     "text": "Swing",
      "style": "b4_gm_s",
-     "font": "ttf:narrow:8:0.0:0.85:0.3",
-     "baseline": 2
+     "font": "ttf:narrow:12:0.0:0.92:0.3",
+     "baseline": 4
     },
     {
      "sprite": "21",
      "text": "Pitches",
      "style": "b4_gm_s",
-     "font": "ttf:rounded:9:0.0:0.85:0.3",
+     "font": "ttf:narrow:10:0.0:0.85:0.3",
      "baseline": 4
     },
     {
