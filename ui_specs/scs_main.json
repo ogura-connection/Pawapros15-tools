@@ -483,8 +483,8 @@
       88,
       96
      ],
-     "text": "Motivation",
-     "font": "tag",
+     "text": "Drive",
+     "font": "ttf:narrow:17:0:1.0:0.4",
      "style": "motivation",
      "under": 2
     },
@@ -541,6 +541,16 @@
      "style": "weather",
      "under": 2,
      "centre_x": 15
+    },
+    {
+     "from": [
+      6,
+      56,
+      24,
+      72,
+      48
+     ],
+     "empty": true
     }
    ]
   },
@@ -768,7 +778,8 @@
       64
      ],
      "text": "Mo",
-     "name": "Mo (medium)"
+     "name": "Mo (medium)",
+     "font": "ttf:serif-italic:16:0:1:0.35"
     },
     {
      "from": [
@@ -779,7 +790,8 @@
       64
      ],
      "text": "Wk",
-     "name": "Wk (medium)"
+     "name": "Wk (medium)",
+     "font": "ttf:serif-italic:16:0:1:0.35"
     },
     {
      "from": [

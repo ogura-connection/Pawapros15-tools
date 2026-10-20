@@ -235,10 +235,10 @@
       120,
       80
      ],
-     "text": ": Stop Pitching Practice",
+     "text": ": End Practice",
      "style": "e8_y4_lpu_0_14_3.0.56_h_s",
-     "font": "ttf:narrow:10:0.0:0.85:0.2",
-     "baseline": 16,
+     "font": "ttf:narrow:16:0.0:0.85:0.2",
+     "baseline": 20,
      "left": 1
     },
     {
