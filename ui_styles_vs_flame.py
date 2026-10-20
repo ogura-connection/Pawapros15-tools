@@ -30,6 +30,7 @@ N, O = 192, 96                     # screen canvas, origin at (O, O)
 # glyph: cap height, horizontal squeeze, shear (negative = leaning right), V and S top-left on screen
 GLYPH = dict(h=110, squeeze=0.72, shear=-0.08, v=(-52, -58), s=(-4, -57))
 RING = 6                           # outline / fill ring width round the letters
+FLASH = {"b1": 17, "b2": 20, "b3": 20}   # solid flash silhouettes (octagonal distance from the letters + shadow)
 
 BIG = lambda p, q: [(p, 0, 0, 128, 128, -80, -88), (q, 0, 0, 32, 128, 48, -88), (q, 32, 0, 112, 48, -80, 40),
                     (q, 32, 48, 112, 96, 0, 40)]
@@ -210,10 +211,12 @@ def build():
     c = np.zeros((N, N), np.uint8); c[L] = 1; c[ring] = 2
     uncanvas("fill", c, pages)
     # flash silhouettes (pages 2-7): the old bands, dither kept by 2x2 position
-    for name in ("b1", "b2", "b3"):
-        old = canvas(name); ext = extent(name)
-        c = transfer(old, do, dn, ext & (dn > 0), range(1, 40), wy=1.0, cell=True)
-        c[M] = old[Mo][0]
+    for name in ("b1", "b2", "b3"):                         # solid to FLASH[name], then the old dither band
+        old = canvas(name); ext = extent(name); solid = FLASH[name]
+        c = np.zeros_like(old)
+        if name == "b3":                                    # only the last flash has a dithered edge
+            c = transfer(old, do, dn, ext & (dn > solid), range(solid + 1, 40), wy=1.0, cell=True)
+        c[ext & (dn <= solid)] = old[Mo][0]
         uncanvas(name, c, pages)
     # rim (pages 8-9): dark letters, grey shadow, white band, green gradient, cyan rim
     old = canvas("rim"); ext = extent("rim")
@@ -228,7 +231,30 @@ def build():
         c = flame_fill(fr, core, L)
         c[S] = 2
         uncanvas(name, c, pages)
+        k = LAY[name][0][0]
+        pages[k] = fit_slot(k, pages[k], (L & ~core)[O - 64:O + 64, O - 64:O + 64])
     return pages
+
+
+def packed(k, arr):
+    d, b = _file()
+    flat = arr.reshape(-1)
+    return len(U.compress_page(((flat[0::2] << 4) | flat[1::2]).astype(np.uint8).tobytes(), 64))
+
+
+def fit_slot(k, arr, region):
+    """a flame page over its compressed slot: lone pixels of the mirrored-in texture take their left neighbour's
+    index (one pass at a time, only where the left and right neighbours agree) until it fits."""
+    d, b = _file()
+    slot = b["pages"][k][1]
+    arr = arr.copy()
+    for _ in range(6):
+        if packed(k, arr) <= slot:
+            return arr
+        l, r = np.roll(arr, 1, 1), np.roll(arr, -1, 1)
+        lone = region & (l == r) & (arr != l) & (arr > 2) & (l > 2)
+        arr[lone] = l[lone]
+    return arr
 
 
 def check_fit():
