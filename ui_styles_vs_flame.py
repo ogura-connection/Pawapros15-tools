@@ -28,8 +28,8 @@ FACE = "/System/Library/Fonts/Supplemental/Impact.ttf"
 OV = 8
 N, O = 192, 96                     # screen canvas, origin at (O, O)
 # glyph: cap height, horizontal squeeze, shear (negative = leaning right), V and S top-left on screen
-GLYPH = dict(h=110, squeeze=0.6, shear=-0.08, v=(-49, -58), s=(-10, -57))
-RING = 5                           # outline / fill ring width round the letters
+GLYPH = dict(h=110, squeeze=0.72, shear=-0.08, v=(-52, -58), s=(-4, -57))
+RING = 6                           # outline / fill ring width round the letters
 
 BIG = lambda p, q: [(p, 0, 0, 128, 128, -80, -88), (q, 0, 0, 32, 128, 48, -88), (q, 32, 0, 112, 48, -80, 40),
                     (q, 32, 48, 112, 96, 0, 40)]
@@ -222,7 +222,7 @@ def build():
     c[L] = 1; c[S] = 2
     uncanvas("rim", c, pages)
     # flames (pages 10-13)
-    core = Lo & ~grow(~Lo, 2)
+    core = Lo & ~grow(~Lo, 3)
     for name in ("f0", "f1", "f2", "f3"):
         fr = canvas(name)
         c = flame_fill(fr, core, L)

@@ -627,7 +627,7 @@
     },
     {
      "sprite": "09",
-     "text": "Ageage\u2605\nBaseball Club",
+     "text": "Ageage★\nBaseball Club",
      "style": "c2_svt",
      "font": "ttf:sfr:23:0:0.88:0.9",
      "slices": true,
@@ -1098,6 +1098,204 @@
     }
    ],
    "name": "svx"
+  }
+ ],
+ "paint": [
+  {
+   "bank": "z5_svs_0",
+   "page": 0,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p00"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p01"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p02"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 3,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p03"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 4,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p04"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 5,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p05"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 6,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p06"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 7,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p07"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 8,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p08"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 9,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p09"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 10,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p10"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 11,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p11"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 12,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p12"
+  },
+  {
+   "bank": "z5_svs_0",
+   "page": 13,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "VS",
+   "font": "ttf:rounded:10",
+   "copy": "clear",
+   "style": "vsf_p13"
   }
  ]
 }
