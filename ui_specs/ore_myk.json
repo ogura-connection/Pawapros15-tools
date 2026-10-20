@@ -1,1859 +1,1859 @@
 {
-"arc": "ore_myk.arc",
-"repack": [
-{
-"bank": "y3_my",
-"palette": 33,
-"style": "myk_stat",
-"gap": [
-1,
-1
-],
-"under": 3,
-"share": true,
-"areas": [
-[
-2,
-0,
-24,
-120,
-56
-],
-[
-3,
-0,
-0,
-80,
-128
-],
-[
-3,
-104,
-72,
-128,
-96
-],
-[
-4,
-0,
-72,
-128,
-128
-],
-[
-5,
-0,
-64,
-80,
-128
-],
-[
-5,
-80,
-96,
-96,
-128
-],
-[
-6,
-0,
-0,
-56,
-128
-],
-[
-6,
-88,
-0,
-128,
-96
-],
-[
-6,
-56,
-0,
-88,
-48
-],
-[
-6,
-56,
-72,
-88,
-96
-],
-[
-7,
-0,
-0,
-128,
-128
-],
-[
-8,
-0,
-0,
-128,
-96
-],
-[
-8,
-56,
-96,
-128,
-128
-],
-[
-8,
-0,
-96,
-32,
-128
-],
-[
-9,
-0,
-0,
-128,
-128
-],
-[
-10,
-0,
-24,
-128,
-72
-],
-[
-10,
-0,
-72,
-48,
-128
-],
-[
-10,
-72,
-0,
-128,
-24
-],
-[
-10,
-48,
-96,
-80,
-128
-],
-[
-10,
-80,
-120,
-128,
-128
-],
-[
-11,
-0,
-0,
-128,
-128
-],
-[
-12,
-0,
-0,
-128,
-72
-],
-[
-12,
-0,
-72,
-64,
-128
-],
-[
-12,
-64,
-96,
-88,
-128
-],
-[
-12,
-104,
-96,
-128,
-128
-],
-[
-12,
-88,
-120,
-104,
-128
-],
-[
-13,
-0,
-0,
-104,
-32
-],
-[
-14,
-0,
-64,
-128,
-128
-],
-[
-14,
-48,
-0,
-96,
-48
-],
-[
-14,
-0,
-0,
-32,
-48
-],
-[
-14,
-96,
-0,
-128,
-16
-],
-[
-14,
-32,
-0,
-48,
-16
-],
-[
-14,
-96,
-16,
-112,
-32
-],
-[
-14,
-32,
-32,
-48,
-48
-],
-[
-15,
-0,
-0,
-128,
-128
-]
-],
-"labels": [
-{
-"from": [
-11,
-40,
-48,
-80,
-72
-],
-"text": "AVG",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-80,
-72,
-120,
-96
-],
-"text": "AB",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-0,
-72,
-40,
-96
-],
-"text": "G",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-80,
-48,
-120,
-72
-],
-"text": "H",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-7,
-104,
-24,
-128,
-48
-],
-"text": "2B",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-80,
-0,
-104,
-24
-],
-"text": "3B",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-104,
-0,
-128,
-24
-],
-"text": "HR",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-40,
-72,
-80,
-96
-],
-"text": "RBI",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-10,
-72,
-0,
-112,
-24
-],
-"text": "R",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-10,
-0,
-24,
-40,
-48
-],
-"text": "K",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-9,
-0,
-0,
-64,
-24
-],
-"text": "BB/HBP",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-80,
-24,
-120,
-48
-],
-"text": "SAC",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-88,
-0,
-128,
-24
-],
-"text": "SF",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-0,
-48,
-40,
-72
-],
-"text": "GDP",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-88,
-24,
-128,
-48
-],
-"text": "SB",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-9,
-64,
-0,
-128,
-24
-],
-"text": "OBP",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-9,
-0,
-24,
-64,
-48
-],
-"text": "3-Hit G",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-88,
-48,
-128,
-72
-],
-"text": "E",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-9,
-64,
-24,
-128,
-48
-],
-"text": "Slam HR",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-0,
-0,
-88,
-24
-],
-"text": "WO H",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-0,
-24,
-88,
-48
-],
-"text": "WO HR",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-0,
-72,
-88,
-96
-],
-"text": "Lead HR",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-9,
-0,
-48,
-64,
-72
-],
-"text": "PH HR",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-0,
-48,
-88,
-72
-],
-"text": "RISP AVG",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-9,
-64,
-48,
-128,
-72
-],
-"text": "FPCT",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-9,
-0,
-72,
-64,
-96
-],
-"text": "CS%",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-0,
-0,
-80,
-24
-],
-"text": "AVG vs L",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-0,
-24,
-80,
-48
-],
-"text": "AVG vs R",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-0,
-0,
-64,
-24
-],
-"text": "ERA",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-64,
-0,
-128,
-24
-],
-"text": "IP",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-0,
-24,
-40,
-48
-],
-"text": "Win%",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-40,
-24,
-64,
-48
-],
-"text": "W",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-64,
-24,
-88,
-48
-],
-"text": "L",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-0,
-48,
-56,
-72
-],
-"text": "SV",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-88,
-24,
-128,
-48
-],
-"text": "G",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-88,
-72,
-128,
-96
-],
-"text": "SHO",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-88,
-48,
-128,
-72
-],
-"text": "CG",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-7,
-0,
-0,
-64,
-24
-],
-"text": "K",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-7,
-64,
-0,
-128,
-24
-],
-"text": "BB/HBP",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-7,
-0,
-24,
-80,
-48
-],
-"text": "HR",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-7,
-0,
-48,
-64,
-72
-],
-"text": "H",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-7,
-88,
-72,
-128,
-96
-],
-"text": "WP",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-88,
-72,
-128,
-96
-],
-"text": "R",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-7,
-64,
-48,
-128,
-72
-],
-"text": "ER",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-7,
-0,
-72,
-88,
-96
-],
-"text": "Scoreless Strk",
-"style": "myk_stat",
-"font": "ttf:din:10:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-6,
-0,
-72,
-88,
-96
-],
-"text": "SV Streak",
-"style": "myk_stat",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-9,
-64,
-72,
-128,
-96
-],
-"text": "Opp AVG",
-"style": "myk_stat",
-"font": "ttf:din:14:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-10,
-0,
-72,
-48,
-96
-],
-"text": "HLD",
-"style": "myk_stat",
-"font": "ttf:din:14:0:1:0",
-"valign": "centre",
-"left": 23
-},
-{
-"from": [
-7,
-80,
-24,
-104,
-48
-],
-"empty": true
-},
-{
-"from": [
-10,
-0,
-96,
-80,
-120
-],
-"text": "Hold Pts",
-"style": "myk_stat",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-3,
-0,
-0,
-80,
-24
-],
-"text": "Batter Stats",
-"style": "myk_tab",
-"font": "ttf:din:15:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-3,
-0,
-48,
-80,
-72
-],
-"text": "Batter Detail",
-"style": "myk_tab",
-"font": "ttf:din:15:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-3,
-0,
-24,
-80,
-48
-],
-"text": "Pitcher Stats",
-"style": "myk_tab",
-"font": "ttf:din:14:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-3,
-0,
-72,
-80,
-96
-],
-"text": "Pitcher Detail",
-"style": "myk_tab",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-10,
-0,
-48,
-40,
-72
-],
-"text": "Chunichi",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-10,
-80,
-24,
-120,
-48
-],
-"text": "Hiroshima",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-12,
-40,
-0,
-120,
-24
-],
-"text": "Yakult",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-10,
-40,
-24,
-80,
-48
-],
-"text": "Yokohama",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-12,
-0,
-0,
-40,
-24
-],
-"text": "Hanshin",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-4,
-0,
-104,
-88,
-128
-],
-"text": "Orix",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-12,
-40,
-24,
-120,
-48
-],
-"text": "Nippon-Ham",
-"style": "myk_team",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-12,
-0,
-48,
-40,
-72
-],
-"text": "Seibu",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-12,
-0,
-24,
-40,
-48
-],
-"text": "Rakuten",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-12,
-0,
-72,
-64,
-96
-],
-"text": "Lotte",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-12,
-40,
-48,
-128,
-72
-],
-"text": "SoftBank",
-"style": "myk_team",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-10,
-112,
-0,
-128,
-24
-],
-"text": "Giants",
-"style": "myk_team",
-"font": "ttf:din:15:0:1:0",
-"valign": "centre",
-"left": 3
-},
-{
-"from": [
-10,
-112,
-48,
-128,
-72
-],
-"empty": true
-},
-{
-"from": [
-10,
-120,
-24,
-128,
-48
-],
-"empty": true
-},
-{
-"from": [
-10,
-40,
-48,
-112,
-72
-],
-"text": "Farm",
-"style": "myk_team",
-"font": "ttf:din:15:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-4,
-88,
-104,
-128,
-128
-],
-"text": "Total",
-"style": "myk_team",
-"font": "ttf:din:15:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-3,
-104,
-72,
-128,
-96
-],
-"text": "Yr",
-"style": "myk_team",
-"font": "ttf:din:15:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-3,
-0,
-96,
-80,
-128
-],
-"text": "RISP",
-"style": "myk_head",
-"font": "ttf:din:22:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-5,
-0,
-64,
-80,
-96
-],
-"text": "Bases Loaded",
-"style": "myk_head",
-"font": "ttf:din:12:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-5,
-0,
-96,
-96,
-128
-],
-"text": "vs Lefty Pitchers",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-6,
-0,
-96,
-56,
-128
-],
-"text": "Pinch Hit",
-"style": "myk_head",
-"font": "ttf:din:14:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-2,
-0,
-24,
-120,
-56
-],
-"text": "Last 5 Games",
-"style": "myk_head",
-"font": "ttf:din:21:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-7,
-0,
-96,
-128,
-128
-],
-"text": "Japan Series",
-"style": "myk_head",
-"font": "ttf:din:20:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-8,
-80,
-96,
-96,
-128
-],
-"empty": true
-},
-{
-"from": [
-15,
-0,
-0,
-128,
-32
-],
-"text": "All-Star",
-"style": "myk_head",
-"font": "ttf:din:22:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-14,
-104,
-96,
-120,
-128
-],
-"empty": true
-},
-{
-"from": [
-14,
-0,
-64,
-120,
-96
-],
-"text": "Dome Stadium",
-"style": "myk_head",
-"font": "ttf:din:18:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-15,
-0,
-32,
-120,
-64
-],
-"text": "Day Games",
-"style": "myk_head",
-"font": "ttf:din:20:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-15,
-0,
-64,
-80,
-96
-],
-"text": "Night",
-"style": "myk_head",
-"font": "ttf:din:22:0:1:0",
-"valign": "centre",
-"left": 25
-},
-{
-"from": [
-15,
-0,
-96,
-80,
-128
-],
-"text": "Home",
-"style": "myk_head",
-"font": "ttf:din:22:0:1:0",
-"valign": "centre",
-"left": 22
-},
-{
-"from": [
-14,
-0,
-96,
-104,
-128
-],
-"text": "Away",
-"style": "myk_head",
-"font": "ttf:din:22:0:1:0",
-"valign": "centre",
-"left": 48
-},
-{
-"from": [
-15,
-56,
-32,
-120,
-64
-],
-"text": "Games",
-"style": "myk_head",
-"font": "ttf:din:22:0:1:0",
-"valign": "centre",
-"left": 0
-},
-{
-"from": [
-15,
-80,
-64,
-128,
-96
-],
-"sprites": [
-"43",
-"44",
-"48",
-"49"
-],
-"text": "Easy",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"left": 0
-},
-{
-"from": [
-5,
-48,
-96,
-96,
-128
-],
-"sprites": [
-"43",
-"44"
-],
-"text": "Pitchers",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"left": -17
-},
-{
-"from": [
-15,
-80,
-96,
-128,
-128
-],
-"sprites": [
-"45",
-"46",
-"4a",
-"4b"
-],
-"text": "Tough",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"left": 0
-},
-{
-"from": [
-5,
-48,
-96,
-96,
-128
-],
-"sprites": [
-"45",
-"46"
-],
-"text": "Pitchers",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"left": -10
-},
-{
-"from": [
-11,
-48,
-96,
-96,
-128
-],
-"sprites": [
-"48",
-"49"
-],
-"text": "Batters",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"left": -17
-},
-{
-"from": [
-11,
-48,
-96,
-96,
-128
-],
-"sprites": [
-"4a",
-"4b"
-],
-"text": "Batters",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"left": -10
-},
-{
-"from": [
-11,
-0,
-96,
-48,
-128
-],
-"text": "vs Lefty",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"left": 0
-},
-{
-"from": [
-11,
-48,
-96,
-96,
-128
-],
-"sprites": [
-"47"
-],
-"text": "Batters",
-"style": "myk_head",
-"font": "ttf:din:13:0:1:0",
-"valign": "centre",
-"left": 1
-},
-{
-"from": [
-4,
-0,
-72,
-128,
-104
-],
-"text": "Team Stats",
-"style": "myk_head",
-"font": "ttf:din:22:0:1:0",
-"valign": "centre",
-"align": "left"
-},
-{
-"from": [
-8,
-96,
-96,
-112,
-128
-],
-"empty": true
-},
-{
-"from": [
-8,
-0,
-96,
-32,
-128
-],
-"text": "Yr",
-"style": "myk_head",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-11,
-96,
-96,
-128,
-128
-],
-"text": "Career",
-"style": "myk_head",
-"font": "ttf:din:16:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-8,
-56,
-96,
-80,
-128
-],
-"empty": true
-},
-{
-"from": [
-14,
-0,
-0,
-32,
-16
-],
-"text": "Current Qual. IP",
-"style": "myk_small",
-"font": "ttf:din:11:0:1:0",
-"valign": "centre",
-"sprites": [
-"74"
-],
-"left": 0
-},
-{
-"from": [
-14,
-32,
-0,
-48,
-16
-],
-"empty": true,
-"sprites": [
-"74"
-]
-},
-{
-"from": [
-14,
-48,
-0,
-80,
-16
-],
-"empty": true,
-"sprites": [
-"74"
-]
-},
-{
-"from": [
-14,
-80,
-0,
-128,
-16
-],
-"empty": true,
-"sprites": [
-"74"
-]
-},
-{
-"from": [
-14,
-0,
-0,
-32,
-16
-],
-"text": "Current Qual. PA",
-"style": "myk_small",
-"font": "ttf:din:11:0:1:0",
-"valign": "centre",
-"sprites": [
-"7b"
-],
-"left": 0
-},
-{
-"from": [
-14,
-32,
-0,
-48,
-16
-],
-"empty": true,
-"sprites": [
-"7b"
-]
-},
-{
-"from": [
-14,
-48,
-0,
-80,
-16
-],
-"empty": true,
-"sprites": [
-"7b"
-]
-},
-{
-"from": [
-14,
-0,
-16,
-32,
-32
-],
-"empty": true,
-"sprites": [
-"7b"
-]
-},
-{
-"from": [
-14,
-0,
-0,
-32,
-16
-],
-"text": "Now",
-"style": "myk_small",
-"font": "ttf:din:11:0:1:0",
-"valign": "centre",
-"sprites": [
-"76"
-]
-},
-{
-"from": [
-14,
-0,
-32,
-32,
-48
-],
-"text": "short",
-"style": "myk_small",
-"font": "ttf:din:11:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-14,
-32,
-32,
-96,
-48
-],
-"text": "Season Qual. IP",
-"style": "myk_small",
-"font": "ttf:din:11:0:1:0",
-"valign": "centre",
-"sprites": [
-"79",
-"7a"
-],
-"left": 0
-},
-{
-"from": [
-14,
-48,
-0,
-80,
-16
-],
-"empty": true,
-"sprites": [
-"79",
-"7a"
-]
-},
-{
-"from": [
-14,
-80,
-0,
-128,
-16
-],
-"empty": true,
-"sprites": [
-"79",
-"7a"
-]
-},
-{
-"from": [
-14,
-32,
-32,
-96,
-48
-],
-"text": "Season Qual. PA",
-"style": "myk_small",
-"font": "ttf:din:11:0:1:0",
-"valign": "centre",
-"sprites": [
-"7c",
-"7d"
-],
-"left": 0
-},
-{
-"from": [
-14,
-48,
-0,
-80,
-16
-],
-"empty": true,
-"sprites": [
-"7c",
-"7d"
-]
-},
-{
-"from": [
-14,
-0,
-16,
-32,
-32
-],
-"empty": true,
-"sprites": [
-"7c",
-"7d"
-]
-},
-{
-"from": [
-14,
-48,
-16,
-112,
-32
-],
-"text": "Met",
-"style": "myk_small",
-"font": "ttf:din:11:0:1:0",
-"valign": "centre"
-},
-{
-"from": [
-13,
-0,
-0,
-104,
-32
-],
-"text": "My Records",
-"style": "myk_title",
-"font": "ttf:rounded:12:0:1:0",
-"valign": "centre"
-},
-{
-"sprite": "04",
-"text": "SELECT to Show Help",
-"style": "myk_sel_b",
-"font": "ttf:din:14:0:1:0",
-"valign": "centre"
-},
-{
-"sprite": "73",
-"text": "SELECT to Hide Help",
-"style": "myk_sel_r",
-"font": "ttf:din:14:0:1:0",
-"valign": "centre"
-}
-]
-}
-]
+ "arc": "ore_myk.arc",
+ "repack": [
+  {
+   "bank": "y3_my",
+   "palette": 33,
+   "style": "myk_stat",
+   "gap": [
+    1,
+    1
+   ],
+   "under": 3,
+   "share": true,
+   "areas": [
+    [
+     2,
+     0,
+     24,
+     120,
+     56
+    ],
+    [
+     3,
+     0,
+     0,
+     80,
+     128
+    ],
+    [
+     3,
+     104,
+     72,
+     128,
+     96
+    ],
+    [
+     4,
+     0,
+     72,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     64,
+     80,
+     128
+    ],
+    [
+     5,
+     80,
+     96,
+     96,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     56,
+     128
+    ],
+    [
+     6,
+     88,
+     0,
+     128,
+     96
+    ],
+    [
+     6,
+     56,
+     0,
+     88,
+     48
+    ],
+    [
+     6,
+     56,
+     72,
+     88,
+     96
+    ],
+    [
+     7,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     0,
+     128,
+     96
+    ],
+    [
+     8,
+     56,
+     96,
+     128,
+     128
+    ],
+    [
+     8,
+     0,
+     96,
+     32,
+     128
+    ],
+    [
+     9,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     10,
+     0,
+     24,
+     128,
+     72
+    ],
+    [
+     10,
+     0,
+     72,
+     48,
+     128
+    ],
+    [
+     10,
+     72,
+     0,
+     128,
+     24
+    ],
+    [
+     10,
+     48,
+     96,
+     80,
+     128
+    ],
+    [
+     10,
+     80,
+     120,
+     128,
+     128
+    ],
+    [
+     11,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     12,
+     0,
+     0,
+     128,
+     72
+    ],
+    [
+     12,
+     0,
+     72,
+     64,
+     128
+    ],
+    [
+     12,
+     64,
+     96,
+     88,
+     128
+    ],
+    [
+     12,
+     104,
+     96,
+     128,
+     128
+    ],
+    [
+     12,
+     88,
+     120,
+     104,
+     128
+    ],
+    [
+     13,
+     0,
+     0,
+     104,
+     32
+    ],
+    [
+     14,
+     0,
+     64,
+     128,
+     128
+    ],
+    [
+     14,
+     48,
+     0,
+     96,
+     48
+    ],
+    [
+     14,
+     0,
+     0,
+     32,
+     48
+    ],
+    [
+     14,
+     96,
+     0,
+     128,
+     16
+    ],
+    [
+     14,
+     32,
+     0,
+     48,
+     16
+    ],
+    [
+     14,
+     96,
+     16,
+     112,
+     32
+    ],
+    [
+     14,
+     32,
+     32,
+     48,
+     48
+    ],
+    [
+     15,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      11,
+      40,
+      48,
+      80,
+      72
+     ],
+     "text": "AVG",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      80,
+      72,
+      120,
+      96
+     ],
+     "text": "AB",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      0,
+      72,
+      40,
+      96
+     ],
+     "text": "G",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      80,
+      48,
+      120,
+      72
+     ],
+     "text": "H",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      104,
+      24,
+      128,
+      48
+     ],
+     "text": "2B",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      80,
+      0,
+      104,
+      24
+     ],
+     "text": "3B",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      104,
+      0,
+      128,
+      24
+     ],
+     "text": "HR",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      40,
+      72,
+      80,
+      96
+     ],
+     "text": "RBI",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      72,
+      0,
+      112,
+      24
+     ],
+     "text": "R",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      0,
+      24,
+      40,
+      48
+     ],
+     "text": "K",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      0,
+      0,
+      64,
+      24
+     ],
+     "text": "BB/HBP",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      80,
+      24,
+      120,
+      48
+     ],
+     "text": "SAC",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      88,
+      0,
+      128,
+      24
+     ],
+     "text": "SF",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "GDP",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      88,
+      24,
+      128,
+      48
+     ],
+     "text": "SB",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      64,
+      0,
+      128,
+      24
+     ],
+     "text": "OBP",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      0,
+      24,
+      64,
+      48
+     ],
+     "text": "3-Hit G",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      88,
+      48,
+      128,
+      72
+     ],
+     "text": "E",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      64,
+      24,
+      128,
+      48
+     ],
+     "text": "Slam HR",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      0,
+      0,
+      88,
+      24
+     ],
+     "text": "WO H",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      0,
+      24,
+      88,
+      48
+     ],
+     "text": "WO HR",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      0,
+      72,
+      88,
+      96
+     ],
+     "text": "Lead HR",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      0,
+      48,
+      64,
+      72
+     ],
+     "text": "PH HR",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      0,
+      48,
+      88,
+      72
+     ],
+     "text": "RISP AVG",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      64,
+      48,
+      128,
+      72
+     ],
+     "text": "FPCT",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "CS%",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": "AVG vs L",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": "AVG vs R",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      0,
+      64,
+      24
+     ],
+     "text": "ERA",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      64,
+      0,
+      128,
+      24
+     ],
+     "text": "IP",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      24,
+      40,
+      48
+     ],
+     "text": "Win%",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      40,
+      24,
+      64,
+      48
+     ],
+     "text": "W",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      64,
+      24,
+      88,
+      48
+     ],
+     "text": "L",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      48,
+      56,
+      72
+     ],
+     "text": "SV",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      88,
+      24,
+      128,
+      48
+     ],
+     "text": "G",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      88,
+      72,
+      128,
+      96
+     ],
+     "text": "SHO",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      88,
+      48,
+      128,
+      72
+     ],
+     "text": "CG",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      0,
+      0,
+      64,
+      24
+     ],
+     "text": "K",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      64,
+      0,
+      128,
+      24
+     ],
+     "text": "BB/HBP",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": "HR",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      0,
+      48,
+      64,
+      72
+     ],
+     "text": "H",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      88,
+      72,
+      128,
+      96
+     ],
+     "text": "WP",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      88,
+      72,
+      128,
+      96
+     ],
+     "text": "R",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      64,
+      48,
+      128,
+      72
+     ],
+     "text": "ER",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      7,
+      0,
+      72,
+      88,
+      96
+     ],
+     "text": "Scoreless Strk",
+     "style": "myk_stat",
+     "font": "ttf:din:10:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      6,
+      0,
+      72,
+      88,
+      96
+     ],
+     "text": "SV Streak",
+     "style": "myk_stat",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      9,
+      64,
+      72,
+      128,
+      96
+     ],
+     "text": "Opp AVG",
+     "style": "myk_stat",
+     "font": "ttf:din:14:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      0,
+      72,
+      48,
+      96
+     ],
+     "text": "HLD",
+     "style": "myk_stat",
+     "font": "ttf:din:14:0:1:0",
+     "valign": "centre",
+     "left": 23
+    },
+    {
+     "from": [
+      7,
+      80,
+      24,
+      104,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      10,
+      0,
+      96,
+      80,
+      120
+     ],
+     "text": "Hold Pts",
+     "style": "myk_stat",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      0,
+      80,
+      24
+     ],
+     "text": "Batter Stats",
+     "style": "myk_tab",
+     "font": "ttf:din:15:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      48,
+      80,
+      72
+     ],
+     "text": "Batter Detail",
+     "style": "myk_tab",
+     "font": "ttf:din:15:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      24,
+      80,
+      48
+     ],
+     "text": "Pitcher Stats",
+     "style": "myk_tab",
+     "font": "ttf:din:14:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      72,
+      80,
+      96
+     ],
+     "text": "Pitcher Detail",
+     "style": "myk_tab",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "Chunichi",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      80,
+      24,
+      120,
+      48
+     ],
+     "text": "Hiroshima",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      40,
+      0,
+      120,
+      24
+     ],
+     "text": "Yakult",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      40,
+      24,
+      80,
+      48
+     ],
+     "text": "Yokohama",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      0,
+      40,
+      24
+     ],
+     "text": "Hanshin",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      0,
+      104,
+      88,
+      128
+     ],
+     "text": "Orix",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      40,
+      24,
+      120,
+      48
+     ],
+     "text": "Nippon-Ham",
+     "style": "myk_team",
+     "font": "ttf:din:13:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      48,
+      40,
+      72
+     ],
+     "text": "Seibu",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      24,
+      40,
+      48
+     ],
+     "text": "Rakuten",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      0,
+      72,
+      64,
+      96
+     ],
+     "text": "Lotte",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      12,
+      40,
+      48,
+      128,
+      72
+     ],
+     "text": "SoftBank",
+     "style": "myk_team",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      10,
+      112,
+      0,
+      128,
+      24
+     ],
+     "text": "Giants",
+     "style": "myk_team",
+     "font": "ttf:din:15:0:1:0",
+     "valign": "centre",
+     "left": 3
+    },
+    {
+     "from": [
+      10,
+      112,
+      48,
+      128,
+      72
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      10,
+      120,
+      24,
+      128,
+      48
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      10,
+      40,
+      48,
+      112,
+      72
+     ],
+     "text": "Farm",
+     "style": "myk_team",
+     "font": "ttf:din:15:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      4,
+      88,
+      104,
+      128,
+      128
+     ],
+     "text": "Total",
+     "style": "myk_team",
+     "font": "ttf:din:15:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      104,
+      72,
+      128,
+      96
+     ],
+     "text": "Yr",
+     "style": "myk_team",
+     "font": "ttf:din:15:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      3,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "RISP",
+     "style": "myk_head",
+     "font": "ttf:din:22:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      5,
+      0,
+      64,
+      80,
+      96
+     ],
+     "text": "Bases Loaded",
+     "style": "myk_head",
+     "font": "ttf:din:14:0:0.9:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      5,
+      0,
+      96,
+      96,
+      128
+     ],
+     "text": "vs Lefty Pitchers",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      6,
+      0,
+      96,
+      56,
+      128
+     ],
+     "text": "Pinch Hit",
+     "style": "myk_head",
+     "font": "ttf:din:15:0:0.86:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      120,
+      56
+     ],
+     "text": "Last 5 Games",
+     "style": "myk_head",
+     "font": "ttf:din:21:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      7,
+      0,
+      96,
+      128,
+      128
+     ],
+     "text": "Japan Series",
+     "style": "myk_head",
+     "font": "ttf:din:20:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      8,
+      80,
+      96,
+      96,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      15,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "All-Star",
+     "style": "myk_head",
+     "font": "ttf:din:22:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      14,
+      104,
+      96,
+      120,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      14,
+      0,
+      64,
+      120,
+      96
+     ],
+     "text": "Dome Stadium",
+     "style": "myk_head",
+     "font": "ttf:din:18:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      15,
+      0,
+      32,
+      120,
+      64
+     ],
+     "text": "Day Games",
+     "style": "myk_head",
+     "font": "ttf:din:20:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      15,
+      0,
+      64,
+      80,
+      96
+     ],
+     "text": "Night",
+     "style": "myk_head",
+     "font": "ttf:din:22:0:1:0",
+     "valign": "centre",
+     "left": 25
+    },
+    {
+     "from": [
+      15,
+      0,
+      96,
+      80,
+      128
+     ],
+     "text": "Home",
+     "style": "myk_head",
+     "font": "ttf:din:22:0:1:0",
+     "valign": "centre",
+     "left": 22
+    },
+    {
+     "from": [
+      14,
+      0,
+      96,
+      104,
+      128
+     ],
+     "text": "Away",
+     "style": "myk_head",
+     "font": "ttf:din:22:0:1:0",
+     "valign": "centre",
+     "left": 48
+    },
+    {
+     "from": [
+      15,
+      56,
+      32,
+      120,
+      64
+     ],
+     "text": "Games",
+     "style": "myk_head",
+     "font": "ttf:din:22:0:1:0",
+     "valign": "centre",
+     "left": 0
+    },
+    {
+     "from": [
+      15,
+      80,
+      64,
+      128,
+      96
+     ],
+     "sprites": [
+      "43",
+      "44",
+      "48",
+      "49"
+     ],
+     "text": "Easy",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "left": 0
+    },
+    {
+     "from": [
+      5,
+      48,
+      96,
+      96,
+      128
+     ],
+     "sprites": [
+      "43",
+      "44"
+     ],
+     "text": "Pitchers",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "left": -17
+    },
+    {
+     "from": [
+      15,
+      80,
+      96,
+      128,
+      128
+     ],
+     "sprites": [
+      "45",
+      "46",
+      "4a",
+      "4b"
+     ],
+     "text": "Tough",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "left": 0
+    },
+    {
+     "from": [
+      5,
+      48,
+      96,
+      96,
+      128
+     ],
+     "sprites": [
+      "45",
+      "46"
+     ],
+     "text": "Pitchers",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "left": -10
+    },
+    {
+     "from": [
+      11,
+      48,
+      96,
+      96,
+      128
+     ],
+     "sprites": [
+      "48",
+      "49"
+     ],
+     "text": "Batters",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "left": -17
+    },
+    {
+     "from": [
+      11,
+      48,
+      96,
+      96,
+      128
+     ],
+     "sprites": [
+      "4a",
+      "4b"
+     ],
+     "text": "Batters",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "left": -10
+    },
+    {
+     "from": [
+      11,
+      0,
+      96,
+      48,
+      128
+     ],
+     "text": "vs Lefty",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "left": 0
+    },
+    {
+     "from": [
+      11,
+      48,
+      96,
+      96,
+      128
+     ],
+     "sprites": [
+      "47"
+     ],
+     "text": "Batters",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:0.8:0",
+     "valign": "centre",
+     "left": 1
+    },
+    {
+     "from": [
+      4,
+      0,
+      72,
+      128,
+      104
+     ],
+     "text": "Team Stats",
+     "style": "myk_head",
+     "font": "ttf:din:22:0:1:0",
+     "valign": "centre",
+     "align": "left"
+    },
+    {
+     "from": [
+      8,
+      96,
+      96,
+      112,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      8,
+      0,
+      96,
+      32,
+      128
+     ],
+     "text": "Yr",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      11,
+      96,
+      96,
+      128,
+      128
+     ],
+     "text": "Career",
+     "style": "myk_head",
+     "font": "ttf:din:16:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      8,
+      56,
+      96,
+      80,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      14,
+      0,
+      0,
+      32,
+      16
+     ],
+     "text": "Current Qual. IP",
+     "style": "myk_small",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "sprites": [
+      "74"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      14,
+      32,
+      0,
+      48,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "74"
+     ]
+    },
+    {
+     "from": [
+      14,
+      48,
+      0,
+      80,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "74"
+     ]
+    },
+    {
+     "from": [
+      14,
+      80,
+      0,
+      128,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "74"
+     ]
+    },
+    {
+     "from": [
+      14,
+      0,
+      0,
+      32,
+      16
+     ],
+     "text": "Current Qual. PA",
+     "style": "myk_small",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "sprites": [
+      "7b"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      14,
+      32,
+      0,
+      48,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "7b"
+     ]
+    },
+    {
+     "from": [
+      14,
+      48,
+      0,
+      80,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "7b"
+     ]
+    },
+    {
+     "from": [
+      14,
+      0,
+      16,
+      32,
+      32
+     ],
+     "empty": true,
+     "sprites": [
+      "7b"
+     ]
+    },
+    {
+     "from": [
+      14,
+      0,
+      0,
+      32,
+      16
+     ],
+     "text": "Now",
+     "style": "myk_small",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "sprites": [
+      "76"
+     ]
+    },
+    {
+     "from": [
+      14,
+      0,
+      32,
+      32,
+      48
+     ],
+     "text": "short",
+     "style": "myk_small",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      14,
+      32,
+      32,
+      96,
+      48
+     ],
+     "text": "Season Qual. IP",
+     "style": "myk_small",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "sprites": [
+      "79",
+      "7a"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      14,
+      48,
+      0,
+      80,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "79",
+      "7a"
+     ]
+    },
+    {
+     "from": [
+      14,
+      80,
+      0,
+      128,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "79",
+      "7a"
+     ]
+    },
+    {
+     "from": [
+      14,
+      32,
+      32,
+      96,
+      48
+     ],
+     "text": "Season Qual. PA",
+     "style": "myk_small",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre",
+     "sprites": [
+      "7c",
+      "7d"
+     ],
+     "left": 0
+    },
+    {
+     "from": [
+      14,
+      48,
+      0,
+      80,
+      16
+     ],
+     "empty": true,
+     "sprites": [
+      "7c",
+      "7d"
+     ]
+    },
+    {
+     "from": [
+      14,
+      0,
+      16,
+      32,
+      32
+     ],
+     "empty": true,
+     "sprites": [
+      "7c",
+      "7d"
+     ]
+    },
+    {
+     "from": [
+      14,
+      48,
+      16,
+      112,
+      32
+     ],
+     "text": "Met",
+     "style": "myk_small",
+     "font": "ttf:din:11:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      13,
+      0,
+      0,
+      104,
+      32
+     ],
+     "text": "My Records",
+     "style": "myk_title",
+     "font": "ttf:rounded:12:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "04",
+     "text": "SELECT to Show Help",
+     "style": "myk_sel_b",
+     "font": "ttf:din:14:0:1:0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "73",
+     "text": "SELECT to Hide Help",
+     "style": "myk_sel_r",
+     "font": "ttf:din:14:0:1:0",
+     "valign": "centre"
+    }
+   ]
+  }
+ ]
 }

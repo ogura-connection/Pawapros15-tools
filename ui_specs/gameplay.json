@@ -2701,15 +2701,15 @@
      "sprite": "04",
      "text": "Today's Hero",
      "style": "fxE_herbig",
-     "font": "ttf:sans-italic:22:0.0:0.5:0.5",
+     "font": "ttf:sans-italic:21:0.0:0.85:0.5",
      "slices": true,
-     "slice_width": 78
+     "slice_width": 82
     },
     {
      "sprite": "05",
      "text": "League Champions!",
      "style": "fxE_herbig",
-     "font": "ttf:sans-italic:22:0.0:0.5:0.5",
+     "font": "ttf:sans-italic:17:0.0:1.0:0.5",
      "slices": true,
      "slice_width": 118
     },
@@ -2717,7 +2717,7 @@
      "sprite": "06",
      "text": "Japan Series Champions!",
      "style": "fxE_herbig",
-     "font": "ttf:sans-italic:22:0.0:0.5:0.5",
+     "font": "ttf:sans-italic:17:0.0:0.8:0.5",
      "slices": true,
      "slice_width": 121
     },
@@ -2725,7 +2725,7 @@
      "sprite": "08",
      "text": "Tournament Champions!",
      "style": "fxE_herbig",
-     "font": "ttf:sans-italic:22:0.0:0.5:0.5",
+     "font": "ttf:sans-italic:17:0.0:0.85:0.5",
      "slices": true,
      "slice_width": 123
     },
@@ -2733,7 +2733,7 @@
      "sprite": "09",
      "text": "Champions!",
      "style": "fxE_herbig",
-     "font": "ttf:sans-italic:22:0.0:0.5:0.5",
+     "font": "ttf:sans-italic:17:0.0:1.0:0.5",
      "slices": true,
      "slice_width": 73
     },
@@ -2741,7 +2741,7 @@
      "sprite": "0d",
      "text": "Today's Highlights",
      "style": "d_her_red",
-     "font": "ttf:sans-italic:25:0.0:1.0:0.5",
+     "font": "ttf:sans-italic:21:0.0:1.0:0.5",
      "slices": true,
      "slice_width": 120
     },

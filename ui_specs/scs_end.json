@@ -994,7 +994,7 @@
      "sprite": "19",
      "text": "JPN",
      "style": "a_thin5",
-     "font": "ttf:rounded:13:0:0.9:0.2",
+     "font": "ttf:narrow:11:0:0.9:0.2",
      "baseline": 18,
      "pages": [
       1,
@@ -1735,7 +1735,7 @@
      "sprite": "1b",
      "text": "JPN",
      "style": "a_thin32",
-     "font": "ttf:rounded:13:0:0.9:0.2",
+     "font": "ttf:narrow:11:0:0.9:0.2",
      "baseline": 18,
      "pages": [
       4,
