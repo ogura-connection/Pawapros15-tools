@@ -4561,6 +4561,13 @@
    "share": true,
    "areas": [
     [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
      2,
      56,
      72,
@@ -4650,13 +4657,6 @@
      64,
      24,
      96
-    ],
-    [
-     4,
-     0,
-     0,
-     128,
-     128
     ]
    ],
    "labels": [
@@ -5177,37 +5177,37 @@
      "sprite": "46",
      "text": "4 boys",
      "style": "kzomint",
-     "font": "ttf:din:16:0:1:0.1"
+     "font": "ttf:din:18:0:1:0.1"
     },
     {
      "sprite": "47",
      "text": "5 boys",
      "style": "kzomint",
-     "font": "ttf:din:16:0:1:0.1"
+     "font": "ttf:din:18:0:1:0.1"
     },
     {
      "sprite": "48",
      "text": "4 girls",
      "style": "kzomint",
-     "font": "ttf:din:16:0:1:0.1"
+     "font": "ttf:din:18:0:1:0.1"
     },
     {
      "sprite": "49",
      "text": "5 girls",
      "style": "kzomint",
-     "font": "ttf:din:16:0:1:0.1"
+     "font": "ttf:din:18:0:1:0.1"
     },
     {
      "sprite": "4a",
      "text": "4 boys 1 girl",
      "style": "kzomint",
-     "font": "ttf:din:16:0:1:0.1"
+     "font": "ttf:din:18:0:1:0.1"
     },
     {
      "sprite": "4b",
      "text": "1 boy 4 girls",
      "style": "kzomint",
-     "font": "ttf:din:16:0:1:0.1"
+     "font": "ttf:din:18:0:1:0.1"
     }
    ]
   }

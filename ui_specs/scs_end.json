@@ -994,7 +994,7 @@
      "sprite": "19",
      "text": "Japan",
      "style": "a_thin5",
-     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "font": "ttf:rounded:11:0:0.85:0.2",
      "baseline": 18,
      "pages": [
       1,
@@ -1537,9 +1537,9 @@
     },
     {
      "sprite": "03",
-     "text": "Change Uniform",
+     "text": "Uniform",
      "style": "a_y5btn",
-     "font": "ttf:rounded:10:0.0:0.88:0.4",
+     "font": "ttf:rounded:15:0:0.9:0.4",
      "baseline": 22,
      "pages": [
       1,
@@ -1551,9 +1551,9 @@
     },
     {
      "sprite": "04",
-     "text": "Equipment & Data",
+     "text": "Gear & Data",
      "style": "a_y5btn",
-     "font": "ttf:rounded:9:0.0:0.88:0.4",
+     "font": "ttf:rounded:14:0:0.88:0.4",
      "baseline": 22,
      "pages": [
       1,
@@ -1565,9 +1565,9 @@
     },
     {
      "sprite": "05",
-     "text": "Equipment Colors",
+     "text": "Gear Colors",
      "style": "a_y5btn",
-     "font": "ttf:rounded:9:0.0:0.88:0.4",
+     "font": "ttf:rounded:14:0:0.88:0.4",
      "baseline": 22,
      "pages": [
       1,
@@ -1735,7 +1735,7 @@
      "sprite": "1b",
      "text": "Japan",
      "style": "a_thin32",
-     "font": "ttf:rounded:14:0.0:1.0:0.2",
+     "font": "ttf:rounded:11:0:0.85:0.2",
      "baseline": 18,
      "pages": [
       4,
@@ -3366,7 +3366,7 @@
      "sprite": "05",
      "text": "Quit",
      "style": "a_z3end",
-     "font": "ttf:rounded:13:0.0:1.0:0.5",
+     "font": "ttf:rounded:17:0:1.0:0.5",
      "baseline": 39,
      "pages": [
       1
@@ -3377,9 +3377,9 @@
     },
     {
      "sprite": "07",
-     "text": "Register",
+     "text": "Save",
      "style": "a_z3reg",
-     "font": "ttf:rounded:12:0.0:0.88:0.5",
+     "font": "ttf:rounded:17:0:1.0:0.5",
      "baseline": 38,
      "pages": [
       1
