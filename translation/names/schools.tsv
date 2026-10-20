@@ -26,7 +26,7 @@
 227360	Okushiri G.
 227372	Okushiri Gn
 227384	Okushiri T.
-227396	Okushiri C.
+227396	Okushiri Cm.
 227408	Okushiri E.
 227416	Okushiri W.
 227424	Okushiri S.
@@ -38,12 +38,12 @@
 227488	Okushiri Ag.
 227500	Okushiri El.
 227512	Okushiri Sh.
-227524	Okushiri C.
+227524	Okushiri Ch
 227536	Okushiri Gj
 227548	Wakkanai G.
 227560	Wakkanai Gn
 227572	Wakkanai T.
-227584	Wakkanai C.
+227584	Wakkanai Cm.
 227600	Wakkanai E.
 227608	Wakkanai W.
 227616	Wakkanai S.
@@ -54,11 +54,11 @@
 227668	Wakkanai U.
 227680	Wakkanai Ag.
 227692	Wakkanai El.
-227704	Wakkanai C.
+227704	Wakkanai Ch
 227716	Wakkanai Gj
 227728	Shirakaba Gn
 227740	Shirakaba T.
-227752	Shirakaba C.
+227752	Shirakab Cm.
 227768	Shirakaba E.
 227776	Shirakaba W.
 227784	Shirakaba S.
@@ -70,7 +70,7 @@
 227848	Shirakab Ag.
 227860	Shirakab El.
 227872	Shirakab Sh.
-227884	Shirakaba C.
+227884	Shirakaba Ch
 227896	Shirakaba Gj
 227908	Kitami Gak.
 227920	Kitami Gkn.
@@ -95,7 +95,7 @@
 228136	Asahikawa U.
 228148	Asahikaw El.
 228160	Asahikaw Sh.
-228172	Asahikawa C.
+228172	Asahikawa Ch
 228184	Asahikawa Gj
 228196	Nemuro Gak.
 228208	Nemuro Gkn.
@@ -133,7 +133,7 @@
 228572	Rishiri Gak.
 228584	Rishiri Gkn.
 228596	Rishiri Tech
-228608	Rishiri C.
+228608	Rishiri Cm.
 228624	Rishiri East
 228632	Rishiri West
 228640	Rishiri S.
@@ -150,7 +150,7 @@
 228764	Abashiri G.
 228776	Abashiri Gn
 228788	Abashiri T.
-228800	Abashiri C.
+228800	Abashiri Cm.
 228816	Abashiri E.
 228824	Abashiri W.
 228832	Abashiri S.
@@ -162,7 +162,7 @@
 228896	Abashiri Ag.
 228908	Abashiri El.
 228920	Abashiri Sh.
-228932	Abashiri C.
+228932	Abashiri Ch
 228944	Abashiri Gj
 228956	Soya Gakuen
 228968	Soya Gakuin
@@ -183,7 +183,7 @@
 229136	Soya Gijuku
 229148	Obihiro Gak.
 229160	Obihiro Gkn.
-229172	Obihiro C.
+229172	Obihiro Cm.
 229184	Obihiro East
 229192	Obihiro West
 229200	Obihiro S.
@@ -209,7 +209,7 @@
 229432	Monbetsu G.
 229444	Monbetsu Gn
 229456	Monbetsu T.
-229468	Monbetsu C.
+229468	Monbetsu Cm.
 229480	Monbetsu E.
 229488	Monbetsu W.
 229496	Monbetsu 1st
@@ -219,7 +219,7 @@
 229544	Monbetsu Ag.
 229556	Monbetsu El.
 229568	Monbetsu Sh.
-229580	Monbetsu C.
+229580	Monbetsu Ch
 229592	Monbetsu Gj
 229604	Shibetsu G.
 229616	Shibetsu Gn
@@ -234,12 +234,12 @@
 229712	Shibetsu Ag.
 229724	Shibetsu El.
 229736	Shibetsu Sh.
-229748	Shibetsu C.
+229748	Shibetsu Ch
 229760	Shibetsu Gj
 229772	Kussharo G.
 229784	Kussharo Gn
 229796	Kussharo T.
-229808	Kussharo C.
+229808	Kussharo Cm.
 229820	Kussharo E.
 229832	Kussharo W.
 229844	Kussharo S.
@@ -251,7 +251,7 @@
 229920	Kussharo Ag.
 229932	Kussharo El.
 229944	Kussharo Sh.
-229956	Kussharo C.
+229956	Kussharo Ch
 229968	Kussharo Gj
 229980	Hokkai Gak.
 229992	Hokkai Gkn.
@@ -329,7 +329,7 @@
 230788	Furano Gij.
 230800	Sapporo Gak.
 230812	Sapporo Gkn.
-230824	Sapporo C.
+230824	Sapporo Cm.
 230836	Sapporo J.
 230848	Sapporo Mar.
 230860	Sapporo U.
@@ -347,7 +347,7 @@
 231004	Hakodate Ag.
 231016	Hakodate El.
 231028	Hakodate Sh.
-231040	Hakodate C.
+231040	Hakodate Ch
 231052	Hakodate Gj
 231064	Otaru Gakuen
 231076	Otaru Gakuin
@@ -415,7 +415,7 @@
 231772	Okushiri G.
 231784	Okushiri Gn
 231796	Okushiri T.
-231808	Okushiri C.
+231808	Okushiri Cm.
 231824	Okushiri E.
 231832	Okushiri W.
 231840	Okushiri S.
@@ -427,12 +427,12 @@
 231904	Okushiri Ag.
 231916	Okushiri El.
 231928	Okushiri Sh.
-231940	Okushiri C.
+231940	Okushiri Ch
 231952	Okushiri Gj
 231964	Iwamizawa G.
 231976	Iwamizawa Gn
 231988	Iwamizawa T.
-232000	Iwamizawa C.
+232000	Iwamizaw Cm.
 232012	Iwamizawa S.
 232024	Iwamizawa N.
 232036	Iwamizawa 1
@@ -441,7 +441,7 @@
 232072	Iwamizawa U.
 232088	Iwamizaw El.
 232100	Iwamizaw Sh.
-232112	Iwamizawa C.
+232112	Iwamizawa Ch
 232124	Iwamizawa Gj
 232136	Hokuto Gak.
 232148	Hokuto Gkn.
@@ -462,7 +462,7 @@
 232312	Hokuto Gij.
 232324	Tomakomai G.
 232336	Tomakomai Gn
-232348	Tomakomai C.
+232348	Tomakoma Cm.
 232360	Tomakomai N.
 232372	Tomakomai 1
 232384	Tomakomai J.
@@ -475,7 +475,7 @@
 232472	Noboribet G.
 232484	Noboribet Gn
 232496	Noboribet T.
-232508	Noboribet C.
+232508	Noboribe Cm.
 232520	Noboribet E.
 232528	Noboribet W.
 232536	Noboribet S.
@@ -487,7 +487,7 @@
 232600	Noboribe Ag.
 232612	Noboribe El.
 232624	Noboribe Sh.
-232636	Noboribet C.
+232636	Noboribet Ch
 232648	Noboribet Gj
 232664	Mutsu
 232672	Tsugaru
@@ -519,7 +519,7 @@
 232940	Tsugaru Gak.
 232952	Tsugaru Gkn.
 232964	Tsugaru Tech
-232976	Tsugaru C.
+232976	Tsugaru Cm.
 232992	Tsugaru East
 233000	Tsugaru West
 233008	Tsugaru S.
@@ -536,7 +536,7 @@
 233132	Shimokita G.
 233144	Shimokita Gn
 233156	Shimokita T.
-233168	Shimokita C.
+233168	Shimokit Cm.
 233184	Shimokita E.
 233192	Shimokita W.
 233200	Shimokita S.
@@ -548,12 +548,12 @@
 233264	Shimokit Ag.
 233276	Shimokit El.
 233288	Shimokit Sh.
-233300	Shimokita C.
+233300	Shimokita Ch
 233312	Shimokita Gj
 233324	Kamikita G.
 233336	Kamikita Gn
 233348	Kamikita T.
-233360	Kamikita C.
+233360	Kamikita Cm.
 233376	Kamikita E.
 233384	Kamikita W.
 233392	Kamikita S.
@@ -565,12 +565,12 @@
 233456	Kamikita Ag.
 233468	Kamikita El.
 233480	Kamikita Sh.
-233492	Kamikita C.
+233492	Kamikita Ch
 233504	Kamikita Gj
 233516	Odawara Gak.
 233528	Odawara Gkn.
 233540	Odawara Tech
-233552	Odawara C.
+233552	Odawara Cm.
 233564	Odawara East
 233576	Odawara West
 233588	Odawara S.
@@ -602,7 +602,7 @@
 233908	Sannohe Gak.
 233920	Sannohe Gkn.
 233932	Sannohe Tech
-233944	Sannohe C.
+233944	Sannohe Cm.
 233960	Sannohe East
 233968	Sannohe West
 233976	Sannohe S.
@@ -619,7 +619,7 @@
 234100	Fukaura Gak.
 234112	Fukaura Gkn.
 234124	Fukaura Tech
-234136	Fukaura C.
+234136	Fukaura Cm.
 234152	Fukaura East
 234160	Fukaura West
 234168	Fukaura S.
@@ -653,7 +653,7 @@
 234552	Shirakami G.
 234564	Shirakami Gn
 234576	Shirakami T.
-234588	Shirakami C.
+234588	Shirakam Cm.
 234600	Shirakami E.
 234612	Shirakami W.
 234624	Shirakami S.
@@ -665,7 +665,7 @@
 234700	Shirakam Ag.
 234712	Shirakam El.
 234724	Shirakam Sh.
-234736	Shirakami C.
+234736	Shirakami Ch
 234748	Shirakami Gj
 234760	Nebuta Gak.
 234772	Nebuta Gkn.
@@ -712,7 +712,7 @@
 235252	Hachinohe Gj
 235264	Hirosaki G.
 235276	Hirosaki Gn
-235288	Hirosaki C.
+235288	Hirosaki Cm.
 235304	Hirosaki W.
 235312	Hirosaki N.
 235320	Hirosaki 1st
@@ -745,7 +745,7 @@
 235616	Rikuchu Gak.
 235628	Rikuchu Gkn.
 235640	Rikuchu Tech
-235652	Rikuchu C.
+235652	Rikuchu Cm.
 235664	Rikuchu East
 235672	Rikuchu West
 235680	Rikuchu S.
@@ -772,7 +772,7 @@
 235920	Takizawa G.
 235932	Takizawa Gn
 235944	Takizawa T.
-235956	Takizawa C.
+235956	Takizawa Cm.
 235968	Takizawa E.
 235976	Takizawa W.
 235984	Takizawa S.
@@ -784,12 +784,12 @@
 236048	Takizawa Ag.
 236060	Takizawa El.
 236072	Takizawa Sh.
-236084	Takizawa C.
+236084	Takizawa Ch
 236096	Takizawa Gj
 236108	Hanamaki G.
 236120	Hanamaki Gn
 236132	Hanamaki T.
-236144	Hanamaki C.
+236144	Hanamaki Cm.
 236160	Hanamaki W.
 236168	Hanamaki 1st
 236180	Hanamaki J.
@@ -797,7 +797,7 @@
 236204	Hanamaki U.
 236216	Hanamaki El.
 236228	Hanamaki Sh.
-236240	Hanamaki C.
+236240	Hanamaki Ch
 236252	Hanamaki Gj
 236264	Oshu Gakuen
 236276	Oshu Gakuin
@@ -817,7 +817,7 @@
 236428	Oshu Central
 236440	Oshu Gijuku
 236452	Ichinosek G.
-236464	Ichinosek C.
+236464	Ichinose Cm.
 236480	Ichinosek E.
 236488	Ichinosek W.
 236496	Ichinosek S.
@@ -828,7 +828,7 @@
 236548	Ichinose Ag.
 236560	Ichinose El.
 236572	Ichinose Sh.
-236584	Ichinosek C.
+236584	Ichinosek Ch
 236596	Ichinosek Gj
 236608	Tono Gakuen
 236620	Tono Gakuin
@@ -865,7 +865,7 @@
 236964	Michinoku G.
 236980	Michinoku Gn
 236996	Michinoku T.
-237012	Michinoku C.
+237012	Michinok Cm.
 237028	Michinoku E.
 237040	Michinoku W.
 237052	Michinoku S.
@@ -877,12 +877,12 @@
 237144	Michinok Ag.
 237160	Michinok El.
 237176	Michinok Sh.
-237192	Michinoku C.
+237192	Michinoku Ch
 237208	Michinoku Gj
 237224	Shizukuis G.
 237236	Shizukuis Gn
 237248	Shizukuis T.
-237260	Shizukuis C.
+237260	Shizukui Cm.
 237272	Shizukuis E.
 237280	Shizukuis W.
 237288	Shizukuis S.
@@ -894,12 +894,12 @@
 237352	Shizukui Ag.
 237364	Shizukui El.
 237376	Shizukui Sh.
-237388	Shizukuis C.
+237388	Shizukuis Ch
 237400	Shizukuis Gj
 237412	Jodogaham G.
 237428	Jodogaham Gn
 237444	Jodogaham T.
-237460	Jodogaham C.
+237460	Jodogaha Cm.
 237476	Jodogaham E.
 237488	Jodogaham W.
 237500	Jodogaham S.
@@ -911,7 +911,7 @@
 237592	Jodogaha Ag.
 237608	Jodogaha El.
 237624	Jodogaha Sh.
-237640	Jodogaham C.
+237640	Jodogaham Ch
 237656	Jodogaham Gj
 237672	Kamaishi G.
 237684	Kamaishi Gn
@@ -924,7 +924,7 @@
 237760	Kamaishi Ag.
 237772	Kamaishi El.
 237784	Kamaishi Sh.
-237796	Kamaishi C.
+237796	Kamaishi Ch
 237808	Kamaishi Gj
 237820	Miyako Gak.
 237832	Miyako Gkn.
@@ -942,7 +942,7 @@
 237968	Kitakami G.
 237980	Kitakami Gn
 237992	Kitakami T.
-238004	Kitakami C.
+238004	Kitakami Cm.
 238016	Kitakami E.
 238024	Kitakami W.
 238032	Kitakami S.
@@ -954,7 +954,7 @@
 238096	Kitakami Ag.
 238108	Kitakami El.
 238120	Kitakami Sh.
-238132	Kitakami C.
+238132	Kitakami Ch
 238144	Kitakami Gj
 238156	Iwate Gakuen
 238168	Iwate Gakuin
@@ -983,7 +983,7 @@
 238408	Rikuzen Gak.
 238420	Rikuzen Gkn.
 238432	Rikuzen Tech
-238444	Rikuzen C.
+238444	Rikuzen Cm.
 238456	Rikuzen East
 238464	Rikuzen West
 238472	Rikuzen S.
@@ -1000,7 +1000,7 @@
 238596	Matsushim G.
 238608	Matsushim Gn
 238620	Matsushim T.
-238632	Matsushim C.
+238632	Matsushi Cm.
 238648	Matsushim E.
 238656	Matsushim W.
 238664	Matsushim S.
@@ -1012,12 +1012,12 @@
 238728	Matsushi Ag.
 238740	Matsushi El.
 238752	Matsushi Sh.
-238764	Matsushim C.
+238764	Matsushim Ch
 238776	Matsushim Gj
 238788	Kesennuma G.
 238800	Kesennuma Gn
 238812	Kesennuma T.
-238824	Kesennuma C.
+238824	Kesennum Cm.
 238836	Kesennuma E.
 238848	Kesennuma S.
 238860	Kesennuma N.
@@ -1028,7 +1028,7 @@
 238924	Kesennum Ag.
 238936	Kesennum El.
 238948	Kesennum Sh.
-238960	Kesennuma C.
+238960	Kesennuma Ch
 238972	Kesennuma Gj
 238984	Naruko Gak.
 238996	Naruko Gkn.
@@ -1070,12 +1070,12 @@
 239400	Ishinoma Ag.
 239412	Ishinoma El.
 239424	Ishinoma Sh.
-239436	Ishinomak C.
+239436	Ishinomak Ch
 239448	Ishinomak Gj
 239460	Matsushim G.
 239472	Matsushim Gn
 239484	Matsushim T.
-239496	Matsushim C.
+239496	Matsushi Cm.
 239512	Matsushim E.
 239520	Matsushim W.
 239528	Matsushim S.
@@ -1087,11 +1087,11 @@
 239592	Matsushi Ag.
 239604	Matsushi El.
 239616	Matsushi Sh.
-239628	Matsushim C.
+239628	Matsushim Ch
 239640	Matsushim Gj
 239652	Shiroishi G.
 239664	Shiroishi Gn
-239676	Shiroishi C.
+239676	Shiroish Cm.
 239688	Shiroishi E.
 239696	Shiroishi W.
 239704	Shiroishi S.
@@ -1103,7 +1103,7 @@
 239768	Shiroish Ag.
 239780	Shiroish El.
 239792	Shiroish Sh.
-239804	Shiroishi C.
+239804	Shiroishi Ch
 239816	Shiroishi Gj
 239828	Natori Gak.
 239840	Natori Gkn.
@@ -1157,7 +1157,7 @@
 240384	Kurihara G.
 240396	Kurihara Gn
 240408	Kurihara T.
-240420	Kurihara C.
+240420	Kurihara Cm.
 240432	Kurihara E.
 240440	Kurihara W.
 240448	Kurihara S.
@@ -1168,7 +1168,7 @@
 240500	Kurihara U.
 240512	Kurihara El.
 240524	Kurihara Sh.
-240536	Kurihara C.
+240536	Kurihara Ch
 240548	Kurihara Gj
 240560	Osaki Gakuen
 240572	Osaki Gakuin
@@ -1189,7 +1189,7 @@
 240736	Iwanuma Gak.
 240748	Iwanuma Gkn.
 240760	Iwanuma Tech
-240772	Iwanuma C.
+240772	Iwanuma Cm.
 240784	Iwanuma East
 240792	Iwanuma West
 240800	Iwanuma S.
@@ -1223,7 +1223,7 @@
 241116	Kurokawa G.
 241128	Kurokawa Gn
 241140	Kurokawa T.
-241152	Kurokawa C.
+241152	Kurokawa Cm.
 241168	Kurokawa E.
 241176	Kurokawa W.
 241184	Kurokawa S.
@@ -1235,7 +1235,7 @@
 241248	Kurokawa Ag.
 241260	Kurokawa El.
 241272	Kurokawa Sh.
-241284	Kurokawa C.
+241284	Kurokawa Ch
 241296	Kurokawa Gj
 241308	Miyagi Gak.
 241320	Miyagi Tech
@@ -1281,7 +1281,7 @@
 241740	Yamamoto G.
 241752	Yamamoto Gn
 241764	Yamamoto T.
-241776	Yamamoto C.
+241776	Yamamoto Cm.
 241792	Yamamoto E.
 241800	Yamamoto W.
 241808	Yamamoto S.
@@ -1293,7 +1293,7 @@
 241872	Yamamoto Ag.
 241884	Yamamoto El.
 241896	Yamamoto Sh.
-241908	Yamamoto C.
+241908	Yamamoto Ch
 241920	Yamamoto Gj
 241932	Kazuno Gak.
 241944	Kazuno Gkn.
@@ -1363,7 +1363,7 @@
 242680	Nikaho Gij.
 242692	Noshiro Gak.
 242704	Noshiro Gkn.
-242716	Noshiro C.
+242716	Noshiro Cm.
 242728	Noshiro East
 242736	Noshiro S.
 242744	Noshiro 1st
@@ -1456,7 +1456,7 @@
 243724	Senboku Gak.
 243736	Senboku Gkn.
 243748	Senboku Tech
-243760	Senboku C.
+243760	Senboku Cm.
 243776	Senboku East
 243784	Senboku West
 243792	Senboku S.
@@ -1473,7 +1473,7 @@
 243916	Katagami G.
 243928	Katagami Gn
 243940	Katagami T.
-243952	Katagami C.
+243952	Katagami Cm.
 243968	Katagami E.
 243976	Katagami W.
 243984	Katagami S.
@@ -1485,7 +1485,7 @@
 244048	Katagami Ag.
 244060	Katagami El.
 244072	Katagami Sh.
-244084	Katagami C.
+244084	Katagami Ch
 244096	Katagami Gj
 244112	Uzen
 244120	Shonai
@@ -1533,7 +1533,7 @@
 244556	Shonai Gij.
 244568	Tsuruoka G.
 244580	Tsuruoka Gn
-244592	Tsuruoka C.
+244592	Tsuruoka Cm.
 244608	Tsuruoka W.
 244616	Tsuruoka 1st
 244628	Tsuruoka J.
@@ -1617,7 +1617,7 @@
 245524	Murayama G.
 245536	Murayama Gn
 245548	Murayama T.
-245560	Murayama C.
+245560	Murayama Cm.
 245576	Murayama E.
 245584	Murayama W.
 245592	Murayama S.
@@ -1628,7 +1628,7 @@
 245644	Murayama U.
 245656	Murayama El.
 245668	Murayama Sh.
-245680	Murayama C.
+245680	Murayama Ch
 245692	Murayama Gj
 245704	Mogami Gak.
 245716	Mogami Gkn.
@@ -1684,7 +1684,7 @@
 246276	Okitama Gak.
 246288	Okitama Gkn.
 246300	Okitama Tech
-246312	Okitama C.
+246312	Okitama Cm.
 246328	Okitama East
 246336	Okitama West
 246344	Okitama S.
@@ -1698,7 +1698,7 @@
 246432	Okitama Chuo
 246444	Okitama Gij.
 246456	Yamagata G.
-246468	Yamagata C.
+246468	Yamagata Cm.
 246480	Yamagata 1st
 246492	Yamagata J.
 246504	Yamagata M.
@@ -1715,7 +1715,7 @@
 246624	Iwashiro G.
 246636	Iwashiro Gn
 246648	Iwashiro T.
-246660	Iwashiro C.
+246660	Iwashiro Cm.
 246672	Iwashiro E.
 246680	Iwashiro W.
 246688	Iwashiro S.
@@ -1727,7 +1727,7 @@
 246752	Iwashiro Ag.
 246764	Iwashiro El.
 246776	Iwashiro Sh.
-246788	Iwashiro C.
+246788	Iwashiro Ch
 246800	Iwashiro Gj
 246812	Aizu Gakuen
 246824	Aizu Gakuin
@@ -1767,7 +1767,7 @@
 247220	Kitakata Ag.
 247232	Kitakata El.
 247244	Kitakata Sh.
-247256	Kitakata C.
+247256	Kitakata Ch
 247268	Kitakata Gj
 247280	Wakamatsu G.
 247292	Wakamatsu Gn
@@ -1782,7 +1782,7 @@
 247388	Wakamats Ag.
 247400	Wakamats El.
 247412	Wakamats Sh.
-247424	Wakamatsu C.
+247424	Wakamatsu Ch
 247436	Wakamatsu Gj
 247448	Soma Gakuen
 247460	Soma Gakuin
@@ -1819,7 +1819,7 @@
 247804	Shirakawa G.
 247816	Shirakawa Gn
 247828	Shirakawa T.
-247840	Shirakawa C.
+247840	Shirakaw Cm.
 247856	Shirakawa E.
 247864	Shirakawa W.
 247872	Shirakawa S.
@@ -1830,12 +1830,12 @@
 247924	Shirakaw Ag.
 247936	Shirakaw El.
 247948	Shirakaw Sh.
-247960	Shirakawa C.
+247960	Shirakawa Ch
 247972	Shirakawa Gj
 248192	Sukagawa G.
 248204	Sukagawa Gn
 248216	Sukagawa T.
-248228	Sukagawa C.
+248228	Sukagawa Cm.
 248240	Sukagawa E.
 248252	Sukagawa W.
 248264	Sukagawa S.
@@ -1847,7 +1847,7 @@
 248340	Sukagawa Ag.
 248352	Sukagawa El.
 248364	Sukagawa Sh.
-248376	Sukagawa C.
+248376	Sukagawa Ch
 248388	Sukagawa Gj
 248400	Tamura Gak.
 248412	Tamura Gkn.
@@ -1868,7 +1868,7 @@
 248576	Tamura Gij.
 248588	Nihonmats G.
 248600	Nihonmats Gn
-248612	Nihonmats C.
+248612	Nihonmat Cm.
 248624	Nihonmats E.
 248636	Nihonmats W.
 248648	Nihonmats S.
@@ -1880,7 +1880,7 @@
 248724	Nihonmat Ag.
 248736	Nihonmat El.
 248748	Nihonmat Sh.
-248760	Nihonmats C.
+248760	Nihonmats Ch
 248772	Nihonmats Gj
 248784	Iwaki Gakuen
 248796	Iwaki Gakuin
@@ -1944,7 +1944,7 @@
 249428	Tsukuba Gak.
 249440	Tsukuba Gkn.
 249452	Tsukuba Tech
-249464	Tsukuba C.
+249464	Tsukuba Cm.
 249480	Tsukuba East
 249488	Tsukuba West
 249496	Tsukuba S.
@@ -1961,7 +1961,7 @@
 249620	Kashima Gak.
 249632	Kashima Gkn.
 249644	Kashima Tech
-249656	Kashima C.
+249656	Kashima Cm.
 249672	Kashima East
 249680	Kashima West
 249688	Kashima S.
@@ -1993,7 +1993,7 @@
 249980	Koga Gijuku
 249992	Tsuchiura G.
 250004	Tsuchiura Gn
-250016	Tsuchiura C.
+250016	Tsuchiur Cm.
 250032	Tsuchiura E.
 250040	Tsuchiura W.
 250048	Tsuchiura S.
@@ -2004,11 +2004,11 @@
 250100	Tsuchiur Ag.
 250112	Tsuchiur El.
 250124	Tsuchiur Sh.
-250136	Tsuchiura C.
+250136	Tsuchiura Ch
 250148	Tsuchiura Gj
 250160	Shimodate G.
 250172	Shimodate Gn
-250184	Shimodate C.
+250184	Shimodat Cm.
 250200	Shimodate E.
 250208	Shimodate W.
 250216	Shimodate S.
@@ -2019,7 +2019,7 @@
 250268	Shimodat Ag.
 250280	Shimodat El.
 250292	Shimodat Sh.
-250304	Shimodate C.
+250304	Shimodate Ch
 250316	Shimodate Gj
 250328	Hitachi Gak.
 250340	Hitachi Gkn.
@@ -2053,7 +2053,7 @@
 250648	Hitachina G.
 250664	Hitachina Gn
 250680	Hitachina T.
-250696	Hitachina C.
+250696	Hitachin Cm.
 250712	Hitachina E.
 250728	Hitachina W.
 250744	Hitachina S.
@@ -2065,7 +2065,7 @@
 250848	Hitachin Ag.
 250864	Hitachin El.
 250880	Hitachin Sh.
-250896	Hitachina C.
+250896	Hitachina Ch
 250912	Hitachina Gj
 250928	Kasama Gak.
 250940	Kasama Gkn.
@@ -2119,7 +2119,7 @@
 251476	Sakuragaw G.
 251488	Sakuragaw Gn
 251500	Sakuragaw T.
-251512	Sakuragaw C.
+251512	Sakuraga Cm.
 251528	Sakuragaw E.
 251536	Sakuragaw W.
 251544	Sakuragaw S.
@@ -2131,12 +2131,12 @@
 251608	Sakuraga Ag.
 251620	Sakuraga El.
 251632	Sakuraga Sh.
-251644	Sakuragaw C.
+251644	Sakuragaw Ch
 251656	Sakuragaw Gj
 251668	Shimotsum G.
 251680	Shimotsum Gn
 251692	Shimotsum T.
-251704	Shimotsum C.
+251704	Shimotsu Cm.
 251720	Shimotsum E.
 251728	Shimotsum W.
 251736	Shimotsum S.
@@ -2147,7 +2147,7 @@
 251788	Shimotsu Ag.
 251800	Shimotsu El.
 251812	Shimotsu Sh.
-251824	Shimotsum C.
+251824	Shimotsum Ch
 251836	Shimotsum Gj
 251848	Toride Gak.
 251860	Toride Gkn.
@@ -2183,7 +2183,7 @@
 252192	Ibaraki Gak.
 252204	Ibaraki Gkn.
 252216	Ibaraki Tech
-252228	Ibaraki C.
+252228	Ibaraki Cm.
 252240	Ibaraki West
 252248	Ibaraki S.
 252256	Ibaraki N.
@@ -2242,7 +2242,7 @@
 252860	Utsunomi Ag.
 252872	Utsunomi El.
 252884	Utsunomi Sh.
-252896	Utsunomiy C.
+252896	Utsunomiy Ch
 252908	Utsunomiy Gj
 252920	Ashikaga G.
 252932	Ashikaga Gn
@@ -2255,7 +2255,7 @@
 253008	Ashikaga Ag.
 253020	Ashikaga El.
 253032	Ashikaga Sh.
-253044	Ashikaga C.
+253044	Ashikaga Ch
 253056	Ashikaga Gj
 253068	Kanuma Gak.
 253080	Kanuma Gkn.
@@ -2337,7 +2337,7 @@
 253964	Otawara Gak.
 253976	Otawara Gkn.
 253988	Otawara Tech
-254000	Otawara C.
+254000	Otawara Cm.
 254012	Otawara West
 254024	Otawara S.
 254036	Otawara N.
@@ -2438,7 +2438,7 @@
 255096	Minakami G.
 255108	Minakami Gn
 255120	Minakami T.
-255132	Minakami C.
+255132	Minakami Cm.
 255144	Minakami E.
 255152	Minakami W.
 255160	Minakami S.
@@ -2450,7 +2450,7 @@
 255224	Minakami Ag.
 255236	Minakami El.
 255248	Minakami Sh.
-255260	Minakami C.
+255260	Minakami Ch
 255272	Minakami Gj
 255284	Numata Gak.
 255296	Numata Gkn.
@@ -2479,12 +2479,12 @@
 255560	Maebashi Ag.
 255572	Maebashi El.
 255584	Maebashi Sh.
-255596	Maebashi C.
+255596	Maebashi Ch
 255608	Maebashi Gj
 255620	Tatebayas G.
 255632	Tatebayas Gn
 255644	Tatebayas T.
-255656	Tatebayas C.
+255656	Tatebaya Cm.
 255672	Tatebayas E.
 255680	Tatebayas W.
 255688	Tatebayas S.
@@ -2495,7 +2495,7 @@
 255740	Tatebayas U.
 255752	Tatebaya Ag.
 255764	Tatebaya El.
-255776	Tatebayas C.
+255776	Tatebayas Ch
 255788	Tatebayas Gj
 255800	Isesaki Gak.
 255812	Isesaki Gkn.
@@ -2522,11 +2522,11 @@
 256064	Takasaki Ag.
 256076	Takasaki El.
 256088	Takasaki Sh.
-256100	Takasaki C.
+256100	Takasaki Ch
 256112	Takasaki Gj
 256124	Shibukawa G.
 256136	Shibukawa Gn
-256148	Shibukawa C.
+256148	Shibukaw Cm.
 256160	Shibukawa E.
 256168	Shibukawa W.
 256176	Shibukawa S.
@@ -2538,11 +2538,11 @@
 256240	Shibukaw Ag.
 256252	Shibukaw El.
 256264	Shibukaw Sh.
-256276	Shibukawa C.
+256276	Shibukawa Ch
 256288	Shibukawa Gj
 256300	Fujioka Gak.
 256312	Fujioka Gkn.
-256324	Fujioka C.
+256324	Fujioka Cm.
 256336	Fujioka East
 256344	Fujioka West
 256352	Fujioka S.
@@ -2573,7 +2573,7 @@
 256632	Tomioka Gak.
 256644	Tomioka Gkn.
 256656	Tomioka Tech
-256668	Tomioka C.
+256668	Tomioka Cm.
 256680	Tomioka West
 256688	Tomioka S.
 256696	Tomioka N.
@@ -2588,7 +2588,7 @@
 256800	Shirane Gak.
 256812	Shirane Gkn.
 256824	Shirane Tech
-256836	Shirane C.
+256836	Shirane Cm.
 256848	Shirane East
 256860	Shirane West
 256872	Shirane S.
@@ -2605,7 +2605,7 @@
 257008	Kusatsu Gak.
 257020	Kusatsu Gkn.
 257032	Kusatsu Tech
-257044	Kusatsu C.
+257044	Kusatsu Cm.
 257056	Kusatsu East
 257064	Kusatsu West
 257072	Kusatsu S.
@@ -2671,7 +2671,7 @@
 257764	Chichibu G.
 257776	Chichibu Gn
 257788	Chichibu T.
-257800	Chichibu C.
+257800	Chichibu Cm.
 257816	Chichibu E.
 257824	Chichibu W.
 257832	Chichibu S.
@@ -2683,7 +2683,7 @@
 257896	Chichibu Ag.
 257908	Chichibu El.
 257920	Chichibu Sh.
-257932	Chichibu C.
+257932	Chichibu Ch
 257944	Chichibu Gj
 257956	Tokorozaw G.
 257968	Tokorozaw Gn
@@ -2699,7 +2699,7 @@
 258084	Tokorozaw Gj
 258096	Kawagoe Gak.
 258108	Kawagoe Gkn.
-258120	Kawagoe C.
+258120	Kawagoe Cm.
 258136	Kawagoe N.
 258144	Kawagoe 1st
 258156	Kawagoe J.
@@ -2739,7 +2739,7 @@
 258556	Fujimino G.
 258572	Fujimino Gn
 258588	Fujimino T.
-258604	Fujimino C.
+258604	Fujimino Cm.
 258620	Fujimino E.
 258632	Fujimino W.
 258644	Fujimino S.
@@ -2751,7 +2751,7 @@
 258736	Fujimino Ag.
 258752	Fujimino El.
 258768	Fujimino Sh.
-258784	Fujimino C.
+258784	Fujimino Ch
 258800	Fujimino Gj
 258816	Hidaka Gak.
 258828	Hidaka Gkn.
@@ -2772,7 +2772,7 @@
 258992	Hidaka Gij.
 259004	Kawaguchi G.
 259016	Kawaguchi Gn
-259028	Kawaguchi C.
+259028	Kawaguch Cm.
 259040	Kawaguchi W.
 259048	Kawaguchi S.
 259056	Kawaguchi 1
@@ -2782,7 +2782,7 @@
 259104	Kawaguch Ag.
 259116	Kawaguch El.
 259128	Kawaguch Sh.
-259140	Kawaguchi C.
+259140	Kawaguchi Ch
 259152	Kawaguchi Gj
 259164	Sayama Gak.
 259176	Sayama Gkn.
@@ -2803,7 +2803,7 @@
 259340	Koshigaya G.
 259352	Koshigaya Gn
 259364	Koshigaya T.
-259376	Koshigaya C.
+259376	Koshigay Cm.
 259388	Koshigaya 1
 259400	Koshigaya J.
 259412	Koshigaya M.
@@ -2811,7 +2811,7 @@
 259436	Koshigay Ag.
 259448	Koshigay El.
 259460	Koshigay Sh.
-259472	Koshigaya C.
+259472	Koshigaya Ch
 259484	Koshigaya Gj
 259496	Kumagaya G.
 259508	Kumagaya Gn
@@ -2824,7 +2824,7 @@
 259580	Kumagaya U.
 259592	Kumagaya El.
 259604	Kumagaya Sh.
-259616	Kumagaya C.
+259616	Kumagaya Ch
 259628	Kumagaya Gj
 259640	Hanyu Gakuen
 259652	Hanyu Gakuin
@@ -2858,7 +2858,7 @@
 259972	Kitamoto G.
 259984	Kitamoto Gn
 259996	Kitamoto T.
-260008	Kitamoto C.
+260008	Kitamoto Cm.
 260024	Kitamoto E.
 260032	Kitamoto W.
 260040	Kitamoto S.
@@ -2870,7 +2870,7 @@
 260104	Kitamoto Ag.
 260116	Kitamoto El.
 260128	Kitamoto Sh.
-260140	Kitamoto C.
+260140	Kitamoto Ch
 260152	Kitamoto Gj
 260164	Ageo Gakuen
 260176	Ageo Gakuin
@@ -2905,7 +2905,7 @@
 260512	Asaka Gijuku
 260524	Kasukabe G.
 260536	Kasukabe Gn
-260548	Kasukabe C.
+260548	Kasukabe Cm.
 260560	Kasukabe W.
 260572	Kasukabe S.
 260584	Kasukabe N.
@@ -2916,7 +2916,7 @@
 260648	Kasukabe Ag.
 260660	Kasukabe El.
 260672	Kasukabe Sh.
-260684	Kasukabe C.
+260684	Kasukabe Ch
 260696	Kasukabe Gj
 260712	Katsuura
 260720	Makuhari
@@ -2941,7 +2941,7 @@
 260924	Katsuura G.
 260936	Katsuura Gn
 260948	Katsuura T.
-260960	Katsuura C.
+260960	Katsuura Cm.
 260976	Katsuura E.
 260984	Katsuura W.
 260992	Katsuura S.
@@ -2953,12 +2953,12 @@
 261056	Katsuura Ag.
 261068	Katsuura El.
 261080	Katsuura Sh.
-261092	Katsuura C.
+261092	Katsuura Ch
 261104	Katsuura Gj
 261116	Tateyama G.
 261128	Tateyama Gn
 261140	Tateyama T.
-261152	Tateyama C.
+261152	Tateyama Cm.
 261168	Tateyama E.
 261176	Tateyama W.
 261184	Tateyama S.
@@ -2970,12 +2970,12 @@
 261248	Tateyama Ag.
 261260	Tateyama El.
 261272	Tateyama Sh.
-261284	Tateyama C.
+261284	Tateyama Ch
 261296	Tateyama Gj
 261308	Kisarazu G.
 261320	Kisarazu Gn
 261332	Kisarazu T.
-261344	Kisarazu C.
+261344	Kisarazu Cm.
 261356	Kisarazu W.
 261368	Kisarazu S.
 261380	Kisarazu N.
@@ -2986,7 +2986,7 @@
 261444	Kisarazu Ag.
 261456	Kisarazu El.
 261468	Kisarazu Sh.
-261480	Kisarazu C.
+261480	Kisarazu Ch
 261492	Kisarazu Gj
 261504	Choshi Gak.
 261516	Choshi Gkn.
@@ -3006,7 +3006,7 @@
 261672	Kashiwa Gak.
 261680	Kashiwa Gkn.
 261688	Kashiwa Tech
-261696	Kashiwa C.
+261696	Kashiwa Cm.
 261704	Kashiwa East
 261712	Kashiwa 1st
 261720	Kashiwa J.
@@ -3030,7 +3030,7 @@
 261916	Makuhari G.
 261928	Makuhari Gn
 261940	Makuhari T.
-261952	Makuhari C.
+261952	Makuhari Cm.
 261968	Makuhari E.
 261976	Makuhari W.
 261984	Makuhari S.
@@ -3042,12 +3042,12 @@
 262048	Makuhari Ag.
 262060	Makuhari El.
 262072	Makuhari Sh.
-262084	Makuhari C.
+262084	Makuhari Ch
 262096	Makuhari Gj
 262108	Kujukuri G.
 262124	Kujukuri Gn
 262140	Kujukuri T.
-262156	Kujukuri C.
+262156	Kujukuri Cm.
 262172	Kujukuri E.
 262184	Kujukuri W.
 262196	Kujukuri S.
@@ -3059,12 +3059,12 @@
 262288	Kujukuri Ag.
 262304	Kujukuri El.
 262320	Kujukuri Sh.
-262336	Kujukuri C.
+262336	Kujukuri Ch
 262352	Kujukuri Gj
 262368	Kamogawa G.
 262380	Kamogawa Gn
 262392	Kamogawa T.
-262404	Kamogawa C.
+262404	Kamogawa Cm.
 262416	Kamogawa E.
 262424	Kamogawa W.
 262432	Kamogawa S.
@@ -3076,12 +3076,12 @@
 262496	Kamogawa Ag.
 262508	Kamogawa El.
 262520	Kamogawa Sh.
-262532	Kamogawa C.
+262532	Kamogawa Ch
 262544	Kamogawa Gj
 262556	Ichihara G.
 262568	Ichihara Gn
 262580	Ichihara T.
-262592	Ichihara C.
+262592	Ichihara Cm.
 262608	Ichihara E.
 262616	Ichihara W.
 262624	Ichihara S.
@@ -3097,7 +3097,7 @@
 262736	Urayasu Gak.
 262748	Urayasu Gkn.
 262760	Urayasu Tech
-262772	Urayasu C.
+262772	Urayasu Cm.
 262784	Urayasu East
 262792	Urayasu West
 262800	Urayasu N.
@@ -3113,7 +3113,7 @@
 262916	Yachiyo Gak.
 262928	Yachiyo Gkn.
 262940	Yachiyo Tech
-262952	Yachiyo C.
+262952	Yachiyo Cm.
 262964	Yachiyo S.
 262976	Yachiyo N.
 262988	Yachiyo 1st
@@ -3159,7 +3159,7 @@
 263476	Narashino G.
 263488	Narashino Gn
 263500	Narashino T.
-263512	Narashino C.
+263512	Narashin Cm.
 263524	Narashino E.
 263536	Narashino W.
 263548	Narashino S.
@@ -3171,12 +3171,12 @@
 263624	Narashin Ag.
 263636	Narashin El.
 263648	Narashin Sh.
-263660	Narashino C.
+263660	Narashino Ch
 263672	Narashino Gj
 263684	Funabashi G.
 263696	Funabashi Gn
 263708	Funabashi T.
-263720	Funabashi C.
+263720	Funabash Cm.
 263736	Funabashi S.
 263744	Funabashi 1
 263756	Funabashi J.
@@ -3185,7 +3185,7 @@
 263792	Funabash Ag.
 263804	Funabash El.
 263816	Funabash Sh.
-263828	Funabashi C.
+263828	Funabashi Ch
 263840	Funabashi Gj
 263856	Edo
 263864	Dai-Nippon
@@ -3217,7 +3217,7 @@
 264124	Dai-Nippo G.
 264136	Dai-Nippo Gn
 264148	Dai-Nippo T.
-264160	Dai-Nippo C.
+264160	Dai-Nipp Cm.
 264172	Dai-Nippo E.
 264184	Dai-Nippo W.
 264196	Dai-Nippo S.
@@ -3229,12 +3229,12 @@
 264272	Dai-Nipp Ag.
 264284	Dai-Nipp El.
 264296	Dai-Nipp Sh.
-264308	Dai-Nippo C.
+264308	Dai-Nippo Ch
 264320	Dai-Nippo Gj
 264332	Big City G.
 264344	Big City Gn
 264356	Big City T.
-264368	Big City C.
+264368	Big City Cm.
 264380	Big City E.
 264392	Big City W.
 264404	Big City S.
@@ -3246,7 +3246,7 @@
 264480	Big City Ag.
 264492	Big City El.
 264504	Big City Sh.
-264516	Big City C.
+264516	Big City Ch
 264528	Big City Gj
 264540	Katsushik G.
 264552	Katsushik Gn
@@ -3262,7 +3262,7 @@
 264656	Katsushi Ag.
 264668	Katsushi El.
 264680	Katsushi Sh.
-264692	Katsushik C.
+264692	Katsushik Ch
 264704	Katsushik Gj
 264716	Adachi Gkn.
 264728	Adachi Comm.
@@ -3294,7 +3294,7 @@
 265020	Nerima Chuo
 265032	Nerima Gij.
 265044	Suginami G.
-265056	Suginami C.
+265056	Suginami Cm.
 265072	Suginami E.
 265080	Suginami W.
 265088	Suginami S.
@@ -3306,12 +3306,12 @@
 265152	Suginami Ag.
 265164	Suginami El.
 265176	Suginami Sh.
-265188	Suginami C.
+265188	Suginami Ch
 265200	Suginami Gj
 265212	Shinagawa G.
 265224	Shinagawa Gn
 265236	Shinagawa T.
-265248	Shinagawa C.
+265248	Shinagaw Cm.
 265264	Shinagawa E.
 265272	Shinagawa W.
 265280	Shinagawa S.
@@ -3323,12 +3323,12 @@
 265344	Shinagaw Ag.
 265356	Shinagaw El.
 265368	Shinagaw Sh.
-265380	Shinagawa C.
+265380	Shinagawa Ch
 265392	Shinagawa Gj
 265404	Shibuya Gak.
 265416	Shibuya Gkn.
 265428	Shibuya Tech
-265440	Shibuya C.
+265440	Shibuya Cm.
 265456	Shibuya East
 265464	Shibuya West
 265472	Shibuya S.
@@ -3345,7 +3345,7 @@
 265596	Shinjuku G.
 265608	Shinjuku Gn
 265620	Shinjuku T.
-265632	Shinjuku C.
+265632	Shinjuku Cm.
 265648	Shinjuku E.
 265656	Shinjuku W.
 265664	Shinjuku S.
@@ -3357,7 +3357,7 @@
 265728	Shinjuku Ag.
 265740	Shinjuku El.
 265752	Shinjuku Sh.
-265764	Shinjuku C.
+265764	Shinjuku Ch
 265776	Shinjuku Gj
 265788	Meguro Gak.
 265800	Meguro Tech
@@ -3378,7 +3378,7 @@
 265964	Chiyoda Gak.
 265976	Chiyoda Gkn.
 265988	Chiyoda Tech
-266000	Chiyoda C.
+266000	Chiyoda Cm.
 266012	Chiyoda East
 266024	Chiyoda West
 266036	Chiyoda S.
@@ -3412,7 +3412,7 @@
 266364	Roppongi G.
 266376	Roppongi Gn
 266388	Roppongi T.
-266400	Roppongi C.
+266400	Roppongi Cm.
 266412	Roppongi E.
 266424	Roppongi W.
 266436	Roppongi S.
@@ -3424,7 +3424,7 @@
 266512	Roppongi Ag.
 266524	Roppongi El.
 266536	Roppongi Sh.
-266548	Roppongi C.
+266548	Roppongi Ch
 266560	Roppongi Gj
 266572	Ota Gakuen
 266584	Ota Gakuin
@@ -3446,7 +3446,7 @@
 266764	Ogasawara G.
 266776	Ogasawara Gn
 266788	Ogasawara T.
-266800	Ogasawara C.
+266800	Ogasawar Cm.
 266812	Ogasawara E.
 266824	Ogasawara W.
 266836	Ogasawara S.
@@ -3458,12 +3458,12 @@
 266912	Ogasawar Ag.
 266924	Ogasawar El.
 266936	Ogasawar Sh.
-266948	Ogasawara C.
+266948	Ogasawara Ch
 266960	Ogasawara Gj
 266972	Kagurazak G.
 266984	Kagurazak Gn
 266996	Kagurazak T.
-267008	Kagurazak C.
+267008	Kaguraza Cm.
 267020	Kagurazak E.
 267032	Kagurazak W.
 267044	Kagurazak S.
@@ -3475,7 +3475,7 @@
 267120	Kaguraza Ag.
 267132	Kaguraza El.
 267144	Kaguraza Sh.
-267156	Kagurazak C.
+267156	Kagurazak Ch
 267168	Kagurazak Gj
 267184	Akiruno
 267200	Hinode
@@ -3485,7 +3485,7 @@
 267240	Chofu
 267248	Hachioji G.
 267260	Hachioji Gn
-267272	Hachioji C.
+267272	Hachioji Cm.
 267284	Hachioji W.
 267296	Hachioji S.
 267308	Hachioji 1st
@@ -3495,7 +3495,7 @@
 267360	Hachioji Ag.
 267372	Hachioji El.
 267384	Hachioji Sh.
-267396	Hachioji C.
+267396	Hachioji Ch
 267408	Hachioji Gj
 267420	Tama Gakuen
 267432	Tama Gakuin
@@ -3516,7 +3516,7 @@
 267596	Akiruno Gak.
 267612	Akiruno Gkn.
 267628	Akiruno Tech
-267644	Akiruno C.
+267644	Akiruno Cm.
 267660	Akiruno East
 267672	Akiruno West
 267684	Akiruno S.
@@ -3550,7 +3550,7 @@
 268064	Musashino G.
 268076	Musashino Gn
 268088	Musashino T.
-268100	Musashino C.
+268100	Musashin Cm.
 268112	Musashino E.
 268124	Musashino W.
 268136	Musashino S.
@@ -3561,12 +3561,12 @@
 268200	Musashin Ag.
 268212	Musashin El.
 268224	Musashin Sh.
-268236	Musashino C.
+268236	Musashino Ch
 268248	Musashino Gj
 268260	Kunitachi G.
 268272	Kunitachi Gn
 268284	Kunitachi T.
-268296	Kunitachi C.
+268296	Kunitach Cm.
 268312	Kunitachi E.
 268320	Kunitachi W.
 268328	Kunitachi S.
@@ -3578,28 +3578,28 @@
 268392	Kunitach Ag.
 268404	Kunitach El.
 268416	Kunitach Sh.
-268428	Kunitachi C.
+268428	Kunitachi Ch
 268440	Kunitachi Gj
 268452	Higashimu G.
 268464	Higashimu Gn
 268476	Higashimu T.
-268488	Higashimu C.
+268488	Higashim Cm.
 268500	Higashimu E.
 268512	Higashimu S.
 268524	Higashimu N.
-268536	Higashimur 1
+268536	H-Murayama 1
 268548	Higashimu J.
 268560	Higashimu M.
 268572	Higashimu U.
 268588	Higashim Ag.
 268600	Higashim El.
 268612	Higashim Sh.
-268624	Higashimu C.
+268624	Higashimu Ch
 268636	Higashimu Gj
 268648	Kokubunji G.
 268660	Kokubunji Gn
 268672	Kokubunji T.
-268684	Kokubunji C.
+268684	Kokubunj Cm.
 268696	Kokubunji E.
 268708	Kokubunji W.
 268720	Kokubunji S.
@@ -3611,7 +3611,7 @@
 268796	Kokubunj Ag.
 268808	Kokubunj El.
 268820	Kokubunj Sh.
-268832	Kokubunji C.
+268832	Kokubunji Ch
 268844	Kokubunji Gj
 268856	Hino Gakuen
 268868	Hino Gakuin
@@ -3648,7 +3648,7 @@
 269216	Ome Gijuku
 269420	Machida Gak.
 269432	Machida Gkn.
-269444	Machida C.
+269444	Machida Cm.
 269456	Machida East
 269464	Machida West
 269472	Machida S.
@@ -3679,7 +3679,7 @@
 269756	Akishima G.
 269768	Akishima Gn
 269780	Akishima T.
-269792	Akishima C.
+269792	Akishima Cm.
 269808	Akishima E.
 269816	Akishima W.
 269824	Akishima S.
@@ -3691,7 +3691,7 @@
 269888	Akishima Ag.
 269900	Akishima El.
 269912	Akishima Sh.
-269924	Akishima C.
+269924	Akishima Ch
 269936	Akishima Gj
 269948	Arakawa Gak.
 269960	Arakawa Gkn.
@@ -3762,7 +3762,7 @@
 270680	Shonan Gij.
 270692	Kamakura Gn
 270704	Kamakura T.
-270716	Kamakura C.
+270716	Kamakura Cm.
 270728	Kamakura E.
 270736	Kamakura W.
 270744	Kamakura S.
@@ -3774,7 +3774,7 @@
 270808	Kamakura Ag.
 270820	Kamakura El.
 270832	Kamakura Sh.
-270844	Kamakura C.
+270844	Kamakura Ch
 270856	Kamakura Gj
 270868	Yokohama Gn
 270880	Yokohama E.
@@ -3788,11 +3788,11 @@
 270960	Yokohama Ag.
 270972	Yokohama El.
 270984	Yokohama Sh.
-270996	Yokohama C.
+270996	Yokohama Ch
 271008	Yokohama Gj
 271020	Kawasaki G.
 271032	Kawasaki Gn
-271044	Kawasaki C.
+271044	Kawasaki Cm.
 271056	Kawasaki E.
 271064	Kawasaki W.
 271072	Kawasaki S.
@@ -3803,10 +3803,10 @@
 271128	Kawasaki Ag.
 271140	Kawasaki El.
 271152	Kawasaki Sh.
-271164	Kawasaki C.
+271164	Kawasaki Ch
 271176	Kawasaki Gj
 271188	Yokosuka G.
-271200	Yokosuka C.
+271200	Yokosuka Cm.
 271212	Yokosuka E.
 271224	Yokosuka W.
 271236	Yokosuka S.
@@ -3818,12 +3818,12 @@
 271312	Yokosuka Ag.
 271324	Yokosuka El.
 271336	Yokosuka Sh.
-271348	Yokosuka C.
+271348	Yokosuka Ch
 271360	Yokosuka Gj
 271372	Chigasaki G.
 271384	Chigasaki Gn
 271396	Chigasaki T.
-271408	Chigasaki C.
+271408	Chigasak Cm.
 271420	Chigasaki E.
 271432	Chigasaki W.
 271444	Chigasaki S.
@@ -3835,12 +3835,12 @@
 271520	Chigasak Ag.
 271532	Chigasak El.
 271544	Chigasak Sh.
-271556	Chigasaki C.
+271556	Chigasaki Ch
 271568	Chigasaki Gj
 271580	Odawara Gak.
 271592	Odawara Gkn.
 271604	Odawara Tech
-271616	Odawara C.
+271616	Odawara Cm.
 271628	Odawara East
 271640	Odawara West
 271652	Odawara S.
@@ -3891,7 +3891,7 @@
 272172	Enoshima G.
 272184	Enoshima Gn
 272196	Enoshima T.
-272208	Enoshima C.
+272208	Enoshima Cm.
 272220	Enoshima E.
 272232	Enoshima W.
 272244	Enoshima S.
@@ -3903,12 +3903,12 @@
 272320	Enoshima Ag.
 272332	Enoshima El.
 272344	Enoshima Sh.
-272356	Enoshima C.
+272356	Enoshima Ch
 272368	Enoshima Gj
 272380	Ashigara G.
 272392	Ashigara Gn
 272404	Ashigara T.
-272416	Ashigara C.
+272416	Ashigara Cm.
 272432	Ashigara E.
 272440	Ashigara W.
 272448	Ashigara S.
@@ -3920,7 +3920,7 @@
 272512	Ashigara Ag.
 272524	Ashigara El.
 272536	Ashigara Sh.
-272548	Ashigara C.
+272548	Ashigara Ch
 272560	Ashigara Gj
 272572	Hiratsuka Gn
 272584	Hiratsuka E.
@@ -3933,11 +3933,11 @@
 272652	Hiratsuka U.
 272664	Hiratsuk El.
 272676	Hiratsuk Sh.
-272688	Hiratsuka C.
+272688	Hiratsuka Ch
 272700	Hiratsuka Gj
 272712	Fujisawa G.
 272724	Fujisawa Gn
-272736	Fujisawa C.
+272736	Fujisawa Cm.
 272752	Fujisawa E.
 272760	Fujisawa S.
 272768	Fujisawa 1st
@@ -3947,7 +3947,7 @@
 272816	Fujisawa Ag.
 272828	Fujisawa El.
 272840	Fujisawa Sh.
-272852	Fujisawa C.
+272852	Fujisawa Ch
 272864	Fujisawa Gj
 272876	Ebina Gakuen
 272888	Ebina Gakuin
@@ -3978,7 +3978,7 @@
 273192	Atsugi Shoko
 273204	Atsugi Gij.
 273216	Kanagawa Gn
-273228	Kanagawa C.
+273228	Kanagawa Cm.
 273240	Kanagawa E.
 273252	Kanagawa W.
 273264	Kanagawa S.
@@ -3990,7 +3990,7 @@
 273340	Kanagawa Ag.
 273352	Kanagawa El.
 273364	Kanagawa Sh.
-273376	Kanagawa C.
+273376	Kanagawa Ch
 273388	Kanagawa Gj
 273400	Kai
 273408	Kofu
@@ -4031,7 +4031,7 @@
 273792	Fuefuki Gak.
 273804	Fuefuki Gkn.
 273816	Fuefuki Tech
-273828	Fuefuki C.
+273828	Fuefuki Cm.
 273840	Fuefuki East
 273848	Fuefuki West
 273856	Fuefuki S.
@@ -4047,7 +4047,7 @@
 273968	Fuefuki Gij.
 273980	Nirasaki G.
 273992	Nirasaki Gn
-274004	Nirasaki C.
+274004	Nirasaki Cm.
 274016	Nirasaki E.
 274024	Nirasaki W.
 274032	Nirasaki S.
@@ -4059,7 +4059,7 @@
 274096	Nirasaki Ag.
 274108	Nirasaki El.
 274120	Nirasaki Sh.
-274132	Nirasaki C.
+274132	Nirasaki Ch
 274144	Nirasaki Gj
 274156	Otsuki Gak.
 274168	Otsuki Gkn.
@@ -4098,7 +4098,7 @@
 274540	Yamanashi G.
 274552	Yamanashi Gn
 274564	Yamanashi T.
-274576	Yamanashi C.
+274576	Yamanash Cm.
 274592	Yamanashi E.
 274600	Yamanashi W.
 274608	Yamanashi S.
@@ -4110,7 +4110,7 @@
 274672	Yamanash Ag.
 274684	Yamanash El.
 274696	Yamanash Sh.
-274708	Yamanashi C.
+274708	Yamanashi Ch
 274720	Yamanashi Gj
 274732	Hokuto Gak.
 274744	Hokuto Gkn.
@@ -4149,7 +4149,7 @@
 275184	Uenohara G.
 275196	Uenohara Gn
 275208	Uenohara T.
-275220	Uenohara C.
+275220	Uenohara Cm.
 275232	Uenohara E.
 275244	Uenohara W.
 275256	Uenohara S.
@@ -4161,7 +4161,7 @@
 275332	Uenohara Ag.
 275344	Uenohara El.
 275356	Uenohara Sh.
-275368	Uenohara C.
+275368	Uenohara Ch
 275380	Uenohara Gj
 275392	Nanbu Gakuen
 275404	Nanbu Gakuin
@@ -4183,7 +4183,7 @@
 275580	Kiyosato G.
 275592	Kiyosato Gn
 275604	Kiyosato T.
-275616	Kiyosato C.
+275616	Kiyosato Cm.
 275632	Kiyosato E.
 275640	Kiyosato W.
 275648	Kiyosato S.
@@ -4195,7 +4195,7 @@
 275712	Kiyosato Ag.
 275724	Kiyosato El.
 275736	Kiyosato Sh.
-275748	Kiyosato C.
+275748	Kiyosato Ch
 275760	Kiyosato Gj
 275772	Minobu Gak.
 275784	Minobu Gkn.
@@ -4286,26 +4286,26 @@
 276744	Sado Shoko
 276756	Sado Central
 276768	Sado Gijuku
-276780	Sado Gakuen
-276792	Sado Gakuin
-276804	Sado Tech
-276816	Sado Comm.
-276828	Sado East
-276840	Sado West
-276852	Sado South
-276864	Sado North
-276876	Sado Daiichi
-276888	Sado Jitsu.
-276900	Sado Marine
-276912	Sado Univ.
-276928	Sado Agri
-276940	Sado Elec
-276952	Sado Shoko
-276964	Sado Central
-276976	Sado Gijuku
+276780	Sadogashi G.
+276792	Sadogashi Gn
+276804	Sadogashi T.
+276816	Sadogash Cm.
+276828	Sadogashi E.
+276840	Sadogashi W.
+276852	Sadogashi S.
+276864	Sadogashi N.
+276876	Sadogashim 1
+276888	Sadogashi J.
+276900	Sadogashi M.
+276912	Sadogashi U.
+276928	Sadogash Ag.
+276940	Sadogash El.
+276952	Sadogash Sh.
+276964	Sadogashi Ch
+276976	Sadogashi Gj
 276988	Kashiwaza G.
 277000	Kashiwaza Gn
-277012	Kashiwaza C.
+277012	Kashiwaz Cm.
 277024	Kashiwaza E.
 277032	Kashiwaza W.
 277040	Kashiwaza S.
@@ -4317,12 +4317,12 @@
 277104	Kashiwaz Ag.
 277116	Kashiwaz El.
 277128	Kashiwaz Sh.
-277140	Kashiwaza C.
+277140	Kashiwaza Ch
 277152	Kashiwaza Gj
 277164	Mishima Gak.
 277176	Mishima Gkn.
 277188	Mishima Tech
-277200	Mishima C.
+277200	Mishima Cm.
 277216	Mishima East
 277224	Mishima West
 277232	Mishima S.
@@ -4362,7 +4362,7 @@
 277616	Itoigawa G.
 277628	Itoigawa Gn
 277640	Itoigawa T.
-277652	Itoigawa C.
+277652	Itoigawa Cm.
 277664	Itoigawa E.
 277676	Itoigawa W.
 277688	Itoigawa S.
@@ -4374,7 +4374,7 @@
 277764	Itoigawa Ag.
 277776	Itoigawa El.
 277788	Itoigawa Sh.
-277800	Itoigawa C.
+277800	Itoigawa Ch
 277812	Itoigawa Gj
 277824	Joetsu Gak.
 277836	Joetsu Gkn.
@@ -4413,7 +4413,7 @@
 278204	Tokamachi G.
 278216	Tokamachi Gn
 278228	Tokamachi T.
-278240	Tokamachi C.
+278240	Tokamach Cm.
 278252	Tokamachi E.
 278264	Tokamachi W.
 278276	Tokamachi S.
@@ -4425,7 +4425,7 @@
 278352	Tokamach Ag.
 278364	Tokamach El.
 278376	Tokamach Sh.
-278388	Tokamachi C.
+278388	Tokamachi Ch
 278400	Tokamachi Gj
 278412	Sanjo Gakuen
 278424	Sanjo Gakuin
@@ -4458,7 +4458,7 @@
 278740	Mitsuke Gak.
 278752	Mitsuke Gkn.
 278764	Mitsuke Tech
-278776	Mitsuke C.
+278776	Mitsuke Cm.
 278792	Mitsuke East
 278800	Mitsuke West
 278808	Mitsuke S.
@@ -4591,7 +4591,7 @@
 280244	Namerikaw G.
 280256	Namerikaw Gn
 280268	Namerikaw T.
-280280	Namerikaw C.
+280280	Namerika Cm.
 280296	Namerikaw E.
 280304	Namerikaw W.
 280312	Namerikaw S.
@@ -4603,7 +4603,7 @@
 280376	Namerika Ag.
 280388	Namerika El.
 280400	Namerika Sh.
-280412	Namerikaw C.
+280412	Namerikaw Ch
 280424	Namerikaw Gj
 280436	Uozu Gakuen
 280448	Uozu Gakuin
@@ -4641,7 +4641,7 @@
 280804	Kamiichi G.
 280816	Kamiichi Gn
 280828	Kamiichi T.
-280840	Kamiichi C.
+280840	Kamiichi Cm.
 280856	Kamiichi E.
 280864	Kamiichi W.
 280872	Kamiichi S.
@@ -4653,12 +4653,12 @@
 280936	Kamiichi Ag.
 280948	Kamiichi El.
 280960	Kamiichi Sh.
-280972	Kamiichi C.
+280972	Kamiichi Ch
 280984	Kamiichi Gj
 280996	Tateyama G.
 281008	Tateyama Gn
 281020	Tateyama T.
-281032	Tateyama C.
+281032	Tateyama Cm.
 281048	Tateyama E.
 281056	Tateyama W.
 281064	Tateyama S.
@@ -4670,12 +4670,12 @@
 281128	Tateyama Ag.
 281140	Tateyama El.
 281152	Tateyama Sh.
-281164	Tateyama C.
+281164	Tateyama Ch
 281176	Tateyama Gj
 281188	Funahashi G.
 281200	Funahashi Gn
 281212	Funahashi T.
-281224	Funahashi C.
+281224	Funahash Cm.
 281240	Funahashi E.
 281248	Funahashi W.
 281256	Funahashi S.
@@ -4687,7 +4687,7 @@
 281320	Funahash Ag.
 281332	Funahash El.
 281344	Funahash Sh.
-281356	Funahashi C.
+281356	Funahashi Ch
 281368	Funahashi Gj
 281380	Nanto Gakuen
 281392	Nanto Gakuin
@@ -4725,7 +4725,7 @@
 281748	Niikawa Gak.
 281760	Niikawa Gkn.
 281772	Niikawa Tech
-281784	Niikawa C.
+281784	Niikawa Cm.
 281800	Niikawa East
 281808	Niikawa West
 281816	Niikawa S.
@@ -4827,7 +4827,7 @@
 282880	Hakusan Gak.
 282892	Hakusan Gkn.
 282904	Hakusan Tech
-282916	Hakusan C.
+282916	Hakusan Cm.
 282928	Hakusan East
 282936	Hakusan West
 282944	Hakusan S.
@@ -4924,7 +4924,7 @@
 284188	Tsubata Gak.
 284200	Tsubata Gkn.
 284212	Tsubata Tech
-284224	Tsubata C.
+284224	Tsubata Cm.
 284240	Tsubata East
 284248	Tsubata West
 284256	Tsubata S.
@@ -4973,7 +4973,7 @@
 284736	Hakui Gijuku
 284748	Ishikawa G.
 284760	Ishikawa Gn
-284772	Ishikawa C.
+284772	Ishikawa Cm.
 284784	Ishikawa E.
 284792	Ishikawa W.
 284800	Ishikawa S.
@@ -4985,7 +4985,7 @@
 284864	Ishikawa Ag.
 284876	Ishikawa El.
 284888	Ishikawa Sh.
-284900	Ishikawa C.
+284900	Ishikawa Ch
 284912	Ishikawa Gj
 284928	Echizen
 284936	Fukui
@@ -4999,7 +4999,7 @@
 285000	Echizen Gak.
 285012	Echizen Gkn.
 285024	Echizen Tech
-285036	Echizen C.
+285036	Echizen Cm.
 285048	Echizen East
 285056	Echizen West
 285064	Echizen S.
@@ -5078,7 +5078,7 @@
 285896	Wakasa Gij.
 285908	Tsuruga Gak.
 285920	Tsuruga Gkn.
-285932	Tsuruga C.
+285932	Tsuruga Cm.
 285944	Tsuruga East
 285952	Tsuruga West
 285960	Tsuruga S.
@@ -5128,7 +5128,7 @@
 286456	Katsuyama G.
 286468	Katsuyama Gn
 286480	Katsuyama T.
-286492	Katsuyama C.
+286492	Katsuyam Cm.
 286504	Katsuyama E.
 286512	Katsuyama W.
 286520	Katsuyama N.
@@ -5139,7 +5139,7 @@
 286576	Katsuyam Ag.
 286588	Katsuyam El.
 286600	Katsuyam Sh.
-286612	Katsuyama C.
+286612	Katsuyama Ch
 286624	Katsuyama Gj
 286636	Mihama Gak.
 286648	Mihama Gkn.
@@ -5194,7 +5194,7 @@
 287216	Takahama G.
 287228	Takahama Gn
 287240	Takahama T.
-287252	Takahama C.
+287252	Takahama Cm.
 287264	Takahama E.
 287272	Takahama W.
 287280	Takahama S.
@@ -5206,12 +5206,12 @@
 287344	Takahama Ag.
 287356	Takahama El.
 287368	Takahama Sh.
-287380	Takahama C.
+287380	Takahama Ch
 287392	Takahama Gj
 287404	Tojinbo Gak.
 287416	Tojinbo Gkn.
 287428	Tojinbo Tech
-287440	Tojinbo C.
+287440	Tojinbo Cm.
 287452	Tojinbo East
 287464	Tojinbo West
 287476	Tojinbo S.
@@ -5228,7 +5228,7 @@
 287612	Imadate Gak.
 287624	Imadate Gkn.
 287636	Imadate Tech
-287648	Imadate C.
+287648	Imadate Cm.
 287664	Imadate East
 287672	Imadate West
 287680	Imadate S.
@@ -5250,7 +5250,7 @@
 287848	Shinano Gak.
 287860	Shinano Gkn.
 287872	Shinano Tech
-287884	Shinano C.
+287884	Shinano Cm.
 287896	Shinano East
 287904	Shinano West
 287912	Shinano S.
@@ -5267,7 +5267,7 @@
 288036	Shinshu Gak.
 288048	Shinshu Gkn.
 288060	Shinshu Tech
-288072	Shinshu C.
+288072	Shinshu Cm.
 288088	Shinshu East
 288096	Shinshu West
 288104	Shinshu S.
@@ -5330,12 +5330,12 @@
 288764	Matsumot Ag.
 288776	Matsumot El.
 288788	Matsumot Sh.
-288800	Matsumoto C.
+288800	Matsumoto Ch
 288812	Matsumoto Gj
 288824	Karuizawa G.
 288836	Karuizawa Gn
 288848	Karuizawa T.
-288860	Karuizawa C.
+288860	Karuizaw Cm.
 288872	Karuizawa E.
 288884	Karuizawa W.
 288896	Karuizawa S.
@@ -5347,7 +5347,7 @@
 288972	Karuizaw Ag.
 288984	Karuizaw El.
 288996	Karuizaw Sh.
-289008	Karuizawa C.
+289008	Karuizawa Ch
 289020	Karuizawa Gj
 289032	Hakuba Gak.
 289044	Hakuba Gkn.
@@ -5430,7 +5430,7 @@
 289920	Chino Gijuku
 289932	Komagane G.
 289944	Komagane Gn
-289956	Komagane C.
+289956	Komagane Cm.
 289968	Komagane E.
 289980	Komagane W.
 289992	Komagane S.
@@ -5442,7 +5442,7 @@
 290068	Komagane Ag.
 290080	Komagane El.
 290092	Komagane Sh.
-290104	Komagane C.
+290104	Komagane Ch
 290116	Komagane Gj
 290128	Komoro Gak.
 290140	Komoro Gkn.
@@ -5462,7 +5462,7 @@
 290296	Shiojiri G.
 290308	Shiojiri Gn
 290320	Shiojiri T.
-290332	Shiojiri C.
+290332	Shiojiri Cm.
 290344	Shiojiri E.
 290352	Shiojiri W.
 290360	Shiojiri S.
@@ -5474,7 +5474,7 @@
 290424	Shiojiri Ag.
 290436	Shiojiri El.
 290448	Shiojiri Sh.
-290460	Shiojiri C.
+290460	Shiojiri Ch
 290472	Shiojiri Gj
 290484	Suzaka Gak.
 290496	Suzaka Gkn.
@@ -5549,7 +5549,7 @@
 291240	Mino Gijuku
 291252	Takayama G.
 291264	Takayama Gn
-291276	Takayama C.
+291276	Takayama Cm.
 291288	Takayama E.
 291296	Takayama S.
 291304	Takayama N.
@@ -5560,7 +5560,7 @@
 291360	Takayama Ag.
 291372	Takayama El.
 291384	Takayama Sh.
-291396	Takayama C.
+291396	Takayama Ch
 291408	Takayama Gj
 291420	Gero Gakuen
 291432	Gero Gakuin
@@ -5582,7 +5582,7 @@
 291612	Shirakawa G.
 291624	Shirakawa Gn
 291636	Shirakawa T.
-291648	Shirakawa C.
+291648	Shirakaw Cm.
 291664	Shirakawa E.
 291672	Shirakawa W.
 291680	Shirakawa S.
@@ -5594,12 +5594,12 @@
 291744	Shirakaw Ag.
 291756	Shirakaw El.
 291768	Shirakaw Sh.
-291780	Shirakawa C.
+291780	Shirakawa Ch
 291792	Shirakawa Gj
 291804	Kinkazan G.
 291816	Kinkazan Gn
 291828	Kinkazan T.
-291840	Kinkazan C.
+291840	Kinkazan Cm.
 291852	Kinkazan E.
 291864	Kinkazan W.
 291876	Kinkazan S.
@@ -5611,12 +5611,12 @@
 291952	Kinkazan Ag.
 291964	Kinkazan El.
 291976	Kinkazan Sh.
-291988	Kinkazan C.
+291988	Kinkazan Ch
 292000	Kinkazan Gj
 292012	Maodake Gak.
 292024	Maodake Gkn.
 292036	Maodake Tech
-292048	Maodake C.
+292048	Maodake Cm.
 292060	Maodake East
 292072	Maodake West
 292084	Maodake S.
@@ -5632,7 +5632,7 @@
 292208	Maodake Gij.
 292220	Nakatsuga G.
 292232	Nakatsuga Gn
-292244	Nakatsuga C.
+292244	Nakatsug Cm.
 292256	Nakatsuga E.
 292268	Nakatsuga W.
 292280	Nakatsuga S.
@@ -5644,12 +5644,12 @@
 292356	Nakatsug Ag.
 292368	Nakatsug El.
 292380	Nakatsug Sh.
-292392	Nakatsuga C.
+292392	Nakatsuga Ch
 292404	Nakatsuga Gj
 292416	Ibigawa Gak.
 292428	Ibigawa Gkn.
 292440	Ibigawa Tech
-292452	Ibigawa C.
+292452	Ibigawa Cm.
 292464	Ibigawa East
 292476	Ibigawa West
 292488	Ibigawa S.
@@ -5666,7 +5666,7 @@
 292624	Sekigahar G.
 292636	Sekigahar Gn
 292648	Sekigahar T.
-292660	Sekigahar C.
+292660	Sekigaha Cm.
 292672	Sekigahar E.
 292684	Sekigahar W.
 292696	Sekigahar S.
@@ -5678,7 +5678,7 @@
 292772	Sekigaha Ag.
 292784	Sekigaha El.
 292796	Sekigaha Sh.
-292808	Sekigahar C.
+292808	Sekigahar Ch
 292820	Sekigahar Gj
 292832	Gujo Gakuen
 292844	Gujo Gakuin
@@ -5834,12 +5834,12 @@
 294492	Hamamats Ag.
 294504	Hamamats El.
 294516	Hamamats Sh.
-294528	Hamamatsu C.
+294528	Hamamatsu Ch
 294540	Hamamatsu Gj
 294552	Mishima Gak.
 294564	Mishima Gkn.
 294576	Mishima Tech
-294588	Mishima C.
+294588	Mishima Cm.
 294600	Mishima East
 294608	Mishima West
 294616	Mishima 1st
@@ -5915,7 +5915,7 @@
 295416	Iwata Gijuku
 295428	Shimizu Gak.
 295440	Shimizu Gkn.
-295452	Shimizu C.
+295452	Shimizu Cm.
 295464	Shimizu N.
 295472	Shimizu 1st
 295484	Shimizu J.
@@ -5929,7 +5929,7 @@
 295580	Kikugawa G.
 295592	Kikugawa Gn
 295604	Kikugawa T.
-295616	Kikugawa C.
+295616	Kikugawa Cm.
 295632	Kikugawa E.
 295640	Kikugawa W.
 295648	Kikugawa S.
@@ -5941,12 +5941,12 @@
 295712	Kikugawa Ag.
 295724	Kikugawa El.
 295736	Kikugawa Sh.
-295748	Kikugawa C.
+295748	Kikugawa Ch
 295760	Kikugawa Gj
 295772	Matsubara G.
 295784	Matsubara Gn
 295796	Matsubara T.
-295808	Matsubara C.
+295808	Matsubar Cm.
 295824	Matsubara E.
 295832	Matsubara W.
 295840	Matsubara S.
@@ -5958,12 +5958,12 @@
 295904	Matsubar Ag.
 295916	Matsubar El.
 295928	Matsubar Sh.
-295940	Matsubara C.
+295940	Matsubara Ch
 295952	Matsubara Gj
 295964	Omaezaki G.
 295976	Omaezaki Gn
 295988	Omaezaki T.
-296000	Omaezaki C.
+296000	Omaezaki Cm.
 296012	Omaezaki E.
 296024	Omaezaki W.
 296036	Omaezaki S.
@@ -5975,7 +5975,7 @@
 296112	Omaezaki Ag.
 296124	Omaezaki El.
 296136	Omaezaki Sh.
-296148	Omaezaki C.
+296148	Omaezaki Ch
 296160	Omaezaki Gj
 296172	Shizuoka Gn
 296184	Shizuoka 1st
@@ -6027,7 +6027,7 @@
 296692	Inuyama Gak.
 296704	Inuyama Gkn.
 296716	Inuyama Tech
-296728	Inuyama C.
+296728	Inuyama Cm.
 296744	Inuyama East
 296752	Inuyama West
 296760	Inuyama N.
@@ -6043,7 +6043,7 @@
 296876	Shitara Gak.
 296888	Shitara Gkn.
 296900	Shitara Tech
-296912	Shitara C.
+296912	Shitara Cm.
 296928	Shitara East
 296936	Shitara West
 296944	Shitara S.
@@ -6110,7 +6110,7 @@
 297660	Shinshiro G.
 297672	Shinshiro Gn
 297684	Shinshiro T.
-297696	Shinshiro C.
+297696	Shinshir Cm.
 297712	Shinshiro W.
 297720	Shinshiro S.
 297728	Shinshiro N.
@@ -6121,7 +6121,7 @@
 297784	Shinshir Ag.
 297796	Shinshir El.
 297808	Shinshir Sh.
-297820	Shinshiro C.
+297820	Shinshiro Ch
 297832	Shinshiro Gj
 297844	Nagoya Gak.
 297856	Nagoya Gkn.
@@ -6151,7 +6151,7 @@
 298144	Toyoake Gak.
 298156	Toyoake Gkn.
 298168	Toyoake Tech
-298180	Toyoake C.
+298180	Toyoake Cm.
 298192	Toyoake East
 298200	Toyoake West
 298208	Toyoake S.
@@ -6304,7 +6304,7 @@
 299860	Kameyama G.
 299872	Kameyama Gn
 299884	Kameyama T.
-299896	Kameyama C.
+299896	Kameyama Cm.
 299912	Kameyama E.
 299920	Kameyama W.
 299928	Kameyama S.
@@ -6316,7 +6316,7 @@
 299992	Kameyama Ag.
 300004	Kameyama El.
 300016	Kameyama Sh.
-300028	Kameyama C.
+300028	Kameyama Ch
 300040	Kameyama Gj
 300052	Toba Gakuen
 300064	Toba Gakuin
@@ -6362,12 +6362,12 @@
 300524	Yokkaich Ag.
 300536	Yokkaich El.
 300548	Yokkaich Sh.
-300560	Yokkaichi C.
+300560	Yokkaichi Ch
 300572	Yokkaichi Gj
 300584	Matsusaka G.
 300596	Matsusaka Gn
 300608	Matsusaka T.
-300620	Matsusaka C.
+300620	Matsusak Cm.
 300632	Matsusaka E.
 300640	Matsusaka W.
 300648	Matsusaka S.
@@ -6379,12 +6379,12 @@
 300712	Matsusak Ag.
 300724	Matsusak El.
 300736	Matsusak Sh.
-300748	Matsusaka C.
+300748	Matsusaka Ch
 300760	Matsusaka Gj
 300772	Ouchiyama G.
 300784	Ouchiyama Gn
 300796	Ouchiyama T.
-300808	Ouchiyama C.
+300808	Ouchiyam Cm.
 300820	Ouchiyama E.
 300832	Ouchiyama W.
 300844	Ouchiyama S.
@@ -6396,12 +6396,12 @@
 300920	Ouchiyam Ag.
 300932	Ouchiyam El.
 300944	Ouchiyam Sh.
-300956	Ouchiyama C.
+300956	Ouchiyama Ch
 300968	Ouchiyama Gj
 300980	Yunoyama G.
 300992	Yunoyama Gn
 301004	Yunoyama T.
-301016	Yunoyama C.
+301016	Yunoyama Cm.
 301028	Yunoyama E.
 301040	Yunoyama W.
 301052	Yunoyama S.
@@ -6413,7 +6413,7 @@
 301128	Yunoyama Ag.
 301140	Yunoyama El.
 301152	Yunoyama Sh.
-301164	Yunoyama C.
+301164	Yunoyama Ch
 301176	Yunoyama Gj
 301188	Kuwana Gak.
 301200	Kuwana Gkn.
@@ -6508,7 +6508,7 @@
 302196	Chikubu Gak.
 302208	Chikubu Gkn.
 302220	Chikubu Tech
-302232	Chikubu C.
+302232	Chikubu Cm.
 302244	Chikubu East
 302256	Chikubu West
 302268	Chikubu S.
@@ -6603,12 +6603,12 @@
 303280	Hachiman Ag.
 303292	Hachiman El.
 303304	Hachiman Sh.
-303316	Hachiman C.
+303316	Hachiman Ch
 303328	Hachiman Gj
 303340	Nagahama G.
 303352	Nagahama Gn
 303364	Nagahama T.
-303376	Nagahama C.
+303376	Nagahama Cm.
 303392	Nagahama E.
 303400	Nagahama W.
 303408	Nagahama S.
@@ -6618,7 +6618,7 @@
 303452	Nagahama U.
 303464	Nagahama El.
 303476	Nagahama Sh.
-303488	Nagahama C.
+303488	Nagahama Ch
 303500	Nagahama Gj
 303512	Hikone Gak.
 303524	Hikone Gkn.
@@ -6637,7 +6637,7 @@
 303676	Kusatsu Gak.
 303688	Kusatsu Gkn.
 303700	Kusatsu Tech
-303712	Kusatsu C.
+303712	Kusatsu Cm.
 303728	Kusatsu West
 303736	Kusatsu S.
 303744	Kusatsu N.
@@ -6670,7 +6670,7 @@
 304052	Moriyama G.
 304064	Moriyama Gn
 304076	Moriyama T.
-304088	Moriyama C.
+304088	Moriyama Cm.
 304104	Moriyama E.
 304112	Moriyama W.
 304120	Moriyama S.
@@ -6681,7 +6681,7 @@
 304176	Moriyama Ag.
 304188	Moriyama El.
 304200	Moriyama Sh.
-304212	Moriyama C.
+304212	Moriyama Ch
 304224	Moriyama Gj
 304236	Goshu Gakuen
 304248	Goshu Gakuin
@@ -6719,7 +6719,7 @@
 304604	Minakuchi G.
 304616	Minakuchi Gn
 304628	Minakuchi T.
-304640	Minakuchi C.
+304640	Minakuch Cm.
 304656	Minakuchi W.
 304664	Minakuchi S.
 304672	Minakuchi N.
@@ -6730,7 +6730,7 @@
 304728	Minakuch Ag.
 304740	Minakuch El.
 304752	Minakuch Sh.
-304764	Minakuchi C.
+304764	Minakuchi Ch
 304776	Minakuchi Gj
 304788	Shiga Gakuin
 304800	Shiga Tech
@@ -6760,7 +6760,7 @@
 305048	Kyogoku Gak.
 305060	Kyogoku Gkn.
 305072	Kyogoku Tech
-305084	Kyogoku C.
+305084	Kyogoku Cm.
 305096	Kyogoku East
 305104	Kyogoku West
 305112	Kyogoku S.
@@ -6794,7 +6794,7 @@
 305384	Yamashiro G.
 305396	Yamashiro Gn
 305408	Yamashiro T.
-305420	Yamashiro C.
+305420	Yamashir Cm.
 305432	Yamashiro E.
 305440	Yamashiro W.
 305448	Yamashiro S.
@@ -6806,7 +6806,7 @@
 305512	Yamashir Ag.
 305524	Yamashir El.
 305536	Yamashir Sh.
-305548	Yamashiro C.
+305548	Yamashiro Ch
 305560	Yamashiro Gj
 305572	Tanba Gakuen
 305584	Tanba Gakuin
@@ -6845,7 +6845,7 @@
 305956	Maizuru Gak.
 305968	Maizuru Gkn.
 305980	Maizuru Tech
-305992	Maizuru C.
+305992	Maizuru Cm.
 306008	Maizuru East
 306016	Maizuru West
 306024	Maizuru S.
@@ -6862,7 +6862,7 @@
 306148	Kameoka Gak.
 306160	Kameoka Gkn.
 306172	Kameoka Tech
-306184	Kameoka C.
+306184	Kameoka Cm.
 306200	Kameoka East
 306208	Kameoka West
 306216	Kameoka S.
@@ -6879,7 +6879,7 @@
 306340	Fukuchiya G.
 306352	Fukuchiya Gn
 306364	Fukuchiya T.
-306376	Fukuchiya C.
+306376	Fukuchiy Cm.
 306388	Fukuchiya E.
 306400	Fukuchiya W.
 306412	Fukuchiya S.
@@ -6891,7 +6891,7 @@
 306488	Fukuchiy Ag.
 306500	Fukuchiy El.
 306512	Fukuchiy Sh.
-306524	Fukuchiya C.
+306524	Fukuchiya Ch
 306536	Fukuchiya Gj
 306548	Ayabe Gakuen
 306560	Ayabe Gakuin
@@ -6981,7 +6981,7 @@
 307508	Kyotanabe G.
 307520	Kyotanabe Gn
 307532	Kyotanabe T.
-307544	Kyotanabe C.
+307544	Kyotanab Cm.
 307556	Kyotanabe E.
 307568	Kyotanabe W.
 307580	Kyotanabe S.
@@ -6993,7 +6993,7 @@
 307656	Kyotanab Ag.
 307668	Kyotanab El.
 307680	Kyotanab Sh.
-307692	Kyotanabe C.
+307692	Kyotanabe Ch
 307704	Kyotanabe Gj
 307716	Yosano Gak.
 307728	Yosano Gkn.
@@ -7048,7 +7048,7 @@
 308308	Arashiyam G.
 308320	Arashiyam Gn
 308332	Arashiyam T.
-308344	Arashiyam C.
+308344	Arashiya Cm.
 308360	Arashiyam E.
 308368	Arashiyam W.
 308376	Arashiyam S.
@@ -7060,7 +7060,7 @@
 308440	Arashiya Ag.
 308452	Arashiya El.
 308464	Arashiya Sh.
-308476	Arashiyam C.
+308476	Arashiyam Ch
 308488	Arashiyam Gj
 308504	Naniwa
 308512	Kawachi
@@ -7104,7 +7104,7 @@
 308960	Kawachi Gak.
 308972	Kawachi Gkn.
 308984	Kawachi Tech
-308996	Kawachi C.
+308996	Kawachi Cm.
 309008	Kawachi East
 309016	Kawachi West
 309024	Kawachi S.
@@ -7138,7 +7138,7 @@
 309356	Dotonbori G.
 309368	Dotonbori Gn
 309380	Dotonbori T.
-309392	Dotonbori C.
+309392	Dotonbor Cm.
 309404	Dotonbori E.
 309416	Dotonbori W.
 309428	Dotonbori S.
@@ -7150,12 +7150,12 @@
 309504	Dotonbor Ag.
 309516	Dotonbor El.
 309528	Dotonbor Sh.
-309540	Dotonbori C.
+309540	Dotonbori Ch
 309552	Dotonbori Gj
 309564	Shinsekai G.
 309576	Shinsekai Gn
 309588	Shinsekai T.
-309600	Shinsekai C.
+309600	Shinseka Cm.
 309612	Shinsekai E.
 309624	Shinsekai W.
 309636	Shinsekai S.
@@ -7167,7 +7167,7 @@
 309712	Shinseka Ag.
 309724	Shinseka El.
 309736	Shinseka Sh.
-309748	Shinsekai C.
+309748	Shinsekai Ch
 309760	Shinsekai Gj
 309772	Settsu Gak.
 309784	Settsu Gkn.
@@ -7220,7 +7220,7 @@
 310272	Takatsuki G.
 310284	Takatsuki Gn
 310296	Takatsuki T.
-310308	Takatsuki C.
+310308	Takatsuk Cm.
 310320	Takatsuki E.
 310328	Takatsuki W.
 310336	Takatsuki 1
@@ -7230,12 +7230,12 @@
 310384	Takatsuk Ag.
 310396	Takatsuk El.
 310408	Takatsuk Sh.
-310420	Takatsuki C.
+310420	Takatsuki Ch
 310432	Takatsuki Gj
 310444	Yodogawa G.
 310456	Yodogawa Gn
 310468	Yodogawa T.
-310480	Yodogawa C.
+310480	Yodogawa Cm.
 310496	Yodogawa E.
 310504	Yodogawa W.
 310512	Yodogawa S.
@@ -7247,7 +7247,7 @@
 310576	Yodogawa Ag.
 310588	Yodogawa El.
 310600	Yodogawa Sh.
-310612	Yodogawa C.
+310612	Yodogawa Ch
 310624	Yodogawa Gj
 310636	Suita Gakuen
 310648	Suita Gakuin
@@ -7268,7 +7268,7 @@
 310820	Hirakata G.
 310832	Hirakata Gn
 310844	Hirakata T.
-310856	Hirakata C.
+310856	Hirakata Cm.
 310872	Hirakata E.
 310880	Hirakata S.
 310888	Hirakata N.
@@ -7279,7 +7279,7 @@
 310944	Hirakata Ag.
 310956	Hirakata El.
 310968	Hirakata Sh.
-310980	Hirakata C.
+310980	Hirakata Ch
 310992	Hirakata Gj
 311004	Yao Gakuen
 311016	Yao Gakuin
@@ -7298,7 +7298,7 @@
 311172	Kishiwada G.
 311184	Kishiwada Gn
 311196	Kishiwada T.
-311208	Kishiwada C.
+311208	Kishiwad Cm.
 311220	Kishiwada E.
 311232	Kishiwada W.
 311244	Kishiwada S.
@@ -7310,12 +7310,12 @@
 311320	Kishiwad Ag.
 311332	Kishiwad El.
 311344	Kishiwad Sh.
-311356	Kishiwada C.
+311356	Kishiwada Ch
 311368	Kishiwada Gj
 311380	Tondabaya G.
 311392	Tondabaya Gn
 311404	Tondabaya T.
-311416	Tondabaya C.
+311416	Tondabay Cm.
 311428	Tondabaya E.
 311440	Tondabaya W.
 311452	Tondabaya S.
@@ -7327,12 +7327,12 @@
 311528	Tondabay Ag.
 311540	Tondabay El.
 311552	Tondabay Sh.
-311564	Tondabaya C.
+311564	Tondabaya Ch
 311576	Tondabaya Gj
 311588	Toyonaka G.
 311600	Toyonaka Gn
 311612	Toyonaka T.
-311624	Toyonaka C.
+311624	Toyonaka Cm.
 311640	Toyonaka E.
 311648	Toyonaka W.
 311656	Toyonaka S.
@@ -7344,7 +7344,7 @@
 311720	Toyonaka Ag.
 311732	Toyonaka El.
 311744	Toyonaka Sh.
-311756	Toyonaka C.
+311756	Toyonaka Ch
 311768	Toyonaka Gj
 311780	Kadoma Gak.
 311792	Kadoma Gkn.
@@ -7467,7 +7467,7 @@
 313132	Nishinomi G.
 313144	Nishinomi Gn
 313156	Nishinomi T.
-313168	Nishinomi C.
+313168	Nishinom Cm.
 313184	Nishinomi W.
 313192	Nishinomiy 1
 313204	Nishinomi J.
@@ -7476,7 +7476,7 @@
 313240	Nishinom Ag.
 313252	Nishinom El.
 313264	Nishinom Sh.
-313276	Nishinomi C.
+313276	Nishinomi Ch
 313288	Nishinomi Gj
 313300	Itami Gakuen
 313312	Itami Gakuin
@@ -7496,7 +7496,7 @@
 313476	Takasago G.
 313488	Takasago Gn
 313500	Takasago T.
-313512	Takasago C.
+313512	Takasago Cm.
 313528	Takasago E.
 313536	Takasago W.
 313544	Takasago N.
@@ -7507,12 +7507,12 @@
 313600	Takasago Ag.
 313612	Takasago El.
 313624	Takasago Sh.
-313636	Takasago C.
+313636	Takasago Ch
 313648	Takasago Gj
 313660	Kakogawa G.
 313672	Kakogawa Gn
 313684	Kakogawa T.
-313696	Kakogawa C.
+313696	Kakogawa Cm.
 313708	Kakogawa 1st
 313720	Kakogawa J.
 313732	Kakogawa M.
@@ -7520,12 +7520,12 @@
 313760	Kakogawa Ag.
 313772	Kakogawa El.
 313784	Kakogawa Sh.
-313796	Kakogawa C.
+313796	Kakogawa Ch
 313808	Kakogawa Gj
 313820	Toyooka Gak.
 313832	Toyooka Gkn.
 313844	Toyooka Tech
-313856	Toyooka C.
+313856	Toyooka Cm.
 313872	Toyooka East
 313880	Toyooka West
 313888	Toyooka S.
@@ -7556,7 +7556,7 @@
 314168	Hyogo Gijuku
 314180	Amagasaki G.
 314192	Amagasaki Gn
-314204	Amagasaki C.
+314204	Amagasak Cm.
 314216	Amagasaki S.
 314224	Amagasaki 1
 314236	Amagasaki J.
@@ -7565,12 +7565,12 @@
 314272	Amagasak Ag.
 314284	Amagasak El.
 314296	Amagasak Sh.
-314308	Amagasaki C.
+314308	Amagasaki Ch
 314320	Amagasaki Gj
 314332	Takarazuk G.
 314344	Takarazuk Gn
 314356	Takarazuk T.
-314368	Takarazuk C.
+314368	Takarazu Cm.
 314384	Takarazuk S.
 314392	Takarazuka 1
 314404	Takarazuk J.
@@ -7579,7 +7579,7 @@
 314440	Takarazu Ag.
 314452	Takarazu El.
 314464	Takarazu Sh.
-314476	Takarazuk C.
+314476	Takarazuk Ch
 314488	Takarazuk Gj
 314504	Nada Gakuen
 314512	Nada Gakuin
@@ -7622,7 +7622,7 @@
 314868	Yoshino Gak.
 314880	Yoshino Gkn.
 314892	Yoshino Tech
-314904	Yoshino C.
+314904	Yoshino Cm.
 314920	Yoshino East
 314928	Yoshino West
 314936	Yoshino S.
@@ -7684,7 +7684,7 @@
 315564	Koriyama G.
 315576	Koriyama Gn
 315588	Koriyama T.
-315600	Koriyama C.
+315600	Koriyama Cm.
 315616	Koriyama E.
 315624	Koriyama W.
 315632	Koriyama S.
@@ -7696,7 +7696,7 @@
 315696	Koriyama Ag.
 315708	Koriyama El.
 315720	Koriyama Sh.
-315732	Koriyama C.
+315732	Koriyama Ch
 315744	Koriyama Gj
 315756	Tenri Gakuen
 315768	Tenri Gakuin
@@ -7735,7 +7735,7 @@
 316140	Kurotaki G.
 316152	Kurotaki Gn
 316164	Kurotaki T.
-316176	Kurotaki C.
+316176	Kurotaki Cm.
 316192	Kurotaki E.
 316200	Kurotaki W.
 316208	Kurotaki S.
@@ -7747,12 +7747,12 @@
 316272	Kurotaki Ag.
 316284	Kurotaki El.
 316296	Kurotaki Sh.
-316308	Kurotaki C.
+316308	Kurotaki Ch
 316320	Kurotaki Gj
 316524	Totsukawa G.
 316536	Totsukawa Gn
 316548	Totsukawa T.
-316560	Totsukawa C.
+316560	Totsukaw Cm.
 316572	Totsukawa E.
 316584	Totsukawa W.
 316596	Totsukawa S.
@@ -7764,12 +7764,12 @@
 316672	Totsukaw Ag.
 316684	Totsukaw El.
 316696	Totsukaw Sh.
-316708	Totsukawa C.
+316708	Totsukawa Ch
 316720	Totsukawa Gj
 316732	Katsuragi G.
 316744	Katsuragi Gn
 316756	Katsuragi T.
-316768	Katsuragi C.
+316768	Katsurag Cm.
 316784	Katsuragi E.
 316792	Katsuragi W.
 316800	Katsuragi S.
@@ -7781,12 +7781,12 @@
 316864	Katsurag Ag.
 316876	Katsurag El.
 316888	Katsurag Sh.
-316900	Katsuragi C.
+316900	Katsuragi Ch
 316912	Katsuragi Gj
 316924	Kashiba Gak.
 316936	Kashiba Gkn.
 316948	Kashiba Tech
-316960	Kashiba C.
+316960	Kashiba Cm.
 316976	Kashiba East
 316984	Kashiba West
 316992	Kashiba S.
@@ -7831,7 +7831,7 @@
 317416	Wakayama Ag.
 317428	Wakayama El.
 317440	Wakayama Sh.
-317452	Wakayama C.
+317452	Wakayama Ch
 317464	Wakayama Gj
 317476	Tanabe Gak.
 317488	Tanabe Gkn.
@@ -7852,7 +7852,7 @@
 317652	Kinokawa G.
 317664	Kinokawa Gn
 317676	Kinokawa T.
-317688	Kinokawa C.
+317688	Kinokawa Cm.
 317700	Kinokawa E.
 317712	Kinokawa W.
 317724	Kinokawa S.
@@ -7864,7 +7864,7 @@
 317800	Kinokawa Ag.
 317812	Kinokawa El.
 317824	Kinokawa Sh.
-317836	Kinokawa C.
+317836	Kinokawa Ch
 317848	Kinokawa Gj
 317860	Arida Gakuen
 317872	Arida Gakuin
@@ -7885,7 +7885,7 @@
 318040	Kushimoto G.
 318052	Kushimoto Gn
 318064	Kushimoto T.
-318076	Kushimoto C.
+318076	Kushimot Cm.
 318088	Kushimoto E.
 318096	Kushimoto W.
 318104	Kushimoto S.
@@ -7897,7 +7897,7 @@
 318168	Kushimot Ag.
 318180	Kushimot El.
 318192	Kushimot Sh.
-318204	Kushimoto C.
+318204	Kushimoto Ch
 318216	Kushimoto Gj
 318228	Gobo Gakuen
 318240	Gobo Gakuin
@@ -7986,7 +7986,7 @@
 319188	Koyasan Gak.
 319200	Koyasan Gkn.
 319212	Koyasan Tech
-319224	Koyasan C.
+319224	Koyasan Cm.
 319236	Koyasan East
 319248	Koyasan West
 319260	Koyasan S.
@@ -8037,7 +8037,7 @@
 319780	Hashimoto G.
 319792	Hashimoto Gn
 319804	Hashimoto T.
-319816	Hashimoto C.
+319816	Hashimot Cm.
 319832	Hashimoto E.
 319840	Hashimoto W.
 319848	Hashimoto S.
@@ -8049,7 +8049,7 @@
 319912	Hashimot Ag.
 319924	Hashimot El.
 319936	Hashimot Sh.
-319948	Hashimoto C.
+319948	Hashimoto Ch
 319960	Hashimoto Gj
 319976	Inaba
 319984	Tottori
@@ -8107,7 +8107,7 @@
 320548	Kurayoshi G.
 320560	Kurayoshi Gn
 320572	Kurayoshi T.
-320584	Kurayoshi C.
+320584	Kurayosh Cm.
 320600	Kurayoshi S.
 320608	Kurayoshi N.
 320616	Kurayoshi 1
@@ -8116,12 +8116,12 @@
 320652	Kurayoshi U.
 320664	Kurayosh El.
 320676	Kurayosh Sh.
-320688	Kurayoshi C.
+320688	Kurayoshi Ch
 320700	Kurayoshi Gj
 320712	Nichinan G.
 320724	Nichinan Gn
 320736	Nichinan T.
-320748	Nichinan C.
+320748	Nichinan Cm.
 320760	Nichinan E.
 320768	Nichinan W.
 320776	Nichinan S.
@@ -8133,7 +8133,7 @@
 320840	Nichinan Ag.
 320852	Nichinan El.
 320864	Nichinan Sh.
-320876	Nichinan C.
+320876	Nichinan Ch
 320888	Nichinan Gj
 320900	Yazu Gakuen
 320912	Yazu Gakuin
@@ -8155,7 +8155,7 @@
 321092	Sakaimina G.
 321104	Sakaimina Gn
 321116	Sakaimina T.
-321128	Sakaimina C.
+321128	Sakaimin Cm.
 321144	Sakaimina E.
 321152	Sakaimina W.
 321160	Sakaimina S.
@@ -8167,12 +8167,12 @@
 321224	Sakaimin Ag.
 321236	Sakaimin El.
 321248	Sakaimin Sh.
-321260	Sakaimina C.
+321260	Sakaimina Ch
 321272	Sakaimina Gj
 321284	Hyonosen G.
 321296	Hyonosen Gn
 321308	Hyonosen T.
-321320	Hyonosen C.
+321320	Hyonosen Cm.
 321332	Hyonosen E.
 321344	Hyonosen W.
 321356	Hyonosen S.
@@ -8184,7 +8184,7 @@
 321432	Hyonosen Ag.
 321444	Hyonosen El.
 321456	Hyonosen Sh.
-321468	Hyonosen C.
+321468	Hyonosen Ch
 321480	Hyonosen Gj
 321492	Wakasa Gak.
 321504	Wakasa Gkn.
@@ -8206,7 +8206,7 @@
 321684	Kotoura Gak.
 321696	Kotoura Gkn.
 321708	Kotoura Tech
-321720	Kotoura C.
+321720	Kotoura Cm.
 321736	Kotoura East
 321744	Kotoura West
 321752	Kotoura S.
@@ -8223,7 +8223,7 @@
 321876	Yurihama G.
 321888	Yurihama Gn
 321900	Yurihama T.
-321912	Yurihama C.
+321912	Yurihama Cm.
 321924	Yurihama E.
 321936	Yurihama W.
 321948	Yurihama S.
@@ -8235,7 +8235,7 @@
 322024	Yurihama Ag.
 322036	Yurihama El.
 322048	Yurihama Sh.
-322060	Yurihama C.
+322060	Yurihama Ch
 322072	Yurihama Gj
 322084	Iwami Gakuen
 322096	Iwami Gakuin
@@ -8506,7 +8506,7 @@
 325060	Shimane Gak.
 325072	Shimane Gkn.
 325084	Shimane Tech
-325096	Shimane C.
+325096	Shimane Cm.
 325112	Shimane East
 325120	Shimane West
 325128	Shimane S.
@@ -8561,7 +8561,7 @@
 325664	Bingo Gijuku
 325676	Okayama Gak.
 325688	Okayama Gkn.
-325700	Okayama C.
+325700	Okayama Cm.
 325712	Okayama East
 325720	Okayama West
 325728	Okayama N.
@@ -8577,7 +8577,7 @@
 325844	Setouchi G.
 325856	Setouchi Gn
 325868	Setouchi T.
-325880	Setouchi C.
+325880	Setouchi Cm.
 325892	Setouchi E.
 325904	Setouchi W.
 325916	Setouchi S.
@@ -8589,7 +8589,7 @@
 325992	Setouchi Ag.
 326004	Setouchi El.
 326016	Setouchi Sh.
-326028	Setouchi C.
+326028	Setouchi Ch
 326040	Setouchi Gj
 326052	Tamano Gak.
 326064	Tamano Gkn.
@@ -8654,7 +8654,7 @@
 326724	Takahashi G.
 326736	Takahashi Gn
 326748	Takahashi T.
-326760	Takahashi C.
+326760	Takahash Cm.
 326776	Takahashi E.
 326784	Takahashi W.
 326792	Takahashi S.
@@ -8666,7 +8666,7 @@
 326856	Takahash Ag.
 326868	Takahash El.
 326880	Takahash Sh.
-326892	Takahashi C.
+326892	Takahashi Ch
 326904	Takahashi Gj
 326916	Akaiwa Gak.
 326928	Akaiwa Gkn.
@@ -8688,7 +8688,7 @@
 327108	Asakuchi G.
 327120	Asakuchi Gn
 327132	Asakuchi T.
-327144	Asakuchi C.
+327144	Asakuchi Cm.
 327160	Asakuchi E.
 327168	Asakuchi W.
 327176	Asakuchi S.
@@ -8700,7 +8700,7 @@
 327240	Asakuchi Ag.
 327252	Asakuchi El.
 327264	Asakuchi Sh.
-327276	Asakuchi C.
+327276	Asakuchi Ch
 327288	Asakuchi Gj
 327300	Kasaoka Gak.
 327312	Kasaoka Gkn.
@@ -8806,7 +8806,7 @@
 328396	Shobara Gak.
 328408	Shobara Gkn.
 328420	Shobara Tech
-328432	Shobara C.
+328432	Shobara Cm.
 328448	Shobara East
 328456	Shobara West
 328464	Shobara S.
@@ -8832,7 +8832,7 @@
 328680	Fukuyama Ag.
 328692	Fukuyama El.
 328704	Fukuyama Sh.
-328716	Fukuyama C.
+328716	Fukuyama Ch
 328728	Fukuyama Gj
 328740	Onomichi G.
 328752	Onomichi Gn
@@ -8844,12 +8844,12 @@
 328824	Onomichi Ag.
 328836	Onomichi El.
 328848	Onomichi Sh.
-328860	Onomichi C.
+328860	Onomichi Ch
 328872	Onomichi Gj
 328884	Takehara G.
 328896	Takehara Gn
 328908	Takehara T.
-328920	Takehara C.
+328920	Takehara Cm.
 328936	Takehara E.
 328944	Takehara W.
 328952	Takehara S.
@@ -8861,12 +8861,12 @@
 329016	Takehara Ag.
 329028	Takehara El.
 329040	Takehara Sh.
-329052	Takehara C.
+329052	Takehara Ch
 329064	Takehara Gj
 329076	Etajima Gak.
 329088	Etajima Gkn.
 329100	Etajima Tech
-329112	Etajima C.
+329112	Etajima Cm.
 329124	Etajima East
 329136	Etajima West
 329148	Etajima S.
@@ -8883,7 +8883,7 @@
 329284	Miyoshi Gak.
 329296	Miyoshi Gkn.
 329308	Miyoshi Tech
-329320	Miyoshi C.
+329320	Miyoshi Cm.
 329336	Miyoshi East
 329344	Miyoshi West
 329352	Miyoshi S.
@@ -8916,7 +8916,7 @@
 329656	Sera Gijuku
 329668	Miyajima G.
 329680	Miyajima Gn
-329692	Miyajima C.
+329692	Miyajima Cm.
 329704	Miyajima E.
 329712	Miyajima W.
 329720	Miyajima S.
@@ -8928,7 +8928,7 @@
 329784	Miyajima Ag.
 329796	Miyajima El.
 329808	Miyajima Sh.
-329820	Miyajima C.
+329820	Miyajima Ch
 329832	Miyajima Gj
 329844	Otake Gakuen
 329856	Otake Gakuin
@@ -8975,7 +8975,7 @@
 330312	Hiroshim Ag.
 330324	Hiroshim El.
 330336	Hiroshim Sh.
-330348	Hiroshima C.
+330348	Hiroshima Ch
 330360	Hiroshima Gj
 330376	Suo
 330384	Shunan
@@ -9017,7 +9017,7 @@
 330780	Yamaguchi G.
 330792	Yamaguchi Gn
 330804	Yamaguchi T.
-330816	Yamaguchi C.
+330816	Yamaguch Cm.
 330832	Yamaguchi E.
 330840	Yamaguchi W.
 330848	Yamaguchi S.
@@ -9039,7 +9039,7 @@
 331028	Shimonos Ag.
 331040	Shimonos El.
 331052	Shimonos Sh.
-331064	Shimonose C.
+331064	Shimonose Ch
 331076	Shimonose Gj
 331088	Hagi Gakuen
 331096	Hagi Gakuin
@@ -9163,7 +9163,7 @@
 332336	Yumegasak G.
 332348	Yumegasak Gn
 332360	Yumegasak T.
-332372	Yumegasak C.
+332372	Yumegasa Cm.
 332384	Yumegasak E.
 332396	Yumegasak W.
 332408	Yumegasak S.
@@ -9175,11 +9175,11 @@
 332484	Yumegasa Ag.
 332496	Yumegasa El.
 332508	Yumegasa Sh.
-332520	Yumegasak C.
+332520	Yumegasak Ch
 332532	Yumegasak Gj
 332544	Kudamatsu G.
 332556	Kudamatsu Gn
-332568	Kudamatsu C.
+332568	Kudamats Cm.
 332584	Kudamatsu E.
 332592	Kudamatsu W.
 332600	Kudamatsu S.
@@ -9191,7 +9191,7 @@
 332664	Kudamats Ag.
 332676	Kudamats El.
 332688	Kudamats Sh.
-332700	Kudamatsu C.
+332700	Kudamatsu Ch
 332712	Kudamatsu Gj
 332728	Tokushima
 332736	Anan
@@ -9227,7 +9227,7 @@
 333048	Tokushim Ag.
 333060	Tokushim El.
 333072	Tokushim Sh.
-333084	Tokushima C.
+333084	Tokushima Ch
 333096	Tokushima Gj
 333108	Naruto Gak.
 333120	Naruto Gkn.
@@ -9247,7 +9247,7 @@
 333272	Komatsush G.
 333284	Komatsush Gn
 333296	Komatsush T.
-333308	Komatsush C.
+333308	Komatsus Cm.
 333320	Komatsush E.
 333332	Komatsush S.
 333344	Komatsush N.
@@ -9258,7 +9258,7 @@
 333408	Komatsus Ag.
 333420	Komatsus El.
 333432	Komatsus Sh.
-333444	Komatsush C.
+333444	Komatsush Ch
 333456	Komatsush Gj
 333468	Awa Gakuen
 333480	Awa Gakuin
@@ -9294,7 +9294,7 @@
 333820	Yoshinoga G.
 333832	Yoshinoga Gn
 333844	Yoshinoga T.
-333856	Yoshinoga C.
+333856	Yoshinog Cm.
 333868	Yoshinoga E.
 333880	Yoshinoga W.
 333892	Yoshinoga S.
@@ -9306,7 +9306,7 @@
 333968	Yoshinog Ag.
 333980	Yoshinog El.
 333992	Yoshinog Sh.
-334004	Yoshinoga C.
+334004	Yoshinoga Ch
 334016	Yoshinoga Gj
 334028	Mima Gakuen
 334040	Mima Gakuin
@@ -9327,7 +9327,7 @@
 334204	Miyoshi Gak.
 334216	Miyoshi Gkn.
 334228	Miyoshi Tech
-334240	Miyoshi C.
+334240	Miyoshi Cm.
 334256	Miyoshi East
 334264	Miyoshi West
 334272	Miyoshi S.
@@ -9378,7 +9378,7 @@
 334780	Tsurugi Gak.
 334792	Tsurugi Gkn.
 334804	Tsurugi Tech
-334816	Tsurugi C.
+334816	Tsurugi Cm.
 334828	Tsurugi East
 334840	Tsurugi West
 334852	Tsurugi S.
@@ -9429,7 +9429,7 @@
 335372	Katsuura G.
 335384	Katsuura Gn
 335396	Katsuura T.
-335408	Katsuura C.
+335408	Katsuura Cm.
 335424	Katsuura E.
 335432	Katsuura W.
 335440	Katsuura S.
@@ -9441,7 +9441,7 @@
 335504	Katsuura Ag.
 335516	Katsuura El.
 335528	Katsuura Sh.
-335540	Katsuura C.
+335540	Katsuura Ch
 335552	Katsuura Gj
 335568	Sanuki
 335576	Kanonji
@@ -9482,7 +9482,7 @@
 335956	Kanonji Gak.
 335968	Kanonji Gkn.
 335980	Kanonji Tech
-335992	Kanonji C.
+335992	Kanonji Cm.
 336004	Kanonji East
 336016	Kanonji West
 336028	Kanonji S.
@@ -9511,7 +9511,7 @@
 336296	Marugame G.
 336308	Marugame Gn
 336320	Marugame T.
-336332	Marugame C.
+336332	Marugame Cm.
 336344	Marugame E.
 336352	Marugame W.
 336360	Marugame S.
@@ -9523,7 +9523,7 @@
 336424	Marugame Ag.
 336436	Marugame El.
 336448	Marugame Sh.
-336460	Marugame C.
+336460	Marugame Ch
 336472	Marugame Gj
 336484	Mitoyo Gak.
 336496	Mitoyo Gkn.
@@ -9578,7 +9578,7 @@
 337060	Zentsuji G.
 337072	Zentsuji Gn
 337084	Zentsuji T.
-337096	Zentsuji C.
+337096	Zentsuji Cm.
 337108	Zentsuji E.
 337120	Zentsuji S.
 337132	Zentsuji N.
@@ -9588,12 +9588,12 @@
 337184	Zentsuji Ag.
 337196	Zentsuji El.
 337208	Zentsuji Sh.
-337220	Zentsuji C.
+337220	Zentsuji Ch
 337232	Zentsuji Gj
 337244	Ayagawa Gak.
 337256	Ayagawa Gkn.
 337268	Ayagawa Tech
-337280	Ayagawa C.
+337280	Ayagawa Cm.
 337296	Ayagawa East
 337304	Ayagawa West
 337312	Ayagawa S.
@@ -9610,7 +9610,7 @@
 337436	Kotohira G.
 337448	Kotohira Gn
 337460	Kotohira T.
-337472	Kotohira C.
+337472	Kotohira Cm.
 337488	Kotohira E.
 337496	Kotohira W.
 337504	Kotohira S.
@@ -9622,7 +9622,7 @@
 337568	Kotohira Ag.
 337580	Kotohira El.
 337592	Kotohira Sh.
-337604	Kotohira C.
+337604	Kotohira Ch
 337616	Kotohira Gj
 337628	Manno Gakuen
 337644	Manno Gakuin
@@ -9644,7 +9644,7 @@
 337888	Yashima Gak.
 337900	Yashima Gkn.
 337912	Yashima Tech
-337924	Yashima C.
+337924	Yashima Cm.
 337936	Yashima East
 337944	Yashima West
 337952	Yashima S.
@@ -9684,7 +9684,7 @@
 338312	Ehime
 338320	Imabari Gak.
 338332	Imabari Gkn.
-338344	Imabari C.
+338344	Imabari Cm.
 338356	Imabari 1st
 338368	Imabari J.
 338380	Imabari Mar.
@@ -9713,7 +9713,7 @@
 338640	Uwajima Gak.
 338652	Uwajima Gkn.
 338664	Uwajima Tech
-338676	Uwajima C.
+338676	Uwajima Cm.
 338688	Uwajima West
 338700	Uwajima N.
 338712	Uwajima 1st
@@ -9949,7 +9949,7 @@
 341308	Nankoku Gak.
 341320	Nankoku Gkn.
 341332	Nankoku Tech
-341344	Nankoku C.
+341344	Nankoku Cm.
 341360	Nankoku East
 341368	Nankoku West
 341376	Nankoku S.
@@ -9983,7 +9983,7 @@
 341692	Shimanto G.
 341704	Shimanto Gn
 341716	Shimanto T.
-341728	Shimanto C.
+341728	Shimanto Cm.
 341740	Shimanto E.
 341752	Shimanto W.
 341764	Shimanto S.
@@ -9995,7 +9995,7 @@
 341840	Shimanto Ag.
 341852	Shimanto El.
 341864	Shimanto Sh.
-341876	Shimanto C.
+341876	Shimanto Ch
 341888	Shimanto Gj
 341900	Otsuki Gak.
 341912	Otsuki Gkn.
@@ -10050,7 +10050,7 @@
 342460	Kuroshio G.
 342472	Kuroshio Gn
 342484	Kuroshio T.
-342496	Kuroshio C.
+342496	Kuroshio Cm.
 342512	Kuroshio E.
 342520	Kuroshio W.
 342528	Kuroshio S.
@@ -10062,7 +10062,7 @@
 342592	Kuroshio Ag.
 342604	Kuroshio El.
 342616	Kuroshio Sh.
-342628	Kuroshio C.
+342628	Kuroshio Ch
 342640	Kuroshio Gj
 342652	Kami Gakuen
 342664	Kami Gakuin
@@ -10138,7 +10138,7 @@
 343440	Chikuzen G.
 343452	Chikuzen Gn
 343464	Chikuzen T.
-343476	Chikuzen C.
+343476	Chikuzen Cm.
 343488	Chikuzen E.
 343496	Chikuzen W.
 343504	Chikuzen S.
@@ -10150,12 +10150,12 @@
 343568	Chikuzen Ag.
 343580	Chikuzen El.
 343592	Chikuzen Sh.
-343604	Chikuzen C.
+343604	Chikuzen Ch
 343616	Chikuzen Gj
 343628	Chikugo Gak.
 343640	Chikugo Gkn.
 343652	Chikugo Tech
-343664	Chikugo C.
+343664	Chikugo Cm.
 343680	Chikugo East
 343688	Chikugo West
 343696	Chikugo S.
@@ -10171,7 +10171,7 @@
 343808	Chikugo Gij.
 343820	Fukuoka Gak.
 343832	Fukuoka Gkn.
-343844	Fukuoka C.
+343844	Fukuoka Cm.
 343856	Fukuoka East
 343864	Fukuoka West
 343872	Fukuoka S.
@@ -10199,7 +10199,7 @@
 344132	Asakura Gak.
 344144	Asakura Gkn.
 344156	Asakura Tech
-344168	Asakura C.
+344168	Asakura Cm.
 344184	Asakura West
 344192	Asakura S.
 344200	Asakura N.
@@ -10244,7 +10244,7 @@
 344652	Munakata G.
 344664	Munakata Gn
 344676	Munakata T.
-344688	Munakata C.
+344688	Munakata Cm.
 344704	Munakata E.
 344712	Munakata W.
 344720	Munakata S.
@@ -10256,7 +10256,7 @@
 344784	Munakata Ag.
 344796	Munakata El.
 344808	Munakata Sh.
-344820	Munakata C.
+344820	Munakata Ch
 344832	Munakata Gj
 344844	Kokura Gak.
 344856	Kokura Gkn.
@@ -10290,7 +10290,7 @@
 345180	Miyawaka G.
 345192	Miyawaka Gn
 345204	Miyawaka T.
-345216	Miyawaka C.
+345216	Miyawaka Cm.
 345232	Miyawaka E.
 345240	Miyawaka W.
 345248	Miyawaka S.
@@ -10302,7 +10302,7 @@
 345312	Miyawaka Ag.
 345324	Miyawaka El.
 345336	Miyawaka Sh.
-345348	Miyawaka C.
+345348	Miyawaka Ch
 345360	Miyawaka Gj
 345372	Kama Gakuen
 345384	Kama Gakuin
@@ -10324,7 +10324,7 @@
 345564	Yanagawa G.
 345576	Yanagawa Gn
 345588	Yanagawa T.
-345600	Yanagawa C.
+345600	Yanagawa Cm.
 345616	Yanagawa E.
 345624	Yanagawa W.
 345632	Yanagawa S.
@@ -10336,7 +10336,7 @@
 345696	Yanagawa Ag.
 345708	Yanagawa El.
 345720	Yanagawa Sh.
-345732	Yanagawa C.
+345732	Yanagawa Ch
 345744	Yanagawa Gj
 345756	Kasuga Gak.
 345768	Kasuga Gkn.
@@ -10417,7 +10417,7 @@
 346624	Kanzaki Gak.
 346636	Kanzaki Gkn.
 346648	Kanzaki Tech
-346660	Kanzaki C.
+346660	Kanzaki Cm.
 346672	Kanzaki East
 346680	Kanzaki West
 346688	Kanzaki S.
@@ -10483,7 +10483,7 @@
 347364	Ureshino G.
 347376	Ureshino Gn
 347388	Ureshino T.
-347400	Ureshino C.
+347400	Ureshino Cm.
 347416	Ureshino E.
 347424	Ureshino W.
 347432	Ureshino S.
@@ -10495,7 +10495,7 @@
 347496	Ureshino Ag.
 347508	Ureshino El.
 347520	Ureshino Sh.
-347532	Ureshino C.
+347532	Ureshino Ch
 347544	Ureshino Gj
 347556	Ogi Gakuen
 347568	Ogi Gakuin
@@ -10534,7 +10534,7 @@
 347940	Shiroishi G.
 347952	Shiroishi Gn
 347964	Shiroishi T.
-347976	Shiroishi C.
+347976	Shiroish Cm.
 347992	Shiroishi E.
 348000	Shiroishi W.
 348008	Shiroishi S.
@@ -10546,12 +10546,12 @@
 348072	Shiroish Ag.
 348084	Shiroish El.
 348096	Shiroish Sh.
-348108	Shiroishi C.
+348108	Shiroishi Ch
 348120	Shiroishi Gj
 348132	Kashima Gak.
 348144	Kashima Gkn.
 348156	Kashima Tech
-348168	Kashima C.
+348168	Kashima Cm.
 348184	Kashima East
 348192	Kashima West
 348200	Kashima S.
@@ -10588,7 +10588,7 @@
 348536	Tsushima G.
 348548	Tsushima Gn
 348560	Tsushima T.
-348572	Tsushima C.
+348572	Tsushima Cm.
 348584	Tsushima E.
 348592	Tsushima W.
 348600	Tsushima S.
@@ -10600,7 +10600,7 @@
 348664	Tsushima Ag.
 348676	Tsushima El.
 348688	Tsushima Sh.
-348700	Tsushima C.
+348700	Tsushima Ch
 348712	Tsushima Gj
 348724	Iki Gakuen
 348736	Iki Gakuin
@@ -10621,7 +10621,7 @@
 348900	Hashima Gak.
 348912	Hashima Gkn.
 348924	Hashima Tech
-348936	Hashima C.
+348936	Hashima Cm.
 348952	Hashima East
 348960	Hashima West
 348968	Hashima S.
@@ -10644,7 +10644,7 @@
 349164	Nagasaki Ag.
 349176	Nagasaki El.
 349188	Nagasaki Sh.
-349200	Nagasaki C.
+349200	Nagasaki Ch
 349212	Nagasaki Gj
 349224	Sasebo Gak.
 349236	Sasebo Gkn.
@@ -10720,7 +10720,7 @@
 350028	Matsuura G.
 350040	Matsuura Gn
 350052	Matsuura T.
-350064	Matsuura C.
+350064	Matsuura Cm.
 350080	Matsuura W.
 350088	Matsuura S.
 350096	Matsuura N.
@@ -10731,7 +10731,7 @@
 350152	Matsuura Ag.
 350164	Matsuura El.
 350176	Matsuura Sh.
-350188	Matsuura C.
+350188	Matsuura Ch
 350200	Matsuura Gj
 350212	Hirado Gak.
 350224	Hirado Gkn.
@@ -10806,7 +10806,7 @@
 351008	Higo Gijuku
 351020	Yatsushir G.
 351032	Yatsushir Gn
-351044	Yatsushir C.
+351044	Yatsushi Cm.
 351056	Yatsushir W.
 351064	Yatsushir N.
 351072	Yatsushir J.
@@ -10814,11 +10814,11 @@
 351096	Yatsushir U.
 351108	Yatsushi El.
 351120	Yatsushi Sh.
-351132	Yatsushir C.
+351132	Yatsushir Ch
 351144	Yatsushir Gj
 351156	Amakusa Gak.
 351168	Amakusa Gkn.
-351180	Amakusa C.
+351180	Amakusa Cm.
 351192	Amakusa West
 351200	Amakusa S.
 351208	Amakusa N.
@@ -10850,7 +10850,7 @@
 351504	Aso Gijuku
 351516	Minamata G.
 351528	Minamata Gn
-351540	Minamata C.
+351540	Minamata Cm.
 351552	Minamata E.
 351560	Minamata W.
 351568	Minamata S.
@@ -10862,7 +10862,7 @@
 351632	Minamata Ag.
 351644	Minamata El.
 351656	Minamata Sh.
-351668	Minamata C.
+351668	Minamata Ch
 351680	Minamata Gj
 351692	Yamato Gak.
 351704	Yamato Gkn.
@@ -10900,7 +10900,7 @@
 352060	Kikuchi Gak.
 352072	Kikuchi Gkn.
 352084	Kikuchi Tech
-352096	Kikuchi C.
+352096	Kikuchi Cm.
 352112	Kikuchi East
 352120	Kikuchi West
 352128	Kikuchi S.
@@ -10916,7 +10916,7 @@
 352240	Takamori G.
 352252	Takamori Gn
 352264	Takamori T.
-352276	Takamori C.
+352276	Takamori Cm.
 352288	Takamori E.
 352296	Takamori W.
 352304	Takamori S.
@@ -10928,12 +10928,12 @@
 352368	Takamori Ag.
 352380	Takamori El.
 352392	Takamori Sh.
-352404	Takamori C.
+352404	Takamori Ch
 352416	Takamori Gj
 352428	Hitoyoshi G.
 352440	Hitoyoshi Gn
 352452	Hitoyoshi T.
-352464	Hitoyoshi C.
+352464	Hitoyosh Cm.
 352480	Hitoyoshi E.
 352488	Hitoyoshi W.
 352496	Hitoyoshi S.
@@ -10945,7 +10945,7 @@
 352560	Hitoyosh Ag.
 352572	Hitoyosh El.
 352584	Hitoyosh Sh.
-352596	Hitoyoshi C.
+352596	Hitoyoshi Ch
 352608	Hitoyoshi Gj
 352620	Uto Gakuen
 352632	Uto Gakuin
@@ -10984,7 +10984,7 @@
 353004	Kurokawa G.
 353016	Kurokawa Gn
 353028	Kurokawa T.
-353040	Kurokawa C.
+353040	Kurokawa Cm.
 353056	Kurokawa E.
 353064	Kurokawa W.
 353072	Kurokawa S.
@@ -10996,7 +10996,7 @@
 353136	Kurokawa Ag.
 353148	Kurokawa El.
 353160	Kurokawa Sh.
-353172	Kurokawa C.
+353172	Kurokawa Ch
 353184	Kurokawa Gj
 353196	Kumamoto G.
 353208	Kumamoto Gn
@@ -11054,7 +11054,7 @@
 353772	Kunisaki G.
 353784	Kunisaki Gn
 353796	Kunisaki T.
-353808	Kunisaki C.
+353808	Kunisaki Cm.
 353824	Kunisaki E.
 353832	Kunisaki W.
 353840	Kunisaki S.
@@ -11066,7 +11066,7 @@
 353904	Kunisaki Ag.
 353916	Kunisaki El.
 353928	Kunisaki Sh.
-353940	Kunisaki C.
+353940	Kunisaki Ch
 353952	Kunisaki Gj
 353964	Nakatsu Gak.
 353976	Nakatsu Gkn.
@@ -11169,7 +11169,7 @@
 355076	Tsukumi Gak.
 355088	Tsukumi Gkn.
 355100	Tsukumi Tech
-355112	Tsukumi C.
+355112	Tsukumi Cm.
 355124	Tsukumi East
 355136	Tsukumi West
 355148	Tsukumi S.
@@ -11253,7 +11253,7 @@
 356024	Osuzu
 356032	Miyazaki
 356040	Nichinan Gn
-356052	Nichinan C.
+356052	Nichinan Cm.
 356064	Nichinan E.
 356072	Nichinan W.
 356080	Nichinan S.
@@ -11265,7 +11265,7 @@
 356144	Nichinan Ag.
 356156	Nichinan El.
 356168	Nichinan Sh.
-356180	Nichinan C.
+356180	Nichinan Ch
 356192	Nichinan Gj
 356204	Miyakonoj G.
 356216	Miyakonoj Gn
@@ -11277,7 +11277,7 @@
 356284	Miyakonoj U.
 356296	Miyakono El.
 356308	Miyakono Sh.
-356320	Miyakonoj C.
+356320	Miyakonoj Ch
 356332	Miyakonoj Gj
 356344	Ebino Gakuen
 356356	Ebino Gakuin
@@ -11333,7 +11333,7 @@
 356968	Sekinoo Gak.
 356980	Sekinoo Gkn.
 356992	Sekinoo Tech
-357004	Sekinoo C.
+357004	Sekinoo Cm.
 357016	Sekinoo East
 357028	Sekinoo West
 357040	Sekinoo S.
@@ -11350,7 +11350,7 @@
 357176	Kushima Gak.
 357188	Kushima Gkn.
 357200	Kushima Tech
-357212	Kushima C.
+357212	Kushima Cm.
 357224	Kushima East
 357232	Kushima West
 357240	Kushima S.
@@ -11367,7 +11367,7 @@
 357364	Horikiri G.
 357376	Horikiri Gn
 357388	Horikiri T.
-357400	Horikiri C.
+357400	Horikiri Cm.
 357416	Horikiri E.
 357424	Horikiri W.
 357432	Horikiri S.
@@ -11379,12 +11379,12 @@
 357496	Horikiri Ag.
 357508	Horikiri El.
 357520	Horikiri Sh.
-357532	Horikiri C.
+357532	Horikiri Ch
 357544	Horikiri Gj
 357556	Aoshima Gak.
 357568	Aoshima Gkn.
 357580	Aoshima Tech
-357592	Aoshima C.
+357592	Aoshima Cm.
 357608	Aoshima East
 357616	Aoshima West
 357624	Aoshima S.
@@ -11447,7 +11447,7 @@
 358260	Takachiho G.
 358272	Takachiho Gn
 358284	Takachiho T.
-358296	Takachiho C.
+358296	Takachih Cm.
 358308	Takachiho E.
 358320	Takachiho W.
 358332	Takachiho S.
@@ -11459,7 +11459,7 @@
 358408	Takachih Ag.
 358420	Takachih El.
 358432	Takachih Sh.
-358444	Takachiho C.
+358444	Takachiho Ch
 358456	Takachiho Gj
 358468	Miyazaki Gn
 358480	Miyazaki J.
@@ -11467,7 +11467,7 @@
 358504	Miyazaki U.
 358516	Miyazaki El.
 358528	Miyazaki Sh.
-358540	Miyazaki C.
+358540	Miyazaki Ch
 358552	Miyazaki Gj
 358568	Osumi
 358576	Satsuma
@@ -11497,7 +11497,7 @@
 358828	Satsuma Gak.
 358840	Satsuma Gkn.
 358852	Satsuma Tech
-358864	Satsuma C.
+358864	Satsuma Cm.
 358880	Satsuma East
 358888	Satsuma West
 358896	Satsuma S.
@@ -11513,7 +11513,7 @@
 359008	Sakurajim G.
 359020	Sakurajim Gn
 359032	Sakurajim T.
-359044	Sakurajim C.
+359044	Sakuraji Cm.
 359056	Sakurajim E.
 359064	Sakurajim W.
 359072	Sakurajim S.
@@ -11525,12 +11525,12 @@
 359136	Sakuraji Ag.
 359148	Sakuraji El.
 359160	Sakuraji Sh.
-359172	Sakurajim C.
+359172	Sakurajim Ch
 359184	Sakurajim Gj
 359196	Kirishima G.
 359208	Kirishima Gn
 359220	Kirishima T.
-359232	Kirishima C.
+359232	Kirishim Cm.
 359248	Kirishima E.
 359256	Kirishima W.
 359264	Kirishima S.
@@ -11542,7 +11542,7 @@
 359328	Kirishim Ag.
 359340	Kirishim El.
 359352	Kirishim Sh.
-359364	Kirishima C.
+359364	Kirishima Ch
 359376	Kirishima Gj
 359388	Izumi Gakuen
 359400	Izumi Gakuin
@@ -11592,7 +11592,7 @@
 359892	Nishinoom G.
 359904	Nishinoom Gn
 359916	Nishinoom T.
-359928	Nishinoom C.
+359928	Nishinoo Cm.
 359940	Nishinoom E.
 359952	Nishinoom W.
 359964	Nishinoom S.
@@ -11604,7 +11604,7 @@
 360040	Nishinoo Ag.
 360052	Nishinoo El.
 360064	Nishinoo Sh.
-360076	Nishinoom C.
+360076	Nishinoom Ch
 360088	Nishinoom Gj
 360100	Akune Gakuen
 360112	Akune Gakuin
@@ -11642,7 +11642,7 @@
 360484	Yurigaham G.
 360500	Yurigaham Gn
 360516	Yurigaham T.
-360532	Yurigaham C.
+360532	Yurigaha Cm.
 360548	Yurigaham E.
 360560	Yurigaham W.
 360572	Yurigaham S.
@@ -11654,12 +11654,12 @@
 360664	Yurigaha Ag.
 360680	Yurigaha El.
 360696	Yurigaha Sh.
-360712	Yurigaham C.
+360712	Yurigaham Ch
 360728	Yurigaham Gj
 360744	Yakushima G.
 360756	Yakushima Gn
 360768	Yakushima T.
-360780	Yakushima C.
+360780	Yakushim Cm.
 360792	Yakushima E.
 360804	Yakushima W.
 360816	Yakushima S.
@@ -11671,12 +11671,12 @@
 360892	Yakushim Ag.
 360904	Yakushim El.
 360916	Yakushim Sh.
-360928	Yakushima C.
+360928	Yakushima Ch
 360940	Yakushima Gj
 360952	Shimazu Gak.
 360964	Shimazu Gkn.
 360976	Shimazu Tech
-360988	Shimazu C.
+360988	Shimazu Cm.
 361000	Shimazu East
 361008	Shimazu West
 361016	Shimazu S.
@@ -11708,7 +11708,7 @@
 361296	Ishigaki G.
 361308	Ishigaki Gn
 361320	Ishigaki T.
-361332	Ishigaki C.
+361332	Ishigaki Cm.
 361344	Ishigaki E.
 361352	Ishigaki W.
 361360	Ishigaki S.
@@ -11720,12 +11720,12 @@
 361424	Ishigaki Ag.
 361436	Ishigaki El.
 361448	Ishigaki Sh.
-361460	Ishigaki C.
+361460	Ishigaki Ch
 361472	Ishigaki Gj
 361484	Miyakojim G.
 361496	Miyakojim Gn
 361508	Miyakojim T.
-361520	Miyakojim C.
+361520	Miyakoji Cm.
 361532	Miyakojim E.
 361544	Miyakojim W.
 361556	Miyakojim S.
@@ -11737,7 +11737,7 @@
 361632	Miyakoji Ag.
 361644	Miyakoji El.
 361656	Miyakoji Sh.
-361668	Miyakojim C.
+361668	Miyakojim Ch
 361680	Miyakojim Gj
 361692	Itoman Gak.
 361704	Itoman Gkn.
@@ -11858,7 +11858,7 @@
 363068	Kunigami G.
 363080	Kunigami Gn
 363092	Kunigami T.
-363104	Kunigami C.
+363104	Kunigami Cm.
 363120	Kunigami E.
 363128	Kunigami W.
 363136	Kunigami S.
@@ -11870,7 +11870,7 @@
 363200	Kunigami Ag.
 363212	Kunigami El.
 363224	Kunigami Sh.
-363236	Kunigami C.
+363236	Kunigami Ch
 363248	Kunigami Gj
 363260	Ryukyu Gak.
 363272	Ryukyu Gkn.
@@ -11921,7 +11921,7 @@
 363776	Naha Gijuku
 363788	Okinawa Gak.
 363800	Okinawa Gkn.
-363812	Okinawa C.
+363812	Okinawa Cm.
 363824	Okinawa East
 363832	Okinawa West
 363840	Okinawa S.
@@ -12187,7 +12187,7 @@
 366016	Hinode
 366024	Musashino
 366032	Kunitachi
-366040	Higashimurayama
+366040	H-Murayama
 366048	Kokubunji
 366056	Hino
 366064	Ome
