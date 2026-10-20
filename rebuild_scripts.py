@@ -932,9 +932,10 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     players = name_table.load_players() if names and os.path.exists(name_table.PLAYERS_TSV) else []
     stores = name_table.inplace_stores() if names else {}       # given names ...: written in place
     schools = school_names.load_tsv() if names else {}          # Eikan Nine school names: a table behind the surnames
+    ore_names = school_names.load_tsv(school_names.ORE_TSV)      # My Life names: a table behind the annexes
     slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages,
                          name_table.plates(names) + name_table.short_names(names) + name_table.player_plates(players)
-                         + name_table.inplace_plates(stores) + list(schools.values()) if names else ())
+                         + name_table.inplace_plates(stores) + list(schools.values()) + list(ore_names.values()) if names else ())
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
@@ -975,6 +976,27 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         new_secs[sc.rel.mod_id] = (sc.sec, data)
         print("%-13s %5d runs replaced, script section 0x%X -> 0x%X bytes (data behind it moves %+d)"
               % (sc.rel.name, len(r), sc.rel.sections[sc.sec]["size"], len(data), remap.growth))
+    ore_ptrs, ore_addr = {}, None
+    if ore_names:                   # My Life names: a table behind the annexes of ore_work.rel, pointers made absolute
+        orel = next(m for m in orig.values() if m.name == school_names.ORE_MODULE)
+        spec = S.BLOCK_SCRIPTS[school_names.ORE_MODULE]
+        host_o = next(m for m in orig.values() if m.name == S.ORE_ANNEX_MODULE)
+        hsec, hfrom = spec["annex_section"], spec["annex_from"]
+        try:
+            ore_ptrs = school_names.pointers(orel, ore_names)
+            ore_names = {o: ore_names[o] for o in set(ore_ptrs.values())}
+            ore_bytes, ore_where = school_names.table(ore_names, lambda t: encode_text(t, slots))
+        except ValueError as e:
+            sys.exit(str(e))
+        cur = new_secs[host_o.mod_id][1] if host_o.mod_id in new_secs else host_o.sec_data(hsec)
+        pad = bytes(-len(cur) % SECTION_ALIGN)
+        ore_base = len(cur) + len(pad)
+        new_secs[host_o.mod_id] = (hsec, cur + pad + ore_bytes)
+        remaps[(host_o.mod_id, hsec)] = Remap(hfrom // 2, hfrom // 2, {}, len(cur) + len(pad) + len(ore_bytes) - hfrom)
+        ore_sec_base = ORE_WORK_ADDR + host_o.sections[hsec]["offset"]
+        ore_addr = lambda off: ore_sec_base + ore_base + ore_where[off]
+        print("%-13s %5d My Life names in Latin letters, %d bytes behind the annexes (for %s)"
+              % (host_o.name, len(ore_names), len(pad) + len(ore_bytes), orel.name))
     if names:                       # surnames: a wide table behind the data of scc_main.rel (heap-loaded)
         host = next(m for m in orig.values() if m.name == name_table.HOST)
         enc = lambda t: encode_text(t, slots)
@@ -1166,6 +1188,13 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 image[pos:pos + len(data)] = data
                 patched.setdefault(m.mod_id, {})[(sc.sec, off)] = data
             image, n = ore_relocations(m, bytes(image), sc, ore["remap"])
+            if ore_ptrs and m.name == school_names.ORE_MODULE:     # its names: pointers into ore_work.rel
+                try:
+                    image, written = school_names.patch_pointers(m, image, ore_ptrs, ore_addr)
+                except ValueError as e:
+                    sys.exit(str(e))
+                patched.setdefault(m.mod_id, {}).update(written)
+                note += ", %d name pointers into %s" % (len(written), S.ORE_ANNEX_MODULE)
             extra_images[m.name] = (m.data, image, None)
             note += ", script laid out again, %d labels in the annex" % n
         elif any(mod == o["sc"].rel.mod_id and e[3] == o["sc"].sec
@@ -1240,6 +1269,8 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
         changed.append(PLAN_FILE)
     dropped = {(m.mod_id, school_names.SECTION, pos) for m in orig.values()
                if m.name == school_names.MODULE for pos in school_ptrs} if names else set()
+    dropped |= {(m.mod_id, school_names.SECTION, pos) for m in orig.values()
+                if m.name == school_names.ORE_MODULE for pos in ore_ptrs}
     new = verify(orig, scripts, repl, remaps, patched, moved, inplace, blocks, ores, dropped)
     if names:                           # the appended table reads back as built
         h = new[host.mod_id]
