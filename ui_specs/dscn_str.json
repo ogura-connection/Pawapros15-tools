@@ -519,9 +519,29 @@
     },
     {
      "sprite": "0a",
-     "text": "Ageage★Baseball Club",
+     "text": "Ageage",
      "font": "ttf:rounded:12:0.0:1.0:0.3",
      "style": "mi_name",
+     "align": "left",
+     "dx": 2,
+     "baseline": 16
+    },
+    {
+     "sprite": "0a",
+     "text": "★",
+     "font": "ttf:gothic:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "align": "left",
+     "dx": 63,
+     "baseline": 16
+    },
+    {
+     "sprite": "0a",
+     "text": "Baseball Club",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "align": "left",
+     "dx": 79,
      "baseline": 16
     },
     {

@@ -316,7 +316,8 @@ TTF = {"rounded": ("/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf", 
        "narrow": ("/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf", 0),
        "black": ("/System/Library/Fonts/Supplemental/Arial Black.ttf", 0),
        "serif-italic": ("/System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf", 0),
-       "sans-italic": ("/System/Library/Fonts/Supplemental/Arial Bold Italic.ttf", 0)}
+       "sans-italic": ("/System/Library/Fonts/Supplemental/Arial Bold Italic.ttf", 0),
+       "gothic": ("/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc", 0)}     # symbols Arial lacks (★)
 _faces = {}
 
 
