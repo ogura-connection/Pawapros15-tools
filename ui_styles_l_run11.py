@@ -459,8 +459,15 @@ def eikan(key):
 
 
 # ---- styles: one window of a redrawn logo per paint rectangle ----------------------------------------------------------------------
+# Hakkyu Dream redone 2026-10-20 (_work/ui_pages/hakkyu/compose.py: original ball, pennant and spikes kept and rebuilt
+# behind the words, perspective italic HAKKYU DREAM with the Japanese 3D extrusion): the finished index canvases.
+_HAK_FINAL = os.path.join(T, "_work/ui_pages/hakkyu/final_%s.npy")
+
+
 @functools.lru_cache(None)
 def logo(key):
+    if key.startswith("hak") and os.path.exists(_HAK_FINAL % key):
+        return np.load(_HAK_FINAL % key)
     return hakkyu(key) if key.startswith("hak") else eikan(key)
 
 
