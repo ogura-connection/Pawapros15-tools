@@ -83,6 +83,37 @@ def rel_art():
         js = json.load(f)
     return {fn: {tuple(int(v) for v in k.split(":")): bytes.fromhex(h) for k, h in p.items()} for fn, p in js.items()}
 
+
+# Code words patched in place: {file: {(section, offset): (original word, new word)}}. See _work/linked_dates.md.
+# scc_tops.rel sec1 0x3F30..0x41AC builds the Linked World card birth date "誕生日1981年10月26日" from glyphs:
+# 年 and 月 become ／ (glyph 30), 日 becomes 0xFFFF (end of text), so the card reads "Birth 1981／10／26".
+CODE_PATCHES = {
+    "scc_tops.rel": {
+        (1, 0x4004): (0x39400B42, 0x3940001E),   # li r10, 0xB42 (年) -> li r10, 30 (／)
+        (1, 0x40E0): (0x38A005A1, 0x38A0001E),   # li r5, 0x5A1 (月)  -> li r5, 30 (／)
+        (1, 0x4168): (0x38C00B31, 0x38C0FFFF),   # li r6, 0xB31 (日)  -> li r6, -1 (sth stores 0xFFFF = end)
+    },
+}
+
+
+def patch_code_words(m, image):
+    """(image, {(sec, off): 4 bytes}) with CODE_PATCHES applied; every word must still be the original."""
+    words = CODE_PATCHES.get(m.name)
+    if not words:
+        return image, {}
+    d, written = bytearray(image), {}
+    for (sec, off), (old, new) in sorted(words.items()):
+        if not m.sections[sec]["exec"]:
+            raise ValueError("%s sec%d+0x%X: not a code section" % (m.name, sec, off))
+        if any(s == sec and off <= p < off + 4 for s, p, *_ in m.relocs()):
+            raise ValueError("%s sec%d+0x%X: a relocation points into this word" % (m.name, sec, off))
+        pos = m.sections[sec]["offset"] + off
+        if struct.unpack_from(">I", m.data, pos)[0] != old or struct.unpack_from(">I", d, pos)[0] != old:
+            raise ValueError("%s sec%d+0x%X: not the expected original word 0x%08X" % (m.name, sec, off, old))
+        struct.pack_into(">I", d, pos, new)
+        written[(sec, off)] = struct.pack(">I", new)
+    return bytes(d), written
+
 # Memory plan. scs_main.rel is followed by the scenario slot, then by scs_load.rel / scs_face.rel.
 # The game reserves everything below 0x814E0000 for modules (main.dol 0x8003A938 raises the OS
 # arena to it) and its plan ends at 0x812CB794: the area in between is free.
@@ -1259,7 +1290,14 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 sys.exit(str(e))
             patched.setdefault(m.mod_id, {}).update(written)
             note += ", surname readers patched"
-        art = rel_art().get(m.name)                              # sprite art kept in a module (boot controller screen)
+        if m.name in CODE_PATCHES:                               # code words (Linked World birth date)
+            try:
+                image, written = patch_code_words(m, image)
+            except ValueError as e:
+                sys.exit(str(e))
+            patched.setdefault(m.mod_id, {}).update(written)
+            note += ", %d code words patched" % len(written)
+        art = rel_art().get(m.name)                             # sprite art kept in a module (boot controller screen)
         if art:
             if any(any(s == ps and po <= so < po + len(data) for (ps, po), data in art.items())
                    for s, so in strings.get(m.name, ())):
