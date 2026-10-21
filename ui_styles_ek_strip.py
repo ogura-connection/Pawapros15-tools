@@ -9,6 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 STYLES = {}
 
 NARROW = "/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf"
+NARROW_I = "/System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf"
 SLOPE = 12 / 24                       # the cards lean one pixel right per two rows up (the kanji parts step so)
 ANGLE = float(np.degrees(np.arctan2(24, 12)))   # text along the card, read upwards
 # ink level (0..6) -> index of the grey ramps of palettes 20 and 61 (1 = white .. 15 = black)
@@ -19,11 +20,11 @@ CARDS = {
     "72": (3, ["Entrance", "Ceremony"], 11),     # 入学式
     "73": (3, ["Graduation"], 13),               # 卒業式
     "74": (3, ["Tournament"], 13),               # 公式戦
-    "75": (4, ["Practice Game"], 13),            # 練習試合
+    "75": (4, ["Practice Game"], 12),            # 練習試合
     "76": (4, ["Away Game"], 13),                # 遠征試合
-    "77": (2, ["Training Camp"], 13),            # 合宿
+    "77": (2, ["Training Camp"], 12),            # 合宿
     "78": (4, ["Draft"], 13),                    # ドラフト
-    "79": (4, ["Midterm Exams"], 13),            # 中間試験
+    "79": (4, ["Midterm Exams"], 12),            # 中間試験
     "7a": (4, ["Final Exams"], 13),              # 期末試験
     "7b": (2, ["Exams"], 13),                    # 試験
     "7c": (4, ["School Event"], 13),             # 学校行事
@@ -34,7 +35,7 @@ CARDS = {
 }
 # sprite: (part count, lines, cap height) - the short horizontal names (48 x 32 cells, centred on the origin)
 NAMES = {
-    "64": (1, ["Entrance"], 9), "65": (1, ["Graduation"], 8), "66": (2, ["Tourney"], 10),
+    "64": (1, ["Entrance"], 9), "65": (1, ["Grad."], 8), "66": (2, ["Tourney"], 10),
     "67": (1, ["Practice", "Game"], 9), "68": (1, ["Away", "Game"], 9), "69": (2, ["Camp"], 10),
     "6a": (1, ["Draft"], 10), "6b": (1, ["Midterm"], 10), "6c": (1, ["Finals"], 10), "6d": (1, ["Exams"], 10),
     "6e": (2, ["Event"], 10), "6f": (1, ["Sports", "Day"], 9), "70": (1, ["Culture", "Fest"], 9),
@@ -111,9 +112,9 @@ def cut(art, origin, parts):
     return out
 
 
-def weekday(text):
-    """white-ringed black letters for the 32 x 32 weekday cells (palette 20: 1 = white)"""
-    a = levels(coverage([text], 14, path="/System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf", squeeze=0.84))
+def ringed(lines, cap, squeeze=1.0):
+    """black italic letters inside a one-pixel white ring (1 = white in palettes 20 and 61), like the Japanese"""
+    a = levels(coverage(lines, cap, path=NARROW_I, squeeze=squeeze, gap=1))
     letters = a > 0
     p = np.pad(letters, 1)
     ring = np.zeros_like(p)
@@ -126,6 +127,20 @@ def weekday(text):
     return out
 
 
+def weekday(text):
+    """the 32 x 32 weekday cells"""
+    return ringed([text], 14, squeeze=0.84)
+
+
+def name(lines, w=48, h=32):
+    """a horizontal event name: the largest capital height (11 down) that fits the 48 x 32 cell"""
+    for cap in range(11, 5, -1):
+        art = ringed(lines, cap)
+        if art.shape[1] <= w and art.shape[0] <= h:
+            return art
+    raise ValueError(lines)
+
+
 def build():
     """CELLS = {name: [(array, (ox, oy)) per part]}: every picture the spec draws, cut into its sprite's parts"""
     cells = {}
@@ -133,8 +148,9 @@ def build():
         art, org = picture(lines, cap, ANGLE)
         cells[sp] = cut(art, org, n)
     for sp, (n, lines, cap) in NAMES.items():
-        art, org = picture(lines, cap, 0.0)
-        cells[sp] = [(art, org)] + [(None, None)] * (n - 1)
+        art = name(lines)
+        h, w = art.shape
+        cells[sp] = [(art, (-(w // 2), -(h // 2)))] + [(None, None)] * (n - 1)
     for sp, text in WEEKDAYS.items():
         art = weekday(text)
         cells[sp] = [(art, None)]
