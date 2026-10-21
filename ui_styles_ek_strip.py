@@ -34,7 +34,7 @@ CARDS = {
 }
 # sprite: (part count, lines, cap height) - the short horizontal names (48 x 32 cells, centred on the origin)
 NAMES = {
-    "64": (1, ["Entrance"], 10), "65": (1, ["Graduation"], 9), "66": (2, ["Tourney"], 10),
+    "64": (1, ["Entrance"], 9), "65": (1, ["Graduation"], 8), "66": (2, ["Tourney"], 10),
     "67": (1, ["Practice", "Game"], 9), "68": (1, ["Away", "Game"], 9), "69": (2, ["Camp"], 10),
     "6a": (1, ["Draft"], 10), "6b": (1, ["Midterm"], 10), "6c": (1, ["Finals"], 10), "6d": (1, ["Exams"], 10),
     "6e": (2, ["Event"], 10), "6f": (1, ["Sports", "Day"], 9), "70": (1, ["Culture", "Fest"], 9),
@@ -113,7 +113,7 @@ def cut(art, origin, parts):
 
 def weekday(text):
     """white-ringed black letters for the 32 x 32 weekday cells (palette 20: 1 = white)"""
-    a = levels(coverage([text], 15, path="/System/Library/Fonts/Supplemental/Arial Bold Italic.ttf", squeeze=0.86))
+    a = levels(coverage([text], 14, path="/System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf", squeeze=0.84))
     letters = a > 0
     p = np.pad(letters, 1)
     ring = np.zeros_like(p)

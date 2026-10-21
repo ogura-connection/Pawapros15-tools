@@ -235,5 +235,1977 @@
    "sprites": "z4_etk_0#4",
    "sprite_prefix": "z4_etk_0"
   }
+ ],
+ "paint": [
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "x",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_none",
+   "note": "old Japanese event names cleared"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "x",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_none",
+   "note": "old Japanese event names cleared"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    0,
+    0,
+    128,
+    128
+   ],
+   "text": "x",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_none",
+   "note": "old Japanese event names cleared"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 8,
+   "rect": [
+    0,
+    0,
+    128,
+    88
+   ],
+   "text": "x",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_none",
+   "note": "old Japanese event names cleared"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    84,
+    65,
+    128,
+    75
+   ],
+   "text": "Entrance",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_64_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    48,
+    88,
+    97,
+    96
+   ],
+   "text": "Graduation",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_65_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    33,
+    38,
+    77,
+    51
+   ],
+   "text": "Tourney",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_66_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    47,
+    76,
+    87,
+    101
+   ],
+   "text": "Practice / Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_67_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    88,
+    76,
+    116,
+    101
+   ],
+   "text": "Away / Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_68_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    0,
+    38,
+    32,
+    52
+   ],
+   "text": "Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_69_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    78,
+    38,
+    105,
+    50
+   ],
+   "text": "Draft",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_6a_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    0,
+    53,
+    44,
+    64
+   ],
+   "text": "Midterm",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_6b_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    0,
+    65,
+    33,
+    76
+   ],
+   "text": "Finals",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_6c_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    45,
+    53,
+    82,
+    64
+   ],
+   "text": "Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_6d_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    34,
+    65,
+    66,
+    76
+   ],
+   "text": "Event",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_6e_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    0,
+    47,
+    32,
+    75
+   ],
+   "text": "Sports / Day",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_6f_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    33,
+    47,
+    69,
+    73
+   ],
+   "text": "Culture / Fest",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_70_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    75,
+    0,
+    109,
+    28
+   ],
+   "text": "School / Trip",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_71_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    42,
+    74,
+    79,
+    94
+   ],
+   "text": "Entrance / Ceremony",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_72_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    0,
+    74,
+    41,
+    94
+   ],
+   "text": "Entrance / Ceremony",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_72_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    80,
+    74,
+    114,
+    94
+   ],
+   "text": "Entrance / Ceremony",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_72_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    96,
+    0,
+    118,
+    24
+   ],
+   "text": "Graduation",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_73_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    51,
+    103,
+    74,
+    128
+   ],
+   "text": "Graduation",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_73_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    21,
+    0,
+    45,
+    24
+   ],
+   "text": "Graduation",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_73_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    25,
+    76,
+    46,
+    102
+   ],
+   "text": "Tournament",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_74_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    0,
+    76,
+    24,
+    102
+   ],
+   "text": "Tournament",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_74_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    98,
+    47,
+    123,
+    73
+   ],
+   "text": "Tournament",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_74_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    45,
+    26,
+    65,
+    50
+   ],
+   "text": "Practice Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_75_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    0,
+    26,
+    22,
+    50
+   ],
+   "text": "Practice Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_75_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    23,
+    26,
+    44,
+    50
+   ],
+   "text": "Practice Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_75_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    46,
+    0,
+    70,
+    24
+   ],
+   "text": "Practice Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_75_3"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    87,
+    95,
+    104,
+    115
+   ],
+   "text": "Away Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_76_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    66,
+    0,
+    87,
+    18
+   ],
+   "text": "Away Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_76_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    21,
+    0,
+    40,
+    19
+   ],
+   "text": "Away Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_76_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    48,
+    95,
+    67,
+    115
+   ],
+   "text": "Away Game",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_76_3"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    41,
+    0,
+    74,
+    46
+   ],
+   "text": "Training Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_77_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    0,
+    0,
+    40,
+    46
+   ],
+   "text": "Training Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_77_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    0,
+    88,
+    15,
+    97
+   ],
+   "text": "Draft",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_78_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    16,
+    88,
+    31,
+    97
+   ],
+   "text": "Draft",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_78_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    98,
+    88,
+    118,
+    96
+   ],
+   "text": "Draft",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_78_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    32,
+    88,
+    47,
+    97
+   ],
+   "text": "Draft",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_78_3"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    0,
+    0,
+    20,
+    25
+   ],
+   "text": "Midterm Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_79_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    75,
+    103,
+    98,
+    128
+   ],
+   "text": "Midterm Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_79_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    70,
+    47,
+    97,
+    73
+   ],
+   "text": "Midterm Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_79_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    26,
+    103,
+    50,
+    128
+   ],
+   "text": "Midterm Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_79_3"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    68,
+    95,
+    86,
+    115
+   ],
+   "text": "Final Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7a_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    0,
+    95,
+    25,
+    115
+   ],
+   "text": "Final Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7a_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    91,
+    51,
+    113,
+    72
+   ],
+   "text": "Final Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7a_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    26,
+    95,
+    47,
+    115
+   ],
+   "text": "Final Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7a_3"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    49,
+    51,
+    69,
+    73
+   ],
+   "text": "Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7b_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    66,
+    26,
+    89,
+    49
+   ],
+   "text": "Exams",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7b_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    70,
+    51,
+    90,
+    73
+   ],
+   "text": "School Event",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7c_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    90,
+    26,
+    115,
+    48
+   ],
+   "text": "School Event",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7c_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    0,
+    51,
+    25,
+    73
+   ],
+   "text": "School Event",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7c_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    26,
+    51,
+    48,
+    73
+   ],
+   "text": "School Event",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7c_3"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    0,
+    103,
+    25,
+    128
+   ],
+   "text": "Sports Day",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7d_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    71,
+    0,
+    95,
+    24
+   ],
+   "text": "Sports Day",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7d_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 5,
+   "rect": [
+    99,
+    103,
+    121,
+    128
+   ],
+   "text": "Sports Day",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7d_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    75,
+    20,
+    107,
+    37
+   ],
+   "text": "Culture / Festival",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7e_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    0,
+    20,
+    40,
+    37
+   ],
+   "text": "Culture / Festival",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7e_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    41,
+    20,
+    74,
+    37
+   ],
+   "text": "Culture / Festival",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7e_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    41,
+    0,
+    65,
+    18
+   ],
+   "text": "School Trip",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7f_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    0,
+    0,
+    20,
+    19
+   ],
+   "text": "School Trip",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7f_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 6,
+   "rect": [
+    105,
+    95,
+    128,
+    114
+   ],
+   "text": "School Trip",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7f_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    88,
+    0,
+    108,
+    18
+   ],
+   "text": "School Trip",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_7f_3"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    108,
+    77,
+    120,
+    87
+   ],
+   "text": "Day Before / Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_93_0"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    67,
+    65,
+    83,
+    76
+   ],
+   "text": "Day Before / Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_93_1"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    37,
+    77,
+    72,
+    87
+   ],
+   "text": "Day Before / Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_93_2"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    0,
+    77,
+    36,
+    87
+   ],
+   "text": "Day Before / Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_93_3"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    83,
+    53,
+    119,
+    64
+   ],
+   "text": "Day Before / Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_93_4"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 7,
+   "rect": [
+    73,
+    77,
+    107,
+    87
+   ],
+   "text": "Day Before / Camp",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_93_5"
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    32,
+    32
+   ],
+   "text": "Mon",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_09_0",
+   "dy": 2
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 1,
+   "rect": [
+    32,
+    0,
+    64,
+    32
+   ],
+   "text": "Tue",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_0a_0",
+   "dy": 2
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 1,
+   "rect": [
+    64,
+    0,
+    96,
+    32
+   ],
+   "text": "Wed",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_0b_0",
+   "dy": 2
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 1,
+   "rect": [
+    96,
+    0,
+    128,
+    32
+   ],
+   "text": "Thu",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_0c_0",
+   "dy": 2
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 1,
+   "rect": [
+    0,
+    32,
+    32,
+    64
+   ],
+   "text": "Fri",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_0d_0",
+   "dy": 2
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 1,
+   "rect": [
+    32,
+    32,
+    64,
+    64
+   ],
+   "text": "Sat",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_0e_0",
+   "dy": 2
+  },
+  {
+   "bank": "z4_emp_0#0",
+   "page": 1,
+   "rect": [
+    64,
+    32,
+    96,
+    64
+   ],
+   "text": "Sun",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_cell_0f_0",
+   "dy": 2
+  }
+ ],
+ "sprite_parts": [
+  {
+   "symbol": "opd_z4_emp_0_72",
+   "parts": [
+    [
+     6,
+     61,
+     -11,
+     -30,
+     42,
+     74,
+     79,
+     94
+    ],
+    [
+     6,
+     61,
+     -24,
+     -10,
+     0,
+     74,
+     41,
+     94
+    ],
+    [
+     6,
+     61,
+     -26,
+     10,
+     80,
+     74,
+     114,
+     94
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_73",
+   "parts": [
+    [
+     6,
+     61,
+     1,
+     -36,
+     96,
+     0,
+     118,
+     24
+    ],
+    [
+     5,
+     61,
+     -10,
+     -12,
+     51,
+     103,
+     74,
+     128
+    ],
+    [
+     6,
+     61,
+     -23,
+     13,
+     21,
+     0,
+     45,
+     24
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_74",
+   "parts": [
+    [
+     5,
+     61,
+     4,
+     -39,
+     25,
+     76,
+     46,
+     102
+    ],
+    [
+     5,
+     61,
+     -10,
+     -13,
+     0,
+     76,
+     24,
+     102
+    ],
+    [
+     5,
+     61,
+     -25,
+     13,
+     98,
+     47,
+     123,
+     73
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_75",
+   "parts": [
+    [
+     6,
+     61,
+     9,
+     -48,
+     45,
+     26,
+     65,
+     50
+    ],
+    [
+     6,
+     61,
+     -2,
+     -24,
+     0,
+     26,
+     22,
+     50
+    ],
+    [
+     6,
+     61,
+     -13,
+     0,
+     23,
+     26,
+     44,
+     50
+    ],
+    [
+     6,
+     61,
+     -28,
+     24,
+     46,
+     0,
+     70,
+     24
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_76",
+   "parts": [
+    [
+     6,
+     61,
+     7,
+     -39,
+     87,
+     95,
+     104,
+     115
+    ],
+    [
+     7,
+     61,
+     -4,
+     -19,
+     66,
+     0,
+     87,
+     18
+    ],
+    [
+     7,
+     61,
+     -13,
+     1,
+     21,
+     0,
+     40,
+     19
+    ],
+    [
+     6,
+     61,
+     -23,
+     20,
+     48,
+     95,
+     67,
+     115
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_77",
+   "parts": [
+    [
+     5,
+     61,
+     -3,
+     -46,
+     41,
+     0,
+     74,
+     46
+    ],
+    [
+     5,
+     61,
+     -29,
+     0,
+     0,
+     0,
+     40,
+     46
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_78",
+   "parts": [
+    [
+     7,
+     61,
+     -1,
+     -17,
+     0,
+     88,
+     15,
+     97
+    ],
+    [
+     7,
+     61,
+     -4,
+     -8,
+     16,
+     88,
+     31,
+     97
+    ],
+    [
+     7,
+     61,
+     -12,
+     1,
+     98,
+     88,
+     118,
+     96
+    ],
+    [
+     7,
+     61,
+     -13,
+     9,
+     32,
+     88,
+     47,
+     97
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_79",
+   "parts": [
+    [
+     6,
+     61,
+     10,
+     -50,
+     0,
+     0,
+     20,
+     25
+    ],
+    [
+     5,
+     61,
+     -3,
+     -25,
+     75,
+     103,
+     98,
+     128
+    ],
+    [
+     5,
+     61,
+     -20,
+     0,
+     70,
+     47,
+     97,
+     73
+    ],
+    [
+     5,
+     61,
+     -30,
+     26,
+     26,
+     103,
+     50,
+     128
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_7a",
+   "parts": [
+    [
+     6,
+     61,
+     7,
+     -40,
+     68,
+     95,
+     86,
+     115
+    ],
+    [
+     6,
+     61,
+     -8,
+     -20,
+     0,
+     95,
+     25,
+     115
+    ],
+    [
+     6,
+     61,
+     -15,
+     0,
+     91,
+     51,
+     113,
+     72
+    ],
+    [
+     6,
+     61,
+     -25,
+     21,
+     26,
+     95,
+     47,
+     115
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_7b",
+   "parts": [
+    [
+     6,
+     61,
+     -4,
+     -22,
+     49,
+     51,
+     69,
+     73
+    ],
+    [
+     6,
+     61,
+     -16,
+     0,
+     66,
+     26,
+     89,
+     49
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_7c",
+   "parts": [
+    [
+     6,
+     61,
+     7,
+     -44,
+     70,
+     51,
+     90,
+     73
+    ],
+    [
+     6,
+     61,
+     -7,
+     -22,
+     90,
+     26,
+     115,
+     48
+    ],
+    [
+     6,
+     61,
+     -19,
+     0,
+     0,
+     51,
+     25,
+     73
+    ],
+    [
+     6,
+     61,
+     -26,
+     22,
+     26,
+     51,
+     48,
+     73
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_7d",
+   "parts": [
+    [
+     5,
+     61,
+     -1,
+     -37,
+     0,
+     103,
+     25,
+     128
+    ],
+    [
+     6,
+     61,
+     -11,
+     -12,
+     71,
+     0,
+     95,
+     24
+    ],
+    [
+     5,
+     61,
+     -23,
+     12,
+     99,
+     103,
+     121,
+     128
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_7e",
+   "parts": [
+    [
+     7,
+     61,
+     -9,
+     -25,
+     75,
+     20,
+     107,
+     37
+    ],
+    [
+     7,
+     61,
+     -21,
+     -8,
+     0,
+     20,
+     40,
+     37
+    ],
+    [
+     7,
+     61,
+     -22,
+     9,
+     41,
+     20,
+     74,
+     37
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_7f",
+   "parts": [
+    [
+     7,
+     61,
+     0,
+     -37,
+     41,
+     0,
+     65,
+     18
+    ],
+    [
+     7,
+     61,
+     -5,
+     -19,
+     0,
+     0,
+     20,
+     19
+    ],
+    [
+     6,
+     61,
+     -17,
+     0,
+     105,
+     95,
+     128,
+     114
+    ],
+    [
+     7,
+     61,
+     -24,
+     19,
+     88,
+     0,
+     108,
+     18
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_93",
+   "parts": [
+    [
+     7,
+     61,
+     3,
+     -31,
+     108,
+     77,
+     120,
+     87
+    ],
+    [
+     7,
+     61,
+     -5,
+     -21,
+     67,
+     65,
+     83,
+     76
+    ],
+    [
+     7,
+     61,
+     -11,
+     -10,
+     37,
+     77,
+     72,
+     87
+    ],
+    [
+     7,
+     61,
+     -12,
+     0,
+     0,
+     77,
+     36,
+     87
+    ],
+    [
+     7,
+     61,
+     -21,
+     10,
+     83,
+     53,
+     119,
+     64
+    ],
+    [
+     7,
+     61,
+     -24,
+     21,
+     73,
+     77,
+     107,
+     87
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_64",
+   "parts": [
+    [
+     7,
+     61,
+     -22,
+     -5,
+     84,
+     65,
+     128,
+     75
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_65",
+   "parts": [
+    [
+     7,
+     61,
+     -24,
+     -4,
+     48,
+     88,
+     97,
+     96
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_66",
+   "parts": [
+    [
+     7,
+     61,
+     -22,
+     -6,
+     33,
+     38,
+     77,
+     51
+    ],
+    [
+     8,
+     61,
+     0,
+     0,
+     120,
+     80,
+     128,
+     88
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_67",
+   "parts": [
+    [
+     5,
+     61,
+     -20,
+     -12,
+     47,
+     76,
+     87,
+     101
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_68",
+   "parts": [
+    [
+     5,
+     61,
+     -14,
+     -12,
+     88,
+     76,
+     116,
+     101
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_69",
+   "parts": [
+    [
+     7,
+     61,
+     -16,
+     -7,
+     0,
+     38,
+     32,
+     52
+    ],
+    [
+     8,
+     61,
+     0,
+     0,
+     120,
+     80,
+     128,
+     88
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_6a",
+   "parts": [
+    [
+     7,
+     61,
+     -13,
+     -6,
+     78,
+     38,
+     105,
+     50
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_6b",
+   "parts": [
+    [
+     7,
+     61,
+     -22,
+     -5,
+     0,
+     53,
+     44,
+     64
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_6c",
+   "parts": [
+    [
+     7,
+     61,
+     -16,
+     -5,
+     0,
+     65,
+     33,
+     76
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_6d",
+   "parts": [
+    [
+     7,
+     61,
+     -18,
+     -5,
+     45,
+     53,
+     82,
+     64
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_6e",
+   "parts": [
+    [
+     7,
+     61,
+     -16,
+     -5,
+     34,
+     65,
+     66,
+     76
+    ],
+    [
+     8,
+     61,
+     0,
+     0,
+     120,
+     80,
+     128,
+     88
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_6f",
+   "parts": [
+    [
+     5,
+     61,
+     -16,
+     -14,
+     0,
+     47,
+     32,
+     75
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_70",
+   "parts": [
+    [
+     5,
+     61,
+     -18,
+     -13,
+     33,
+     47,
+     69,
+     73
+    ]
+   ]
+  },
+  {
+   "symbol": "opd_z4_emp_0_71",
+   "parts": [
+    [
+     5,
+     61,
+     -17,
+     -14,
+     75,
+     0,
+     109,
+     28
+    ],
+    [
+     8,
+     61,
+     0,
+     0,
+     120,
+     80,
+     128,
+     88
+    ],
+    [
+     8,
+     61,
+     0,
+     0,
+     120,
+     80,
+     128,
+     88
+    ]
+   ]
+  }
  ]
 }
