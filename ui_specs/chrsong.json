@@ -1882,8 +1882,8 @@
      "sprite": "01",
      "text": "Cheer Song\nMaker",
      "style": "cheer_title",
-     "font": "ttf:narrow:12:0.0:0.9:0.3",
-     "baseline": 71,
+     "font": "ttf:narrow:15:0.0:0.72:0.3",
+     "baseline": 75,
      "pages": [
       4
      ]
@@ -2032,8 +2032,8 @@
      "sprite": "01",
      "text": "Cheer Song\nMaker",
      "style": "cheer_title",
-     "font": "ttf:narrow:12:0.0:0.9:0.3",
-     "baseline": 71,
+     "font": "ttf:narrow:15:0.0:0.72:0.3",
+     "baseline": 75,
      "pages": [
       4
      ]
