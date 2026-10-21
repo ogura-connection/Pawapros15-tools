@@ -140,7 +140,44 @@
      "align": "left",
      "dx": 72,
      "baseline": 18
+    },
+    {
+     "sprite": "11",
+     "text": "Korea",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 18
+    },
+    {
+     "sprite": "12",
+     "text": "Chinese Taipei",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "13",
+     "text": "China",
+     "font": "ttf:rounded:14:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 18
     }
+   ],
+   "clear": [
+    [
+     4,
+     0,
+     24,
+     120,
+     48
+    ],
+    [
+     4,
+     96,
+     0,
+     120,
+     24
+    ]
    ]
   },
   {
@@ -403,6 +440,148 @@
      "baseline": 24
     }
    ]
+  },
+  {
+   "bank": "y5_knm_0_csr",
+   "pages": "tex_y4_stn",
+   "sprites_arc": "gdt_scs.arc",
+   "sprite_prefix": "y4_stn_0",
+   "items": [
+    {
+     "sprite": "00",
+     "text": "Pawafuru Corp.",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "01",
+     "text": "Kagurazaka Group",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "02",
+     "text": "Otori Phoenix",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 18
+    },
+    {
+     "sprite": "03",
+     "text": "Industrial All-Stars",
+     "font": "ttf:rounded:12:0.0:0.8:0.3",
+     "style": "mi_name",
+     "baseline": 18
+    },
+    {
+     "sprite": "04",
+     "text": "TOJO International",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 18
+    },
+    {
+     "sprite": "05",
+     "text": "Gokuaku Trading Co.",
+     "font": "ttf:rounded:11:0.0:0.8:0.3",
+     "style": "mi_name",
+     "baseline": 17
+    },
+    {
+     "sprite": "06",
+     "text": "Tekuteku Tech",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 18
+    },
+    {
+     "sprite": "07",
+     "text": "Rocket Express",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "08",
+     "text": "Naniwa Trading",
+     "font": "ttf:rounded:12:0.0:0.95:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "09",
+     "text": "Pichipichi Fisheries",
+     "font": "ttf:rounded:12:0.0:0.78:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "0a",
+     "text": "Ageage★Baseball Club",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "0b",
+     "text": "Hao",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 18
+    },
+    {
+     "sprite": "0c",
+     "text": "Kurojishi Heavy Ind.",
+     "font": "ttf:rounded:11:0.0:0.85:0.3",
+     "style": "mi_name",
+     "baseline": 17
+    },
+    {
+     "sprite": "0d",
+     "text": "Dosukoi Brewery",
+     "font": "ttf:rounded:12:0.0:0.9:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "0e",
+     "text": "Mizotto Sports",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "0f",
+     "text": "Tenka Construction",
+     "font": "ttf:rounded:12:0.0:0.78:0.3",
+     "style": "mi_name",
+     "baseline": 18
+    },
+    {
+     "sprite": "10",
+     "text": "Worldwide Works",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 18
+    },
+    {
+     "sprite": "11",
+     "text": "Dokonjo Guts",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    },
+    {
+     "sprite": "12",
+     "text": "Main Power Mainstays",
+     "font": "ttf:rounded:12:0.0:1.0:0.3",
+     "style": "mi_name",
+     "baseline": 16
+    }
+   ],
+   "clear": true
   }
  ]
 }
