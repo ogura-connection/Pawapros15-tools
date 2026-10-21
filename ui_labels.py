@@ -17,6 +17,7 @@ With "copy": [page, x0, y0, x1, y1] (the same plate with nothing on it, taken fr
 "copy": "clear" empties the rectangle (lettering with nothing behind it).
 "sheet" entries paint lettering into a picture cut over several pages (see ui_sheet.py).
 "strips" entries redraw names of a text atlas cut out by sprites of another file, in place (see paint_strips).
+"sprite_parts" entries give sprite tables of this file new parts (see write_sprite_parts); paint_strips reads them too.
 A label of a group without "text" keeps its Japanese art. A label without "pack" only clears its rectangle (a piece of a Japanese label that has no use any more).
 A spec is a JSON file:
   {"arc": "scs_main.arc",
@@ -419,6 +420,8 @@ def render(spec, d, banks, project=None):
         ui_sheet.paint(entry, d, banks, render.patches, project, pages=pages)
     for entry in spec.get("strips", ()):            # names in a text atlas whose sprite tables are in another file
         paint_strips(entry, d, banks, pages, project)
+    if spec.get("sprite_parts"):                    # new parts for sprite tables (names moved in a text atlas)
+        render.patches += write_sprite_parts(spec["sprite_parts"], d)
     for lab in spec.get("labels", ()):
         b = U.bank_named(banks, lab["bank"])
         key = (lab["bank"], lab["page"])
@@ -484,6 +487,29 @@ def strip_sprites(arc_name, prefix):
             oy, ox = struct.unpack(">hh", q[2:6])
             ps.append((q[0], q[1], ox, oy, q[7], q[6], q[9], q[8]))
         out[k[len(prefix) + 5:]] = ps
+    over = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ui_specs",
+                        os.path.splitext(os.path.basename(arc_name))[0] + ".json")
+    if os.path.exists(over):                        # parts that file's spec gives the tables ("sprite_parts")
+        with open(over) as f:
+            for e in json.load(f).get("sprite_parts", ()):
+                if e["symbol"].startswith("opd_" + prefix + "_"):
+                    out[e["symbol"][len(prefix) + 5:]] = [tuple(p) for p in e["parts"]]
+    return out
+
+
+def write_sprite_parts(entries, d):
+    """[(file offset, bytes)] that give sprite tables new parts: [{"symbol": "opd_h3_tnm_0_11",
+    "parts": [[page, palette, ox, oy, x0, y0, x1, y1], ...]}]. A table keeps its size: as many parts as it had."""
+    syms = U.elf_symbols(d)
+    out = []
+    for e in entries:
+        off = syms[e["symbol"]][0]
+        if len(e["parts"]) != d[off]:
+            raise ValueError("%s has %d parts, %d given" % (e["symbol"], d[off], len(e["parts"])))
+        for i, (pg, pal, ox, oy, x0, y0, x1, y1) in enumerate(e["parts"]):
+            if not (0 <= pg < 64 and 0 <= x0 < x1 <= 128 and 0 <= y0 < y1 <= 128):
+                raise ValueError("%s part %d: bad rectangle" % (e["symbol"], i))
+            out.append((off + 10 + 10 * i, struct.pack(">BBhhBBBB", pg, pal, oy, ox, y0, x0, y1, x1)))
     return out
 
 
@@ -498,11 +524,19 @@ def paint_strips(entry, d, banks, pages, project=None):
     "left" starts at column `dx`). Several items may name one sprite (words placed one by one: the second is drawn
     over the first); names whose sprites share a rectangle (オール・セントラル / オール・パシフィック) must draw it alike.
     Raises when the art is wider than the sprite, when ink falls where no part shows it, or when two items write
-    different pixels into a rectangle they share."""
+    different pixels into a rectangle they share. "clear": true empties every page of the set first (names laid out
+    anew with "sprite_parts"), or a list [[page of the set, x0, y0, x1, y1], ...] empties those rectangles."""
     import ui_type
     b = U.bank_named(banks, entry["bank"])
     idx = [k for k, n in enumerate(b["page_names"]) if n.startswith(entry["pages"])]
     sprites = strip_sprites(entry["sprites_arc"], entry["sprite_prefix"])
+    clear = entry.get("clear")
+    for i, k in enumerate(idx):
+        rects = [(0, 0, U.PAGE, U.PAGE)] if clear is True else [r[1:] for r in clear or () if r[0] == i]
+        for x0, y0, x1, y1 in rects:
+            if (entry["bank"], k) not in pages:
+                pages[(entry["bank"], k)] = U.decode_indices(d, *b["pages"][k]).copy()
+            pages[(entry["bank"], k)].reshape(U.PAGE, U.PAGE)[y0:y1, x0:x1] = 0
     owner, painted = {}, set()
     for item in entry["items"]:
         parts = sprites[item["sprite"]]
