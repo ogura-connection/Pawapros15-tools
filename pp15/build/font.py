@@ -1,38 +1,44 @@
+"""Draw English letter pairs in the game's font, and put them into the font file.
+
+What it is for: the game draws text in fixed cells, and its font has only full-width Latin letters, so one letter
+per cell would give 17 letters per dialogue line and double the script size. This module draws PAIRS of narrow
+letters into single glyph cells and stores them in kanji slots the remaining Japanese text does not use, so English
+needs one text unit per two letters. (See "Pair font" in docs/GLOSSARY.md.)
+
+The font file is section 4 of fonttex2.rel. It holds two fonts with the same glyph numbering (the byte format is
+described in glyph_codec.py):
+    +0x000000  small font: 16x17 pixels used of the 22x28 cell, shades 8 (ink) .. 15 (background)
+    +0x05DF64  large outlined font (dialogue): 22x28, shades 1 (ink) .. 9 (outline) .. 15 (background)
+
+Public names:
+    FONTS, FONT_END                 where the two fonts lie inside section 4
+    NARROW, NARROW_CELLS            marker and length of the narrow pairs used by the match score display
+    SINGLE, FULLWIDTH               one centred letter in place of the game's own full-width letter
+    render_pair(pair, large)        a letter pair as 28 rows of 22 shade values
+    pair_glyph(pair, large, cache)  the compressed glyph of a pair (cached on disk by the caller)
+    build_font(rel_data, sec4_offset, slots, cache)   fonttex2.rel with the pairs drawn into their slots
+    text_segments                   cut text into pairs (from pair_text.py), kept here because other modules ask for it
+    main(argv)                      `pp15 font preview TEXT [OUT.png]`: draw text as the game will show it
+
+`python3 -m pp15 build` uses this module; there is nothing else to run by hand. Needs Pillow and a monospaced
+TrueType font (FONT_FILE below, macOS Menlo by default).
 """
-font.py - two-letters-per-cell English font for Jikkyou Powerful Pro Yakyuu 15 (Wii)
-
-The game draws text in fixed cells and its font has only full-width Latin letters, so one
-letter per cell gives 17 letters per dialogue line and doubles the script size. This module
-draws PAIRS of half-width letters into single glyph cells and stores them in kanji slots the
-remaining Japanese text does not use. English then needs one text unit per two letters.
-
-fonttex2.rel section 4 holds the fonts (same glyph numbering in both):
-  +0x000000  small font: 16x17 pixels used of the 22x28 cell, shades 8 (ink) .. 15 (background)
-  +0x05DF64  large outlined font (dialogue): 22x28, shades 1 (ink) .. 9 (outline) .. 15 (background)
-Each is: u16 0, u16 count (LE), u32 offsets[count] (LE, from the end of the table), glyph data.
-A glyph is 28 rows x 11 bytes (two 4-bit pixels per byte), compressed per column: a flag bit
-says "literal byte" or "fill: this byte for the next F columns and R rows" (F, R = 1..19).
-Stored as: u8 n, n bytes of flag bits, then the literal bytes.
-
-  pp15 font preview "Some text" [out.png]   render text as it will look, both fonts
-
-`python3 -m pp15 build` calls this module during a build; there is nothing else to run by hand.
-Needs Pillow and a monospaced TrueType font (FONT_FILE below, macOS Menlo by default).
-"""
-import collections
+import argparse
 import json
 import os
-import struct
-import sys
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 from pp15 import config
+from pp15.build.glyph_codec import (CELL_H, CELL_W, compress, font_glyphs, game_glyph, pack_font, to_grid)
+from pp15.build.pair_text import text_segments
+from pp15.glyphs import char_to_glyph
+from pp15.script import scan
 
 FONT_FILE, FONT_INDEX = "/System/Library/Fonts/Menlo.ttc", 1      # Menlo Bold
-CELL_W, CELL_H, ROW_BYTES = 22, 28, 11
-SS = 8                                                           # supersampling factor
-# (letter advance, baseline row, cap height in rows) per font
+SUPERSAMPLE = 8                                                   # letters are drawn 8 times larger, then shrunk
+# Letter metrics per font: advance = pixels from one letter to the next, base = baseline row, cap = height of a
+# capital in rows, ink_w = target width of a letter's ink in pixels.
 LARGE = {"adv": 11, "base": 22, "cap": 17.0, "ink_w": 9.4}
 SMALL = {"adv": 8, "base": 14, "cap": 11.5, "ink_w": 7.0}
 # NARROW pairs: the match score bug draws the LARGE font at about 0.9 scale with a cell advance of only 17 screen
@@ -43,320 +49,81 @@ NARROW = "\x02"
 NARROW_CELLS = 4        # the score bug shows four cells of a name (8 letters)
 NARROW_LARGE = {"adv": 8, "base": 22, "cap": 17.0, "ink_w": 7.2}
 NARROW_SMALL = {"adv": 6.5, "base": 14, "cap": 11.5, "ink_w": 5.6}
+# (name, offset in section 4, letter metrics). The large font is the one dialogue boxes use.
 FONTS = (("small", 0x000000, SMALL), ("large", 0x05DF64, LARGE))
-FONT_END = {0x000000: 0x05DF64, 0x05DF64: 0x117400}             # each font's space ends at the next one
-KANJI_SLOTS = range(706, 3744)
-# Glyph slots that hold a symbol the code draws by number, not text a scan can see: never given to a letter
-# pair. 0xE77 (3703) is the arrow cursor of the My Life menus (ore_work.rel sec1+0x2DF4 and gdt_pn.rel
-# sec1+0xC6E0 store it as the one-cell string "0xE77, 0xFFFF" and draw it); as a pair slot it showed "9"
-# in front of the first menu line. No other code word loads a number in 0xE50..0xE9F as a glyph.
-RESERVED_GLYPHS = frozenset({0xE77})
+FONT_END = {0x000000: 0x05DF64, 0x05DF64: 0x117400}             # each font's space ends where the next one starts
 # The game's own full-width Latin letters (name entry, names typed by the player, ＭＶＰ ...) are redrawn as one
 # letter of this font, centred, so a typed name looks like the English around it. Key: SINGLE + the letter.
 SINGLE = "\x01"
 FULLWIDTH = {chr(0xFF21 + i): chr(0x41 + i) for i in range(26)} | {chr(0xFF41 + i): chr(0x61 + i) for i in range(26)}
-_cache, _faces = {}, {}
+
+# Outline of the large font: ink above this coverage (of 255) is grown by this many pixels, then blurred.
+OUTLINE_THRESHOLD, OUTLINE_GROW, OUTLINE_BLUR = 96, 13, 3
+
+_shade_cache = {}       # (pair, large) -> rows of shades
+_face_cache = {}        # (advance, ink width) -> (font face, vertical stretch)
 
 
-def _coverage(pair, m):
-    """Ink coverage of a letter pair at SS times the cell size, as an 'L' image."""
-    mkey = (m["adv"], m["ink_w"])
-    if mkey not in _faces:
+def _coverage(pair: str, metrics: dict) -> Image.Image:
+    """Ink coverage of a letter pair at SUPERSAMPLE times the cell size, as a greyscale ('L') image."""
+    key = (metrics["adv"], metrics["ink_w"])
+    if key not in _face_cache:
         probe = ImageFont.truetype(FONT_FILE, 1000, index=FONT_INDEX)
         adv = probe.getlength("M") / 1000.0                          # advance in em
         cap = -probe.getbbox("H", anchor="ls")[1] / 1000.0           # cap height in em
-        em = m["ink_w"] * SS / adv
-        _faces[mkey] = (ImageFont.truetype(FONT_FILE, round(em), index=FONT_INDEX),
-                            m["cap"] * SS / (cap * em))              # face, vertical stretch
-    face, stretch = _faces[mkey]
-    h = int(CELL_H * SS / stretch) + 1
-    img = Image.new("L", (CELL_W * SS, h), 0)
+        em = metrics["ink_w"] * SUPERSAMPLE / adv
+        _face_cache[key] = (ImageFont.truetype(FONT_FILE, round(em), index=FONT_INDEX),
+                            metrics["cap"] * SUPERSAMPLE / (cap * em))   # face, vertical stretch
+    face, stretch = _face_cache[key]
+    height = int(CELL_H * SUPERSAMPLE / stretch) + 1
+    img = Image.new("L", (CELL_W * SUPERSAMPLE, height), 0)
     draw = ImageDraw.Draw(img)
+    baseline = metrics["base"] * SUPERSAMPLE / stretch
     if pair.startswith(SINGLE):                                       # one letter, centred in the cell
         ch = pair[1]
-        draw.text(((CELL_W * SS - face.getlength(ch)) / 2, m["base"] * SS / stretch), ch, font=face, fill=255, anchor="ls")
+        draw.text(((CELL_W * SUPERSAMPLE - face.getlength(ch)) / 2, baseline), ch, font=face, fill=255, anchor="ls")
         pair = ""
     for k, ch in enumerate(pair):
         if ch != " ":
-            x = k * m["adv"] * SS + (m["adv"] * SS - face.getlength(ch)) / 2
-            draw.text((x, m["base"] * SS / stretch), ch, font=face, fill=255, anchor="ls")
-    return img.resize((CELL_W * SS, CELL_H * SS), Image.LANCZOS)
+            x = k * metrics["adv"] * SUPERSAMPLE + (metrics["adv"] * SUPERSAMPLE - face.getlength(ch)) / 2
+            draw.text((x, baseline), ch, font=face, fill=255, anchor="ls")
+    return img.resize((CELL_W * SUPERSAMPLE, CELL_H * SUPERSAMPLE), Image.LANCZOS)
 
 
-def render_pair(pair, large):
-    """A letter pair as 28 rows of 22 shade values (0..15)."""
+def render_pair(pair: str, large: bool) -> list[list[int]]:
+    """A letter pair as 28 rows of 22 shade values (0..15). `large` selects the dialogue font, else the small one."""
     key = (pair, large)
-    if key not in _cache:
+    if key not in _shade_cache:
         narrow = pair.startswith(NARROW)
         hi = _coverage(pair[1:] if narrow else pair,
                        (NARROW_LARGE if narrow else LARGE) if large else (NARROW_SMALL if narrow else SMALL))
         cov = hi.resize((CELL_W, CELL_H), Image.BOX)
         if large:
-            ring = hi.point(lambda v: 255 if v > 96 else 0).filter(ImageFilter.MaxFilter(2 * 13 + 1))
-            ring = ring.filter(ImageFilter.GaussianBlur(3)).resize((CELL_W, CELL_H), Image.BOX)
+            ring = hi.point(lambda v: 255 if v > OUTLINE_THRESHOLD else 0).filter(ImageFilter.MaxFilter(2 * OUTLINE_GROW + 1))
+            ring = ring.filter(ImageFilter.GaussianBlur(OUTLINE_BLUR)).resize((CELL_W, CELL_H), Image.BOX)
             rows = [[max(1, min(15, round(15 - 6 * ring.getpixel((x, y)) / 255 - 8 * cov.getpixel((x, y)) / 255)))
                      for x in range(CELL_W)] for y in range(CELL_H)]
         else:
             rows = [[15 - round(7 * min(1.0, 1.3 * cov.getpixel((x, y)) / 255)) for x in range(CELL_W)]
                     for y in range(CELL_H)]
-        _cache[key] = rows
-    return _cache[key]
+        _shade_cache[key] = rows
+    return _shade_cache[key]
 
 
-def to_grid(rows):
-    """28x22 shades -> the 308 bytes the compressor takes."""
-    return [rows[y][2 * b] << 4 | rows[y][2 * b + 1] for y in range(CELL_H) for b in range(ROW_BYTES)]
-
-
-def split_pairs(text):
-    """ASCII text -> letter pairs, the last one padded with a space."""
-    return [(text[i:i + 2] + " ")[:2] for i in range(0, len(text), 2)]
-
-
-def segments(text):
-    """Text -> ('pair', 'ab') | ('char', c) | ('newline', None). Pairing restarts on every line and
-    after every non-ASCII character, so a pair never straddles them."""
-    buf = ""
-    for ch in text.replace("\\n", "\n") + "\n":
-        if 0x20 <= ord(ch) <= 0x7E:
-            buf += ch
-            continue
-        for pair in split_pairs(buf):
-            yield "pair", pair
-        buf = ""
-        yield ("newline", None) if ch == "\n" else ("char", ch)
-
-
-def text_segments(text):
-    return list(segments(text))[:-1]          # without the newline added at the end
-
-
-# ── Which glyph slots are free ────────────────────────────────────────────
-
-def other_text_usage(mods, skip):
-    """How often each glyph appears in text outside the Success scripts (heuristic scan of all
-    modules for 16-bit glyph strings and 12-bit packed text). Cached in _work/glyph_usage2.json.
-    A 16-bit string counts when it has kana in it, or when it is kanji only and ends with 0xFFFF
-    (the short labels of the string tables: positions, school names, record titles)."""
-    from pp15.script import scan as S
-    path = os.path.join(S.WORK_DIR, "glyph_usage2.json")
-    if os.path.exists(path):
-        with open(path) as f:
-            return collections.Counter({int(k): v for k, v in json.load(f).items()})
-    print("Scanning all modules for text outside the scripts (once, about a minute)...")
-    use = collections.Counter()
-    for m in mods.values():
-        if m.name in skip:
-            continue
-        for sec in m.sections:
-            d = m.sec_data(sec["index"])
-            if sec["exec"] or len(d) < 8:
-                continue
-            for _, units in S.find_packed_text(d):
-                use.update(u for u in units if u <= S.MAX_GLYPH)
-            run = []
-            for v in struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2]) + (0,):
-                if 0 < v <= S.MAX_GLYPH:
-                    run.append(v)
-                    continue
-                if len(run) >= 3 and sum(282 <= u <= 450 for u in run) >= 2:
-                    use.update(run)
-                elif v == 0xFFFF and len(run) >= 2 and all(u >= 282 for u in run) and any(u >= 706 for u in run):
-                    use.update(run)
-                run = []
-    with open(path, "w") as f:
-        json.dump(use, f)
-    return use
-
-
-def _name_cells(rec):
-    """Six cells of a player name: 0 = no name, 1 = a name, 2 = a name with kanji. A name is text
-    glyphs with at most one blank cell inside (two kanji are spread out: 'te, blank, zuka') and
-    blank cells behind."""
-    n = len(rec)
-    while n and rec[n - 1] == 0:
-        n -= 1
-    body = rec[:n]
-    if not n or body.count(0) > 1 or any(v and v != 24 and not 282 <= v <= KANJI_SLOTS[-1] for v in body):
-        return 0
-    kanji = any(v >= KANJI_SLOTS[0] for v in body)
-    return 2 if kanji and n - body.count(0) >= 2 and len(rec) - n >= 2 else 1
-
-
-def name_usage(mods, skip):
-    """The kanji of the name tables, which other_text_usage cannot see (no kana, and a blank cell in
-    the middle of a two-kanji name). Cached in _work/name_kanji.json. Two layouts:
-      - the surname list of main_prg.rel and scc_main.rel (1,856 names: team-mates, name entry):
-        records of five 16-bit values, 0x1FFF, the announcer's call, three cells
-      - player names in six cells, back to back or behind three other values (real players)"""
-    from pp15.script import scan as S
-    path = os.path.join(S.WORK_DIR, "name_kanji.json")
-    if os.path.exists(path):
-        with open(path) as f:
-            return collections.Counter({int(k): v for k, v in json.load(f).items()})
-    use = collections.Counter()
-    for m in mods.values():
-        if m.name in skip:
-            continue
-        for sec in m.sections:
-            d = m.sec_data(sec["index"])
-            if sec["exec"] or len(d) < 64:
-                continue
-            u = struct.unpack(">%dH" % (len(d) // 2), d[:len(d) // 2 * 2])
-            i = 0
-            while i + 5 <= len(u):
-                j = i
-                while j + 5 <= len(u) and u[j] == 0x1FFF and max(u[j + 2:j + 5]) <= KANJI_SLOTS[-1]:
-                    j += 5
-                if j - i >= 40:
-                    for k in range(i, j, 5):
-                        use.update(v for v in u[k + 2:k + 5] if v >= KANJI_SLOTS[0])
-                i = max(j, i + 1)
-            for stride, at in ((6, 0), (9, 3)):
-                for phase in range(stride):
-                    i = phase
-                    while i + stride <= len(u):
-                        j, good = i, 0
-                        while j + stride <= len(u) and _name_cells(u[j + at:j + at + 6]):
-                            good += _name_cells(u[j + at:j + at + 6]) == 2
-                            j += stride
-                        if j - i >= 6 * stride and good * 2 * stride >= j - i:
-                            for k in range(i, j, stride):
-                                use.update(v for v in u[k + at:k + at + 6] if v >= KANJI_SLOTS[0])
-                        i = max(j, i + stride)
-    with open(path, "w") as f:
-        json.dump(use, f)
-    return use
-
-
-def allocate(pairs, usage, keep=()):
-    """Give every letter pair a kanji slot: kanji no text uses first, then the least used, and the
-    kanji in `keep` (the name tables) only when nothing else is left. Returns ({pair: glyph},
-    number of slots taken from kanji that remaining text still uses, number taken from `keep`)."""
-    free = sorted((g for g in KANJI_SLOTS if g not in RESERVED_GLYPHS), key=lambda g: (g in keep, usage.get(g, 0), -g))
-    if len(pairs) > len(free):
-        raise ValueError("%d different letter pairs, only %d glyph slots" % (len(pairs), len(free)))
-    slots = dict(zip(sorted(pairs), free))
-    return (slots, sum(1 for g in slots.values() if usage.get(g, 0) or g in keep),
-            sum(1 for g in slots.values() if g in keep))
-
-
-# ── Glyph compression ─────────────────────────────────────────────────────
-
-def _varlen(bits, v):
-    """1..3 as two bits, 4..19 as 00 + four bits."""
-    bits += [v >> 1, v & 1] if v <= 3 else [0, 0] + [(v - 4) >> k & 1 for k in (3, 2, 1, 0)]
-
-
-def compress(grid):
-    """308 bytes (28 rows x 11) -> compressed glyph."""
-    bits, lits, left = [], [], [0] * ROW_BYTES
-    for y in range(CELL_H):
-        x = 0
-        while x < ROW_BYTES:
-            if left[x]:
-                left[x] -= 1
-                x += 1
-                continue
-            v = grid[y * ROW_BYTES + x]
-            width = 1
-            while x + width < ROW_BYTES and not left[x + width] and grid[y * ROW_BYTES + x + width] == v:
-                width += 1
-            # best rectangle of v starting here: try every width, take the largest area
-            best = (1, 1)
-            for w in range(1, width + 1):
-                rows = 1
-                while rows < 19 and y + rows < CELL_H and all(grid[(y + rows) * ROW_BYTES + x + k] == v for k in range(w)):
-                    rows += 1
-                if w * rows > best[0] * best[1]:
-                    best = (w, rows)
-            w, rows = best
-            if w * rows >= 2:
-                bits.append(1)
-                _varlen(bits, w)
-                _varlen(bits, rows)
-                for k in range(w):
-                    left[x + k] = rows
-                left[x] -= 1
-            else:
-                bits.append(0)
-            lits.append(v)
-            x += 1
-    bits += [0] * (-len(bits) % 8)
-    flags = bytes(sum(b << (7 - k) for k, b in enumerate(bits[i:i + 8])) for i in range(0, len(bits), 8))
-    assert len(flags) < 256
-    return bytes([len(flags)]) + flags + bytes(lits)
-
-
-def decompress(data):
-    """Compressed glyph -> (308 bytes, number of bytes consumed). Mirrors main_prg.rel sec1+0x078800."""
-    nflags, pos, lit = data[0], 0, 1 + data[0]
-
-    def bit():
-        nonlocal pos
-        b = data[1 + pos // 8] >> (7 - pos % 8) & 1 if pos // 8 < nflags else 0
-        pos += 1
-        return b
-
-    def varlen():
-        v = bit() * 2 + bit()
-        return v if v else 4 + bit() * 8 + bit() * 4 + bit() * 2 + bit()
-
-    grid, left, value = [], [0] * ROW_BYTES, [0] * ROW_BYTES
-    for _ in range(CELL_H):
-        for x in range(ROW_BYTES):
-            if left[x]:
-                left[x] -= 1
-                grid.append(value[x])
-            elif bit() == 0:
-                grid.append(data[lit])
-                lit += 1
-            else:
-                w, rows = varlen(), varlen()
-                for k in range(w):
-                    if x + k < ROW_BYTES:
-                        left[x + k], value[x + k] = rows, data[lit]
-                lit += 1
-                left[x] -= 1
-                grid.append(value[x])
-    return grid, lit
-
-
-# ── The font inside fonttex2.rel ──────────────────────────────────────────
-
-def font_glyphs(sec4, pos):
-    """Compressed data of every glyph of the font at sec4+pos."""
-    count = struct.unpack_from("<H", sec4, pos + 2)[0]
-    offsets = struct.unpack_from("<%dI" % count, sec4, pos + 4)
-    base = pos + 4 + count * 4
-    assert list(offsets) == sorted(offsets)
-    ends = list(offsets[1:]) + [offsets[-1] + decompress(sec4[base + offsets[-1]:base + offsets[-1] + 400])[1]]
-    return [bytes(sec4[base + a:base + b]) for a, b in zip(offsets, ends)]
-
-
-def pack_font(glyphs, size):
-    """Glyph list -> font dataset of exactly `size` bytes."""
-    table, data = [], bytearray()
-    for g in glyphs:
-        table.append(len(data))
-        data += g
-    out = struct.pack("<HH%dI" % len(glyphs), 0, len(glyphs), *table) + bytes(data)
-    if len(out) > size:
-        raise ValueError("font needs %d bytes, %d available" % (len(out), size))
-    return out + b"\xff" * (size - len(out))
-
-
-def pair_glyph(pair, large, cache):
-    """Compressed glyph of a letter pair. cache: dict kept in _work/pair_glyphs.json by the caller."""
-    m = (NARROW_LARGE if large else NARROW_SMALL) if pair.startswith(NARROW) else (LARGE if large else SMALL)
-    key = "%s|%d|%s" % (FONT_FILE, FONT_INDEX, json.dumps([m, SS], sort_keys=True)) + "|" + pair
+def pair_glyph(pair: str, large: bool, cache: dict) -> bytes:
+    """The compressed glyph of a letter pair. `cache` is a dict the caller keeps in _work/pair_glyphs.json."""
+    metrics = (NARROW_LARGE if large else NARROW_SMALL) if pair.startswith(NARROW) else (LARGE if large else SMALL)
+    key = "%s|%d|%s" % (FONT_FILE, FONT_INDEX, json.dumps([metrics, SUPERSAMPLE], sort_keys=True)) + "|" + pair
     if key not in cache:
         cache[key] = compress(to_grid(render_pair(pair, large))).hex()
     return bytes.fromhex(cache[key])
 
 
-def build_font(rel_data, sec4_offset, slots, cache):
-    """fonttex2.rel with letter pairs drawn into glyph slots. slots = {glyph index: pair}"""
+def build_font(rel_data: bytes, sec4_offset: int, slots: dict, cache: dict) -> bytes:
+    """fonttex2.rel with letter pairs drawn into glyph slots. slots = {glyph index: pair}.
+
+    Raises ValueError when a font no longer fits its space. The file keeps its size.
+    """
     out = bytearray(rel_data)
     for name, pos, _ in FONTS:
         sec4 = rel_data[sec4_offset:]
@@ -372,22 +139,14 @@ def build_font(rel_data, sec4_offset, slots, cache):
     return bytes(out)
 
 
-def game_glyph(sec4, pos, index):
-    grid, _ = decompress(font_glyphs(sec4, pos)[index])
-    return [[(grid[y * ROW_BYTES + x // 2] >> 4) if x % 2 == 0 else (grid[y * ROW_BYTES + x // 2] & 15)
-             for x in range(CELL_W)] for y in range(CELL_H)]
-
-
-def cmd_preview(text, out):
-    """Render text with the pair font next to a line of the game's own glyphs."""
-    from pp15.script import scan as S
-    from pp15.glyphs import char_to_glyph
-    rel = S.Rel(os.path.join(S.WORK_DIR, "orig", "fonttex2.rel") if os.path.isdir(os.path.join(S.WORK_DIR, "orig"))
-                else os.path.join(S.DATA_FILES, "fonttex2.rel"))
+def preview(text: str, out: str) -> None:
+    """Write a picture of `text` drawn with the pair font, under a line of the game's own glyphs, for both fonts."""
+    rel = scan.Rel(os.path.join(config.ORIG_DIR, "fonttex2.rel") if os.path.isdir(config.ORIG_DIR)
+                   else os.path.join(config.DATA_FILES, "fonttex2.rel"))
     sec4 = rel.sec_data(4)
-    sample = "今日はオレにとって記念すべき初出勤の日。"
+    sample = "今日はオレにとって記念すべき初出勤の日。"      # a line of real Japanese text for comparison
     scale, lines = 3, []
-    for name, pos, m in FONTS:
+    for name, pos, _ in FONTS:
         large = name == "large"
         lines.append([game_glyph(sec4, pos, char_to_glyph(c)) for c in sample])
         lines.append([])
@@ -397,23 +156,30 @@ def cmd_preview(text, out):
             else:
                 lines[-1].append(render_pair(value, large) if kind == "pair"
                                  else game_glyph(sec4, pos, char_to_glyph(value)))
-    w = max(len(l) for l in lines) * CELL_W
-    img = Image.new("L", (w, len(lines) * CELL_H), 255)
+    width = max(len(line) for line in lines) * CELL_W
+    img = Image.new("L", (width, len(lines) * CELL_H), 255)
     for r, line in enumerate(lines):
         for c, rows in enumerate(line):
             for y in range(CELL_H):
                 for x in range(CELL_W):
                     img.putpixel((c * CELL_W + x, r * CELL_H + y), rows[y][x] * 17)
-    img.resize((w * scale, len(lines) * CELL_H * scale), Image.NEAREST).save(out)
+    img.resize((width * scale, len(lines) * CELL_H * scale), Image.NEAREST).save(out)
     print("wrote", out)
 
 
-def main(argv=None):
-    a = sys.argv[1:] if argv is None else list(argv)
-    if len(a) >= 2 and a[0] == "preview":
-        cmd_preview(a[1].replace("\\n", "\n"), a[2] if len(a) > 2 else os.path.join(config.WORK_DIR, "pair_preview.png"))
+def main(argv: list[str] | None = None) -> None:
+    """`pp15 font preview TEXT [OUT.png]`."""
+    ap = argparse.ArgumentParser(prog="pp15 font", description=__doc__.split("\n\n")[0])
+    sub = ap.add_subparsers(dest="cmd")
+    p = sub.add_parser("preview", help="draw TEXT as the game will show it, in both fonts")
+    p.add_argument("text", help="the English text; a backslash-n is a line break")
+    p.add_argument("out", nargs="?", default=os.path.join(config.WORK_DIR, "pair_preview.png"),
+                   help="picture to write (default: _work/pair_preview.png)")
+    args = ap.parse_args(argv)
+    if args.cmd == "preview":
+        preview(args.text.replace("\\n", "\n"), args.out)
     else:
-        print(__doc__)
+        ap.print_help()
 
 
 if __name__ == "__main__":
