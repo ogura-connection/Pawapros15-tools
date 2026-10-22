@@ -1,4 +1,4 @@
-"""Import every module of the pp15 package, including the 91 art style modules.
+"""Import every module of the pp15 package, including the art style modules.
 
     python3 tests/test_imports.py        (also collected by pytest)
 
@@ -41,8 +41,8 @@ def test_every_module_imports():
 
 def test_every_style_is_registered():
     from pp15.art import typeset
-    styles = [m for m in module_names() if m.startswith("pp15.art.styles.ui_styles_")]
-    assert len(styles) == 91 and len(typeset.RENDER) > 25000
+    styles = [m for m in module_names() if m.startswith("pp15.art.styles.") and not m.endswith(".common")]
+    assert len(styles) == 32 and len(typeset.RENDER) == 25575, (len(styles), len(typeset.RENDER))
 
 
 if __name__ == "__main__":

@@ -1366,12 +1366,13 @@ def repack(group, d, bank, pages, patches, project=None):
     return rows
 
 
-# Styles of other screens live in their own modules (one per workstream, so two sessions never edit this file at once):
-# pp15/art/styles/ui_styles_<name>.py with a dict STYLES = {name: style}, built with the helpers above. Every module of
-# that package is imported here, in file-name order (a later module may override an earlier style).
+# Styles of other screens live in their own modules, one per screen or mode: pp15/art/styles/<name>.py with a dict
+# STYLES = {name: style}, built with the helpers above (styles/common.py holds the helpers they share). Every module of
+# that package is imported here. No style name is defined in two modules (tests/test_registry.py checks), so the order
+# does not matter.
 import importlib as _importlib
 import pkgutil as _pkgutil
 
 from pp15.art import styles as _styles
 for _info in sorted(_pkgutil.iter_modules(_styles.__path__), key=lambda m: m.name):
-    RENDER.update(_importlib.import_module(_styles.__name__ + "." + _info.name).STYLES)
+    RENDER.update(getattr(_importlib.import_module(_styles.__name__ + "." + _info.name), "STYLES", {}))

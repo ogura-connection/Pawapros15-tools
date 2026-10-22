@@ -5,6 +5,7 @@ behind them. The repository holds code, the English (keyed by file and offset, n
 and the notes. It does **not** hold the game, extracted game files or Japanese game text: those stay in
 `DATA/` and `_work/`, which git ignores. (`translation_high_quality.json` from the first approach is the one
 exception still in the tree.)
+New here? Read `docs/ARCHITECTURE.md` (one page: data flow and folders) and `docs/GLOSSARY.md` (what the game words mean) first.
 
 Where things stand, what is next and how a session works: `../HANDOFF.md` (outside the repository).
 How each store of text was found and how the tools work: `FINDINGS.md`. Voices, terms and wording:
@@ -25,14 +26,16 @@ Pawapros15-tools/
     names/           table.py (surnames and in-place name tables), schools.py, kyu.py (pitch names)
     build/           rebuild.py (English + font + names -> DATA/files and DATA/sys), font.py (the pair font)
     art/             textures.py (sprite pages), labels.py (specs -> .arc), typeset.py (typeface recipes), sheet.py;
-                     styles/ the 91 ui_styles_*.py files, every one imported by typeset.py (file names unchanged for now)
+                     styles/ the lettering styles, one module per screen or mode (docs/styles_map.md), all imported by typeset.py;
+                     original_arc.py (reads untouched .arc files for the styles)
     disc/            extract.py (Wii ISO to files), xdelta.py (release disc + patch), ram_scan.py, extract_text.py
     reference/       mlb_assets.py, mlb_labels.py (the MLB Power Pros discs as a reference)
     kit/             export_tm.py, export_labels.py (results for ~/Projects/translation-kit)
   specs/           one JSON per .arc: every sprite label (rect, wording, style); applied by `pp15 apply-art`
   translation/     the English: script TSVs (<file>.rel.tsv), strings/, messages/, names/ (in_place/ = names written over the original)
-  tests/           golden.py (SHA-1 of every installed file against the release), test_imports.py, test_roundtrip.py, run_all.sh
-  docs/            PIPELINE.md and TECHNIQUES.md (the method, game independent), refactor_notes.md, a title picture
+  tests/           golden.py (SHA-1 of every installed file against the release), test_registry.py (all 25,575 styles unchanged),
+                   test_imports.py, test_roundtrip.py, run_all.sh
+  docs/            ARCHITECTURE.md, GLOSSARY.md, styles_map.md, PIPELINE.md and TECHNIQUES.md (the method, game independent), refactor_notes.md
   legacy/          the first approach and the abandoned Python patcher (apply_patch / make_patch): kept for reference, nothing imports them
   DATA/  _work/    game data and scratch (git-ignored, never committed)
 ```

@@ -1,0 +1,433 @@
+"""Styles for the Baseball School and the team-management lists of Eikan Nine.
+
+Some styles read the untouched .arc file (through pp15/art/original_arc.py) to wipe the Japanese lettering out of a sprite before the English is drawn.
+
+A style is a recipe that tells the lettering tool (pp15/art/typeset.py) how to draw an English label on a sprite sheet:
+font, size, colours, outline, shadow.
+
+Used by these spec files (specs/<name>.json, one per sprite file, each label names a style): sct_a_ar, school, sct_a_td, sct_a_nh.
+"""
+from pp15.art import typeset as ui_type
+from .common import ringfill
+
+STYLES = {}
+
+
+ui_type.TTF["c4serif"] = ("/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf", 0)       # story lines: a lighter serif italic than the stock one
+
+# ---- school.arc g3_ms (Baseball School menu) -------------------------------------------------------------------------------
+STYLES["c4_ms_00"] = ringfill([14, 12, 12, 13, 13, 13], [2, 2, 15], [9, 7, 5])      # pal 0: gold, dark ring, white ring, blue glow
+STYLES["c4_ms_02"] = ringfill([12, 12, 11, 10, 9, 9], [5, 5, 13, 14], [2, 3])        # pal 38: peach to orange, maroon ring, white
+STYLES["c4_ms_05"] = ringfill([12, 12, 11, 10, 9, 9], [5, 5, 13, 14], [2, 3])        # pal 39: mint to green
+STYLES["c4_ms_06"] = ringfill([11, 11, 10, 9, 9, 8], [5, 5, 12, 14], [3, 4])         # pal 40: yellow to green
+STYLES["c4_ms_07"] = ringfill([12, 11, 10, 10, 9, 8], [6, 6, 13, 14], [3, 4])        # pal 41: pink to lilac
+STYLES["c4_ms_08"] = ringfill([15, 13, 12, 11, 10, 9], [5, 5, 1, 3], [4, 8])         # pal 42: sky blue, navy ring, white
+STYLES["c4_ms_10"] = ringfill([10, 11, 12, 13, 14, 15], [1, 1, 9, 8], [7, 6])        # pal 32: peach to orange
+STYLES["c4_ms_13"] = ringfill([10, 11, 12, 13, 14, 15], [1, 1, 8, 7], [6, 5])        # pal 33: mint to green
+STYLES["c4_ms_15"] = ringfill([13, 13, 12, 11, 10, 5], [1, 1, 14, 9], [8, 7])        # pal 34: yellow to lime
+STYLES["c4_ms_16"] = ringfill([13, 12, 11, 10, 9, 9], [1, 1, 15, 8], [7, 6])         # pal 35: pink to lilac
+STYLES["c4_ms_17"] = ringfill([15, 9, 8, 7, 6, 5], [1, 1, 12, 13], [11, 10])         # pal 36: sky blue
+
+# ---- school.arc g3_rsz (Baseball School tabs: gold letters in a blue oval, 8-bit page) ---------------------------------------
+STYLES["c4_rsz"] = ringfill([142, 144, 148, 152, 157, 162, 166], [75, 70, 70, 197], [32, 32])
+
+RSZ_CAP, RSZ_SQ, RSZ_BOLD = 20, 0.92, 0.35
+# per oval sprite: the letters' centre (x, y, in the oval's own pixel coordinates) and the pieces of the oval (page, rectangle of the page,
+# the same rectangle in the oval's coordinates) that the lettering band crosses
+RSZ = {
+    "00": ((78, 38), [(10, [18, 15, 128, 64], [18, 15, 128, 64]), (8, [96, 7, 110, 56], [128, 15, 142, 64])]),
+    "01": ((78, 39), [(10, [18, 95, 128, 128], [18, 15, 128, 48]), (11, [18, 0, 128, 16], [18, 48, 128, 64]), (8, [96, 71, 110, 120], [128, 15, 142, 64])]),
+    "02": ((78, 39), [(11, [18, 47, 128, 96], [18, 15, 128, 64]), (3, [96, 71, 110, 120], [128, 15, 142, 64])]),
+    "03": ((78, 40), [(12, [18, 15, 128, 64], [18, 15, 128, 64]), (12, [0, 95, 14, 128], [128, 15, 142, 48]), (12, [32, 96, 46, 112], [128, 48, 142, 64])]),
+    "0f": ((78, 40), [(28, [18, 15, 128, 64], [18, 15, 128, 64]), (28, [0, 96, 14, 128], [128, 16, 142, 48]), (28, [0, 95, 8, 96], [128, 15, 136, 16]),
+                      (28, [32, 96, 46, 112], [128, 48, 142, 64])]),
+}
+_RSZ_CLEAN = {}
+_RSZ_RIM = set(range(6, 27))
+_RSZ_SHADOW = {27, 28, 33, 34, 35, 36, 39, 40, 42, 48, 49}
+
+
+_RSZ_XL = [(15, 35), (16, 28), (17, 26), (19, 26), (20, 24), (22, 20), (24, 18), (26, 17), (28, 16.5), (30, 16), (32, 14), (34, 13), (36, 12), (38, 11)]
+
+
+def _rsz_clean(spr):
+    """The oval of sprite `spr` of g3_rsz (palette indices, the oval's own coordinates) with the Japanese lettering taken out: the white
+    inside of the oval (rows 16-62, measured edge of the inner ring, mirrored about row 38.5) is made flat white and any colour only the
+    lettering uses is white too. Read from the saved original file, once."""
+    if spr not in _RSZ_CLEAN:
+        import sys, os
+        import numpy as np
+        from pp15.art import original_arc as G
+        b = G.Arc("school.arc").bank("g3_rsz")
+        img, _, _ = b.index_image(spr, pad=0)
+        zone = set(np.unique(img[24:54, 30:126]).tolist()) - {0}
+        struct = set(np.unique(np.concatenate([img[0:13].ravel(), img[67:].ravel(), img[:, 0:9].ravel(), img[:, 148:].ravel()])).tolist()) - {0}
+        out = img.copy()
+        m0 = np.isin(img, list(zone - struct))
+        out[m0] = 197
+        near = m0.copy()
+        for _ in range(2):
+            near = ui_type.grow(near, 1)
+        out[near & np.isin(img, list(_RSZ_RIM)) & ~m0] = 235            # dark-blue edge pixels of the lettering left on the pale ring
+        ys = [y for y, _ in _RSZ_XL]
+        xs = [x for _, x in _RSZ_XL]
+        for y in range(15, 63):
+            yy = y if y <= 38 else 77 - y
+            xl = np.interp(yy, ys, xs)
+            x0, x1 = int(np.ceil(xl)) + 1, int(157 - xl) - 1
+            out[y, x0:x1 + 1] = 197
+        _RSZ_CLEAN[spr] = out.astype(np.uint8)
+    return _RSZ_CLEAN[spr]
+
+
+def _rsz_style(spr, screen, cx, cy):
+    inner = STYLES["c4_rsz"]
+
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        sx0, sy0, sx1, sy1 = screen
+        out = _rsz_clean(spr)[sy0:sy1, sx0:sx1].copy()
+        h, w = art.shape
+        ax, ay = cx - w // 2, int(round(cy + RSZ_CAP / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y - sy0, ax + x - sx0
+            if 0 <= yy < out.shape[0] and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+for _s, ((_cx, _cy), _parts) in RSZ.items():
+    for _k, (_pg, _rect, _scr) in enumerate(_parts):
+        STYLES["c4_rsz_%s_%d" % (_s, _k)] = _rsz_style(_s, _scr, _cx, _cy)
+
+# ---- school.arc g3_ykm (Baseball School lessons) ---------------------------------------------------------------------------
+STYLES["c4_ykm_title"] = ringfill([15, 15, 15, 15, 14, 14], [11, 11, 6], [5, 4, 3])        # pal 16 / 24: white letters, navy ring, blue (or purple) shadow
+STYLES["c4_ykm_go"] = ringfill([12, 13, 14, 15, 15, 15], [9, 9, 6], [4, 3])               # pal 57 / 58: olive-gold (or green) letters, white ring, blue glow
+STYLES["c4_ykm_row"] = ringfill([14, 15, 15, 15, 15, 15], [10], [])                      # pal 34-37: dark letters on the coloured rows, white ring
+STYLES["c4_ykm_go1"] = ringfill([12, 13, 14, 15, 15, 15], [9, 6], [4])                    # pal 57 / 58 at small sizes: thin rings
+STYLES["c4_ykm_pan"] = ringfill([1, 1, 1, 1, 1, 1], [14], [])                           # pal 32: navy letters with a white ring (result panel)
+
+
+def _panel(inner, left, cy, rect_sprite, align="left", cap=14):
+    """A word of the result panel (sprite 4a, pal 32) placed by sprite coordinates: `left` = the art's left edge (align "left") or
+    right edge ("right"), `cy` = the row its capitals are centred on; returns the window `rect_sprite` (x0, y0, x1, y1) of the whole."""
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        x0, y0, x1, y1 = rect_sprite
+        out = np.zeros((y1 - y0, x1 - x0), np.uint8)
+        h, w = art.shape
+        ax = left if align == "left" else left - w
+        ay = int(round(cy + cap / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y - y0, ax + x - x0
+            if 0 <= yy < out.shape[0] and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+YKM_PAN_CAP = 13
+# (page, rectangle of the page, the same in the sprite's coordinates) pieces; the word's anchor
+YKM_PAN = {
+    "avg": ([(15, [14, 11, 92, 37], [14, 139, 92, 165])], ("left", 18, 151)),
+    "clr": ([(15, [14, 79, 94, 105], [14, 207, 94, 233])], ("left", 18, 220)),
+    "pts": ([(15, [114, 46, 128, 74], [114, 174, 128, 202]), (17, [32, 46, 50, 74], [128, 174, 146, 202])], ("right", 141, 188)),
+}
+for _n, (_parts, (_al, _l, _cy)) in YKM_PAN.items():
+    for _k, (_pg, _r, _sr) in enumerate(_parts):
+        STYLES["c4_ykm_%s_%d" % (_n, _k)] = _panel(STYLES["c4_ykm_pan"], _l, _cy, _sr, _al, YKM_PAN_CAP)
+
+
+# ---- g3_ykm reaction tags (74-78: a cap-face sticker with hand lettering): the Japanese lettering is taken out of the sticker, the English
+# goes where it stood with the same white sticker edge. per sprite: (white, lettering indices, face indices, ink fill, centre x, centre y, parts)
+TAG_FONT = {"74": (12, 1.0), "75": (9, 0.9), "76": (11, 1.0), "77": (9, 0.95), "78": (8, 0.9)}       # cap, squeeze
+TAGS = {
+    "74": (15, {1, 2, 3}, {4, 5, 6}, 3, 31, 10, [(21, [0, 80, 64, 120], [0, 0, 64, 40])], [(10, 20, 24, 40)]),
+    "75": (15, {7, 8}, {3, 4, 5, 6}, 7, 23, 12, [(21, [64, 80, 128, 120], [0, 0, 64, 40])], [(12, 20, 24, 40)]),
+    "76": (15, {1, 2, 3}, {4, 5, 6}, 3, 19, 11, [(23, [8, 64, 48, 104], [0, 0, 40, 40]), (23, [48, 64, 72, 104], [40, 0, 64, 40])], [(14, 18, 25, 40)]),
+    "77": (9, {5, 6, 7}, {1, 2, 3, 4}, 7, 29, 9, [(23, [72, 64, 128, 104], [0, 0, 56, 40]), (26, [120, 88, 128, 128], [56, 0, 64, 40]), (26, [96, 64, 120, 72], [8, 40, 32, 48])], [(8, 24, 32, 48)]),
+    "78": (15, {5, 6, 7}, {3, 4}, 6, 29, 8, [(23, [0, 104, 72, 128], [0, 0, 72, 24]), (23, [72, 104, 128, 120], [8, 24, 64, 40])], [(14, 14, 26, 40)]),
+}
+for _s, _t in TAGS.items():
+    STYLES["c4_tag_" + _s] = ringfill([_t[3]] * 6, [_t[0]], [])
+_TAG_CLEAN = {}
+
+
+def _tag_clean(spr):
+    """The tag sprite's picture (palette indices, sprite coordinates) with the Japanese lettering and its sticker edge taken out."""
+    if spr not in _TAG_CLEAN:
+        import sys, os
+        import numpy as np
+        from pp15.art import original_arc as G
+        b = G.Arc("school.arc").bank("g3_ykm")
+        white, text, face, _, _, _, _, decor = TAGS[spr]
+        img, _, _ = b.index_image(spr, pad=0)
+        T = np.isin(img, list(text))
+        F = np.isin(img, list(face))
+        near = T.copy()
+        for _ in range(3):
+            near = ui_type.grow(near, 1)
+        keep = F.copy()
+        for _ in range(2):
+            keep = ui_type.grow(keep, 1)
+        for x0, y0, x1, y1 in decor:
+            keep[y0:y1, x0:x1] = True
+        out = img.copy()
+        out[(T | (near & ~keep)) & (img > 0)] = 0
+        out[T] = 0
+        _TAG_CLEAN[spr] = out.astype(np.uint8)
+    return _TAG_CLEAN[spr]
+
+
+def _tag_style(spr, screen):
+    inner = STYLES["c4_tag_" + spr]
+    cx, cy = TAGS[spr][4], TAGS[spr][5]
+
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        sx0, sy0, sx1, sy1 = screen
+        out = _tag_clean(spr)[sy0:sy1, sx0:sx1].copy()
+        h, w = art.shape
+        ax, ay = cx - w // 2, int(round(cy + TAG_FONT[spr][0] / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y - sy0, ax + x - sx0
+            if 0 <= yy < out.shape[0] and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+for _s, _t in TAGS.items():
+    for _k, (_pg, _rect, _scr) in enumerate(_t[6]):
+        STYLES["c4_tag_%s_%d" % (_s, _k)] = _tag_style(_s, _scr)
+
+
+# ---- sct_a_ar.arc z4_ed_0 (Eikan Nine management screen) -------------------------------------------------------------------
+STYLES["c4_ed_tab"] = ringfill([1, 1, 1, 1, 1, 1], [15], [7])                         # pal 22: navy letters, white ring, grey-blue shadow
+STYLES["c4_ed_plate"] = ringfill([3, 1, 1, 1, 1, 1], [15, 15, 13, 10], [5])                  # pal 50: navy letters on the light-blue plates
+STYLES["c4_ed_big"] = ringfill([4, 4, 4, 4, 4, 4], [15, 15], [10, 9])                        # pal 56: navy letters, white ring
+STYLES["c4_ed_leg"] = ringfill([14, 14, 14, 14, 13, 12], [1, 1], [4])                       # pal 9: white letters, black ring (legend line)
+STYLES["c4_ed_pts"] = ringfill([15, 15, 15, 15, 14, 13], [4, 4], [2, 1])                    # pal 18: white letters, black ring, green shadow
+
+STYLES["c4_efo"] = ringfill([15, 15, 15, 15, 15, 15], [8, 8, 10], [1, 1])                  # pal 26 (z4_efo_0 tape): white letters, teal ring, black shadow
+STYLES["c4_efo_h"] = ringfill([15, 15, 15, 15, 15, 15], [4, 4, 9], [1])                  # page 1: the heading (black ring)
+
+# z4_efo_0: the tape words painted in place. (English, [(page, row, x0, x1), ...] the Japanese word's columns (a word that runs on is cut at
+# the end of the row), cap, squeeze, face); the word is centred over its columns and cut where the Japanese was cut.
+EFO = [
+    ('Training\nPolicy', [(1, 3, 65, 125)], 8, 1.0, 'rounded'),
+    ('Trajectory Up', [(2, 2, 5, 75)], 8, 0.85, 'rounded'),
+    ('Contact Up', [(2, 2, 87, 127), (2, 3, 0, 27)], 9, 0.85, 'rounded'),
+    ('Power Up', [(2, 3, 37, 107)], 11, 0.85, 'rounded'),
+    ('Speed Up', [(2, 3, 117, 127), (3, 0, 0, 59)], 11, 0.85, 'rounded'),
+    ('Arm Up', [(3, 0, 68, 127), (3, 1, 0, 11)], 13, 0.92, 'rounded'),
+    ('Fielding Up', [(3, 1, 21, 90)], 9, 0.85, 'rounded'),
+    ('Error Res. Up', [(3, 1, 100, 127), (3, 2, 0, 43)], 8, 0.85, 'rounded'),
+    ('Velocity Up', [(3, 2, 52, 123)], 10, 0.85, 'rounded'),
+    ('Control Up', [(3, 3, 4, 76)], 10, 0.85, 'rounded'),
+    ('Stamina Up', [(3, 3, 83, 127), (4, 0, 0, 28)], 10, 0.85, 'rounded'),
+    ('Hone Brk.', [(4, 0, 38, 90)], 8, 0.85, 'rounded'),
+    ('Learn Brk.', [(4, 0, 102, 127), (4, 1, 0, 27)], 7, 0.92, 'rounded'),
+    ('Break Up', [(4, 1, 37, 92)], 9, 0.85, 'rounded'),
+    ('Hone Breaking', [(4, 1, 100, 127), (4, 2, 0, 42)], 7, 0.85, 'rounded'),
+    ('Learn Breaking', [(4, 2, 52, 123)], 7, 0.85, 'rounded'),
+    ('Auto', [(5, 0, 5, 74)], 17, 1.0, 'rounded'),
+    ('All-Round', [(5, 0, 85, 127), (5, 1, 0, 10)], 8, 0.85, 'rounded'),
+    ('Change Position', [(5, 1, 24, 87)], 7, 0.85, 'narrow'),
+    ('Change Order', [(5, 1, 103, 127), (5, 2, 0, 39)], 8, 0.85, 'narrow'),
+    ('Change Form', [(5, 2, 54, 122)], 8, 0.85, 'rounded'),
+    ('Pitcher', [(5, 3, 5, 58)], 11, 0.85, 'rounded'),
+    ('Catcher', [(5, 3, 69, 122)], 12, 0.85, 'narrow'),
+    ('1st Base', [(6, 0, 5, 58)], 9, 0.85, 'rounded'),
+    ('2nd Base', [(6, 0, 69, 122)], 8, 0.92, 'rounded'),
+    ('3rd Base', [(6, 1, 5, 58)], 9, 0.85, 'rounded'),
+    ('Shortstop', [(6, 1, 69, 122)], 8, 0.85, 'rounded'),
+    ('Outfield', [(6, 2, 5, 58)], 10, 0.85, 'rounded'),
+    ('Bats Right', [(6, 2, 70, 122)], 7, 0.92, 'rounded'),
+    ('Bats Left', [(6, 3, 6, 58)], 8, 0.92, 'rounded'),
+    ('Switch', [(6, 3, 70, 122)], 14, 0.85, 'narrow'),
+    ('Overhand', [(7, 0, 3, 76)], 14, 0.85, 'narrow'),
+    ('3-Quarters', [(7, 0, 83, 127), (7, 1, 0, 28)], 13, 0.85, 'narrow'),
+    ('Sidearm', [(7, 1, 35, 108)], 14, 0.85, 'rounded'),
+    ('Submarine', [(7, 1, 116, 127), (7, 2, 0, 60)], 10, 0.85, 'rounded'),
+    ('Standard', [(7, 2, 68, 127), (7, 3, 0, 12)], 15, 0.85, 'narrow'),
+    ('Open Stance', [(7, 3, 20, 92)], 8, 0.92, 'rounded'),
+    ('Kannushi', [(7, 3, 101, 127), (8, 0, 0, 26)], 8, 0.92, 'rounded'),
+    ('Crouching', [(8, 0, 35, 108)], 11, 0.85, 'rounded'),
+    ('Pendulum', [(8, 0, 117, 127), (8, 1, 0, 42)], 8, 0.85, 'rounded'),
+    ('Buster', [(8, 1, 55, 121)], 15, 0.85, 'rounded'),
+    ('Flamingo', [(8, 2, 5, 58)], 9, 0.85, 'rounded'),
+    ('Original', [(8, 2, 68, 127), (8, 3, 0, 12)], 13, 0.92, 'rounded'),
+    ('Pitching Form', [(8, 3, 20, 91)], 8, 0.85, 'rounded'),
+]
+
+
+def _efo_style(style_name, cap, W, c0, c1, two, H=32):
+    inner = STYLES[style_name]
+
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        out = np.zeros((H, c1 - c0), np.uint8)
+        h, w = art.shape
+        ax = (W - w) // 2 - c0
+        ay = (H - h) // 2 if two else int(round((H - 1) / 2.0 + cap / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y, ax + x
+            if 0 <= yy < H and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+for _n, (_t, _segs, _cap, _sq, _face) in enumerate(EFO):
+    _W = sum(sg[3] - sg[2] + 1 for sg in _segs)
+    _c = 0
+    for _k, sg in enumerate(_segs):
+        _w = sg[3] - sg[2] + 1
+        STYLES["c4_efo_%d_%d" % (_n, _k)] = _efo_style("c4_efo_h" if sg[0] == 1 else "c4_efo", _cap, _W, _c, _c + _w, "\n" in _t, 27 if sg[0] == 1 else 32)
+        _c += _w
+
+# ---- sct_a_nh.arc z4_es_0 (Eikan Nine opening story: white italic lines, black edge) ----------------------------------------------
+STYLES["c4_es"] = ringfill([4, 4, 4, 4, 4, 4], [15, 3], [])
+
+ES_FONT = (18, 0.82, 0.25)       # cap, squeeze, bold (face serif-italic)
+# line -> (English, [(page, rectangle of the page, x of the piece in the line)], centre of the Japanese line)
+ES = {
+    "01": ("Cherry blossoms", [(0, [0, 0, 128, 32], 0), (0, [0, 32, 64, 64], 128)], 97.5),
+    "02": ("dance. April, spring. A man", [(0, [64, 32, 128, 64], 0), (0, [0, 64, 128, 96], 64), (0, [0, 96, 96, 128], 192)], 144.5),
+    "03": ("took over as manager of a", [(0, [96, 96, 128, 128], 0), (1, [0, 0, 128, 32], 32), (1, [0, 32, 104, 64], 160)], 131.0),
+    "04": ("certain high school's baseball", [(1, [104, 32, 128, 64], 0), (1, [0, 64, 128, 96], 24), (1, [0, 96, 128, 128], 152), (2, [0, 0, 24, 32], 280)], 151.0),
+    "05": ("club. His aim: a contender, then a", [(2, [24, 0, 128, 32], 0), (2, [0, 32, 128, 64], 104), (2, [0, 64, 104, 96], 232)], 167.0),
+    "06": ("powerhouse. What awaits the club he leads,", [(2, [104, 64, 128, 96], 0), (2, [0, 96, 128, 128], 24), (3, [0, 0, 128, 32], 152), (3, [0, 32, 128, 64], 280), (3, [0, 64, 16, 96], 408)], 213.5),
+    "07": ("from this day on? Here, a new page of history", [(3, [16, 64, 128, 96], 0), (3, [0, 96, 128, 128], 112), (4, [0, 0, 128, 32], 240), (4, [0, 32, 64, 64], 368)], 213.5),
+    "08": ("begins. Onward...", [(4, [64, 32, 128, 64], 0), (4, [0, 64, 128, 96], 64)], 90.0),
+    "09": ("to win the crown that is the national title!", [(4, [0, 96, 128, 128], 0), (5, [0, 0, 128, 32], 128), (5, [0, 32, 128, 64], 256), (5, [0, 64, 96, 96], 384)], 241.5),
+}
+
+
+def _es_style(cap, cx, c0, c1):
+    inner = STYLES["c4_es"]
+
+    def style(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        out = np.zeros((32, c1 - c0), np.uint8)
+        h, w = art.shape
+        ax = int(round(cx - w / 2.0)) - c0
+        ay = int(round(15.5 + cap / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y, ax + x
+            if 0 <= yy < 32 and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style
+
+
+for _l, (_t, _parts, _cx) in ES.items():
+    for _k, (_pg, _r, _x) in enumerate(_parts):
+        STYLES["c4_es_%s_%d" % (_l, _k)] = _es_style(ES_FONT[0], _cx, _x, _x + _r[2] - _r[0])
+
+# ---- sct_a_td.arc z4_edt_0 (Eikan Nine tournament record) ---------------------------------------------------------------------
+STYLES["c4_td_blk"] = ringfill([15, 15, 15, 15, 15, 15], [0], [])                              # table cells: black letters on the cell colours (no ring)
+STYLES["c4_td_leg"] = ringfill([8, 8, 8, 8, 8, 8], [1], [14, 15])                              # pal 40: white letters, black ring, blue shadow
+STYLES["c4_td_tag"] = ringfill([15, 15, 15, 15, 15, 14], [4], [])                               # tags: white letters, dark ring (ring 4 of the plate colour)
+STYLES["c4_td_17"] = ringfill([1, 1, 1, 1, 1, 1], [15, 15], [8])                                # pal 52: black letters, white ring
+STYLES["c4_td_18"] = ringfill([8, 7, 6, 5, 4, 3], [15, 15], [1])                                # pal 54: blue letters, white ring
+STYLES["c4_td_1a"] = ringfill([8, 7, 6, 5, 4, 3], [15, 15], [1])                                # pal 55: green letters, white ring
+STYLES["c4_td_2d"] = ringfill([1, 1, 1, 1, 1, 1], [15, 15], [8])                                # pal 46: black letters, white ring
+STYLES["c4_td_38"] = ringfill([2, 3, 5, 6, 8, 9], [15, 15], [11, 10])                           # pal 47: blue to violet letters, white ring
+
+# in-place words: (key, [(page, rectangle, x of the piece in the word)], word width, height, style, mode, span of the English, English, cap, squeeze, face)
+# mode: ("clear",) the rectangle is emptied; ("plate", i) every pixel of the plate becomes colour i; ("keep_to", k) columns < k of the word stay (a
+# symbol); ("erase_to", k) columns < k are emptied (the rest stays). The word is centred in `span` and cut over its pieces like the Japanese.
+TD = [
+    ('t_p', [(1, [0, 32, 24, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'P', 15, 1.0, 'rounded'),
+    ('t_c', [(1, [24, 32, 48, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'C', 15, 1.0, 'rounded'),
+    ('t_1b', [(1, [48, 32, 72, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '1B', 15, 0.92, 'rounded'),
+    ('t_2b', [(1, [72, 32, 96, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '2B', 15, 0.92, 'rounded'),
+    ('t_3b', [(1, [96, 32, 120, 56], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '3B', 15, 0.92, 'rounded'),
+    ('t_of', [(1, [16, 56, 40, 80], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'OF', 15, 0.85, 'rounded'),
+    ('t_allr', [(1, [40, 56, 64, 80], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'All', 15, 0.92, 'rounded'),
+    ('t_allc', [(1, [64, 56, 88, 80], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'All', 13, 1.0, 'rounded'),
+    ('t_3rd', [(1, [88, 56, 112, 80], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '3rd', 13, 0.85, 'rounded'),
+    ('t_1st', [(1, [8, 80, 32, 104], 0)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '1st', 13, 0.85, 'rounded'),
+    ('t_ss', [(1, [120, 32, 128, 56], 0), (1, [0, 56, 16, 80], 8)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), 'SS', 15, 0.85, 'rounded'),
+    ('t_2nd', [(1, [112, 56, 128, 80], 0), (1, [0, 80, 8, 104], 16)], 24, 24, 'c4_td_blk', ('clear',), (0, 24), '2nd', 13, 0.92, 'narrow'),
+    ('l_win', [(1, [0, 104, 56, 128], 0)], 56, 24, 'c4_td_leg', ('keep_to', 23), (23, 56), '=Win', 10, 0.85, 'rounded'),
+    ('l_mercy', [(1, [56, 104, 128, 128], 0), (2, [0, 0, 24, 24], 72)], 96, 24, 'c4_td_leg', ('keep_to', 23), (23, 96), '=Mercy Win', 10, 0.85, 'rounded'),
+    ('l_draw', [(2, [24, 0, 96, 24], 0)], 72, 24, 'c4_td_leg', ('keep_to', 23), (23, 72), '=Draw', 12, 0.85, 'rounded'),
+    ('l_loss', [(2, [96, 0, 128, 24], 0), (2, [0, 24, 24, 48], 32)], 56, 24, 'c4_td_leg', ('keep_to', 23), (23, 56), '=Loss', 8, 0.85, 'rounded'),
+    ('g_scrim', [(2, [24, 24, 64, 48], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Scrim', 11, 0.85, 'narrow'),
+    ('g_pref1', [(4, [0, 64, 40, 88], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Pref.', 12, 0.85, 'rounded'),
+    ('g_pref2', [(4, [40, 64, 80, 88], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Pref.', 12, 0.85, 'rounded'),
+    ('g_pref3', [(4, [80, 64, 120, 88], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Pref.', 12, 0.85, 'rounded'),
+    ('g_pref4', [(4, [0, 88, 40, 112], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Pref.', 12, 0.85, 'rounded'),
+    ('g_dist', [(4, [40, 88, 80, 112], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (3, 37), 'Dist.', 12, 0.85, 'rounded'),
+    ('g_kosh', [(4, [80, 88, 120, 112], 0)], 40, 24, 'c4_td_tag', ('plate', 1), (2, 38), 'Koshien', 10, 0.74, 'narrow'),
+    ('s_dist', [(6, [0, 0, 88, 32], 0)], 88, 32, 'c4_td_17', ('clear',), (0, 88), 'District Tourney', 9, 0.85, 'rounded'),
+    ('s_spring', [(6, [0, 32, 112, 64], 0)], 112, 32, 'c4_td_17', ('clear',), (0, 112), 'Spring Koshien', 12, 0.85, 'rounded'),
+    ('s_summer', [(6, [0, 64, 112, 96], 0)], 112, 32, 'c4_td_17', ('clear',), (0, 112), 'Summer Koshien', 11, 0.85, 'rounded'),
+    ('s_played', [(2, [88, 48, 128, 88], 0)], 40, 40, 'c4_td_18', ('clear',), (0, 40), 'Played', 11, 0.85, 'narrow'),
+    ('s_won', [(2, [88, 88, 128, 128], 0)], 40, 40, 'c4_td_1a', ('clear',), (0, 40), 'Won', 14, 0.85, 'rounded'),
+    ('s_x', [(6, [88, 0, 112, 32], 0)], 24, 32, 'c4_td_17', ('clear',), (0, 24), 'x', 16, 1.0, 'rounded'),
+    ('s_equip', [(7, [0, 48, 80, 72], 0), (7, [80, 48, 88, 72], 80), (7, [88, 48, 128, 72], 90)], 130, 24, 'c4_td_2d', ('clear',), (0, 130), 'Equipment & Facilities', 10, 0.85, 'rounded'),
+    ('s_field', [(7, [32, 96, 128, 120], 0)], 96, 24, 'c4_td_38', ('erase_to', 74), (0, 73), 'Field', 14, 1.0, 'rounded'),
+]
+_TD_ORIG = {}
+
+
+def _td_orig(page, rect):
+    import sys, os
+    if "b" not in _TD_ORIG:
+        from pp15.art import original_arc as G
+        _TD_ORIG["b"] = G.Arc("sct_a_td.arc").bank("z4_edt_0")
+    x0, y0, x1, y1 = rect
+    return _TD_ORIG["b"].page(page)[y0:y1, x0:x1]
+
+
+def _td_style(key, k, page, rect, wx, W, H, style, mode, span, cap):
+    inner = STYLES[style]
+
+    def style_fn(ink, base):
+        import numpy as np
+        art, b = inner(ink, base)
+        x0, y0, x1, y1 = rect
+        w_piece = x1 - x0
+        orig = _td_orig(page, rect)
+        cols = np.arange(w_piece) + wx
+        if mode[0] == "clear":
+            out = np.zeros_like(orig)
+        elif mode[0] == "plate":
+            out = np.where(orig > 0, mode[1], 0).astype(np.uint8)
+        elif mode[0] == "keep_to":
+            out = orig.copy()
+            out[:, cols >= mode[1]] = 0
+        else:
+            out = orig.copy()
+            out[:, cols < mode[1]] = 0
+        h, w = art.shape
+        a0, a1 = span
+        ax = a0 + (a1 - a0 - w) // 2 - wx
+        ay = int(round((H - 1) / 2.0 + cap / 2.0)) - b
+        ys, xs = np.nonzero(art)
+        for y, x in zip(ys, xs):
+            yy, xx = ay + y, ax + x
+            if 0 <= yy < out.shape[0] and 0 <= xx < out.shape[1]:
+                out[yy, xx] = art[y, x]
+        return out, b
+    return style_fn
+
+
+for _e in TD:
+    for _k, (_pg, _r, _wx) in enumerate(_e[1]):
+        STYLES["c4_td_%s_%d" % (_e[0], _k)] = _td_style(_e[0], _k, _pg, _r, _wx, _e[2], _e[3], _e[4], _e[5], _e[6], _e[8])

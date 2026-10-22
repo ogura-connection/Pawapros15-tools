@@ -1,16 +1,34 @@
-# Refactor notes (stage 1 done, stages 2 and 3 to do)
+# Refactor notes (stages 1 and 2 done, stage 3 to do)
 
 Stage 1 moved the code into the `pp15` package with no behaviour change (`tests/run_all.sh` passes: all 126 modules import,
 `build-check`, and the golden check of 1,089 installed files). What was seen on the way and left alone on purpose:
 
-## Stage 2: names and files
-- `pp15/art/styles/` still holds the 91 `ui_styles_*.py` files under their old names (`a_run1` ... `zzzz_leftd`: named after
-  the art run and agent that wrote them, not after the screen). Rename by screen, merge the near-empty ones, then drop the
-  `ui_styles_` prefix. Keep the import order: `typeset.py` imports them by file name and a later module may override an
-  earlier style (25,575 entries in `typeset.RENDER` today; `tests/test_imports.py` checks the count).
-- Two style modules import helper scripts that live in `_work/ui_pages` (`ui_styles_c_run4` -> `gen_c_lib`,
-  `ui_styles_b_run9` -> `kit`): they go through `config.use_scratch()`, the only `sys.path` edit left in the package
-  (`names/table.py` and `kit/export_labels.py` use it too, for `_work/names/romaji.py` and `compose.py`). Vendor the helpers into the package (or drop the styles) so that the package needs nothing from `_work`.
+## Stage 2: names and files (done)
+The 91 `ui_styles_*.py` files became 32 modules named after the screen or mode they style, plus `styles/common.py` (shared
+helpers); the table is `docs/styles_map.md`. `tests/test_registry.py` (in `tests/run_all.sh`) checks that every one of the
+25,575 style names still gives the same style (fingerprint of byte code, constants, closure values and the module-level
+values the function reads, independent of module names) and that no style name is defined in two modules, so the order in
+which `typeset.py` imports the folder no longer matters. It also compares the fonts the style modules register
+(`typeset.TTF`, `typeset.FONTS`). Notes:
+- 179 names had been defined twice (a later module overrode an earlier one); only the winning definition is kept, in the
+  module of its screen (list in `docs/styles_map.md`). The overridden lines are gone from the code.
+- Styles of `eikan_school.py` and `logo_pictures.py` used to import helper scripts from `_work/ui_pages` through
+  `config.use_scratch()`; the few functions they use are now `pp15/art/original_arc.py`. Their import lines changed, so
+  their fingerprints are in `tests/render_registry_changes.json` (100 names); apply-art of `school` and `homerun` gives the
+  same files (golden check).
+- `arrange_edit.py` reads `STYLES["f7_kkw"]` where the old file read `typeset.RENDER["f7_kkw"]` (same object).
+- Two modules are still longer than 700 lines (`main_menu.py` 1,165, `camp_remopawa.py` 982): one-line style definitions
+  in a long list; they could be split by sprite file. Two modules are under 100 lines (`records_room.py`,
+  `records_room_extra.py`) and the others near 100 because the helpers of the neighbouring modules
+  have the same names with different bodies (`flat`, `win`, `_load`, `grow`, `CELLS`), so they cannot share one file
+  without renaming code.
+- Style loading is still eager (about half a second at import). Making `RENDER` lazy touches every `typeset.RENDER[...]`
+  user: stage 3.
+- Not fixed, seen on the way: many modules define their own `win`/`_win`/`flat` with the same idea and different text;
+  `d_run2`-style `enable_lazy()` replaces `typeset.RENDER` with a subclass at run time.
+- The scratch scripts in `_work/ui_pages` still use the old names. `docs/one_off_rewrite_work_imports.py DIR --write`
+  rewrites them mechanically (tried on a copy: 205 files, 508 lines, all `from pp15.art.styles... import` targets resolve);
+  it was not run on the real `_work`. Delete the script afterwards.
 - `pp15/kit/export_labels.py` needs `compose.sprite_image` from `_work/ui_pages/tools/compose.py` (git-ignored). Move
   `sprite_image` into `pp15/art/textures.py`.
 - `translation/**.tsv` headers say `(see tl.py)`, `(see ui_strings.py)`, `(see ui_messages.py)`: the strings are written by
@@ -41,7 +59,7 @@ Stage 1 moved the code into the `pp15` package with no behaviour change (`tests/
 - `disc/extract.py` imports `Crypto` (pycryptodome) at the top, which is why the import test skips it where the package is
   missing; `disc/ram_scan.py` has its own slow LZ4 fallback; `disc/extract_text.py` has the module list hard-coded.
 - `disc/xdelta.py` shells out to `openssl`, `wit` and `xdelta3` (found through `PATH`, else `config.WIT_FALLBACK`).
-- `art/typeset.py` imports its 91 styles at import time, which takes about half a second; load them on first use of `RENDER`.
+- `art/typeset.py` imports all style modules at import time, which takes about half a second; load them on first use of `RENDER`.
 - Type hints and docstrings are missing from most functions; many docstrings describe the history of a decision, which
   belongs in `FINDINGS.md`.
 
