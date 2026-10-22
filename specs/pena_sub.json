@@ -10186,6 +10186,869 @@
    "name": "s4r_yu00",
    "sprites": "s4_kyujo#46",
    "sprite_prefix": "s4r_yu00"
+  },
+  {
+   "bank": "s3_phz00",
+   "palette": 0,
+   "style": "pmenu_phz_00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     96,
+     32
+    ],
+    [
+     0,
+     0,
+     32,
+     96,
+     64
+    ],
+    [
+     0,
+     0,
+     64,
+     96,
+     96
+    ],
+    [
+     0,
+     0,
+     96,
+     96,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     96,
+     32
+    ],
+    [
+     1,
+     0,
+     32,
+     96,
+     64
+    ],
+    [
+     1,
+     0,
+     64,
+     96,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Schedule",
+     "style": "pmenu_phz_00",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 26
+    },
+    {
+     "sprite": "01",
+     "text": "Manage",
+     "style": "pmenu_phz_01",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 26
+    },
+    {
+     "sprite": "02",
+     "text": "New Talent",
+     "style": "pmenu_phz_02",
+     "font": "ttf:rounded:16:0.0:0.7:0.3",
+     "baseline": 26
+    },
+    {
+     "sprite": "03",
+     "text": "Records",
+     "style": "pmenu_phz_03",
+     "font": "ttf:rounded:16:0.0:0.92:0.3",
+     "baseline": 26
+    },
+    {
+     "sprite": "04",
+     "text": "Coach Navi",
+     "style": "pmenu_phz_04",
+     "font": "ttf:rounded:16:0.0:0.7:0.3",
+     "baseline": 26
+    },
+    {
+     "sprite": "05",
+     "text": "System",
+     "style": "pmenu_phz_05",
+     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "baseline": 25
+    },
+    {
+     "sprite": "06",
+     "text": "Reorganize",
+     "style": "pmenu_phz_06",
+     "font": "ttf:rounded:16:0.0:0.7:0.3",
+     "baseline": 26
+    }
+   ],
+   "name": "pmenu side menu"
+  },
+  {
+   "bank": "s3_phm00",
+   "palette": 24,
+   "style": "pmenu_tab",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     2,
+     0,
+     0,
+     128,
+     48
+    ],
+    [
+     2,
+     0,
+     48,
+     72,
+     72
+    ],
+    [
+     2,
+     80,
+     72,
+     128,
+     120
+    ],
+    [
+     2,
+     80,
+     120,
+     128,
+     128
+    ],
+    [
+     4,
+     40,
+     96,
+     120,
+     128
+    ],
+    [
+     4,
+     96,
+     64,
+     128,
+     96
+    ],
+    [
+     4,
+     0,
+     96,
+     40,
+     128
+    ],
+    [
+     4,
+     104,
+     32,
+     128,
+     56
+    ],
+    [
+     4,
+     120,
+     96,
+     128,
+     128
+    ],
+    [
+     0,
+     88,
+     0,
+     128,
+     32
+    ],
+    [
+     0,
+     40,
+     56,
+     128,
+     80
+    ],
+    [
+     0,
+     0,
+     80,
+     120,
+     104
+    ],
+    [
+     0,
+     80,
+     104,
+     128,
+     112
+    ],
+    [
+     0,
+     72,
+     40,
+     88,
+     56
+    ],
+    [
+     0,
+     80,
+     0,
+     88,
+     40
+    ],
+    [
+     1,
+     48,
+     0,
+     112,
+     24
+    ],
+    [
+     1,
+     40,
+     24,
+     80,
+     48
+    ],
+    [
+     1,
+     80,
+     64,
+     104,
+     112
+    ],
+    [
+     1,
+     112,
+     40,
+     128,
+     64
+    ],
+    [
+     1,
+     96,
+     40,
+     112,
+     48
+    ],
+    [
+     1,
+     80,
+     40,
+     96,
+     48
+    ],
+    [
+     1,
+     96,
+     112,
+     128,
+     128
+    ],
+    [
+     5,
+     104,
+     0,
+     128,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "15",
+     "text": "Central",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:13:0.0:0.85:0.0",
+     "baseline": 18
+    },
+    {
+     "sprite": "16",
+     "text": "Pacific",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      24,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "0a"
+     ],
+     "text": "Central",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:13:0.0:0.85:0.0",
+     "left": 0,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      96,
+      0,
+      120,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "0a"
+     ]
+    },
+    {
+     "from": [
+      2,
+      24,
+      0,
+      96,
+      24
+     ],
+     "sprites": [
+      "0b"
+     ],
+     "text": "Pacific",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "left": -1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      24,
+      24
+     ],
+     "empty": true,
+     "sprites": [
+      "0b"
+     ]
+    },
+    {
+     "from": [
+      2,
+      80,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "Interleague",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 7,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      16,
+      48,
+      40,
+      72
+     ],
+     "sprites": [
+      "0c"
+     ],
+     "text": "1",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 11,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      16,
+      72
+     ],
+     "empty": true,
+     "sprites": [
+      "0c"
+     ]
+    },
+    {
+     "from": [
+      2,
+      80,
+      24,
+      128,
+      48
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "Interleague",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 5,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      40,
+      48,
+      64,
+      72
+     ],
+     "sprites": [
+      "0d"
+     ],
+     "text": "2",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 9,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      48,
+      16,
+      72
+     ],
+     "empty": true,
+     "sprites": [
+      "0d"
+     ]
+    },
+    {
+     "from": [
+      2,
+      96,
+      0,
+      120,
+      24
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "CL",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 18,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      80,
+      48
+     ],
+     "sprites": [
+      "0e"
+     ],
+     "text": "Results",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 18,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      24,
+      24
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "PL",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 17,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      80,
+      48
+     ],
+     "sprites": [
+      "0f"
+     ],
+     "text": "Results",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 18,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      80,
+      48
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "Results",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 20,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      16,
+      48,
+      40,
+      72
+     ],
+     "sprites": [
+      "10"
+     ],
+     "text": "1",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": -8,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      80,
+      48
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "Results",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 19,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      40,
+      48,
+      64,
+      72
+     ],
+     "sprites": [
+      "11"
+     ],
+     "text": "2",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": -10,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      0,
+      24,
+      80,
+      48
+     ],
+     "sprites": [
+      "12"
+     ],
+     "text": "Results",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 17,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      40,
+      96,
+      120,
+      120
+     ],
+     "sprites": [
+      "40"
+     ],
+     "text": "Today's Game",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 1,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      16,
+      48,
+      40,
+      72
+     ],
+     "sprites": [
+      "40"
+     ],
+     "text": "1",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 11,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      40,
+      96,
+      120,
+      120
+     ],
+     "sprites": [
+      "41"
+     ],
+     "text": "Today's Game",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 0,
+     "baseline": 18
+    },
+    {
+     "from": [
+      2,
+      40,
+      48,
+      64,
+      72
+     ],
+     "sprites": [
+      "41"
+     ],
+     "text": "2",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": 9,
+     "baseline": 18
+    },
+    {
+     "from": [
+      4,
+      40,
+      96,
+      120,
+      120
+     ],
+     "sprites": [
+      "42"
+     ],
+     "text": "Today's Game",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:0.78:0.0",
+     "left": -2,
+     "baseline": 18
+    },
+    {
+     "sprite": "43",
+     "text": "Konami Cup",
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:13:0.0:1.0:0.0",
+     "baseline": 22,
+     "palettes": [
+      24
+     ]
+    },
+    {
+     "sprite": "22",
+     "text": "Rained\nOut",
+     "style": "pmenu_rain",
+     "font": "ttf:narrow:11:0.0:0.85:0.0",
+     "baseline": 20
+    },
+    {
+     "sprite": "21",
+     "text": "VS",
+     "style": "pmenu_vs",
+     "font": "ttf:rounded:22:0.0:0.85:0.3",
+     "baseline": 26
+    },
+    {
+     "sprite": "25",
+     "text": "Normal",
+     "style": "pmenu_flow",
+     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "baseline": 18
+    },
+    {
+     "sprite": "26",
+     "text": "Fast",
+     "style": "pmenu_flow",
+     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "baseline": 18
+    },
+    {
+     "sprite": "27",
+     "text": "Skip",
+     "style": "pmenu_flow",
+     "font": "ttf:narrow:13:0.0:0.92:0.0",
+     "baseline": 18
+    },
+    {
+     "sprite": "44",
+     "text": "SP",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 18,
+     "left": 34
+    },
+    {
+     "sprite": "46",
+     "text": "Standings",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 18,
+     "left": 97
+    },
+    {
+     "sprite": "48",
+     "text": "Help",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 38,
+     "left": 77
+    },
+    {
+     "sprite": "17",
+     "text": "Next",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 19
+    },
+    {
+     "sprite": "32",
+     "text": "W",
+     "style": "pmenu_wt_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14
+    },
+    {
+     "sprite": "33",
+     "text": "T",
+     "style": "pmenu_wt_s",
+     "font": "ttf:rounded:11:0.0:1.0:0.3",
+     "baseline": 14
+    },
+    {
+     "sprite": "3e",
+     "text": "W",
+     "style": "pmenu_wt",
+     "font": "ttf:rounded:16:0.0:0.85:0.3",
+     "baseline": 20
+    },
+    {
+     "sprite": "3f",
+     "text": "T",
+     "style": "pmenu_wt",
+     "font": "ttf:rounded:17:0.0:1.0:0.3",
+     "baseline": 20
+    }
+   ],
+   "name": "pmenu screen",
+   "share": true
+  },
+  {
+   "bank": "s3_phm00",
+   "palette": 163,
+   "style": "pmenu_title",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     5,
+     0,
+     80,
+     128,
+     128
+    ],
+    [
+     5,
+     96,
+     0,
+     104,
+     48
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "53",
+     "text": "Team Analysis",
+     "style": "pmenu_title",
+     "font": "ttf:rounded:15:0.0:0.85:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    }
+   ],
+   "name": "pmenu title"
+  },
+  {
+   "bank": "s3_phm00",
+   "palette": 16,
+   "style": "pmenu_hint",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     48,
+     80,
+     128,
+     104
+    ],
+    [
+     8,
+     48,
+     104,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "5b",
+     "text": "Analysis",
+     "style": "pmenu_hint",
+     "font": "ttf:narrow:12:0.0:1.0:0.0",
+     "baseline": 38,
+     "left": 76
+    }
+   ],
+   "name": "pmenu page 8"
   }
  ],
  "paint": [
@@ -10209,6 +11072,20 @@
     2,
     1
    ]
+  },
+  {
+   "bank": "s3_phm00",
+   "page": 5,
+   "rect": [
+    0,
+    56,
+    96,
+    80
+   ],
+   "text": "Asia Series",
+   "font": "ttf:rounded:14:0.0:0.85:0.3",
+   "copy": "clear",
+   "style": "pmenu_tab"
   }
  ]
 }
