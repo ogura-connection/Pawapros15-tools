@@ -12,7 +12,7 @@ English letters turned and leaned like the paper, and hands back the pixels of o
 (index 0 = leave the pixel as it is). The paint entry that names the style gives the word ("text", "font"), its "rect"
 is that page piece and its "copy" is the same rectangle (the untouched pixels). See PHOTO for the labels.
 
-Used by: specs/sct_comd.json (group "lo_b gmp years"), specs/scs_make.json (paint entries named "lo_b form").
+Used by: specs/sct_comd.json (group "lo_b gmp years"), specs/scs_main.json (group "lo_b gmoji"), specs/scs_make.json (paint entries named "lo_b form").
 """
 import functools
 
@@ -26,6 +26,13 @@ STYLES = {}
 # ---- sct_comd.arc tex_z4_gmp00 (opd_z4_gmp_0): 1年 2年 3年 on the blue / green / yellow plates. White letters (15) whose
 # soft edge runs down the palette toward the dark plate colour (indices 14 .. 5); no outline.
 STYLES["lo_b_grade"] = flat([0, 6, 9, 11, 13, 14, 15])
+
+
+# ---- scs_main.arc m3_gmoji: the sound-effect words of Success events (each sprite has its own palette)
+STYLES["lo_b_sfx_murmur"] = ringfill([1, 1, 1, 1, 1, 1], [15, 15])                         # ざわ… black, white ring (pal 1)
+STYLES["lo_b_sfx_rumble"] = ringfill([10, 9, 8, 6, 4, 3], [1, 1, 1, 15, 15])              # ゴ pink -> red, purple + white (pal 2)
+STYLES["lo_b_sfx_bam"] = ringfill([14, 13, 12, 10, 8, 6], [1, 1, 1, 15, 15])              # バーン yellow -> orange, red + white (pal 3)
+STYLES["lo_b_sfx_awkward"] = ringfill([13, 12, 10, 8, 6, 5], [1, 1, 1, 15, 15])           # しらー cyan -> blue, navy + white (pal 0)
 
 
 # ---- photo lettering ------------------------------------------------------------------------------------------------------

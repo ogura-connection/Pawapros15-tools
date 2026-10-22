@@ -2597,6 +2597,82 @@
     }
    ],
    "name": "a9 snm"
+  },
+  {
+   "bank": "m3_gmoji",
+   "palette": 0,
+   "style": "lo_b_sfx_murmur",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Murmur...",
+     "style": "lo_b_sfx_murmur",
+     "font": "ttf:rounded:24:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0
+    },
+    {
+     "sprite": "01",
+     "text": "Rumble",
+     "style": "lo_b_sfx_rumble",
+     "font": "ttf:rounded:31:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "02",
+     "text": "BAM!",
+     "style": "lo_b_sfx_bam",
+     "font": "ttf:black:66:0.0:1.0:0.0",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 1
+    },
+    {
+     "sprite": "03",
+     "text": "Awkward...",
+     "style": "lo_b_sfx_awkward",
+     "font": "ttf:rounded:44:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    }
+   ],
+   "name": "lo_b gmoji"
   }
  ],
  "paint": [
