@@ -1212,6 +1212,60 @@
    "font": "ttf:rounded:8:0.0:0.85:0.3",
    "copy": "clear",
    "style": "c4_efo_43_0"
+  },
+  {
+   "bank": "z4_ed_0#1",
+   "page": 0,
+   "rect": [
+    48,
+    96,
+    128,
+    120
+   ],
+   "text": "Ground Lv.",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_ground",
+   "leftd": 1,
+   "note": "Ground Lv. strip (sprite 1d)"
+  },
+  {
+   "bank": "z4_ed_0#1",
+   "page": 0,
+   "rect": [
+    16,
+    48,
+    32,
+    72
+   ],
+   "text": "x",
+   "font": "ttf:narrow:8",
+   "copy": [
+    0,
+    32,
+    24,
+    48,
+    48
+   ],
+   "style": "ek_none",
+   "leftd": 1,
+   "note": "month kanji cell -> slash (copy of the / cell)"
+  },
+  {
+   "bank": "z4_ed_0#1",
+   "page": 0,
+   "rect": [
+    32,
+    48,
+    48,
+    72
+   ],
+   "text": "x",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "ek_none",
+   "leftd": 1,
+   "note": "day kanji cell -> empty"
   }
  ]
 }

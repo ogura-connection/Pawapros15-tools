@@ -103,3 +103,37 @@ def _fixed(arr):
 
 for k, a in CELLS.items():
     STYLES["dd_" + k] = _fixed(a)
+
+
+# sct_a_ar.arc z4_ed_0#1 page 0, palette 15: "グラウンド LV." strip (sprite 1d, 80 x 24): white letters, black outline, dark shadow
+def ground_label(text="Ground Lv.", w=80, h=24):
+    probe = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf", 400)
+    bb = probe.getbbox("H")
+    over = 4
+    for cap in range(15, 7, -1):
+        f = ImageFont.truetype("/System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf", round(400 * cap * over / (bb[3] - bb[1])))
+        l, t, r, b = f.getbbox(text, anchor="ls")
+        img = Image.new("L", ((r - l) + 8 * over, (cap + 8) * over), 0)
+        ImageDraw.Draw(img).text((4 * over - l, (cap + 3) * over), text, fill=255, font=f, anchor="ls")
+        W, H = (img.width // over) * over, (img.height // over) * over
+        a = np.asarray(img.crop((0, 0, W, H)).resize((W // over, H // over), Image.BOX), np.float32) > 127
+        ys, xs = np.nonzero(a)
+        m = np.pad(a[ys.min():ys.max() + 1, xs.min():xs.max() + 1], 4)
+        ring = _grow(m, 1)
+        shadow = np.roll(np.roll(ring, 1, 0), 1, 1)
+        out = np.zeros(m.shape, np.uint8)
+        out[shadow] = 3
+        out[ring] = 1
+        out[m] = 15
+        ys, xs = np.nonzero(out)
+        out = out[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+        if out.shape[1] <= w - 2 and out.shape[0] <= h - 2:
+            cell = np.zeros((h, w), np.uint8)
+            oh, ow = out.shape
+            x0, y0 = 2, (h - oh) // 2
+            cell[y0:y0 + oh, x0:x0 + ow] = out
+            return cell
+    raise ValueError(text)
+
+
+STYLES["dd_ground"] = _fixed(ground_label())
