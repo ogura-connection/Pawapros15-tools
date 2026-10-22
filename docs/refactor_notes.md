@@ -1,4 +1,4 @@
-# Refactor notes (stages 1 and 2 done, stage 3 to do)
+# Refactor notes (stages 1, 2 and 3 done)
 
 Stage 1 moved the code into the `pp15` package with no behaviour change (`tests/run_all.sh` passes: all 126 modules import,
 `build-check`, and the golden check of 1,089 installed files). What was seen on the way and left alone on purpose:
@@ -35,6 +35,25 @@ which `typeset.py` imports the folder no longer matters. It also compares the fo
   `script/translate.py`, `text/strings.py` and `text/messages.py` (and one in `strings.py` into generated review files).
   Left as they were so that saved files stay byte-identical; change them together with a one-off rewrite of the TSV headers.
 - `translation_high_quality.json` (git-ignored, repository root) is used by nothing.
+
+## Stage 3 (done): one area per agent, no behaviour change
+Every module has a plain-English docstring, public functions have docstrings and type hints, one-letter module aliases and
+history comments are gone, big modules are split by job (biggest now about 600 lines), command-line tools use argparse
+with `--help`, and each area has unit tests that need no game data. Per-area notes with the old-to-new location tables, the
+bugs and the dead code that were found but deliberately not touched:
+- `docs/refactor_notes_build.md` (`pp15/build/`: `rebuild.py` is only the command line; the work is in `pipeline.py` and small stage modules)
+- `docs/refactor_notes_script_text.md` (`pp15/script/`, `pp15/text/`, `pp15/glyphs.py`)
+- `docs/refactor_notes_art.md` (`pp15/art/*.py`; style modules were left as moved because of the fingerprint test)
+- `docs/refactor_notes_names_disc_kit.md` (`pp15/names/`, `disc/`, `reference/`, `kit/`, `config.py`, `cli.py`)
+
+Run everything with `tests/run_all.sh` (about 20 seconds with the game data; the unit tests alone need no data).
+
+### Still open (the useful next steps, in order)
+1. The `translation/*.tsv` headers still say `(see tl.py)` / `(see ui_strings.py)` / `(see ui_messages.py)`: one-off rewrite of the headers, then update the three writers.
+2. Style modules keep one-letter names and a few long lists (`styles/main_menu.py`, `styles/camp_remopawa.py`): changing them means re-recording `tests/render_registry.json` and `tests/font_registry.json` on purpose.
+3. Small shared pieces to move: `text_segments` out of `build/font.py` (pulls Pillow into the text tools), `parse_imports` duplicated in `names/schools.py`.
+4. Bugs found and not fixed (each area's notes list them): the build's `ensure_orig` adopts patched files as originals if `_work/orig` is empty; `names export-given|draft|holders|foreign` overwrite checked-in files with fewer rows (never run without `git diff`); `extract.py` and `xdelta.py` pick different disc partitions.
+
 
 ## Stage 3: code
 - Module aliases keep the old names inside the code (`from pp15.text import strings as ui_strings`, `... as name_table`,

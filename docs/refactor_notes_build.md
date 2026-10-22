@@ -31,8 +31,8 @@ function over 70 lines. No behaviour change: the output of `pp15 build` (every p
 `rebuild.py` is now the command line (`build`, `build-check`, `build-restore`) and still exports `ORIG_DIR`, `PLAN_FILE`,
 `plan_tables`, `parse_imports`, `load_dir` because `names/kyu.py`, `names/schools.py` and `disc/ram_scan.py` import them
 from there. `font.py` still exports `text_segments` (used by `text/strings.py`).
-FINDINGS.md and TECHNICAL_GUIDE.md still name the old places (`pp15.build.rebuild.emit_block`, `emit_ore`,
-`pp15.build.font.name_usage`, `allocate`); they are not in this area.
+FINDINGS.md and TECHNICAL_GUIDE.md still name the old places (`pp15.build.script_emit.emit_block`, `emit_ore`,
+`pp15.build.font_usage.name_usage`, `allocate`); they are not in this area.
 
 ## Import cycles
 Inside `pp15/build` there are none and no import sits inside a function. The cycles that remain are in files of
