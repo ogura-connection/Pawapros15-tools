@@ -11090,7 +11090,7 @@
      ],
      "text": "Mon",
      "style": "pmenu_date",
-     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "valign": "centre"
     },
     {
@@ -11103,7 +11103,7 @@
      ],
      "text": "Tue",
      "style": "pmenu_date",
-     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "valign": "centre"
     },
     {
@@ -11116,7 +11116,7 @@
      ],
      "text": "Wed",
      "style": "pmenu_date",
-     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "valign": "centre"
     },
     {
@@ -11129,7 +11129,7 @@
      ],
      "text": "Thu",
      "style": "pmenu_date",
-     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "valign": "centre"
     },
     {
@@ -11142,21 +11142,21 @@
      ],
      "text": "Fri",
      "style": "pmenu_date",
-     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "valign": "centre"
     },
     {
      "sprite": "1c",
      "text": "Sat",
      "style": "pmenu_date",
-     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "valign": "centre"
     },
     {
      "sprite": "1d",
      "text": "Sun",
      "style": "pmenu_date",
-     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "font": "ttf:narrow:14:0.0:1.0:0.0",
      "valign": "centre"
     },
     {
@@ -11169,7 +11169,7 @@
      ],
      "text": "/",
      "style": "pmenu_date",
-     "font": "ttf:narrow:19:0.0:1.0:0.0",
+     "font": "ttf:narrow:18:0.0:1.0:0.0",
      "valign": "centre"
     },
     {

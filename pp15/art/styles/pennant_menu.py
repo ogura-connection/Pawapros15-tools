@@ -8,6 +8,7 @@ font, size, colours, outline, shadow. Colours are palette indices read from the 
 
 Used by: specs/pena_sub.json (groups "pmenu ...").
 """
+import numpy as np
 from .common import ringfill, flat
 
 STYLES = {}
@@ -36,4 +37,14 @@ STYLES["pmenu_wt"] = ringfill([15, 15, 15, 15, 15, 15], [6, 6, 2])            # 
 STYLES["pmenu_title"] = ringfill([1, 1, 2, 2, 3, 3], [8, 11, 11, 15, 15])      # 戦力分析 title (pal 163)
 
 # ---- s3_phh00: date plate glyphs (pal 54 / 55 / 56: index 15 = the letter colour, 1..14 its soft edge toward the light plate)
-STYLES["pmenu_date"] = flat([0, 3, 6, 9, 12, 14, 15])
+def _padded(style, n=1):
+    """The art of `style` with `n` clear pixels round it (a flat style ends at the ink: its soft edge touches the cell edge)."""
+    def padded(ink, base):
+        art, b = style(ink, base)
+        out = np.zeros((art.shape[0] + 2 * n, art.shape[1] + 2 * n), np.uint8)
+        out[n:n + art.shape[0], n:n + art.shape[1]] = art
+        return out, b + n
+    return padded
+
+
+STYLES["pmenu_date"] = _padded(flat([0, 3, 6, 9, 12, 14, 15]))
