@@ -29,7 +29,7 @@ from pp15.build.text_encode import encode_text
 from pp15.build.verify import verify
 from pp15.names import kyu, schools, table
 from pp15.script import scan
-from pp15.text import strings
+from pp15.text import fragments, strings
 
 
 def _require_clean_parse(script_list: list) -> None:
@@ -67,7 +67,12 @@ def prepare(texts: dict, ui_texts: dict | None, dol_entries: list | None, messag
     state.stores = table.inplace_stores() if state.names else {}       # given names ...: written in place
     state.schools = schools.load_tsv() if state.names else {}          # Eikan Nine school names: a table behind the surnames
     state.ore_names = schools.load_tsv(schools.ORE_TSV)                # My Life names: a table behind the annexes
-    state.slots = assign_pairs(scripts + blocks, texts, orig, state.ui_texts, dol, state.message_texts,
+    with exit_on_value_error():
+        state.fragments = fragments.load_for_build(orig)       # pieces of text no slot covers, written in place
+    counted = {name: dict(state.ui_texts.get(name, {})) for name in set(state.ui_texts) | set(state.fragments)}
+    for name, pieces in state.fragments.items():               # their letter pairs count like those of the strings
+        counted[name].update({key: (cells, en) for key, (cells, _, en) in pieces.items()})
+    state.slots = assign_pairs(scripts + blocks, texts, orig, counted, dol, state.message_texts,
                                _english_names(state), narrow=list(state.schools.values()))
     state.repl = {name: {i: encode_text(t, state.slots) for i, t in runs.items()} for name, runs in texts.items()}
     state.images = {sc.rel.name: (sc.rel.data, sc.rel.data) for sc in scripts}

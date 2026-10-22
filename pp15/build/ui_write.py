@@ -6,14 +6,15 @@ kinds are written here, each into the module image the build has so far:
     into it in place, nothing moves. Some groups ("blocks") are laid out again to give long strings more room, and
     their pointers are re-aimed;
   - message scripts (Pennant news and similar): each message is laid out again inside its span;
-  - pitch names (a separate font): laid out again with new pointers.
+  - pitch names (a separate font): laid out again with new pointers;
+  - fragments (pp15/text/fragments.py): pieces of Japanese no slot covers, English written over them in place.
 
 Every function takes (state, module, image) and returns (new image, a note for the build log, possibly empty).
 
 Public functions:
     encode_string(en, cells, slots, is_help)   one English UI string as the bytes of its slot
     layout_block(module, block, english, slots)   a block of movable strings laid out again
-    write_ui_strings, write_message_scripts, write_pitch_names   the build steps
+    write_ui_strings, write_message_scripts, write_pitch_names, write_fragments   the build steps
 """
 import struct
 import sys
@@ -195,3 +196,30 @@ def write_pitch_names(state, module, image: bytes) -> tuple[bytes, str]:
         at = module.sections[blk["section"]]["offset"] + a
         assert image[at:at + len(s) + 1] == s + bytes([kyu.END]) and blk["start"] <= a < blk["end"]
     return bytes(image), ", %d pitch names" % len(state.kyu_english)
+
+
+def write_fragments(state, module, image: bytes) -> tuple[bytes, str]:
+    """Build step: fragments, each English written over the cells of its Japanese with the original colour bits.
+
+    Runs after every other step and refuses a fragment whose bytes an earlier step changed or that a fixed-slot string
+    overlaps, so two writers never share bytes."""
+    pieces = getattr(state, "fragments", {}).get(module.name)
+    if not pieces:
+        return image, ""
+    if any(mid == module.mod_id and s < sec for mid, s in state.remaps for sec, _ in pieces):
+        sys.exit("%s: a fragment behind a rebuilt section is not supported" % module.name)
+    image = bytearray(image)
+    for (sec, off), (cells, colour, en) in sorted(pieces.items()):
+        if state.ui_string_inside(module, [(sec, off, off + 2 * cells)]):
+            sys.exit("%s %d:%d: a fixed-slot string lies inside this fragment" % (module.name, sec, off))
+        remap = state.remaps.get((module.mod_id, sec), lambda o: o)
+        pos = module.sections[sec]["offset"] + remap(off)
+        if bytes(image[pos:pos + 2 * cells]) != module.sec_data(sec)[off:off + 2 * cells]:
+            sys.exit("%s %d:%d: an earlier build step changed the bytes of this fragment" % (module.name, sec, off))
+        units = [u | colour << 12 for u in encode_text(en, state.slots)]
+        if scan.TEXT_NEWLINE in units or len(units) > cells:
+            sys.exit("%s %d:%d: %r does not fit %d cells (no line breaks)" % (module.name, sec, off, en, cells))
+        data = struct.pack(">%dH" % cells, *(units + [0] * (cells - len(units))))
+        image[pos:pos + len(data)] = data
+        state.record(module, sec, off, data)
+    return bytes(image), ", %d fragments" % len(pieces)

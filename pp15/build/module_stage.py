@@ -137,6 +137,7 @@ MODULE_STEPS = (
     name_patches.patch_name_in_code,
     _patch_code_words,
     _patch_sprite_art,
+    ui_write.write_fragments,           # last: it checks that no earlier step touched the bytes it writes over
 )
 
 
