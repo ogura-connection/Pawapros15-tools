@@ -36,7 +36,17 @@ STYLES["lo_b_sfx_awkward"] = ringfill([13, 12, 10, 8, 6, 5], [1, 1, 1, 15, 15]) 
 
 
 # ---- scs_main.arc z3_fos_0_opd: the small grey number font (dark letter 15, soft edge in the lighter greys 14 .. 2)
-STYLES["lo_b_pixfont"] = flat([0, 3, 6, 9, 12, 14, 15])
+def _padded(style, n=1):
+    """The art of `style` with `n` clear pixels round it (a flat style ends at the ink, so its edge would touch the cell)."""
+    def padded(ink, base):
+        art, b = style(ink, base)
+        out = np.zeros((art.shape[0] + 2 * n, art.shape[1] + 2 * n), np.uint8)
+        out[n:n + art.shape[0], n:n + art.shape[1]] = art
+        return out, b + n
+    return padded
+
+
+STYLES["lo_b_pixfont"] = _padded(flat([0, 3, 6, 9, 12, 14, 15]))
 
 
 # ---- photo lettering ------------------------------------------------------------------------------------------------------
