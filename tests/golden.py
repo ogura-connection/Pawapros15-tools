@@ -11,18 +11,20 @@ import os
 import subprocess
 import sys
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from pp15 import config
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 GOLDEN = os.path.join(HERE, "golden_sha1.json")
-FOLDERS = ("DATA/files", "DATA/sys")
+FOLDERS = (config.DATA_FILES, config.DATA_SYS)
 SKIP_SUFFIX = (".thp",)            # videos: never rebuilt, big
 
 
 def hash_game_files():
     out = {}
     for folder in FOLDERS:
-        base = os.path.join(ROOT, folder)
-        for dirpath, _, names in os.walk(base):
+        for dirpath, _, names in os.walk(folder):
             for name in sorted(names):
                 if name.endswith(SKIP_SUFFIX):
                     continue
@@ -31,7 +33,7 @@ def hash_game_files():
                 with open(path, "rb") as f:
                     for block in iter(lambda: f.read(1 << 20), b""):
                         digest.update(block)
-                out[os.path.relpath(path, ROOT)] = digest.hexdigest()
+                out[os.path.relpath(path, config.DATA_ROOT)] = digest.hexdigest()
     return out
 
 

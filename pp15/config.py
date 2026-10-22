@@ -4,32 +4,39 @@ The game data (extracted disc files, working copies) is not in git; the folders 
 This module only builds path strings (nothing is read or created), plus `use_scratch()` for the few places that still
 import a helper script from `_work/`.
 
-Everything is relative to the repository (the folder that holds the `pp15` package) unless an environment variable says
-otherwise:
+Folder layout (the workspace is ~/Projects/Pawapuro; see its README.md):
+
+    <workspace>/roms/  reference/  tools/      shared by every game: discs, MLB reference discs, helper binaries (wit)
+    <workspace>/pp15/                          everything about Pawapuro 15 ("the game folder")
+        pp15-tools/                            this repository: code, translation, specs, tests (the only thing in git)
+        data/DATA, data/_work                  extracted game files and working files (private, never in git)
+        emulator/  release/  probes/  docs/    test Dolphin, finished patch, investigations, notes
+
+Defaults follow that layout; environment variables override them:
 
     PP15_ROOT   the repository folder (default: the parent of this package)
-    PP15_KIT    the translation-kit folder, the target of `export-tm` / `export-labels`
-                (default: translation-kit next to the folder that holds the repository's parent)
-    PP15_EMU    the Dolphin test folder (save states, the OCR helper)   (default: dolphin-test beside the repository)
-    PP15_MLB    the folder that holds the extracted MLB reference discs (MLB2008/DATA/files/project.bin, ...)
-                (default: the folder beside the repository)
-
-The game data (DATA/, _work/) is not in git; see README.md.
+    PP15_DATA   the folder that holds DATA/ and _work/   (default: <game folder>/data)
+    PP15_EMU    the Dolphin test folder (save states, the OCR helper)   (default: <game folder>/emulator)
+    PP15_KIT    the translation-kit folder, the target of `export-tm` / `export-labels`   (default: ~/Projects/translation-kit,
+                the folder beside the workspace)
+    PP15_MLB    the folder that holds the extracted MLB reference discs   (default: <workspace>/reference)
 """
 import os
 import sys
 
 ROOT = os.environ.get("PP15_ROOT") or os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PROJECTS = os.path.dirname(ROOT)                      # the folder around the repository (the other projects live here)
+GAME_DIR = os.path.dirname(ROOT)                      # the Pawapuro 15 folder: repository, data, emulator, release
+WORKSPACE = os.path.dirname(GAME_DIR)                 # the Pawapuro workspace: roms, reference discs, tools, one folder per game
+DATA_ROOT = os.environ.get("PP15_DATA") or os.path.join(GAME_DIR, "data")
 
-# Game data: extracted from the disc, never committed
-DATA = os.path.join(ROOT, "DATA")
+# Game data: extracted from the disc, never committed (outside the repository)
+DATA = os.path.join(DATA_ROOT, "DATA")
 DATA_FILES = os.path.join(DATA, "files")
 DATA_SYS = os.path.join(DATA, "sys")
 DOL_SOURCE = os.path.join(DATA_SYS, "main.dol")
 
 # Working files (game data too, git-ignored)
-WORK_DIR = os.path.join(ROOT, "_work")
+WORK_DIR = os.path.join(DATA_ROOT, "_work")
 ORIG_DIR = os.path.join(WORK_DIR, "orig")             # untouched .rel files (and moduleID2addr.o)
 ORIG_ARC_DIR = os.path.join(WORK_DIR, "orig_arc")     # untouched .arc files; not _work/orig: the build installs that whole folder
 ORIG_SYS_DIR = os.path.join(WORK_DIR, "orig_sys")     # untouched main.dol
@@ -42,14 +49,14 @@ SPECS_DIR = os.path.join(ROOT, "specs")
 TESTS_DIR = os.path.join(ROOT, "tests")
 
 # Things outside the repository
-KIT_DIR = os.environ.get("PP15_KIT") or os.path.normpath(os.path.join(PROJECTS, "..", "translation-kit"))
+KIT_DIR = os.environ.get("PP15_KIT") or os.path.normpath(os.path.join(WORKSPACE, "..", "translation-kit"))
 KIT_TM_DIR = os.path.join(KIT_DIR, "pawapuro15-wii", "tm")
 KIT_LABELS_DIR = os.path.join(KIT_DIR, "pawapuro15-wii", "labels")
-EMU_DIR = os.environ.get("PP15_EMU") or os.path.join(PROJECTS, "dolphin-test")
+EMU_DIR = os.environ.get("PP15_EMU") or os.path.join(GAME_DIR, "emulator")
 OCR = os.path.join(EMU_DIR, "ocr", "ocr")
-MLB_DIR = os.environ.get("PP15_MLB") or PROJECTS
+MLB_DIR = os.environ.get("PP15_MLB") or os.path.join(WORKSPACE, "reference")
 MLB_PROJECT_BIN = os.path.join(MLB_DIR, "MLB2008", "DATA", "files", "project.bin")
-WIT_FALLBACK = os.path.join(PROJECTS, "tools_dl", "wit", "wit-v3.05a-r8638-mac", "bin", "wit")
+WIT_FALLBACK = os.path.join(WORKSPACE, "tools", "wit", "wit-v3.05a-r8638-mac", "bin", "wit")
 
 
 def use_scratch(*subfolders: str) -> str:
