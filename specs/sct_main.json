@@ -1516,6 +1516,342 @@
    ],
    "style": "lo_b_photo_hat_notice@1",
    "name": "lo_b hatashijo"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 0,
+   "rect": [
+    34,
+    0,
+    128,
+    42
+   ],
+   "text": "Cover Interview",
+   "font": "ttf:rounded:8:0:1.0:0.2",
+   "copy": [
+    0,
+    34,
+    0,
+    128,
+    42
+   ],
+   "style": "lo_b_photo_mag_cover@0",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    22,
+    42
+   ],
+   "text": "Cover Interview",
+   "font": "ttf:rounded:8:0:1.0:0.2",
+   "copy": [
+    1,
+    0,
+    0,
+    22,
+    42
+   ],
+   "style": "lo_b_photo_mag_cover@1",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 0,
+   "rect": [
+    36,
+    0,
+    128,
+    104
+   ],
+   "text": "Powerful Baseball",
+   "font": "ttf:rounded:19:0:0.8:0.3",
+   "copy": [
+    0,
+    36,
+    0,
+    128,
+    104
+   ],
+   "style": "lo_b_photo_mag_title@0",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    122,
+    104
+   ],
+   "text": "Powerful Baseball",
+   "font": "ttf:rounded:19:0:0.8:0.3",
+   "copy": [
+    1,
+    0,
+    0,
+    122,
+    104
+   ],
+   "style": "lo_b_photo_mag_title@1",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 2,
+   "rect": [
+    14,
+    2,
+    56,
+    30
+   ],
+   "text": "Weekly",
+   "font": "ttf:tahoma-bold:7:0:1.0:0.0",
+   "copy": [
+    2,
+    14,
+    2,
+    56,
+    30
+   ],
+   "style": "lo_b_photo_mag_weekly@2",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 1,
+   "rect": [
+    100,
+    4,
+    128,
+    86
+   ],
+   "text": "ball",
+   "font": "ttf:rounded:19:0:0.8:0.3",
+   "copy": [
+    1,
+    100,
+    4,
+    128,
+    86
+   ],
+   "style": "lo_b_photo_mag_back@1",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 2,
+   "rect": [
+    0,
+    4,
+    68,
+    86
+   ],
+   "text": "ball",
+   "font": "ttf:rounded:19:0:0.8:0.3",
+   "copy": [
+    2,
+    0,
+    4,
+    68,
+    86
+   ],
+   "style": "lo_b_photo_mag_back@2",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 0,
+   "rect": [
+    66,
+    78,
+    104,
+    104
+   ],
+   "text": "Special",
+   "font": "ttf:rounded:7:0:1.0:0.2",
+   "copy": [
+    0,
+    66,
+    78,
+    104,
+    104
+   ],
+   "style": "lo_b_photo_mag_special@0",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 0,
+   "rect": [
+    65,
+    62,
+    128,
+    128
+   ],
+   "text": "The Sacred Ground",
+   "font": "ttf:rounded:11:0:0.9:0.3",
+   "copy": [
+    0,
+    65,
+    62,
+    128,
+    128
+   ],
+   "style": "lo_b_photo_mag_h1@0",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 1,
+   "rect": [
+    0,
+    62,
+    104,
+    128
+   ],
+   "text": "The Sacred Ground",
+   "font": "ttf:rounded:11:0:0.9:0.3",
+   "copy": [
+    1,
+    0,
+    62,
+    104,
+    128
+   ],
+   "style": "lo_b_photo_mag_h1@1",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 3,
+   "rect": [
+    65,
+    0,
+    128,
+    2
+   ],
+   "text": "The Sacred Ground",
+   "font": "ttf:rounded:11:0:0.9:0.3",
+   "copy": [
+    3,
+    65,
+    0,
+    128,
+    2
+   ],
+   "style": "lo_b_photo_mag_h1@3",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 3,
+   "rect": [
+    0,
+    40,
+    104,
+    42
+   ],
+   "text": "The Sacred Ground",
+   "font": "ttf:rounded:11:0:0.9:0.3",
+   "copy": [
+    3,
+    0,
+    40,
+    104,
+    42
+   ],
+   "style": "lo_b_photo_mag_h1@4",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 0,
+   "rect": [
+    60,
+    92,
+    128,
+    128
+   ],
+   "text": "The Pros' 10 Rules",
+   "font": "ttf:rounded:15:0:0.8:0.3",
+   "copy": [
+    0,
+    60,
+    92,
+    128,
+    128
+   ],
+   "style": "lo_b_photo_mag_h2@0",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 1,
+   "rect": [
+    0,
+    92,
+    124,
+    128
+   ],
+   "text": "The Pros' 10 Rules",
+   "font": "ttf:rounded:15:0:0.8:0.3",
+   "copy": [
+    1,
+    0,
+    92,
+    124,
+    128
+   ],
+   "style": "lo_b_photo_mag_h2@1",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 3,
+   "rect": [
+    60,
+    0,
+    128,
+    40
+   ],
+   "text": "The Pros' 10 Rules",
+   "font": "ttf:rounded:15:0:0.8:0.3",
+   "copy": [
+    3,
+    60,
+    0,
+    128,
+    40
+   ],
+   "style": "lo_b_photo_mag_h2@3",
+   "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_magazine",
+   "page": 3,
+   "rect": [
+    0,
+    40,
+    124,
+    80
+   ],
+   "text": "The Pros' 10 Rules",
+   "font": "ttf:rounded:15:0:0.8:0.3",
+   "copy": [
+    3,
+    0,
+    40,
+    124,
+    80
+   ],
+   "style": "lo_b_photo_mag_h2@4",
+   "name": "lo_b magazine"
   }
  ]
 }

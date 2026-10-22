@@ -338,6 +338,28 @@ PHOTO = {
                        angle=-11.0, below=150, fill="along", wipe=[(-17, -6, 17, 6)], box=(186, 56, 232, 84)),  # 高校御中
     "hat_notice": dict(picture="hatashijo", text="Information", font="ttf:tahoma-bold:7:0:1.0:0.0", centre=(138.5, 97),
                        angle=-11.0, below=150, fill="along", wipe=[(-27, -7, 27, 7)], box=(104, 82, 174, 114)),  # ご 案 内
+    # sct_main.arc n4_bg_magazine: the baseball magazine (Eikan Nine story picture)
+    "mag_cover": dict(picture="magazine", text="Cover Interview", font="ttf:rounded:8:0:1.0:0.2", centre=(92, 15),
+                      angle=-14.0, mode="all", fill="membrane", colour="#ff8b62", rings=["#000000"], levels=3,
+                      wipe=[(-52, -9, 56, 8)], box=(34, 0, 150, 42)),                  # 巻頭・○○投手インタビュー
+    "mag_title": dict(picture="magazine", text="Powerful Baseball", font="ttf:rounded:19:0:0.8:0.3", centre=(142, 40),
+                      angle=-13.3, mode="all", fill="membrane", colour="#ff8b62", rings=["#000000", "#e0e0e0"],
+                      levels=3, wipe=[(-100, -26, -25, 31), (-25, -33, 102, 31)], box=(36, 0, 250, 104)),   # パワフルベースボール
+    "mag_weekly": dict(picture="magazine", text="Weekly", font="ttf:tahoma-bold:7:0:1.0:0.0", centre=(290, 15),
+                       angle=-10.0, below=200, fill="along", colour="#d02010", wipe=[(-14, -7, 14, 7)],
+                       box=(270, 2, 312, 30)),                                         # 週刊 (the issue behind)
+    "mag_back": dict(picture="magazine", text="ball", font="ttf:rounded:19:0:0.8:0.3", centre=(277, 45), angle=-10.0,
+                     mode="all", fill="membrane", colour="#ff8b62", rings=["#000000", "#e0e0e0"], levels=3,
+                     wipe=[(-36, -23, 36, 27), (-38, -34, -6, -20)], box=(228, 4, 324, 86)),               # ボール of the issue behind
+    "mag_special": dict(picture="magazine", text="Special", font="ttf:rounded:7:0:1.0:0.2", centre=(84.5, 91),
+                        angle=-13.7, mode="all", fill="membrane", colour="#9cffff", rings=["#3171b4"], levels=3,
+                        wipe=[(-14, -7, 14, 7)], box=(66, 78, 104, 104)),              # 特集
+    "mag_h1": dict(picture="magazine", text="The Sacred Ground", font="ttf:rounded:11:0:0.9:0.3", centre=(147, 96),
+                   angle=-13.7, mode="all", fill="membrane", colour="#9cffff", rings=["#3171b4"], levels=3,
+                   wipe=[(-72, -14, 72, 14)], box=(65, 62, 232, 130)),                 # 球場という「聖地」
+    "mag_h2": dict(picture="magazine", text="The Pros' 10 Rules", font="ttf:rounded:15:0:0.8:0.3", centre=(153, 136),
+                   angle=-13.0, mode="all", fill="membrane", colour="#9cffff", rings=["#3171b4", "#3171b4"], levels=3,
+                   wipe=[(-84, -21, 84, 20), (-30, 20, 92, 34)], box=(60, 92, 252, 168)),   # プロの十箇条 (and the cut-off line under it)
 }
 
 for _name in PHOTO:
