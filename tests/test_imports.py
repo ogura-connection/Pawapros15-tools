@@ -42,7 +42,7 @@ def test_every_module_imports():
 def test_every_style_is_registered():
     from pp15.art import typeset
     styles = [m for m in module_names() if m.startswith("pp15.art.styles.") and not m.endswith(".common")]
-    assert len(styles) == 33 and len(typeset.RENDER) == 25591, (len(styles), len(typeset.RENDER))
+    assert len(styles) == 36 and len(typeset.RENDER) == 25664, (len(styles), len(typeset.RENDER))
 
 
 if __name__ == "__main__":
