@@ -1,5 +1,6 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
 5	400	7218	School Team Data
+5	984	8abb	Gear
 5	996	7259	Shows avg. Contact & Power
 5	1032	7529	Shows avg. SPD
 5	1064	27cd	Shows avg. Fielding & ARM
@@ -25,4 +26,8 @@
 5	1584	55a5	★Total Going Pro
 5	1644	627d	★Koshien Record
 5	1668	bab1	Win%
+5	1914	99e8	Policy: Balanced
+5	1940	3610	Policy: Hitting
+5	1966	be2f	Policy: Speed
+5	1992	fcbd	Policy: Pitch & Def.
 5	2016	c1da	Reputation:
