@@ -281,7 +281,7 @@ PHOTO = {
                      box=(232, 236, 300, 270)),                                   # 守備位置
     "form_form": dict(_F, text="Form", font="ttf:tahoma:10:0:1.0:0.2", centre=(276, 286), wipe=[(-32, -10, 32, 10)],
                       box=(242, 268, 312, 305)),                                  # フォーム
-    "form_notes": dict(_F, text="Notes", font="ttf:tahoma:8:0:1.0:0.2", centre=(274, 315.5), wipe=[(-40, -9, 40, 9)],
+    "form_notes": dict(_F, text="Notes", font="ttf:tahoma:8:0:1.0:0.2", centre=(274, 315.5), wipe=[(-22, -10, 59, 10)],
                        box=(250, 296, 336, 332)),                                 # 備考（補足欄）
     "form_photo": dict(_F, text="Photo\nHere", font="ttf:tahoma:12:0:1.0:0.3", centre=(484, 331), angle=-11.0, lean=18.0,
                        mode="light", above=234, fill="membrane", colour="#ffffff", gain=0.85,
