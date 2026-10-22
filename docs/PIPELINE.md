@@ -7,7 +7,7 @@ and how to recognise when a new game needs them, are in `TECHNIQUES.md`.
 
 ## 1. Get the files and a test emulator
 
-- Extract the disc to files (`pp15 extract-iso`; for Wii/GameCube Dolphin can also extract). Keep the
+- Extract the disc to files (`T/extract_from_iso.py`; for Wii/GameCube Dolphin can also extract). Keep the
   disc images and extracted files outside any repository that syncs.
 - A separate emulator profile for tests, driven from the shell: start, send keys, take screenshots, load
   states (`D/harness.py`). Make every step wait on what the screen shows, never a fixed time
@@ -20,8 +20,8 @@ Typical stores: script/dialogue text (often packed or compressed), fixed-size st
 message scripts with control codes, system dialogs in the main executable, lettering drawn as pictures in
 textures, videos. In Pawapuro there were five (FINDINGS.md lists them); the painted lettering was the largest
 by count of items.
-- Decode the glyph table first (`T/pp15/glyphs.py`), then scan every file for runs of valid text
-  (`pp15 extract-text`, `pp15 scan scan`), and measure: how many runs, in which files, which mode
+- Decode the glyph table first (`T/pawapuro15_text_tools.py`), then scan every file for runs of valid text
+  (`T/extract_all_text.py`, `T/scan_story.py scan`), and measure: how many runs, in which files, which mode
   (`_work/inventory_text.json`). Survey the art by machine: render every texture page and read it with text
   recognition (`T/_work/ui_pages/tools/art_survey.py`).
 - **Prove which copy the screen draws** before translating: the same words often exist two or three times
@@ -32,16 +32,16 @@ by count of items.
 ## 3. Learn the formats well enough to write them back
 
 - Scripts: find the interpreter loop, derive opcode lengths, so the text can be re-laid and its pointers
-  re-aimed (`T/pp15/script/scan.py`). Check by round trip: decode, re-encode, compare byte for byte (`pp15 build-check`).
+  re-aimed (`T/scan_story.py`). Check by round trip: decode, re-encode, compare byte for byte (`T/rebuild_scripts.py check`).
 - Memory is usually the real limit, not file size: find what the game loads where and how much room is free
-  (`pp15 ram-scan`). When a module cannot grow, re-lay its text inside its own bytes or spill into a free
+  (`T/ram_scan.py`). When a module cannot grow, re-lay its text inside its own bytes or spill into a free
   region of another module that is always loaded (My Life's annex).
 - Fonts: if the font is fixed-width kanji cells, two Latin letters per cell doubles the room
-  (`T/pp15/build/font.py`); count which kanji the remaining Japanese still needs before taking cells.
+  (`T/pair_font.py`); count which kanji the remaining Japanese still needs before taking cells.
 
 ## 4. A build that refuses to install anything wrong
 
-`pp15 build`: write every store, then re-read the built files and check them (every pointer
+`T/rebuild_scripts.py build`: write every store, then re-read the built files and check them (every pointer
 reads its string, nothing outside the changed regions moved, counts match), and only then install. Keep
 originals untouched (`_work/orig*`). Every check that was added caught a real bug later.
 
@@ -57,7 +57,7 @@ Conrad's srt-pipeline, `docs/ja-to-en.md`). Use the official English of the seri
 - Cut the untranslated, unique text into batches of 400 to 520 lines, scene by scene, with duplicates filled
   in afterwards (`T/_work/tl_bulk/make_batches.py`). One agent per batch (Sonnet, medium effort, about 125 to
   160k tokens and 5 to 8 minutes a batch); a brief per kind of text (`brief*.md`); the agent must pass the
-  checker before it stops (`pp15 script check`, `check_strings.py`): line counts, length limits, codes kept in order.
+  checker before it stops (`tl.py check`, `check_strings.py`): line counts, length limits, codes kept in order.
 - Agents never write the shared English files: one collect script stores the batches one after the other
   (`collect.py`), because parallel writers lose data.
 - Pilot first: 20 lines, look at them in the game, then the rest. Normalise terms across batches before storing
@@ -71,9 +71,9 @@ Conrad's srt-pipeline, `docs/ja-to-en.md`). Use the official English of the seri
 - Typeset English in the game's own style rather than squeezing it into the Japanese box: take letters from
   the official English art where it exists, or a system font rendered large and averaged down, then map the
   ink to the page's own palette indices by role (fill gradient, outline, white band, shadow), read off the
-  Japanese art (`T/pp15/art/typeset.py`, `T/_work/ui_pages/tools/roles.py`).
+  Japanese art (`T/ui_type.py`, `T/_work/ui_pages/tools/roles.py`).
 - Re-pack the page and re-point the sprite parts at the new rectangles instead of keeping the old ones
-  (`T/pp15/art/labels.py`, specs in `T/specs/`, generators in `T/_work/ui_pages/gen_*_spec.py`).
+  (`T/ui_labels.py`, specs in `T/ui_specs/`, generators in `T/_work/ui_pages/gen_*_spec.py`).
 - Space on the page, not bytes, is usually the limit. Share pieces the Japanese shares, cut long words across
   a sprite's parts, keep fixed baselines and columns.
 - Quality bar: crisp single-colour borders, no blur from scaling, checked at 4x against the Japanese.

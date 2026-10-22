@@ -18,7 +18,7 @@ JIS X 0208 but with gaps), not Shift-JIS or UTF-16. A search for Shift-JIS finds
 - Spot it: no Shift-JIS hits for words you can see on screen; the font file holds a few thousand glyphs.
 - Do: decode the font, render every glyph, and build the index → character table once (by sight or by text
   recognition of the rendered glyphs). Every later tool decodes through that table.
-- Code: `T/pp15/glyphs.py` (`char-table`, `dump-font`), `pp15 extract-text`.
+- Code: `T/pawapuro15_text_tools.py` (`char-table`, `dump-font`), `T/extract_all_text.py`.
 
 ### A2. Text that looks like noise: packed units
 The story dialogue (about 90% of all text) was missed by an earlier attempt because it is **12 bits a
@@ -30,7 +30,7 @@ character** packed back to back (`AAAB BBCC CDDD`), not 16. A 16-bit scan sees n
   (kana are the most common characters in Japanese text). A wrong width scores near zero, the right one
   jumps. Then find the terminator and line-break codes (here `0xFFF` and `0xFFE`), and prove the format by
   decoding and re-encoding every run to identical bytes.
-- Code: `T/pp15/script/scan.py` (`unpack_text`, `pack_text`, `find_packed_text`, `entropy`, `scan`).
+- Code: `T/scan_story.py` (`unpack_text`, `pack_text`, `find_packed_text`, `entropy`, `scan`).
 
 ### A3. Read the code, not only the data
 The way to be sure: find the text reader in the code (it masks 12 bits, compares with the terminator) and the
@@ -41,7 +41,7 @@ interpreter that calls it. Disassemble with capstone; look for the handler of ea
   no instruction may land mid-way in another, and the parse must reach the end.
 - This worked for three different script engines in one game (Success, Eikan Nine with renumbered
   opcodes, My Life with whole-halfword opcodes and `FFF0`/`FFF1` blocks).
-- Code: `T/pp15/script/scan.py` (`derive_op_advance`, `Code`, `xref`, `instruction_length`, `BlockScript`, `OreScript`).
+- Code: `T/scan_story.py` (`derive_op_advance`, `Code`, `xref`, `instruction_length`, `BlockScript`, `OreScript`).
 
 ### A4. Fixed-slot strings and their real start
 Menus, help texts and item descriptions are 16-bit glyph strings in slots of fixed size, padded with spaces
@@ -52,7 +52,7 @@ Japanese pads each line with spaces (the padding gives the line width).
   starts at the pointer; two pointers into one slot mean two strings share it (one is the tail of the other).
 - Trap: packed script text read as 16-bit strings looks plausible. Four such "strings" were translated and
   corrupted a script for two days. The build now refuses a string that lies inside a script region.
-- Code: `T/pp15/text/strings.py` (`find`, `line_widths`, `START_TRIM`), `T/_work/tl_bulk/pointer_check.py`.
+- Code: `T/ui_strings.py` (`find`, `line_widths`, `START_TRIM`), `T/_work/tl_bulk/pointer_check.py`.
 
 ### A5. Names in cells, with holes
 Names are fixed cells per character, and a two-kanji name in a three-cell field has an **empty cell in the
@@ -60,7 +60,7 @@ middle** (手塚 = `0773 0000 0A46`). Searches for the characters side by side f
 looked unused and were nearly given away to the font (C1).
 - Spot it: names on screen that no search finds; name tables of fixed-size records (here 1,856 surnames of
   five 16-bit values each).
-- Code: `T/pp15/build/font.py` (`name_usage`, `_name_cells`).
+- Code: `T/pair_font.py` (`name_usage`, `_name_cells`).
 
 ### A6. Message scripts: pieces with codes
 Pennant's news is not a string table: each message is a run of pieces (`codes, 0, text, 0xFFFF`) with codes for
@@ -68,7 +68,7 @@ new line, new page and inserted values (club, player, number), and only the mess
 - Spot it: "strings" that start with small numbers, several `0xFFFF` per message, pointers only to some of them.
 - Do: write each message as one line with tags (`{n}` line, `{p}` page, `{66}` an insert) and let the English be
   free between tags as long as the whole message fits its span.
-- Code: `T/pp15/text/messages.py`.
+- Code: `T/ui_messages.py`.
 
 ### A7. The same words exist two or three times: prove which copy is drawn
 Gear names existed as a string table, as script constants and as sprite lettering; the screen drew the
@@ -78,7 +78,7 @@ translation passes were spent on copies nobody sees.
   decoded pages of every file; for text, search a RAM dump for the glyph numbers. A string on screen that is
   not in memory as glyph numbers is a picture.
 - Code: `D/looks/first/steps.py` (keys, a screenshot, the textures dumped since the last step),
-  `T/_work/ui_pages/tools/match_all.py`, `mirror_bank.py`, `pp15 ram-scan`.
+  `T/_work/ui_pages/tools/match_all.py`, `mirror_bank.py`, `T/ram_scan.py`.
 
 ### A7b. Text on screen that is not a sprite word: a sprite font or a texture drawn at run time
 In a match the pitch name ("ストレート 144 km/h") looks like art but is text drawn letter by letter with a small
@@ -110,14 +110,14 @@ is moved too.
   expected addends may differ). `check` mode: rebuilding with no changes must give identical bytes.
 - Spot it: the platform uses relocatable modules (Wii/GameCube REL, PS2 IRX/ELF overlays, DLLs), or the game
   uses label indices resolved through a table.
-- Code: `T/pp15/build/rebuild.py` (`emit_script`, `patch_addends`, `rebuild_module`, `verify`, `check`).
+- Code: `T/rebuild_scripts.py` (`emit_script`, `patch_addends`, `rebuild_module`, `verify`, `check`).
 
 ### B2. Memory is the real limit, not file size
 The game loads every module at a **fixed address** from a table on the disc (`moduleID2addr.o`: address, memory
 size, bytes to read). A grown file not entered in the table is read short and crashes later.
 - Find free memory: a region that is zero in memory snapshots of many screens and that no code addresses.
   Here 2.1 MB above the module plan was free; moving the scenario slot there gave the main script 383 KB to grow.
-- Code: `T/pp15/build/rebuild.py` (`plan_tables`, `update_plan`, `memory_size`), `pp15 ram-scan`.
+- Code: `T/rebuild_scripts.py` (`plan_tables`, `update_plan`, `memory_size`), `T/ram_scan.py`.
 
 ### B3. No room at all: lay out again inside the module, or an annex
 - Eikan Nine's module could not grow (24 bytes free). Its labels were aligned to 4 bytes with zero gaps
@@ -126,18 +126,18 @@ size, bytes to read). A grown file not entered in the table is read short and cr
   module that is always loaded with it, moved to free memory; the labels of moved scenes become relocations
   against the main executable (absolute addresses). Islands of other data inside the script stay in place.
 - Spot it: the build says "N bytes too long" and the memory plan has no slack.
-- Code: `T/pp15/build/rebuild.py` (`emit_block`, `emit_ore`, `ore_relocations`, `update_plan_ore`).
+- Code: `T/rebuild_scripts.py` (`emit_block`, `emit_ore`, `ore_relocations`, `update_plan_ore`).
 
 ### B4. Movable string blocks
 Strings reached only through a pointer table can be laid out back to back again: an entry may grow if
 another shrinks, and a string that is the tail of another can share its cells. The same for the system
 dialogs in the main executable (264 lines re-laid, 251 relocations re-pointed, fixed strings proven unmoved).
-- Code: `T/pp15/text/strings.py` (`BLOCKS`), `T/pp15/build/rebuild.py` (`layout_block`, `layout_dol`, `build_dol`, `verify_dol`).
+- Code: `T/ui_strings.py` (`BLOCKS`), `T/rebuild_scripts.py` (`layout_block`, `layout_dol`, `build_dol`, `verify_dol`).
 
 ### B5. English keyed by position and hash, never by Japanese
 Each translation file row is `section, offset, 4-hex hash of the original, English`. The hash catches a run
 that moved or changed; the files hold no Japanese, so the repository can be public.
-- Code: `T/pp15/script/translate.py`, `T/pp15/text/strings.py`, `T/pp15/text/messages.py` (`text_hash`).
+- Code: `T/tl.py`, `T/ui_strings.py`, `T/ui_messages.py` (`text_hash`).
 
 ---
 
@@ -161,8 +161,8 @@ The solution, with **no code change in the game**:
   half a cell of space if the earlier piece has an odd number of letters; Japanese left in a line is unaffected.
 - Spot it: any game with a fixed-cell CJK bitmap font and a known glyph table. If the font has fewer free
   slots than pairs needed, count pairs first (English text uses about 900 to 2,000 distinct pairs).
-- Code: `T/pp15/build/font.py` (`split_pairs`, `segments`, `allocate`, `other_text_usage`, `name_usage`, `render_pair`,
-  `compress`/`decompress`, `build_font`), `T/pp15/build/rebuild.py` (`assign_pairs`, `build_font_file`, `encode_text`).
+- Code: `T/pair_font.py` (`split_pairs`, `segments`, `allocate`, `other_text_usage`, `name_usage`, `render_pair`,
+  `compress`/`decompress`, `build_font`), `T/rebuild_scripts.py` (`assign_pairs`, `build_font_file`, `encode_text`).
 
 ### C2. Box widths and sentences the game assembles
 - Measure each kind of window in the game: dialogue 17 cells by 2 or 3 lines; one kind of window (type 29)
@@ -180,7 +180,7 @@ The solution, with **no code change in the game**:
 rectangle-fill code as the font glyphs, with a 2-byte header. Look for one compression routine reused for
 several kinds of data. Re-encode the originals first and compare. Menu art was in yet another container
 (`.rom`), found by searching for the palette of a dumped texture.
-- Code: `T/pp15/art/textures.py` (`decompress_page`, `compress_page`, `banks`), `T/_work/menu/make_menu.py`.
+- Code: `T/ui_textures.py` (`decompress_page`, `compress_page`, `banks`), `T/_work/menu/make_menu.py`.
 
 ### D2. Typeset in the game's own style, then re-pack the page
 - Do not squeeze English into the Japanese box (it came out blurry and was rejected). Set the word at its
@@ -196,8 +196,8 @@ several kinds of data. Re-encode the originals first and compare. Menu art was i
   drawn by code).
 - Keep a fixed baseline and left edge per row; the Japanese pieces are often a pixel or three off, so compute
   per-piece offsets from the sprite's own placement.
-- Code: `T/pp15/art/typeset.py` (`typeset`, `ttf_ink`, styles `logo`, `called`, `banded`, `tight`, `repack`, `repack_ribbon`),
-  `T/pp15/art/labels.py` (`apply`), specs `T/specs/`, generators `T/_work/ui_pages/gen_*_spec.py`, previews
+- Code: `T/ui_type.py` (`typeset`, `ttf_ink`, styles `logo`, `called`, `banded`, `tight`, `repack`, `repack_ribbon`),
+  `T/ui_labels.py` (`apply`), specs `T/ui_specs/`, generators `T/_work/ui_pages/gen_*_spec.py`, previews
   `T/_work/ui_pages/tools/after.py`, roles `roles.py`.
 - Reusable art: `pawapuro15-wii/labels/` (ours), `references/*/labels/index.tsv` (MLB's, searchable by word).
 
