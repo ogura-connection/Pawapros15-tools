@@ -54,9 +54,10 @@ NOT_TEXT = {("scs_data.rel", 5, 1164), ("scs_data.rel", 5, 10002), ("scs_data.re
 BLOCKS = {"scs_data.rel": [{"section": 5, "start": 22308, "end": 22752, "table": 22756, "count": 24, "max": 15}]}
 
 # Strings of one character, which the search would not take for text: the month and week marks of the schedule's date
-# column, and the position letters (pitcher, catcher, first base, ...) of the Eikan Nine player card.
+# column, the position letters (pitcher, catcher, first base, ...) of the Eikan Nine player card, and the win / loss
+# marks of the Eikan Nine team record (勝 敗, beside "Draw").
 SHORT_TEXT = {("scs_data.rel", 5, 13824), ("scs_data.rel", 5, 13828)} | \
-    {("sct_a_pd.rel", 5, o) for o in range(184, 212, 4)}
+    {("sct_a_pd.rel", 5, o) for o in range(184, 212, 4)} | {("sct_a_td.rel", 5, 1568), ("sct_a_td.rel", 5, 1572)}
 
 # Strings that end a longer glyph run (a symbol table in front of them): their own slot from this offset to the 0xFFFF.
 TAIL_SLOTS = {("sct_card.rel", 5, 3272)}                # a short label ending a symbol table (Eikan Nine command help)
