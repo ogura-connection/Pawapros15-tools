@@ -1,0 +1,375 @@
+{
+ "arc": "sip_comm.arc",
+ "repack": [
+  {
+   "bank": "r4_smo",
+   "name": "inning_card",
+   "chain": true,
+   "palette": 3,
+   "style": "sip_small",
+   "gap": [
+    1,
+    1
+   ],
+   "areas": [
+    [
+     3,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     4,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     5,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     6,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     96,
+     56,
+     128,
+     112
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "10",
+     "layers": 2,
+     "style": "sip_card",
+     "text": "Top",
+     "font": "ttf:black:26:0.2:1.0:0.4",
+     "baseline": 27
+    },
+    {
+     "sprite": "11",
+     "layers": 2,
+     "style": "sip_card",
+     "text": "Bot",
+     "font": "ttf:black:26:0.2:1.0:0.4",
+     "baseline": 27
+    },
+    {
+     "sprite": "12",
+     "layers": 2,
+     "style": "sip_card",
+     "text": "Offense",
+     "font": "ttf:black:14:0.2:0.85:0.35",
+     "baseline": 27
+    },
+    {
+     "sprite": "13",
+     "layers": 2,
+     "style": "sip_card",
+     "text": "Defense",
+     "font": "ttf:black:14:0.2:0.85:0.35",
+     "baseline": 27
+    },
+    {
+     "sprite": "14",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "No Outs,",
+      "1st"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "15",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "No Outs,",
+      "2nd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "16",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "No Outs,",
+      "3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "17",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "No Outs,",
+      "Loaded"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "18",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "No Outs,",
+      "1st & 2nd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "19",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "No Outs,",
+      "1st & 3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "1a",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "No Outs,",
+      "2nd & 3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "1b",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "No Outs,",
+      "Empty"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 11
+    },
+    {
+     "sprite": "1c",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "1 Out,",
+      "1st"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "1d",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "1 Out,",
+      "2nd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "1e",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "1 Out,",
+      "3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "1f",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "1 Out,",
+      "Loaded"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "20",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "1 Out,",
+      "1st & 2nd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "21",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "1 Out,",
+      "1st & 3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "22",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "1 Out,",
+      "2nd & 3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "23",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "1 Out,",
+      "Empty"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "24",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "2 Outs,",
+      "1st"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "25",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "2 Outs,",
+      "2nd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "26",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "2 Outs,",
+      "3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "27",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "2 Outs,",
+      "Loaded"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "28",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "2 Outs,",
+      "1st & 2nd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "29",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "2 Outs,",
+      "1st & 3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "2a",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "2 Outs,",
+      "2nd & 3rd"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    },
+    {
+     "sprite": "2b",
+     "layers": 2,
+     "style": "sip_small",
+     "chain": [
+      "2 Outs,",
+      "Empty"
+     ],
+     "gap": 3,
+     "font": "ttf:black:10:0.2:0.9:0.3",
+     "baseline": 12
+    }
+   ]
+  }
+ ]
+}

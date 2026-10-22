@@ -1116,13 +1116,12 @@ def repack_chain(group, d, bank, pages, patches, project=None):
                                     for r in clear):
             raise ValueError("sprite %s uses x %d-%d y %d-%d of page %d, which this group clears"
                              % (p.sprite, p.x0, p.x1, p.y0, p.y1, p.page))
-    style = RENDER[group["style"]]
     unique, where, plans = [], {}, []        # unique pieces (art, base); art key -> index; per label [(index, x off)], width
     for lab in group["labels"]:
         font = opt(lab, "font")
         texts = lab["chain"] if "chain" in lab else [lab["text"]]
         inks = [typeset(t, font, project) for t in texts]
-        pieces, W = style.chain(inks, opt(lab, "gap", 4))
+        pieces, W = RENDER[opt(lab, "style")].chain(inks, opt(lab, "gap", 4))
         plan = []
         for art, base, x in pieces:
             key = (art.shape, art.tobytes(), base)
