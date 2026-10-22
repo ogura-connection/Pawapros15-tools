@@ -23,6 +23,9 @@ from pp15.script import scan
 from pp15.text import strings
 
 PAIR_CACHE = "pair_glyphs.json"      # in _work: the compressed glyph of every pair drawn so far (drawing is slow)
+# {letter pair: glyph number} of the released font (2026-10-21 release, read back from its fonttex2.rel). These pairs
+# keep their slots in every later build, so that names stored in players' saves still read right; see allocate().
+PINNED_SLOTS = os.path.join(config.TRANSLATION_DIR, "font_slots.json")
 # Modules whose text is not Success Mode dialogue and must not count as "Japanese text that stays":
 # namein.rel is the name-entry kanji picker; it lists every kanji once and is not text, and fonttex2.rel is the font.
 NOT_TEXT_MODULES = {"fonttex2.rel", "namein.rel"}
@@ -103,9 +106,13 @@ def assign_pairs(scripts: list, texts: dict, orig: dict, ui_texts: dict | None =
         return {}
     usage.update(font_usage.other_text_usage(orig, set(scan.SCRIPT_FILES) | NOT_TEXT_MODULES))
     name_kanji = font_usage.name_usage(orig, NOT_TEXT_MODULES)       # team-mates, real players
-    slots, taken, lost = font_usage.allocate(pairs, usage, name_kanji)
-    print("Font: %d letter pairs in %d kanji slots (%d slots left)%s%s"
-          % (len(slots), len(slots), len(font_usage.KANJI_SLOTS) - len(slots),
+    pinned = {}
+    if os.path.exists(PINNED_SLOTS):
+        with open(PINNED_SLOTS) as f:
+            pinned = json.load(f)
+    slots, taken, lost = font_usage.allocate(pairs, usage, name_kanji, pinned)
+    print("Font: %d letter pairs in %d kanji slots (%d slots left, %d pairs new since the release)%s%s"
+          % (len(slots), len(slots), len(font_usage.KANJI_SLOTS) - len(slots), len(set(slots) - set(pinned)),
              "" if not taken else "; %d of them are kanji that Japanese text elsewhere still uses" % taken,
              "; all %d kanji of the name tables are kept" % len(name_kanji) if not lost else
              "; %d of the %d kanji of the name tables are LOST" % (lost, len(name_kanji))))

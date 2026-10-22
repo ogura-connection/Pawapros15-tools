@@ -162,16 +162,22 @@ def name_usage(modules: dict, skip: set) -> collections.Counter:
     return use
 
 
-def allocate(pairs: Collection[str], usage: dict, keep: Collection[int] = ()) -> tuple[dict, int, int]:
+def allocate(pairs: Collection[str], usage: dict, keep: Collection[int] = (),
+             pinned: dict | None = None) -> tuple[dict, int, int]:
     """Give every letter pair a kanji slot.
 
     Kanji no text uses come first, then the least used; the kanji in `keep` (the name tables) are taken only when
-    nothing else is left. Returns ({pair: glyph number}, number of slots taken from kanji that remaining text still
-    uses, number taken from `keep`). Raises ValueError when there are more pairs than slots.
+    nothing else is left. `pinned` = {pair: glyph number} of a released font: those pairs keep their slots (even if
+    no text uses them any more) and only new pairs get free slots, because saves store generated names as glyph
+    numbers and a moved pair would garble them. Returns ({pair: glyph number}, number of slots taken from kanji that
+    remaining text still uses, number taken from `keep`). Raises ValueError when there are more pairs than slots.
     """
-    free = sorted((g for g in KANJI_SLOTS if g not in RESERVED_GLYPHS), key=lambda g: (g in keep, usage.get(g, 0), -g))
-    if len(pairs) > len(free):
-        raise ValueError("%d different letter pairs, only %d glyph slots" % (len(pairs), len(free)))
-    slots = dict(zip(sorted(pairs), free))
+    pinned = dict(pinned or {})
+    free = sorted((g for g in KANJI_SLOTS if g not in RESERVED_GLYPHS and g not in set(pinned.values())),
+                  key=lambda g: (g in keep, usage.get(g, 0), -g))
+    new = sorted(p for p in pairs if p not in pinned)
+    if len(new) > len(free):
+        raise ValueError("%d different letter pairs, only %d glyph slots" % (len(pinned) + len(new), len(pinned) + len(free)))
+    slots = pinned | dict(zip(new, free))
     return (slots, sum(1 for g in slots.values() if usage.get(g, 0) or g in keep),
             sum(1 for g in slots.values() if g in keep))

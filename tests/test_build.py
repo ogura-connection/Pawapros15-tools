@@ -296,6 +296,15 @@ def test_allocate_reports_slots_taken_from_used_kanji_and_refuses_too_many_pairs
     assert raises(ValueError, font_usage.allocate, {str(i) for i in range(4000)}, {})
 
 
+def test_allocate_keeps_pinned_pairs_and_gives_new_pairs_free_slots():
+    top = font_usage.KANJI_SLOTS[-1]
+    pinned = {"zz": top, "cd": top - 3}
+    slots, taken, lost = font_usage.allocate({"ab", "cd"}, {}, pinned=pinned)
+    assert slots["cd"] == top - 3 and slots["zz"] == top           # pinned pairs stay, used or not
+    assert slots["ab"] == top - 1                                   # the new pair takes the best slot left
+    assert len(set(slots.values())) == len(slots)
+
+
 def test_name_cells_recognises_player_names():
     assert font_usage._name_cells((0, 0, 0, 0, 0, 0)) == 0
     assert font_usage._name_cells((300, 301, 0, 0, 0, 0)) == 1                 # kana only
