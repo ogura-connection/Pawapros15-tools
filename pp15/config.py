@@ -1,4 +1,8 @@
-"""Where everything lives. This is the only module that knows paths; every other module imports them from here.
+"""Where every file and folder of the project lives; the other modules import their paths from here.
+
+The game data (extracted disc files, working copies) is not in git; the folders below say where the tools look for it.
+This module only builds path strings (nothing is read or created), plus `use_scratch()` for the few places that still
+import a helper script from `_work/`.
 
 Everything is relative to the repository (the folder that holds the `pp15` package) unless an environment variable says
 otherwise:
@@ -30,7 +34,7 @@ ORIG_DIR = os.path.join(WORK_DIR, "orig")             # untouched .rel files (an
 ORIG_ARC_DIR = os.path.join(WORK_DIR, "orig_arc")     # untouched .arc files; not _work/orig: the build installs that whole folder
 ORIG_SYS_DIR = os.path.join(WORK_DIR, "orig_sys")     # untouched main.dol
 BUILD_DIR = os.path.join(WORK_DIR, "build")
-UI_PAGES_DIR = os.path.join(WORK_DIR, "ui_pages")     # scratch scripts of the art runs (historical, not maintained)
+UI_PAGES_DIR = os.path.join(WORK_DIR, "ui_pages")     # pictures and arrays prepared for the lettering work; the art styles read them (game data, git-ignored)
 
 # What is in git
 TRANSLATION_DIR = os.path.join(ROOT, "translation")
@@ -48,10 +52,13 @@ MLB_PROJECT_BIN = os.path.join(MLB_DIR, "MLB2008", "DATA", "files", "project.bin
 WIT_FALLBACK = os.path.join(PROJECTS, "tools_dl", "wit", "wit-v3.05a-r8638-mac", "bin", "wit")
 
 
-def use_scratch(*subfolders):
-    """Make a folder under _work importable (use_scratch("ui_pages", "tools")). Only a few historical art styles and the
-    name-table export need this (they import helper scripts that live in _work); nothing else may reach into _work
-    for code."""
+def use_scratch(*subfolders: str) -> str:
+    """Make a folder under _work importable, e.g. use_scratch("ui_pages", "tools").
+
+    Only a few helper scripts that live in the git-ignored _work folder (the romaji converter used by `pp15 names
+    export`, the sprite composer used by `pp15 export-labels`) need this; nothing else may import code from _work.
+
+    Arguments: the folder names below _work. Returns the folder path; it is appended to sys.path once."""
     path = os.path.join(WORK_DIR, *subfolders)
     if path not in sys.path:
         sys.path.append(path)

@@ -6,6 +6,7 @@ cd "$(dirname "$0")/.."
 echo "== imports";     python3 tests/test_imports.py
 echo "== style registry"; python3 tests/test_registry.py
 echo "== build unit tests"; python3 tests/test_build.py
+echo "== names, disc, kit"; python3 tests/test_names_disc_kit.py
 echo "== build-check"; python3 -m pp15 build-check > /dev/null && echo "build-check passed"
 echo "== golden";      python3 tests/golden.py check
 echo "all tests passed"

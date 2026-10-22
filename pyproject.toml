@@ -8,18 +8,27 @@ version = "1.0.0"
 description = "Tools for the English translation of Jikkyou Powerful Pro Yakyuu 15 (Wii): script, UI text, art and disc build"
 readme = "README.md"
 requires-python = ">=3.10"
+# Needed by every command: numpy and Pillow read, draw and re-encode the game's pictures
 dependencies = [
     "numpy",
     "Pillow",
 ]
 
+# Packages that only one command needs (each command says so in its --help)
 [project.optional-dependencies]
-xref = ["capstone"]            # `pp15 scan xref`
-iso = ["pycryptodome"]         # `pp15 extract-iso`
+xref = ["capstone"]            # `pp15 scan xref`: disassemble code to find who uses a text
+iso = ["pycryptodome"]         # `pp15 extract-iso`: AES decryption of the Wii disc
 state = ["lz4"]                # `pp15 ram-scan`: faster save-state decompression (a slow built-in one is used without it)
+dev = ["pytest"]               # optional: `pytest tests/` instead of `sh tests/run_all.sh`
 
+# `pip install -e .` makes the `pp15` command (the same as `python3 -m pp15`)
 [project.scripts]
 pp15 = "pp15.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["pp15*"]
+
+# The test files can also be run one by one with python3 (they have a main); the game-data checks are in tests/run_all.sh
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

@@ -4,13 +4,20 @@
     python3 -m pp15 --help                     the list of commands
     python3 -m pp15 COMMAND --help             what one command does
 
-This file only looks the command up and hands the rest of the command line to the `main(argv)` of the module that does
-the work, so every command keeps the arguments it always had.
+How it works: COMMANDS is the list of commands (name, module that does the work, arguments put in front of the user's,
+one-line summary, usage line). This file only looks the command up and hands the rest of the command line to the
+`main(argv)` of that module, so every command keeps the arguments it always had. A command whose module parses its
+arguments with argparse answers `--help` itself (those names are in NATIVE_HELP); for the others this file prints the
+summary and the module's docstring.
+
+Public functions: overview (the text of `pp15 --help`), command_help, main.
 """
 import importlib
 import importlib.util
 import os
 import sys
+from types import ModuleType
+from typing import List, Optional
 
 from pp15 import config
 
@@ -44,7 +51,7 @@ COMMANDS = [
      "export [FILE ...] | set | check FILE | apply FILE | merge | status"),
     ("merge-messages", "pp15.text.messages", ["merge"],
      "translation/messages/*.tsv -> _work/messages.json, with checks", ""),
-    ("names", "pp15.names.table", [],
+    ("names", "pp15.names.commands", [],
      "player names: export / check the surname table and the in-place name tables",
      "export | export-given | export-draft | export-holders | export-foreign | check"),
     ("kyu-names", "pp15.names.kyu", [],
@@ -100,10 +107,14 @@ COMMANDS = [
      "index of the English lettering of the MLB discs (needs the OCR helper)", "PROJECT.BIN TEXTURES.TSV OUT_DIR [GAME]"),
 ]
 BY_NAME = {c[0]: c for c in COMMANDS if c[1]}
-NATIVE_HELP = {"build", "build-check", "build-restore", "scan", "glyphs", "extract-text"}     # their own argparse answers --help
+# Commands whose module has an argparse parser: `pp15 COMMAND --help` goes to the module
+NATIVE_HELP = {"build", "build-check", "build-restore", "scan", "glyphs",
+               "names", "kyu-names", "release", "extract-iso", "extract-text", "ram-scan",
+               "export-tm", "export-labels", "mlb-assets", "mlb-labels"}
 
 
-def _load(module):
+def _load(module: str) -> ModuleType:
+    """Import the module that does the work of a command (`golden` is tests/golden.py, outside the package)."""
     if module == "golden":                                   # tests/golden.py is not part of the package
         spec = importlib.util.spec_from_file_location("golden", os.path.join(config.TESTS_DIR, "golden.py"))
         mod = importlib.util.module_from_spec(spec)
@@ -112,7 +123,8 @@ def _load(module):
     return importlib.import_module(module)
 
 
-def overview():
+def overview() -> str:
+    """The text of `pp15 --help`: every command with its summary, grouped by the section headers of COMMANDS."""
     lines = ["usage: pp15 COMMAND [ARGUMENTS]    (python3 -m pp15 ...; `pp15 COMMAND --help` for one command)", ""]
     for name, module, _, summary, _ in COMMANDS:
         if module is None:
@@ -123,7 +135,8 @@ def overview():
     return "\n".join(lines)
 
 
-def command_help(name):
+def command_help(name: str) -> None:
+    """Print the usage line, the summary and the module docstring of a command whose module has no argparse help."""
     _, module, prefix, summary, usage = BY_NAME[name]
     print("usage: pp15 %s %s\n\n%s\n" % (name, usage, summary))
     try:
@@ -134,7 +147,9 @@ def command_help(name):
         print(doc)
 
 
-def main(argv=None):
+def main(argv: Optional[List[str]] = None) -> int:
+    """Run `pp15 COMMAND ...`. Returns the exit code: 0 after help or a finished command, 2 for an unknown command;
+    otherwise whatever the command's own main returns. `argv` defaults to sys.argv[1:]."""
     a = sys.argv[1:] if argv is None else list(argv)
     if not a or a[0] in ("-h", "--help", "help"):
         print(overview())
