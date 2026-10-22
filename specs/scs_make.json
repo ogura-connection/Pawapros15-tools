@@ -1063,6 +1063,468 @@
    "font": "ttf:rounded:10:0:0.9:0.4",
    "copy": "clear",
    "style": "makehint"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 1,
+   "rect": [
+    100,
+    76,
+    128,
+    128
+   ],
+   "text": "Baseball Club Application",
+   "font": "ttf:times-bold:10:0:0.9:0.0",
+   "copy": [
+    1,
+    100,
+    76,
+    128,
+    128
+   ],
+   "style": "lo_b_photo_form_title@1",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 2,
+   "rect": [
+    0,
+    76,
+    128,
+    128
+   ],
+   "text": "Baseball Club Application",
+   "font": "ttf:times-bold:10:0:0.9:0.0",
+   "copy": [
+    2,
+    0,
+    76,
+    128,
+    128
+   ],
+   "style": "lo_b_photo_form_title@2",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 3,
+   "rect": [
+    0,
+    76,
+    21,
+    128
+   ],
+   "text": "Baseball Club Application",
+   "font": "ttf:times-bold:10:0:0.9:0.0",
+   "copy": [
+    3,
+    0,
+    76,
+    21,
+    128
+   ],
+   "style": "lo_b_photo_form_title@3",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 5,
+   "rect": [
+    100,
+    0,
+    128,
+    9
+   ],
+   "text": "Baseball Club Application",
+   "font": "ttf:times-bold:10:0:0.9:0.0",
+   "copy": [
+    5,
+    100,
+    0,
+    128,
+    9
+   ],
+   "style": "lo_b_photo_form_title@5",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 6,
+   "rect": [
+    0,
+    0,
+    128,
+    9
+   ],
+   "text": "Baseball Club Application",
+   "font": "ttf:times-bold:10:0:0.9:0.0",
+   "copy": [
+    6,
+    0,
+    0,
+    128,
+    9
+   ],
+   "style": "lo_b_photo_form_title@6",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 7,
+   "rect": [
+    0,
+    0,
+    21,
+    9
+   ],
+   "text": "Baseball Club Application",
+   "font": "ttf:times-bold:10:0:0.9:0.0",
+   "copy": [
+    7,
+    0,
+    0,
+    21,
+    9
+   ],
+   "style": "lo_b_photo_form_title@7",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 2,
+   "rect": [
+    80,
+    112,
+    104,
+    128
+   ],
+   "text": "/",
+   "font": "ttf:tahoma:10:0:1.0:0.3",
+   "copy": [
+    2,
+    80,
+    112,
+    104,
+    128
+   ],
+   "style": "lo_b_photo_form_year@2",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 6,
+   "rect": [
+    80,
+    0,
+    104,
+    5
+   ],
+   "text": "/",
+   "font": "ttf:tahoma:10:0:1.0:0.3",
+   "copy": [
+    6,
+    80,
+    0,
+    104,
+    5
+   ],
+   "style": "lo_b_photo_form_year@6",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 5,
+   "rect": [
+    80,
+    2,
+    124,
+    24
+   ],
+   "text": "Date",
+   "font": "ttf:tahoma:7:0:1.0:0.2",
+   "copy": [
+    5,
+    80,
+    2,
+    124,
+    24
+   ],
+   "style": "lo_b_photo_form_date@5",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 5,
+   "rect": [
+    84,
+    22,
+    128,
+    52
+   ],
+   "text": "Name",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    5,
+    84,
+    22,
+    128,
+    52
+   ],
+   "style": "lo_b_photo_form_name@5",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 6,
+   "rect": [
+    0,
+    22,
+    2,
+    52
+   ],
+   "text": "Name",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    6,
+    0,
+    22,
+    2,
+    52
+   ],
+   "style": "lo_b_photo_form_name@6",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 5,
+   "rect": [
+    102,
+    75,
+    128,
+    110
+   ],
+   "text": "Hand",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    5,
+    102,
+    75,
+    128,
+    110
+   ],
+   "style": "lo_b_photo_form_hand@5",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 6,
+   "rect": [
+    0,
+    75,
+    34,
+    110
+   ],
+   "text": "Hand",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    6,
+    0,
+    75,
+    34,
+    110
+   ],
+   "style": "lo_b_photo_form_hand@6",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 5,
+   "rect": [
+    104,
+    108,
+    128,
+    128
+   ],
+   "text": "Position",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    5,
+    104,
+    108,
+    128,
+    128
+   ],
+   "style": "lo_b_photo_form_pos@5",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 6,
+   "rect": [
+    0,
+    108,
+    44,
+    128
+   ],
+   "text": "Position",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    6,
+    0,
+    108,
+    44,
+    128
+   ],
+   "style": "lo_b_photo_form_pos@6",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 9,
+   "rect": [
+    104,
+    0,
+    128,
+    14
+   ],
+   "text": "Position",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    9,
+    104,
+    0,
+    128,
+    14
+   ],
+   "style": "lo_b_photo_form_pos@9",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 10,
+   "rect": [
+    0,
+    0,
+    44,
+    14
+   ],
+   "text": "Position",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    10,
+    0,
+    0,
+    44,
+    14
+   ],
+   "style": "lo_b_photo_form_pos@10",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 9,
+   "rect": [
+    114,
+    12,
+    128,
+    49
+   ],
+   "text": "Form",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    9,
+    114,
+    12,
+    128,
+    49
+   ],
+   "style": "lo_b_photo_form_form@9",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 10,
+   "rect": [
+    0,
+    12,
+    56,
+    49
+   ],
+   "text": "Form",
+   "font": "ttf:tahoma:10:0:1.0:0.2",
+   "copy": [
+    10,
+    0,
+    12,
+    56,
+    49
+   ],
+   "style": "lo_b_photo_form_form@10",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 9,
+   "rect": [
+    122,
+    40,
+    128,
+    76
+   ],
+   "text": "Notes",
+   "font": "ttf:tahoma:8:0:1.0:0.2",
+   "copy": [
+    9,
+    122,
+    40,
+    128,
+    76
+   ],
+   "style": "lo_b_photo_form_notes@9",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 10,
+   "rect": [
+    0,
+    40,
+    80,
+    76
+   ],
+   "text": "Notes",
+   "font": "ttf:tahoma:8:0:1.0:0.2",
+   "copy": [
+    10,
+    0,
+    40,
+    80,
+    76
+   ],
+   "style": "lo_b_photo_form_notes@10",
+   "name": "lo_b form"
+  },
+  {
+   "bank": "y5_make_bg_opd",
+   "page": 11,
+   "rect": [
+    64,
+    40,
+    128,
+    114
+   ],
+   "text": "Photo\nHere",
+   "font": "ttf:tahoma:12:0:1.0:0.3",
+   "copy": [
+    11,
+    64,
+    40,
+    128,
+    114
+   ],
+   "style": "lo_b_photo_form_photo@11",
+   "name": "lo_b form"
   }
  ]
 }
