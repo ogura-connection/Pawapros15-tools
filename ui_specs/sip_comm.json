@@ -70,7 +70,7 @@
      "layers": 2,
      "style": "sip_card",
      "text": "Offense",
-     "font": "ttf:black:14:0.2:0.85:0.35",
+     "font": "ttf:black:16:0.2:0.8:0.4",
      "baseline": 27
     },
     {
@@ -78,7 +78,7 @@
      "layers": 2,
      "style": "sip_card",
      "text": "Defense",
-     "font": "ttf:black:14:0.2:0.85:0.35",
+     "font": "ttf:black:16:0.2:0.8:0.4",
      "baseline": 27
     },
     {
@@ -89,9 +89,9 @@
       "No Outs,",
       "1st"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 11
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 12
     },
     {
      "sprite": "15",
@@ -101,9 +101,9 @@
       "No Outs,",
       "2nd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 11
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 12
     },
     {
      "sprite": "16",
@@ -113,9 +113,9 @@
       "No Outs,",
       "3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 11
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 12
     },
     {
      "sprite": "17",
@@ -125,9 +125,9 @@
       "No Outs,",
       "Loaded"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 11
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 12
     },
     {
      "sprite": "18",
@@ -137,9 +137,9 @@
       "No Outs,",
       "1st & 2nd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 11
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 12
     },
     {
      "sprite": "19",
@@ -149,9 +149,9 @@
       "No Outs,",
       "1st & 3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 11
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 12
     },
     {
      "sprite": "1a",
@@ -161,9 +161,9 @@
       "No Outs,",
       "2nd & 3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 11
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 12
     },
     {
      "sprite": "1b",
@@ -173,9 +173,9 @@
       "No Outs,",
       "Empty"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 11
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 12
     },
     {
      "sprite": "1c",
@@ -185,9 +185,9 @@
       "1 Out,",
       "1st"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "1d",
@@ -197,9 +197,9 @@
       "1 Out,",
       "2nd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "1e",
@@ -209,9 +209,9 @@
       "1 Out,",
       "3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "1f",
@@ -221,9 +221,9 @@
       "1 Out,",
       "Loaded"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 13
     },
     {
      "sprite": "20",
@@ -233,9 +233,9 @@
       "1 Out,",
       "1st & 2nd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "21",
@@ -245,9 +245,9 @@
       "1 Out,",
       "1st & 3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "22",
@@ -257,9 +257,9 @@
       "1 Out,",
       "2nd & 3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "23",
@@ -269,9 +269,9 @@
       "1 Out,",
       "Empty"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 13
     },
     {
      "sprite": "24",
@@ -281,9 +281,9 @@
       "2 Outs,",
       "1st"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "25",
@@ -293,9 +293,9 @@
       "2 Outs,",
       "2nd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "26",
@@ -305,9 +305,9 @@
       "2 Outs,",
       "3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "27",
@@ -317,9 +317,9 @@
       "2 Outs,",
       "Loaded"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 13
     },
     {
      "sprite": "28",
@@ -329,9 +329,9 @@
       "2 Outs,",
       "1st & 2nd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "29",
@@ -341,9 +341,9 @@
       "2 Outs,",
       "1st & 3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "2a",
@@ -353,9 +353,9 @@
       "2 Outs,",
       "2nd & 3rd"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 14
     },
     {
      "sprite": "2b",
@@ -365,9 +365,9 @@
       "2 Outs,",
       "Empty"
      ],
-     "gap": 3,
-     "font": "ttf:black:10:0.2:0.9:0.3",
-     "baseline": 12
+     "gap": 4,
+     "font": "ttf:sans-italic:13:0.0:0.82:0.4",
+     "baseline": 13
     }
    ]
   }
