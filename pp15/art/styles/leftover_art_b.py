@@ -159,6 +159,9 @@ def _label_mask(lab, rgb, X0, Y0):
     for x0, y0, x1, y1 in lab.get("erase", ()):
         whole |= (xs >= x0) & (xs < x1) & (ys >= y0) & (ys < y1)
     mode = lab.get("mode", "dark")
+    if mode == "key" and inside.any():              # lettering of known colours (fill, outline): those pixels, grown
+        d = np.min([np.sqrt(((rgb - _hex(k)) ** 2).sum(-1)) for k in lab["keys"]], axis=0)
+        return (_grow(inside & (d < lab.get("tol", 60)), lab.get("halo", 3)) & _grow(inside, 2)) | whole
     if mode not in ("dark", "light") or not inside.any():
         return inside | whole
     lum = rgb @ np.array([0.3, 0.59, 0.11])
@@ -360,6 +363,18 @@ PHOTO = {
     "mag_h2": dict(picture="magazine", text="The Pros' 10 Rules", font="ttf:rounded:15:0:0.8:0.3", centre=(153, 136),
                    angle=-13.0, mode="all", fill="membrane", colour="#9cffff", rings=["#3171b4", "#3171b4"], levels=3,
                    wipe=[(-84, -21, 84, 20), (-30, 20, 92, 34)], box=(60, 92, 252, 168)),   # プロの十箇条 (and the cut-off line under it)
+    # sct_main.arc n4_bg_newspaper: the sports papers (Eikan Nine story picture); the upright headlines read top to foot
+    "np_head": dict(picture="newspaper", text="BASEBALL", font="ttf:rounded:26:0:0.8:0.3", centre=(232, 84), angle=69.5,
+                    mode="key", keys=["#ffff00", "#e60020", "#f08010", "#eeff41"], tol=70, halo=3, fill="membrane",
+                    colour="#ffff00", rings=["#e60020", "#e60020", "#f6f6f6"], levels=3,
+                    wipe=[(-110, -36, 110, 36)], box=(176, 0, 300, 168)),             # 球界情報
+    "np_flash": dict(picture="newspaper", text="BREAKING", font="ttf:rounded:24:0:0.8:0.3", centre=(300, 88), angle=72.0,
+                     mode="key", keys=["#eeff41", "#d50018", "#e08020"], tol=70, halo=3, fill="membrane",
+                     colour="#eeff41", rings=["#d50018", "#d50018", "#f6f6f6"], levels=3,
+                     wipe=[(-80, -38, 80, 38)], box=(250, 10, 352, 168)),            # 速報
+    "np_band": dict(picture="newspaper", text="Insider Talk!", font="ttf:tahoma-bold:9:0:1.0:0.0", centre=(45, 22),
+                    angle=-20.0, mode="all", fill="along", colour="#f6f6f6",
+                    wipe=[(-90, -15, 90, 9)], box=(0, 0, 140, 56)),                   # 界情報通に聞く！ (and the line under it)
 }
 
 for _name in PHOTO:

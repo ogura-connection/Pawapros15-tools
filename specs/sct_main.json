@@ -1852,6 +1852,216 @@
    ],
    "style": "lo_b_photo_mag_h2@4",
    "name": "lo_b magazine"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 1,
+   "rect": [
+    48,
+    0,
+    128,
+    128
+   ],
+   "text": "BASEBALL",
+   "font": "ttf:rounded:26:0:0.8:0.3",
+   "copy": [
+    1,
+    48,
+    0,
+    128,
+    128
+   ],
+   "style": "lo_b_photo_np_head@1",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 2,
+   "rect": [
+    0,
+    0,
+    44,
+    128
+   ],
+   "text": "BASEBALL",
+   "font": "ttf:rounded:26:0:0.8:0.3",
+   "copy": [
+    2,
+    0,
+    0,
+    44,
+    128
+   ],
+   "style": "lo_b_photo_np_head@2",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 3,
+   "rect": [
+    48,
+    40,
+    128,
+    80
+   ],
+   "text": "BASEBALL",
+   "font": "ttf:rounded:26:0:0.8:0.3",
+   "copy": [
+    3,
+    48,
+    40,
+    128,
+    80
+   ],
+   "style": "lo_b_photo_np_head@4",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 3,
+   "rect": [
+    0,
+    80,
+    44,
+    120
+   ],
+   "text": "BASEBALL",
+   "font": "ttf:rounded:26:0:0.8:0.3",
+   "copy": [
+    3,
+    0,
+    80,
+    44,
+    120
+   ],
+   "style": "lo_b_photo_np_head@5",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 1,
+   "rect": [
+    122,
+    10,
+    128,
+    128
+   ],
+   "text": "BREAKING",
+   "font": "ttf:rounded:24:0:0.8:0.3",
+   "copy": [
+    1,
+    122,
+    10,
+    128,
+    128
+   ],
+   "style": "lo_b_photo_np_flash@1",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 2,
+   "rect": [
+    0,
+    10,
+    96,
+    128
+   ],
+   "text": "BREAKING",
+   "font": "ttf:rounded:24:0:0.8:0.3",
+   "copy": [
+    2,
+    0,
+    10,
+    96,
+    128
+   ],
+   "style": "lo_b_photo_np_flash@2",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 3,
+   "rect": [
+    122,
+    40,
+    128,
+    80
+   ],
+   "text": "BREAKING",
+   "font": "ttf:rounded:24:0:0.8:0.3",
+   "copy": [
+    3,
+    122,
+    40,
+    128,
+    80
+   ],
+   "style": "lo_b_photo_np_flash@4",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 3,
+   "rect": [
+    0,
+    80,
+    96,
+    120
+   ],
+   "text": "BREAKING",
+   "font": "ttf:rounded:24:0:0.8:0.3",
+   "copy": [
+    3,
+    0,
+    80,
+    96,
+    120
+   ],
+   "style": "lo_b_photo_np_flash@5",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 0,
+   "rect": [
+    0,
+    0,
+    128,
+    56
+   ],
+   "text": "Insider Talk!",
+   "font": "ttf:tahoma-bold:9:0:1.0:0.0",
+   "copy": [
+    0,
+    0,
+    0,
+    128,
+    56
+   ],
+   "style": "lo_b_photo_np_band@0",
+   "name": "lo_b newspaper"
+  },
+  {
+   "bank": "n4_bg_newspaper",
+   "page": 1,
+   "rect": [
+    0,
+    0,
+    12,
+    56
+   ],
+   "text": "Insider Talk!",
+   "font": "ttf:tahoma-bold:9:0:1.0:0.0",
+   "copy": [
+    1,
+    0,
+    0,
+    12,
+    56
+   ],
+   "style": "lo_b_photo_np_band@1",
+   "name": "lo_b newspaper"
   }
  ]
 }
