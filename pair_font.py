@@ -39,6 +39,7 @@ SMALL = {"adv": 8, "base": 14, "cap": 11.5, "ink_w": 7.0}
 # "Ho" lost its right edge ("Hc"). Names that the score bug shows (the school and team names of sct_main.rel) use
 # their own glyph slots, key NARROW + pair, with the two letters inside the first 17 columns.
 NARROW = "\x02"
+NARROW_CELLS = 4        # the score bug shows four cells of a name (8 letters)
 NARROW_LARGE = {"adv": 8, "base": 22, "cap": 17.0, "ink_w": 7.2}
 NARROW_SMALL = {"adv": 6.5, "base": 14, "cap": 11.5, "ink_w": 5.6}
 FONTS = (("small", 0x000000, SMALL), ("large", 0x05DF64, LARGE))

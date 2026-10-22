@@ -132,12 +132,13 @@ DOL_END = 0xFFFF       # closes a dialog string of main.dol, and fills the space
 def encode_text(text, slots, narrow=False):
     """String -> list of 12-bit units. slots = {letter pair: glyph index}. narrow: the pairs of the score-bug
     names (pair_font.NARROW)"""
-    units = []
+    units, n = [], 0
     for kind, value in pair_font.text_segments(text):
         if kind == "newline":
             units.append(S.TEXT_NEWLINE)
         elif kind == "pair":
-            units.append(0 if value == "  " else slots[(pair_font.NARROW if narrow else "") + value])
+            n += 1
+            units.append(0 if value == "  " else slots[(pair_font.NARROW if narrow and n <= pair_font.NARROW_CELLS else "") + value])
         else:
             g = char_to_glyph(value)
             if g is None:
@@ -820,10 +821,13 @@ def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None, na
     """Choose a glyph slot for every letter pair in the translation. Returns {pair: glyph index}.
     dol = load_dol(): the dialog strings of main.dol with their English. names = surnames in English."""
     pairs, usage = set(), collections.Counter()
-    for en in narrow:                           # score-bug names: their own slots (pair_font.NARROW)
+    for en in narrow:                           # score-bug names: their own slots (pair_font.NARROW), first cells only
+        n = 0
         for kind, value in pair_font.text_segments(en):
-            if kind == "pair" and value != "  ":
-                pairs.add(pair_font.NARROW + value)
+            if kind == "pair":
+                n += 1
+                if value != "  ":
+                    pairs.add((pair_font.NARROW if n <= pair_font.NARROW_CELLS else "") + value)
     for en in names:                            # one name per field: pairs from its first letter
         for kind, value in pair_font.text_segments(en):
             if kind == "pair" and value != "  ":
