@@ -130,7 +130,7 @@ Still Japanese in these two files: the first-team / second-team banners and tags
 
 **Shop and item list (2026-10-13).** `specs/scs_item.json`, written by `_work/ui_pages/gen_item_spec.py`: 17 labels of bank `z3_shp_0` in `scs_item.arc` (six tabs, the two Shop titles, Money, the Info hint, Cancel, the `x1 Buy` / `x3 Own` tags, Sold Out!, three larger tabs), the two plates Bought / Owned, and 22 gear names of bank `m4_item1`. A texture dump in the shop matched pages 0-6 and 8 of `z3_shp_0` (page 7 is the "bargain" picture). The item list (Items > List) and the pop-up of the Equip page are not in that file: their tabs and headers (消費アイテム, その他, 装備中, アイテムリスト) are bank `z3_itw_0` of `scs_main.arc`, now a group of `specs/scs_main.json` written by the same generator.
 
-- The shop opens in the Items submenu from November of year 1; nothing offers it in week 1. `dolphin-test/to_command_menu.py resume shop` continues from a save made there (`nand_backup_shop/`). The tabs of the shop and of the item list turn with the D-pad alone (`harness.dpad`).
+- The shop opens in the Items submenu from November of year 1; nothing offers it in week 1. `emulator/to_command_menu.py resume shop` continues from a save made there (`nand_backup_shop/`). The tabs of the shop and of the item list turn with the D-pad alone (`harness.dpad`).
 - Lettering baked into a plate (購入済, 取得済): `"paint"` takes `"copy"` (the same plate with nothing on it, from the original file) and `"style"`.
 - New styles in `pp15/art/typeset.py`: `shoptab`, `shopmoney`, `shopcancel`, `shoptag`, `shophint` (`boxed`: white on a black box), `shoptitle` and `shopsold` (`logo`: gradient letters, outline, white band, rim, cast shadow), `gear`, `itemtab`.
 - A tab of the shop is about 60 pixels wide and the Cancel button 40: the icon tabs are set 11 pixels high at 0.9 width, Cancel 9 pixels high.
@@ -157,7 +157,7 @@ Still Japanese in these two files: the first-team / second-team banners and tags
   - `scs_data.arc`: the 1軍 / 2軍 banners and tags (`z3_dtn_0` pages 6 and 7, gradient italic lettering), 日本一 (`z4_dtj_0` page 5), 一級 / 二級 / 三級 and 継 / 主 (not located on a sheet yet).
 - Seen while playing on and still Japanese, from other files: the practice result screen (スタミナUP, the point letters 筋 敏 技 変 精), the result lines 疲れがたまった / やる気がなくなった / 15000円消費した, and the パワプロ15 strip of the month change (a logo: stays).
 
-Testing: a save state keeps the textures it had loaded, so a state taken inside Success Mode shows old labels. The fast loop is an in-game save instead: `dolphin-test/to_command_menu.py resume` loads the main-menu state, enters Success Mode and continues from a save made at the command menu, so every file is read again. About 35 seconds with `harness.py start --speed 0` (no speed limit). Resuming rewrites the save, so the script restores a copy first. `to_command_menu.py new` plays a new game up to the menu (about 2 minutes).
+Testing: a save state keeps the textures it had loaded, so a state taken inside Success Mode shows old labels. The fast loop is an in-game save instead: `emulator/to_command_menu.py resume` loads the main-menu state, enters Success Mode and continues from a save made at the command menu, so every file is read again. About 35 seconds with `harness.py start --speed 0` (no speed limit). Resuming rewrites the save, so the script restores a copy first. `to_command_menu.py new` plays a new game up to the menu (about 2 minutes).
 
 Tested in Dolphin this way: HUD, command bar, Free Time and Items submenus, forecast pop-up, rank plate, practice menu, one work turn. Not tested: the fielder stat labels (the test player is a pitcher), pitch names other than Fastball, Kakaricho/Kacho plates, Fired Up!, Hospital / Date / Game / Treat / Shop / Jobs (not reachable in week 1).
 
@@ -290,13 +290,13 @@ session with one Sonnet agent per batch of about 430 runs, six at a time (95 bat
 - Sizes after the build: `scs_main.rel` script +18 KB (356 KB of room left with the scenario slot moved),
   `scs_sce2.rel` +3 KB, `scs_sce3.rel` +7 KB; 1,614 letter pairs, 1,424 kanji slots left.
 - 17 warnings remain in `pp15 merge-script`, all in debug menus and lookup lists that the checker reads as one line.
-- **Seen in play (2026-10-13, later).** Scenario 1 was played by itself from year 1 September to its ending (`dolphin-test/autoplay.py`, about 50 minutes at 4x) and the 3,900 frames were read as text (`dolphin-test/ocr/`, the Mac's Vision text recognition; 1,000 frames become about 700 lines). The dialogue reads well; what was wrong was always a sentence the game puts together from pieces of different scenes, which no check of a single scene can see:
+- **Seen in play (2026-10-13, later).** Scenario 1 was played by itself from year 1 September to its ending (`emulator/autoplay.py`, about 50 minutes at 4x) and the 3,900 frames were read as text (`emulator/ocr/`, the Mac's Vision text recognition; 1,000 frames become about 700 lines). The dialogue reads well; what was wrong was always a sentence the game puts together from pieces of different scenes, which no check of a single scene can see:
   - too long once assembled (`Breaking Ball Points` + ` went up a little.`, `After that, I` + an ending, a name + ` is someone you just met.`). A speech window wraps in the middle of the word; a window of type 29 or 30 also **drops the cell after the wrap** ("lit" / "e."). Cure: a shorter ending (` rose a bit.`), or `\n` at the start of the second piece.
   - a subject and an ending that both carry the space or neither does (`I` + `, faced `, `rain` + `practicing away,`).
   - a piece the translator could not know the context of ("I'm" + team name: "I'm Pawafuru Corp.").
   About 45 lines were corrected with `pp15 script set`. Left as it is: after an inserted name or term with an odd number of letters, a piece starting with `'s` or a comma shows half a cell of space ("Reito-san 's rating"), because a run is padded to whole cells.
 - A scenario counts as cleared only when the player is drafted. Played by A presses alone the run ends in the bad ending (not drafted; the run is erased), so scenarios 2 and 3 stay locked. When the player is the starting pitcher the whole game is played by hand: the control settings of the タイム menu (打撃 走塁 投球 守備 監督) are fixed to Manual in Success Mode, nobody fields, and one game took 25 minutes and 59 runs.
-- **Opening scenarios 2 and 3 for testing (2026-10-13).** The scenario card that follows "Start from the beginning" is drawn by `scs_titl.rel`. Its routine at sec1+0x56BC sets the byte `work_scs.rel` sec6+0x60AA1 (memory 0x8065FA81, the number of scenarios the card offers): 1, plus 1 if byte 0x25 of a structure is set, plus 1 if byte 0x26 is set, and it leaves the byte alone when it is already 3. A memory code that keeps it at 3 makes the card show its left / right arrows and all three scenarios start. In `dolphin-test/GameSettings/RP5JA4.ini` (Gecko; the first line checks that `work_scs.rel` is loaded, so nothing is written in other modes):
+- **Opening scenarios 2 and 3 for testing (2026-10-13).** The scenario card that follows "Start from the beginning" is drawn by `scs_titl.rel`. Its routine at sec1+0x56BC sets the byte `work_scs.rel` sec6+0x60AA1 (memory 0x8065FA81, the number of scenarios the card offers): 1, plus 1 if byte 0x25 of a structure is set, plus 1 if byte 0x26 is set, and it leaves the byte alone when it is already 3. A memory code that keeps it at 3 makes the card show its left / right arrows and all three scenarios start. In `emulator/GameSettings/RP5JA4.ini` (Gecko; the first line checks that `work_scs.rel` is loaded, so nothing is written in other modes):
   ```
   205DDB8C 9421FFF0
   0065FA81 00000003
@@ -313,7 +313,7 @@ session with one Sonnet agent per batch of about 430 runs, six at a time (95 bat
 - Still Japanese around the dialogue: the letterbox narration before name entry, the name entry and profile
   screens (handedness, position, forms, face, difficulty), the overwrite warning of New Game, the mode-select
   screens, and the names the player types.
-- A fielder save exists now: `dolphin-test/nand_backup_fielder` (outfielder, year 1 September week 1).
+- A fielder save exists now: `emulator/nand_backup_fielder` (outfielder, year 1 September week 1).
   `to_command_menu.py resume fielder` continues from it. Seen with it: the plate `Position: Outfield` and the
   seven fielder stat labels on the main screen.
 - New Game with a save present: at the Success title UP, A; at the overwrite warning UP, A (the default is
@@ -470,7 +470,7 @@ Frames of every one were read as contact sheets:
 - **Labels**: jumps name a label by number. The table (sec5+173464, 1,852 entries) is filled by the module's own relocations, and nothing else points into the script: the 613 code relocations into the area all go to three **islands** of other data that lie between the scenes (sec5+187254..189808, 228090..229016, 779308..780240: tables with relocations of their own, debug strings). The islands stay where they are. Behind the script: other data to 807216, then a table of romanised names (16-bit letters, 1 = A) with its own pointer table at sec5+808964.
 - **No room, so an annex.** In the memory plan `orepena.rel` ends exactly where the next modules start, and the padding in front of its labels is only 2.8 KB for 245 KB of text. The build lays each stretch between two islands out again in place and moves the scenes that do not fit to an **annex behind the data of `ore_work.rel`**, which it then loads at 0x81400000, in the free memory above the plan (the scenario modules of Success use the lower part of that area). A label of a moved scene is filled by a relocation against `main.dol`, which is an absolute address; such relocations lie behind `fixSize` like the module's own, so `orepena.rel` needs the same memory and keeps its file size. The annex starts with `OREX` and its own address, so a built file can be read back without the plan (`OreScript` appends the annex to the section's halfwords). `pp15.build.ore_script.emit_ore`, `ore_relocations`, `update_plan_ore`; the verification compares instructions, labels, text and every relocation as for the other scripts.
 - Tested offline (written files read back): unchanged text, every run one and six units longer (24 KB and 158 KB in the annex, 50 and 272 labels moved), every run halved.
-- **Built and seen in game (2026-10-13)** with the first 9 batches (4,637 of 17,695 runs; 1,933 pieces stay in place, 720 bytes and 2 labels are in the annex, `ore_work.rel` at 0x81400000..0x81434F78): a new My Life from its title through team choice, name entry and the settings into the signing scene and the first spring camp, about 180 key presses, no fault. English scenes play between the Japanese ones (camp opening, the manager's team policy with its coloured span, practice results, "My Spirit went up!"); three lines of 34 letters fit the box. Frames: `dolphin-test/looks/mylife/`, `looks/mylife_english.jpg`. Which scenes are the two in the annex was not looked up, so the annex itself is proven by the build's checks and by the module running at its new address, not by a scene seen from it.
+- **Built and seen in game (2026-10-13)** with the first 9 batches (4,637 of 17,695 runs; 1,933 pieces stay in place, 720 bytes and 2 labels are in the annex, `ore_work.rel` at 0x81400000..0x81434F78): a new My Life from its title through team choice, name entry and the settings into the signing scene and the first spring camp, about 180 key presses, no fault. English scenes play between the Japanese ones (camp opening, the manager's team policy with its coloured span, practice results, "My Spirit went up!"); three lines of 34 letters fit the box. Frames: `emulator/looks/mylife/`, `looks/mylife_english.jpg`. Which scenes are the two in the annex was not looked up, so the annex itself is proven by the build's checks and by the module running at its new address, not by a scene seen from it.
 - Seen to fix later: an inserted practice name is padded to a fixed width, so "Weight training" + " done!" shows a wide gap; Japanese lines not yet translated show letter pairs in place of some kanji ("Gntsの名に").
 - Four "menu strings" of `orepena.rel` translated in the sixth session (sec5+343716, 539938, 540188, 541840: `All`, ` box` three times) were packed script text read as 16-bit strings; they overwrote script bytes in the builds since then. Removed from `translation/strings/orepena.rel.tsv`; the build now stops when a string lies inside the script.
 - `verify_dol` skips its "same size, only addends differ" test for the two My Life modules (their relocations are compared as a set in `verify`) and pairs their `main.dol` relocations by position.
@@ -514,7 +514,7 @@ debug menus whose Japanese breaks the same limits).
 
 ## Art survey: every sprite page read by machine (2026-10-13, seventh session)
 
-`_work/ui_pages/tools/art_survey.py` renders every page of every `.arc` (each palette its sprite parts use, 3 at most), 4x, and reads it with the Mac's text recognition in Japanese (`dolphin-test/ocr/ocr ja-JP en-US`; the helper takes the languages as arguments now). 15 minutes for everything. Results in `_work/art_survey/`: `pages_text.tsv` (page, Japanese read, other text), `banks_japanese.tsv` (the work list: mode, file, bank, pages, boxes, sample).
+`_work/ui_pages/tools/art_survey.py` renders every page of every `.arc` (each palette its sprite parts use, 3 at most), 4x, and reads it with the Mac's text recognition in Japanese (`emulator/ocr/ocr ja-JP en-US`; the helper takes the languages as arguments now). 15 minutes for everything. Results in `_work/art_survey/`: `pages_text.tsv` (page, Japanese read, other text), `banks_japanese.tsv` (the work list: mode, file, bank, pages, boxes, sample).
 
 | Mode (by file name) | Pages | With Japanese | Text boxes | Banks |
 |---|---|---|---|---|
@@ -535,7 +535,7 @@ Without the staff roll and the online screens: **about 2,085 pages, 7,500 text b
 
 ## Main menu and the Success start screens: where the art is (2026-10-13)
 
-Found with a texture dump taken screen by screen (`dolphin-test/looks/first/steps.py`: keys, one screenshot, the list of textures new since the last step) and `_work/ui_pages/tools/match_all.py` (dumped textures against all pages of all files at once; the decoded pages are cached).
+Found with a texture dump taken screen by screen (`emulator/looks/first/steps.py`: keys, one screenshot, the list of textures new since the last step) and `_work/ui_pages/tools/match_all.py` (dumped textures against all pages of all files at once; the decoded pages are cached).
 
 - **Main menu**: not in an `.arc`. `SMDL_TOP.rom` holds four 256x256 textures, 8 bits per pixel (GX C8, 8x4 tiles), stored plain, each right behind its 512-byte RGB5A3 palette: palettes at 6176, 93920, 160640 and 239328, pixels 512 bytes later. They decode to exactly the dumped textures. Texture at 93920: the blue button plates and ペナント サクセス 野球教室 アレンジ; 160640: the orange plates, サウンド (stored turned by 90 degrees) and リモパワ; 239328: 対戦 マイライフ ホームラン競争 応援曲 and the game logo; 6176: データあれこれ (turned) and the background. The other `.rom` files were not surveyed: `SMDL_*.rom` are probably the same kind of menu art for other modes. **English since 2026-10-13**: `_work/menu/make_menu.py --write` reads the colours of each Japanese word (fill from top to foot, the darker side, outline, white band, blue rim, shadow), sets the English word in Arial Rounded Bold with the same layers, centres it on the Japanese word's box and maps it to the texture's own 256 colours; the two sideways words are set upright and turned back. Seen in game on the plain and the selected plate.
 - MLB Power Pros and MLB 2008 have their menu words in `env_mainmenu.pack` (`MLB*/_scan/tex/env_mainmenu.png`): Exhibition, Success, Home Run, Arrange, Practice, My Data, Wii Remote, Season, MLB Life, League, Shop, Display Style, Baseball Cards, in a metallic small-caps style.
@@ -553,7 +553,7 @@ Three files, each with a generator in `_work/ui_pages/` that writes its spec (`g
 - **`scs_make.arc`**: the profile screens (`y5_cmk_0`: five headings, Is this OK?, six handedness lines, seven positions, four pitching and eight batting forms, Yes / No) and the difficulty screen (`y5_nan_0`: the heading, Normal, Rookie). Left: `L・Rで視点変更` and `⊖で視点変更` (sprites 36 and 45), the two subtitles painted on the difficulty plates (〜 いつものサクセス 〜, 〜 初めて遊ぶ人でも安心 〜), the application form (`y5_cmc_0`, `y5_make_bg_opd`).
 - **`namein.arc`** (`s3_nam`): six headings (Enter a name / a song title / a tourney name / a school name / the cap mark / a nickname) and the eight button words (Cancel, Kana, Kata, ABC, Kanji, Symbol, Delete, OK). Left: 選択タイプ音声あり (sprite 1c).
 
-**Seen in game** (`dolphin-test/looks/first/walk.py` walks the screens, frames in `looks/first/walk/`): the Success screen (Start, My Players, Linked World, Registered / Pit. / Fld. with the counts), the title (New Game, Continue, Players, Cleared), the overwrite warning with both answers and the team plate Pawafuru Corp., name entry (heading and the seven buttons shown), the five profile screens with all their lists, Is this OK? Yes / No, the difficulty screen. Not seen: Album, Turned Pro and the Eikan side, the other five name headings, Cancel, Kagurazaka Group, Otori Phoenix, the batting form list, L / R: Turn View, Ending Movie. The "Enter a name" heading is small on its wide plate (capitals 13 pixels): room to grow.
+**Seen in game** (`emulator/looks/first/walk.py` walks the screens, frames in `looks/first/walk/`): the Success screen (Start, My Players, Linked World, Registered / Pit. / Fld. with the counts), the title (New Game, Continue, Players, Cleared), the overwrite warning with both answers and the team plate Pawafuru Corp., name entry (heading and the seven buttons shown), the five profile screens with all their lists, Is this OK? Yes / No, the difficulty screen. Not seen: Album, Turned Pro and the Eikan side, the other five name headings, Cancel, Kagurazaka Group, Otori Phoenix, the batting form list, L / R: Turn View, Ending Movie. The "Enter a name" heading is small on its wide plate (capitals 13 pixels): room to grow.
 
 **The Success screen draws a copy.** `scc_tops.arc` holds the same six pages and the same sprite table as `y5_scs_tit_0` of `scs_titl.arc` (under the bank name `y5_tic_scc_h0_opd`, whose sprite table the bank reader does not attach to it); the mode-select screen uses that copy, the title uses `scs_titl.arc`. `_work/ui_pages/tools/mirror_bank.py scs_titl.arc y5_scs_tit_0 scc_tops.arc y5_tic_scc_h0_opd --write` copies the English pages and the moved sprite parts across (it checks that pages and table are the same bytes in the two originals). Run it again after every apply of `specs/scs_titl.json`. When a changed sheet still shows Japanese in game, search the other files for the original page before anything else.
 
@@ -594,7 +594,7 @@ then look (see "Next" below).
 - **Not located**: the score bug (inning 回表 and the count). `gameplay.arc` `h3_ap_ps2` (orange / navy plates,
   S and B letters, 244 sprites) is the likely bank, but its pages decode with wrong colours; needs a texture dump.
 
-**In game (22:05-22:20, applied, COM vs COM exhibition + a 1P game; dolphin-test/looks/match/):** STRIKE, BALL, FOUL,
+**In game (22:05-22:20, applied, COM vs COM exhibition + a 1P game; emulator/looks/match/):** STRIKE, BALL, FOUL,
 SAFE, CHANGE, WARMING UP seen, centred and crisp; every call page was among the loaded textures. Proven by the
 texture dump for what is still Japanese: score bug and batter / pitcher panels (率 本 打点, 防, 試合 勝 敗, 球, ポイント)
 = `gameplay.arc` `h3_ap_ps2`; inning 回 表 裏, 号, 飛距離 = `main_prg.arc` `h3_ulk_0`. **The pitch name shown after a
@@ -720,7 +720,7 @@ JIS, EUC, UTF-16, in the files and in memory) missed or was misread: one byte-pa
 dismissed because the code had been assumed to be the sprite order. What worked: the font's sprite data (`opd_h3_kyu_0_*`)
 found in a save state by the bytes of one part rectangle (km/h), then a search for 32-bit pointers to those
 sprites, which lands on the code -> sprite table; the names sit right behind it. Save states were taken by
-`dolphin-test/looks/pitchnames/catch2.py` at the moment a name is on screen.
+`emulator/looks/pitchnames/catch2.py` at the moment a name is on screen.
 
 `pp15/names/kyu.py` (list, check) and `translation/pitch_names.tsv`; the build lays the names out again in the
 212 bytes (shared tails) and rewrites the 26 addends; verify checks them. **The game draws 9 letters at
@@ -728,13 +728,13 @@ most** (9 sprite slots, 12 pixels apart: "DROP CURVE" showed as "DROP CURV"), an
 than a letter, so the long names are SLOWBALL, SLOWCURVE, DROPCURVE, KN-CURVE, H-SLIDER, H-SINKER, H-SHUUTO,
 C-CHANGE, MOVING-FB; "-" is drawn with the long-vowel bar. Seen in game (COM vs COM, two games, about 290
 pitches read): FASTBALL, 2-SEAMER, SLIDER, FORK, CURVE, SHUUTO, CUTTER, CHANGEUP, C-CHANGE
-(`dolphin-test/looks/pitchnames/`). Not seen: the pitch selector of a 1P game; the rarer names.
+(`emulator/looks/pitchnames/`). Not seen: the pitch selector of a 1P game; the rarer names.
 Original pitches keep the names the player typed (katakana); the font has A-Z, so English names
 can be typed there too.
 
 ## Match leftovers and the bench sheets (2026-10-14, twelfth session)
 
-**Seen in game (1P exhibition, dolphin-test/looks/match3/):**
+**Seen in game (1P exhibition, emulator/looks/match3/):**
 - **The pause button is +, but only while the game waits for the player's pitch** (the pitch selector is up). During
   the warm-up, a batter's turn or COM vs COM it does nothing, which is why it was "not found" before. It opens the
   pause menu (TIME call, Play / Score / Bullpen / Pitcher Data / Defense / Controller / Options / Audio / Replay /
@@ -793,7 +793,7 @@ announcer's own readings (each record's call id), so a kanji with several readin
   blank cell ("  Goto"): plates read cleanly (short names sit right of centre), text reads "Goto's", "Fujii's".
   Left: the chatter labels over the field drop the leading blank and spread two-cell names ("An  do").
 - Rosters made before the patch keep their kanji: Success team-mates live in the system save, so the test saves
-  still show kanji team-mates. A fresh Eikan Nine squad shows Latin names (dolphin-test/looks/eikan/).
+  still show kanji team-mates. A fresh Eikan Nine squad shows Latin names (emulator/looks/eikan/).
 
 ### Real players (same session; seen in game)
 - The 2008 rosters: 480 records in main_prg.rel sec5+0x68826.. of **six cells, then (a, b, call id)** (read with the
@@ -809,7 +809,7 @@ announcer's own readings (each record's call id), so a kanji with several readin
   kanji patterns stand for two English names (中島 Nakashima / Nakajima, 林 Hayashi / Lin): the roster record or
   a call id nearby decides. Copies in pn_ore_i.rel, pennant.rel and draft.rel are not real players (draft
   prospects and others with the same surnames): a later pass.
-- Seen: Giants vs Fighters, COM vs COM (dolphin-test/looks/players1): lineup screens, NEXT panel, batter and
+- Seen: Giants vs Fighters, COM vs COM (emulator/looks/players1): lineup screens, NEXT panel, batter and
   pitcher panels, fielder tags. Names of five or six cells are squeezed on the lineup plates (as long names were
   in Japanese) but readable.
 

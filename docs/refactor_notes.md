@@ -85,7 +85,7 @@ Run everything with `tests/run_all.sh` (about 20 seconds with the game data; the
 ## Outside the repository
 - Scratch scripts under `_work` (all `*.py`, `*.sh`, not only `ui_pages/`) had their imports and `python3 tl.py ...` style
   commands rewritten mechanically; `_work/ui_pages/README.txt` says they are historical. Several still set
-  `T = ~/Projects/Pawapuro/Pawapros15-tools` and write into that folder when run.
-- `~/Projects/translation-kit/probe_pp9_pp11/` (`setup.sh` copies `Pawapros15-tools/*.py`; `overlap.py`, `packed.py`, `c16.py`
+  `T = ~/Projects/Pawapuro/pp15/pp15-tools` and write into that folder when run.
+- `~/Projects/translation-kit/probe_pp9_pp11/` (`setup.sh` copies `pp15-tools/*.py`; `overlap.py`, `packed.py`, `c16.py`
   import `scan_story` / `pawapuro15_text_tools`) and the briefs under `agent-briefs/` still use the old names.
-- `~/Projects/Pawapuro/dolphin-test/harness.py` points at `Pawapros15-tools/DATA/sys/main.dol`; fine while the folder keeps its name.
+- `~/Projects/Pawapuro/pp15/emulator/harness.py` points at `pp15/data/DATA/sys/main.dol`; fine while the folder keeps its name.

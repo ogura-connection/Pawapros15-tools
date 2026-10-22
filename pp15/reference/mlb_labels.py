@@ -13,7 +13,7 @@ in at run time, or whose stored palette does not read, comes out as grey levels 
 tint it); both readings of a box are tried and the one that reads better is kept. Boxes in which nothing is read are
 not kept. Photos, faces, backgrounds, credits and runner portraits are skipped (SKIP).
 
-Needs the text-recognition helper dolphin-test/ocr/ocr (build it with `swiftc -O ocr.swift -o ocr`; macOS only).
+Needs the text-recognition helper emulator/ocr/ocr (build it with `swiftc -O ocr.swift -o ocr`; macOS only).
 The output is game art: keep it out of this repository.
 
 Public functions: grey, rgba, find_label_boxes, read_labels, main.

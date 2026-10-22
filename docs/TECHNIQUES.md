@@ -2,7 +2,7 @@
 
 What the Pawapuro 15 (Wii) patch had to solve, written so the next game can skip the search. Each entry:
 the problem, what worked, **how to spot the same situation in another game**, the traps, and the code
-(`T/` = `~/Projects/Pawapuro/Pawapros15-tools`, `D/` = `~/Projects/Pawapuro/dolphin-test`). The details and
+(`T/` = `~/Projects/Pawapuro/pp15/pp15-tools`, `D/` = `~/Projects/Pawapuro/pp15/emulator`). The details and
 numbers are in `T/FINDINGS.md`; this file is the general lesson of each.
 
 Contents: A. finding text, B. writing text back, C. the font (fitting English into a kanji font),

@@ -1,7 +1,7 @@
 # Translating a console game: the pipeline that worked for Pawapuro 15
 
-Each step names the Pawapuro file that does it (`T/` = `~/Projects/Pawapuro/Pawapros15-tools`, `D/` =
-`~/Projects/Pawapuro/dolphin-test`) and the traps that cost time. Steps 1 to 4 are reverse engineering and
+Each step names the Pawapuro file that does it (`T/` = `~/Projects/Pawapuro/pp15/pp15-tools`, `D/` =
+`~/Projects/Pawapuro/pp15/emulator`) and the traps that cost time. Steps 1 to 4 are reverse engineering and
 are different for every game; steps 5 to 9 are mostly the same everywhere. The techniques behind each step,
 and how to recognise when a new game needs them, are in `TECHNIQUES.md`.
 

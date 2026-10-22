@@ -1,6 +1,6 @@
 """Look inside a Dolphin save state: which game modules are loaded where, and how much memory holds data.
 
-    pp15 ram-scan STATE_FILE        e.g. <dolphin-test>/StateSaves/RP5JA4.s01 (config.EMU_DIR)
+    pp15 ram-scan STATE_FILE        e.g. <emulator>/StateSaves/RP5JA4.s01 (config.EMU_DIR)
 
 What it is for: the game loads its code modules (.rel files) into memory at addresses given by a "memory plan" (the
 file moduleID2addr.o, see FINDINGS.md). A Dolphin save state is a copy of the console's memory at one moment, so it
@@ -124,7 +124,7 @@ def print_memory_map(mem: bytes) -> None:
 def main(argv: Optional[List[str]] = None) -> None:
     """Run `pp15 ram-scan STATE`. `argv` defaults to sys.argv[1:]."""
     parser = argparse.ArgumentParser(prog="pp15 ram-scan", description=__doc__.split("\n\n")[0])
-    parser.add_argument("state", metavar="STATE", help="a Dolphin save state, e.g. <dolphin-test>/StateSaves/RP5JA4.s01")
+    parser.add_argument("state", metavar="STATE", help="a Dolphin save state, e.g. <emulator>/StateSaves/RP5JA4.s01")
     args = parser.parse_args(sys.argv[1:] if argv is None else argv)
     mem = read_mem1(args.state)
     os.makedirs(os.path.join(config.WORK_DIR, "ram"), exist_ok=True)

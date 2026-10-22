@@ -14,7 +14,7 @@ How each store of text was found and how the tools work: `FINDINGS.md`. Voices, 
 ## Repository map
 
 ```
-Pawapros15-tools/
+pp15-tools/
   README.md  FINDINGS.md  TECHNICAL_GUIDE.md  TRANSLATION_STYLE.md   what the project knows (read in this order)
   pyproject.toml   the `pp15` package and its command (`pip install -e .`, or run `python3 -m pp15` from this folder)
   pp15/            the code
@@ -78,7 +78,7 @@ the pair font (`pp15/build/font.py`: two Latin letters per kanji cell), checks e
 | `legacy/` | The first approach (in-place inserter, ASCII font patch, dialogue logger): superseded, kept for reference |
 
 The emulator test harness (`harness.py`, `autoplay.py`, text recognition of frames in `ocr/`) lives beside the
-repository in `../dolphin-test/`. The bulk-translation pipeline (batches, briefs, checkers, collect scripts)
+repository in `../emulator/`. The bulk-translation pipeline (batches, briefs, checkers, collect scripts)
 lives in `_work/tl_bulk/` because its batches hold game text.
 
 ## Reuse for other games
