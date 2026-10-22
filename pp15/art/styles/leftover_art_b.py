@@ -12,7 +12,7 @@ English letters turned and leaned like the paper, and hands back the pixels of o
 (index 0 = leave the pixel as it is). The paint entry that names the style gives the word ("text", "font"), its "rect"
 is that page piece and its "copy" is the same rectangle (the untouched pixels). See PHOTO for the labels.
 
-Used by: specs/sct_comd.json (group "lo_b gmp years"), specs/scs_main.json (group "lo_b gmoji"), specs/scs_make.json (paint entries named "lo_b form").
+Used by: specs/sct_comd.json (group "lo_b gmp years"), specs/scs_main.json (groups "lo_b gmoji", "lo_b fos"), specs/scs_make.json (paint entries named "lo_b form").
 """
 import functools
 
@@ -33,6 +33,10 @@ STYLES["lo_b_sfx_murmur"] = ringfill([1, 1, 1, 1, 1, 1], [15, 15])              
 STYLES["lo_b_sfx_rumble"] = ringfill([10, 9, 8, 6, 4, 3], [1, 1, 1, 15, 15])              # ゴ pink -> red, purple + white (pal 2)
 STYLES["lo_b_sfx_bam"] = ringfill([14, 13, 12, 10, 8, 6], [1, 1, 1, 15, 15])              # バーン yellow -> orange, red + white (pal 3)
 STYLES["lo_b_sfx_awkward"] = ringfill([13, 12, 10, 8, 6, 5], [1, 1, 1, 15, 15])           # しらー cyan -> blue, navy + white (pal 0)
+
+
+# ---- scs_main.arc z3_fos_0_opd: the small grey number font (dark letter 15, soft edge in the lighter greys 14 .. 2)
+STYLES["lo_b_pixfont"] = flat([0, 3, 6, 9, 12, 14, 15])
 
 
 # ---- photo lettering ------------------------------------------------------------------------------------------------------

@@ -2673,6 +2673,108 @@
     }
    ],
    "name": "lo_b gmoji"
+  },
+  {
+   "bank": "z3_fos_0_opd",
+   "palette": 0,
+   "style": "lo_b_pixfont",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     96,
+     32,
+     128,
+     64
+    ],
+    [
+     0,
+     0,
+     64,
+     16,
+     96
+    ],
+    [
+     0,
+     32,
+     64,
+     48,
+     96
+    ],
+    [
+     0,
+     64,
+     64,
+     80,
+     96
+    ],
+    [
+     0,
+     80,
+     64,
+     96,
+     96
+    ],
+    [
+     0,
+     96,
+     64,
+     112,
+     96
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "13",
+     "text": "/",
+     "style": "lo_b_pixfont",
+     "font": "ttf:c3reg:15:0.0:1.0:0.0",
+     "baseline": 22
+    },
+    {
+     "sprite": "14",
+     "text": "/",
+     "style": "lo_b_pixfont",
+     "font": "ttf:c3reg:15:0.0:1.0:0.0",
+     "baseline": 22
+    },
+    {
+     "sprite": "11",
+     "text": "yen",
+     "style": "lo_b_pixfont",
+     "font": "ttf:tahoma:9:0.0:1.0:0.0",
+     "baseline": 20
+    },
+    {
+     "sprite": "0e",
+     "text": "Pawa",
+     "style": "lo_b_pixfont",
+     "font": "ttf:tahoma:10:0.0:1.0:0.0",
+     "baseline": 20
+    },
+    {
+     "sprite": "0f",
+     "text": "Pa\nwa",
+     "style": "lo_b_pixfont",
+     "font": "ttf:tahoma:9:0.0:1.0:0.0",
+     "baseline": 21
+    },
+    {
+     "from": [
+      0,
+      96,
+      64,
+      112,
+      96
+     ],
+     "empty": true,
+     "sprites": [
+      "15"
+     ]
+    }
+   ],
+   "name": "lo_b fos"
   }
  ],
  "paint": [
