@@ -519,10 +519,15 @@ def test_translation_memory_helpers():
 
 def test_config_paths_follow_the_environment():
     code = "from pp15 import config; print(config.ROOT, config.DATA_FILES, config.KIT_TM_DIR)"
-    env = dict(os.environ, PP15_ROOT="/somewhere/repo", PP15_KIT="/somewhere/kit", PYTHONPATH=ROOT)
+    env = dict(os.environ, PP15_ROOT="/somewhere/game/repo", PP15_KIT="/somewhere/kit", PYTHONPATH=ROOT)
+    env.pop("PP15_DATA", None)
     out = subprocess.run([sys.executable, "-c", code], env=env, capture_output=True, text=True, check=True).stdout.split()
-    assert out[0] == "/somewhere/repo" and out[1] == "/somewhere/repo/DATA/files"
+    # the data folder defaults to <game folder>/data, a sibling of the repository
+    assert out[0] == "/somewhere/game/repo" and out[1] == "/somewhere/game/data/DATA/files"
     assert out[2] == "/somewhere/kit/pawapuro15-wii/tm"
+    env["PP15_DATA"] = "/big/disk/pp15"
+    out = subprocess.run([sys.executable, "-c", code], env=env, capture_output=True, text=True, check=True).stdout.split()
+    assert out[1] == "/big/disk/pp15/DATA/files"
 
 
 def test_every_command_names_a_module_that_exists_and_has_main():
