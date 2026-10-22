@@ -87,6 +87,7 @@
 5	99602	30	0	5e94	 with the club. Drills and effects vary by coach.
 5	99666	18	2	4128	Selecting this icon ends the
 5	99704	4	2	71c8	turn.
+5	99720	6	4	05f3	<Coaching>
 5	99758	42	0	c147	Practice while teaching teammates.    Drills and effects vary by coach.
 5	99872	18	2	4128	Selecting this icon ends the
 5	99910	4	2	71c8	turn.
@@ -151,6 +152,9 @@
 5	101302	16	0	b429	View your own records.
 5	101340	2	6	bfeb	1st
 5	101346	2	2	385f	2nd
+5	101432	5	4	dd16	<Records>
+5	101584	6	4	becf	<System>
+5	101824	7	4	71fa	<My Data>
 5	101862	17	0	814b	Your signing-day info in the
 5	101900	6	6	0190	Profile
 5	101912	12	0	9246	, your past events
@@ -182,6 +186,7 @@
 5	103064	15	0	9d11	Note: storage space for items
 5	103094	9	6	ac77	varies by home
 5	103124	4	4	76a8	<Skills>
+5	103240	4	4	6314	<Dojo>
 5	103278	5	0	84f3	Nationwide
 5	103288	2	6	4a2d	Dojo
 5	103356	17	0	e084	As player-manager, to the club &
@@ -202,7 +207,9 @@
 5	103744	2	6	5d8a	Fun
 5	103784	4	4	e83b	<Rest>
 5	103822	2	6	da11	Rest
+5	103924	6	4	8616	<Drills>
 5	103962	4	6	25d1	Drills
+5	104028	4	4	b7fe	<Talk>
 5	104066	3	0	a595	Your
 5	104072	2	6	414b	Pals
 5	104076	1	0	a986	{blank}
@@ -220,10 +227,12 @@
 5	104364	15	0	d070	Filling Vessels with My Spirit
 5	104402	10	0	0f8d	boosts stats; your
 5	104422	4	6	021d	Bonds
+5	104560	6	4	6356	<Bonds>
 5	104598	15	0	f17e	See manager, coach & teammate
 5	104636	4	6	021d	Bonds
 5	104644	7	0	038d	here, and
 5	104674	8	6	d954	adding My Spirit
+5	104944	6	4	56b8	<Footprints>
 5	104982	16	0	c335	Your growth since joining in the
 5	105020	3	6	8db3	Growth
 5	105026	14	0	998f	, your signing-day info in

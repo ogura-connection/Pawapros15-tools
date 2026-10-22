@@ -376,6 +376,7 @@
 5	68596	4	2	4b7c	20 yrs
 5	68604	1	0	7350	{blank}
 5	68618	8	2	7a45	, up to 999
+5	68700	7	4	52e8	<Coach Navi>
 5	68836	5	4	d488	<Records>
 5	68870	13	0	d9c6	From season and career
 5	68908	14	0	2ff0	stats to titles and all-time
@@ -383,6 +384,7 @@
 5	68984	18	0	9f85	and player records can be viewed.
 5	69022	14	0	25bb	In the Pennant, you can
 5	69060	10	6	e756	rewrite the records
+5	69148	6	4	becf	<System>
 5	69182	10	0	1bf7	View/edit settings,
 5	69202	5	4	07e9	'Save'
 5	69248	5	4	07e9	'Save'
@@ -477,6 +479,7 @@
 5	72274	4	6	28d3	Release
 5	72282	1	0	bdab	{blank}
 5	72292	5	6	950e	coach jobs
+5	72412	8	4	f7a8	<Draft Meeting>
 5	72446	15	0	f74c	Prospects found in season can
 5	72484	5	0	064e	be picked,
 5	72494	2	6	d6a1	6
@@ -485,6 +488,7 @@
 5	72560	4	0	ab7e	However,
 5	72568	11	2	1dc4	a picked player won't
 5	72598	19	2	0abb	always sign with you.
+5	72644	6	4	b62d	<FA Talks>
 5	72678	15	0	e3fe	If a player declares FA,
 5	72716	15	0	8a34	you may be able to sign him
 5	72754	10	0	b3d5	by talks. However,
@@ -493,12 +497,14 @@
 5	72870	12	0	4960	Besides season practice,
 5	72908	12	6	3b1a	position changes,
 5	72946	7	6	34b1	form changes
+5	73068	7	4	670b	<Preseason>
 5	73102	18	0	7214	Before opening, each team plays
 5	73140	6	0	8058	1 exhibition
 5	73178	17	2	61ab	(With an odd number of teams,
 5	73216	19	2	a920	one team won't get a game.)
 5	73254	9	0	426a	Your promising
 5	73272	4	4	972f	Rookies
+5	73336	5	4	2e85	<Reorg.>
 5	73370	8	0	9c75	Off-season:
 5	73386	5	4	2823	squad
 5	73452	7	4	12e5	<Coach Change>
@@ -694,3 +700,5 @@
 5	84078	7	0	d47d	the Player Rep
 5	84116	14	0	8627	After this window closes,
 5	84154	4	4	88af	- Button
+5	124418	4	1	c6ad	Animal
+5	126186	4	1	aaf4	Gaos
