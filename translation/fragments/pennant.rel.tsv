@@ -47,14 +47,101 @@
 5	20368	15	6	d9ce	No records about to be set
 5	20402	13	6	8696	No records set
 5	20434	12	6	8bf3	No other news
+5	20480	4	6	3570	Promoted
+5	20492	6	2	02bf	Sent down
 5	20528	11	2	d0cc	Left: personal reasons
+5	20760	4	0	a770	College/
+5	20768	3	0	579d	Ind.
 5	20774	5	1	1847	Draft 1st
+5	20792	4	0	a770	College/
+5	20800	3	0	579d	Ind.
 5	20806	5	1	7475	Draft 2nd
+5	20824	4	0	a770	College/
+5	20832	3	0	579d	Ind.
 5	20838	5	1	a740	Draft 3rd
 5	21024	7	0	bcb2	Traded from
 5	21038	4	1	aa1e	Orix
 5	21152	8	0	ba8a	Traded from
 5	21168	4	1	aa1e	SoftBank
+5	21912	2	0	d630	key
+5	21936	2	0	d630	key
+5	21960	2	0	d630	key
+5	21984	2	0	d630	key
+5	22004	2	0	d630	key
+5	22024	2	0	d630	key
+5	22044	2	0	d630	key
+5	22064	2	0	d630	key
+5	22084	2	0	d630	key
+5	22104	2	0	d630	key
+5	22124	2	0	d630	key
+5	22144	2	0	d630	key
+5	22164	2	0	d630	key
+5	22184	2	0	d630	key
+5	22204	2	0	d630	key
+5	22224	2	0	d630	key
+5	22244	2	0	d630	key
+5	22264	2	0	d630	key
+5	22288	2	0	d630	key
+5	22304	2	0	d630	key
+5	22324	2	0	d630	key
+5	22344	2	0	d630	key
+5	22364	2	0	d630	key
+5	22384	2	0	d630	key
+5	22408	2	0	d630	key
+5	22424	2	0	d630	key
+5	22440	2	0	d630	key
+5	22456	2	0	d630	key
+5	22472	2	0	d630	key
+5	22488	2	0	d630	key
+5	22504	2	0	d630	key
+5	22520	2	0	d630	key
+5	22540	2	0	d630	key
+5	22560	2	0	d630	key
+5	22580	2	0	d630	key
+5	22600	2	0	d630	key
+5	22620	2	0	d630	key
+5	22640	2	0	d630	key
+5	22660	2	0	d630	key
+5	22680	2	0	d630	key
+5	22704	2	0	d630	key
+5	22720	2	0	d630	key
+5	22736	2	0	d630	key
+5	22752	2	0	d630	key
+5	22768	2	0	d630	key
+5	22784	2	0	d630	key
+5	22800	2	0	d630	key
+5	22816	2	0	d630	key
+5	22832	2	0	d630	key
+5	22856	2	0	d630	key
+5	22872	2	0	d630	key
+5	22888	2	0	d630	key
+5	22904	2	0	d630	key
+5	22920	2	0	d630	key
+5	22936	2	0	d630	key
+5	22952	2	0	d630	key
+5	22968	2	0	d630	key
+5	22988	2	0	d630	key
+5	23008	2	0	d630	key
+5	23028	2	0	d630	key
+5	23048	2	0	d630	key
+5	23072	2	0	d630	key
+5	23088	2	0	d630	key
+5	23104	2	0	d630	key
+5	23120	2	0	d630	key
+5	23136	2	0	d630	key
+5	23152	2	0	d630	key
+5	23168	2	0	d630	key
+5	23184	2	0	d630	key
+5	23200	2	0	d630	key
+5	23216	2	0	d630	key
+5	23236	2	0	d630	key
+5	23256	2	0	d630	key
+5	23276	2	0	d630	key
+5	23296	2	0	d630	key
+5	23316	2	0	d630	key
+5	23336	2	0	d630	key
+5	23356	2	0	d630	key
+5	23376	2	0	d630	key
 5	26624	18	0	a796	Set options for all teams.
 5	26674	22	6	f6c7	SELECT changes all levels at once.
 5	26720	18	0	a796	Set options for all teams.
@@ -80,37 +167,56 @@
 5	27830	9	6	e286	Z changes level
 5	27852	13	0	272f	You control throws only.
 5	32744	5	6	5c5b	officially
+5	32808	4	2	8684	declined
 5	33576	7	2	d745	Injury!!
+5	33628	2	2	5e77	Bump
 5	33640	3	2	926f	Sprain
+5	33648	2	2	5e08	Hip
+5	33656	3	2	e0b3	Side
 5	33664	3	2	9f0b	Finger
+5	33672	2	2	b431	Shld
 5	33680	3	2	6742	Elbow
 5	33688	3	2	9daf	Strain
 5	33728	7	2	8911	Herniated disc
+5	33744	4	2	9d29	Cheek fx
+5	33756	4	2	214f	Clavicle
+5	33768	5	2	c4ab	Thighbone
 5	33780	6	2	fc3f	Torn ACL
+5	33796	5	2	861d	Meniscus
 5	33808	5	2	608d	Back spasm
 5	33820	5	2	8958	Rheumatism
 5	63064	18	0	f7a8	Each coach shapes players' batting,
 5	63102	17	0	7c87	pitching, fielding and running.
+5	63140	3	6	89b5	Skill
 5	63146	12	0	3dca	- higher means players
 5	63178	7	0	c997	grow faster.
 5	63216	4	0	ab7e	Due to
+5	63224	3	6	3b8e	style
 5	63332	8	0	50c4	Coaches may have
+5	63348	4	6	88a1	skills
 5	63356	6	0	6f48	of their
 5	63370	8	0	3e67	own.
+5	63408	4	6	88a1	skills
 5	63416	10	0	9a16	can teach players
+5	63436	4	6	88a1	skills
 5	63444	18	0	f589	or level up the ones
 5	63484	5	0	017c	they have.
 5	63522	15	0	a33c	Every ability has
+5	63552	3	6	58c0	no-cap
 5	63560	5	0	42e0	uses, but
 5	63570	7	2	09c1	1 at a time
 5	63640	15	0	3058	Pitching coaches usually have
+5	63678	5	6	febe	best pitch
 5	63688	8	0	76d8	of their own.
+5	63716	5	6	febe	best pitch
 5	63726	13	0	f4e5	- if a player has that
 5	63754	14	0	f3d6	same pitch, its level
 5	63792	6	6	de97	rises more
 5	63804	5	0	00ea	easily.
 5	63830	13	0	4d13	For new pitches, too, the
+5	63856	5	6	febe	best pitch
 5	63908	9	0	d26f	Once the desired
+5	63926	4	6	88a1	skills
 5	63946	6	6	094f	or pitches
 5	63958	13	0	3de9	are learned, in the
 5	63984	6	6	f89e	off-season
@@ -142,9 +248,13 @@
 5	65288	3	0	2903	, or 
 5	65306	5	4	4aae	set drills
 5	65384	12	0	333f	But when adding players,
+5	65408	4	4	ca21	Imp. cap
 5	65422	8	0	7e94	needs watching.
+5	65460	4	4	ca21	Imp. cap
 5	65468	13	0	79a3	means 1st Team foreigners
+5	65498	2	0	2cd4	max
 5	65506	13	0	5bb6	; fielders or pitchers:
+5	65536	2	0	2cd4	max
 5	65576	16	0	deb5	You pay players a salary yearly.
 5	65614	18	0	b132	To build a strong team you need
 5	65652	5	0	00ea	money.
@@ -156,6 +266,7 @@
 5	65808	16	0	f15a	To measure love for the team,
 5	65846	4	4	c81c	Loyalty
 5	66192	4	0	9ce9	Now, the
+5	66200	2	6	4100	flag
 5	66212	5	0	c074	awaits,
 5	66230	10	0	cd3c	so do your best!
 5	66308	12	2	4349	Note: Game settings may
@@ -172,40 +283,50 @@
 5	66816	7	6	378d	Fast-Forward
 5	66888	7	0	155a	During skips,
 5	66902	4	4	aa1e	trades,
+5	66916	2	0	852f	etc.
 5	66926	17	0	85eb	and other events can show,
 5	66964	10	6	b087	and halt the skip
 5	66984	8	0	d8b4	when they do.
 5	67002	17	0	29d4	Setting event display/stops
 5	67040	6	4	2269	via 'System'
 5	67052	5	0	9ead	menu's
+5	67062	4	4	84e7	Reports
 5	67234	18	0	53ff	You can check the off-season
 5	67272	5	0	678e	schedule.
 5	67310	19	2	987b	(There is no Fast-Forward here.)
+5	67390	4	4	e6b6	Roster
 5	67398	14	0	1a14	lets you view team strength,
 5	67428	8	4	6fcd	1st/2nd swaps,
+5	67446	4	4	1c88	Usage
+5	67544	4	4	dde1	Register
+5	67710	4	4	e92a	Practice
 5	67718	7	0	6a2f	can bring
 5	67742	6	0	2c78	mid-season
 5	67754	8	6	84db	ability gains
 5	67780	7	0	e660	to players.
 5	67824	11	2	a7b1	(Only with growth ON)
 5	67886	4	4	aa1e	Trades,
+5	67896	6	4	142b	New Imports
 5	67908	4	0	ee38	let you
 5	67924	12	0	52a9	bolster the team.
 5	67962	14	2	b572	From request to arrival, it
 5	68000	6	2	1689	takes days,
 5	68080	6	0	b3b4	Long-term,
 5	68092	9	4	e03e	Draft scouting
+5	68118	2	4	1975	spot
 5	68122	11	0	7d33	is possible. For
 5	68156	9	6	d2a6	positions to fill,
 5	68174	4	0	6301	scouts
 5	68182	5	4	f579	seek out
 5	68194	25	0	44e3	players to reinforce well. Players you
+5	68244	2	4	1975	spot
 5	68248	7	0	2e6d	in season, use
 5	68270	6	0	88b8	the year-end
 5	68282	6	4	0fb5	Draft
 5	68348	9	4	846d	Original Players:
 5	68370	6	4	33e8	Success-made
 5	68386	7	0	8e3a	players in the
+5	68400	2	4	1850	free
 5	68404	6	0	ba57	slots, or
 5	68424	10	4	bcdd	swaps with existing
 5	68504	15	0	acff	When replacing a player,
@@ -213,6 +334,7 @@
 5	68552	6	4	4453	his stats
 5	68564	8	0	7d1b	are kept.
 5	68580	7	4	2831	Originals over
+5	68596	4	2	4b7c	20 yrs
 5	68618	8	2	7a45	, up to 999
 5	68870	13	0	d9c6	From season and career
 5	68908	14	0	2ff0	stats to titles and all-time
@@ -235,9 +357,13 @@
 5	69696	7	6	79d9	match flow,
 5	69718	5	0	6b9f	in-game
 5	69728	13	6	4b26	control settings, etc.
+5	69800	6	4	8b2f	'Reports'
 5	69838	6	0	04d9	Per event,
 5	69850	9	6	1f74	whether to report
+5	69992	6	4	2c0d	'Play Time'
+5	70008	4	4	3457	Fast-Fwd
 5	70016	4	0	e42d	midway,
+5	70030	4	4	3457	Fast-Fwd
 5	70040	9	6	bd58	can be paused, or
 5	70068	16	0	1df2	normal play only in set
 5	70106	5	6	b106	situations
@@ -249,7 +375,9 @@
 5	70316	15	0	5ab7	The trade offer/deal period
 5	70354	15	2	cd9b	from season start to June 30
 5	70432	26	0	79ea	Even if you've applied, after June 30 trades become
+5	70484	2	2	7a20	void
 5	70548	11	0	ab20	After a trade offer,
+5	70586	6	4	e00f	5 days-2 wks
 5	70704	18	0	4bdd	You can scout foreign imports
 5	70742	8	0	f51a	and sign them.
 5	70786	9	4	e870	Use Search Request
@@ -263,6 +391,7 @@
 5	71100	8	0	bf2a	 list.
 5	71128	14	0	cf0c	Unless the search is ended,
 5	71166	5	0	ebd7	the scout
+5	71176	4	2	d2d1	up to 3
 5	71208	13	0	25ae	For listed foreigners, a
 5	71246	4	0	d552	team's
 5	71254	5	4	572f	free spot
@@ -273,7 +402,9 @@
 5	71518	3	0	05cc	and
 5	71524	6	2	f89e	off-season
 5	71536	26	0	18e2	too. After June 30, requests become
+5	71594	2	2	7a20	void
 5	71598	16	0	46f3	, and listed new foreigners get
+5	71634	2	2	5cbd	cut
 5	71672	17	0	bb6b	Stats of foreigners seen in the
 5	71710	4	0	75ec	list are
 5	71718	7	4	19b0	the scout's
@@ -284,11 +415,13 @@
 5	71940	13	2	a75e	real stats showed, it was
 5	71978	6	2	4a5e	really C.'
 5	72062	18	0	3565	To trim and bolster for next year,
+5	72100	3	0	811d	Many
 5	72106	4	6	e18b	events
 5	72114	21	0	2682	await you. (During the off-season,
 5	72156	4	4	aa1e	trades
 5	72176	8	4	64fc	Draft scouting
 5	72254	10	0	8414	In this staff event,
+5	72274	4	6	28d3	Release
 5	72292	5	6	950e	coach jobs
 5	72446	15	0	f74c	Prospects found in season can
 5	72484	5	0	064e	be picked,
@@ -300,6 +433,7 @@
 5	72678	15	0	e3fe	If a player declares FA,
 5	72716	15	0	8a34	you may be able to sign him
 5	72754	10	0	b3d5	by talks. However,
+5	72774	4	2	7fef	up to 2
 5	72870	12	0	4960	Besides season practice,
 5	72908	12	6	3b1a	position changes,
 5	72946	7	6	34b1	form changes
@@ -319,10 +453,14 @@
 5	73794	17	0	d8a1	if you want someone to go,
 5	73832	10	6	fa7f	put him on 2nd Team
 5	73872	13	0	732a	FA players each have
+5	73898	4	4	b0f4	terms
+5	73910	4	4	acc0	fav club
 5	73918	8	0	76d8	of their own.
+5	73948	4	4	b0f4	Terms
 5	73956	14	0	b0a8	include salary, years, etc.
 5	73986	18	0	aa62	To win talks, match your offer to
 5	74024	15	0	9e1d	what the player wants.
+5	74062	4	4	acc0	Fav club
 5	74070	11	0	1160	- clubs that fit it
 5	74100	19	6	a97f	get an edge in talks.
 5	74140	13	0	552e	Talks show the salary the
@@ -336,6 +474,7 @@
 5	74448	25	0	b93a	his old club money, players, etc.
 5	74524	38	2	851d	To negotiate, you must keep enough money to pay FA compensation.
 5	74916	14	0	4a7a	Based on his asking salary,
+5	74944	3	4	c7b8	Offer
 5	74954	9	0	b051	- enter it here.
 5	74992	16	2	18d3	You can't offer less than
 5	75030	19	2	e558	what he asks for.
@@ -343,13 +482,16 @@
 5	75110	8	0	24b0	compensation.
 5	75148	17	0	7fa4	Money to keep (cash comp. due) is
 5	75228	5	0	d3ca	Contracts
+5	75238	3	4	f957	2+ yr
 5	75244	35	0	da81	can be set. You must pay the offered salary for every contract year.
 5	75342	13	2	2c23	Lower it and Loyalty drops
 5	75380	9	2	8763	to 0.
+5	75496	3	4	354b	Number
 5	75720	12	0	ef87	Research top Draft picks
 5	75750	15	0	7bed	to find good players.
 5	75810	14	0	f515	The Player List shows known
 5	75840	12	0	c127	top picks by the scout's
+5	75864	3	4	7452	rating
 5	75932	26	0	f4b8	Choose a player for scouts to chase, and
 5	75992	5	4	97fc	his status
 5	76004	5	6	9727	in reports
@@ -382,6 +524,7 @@
 5	76818	7	6	c0be	a List entry
 5	76992	19	0	6925	At the Draft after the season,
 5	77030	13	4	bc89	scouts' in-season work
+5	77058	2	2	b7f4	key
 5	77204	7	2	b7e9	Once a year,
 5	77320	12	0	d413	Each team's scouts cost
 5	77350	6	4	bdf0	20 pts max.
@@ -407,10 +550,12 @@
 5	78616	15	0	965b	An FA who moved overseas
 5	78654	15	0	6778	wants to return to Japan.
 5	78692	12	0	d1f9	No direct talks with him
+5	78730	3	4	59d1	Agent
 5	78768	14	0	a6e6	Terms you can use in talks
 5	78806	19	6	6b3d	are the same as in FA talks.
 5	78848	17	0	5e01	The Player Rep influences
 5	78886	5	0	ae12	teammates.
+5	78924	2	6	f11e	Perk
 5	79004	6	0	9bb9	A Rep has a
 5	79016	7	6	22af	Leader Level
 5	79030	18	0	a47f	; the higher, the more influence.
@@ -425,15 +570,18 @@
 5	79388	15	0	54d0	Via his partner, a
 5	79418	3	6	5568	Growth
 5	79426	3	6	faa6	Hint
+5	79536	2	4	afa6	Chem
 5	79612	17	0	c1ea	Set which teammates should
 5	79650	17	0	6a52	have Chemistry. Build it in
 5	79688	6	0	6675	games and
+5	79700	6	6	9260	Chem skills
 5	79944	9	0	213b	To form Chemistry,
 5	79962	9	6	8a73	Loyalty 70+
 5	80304	10	4	7c2b	Chemistry Abilities
 5	80380	14	0	3fd5	Chemistry abilities come
 5	80418	12	0	e354	from game experience.
 5	80456	18	0	9c75	More experience can evolve it;
+5	80494	7	4	95a1	Super Chem
 5	80652	30	2	73ee	Learned Chemistry abilities are lost if the link breaks.
 5	80846	18	0	0e0d	If a player left for another club
 5	80884	18	0	ab5a	by FA, you can get compensation
@@ -441,7 +589,10 @@
 5	80960	5	0	678e	strength.
 5	81036	17	2	b933	However, players who left overseas
 5	81074	12	2	c9a4	bring no compensation.
+5	81180	4	6	8547	Cash
+5	81296	4	6	d233	Player
 5	81412	5	4	559c	Protect
+5	81684	4	4	9a3d	Renewal
 5	81840	9	4	10fe	Setting Salaries
 5	82108	6	2	b3a7	Salary Notes
 5	82416	17	0	09e1	Before the Pennant, you can change

@@ -1,0 +1,181 @@
+# section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
+5	23480	14	0	8121	Overwrite this file.
+5	23514	15	2	3f55	(The old file will be erased)
+5	25620	9	0	076c	You control it.
+5	25670	17	2	682a	Can't be changed on Ordinary.
+5	25708	9	0	076c	You control it.
+5	25758	16	2	34cb	Can't be changed on Brutal.
+5	26704	19	2	7a40	No steal control in the Farewell Tour.
+5	39312	14	2	1425	This item can't be used.
+5	39344	15	2	e915	This item can't be carried.
+5	39376	13	2	787a	Can only unequip at home.
+5	39456	25	2	78f2	Items can't be equipped away from home.
+5	39576	8	6	fce4	Vitality's back!
+5	39600	7	6	b9fb	Fatigue gone!
+5	39616	12	6	b1e1	The pain feels better.
+5	39644	8	6	7381	Feeling strong!
+5	39664	14	6	f45b	Nothing happened...
+5	39696	10	6	1cda	RC car completed!
+5	39720	10	6	040c	In high spirits!
+5	39744	14	6	2cb9	Something seems different.
+5	39776	15	2	f28b	Same as your current home.
+5	39808	10	2	ecb9	Not enough money.
+5	39832	12	2	1935	Monthly income too low.
+5	39860	12	2	3980	Can't buy in 1st year.
+5	39888	11	2	d37d	Can't buy this month.
+5	39912	14	2	cfe4	You'll lack garage space.
+5	39948	5	6	5c8a	Key Items
+5	39958	12	2	e9dd	: please sell a car.
+5	39984	14	2	2461	Items will no longer fit.
+5	40020	7	2	9e1a	Cut storage to
+5	40036	4	2	5fea	 items
+5	40054	9	2	0caa	or fewer, please.
+5	40076	14	2	b4ba	You can't carry any more
+5	40112	6	2	7ff5	items.
+5	40128	10	2	c985	(Stored at home)
+5	40492	13	2	63ce	No empty garage.
+5	40520	13	2	0b20	Can't donate any more.
+5	40548	13	2	91a8	Can't add more seats.
+5	40576	10	2	4665	Already signed up.
+5	40600	16	2	7c35	Already have another agent.
+5	40848	7	2	007a	Sold out.
+5	40864	6	1	863e	Red Star
+5	40944	6	1	c2c4	Yoshinobu
+5	40992	6	1	c8e7	KimuTaku
+5	41024	6	1	fc83	Red Godzilla
+5	41120	6	1	83aa	Daisuke
+5	41152	6	0	d35a	Tsutomu
+5	41184	6	1	e019	Johnny
+5	41216	6	0	1e23	Kazuo
+5	41280	18	0	3174	Left game hurt by a hit-by-pitch
+5	46444	9	6	81b0	(For righties)
+5	46464	9	6	d10e	(For lefties)
+5	47200	3	0	7888	Sakura
+5	49358	17	2	ff5d	Can't upgrade in your 1st year.
+5	99110	5	0	5273	Go play a
+5	99124	10	0	9dba	 at the ballpark.
+5	99148	15	0	4654	Auto-played unless you pitch.
+5	99186	10	0	64b3	Set batting control
+5	99206	5	6	c21b	to Manual
+5	99216	23	0	311d	(System) and you can bat as well.
+5	99262	18	2	4128	Selecting this icon ends the
+5	99300	4	2	71c8	turn.
+5	99350	5	0	5273	Go play a
+5	99364	10	0	f85b	 at the ballpark.
+5	99388	15	0	4654	Auto-played unless you bat.
+5	99426	10	0	e4e4	Set steal control
+5	99446	5	6	c21b	to Manual
+5	99456	19	0	221d	(System) to steal bases yourself.
+5	99502	18	2	4128	Selecting this icon ends the
+5	99540	4	2	71c8	turn.
+5	99590	6	6	c0c3	Team drills
+5	99602	30	0	5e94	 with the club. Drills and effects vary by coach.
+5	99666	18	2	4128	Selecting this icon ends the
+5	99704	4	2	71c8	turn.
+5	99758	42	0	c147	Practice while teaching teammates.    Drills and effects vary by coach.
+5	99872	18	2	4128	Selecting this icon ends the
+5	99910	4	2	71c8	turn.
+5	99958	13	0	bfaf	Go to the next venue (
+5	99988	4	0	71c8	).
+5	99996	18	2	4128	Selecting this icon ends the
+5	100034	4	2	71c8	turn.
+5	100082	7	0	c617	The scheduled
+5	100096	4	6	e18b	Event
+5	100104	7	0	ce34	takes place.
+5	100120	18	2	4128	Selecting this icon ends the
+5	100158	4	2	71c8	turn.
+5	100206	4	0	f253	Friends:
+5	100220	3	6	7191	Date
+5	100226	5	0	cfea	with them.
+5	100244	18	2	4128	Selecting this icon ends the
+5	100282	4	2	71c8	turn.
+5	100334	15	0	d56b	Rest up and shake off fatigue.
+5	100372	16	2	5472	Selecting this icon ends the
+5	100410	6	2	3e84	turn.
+5	100462	3	0	a595	Your
+5	100468	4	6	e9b1	Items
+5	100478	11	6	ba81	Heirloom Item List
+5	100500	18	0	be22	your home & car, players, managers,
+5	100538	22	0	e410	coaches and others you've met, in the
+5	100586	13	0	93f1	, trophies you've won in
+5	100614	5	0	919a	your own
+5	100722	16	0	0eb9	Buy houses, cars and items.
+5	100760	5	0	3a6f	Some items
+5	100770	17	2	99c5	are limited to one at a time
+5	100804	15	0	840a	so until discarded or broken,
+5	100842	4	2	dd74	Sold Out
+5	100870	8	2	ac7b	Limited stock
+5	100886	32	0	30e8	 items may sell out after a few are bought.
+5	100978	10	0	923e	What's sold out,
+5	100998	9	6	a60b	around each 25th,
+5	101036	3	6	8739	Loan
+5	101042	3	0	6564	or
+5	101052	8	0	8a07	 payment can be
+5	101070	5	0	678e	used.
+5	101108	18	0	b898	But without enough income, a loan
+5	101146	15	0	61d4	may not be possible.
+5	101184	18	2	8e5b	If you're unmarried, a home can't be
+5	101222	19	2	cb6e	bought in your 1st pro year.
+5	101302	16	0	b429	View your own records.
+5	101862	17	0	814b	Your signing-day info in the
+5	101900	6	6	0190	Profile
+5	101912	12	0	9246	, your past events
+5	101938	6	0	867f	in the
+5	101950	5	6	0351	History
+5	101960	7	0	ac4c	, rumors and
+5	101976	11	0	c4f2	news around you in the
+5	101998	5	6	34c2	Rumor Memo
+5	102074	17	0	814b	Your signing-day info in the
+5	102112	6	6	0190	Profile
+5	102124	12	0	9246	, your past events
+5	102150	6	0	867f	in the
+5	102162	5	6	0351	History
+5	102172	7	0	ac4c	, rumors and
+5	102188	11	0	c4f2	news around you in the
+5	102210	5	6	34c2	Rumor Memo
+5	102248	17	0	404d	View a list of your items and
+5	102286	13	0	5ed6	heirloom items.
+5	102324	9	0	49b1	Items: you can
+5	102342	3	6	734a	equip
+5	102348	3	0	2903	them
+5	102354	8	6	708e	, use or toss
+5	102688	18	0	d4a2	However, you can only equip a bat,
+5	102726	22	0	f4a2	glove, spikes, L & R wristbands, and
+5	102770	14	6	7254	4 items you can carry.
+5	102988	18	0	15a1	Before road trips, be sure to equip
+5	103026	11	0	2fa6	what you need.
+5	103064	15	0	9d11	Note: storage space for items
+5	103094	9	6	ac77	varies by home
+5	103278	5	0	84f3	Nationwide
+5	103356	17	0	e084	As player-manager, to the club &
+5	103394	12	0	d4cf	coaches, your wishes as
+5	103418	7	6	0aba	My Team Needs
+5	103456	18	0	8373	As player-manager, team pitchers'
+5	103494	6	0	fd12	& fielders'
+5	103574	18	0	cd80	As player-manager, for the team,
+5	103612	7	6	0aba	My Team Needs
+5	103626	8	0	d1b3	 & P and fielder
+5	103706	5	0	31b4	Various
+5	103720	11	0	c6a5	 can be done, and
+5	104066	3	0	a595	Your
+5	104078	4	6	3f76	Talk to
+5	104250	4	0	cf3a	View all
+5	104258	3	6	fce9	Vessel
+5	104264	7	0	038d	s you earned,
+5	104288	4	0	3f64	or pour
+5	104296	6	6	0554	My Spirit
+5	104308	5	0	5bd4	into
+5	104326	5	0	678e	them.
+5	104364	15	0	d070	Filling Vessels with My Spirit
+5	104402	10	0	0f8d	boosts stats; your
+5	104422	4	6	021d	Bonds
+5	104598	15	0	f17e	See manager, coach & teammate
+5	104636	4	6	021d	Bonds
+5	104644	7	0	038d	here, and
+5	104674	8	6	d954	adding My Spirit
+5	104982	16	0	c335	Your growth since joining in the
+5	105026	14	0	998f	, your signing-day info in
+5	105058	5	0	919a	the
+5	105068	7	6	4522	Profile,
+5	105096	17	0	7fd2	past events to look back on in the
+5	105134	5	6	0351	History
