@@ -71,7 +71,7 @@ def prepare(texts: dict, ui_texts: dict | None, dol_entries: list | None, messag
         state.fragments = fragments.load_for_build(orig)       # pieces of text no slot covers, written in place
     counted = {name: dict(state.ui_texts.get(name, {})) for name in set(state.ui_texts) | set(state.fragments)}
     for name, pieces in state.fragments.items():               # their letter pairs count like those of the strings
-        counted[name].update({key: (cells, en) for key, (cells, _, en) in pieces.items()})
+        counted[name].update({key: (cells, "" if en == fragments.BLANK else en) for key, (cells, _, en) in pieces.items()})
     state.slots = assign_pairs(scripts + blocks, texts, orig, counted, dol, state.message_texts,
                                _english_names(state), narrow=list(state.schools.values()))
     state.repl = {name: {i: encode_text(t, state.slots) for i, t in runs.items()} for name, runs in texts.items()}

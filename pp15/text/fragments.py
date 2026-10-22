@@ -9,9 +9,10 @@ units (the top four bits), so nothing around it moves.
 
 Translation files: translation/fragments/<module>.tsv, one line per fragment:
     section, offset (bytes in the section), cells, colour (0 = none), hash of the original Japanese, English
-The hash is checked against the original module, so a fragment can never land on other bytes.
+The hash is checked against the original module, so a fragment can never land on other bytes. English `{blank}` clears
+the cells (a Japanese particle that has no English counterpart).
 
-Public names: TSV_DIR, japanese(units), load_for_build(orig), save(name, rows).
+Public names: TSV_DIR, BLANK, japanese(units), load_for_build(orig), save(name, rows).
 """
 import os
 import struct
@@ -23,6 +24,7 @@ from pp15.text.tsv_store import read_rows, text_hash, write_rows
 
 TSV_DIR = os.path.join(config.TRANSLATION_DIR, "fragments")
 TSV_HEADER = "# section\toffset\tcells\tcolour\thash of the original Japanese\tEnglish (see pp15/text/fragments.py)\n"
+BLANK = "{blank}"           # English of a fragment that is cleared
 GLYPH_BITS = 0xFFF          # a unit's low 12 bits are the glyph number, the top four bits its colour
 COLOUR_SHIFT = 12
 

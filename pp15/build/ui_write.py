@@ -24,7 +24,7 @@ from pp15.build.relocations import parse_imports
 from pp15.build.text_encode import encode_text
 from pp15.names import kyu
 from pp15.script import scan
-from pp15.text import messages, strings
+from pp15.text import fragments, messages, strings
 
 STRING_END = b"\xff\xff"             # the unit 0xFFFF that closes a string
 HELP_STRING_END = b"\x1f\xff"        # help strings may end in 0x1FFF instead (a line break that closes the text)
@@ -216,7 +216,7 @@ def write_fragments(state, module, image: bytes) -> tuple[bytes, str]:
         pos = module.sections[sec]["offset"] + remap(off)
         if bytes(image[pos:pos + 2 * cells]) != module.sec_data(sec)[off:off + 2 * cells]:
             sys.exit("%s %d:%d: an earlier build step changed the bytes of this fragment" % (module.name, sec, off))
-        units = [u | colour << 12 for u in encode_text(en, state.slots)]
+        units = [] if en == fragments.BLANK else [u | colour << 12 for u in encode_text(en, state.slots)]
         if scan.TEXT_NEWLINE in units or len(units) > cells:
             sys.exit("%s %d:%d: %r does not fit %d cells (no line breaks)" % (module.name, sec, off, en, cells))
         data = struct.pack(">%dH" % cells, *(units + [0] * (cells - len(units))))
