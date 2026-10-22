@@ -239,6 +239,9 @@ def _composite(picture):
         ys, xs = np.mgrid[Y0:Y1, X0:X1].astype(float)
         ink, base = _ink(lab["text"], lab["font"])
         al = _alpha(lab, ink, base, xs, ys)
+        if lab.get("levels"):                        # fewer edge shades: smaller compressed pages
+            n = lab["levels"] - 1
+            al = np.round(al * n) / n
         win = rgb[Y0:Y1, X0:X1]
         rings = lab.get("rings", ())                 # solid rings round the letters, innermost first (picture pixels)
         masks, grown = [], al > 0.4
@@ -329,7 +332,7 @@ PHOTO = {
                        wipe=[(-26, -25, 27, 26)], box=(448, 296, 512, 370)),     # 写真 / 添付 in the photo box
     # sct_main.arc n4_bg_hatashijo: the practice-match letter (Eikan Nine story picture)
     "hat_title": dict(picture="hatashijo", text="Practice Match Request", font="ttf:d_impact:14:0:1.0:0.0",
-                      centre=(134.5, 65.5), angle=-11.5, below=140, fill="along",
+                      centre=(134.5, 65.5), angle=-11.5, below=140, fill="along", levels=3,
                       wipe=[(-77, -14, 30, 13), (30, -19, 80, 10)], box=(40, 26, 232, 100)),   # 練習試合申込書
     "hat_school": dict(picture="hatashijo", text="High", font="ttf:tahoma-bold:8:0:1.0:0.0", centre=(211, 69),
                        angle=-11.0, below=150, fill="along", wipe=[(-17, -6, 17, 6)], box=(186, 56, 232, 84)),  # 高校御中

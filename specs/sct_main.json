@@ -1411,6 +1411,111 @@
    "font": "ttf:narrow:10:0:0.88:0.2",
    "copy": "clear",
    "style": "g10_ban"
+  },
+  {
+   "bank": "n4_bg_hatashijo",
+   "page": 0,
+   "rect": [
+    40,
+    26,
+    128,
+    100
+   ],
+   "text": "Practice Match Request",
+   "font": "ttf:d_impact:14:0:1.0:0.0",
+   "copy": [
+    0,
+    40,
+    26,
+    128,
+    100
+   ],
+   "style": "lo_b_photo_hat_title@0",
+   "name": "lo_b hatashijo"
+  },
+  {
+   "bank": "n4_bg_hatashijo",
+   "page": 1,
+   "rect": [
+    0,
+    26,
+    104,
+    100
+   ],
+   "text": "Practice Match Request",
+   "font": "ttf:d_impact:14:0:1.0:0.0",
+   "copy": [
+    1,
+    0,
+    26,
+    104,
+    100
+   ],
+   "style": "lo_b_photo_hat_title@1",
+   "name": "lo_b hatashijo"
+  },
+  {
+   "bank": "n4_bg_hatashijo",
+   "page": 1,
+   "rect": [
+    58,
+    56,
+    104,
+    84
+   ],
+   "text": "High",
+   "font": "ttf:tahoma-bold:8:0:1.0:0.0",
+   "copy": [
+    1,
+    58,
+    56,
+    104,
+    84
+   ],
+   "style": "lo_b_photo_hat_school@1",
+   "name": "lo_b hatashijo"
+  },
+  {
+   "bank": "n4_bg_hatashijo",
+   "page": 0,
+   "rect": [
+    104,
+    82,
+    128,
+    114
+   ],
+   "text": "Information",
+   "font": "ttf:tahoma-bold:7:0:1.0:0.0",
+   "copy": [
+    0,
+    104,
+    82,
+    128,
+    114
+   ],
+   "style": "lo_b_photo_hat_notice@0",
+   "name": "lo_b hatashijo"
+  },
+  {
+   "bank": "n4_bg_hatashijo",
+   "page": 1,
+   "rect": [
+    0,
+    82,
+    46,
+    114
+   ],
+   "text": "Information",
+   "font": "ttf:tahoma-bold:7:0:1.0:0.0",
+   "copy": [
+    1,
+    0,
+    82,
+    46,
+    114
+   ],
+   "style": "lo_b_photo_hat_notice@1",
+   "name": "lo_b hatashijo"
   }
  ]
 }
