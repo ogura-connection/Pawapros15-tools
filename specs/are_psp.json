@@ -1,0 +1,403 @@
+{
+ "arc": "are_psp.arc",
+ "repack": [
+  {
+   "bank": "m3_psp00#0",
+   "palette": 2,
+   "style": "lo_c_psp_ask",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     88,
+     128,
+     112
+    ],
+    [
+     0,
+     0,
+     112,
+     80,
+     128
+    ],
+    [
+     1,
+     0,
+     88,
+     128,
+     112
+    ],
+    [
+     1,
+     0,
+     112,
+     80,
+     120
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     2,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     2,
+     0,
+     64,
+     16,
+     96
+    ],
+    [
+     2,
+     16,
+     64,
+     64,
+     96
+    ],
+    [
+     2,
+     64,
+     64,
+     128,
+     96
+    ],
+    [
+     2,
+     0,
+     96,
+     16,
+     128
+    ],
+    [
+     3,
+     0,
+     0,
+     128,
+     32
+    ],
+    [
+     3,
+     0,
+     32,
+     128,
+     64
+    ],
+    [
+     2,
+     16,
+     96,
+     56,
+     128
+    ],
+    [
+     0,
+     80,
+     112,
+     128,
+     128
+    ],
+    [
+     1,
+     80,
+     112,
+     128,
+     120
+    ],
+    [
+     1,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     2,
+     80,
+     96,
+     128,
+     128
+    ],
+    [
+     3,
+     64,
+     112,
+     112,
+     120
+    ],
+    [
+     3,
+     72,
+     120,
+     88,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "01",
+     "text": "Choose a player to send to Power Pros Portable.",
+     "style": "lo_c_psp_pick",
+     "font": "ttf:narrow:12:0.0:1.0:0.3",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "from": [
+      2,
+      0,
+      0,
+      128,
+      32
+     ],
+     "text": "Send this player?",
+     "style": "lo_c_psp_ask~0_128",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 24,
+     "left": 33
+    },
+    {
+     "from": [
+      2,
+      0,
+      32,
+      128,
+      64
+     ],
+     "text": "Send this player?",
+     "style": "lo_c_psp_ask~128_4096",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 24,
+     "left": 33
+    },
+    {
+     "from": [
+      2,
+      0,
+      64,
+      16,
+      96
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      2,
+      16,
+      64,
+      64,
+      96
+     ],
+     "text": "Yes",
+     "style": "lo_c_psp_ask",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 24
+    },
+    {
+     "from": [
+      2,
+      64,
+      64,
+      128,
+      96
+     ],
+     "text": "No",
+     "style": "lo_c_psp_ask",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "baseline": 24,
+     "centre_x": 40
+    },
+    {
+     "from": [
+      2,
+      0,
+      96,
+      16,
+      128
+     ],
+     "empty": true
+    },
+    {
+     "sprite": "04",
+     "text": "Player sent!",
+     "style": "lo_c_psp_sent",
+     "font": "ttf:rounded:18:0.0:1.0:0.35",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    }
+   ],
+   "name": "lo_c psp messages",
+   "sprites": "m3_psp00#1",
+   "sprite_prefix": "m3_psp00"
+  },
+  {
+   "bank": "s4_psp00#2",
+   "palette": 0,
+   "style": "lo_c_psp_t00",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     128
+    ],
+    [
+     2,
+     0,
+     0,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "Power Pros Portable Link",
+     "style": "lo_c_psp_t00",
+     "font": "ttf:rounded:23:0.0:0.78:0.45",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 2
+    },
+    {
+     "sprite": "01",
+     "text": "Send Player",
+     "style": "lo_c_psp_t01",
+     "font": "ttf:rounded:26:0.0:0.78:0.45",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5
+    },
+    {
+     "sprite": "02",
+     "text": "Receive Fight Song",
+     "style": "lo_c_psp_t02",
+     "font": "ttf:rounded:23:0.0:0.78:0.45",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 5
+    },
+    {
+     "sprite": "05",
+     "text": "Send Fight Song",
+     "style": "lo_c_psp_t05",
+     "font": "ttf:rounded:23:0.0:0.78:0.45",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 6
+    }
+   ],
+   "name": "lo_c psp titles",
+   "sprites": "s4_pspz00#3",
+   "sprite_prefix": "s4_pspz00"
+  },
+  {
+   "bank": "s4_pspz00#3",
+   "palette": 3,
+   "style": "lo_c_psp_ok",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     1,
+     0,
+     80,
+     128,
+     120
+    ],
+    [
+     1,
+     72,
+     40,
+     128,
+     80
+    ],
+    [
+     1,
+     0,
+     0,
+     128,
+     40
+    ],
+    [
+     1,
+     0,
+     40,
+     72,
+     80
+    ],
+    [
+     1,
+     0,
+     120,
+     128,
+     128
+    ],
+    [
+     2,
+     64,
+     72,
+     128,
+     80
+    ],
+    [
+     2,
+     0,
+     80,
+     128,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "03",
+     "text": "Success!",
+     "style": "lo_c_psp_ok",
+     "font": "ttf:rounded:26:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "palettes": [
+      3
+     ]
+    },
+    {
+     "sprite": "04",
+     "text": "Failed",
+     "style": "lo_c_psp_ng",
+     "font": "ttf:rounded:26:0.0:1.0:0.4",
+     "slices": true,
+     "slice_width": 128,
+     "dy": 0,
+     "palettes": [
+      4
+     ]
+    }
+   ],
+   "name": "lo_c psp result",
+   "sprites": "mp1_bd#4",
+   "sprite_prefix": "mp1_bd"
+  }
+ ]
+}
