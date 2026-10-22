@@ -1,0 +1,15 @@
+# section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
+5	3200	13	0	e418	Games in one season.
+5	3226	11	2	ac34	1 league of 2-6 teams:
+5	3250	17	2	8408	only then can you change this.
+5	3288	17	0	fd42	Set the games per season.
+5	3326	9	6	fa8c	(A Button: more,
+5	3346	8	6	8b69	X Button: less)
+5	3392	13	0	0c1a	Choose the schedule type.
+5	3418	11	2	ac34	1 league of 2-6 teams:
+5	3442	17	2	8408	only then can you change this.
+5	4512	23	2	1211	If not 6 Central and 6 Pacific League teams,
+5	4562	8	2	2b07	it can't be set.
+5	4580	16	2	ce0b	Can't be set with one league.
+5	4616	23	2	59c9	Unless both Central and Pacific have 6+ teams,
+5	4666	25	2	2d7a	it can't be set.

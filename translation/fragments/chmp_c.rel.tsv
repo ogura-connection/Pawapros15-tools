@@ -1,0 +1,26 @@
+# section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
+5	14928	6	0	690f	In the top,
+5	14940	16	2	6de1	 when time runs out,
+5	14976	10	2	d4a3	Final-inning rule
+5	15216	9	0	4891	With a time set,
+5	15552	12	2	532f	At 0, a forced pitch
+5	15696	9	2	c292	2 per pitch
+5	15984	12	2	5272	pitchers' set stamina
+5	16176	9	0	1009	An inning score of
+5	16272	12	0	5f62	If the inning-end gap is
+5	16464	7	0	2766	up to the 15th
+5	16478	6	2	341f	 1 out, full
+5	16704	4	2	09d2	"On"
+5	16752	9	0	8590	change options
+5	16770	13	2	3d19	 during games.
+5	16800	4	2	c76f	"Off"
+5	16848	9	0	8590	options can't be
+5	16866	13	2	0f5c	 changed.
+5	16944	4	2	09d2	"On"
+5	16992	8	0	54ad	change settings
+5	17008	14	2	a330	 mid-tournament.
+5	17040	4	2	c76f	"Off"
+5	17088	8	0	54ad	settings can't
+5	17104	14	2	8e2e	 be changed.
+5	17232	13	2	fc11	the more-hits-wins rule
+5	17328	11	2	b806	rock-paper-scissors
