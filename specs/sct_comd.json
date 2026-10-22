@@ -149,6 +149,57 @@
    ],
    "name": "years",
    "sprites": "z4_edk_0#3"
+  },
+  {
+   "bank": "z4_edk_0#3",
+   "palette": 4,
+   "style": "lo_b_grade",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     32,
+     0,
+     128,
+     32
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "00",
+     "text": "1st",
+     "style": "lo_b_grade",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
+     "baseline": 14,
+     "palettes": [
+      4
+     ]
+    },
+    {
+     "sprite": "01",
+     "text": "2nd",
+     "style": "lo_b_grade",
+     "font": "ttf:narrow:11:0.0:0.92:0.0",
+     "baseline": 14,
+     "palettes": [
+      5
+     ]
+    },
+    {
+     "sprite": "02",
+     "text": "3rd",
+     "style": "lo_b_grade",
+     "font": "ttf:narrow:11:0.0:1.0:0.0",
+     "baseline": 14,
+     "palettes": [
+      6
+     ]
+    }
+   ],
+   "name": "lo_b gmp years",
+   "sprites": "z4_edk_0#3",
+   "sprite_prefix": "z4_gmp_0"
   }
  ]
 }
