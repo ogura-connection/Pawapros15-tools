@@ -33,7 +33,10 @@ CELL_W, CELL_H, ROW_BYTES = 22, 28, 11
 SS = 8                                                           # supersampling factor
 # (letter advance, baseline row, cap height in rows) per font
 LARGE = {"adv": 11, "base": 22, "cap": 17.0, "ink_w": 9.4}
-SMALL = {"adv": 8, "base": 14, "cap": 11.5, "ink_w": 7.0}
+# SMALL: the score bug draws only the first ~13 pixel columns of a 16-wide cell (fitted on a frame: 13 columns
+# stretched to 17 screen pixels), so a pair must end by column 12: two letters of 6.5 pixels. With the former
+# 8-pixel letters the second one lost its right edge ("Mo" read "Mc").
+SMALL = {"adv": 6.5, "base": 14, "cap": 11.5, "ink_w": 5.6}
 FONTS = (("small", 0x000000, SMALL), ("large", 0x05DF64, LARGE))
 FONT_END = {0x000000: 0x05DF64, 0x05DF64: 0x117400}             # each font's space ends at the next one
 KANJI_SLOTS = range(706, 3744)
