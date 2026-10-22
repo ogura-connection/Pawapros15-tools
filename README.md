@@ -10,6 +10,27 @@ Where things stand, what is next and how a session works: `../HANDOFF.md` (outsi
 How each store of text was found and how the tools work: `FINDINGS.md`. Voices, terms and wording:
 `TRANSLATION_STYLE.md`. Low-level reference (encoding, font, VM): `TECHNICAL_GUIDE.md`.
 
+## Repository map
+
+```
+Pawapros15-tools/
+  README.md  FINDINGS.md  TECHNICAL_GUIDE.md  TRANSLATION_STYLE.md   what the project knows (read in this order)
+  docs/            PIPELINE.md and TECHNIQUES.md (the method, game independent), a title picture
+  translation/     the English: script TSVs (<file>.rel.tsv), strings/, messages/, names/ (in_place/ = names written over the original)
+  ui_specs/        one JSON per .arc: every sprite label (rect, wording, style); applied by ui_labels.py
+  ui_styles_*.py   typeface recipes the specs name (ui_styles_<mode>_run<N>.py came from the art runs; ui_styles_<name>.py are shared helpers)
+  rebuild_scripts.py  pair_font.py  name_table.py  school_names.py   the build: English + font + names -> DATA/files
+  scan_story.py  tl.py  ui_strings.py  ui_messages.py  ui_textures.py  ui_labels.py  ui_type.py  ui_sheet.py   readers/writers of each store
+  extract_from_iso.py  make_xdelta.py  ram_scan.py   disc in, release out, memory map from a save state
+  export_tm.py  export_labels.py  mlb_assets.py  mlb_labels.py   exports to ~/Projects/translation-kit and the MLB reference
+  legacy/          the first approach and the abandoned Python patcher (apply_patch / make_patch): kept for reference, nothing imports them
+  DATA/  _work/    game data and scratch (git-ignored, never committed)
+```
+
+Build in one go: `python3 ui_strings.py merge; python3 tl.py merge; python3 rebuild_scripts.py build` (idempotent; prints "Verified" lines),
+then art with `python3 ui_labels.py apply ui_specs/<arc>.json`, then `python3 ui_textures.py check`, then `python3 make_xdelta.py ORIGINAL.iso ../release/PP15_English_final.iso ../release/PP15_English.xdelta`.
+The ui_styles_* files are many (91) because every art run added its own; they import each other by module name from the repo root, so they stay in one folder.
+
 ## The four stores of text, and their tools
 
 | Store | What | Tool | English in |
