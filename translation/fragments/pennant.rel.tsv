@@ -1,0 +1,183 @@
+# section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
+5	15272	12	0	8034	A human player joins.
+5	15322	10	6	0b81	Controller Type A
+5	15344	12	0	8034	A human player joins.
+5	15394	10	6	010e	Controller Type B
+5	15416	12	0	8034	A human player joins.
+5	15466	11	6	f144	Control Stick
+5	15490	7	6	c9a3	Type A Control
+5	15508	12	0	8034	A human player joins.
+5	15558	11	6	f144	Control Stick
+5	15582	7	6	fd8c	Type B Control
+5	15600	12	0	8034	A human player joins.
+5	15650	6	6	3a87	L Stick
+5	15664	7	6	c9a3	Type A Control
+5	15680	12	0	8034	A human player joins.
+5	15730	6	6	3a87	L Stick
+5	15744	7	6	fd8c	Type B Control
+5	15760	12	0	8034	A human player joins.
+5	15784	5	6	dd07	+Ctrl Pad
+5	15796	6	6	9312	Type A Ctrl
+5	15810	16	6	b532	(Nunchuk style not usable)
+5	15844	12	0	8034	A human player joins.
+5	15868	5	6	dd07	+Ctrl Pad
+5	15880	6	6	998f	Type B Ctrl
+5	15894	16	6	b532	(Nunchuk style not usable)
+5	18448	18	0	5348	Report milestone events.
+5	18498	19	2	175d	(Not reported in fast-forward.)
+5	18680	16	0	7406	Report when players improve.
+5	18730	19	2	175d	(Not reported in fast-forward.)
+5	19112	16	0	c2f5	Report changes in Chemistry.
+5	19162	19	2	175d	(Not reported in fast-forward.)
+5	19352	20	0	ee4d	Report changes in fan count.
+5	19402	19	2	175d	(Not reported in fast-forward.)
+5	19592	19	0	f490	Report on season fatigue.
+5	19642	19	2	175d	(Not reported in fast-forward.)
+5	19828	18	0	2288	Show game details in fast-forward.
+5	19878	19	2	175d	(Not reported in fast-forward.)
+5	20016	24	6	b9ba	No free Arrange team slot, so you can't save.
+5	20108	15	2	0959	Finishing leads to the ending,
+5	20146	17	2	63d0	and you can save your team as
+5	20184	12	2	0876	an Arrange team.
+5	20212	17	2	8b05	Finishing leads to the ending.
+5	20248	10	6	69be	No team news
+5	20278	10	6	c238	No injury news
+5	20300	16	6	986b	No 1st/2nd Team move news
+5	20340	11	6	894a	No join/leave news
+5	20368	15	6	d9ce	No records about to be set
+5	20402	13	6	8696	No records set
+5	20434	12	6	8bf3	No other news
+5	20528	11	2	d0cc	Left: personal reasons
+5	20774	5	1	1847	Draft 1st
+5	20806	5	1	7475	Draft 2nd
+5	20838	5	1	a740	Draft 3rd
+5	21024	7	0	bcb2	Traded from
+5	21038	4	1	aa1e	Orix
+5	21152	8	0	ba8a	Traded from
+5	21168	4	1	aa1e	SoftBank
+5	26624	18	0	a796	Set options for all teams.
+5	26674	22	6	f6c7	SELECT changes all levels at once.
+5	26720	18	0	a796	Set options for all teams.
+5	26812	18	0	a796	Set options for all teams.
+5	26862	17	6	2cf5	Z changes all levels at once.
+5	26900	18	0	a796	Set options for all teams.
+5	26992	16	0	e30b	Control only the lead runner.
+5	27042	17	6	3758	SELECT changes the level.
+5	27080	16	0	e30b	Control only the lead runner.
+5	27156	16	0	e30b	Control only the lead runner.
+5	27206	9	6	e286	Z changes level
+5	27228	16	0	e30b	Control only the lead runner.
+5	27304	16	0	0146	COM controls everything.
+5	27354	17	6	3758	SELECT changes the level.
+5	27392	16	0	0146	COM controls everything.
+5	27468	16	0	0146	COM controls everything.
+5	27518	9	6	e286	Z changes level
+5	27540	16	0	0146	COM controls everything.
+5	27616	13	0	272f	You control throws only.
+5	27666	17	6	3758	SELECT changes the level.
+5	27704	13	0	272f	You control throws only.
+5	27780	13	0	272f	You control throws only.
+5	27830	9	6	e286	Z changes level
+5	27852	13	0	272f	You control throws only.
+5	32744	5	6	5c5b	officially
+5	33576	7	2	d745	Injury!!
+5	33640	3	2	926f	Sprain
+5	33664	3	2	9f0b	Finger
+5	33680	3	2	6742	Elbow
+5	33688	3	2	9daf	Strain
+5	33728	7	2	8911	Herniated disc
+5	33780	6	2	fc3f	Torn ACL
+5	33808	5	2	608d	Back spasm
+5	33820	5	2	8958	Rheumatism
+5	76992	19	0	6925	At the Draft after the season,
+5	77030	13	4	bc89	scouts' in-season work
+5	77204	7	2	b7e9	Once a year,
+5	77320	12	0	d413	Each team's scouts cost
+5	77350	6	4	bdf0	20 pts max.
+5	77392	10	0	e3e3	A scout's points:
+5	77422	8	4	2b1f	Search/Res./Talk
+5	77784	13	0	e446	Set to Auto and scouts
+5	77814	13	0	8ccd	find players on their own.
+5	77844	13	0	f3b6	The positions of players
+5	77874	9	0	b3e0	they find are all
+5	77892	4	2	20a0	Scout's
+5	77904	3	2	798b	call
+5	77924	12	0	4b85	To learn found players'
+5	77954	6	0	2d68	abilities,
+5	77966	7	4	290c	order a scout
+5	78164	14	0	9f6d	Research time? The scout's
+5	78194	5	6	ec99	Research
+5	78288	13	0	3c26	Research players well and
+5	78318	10	0	cf89	in talks and Draft,
+5	78338	5	6	9523	an edge
+5	78464	14	0	f89b	Once talks succeed, if you
+5	78494	14	0	f87d	draft the player, he will
+5	78524	9	6	2cd7	always join you.
+5	78616	15	0	965b	An FA who moved overseas
+5	78654	15	0	6778	wants to return to Japan.
+5	78692	12	0	d1f9	No direct talks with him
+5	78768	14	0	a6e6	Terms you can use in talks
+5	78806	19	6	6b3d	are the same as in FA talks.
+5	78848	17	0	5e01	The Player Rep influences
+5	78886	5	0	ae12	teammates.
+5	79004	6	0	9bb9	A Rep has a
+5	79016	7	6	22af	Leader Level
+5	79030	18	0	a47f	; the higher, the more influence.
+5	79092	7	6	22af	Leader Level
+5	79106	18	0	278e	is set by stats and past records.
+5	79144	11	0	d8b5	So as stats rise,
+5	79166	7	6	22af	Leader Level
+5	79180	12	0	c3d0	rises; as stats fall,
+5	79204	7	6	22af	Leader Level
+5	79236	8	4	0a53	Solo Training
+5	79274	37	0	1023	One of your players can do solo training with another club's player.
+5	79388	15	0	54d0	Via his partner, a
+5	79418	3	6	5568	Growth
+5	79426	3	6	faa6	Hint
+5	79612	17	0	c1ea	Set which teammates should
+5	79650	17	0	6a52	have Chemistry. Build it in
+5	79688	6	0	6675	games and
+5	79944	9	0	213b	To form Chemistry,
+5	79962	9	6	8a73	Loyalty 70+
+5	80304	10	4	7c2b	Chemistry Abilities
+5	80380	14	0	3fd5	Chemistry abilities come
+5	80418	12	0	e354	from game experience.
+5	80456	18	0	9c75	More experience can evolve it;
+5	80652	30	2	73ee	Learned Chemistry abilities are lost if the link breaks.
+5	80846	18	0	0e0d	If a player left for another club
+5	80884	18	0	ab5a	by FA, you can get compensation
+5	80922	17	0	2261	from his new club for the lost
+5	80960	5	0	678e	strength.
+5	81036	17	2	b933	However, players who left overseas
+5	81074	12	2	c9a4	bring no compensation.
+5	81412	5	4	559c	Protect
+5	81840	9	4	10fe	Setting Salaries
+5	82108	6	2	b3a7	Salary Notes
+5	82416	17	0	09e1	Before the Pennant, you can change
+5	82454	7	0	d47d	the coaches.
+5	82492	14	0	8627	After this window closes,
+5	82530	9	4	0e33	SELECT Button
+5	82648	17	0	09e1	Before the Pennant, you can change
+5	82686	7	0	d47d	the coaches.
+5	82724	14	0	8627	After this window closes,
+5	82880	17	0	09e1	Before the Pennant, you can change
+5	82918	7	0	d47d	the coaches.
+5	82956	14	0	8627	After this window closes,
+5	82994	4	4	d7b7	Z Button
+5	83112	17	0	09e1	Before the Pennant, you can change
+5	83150	7	0	d47d	the coaches.
+5	83188	14	0	8627	After this window closes,
+5	83344	18	0	cbd2	Before the Pennant, you can change
+5	83382	7	0	d47d	the Player Rep
+5	83420	14	0	8627	After this window closes,
+5	83458	9	4	0e33	SELECT Button
+5	83576	18	0	cbd2	Before the Pennant, you can change
+5	83614	7	0	d47d	the Player Rep
+5	83652	14	0	8627	After this window closes,
+5	83808	18	0	cbd2	Before the Pennant, you can change
+5	83846	7	0	d47d	the Player Rep
+5	83884	14	0	8627	After this window closes,
+5	83922	4	4	d7b7	Z Button
+5	84040	18	0	cbd2	Before the Pennant, you can change
+5	84078	7	0	d47d	the Player Rep
+5	84116	14	0	8627	After this window closes,
