@@ -33,10 +33,14 @@ CELL_W, CELL_H, ROW_BYTES = 22, 28, 11
 SS = 8                                                           # supersampling factor
 # (letter advance, baseline row, cap height in rows) per font
 LARGE = {"adv": 11, "base": 22, "cap": 17.0, "ink_w": 9.4}
-# SMALL: the score bug draws only the first ~13 pixel columns of a 16-wide cell (fitted on a frame: 13 columns
-# stretched to 17 screen pixels), so a pair must end by column 12: two letters of 6.5 pixels. With the former
-# 8-pixel letters the second one lost its right edge ("Mo" read "Mc").
-SMALL = {"adv": 6.5, "base": 14, "cap": 11.5, "ink_w": 5.6}
+SMALL = {"adv": 8, "base": 14, "cap": 11.5, "ink_w": 7.0}
+# NARROW pairs: the match score bug draws the LARGE font at about 0.9 scale with a cell advance of only 17 screen
+# pixels (the cell is 22 wide), so the next cell paints over the right ~3 columns of every cell: the second letter of
+# "Ho" lost its right edge ("Hc"). Names that the score bug shows (the school and team names of sct_main.rel) use
+# their own glyph slots, key NARROW + pair, with the two letters inside the first 17 columns.
+NARROW = "\x02"
+NARROW_LARGE = {"adv": 8, "base": 22, "cap": 17.0, "ink_w": 7.2}
+NARROW_SMALL = {"adv": 6.5, "base": 14, "cap": 11.5, "ink_w": 5.6}
 FONTS = (("small", 0x000000, SMALL), ("large", 0x05DF64, LARGE))
 FONT_END = {0x000000: 0x05DF64, 0x05DF64: 0x117400}             # each font's space ends at the next one
 KANJI_SLOTS = range(706, 3744)
@@ -54,14 +58,15 @@ _cache, _faces = {}, {}
 
 def _coverage(pair, m):
     """Ink coverage of a letter pair at SS times the cell size, as an 'L' image."""
-    if m["adv"] not in _faces:
+    mkey = (m["adv"], m["ink_w"])
+    if mkey not in _faces:
         probe = ImageFont.truetype(FONT_FILE, 1000, index=FONT_INDEX)
         adv = probe.getlength("M") / 1000.0                          # advance in em
         cap = -probe.getbbox("H", anchor="ls")[1] / 1000.0           # cap height in em
         em = m["ink_w"] * SS / adv
-        _faces[m["adv"]] = (ImageFont.truetype(FONT_FILE, round(em), index=FONT_INDEX),
+        _faces[mkey] = (ImageFont.truetype(FONT_FILE, round(em), index=FONT_INDEX),
                             m["cap"] * SS / (cap * em))              # face, vertical stretch
-    face, stretch = _faces[m["adv"]]
+    face, stretch = _faces[mkey]
     h = int(CELL_H * SS / stretch) + 1
     img = Image.new("L", (CELL_W * SS, h), 0)
     draw = ImageDraw.Draw(img)
@@ -80,7 +85,9 @@ def render_pair(pair, large):
     """A letter pair as 28 rows of 22 shade values (0..15)."""
     key = (pair, large)
     if key not in _cache:
-        hi = _coverage(pair, LARGE if large else SMALL)
+        narrow = pair.startswith(NARROW)
+        hi = _coverage(pair[1:] if narrow else pair,
+                       (NARROW_LARGE if narrow else LARGE) if large else (NARROW_SMALL if narrow else SMALL))
         cov = hi.resize((CELL_W, CELL_H), Image.BOX)
         if large:
             ring = hi.point(lambda v: 255 if v > 96 else 0).filter(ImageFilter.MaxFilter(2 * 13 + 1))
@@ -339,7 +346,8 @@ def pack_font(glyphs, size):
 
 def pair_glyph(pair, large, cache):
     """Compressed glyph of a letter pair. cache: dict kept in _work/pair_glyphs.json by the caller."""
-    key = "%s|%d|%s" % (FONT_FILE, FONT_INDEX, json.dumps([LARGE if large else SMALL, SS], sort_keys=True)) + "|" + pair
+    m = (NARROW_LARGE if large else NARROW_SMALL) if pair.startswith(NARROW) else (LARGE if large else SMALL)
+    key = "%s|%d|%s" % (FONT_FILE, FONT_INDEX, json.dumps([m, SS], sort_keys=True)) + "|" + pair
     if key not in cache:
         cache[key] = compress(to_grid(render_pair(pair, large))).hex()
     return bytes.fromhex(cache[key])

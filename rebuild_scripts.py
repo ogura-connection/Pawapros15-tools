@@ -129,14 +129,15 @@ DOL_END = 0xFFFF       # closes a dialog string of main.dol, and fills the space
 
 # ── English -> glyph units ────────────────────────────────────────────────
 
-def encode_text(text, slots):
-    """String -> list of 12-bit units. slots = {letter pair: glyph index}"""
+def encode_text(text, slots, narrow=False):
+    """String -> list of 12-bit units. slots = {letter pair: glyph index}. narrow: the pairs of the score-bug
+    names (pair_font.NARROW)"""
     units = []
     for kind, value in pair_font.text_segments(text):
         if kind == "newline":
             units.append(S.TEXT_NEWLINE)
         elif kind == "pair":
-            units.append(0 if value == "  " else slots[value])
+            units.append(0 if value == "  " else slots[(pair_font.NARROW if narrow else "") + value])
         else:
             g = char_to_glyph(value)
             if g is None:
@@ -815,10 +816,14 @@ def load_translation(path, scripts):
     return texts
 
 
-def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None, names=()):
+def assign_pairs(scripts, texts, orig, strings=None, dol=None, messages=None, names=(), narrow=()):
     """Choose a glyph slot for every letter pair in the translation. Returns {pair: glyph index}.
     dol = load_dol(): the dialog strings of main.dol with their English. names = surnames in English."""
     pairs, usage = set(), collections.Counter()
+    for en in narrow:                           # score-bug names: their own slots (pair_font.NARROW)
+        for kind, value in pair_font.text_segments(en):
+            if kind == "pair" and value != "  ":
+                pairs.add(pair_font.NARROW + value)
     for en in names:                            # one name per field: pairs from its first letter
         for kind, value in pair_font.text_segments(en):
             if kind == "pair" and value != "  ":
@@ -980,7 +985,8 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
     ore_names = school_names.load_tsv(school_names.ORE_TSV)      # My Life names: a table behind the annexes
     slots = assign_pairs(scripts + blocks, texts, orig, strings, dol, messages,
                          name_table.plates(names) + name_table.short_names(names) + name_table.player_plates(players)
-                         + name_table.inplace_plates(stores) + list(schools.values()) + list(ore_names.values()) if names else ())
+                         + name_table.inplace_plates(stores) + list(ore_names.values()) if names else (),
+                         narrow=list(schools.values()))
     patched = {}                    # module id -> {(section, old offset): new bytes}
     moved = {}                      # (module id, section, position of a relocation) -> new addend
     repl = {name: {i: encode_text(t, slots) for i, t in runs.items()} for name, runs in texts.items()}
@@ -1071,7 +1077,7 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
             try:
                 school_ptrs = school_names.pointers(sct, schools)
                 schools = {o: schools[o] for o in set(school_ptrs.values())}
-                school_bytes, where = school_names.table(schools, enc)
+                school_bytes, where = school_names.table(schools, lambda t: encode_text(t, slots, narrow=True))
             except ValueError as e:
                 sys.exit(str(e))
             pad = bytes(-len(sec_data) % 8)
