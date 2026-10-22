@@ -34,10 +34,10 @@ def _grow(m, n):
     return out[n:-n, n:-n] if n else out
 
 
-def lettering(text, cap, squeeze=1.0, edge=2):
+def lettering(text, cap, squeeze=1.0, edge=1):
     """white italic letters, black outline `edge` px, soft dark shadow down-right: index array"""
     m = _cov(text, cap, squeeze=squeeze)
-    pad = edge + 3
+    pad = edge + 8
     m = np.pad(m, pad)
     ring = _grow(m, edge)
     sh = np.roll(np.roll(_grow(ring, 1), 2, 0), 1, 1)
@@ -71,11 +71,22 @@ def put(art, w, h, valign):
 UNITS = {"mo": "Mo", "day": "Day"}
 WEEK = {"04": "Mon", "05": "Tue", "06": "Wed", "07": "Thu", "08": "Fri", "09": "Sat", "0a": "Sun"}
 
+def common_cap(texts, w, h, caps, sq=1.0):
+    """the largest cap height at which every text fits, so the set shares one letter size"""
+    for cap in caps:
+        if all(lettering(t, cap, sq).shape[1] <= w and lettering(t, cap, sq).shape[0] <= h for t in texts):
+            return cap
+    raise ValueError(texts)
+
+
 CELLS = {}
-CELLS["mo"] = put(fit("Mo", 40, 40, range(26, 8, -1)), 40, 40, "bottom")
-CELLS["day"] = put(fit("Day", 40, 40, range(26, 8, -1)), 40, 40, "bottom")
+SQ = 0.85
+UCAP = common_cap(["Mo", "Day"], 40, 40, range(26, 8, -1), SQ)
+CELLS["mo"] = put(lettering("Mo", UCAP, SQ), 40, 40, "bottom")
+CELLS["day"] = put(lettering("Day", UCAP, SQ), 40, 40, "bottom")
+WCAP = common_cap(list(WEEK.values()), 48, 48, range(30, 8, -1), SQ)
 for sp, t in WEEK.items():
-    CELLS[sp] = put(fit(t, 48, 48, range(30, 8, -1)), 48, 48, "center")
+    CELLS[sp] = put(lettering(t, WCAP, SQ), 48, 48, "center")
 
 # sprites 07 / 08 draw their 48 x 48 cell as two parts: the top 16 rows (page 3) and the next 32 rows (page 4)
 for sp in ("07", "08"):

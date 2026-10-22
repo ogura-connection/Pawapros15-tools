@@ -1339,6 +1339,182 @@
    "copy": "clear",
    "style": "ek_cell_0f_0",
    "dy": 2
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 4,
+   "rect": [
+    0,
+    80,
+    40,
+    120
+   ],
+   "text": "Mo",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_mo",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 4,
+   "rect": [
+    40,
+    80,
+    80,
+    120
+   ],
+   "text": "Day",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_day",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 3,
+   "rect": [
+    40,
+    16,
+    88,
+    64
+   ],
+   "text": "Mon",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_04",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 3,
+   "rect": [
+    0,
+    64,
+    48,
+    112
+   ],
+   "text": "Tue",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_05",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 3,
+   "rect": [
+    48,
+    64,
+    96,
+    112
+   ],
+   "text": "Wed",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_06",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 3,
+   "rect": [
+    0,
+    112,
+    48,
+    128
+   ],
+   "text": "Thu",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_07_a",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 4,
+   "rect": [
+    0,
+    0,
+    48,
+    32
+   ],
+   "text": "Thu",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_07_b",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 3,
+   "rect": [
+    48,
+    112,
+    96,
+    128
+   ],
+   "text": "Fri",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_08_a",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 4,
+   "rect": [
+    48,
+    0,
+    96,
+    32
+   ],
+   "text": "Fri",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_08_b",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 4,
+   "rect": [
+    0,
+    32,
+    48,
+    80
+   ],
+   "text": "Sat",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_09",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
+  },
+  {
+   "bank": "z4_emp_0#1",
+   "page": 4,
+   "rect": [
+    48,
+    32,
+    96,
+    80
+   ],
+   "text": "Sun",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_0a",
+   "leftd": 1,
+   "note": "big Eikan date card, English"
   }
  ],
  "sprite_parts": [
