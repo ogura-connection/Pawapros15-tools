@@ -2743,22 +2743,22 @@
      "sprite": "11",
      "text": "yen",
      "style": "lo_b_pixfont",
-     "font": "ttf:tahoma:9:0.0:1.0:0.0",
-     "baseline": 20
+     "font": "ttf:tahoma:8:0.0:1.0:0.0",
+     "baseline": 19
     },
     {
      "sprite": "0e",
      "text": "Pawa",
      "style": "lo_b_pixfont",
-     "font": "ttf:tahoma:10:0.0:1.0:0.0",
+     "font": "ttf:tahoma:9:0.0:1.0:0.0",
      "baseline": 20
     },
     {
      "sprite": "0f",
      "text": "Pa\nwa",
      "style": "lo_b_pixfont",
-     "font": "ttf:tahoma:9:0.0:1.0:0.0",
-     "baseline": 21
+     "font": "ttf:tahoma:8:0.0:1.0:0.0",
+     "baseline": 20
     },
     {
      "from": [
