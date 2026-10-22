@@ -968,5 +968,55 @@
    "sprites": "g3_odm#3",
    "sprite_prefix": "g3_odm"
   }
+ ],
+ "paint": [
+  {
+   "bank": "g3_od#1",
+   "page": 0,
+   "rect": [
+    0,
+    0,
+    48,
+    32
+   ],
+   "text": "Away",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_away",
+   "leftd": 1,
+   "note": "lineup header Away / Home / VS"
+  },
+  {
+   "bank": "g3_od#1",
+   "page": 0,
+   "rect": [
+    48,
+    0,
+    96,
+    32
+   ],
+   "text": "Home",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_home",
+   "leftd": 1,
+   "note": "lineup header Away / Home / VS"
+  },
+  {
+   "bank": "g3_od#1",
+   "page": 0,
+   "rect": [
+    0,
+    32,
+    48,
+    80
+   ],
+   "text": "VS",
+   "font": "ttf:narrow:8",
+   "copy": "clear",
+   "style": "dd_vs",
+   "leftd": 1,
+   "note": "lineup header Away / Home / VS"
+  }
  ]
 }

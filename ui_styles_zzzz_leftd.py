@@ -137,3 +137,96 @@ def ground_label(text="Ground Lv.", w=80, h=24):
 
 
 STYLES["dd_ground"] = _fixed(ground_label())
+
+
+# order.arc g3_od#1 page 0 (8-bit, own palette): 先攻 / 後攻 / 対 of the lineup header -> Away / Home / VS.
+# Pictures are built in RGBA (gradient letters, rings) and snapped to the page palette.
+import os as _os
+import ui_textures as _U
+
+_ORDER_PAL = {}
+
+
+def _order_palette():
+    if not _ORDER_PAL:
+        p = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "_work", "orig_arc", "order.arc")
+        d = open(p, "rb").read()
+        b = _U.banks(d, _U.elf_symbols(d))[1]
+        cols = _U.page_colours(_U.palette_colours(d, b["pal"]), 0, _U.raw_size(d, *b["pages"][0]))
+        _ORDER_PAL["c"] = cols.astype(int)
+    return _ORDER_PAL["c"]
+
+
+ROUND = "/System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf"
+
+
+def _mask(text, cap, path=ROUND, over=4):
+    probe = ImageFont.truetype(path, 400)
+    bb = probe.getbbox("H")
+    f = ImageFont.truetype(path, round(400 * cap * over / (bb[3] - bb[1])))
+    l, t, r, b = f.getbbox(text, anchor="ls")
+    img = Image.new("L", ((r - l) + 8 * over, (cap + 10) * over), 0)
+    ImageDraw.Draw(img).text((4 * over - l, (cap + 4) * over), text, fill=255, font=f, anchor="ls")
+    W, H = (img.width // over) * over, (img.height // over) * over
+    a = np.asarray(img.crop((0, 0, W, H)).resize((W // over, H // over), Image.BOX), np.float32) > 127
+    ys, xs = np.nonzero(a)
+    return a[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
+def _header(text, cap, top, bottom, rings, shadow, w, h, dy=0):
+    """rings = [(colour, px)] outward from the letters; shadow colour one pixel down-right of the outermost ring"""
+    m = _mask(text, cap)
+    pad = sum(px for _, px in rings) + 3
+    m = np.pad(m, pad)
+    H, W = m.shape
+    rgba = np.zeros((H, W, 4), int)
+    reach, grown = 0, []
+    for c, px in rings:
+        reach += px
+        grown.append((c, _grow(m, reach)))
+    out_ring = grown[-1][1]
+    sh = np.roll(np.roll(out_ring, 1, 0), 1, 1)
+    rgba[sh] = list(shadow) + [255]
+    for c, g in reversed(grown):
+        rgba[g] = list(c) + [255]
+    ys, xs = np.nonzero(m)
+    y0, y1 = ys.min(), ys.max()
+    for y in range(y0, y1 + 1):
+        t = (y - y0) / max(1, y1 - y0)
+        col = [round(top[k] + (bottom[k] - top[k]) * t) for k in range(3)] + [255]
+        rgba[y][m[y]] = col
+    ys, xs = np.nonzero(rgba[..., 3])
+    rgba = rgba[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+    pal = _order_palette()
+    opaque = np.nonzero(pal[:, 3] > 0)[0]
+    flat = rgba.reshape(-1, 4)
+    idx = np.zeros(len(flat), np.uint8)
+    for i, px in enumerate(flat):
+        if px[3]:
+            d = ((pal[opaque, :3] - px[:3]) ** 2).sum(1)
+            idx[i] = opaque[int(d.argmin())]
+    idx = idx.reshape(rgba.shape[:2])
+    ih, iw = idx.shape
+    if iw > w or ih > h:
+        raise ValueError((text, iw, ih, w, h))
+    cell = np.zeros((h, w), np.uint8)
+    x0, yy = (w - iw) // 2, (h - ih) // 2 + dy
+    cell[yy:yy + ih, x0:x0 + iw] = idx
+    return cell
+
+
+TEAL, WHT, MINT = (0, 74, 90), (255, 255, 255), (170, 235, 220)
+
+
+def _fit_header(text, caps, *a):
+    for cap in caps:
+        try:
+            return _header(text, cap, *a)
+        except ValueError:
+            continue
+    raise ValueError(text)
+
+
+STYLES["dd_away"] = _fixed(_fit_header("Away", range(13, 7, -1), (222, 115, 0), (222, 16, 8), [(WHT, 1), (TEAL, 1)], MINT, 48, 32))
+STYLES["dd_home"] = _fixed(_fit_header("Home", range(13, 7, -1), (120, 170, 250), (35, 85, 190), [(WHT, 1), (TEAL, 1)], MINT, 48, 32))
+STYLES["dd_vs"] = _fixed(_fit_header("VS", range(20, 7, -1), (255, 235, 40), (255, 120, 0), [((16, 0, 164), 3), (WHT, 2)], MINT, 48, 48))
