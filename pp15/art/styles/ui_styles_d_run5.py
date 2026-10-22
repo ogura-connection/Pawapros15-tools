@@ -1,0 +1,136 @@
+"""Label styles of art run 5, agent D (pena_sub.arc: r5_ren, r5_renz, s3_pic00, s3_pij00, s3_pik00, s3_sai00, s3_saz00, g3_psp_0, g3_ps_0).
+Read from the Japanese lettering by gen_pena_sub_d_spec.py (kit Bank.learn / learn_logo); loaded by pp15/art/typeset.py."""
+from pp15.art import typeset as ui_type
+from .ui_styles_ore_ini import ringfill
+
+STYLES = {}
+
+STYLES["d5_cancel"] = ringfill([15, 15, 15, 15, 15, 15], [9, 9, 6], [4, 4])
+STYLES["d5_cancel_s"] = ringfill([15, 15, 15, 15, 15, 15], [9], [4])
+STYLES["d5_abil"] = ringfill([12, 15, 15, 15, 15, 15], [9, 9, 5], [4, 2])
+STYLES["d5_abil_s"] = ringfill([12, 15, 15, 15, 15, 15], [9], [4])
+STYLES["d5_chem"] = ringfill([15, 15, 15, 15, 15, 15], [12, 8, 8], [8, 3, 3])
+STYLES["d5_chem_s"] = ringfill([15, 15, 15, 15, 15, 15], [12], [8])
+STYLES["d5_lvl"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7], [])
+STYLES["d5_lvl_s"] = ringfill([15, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_sw1"] = ringfill([13, 15, 15, 15, 15, 15], [7, 7], [])
+STYLES["d5_sw1_s"] = ringfill([13, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_sw2"] = ringfill([13, 15, 15, 15, 15, 15], [7, 7], [2])
+STYLES["d5_sw2_s"] = ringfill([13, 15, 15, 15, 15, 15], [7], [2])
+STYLES["d5_chp"] = ringfill([15, 15, 15, 14, 12, 12], [11, 6, 4], [1])
+STYLES["d5_chp_s"] = ringfill([15, 15, 15, 14, 12, 12], [11], [1])
+STYLES["d5_rep27"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7, 2], [])
+STYLES["d5_rep27_s"] = ringfill([15, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_rep28"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7, 2], [])
+STYLES["d5_rep28_s"] = ringfill([15, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_rep2c"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7], [])
+STYLES["d5_rep2c_s"] = ringfill([15, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_rep2d"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7], [])
+STYLES["d5_rep2d_s"] = ringfill([15, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_tag"] = ringfill([15, 15, 15, 15, 15, 15], [9, 7], [])
+STYLES["d5_tag_s"] = ringfill([15, 15, 15, 15, 15, 15], [9], [])
+STYLES["d5_tag2"] = ringfill([15, 15, 15, 15, 15, 15], [7, 7], [])
+STYLES["d5_tag2_s"] = ringfill([15, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_love"] = ringfill([15, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_love_s"] = ringfill([15, 15, 15, 15, 15, 15], [7], [])
+STYLES["d5_msg"] = ringfill([11, 11, 12, 13, 13, 14], [9, 4, 4], [4])
+STYLES["d5_msg_s"] = ringfill([11, 11, 12, 13, 13, 14], [9], [4])
+STYLES["d5_conf"] = ringfill([1, 1, 1, 1, 1, 1], [15, 15, 15], [8])
+STYLES["d5_conf_s"] = ringfill([1, 1, 1, 1, 1, 1], [15], [8])
+STYLES["d5_f0"] = ringfill([12, 12, 12, 13, 13, 13], [9, 6, 6, 10, 10, 10], [4, 3])
+STYLES["d5_f0_s"] = ringfill([12, 12, 12, 13, 13, 13], [9], [4])
+STYLES["d5_btnb"] = ringfill([1, 1, 1, 1, 1, 1], [8, 8, 9], [15])
+STYLES["d5_btnb_s"] = ringfill([1, 1, 1, 1, 1, 1], [8], [15])
+STYLES["d5_cc"] = ringfill([14, 14, 14, 13, 12, 12], [9, 6, 15, 15], [15, 15, 1, 1])
+STYLES["d5_cc_s"] = ringfill([14, 14, 14, 13, 12, 12], [9], [15])
+STYLES["d5_hp"] = ringfill([3, 1, 1, 1, 1, 1], [8, 8], [15, 15])
+STYLES["d5_hp_s"] = ringfill([3, 1, 1, 1, 1, 1], [8], [15])
+STYLES["d5_hb"] = ringfill([3, 1, 1, 1, 1, 1], [8, 8], [15, 15])
+STYLES["d5_hb_s"] = ringfill([3, 1, 1, 1, 1, 1], [8], [15])
+STYLES["d5_hg"] = ringfill([3, 1, 1, 1, 1, 1], [5, 8], [15, 15])
+STYLES["d5_hg_s"] = ringfill([3, 1, 1, 1, 1, 1], [5], [15])
+STYLES["d5_rowp"] = ringfill([8, 8, 8, 8, 8, 8], [10], [])
+STYLES["d5_rowp_s"] = ringfill([8, 8, 8, 8, 8, 8], [10], [])
+STYLES["d5_rowb"] = ringfill([8, 8, 8, 8, 8, 8], [10], [])
+STYLES["d5_rowb_s"] = ringfill([8, 8, 8, 8, 8, 8], [10], [])
+STYLES["d5_rowg"] = ringfill([8, 8, 8, 8, 8, 8], [10], [])
+STYLES["d5_rowg_s"] = ringfill([8, 8, 8, 8, 8, 8], [10], [])
+STYLES["d5_tab76"] = ringfill([1, 1, 1, 1, 1, 1], [5, 8, 10], [15])
+STYLES["d5_tab76_s"] = ringfill([1, 1, 1, 1, 1, 1], [5], [15])
+STYLES["d5_tab77"] = ringfill([1, 1, 1, 1, 1, 1], [5, 8, 10], [15])
+STYLES["d5_tab77_s"] = ringfill([1, 1, 1, 1, 1, 1], [5], [15])
+STYLES["d5_tab78"] = ringfill([1, 1, 1, 1, 1, 1], [5, 8, 10], [15])
+STYLES["d5_tab78_s"] = ringfill([1, 1, 1, 1, 1, 1], [5], [15])
+STYLES["d5_tab79"] = ringfill([1, 1, 1, 1, 1, 1], [5, 8, 10], [15])
+STYLES["d5_tab79_s"] = ringfill([1, 1, 1, 1, 1, 1], [5], [15])
+STYLES["d5_type"] = ringfill([2, 1, 1, 1, 1, 1], [15], [])
+STYLES["d5_type_s"] = ringfill([2, 1, 1, 1, 1, 1], [15], [])
+STYLES["d5_pij"] = ringfill([15, 15, 15, 15, 15, 15], [1, 1], [])
+STYLES["d5_pij_s"] = ringfill([15, 15, 15, 15, 15, 15], [1], [])
+STYLES["d5_pijm"] = ringfill([13, 15, 15, 15, 15, 15], [1, 1], [])
+STYLES["d5_pijm_s"] = ringfill([13, 15, 15, 15, 15, 15], [1], [])
+STYLES["d5_sai"] = ringfill([1, 1, 1, 1, 1, 1], [11], [])
+STYLES["d5_sai_s"] = ringfill([1, 1, 1, 1, 1, 1], [11], [])
+STYLES["d5_saib"] = ringfill([1, 1, 1, 1, 1, 1], [13], [])
+STYLES["d5_saib_s"] = ringfill([1, 1, 1, 1, 1, 1], [13], [])
+STYLES["d5_sair"] = ringfill([1, 1, 1, 1, 1, 1], [14], [])
+STYLES["d5_sair_s"] = ringfill([1, 1, 1, 1, 1, 1], [14], [])
+STYLES["d5_pt"] = ringfill([13, 15, 14, 15, 15, 15], [8, 8, 8, 8], [])
+STYLES["d5_pt_s"] = ringfill([13, 15, 14, 15, 15, 15], [8], [])
+STYLES["d5_ps"] = ringfill([1, 1, 1, 1, 1, 1], [8], [])
+STYLES["d5_ps_s"] = ringfill([1, 1, 1, 1, 1, 1], [8], [])
+STYLES["d5_pi"] = ringfill([1, 1, 1, 1, 1, 1], [11], [])
+STYLES["d5_pi_s"] = ringfill([1, 1, 1, 1, 1, 1], [11], [])
+STYLES["d5_pi2"] = ringfill([1, 1, 1, 1, 1, 1], [13], [])
+STYLES["d5_pi2_s"] = ringfill([1, 1, 1, 1, 1, 1], [13], [])
+STYLES["d5_chk"] = ringfill([15, 14, 13, 11, 11, 10], [1, 1, 2], [4, 4])
+STYLES["d5_chk_s"] = ringfill([15, 14, 13, 11, 11, 10], [1], [4])
+STYLES["d5_room"] = ringfill([8, 8, 8, 10, 8, 8], [15, 15], [4, 4])
+STYLES["d5_room_s"] = ringfill([8, 8, 8, 10, 8, 8], [15], [4])
+STYLES["d5_gr"] = ringfill([14, 15, 13, 14, 13, 13], [8, 7, 7, 5, 2], [2, 3, 2])
+STYLES["d5_gr_s"] = ringfill([14, 15, 13, 14, 13, 13], [8], [2])
+STYLES["d5_t_renz"] = ui_type.logo(**{'fill': [111, 140, 143, 152, 157, 158], 'outline': 103, 'white': 227, 'rim': 254, 'shadow': [254, 254], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_renz_s"] = STYLES["d5_t_renz"]
+STYLES["d5_t_saz00"] = ui_type.logo(**{'fill': [239, 224, 200, 180, 178, 72], 'outline': 32, 'white': 255, 'rim': 98, 'shadow': [98], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz00_s"] = STYLES["d5_t_saz00"]
+STYLES["d5_t_saz02"] = ui_type.logo(**{'fill': [183, 190, 194, 196, 214, 214], 'outline': 2, 'white': 1, 'rim': 94, 'shadow': [35, 35, 35, 35, 78], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz02_s"] = STYLES["d5_t_saz02"]
+STYLES["d5_t_saz03"] = ui_type.logo(**{'fill': [188, 195, 158, 154, 163, 161], 'outline': 167, 'white': 1, 'rim': 71, 'shadow': [33, 33, 33, 33, 68], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz03_s"] = STYLES["d5_t_saz03"]
+STYLES["d5_t_saz04"] = ui_type.logo(**{'fill': [81, 81, 81, 92, 82, 91], 'outline': 44, 'white': 1, 'rim': 94, 'shadow': [90, 35, 35, 35, 71], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz04_s"] = STYLES["d5_t_saz04"]
+STYLES["d5_t_saz05"] = ui_type.logo(**{'fill': [227, 99, 101, 126, 124, 124], 'outline': 105, 'white': 1, 'rim': 12, 'shadow': [53, 33, 33, 33, 68], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz05_s"] = STYLES["d5_t_saz05"]
+STYLES["d5_t_saz06"] = ui_type.logo(**{'fill': [249, 235, 235, 254, 253, 253], 'outline': 239, 'white': 1, 'rim': 12, 'shadow': [53, 35, 35, 35, 78], 'soft': [], 'thick': 2, 'band': 2})
+STYLES["d5_t_saz06_s"] = STYLES["d5_t_saz06"]
+
+# vertical lettering: the same styles on art turned a quarter turn anticlockwise (reads bottom to top)
+import numpy as _np
+def _win(style, c0, c1):
+    def cut(ink, base):
+        art, b = style(ink, base)
+        out = art[:, c0:c1]
+        if out.shape[1] == 0:
+            out = _np.zeros((art.shape[0], 1), _np.uint8)
+        return out, b
+    return cut
+def _turned(style):
+    def f(ink, base):
+        t = _np.rot90(ink)
+        out, b = style(t, t.shape[0])
+        return out, out.shape[0]
+    return f
+STYLES["d5_msg~0_120"] = _win(STYLES["d5_msg"], 0, 120)
+STYLES["d5_msg~0_128"] = _win(STYLES["d5_msg"], 0, 128)
+STYLES["d5_msg~120_248"] = _win(STYLES["d5_msg"], 120, 248)
+STYLES["d5_msg~128_256"] = _win(STYLES["d5_msg"], 128, 256)
+STYLES["d5_msg~248_4096"] = _win(STYLES["d5_msg"], 248, 4096)
+STYLES["d5_msg~256_4096"] = _win(STYLES["d5_msg"], 256, 4096)
+STYLES["d5_tab76_v"] = _turned(STYLES["d5_tab76"])
+STYLES["d5_tab76_vs"] = _turned(STYLES["d5_tab76_s"])
+STYLES["d5_tab77_v"] = _turned(STYLES["d5_tab77"])
+STYLES["d5_tab77_vs"] = _turned(STYLES["d5_tab77_s"])
+STYLES["d5_tab78_v"] = _turned(STYLES["d5_tab78"])
+STYLES["d5_tab78_vs"] = _turned(STYLES["d5_tab78_s"])
+STYLES["d5_tab79_v"] = _turned(STYLES["d5_tab79"])
+STYLES["d5_tab79_vs"] = _turned(STYLES["d5_tab79_s"])

@@ -1,7 +1,7 @@
 """Golden-output check: the build must keep producing exactly the files that were released.
 
     python3 tests/golden.py record    store the SHA-1 of every installed game file (DATA/files, DATA/sys)
-    python3 tests/golden.py check     rebuild (rebuild_scripts.py build) and compare with the stored hashes
+    python3 tests/golden.py check     rebuild (python3 -m pp15 build) and compare with the stored hashes
 
 Run `check` after every refactoring step. The hashes carry no game data, so the list is safe to keep in git.
 """
@@ -35,15 +35,16 @@ def hash_game_files():
     return out
 
 
-def main():
-    mode = sys.argv[1] if len(sys.argv) > 1 else ""
+def main(argv=None):
+    argv = sys.argv[1:] if argv is None else argv
+    mode = argv[0] if argv else ""
     if mode == "record":
         hashes = hash_game_files()
         with open(GOLDEN, "w") as f:
             json.dump(hashes, f, indent=0, sort_keys=True)
         print("recorded", len(hashes), "files")
     elif mode == "check":
-        build = subprocess.run([sys.executable, "rebuild_scripts.py", "build"], cwd=ROOT,
+        build = subprocess.run([sys.executable, "-m", "pp15", "build"], cwd=ROOT,
                                capture_output=True, text=True)
         if build.returncode != 0:
             sys.exit("build failed:\n" + build.stdout[-2000:] + build.stderr[-2000:])

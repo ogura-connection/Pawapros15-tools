@@ -292,15 +292,15 @@ Company and club teams: the name romanised, the business translated (ぴちぴ�
   narration of the opening holds 2. One more line scrolls the first away (measured in Dolphin).
 - Keep the line count of the original box unless the English truly needs one more and it fits.
 - One entry per text run. Where a sentence is split into several runs on one line (colour change,
-  inserted name, the heart), give the earlier run an even number of letters. `tl.py merge` checks this.
+  inserted name, the heart), give the earlier run an even number of letters. `pp15 merge-script` checks this.
 - Inserted player names are still Japanese and can be 6 cells (12 letters) wide: do not write
   sentences that depend on an English name, and leave room on that line.
-- The script marks the speaker (portrait), colour changes and line breaks; `tl.py export` shows them.
+- The script marks the speaker (portrait), colour changes and line breaks; `pp15 script export` shows them.
 
 ## Working notes (from scenario 1)
 
-- Workflow: `tl.py show FILE A B` prints scenes, `tl.py apply FILE` stores English (one line per run,
-  `-` for an empty run), `tl.py merge` checks everything, then `rebuild_scripts.py build`.
+- Workflow: `pp15 script show FILE A B` prints scenes, `pp15 script apply FILE` stores English (one line per run,
+  `-` for an empty run), `pp15 merge-script` checks everything, then `pp15 build`.
 - Text the game inserts in mid-sentence (ranks, item names, team names) is itself a run somewhere
   else in the file. Give it an even number of letters, with a leading space if needed (` kacho`),
   and end the run before it without a space. Write the sentence so nothing depends on the insert's
@@ -388,7 +388,7 @@ Pitch names on the HUD use MLB Power Pros 2008's English names, shortened where 
 "Shuuto" is the spelling of the English games (not Hepburn "shuto"). H is 高速: "Hard", as in MLB.
 
 In a match the name under the pitcher and on the pitch selector is text in the original-pitch font
-(`kyu_names.py`, `translation/pitch_names.tsv`): capitals, 9 letters at most, no spaces. There the long names
+(`pp15/names/kyu.py`, `translation/pitch_names.tsv`): capitals, 9 letters at most, no spaces. There the long names
 are SLOWBALL, SLOWCURVE, DROPCURVE, KN-CURVE, H-SLIDER, H-SINKER, H-SHUUTO, C-CHANGE, MOVING-FB, and
 ウエスト (pitchout) is PITCHOUT.
 

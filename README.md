@@ -15,46 +15,63 @@ How each store of text was found and how the tools work: `FINDINGS.md`. Voices, 
 ```
 Pawapros15-tools/
   README.md  FINDINGS.md  TECHNICAL_GUIDE.md  TRANSLATION_STYLE.md   what the project knows (read in this order)
-  docs/            PIPELINE.md and TECHNIQUES.md (the method, game independent), a title picture
+  pyproject.toml   the `pp15` package and its command (`pip install -e .`, or run `python3 -m pp15` from this folder)
+  pp15/            the code
+    config.py        every path (repository, DATA, _work, translation, specs, the translation kit, the MLB discs); env overrides
+    cli.py           the `pp15` command: a thin dispatcher to the tools below (`python3 -m pp15 --help`)
+    glyphs.py        glyph table, text encoding and decoding, REL parsing (glyph_cli.py: its own commands)
+    script/          scan.py (formats of the story scripts), translate.py (export / apply / merge of the scenes)
+    text/            strings.py (fixed-slot UI strings), messages.py (Pennant news)
+    names/           table.py (surnames and in-place name tables), schools.py, kyu.py (pitch names)
+    build/           rebuild.py (English + font + names -> DATA/files and DATA/sys), font.py (the pair font)
+    art/             textures.py (sprite pages), labels.py (specs -> .arc), typeset.py (typeface recipes), sheet.py;
+                     styles/ the 91 ui_styles_*.py files, every one imported by typeset.py (file names unchanged for now)
+    disc/            extract.py (Wii ISO to files), xdelta.py (release disc + patch), ram_scan.py, extract_text.py
+    reference/       mlb_assets.py, mlb_labels.py (the MLB Power Pros discs as a reference)
+    kit/             export_tm.py, export_labels.py (results for ~/Projects/translation-kit)
+  specs/           one JSON per .arc: every sprite label (rect, wording, style); applied by `pp15 apply-art`
   translation/     the English: script TSVs (<file>.rel.tsv), strings/, messages/, names/ (in_place/ = names written over the original)
-  ui_specs/        one JSON per .arc: every sprite label (rect, wording, style); applied by ui_labels.py
-  ui_styles_*.py   typeface recipes the specs name (ui_styles_<mode>_run<N>.py came from the art runs; ui_styles_<name>.py are shared helpers)
-  rebuild_scripts.py  pair_font.py  name_table.py  school_names.py   the build: English + font + names -> DATA/files
-  scan_story.py  tl.py  ui_strings.py  ui_messages.py  ui_textures.py  ui_labels.py  ui_type.py  ui_sheet.py   readers/writers of each store
-  extract_from_iso.py  make_xdelta.py  ram_scan.py   disc in, release out, memory map from a save state
-  export_tm.py  export_labels.py  mlb_assets.py  mlb_labels.py   exports to ~/Projects/translation-kit and the MLB reference
+  tests/           golden.py (SHA-1 of every installed file against the release), test_imports.py, test_roundtrip.py, run_all.sh
+  docs/            PIPELINE.md and TECHNIQUES.md (the method, game independent), refactor_notes.md, a title picture
   legacy/          the first approach and the abandoned Python patcher (apply_patch / make_patch): kept for reference, nothing imports them
   DATA/  _work/    game data and scratch (git-ignored, never committed)
 ```
 
-Build in one go: `python3 ui_strings.py merge; python3 tl.py merge; python3 rebuild_scripts.py build` (idempotent; prints "Verified" lines),
-then art with `python3 ui_labels.py apply ui_specs/<arc>.json`, then `python3 ui_textures.py check`, then `python3 make_xdelta.py ORIGINAL.iso ../release/PP15_English_final.iso ../release/PP15_English.xdelta`.
-The ui_styles_* files are many (91) because every art run added its own; they import each other by module name from the repo root, so they stay in one folder.
+Needs Python 3.10 or newer, numpy and Pillow (`pip install -e .`); `capstone` only for `pp15 scan xref`, `pycryptodome` only
+for `pp15 extract-iso`. Paths default to this folder and its neighbours; set `PP15_ROOT`, `PP15_KIT`, `PP15_EMU`, `PP15_MLB`
+to move them (see `pp15/config.py`).
+
+Build in one go: `python3 -m pp15 merge-strings; python3 -m pp15 merge-script; python3 -m pp15 build` (idempotent; prints "Verified" lines),
+then art with `python3 -m pp15 apply-art specs/<arc>.json`, then `python3 -m pp15 check-art`, then `python3 -m pp15 release ORIGINAL.iso ../release/PP15_English_final.iso ../release/PP15_English.xdelta`.
+`python3 -m pp15 --help` lists every command; `python3 -m pp15 COMMAND --help` explains one.
+Tests: `tests/run_all.sh` (imports, `build-check`, then the golden check: the build must reproduce the released files byte for byte).
+The style modules are many (91) because every art run added its own; they import each other as `pp15.art.styles.*`.
 
 ## The four stores of text, and their tools
 
 | Store | What | Tool | English in |
 |---|---|---|---|
-| Script text | Story and event dialogue: 12-bit packed glyph runs inside scripts (Success, Eikan Nine, My Life) | `scan_story.py` (formats), `tl.py` (export / apply / merge) | `translation/<file>.tsv` |
-| Fixed-slot strings | Menus, help, item and ability texts, system dialogs (`main.dol`) | `ui_strings.py` | `translation/strings/<file>.tsv` |
-| Message scripts | Pennant news: text pieces with codes for new line, page, inserted names | `ui_messages.py` | `translation/messages/<file>.tsv` |
-| Sprite lettering | Words drawn in the `.arc` sprite sheets (and `.rom` menu art) | `ui_textures.py` (pages), `ui_labels.py` + `ui_type.py` (typeset, repack) | `ui_specs/<arc>.json` |
+| Script text | Story and event dialogue: 12-bit packed glyph runs inside scripts (Success, Eikan Nine, My Life) | `pp15/script/scan.py` (formats), `pp15 script` (export / apply / merge) | `translation/<file>.tsv` |
+| Fixed-slot strings | Menus, help, item and ability texts, system dialogs (`main.dol`) | `pp15 strings` | `translation/strings/<file>.tsv` |
+| Message scripts | Pennant news: text pieces with codes for new line, page, inserted names | `pp15 messages` | `translation/messages/<file>.tsv` |
+| Sprite lettering | Words drawn in the `.arc` sprite sheets (and `.rom` menu art) | `pp15 textures` (pages), `pp15 apply-art` (`pp15/art/labels.py` + `typeset.py`: typeset, repack) | `specs/<arc>.json` |
 
-`rebuild_scripts.py build` turns `_work/translation.json` and `_work/strings.json` into the built modules, builds
-the pair font (`pair_font.py`: two Latin letters per kanji cell), checks every file and installs it into
-`DATA/files`. `ui_labels.py apply` writes a spec into its `.arc`. Originals are kept in `_work/orig*`.
+`pp15 build` turns `_work/translation.json` and `_work/strings.json` into the built modules, builds
+the pair font (`pp15/build/font.py`: two Latin letters per kanji cell), checks every file and installs it into
+`DATA/files`. `pp15 apply-art` writes a spec into its `.arc`. Originals are kept in `_work/orig*`.
 
 ## Other tools
 
-| File | Purpose |
+| Command | Purpose |
 |---|---|
-| `extract_from_iso.py` | Wii disc to files (partition, title key, AES clusters, FST) |
-| `extract_all_text.py`, `pawapuro15_text_tools.py` | Glyph table, text decoding, shared helpers |
-| `ram_scan.py` | Loaded modules and memory map from a Dolphin save state |
-| `mlb_assets.py` | Read MLB Power Pros / MLB 2008 discs (project.bin, .pack textures, English strings) |
-| `mlb_labels.py` | Index of MLB's English lettering: every label cut out and read by text recognition |
-| `export_tm.py` | Translation memory: every Japanese / English pair, for reuse in later games |
-| `export_labels.py` | Our English sprite lettering as pictures (Japanese and English side by side) |
+| `pp15 extract-iso` | Wii disc to files (partition, title key, AES clusters, FST) |
+| `pp15 extract-text`, `pp15 glyphs` | Glyph table, text decoding, shared helpers |
+| `pp15 ram-scan` | Loaded modules and memory map from a Dolphin save state |
+| `pp15 mlb-assets` | Read MLB Power Pros / MLB 2008 discs (project.bin, .pack textures, English strings) |
+| `pp15 mlb-labels` | Index of MLB's English lettering: every label cut out and read by text recognition |
+| `pp15 export-tm` | Translation memory: every Japanese / English pair, for reuse in later games |
+| `pp15 export-labels` | Our English sprite lettering as pictures (Japanese and English side by side) |
+| `pp15 release` | The English disc with Nintendo's layout kept, and an xdelta patch against the original ISO |
 | `legacy/` | The first approach (in-place inserter, ASCII font patch, dialogue logger): superseded, kept for reference |
 
 The emulator test harness (`harness.py`, `autoplay.py`, text recognition of frames in `ocr/`) lives beside the

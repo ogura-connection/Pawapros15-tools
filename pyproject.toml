@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pp15"
+version = "1.0.0"
+description = "Tools for the English translation of Jikkyou Powerful Pro Yakyuu 15 (Wii): script, UI text, art and disc build"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "Pillow",
+]
+
+[project.optional-dependencies]
+xref = ["capstone"]            # `pp15 scan xref`
+iso = ["pycryptodome"]         # `pp15 extract-iso`
+state = ["lz4"]                # `pp15 ram-scan`: faster save-state decompression (a slow built-in one is used without it)
+
+[project.scripts]
+pp15 = "pp15.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["pp15*"]

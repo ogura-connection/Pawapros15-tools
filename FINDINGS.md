@@ -1,7 +1,7 @@
 # Findings: where the Success Mode dialogue lives
 
 Jikkyou Powerful Pro Yakyuu 15 (Wii, RP5JA4, Rev 1). Sections up to "The same format elsewhere" are static analysis; the patching sections were tested in Dolphin.
-Everything here can be reproduced with `scan_story.py` (see the end).
+Everything here can be reproduced with `pp15/script/scan.py` (see the end).
 
 ## Answer
 
@@ -37,7 +37,7 @@ Scripts are sequences of 16-bit big-endian instructions. The low byte is the opc
 **Text mode.** An instruction `XX00` (opcode 0x00) switches the interpreter into text mode. `XX` is the window type (0–31). The text follows immediately:
 
 - Each character is a 12-bit unit, packed back to back. Four halfwords hold five-and-a-bit units: `AAAB BBCC CDDD ...`.
-- Units 0x000–0xE9F are the normal glyph indices (same table as everywhere else in the game, see `pawapuro15_text_tools.py`).
+- Units 0x000–0xE9F are the normal glyph indices (same table as everywhere else in the game, see `pp15/glyphs.py`).
 - `0xFFE` is a line break inside the run.
 - `0xFFF` ends the run. The remaining nibbles of that halfword are padded with `F`, and normal instructions resume at the next halfword. This padding is why the files appear to be "delimited by 0xFFFF".
 
@@ -45,7 +45,7 @@ Scripts are sequences of 16-bit big-endian instructions. The low byte is the opc
 
 - `0x46` line break, `0x49` line break and wait, `0x4A` wait for button (end of page).
 - `0x4B`–`0x4F`, `0xA5`–`0xA7`, `0xDA` insert a name (player, team mate, and so on) from a runtime buffer. A sentence containing a name is therefore split into several runs.
-- `0x7A`–`0x7D` set the portrait of the speaker slot for window types 2–5; the argument identifies the character and expression (`tl.py` maps the ranges seen in scenario 1). `0x73` sets the text colour (high byte), and a run of window type 30 continues the line after a colour change or inserted name.
+- `0x7A`–`0x7D` set the portrait of the speaker slot for window types 2–5; the argument identifies the character and expression (`pp15/script/translate.py` maps the ranges seen in scenario 1). `0x73` sets the text colour (high byte), and a run of window type 30 continues the line after a colour change or inserted name.
 
 **Control flow.** Jumps, calls and conditions (`0x9B`, `0x9C`, `0x9D`, `0x9E`, `0x02`, `0x16`–`0x25`) never hold an offset. They hold a **label index**, resolved through label tables in `scs_main.rel` sec5:
 
@@ -64,7 +64,7 @@ This matters for patching: every reference into the scripts is a relocation adde
 | +0x033360 | Advances the nibble phase and script pointer after each character |
 | +0x0351C8 | End of run: realigns the script pointer to the next halfword |
 | +0x05E3F0 | Label lookup: index to pointer through the tables at sec5+0x0D0870 |
-| sec5+0x0FF63C | Opcode jump table. `scan_story.py xref` re-derives every opcode's length from its handler and checks it against the parser's table (no mismatches) |
+| sec5+0x0FF63C | Opcode jump table. `pp15 scan xref` re-derives every opcode's length from its handler and checks it against the parser's table (no mismatches) |
 
 ## Corrections to earlier notes
 
@@ -101,48 +101,48 @@ A few `.arc` files and `fonttex2.rel` show 1–4 hits each, which are most likel
 
 ## UI graphics (import works, first labels patched)
 
-The `.arc` files are not archives. Except for `RFLRes01.arc` they are ELF objects with full symbol tables, and their `.data` holds sprite banks: `tex_*` (textures), `pal_*` (palettes), `opd_*` (sprites) and `*_tbl` pointer lists. Most textures are 8,192 bytes: 128x128, 4 bits per pixel, GX 8x8 tiles, uncompressed, with RGB5A3 palettes (16 colours each); 16,384-byte pages are 8 bits per pixel. An `opd_` is a 10-byte header (byte 0 = number of parts) followed by that many 10-byte parts: page, palette, offset on screen (s16 x, y) and the rectangle on the page as y0, x0, y1, x1. Page numbers count the `tex_` symbols of the bank in file order (not the digits in the names). `ui_textures.py` exports pages, lists parts and writes a page back in place (`import`, same offset and size, existing palette); `ui_textures.py check` re-encodes all 1,557 uncompressed pages and every file comes back byte-identical.
+The `.arc` files are not archives. Except for `RFLRes01.arc` they are ELF objects with full symbol tables, and their `.data` holds sprite banks: `tex_*` (textures), `pal_*` (palettes), `opd_*` (sprites) and `*_tbl` pointer lists. Most textures are 8,192 bytes: 128x128, 4 bits per pixel, GX 8x8 tiles, uncompressed, with RGB5A3 palettes (16 colours each); 16,384-byte pages are 8 bits per pixel. An `opd_` is a 10-byte header (byte 0 = number of parts) followed by that many 10-byte parts: page, palette, offset on screen (s16 x, y) and the rectangle on the page as y0, x0, y1, x1. Page numbers count the `tex_` symbols of the bank in file order (not the digits in the names). `pp15/art/textures.py` exports pages, lists parts and writes a page back in place (`import`, same offset and size, existing palette); `pp15 check-art` re-encodes all 1,557 uncompressed pages and every file comes back byte-identical.
 
-**Compressed pages.** A `tex_` symbol of any other size is the same kind of 128x128 page, packed. There are 8,590 of them against 1,557 plain ones, so most of the game's sprite art was invisible to the tools until this was decoded (10,125 pages in 329 files now export). Format: a 16-bit little-endian header (low 13 bits = number of flag bytes; bit 14 set = 4 bits per pixel in rows of 64 bytes, clear = 8 bits per pixel in rows of 128 bytes), the flag bytes, then the literal bytes, padded to 16 bytes. The page is stored as plain raster rows, not GX tiles. Going left to right and top to bottom, every byte not yet covered takes one flag bit: 0 = one literal, 1 = a rectangle of up to 19x19 (width and height as 2 bits for 1..3, or `00` + 4 bits for 4..19) filled with one literal. It is the code the font glyphs use (`pair_font.py`), with a 2-byte header. `ui_textures.decompress_page` unpacks all but 22 pages (16,400 bytes each, another format, in `m4bg`, `m7bg`, `npn_dum3` and a few more). `compress_page` covers the page with rectangles largest first, which is what Konami's packer appears to do: the result is within 0.1% of the original size (not byte-identical: the tie-breaks differ), and every repacked page unpacks to the same picture. A changed page has to fit the bytes of its symbol; `ui_labels.py apply` stops if it does not. The first untouched copy of any `.arc` it or `ui_labels.py` writes to goes to `_work/orig_arc/`.
+**Compressed pages.** A `tex_` symbol of any other size is the same kind of 128x128 page, packed. There are 8,590 of them against 1,557 plain ones, so most of the game's sprite art was invisible to the tools until this was decoded (10,125 pages in 329 files now export). Format: a 16-bit little-endian header (low 13 bits = number of flag bytes; bit 14 set = 4 bits per pixel in rows of 64 bytes, clear = 8 bits per pixel in rows of 128 bytes), the flag bytes, then the literal bytes, padded to 16 bytes. The page is stored as plain raster rows, not GX tiles. Going left to right and top to bottom, every byte not yet covered takes one flag bit: 0 = one literal, 1 = a rectangle of up to 19x19 (width and height as 2 bits for 1..3, or `00` + 4 bits for 4..19) filled with one literal. It is the code the font glyphs use (`pp15/build/font.py`), with a 2-byte header. `pp15.art.textures.decompress_page` unpacks all but 22 pages (16,400 bytes each, another format, in `m4bg`, `m7bg`, `npn_dum3` and a few more). `compress_page` covers the page with rectangles largest first, which is what Konami's packer appears to do: the result is within 0.1% of the original size (not byte-identical: the tie-breaks differ), and every repacked page unpacks to the same picture. A changed page has to fit the bytes of its symbol; `pp15 apply-art` stops if it does not. The first untouched copy of any `.arc` it or `pp15/art/labels.py` writes to goes to `_work/orig_arc/`.
 
-`ui_labels.py` + `ui_specs/*.json` put English lettering into those pages, in two ways.
+`pp15/art/labels.py` + `specs/*.json` put English lettering into those pages, in two ways.
 
 1. Cut a finished MLB label and fit it into the Japanese label's rectangle (the stat labels). Its pixels are sorted into roles (letters, ring, edge); where the slot is narrower than the word, the least important columns are removed, never averaged, so there is no blur. Works when the slot is about as wide as the word; below that the letters lose detail (TRJ, FLD and Position are still squeezed this way).
-2. Typeset and repack (`ui_type.py`): the command words and HUD tags. The MLB command-word sheet stores its letters as a brightness ramp, so letters cut from it keep their soft edge (6 ink levels) and look like the Japanese ones. A word MLB drew is used whole; other words are set from single MLB letters. An English word is wider than the Japanese label (練習 is two characters, Practice is 61 pixels against 37), so the labels of a page are laid out again at their natural width and the sprite parts are pointed at the new rectangles: page, rectangle and offset of the 10-byte part are rewritten in place. Nothing moves in the file and no size changes. The new label keeps the old one's centre and baseline.
+2. Typeset and repack (`pp15/art/typeset.py`): the command words and HUD tags. The MLB command-word sheet stores its letters as a brightness ramp, so letters cut from it keep their soft edge (6 ink levels) and look like the Japanese ones. A word MLB drew is used whole; other words are set from single MLB letters. An English word is wider than the Japanese label (練習 is two characters, Practice is 61 pixels against 37), so the labels of a page are laid out again at their natural width and the sprite parts are pointed at the new rectangles: page, rectangle and offset of the 10-byte part are rewritten in place. Nothing moves in the file and no size changes. The new label keeps the old one's centre and baseline.
 
 A label is addressed by its rectangle or by its sprite (a pitch name is one sprite drawn from up to three shared pieces of kana: its first part gets the English name, the others an empty cell). Lettering that is part of a plate (the 天気予報 header) is repainted in place. Three sources of letters, in this order of preference: MLB art (stat labels, command words), MLB letters set into new words (command font), and for styles MLB has nothing in: a pixel font drawn for the patch (`TAG_GLYPHS`, 11 pixels high, for the small tags and the pitch names) and system fonts rendered at 4x and averaged down (Arial Rounded Bold, Times New Roman Bold Italic) for anything larger.
 
 Done: scs_main.arc 75 labels on 15 pages, 88 sprite parts re-pointed; scs_rens.arc 51 labels (practice menu names, Injury, Rating, and the 30 training-gear names of bank `y5_rkz_0`, which sit on four compressed pages) (command bar, HUD tags, stat labels at natural width with the four trajectory arrows moved to a free strip, 29 pitch names, date units, weather, forecast); scs_sce1.arc 4 labels (rank plate). The wording is listed in TRANSLATION_STYLE.md. What is left, sheet by sheet, is in `_work/ui_pages/label_table.md` (not in git).
 
-**Data screen (2026-10-12).** `ui_specs/scs_data.json`: 125 labels on 19 compressed pages of `scs_data.arc` (banks `z3_dt_0` personal page, `z3_dtn_0` team-mate list, `z3_dts_0` screen titles, buttons, form names and trait plates, `y5_mh_0` ratings page). `ui_specs/scs_sys.json`: the 67 labels of the System screen's own copy of `z3_dts` in `scs_sys.arc`. A texture dump taken on every tab matched `scs_data.arc` for all of this; the ability plates on the same screen are `are_abi.arc`, bank `g3_tn00`. What the tools learned for it:
+**Data screen (2026-10-12).** `specs/scs_data.json`: 125 labels on 19 compressed pages of `scs_data.arc` (banks `z3_dt_0` personal page, `z3_dtn_0` team-mate list, `z3_dts_0` screen titles, buttons, form names and trait plates, `y5_mh_0` ratings page). `specs/scs_sys.json`: the 67 labels of the System screen's own copy of `z3_dts` in `scs_sys.arc`. A texture dump taken on every tab matched `scs_data.arc` for all of this; the ability plates on the same screen are `are_abi.arc`, bank `g3_tn00`. What the tools learned for it:
 
 - A sprite that also draws a plate or an icon: `"pages"` / `"palettes"` say which of its parts are lettering (tabs, trait plates with the bomb and the heart). `"layers": 2` is a sprite that draws its lettering twice (the screen titles: a blue shadow copy under the coloured one). `"pieces"` sets one label from several parts with a palette each (the handedness tags, where every letter has its own colour). `"align": "right"`, and `\n` in a text for two lines.
-- New styles in `ui_type.py` (`data*`, `title22`..`title28`, `rater147`..`rater150`), each read off the Japanese art: which palette index is outline, band, glow and fill. The screen titles and the rater names use a different order of colours in every palette.
+- New styles in `pp15/art/typeset.py` (`data*`, `title22`..`title28`, `rater147`..`rater150`), each read off the Japanese art: which palette index is outline, band, glow and fill. The screen titles and the rater names use a different order of colours in every palette.
 - **A compressed page has to fit its slot, and English lettering packs no smaller than kanji.** One group per bank, with every free rectangle of every page as an area, spreads the labels; the order of the areas decides which page fills first. `apply` stops when a page does not fit.
-- `scs_sys.arc` stores the sprites of a bank behind its palette (everywhere else they stand in front of the pages), so `ui_textures.banks` files them under the next bank: the 85 sprites of `z3_dts_sys_0` appear as bank `z3_dts_sys_0_opd` with the 6 pages of `z3_sys`. A repack group names them with `"sprites"`.
+- `scs_sys.arc` stores the sprites of a bank behind its palette (everywhere else they stand in front of the pages), so `pp15.art.textures.banks` files them under the next bank: the 85 sprites of `z3_dts_sys_0` appear as bank `z3_dts_sys_0_opd` with the 6 pages of `z3_sys`. A repack group names them with `"sprites"`.
 - Handedness is shown the English way, bats / throws (`B/T`, as in MLB Power Pros), so 右投左打 is `L/R`.
 
 Seen in game: all four tabs of the personal page, the equipment page, the five tabs of the team-mate list with their column headers, the ratings page, the screen titles My Data / Teammates / Ratings, and Save & Quit / Give Up on the System screen. Not seen (nothing in the save shows them): the trait plates, forms other than Overhand, the player types, Growth, Cond., Kantoku, Scout, the titles Schedule / Equip / Item List / System.
 
 Still Japanese in these two files: the first-team / second-team banners and tags, 一級 / 二級 / 三級, the 継 and 主 marks (meaning not confirmed), the equipment-change page (`z3_ikp_0`: 変更前 / 変更後, stat names, pitch families), league and pro team names (`z4_dtj_0`), and the settings list of the System screen (`scs_sys.arc`, pages `tex_z3_sys`, about 30 labels in 11 palettes). Position plates (投) and person names on the team-mate list come from other files.
 
-**Ability plates (2026-10-12).** `ui_specs/are_abi.json`: the 248 names of bank `g3_tn00` in `are_abi.arc`. Its 30 pages are not compressed, so there is no byte limit, but there is a limit of rows: with 11-pixel capitals the names no longer fit the pages. Arial Narrow Bold in one weight (a bolder cut closes up the i and l of long names): 10-pixel capitals where the name fits in 68 pixels (151 names), 9 pixels and squeezed for longer ones, two lines for 17. Wording: the term sheet for the book abilities, MLB 2008's plate sheet for roles and day / night / home / road, the rest worded for the patch (TRANSLATION_STYLE.md). Seen in game: 17 plates (the pitcher and fielder pages of the player, Consistency and Starter on the team-mate list). Not seen: the other 231, and the Boost screen, where the "Remove ..." plates belong. The other banks of the file (colour names, pitch names, profile labels: `z3_it_0`, `m3_an`) are untouched.
+**Ability plates (2026-10-12).** `specs/are_abi.json`: the 248 names of bank `g3_tn00` in `are_abi.arc`. Its 30 pages are not compressed, so there is no byte limit, but there is a limit of rows: with 11-pixel capitals the names no longer fit the pages. Arial Narrow Bold in one weight (a bolder cut closes up the i and l of long names): 10-pixel capitals where the name fits in 68 pixels (151 names), 9 pixels and squeezed for longer ones, two lines for 17. Wording: the term sheet for the book abilities, MLB 2008's plate sheet for roles and day / night / home / road, the rest worded for the patch (TRANSLATION_STYLE.md). Seen in game: 17 plates (the pitcher and fielder pages of the player, Consistency and Starter on the team-mate list). Not seen: the other 231, and the Boost screen, where the "Remove ..." plates belong. The other banks of the file (colour names, pitch names, profile labels: `z3_it_0`, `m3_an`) are untouched.
 
-**Shop and item list (2026-10-13).** `ui_specs/scs_item.json`, written by `_work/ui_pages/gen_item_spec.py`: 17 labels of bank `z3_shp_0` in `scs_item.arc` (six tabs, the two Shop titles, Money, the Info hint, Cancel, the `x1 Buy` / `x3 Own` tags, Sold Out!, three larger tabs), the two plates Bought / Owned, and 22 gear names of bank `m4_item1`. A texture dump in the shop matched pages 0-6 and 8 of `z3_shp_0` (page 7 is the "bargain" picture). The item list (Items > List) and the pop-up of the Equip page are not in that file: their tabs and headers (消費アイテム, その他, 装備中, アイテムリスト) are bank `z3_itw_0` of `scs_main.arc`, now a group of `ui_specs/scs_main.json` written by the same generator.
+**Shop and item list (2026-10-13).** `specs/scs_item.json`, written by `_work/ui_pages/gen_item_spec.py`: 17 labels of bank `z3_shp_0` in `scs_item.arc` (six tabs, the two Shop titles, Money, the Info hint, Cancel, the `x1 Buy` / `x3 Own` tags, Sold Out!, three larger tabs), the two plates Bought / Owned, and 22 gear names of bank `m4_item1`. A texture dump in the shop matched pages 0-6 and 8 of `z3_shp_0` (page 7 is the "bargain" picture). The item list (Items > List) and the pop-up of the Equip page are not in that file: their tabs and headers (消費アイテム, その他, 装備中, アイテムリスト) are bank `z3_itw_0` of `scs_main.arc`, now a group of `specs/scs_main.json` written by the same generator.
 
 - The shop opens in the Items submenu from November of year 1; nothing offers it in week 1. `dolphin-test/to_command_menu.py resume shop` continues from a save made there (`nand_backup_shop/`). The tabs of the shop and of the item list turn with the D-pad alone (`harness.dpad`).
 - Lettering baked into a plate (購入済, 取得済): `"paint"` takes `"copy"` (the same plate with nothing on it, from the original file) and `"style"`.
-- New styles in `ui_type.py`: `shoptab`, `shopmoney`, `shopcancel`, `shoptag`, `shophint` (`boxed`: white on a black box), `shoptitle` and `shopsold` (`logo`: gradient letters, outline, white band, rim, cast shadow), `gear`, `itemtab`.
+- New styles in `pp15/art/typeset.py`: `shoptab`, `shopmoney`, `shopcancel`, `shoptag`, `shophint` (`boxed`: white on a black box), `shoptitle` and `shopsold` (`logo`: gradient letters, outline, white band, rim, cast shadow), `gear`, `itemtab`.
 - A tab of the shop is about 60 pixels wide and the Cancel button 40: the icon tabs are set 11 pixels high at 0.9 width, Cancel 9 pixels high.
 - Seen in game: every label of the shop screen except Owned (取得済) and the three larger tabs of page 6 (All Items / Accessories / Other: no screen that draws them was found); Consumables / Other on the item list, Equipped / Item List on the equip pop-up. Also seen for the first time: the titles Schedule, Equip and Item List, item effect lines, "use it? Yes / No".
 - The gear names of `m4_item1` (ノーミス ... 達人ス, 40x40 sprites filed among the item icons) were not drawn anywhere: not in the shop, the item list or the Equip page, also with a No-Miss Glove bought and equipped. The set is not this game's gear list (no Control, Liner or Brute bat), so it is probably left over from an earlier game. They are English anyway (term sheet names without the Bat / Glove / Spikes / Ball); 見返り has no item here and keeps its Japanese. The five arrows next to them are pictures.
 - The clerk's greeting (いらっしゃいませ〜！) is dialogue in the script of `scs_main.rel`, not a string of `scs_item.rel`.
 
-**System settings list (2026-10-13).** Second group of `ui_specs/scs_sys.json` (written by `gen_data_spec.py`): 33 labels on pages 2-5 of `tex_z3_sys` (filed as bank `z3_dts_sys_0_opd`), sprites `opd_z3_sys_0` (filed as bank `z3_sys_0`). Row names in palette 161, values in 162-170 (one colour each: the same piece is drawn grey or red), 難度 in 160. Most Japanese labels come in two pieces across a page edge. The English is set whole in one piece and the other becomes `{"from": [...], "empty": true}`: its parts are pointed at an empty cell and its rectangle is free again, which is what makes room (a label cannot be wider than a page, 128 pixels, so the row names are 12 pixels high at 0.8 width). ウインドウなし and ウインドウあり share their first 64 pixels on the page; both rectangles are labels of their own. Values that the game puts at a fixed x keep the centre of the Japanese (the two halves of `No Window / Window` are centred in their columns), Set / Not Set keep the right edge. ON / OFF were English already. Seen in game: the six row names, Type A, Rumble Off, No Window, Window, Set, Difficulty, Normal. Not seen: Type B, Rumble On, Not Set, Pitcher View, +Control Pad, Control Stick, L Stick, Rookie. Still Japanese behind this list: the controller diagram that In-Game Controls opens (操作 / 振動, OK / Aタイプ / しない and every caption of the drawing; banks `y5_sysx1`..`4` and page 1 of `z3_sys`) and the voice screen (音声設定, 選択タイプ / 入力タイプ / キャンセル, from another file).
+**System settings list (2026-10-13).** Second group of `specs/scs_sys.json` (written by `gen_data_spec.py`): 33 labels on pages 2-5 of `tex_z3_sys` (filed as bank `z3_dts_sys_0_opd`), sprites `opd_z3_sys_0` (filed as bank `z3_sys_0`). Row names in palette 161, values in 162-170 (one colour each: the same piece is drawn grey or red), 難度 in 160. Most Japanese labels come in two pieces across a page edge. The English is set whole in one piece and the other becomes `{"from": [...], "empty": true}`: its parts are pointed at an empty cell and its rectangle is free again, which is what makes room (a label cannot be wider than a page, 128 pixels, so the row names are 12 pixels high at 0.8 width). ウインドウなし and ウインドウあり share their first 64 pixels on the page; both rectangles are labels of their own. Values that the game puts at a fixed x keep the centre of the Japanese (the two halves of `No Window / Window` are centred in their columns), Set / Not Set keep the right edge. ON / OFF were English already. Seen in game: the six row names, Type A, Rumble Off, No Window, Window, Set, Difficulty, Normal. Not seen: Type B, Rumble On, Not Set, Pitcher View, +Control Pad, Control Stick, L Stick, Rookie. Still Japanese behind this list: the controller diagram that In-Game Controls opens (操作 / 振動, OK / Aタイプ / しない and every caption of the drawing; banks `y5_sysx1`..`4` and page 1 of `z3_sys`) and the voice screen (音声設定, 選択タイプ / 入力タイプ / キャンセル, from another file).
 
-**The schedule strings move (2026-10-13).** The 24 strings of the schedule (`scs_data.rel` sec5+22308..22752, 444 bytes) stand back to back, 4-byte aligned, and each is reached through one `R_PPC_ADDR32` of a pointer table of 25 entries at sec5+22752 (the first points at an empty string in front of the block). `ui_strings.BLOCKS` names such a block; `rebuild_scripts.py build` lays its strings out again without the alignment, rewrites the 24 addends in the relocation stream, and checks that every pointer reads its string. `verify` takes the changed addends as the only relocations allowed to differ. A string that is the end of another shares its cells: 日本選手権予選決勝 points into the middle of "Exam, Japan Champ Qual Final" (the shared part has to start on an even letter). With that the block is exactly full: 199 cells and 23 terminators in 222. One entry may be 15 cells (30 letters) wide before it reaches the game icon. In game: 15 of the 24 entries seen, the shared one among them; pointers to addresses that are not multiples of 4 work. 月 and 週 of the date column are two strings of one cell each (sec5+13824, +13828; `SHORT_TEXT` in `ui_strings.py`): now `Mo` and `Wk`, as on the HUD.
+**The schedule strings move (2026-10-13).** The 24 strings of the schedule (`scs_data.rel` sec5+22308..22752, 444 bytes) stand back to back, 4-byte aligned, and each is reached through one `R_PPC_ADDR32` of a pointer table of 25 entries at sec5+22752 (the first points at an empty string in front of the block). `pp15.text.strings.BLOCKS` names such a block; `pp15 build` lays its strings out again without the alignment, rewrites the 24 addends in the relocation stream, and checks that every pointer reads its string. `verify` takes the changed addends as the only relocations allowed to differ. A string that is the end of another shares its cells: 日本選手権予選決勝 points into the middle of "Exam, Japan Champ Qual Final" (the shared part has to start on an even letter). With that the block is exactly full: 199 cells and 23 terminators in 222. One entry may be 15 cells (30 letters) wide before it reaches the game icon. In game: 15 of the 24 entries seen, the shared one among them; pointers to addresses that are not multiples of 4 work. 月 and 週 of the date column are two strings of one cell each (sec5+13824, +13828; `SHORT_TEXT` in `pp15/text/strings.py`): now `Mo` and `Wk`, as on the HUD.
 
-**Leftovers of scs_main.arc and scs_data.arc (2026-10-13, second session).** Groups written by `_work/ui_pages/gen_main_spec.py` (groups `captions` and `positions` of `ui_specs/scs_main.json`) and `gen_data_spec.py` (banks `z3_ikp_0` and `z4_dtj_0` of `ui_specs/scs_data.json`).
+**Leftovers of scs_main.arc and scs_data.arc (2026-10-13, second session).** Groups written by `_work/ui_pages/gen_main_spec.py` (groups `captions` and `positions` of `specs/scs_main.json`) and `gen_data_spec.py` (banks `z3_ikp_0` and `z4_dtj_0` of `specs/scs_data.json`).
 
 - Scene captions (`r3_ai`, palette 160, style `caption`): After Practice, Next Day, A Few Days Later..., Tournament Day, Fateful Draft Day... One sprite part shows at most a page width (128 pixels) and a sprite cannot gain parts, so a one-part caption is at most 128 pixels wide (After Practice sets the size: 17-pixel capitals at 0.77 width) and the longer ones are set in two `"pieces"`. The month banner (`r3_ai` page 17, nine sprites sharing one 月) is `Mo` after the game's own numeral (style `month`).
 - Position words (`y5_np_0` pages 3 and 7, palettes 32-35, style `position`): Pitcher, Catcher, 1st / 2nd / 3rd Base, Shortstop, Outfield, and P, C, 1B, 2B, 3B, SS, OF in two sizes, on a fixed `"baseline"` (一 is six pixels high, so its own box gives no baseline).
@@ -165,7 +165,7 @@ Tested in Dolphin this way: HUD, command bar, Free Time and Items submenus, fore
 
 Tooltips, system-screen help, title-screen help, rating comments and tips are not script text. They are plain tables of big-endian 16-bit glyph numbers in the data sections of the modules: each string sits in a slot of fixed size, padded with glyph 0 (a full-width space) and closed by 0xFFFF. The command tooltips of `scs_main.rel` (sec5+0x3328, before the script) are 18 cells + 0xFFFF + 0 = 40 bytes each. Multi-line strings have no line-break code: the box wraps at a fixed width and the Japanese pads every line with spaces (system help 2 x 18 cells, title help 2 x 16, rating comments 2 x 14, tips 3 x 17).
 
-`ui_strings.py` lists them (`export`, Japanese to `_work/strings/`), keeps the English in `translation/strings/<file>.tsv` (section, offset, hash, English; `|` = new line, padded by the tool) and `merge` writes `_work/strings.json`. `rebuild_scripts.py build` writes each string into its slot with the pair font: two letters per cell, so a slot of 18 cells holds 36 letters. Nothing moves and no file grows. The pairs share the kanji slots with the dialogue, and the kanji of string tables that stay Japanese are counted as in use.
+`pp15/text/strings.py` lists them (`export`, Japanese to `_work/strings/`), keeps the English in `translation/strings/<file>.tsv` (section, offset, hash, English; `|` = new line, padded by the tool) and `merge` writes `_work/strings.json`. `pp15 build` writes each string into its slot with the pair font: two letters per cell, so a slot of 18 cells holds 36 letters. Nothing moves and no file grows. The pairs share the kanji slots with the dialogue, and the kanji of string tables that stay Japanese are counted as in use.
 
 Counts (text strings; tables of numbers that only look like strings are left out): `scs_main.rel` 117, `scs_sys.rel` 63, `scs_rens.rel` 71, `scs_titl.rel` 4, `scs_end.rel` 35, `scs_data.rel` 181 (condition notes, rating comments by 23 characters, schedule entries, a table of rater names), `scs_item.rel` 1,163 (four parallel tables over 239 items: names, effect lines, the shop clerk's comments, result messages), and `main.dol` 264 (system dialogs, below). Translated: 1,808 (1,544 in the modules plus the 264 dialogs). Left: the rater name table (6, person names stay Japanese for now), `scs_end.rel`, and the glyph grids of the other files.
 
@@ -178,20 +178,20 @@ Found on the way:
 - The window type 30 runs of `scs_main.rel` are not a menu table. 1,410 of them hold text: 831 stand in scenes of their own (names of gear, teams, positions, tournaments, ranks, plus particles such as が and 【 that sentences are assembled from), the rest are pieces of dialogue lines. They matter for sentences ("you got a ..."), not for menus.
 - How the source of on-screen lettering was found, for next time: turn on `DumpTextures` in the test Dolphin's `GFX.ini` (with Dolphin stopped: it rewrites the file when it exits), open the screen, and match the dumped PNG against the exported pages. A string that is on screen but not in memory as glyph numbers is a picture.
 - プログラム and テキスト on the command sheet are debug commands (tooltips シナリオのデバッグ / プログラムノデバッグ); they need no translation. 特別ルーム is the training room.
-- **Multi-line slots.** Where the slot size varies but the box does not (rating comments: 22 or 15 cells a line; item texts: 18), `ui_strings.py` reads the line width of each string from the padding of its Japanese, confirmed by a neighbour of the same table; `LINE_CELLS` and `LINE_WIDTH` override it. 17 strings are marked uncertain (`?` in the export). `ui_strings.py check FILE` validates `ID<tab>English` lines without writing; `apply` stores nothing if any line fails.
+- **Multi-line slots.** Where the slot size varies but the box does not (rating comments: 22 or 15 cells a line; item texts: 18), `pp15/text/strings.py` reads the line width of each string from the padding of its Japanese, confirmed by a neighbour of the same table; `LINE_CELLS` and `LINE_WIDTH` override it. 17 strings are marked uncertain (`?` in the export). `pp15 strings check FILE` validates `ID<tab>English` lines without writing; `apply` stores nothing if any line fails.
 - **The blue system dialogs are in `main.dol`** (save and load prompts, the give-up warning, memory and password notices, for every mode): one block at file offsets 0x143AA0..0x145ACE, 4,119 units, 264 strings back to back. A unit is 16 bits, `0x1000 | glyph`; 0x1FFD is a blank cell (written `{}`), used to indent the Yes/No and press-A rows by hand; 0xFFFF ends a string. The long vowel mark is often glyph 0x03C. Each string is one line of a dialog.
   - Pointers: `main.dol` has none. `main_prg.rel` section 5 holds a table of 252 pointers at +0x91AB0 (zero in the file, filled by 251 `R_PPC_ADDR32` relocations to module 0; the 252nd points at the row of stars right behind the block, which is a progress bar). 13 strings have no pointer; they look dead (10 are copies of others) and are kept where they are.
   - The dialogs themselves: 108 lists of 16-bit message numbers at `main_prg.rel` sec5+0x91EA0..0x92450 (1-based index into the pointer table, 0 = separator before the button rows, -1 = end), with their own pointer table at +0x92450. So which lines appear together is known. Lines are shared: the eight `Ｗｉｉ本体保存メモリ` + particle lines open many dialogs, and the give-up warning exists in a 3-line and a 6-line form with common lines.
-  - Build: `rebuild_scripts.py` lays the block out again (a line may be longer or shorter than its Japanese, up to the 30 cells of the longest Japanese line), fills what is left with 0xFFFF and re-points the relocations. It then re-reads the built files and refuses to install unless `main.dol` is the original outside the block, the block has 264 strings, every relocation points at the start of its string and the 13 fixed strings have not moved. `DATA/sys/main.dol` and `main_prg.rel` must always be installed together; the original is kept in `_work/orig_sys/`. An independent checker written for the review is in `_work/review/dolcheck.py` (460 random builds, no disagreement).
+  - Build: `pp15/build/rebuild.py` lays the block out again (a line may be longer or shorter than its Japanese, up to the 30 cells of the longest Japanese line), fills what is left with 0xFFFF and re-points the relocations. It then re-reads the built files and refuses to install unless `main.dol` is the original outside the block, the block has 264 strings, every relocation points at the start of its string and the 13 fixed strings have not moved. `DATA/sys/main.dol` and `main_prg.rel` must always be installed together; the original is kept in `_work/orig_sys/`. An independent checker written for the review is in `_work/review/dolcheck.py` (460 random builds, no disagreement).
   - In game: moved strings and the filler work (save prompt and give-up warning seen).
 - After a text build the pair slots of the whole font change, and the font is loaded at boot: boot from scratch and retake the main-menu state (`to_command_menu.py boot`).
 - Continuing a Success save and then resetting without saving triggers the game's reset penalty event on the next continue. `to_command_menu.py resume` restores the clean save first, so it never shows.
 
 ## MLB Power Pros (2007) and MLB Power Pros 2008 as a reference
 
-Both Wii discs hold one `project.bin` (about 2,100 and 2,300 files, mostly `.pack`) and one `ovl_main.rel`. `mlb_assets.py` reads the file table and decodes the UI textures (standard GX C4/C8 with RGB5A3 palettes, uncompressed). The Success Mode packs (`ScsParamPlate`, `ScsComMain`, `ScsButton`, `env_ability_plate` and others) contain the English HUD lettering in the series' own style: stat labels (TRJ, CON, PWR, RUN SPD, ARM STR, FLD, E RES, TOP SPD, CTRL, STAM), Motivation, Vitality, positions, pitch-type abbreviations next to the Japanese sheet they replaced, months and weeks, and command buttons. English text is stored as 16-bit glyph strings with the same glyph numbers as Pawapuro 15. The container and sprite layout differ from Pawapuro 15, so nothing drops in as a file: labels have to be cut out and placed into Pawapuro 15's sheets. The first import (scs_main.arc) is described under UI graphics.
+Both Wii discs hold one `project.bin` (about 2,100 and 2,300 files, mostly `.pack`) and one `ovl_main.rel`. `pp15/reference/mlb_assets.py` reads the file table and decodes the UI textures (standard GX C4/C8 with RGB5A3 palettes, uncompressed). The Success Mode packs (`ScsParamPlate`, `ScsComMain`, `ScsButton`, `env_ability_plate` and others) contain the English HUD lettering in the series' own style: stat labels (TRJ, CON, PWR, RUN SPD, ARM STR, FLD, E RES, TOP SPD, CTRL, STAM), Motivation, Vitality, positions, pitch-type abbreviations next to the Japanese sheet they replaced, months and weeks, and command buttons. English text is stored as 16-bit glyph strings with the same glyph numbers as Pawapuro 15. The container and sprite layout differ from Pawapuro 15, so nothing drops in as a file: labels have to be cut out and placed into Pawapuro 15's sheets. The first import (scs_main.arc) is described under UI graphics.
 
-Full scan (`mlb_assets.py text` and `textures`, output in `_scan/` next to each extract, outside this repository): MLB 2008 has 22,682 English strings and 5,091 UI textures in 1,145 sheets; MLB 2007 has 11,362 strings and 5,132 textures in 940 sheets. 3D models, stadiums and motion files were skipped, as were about 100 CMPR textures.
+Full scan (`pp15 mlb-assets text` and `textures`, output in `_scan/` next to each extract, outside this repository): MLB 2008 has 22,682 English strings and 5,091 UI textures in 1,145 sheets; MLB 2007 has 11,362 strings and 5,132 textures in 940 sheets. 3D models, stadiums and motion files were skipped, as were about 100 CMPR textures.
 
 ## Sample lines
 
@@ -208,7 +208,7 @@ Full scan (`mlb_assets.py text` and `textures`, output in `_scan/` next to each 
 
 ## Patching: what works (tested in Dolphin)
 
-`rebuild_scripts.py` rebuilds the scripts with text of any length.
+`pp15/build/rebuild.py` rebuilds the scripts with text of any length.
 
 - `check`: rebuilding with no changes gives byte-identical files for all four script modules, and all 2,125 relocation streams in the 476 modules re-encode exactly.
 - `build`: re-emits the script, then moves every reference: relocation addends in all modules, relocation positions inside the rebuilt section, the REL header, and the module's entry in `moduleID2addr.o`. It re-reads its own output and compares scripts, labels, text and relocations with the originals before installing.
@@ -237,7 +237,7 @@ The game does not allocate memory for modules. `/moduleID2addr.o` (an ELF object
 
 **Free memory.** `main.dol` (0x8003A938) raises the OS arena to 0x814E0000, so everything below that address is reserved for modules, and the plan stops at 0x812CB794. The 2.1 MB in between is unused: it is all zero in memory snapshots from the main menu, name entry and 50 pages into the story, and nothing in `main.dol` or any module addresses it during play (only the SDK reset/exec code uses 0x81280000..0x81330000, when the game is shutting down).
 
-`rebuild_scripts.py` uses this. When `scs_main.rel` needs room, it moves the scenario slot to 0x812CB800 in the plan and lets `scs_main.rel` grow into the old slot:
+`pp15/build/rebuild.py` uses this. When `scs_main.rel` needs room, it moves the scenario slot to 0x812CB800 in the plan and lets `scs_main.rel` grow into the old slot:
 
 | Module | Room to grow (original plan) | Room to grow (scenario slot moved) |
 |--------|------------------------------|------------------------------------|
@@ -254,12 +254,12 @@ Tested on 2026-10-12 with a translated `scs_main.rel` (the 33 training-gear cons
 
 ## The pair font (tested in Dolphin)
 
-`pair_font.py` draws **two half-width letters into one glyph cell** and stores the pairs in kanji slots. English then takes one text unit per two letters: about the size of the Japanese, and no game code changes.
+`pp15/build/font.py` draws **two half-width letters into one glyph cell** and stores the pairs in kanji slots. English then takes one text unit per two letters: about the size of the Japanese, and no game code changes.
 
 - `fonttex2.rel` section 4 holds two complete fonts with the same 3,744 glyph numbers: a small one at +0 (16x17 pixels used, shades 8 = ink to 15 = background) and the large outlined one the dialogue uses at +0x05DF64 (22x28, shades 1 = ink, 9 = outline, 15 = background). A third set of 68 glyphs follows at +0x117400.
-- Format: `u16 0, u16 count, u32 offsets[count]` (little-endian), then the compressed glyphs. Repacking the originals is byte-identical and all 7,488 glyphs survive decompress/compress, so the format is fully understood (`rebuild_scripts.py check`).
+- Format: `u16 0, u16 count, u32 offsets[count]` (little-endian), then the compressed glyphs. Repacking the originals is byte-identical and all 7,488 glyphs survive decompress/compress, so the format is fully understood (`pp15 build-check`).
 - A build collects the letter pairs the translation uses and gives each a kanji slot, least used kanji first (usage = untranslated script text plus a scan of all other modules; `namein.rel`, the name-entry kanji picker, is ignored). Both fonts get the pair, drawn from Menlo Bold, stretched to 11x28.
-- **Name kanji are given up last (2026-10-13).** Names are 16-bit glyphs in fixed cells, and a two-kanji name is spread out with an empty cell in the middle (手塚 is `0773 0000 0A46`), so a search for the glyphs side by side finds nothing and the usage scan, which wants kana in a run, never counted them. Two layouts: the surname list (1,856 records of five 16-bit values: `1FFF`, the announcer's call, three cells) at file offset 0x1125D6 of `main_prg.rel` (section 5) with a copy in `scc_main.rel` (file offset 0x9EBE), used for team-mates and offered at name entry; and player names in six cells, back to back or behind three other values (real players, `main_prg.rel`). A save keeps team-mate names the same way (`pawa15.dat`, six cells). `pair_font.name_usage` collects these kanji (620) and `allocate` takes them only when nothing else is left; `other_text_usage` now also counts kanji-only strings that end in `FFFF` (positions, school names). With 1,614 pairs all 620 name kanji stay; 988 pair slots are kanji that other Japanese text uses (the least used ones). Seen in the practice menu: 手塚 西田 松本 大田 今井 read correctly again.
+- **Name kanji are given up last (2026-10-13).** Names are 16-bit glyphs in fixed cells, and a two-kanji name is spread out with an empty cell in the middle (手塚 is `0773 0000 0A46`), so a search for the glyphs side by side finds nothing and the usage scan, which wants kana in a run, never counted them. Two layouts: the surname list (1,856 records of five 16-bit values: `1FFF`, the announcer's call, three cells) at file offset 0x1125D6 of `main_prg.rel` (section 5) with a copy in `scc_main.rel` (file offset 0x9EBE), used for team-mates and offered at name entry; and player names in six cells, back to back or behind three other values (real players, `main_prg.rel`). A save keeps team-mate names the same way (`pawa15.dat`, six cells). `pp15.build.font.name_usage` collects these kanji (620) and `allocate` takes them only when nothing else is left; `other_text_usage` now also counts kanji-only strings that end in `FFFF` (positions, school names). With 1,614 pairs all 620 name kanji stay; 988 pair slots are kanji that other Japanese text uses (the least used ones). Seen in the practice menu: 手塚 西田 松本 大田 今井 read correctly again.
 - Pair glyphs compress smaller than kanji (about 164 against 219 bytes in the large font), so `fonttex2.rel` keeps its size even with every kanji slot replaced.
 - **A dialogue line is 17 cells: 34 letters.** Longer lines wrap. The letterbox narration of the opening shows 2 lines; speech bubbles (window types 2 and 4, measured) show 3, and one more line scrolls the first away. The build warns about long lines.
 - Pairs restart at every run, line break and Japanese character. When a sentence is split into several runs on one line (colour changes, inserted names), give the earlier run an even number of letters or a half-cell gap appears.
@@ -269,7 +269,7 @@ Still open: the player and team-mate names inserted into sentences are Japanese 
 
 ## Bulk dialogue translation (2026-10-13, third session)
 
-All four script files are in English: 45,661 runs (`tl.py status`), built, verified and installed. Done in one
+All four script files are in English: 45,661 runs (`pp15 script status`), built, verified and installed. Done in one
 session with one Sonnet agent per batch of about 430 runs, six at a time (95 batches, about 12 million tokens,
 75 minutes of agent time), after a pilot of six batches read against the Japanese.
 
@@ -278,7 +278,7 @@ session with one Sonnet agent per batch of about 430 runs, six at a time (95 bat
   formats, limits, names, the casts), `presets.json` (154 fixed renderings of lines that repeat, the most common
   one 973 times), `collect.py` (checks and stores finished batches one after the other, then fills the duplicate
   scenes), `reconcile.py`, `view.py` (Japanese and English side by side).
-- `tl.py check FILE` is a dry run of `apply`: line counts per scene, stray characters, the line breaks of menu
+- `pp15 script check FILE` is a dry run of `apply`: line counts per scene, stray characters, the line breaks of menu
   runs, and the warnings of `merge`. Translators run it; only `collect.py` runs `apply`, because `apply` rewrites
   the whole TSV and parallel applies would lose rows.
 - A decoded run holds a line break as the two characters backslash + n, not as a newline (`check_scene` counted
@@ -289,12 +289,12 @@ session with one Sonnet agent per batch of about 430 runs, six at a time (95 bat
   scenarios 2 and 3 the same portrait numbers are other people; their batches show a code per character instead.
 - Sizes after the build: `scs_main.rel` script +18 KB (356 KB of room left with the scenario slot moved),
   `scs_sce2.rel` +3 KB, `scs_sce3.rel` +7 KB; 1,614 letter pairs, 1,424 kanji slots left.
-- 17 warnings remain in `tl.py merge`, all in debug menus and lookup lists that the checker reads as one line.
+- 17 warnings remain in `pp15 merge-script`, all in debug menus and lookup lists that the checker reads as one line.
 - **Seen in play (2026-10-13, later).** Scenario 1 was played by itself from year 1 September to its ending (`dolphin-test/autoplay.py`, about 50 minutes at 4x) and the 3,900 frames were read as text (`dolphin-test/ocr/`, the Mac's Vision text recognition; 1,000 frames become about 700 lines). The dialogue reads well; what was wrong was always a sentence the game puts together from pieces of different scenes, which no check of a single scene can see:
   - too long once assembled (`Breaking Ball Points` + ` went up a little.`, `After that, I` + an ending, a name + ` is someone you just met.`). A speech window wraps in the middle of the word; a window of type 29 or 30 also **drops the cell after the wrap** ("lit" / "e."). Cure: a shorter ending (` rose a bit.`), or `\n` at the start of the second piece.
   - a subject and an ending that both carry the space or neither does (`I` + `, faced `, `rain` + `practicing away,`).
   - a piece the translator could not know the context of ("I'm" + team name: "I'm Pawafuru Corp.").
-  About 45 lines were corrected with `tl.py set`. Left as it is: after an inserted name or term with an odd number of letters, a piece starting with `'s` or a comma shows half a cell of space ("Reito-san 's rating"), because a run is padded to whole cells.
+  About 45 lines were corrected with `pp15 script set`. Left as it is: after an inserted name or term with an odd number of letters, a piece starting with `'s` or a comma shows half a cell of space ("Reito-san 's rating"), because a run is padded to whole cells.
 - A scenario counts as cleared only when the player is drafted. Played by A presses alone the run ends in the bad ending (not drafted; the run is erased), so scenarios 2 and 3 stay locked. When the player is the starting pitcher the whole game is played by hand: the control settings of the タイム menu (打撃 走塁 投球 守備 監督) are fixed to Manual in Success Mode, nobody fields, and one game took 25 minutes and 59 runs.
 - **Opening scenarios 2 and 3 for testing (2026-10-13).** The scenario card that follows "Start from the beginning" is drawn by `scs_titl.rel`. Its routine at sec1+0x56BC sets the byte `work_scs.rel` sec6+0x60AA1 (memory 0x8065FA81, the number of scenarios the card offers): 1, plus 1 if byte 0x25 of a structure is set, plus 1 if byte 0x26 is set, and it leaves the byte alone when it is already 3. A memory code that keeps it at 3 makes the card show its left / right arrows and all three scenarios start. In `dolphin-test/GameSettings/RP5JA4.ini` (Gecko; the first line checks that `work_scs.rel` is loaded, so nothing is written in other modes):
   ```
@@ -323,10 +323,10 @@ session with one Sonnet agent per batch of about 430 runs, six at a time (95 bat
 ## Menu strings of the other modes (2026-10-13, fifth session)
 
 The fixed-slot strings outside the Success scripts were translated in two runs of 8 Sonnet batches (16 batches,
-4,963 unique strings, about 1.8 million tokens, 20 minutes of agent time). `ui_strings.py status`: 9,171 of 9,947
+4,963 unique strings, about 1.8 million tokens, 20 minutes of agent time). `pp15 strings status`: 9,171 of 9,947
 strings in English, in 62 modules; built, verified and installed.
 
-- `ui_strings.py export FILE` works on any module as it is. The rows it finds are text, name lists and noise
+- `pp15 strings export FILE` works on any module as it is. The rows it finds are text, name lists and noise
   (glyph grids, tables of numbers); translators leave out what is not text.
 - Tools in `_work/tl_bulk/` (not in git): `make_string_batches.py` (unique strings of the listed modules into
   `strings/in/Snn.txt`; a string that appears in many slots goes out once, `strings/dups.json` holds its copies;
@@ -339,7 +339,7 @@ strings in English, in 62 modules; built, verified and installed.
   (`sn_abiup.rel`, `are_abi.rel`), Success leftovers (`scs_end`, `scs_make`, `scs_grad`), records room, cheer
   songs, Arrange, draft, the Eikan Nine screens (`sct_a_*`, `work_sct`, `sct_card`, `sct_rens`, `sct_sugo`),
   championship, and the small Pennant and My Life setup modules.
-- **A pointer shows where a string really starts.** `ui_strings.find` starts a string at the first glyph number
+- **A pointer shows where a string really starts.** `pp15.text.strings.find` starts a string at the first glyph number
   it meets, and small numbers in front of a text (a header: `0007 0008`, `着着`) are valid glyph numbers. The
   module's own relocations settle it: when a pointer lands inside a slot and none at its start, the text starts
   at the pointer (`pointer_check.py`: `inside_only`); when there is one at the start and another inside, two
@@ -389,16 +389,16 @@ each `codes, 0, text, 0xFFFF`:
 - A unit with its top four bits set is coloured text (`6xxx` and `2xxx`: the lines about the number of fans).
 - Only the start of a message has a pointer (two tables of `R_PPC_ADDR32` in sec5, at +108120 and +130016, and
   a few from the code), and in front of it the data is padded with zeros, so the game reads a message piece
-  after piece. `pointer_check.py` reports these as `inside_only`: `ui_strings.find` glues the stop code of the
+  after piece. `pointer_check.py` reports these as `inside_only`: `pp15.text.strings.find` glues the stop code of the
   message before to the first piece.
 
 So the pieces of one message can have any length as long as the message ends before the next pointer target.
-`ui_messages.py` (export, check, apply, set, merge, status) writes a message as one line with tags
+`pp15/text/messages.py` (export, check, apply, set, merge, status) writes a message as one line with tags
 (`本日、{60}から{n}{66}選手が{n}トレード入団いたしました。`); the English keeps the tags in their order and is free
 between them (`Today {60} sent{n}{66}{n}to us in a trade.`). Limits: the room of the span (6,793 cells for 6,590
 of Japanese) and 40 letters a line, an inserted name or club counted as 8 and a number as 4 (the longest Japanese
 lines; the real width of the box is **not measured**). English in `translation/messages/<file>.tsv`, merged to
-`_work/messages.json`; `rebuild_scripts.py build` lays each message out again in its span and `verify` compares
+`_work/messages.json`; `pp15 build` lays each message out again in its span and `verify` compares
 the span. Batch tools in `_work/tl_bulk/`: `make_message_batches.py`, `brief_messages.md`, `check_messages.py`,
 `collect_messages.py`.
 
@@ -412,8 +412,8 @@ already had English). Left out by the cut: name lists (`orepena.rel` sec5+40880.
 (tables of numbers that read as glyphs: 834 rows), the message region. Outside the messages only one string
 had a pointer inside its slot (`pn_fa.rel` 5:106, now in `START_TRIM`).
 
-**Result (built, verified, installed).** `ui_strings.py status`: 13,334 of 17,159 strings in English
-(4,163 new slots in the four modules); `ui_messages.py status`: 246 of 246 messages. Font: 1,897 letter pairs,
+**Result (built, verified, installed).** `pp15 strings status`: 13,334 of 17,159 strings in English
+(4,163 new slots in the four modules); `pp15 messages status`: 246 of 246 messages. Font: 1,897 letter pairs,
 1,141 kanji slots left, 1,271 pair slots are kanji that Japanese text still uses. **Seen in game:** the build
 boots, the main menu help line shows, the Success save continues to the command menu. **Not seen:** every
 Pennant and My Life screen, and not one news message (the line width of 40 letters and the spacing around an
@@ -421,7 +421,7 @@ inserted name are guesses until one is seen).
 
 Weak spots of this pass: 44 help texts longer than 30 cells for which no line width was found are stored as one
 line and will wrap in the middle of a word (the Pennant help pages are 19 cells wide and start after an inserted
-word: the padding of the Japanese shows it, `ui_strings` has no rule for a shorter first line); labels of 2 to 4
+word: the padding of the Japanese shows it, `pp15/text/strings.py` has no rule for a shorter first line); labels of 2 to 4
 cells are made-up abbreviations (`Sapp`, `Mnsn A`, `Tmrw`, `Sawa.`); pieces the game joins to a name or a number
 (` was traded!`, ` pk,`, `00M yen player`) were written without seeing what stands in front; in the messages
 `{84}`, `{75}`, `{93}` to `{98}` were guessed from the Japanese next to them.
@@ -451,11 +451,11 @@ Frames of every one were read as contact sheets:
 
 ## Eikan Nine scripts (2026-10-13, seventh session)
 
-`sct_main.rel` holds the story and tutorial text of Eikan Nine as a script of the Success kind: 16-bit instructions, text mode `XX00` followed by 12-bit packed glyphs. 4,263 runs (4,101 not empty, 40,085 glyphs) in 1,980 scenes, in sec5+14416..189368. `tl.py` and the build handle it next to the four Success files (`scan_story.BLOCK_SCRIPTS`, class `BlockScript`).
+`sct_main.rel` holds the story and tutorial text of Eikan Nine as a script of the Success kind: 16-bit instructions, text mode `XX00` followed by 12-bit packed glyphs. 4,263 runs (4,101 not empty, 40,085 glyphs) in 1,980 scenes, in sec5+14416..189368. `pp15/script/translate.py` and the build handle it next to the four Success files (`pp15.script.scan.BLOCK_SCRIPTS`, class `BlockScript`).
 
-- **Interpreter**: sec1+0x22C18, script pointer at r31+0x200, opcode = low byte, 207 opcodes, jump table at sec5+0x32A0. Opcodes 0x00..0x66 mean what they mean in Success Mode (text, return 0x01, if 0x02, waits 0x46 / 0x49 / 0x4A, name inserts 0x4B..0x50); the later ones are numbered differently (goto 0x87, call 0x88, the list opcode 0x67). The lengths in `scan_story.EIKAN_OP_LEN` were read off the handlers with `derive_op_advance` (set `VM_IP = "0x200(r31)"`, exits 0x26B18 and 0x22C18) and parse the whole script with no error; the only unreached data is one return at +90684.
+- **Interpreter**: sec1+0x22C18, script pointer at r31+0x200, opcode = low byte, 207 opcodes, jump table at sec5+0x32A0. Opcodes 0x00..0x66 mean what they mean in Success Mode (text, return 0x01, if 0x02, waits 0x46 / 0x49 / 0x4A, name inserts 0x4B..0x50); the later ones are numbered differently (goto 0x87, call 0x88, the list opcode 0x67). The lengths in `pp15.script.scan.EIKAN_OP_LEN` were read off the handlers with `derive_op_advance` (set `VM_IP = "0x200(r31)"`, exits 0x26B18 and 0x22C18) and parse the whole script with no error; the only unreached data is one return at +90684.
 - **Labels**: the table of 5,318 pointers stands right behind the script (sec5+189372..210644) and is filled by the module's own relocations. Five entry points are also addressed from code of `sct_card.rel` and `sct_sugo.rel` (ADDR16_HA / LO pairs).
-- **The module cannot grow.** In the memory plan `sct_main.rel` (6.4 MB with its BSS) ends 24 bytes before the next modules. So the script is laid out again inside its own 174,952 bytes (`rebuild_scripts.emit_block`): every label is at a multiple of 4 and follows a return or a goto, and the assembler filled the gaps with zeros (2,323 gaps, 6,528 bytes). Those gaps are given up and are the room the English has (about 10% of the text). The Success scripts have run without that alignment since their first rebuild, which was the evidence that the engine does not need it. Seen in game with all 4,101 lines in English (2,774 bytes left): a new Eikan Nine game from the title through the setup into about five weeks of events, tutorials and practice results, no fault. The build then rewrites the 5,317 label addends and the 14 code addends and checks them like every other relocation. If the English is too long the build stops and says by how many bytes.
+- **The module cannot grow.** In the memory plan `sct_main.rel` (6.4 MB with its BSS) ends 24 bytes before the next modules. So the script is laid out again inside its own 174,952 bytes (`pp15.build.rebuild.emit_block`): every label is at a multiple of 4 and follows a return or a goto, and the assembler filled the gaps with zeros (2,323 gaps, 6,528 bytes). Those gaps are given up and are the room the English has (about 10% of the text). The Success scripts have run without that alignment since their first rebuild, which was the evidence that the engine does not need it. Seen in game with all 4,101 lines in English (2,774 bytes left): a new Eikan Nine game from the title through the setup into about five weeks of events, tutorials and practice results, no fault. The build then rewrites the 5,317 label addends and the 14 code addends and checks them like every other relocation. If the English is too long the build stops and says by how many bytes.
 - A dialogue line is taken as 18 cells (36 letters): the Japanese rarely passes 18. Lines of 36 letters showed whole in the manager's box.
 - Names padded with full-width spaces to a column (ability names, 10 cells) are padded again by `_work/tl_bulk/pad_columns.py` after `collect.py`.
 - Eikan Nine is entered from the Success screen (the right-hand picture), not from the main menu.
@@ -463,12 +463,12 @@ Frames of every one were read as contact sheets:
 
 ## My Life scripts (2026-10-13, eighth session)
 
-`orepena.rel` holds the story text of My Life: **17,695 text runs (159,152 glyphs) in 1,420 scenes**, in sec5+182584..803170. The earlier count of 3,100 runs came from a search that only finds kana-rich lines. It is a script of a third kind, with an engine of its own; `tl.py` and the build handle it as a sixth file (`scan_story.OreScript`, entry `orepena.rel` of `BLOCK_SCRIPTS`).
+`orepena.rel` holds the story text of My Life: **17,695 text runs (159,152 glyphs) in 1,420 scenes**, in sec5+182584..803170. The earlier count of 3,100 runs came from a search that only finds kana-rich lines. It is a script of a third kind, with an engine of its own; `pp15/script/translate.py` and the build handle it as a sixth file (`pp15.script.scan.OreScript`, entry `orepena.rel` of `BLOCK_SCRIPTS`).
 
-- **Interpreter**: `ore_work.rel` sec1+0x1CE4 (script pointer at r15+0x58, label table pointer at r15+0x4C). An instruction is a whole halfword, not a low byte. sec1+0x3BE0 skips a block and so lists the length of every instruction; the lengths in `scan_story.ORE_OP_LEN` are read off it and off the interpreter, and parse the script with no error (83 returns that nothing reaches are kept as they are).
+- **Interpreter**: `ore_work.rel` sec1+0x1CE4 (script pointer at r15+0x58, label table pointer at r15+0x4C). An instruction is a whole halfword, not a low byte. sec1+0x3BE0 skips a block and so lists the length of every instruction; the lengths in `pp15.script.scan.ORE_OP_LEN` are read off it and off the interpreter, and parse the script with no error (83 returns that nothing reaches are kept as they are).
 - **Instructions**: `0000` text (the 12-bit packing of the Success scripts, read at sec1+0x3F30; a line break is an instruction, never a unit), `0001` new line, `0006` / `0007` wait for a button, `0008` return, `000D` .. `000A` an emphasised span, `0018 w p` window, `001C` (5 halfwords) and `003F n` insert a name or number, `0032 L` call, `0035 L` goto, `0033 n` / `0034 n` mark a place and jump back to it, `0036` / `0037` if (operator, operand types, two operands) and `0038` else, each followed by `FFF0` .. `FFF1` around a block or by one label number, `003C n ...` a list with its count, `003E x` a sound.
 - **Labels**: jumps name a label by number. The table (sec5+173464, 1,852 entries) is filled by the module's own relocations, and nothing else points into the script: the 613 code relocations into the area all go to three **islands** of other data that lie between the scenes (sec5+187254..189808, 228090..229016, 779308..780240: tables with relocations of their own, debug strings). The islands stay where they are. Behind the script: other data to 807216, then a table of romanised names (16-bit letters, 1 = A) with its own pointer table at sec5+808964.
-- **No room, so an annex.** In the memory plan `orepena.rel` ends exactly where the next modules start, and the padding in front of its labels is only 2.8 KB for 245 KB of text. The build lays each stretch between two islands out again in place and moves the scenes that do not fit to an **annex behind the data of `ore_work.rel`**, which it then loads at 0x81400000, in the free memory above the plan (the scenario modules of Success use the lower part of that area). A label of a moved scene is filled by a relocation against `main.dol`, which is an absolute address; such relocations lie behind `fixSize` like the module's own, so `orepena.rel` needs the same memory and keeps its file size. The annex starts with `OREX` and its own address, so a built file can be read back without the plan (`OreScript` appends the annex to the section's halfwords). `rebuild_scripts.emit_ore`, `ore_relocations`, `update_plan_ore`; the verification compares instructions, labels, text and every relocation as for the other scripts.
+- **No room, so an annex.** In the memory plan `orepena.rel` ends exactly where the next modules start, and the padding in front of its labels is only 2.8 KB for 245 KB of text. The build lays each stretch between two islands out again in place and moves the scenes that do not fit to an **annex behind the data of `ore_work.rel`**, which it then loads at 0x81400000, in the free memory above the plan (the scenario modules of Success use the lower part of that area). A label of a moved scene is filled by a relocation against `main.dol`, which is an absolute address; such relocations lie behind `fixSize` like the module's own, so `orepena.rel` needs the same memory and keeps its file size. The annex starts with `OREX` and its own address, so a built file can be read back without the plan (`OreScript` appends the annex to the section's halfwords). `pp15.build.rebuild.emit_ore`, `ore_relocations`, `update_plan_ore`; the verification compares instructions, labels, text and every relocation as for the other scripts.
 - Tested offline (written files read back): unchanged text, every run one and six units longer (24 KB and 158 KB in the annex, 50 and 272 labels moved), every run halved.
 - **Built and seen in game (2026-10-13)** with the first 9 batches (4,637 of 17,695 runs; 1,933 pieces stay in place, 720 bytes and 2 labels are in the annex, `ore_work.rel` at 0x81400000..0x81434F78): a new My Life from its title through team choice, name entry and the settings into the signing scene and the first spring camp, about 180 key presses, no fault. English scenes play between the Japanese ones (camp opening, the manager's team policy with its coloured span, practice results, "My Spirit went up!"); three lines of 34 letters fit the box. Frames: `dolphin-test/looks/mylife/`, `looks/mylife_english.jpg`. Which scenes are the two in the annex was not looked up, so the annex itself is proven by the build's checks and by the module running at its new address, not by a scene seen from it.
 - Seen to fix later: an inserted practice name is padded to a fixed width, so "Weight training" + " done!" shows a wide gap; Japanese lines not yet translated show letter pairs in place of some kanji ("Gntsの名に").
@@ -481,7 +481,7 @@ Frames of every one were read as contact sheets:
 ## The three small script modules (2026-10-14, sixteenth session; built and verified)
 
 All three are English, built, verified (the build re-reads every script, label and relocation) and installed.
-`tl.py` and the build handle them through `scan_story.BLOCK_SCRIPTS`; translations in `translation/<file>.tsv`,
+`pp15/script/translate.py` and the build handle them through `pp15.script.scan.BLOCK_SCRIPTS`; translations in `translation/<file>.tsv`,
 batches in `_work/tl_bulk/<file>/` (one batch each, translated by Opus in the session, checker clean apart from
 debug menus whose Japanese breaks the same limits).
 
@@ -499,7 +499,7 @@ debug menus whose Japanese breaks the same limits).
   appends one annex per script behind the data of `ore_work.rel` (loaded at 0x81400000), each starting with its
   own magic (`OREX` orepena, `PNEX` gdt_pn, `KKEX` koukai) and its own address. `OreScript` finds its annex by
   scanning from `annex_from` in 8-byte steps for its magic whose address field agrees with the first header.
-  `rebuild_scripts.build` keeps a list `ores` (was one `ore`); verify maps each script's labels with its own
+  `pp15.build.rebuild.build` keeps a list `ores` (was one `ore`); verify maps each script's labels with its own
   remap. Present build: gdt_pn 96 bytes and koukai 56 bytes in the annex, `ore_work.rel` ends at 0x814356A0.
 - **`scs_comi.rel`**: the rival showdowns of a Success match (each opposing team's taunts, the player's answer
   choices, pitch announcements, a pitch-name slot filled from scenes s0050..s0076, debug lists of faces and
@@ -547,7 +547,7 @@ Found with a texture dump taken screen by screen (`dolphin-test/looks/first/step
 
 ## First screens of Success in English (2026-10-13, eighth session; seen in game)
 
-Three files, each with a generator in `_work/ui_pages/` that writes its spec (`gen_titl_spec.py`, `gen_make_spec.py`, `gen_name_spec.py`); `python3 ui_labels.py apply ui_specs/<file>.json` writes the sheet, the originals are in `_work/orig_arc/`.
+Three files, each with a generator in `_work/ui_pages/` that writes its spec (`gen_titl_spec.py`, `gen_make_spec.py`, `gen_name_spec.py`); `python3 -m pp15 apply-art specs/<file>.json` writes the sheet, the originals are in `_work/orig_arc/`.
 
 - **`scs_titl.arc`**: the start screen (`y5_scs_tit_0`: Start, My Players, Linked World, Registered / Pit. / Fld., New Game, Continue, Players, Album, Cleared, Turned Pro) and the overwrite warning (`r4_sta`: Warning! and three lines, the two answers, Cleared, Ending Movie). Left: `r4_staz`, `y5_sge_0` (the three scenario names) and `y5_tic_h1` are 8-bit pages, which `compose.py` cannot show and the label tools have not been tried on.
 - **`scs_make.arc`**: the profile screens (`y5_cmk_0`: five headings, Is this OK?, six handedness lines, seven positions, four pitching and eight batting forms, Yes / No) and the difficulty screen (`y5_nan_0`: the heading, Normal, Rookie). Left: `L・Rで視点変更` and `⊖で視点変更` (sprites 36 and 45), the two subtitles painted on the difficulty plates (〜 いつものサクセス 〜, 〜 初めて遊ぶ人でも安心 〜), the application form (`y5_cmc_0`, `y5_make_bg_opd`).
@@ -555,24 +555,24 @@ Three files, each with a generator in `_work/ui_pages/` that writes its spec (`g
 
 **Seen in game** (`dolphin-test/looks/first/walk.py` walks the screens, frames in `looks/first/walk/`): the Success screen (Start, My Players, Linked World, Registered / Pit. / Fld. with the counts), the title (New Game, Continue, Players, Cleared), the overwrite warning with both answers and the team plate Pawafuru Corp., name entry (heading and the seven buttons shown), the five profile screens with all their lists, Is this OK? Yes / No, the difficulty screen. Not seen: Album, Turned Pro and the Eikan side, the other five name headings, Cancel, Kagurazaka Group, Otori Phoenix, the batting form list, L / R: Turn View, Ending Movie. The "Enter a name" heading is small on its wide plate (capitals 13 pixels): room to grow.
 
-**The Success screen draws a copy.** `scc_tops.arc` holds the same six pages and the same sprite table as `y5_scs_tit_0` of `scs_titl.arc` (under the bank name `y5_tic_scc_h0_opd`, whose sprite table the bank reader does not attach to it); the mode-select screen uses that copy, the title uses `scs_titl.arc`. `_work/ui_pages/tools/mirror_bank.py scs_titl.arc y5_scs_tit_0 scc_tops.arc y5_tic_scc_h0_opd --write` copies the English pages and the moved sprite parts across (it checks that pages and table are the same bytes in the two originals). Run it again after every apply of `ui_specs/scs_titl.json`. When a changed sheet still shows Japanese in game, search the other files for the original page before anything else.
+**The Success screen draws a copy.** `scc_tops.arc` holds the same six pages and the same sprite table as `y5_scs_tit_0` of `scs_titl.arc` (under the bank name `y5_tic_scc_h0_opd`, whose sprite table the bank reader does not attach to it); the mode-select screen uses that copy, the title uses `scs_titl.arc`. `_work/ui_pages/tools/mirror_bank.py scs_titl.arc y5_scs_tit_0 scc_tops.arc y5_tic_scc_h0_opd --write` copies the English pages and the moved sprite parts across (it checks that pages and table are the same bytes in the two originals). Run it again after every apply of `specs/scs_titl.json`. When a changed sheet still shows Japanese in game, search the other files for the original page before anything else.
 
 Still Japanese on this path, seen: the opening card of scenario 1 (プロ野球選手になることが...) and its start card (GAME START, クリア人数 投手 野手: `scs_load.arc`), the whole voice screen (`arevoice.arc` `m3_onsei`, 43 pages), the application form beside the lists, ⊖で視点変更, the two subtitles of the difficulty plates. In My Life: its title buttons (最初から, つづきから, 名鑑), the two story buttons, 入団チーム選択, the System screen, the HUD (マイ魂, 疲労, 軍, 歳).
 
 What made these quick, and what to know for the next sheets:
 
-- **Sprites share pieces** (右投 + 左打; 二 + 塁手; 投球 + フォームを決めて + ください; 名前 / 曲名 / 大会名 + を入力してください). A label is addressed by its rectangle (`"from"`), and `"left"` + `"baseline"` put it on a fixed column and row of the sprite, measured from where the old rectangle stood (the part's x). So a row is set as words side by side: measure each word as its style draws it (`ui_type.RENDER[style](*ui_type.typeset(text, font))`), then give every piece its column. A shared piece gets one column for all the sprites that use it: a shared word goes first ("Enter" + "a name"), or the changing word gets a slot of one width ("Choose your" + pitching / batting + "form").
+- **Sprites share pieces** (右投 + 左打; 二 + 塁手; 投球 + フォームを決めて + ください; 名前 / 曲名 / 大会名 + を入力してください). A label is addressed by its rectangle (`"from"`), and `"left"` + `"baseline"` put it on a fixed column and row of the sprite, measured from where the old rectangle stood (the part's x). So a row is set as words side by side: measure each word as its style draws it (`pp15.art.typeset.RENDER[style](*pp15.art.typeset.typeset(text, font))`), then give every piece its column. A shared piece gets one column for all the sprites that use it: a shared word goes first ("Enter" + "a name"), or the changing word gets a slot of one width ("Choose your" + pitching / batting + "form").
 - A part shows at most 128 pixels, so a long line is two or three pieces; the bands of neighbours overlap by twice the style's padding.
 - A piece that English does not need is `{"from": [...], "empty": true}`; a sub-rectangle of another label (を入 inside 名前を入) is a label of its own.
 - A sprite drawn twice (black or one-colour shadow, then colour) needs nothing special when both layers show the same rectangle.
 - "compressed page needs N bytes, its slot has M": fewer ink levels in the style (the soft colours between outline and fill, the ramp of the letters) fixed it both times.
-- New styles in `ui_type.RENDER`: `titlestart` / `titleview` / `titlelink`, `titleitem`, `titlecount`, `titleclear`, `warnline`, `warnhead`, `albumclear`, `albummovie`, `makehead`, `makeitem`, `nannormal`, `nanrookie`, `namehead`, `namebutton`; `logo` takes a `thick` outline, `dropped` is letters with a cast shadow and no outline.
+- New styles in `pp15.art.typeset.RENDER`: `titlestart` / `titleview` / `titlelink`, `titleitem`, `titlecount`, `titleclear`, `warnline`, `warnhead`, `albumclear`, `albummovie`, `makehead`, `makeitem`, `nannormal`, `nanrookie`, `namehead`, `namebutton`; `logo` takes a `thick` outline, `dropped` is letters with a cast shadow and no outline.
 
 ## The match: where its text is, and the first sheets (2026-10-13, ninth session; applied, calls seen in game)
 
 Done offline while another session held the emulator and the build (My Life batches): three specs written,
 checked by rendering in memory, not applied to `DATA/files`. Generator: `_work/ui_pages/gen_match_spec.py`
-(writes `ui_specs/gameplay.json`, `main_prg.json`, `time.json`). Apply them, prove the sheets with a texture dump,
+(writes `specs/gameplay.json`, `main_prg.json`, `time.json`). Apply them, prove the sheets with a texture dump,
 then look (see "Next" below).
 
 - **The match's strings are done already.** `gameplay.rel` has 429 string slots, 343 English since the fifth
@@ -621,7 +621,7 @@ Specs (193 labels):
 - `time.json` (46): column headers AB AVG HR RBI TRJ CON PWR SPD ARM FLD POS, R SB E; pitching IP BF NP SO WP BB
   ER R H HR; Batter / Bench; runner tags 3rd / 2nd / 1st + Runner; the screen's two sets of menu words.
 
-New in the tools (`ui_type.py`; all ten older specs still render byte-identical to what is installed):
+New in the tools (`pp15/art/typeset.py`; all ten older specs still render byte-identical to what is installed):
 - `"ribbon": true` group (`repack_ribbon`): big lettering set line by line and poured into the page rows,
   cut where a row ends; piece n goes to part n of the sprite. A sprite has a fixed number of parts (a 2-part
   call can show two pieces at most), so long lines take whole empty rows first. Lines drawn twice in one style
@@ -637,7 +637,7 @@ New in the tools (`ui_type.py`; all ten older specs still render byte-identical 
 - `"left"` / `"baseline"` per cell where the Japanese cells sit a pixel or three off their row (pitching lines,
   player panel): computed from the sprite's own offsets in the generator.
 - Previews: `_work/ui_pages/tools/after.py SPEC BANK OUT.png [scale] [sprite ...]` composes a bank's sprites with
-  the spec applied in memory (each part in its own palette; `ui_labels.py preview` colours a page with one
+  the spec applied in memory (each part in its own palette; `pp15 art preview` colours a page with one
   palette), `bank_sheet.py ARC BANK OUT.png [scale]` every sprite of a bank from the original.
 
 Room is the limit everywhere in the match, not the byte budget: pages hold little free space, the pause menu
@@ -660,7 +660,7 @@ Left for the match, with what blocks each:
 ## Banks that hold several sprite sets (2026-10-14, tenth session)
 
 Some files keep several sprite sets behind one palette: the pages run tex_<set1>00.., tex_<set2>00.., and the sprites of
-every set number their pages from 0 again. `ui_textures.banks` now returns one bank per set (`split_merged`; shared
+every set number their pages from 0 again. `pp15.art.textures.banks` now returns one bank per set (`split_merged`; shared
 palette). It splits only when every set maps to its own run of pages by name and uses no page beyond its own; in all
 12 files where it fires each set uses exactly its pages 0..n-1: ore_ini.arc (y3_mym, y3_mys, y3_myk, y3_kzo: the My Life
 profile card), gdt_ore.arc, ore_ren.arc, gameplay.arc, gdt_sch.arc, pena_sub.arc, pennant.arc, pn_civt.arc, pn_gaijn.arc,
@@ -671,7 +671,7 @@ tool. Every spec renders byte-identical with it. The art survey TSV still counts
 
 A unit above the glyph range with a glyph number in its low 12 bits is that glyph drawn in colour (top 4 bits):
 the My Life title help lines of ore_ini.rel end in プレイ年数：最大20年 in colour 6, the Pennant report options in
-（日程早送りの場合、早送りを中断します。）. ui_strings.find takes such a tail as part of the string only when it is one
+（日程早送りの場合、早送りを中断します。）. pp15.text.strings.find takes such a tail as part of the string only when it is one
 colour, behind real text and closed by 0xFFFF (a looser rule found 7,800 false strings in binary tables). The export
 writes it {6:...}; the English writes it the same way and the build ORs the colour into every unit of the run (the
 letter pairs start again in each run). The neighbours' line widths shifted for eight Pennant help lines: three of
@@ -691,17 +691,17 @@ their English lines were one line in a 25-cell box and are now split with |.
 ## Reproduce
 
 ```bash
-python3 scan_story.py extract      # counts, round-trip check, sample lines
-python3 scan_story.py xref         # code evidence (needs capstone)
-python3 scan_story.py entropy      # entropy map
-python3 scan_story.py scan         # other packed text, compressed data (about 3 minutes)
-python3 rebuild_scripts.py check   # round-trip test of the rebuilder
-python3 rebuild_scripts.py build   # apply _work/translation.json and install to DATA/files
-python3 rebuild_scripts.py restore # put the original files back
-python3 ram_scan.py STATE          # loaded modules and memory map from a Dolphin save state
-python3 tl.py export|apply|merge   # translation workflow: scenes out, English in translation/*.tsv
-python3 ui_strings.py export|apply|merge   # menu and system strings, English in translation/strings/*.tsv
-python3 ui_labels.py apply ui_specs/scs_main.json   # English lettering into a sprite sheet (.arc)
+python3 -m pp15 scan extract      # counts, round-trip check, sample lines
+python3 -m pp15 scan xref         # code evidence (needs capstone)
+python3 -m pp15 scan entropy      # entropy map
+python3 -m pp15 scan scan         # other packed text, compressed data (about 3 minutes)
+python3 -m pp15 build-check   # round-trip test of the rebuilder
+python3 -m pp15 build   # apply _work/translation.json and install to DATA/files
+python3 -m pp15 build-restore # put the original files back
+python3 -m pp15 ram-scan STATE          # loaded modules and memory map from a Dolphin save state
+python3 -m pp15 script export|apply|merge   # translation workflow: scenes out, English in translation/*.tsv
+python3 -m pp15 strings export|apply|merge   # menu and system strings, English in translation/strings/*.tsv
+python3 -m pp15 apply-art specs/scs_main.json   # English lettering into a sprite sheet (.arc)
 ```
 
 
@@ -713,7 +713,7 @@ standard names, one byte per letter, each closed by 0x7D, reached through 26 `R_
 (the pitch type is the index; code reads the table at sec1+0x176A6). A byte indexes a table of sprite
 pointers that the game fills at run time (0x80A5CDB8 in a match) with the sprites of `gameplay.arc`
 `h3_kyu_0`, the font of the original-pitch names: blank, katakana in JIS order, ー, 0-9, A-Z, 号 超 真 改 魔 球
-(`kyu_names.CODES`). No lower case, no punctuation.
+(`pp15.names.kyu.CODES`). No lower case, no punctuation.
 
 How it was found: every search for the text (any 1-, 2- or 4-byte code, 12-bit packing, glyph numbers, SJIS,
 JIS, EUC, UTF-16, in the files and in memory) missed or was misread: one byte-pattern search did hit the block (ス = 0x19), but it was
@@ -722,7 +722,7 @@ found in a save state by the bytes of one part rectangle (km/h), then a search f
 sprites, which lands on the code -> sprite table; the names sit right behind it. Save states were taken by
 `dolphin-test/looks/pitchnames/catch2.py` at the moment a name is on screen.
 
-`kyu_names.py` (list, check) and `translation/pitch_names.tsv`; the build lays the names out again in the
+`pp15/names/kyu.py` (list, check) and `translation/pitch_names.tsv`; the build lays the names out again in the
 212 bytes (shared tails) and rewrites the 26 addends; verify checks them. **The game draws 9 letters at
 most** (9 sprite slots, 12 pixels apart: "DROP CURVE" showed as "DROP CURV"), and a space leaves a gap wider
 than a letter, so the long names are SLOWBALL, SLOWCURVE, DROPCURVE, KN-CURVE, H-SLIDER, H-SINKER, H-SHUUTO,
@@ -751,14 +751,14 @@ can be typed there too.
   Righties / Lefties on their stripes, Today's Stats (bar and « » plate), the R / L / S hand plates, and the
   vertical 攻撃中 as BATTING turned to read top to bottom (style wrapper `turned`). Still Japanese there: 分
   (game minutes, a 16x24 cell) and 時間.
-- `ui_labels.py` paint: a `"copy"` narrower than the rectangle is repeated across it (a clean strip of a stripe
+- `pp15/art/labels.py` paint: a `"copy"` narrower than the rectangle is repeated across it (a clean strip of a stripe
   or plate), and `"copy": "clear"` empties it (lettering with nothing behind it).
 
 **Bench sheets (`scs_main.arc` z4_sod_*), applied, not seen yet.** Three sheets, each a 512x360 picture on 12
 compressed 8-bit pages (page n at 128 * (n % 4), 128 * (n // 4)): `tex_z4_sodp` (the player's team, (株)パワフル),
 `tex_z4_sodk` (Kagurazaka Group), `tex_z4_sodf` (Otori Phoenix). sodp's pages sit in a bank of the same name
-without sprites, so specs find a sheet by its page names. New tool `ui_sheet.py` ("sheet" entries of a spec, read
-by `ui_labels.render`): it assembles the picture, rebuilds the background under a heading (per row, per column or
+without sprites, so specs find a sheet by its page names. New tool `pp15/art/sheet.py` ("sheet" entries of a spec, read
+by `pp15.art.labels.render`): it assembles the picture, rebuilds the background under a heading (per row, per column or
 a flat cell's commonest colour), sets the English in RGB (letters, rings, a shadow) and maps every pixel to the
 nearest colour the picture already uses, then cuts the pages back out as byte patches. Wording (generator
 `_work/ui_pages/gen_sod_spec.py`): Lineup Card, team name, Starting Lineup, No. / Player / Pos, Bench, Bullpen,
@@ -773,7 +773,7 @@ over the glyph sprites needs the spacing seen on screen once.
 ## Surnames in Latin letters (2026-10-14, fourteenth session; seen in game)
 
 The surname list (1,856 names: team-mates, generated players, Eikan Nine squads) is English in two forms. Tool:
-`name_table.py` (doc string has the detail); English in `translation/names/surnames.tsv`, romanised from the
+`pp15/names/table.py` (doc string has the detail); English in `translation/names/surnames.tsv`, romanised from the
 announcer's own readings (each record's call id), so a kanji with several readings comes out as the game says it.
 
 - **A main.dol data section cannot hold it.** The apploader refuses any DOL section above 0x80900000 ("One of the
@@ -805,7 +805,7 @@ announcer's own readings (each record's call id), so a kanji with several readin
 - English: `translation/names/players.tsv` (roster offset, call id, English); 56 foreign players and a few
   registered names by hand (Greisinger, Kroon, Ramirez, Lee S.Y., Darvish, G.G. Sato ...; "Inche" (いんちぇ) unsure).
 - Every copy is a six-cell field in main_prg.rel: the roster, a names-only list by team (sec5+0x3C738..) and the
-  144-byte player records (sec5+0x579F0..): 1,437 places, written in place by `name_table.player_patches`. Two
+  144-byte player records (sec5+0x579F0..): 1,437 places, written in place by `pp15.names.table.player_patches`. Two
   kanji patterns stand for two English names (中島 Nakashima / Nakajima, 林 Hayashi / Lin): the roster record or
   a call id nearby decides. Copies in pn_ore_i.rel, pennant.rel and draft.rel are not real players (draft
   prospects and others with the same surnames): a later pass.
@@ -816,8 +816,8 @@ announcer's own readings (each record's call id), so a kanji with several readin
 ### Other name stores, written in place (2026-10-14, fifteenth session; built and verified, not seen)
 One mechanism for every store whose names sit in fixed six-cell fields: `translation/names/in_place/<module>.tsv`
 (section, offset, English; no Japanese), checked against the original (glyph cells, blank cells 0) and laid out
-with `name_table.plate`. `name_table.py export-given / -draft / -holders / -foreign` write the TSVs; the build
-(`name_table.inplace_patches`) writes them. Detail in the doc comments of `name_table.py`.
+with `pp15.names.table.plate`. `pp15 names export-given / -draft / -holders / -foreign` write the TSVs; the build
+(`pp15.names.table.inplace_patches`) writes them. Detail in the doc comments of `pp15/names/table.py`.
 - **Given names** (main_prg.rel sec5+0x3B288, 200 x 16 bytes: 0-99 boys, 100-199 girls; Hepburn from the kana,
   long vowels kept where two names would meet: Yuuki / Yuki, Miyuu / Miyu, Koutaro / Kotaro). Read only by the
   team set-up at main_prg.rel sec1+0x8F690 for teams 0x31..0x34, called from camp.rel (Practice) and
