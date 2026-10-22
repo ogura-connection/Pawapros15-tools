@@ -197,7 +197,7 @@ several kinds of data. Re-encode the originals first and compare. Menu art was i
 - Keep a fixed baseline and left edge per row; the Japanese pieces are often a pixel or three off, so compute
   per-piece offsets from the sprite's own placement.
 - Code: `T/ui_type.py` (`typeset`, `ttf_ink`, styles `logo`, `called`, `banded`, `tight`, `repack`, `repack_ribbon`),
-  `T/ui_labels.py` (`apply`), specs `T/ui_specs/`, generators `T/_work/ui_pages/gen_*_spec.py`, previews
+  `T/ui_labels.py` (`apply`), specs `T/specs/`, generators `T/_work/ui_pages/gen_*_spec.py`, previews
   `T/_work/ui_pages/tools/after.py`, roles `roles.py`.
 - Reusable art: `pawapuro15-wii/labels/` (ours), `references/*/labels/index.tsv` (MLB's, searchable by word).
 

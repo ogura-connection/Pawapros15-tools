@@ -57,7 +57,7 @@ Conrad's srt-pipeline, `docs/ja-to-en.md`). Use the official English of the seri
 - Cut the untranslated, unique text into batches of 400 to 520 lines, scene by scene, with duplicates filled
   in afterwards (`T/_work/tl_bulk/make_batches.py`). One agent per batch (Sonnet, medium effort, about 125 to
   160k tokens and 5 to 8 minutes a batch); a brief per kind of text (`brief*.md`); the agent must pass the
-  checker before it stops (`tl.py check`, `check_strings.py`): line counts, length limits, codes kept in order.
+  checker before it stops (`pp15 script check`, `check_strings.py`): line counts, length limits, codes kept in order.
 - Agents never write the shared English files: one collect script stores the batches one after the other
   (`collect.py`), because parallel writers lose data.
 - Pilot first: 20 lines, look at them in the game, then the rest. Normalise terms across batches before storing
@@ -73,7 +73,7 @@ Conrad's srt-pipeline, `docs/ja-to-en.md`). Use the official English of the seri
   ink to the page's own palette indices by role (fill gradient, outline, white band, shadow), read off the
   Japanese art (`T/ui_type.py`, `T/_work/ui_pages/tools/roles.py`).
 - Re-pack the page and re-point the sprite parts at the new rectangles instead of keeping the old ones
-  (`T/ui_labels.py`, specs in `T/ui_specs/`, generators in `T/_work/ui_pages/gen_*_spec.py`).
+  (`T/ui_labels.py`, specs in `T/specs/`, generators in `T/_work/ui_pages/gen_*_spec.py`).
 - Space on the page, not bytes, is usually the limit. Share pieces the Japanese shares, cut long words across
   a sprite's parts, keep fixed baselines and columns.
 - Quality bar: crisp single-colour borders, no blur from scaling, checked at 4x against the Japanese.
