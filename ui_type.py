@@ -1076,6 +1076,92 @@ def repack_ribbon(group, d, bank, pages, patches, project=None):
     return rows
 
 
+def repack_chain(group, d, bank, pages, patches, project=None):
+    """A group of sprite labels whose art is cut into pieces that other labels share ("chain": true; the inning card of
+    sip_comm.arc). Each label is {"sprite", "layers", "baseline", "font"} plus "text" (one piece) or "chain": [left text,
+    right text] with "gap" (clear ink columns between the two). The style must have a .chain(inks, gap) that returns
+    ([(art, baseline row of the art, x offset)], width): for two texts the style renders the whole label and cuts it into
+    left / middle / right pieces so that the left piece is the same for every label with that left text and the right piece
+    the same for every label with that right text; identical pieces are stored once. Part n of each layer of the sprite
+    shows piece n (the other parts show an empty cell); "baseline" is the screen row of the baseline in the first layer,
+    the label is centred on the first layer's art (or "centre_x")."""
+    areas = [tuple(a) for a in group["areas"]]
+
+    def opt(lab, key, default=None):
+        return lab.get(key, group.get(key, default))
+
+    def page(n):
+        if n not in pages:
+            pages[n] = U.decode_indices(d, *bank["pages"][n]).copy()
+        return pages[n]
+
+    parts = [p for ps in bank["sprites"].values() for p in ps]
+    old, owned = [], set()
+    for lab in group["labels"]:
+        mine = next(ps for name, ps in bank["sprites"].items() if name.endswith("_" + lab["sprite"]))
+        layers = opt(lab, "layers", 1)
+        per = len(mine) // layers
+        box = None
+        for p in mine[:per]:
+            ys, xs = np.nonzero(page(p.page)[p.y0:p.y1, p.x0:p.x1])
+            if len(xs):
+                b = (p.x + xs.min(), p.y + ys.min(), p.x + xs.max() + 1, p.y + ys.max() + 1)
+                box = b if box is None else (min(box[0], b[0]), min(box[1], b[1]), max(box[2], b[2]), max(box[3], b[3]))
+        old.append((mine, box, per, layers))
+        owned |= {(p.page, p.x0, p.y0, p.x1, p.y1) for p in mine}
+    clear = areas + sorted(owned)
+    for p in parts:
+        key = (p.page, p.x0, p.y0, p.x1, p.y1)
+        if key not in owned and any(key[0] == r[0] and key[1] < r[3] and r[1] < key[3] and key[2] < r[4] and r[2] < key[4]
+                                    for r in clear):
+            raise ValueError("sprite %s uses x %d-%d y %d-%d of page %d, which this group clears"
+                             % (p.sprite, p.x0, p.x1, p.y0, p.y1, p.page))
+    style = RENDER[group["style"]]
+    unique, where, plans = [], {}, []        # unique pieces (art, base); art key -> index; per label [(index, x off)], width
+    for lab in group["labels"]:
+        font = opt(lab, "font")
+        texts = lab["chain"] if "chain" in lab else [lab["text"]]
+        inks = [typeset(t, font, project) for t in texts]
+        pieces, W = style.chain(inks, opt(lab, "gap", 4))
+        plan = []
+        for art, base, x in pieces:
+            key = (art.shape, art.tobytes(), base)
+            if key not in where:
+                where[key] = len(unique)
+                unique.append((art, base))
+            plan.append((where[key], base, x, art.shape[0]))
+        plans.append((plan, W))
+    placed = shelf_pack([(a.shape[1], a.shape[0]) for a, _ in unique] + [(4, 4)], areas, tuple(group.get("gap", (1, 1))))
+    for pg, x0, y0, x1, y1 in clear:
+        page(pg)[y0:y1, x0:x1] = 0
+    for k, (art, base) in enumerate(unique):
+        pg, x, y = placed[k]
+        page(pg)[y:y + art.shape[0], x:x + art.shape[1]] = art
+    ep, ex, ey = placed[len(unique)]
+    rows = []
+    for lab, (mine, box, per, layers), (plan, W) in zip(group["labels"], old, plans):
+        if len(plan) > per:
+            raise ValueError("%r needs %d parts per layer, its sprite has %d" % (lab.get("text") or lab["chain"], len(plan), per))
+        left = lab.get("centre_x", (box[0] + box[2]) // 2) - W // 2
+        for k, p in enumerate(mine):
+            layer, n = divmod(k, per)
+            dx = min(q.x for q in mine[layer * per:(layer + 1) * per]) - min(q.x for q in mine[:per])
+            dy = min(q.y for q in mine[layer * per:(layer + 1) * per]) - min(q.y for q in mine[:per])
+            if n < len(plan):
+                u, base, x, h = plan[n]
+                pg, px, py = placed[u]
+                art = unique[u][0]
+                data = U.pack_part(pg, p.flags, p.palette, lab["baseline"] - base + dy, left + x + dx,
+                                   py, px, py + art.shape[0], px + art.shape[1])
+            else:
+                data = U.pack_part(ep, 0, p.palette, p.y, p.x, ey, ex, ey + 4, ex + 4)
+            patches.append((p.offset, data))
+        rows.append((lab.get("text") or " | ".join(lab["chain"]), "%dx%d" % (box[2] - box[0], box[3] - box[1]),
+                     "%dx%d" % (W, max(h for _, _, _, h in plan)), "%d pieces" % len(plan), len(mine)))
+    rows.append(("(%d stored pieces)" % len(unique), "-", "-", "-", 0))
+    return rows
+
+
 def repack(group, d, bank, pages, patches, project=None):
     """Lay out the labels of one repack group. `pages` {page: index array} are edited in place;
     `patches` collects (file offset, 10 bytes) for the sprite parts. Returns report rows.
@@ -1087,6 +1173,8 @@ def repack(group, d, bank, pages, patches, project=None):
     pointed at an empty cell)."""
     if group.get("ribbon"):
         return repack_ribbon(group, d, bank, pages, patches, project)
+    if group.get("chain"):
+        return repack_chain(group, d, bank, pages, patches, project)
     areas = [tuple(a) for a in group["areas"]]
 
     def opt(lab, key, default=None):                 # a label can override the group's settings
