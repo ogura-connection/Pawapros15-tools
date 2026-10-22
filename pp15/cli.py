@@ -109,6 +109,8 @@ COMMANDS = [
 BY_NAME = {c[0]: c for c in COMMANDS if c[1]}
 # Commands whose module has an argparse parser: `pp15 COMMAND --help` goes to the module
 NATIVE_HELP = {"build", "build-check", "build-restore", "scan", "glyphs",
+               "script", "merge-script", "strings", "merge-strings", "messages", "merge-messages",
+               "art", "apply-art", "check-art", "restore-art", "textures", "sheet", "font",
                "names", "kyu-names", "release", "extract-iso", "extract-text", "ram-scan",
                "export-tm", "export-labels", "mlb-assets", "mlb-labels"}
 

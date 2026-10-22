@@ -1,90 +1,103 @@
-"""Command-line tools for the glyph table and the font (the code is in glyphs.py).
+"""Command line tools for the character table and the font: `python3 -m pp15 glyphs COMMAND`.
 
-  python3 -m pp15 glyphs extract-text      extract all text strings
-  python3 -m pp15 glyphs dump-font         render the font atlas
-  python3 -m pp15 glyphs char-table        print the glyph -> character table
-  python3 -m pp15 glyphs decode-bytes XXXX decode hex glyph indices
-  python3 -m pp15 glyphs info              the text system in short
+These are inspection tools for people studying how the game stores text (the library code is pp15/glyphs.py):
+
+  extract-text      list the readable Japanese text found in the scs_*.rel modules (a quick survey, not the
+                    translation workflow; that is `pp15 script`, `pp15 strings`)
+  dump-font         draw all 3,744 font pictures into one PNG atlas (needs Pillow)
+  char-table        print the glyph number -> character table
+  decode-bytes HEX  turn 16-bit hex values (such as 01C0 017B) into glyph numbers and characters
+  info              a short description of the text system
+
+Public functions: main(argv) and one cmd_* function per command (each takes the parsed argparse namespace).
 """
 import argparse
 import glob
 import os
-import sys
+from collections import defaultdict
+from typing import List, Optional
 
 from pp15 import config
-from pp15.glyphs import (DATA_FILES, MAX_GLYPH, decompress_glyph, extract_glyph_strings, extract_sjis_strings,
-                         glyph_to_char, is_clean_text, load_glyph_data, parse_rel_header, read_section_data)
+from pp15.glyphs import (GLYPH_BYTES_W, GLYPH_ROW_PITCH, GLYPH_ROWS, GLYPH_MASK, FLAGS_SHIFT,
+                         MAX_GLYPH, decompress_glyph, extract_glyph_strings, extract_sjis_strings, glyph_to_char,
+                         is_clean_text, load_glyph_data, parse_rel_header, read_section_data)
+
+MAIN_MODULE = "scs_main.rel"
+MAIN_TEXT_SECTION = 5               # the menu and label strings of scs_main.rel live in this section
+FIRST_SCRIPT_SECTION = 4            # sections below this hold code and tables, not text, in the other scs_*.rel
+MIN_SECTION_SIZE = 100              # smaller sections are skipped
+CHAR_TABLE_LINE = 47                # characters per printed line of char-table
+
+# (title, first glyph, last glyph) of the blocks char-table prints
+CHAR_TABLE_BLOCKS = [
+    ("Symbols (JIS row 1)", 0, 93),
+    ("Symbols (JIS row 2)", 94, 187),
+    ("Digits and Latin letters (JIS row 3)", 188, 281),
+    ("Hiragana (JIS row 4)", 282, 375),
+    ("Katakana (JIS row 5)", 376, 469),
+    ("Greek (JIS row 6)", 470, 563),
+    ("Cyrillic (JIS row 7)", 564, 657),
+    ("Line drawing (JIS row 8, partial)", 658, 705),
+    ("Kanji (JIS rows 0x30+)", 706, MAX_GLYPH),
+]
 
 
-def cmd_extract_text(args):
-    """Extract all readable text from game files."""
-    print("=" * 80)
-    print("JIKKYOU POWERFUL PRO YAKYUU 15 — TEXT EXTRACTION")
-    print("=" * 80)
-    print()
+def _tag(strings: List[dict], filename: str, section: int, into: List[dict]) -> None:
+    """Add the file and section to each found string and append them to `into`."""
+    for s in strings:
+        s['file'] = filename
+        s['section'] = section
+        into.append(s)
 
-    all_strings = []
 
-    # 1. Extract from scs_main.rel section 5 (main game data)
-    main_path = os.path.join(DATA_FILES, "scs_main.rel")
+def collect_clean_strings() -> List[dict]:
+    """Clean Japanese strings of scs_main.rel section 5 and of every other scs_*.rel (glyph and Shift-JIS text)."""
+    all_strings: List[dict] = []
+
+    main_path = os.path.join(config.DATA_FILES, MAIN_MODULE)
     if os.path.exists(main_path):
         rel = parse_rel_header(main_path)
-        if rel and len(rel['sections']) > 5:
-            sec5 = rel['sections'][5]
+        if rel and len(rel['sections']) > MAIN_TEXT_SECTION:
+            sec5 = rel['sections'][MAIN_TEXT_SECTION]
             data = read_section_data(main_path, sec5)
             strings = extract_glyph_strings(data, min_len=3)
             clean = [s for s in strings if is_clean_text(s['text'])]
-            print(f"scs_main.rel sec5: {len(strings)} raw strings, {len(clean)} clean")
+            print(f"{MAIN_MODULE} sec{MAIN_TEXT_SECTION}: {len(strings)} raw strings, {len(clean)} clean")
+            _tag(clean, MAIN_MODULE, MAIN_TEXT_SECTION, all_strings)
 
-            for s in clean:
-                s['file'] = 'scs_main.rel'
-                s['section'] = 5
-                all_strings.append(s)
-
-    # 2. Extract from all scs_*.rel files
-    for relpath in sorted(glob.glob(os.path.join(DATA_FILES, "scs_*.rel"))):
+    for relpath in sorted(glob.glob(os.path.join(config.DATA_FILES, "scs_*.rel"))):
         name = os.path.basename(relpath)
-        if name == "scs_main.rel":
-            continue  # Already done
+        if name == MAIN_MODULE:
+            continue  # already done above
         rel = parse_rel_header(relpath)
         if not rel:
             continue
         for sec in rel['sections']:
-            if sec['bss'] or sec['size'] < 100 or sec['index'] < 4:
+            if sec['bss'] or sec['size'] < MIN_SECTION_SIZE or sec['index'] < FIRST_SCRIPT_SECTION:
                 continue
             data = read_section_data(relpath, sec)
 
-            # Glyph strings
             strings = extract_glyph_strings(data, min_len=4)
             clean = [s for s in strings if is_clean_text(s['text'])]
             if clean:
                 print(f"{name} sec{sec['index']}: {len(clean)} clean glyph strings")
-                for s in clean:
-                    s['file'] = name
-                    s['section'] = sec['index']
-                    all_strings.append(s)
+                _tag(clean, name, sec['index'], all_strings)
 
-            # SJIS strings
             sjis = extract_sjis_strings(data, min_len=10)
             sjis_clean = [s for s in sjis if is_clean_text(s['text'])]
             if sjis_clean:
                 print(f"{name} sec{sec['index']}: {len(sjis_clean)} clean SJIS strings")
-                for s in sjis_clean:
-                    s['file'] = name
-                    s['section'] = sec['index']
-                    all_strings.append(s)
+                _tag(sjis_clean, name, sec['index'], all_strings)
+    return all_strings
 
-    print(f"\nTotal: {len(all_strings)} clean text strings")
-    print()
 
-    # Output
-    output_path = args.output or os.path.join(config.ROOT, "extracted_text.txt")
+def write_text_report(all_strings: List[dict], output_path: str) -> None:
+    """Write the strings, grouped by file and sorted by offset, to a UTF-8 text file."""
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("JIKKYOU POWERFUL PRO YAKYUU 15 — EXTRACTED TEXT\n")
         f.write(f"Total strings: {len(all_strings)}\n")
         f.write("=" * 80 + "\n\n")
 
-        # Group by file
         by_file = defaultdict(list)
         for s in all_strings:
             by_file[s['file']].append(s)
@@ -100,43 +113,46 @@ def cmd_extract_text(args):
                 f.write(f"[{enc}] sec{s['section']}+0x{s['offset']:06X} ({s['length']}ch)\n")
                 f.write(f"  {s['text']}\n\n")
 
+
+def cmd_extract_text(args: argparse.Namespace) -> None:
+    """Extract all readable text from the game's script modules and write it to a text file."""
+    print("=" * 80)
+    print("JIKKYOU POWERFUL PRO YAKYUU 15 — TEXT EXTRACTION")
+    print("=" * 80)
+    print()
+
+    all_strings = collect_clean_strings()
+
+    print(f"\nTotal: {len(all_strings)} clean text strings")
+    print()
+
+    output_path = args.output or os.path.join(config.ROOT, "extracted_text.txt")
+    write_text_report(all_strings, output_path)
     print(f"Output saved to: {output_path}")
 
 
-def cmd_char_table(args):
+def cmd_char_table(args: argparse.Namespace) -> None:
     """Print the full glyph index → Unicode character mapping table."""
     print("GLYPH INDEX → CHARACTER TABLE")
     print("=" * 60)
 
-    sections = [
-        ("Symbols (JIS row 1)", 0, 93),
-        ("Symbols (JIS row 2)", 94, 187),
-        ("Numbers/Latin upper (JIS row 3)", 188, 281),
-        ("Latin lower/Hiragana (JIS row 4)", 282, 375),
-        ("Hiragana (JIS row 5)", 376, 469),
-        ("Katakana (JIS row 6)", 470, 563),
-        ("Greek/Cyrillic/Line (JIS row 7)", 564, 657),
-        ("Partial row 8", 658, 705),
-        ("Kanji (JIS rows 0x30+)", 706, MAX_GLYPH),
-    ]
-
-    for name, start, end in sections:
+    for name, start, end in CHAR_TABLE_BLOCKS:
         print(f"\n--- {name} (glyphs {start}-{end}) ---")
         line = []
         for g in range(start, end + 1):
             ch = glyph_to_char(g)
-            if ch and ch != '\uFFFD':
+            if ch and ch != '�':
                 line.append(ch)
             else:
                 line.append('·')
-            if len(line) >= 47:
+            if len(line) >= CHAR_TABLE_LINE:
                 print(f"  {g-len(line)+1:4d}: {''.join(line)}")
                 line = []
         if line:
             print(f"  {end-len(line)+1:4d}: {''.join(line)}")
 
 
-def cmd_decode_bytes(args):
+def cmd_decode_bytes(args: argparse.Namespace) -> None:
     """Decode hex glyph index values to characters."""
     values = []
     for hexval in args.values:
@@ -148,16 +164,16 @@ def cmd_decode_bytes(args):
             return
 
     for v in values:
-        glyph = v & 0x1FFF
-        flags = (v >> 13) & 0x7
+        glyph = v & GLYPH_MASK
+        flags = (v >> FLAGS_SHIFT) & 0x7
         ch = glyph_to_char(glyph) if 0 < glyph <= MAX_GLYPH else None
         flag_str = f" flags={flags}" if flags else ""
         char_str = f' = "{ch}"' if ch else " = [unmapped]"
         print(f"0x{v:04X}: glyph={glyph}{char_str}{flag_str}")
 
 
-def cmd_dump_font(args):
-    """Render font atlas as PNG."""
+def cmd_dump_font(args: argparse.Namespace) -> None:
+    """Render the font atlas (every font picture, `cols` per row) as a PNG."""
     try:
         from PIL import Image
     except ImportError:
@@ -166,7 +182,7 @@ def cmd_dump_font(args):
 
     cols = args.cols or 64
     scale = args.scale or 2
-    glyph_w, glyph_h = 11, 28
+    glyph_w, glyph_h = GLYPH_BYTES_W, GLYPH_ROWS
     total = MAX_GLYPH + 1
     rows = (total + cols - 1) // cols
 
@@ -185,7 +201,7 @@ def cmd_dump_font(args):
         pixels = glyph_img.load()
         for gy in range(glyph_h):
             for gx in range(glyph_w):
-                bidx = gy * 16 + gx
+                bidx = gy * GLYPH_ROW_PITCH + gx
                 if bidx < len(output):
                     pixels[gx, gy] = output[bidx]
         glyph_scaled = glyph_img.resize((glyph_w * scale, glyph_h * scale), Image.NEAREST)
@@ -199,7 +215,7 @@ def cmd_dump_font(args):
     print(f"Saved to: {output_path}")
 
 
-def cmd_info(args):
+def cmd_info(args: argparse.Namespace) -> None:
     """Show information about the text system."""
     print("JIKKYOU POWERFUL PRO YAKYUU 15 — TEXT SYSTEM INFO")
     print("=" * 60)
@@ -212,12 +228,12 @@ def cmd_info(args):
     print("Character mapping (JIS X 0208):")
     print(f"  Glyphs    0- 93: Symbols/punctuation (JIS row 1)")
     print(f"  Glyphs   94-187: More symbols (JIS row 2)")
-    print(f"  Glyphs  188-281: Digits, uppercase Latin (JIS row 3)")
-    print(f"  Glyphs  282-375: Lowercase Latin, misc (JIS row 4)")
-    print(f"  Glyphs  376-469: Hiragana (JIS row 5)")
-    print(f"  Glyphs  470-563: Katakana (JIS row 6)")
-    print(f"  Glyphs  564-657: Greek, Cyrillic, line drawing (JIS row 7)")
-    print(f"  Glyphs  658-705: Miscellaneous (JIS row 8 partial)")
+    print(f"  Glyphs  188-281: Digits and Latin letters (JIS row 3)")
+    print(f"  Glyphs  282-375: Hiragana (JIS row 4)")
+    print(f"  Glyphs  376-469: Katakana (JIS row 5)")
+    print(f"  Glyphs  470-563: Greek (JIS row 6)")
+    print(f"  Glyphs  564-657: Cyrillic (JIS row 7)")
+    print(f"  Glyphs  658-705: Line drawing (JIS row 8 partial)")
     print(f"  Glyphs  706-3743: Kanji (JIS level 1+2)")
     print()
     print("Text encoding:")
@@ -235,43 +251,46 @@ def cmd_info(args):
     print(f"  main_prg.rel sec1+0x0D4C20: Text rendering caller")
 
 
-def main(argv=None):
+def build_parser() -> argparse.ArgumentParser:
+    """The argparse parser with one sub-command per tool."""
     parser = argparse.ArgumentParser(
-        description="Text extraction toolkit for Jikkyou Powerful Pro Yakyuu 15")
-    subparsers = parser.add_subparsers(dest='command')
+        prog="pp15 glyphs",
+        description="Text extraction toolkit for Jikkyou Powerful Pro Yakyuu 15 (character table and font)")
+    subparsers = parser.add_subparsers(dest='command', metavar="COMMAND")
 
-    # extract-text
-    p_extract = subparsers.add_parser('extract-text', help='Extract all text strings')
-    p_extract.add_argument('-o', '--output', help='Output file path')
+    p_extract = subparsers.add_parser('extract-text', help='Extract all text strings',
+                                      description="List the readable Japanese text of the scs_*.rel modules "
+                                                  "and write it to a text file.")
+    p_extract.add_argument('-o', '--output', help='Output file path (default: extracted_text.txt in the repository)')
 
-    # char-table
-    subparsers.add_parser('char-table', help='Print glyph→character table')
+    subparsers.add_parser('char-table', help='Print glyph→character table',
+                          description="Print the whole glyph number -> character table.")
 
-    # decode-bytes
-    p_decode = subparsers.add_parser('decode-bytes', help='Decode hex glyph values')
+    p_decode = subparsers.add_parser('decode-bytes', help='Decode hex glyph values',
+                                     description="Decode 16-bit hex text values into glyph numbers and characters.")
     p_decode.add_argument('values', nargs='+', help='Hex values (e.g. 01C0 017B)')
 
-    # dump-font
-    p_font = subparsers.add_parser('dump-font', help='Render font atlas PNG')
-    p_font.add_argument('-o', '--output', help='Output file path')
+    p_font = subparsers.add_parser('dump-font', help='Render font atlas PNG',
+                                   description="Draw every font picture into one PNG (needs Pillow).")
+    p_font.add_argument('-o', '--output', help='Output file path (default: font_atlas.png in the repository)')
     p_font.add_argument('-c', '--cols', type=int, help='Glyphs per row (default: 64)')
     p_font.add_argument('-s', '--scale', type=int, help='Scale factor (default: 2)')
 
-    # info
-    subparsers.add_parser('info', help='Show text system information')
+    subparsers.add_parser('info', help='Show text system information',
+                          description="Print a short description of the text system.")
+    return parser
 
+
+COMMANDS = {'extract-text': cmd_extract_text, 'char-table': cmd_char_table, 'decode-bytes': cmd_decode_bytes,
+            'dump-font': cmd_dump_font, 'info': cmd_info}
+
+
+def main(argv: Optional[List[str]] = None) -> None:
+    """Run `pp15 glyphs COMMAND`; without a command print the help."""
+    parser = build_parser()
     args = parser.parse_args(argv)
-
-    if args.command == 'extract-text':
-        cmd_extract_text(args)
-    elif args.command == 'char-table':
-        cmd_char_table(args)
-    elif args.command == 'decode-bytes':
-        cmd_decode_bytes(args)
-    elif args.command == 'dump-font':
-        cmd_dump_font(args)
-    elif args.command == 'info':
-        cmd_info(args)
+    if args.command in COMMANDS:
+        COMMANDS[args.command](args)
     else:
         parser.print_help()
 
