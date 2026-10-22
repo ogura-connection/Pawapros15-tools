@@ -408,7 +408,46 @@ def inplace_patches(rel, rows, encode):
 
 
 def inplace_plates(stores):
-    return [plate(en) for rows in stores.values() for _, _, en in rows]
+    return ([plate(en) for rows in stores.values() for _, _, en in rows]
+            + [plate(en) for _, _, en in CODE_NAMES.values()])
+
+
+# A name built by code: orepena.rel sec1+0x3F76C creates the rival 奥居 (the speaker plate and every {name}
+# of My Life) by storing six halfwords of glyph numbers: li r3, 0x37B; li r0, 0x4E6; sth r3, 0(r29);
+# sth 0, 2(r29); sth r0, 4(r29); 0 for cells 3-5. Ten words from 0x3F7A0; the English is stored in cells
+# 0..2 (the plate layout of `plate`) by the same ten words, with the middle cell loaded into r5 (free there)
+# and the last two blank cells cleared by one stw. {module: (section, offset, English)}
+CODE_NAMES = {"orepena.rel": (1, 0x3F7A0, "Okui")}
+CODE_NAME_ORIGINAL = (0x3860037B, 0x380004E6, 0xB07D0000, 0x7FA3EB78, 0x38800000,
+                      0xB39D0002, 0xB01D0004, 0xB39D0006, 0xB39D0008, 0xB39D000A)
+
+
+def code_name_words(en, encode):
+    units = encode(plate(en))
+    if not letters_ok(en) or len(units) > 3:
+        raise ValueError("code name %r does not fit three cells" % en)
+    a, b_, c = (units + [0, 0, 0])[:3]
+    return (0x38600000 | a, 0x38000000 | c, 0xB07D0000, 0x7FA3EB78, 0x38800000,
+            0x38A00000 | b_, 0xB0BD0002, 0xB01D0004, 0xB39D0006, 0x939D0008)
+
+
+def patch_code_name(m, image, encode):
+    """(image, {(sec, off): 4 bytes}): the ten words of the name builder, each checked against the original."""
+    sec, off, en = CODE_NAMES[m.name]
+    if not m.sections[sec]["exec"]:
+        raise ValueError("%s sec%d: not a code section" % (m.name, sec))
+    d, written = bytearray(image), {}
+    new = code_name_words(en, encode)
+    for k, (old, w) in enumerate(zip(CODE_NAME_ORIGINAL, new)):
+        o = off + 4 * k
+        if any(s == sec and o <= p < o + 4 for s, p, *_ in m.relocs()):
+            raise ValueError("%s sec%d+0x%X: a relocation points into this word" % (m.name, sec, o))
+        pos = m.sections[sec]["offset"] + o
+        if struct.unpack_from(">I", m.data, pos)[0] != old or struct.unpack_from(">I", d, pos)[0] != old:
+            raise ValueError("%s sec%d+0x%X: not the expected original word 0x%08X" % (m.name, sec, o, old))
+        struct.pack_into(">I", d, pos, w)
+        written[(sec, o)] = struct.pack(">I", w)
+    return bytes(d), written
 
 
 def holder_fields(d):

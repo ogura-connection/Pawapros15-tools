@@ -1290,6 +1290,13 @@ def build(texts, pad=None, strings=None, dol=None, messages=None):
                 sys.exit(str(e))
             patched.setdefault(m.mod_id, {}).update(written)
             note += ", surname readers patched"
+        if m.name in name_table.CODE_NAMES:                      # a name built by code (My Life rival 奥居)
+            try:
+                image, written = name_table.patch_code_name(m, image, lambda t: encode_text(t, slots))
+            except ValueError as e:
+                sys.exit(str(e))
+            patched.setdefault(m.mod_id, {}).update(written)
+            note += ", %d code words of a name patched" % len(written)
         if m.name in CODE_PATCHES:                               # code words (Linked World birth date)
             try:
                 image, written = patch_code_words(m, image)

@@ -37,6 +37,11 @@ SMALL = {"adv": 8, "base": 14, "cap": 11.5, "ink_w": 7.0}
 FONTS = (("small", 0x000000, SMALL), ("large", 0x05DF64, LARGE))
 FONT_END = {0x000000: 0x05DF64, 0x05DF64: 0x117400}             # each font's space ends at the next one
 KANJI_SLOTS = range(706, 3744)
+# Glyph slots that hold a symbol the code draws by number, not text a scan can see: never given to a letter
+# pair. 0xE77 (3703) is the arrow cursor of the My Life menus (ore_work.rel sec1+0x2DF4 and gdt_pn.rel
+# sec1+0xC6E0 store it as the one-cell string "0xE77, 0xFFFF" and draw it); as a pair slot it showed "9"
+# in front of the first menu line. No other code word loads a number in 0xE50..0xE9F as a glyph.
+RESERVED_GLYPHS = frozenset({0xE77})
 # The game's own full-width Latin letters (name entry, names typed by the player, ＭＶＰ ...) are redrawn as one
 # letter of this font, centred, so a typed name looks like the English around it. Key: SINGLE + the letter.
 SINGLE = "\x01"
@@ -216,7 +221,7 @@ def allocate(pairs, usage, keep=()):
     """Give every letter pair a kanji slot: kanji no text uses first, then the least used, and the
     kanji in `keep` (the name tables) only when nothing else is left. Returns ({pair: glyph},
     number of slots taken from kanji that remaining text still uses, number taken from `keep`)."""
-    free = sorted(KANJI_SLOTS, key=lambda g: (g in keep, usage.get(g, 0), -g))
+    free = sorted((g for g in KANJI_SLOTS if g not in RESERVED_GLYPHS), key=lambda g: (g in keep, usage.get(g, 0), -g))
     if len(pairs) > len(free):
         raise ValueError("%d different letter pairs, only %d glyph slots" % (len(pairs), len(free)))
     slots = dict(zip(sorted(pairs), free))
