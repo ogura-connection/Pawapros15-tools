@@ -1,0 +1,14 @@
+# section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
+5	2268	21	0	04aa	Do not unplug it or turn off the power.
+5	2378	3	1	f901	No
+5	2424	15	1	0221	Swap them. Is this OK?
+5	2456	12	1	07e8	Delete it. Is this OK?
+5	2552	22	1	fe9d	Select the device where this is saved.
+5	2872	32	1	464d	Disconnect from the network and return to the My Data menu.
+5	3008	16	1	6ba4	Save and disconnect, then
+5	3076	21	1	c9e3	return to the My Data menu.
+5	3144	32	1	b23b	These settings use a modem adapter, but currently no
+5	3212	18	1	46c5	modem adapter is connected.
+5	3280	32	1	bcbc	These settings are set to use a broadband adapter,
+5	3348	27	1	1dea	but no broadband adapter is currently connected.
+5	11888	11	0	b229	Use these settings.
