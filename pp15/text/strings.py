@@ -44,7 +44,7 @@ from pp15.text.movable_blocks import block_fit, block_layout, block_of  # noqa: 
 from pp15.text.slot_finder import find, load_mods, strings_of
 from pp15.text.string_rules import check_rows, judge, read_pairs
 from pp15.text.string_tables import (BLOCKS, DOL, DOL_ADDRESS, DOL_BLOCK, DOL_CTRL, DOL_GLYPH, DOL_ORIG, DOL_OVER,  # noqa: F401
-                                     DOL_SOURCE, DOL_STRINGS, HELP_FILES, HELP_NL, WIDE_SLOTS)
+                                     DOL_SOURCE, DOL_STRINGS, HELP_END_SLOTS, HELP_FILES, HELP_NL, WIDE_SLOTS)
 from pp15.text.string_tsv import TSV_DIR, load_tsv, save_tsv, text_hash
 
 LIST_DIR = os.path.join(config.WORK_DIR, "strings")        # the Japanese lists for the translator

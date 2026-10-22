@@ -42,7 +42,9 @@ MAX_LINES = 4       # a slot that would need more lines is not a text box
 START_TRIM = {("scs_data.rel", 5, 106): 3, ("scs_data.rel", 5, 2148): 38,
               ("main_prg.rel", 5, 174930): 7, ("school_g.rel", 5, 162498): 3, ("scs_end.rel", 5, 918): 9,
               ("arr_chg.rel", 5, 2972): 2, ("pn_fa.rel", 5, 106): 3,
-              ("sct_a_pd.rel", 5, 106): 3}      # the Eikan Nine player card's throwing hand, behind 3 cells of data
+              ("sct_a_pd.rel", 5, 106): 3,      # the Eikan Nine player card's throwing hand, behind 3 cells of data
+              ("sct_a_td.rel", 5, 936): 24,     # Eikan Nine team data: 練習器材 behind 24 cells of numbers
+              ("pn_tgrow.rel", 5, 2294): 9}     # Pennant solo training: the prompt behind 9 cells of codes
 # tables of glyph numbers that look like strings but are not text (for example name-entry grids)
 NOT_TEXT = {("scs_data.rel", 5, 1164), ("scs_data.rel", 5, 10002), ("scs_data.rel", 5, 17864),
             ("scs_data.rel", 5, 18946), ("scs_item.rel", 5, 1474), ("scs_item.rel", 5, 3822)}
@@ -58,6 +60,10 @@ SHORT_TEXT = {("scs_data.rel", 5, 13824), ("scs_data.rel", 5, 13828)} | \
 
 # Strings that end a longer glyph run (a symbol table in front of them): their own slot from this offset to the 0xFFFF.
 TAIL_SLOTS = {("sct_card.rel", 5, 3272)}                # a short label ending a symbol table (Eikan Nine command help)
+# One-line strings closed by HELP_END (0x1FFF) instead of 0xFFFF, outside HELP_FILES: their slot runs from the listed
+# offset to the 0x1FFF, which stays. The Eikan Nine team data's training policy: four records of a blank cell (the
+# indent), 11 cells of text padded with 0, and 0x1FFF.
+HELP_END_SLOTS = {("sct_a_td.rel", 5, o) for o in (1914, 1940, 1966, 1992)}
 
 # ── main.dol: the blue system dialogs ─────────────────────────────────────
 DOL = "main.dol"

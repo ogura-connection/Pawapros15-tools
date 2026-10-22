@@ -45,7 +45,11 @@ OUT_JSON = os.path.join(config.WORK_DIR, "messages.json")
 TSV_HEADER = "# section\toffset\thash of the original message\tEnglish (see ui_messages.py)\n"
 END = 0xFFFF
 # file -> [(section, first offset, end offset)] where the messages are
-REGIONS = {"pena_sub.rel": [(5, 110900, 130016)], "pn_fa.rel": [(5, 6584, 6976)]}
+REGIONS = {"pena_sub.rel": [(5, 110900, 130016)], "pn_fa.rel": [(5, 6536, 6976)]}
+# (file, section, offset of a message) -> units in front of its first piece that are kept as they are: blank units and
+# commands with parameters the parser does not know (the FA terms message: 24 zeros, then two window commands
+# 0002 0303 0107 0 and 0006 0405 0107 0)
+PREAMBLE = {("pn_fa.rel", 5, 6536): 32}
 CODES = {1: "n", 7: "p"}    # control codes with a tag of their own: new line, new page
 STOP = (0xF, 8)             # ends a message; kept where it is, never written by a translator
 INSERT_FIRST, INSERT_END = 0x60, 0xA0       # codes 0x60..0x9F insert a value (club, player name, number)
@@ -136,7 +140,7 @@ _messages_cache: Dict[str, List[dict]] = {}
 
 def messages_of(name: str, mods: Optional[dict] = None) -> List[dict]:
     """The messages of module `name`: [{"section", "offset", "cells" (of the span), "pieces", "trailer", "kind",
-    "ja" (the one-line Japanese form)}]. Read once and cached."""
+    "ja" (the one-line Japanese form), "pre" (the PREAMBLE units)}]. Read once and cached."""
     if name in _messages_cache:
         return _messages_cache[name]
     mods = mods or load_mods()
@@ -149,12 +153,13 @@ def messages_of(name: str, mods: Optional[dict] = None) -> List[dict]:
         marks = [a for a in anchors(rel, mods, sec) if lo <= a < hi] + [hi]
         for a, b in zip(marks, marks[1:]):
             units = list(struct.unpack(">%dH" % ((b - a) // 2), d[a:b]))
-            got = parse(units)
+            pre = PREAMBLE.get((name, sec, a), 0)
+            got = parse(units[pre:])
             if got is None or not any(t for _, t, _ in got[0]):
                 continue
             pieces, trailer, kind = got
             out.append({"section": sec, "offset": a, "cells": len(units), "pieces": pieces, "trailer": trailer,
-                        "kind": kind, "ja": form(pieces, japanese)})
+                        "kind": kind, "ja": form(pieces, japanese), "pre": tuple(units[:pre])})
     _messages_cache[name] = out
     return out
 
@@ -163,7 +168,7 @@ def messages_of(name: str, mods: Optional[dict] = None) -> List[dict]:
 
 def room(msg: dict) -> int:
     """Cells the text of all pieces may take together."""
-    fixed = sum(len(c) + 2 for c, _, _ in msg["pieces"]) + len(msg["trailer"])
+    fixed = sum(len(c) + 2 for c, _, _ in msg["pieces"]) + len(msg["trailer"]) + len(msg.get("pre", ()))
     if msg["kind"] == "stop":
         fixed -= 1                          # no 0xFFFF: the stop code closes the text
     return msg["cells"] - fixed
@@ -225,8 +230,9 @@ def encode(msg: dict, texts: Sequence[str], encode_text: Callable[[str], Sequenc
     """The units of the whole span of a message with English text.
 
     encode_text(text) -> glyph units (the build's pair-font encoder); texts = the English of each piece. The span is
-    padded with zeros to its original length; raises ValueError when it does not fit."""
-    out = []
+    padded with zeros to its original length; raises ValueError when it does not fit. A preamble (PREAMBLE) is
+    written first, unchanged."""
+    out = list(msg.get("pre", ()))
     for (codes, _, colour), text in zip(msg["pieces"], texts):
         units = [u | colour << COLOUR_SHIFT for u in encode_text(text)] if text else []
         out += list(codes) + [0] + units + ([END] if msg["kind"] == "end" else [])

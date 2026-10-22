@@ -115,8 +115,9 @@ def _write_slots(state, module, image: bytearray) -> None:
             assert image[pos + len(data) - 2:pos + len(data) + 2] == b"\xff\xff\x00\x00", (module.name, sec, off)
             image[pos + len(data):pos + len(data) + 2] = STRING_END
         else:
+            closed_by_help_end = is_help or (module.name, sec, off) in strings.HELP_END_SLOTS
             assert image[pos + len(data):pos + len(data) + 2] in (
-                (HELP_STRING_END, STRING_END) if is_help else (STRING_END,)), (module.name, sec, off)
+                (HELP_STRING_END, STRING_END) if closed_by_help_end else (STRING_END,)), (module.name, sec, off)
         image[pos:pos + len(data)] = data
         state.patched[module.mod_id][(sec, off)] = data + STRING_END * wide
 

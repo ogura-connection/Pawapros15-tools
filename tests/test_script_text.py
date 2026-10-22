@@ -425,6 +425,9 @@ def test_message_width_room_and_encode():
     encoded = messages.encode(msg, ["ab", "c"], lambda text: [10 + ord(c) % 7 for c in text])
     assert len(encoded) == msg["cells"] and encoded[-1] == 0 and 0xF in encoded
     assert messages.parse(encoded[:len(encoded)])[2] == "end"
+    with_pre = dict(msg, cells=msg["cells"] + 4, pre=(2, 0x303, 0x107, 0))
+    assert messages.room(with_pre) == messages.room(msg)
+    assert messages.encode(with_pre, ["ab", "c"], lambda text: [10 + ord(c) % 7 for c in text])[:4] == [2, 0x303, 0x107, 0]
     try:
         messages.encode(dict(msg, cells=3), ["ab", "c"], lambda text: [1] * len(text))
     except ValueError:

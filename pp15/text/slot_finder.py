@@ -27,8 +27,8 @@ from pp15.text.colour_text import (MAX_COLOURED_TAIL, COLOUR_SHIFT, coloured_tex
 from pp15.text.dol_dialogs import dol_strings
 from pp15.text.line_layout import line_widths
 from pp15.text.movable_blocks import block_of
-from pp15.text.string_tables import (DOL, END, HELP_END, HELP_FILES, HELP_NL, NOT_TEXT, SHORT_TEXT, START_TRIM,
-                                     TAIL_SLOTS, WIDE_SLOTS)
+from pp15.text.string_tables import (DOL, END, HELP_END, HELP_END_SLOTS, HELP_FILES, HELP_NL, NOT_TEXT, SHORT_TEXT,
+                                     START_TRIM, TAIL_SLOTS, WIDE_SLOTS)
 
 _mods_cache: Optional[Dict[int, Rel]] = None
 
@@ -96,14 +96,15 @@ def find_help(rel: Rel) -> List[dict]:
 
 
 def find_tails(rel: Rel) -> List[dict]:
-    """Strings listed in TAIL_SLOTS: they end a longer glyph run, so their slot is cut at the listed offset."""
+    """Strings listed in TAIL_SLOTS (they end a longer glyph run, so their slot is cut at the listed offset) and in
+    HELP_END_SLOTS (closed by 0x1FFF): each slot runs from the listed offset to its end mark."""
     out = []
-    for name, sec, off in TAIL_SLOTS:
+    for (name, sec, off), end in [(t, END) for t in TAIL_SLOTS] + [(t, HELP_END) for t in sorted(HELP_END_SLOTS)]:
         if name != rel.name:
             continue
         hw = _halfwords(rel, sec)
         i = off // 2
-        j = hw.index(END, i)
+        j = hw.index(end, i)
         out.append({"section": sec, "offset": off, "cells": j - i, "units": list(hw[i:j]), "text": units_text(hw[i:j])})
     return out
 
