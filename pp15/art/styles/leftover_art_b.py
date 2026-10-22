@@ -12,7 +12,8 @@ English letters turned and leaned like the paper, and hands back the pixels of o
 (index 0 = leave the pixel as it is). The paint entry that names the style gives the word ("text", "font"), its "rect"
 is that page piece and its "copy" is the same rectangle (the untouched pixels). See PHOTO for the labels.
 
-Used by: specs/sct_comd.json (group "lo_b gmp years"), specs/scs_main.json (groups "lo_b gmoji", "lo_b fos"), specs/scs_make.json (paint entries named "lo_b form").
+Used by: specs/sct_comd.json (group "lo_b gmp years"), specs/scs_main.json (groups "lo_b gmoji", "lo_b fos"), specs/scs_make.json (paint entries named "lo_b form"),
+specs/sct_main.json (paint entries named "lo_b hatashijo", "lo_b magazine", "lo_b newspaper").
 """
 import functools
 
@@ -238,10 +239,26 @@ def _composite(picture):
         ys, xs = np.mgrid[Y0:Y1, X0:X1].astype(float)
         ink, base = _ink(lab["text"], lab["font"])
         al = _alpha(lab, ink, base, xs, ys)
-        if (al[[0, -1], :] > 0.02).any() or (al[:, [0, -1]] > 0.02).any():
+        win = rgb[Y0:Y1, X0:X1]
+        rings = lab.get("rings", ())                 # solid rings round the letters, innermost first (picture pixels)
+        masks, grown = [], al > 0.4
+        for k in range(len(rings)):
+            grown = _grow(grown, 1) if k else (grown | _shift(grown, 1, 1) | _shift(grown, -1, -1) | _shift(grown, 1, -1)
+                                                  | _shift(grown, -1, 1) | _grow(grown, 1))
+            masks.append(grown)
+        edge = masks[-1] if masks else al > 0.02
+        if edge[[0, -1], :].any() or edge[:, [0, -1]].any():
             raise ValueError("%s: the English runs out of its box %s" % (name, lab["box"]))
-        rgb[Y0:Y1, X0:X1] = rgb[Y0:Y1, X0:X1] * (1 - al[..., None]) + col * al[..., None]
-        changed[Y0:Y1, X0:X1] |= al > 0.02
+        for m, c in zip(masks[::-1], rings[::-1]):
+            win[m] = _hex(c)
+        if "colour2" in lab:                         # letters shaded top to foot along the strokes
+            _, v = _to_frame(lab, xs, ys)
+            vin = v[al > 0.4]
+            t = np.clip((v - vin.min()) / max(1e-6, vin.max() - vin.min()), 0, 1)[..., None]
+            col = col * (1 - t) + _hex(lab["colour2"]) * t
+        a3 = (np.where(al > 0.4, 1.0, al) if masks else al)[..., None]
+        win[:] = win * (1 - a3) + col * a3
+        changed[Y0:Y1, X0:X1] |= (al > 0.02) | edge
     pal = colours[list(used)]
     out = np.zeros(idx.shape, np.uint8)
     ys, xs = np.nonzero(changed)
@@ -283,7 +300,10 @@ def _photo_style(name, n):
 # The labels. centre: middle of the English (picture pixels); angle: slope of the baseline (degrees, negative = rising to
 # the right); lean: slope of the upright strokes; wipe: boxes (u0, v0, u1, v1) round the Japanese in the label's frame;
 # box: the picture rectangle the label may change (x0, y0, x1, y1); colour: the letters ("auto" = the Japanese ink).
-PICTURES = {"form": ("scs_make.arc", "y5_make_bg_opd", "grid4")}
+PICTURES = {"form": ("scs_make.arc", "y5_make_bg_opd", "grid4"),
+            "hatashijo": ("sct_main.arc", "n4_bg_hatashijo", "newvram"),
+            "magazine": ("sct_main.arc", "n4_bg_magazine", "newvram"),
+            "newspaper": ("sct_main.arc", "n4_bg_newspaper", "newvram")}
 _F = dict(picture="form", angle=-8.0, lean=9.0, below=205, fill="along")
 PHOTO = {
     # scs_make.arc y5_make_bg_opd: the club application form on the desk at the start of Success (as the flat form y5_cmc)
@@ -307,6 +327,14 @@ PHOTO = {
     "form_photo": dict(_F, text="Photo\nHere", font="ttf:tahoma:12:0:1.0:0.3", centre=(484, 331), angle=-11.0, lean=18.0,
                        mode="light", above=234, fill="membrane", colour="#ffffff", gain=0.85,
                        wipe=[(-26, -25, 27, 26)], box=(448, 296, 512, 370)),     # 写真 / 添付 in the photo box
+    # sct_main.arc n4_bg_hatashijo: the practice-match letter (Eikan Nine story picture)
+    "hat_title": dict(picture="hatashijo", text="Practice Match Request", font="ttf:d_impact:14:0:1.0:0.0",
+                      centre=(134.5, 65.5), angle=-11.5, below=140, fill="along",
+                      wipe=[(-77, -14, 30, 13), (30, -19, 80, 10)], box=(40, 26, 232, 100)),   # 練習試合申込書
+    "hat_school": dict(picture="hatashijo", text="High", font="ttf:tahoma-bold:8:0:1.0:0.0", centre=(211, 69),
+                       angle=-11.0, below=150, fill="along", wipe=[(-17, -6, 17, 6)], box=(186, 56, 232, 84)),  # 高校御中
+    "hat_notice": dict(picture="hatashijo", text="Information", font="ttf:tahoma-bold:7:0:1.0:0.0", centre=(138.5, 97),
+                       angle=-11.0, below=150, fill="along", wipe=[(-27, -7, 27, 7)], box=(104, 82, 174, 114)),  # ご 案 内
 }
 
 for _name in PHOTO:
