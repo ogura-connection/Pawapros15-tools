@@ -4,6 +4,7 @@
 set -e
 cd "$(dirname "$0")/.."
 echo "== imports";     python3 tests/test_imports.py
+echo "== art unit tests"; python3 tests/test_art.py
 echo "== style registry"; python3 tests/test_registry.py
 echo "== build unit tests"; python3 tests/test_build.py
 echo "== names, disc, kit"; python3 tests/test_names_disc_kit.py
