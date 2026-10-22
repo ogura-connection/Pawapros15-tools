@@ -36,6 +36,7 @@
 5	19828	18	0	2288	Show game details in fast-forward.
 5	19878	19	2	175d	(Not reported in fast-forward.)
 5	20016	24	6	b9ba	No free Arrange team slot, so you can't save.
+5	20104	1	0	6f14	yr
 5	20108	15	2	0959	Finishing leads to the ending,
 5	20146	17	2	63d0	and you can save your team as
 5	20184	12	2	0876	an Arrange team.
@@ -142,27 +143,39 @@
 5	23336	2	0	d630	key
 5	23356	2	0	d630	key
 5	23376	2	0	d630	key
+5	25648	1	2	16fd	Lg
+5	25652	1	2	b12d	Bk
+5	25656	1	2	dd0e	Sh
+5	25660	1	2	0583	El
+5	25664	1	0	a986	{blank}
 5	26624	18	0	a796	Set options for all teams.
 5	26674	22	6	f6c7	SELECT changes all levels at once.
 5	26720	18	0	a796	Set options for all teams.
+5	26770	20	6	e608	- Button: change all levels at once.
 5	26812	18	0	a796	Set options for all teams.
 5	26862	17	6	2cf5	Z changes all levels at once.
 5	26900	18	0	a796	Set options for all teams.
+5	26950	20	6	e608	- Button: change all levels at once.
 5	26992	16	0	e30b	Control only the lead runner.
 5	27042	17	6	3758	SELECT changes the level.
 5	27080	16	0	e30b	Control only the lead runner.
+5	27130	12	6	fee0	- Button: change level
 5	27156	16	0	e30b	Control only the lead runner.
 5	27206	9	6	e286	Z changes level
 5	27228	16	0	e30b	Control only the lead runner.
+5	27278	12	6	fee0	- Button: change level
 5	27304	16	0	0146	COM controls everything.
 5	27354	17	6	3758	SELECT changes the level.
 5	27392	16	0	0146	COM controls everything.
+5	27442	12	6	fee0	- Button: change level
 5	27468	16	0	0146	COM controls everything.
 5	27518	9	6	e286	Z changes level
 5	27540	16	0	0146	COM controls everything.
+5	27590	12	6	fee0	- Button: change level
 5	27616	13	0	272f	You control throws only.
 5	27666	17	6	3758	SELECT changes the level.
 5	27704	13	0	272f	You control throws only.
+5	27754	12	6	fee0	- Button: change level
 5	27780	13	0	272f	You control throws only.
 5	27830	9	6	e286	Z changes level
 5	27852	13	0	272f	You control throws only.
@@ -177,6 +190,8 @@
 5	33672	2	2	b431	Shld
 5	33680	3	2	6742	Elbow
 5	33688	3	2	9daf	Strain
+5	33696	6	2	2621	Achilles
+5	33712	7	2	2147	Achilles Tear
 5	33728	7	2	8911	Herniated disc
 5	33744	4	2	9d29	Cheek fx
 5	33756	4	2	214f	Clavicle
@@ -185,6 +200,7 @@
 5	33796	5	2	861d	Meniscus
 5	33808	5	2	608d	Back spasm
 5	33820	5	2	8958	Rheumatism
+5	34284	1	0	5b72	x
 5	63064	18	0	f7a8	Each coach shapes players' batting,
 5	63102	17	0	7c87	pitching, fielding and running.
 5	63140	3	6	89b5	Skill
@@ -217,9 +233,11 @@
 5	63856	5	6	febe	best pitch
 5	63908	9	0	d26f	Once the desired
 5	63926	4	6	88a1	skills
+5	63934	2	0	0c9e	{blank}
 5	63946	6	6	094f	or pitches
 5	63958	13	0	3de9	are learned, in the
 5	63984	6	6	f89e	off-season
+5	63996	1	0	de3d	{blank}
 5	63998	8	6	3e19	changing coaches
 5	64072	15	0	ab75	Training types are as follows:
 5	64148	7	4	1224	Youth Focus
@@ -234,14 +252,17 @@
 5	64494	13	4	c72d	Crafty: Veteran Focus
 5	64532	11	4	337b	Crafty: 1st Team Focus
 5	64570	19	4	15a1	Crafty: Balanced
+5	64618	11	4	4a22	<Pennant Start>
 5	64654	14	0	a075	The 2008 Pennant Race
 5	64692	7	0	23e2	has begun.
 5	64730	14	0	7283	From now on, up to
+5	64810	11	4	4a22	<Pennant Start>
 5	65000	18	0	fb87	Pick a matchup to start a game
 5	65038	17	0	66df	right away. But before then,
 5	65076	3	0	dfde	to
 5	65082	6	6	a81b	gain an edge
 5	65192	11	6	04e0	Prepare for an edge
+5	65214	2	0	7c76	{blank}
 5	65230	7	4	6061	Change lineups
 5	65244	3	0	2903	, 
 5	65268	10	4	3504	trade for talent
@@ -249,12 +270,15 @@
 5	65306	5	4	4aae	set drills
 5	65384	12	0	333f	But when adding players,
 5	65408	4	4	ca21	Imp. cap
+5	65416	1	0	de3d	{blank}
 5	65422	8	0	7e94	needs watching.
 5	65460	4	4	ca21	Imp. cap
 5	65468	13	0	79a3	means 1st Team foreigners
 5	65498	2	0	2cd4	max
+5	65502	2	2	19ca	4
 5	65506	13	0	5bb6	; fielders or pitchers:
 5	65536	2	0	2cd4	max
+5	65540	2	2	8a97	3
 5	65576	16	0	deb5	You pay players a salary yearly.
 5	65614	18	0	b132	To build a strong team you need
 5	65652	5	0	00ea	money.
@@ -267,6 +291,7 @@
 5	65846	4	4	c81c	Loyalty
 5	66192	4	0	9ce9	Now, the
 5	66200	2	6	4100	flag
+5	66206	3	6	3b25	Title
 5	66212	5	0	c074	awaits,
 5	66230	10	0	cd3c	so do your best!
 5	66308	12	2	4349	Note: Game settings may
@@ -278,11 +303,15 @@
 5	66538	9	0	1514	can't be set, the
 5	66556	4	6	2ce3	previous
 5	66576	6	6	66f4	year's best
+5	66700	5	4	93bb	<Schedule>
 5	66734	18	0	1347	Check the season's game schedule.
 5	66772	14	0	a497	Played games are shown too.
+5	66810	3	0	52c8	Also,
 5	66816	7	6	378d	Fast-Forward
 5	66888	7	0	155a	During skips,
 5	66902	4	4	aa1e	trades,
+5	66910	1	0	bdab	{blank}
+5	66912	2	4	a509	hurt
 5	66916	2	0	852f	etc.
 5	66926	17	0	85eb	and other events can show,
 5	66964	10	6	b087	and halt the skip
@@ -291,21 +320,28 @@
 5	67040	6	4	2269	via 'System'
 5	67052	5	0	9ead	menu's
 5	67062	4	4	84e7	Reports
+5	67200	5	4	93bb	<Schedule>
 5	67234	18	0	53ff	You can check the off-season
 5	67272	5	0	678e	schedule.
 5	67310	19	2	987b	(There is no Fast-Forward here.)
+5	67356	4	4	437c	<Manage>
 5	67390	4	4	e6b6	Roster
 5	67398	14	0	1a14	lets you view team strength,
 5	67428	8	4	6fcd	1st/2nd swaps,
+5	67444	1	0	bdab	{blank}
 5	67446	4	4	1c88	Usage
 5	67544	4	4	dde1	Register
+5	67704	3	0	52c8	Also,
 5	67710	4	4	e92a	Practice
 5	67718	7	0	6a2f	can bring
 5	67742	6	0	2c78	mid-season
 5	67754	8	6	84db	ability gains
+5	67770	1	0	a142	{blank}
 5	67780	7	0	e660	to players.
 5	67824	11	2	a7b1	(Only with growth ON)
+5	67852	5	4	9699	<Talent>
 5	67886	4	4	aa1e	Trades,
+5	67894	1	0	bdab	{blank}
 5	67896	6	4	142b	New Imports
 5	67908	4	0	ee38	let you
 5	67924	12	0	52a9	bolster the team.
@@ -313,6 +349,7 @@
 5	68000	6	2	1689	takes days,
 5	68080	6	0	b3b4	Long-term,
 5	68092	9	4	e03e	Draft scouting
+5	68110	1	0	bdab	{blank}
 5	68118	2	4	1975	spot
 5	68122	11	0	7d33	is possible. For
 5	68156	9	6	d2a6	positions to fill,
@@ -324,6 +361,7 @@
 5	68270	6	0	88b8	the year-end
 5	68282	6	4	0fb5	Draft
 5	68348	9	4	846d	Original Players:
+5	68366	2	0	ce4a	{blank}
 5	68370	6	4	33e8	Success-made
 5	68386	7	0	8e3a	players in the
 5	68400	2	4	1850	free
@@ -334,8 +372,11 @@
 5	68552	6	4	4453	his stats
 5	68564	8	0	7d1b	are kept.
 5	68580	7	4	2831	Originals over
+5	68594	1	0	1fa0	{blank}
 5	68596	4	2	4b7c	20 yrs
+5	68604	1	0	7350	{blank}
 5	68618	8	2	7a45	, up to 999
+5	68836	5	4	d488	<Records>
 5	68870	13	0	d9c6	From season and career
 5	68908	14	0	2ff0	stats to titles and all-time
 5	68946	12	0	2de8	bests, all kinds of team
@@ -352,18 +393,24 @@
 5	69484	12	0	a662	When quitting,
 5	69522	5	4	07e9	'Save'
 5	69564	8	4	ddd0	'System' screen:
+5	69580	1	0	7350	{blank}
 5	69602	10	6	eb5f	Pennant settings
 5	69680	7	4	3772	'Options':
+5	69694	1	0	7350	{blank}
 5	69696	7	6	79d9	match flow,
+5	69710	2	0	0c9e	{blank}
 5	69718	5	0	6b9f	in-game
 5	69728	13	6	4b26	control settings, etc.
 5	69800	6	4	8b2f	'Reports'
+5	69812	2	0	ce4a	{blank}
 5	69838	6	0	04d9	Per event,
 5	69850	9	6	1f74	whether to report
 5	69992	6	4	2c0d	'Play Time'
+5	70004	2	0	ce4a	{blank}
 5	70008	4	4	3457	Fast-Fwd
 5	70016	4	0	e42d	midway,
 5	70030	4	4	3457	Fast-Fwd
+5	70038	1	0	eba9	{blank}
 5	70040	9	6	bd58	can be paused, or
 5	70068	16	0	1df2	normal play only in set
 5	70106	5	6	b106	situations
@@ -380,6 +427,7 @@
 5	70586	6	4	e00f	5 days-2 wks
 5	70704	18	0	4bdd	You can scout foreign imports
 5	70742	8	0	f51a	and sign them.
+5	70780	3	0	cf05	First,
 5	70786	9	4	e870	Use Search Request
 5	70896	15	0	52a1	As the schedule then advances,
 5	70934	17	0	5531	the scout finds a foreign player
@@ -399,11 +447,13 @@
 5	71362	4	0	d552	team
 5	71370	5	4	572f	free spots
 5	71480	13	0	ded7	Scouting/signing runs till
+5	71506	5	2	3ecf	June 30
 5	71518	3	0	05cc	and
 5	71524	6	2	f89e	off-season
 5	71536	26	0	18e2	too. After June 30, requests become
 5	71594	2	2	7a20	void
 5	71598	16	0	46f3	, and listed new foreigners get
+5	71632	1	0	1fa0	{blank}
 5	71634	2	2	5cbd	cut
 5	71672	17	0	bb6b	Stats of foreigners seen in the
 5	71710	4	0	75ec	list are
@@ -414,17 +464,22 @@
 5	71902	15	2	ddb9	but once he joined and his
 5	71940	13	2	a75e	real stats showed, it was
 5	71978	6	2	4a5e	really C.'
+5	72028	8	4	7818	<Off-season>
 5	72062	18	0	3565	To trim and bolster for next year,
 5	72100	3	0	811d	Many
 5	72106	4	6	e18b	events
 5	72114	21	0	2682	await you. (During the off-season,
 5	72156	4	4	aa1e	trades
+5	72164	2	0	de7b	and
 5	72176	8	4	64fc	Draft scouting
+5	72220	6	4	6a30	<Renewal>
 5	72254	10	0	8414	In this staff event,
 5	72274	4	6	28d3	Release
+5	72282	1	0	bdab	{blank}
 5	72292	5	6	950e	coach jobs
 5	72446	15	0	f74c	Prospects found in season can
 5	72484	5	0	064e	be picked,
+5	72494	2	6	d6a1	6
 5	72498	9	0	e5e0	at most, in
 5	72522	5	0	678e	the Draft.
 5	72560	4	0	ab7e	However,
@@ -434,6 +489,7 @@
 5	72716	15	0	8a34	you may be able to sign him
 5	72754	10	0	b3d5	by talks. However,
 5	72774	4	2	7fef	up to 2
+5	72836	8	4	2d5c	<Spring Camp>
 5	72870	12	0	4960	Besides season practice,
 5	72908	12	6	3b1a	position changes,
 5	72946	7	6	34b1	form changes
@@ -442,11 +498,14 @@
 5	73178	17	2	61ab	(With an odd number of teams,
 5	73216	19	2	a920	one team won't get a game.)
 5	73254	9	0	426a	Your promising
+5	73272	4	4	972f	Rookies
 5	73370	8	0	9c75	Off-season:
 5	73386	5	4	2823	squad
+5	73452	7	4	12e5	<Coach Change>
 5	73486	6	0	d22d	From outside
 5	73498	8	6	d3a3	inviting a coach
 5	73524	5	6	a655	to join
+5	73684	10	4	7093	<Study Abroad>
 5	73718	17	0	9bbe	Choose players to study abroad.
 5	73756	9	2	f2d3	Young 2nd Team
 5	73774	8	0	a771	players only, so
@@ -454,6 +513,7 @@
 5	73832	10	6	fa7f	put him on 2nd Team
 5	73872	13	0	732a	FA players each have
 5	73898	4	4	b0f4	terms
+5	73906	1	0	a986	{blank}
 5	73910	4	4	acc0	fav club
 5	73918	8	0	76d8	of their own.
 5	73948	4	4	b0f4	Terms
@@ -475,12 +535,14 @@
 5	74524	38	2	851d	To negotiate, you must keep enough money to pay FA compensation.
 5	74916	14	0	4a7a	Based on his asking salary,
 5	74944	3	4	c7b8	Offer
+5	74950	1	0	eba9	{blank}
 5	74954	9	0	b051	- enter it here.
 5	74992	16	2	18d3	You can't offer less than
 5	75030	19	2	e558	what he asks for.
 5	75072	18	0	6f4d	Also, keep money for the next FA
 5	75110	8	0	24b0	compensation.
 5	75148	17	0	7fa4	Money to keep (cash comp. due) is
+5	75186	8	2	1bf2	1.2x his offer
 5	75228	5	0	d3ca	Contracts
 5	75238	3	4	f957	2+ yr
 5	75244	35	0	da81	can be set. You must pay the offered salary for every contract year.
@@ -494,11 +556,13 @@
 5	75864	3	4	7452	rating
 5	75932	26	0	f4b8	Choose a player for scouts to chase, and
 5	75992	5	4	97fc	his status
+5	76002	1	0	eba9	{blank}
 5	76004	5	6	9727	in reports
 5	76014	3	0	838b	will
 5	76022	11	0	8ba4	become visible.
 5	76052	12	0	79b0	Also, on big news,
 5	76076	10	4	585c	players not chased
+5	76096	2	0	c1a5	{blank}
 5	76100	6	6	4d3a	have reports
 5	76144	12	0	7cb3	Top picks' abilities
 5	76174	6	0	2c78	in season
@@ -507,10 +571,12 @@
 5	76204	5	0	f6c5	over time.
 5	76234	14	0	32fe	Unchased players' status
 5	76264	9	2	bd90	is rarely reported
+5	76282	3	0	c716	{blank}
 5	76294	9	0	c6eb	Give the List a
 5	76312	4	4	0e9a	check
 5	76356	26	0	88ed	Chases can change anytime, but the longer the
 5	76408	3	4	cd5a	chase
+5	76416	2	4	ce7a	{blank}
 5	76420	9	0	4a2d	, the more Draft
 5	76438	8	6	86bc	pick advantage
 5	76568	21	0	9afa	If no one on the List looks good,
@@ -524,6 +590,7 @@
 5	76818	7	6	c0be	a List entry
 5	76992	19	0	6925	At the Draft after the season,
 5	77030	13	4	bc89	scouts' in-season work
+5	77056	1	0	a142	{blank}
 5	77058	2	2	b7f4	key
 5	77204	7	2	b7e9	Once a year,
 5	77320	12	0	d413	Each team's scouts cost
@@ -602,6 +669,7 @@
 5	82648	17	0	09e1	Before the Pennant, you can change
 5	82686	7	0	d47d	the coaches.
 5	82724	14	0	8627	After this window closes,
+5	82762	4	4	88af	- Button
 5	82880	17	0	09e1	Before the Pennant, you can change
 5	82918	7	0	d47d	the coaches.
 5	82956	14	0	8627	After this window closes,
@@ -609,6 +677,7 @@
 5	83112	17	0	09e1	Before the Pennant, you can change
 5	83150	7	0	d47d	the coaches.
 5	83188	14	0	8627	After this window closes,
+5	83226	4	4	88af	- Button
 5	83344	18	0	cbd2	Before the Pennant, you can change
 5	83382	7	0	d47d	the Player Rep
 5	83420	14	0	8627	After this window closes,
@@ -616,6 +685,7 @@
 5	83576	18	0	cbd2	Before the Pennant, you can change
 5	83614	7	0	d47d	the Player Rep
 5	83652	14	0	8627	After this window closes,
+5	83690	4	4	88af	- Button
 5	83808	18	0	cbd2	Before the Pennant, you can change
 5	83846	7	0	d47d	the Player Rep
 5	83884	14	0	8627	After this window closes,
@@ -623,3 +693,4 @@
 5	84040	18	0	cbd2	Before the Pennant, you can change
 5	84078	7	0	d47d	the Player Rep
 5	84116	14	0	8627	After this window closes,
+5	84154	4	4	88af	- Button

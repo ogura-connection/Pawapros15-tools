@@ -577,7 +577,7 @@
 5	73852	4fa5	 beforehand.
 5	74604	84b0	Cash comp. pays 1.2x|salary. Player comp.|pays 0.8x salary.
 5	74684	45c0	Start talks with players who declared FA.|Meeting their conditions makes signing easier,|but other clubs may offer more and win them.
-5	75202	af2f	 is.
+5	75202	af2f	.
 5	75418	f951	Can't be released or traded|during the contract term.
 5	75502	bef4	 is wanted by a player.         Giving a player this number makes     talks more likely to succeed.         If a teammate already has this number,his number is automatically changed,  and his {2:Team Love goes down.}
 5	75870	d1b5	 are listed in order.

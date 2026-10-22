@@ -1,8 +1,11 @@
 # section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
 5	2268	21	0	04aa	Do not unplug it or turn off the power.
+5	2368	2	1	c92b	Yes
 5	2378	3	1	f901	No
+5	2388	14	1	e4ff	Copy it. Is this OK?
 5	2424	15	1	0221	Swap them. Is this OK?
 5	2456	12	1	07e8	Delete it. Is this OK?
+5	2484	18	1	a555	"Your network settings file"
 5	2552	22	1	fe9d	Select the device where it is saved.
 5	2872	32	1	464d	Disconnect from the network and return to the My Data menu.
 5	3008	16	1	6ba4	Save and disconnect, then

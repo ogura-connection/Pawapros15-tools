@@ -1,12 +1,19 @@
 # section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
 5	72	3	6	9b2d	Skin
+5	80	1	0	7720	Ye
+5	84	1	0	4a1a	Wh
+5	88	1	0	2c80	Bk
+5	92	1	0	7277	Rd
 5	100	6	6	541c	Pitcher Type
 5	156	6	6	243f	Pitch Motion
 5	172	6	6	fc31	Bat Motion
 5	188	6	6	46ea	Growth 1
 5	204	6	6	dd05	Growth 2
+5	448	3	6	9271	Fldr
 5	456	6	6	51f1	Catcher
 5	478	9	1	e208	Average catcher
 5	512	12	1	f8fa	Poor, not a catcher
 5	550	9	1	ad3e	Good catcher
+5	582	7	1	6576	Catcher O
+5	610	7	1	f64f	Catcher OO
 5	632	4	6	208f	Hidden

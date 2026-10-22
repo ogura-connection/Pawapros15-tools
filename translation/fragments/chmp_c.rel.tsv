@@ -1,10 +1,12 @@
 # section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
 5	14736	4	2	ac7a	Prelims
+5	14784	3	2	dbbe	Finals
 5	14928	6	0	690f	In the top,
 5	14940	16	2	6de1	 when time runs out,
 5	14976	10	2	d4a3	Final-inning rule
 5	15216	9	0	4891	With a time set,
 5	15234	6	2	f719	Pitch clock
+5	15246	7	0	2edd	and
 5	15264	6	2	3e7e	Pickoff cap
 5	15552	12	2	532f	At 0, a forced pitch
 5	15696	9	2	c292	2 per pitch

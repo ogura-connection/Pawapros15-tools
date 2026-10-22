@@ -4,34 +4,51 @@
 5	9472	4	4	ca21	Imp. cap
 5	9480	20	0	1b83	 is exceeded. If this team joins, the
 5	9520	4	4	ca21	Imp. cap
+5	9528	1	0	eba9	{blank}
 5	9532	8	0	2b07	 can't be set.
 5	9548	4	4	ca21	Imp. cap
 5	9556	5	0	e103	: foreign
 5	9568	10	0	b537	 players on 1st team
+5	9588	2	2	19ca	4
 5	9592	5	0	c313	 max, and
 5	9604	10	0	5b97	 for P or fielders,
+5	9624	2	2	8a97	3
 5	9664	6	0	590f	This team's
 5	9676	4	4	f364	lineup
+5	9684	1	0	1fa0	{blank}
 5	9686	4	4	ca21	Imp. cap
 5	9694	20	0	1b83	 is exceeded. If this team joins, the
 5	9734	4	4	ca21	Imp. cap
 5	9742	9	0	8613	 can't be set.
 5	9760	4	4	ca21	Imp. cap
+5	9768	1	0	5637	{blank}
 5	9770	4	4	f364	 Lineup
 5	9778	8	0	9d64	: imports in the
 5	9794	6	4	c3c0	base lineup
 5	9806	3	0	7772	 -
+5	9812	2	2	601a	2
 5	9952	8	4	55d5	Original teams
+5	11724	2	2	7fc3	Pit.
+5	11816	2	4	4cc0	Fld.
 5	12192	3	2	7992	CON
 5	12200	3	2	4c0c	Power
 5	12208	2	2	794b	SPD
 5	12216	2	2	9a94	ARM
 5	12224	3	2	ee09	FLD
+5	12232	2	2	f414	Velo
+5	12240	2	2	1610	Type
 5	12248	4	2	b6bb	2+
 5	12260	6	2	51f1	Catcher
+5	12276	2	2	dbfb	Brks
+5	16648	2	2	a509	Pain
+5	16652	1	0	bdab	or
 5	16654	3	2	8901	aches
+5	21852	1	0	a142	{blank}
+5	21864	1	0	de3d	{blank}
+5	21868	1	0	eba9	{blank}
 5	22136	4	2	ad8b	Pitchers
 5	22148	4	2	3773	Fielders
+5	22160	1	0	de3d	{blank}
 5	22164	4	6	c036	Auto
 5	22176	4	6	425c	Batting
 5	22188	5	6	eebd	Power

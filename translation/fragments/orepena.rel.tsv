@@ -1,11 +1,14 @@
 # section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
 5	23480	14	0	8121	Overwrite this file.
 5	23514	15	2	3f55	(The old file will be erased)
+5	23640	1	0	6f14	Yr
 5	25620	9	0	076c	You control it.
 5	25670	17	2	682a	Can't be changed on Ordinary.
 5	25708	9	0	076c	You control it.
 5	25758	16	2	34cb	Can't be changed on Brutal.
 5	26704	19	2	7a40	No steal control in the Farewell Tour.
+5	28160	1	0	5637	{blank}
+5	38944	1	0	a986	{blank}
 5	39312	14	2	1425	This item can't be used.
 5	39344	15	2	e915	This item can't be carried.
 5	39376	13	2	787a	Can only unequip at home.
@@ -33,6 +36,7 @@
 5	40076	14	2	b4ba	You can't carry any more
 5	40112	6	2	7ff5	items.
 5	40128	10	2	c985	(Stored at home)
+5	40472	1	0	eba9	{blank}
 5	40492	13	2	63ce	No empty garage.
 5	40520	13	2	0b20	Can't donate any more.
 5	40548	13	2	91a8	Can't add more seats.
@@ -50,9 +54,17 @@
 5	41280	18	0	3174	Left game hurt by a hit-by-pitch
 5	46444	9	6	81b0	(For righties)
 5	46464	9	6	d10e	(For lefties)
+5	46832	1	0	d9b5	/
+5	46836	1	0	1591	{blank}
+5	46840	1	0	2fdc	:
+5	46844	1	0	0d74	{blank}
 5	47200	3	0	7888	Sakura
+5	47672	1	0	5637	{blank}
+5	49332	1	0	d9b5	/
+5	49336	2	0	8b32	{blank}
 5	49358	17	2	ff5d	Can't upgrade in your 1st year.
 5	99110	5	0	5273	Go play a
+5	99120	2	6	3573	game
 5	99124	10	0	9dba	 at the ballpark.
 5	99148	15	0	4654	Auto-played unless you pitch.
 5	99186	10	0	64b3	Set batting control
@@ -60,7 +72,9 @@
 5	99216	23	0	311d	(System) and you can bat as well.
 5	99262	18	2	4128	Selecting this icon ends the
 5	99300	4	2	71c8	turn.
+5	99312	5	4	5eec	<To Game>
 5	99350	5	0	5273	Go play a
+5	99360	2	6	3573	game
 5	99364	10	0	f85b	 at the ballpark.
 5	99388	15	0	4654	Auto-played unless you bat.
 5	99426	10	0	e4e4	Set steal control
@@ -68,6 +82,7 @@
 5	99456	19	0	221d	(System) to steal bases yourself.
 5	99502	18	2	4128	Selecting this icon ends the
 5	99540	4	2	71c8	turn.
+5	99552	5	4	c476	<Practice>
 5	99590	6	6	c0c3	Team drills
 5	99602	30	0	5e94	 with the club. Drills and effects vary by coach.
 5	99666	18	2	4128	Selecting this icon ends the
@@ -75,48 +90,67 @@
 5	99758	42	0	c147	Practice while teaching teammates.    Drills and effects vary by coach.
 5	99872	18	2	4128	Selecting this icon ends the
 5	99910	4	2	71c8	turn.
+5	99920	4	4	42c7	<Move>
 5	99958	13	0	bfaf	Go to the next venue (
+5	99984	2	6	9a97	Move
 5	99988	4	0	71c8	).
 5	99996	18	2	4128	Selecting this icon ends the
 5	100034	4	2	71c8	turn.
+5	100044	7	4	5411	<To Event>
 5	100082	7	0	c617	The scheduled
 5	100096	4	6	e18b	Event
 5	100104	7	0	ce34	takes place.
 5	100120	18	2	4128	Selecting this icon ends the
 5	100158	4	2	71c8	turn.
+5	100168	4	4	35be	<Plans>
 5	100206	4	0	f253	Friends:
+5	100214	2	6	f8b5	Plan
+5	100218	1	0	bdab	or
 5	100220	3	6	7191	Date
 5	100226	5	0	cfea	with them.
 5	100244	18	2	4128	Selecting this icon ends the
 5	100282	4	2	71c8	turn.
+5	100296	5	4	262d	<To Rest>
 5	100334	15	0	d56b	Rest up and shake off fatigue.
 5	100372	16	2	5472	Selecting this icon ends the
 5	100410	6	2	3e84	turn.
+5	100424	7	4	94dd	<Key Items>
 5	100462	3	0	a595	Your
 5	100468	4	6	e9b1	Items
+5	100476	1	0	bdab	&
 5	100478	11	6	ba81	Heirloom Item List
 5	100500	18	0	be22	your home & car, players, managers,
 5	100538	22	0	e410	coaches and others you've met, in the
+5	100582	2	6	414b	Pals
 5	100586	13	0	93f1	, trophies you've won in
 5	100614	5	0	919a	your own
+5	100624	3	6	6622	Museum
+5	100684	4	4	03cd	<Buy>
 5	100722	16	0	0eb9	Buy houses, cars and items.
 5	100760	5	0	3a6f	Some items
 5	100770	17	2	99c5	are limited to one at a time
 5	100804	15	0	840a	so until discarded or broken,
+5	100836	3	0	906d	{blank}
 5	100842	4	2	dd74	Sold Out
+5	100864	3	0	52c8	Also,
 5	100870	8	2	ac7b	Limited stock
 5	100886	32	0	30e8	 items may sell out after a few are bought.
 5	100978	10	0	923e	What's sold out,
 5	100998	9	6	a60b	around each 25th,
+5	101032	2	0	ba7f	Home
 5	101036	3	6	8739	Loan
 5	101042	3	0	6564	or
+5	101048	2	6	8b90	lump
 5	101052	8	0	8a07	 payment can be
 5	101070	5	0	678e	used.
 5	101108	18	0	b898	But without enough income, a loan
 5	101146	15	0	61d4	may not be possible.
 5	101184	18	2	8e5b	If you're unmarried, a home can't be
 5	101222	19	2	cb6e	bought in your 1st pro year.
+5	101264	6	4	4438	<My Records>
 5	101302	16	0	b429	View your own records.
+5	101340	2	6	bfeb	1st
+5	101346	2	2	385f	2nd
 5	101862	17	0	814b	Your signing-day info in the
 5	101900	6	6	0190	Profile
 5	101912	12	0	9246	, your past events
@@ -125,6 +159,7 @@
 5	101960	7	0	ac4c	, rumors and
 5	101976	11	0	c4f2	news around you in the
 5	101998	5	6	34c2	Rumor Memo
+5	102036	7	4	71fa	<My Data>
 5	102074	17	0	814b	Your signing-day info in the
 5	102112	6	6	0190	Profile
 5	102124	12	0	9246	, your past events
@@ -146,19 +181,35 @@
 5	103026	11	0	2fa6	what you need.
 5	103064	15	0	9d11	Note: storage space for items
 5	103094	9	6	ac77	varies by home
+5	103124	4	4	76a8	<Skills>
 5	103278	5	0	84f3	Nationwide
+5	103288	2	6	4a2d	Dojo
 5	103356	17	0	e084	As player-manager, to the club &
 5	103394	12	0	d4cf	coaches, your wishes as
 5	103418	7	6	0aba	My Team Needs
 5	103456	18	0	8373	As player-manager, team pitchers'
 5	103494	6	0	fd12	& fielders'
+5	103506	4	6	2b4f	usage
+5	103536	4	4	67e6	Kantoku
 5	103574	18	0	cd80	As player-manager, for the team,
 5	103612	7	6	0aba	My Team Needs
 5	103626	8	0	d1b3	 & P and fielder
+5	103642	3	6	9a21	usage
+5	103668	4	4	693e	<Hobby>
 5	103706	5	0	31b4	Various
+5	103716	2	6	5d8a	Fun
 5	103720	11	0	c6a5	 can be done, and
+5	103744	2	6	5d8a	Fun
+5	103784	4	4	e83b	<Rest>
+5	103822	2	6	da11	Rest
+5	103962	4	6	25d1	Drills
 5	104066	3	0	a595	Your
+5	104072	2	6	414b	Pals
+5	104076	1	0	a986	{blank}
 5	104078	4	6	3f76	Talk to
+5	104104	5	4	02c7	<To Dojo>
+5	104142	2	6	4a2d	Dojo
+5	104212	5	4	de75	<Vessel>
 5	104250	4	0	cf3a	View all
 5	104258	3	6	fce9	Vessel
 5	104264	7	0	038d	s you earned,
@@ -174,6 +225,7 @@
 5	104644	7	0	038d	here, and
 5	104674	8	6	d954	adding My Spirit
 5	104982	16	0	c335	Your growth since joining in the
+5	105020	3	6	8db3	Growth
 5	105026	14	0	998f	, your signing-day info in
 5	105058	5	0	919a	the
 5	105068	7	6	4522	Profile,
