@@ -10249,50 +10249,50 @@
      "sprite": "00",
      "text": "Schedule",
      "style": "pmenu_phz_00",
-     "font": "ttf:rounded:16:0.0:0.85:0.3",
-     "baseline": 26
+     "font": "ttf:rounded:15:0.0:0.85:0.3",
+     "baseline": 25
     },
     {
      "sprite": "01",
      "text": "Manage",
      "style": "pmenu_phz_01",
-     "font": "ttf:rounded:16:0.0:1.0:0.3",
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
      "baseline": 26
     },
     {
      "sprite": "02",
      "text": "New Talent",
      "style": "pmenu_phz_02",
-     "font": "ttf:rounded:16:0.0:0.7:0.3",
-     "baseline": 26
+     "font": "ttf:rounded:15:0.0:0.7:0.3",
+     "baseline": 25
     },
     {
      "sprite": "03",
      "text": "Records",
      "style": "pmenu_phz_03",
-     "font": "ttf:rounded:16:0.0:0.92:0.3",
-     "baseline": 26
+     "font": "ttf:rounded:15:0.0:0.92:0.3",
+     "baseline": 25
     },
     {
      "sprite": "04",
      "text": "Coach Navi",
      "style": "pmenu_phz_04",
-     "font": "ttf:rounded:16:0.0:0.7:0.3",
-     "baseline": 26
+     "font": "ttf:rounded:15:0.0:0.7:0.3",
+     "baseline": 25
     },
     {
      "sprite": "05",
      "text": "System",
      "style": "pmenu_phz_05",
-     "font": "ttf:rounded:16:0.0:1.0:0.3",
-     "baseline": 25
+     "font": "ttf:rounded:15:0.0:1.0:0.3",
+     "baseline": 24
     },
     {
      "sprite": "06",
      "text": "Reorganize",
      "style": "pmenu_phz_06",
-     "font": "ttf:rounded:16:0.0:0.7:0.3",
-     "baseline": 26
+     "font": "ttf:rounded:15:0.0:0.7:0.3",
+     "baseline": 25
     }
    ],
    "name": "pmenu side menu"
@@ -10493,10 +10493,10 @@
       "0a"
      ],
      "text": "Central",
-     "style": "pmenu_hint",
-     "font": "ttf:narrow:13:0.0:0.85:0.0",
-     "left": 0,
-     "baseline": 18
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:16:0.0:1.0:0.0",
+     "left": -10,
+     "baseline": 19
     },
     {
      "from": [
@@ -10523,10 +10523,10 @@
       "0b"
      ],
      "text": "Pacific",
-     "style": "pmenu_hint",
-     "font": "ttf:narrow:13:0.0:0.92:0.0",
-     "left": -1,
-     "baseline": 18
+     "style": "pmenu_tab",
+     "font": "ttf:narrow:16:0.0:1.0:0.0",
+     "left": -8,
+     "baseline": 19
     },
     {
      "from": [
