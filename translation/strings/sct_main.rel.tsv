@@ -1,5 +1,6 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
 5	712	cf77	Save as an Arrange team?
+5	768	f768	Yes       No
 5	798	6326	Choose where to save.
 5	834	f9c9	Overwrite this save?
 5	872	7ff1	Is it OK to save here?

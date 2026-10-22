@@ -118,7 +118,8 @@ MAX_LINES = 4
 START_TRIM = {("scs_data.rel", 5, 106): 3, ("scs_data.rel", 5, 2148): 38,
               # a pointer of the module points at the cell where the text starts (_work/tl_bulk/pointer_check.py)
               ("main_prg.rel", 5, 174930): 7, ("school_g.rel", 5, 162498): 3, ("scs_end.rel", 5, 918): 9,
-              ("arr_chg.rel", 5, 2972): 2, ("pn_fa.rel", 5, 106): 3}
+              ("arr_chg.rel", 5, 2972): 2, ("pn_fa.rel", 5, 106): 3,
+              ("sct_a_pd.rel", 5, 106): 3}      # 右投 (the card's throwing hand), behind 3 cells of data
 # number tables that look like strings
 NOT_TEXT = {("scs_data.rel", 5, 1164), ("scs_data.rel", 5, 10002), ("scs_data.rel", 5, 17864),
             ("scs_data.rel", 5, 18946), ("scs_item.rel", 5, 1474), ("scs_item.rel", 5, 3822)}
@@ -128,7 +129,8 @@ NOT_TEXT = {("scs_data.rel", 5, 1164), ("scs_data.rel", 5, 10002), ("scs_data.re
 BLOCKS = {"scs_data.rel": [{"section": 5, "start": 22308, "end": 22752, "table": 22756, "count": 24, "max": 15}]}
 
 # strings of one character, which the search would not take for text: 月 and 週 of the schedule's date column
-SHORT_TEXT = {("scs_data.rel", 5, 13824), ("scs_data.rel", 5, 13828)}
+SHORT_TEXT = {("scs_data.rel", 5, 13824), ("scs_data.rel", 5, 13828)} | \
+    {("sct_a_pd.rel", 5, o) for o in range(184, 212, 4)}      # Eikan player card: position letters 投捕一二三遊外
 
 DOL = "main.dol"
 DOL_SHA1 = "cd096d3bbfb5418316dad6e3035cba34a028f718"

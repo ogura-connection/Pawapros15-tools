@@ -1,9 +1,17 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
+5	112	d30d	R Th
 5	120	8350	L Th
 5	136	4d03	R Bt
 5	144	4051	L Bt
 5	152	3ffa	Both
 5	176	3fa8	Bench
+5	184	e3be	P
+5	188	82e2	C
+5	192	d274	1B
+5	196	1d56	2B
+5	200	49dd	3B
+5	204	bc69	SS
+5	208	0e0f	OF
 5	2536	b981	Birth
 5	2544	e179	Acad
 5	2552	9804	T-Scr
