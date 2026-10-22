@@ -1,13 +1,14 @@
 """Styles for the Pennant main screen (the "Travel Day" / today's-game screen) of pena_sub.arc: the side-menu buttons
 (bank s3_phz00: Schedule, Manage, New Talent, Records, Coach Navi, System, Reorganize) and the rest of that screen
-(bank s3_phm00: league and result tabs, the game-flow strip, button hints, win / tie counters, the Team Analysis title).
+(bank s3_phm00: league and result tabs, the game-flow strip, button hints, win / tie counters, the Team Analysis title)
+and the date plate (bank s3_phh00: weekdays, 月 -> "/", 年 and 日 cleared).
 
 A style is a recipe that tells the lettering tool (pp15/art/typeset.py) how to draw an English label on a sprite sheet:
 font, size, colours, outline, shadow. Colours are palette indices read from the Japanese lettering of the same sprite.
 
 Used by: specs/pena_sub.json (groups "pmenu ...").
 """
-from .common import ringfill
+from .common import ringfill, flat
 
 STYLES = {}
 
@@ -33,3 +34,6 @@ STYLES["pmenu_flow"] = ringfill([13, 13, 13, 13, 13, 13], [4, 4, 4], [14])     #
 STYLES["pmenu_wt_s"] = ringfill([9, 9, 9, 9, 9, 9], [3])                       # small 勝 / 分 (pal 40)
 STYLES["pmenu_wt"] = ringfill([15, 15, 15, 15, 15, 15], [6, 6, 2])            # big 勝 / 分 (pal 48)
 STYLES["pmenu_title"] = ringfill([1, 1, 2, 2, 3, 3], [8, 11, 11, 15, 15])      # 戦力分析 title (pal 163)
+
+# ---- s3_phh00: date plate glyphs (pal 54 / 55 / 56: index 15 = the letter colour, 1..14 its soft edge toward the light plate)
+STYLES["pmenu_date"] = flat([0, 3, 6, 9, 12, 14, 15])

@@ -10928,7 +10928,7 @@
     },
     {
      "sprite": "46",
-     "text": "Standings",
+     "text": "Rank",
      "style": "pmenu_hint",
      "font": "ttf:narrow:12:0.0:1.0:0.0",
      "baseline": 18,
@@ -11049,6 +11049,151 @@
     }
    ],
    "name": "pmenu page 8"
+  },
+  {
+   "bank": "s3_phh00",
+   "palette": 55,
+   "style": "pmenu_date",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     0,
+     8,
+     64,
+     120,
+     88
+    ],
+    [
+     0,
+     0,
+     88,
+     120,
+     112
+    ],
+    [
+     0,
+     0,
+     112,
+     120,
+     128
+    ]
+   ],
+   "labels": [
+    {
+     "from": [
+      0,
+      40,
+      64,
+      80,
+      88
+     ],
+     "text": "Mon",
+     "style": "pmenu_date",
+     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      80,
+      64,
+      120,
+      88
+     ],
+     "text": "Tue",
+     "style": "pmenu_date",
+     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      0,
+      88,
+      40,
+      112
+     ],
+     "text": "Wed",
+     "style": "pmenu_date",
+     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      40,
+      88,
+      80,
+      112
+     ],
+     "text": "Thu",
+     "style": "pmenu_date",
+     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      80,
+      88,
+      120,
+      112
+     ],
+     "text": "Fri",
+     "style": "pmenu_date",
+     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1c",
+     "text": "Sat",
+     "style": "pmenu_date",
+     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "sprite": "1d",
+     "text": "Sun",
+     "style": "pmenu_date",
+     "font": "ttf:narrow:15:0.0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      8,
+      64,
+      24,
+      88
+     ],
+     "text": "/",
+     "style": "pmenu_date",
+     "font": "ttf:narrow:19:0.0:1.0:0.0",
+     "valign": "centre"
+    },
+    {
+     "from": [
+      0,
+      24,
+      64,
+      40,
+      88
+     ],
+     "empty": true
+    },
+    {
+     "from": [
+      1,
+      16,
+      40,
+      32,
+      56
+     ],
+     "empty": true
+    }
+   ],
+   "name": "pmenu date plate"
   }
  ],
  "paint": [
