@@ -104,9 +104,9 @@
 5	100120	18	2	4128	Selecting this icon ends the
 5	100158	4	2	71c8	turn.
 5	100168	4	4	35be	<Plans>
-5	100206	4	0	f253	Friends:
+5	100206	4	0	f253	Pals: 
 5	100214	2	6	f8b5	Plan
-5	100218	1	0	bdab	or
+5	100218	1	0	bdab	/
 5	100220	3	6	7191	Date
 5	100226	5	0	cfea	with them.
 5	100244	18	2	4128	Selecting this icon ends the
@@ -138,7 +138,7 @@
 5	100886	32	0	30e8	 items may sell out after a few are bought.
 5	100978	10	0	923e	What's sold out,
 5	100998	9	6	a60b	around each 25th,
-5	101032	2	0	ba7f	Home
+5	101032	2	0	ba7f	{blank}
 5	101036	3	6	8739	Loan
 5	101042	3	0	6564	or
 5	101048	2	6	8b90	lump
