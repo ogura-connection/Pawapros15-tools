@@ -3,7 +3,7 @@
 Tools for translating **Jikkyou Powerful Pro Yakyuu 15** (Wii, RP5JA4, Rev 1) into English, and the research
 behind them. The repository holds code, the English (keyed by file and offset, no Japanese), the label specs
 and the notes. It does **not** hold the game, extracted game files or Japanese game text: those stay in
-`DATA/` and `_work/`, which git ignores. (`translation_high_quality.json` from the first approach is the one
+`DATA/` and `_work/`, which live outside the repository, in the sibling folder `../data/` (`PP15_DATA` overrides it). (`translation_high_quality.json` from the first approach is the one
 exception still in the tree.)
 New here? Read `docs/ARCHITECTURE.md` (one page: data flow and folders) and `docs/GLOSSARY.md` (what the game words mean) first.
 
@@ -37,7 +37,7 @@ pp15-tools/
                    test_imports.py, test_roundtrip.py, run_all.sh
   docs/            ARCHITECTURE.md, GLOSSARY.md, styles_map.md, PIPELINE.md and TECHNIQUES.md (the method, game independent), refactor_notes.md
   legacy/          the first approach and the abandoned Python patcher (apply_patch / make_patch): kept for reference, nothing imports them
-  DATA/  _work/    game data and scratch (git-ignored, never committed)
+  (outside the repo: ../data/DATA and ../data/_work hold the game data and scratch, never committed)
 ```
 
 Needs Python 3.10 or newer, numpy and Pillow (`pip install -e .`); `capstone` only for `pp15 scan xref`, `pycryptodome` only
