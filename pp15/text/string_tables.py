@@ -44,7 +44,9 @@ START_TRIM = {("scs_data.rel", 5, 106): 3, ("scs_data.rel", 5, 2148): 38,
               ("arr_chg.rel", 5, 2972): 2, ("pn_fa.rel", 5, 106): 3,
               ("sct_a_pd.rel", 5, 106): 3,      # the Eikan Nine player card's throwing hand, behind 3 cells of data
               ("sct_a_td.rel", 5, 936): 24,     # Eikan Nine team data: 練習器材 behind 24 cells of numbers
-              ("pn_tgrow.rel", 5, 2294): 9}     # Pennant solo training: the prompt behind 9 cells of codes
+              ("pn_tgrow.rel", 5, 2294): 9,     # Pennant solo training: the prompt behind 9 cells of codes
+              ("sct_titl.rel", 5, 106): 3,      # Eikan Nine title, "Start from the beginning": the game points 3 cells in
+              ("sct_a_sy.rel", 5, 106): 3}      # Eikan Nine system menu, "Return to the main screen": same
 # tables of glyph numbers that look like strings but are not text (for example name-entry grids)
 NOT_TEXT = {("scs_data.rel", 5, 1164), ("scs_data.rel", 5, 10002), ("scs_data.rel", 5, 17864),
             ("scs_data.rel", 5, 18946), ("scs_item.rel", 5, 1474), ("scs_item.rel", 5, 3822)}
