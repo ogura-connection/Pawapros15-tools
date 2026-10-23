@@ -26,7 +26,12 @@ KANJI_SLOTS = range(706, 3744)
 # pair. 0xE77 (3703) is the arrow cursor of the My Life menus (ore_work.rel sec1+0x2DF4 and gdt_pn.rel
 # sec1+0xC6E0 store it as the one-cell string "0xE77, 0xFFFF" and draw it); as a pair slot it showed "9"
 # in front of the first menu line. No other code word loads a number in 0xE50..0xE9F as a glyph.
-RESERVED_GLYPHS = frozenset({0xE77})
+#
+# 0xE78 (3704) is a small circled "G" icon and 0xE94 (3732) a heart: both are drawn from text (26 and 45 uses in the Japanese
+# scripts and strings), but sit in the extended glyph area that looks like spare kanji slots. As pair slots they showed
+# "Ag" and "r." where the heart / icon belongs (found 2026-10-22: "heart icon changed to r."). The other glyphs 0xE40..0xE9F
+# are kanji for names.
+RESERVED_GLYPHS = frozenset({0xE77, 0xE78, 0xE94})
 
 KANA_FIRST, KANA_LAST = 282, 450     # glyph numbers of the hiragana and katakana
 ITERATION_MARK = 24                  # the glyph 々, which appears in names next to kanji
