@@ -1,4 +1,15 @@
 # section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
+4	1632	2	0	7fc3	P
+4	1648	2	0	5145	C
+4	1664	3	0	c6d3	IF
+4	1680	3	0	a75c	OF
+4	1696	2	0	7fc3	P
+4	1712	2	0	5145	C
+4	1728	3	0	a8c6	1B
+4	1744	3	0	60af	2B
+4	1760	3	0	4202	3B
+4	1776	3	0	18d4	SS
+4	1792	3	0	a75c	OF
 5	1093776	13	0	39f5	To hide Saku-choko, set
 5	1093810	16	0	d84d	Support Messages to OFF
 5	1093844	10	0	561a	in the System menu.
