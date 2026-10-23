@@ -49,6 +49,10 @@ NARROW = "\x02"
 NARROW_CELLS = 4        # the score bug shows four cells of a name (8 letters)
 NARROW_LARGE = {"adv": 8, "base": 22, "cap": 17.0, "ink_w": 7.2}
 NARROW_SMALL = {"adv": 6.5, "base": 14, "cap": 11.5, "ink_w": 5.6}
+# A typed letter (SINGLE) fills a whole cell by itself, so it is drawn larger than the half-cell letters of a pair; at the pair
+# size a typed name looked like "i  c  h  i  r  o" (reported 2026-10-22).
+SINGLE_LARGE = {"adv": 22, "base": 23, "cap": 19.0, "ink_w": 14.5}
+SINGLE_SMALL = {"adv": 16, "base": 15, "cap": 13.5, "ink_w": 10.5}
 # (name, offset in section 4, letter metrics). The large font is the one dialogue boxes use.
 FONTS = (("small", 0x000000, SMALL), ("large", 0x05DF64, LARGE))
 FONT_END = {0x000000: 0x05DF64, 0x05DF64: 0x117400}             # each font's space ends where the next one starts
@@ -90,13 +94,21 @@ def _coverage(pair: str, metrics: dict) -> Image.Image:
     return img.resize((CELL_W * SUPERSAMPLE, CELL_H * SUPERSAMPLE), Image.LANCZOS)
 
 
+def _metrics(pair: str, large: bool) -> dict:
+    """The letter metrics a glyph key is drawn with: typed single letters, narrow pairs, or ordinary pairs."""
+    if pair.startswith(SINGLE):
+        return SINGLE_LARGE if large else SINGLE_SMALL
+    if pair.startswith(NARROW):
+        return NARROW_LARGE if large else NARROW_SMALL
+    return LARGE if large else SMALL
+
+
 def render_pair(pair: str, large: bool) -> list[list[int]]:
     """A letter pair as 28 rows of 22 shade values (0..15). `large` selects the dialogue font, else the small one."""
     key = (pair, large)
     if key not in _shade_cache:
         narrow = pair.startswith(NARROW)
-        hi = _coverage(pair[1:] if narrow else pair,
-                       (NARROW_LARGE if narrow else LARGE) if large else (NARROW_SMALL if narrow else SMALL))
+        hi = _coverage(pair[1:] if narrow else pair, _metrics(pair, large))
         cov = hi.resize((CELL_W, CELL_H), Image.BOX)
         if large:
             ring = hi.point(lambda v: 255 if v > OUTLINE_THRESHOLD else 0).filter(ImageFilter.MaxFilter(2 * OUTLINE_GROW + 1))
@@ -112,7 +124,7 @@ def render_pair(pair: str, large: bool) -> list[list[int]]:
 
 def pair_glyph(pair: str, large: bool, cache: dict) -> bytes:
     """The compressed glyph of a letter pair. `cache` is a dict the caller keeps in _work/pair_glyphs.json."""
-    metrics = (NARROW_LARGE if large else NARROW_SMALL) if pair.startswith(NARROW) else (LARGE if large else SMALL)
+    metrics = _metrics(pair, large)
     key = "%s|%d|%s" % (FONT_FILE, FONT_INDEX, json.dumps([metrics, SUPERSAMPLE], sort_keys=True)) + "|" + pair
     if key not in cache:
         cache[key] = compress(to_grid(render_pair(pair, large))).hex()
