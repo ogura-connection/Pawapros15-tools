@@ -1,9 +1,9 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
 5	400	7218	 High Team Data
 5	984	8abb	Gear
-5	996	7259	Shows avg. Contact & Power
+5	996	7259	Avg. Contact & Power
 5	1032	7529	Shows avg. SPD
-5	1064	27cd	Shows avg. Fielding & ARM
+5	1064	27cd	Avg. Fielding & ARM
 5	1096	80d4	Shows avg. pitcher|Velocity, Stamina,|Ctrl, Brk Ball
 5	1160	c740	Avg. special abilities
 5	1196	1ac6	Games played so far
