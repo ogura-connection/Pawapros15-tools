@@ -16,6 +16,7 @@
 1256	Goodwill
 1272	All-Central
 1292	All-Pacific
+227296	Shirakaba
 227304	Kitami
 227312	Asahikawa
 227320	Soya
@@ -1710,6 +1711,7 @@
 246576	Iwashiro
 246584	Wakamatsu
 246592	Date
+246600	Hinoemata
 246608	Nihonmatsu
 246616	Iwaki
 246624	Iwashiro G.
@@ -1832,6 +1834,23 @@
 247948	Shirakaw Sh.
 247960	Shirakawa Ch
 247972	Shirakawa Gj
+247984	Hinoemata G.
+247996	Hinoemata Gn
+248008	Hinoemata T.
+248020	Hinoemat Cm.
+248032	Hinoemata E.
+248044	Hinoemata W.
+248056	Hinoemata S.
+248068	Hinoemata N.
+248080	Hinoemata 1
+248092	Hinoemata J.
+248104	Hinoemata M.
+248116	Hinoemata U.
+248132	Hinoemat Ag.
+248144	Hinoemat El.
+248156	Hinoemat Sh.
+248168	Hinoemata Ch
+248180	Hinoemata Gj
 248192	Sukagawa G.
 248204	Sukagawa Gn
 248216	Sukagawa T.
@@ -3480,6 +3499,7 @@
 267184	Akiruno
 267200	Hinode
 267208	Ome
+267216	Hinohara
 267224	Akishima
 267232	Arakawa
 267240	Chofu
@@ -3646,6 +3666,23 @@
 269192	Ome Shoko
 269204	Ome Central
 269216	Ome Gijuku
+269228	Hinohara G.
+269240	Hinohara Gn
+269252	Hinohara T.
+269264	Hinohara Cm.
+269280	Hinohara E.
+269288	Hinohara W.
+269296	Hinohara S.
+269304	Hinohara N.
+269312	Hinohara 1st
+269324	Hinohara J.
+269336	Hinohara M.
+269348	Hinohara U.
+269360	Hinohara Ag.
+269372	Hinohara El.
+269384	Hinohara Sh.
+269396	Hinohara Ch
+269408	Hinohara Gj
 269420	Machida Gak.
 269432	Machida Gkn.
 269444	Machida Cm.
@@ -4743,6 +4780,7 @@
 281952	Hakusan
 281960	Suzu
 281968	Kahoku
+281976	Nonoichi
 281984	Nomi
 281992	Hoshu
 282000	Ishikawa
@@ -4904,6 +4942,23 @@
 283756	Kahoku Shoko
 283768	Kahoku Chuo
 283780	Kahoku Gij.
+283792	Nonoichi G.
+283804	Nonoichi Gn
+283816	Nonoichi T.
+283828	Nonoichi Cm.
+283840	Nonoichi E.
+283852	Nonoichi W.
+283864	Nonoichi S.
+283876	Nonoichi N.
+283888	Nonoichi 1st
+283900	Nonoichi J.
+283912	Nonoichi M.
+283924	Nonoichi U.
+283940	Nonoichi Ag.
+283952	Nonoichi El.
+283964	Nonoichi Sh.
+283976	Nonoichi Ch
+283988	Nonoichi Gj
 284000	Nomi Gakuen
 284012	Nomi Gakuin
 284024	Nomi Tech
@@ -6749,6 +6804,7 @@
 304940	Shiga Chuo
 304952	Shiga Gijuku
 304968	Kyogoku
+304976	Miyako
 304980	Tanba
 304988	Tango
 304996	Maizuru
@@ -7067,6 +7123,7 @@
 308520	Minami
 308528	Dotonbori
 308536	Shinsekai
+308544	Sakai
 308548	Yodogawa
 308556	Naniwa Gak.
 308568	Naniwa Gkn.
@@ -7749,6 +7806,23 @@
 316296	Kurotaki Sh.
 316308	Kurotaki Ch
 316320	Kurotaki Gj
+316332	Gojo Gakuen
+316344	Gojo Gakuin
+316356	Gojo Tech
+316368	Gojo Comm.
+316384	Gojo East
+316392	Gojo West
+316400	Gojo South
+316408	Gojo North
+316416	Gojo Daiichi
+316428	Gojo Jitsu.
+316440	Gojo Marine
+316452	Gojo Univ.
+316464	Gojo Agri
+316476	Gojo Elec
+316488	Gojo Shoko
+316500	Gojo Central
+316512	Gojo Gijuku
 316524	Totsukawa G.
 316536	Totsukawa Gn
 316548	Totsukawa T.
@@ -8719,6 +8793,7 @@
 327456	Kasaoka Gij.
 327472	Bingo
 327480	Saiki
+327488	Kure
 327492	Shobara
 327500	Onomichi
 327508	Miyajima
@@ -12047,6 +12122,7 @@
 364848	Soma
 364856	Date
 364864	Shirakawa
+364872	Hinoemata
 364880	Sukagawa
 364888	Tamura
 364896	Nihonmatsu
@@ -12121,6 +12197,7 @@
 365464	Tateyama
 365472	Kisarazu
 365480	Choshi
+365488	Kashiwa
 365492	Chiba
 365500	Makuhari
 365508	Kujukuri
@@ -12191,6 +12268,7 @@
 366048	Kokubunji
 366056	Hino
 366064	Ome
+366072	Hinohara
 366080	Machida
 366088	Fuchu
 366096	Akishima
@@ -12253,6 +12331,7 @@
 366552	Wajima
 366560	Suzu
 366568	Kahoku
+366576	Nonoichi
 366584	Nomi
 366592	Tsubata
 366600	Hoshu
@@ -12315,6 +12394,7 @@
 367056	Sekigahara
 367064	Gujo
 367072	Gifu
+367080	Seki
 367088	Tajimi
 367096	Ogaki
 367104	Izu
@@ -12350,6 +12430,7 @@
 367344	Minakuchi
 367352	Shiga
 367360	Kyogoku
+367368	Miyako
 367372	Yamashiro
 367380	Tanba
 367388	Tango
@@ -12384,6 +12465,7 @@
 367624	Hyogo
 367632	Amagasaki
 367640	Takarazuka
+367648	Nada
 367656	Naniwa
 367664	Tennoji
 367672	Kawachi
@@ -12392,6 +12474,7 @@
 367696	Shinsekai
 367704	Settsu
 367712	Izumi
+367720	Sakai
 367724	Takatsuki
 367732	Yodogawa
 367740	Suita
@@ -12413,6 +12496,7 @@
 367872	Tenri
 367880	Uda
 367888	Kurotaki
+367896	Gojo
 367904	Totsukawa
 367912	Katsuragi
 367920	Kashiba
@@ -12480,6 +12564,7 @@
 368416	Bingo
 368424	Aki
 368432	Saiki
+368440	Kure
 368444	Mihara
 368452	Shobara
 368460	Fukuyama
@@ -12496,10 +12581,12 @@
 368552	Nagato
 368560	Yamaguchi
 368568	Shimonoseki
+368576	Hagi
 368580	Mine
 368588	Hofu
 368596	Iwakuni
 368604	Yanai
+368612	Hikari
 368616	Shunan
 368624	Ube
 368632	Yumegasaki
