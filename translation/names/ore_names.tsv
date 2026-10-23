@@ -24,6 +24,7 @@
 38320	Omiya
 38360	Maebashi
 38376	Hiratsuka
+38400	Kure
 38440	Miyagi
 38448	Fukushima
 38496	Ishikawa
@@ -230,6 +231,7 @@
 146048	Miyade
 146056	Miyamoto
 146064	Ushida
+146072	Hsu
 146080	Hashimoto
 146088	Hashimoto K
 146096	Hashimoto R
@@ -257,6 +259,7 @@
 146280	Furuki
 146288	Tobe
 146296	Igarashi
+146304	Wu
 146312	Kuremoto
 146320	Goto
 146328	Goto Tk
@@ -354,6 +357,7 @@
 147088	Shibata R
 147096	Wakatake
 147104	Tejima
+147112	Chu
 147120	Kano
 147128	Taneda
 147136	Sakai
@@ -695,7 +699,9 @@
 149912	Arime
 149920	Wakui
 149928	Yoshida
+149936	Yang
 149944	Lee S.Y.
+149952	Lee
 149960	Touchen
 149976	Satozaki
 149984	Tateishi
@@ -710,8 +716,11 @@
 150056	Suzuki T
 150064	Wada
 150072	Wakiya
+150080	Kang
 150104	Uda
 150112	Hiyama
+150120	Chu
+150152	Kan
 150160	Yabuta
 150168	Kyoto
 150184	G.G. Sato
@@ -860,6 +869,47 @@
 151584	Yagihara
 151592	Kohiruimaki
 151604	Imakurusu
+151616	Ko
+151624	Kim
+151632	Cha
+151640	Hong
+151648	Yong
+151656	Tuan
+151664	I
+151672	Jang
+151680	Jeong
+151688	Baek
+151696	Chou
+151704	Shim
+151712	Tu
+151720	Song
+151728	Moon
+151736	Ok
+151744	Shin
+151752	Kang
+151760	U
+151768	Lu
+151776	Hu
+151784	Seo
+151792	Ma
+151800	Choi
+151808	Chen
+151816	Yang
+151824	Hwang
+151832	Yeh
+151840	Yang
+151848	Cho
+151856	Yoo
+151864	Won
+151872	Jung
+151880	So
+151888	Han
+151896	Ha
+151904	Ha
+151912	Tobi
+151920	Shun
+151928	Hane
+151936	Katsura
 151944	Ark
 151952	Earl
 151960	Ein
