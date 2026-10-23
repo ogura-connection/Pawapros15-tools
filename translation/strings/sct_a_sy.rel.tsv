@@ -1,5 +1,5 @@
 # section	offset	hash of the original string	English (see ui_strings.py)
-5	106	cf89	Return to the main screen
+5	112	9988	Back to main screen
 5	136	67f5	Save and quit.|Any earlier save data|will be overwritten.
 5	208	8049	Quit without saving
 5	240	b49f	Turn ambient sound on/off
