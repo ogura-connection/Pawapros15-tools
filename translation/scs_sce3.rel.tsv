@@ -393,7 +393,7 @@
 11542	6cd2	January, May and September
 11560	818d	.
 11580	0184	Per time: 
-11592	b9ec	00 yen.
+11592	b9ec	００ yen.
 11610	7487	If I don't pay,\n
 11624	7726	I might have to quit at worst, so\n
 11650	4387	I'd better keep going to work too.
@@ -440,8 +440,8 @@
 12576	6cd2	in January, May, and September
 12594	23a0	.
 12618	0184	Each one is 
-12630	1656	00 yen.
-12662	d835	00 yen, huh.
+12630	1656	００ yen.
+12662	d835	００ yen, huh.
 12682	7050	Yup.
 12696	a160	It covers league registration,\n
 12716	64a8	sports insurance for injuries...\n
@@ -2675,13 +2675,13 @@
 74922	d7f2	I've got enough for the dues, but\n
 74952	841f	what about the facilities fund?
 74994	0c16	Dues: 
-75006	7579	00 yen is plenty\n
-75038	5819	00 yen, plus a little!\n
-75078	8d0e	00 yen extra!\n
-75112	5744	00 yen, big splurge!\n
+75006	7579	００ yen is plenty\n
+75038	5819	００ yen, plus a little!\n
+75078	8d0e	００ yen extra!\n
+75112	5744	００ yen, big splurge!\n
 75362	d848	Debug message
 75382	ec41	buf11=
-75400	d6c5	00 yen!
+75400	d6c5	００ yen!
 75432	61dc	Here, this time's share.
 75458	28c0	Okay, 
 75468	dd4e	, right?
@@ -2694,14 +2694,14 @@
 75668	b5ce	Ah, no good.\n
 75682	a079	Not enough.
 75702	420f	I'll skip the extra, then.
-75762	6ebb	00 yen extra, wow!\n
+75762	6ebb	００ yen extra, wow!\n
 75786	19b3	Look at you go!
 75812	9b20	Yeah!
 75822	0d7d	Then I'll put this money\n
 75842	b91b	toward the facilities fund.
 75874	baf9	Please do.
 75892	cd6e	Paid the club dues and the extra.
-75966	6ebb	00 yen extra?\n
+75966	6ebb	００ yen extra?\n
 75990	baff	That's amazing!
 76008	345c	This isn't next time's dues\n
 76028	3cad	in disguise, is it?
@@ -2713,7 +2713,7 @@
 76154	d357	Yeah.
 76166	cd6e	Paid the club dues and the extra.
 76238	b5c3	Oh, 
-76250	33dc	00 yen extra?\n
+76250	33dc	００ yen extra?\n
 76262	1490	Quite the big spender, eh.
 76290	1e06	Please use it to get the team's\n
 76310	cdb3	facilities in shape!

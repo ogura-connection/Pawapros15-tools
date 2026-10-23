@@ -2221,7 +2221,7 @@
 100686	e339	 can't be\ncarried any more.
 100748	03a8	Record Points 
 100764	eba9	
-100776	d274	00P 
+100776	d274	００P 
 100786	adf7	earned.
 100846	1097	You earn Record Points based on\nyour game results.
 100898	dd03	You can spend them on baseball\ntools, items and more.
@@ -2230,7 +2230,7 @@
 101044	b235	Save up big,\nthen spend big!
 101116	03a8	Record Points 
 101132	eba9	
-101144	d274	00P 
+101144	d274	００P 
 101154	0ff3	spent.
 101220	e466	Tee
 101248	7c24	Bat Machine
@@ -3031,11 +3031,11 @@
 143344	e978	Understood.
 143360	78ac	Let's call it here this time.
 143412	4f97	Our Record Points now:
-143444	d274	00 P
+143444	d274	００ P
 143454	8dfa	, sir.
 143464	a1ff	What shall we bring in?
 143488	4f97	Our Record Points now:
-143520	d274	00 P
+143520	d274	００ P
 143530	af2f	.
 143540	a1ff	What shall we bring in?
 143580	98d1	　Next\n
@@ -3045,7 +3045,7 @@
 143686	b0c9	　Other Items\n
 143708	db46	　Stop Buying
 143798	a8f4	　
-143808	6f56	00
+143808	6f56	００
 143828	a8f4	　
 143836	67fb	Owned: 
 143846	df5d	
@@ -3053,7 +3053,7 @@
 143892	a8f4	　
 143900	a4a7	Set up
 143926	a8f4	　
-143936	6f56	00
+143936	6f56	００
 143956	a8f4	　
 143964	67fb	Owned: 
 143974	df5d	

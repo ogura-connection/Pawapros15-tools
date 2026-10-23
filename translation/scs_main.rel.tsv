@@ -525,10 +525,10 @@
 47580	f901	No
 47604	2152	Gyo!\n(Message set as the\n shortcut.)
 47662	615c	Gyo!\n(Message not set as the\n shortcut.)
-47756	6158	00 yen gained!
-47796	d75b	00 yen spent.
-47854	6158	00 yen gained!
-47900	d75b	00 yen spent.
+47756	6158	００ yen gained!
+47796	d75b	００ yen spent.
+47854	6158	００ yen gained!
+47900	d75b	００ yen spent.
 47950	644b	Team-wide motivation went up.
 48002	5b9b	The whole team lost motivation.
 48092	108f	's motivation went up.
@@ -7952,7 +7952,7 @@
 305202	1ad8	No way.
 305236	5e55	Huh? The money in here is gone.
 305272	5ba2	I must have dropped it somewhere.
-305312	48bc	00 yen lost.
+305312	48bc	００ yen lost.
 305390	ff8c	Then I'll have my fortune read.
 305420	612f	Hm?
 305434	b003	...Young man,
@@ -11119,7 +11119,7 @@
 410536	0049	Not that it excuses it, but...
 410570	2a40	Won't you buy this?
 410594	7236	At a special Takeda price.
-410648	c5ac	00 yen
+410648	c5ac	００ yen
 410658	d739	 is all I ask!
 410678	6d1a	You're charging me for it?!
 410700	d523	Well, it's under retail, I guess.
