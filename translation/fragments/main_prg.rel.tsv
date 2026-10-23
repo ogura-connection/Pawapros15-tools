@@ -1,3 +1,25 @@
 # section	offset	cells	colour	hash of the original Japanese	English (see pp15/text/fragments.py)
-5	172838	4	0	ade8	Beginner
+4	7576	2	0	ef27	HS
+4	7596	2	0	ef27	HS
+4	9084	2	0	ef27	HS
+4	9268	2	0	ef27	HS
+5	172840	3	0	be26	Novice
+5	172848	3	0	8a77	10Kyu
+5	172856	2	0	b7d7	9Kyu
+5	172864	2	0	d24e	8Kyu
+5	172872	2	0	113b	7Kyu
+5	172880	2	0	c0c1	6Kyu
+5	172888	2	0	97c0	5Kyu
+5	172896	2	0	9216	4Kyu
+5	172904	2	0	3637	3Kyu
+5	172912	2	0	7927	2Kyu
+5	172920	2	0	b1a9	1Kyu
+5	172936	2	0	3e8a	2Dan
+5	172944	2	0	c381	3Dan
+5	172952	2	0	fb44	4Dan
+5	172960	2	0	cec8	5Dan
+5	172968	2	0	347c	6Dan
+5	172976	2	0	84e0	7Dan
+5	172984	2	0	2366	8Dan
+5	172992	2	0	6b40	9Dan
 5	484240	8	0	41cc	Yomiuri Giants
