@@ -2775,6 +2775,32 @@
     }
    ],
    "name": "lo_b fos"
+  },
+  {
+   "bank": "y5_np_0",
+   "palette": 47,
+   "style": "lo_d_yen",
+   "font": "ttf:rounded:14:0.0:1.0:0.25",
+   "under": 3,
+   "areas": [
+    [
+     8,
+     48,
+     64,
+     72,
+     88
+    ]
+   ],
+   "labels": [
+    {
+     "sprite": "4c",
+     "text": "¥",
+     "style": "lo_d_yen",
+     "font": "ttf:rounded:17:0.0:1.0:0.25",
+     "baseline": -3
+    }
+   ],
+   "name": "lo_d yen"
   }
  ],
  "paint": [
