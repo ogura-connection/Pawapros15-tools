@@ -5971,7 +5971,7 @@
    "labels": [
     {
      "sprite": "1c",
-     "text": "COM Running",
+     "text": "COM Run",
      "style": "a5_s3_sys00_64",
      "font": "ttf:narrow:13:0.0:0.88:0.3",
      "baseline": 18,
@@ -5985,7 +5985,7 @@
     },
     {
      "sprite": "1d",
-     "text": "COM Fielding",
+     "text": "COM Field",
      "style": "a5_s3_sys00_64",
      "font": "ttf:narrow:13:0.0:0.94:0.3",
      "baseline": 18,
@@ -5999,7 +5999,7 @@
     },
     {
      "sprite": "1e",
-     "text": "COM Batting",
+     "text": "COM Bat",
      "style": "a5_s3_sys00_64",
      "font": "ttf:narrow:13:0.0:1.0:0.3",
      "baseline": 18,
@@ -6013,7 +6013,7 @@
     },
     {
      "sprite": "1f",
-     "text": "COM Pitching",
+     "text": "COM Pitch",
      "style": "a5_s3_sys00_64",
      "font": "ttf:narrow:13:0.0:0.94:0.3",
      "baseline": 17,
@@ -6112,7 +6112,7 @@
     },
     {
      "sprite": "26",
-     "text": "Condition Mark",
+     "text": "Condition",
      "style": "a5_s3_sys00_65",
      "font": "ttf:narrow:13:0.0:0.88:0.3",
      "baseline": 17,
